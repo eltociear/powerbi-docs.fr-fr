@@ -1,0 +1,95 @@
+documentType: Tutorial
+title: "Exploration des données"
+metadata:
+  title: "Exploration de données | Microsoft Power BI"
+  description: "Découvrez comment rechercher, consulter et manipuler des données dans Power BI."
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: powerbiandexcel
+  nextTutorialTitle: "Power BI et Excel"
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: "Découvrez comment rechercher, consulter et manipuler des données dans Power BI.\n"
+  ms.openlocfilehash: 04fc3f0a47ab4194031b6e2bb65eacc0ac89d5f5
+  ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/15/2017
+- title: "Présentation du service Power BI"
+  durationInMinutes: 2
+  content: >
+    > [!Video https://www.youtube.com/embed/B2vd4MQrz4M?rel=0]
+
+
+    [!INCLUDE [](includes/4-0-intro-power-bi-service.md)]
+- title: "Informations rapides dans Power BI"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/et_MLSL2sA8?rel=0]
+
+
+    [!INCLUDE [](includes/4-1a-quick-insights.md)]
+- title: "Créer et configurer un tableau de bord"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/lJKgWnvl6bQ?rel=0]
+
+
+    [!INCLUDE [](includes/4-2-create-configure-dashboards.md)]
+- title: "Poser des questions sur vos données en langage naturel"
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/qMf7OLJfCz8?rel=0]
+
+
+    [!INCLUDE [](includes/4-3-asking-questions-natural-language.md)]
+- title: "Créer des suggestions Q&R personnalisées"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/E1mIAyEXuF4?rel=0]
+
+
+    [!INCLUDE [](includes/4-3a-suggested-questions.md)]
+- title: Partager des tableaux de bord avec les membres de votre organisation.
+  durationInMinutes: 7
+  content: >
+    > [!Video https://www.youtube.com/embed/0tUwn8DHo3s?rel=0]
+
+
+    [!INCLUDE [](includes/4-4-share-dashboards.md)]
+- title: "Afficher des éléments visuels et des vignettes en plein écran"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/LoApjhwTse0?rel=0]
+
+
+    [!INCLUDE [](includes/4-4b-display-visuals-tiles-fullscreen.md)]
+- title: "Modifier les détails d’une vignette et ajouter des widgets"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/XhqVbHqd5jQ?rel=0]
+
+
+    [!INCLUDE [](includes/4-4d-change-tile-details.md)]
+- title: "Obtenir davantage d’espace sur votre tableau de bord"
+  durationInMinutes: 5
+  content: >
+    > [!Video https://www.youtube.com/embed/c31gZkyvC54?rel=0]
+
+
+    [!INCLUDE [](includes/4-4e-get-more-dashboard-space.md)]
+- title: Installer et configurer une passerelle personnelle
+  durationInMinutes: 11
+  content: >
+    > [!Video https://www.youtube.com/embed/xjcO5tNvjGs?rel=0]
+
+
+    [!INCLUDE [](includes/4-6-install-configure-personal-gateway.md)]
+- content: "Vous avez terminé la section **Exploration de données** de la formation guidée sur Microsoft Power BI.\0"

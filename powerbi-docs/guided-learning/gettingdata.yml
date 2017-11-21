@@ -1,0 +1,67 @@
+documentType: Tutorial
+title: "Obtention de données"
+metadata:
+  title: "Obtention de données | Microsoft Power BI"
+  description: "Explorez et apprenez les nombreuses manières dont vous pouvez obtenir et exploiter des données dans Power BI."
+  audience: Business User
+  level: Beginner
+  nextTutorialHref: modeling
+  nextTutorialTitle: "Modélisation"
+  displayType: one-column
+  author: davidiseminger
+  manager: kfile
+  ms.service: powerbi
+  ms.topic: get-started-article
+  ms.date: 10/27/2017
+  ms.author: davidi
+items:
+- durationInMinutes: 1
+  content: "Explorez et apprenez les nombreuses manières dont vous pouvez obtenir et exploiter des données dans Power BI.\n"
+  ms.openlocfilehash: b994ce3414ac359333199c2174570ee314193341
+  ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/15/2017
+- title: "Vue d’ensemble de Power BI Desktop"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/mdy-eRev6HM?rel=0]
+
+
+    [!INCLUDE [](includes/1-1-overview-of-power-bi-desktop.md)]
+- title: "Prise en main de Power BI Desktop"
+  durationInMinutes: 9
+  content: >
+    > [!Video https://www.youtube.com/embed/1Bo1BrpR3AY?rel=0]
+
+
+    [!INCLUDE [](includes/0-2-get-started-power-bi-desktop.md)]
+- title: "Se connecter à des sources de données dans Power BI Desktop"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/S6s0osmRCZ4?rel=0]
+
+
+    [!INCLUDE [](includes/1-2-connect-to-data-sources-in-power-bi-desktop.md)]
+- title: "Nettoyer et transformer vos données avec l’Éditeur de requête"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/o-sinon5JYY?rel=0]
+
+
+    [!INCLUDE [](includes/1-3-clean-and-transform-data-with-query-editor.md)]
+- title: "Sources de données et transformation plus avancées"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/8WsY0R2V_bw?rel=0]
+
+
+    [!INCLUDE [](includes/1-4-advanced-data-sources-and-transformation.md)]
+- title: "Nettoyage des données dont la mise en forme n’est pas régulière"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/74KQmzdvFV8?rel=0]
+
+
+    [!INCLUDE [](includes/1-5-cleaning-irregular-data.md)]
+- content: "Vous avez terminé la section **Obtention de données** de la formation guidée sur Microsoft Power BI.\0"
