@@ -12,10 +12,6 @@
           href: service-free-vs-pro.md
         - name: "Sources de données pour Power\_BI"
           href: service-get-data.md
-        - name: "Vidéos Power\_BI"
-          href: videos.md
-        - name: "Webinaires Power\_BI"
-          href: webinars.md
         - name: "Nouvelle expérience de navigation Power\_BI"
           href: service-the-new-power-bi-experience.md
         - name: "10\_conseils pour obtenir de l’aide"
@@ -40,7 +36,7 @@
           href: service-govus-signup.md
         - name: "FAQ Power\_BI pour les clients du cloud allemand"
           href: service-govde-faq.md
-        - name: "Power BI\_: prise en main d’applications tierces"
+        - name: "Power\_BI\_: prise en main d’applications tierces"
           href: service-power-bi-get-started-third-party-apps.md
         - name: "Navigateurs pris en charge pour Power\_BI"
           href: service-browser-support.md
@@ -278,7 +274,7 @@
           href: service-how-to-q-and-a.md
         - name: "Didacticiel\_: Questions et réponses sur la prise en main de Power BI"
           href: power-bi-visualization-introduction-to-q-and-a.md
-        - name: Utilisation des Q&R avec les données Power BI Gateway - Enterprise (version préliminaire)
+        - name: "Utilisation des Q&R avec les données Power\_BI\_Gateway — Enterprise (version préliminaire)"
           href: service-q-and-a-direct-query.md
         - name: "Optimiser vos données avec Q&R dans Power\_BI"
           href: service-prepare-data-for-q-and-a.md
@@ -294,7 +290,7 @@
           href: service-cortana-troubleshoot.md
     - name: Partager votre travail
       items:
-        - name: "Comment collaborer et partager des tableaux de bord et rapports\_?"
+        - name: "Comment partager des tableaux de bord, rapports et vignettes\_?"
           href: service-how-to-collaborate-distribute-dashboards-reports.md
         - name: Installer et utiliser des applications avec des tableaux de bord et des rapports
           href: service-install-use-apps.md
@@ -406,10 +402,6 @@
           href: power-bi-visualization-export-data.md
         - name: "Modifier le type de visualisation dans un rapport Power\_BI"
           href: power-bi-report-change-visualization-type.md
-        - name: "Ajout d’une visualisation personnalisée à un rapport Power\_BI"
-          href: power-bi-report-add-custom-visual.md
-        - name: Télécharger et utiliser les visuels personnalisés de l’Office Store
-          href: service-custom-visuals-office-store.md
         - name: Prise en main de la mise en forme des couleurs et des propriétés d’axe
           href: service-getting-started-with-color-formatting-and-axis-properties.md
         - name: "Trucs et astuces pour la mise en forme des couleurs dans Power\_BI"
@@ -434,9 +426,9 @@
           href: power-bi-reports-add-text-and-shapes.md
         - name: "Didacticiel\_: ArcGIS dans Power\_BI"
           href: power-bi-visualization-arcgis.md
-        - name: "Didacticiel\_: graphique en aires simple"
+        - name: "Didacticiel\_: Graphique en aires simple"
           href: power-bi-visualization-basic-area-chart.md
-        - name: "Didacticiel\_: graphique combiné dans Power\_BI"
+        - name: "Didacticiel\_: Graphique combiné dans Power\_BI"
           href: power-bi-visualization-combo-chart.md
         - name: "Didacticiel\_: personnaliser le titre, l’arrière-plan et la légende d’une visualisation"
           href: power-bi-visualization-customize-title-background-and-legend.md
@@ -444,15 +436,15 @@
           href: power-bi-visualization-customize-x-axis-and-y-axis.md
         - name: "Didacticiel\_: graphiques en anneau dans Power\_BI"
           href: power-bi-visualization-doughnut-charts.md
-        - name: "Didacticiel\_: cartes thématiques (choroplèthes) dans Power\_BI"
+        - name: "Didacticiel\_: Cartes thématiques (choroplèthes) dans Power\_BI"
           href: power-bi-visualization-filled-maps-choropleths.md
         - name: "Didacticiel\_: graphiques en entonnoir dans Power\_BI"
           href: power-bi-visualization-funnel-charts.md
         - name: Éléments visuels des indicateurs de performance clés
           href: power-bi-visualization-kpi.md
-        - name: "Didacticiel\_: graphiques en jauge radiale dans Power\_BI"
+        - name: "Didacticiel\_: Graphiques jauge radiale dans Power\_BI"
           href: power-bi-visualization-radial-gauge-charts.md
-        - name: "Didacticiel\_: Nuages de points dans Power\_BI"
+        - name: "Didacticiel\_: Graphiques nuage de points dans Power\_BI"
           href: power-bi-visualization-scatter.md
         - name: "Didacticiel : Segments dans Power\_BI"
           href: power-bi-visualization-slicers.md
@@ -532,9 +524,9 @@
           href: service-gateway-onprem-faq.md
         - name: Passerelle de données locale (mode personnel)
           href: service-gateway-personal-mode.md
-        - name: Dépannage de la passerelle de données locale
+        - name: Résolution des problèmes de passerelle de données locale
           href: service-gateway-onprem-tshoot.md
-        - name: Power BI Gateway - Personal
+        - name: "Power\_BI\_Gateway - Personal"
           href: personal-gateway.md
         - name: Configuration des paramètres de proxy
           href: service-gateway-proxy.md
@@ -546,7 +538,7 @@
           href: service-gateway-enterprise-manage-sql.md
         - name: Gérer votre source de données - Oracle
           href: service-gateway-onprem-manage-oracle.md
-        - name: Gérer votre source de données d’entreprise - Importation/actualisation planifiée
+        - name: Gérer la source de données de votre entreprise - Importation/actualisation planifiée
           href: service-gateway-enterprise-manage-scheduled-refresh.md
     - name: Administration
       items:
@@ -556,7 +548,7 @@
           href: service-admin-service-free-in-your-organization.md
         - name: Achat de Power BI Pro
           href: service-admin-purchasing-power-bi-pro.md
-        - name: "Méthodes de gouvernance et de déploiement Power\_BI"
+        - name: "Approches de déploiement et de gouvernance Power\_BI"
           href: service-admin-governance.md
         - name: Sécurité dans Power BI
           href: service-admin-power-bi-security.md
@@ -572,13 +564,15 @@
           href: service-admin-portal.md
         - name: "Audit Power\_BI"
           href: service-admin-auditing.md
+        - name: Utilisation d’Azure AD B2B
+          href: service-admin-azure-ad-b2b.md
         - name: Trouver les utilisateurs qui se sont connectés
           href: service-admin-access-usage.md
         - name: "Sécurité au niveau des lignes avec Power\_BI"
           href: service-admin-rls.md
         - name: "Gérer la capacité de vos données dans Power\_BI"
           href: service-admin-manage-your-data-storage-in-power-bi.md
-        - name: Espace de travail archivé Power BI
+        - name: "Espace de travail archivé Power\_BI"
           href: service-admin-power-bi-archived-workspace.md
         - name: Impossible d’ajouter Power BI au partenaire O365
           href: service-admin-syndication-partner.md
@@ -594,7 +588,7 @@
           href: service-admin-forgot-your-password.md
         - name: Capture d’informations de diagnostic supplémentaires pour Power BI
           href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
-        - name: Autre adresse de messagerie pour Power BI
+        - name: "Autre adresse de messagerie pour Power\_BI"
           href: service-admin-alternate-email-address-for-power-bi.md
         - name: Comment utiliser la même connexion de compte pour Power BI et Azure
           href: service-admin-how-to-use-the-same-account-as-azure.md
@@ -602,9 +596,9 @@
           href: service-admin-office-365-dedicated-known-issues.md
         - name: Résolution des problèmes de la fonctionnalité Analyser dans Excel
           href: desktop-troubleshooting-analyze-in-excel.md
-        - name: Dépannage de la passerelle de données locale
+        - name: Résolution des problèmes de passerelle de données locale
           href: service-gateway-onprem-tshoot.md
-        - name: "Résolution des problèmes de Power\_BI Gateway - Personal"
+        - name: "Résolution des problèmes de Power\_BI\_Gateway - Personal"
           href: service-admin-troubleshooting-power-bi-personal-gateway.md
         - name: Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
           href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
@@ -658,7 +652,7 @@
           href: desktop-enter-data-directly-into-desktop.md
         - name: "Se connecter à Excel dans Power\_BI\_Desktop"
           href: desktop-connect-excel.md
-        - name: Données multidimensionnelles Analysis Services dans Power BI Desktop
+        - name: "Données multidimensionnelles Analysis Services dans Power\_BI\_Desktop"
           href: desktop-ssas-multidimensional.md
         - name: "Se connecter à des fichiers\_CSV dans Power BI Desktop"
           href: desktop-connect-csv.md
@@ -686,17 +680,17 @@
           href: desktop-directquery-data-sources.md
         - name: DirectQuery pour bases de données Oracle et Teradata
           href: desktop-directquery-for-oracle-teradata.md
-        - name: DirectQuery et SAP Business Warehouse (BW)
+        - name: "DirectQuery et SAP\_Business\_Warehouse (BW)"
           href: desktop-directquery-sap-bw.md
         - name: DirectQuery et SAP HANA
           href: desktop-directquery-sap-hana.md
         - name: "Paramètre Intégrité référentielle supposée dans Power\_BI Desktop"
           href: desktop-assume-referential-integrity.md
-        - name: "Didacticiel\_: sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services"
+        - name: "Didacticiel\_: Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services"
           href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
         - name: DirectQuery pour bases de données Oracle et Teradata
           href: desktop-directquery-for-oracle-teradata.md
-        - name: "Utilisation de SAP BW Connector dans Power\_BI\_Desktop (version préliminaire)"
+        - name: "Utilisation du connecteur SAP BW dans Power\_BI\_Desktop (version préliminaire)"
           href: desktop-sap-bw-connector.md
         - name: Utilisation des liens OneDrive Entreprise dans Power BI Desktop
           href: desktop-use-onedrive-business-links.md
@@ -758,8 +752,6 @@
           href: desktop-insights.md
         - name: "Signets dans Power\_BI"
           href: desktop-bookmarks.md
-        - name: Ajout d’un élément visuel personnalisé à un rapport (Power BI Desktop)
-          href: power-bi-custom-visuals-use.md
         - name: Utiliser les thèmes de rapport
           href: desktop-report-themes.md
         - name: Utiliser les mesures rapides
@@ -824,13 +816,13 @@
           href: desktop-tutorial-create-calculated-columns.md
         - name: "Didacticiel\_: analyses de Facebook à l’aide de Power\_BI\_Desktop"
           href: desktop-tutorial-facebook-analytics.md
-        - name: "Déclaration de confidentialité concernant l’option «\_Envoyer un sourire\_» de Power BI Desktop"
+        - name: "Déclaration de confidentialité concernant l’option «\_Envoyer un sourire\_» de Power\_BI\_Desktop"
           href: desktop-send-smile-privacy-statement.md
     - name: Résolution des problèmes
       items:
-        - name: "Résolution de problèmes d’importation de bases de données Access et de feuilles de calcul .XLS dans Power\_BI\_Desktop et Power\_Query"
+        - name: "Résoudre des problèmes d’importation de bases de données Access et de feuilles de calcul Excel dans Power\_BI\_Desktop et Power\_Query"
           href: desktop-access-database-errors.md
-        - name: "Résoudre les problèmes de démarrage de Power\_BI Desktop"
+        - name: "Résoudre les problèmes de démarrage de Power\_BI\_Desktop"
           href: desktop-error-launching-desktop.md
 - name: "Applications mobiles Power\_BI"
   items:
@@ -950,7 +942,7 @@
           href: developer/get-azuread-access-token.md
         - name: "Autorisations Power\_BI"
           href: developer/power-bi-permissions.md
-        - name: Sécurité au niveau des lignes
+        - name: Sécurité au niveau des lignes (RLS)
           href: developer/embedded-row-level-security.md
         - name: Questions et réponses sur l’incorporation
           href: developer/qanda.md
@@ -964,8 +956,6 @@
           href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: Examen des éléments visuels personnalisés pour la sécurité et la confidentialité
           href: service-custom-visuals-review-for-security-and-privacy.md
-        - name: Publier des visuels personnalisés dans l’Office Store
-          href: developer/office-store.md
         - name: Obtenir un élément personnel certifié
           href: power-bi-custom-visuals-certified.md
     - name: Transmettre des données à un tableau de bord
@@ -990,9 +980,9 @@
           href: developer/service-content-pack-overview.md
         - name: Création d’un pack de contenu de modèle
           href: developer/template-content-pack-authoring.md
-        - name: Test de modèle de pack de contenu
+        - name: Test d’un pack de contenu de modèle
           href: developer/template-content-pack-testing.md
-        - name: Expériences de modèle de pack de contenu
+        - name: Expériences d’un pack de contenu de modèle
           href: developer/template-content-pack-experience.md
     - name: Références
       items:
@@ -1022,7 +1012,7 @@
   items:
     - name: Vue d’ensemble
       items:
-        - name: Bien démarrer
+        - name: Commencer
           href: report-server/get-started.md
         - name: Nouveautés
           href: report-server/whats-new.md
@@ -1104,6 +1094,8 @@
           href: report-server/quickstart-embed.md
     - name: Référence
       items:
+        - name: API REST
+          href: report-server/rest-api.md
         - name: WMI
           href: 'https://go.microsoft.com/fwlink/?linkid=848719'
         - name: API SOAP
@@ -1114,5 +1106,9 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848723'
 - name: ressources.
   items:
+    - name: "Vidéos Power\_BI"
+      href: videos.md
+    - name: "Webinaires Power\_BI"
+      href: webinars.md
     - name: Livres blancs
       href: whitepapers.md
