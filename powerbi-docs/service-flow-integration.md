@@ -18,14 +18,14 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/30/2017
 ms.author: mihart
-ms.openlocfilehash: 387f6bf9f9022fedf1266c32da3d61d3035e7d90
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: efab2e6be1d376a0da70c13bb66144ba34afa58c
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow et Power BI
-## <a name="what-is-microsoft-flow"></a>Qu’est-ce que Microsoft Flow ?
+
 [Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started) est une offre SaaS pour l’automatisation des flux de travail dans un nombre croissant d’applications et de services SaaS dont dépendent les utilisateurs professionnels. Flow vous permet d’automatiser des tâches en intégrant vos applications et services favoris (y compris Power BI) pour obtenir des notifications, synchroniser des fichiers, collecter des données et bien plus encore. Les tâches répétitives sont simplifiées grâce à l’automatisation des flux de travail.
 
 [Prenez en main Flow dès maintenant.](https://flow.microsoft.com/documentation/getting-started)
@@ -110,7 +110,7 @@ Dans cette tâche, vous allez créer entièrement un simple flux qui est déclen
    
     ![](media/service-flow-integration/power-bi-flow-notice.png)
 
-### <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 * [Prise en main de Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started/)
 * [Définir des alertes de données dans le service Power BI](service-set-data-alerts.md)
 * [Définir des alertes de données sur votre iPhone](mobile-set-data-alerts-in-the-mobile-apps.md)

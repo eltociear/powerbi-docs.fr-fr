@@ -17,13 +17,13 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/28/2017
 ms.author: mihart
-ms.openlocfilehash: 42c0e7ad17f9cfd7b4a19862a33c382a608fef3f
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: ecd984ab23c4480b2e615635a8d2f337e2a9a50f
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/17/2017
 ---
-# <a name="sales--marketing-sample-for-power-bi-take-a-tour"></a>Exemple Vente et marketing pour Power BI : visite guidée
+# <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exemple Vente et marketing pour Power BI : visite guidée
 **L’exemple Vente et marketing** contient un tableau de bord et un rapport qui concernent une société de fabrication fictive nommée VanArsdel Ltd. Ce tableau de bord a été créé par le directeur marketing de VanArsdel pour surveiller le secteur, mais aussi la part de marché de la société, ses volumes de production, ses ventes et l’opinion.
 
 VanArsdel a de nombreux concurrents, mais est leader dans son secteur d’activité. Le directeur marketing souhaite augmenter la part de marché et découvrir des opportunités de croissance. Or, pour une raison quelconque, la part de marché de VanArsdel a commencé à diminuer, avec des baisses significatives en juin.

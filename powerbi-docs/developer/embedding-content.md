@@ -15,15 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
+ms.date: 11/19/2017
 ms.author: asaxton
-ms.openlocfilehash: ae715a6ab40da538336f8f1fa2c97f206079afa9
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 14d4954cd747e7c578c693212401f57806001228
+ms.sourcegitcommit: 6e8fbbbcbe3e1a38207b29a9ca66ea94fb2a51fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/19/2017
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Incorporer vos tableaux de bord, rapports et vignettes Power BI
+
 Découvrez les étapes à suivre pour incorporer du contenu Power BI dans votre application.
 
 Microsoft a [annoncé Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), un nouveau modèle de gestion des licences basé sur la capacité, qui augmente la flexibilité en ce qui concerne la manière dont les utilisateurs consultent, partagent et distribuent du contenu. L’offre renforce également l’extensibilité et les performances du service Power BI. Il a également été annoncé que Power BI Embedded permet de créer une capacité dans Microsoft Azure. Power BI Embedded se concentre sur votre application et vos clients. 
@@ -34,10 +35,9 @@ Pour que cela soit possible, vous devez suivre quelques étapes avec votre appli
 
 > [!NOTE]
 > Les API Power BI font encore référence aux espaces de travail d’application en tant que groupes. Toutes les références à des groupes indiquent que vous travaillez avec des espaces de travail d’applications.
-> 
-> 
 
 ## <a name="step-1-setup-your-embedded-analytics-development-environment"></a>Étape 1 : configurer votre environnement de développement d’analytique incorporée
+
 Avant de commencer à incorporer des tableaux de bord et des rapports dans votre application, vous devez vérifier que votre environnement est configuré pour autoriser l’incorporation. Dans le cadre de la configuration, vous devez effectuer les opérations suivantes.
 
 * [Vous assurer des disposer d’un locataire (ou client) Azure Active Directory](embedding-content.md#azureadtenant)
@@ -46,10 +46,9 @@ Avant de commencer à incorporer des tableaux de bord et des rapports dans votre
 
 > [!NOTE]
 > La capacité Power BI n’est pas nécessaire pour le développement de votre application. Les développeurs de l’application doivent disposer d’une licence Power BI Pro.
-> 
-> 
 
 ### <a name="azureadtenant"></a>Locataire Azure Active Directory
+
 Pour incorporer des éléments à partir de Power BI, vous devez disposer d’un locataire Azure Active Directory (Azure AD). Au moins un utilisateur Power BI Pro doit être attribué à ce locataire. Vous devez également définir une application Azure AD au sein du locataire. Vous pouvez recourir à un locataire Azure AD existant ou créer un locataire dédié à l’incorporation.
 
 Vous devez déterminer quel locataire utiliser si vous incorporez du contenu s’adressant à vos clients.
@@ -61,33 +60,41 @@ Vous devez déterminer quel locataire utiliser si vous incorporez du contenu s�
 Si vous ne voulez pas utiliser un locataire existant et décidez de créer un locataire pour votre application, ou pour chaque client, voir [Créer un locataire Azure Active Directory](create-an-azure-active-directory-tenant.md) ou [Obtenir un locataire Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant).
 
 ### <a name="proaccount"></a>Créer un compte d’utilisateur Power BI Pro
+
 Un seul compte Power BI Pro suffit pour incorporer du contenu. Toutefois, vous pouvez créer plusieurs utilisateurs pour les accès spécifiques aux éléments. Vous pouvez par exemple attribuer les utilisateurs suivants à votre locataire.
 
 Les comptes suivants doivent être disponibles dans votre locataire et une licence Power BI Pro doit leur être attribuée. Une licence Power BI Pro est requise pour utiliser des espaces de travail application au sein de Power BI.
 
 #### <a name="an-organizationtenant-admin-user"></a>Un utilisateur administrateur d’organisation ou de client
+
 Si possible, le compte de votre application ne doit pas être l’utilisateur Administrateur général de votre organisation/locataire si vous incorporez du contenu pour vos clients. L’accès dont dispose le compte de l’application au sein de votre locataire est ainsi minimisé. De préférence, l’utilisateur administrateur doit être membre de tous les espaces de travail d’applications créés à des fins d’incorporation.
 
 #### <a name="accounts-for-analysts-that-will-create-content"></a>Des comptes pour les analystes devant créer du contenu
+
 Il se peut que vous ayez plusieurs utilisateurs qui créent du contenu pour Power BI. Un compte Power BI Pro est requis pour chaque analyste qui crée et déploie du contenu dans Power BI.
 
 #### <a name="an-application-master-user-account-for-embedding-for-your-customers"></a>Un compte utilisateur *principal* d’application si vous incorporez pour vos clients
+
 Il s’agit du compte à utiliser par votre application lors de l’incorporation de contenu pour vos clients. Le scénario est généralement adapté aux applications d’éditeurs de logiciels indépendants. Le compte principal est vraiment le seul compte requis dont vous avez besoin au sein de votre organisation. Il peut également être utilisé en tant que compte d’administrateur et d’analyste, mais cela n’est pas recommandé. Le serveur principal de votre application stocke les informations d’identification de ce compte et les utilise pour acquérir le jeton d’authentification Azure AD à utiliser avec les API de Power BI. Ce compte est utilisé afin de générer le jeton d’incorporation de l’application pour vos clients.
 
 Le compte principal est simplement un utilisateur standard avec une licence Power BI Pro que vous utilisez avec votre application. Le compte doit également être administrateur de l’espace de travail d’applications créé pour l’incorporation.
 
 ### <a name="appreg"></a> Inscription de l’application et octroi d’autorisations
+
 Vous devez inscrire votre application avec Azure AD afin d’effectuer des appels d’API REST. Pour plus d’informations, consultez [Inscrire une application Azure AD pour incorporer du contenu Power BI](register-app.md).
 
 ### <a name="create-app-workspaces"></a>Créer des espaces de travail d’applications
-Si vous incorporez des tableaux de bord et des rapports pour vos clients, ceux-ci doivent être placés dans un espace de travail d’applications. Pour plus d’informations sur la création d’un espace de travail d’applications, consultez [Créer un espace de travail d’application](../service-create-distribute-apps.md#create-an-app-workspace).
 
-Le compte *principal* mentionné précédemment doit être administrateur de l’espace de travail d’applications.
+Si vous incorporez des tableaux de bord et des rapports pour vos clients, ceux-ci doivent être placés dans un espace de travail d’applications. Le compte *principal* mentionné précédemment doit être administrateur de l’espace de travail d’applications.
+
+[!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
 
 ### <a name="create-and-upload-your-reports"></a>Créer et charger vos rapports
+
 Vous pouvez créer vos rapports et jeux de données à l’aide de Power BI Desktop, puis publier ces rapports dans un espace de travail d’applications. Pour publier les rapports dans un espace de travail d’applications, l’utilisateur final doit disposer d’une licence Power BI Pro.
 
 ## <a name="step-2-embed-your-content"></a>Étape 2 : incorporer votre contenu
+
 Dans votre application, vous devez vous authentifier auprès de Power BI. Si vous incorporez du contenu pour vos clients, vous devez stocker les informations d’identification du compte *principal* dans votre application. Pour plus d’informations, consultez [Authentifier des utilisateurs et obtenir un jeton d’accès Azure AD pour votre application Power BI](get-azuread-access-token.md).
 
 Une fois que vous êtes authentifié, dans votre application, utilisez les API REST Power BI et JavaScript pour incorporer des tableaux de bord et des rapports dans votre application. 
@@ -105,9 +112,11 @@ Pour l’**incorporation avec vos clients**, qui est généralement utilisée pa
 Si l’incorporation s’adresse à vos clients, un jeton d’incorporation est requis. Pour plus d’informations, consultez [Générer des jetons](https://msdn.microsoft.com/library/mt784614.aspx).
 
 ## <a name="step-3-promote-your-solution-to-production"></a>Étape 3 : promouvoir votre solution en mode de production
+
 Le passage en production nécessite quelques étapes supplémentaires.
 
 ### <a name="embedding-for-your-organization"></a>Incorporation pour votre organisation
+
 Si votre incorporation s’adresse à votre organisation, vous devez simplement leur indiquer comment accéder à votre application. 
 
 Les utilisateurs de la version gratuite peuvent consommer du contenu incorporé à partir d’un espace de travail d’application (groupe), si cet espace de travail est soutenu par une capacité. Chaque utilisateur de la version gratuite doit être répertorié en tant que membre de l’espace de travail d’application (groupe). Sinon, le système génère une erreur « (401) Non autorisé ». Le tableau suivant répertorie les références Power BI Premium disponibles dans Office 365.
@@ -121,10 +130,9 @@ Les utilisateurs de la version gratuite peuvent consommer du contenu incorporé 
 
 > [!NOTE]
 > Pour acheter Power BI Premium, vous devez être Administrateur général ou Administrateur de facturation de votre locataire. Pour plus d’informations sur l’achat de Power BI Premium, consultez [Acheter Power BI Premium](../service-admin-premium-purchase.md).
-> 
-> 
 
 ### <a name="embedding-for-your-customers"></a>Incorporation pour vos clients
+
 Si l’incorporation s’adresse à vos clients, vous devez effectuer les opérations suivantes.
 
 * Si vous utilisez un locataire distinct pour le développement, vérifiez que vos espaces de travail d’applications ainsi que vos tableaux de bord et rapports sont disponibles dans votre environnement de production. Vérifiez que vous avez créé l’application dans Azure AD pour votre locataire de production et attribué les autorisations d’application appropriées comme indiqué à l’étape 1.
@@ -140,14 +148,17 @@ Si l’incorporation s’adresse à vos clients, vous devez effectuer les opéra
 | A6 |32 cœurs virtuels |16 cœurs, 100 Go de RAM |16 cœurs |120 par seconde |4 801-9 600 |
 
 * Modifiez l’espace de travail d’applications et attribuez-le à une capacité sous Avancé.
-  
+
     ![Affecter un espace de travail à une capacité](media/embedding-content/powerbi-embedded-premium-capacity.png)
+
 * Déployez votre application mise à jour en production, puis commencez à incorporer des rapports et tableaux de bord Power BI.
 
 ## <a name="admin-settings"></a>Paramètres d’administrateur
+
 Les administrateurs globaux ou les administrateurs de service Power BI peuvent activer ou désactiver la possibilité d’utiliser les API REST pour un locataire. Les administrateurs Power BI peuvent définir ce paramètre pour toute l’organisation ou pour certains groupes de sécurité. Il est activé par défaut pour toute l’organisation. Son réglage s’effectue au moyen du [Portail d’administration Power BI](../service-admin-portal.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 [Incorporation avec Power BI](embedding.md)  
 [Comment migrer le contenu d’une collection d’espaces de travail Power BI Embedded vers Power BI](migrate-from-powerbi-embedded.md)  
 [Qu’est-ce que Power BI Premium ?](../service-premium.md)  

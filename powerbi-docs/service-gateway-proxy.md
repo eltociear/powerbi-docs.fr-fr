@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 11/21/2017
 ms.author: davidi
-ms.openlocfilehash: 6fb6250f8cd82c7057abe3f9cf9792dc733ea4b6
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 77ae086d4b9c86f0d5ec4c0515ad96919160059d
+ms.sourcegitcommit: 47ea78f58ad37a751171d01327c3381eca3a960e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Configuration des paramètres de proxy pour la passerelle de données locale
 Votre environnement de travail peut nécessiter que vous passiez par un proxy pour accéder à Internet. Cela pourrait empêcher la passerelle de données locale de Power BI de se connecter au service.
@@ -48,40 +48,6 @@ Le premier concerne les écrans de configuration qui configurent en fait la pass
 La deuxième concerne le service Windows à proprement parler, qui interagit avec le service Power BI et gère les requêtes.
 
     C:\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config
-
-### <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
-> [!NOTE]
-> Une nouvelle version de la passerelle de données locale, appelée **Passerelle de données locale (mode personnel)** est disponible pour Power BI. Cette section de l’article décrit la précédente version de la passerelle personnelle, appelée **Power BI Gateway - Personal**, qui sera supprimée et cessera de fonctionner après le 31 juillet 2017. Pour plus d’informations sur la nouvelle version de la passerelle personnelle, notamment sur son installation, consultez l’article [**Passerelle de données locale (mode personnel)**](service-gateway-personal-mode.md).
-> 
-> 
-
-La passerelle personnelle peut être installée de deux façons. En tant que service Windows (admin) ou en tant qu’application en mode utilisateur. Cela est déterminé lors de l’installation. Par conséquent, vos fichiers de configuration peuvent être dans l’un des deux emplacements en fonction de la façon dont la passerelle a été installée. Vous devez vérifier les deux emplacements.
-
-**Configuration**
-
-Le premier concerne les écrans de configuration qui configurent en fait la passerelle. Si vous rencontrez des problèmes lors de la configuration de la passerelle, c’est le fichier que vous devez consulter.
-
-Pour le *service Windows*, ce sera le suivant.
-
-    C:\Program Files\Power BI Personal Gateway\1.0\Configurator\GWConfig.exe.config
-    C:\Program Files\Power BI Personal Gateway\1.0\Configurator\PowerBIGatewayAgentCmdLine.exe.config
-
-Pour l’*application en mode utilisateur*, ce sera le suivant.
-
-    C:\Users\<user>\AppData\Local\Power BI Gateway - Personal \1.0\Configurator\GWConfig.exe.config
-    C:\Users\<user>\AppData\Local\Power BI Gateway - Personal \1.0\Configurator\PowerBIGatewayAgentCmdLine.exe.config
-
-**Service Windows**
-
-La deuxième concerne le service Windows à proprement parler, qui interagit avec le service Power BI et gère les requêtes.
-
-Pour le *service Windows*, ce sera le suivant.
-
-    C:\Program Files\Power BI Personal Gateway\1.0\Gateway\diawp.exe.config
-
-Pour l’*application en mode utilisateur*, ce sera le suivant.
-
-    C:\Users\<user>\AppData\Local\Power BI Gateway - Personal \1.0\Gateway\diawp.exe.config
 
 ## <a name="configuring-proxy-settings"></a>Configuration des paramètres de proxy
 La configuration de proxy par défaut est la suivante.

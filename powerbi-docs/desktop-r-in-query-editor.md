@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: davidi
-ms.openlocfilehash: c3e8c4d110bccf1ed8a992b22bd1014a770d5bb6
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: c48e7042f16ac43619a7a0a6708a54f0575d795f
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="using-r-in-query-editor"></a>Utilisation du langage R dans l’Éditeur de requête
 Vous pouvez utiliser le langage de programmation **R** largement utilisé par les analystes de données, les scientifiques de données et les statisticiens dans l’**Éditeur de requête** Power BI Desktop. Cette intégration de R dans l’**Éditeur de requête** permet de procéder au nettoyage des données à l’aide de R et d’effectuer une mise en forme et des analyses avancées des données dans les jeux de données, y compris la saisie de données manquantes, les prévisions et le clustering pour ne citer que quelques exemples. **R** est un langage puissant. Il peut être utilisé dans l’**Éditeur de requête** pour préparer votre modèle de données et créer des rapports.
@@ -56,7 +56,7 @@ Pour vous montrer comment utiliser **R** dans l’**Éditeur de requête**, nous
        output$completedValues <- completedData$"SMI missing values"
    
    > [!NOTE]
-> La bibliothèque *mice* doit être installée dans votre environnement R pour que le code de script précédent fonctionne correctement. Pour installer mice, exécutez la commande suivante dans votre installation de R : |      > install.packages('mice')
+   > La bibliothèque *mice* doit être installée dans votre environnement R pour que le code de script précédent fonctionne correctement. Pour installer mice, exécutez la commande suivante dans votre installation de R : |      > install.packages('mice')
    > 
    > 
    
@@ -72,7 +72,6 @@ Pour vous montrer comment utiliser **R** dans l’**Éditeur de requête**, nous
    
    Une fois que cela est fait, nous voyons une nouvelle colonne dans la zone **Champs**, appelée *completedValues*. Il existe quelques éléments de données manquants, par exemple sur les lignes 15 et 18. Nous verrons comment R gère cela dans la section suivante.
    
-   Remarques
 
 Avec seulement cinq lignes de script R, l’**Éditeur de requête** a renseigné les valeurs manquantes à l’aide d’un modèle de prévision.
 

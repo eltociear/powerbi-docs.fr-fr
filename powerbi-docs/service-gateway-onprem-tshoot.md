@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 11/21/2017
 ms.author: davidi
-ms.openlocfilehash: 1ef54451275b1c7fe1e84c330a4bea95f0bca820
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 2663c9f2adf69ce224de90feb822b7cfedc935a5
+ms.sourcegitcommit: 47ea78f58ad37a751171d01327c3381eca3a960e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
 Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de la **passerelle de données locale**.
@@ -170,10 +170,6 @@ Cela peut être dû à différents scénarios.
 2. Votre compte n’est pas répertorié sous l’onglet **Utilisateurs** de la source de données dans la configuration de la passerelle. Vous devez contacter l’administrateur de la passerelle pour que celui-ci l’ajoute à cette liste.
 3. Votre fichier Power BI Desktop a plusieurs sources de données et celles-ci ne sont pas toutes configurées avec la passerelle. Chaque source de données définie avec la passerelle doit s’afficher dans l’actualisation planifiée.
 
-> [!WARNING]
-> Si une de vos sources de données requiert l’authentification OAuth, vous ne pouvez pas la configurer avec la passerelle de données locale. L’authentification OAuth n’est pas actuellement prise en charge par la passerelle de données locale. Vous devez supprimer la source de données qui requiert l’authentification OAuth de Power BI Desktop pour configurer l’actualisation planifiée.
-> 
-> 
 
 ### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-limit"></a>Erreur : Les données non compressées reçues sur le client de la passerelle ont dépassé la limite.
 La limitation exacte est de 10 Go de données non compressées par table. Si vous rencontrez ce problème, il existe plusieurs options pour l’optimiser et l’éviter. Une solution conseillée est de réduire l’utilisation de longues valeurs de chaîne très répétitives et à la place d’utiliser une clé normalisée ou de supprimer la colonne (si celle-ci n’est pas utilisée).

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: 4cf0ed9326d59d3282b3a512aa65f239f4ee0490
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: eb5a41c75e26c0c9c5a6644b2ad0122d2d9623b9
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Se connecter à Azure Consumption Insights dans Power BI Desktop (bêta)
 Le connecteur **Azure Consumption Insights** vous permet d’utiliser **Power BI Desktop** pour vous connecter à Azure afin d’obtenir des données et informations détaillées sur l’utilisation des services Azure par votre organisation. Vous pouvez également créer des mesures, des colonnes personnalisées et des visuels afin de rapporter et partager l’utilisation d’Azure par votre organisation. Le connecteur **Azure Consumption Insights** étant publié en version bêta, il est susceptible de changer.
@@ -135,7 +135,7 @@ Vous devez à présent déplacer les colonnes personnalisées ou les mesures que
 ### <a name="step-4-re-link-tables-that-had-relationships"></a>Étape 4 : lier de nouveau les tables qui avaient des relations
 De nombreux tableaux de bord comportent des tables supplémentaires qui sont utilisées pour la recherche ou le filtrage, telles que des tables de dates ou des tables destinées à des projets personnalisés. Le rétablissement de ces relations résout la plupart des problèmes restants. Voici comment procéder.
 
-1. Sous l’onglet **Modélisation** de **Power BI Desktop**, sélectionnez **Gérer les relations** pour afficher une fenêtre permettant de gérer les relations au sein du modèle. Liez de nouveau vos tables, en fonction des besoins.
+- Sous l’onglet **Modélisation** de **Power BI Desktop**, sélectionnez **Gérer les relations** pour afficher une fenêtre permettant de gérer les relations au sein du modèle. Liez de nouveau vos tables, en fonction des besoins.
    
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 

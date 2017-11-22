@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 11/20/2017
 ms.author: asaxton
-ms.openlocfilehash: ab2d4518fbc16c857f6c2e4c3257f3b82e02e1c0
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 13456711e6c3bdce4554df7b7fbc0e4e9943987a
+ms.sourcegitcommit: 12236d08c27c7ee3fabb7ef9d767e9dee693f8aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="publish-custom-visuals-to-the-office-store"></a>Publier des visuels personnalisés dans l’Office Store
 Découvrez comment vous pouvez publier votre visuel personnalisé dans l’Office Store pour que d’autres utilisateurs puissent le trouver et l’utiliser.
@@ -133,7 +133,6 @@ Une fois votre visuel créé, vous pouvez éventuellement le faire certifier. Ce
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer des visuels personnalisés à l’aide des outils de développement](../service-custom-visuals-getting-started-with-developer-tools.md)  
-[Télécharger et utiliser les visuels personnalisés de l’Office Store](../service-custom-visuals-office-store.md)  
 [Visualisations dans Power BI](../power-bi-report-visualizations.md)  
 [Visualisations personnalisées dans Power BI](../power-bi-custom-visuals.md)  
 [*Certification* d’un visuel personnalisé](../power-bi-custom-visuals-certified.md)
