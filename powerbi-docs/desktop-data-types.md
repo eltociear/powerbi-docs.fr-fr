@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: 71822f5d3e40eae4f43df5ab7129796e2a9d87b6
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: da685cf95adb9d9f5bd4891f9447cbfe76759182
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -30,6 +30,7 @@ Lorsque vous chargez des données dans Power BI Desktop, celui-ci tente de conve
 
 Ceci est important, car certaines fonctions DAX ont des exigences particulières en matière de type de données. Même si très souvent DAX convertit implicitement un type de données pour vous, cela n’est pas toujours le cas.  Par exemple, si une fonction DAX nécessite un type de données Date et que le type de données de votre colonne est Texte, la fonction DAX ne fonctionnera pas correctement.  Il est donc important et utile d’obtenir le type de données correct pour une colonne. Les conversions implicites sont décrites plus loin dans cet article.
 
+## <a name="determine-and-specify-a-columns-data-type"></a>Déterminer et spécifier le type de données d’une colonne
 Dans Power BI Desktop, vous pouvez déterminer et spécifier le type de données d’une colonne dans l’Éditeur de requête ou dans la vue Données ou Rapport :
 
 **Types de données dans l’Éditeur de requête**
@@ -67,7 +68,7 @@ Power BI Desktop prend en charge cinq types de données Date/Heure dans la vue R
 ### <a name="text-type"></a>Type Texte
 **Texte** : chaîne de données de caractères Unicode. Il peut s’agir de chaînes, de nombres ou de dates représentés dans un format texte. La longueur de chaîne maximale est de 268 435 456 caractères Unicode (256 méga caractères) ou de 536 870 912 octets.
 
-### <a name="truefalse-type"></a>Type Vrai/Faux
+### <a name="truefalse-type"></a>Type True/false
 **Vrai/Faux** : valeur booléenne Vrai ou Faux.
 
 ### <a name="blanksnulls-type"></a>Type Vide/Null

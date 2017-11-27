@@ -196,8 +196,6 @@
           href: service-connect-to-tygraph.md
         - name: UserVoice
           href: service-connect-to-uservoice.md
-        - name: Visual Studio Team Services
-          href: service-connect-to-visual-studio.md
         - name: VMob
           href: service-connect-to-vmob.md
         - name: Webtrends
@@ -528,6 +526,8 @@
           href: service-gateway-onprem-tshoot.md
         - name: "Power\_BI\_Gateway - Personal"
           href: personal-gateway.md
+        - name: Utiliser Kerberos pour l’authentification unique
+          href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
         - name: Configuration des paramètres de proxy
           href: service-gateway-proxy.md
         - name: Gérer votre source de données d’entreprise - Analysis Services

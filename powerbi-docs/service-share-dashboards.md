@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/14/2017
 ms.author: maggies
-ms.openlocfilehash: 9c88c70de013679ea27faae17a3672c0d172b2a9
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 0b50568e49df8e2594519028b90d5d833d17c6b7
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Partager vos tableaux de bord Power BI avec vos collègues et d’autres utilisateurs
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI offre [plusieurs façons de collaborer et de distribuer vos tableaux](service-how-to-collaborate-distribute-dashboards-reports.md). Le partage en est une.
@@ -63,7 +63,7 @@ Regardez Amanda partager son tableau de bord avec des collègues à l’intérie
    
    Lorsque les destinataires en dehors de votre organisation cliquent sur le lien, ils voient le tableau de bord, mais pas dans le portail Power BI habituel. Pour plus d’informations, consultez [Partager un tableau de bord avec des personnes extérieures à votre organisation](service-share-dashboards.md#share-a-dashboard-with-people-outside-your-organization) ci-dessous.
 
-## <a name="who-has-access-to-a-dashboard-i-shared"></a>Qui a accès à un tableau de bord que j’ai partagé ?
+## <a name="who-has-access-to-a-dashboard-you-shared"></a>Qui a accès à un tableau de bord que vous avez partagé ?
 Vous avez parfois besoin de voir les personnes avec qui vous avez partagé un tableau de bord et avec qui celles-ci l’ont partagé.
 
 1. Dans la liste des tableaux de bord ou dans le tableau de bord lui-même, sélectionnez **Partager** ![icône Partager](media/service-share-dashboards/power-bi-share-icon.png). 
@@ -113,9 +113,7 @@ Voici quelques éléments à prendre en compte lors du partage de tableaux de bo
 * Tout le monde peut manuellement [actualiser les données de tableau de bord](refresh-data.md).
 * Si vous utilisez Office 365 pour la messagerie électronique, vous pouvez partager avec les membres d’un groupe de distribution en entrant l’adresse de messagerie associée au groupe de distribution.
 * Les collègues qui ont le même domaine de messagerie que le vôtre, ainsi que les collègues dont le domaine est différent mais inscrit auprès du même locataire, peuvent partager le tableau de bord avec d’autres utilisateurs. Par exemple, supposons que les domaines contoso.com et contoso2.com sont enregistrés dans le même locataire. Si votre adresse de courrier est konrads@contoso.com, ravali@contoso.com et gustav@contoso2.com peuvent partager, à condition que vous ayez autorisé ce partage.
-* Si vos collègues ont déjà accès à un tableau de bord spécifique, vous pouvez envoyer un lien direct vers ce tableau de bord en copiant simplement l’URL quand vous êtes dans le tableau de bord. Par exemple :   
-  
-    https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx
+* Si vos collègues ont déjà accès à un tableau de bord spécifique, vous pouvez envoyer un lien direct vers ce tableau de bord en copiant simplement l’URL quand vous êtes dans le tableau de bord. Par exemple : `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * De même, si vos collègues ont déjà accès à un tableau de bord spécifique, vous pouvez [envoyer un lien direct vers le rapport sous-jacent](service-share-reports.md). 
 
 ## <a name="next-steps"></a>Étapes suivantes

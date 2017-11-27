@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: 761f25f92151c2bc2bd6557757de97e6ad8dd54d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: ed0d4087912d1f4f6f1b4f6690c3cacd478beae3
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Principes fondamentaux de DAX dans Power BI Desktop
 Cet article s’adresse aux utilisateurs qui débutent avec Power BI Desktop. Il est destiné à vous fournir une introduction rapide et simple de la façon dont vous pouvez utiliser le langage DAX (Data Analysis Expressions) pour résoudre un certain nombre de problèmes d’analyse de données et de calcul de base. Nous aborderons des informations conceptuelles, une série de tâches que vous pourrez effectuer et quelques questionnaires pour tester ce que vous aurez appris. À la fin de cet article, vous aurez acquis une bonne compréhension des concepts fondamentaux du langage DAX.
@@ -88,46 +88,37 @@ Nous allons créer une formule simple. Cette tâche vous aidera à mieux compren
 
 ### <a name="task-create-a-measure-formula"></a>Tâche : créer une formule de mesure
 Pour effectuer cette tâche, vous devez ouvrir le fichier Contoso Sales Sample Power BI Desktop.
-
-**1.**  Dans la vue Rapport, cliquez avec le bouton droit sur la table **Sales** figurant dans la liste des champs, puis cliquez sur **Nouvelle mesure**.
-
-**2.**  Dans la barre de formule, remplacez **Mesure** en tapant un nouveau nom de mesure, **Previous Quarter Sales**.
-
-**3.**  Après le signe égal, tapez **SUM** suivi d’une parenthèse ouvrante.
-
-> Au lieu de taper immédiatement un nom de colonne à totaliser, vous allez entrer une autre fonction, pour *filtrer* les données à cumuler.
-> 
-> 
-
-**4.**  Entre les parenthèses, tapez **CALCULATE**, suivi d’une parenthèse ouvrante.
-
-> Vous utilisez la fonction CALCULATE pour filtrer les montants que vous souhaitez additionner par un argument que vous passez à la fonction CALCULATE. Ceci porte le nom d’imbrication de fonctions. La fonction CALCULATE possède au moins deux arguments. Le premier est l’expression à évaluer et le deuxième est un filtre.
-> 
-> 
-
-**5.**  Entre les parenthèses **()** de la fonction **CALCULATE**, tapez **Sales[SalesAmount]**. Il s’agit du premier argument de l’expression de votre fonction CALCULATE.
-
-**6.** Tapez une virgule (**,**) pour spécifier le premier filtre, puis tapez **PREVIOUSQUARTER**, suivi d’une parenthèse ouvrante.
-
-> La fonction temporelle PREVIOUSQUARTER sert à filtrer les résultats de SUM sur la base du trimestre précédent.
-> 
-> 
-
-**7.** Entre les parenthèses **()** de la fonction PREVIOUSQUARTER, tapez **Calendar[DateKey]**.
-
-> La fonction PREVIOUSQUARTER possède un seul argument, une colonne contenant une plage de dates contiguë.
-> 
-> 
-
-**8.** Vérifiez que les deux arguments transmis aux fonctions PREVIOUSQUARTER et CALCULATE sont fermés par deux parenthèses fermantes **))**.
-
-La formule doit maintenant ressembler à ceci :
-
-> **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
-> 
-> 
-
-**9.** Cliquez sur la coche ![](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) dans la barre de formule, ou appuyez sur Entrée pour valider la formule et l’ajouter au modèle.
+    
+1.  Dans la vue Rapport, cliquez avec le bouton droit sur la table **Sales** figurant dans la liste des champs, puis cliquez sur **Nouvelle mesure**.
+    
+2.  Dans la barre de formule, remplacez **Mesure** en tapant un nouveau nom de mesure, **Previous Quarter Sales**.
+    
+3.  Après le signe égal, tapez **SUM** suivi d’une parenthèse ouvrante.
+    
+    Au lieu de taper immédiatement un nom de colonne à totaliser, vous allez entrer une autre fonction, pour *filtrer* les données à cumuler.
+    
+4.  Entre les parenthèses, tapez **CALCULATE**, suivi d’une parenthèse ouvrante.
+    
+    Vous utilisez la fonction CALCULATE pour filtrer les montants que vous souhaitez additionner par un argument que vous passez à la fonction CALCULATE. Ceci porte le nom d’imbrication de fonctions. La fonction CALCULATE possède au moins deux arguments. Le premier est l’expression à évaluer et le deuxième est un filtre.
+   
+5.  Entre les parenthèses **()** de la fonction **CALCULATE**, tapez **Sales[SalesAmount]**. Il s’agit du premier argument de l’expression de votre fonction CALCULATE.
+    
+6.  Tapez une virgule (**,**) pour spécifier le premier filtre, puis tapez **PREVIOUSQUARTER**, suivi d’une parenthèse ouvrante.
+    
+    La fonction temporelle PREVIOUSQUARTER sert à filtrer les résultats de SUM sur la base du trimestre précédent.
+    
+7.  Entre les parenthèses **()** de la fonction PREVIOUSQUARTER, tapez **Calendar[DateKey]**.
+    
+    La fonction PREVIOUSQUARTER possède un seul argument, une colonne contenant une plage de dates contiguë.
+    >
+    
+8.  Vérifiez que les deux arguments transmis aux fonctions PREVIOUSQUARTER et CALCULATE sont fermés par deux parenthèses fermantes **))**.
+    
+   La formule doit maintenant ressembler à ceci :
+    
+    **Previous Quarter Sales = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
+    
+9. Cliquez sur la coche ![](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) dans la barre de formule, ou appuyez sur Entrée pour valider la formule et l’ajouter au modèle.
 
 Vous avez réussi ! Vous venez de créer une mesure à l’aide de DAX et pas l’une des plus simples, qui plus est. Cette formule calcule le total des ventes du trimestre précédent en fonction des filtres appliqués dans un rapport. Par exemple, si vous placez SalesAmount et votre nouvelle mesure Previous Quarter Sales dans un graphique, puis ajoutez Year et QuarterOfYear comme segments, vous obtenez le résultat suivant :
 

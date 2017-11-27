@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/02/2017
+ms.date: 11/21/2017
 ms.author: davidi
-ms.openlocfilehash: c69c3baff3c0ce00b06c5a6af43be8488133d42e
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: c676fafe2274139efdc7b4a5be5174b86ade5b50
+ms.sourcegitcommit: 47ea78f58ad37a751171d01327c3381eca3a960e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 Vous pouvez obtenir une connectivité avec authentification unique transparente, permettant la mise à jour de rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec Kerberos. La passerelle de données locale facilite l’authentification unique (SSO) à l’aide de la requête DirectQuery utilisée pour se connecter à des sources de données locales.
@@ -60,6 +60,15 @@ Des détails supplémentaires concernant ces étapes figurent ci-dessous :
    > En ce qui concerne le SID du service, si AAD DirSync/Connect est configuré et que des comptes d’utilisateurs sont synchronisés, le service de passerelle n’a pas besoin d’effectuer de recherches Active Directory locales lors de l’exécution, et vous pouvez utiliser le SID du service local (au lieu d’exiger un compte de domaine) pour le service de passerelle.  Les étapes de configuration de délégation Kerberos contrainte décrites dans ce documents sont les mêmes (simplement appliquées sur la base du SID du service, au lieu du compte de domaine).
    > 
    > 
+
+
+> [!NOTE]
+> Pour activer l’authentification unique pour SAP HANA, vous devez appliquer les deux correctifs de configuration propres à HANA suivants pour SAP :
+>    1. Mettez à niveau le serveur SAP HANA avec le correctif 122.13 de SAP HANA, publié par SAP fin octobre 2017. 
+>    2. Sur l’ordinateur de la passerelle, installez le pilote ODBC HANA SAP le plus récent.  La version minimale est HANA ODBC 2.00.020.00 datant d’août 2017.
+> 
+
+
 
 ## <a name="errors-from-an-insufficient-kerberos-configuration"></a>Erreurs d’une configuration insuffisante de Kerberos
 Si le serveur de base de données sous-jacent et la passerelle ne sont pas configurés correctement pour une **délégation Kerberos contrainte**, il se peut que vous receviez le message d’erreur suivant :

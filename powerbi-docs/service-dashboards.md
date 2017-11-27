@@ -17,14 +17,14 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 05/31/2017
 ms.author: mihart
-ms.openlocfilehash: d810383c87dae59e3993cef638497e64fd398dc7
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 81f7b4a68b66a2bfbdf285007ff4ff636c326a6c
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="dashboards-in-power-bi-service"></a>Tableaux de bord dans le service Power BI
-## <a name="what-is-a-dashboard"></a>Qu’est un tableau de bord ?
+
 Un ***tableau de bord*** Power BI est une page unique, souvent appelée canevas, qui utilise des visualisations pour raconter une histoire. Comme il est limité à une seule page, un tableau de bord bien conçu contient uniquement les éléments les plus importantes de cette histoire.
 
 ![](media/service-dashboards/power-bi-dashboard2.png)
@@ -64,7 +64,7 @@ Les [rapports](service-reports.md) sont souvent confondus avec les tableaux de b
 | Possibilité de créer des visualisations |Limité à l’ajout de widgets au tableau de bord avec « Ajouter une vignette » |Possibilité de créer de nombreux d’éléments visuels de type différent, d’ajouter des éléments visuels personnalisés, de modifier des éléments visuels et bien plus encore avec les autorisations de modification |
 | Personnalisation |Possibilité d’effectuer des opérations avec les visualisations (vignettes) : déplacement et réorganisation, redimensionnement, ajout de liens, attribution d’un nouveau nom, suppression, affichage plein écran, etc. Mais les données et les visualisations proprement dites sont en lecture seule. |En mode Lecture, vous pouvez publier, incorporer, filtrer, exporter, télécharger en tant que .pbix, afficher le contenu associé, générer des codes de QR, analyser dans Excel et bien plus encore.  En mode Édition, vous pouvez effectuer tout ce qui a été indiqué jusqu’ici et bien plus encore. |
 
-## <a name="dashboard-creators-and-dashboard-consumers"></a>***Créateurs*** et ***utilisateurs*** de tableaux de bord
+## <a name="dashboard-creators-and-dashboard-consumers"></a>Créateurs et utilisateurs de tableaux de bord
 Selon votre rôle, vous pouvez être amené à créer des tableaux de bord pour votre usage personnel ou pour les partager avec vos collègues. Vous souhaitez apprendre à créer et partager des tableaux de bord. Ou vous recevez peut-être des tableaux de bord d’autres personnes. Vous souhaitez apprendre à comprendre et interagir avec le tableau de bord.
 
 Voici quelques rubriques, par rôle, qui vous aideront à démarrer.

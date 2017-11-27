@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: 68df3ee83a8a9b8268cbced98830a467066add92
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: f372903886ab8f92e6954b5bdb370e7f48c204eb
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Créer des éléments visuels Power BI avec R
 **Power BI Desktop** vous permet d’utiliser **R** pour visualiser vos données.
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/15/2017
 **Power BI Desktop** n’inclut pas le moteur **R**. Vous ne pouvez pas non plus le déployer ou l’installer à l’aide de Power BI Desktop. Pour exécuter des scripts R dans **Power BI Desktop**, vous devez installer **R** séparément sur votre ordinateur local. Vous pouvez télécharger et installer **R** gratuitement à partir de nombreux emplacements, dont les pages [Download Revolution R Open](https://mran.revolutionanalytics.com/download/) et [CRAN Repository](https://cran.r-project.org/bin/windows/base/). La version actuelle des scripts R dans **Power BI Desktop** prend en charge les caractères Unicode ainsi que les espaces (caractères vides) dans le chemin d’installation.
 
 ## <a name="enable-r-visuals"></a>Activer les visuels R
-1. Pour activer les visuels R, sélectionnez **Fichier > Options et paramètres > Options**, puis, dans la page **Options** qui s’affiche, assurez-vous que votre installation R locale est spécifiée dans la section **Script R** de la fenêtre **Options**, comme illustré dans l’image suivante. Dans l’image suivante, le chemin de l’installation locale de R est le suivant : **C:\Program Files\R\R-3.2.0** . Celui-ci est explicitement fourni dans la zone de texte. Vérifiez que le chemin indiqué reflète correctement l’installation locale de R que **Power BI Desktop** doit utiliser.
+Pour activer les visuels R, sélectionnez **Fichier > Options et paramètres > Options**, puis, dans la page **Options** qui s’affiche, assurez-vous que votre installation R locale est spécifiée dans la section **Script R** de la fenêtre **Options**, comme illustré dans l’image suivante. Dans l’image suivante, le chemin de l’installation locale de R est le suivant : **C:\Program Files\R\R-3.2.0** . Celui-ci est explicitement fourni dans la zone de texte. Vérifiez que le chemin indiqué reflète correctement l’installation locale de R que **Power BI Desktop** doit utiliser.
    
    ![](media/desktop-r-visuals/r-visuals-2.png)
 
@@ -42,18 +42,18 @@ Après avoir spécifié votre installation R, vous pouvez commencer à créer de
    ![](media/desktop-r-visuals/r-visuals-3.png)
 2. Quand vous ajoutez un visuel R à un rapport, **Power BI Desktop** effectue les opérations suivantes :
    
-   (a) Une image d’élément visuel R apparaît sous forme d’espace réservé sur le canevas de rapport.
+   - Une image de visuel R apparaît sous forme d’espace réservé sur le canevas de rapport.
    
-   (b) L’ **Éditeur de script R** s’affiche dans la partie inférieure du volet central.
+   - L’**Éditeur de script R** s’affiche dans la partie inférieure du volet central.
    
    ![](media/desktop-r-visuals/r-visuals-4.png)
 3. Ensuite, ajoutez les champs que vous souhaitez utiliser dans votre script R à la section **Valeurs** de la zone **Champs**, comme vous le feriez pour tout autre visuel **Power BI Desktop**. Seuls les champs ajoutés à la zone **Champs** sont disponibles dans le script R. Vous pouvez ajouter de nouveaux champs ou supprimer les champs inutiles de la zone **Champs** pendant que vous travaillez sur votre script R dans l’**Éditeur de script R de Power BI Desktop**. **Power BI Desktop** détecte automatiquement les champs que vous avez ajoutés ou supprimés.
-
-> [!NOTE]
-> Le type d’agrégation par défaut pour les éléments visuels R est *Ne pas résumer*.
-> 
-> 
-
+   
+   > [!NOTE]
+   > Le type d’agrégation par défaut pour les éléments visuels R est *Ne pas résumer*.
+   > 
+   > 
+   
 1. Vous pouvez à présent utiliser les données sélectionnées pour créer un tracé. Quand vous sélectionnez des champs, l’ **Éditeur de script R** génère un code de liaison au script R de prise en charge en fonction des sélections effectuées dans la section grise située dans la partie supérieure du volet de l’éditeur. Quand vous sélectionnez ou supprimez des champs supplémentaires, le code de prise en charge dans l’Éditeur de script R est automatiquement généré ou supprimé selon le cas.
    
    Dans l’exemple présenté dans l’image suivante, trois champs ont été sélectionnés : hp, gear et drat. Suite à ces sélections, l’éditeur de script R a généré le code de liaison suivant :
@@ -66,7 +66,7 @@ Après avoir spécifié votre installation R, vous pouvez commencer à créer de
    ![](media/desktop-r-visuals/r-visuals-5.png)
    
    > [!TIP]
-> Dans certains cas, il peut être dans votre intérêt de ne pas avoir recours au regroupement automatique ou bien d’afficher toutes les lignes, notamment les doublons. Dans ce cas, vous pouvez ajouter un champ d’index à votre jeu de données. De cette façon, toutes les lignes sont considérées comme étant uniques, ce qui empêche le regroupement.
+   > Dans certains cas, il peut être dans votre intérêt de ne pas avoir recours au regroupement automatique ou bien d’afficher toutes les lignes, notamment les doublons. Dans ce cas, vous pouvez ajouter un champ d’index à votre jeu de données. De cette façon, toutes les lignes sont considérées comme étant uniques, ce qui empêche le regroupement.
    > 
    > 
    
@@ -76,7 +76,7 @@ Après avoir spécifié votre installation R, vous pouvez commencer à créer de
     Quand vous sélectionnez **Exécuter**, **Power BI Desktop** identifie le tracé et le présente sur le canevas.
    Le processus étant exécuté sur l’installation locale de R, vérifiez que les packages nécessaires sont installés.
    
-    **Power BI Desktop** retrace le visuel lorsque l’un des événements suivants se produit :
+   **Power BI Desktop** retrace le visuel lorsque l’un des événements suivants se produit :
    
    * **Exécuter** est sélectionné dans la barre de titre **Éditeur de script R**
    * À chaque changement de données dû à l’actualisation des données, au filtrage ou à la mise en surbrillance

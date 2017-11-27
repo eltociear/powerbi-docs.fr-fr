@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: b222addc2e72308e94a3d8836c8e9039c7208bae
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 22c5b8f64ef24f6ef6ff918058a56dc36fefddfa
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="shape-and-combine-data-in-power-bi-desktop"></a>Mettre en forme et combiner des données dans Power BI Desktop
 Avec **Power BI Desktop**, vous pouvez vous connecter à différents types de sources de données, puis mettre en forme les données en fonction de vos besoins. *Mettre en forme* des données consiste à transformer les données, par exemple à renommer des colonnes ou des tables, à remplacer du texte par des nombres, à supprimer des lignes, à définir la première ligne comme en-têtes, etc. *Combiner* des données consiste à se connecter à plusieurs sources de données, à les mettre en forme en fonction des besoins, puis à les consolider dans une seule requête utile.
@@ -160,11 +160,11 @@ La fenêtre **Supprimer les lignes du haut** s’affiche, dans laquelle vous pou
 
 ![](media/desktop-shape-and-combine-data/shapecombine_usefirstrowasheaders.png)
 
-    >[!NOTE]
-    >This is a good time to point out that the *sequence* of applied steps in Query Editor is important, and can affect how the data is shaped. It’s also important to consider how one step may impact another subsequent step; if you remove a step from the Applied Steps, subsequent steps may not behave as originally intended, because of the impact of the query’s sequence of steps.
+>[!NOTE]
+>Il est maintenant judicieux de souligner que la *séquence* des étapes appliquées dans l’Éditeur de requête est importante et peut affecter la manière dont les données sont mises en forme. Il est également important de savoir comment une étape peut avoir un impact sur une étape ultérieure. Si vous supprimez une étape de la section Étapes appliquées, les étapes suivantes peuvent ne pas se comporter comme prévu initialement, en raison de l’impact de la séquence des étapes de la requête.
 
-    >[!NOTE]
-    >When you resize the Query Editor window to make the width smaller, some ribbon items are condensed to make the best use of visible space. When you increase the width of the Query Editor window, the ribbon items expand to make the most use of the increased ribbon area.
+>[!NOTE]
+>Quand vous redimensionnez la fenêtre Éditeur de requête pour réduire sa largeur, certains éléments du ruban sont condensés pour tirer le meilleur parti de l’espace visible. Quand vous augmentez la largeur de la fenêtre Éditeur de requête, les éléments de ruban sont développés pour exploiter pleinement la zone agrandie du ruban.
 
 * Renommez les colonnes, ainsi que la table ; comme d’habitude, il existe plusieurs façons de renommer une colonne : sélectionnez la colonne, puis cliquez sur **Rename** (Renommer) sous l’onglet **Transform** (Transformer) du ruban, ou cliquez avec le bouton droit, puis choisissez **Rename...** (Renommer...) dans le menu qui s’affiche. Dans l’image suivante, les flèches indiquent les deux options ; vous ne devez en choisir qu’une seule.
 

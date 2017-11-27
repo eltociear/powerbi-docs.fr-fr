@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 11/02/2017
 ms.author: davidi
-ms.openlocfilehash: c7053cbf6dd4cc44424d447eefc060d119a98aa4
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 8d592a620f7a18cad3d70a09e6cd7a960683f860
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 La passerelle de données locale agit comme un pont, assurant un transfert de données rapide et sûr entre les données locales (les données qui ne sont pas dans le cloud) et les services Power BI, Microsoft Flow, Logic Apps et PowerApps.

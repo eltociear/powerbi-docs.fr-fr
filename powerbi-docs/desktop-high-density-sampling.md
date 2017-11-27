@@ -17,13 +17,13 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: 1ad136c82ab31ef37483600e2e0184f337c3eefc
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: d0b95684ee979c2e06a4d1043ffe9c6e6b12f38e
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
-# <a name="high-density-line-sampling-in-power-bi"></a>Échantillonnage de ligne à haute densité dans Power BI
+# <a name="high-density-line-sampling-in-power-bi"></a>Échantillonnage de lignes à haute densité dans Power BI
 Depuis la publication en juin 2017 de **Power BI Desktop** et des mises à jour du **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore les visuels qui échantillonnent des données à haute densité. Par exemple, vous pouvez créer un graphique en courbes à partir des résultats des ventes de magasins, chacun d’eux enregistrant plus de dix mille reçus d’achat chaque année. Un graphique en courbes de telles informations échantillonne des données (sélectionnez une représentation explicite de ces données pour illustrer les variations des ventes au fil du temps) à partir des données de chaque magasin, et illustre plusieurs séries, représentant ainsi des données sous-jacentes. Il s’agit d’une pratique courante dans la visualisation de données à haute densité, et Power BI Desktop a amélioré son échantillonnage des données à haute densité décrit en détail dans cet article.
 
 ![](media/desktop-high-density-sampling/high-density-sampling_01.png)

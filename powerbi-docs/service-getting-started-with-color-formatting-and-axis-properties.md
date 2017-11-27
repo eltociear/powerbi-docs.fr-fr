@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: a40f1fba503ca9bc76f77381fe977d6944b595a1
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 04b9a745d3969ab42c2a02c9b3cc28a65cd4d69c
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="getting-started-with-color-formatting-and-axis-properties"></a>Prise en main de la mise en forme des couleurs et des propriétés d’axe
 Dans **Power BI**, vous pouvez modifier la couleur des séries de données, des points de données et même l’arrière-plan des visualisations. Vous pouvez également modifier la façon dont les axes X et Y sont présentés, ce qui vous donne un contrôle total de la façon dont vos tableaux de bord et vos rapports s’affichent.
@@ -39,12 +39,12 @@ Quand vous sélectionnez **Format**, la zone située sous l’icône affiche les
 Vous pouvez personnaliser de nombreux éléments de ces visualisations :
 
 * La légende
-* L’axe X
-* L’axe Y
-* La couleur des données
-* Les étiquettes des données
+* Axe X
+* Axe Y
+* Couleurs des données
+* Étiquettes des données
 * Formes
-* La zone de traçage
+* Zone de traçage
 * Le titre
 * Arrière-plan
 * Les proportions
@@ -87,7 +87,7 @@ Il est souvent utile de modifier l’axe X ou l’axe Y. Comme pour l’utilis
 
 Si vous voulez réduire les options de l’ **axe X** , sélectionnez l’icône de flèche haut à côté d’ **Axe X**.
 
-Vous pouvez supprimer l’ensemble des étiquettes de l’axe X en cochant ou en décochant la case d’option située à côté d’ **Axe X**. Vous pouvez également choisir d’activer ou de désactiver les titres des axes en cochant la case d’option **Title**(Titre).  
+Vous pouvez supprimer l’ensemble des étiquettes de l’axe X en cochant ou en décochant la case d’option située à côté de **Axe X**. Vous pouvez également choisir d’activer ou de désactiver les titres des axes en cochant la case d’option **Title**(Titre).  
 
 Il existe un grand nombre de couleurs et de personnalisations à appliquer à vos rapports et tableaux de bord Power BI.
 
@@ -97,6 +97,7 @@ Il existe un grand nombre de couleurs et de personnalisations à appliquer à vo
 > 
 > 
 
+## <a name="next-step"></a>Étape suivante
 Pour plus d’informations, consultez l’article suivant :  
 
 * [Trucs et astuces pour la mise en forme des couleurs dans Power BI](service-tips-and-tricks-for-color-formatting.md)  

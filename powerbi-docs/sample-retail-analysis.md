@@ -17,14 +17,14 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/27/2017
 ms.author: mihart
-ms.openlocfilehash: 338f45ec7aa4564dfd17678b5c5296a08c078334
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: cfd085913ea1ef2cf08942ca4570f98eba34a3d4
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la vente au détail pour Power BI : Visite guidée
-## <a name="about-the-retail-analysis-sample"></a>À propos de l’exemple Analyse de la vente au détail
+
 Cet exemple de tableau de bord et son rapport sous-jacent permettent d’analyser les données de vente au détail d’articles vendus dans plusieurs magasins et régions. Les métriques comparent les performances de l’année à celle de l’année précédente pour les données suivantes : ventes, unités, marge brute, écart et analyse des nouveaux magasins. Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http://www.obvience.com)), présentées de façon anonyme.
 
 Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529778).
@@ -134,7 +134,7 @@ Le dernier domaine que nous souhaitons examiner est notre croissance : les nouv
 
 Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours choisir de ne pas enregistrer les modifications apportées. Mais si vous les enregistrez, vous pouvez toujours accéder à Obtenir des données pour avoir une nouvelle copie de cet exemple.
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
+## <a name="connect-to-your-data"></a>Vous connecter à vos données
 Nous espérons que cette visite guidée vous a montré comment les tableaux de bord, Q&R et les rapports Power BI peuvent fournir des informations sur les données des ventes. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).
 
 ## <a name="next-steps"></a>Étapes suivantes

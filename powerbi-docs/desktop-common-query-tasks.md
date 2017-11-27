@@ -17,18 +17,18 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: f7e7f0df4791fb4f9af67c4a5d885aa0e830f7df
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 06abac9ceba037769f9720dfbc4f0b32d5486686
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
 Quand vous travaillez dans la fenêtre **Éditeur de requête** de Power BI Desktop, vous avez accès à un certain nombre de tâches courantes. Ce document décrit ces tâches courantes et fournit des liens pour plus d’informations. 
 
 Les tâches courantes relatives aux requêtes illustrées ici sont les suivantes :
 
-* Se connecter à des données
+* Connectez-vous à vos données
 * Mettre en forme et combiner des données
 * Regrouper des lignes
 * Créer un tableau croisé dynamique des colonnes
@@ -43,7 +43,7 @@ La première connexion de données est un classeur Excel. L’autre est une ress
 
 Les étapes nécessaires pour se connecter à ces deux sources de données marquent le début des tâches courantes relatives aux requêtes.
 
-## <a name="connect-to-data"></a>Se connecter à des données
+## <a name="connect-to-data"></a>Connectez-vous à vos données
 Pour vous connecter à des données dans Power BI Desktop, cliquez sur le bouton **Obtenir des données** sous l’onglet **Accueil** du ruban. Power BI Desktop présente un menu qui répertorie les sources de données les plus courantes. Pour obtenir la liste complète des sources de données auxquelles Power BI Desktop peut se connecter, sélectionnez le bouton **Autres...** en bas du menu. Pour plus d’informations, consultez [Sources de données dans Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)

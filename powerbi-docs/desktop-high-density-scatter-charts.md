@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: 16c39e646c487789de62d0c030150475c8bb8292
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 12a9462a0594c6a52c7319073120cf323910d3e4
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Échantillonnage à haute densité dans les nuages de points de Power BI
 Depuis la publication en juin 2017 de **Power BI Desktop** et des mises à jour du **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore les visuels qui échantillonnent des données à haute densité.
@@ -73,7 +73,7 @@ Dans certains circonstances, l’algorithme d’**Échantillonnage à haute dens
   
   ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
 
-## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Comment activer l’**Échantillonnage à haute densité** pour un nuage de points
+## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Activer l’Échantillonnage à haute densité pour un nuage de points
 Pour activer l’**Échantillonnage à haute densité**, sélectionnez un nuage de points, accédez au volet **Mise en forme**, puis développez la carte **Général**. Au bas de celle-ci, un curseur bascule nommé **Échantillonnage à haute densité** est disponible. Pour activer celui-ci, faites-le glisser en position **Activé**.
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)

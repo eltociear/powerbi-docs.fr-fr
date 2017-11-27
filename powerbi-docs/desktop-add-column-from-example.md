@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 11/21/2017
 ms.author: davidi
-ms.openlocfilehash: b425e7ea2cffeff31cc8cf49330ca3835d92165c
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: f82bcc9d9add1683f593da6457fde2a4bbce2e02
+ms.sourcegitcommit: 47ea78f58ad37a751171d01327c3381eca3a960e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Ajouter une colonne à partir d’un exemple dans Power BI Desktop
 Depuis la publication de **Power BI Desktop** d’avril 2017, vous pouvez ajouter des colonnes de données à votre modèle à l’aide de l’**Éditeur de requête** en fournissant un ou plusieurs exemples de valeurs pour votre nouvelle colonne. Vous pouvez créer un exemple de colonne à partir d’une sélection active ou en fournissant une entrée basée sur la totalité ou une sélection des colonnes d’un tableau donné.
@@ -83,26 +83,29 @@ De nombreuses transformations sont disponibles lorsque vous utilisez la fonction
 
 * **Référence**
   
-  * Référence à une colonne spécifique (incluant des transformations de suppression d’espaces, de nettoyage (depuis juin 2017) et de casse)
+  * Référence à une colonne spécifique (incluant les transformations Supprimer les espaces, Nettoyer et Casse)
+
 * **Transformations Text**
   
   * Combiner (prend en charge la combinaison de chaînes littérales et de valeurs de colonne entière)
   * Remplacer
   * Longueur
-  * Extraire
-    
+  * Extraire   
     * Premiers caractères
     * Derniers caractères
     * Plage
     * Texte avant le délimiteur
     * Texte après le délimiteur
     * Texte entre les délimiteurs
-  * Les **transformations Text** prises en charge suivantes sont disponibles depuis la publication de **Power BI Desktop** du mois de juin 2017  :
-    
     * Longueur
 
+* Les **transformations Texte** prises en charge suivantes sont disponibles depuis la publication de **Power BI Desktop** du mois de novembre 2017  :
+    
+  * Supprimer des caractères
+  * Conserver des caractères
+
 > [!NOTE]
-> Toutes les transformations *Text* prennent en compte le besoin potentiel de supprimer des espaces, de nettoyer (depuis juin 2017) ou d’appliquer une transformation de casse aux valeurs de la colonne.
+> Toutes les transformations *Texte* prennent en compte le besoin potentiel de supprimer les espaces, de nettoyer ou d’appliquer une transformation de casse aux valeurs de la colonne.
 > 
 > 
 
@@ -118,8 +121,6 @@ De nombreuses transformations sont disponibles lorsque vous utilisez la fonction
   * Semaine du mois
   * Semaine de l’année
   * Année
-* Les transformations **Date** supplémentaires prises en charge suivantes sont disponibles depuis la publication de **Power BI Desktop** du mois de juin 2017 :
-  
   * Âge
   * Début de l’année
   * Fin de l’année
@@ -133,13 +134,13 @@ De nombreuses transformations sont disponibles lorsque vous utilisez la fonction
   * Jour du mois
   * Début de journée
   * Fin de journée
+
+
 * **Transformations Time**
   
   * Heure
   * Minute
-  * Seconde
-* **Transformations de Date/Heure/Fuseau horaire** : les transformations prises en charge suivantes sont disponibles depuis la publication de **Power BI Desktop** du mois de juillet 2017 :
-  
+  * Seconde  
   * Vers Heure locale
 
 > [!NOTE]
@@ -147,7 +148,8 @@ De nombreuses transformations sont disponibles lorsque vous utilisez la fonction
 > 
 > 
 
-* **Transformations de nombre** : les transformations prises en charge suivantes sont disponibles depuis la publication de **Power BI Desktop** du mois de juillet 2017 :
+* **Transformations Nombre** 
+
   * Valeur absolue
   * Arccosinus
   * Arcsinus
@@ -175,3 +177,10 @@ De nombreuses transformations sont disponibles lorsque vous utilisez la fonction
   * Somme
   * Tangente
 
+* La **transformation Nombre** prise en charge suivante est disponible depuis la publication de **Power BI Desktop** du mois de novembre 2017  :
+
+  * Création de compartiments/plages
+
+* **Général**
+  
+  * Colonne conditionnelle

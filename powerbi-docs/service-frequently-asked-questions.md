@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 48b0899d27e41cbc1d33d018696dd57d7c6f989a
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: e4cd07ca9917e7039fa2d179bbeeaf7962492f93
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 * Si vous avez des questions, [essayez d’interroger la communauté Power BI](http://community.powerbi.com/).
@@ -115,9 +115,8 @@ Vous pouvez télécharger les applications mobiles Power BI à partir de leur S
 * [Google Play](http://go.microsoft.com/fwlink/?LinkID=544867&clcid=0x409)
 * [Windows Store](http://go.microsoft.com/fwlink/?LinkId=526478)
 
-## <a name="power-bi-desktops-software-license-terms-say-you-may-install-and-use-one-copy-of-the-software-on-your-premises"></a>Le contrat de licence de Power BI Desktop stipule « Vous pouvez installer et utiliser une copie du logiciel sur votre serveur local ».
-### <a name="does-this-mean-i-am-limited-to-one-copy-of-power-bi-desktop-for-the-entire-company"></a>Cela signifie-t-il que je suis limité à une seule copie de Power BI Desktop pour toute l’entreprise ?
-Les droits d’utilisation de Power BI Desktop ne vous limitent pas à une seule copie pour toute l’entreprise. Chaque utilisateur de l’entreprise peut installer et utiliser une copie localement.
+## <a name="am-i-limited-to-one-copy-of-power-bi-desktop-for-my-entire-company"></a>Suis-je limité à une seule copie de Power BI Desktop pour toute mon entreprise ?
+Le contrat de licence de Power BI Desktop stipule « Vous pouvez installer et utiliser une copie du logiciel sur votre serveur local ». Cela ne vous limite pas à une seule copie de Power BI Desktop pour toute l’entreprise. Chaque utilisateur de l’entreprise peut installer et utiliser une copie localement.
 
 ## <a name="where-do-i-get-started-with-power-bi"></a>Où commencer avec Power BI ?
 Les ressources suivantes sont disponibles pour aider dans votre prise en main :

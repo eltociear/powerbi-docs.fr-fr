@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: bf1ac9f953dc00422e65f84d25f74bfa54c05628
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 8f009e382321d296191d861245e005c1ffb7ee33
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Prise en main de Power BI Desktop
 Bienvenue dans le **Guide de prise en main de Power BI Desktop**. Cette courte présentation de Power BI Desktop vous permettra de vous familiariser avec son fonctionnement. Elle vous montrera ce que l’application peut faire et vous permettra d’être plus vite apte à créer des modèles de données fiables, ainsi que des rapports de haute qualité, qui amplifieront vos efforts décisionnels. 
@@ -77,7 +77,7 @@ L’écran suivant montre les icônes des trois vues à gauche de Power BI Des
 
 Une fois l’application Power BI Desktop installée, vous pouvez vous connecter à des données, les mettre en forme et créer des rapports (généralement dans cet ordre). Dans les sections suivantes, nous passerons en revue chacune de ces opérations.
 
-## <a name="connect-to-data"></a>Se connecter à des données
+## <a name="connect-to-data"></a>Connectez-vous à vos données
 Quand l’application Power BI Desktop est installée, vous pouvez vous connecter au monde en perpétuelle expansion des données. Il existe *toutes sortes* de sources de données disponibles dans la fenêtre Requête. L’illustration ci-dessous montre comment se connecter aux données, en sélectionnant l’onglet **Accueil** du ruban, puis **Obtenir des données \> Autres**.
 
  ![](media/desktop-getting-started/getdatavidsmall.gif)
@@ -182,8 +182,8 @@ Sélectionnez **Modifier**, puis :
 
 * *Utilisez la première ligne comme en-têtes* : comme vous avez supprimé les trois lignes du haut, la ligne actuellement en haut représente l’en-tête que nous voulons.
 
->[!NOTE]
->Il est maintenant judicieux de souligner que la *séquence* des étapes appliquées dans l’**Éditeur de requête** est importante et peut affecter la manière dont les données sont mises en forme. Il est également important de savoir comment une étape peut avoir un impact sur une étape ultérieure. Si vous supprimez une étape de la section **Étapes appliquées**, les étapes suivantes peuvent ne pas se comporter comme prévu initialement, en raison de l’impact de la séquence des étapes de la requête.
+    >[!NOTE]
+    >Il est maintenant judicieux de souligner que la *séquence* des étapes appliquées dans l’**Éditeur de requête** est importante et peut affecter la manière dont les données sont mises en forme. Il est également important de savoir comment une étape peut avoir un impact sur une étape ultérieure. Si vous supprimez une étape de la section **Étapes appliquées**, les étapes suivantes peuvent ne pas se comporter comme prévu initialement, en raison de l’impact de la séquence des étapes de la requête.
 
 * *Renommez les colonnes et la table elle-même* : comme d’habitude, il existe plusieurs façons de renommer une colonne et vous pouvez choisir la méthode que vous préférez.
 

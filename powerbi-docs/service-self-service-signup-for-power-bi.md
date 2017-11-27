@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/09/2017
 ms.author: asaxton
-ms.openlocfilehash: dafd1d7891410818cc2c23031bf1a5f8c750438e
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: b09c497f04a59819f42e1841dd79912d19303041
+ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Inscription individuelle à Power BI
 Découvrez comment vous inscrire à Power BI et commencer à l’utiliser pour vos rapports et vos visualisations.
@@ -57,7 +57,7 @@ Si vous tentez de vous inscrire avec une adresse de messagerie personnelle, vous
 > 
 > 
 
-## <a name="which-one-do-i-need"></a>Choix de la version
+## <a name="which-one-do-you-need"></a>Choix de la version
 Vous pouvez déterminer celle dont vous avez besoin en examinant les points spécifiques à chaque type de licence. Les utilisateurs gratuits disposent de la plupart des fonctionnalités des services, à l’exception des fonctionnalités de partage et de collaboration. Les utilisateurs Power BI Pro peuvent profiter de toutes les fonctionnalités du service, mais cette licence n’est pas gratuite. Si vous n’avez pas besoin de partager du contenu, la version gratuite peut être le meilleur choix pour vous. Vous pouvez en savoir plus sur la [page de tarification de Power BI](https://powerbi.microsoft.com//pricing/).
 
 Le reste de cet article examinera comment s’inscrire à chaque option.
@@ -93,7 +93,7 @@ Une fois dans le service, vous pouvez vérifier que vous utilisez un compte grat
 
 ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup7.png)
 
-### <a name="what-if-im-already-part-of-an-existing-organization"></a>Que se passe-t-il si je fais déjà partie d’une organisation existante
+### <a name="what-if-youre-already-part-of-an-existing-organization"></a>Que se passe-t-il si je fais déjà partie d’une organisation existante ?
 Si votre compte fait partie d’une organisation existante, un message vous invite à vous connecter avec ce compte. Sélectionnez **Continuer** et connectez-vous avec votre identifiant Office 365.
 
 ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup5.png)
@@ -132,7 +132,7 @@ Une fois dans le service, vous pouvez vous assurer de disposer d’un compte pou
 
 ![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
 
-## <a name="what-if-you-want-the-full-power-bi-pro"></a>Que se passe-t-il si vous souhaitez utiliser la version complète de Power BI Pro
+## <a name="what-if-you-want-the-full-power-bi-pro"></a>Que se passe-t-il si vous souhaitez utiliser la version complète de Power BI Pro ?
 Il n’existe aucun moyen d’obtenir une licence Power BI Pro en tant qu’individu. Vous devez contacter votre administrateur IT pour qu’il achète une licence et l’attribue à votre compte. Pour plus d’informations, consultez [Achat de Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 
 ## <a name="troubleshooting"></a>Résolution des problèmes

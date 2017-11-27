@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 11/21/2017
 ms.author: davidi
-ms.openlocfilehash: 7f5b5114951265e2dd76dbbd8a33045d44e21989
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 9bff028c0db75e4c0e4f3b2fe97b4ed19c0d1518
+ms.sourcegitcommit: 47ea78f58ad37a751171d01327c3381eca3a960e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 **Power BI Desktop** intègre des fonctionnalités qui permettent aux personnes présentant un handicap de plus facilement lire et utiliser les rapports **Power BI Desktop**, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -76,7 +76,7 @@ Les conseils suivants peuvent vous aider à créer des rapports **Power BI Des
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 Il existe quelques limitations et problèmes connus concernant les fonctionnalités d’accessibilité, décrits dans la liste suivante :
 
-* JAWS est uniquement pris en charge dans les rapports qui sont affichés dans le **service Power BI**, y compris les rapports incorporés. L’équipe **Power BI Desktop** travaille activement de façon à le rendre également disponible dans les rapports affichés dans **Power BI Desktop**.
+* JAWS est pris en charge dans les rapports qui sont affichés dans le **service Power BI**, y compris les rapports incorporés. JAWS est également pris en charge dans **Power BI Desktop**. Toutefois, vous devez ouvrir le lecteur d’écran avant d’ouvrir des fichiers **Power BI Desktop** pour que la lecture de l’écran fonctionne correctement.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Utiliser des thèmes de rapport dans Power BI Desktop (préversion)](desktop-report-themes.md)
