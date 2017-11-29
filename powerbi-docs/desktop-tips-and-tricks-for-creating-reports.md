@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 07/20/2017
 ms.author: davidi
-ms.openlocfilehash: c95261c7e29f73b8c68083d2a239e10abaf674e5
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: f157a5efad5af44d4b97149c379211695800cfd9
+ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Trucs et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -94,7 +94,10 @@ Vérifiez que le type de données de la colonne d’agrégation résultante est 
 
 Définition d’un histogramme prenant en charge le balayage : si des éléments visuels sont liés entre eux et qu’un utilisateur sélectionne un point de données dans un élément visuel, les autres éléments visuels de la page de rapport mettent en surbrillance ou filtrent les points de données liés à celui sélectionné. Voilà ce qu’on entend par « balayage ».  Étant donné que nous manipulons les données au moment de la requête, nous devons créer une relation entre les tables et déterminer l’élément de détail qui est lié au compartiment dans l’histogramme et vice-versa.
 
-Pour démarrer le processus, identifiez la requête contenant le champ à utiliser pour créer un histogramme, puis sélectionnez l’option « Référence ».  Nommez la nouvelle requête « Buckets ».  Dans cet exemple, nous allons appeler la requête d’origine « Details ».  Ensuite, supprimez toutes les colonnes à l’exception de celle que vous allez utiliser comme compartiment pour l’histogramme.  Maintenant, cliquez avec le bouton droit sur la colonne et sélectionnez « Supprimer les doublons » pour faire en sorte que les valeurs restantes soient uniques dans la colonne.   Si vos données comportent des nombres décimaux, vous pouvez tout d’abord suivre la procédure « Définition de compartiments pour créer un histogramme » afin d’obtenir un ensemble gérable de compartiments.  Examinez à présent les données affichées dans l’aperçu de la requête.  Si vous voyez des valeurs vides ou null, vous devez les corriger avant de créer une relation.  Consultez la section « Création de relations si les données comprennent des valeurs null ou vides ».   Cette approche peut être problématique, car elle nécessite que les données soient triées.  Pour que les compartiments trient correctement les données, consultez « Ordre de tri : faire apparaître les catégories dans l’ordre souhaité ».  Remarque : il est conseillé de réfléchir à l’ordre de tri avant de créer des éléments visuels.   
+Pour démarrer le processus, identifiez la requête contenant le champ à utiliser pour créer un histogramme, puis sélectionnez l’option « Référence ».  Nommez la nouvelle requête « Buckets ».  Dans cet exemple, nous allons appeler la requête d’origine « Details ».  Ensuite, supprimez toutes les colonnes à l’exception de celle que vous allez utiliser comme compartiment pour l’histogramme.  Maintenant, cliquez avec le bouton droit sur la colonne et sélectionnez « Supprimer les doublons » pour faire en sorte que les valeurs restantes soient uniques dans la colonne.   Si vos données comportent des nombres décimaux, vous pouvez tout d’abord suivre la procédure « Définition de compartiments pour créer un histogramme » afin d’obtenir un ensemble gérable de compartiments.  Examinez à présent les données affichées dans l’aperçu de la requête.  Si vous voyez des valeurs vides ou null, vous devez les corriger avant de créer une relation.  Consultez la section « Création de relations si les données comprennent des valeurs null ou vides ».   Cette approche peut être problématique, car elle nécessite que les données soient triées.  Pour que les compartiments trient correctement les données, consultez « Ordre de tri : faire apparaître les catégories dans l’ordre souhaité ».  
+
+>[!NOTE]
+>Il est conseillé de réfléchir à l’ordre de tri avant de créer des éléments visuels.   
 
 L’étape suivante du processus consiste à définir une relation entre les requêtes « Buckets » et « Details » dans la colonne des compartiments.  Dans le ruban de Power BI Desktop, cliquez sur **Gérer les relations**.  Créez une relation dans laquelle « Buckets » est dans la table de gauche et « Details » dans la table de droite, puis sélectionnez le champ que vous utilisez pour l’histogramme. 
 
