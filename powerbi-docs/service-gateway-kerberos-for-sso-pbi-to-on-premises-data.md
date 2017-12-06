@@ -17,14 +17,14 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/21/2017
 ms.author: davidi
-ms.openlocfilehash: c676fafe2274139efdc7b4a5be5174b86ade5b50
-ms.sourcegitcommit: 47ea78f58ad37a751171d01327c3381eca3a960e
+ms.openlocfilehash: c00281d6b9e8a75df3b08cf1f99d0c9357129816
+ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
-Vous pouvez obtenir une connectivité avec authentification unique transparente, permettant la mise à jour de rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec Kerberos. La passerelle de données locale facilite l’authentification unique (SSO) à l’aide de la requête DirectQuery utilisée pour se connecter à des sources de données locales.
+Vous pouvez obtenir une connectivité avec authentification unique transparente, permettant la mise à jour de rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec Kerberos. La passerelle de données locale facilite l’authentification unique (SSO) à l’aide de DirectQuery qu’elle utilise pour se connecter à des sources de données locales.
 
 Les sources de données SQL Server, SAP HANA et Teradata, toutes basées sur une [délégation Kerberos contrainte](https://technet.microsoft.com/library/jj553400.aspx) sont actuellement prises en charge.
 
@@ -85,7 +85,7 @@ Le résultat est qu’en raison de la configuration insuffisante de Kerberos, la
 Plusieurs éléments doivent être configurés pour qu’une délégation Kerberos contrainte fonctionne correctement, dont les *noms de principal du service* (SPN) et les paramètres de délégation sur les comptes de service.
 
 ### <a name="prerequisite-1-install--configure-the-on-premises-data-gateway"></a>Condition préalable 1 : installer et configurer la passerelle de données locale
-Cette version de la passerelle de données locale prend en charge une mise à niveau locale, ainsi qu’une prise de contrôle des paramètres de passerelles existantes.
+Cette version de la passerelle de données locale prend en charge une mise à niveau sur place, ainsi qu’une prise de contrôle des paramètres de passerelles existantes.
 
 ### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>Condition préalable 2 : exécuter le service Windows de passerelle en tant que compte de domaine
 Dans une installation standard, la passerelle s’exécute en tant que compte de service local de machine (en particulier, *NT Service\PBIEgwService*) comme illustré dans l’image suivante :
@@ -94,10 +94,10 @@ Dans une installation standard, la passerelle s’exécute en tant que compte de
 
 Pour activer une **délégation Kerberos contrainte**, la passerelle doit opérer en tant que compte de domaine, sauf si votre AAD est déjà synchronisé avec votre Active Directory local (à l’aide de AAD DirSync/Connect). Pour que cette modification compte fonctionne correctement, vous avez deux options :
 
-* Si vous avez démarré avec une version précédente de la passerelle de données locale, suivez précisément dans l’ordre les cinq étapes (y compris l’exécution du configurateur de passerelle à l’étape 3) décrites dans l’article suivant :
+* Si vous avez démarré avec une version précédente de la passerelle de données locale, suivez précisément dans l’ordre les 5 étapes (y compris l’exécution de l’outil de configuration de passerelle à l’étape 3) décrites dans l’article suivant :
   
   * [Remplacement du compte de service de passerelle par un utilisateur de domaine](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
-  * Si vous déjà installé la préversion de la passerelle de données locale, il existe une nouvelle approche guidée par interface utilisateur pour changer de compte de service directement à partir du configurateur de la passerelle. Voir la section **Basculement de la passerelle vers un compte de domaine** vers la fin de cet article.
+  * Si vous déjà installé la préversion de la passerelle de données locale, il existe une nouvelle approche guidée par interface utilisateur pour changer de compte de service directement à partir de l’outil de configuration de la passerelle. Voir la section **Basculement de la passerelle vers un compte de domaine** vers la fin de cet article.
 
 > [!NOTE]
 > Si AAD DirSync/Connect est configuré et que des comptes d’utilisateurs sont synchronisés, le service de passerelle n’a pas besoin d’effectuer de recherches Active Directory locales lors de l’exécution, et vous pouvez utiliser le SID du service local (au lieu d’exiger un compte de domaine) pour le service de passerelle. Les étapes de configuration de délégation Kerberos contrainte décrites dans cet article sont les mêmes que celle de cette configuration (elles sont simplement appliquées sur la base du SID de service, au lieu du compte de domaine).
@@ -137,7 +137,7 @@ Cette étape étant terminée, nous pouvons passer à la configuration des param
 ### <a name="configure-delegation-settings-on-the-gateway-service-account"></a>Configurer les paramètres de délégation sur le compte de service de passerelle
 La deuxième exigence de configuration a trait aux paramètres de délégation sur le compte de service de passerelle. Différents outils permettent d’accomplir ces étapes. Dans cet article, nous allons utiliser **Utilisateurs et ordinateurs Active Directory**, composant logiciel enfichable de Microsoft Management Console (MMC) que vous pouvez utiliser pour administrer et publier des informations dans le répertoire, disponible par défaut sur les contrôleurs de domaine. Vous pouvez également l’activer via une configuration de **fonctionnalité Windows** sur d’autres machines.
 
-Nous devons configurer une **délégation Kerberos contrainte** avec transit de protocole. Avec une délégation contrainte, vous devez être explicite concernant les services auxquels vous souhaitez déléguer. Par exemple, seuls votre serveur SQL Server ou votre serveur SAP HANA acceptent les appels de délégation du compte de service de passerelle.
+Nous devons configurer une **délégation Kerberos contrainte** avec transit de protocole. Avec une délégation contrainte, vous devez être explicite concernant les services auxquels vous souhaitez déléguer. Par exemple, seul votre serveur SQL Server ou votre serveur SAP HANA accepte les appels de délégation du compte de service de passerelle.
 
 Cette section suppose que vous avez déjà configuré des noms de principal du service pour vos sources de données sous-jacentes (par exemple, SQL Server, SAP HANA, Teradata, etc.). Pour savoir comment configurer ces noms de principal du service de serveur de source de données, reportez-vous à la documentation technique du serveur de base de données concerné. Vous pouvez également consulter le billet de blog qui décrit le [*nom de principal du service dont votre application a besoin*](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/).
 
@@ -199,7 +199,7 @@ Plus haut dans cet article, nous avons abordé le basculement de la passerelle �
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_11.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, voir les ressources suivantes :
+Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, consultez les ressources suivantes :
 
 * [Passerelle de données locale](service-gateway-onprem.md)
 * [DirectQuery dans Power BI](desktop-directquery-about.md)

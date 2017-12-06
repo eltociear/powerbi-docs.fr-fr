@@ -45,7 +45,7 @@ Voici la liste des noms de domaine complets utilisés par la passerelle.
 > 
 
 ## <a name="forcing-https-communication-with-azure-service-bus"></a>Forcer les communications HTTPS avec Azure Service Bus
-Vous pouvez forcer la passerelle à communiquer avec Azure Service Bus en utilisant HTTPS au lieu d’une connexion TCP directe. Cela peut avoir un impact sur les performances. Pour ce faire, modifiez le fichier *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* en modifiant la valeur de `AutoDetect` à `Https`, comme indiqué dans l’extrait de code qui suit directement ce paragraphe. Par défaut, ce fichier se trouve dans le dossier *C:\Program Files\Passerelle de données locale*.
+Vous pouvez forcer la passerelle pour communiquer avec Azure Service Bus à l’aide de HTTPS au lieu de Direct TCP. Cela peut avoir un impact sur les performances. Pour ce faire, modifiez le fichier *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* en modifiant la valeur de `AutoDetect` à `Https`, comme indiqué dans l’extrait de code qui suit directement ce paragraphe. Par défaut, ce fichier se trouve dans le dossier *C:\Program Files\Passerelle de données locale*.
 
 ```
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
@@ -68,7 +68,7 @@ Pour référence future, vous pouvez redémarrer le *service Windows de passerel
 ## <a name="support-for-tls-1112"></a>Prise en charge de TLS 1.1/1.2
 À partir de la mise à jour d’août 2017, la passerelle de données locale utilise, par défaut, le protocole TLS 1.1 ou 1.2 pour communiquer avec le **service Power BI**. Les versions précédentes de la passerelle de données locale utilisent le protocole TLS 1.0 par défaut. Le 15 janvier 2018, le protocole TLS 1.0 ne sera plus pris en charge, y compris la capacité de la passerelle à interagir avec le **service Power BI** avec TLS 1.0. Vous devez donc mettre à niveau vos installations de passerelle de données locale vers la version d’août 2017 ou une version ultérieure avant cette date, afin que vos passerelles continuent à fonctionner.
 
-Il est important de noter que le protocole TLS 1.0 restera pris en charge par la passerelle de données locale jusqu’au 31 octobre, et sera utilisé par celle-ci en tant que mécanisme de secours. Pour vous assurer que tout le trafic de passerelle utilise les protocoles TLS 1.1 ou 1.2 (et pour empêcher l’utilisation du protocole TLS 1.0 sur votre passerelle), vous devez ajouter ou modifier les clés de Registre suivantes sur l’ordinateur exécutant le service de passerelle :
+Il est important de noter que le protocole TLS 1.0 reste pris en charge par la passerelle de données locale jusqu’au 31 octobre, et est utilisé par celle-ci en tant que mécanisme de secours. Pour vous assurer que tout le trafic de passerelle utilise les protocoles TLS 1.1 ou 1.2 (et pour empêcher l’utilisation du protocole TLS 1.0 sur votre passerelle), vous devez ajouter ou modifier les clés de Registre suivantes sur l’ordinateur exécutant le service de passerelle :
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
         [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001

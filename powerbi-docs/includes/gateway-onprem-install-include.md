@@ -20,7 +20,7 @@ Il existe quelques aspects à prendre en compte lors de l’installation d’un 
 * Vous pouvez installer plusieurs passerelles de données locales sur différents ordinateurs, et les gérer toutes à partir de la même interface de gestion de passerelle Power BI (à l’exception du mode personnel - voir la puce suivante).
 * Vous ne pouvez avoir qu’une seule passerelle en mode personnel en cours d’exécution pour chaque utilisateur Power BI. Si vous installez une autre passerelle en mode personnel pour le même utilisateur, même sur un autre ordinateur, l’installation la plus récente remplace la précédente installation.
 
-![on-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
+![On-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
 
 Voici quelques éléments à prendre en compte avant d’installer la passerelle.
 
@@ -29,11 +29,11 @@ Voici quelques éléments à prendre en compte avant d’installer la passerelle
 
 Lorsque la passerelle est installée, vous devez vous connecter avec votre compte professionnel ou scolaire.
 
-![on-prem-data-gateway-install-signin](./media/gateway-onprem-install-include/on-prem-data-gateway-install-signin.png)
+![On-prem-data-gateway-install-signin](./media/gateway-onprem-install-include/on-prem-data-gateway-install-signin.png)
 
 Lorsque vous êtes connecté, vous pouvez configurer une passerelle. Vous pouvez également migrer, restaurer ou reprendre une passerelle existante.
 
-![on-prem-data-gateway-install-register-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-register-recovery.png)
+![On-prem-data-gateway-install-register-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-register-recovery.png)
 
 ## <a name="configure-a-new-gateway"></a>Configurer une nouvelle passerelle
 1. Entrez le **nom** de la passerelle.
@@ -45,7 +45,7 @@ Lorsque vous êtes connecté, vous pouvez configurer une passerelle. Vous pouvez
 > 
 > 
 
-![on-prem-data-gateway-install-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-recovery.png)
+![On-prem-data-gateway-install-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-recovery.png)
 
 ### <a name="migrate-restore-or-take-over-an-existing-gateway"></a>Migrer, restaurer ou reprendre une passerelle existante
 Vous devez sélectionner la passerelle que vous souhaitez récupérer et fournir la clé de récupération définie lors de sa création.

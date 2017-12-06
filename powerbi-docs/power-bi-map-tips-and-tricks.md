@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/05/2017
 ms.author: mihart
-ms.openlocfilehash: 901193f396e38a7bce640db36a13dc0e7b998de6
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: f189ab5b195a945b6a21ea868cf29257e30c0d20
+ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/23/2017
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Trucs et astuces pour les visualisations de carte Power BI
 De par son intégration à Bing Cartes, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui vous permet de créer des cartes. Les deux solutions utilisent des algorithmes pour identifier l’emplacement correct, mais parfois elles présentent seulement une estimation. Si l’instance Power BI ne parvient pas à créer la visualisation de carte, elle demande l’aide de Bing Cartes.  
@@ -76,7 +76,7 @@ Dans Power BI, si le jeu de données que vous utilisez a des champs Longitude e
 
 ![latitude et longitude](media/power-bi-map-tips-and-tricks/pbi_latitude.png) 
 
-## <a name="use-geo-hierarchies-so-you-can-drilldown-to-different-levels-of-location"></a>Utilisez des hiérarchies géographiques pour effectuer l’exploration hiérarchique des différents « niveaux » de l’emplacement.
+## <a name="use-geo-hierarchies-so-you-can-drill-down-to-different-levels-of-location"></a>Utilisez des hiérarchies géographiques pour effectuer l’exploration hiérarchique des différents « niveaux » de l’emplacement.
 Lorsque votre jeu de données comporte déjà différents niveaux de données d’emplacement, vous et vos collègues pouvez utiliser Power BI pour créer des *hiérarchies géographiques*. Pour ce faire, faites glisser plusieurs champs dans le compartiment **Emplacement**. De cette façon, les champs deviennent une hiérarchie géographique. Dans l’exemple ci-dessous, nous avons ajouté des champs géographiques pour : Pays/région, État et Ville. Dans Power BI, vous et vos collègues pouvez monter et descendre dans la hiérarchie à l’aide de cette hiérarchie géographique.
 
   ![Champ Location (Emplacement)](media/power-bi-map-tips-and-tricks/power-bi-hierarchy.png)

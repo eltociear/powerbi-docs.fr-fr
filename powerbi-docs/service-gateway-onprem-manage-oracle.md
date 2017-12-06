@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 10/05/2017
 ms.author: davidi
-ms.openlocfilehash: bbe163f310eb839a3e815d34c72c981257f5b627
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 820bd1fabbb2770b938160420ac0e5bf97ece703
+ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="manage-your-data-source---oracle"></a>Gérer votre source de données - Oracle
 Une fois que vous avez installé la passerelle de données locale, vous devez ajouter des sources de données qui peuvent être utilisées avec la passerelle. Cet article décrit comment utiliser les passerelles et les sources de données. Vous pouvez utiliser la source de données Oracle pour l’actualisation planifiée ou DirectQuery.
@@ -176,7 +176,7 @@ Ces erreurs peuvent se produire si le client Oracle n’est pas installé ou s�
 > 
 > 
 
-Pour plus d’informations sur le dépannage de la passerelle, consultez [Dépannage de la passerelle de données locale](service-gateway-onprem-tshoot.md).
+Pour plus d’informations sur le dépannage de la passerelle, consultez [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Passerelle de données locale](service-gateway-onprem.md)  

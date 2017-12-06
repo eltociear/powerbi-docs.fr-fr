@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 09/25/2017
 ms.author: davidi
-ms.openlocfilehash: 617dcbf1d149966369aa0d1566094f6ce820a40a
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a93f24dc621dc5b044473fd16cc635fdef987a62
+ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="getting-started-with-power-bi-gateways"></a>Prise en main de Power BI Gateways
 Bienvenue dans le guide **Prise en main de Power BI Gateways**. Cette courte procédure pas à pas vous permet de vous familiariser avec les fonctionnalités d’une passerelle, la manière dont elle fonctionne et la façon d’obtenir votre propre passerelle installée, configurée et opérationnelle.  
@@ -42,7 +42,7 @@ Ou il se peut que vous opériez au sein d’une organisation disposant de toutes
 Heureusement, Power BI offre deux passerelles prenant en charge chacun de ces scénarios. Ces deux offres de passerelle Power BI sont les suivantes :
 
 * **Passerelle de données locale (mode personnel)** : elle permet à un utilisateur de se connecter aux sources et ne peut pas être partagée avec d’autres utilisateurs. Elle peut être utilisée uniquement avec Power BI.
-* **Passerelle de données locale**: elle permet à plusieurs utilisateurs de se connecter à plusieurs sources de données locales et peut être utilisée par Power BI, **PowerApps**, Flow et Azure Logic Apps, tout cela avec une installation de passerelle unique.
+* **Passerelle de données locale** : celle-ci permet à plusieurs utilisateurs de se connecter à plusieurs sources de données locales et peut être utilisée par Power BI, PowerApps, Flow et Azure Logic Apps, tout cela avec une installation de passerelle unique.
 
 Les deux passerelles remplissent une fonction similaire : elles facilitent l’accès aux données résidant sur un réseau local privé de façon à ce que les données soient utilisables dans des services cloud tels que Power BI. La passerelle personnelle peut être utilisée par une personne et uniquement par Power BI, tandis que la **passerelle de données locale** peut être utilisée par de nombreux utilisateurs et de nombreux services.
 
@@ -161,8 +161,8 @@ Bien. Vous disposez à présent d’une passerelle installée, et vous êtes pr�
 ## <a name="next-steps"></a>Étapes suivantes
 [Utilisation de la passerelle de données locale](service-gateway-onprem.md)  
 [Informations approfondies sur la passerelle de données locale](service-gateway-onprem-indepth.md)  
-[Passerelle de données locale (mode personnel)](service-gateway-personal-mode.md)
-
+[Passerelle de données locale (mode Personnel)](service-gateway-personal-mode.md)
 [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)  
+
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

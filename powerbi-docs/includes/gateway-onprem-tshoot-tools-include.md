@@ -4,7 +4,7 @@
 ### <a name="collecting-logs-from-the-gateway-configurator"></a>Collecte de journaux à partir de l’outil de configuration de passerelle
 Il existe plusieurs journaux que vous pouvez collecter pour la passerelle et vous devez toujours commencer avec eux. L’interface utilisateur est le moyen le plus simple de collecter des journaux après l’installation de la passerelle. Dans l’interface utilisateur **Passerelle de données locale**, sélectionnez **Diagnostics**, puis le lien **Exporter les journaux** vers le bas de la page, comme indiqué dans l’image suivante.
 
-![on-prem-data-gateway-UI-logs](./media/gateway-onprem-tshoot-tools-include/gateway-onprem-UI-logs.png)
+![On-prem-data-gateway-UI-logs](./media/gateway-onprem-tshoot-tools-include/gateway-onprem-UI-logs.png)
 
 **Journaux du programme d’installation**
 
@@ -12,16 +12,16 @@ Il existe plusieurs journaux que vous pouvez collecter pour la passerelle et vou
 
 **Journaux de configuration**
 
-    %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
+    %localappdata%\Microsoft\On-premises Data Gateway\GatewayConfigurator*.log
 
 **Journaux du service de passerelle de données locale**
 
-    C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
+    C:\Users\PBIEgwService\AppData\Local\Microsoft\On-premises Data Gateway\Gateway*.log
 
 ### <a name="event-logs"></a>Journaux d’événements
 Les journaux d’événements du **service de passerelle de données locale** se trouvent à l’emplacement **Journaux des applications et des services**.
 
-![on-prem-data-gateway-event-logs](./media/gateway-onprem-tshoot-tools-include/on-prem-data-gateway-event-logs.png)
+![On-prem-data-gateway-event-logs](./media/gateway-onprem-tshoot-tools-include/on-prem-data-gateway-event-logs.png)
 
 <a name="fiddler" />
 

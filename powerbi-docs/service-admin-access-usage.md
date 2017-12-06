@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
-ms.openlocfilehash: ceb39db7a69335e059d958a29fecfa9849fe2ae8
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 55caee3b289f187d6b955c216098313b483956f5
+ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/23/2017
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Trouver les utilisateurs Power BI qui se sont connectés
 Si vous êtes administrateur de locataire et que vous voulez voir quels utilisateurs se sont connectés à Power BI, vous pouvez utiliser les rapports d’accès et d’utilisation Azure Active Directory pour une meilleure visibilité.
@@ -51,7 +51,7 @@ Vous pouvez utiliser le portail Azure AD pour afficher l’activité de connexio
     ![](media/service-admin-access-usage/azure-portal-sign-ins.png)
 3. Filtrez l’application par **Microsoft Power BI** ou **Passerelle Power BI Gateway** et sélectionnez **Appliquer**.
    
-    **Microsoft Power BI** concerne l’activité de connexion liée au service, tandis que **Passerelle Power BI Gateway** concerne des connexions spécifiques pour la passerelle de données locale.
+    **Microsoft Power BI** concerne l’activité de connexion liée au service, tandis que **Power BI Gateway** concerne des connexions spécifiques pour la passerelle de données locale.
    
     ![](media/service-admin-access-usage/sign-in-filter.png)
 

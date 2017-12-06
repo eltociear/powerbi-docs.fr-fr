@@ -1,5 +1,5 @@
 ## <a name="how-the-gateway-works"></a>Fonctionnement de la passerelle
-![on-prem-data-gateway-how-it-works](./media/gateway-onprem-how-it-works-include/on-prem-data-gateway-how-it-works.png)
+![On-prem-data-gateway-how-it-works](./media/gateway-onprem-how-it-works-include/on-prem-data-gateway-how-it-works.png)
 
 Commençons par examiner ce qui se passe quand un utilisateur interagit avec un élément connecté à une source de données locale. 
 

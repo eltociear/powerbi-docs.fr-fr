@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/25/2017
 ms.author: davidi
-ms.openlocfilehash: 23799e0fcaf2dfc64f8ab7d47aa7d30b3d6ecf17
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 268c06569199bc00b28918b46a142942c9e03ba6
+ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/23/2017
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec **Power BI Desktop**, lorsque vous vous connectez à votre source de données, vous pouvez toujours importer une copie des données dans **Power BI Desktop**. Pour certaines sources de données, une autre approche consiste à se connecter directement à la source de données à l’aide de **DirectQuery**.
@@ -82,7 +82,7 @@ Lors de l’utilisation de **DirectQuery**, vous devez prendre en considération
 ## <a name="publish-to-the-power-bi-service"></a>Publication sur le service Power BI
 Des rapports créés à l’aide de **DirectQuery** peuvent être publiés sur le service Power BI.
 
-Si la source de données utilisée n’a pas besoin de la **Passerelle de données locale** (**Azure SQL Database**, **Azure SQL Data Warehouse**ou **Redshift**), des informations d’identification doivent être fournies avant que le rapport publié s’affiche dans le service Power BI.
+Si la source de données utilisée n’a pas besoin de la **Passerelle de données locale** (**Azure SQL Database**, **Azure SQL Data Warehouse** ou **Redshift**), des informations d’identification doivent être fournies avant que le rapport publié s’affiche dans le service Power BI.
 
 Vous pouvez fournir des informations d’identification en sélectionnant l’icône d’engrenage **Paramètres** dans Power BI, puis sélectionner **Paramètres**.
 
@@ -94,7 +94,7 @@ Power BI affiche la fenêtre **Paramètres** . À partir de là, sélectionnez 
 
 Tant que les informations d’identification n’ont pas été fournies, l’ouverture d’un rapport publié ou l’exploration d’un jeu de données créé avec une connexion **DirectQuery** à de telles sources de données génère une erreur.
 
-Pour des sources de données autres que **Azure SQL Database**, **Azure SQL Data Warehouse** et **Redshift** qui utilisent DirectQuery, une **Passerelle de données locale** doit être installée et la source de données doit être inscrite pour établir une connexion de données. Si vous le souhaitez, vous pouvez [en apprendre davantage sur la Passerelle de données locale](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+Pour des sources de données autres que **Azure SQL Database**, **Azure SQL Data Warehouse** et **Redshift** qui utilisent DirectQuery, une **Passerelle de données locale** doit être installée et la source de données doit être inscrite pour établir une connexion de données. Si vous le souhaitez, vous pouvez [en apprendre davantage sur la passerelle de données locale](http://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur **DirectQuery**, consultez les ressources suivantes :

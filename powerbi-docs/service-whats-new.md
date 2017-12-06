@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/01/2017
 ms.author: sirsu
-ms.openlocfilehash: 81a52b1810b2c35f67420741f3f89585626aa577
-ms.sourcegitcommit: 47ea78f58ad37a751171d01327c3381eca3a960e
+ms.openlocfilehash: 7f01ed805358b5b74a32ae26fb757f592c617088
+ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -142,7 +142,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 ***Obtenir des données***
 
 * Augmentation de la limite de taille des fichiers à 1 Go : nous avons relevé la limite de taille pour les classeurs Excel et les fichiers Power BI Desktop à 1 Go.
-* Rechercher les serveurs SSAS configurés avec Enterprise Gateway et autres mises à jour de passerelle : lorsque vous configurez Enterprise Gateway, les utilisateurs de votre entreprise pourront accéder à ces serveurs dans le service Power BI via la page Obtenir des données. Nous avons également ajouté la prise en charge pour l’actualisation des jeux de données qui incluent des données venant de SAP Business Warehouse Server à l’aide de la passerelle, en créant des règles de mappage UPN lorsque vous utilisez Analysis Services avec la passerelle.
+* Rechercher des serveurs SSAS configurés avec Enterprise Gateway et autres mises à jour de passerelle : lorsque vous configurez Enterprise Gateway, les utilisateurs de votre entreprise peuvent accéder à ces serveurs dans le service Power BI via la page Obtenir des données. Nous avons également ajouté la prise en charge pour l’actualisation des jeux de données qui incluent des données venant de SAP Business Warehouse Server à l’aide de la passerelle, en créant des règles de mappage UPN lorsque vous utilisez Analysis Services avec la passerelle.
 
 ***Sécurité au niveau des lignes***
 

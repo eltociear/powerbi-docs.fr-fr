@@ -1,5 +1,5 @@
 ---
-title: "Dépannage de la passerelle de données locale"
+title: "Résolution des problèmes de passerelle de données locale"
 description: "Cet article présente des méthodes permettant de résoudre les problèmes rencontrés avec la passerelle de données locale. Il fournit des solutions de contournement aux problèmes connus, ainsi que des outils d’aide."
 services: powerbi
 documentationcenter: 
@@ -17,13 +17,13 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 11/21/2017
 ms.author: davidi
-ms.openlocfilehash: 2663c9f2adf69ce224de90feb822b7cfedc935a5
-ms.sourcegitcommit: 47ea78f58ad37a751171d01327c3381eca3a960e
+ms.openlocfilehash: 62405898f06a75fdad9da1f635f01bebdb445d2e
+ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/27/2017
 ---
-# <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
+# <a name="troubleshooting-the-on-premises-data-gateway"></a>Résolution des problèmes de passerelle de données locale
 Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de la **passerelle de données locale**.
 
 <!-- Shared Community & support links Include -->
@@ -84,7 +84,7 @@ Pour corriger cela, procédez comme suit :
 ### <a name="support-for-tls-1112"></a>Prise en charge de TLS 1.1/1.2
 À partir de la mise à jour d’août 2017, la passerelle de données locale utilise, par défaut, le protocole TLS 1.1 ou 1.2 pour communiquer avec le **service Power BI**. Les versions précédentes de la passerelle de données locale utilisent le protocole TLS 1.0 par défaut. Le 1er novembre 2017, le protocole TLS 1.0 ne sera plus pris en charge. Vous devez mettre à niveau vos installations de passerelle de données locale vers la version d’août 2017 ou une version ultérieure avant cette date, afin que vos passerelles continuent à fonctionner.
 
-Il est important de noter que le protocole TLS 1.0 restera pris en charge par la passerelle de données locale jusqu’au 31 octobre, et sera utilisé par celle-ci en tant que mécanisme de secours. Pour vous assurer que tout le trafic de passerelle utilise les protocoles TLS 1.1 ou 1.2 (et pour empêcher l’utilisation du protocole TLS 1.0 sur votre passerelle), vous devez ajouter ou modifier les clés de Registre suivantes sur l’ordinateur exécutant le service de passerelle :
+Il est important de noter que le protocole TLS 1.0 reste pris en charge par la passerelle de données locale jusqu’au 31 octobre, et est utilisé par celle-ci en tant que mécanisme de secours. Pour vous assurer que tout le trafic de passerelle utilise les protocoles TLS 1.1 ou 1.2 (et pour empêcher l’utilisation du protocole TLS 1.0 sur votre passerelle), vous devez ajouter ou modifier les clés de Registre suivantes sur l’ordinateur exécutant le service de passerelle :
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
         [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
@@ -169,7 +169,6 @@ Cela peut être dû à différents scénarios.
 1. Le nom du serveur et celui de la base de données ne correspondent pas à ce qui a été entré dans Power BI Desktop et la source de données configurée pour la passerelle. Ces valeurs doivent être identiques. Elles ne sont pas sensibles à la casse.
 2. Votre compte n’est pas répertorié sous l’onglet **Utilisateurs** de la source de données dans la configuration de la passerelle. Vous devez contacter l’administrateur de la passerelle pour que celui-ci l’ajoute à cette liste.
 3. Votre fichier Power BI Desktop a plusieurs sources de données et celles-ci ne sont pas toutes configurées avec la passerelle. Chaque source de données définie avec la passerelle doit s’afficher dans l’actualisation planifiée.
-
 
 ### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-limit"></a>Erreur : Les données non compressées reçues sur le client de la passerelle ont dépassé la limite.
 La limitation exacte est de 10 Go de données non compressées par table. Si vous rencontrez ce problème, il existe plusieurs options pour l’optimiser et l’éviter. Une solution conseillée est de réduire l’utilisation de longues valeurs de chaîne très répétitives et à la place d’utiliser une clé normalisée ou de supprimer la colonne (si celle-ci n’est pas utilisée).

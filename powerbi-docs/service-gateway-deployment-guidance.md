@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: a96651f55860fd057d50d77dc4dffab4da91cdc5
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 3caf9f8aef802e8423f6a3940e55aba99331b912
+ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/23/2017
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Conseils relatifs au déploiement d’une passerelle de données pour Power BI
 Cet article fournit des conseils et indications sur le déploiement d’une passerelle de données dans votre environnement réseau. Une **passerelle** est un logiciel qui facilite l’accès aux données résidant sur un réseau local privé en vue de leur utilisation ultérieure dans un service cloud tel que Power BI. Cet article décrit le processus de déploiement et fournit des conseils sur l’installation de la **passerelle de données locale**.
@@ -30,7 +30,7 @@ Cet article fournit des conseils et indications sur le déploiement d’une pass
 
 Pour obtenir plus d’informations sur la **passerelle de données locale**, ainsi qu’un lien d’installation, consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
 
-## <a name="installation-considerations-for-the-on-premises-data-gateway"></a>Installation de la passerelle de données locale
+## <a name="installation-considerations-for-the-on-premises-data-gateway"></a>Éléments à prendre en compte lors de l’installation de la passerelle de données locale
 Avant d’entrer dans les détails de l’installation et du déploiement, différents éléments doivent être pris en compte. Les sections suivantes décrivent les principaux éléments à prendre en compte.
 
 ### <a name="number-of-users"></a>Nombre d’utilisateurs
@@ -90,7 +90,7 @@ Ces compteurs sont accessibles à partir de l’**Analyseur de performances Wind
 #### <a name="logs"></a>Journaux
 Les journaux de configuration et de service fournissent d’autres informations sur le fonctionnement de votre passerelle. N’hésitez pas à consulter les journaux de votre passerelle si votre connexion ne fonctionne pas comme prévu, car le service Power BI n’affiche pas tous les messages d’erreur.
 
-Pour afficher tous les fichiers journaux sur votre ordinateur local, la méthode la plus simple consiste à utiliser le bouton *Exporter les journaux* de la passerelle de données locale lorsque vous la rouvrez au terme de l’installation initiale, puis à sélectionner **Diagnostics > Exporter les journaux**.
+Pour afficher tous les fichiers journaux sur votre ordinateur local, la méthode la plus simple consiste à utiliser le bouton *Exporter les journaux* de la **passerelle de données locale** lorsque vous la rouvrez au terme de l’installation initiale, puis à sélectionner **Diagnostics > Exporter les journaux**.
 
 #### <a name="additional-logging"></a>Journalisation supplémentaire
 Par défaut, la passerelle procède à une journalisation de base. Si vous recherchez les causes d’un problème de passerelle et souhaitez obtenir des informations détaillées sur la connexion à la requête, vous pouvez temporairement activer la *journalisation détaillée* afin de recueillir des informations supplémentaires. Pour ce faire, dans la passerelle installée, sélectionnez **Diagnostics > Journalisation supplémentaire**.
@@ -134,7 +134,7 @@ Pour récupérer votre passerelle, vérifiez que vous en êtes l’administrateu
 Connectez-vous, puis sélectionnez l’option **Migrer une passerelle existante**. Choisissez la passerelle à récupérer ou migrer, entrez la clé de récupération, puis sélectionnez Configurer. Au terme de cette étape, l’ancienne passerelle est remplacée par la nouvelle, qui hérite de son nom et de toutes les sources de données précédemment configurées. Toutes les sources de données transitent alors par le nouvel ordinateur, sans qu’il soit nécessaire de republier quoi que ce soit. Le basculement automatique n’est pas encore pris en charge, mais l’équipe Passerelle y réfléchit.
 
 #### <a name="administrators"></a>Administrateurs
-La liste des administrateurs de passerelles est disponible sur le **service Power BI**. Une fois que vous êtes connecté au service Power BI, sélectionnez **Paramètres** (icône d’engrenage) > « Gérer les passerelles » -> Interface utilisateur des passerelles.  
+La liste des administrateurs de passerelles est disponible sur le **service Power BI**. Une fois que vous êtes connecté au service **Power BI**, sélectionnez **Paramètres** (icône d’engrenage) > **> Gérer les passerelles > Interface utilisateur des passerelles**.  
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_05.png)
 

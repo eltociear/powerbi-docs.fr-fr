@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: bcb859fe6364f28a59607f28f675f89e1a562f8e
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 7774153ff73fb67a434ac79016507a2e94cf40f1
+ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Résolution des problèmes de Power BI Gateway - Personal
 Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de Power BI Gateway - Personal.
@@ -86,7 +86,10 @@ Vous pouvez obtenir cette erreur dans les paramètres pour \<jeu de données\> s
 Cela se produit si la taille d’une seule ligne est supérieure à 4 Mo. Vous devez identifier la ligne dans votre source de données et essayer de l’éliminer ou d’en réduire la taille.
 
 ## <a name="data-sources"></a>Sources de données
-**Fournisseur de données manquant** : Personal Gateway est une version 64 bits uniquement. Il requiert une version 64 bits des fournisseurs de données à installer sur le même ordinateur où Personal Gateway est installé. Par exemple, si la source de données dans le jeu de données est Microsoft Access, vous devez installer le fournisseur ACE 64 bits sur le même ordinateur où Personal Gateway est installé.  **Remarque :** si vous disposez de la version 32 bits d’Excel, vous ne pouvez pas installer un fournisseur ACE 64 bits sur le même ordinateur.
+**Fournisseur de données manquant** : Personal Gateway est une version 64 bits uniquement. Il requiert une version 64 bits des fournisseurs de données à installer sur le même ordinateur où Personal Gateway est installé. Par exemple, si la source de données dans le jeu de données est Microsoft Access, vous devez installer le fournisseur ACE 64 bits sur le même ordinateur où Personal Gateway est installé.  
+
+>[!NOTE]
+>Si vous disposez de la version 32 bits d’Excel, vous ne pouvez pas installer un fournisseur ACE 64 bits sur le même ordinateur.
 
 **L’authentification Windows n’est pas prise en charge pour la base de données Access** : Power BI ne prend actuellement en charge que l’authentification anonyme pour la base de données Access. Nous travaillons sur l’activation de l’authentification Windows pour la base de données Access.
 

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: b1cb5bda9b80cb08ece111959884b840ff8d42cc
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 5c2274852c041b07a0ab4a09ed00c2dfa5d64cef
+ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/23/2017
 ---
 # <a name="power-bi-gateway---personal"></a>Power BI Gateway - Personal
 > [!NOTE]
@@ -187,8 +187,7 @@ Si vous avez besoin d’approuver des adresses IP plutôt que des domaines, vous
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Passerelle de données locale (mode personnel) - nouvelle version de la passerelle personnelle](service-gateway-personal-mode.md)
-
-[Configuration des paramètres de proxy pour les passerelles Power BI](service-gateway-proxy.md)  
+[Configuration des paramètres de proxy pour les passerelles Power BI](service-gateway-proxy.md)  
 [Power BI Premium](service-premium.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 09/06/2017
 ms.author: davidi
-ms.openlocfilehash: c030f1b18b654be6bba6a7bf2d10af322567c4d1
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: ca1761c0708681e6b413ba679980bacb3931e01d
+ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/23/2017
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Informations approfondies sur la passerelle de données locale
 Les utilisateurs de votre organisation peuvent accéder aux données locales (auxquelles ils ont déjà accès), mais avant qu’ils puissent se connecter à votre source de données locale, vous devez installer et configurer une passerelle de données locale. La passerelle favorise une communication rapide et sécurisée en arrière-plan entre un utilisateur dans le cloud et votre source de données locale, dans les deux sens.
@@ -119,7 +119,7 @@ Parfois, l’installation de la passerelle échoue. Ou bien la passerelle semble
 
 Dans d’autres cas, il peut s’agir d’un problème au niveau du type d’adresse de messagerie avec laquelle l’utilisateur se connecte ou encore l’incapacité d’Analysis Services à résoudre un nom d’utilisateur effectif. Si vous possédez plusieurs domaines liés par des approbations et que votre passerelle figure dans l’un d’eux alors qu’Analysis Services figure dans un autre, cela entraîne parfois des problèmes.
 
-Nous n’expliquerons pas ici comment résoudre les problèmes liés à la passerelle. Pour cela, consultez l’article [Dépannage de la passerelle de données locale](service-gateway-onprem-tshoot.md) qui contient une série de procédures de dépannage. Vous ne rencontrerez probablement aucun problème. Mais dans le cas contraire, la compréhension du fonctionnement des différents éléments et l’article de résolution des problèmes devraient vous aider.
+Nous n’expliquerons pas ici comment résoudre les problèmes liés à la passerelle. Pour cela, consultez l’article [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md) qui contient une série de procédures de dépannage. Vous ne rencontrerez probablement aucun problème. Mais dans le cas contraire, la compréhension du fonctionnement des différents éléments et l’article de résolution des problèmes devraient vous aider.
 
 <!-- Account and Port information -->
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]

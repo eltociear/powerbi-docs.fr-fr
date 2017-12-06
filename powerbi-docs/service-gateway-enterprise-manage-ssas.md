@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 10/05/2017
 ms.author: davidi
-ms.openlocfilehash: e03538061190290b251319a6919b918edc6c38fc
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 58cfc6feb510dc9dc335b473b40ee4a7f341ee10
+ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gérer votre source de données - Analysis Services
 Une fois que vous avez installé la passerelle de données locale, vous devez ajouter des sources de données qui peuvent être utilisées avec la passerelle. Cet article décrit comment utiliser les passerelles et les sources de données. Vous pouvez utiliser la source de données Analysis Services pour l’actualisation planifiée ou les connexions actives.
@@ -192,7 +192,7 @@ Quand vous sélectionnez un élément dans la liste, vous pouvez choisir de modi
 
 ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names-entry-selected.png)
 
-### <a name="using-wildcard"></a>Utilisation de caractères génériques (*)
+### <a name="using-wildcard-"></a>Utilisation de caractères génériques (*)
 Vous pouvez utiliser un caractère générique pour votre chaîne **Remplacer (nom d’origine)**. Il peut être utilisé seul uniquement, et non avec une autre partie de la chaîne. Cela vous permet de prendre tous les utilisateurs et de transmettre une valeur unique à la source de données. Cela est utile lorsque vous souhaitez que tous les utilisateurs de votre organisation utilisent le même utilisateur dans votre environnement local.
 
 ### <a name="test-a-mapping-rule"></a>Tester une règle de mappage
