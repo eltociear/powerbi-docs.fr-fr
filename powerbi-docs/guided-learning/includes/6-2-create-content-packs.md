@@ -1,4 +1,4 @@
-Dans cette leçon, nous allons créer un *pack de contenu* avec des artefacts existants dont nous disposons déjà dans Power BI, puis les partager avec des collègues.
+Dans cette leçon, nous allons créer un *pack de contenu* avec des artefacts existants dont nous disposons déjà dans Power BI, puis les partager avec des collègues. 
 
 Dans **Mon espace de travail**, je dispose d’un tableau de bord, du rapport ci-dessous et du groupe de données. Je veux les partager sous la forme d’un package avec les personnes de mon organisation, afin qu’elles puissent les réutiliser.
 

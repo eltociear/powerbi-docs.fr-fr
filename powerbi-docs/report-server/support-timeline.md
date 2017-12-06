@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/01/2017
+ms.date: 12/04/2017
 ms.author: asaxton
-ms.openlocfilehash: bec336dbc4b028f23acb9ba34f920a10b7869c23
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 03c19f34b9fab240a67cd8ed4d4b7ca3f66bb966
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Chronologie de prise en charge pour Power BI Report Server
 Power BI Report Server sera publié quelques fois par an. Des mises à jour de sécurité et critiques seront disponibles jusqu’à ce que la publication suivante soit généralement disponible (GA). Après une nouvelle publication, la publication précédente continuera de recevoir des mises à jour de sécurité pendant le restant de sa durée de vie de 12 mois.
@@ -31,7 +31,7 @@ Cette stratégie de prise en charge vous permet d’offrir des innovations à vo
 * Phase de service des mises à jour de sécurité et critiques : lors de l’exécution de la version la plus récente de Power BI Report Server, vous recevrez des mises à jour de sécurité et critiques.
 * Phase de service des mises à jour de sécurité (uniquement) : après la publication d’une nouvelle version, le support des versions antérieures est réduit aux seuls mises à jour de sécurité pendant le reste du cycle de vie de douze (12) mois du support (voir figure 1).
 
-    ![Graphique illustrant la plage de temps de prise en charge](media/support-timeline/reportserver-support-lifecycle.png)
+    ![Graphique illustrant la plage de temps de prise en charge](media/support-timeline/report-server-support-timeline.png)
 
 ## <a name="version-history"></a>Historique des versions
 | **Version** | **Disponibilité** | **Date de fin du support** |

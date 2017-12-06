@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/20/2017
+ms.date: 12/05/2017
 ms.author: davidi
-ms.openlocfilehash: f3138e45386c07e20342b495938ea84022c072c2
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 513cef9f82e40fba781446aeb9f469e57ae8d042
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Utiliser un segment et un filtre de date relative dans Power BI Desktop
 Un **segment de date relative** ou un **filtre de date relative** permet d’appliquer des filtres basés sur le temps à n’importe quelle colonne de date dans votre modèle de données. Par exemple, vous pouvez utiliser un **segment de date relative** pour afficher uniquement les données produites durant les trente derniers jours (ou mois, mois calendaires, etc.). Et lorsque vous actualisez les données, la période relative applique automatiquement la contrainte de date relative appropriée.

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 5daed750b6e9b80c04f568c39b4e0931c01bbc05
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: ea68f787fc59b2f672767fcf49c30761ee4db8cb
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Importer des classeurs Excel dans Power BI Desktop
 Avec **Power BI Desktop**, vous pouvez facilement importer des classeurs Excel qui contiennent des requêtes Power Query, des modèles Power Pivot et des feuilles de calcul Power View dans Power BI Desktop. Les rapports et les visualisations sont créées automatiquement à partir du classeur Excel et, une fois importés, vous pouvez continuer à améliorer et à affiner ces rapports à l’aide de Power BI Desktop, avec les fonctionnalités existantes et les nouvelles fonctionnalités publiées lors de chaque mise à jour mensuelle de Power BI Desktop.

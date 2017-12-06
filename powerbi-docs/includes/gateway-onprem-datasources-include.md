@@ -1,7 +1,6 @@
 ## <a name="list-of-available-data-source-types"></a>Liste des types de sources de données disponibles
 | **Source de données** | **Active/DirectQuery** | **Actualisation manuelle ou planifiée configurée par l’utilisateur** |
 | --- | --- | --- | --- |
-| Amazon Redshift |Oui |Oui |
 | Analysis Services (tabulaire) |Oui |Oui |
 | Analysis Services (multidimensionnelle) |Oui |Oui |
 | Fichier |Non |Oui |

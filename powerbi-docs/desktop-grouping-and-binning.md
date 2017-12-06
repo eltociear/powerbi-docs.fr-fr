@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 801adc4ddb22536e46273d2639b4a1f0b9496cca
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: b94ede61185e2029e259fd851eaa022737346210
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Utiliser le regroupement et le compartimentage dans Power BI Desktop
 Lorsque **Power BI Desktop** crée des visuels, il regroupe les données en segments (ou **groupes**) en fonction des valeurs trouvées dans les données sous-jacentes. Cela suffit généralement, mais vous pouvez affiner la présentation de ces segments. Par exemple, vous pouvez placer trois catégories de produits dans une catégorie supérieure (un *groupe*). Ou vous pouvez afficher les chiffres de ventes dans des compartiments de 1 000 000 de dollars, au lieu de 923 983 dollars divisés de façon égale.

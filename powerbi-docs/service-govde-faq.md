@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/28/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 9a2f191dcf88d3506ab0724c0916064b31fbf3f0
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 79e334a9a890fefd00a53e66fc6f070151587d2f
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Forum aux questions (FAQ) sur Power BI pour les clients du cloud allemand
 Une version du **service Power BI**, souvent appelée Microsoft Cloud Deutschland (MCD), est disponible pour les clients de l’UE et de l’AELE. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients de l’UE/AELE. Elle est distincte et différente de la version commerciale du **service Power BI** ou des services Power BI destinés aux administrations.

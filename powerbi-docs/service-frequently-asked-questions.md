@@ -15,18 +15,17 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 61d74fb9c25abb0cbc5135795d5567016f88b0c0
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 1fc6e666753ae45931604a1113f340115ec18269
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 * Si vous avez des questions, [essayez d’interroger la communauté Power BI](http://community.powerbi.com/).
 * Le problème persiste ? Visitez la [page de support Power BI](https://powerbi.microsoft.com/support/).
-* Ou cliquez sur l’icône **Me contacter** ![](media/service-frequently-asked-questions/power-bi-contact-me-icon.png) dans le coin inférieur droit de cette fenêtre de navigateur.
 
 ## <a name="what-is-microsoft-power-bi"></a>Qu’est-ce que Microsoft Power BI ?
 [Power BI](https://powerbi.microsoft.com/) est un service d’analyse de données d’entreprise basé sur le cloud, qui permet à chacun de visualiser et d’analyser des données plus rapidement, plus efficacement et de façon plus claire. Il connecte les utilisateurs à un large choix de données à l’aide de tableaux de bord faciles à utiliser, de rapports interactifs et de visualisations attrayantes qui donnent vie aux données.
@@ -156,5 +155,4 @@ Comme de nombreux autres services et logiciels Microsoft, Power BI permet d’a
 ## <a name="next-steps"></a>Étapes suivantes
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 * Le problème persiste ? Visitez la [page de support Power BI](https://powerbi.microsoft.com/support/).
-* Ou cliquez sur l’icône **Me contacter** ![](media/service-frequently-asked-questions/power-bi-contact-me-icon.png) dans le coin inférieur droit de cette fenêtre de navigateur.
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 12/25/2017
 ms.author: davidi
-ms.openlocfilehash: d4b1d1866fc56d48960539a420819d99afc13eb1
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: e32cf08625d6d36013175ad9533eac8791e76814
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="use-insights-in-power-bi-desktop-preview"></a>Utiliser des informations dans Power BI Desktop (préversion)
 Vous pouvez demander à **Power BI Desktop** d’expliquer des hausses ou des baisses observées dans des graphiques, et obtenir une analyse automatique, rapide et révélatrice de vos données. Cliquez simplement avec le bouton droit sur un point de données, puis sélectionnez **Analyser > Expliquer la baisse** (ou la hausse si la barre précédente était plus basse). Vous obtenez ainsi une information dans une fenêtre facile à utiliser.
