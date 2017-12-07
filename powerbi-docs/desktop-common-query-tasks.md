@@ -69,7 +69,7 @@ Les autres connexions de données sont similaires. Si l’authentification est n
 Pour obtenir une démonstration détaillée de la connexion à des données dans Power BI Desktop, consultez [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635) (Se connecter à des données dans Power BI Desktop).
 
 ## <a name="shape-and-combine-data"></a>Mettre en forme et combiner des données
-Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour obtenir une démonstration plus complète de la mise en forme et de la combinaison de données, consultez ****[Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644) (Mettre en forme et combiner des données dans Power BI Desktop).
+Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour obtenir une démonstration plus complète de la mise en forme et de la combinaison de données, consultez [Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644) (Mettre en forme et combiner des données dans Power BI Desktop).
 
 Dans la section précédente, nous avons connecté deux jeux de données : un classeur Excel et une ressource web. Une fois ces derniers chargés, l’Éditeur de requête présente l’aspect suivant, la requête issue de la page web étant sélectionnée (parmi les requêtes disponibles répertoriées dans le volet **Requêtes** , à gauche de la fenêtre Éditeur de requête).
 
