@@ -252,8 +252,6 @@
           href: service-insight-types.md
         - name: "Optimisez vos données pour en avoir un aperçu rapide dans Power\_BI"
           href: service-insights-optimize.md
-        - name: Afficher une vignette de tableau de bord en mode plein écran (mode TV)
-          href: service-tile-fullscreen-mode.md
         - name: "Tableaux de bord par défaut dans Power\_BI"
           href: service-dashboard-featured.md
         - name: Créer une vue téléphone d’un tableau de bord
