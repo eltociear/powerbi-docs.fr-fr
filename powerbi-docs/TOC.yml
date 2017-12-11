@@ -784,8 +784,8 @@
           href: desktop-inline-hierarchy-labels.md
         - name: Utiliser un sélecteur de plages numériques
           href: desktop-slicer-numeric-range.md
-        - name: Utiliser le segment de date relative
-          href: desktop-slicer-filter-date-range.md
+        - name: Créer un segment réactif que vous pouvez redimensionner
+          href: power-bi-slicer-filter-responsive.md
         - name: "Créer des cartes de réponse personnalisées Power\_BI pour Cortana"
           href: service-cortana-answer-cards.md
         - name: Sécurité au niveau des lignes
