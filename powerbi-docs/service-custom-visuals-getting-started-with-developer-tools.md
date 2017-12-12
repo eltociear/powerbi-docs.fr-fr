@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/05/2017
+ms.date: 11/30/2017
 ms.author: asaxton
-ms.openlocfilehash: e84c5045906cb91f028f0c33b5af8164871d8882
-ms.sourcegitcommit: 12236d08c27c7ee3fabb7ef9d767e9dee693f8aa
+ms.openlocfilehash: bdba3cb9a7dc64dbf71a48a7ae2223e74c302b70
+ms.sourcegitcommit: 0f6db65997db604e8e9afc9334cb65bb7344d0dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Créer des visuels personnalisés à l’aide des outils de développement
 Les éléments visuels personnalisés vous permettent de répondre aux besoins de vos utilisateurs et de vous mettre en adéquation avec le design de votre application. Découvrez comment créer un élément visuel personnalisé pour Power BI à l’aide des outils de développement.
@@ -347,8 +347,8 @@ En savoir plus sur [LESS](http://lesscss.org/).
 ## <a name="debugging"></a>Débogage
 Pour obtenir des conseils sur le débogage de votre élément visuel personnalisé, voir le [guide de débogage](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
-## <a name="submit-your-visual-to-the-office-store"></a>Soumettre votre visuel à l’Office Store
-Vous pouvez demander à inclure votre visuel dans l’Office Store. Pour plus d’informations sur ce processus, consultez [Publier des visuels personnalisés dans l’Office Store](developer/office-store.md).
+## <a name="submit-your-visual-to-appsource"></a>Soumettre votre visuel à AppSource
+Vous pouvez répertorier votre visuel pour que d’autres utilisateurs puissent s’en servir, mais en le soumettant à AppSource. Pour plus d’informations sur ce processus, consultez [Publier des visuels personnalisés dans AppSource](developer/office-store.md).
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 **Commande Pbiviz introuvable (ou erreurs similaires)**

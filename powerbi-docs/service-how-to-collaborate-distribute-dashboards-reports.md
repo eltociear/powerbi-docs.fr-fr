@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 1ee8cc60d5c18cb09915029088824ade89d2b39f
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a77c9a9816ef47ae4b342b2cd3a08b18c90f70de
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="how-should-i-collaborate-and-share-dashboards-and-reports-in-power-bi"></a>Comment partager des tableaux de bord, rapports et vignettes et collaborer dans Power BI ?
 Vous créez des tableaux de bord et des rapports. Vous collaborez peut-être dessus avec vos collègues. Puis vous souhaitez les partager avec d’autres utilisateurs. Qu’est la meilleure façon de les distribuer ?
@@ -54,7 +54,7 @@ Supposons que vous souhaitez distribuer votre tableau de bord à un public plus 
 
 ![Icône Publier l’application](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Si votre administrateur Power BI vous y autorise, vous pouvez installer une application automatiquement dans les comptes Power BI de vos collègues. Apprenez-en davantage sur la [publication de vos applications](service-create-distribute-apps.md#publish-your-app). 
+Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Apprenez-en davantage sur la [publication de vos applications](service-create-distribute-apps.md#publish-your-app). 
 
 Après avoir installé une application, ils peuvent l’afficher dans leur navigateur ou sur leur appareil mobile.
 

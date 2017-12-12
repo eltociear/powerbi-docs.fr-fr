@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/13/2017
+ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 58af226f6c3d93fffc805e23fcf1bda0d055058d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 29a089e13c2dd687a2caf19f43b1aae28e397a20
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -32,7 +32,7 @@ Vos utilisateurs en entreprise ont souvent besoin de plusieurs tableaux de bord 
 
 Avec les applications Power BI, actuellement en préversion, vous pouvez créer des collections de tableaux de bord et de rapports, et publier ces applications pour toute votre organisation, ou pour des personnes ou groupes spécifiques. Pour vous, en tant que créateur de rapports ou en tant qu’administrateur, les applications facilitent la gestion des autorisations sur les collections de tableaux de bord.
 
-Les utilisateurs obtiennent vos applications de différentes manières. Si l’administrateur Power BI vous y autorise, vous pouvez les installer automatiquement dans les comptes Power BI de vos collègues. Autrement, ceux-ci peuvent installer vos applications à partir de Microsoft AppSource ou d’un lien direct que vous leur envoyez. Ils peuvent facilement trouver et revenir à votre contenu, car celui-ci figure dans un emplacement unique. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour en savoir plus, voir l’[expérience d’application pour les utilisateurs professionnels](service-install-use-apps.md).
+Les utilisateurs professionnels peuvent installer ces applications à partir de Microsoft AppSource ou bien vous pouvez leur envoyer un lien direct. Ils peuvent facilement trouver et revenir à votre contenu, car celui-ci figure dans un emplacement unique. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour en savoir plus, voir l’[expérience d’application pour les utilisateurs professionnels](service-install-use-apps.md).
 
 ### <a name="apps-and-organizational-content-packs"></a>Applications et packs de contenu d’organisation
 Les applications sont l’évolution des packs de contenu d’organisation. Si vous avez déjà des packs de contenu d’organisation, ceux-ci continuent à fonctionner parallèlement aux applications.
@@ -119,7 +119,7 @@ Lorsque les tableaux de bord et rapports dans votre espace de travail d’applic
    
      ![Contenu de l’application](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. Enfin, sous **Accès**, décidez qui a accès à l’application : soit tous les membres de l’organisation, soit des personnes spécifiques, soit des listes de distribution de courrier électronique. Si vous disposez des autorisations nécessaires, vous pouvez installer l’application automatiquement pour les destinataires.
+4. Enfin, sous **Accès**, décidez qui a accès à l’application : soit tous les membres de l’organisation, soit des personnes spécifiques ou des groupes de sécurité Active Directory. 
    
      ![Accès à l’application](media/service-create-distribute-apps/power-bi-apps-access.png)
 
@@ -127,7 +127,7 @@ Lorsque les tableaux de bord et rapports dans votre espace de travail d’applic
    
      ![Achèvement de l’application](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-Les utilisateurs pour lesquels vous avez publié l’application peuvent trouver celle-ci de plusieurs façons. Premièrement, si vous pouvez l’installer automatiquement, elle apparaît sous Applications dans leur compte Power BI.  Vous pouvez leur envoyer un lien direct vers l’application, ou ils peuvent rechercher celle-ci dans Microsoft AppSource où toutes les applications qui leur sont accessibles sont visibles. Ensuite, chaque fois qu’ils accèdent à Applications, ils voient cette application dans leur liste.
+Les utilisateurs pour lesquels vous avez publié l’application peuvent trouver celle-ci de deux façons. Vous pouvez leur envoyer un lien direct vers l’application, ou ils peuvent rechercher celle-ci dans Microsoft AppSource où toutes les applications qui leur sont accessibles sont visibles. Ensuite, chaque fois qu’ils accèdent à Applications, ils voient cette application dans leur liste.
 
 Pour en savoir plus, voir l’[expérience d’application pour les utilisateurs professionnels](service-install-use-apps.md).
 

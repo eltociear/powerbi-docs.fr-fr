@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
+ms.date: 11/30/2017
 ms.author: asaxton
-ms.openlocfilehash: 1ab1590146f8b9714a27735cd556dd0203ecc6bf
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: c10ca76ac96090ff1facbdd28210b680392aae8d
+ms.sourcegitcommit: 0f6db65997db604e8e9afc9334cb65bb7344d0dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
 La sécurité au niveau des lignes (SNL) peut être utilisée pour restreindre l’accès aux données d’un rapport ou jeu de données, en permettant à différents utilisateurs d’utiliser le même rapport en voyant des données différentes. La sécurité au niveau des lignes peut être exploitée lors de l’incorporation de rapports à partir de Power BI.
@@ -145,7 +145,7 @@ Des rôles peuvent être fournis avec l’identité dans un jeton incorporé. Si
 * Alors que le service Power BI n’applique pas le paramètre de sécurité au niveau des lignes aux administrateurs ni aux membres dotés d’autorisations de modification, lorsque vous fournissez une identité avec un jeton d’incorporation, celle-ci est appliquée aux données.
 * Transmettre les informations d’identité, lors de l’appel de GenerateToken, est uniquement pris en charge pour les rapports en lecture/écriture. La prise en charge des autres ressources sera proposée ultérieurement.
 * Les connexions actives Analysis Services sont prises en charge pour les serveurs locaux.
-* Les connexions actives Azure Analysis Services ne sont pas prises en charge.
+* Les connexions actives Azure Analysis Services prennent en charge le filtrage par rôles, mais pas le filtrage dynamique par nom d’utilisateur.
 * Si le jeu de données sous-jacent ne nécessite pas la sécurité au niveau des lignes, la demande GenerateToken ne doit **pas** contenir d’identité effective.
 * Si le jeu de données sous-jacent est un modèle cloud (modèle mis en cache ou DirectQuery), l’identité effective doit inclure au moins un rôle. Sinon, l’attribution de rôle n’a pas lieu.
 * Une seule identité peut être fournie dans la liste des identités. Nous utilisons une liste pour autoriser les jetons contenant plusieurs identités pour l’incorporation prochaine des tableaux de bord.

@@ -1,6 +1,6 @@
 ---
-title: "Publier des visuels personnalisés dans l’Office Store"
-description: "Découvrez comment vous pouvez publier votre visuel personnalisé dans l’Office Store pour que d’autres utilisateurs puissent le trouver et l’utiliser."
+title: "Publier des visuels personnalisés dans AppSource"
+description: "Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser."
 services: powerbi
 documentationcenter: 
 author: guyinacube
@@ -15,22 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/20/2017
+ms.date: 12/5/2017
 ms.author: asaxton
-ms.openlocfilehash: 13456711e6c3bdce4554df7b7fbc0e4e9943987a
-ms.sourcegitcommit: 12236d08c27c7ee3fabb7ef9d767e9dee693f8aa
+ms.openlocfilehash: 0d3608d30fdf689c2121e65c5c4cafb861c88c2e
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/06/2017
 ---
-# <a name="publish-custom-visuals-to-the-office-store"></a>Publier des visuels personnalisés dans l’Office Store
-Découvrez comment vous pouvez publier votre visuel personnalisé dans l’Office Store pour que d’autres utilisateurs puissent le trouver et l’utiliser.
+# <a name="publish-custom-visuals-to-appsource"></a>Publier des visuels personnalisés dans AppSource
+Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser. Office
 
-Une fois que vous avez créé votre visuel personnalisé, vous pouvez le publier sur l’Office Store pour que les utilisateurs puissent le trouver et l’utiliser. Avant cela, vous devez effectuer quelques étapes de préparation. Pour plus d’informations sur la création d’un visuel personnalisé, consultez [Créer des visuels personnalisés à l’aide des outils de développement](../service-custom-visuals-getting-started-with-developer-tools.md).
+Une fois que vous avez créé votre visuel personnalisé, vous pouvez le publier sur AppSource pour que les utilisateurs puissent le trouver et l’utiliser. Avant cela, vous devez effectuer quelques étapes de préparation. Pour plus d’informations sur la création d’un visuel personnalisé, consultez [Créer des visuels personnalisés à l’aide des outils de développement](../service-custom-visuals-getting-started-with-developer-tools.md).
 
-![](media/office-store/powerbi-custom-visual-store.png)
+![](media/office-store/AppSource_01.jpg)
 
-Qu’est-ce que l’Office Store ? Il s’agit simplement de l’endroit où vous pouvez rechercher des applications (compléments) pour vos logiciels Office 365. L’[Office Store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connecte des millions d’utilisateurs d’Office 365 à des solutions qui les aident à effectuer leur travail de façon plus efficace, intelligente et élaborée.
+Présentation d’AppSource Il s’agit simplement de l’endroit où vous pouvez rechercher des applications SaaS et des compléments pour vos produits et services Microsoft. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connecte des millions d’utilisateurs Office 365, Dynamics 365, Cortana Intelligence, etc. à des solutions qui les aident à effectuer leur travail de façon plus efficace, intelligente et élaborée.
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Préparation de la soumission de votre visuel personnalisé
 Une fois que vous avez terminé de coder et de tester votre visuel personnalisé et que vous l’avez empaqueté dans un fichier pbiviz, vous devez également préparer les éléments suivants pour la soumission.
@@ -53,18 +53,18 @@ La soumission commence par l’envoi d’un e-mail à l’équipe de soumission 
 Joignez le fichier .pbiviz et l’exemple de fichier de rapport .pbix à votre e-mail. Dans sa réponse, l’équipe Power BI vous donne des instructions et un fichier XML de package d’application à charger. Ce package d’application XML est requis pour soumettre votre visuel par le biais du Centre pour développeurs Office.
 
 > [!NOTE]
-> Pour améliorer la qualité et faire en sorte que les rapports existants ne soient pas endommagés, 2 semaines supplémentaires sont nécessaires pour que les mises à jour apportées aux visuels existants atteignent l’environnement de production après l’approbation dans l’Office Store.
+> Pour améliorer la qualité et faire en sorte que les rapports existants ne soient pas endommagés, 2 semaines supplémentaires sont nécessaires pour que les mises à jour apportées aux visuels existants atteignent l’environnement de production après l’approbation dans le Store.
 > 
 > 
 
-## <a name="submitting-to-the-office-store"></a>Soumission à l’Office Store
-Une fois que l’équipe Power BI vous a envoyé le XML de package d’application, accédez au [Centre pour développeurs Office](https://sellerdashboard.microsoft.com/Application/Summary) pour soumettre votre visuel à l’Office Store.
+## <a name="submitting-to-appsource"></a>Soumission à AppSource
+Une fois que l’équipe Power BI vous a envoyé le XML de package d’application, accédez au [Centre pour développeurs](https://sellerdashboard.microsoft.com/Application/Summary) pour soumettre votre visuel à AppSource.
 
 > [!NOTE]
 > Vous devez avoir un compte de développeur Office valide pour vous connecter au [Centre pour développeurs Office](https://dev.office.com/). Un compte de développeur Office doit être un compte Microsoft (Live ID, par exemple hotmail.com ou outlook.com).
 > 
 > [!IMPORTANT]
-> Vous devez envoyer un e-mail avec les fichiers .pbiviz et .pbix à l’équipe Power BI avant la soumission à l’Office Store. L’équipe Power BI peut ainsi charger les fichiers sur le serveur de partage public. Sinon, l’Office Store ne peut pas récupérer les fichiers. Vous devez envoyer les fichiers à chaque soumission d’un nouveau visuel, mise à jour d’un visuel existant et correctif apporté aux soumissions rejetées par l’Office Store.
+> Vous devez envoyer un e-mail avec les fichiers .pbiviz et .pbix à l’équipe Power BI avant la soumission à AppSource. L’équipe Power BI peut ainsi charger les fichiers sur le serveur de partage public. Sinon, le Store ne peut pas récupérer les fichiers. Vous devez envoyer les fichiers à chaque soumission d’un nouveau visuel, mise à jour d’un visuel existant et correctif apporté aux soumissions rejetées.
 > 
 > 
 

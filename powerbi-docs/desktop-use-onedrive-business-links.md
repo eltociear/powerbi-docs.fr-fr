@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/05/2017
 ms.author: davidi
-ms.openlocfilehash: dcb262d110025f2c36c4029227b353132c4dafb6
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 2c249cac17e8fe6da35634c78837e3ca16e70a5c
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Utilisation des liens OneDrive Entreprise dans Power BI Desktop
 Beaucoup de gens ont des classeurs Excel stockés sur leur lecteur OneDrive Entreprise qui seraient parfaitement adaptés à une utilisation avec Power BI Desktop. Avec **Power BI Desktop**, vous pouvez utiliser les liaisons en ligne pour les fichiers **Excel** stockés dans **OneDrive Entreprise** pour créer des rapports et des éléments visuels. Vous pouvez utiliser un compte **OneDrive Entreprise** de groupe, ou votre compte **OneDrive Entreprise** individuel.
@@ -37,7 +37,7 @@ Obtention d’un lien en ligne depuis **OneDrive Entreprise** requiert des étap
    > 
    
    ![](media/desktop-use-onedrive-business-links/odb-links_02.png)
-2. Dans **Excel**, sélectionnez **Fichier > Infos** et sélectionnez le lien au-dessus du bouton **Protéger le classeur**. Sélectionnez **Copier le lien dans le presse-papiers**
+2. Dans **Excel**, sélectionnez **Fichier > Infos** et sélectionnez le lien au-dessus du bouton **Protéger le classeur**. Sélectionnez **Copier le lien dans le Presse-papiers** (votre version peut indiquer **Copier le chemin d’accès dans le Presse-papiers**).
    
    ![](media/desktop-use-onedrive-business-links/odb-links_03.png)
 

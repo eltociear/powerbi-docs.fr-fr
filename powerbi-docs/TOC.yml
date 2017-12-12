@@ -92,6 +92,8 @@
           href: service-admin-premium-purchase.md
         - name: "Gérer Power\_BI Premium"
           href: service-admin-premium-manage.md
+        - name: Prise en charge de jeux de données volumineux
+          href: service-premium-large-datasets.md
         - name: "FAQ Power\_BI Premium"
           href: service-premium-faq.md
         - name: Notes de publication Power BI Premium

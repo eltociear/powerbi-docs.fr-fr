@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
-ms.author: asaxton
-ms.openlocfilehash: 3e48f08237767a4c0cc5e1a8ddfc70a9087fbc1c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.date: 11/30/2017
+ms.author: mihart
+ms.openlocfilehash: 22d939dbd0a582611f2f4e90e2306456376e211b
+ms.sourcegitcommit: 910258a5ad8b6861e81ae02c57286db221c37375
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Créer un locataire Azure Active Directory pour utiliser Power BI
 Découvrez comment créer un locataire Azure Active Directory (Azure AD) pour votre application personnalisée à l’aide des API REST Power BI.
@@ -33,7 +33,7 @@ Lorsque vous disposez d’un locataire Azure AD, vous pouvez définir une applic
 Si votre organisation possède déjà un locataire Azure AD, vous pouvez l’utiliser pour votre application. En fonction des besoins de votre application, vous pouvez recourir à ce locataire ou en créer un. Cet article explique comment créer un locataire.
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Créer un client Azure Active Directory
-Pour intégrer Power BI à votre application personnalisée, vous devez définir une application dans Azure AD. Pour ce faire, il vous faut un répertoire Azure AD. Il s’agit de votre locataire. Si votre organisation n’a pas encore de locataire, parce qu’elle n’utilise pas Power BI ou Office 365, vous devez en créer un. Vous pouvez également créer un locataire si vous souhaitez que votre application soit indépendante du locataire de votre organisation. Cela vous permet de bien distinguer les choses.
+Pour intégrer Power BI à votre application personnalisée, vous devez définir une application dans Azure AD. Pour ce faire, il vous faut un répertoire Azure AD. Il s’agit de votre locataire. Si votre organisation n’a pas encore de locataire, parce qu’elle n’utilise pas Power BI ou Office 365, [vous devez en créer un](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Vous pouvez également créer un locataire si vous souhaitez que votre application soit indépendante du locataire de votre organisation. Cela vous permet de bien distinguer les choses.
 
 Si nécessaire, vous pouvez également créer un locataire à des fins de test.
 

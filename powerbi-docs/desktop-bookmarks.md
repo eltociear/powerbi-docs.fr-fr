@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: davidi
-ms.openlocfilehash: a5542e7a4c0b1d5014a6fce0042c07fec7398ab4
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: e60ff6d06e4ac0cddf398ccfc1d30e4d97e0773c
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi-preview"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI (préversion)
 À l’aide des **signets** dans Power BI, vous pouvez capturer la vue actuellement configurée d’une page de rapport, y compris le filtrage et l’état des visuels, puis revenir à cet état en sélectionnant simplement le signet enregistré. 
@@ -153,6 +153,7 @@ Dans cette préversion de la fonctionnalité **Signets**, vous devez garder à l
 * Si vous ajoutez un visuel sur une page de rapport après la création d’un signet, le visuel s’affiche dans son état par défaut. Cela signifie également que si vous introduisez un segment dans une page où vous avez précédemment créé des signets, le segment se comporte avec son état par défaut.
 * Le déplacement parmi les visuels après la création d’un signet est reflété dans le signet. 
 * Vous *devez* avoir au moins un signet dans votre rapport, lorsque vous publiez celui-ci dans le **service Power BI**, afin que les signets soient disponibles dans le service. Il s’agit d’une exigence pour chaque rapport que vous publiez.
+* Étant donné que les signets sont actuellement en préversion, ils ne sont pas encore disponibles dans [**Power BI Desktop pour Report Server**](report-server/quickstart-create-powerbi-report.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur les fonctionnalités qui sont similaires ou pour interagir avec des signets, consultez les articles suivants :
