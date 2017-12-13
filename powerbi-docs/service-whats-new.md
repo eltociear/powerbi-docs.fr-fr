@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/01/2017
 ms.author: sirsu
-ms.openlocfilehash: 7f01ed805358b5b74a32ae26fb757f592c617088
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 4cf430880ade8bafb345fef3f5d7fec228cb6272
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -167,7 +167,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 
 **28 avril 2016**
 
-* [Aperçus rapides sur les vignettes du tableau de bord](service-insights.md#run-quick-insights-on-a-dashboard-tile) : lors de l’affichage d’une vignette en mode Focus, cliquez sur Obtenir des informations pour rechercher la vignette et les données associées pour voir automatiquement et en quelques secondes les corrélations, les valeurs hors norme, les tendances, la saisonnalité, les points de changement dans les tendances et d’autres facteurs importants.
+* [Aperçus rapides sur les vignettes du tableau de bord](service-insights.md) : lors de l’affichage d’une vignette en mode Focus, cliquez sur Obtenir des informations pour rechercher la vignette et les données associées pour voir automatiquement et en quelques secondes les corrélations, les valeurs hors norme, les tendances, la saisonnalité, les points de changement dans les tendances et d’autres facteurs importants.
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/).
 
