@@ -38,7 +38,7 @@ Connectez-vous à [Zuora](https://app.powerbi.com/getdata/services/Zuora) pour P
 3. Sélectionnez **Zuora** \>  **Obtenir**.
    
    ![](media/service-connect-to-zuora/zuora.png)
-4. Spécifiez l’URL de Zuora (en général, https://www.zuora.com). (en général, https://www.zuora.com). Consultez les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
+4. Spécifiez l’URL de Zuora. Consultez les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
    
    ![](media/service-connect-to-zuora/params.png)
 5. Pour **Méthode d’authentification**, sélectionnez **Basic** et indiquez vos nom d’utilisateur et mot de passe (en respectant la casse), puis sélectionnez **Se connecter**.
