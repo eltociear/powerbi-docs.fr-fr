@@ -1,5 +1,4 @@
-### YamlMime:YamlDocument
-documentType: Tutorial
+### YamlMime:Tutorial
 title: Publication et partage
 metadata:
   title: Publication et partage | Microsoft Power BI
@@ -7,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: introductiontodax
-  nextTutorialTitle: "Présentation de DAX"
+  nextTutorialTitle: Introduction to DAX
   displayType: one-column
   author: davidiseminger
   manager: kfile
@@ -15,14 +14,15 @@ metadata:
   ms.topic: get-started-article
   ms.date: 12/06/2017
   ms.author: davidi
-  ms.openlocfilehash: c7204f34360f22f75c43ed65271d1263071719b9
-  ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+  ms.openlocfilehash: cc8560f56cba1f8bb0dc3d7faedf44433318288b
+  ms.sourcegitcommit: 1791b8f10332c680a1552d5361a6e01b75091385
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/06/2017
+  ms.lasthandoff: 12/12/2017
 items:
 - durationInMinutes: 1
-  content: "Les données sont plus puissantes quand elles sont partagées avec d’autres. Découvrez comment publier, exporter, partager et distribuer vos lectures de données Power BI.\n"
+  content: >
+    Data is most powerful when shared with others - learn how to publish, export, share, and distribute your Power BI data insights.
 - title: "Présentation des packs de contenu, de la sécurité et des groupes"
   durationInMinutes: 2
   content: >
@@ -104,4 +104,4 @@ items:
   durationInMinutes: 4
   content: >
     [!INCLUDE [](includes/6-5-guided-learning-completion.md)]
-- content: "Vous avez terminé la section **Publication et partage** de la formation guidée sur Power BI. Si vous souhaitez obtenir une présentation de DAX, le langage utilisé pour créer des requêtes Power BI, passez à l’étape suivante du didacticiel.\0"
+- content: "You've completed the **Publishing and sharing** section of Power BI Guided Learning. If you want an introduction to DAX, the language used to create Power BI queries, head to the next tutorial.\0"

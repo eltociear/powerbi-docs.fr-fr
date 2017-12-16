@@ -4,13 +4,13 @@ Vous avez réussi ! **Félicitations !** Vous avez terminé le cours **Formati
 
 Voici la dernière section (et la dernière rubrique, à moins que vous ne souhaitiez également apprendre DAX) du cours. Par conséquent, si vous avez parcouru toutes ces sections dans l’ordre, prenez un moment pour vous féliciter. Bravo ! Vous êtes maintenant familiarisé avec tous les **concepts importants** suivants :
 
-* À quoi sert [Power BI](0-0-what-is-power-bi.md)
-* [Éléments essentiels ](0-0b-building-blocks-power-bi.md) de Power BI
-* [Obtention](1-2-connect-to-data-sources-in-power-bi-desktop.md) et [modélisation](2-1-intro-modeling-data.md) de données
-* [Visualisations](3-1-intro-visualizations.md)
-* [Exploration de données](4-0-intro-power-bi-service.md) dans le service Power BI
-* Utilisation conjointe d’[Excel et de Power BI](5-1-intro-excel-data.md)
-* Et [publication et partage](6-0-intro-content-packs-groups.md) de votre travail
+* À quoi sert [Power BI](../gettingstarted.yml#step-1)
+* [Éléments essentiels ](../gettingstarted.yml#step-3) de Power BI
+* [Obtention](../gettingdata.yml#step-3) et [modélisation](../modeling.yml#step-1) de données
+* [Visualisations](../visualizations.yml#step-1)
+* [Exploration de données](../exploringdata.yml#step-1) dans le service Power BI
+* Utilisation conjointe d’[Excel et de Power BI](../powerbiandexcel.yml#step-1)
+* Et [publication et partage](../publishingandsharing.yml#step-1) de votre travail
 
 Cela représente beaucoup d’informations, mais maintenant que vous avez tout cela en tête, vous allez pouvoir vous lancer et les mettre à profit ! Voici quelques **liens vers des téléchargements** ou pour **connecter votre navigateur au service Power BI** :
 

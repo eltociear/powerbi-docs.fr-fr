@@ -32,5 +32,5 @@ Mais je peux modifier le tableau de bord, le rapport et même le jeu de données
 
 Les packs de contenu sont donc un moyen simple de réutiliser un contenu créé par d’autres personnes de votre organisation.
 
-Passons à la leçon suivante : [Créer un pack de contenu dans Power BI](6-4-update-content-pack.md).
+Passons à la leçon suivante !
 
