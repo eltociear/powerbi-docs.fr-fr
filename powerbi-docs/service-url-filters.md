@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/25/2017
+ms.date: 12/4/2017
 ms.author: mihart
-ms.openlocfilehash: 6858f85cb08c493f7a73dc888a4bb21f66c5f217
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 80a5a668056d1a3f3f2b53600e80f399be4a5e08
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 Lorsque vous ouvrez un rapport dans le service Power BI, chaque page du rapport possède sa propre URL unique. Pour filtrer cette page de rapport, vous pouvez utiliser le volet Filtres sur le canevas de rapport.  Vous pouvez également ajouter des paramètres de chaîne de requête à l’URL pour filtrer le rapport. Imaginons que vous avez un rapport que vous envisagez de présenter à des collègues après l’avoir filtré pour eux au préalable. Une solution consiste à ajouter les paramètres de filtre à l’URL par défaut du rapport, puis à envoyer par courriel à vos collègues l’URL entière ainsi obtenue.
@@ -107,7 +107,7 @@ Cela peut cependant être utile lorsque vous souhaitez afficher différents rés
 ## <a name="limitations-and-troubleshooting"></a>Limitations et résolution des problèmes
 Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder certaines choses à l’esprit.
 
-* Le filtrage de chaîne de requête ne fonctionne pas avec des URL de type [Publier sur le web](service-publish-to-web.md).
+* Le filtrage de chaîne de requête ne fonctionne pas avec des URL de type [Publier sur le web](service-publish-to-web.md) ou Power BI Embedded.   
 * Le type de champ doit être une chaîne.
 * Les noms de tableau et de champ ne peuvent pas contenir d’espaces.
 

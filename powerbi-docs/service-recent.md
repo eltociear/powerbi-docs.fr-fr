@@ -16,21 +16,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/17/2017
+ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: 54c6ba317dbe4fa71c9001f190d724c3afd74313
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 554084b26beff469276709b9e7c7f2c9fa84e65c
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="recent-content-in-power-bi-service"></a>Contenu **récent** dans le service Power BI
-![](media/service-recent/power-bi-recent-screen.png)
+
 
 ## <a name="what-is-recent-content"></a>Qu’est ce que le contenu récent
-Le contenu récent comprend les 20 derniers éléments que vous avez visités.  Il inclut les tableaux de bord, rapports, applications et classeurs.
+Le contenu récent regroupe les derniers éléments que vous avez consultés (maximum 20).  Il peut s’agir de tableaux de bord, de rapports, d’applications et de classeurs dans l’ensemble de vos espaces de travail.
 
-![](media/service-recent/power-bi-recent.png)
+![](media/service-recent/power-bi-recent-screen.png)
 
 Regardez Amanda montrer comment les listes de contenu **Récent** sont remplies, puis suivez les instructions détaillées sous la vidéo pour essayer vous-même.
 

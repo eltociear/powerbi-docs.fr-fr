@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.author: maggies
-ms.openlocfilehash: 0b50568e49df8e2594519028b90d5d833d17c6b7
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 276f663b8454ef0938222576cec13fcfb073e2cf
+ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Partager vos tableaux de bord Power BI avec vos collègues et d’autres utilisateurs
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI offre [plusieurs façons de collaborer et de distribuer vos tableaux](service-how-to-collaborate-distribute-dashboards-reports.md). Le partage en est une.
@@ -91,6 +91,8 @@ Seul le propriétaire du tableau de bord peut activer et désactiver le repartag
    * **Lire** pour empêcher cette personne de partager avec quiconque.
    * **Supprimer l’accès** pour empêcher cette personne de voir le tableau de bord.
 
+4. Dans la boîte de dialogue **Supprimer l’accès**, décidez si vous voulez également supprimer l’accès au contenu associé, tel que les rapports et les jeux de données. Si vous supprimez des éléments dotés d’une icône d’avertissement ![icône d’avertissement Power BI](media/service-share-dashboards/power-bi-warning-icon.png), il est recommandé de supprimer le contenu associé, car il ne s’affichera pas correctement.
+
 ## <a name="share-a-dashboard-with-people-outside-your-organization"></a>Partager un tableau de bord avec des personnes extérieures à votre organisation
 Quand vous partagez avec des personnes extérieures à votre organisation, celles-ci reçoivent un e-mail contenant un lien vers le tableau de bord partagé et elles doivent se connecter à Power BI pour voir le tableau de bord. Si elles ne disposent pas de licence Power BI Pro, elles peuvent en demander une après avoir cliqué sur le lien.
 
@@ -115,6 +117,33 @@ Voici quelques éléments à prendre en compte lors du partage de tableaux de bo
 * Les collègues qui ont le même domaine de messagerie que le vôtre, ainsi que les collègues dont le domaine est différent mais inscrit auprès du même locataire, peuvent partager le tableau de bord avec d’autres utilisateurs. Par exemple, supposons que les domaines contoso.com et contoso2.com sont enregistrés dans le même locataire. Si votre adresse de courrier est konrads@contoso.com, ravali@contoso.com et gustav@contoso2.com peuvent partager, à condition que vous ayez autorisé ce partage.
 * Si vos collègues ont déjà accès à un tableau de bord spécifique, vous pouvez envoyer un lien direct vers ce tableau de bord en copiant simplement l’URL quand vous êtes dans le tableau de bord. Par exemple : `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * De même, si vos collègues ont déjà accès à un tableau de bord spécifique, vous pouvez [envoyer un lien direct vers le rapport sous-jacent](service-share-reports.md). 
+
+## <a name="troubleshoot-sharing"></a>Résoudre les problèmes de partage
+
+### <a name="my-dashboard-recipients-see-a-lock-icon-in-a-tile-or-a-permission-required-message"></a>Les destinataires de mon tableau de bord voient une icône de verrou dans une vignette ou un message « Autorisation requise »
+
+Si les destinataires du partage voient une vignette verrouillée dans un tableau de bord ou un message « Autorisation requise » lorsqu’ils tentent de consulter un rapport, vous devez les autoriser à accéder au jeu de données sous-jacent. Voici comment procéder.
+
+1. Accédez à l’onglet **Jeux de données** dans votre liste de contenu.
+
+1. Sélectionnez les points de suspension (**...**) en regard du jeu de données > **Gérer les autorisations**.
+
+    ![Gérer les autorisations](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
+
+3. Sélectionnez **Ajouter un utilisateur**.
+
+    ![Sélectionnez Ajouter un utilisateur](media/service-share-dashboards/power-bi-share-dataset-add-user.png)
+
+1. Entrez les adresses e-mail complètes des personnes, des groupes de distribution ou des groupes de sécurité. Vous ne pouvez pas effectuer de partage avec des listes de distribution dynamique.
+
+    ![Ajoutez les adresses e-mail](media/service-share-dashboards/power-bi-add-user-dataset.png)
+
+5. Sélectionnez **Ajouter**.
+
+### <a name="i-cant-share-a-dashboard"></a>Je ne parviens pas à partager un tableau de bord
+
+Pour partager un tableau de bord, vous devez être autorisé à en partager le contenu sous-jacent (rapports et jeux de données associés). Si un message vous indique que vous ne pouvez pas effectuer le partage, demandez à l’auteur du rapport de vous autoriser à repartager ces rapports et jeux de données.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 * Vous voulez donner votre avis ? Accédez au [site de la communauté Power BI](https://community.powerbi.com/) pour effectuer des suggestions.

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.author: maggies
-ms.openlocfilehash: 54a1b81cc4281db7a622668ba205c1c57d5e396d
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: f3e02da2c0e793f3eb334c39852f5cd23534ad3f
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Afficher les rapports Power BI optimisés pour votre téléphone
 Quand vous créez un rapport Power BI dans Power BI Desktop, vous pouvez également créer une version [optimisée de ce rapport pour un affichage dans l’application Power BI pour téléphone](desktop-create-phone-report.md).
@@ -39,8 +39,8 @@ Toutes les autres fonctionnalités des rapports Power BI continuent de fonction
 * [Les rapports sur iPhone](mobile-reports-in-the-mobile-apps.md). 
 * [Les rapports sur Android](mobile-reports-in-the-mobile-apps.md).
 
-## <a name="filter-the-report-page-on-an-iphone"></a>Filtrer la page de rapport sur un iPhone
-Si des filtres ont été définis pour un rapport optimisé pour les téléphones, lorsque vous affichez le rapport sur un iPhone, vous pouvez utiliser ces filtres. 
+## <a name="filter-the-report-page-on-a-phone"></a>Filtrer la page de rapport sur un téléphone
+Si des filtres ont été définis dans un rapport optimisé pour les téléphones, lorsque vous affichez le rapport sur un téléphone, vous pouvez utiliser ces filtres. 
 
 1. Appuyez sur l’icône de filtre ![Icône de filtre de téléphone](media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) en bas de la page. 
 2. Pour voir les résultats qui vous intéressent, utilisez le filtrage de base ou avancé.

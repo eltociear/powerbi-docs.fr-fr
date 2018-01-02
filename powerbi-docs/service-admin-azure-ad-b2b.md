@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 12/07/2017
 ms.author: asaxton
-ms.openlocfilehash: b16bae6cc8932a488920949815833def5980c1f3
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 147ec28e64cf271843fcffdd14abe005345170e0
+ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -30,10 +30,7 @@ Power BI s’intègre avec Azure Active Directory B2B (Azure AD B2B) pour permet
 > [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
 
 > [!NOTE]
-> Cette fonctionnalité n’est pas actuellement disponible avec Power BI Mobile. 
-> 
-> 
-
+> Cette fonctionnalité n’est pas disponible actuellement avec les applications mobiles Power BI. Sur un appareil mobile, vous pouvez afficher le contenu Power BI partagé à l’aide d’Azure AD B2B dans un navigateur. 
 
 ## <a name="invite-guest-users"></a>Inviter des utilisateurs
 
@@ -99,6 +96,12 @@ L’affectation d’une licence Power BI Pro à l’utilisateur invité à l’i
 L’utilisateur invité dispose déjà d’une licence Power BI Pro assignée à l’intérieur de son client.
 
 ![Utilisateur invité apportant sa propre licence](media/service-admin-azure-ad-b2b/license-approach3.png)
+
+## <a name="limitations"></a>Limites
+
+* Les invités B2B externes peuvent uniquement consommer le contenu. Les invités B2B externes peuvent consulter les applications, les tableaux de bord, les rapports, exporter des données et créer des abonnements par courrier pour les tableaux de bord et les rapports. Ils ne peuvent pas accéder aux espaces de travail ou publier leur propre contenu.
+* Cette fonctionnalité n’est pas disponible actuellement avec les applications mobiles Power BI. Sur un appareil mobile, vous pouvez afficher le contenu Power BI partagé à l’aide d’Azure AD B2B dans un navigateur.
+* Le recours aux utilisateurs invités avec Power BI n’est pas pris en charge au sein des clouds souverains (administration).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

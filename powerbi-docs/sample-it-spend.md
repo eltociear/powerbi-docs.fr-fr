@@ -15,21 +15,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: f6c1b564bfab99deb35c919de4eb0c365d62c8e5
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: ebf10d6045bc1d0d0c260dffa7fbc68cfbc4528b
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée
 Le [pack de contenu](service-organizational-content-pack-introduction.md) Analyse des dépenses informatiques (tableau de bord, rapports et jeu de données) analyse les coûts prévus par rapport aux coûts réels d’un service informatique. Cette comparaison nous aide à évaluer la pertinence des prévisions de l’entreprise pour l’année et à analyser les secteurs qui présentent des écarts importants par rapport aux prévisions. L’entreprise décrite dans cet exemple suit un cycle de prévision annuel. Ensuite, tous les trimestres, elle produit ses toutes dernières estimations pour faciliter l’analyse des changements survenus en matière de dépenses informatiques pendant l’année fiscale.
 
 Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il s’agit de données réelles provenant d’obviEnce (<http://obvience.com/>), présentées de façon anonyme.
 
-* [Obtenir le pack de contenu Analyse des dépenses informatiques](sample-tutorial-connect-to-the-samples.md)
-* [Télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529783).
+>[!Note] 
+Vous pouvez [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529783). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**.
 
 ![](media/sample-it-spend/it1.png)
 

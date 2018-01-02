@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: ef064c636880db5d1b6c6106fe742972a7ed3a3c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 0bb540a4c27729999bbb1780a7d5a203d67d3a7c
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exemple Ressources humaines pour Power BI : visite guidée
 Les services de ressources humaines utilisent tous le même modèle de présentation de rapports, quels que soient le secteur d’activité et la taille des entreprises. Cet exemple s’intéresse aux nouvelles recrues, aux employés actifs et aux employés qui ont quitté l’entreprise dans le but de déceler des tendances en matière de stratégie de recrutement. Nos principaux objectifs sont répondre aux questions :
@@ -36,7 +36,7 @@ Cet exemple fait partie d’une série d’exemples qui illustre la façon dont 
 
 Comment procéder ? Dans le [service Power BI](https://powerbi.com), accédez à **Obtenir des données > Exemples > Exemple Ressources humaines > Se connecter** pour obtenir votre propre copie de l’exemple.
 
-Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529780).
+Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529780). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**.
 
 ## <a name="new-hires"></a>Nouvelles recrues
 Intéressons-nous d’abord aux nouvelles recrues.

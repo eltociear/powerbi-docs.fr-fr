@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/08/2017
+ms.date: 12/12/2017
 ms.author: davidi
-ms.openlocfilehash: 1ad6621683d6f28b63af373372c1d5100a0abd16
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 48ba3e679214283875abe27d06032fee20598347
+ms.sourcegitcommit: be55922d7f43f458aea0160ec8fdfb1a0b5a0c00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -30,6 +30,66 @@ Cet article décrit les précédentes mises à jour de **Power BI Desktop**. P
 Les sections suivantes décrivent les mises à jour **Power BI Desktop** des mois précédents.
 
 Vous pouvez toujours [télécharger la dernière version de Power BI Desktop](https://powerbi.microsoft.com/desktop). Si vous exécutez Windows 10, vous pouvez également obtenir **Power BI Desktop** à partir du Windows Store. Les versions mensuelles sont les mêmes, quelle que soit la façon dont vous installez **Power BI Desktop**. Pour plus d’informations, voir [cet article](desktop-get-the-desktop.md). 
+
+
+
+## <a name="november-2017-update-2524921202"></a>Mise à jour de novembre 2017 (2.52.4921.202)
+
+De nombreuses mises à jour de **Power BI Desktop** ont été publiées en novembre. 
+
+Les liens en regard de chaque mise à jour signifient ce qui suit :
+
+-   Des extraits **[vidéo]** présentant la fonctionnalité sont disponibles dans un nouvel onglet de navigateur.
+-   Certaines fonctionnalités ont un **[article]** qui fournit plus de détails.
+-   La plupart des fonctionnalités sont expliquées dans le billet de **[blog]** sur la mise à jour mensuelle.
+-   Enfin, certaines fonctionnalités sont explicites et ne disposent d’aucun article ou vidéo.
+
+Vous pouvez également regarder la vidéo sur les **dernières mises à jour** dès le début, directement dans cet article, en cliquant sur l’icône de **lecture** sur l’image vidéo située sous la liste des mises à jour.
+
+Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci sont les suivantes :
+
+### <a name="reporting"></a>Création de rapports
+
+-   Mise en forme conditionnelle basée sur des règles pour les visuels Table et Matrice [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=55s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting) 
+-   Alignement de cellule pour les visuels Table et Matrice [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=4m16s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#alignment) 
+-   Contrôler l’ordre des visuels dans le volet Sélection  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=6m21s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#selectionPane) 
+-   Verrouiller des objets sur votre rapport [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=9m2s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#lock) 
+-   Abonnement ESRI Plus disponible pour ArcGIS Maps for Power BI  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=10m31s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#esriPlus) 
+-   Options de rapport pour les sources de données lentes  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=16m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#slowDataSource) 
+-   Améliorations des performances de filtrage  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=20m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering) 
+-   Visuels personnalisés publiés récemment  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=20m50s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#customVisuals) 
+
+
+### <a name="analytics"></a>Analyse
+
+-   Mise en forme au niveau de la cellule des modèles AS multidimensionnels pour carte à plusieurs lignes  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=27m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting) 
+
+
+### <a name="data-connectivity"></a>Connectivité aux données
+
+-   Connecteur Impala - Prise en charge de l’authentification Windows  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=28m9s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#impala) 
+
+
+### <a name="other"></a>Autre
+
+-   Modification de requête - Améliorations par ajout de colonne à partir d’un exemple  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=28m34s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#addColumnFromExamples) 
+
+
+
+> [!NOTE]
+> Cous pouvez aussi [consulter la liste des sources de données accessibles à Power BI Desktop](desktop-data-sources.md). Cette liste étant en constante évolution, consultez-la régulièrement.
+
+Vous souhaitez plus d’informations sur ces mises à jour ? Consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary) pour obtenir des informations plus détaillées sur chacune de ces nouvelles fonctionnalités (voir le billet de blog référencé dans la liste ci-dessus).
+
+La vidéo suivante décrit et montre chacune de ces mises à jour. Vous pouvez également afficher la vidéo à partir du billet de blog.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sI3yRjdnJ7w" frameborder="0" allowfullscreen></iframe>
+
+> [!NOTE]
+> Les rubriques [Nouveautés du service Power BI](service-whats-new.md) et [Nouveautés dans les applications mobiles pour Power BI](mobile-whats-new-in-the-mobile-apps.md) sont également susceptibles de vous intéresser.
+
+
+
 
 
 ## <a name="october-2017-update-2514885543"></a>Mise à jour d’octobre 2017 (2.51.4885.543)
@@ -77,7 +137,7 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci sont l
 > [!NOTE]
 > Cous pouvez aussi [consulter la liste des sources de données accessibles à Power BI Desktop](desktop-data-sources.md). Cette liste étant en constante évolution, consultez-la régulièrement.
 
-Vous souhaitez plus d’informations sur ces mises à jour ? Consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary) pour obtenir des informations plus détaillées sur chacune de ces nouvelles fonctionnalités (voir le billet de blog référencé dans la liste ci-dessus).
+Vous souhaitez plus d’informations sur ces mises à jour ? Consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary) pour obtenir des informations plus détaillées sur chacune de ces nouvelles fonctionnalités (voir le billet de blog référencé dans la liste ci-dessus).
 
 La vidéo suivante décrit et montre chacune de ces mises à jour. Vous pouvez également afficher la vidéo à partir du billet de blog.
 

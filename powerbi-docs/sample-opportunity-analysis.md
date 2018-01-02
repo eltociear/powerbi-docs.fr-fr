@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: c51984aed112b62143ab132672b331cd0f97c7a1
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 878738eb3f588c461b687451062a1641479e77ed
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des opportunités pour Power BI : visite guidée
 L’ **exemple Suivi des opportunités** contient le tableau de bord (et son rapport associé) d’une société de logiciels qui s’appuie sur 2 canaux de vente : *direct* et *partenaires*. La responsable des ventes a créé ce tableau de bord pour suivre les opportunités et le chiffre d’affaires par région, par taille de contrat et par canal.
@@ -38,7 +38,8 @@ Elle s’appuie sur 2 mesures du chiffre d’affaires :
 
 Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http://www.obvience.com/)), présentées de façon anonyme.
 
-Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529782).  
+>[!Note] 
+Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529782). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier.  Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**. 
 
 ![](media/sample-opportunity-analysis/opportunity1.png)
 

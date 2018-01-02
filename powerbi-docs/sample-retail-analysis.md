@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: cfd085913ea1ef2cf08942ca4570f98eba34a3d4
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 09e245e625c9e0859f93837e56b564218e327926
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la vente au détail pour Power BI : Visite guidée
 
 Cet exemple de tableau de bord et son rapport sous-jacent permettent d’analyser les données de vente au détail d’articles vendus dans plusieurs magasins et régions. Les métriques comparent les performances de l’année à celle de l’année précédente pour les données suivantes : ventes, unités, marge brute, écart et analyse des nouveaux magasins. Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http://www.obvience.com)), présentées de façon anonyme.
 
-Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529778).
+[!Note] Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529778). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier.  Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**. 
 
 ![](media/sample-retail-analysis/retail1.png)
 

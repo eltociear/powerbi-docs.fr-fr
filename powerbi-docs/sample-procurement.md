@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: 576ddfbbf52a2738dd32597479ffd03d554a5256
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 957e7c05907f1fc75eddeb271c664f898203e591
+ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de l’approvisionnement pour Power BI : visite guidée
 Cet exemple sectoriel de tableau de bord et son rapport sous-jacent permettent d’analyser les dépenses d’une entreprise de fabrication auprès des fournisseurs, par catégorie et par emplacement géographique. Dans cet exemple, nous explorons les points suivants :
@@ -36,7 +36,7 @@ Cet exemple fait partie d’une série d’exemples qui illustre la façon dont 
 
 Comment procéder ? Dans le [service Power BI](https://powerbi.com), accédez à **Obtenir des données > Exemples > Exemple Analyse de l’approvisionnement > Se connecter** pour obtenir votre propre copie de l’exemple.
 
-Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529784).
+[!Note] Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529784). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**.
 
 ## <a name="spending-trends"></a>Tendances en matière de dépenses
 Commençons par rechercher les tendances en matière de dépenses par catégorie et par implantation géographique.  
