@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/26/2017
+ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: d93b98b0a34a0a83efc00a066864709b771c5110
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d0a4a465442ed3a6750ce10ab9a3a40e17b88be1
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
 Votre responsable attend de vous un rapport présentant vos chiffres de vente les plus récents et vos dernières impressions concernant la campagne avant la fin de la journée. Vos données les plus récentes sont stockées sur différents systèmes tiers et sur des fichiers de votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des éléments visuels et mettre en forme un rapport. Vous commencez à vous inquiéter.

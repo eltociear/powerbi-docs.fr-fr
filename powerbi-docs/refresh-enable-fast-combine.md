@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: a622c3f0402e0f8216f64a93cf687eaa63fd8067
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 1e68f7df5214e038df8bcd1584acb815c0af98bf
+ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disable-privacy-setting-in-power-bi-gateway---personal"></a>Désactivation du paramètre de confidentialité dans Power BI Gateway - Personal
 > [!NOTE]
@@ -59,6 +59,7 @@ Les étapes suivantes permettent d’activer le regroupement rapide pour votre p
     Si vous n’êtes pas un administrateur, l’emplacement est le suivant.
    
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
+    
 2. Ajoutez l’élément **&lt;EnableFastCombine&gt;** avec la valeur « True » au fichier de configuration. L’ajout de cet élément active la **combinaison rapide** .
    
    <pre><code>&lt;EnableFastCombine&gt;true&lt;/EnableFastCombine&gt;</code></pre>
@@ -77,6 +78,7 @@ Les étapes suivantes permettent d’activer le regroupement rapide pour votre p
     Si vous n’êtes pas un administrateur, l’emplacement est le suivant.
    
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
+
 2. Supprimez l’élément **&lt;EnableFastCombine&gt;** du fichier de configuration. La suppression de cet élément désactive la **combinaison rapide** .
 3. Fermez puis rouvrez l’écran de configuration de la passerelle.
 4. Vous ne voyez plus d’état indiquant que vous savez que la **combinaison rapide** est activée.
