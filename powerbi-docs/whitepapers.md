@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/14/2017
 ms.author: asaxton
-ms.openlocfilehash: e6821e20dbbb9b69ec4afa9ef48e1fb78bb8b3f5
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a4ceeda4d56853df42da8e5c644b3946878a89f0
+ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="whitepapers-for-power-bi"></a>Livres blancs pour Power BI
 
@@ -41,5 +41,5 @@ Les livres blancs vous permettent d’explorer Power BI de façon plus approfond
 | [Sécurité](service-admin-power-bi-security.md) |Fournit une explication détaillée concernant la sécurité au sein de Power BI. |
 | [Sécurisation du modèle sémantique décisionnel au format tabulaire](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Ce document présente le modèle de sécurité relatif à la sémantique décisionnelle tabulaire et à Power BI. Il montre comment créer des rôles, implémenter la sécurité dynamique, configurer les paramètres d’emprunt d’identité, gérer des rôles et choisir une méthode de connexion aux modèles qui fonctionne dans le contexte de la sécurité réseau. |
 | [Conseils sur la planification de la capacité de Power BI Report Server](report-server/capacity-planning.md) |Ce document propose des conseils sur la planification de la capacité de Power BI Report Server en partageant les résultats de plusieurs exécutions de test de charge de différentes charges de travail exécutées sur un serveur de rapports. |
-
+|[Planification et déploiement de Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment) | Livre blanc technique contenant des meilleures pratiques et des conseils pour planifier, déployer et exploiter Power BI Premium. 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

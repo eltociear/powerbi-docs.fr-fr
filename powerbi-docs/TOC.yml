@@ -454,10 +454,8 @@
           href: power-bi-visualization-treemaps.md
         - name: "Didacticiel\_: graphiques en cascade dans Power\_BI"
           href: power-bi-visualization-waterfall-charts.md
-        - name: "Créer une vignette représentant un grand nombre pour un tableau de bord Power\_BI en posant une question"
-          href: power-bi-visualization-big-number.md
-        - name: "Créer une vignette représentant un grand nombre à partir d’un rapport Power\_BI"
-          href: power-bi-visualization-big-number-report.md
+        - name: "Didacticiel\_: Cartes (vignettes représentant un grand nombre) dans Power BI"
+          href: power-bi-visualization-card.md
         - name: "Créer des analyses et des visualisations avancées à l’aide de scripts\_R dans Power\_BI"
           href: service-r-visuals.md
     - name: Données de fichiers
@@ -938,6 +936,8 @@
           href: developer/integrate-report.md
         - name: Intégrer du contenu dans votre application (l’application possède les données)
           href: developer/embed-sample-for-customers.md
+        - name: Incorporer des dispositions personnalisées dans une application
+          href: developer/embedded-custom-layout.md
         - name: Créer un client Azure Active Directory
           href: developer/create-an-azure-active-directory-tenant.md
         - name: Inscrire une application

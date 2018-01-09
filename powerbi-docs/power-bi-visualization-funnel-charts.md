@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 231bf7febb19583414d976cc612d06c2caa1e246
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 91c185a082cebc6a9196e0e86898fe366363f8c2
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="funnel-charts-tutorial"></a>Graphiques en entonnoir (didacticiel)
 Un graphique en entonnoir vous permet de mieux visualiser un processus linéaire qui comporte des étapes séquentielles liées entre elles. Par exemple, avec l’entonnoir de ventes Lead \> Qualified Lead \> Prospect \> Contract \> Close (Prospect > Prospect qualifié > Client potentiel > Contrat > Clôture), vous effectuez le suivi des clients tout au long des étapes.  En regardant la forme de l’entonnoir, vous savez instantanément comment se déroule le processus dont vous effectuez le suivi.
@@ -59,15 +59,15 @@ Regardez cette vidéo pour voir comment créer un graphique en entonnoir à l’
 
 À présent, créez votre propre graphique en entonnoir qui montre le nombre d’opportunités identifiées à chaque étape de vente.
 
-Ces instructions s’appliquent à l’exemple Analyse d’opportunités. Pour effectuer la procédure, [téléchargez l’exemple](sample-datasets.md), connectez-vous à Power BI et sélectionnez **Obtenir des données \> Exemples \> Exemple Suivi d’opportunités \> Se connecter**.
+Ces instructions s’appliquent à l’exemple Analyse d’opportunités. Pour effectuer la procédure, [téléchargez l’exemple](sample-datasets.md) pour le service Power BI (app.powerbi.com) ou Power BI Desktop.   
 
-1. Démarrez sur une [page de rapport vierge](power-bi-report-add-page.md) en [mode Édition](service-interact-with-a-report-in-editing-view.md), puis sélectionnez le champ **SalesStage** \> **Étape de vente**.  
+1. Démarrez sur une [page de rapport vierge](power-bi-report-add-page.md), puis sélectionnez le champ **SalesStage** \> **Étape de vente**. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](service-interact-with-a-report-in-editing-view.md).
    
     ![](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
 2. [Convertissez le graphique](power-bi-report-change-visualization-type.md) en Entonnoir. Notez que **Étape de vente** se trouve dans la zone **Groupe** . 
 3. Dans le volet **Champs**, sélectionnez **Fait** \> **Nombre d’opportunités**.
    
-    ![](media/power-bi-visualization-funnel-charts/funnelfinal_new.png)
+    ![](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
 4. Placez le curseur sur une barre pour afficher diverses informations :
    
    * Nom de l’étape
@@ -90,14 +90,13 @@ La mise en surbrillance d’une barre dans un graphique en entonnoir entraîne l
 2. Pour définir les préférences pour la mise en surbrillance croisée et le filtrage croisé des visuels entre eux, consultez [Interaction des éléments visuels dans Power BI](service-reports-visual-interactions.md).
 
 ## <a name="create-a-funnel-chart-in-qa"></a>Créer un graphique en entonnoir à l’aide de Q&R
-Mettez en surbrillance un tableau de bord auquel au moins une visualisation a été épinglée à partir du jeu de données « Opportunity Tracking » (Suivi des opportunités).  Quand vous tapez une question dans Q&R, Power BI recherche des réponses dans tous les jeux de données associés au tableau de bord sélectionné (ceux ayant des vignettes épinglées à ce tableau de bord). Pour plus d’informations, consultez [Power BI – Concepts de base](service-basic-concepts.md).
+Ouvrez le tableau de bord Exemple Analyse des opportunités ou un autre tableau de bord auquel au moins une visualisation a été épinglée à partir du jeu de données Exemple Analyse des opportunités.  Quand vous tapez une question dans Q&R, Power BI recherche des réponses dans tous les jeux de données associés au tableau de bord sélectionné (ceux ayant des vignettes épinglées à ce tableau de bord). Pour plus d’informations, consultez [Power BI – Concepts de base](service-basic-concepts.md).
 
-1. Mettez en surbrillance un tableau de bord auquel au moins une vignette a été épinglée à partir du jeu de données « Opportunity Tracking » (Suivi des opportunités).
-2. Commencez à taper votre question dans la zone Q&R.
+1. Dans le tableau de bord Exemple Analyse des opportunités, commencez à taper votre question dans la zone Questions et réponses.
    
    ![](media/power-bi-visualization-funnel-charts/funnelfromqna_new.png)
    
-   N’oubliez pas d’inclure « as funnel » (en entonnoir) pour indiquer à Power BI le type de visualisation souhaité.
+2. N’oubliez pas d’inclure « as funnel » (en entonnoir) pour indiquer à Power BI le type de visualisation souhaité.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

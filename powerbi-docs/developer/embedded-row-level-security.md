@@ -15,16 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/30/2017
+ms.date: 12/21/2017
 ms.author: asaxton
-ms.openlocfilehash: c10ca76ac96090ff1facbdd28210b680392aae8d
-ms.sourcegitcommit: 0f6db65997db604e8e9afc9334cb65bb7344d0dc
+ms.openlocfilehash: 491be8983967b1a5dce6579411f194117602b00c
+ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
-La sécurité au niveau des lignes (SNL) peut être utilisée pour restreindre l’accès aux données d’un rapport ou jeu de données, en permettant à différents utilisateurs d’utiliser le même rapport en voyant des données différentes. La sécurité au niveau des lignes peut être exploitée lors de l’incorporation de rapports à partir de Power BI.
+La sécurité au niveau des lignes peut être utilisée pour restreindre l’accès aux données dans des tableaux de bord, vignettes, rapports et jeux de données. Plusieurs utilisateurs différents peuvent utiliser ces mêmes artefacts tout en voyant différentes données. L’incorporation prend en charge la sécurité au niveau des lignes.
 
 Si vous incorporez un rapport pour les utilisateurs non-Power BI (l’application possède les données), en général un scénario ISV, cet article est fait pour vous. Vous devez configurer le jeton d’incorporation pour qu’il prenne en compte l’utilisateur et le rôle. Poursuivez votre lecture pour savoir comment procéder.
 
@@ -34,7 +34,7 @@ Si vous incorporez des rapports pour des utilisateurs Power BI (l’utilisateur 
 
 Pour tirer parti de la sécurité au niveau des lignes, il est important de comprendre trois principaux concepts : les utilisateurs, les rôles et les règles. Examinons plus en détail chacun d’entre eux :
 
-**Utilisateurs** : il s’agit des utilisateurs finaux réels qui affichent les rapports. Dans Power BI Embedded, les utilisateurs sont identifiés par la propriété de nom d’utilisateur dans un jeton d’incorporation.
+**Utilisateurs** : utilisateurs finaux affichant l’artefact (tableau de bord, vignette, rapport ou jeu de données). Dans Power BI Embedded, les utilisateurs sont identifiés par la propriété de nom d’utilisateur dans un jeton d’incorporation.
 
 **Rôles** : les utilisateurs appartiennent à des rôles. Un rôle est un conteneur de règles et peut être nommé en *Directeur des ventes* ou *Commercial*. Vous créez des rôles dans Power BI Desktop. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI Desktop](../desktop-rls.md).
 
@@ -85,11 +85,11 @@ Maintenant que vous avez configuré vos rôles Power BI Desktop, vous devez effe
 
 Les utilisateurs sont authentifiés et autorisés par votre application et les jetons d’incorporation sont utilisés pour accorder l’accès utilisateur à un rapport Power BI Embedded spécifique. Power BI Embedded n’a pas d’informations spécifiques sur l’utilisateur. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre un contexte supplémentaire dans le cadre de votre jeton d’incorporation sous la forme d’identités. Pour cela, utilisez l’API [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
 
-L’API [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) accepte une liste des identités avec l’indication des jeux de données pertinents. Actuellement une seule identité peut être fournie. La prise en charge de plusieurs jeux de données doit être ajoutée prochainement pour l’incorporation de tableaux de bord. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre les éléments suivants au sein de l’identité.
+L’API [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) accepte une liste des identités avec l’indication des jeux de données pertinents. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre les éléments suivants au sein de l’identité.
 
 * **Nom d’utilisateur (obligatoire)** : il s’agit d’une chaîne qui peut être utilisée pour identifier l’utilisateur lors de l’application des règles de sécurité au niveau des lignes. Un seul utilisateur peut être répertorié.
 * **Rôles (obligatoire)** : chaîne contenant les rôles à sélectionner lors de l’application des règles de sécurité au niveau des lignes. Si vous transmettez plusieurs rôles, ceux-ci doivent l’être en tant que tableau de chaînes.
-* **Jeu de données (obligatoire)** : jeu de données applicable au rapport que vous incorporez. Un seul jeu de données peut être fourni dans la liste des jeux de données. La prise en charge de plusieurs jeux de données doit être ajoutée prochainement pour l’incorporation de tableaux de bord.
+* **Jeu de données (obligatoire)** : jeu de données applicable à l’artefact que vous incorporez. 
 
 Vous pouvez créer le jeton d’incorporation à l’aide de la méthode **GenerateTokenInGroup** sur **PowerBIClient.Reports**. Actuellement, seuls les rapports sont pris en charge.
 
@@ -125,7 +125,7 @@ Si vous appelez l’API REST, l’API mise à jour accepte maintenant un tableau
 }
 ```
 
-Maintenant, quand une personne se connecte à votre application pour afficher ce rapport, elle peut uniquement voir les données qu’elle est autorisée à voir, en fonction de ce qui a été défini par la sécurité au niveau des lignes.
+Maintenant, quand une personne se connecte à votre application pour afficher cet artefact, elle peut uniquement voir les données qu’elle est autorisée à voir, en fonction de ce qui a été défini par la sécurité au niveau des lignes.
 
 ## <a name="working-with-analysis-services-live-connections"></a>Utilisation des connexions actives d’Analysis Services
 Vous pouvez utiliser la sécurité au niveau des lignes avec les connexions actives Analysis Services pour les serveurs locaux. Lorsque vous utilisez ce type de connexion, vous devez comprendre quelques concepts spécifiques.
@@ -143,12 +143,11 @@ Des rôles peuvent être fournis avec l’identité dans un jeton incorporé. Si
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 * L’attribution d’utilisateurs aux rôles, dans le service Power BI, n’affecte pas la sécurité au niveau des lignes lors de l’utilisation d’un jeton d’incorporation.
 * Alors que le service Power BI n’applique pas le paramètre de sécurité au niveau des lignes aux administrateurs ni aux membres dotés d’autorisations de modification, lorsque vous fournissez une identité avec un jeton d’incorporation, celle-ci est appliquée aux données.
-* Transmettre les informations d’identité, lors de l’appel de GenerateToken, est uniquement pris en charge pour les rapports en lecture/écriture. La prise en charge des autres ressources sera proposée ultérieurement.
 * Les connexions actives Analysis Services sont prises en charge pour les serveurs locaux.
 * Les connexions actives Azure Analysis Services prennent en charge le filtrage par rôles, mais pas le filtrage dynamique par nom d’utilisateur.
 * Si le jeu de données sous-jacent ne nécessite pas la sécurité au niveau des lignes, la demande GenerateToken ne doit **pas** contenir d’identité effective.
-* Si le jeu de données sous-jacent est un modèle cloud (modèle mis en cache ou DirectQuery), l’identité effective doit inclure au moins un rôle. Sinon, l’attribution de rôle n’a pas lieu.
-* Une seule identité peut être fournie dans la liste des identités. Nous utilisons une liste pour autoriser les jetons contenant plusieurs identités pour l’incorporation prochaine des tableaux de bord.
+* Si le jeu de données sous-jacent est un modèle cloud (modèle mis en cache ou DirectQuery), l’identité effective doit inclure au moins un rôle. Sinon, l’attribution de rôle n’est pas effectuée.
+* Une liste d’identités active plusieurs jetons d’identité pour l’incorporation de tableau de bord. Pour tous les autres artefacts, la liste contient une identité unique.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

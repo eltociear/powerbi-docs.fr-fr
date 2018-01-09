@@ -1,6 +1,6 @@
 ---
-title: "Types d’informations rapides pris en charge par Power BI"
-description: "Informations rapides avec Power BI."
+title: "Types d’informations pris en charge par Power BI"
+description: "Informations rapides et Afficher les informations avec Power BI"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -15,21 +15,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/03/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 13f5614cf121b17d8ae4dff9653f5789372f7f49
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 53e5e67da9bacd9fc9dcbb770747823647aa3a3c
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="types-of-quick-insights-supported-by-power-bi"></a>Types d’informations rapides pris en charge par Power BI
-## <a name="how-does-quick-insights-work"></a>Comment fonctionnent les informations rapides ?
+# <a name="types-of-insights-supported-by-power-bi"></a>Types d’informations pris en charge par Power BI
+## <a name="how-does-insights-work"></a>Comment fonctionnent les informations ?
 Power BI effectue des recherches rapides dans différents sous-ensembles de votre jeu de données tout en appliquant un jeu d’algorithmes sophistiqués pour détecter les informations potentiellement intéressantes. Power BI analyse autant que possible le jeu de données dans le délai imparti.
 
-Vous pouvez exécuter Informations rapides sur un jeu de données ou une vignette (Informations associées).   
+Vous pouvez exécuter des informations sur un jeu de données ou une vignette de tableau de bord.   
 
-## <a name="what-types-of-quick-insights-can-we-find"></a>Quels types d’Informations rapides pouvons-nous trouver ?
+## <a name="what-types-of-insights-can-we-find"></a>Quels types d’informations pouvons-nous trouver ?
 Voici certains des algorithmes que nous utilisons :
 
 ## <a name="category-outliers-topbottom"></a>Valeurs hors norme de catégorie (de haut en bas)
@@ -78,9 +78,9 @@ Pour les données d’une série chronologique, détecte les cas où il existe d
 ![](media/service-insight-types/pbi_auto_insight_types_time_series_outliers.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Informations rapides Power BI](service-insights.md)
+[Informations Power BI](service-insights.md)
 
-Si vous possédez un jeu de données, [optimisez-le pour la fonction Informations rapides](service-insights-optimize.md).
+Si vous possédez un jeu de données, [optimisez-le pour la fonction Informations](service-insights-optimize.md).
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

@@ -15,36 +15,27 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/09/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 40528aa3401f690daed17fa9bf73cd6c90edcf62
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 2dcf3b50b9019880a9a7a11c863bed88783214c7
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="searching-and-sorting-content-in-power-bi"></a>Recherche et tri du contenu dans Power BI
-Une combinaison d’organisation automatisée Power BI et balisage, de recherche et de tri par d’utilisateur vous permet de trouver rapidement ce dont vous avez besoin dans le service Power BI.
+# <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation : recherche et tri de votre contenu dans le service Power BI
+Il existe plusieurs façons de parcourir votre contenu dans le service Power BI. Dans les espaces de travail, le contenu est organisé par type : tableaux de bord, rapports, classeurs et jeux de données.  De plus, le contenu est également organisé par utilisation : favori, récent, application, partagé avec moi et par défaut. Cette organisation du contenu vous permet de trouver rapidement ce dont vous avez besoin dans le service Power BI.  
 
-## <a name="how-power-bi-helps-you-navigate-your-content"></a>Comment Power BI vous aide à naviguer dans votre contenu
-Le service Power BI organise votre contenu de plusieurs façons.  Tout d’abord, il répartit votre contenu dans des tableaux de bord, rapports, classeurs et jeux de données. Cette organisation apparaît sur la plupart des écrans de Power BI. Ensuite, le service Power BI classifie votre contenu de manière à accélérer et à faciliter encore davantage la recherche de ce dont vous avez besoin. Jetez un coup d’œil à votre volet de navigation gauche.
+>[!NOTE] 
+>Cet article s’applique au service Power BI (app.powerbi.com), mais pas à Power BI Desktop.
 
-![](media/service-navigation-search-filter-sort/power-bi-newnav.png)
+## <a name="navigation-within-workspaces"></a>Navigation dans les espaces de travail
 
-Le contenu que vous créez pour votre propre usage est disponible dans **Mon espace de travail**, celui que vous créez et partagez avec un groupe est disponible dans un **espace de travail d’application**, celui auquel vous souhaitez pouvoir accéder rapidement est enregistré dans **Favoris**, celui qui est partagé avec vous est disponible dans **Partagé avec moi**, et celui que vous avez consulté en dernier est également disponible dans **Récents**.
+Le service Power BI sépare le contenu des espaces de travail par type : tableaux de bord, rapports, classeurs et jeux de données. Cette organisation est visible lorsque vous sélectionnez un espace de travail. Dans cet exemple, l’espace de travail d’application est nommé « Exemple d’application Ventes et marketing » et contient 2 tableaux de bord, 6 rapports, 1 classeur et 5 jeux de données.
 
-Pour plus d’informations, voir [Organisation du contenu dans le service Power BI](service-basic-concepts.md).
+![](media/service-navigation-search-filter-sort/workspaces.gif)
 
-> **REMARQUE** : une manière supplémentaire d’organiser votre contenu consiste à choisir le tableau de bord que vous prévoyez d’afficher le plus souvent et de définir celui-ci comme votre tableau de bord *par défaut*. Chaque fois que vous ouvrez le service Power BI, ce tableau de bord s’affiche en premier. Pour en savoir plus, voir [Tableau de bord par défaut](service-dashboard-featured.md).
-> 
-> 
-
-## <a name="favorite-dashboards-and-apps"></a>Applications et tableaux de bord favoris
-Vous disposez de plusieurs tableaux de bord et applications que vous consultez souvent ? Si vous les [définissez en tant que *favoris*](service-dashboard-favorite.md), ils seront toujours disponibles dans votre barre de navigation de gauche.
-
-![](media/service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
-
-L’utilisation des favoris est décrite plus en détail dans l’article [Favoris dans le service Power BI](service-dashboard-favorite.md).
+________________________________________
 
 ## <a name="searching-and-sorting-in-workspaces"></a>Recherche et tri dans les espaces de travail
 Un espace de travail comporte quatre onglets de contenu : Tableaux de bord, Rapports, Classeurs et Jeux de données.  Chaque onglet contient un champ de recherche et un bouton de tri.  Lorsque vous commencez à utiliser le service Power BI, il se peut que vous ne les trouviez pas utiles, car vous n’avez qu’un ou deux éléments par onglet.  Pourtant, au fil du temps, vous pourriez vous retrouver avec un longue liste de contenus.  Utilisez les fonctions de recherche et le tri pour trouver facilement ce que vous avez besoin.
@@ -58,6 +49,20 @@ Un espace de travail comporte quatre onglets de contenu : Tableaux de bord, Rap
   
    ![](media/service-navigation-search-filter-sort/power-bi-sort-alpha.png)
 
+## <a name="navigation-using-the-left-navbar"></a>Navigation avec la barre de navigation gauche
+La barre de navigation gauche classifie votre contenu de manière à accélérer et à faciliter encore davantage la recherche de ce dont vous avez besoin.  
+
+![](media/service-navigation-search-filter-sort/power-bi-newnav.png)
+
+
+
+Le contenu que vous créez pour votre propre usage est disponible dans **Mon espace de travail**, celui que vous créez et partagez avec un groupe est disponible dans un **espace de travail d’application**, celui partagé avec vous est disponible dans **Partagé avec moi** et celui que vous avez consulté en dernier est disponible dans **Récents**.
+
+De plus, vous pouvez marquer le contenu comme [favori](service-dashboard-favorite.md) et [par défaut](service-dashboard-featured.md). Choisissez le tableau de bord que vous prévoyez d’afficher le plus souvent et définissez-le comme votre tableau de bord *par défaut*. Chaque fois que vous ouvrez le service Power BI, ce tableau de bord s’affiche en premier. Vous disposez de plusieurs tableaux de bord et applications que vous consultez souvent ? Si vous les définissez en tant que favoris, ils sont toujours disponibles dans votre barre de navigation de gauche.
+
+![](media/service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
+
+
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 * Pour les jeux de données, l’option **Trier par** n’est pas disponible par propriétaire.
 
@@ -65,4 +70,3 @@ Un espace de travail comporte quatre onglets de contenu : Tableaux de bord, Rap
 [Power BI – Concepts de base](service-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

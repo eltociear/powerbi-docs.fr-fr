@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/05/2017
+ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: 3f78d19a5a28f096279a4fe25881ae26ffbae3cc
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 44a825e548ae55fa0ce13ba6eed57b860be6fe8f
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="qa-in-power-bi"></a>Q&R dans Power BI
 Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel. Par exemple, « quel était le total des ventes l’année dernière ».  Utilisez l’outil Q&R pour explorer vos données à l’aide des fonctionnalités intuitives du langage naturel et recevez des réponses sous la forme de graphiques et de diagrammes. Q&R diffère d’un moteur de recherche, car il ne fournit que des résultats sur les données de Power BI.
 
 > [!NOTE]
-> La fonctionnalité Questions et réponses est également disponible dans l’[application Microsoft Power BI pour iOS sur les appareils iPad, iPhone et iPod Touch](mobile-apps-ios-qna.md).
+> La fonctionnalité Questions et réponses est également disponible dans l’application Microsoft Power BI pour iOS sur les [appareils iPad, iPhone et iPod Touch](mobile-apps-ios-qna.md) et [Power BI Desktop](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA).
 > 
 > 
 
@@ -51,11 +51,6 @@ Cet outil est réellement interactif et surtout très rapide ! Grâce à son st
 [Didacticiel : Utiliser le moteur Questions et réponses de Power BI avec l’exemple Analyse de la vente au détail](power-bi-visualization-introduction-to-q-and-a.md): utilisez Questions et réponses dans le cadre d’un didacticiel proposant des cas concrets.
 
 [Optimiser vos données avec Questions et réponses](service-prepare-data-for-q-and-a.md) : vous êtes chargé de la création de jeux de données et de modèles de données ?  Cette rubrique est pour vous.
-
-## <a name="next-steps"></a>Étapes suivantes
-[Power BI – Concepts de base](service-basic-concepts.md)
-
-[Prise en main de Power BI](service-get-started.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

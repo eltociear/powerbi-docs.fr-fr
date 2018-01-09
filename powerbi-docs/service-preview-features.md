@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/02/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 7038587e567b2d8377f1ef77583f7baa9695fa58
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 6f63dd502e84433c8ecc40e28d0f518845546f90
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="opt-in-for-power-bi-preview-features"></a>Inscrivez-vous pour accéder aux fonctionnalités en version préliminaire de Power BI
 ## <a name="what-are-preview-features"></a>Que sont les*fonctionnalités en version préliminaire*?
@@ -33,22 +33,16 @@ Dans le cadre des améliorations que nous apportons à Power BI, nous allons pu
 > 
 > 
 
-## <a name="current-previews-available"></a>Versions préliminaires actuellement disponibles
-**Préversion d’ArcGIS Maps pour Power BI** : l’association d’ArcGIS Maps et Power BI porte le mappage au-delà de la simple présentation de points sur une carte, pour accéder à un nouveau niveau.
-[Découvrez ArcGIS Maps par ESRI dans le service Power BI et Power BI Desktop](power-bi-visualization-arcgis.md).
-
-## <a name="turn-the-arcgis-preview-feature-on-and-off"></a>Activer et désactiver la fonctionnalité en préversion ArcGIS
+## <a name="find-previews-and-turn-them-on-and-off"></a>Trouver des préversions et les activer (ou désactiver)
 1. Ouvrez le menu Paramètres en sélectionnant l’icône d’engrenage dans le coin supérieur droit de votre écran Power BI, puis choisissez **Paramètres**.
    
    ![](media/service-preview-features/power-bi-settings.png).
-2. Sélectionnez l’onglet **Général** et sélectionnez **Fonctionnalités en version préliminaire**.
+2. Sélectionnez l’onglet **Général**. S’il existe des préversions, vous voyez une option **Fonctionnalités en préversion** ou une fonctionnalité en préversion à gauche.  Dans cet exemple, il existe une préversion répertoriée pour ArcGIS Maps. 
    
    ![](media/service-preview-features/power-bi-preview-arcgis.png)
-3. Sélectionnez le bouton radio **Activé** pour essayer la nouvelle expérience. Cliquez sur **Appliquer**.
-4. Pour désactiver les fonctionnalités en version préliminaire, suivez les étapes 1 et 2 ci-dessus, puis à l’étape 3, sélectionnez **Désactivé** > **Appliquer**.
+3. Sélectionnez le bouton radio **Activé** ou cochez la case pour essayer la nouvelle expérience. Sélectionnez ensuite **Appliquer**.
+4. Pour désactiver les fonctionnalités en préversion, suivez les étapes 1 à 3 ci-dessus, puis à l’étape 3, **désélectionnez** ou supprimez la case à cocher, puis sélectionnez **Appliquer**.
 
-## <a name="next-steps"></a>Étapes suivantes
-[Nouvelle expérience de navigation Power BI](service-the-new-power-bi-experience.md)
 
 Vous avez des questions ou des commentaires ? [Visitez le forum de la communauté Power BI](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
 

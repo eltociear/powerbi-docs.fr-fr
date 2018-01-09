@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/29/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 2abaa2ae00b353af46c267083f879cbf9536b397
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 79e10c7d47eb5105e0c3e79bd3451315eae6d27e
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Utiliser le service Power BI ou Power BI Desktop pour créer une page de réponse personnalisée pour Cortana
 Utilisez les fonctionnalités complètes de Power BI pour créer des pages de rapport spéciales, nommées *pages de réponse Cortana* (ou parfois « cartes de réponse Cortana »), spécifiquement conçues pour répondre aux questions de Cortana.
 
 ![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Si vous essayez la préversion de Cortana avec le **tableau de bord** Power BI, vous pouvez ignorer le reste de cet article. Aucune configuration n’est requise pour que Cortana soit en mesure d’effectuer des recherches dans vos tableaux de bord Power BI.
 > 
 > 
@@ -63,7 +63,7 @@ Une *page de réponse Cortana* dans un rapport est dimensionnée spécifiquement
    > Pour améliorer les résultats, évitez d’utiliser des mots qui sont également des noms de colonnes.
    > 
    > 
-6. Éventuellement, si le rapport contient des filtres au niveau de la page, vous pouvez définir **Nécessitent une sélection unique**. Cortana affiche uniquement ce rapport en tant que réponse si un seul des éléments de filtre est spécifié dans la question.
+6. Éventuellement, si le rapport contient des filtres au niveau de la page, vous pouvez définir **Nécessitent une sélection unique**. Cortana affiche uniquement ce rapport en tant que réponse si un seul des éléments de filtre est spécifié dans la question. L’option **Nécessitent une sélection unique** est accessible au bas du volet **Filtres**.
    
    > [!NOTE]
    > Vous n’êtes pas obligé de sélectionner **Exiger une sélection unique** pour demander à Cortana d’afficher un rapport avec les filtres au niveau de la page.  Par exemple « afficher les ventes de Charlotte Lindseys » affiche une page de réponse quelle que soit la configuration de l’option Exiger une sélection unique.

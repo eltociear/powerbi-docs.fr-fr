@@ -1,6 +1,6 @@
 ---
 title: "Tableaux de bord par défaut dans Power BI"
-description: "Documentation sur la création d’un tableau de bord par défaut dans Power BI"
+description: "Documentation sur la création d’un tableau de bord par défaut dans le service Power BI"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,27 +16,28 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: f87f13c71d60a8edc831a1fd9cc7d0a1d5656634
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 81ea6b32c6f61299c410325a432c521d8b402549
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="featured-dashboards-in-power-bi"></a>Tableaux de bord par défaut dans Power BI
+# <a name="featured-dashboards-in-power-bi-service"></a>Tableaux de bord par défaut dans le service Power BI
 ## <a name="create-a-featured-dashboard"></a>Créer un tableau de bord par défaut
-La plupart d'entre vous ont un tableau de bord que vous consultez plus souvent que tous les autres.  Cela peut être le tableau de bord que vous utilisez pour gérer votre entreprise, ou contenir un groupement de vignettes de différents tableaux de bord et rapports.
+La plupart d’entre nous ont un tableau de bord que nous consultons plus souvent que tous les autres.  Cela peut être le tableau de bord que nous utilisons pour gérer votre entreprise, ou un tableau de bord contenant un groupement de vignettes de différents tableaux de bord et rapports.
 
 ![](media/service-dashboard-featured/power-bi-feature-nav.png)
 
 Lorsque vous sélectionnez un tableau de bord en tant que tableau de bord *par défaut*, chaque fois que vous ouvrez le service Power BI, celui-ci s’ouvre en affichant ce tableau de bord.  
 
-> **REMARQUE**: vous pouvez également sélectionner plusieurs tableaux de bord et les ajouter aux *favoris*. Consultez [Tableau de bord favoris](service-dashboard-favorite.md).
-> 
-> 
+Vous pouvez également sélectionner plusieurs tableaux de bord et les ajouter aux *favoris*. Consultez [Tableau de bord favoris](service-dashboard-favorite.md).
 
-Si vous n’avez pas encore un Tableau de bord par défaut, Power BI s’ouvre en affichant le dernier tableau de bord que vous avez utilisé.  
+> [!NOTE] 
+>Ce didacticiel s’applique au service Power BI, mais pas à Power BI Desktop.
+
+Si vous n’avez pas encore un tableau de bord par défaut, Power BI s’ouvre en affichant le dernier tableau de bord que vous avez utilisé.  
 
 ### <a name="to-set-a-dashboard-as-featured"></a>Pour définir un tableau de bord **par défaut**
 Regardez Amanda créer un tableau de bord par défaut, puis suivez les instructions sous la vidéo pour essayer par vous-même.
@@ -70,6 +71,8 @@ Si vous ne souhaitez pas qu’un tableau de bord s’affiche par défaut, voici 
 2. Dans la barre de menus supérieure, sélectionnez **Désactiver le tableau de bord par défaut**.
    
     ![](media/service-dashboard-featured/power-bi-unfeature.png)
+
+À présent, Power BI s’ouvre en affichant le dernier tableau de bord que vous avez utilisé.  
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Ajouter un tableau de bord aux favoris](service-dashboard-favorite.md)

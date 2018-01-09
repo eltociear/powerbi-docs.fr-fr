@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: c1801db4135d6d97a940e593de37ca2886194b53
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 17073390cf19b742730712a8d39a353c7d541cd6
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Nuages de points et graphiques en bulles dans Power BI (didacticiel)
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Ces derniers peuvent être distribués uniformément ou non sur l’axe horizontal, en fonction des données.
@@ -47,25 +47,30 @@ Un graphique en bulles remplace les points de données par des bulles, la *taill
 * Pour utiliser avec des quadrants.
 
 ## <a name="create-a-scatter-chart"></a>Créer un nuage de points
+Regardez cette vidéo dans laquelle Will crée un graphique à nuages de points, puis suivez les étapes ci-dessous pour en créer un vous-même.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Ouvrez l’exemple Analyse de la vente au détail en [Mode Édition](service-interact-with-a-report-in-editing-view.md) et [ajoutez une nouvelle page de rapport](power-bi-report-add-page.md).
-2. Dans le volet Champs, sélectionnez **Ventes** > **Ventes par mètre carré** et **Ventes** > **Pourcentage d’écart des ventes totales**.
-3. Dans le volet Champs, sélectionnez **District > District**.
+
+Ces instructions s’appliquent à l’exemple Analyse de la vente au détail. Pour effectuer la procédure, [téléchargez l’exemple](sample-datasets.md) pour le service Power BI (app.powerbi.com) ou Power BI Desktop.   
+
+1. Commencez sur une [page de rapport vide](power-bi-report-add-page.md), puis sélectionnez les champs **Sales (Ventes)** \> **Sales Per Sq Ft (Ventes par mètre carré)** et **Sales (Ventes)** > **Total Sales Variance % (Pourcentage d’écart des ventes totales)**. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](service-interact-with-a-report-in-editing-view.md).
+ 
+2. Dans le volet Champs, sélectionnez **District > District**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_pre_convert.png)
+    ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
 4. Effectuez la conversion en nuage de points. Dans le volet Visualisation, sélectionnez l’icône de nuage de points.
    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
 5. Faites glisser **District** depuis **Détails** vers **Légende**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_new.png)
+    ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
 
 Nous disposons désormais d’un nuage de points qui trace le pourcentage d’écart des ventes totales sur l’axe Y et les ventes par mètre carré sur l’axe X.  Les couleurs de points de données représentent des districts.  Ajoutons à présent une troisième dimension.
 
 ## <a name="create-a-bubble-chart"></a>Créer un graphique en bulles
 1. Dans le volet Champs, faites glisser **Ventes** > **Ventes de cette année** > **Valeur** vers la zone **Taille**. 
    
-   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_size.png)
+   ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
 2. Pointez sur une bulle.  La taille de la bulle reflète la valeur de la zone **Ventes de cette année**.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)

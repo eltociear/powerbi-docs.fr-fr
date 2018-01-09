@@ -11,13 +11,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/30/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 6c096cfb76a1d8697cef3d157efcda41e57a1510
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: b18157f28dcaf2e9b130bdc3bd5547312e45a4f9
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Permettre à Cortana d’accéder aux rapports Power BI (et à leurs jeux de données sous-jacents)
 Vous avez lu l’[Introduction à Cortana et Power BI](service-cortana-intro.md) (si ce n’est pas le cas, nous vous recommandons de la lire, puis de revenir sur cette page). Et maintenant, vous souhaitez essayer vous-même.  Avant de pouvoir poser des questions en langage naturel dans Cortana et trouver des réponses à partir des données stockées dans des ***rapports*** Power BI, vous devez respecter quelques conditions préalables. Plus précisément, vous devez effectuer les opérations suivantes.
@@ -47,11 +47,10 @@ Vous devez vous connecter au service Power BI (pas à Power BI Desktop), puis 
 2. Le jeu de données associé à ce rapport est **Contoso Sales**.
    
     ![Jeu de données Contoso Sales](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. Dans l’angle supérieur droit du service Power BI, sélectionnez l’icône représentant une roue dentée, puis choisissez **Paramètres**.
+3. À droite du nom du jeu de données, sélectionnez les **points de suspension (...) > Paramètres**.  
    
-    ![Choisir les paramètres](media/service-cortana-enable/power-bi-cortana-settings.png)
-4. Sélectionnez l’onglet **Jeux de données**, puis dans la liste à gauche, choisissez le jeu de données auquel Cortana doit avoir accès.
-5. Sélectionnez **QR et Cortana** > **Autoriser Cortana à accéder à ce jeu de données** > **Appliquer**.
+    ![Choisir les paramètres](media/service-cortana-enable/power-bi-settings-cortana.png)
+4. Sélectionnez **QR et Cortana** > **Autoriser Cortana à accéder à ce jeu de données** > **Appliquer**.
    
    ![Accès de Cortana au jeu de données](media/service-cortana-enable/power-bi-cortana-enable-new.png)
    
@@ -67,16 +66,19 @@ Vous devez vous connecter au service Power BI (pas à Power BI Desktop), puis 
 ## <a name="add-your-power-bi-credentials-to-windows"></a>Ajouter vos informations d’identification Power BI à Windows
 Vous devez exécuter Windows 10 version 1511 ou ultérieure.
 
-1. Déterminez la version de Windows 10 que vous exécutez. Ouvrez **Paramètres** > **Système** > **À propos de**.
-   
+1. Déterminez la version de Windows 10 que vous exécutez. Ouvrez **Paramètres**.
+    ![Ouvrez Paramètres Windows](media/service-cortana-enable/power-bi-cortana-windows.png).
+
+    Puis sélectionnez **Système > À propos**. Au bas de l’écran, vous voyez **Spécifications Windows > Version**.
+
    * Si vous avez Windows 10 version 1511 (mise à jour du 10 novembre 2015) jusqu’à 1607, ajoutez votre compte professionnel ou scolaire et votre compte Microsoft (exécutez les étapes 2 et 3 ci-dessous).
    * Si vous avez Windows 10 version 1607 (mise à jour du 10 juillet 2016) ou ultérieure, ajoutez votre compte professionnel ou scolaire (exécutez uniquement l’étape 2 ci-dessous).
-2. Ajoutez votre compte professionnel ou scolaire pour Cortana.
+1. Ajoutez votre compte professionnel ou scolaire pour Cortana.
    
    * Ouvrez **Paramètres** > **Comptes**.
      
        ![Paramètres - Comptes](media/service-cortana-enable/power-bi-windows-accounts.png)
-   * Faites défiler vers le bas, puis sélectionnez **Ajouter un compte professionnel ou scolaire**.
+   * Faites défiler vers le bas, puis sélectionnez **Ajouter un compte professionnel ou scolaire**. Ou, à partir de la page **Comptes**, sélectionnez **Accès professionnel ou scolaire > Se connecter**.
      
      ![Ajouter un compte professionnel](media/service-cortana-enable/power-bi-add-work-account2.png)
 

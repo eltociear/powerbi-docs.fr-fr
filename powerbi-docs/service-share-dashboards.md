@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
+ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: 276f663b8454ef0938222576cec13fcfb073e2cf
-ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
+ms.openlocfilehash: 4cc7f12eb4964c67ae9f91cfcb51eac77d690555
+ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Partager vos tableaux de bord Power BI avec vos collègues et d’autres utilisateurs
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI offre [plusieurs façons de collaborer et de distribuer vos tableaux](service-how-to-collaborate-distribute-dashboards-reports.md). Le partage en est une.
@@ -122,7 +122,11 @@ Voici quelques éléments à prendre en compte lors du partage de tableaux de bo
 
 ### <a name="my-dashboard-recipients-see-a-lock-icon-in-a-tile-or-a-permission-required-message"></a>Les destinataires de mon tableau de bord voient une icône de verrou dans une vignette ou un message « Autorisation requise »
 
-Si les destinataires du partage voient une vignette verrouillée dans un tableau de bord ou un message « Autorisation requise » lorsqu’ils tentent de consulter un rapport, vous devez les autoriser à accéder au jeu de données sous-jacent. Voici comment procéder.
+Les destinataires du partage peuvent voir une vignette verrouillée dans un tableau de bord ou un message « Autorisation requise » lorsqu’ils tentent de consulter un rapport.
+
+![Vignette verrouillée Power BI](media/service-share-dashboards/power-bi-locked_tile_small.png)
+
+Dans ce cas, vous devez leur accorder l’autorisation d’accès au jeu de données sous-jacent. Voici comment procéder.
 
 1. Accédez à l’onglet **Jeux de données** dans votre liste de contenu.
 

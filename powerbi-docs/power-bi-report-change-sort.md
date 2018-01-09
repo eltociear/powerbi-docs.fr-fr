@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 37161fab1e19e6ce00eb0f02c96b6e5cbdd60f18
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 13da4602306b1218baee81909d37897524f6dfc9
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Modifier le mode tri d’un graphique dans un rapport Power BI
-Dans Power BI, vous pouvez trier les graphiques par ordre alphabétique en fonction des noms de catégories du graphique ou des valeurs numériques de chaque catégorie. Par exemple, ce graphique est trié par nom de magasin.
+Dans un rapport Power BI, vous pouvez trier la plupart des visualisations par ordre alphabétique en fonction des noms de catégories du graphique ou des valeurs numériques de chaque catégorie. Par exemple, ce graphique est trié par nom de magasin.
 
 ![](media/power-bi-report-change-sort/pbi_chartsortcategory.png)
 
-Mais il est facile de le trier par ordre décroissant des ventes par mètre carré.
+Il est facile de passer du tri par catégorie (nom de magasin) au tri par valeur (ventes par mètres carrés).
 
 1. Sélectionnez les points de suspension (...) et choisissez **Trier par Sales Per Sq Ft** (Ventes par m²).
 2. Si nécessaire, sélectionnez l’icône de tri ![](media/power-bi-report-change-sort/sorticon.png) pour passer à un tri **Décroissant**.

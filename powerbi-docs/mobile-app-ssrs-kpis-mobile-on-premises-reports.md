@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: 99fceab5904deaa510edd213c349dcfb2e38ac28
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 5bbd2f09187e9fac16f6cc4b9ac3ff59a888ed7f
+ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Afficher des indicateurs de performance clés et des rapports Report Server locaux dans des applications mobiles Power BI
 S’applique à :
@@ -63,7 +63,14 @@ Vous pouvez afficher des rapports Power BI locaux, des rapports mobiles Reportin
 3. Appuyez sur **Se connecter au serveur**.
    
     ![Se connecter au serveur](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
-4. Renseignez l’adresse du serveur, ainsi que votre nom d’utilisateur et votre mot de passe. Utilisez ce format pour l’adresse du serveur :
+
+     L’application mobile doit accéder au serveur d’une certaine façon. Plusieurs solutions s’offrent à vous :
+
+    - Rester sur le même réseau/utiliser un VPN est le moyen le plus simple.
+    - Il est possible d’utiliser un proxy d’application web pour se connecter depuis l’extérieur de l’organisation. Pour plus d’informations, consultez [Utilisation d’OAuth pour la connexion à Reporting Services](mobile-oauth-ssrs.md). 
+    - Ouvrez une connexion (port) dans le pare-feu.
+
+1. Renseignez l’adresse du serveur, ainsi que votre nom d’utilisateur et votre mot de passe. Utilisez ce format pour l’adresse du serveur :
    
      `http://<servername>/reports`
    
@@ -71,10 +78,7 @@ Vous pouvez afficher des rapports Power BI locaux, des rapports mobiles Reportin
    
      `https://<servername>/reports`
    
-   > [!NOTE]
-   > Ajoutez **http** ou **https** devant la chaîne de connexion.
-   > 
-   > 
+   Ajoutez **http** ou **https** devant la chaîne de connexion.
    
     ![Boîte de dialogue Se connecter au serveur](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
 5. (Facultatif) Sous **Options avancées**, vous pouvez affecter un nom convivial au serveur, si vous le souhaitez.
@@ -100,7 +104,7 @@ Vous pouvez marquer des indicateurs de performance clés et des rapports en tant
 
 * Appuyez sur **Favoris**.
   
-   ![Favoris dans le volet de navigation gauche](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server.png)
+   ![Favoris dans le volet de navigation gauche](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
    Vos indicateurs de performance clés et rapports favoris du portail web figurent tous sur cette page, ainsi que les tableaux de bord Power BI du service Power BI :
   

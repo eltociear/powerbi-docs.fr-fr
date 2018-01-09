@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 9dc9cb883e1d62c282501e628f52c13267d830b6
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 4c4c31f6289f6b3d12b619b7c6c297d861177fbf
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="favorite-dashboards-in-the-power-bi-service"></a>Tableaux de bord favoris dans le service Power BI
 Lorsque vous mettez un tableau de bord en *favori*, vous pouvez y accéder à partir de tous vos espaces de travail.  Les favoris sont généralement ceux que vous consultez le plus souvent.
@@ -32,7 +32,7 @@ Lorsque vous mettez un tableau de bord en *favori*, vous pouvez y accéder à pa
 > 
 > 
 
-Vous pouvez également sélectionner un seul tableau de bord comme [Tableau de bord par défaut](service-dashboard-featured.md) dans Power BI.
+Vous pouvez également sélectionner un seul tableau de bord comme [Tableau de bord par défaut](service-dashboard-featured.md) dans le service Power BI.
 
 ## <a name="add-a-dashboard-as-a-favorite"></a>Ajouter un tableau de bord en tant que *favori*
 Regardez Amanda ajouter des Favoris à son espace de travail, puis suivez les instructions détaillées sous la vidéo pour essayer vous-même.
@@ -50,7 +50,7 @@ Regardez Amanda ajouter des Favoris à son espace de travail, puis suivez les in
    ![](media/service-dashboard-favorite/power-bi-dashboard-favorite.png)
 
 ## <a name="working-with-favorites"></a>Utilisation de *Favoris*
-1. Pour afficher vos cinq favoris les plus récents, à partir d’un espace de travail quelconque, cliquez sur la flèche à droite de **Favoris**.  Vous pouvez sélectionner ici un tableau de bord favori pour l’ouvrir. Seuls les cinq favoris les plus récents sont répertoriés (par ordre alphabétique). Si vous avez plus de cinq favoris, sélectionnez **Afficher tout** pour ouvrir l’écran Favoris (voir point 2 ci-dessous). 
+1. Pour accéder aux favoris, à partir d’un espace de travail, cliquez sur la flèche à droite de **Favoris**.  Vous pouvez sélectionner ici un tableau de bord favori pour l’ouvrir. Seuls cinq favoris sont répertoriés (par ordre alphabétique). Si vous avez plus de cinq favoris, sélectionnez **Afficher tout** pour ouvrir l’écran Favoris (voir point 2 ci-dessous). 
    
    ![](media/service-dashboard-favorite/power-bi-favorite-flyout-new.png)
 2. Pour afficher **tous** les tableaux de bord ajoutés aux favoris, dans le volet de navigation de gauche, sélectionnez **Favoris** ou l’icône Favoris ![](media/service-dashboard-favorite/power-bi-favorites-icon.png).  
@@ -60,7 +60,7 @@ Regardez Amanda ajouter des Favoris à son espace de travail, puis suivez les in
    Vous pouvez alors sélectionner un tableau de bord pour l’ouvrir, ou partager un tableau de bord avec vos collègues.
 
 ## <a name="unfavorite-a-dashboard"></a>Retirer un tableau de bord des favoris
-Vous n’utilisez plus un tableau de bord aussi souvent qu’avant ?  Vous pouvez le retirer des favoris. Lorsque vous supprimez un tableau de bord des Favoris, il est retiré de vos favoris mais pas de Power BI.
+Vous n’utilisez plus un tableau de bord aussi souvent qu’avant ?  Vous pouvez le retirer des favoris. Lorsque vous supprimez un tableau de bord de la liste des Favoris, il est retiré de vos favoris mais pas de Power BI.
 
 1. Dans le volet de navigation de gauche, sélectionnez **Favoris** pour ouvrir l’écran **Favoris**.
    

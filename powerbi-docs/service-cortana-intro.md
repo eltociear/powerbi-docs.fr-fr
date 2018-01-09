@@ -11,13 +11,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/25/2017
+ms.date: 12/13/2017
 ms.author: mihart
-ms.openlocfilehash: 458c6663697f8c968915c54dba1c80be422c0f80
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d64ab6b9a94171c99eb0956efce89f59b5174d41
+ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Trouver et afficher rapidement vos données Power BI à l’aide de Cortana pour Power BI
 Utilisez Cortana sur vos appareils Windows 10 pour obtenir directement des réponses à vos questions métier importantes. En s’intégrant avec Power BI, Cortana peut extraire des informations clés directement à partir de tableaux de bord et de rapports Power BI. Pour cela, il vous suffit de disposer de la version de novembre 2015 ou ultérieure de Windows 10, de Cortana, de Power BI, et d’avoir accès à au moins un jeu de données.
@@ -85,13 +85,19 @@ Lorsque vous posez une question dans Cortana, Power BI répond à partir de page
      ![](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 2. Lorsque Cortana est prête, tapez ou prononcez votre question dans la barre de recherche de Cortana. Cortana affiche les résultats disponibles. S’il existe un tableau de bord Power BI correspondant à la question, il s’affiche sous **Meilleur résultat** ou **Power BI**.
    
-     ![Une recherche de Cortana trouve un tableau de bord Power BI](media/service-cortana-intro/power-bi-cortana-searching2.png "Cortana trouve un tableau de bord Power BI")
+     ![Une recherche de Cortana trouve un tableau de bord Power BI](media/service-cortana-intro/power-bi-cortana-search-hr.png "Cortana trouve un tableau de bord Power BI")
    
    > [!NOTE]
    > Actuellement, seule la langue anglaise est prise en charge.
    > 
    > 
-3. Ouvrez le tableau de bord dans Power BI en sélectionnant le nom. 
+3. Sélectionnez le tableau de bord pour l’ouvrir dans Cortana.
+
+    ![Sélectionner le tableau de bord Power BI](media/service-cortana-intro/power-bi-cortana-dashboard.png "Sélectionner le tableau de bord Power BI")
+
+    Vous pouvez modifier la disposition en [modifiant la *vue téléphone* du tableau de bord](service-create-dashboard-mobile-phone-view.md). 
+
+1. À partir de Cortana, vous disposez également d’options permettant d’ouvrir le tableau de bord dans le service Power BI ou Power Bi Mobile. Ouvrez le tableau de bord dans le service Power BI en sélectionnant **Ouvrir sur le web**. 
    
    ![Ouvrir le tableau de bord à partir de Cortana](media/service-cortana-intro/power-bi-dashboard-opens.png "Ouvrir le tableau de bord à partir de Cortana")   
 4. Utilisons à présent Cortana pour rechercher un rapport. Nous devons être informés de l’existence d’un [rapport comprenant une page avec une carte de réponse Cortana ](service-cortana-answer-cards.md). Dans cet exemple, un rapport nommé « Cortana-New-Stores » comporte une page de carte de réponse Cortana nommée « cortana stores ».  

@@ -15,15 +15,18 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: e12b14a73ba63d64d39f296db602e57ceedc5523
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 3d6c3f59611a515ea6a2188457cc80c31a7693ce
+ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Langues et pays/régions pris en charge pour Power BI
+
+Cet article affiche la liste des langues et pays/régions pris en charge pour la documentation du service Power BI, de Power BI Desktop et de Power BI.
+
 ## <a name="countries-and-regions-where-power-bi-is-available"></a>Pays et régions où Power BI est disponible
 Pour obtenir la liste des pays et régions où Power BI est disponible, consultez cette [liste de disponibilité internationale](https://products.office.com/business/international-availability). 
 
@@ -75,7 +78,7 @@ Le service Power BI (dans le navigateur) est disponible dans les 42 langues su
 * Ukrainien - українська
 * Vietnamien - Tiếng Việt
 
-## <a name="whats-translated"></a>Éléments traduits
+### <a name="whats-translated"></a>Éléments traduits
 Les menus, les boutons, les messages et d’autres éléments de l’interface utilisateur sont traduits dans votre langue, ce qui facilite la navigation et l’interaction avec Power BI.
 
 Quelques fonctionnalités sont actuellement disponibles en anglais uniquement :
@@ -85,22 +88,22 @@ Quelques fonctionnalités sont actuellement disponibles en anglais uniquement :
 
 Tenez-vous informé, car nous ajouterons régulièrement des fonctionnalités à d’autres langues. 
 
-## <a name="choose-your-language-in-the-power-bi-service"></a>Choisir votre langue dans le service Power BI
+### <a name="choose-your-language-in-the-power-bi-service"></a>Choisir votre langue dans le service Power BI
 1. Dans le service Power BI, sélectionnez l’icône **Paramètres** ![](media/supported-languages-countries-regions/pbi_settings_icon.png) > **Paramètres**.
 2. Sous l’onglet **Général** > **Langue**.
 3. Sélectionnez votre langue > **Appliquer**.
 
-## <a name="choose-your-language-in-the-browser"></a>Choisir votre langue dans le navigateur
+### <a name="choose-your-language-in-the-browser"></a>Choisir votre langue dans le navigateur
 Power BI détermine la langue utilisée en fonction des préférences linguistiques définies sur votre ordinateur. La méthode à suivre pour afficher et modifier ces préférences peut varier selon votre système d’exploitation et votre navigateur. Voici comment afficher ces préférences à partir d’Internet Explorer et de Google Chrome.
 
-### <a name="internet-explorer-version-11"></a>Internet Explorer (version 11)
+#### <a name="internet-explorer-version-11"></a>Internet Explorer (version 11)
 1. Cliquez sur le bouton **Outils** en haut à droite de la fenêtre du navigateur :
    
    ![Bouton Outils Internet Explorer](media/supported-languages-countries-regions/languages1.png)
 2. Cliquez sur **Options Internet**.
 3. Dans la boîte de dialogue Options Internet, sous l’onglet Général, sous Apparence, cliquez sur le bouton **Langues**.
 
-### <a name="google-chrome-version-42"></a>Google Chrome (version 42)
+#### <a name="google-chrome-version-42"></a>Google Chrome (version 42)
 1. Cliquez sur le bouton de menu en haut à droite de la fenêtre du navigateur :
    
    ![Bouton de menu Chrome](media/supported-languages-countries-regions/languages2.png)
@@ -144,7 +147,7 @@ La langue choisie pour Power BI Desktop affecte le format d’affichage des nomb
 
 Pour modifier la langue de Power BI Desktop, revenez à la page de téléchargement et téléchargez-le dans une autre langue.
 
-### <a name="choose-the-locale-to-be-used-when-importing-data-into-power-bi-desktop"></a>Choisir les paramètres régionaux à utiliser lors de l’importation de données dans Power BI Desktop
+### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Choisir les paramètres régionaux à utiliser lors de l’importation de données dans Power BI Desktop
 Si vous téléchargez Power BI Desktop ou l’installez à partir du Windows Store, vous pouvez choisir des paramètres régionaux pour un rapport spécifique autres que ceux de votre version de Power BI Desktop. Cela modifie la façon dont les données sont interprétées lorsqu’elles sont importées à partir de votre source de données, par exemple si « 3/4/2017 » est interprété comme faisant référence au 3 avril ou au 4 mars. 
 
 1. Dans Power BI Desktop, sélectionnez **Fichier** > **Options et paramètres** > **Options**.
@@ -153,6 +156,22 @@ Si vous téléchargez Power BI Desktop ou l’installez à partir du Windows Sto
    
    ![Boîte de dialogue Options de Power BI Desktop](media/supported-languages-countries-regions/pbi_supptdlangs_locale.png)
 4. Sélectionnez **OK**.
+
+### <a name="choose-the-language-for-the-model-in-power-bi-desktop"></a>Choisir la langue du modèle dans Power BI Desktop
+
+Outre la définition de la langue de l’application Power BI Desktop, vous pouvez également définir la langue du modèle. La langue du modèle affecte principalement deux éléments :
+
+- la façon dont nous comparons et trions des chaînes. Par exemple, étant donné que le turc possède deux lettres i, selon le classement de votre base de données, les deux peuvent se retrouver dans des ordres différents lors du tri. 
+- La langue que Power BI Desktop utilise lors de la création des tables avec dates masquées à partir de champs de date. Par exemple, les champs sont appelés Month/Monat/Mois, etc.
+
+Voici comment définir la langue du modèle.
+
+1. Dans Power BI Desktop, sélectionnez **Fichier** > **Options et paramètres** > **Options**.
+2. Sous **Global**, sélectionnez **Paramètres régionaux**.
+3. Dans la zone **Langue du modèle**, sélectionnez une autre langue. 
+
+    ![Définir la langue du modèle dans Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
+
 
 ## <a name="languages-for-the-help-documentation"></a>Langues de la documentation d’aide
 L’aide est localisée dans les 10 langues suivantes : 

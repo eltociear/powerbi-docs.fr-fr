@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/28/2017
+ms.date: 12/12/2017
 ms.author: asaxton
-ms.openlocfilehash: 49df0d0a44ceae3e36f45f6523f39a0b5bb1b6a0
-ms.sourcegitcommit: 7742f952c20695dfb475f74965c0065b02c01521
+ms.openlocfilehash: c4c62ab5c24b7abe2760535da0a6cf69982c7174
+ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="using-auditing-within-your-organization"></a>Utilisation de l’audit dans votre organisation
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Découvrez comment l’audit avec Power BI peut vous permettre d’analyser et d’examiner les actions effectuées. Vous pouvez utiliser le centre de sécurité et de conformité ou utiliser PowerShell.
+Découvrez comment l’audit avec Power BI peut vous permettre d’analyser et d’examiner les actions effectuées. Vous pouvez utiliser le centre de sécurité et conformité ou utiliser PowerShell.
 
 Il est important de savoir qui effectue une action sur un élément donné de votre locataire Power BI, afin de permettre à votre entreprise de répondre à ses exigences, notamment en matière de conformité réglementaire et de gestion des enregistrements.
 
@@ -35,6 +35,16 @@ Vous pouvez filtrer les données d’audit par période, utilisateur, tableau de
 
 > [!NOTE]
 > La fonctionnalité d’audit de Power BI en préversion est disponible dans toutes les régions.
+
+## <a name="requirements"></a>Configuration requise
+Vous devez respecter les exigences suivantes pour accéder aux journaux d’audit :
+
+- Pour accéder à la section d’audit du Centre de sécurité et conformité Office 365, vous devez disposer d’une licence Exchange Online (incluse avec les abonnements Office 365 Entreprise E3 et E5).
+- Vous devez être administrateur général ou avoir un rôle d’administrateur Exchange qui fournit l’accès au journal d’audit. 
+
+  Les rôles d’administrateur Exchange sont contrôlés par le biais du centre d’administration Exchange. Pour plus d’informations, consultez [Autorisations dans Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+
+- Si vous avez accès au journal d’audit, mais que vous n’êtes pas administrateur général ni un administrateur de service Power BI, vous n’avez pas accès au portail d’administration de Power BI. Dans ce cas, vous devez obtenir un lien direct au Centre de sécurité et conformité Office 365.
 
 ## <a name="enabling-auditing-functionality-in-the-power-bi-admin-portal"></a>Activation des fonctionnalités d’audit dans le portail d’administration Power BI
 
@@ -70,8 +80,8 @@ Pour auditer vos journaux Power BI, vous devez visiter le Centre de sécurité 
    ![](media/service-admin-auditing/powerbi-admin.png)
 
 3. Sélectionnez **Journaux d’audit**.
-4. 
-5. Sélectionnez **Accéder au Centre d’administration O365**.
+ 
+4. Sélectionnez **Accéder au Centre d’administration O365**.
    
    ![](media/service-admin-auditing/audit-log-o365-admin-center.png)
 

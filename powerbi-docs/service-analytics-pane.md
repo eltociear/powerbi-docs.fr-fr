@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/02/2017
+ms.date: 12/21/2017
 ms.author: mihart
-ms.openlocfilehash: 30fc0731f819f063aa04e856e8acc75a69f64a59
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 3750d733967301f952fd092d2d1d0a2b9d1b2238
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="analytics-pane-in-power-bi-service"></a>Volet Analyse du service Power BI
 Avec le volet **Analyse** de **Service Power BI**, vous pouvez ajouter des *lignes de référence* dynamiques aux visualisations et mettre en relief les analyses ou les tendances importantes.
@@ -44,33 +44,34 @@ Avec le volet **Analyse**, vous pouvez créer les types de lignes de référence
 * Ligne médiane
 * Ligne Centile
 
-Les sections suivantes montrent comment vous pouvez utiliser le volet **Analyse** et les lignes de référence dynamiques dans vos visualisations.
 
 Pour afficher les lignes de référence dynamiques pour un élément visuel, procédez comme suit :
 
 1. Sélectionnez ou créez un visuel, puis sélectionnez l’icône **Analyse** ![](media/service-analytics-pane/power-bi-analytics-icon.png)dans le volet **Visualisations**.
+
 2. Sélectionnez la flèche vers le bas pour le type de ligne que vous souhaitez créer afin de développer ses options. Dans ce cas, nous allons sélectionner **Ligne moyenne**.
    
-   ![](media/service-analytics-pane/power-bi-add.png)
-3. Pour créer une ligne, sélectionnez **+ Ajouter**. Vous pouvez ensuite spécifier un nom pour la ligne en double-cliquant sur la zone de texte, puis en entrant votre nom.
+   ![ajouter une ligne de moyenne](media/service-analytics-pane/power-bi-add.png)
+
+3. Pour créer une ligne, sélectionnez **+ Ajouter** et choisissez la mesure qui servira à créer la ligne.  La liste déroulante **Mesure** est automatiquement remplie avec les données disponibles à partir de la visualisation sélectionnée. Nous allons utiliser **Open store count** (Nombre de magasins ouverts).
+
+5. Il existe toutes sortes d’options de ligne, telles que la couleur, la transparence, le style et la position (par rapport aux éléments de données du visuel). Si vous souhaitez étiqueter la ligne, donnez-lui un titre, puis déplacez le curseur **Étiquette de données** sur **Activé**.  Dans ce cas, nommez la ligne *Avg # Open Stores* (Nombre moyen de magasins ouverts) et personnalisez certaines des autres options, comme indiqué ci-dessous.
    
-   Il existe toutes sortes d’options de ligne. Vous pouvez sélectionner sa *couleur*, sa *transparence*, son *style* et sa *position* (par rapport à des éléments de données de l’élément visuel) et l’ajout de l’étiquette. Et surtout, vous pouvez sélectionner la **mesure** sur laquelle sera fondée votre ligne dans l’élément visuel, dans la liste déroulante **Mesure**, qui est automatiquement remplie avec les éléments de données de l’élément visuel. Dans ce cas, nous allons sélectionner *Open store count* (Nombre de magasins ouverts) comme mesure, lui attribuer une étiquette *Avg # Open Stores* (Nombre moyen de magasins ouverts) et personnaliser certaines des autres options, comme indiqué ci-dessous.
-   
-   ![](media/service-analytics-pane/power-bi-average-line.png)
-4. Si vous souhaitez afficher une étiquette de données, déplacez le curseur de l’**étiquette de données**. En procédant ainsi, vous obtenez un grand nombre d’options supplémentaires pour l’étiquette de données.
-5. Notez le numéro qui s’affiche en regard de l’élément **Ligne moyenne** dans le volet **Analyse**. Ce dernier indique le nombre de lignes dynamiques dont vous disposez actuellement sur votre élément visuel, ainsi que leur type. Si vous ajoutez une **Ligne de constante** en tant qu’objectif de nombre de magasins (9), vous pouvez voir que le volet **Analyse** affiche à présent également une ligne de référence **Ligne de constante** appliquée à ce visuel.
+   ![personnaliser l’analytique de ligne de moyenne](media/service-analytics-pane/power-bi-average-line2.png)
+
+1. Notez le numéro qui s’affiche en regard de l’élément **Ligne moyenne** dans le volet **Analyse**. Ce dernier indique le nombre de lignes dynamiques dont vous disposez actuellement sur votre élément visuel, ainsi que leur type. Si vous ajoutez une **Ligne de constante** en tant qu’objectif de nombre de magasins (9), vous pouvez voir que le volet **Analyse** affiche à présent également une ligne de référence **Ligne de constante** appliquée à ce visuel.
    
    ![](media/service-analytics-pane/power-bi-reference-lines.png)
    
-   Si l’élément visuel que vous avez sélectionné ne peut comporter de lignes de référence dynamiques (dans ce cas, un élément visuel **Carte**), vous verrez les éléments suivants en sélectionnant le volet **Analyse**.
-   
-   ![](media/service-analytics-pane/power-bi-no-lines.png)
 
 Vous pouvez mettre en relief des analyses intéressantes en créant des lignes de référence dynamiques avec le volet **Analyse**.
 
-Nous prévoyons d’ajouter davantage de fonctionnalités, notamment le développement d’éléments visuels auxquels peuvent s’appliquer des lignes de référence dynamiques, n’hésitez pas à revenir consulter les nouveautés.
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 
-## <a name="limitations"></a>Limites
+Si l’élément visuel que vous avez sélectionné ne peut comporter de lignes de référence dynamiques (dans ce cas, un élément visuel **Carte**), vous verrez les éléments suivants en sélectionnant le volet **Analyse**.
+   
+![analytique non disponible](media/service-analytics-pane/power-bi-no-lines.png)
+
 La possibilité d’utiliser des lignes de référence dynamiques est basée sur le type d’élément visuel utilisé. La liste suivante affiche les lignes dynamiques qui sont actuellement disponibles pour des éléments visuels donnés :
 
 L’utilisation complète des lignes dynamiques est disponible sur les éléments visuels suivants :

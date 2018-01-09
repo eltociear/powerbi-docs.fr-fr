@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: d39fd80b834afc37fb1db43a083f9037a3b83ef1
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 33954aab1d6e79efc985f3e0d3c4d026f529b691
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Renommer pratiquement tout élément dans le service Power BI
 Cet article explique comment renommer un tableau de bord, un rapport, une page de rapport, un classeur, un jeu de données, une application et un espace de travail dans le service Power BI.
@@ -40,7 +40,7 @@ Cet article explique comment renommer un tableau de bord, un rapport, une page d
 | Contenu de **Partagé avec moi** |Non |Non |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Renommer un tableau de bord, un rapport ou un classeur
-1. Démarrez dans un espace de travail, puis sélectionnez l’onglet **Tableaux de bord**, **apports** ou **Classeurs**. Pointez sur l’élément à renommer, puis sélectionnez l’icône Engrenage ![](media/service-rename/powerbi-cog-icon.png).
+1. Démarrez dans un espace de travail, puis sélectionnez l’onglet **Tableaux de bord**, **apports** ou **Classeurs**. Pointez sur l’élément à renommer, puis sélectionnez l’icône Engrenage ![](media/service-rename/powerbi-cog-icon.png). En l’absence d’icône d’engrenage, vous n’avez pas l’autorisation de renommer.
    
    ![](media/service-rename/power-bi-workspace-dashboards.png)
 2. Dans la page Paramètres, tapez le nouveau nom, puis sélectionnez **Enregistrer**.
@@ -67,7 +67,7 @@ Cet article explique comment renommer un tableau de bord, un rapport, une page d
 Toute personne disposant d’autorisations d’administrateur peut renommer un espace de travail d’application.
 
 1. Démarrez dans l’espace de travail que vous souhaitez renommer.
-2. Dans l’angle supérieur droit, sélectionnez les points de suspension (…), puis choisissez **Modifier l’espace de travail**.  
+2. Dans l’angle supérieur droit, sélectionnez les points de suspension (…), puis choisissez **Modifier l’espace de travail**. Si vous ne voyez pas cette option, vous n’avez pas l’autorisation de renommer cet espace de travail. 
    
     ![](media/service-rename/power-bi-edit-workspace.png)
 3. Tapez un nouveau nom d’espace de travail, puis sélectionnez **Enregistrer**.

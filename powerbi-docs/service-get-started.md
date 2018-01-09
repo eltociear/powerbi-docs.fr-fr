@@ -3,7 +3,7 @@ title: "Prise en main du service Power BI"
 description: "Prise en main du service Power BI"
 services: powerbi
 documentationcenter: 
-author: mihart
+author: adamw
 manager: kfile
 backup: 
 editor: 
@@ -16,20 +16,20 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/31/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 6714283ea4590ac9c2f3728121e05d03d4aa646e
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: ee7375c28b3c13b53eba52f0bf76754529c9b4f5
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="get-started-with-power-bi-service"></a>Prise en main du service Power BI
+# <a name="get-started-with-power-bi-service-apppowerbicom"></a>Prise en main du service Power BI (app.powerbi.com)
 Ce didacticiel vous aide à bien démarrer avec le ***service Power BI***. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de commencer par lire [Qu’est-ce que Power BI ?](guided-learning/gettingstarted.yml#step-1).
 
 ![](media/service-get-started/power-bi-components.png)
 
-Le service Power BI a une version gratuite et une version Pro. Quelle que soit la version que vous utilisez, ouvrez un navigateur et tapez www.powerbi.com pour bien démarrer. Si vous êtes déjà inscrit, sélectionnez le lien **Se connecter** qui s’affiche dans le coin supérieur droit. Si vous n’êtes pas encore inscrit au service Power BI, sélectionnez le lien **Inscrivez-vous gratuitement** à la place.
+Le service Power BI a une version gratuite et une version Pro. Quelle que soit la version que vous utilisez, *si vous avez déjà un compte*, ouvrez un navigateur et tapez www.powerbi.com pour ouvrir le service Power BI. Si vous êtes un nouvel utilisateur, nous vous recommandons de commencer à l’adresse www.powerbi.com à la place. À partir de là, vous pouvez en savoir plus sur Power BI avant de vous connecter au service.  Lorsque vous êtes prêt à tester le service, sélectionnez le lien **Inscrivez-vous gratuitement** qui s’affiche dans le coin supérieur droit. Si votre administrateur a déjà activé Power BI pour vous, n’utilisez pas le bouton d’inscription gratuite. À la place, accédez directement à app.powerbi.com. 
 
 ![](media/service-get-started/power-bi-sign-up.png)
 
@@ -47,7 +47,7 @@ Visitez notre [sélection sur YouTube](https://www.youtube.com/playlist?list=PL1
 
 Microsoft Power BI vous aide à rester informé dans les domaines qui vous intéressent.  Grâce au service Power BI, les ***tableaux de bord*** vous permettent de prendre en permanence le pouls de votre activité.  Vos tableaux de bord affichent des ***vignettes*** sur lesquelles vous pouvez cliquer pour ouvrir des ***rapports*** qui vous donnent de plus amples détails.  Connectez-vous à plusieurs ***jeux de données*** pour rassembler au même endroit toutes les données pertinentes. Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consultez [Power BI – Concepts de base](service-basic-concepts.md).
 
-Si vous avez des données importantes dans des fichiers Excel ou CSV, vous pouvez créer un tableau de bord Power BI pour rester informé où que vous soyez et partager les informations avec d’autres personnes.  Disposez-vous d’un abonnement à une application SaaS comme Salesforce ?  [Connectez-vous à Salesforce](service-connect-to-salesforce.md) dès maintenant pour créer automatiquement un tableau de bord à partir de ces données, ou [découvrez toutes les autres applications SaaS](service-get-data.md) auxquelles vous pouvez vous connecter. Si vous faites partie d’une organisation, voyez si des [applications](service-create-distribute-apps.md) ont été publiées pour vous.
+Si vous avez des données importantes dans des fichiers Excel ou CSV, vous pouvez créer un tableau de bord Power BI pour rester informé où que vous soyez et partager les informations avec d’autres personnes.  Disposez-vous d’un abonnement à une application SaaS comme Salesforce ?  Connectez-vous à Salesforce dès maintenant pour créer automatiquement un tableau de bord à partir de ces données, ou [découvrez toutes les autres applications SaaS](service-get-data.md) auxquelles vous pouvez vous connecter. Si vous faites partie d’une organisation, voyez si des [applications](service-create-distribute-apps.md) ont été publiées pour vous.
 
 En savoir plus sur toutes les autres façons d’[obtenir des données pour Power BI](service-get-data.md).
 
@@ -55,81 +55,84 @@ En savoir plus sur toutes les autres façons d’[obtenir des données pour Powe
 Voici un exemple d’obtention de données à partir d’un fichier CSV. Vous souhaitez suivre ce didacticiel ? [Téléchargez cet exemple de fichier CSV](http://go.microsoft.com/fwlink/?LinkID=521962)
 
 1. [Connectez-vous à Power BI](http://www.powerbi.com/). Vous n’avez pas de compte ? Vous pouvez vous inscrire gratuitement.
-2. Power BI s’ouvre dans votre navigateur. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.
+2. Power BI s’ouvre dans votre navigateur. Sélectionnez **Obtenir des données** en bas de la barre de navigation gauche.
    
    ![](media/service-get-started/getdata3.png)
 3. Sélectionnez **Fichiers**. 
    
    ![](media/service-get-started/gs1.png)
-4. Sélectionnez **Fichier Local**, recherchez le fichier sur votre ordinateur, puis choisissez **Ouvrir**.
+4. Recherchez le fichier sur votre ordinateur, puis choisissez **Ouvrir**. Si vous l’avez enregistré dans OneDrive Entreprise, sélectionnez cette option. Si vous l’avez enregistré localement, sélectionnez **Fichier local**. 
    
    ![](media/service-get-started/gs2.png)
-5. Pour ce didacticiel, nous allons sélectionner **Importer** pour ajouter le fichier Excel en tant que jeu de données que nous pouvons ensuite utiliser pour créer des rapports et tableaux de bord.  
-   
-   > [!NOTE]
-   > Si vous sélectionnez **Charger**, le classeur Excel entier est chargé vers Power BI où vous pouvez l’ouvrir et le modifier dans Excel en ligne.
-   > 
-   > 
+5. Pour ce didacticiel, nous allons sélectionner **Importer** pour ajouter le fichier Excel en tant que jeu de données que nous pouvons ensuite utiliser pour créer des rapports et tableaux de bord. Si vous sélectionnez **Charger**, le classeur Excel entier est chargé vers Power BI où vous pouvez l’ouvrir et le modifier dans Excel en ligne.
    
    ![](media/service-get-started/power-bi-import.png)
-6. Quand votre jeu de données est prêt, sélectionnez **Afficher le jeu de données** pour l’ouvrir dans l’éditeur de rapport. ![](media/service-get-started/power-bi-gs.png).
-   
-   > [!TIP]
-   > Un excellent moyen de vous familiariser avec l’éditeur de rapport consiste à [suivre une visite guidée](service-the-report-editor-take-a-tour.md).
+6. Quand votre jeu de données est prêt, sélectionnez **Afficher le jeu de données** pour l’ouvrir dans l’éditeur de rapport. 
+
+    ![](media/service-get-started/power-bi-gs.png)
+
+    Étant donné que nous n’avons pas encore créé de visualisations, le canevas de rapport est vide.
+
+    ![](media/service-get-started/power-bi-report-editor.png)
+
+6. Examinez la barre de menus supérieure et notez qu’il existe une option **Mode Lecture**. Étant donné que cette option s’affiche, cela signifie que vous êtes actuellement en **mode Édition**. 
+
+    ![](media/service-get-started/power-bi-editing-view.png)
+
+    En mode Édition, vous pouvez créer et modifier vos rapports, car vous êtes le *propriétaire* du rapport ; vous êtes un *créateur*. Lorsque vous partagez votre rapport avec vos collègues, ceux-ci sont seulement en mesure d’interagir avec le rapport en mode Lecture : ils sont des *consommateurs*. En savoir plus sur les [Mode Lecture et mode Édition](service-reading-view-and-editing-view.md).
+    
+    Un excellent moyen de vous familiariser avec l’éditeur de rapport consiste à [suivre une visite guidée](service-the-report-editor-take-a-tour.md).
    > 
-   > 
+ 
 
 ## <a name="step-2-start-exploring-your-dataset"></a>Étape 2 : Commencer à explorer votre jeu de données
-Maintenant que vous êtes connecté aux données, vous pouvez les explorer pour mieux les connaître.  Une fois que vous avez trouvé des informations à analyser, vous pouvez créer un tableau de bord pour suivre leur évolution.
-
-1. Sélectionnez l’image du jeu de données dans le tableau de bord pour explorer les données auxquelles vous venez de vous connecter. Ou, sous le titre **Jeux de données**, sélectionnez le nom du jeu de données pour l’ouvrir. Cette opération permet d’ouvrir le jeu de données sous forme de rapport vide.
-   
-   ![](media/service-get-started/power-bi-report-editor.png)
-   
-   > [!NOTE]
-> Une autre façon d’explorer vos données est de faire appel aux **informations rapides**.  Pour plus d’informations, consultez [Présentation des informations rapides](service-insights.md)
-   > 
-   > 
-2. Dans la liste **Champs** sur le côté droit de la page, sélectionnez des champs pour créer une visualisation.  Cochez les cases en regard de **Gross Sales** (Chiffre d’affaires brut) et **Date**.
+Maintenant que vous êtes connecté aux données, vous pouvez les explorer.  Une fois que vous avez trouvé des informations intéressantes, vous pouvez créer un tableau de bord pour les suivre et voir leur évolution. Voyons comment cela fonctionne.
+    
+1. Dans l’éditeur de rapport, vous allez utiliser le volet **Champs** sur le côté droit de la page pour créer une visualisation.  Cochez les cases en regard de **Gross Sales** (Chiffre d’affaires brut) et **Date**.
    
    ![](media/service-get-started/fields.png)
-3. Power BI analyse les données et crée un élément visuel.  Si vous avez sélectionné **Date** en premier, un tableau s’affiche.  Si vous avez sélectionné **Gross Sales** (Chiffre d’affaires brut) en premier, un graphique s’affiche. Modifier le mode d’affichage de vos données. Basculez vers un graphique en courbes en sélectionnant l’option correspondante.
+
+2. Power BI analyse les données et crée une visualisation.  Si vous avez sélectionné **Date** en premier, un tableau s’affiche.  Si vous avez sélectionné **Gross Sales** (Chiffre d’affaires brut) en premier, un graphique s’affiche. Modifier le mode d’affichage de vos données. Examinons ces données sous forme de graphique en courbes. Sélectionnez l’icône de graphique en courbes (également appelé modèle) à partir du **volet Visualisations**.
    
    ![](media/service-get-started/gettingstart5new.png)
-4. Dès que vous obtenez la visualisation voulue sur votre tableau de bord, pointez dessus, puis sélectionnez l’icône **Épingler**.  Quand vous épinglez cette visualisation, celle-ci est stockée dans votre tableau de bord ; vous pouvez ainsi suivre la valeur la plus récente en un clin d’œil.
+
+3. Comme ce contenu semble intéressant, nous allons l’*épingler* à un tableau de bord. Pointez sur la visualisation, puis sélectionnez l’icône **Épingler**.  Quand vous épinglez cette visualisation, celle-ci est stockée dans votre tableau de bord et mise à jour. Vous pouvez ainsi suivre la valeur la plus récente en un clin d’œil.
    
    ![](media/service-get-started/pinnew.png)
-5. Comme il s’agit d’un nouveau rapport, vous devez l’enregistrer pour pouvoir en épingler une visualisation au tableau de bord. Attribuez un nom à votre rapport (par exemple, *Ventes dans le temps*), puis sélectionnez **Enregistrer et continuer**. 
+
+5. Comme il s’agit d’un nouveau rapport, vous êtes invité à l’enregistrer avant de pouvoir épingler une visualisation à un tableau de bord. Attribuez un nom à votre rapport (par exemple, *Ventes dans le temps*), puis sélectionnez **Enregistrer et continuer**. 
    
    ![](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
-   Le nouveau rapport apparaît dans le volet de navigation sous le titre **Rapports**.
-6. Épinglez la vignette à un tableau de bord existant ou à un nouveau tableau de bord. 
+6. Nous allons épingler le graphique en courbes à un nouveau tableau de bord et le nommer « Exemple financier pour le didacticiel ». 
    
    ![](media/service-get-started/power-bi-pin.png)
    
-   * **Tableau de bord existant**: sélectionnez le nom du tableau de bord dans la liste déroulante.
-   * **Nouveau tableau de bord**: tapez le nom du nouveau tableau de bord.
-7. Sélectionnez **Épingler**.
+ 1. Sélectionnez **Épingler**.
    
-   Un message de réussite (dans l’angle supérieur droit) vous indique que la visualisation a été ajoutée, sous forme de vignette, à votre tableau de bord.
+    Un message de réussite (dans l’angle supérieur droit) vous indique que la visualisation a été ajoutée, sous forme de vignette, à votre tableau de bord.
    
-   ![](media/service-get-started/power-bi-pin-success.png)
-8. Sélectionnez **Accéder au tableau de bord** pour voir votre nouveau tableau de bord avec la vignette épinglée. Le graphique en courbes est épinglé au tableau de bord sous forme de vignette. Améliorez votre tableau de bord en [renommant, redimensionnant, liant et repositionnant les vignettes](service-dashboard-edit-tile.md).
+    ![](media/service-get-started/power-bi-pin-success.png)
+
+8. Sélectionnez **Accéder au tableau de bord** pour afficher le graphique en courbes épinglé, sous forme de vignette, à votre tout nouveau tableau de bord. Améliorez votre tableau de bord en ajoutant des vignettes de visualisation et en [renommant, redimensionnant, liant et repositionnant les vignettes](service-dashboard-edit-tile.md).
    
    ![](media/service-get-started/power-bi-new-dashboard.png)
    
-   Sélectionnez la nouvelle vignette dans votre tableau de bord pour revenir au rapport à tout moment.
+   Sélectionnez la nouvelle vignette dans votre tableau de bord pour revenir au rapport à tout moment. Power BI vous renvoie à l’éditeur de rapport en mode Lecture. Pour revenir au mode Édition, sélectionnez **Modifier le rapport** à partir de la barre de menus supérieure. Une fois en mode Édition, continuez l’exploration et épinglez des vignettes. 
 
-## <a name="step-3-continue-exploring-with-qa-natural-language-querying"></a>Étape 3 : Poursuivre l’exploration avec Q&R (interrogation en langage naturel)
-1. Pour une exploration rapide de vos données, essayez de poser une question dans la zone Q&R. La zone de question Q&R se trouve en haut de votre tableau de bord. Par exemple, essayez de taper «**quel segment présente le meilleur chiffre d’affaires**».
+## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Étape 3 : Poursuivre l’exploration avec Questions et réponses (interrogation en langage naturel)
+1. Pour une exploration rapide de vos données, essayez de poser une question dans la zone Q&R. La zone de question Questions et réponses se trouve en haut de votre tableau de bord (**Poser une question sur vos données**) et dans la barre de menus supérieure de votre rapport (**Poser une question**). Par exemple, essayez de taper « quel segment présente le meilleur chiffre d’affaires ».
    
    ![](media/service-get-started/powerbi-qna.png)
-2. Sélectionnez l’icône d’épingle ![](media/service-get-started/pbi_pinicon.png) pour afficher cette visualisation dans votre tableau de bord également.
-3. Épinglez la visualisation à l’exemple de tableau de bord Financial.
+
+2. Questions et réponses recherche une réponse et la présente sous forme de visualisation. Sélectionnez l’icône d’épingle ![](media/service-get-started/pbi_pinicon.png) pour afficher cette visualisation dans votre tableau de bord également.
+3. Épinglez la visualisation au tableau de bord « Exemple financier pour le didacticiel ».
    
     ![](media/service-get-started/power-bi-pin2.png)
-4. Sélectionnez la flèche Précédent pour **Fermer la zone Q&R** ![](media/service-get-started/pbi_qabackarrow.png) afin de revenir à votre tableau de bord où vous pouvez voir la nouvelle vignette.
+
+4. Revenez à votre tableau de bord où vous pouvez voir la nouvelle vignette.
+
+   ![](media/service-get-started/power-bi-final-dashboard.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Prêt à aller plus loin ?  Voici comment poursuivre votre exploration de Power BI de façon intéressante.
@@ -142,7 +145,8 @@ Prêt à aller plus loin ?  Voici comment poursuivre votre exploration de Power
 Pas tout à fait prêt pour le grand saut ? Commencez par consulter les rubriques ci-après, conçues pour vous aider à vous sentir à l’aise avec Power BI.
 
 * [Coordination des rapports, jeux de données, tableaux de bord et vignettes](service-basic-concepts.md)
-* [Vidéos Power BI](videos.md)
+* Visitez notre site de [formation guidée Power BI](guided-learning/index.md) et suivez quelques cours (de très courte durée).
+* Regardez des [vidéos Power BI](videos.md).
 * [Exemples mis à votre disposition](sample-datasets.md)
 
 ### <a name="stay-in-touch-with-power-bi"></a>Rester en contact avec Power BI

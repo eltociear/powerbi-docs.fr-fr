@@ -1,5 +1,5 @@
 ---
-title: "Épingler une vignette à un tableau de bord Power BI à partir de Questions et réponses"
+title: "Épingler une vignette à un tableau de bord à partir de Questions et réponses"
 description: "Documentation sur la manière d’épingler une vignette à un tableau de bord Power BI à partir de la zone Q&R"
 services: powerbi
 documentationcenter: 
@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/09/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: f37c0f9e433f1ac8c6bb8f7f3fa4b513fb4b4652
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8a876c5a05fcdadff1a874148f5d56465bcc8c62
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Épingler une vignette à un tableau de bord à partir de Questions et réponses
 ## <a name="how-to-pin-a-tile-from-qa"></a>Épingler une vignette à partir de Q&R
 Q&R est l’outil de génération de rapports ad hoc de Power BI. Vous avez besoin de données spécifiques ? Posez une question à propos de vos données et recevez une réponse sous la forme d’une visualisation.
 
-> **REMARQUE** : pour suivre la procédure, ouvrez l’[exemple Analyse de la vente au détail](sample-retail-analysis.md).
+La fonctionnalité Questions et réponses est disponible à partir des tableaux de bord et des rapports. Dans cet article, nous allons ouvrir Questions et réponses à partir d’un tableau de bord. Les tableaux de bord sont disponibles uniquement dans le service Power BI et non dans Power BI Desktop. Pour suivre la procédure, ouvrez le tableau de bord [Exemple Analyse de la vente au détail](sample-retail-analysis.md).
 > 
 > 
 
@@ -40,7 +40,9 @@ Q&R est l’outil de génération de rapports ad hoc de Power BI. Vous avez be
    la zone des questions vous propose des suggestions.
 4. Pour ajouter le graphique à votre tableau de bord sous forme de vignette, sélectionnez l’icône représentant une épingle ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) en haut à droite du canevas.
 5. Épinglez la vignette à un tableau de bord existant ou à un nouveau tableau de bord. 
-   
+
+   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png)
+
    * Tableau de bord existant : sélectionnez le nom du tableau de bord dans la liste déroulante. Votre choix est limité aux tableaux de bord figurant à l’intérieur de l’espace de travail actuel.
    * Nouveau tableau de bord : tapez le nom du nouveau tableau de bord pour ajouter celui-ci à votre espace de travail actuel.
 6. Sélectionnez **Épingler**.

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/31/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 20760bec773c6f1d2a3cbbfaefd0651b97cbe601
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 3aa70a6382164cb8284e1a5f61ae73f66e54d2f3
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Ajouter des images, du texte, de la vidéo, etc. à votre tableau de bord
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -42,7 +42,7 @@ Le contrôle **Ajouter une vignette** vous permet d’ajouter directement une im
 Supposons que vous voulez faire figurer le logo de votre entreprise ou toute autre image sur le tableau de bord. Vous devez enregistrer le fichier image en ligne et lui associer un lien. Vérifiez que des informations d’identification spéciales ne sont pas nécessaires pour accéder au fichier image. Par exemple, OneDrive et SharePoint requièrent l’authentification et les images qui y sont stockées ne peuvent pas être ajoutées à un tableau de bord de cette façon.  
 
 1. Sélectionnez **Image** > **Suivant**.
-2. Ajoutez des informations sur l’image dans le volet **Détails de la vignette** .
+2. Ajoutez des informations sur l’image dans la fenêtre **Ajouter une vignette d’image**.
    
     ![](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
    
@@ -56,16 +56,16 @@ Supposons que vous voulez faire figurer le logo de votre entreprise ou toute aut
 ## <a name="add-a-text-box-or-dashboard-heading"></a>Ajouter une zone de texte ou un en-tête de tableau de bord
 1. Sélectionnez **Zone de texte > Suivant**.
    
-    ![](media/service-dashboard-add-widget/power-bi-add-text-box-new.png)
-   
    > **Remarque** : Pour ajouter un en-tête de tableau de bord, tapez l’en-tête dans la zone de texte et augmentez la taille de la police.
-   > 
    > 
 2. Mettez en forme la zone de texte :
    
    * Pour afficher un titre au-dessus de la zone de texte, sélectionnez **Afficher le titre et le sous-titre** et tapez un titre et/ou un sous-titre.
    * Entrez et mettez en forme le contenu de la zone de texte.  
-   * Définissez éventuellement un lien personnalisé pour le titre.  En revanche, dans cet exemple, nous avons ajouté des liens hypertexte dans la zone de texte elle-même, alors laissez la case **Définir un lien personnalisé** décochée.
+   * Définissez éventuellement un lien personnalisé pour le titre. Un lien personnalisé peut être un site externe ou un tableau de bord ou rapport dans votre espace de travail. En revanche, dans cet exemple, nous avons ajouté des liens hypertexte dans la zone de texte elle-même, alors laissez la case **Définir un lien personnalisé** décochée.
+
+     ![](media/service-dashboard-add-widget/power-bi-add-textbox.png)
+   
 3. Sélectionnez **Appliquer**.  Dans le tableau de bord, redimensionnez et déplacez la zone de texte selon vos besoins.
    
    ![](media/service-dashboard-add-widget/pbi-widget-text-added-new.png)
@@ -74,7 +74,7 @@ Supposons que vous voulez faire figurer le logo de votre entreprise ou toute aut
 Quand vous ajoutez une vignette de vidéo YouTube ou Vimeo à votre tableau de bord, la vidéo est lue directement dans votre tableau de bord.
 
 1. Sélectionnez **Vidéo > Suivant**.
-2. Ajoutez des informations sur la vidéo dans le volet **Détails de la vignette** .
+2. Ajoutez des informations sur la vidéo dans la fenêtre **Ajouter une vignette de vidéo**.
    
     ![](media/service-dashboard-add-widget/power-bi-add-video-new.png)
    
@@ -100,7 +100,7 @@ Collez ou saisissez n’importe quel contenu HTML.  Power BI l’ajoute à vot
    
    * Pour afficher un titre au-dessus de la vignette, sélectionnez *Afficher le titre et le sous-titre* et tapez un titre et/ou un sous-titre.
    * Entrez le code incorporé. Dans cet exemple, nous allons copier et coller un flux Twitter.
-   * Sélectionnez **Appliquer**.  Dans le tableau de bord, redimensionnez et déplacez le contenu web selon vos besoins.
+3. Sélectionnez **Appliquer**.  Dans le tableau de bord, redimensionnez et déplacez le contenu web selon vos besoins.
      
       ![](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 

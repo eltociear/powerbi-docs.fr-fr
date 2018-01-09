@@ -1,6 +1,6 @@
 ---
 title: "Ajouter un lien hypertexte à une zone de texte dans un rapport"
-description: "Ajouter un lien hypertexte à une zone de texte dans Power BI"
+description: "Ajouter un lien hypertexte à une zone de texte dans le service Power BI et Power BI Desktop"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,16 +16,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 846e6625345bbecb2611615f929f0b55338830e2
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 9533985238fa9fb40bbab4e9ddd459aaaaffc135
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Ajouter un lien hypertexte à une zone de texte dans un rapport
-Vous pouvez ajouter des zones de texte aux rapports, les épingler à des tableaux de bord à partir de rapports et les ajouter directement à des tableaux de bord. Les liens hypertexte peuvent être ajoutés à une zone de texte, quel que soit son emplacement. **Cette rubrique traite des zones de texte dans les rapports.**
+Vous pouvez ajouter des zones de texte aux rapports, les épingler à des tableaux de bord à partir de rapports et les ajouter directement à des tableaux de bord. Les liens hypertexte peuvent être ajoutés à une zone de texte, quel que soit son emplacement. **Cette rubrique traite des zones de texte dans les rapports dans le service Power BI (pas Power BI Desktop).**
 
 > **REMARQUE** : Pour plus d’informations sur les liens hypertexte dans les tables et les matrices Power BI, consultez [Liens hypertexte dans les tables](power-bi-hyperlinks-in-tables.md). Pour plus d’informations sur l’ajout de zones de texte à votre **tableau de bord**, consultez [Ajouter une vignette directement à partir du tableau de bord](service-dashboard-add-widget.md). 
 > 
@@ -47,7 +47,7 @@ Vous pouvez ajouter des zones de texte aux rapports, les épingler à des tablea
    
    ![](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
    
-   * Dans la zone de texte, sélectionnez le lien hypertexte pour afficher l’URL.
+   * Placez votre curseur n’importe où dans le texte mis en surbrillance pour afficher l’URL.  
      
       ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
    * Sélectionnez l’URL pour ouvrir la page dans une nouvelle fenêtre de navigateur.
