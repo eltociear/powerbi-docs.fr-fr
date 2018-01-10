@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/18/2017
+ms.date: 01/08/2018
 ms.author: maggies
-ms.openlocfilehash: 4cc7f12eb4964c67ae9f91cfcb51eac77d690555
-ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
+ms.openlocfilehash: d0fbe2ca891096cf8b1ae2145260c3341c451658
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Partager vos tableaux de bord Power BI avec vos collègues et d’autres utilisateurs
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI offre [plusieurs façons de collaborer et de distribuer vos tableaux](service-how-to-collaborate-distribute-dashboards-reports.md). Le partage en est une.
@@ -110,7 +110,7 @@ Si vous envoyez un lien à partir d’une application mobile Power BI à des per
 Voici quelques éléments à prendre en compte lors du partage de tableaux de bord :
 
 * En général, vos collègues et vous-même voyez les mêmes données dans le tableau de bord. Ainsi, si vous êtes autorisé à voir plus de données qu’eux, ils pourront voir toutes vos données dans votre tableau de bord. Toutefois, si la [sécurité au niveau des lignes](service-admin-rls.md) est appliquée au jeu de données sous-jacent d’un tableau de bord, les informations d’identification de chaque personne sont utilisées pour déterminer les données auxquelles celle-ci est autorisée à accéder.
-* Tous les utilisateurs avec qui vous partagez votre tableau de bord peuvent le voir et interagir avec vos rapports en [mode Lecture](service-report-open-in-reading-view.md). Ils ne peuvent pas créer de rapports ni enregistrer les modifications apportées aux rapports existants.
+* Tous les utilisateurs avec qui vous partagez votre tableau de bord peuvent le voir et interagir avec vos rapports en [mode Lecture](service-reading-view-and-editing-view.md). Ils ne peuvent pas créer de rapports ni enregistrer les modifications apportées aux rapports existants.
 * Aucun utilisateur ne peut voir ni télécharger le jeu de données.
 * Tout le monde peut manuellement [actualiser les données de tableau de bord](refresh-data.md).
 * Si vous utilisez Office 365 pour la messagerie électronique, vous pouvez partager avec les membres d’un groupe de distribution en entrant l’adresse de messagerie associée au groupe de distribution.

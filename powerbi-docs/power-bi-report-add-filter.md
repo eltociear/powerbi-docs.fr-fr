@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: d409633129c6c203e897d76c0acf043bf09ea29d
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: bd358b8e986313ba665326de0ff2722e0113554d
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="add-a-filter-to-a-power-bi-report-in-editing-view"></a>Ajouter un filtre à un rapport Power BI (en mode Édition)
 > [!TIP]
@@ -30,13 +30,13 @@ ms.lasthandoff: 11/13/2017
 > 
 
 ## <a name="what-is-the-difference-between-report-filters-in-editing-view-versus-reading-view"></a>Différence entre les filtres de rapport en mode Lecture et en mode Édition
-Il existe deux modes d’interaction avec les rapports : le [mode Lecture](service-interact-with-a-report-in-reading-view.md) et le [mode Edition](service-interact-with-a-report-in-editing-view.md).  Et les fonctionnalités de filtrage disponibles varient en fonction du mode dans lequel vous êtes.
+Il existe deux modes d’interaction avec les rapports : le [mode Lecture](service-reading-view-and-editing-view.md) et le [mode Edition](service-interact-with-a-report-in-editing-view.md).  Et les fonctionnalités de filtrage disponibles varient en fonction du mode dans lequel vous êtes.
 
 * En mode Édition, vous pouvez ajouter des filtres de rapport, de page et d’élément visuel. Les filtres sont enregistrés en même temps que le rapport. Les personnes qui examinent le rapport en mode Lecture peuvent interagir avec les filtres que vous avez ajoutés, mais pas enregistrer leurs modifications.
 * En mode Lecture, vous pouvez interagir avec les filtres de page, de visuel et de rapport qui existent déjà dans le rapport, mais vous ne pouvez pas enregistrer les modifications que vous apportez aux filtres.
 
 > [!NOTE]
-> Cet article explique comment créer des filtres de rapport en **mode Edition**.  Pour plus d’informations sur les filtres en mode Lecture, consultez [Interaction avec les filtres de rapport en mode Lecture](service-interact-with-a-report-in-reading-view.md).
+> Cet article explique comment créer des filtres de rapport en **mode Edition**.  Pour plus d’informations sur les filtres en mode Lecture, consultez [Interaction avec les filtres de rapport en mode Lecture](service-reading-view-and-editing-view.md).
 > 
 > 
 
@@ -146,7 +146,7 @@ Si vous ne voyez pas le volet Champs, vérifiez que vous êtes en [mode Édition
 
   [Filtres et mise en évidence dans les rapports](power-bi-reports-filters-and-highlighting.md)
 
-[Interagir avec les filtres et la mise en évidence dans les rapports en mode Lecture](service-interact-with-a-report-in-reading-view.md)
+[Interagir avec les filtres et la mise en évidence dans les rapports en mode Lecture](service-reading-view-and-editing-view.md)
 
 [Modifier la façon dont le filtrage croisé et la mise en évidence croisée affectent les visuels d’un rapport](service-reports-visual-interactions.md)
 

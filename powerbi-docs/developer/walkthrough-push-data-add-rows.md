@@ -17,16 +17,16 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
-ms.openlocfilehash: d9fa2984eecfac026cf01a47d73ec6c5950e02d3
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 02c0ac505f542d9c4a346ae7aee72533789d5599
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Étape 5 : Ajouter des lignes à une table Power BI
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
-À l’**étape 4** de la transmission de données à un jeu de données, [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md), vous avez utilisé l’opération [Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx) et Newtonsoft.Json pour obtenir un ID de jeu de données. Pendant cette étape, vous utilisez l’ID de jeu de données avec l’opération [Ajouter des lignes](https://msdn.microsoft.com/library/mt203561.aspx) pour ajouter des lignes à un jeu de données **Power BI**. Pour obtenir des exemples d’utilisation de l’API REST Power BI, consultez la [référence sur l’API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/).
+À l’**étape 4** de la transmission de données à un jeu de données, [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md), vous avez utilisé l’opération [Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx) et Newtonsoft.Json pour obtenir un ID de jeu de données. Pendant cette étape, vous utilisez l’ID de jeu de données avec l’opération [Ajouter des lignes](https://msdn.microsoft.com/library/mt203561.aspx) pour ajouter des lignes à un jeu de données **Power BI**. 
 
 Quand vous appelez l’opération [Ajouter des lignes](https://msdn.microsoft.com/library/mt203561.aspx), vous ajoutez des lignes à un jeu de données.
 
@@ -319,6 +319,5 @@ Ci-après figure le [listing du code complet](#code).
 [Transmettre des données à un tableau de bord Power BI](walkthrough-push-data.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 [Référence de l’API REST de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)  
-[API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

@@ -15,18 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 8425b631bb64911081861dc4a21de04b698f0f67
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 8c108d1564a6de89d2a53134e0bbca3617ebfc92
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="create-a-new-report-from-an-existing-report"></a>Créer un rapport à partir d’un rapport existant
 Vous disposez peut-être déjà d’un rapport qui se connecte à votre jeu de données et possède certains éléments visuels que vous souhaitez réutiliser ou modifier.  Pourquoi ne pas simplement copier ce rapport comme base pour créer un nouveau rapport ?  Pour ce faire :
 
-1. [Ouvrez un rapport](service-report-open-in-reading-view.md).
+1. [Ouvrez un rapport](service-report-open.md).
 2. Dans le menu **Fichier** , sélectionnez **Enregistrer sous**.
    
    ![](media/power-bi-report-copy/powerbi-save-as.png)

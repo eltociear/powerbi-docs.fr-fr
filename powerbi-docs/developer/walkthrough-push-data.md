@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/10/2017
+ms.date: 01/05/2017
 ms.author: asaxton
-ms.openlocfilehash: e62b08614a38502fb79f48f369013d32fd538659
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: aba135a0a790025f732379ecb07157f1150d999c
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
 Avec l’API Power BI, vous pouvez transmettre des données à un jeu de données Power BI. Par exemple, vous voulez étendre un workflow d’entreprise existant pour transmettre des données clés à votre jeu de données. Dans ce cas, vous voulez transmettre un jeu de données Sales Marketing qui possède une table Product à un jeu de données.
@@ -38,7 +38,7 @@ Avant de commencer à transmettre des données à un jeu de données, vous devez
 La section suivante est une présentation générale des opérations de l’API Power BI qui transmettent des données.
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Opérations de l’API Power BI permettant de transmettre des données
-Avec l’API REST Power BI, vous pouvez transmettre des sources de données à Power BI. Lorsqu’une application ajoute des lignes à un jeu de données, les vignettes du tableau de bord sont automatiquement mises à jour avec les données modifiées. Pour transmettre des données, vous utilisez l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx) avec l’opération [Ajouter des lignes](https://msdn.microsoft.com/library/mt203561.aspx). Pour trouver un jeu de données, vous utilisez l’opération [Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx). Pour chacune de ces opérations, vous pouvez passer un ID de groupe pour utiliser un groupe. Utilisez l’opération [Obtenir des groupes](https://msdn.microsoft.com/library/mt243842.aspx) pour obtenir la liste des ID de groupe. Pour obtenir des exemples d’utilisation de l’API REST Power BI, consultez la [référence sur l’API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/).
+Avec l’API REST Power BI, vous pouvez transmettre des sources de données à Power BI. Lorsqu’une application ajoute des lignes à un jeu de données, les vignettes du tableau de bord sont automatiquement mises à jour avec les données modifiées. Pour transmettre des données, vous utilisez l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx) avec l’opération [Ajouter des lignes](https://msdn.microsoft.com/library/mt203561.aspx). Pour trouver un jeu de données, vous utilisez l’opération [Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx). Pour chacune de ces opérations, vous pouvez passer un ID de groupe pour utiliser un groupe. Utilisez l’opération [Obtenir des groupes](https://msdn.microsoft.com/library/mt243842.aspx) pour obtenir la liste des ID de groupe.
 
 Voici les opérations permettant de transmettre des données à un jeu de données :
 
@@ -126,6 +126,5 @@ Pour commencer à transmettre des données à un jeu de données, consultez [Ét
 [Obtenir des groupes](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Présentation de JSON](http://json.org/)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
-[API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

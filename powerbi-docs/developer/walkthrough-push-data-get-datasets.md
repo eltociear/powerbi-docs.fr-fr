@@ -17,16 +17,16 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
-ms.openlocfilehash: f0ca594b6f87ab2e186909f10a8ba4b7e1bce062
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a9dd782931904ada208b68ccbceeb7e1c0d95ec6
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Étape 4 : Obtenir un jeu de données pour ajouter des lignes à une table Power BI
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
-À l’**étape 3** de la procédure Transmettre des données à un jeu de données intitulée [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md), vous avez appelé l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx) pour créer un jeu de données dans Power BI. Pendant cette étape, vous utilisez l’opération [Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx) et Newtonsoft.Json pour obtenir un ID de jeu de données. Vous utilisez l’ID de jeu de données à l’étape 4 pour ajouter des lignes à un jeu de données. Pour obtenir des exemples d’utilisation de l’API REST Power BI, consultez la [référence sur l’API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/).
+À l’**étape 3** de la procédure Transmettre des données à un jeu de données intitulée [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md), vous avez appelé l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx) pour créer un jeu de données dans Power BI. Pendant cette étape, vous utilisez l’opération [Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx) et Newtonsoft.Json pour obtenir un ID de jeu de données. Vous utilisez l’ID de jeu de données à l’étape 4 pour ajouter des lignes à un jeu de données. 
 
 Pour transmettre des données à un jeu de données Power BI, vous devez référencer la table dans le jeu de données. Pour référencer une table dans un jeu de données, vous devez d’abord obtenir un **ID de jeu de données**. Vous obtenez un **ID de jeu de données** à l’aide de l’opération [Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx). L’opération **Obtenir un jeu de données** retourne une chaîne JSON contenant la liste de tous les jeux de données dans Power BI. Pour désérialiser une chaîne JSON, il est recommandé d’utiliser [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
@@ -278,7 +278,6 @@ Ci-après figure le [listing du code complet](#code).
 [Transmettre des données à Power BI](walkthrough-push-data.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 [Référence de l’API REST de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)  
-[API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

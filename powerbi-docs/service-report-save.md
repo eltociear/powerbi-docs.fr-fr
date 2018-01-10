@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: f6d0f320dd18520c94ada531ee87aacbd562f5d7
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+ms.openlocfilehash: 50fd10596ea7ebba1284f78b4056f7afbd0e3400
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Enregistrer un rapport dans le service Power BI et Power BI Desktop
 Une fois que vous avez modifié un rapport dans Power BI, vous pouvez l’enregistrer, l’enregistrer sous un autre nom ou le fermer sans enregistrer vos modifications. Supposons que vous ayez ouvert le rapport, créé une visualisation, puis épinglé cette visualisation au tableau de bord. Si vous le fermez sans enregistrer vos modifications, la vignette restera sur le tableau de bord, mais la visualisation ne sera pas enregistrée dans le rapport. Si vous cliquez sur cette vignette dans le tableau de bord, le rapport s’ouvre, mais la visualisation ne figure pas dans le rapport.
@@ -35,7 +35,7 @@ Une fois que vous avez modifié un rapport dans Power BI, vous pouvez l’enreg
 1. Si vous essayez de quitter un rapport qui a été modifié, Power BI affiche une invite.
    
    ![](media/service-report-save/power-bi-unsaved.png)
-2. Pour enregistrer le rapport, vous pouvez également sélectionner **Fichier** \> **Enregistrer** ou **Enregistrer sous**. Si vous êtes en [mode Lecture](service-interact-with-a-report-in-reading-view.md) vous voyez uniquement l’option Enregistrer sous. 
+2. Pour enregistrer le rapport, vous pouvez également sélectionner **Fichier** \> **Enregistrer** ou **Enregistrer sous**. Si vous êtes en [mode Lecture](service-reading-view-and-editing-view.md) vous voyez uniquement l’option Enregistrer sous. 
    
    ![](media/service-report-save/power-bi-save-new.png)
 3. S’il s’agit d’un nouveau rapport (Enregistrer) ou d’une nouvelle version d’un rapport existant (Enregistrer sous), attribuez-lui un nom descriptif.  **Le rapport est ajouté à l’espace de travail actif**.

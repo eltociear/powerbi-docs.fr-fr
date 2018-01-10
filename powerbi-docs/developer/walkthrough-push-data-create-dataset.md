@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
-ms.openlocfilehash: b45a6f76a710bc158d0d1763ca10f2125164952a
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 92409e447bf9bc32b83c22650d5b41aef6bb4414
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Étape 3 : Créer un jeu de données dans Power BI
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
@@ -32,7 +32,7 @@ Pour appeler une ressource REST, vous utilisez une URL qui localise la ressource
 
 Pour authentifier une opération REST Power BI, vous ajoutez le jeton que vous avez obtenu à l’étape [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md) à un en-tête de demande :
 
-Quand vous appelez l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx), un jeu de données est créé. Pour obtenir des exemples d’utilisation de l’API REST Power BI, consultez la [référence sur l’API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/).
+Quand vous appelez l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx), un jeu de données est créé. 
 
 ![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
@@ -239,7 +239,6 @@ Ci-après figure le [listing du code complet](#code).
 [Transmettre des données à un tableau de bord Power BI](walkthrough-push-data.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 [Référence de l’API REST de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)  
-[API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

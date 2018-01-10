@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/19/2017
 ms.author: asaxton
-ms.openlocfilehash: 0b2e0208814fdd68ef7c6f0bcc1cf6ffa1fe42da
-ms.sourcegitcommit: a658b1c936e382f46a19eeb9cc26016cd7b1d756
+ms.openlocfilehash: 70ffefa9845f8440205460ee0083f8dc334b7c81
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-a-tile-into-an-app-user-owns-data"></a>Intégrer une vignette dans une application (l’utilisateur possède les données)
 Découvrez comment intégrer (ou incorporer) une vignette dans une application web en utilisant des appels d’API REST, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à votre organisation.
@@ -56,7 +56,7 @@ Pour obtenir une vignette **Power BI**, vous utilisez l’opération [Get Tiles]
 Vous devez d’abord récupérer un ID de tableau de bord avant de pouvoir obtenir la vignette. Pour plus d’informations sur la récupération d’un tableau de bord, consultez [Intégrer un tableau de bord à une application (l’utilisateur possède les données)](integrate-dashboard.md).
 
 ### <a name="get-tiles-using-an-access-token"></a>Obtenir des vignettes à l’aide d’un jeton d’accès
-En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx). L’opération [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) renvoie une liste de vignettes. Vous ne pouvez récupérer qu’une seule vignette dans cette liste. Voici une méthode C# complète pour obtenir une vignette. Pour obtenir des exemples d’utilisation de l’API REST Power BI, consultez la [référence sur l’API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/).
+En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx). L’opération [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) renvoie une liste de vignettes. Vous ne pouvez récupérer qu’une seule vignette dans cette liste. Voici une méthode C# complète pour obtenir une vignette. 
 
 Pour effectuer l’appel d’API REST, vous devez inclure un en-tête d’*autorisation* au format *Porteur {jeton d’accès}*.
 

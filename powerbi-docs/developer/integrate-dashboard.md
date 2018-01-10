@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/05/2017
 ms.author: asaxton
-ms.openlocfilehash: f3968fd9fb89e868754bb6025a23fdbd028a3965
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: fdcefb11187e92063f239967cf4d245347f54683
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-a-dashboard-into-an-app-for-your-organization"></a>Intégrer un tableau de bord dans une application pour votre organisation
 Découvrez comment intégrer (ou incorporer) un tableau de bord dans une application web en utilisant des appels d’API REST, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à votre organisation.
@@ -56,7 +56,7 @@ Pour obtenir un tableau de bord **Power BI**, vous utilisez l’opération [Obte
 ![](media/integrate-dashboard/powerbi-embed-dashboard-get-dashboards.png)
 
 ### <a name="get-dashboards-using-an-access-token"></a>Obtenir des tableaux de bord avec un jeton d’accès
-En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx). L’opération [Obtenir des tableaux de bord](https://msdn.microsoft.com/library/mt465739.aspx) renvoie la liste des tableaux de bord. Vous ne pouvez récupérer qu’un seul tableau de bord dans cette liste. Voici une méthode C# complète pour obtenir un tableau de bord. Pour obtenir des exemples d’utilisation de l’API REST Power BI, consultez la [référence sur l’API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/).
+En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx). L’opération [Obtenir des tableaux de bord](https://msdn.microsoft.com/library/mt465739.aspx) renvoie la liste des tableaux de bord. Vous ne pouvez récupérer qu’un seul tableau de bord dans cette liste. Voici une méthode C# complète pour obtenir un tableau de bord. 
 
 Pour effectuer l’appel d’API REST, vous devez inclure un en-tête d’*autorisation* au format *Porteur {jeton d’accès}*.
 

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/05/2017
 ms.author: asaxton
-ms.openlocfilehash: 4dd18fba5b5e3da0f8973a77166551086cc3f3cf
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8285cbbc2d8dee653863cad50036da58362c32d1
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-a-report-into-an-app-for-your-organization"></a>Intégrer un rapport dans une application pour votre organisation
 Découvrez comment intégrer (ou incorporer) un rapport dans une application web en utilisant des appels d’API REST, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à votre organisation.
@@ -54,7 +54,7 @@ Dans votre application, vous devez d’abord obtenir un **jeton d’accès**, à
 Pour obtenir un rapport **Power BI**, vous utilisez l’opération [Obtenir des rapports](https://msdn.microsoft.com/library/mt634543.aspx) opération qui obtient une liste de rapports **Power BI**. Dans la liste des rapports, vous pouvez obtenir un ID de rapport.
 
 ### <a name="get-reports-using-an-access-token"></a>Obtenir des rapports à l’aide d’un jeton d’accès
-En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx). L’opération [Obtenir des rapports](https://msdn.microsoft.com/library/mt634543.aspx) renvoie une liste de rapports. Vous ne pouvez récupérer qu’un seul rapport dans cette liste. Voici une méthode C# complète pour obtenir un rapport. Pour obtenir des exemples d’utilisation de l’API REST Power BI, consultez la [référence sur l’API REST Power BI sur APIARY](http://docs.powerbi.apiary.io/).
+En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Reports](https://msdn.microsoft.com/library/mt634543.aspx). L’opération [Obtenir des rapports](https://msdn.microsoft.com/library/mt634543.aspx) renvoie une liste de rapports. Vous ne pouvez récupérer qu’un seul rapport dans cette liste. Voici une méthode C# complète pour obtenir un rapport. 
 
 Pour effectuer l’appel d’API REST, vous devez inclure un en-tête d’*autorisation* au format *Porteur {jeton d’accès}*.
 

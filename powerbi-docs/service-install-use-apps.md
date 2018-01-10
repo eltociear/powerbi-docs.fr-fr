@@ -16,11 +16,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 87fd7f9b881c6af482cc3a644e77b0a95ea1743c
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 604aed25b4702525cfbecde9c6fe18ded8c41994
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 Dans Power BI, les *applications* rassemblent les rapports et tableaux de bord associés dans un même emplacement. Les personnes de votre organisation peuvent créer et distribuer des applications avec les informations clés de l’entreprise. Des [services externes](service-connect-to-services.md) que vous utilisez peut-être déjà, tels que Google Analytics et Microsoft Dynamics CRM, offrent également des applications Power BI. 
@@ -63,7 +63,7 @@ Vous pouvez également rechercher et installer des applications auxquelles vous 
 3. Sélectionnez **Obtenir maintenant** pour l’ajouter à votre page Applications. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interagir avec les tableaux de bord et rapports dans l’application
-Vous pouvez maintenant explorer les données dans les tableaux de bord et rapports de l’application. Vous avez accès à toutes les interactions Power BI standard, telles que le filtrage, la mise en évidence, le tri et la descente dans la hiérarchie. En savoir plus sur l’[interaction avec les rapports dans Power BI](service-interact-with-a-report-in-reading-view.md). 
+Vous pouvez maintenant explorer les données dans les tableaux de bord et rapports de l’application. Vous avez accès à toutes les interactions Power BI standard, telles que le filtrage, la mise en évidence, le tri et la descente dans la hiérarchie. En savoir plus sur l’[interaction avec les rapports dans Power BI](service-reading-view-and-editing-view.md). 
 
 Vous ne pouvez pas enregistrer les modifications que vous effectuez, mais vous pouvez toujours [exporter les données vers Excel ](power-bi-visualization-export-data.md) à partir d’un tableau ou d’un autre visuel d’un rapport.
 
