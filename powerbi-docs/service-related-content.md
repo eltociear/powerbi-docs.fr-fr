@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 4610523d7c18246394974083c948b7bc018b4da1
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 692bcad734c2c011fc81fedf9fb8870d518cab06
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Afficher un contenu associé dans le service Power BI
 Le volet **Contenu associé** montre les interconnexions entre les éléments de contenu du service Power BI (tableaux de bord, rapports et jeux de données).  Et il s’améliore, car il permet d’effectuer des tâches courantes : actualisation, changement de nom, génération d’informations, et bien plus encore. Sélectionnez un rapport ou un tableau de bord pour l’ouvrir dans votre espace de travail Power BI.   
@@ -74,7 +74,7 @@ Dans un espace de travail, sélectionnez l’onglet **Rapports**, puis l’icôn
 <br>
 **Méthode 2**
 
-Ouvrez le rapport en [Mode Lecture](service-interact-with-a-report-in-reading-view.md), puis, dans la barre de menus supérieure, sélectionnez ![](media/service-related-content/power-bi-view-related-new.png).
+Ouvrez le rapport en [Mode Lecture](service-reading-view-and-editing-view.md), puis, dans la barre de menus supérieure, sélectionnez ![](media/service-related-content/power-bi-view-related-new.png).
 
 Le volet **Contenu associé** s’ouvre. Il affiche le jeu de données associé et tous les tableaux de bord qui ont au moins une vignette épinglée du rapport. Pour ce rapport, des visualisations sont épinglées à 2 tableaux de bord.
 
@@ -97,7 +97,7 @@ Sélectionnez l’icône pour ouvrir le volet **Contenu associé**.
 
 ## <a name="limitations-and-troubleshooting"></a>Limitations et résolution des problèmes
 * Si votre navigateur n’offre pas un espace suffisant, vous ne voyez pas l’option **Afficher les éléments associés**, mais vous voyez toujours l’icône Afficher les éléments associés ![](media/service-related-content/power-bi-view-related-icon-new.png). Sélectionnez l’icône pour ouvrir le volet **Contenu associé**.
-* Pour ouvrir le contenu associé d’un rapport, vous devez être en [Mode lecture](service-interact-with-a-report-in-reading-view.md).
+* Pour ouvrir le contenu associé d’un rapport, vous devez être en [Mode lecture](service-reading-view-and-editing-view.md).
 * Le contenu connexe n’est pas disponible dans Power BI Desktop.
 * La fonctionnalité Contenu associé ne fonctionne pas pour les jeux de données de streaming.
 

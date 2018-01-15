@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: 650e02ea7d6f31fce9e5a0a458c41d6daa3fa9e1
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 57c441c489bf71db4b45bdfb96821b3cc2dcdec3
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Paramètres d’affichage de page dans un rapport Power BI
 Nous sommes conscients qu’il est essentiel de préserver la qualité de présentation de vos rapports. Cela n’est pas toujours évident, car vous et vos collègues consultez ces rapports sur des écrans de taille et de proportions différentes. 
@@ -45,7 +45,7 @@ Dans le service Power BI, ouvrez un rapport, puis sélectionnez **Affichage** à
 
 ![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Les paramètres du mode Page sont disponibles à la fois en [mode Lecture](service-interact-with-a-report-in-reading-view.md) et en [mode Edition](service-interact-with-a-report-in-editing-view.md). En mode Édition, le propriétaire d’un rapport peut affecter un paramètre de mode Page à certaines pages d’un rapport. Ces paramètres sont alors enregistrés avec le rapport. Quand un collègue ouvre ce rapport en mode Lecture, il voit les pages du rapport s’afficher avec les paramètres du propriétaire.  En mode Lecture, les collègues peuvent modifier *certains* des paramètres de mode Page, mais les modifications ne sont pas enregistrées lorsqu’ils quittent le rapport.
+Les paramètres du mode Page sont disponibles à la fois en [mode Lecture et en mode Édition](service-reading-view-and-editing-view.md). En mode Édition, le propriétaire d’un rapport peut affecter un paramètre de mode Page à certaines pages d’un rapport. Ces paramètres sont alors enregistrés avec le rapport. Quand un collègue ouvre ce rapport en mode Lecture, il voit les pages du rapport s’afficher avec les paramètres du propriétaire.  En mode Lecture, les collègues peuvent modifier *certains* des paramètres de mode Page, mais les modifications ne sont pas enregistrées lorsqu’ils quittent le rapport.
 
 ##    <a name="page-view-settings"></a>Paramètres de mode Page
 Le premier ensemble de paramètres du *mode Page* contrôle l’affichage de votre page de rapport dans la fenêtre du navigateur.  Choisissez parmi les options suivantes :

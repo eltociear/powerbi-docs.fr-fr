@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/18/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 83c63ee2bed5ae7674223cf2fc3f9241308926e9
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 22dc1c9b703b500625a5aed23b6187fd3f616dde
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="drill-down-in-a-visualization-in-power-bi"></a>Explorer une visualisation dans Power BI
 ## <a name="drill-down-requires-a-hierarchy"></a>La fonction de descente dans la hiérarchie nécessite une hiérarchie
@@ -54,7 +54,7 @@ Il existe deux méthodes pour descendre (et monter) dans la hiérarchie de votre
 ## <a name="method-1-for-drill-down"></a>Méthode 1 pour descendre dans la hiérarchie
 Cette méthode utilise les icônes de descente dans la hiérarchie qui apparaissent dans les angles supérieurs de la visualisation elle-même.
 
-1. Dans Power BI, ouvrez un rapport en [mode Lecture](service-report-open-in-reading-view.md) ou en [mode Edition](service-reading-view-and-editing-view.md). Pour pouvoir explorer une visualisation, celle-ci doit comporter une hiérarchie. 
+1. Dans Power BI, ouvrez un rapport en [mode Lecture ou en mode Édition](service-reading-view-and-editing-view.md). Pour pouvoir explorer une visualisation, celle-ci doit comporter une hiérarchie. 
    
    Une hiérarchie vous est présentée dans l’animation ci-dessous.  La visualisation a une hiérarchie constituée de secteurs, de villes, de codes postaux et de noms de ville. Chaque secteur a une ou plusieurs villes, chaque ville a un ou plusieurs codes postaux, etc. Par défaut, la visualisation affiche uniquement les données relatives au secteur, car le *secteur* (Territory) apparaît en premier dans la liste.
    
@@ -75,7 +75,7 @@ Cette méthode utilise les icônes de descente dans la hiérarchie qui apparaiss
 ## <a name="method-2-for-drill-down"></a>Méthode 2 pour descendre dans la hiérarchie
 Cette méthode utilise la liste déroulante **Explorer** dans la barre de menus supérieure de Power BI.
 
-1. Dans Power BI, ouvrez un rapport en [mode Lecture](service-report-open-in-reading-view.md) ou en [mode Edition](service-reading-view-and-editing-view.md). Pour pouvoir explorer une visualisation, celle-ci doit comporter une hiérarchie. 
+1. Dans Power BI, ouvrez un rapport en [mode Lecture ou en mode Édition](service-reading-view-and-editing-view.md). Pour pouvoir explorer une visualisation, celle-ci doit comporter une hiérarchie. 
    
    Une hiérarchie vous est présentée dans l’image ci-dessous.  La visualisation a une hiérarchie constituée de secteurs, de villes, de codes postaux et de noms de ville. Chaque secteur a une ou plusieurs villes, chaque ville a un ou plusieurs codes postaux, etc. Par défaut, la visualisation affiche uniquement les données relatives au secteur, car le *secteur* (Territory) apparaît en premier dans la liste.
    

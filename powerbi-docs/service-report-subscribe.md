@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/21/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 8faa60dee8c1785d5560ac34c5eb50288488e893
-ms.sourcegitcommit: 910258a5ad8b6861e81ae02c57286db221c37375
+ms.openlocfilehash: 66e75d638595113b2df67650896a407ae5d13e88
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>S’abonner à un rapport ou tableau de bord Power BI
 Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir des e-mails : de une fois par jour à une fois par semaine. La messagerie et la capture instantanée utilisent la langue définie dans les paramètres Power BI. Si aucune langue n’est définie, Power BI utilise la langue actuelle du navigateur.
@@ -65,7 +65,7 @@ La **création** d’un abonnement est une fonctionnalité Power BI Pro et vous 
    ![](media/service-report-subscribe/power-bi-view-related-screen.png)
 
 ## <a name="subscribe-to-a-report-page"></a>S’abonner à une page de rapport
-1. Ouvrez le rapport en [mode Lecture](service-report-open-in-reading-view.md).
+1. Ouvrez le rapport en [mode Lecture](service-reading-view-and-editing-view.md).
 2. Dans la barre de menus supérieure, sélectionnez **S’abonner**.
    
    ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
@@ -109,6 +109,7 @@ Un abonnement se termine si la licence Pro arrive à expiration, si le tableau d
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 * À l’heure actuelle, il est impossible de s’abonner aux rapports/tableaux de bord issus des packs de contenu ou applications Power BI. Mais il existe une solution : faites une copie du rapport/tableau de bord et ajoutez des abonnements à cette version à la place.
+* Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 * Pour les abonnements aux e-mails sur les jeux de données de la connexion active, vous recevez uniquement des e-mails lorsque les données changent. Par conséquent, si une actualisation se produit, mais que les données ne sont pas modifiées, Power BI ne vous envoie pas d’e-mail.
 * Les abonnements aux courriers ne prennent pas en charge la plupart des [visuels personnalisés](power-bi-custom-visuals.md).  La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](power-bi-custom-visuals-certified.md).  
 * Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Les modifications apportées aux états par défaut avant l’inscription à l’abonnement ne s’affichent pas dans l’e-mail.    

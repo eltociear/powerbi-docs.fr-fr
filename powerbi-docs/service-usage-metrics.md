@@ -18,17 +18,17 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/27/2017
 ms.author: mihart
-ms.openlocfilehash: 0fca4788c29f42390a286509acd0675292fc6684
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 04709b76b8e3e464b5384fa2bf137cd79b0749a7
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Mesures d’utilisation pour les tableaux de bord et les rapports
 Si vous créez des tableaux de bord et des rapports, des mesures d’utilisation vous aident à comprendre leur impact. Lorsque vous exécutez des métriques d’utilisation de tableau de bord ou de rapport, vous découvrez comment les tableaux de bord et les rapports sont utilisés dans votre organisation : ce qui est utilisé, par qui et dans quel but.  
 
 > [!NOTE]
-> Les métriques d’utilisation capturent l’utilisation quand vous incorporez des tableaux de bord et rapports, mais pas quand vous [publiez sur le web](service-publish-to-web.md).
+> Les métriques d’utilisation suivent l’utilisation de rapports incorporés dans SharePoint Online. Elles suivent également l’incorporation de tableaux de bord et rapports via les flux « l’utilisateur possède les informations d’identification » et « l’application possède les informations d’identification ». Les métriques d’utilisation ne suivent pas l’utilisation des rapports incorporés via [publier sur le web](service-publish-to-web.md).
 > 
 > 
 

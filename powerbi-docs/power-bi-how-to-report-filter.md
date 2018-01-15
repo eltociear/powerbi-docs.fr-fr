@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/29/2017
 ms.author: mihart
-ms.openlocfilehash: 3710b8136a5f8f00d78047d9468dce0d6e68377f
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: da3d4359fab37d1c5ee5f9d214cc5dba0fa9b680
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport
 Cet article présente en détail le volet Filtres de rapport. Le volet s’affiche dans les modes Édition et Lecture pour les rapports Power BI.
@@ -29,7 +29,7 @@ Cet article présente en détail le volet Filtres de rapport. Le volet s’affic
 Il existe de nombreuses façons de filtrer des données dans Power BI. Nous vous recommandons de commencer par lire l’article [À propos des filtres et de la mise en évidence](power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="working-with-filters"></a>Utilisation des filtres
-Les rapports peuvent être ouverts en [mode Edition](service-interact-with-a-report-in-editing-view.md) ou en [mode Lecture](service-interact-with-a-report-in-reading-view.md). En mode Édition, les propriétaires de rapports [peuvent ajouter des filtres](power-bi-report-add-filter.md) et les enregistrer dans leurs rapports. Les utilisateurs qui consultent le rapport en mode Lecture peuvent interagir avec les filtres, mais ne peuvent pas enregistrer les modifications de filtres apportées au rapport.
+Les rapports peuvent être ouverts en [mode Édition ou en mode Lecture](service-reading-view-and-editing-view.md). En mode Édition, les propriétaires de rapports [peuvent ajouter des filtres](power-bi-report-add-filter.md) et les enregistrer dans leurs rapports. Les utilisateurs qui consultent le rapport en mode Lecture peuvent interagir avec les filtres, mais ne peuvent pas enregistrer les modifications de filtres apportées au rapport.
 
 ## <a name="filters-in-reading-view"></a>Filtres en mode Lecture
 Quand un rapport est ouvert en mode Lecture, le volet Filtres s’affiche sur le côté droit du canevas de rapport. Si vous ne voyez pas le volet, sélectionnez la flèche dans le coin supérieur droit pour le développer.
@@ -122,7 +122,7 @@ Si les valeurs de champ représentent une date ou une heure, vous pouvez spécif
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Filtres et mise en évidence dans les rapports](power-bi-reports-filters-and-highlighting.md)  
-[Interagir avec les filtres et la mise en évidence dans les rapports en mode Lecture](service-interact-with-a-report-in-reading-view.md)  
+[Interagir avec les filtres et la mise en évidence dans les rapports en mode Lecture](service-reading-view-and-editing-view.md)  
 [Créer des filtres en mode Edition de rapports](power-bi-report-add-filter.md)  
 [Modifier la façon dont le filtrage croisé et la mise en évidence croisée affectent les visuels d’un rapport](service-reports-visual-interactions.md)
 

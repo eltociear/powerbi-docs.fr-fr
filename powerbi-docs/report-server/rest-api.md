@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
-ms.author: asaxton
-ms.openlocfilehash: 27c4d7c6db43a2332fbef4f444a149ebb3098c43
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: ede77374fab911ed77a993cc705b8caa00e48bf0
+ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/06/2018
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Développer avec les API REST pour Power BI Report Server
 Power BI Report Server prend en charge les API Representational State Transfer (REST). Les API REST sont des points de terminaison de service qui prennent en charge un ensemble d’opérations HTTP (méthodes) qui fournissent un accès en création, récupération, mise à jour ou suppression aux ressources à l’intérieur d’un serveur de rapports.
@@ -51,7 +51,7 @@ Une paire requête-réponse (ou demande/réponse) d’API REST peut être divis�
   * Des objets de réponse encodés MIME sont renvoyés dans le corps de la réponse HTTP, telle une réponse d’une méthode GET qui retourne des données. En règle générale, ces objets sont retournés dans un format structuré tel que JSON ou XML, comme indiqué par l’en-tête de réponse `Content-type`.
 
 ## <a name="api-documentation"></a>Documentation de l’API
-Une API REST moderne appelle une documentation moderne sur l’API. L’API REST repose sur la spécification OpenAPI (également appelée spécification Swagger), et une documentation est disponible sur [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0). Au-delà de la documentation de l’API, SwaggerHub aide à générer une bibliothèque cliente dans le langage choisi : JavaScript, TypeScript, c#, Java, Python, Ruby et bien plus encore.
+Une API REST moderne appelle une documentation moderne sur l’API. L’API REST repose sur la spécification OpenAPI (aussi appelée spécification Swagger), et une documentation est disponible sur [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0). Au-delà de la documentation de l’API, SwaggerHub aide à générer une bibliothèque cliente dans le langage choisi : JavaScript, TypeScript, c#, Java, Python, Ruby et bien plus encore.
 
 ## <a name="testing-api-calls"></a>Test des appels d’API
 Un outil pour tester les messages de requête-réponse HTTP est [Fiddler](http://www.telerik.com/fiddler). Fiddler est un site proxy de débogage web gratuit capable d’intercepter vos demandes REST, ce qui facilite le diagnostic des messages de requête-réponse HTTP.

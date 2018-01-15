@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mihart
-ms.openlocfilehash: fb498f2b3320b96958467a9db851f119dba20ce7
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 01e4f19cc1a3a57179be37cf0f36adf15ac47fdc
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="automatically-generate-data-insights-with-power-bi"></a>Générer automatiquement des informations sur les données avec Power BI
 Vous disposez d’un jeu de données et vous ne savez pas par quoi commencer ?  Vous voulez créer rapidement un tableau de bord ?  Vous souhaitez rechercher des informations que vous auriez manquées ?
@@ -71,10 +71,10 @@ Maintenant, à vous de jouer. Explorez les informations en vous appuyant sur l�
     ![](media/service-insights/power-bi-insight-focus.png)
 3. Dans le mode Focus, vous pouvez :
    
-   * [Filtrer](service-interact-with-a-report-in-reading-view.md) les visualisations.  Pour afficher les filtres, dans l’angle supérieur droit, sélectionnez la flèche pour développer le volet Filtres.
+   * Filtrez les visualisations.  Pour afficher les filtres, dans l’angle supérieur droit, sélectionnez la flèche pour développer le volet Filtres.
      
         ![](media/service-insights/power-bi-insights-filter-new.png)
-   * Épingler la carte d’information à un tableau de bord en sélectionnant l’icône Épingler ![](media/service-insights/power-bi-pin-icon.png) ou l’option **Épingler un élément visuel**.
+   * Épinglez la carte d’information à un tableau de bord en sélectionnant l’icône Épingler ![](media/service-insights/power-bi-pin-icon.png) ou l’option **Épingler un élément visuel**.
    * Exécuter un aperçu sur la carte elle-même. C’est ce que l’on appelle un **aperçu délimité**. Dans le coin supérieur droit, sélectionnez l’icône en forme d’ampoule ![](media/service-insights/power-bi-bulb-icon.png) ou **Obtenir des informations**.
      
        ![](media/service-insights/pbi-autoinsights-tile.png)

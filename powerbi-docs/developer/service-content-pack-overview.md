@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
-ms.author: asaxton
-ms.openlocfilehash: 4a8ea2acfcfe41192b82addfe52dbe67a0df8088
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.date: 01/04/2018
+ms.author: maghan
+ms.openlocfilehash: 1eaa549bf42c17cd2bd857efd4d50b991e862ea0
+ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Vue d’ensemble du programme Pack de contenu du service Power BI
 Un pack de contenu est un ensemble de contenu prêt à l’emploi permettant aux utilisateurs d’obtenir immédiatement des analyses depuis une source. Un pack de contenu se concentre généralement sur un scénario d’entreprise spécifique en fournissant des analyses pour un rôle, un domaine ou un flux de travail.
@@ -49,6 +49,7 @@ Pour créer et envoyer un pack de contenu pour qu’il soit publié dans le serv
 * Vous avez une application SaaS utilisée par des utilisateurs en entreprise.
 * Votre application SaaS possède des données utilisateur qui peuvent être visualisées dans Power BI.
 * Votre application SaaS a une API qui est accessible via le réseau Internet public. Dans l’idéal, l’API est une API REST ou un flux OData. Les packs de contenu Power BI prennent en charge plusieurs types d’authentification tels que l’authentification de base, OAuth 2.0 et Clé API. 
+* Votre application SaaS est approuvée et peut publier un pack de contenu. Envoyez votre demande à pbiservicesapps@microsoft.com. Nous allons examiner chaque envoi en nous basant sur sa pertinence et l’utilisation attendue. 
 * Accord de partenariat signé. Cette opération a lieu à l’[étape de soumission](template-content-pack-testing.md#submission).
 
 Veuillez consulter la section [création](template-content-pack-authoring.md) pour plus d’informations sur les spécifications techniques.

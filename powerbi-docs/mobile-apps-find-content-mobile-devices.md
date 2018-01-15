@@ -1,6 +1,6 @@
 ---
 title: "Trouver des tableaux de bord, rapports et applications dans les applications mobiles Power BI"
-description: "En savoir plus sur où trouver vos tableaux de bord et rapports dans les applications mobiles Power BI, en fonction de leur provenance."
+description: "Découvrez où trouver vos tableaux de bord, rapports et applications dans les applications mobiles Power BI, en fonction de leur provenance."
 services: powerbi
 documentationcenter: 
 author: maggiesMSFT
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/04/2018
 ms.author: maggies
-ms.openlocfilehash: 6dca860e4711d85b4b53c31c91ba4cba20bbe6e7
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d63ef5ad9ee59901917fb9bf9c28358c9aa542e8
+ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="find-your-dashboards-reports-and-apps-in-the-power-bi-mobile-apps"></a>Trouver vos tableaux de bord, rapports et applications dans les applications mobiles Power BI
 S’applique à :
@@ -49,7 +49,7 @@ Vous pouvez avoir des connexions à un ou plusieurs serveurs SQL Server Reportin
 ## <a name="3-apps"></a>3 applications
 Une application est une collection de tableaux de bord et de rapports conçus par votre organisation afin de fournir des mesures clés permettant de prendre plus rapidement et facilement des décisions pilotées par les données. Dans le service Power BI ([https://powerbi.com](https://powerbi.com)), il est facile de découvrir et d’installer des applications. Une fois installées, vous pouvez les afficher sur tout appareil. 
 
-![Nouvelle navigation dans Power BI](media/mobile-apps-find-content-mobile-devices/power-bi-mobile-apps.png)
+![Nouvelle navigation dans Power BI](media/mobile-apps-find-content-mobile-devices/power-bi-apps-mobile-apps.png)
 
 Avec des applications, vous recevez automatiquement toutes les mises à jour effectuées par l’auteur qui contrôle également la fréquence à laquelle l’actualisation des données est planifiée. Vous n’avez pas besoin de vous soucier de rester à jour avec les modifications que l’auteur apporte.
 

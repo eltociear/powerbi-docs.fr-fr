@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/4/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 80a5a668056d1a3f3f2b53600e80f399be4a5e08
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 8a818c26a6f9afd134133464b972091faaad093d
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 Lorsque vous ouvrez un rapport dans le service Power BI, chaque page du rapport possède sa propre URL unique. Pour filtrer cette page de rapport, vous pouvez utiliser le volet Filtres sur le canevas de rapport.  Vous pouvez également ajouter des paramètres de chaîne de requête à l’URL pour filtrer le rapport. Imaginons que vous avez un rapport que vous envisagez de présenter à des collègues après l’avoir filtré pour eux au préalable. Une solution consiste à ajouter les paramètres de filtre à l’URL par défaut du rapport, puis à envoyer par courriel à vos collègues l’URL entière ainsi obtenue.
@@ -41,7 +41,7 @@ URL?filter=***Tableau***/***Champ*** eq '***valeur***'
 * Les noms de **Tableau** et de **Champ** respectent la casse, pas la **valeur**.
 * Les champs masqués dans l’affichage Rapport peuvent également être filtrés.
 * La **valeur** doivent être placée entre apostrophes.
-* Le type de champ doit être une chaîne.
+* Le type de champ doit être un nombre ou une chaîne.
 * Les noms de tableau et de champ ne peuvent pas contenir d’espaces.
 
 Si cela ne vous semble pas clair, poursuivez votre lecture. Nous allons décomposer la syntaxe.  
@@ -108,7 +108,7 @@ Cela peut cependant être utile lorsque vous souhaitez afficher différents rés
 Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder certaines choses à l’esprit.
 
 * Le filtrage de chaîne de requête ne fonctionne pas avec des URL de type [Publier sur le web](service-publish-to-web.md) ou Power BI Embedded.   
-* Le type de champ doit être une chaîne.
+* Le type de champ doit être un nombre ou une chaîne.
 * Les noms de tableau et de champ ne peuvent pas contenir d’espaces.
 
 ## <a name="next-steps"></a>Étapes suivantes
