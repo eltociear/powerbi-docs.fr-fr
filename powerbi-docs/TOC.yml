@@ -12,7 +12,7 @@
           href: service-free-vs-pro.md
         - name: "Sources de données pour Power\_BI"
           href: service-get-data.md
-        - name: "Nouvelle expérience de navigation Power\_BI"
+        - name: Découverte de Power BI - expérience de navigation
           href: service-the-new-power-bi-experience.md
         - name: "10\_conseils pour obtenir de l’aide"
           href: service-tips-for-finding-help.md
@@ -68,7 +68,7 @@
           href: sample-retail-analysis.md
     - name: Tâches communes
       items:
-        - name: "Ajouter des tableaux de bord aux favoris dans Power\_BI"
+        - name: 'Tableaux de bord, rapports et applications favoris dans Power BI'
           href: service-dashboard-favorite.md
         - name: 'Imprimer un tableau de bord, imprimer une vignette de tableau de bord, imprimer une page de rapport'
           href: service-print.md
@@ -228,7 +228,7 @@
           href: service-pin-tile-to-another-dashboard.md
         - name: "Épingler une vignette à un tableau de bord Power\_BI à partir d’Excel"
           href: service-dashboard-pin-tile-from-excel.md
-        - name: "Éditeur Power\_BI pour Excel"
+        - name: "Power\_BI Publisher pour Excel"
           href: publisher-for-excel.md
         - name: "Épingler une vignette à un tableau de bord Power\_BI à partir de la zone de questions Q&R"
           href: service-dashboard-pin-tile-from-q-and-a.md
@@ -350,14 +350,10 @@
           href: service-analyze-in-excel.md
         - name: Modifier l’interaction des éléments visuels dans un rapport
           href: service-reports-visual-interactions.md
-        - name: "Ouvrir un rapport Power\_BI en mode Lecture"
-          href: service-report-open-in-reading-view.md
-        - name: "Passer du mode Lecture au mode Edition dans Power\_BI"
+        - name: Ouvrir un rapport Power BI en mode lecture ou en mode Edition
           href: service-reading-view-and-editing-view.md
         - name: "Interagir avec un rapport en mode Edition dans Power\_BI"
           href: service-interact-with-a-report-in-editing-view.md
-        - name: "Interagir avec un rapport en mode Lecture dans Power\_BI"
-          href: service-interact-with-a-report-in-reading-view.md
         - name: "Trucs et astuces pour créer des rapports dans le service Power\_BI"
           href: power-bi-reports-tips-and-tricks-for-creating.md
         - name: Volet Analytique
@@ -784,7 +780,7 @@
           href: desktop-add-custom-column.md
         - name: "Créer des éléments visuels réactifs dans Power\_BI"
           href: desktop-create-responsive-visuals.md
-        - name: Utilisation des étiquettes de hiérarchie dans Power BI Desktop (version préliminaire)
+        - name: Utilisation des étiquettes de hiérarchie incluses dans Power BI Desktop (préversion)
           href: desktop-inline-hierarchy-labels.md
         - name: Utiliser un sélecteur de plages numériques
           href: desktop-slicer-numeric-range.md
@@ -1004,10 +1000,8 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848276'
         - name: Dépôt Git de visuels personnalisés
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
-    - name: ressources.
+    - name: Ressources
       items:
-        - name: Apiary
-          href: 'https://go.microsoft.com/fwlink/?linkid=848278'
         - name: Démonstration de code incorporé JavaScript
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Exemples
@@ -1052,6 +1046,8 @@
           href: report-server/data-sources.md
         - name: Se connecter à la source de données
           href: report-server/connect-data-sources.md
+        - name: 'Accès à des Jeux de données partagés en tant que flux OData '
+          href: report-server/access-dataset-odata.md
         - name: Configurer une actualisation planifiée
           href: report-server/configure-scheduled-refresh.md
         - name: Ajouter des commentaires à un rapport
@@ -1112,7 +1108,7 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848722'
         - name: Extensions
           href: 'https://go.microsoft.com/fwlink/?linkid=848723'
-- name: ressources.
+- name: Ressources
   items:
     - name: "Vidéos Power\_BI"
       href: videos.md
