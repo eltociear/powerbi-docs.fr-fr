@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/10/2018
 ms.author: mihart
-ms.openlocfilehash: e2f1ca5abf05c92e76497d7b50600e6ef12e03fc
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+ms.openlocfilehash: 2994e61407bd858792e73019472cd6752abb401d
+ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Supprimer pratiquement tout élément dans le service Power BI
 Cet article explique comment supprimer un tableau de bord, un rapport, un classeur, un jeu de données, une application, une visualisation ou un espace de travail dans le service Power BI.
@@ -141,7 +141,7 @@ La suppression d’une application de la page de votre liste d’applications n�
 Cet article a expliqué comment supprimer les principaux blocs de construction principaux du service Power BI. Mais il existe d’autres éléments que vous pouvez supprimer dans Power BI.  
 
 * [Supprimer votre tableau de bord par défaut](service-dashboard-featured.md#change-the-featured-dashboard)
-* [Retirer un tableau de bord des favoris](service-dashboard-favorite.md#unfavorite-a-dashboard)
+* [Retirer un tableau de bord des favoris](service-dashboard-favorite.md)
 * [Supprimer une page de rapport](service-delete.md)
 * [Supprimer une vignette de tableau de bord](service-dashboard-edit-tile.md)
 * [Supprimer une visualisation de rapport](service-delete.md)
