@@ -266,26 +266,36 @@
           href: service-data-classification.md
     - name: Posez des questions sur vos données
       items:
-        - name: "Q&R dans Power\_BI"
-          href: service-q-and-a.md
-        - name: "Utilisation de Q&R de Power\_BI"
-          href: service-how-to-q-and-a.md
-        - name: "Didacticiel\_: Questions et réponses sur la prise en main de Power BI"
-          href: power-bi-visualization-introduction-to-q-and-a.md
-        - name: "Utilisation des Q&R avec les données Power\_BI\_Gateway — Enterprise (version préliminaire)"
-          href: service-q-and-a-direct-query.md
-        - name: "Optimiser vos données avec Q&R dans Power\_BI"
-          href: service-prepare-data-for-q-and-a.md
-        - name: "Présentation de Cortana pour Power\_BI"
-          href: service-cortana-intro.md
-        - name: "Activer Cortana pour Power\_BI"
-          href: service-cortana-enable.md
-        - name: "Création de questions exemplaires pour les Q&R de Power\_BI"
-          href: service-q-and-a-create-featured-questions.md
-        - name: "Conseils et astuces pour poser des questions avec Questions et réponses dans Power\_BI"
-          href: service-q-and-a-tips.md
-        - name: Résoudre les problèmes avec Cortana
-          href: service-cortana-troubleshoot.md
+        - name: Vue d’ensemble
+          items:
+            - name: "Q&R dans Power\_BI"
+              href: power-bi-q-and-a.md
+            - name: "Présentation de Cortana pour Power\_BI"
+              href: service-cortana-intro.md
+        - name: Démarrage rapide
+          items:
+            - name: Bien démarrer avec Questions et réponses Power BI
+              href: power-bi-visualization-introduction-to-q-and-a.md
+        - name: Didacticiels
+          items:
+            - name: Utiliser Questions et réponses pour créer des visualisations et générer des rapports
+              href: power-bi-tutorial-q-and-a.md
+        - name: Guides pratiques
+          items:
+            - name: "Utilisation de Questions et réponses avec les données Power\_BI\_Gateway — Enterprise (préversion)"
+              href: service-q-and-a-direct-query.md
+            - name: "Optimiser vos données avec Questions et réponses dans Power\_BI"
+              href: service-prepare-data-for-q-and-a.md
+            - name: "Activer Cortana pour Power\_BI"
+              href: service-cortana-enable.md
+            - name: "Créer des questions à proposer dans Questions et réponses Power\_BI"
+              href: service-q-and-a-create-featured-questions.md
+        - name: Ressources
+          items:
+            - name: "Conseils et astuces pour poser des questions avec Questions et réponses dans Power\_BI"
+              href: service-q-and-a-tips.md
+            - name: Résoudre les problèmes avec Cortana
+              href: service-cortana-troubleshoot.md
     - name: Partager votre travail
       items:
         - name: "Comment partager des tableaux de bord, rapports et vignettes\_?"
