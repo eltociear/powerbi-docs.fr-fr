@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/19/2017
+ms.date: 01/11/2018
 ms.author: asaxton
-ms.openlocfilehash: 76435200df843acc4ba60ebab09633aa8f5c258d
-ms.sourcegitcommit: a658b1c936e382f46a19eeb9cc26016cd7b1d756
+ms.openlocfilehash: e614273c21dd5c222816700f0d42888e661ba1e0
+ms.sourcegitcommit: e623f8e5f715bd40a049b6448ca57b80de998cb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Incorporer vos tableaux de bord, rapports et vignettes Power BI
 
@@ -133,10 +133,13 @@ Les utilisateurs de la version gratuite peuvent consommer du contenu incorporé 
 
 ### <a name="embedding-for-your-customers"></a>Incorporation pour vos clients
 
-Si l’incorporation s’adresse à vos clients, vous devez effectuer les opérations suivantes.
+Si l’incorporation s’adresse à vos clients, effectuez les opérations suivantes.
 
 * Si vous utilisez un locataire distinct pour le développement, vérifiez que vos espaces de travail d’applications ainsi que vos tableaux de bord et rapports sont disponibles dans votre environnement de production. Vérifiez que vous avez créé l’application dans Azure AD pour votre locataire de production et attribué les autorisations d’application appropriées comme indiqué à l’étape 1.
 * Achetez une capacité adaptée à vos besoins. Vous pouvez utiliser le tableau ci-dessous pour identifier la référence SKU de la capacité Power BI Embedded dont vous avez besoin. Pour plus d’informations, consultez le [livre blanc Planification d’une capacité d’analytique incorporée](https://aka.ms/pbiewhitepaper). Lorsque vous êtes prêt, vous pouvez procéder à l’achat à partir du [portail Microsoft Azure](https://portal.azure.com). Pour plus d’informations sur la façon de créer une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le portail Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+
+> [!IMPORTANT]
+> Étant donné que les jetons incorporés sont uniquement destinés aux tests de développement, le nombre de jetons incorporés qu’un compte principal Power BI peut générer est limité. Vous [devez acheter une capacité](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée.
 
 | Nœud de capacité | Nombre total de cœurs<br/>*(Serveur principal + serveur frontal)* | Cœurs du serveur principal | Cœurs du serveur frontal | Limites de connexions actives/DirectQuery | Rendus de pages au maximum aux heures de pointe |
 | --- | --- | --- | --- | --- | --- |
@@ -152,6 +155,8 @@ Si l’incorporation s’adresse à vos clients, vous devez effectuer les opéra
     ![Affecter un espace de travail à une capacité](media/embedding-content/powerbi-embedded-premium-capacity.png)
 
 * Déployez votre application mise à jour en production, puis commencez à incorporer des rapports et tableaux de bord Power BI.
+
+
 
 ## <a name="admin-settings"></a>Paramètres d’administrateur
 

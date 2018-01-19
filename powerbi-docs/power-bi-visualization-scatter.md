@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 17073390cf19b742730712a8d39a353c7d541cd6
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 44c248d1a99a10c69b3fb7c78e68320fdc5cd2b2
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Nuages de points et graphiques en bulles dans Power BI (didacticiel)
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Ces derniers peuvent être distribués uniformément ou non sur l’axe horizontal, en fonction des données.
@@ -75,6 +75,14 @@ Nous disposons désormais d’un nuage de points qui trace le pourcentage d’é
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 3. Si vous le souhaitez, [mettez en forme les couleurs, étiquettes, titres, arrière-plan, etc. de la visualisation](service-getting-started-with-color-formatting-and-axis-properties.md).
+
+## <a name="accessibility"></a>Accessibilité
+
+Vous pouvez rendre votre nuage de points ou graphique en bulles plus accessible aux personnes handicapées grâce à des *formes de marqueur*. 
+
+Pour sélectionner la forme de marqueur, sélectionnez la section **Format** dans le volet **Visualisations**, développez la section **Formes**, puis sélectionnez une forme de marqueur.
+
+![Forme de marqueur](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 ### <a name="your-scatter-chart-has-only-one-data-point"></a>**Votre nuage de points a un seul point de données**

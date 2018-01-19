@@ -1,6 +1,6 @@
 ---
-title: Favoris dans le service Power BI (tableaux de bord)
-description: "Documentation sur la manière de définir des tableaux de bord en tant que favoris dans le service Power BI"
+title: Favoris dans le service Power BI (tableaux de bord, rapports, applications)
+description: "Documentation sur la manière de définir des tableaux de bord, rapports et applications en tant que favoris dans le service Power BI"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,16 +16,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/10/2018
 ms.author: mihart
-ms.openlocfilehash: 4c4c31f6289f6b3d12b619b7c6c297d861177fbf
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+ms.openlocfilehash: 79a47126c43f61d3495a948bf1a30f3d918429f3
+ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/11/2018
 ---
-# <a name="favorite-dashboards-in-the-power-bi-service"></a>Tableaux de bord favoris dans le service Power BI
-Lorsque vous mettez un tableau de bord en *favori*, vous pouvez y accéder à partir de tous vos espaces de travail.  Les favoris sont généralement ceux que vous consultez le plus souvent.
+# <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Tableaux de bord, rapports et applications favoris dans le service Power BI
+Quand vous ajoutez du contenu aux *favoris*, vous pouvez y accéder à partir de tous vos espaces de travail.  Les favoris correspondent généralement aux contenus que vous consultez le plus souvent.
 
 > [!NOTE]
 > Ce didacticiel s’applique au service Power BI, mais pas à Power BI Desktop.
@@ -34,40 +34,50 @@ Lorsque vous mettez un tableau de bord en *favori*, vous pouvez y accéder à pa
 
 Vous pouvez également sélectionner un seul tableau de bord comme [Tableau de bord par défaut](service-dashboard-featured.md) dans le service Power BI.
 
-## <a name="add-a-dashboard-as-a-favorite"></a>Ajouter un tableau de bord en tant que *favori*
+## <a name="add-a-dashboard-or-report-as-a-favorite"></a>Ajouter un tableau de bord ou un rapport aux *favoris*
 Regardez Amanda ajouter des Favoris à son espace de travail, puis suivez les instructions détaillées sous la vidéo pour essayer vous-même.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 
-1. Ouvrez un tableau de bord que vous utilisez souvent. Même des tableaux de bord partagés avec vous peuvent être des *favoris*.
-2. Dans l’angle supérieur droit du service Power BI, sélectionnez **Favori** ou l’icône Étoile ![](media/service-dashboard-favorite/power-bi-favorite-icon.png).
+1. Ouvrez un tableau de bord ou un rapport que vous utilisez souvent. Chaque contenu partagé avec vous peut être un *favori*.
+2. Dans l’angle supérieur droit du service Power BI, sélectionnez **Favori** ou l’icône en forme d’étoile ![](media/service-dashboard-favorite/power-bi-favorite-icon.png).
    
    ![](media/service-dashboard-favorite/powerbi-dashboard-favorite.png)
    
-   Vous pouvez également définir un tableau de bord comme favori à partir de l’onglet **Tableaux de bord** votre espace de travail.
+   Vous pouvez également définir un tableau de bord ou un rapport comme favori à partir de l’onglet d’affichage de contenu **Tableaux de bord** ou **Rapports** de votre espace de travail.
    
    ![](media/service-dashboard-favorite/power-bi-dashboard-favorite.png)
 
+## <a name="add-an-app-as-a-favorite"></a>Ajouter une application aux *favoris*
+
+1. Dans le volet de navigation gauche, sélectionnez **Applications**.
+
+  ![](media/service-dashboard-favorite/power-bi-favorite-apps.png)
+
+2. Pointez sur une application pour afficher plus de détails.  Sélectionnez l’icône en forme d’étoile ![](media/service-dashboard-favorite/power-bi-favorite-icon.png) pour l’ajouter aux favoris.
+   
+   ![](media/service-dashboard-favorite/power-bi-favorite-app.png)
+
 ## <a name="working-with-favorites"></a>Utilisation de *Favoris*
-1. Pour accéder aux favoris, à partir d’un espace de travail, cliquez sur la flèche à droite de **Favoris**.  Vous pouvez sélectionner ici un tableau de bord favori pour l’ouvrir. Seuls cinq favoris sont répertoriés (par ordre alphabétique). Si vous avez plus de cinq favoris, sélectionnez **Afficher tout** pour ouvrir l’écran Favoris (voir point 2 ci-dessous). 
+1. Pour accéder aux favoris, à partir d’un espace de travail, cliquez sur la flèche à droite de **Favoris**.  Vous pouvez sélectionner ici un favori pour l’ouvrir. Seuls cinq favoris sont répertoriés (par ordre alphabétique). Si vous en avez plus de cinq, sélectionnez **Afficher tout** pour ouvrir l’écran Favoris (voir le point 2 ci-dessous). 
    
    ![](media/service-dashboard-favorite/power-bi-favorite-flyout-new.png)
-2. Pour afficher **tous** les tableaux de bord ajoutés aux favoris, dans le volet de navigation de gauche, sélectionnez **Favoris** ou l’icône Favoris ![](media/service-dashboard-favorite/power-bi-favorites-icon.png).  
+2. Pour afficher **tout** le contenu que vous avez ajouté aux favoris, dans le volet de navigation de gauche, sélectionnez **Favoris** ou l’icône Favoris ![](media/service-dashboard-favorite/power-bi-favorites-icon.png).  
    
     ![](media/service-dashboard-favorite/power-bi-favorites-screen.png)
    
-   Vous pouvez alors sélectionner un tableau de bord pour l’ouvrir, ou partager un tableau de bord avec vos collègues.
+   À ce stade, vous pouvez effectuer une action : ouvrir, identifier les propriétaires et même partager avec vos collègues.
 
-## <a name="unfavorite-a-dashboard"></a>Retirer un tableau de bord des favoris
-Vous n’utilisez plus un tableau de bord aussi souvent qu’avant ?  Vous pouvez le retirer des favoris. Lorsque vous supprimez un tableau de bord de la liste des Favoris, il est retiré de vos favoris mais pas de Power BI.
+## <a name="unfavorite-content"></a>Retirer du contenu des favoris
+Vous n’utilisez plus souvent un rapport ?  Vous pouvez le retirer des favoris. Quand vous retirez du contenu de la liste des favoris, il est retiré de vos favoris mais pas de Power BI.
 
 1. Dans le volet de navigation de gauche, sélectionnez **Favoris** pour ouvrir l’écran **Favoris**.
    
    ![](media/service-dashboard-favorite/power-bi-unfavorites-screen.png)
-2. Sélectionnez l’étoile jaune en regard du tableau de bord à retirer des favoris.
+2. Sélectionnez l’étoile jaune en regard du contenu à retirer des favoris.
 
-> **REMARQUE** : vous pouvez également retirer un tableau de bord des favoris à partir du tableau de bord lui-même. Dans l’angle supérieur droit du tableau de bord, vous voyez une étoile jaune et l’option **Retirer des favoris**. Sélectionnez l’une des deux pour retirer ce tableau de bord de votre liste de favoris. 
+> **REMARQUE** : vous pouvez également retirer un tableau de bord, un rapport ou une application des favoris. Pour cela, il vous suffit d’ouvrir l’élément en question et de désélectionner l’icône jaune.   
 > 
 > 
 

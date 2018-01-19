@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
+ms.date: 01/16/2018
 ms.author: maggies
-ms.openlocfilehash: 27ead0a3104693aff4a6fc3c2641c207ad44dc09
-ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
+ms.openlocfilehash: 89c376451199aec0a6f464f3298df44d468f37d2
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -53,12 +53,7 @@ Les *espaces de travail d’application* étant les emplacements où vous créez
 
 Vous pouvez ajouter des collègues à ces espaces de travail en tant que membres ou administrateurs. Tous les membres de l’espace de travail d’application et les administrateurs doivent disposer de licences Power BI Pro. Dans l’espace de travail, tous les membres peuvent collaborer sur des tableaux de bord, rapports et autres articles que vous prévoyez de publier pour un public plus large, voire pour votre organisation toute entière. 
 
-Une fois le contenu prêt, vous publiez l’application. Vous pouvez envoyer un lien direct à un public plus large, ou les destinataires de votre application peuvent trouver celle-ci sous l’onglet Applications en accédant à **Télécharger et explorer d’autres applications d’AppSource**. Ces personnes ne peuvent pas modifier le contenu de l’application, mais peuvent interagir avec celle-ci dans le service Power BI ou dans l’une des applications mobiles en filtrant, en mettant en surbrillance et triant elles-mêmes les données. 
-
-### <a name="how-are-app-workspaces-different-from-group-workspaces"></a>En quoi les espaces de travail d’application diffèrent-ils des espaces de travail de groupe ?
-Tous les espaces de travail de groupe existants peuvent servir d’espaces de travail d’application, et vous pouvez publier des applications à partir de ces espaces de travail. Voici l’une des différences entre les espaces de travail d’application et les espaces de travail de groupe : vous créez un espace de travail d’application en tant qu’emplacement dédié à la création et à l’hébergement d’une application spécifique. Il existe une relation un-à-un entre l’application et le contenu de l’espace de travail de l’application. Tous le contenu de l’espace de travail de l’application figure dans celle-ci lorsque vous la publiez. 
-
-À présent que vous comprenez ce que sont les applications et les espaces de travail d’application, commençons à créer et à publier une application. 
+Lorsque le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous publiez l’application. Vous pouvez envoyer un lien direct à un public plus large, ou les destinataires de votre application peuvent trouver celle-ci sous l’onglet Applications en accédant à **Télécharger et explorer d’autres applications d’AppSource**. Ces personnes ne peuvent pas modifier le contenu de l’application, mais peuvent interagir avec celle-ci dans le service Power BI ou dans l’une des applications mobiles en filtrant, en mettant en surbrillance et triant elles-mêmes les données. 
 
 ## <a name="create-an-app-workspace"></a>Créer un espace de travail d’application
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]

@@ -15,18 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/16/2018
 ms.author: davidi
-ms.openlocfilehash: 70cb015b0f5c4aa952c33c6dd94da5292f9678d7
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 258962cbc9ea60b31676a1bcfb10f7906c6e0f74
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
 Dans Power BI Desktop, vous pouvez créer un élément visuel **Carte de formes** pour afficher des comparaisons relatives de régions sur une carte en appliquant différentes couleurs aux différentes régions. Contrairement à l’élément visuel **Carte**, l’élément visuel **Carte de formes** ne peut pas afficher d’emplacements géographiques précis de points de données sur une carte. Son principal objectif est en effet d’afficher des comparaisons relatives de régions sur une carte en affectant des couleurs différentes à ces dernières.
 
-Les éléments visuels **Carte de formes** sont basés sur les cartes ESRI/TopoJSON, qui sont capables d’utiliser des cartes personnalisées que vous pouvez créer, comme des cartes géographiques, des plans de disposition des places, des plans et bien plus encore. La possibilité d’utiliser des cartes personnalisées n’est pas disponible dans cette version préliminaire de l’élément visuel **Carte de formes**. Les cartes personnalisées seront activées une fois que cette fonctionnalité ne sera plus en version préliminaire, ce qui est prévu avec la prochaine mise à jour mensuelle de Power BI Desktop.
+Les éléments visuels **Carte de formes** sont basés sur les cartes ESRI/TopoJSON, qui sont capables d’utiliser des cartes personnalisées que vous pouvez créer, comme des cartes géographiques, des plans de disposition des places, des plans et bien plus encore. Vous ne pouvez pas utiliser de cartes personnalisées dans cette préversion de **Carte de formes**.
 
 ## <a name="creating-shape-maps"></a>Créer des cartes de formes
 Vous pouvez tester le contrôle **Carte de formes** avec les cartes fournies avec cette version préliminaire. Vous pouvez également utiliser votre propre carte personnalisée tant qu’elle répond aux exigences décrites dans la section suivante intitulée **Utiliser des cartes personnalisées**.
@@ -95,8 +95,9 @@ Vous pouvez entrer une nouvelle colonne tout simplement en tapant un nouveau nom
 Cette version préliminaire de l’élément visuel **Carte de formes** est associée à un certain nombre de considérations et exigences :
 
 * L’élément visuel **Carte de formes** est en version préliminaire et doit être activé dans Power BI Desktop. Pour activer l’élément visuel **Carte de formes**, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis cochez la case **Carte de formes**.
-* Actuellement, le compartiment **Valeurs** doit également être défini pour que la classification **Légende** puisse fonctionner correctement. Nous prévoyons d’améliorer ce comportement dans la version finale de l’élément visuel **Carte de formes**.
-* L’interface utilisateur de la version commerciale de l’élément visuel **Carte de formes** indiquera les codes cartographiques de la carte actuellement sélectionnée. Dans cette version préliminaire, vous pouvez référencer les codes cartographiques de région des tables que vous trouverez dans la section **Codes de région** de cet article.
+* Actuellement, le compartiment **Valeurs** doit également être défini pour que la classification **Légende** puisse fonctionner correctement.
+* L’interface utilisateur de la version finale de **Carte de formes** indiquera les codes cartographiques de la carte actuellement sélectionnée (la date de sortie de la version finale n’est pas encore fixée, et **Shape Map** est toujours en préversion). Dans cette préversion, vous pouvez référencer les codes cartographiques de région des tables que vous trouverez dans la section **Codes de région** de cet article.
+* Le visuel **Carte de formes** pourra tracer au maximum 1 000 points de données.
 
 ## <a name="region-keys"></a>Codes de région
 Utilisez les **codes de région** suivants dans cette version préliminaire pour tester l’élément visuel **Carte de formes**.

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 01/16/2018
 ms.author: maggies
-ms.openlocfilehash: b2df6825232f51a53bada3676faf598d6bc5d70b
-ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
+ms.openlocfilehash: 9ed87e17d617e7492287f3f0d0c54da1c21b3a53
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -31,6 +31,11 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Nouveautés dans le service Power BI](service-whats-new.md)  
 
 ## <a name="december-2017"></a>Décembre 2017
+
+### <a name="improved-security-management"></a>Gestion améliorée de la sécurité 
+
+L’accès conditionnel (CA) et la gestion des appareils mobiles (MDM) Microsoft Intune sont désormais pris en charge sur les appareils Android pour mieux sécuriser les données de votre organisation. C’est déjà disponible sur iOS.
+
 ### <a name="improved-permission-management"></a>Gestion améliorée des autorisations
 
 Nous avons apporté des changements qui permettent de gérer avec plus de précision les autorisations des utilisateurs pour les jeux de données, les tableaux de bord et les rapports.
