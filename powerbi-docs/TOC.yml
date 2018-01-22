@@ -282,13 +282,13 @@
               href: power-bi-tutorial-q-and-a.md
         - name: Guides pratiques
           items:
-            - name: "Utilisation de Questions et réponses avec les données Power\_BI\_Gateway — Enterprise (préversion)"
+            - name: "Utilisation des Q&R avec les données Power\_BI\_Gateway — Enterprise (version préliminaire)"
               href: service-q-and-a-direct-query.md
-            - name: "Optimiser vos données avec Questions et réponses dans Power\_BI"
+            - name: "Optimiser vos données avec Q&R dans Power\_BI"
               href: service-prepare-data-for-q-and-a.md
             - name: "Activer Cortana pour Power\_BI"
               href: service-cortana-enable.md
-            - name: "Créer des questions à proposer dans Questions et réponses Power\_BI"
+            - name: "Création de questions exemplaires pour les Q&R de Power\_BI"
               href: service-q-and-a-create-featured-questions.md
         - name: Ressources
           items:
@@ -524,6 +524,8 @@
           href: service-gateway-onprem.md
         - name: Informations approfondies sur la passerelle de données locale
           href: service-gateway-onprem-indepth.md
+        - name: Clusters à haute disponibilité pour la passerelle de données locale
+          href: service-gateway-high-availability-clusters.md
         - name: FAQ Passerelle de données locale
           href: service-gateway-onprem-faq.md
         - name: Passerelle de données locale (mode personnel)
@@ -766,6 +768,10 @@
           href: desktop-quick-measures.md
         - name: Utiliser les paramètres Scénarios
           href: desktop-what-if.md
+        - name: Utiliser l’extraction
+          href: desktop-drillthrough.md
+        - name: Utiliser un segment et un filtre de date relative
+          href: desktop-slicer-filter-date-range.md
         - name: "Accessibilité dans les rapports Power\_BI"
           href: desktop-accessibility.md
         - name: Utiliser le regroupement et le compartimentage
@@ -774,7 +780,7 @@
           href: desktop-ribbon-charts.md
         - name: Utiliser le nouveau visuel Matrice
           href: desktop-matrix-visual.md
-        - name: "Créer des éléments visuels Power\_BI avec\_R"
+        - name: "Créer des visuels Power\_BI avec\_R"
           href: desktop-r-visuals.md
         - name: Utiliser des visuels personnalisés optimisés pour R
           href: desktop-r-powered-custom-visuals.md
