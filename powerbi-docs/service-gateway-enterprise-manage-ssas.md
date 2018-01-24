@@ -192,7 +192,7 @@ Quand vous sélectionnez un élément dans la liste, vous pouvez choisir de modi
 
 ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names-entry-selected.png)
 
-### <a name="using-wildcard-"></a>Utilisation de caractères génériques (*)
+### <a name="using-wildcard-"></a>Utilisation de caractères génériques (\*)
 Vous pouvez utiliser un caractère générique pour votre chaîne **Remplacer (nom d’origine)**. Il peut être utilisé seul uniquement, et non avec une autre partie de la chaîne. Cela vous permet de prendre tous les utilisateurs et de transmettre une valeur unique à la source de données. Cela est utile lorsque vous souhaitez que tous les utilisateurs de votre organisation utilisent le même utilisateur dans votre environnement local.
 
 ### <a name="test-a-mapping-rule"></a>Tester une règle de mappage
