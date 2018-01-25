@@ -298,7 +298,7 @@
               href: service-cortana-troubleshoot.md
     - name: Partager votre travail
       items:
-        - name: "Comment partager des tableaux de bord, rapports et vignettes\_?"
+        - name: 'Comment partager des tableaux de bord, rapports et vignettes et collaborer ?'
           href: service-how-to-collaborate-distribute-dashboards-reports.md
         - name: Installer et utiliser des applications avec des tableaux de bord et des rapports
           href: service-install-use-apps.md
@@ -308,9 +308,9 @@
           href: service-organizational-content-pack-introduction.md
         - name: Créer et publier un pack de contenu d’organisation (didacticiel)
           href: service-organizational-content-pack-create-and-publish.md
-        - name: Partager un tableau de bord avec des collègues et d’autres personnes
+        - name: Partager des tableaux de bord et rapports
           href: service-share-dashboards.md
-        - name: Partager un rapport avec des collègues
+        - name: Partager un rapport filtré
           href: service-share-reports.md
         - name: "Publier à partir de Power\_BI sur le web"
           href: service-publish-to-web.md
@@ -780,7 +780,7 @@
           href: desktop-ribbon-charts.md
         - name: Utiliser le nouveau visuel Matrice
           href: desktop-matrix-visual.md
-        - name: "Créer des visuels Power\_BI avec\_R"
+        - name: "Créer des éléments visuels Power\_BI avec\_R"
           href: desktop-r-visuals.md
         - name: Utiliser des visuels personnalisés optimisés pour R
           href: desktop-r-powered-custom-visuals.md
