@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: f73a97b84613b12ef5d275de8bb234db08d20d06
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 113d635469130a85486db4bccb555d4aa599f961
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Se connecter à tyGraph avec Power BI
 Visualisez et explorez vos données tyGraph dans Power BI avec le pack de contenu Power BI. Commencez par vous connecter à votre compte tyGraph et à charger le tableau de bord, les rapports et le jeu de données. Le contenu prêt à l’emploi inclut des données, telles que le score MAE (Measure of Active Engagement) et les principaux contributeurs. Personnalisez-le davantage pour mettre en évidence les informations qui vous intéressent le plus.  Les données sont actualisées automatiquement selon une planification que vous définissez.
@@ -57,7 +57,7 @@ Connectez-vous à [tyGraph pour Power BI](https://app.powerbi.com/getdata/servic
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

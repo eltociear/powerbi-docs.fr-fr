@@ -11,13 +11,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/13/2017
+ms.date: 01/13/2018
 ms.author: mihart
-ms.openlocfilehash: d64ab6b9a94171c99eb0956efce89f59b5174d41
-ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
+ms.openlocfilehash: 648880925f343032c24cda612da58ef2fdadcf80
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Trouver et afficher rapidement vos données Power BI à l’aide de Cortana pour Power BI
 Utilisez Cortana sur vos appareils Windows 10 pour obtenir directement des réponses à vos questions métier importantes. En s’intégrant avec Power BI, Cortana peut extraire des informations clés directement à partir de tableaux de bord et de rapports Power BI. Pour cela, il vous suffit de disposer de la version de novembre 2015 ou ultérieure de Windows 10, de Cortana, de Power BI, et d’avoir accès à au moins un jeu de données.
@@ -70,7 +70,7 @@ Si votre tableau de bord comprend un titre de plusieurs mots, Cortana renvoie ce
 ### <a name="cortana-and-reports"></a>Cortana et rapports
  Cortana peut trouver des réponses dans des rapports comportant des [pages conçues spécifiquement pour l’affichage par Cortana](service-cortana-answer-cards.md). Posez simplement des questions utilisant le titre ou des mots clés d’une de ces pages de rapport spéciales.  
 
-La technologie sous-jacente pour les rapports utilise les [Q&R sur Power BI de Microsoft](service-q-and-a.md).
+La technologie sous-jacente pour les rapports utilise les [Q&R sur Power BI de Microsoft](power-bi-q-and-a.md).
 
 Lorsque vous posez une question dans Cortana, Power BI répond à partir de pages de rapport spécifiquement conçues pour Cortana. Les réponses possibles sont déterminées par Cortana à la volée directement à partir des *cartes de réponse* Cortana déjà créées dans Power BI.  Pour explorer davantage une réponse, ouvrez simplement un résultat dans Power BI.
 

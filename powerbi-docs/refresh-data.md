@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/19/2018
 ms.author: davidi
-ms.openlocfilehash: 053afc2c085a045c3fe0c8ce70a541d132966640
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 647b042d10768f4ecbb3083384efa9000202a11f
+ms.sourcegitcommit: a973bc6adc88507932e7e1535a74208e3842f5c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 L’obtention des données les plus récentes constitue souvent un facteur essentiel à la prise de décisions informées. Vous avez sans doute déjà utilisé la fonctionnalité Obtenir des données de Power BI pour vous connecter à des données et les charger, voire générer des rapports et un tableau de bord. Avant d’aller plus loin, vous devez vous assurer que les données que vous utilisez sont vraiment les plus récentes.
@@ -112,7 +112,7 @@ La possibilité de conserver vos fichiers sur OneDrive ou SharePoint Online, ain
 | La fonctionnalité Obtenir des données (située sur le ruban) permet de se connecter aux données de n’importe quelle source de données en ligne répertoriée et de les interroger. |Non |Oui |Non (voir ci-dessous) |
 | La fonctionnalité Obtenir des données permet de se connecter à une base de données Analysis Services active, et de l’explorer. |Oui |Non |Oui |
 | La fonctionnalité Obtenir des données permet de se connecter à une source de données DirectQuery locale prise en charge, et de l’explorer. |Oui |Non |Oui |
-| La fonctionnalité Obtenir des données permet de se connecter aux données provenant de sources Azure SQL Database, Azure SQL Data Warehouse et Azure HDInsight Spark, et de les interroger. |Oui (toutes les heures) |Non |Non |
+| La fonctionnalité Obtenir des données permet de se connecter aux données provenant de sources Azure SQL Database, Azure SQL Data Warehouse et Azure HDInsight Spark, et de les interroger. |Oui |Oui |Non |
 | La fonctionnalité Obtenir des données permet de se connecter aux données de toute source de données locale répertoriée, à l’exception de HDFS (Hadoop Distributed File System) et de Microsoft Exchange, et de les interroger. |Non |Oui |Oui |
 
 > [!NOTE]

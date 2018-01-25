@@ -17,40 +17,40 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 22d490a58fd522b805d9709a1e697d1d2e89df6c
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 408f41e1a50b895166308fcba129d86f5c05d0e7
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Se connecter à Zuora avec Power BI
-Zuora pour Power BI vous permet de visualiser des données importantes sur votre chiffre d’affaires, votre facturation et vos abonnements. Utilisez le tableau de bord et les rapports par défaut pour analyser les tendances d’utilisation, suivre la facturation et les paiements, et surveiller les revenus réguliers, ou personnalisez-les pour répondre à vos besoins uniques. 
+Zuora pour Power BI vous permet de visualiser des données importantes sur votre chiffre d’affaires, votre facturation et vos abonnements. Utilisez le tableau de bord et les rapports par défaut pour analyser les tendances d’utilisation, suivre la facturation et les paiements, et surveiller les revenus réguliers, ou personnalisez-les pour répondre à vos besoins uniques.
 
 Connectez-vous à [Zuora](https://app.powerbi.com/getdata/services/Zuora) pour Power BI.
 
 ## <a name="how-to-connect"></a>Comment se connecter
 1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.
-   
+
    ![](media/service-connect-to-zuora/getdata.png)
 2. Dans la zone **Services** , sélectionnez **Obtenir**.
-   
+
    ![](media/service-connect-to-zuora/services.png)
 3. Sélectionnez **Zuora** \>  **Obtenir**.
-   
+
    ![](media/service-connect-to-zuora/zuora.png)
-4. Spécifiez l’URL de Zuora. Consultez les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
-   
+4. Spécifiez l’URL de Zuora (en général, https://www.zuora.com). (en général, https://www.zuora.com). Consultez les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
+
    ![](media/service-connect-to-zuora/params.png)
 5. Pour **Méthode d’authentification**, sélectionnez **Basic** et indiquez vos nom d’utilisateur et mot de passe (en respectant la casse), puis sélectionnez **Se connecter**.
-   
+
     ![](media/service-connect-to-zuora/creds.png)
 6. Après l’approbation, le processus d’importation démarre automatiquement. Une fois terminé, de nouveaux tableau de bord, rapport et modèle apparaîtront dans le volet de navigation. Sélectionnez le tableau de bord pour afficher vos données importées.
-   
+
      ![](media/service-connect-to-zuora/dashboard.png)
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
@@ -111,4 +111,3 @@ Le pack de contenu Zuora extrait différents aspects de votre compte Zuora. Si v
 [Prise en main de Power BI](service-get-started.md)
 
 [Obtenir des données dans Power BI](service-get-data.md)
-

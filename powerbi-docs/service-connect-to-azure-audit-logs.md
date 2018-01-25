@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: cb52b8dc6aefc199ef09946bf8b58c98171c5aba
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 9a00183a81e549f873fab53807072b1beeaec7c2
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Se connecter aux journaux d’audit Azure avec Power BI
 Avec le pack de contenu Journaux d’audit Azure, vous pouvez analyser et visualiser les informations stockées dans les journaux d’audit. Power BI récupère vos données, génère un tableau de bord par défaut et crée des rapports basés sur ces données.
@@ -53,7 +53,7 @@ Avec le pack de contenu Journaux d’audit Azure, vous pouvez analyser et visual
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

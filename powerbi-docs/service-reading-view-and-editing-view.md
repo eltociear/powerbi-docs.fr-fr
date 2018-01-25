@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: e9fda17bd9560ac564cb6b3ae6c34b986a6bc2aa
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: 6948f0e333ba1136f6fda8fa0f62b146cefdd710
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Modes Lecture et Édition dans les rapports du service Power BI
 Dans le service Power BI (mais pas dans Power BI Desktop), il existe deux modes d’utilisation et d’affichage des rapports : le mode Lecture et le mode Édition. Le mode Lecture est disponible pour tous les utilisateurs et il est spécialement conçu pour les *consommateurs* de données tandis que le mode Édition est disponible uniquement pour les propriétaires et les *créateurs* de rapports. 
@@ -56,7 +56,7 @@ Ce graphique ne répertorie pas toutes les fonctionnalités de rapport du servic
 | [Options d’**affichage** des rapports](power-bi-report-display-settings.md) | Oui, à quelques exceptions près. | Oui, tous, y compris le quadrillage, l’alignement et le verrouillage. |
 | [Créer une planification de l’actualisation](refresh-data.md) | Non  | Oui |
 | [S’abonner à un rapport](service-report-subscribe.md) | Oui | Non |
-| [Questions et réponses - Poser des questions dans des rapports](service-q-and-a.md) | Non  | Oui |
+| [Questions et réponses - Poser des questions dans des rapports](power-bi-q-and-a.md) | Non  | Oui |
 | [Afficher les métriques d’utilisation](service-usage-metrics.md) | Oui, sur le canevas de rapport. | Oui, dans la liste des rapports (affichage de contenu) |
 | [Afficher les éléments associés](service-related-content.md) | Oui, sur le canevas de rapport. | Oui, dans la liste des rapports (affichage de contenu) |
 | [Enregistrer un rapport](service-report-save.md) | Oui, mais uniquement à l’aide de **Enregistrer sous**. | Oui |

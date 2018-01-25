@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 01/29/2018
 ms.author: mihart
-ms.openlocfilehash: 91c185a082cebc6a9196e0e86898fe366363f8c2
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 5447b23f7d7dd50bf0d9f9e0cfcc84ea9ad0cc8a
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="funnel-charts-tutorial"></a>Graphiques en entonnoir (didacticiel)
 Un graphique en entonnoir vous permet de mieux visualiser un processus linéaire qui comporte des étapes séquentielles liées entre elles. Par exemple, avec l’entonnoir de ventes Lead \> Qualified Lead \> Prospect \> Contract \> Close (Prospect > Prospect qualifié > Client potentiel > Contrat > Clôture), vous effectuez le suivi des clients tout au long des étapes.  En regardant la forme de l’entonnoir, vous savez instantanément comment se déroule le processus dont vous effectuez le suivi.
@@ -54,7 +54,7 @@ Graphiques en entonnoir :
 ## <a name="create-a-basic-funnel-chart"></a>Créer un graphique en entonnoir simple
 Regardez cette vidéo pour voir comment créer un graphique en entonnoir à l’aide de l’exemple Vente et marketing.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/maTzOJSRB3g" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 À présent, créez votre propre graphique en entonnoir qui montre le nombre d’opportunités identifiées à chaque étape de vente.

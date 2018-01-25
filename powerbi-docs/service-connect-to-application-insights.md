@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 3aa07c88daccc84bcf09af9d31a73a4411a3e541
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: fe4b35a6132a1d36f48e54e1c779454009402340
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Se connecter à Application Insights avec Power BI
 Power BI permet de créer de puissants tableaux de bord personnalisés à partir de la télémétrie [Application Insight](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Envisagez la télémétrie de votre application autrement. Combinez des mesures de plusieurs applications ou services de composants sur un tableau de bord unique. La première version du pack de contenu Power BI pour Application Insights inclut des widgets pour des mesures courantes relatives à l’utilisation, telles que les utilisateurs actifs, l’affichage de page, les sessions, la version du navigateur et du système d’exploitation, et la répartition géographique des utilisateurs sur une carte.
@@ -53,7 +53,7 @@ Connectez-vous au [pack de contenu Application Insights pour Power BI](https:/
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: f942c0551a473140903e2fce19feba641a62e5a2
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 38b9233bda842877b4c8c16df2904f5fe8b1966d
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-microsoft-dynamics-ax-content-pack-with-power-bi"></a>Se connecter au Pack de contenu Microsoft Dynamics AX avec Power BI
 Microsoft Dynamics AX propose trois packs de contenu Power BI destinés aux différents utilisateurs professionnels. Le pack de contenu Performances financières, conçu spécifiquement pour les directeurs financiers, donne accès à des informations sur les résultats financiers de votre organisation. Les pack de contenu Performances des canaux de vente au détail est destiné aux gestionnaires des canaux et se concentre sur les résultats de ventes pour anticiper les tendances et identifier des informations utiles en s’appuyant directement sur les données de Vente au détail et de commerce. La gestion des coûts est désignée pour les directeurs de l’exploitation et financiers, et fournit des détails sur les performances d’exploitation.
@@ -52,7 +52,7 @@ Connectez-vous à [Performances des canaux de vente au détail](https://app.powe
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

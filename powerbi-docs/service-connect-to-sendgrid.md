@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: b4f4a999ed9929366f58f719030490fc56f5364d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: d077bedcc1faa10af79cf3eba258b1dac969ae10
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-sendgrid-with-power-bi"></a>Se connecter à SendGrid avec Power BI
 Le pack de contenu SendGrid pour Power BI vous permet d’extraire des données et des statistiques de votre compte SendGrid. À l’aide du pack de contenu SendGrid, vous pouvez visualiser vos statistiques SendGrid dans un tableau de bord.
@@ -47,7 +47,7 @@ Connectez-vous au [pack de contenu SendGrid](https://app.powerbi.com/getdata/ser
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

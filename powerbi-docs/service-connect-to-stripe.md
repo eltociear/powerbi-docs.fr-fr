@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 8fb0b4a10d4cd1caefb9f3731be1c264e270b943
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 5ed68a3ee64803fa895ad9837fe37351163d09af
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-stripe-with-power-bi"></a>Se connecter à Stripe avec Power BI
 Visualisez et explorez vos données Stripe dans Power BI avec le pack de contenu Power BI. Le pack de contenu Power BI Stripe extrait des données sur vos clients, frais, événements et factures. Les données incluent les dix mille événements et les cinq mille frais les plus récents au cours des 30 derniers jours. Le contenu est actualisé automatiquement une fois par jour selon un planning que vous contrôlez. 
@@ -47,7 +47,7 @@ Connectez-vous au [pack de contenu Stripe pour Power BI](https://app.powerbi.co
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

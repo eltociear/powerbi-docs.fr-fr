@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: be245be7c8f83cb363e93a5d2bc452418f436e37
-ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
+ms.openlocfilehash: 405be2083b26659f1f26ec04e72319ca5981bdf0
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – Concepts de base du service Power BI
 
@@ -120,7 +120,7 @@ Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’appl
 * [Rapports dans les applications mobiles Power BI](mobile-reports-in-the-mobile-apps.md)
 
 ## <a name="dashboards"></a>Tableaux de bord
-Un *tableau de bord* est un élément que vous créez dans **Power BI** ou qu’un collègue crée **dans le service Power BI** et partage avec vous. Il s’agit d’un canevas unique qui contient zéro vignette et widget ou plus. Chaque vignette épinglée à partir d’un rapport ou de la zone [Questions et réponses](service-q-and-a.md) affiche une [visualisation](power-bi-report-visualizations.md) unique qui a été créée à partir d’un jeu de données et épinglée au tableau de bord. Des pages de rapport entières peuvent aussi être épinglées à un tableau de bord sous forme de vignette unique. Il existe plusieurs façons d’ajouter des vignettes à votre tableau de bord, bien trop nombreuses pour être traitées dans cette rubrique de présentation. Pour plus d’informations, consultez [Vignettes de tableau de bord dans Power BI](service-dashboard-tiles.md). 
+Un *tableau de bord* est un élément que vous créez dans **Power BI** ou qu’un collègue crée **dans le service Power BI** et partage avec vous. Il s’agit d’un canevas unique qui contient zéro vignette et widget ou plus. Chaque vignette épinglée à partir d’un rapport ou de la zone [Questions et réponses](power-bi-q-and-a.md) affiche une [visualisation](power-bi-report-visualizations.md) unique qui a été créée à partir d’un jeu de données et épinglée au tableau de bord. Des pages de rapport entières peuvent aussi être épinglées à un tableau de bord sous forme de vignette unique. Il existe plusieurs façons d’ajouter des vignettes à votre tableau de bord, bien trop nombreuses pour être traitées dans cette rubrique de présentation. Pour plus d’informations, consultez [Vignettes de tableau de bord dans Power BI](service-dashboard-tiles.md). 
 
 Pourquoi créer des tableaux de bord ?  En voici quelques raisons :
 
@@ -207,7 +207,7 @@ La fonctionnalité Questions et réponses recherche une réponse dans le ou les 
 
 ![zone Questions et réponses](media/service-basic-concepts/power-bi-qna.png)
 
-Dès que vous commencez à taper votre question, Q&R vous conduit à la page Q&R. Au fur et à mesure que vous tapez du texte, la fonctionnalité Questions et réponses vous aide à poser la bonne question et à trouver la meilleure réponse via des reformulations, la saisie semi-automatique, des suggestions, etc. Quand vous obtenez une visualisation (réponse) qui vous satisfait, épinglez-la à votre tableau de bord. Pour plus d’informations, consultez [Q&R dans Power BI](service-q-and-a.md).
+Dès que vous commencez à taper votre question, Q&R vous conduit à la page Q&R. Au fur et à mesure que vous tapez du texte, la fonctionnalité Questions et réponses vous aide à poser la bonne question et à trouver la meilleure réponse via des reformulations, la saisie semi-automatique, des suggestions, etc. Quand vous obtenez une visualisation (réponse) qui vous satisfait, épinglez-la à votre tableau de bord. Pour plus d’informations, consultez [Q&R dans Power BI](power-bi-q-and-a.md).
 
 ### <a name="4-icon-buttons"></a>4. **Boutons d’icônes** 
 Les icônes figurant dans l’angle supérieur droit sont des ressources vous permettant de définir des configurations, des notifications, d’effectuer des téléchargements, d’obtenir de l’aide et de fournir des commentaires à l’équipe Power BI. Cliquez sur la flèche double pour ouvrir le tableau de bord en mode **Plein écran**.  
@@ -217,7 +217,7 @@ Les icônes figurant dans l’angle supérieur droit sont des ressources vous pe
 ### <a name="5-dashboard-title-navigation-path-aka-breadcrumbs"></a>5. **Titre du tableau de bord** (chemin de navigation, également appelé fil d’Ariane)
 Comme il n’est pas toujours facile de déterminer quels espaces de travail et tableaux de bord sont actifs, Power BI crée un chemin de navigation pour vous.  Dans cet exemple, vous voyez l’espace de travail (Mon espace de travail) et le titre du tableau de bord (Exemple Analyse de la vente au détail).  Si nous avions ouvert un rapport, le nom du rapport serait ajouté à la fin du chemin de navigation.  Chaque section du chemin est un lien hypertexte actif.  
 
-Notez l’icône « C » après le titre du tableau de bord. Ce tableau de bord comporte une [balise de classification de données](/service-data-classification.md) nommée « confidentiel ». La balise identifie la sensibilité et le niveau de sécurité des données. Si votre administrateur a activé la classification des données, chaque tableau de bord a une balise par défaut définie. Les propriétaires de tableaux de bord doivent modifier la balise en fonction du niveau de sécurité approprié de leur tableau de bord.
+Notez l’icône « C » après le titre du tableau de bord. Ce tableau de bord comporte une [balise de classification de données](service-data-classification.md) nommée « confidentiel ». La balise identifie la sensibilité et le niveau de sécurité des données. Si votre administrateur a activé la classification des données, chaque tableau de bord a une balise par défaut définie. Les propriétaires de tableaux de bord doivent modifier la balise en fonction du niveau de sécurité approprié de leur tableau de bord.
 
 ![](media/service-basic-concepts/power-bi-title.png)
 

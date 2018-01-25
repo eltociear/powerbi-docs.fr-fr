@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/19/2018
 ms.author: davidi
-ms.openlocfilehash: b94ede61185e2029e259fd851eaa022737346210
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 6d398a7594cfde65d878cbd317a2669b945da9e6
+ms.sourcegitcommit: a973bc6adc88507932e7e1535a74208e3842f5c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Utiliser le regroupement et le compartimentage dans Power BI Desktop
 Lorsque **Power BI Desktop** crée des visuels, il regroupe les données en segments (ou **groupes**) en fonction des valeurs trouvées dans les données sous-jacentes. Cela suffit généralement, mais vous pouvez affiner la présentation de ces segments. Par exemple, vous pouvez placer trois catégories de produits dans une catégorie supérieure (un *groupe*). Ou vous pouvez afficher les chiffres de ventes dans des compartiments de 1 000 000 de dollars, au lieu de 923 983 dollars divisés de façon égale.
@@ -69,7 +69,7 @@ Lorsque vous sélectionnez **OK**, vous remarquez qu’un nouveau champ s’affi
 
 ![](media/desktop-grouping-and-binning/grouping-binning_7.png)
 
-Pour voir le **compartimentage** en action, regardez cette [vidéo](https://youtu.be/UXEYSvgvMaQ?t=12m17s).
+Pour voir le **compartimentage** en action, regardez cette [vidéo](https://www.youtube.com/watch?v=BRvdZSfO0DY).
 
 Voici tout ce que vous deviez savoir sur l’utilisation du **regroupement** et du **compartimentage** pour vous assurer que les visuels de vos rapports affichent vos données uniquement comme vous le souhaitez.
 

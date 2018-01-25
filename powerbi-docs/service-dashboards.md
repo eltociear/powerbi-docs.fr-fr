@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/31/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: 81f7b4a68b66a2bfbdf285007ff4ff636c326a6c
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 800808a8c09166b8a5b1389b9a54fb57cfa13b12
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="dashboards-in-power-bi-service"></a>Tableaux de bord dans le service Power BI
 
@@ -82,7 +82,7 @@ Power BI Pro est nécessaire pour partager un tableau de bord et afficher un ta
 * Apprenez-en plus sur les [vignettes du tableau de bord](service-dashboard-tiles.md) et ce qui se produit lorsque vous sélectionnez une.
 * Vous n’aimez pas l’aspect d’un tableau de bord ?  Vous pouvez [redimensionner, déplacer et renommer les vignettes](service-dashboard-edit-tile.md).
 * Si vous souhaitez effectuer le suivi d’une vignette du tableau de bord et recevoir un e-mail lorsqu’elle atteint un certain seuil ? [Créer des alertes sur les vignettes](service-set-data-alerts.md).
-* Amusez-vous en posant des questions à votre tableau de bord. Découvrez comment utiliser [Power BI Q&A](service-how-to-q-and-a.md) pour poser une question concernant vos données et obtenir la réponse sous la forme d’une visualisation.
+* Amusez-vous en posant des questions à votre tableau de bord. Découvrez comment utiliser [Power BI Q&A](power-bi-tutorial-q-and-a.md) pour poser une question concernant vos données et obtenir la réponse sous la forme d’une visualisation.
 
 > [!TIP]
 > Si vous n’avez pas trouvé pas ce que vous cherchiez ici, utilisez la table des matières sur la gauche.

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 3327c193828dcdc28c2dd5b93c56615fdb367c70
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: aec56a34194d9ed6217384d8d05cbe2ce64080b2
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-projectplace-by-planview-with-power-bi"></a>Se connecter à Projectplace by Planview avec Power BI
 Le pack de contenu Projectplace by Planview vous permet de visualiser les données de votre projet collaboratif de manière entièrement nouvelle dans Power BI. Utilisez vos informations de connexion Projectplace pour afficher de façon interactive les statistiques clés du projet, découvrir qui sont les membres de votre équipe les plus productifs et actifs, et identifier des cartes et activités à risque dans des projets de votre compte Projectplace. Vous pouvez également étendre le tableau de bord et les rapports prêts à l’emploi pour obtenir les informations les plus importantes pour vous.
@@ -55,7 +55,7 @@ Le pack de contenu Projectplace by Planview vous permet de visualiser les donné
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

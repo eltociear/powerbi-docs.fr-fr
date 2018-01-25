@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 4a87beb774521d935340f2b52ecd1860a5c25246
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 23bfef9442aa334dd7b141fd470ab9176a17f91e
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-webtrends-with-power-bi"></a>Se connecter à Webtrends avec Power BI
 Le pack de contenu Webtrends pour Power BI inclut diverses métriques prêtes à l’emploi telles que le nombre total des visites et des vues de page par source de trafic. La visualisation de vos données Webtrends dans Power BI démarre par la connexion à votre compte Webtrends. Vous pouvez utiliser le tableau de bord et les rapports fournis ou les personnaliser pour mettre en avant les informations qui vous intéressent le plus.  Les données sont actualisées automatiquement une fois par jour.
@@ -50,7 +50,7 @@ Connectez-vous au [pack de contenu Webtrends pour Power BI](https://app.powerbi
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

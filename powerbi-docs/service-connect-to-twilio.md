@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 344ed348f087ead10a8fa4a2c297909e8da628f4
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: c9a257ad413ff659ab763b26688a22c8461949eb
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-twilio-with-power-bi"></a>Se connecter à Twilio avec Power BI
 Avec le pack de contenu Microsoft Twilio pour Power BI, vous pouvez récupérer vos données dans Power BI et créer un [tableau de bord Twilio](https://powerbi.microsoft.com/integrations/twilio) prêt à l’emploi et un rapport qui révèle des informations sur vos données. Vous pouvez également créer vos rapports et tableau de bord personnalisés à partir du jeu de données créé par Power BI. Les données sont actualisées quotidiennement. Ainsi, vous êtes sûr de toujours avoir les données les plus récentes.
@@ -47,7 +47,7 @@ Connectez-vous au [pack de contenu Twilio](https://app.powerbi.com/getdata/servi
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: yshoukry
-ms.openlocfilehash: 096b48f69529ae17bdc37be5484e90f47a769264
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a2faefa9ebd62ef50e530dcad91482918f94d6d2
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="sql-database-auditing-content-pack-for-power-bi"></a>Pack de contenu SQL Database Auditing pour Power BI
 Le pack de contenu Azure [SQL Database Auditing](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) pour Power BI vous permet de comprendre l’activité de votre base de données, ainsi que les écarts et les anomalies pouvant indiquer des problèmes au niveau de l’activité de votre entreprise ou des violations potentielles de sécurité. 
@@ -68,7 +68,7 @@ Connectez-vous au [pack de contenu SQL Database Auditing](https://app.powerbi.co
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

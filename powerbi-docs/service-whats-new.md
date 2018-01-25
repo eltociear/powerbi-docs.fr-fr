@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/01/2017
 ms.author: sirsu
-ms.openlocfilehash: 8b03eb9659d4f2c984200db16daa6de017e73de7
-ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
+ms.openlocfilehash: 87233cfe4290546478899d81d7a39714c75963eb
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -470,7 +470,7 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 **6 octobre 2015**
 
-* Les Q&R relatives à Power BI vous permettent d’explorer vos données à l’aide de questions simples et intuitives, et de recevoir des réponses sous la forme de diagrammes et graphiques interactifs. Dans cette version, nous avons ajouté une fonctionnalité qui vous aidera à vous familiariser avec Q&R Power BI, même si vous ignorez tout des données. Pour commencer, [accédez à n’importe quel tableau de bord, puis cliquez sur le lien « Comment demander » près de la zone de question Q&R](service-how-to-q-and-a.md). Power BI affiche un certain nombre de suggestions en fonction de vos données.
+* Les Q&R relatives à Power BI vous permettent d’explorer vos données à l’aide de questions simples et intuitives, et de recevoir des réponses sous la forme de diagrammes et graphiques interactifs. Dans cette version, nous avons ajouté une fonctionnalité qui vous aidera à vous familiariser avec Q&R Power BI, même si vous ignorez tout des données. Pour commencer, [accédez à n’importe quel tableau de bord, puis cliquez sur le lien « Comment demander » près de la zone de question Q&R](power-bi-tutorial-q-and-a.md). Power BI affiche un certain nombre de suggestions en fonction de vos données.
 * Il y a deux semaines, nous avons introduit la prise en charge de l’insertion de formes dans le canevas de rapport dans Power BI Desktop. Cette semaine, nous avons le plaisir d’annoncer que vous pouvez désormais ajouter des formes à votre canevas de rapport lors de la création ou de la modification de rapports dans l’application web Power BI.
 * Vous pouvez aussi désactiver les e-mails de notification quand vous partagez un tableau de bord. Désactivez simplement la case à cocher « Envoyer un e-mail de notification aux destinataires » dans la boîte de dialogue de partage Power BI. Une URL s’affiche. Copiez-la et partagez-la avec vos collègues afin de leur donner accès au tableau de bord.
 * Microsoft Dynamics NAV est une solution de gestion d’entreprise pour les organisations de tailles petite et moyenne. Il s’agit pour les clients d’une solution complète pour leur entreprise, qui leur permet de mieux contrôler leurs finances et processus d’entreprise. Le pack de contenu Power BI fournit des rapports prêts à l’emploi pour les utilisateurs de Dynamics NAV en relation, par exemple, avec les ventes et bénéfices, le pipeline d’opportunités, la rentabilité et bien plus encore. Ces mesures sont organisées dans un tableau de bord entièrement personnalisable qui vous permet de vous connecter aisément et de commencer immédiatement à explorer vos données.

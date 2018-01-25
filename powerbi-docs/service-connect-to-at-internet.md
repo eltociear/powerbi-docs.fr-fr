@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: a96e4b0f20eaea1a9f9e9fc71ea2724952f61fc3
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 67ed59961ca5bc4b382adf105bbc5c97ff470118
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Se connecter à AT Internet Bridge avec Power BI
 AT Internet Bridge vous permet d’extraire la valeur immédiate de vos données à l’aide de sa plateforme d’analyse numérique unifiée, Analytics Suite. Le pack de contenu AT Internet Bridge pour Power BI inclut des données sur les visites, les sources, l’emplacement et les appareils pour votre site.
@@ -50,7 +50,7 @@ Connectez-vous au [pack de contenu AT Internet Bridge](https://app.powerbi.com/g
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.

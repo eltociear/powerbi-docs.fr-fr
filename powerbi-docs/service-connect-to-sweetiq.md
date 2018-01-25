@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: df80e986a4ad42018c5ba036c2e47e684dba65d3
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: eff79e26549ee67482a6876dc7850d2a922a4586
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-sweetiq-with-power-bi"></a>Se connecter à SweetIQ avec Power BI
 Le pack de contenu Power BI extrait des données de votre compte SweetIQ et génère l’ensemble de contenu prêt à l’emploi, ce qui vous permet d’explorer facilement vos données. Le pack de contenu SweetIQ permet d’analyser les données sur vos emplacements, listes, indices et avis. Les données sont actualisées tous les jours. Ainsi, vous êtes sûr que les données que vous utilisez sont à jour.
@@ -47,7 +47,7 @@ Connectez-vous au [pack de contenu SweetIQ](https://app.powerbi.com/groups/me/ge
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](service-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
