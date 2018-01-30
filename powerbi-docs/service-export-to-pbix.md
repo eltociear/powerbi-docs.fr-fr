@@ -1,5 +1,5 @@
 ---
-title: "Exporter un rapport du service Power BI vers Power BI Desktop (version préliminaire)"
+title: "Exporter un rapport du service Power BI vers Power BI Desktop (préversion)"
 description: "Télécharger un rapport du service Power BI vers un fichier Power BI Desktop"
 services: powerbi
 documentationcenter: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 30975e9192633043aed7e4196820ef34044b8fcb
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 259007c76b7b53ba0ea55a28fbdd189469383364
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exporter un rapport du service Power BI vers Power BI Desktop (version préliminaire)
 Dans Power BI Desktop, vous pouvez exporter (*télécharger*) un rapport dans le service Power BI en l’enregistrant et en sélectionnant **Publier**. Vous pouvez également exporter dans l’autre sens également et télécharger un rapport du service Power BI vers Power BI Desktop. L’extension des fichiers en cours d’exportation, dans les deux directions, est *.pbix*.
@@ -45,14 +45,15 @@ Pour télécharger le fichier .pbix, procédez comme suit :
     ![](media/service-export-to-pbix/power-bi-save-pbix.png)
    
     Vous avez maintenant la possibilité d’ouvrir le fichier .pbix dans le service Power BI (app.powerbi.com) ou dans Power BI Desktop.     
-4. Pour ouvrir immédiatement le rapport sur Power BI Desktop, sélectionnez **Ouvrir**.  Si vous ne l’avez pas déjà fait, installez [Power BI Desktop](desktop-get-the-desktop.md).
+4. Pour ouvrir immédiatement le rapport sur Power BI Desktop, sélectionnez **Ouvrir**. Pour enregistrer le fichier dans un emplacement spécifique, sélectionnez **Enregistrer > Enregistrer sous**. Si vous ne l’avez pas déjà fait, installez [Power BI Desktop](desktop-get-the-desktop.md).
    
     Lorsque vous ouvrez le rapport dans Power BI Desktop, un message d’avertissement peut vous faire savoir que certaines fonctionnalités disponibles dans le rapport du service Power BI ne sont peut-être pas disponibles dans Power BI Desktop.
    
     ![](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
-5. Pour ouvrir le rapport dans le service Power BI, sélectionnez **Enregistrer**, puis utilisez **Obtenir des données** pour accéder à l’emplacement où vous avez enregistré le fichier .pbix.
+
+5. L’éditeur de rapport dans le service Power BI et l’éditeur de rapport dans Power BI Desktop sont très similaires.  
    
-    ![](media/service-export-to-pbix/power-bi-get-data.png)
+    ![](media/service-export-to-pbix/power-bi-desktop.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 Voici quelques considérations et limitations associées au téléchargement (à l’exportation) d’un fichier *.pbix* à partir du service Power BI.

@@ -1,5 +1,5 @@
 ---
-title: "Jauges radiales dans Power BI (didacticiel)"
+title: "Didacticiel - Graphiques jauge radiale dans Power BI"
 description: "Didacticiel : graphiques en jauge radiale dans Power BI"
 services: powerbi
 documentationcenter: 
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: 7299b95cb3dd1fab4edce1764c69e1b2657ef547
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 354bfc01231f0f11aabd533bf29f987dec7c9771
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="radial-gauge-charts-in-power-bi-tutorial"></a>Jauges radiales dans Power BI (didacticiel)
 Un graphique en jauge radiale est en forme d’arc de cercle. Il affiche une seule valeur qui mesure la progression vers un objectif/indicateur de performance clé.  L’objectif (valeur cible) est représenté par la ligne (aiguille). La progression vers l’objectif est représentée par l’ombrage.  La valeur représentant cette progression est indiquée en caractères gras à l’intérieur de l’arc. Toutes les valeurs possibles sont réparties uniformément le long de l’arc, de la valeur minimale (la plus à gauche) à la valeur maximale (la plus à droite).
@@ -39,17 +39,25 @@ Les graphiques en jauge radiale sont conseillés pour :
 * montrer l’intégrité d’une seule mesure ;
 * afficher des informations faciles à comprendre et à analyser.
 
+### <a name="prerequisites"></a>Conditions préalables
+ - Service Power BI ou Power BI Desktop
+ - Classeur Excel d’exemples financiers : [télécharger directement l’exemple](http://go.microsoft.com/fwlink/?LinkID=521962).
+
 ## <a name="create-a-basic-radial-gauge"></a>Créer une jauge radiale simple
-Ces instructions s’appliquent au jeu de données Financial Sample (Exemple financier). Pour effectuer la procédure, [téléchargez l’exemple](http://go.microsoft.com/fwlink/?LinkID=521962) sur votre ordinateur, connectez-vous à Power BI et sélectionnez **Obtenir des données \> Fichiers \> Fichier local > Ouvrir**. 
+Ces instructions utilisent le service Power BI. Pour suivre la procédure, connectez-vous à Power BI et ouvrez le fichier Excel d’exemple financier.  
 
 Vous pouvez également écouter Will qui vous montre comment créer des éléments visuels de métrique uniques : jauges, cartes et indicateurs de performance clés.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-### <a name="step-1-open-the-financial-sample-excel-file"></a>Étape 1 : ouvrez le fichier Excel Financial Sample (Exemple financier).
-1. [Téléchargez l’exemple de fichier Excel Financial](sample-financial-download.md).
-2. Ouvrez le fichier dans Power BI en sélectionnant **Obtenir des données \>Fichiers**et en accédant à l’emplacement où vous avez enregistré le fichier. Sélectionnez **Importer**. L’exemple financier est ajouté à votre espace de travail en tant que jeu de données.
-3. Sélectionnez **Financial Sample** (Exemple financier) pour l’ouvrir en Mode Exploration.
+### <a name="step-1-open-the-financial-sample-excel-file"></a>Étape 1 : Ouvrir le fichier Excel d’exemple financier
+1. [Téléchargez le fichier Excel d’exemple financier](sample-financial-download.md) si ce n’est pas déjà fait. Notez l’endroit où vous l’enregistrez.
+
+2. Ouvrez le fichier dans le ***service Power BI*** en sélectionnant **Obtenir des données \>Fichiers** et en accédant à l’emplacement où vous avez enregistré le fichier. Sélectionnez **Importer**. L’exemple financier est ajouté à votre espace de travail en tant que jeu de données.
+
+3. Dans la liste de contenu **Jeu de données**, sélectionnez **Financial Sample** (Exemple financier) pour l’ouvrir en mode Exploration.
+
+    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
 
 ### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Étape 2 : créer une jauge pour effectuer le suivi du chiffre d’affaires brut
 1. Dans le volet **Champs** , sélectionnez **Gross Sales**(Chiffre d’affaires brut).

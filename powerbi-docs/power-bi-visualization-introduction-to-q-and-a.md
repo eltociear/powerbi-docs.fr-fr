@@ -1,6 +1,6 @@
 ---
-title: "Prise en main de Questions et réponses dans Power BI (didacticiel)"
-description: "Didacticiel : Prise en main de Q&R dans le service Power BI avec l’exemple Analyse de la vente au détail"
+title: "Démarrage rapide - Bien démarrer avec Questions et réponses dans Power BI"
+description: "Démarrage rapide - Bien démarrer avec Questions et réponses dans le service Power BI avec l’exemple Analyse de la vente au détail"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -15,17 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 01/16/2018
 ms.author: mihart
-ms.openlocfilehash: 2038fb5bd4a21235c3026c8506ae30b8c3e287e4
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d63c6479ed5f0bb9e882900fc5a653f08ad6a823
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="get-started-with-power-bi-qa-tutorial"></a>Prise en main de Questions et réponses dans Power BI (didacticiel)
-## <a name="tutorial-use-power-bi-qa-with-the-retail-analysis-sample"></a>Didacticiel : utiliser Q&R de Power BI avec l’exemple Analyse de la vente au détail
-Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel.  Dans ce didacticiel, nous allons étudier deux façons différentes de créer la même visualisation : en la créant directement dans un rapport et en posant une question à l’aide de Q&R.  
+# <a name="get-started-with-power-bi-qa-quickstart"></a>Bien démarrer avec Questions et réponses dans Power BI (démarrage rapide)
+## <a name="use-power-bi-qa-with-the-retail-analysis-sample"></a>Utiliser Questions et réponses dans Power BI avec l’exemple Analyse de la vente au détail
+Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel.  Dans ce démarrage rapide, nous allons étudier deux façons de créer la même visualisation : en la créant directement dans un rapport et en posant une question à l’aide de Questions et réponses. Nous allons utiliser le service Power BI, mais le processus est presque identique si vous utilisez Power BI Desktop.
+
+Pour effectuer la procédure, vous devez utiliser un rapport que vous pouvez modifier. Nous allons donc utiliser un des exemples disponibles avec Power BI.
 
 ## <a name="method-1-using-the-report-editor"></a>Méthode 1 : Utilisation de l’éditeur de rapport
 1. Dans votre espace de travail Power BI, sélectionnez **Obtenir des données** \> **Exemples** \> **Retail Analysis Sample (Exemple Analyse de la vente au détail)** > **Connexion**.
@@ -61,13 +63,9 @@ Comment faire pour générer le même graphique en courbes avec Q&R ?
 4. Pour épingler le graphique à votre tableau de bord, sélectionnez l’icône d’épingle ![](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Quel type de questions puis-je poser avec Q&R ?](service-q-and-a.md)
-
-[Q&R dans Power BI](service-q-and-a.md)
+[Q&R dans Power BI](power-bi-q-and-a.md)
 
 [Optimiser vos données avec Q&R dans Power BI](service-prepare-data-for-q-and-a.md)
-
-[Préparer un classeur pour Q&R](service-prepare-data-for-q-and-a.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

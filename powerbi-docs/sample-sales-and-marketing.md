@@ -15,24 +15,54 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: 7ff8ba4557c829551b97e51f411269e3ba8fbdea
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 473236553513c41e30cb4d48f03f8fc27fd4d647
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exemple Vente et marketing pour Power BI : visite guidée
+
+## <a name="overview-of-the-sales-and-marketing-sample"></a>Présentation de l’exemple Vente et marketing
 **L’exemple Vente et marketing** contient un tableau de bord et un rapport qui concernent une société de fabrication fictive nommée VanArsdel Ltd. Ce tableau de bord a été créé par le directeur marketing de VanArsdel pour surveiller le secteur, mais aussi la part de marché de la société, ses volumes de production, ses ventes et l’opinion.
 
 VanArsdel a de nombreux concurrents, mais est leader dans son secteur d’activité. Le directeur marketing souhaite augmenter la part de marché et découvrir des opportunités de croissance. Or, pour une raison quelconque, la part de marché de VanArsdel a commencé à diminuer, avec des baisses significatives en juin.
 
 Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il s’agit de données réelles provenant d’obviEnce (www.obvience.com), présentées de façon anonyme.
 
-[!Note] Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529785). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**.
-
 ![](media/sample-sales-and-marketing/sales1.png)
+
+## <a name="prerequisites"></a>Conditions préalables
+
+ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que pack de contenu, fichier .pbix ou classeur Excel.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
+
+1. Ouvrez le service Power BI (app.powerbi.com), puis connectez-vous.
+2. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. Dans la page Obtenir des données qui s’affiche, sélectionnez l’icône **Exemples**.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Sélectionnez l’**exemple Vente et marketing**, puis choisissez **Se connecter**.  
+  
+   ![Exemple Vente et marketing](media/sample-sales-and-marketing/sales9.png)
+   
+5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. 
+   
+   ![Astérisque](media/sample-sales-and-marketing/sales10.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
+
+Vous pouvez également télécharger l’exemple en tant que fichier .pbix, qui est conçu pour une utilisation avec Power BI Desktop. 
+
+ * [Exemple Vente et marketing](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
+Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529785). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
 Commençons notre tour d’horizon sur le tableau de bord et examinons les vignettes que le directeur marketing a choisi d’épingler. On y trouve des informations sur la part de marché, les ventes et l’opinion. Et nous voyons que les données sont ventilées par région, période et concurrence.
@@ -48,21 +78,21 @@ Commençons notre tour d’horizon sur le tableau de bord et examinons les vigne
 #### <a name="which-segments-drive-our-sales-does-it-match-the-industry-trend"></a>Quels sont les segments qui tirent nos ventes ? Est-ce que cela correspond à la tendance du secteur ?
 1. Sélectionnez la vignette « Total Units Overall by Segment » (Nombre total d’unités par segment) pour ouvrir Q&R.
 2. Tapez **for VanArsdel** (pour VanArsdel) à la fin de la requête existante. Q&R interprète la question et affiche un graphique mis à jour avec la réponse. Le volume de production de l’entreprise repose sur les segments Convenience (Commodité) et Moderation (Modération).
-   
+
    ![](media/sample-sales-and-marketing/sales2.png)
 3. Sa part dans les catégories **Moderation** et **Convenience** est très importante ; ce sont les segments sur lesquels l’entreprise est compétitive.
 4. Accédez au tableau de bord en sélectionnant son nom dans la barre de navigation supérieure (fils d’Ariane).
 
 #### <a name="what-does-total-unit-market-share-look-like-for-category-versus-region"></a>Quelle est la part de marché en nombre total d’unités par catégorie (comparée à la région) ?
-1. Notez le titre « Total Units YTD by Manufacturer, Region » (Nombre total d’unités de l’année en cours par fabricant, par région). Vous voulez connaître la part de marché par catégorie ? 
-   
+1. Notez le titre « Total Units YTD by Manufacturer, Region » (Nombre total d’unités de l’année en cours par fabricant, par région). Vous voulez connaître la part de marché par catégorie ?
+
    ![](media/sample-sales-and-marketing/sales3.png)
 2. Dans la zone de question en haut du tableau de bord, tapez la question **total units by manufacturer and category for 2014 as a treemap** (nombre total d’unités par fabricant et par catégorie pour 2014, treemap). Comme vous pouvez le constater, la visualisation se met à jour à mesure que vous tapez la question.
    ![](media/sample-sales-and-marketing/totalunitsbymanufacturerandcategoryfor2014asatreemap-new.png)
 3. Pour comparer les résultats, épinglez le graphique à votre tableau de bord. Très intéressant. En 2014, VanArsdel n’a vendu que des produits de la catégorie **Urban** (Urbain).
 4. Retournez dans le tableau de bord.
 
-Les tableaux de bord sont aussi un point d’entrée dans les rapports.  Si une vignette a été créée à partir d’un rapport sous-jacent, il suffit de cliquer sur cette vignette pour ouvrir le rapport. 
+Les tableaux de bord sont aussi un point d’entrée dans les rapports.  Si une vignette a été créée à partir d’un rapport sous-jacent, il suffit de cliquer sur cette vignette pour ouvrir le rapport.
 
 Dans notre tableau de bord, la ligne R12M (période glissante de 12 mois) montre que la part de marché de l’entreprise n’augmente plus dans le temps, elle baisse même un peu. Et comment expliquer cette forte baisse de part de marché en juin ? Pour aller plus loin dans l’analyse, cliquez sur cette visualisation pour ouvrir le rapport sous-jacent.
 
@@ -72,7 +102,7 @@ Dans notre tableau de bord, la ligne R12M (période glissante de 12 mois) montr
 
 1. Examinez l’histogramme du bas intitulé « Total Units by Month and isVanArsdel » (Nombre total d’unités par mois pour VanArsdelen). La colonne noire représente VanArsdel (ses produits) et la verte ses concurrents. La baisse enregistrée par VanArsdel en juin 2014 ne se retrouve pas chez les concurrents.
 2. Le graphique à barres « Total Category Volume by Segment » (Volume total de la catégorie par segment), au milieu à droite, est filtré pour afficher les 2 principaux segments de VanArsdel. Voyons comment ce filtre a été créé :  
-   
+
    a.  Développez le volet Filtres à droite.  
    b.  Cliquez sur la visualisation pour la sélectionner.  
    c.  Sous Filtres au niveau de l’élément visuel, notez que **Segment** est filtré pour n’inclure que les catégories **Convenience** (Commodité) et **Moderation** (Modération).  
@@ -112,4 +142,3 @@ Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours ch
 
 ## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
 Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations des données liées aux ventes et au marketing. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).  
-

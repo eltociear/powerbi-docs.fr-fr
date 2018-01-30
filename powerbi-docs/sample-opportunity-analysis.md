@@ -15,16 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/04/2017
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 878738eb3f588c461b687451062a1641479e77ed
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 8ee889246c7ceae82195faa62232a987a541b076
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des opportunités pour Power BI : visite guidée
-L’ **exemple Suivi des opportunités** contient le tableau de bord (et son rapport associé) d’une société de logiciels qui s’appuie sur 2 canaux de vente : *direct* et *partenaires*. La responsable des ventes a créé ce tableau de bord pour suivre les opportunités et le chiffre d’affaires par région, par taille de contrat et par canal.
+
+## <a name="overview-of-the-opportunity-analysis-sample"></a>Présentation de l’exemple Analyse des opportunités
+L’**exemple Analyse des opportunités** contient le tableau de bord (et le rapport associé) d’une société de logiciels qui s’appuie sur 2 canaux de vente : *direct* et *partenaires*. La responsable des ventes a créé ce tableau de bord pour suivre les opportunités et le chiffre d’affaires par région, par taille de contrat et par canal.
 
 Elle s’appuie sur 2 mesures du chiffre d’affaires :
 
@@ -36,23 +38,51 @@ Elle s’appuie sur 2 mesures du chiffre d’affaires :
   * Proposition (« Proposal ») : 60 %  
   * Finalisation (« Finalize ») : 80 %
 
+  ![](media/sample-opportunity-analysis/opportunity1.png)
+
 Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http://www.obvience.com/)), présentées de façon anonyme.
 
->[!Note] 
-Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529782). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier.  Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**. 
+## <a name="prerequisites"></a>Conditions préalables
 
-![](media/sample-opportunity-analysis/opportunity1.png)
+ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que pack de contenu, fichier .pbix ou classeur Excel.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
+
+1. Ouvrez le service Power BI (app.powerbi.com), puis connectez-vous.
+2. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. Dans la page Obtenir des données qui s’affiche, sélectionnez l’icône **Exemples**.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Sélectionnez **Exemple Analyse des opportunités**, puis choisissez **Se connecter**.  
+  
+   ![Obtenir les données](media/sample-opportunity-analysis/opportunity-connect.png)
+   
+5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. 
+   
+   ![Astérisque](media/sample-opportunity-analysis/opportunity-asterisk.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
+
+Vous pouvez également télécharger l’exemple en tant que fichier .pbix, qui est conçu pour une utilisation avec Power BI Desktop. 
+
+ * [Exemple Analyse des opportunités](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
+Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529782). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**.
+
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
 La responsable des ventes a créé un tableau de bord pour suivre les métriques qu’elle juge les plus importantes. Quand quelque chose l’interpelle, elle peut sélectionner une vignette pour explorer les données.
 
 1. La société réalise un chiffre d’affaires de 2 milliards de dollars et un chiffre d’affaires pondéré de 461 millions de dollars.
 2. Le nombre d’opportunités et le chiffre d’affaires obéissent à une logique d’entonnoir bien connue où les totaux diminuent à chaque étape suivante.
-3. La plupart de nos opportunités se situent dans la région Est (« East »). 
+3. La plupart de nos opportunités se situent dans la région Est (« East »).
 4. Les opportunités de grande taille génèrent davantage de chiffre d’affaires que les opportunités de petite ou moyenne taille.
-5. Les gros contrats remportés par les partenaires génèrent plus de chiffre d’affaires : 8 millions de dollars en moyenne contre 6 millions de dollars pour les ventes directes. 
+5. Les gros contrats remportés par les partenaires génèrent plus de chiffre d’affaires : 8 millions de dollars en moyenne contre 6 millions de dollars pour les ventes directes.
 
-Sachant que les efforts à déployer pour décrocher un contrat sont les mêmes quelle que soit sa taille, notre société a tout intérêt à analyser les données pour en apprendre davantage sur les opportunités de grande taille. 
+Sachant que les efforts à déployer pour décrocher un contrat sont les mêmes quelle que soit sa taille, notre société a tout intérêt à analyser les données pour en apprendre davantage sur les opportunités de grande taille.
 
 Sélectionnez la vignette **Opportunity Count by Partner Driven and Sales Stage** (Nombre d’opportunités partenaires et étape de vente) pour ouvrir la page 1 du rapport.  
 ![](media/sample-opportunity-analysis/opportunity2.png)
@@ -63,8 +93,8 @@ Sélectionnez la vignette **Opportunity Count by Partner Driven and Sales Stage*
 
 * L’Est est notre région la plus importante en termes de nombre d’opportunités.  
 * Sur le graphique à secteurs, sélectionnez une région après l’autre pour filtrer la page. Pour chaque région, les partenaires visent des opportunités bien plus importantes.   
-* L’histogramme « Opportunity Count by Partner Driven and Opportunity Size » (Nombre d’opportunités partenaires et taille d’opportunité) montre clairement que la plupart des opportunités de grande taille sont portées par les partenaires, contrairement aux opportunités de petite et moyenne taille. 
-* Sélectionnez chaque étape de vente (« Sales Stage ») dans le graphique à barres en bas à gauche pour observer les différences régionales en matière de nombre d’opportunités. Comme vous pouvez le constater, bien que la région Est soit la région la plus importante au niveau du nombre d’opportunités, les 3 régions affichent des nombres comparables aux étapes Solution, Proposal (Proposition) et Finalize (Finalisation). Cela signifie que nous concluons un pourcentage de contrats plus élevé dans les régions Centre (« Central ») et Ouest (« West »). 
+* L’histogramme « Opportunity Count by Partner Driven and Opportunity Size » (Nombre d’opportunités partenaires et taille d’opportunité) montre clairement que la plupart des opportunités de grande taille sont portées par les partenaires, contrairement aux opportunités de petite et moyenne taille.
+* Sélectionnez chaque étape de vente (« Sales Stage ») dans le graphique à barres en bas à gauche pour observer les différences régionales en matière de nombre d’opportunités. Comme vous pouvez le constater, bien que la région Est soit la région la plus importante au niveau du nombre d’opportunités, les 3 régions affichent des nombres comparables aux étapes Solution, Proposal (Proposition) et Finalize (Finalisation). Cela signifie que nous concluons un pourcentage de contrats plus élevé dans les régions Centre (« Central ») et Ouest (« West »).
 
 ### <a name="page-2-of-our-report-is-titled-revenue-overview"></a>La page 2 de notre rapport est intitulée « Revenue Overview » (Vue d’ensemble du chiffre d’affaires)
 Les données y sont examinées de manière similaire, sauf que l’analyse porte non pas sur le nombre d’opportunités mais sur le chiffre d’affaires.  
@@ -82,8 +112,8 @@ Il apparaît clairement que nos partenaires vendent mieux à nos clients.  Il po
 Cette page présente des données similaires, mais les décompose par région et par étape.  
 ![](media/sample-opportunity-analysis/opportunity5.png)
 
-* En filtrant sur la région Est (sélectionnez **East** dans le graphique à secteurs), on constate que les opportunités résultent presque à parts égales des partenaires et des non-partenaires. 
-* Les opportunités de grande taille sont plus courantes dans la région Centre, les opportunités de petite taille sont plus courantes dans la région Est et les opportunités de taille moyenne sont plus courantes dans la région Ouest. 
+* En filtrant sur la région Est (sélectionnez **East** dans le graphique à secteurs), on constate que les opportunités résultent presque à parts égales des partenaires et des non-partenaires.
+* Les opportunités de grande taille sont plus courantes dans la région Centre, les opportunités de petite taille sont plus courantes dans la région Est et les opportunités de taille moyenne sont plus courantes dans la région Ouest.
 
 ### <a name="page-4-of-our-report-is-titled-upcoming-opportunities"></a>La page 4 de notre rapport est intitulée « Upcoming Opportunities » (Opportunités à venir)
 Là encore, nous nous intéressons à des facteurs similaires, sauf que cette fois, nous prenons en compte la date/heure.  
@@ -101,4 +131,3 @@ Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours ch
 Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations de données de suivi des opportunités. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).
 
 [Télécharger les exemples](sample-datasets.md)  
-

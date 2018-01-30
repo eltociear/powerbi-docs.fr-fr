@@ -1,6 +1,6 @@
 ---
-title: "Graphique combiné dans Power BI (didacticiel)"
-description: "Cette documentation est un didacticiel (avec vidéo) qui explique pourquoi et comment créer un graphique combiné dans Power BI."
+title: "Didacticiel - Graphique combiné"
+description: "Ce didacticiel sur les graphiques combinés explique quand les utiliser et comment les créer dans le service Power BI et dans Power BI Desktop."
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: c00ba74501a411743036c4514750bccbbae3eb00
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: ac738b337e7eb1c861347b273c7f1c4571a700a2
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="combo-chart-in-power--tutorial"></a>Graphique combiné dans Power BI (didacticiel)
 Dans Power BI, un graphique combiné est une visualisation qui combine un graphique en courbes et un histogramme. Combiner ces deux graphiques en un seul vous permet de comparer plus rapidement les données.
@@ -38,13 +38,16 @@ Les graphiques combinés sont conseillés :
 * pour vérifier si une mesure correspond à la cible qui est définie par une autre mesure ;
 * pour utiliser moins d’espace sur le canevas.
 
+### <a name="prerequisites"></a>Conditions préalables
+Les graphiques combinés sont disponibles dans le service Power BI et dans Power BI Desktop. Ce didacticiel utilise le service Power BI pour créer un graphique combiné. Pour effectuer la procédure, connectez-vous au service Power BI et sélectionnez l’exemple Analyse de la vente au détail [instructions ci-dessous](#create)).
+
+
 ## <a name="create-a-basic-single-axis-combo-chart"></a>Créer un graphique combiné simple, avec un seul axe
 Regardez comment créer un graphique combiné à l’aide de l’exemple Vente et marketing.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lnv66cTZ5ho?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-
-Pour créer votre propre graphique combiné, connectez-vous à Power BI et sélectionnez **Obtenir des données \> Exemples \> Exemple Analyse de la vente au détail**. 
+<a name="create"></a>Pour créer votre propre graphique combiné, connectez-vous au service Power BI et sélectionnez **Obtenir des données \> Exemples \> Exemple Analyse de la vente au détail > Se connecter > Accéder au tableau de bord**. 
 
 1. Dans le tableau de bord « Exemple Analyse de la vente au détail », sélectionnez la vignette **Total Stores** (Total magasins) pour ouvrir le rapport « Exemple Analyse de la vente au détail ».
 2. Sélectionnez **Modifier le rapport** pour ouvrir le rapport en Mode Edition.
@@ -58,7 +61,8 @@ Pour créer votre propre graphique combiné, connectez-vous à Power BI et sél
     c.  Sélectionnez **Time** \> **FiscalMonth** (Période > Mois fiscal) pour l’ajouter à **Axe**. 
    
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Sélectionnez les points de suspension (...) dans le coin supérieur droit de la visualisation, puis sélectionnez **Trier par MoisFiscal**.
+5. Sélectionnez les points de suspension (...) dans le coin supérieur droit de la visualisation, puis sélectionnez **Trier par MoisFiscal**. Vous devrez peut-être sélectionner deux fois cette option pour trier par ordre croissant ou décroissant.
+
 6. Convertissez l’histogramme en graphique combiné. Après avoir sélectionné l’histogramme, ouvrez le volet **Visualisations** et sélectionnez **Graphique en courbes et histogramme groupé**.
    
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
@@ -73,16 +77,16 @@ Pour créer votre propre graphique combiné, connectez-vous à Power BI et sél
 ## <a name="create-a-combo-chart-with-two-axes"></a>Créer un graphique combiné avec deux axes
 Dans cette tâche, nous allons comparer les ventes et la marge brute.
 
-1. Créez un graphique en courbes qui affiche le pourcentage de marge brute de l’année précédente par mois.  En janvier, la marge brute était de 35 %. Elle a subi un pic à 45 % en avril, a baissé en juillet et a augmenté à nouveau en août. Verrons-nous un modèle similaire dans les ventes de l’année dernière et de cette année ?
+1. Créez un graphique en courbes qui affiche le **pourcentage de marge brute de l’année précédente** par **mois**.  En janvier, la marge brute était de 35 %. Elle a subi un pic à 45 % en avril, a baissé en juillet et a augmenté à nouveau en août. Verrons-nous un modèle similaire dans les ventes de l’année dernière et de cette année ?
    
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
-2. Ajoutez **This Year Sales > Value** (Ventes de l’année > Valeur) et **Last Year Sales** (Ventes de l’année dernière) au graphique en courbes. L’échelle utilisée pour **GM% Last Year** (Pourcentage de marge brute de l’année précédente) est beaucoup plus petite que l’échelle pour **Sales** (Ventes), ce qui rend difficile la comparaison des données.      
+2. Ajoutez **This Year Sales > Value** (Ventes de l’année > Valeur) et **Last Year Sales** (Ventes de l’année dernière) au graphique en courbes. L’échelle utilisée pour **Gross Margin Last Year %** (Pourcentage de marge brute de l’année précédente) est beaucoup plus petite que l’échelle pour **Sales** (Ventes), ce qui rend difficile la comparaison des données.      
    
    ![](media/power-bi-visualization-combo-chart/flatline_new.png)
 3. Pour faciliter la lecture et l’analyse de la visualisation, convertissez le graphique en courbes en un graphique en courbes et histogramme empilé.
    
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-4. Faites glisser **GM% Last Year** (Pourcentage de marge brute de l’année précédente) de **Valeurs de colonne** vers **Valeurs de ligne**. Power BI crée deux axes, ce qui permet de définir des échelles différentes pour les jeux de données. L’axe de gauche mesure le montant des ventes et l’axe de droite mesure le pourcentage.
+4. Faites glisser **Gross Margin Last Year %** (Pourcentage de marge brute de l’année précédente) de **Valeurs de colonne** vers **Valeurs de ligne**. Power BI crée deux axes, ce qui permet de définir des échelles différentes pour les jeux de données. L’axe de gauche mesure le montant des ventes et l’axe de droite mesure le pourcentage.
    
    ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
 
@@ -92,7 +96,7 @@ Dans cette tâche, nous allons comparer les ventes et la marge brute.
 3. Pour l’**axe Y (colonne)**, définissez les valeurs suivantes : **Position** sur **Gauche**, **Titre** sur **Activé**, **Style** sur **Afficher le titre uniquement** et **Afficher** sur **Millions**.
    
    ![](media/power-bi-visualization-combo-chart/power-bi-y-axis-column.png)
-4. Sous l’**axe Y (colonne)**, assurez-vous également que **Afficher l'élément secondaire** a la valeur **Activé**. Cela affiche les options de mise en forme de la partie graphique en courbes du graphique combiné.
+4. Sous l’**axe Y (colonne)**, faites défiler et vérifiez également que **Afficher l’élément secondaire** a la valeur **Activé**. Cela affiche les options de mise en forme de la partie graphique en courbes du graphique combiné.
    
    ![](media/power-bi-visualization-combo-chart/power-bi-show-secondary.png)
 5. Pour l’**axe Y (ligne)**, laissez **Position** sur **Droite**, définissez **Titre** sur **Activé** et **Style** sur **Afficher le titre uniquement**.
@@ -101,26 +105,24 @@ Dans cette tâche, nous allons comparer les ventes et la marge brute.
    
    ![](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
 
+6. Si vous le souhaitez, modifiez la police, la taille et la couleur de texte et définissez d’autres options de mise en forme pour améliorer l’affichage et la lisibilité du graphique.
+
 À ce stade, vous souhaiterez effectuer les tâches suivantes :
 
 * [Ajoutez le graphique combiné sous forme de vignette de tableau de bord](service-dashboard-tiles.md).
 * [Enregistrez le rapport](service-report-save.md).
 
-## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
-Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](power-bi-report-add-filter.md).
+## <a name="cross-highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisés
 
-La mise en surbrillance d’une colonne ou d’une ligne dans un graphique combiné entraîne le filtrage croisé des autres visualisations sur la page du rapport, et vice versa.
+La mise en surbrillance d’une colonne ou d’une ligne dans un graphique combiné entraîne la mise en surbrillance et le filtrage croisés des autres visualisations sur la page du rapport, et vice versa. Utilisez le contrôle [Interactions entre les visuels](visual-interactions.md) pour modifier ce comportement par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Ajouter une visualisation à un rapport](power-bi-report-add-visualizations-i.md)
 
-[Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)
+[Présentation des visualisations dans des rapports Power BI](power-bi-report-visualizations.md)
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Power BI – Concepts de base](service-basic-concepts.md)
-
-[Essayez-le gratuitement !](https://powerbi.com/)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

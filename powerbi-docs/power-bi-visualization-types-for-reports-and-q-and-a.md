@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 01/19/2018
 ms.author: mihart
-ms.openlocfilehash: 5e4788e57bd1836d3d5db10dfb86e2c71c00c34f
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 7d9869c16b88cb410073644bdae94173b9cea023
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 ## <a name="power-bi-visualizations"></a>Visualisations Power BI
 Nous allons ajouter de nouvelles visualisations, tenez-vous informé !
 
-Consultez l’[Office Store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), où vous trouverez une liste croissante de visualisations personnalisées que vous pouvez télécharger et utiliser dans vos propres tableaux de bord et rapports. Vous vous sentez créatif ? [Découvrez comment créer et ajouter vos propres visuels au site de la communauté](developer/office-store.md).  
+Consultez [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), qui propose une liste croissante de [visuels personnalisés](power-bi-custom-visuals.md) que vous pouvez télécharger et utiliser dans vos propres tableaux de bord et rapports. Vous vous sentez créatif ? [Découvrez comment créer et ajouter vos propres visuels au site de la communauté](developer/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste des visualisations disponibles dans Power BI
 Toutes ces visualisations peuvent être ajoutées à des rapports Power BI, spécifiées dans Questions et réponses, et épinglées à des tableaux de bord.
@@ -88,7 +88,7 @@ Pour plus d’informations, consultez [Didacticiel : graphiques en entonnoir da
 
 Pour plus d’informations, consultez [Didacticiel : graphiques en jauge dans Power BI](power-bi-visualization-radial-gauge-charts.md).
 
-### <a name="kpis"></a>Indicateurs de performance clés (KPI)
+### <a name="kpis"></a>Indicateurs de performance clés
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
 >[!TIP]
@@ -147,7 +147,7 @@ Pour plus d’informations, consultez [Didacticiel : Segments dans Power BI](p
 
 Pour plus d’informations, consultez [Ajouter un widget d’image à un tableau de bord](service-dashboard-add-widget.md).
 
-### <a name="tables"></a>Tableaux
+### <a name="tables"></a>Tables
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
 
 >[!TIP]

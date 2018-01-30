@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: 453a2a9dd4ea5e41d404d3e81cebbff7c35f1b6c
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 49e0b976fcee8c18edc14f80df2786e5ebf3fedc
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="enable-qa-for-live-connections"></a>Activer Questions et réponses pour les connexions actives
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Qu’est-ce que la passerelle de données locale ?  Qu’est-ce qu’une connexion active ?
@@ -39,7 +39,7 @@ Comme les Q&R Power BI utilisent des valeurs de texte et le schéma à partir de
 Pour plus d’informations, consultez :
 
 * Qu’est-ce que la [passerelle de données locale](service-gateway-onprem.md) ?
-* [Présentation de Q&R de Power BI](service-q-and-a.md)
+* [Présentation de Q&R de Power BI](power-bi-q-and-a.md)
 
 ## <a name="enable-qa"></a>Activer les Q&R
 Une fois que vous avez configuré la passerelle de données, connectez-vous à vos données à partir de Power BI.  Créez un tableau de bord à l’aide de vos données locales ou téléchargez un fichier .pbix qui utilise des données locales.  Vous pouvez également disposer déjà des données locales dans des tableaux de bord, des rapports et des jeux de données qui ont été partagés avec vous.
@@ -55,22 +55,20 @@ Une fois que vous avez configuré la passerelle de données, connectez-vous à v
     ![](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## <a name="what-data-is-cached-and-how-is-privacy-protected"></a>Quelles sont les données mises en cache et quelle est la politique de confidentialité ?
-Lorsque vous activez les Q&R pour vos données locales, un sous-ensemble de données est mis en cache dans le service. Le but est d’assurer des performances de Q&R raisonnables. Les valeurs dépassant 24 caractères ne sont pas mises en cache. Le cache est supprimé après quelques heures une fois les Q&R désactivées en décochant la case permettant **d’activer les Q&R pour ce jeu de données**, ou lorsque vous supprimez votre jeu de données.
+Lorsque vous activez les Q&R pour vos données locales, un sous-ensemble de données est mis en cache dans le service. Le but est d’assurer des performances de Q&R raisonnables. Power BI exclut les valeurs dépassant 24 caractères de la mise en cache. Le cache est supprimé après quelques heures une fois les Q&R désactivées en décochant la case permettant **d’activer les Q&R pour ce jeu de données**, ou lorsque vous supprimez votre jeu de données.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 La version préliminaire de cette fonctionnalité comprend plusieurs limitations :
 
-* Initialement, la fonctionnalité n’est disponible que pour les sources de données tabulaires SQL Server 2016 Analysis Services. La fonctionnalité est optimisée pour travailler avec des données tabulaires. Certaines fonctionnalités sont disponibles pour les sources de données multidimensionnelles, mais l’expérience Questions et réponses complète n’est pas encore prise en charge pour ce type de données. D’autres sources de données prises en charge par la passerelle de données locale seront déployées dans le cadre de la préversion publique.
+* Initialement, la fonctionnalité n’est disponible que pour les sources de données tabulaires SQL Server 2016 Analysis Services. La fonctionnalité est optimisée pour travailler avec des données tabulaires. Certaines fonctionnalités sont disponibles pour les sources de données multidimensionnelles, mais l’expérience Questions et réponses complète n’est pas encore prise en charge pour ce type de données. D’autres sources de données prises en charge par la passerelle de données locale seront déployées au fil du temps.
 * La prise en charge complète de la sécurité au niveau des lignes définie dans SQL Server Analysis Services n’est pas disponible initialement dans la préversion publique. Lorsque vous posez des questions dans les Q&R, la « saisie semi-automatique » des questions peut afficher de valeurs de chaînes auxquelles un utilisateur n’a pas accès. Toutefois, la sécurité au niveau des lignes définie dans le modèle est respectée pour les rapports et graphiques visuels. Aucune donnée numérique sous-jacente ne peut donc être exposée. Des options permettant de contrôler ce comportement seront disponibles dans des prochaines mises à jour.
 * Les connexions actives sont uniquement prises en charge avec la passerelle de données locale. Par conséquent, elles ne peuvent pas être utilisées avec la passerelle personnelle.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Passerelle de données locale](service-gateway-onprem.md)  
 [Gérer votre source de données - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Informations rapides Power BI](service-insights.md)  
-[Optimiser vos données pour les utiliser dans Informations rapides Power BI](service-insights-optimize.md)  
 [Power BI – Concepts de base](service-basic-concepts.md)  
-[Tableaux de bord dans Power BI](service-dashboards.md)  
+[Présentation de Questions et réponses dans Power BI](power-bi-q-and-a.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

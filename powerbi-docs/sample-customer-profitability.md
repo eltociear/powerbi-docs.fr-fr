@@ -15,23 +15,55 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 9a100b7d13c11a8bd066b72a570f45d0c2bc08be
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 82e909962a0ed1db50f2ba3729988fd7aacadc80
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : visite guidée
 Le pack de contenu « Exemple Rentabilité des clients » contient un tableau de bord, un rapport et un jeu de données qui concernent une société qui fabrique des supports marketing. Ce tableau de bord a été créé par une directrice financière désireuse d’afficher des métriques clés sur les 5 responsables de division (encadrement), les produits, les clients et les marges brutes (GM). D’un simple coup d’œil, elle peut identifier les facteurs qui ont un impact sur la rentabilité.
 
 Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http://www.obvience.com/)), présentées de façon anonyme.
 
-Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529781).  
-![](media/sample-customer-profitability/power-bi-dash.png)
+## <a name="prerequisites"></a>Conditions préalables
+
+Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que pack de contenu, fichier .pbix ou classeur Excel.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
+
+1. Ouvrez le service Power BI (app.powerbi.com), puis connectez-vous.
+2. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. Dans la page Obtenir des données qui s’affiche, sélectionnez l’icône **Exemples**.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Sélectionnez l’**exemple Rentabilité des clients**, puis choisissez **Se connecter**.  
+   
+   ![Obtenir les données](media/sample-customer-profitability/get-supplier-sample.png)
+5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. Utilisez les exemples pour tester Power BI.  
+   
+   ![Astérisque](media/sample-customer-profitability/supplier-sample-asterisk.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
+
+Vous pouvez également télécharger l’exemple en tant que fichier .pbix, qui est conçu pour une utilisation avec Power BI Desktop. 
+
+- [Exemple Rentabilité des clients](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
+
+Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) pour cet exemple](http://go.microsoft.com/fwlink/?LinkId=529781). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
+
+Sous **Mon espace de travail**, recherchez le tableau de bord de l’exemple Rentabilité des clients :
+
+![Tableau de bord de l’exemple Rentabilité des clients](media/sample-customer-profitability/power-bi-dash.png)
+
 ### <a name="company-wide-dashboard-tiles"></a>Vignettes de tableau de bord à l’échelle de l’entreprise
 Ces vignettes offrent à notre directrice financière une vue d’ensemble des métriques globales de l’entreprise qu’elle juge importantes.  Quand quelque chose l’interpelle, elle peut sélectionner une vignette pour explorer les données.
 
@@ -123,6 +155,8 @@ Penchons-nous sur le secteur *Distribution* .
 Nous pouvons procéder de la même manière pour explorer d’autres secteurs, voire ajouter des clients à nos éléments visuels pour comprendre les performances de Valery.
 
 Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours choisir de ne pas enregistrer les modifications apportées. Mais si vous les enregistrez, vous pouvez toujours accéder à **Obtenir des données** pour avoir une nouvelle copie de cet exemple.
+
+Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529781).
 
 ## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
 Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations des données client. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/23/2018
 ms.author: maggies
-ms.openlocfilehash: 3515a57f88db1c8a7b12706680c0aade8b2cdbfa
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 610234a221c5ab1de976f9d554292395760efa0f
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -50,7 +50,7 @@ Les rapports Power BI sont stockés dans des emplacements différents dans l’a
   ![Rapport sur téléphone en mode Paysage](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Afficher les rapports optimisés pour les téléphones
-Les auteurs de rapports Power BI peuvent créer une disposition de rapport spécialement optimisée pour les téléphones. Dans la liste des rapports, un rapport optimisé possède une icône spéciale ![Icône de rapport sur téléphone](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Les auteurs de rapports Power BI peuvent créer une disposition de rapport spécialement optimisée pour les téléphones. Les pages de rapport optimisées pour les téléphones ont de nouvelles fonctionnalités : par exemple, vous pouvez effectuer une exploration vers le bas et un tri des visuels en mode Focus et vous pouvez accéder aux [filtres que l’auteur du rapport a ajoutés à la page de rapport](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Dans la liste des rapports, un rapport optimisé possède une icône spéciale ![icône de rapport sur téléphone](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png) :
 
 ![Ouvrir le rapport sur téléphone](media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
 
@@ -58,7 +58,7 @@ Lorsque vous affichez un rapport sur un téléphone, il s’ouvre en mode portra
 
 ![Rapport en mode Portrait](media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
 
-Un rapport peut avoir une combinaison de pages optimisées et non optimisées pour les téléphones. Dans ce cas, lorsque vous parcourez le rapport, l’affichage bascule du mode portrait au mode paysage pour chaque page.
+ Un rapport peut avoir une combinaison de pages optimisées et non optimisées pour les téléphones. Dans ce cas, lorsque vous parcourez le rapport, l’affichage bascule du mode portrait au mode paysage pour chaque page.
 
 En savoir plus sur les [rapports optimisés pour l’affichage sur téléphone](mobile-apps-view-phone-report.md).
 

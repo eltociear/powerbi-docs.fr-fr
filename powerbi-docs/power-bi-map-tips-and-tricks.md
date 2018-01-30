@@ -16,18 +16,23 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: 5ab075ede78ad5c08858878d6652e9b102a87fca
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 553e3c417f79d6d1c5a45737ad370d74f72177ca
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Trucs et astuces pour les visualisations de carte Power BI
-De par son intégration à Bing Cartes, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui vous permet de créer des cartes. Les deux solutions utilisent des algorithmes pour identifier l’emplacement correct, mais parfois elles présentent seulement une estimation. Si l’instance Power BI ne parvient pas à créer la visualisation de carte, elle demande l’aide de Bing Cartes.  
+De par son intégration à Bing Cartes, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui vous permet de créer des cartes. Les deux solutions utilisent des algorithmes pour identifier l’emplacement correct, mais parfois elles présentent seulement une estimation. Si l’instance Power BI ne parvient pas à créer la visualisation de carte, elle demande l’aide de Bing Cartes. 
 
-Pour augmenter vos chances d’obtenir un géocodage correct, appliquez les conseils suivants. Vous pouvez utiliser le premier ensemble de conseils si vous avez accès au jeu de données lui-même. Le deuxième ensemble de conseils reprend ce que vous pouvez effectuer dans Power BI si vous n’avez pas accès au jeu de données.
+Vous ou votre administrateur devrez peut-être mettre à jour votre pare-feu pour autoriser l’accès aux URL que Bing utilise pour le géocodage.  Il s’agit des URL suivantes :
+* https://dev.virtualearth.net/REST/V1/Locations
+* https://platform.bing.com/geo/spatial/v1/public/Geodata
+* https://www.bing.com/api/maps/mapcontrol
+
+Pour augmenter vos chances d’obtenir un géocodage correct, appliquez les conseils suivants. Vous pouvez utiliser le premier ensemble de conseils si vous avez accès au jeu de données lui-même. Le deuxième ensemble de conseils reprend ce que vous pouvez effectuer dans Power BI si vous n’avez pas accès au jeu de données. L’ensemble final est une liste d’URL
 
 ## <a name="what-is-sent-to-bing-maps"></a>Ce qui est envoyé à Bing Cartes
 Le service Power BI et Power BI Desktop envoient à Bing les données géographiques nécessaires pour créer la visualisation de carte. Il peut s’agir des données des compartiments d’**emplacement**, de **latitude** et de **longitude** et des champs de données géographiques dans un des compartiments de filtrage **Niveau rapport**, **Niveau page** ou **Niveau visuel**. Ce qui est envoyé exactement varie en fonction du type de carte. Pour en savoir plus, consultez [Bing Cartes](https://go.microsoft.com/fwlink/?LinkID=248686).

@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/22/2018
 ms.author: davidi
-ms.openlocfilehash: ec5d5de3d29ccbe857f6fd40320353c357e6539e
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 6b2002348ae7e8ef2bb2e112eb8be967d0c68545
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Exporter des rapports de Power BI vers PowerPoint (version préliminaire)
 Avec Power BI, vous pouvez à présent publier votre rapport dans **Microsoft PowerPoint** et créer facilement un ensemble de diapositives en fonction de votre rapport Power BI. Lorsque vous **exportez vers PowerPoint**, les éléments suivants se produisent :
 
 * Chaque page du rapport Power BI devient une diapositive dans PowerPoint.
-* Chaque visuel du rapport Power BI est exporté en tant qu’image haute résolution dans PowerPoint.
+* Chaque page du rapport Power BI est exportée en tant qu’image haute résolution dans PowerPoint
 * Les zones de texte du rapport Power BI deviennent modifiables dans PowerPoint.
 * Dans PowerPoint, un lien est créé. Il renvoie vers le rapport Power BI.
 
@@ -65,7 +65,11 @@ Lorsque vous ouvrez le fichier PowerPoint que Power BI a exporté, quelques él
 2. Vous obtenez également des informations utiles sur le rapport, y compris la *dernière actualisation des données* sur laquelle est basé le rapport exporté et l’heure et la date de *téléchargement*, qui correspondent à l’heure et à la date auxquelles le rapport Power BI a été exporté dans un fichier PowerPoint.
 3. Chaque page du rapport est une diapositive distincte, comme indiqué dans le volet de navigation gauche.
 
-Lorsque vous accédez à une diapositive, vous remarquez que chaque visuel est une image indépendante (comme mentionné plus haut). De cette façon, vous pouvez copier cette image et la coller dans une autre diapositive ou là où vous souhaitez.
+Lorsque vous accédez à une diapositive, vous remarquez que chaque page de rapport est une image indépendante.
+
+>[!NOTE]
+> Avoir un seul visuel pour chaque page du rapport est un nouveau comportement. Le comportement précédent, qui fournissait une image indépendante pour chaque visuel, n’est plus implémenté. 
+ 
 
 ![](media/service-publish-to-powerpoint/powerbi_to_powerpoint_6.png)
 
@@ -85,6 +89,7 @@ Voici quelques considérations et limitations à prendre en compte lorsque vous 
 * Les pages dans PowerPoint sont toujours créées dans la taille standard 9:16, quelles que soient les tailles de page ou dimensions d’origine dans le rapport Power BI.
 * Vous ne pouvez pas publier vers PowerPoint les rapports possédés par un utilisateur extérieur de votre domaine de locataire Power BI (par exemple, un rapport appartenant à une personne extérieure à votre organisation et partagé avec vous).
 * Si vous partagez un tableau de bord avec une personne externe à votre organisation (et par conséquent, un utilisateur qui n’est pas dans votre locataire Power BI), cet utilisateur ne peut pas exporter vers PowerPoint les rapports associés du tableau de bord partagé. Par exemple, si vous êtes aaron@contoso.com, vous pouvez partager avec david@cohowinery.com. Mais david@cohowinery.com ne peut pas exporter les rapports associés vers PowerPoint.
+* Comme mentionné précédemment, chaque page du rapport est exportée en tant qu’image unique dans le fichier PowerPoint. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Analyser dans Excel](service-analyze-in-excel.md)

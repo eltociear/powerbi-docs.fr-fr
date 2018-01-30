@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 44c248d1a99a10c69b3fb7c78e68320fdc5cd2b2
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 2d8ed3c30d289646504071daca098df1f41f6aab
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Nuages de points et graphiques en bulles dans Power BI (didacticiel)
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Ces derniers peuvent être distribués uniformément ou non sur l’axe horizontal, en fonction des données.
@@ -30,6 +30,8 @@ Un nuage de points a toujours deux axes de valeur pour afficher un jeu de donné
 Un graphique en bulles remplace les points de données par des bulles, la *taille* de la bulle représentant une dimension supplémentaire des données.
 
 ![](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+
+Vous pouvez définir le nombre de points de données  
 
 ## <a name="when-to-use-a-scatter-chart-or-bubble-chart"></a>Choix de l’utilisation d’un nuage de points ou d’un graphique en bulles
 ### <a name="scatter-charts-are-a-great-choice"></a>Les nuages de points sont conseillés dans les cas suivants :
@@ -39,7 +41,7 @@ Un graphique en bulles remplace les points de données par des bulles, la *taill
 * Pour transformer l’axe horizontal en échelle logarithmique.
 * Pour afficher les données de feuille de calcul qui incluent des paires ou des jeux groupés de valeurs. Dans un nuage de points, vous pouvez ajuster les échelles indépendantes des axes pour afficher plus d’informations sur les valeurs groupées.
 * Pour afficher des modèles dans de grands jeux de données, par exemple en affichant des valeurs hors norme, des clusters et des tendances linéaires ou non linéaires.
-* Pour comparer un grand nombre de points de données sans distinction de temps. Plus vous incluez de données dans un nuage de points, meilleures sont les comparaisons possibles.
+* Pour comparer un grand nombre de points de données sans distinction de temps.  Plus vous incluez de données dans un nuage de points, meilleures sont les comparaisons possibles.
 
 ### <a name="bubble-charts-are-a-great-choice"></a>Les graphiques en bulles sont conseillés dans les cas suivants :
 * Si vos données ont 3 séries de données qui contiennent chacune un jeu de valeurs.
@@ -76,13 +78,20 @@ Nous disposons désormais d’un nuage de points qui trace le pourcentage d’é
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 3. Si vous le souhaitez, [mettez en forme les couleurs, étiquettes, titres, arrière-plan, etc. de la visualisation](service-getting-started-with-color-formatting-and-axis-properties.md).
 
-## <a name="accessibility"></a>Accessibilité
+   Vous pouvez également modifier la forme de marqueur et la définir sur un losange, triangle ou carré :
 
-Vous pouvez rendre votre nuage de points ou graphique en bulles plus accessible aux personnes handicapées grâce à des *formes de marqueur*. 
+   ![Marqueur Carré](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
-Pour sélectionner la forme de marqueur, sélectionnez la section **Format** dans le volet **Visualisations**, développez la section **Formes**, puis sélectionnez une forme de marqueur.
+4. Si vous le souhaitez, pour définir le nombre de points de données à afficher dans votre graphique à bulles, dans la section **Format** du volet **Visualisations**, développez la carte **Général** et ajustez le **Volume de données**. La valeur par défaut est 3 500. 
+ 
+    ![Volume de données](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
-![Forme de marqueur](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+   > [!NOTE]
+   > Étant donné que davantage de points de données peut entraîner un temps de chargement plus long, si vous choisissez de publier des rapports avec des limites à l’extrémité supérieure de l’échelle, veillez à tester vos rapports sur le web et les appareils mobiles pour vous assurer que les performances correspondent aux attentes de vos utilisateurs.
+
+5.   Si vous le souhaitez, pour sélectionner la forme de marqueur, développez la carte **Formes**, puis sélectionnez une forme de marqueur.
+
+      ![Forme de marqueur](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 ### <a name="your-scatter-chart-has-only-one-data-point"></a>**Votre nuage de points a un seul point de données**

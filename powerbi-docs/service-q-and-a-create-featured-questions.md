@@ -1,5 +1,5 @@
 ---
-title: "Création de questions exemplaires pour les Q&R de Power BI"
+title: "Création de questions exemplaires pour Questions et réponses dans Power BI"
 description: "Documentation sur la création de questions exemplaires pour les Q&R de Power BI"
 services: powerbi
 documentationcenter: 
@@ -16,16 +16,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: 4b8a606cd110c13a615be88d49f04e68b3f2cbe6
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: e6a83796afe6afab02ec463d3dd2074d1fdc529a
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Création de questions exemplaires pour les Q&R de Power BI
-Si vous possédez un jeu de données, vous pouvez y ajouter vos propres questions exemplaires.  Les Q&R de Power BI affichent ensuite ces questions à ceux de vos collègues qui utilisent votre jeu de données.  Les questions exemplaires ont pour but de donner à vos collègues des idées sur les types de questions qu’ils peuvent poser concernant le jeu de données. Le choix des questions exemplaires que vous ajoutez vous appartient. Vous pouvez ajouter des questions fréquemment posées, des questions qui présentent des résultats intéressants ou des questions qui peuvent être difficiles à formuler.
+Si vous possédez un jeu de données, vous pouvez y ajouter vos propres questions exemplaires.  Questions et réponses dans Power BI affiche ces questions à ceux de vos collègues qui utilisent (*consomment*) votre jeu de données.  Les questions exemplaires ont pour but de donner à vos collègues des idées sur les types de questions qu’ils peuvent poser concernant le jeu de données. Le choix des questions exemplaires que vous ajoutez vous appartient. Vous pouvez ajouter des questions fréquemment posées, des questions qui présentent des résultats intéressants ou des questions qui peuvent être difficiles à formuler.
 
 Regardez Will ajouter des questions proposées aux Q&R de Power BI et ensuite utiliser ces questions proposées pour explorer son jeu de données. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même.
 
@@ -33,7 +33,6 @@ Regardez Will ajouter des questions proposées aux Q&R de Power BI et ensuite u
 
 > [!NOTE]
 > Les questions proposées par la fonctionnalité Questions et réponses sont disponibles dans l’[application Microsoft Power BI pour iOS sur les appareils iPad, iPhone et iPod Touch](mobile-apps-ios-qna.md) et la préversion de Questions et réponses dans Power BI Desktop. La création de questions n’est toutefois disponible que dans le service Power BI (app.powerbi.com).
-> 
 > 
 
 Cet article utilise [l’Exemple Analyse de la vente au détail](sample-datasets.md).
@@ -54,7 +53,7 @@ Cet article utilise [l’Exemple Analyse de la vente au détail](sample-datasets
    ![](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ### <a name="next-steps"></a>Étapes suivantes
-[Q&R dans Power BI](service-q-and-a.md)  
+[Q&R dans Power BI](power-bi-q-and-a.md)  
 [Didacticiel : Présentation de Q&R de Power BI](power-bi-visualization-introduction-to-q-and-a.md)  
 [Power BI – Concepts de base](service-basic-concepts.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

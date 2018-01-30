@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/19/2018
 ms.author: davidi
-ms.openlocfilehash: 733e24f44c63b8887c3c8b00999f7cea22581a86
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 743f9dc0a96c2816693695f4ca2878aba09873df
+ms.sourcegitcommit: a973bc6adc88507932e7e1535a74208e3842f5c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Niveaux de confidentialité Power BI Desktop
 Dans **Power BI Desktop**, les niveaux de confidentialité spécifient un niveau d’isolement qui définit le degré d’isolement d’une source de données par rapport aux autres sources de données. Bien qu'un niveau d'isolement restrictif empêche l’échange d’informations entre les sources de données, cela peut réduire les fonctionnalités et affecter les performances.
@@ -69,6 +69,10 @@ Le paramètre **Niveaux de confidentialité** est défini par défaut sur **Comb
 
 > **Note de sécurité :** activer le paramètre **Niveaux de confidentialité** en sélectionnant **Ignorer les niveaux de confidentialité et potentiellement améliorer les performances** dans la boîte de dialogue **Niveaux de confidentialité** peut exposer des données sensibles ou confidentielles à une personne non autorisée. N’activez pas le paramètre **Niveaux de confidentialité** à moins d’être certain que la source de données ne contient pas de données sensibles ou confidentielles.
 > 
+> 
+
+> [!CAUTION]
+> L’option **Ignorer les niveaux de confidentialité et potentiellement améliorer les performances** ne fonctionne pas dans le service Power BI. Par conséquent, les rapports Power BI Desktop pour lesquels ce paramètre est activé et qui sont ensuite publiés sur le service Power BI ne reflètent *pas* ce comportement en cas d’utilisation dans le service.
 > 
 
 **Configurer les niveaux de confidentialité**

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: 6d2c14de83fcea1e9067fd3868b7559c3becce14
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: 797b22ed6f07e64d7e4970f8f0dfe5e93a7c0ec4
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaction avec des cartes ArcGIS dans Power BI
 Cette rubrique est écrite du point de vue d’une personne qui *utilise* une carte ArcGIS dans le service Power BI, dans Power BI Desktop ou dans la version mobile de Power BI. Une fois qu’un créateur a partagé une carte ArcGIS avec vous, il existe de nombreuses façons d’interagir avec celle-ci.  Pour en savoir plus sur la création d’une carte ArcGIS, consultez le [tutoriel sur les cartes ArcGIS par ESRI](power-bi-visualization-arcgis.md).
@@ -31,7 +31,6 @@ L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà 
 
 > [!TIP]
 > SIG (ou GIS pour Geographic Information Science en anglais) signifie système d’informations géographiques.
-> 
 > 
 
 L’exemple que nous utilisons est la carte ArcGIS créée dans le [tutoriel sur les cartes ArcGIS par ESRI](power-bi-visualization-arcgis.md). Il examine les ventes de l’année précédente par ville et utilise une carte classique avec des bulles pour représenter la taille et une couche de référence pour les revenus moyens des ménages. La carte contient 3 épingles et un rayon indiquant le temps de transport (en violet).
@@ -99,7 +98,7 @@ ArcGIS Maps pour Power BI est disponible dans les applications et services suiva
 <td>Oui</td>
 </tr>
 <tr>
-<td>Service Power BI (PowerBI.com)</td>
+<td>Service Power BI (app.powerbi.com)</td>
 <td>Oui</td>
 </tr>
 <tr>
