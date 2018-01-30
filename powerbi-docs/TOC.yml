@@ -922,8 +922,6 @@
           href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
         - name: "Afficher Power\_BI en mode présentation dans Surface\_Hub"
           href: mobile-windows-10-app-presentation-mode.md
-        - name: "Partager une vignette à partir de l’application mobile Power\_BI pour Windows\_10"
-          href: mobile-share-tile-windows-10-phone-app.md
 - name: "Développeur de Power\_BI"
   items:
     - name: Vue d’ensemble
