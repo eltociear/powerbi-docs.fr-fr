@@ -3,7 +3,7 @@ title: "Gérer les capacités dans Power BI Premium et Power BI Embedded"
 description: "Découvrez comment gérer Power BI Premium et permettre à l’ensemble de votre organisation d’accéder au contenu."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/10/2017
-ms.author: asaxton
-ms.openlocfilehash: d78e5ee1648daaa5aeb9247483bf849cf07d2599
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: aaa538fa35a4ae272373cb3ee3b1d1d12b6eb424
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gérer les capacités dans Power BI Premium et Power BI Embedded
 Découvrez comment vous pouvez gérer les capacités Power BI Premium et Power BI Embedded qui fournissent des ressources dédiées pour votre contenu.

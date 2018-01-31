@@ -3,7 +3,7 @@ title: "Utilisation de l’audit dans votre organisation"
 description: "Découvrez comment l’audit avec Power BI peut vous permettre d’analyser et d’examiner les actions effectuées. Vous pouvez utiliser le centre de sécurité et de conformité ou utiliser PowerShell."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/12/2017
-ms.author: asaxton
-ms.openlocfilehash: c4c62ab5c24b7abe2760535da0a6cf69982c7174
-ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
+ms.author: maghan
+ms.openlocfilehash: 4aca31605b0627929951c34dfb74aa736c89a04f
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="using-auditing-within-your-organization"></a>Utilisation de l’audit dans votre organisation
 
@@ -151,7 +151,7 @@ Le tableau suivant fournit des détails sur que vous pouvez voir affiché.
 | --- | --- | --- |
 | Rapport Power BI téléchargé |Cette activité est journalisée chaque fois qu’un rapport est téléchargé. |Nom du rapport, Nom du jeu de données |
 | Créer un rapport |Cette activité est journalisée chaque fois qu’un rapport est créé. |Nom du rapport, Nom du jeu de données |
-| Modifier un rapport |Cette activité est enregistrée chaque fois qu’un rapport est modifié. |Nom du rapport, Nom du jeu de données |
+| Modifier le rapport |Cette activité est enregistrée chaque fois qu’un rapport est modifié. |Nom du rapport, Nom du jeu de données |
 | Créer un jeu de données |Cette activité est journalisée chaque fois qu’un jeu de données est créé. |Nom du jeu de données, DataConnectivityMode |
 | Supprimer un jeu de données |Cette activité est journalisée chaque fois qu’un jeu de données est supprimé. |Nom du jeu de données, DataConnectivityMode |
 | Créer une application Power BI |Cette activité est journalisée chaque fois qu’une application Power BI est créée. |Nom de l’application, Autorisations, Nom de l’espace de travail |

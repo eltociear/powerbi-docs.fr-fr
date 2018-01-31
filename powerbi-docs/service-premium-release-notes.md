@@ -3,7 +3,7 @@ title: Notes de publication Power BI Premium
 description: "Lisez les notes de publication de Power BI Premium, une capacité dédiée pour votre équipe ou votre organisation."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/11/2017
-ms.author: asaxton
-ms.openlocfilehash: 7d16d9676b2c97c330c4126927dd810e8ac6768a
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: f729f20315d907cc2416723ba10b8c296e313899
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="power-bi-premium-release-notes"></a>Notes de publication Power BI Premium
 Il s’agit des notes de publication de Power BI Premium, une capacité dédiée qui offre à votre organisation ou à votre équipe des performances plus fiables, des volumes de données plus importants et la possibilité de distribuer du contenu sans licence par utilisateur pour les lecteurs.

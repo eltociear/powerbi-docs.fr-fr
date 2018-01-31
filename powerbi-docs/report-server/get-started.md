@@ -3,7 +3,7 @@ title: "Prise en main de Power BI Report Server"
 description: "Découvrez comment installer Power BI Report Server. "
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: a1dc05e722d4b50321b1fc825eeab9284d2d88b5
-ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
+ms.openlocfilehash: 61558613b0022f7585b31c3e3d674a64ea009d61
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="get-started-with-power-bi-report-server"></a>Prise en main de Power BI Report Server
 Créez, déployez et gérez localement des rapports Power BI mobiles et paginés avec la gamme d’outils et services prêts à l’emploi de Power BI Report Server.
