@@ -3,7 +3,7 @@ title: "Transmission de données à un jeu de données"
 description: "Transmission de données à un jeu de données Power BI"
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/05/2017
-ms.author: asaxton
-ms.openlocfilehash: aba135a0a790025f732379ecb07157f1150d999c
-ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
+ms.author: maghan
+ms.openlocfilehash: 8cebd6d7020a997fa9f49cd1f5618232a299bb4f
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
 Avec l’API Power BI, vous pouvez transmettre des données à un jeu de données Power BI. Par exemple, vous voulez étendre un workflow d’entreprise existant pour transmettre des données clés à votre jeu de données. Dans ce cas, vous voulez transmettre un jeu de données Sales Marketing qui possède une table Product à un jeu de données.

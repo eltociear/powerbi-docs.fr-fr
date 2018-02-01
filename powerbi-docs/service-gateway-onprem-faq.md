@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: bf814b03c4e973afce7115ae111da520af498347
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 626a99467dc02481e004e0472d38cb733f836332
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="on-premises-data-gateway-faq"></a>FAQ Passerelle de données locale
 <!-- Shared FAQ shared Include -->
@@ -56,7 +56,7 @@ ms.lasthandoff: 11/27/2017
 **Question :** Puis-je obtenir des informations statistiques et sur l’utilisation des passerelles de mon organisation ?  
 **Réponse :** non. Cela est prévu, mais aucune date de sortie n’est définie pour le moment.
 
-## <a name="power-bi"></a>Power BI
+## <a name="power-bi"></a>Power BI
 **Question :** Ai-je besoin de mettre à niveau la passerelle personnelle ?
 **Réponse :** Non. Vous pouvez continuer à utiliser la passerelle personnelle Power BI.
 
