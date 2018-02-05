@@ -1,5 +1,5 @@
 ---
-title: "Épingler une page de rapport entière sur un tableau de bord Power BI "
+title: "Guide pratique pour épingler une page de rapport tout entière sur un tableau de bord Power BI "
 description: "Documentation sur la manière d’épingler une page de rapport dynamique entière sur un tableau de bord Power BI à partir d’un rapport."
 services: powerbi
 documentationcenter: 
@@ -16,16 +16,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: ee8e7541db7f40a5d01607c6551ee734eb9f3d5b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8174a3043d544191032ec65e3b9a1710547b18ab
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Épingler une page entière de rapport, sous forme de vignette dynamique, sur un tableau de bord Power BI
-Pour ajouter une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md), vous pouvez aussi épingler une page entière de rapport.  Il s’agit d’un moyen simple d’épingler plusieurs visualisations à la fois.  De plus, quand vous épinglez une page entière, les vignettes sont *dynamiques*: vous pouvez interagir avec elles directement sur le tableau de bord. Les modifications apportées ultérieurement à des visualisations dans l’éditeur de rapports, comme ajouter un filtre ou changer les champs utilisés dans le graphique, sont également répercutées dans la vignette du tableau de bord.  
+Pour ajouter une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md), vous pouvez aussi épingler une page entière de rapport. Il s’agit d’un moyen simple d’épingler plusieurs visualisations à la fois.  De plus, quand vous épinglez une page entière, les vignettes sont *dynamiques*: vous pouvez interagir avec elles directement sur le tableau de bord. Les modifications apportées ultérieurement à des visualisations dans l’éditeur de rapports, comme ajouter un filtre ou changer les champs utilisés dans le graphique, sont également répercutées dans la vignette du tableau de bord.  
+
+L’épinglage de vignettes dynamiques sur des tableaux de bord à partir de rapports n’est disponible que dans le service Power BI (app.powerbi.com).
 
 > [!NOTE]
 > Vous ne pouvez pas épingler les vignettes de rapports qui sont partagés avec vous.

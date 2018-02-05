@@ -1,6 +1,6 @@
 ---
-title: Visualisations de table dans les rapports et tableaux de bord Power BI (didacticiel)
-description: "Conseils sur l’utilisation de visualisations de tableau dans les rapports et tableaux de bord Power BI, y compris comment redimensionner les largeurs de colonne."
+title: 'Didacticiel : Visualisations de tableaux dans les rapports et les tableaux de bord Power BI (didacticiel)'
+description: Ce didacticiel explique comment utiliser les visualisations de tableaux dans les rapports et les tableaux de bord Power BI, et notamment comment redimensionner la largeur des colonnes.
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: e4a2e162ca193af756e7182fb118bc7e72d38d28
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 4785df6bbc14bf0da4500a9cffdcd47381e412f4
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards-tutorial"></a>Utilisation des tableaux dans les rapports et les tableaux de bord Power BI (didacticiel)
 Un tableau est une grille qui contient les données connexes dans une série logique de lignes et colonnes. Il peut également contenir des en-têtes et une ligne de totaux. Les tableaux fonctionnent correctement avec des comparaisons quantitatives où vous examinez de nombreuses valeurs pour une même catégorie. Par exemple, ce tableau affiche 5 mesures différentes pour la **Catégorie**.
@@ -40,11 +40,16 @@ Les tableaux sont recommandés :
 > Si un tableau contient trop de valeurs, envisagez de le convertir en matrice et/ou d’utiliser la descente dans la hiérarchie.
 > 
 > 
+## <a name="prerequisites"></a>Conditions préalables
+ - Service Power BI ou Power BI Desktop
+ - Exemple Analyse de la vente au détail
+
 
 ## <a name="create-a-table"></a>Créer un tableau
-Pour effectuer la procédure, connectez-vous à Power BI et sélectionnez **Obtenir des données > Exemples > Exemple Analyse de la vente au détail**. Vous allez créer le tableau illustré ci-dessus pour afficher les valeurs de ventes par catégorie d’article.
+Vous allez créer le tableau illustré ci-dessus pour afficher les valeurs de ventes par catégorie d’article. Pour la suite, connectez-vous au service Power BI et sélectionnez **Obtenir des données \> Exemples \> Exemple Analyse de la vente au détail > Se connecter**, puis choisissez **Accéder au tableau de bord. La création d’une visualisation nécessite des autorisations de modification du jeu de données et du rapport. Par chance, les exemples Power BI sont tous modifiables. Si le rapport a été partagé avec vous, vous ne pourrez pas y créer de visualisations.
 
-1. Dans **Mon espace de travail**, sélectionnez l’onglet Jeux de données, puis faites défiler vers le bas jusqu’au jeu de données Exemple Analyse de la vente au détail que vous venez d’ajouter.  Sélectionnez l’icône **Créer un rapport**.
+1. Dans le volet de navigation gauche, sélectionnez **Espaces de travail > Mon espace de travail**.    
+2. Sélectionnez l’onglet Jeux de données, puis faites défiler la page vers le bas jusqu’au jeu de données d’exemple Analyse de la vente au détail que vous venez d’ajouter.  Sélectionnez l’icône **Créer un rapport**.
    
     ![](media/power-bi-visualization-tables/power-bi-create-report.png)
 2. Dans l’Éditeur de rapport, sélectionnez **Élément** > **Catégorie**.  Power BI crée automatiquement un tableau qui répertorie toutes les catégories.

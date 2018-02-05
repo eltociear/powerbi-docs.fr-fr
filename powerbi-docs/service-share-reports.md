@@ -1,11 +1,11 @@
 ---
-title: "Partager des rapports Power BI avec des collègues"
-description: "Découvrez comment partager des rapports Power BI, et des rapports filtrés, avec des collègues de votre organisation."
+title: "Filtrer et partager des rapports Power BI avec des collègues"
+description: "Découvrez comment partager un rapport Power BI filtré avec des collègues de votre organisation."
 services: powerbi
 documentationcenter: 
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
+backup: lukaszp
 editor: 
 tags: 
 featuredvideoid: 0tUwn8DHo3s
@@ -16,43 +16,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 01/18/2018
 ms.author: maggies
-ms.openlocfilehash: 2a7b4cc652e600b9a368f6f7eda657c06e131da3
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: fff70dc8e0fa1eaafd68d5995881b2c416d4e29d
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/24/2018
 ---
-# <a name="share-power-bi-reports-with-your-coworkers"></a>Partager des rapports Power BI avec vos collègues
-Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI offre [plusieurs façons de collaborer et de distribuer vos rapports](service-how-to-collaborate-distribute-dashboards-reports.md). Le partage en est une.
+# <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Partager un rapport Power BI filtré avec des collègues
+Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI propose également [d’autres façons de collaborer et de distribuer des rapports](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 Avec le partage, vous et vos destinataires avez besoin d’une [licence Power BI Pro](service-free-vs-pro.md) ou le contenu doit être dans une [capacité Premium](service-premium.md). Vous avez des suggestions ? L’équipe Power BI est toujours intéressée par vos commentaires. Pour cela, accédez au [site de la communauté Power BI](https://community.powerbi.com/).
 
-Vous pouvez partager un rapport avec des collègues du même domaine de messagerie que vous, à partir de votre espace de travail personnel ou d’un espace de travail d’application. Quand vous partagez un rapport, les utilisateurs avec qui vous le partagez peuvent l’afficher et interagir avec lui, mais ils ne peuvent pas le modifier. Ils voient les mêmes données que vous dans le rapport, sauf si la [sécurité au niveau des lignes](service-admin-rls.md) est appliquée. 
+Vous pouvez partager un rapport avec vos collègues du même domaine de courrier que vous, à différents endroits du service Power BI : Favoris, Récents, Partagés avec moi (si le propriétaire le permet), Mon espace de travail ou d’autres espaces de travail. Quand vous partagez un rapport, les utilisateurs avec qui vous le partagez peuvent l’afficher et interagir avec lui, mais ils ne peuvent pas le modifier. Ils voient les mêmes données que vous dans le rapport, sauf si la [sécurité au niveau des lignes](service-admin-rls.md) est appliquée. 
 
-## <a name="share-a-power-bi-report"></a>Partager un rapport Power BI
-1. Dans le service Power BI, [créez un tableau de bord](service-dashboard-create.md) contenant au moins une vignette établissant un lien vers le rapport que vous souhaitez partager. 
-   
-    Même si vous souhaitez uniquement partager le rapport, vous devez commencer par créer un tableau de bord établissant un lien vers le rapport, puis le partager. 
-
-1. Dans l’angle supérieur droit du tableau de bord, sélectionnez **Partager**.
-
-     ![Sélectionner Partager](media/service-share-reports/power-bi-share-upper-right.png)
-  
-2. Adressez-le aux destinataires souhaités. Si vous ne souhaitez pas leur envoyer d’e-mail concernant le tableau de bord, désactivez la case à cocher **Envoyer une notification par e-mail aux destinataires**.
-
-     ![Désactiver la case à cocher Envoyer une notification par e-mail](media/service-share-reports/power-bi-share-dont-send-mail.png)
-
-4. Sélectionnez **Partager**.
-
-      Les personnes avec qui vous partagez le tableau de bord sont maintenant autorisées à afficher le rapport sous-jacent. 
-
-1. Ouvrez le rapport dans le service Power BI, copiez l’URL de la page de rapport et envoyez-la à vos collègues. 
-   
-    Lorsque ceux-ci cliquent sur le lien, Power BI ouvre une version en lecture seule du rapport.
-
-## <a name="share-a-filtered-version-of-a-report"></a>Partager une version filtrée d’un rapport
+## <a name="filter-and-share-a-report"></a>Filtrer et partager un rapport
 Est-il possible de partager une version filtrée d’un rapport ? Par exemple un rapport qui affiche uniquement les données relatives à une ville, un fournisseur ou un commercial spécifique. Pour ce faire, créez une URL personnalisée.
 
 1. Ouvrez le rapport en [mode Édition](service-reading-view-and-editing-view.md), appliquez le filtre et enregistrez le rapport.
@@ -74,11 +53,13 @@ Est-il possible de partager une version filtrée d’un rapport ? Par exemple u
    
    Comme votre navigateur ajoute des caractères spéciaux pour représenter les barres obliques, les espaces et les apostrophes, vous obtenez le résultat suivant :
    
-   app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-10a61f70f2f5/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
+   app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-xxxxxxxxxxxx/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
 
-3. Envoyez cette URL à vos collègues. 
-   
-   Lorsque ceux-ci cliquent sur le lien, Power BI ouvre une version en lecture seule du rapport filtré.
+3. [Partagez le rapport](service-share-dashboards.md), mais décochez la case **Envoyer une notification par courrier électronique aux destinataires**. 
+
+    ![Boîte de dialogue Partager le rapport](media/service-share-reports/power-bi-share-report-dialog.png)
+
+4. Envoyez le lien du filtre que vous avez créé.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * Vous voulez donner votre avis ? Accédez au [site de la communauté Power BI](https://community.powerbi.com/) pour effectuer des suggestions.

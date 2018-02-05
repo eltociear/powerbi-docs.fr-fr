@@ -1,5 +1,5 @@
 ---
-title: "Créer un rapport à partir d’un jeu de données "
+title: "Didacticiel : Créer un rapport à partir d’un jeu de données "
 description: "Créez un rapport Power BI à partir d’un jeu de données."
 services: powerbi
 documentationcenter: 
@@ -15,20 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/24/2018
 ms.author: mihart
-ms.openlocfilehash: f4afb1eaa1b3012fdbdb0eff35e9eff695cc32e4
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 7405f2c5663c071d58253f2103c9c7d778ea8299
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="create-a-new-power-bi-report-by-importing-a-dataset"></a>Créer un rapport Power BI en important un jeu de données
 Vous avez lu [apports dans Power BI](service-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe de nombreuses façons de créer un rapport. Dans cet article, nous allons commencer par créer un rapport très basique à partir d’un jeu de données Excel. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, les **Étapes suivantes** plus bas vous dirigeront vers des rubriques plus avancées concernant les rapports.  
 
 > **CONSEIL** : pour créer un rapport en copiant un rapport existant, voir [Copier un rapport](power-bi-report-copy.md).
 > 
-> 
+### <a name="prerequisites"></a>Conditions préalables
+- Service Power BI (pour créer des rapports avec Power BI Desktop, consultez la section [Affichage Rapport Desktop](desktop-report-view.md)   
+- Jeu de données d’exemple Analyse de la vente au détail
 
 ## <a name="import-the-dataset"></a>Importer le jeu de données
 Cette méthode de création d’un rapport démarre avec un jeu de données et un canevas de rapport vide. Pour suivre la procédure, [téléchargez l’exemple de jeu de données Excel Analyse de la vente au détail](http://go.microsoft.com/fwlink/?LinkId=529778) et enregistrez-le dans OneDrive Entreprise (recommandé) ou localement.
@@ -36,7 +38,7 @@ Cette méthode de création d’un rapport démarre avec un jeu de données et u
 1. Nous allons créer le rapport dans un espace de travail du service Power BI. Par conséquent, sélectionnez un espace de travail existant ou créez-en un.
    
    ![](media/service-report-create-new/power-bi-workspaces2.png)
-2. En bas de la barre de navigation de gauche, sélectionnez **Obtenir les données**.
+2. En bas du volet de navigation gauche, sélectionnez **Obtenir des données**.
    
    ![](media/service-report-create-new/power-bi-get-data3.png)
 3. Sélectionnez **Fichiers**, puis accédez à l’emplacement dans lequel vous avez enregistré l’exemple Analyse de la vente au détail.
@@ -83,7 +85,7 @@ Notre Directrice marketing a des questions supplémentaires à nous poser. Elle 
 4. Sélectionnez **Time** > **Period** (Période) pour l’ajouter au puits **Axe**.
    
     ![](media/service-report-create-new/power-bi-report-step5.png)
-5. Pour trier la visualisation, sélectionnez les points de suspension, puis choisissez **Trier par période**.
+5. Pour trier la visualisation par période, sélectionnez les points de suspension, puis choisissez **Trier par période**.
 6. Nous allons à présent ajouter le segment. Sélectionnez une zone vide sur le canevas, puis choisissez le modèle de Segment ![](media/service-report-create-new/power-bi-slicer-icon.png). Cela a pour effet d’ajouter un segment vide à notre canevas.
    
     ![](media/service-report-create-new/power-bi-report-step6.png)    
@@ -93,12 +95,11 @@ Notre Directrice marketing a des questions supplémentaires à nous poser. Elle 
 8. Utilisez le segment pour rechercher des modèles et des informations par secteur.
    
    ![](media/service-report-create-new/power-bi-slicer-video2.gif)  
-9. Si vous le souhaitez, vous pouvez continuer à ajouter des visualisations.
+
+Continuer d’explorer vos données et d’ajouter des visualisations. Lorsque vous trouvez des informations particulièrement intéressantes, [épinglez-les à un tableau de bord](service-dashboard-pin-tile-from-report.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Créer une copie d’un rapport](power-bi-report-copy.md)
-* [Enregistrer le rapport](service-report-save.md)    
 * [Ajouter une nouvelle page au rapport](power-bi-report-add-page.md)  
-* Découvrez comment [épingler des visualisations à un tableau de bord](service-dashboard-pin-tile-from-report.md).    
+* Découvrez comment [épingler des visualisations à un tableau de bord](service-dashboard-pin-tile-from-report.md).   
 * D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

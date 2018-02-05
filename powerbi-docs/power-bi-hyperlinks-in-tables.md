@@ -1,5 +1,5 @@
 ---
-title: Liens hypertexte dans les tables
+title: "Guide pratique pour ajouter un lien hypertexte à un tableau"
 description: Liens hypertexte dans les tables
 services: powerbi
 documentationcenter: 
@@ -15,16 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: e399553b9a31adb79bed73977409d5d88140ad88
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a5a38934ab684691921c480a02024376a4655b8b
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="hyperlinks-in-tables"></a>Liens hypertexte dans les tables
-Cette rubrique explique comment utiliser Power BI Desktop pour créer des liens hypertexte. Une fois que vous avez créé les liens hypertexte, utilisez Power BI Desktop ou le service Power BI pour ajouter ces liens hypertexte à vos tableaux et matrices de rapport. 
+Cette rubrique explique comment utiliser Power BI Desktop pour créer des liens hypertexte. Une fois que vous avez créé des liens hypertexte, utilisez Power BI Desktop ou le service Power BI pour les ajouter à vos tableaux et matrices de rapport. 
 
 ![](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
@@ -84,6 +84,11 @@ Une autre méthode pour ajouter des liens hypertexte à vos tableaux et matrices
 7. Créez une visualisation de table comprenant le champ d’URL.
    
    ![](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
+
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+Q : Peut-on utiliser une URL personnalisée comme lien hypertexte dans un tableau ou dans une matrice ?    
+R : Non. Il est possible d’utiliser une icône de lien. Si vous avez besoin d’un texte personnalisé pour vos liens hypertextes et que votre liste d’URL est courte, vous pouvez utiliser une zone de texte à la place.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)

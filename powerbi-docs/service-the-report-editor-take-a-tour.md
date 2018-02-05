@@ -1,5 +1,5 @@
 ---
-title: "Découverte de l’éditeur de rapport"
+title: "Démarrage rapide : Visite guidée de l’éditeur de rapport"
 description: "Découverte de l’éditeur de rapport."
 services: powerbi
 documentationcenter: 
@@ -16,20 +16,26 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/23/2018
 ms.author: mihart
-ms.openlocfilehash: e5ee6db22fe0fa7fd1e61ebbfb7dbee9d3458159
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8ecee2c5de9959937b5afa56cdf5b3679c5b9a5e
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="the-report-editortake-a-tour"></a>Découverte de l’éditeur de rapport
+## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Modifier des rapports dans Power BI Desktop et le service Power BI
 L’éditeur de rapport dans le service Power BI et l’éditeur de rapport dans Power BI Desktop sont très similaires. La vidéo montre l’éditeur de rapport dans Power BI Desktop et cet article montre l’éditeur de rapport dans le service Power BI. 
+
+## <a name="the-difference-between-report-creators-and-report-consumers"></a>La différence entre les *créateurs* et les *consommateurs* de rapports
+La possibilité de créer et de modifier un rapport est réservée aux propriétaires de rapports (également appelés *créateurs*). Si vous êtes *consommateur* d’un rapport qui a été partagé avec vous, vous pourrez toujours ouvrir et interagir avec le rapport dans le service Power BI en [Mode Lecture seule](service-reading-view-and-editing-view.md), mais vous ne profiterez pas de toutes les fonctionnalités robustes auxquelles le créateur de rapports a accès.  
+
+Pour plus d’informations sur le Mode Lecture des rapports, consultez la section [Modes Lecture et Édition dans le service Power BI](service-reading-view-and-editing-view.md). 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Dans le service Power BI, l’*éditeur de rapport* est disponible uniquement en [mode Édition](service-reading-view-and-editing-view.md). Pour ouvrir un rapport en mode Édition, vous devez être propriétaire d’un rapport.
+Dans le service Power BI, l’*éditeur de rapport* est disponible uniquement en [mode Édition](service-reading-view-and-editing-view.md). Pour ouvrir un rapport en Mode Édition, vous devez en être propriétaire ou créateur.
 
 L’éditeur de rapport dans Power BI comprend 3 sections :  
 
@@ -87,7 +93,9 @@ Le volet Analyse du service Power BI vous permet d’ajouter des lignes de réf�
 
 - - -
 ## <a name="the-filters-pane"></a>Le volet Filtres
-Affichez, définissez et modifiez les filtres de page, de rapport, d’extraction et de visuel.
+Utilisez le volet Filtres pour afficher, définir et modifier des filtres permanents sur vos rapports au niveau de la page, du rapport, de l’extraction et du visuel. Certes, vous pouvez effectuer un filtrage ad hoc sur les pages et les visuels des rapports en sélectionnant certains éléments ou en utilisant des outils comme les segments, mais, avec le volet Filtres, l’état des filtres est enregistré avec le rapport. 
+
+Le volet Filtres a une autre fonctionnalité puissante : la possibilité de filtrer sur un champ ***non encore utilisé dans les visuels du rapport***. Qu’est-ce que cela signifie ? Lors de la création d’une page de rapport, Power BI ajoute automatiquement tous les champs utilisés dans les visualisations au volet Filtres, dans la zone correspondant aux filtres au niveau des visuels.  Pour définir un visuel, une page, une extraction ou un filtre de rapport à l’aide d’un champ qui n’est pas utilisé actuellement dans une visualisation, il suffit de le faire glisser dans un des compartiments Filtres.   
 
 ![](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
@@ -125,11 +133,7 @@ Le canevas de rapport est l’emplacement où votre travail s’affiche. Lorsque
 ## <a name="next-steps"></a>Étapes suivantes :
 [Créer un rapport](service-report-create-new.md)
 
-[Modifier un rapport](service-interact-with-a-report-in-editing-view.md)
-
-En savoir plus sur les [rapports dans Power BI](service-reports.md)
-
-[Prise en main de Power BI](service-get-started.md)
+Découvrez plus en détail les rapports dans le [service Power BI](service-reports.md), [Power BI Desktop](desktop-report-view.md) et [Power BI Mobile](mobile-apps-view-phone-report.md).
 
 [Power BI – Concepts de base](service-basic-concepts.md)
 

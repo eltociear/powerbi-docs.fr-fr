@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 424e96c5315bd41fc79999555097602f629a1285
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 52ad27e0f809ed5c3cf4ae22f0d536f88cae0f0c
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds-tutorial"></a>Personnaliser le titre, l’arrière-plan et la légende d’une visualisation (didacticiel)
 Ce didacticiel présente quelques façons de personnaliser vos visualisations.   Compte tenu du nombre important d’options de personnalisation pour les visualisations, la meilleure façon de les découvrir toutes consiste à explorer le volet Mise en forme (sélectionnez l’icône Rouleau à peindre).  Pour vous aider à commencer, cet article explique comment personnaliser le titre, la légende et l’arrière-plan d’une visualisation.  
@@ -33,9 +33,12 @@ Regardez Amanda personnaliser des visualisations dans son rapport (à la minute 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
+### <a name="prerequisites"></a>Conditions préalables
+- Service Power BI ou Power BI Desktop
+- Exemple Analyse de la vente au détail
 
 ## <a name="customize-visualization-titles-in-reports"></a>Personnaliser les titres des visualisations dans les rapports
-Pour poursuivre, connectez-vous à app.powerbi, puis ouvrez le rapport [Exemple Analyse de la vente au détail](sample-datasets.md) en [mode Edition](service-interact-with-a-report-in-editing-view.md).
+Pour la suite, connectez-vous au service Power BI (app.powerbi.com), puis ouvrez le rapport [Exemple Analyse de la vente au détail](sample-datasets.md) en [Mode Édition](service-interact-with-a-report-in-editing-view.md).
 
 > [!NOTE]
 > Quand vous épinglez une visualisation à un tableau de bord, elle prend la forme d’une vignette de tableau de bord.  Les vignettes peuvent également être personnalisées [en modifiant leurs titres et sous-titres, en leur ajoutant des liens hypertexte et en les redimensionnant](service-dashboard-edit-tile.md).
@@ -120,7 +123,6 @@ En reprenant le même histogramme, développez les options d’arrière-plan.
 | cascade |oui |oui |oui |
 
 ## <a name="next-steps"></a>Étapes suivantes
-En savoir plus sur les [visualisations dans les rapports Power BI](power-bi-report-visualizations.md)  
 [Personnaliser les axes x et y](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Personnaliser les couleurs et les propriétés des axes](service-getting-started-with-color-formatting-and-axis-properties.md)  
 [Power BI – Concepts de base](service-basic-concepts.md)  

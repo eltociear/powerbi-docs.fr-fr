@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/23/2018
 ms.author: mihart
-ms.openlocfilehash: 5e5bc8eaa4e710e6564ee6f1d3ea1bfcf7f28127
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 7a76cc071a114a7bbd4ccc8ade61ff10b7b2e4c5
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="treemaps-in-power-bi-tutorial"></a>Treemaps dans Power BI (didacticiel)
 Les treemaps utilisent des rectangles imbriqués pour présenter des données sous forme hiérarchique.  Chaque niveau de la hiérarchie est représenté par un rectangle de couleur (généralement appelé « branche ») qui contient d’autres rectangles (les « feuilles »).  L’espace à l’intérieur de chaque rectangle est attribué en fonction de la valeur quantitative mesurée. Les rectangles sont disposés par taille, avec le plus grand en haut à gauche et le plus petit en bas à droite.
@@ -41,20 +41,25 @@ Les treemaps sont conseillés :
 * pour représenter les attributs selon un codage par taille et couleur ;
 * pour repérer les modèles, les valeurs inhabituelles, les principaux contributeurs et les exceptions.
 
+### <a name="prerequisites"></a>Conditions préalables
+ - Service Power BI ou Power BI Desktop
+ - Exemple Analyse de la vente au détail
+
 ## <a name="create-a-basic-treemap"></a>Créer un treemap simple
 Vous souhaitez d’abord regarder une personne créer un treemap ?  Accédez à la position 2:10 de cette vidéo pour voir comment Amanda crée un graphique de compartimentage.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Ou bien, créez votre propre treemap. Ces instructions s’appliquent à l’exemple Analyse de la vente au détail. Pour effectuer la procédure, [téléchargez l’exemple](sample-datasets.md), connectez-vous à Power BI et sélectionnez **Obtenir des données \> Classeur Excel \> Se connecter \> Exemple Analyse de la vente au détail**.**xlsx**.
+Ou bien, créez votre propre treemap. Ces instructions s’appliquent à l’exemple Analyse de la vente au détail. Pour la suite, connectez-vous au service Power BI (pas à la version Desktop) et sélectionnez **Obtenir des données \> Exemples \> Exemple Analyse de la vente au détail \> Se connecter \> Accéder au tableau de bord**. Pour créer des visualisations dans un rapport, il est nécessaire de disposer d’autorisations de modification du jeu de données et du rapport. Par chance, les exemples Power BI sont modifiables. Toutefois, si quelqu'un partage un rapport avec vous, vous ne pourrez pas ajouter de nouvelles visualisations.
 
-1. Démarrez en [mode Édition](service-interact-with-a-report-in-editing-view.md), puis sélectionnez la mesure **Ventes** > **Ventes de l’année dernière**.   
-   ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)
-2. Convertissez le graphique en treemap.  
-   ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)
-3. Faites glisser **Élément** > **Catégorie** vers **Groupe**. Power BI crée un treemap où les rectangles ont une taille proportionnelle au total des ventes et une couleur distincte pour chaque catégorie représentée.  Pour résumer, vous avez créé une hiérarchie qui représente visuellement la quantité relative du total des ventes par catégorie.  La catégorie **Mens** enregistre les meilleures ventes, alors que la catégorie **Hosiery** enregistre les plus basses.
-   ![](media/power-bi-visualization-treemaps/treemapcomplete_new.png)
-4. Faites glisser **Magasin** > **Chaîne** vers **Détails** pour terminer votre treemap. Vous pouvez à présent comparer les ventes de l’année dernière par catégorie et par chaîne.   
+1. Sélectionnez la vignette Nombre total de magasins pour ouvrir le rapport de l’exemple Analyse de la vente au détail.    
+2. Ouvrez le [Mode Édition](service-interact-with-a-report-in-editing-view.md), puis sélectionnez la mesure **Ventes** > **Ventes de l’année dernière**.   
+   ![](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)   
+3. Convertissez le graphique en treemap.  
+   ![](media/power-bi-visualization-treemaps/treemapconvertto_new.png)   
+4. Faites glisser **Élément** > **Catégorie** vers **Groupe**. Power BI crée un graphique de compartimentage dont les rectangles ont une taille proportionnelle au total des ventes et une couleur distincte pour chaque catégorie représentée.  Pour résumer, vous avez créé une hiérarchie qui représente visuellement la quantité relative du total des ventes par catégorie.  La catégorie **Mens** enregistre les meilleures ventes, alors que la catégorie **Hosiery** enregistre les plus basses.   
+   ![](media/power-bi-visualization-treemaps/treemapcomplete_new.png)   
+5. Faites glisser **Magasin** > **Chaîne** vers **Détails** pour terminer votre treemap. Vous pouvez à présent comparer les ventes de l’année dernière par catégorie et par chaîne.   
    ![](media/power-bi-visualization-treemaps/treemap_addgroup_new.png)
    
    > [!NOTE]
@@ -73,17 +78,15 @@ La mise en surbrillance d’une catégorie ou de détails dans un treemap entra�
 
 1. Dans le treemap, sélectionnez une catégorie ou une chaîne au sein d’une catégorie.  Cela met en surbrillance croisée les autres visualisations sur la page. Sélectionnez la catégorie **050-Shoes**, par exemple, pour afficher le montant des ventes de chaussures l’année dernière (3 640 471 $) et la part de ces ventes réalisée par Fashions Direct (2 174 185 $).  
    ![](media/power-bi-visualization-treemaps/treemaphiliting.png)
-2. Dans le graphique en secteurs **Last Year Sales by Chain** (Ventes de l’année dernière par chaîne), sélectionnez le secteur **Fashions Direct** .  
-   ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)
+
+2. Dans le graphique en secteurs **Ventes de l’année dernière par chaîne**, sélectionnez le secteur **Fashions Direct** pour filtrer le graphique de compartimentage.  
+   ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
+
 3. Pour gérer la mise en surbrillance croisée et le filtrage croisé des tableaux entre eux, consultez [Interactions de visualisation dans un rapport Power BI](service-reports-visual-interactions.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Rapports dans Power BI](service-reports.md)  
-[Ajouter une visualisation à un rapport](power-bi-report-add-visualizations-i.md)  
-[Types de visualisations dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-[ Épingler une visualisation à un tableau de bord](service-dashboard-pin-tile-from-report.md)  
+[Épingler une visualisation à un tableau de bord](service-dashboard-pin-tile-from-report.md)  
 [Power BI – Concepts de base](service-basic-concepts.md)  
-[Essayez-le gratuitement !](https://powerbi.com/)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)  
 

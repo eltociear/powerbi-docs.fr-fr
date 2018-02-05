@@ -1,5 +1,5 @@
 ---
-title: "Exemple Rentabilité des clients pour Power BI : visite guidée"
+title: "Didacticiel : Exemple Rentabilité des clients pour Power BI : visite guidée"
 description: "Exemple Rentabilité des clients pour Power BI : visite guidée"
 services: powerbi
 documentationcenter: 
@@ -17,20 +17,23 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 82e909962a0ed1db50f2ba3729988fd7aacadc80
-ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
+ms.openlocfilehash: 1e53fd4b22710909e300a61b4c03aae01cff8973
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : visite guidée
+
+## <a name="overview-of-the-customer-profitability-sample"></a>Vue d’ensemble de l’exemple Rentabilité des clients
 Le pack de contenu « Exemple Rentabilité des clients » contient un tableau de bord, un rapport et un jeu de données qui concernent une société qui fabrique des supports marketing. Ce tableau de bord a été créé par une directrice financière désireuse d’afficher des métriques clés sur les 5 responsables de division (encadrement), les produits, les clients et les marges brutes (GM). D’un simple coup d’œil, elle peut identifier les facteurs qui ont un impact sur la rentabilité.
 
-Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http://www.obvience.com/)), présentées de façon anonyme.
+<<<<<<< HEAD ![](media/sample-customer-profitability/power-bi-dash.png)
+
+Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http://www.obvience.com/)), présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : application/pack de contenu, classeur Excel ou fichier PBIX Power BI Desktop. Consultez la section [Jeux de données d’exemple](sample-datasets.md).
 
 ## <a name="prerequisites"></a>Conditions préalables
-
-Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que pack de contenu, fichier .pbix ou classeur Excel.
+Comment procéder ? Ce didacticiel utilise le service Power BI et le pack de contenu d’exemple « Rentabilité des clients ».  Les expériences d’utilisation des rapports étant similaires, vous pouvez également poursuivre avec Power BI Desktop et le fichier PBIX d’exemple. Voici les instructions de connexion au pack de contenu et au fichier PBIX.
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
 
@@ -50,13 +53,19 @@ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que p
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 
-Vous pouvez également télécharger l’exemple en tant que fichier .pbix, qui est conçu pour une utilisation avec Power BI Desktop. 
-
-- [Exemple Rentabilité des clients](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
+Vous pouvez également télécharger l’exemple en tant que fichier .pbix, qui est conçu pour une utilisation avec Power BI Desktop. [Exemple Rentabilité des clients] (<http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer>> Profitability Sample PBIX.pbix)
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) pour cet exemple](http://go.microsoft.com/fwlink/?LinkId=529781). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**.
+<a name="if-you-want-to-dig-into-the-datasource-for-this-sample-its-also-available-as-an-excel-workbookhttpgomicrosoftcomfwlinklinkid529781-the-workbook-contains-power-view-sheets-that-you-can-view-and-modify-to-see-the-raw-data-select-power-pivot--manage"></a>Si vous souhaitez fouiller dans la source de données de cet exemple, elle est également disponible en tant que [(classeur Excel)](http://go.microsoft.com/fwlink/?LinkId=529781). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, sélectionnez **Power Pivot > Gérer**.
+=======
+
+Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http://www.obvience.com/)), présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : application/pack de contenu, classeur Excel ou fichier PBIX Power BI Desktop. Consultez la section [Jeux de données d’exemple](sample-datasets.md).
+
+### <a name="prerequisites"></a>Conditions préalables
+Comment procéder ? Dans le [service Power BI](https://powerbi.com), accédez à **Obtenir des données > Exemples > Rentabilité des clients > Se connecter** pour obtenir une copie de l’exemple.
+>>>>>>> def2c8e086d65b6a3fb92247175730746226ae3e
+
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
 
@@ -65,26 +74,64 @@ Sous **Mon espace de travail**, recherchez le tableau de bord de l’exemple Ren
 ![Tableau de bord de l’exemple Rentabilité des clients](media/sample-customer-profitability/power-bi-dash.png)
 
 ### <a name="company-wide-dashboard-tiles"></a>Vignettes de tableau de bord à l’échelle de l’entreprise
-Ces vignettes offrent à notre directrice financière une vue d’ensemble des métriques globales de l’entreprise qu’elle juge importantes.  Quand quelque chose l’interpelle, elle peut sélectionner une vignette pour explorer les données.
+1. Ouvrez le tableau de bord dans le service Power BI. Ces vignettes de tableau de bord offrent à la directrice financière une vue d’ensemble des mesures de l’entreprise importantes pour elle.  Quand quelque chose l’interpelle, elle peut sélectionner une vignette pour explorer les données.
 
-1. La marge brute de notre société est de 42,5 %.
-2. Nous avons 80 clients.
-3. Nous vendons 5 produits différents.
-4. Nous avons enregistré notre plus faible écart de chiffre d’affaires par rapport aux prévisions en février, suivi de notre plus haut en mars.
-5. Notre chiffre d’affaires est réalisé principalement dans les régions Est (« East » et Nord (« North »). La marge brute n’a jamais dépassé les prévisions ; quelques recherches complémentaires devront être entreprises en ce qui concerne 0-ER et MA-0.
-6. Le chiffre d’affaires total de l’année est proche des prévisions.
+2. Passez en revue les vignettes du côté gauche du tableau de bord.
+
+    ![](media/sample-customer-profitability/power-bi-manager.png)
+
+- La marge brute de notre société est de 42,5 %.
+- Nous avons 80 clients.
+- Nous vendons 5 produits différents.
+- Nous avons enregistré notre plus faible écart de chiffre d’affaires par rapport aux prévisions en février, suivi de notre plus haut en mars.
+- Notre chiffre d’affaires est réalisé principalement dans les régions Est (« East » et Nord (« North »). La marge brute n’a jamais dépassé les prévisions ; quelques recherches complémentaires devront être entreprises en ce qui concerne 0-ER et MA-0.
+- Le chiffre d’affaires total de l’année est proche des prévisions.
+
 
 ### <a name="manager-specific-dashboard-tiles"></a>Vignettes de tableau de bord des responsables
-Ces vignettes fournissent une carte de performance d’équipe. La directrice financière a besoin d’effectuer le suivi des responsables et ces vignettes lui offrent une vision globale des bénéfices, via GM% (ratio de la marge brute). Si la tendance du ratio de marge brute est inattendue pour l’un des responsables, elle peut étudier la question de plus près.
+Les vignettes du côté droit du tableau de bord représentent la carte de performance de l’équipe. La directrice financière a besoin d’effectuer le suivi des responsables et ces vignettes lui offrent une vision globale des bénéfices, via GM% (ratio de la marge brute). Si la tendance du ratio de marge brute est inattendue pour l’un des responsables, elle peut étudier la question de plus près.
 
-Le ratio de marge brute d’Annelie est le plus bas, mais nous constatons cependant qu’il augmente de façon régulière depuis le mois de mars. Valery, quant à elle, a vu le sien baisser de manière significative. Et Andrew a eu une année en dents de scie. Cliquez sur l’une des vignettes de responsable pour ouvrir le rapport sous-jacent. Le rapport contient 3 pages et s’ouvre à la page « Industry Margin Analysis » (Analyse de la marge sectorielle).
+![](media/sample-customer-profitability/power-bi-manager2.png)
 
-## <a name="explore-the-pages-in-the-report"></a>Exploration des pages du rapport
-Notre rapport contient 3 pages :
+- Tous les cadres, à l’exception de Carlos, ont déjà dépassé leur objectif de ventes. Mais les ventes réelles de Carlos sont les plus élevées. 
+- Le ratio de marge brute d’Annelie est le plus bas, mais nous constatons cependant qu’il augmente de façon régulière depuis le mois de mars.
+- Valery, quant à elle, a vu le sien baisser de manière significative. 
+- Et Andrew a eu une année en dents de scie. 
 
-* La page « Team Scorecard » (Carte de performance de l’équipe) se concentre sur les performances de 5 responsables et sur leur « activité ».
-* La page « Industry Margin Analysis » (Analyse de la marge sectorielle) permet d’analyser notre rentabilité par rapport au secteur.
-* La page « Executive Scorecard » (Carte de performance de l’exécutif) affiche chacun de nos responsables, selon une mise en page définie pour Cortana.
+## <a name="explore-the-dashboards-underlying-data"></a>Explorer les données sous-jacentes du tableau de bord
+Ce tableau de bord comporte des vignettes qui pointent vers un rapport et un classeur Excel. 
+
+### <a name="open-the-excel-online-data-source"></a>Ouvrir la source de données Excel Online
+Deux vignettes de ce tableau de bord, « Objectif / Réel » et « Croissance du chiffre d’affaires en glissement annuel », ont été épinglées à partir d’un classeur Excel. Lorsque l’une d’elles est sélectionnée, Power BI ouvre la source des données, Excel Online dans ce cas.
+
+![](media/sample-customer-profitability/power-bi-excel-online.png)
+
+1. Sélectionnez l’une des vignettes épinglées à partir d’Excel. Excel Online s’ouvre dans le service Power BI.
+2. Vous remarquerez que le classeur comporte trois onglets de données. Ouvrez « Chiffre d’affaires ».
+3. Regardons pourquoi Carlos n’a pas encore atteint son objectif.  
+    a. Sur le curseur « Cadre », sélectionnez **Carlos Grilo**.   
+    b. Le premier tableau croisé dynamique indique que le chiffre d’affaires de Carlos pour son produit phare, Primus, a baissé de 152 % par rapport à l’année dernière. Et le graphique en glissement annuel montre qu’il est au-dessous du budget la plupart du temps.  
+
+    ![](media/sample-customer-profitability/power-bi-pivotchart.png)
+
+    ![](media/sample-customer-profitability/power-bi-carlos.png)
+
+4. Poursuivez l’exploration ; si vous trouvez quelque chose d’intéressant, sélectionnez **Épingler** ![](media/sample-customer-profitability/power-bi-excel-pin.png) dans l’angle supérieur droit pour [l’épingler à un tableau de bord](service-dashboard-pin-tile-from-excel.md).
+
+5. Utilisez la flèche de retour de votre navigateur pour revenir au tableau de bord. 
+
+### <a name="open-the-underlying-power-bi-report"></a>Ouvrir le rapport Power BI sous-jacent
+La majorité des vignettes du tableau de bord de l’exemple Rentabilité des clients ont été épinglées à partir du rapport de l’exemple Rentabilité des clients sous-jacent. 
+
+1. Sélectionnez l’une de ces vignettes pour ouvrir le rapport en Mode Lecture. 
+
+2. Le rapport comporte trois pages. Chaque onglet au bas du rapport représente une page. 
+
+    ![](media/sample-customer-profitability/power-bi-report-tabs.png)
+
+    * La page « Team Scorecard » (Carte de performance de l’équipe) se concentre sur les performances de 5 responsables et sur leur « activité ».
+    * La page « Industry Margin Analysis » (Analyse de la marge sectorielle) permet d’analyser notre rentabilité par rapport au secteur.
+    * La page « Executive Scorecard » (Carte de performance de l’exécutif) affiche chacun de nos responsables, selon une mise en page définie pour Cortana.
 
 ### <a name="team-scorecard-page"></a>Page « Team Scorecard » (Carte de performance de l’équipe)
 ![](media/sample-customer-profitability/customer2.png)
@@ -126,33 +173,35 @@ Cette page est mise en forme comme une carte de réponse pour Cortana. Pour plus
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Explorer les données en posant des questions dans Q&R
 Pour notre analyse, il serait intéressant d’identifier le secteur d’activité qui profite le plus à Valery en termes de chiffre d’affaires. Utilisons Q&R.
 
-1. Sélectionnez **Power BI** dans la barre de navigation supérieure pour retourner au tableau de bord.
-2. Sélectionnez la zone de questions de Q&R en haut du tableau de bord.
-   
-    ![](media/sample-customer-profitability/customer4.png)
+1. Ouvrez le rapport en Mode Édition en sélectionnant **Modifier le rapport**. Le Mode Édition n’est disponible qu’aux « propriétaires » du rapport ; il est parfois nommé Mode **Créateur**. Si, à l’inverse, ce rapport a été partagé avec vous, vous ne pourrez pas l’ouvrir en Mode Édition.
+
+2.  Dans la barre de menus supérieure, sélectionnez **Poser une question** pour ouvrir la zone Questions et réponses.
+
+    ![](media/sample-customer-profitability/power-bi-ask-question.png)
+
 3. Tapez **total revenue by industry for Valery**(chiffre d’affaires total par secteur pour Valery). Comme vous pouvez le constater, la visualisation se met à jour à mesure que vous tapez la question.
    
-    ![](media/sample-customer-profitability/customer5.png)
+    ![](media/sample-customer-profitability/power-bi-qna.png)
    
    Le secteur le plus porteur pour Valery est celui de la distribution.
 
 ### <a name="dig-deeper-by-adding-filters"></a>Aller plus loin en ajoutant des filtres
 Penchons-nous sur le secteur *Distribution* .  
 
-1. Revenez au tableau de bord et sélectionnez le graphique en aires qui indique la tendance de marge brute d’Andrew. Le rapport s’ouvre à la page « Industry Margin Analysis » (Analyse de la marge sectorielle).
-2. Sans sélectionner aucune visualisation sur la page de rapport, développez le volet Filtres à droite. Le volet Filtres doit afficher uniquement les filtres au niveau page.  
+1. Ouvrez la page de rapport « Analyse de la marge sectorielle ».
+2. Sans sélectionner de visualisations sur la page de rapport, développez le volet Filtres à droite (si ce n’est déjà fait). Le volet Filtres doit afficher uniquement les filtres au niveau page.  
    
    ![](media/sample-customer-profitability/power-bi-filters.png)
-3. Recherchez le filtre pour **Industry** ( secteur), puis cliquez sur la flèche pour développer la liste. Ajoutons un filtre de page pour le secteur Distribution. Tout d’abord, annulez toutes les sélections en désactivant la case à cocher **Sélectionner tout**. Ensuite, sélectionnez **Distribution**.  
+3. Recherchez le filtre pour **Industry** ( secteur), puis cliquez sur la flèche pour développer la liste. Ajoutons un filtre de page pour le secteur Distribution. Tout d’abord, annulez toutes les sélections en désactivant la case à cocher **Sélectionner tout**. Ensuite, sélectionnez seulement **Distribution**.  
    
    ![](media/sample-customer-profitability/customer7.png)
 4. Le graphique en aires « Gross margin by Month and Executive Name » (Marge brute par mois et par cadre) nous apprend que seules Valery et Tina ont des clients dans ce secteur d’activité et que Valery ne travaille dans ce secteur que de juin à novembre.   
 5. Sélectionnez **Tina**, puis **Valery** dans la légende du graphique en aires « Gross margin by Month and Executive » (Marge brute par mois et Exécutif). Remarquez que la contribution de Tina au chiffre d’affaires total par produit (« Total Revenue by Product ») est très faible par rapport à celle de Valery. 
-6. Pour afficher le chiffre d’affaires réel, retournez dans le tableau de bord et utilisez la fonctionnalité Q&R pour poser la question : **total revenue for distribution by scenario by executive** (chiffre d’affaires total distribution par scénario par cadre).  
+6. Pour afficher le chiffre d’affaires réel, utilisez la fonctionnalité Questions et réponses pour demander le **chiffre d’affaires total par cadre pour la distribution par scénario**.  
    
-   ![](media/sample-customer-profitability/customer8.png)
+     ![](media/sample-customer-profitability/power-bi-qna2.png)
 
-Nous pouvons procéder de la même manière pour explorer d’autres secteurs, voire ajouter des clients à nos éléments visuels pour comprendre les performances de Valery.
+    Nous pouvons procéder de la même manière pour explorer d’autres secteurs, voire ajouter des clients à nos éléments visuels pour comprendre les performances de Valery.
 
 Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours choisir de ne pas enregistrer les modifications apportées. Mais si vous les enregistrez, vous pouvez toujours accéder à **Obtenir des données** pour avoir une nouvelle copie de cet exemple.
 

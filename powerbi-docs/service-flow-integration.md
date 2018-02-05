@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: efab2e6be1d376a0da70c13bb66144ba34afa58c
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: edae145e8eef6dfe7a2c4cea3a7f467f6f7961a9
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow et Power BI
 
@@ -35,7 +35,9 @@ Découvrez la façon dont Sirui crée un flux qui envoie un message détaillé �
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Créer un flux déclenché par une alerte de données Power BI
-Ce didacticiel vous montre comment créer deux flux différents : un à partir d’un modèle et l’autre à partir de zéro. Pour suivre la procédure, [créez une alerte de données dans Power BI](service-set-data-alerts.md) et [inscrivez-vous gratuitement à Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup).
+
+### <a name="prerequisites"></a>Conditions préalables
+Ce didacticiel vous montre comment créer deux flux différents : un à partir d’un modèle et l’autre à partir de zéro. Pour la suite, [définissez une alerte de données dans Power BI](service-set-data-alerts.md), créez un compte Slack gratuit et [inscrivez-vous gratuitement à Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Créer un flux qui utilise Power BI - à partir d’un modèle
 Dans cette tâche, vous allez utiliser un modèle pour créer un simple flux qui est déclenché par une alerte de données Power BI (notification).
@@ -47,39 +49,40 @@ Dans cette tâche, vous allez utiliser un modèle pour créer un simple flux qui
 3. Sélectionnez **Créer à partir d’un modèle**.
    
     ![](media/service-flow-integration/power-bi-template.png)
-4. Utilisez la zone de recherche pour rechercher des modèles Power BI et sélectionnez **Post a message to a Slack channel when a Power BI data alert is triggered** (Envoyer un message à un canal Slack quand une alerte de données Power BI est déclenchée).
+4. Utilisez la zone de recherche pour trouver des modèles Power BI et sélectionnez **Envoyer un e-mail à n’importe quelle audience quand une alerte de données Power BI est déclenchée > Continuer**.
    
-    ![](media/service-flow-integration/power-bi-template2.png)
-5. Sélectionnez **Utiliser ce modèle**.
-   
-   ![](media/service-flow-integration/power-bi-use-template.png)
-6. Si vous y êtes invité, connectez-vous à Slack et Power BI en sélectionnant **Se connecter**, puis suivez les invites. Une coche verte vous permet de savoir que vous êtes connecté.  Après avoir confirmé vos connexions, sélectionnez **Continuer**.
-   
-   ![](media/service-flow-integration/power-bi-flow-signin.png)
+    ![](media/service-flow-integration/power-bi-flow-alert.png)
+
 
 ### <a name="build-the-flow"></a>Créer le flux
-Ce modèle a un déclencheur (alerte de données Power BI en cas de nouvelles médailles Olympiques pour l’Irlande) et une action (publier un message dans Slack). Lorsque vous sélectionnez un champ, Flow affiche du contenu dynamique que vous pouvez inclure.  Dans cet exemple, nous avons inclus la valeur de vignette et l’URL de vignette dans le corps du message.
+Ce modèle a un déclencheur (alerte de données Power BI en cas de nouvelles médailles olympiques pour l’Irlande) et une action (envoyer un e-mail). Lorsque vous sélectionnez un champ, Flow affiche du contenu dynamique que vous pouvez inclure.  Dans cet exemple, nous avons inclus la valeur de vignette et l’URL de vignette dans le corps du message.
 
-![](media/service-flow-integration/power-bi-flow-template.png)
+![](media/service-flow-integration/power-bi-template1.png)
 
 1. Dans la liste déroulante des déclencheurs, sélectionnez une alerte de données Power BI. Sélectionnez **New medal for Ireland** (Nouvelle médaille pour l’Irlande). Pour savoir comment créer une alerte, voir [Alertes de données dans Power BI](service-set-data-alerts.md).
    
    ![](media/service-flow-integration/power-bi-trigger-flow.png)
-2. Pour publier sur Slack, entrez un nom de canal et un texte message (vous pouvez également sélectionner le message par défaut que Flow crée). Notez le contenu dynamique que nous avons inclus dans le champ de texte du message.
+2. Entrez une ou plusieurs adresses e-mail valides, puis sélectionnez **Modifier** (voir ci-dessous) ou **Ajouter du contenu dynamique**. 
    
-   > [!NOTE]
-   > Incluez « @ » au début du nom de votre canal.  Par exemple, si le canal Slack est nommé « channelA », dans Flow, entrez « @channelA ».
-   > 
-   > 
-   
-   ![](media/service-flow-integration/power-bi-flow-slacker.png)
-3. Lorsque vous avez terminé, sélectionnez **Créer un flux** ou **Enregistrer le flux**.  Le flux est créé et évalué.  Flow vous indique s’il trouve des erreurs.
-4. S’il en détecte, sélectionnez **Modifier le flux** pour les corriger ; sinon, sélectionnez **Terminé** pour exécuter le nouveau flux.
+   ![](media/service-flow-integration/power-bi-flow-email.png)
+
+3. Flow crée un titre et un message que vous pouvez conserver ou modifier. Toutes les valeurs définies lors de la création de l’alerte dans Power BI sont utilisables : placez votre curseur dessus et sélectionnez-les dans la zone grise en surbrillance. 
+
+   ![](media/service-flow-integration/power-bi-flow-email-default.png)
+
+1.  Par exemple, si vous avez créé le titre d’alerte **Nous avons gagné une autre médaille** dans Power BI, vous pouvez sélectionner **Titre de l’alerte** pour ajouter ce texte au champ Objet de votre adresse e-mail.
+
+    ![](media/service-flow-integration/power-bi-flow-message.png)
+
+    De même, vous pouvez accepter le corps de l’e-mail par défaut ou créer le vôtre. Dans l’exemple ci-dessus, quelques modifications ont été apportées au message.
+
+1. Lorsque vous avez terminé, sélectionnez **Créer un flux** ou **Enregistrer le flux**.  Le flux est créé et évalué.  Flow vous indique s’il trouve des erreurs.
+2. S’il en détecte, sélectionnez **Modifier le flux** pour les corriger ; sinon, sélectionnez **Terminé** pour exécuter le nouveau flux.
    
    ![](media/service-flow-integration/power-bi-flow-running.png)
-5. Ouvrez votre compte Slack pour afficher le message.  
+5. Lorsque l’alerte de données se déclenche, un e-mail est envoyé aux adresses que vous avez indiquées.  
    
-   ![](media/service-flow-integration/power-bi-slack-message.png)
+   ![](media/service-flow-integration/power-bi-flow-email2.png)
 
 ## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Créer entièrement un flux qui utilise Power BI
 Dans cette tâche, vous allez créer entièrement un simple flux qui est déclenché par une alerte de données Power BI (notification).
@@ -88,12 +91,12 @@ Dans cette tâche, vous allez créer entièrement un simple flux qui est déclen
 2. Sélectionnez **Mes flux** > **Créer entièrement**.
    
    ![](media/service-flow-integration/power-bi-my-flows.png)
-3. Utilisez la zone de recherche pour trouver un déclencheur Power BI, puis sélectionnez **Déclencher un flux avec une alerte de données Power BI**.
+3. Utilisez la zone de recherche pour trouver un déclencheur Power BI et sélectionnez **Power BI - quand une alerte de données est déclenchée**.
 
 ### <a name="build-your-flow"></a>Créer votre flux
 1. Dans la liste déroulante, sélectionnez le nom de l’alerte.  Pour savoir comment créer une alerte, voir [Alertes de données dans Power BI](service-set-data-alerts.md).
    
-    ![](media/service-flow-integration/power-bi-totalstores.png)
+    ![](media/service-flow-integration/power-bi-totalstores2.png)
 2. Sélectionnez **Nouvelle étape** > **Ajouter une action**.
    
    ![](media/service-flow-integration/power-bi-new-step.png)

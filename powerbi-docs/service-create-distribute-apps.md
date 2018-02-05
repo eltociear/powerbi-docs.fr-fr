@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/16/2018
+ms.date: 01/24/2018
 ms.author: maggies
-ms.openlocfilehash: 89c376451199aec0a6f464f3298df44d468f37d2
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: fadeaedbcc61626b7f1265ac44480c55a60f4fe0
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -32,7 +32,13 @@ Vos utilisateurs en entreprise ont souvent besoin de plusieurs tableaux de bord 
 
 Avec les applications Power BI, actuellement en préversion, vous pouvez créer des collections de tableaux de bord et de rapports, et publier ces applications pour toute votre organisation, ou pour des personnes ou groupes spécifiques. Pour vous, en tant que créateur de rapports ou en tant qu’administrateur, les applications facilitent la gestion des autorisations sur les collections de tableaux de bord.
 
-Les utilisateurs professionnels peuvent installer ces applications à partir de Microsoft AppSource ou bien vous pouvez leur envoyer un lien direct. Ils peuvent facilement trouver et revenir à votre contenu, car celui-ci figure dans un emplacement unique. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour en savoir plus, voir l’[expérience d’application pour les utilisateurs professionnels](service-install-use-apps.md).
+Les utilisateurs obtiennent vos applications de différentes manières. Si l’administrateur Power BI vous y autorise, vous pouvez les installer automatiquement dans les comptes Power BI de vos collègues. Autrement, ceux-ci peuvent installer vos applications à partir de Microsoft AppSource ou d’un lien direct que vous leur envoyez. Ils peuvent facilement trouver et revenir à votre contenu, car celui-ci figure dans un emplacement unique. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour en savoir plus, voir l’[expérience d’application pour les utilisateurs professionnels](service-install-use-apps.md).
+
+### <a name="licenses-for-apps"></a>Licences pour des applications
+En tant que créateur d’application, vous avez besoin d’une licence Power BI Pro. Pour les utilisateurs de votre application, il existe deux options.
+
+* Option 1 : tous les utilisateurs professionnels ont besoin de licences **Power BI Pro** pour consulter votre application. 
+* Option 2 : les utilisateurs gratuits de votre organisation peuvent consulter le contenu de l’application si votre application se trouve dans une capacité Premium de Power BI. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
 
 ### <a name="apps-and-organizational-content-packs"></a>Applications et packs de contenu d’organisation
 Les applications sont l’évolution des packs de contenu d’organisation. Si vous avez déjà des packs de contenu d’organisation, ceux-ci continuent à fonctionner parallèlement aux applications.
@@ -41,12 +47,6 @@ Les applications sont l’évolution des packs de contenu d’organisation. Si v
 
 ## <a name="video-apps-and-app-workspaces"></a>Vidéo : applications et espaces de travail d’application
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-## <a name="licenses-for-apps"></a>Licences pour des applications
-En tant que créateur d’application, vous avez besoin d’une licence Power BI Pro. Pour les utilisateurs de votre application, il existe deux options.
-
-* Option 1 : tous les utilisateurs professionnels ont besoin de licences **Power BI Pro** pour consulter votre application. 
-* Option 2 : les utilisateurs gratuits de votre organisation peuvent consulter le contenu de l’application si votre application se trouve dans une capacité Premium de Power BI. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
 
 ## <a name="app-workspaces"></a>Espaces de travail d’application
 Les *espaces de travail d’application* étant les emplacements où vous créez des applications, avant de créer une application, vous devez créer un espace de travail d’application. Si vous avez déjà travaillé dans des espaces de travail de groupe Power BI, vous ne serez pas dépaysé par les espaces de travail d’application. Ils constituent l’évolution des espaces de travail de groupe, avec des zones intermédiaires et des conteneurs pour le contenu des applications. 
@@ -106,21 +106,23 @@ Lorsque les tableaux de bord et rapports dans votre espace de travail d’applic
    
      ![Publier l’application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
-2. Tout d’abord, sous **Détails**, entrez la description pour aider les utilisateurs à trouver l’application. Vous pouvez définir une couleur d’arrière-plan pour personnaliser l’application.
+2. Dans **Détails**, remplissez la description pour aider les utilisateurs à trouver l’application. Vous pouvez définir une couleur d’arrière-plan pour personnaliser l’application.
    
      ![Détails de l’application](media/service-create-distribute-apps/power-bi-apps-details.png)
 
-3. Ensuite, sous **Contenu**, vous voyez le contenu qui va être publié avec l’application, c’est-à-dire tout ce que vous avez sélectionné dans cet espace de travail. Vous pouvez également définir la page d’accueil de l’application, c’est-à-dire le tableau de bord ou le rapport que les utilisateurs voient en premier quand ils accèdent à celle-ci. Vous pouvez choisir **Aucun**. Dans ce cas, les utilisateurs accèdent à une liste répertoriant tout le contenu de l’application. 
+3. Dans **Contenu** apparaît le contenu qui sera publié avec l’application, c’est-à-dire tout ce que vous avez sélectionné dans cet espace de travail. Vous pouvez également définir la page d’accueil de l’application, c’est-à-dire le tableau de bord ou le rapport que les utilisateurs voient en premier quand ils accèdent à celle-ci. Vous pouvez choisir **Aucun**. Dans ce cas, les utilisateurs accèdent à une liste répertoriant tout le contenu de l’application. 
    
      ![Contenu de l’application](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. Enfin, sous **Accès**, décidez qui a accès à l’application : soit tous les membres de l’organisation, soit des personnes spécifiques ou des groupes de sécurité Active Directory. 
+4. Dans **Accès**, choisissez qui a accès à l’application : tous les membres de l’organisation, des personnes spécifiques ou des groupes de sécurité Active Directory. Si vous disposez des autorisations nécessaires, vous pouvez installer l’application automatiquement pour les destinataires.
+
+    ![Accès à l’application](media/service-create-distribute-apps/power-bi-apps-access.png)
 
 5. Lorsque vous sélectionnez **Terminer**, un message confirme que l’application est prête pour publication. Dans la boîte de dialogue confirmant le succès de la création de l’application, vous pouvez copier l’URL qui est le lien direct vers l’application, puis envoyer ce lien aux personnes avec lesquelles vous voulez partager celle-ci.
    
      ![Achèvement de l’application](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-Les utilisateurs pour lesquels vous avez publié l’application peuvent trouver celle-ci de deux façons. Vous pouvez leur envoyer un lien direct vers l’application, ou ils peuvent rechercher celle-ci dans Microsoft AppSource où toutes les applications qui leur sont accessibles sont visibles. Ensuite, chaque fois qu’ils accèdent à Applications, ils voient cette application dans leur liste.
+Les utilisateurs pour lesquels vous avez publié l’application peuvent trouver celle-ci de plusieurs façons. Si vous pouvez l’installer automatiquement, elle apparaît sous Applications dans leur compte Power BI. Vous pouvez leur envoyer un lien direct vers l’application, ou ils peuvent rechercher celle-ci dans Microsoft AppSource où toutes les applications qui leur sont accessibles sont visibles. Chaque fois qu’ils accèdent à Applications, ils voient cette application dans leur liste, quel que soit le moyen par lequel ils l’ont obtenue.
 
 Pour en savoir plus, voir l’[expérience d’application pour les utilisateurs professionnels](service-install-use-apps.md).
 
@@ -137,6 +139,7 @@ Une fois votre application publiée, il se peut que vous souhaitiez la modifier 
 1. Revenez à la liste de contenu de l’espace de travail de l’application, puis sélectionnez **Mettre à jour l’application**.
    
      ![Mettre à jour le bouton d’application](media/service-create-distribute-apps/power-bi-app-update-button.png)
+
 4. Si nécessaire, mettez à jour les options **Détails**, **Contenu** et **Accès**, puis sélectionnez **Mettre à jour l’application**.
    
      ![Mettre à jour le bouton d’application](media/service-create-distribute-apps/power-bi-app-update-complete.png)
@@ -167,7 +170,9 @@ Les applications constituent une évolution et une simplification des packs de c
 * Étant donné que nous prévoyons de déconseiller progressivement les packs de contenu d’organisation, nous vous recommandons de commencer à créer des applications dès à présent.  
 
 ### <a name="what-about-read-only-members-in-groups"></a>Qu’en est-il des membres en lecture seule dans les groupes ?
-Dans les groupes, vous pouvez ajouter des membres en lecture seule qui peuvent uniquement afficher le contenu. Le principal problème lié à cette approche est qu’elle rend impossible l’ajout de groupes de sécurité en tant que membres. Avec une application, vous pouvez publier une version en lecture seule de l’espace de travail de l’application destinée à un large public, y compris à des groupes de sécurité. Vous pouvez apporter des modifications intermédiaires aux tableaux de bord et rapports dans l’application sans que cela affecte les utilisateurs finaux. Nous vous recommandons d’utiliser les applications de cette façon à l’avenir. À long terme, nous prévoyons de désapprouver également les membres en lecture seule des espaces de travail.  
+Dans les groupes, vous pouvez ajouter des membres en lecture seule qui peuvent uniquement afficher le contenu. Le principal problème lié à cette approche est qu’elle rend impossible l’ajout de groupes de sécurité en tant que membres. 
+
+Avec une application, vous pouvez publier une version en lecture seule de l’espace de travail de l’application destinée à un large public, y compris à des groupes de sécurité. Vous pouvez apporter des modifications intermédiaires aux tableaux de bord et rapports dans l’application sans que cela affecte les utilisateurs finaux. Nous vous recommandons d’utiliser les applications de cette façon à l’avenir. À long terme, nous prévoyons de désapprouver également les membres en lecture seule des espaces de travail.  
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Installer et utiliser des applications dans Power BI](service-install-use-apps.md)

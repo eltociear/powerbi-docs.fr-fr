@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: a707a7b590804d24d60d17590408afbdf8f81f4c
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: ef2e89ba2bac451ce0230829bbf4aa0b60713899
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
 Quand vous travaillez dans la fenêtre **Éditeur de requête** de Power BI Desktop, vous avez accès à un certain nombre de tâches courantes. Ce document décrit ces tâches courantes et fournit des liens pour plus d’informations. 
@@ -69,7 +69,7 @@ Les autres connexions de données sont similaires. Si l’authentification est n
 Pour obtenir une démonstration détaillée de la connexion à des données dans Power BI Desktop, consultez [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635) (Se connecter à des données dans Power BI Desktop).
 
 ## <a name="shape-and-combine-data"></a>Mettre en forme et combiner des données
-Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour obtenir une démonstration plus complète de la mise en forme et de la combinaison de données, consultez [Shape and Combine Data with Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644) (Mettre en forme et combiner des données dans Power BI Desktop).
+Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour une démonstration plus complète de la mise en forme et de la combinaison de données, consultez la section **[Mettre en forme et combiner des données dans Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)**.
 
 Dans la section précédente, nous avons connecté deux jeux de données : un classeur Excel et une ressource web. Une fois ces derniers chargés, l’Éditeur de requête présente l’aspect suivant, la requête issue de la page web étant sélectionnée (parmi les requêtes disponibles répertoriées dans le volet **Requêtes** , à gauche de la fenêtre Éditeur de requête).
 

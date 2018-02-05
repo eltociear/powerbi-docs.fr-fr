@@ -1,5 +1,5 @@
 ---
-title: "Épingler une vignette à un tableau de bord Power BI à partir d’Excel"
+title: "Guide pratique pour épingler une vignette à un tableau de bord Power BI à partir d’Excel"
 description: "Épinglez une vignette à un tableau de bord Power BI à partir d’Excel dans OneDrive Entreprise. Épingler des plages, des graphiques, des tableaux"
 services: powerbi
 documentationcenter: 
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/26/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 855ecbe74fa4bf4ab1b1f81f22f2bab278adddb9
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 06edf8aae58dbcf2e22cf5d1ea13bf6350465853
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Épingler une vignette à un tableau de bord Power BI à partir d’Excel
 Avant de pouvoir épingler une vignette à partir de votre classeur Excel, connectez ce classeur au service Power BI (app.powerbi.com). La connexion d’un classeur apporte essentiellement une version en lecture seule liée de ce classeur dans le service Power BI et vous permet d’épingler des plages à des tableaux de bord. Vous pouvez même épingler une feuille de calcul entière à un tableau de bord.  
@@ -40,13 +40,18 @@ Lorsque vous choisissez **Connecter**, votre classeur apparaît dans Power BI c
 Vous ne pouvez pas modifier votre classeur dans Power BI. Toutefois, si vous devez apporter des modifications, vous pouvez sélectionner l’icône crayon sous l’onglet **Classeurs** de votre espace de travail, puis modifier votre classeur dans Excel Online ou l’ouvrir dans Excel sur votre ordinateur. Toutes les modifications apportées sont enregistrées dans le classeur sur OneDrive.
 
 1. Chargez votre classeur dans votre espace OneDrive Entreprise.
-2. Dans Power BI, [connectez-vous à ce classeur](service-excel-workbook-files.md)
+2. Dans Power BI, [connectez-vous à ce classeur](service-excel-workbook-files.md) en sélectionnant **Obtenir des données > Fichiers > OneDrive Entreprise** et en accédant à l’emplacement où est enregistré le fichier Excel. Sélectionnez le fichier et choisissez **Se connecter > Se connecter**.
+
+   ![](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
+
 3. Dans Power BI, le classeur est ajouté à l’onglet **Classeurs** de votre espace de travail.  L’icône ![](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) indique qu’il s’agit d’un classeur Excel et l’astérisque jaune indique qu’il est nouveau.
    
-    Les modifications apportées au classeur dans Power BI ne sont pas enregistrées et n’affectent pas le classeur d’origine sur OneDrive Entreprise. Si vous triez, filtrez ou modifiez les valeurs dans Power BI, ces modifications ne peuvent pas être enregistrées ou épinglées. Pour mettre à jour le classeur, sélectionnez l’icône Crayon pour l’ouvrir dans Excel Online. La mise à jour dans les vignettes des modifications apportées au classeur Excel Online peut prendre quelques minutes.     
-   
+    
    ![](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Ouvrez le classeur dans Power BI en sélectionnant le nom du classeur.
+
+    Les modifications apportées au classeur dans Power BI ne sont pas enregistrées et n’affectent pas le classeur d’origine sur OneDrive Entreprise. Si vous triez, filtrez ou modifiez les valeurs dans Power BI, ces modifications ne peuvent pas être enregistrées ou épinglées. Si vous voulez apporter et enregistrer des modifications, sélectionnez **Modifier** dans l’angle supérieur droit pour l’ouvrir dans Excel Online ou Excel et le modifier. Lorsque les modifications ont effectuées de cette façon, la mise à jour des vignettes des tableaux de bord peut prendre quelques minutes.
+   
    
    ![](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
@@ -62,7 +67,7 @@ Dans Power BI, vous pouvez ajouter une nouvelle [vignette de tableau de bord](se
    * Tableau de bord existant : sélectionnez le nom du tableau de bord dans la liste déroulante.
    * Nouveau tableau de bord : tapez le nom du nouveau tableau de bord.
    
-   ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+    ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Sélectionnez **Épingler**. Un message de réussite (dans l’angle supérieur droit) vous indique que la plage a été ajoutée sous forme de vignette à votre tableau de bord. 
    
     ![](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
@@ -80,6 +85,8 @@ Une vignette créée à partir d’un tableau ou d’un tableau croisé dynamiqu
 ## <a name="view-the-workbook-linked-to-the-tile"></a>Afficher le classeur lié à la vignette
 La sélection d’une vignette de classeur a pour effet d’ouvrir le classeur lié dans Power BI. Étant donné que le fichier de classeur se trouve dans l’espace OneDrive Entreprise du propriétaire, son affichage nécessite des autorisations de lecture. Si vous n’êtes pas autorisé à effectuer cette opération, vous recevez un message d’erreur.  
 
+ ![](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
+
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 Fonctionnalités non prises en charge : Power BI utilise Excel Services pour récupérer les vignettes de classeur. Aussi, étant donné que l’API REST Excel Services ne prend pas en charge certaines fonctionnalités d’Excel, celles-ci n’apparaissent pas sur les vignettes dans Power BI. Par exemple : graphiques sparkline, mise en forme conditionnelle de jeu d’icônes et segments de temps. Pour obtenir la liste complète des fonctionnalités non prises en charge, consultez [Fonctionnalités non prises en charge dans l’API REST Excel Services](http://msdn.microsoft.com/library/office/ff394477.aspx)
 
@@ -87,8 +94,6 @@ Fonctionnalités non prises en charge : Power BI utilise Excel Services pour r
 [Partager un tableau de bord avec des liens vers un classeur Excel](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Obtenir des données de classeurs Excel](service-excel-workbook-files.md)
-
-[Tableaux de bord dans Power BI](service-dashboards.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

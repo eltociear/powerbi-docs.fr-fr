@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/23/2018
+ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: 610234a221c5ab1de976f9d554292395760efa0f
-ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
+ms.openlocfilehash: 51006f70d0be13f08de7047f0097f7530d32a470
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -63,7 +63,7 @@ Lorsque vous affichez un rapport sur un téléphone, il s’ouvre en mode portra
 En savoir plus sur les [rapports optimisés pour l’affichage sur téléphone](mobile-apps-view-phone-report.md).
 
 ## <a name="use-slicers-to-filter-a-report-page"></a>Utiliser des segments pour filtrer une page de rapport
-Quand vous concevez un rapport dans le service Power BI [(https://powerbi.com)](https://powerbi.com), n’oubliez pas que sur un téléphone, vous ne pouvez pas voir le volet Filtres, mais vous pouvez [voir des segments sur une page de rapport](power-bi-visualization-slicers.md). Ajoutez des segments à un rapport afin que vous et vos collègues puissiez les utiliser pour filtrer la page sur un téléphone.
+Quand vous concevez un rapport dans Power BI Desktop ou le service Power BI, vous pouvez [ajouter des segments à une page de rapport](power-bi-visualization-slicers.md). Vous et vos collègues pouvez les utiliser pour filtrer la page dans un navigateur et dans les applications mobiles. Lorsque vous affichez le rapport sur un téléphone, vous pouvez voir et interagir avec les segments en mode paysage et sur une page optimisée pour le mode portrait du téléphone.
 
 * Lorsque vous sélectionnez une valeur dans un segment de la page de rapport, celle-ci filtre les autres visuels sur la page.
   

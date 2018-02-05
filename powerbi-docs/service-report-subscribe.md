@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 66e75d638595113b2df67650896a407ae5d13e88
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: fc697437ff9f5fb6b8dd49f6513c728d1b8ddfeb
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>S’abonner à un rapport ou tableau de bord Power BI
 Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir des e-mails : de une fois par jour à une fois par semaine. La messagerie et la capture instantanée utilisent la langue définie dans les paramètres Power BI. Si aucune langue n’est définie, Power BI utilise la langue actuelle du navigateur.
@@ -119,6 +119,7 @@ Un abonnement se termine si la licence Pro arrive à expiration, si le tableau d
 * S’il s’agit d’abonnements à des tableaux de bord ou rapports incluant de très grandes images, l’abonnement peut échouer en raison de la limite de taille de la messagerie.    
 * Power BI interrompt automatiquement l’actualisation des jeux de données associés aux tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un rapport ou un tableau de bord, il n’est pas interrompu même si le rapport ou tableau de bord n’est pas consulté.    
 * Si vous ne recevez pas les courriers d’abonnement, vérifiez que votre nom d’utilisateur principal (UPN) est en mesure d’en recevoir. [L’équipe Power BI travaille sur l’assouplissement de cette exigence](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163). Tenez-vous informé. 
+* Les tableaux de bord et les rapports envoyés utilisent votre paramètre de langue Power BI. La langue par défaut est l’anglais. Pour afficher ou définir vos préférences de langue, sélectionnez l’icône représentant une roue dentée ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Paramètres > Général > Langue**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)    

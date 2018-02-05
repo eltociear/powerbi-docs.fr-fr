@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/07/2017
+ms.date: 01/24/2018
 ms.author: maikelson
-ms.openlocfilehash: 7b4f69bc65836d59448ef034f5d655f87d89248e
-ms.sourcegitcommit: 85302d577895e779466df55aa02e5785ab2e3138
+ms.openlocfilehash: 91a629699c782914ec542a2b7a668cf25e47ec27
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -47,13 +47,15 @@ Inscrivez-vous pour écouter des experts de Power BI et participer à des sessio
 
 >[Assistez aux prochains webinaires de la Communauté Power BI](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
-- [Amélioration de la rentabilité dans le secteur des soins de santé – 12/12/17](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
+Aucun webinaire n’est planifié pour le moment. Revenez ultérieurement pour connaître les événements à venir.
 
 ## <a name="on-demand-webinars"></a>Webinaires à la demande
 
 Regardez les sessions enregistrées à tout moment
 
 >[Parcourir la bibliothèque de webinaires Power BI à la demande des experts de notre communauté](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
+
+- [Améliorer la rentabilité dans le secteur de la santé](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
 
 - [Comment implémenter une stratégie de gouvernance des données efficace qui rend votre organisation plus sécurisée](https://info.microsoft.com/powerbi-data-governance-strategy-ondemand.html?Is=Website)
 

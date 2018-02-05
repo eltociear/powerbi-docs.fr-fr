@@ -1,6 +1,6 @@
 ---
-title: "Suivre une visite guidée du volet Filtres de Power BI"
-description: Utilisation des filtres de rapport
+title: "Vue d’ensemble du volet Filtres de Power BI"
+description: "Vue d’ensemble du volet Filtres de rapport du service Power BI et du tableau de bord Power BI"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -15,16 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: da3d4359fab37d1c5ee5f9d214cc5dba0fa9b680
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: 14aa2a2813484c3af814332736906c2aae0e0230
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport
-Cet article présente en détail le volet Filtres de rapport. Le volet s’affiche dans les modes Édition et Lecture pour les rapports Power BI.
+Cet article présente en détail le volet Filtres de rapport. Vous le trouverez dans le [Mode Lecture et Édition du service Power BI](service-reading-view-and-editing-view.md) et dans [l’Affichage Rapport de Power BI Desktop](desktop-report-view.md).
 
 Il existe de nombreuses façons de filtrer des données dans Power BI. Nous vous recommandons de commencer par lire l’article [À propos des filtres et de la mise en évidence](power-bi-reports-filters-and-highlighting.md).
 
@@ -32,7 +32,7 @@ Il existe de nombreuses façons de filtrer des données dans Power BI. Nous vou
 Les rapports peuvent être ouverts en [mode Édition ou en mode Lecture](service-reading-view-and-editing-view.md). En mode Édition, les propriétaires de rapports [peuvent ajouter des filtres](power-bi-report-add-filter.md) et les enregistrer dans leurs rapports. Les utilisateurs qui consultent le rapport en mode Lecture peuvent interagir avec les filtres, mais ne peuvent pas enregistrer les modifications de filtres apportées au rapport.
 
 ## <a name="filters-in-reading-view"></a>Filtres en mode Lecture
-Quand un rapport est ouvert en mode Lecture, le volet Filtres s’affiche sur le côté droit du canevas de rapport. Si vous ne voyez pas le volet, sélectionnez la flèche dans le coin supérieur droit pour le développer.
+Quand un rapport est ouvert en Mode Lecture, le volet Filtres s’affiche sur le côté droit du canevas de rapport. Si vous ne voyez pas le volet, sélectionnez la flèche dans le coin supérieur droit pour le développer.
 
 Dans cet exemple, nous avons sélectionné un élément visuel contenant 6 filtres. La page de rapport dispose également de filtres qui sont répertoriés sous le titre **Filtres au niveau de la page**. Il y a un [filtre Extraction](power-bi-report-add-filter.md), et le rapport entier a également un filtre, **AnnéeFiscale**, défini sur 2013 ou 2014.
 
@@ -59,7 +59,7 @@ Quand un rapport est ouvert en mode Édition, le volet Filtres s’affiche sur l
 
 ![](media/power-bi-how-to-report-filter/power-bi-all-filters.png).  
 
-Si aucun élément visuel n’est sélectionné dans la zone de dessin, le volet Filtres affiche uniquement les filtres qui s’appliquent à la page de rapport entière ou au rapport entier, et tout filtre d’extraction (le cas échéant). Dans l’exemple ci-dessous, aucun élément visuel n’est sélectionné, aucun filtre de niveau page ou filtre d’extraction ne s’affiche, mais il existe un filtre de niveau rapport.  
+Si aucun visuel n’est sélectionné dans le canevas, le volet Filtres affiche uniquement les filtres qui s’appliquent à la totalité du rapport ou de la page de rapport, ainsi que tous les filtres d’extraction (le cas échéant). Dans l’exemple ci-dessous, aucun élément visuel n’est sélectionné, aucun filtre de niveau page ou filtre d’extraction ne s’affiche, mais il existe un filtre de niveau rapport.  
 
 ![](media/power-bi-how-to-report-filter/power-bi-no-visual.png)  
 
@@ -75,9 +75,9 @@ Pour afficher les options d’un filtre donné, sélectionnez la flèche vers le
  En mode Filtrage de base ou avancé, sélectionnez l’icône en forme de gomme ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) pour réinitialiser le filtre. 
 
 ## <a name="add-a-filter"></a>Ajouter un filtre
-* En mode Edition, ajoutez un filtre à un visuel, un page, un extraction ou un rapport en sélectionnant un champ dans le volet champs, puis en le faisant glisser vers le puits de filtre approprié, où vous voyez les mots **Faites glisser les champs ici**. Une fois que vous avez ajouté un champ en tant que filtre, affinez-le à l’aide des commandes des filtrages de base et avancé (décrites ci-dessous).
+* En Mode Édition, ajoutez un filtre à un visuel, à une page, à une extraction ou à un rapport en sélectionnant un champ dans le volet Champs, puis en le faisant glisser vers le puits de filtre correspondant, à l’endroit où apparaissent les mots **Faites glisser les champs ici**. Une fois que vous avez ajouté un champ en tant que filtre, affinez-le à l’aide des commandes des filtrages de base et avancé (décrites ci-dessous).
 
-Faire glisser un nouveau champ vers la zone de filtre de niveau Visuel n’a pas pour effet d’ajouter ce champ au visuel, mais cela vous permet de filtrer le visuel avec ce nouveau champ. Dans l’exemple ci-dessous, **Chain** est ajouté en tant que nouveau filtre à l’élément visuel. Notez que l’ajout de **Chain** en tant que filtre ne modifie pas l’élément visuel jusqu’à ce que vous utilisiez les commandes des filtrages de base et avancé.
+- **Faire glisser un nouveau champ dans la zone de filtre au niveau Visuel n’a pas pour effet de l’ajouter au visuel**, mais cela permet de l’utiliser pour filtrer le visuel. Dans l’exemple ci-dessous, **Chain** est ajouté en tant que nouveau filtre à l’élément visuel. Notez que l’ajout de **Chain** en tant que filtre ne modifie pas l’élément visuel jusqu’à ce que vous utilisiez les commandes des filtrages de base et avancé.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 

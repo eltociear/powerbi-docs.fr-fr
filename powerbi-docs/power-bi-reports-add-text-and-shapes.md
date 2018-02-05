@@ -16,34 +16,41 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: f2edc291c28b865eb956361cf0f9b4740f59c77c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: e5435af7441a1e9b706ac4dc58b544c44a94410a
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="static-content-in-power-bi-reports"></a>Contenu statique dans les rapports Power BI
-En mode Edition, ajoutez des zones de texte et des formes à un rapport dans le service Power BI. 
+Il est possible d’ajouter des formes et des zones de texte à des rapports à l’aide du service Power BI et de Power BI Desktop. Dans les deux cas, vous devez disposer d’autorisations de modification du rapport. Si un rapport a été partagé avec vous, vous n’aurez pas accès au Mode Édition. 
 
-> **Remarque** : dans Power BI Desktop, vous pouvez également [ajouter des images statiques à votre rapport](guided-learning/visualizations.yml#step-11), comme le montre cette vidéo.
+Regardez comment Will utilise Power BI Desktop pour [ajouter des images statiques à un rapport](guided-learning/visualizations.yml#step-11), puis suivez les étapes ci-dessous pour essayer par vous-même avec cette fois le service Power BI.
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
 > 
-> 
 
 ## <a name="add-a-text-box-to-a-report"></a>Ajouter une zone de texte à un rapport
-1. Placez le curseur n’importe où dans le canevas de rapport, puis sélectionnez **Zone de texte**.
+1. Ouvrez un rapport en Mode Édition.
+
+2. Placez le curseur dans un endroit vide du canevas de rapport, puis sélectionnez **Zone de texte**.
    
    ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
 2. Tapez votre texte dans la zone de texte et, si nécessaire, modifiez la police, la couleur et l’alignement du texte. 
    
    ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
-3. Pour positionner la zone de texte, sélectionnez la zone grise située sur le dessus, puis faites-la glisser. Pour redimensionner la zone de texte, sélectionnez et faites glisser l’une des poignées de plan. 
+3. Pour positionner la zone de texte, sélectionnez la zone grise située sur le dessus, puis faites-la glisser. Pour redimensionner la zone de texte, sélectionnez et faites glisser l’une des poignées de contour. 
    
    ![](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
-4. Pour fermer la zone de texte, sélectionnez une zone vide du canevas de rapport.
+
+4. Tout en laissant la zone de texte sélectionnée, poursuivez la mise en forme dans le volet VISUALISATIONS. Dans cet exemple, nous avons mis en forme l’arrière-plan et la bordure. Vous pouvez également attribuer une taille et une position exactes à une zone de texte.  
+
+   ![](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
+
+5. Pour fermer la zone de texte, sélectionnez une zone vide du canevas de rapport. 
+
 5. Sélectionnez l’icône représentant une épingle ![](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) pour épingler la zone de texte à un tableau de bord. 
 
 ## <a name="add-a-shape-to-a-report"></a>Ajouter une forme à un rapport
@@ -55,20 +62,15 @@ En mode Edition, ajoutez des zones de texte et des formes à un rapport dans le 
    Dans le volet **Format de la forme**, personnalisez votre forme. Dans cet exemple, nous avons créé une flèche rouge avec une bordure rouge foncé, pivotée de 90 degrés.
    
    ![](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
-3. Pour positionner la forme, sélectionnez la zone grise située sur le dessus, puis faites-la glisser. Pour redimensionner la forme, sélectionnez et faites glisser l’une des poignées de plan. 
+3. Pour positionner la forme, sélectionnez la zone grise située sur le dessus, puis faites-la glisser. Pour redimensionner la forme, sélectionnez et faites glisser l’une des poignées de plan. Comme avec la zone de texte, vous pouvez également attribuer une taille et une position exactes à une forme.
 
-> **REMARQUE** : des formes ne peuvent pas être épinglées à un tableau de bord. 
+> **REMARQUE** : Il n’est pas possible d’épingler des formes à un tableau de bord, sauf en tant que visuels en [épinglant une page dynamique](service-dashboard-pin-live-tile-from-report.md). 
 > 
 > 
 
 ### <a name="next-steps"></a>Étapes suivantes
 [Ajouter un lien hypertexte à une zone de texte](service-add-hyperlink-to-text-box.md)
 
-[Rapports dans Power BI](service-reports.md)
-
-[Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)
-
 [Power BI – Concepts de base](service-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/20/2018
+ms.date: 01/24/2018
 ms.author: mihart
-ms.openlocfilehash: 259007c76b7b53ba0ea55a28fbdd189469383364
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+ms.openlocfilehash: 7c0bd2f342385f71fd91bb81a284ef41deb46169
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exporter un rapport du service Power BI vers Power BI Desktop (version préliminaire)
 Dans Power BI Desktop, vous pouvez exporter (*télécharger*) un rapport dans le service Power BI en l’enregistrant et en sélectionnant **Publier**. Vous pouvez également exporter dans l’autre sens également et télécharger un rapport du service Power BI vers Power BI Desktop. L’extension des fichiers en cours d’exportation, dans les deux directions, est *.pbix*.
@@ -37,7 +37,7 @@ Pour télécharger le fichier .pbix, procédez comme suit :
 2. Dans la barre de menus, sélectionnez **Fichier > Télécharger le rapport**.
    
    > [!NOTE]
-   > Pour être téléchargé, le rapport doit avoir été [créé à l’aide de Power BI Desktop](guided-learning/publishingandsharing.yml#step-2) après le 23 novembre 2016 ou mis à jour depuis. Sinon, l’option de menu *Télécharger le rapport* dans le service Power BI apparaît en grisé.
+   > Pour être téléchargeable, le rapport doit avoir été [créé avec Power BI Desktop](guided-learning/publishingandsharing.yml#step-2) après le 23 novembre 2016 et mis à jour depuis. Sinon, l’option de menu *Télécharger le rapport* dans le service Power BI apparaît en grisé.
    > 
    > 
 3. Lorsque le fichier .pbix est en cours de création, une bannière d’état affiche la progression. Lorsqu’il est prêt, vous êtes invité à l’ouvrir ou l’enregistrer. Le nom du fichier correspond au titre du rapport.
@@ -59,7 +59,7 @@ Pour télécharger le fichier .pbix, procédez comme suit :
 Voici quelques considérations et limitations associées au téléchargement (à l’exportation) d’un fichier *.pbix* à partir du service Power BI.
 
 * Pour télécharger le fichier, vous devez disposer des droits de modification sur le rapport.
-* Le rapport doit soit provenir de **Power BI Desktop** et avoir été *publié* sur le **service Power BI**, soit avoir été *téléchargé* dans le service.
+* Le rapport doit avoir été créé avec **Power BI Desktop** et *publié* sur le **service Power BI** ; à défaut, le .pbix doit avoir été *chargé* dans le service.
 * Les rapports doivent être publiés ou mis à jour après le 23 novembre 2016. Les rapports publiés avant cette date ne sont pas téléchargeables.
 * Cette fonctionnalité ne fonctionne pas avec les rapports créés à l’origine dans le **service Power BI**, y compris les packs de contenu.
 * Vous devez toujours utiliser la dernière version de **Power BI Desktop** lors de l’ouverture des fichiers téléchargés. Il se peut que les fichiers *.pbix* téléchargés ne s’ouvrent pas dans des anciennes versions de **Power BI Desktop**.
