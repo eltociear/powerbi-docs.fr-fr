@@ -6,7 +6,7 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: visualizations
-  nextTutorialTitle: Visualizations
+  nextTutorialTitle: Visualisations
   displayType: one-column
   author: davidiseminger
   manager: kfile
@@ -15,14 +15,13 @@ metadata:
   ms.date: 12/05/2017
   ms.author: davidi
   ms.openlocfilehash: 5b09b8365e59d8d89b30e4a01237f7d53559896f
-  ms.sourcegitcommit: 1791b8f10332c680a1552d5361a6e01b75091385
+  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 12/12/2017
+  ms.lasthandoff: 02/06/2018
 items:
 - durationInMinutes: 1
-  content: >
-    With the **modeling** capabilities in **Power BI**, you can connect to multiple data sources, then combine them in ways that create a unique model of data that suits your needs.
+  content: "Avec les fonctionnalités de **modélisation** de **Power BI**, vous pouvez vous connecter à plusieurs sources de données, puis les combiner de manière à créer un modèle unique de données adapté à vos besoins.\n"
 - title: "Présentation de la modélisation des données"
   durationInMinutes: 3
   content: >
@@ -72,4 +71,4 @@ items:
 
 
     [!INCLUDE [](includes/2-6a-explore-time-based-data.md)]
-- content: "You are on a roll. Keep up the good work in learning about Power BI! You've completed the **Modeling** section of Microsoft Power BI Guided learning. Next up is visualizations.\0"
+- content: "Vous êtes sur la bonne voie. Continuez votre formation sur Power BI ! Vous avez terminé la section **Modélisation** de la formation guidée sur Microsoft Power BI. La suite de la formation concerne les visualisations.\n"
