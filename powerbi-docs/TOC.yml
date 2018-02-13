@@ -24,7 +24,7 @@
           href: service-extended-pro-trial.md
         - name: "Inscrivez-vous pour accéder aux fonctionnalités en version préliminaire de Power\_BI"
           href: service-preview-features.md
-        - name: Forum Aux Questions
+        - name: Questions fréquentes (FAQ)
           href: service-frequently-asked-questions.md
         - name: "Nouveautés dans le service Power\_BI"
           href: service-whats-new.md
@@ -852,51 +852,51 @@
       items:
         - name: "Applications Power\_BI pour appareils mobiles"
           href: mobile-apps-for-mobile-devices.md
-        - name: Afficher vos tableaux de bords et rapports sur votre appareil mobile
+        - name: 'Afficher des tableaux de bords, des rapports et des applications sur un appareil mobile'
           href: mobile-apps-find-content-mobile-devices.md
-        - name: Nouveautés dans les applications mobiles pour Power BI
+        - name: Nouveautés des applications mobiles
           href: mobile-whats-new-in-the-mobile-apps.md
     - name: Toutes les applications mobiles
       items:
         - name: "Applications Power\_BI pour iOS"
           href: mobile-ios-ipad-iphone-apps.md
-        - name: Afficher des rapports et des indicateurs de performance clés locaux dans des applications mobiles Power BI
+        - name: Afficher des rapports et des indicateurs de performance clés locaux dans les applications mobiles
           href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-        - name: "Tableaux de bord pour la version mobile de Power\_BI"
+        - name: Tableaux de bord dans les applications mobiles
           href: mobile-apps-view-dashboard.md
-        - name: Rapports dans les applications mobiles Power BI
+        - name: Rapports dans les applications mobiles
           href: mobile-reports-in-the-mobile-apps.md
         - name: Interagir avec des vignettes dans les applications mobiles
           href: mobile-tiles-in-the-mobile-apps.md
         - name: Partager un tableau de bord à partir de l’application mobile Power BI
           href: mobile-share-dashboard-from-the-mobile-apps.md
-        - name: "Éléments favoris dans les applications mobiles Power\_BI"
+        - name: Favoris dans les applications mobiles
           href: mobile-apps-favorites.md
-        - name: "Obtenez des données Power\_BI réelles avec les applications mobiles"
+        - name: Obtenir des données Power BI réelles avec les applications mobiles
           href: mobile-apps-data-in-real-world-context.md
-        - name: "Scanner un code QR Power\_BI à partir de votre téléphone"
+        - name: Scanner un code QR à partir de votre téléphone
           href: mobile-apps-qr-code.md
-        - name: "Obtenir des notifications dans les applications mobiles Power\_BI"
+        - name: Obtenir des notifications dans les applications mobiles
           href: mobile-apps-notification-center.md
-        - name: 'Annoter et partager une vignette, un rapport ou un visuel dans les applications mobiles'
+        - name: Annoter et partager dans les applications mobiles
           href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-        - name: "Définir des alertes de données dans les applications mobiles Power\_BI"
+        - name: Définir des alertes de données dans les applications mobiles
           href: mobile-set-data-alerts-in-the-mobile-apps.md
-        - name: "Filtrer un rapport en fonction de l’emplacement dans les applications mobiles Power\_BI"
+        - name: Filtrer un rapport en fonction de l’emplacement dans les applications mobiles
           href: mobile-apps-geographic-filtering.md
         - name: Poser des questions sur vos données dans les applications mobiles iOS (didacticiel)
           href: mobile-apps-ios-qna.md
         - name: Créer un lien ciblé qui pointe vers un emplacement spécifique
           href: mobile-apps-deep-link-specific-location.md
-        - name: Affichage de vos données hors connexion dans les applications mobiles Power BI
+        - name: Voir vos données hors connexion dans les applications mobiles
           href: mobile-apps-offline-data.md
-        - name: "Visualiser les rapports Power\_BI optimisés pour les téléphones et interagir avec eux"
+        - name: Voir et utiliser des rapports optimisés pour votre téléphone
           href: mobile-apps-view-phone-report.md
         - name: Configurer des applications mobiles avec Intune
           href: service-admin-mobile-intune.md
         - name: Utilisation d’OAuth pour la connexion à Reporting Services
           href: mobile-oauth-ssrs.md
-        - name: Langues prises en charge dans les applications mobiles Power BI
+        - name: Langues prises en charge dans les applications mobiles
           href: mobile-apps-supported-languages.md
     - name: "Application iPad (Power\_BI pour iOS)"
       items:
@@ -908,7 +908,7 @@
           href: mobile-iphone-app-get-started.md
         - name: "Application Power\_BI pour Apple Watch"
           href: mobile-apple-watch.md
-        - name: "Scannez un code-barres depuis l’application Power\_BI sur votre iPhone"
+        - name: Scanner un code-barres avec l’application mobile sur votre iPhone
           href: mobile-apps-scan-barcode-iphone.md
     - name: "Application Power\_BI pour les téléphones Android"
       items:
@@ -924,7 +924,7 @@
       items:
         - name: "Prise en main de l’application mobile Power\_BI pour Windows\_10"
           href: mobile-windows-10-phone-app-get-started.md
-        - name: "Afficher les rapports mobiles et les indicateurs de performance clés Reporting Services dans l’application Power\_BI pour Windows\_10"
+        - name: "Voir les rapports mobiles et les indicateurs de performance clés Reporting Services sur l’application mobile pour Windows\_10"
           href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
         - name: Épingler une vignette ou un tableau de bord Power BI sur l’écran d’accueil
           href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
