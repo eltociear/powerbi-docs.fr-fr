@@ -24,7 +24,7 @@
           href: service-extended-pro-trial.md
         - name: "Inscrivez-vous pour accéder aux fonctionnalités en version préliminaire de Power\_BI"
           href: service-preview-features.md
-        - name: Questions fréquentes (FAQ)
+        - name: Forum Aux Questions
           href: service-frequently-asked-questions.md
         - name: "Nouveautés dans le service Power\_BI"
           href: service-whats-new.md
@@ -128,8 +128,6 @@
           href: service-connect-to-azure-consumption-insights.md
         - name: Recherche Azure
           href: service-connect-to-azure-search.md
-        - name: Azure Security Center
-          href: service-connect-to-azure-security-center.md
         - name: Bing
           href: service-connect-to-bing.md
         - name: Circuit ID
@@ -980,8 +978,6 @@
       items:
         - name: Création d’un élément visuel personnalisé avec les outils de développement
           href: service-custom-visuals-getting-started-with-developer-tools.md
-        - name: Examen des éléments visuels personnalisés pour la sécurité et la confidentialité
-          href: service-custom-visuals-review-for-security-and-privacy.md
         - name: Obtenir un élément personnel certifié
           href: power-bi-custom-visuals-certified.md
     - name: Transmettre des données à un tableau de bord
