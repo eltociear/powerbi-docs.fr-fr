@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/19/2017
 ms.author: maghan
-ms.openlocfilehash: 99b6391dc48772e21dd64038699a3365225167eb
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 78be1a631a167a3b32ecb7d884a3428dc6a362b0
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -98,12 +98,6 @@ Vous pouvez également accorder aux utilisateurs l’accès à votre rapport en 
 
 2. Partagez le tableau de bord avec les utilisateurs qui ont besoin d’accéder au rapport. Pour plus d’informations, consultez [Partager un tableau de bord avec vos collègues et les autres utilisateurs](service-share-dashboards.md).
 
-## <a name="allowing-free-users-access-to-reports"></a>Autoriser l’accès des utilisateurs de la version gratuite aux rapports
-
-Les utilisateurs de la version gratuite peuvent afficher des rapports qui sont intégrés avec le composant WebPart Power BI pour SharePoint Online. Vous fournissez l’accès aux utilisateurs de la version gratuite de la même façon qu’avec des utilisateurs de la version Pro, comme décrit dans [Octroi de l’accès aux rapports](#granting-access-to-reports) ci-dessus. L’espace de travail, où se trouve le rapport, doit également être sauvegardé par la capacité Power BI Premium. 
-
-Par exemple, si vous avez un rapport, dans un espace de travail d’application, vous devez affecter ce dernier à une capacité Power BI Premium. Vous devez également ajouter l’utilisateur de la version gratuite à la liste des membres de cet espace de travail d’application.
-
 ## <a name="web-part-settings"></a>Paramètres des composants WebPart
 
 Voici une description des paramètres qui peuvent être ajustés pour le composant WebPart Power BI dans SharePoint Online.
@@ -160,5 +154,5 @@ Vous devez contacter le propriétaire de la page SharePoint Online pour qu’il 
 [Partager un tableau de bord avec vos collègues et les autres utilisateurs](service-share-dashboards.md)  
 [Qu’est-ce que Power BI Premium ?](service-premium.md)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/) 
 

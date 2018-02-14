@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: v-mamcge
-ms.openlocfilehash: 251503064cca2c0365df74ed0c21b296fb30a7a8
-ms.sourcegitcommit: 1791b8f10332c680a1552d5361a6e01b75091385
+ms.openlocfilehash: 99267fa0ffa1910f9dab920f939082aadb55d6aa
+ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="power-bi-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI 
 Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI.  
@@ -142,7 +142,7 @@ La latence du réseau peut affecter les performances du rapport en augmentant le
 
 Des outils tels que [Azure Speed Test](http://azurespeedtest.azurewebsites.net/) peuvent fournir une indication de latence du réseau entre le client et la région Azure. De manière générale, pour minimiser l’impact de la latence du réseau, essayez de rapprocher le plus possible les sources de données, les passerelles et votre cluster Power BI. Si la latence du réseau pose problème, vous pouvez essayer de rapprocher les passerelles et les sources de données de votre cluster Power BI en les plaçant sur des machines virtuelles. 
 
-Pour améliorer la latence du réseau, envisagez d’utiliser [Azure ExpressRoute](https://azure.microsoft.com/en-us/services/expressroute/), qui est capable de créer des connexions réseau plus rapides et plus fiables entre vos clients et les centres de données Azure. 
+Pour améliorer la latence du réseau, envisagez d’utiliser [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), qui est capable de créer des connexions réseau plus rapides et plus fiables entre vos clients et les centres de données Azure. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - [Planification d’un déploiement de Power BI en entreprise](https://aka.ms/pbienterprisedeploy) : guide complet sur les déploiements de Power BI à grande échelle 

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 0ec1ca9bccabd923b67fc1f49da4b7321ba11141
-ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
+ms.openlocfilehash: 0bbbbccefedd437204e1981cb1cc88493373330b
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Se connecter à Application Insights avec Power BI
 Power BI permet de créer de puissants tableaux de bord personnalisés à partir de la télémétrie [Application Insight](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Envisagez la télémétrie de votre application autrement. Combinez des mesures de plusieurs applications ou services de composants sur un tableau de bord unique. La première version du pack de contenu Power BI pour Application Insights inclut des widgets pour des mesures courantes relatives à l’utilisation, telles que les utilisateurs actifs, l’affichage de page, les sessions, la version du navigateur et du système d’exploitation, et la répartition géographique des utilisateurs sur une carte.
@@ -61,7 +61,7 @@ Connectez-vous au [pack de contenu Application Insights pour Power BI](https:/
 ## <a name="whats-included"></a>Ce qui est inclus
 Le pack de contenu Application Insights contient les tables et les métriques suivantes :  
 
-     ´´´
+    ´´´
     - ApplicationDetails  
     - UniqueUsersLast7Days   
     - UniqueUsersLast30Days   
@@ -78,7 +78,7 @@ Le pack de contenu Application Insights contient les tables et les métriques su
     - SessionsByCountryLast7Days   
     - SessionsByCountryLast30Days   
     - PageViewsByCountryDailyLast30Days  
-   ´´´ 
+        ´´´ 
 
 <a name="FindingAppInsightsParams"></a>
 

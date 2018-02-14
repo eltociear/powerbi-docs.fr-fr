@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/06/2018
 ms.author: davidi
-ms.openlocfilehash: 1e68f7df5214e038df8bcd1584acb815c0af98bf
-ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
+ms.openlocfilehash: 5d754dbdd5d52e7a5b123755015e656d9fb2cea2
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="disable-privacy-setting-in-power-bi-gateway---personal"></a>Désactivation du paramètre de confidentialité dans Power BI Gateway - Personal
 > [!NOTE]
@@ -45,7 +45,7 @@ Pour résoudre cette erreur, vous pouvez activer l’option **Combinaison rapide
 > 
 
 ## <a name="what-is-fast-combine"></a>Qu’est-ce que la combinaison rapide ?
-Pour plus d’informations sur les niveaux de confidentialité et la combinaison rapide, vous pouvez consulter [Niveaux de confidentialité](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540). Par défaut, le niveau de confidentialité est défini sur privé, ce qui peut entraîner l’erreur mentionnée ci-dessus. Cela résulte du fait qu’un niveau de confidentialité privé a pour effet d’isoler la source de données d’autres sources. Un exemple de situation où cela serait problématique est celui d’une requête paramétrable obtenant des entrées d’une autre source de données.
+Pour plus d’informations sur les niveaux de confidentialité et la combinaison rapide, vous pouvez consulter [Niveaux de confidentialité](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540). Par défaut, le niveau de confidentialité est défini sur privé, ce qui peut entraîner l’erreur mentionnée ci-dessus. Cela résulte du fait qu’un niveau de confidentialité privé a pour effet d’isoler la source de données d’autres sources. Un exemple de situation où cela serait problématique est celui d’une requête paramétrable obtenant des entrées d’une autre source de données.
 
 L’activation de la combinaison rapide a pour effet d’ignorer le niveau de confidentialité privé et d’autoriser l’exécution.
 
@@ -85,7 +85,7 @@ Les étapes suivantes permettent d’activer le regroupement rapide pour votre p
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Passerelle de données locale (mode personnel) - nouvelle version de la passerelle personnelle](service-gateway-personal-mode.md)
-[Niveaux de confidentialité](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
+[Niveaux de confidentialité](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
 [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 02/06/2018
 ms.author: maggies
-ms.openlocfilehash: c82b5c302511d5c82ae0048b8dce4f227f6fc5b1
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 53d367d0dc76b338659283215855f4b55a2679fd
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 * Si vous avez des questions, [essayez d’interroger la communauté Power BI](http://community.powerbi.com/).
@@ -141,7 +141,7 @@ Vous pouvez également rechercher un [partenaire Microsoft](https://partner.micr
 ## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Que se passe-t-il si ma licence Power BI Pro arrive à expiration ?
 Il existe une période de grâce de 30 jours après l’expiration d’une licence Power BI Pro.
 
-L’abonnement Power BI Pro dispose du même cycle de vie qu’Office 365. Pour plus d’informations, consultez [Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement Office 365 pour les entreprises ?](https://support.office.com/en-us/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+L’abonnement Power BI Pro dispose du même cycle de vie qu’Office 365. Pour plus d’informations, consultez [Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement Office 365 pour les entreprises ?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Power BI répond-il aux exigences de conformité nationales, régionales et sectorielles ?
 Pour plus d’informations sur la conformité Power BI, consultez le [Centre de gestion de la confidentialité Microsoft](http://go.microsoft.com/fwlink/?LinkId=785324).
