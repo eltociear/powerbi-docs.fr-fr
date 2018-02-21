@@ -3,7 +3,7 @@ title: "Se connecter à VMob avec Power BI"
 description: VMob pour Power BI
 services: powerbi
 documentationcenter: 
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
-ms.author: yshoukry
-ms.openlocfilehash: 09bd84fc320b550ccdaa0771f747a19bc1003150
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.author: sarinas
+ms.openlocfilehash: f81c132de6ab2d7c086379dc538e23fd2f4072e8
+ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="connect-to-vmob-with-power-bi"></a>Se connecter à VMob avec Power BI
 Le suivi et l’exploration de vos données VMob sont faciles avec Power BI et le pack de contenu VMob. Power BI récupère les données suivantes : statistiques utilisateur pour toutes les périodes au cours des 30 derniers jours, indicateurs de performance clés de vente au détail pour les 30 derniers jours et performances de campagne pour les 30 derniers jours.
