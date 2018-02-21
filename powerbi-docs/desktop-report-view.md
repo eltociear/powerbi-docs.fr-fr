@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 1750fc9bec6de6caf17ff3ae6f514efe050f48f1
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 5ae0ef1ec5b13699f3ae5c502d29529841a7a726
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Vue Rapport dans Power BI Desktop
 Si vous avez déjà utilisé Power BI, vous savez combien il est facile de créer des rapports fournissant des perspectives et des informations dynamiques sur vos données. En outre, Power BI met à votre disposition d’autres fonctions avancées dans Power BI Desktop. Grâce  à Power BI Desktop, vous pouvez créer des requêtes avancées, combiner des données de plusieurs sources, créer des relations entre des tables et bien plus encore.
@@ -62,6 +62,24 @@ Pour supprimer une page, cliquez sur le **X** sur l’onglet de la page au bas d
 
 > [!NOTE]
 > Vous ne pouvez pas épingler des rapports et des visualisations à un tableau de bord à partir de Power BI Desktop. Au lieu de cela, vous devez [Publier à partir de Power BI Desktop](desktop-upload-desktop-files.md) sur votre site Power BI.
-> 
-> 
+
+## <a name="hide-report-pages"></a>Masquer les pages d’un rapport
+
+Lorsque vous créez un rapport, vous pouvez également masquer les pages d’un rapport. Cela peut être utile si vous devez créer des données sous-jacentes ou des visuels dans un rapport, mais souhaitez éviter que ces pages soient visibles à d’autres personnes, par exemple si vous créez des tables ou des visuels utilisés dans d’autres pages du rapport. Il existe de nombreuses autres raisons créatives de créer une page de rapport, puis de la masquer dans un rapport à publier. 
+
+Il est facile de masquer une page de rapport. Il suffit de cliquer avec le bouton droit sur l’onglet de la page du rapport puis de sélectionner **Masquer** dans le menu qui s’affiche.
+
+![](media/desktop-report-view/report-view_05.png)
+
+Il existe quelques considérations à prendre en compte lorsque vous masquez une page de rapport :
+
+* Vous pouvez toujours afficher un rapport masqué dans **Power BI Desktop**, même si le titre de la page est grisé. Dans l’image suivante, la page 4 est masquée.
+
+    ![](media/desktop-report-view/report-view_06.png)
+
+* Vous *ne pouvez pas* afficher une page de rapport masquée lorsque vous visualisez le rapport dans le **service Power BI**.
+
+* Le masquage d’une page de rapport ne constitue *pas* une mesure de sécurité. La page reste disponible pour les utilisateurs, et son contenu est toujours accessible à l’aide de la méthode d’extraction, entre autres.
+
+* Lorsqu’une page est masquée en mode Affichage, aucune flèche de navigation n’apparaît.
 

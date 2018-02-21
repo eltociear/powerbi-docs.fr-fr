@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/16/2018
+ms.date: 02/09/2018
 ms.author: maggies
-ms.openlocfilehash: 9ed87e17d617e7492287f3f0d0c54da1c21b3a53
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 3ce4aa6117f5c3267f821af765d6b70fcb7eacd9
+ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -29,6 +29,24 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](service-whats-new.md)  
+
+## <a name="january-2018"></a>Janvier 2018
+
+### <a name="report-favorites"></a>Rapports favoris
+
+Marquer les rapports comme favoris pour les afficher dans la page **Favoris**. Accédez à des informations supplémentaires sur les [favoris dans les applications mobiles Power BI](mobile-apps-favorites.md).
+
+### <a name="view-shared-reports"></a>Afficher les rapports partagés
+
+Désormais, quand quelqu'un partage un rapport avec vous, ce rapport apparaît dans la page **Partagé avec moi** et dans les tableaux de bord.
+
+### <a name="improved-hyperlink-support"></a>Meilleure prise en charge des liens hypertexte
+
+Vous pouvez maintenant appuyer sur les liens de visuels personnalisés pour les ouvrir dans votre navigateur mobile.
+
+### <a name="intune-integration-android"></a>Intégration d’Intune (Android)
+
+Prise en charge de l’accès conditionnel à l’aide de la gestion des appareils mobiles Intune.
 
 ## <a name="december-2017"></a>Décembre 2017
 

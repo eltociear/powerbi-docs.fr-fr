@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/06/2018
 ms.author: maggies
-ms.openlocfilehash: fadeaedbcc61626b7f1265ac44480c55a60f4fe0
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 23c52f7eb66e4e7b0683a2392f0fc60ad76ea243
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -64,6 +64,8 @@ L’ajout de contenu s’apparente à l’ajout de contenu à Mon espace de trav
 
 * [Connectez-vous à des services](service-connect-to-services.md) tels que Microsoft Dynamics CRM, Salesforce ou Google Analytics.
 * [Obtenez des données de fichiers](service-get-data-from-files.md), par exemple, de formats Excel, CSV ou Power BI Desktop (PBIX).
+
+Lorsque vous affichez le contenu dans un espace de travail d’application, le propriétaire est désigné par le nom de l’espace de travail d’application.
 
 ## <a name="add-an-image-to-your-app-optional"></a>Ajouter une image à votre application (facultatif)
 Par défaut, Power BI crée un petit cercle de couleur pour votre application, contenant les initiales de celle-ci. Vous pouvez le personnaliser avec une image. Pour ajouter une image, vous avez besoin d’une licence Exchange Online.

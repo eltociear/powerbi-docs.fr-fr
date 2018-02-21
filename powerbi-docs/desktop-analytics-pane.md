@@ -15,26 +15,24 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: add95532f645c143aea0f58200f9e3b1467320d0
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 02498ff745a2e06a49ed6064a4f7eefebff305f8
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Utilisation du volet Analytique dans Power BI Desktop
-Avec le volet **Analyse** de **Power BI Desktop**, vous pouvez ajouter des *lignes de référence* dynamiques aux visuels et mettre en relief les analyses ou les tendances importantes. Le volet **Analyse** se trouve dans la zone **Visualisations** de Power BI Desktop, dès la version publiée en août 2016 (version 2.37.4464.321 ou version ultérieure), comme indiqué ci-dessous.
+Avec le volet **Analyse** de **Power BI Desktop**, vous pouvez ajouter des *lignes de référence* dynamiques aux visuels et mettre en relief les analyses ou les tendances importantes. Le volet **Analyse** se trouve dans la partie **Visualisations** de Power BI Desktop.
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)
 
 > [!NOTE]
 > Le volet **Analyse** s’affiche uniquement quand vous sélectionnez un élément visuel sur la zone de dessin de Power BI Desktop.
-> 
-> 
 
-## <a name="enable-forecasting-preview"></a>Activer les prévisions (version préliminaire)
-En outre, avec la version **Power BI Desktop** (2.39.4526.362 ou ultérieure) de septembre 2016, vous pouvez également effectuer des *prévisions* à partir du volet **Analyse**. Vous devez activer cette fonctionnalité en version préliminaire. Pour cela, accédez à **Fichier > Options et paramètres -> Options**, puis sélectionnez **Fonctionnalités en version préliminaire** dans le volet gauche. Pour activer cette fonctionnalité, activez la case à cocher en regard du paramètre **Prévisions**, comme illustré dans l’image suivante. Vous devez redémarrer **Power BI Desktop** pour que les modifications entrent en vigueur.
+## <a name="search-within-the-analytics-pane"></a>Effectuer une recherche dans le volet Analyse
+À partir de la version de février 2018 de **Power BI Desktop** (version 2.55.5010.201 ou ultérieure), vous pouvez effectuer une recherche dans le volet **Analyse**, qui est une sous-section du volet **Visualisations**. Comme indiqué dans l’image ci-dessous, la zone de recherche apparaît quand le volet **Analyse** est sélectionné.
 
 ![](media/desktop-analytics-pane/analytics-pane_1b.png)
 
