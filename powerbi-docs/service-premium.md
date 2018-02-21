@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 02/05/2018
 ms.author: maghan
-ms.openlocfilehash: eb2072b0beadf3f6f2cf702f35f56441bc38c7ff
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: b2e41884ca799ca07223a4b5444e39b38aa2102a
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="power-bi-premium---what-is-it"></a>Qu’est-ce que Power BI Premium ?
 Power BI Premium fournit à votre organisation ou à votre équipe des ressources dédiées à l’exécution du service Power BI afin qu’elle bénéficie de performances plus fiables et de plus gros volumes de données. Premium permet également une diffusion étendue du contenu sans que vous soyez contraint d’acquérir une licence par utilisateur.
@@ -46,7 +46,7 @@ Il existe deux types de capacité dans Power BI : la capacité partagée et la
 | API et commandes incorporées |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible")<sup>2</sup> |
 | **Publier des rapports Power BI localement** |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible") |
 
-*<sup>1</sup> Dans les applications, les utilisateurs « gratuits » peuvent afficher le contenu sur le web et sur leurs appareils mobiles, et utiliser les fonctionnalités Questions et réponses, Informations rapides, Cortana et Exportation au format CSV, Excel ou PowerPoint.*  
+*<sup>1</sup> Dans les applications, les utilisateurs de la version gratuite peuvent afficher le contenu sur le web et sur leurs appareils mobiles, et utiliser les fonctionnalités Questions et réponses, Informations rapides, Cortana, Exporter au format CSV, Excel et PowerPoint. Une licence Pro est nécessaire pour toutes les activités qui ne figurent pas dans la liste, notamment la création de rapports sur des jeux de données partagés et la fonctionnalité Analyser dans Excel. Pour en savoir plus sur les différences de fonctionnalités, consultez la page [Comparaison entre Power BI gratuit et Power BI Pro](service-free-vs-pro.md).*  
 *<sup>2</sup> Améliorations prévues dans la version post disponibilité générale de Power BI Premium.*
 
 ### <a name="premium-capacity"></a>Capacité Premium

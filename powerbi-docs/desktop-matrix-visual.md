@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: ff29fa49cc3ad1a57ae0d09596b6e0d086b4d349
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 0056fe1d5a2881f1415fe5889ab563a27bb8648d
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Utiliser le visuel Matrice dans Power BI Desktop
 Le visuel **Matrice** vous permet de créer des visuels de matrice (également appelés *tables*) dans des rapports **Power BI Desktop**, et de mettre en évidence des éléments au sein de la matrice en les croisant avec d’autres visuels. Vous pouvez également sélectionner des lignes, colonnes et cellules pour les mettre en évidence croisée. Enfin, pour optimiser l’utilisation de l’espace de disposition, le visuel de matrice prend en charge une disposition échelonnée.
@@ -34,6 +34,19 @@ De nombreuses fonctionnalités sont associées à la matrice, que nous allons pa
 > Depuis la version de **Power BI Desktop** publiée en juillet 2017, les visuels de matrice et de table reflètent le style (y compris les couleurs) du **thème de rapport** appliqué. Il se peut que ces couleurs soient différentes de celles attendues pour votre visuel de matrice, mais vous pouvez les modifier dans votre configuration de **thème de rapport**. Pour plus d’informations sur les thèmes, consultez [**Utiliser les thèmes de rapport dans Power BI Desktop**](desktop-report-themes.md).
 > 
 > 
+
+## <a name="understanding-how-power-bi-calculates-totals"></a>Comprendre comment Power BI calcule les totaux
+
+Avant de passer à l’utilisation du visuel **Matrice**, il est important de comprendre comment Power BI calcule les valeurs des totaux et des sous-totaux dans les tables et les matrices. La mesure des totaux et des sous-totaux est évaluée sur toutes les lignes dans les données sous-jacentes : il ne s’agit *pas* d’une simple addition des valeurs des lignes visibles ou affichées. Les valeurs obtenues dans la ligne du total peuvent donc être différentes de ce à quoi on pourrait s’attendre. 
+
+Regardez les visuels **Matrice** suivants. 
+
+![](media/desktop-matrix-visual/matrix-visual_3.png)
+
+Dans cet exemple, chaque ligne du visuel **Matrice** tout à droite affiche le *Montant* de chaque combinaison vendeur/date. Toutefois, dans la mesure où chaque vendeur apparaît sur plusieurs dates, les chiffres sont susceptibles de s’afficher plusieurs fois. C’est pourquoi le total exact calculé à partir des données sous-jacentes n’est pas égal à la simple addition des valeurs visibles. Il s’agit d’un modèle courant, selon lequel la valeur additionnée correspond à l’élément de l’ensemble de départ dans une relation multivoque.
+
+Lorsque vous étudiez les totaux et les sous-totaux, n’oubliez pas que ces valeurs sont basées sur les données sous-jacentes, et pas seulement sur les valeurs visibles. 
+
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Descendre dans la hiérarchie avec le visuel Matrice
 Le visuel **Matrice** vous permet d’effectuer toutes sortes d’opérations intéressantes de descente dans la hiérarchie qui n’étaient pas possibles avant. Vous pouvez notamment descendre dans la hiérarchie en utilisant des lignes, des colonnes, voire des sections et cellules individuelles. Voyons comment ces opérations fonctionnent.
@@ -144,16 +157,12 @@ Chacune de ces approches permet d’obtenir le même résultat. Sélectionner *C
 
 ![](media/desktop-matrix-visual/matrix-visual_19.png)
 
-## <a name="limitations-and-considerations"></a>Considérations et limitations
-Dans cette version du visuel **Matrice**, gardez à l’esprit les considérations et limitations suivantes.
+## <a name="next-steps"></a>Étapes suivantes
 
-* L’exploration de colonnes n’est possible qu’à l’aide du menu contextuel, et rien n’indique actuellement sur ce visuel que vous pouvez explorer des groupes de lignes ou de colonnes.
-* Vous pouvez uniquement développer tous les éléments d’un niveau à la fois, au lieu d’une catégorie à la fois.
-* L’option **Afficher les enregistrements** peut apparaître dans un menu contextuel lorsque vous cliquez avec le bouton droit sur des en-têtes de colonne, mais elle n’est pas opérationnelle.
-* Il n’y a actuellement pas de ligne *Total général*.
-* La désactivation de la ligne du sous-total dans une disposition échelonnée n’a aucun effet.
-* Des en-têtes de colonne peuvent être tronqués si des groupes internes contiennent un texte plus court que celui du groupe externe.
-* La modification de la mise en retrait de la disposition échelonnée ne devrait pas avoir d’incidence sur le retrait du groupe de lignes extérieur.
+Les articles suivants pourraient également vous intéresser :
 
-Nous sommes toujours désireux de recevoir vos commentaires. Nous effectuons actuellement un **sondage** sur ce visuel **Matrice**. Dès lors, si vous avez quelques minutes, nous vous serions reconnaissants de bien vouloir [répondre au sondage](https://www.instant.ly/s/PYXT1).
+* [Utiliser le quadrillage et l’alignement sur la grille dans les rapports Power BI Desktop](desktop-gridlines-snap-to-grid.md)
+* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Types de données dans Power BI Desktop](desktop-data-types.md)
 
+ 

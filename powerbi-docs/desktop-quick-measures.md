@@ -1,5 +1,5 @@
 ---
-title: "Utiliser la fonctionnalité Mesures rapides pour effectuer facilement des calculs courants et puissants dans Power BI (préversion)"
+title: Utiliser les Mesures rapides pour effectuer facilement des calculs courants et puissants dans Power BI
 description: "La fonctionnalité Mesures rapides fournit des formules DAX prêtes à l’emploi qui accélèrent l’exécution de calculs courants"
 services: powerbi
 documentationcenter: 
@@ -15,23 +15,24 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: d0fc21c19a574f096c46c26331df3114e8c46c31
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: ce971f980bf1796bfef8439b1ea260190fb678df
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations-preview"></a>Utiliser la fonctionnalité Mesures rapides pour effectuer facilement des calculs courants et puissants (version préliminaire)
-Depuis la publication de **Power BI Desktop** d’avril 2017, vous pouvez utiliser la fonctionnalité **Mesures rapides** pour effectuer rapidement et facilement des calculs courants et puissants. Une **mesure rapide** exécute un ensemble de commandes DAX en arrière-plan (vous n’avez pas besoin d’écrire de commande DAX : cela est fait pour vous) en fonction de ce que vous entrez dans une boîte de dialogue, puis affiche les résultats que vous pouvez utiliser dans votre rapport. Mieux encore, vous pouvez voir la commande DAX que la mesure rapide exécute, et ainsi apprendre ou développer vos propres connaissances concernant DAX.
+# <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Utiliser les Mesures rapides pour effectuer facilement des calculs courants et puissants
+Les **Mesures rapides** permettent d’effectuer rapidement et facilement des calculs courants et puissants. Une **mesure rapide** exécute un ensemble de commandes DAX en arrière-plan (vous n’avez pas besoin d’écrire de commande DAX : cela est fait pour vous) en fonction de ce que vous entrez dans une boîte de dialogue, puis affiche les résultats que vous pouvez utiliser dans votre rapport. Mieux encore, vous pouvez voir la commande DAX que la mesure rapide exécute, et ainsi apprendre ou développer vos propres connaissances concernant DAX.
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
 
 Pour créer des **mesures rapides**, double-cliquez sur un champ dans le puits **Champs**, puis sélectionnez **Mesures rapides** dans le menu qui s’affiche. Vous pouvez également cliquer avec le bouton droit sur toute valeur dans le volet **Valeurs** d’un visuel existant (par exemple, le champ *Valeurs* dans un visuel *Graphique à barres*). Il existe de nombreuses catégories de calculs disponibles et manières de modifier chaque calcul selon vos besoins.
 
-### <a name="enable-the-quick-measures-preview"></a>Activer la fonctionnalité Mesures rapides en version préliminaire
-Vous pouvez essayer la nouvelle fonctionnalité **Mesures rapides** à partir de la publication d’**avril 2017** de **Power BI Desktop**. Pour activer cette fonctionnalité en version préliminaire, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis activez la case à cocher en regard de **Mesures rapides**. Vous devez redémarrer Power BI Desktop après avoir effectué la sélection.
+### <a name="quick-measures-now-generally-available"></a>Mesures rapides désormais accessibles à tous
+
+À partir de la version de février 2018 de **Power BI Desktop**, les mesures rapides sont accessibles à tous (et non plus en préversion). Si vous utilisez une version plus ancienne de **Power BI Desktop**, vous pouvez essayer la fonctionnalité **Mesures rapides** à partir de la version **d’avril 2017** de **Power BI Desktop** en sélectionnant **Fichier > Options et paramètres > Options > Fonctionnalités en préversion**, puis en cochant la case **Mesures rapides**.
 
 ![](media/desktop-quick-measures/quick-measures_02b.png)
 
@@ -56,17 +57,17 @@ Lorsque vous sélectionnez le menu déroulant, la longue liste des **Mesures rap
 
 Il existe cinq groupes distincts de types de calculs de mesure rapide, chacun comprenant un ensemble spécifique de calculs. Ces groupes et calculs sont les suivants :
 
-* **Agrégat dans une catégorie**
+* **Agréger par catégorie**
   * Moyenne dans la catégorie
   * Variance dans la catégorie
   * Maximum dans la catégorie
   * Minimum dans la catégorie
   * Moyenne pondérée par catégorie
-* **Filtres et bases de référence**
-  * Mesure filtrée
+* **Filtres**
+  * Valeur filtrée
   * Différence par rapport à la référence
-  * Différence en pourcentage par rapport à la référence
-  * Totaux provenant des nouvelles catégories
+  * Différence en pourcentage par rapport à la valeur filtrée
+  * Ventes provenant des nouvelles catégories
 * **Time intelligence**
   * Cumul annuel jusqu’à ce jour
   * Cumul trimestriel jusqu’à ce jour
@@ -85,6 +86,7 @@ Il existe cinq groupes distincts de types de calculs de mesure rapide, chacun co
   * Multiplication
   * Division
   * Différence en pourcentage
+  * Coefficient de corrélation
 * **Texte**
   * Nombre d’étoiles
   * Liste concaténée de valeurs
@@ -136,7 +138,7 @@ C’est comme si vous étiez assisté par un professeur qui répondrait immédia
 Enfin, une fois que votre mesure est au point, vous pouvez la renommer à votre guise en utilisant le même menu contextuel.
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
-Dans cette version préliminaire de la fonctionnalité **Mesures rapides**, vous devez garder à l’esprit les considérations et limitations suivantes.
+Gardez à l’esprit les considérations et les limitations suivantes.
 
 * Les **mesures rapides** sont disponibles uniquement si vous pouvez modifier le modèle, ce qui n’est pas le cas lorsque vous travaillez avec des connexions DirectQuery ou la plupart des connexions actives (comme expliqué précédemment, les connexions actives SSAS ne sont pas prises en charge).
 * La mesure ajoutée au puits **Champs** peut être utilisée avec n’importe quel visuel inclus dans le rapport.
@@ -152,8 +154,6 @@ Depuis la mise à jour d’octobre 2017 de **Power BI Desktop**, vous pouvez ut
 
 ### <a name="additional-information-and-examples"></a>Exemples et informations supplémentaires
 Nous prévoyons de fournir des exemples et des conseils pour chacun des calculs de la fonctionnalité **Mesures rapides**. Nous vous invitons par conséquent à consulter cet article de temps à autre afin de voir s’il contient des mises à jour.
-
-Dans la mesure où il s’agit d’une fonctionnalité en **version préliminaire**, nous sommes particulièrement intéressés par vos commentaires et vos idées.
 
 Vous avez une idée de **mesure rapide** non encore disponible ? Excellent ! Visitez [cette page](https://go.microsoft.com/fwlink/?linkid=842906) et soumettez vos idées (et formules DAX) pour la **mesure rapide** que vous aimeriez voir dans **Power BI Desktop**. Nous envisagerons d’ajouter celle-ci à la liste fournie de **mesures rapides** dans une prochaine publication.
 

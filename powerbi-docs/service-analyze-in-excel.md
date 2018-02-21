@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 742dcb64e5cec152ee105cbcdfe023788d209a04
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 262245dab44ae904b51d6cb1449082171631dc09
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
 Vous pouvez utiliser Excel pour afficher et interagir avec un jeu de données Power BI. L’option qui permet cela se nomme **Analyser dans Excel**. Cette option permet également d’accéder aux fonctionnalités de segments, de graphiques et de tableaux croisés dynamiques d’Excel, selon le jeu de données qui se trouve dans Power BI.
@@ -32,6 +32,7 @@ Il existe certaines conditions à l’utilisation de l’option **Analyser dans 
 * **Analyser dans Excel** est compatible avec Microsoft Excel 2010 SP1 et versions ultérieures.
 * Les tableaux croisés dynamiques d’Excel ne prennent pas en charge l’agrégation des champs numériques en mode glisser-déposer. Des *mesures doivent être prédéfinies* pour votre jeu de données dans Power BI.
 * Certaines organisations appliquent des règles de stratégie de groupe qui empêchent l’installation des mises à jour requises relatives à l’option **Analyser dans Excel**. Si vous ne parvenez pas à installer les mises à jour, contactez votre administrateur.
+* **Analyser dans Excel** requiert une licence Pro. Pour en savoir plus sur les différences de fonctionnalités entre la licence gratuite et la licence Pro, consultez la section [Comparaison entre Power BI gratuit et Power BI Pro](service-free-vs-pro.md). 
 
 ## <a name="how-does-it-work"></a>Comment ça marche ?
 Quand vous sélectionnez **Analyser dans Excel** à partir du bouton de sélection (...) associé à un groupe de données ou à un rapport dans **Power BI**, Power BI crée un fichier .ODC et le télécharge sur votre ordinateur à partir du navigateur.

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/02/2018
+ms.date: 02/06/2018
 ms.author: maghan
-ms.openlocfilehash: 36f2b591f53e7d9e930048cdedde114348466147
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 7e19e37bf024ec30db58057de54e3039ed7b80b2
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -40,7 +40,7 @@ Pour obtenir l’accès au portail d’administration Power BI, votre compte do
 
 ![](media/service-admin-portal/powerbi-admin-settings.png)
 
-Le portail comporte cinq onglets. Ces onglets sont décrits ci-dessous.
+Le portail comporte six onglets. Ces onglets sont décrits ci-dessous.
 
 * [Métriques d’utilisation](#usage-metrics)
 * [Utilisateurs](#users)
@@ -48,6 +48,7 @@ Le portail comporte cinq onglets. Ces onglets sont décrits ci-dessous.
 * [Paramètres du locataire](#tenant-settings)
 * [Paramètres Premium](#premium-settings)
 * [Codes incorporés](#embed-codes)
+* [Visuels de l’organisation](#Organization-visuals)
 
 ![](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -269,6 +270,46 @@ Pour plus d’informations sur la gestion des paramètres Premium, consultez [G�
 
 En tant qu’administrateur, vous pouvez afficher les codes incorporés qui sont générés pour votre locataire. Vous pouvez afficher le rapport et supprimer le code incorporé pour le révoquer.
 
+## <a name="organization-visuals"></a>Visuels de l’organisation
+
+L’onglet des visuels de l’organisation vous permet de déployer et de gérer en toute simplicité les visuels personnalisés et protégés dans votre organisation, afin que les auteurs de rapports puissent les détecter facilement et les importer directement dans leurs rapports à partir de Power BI Desktop.
+ 
+La page affiche tous les visuels personnalisés actuellement déployés dans le référentiel de l’organisation.
+ 
+![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
+
+### <a name="add-a-new-custom-visual"></a>Ajouter un visuel personnalisé
+
+Pour ajouter un visuel personnalisé à la liste, sélectionnez **Ajouter un visuel personnalisé**.
+
+![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+
+> [!WARNING]
+> Un visuel personnalisé est susceptible de contenir du code présentant des risques pour la sécurité ou la confidentialité ; vérifiez que vous faites confiance à son auteur et à sa source avant de le déployer dans le référentiel d’origine.
+> 
+
+Remplissez les champs :
+ 
+* Choisissez un fichier .pbiviz (obligatoire) : sélectionnez un fichier visuel personnalisé à charger. Seuls les visuels personnalisés d’API avec version sont pris en charge (lisez ici ce que cela signifie).
+Avant de charger un visuel personnalisé, examinez-le afin de déterminer s’il présente un risque en matière de sécurité et de confidentialité et s’il répond aux standards de votre organisation. En savoir plus sur la sécurité des visuels personnalisés.
+ 
+* Nommez vos visuels personnalisés (obligatoire) : donnez un titre court au visuel pour que les utilisateurs de Power BI Desktop comprennent facilement ce qu’il fait.
+ 
+* Icône (obligatoire) : il s’agit du fichier d’icône qui s’affichera dans l’interface utilisateur de Power BI Desktop.
+ 
+* Description : rédigez une brève description du visuel pour donner plus de contexte et d’informations à l’utilisateur.
+ 
+Sélectionnez « Appliquer » pour lancer la demande de chargement. Si elle aboutit, le nouvel élément apparaîtra dans la liste. En cas d’échec, vous recevrez le message d’erreur correspondant.
+ 
+### <a name="delete-a-custom-visual-from-the-list"></a>Supprimer un visuel personnalisé de la liste
+
+Sélectionnez l’icône de la corbeille pour supprimer définitivement le visuel du référentiel.
+Important : La suppression est irréversible. Le rendu du visuel supprimé disparaît immédiatement des rapports existants. Même si vous rechargiez le même visuel, il ne remplacerait pas celui qui a été supprimé ; les utilisateurs devraient réimporter le nouveau et remplacer l’instance présente dans leurs rapports.
+ 
+### <a name="how-to-update-a-visual"></a>Mettre à jour un visuel
+
+Si vous souhaitez mettre à jour un visuel dans le référentiel parce qu’il en existe une nouvelle version (p. ex., correctifs de bogues, nouvelles fonctionnalités, etc.), chargez le nouveau fichier (vérifiez que l’ID du visuel reste le même) dans une nouvelle entrée de la liste en indiquant les bonnes informations dans le titre et la description (p. ex., « Mon visuel v2.0 »). La prochaine fois que les utilisateurs entreront dans le référentiel de l’organisation à partir de Power BI Desktop, ils pourront importer la nouvelle version et seront alors invités à remplacer la version déjà présente dans leur rapport.
+ 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Présentation du rôle d’administrateur Power BI](service-admin-role.md)  

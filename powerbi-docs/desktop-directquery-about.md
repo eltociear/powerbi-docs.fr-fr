@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 0d6d66016663ed0e12d8f3da854ec1e9f7da7eae
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: ceccf00879d3ac17f907f5dce296bb03bb0227d2
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-directquery-in-power-bi"></a>Utilisation de DirectQuery dans Power BI
 Lorsque vous utilisez **Power BI Desktop** ou le **service Power BI**, vous pouvez vous connecter à toutes sortes de sources de données et établir ces connexions aux données de différentes façons. Vous pouvez soit *importer* des données dans Power BI, ce qui est la méthode la plus courante pour obtenir des données, soit vous connecter directement aux données dans leur dépôt source d’origine, ce qu’on appelle une requête **DirectQuery**. Cet article décrit la requête **DirectQuery** et ses fonctionnalités, et comprend les rubriques suivantes :
@@ -269,14 +269,21 @@ Lorsque vous définissez le modèle, considérez ce qui suit :
 ### <a name="report-design-guidance"></a>Aide à la conception d’un rapport
 Lorsque vous créez un rapport à l’aide d’une connexion DirectQuery, suivez les instructions suivantes :
 
+* **Envisagez d’utiliser les options de réduction des requêtes :** Power BI propose des options de rapport permettant d’envoyer moins de requêtes et de désactiver certaines interactions qui aboutiraient à une mauvaise expérience dans le cas où les requêtes résultantes mettent longtemps à s’exécuter. Pour accéder à ces options dans **Power BI Desktop**, cliquez sur **Fichier > Options et paramètres > Options** et sélectionnez **Réduction des requêtes**. 
+
+   ![](media/desktop-directquery-about/directquery-about_03b.png)
+
+    Cochez la case **Réduction des requêtes** pour désactiver la mise en surbrillance croisée sur l’ensemble du rapport. Vous pouvez également afficher un bouton *Appliquer* sur les segments ou sur les sélections de filtres, ce qui vous permet d’en sélectionner plusieurs avant de les appliquer : aucune requête n’est envoyée tant que le bouton **Appliquer**  n’est pas sélectionné sur le segment. Vos sélections sont ensuite utilisées pour filtrer les données.
+
+    Ces options s’appliqueront au rapport lorsque vous interagirez avec dans **Power BI Desktop** et lorsque vos utilisateurs l’utiliseront dans le **Service Power BI**.
+
 * **Appliquer d’abord des filtres :** appliquez toujours les filtres applicables au début de la création d’un visuel. Par exemple, au lieu de faire glisser vers TotalSalesAmount et ProductName, puis de filtrer sur une année en particulier, appliquez le filtre à Année dès le début. Cela est dû au fait que chaque étape de création d’un visuel entraîne l’envoi d’une requête et bien qu’il soit possible d’apporter une autre modification avant l’accomplissement de la première requête, cela laisse toujours peser une charge inutile sur la source sous-jacente. L’application précoce de filtres rend généralement ces requêtes intermédiaires moins coûteuses. En revanche, la non-application précoce de filtres peut amener à atteindre la limite de 1 million de lignes évoquée ci-dessus.
 * **Limitez le nombre de visuels sur une page :** lors de l’ouverture d’une page (ou bien d’un segment ou filtre modifié au niveau page), tous les visuels sur la page sont actualisés. Il existe également une limite au nombre de requêtes qui sont envoyées en parallèle. Par conséquent, à mesure que le nombre de visuels augmente, certains d’entre eux sont actualisés de façon séquentielle, ce qui augmente le temps nécessaire pour l’actualisation de la page entière. C’est pourquoi il est recommandé de limiter le nombre de visuels sur une même page, et d’avoir plutôt un nombre plus important de pages plus simples.
 * **Envisagez de désactiver l’interaction entre les visuels :** par défaut, vous pouvez utiliser les visualisations d’une page de rapport pour effectuer un filtrage croisé et une sélection croisée des autres visualisations figurant sur la page. Par exemple, après que vous avez sélectionné « 1999 » sur le graphique en secteurs, l’histogramme est sélectionné de façon croisée pour afficher les ventes par catégorie pour l’année « 1999 ».                                                                  
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  En revanche, cette interaction peut être contrôlée de la manière décrite [dans cet article](service-reports-visual-interactions.md). Dans DirectQuery, de tels filtrages et sélection croisés nécessitent l’envoi de requêtes à la source sous-jacente, de sorte que l’interaction devrait être désactivée si le temps nécessaire pour répondre aux sélections des utilisateurs devenait excessivement long.
-* **Envisagez de partager le rapport uniquement :** il existe différentes manières de partager du contenu après publication de celui-ci sur le **service Power BI**. Dans le cas de DirectQuery, il est conseillé de se contenter de partager le rapport terminé, au lieu d’autoriser d’autres utilisateurs à créer des rapports (au risque de rencontrer des problèmes de performances pour les visuels qu’ils créent).
+  Dans DirectQuery, le filtrage et la mise en surbrillance croisés impliquent l’envoi de requêtes à la source sous-jacente ; l’interaction devra donc être désactivée si le temps nécessaire pour répondre aux sélections des utilisateurs devient excessivement long. La désactivation est possible soit pour l’intégralité du rapport (cf. la section *Options de réduction des requêtes* ci-dessus) soit au cas par cas comme le décrit [cet article](service-reports-visual-interactions.md).
 
 En plus de la liste de suggestions ci-dessus, notez que chacune des fonctions de création de rapports suivantes peut entraîner des problèmes de performances :
 
@@ -294,6 +301,8 @@ En plus de la liste de suggestions ci-dessus, notez que chacune des fonctions de
 * **Médiane :** en règle générale, toute agrégation (Somme, Count Distinct, etc.) est envoyée à la source sous-jacente. Toutefois, cela n’est pas vrai pour la valeur Médiane, car cet agrégat n’est généralement pas pris en charge par la source sous-jacente. Dans ce cas, les données détaillées sont extraites de la source sous-jacente, et la valeur Médiane calculée à partir des résultats retournés. Cela est raisonnable lorsque la valeur Médiane doit être calculée sur la base d’un nombre relativement restreint de résultats, mais des problèmes de performances (ou des échecs de requêtes en raison de la limite de 1 million de lignes) se produisent si la cardinalité est importante.  Par exemple, une valeur médiane de population d’un pays pourrait être raisonnable, tandis qu’une valeur médiane de prix de vente pourrait ne pas l’être.
 * **Filtres de texte avancés (« contient » et autres) :** lors d’un filtrage sur une colonne de texte, un filtrage avancé permet d’utiliser des filtres tels que « contient », « commence par », etc. Ces filtres peuvent certainement entraîner une dégradation des performances pour certaines sources de données. En particulier, le filtre par défaut « contient » ne doit pas être utilisé en cas de recherche d’une correspondance exacte (« est » ou « n’est pas »). Si les résultats peuvent être identiques, en fonction des données réelles, les performances peuvent être considérablement différentes en raison de l’utilisation d’index.
 * **Multisélection de segments :** par défaut, les segments n’autorisent qu’une seule sélection. L’autorisation d’une multisélection dans les filtres peut entraîner des problèmes de performances car, lorsque l’utilisateur sélectionne un ensemble d’éléments dans le segment (par exemple, les dix produits qui l’intéressent), chaque nouvelle sélection entraîne l’envoi de requêtes à la source principale. Bien que l’utilisateur puisse sélectionner l’élément suivant avant la fin de requête, cela entraîne une charge supplémentaire sur la source sous-jacente.
+
+* **Envisagez de désactivez les totaux sur les visuels :** par défaut, les tables et les matrices affichent les totaux et les sous-totaux. Dans de nombreux cas, il faut envoyer des requêtes distinctes à la source sous-jacente pour obtenir les valeurs de ces totaux. Cela s’applique à chaque fois que l’agrégation *DistinctCount* est utilisée, de même que DirectQuery sur SAP BW ou SAP HANA. Ces totaux doivent être désactivés (à l’aide du volet **Format**) s’ils ne sont pas nécessaires. 
 
 ### <a name="diagnosing-performance-issues"></a>Diagnostic des problèmes de performances
 Cette section décrit comment diagnostiquer des problèmes de performances ou obtenir des informations plus détaillées pour permettre l’optimisation des rapports.

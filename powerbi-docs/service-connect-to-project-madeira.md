@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: bf65b900f315f74c5ca81980e6371d92923cb97d
-ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
+ms.openlocfilehash: cde5199ad65e69f3304cfe244b549f1e7ae61e97
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Se connecter à Project Madeira avec Power BI
 Power BI et le pack de contenu Project « Madeira » facilitent l’analyse des données Project « Madeira ». Power BI récupère vos données, à la fois les données de ventes et les données financières, puis crée un tableau de bord par défaut et des rapports basés sur ces données.
@@ -47,7 +47,7 @@ Connectez-vous au [pack de contenu Project « Madeira » Analytics](https://ap
     >[!NOTE]
     >Vous devez être un superutilisateur de Project « Madeira ».
    
-    ![](media/service-connect-to-project-madeira/creds.png)
+   ![](media/service-connect-to-project-madeira/creds.png)
 6. Après connexion, un tableau de bord, un rapport et un ensemble de données sont chargés automatiquement. Les vignettes sont ensuite mises à jour avec les données de votre compte.  
    
     ![](media/service-connect-to-project-madeira/dashboard.png)
@@ -95,12 +95,14 @@ Quand vous cliquez sur OK, une clé est créée. Vous pouvez ensuite la copier d
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Le tableau de bord Power BI s’appuie sur les services web publiés qui sont répertoriés ci-dessus. Il affiche des données provenant de l’exemple d’entreprise ou celles de votre propre entreprise si vous avez importé les données de votre solution comptable. Toutefois, si une erreur survient, cette section fournit une solution de contournement pour les problèmes les plus courants.
 
-**« Échec de la validation des paramètres. Vérifiez que tous les paramètres sont valides. » ** Si vous voyez cette erreur après avoir entré l’URL de Project « Madeira », assurez-vous que les conditions suivantes sont remplies :  
+**« Échec de la validation des paramètres. Vérifiez que tous les paramètres sont valides »**
 
-    - L’URL respecte exactement le modèle suivant : https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
-    - Supprimez le texte situé après le nom de la société entre parenthèses.  
-    - Assurez-vous qu’il n’existe aucune barre oblique finale à la fin de l’URL.  
-    - Vérifiez que l’URL utilise une connexion sécurisée (elle doit commencer par « https »).  
+Si cette erreur apparaît une fois l’URL de Project « Madeira » entrée, vérifiez que les conditions suivantes sont remplies :  
+
+   - L’URL respecte exactement le modèle suivant : https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
+   - Supprimez le texte situé après le nom de la société entre parenthèses.  
+   - Assurez-vous qu’il n’existe aucune barre oblique finale à la fin de l’URL.  
+   - Vérifiez que l’URL utilise une connexion sécurisée (elle doit commencer par « https »).  
 
 **« Échec de l’ouverture de session »** Si vous obtenez cette erreur quand vous vous connectez au tableau de bord à l’aide des informations identification de Project « Madeira », vous avez peut-être l’un des problèmes suivants :  
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 02/06/2018
 ms.author: maggies
-ms.openlocfilehash: d63ef5ad9ee59901917fb9bf9c28358c9aa542e8
-ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
+ms.openlocfilehash: 23a3fc38b1cf284f79b3515b25ec0396b79fb267
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="find-your-dashboards-reports-and-apps-in-the-power-bi-mobile-apps"></a>Trouver vos tableaux de bord, rapports et applications dans les applications mobiles Power BI
 S’applique à :
@@ -41,7 +41,11 @@ Dans les applications mobiles Power BI, vos tableaux de bord, rapports et applic
 5. [Espaces de travail](mobile-apps-find-content-mobile-devices.md#5-workspaces)
 
 ## <a name="1-favorites"></a>1 Favoris
-Collectez les tableaux de bord et applications que vous affichez le plus souvent en indiquant qu’ils sont favoris. Accédez à des informations supplémentaires sur les [favoris dans les applications mobiles Power BI](mobile-apps-favorites.md).
+Collectez les tableaux de bord, les rapports et les applications que vous consultez le plus souvent en les marquant comme favoris. 
+
+![Favoris dans les applications mobiles Power BI](media/mobile-apps-find-content-mobile-devices/power-bi-android-favorites-reports.png)
+
+Accédez à des informations supplémentaires sur les [favoris dans les applications mobiles Power BI](mobile-apps-favorites.md).
 
 ## <a name="2-report-servers"></a>2 serveurs de rapports
 Vous pouvez avoir des connexions à un ou plusieurs serveurs SQL Server Reporting Services ou Power BI Report Server locaux. Dans ce cas, les indicateurs de performance clés, les rapports Power BI et les rapports paginés sur le serveur s’affichent ici. Si vous avez ajouté certains de ces éléments comme favoris sur le serveur, ils s’affichent aussi dans votre liste de favoris. En savoir plus sur l’[affichage des rapports et indicateurs de performance clés locaux dans les applications mobiles Power BI](mobile-app-ssrs-kpis-mobile-on-premises-reports.md).
@@ -65,9 +69,9 @@ Dans les applications mobiles Power BI, vous pouvez afficher toutes les applicat
 Vous pouvez accéder à Microsoft AppSource pour rechercher d’autres applications à partir du service Power BI, mais pas des applications mobiles Power BI. 
 
 ## <a name="4-shared-with-me"></a>4 partagés avec moi
-Vous trouvez ici des tableaux de bord que des collègues ont partagés avec vous. Vous pouvez filtrer par propriétaire du tableau de bord ou rechercher ce qui vous intéresse. Si vous consultez fréquemment un contenu partagé, vous pouvez ajouter celui-ci aux favoris à partir de **Partagé avec moi** en appuyant sur les points de suspension (…).
+Vous trouvez ici les tableaux de bord et les rapports que des collègues ont partagés avec vous. Vous pouvez filtrer par propriétaire ou rechercher ce qui vous intéresse. Vous pouvez ajouter aux favoris directement dans **Partagés avec moi** les contenus partagés que vous consultez souvent, en appuyant sur les points de suspension (**…**).
 
-![Nouvelle navigation dans Power BI](media/mobile-apps-find-content-mobile-devices/power-bi-mobile-shared-with-me-fave.png)
+![Partagés avec moi Power BI](media/mobile-apps-find-content-mobile-devices/power-bi-android-shared-fave.png)
 
 ## <a name="5-workspaces"></a>5 espaces de travail
 Également appelés *espaces de travail d’application*, ceux-ci sont des environnements intermédiaires dans le service Power BI ([https://powerbi.com](https://powerbi.com)), au sein desquels vous pouvez collaborer avec des collègues pour créer une collection de tableaux de bord et de rapports. Vous distribuez ensuite la collection en tant qu’*application*. 

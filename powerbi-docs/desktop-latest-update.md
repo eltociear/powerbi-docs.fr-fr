@@ -15,28 +15,28 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 02/06/2018
 ms.author: davidi
-ms.openlocfilehash: 4fd120b3c44c7a748bdfd42378c3c3aa43e2ad7d
-ms.sourcegitcommit: a44c29bbc220ecb1ed80810cb1e7df0db8ea611a
+ms.openlocfilehash: d1b63fd4d3346fecb2226547bb1c43e0ef59e2d0
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Nouveautés de la dernière mise à jour de Power BI Desktop
 
-## <a name="january-2018-update-2544970761-"></a>Mise à jour de janvier 2018 (2.54.4970.761)
+## <a name="february-2018-update-2555010521"></a>Mise à jour de février 2018 (2.55.5010.521)
 
 Vous pouvez désormais [télécharger la dernière version de Power BI Desktop](https://powerbi.microsoft.com/desktop). Si vous exécutez Windows 10, vous pouvez également obtenir **Power BI Desktop** à partir du Windows Store. Les versions mensuelles sont les mêmes, quelle que soit la façon dont vous installez **Power BI Desktop**. Pour plus d’informations, voir [cet article](desktop-get-the-desktop.md). 
 
-Nous commençons cette nouvelle année avec une collection de mises à jour **Power BI Desktop** et notre résolution de début d’année est de continuer à en ajouter d’autres.
+Nous sommes très fiers des mises à jour apportées à **Power BI Desktop** ce mois-ci, et nous espérons que vous les apprécierez également.
 
 Les liens en regard de chaque mise à jour signifient ce qui suit :
 
--   Des extraits **[vidéo]** présentant la fonctionnalité sont disponibles dans un nouvel onglet de navigateur.
--   Certaines fonctionnalités ont un **[article]** qui fournit plus de détails.
--   La plupart des fonctionnalités sont expliquées dans le billet de **[blog]** sur la mise à jour mensuelle.
--   Enfin, certaines fonctionnalités sont explicites et ne disposent d’aucun article ou vidéo.
+* Des extraits **[vidéo]** présentant la fonctionnalité sont disponibles dans un nouvel onglet de navigateur.
+* Certaines fonctionnalités ont un **[article]** qui fournit plus de détails.
+* La plupart des fonctionnalités sont expliquées dans le billet de **[blog]** sur la mise à jour mensuelle.
+* Enfin, certaines fonctionnalités sont explicites et ne disposent d’aucun article ou vidéo.
 
 Vous pouvez également regarder la vidéo sur les **dernières mises à jour** dès le début, directement dans cet article, en cliquant sur l’icône de **lecture** sur l’image vidéo située sous la liste des mises à jour.
 
@@ -44,33 +44,47 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci sont l
 
 ### <a name="reporting"></a>Création de rapports
 
--   Afficher et masquer des pages [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages) 
--   Gérer la couleur d’arrière-plan des étiquettes de données des visuels cartésiens et de carte [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=3m13s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground) 
--   Agrandir la zone utilisée pour les étiquettes d’axe dans les graphiques [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=5m10s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#axisSize) 
--   Contrôler le remplissage des colonnes/barres [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=6m40s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#padding) 
--   Afficher les dates sous forme hiérarchique (préversion)  [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=7m41s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dateHierarchy) 
--   Ajouter une date d’ancrage pour un segment de date relative [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=9m22s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#anchorDate) 
--   Sélection des N premiers dans Questions et réponses  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
--   Nouveaux visuels personnalisés [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=11m32s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
+* Points de données à sélection multiple sur plusieurs pages [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=23s) [[article]](desktop-multi-select.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
+* Synchronisation des segments sur plusieurs pages d’un rapport [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[article]](desktop-slicers.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
+* Amélioration des segments de plages numériques – alignement sur des nombres entiers [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=8m44s) [[article]](desktop-slicer-numeric-range.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
+* Géocodage des Cartes Bing jusqu’à six fois plus rapide (préversion web) [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=10m18s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
+* Étiquettes de données de dépassement pour les visuels de type histogramme et graphique à barres [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=12m31s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
+* Recherche dans les volets Mise en forme et Analytique [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=14m46s) [[article]](desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
 
 
-### <a name="analytics"></a>Analytique
+### <a name="custom-visuals"></a>Éléments visuels personnalisés
 
--   Mesure rapide du coefficient de corrélation [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#correlationCoefficient) 
+* Organisation des visuels personnalisés (préversion) [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=19m23s) [[article]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
+
+
+### <a name="analytics"></a>Analyse
+
+* Définition de tables de dates personnalisées [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=16m4s) [[article]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
+* Mesures rapides accessibles à tous  [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=17m52s)  [[article]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
 
 ### <a name="data-connectivity"></a>Connectivité aux données
 
--   Prise en charge de l’authentification Azure Active Directory pour les connecteurs Azure SQL Database et Data Warehouse [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=21m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#AADauth) 
+* Amélioration de DirectQuery sur SAP HANA (préversion) [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=30m1s) [[article]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#saphana) 
+
+### <a name="other"></a>Autre
+
+* Amélioration des performances de DirectQuery [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=32m24s) [[article]](desktop-directquery-about.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf) 
+* Amélioration des performances à l’ouverture et à l’enregistrement [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=33m40s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf) 
+* Amélioration de l’option *Afficher les éléments sans données* [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=34m6s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData) 
+* Contrôle des filtres persistants pour la fonctionnalité **Service Power BI**  à venir [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=34m56s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#persistentFilters) 
+
 
 
 > [!NOTE]
 > Cous pouvez aussi [consulter la liste des sources de données accessibles à Power BI Desktop](desktop-data-sources.md). Cette liste étant en constante évolution, consultez-la régulièrement.
 
-Vous souhaitez plus d’informations sur ces mises à jour ? Consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/) pour obtenir des informations plus détaillées sur chacune de ces nouvelles fonctionnalités (voir le billet de blog référencé dans la liste ci-dessus).
+Vous souhaitez plus d’informations sur ces mises à jour ? Consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary) pour obtenir des informations plus détaillées sur chacune de ces nouvelles fonctionnalités (voir le billet de blog référencé dans la liste ci-dessus).
+
 
 La vidéo suivante décrit et montre chacune de ces mises à jour. Vous pouvez également afficher la vidéo à partir du billet de blog.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W8Pp5wuCXJw" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KeVB5RwMzJo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 > [!NOTE]
 > Les rubriques [Nouveautés du service Power BI](service-whats-new.md) et [Nouveautés dans les applications mobiles pour Power BI](mobile-whats-new-in-the-mobile-apps.md) sont également susceptibles de vous intéresser.

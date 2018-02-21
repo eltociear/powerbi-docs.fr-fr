@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: cee6cd859507105b7fc0c7e7075478d3a876f7bb
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 6d63236254906619f7244db9f57af162a19a70d6
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Utiliser le Sélecteur de plages numériques dans Power BI Desktop
 Le **Sélecteur de plages numériques** vous permet d’appliquer toutes sortes de filtres à toute colonne numérique dans votre modèle de données. Vous pouvez choisir de filtrer les nombres compris **entre** des valeurs, des nombres **inférieurs ou égaux** à une valeur, ou des nombres **supérieurs ou égaux** à une valeur. Bien que cette fonction puisse sembler simple, elle est très utile pour filtrer vos données.
@@ -56,6 +56,11 @@ Lorsque nous sélectionnons **Inférieur ou égal à**, la poignée de gauche (v
 Enfin, si nous sélectionnons l’option **Supérieur ou égal à**, la poignée de droite (valeur supérieure) de la barre du curseur disparaît, et nous ne pouvons ajuster que la valeur inférieure, comme illustré dans l’image suivante. À présent, seuls les articles dont la valeur *UnitPrice* est supérieure ou égale à 750.56 s’affichent dans les visuels de la page de rapport.
 
 ![](media/desktop-slicer-numeric-range/slicer-numeric-range_7.png)
+
+## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer-preview"></a>Aligner sur des nombres entiers avec le segment de plage numérique (préversion)
+
+À partir de la version de février 2018 de **Power BI Desktop**, le segment de plage numérique s’alignera avec précision sur des nombres entiers. L’alignement sur des nombres entiers ne s’applique pas aux filtres décimaux.
+
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Les considérations et limitations suivantes s’appliquent actuellement à l’utilisation du **Sélecteur de plages numériques**.

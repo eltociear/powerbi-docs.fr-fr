@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 2a65b8b895d6461efa29290dbd9d09639358678d
-ms.sourcegitcommit: a44c29bbc220ecb1ed80810cb1e7df0db8ea611a
+ms.openlocfilehash: 71a86c29c1ac690233016d91c4a66111978d47ba
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -30,6 +30,56 @@ Cet article décrit les précédentes mises à jour de **Power BI Desktop**. P
 Les sections suivantes décrivent les mises à jour **Power BI Desktop** des mois précédents.
 
 Vous pouvez toujours [télécharger la dernière version de Power BI Desktop](https://powerbi.microsoft.com/desktop). Si vous exécutez Windows 10, vous pouvez également obtenir **Power BI Desktop** à partir du Windows Store. Les versions mensuelles sont les mêmes, quelle que soit la façon dont vous installez **Power BI Desktop**. Pour plus d’informations, voir [cet article](desktop-get-the-desktop.md). 
+
+
+## <a name="january-2018-update-2544970761"></a>Mise à jour de janvier 2018 (2.54.4970.761)
+
+Nous avons commencé cette nouvelle année avec une collection de mises à jour de **Power BI Desktop**, et notre bonne résolution est de continuer à en ajouter d’autres.
+
+Les liens en regard de chaque mise à jour signifient ce qui suit :
+
+* Des extraits **[vidéo]** présentant la fonctionnalité sont disponibles dans un nouvel onglet de navigateur.
+* Certaines fonctionnalités ont un **[article]** qui fournit plus de détails.
+* La plupart des fonctionnalités sont expliquées dans le billet de **[blog]** sur la mise à jour mensuelle.
+-   Enfin, certaines fonctionnalités sont explicites et ne disposent d’aucun article ou vidéo.
+
+Vous pouvez également regarder la vidéo sur les **dernières mises à jour** dès le début, directement dans cet article, en cliquant sur l’icône de **lecture** sur l’image vidéo située sous la liste des mises à jour.
+
+Les mises à jour suivantes ont été apportées à **Power BI Desktop** en janvier :
+
+### <a name="reporting"></a>Création de rapports
+
+-   Afficher et masquer des pages [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages) 
+-   Gérer la couleur d’arrière-plan des étiquettes de données des visuels cartésiens et de carte [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=3m13s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground) 
+-   Agrandir la zone utilisée pour les étiquettes d’axe dans les graphiques [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=5m10s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#axisSize) 
+-   Contrôler le remplissage des colonnes/barres [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=6m40s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#padding) 
+-   Afficher les dates sous forme hiérarchique (préversion)  [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=7m41s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dateHierarchy) 
+-   Ajouter une date d’ancrage pour un segment de date relative [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=9m22s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#anchorDate) 
+-   Sélection des N premiers dans Questions et réponses  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
+-   Nouveaux visuels personnalisés [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=11m32s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
+
+### <a name="analytics"></a>Analyse
+
+-   Mesure rapide du coefficient de corrélation [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#correlationCoefficient) 
+
+
+### <a name="data-connectivity"></a>Connectivité aux données
+
+-   Prise en charge de l’authentification Azure Active Directory pour les connecteurs Azure SQL Database et Data Warehouse [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=21m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#AADauth) 
+
+
+> [!NOTE]
+> Cous pouvez aussi [consulter la liste des sources de données accessibles à Power BI Desktop](desktop-data-sources.md). Cette liste étant en constante évolution, consultez-la régulièrement.
+
+Vous souhaitez plus d’informations sur ces mises à jour ? Consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/) pour obtenir des informations plus détaillées sur chacune de ces nouvelles fonctionnalités (voir le billet de blog référencé dans la liste ci-dessus).
+
+La vidéo suivante décrit et montre chacune de ces mises à jour. Vous pouvez également afficher la vidéo à partir du billet de blog.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W8Pp5wuCXJw" frameborder="0" allowfullscreen></iframe>
+
+> [!NOTE]
+> Les rubriques [Nouveautés du service Power BI](service-whats-new.md) et [Nouveautés dans les applications mobiles pour Power BI](mobile-whats-new-in-the-mobile-apps.md) sont également susceptibles de vous intéresser.
+
 
 
 ## <a name="december-2017-update-2534954481-"></a>Mise à jour de décembre 2017 (2.53.4954.481)
@@ -1162,7 +1212,7 @@ Commencez la nouvelle année avec une autre multitude d’améliorations apport�
 ### <a name="other-improvements"></a>Autres améliorations :
 
 -   Prise en charge du navigateur Internet Explorer 9 (IE9)
--   Améliorations des performances de rendu des rapports, de sélection croisée et autres
+-   Améliorations des performances de rendu des rapports, de mise en évidence croisée et autres
 -   Améliorations apportées à l’intégration de R dans Power BI Desktop
 
 
