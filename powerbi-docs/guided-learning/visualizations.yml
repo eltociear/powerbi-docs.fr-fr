@@ -85,7 +85,7 @@ items:
 
 
     [!INCLUDE [](includes/3-9-create-gauges-cards.md)]
-- title: Modifier les couleurs des graphiques et des visuels
+- title: "Modifier les couleurs dans les graphiques et les éléments visuels"
   durationInMinutes: 5
   content: >
     > [!Video https://www.youtube.com/embed/oNME83EAvLw?rel=0]
@@ -113,7 +113,7 @@ items:
 
 
     [!INCLUDE [](includes/3-11a-create-interaction-between-visualizations.md)]
-- title: Dupliquer une page de rapports
+- title: Dupliquer une page de rapport
   durationInMinutes: 2
   content: >
     > [!Video https://www.youtube.com/embed/UOKbxTXZrWw?rel=0]

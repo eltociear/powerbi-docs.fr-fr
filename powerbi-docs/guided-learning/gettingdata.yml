@@ -36,7 +36,7 @@ items:
 
 
     [!INCLUDE [](includes/0-2-get-started-power-bi-desktop.md)]
-- title: "Se connecter aux sources de données dans Power BI Desktop"
+- title: "Se connecter à des sources de données dans Power BI Desktop"
   durationInMinutes: 8
   content: >
     > [!Video https://www.youtube.com/embed/S6s0osmRCZ4?rel=0]
