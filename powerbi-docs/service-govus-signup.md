@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/27/2017
 ms.author: davidi
-ms.openlocfilehash: 8ff1d5be4e360aa5afb8b6bd704f3426957466ef
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Get started
+ms.openlocfilehash: e4015d0de5c11a9726089a62825950dc0532205d
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Inscrire votre organisation US Government au service Power BI
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -45,12 +46,14 @@ Si votre organisation est un nouveau client **Office Government Cloud**, procéd
 
 > [!NOTE]
 > Ces étapes doivent être effectuées par l’administrateur du portail.
-> 
-> 
+>
 
-1. Accédez à [https://products.office.com/fr-fr/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). 
-    >[!NOTE]
-    >Si vous ne souhaitez pas vous inscrire à Office Government Cloud pour l’instant, contactez votre représentant commercial.
+1. Accédez à [https://products.office.com/fr-fr/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government).
+
+>[!NOTE]
+>Si vous ne souhaitez pas vous inscrire à Office Government Cloud pour l’instant, contactez votre représentant commercial.
+>
+
 2. Sélectionnez Office G3 et remplissez le formulaire pour demander une version d’essai.
 3. Une fois que vous êtes client Office Cloud, passez aux étapes ci-dessous « Clients Office Government Cloud existants ».
 
