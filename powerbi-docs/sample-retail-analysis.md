@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/17/2018
 ms.author: mihart
-ms.openlocfilehash: 97c8f3f74bea0629107b68b9e42a4a449863b066
-ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
+LocalizationGroup: Samples
+ms.openlocfilehash: 54a12f7e3b2ecee65701ca6c629d078ad7b9c0c9
+ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la vente au détail pour Power BI : Visite guidée
 
@@ -31,7 +32,7 @@ Cet exemple de tableau de bord et son rapport sous-jacent permettent d’analyse
 
 ## <a name="prerequisites"></a>Conditions préalables
 
- Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que pack de contenu, fichier .pbix ou classeur Excel.
+ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](https://docs.microsoft.com/en-us/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [fichier .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) ou [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529778).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
 
@@ -166,7 +167,8 @@ Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours ch
 Nous espérons que cette visite guidée vous a montré comment les tableaux de bord, Q&R et les rapports Power BI peuvent fournir des informations sur les données des ventes. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Télécharger l’exemple de pack de contenu Analyse de la vente au détail](sample-tutorial-connect-to-the-samples.md)    
+* [Télécharger l’exemple de pack de contenu Analyse de la vente au détail](sample-tutorial-connect-to-the-samples.md)
+* [Télécharger un fichier zip de tous les fichiers d’exemple](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Télécharger le classeur Excel pour cet exemple Power BI](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Obtenir des données (pour Power BI)](service-get-data.md)    
 * [Power BI – Concepts de base](service-basic-concepts.md)    

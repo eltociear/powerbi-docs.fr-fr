@@ -15,17 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
-ms.author: v-mamcge
-ms.openlocfilehash: 82ac4382fe80d83b60705f135b50738718f28876
-ms.sourcegitcommit: 7eb15c813a0d14322cb1316bb7aab23cbc13aae6
+ms.date: 02/27/2018
+ms.author: jocaplan
+LocalizationGroup: Premium
+ms.openlocfilehash: def06965692644c0328dae7a1d0ade8d13cc0d6c
+ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="power-bi-premium-support-for-large-datasets"></a>Prise en charge de jeux de données volumineux dans Power BI Premium
 
-Power BI Premium prend en charge les téléchargements de fichiers Power BI Desktop (.pbix) d’une taille maximale de 10 Go. Pour utiliser un jeu de données volumineux, vous devez le publier sur un espace de travail affecté à la capacité Premium.
+Power BI Premium prend en charge les téléchargements de fichiers Power BI Desktop (.pbix) d’une taille maximale de 10 Go. Une fois chargé, un jeu de données peut être actualisé jusqu'à une taille maximale de 12 Go. Pour utiliser un jeu de données volumineux, vous devez le publier sur un espace de travail affecté à la capacité Premium.
  
 ## <a name="best-practices"></a>Meilleures pratiques
 
