@@ -17,16 +17,17 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 95c46e6efddd9f0bde6be6cbc1e484f0f72452ce
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Get started
+ms.openlocfilehash: f9e30b3feb5f9b85a87686e4484bba035ff839aa
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Sources de données pour le service Power BI
 Les données sont au cœur de Power BI. Chaque fois que vous explorez des données, créez des graphiques et tableaux de bord, posez des questions avec les Q&A, toutes les visualisations et les réponses que vous voyez tirent réellement leurs données sous-jacentes d’un jeu de données. Mais d’où provient ce jeu de données ? D’une source de données.
 
-Dans cet article, nous allons passez en revue les différents types de sources de données auxquelles vous pouvez vous connecter à partir du service Power BI. N’oubliez pas qu’il existe de nombreux autres types de sources de données à partir desquels vous pouvez obtenir des données. Mais ceux-ci peuvent nécessiter l’utilisation préalable des fonctionnalités avancées de modélisation et de requêtes de données d’Excel ou Power BI Desktop. Nous aborderons cela plus en détail ultérieurement. Pour l’instant, examinons les différents types de sources de données auxquelles vous pouvez vous connecter directement depuis le site de service Power BI.
+Dans cet article, nous allons passer en revue les différents types de sources de données auxquelles vous pouvez vous connecter à partir du service Power BI. N’oubliez pas qu’il existe de nombreux autres types de sources de données à partir desquels vous pouvez obtenir des données. Mais ceux-ci peuvent nécessiter l’utilisation préalable des fonctionnalités avancées de modélisation et de requêtes de données d’Excel ou Power BI Desktop. Nous aborderons cela plus en détail ultérieurement. Pour l’instant, examinons les différents types de sources de données auxquelles vous pouvez vous connecter directement depuis le site de service Power BI.
 
 Vous pouvez obtenir des données à partir d’une de ces sources de données dans Power BI en cliquant sur **Mon espace de travail** > **Obtenir des données**.
 
@@ -59,7 +60,7 @@ Les packs de contenu contiennent toutes les données et tous les rapports dont v
 
 **Bases de données dans le cloud** : depuis le service Power BI, vous pouvez vous connecter en direct à Azure SQL Database, Azure SQL Data Warehouse, Spark sur Azure HD Insight et SQL Server Analysis Services avec DirectQuery. Les connexions à ces bases de données effectuées depuis Power BI sont actives. Cela signifie que lorsque vous vous connectez à Azure SQL Database, par exemple, et commencez à explorer ses données en créant des rapports dans Power BI, chaque fois que vous découpez vos données ou ajoutez un autre champ à une visualisation, une requête est envoyée directement à la base de données. Pour en savoir plus, consultez [Azure et Power BI](service-azure-and-power-bi.md).
 
-**Bases de données locales** : depuis le service Power BI, vous pouvez vous connecter directement à des bases de données model tabulaires SQL Server Analysis Services. Une passerelle d’entreprise Power BI est requise. Si vous ne savez pas comment vous connecter à la base de données model tabulaire de votre organisation, contactez votre administrateur ou le service informatique. Pour en savoir plus, consultez [Données tabulaires SQL Server Analysis dans Power BI](sql-server-analysis-services-tabular-data.md).
+**Bases de données locales** : depuis le service Power BI, vous pouvez vous connecter directement à des bases de données model tabulaires SQL Server Analysis Services. Une passerelle d’entreprise Power BI est requise. Si vous ne savez pas comment vous connecter à la base de données de modèle tabulaire de votre organisation, contactez votre administrateur ou le service informatique. Pour en savoir plus, consultez [Données tabulaires SQL Server Analysis dans Power BI](sql-server-analysis-services-tabular-data.md).
 
 Pour les autres types de bases de données de votre organisation, vous devez tout d’abord utiliser Power BI Desktop ou Excel pour vous connecter aux données d’un modèle de données, les interroger et les charger. Vous pouvez ensuite importer votre fichier dans Power BI où un jeu de données est créé. Si vous configurez l’actualisation planifiée, Power BI utilise les informations de connexion du fichier, ainsi que les paramètres d’actualisation que vous configurez pour vous connecter directement à la source de données et rechercher des mises à jour. Ces mises à jour sont ensuite chargées dans le jeu de données dans Power BI. Pour en savoir plus, consultez [Se connecter à des données dans Power BI Desktop](desktop-connect-to-data.md).
 
@@ -70,7 +71,7 @@ Les données de certaines sources de données sont déjà dans un format prêt p
 
 Dans d’autres cas, il peut être nécessaire d’interroger et charger les données dans un fichier. Par exemple, supposons que des données logistiques se trouvent dans une base de données de l’entrepôt de données sur un serveur de votre organisation. Dans le service Power BI, vous ne pouvez pas vous connecter directement à cette base de données et commencer à explorer ses données (sauf s’il s’agit d’une base de données model tabulaire). Toutefois, vous pouvez utiliser Power BI Desktop ou Excel pour interroger et charger ces données logistiques dans un modèle de données que vous enregistrez en tant que fichier. Vous pouvez ensuite importer ce fichier dans Power BI où un jeu de données est créé.
 
-Vous pensez probablement « mais les données logistiques sur cette base de données changent tous les jours. Comment m’assurer que mon jeu de données dans Power BI est actualisé ? » Les informations de connexion du fichier Power BI Desktop ou Excel sont importées dans le jeu de données, avec les données. Si vous configurez l’actualisation planifiée ou effectuez une actualisation manuelle sur le jeu de données, Power BI utilise les informations de connexion du jeu de données, ainsi que quelques autres paramètres, pour se connecter directement à la base de données, rechercher des mises à jour et charger ces mises à jour dans le jeu de données. Une passerelle Power BI sera probablement requise pour sécuriser les transferts de données entre votre serveur local et Power BI. Les visualisations dans les rapports et tableaux de bord sont automatiquement actualisées.
+Vous pensez probablement « mais les données logistiques sur cette base de données changent tous les jours. Comment m’assurer que mon jeu de données dans Power BI est actualisé ? » Les informations de connexion du fichier Power BI Desktop ou Excel sont importées dans le jeu de données, avec les données. Si vous configurez l’actualisation planifiée ou effectuez une actualisation manuelle sur le jeu de données, Power BI utilise les informations de connexion du jeu de données, ainsi que quelques autres paramètres, pour se connecter directement à la base de données, rechercher des mises à jour et charger ces mises à jour dans le jeu de données. Une passerelle Power BI sera probablement requise pour sécuriser les transferts de données entre votre serveur local et Power BI. Les visualisations dans les rapports et tableaux de bord sont automatiquement actualisées.
 
 Le fait de ne pas pouvoir se connecter à la source de données directement depuis le service Power BI ne signifie pas nécessairement que vous ne pouvez pas obtenir les données dans Power BI. Cela peut simplement nécessiter quelques étapes supplémentaires et le concours du service informatique. Pour en savoir plus, consultez [Sources de données dans Power BI Desktop](desktop-data-sources.md).
 
