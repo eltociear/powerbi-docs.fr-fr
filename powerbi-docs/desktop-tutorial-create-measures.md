@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: f51d7d07bd36784978e43c516424b6f08fc4e211
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Learn more
+ms.openlocfilehash: 96295ced577ddb18b8c56031278bf9a81cddf981
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Didacticiel : créer vos propres mesures dans Power BI Desktop
 Certaines solutions d’analyse de données parmi les plus puissantes peuvent être créées dans Power BI Desktop à l’aide de mesures. Les mesures vous aident en effectuant des calculs sur vos données quand vous interagissez avec des rapports. Ce didacticiel vous aidera à comprendre et à créer vos propres mesures élémentaires dans Power BI Desktop.

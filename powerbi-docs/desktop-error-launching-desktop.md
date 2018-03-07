@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 515832b9e6b737a942b08b491b78337d78398ee3
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Troubleshooting
+ms.openlocfilehash: 6d5e4592d1bf041672f89dd38f03ddc6ff196735
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Résoudre les problèmes empêchant le démarrage de Power BI Desktop
 Dans **Power BI Desktop**, les utilisateurs ayant installé et exécuté des versions précédentes de **la passerelle de données locale Power BI** peuvent se retrouver dans l’impossibilité de démarrer Power BI Desktop. Cela est dû aux restrictions de stratégie d’administration placées par la passerelle de données locale sur les canaux nommés de l’ordinateur local. 

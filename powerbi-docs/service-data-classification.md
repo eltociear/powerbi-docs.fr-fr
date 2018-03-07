@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: amac
-ms.openlocfilehash: d9693d89561bc0f942226934bc401a587a6ae20d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Dashboards
+ms.openlocfilehash: aed13e5bc7a21caa87e4c5b25fd61d55dcfc6129
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="dashboard-data-classification"></a>Classification des données des tableaux de bord
 Chaque tableau de bord est différent et en fonction de la source de données à laquelle vous vous connectez, vous constaterez probablement que vous et les collègues avec qui vous les partagez devez prendre des précautions différentes en fonction de la sensibilité des données. Certains tableaux de bord ne doivent jamais être partagés avec des personnes extérieures à votre entreprise ou imprimés, tandis que d’autres peuvent l’être librement. À l’aide de la classification des données des tableaux de bord, vous pouvez sensibiliser les personnes qui accèdent à ces derniers sur le niveau de sécurité qui doit être utilisé. Vous pouvez baliser vos tableaux de bord avec des classifications définies par le service informatique de votre entreprise afin que toutes les personnes qui affichent le contenu aient le même niveau de compréhension de la sensibilité des données.

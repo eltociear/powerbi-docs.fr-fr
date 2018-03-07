@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: davidi
-ms.openlocfilehash: 2c62cda672355f070ce8b2ba18d629dfe70f7700
-ms.sourcegitcommit: be55922d7f43f458aea0160ec8fdfb1a0b5a0c00
+LocalizationGroup: Create reports
+ms.openlocfilehash: dacbb31e8e32abfcb34e565958620d579f68b4f2
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Utiliser Q&A dans Power BI Desktop pour des requêtes en langage naturel
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et ce qui est encore plus fort, c’est que vos données répondent, grâce à Q&A dans **Power BI Desktop**.

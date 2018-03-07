@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: bb9244268a0a68f7b15877ae7ff567fe35cb2a1a
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+LocalizationGroup: Visualizations
+ms.openlocfilehash: f6846a58642dd65545016a7159f6bb461edaf373
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisations dans des rapports Power BI
 Les visualisations (également appelées visuels) affichent des insights qui ont été détectés dans les données. Un rapport Power BI peut avoir une seule page avec un visuel unique ou des pages contenant de nombreux visuels. Dans le service Power BI, les visuels peuvent être [épinglés des rapports aux tableaux de bord](service-dashboard-pin-tile-from-report.md). 

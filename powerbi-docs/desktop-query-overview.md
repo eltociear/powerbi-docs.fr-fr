@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: fff6db53d19eb69bf582d3ec526ac625ec5cbab1
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Transform and shape data
+ms.openlocfilehash: 8b7fb21e533fecbfe93481741ae53b0073f6a776
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Présentation des requêtes dans Power BI Desktop
 Avec **Power BI Desktop**, vous pouvez vous connecter à tout un monde de données, créer des rapports attrayants et fondamentaux, puis les partager avec d’autres utilisateurs, qui peuvent ensuite s’appuyer sur votre travail pour développer leurs talents en matière de décisionnel.

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 48c9e18592a06437c001a51a6f7b6bb77c4c719d
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Create reports
+ms.openlocfilehash: 8893e9f048f10f2c9c4d5bf787382b7cf65f54a9
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Utiliser des thèmes de rapport dans Power BI Desktop (version préliminaire)
 Les **Thèmes de rapport** vous permettent d’appliquer un thème de couleur à un rapport entier. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières, ou de tout autre thème de votre choix. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).

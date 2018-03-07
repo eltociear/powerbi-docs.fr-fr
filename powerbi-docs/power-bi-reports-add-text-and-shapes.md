@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: e5435af7441a1e9b706ac4dc58b544c44a94410a
-ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 8ce10e5d7b0ea2247655a9f93bfc3534086106f2
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="static-content-in-power-bi-reports"></a>Contenu statique dans les rapports Power BI
 Il est possible d’ajouter des formes et des zones de texte à des rapports à l’aide du service Power BI et de Power BI Desktop. Dans les deux cas, vous devez disposer d’autorisations de modification du rapport. Si un rapport a été partagé avec vous, vous n’aurez pas accès au Mode Édition. 

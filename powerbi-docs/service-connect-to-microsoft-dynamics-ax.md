@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: a0c4a4a5685b9923f794b9f9aa761884a9ea6b27
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 09362afc3bc84b454db8a095edc5135f1b9955d8
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-microsoft-dynamics-ax-content-pack-with-power-bi"></a>Se connecter au Pack de contenu Microsoft Dynamics AX avec Power BI
 Microsoft Dynamics AX propose trois packs de contenu Power BI destinés aux différents utilisateurs professionnels. Le pack de contenu Performances financières, conçu spécifiquement pour les directeurs financiers, donne accès à des informations sur les résultats financiers de votre organisation. Les pack de contenu Performances des canaux de vente au détail est destiné aux gestionnaires des canaux et se concentre sur les résultats de ventes pour anticiper les tendances et identifier des informations utiles en s’appuyant directement sur les données de Vente au détail et de commerce. La gestion des coûts est désignée pour les directeurs de l’exploitation et financiers, et fournit des détails sur les performances d’exploitation.

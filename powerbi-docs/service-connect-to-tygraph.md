@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: 200438c1c7a488f963b44040324374905d643b6e
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 3ff0a65d32a95a6926e2c808af119e31effd7e05
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Se connecter à tyGraph avec Power BI
 Visualisez et explorez vos données tyGraph dans Power BI avec le pack de contenu Power BI. Commencez par vous connecter à votre compte tyGraph et à charger le tableau de bord, les rapports et le jeu de données. Le contenu prêt à l’emploi inclut des données, telles que le score MAE (Measure of Active Engagement) et les principaux contributeurs. Personnalisez-le davantage pour mettre en évidence les informations qui vous intéressent le plus.  Les données sont actualisées automatiquement selon une planification que vous définissez.

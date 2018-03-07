@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 79e10c7d47eb5105e0c3e79bd3451315eae6d27e
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Create reports
+ms.openlocfilehash: c4816ede1ea5364e5db2156af747a3d05231d02a
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Utiliser le service Power BI ou Power BI Desktop pour créer une page de réponse personnalisée pour Cortana
 Utilisez les fonctionnalités complètes de Power BI pour créer des pages de rapport spéciales, nommées *pages de réponse Cortana* (ou parfois « cartes de réponse Cortana »), spécifiquement conçues pour répondre aux questions de Cortana.

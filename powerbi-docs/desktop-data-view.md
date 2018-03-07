@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: b22e8f2e1fe8443fda3c1ec0ce05d3e46af6855c
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Model your data
+ms.openlocfilehash: dba33cd5476b26d7c81238bf4eedc366deb65191
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="data-view-in-power-bi-desktop"></a>Vue Données dans Power BI Desktop
 La **vue Données** vous permet d’inspecter, d’explorer et de comprendre les données dans votre modèle Power BI Desktop. Elle diffère de la façon dont vous affichez les données, les colonnes et les tables dans **l’Éditeur de requête**. Avec la vue Données, vous examinez vos données *après* qu’elles sont été chargées dans le modèle.

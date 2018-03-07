@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: c0689b969c1956d0344afb2bc8aef7bda32c159e
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Get started
+ms.openlocfilehash: 33908283e567cadc5ef8d4ffe2389ac8fef54b65
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Prise en main de Power BI Desktop
 Bienvenue dans le **Guide de prise en main de Power BI Desktop**. Cette courte présentation de Power BI Desktop vous permettra de vous familiariser avec son fonctionnement. Elle vous montrera ce que l’application peut faire et vous permettra d’être plus vite apte à créer des modèles de données fiables, ainsi que des rapports de haute qualité, qui amplifieront vos efforts décisionnels. 
@@ -163,7 +164,7 @@ Par chance, il existe une autre source de données publiques qui a précisément
 
 <http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
-Dans le ruban **Accueil** de **l’Éditeur de requête**, sélectionnez **Obtenir des données \>Web**et tapez l’adresse, puis sélectionnez **OK**. La fenêtre **Navigateur** affiche ce qu’elle a trouvé dans cette page web.
+Dans le ruban **Accueil** de **l’Éditeur de requête**, sélectionnez **Obtenir des données \>Web** et tapez l’adresse, puis sélectionnez **OK**. La fenêtre **Navigateur** affiche ce qu’elle a trouvé dans cette page web.
 
  ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
 

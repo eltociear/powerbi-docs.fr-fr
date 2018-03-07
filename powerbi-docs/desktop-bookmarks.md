@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: d09dcf28989f19fa901cb5f829e1149b9b64567f
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Create reports
+ms.openlocfilehash: 3a56983f48d80cf39b89958db4327e3632ee733e
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi-preview"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI (préversion)
 À l’aide des **signets** dans Power BI, vous pouvez capturer la vue actuellement configurée d’une page de rapport, y compris le filtrage et l’état des visuels, puis revenir à cet état en sélectionnant simplement le signet enregistré. 

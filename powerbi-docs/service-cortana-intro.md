@@ -13,11 +13,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/13/2018
 ms.author: mihart
-ms.openlocfilehash: 648880925f343032c24cda612da58ef2fdadcf80
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Ask questions of your data
+ms.openlocfilehash: 11bba0ec026650e59b8757b207f5f6d596499f0a
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Trouver et afficher rapidement vos données Power BI à l’aide de Cortana pour Power BI
 Utilisez Cortana sur vos appareils Windows 10 pour obtenir directement des réponses à vos questions métier importantes. En s’intégrant avec Power BI, Cortana peut extraire des informations clés directement à partir de tableaux de bord et de rapports Power BI. Pour cela, il vous suffit de disposer de la version de novembre 2015 ou ultérieure de Windows 10, de Cortana, de Power BI, et d’avoir accès à au moins un jeu de données.

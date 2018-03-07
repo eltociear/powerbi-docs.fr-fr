@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
-ms.openlocfilehash: 7698a1207f19382430fb8e225543b32b6aebcd49
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Administration
+ms.openlocfilehash: 34625c6c093e6ad4255b6e9e153c84d4cb3881d4
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="power-bi-archived-workspace"></a>Espace de travail archivé Power BI
 Avec Power BI, tout le monde peut s’inscrire et commencer à utiliser le service en quelques minutes.  Par la suite, le service informatique de votre organisation peut choisir d’assurer la gestion de Power BI pour les utilisateurs de votre organisation.  Si tel est le cas, vous bénéficiez d’une gestion centralisée des utilisateurs et des autorisations dans votre organisation et vous pouvez vous connecter avec les mêmes nom d’utilisateur et mot de passe que ceux utilisés pour d’autres services dans votre organisation. 

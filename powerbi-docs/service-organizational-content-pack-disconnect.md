@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: acd8ec1afaa454eaa62f66d09b6e0a2c63cc6289
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Share your work
+ms.openlocfilehash: 97ffc337b98dd6a44e823e673b845852398c67d5
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Supprimer votre connexion à un pack de contenu d’organisation Power BI
 Un collaborateur créé un pack de contenu. Vous l’avez découvert dans AppSource et ajouté à votre espace de travail Power BI. À présent, vous n’en avez plus besoin.  Comment le supprimer ?

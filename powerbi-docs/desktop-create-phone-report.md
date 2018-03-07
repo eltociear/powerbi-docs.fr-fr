@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/08/2017
 ms.author: maggies
-ms.openlocfilehash: 0dd906bc1b165793e9ff91f64324eeb8e1d1266c
-ms.sourcegitcommit: b780b7108fd9b52398b8377b52836f0e0fedc96e
+LocalizationGroup: Create reports
+ms.openlocfilehash: ea6da7eb23268e7605ff46281c63030a6d72798c
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Créer des rapports optimisés pour les applications Power BI pour téléphone
 Quand vous [créez un rapport dans Power BI Desktop](desktop-report-view.md), vous pouvez améliorer son utilisation dans les applications mobiles des téléphones en créant une version destinée spécifiquement à l’affichage sur téléphone. Adaptez votre rapport au téléphone en réorganisant et redimensionnant les visuels ou en choisissant d’en inclure uniquement une partie. Vous bénéficiez ainsi d’une expérience optimale. Vous pouvez également créer des [*visuels* réactifs](#optimize-a-visual-for-any-size) et des [segments réactifs](#enhance-slicers-to-to-work-well-in-phone-reports) qui se redimensionnent pour l’affichage sur un téléphone. De plus, si vous ajoutez des filtres à votre rapport, ceux-ci apparaissent automatiquement dans le rapport pour téléphone. Les lecteurs de votre rapport peuvent les afficher et les utiliser pour filtrer le rapport.

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: 049e97ff0cc53eb8d8a2e3b976328693ec3fe065
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 770daa9965f44d655fb60b8b723f83e260daccb6
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-quickbooks-online-with-power-bi"></a>Se connecter à QuickBooks Online avec Power BI
 Quand vous vous connectez à vos données QuickBooks Online à partir de Power BI, vous obtenez immédiatement un tableau de bord et des rapports Power BI contenant des informations sur le flux de trésorerie de votre entreprise, sa rentabilité, ses clients et bien plus encore. Vous pouvez utiliser le tableau de bord et les rapports tels quels ou bien les personnaliser pour mettre en avant les informations qui vous intéressent le plus. Les données sont actualisées automatiquement une fois par jour.

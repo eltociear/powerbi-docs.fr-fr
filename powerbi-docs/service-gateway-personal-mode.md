@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/14/2017
 ms.author: davidi
-ms.openlocfilehash: e3072e4a99c04e977579274c6d95f5bb1007e870
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Gateways
+ms.openlocfilehash: 2bd3604a3f16c6977c52c1b3484ac024445c65bb
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Passerelle de données locale (mode personnel)
 Vous pouvez utiliser des sources de données locales et créer des rapports et des tableaux de bord Power BI à l’aide d’une passerelle. Une **passerelle** est un logiciel qui facilite l’accès aux données stockées sur un réseau local privé, puis vous permet d’utiliser ces données dans les services en ligne comme le **service Power BI**. La **passerelle de données locale (mode personnel)** est une mise à jour récemment publiée de la passerelle Power BI qui permet aux utilisateurs d’installer une passerelle sur leur propre ordinateur et d’accéder aux données locales.

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: 884ef223234d8827e58a37befe2e5d18a45e480e
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: b06e756732c2c12e822967fbcfeb208bcb1ae334
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Se connecter à Microsoft Dynamics NAV avec Power BI
 Power BI vous permet d’extraire facilement des informations de vos données Microsoft Dynamics NAV. Power BI récupère vos données relatives aux ventes et aux aspects financiers, puis crée une application comprenant un tableau de bord et des rapports basés sur ces données. Power BI a besoin de vos autorisations d’accès aux tables à partir desquelles les données sont extraites, en l’occurrence, les données relatives aux ventes et aux aspects financiers. Vous trouverez plus d’informations sur la configuration requise ci-dessous. Une fois l’application installée, vous pouvez afficher le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 

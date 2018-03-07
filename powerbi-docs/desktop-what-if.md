@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: e0b8e6e573f9d511dd934b996f63bcdfdd386cf0
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Create reports
+ms.openlocfilehash: 5222b6ba99c9e61d1070f66115b90aa29099fd8d
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Créer et utiliser le paramètre What if pour visualiser des variables dans Power BI Desktop
 Depuis la version d’août 2017 de **Power BI Desktop**, vous pouvez créer des variables **What if** pour vos rapports, interagir avec la variable en tant que segment, ainsi que visualiser et quantifier différentes valeurs de clés dans vos rapports.

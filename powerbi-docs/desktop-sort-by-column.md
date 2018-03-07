@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 808f8b12a0deda90b74eac2ca45748e16315988f
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Create reports
+ms.openlocfilehash: cb23034c207bd272f716e8074bb3702ea30e893a
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Trier par colonne dans Power BI Desktop
 Dans **Power BI Desktop** et le **service Power BI**, vous pouvez modifier l’apparence d’un visuel en le triant par différents champs de données. En modifiant le mode de tri d’un visuel, vous pouvez mettre en surbrillance les informations que vous souhaitez transmettre et vérifier que le visuel reflète la tendance (ou l’importance) que vous souhaitez transmettre.

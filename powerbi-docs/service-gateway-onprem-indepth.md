@@ -17,11 +17,12 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: fbb1b22b930a00fa9e090b3ebc5ab9fd1ffc88c0
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Gateways
+ms.openlocfilehash: 7283ee62838779590bbc01eb8b4348cfc7873dc1
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Informations approfondies sur la passerelle de données locale
 Les utilisateurs de votre organisation peuvent accéder aux données locales (auxquelles ils ont déjà accès), mais avant qu’ils puissent se connecter à votre source de données locale, vous devez installer et configurer une passerelle de données locale. La passerelle favorise une communication rapide et sécurisée en arrière-plan entre un utilisateur dans le cloud et votre source de données locale, dans les deux sens.

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: b75ea1028694a9dab32073ce70180e61798d7d28
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 02b8c2e8ed9a8a4ca0c8aaf9848699f3ca3c24c8
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Se connecter à Project Madeira avec Power BI
 Power BI et le pack de contenu Project « Madeira » facilitent l’analyse des données Project « Madeira ». Power BI récupère vos données, à la fois les données de ventes et les données financières, puis crée un tableau de bord par défaut et des rapports basés sur ces données.
@@ -106,8 +107,8 @@ Si cette erreur apparaît une fois l’URL de Project « Madeira » entrée, v
 
 **« Échec de l’ouverture de session »** Si vous obtenez cette erreur quand vous vous connectez au tableau de bord à l’aide des informations identification de Project « Madeira », vous avez peut-être l’un des problèmes suivants :  
 
-    - Le compte que vous utilisez ne dispose pas des autorisations nécessaires pour lire les données Project « Madeira » de votre compte. Accédez à votre compte utilisateur dans Project « Madeira », assurez-vous que vous avez utilisé la bonne clé d’accès de service web comme mot de passe, puis réessayez.  
-    - L’instance de Project « Madeira » à laquelle vous essayez de vous connecter ne dispose pas d’un certificat SSL valide. Dans ce cas, vous verrez un message d’erreur plus détaillé (similaire à « Impossible d’établir une relation de confiance SSL »). Notez que les certificats auto-signés ne sont pas pris en charge.  
+   - Le compte que vous utilisez ne dispose pas des autorisations nécessaires pour lire les données Project « Madeira » de votre compte. Accédez à votre compte utilisateur dans Project « Madeira », assurez-vous que vous avez utilisé la bonne clé d’accès de service web comme mot de passe, puis réessayez.  
+   - L’instance de Project « Madeira » à laquelle vous essayez de vous connecter ne dispose pas d’un certificat SSL valide. Dans ce cas, vous verrez un message d’erreur plus détaillé (similaire à « Impossible d’établir une relation de confiance SSL »). Notez que les certificats auto-signés ne sont pas pris en charge.  
 
 **« Oups »** Si vous voyez ce message d’erreur après vous être authentifié, il est très probable que cela soit dû à un problème de connexion aux données du pack de contenu. Vérifiez que l’URL respecte le modèle suivant :  
     https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')

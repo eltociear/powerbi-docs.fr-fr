@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 173c02c2d44236539c81edc2612e944b01641653
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Share your work
+ms.openlocfilehash: d8aac093b06910d5d32c2e5d33951db9448757c4
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Gérer l’espace de travail de votre application dans Power BI et Office 365
 En tant que créateur ou administrateur d’un [espace de travail d’application dans Power BI](service-install-use-apps.md) ou dans Office 365, vous gérez certains aspects de l’espace de travail dans Power BI. Vous en gérez d’autres dans Office 365. 

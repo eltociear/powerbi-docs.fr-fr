@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/28/2017
 ms.author: maghan
-ms.openlocfilehash: 0fd6226ca14a4b48c94e13eaae8b085381a5f9a6
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Administration
+ms.openlocfilehash: b42be834822b4363c58bc4454c38f7973336c7dc
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="administering-power-bi-in-your-organization"></a>Administration de Power BI dans votre organisation
 Microsoft Power BI permet aux utilisateurs de visualiser des données, de partager des découvertes et de collaborer de façon intuitive. Pour en savoir plus, consultez [Prise en main de Power BI](service-get-started.md).

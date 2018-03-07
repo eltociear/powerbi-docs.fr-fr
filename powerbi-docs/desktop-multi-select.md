@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 3f935996688565528aa9f7434ee520dcd3ce735f
-ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
+LocalizationGroup: Create reports
+ms.openlocfilehash: f3018274c390920579cb7b60a589d00abdd4a5ce
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="multi-select-data-elements-in-visuals-using-power-bi-desktop"></a>Multisélection d’éléments de données dans des visuels à l’aide de Power BI Desktop
 
@@ -37,7 +38,7 @@ Cela ressemble à une fonctionnalité simple, mais elle ouvre toutes sortes d’
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Les articles suivants pourront vous intéresser :
+Les articles suivants pourraient également vous intéresser :
 
 * [Utiliser le quadrillage et l’alignement sur la grille dans les rapports Power BI Desktop](desktop-gridlines-snap-to-grid.md)
 * [À propos des filtres et de la mise en évidence dans les rapports Power BI](power-bi-reports-filters-and-highlighting.md)

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 9ea93980a095ca4e626b6f8071d044448af59635
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Learn more
+ms.openlocfilehash: acdaa95908cd03006170eb06ddfc780c836c64ac
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Didacticiel : création de colonnes calculées dans Power BI Desktop
 Parfois, les données que vous analysez ne contiennent pas de champ particulier vous permettant d’obtenir les résultats que vous recherchez. C’est là qu’interviennent les colonnes calculées. Les colonnes calculées utilisent des formules DAX (Data Analysis Expressions) pour définir les valeurs d’une colonne. Ces valeurs peuvent concerner n’importe quoi, qu’il s’agisse d’assembler des valeurs de texte à partir de plusieurs colonnes différentes ailleurs dans le modèle, ou de calculer une valeur numérique à partir d’autres valeurs. Par exemple, supposons que vos données incluent des colonnes City (Ville) et State (État) (en tant que champs dans la liste Champs), mais que vous voulez un champ Location (Emplacement) unique qui possède ces deux informations sous la forme d’une valeur unique, telle que Miami, FL. C’est là précisément qu’interviennent les colonnes calculées.

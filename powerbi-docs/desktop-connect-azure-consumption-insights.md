@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 3f0bca9114b163531adcd1a1921b8617a5f2eb75
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Connect to data
+ms.openlocfilehash: 9127f7b2e19a304c514d5e6449cf1ceb7ecddb13
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Se connecter à Azure Consumption Insights dans Power BI Desktop (bêta)
 Le connecteur **Azure Consumption Insights** vous permet d’utiliser **Power BI Desktop** pour vous connecter à Azure afin d’obtenir des données et informations détaillées sur l’utilisation des services Azure par votre organisation. Vous pouvez également créer des mesures, des colonnes personnalisées et des visuels afin de rapporter et partager l’utilisation d’Azure par votre organisation. Le connecteur **Azure Consumption Insights** étant publié en version bêta, il est susceptible de changer.
@@ -161,7 +162,7 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | Cost |cost |ExtendedCost |Non |
 | Cost Center |costCenter |Cost Center |Non |
 | Date |date |Date |Non |
-| Jour | |Jour |Non |
+| Day | |Day |Non |
 | DepartmentName |departmentName |Department Name |Non |
 | DepartmentID |departmentId | |Oui |
 | Instance ID | | |Oui |
@@ -173,7 +174,7 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | Meter Region |meterRegion |Meter Region |Non |
 | Meter Sub-Category |meterSubCategory |Meter Sub-Category |Non |
 | MeterId |meterId |Meter ID |Non |
-| Mois | |Mois |Non |
+| Month | |Month |Non |
 | Product |product |Product |Non |
 | ProductId |productId | |Oui |
 | Resource Group |resourceGroup |Resource Group |Non |
@@ -192,7 +193,7 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | Balises |tags |Balises |Non |
 | TagsId | | |Oui |
 | Unit Of Measure |unitOfMeasure |Unit Of Measure |Non |
-| Année | |Année |Non |
+| Year | |Year |Non |
 | SubscriptionId |subscriptionId |SubscriptionId |Oui |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |Non |
 

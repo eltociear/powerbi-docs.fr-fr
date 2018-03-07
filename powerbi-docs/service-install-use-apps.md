@@ -16,11 +16,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: maggies
-ms.openlocfilehash: a833961bd2f9ad3af77c6d90a95c0e5b1c307d1a
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Share your work
+ms.openlocfilehash: 406e1219296c5b2491e3b59d5a8cd6f50cfc2376
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 Dans Power BI, les *applications* rassemblent les rapports et tableaux de bord associés dans un même emplacement. Les personnes de votre organisation peuvent créer et distribuer des applications avec les informations clés de l’entreprise. Des [services externes](service-connect-to-services.md) que vous utilisez peut-être déjà, tels que Google Analytics et Microsoft Dynamics CRM, offrent également des applications Power BI. 

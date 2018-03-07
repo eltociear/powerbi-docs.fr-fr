@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 78fa4125c87415629ec4fb7021b97dfe7d5d53b4
-ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
+LocalizationGroup: Visualizations
+ms.openlocfilehash: d4156429b728718fa89131a46ebd0f5dd5aabf67
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="customize-x-axis-and-y-axis-properties-tutorial"></a>Personnaliser les propriétés des axes X et Y (didacticiel)
 Dans ce didacticiel, vous allez découvrir de nombreuses façons de personnaliser les axes X et Y de vos visuels. Les visuels n’ont pas tous des axes et/ou ne sont pas toutes personnalisables. Par exemple, les graphiques en secteurs n’ont pas d’axes. Et les options de personnalisation varient d’un visuel à un autre, il y a trop d’options pour les couvrir dans un seul article. Par conséquent, nous allons examiner certaines des personnalisations d’axes les plus utilisées et vous aidez à vous familiariser avec l’utilisation de l’onglet de mise en forme visuelle dans le canevas de rapport Power BI.  

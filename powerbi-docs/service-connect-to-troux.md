@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: cc5bccad484f6fcc4f7a59e1789fd1a12526874c
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 701b35d317076827148ec523d38f0c23362aed47
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-troux-for-power-bi"></a>Se connecter à Troux pour Power BI
 Avec le pack de contenu Troux, vous pouvez visualiser votre référentiel d’architecture d’entreprise de manière inédite directement dans Power BI. Le pack de contenu offre un ensemble d’informations sur vos fonctionnalités d’entreprise, les applications qui offrent ces fonctionnalités et les technologies qui prennent en charge ces applications que vous pouvez entièrement personnaliser à l’aide de Power BI.

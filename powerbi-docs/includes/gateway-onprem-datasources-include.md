@@ -7,6 +7,7 @@
 | Dossier |Non |Oui |
 | IBM DB2 |Non |Oui |
 | Base de données Informix IBM |Non |Oui |
+| IBM Netezza |Oui |Oui |
 | Impala |Oui |Oui |
 | MySQL |Non |Oui |
 | OData |Non |Oui |

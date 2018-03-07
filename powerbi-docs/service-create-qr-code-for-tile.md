@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 73cb9769fad31ad4b12b0df6c9492079d5cecaa8
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 3a01f7c8ab679e2820261c7947a9561ff5513d60
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Créer un code QR pour une vignette dans Power BI à utiliser dans les applications mobiles
 Les codes QR dans Power BI peuvent connecter n’importe quel élément du monde réel directement à des informations connexes en matière de décisionnel. Aucune navigation ni recherche n’est nécessaire.

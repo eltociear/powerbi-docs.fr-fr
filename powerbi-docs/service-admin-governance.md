@@ -17,11 +17,12 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
-ms.openlocfilehash: 574e54aa423c9cdc9b9146fde1a16686303e73f6
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Administration
+ms.openlocfilehash: 400fa6aa16f77da60a912bcd6c45665f880d8afd
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="governance-and-deployment-approaches"></a>Méthodes de gouvernance et de déploiement
 Au cours des dernières décennies, les entreprises ont bien pris conscience de l’importance d’exploiter les données pour tirer profit des opportunités de marché. Qu’elles utilisent l’analyse concurrentielle ou l’analyse des modèles opérationnels, de nombreuses entreprises comprennent désormais qu’une stratégie de données peut leur permettre de prendre de l’avance sur leurs concurrents.  

@@ -13,11 +13,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: b18157f28dcaf2e9b130bdc3bd5547312e45a4f9
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Ask questions of your data
+ms.openlocfilehash: 10faf7b20c91b0c709df6783152ab55d0e6c958c
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Permettre à Cortana d’accéder aux rapports Power BI (et à leurs jeux de données sous-jacents)
 Vous avez lu l’[Introduction à Cortana et Power BI](service-cortana-intro.md) (si ce n’est pas le cas, nous vous recommandons de la lire, puis de revenir sur cette page). Et maintenant, vous souhaitez essayer vous-même.  Avant de pouvoir poser des questions en langage naturel dans Cortana et trouver des réponses à partir des données stockées dans des ***rapports*** Power BI, vous devez respecter quelques conditions préalables. Plus précisément, vous devez effectuer les opérations suivantes.

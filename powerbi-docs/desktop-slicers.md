@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 107b4eace4e5b10b52900a4d15110c8acad0f462
-ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
+LocalizationGroup: Create reports
+ms.openlocfilehash: 52a6c83ba68aa966ec3f20afefc4022a92e78d3e
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="using-slicers-power-bi-desktop"></a>Utilisation de segments Power BI Desktop
 
@@ -63,7 +64,7 @@ Votre sélection de segments peut être synchronisée, mais d’autres sélectio
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Les articles suivants pourront vous intéresser :
+Les articles suivants pourraient également vous intéresser :
 
 * [Segments dans le service Power BI (didacticiel)](power-bi-visualization-slicers.md)
 * [Utiliser le Sélecteur de plages numériques dans Power BI Desktop](desktop-slicer-numeric-range.md)
