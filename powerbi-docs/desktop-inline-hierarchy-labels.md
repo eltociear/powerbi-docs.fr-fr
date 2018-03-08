@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 6246e46cae9b44fbc9858b8fa9979dd01b80a6ab
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Create reports
+ms.openlocfilehash: 9d5675b17973839f52699c5af9bfad9c8714a58e
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Utilisation des étiquettes de hiérarchie incluses dans Power BI Desktop
 **Power BI Desktop** prend en charge l’utilisation des **étiquettes de hiérarchie incluses**, la première des deux fonctionnalités visant à améliorer l’exploration hiérarchique. La deuxième fonctionnalité, qui est en cours de développement, est la possibilité d’utiliser des étiquettes de hiérarchie imbriquées (revenez régulièrement, nous mettons à jour le contenu fréquemment).   
@@ -51,7 +52,7 @@ Regardons maintenant un graphique différent, avec des données ayant une hiéra
 
 ![](media/desktop-inline-hierarchy-labels/inlinehierarchy_7.png)
 
-Sélectionner **Développer tout** affiche le prochain niveau avec l’affichage intégré d’étiquettes de hiérarchie. Par défaut, les hiérarchies incluses sont triées par la valeur de mesure, dans ce cas, **SalesAmount**. Avec les étiquettes de hiérarchie incluses activées, vous pouvez aussi choisir de trier ces données par hiérarchie, en sélectionnant le bouton de points de suspension dans le coin supérieur droit (le **...**), puis en sélectionnant **Trier par &gt; Classe Couleur** comme indiqué dans l’image suivante.
+Sélectionner **Développer tout** affiche le prochain niveau avec l’affichage intégré d’étiquettes de hiérarchie. Par défaut, les hiérarchies incluses sont triées par la valeur de mesure, dans ce cas, **SalesAmount**. Avec les étiquettes de hiérarchie incluses activées, vous pouvez aussi choisir de trier ces données par hiérarchie, en sélectionnant le bouton de points de suspension dans le coin supérieur droit (le **...**), puis en sélectionnant **Trier par > Classe Couleur** comme indiqué dans l’image suivante.
 
 ![](media/desktop-inline-hierarchy-labels/inlinehierarchy_8.png)
 
