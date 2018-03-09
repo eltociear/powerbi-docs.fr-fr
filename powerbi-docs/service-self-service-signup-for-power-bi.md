@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/09/2017
+ms.date: 03/02/2018
 ms.author: maghan
 LocalizationGroup: Get started
-ms.openlocfilehash: ccd3a42a6cbcc716683b6da536ca2ecdacc11aaf
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b098c87796306bedb8f9da43971d093f464dd4bd
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Inscription individuelle à Power BI
 Découvrez comment vous inscrire à Power BI et commencer à l’utiliser pour vos rapports et vos visualisations.
@@ -40,23 +40,24 @@ Si vous faites partie d’une organisation qui utilise Office 365, vous pouvez 
 
 > [!NOTE]
 > Si vous faites partie d’une organisation, il se peut que l’inscription individuelle soit désactivée. Consultez [L’inscription individuelle est désactivée](#individual-sign-up-has-been-turned-off) pour plus d’informations en cas de message d’erreur indiquant que cette option est désactivée.
-> 
-> 
+>
 
 ## <a name="what-you-need-to-sign-up"></a>Inscriptions
-Pour pouvoir vous inscrire à Power BI, vous avez besoin d’une adresse de courrier professionnelle aa. Les adresses de courrier personnelles ne fonctionnent pas avec le service Power BI.
 
-<a name="what-email-address-can-be-used-with-power-bi"/>
+Pour vous inscrire à Power BI, vous devez avoir une adresse e-mail professionnelle. Une adresse e-mail personnelle ne fonctionne pas quand vous tentez de vous inscrire à Power BI.
 
-### <a name="what-email-address-can-be-used-with-power-bi"></a>Quelle adresse de messagerie peut être utilisée avec Power BI ?
-L’inscription à Power BI nécessite l’utilisation d’une adresse e-mail professionnelle ou scolaire. Power BI ne prend pas en charge les adresses de messagerie fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunication. Cela inclut outlook.com, hotmail.com, gmail.com et autres.
+### <a name="what-email-address-can-be-used-with-power-bi"></a>Quelle adresse e-mail peut être utilisée avec Power BI ?
+L’inscription à Power BI nécessite l’utilisation d’une adresse e-mail professionnelle ou scolaire. Vous ne pouvez pas vous inscrire à Power BI avec des adresses e-mail fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunication. Cela inclut outlook.com, hotmail.com, gmail.com et autres.
 
 Si vous tentez de vous inscrire avec une adresse de messagerie personnelle, vous obtiendrez un message vous invitant à utiliser une adresse professionnelle ou scolaire.
 
 > [!NOTE]
-> Power BI ne prend pas en charge la connexion en libre-service pour les adresses .gov ou .mil pour le moment. Contactez votre administrateur Office 365.
-> 
-> 
+> Vous pouvez vous abonner à Power BI avec des adresses .gov ou .mil. Pour plus d’informations, consultez [Inscrire votre organisation US Government au service Power BI](https://docs.microsoft.com/en-us/power-bi/service-govus-signup).
+>
+
+> [!NOTE]
+> Une fois que vous vous êtes connecté, vous pouvez [inviter des utilisateurs invités](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) à voir le contenu de votre locataire Power BI avec n’importe quelle adresse e-mail, y compris des comptes personnels.
+>
 
 ## <a name="which-one-do-you-need"></a>Choix de la version
 Vous pouvez déterminer celle dont vous avez besoin en examinant les points spécifiques à chaque type de licence. Les utilisateurs gratuits disposent de la plupart des fonctionnalités des services, à l’exception des fonctionnalités de partage et de collaboration. Les utilisateurs Power BI Pro peuvent profiter de toutes les fonctionnalités du service, mais cette licence n’est pas gratuite. Si vous n’avez pas besoin de partager du contenu, la version gratuite peut être le meilleur choix pour vous. Vous pouvez en savoir plus sur la [page de tarification de Power BI](https://powerbi.microsoft.com//pricing/).
@@ -141,7 +142,7 @@ Dans de nombreux cas, l’inscription à Power BI peut être effectuée en suiv
 
 | **Symptôme/Message d’erreur** | **Cause et solution de contournement** |
 | --- | --- |
-| **Adresses de messagerie (par exemple, nancy@gmail.com)** Vous recevez un message comme celui-ci pendant l’inscription : <br /><br /> *Vous avez entré une adresse de messagerie personnelle : veuillez entrer une adresse professionnelle afin que nous puissions stocker les données de votre entreprise en toute sécurité.* <br /><br /> ou <br /><br /> *Il semble que vous utilisez une adresse de messagerie personnelle. Entrez votre adresse professionnelle pour que nous puissions vous connecter aux autres utilisateurs de votre organisation. Ne vous inquiétez pas. Nous ne communiquerons pas votre adresse de messagerie.* |Power BI ne prend pas en charge les adresses de messagerie fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunications. <br /><br /> Pour procéder à l’inscription, réessayez en utilisant une adresse de messagerie qui vous a été attribuée par votre organisation ou votre établissement. <br /><br /> Si vous ne pouvez toujours pas vous inscrire et que vous souhaitez effectuer un processus d’installation plus avancé, vous pouvez [vous inscrire à une version d’évaluation d’Office 365 et utiliser cette adresse de messagerie pour vous inscrire](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
+| **Adresses de messagerie (par exemple, nancy@gmail.com)** Vous recevez un message comme celui-ci pendant l’inscription : <br /><br /> *Vous avez entré une adresse de messagerie personnelle : veuillez entrer une adresse professionnelle afin que nous puissions stocker les données de votre entreprise en toute sécurité.* <br /><br /> ou <br /><br /> *Il semble que vous utilisez une adresse de messagerie personnelle. Entrez votre adresse professionnelle pour que nous puissions vous connecter aux autres utilisateurs de votre organisation. Ne vous inquiétez pas. Nous ne communiquerons pas votre adresse de messagerie.* |Power BI ne prend pas en charge les adresses de messagerie fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunications. <br /><br /> Pour procéder à l’inscription, réessayez en utilisant une adresse de messagerie qui vous a été attribuée par votre organisation ou votre établissement. <br /><br /> Si vous ne pouvez toujours pas vous inscrire et que vous souhaitez effectuer un processus d’installation plus avancé, vous pouvez [vous inscrire à une version d’évaluation d’Office 365 et utiliser cette adresse de messagerie pour vous inscrire](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> Invitez le compte d’utilisateur en tant qu’[invité Azure B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b). |
 | **Inscription libre-service désactivée** Vous recevez un message comme celui-ci pendant l’inscription : <br /><br /> *Nous ne pouvons pas poursuivre le processus d’inscription. Votre service informatique a désactivé l’inscription à Microsoft Power BI. Contactez-le pour terminer l’inscription.* <br /><br /> ou <br /><br /> *Il semble que vous utilisez une adresse de messagerie personnelle. Entrez votre adresse professionnelle pour que nous puissions vous connecter aux autres utilisateurs de votre organisation. Ne vous inquiétez pas. Nous ne communiquerons pas votre adresse de messagerie.* |L’administrateur informatique de votre organisation a désactivé l’inscription à Power BI. <br /><br /> Pour terminer l’inscription, contactez votre administrateur et demandez-lui de suivre les instructions de la page ci-dessous pour autoriser les utilisateurs existants à s’inscrire à Power BI et pour permettre aux nouveaux utilisateurs de rejoindre le client existant. <br/><br/> Vous pouvez également rencontrer ce problème si vous êtes inscrit à Office 365 par l’intermédiaire d’un partenaire. [En savoir plus](service-admin-syndication-partner.md) <br /><br /> [Power BI dans votre organisation](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant) |
 | **L’adresse de messagerie n’est pas un ID Office 365** Vous recevez un message comme celui-ci pendant l’inscription : <br /><br /> *Nous ne vous avons pas trouvé sur contoso.com.  Utilisez-vous un ID différent au sein de votre organisation ou de votre établissement ? <br /><br /> Essayez de vous connecter avec cette adresse et, si elle ne fonctionne pas, contactez votre service informatique.* |Votre organisation utilise des ID pour la connexion à Office 365 et à d’autres services Microsoft et ces ID ne correspondent pas à votre adresse de messagerie.  Par exemple, votre adresse de messagerie peut être Nancy.Smith@contoso.com, mais votre ID est nancys@contoso.com. <br /><br /> Pour terminer l’inscription, utilisez l’ID que votre organisation vous a attribué pour vous connecter à Office 365 ou aux autres services Microsoft.  Si vous ne le connaissez pas, contactez votre administrateur informatique. <br /><br /> Si vous ne pouvez toujours pas vous inscrire, mais êtes en mesure d’effectuer un processus d’installation plus avancé, vous pouvez [vous inscrire à une version d’évaluation d’Office 365 et utiliser cette adresse de messagerie pour vous inscrire](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
