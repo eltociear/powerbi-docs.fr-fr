@@ -664,11 +664,13 @@
           href: desktop-ssas-multidimensional.md
         - name: "Se connecter à des fichiers\_CSV dans Power BI Desktop"
           href: desktop-connect-csv.md
-        - name: "Se connecter à une base de données Impala dans Power\_BI Desktop (version préliminaire)"
+        - name: Se connecter à Adobe Analytics dans Power BI Desktop (préversion)
+          href: desktop-connect-csv.md
+        - name: "Se connecter à une base de données Impala dans Power\_BI\_Desktop"
           href: desktop-connect-impala.md
-        - name: "Se connecter à un flux OData dans Power\_BI\_Desktop"
+        - name: "Se connecter à un flux OData dans Power\_BI Desktop"
           href: desktop-connect-odata.md
-        - name: "Se connecter à une base de données Amazon Redshift dans Power\_BI\_Desktop (Version préliminaire)"
+        - name: "Se connecter à une base de données Amazon Redshift dans Power\_BI\_Desktop"
           href: desktop-connect-redshift.md
         - name: Se connecter à une page web à partir de Power BI Desktop
           href: desktop-connect-to-web.md
@@ -768,6 +770,8 @@
           href: desktop-slicers.md
         - name: "Signets dans Power\_BI"
           href: desktop-bookmarks.md
+        - name: Créer des info-bulles personnalisées pour les rapports (préversion)
+          href: desktop-tooltips.md
         - name: Utiliser les thèmes de rapport
           href: desktop-report-themes.md
         - name: Utiliser les mesures rapides
