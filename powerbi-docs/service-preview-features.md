@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 4ffa00f92a6ee1275c1f8a691369cfd54363aa98
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 45f10ab7fef7669adbbc836e67a4daaed267905e
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="opt-in-for-power-bi-preview-features"></a>Inscrivez-vous pour accéder aux fonctionnalités en version préliminaire de Power BI
 ## <a name="what-are-preview-features"></a>Que sont les*fonctionnalités en version préliminaire*?
@@ -37,10 +37,10 @@ Dans le cadre des améliorations que nous apportons à Power BI, nous allons pu
 ## <a name="find-previews-and-turn-them-on-and-off"></a>Trouver des préversions et les activer (ou désactiver)
 1. Ouvrez le menu Paramètres en sélectionnant l’icône d’engrenage dans le coin supérieur droit de votre écran Power BI, puis choisissez **Paramètres**.
    
-   ![](media/service-preview-features/power-bi-settings.png).
+   ![menu Paramètres](media/service-preview-features/power-bi-settings.png).
 2. Sélectionnez l’onglet **Général**. S’il existe des préversions, vous voyez une option **Fonctionnalités en préversion** ou une fonctionnalité en préversion à gauche.  Dans cet exemple, il existe une préversion répertoriée pour ArcGIS Maps. 
    
-   ![](media/service-preview-features/power-bi-preview-arcgis.png)
+   ![onglet Général](media/service-preview-features/power-bi-preview-arcgis.png)
 3. Sélectionnez le bouton radio **Activé** ou cochez la case pour essayer la nouvelle expérience. Sélectionnez ensuite **Appliquer**.
 4. Pour désactiver les fonctionnalités en préversion, suivez les étapes 1 à 3 ci-dessus, puis à l’étape 3, **désélectionnez** ou supprimez la case à cocher, puis sélectionnez **Appliquer**.
 

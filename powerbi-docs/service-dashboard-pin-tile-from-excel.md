@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 06edf8aae58dbcf2e22cf5d1ea13bf6350465853
-ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
+LocalizationGroup: Dashboards
+ms.openlocfilehash: fdd014e513a794a72196a3173703b9536f06768a
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Épingler une vignette à un tableau de bord Power BI à partir d’Excel
 Avant de pouvoir épingler une vignette à partir de votre classeur Excel, connectez ce classeur au service Power BI (app.powerbi.com). La connexion d’un classeur apporte essentiellement une version en lecture seule liée de ce classeur dans le service Power BI et vous permet d’épingler des plages à des tableaux de bord. Vous pouvez même épingler une feuille de calcul entière à un tableau de bord.  
@@ -42,35 +43,35 @@ Vous ne pouvez pas modifier votre classeur dans Power BI. Toutefois, si vous de
 1. Chargez votre classeur dans votre espace OneDrive Entreprise.
 2. Dans Power BI, [connectez-vous à ce classeur](service-excel-workbook-files.md) en sélectionnant **Obtenir des données > Fichiers > OneDrive Entreprise** et en accédant à l’emplacement où est enregistré le fichier Excel. Sélectionnez le fichier et choisissez **Se connecter > Se connecter**.
 
-   ![](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
+   ![boîte de dialogue OneDrive Entreprise](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
 
-3. Dans Power BI, le classeur est ajouté à l’onglet **Classeurs** de votre espace de travail.  L’icône ![](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) indique qu’il s’agit d’un classeur Excel et l’astérisque jaune indique qu’il est nouveau.
+3. Dans Power BI, le classeur est ajouté à l’onglet **Classeurs** de votre espace de travail.  L’icône ![icône de classeur](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) indique qu’il s’agit d’un classeur Excel et l’astérisque jaune indique qu’il est nouveau.
    
     
-   ![](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
+   ![onglet Classeurs](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Ouvrez le classeur dans Power BI en sélectionnant le nom du classeur.
 
     Les modifications apportées au classeur dans Power BI ne sont pas enregistrées et n’affectent pas le classeur d’origine sur OneDrive Entreprise. Si vous triez, filtrez ou modifiez les valeurs dans Power BI, ces modifications ne peuvent pas être enregistrées ou épinglées. Si vous voulez apporter et enregistrer des modifications, sélectionnez **Modifier** dans l’angle supérieur droit pour l’ouvrir dans Excel Online ou Excel et le modifier. Lorsque les modifications ont effectuées de cette façon, la mise à jour des vignettes des tableaux de bord peut prendre quelques minutes.
    
    
-   ![](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
+   ![Excel Online dans Power BI](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## <a name="pin-a-range-of-cells-to-a-dashboard"></a>Épingler une plage de cellules à un tableau de bord
 Dans Power BI, vous pouvez ajouter une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md) à partir d’un classeur Excel. Les plages peuvent être épinglées à partir de classeurs Excel enregistrés dans votre espace OneDrive Entreprise ou une autre bibliothèque de documents partagés dans un groupe. Elles peuvent contenir des données, graphiques, tableaux, tableaux croisés dynamiques, graphiques croisés dynamiques et autres composants Excel.
 
 1. Mettez en surbrillance les cellules que vous souhaitez épingler au tableau de bord.
    
-    ![](media/service-dashboard-pin-tile-from-excel/pbi_selectrange.png)
-2. Sélectionnez l’icône ![](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png) en forme d’épingle. 
+    ![sélectionner des cellules dans un classeur Excel](media/service-dashboard-pin-tile-from-excel/pbi_selectrange.png)
+2. Sélectionnez l’icône en forme d’épingle ![icône d’épingle](media/service-dashboard-pin-tile-from-excel/pbi_pintile_small.png) . 
 3. Épinglez la vignette à un tableau de bord existant ou à un nouveau tableau de bord. 
    
    * Tableau de bord existant : sélectionnez le nom du tableau de bord dans la liste déroulante.
    * Nouveau tableau de bord : tapez le nom du nouveau tableau de bord.
    
-    ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+    ![boîte de dialogue Épingler au tableau de bord](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Sélectionnez **Épingler**. Un message de réussite (dans l’angle supérieur droit) vous indique que la plage a été ajoutée sous forme de vignette à votre tableau de bord. 
    
-    ![](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
+    ![Boîte de dialogue Épinglé au tableau de bord](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
 5. Sélectionnez **Accéder au tableau de bord**. Ici, vous pouvez [renommer, redimensionner, lier et déplacer](service-dashboard-edit-tile.md) la visualisation épinglée. Par défaut, la sélection de la vignette épinglée a pour effet d’ouvrir le classeur dans Power BI.
 
 ## <a name="pin-an-entire-table-or-pivot-chart-to-a-dashboard"></a>Épingler un tableau ou tableau croisé dynamique entier à un tableau de bord
@@ -78,14 +79,14 @@ Suivez les étapes ci-dessus, mais au lieu de sélectionner une plage de cellule
 
 Pour épingler un tableau, sélectionnez l’ensemble du tableau en incluant les en-têtes.  Pour épingler un tableau croisé dynamique, pensez à inclure toutes les parties visibles, notamment les filtres utilisés.
 
- ![](media/service-dashboard-pin-tile-from-excel/pbi_selecttable.png)
+ ![sélectionner les cellules](media/service-dashboard-pin-tile-from-excel/pbi_selecttable.png)
 
 Une vignette créée à partir d’un tableau ou d’un tableau croisé dynamique affiche le tableau entier.  Si vous ajoutez/supprimez/filtrez les lignes ou les colonnes du classeur d’origine, elles peuvent également être ajoutées/supprimées/filtrées dans la vignette.
 
 ## <a name="view-the-workbook-linked-to-the-tile"></a>Afficher le classeur lié à la vignette
 La sélection d’une vignette de classeur a pour effet d’ouvrir le classeur lié dans Power BI. Étant donné que le fichier de classeur se trouve dans l’espace OneDrive Entreprise du propriétaire, son affichage nécessite des autorisations de lecture. Si vous n’êtes pas autorisé à effectuer cette opération, vous recevez un message d’erreur.  
 
- ![](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
+ ![vidéo](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 Fonctionnalités non prises en charge : Power BI utilise Excel Services pour récupérer les vignettes de classeur. Aussi, étant donné que l’API REST Excel Services ne prend pas en charge certaines fonctionnalités d’Excel, celles-ci n’apparaissent pas sur les vignettes dans Power BI. Par exemple : graphiques sparkline, mise en forme conditionnelle de jeu d’icônes et segments de temps. Pour obtenir la liste complète des fonctionnalités non prises en charge, consultez [Fonctionnalités non prises en charge dans l’API REST Excel Services](http://msdn.microsoft.com/library/office/ff394477.aspx)

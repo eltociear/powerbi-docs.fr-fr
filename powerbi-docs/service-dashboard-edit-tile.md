@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/20/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 5c208ab13398987350d2acd72e29dbc4d6a6c4a1
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 98856d551e0f124d7ea3e038623e2340ceeb18b8
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Modifier ou supprimer une vignette de tableau de bord
 
@@ -54,23 +55,23 @@ Cet article aborde les points suivants.
 ## <a name="create-a-new-visualization-and-pin-it-to-the-dashboard"></a>Créer une visualisation et l’épingler au tableau de bord
 1. Dans le tableau de bord Analyse des dépenses informatiques, sélectionnez la vignette Amount (Quantité) pour ouvrir le rapport.
 
-    ![](media/service-dashboard-edit-tile/power-bi-amount-tile.png)
+    ![Vignette Quantité](media/service-dashboard-edit-tile/power-bi-amount-tile.png)
 
 2. Ouvrez le rapport en mode Édition en sélectionnant **Modifier le rapport** dans la barre de menus supérieure.
 
 3. Ajoutez une nouvelle page de rapport en sélectionnant le signe « + » au bas du rapport.
 
-    ![](media/service-dashboard-edit-tile/power-bi-add-page.png)
+    ![icône de signe plus](media/service-dashboard-edit-tile/power-bi-add-page.png)
 
 4. Dans le volet Champs, sélectionnez **Fact (Fait) > Quantité (Amount)** et **Business Area (Secteur d’activité) > Business Area (Secteur d’activité)**.
  
 5. Dans le volet Visualisations, sélectionnez l’icône de graphique en anneau pour convertir la visualisation en graphique en anneau.
 
-    ![](media/service-dashboard-edit-tile/power-bi-donut-chart.png)
+    ![volet Visualisations](media/service-dashboard-edit-tile/power-bi-donut-chart.png)
 
 5. Sélectionnez l’icône en forme d’épingle et épinglez le graphique en anneau au tableau de bord de l’exemple Analyse des dépenses informatiques.
 
-   ![](media/service-dashboard-edit-tile/power-bi-pin.png)
+   ![pointer sur une vignette](media/service-dashboard-edit-tile/power-bi-pin.png)
 
 6. Lorsque le message de réussite s’affiche, sélectionnez **Accéder au tableau de bord**. Vous êtes invité à enregistrer les modifications. Sélectionnez **Enregistrer**.
 
@@ -86,24 +87,23 @@ Sur le tableau de bord, localisez la nouvelle vignette. Sélectionnez la vignett
 ## <a name="resize-the-tile"></a>Redimensionner la vignette
 Vous pouvez donner différentes tailles aux vignettes (de 1 x 1 unités de vignette à 5 x 5). Sélectionnez la poignée (dans l’angle inférieur droit) et faites-la glisser pour redimensionner la vignette.
 
-![](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
+![vidéo](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
 - - -
 ## <a name="the-ellipses--menu"></a>Menu de points de suspension (...)
 
 1. Sélectionnez les points de suspension (...) en haut à droite de la vignette. 
    
-   ![](media/service-dashboard-edit-tile/power-bi-tile.png)
+   ![points de suspension de la vignette](media/service-dashboard-edit-tile/power-bi-tile.png)
 
 2. Pointez sur la vignette Compte et sélectionnez les points de suspension pour afficher les options. Les options peuvent varier selon le type de vignette.  Par exemple, les options disponibles pour une vignette dynamique sont différentes de celles disponibles pour une vignette de visualisation standard. De plus, si un tableau de bord a été partagé avec vous (vous n’en êtes pas le propriétaire), vous disposez de moins d’options.
 
-   ![](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
+   ![menu d’options en forme de points de suspension](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
 
 3. Sélectionnez **Modifier les détails** pour ouvrir la fenêtre Détails de la vignette. 
 
     Modifiez le titre et le comportement par défaut de la vignette.  Par exemple, vous pouvez décider que quand un *consommateur* sélectionne une vignette, au lieu d’ouvrir le rapport utilisé pour créer cette vignette, un nouveau tableau de bord s’affiche à la place.  
    
-   ![](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
 
 
 <a name="rename"></a>
@@ -111,7 +111,7 @@ Vous pouvez donner différentes tailles aux vignettes (de 1 x 1 unités de vig
 ### <a name="rename-the-tile"></a>Renommer la vignette
 En haut de la fenêtre Détails de la vignette, remplacez **Titre** par **Quantité dépensée**.
 
-![](media/service-dashboard-edit-tile/power-bi-tile-title.png)
+![fenêtre Détails de la vignette](media/service-dashboard-edit-tile/power-bi-tile-title.png)
 
 
 <a name="hyperlink"></a>
@@ -123,27 +123,27 @@ Par défaut, si vous sélectionnez une vignette, vous êtes normalement dirigé 
 
 2. Sélectionnez **Lier un tableau de bord ou un rapport dans l’espace de travail actuel**, puis effectuez une sélection dans le menu déroulant.  Dans cet exemple, j’ai sélectionné le tableau de bord de l’exemple Ressources humaines. Si vous n’avez pas encore cet exemple dans votre espace de travail, vous pouvez l’ajouter et revenir à cette étape, ou vous pouvez sélectionner un autre tableau de bord. 
 
-    ![](media/service-dashboard-edit-tile/power-bi-custom-link.png)
+    ![boîte de dialogue Fonctionnalité](media/service-dashboard-edit-tile/power-bi-custom-link.png)
 
 3. Sélectionnez **Appliquer**.
 
 4. Le nouveau titre s’affiche sur la vignette.  Ensuite, quand vous sélectionnez la vignette, Power BI ouvre le tableau de bord Ressources humaines. 
 
-    ![](media/service-dashboard-edit-tile/power-bi-title.png)
+    ![titre de la vignette](media/service-dashboard-edit-tile/power-bi-title.png)
 
 <a name="different"></a>
 
 ### <a name="pin-the-tile-to-a-different-dashboard"></a>Épingler la vignette à un autre tableau de bord
-1. Dans le menu déroulant du bouton de sélection, sélectionnez **Épingler la vignette** ![](media/service-dashboard-edit-tile/pinnooutline.png).
+1. Dans le menu déroulant des points de suspension, sélectionnez **Épingler la vignette** ![icône d’épingle](media/service-dashboard-edit-tile/pinnooutline.png).
 2. Épinglez un doublon de cette vignette à un tableau de bord existant ou nouveau. 
    
-   ![](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
+   ![boîte de dialogue Épingler au tableau de bord](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
 3. Sélectionnez **Épingler**.
 
 <a name="delete"></a>
 
 ### <a name="delete-the-tile"></a>Supprimer la vignette
-1. Pour supprimer définitivement une vignette d’un tableau de bord, sélectionnez **Supprimer la vignette** ![](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) dans le menu déroulant des points de suspension. 
+1. Pour supprimer définitivement une vignette d’un tableau de bord, sélectionnez **Supprimer la vignette** ![icône Supprimer](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) dans le menu déroulant des points de suspension. 
 
 2. La suppression d’une vignette n’entraîne pas celle de la visualisation sous-jacente. Ouvrez le rapport sous-jacent en sélectionnant la vignette « Quantité ». Ouvrez la dernière page de votre rapport pour voir que la visualisation d’origine n’a pas été supprimée du rapport. 
 

@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 8174a3043d544191032ec65e3b9a1710547b18ab
-ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 3638c99b0dfafa8a90a6c911051e203f3e6037c4
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Épingler une page entière de rapport, sous forme de vignette dynamique, sur un tableau de bord Power BI
 Pour ajouter une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md), vous pouvez aussi épingler une page entière de rapport. Il s’agit d’un moyen simple d’épingler plusieurs visualisations à la fois.  De plus, quand vous épinglez une page entière, les vignettes sont *dynamiques*: vous pouvez interagir avec elles directement sur le tableau de bord. Les modifications apportées ultérieurement à des visualisations dans l’éditeur de rapports, comme ajouter un filtre ou changer les champs utilisés dans le graphique, sont également répercutées dans la vignette du tableau de bord.  
@@ -43,20 +44,20 @@ Regardez Amanda épingler une page de rapport dynamique sur un tableau de bord, 
 1. Ouvrez un rapport en [mode Édition](service-interact-with-a-report-in-editing-view.md).
 2. Sans qu’aucune visualisation soit sélectionnée, dans la barre de menus, sélectionnez **Épingler une page dynamique**.
    
-   ![](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
+   ![icône Épingler une page dynamique](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page.png) 
 3. Épinglez la vignette à un tableau de bord existant ou à un nouveau tableau de bord. Notez le texte en surbrillance : *Épingler une page dynamique a pour effet de faire apparaître les modifications apportées aux rapports dans la vignette du tableau de bord quand la page est actualisée.*
    
    * Tableau de bord existant : sélectionnez le nom du tableau de bord dans la liste déroulante. Les tableaux de bord qui ont été partagés avec vous n’apparaissent pas dans la liste déroulante.
    * Nouveau tableau de bord : tapez le nom du nouveau tableau de bord.
      
-     ![](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
+     ![boîte de dialogue Épingler au tableau de bord](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
 4. Sélectionnez **Épingler un élément dynamique**. Un message de réussite (en haut à droite) vous indique que la page a été ajoutée sous forme de vignette à votre tableau de bord.
 
 ## <a name="open-the-dashboard-to-see-the-pinned-live-tile"></a>Ouvrir le tableau de bord pour voir la vignette dynamique épinglée
 1. Dans le volet de navigation, sélectionnez le tableau de bord avec la nouvelle vignette dynamique. Vous pouvez dès lors [renommer, redimensionner, lier et déplacer](service-dashboard-edit-tile.md) la page de rapport épinglée.  
 2. Interagissez avec la vignette dynamique.  Dans la capture d’écran ci-dessous, la sélection d’une barre sur l’histogramme a appliqué un filtrage croisé et une mise en surbrillance croisée des autres visualisations de la vignette.
    
-    ![](media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png)
+    ![tableaux de bord avec une vignette dynamique](media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Tableaux de bord dans Power BI](service-dashboards.md)

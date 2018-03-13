@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 62796d9eb376ab4c92cc5596176ac501a69c0e62
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d8b4175f83415821e1ff9b63e3c53cd8f869b54f
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="printing-from-power-bi-service"></a>Impression depuis le service Power BI
 Imprimer un tableau de bord entier, une vignette de tableau de bord, une page de rapport ou un visuel de rapport à partir du service Power BI. Les rapports ne peuvent être imprimés qu’une page à la fois. Vous ne pouvez peut pas imprimer l’intégralité du rapport en une fois.
@@ -41,25 +41,24 @@ Regardez Amanda imprimer à partir de son tableau de bord et de son rapport. Sui
 1. Ouvrez le tableau de bord que vous souhaitez imprimer.
 2. Dans le coin supérieur droit, sélectionnez les ellipses (…), puis **Imprimer le tableau de bord**.
    
-    ![](media/service-print/pbi_print_dash_ellipses.png)
+    ![Option d’impression du tableau de bord](media/service-print/pbi_print_dash_ellipses.png)
 3. La fenêtre d’impression de votre navigateur s’ouvre. Choisissez les paramètres et la destination d’impression, puis sélectionnez **Imprimer**.
    
    > [!NOTE]
    > La boîte de dialogue d’impression qui s’affiche dépend du navigateur que vous utilisez.
    > 
-   > 
    
-    ![](media/service-print/pbi_print_dash_new2.png)
+    ![boîte de dialogue Imprimer](media/service-print/pbi_print_dash_new2.png)
 
 ## <a name="print-a-dashboard-tile"></a>Imprimez une vignette de tableau de bord
-1. [Ouvrez la vignette en mode Focus](service-focus-mode.md) en sélectionnant les points de suspension, puis en choisissant l’icône Focus ![](media/service-print/power-bi-focus-icon.png).
+1. [Ouvrez la vignette en mode Focus](service-focus-mode.md) en sélectionnant les points de suspension et en choisissant l’icône Focus ![icône Focus](media/service-print/power-bi-focus-icon.png).
    
-    ![](media/service-print/menu-options.png)
-2. Ouvrez la vignette en [mode Plein écran](service-fullscreen-mode.md) en sélectionnant l’icône Plein écran ![](media/service-print/power-bi-full-screen-icon.png) dans la barre de navigation supérieure.
+    ![menu des points de suspension](media/service-print/menu-options.png)
+2. Ouvrez la vignette en [mode Plein écran](service-fullscreen-mode.md) en sélectionnant l’icône Plein écran ![icône Plein écran](media/service-print/power-bi-full-screen-icon.png) dans la barre de navigation supérieure.
 3. Pointez sur la vignette pour afficher le menu Options
    
-    ![](media/service-print/menu-options-new.png)
-4. Sélectionnez l’icône Impression ![](media/service-print/print-icon.png).     
+    ![menu d’options Plein écran](media/service-print/menu-options-new.png)
+4. Sélectionnez l’icône Impression ![icône Impression](media/service-print/print-icon.png).     
    
    > [!NOTE]
    > La boîte de dialogue d’impression qui s’affiche dépend du navigateur que vous utilisez.
@@ -72,7 +71,7 @@ Vous pouvez imprimer les rapport une seule page à la fois.
 1. Ouvrez le rapport en mode Lecture ou Edition.
 2. Sélectionnez **Fichier** > **Imprimer** pour imprimer la page de rapport active.
    
-    ![](media/service-print/power-bi-print.png)
+    ![menu Fichier Power BI](media/service-print/power-bi-print.png)
 3. La fenêtre d’impression de votre navigateur s’ouvre.
    
    > [!NOTE]
@@ -81,7 +80,7 @@ Vous pouvez imprimer les rapport une seule page à la fois.
    > 
 
 ## <a name="print-a-report-visual"></a>Imprimez un visuel de rapport
-1. [Ouvrez le visuel en mode Focus](service-focus-mode.md) en pointant sur la vignette, puis en sélectionnant l’icône Focus ![](media/service-print/power-bi-focus-icon.png) dans l’angle supérieur droit.
+1. [Ouvrez le visuel en mode Focus](service-focus-mode.md) en pointant sur la vignette et en sélectionnant l’icône Focus ![icône Focus](media/service-print/power-bi-focus-icon.png) en haut à droite.
 2. Suivez les étapes 2 à 3 sous *Imprimer une page de rapport* ci-dessus.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes

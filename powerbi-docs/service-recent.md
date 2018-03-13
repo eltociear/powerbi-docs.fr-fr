@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 103edc93dafb9615e08692965258ffc61905baf1
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 972e816dcd833b6ae0e7bd26b760952066aa5ac8
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="recent-content-in-power-bi-service"></a>Contenu **récent** dans le service Power BI
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/24/2018
 ## <a name="what-is-recent-content"></a>Qu’est ce que le contenu récent
 Le contenu récent regroupe les derniers éléments que vous avez consultés (maximum 20).  Il peut s’agir de tableaux de bord, de rapports, d’applications et de classeurs dans l’ensemble de vos espaces de travail.
 
-![](media/service-recent/power-bi-recent-screen.png)
+![fenêtre Contenu récent](media/service-recent/power-bi-recent-screen.png)
 
 Regardez Amanda montrer comment les listes de contenu **Récent** sont remplies, puis suivez les instructions détaillées sous la vidéo pour essayer vous-même.
 
@@ -40,11 +40,11 @@ Regardez Amanda montrer comment les listes de contenu **Récent** sont remplies,
 ## <a name="display-recent-content"></a>Afficher le contenu récent
 Pour voir vos cinq éléments visités le plus récemment, dans le volet de navigation de gauche, sélectionnez la flèche à droite de **Récents**.  À partir de là, vous pouvez sélectionner un contenu récent pour l’ouvrir. Seuls les cinq éléments les plus récents sont répertoriés.
 
-![](media/service-recent/power-bi-recent-flyout-new.png)
+![menu volant Contenu récent](media/service-recent/power-bi-recent-flyout-new.png)
 
-Si vous avez plus de cinq éléments récemment visités, sélectionnez **Afficher tout** pour ouvrir l’écran Récents (voir ci-dessous). Vous pouvez également sélectionner **Récents** ou l’icône Récents ![](media/service-recent/power-bi-recent-icon.png) dans le volet de navigation de gauche.
+Si vous avez plus de cinq éléments récemment visités, sélectionnez **Afficher tout** pour ouvrir l’écran Récents (voir ci-dessous). Vous pouvez également sélectionner **Récents** ou l’icône Récents ![icône Récents](media/service-recent/power-bi-recent-icon.png) dans le volet de navigation de gauche.
 
-![](media/service-recent/power-bi-recent-list.png)
+![afficher tout le contenu récent](media/service-recent/power-bi-recent-list.png)
 
 À partir de là, vous pouvez interagir avec le contenu comme vous le feriez sous les onglets [**Tableaux de bord**](service-dashboards.md), [**Rapports**](service-reports.md) et **Classeurs**, ainsi que sur l’écran [**Applications**](service-install-use-apps.md).
 

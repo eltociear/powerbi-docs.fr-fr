@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: ea4dfaf8678e19894c1947282197d7e14cfaa944
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3d20b27b24851872b05a9c7dccb383032e1d65b8
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Supprimer pratiquement tout élément dans le service Power BI
 Cet article explique comment supprimer un tableau de bord, un rapport, un classeur, un jeu de données, une application, une visualisation ou un espace de travail dans le service Power BI.
@@ -36,24 +36,24 @@ Vous pouvez supprimer des tableaux de bord. La suppression du tableau de bord n�
 
 ### <a name="to-delete-a-dashboard"></a>Pour supprimer un tableau de bord
 1. Dans votre espace de travail, sélectionnez l’onglet **Tableaux de bord**.
-2. Recherchez le tableau de bord à supprimer, puis sélectionnez l’icône Supprimer ![](media/service-delete/power-bi-delete-icon.png).
+2. Recherchez le tableau de bord à supprimer et sélectionnez l’icône Supprimer ![icône supprimer](media/service-delete/power-bi-delete-icon.png).
 
-    ![](media/service-delete/power-bi-delete-dash.gif)
+    ![vidéo](media/service-delete/power-bi-delete-dash.gif)
 
 ## <a name="delete-a-report"></a>Supprimer un rapport
 La suppression d’un rapport ne doit pas être une source d’inquiétudes : cette opération ne supprime pas le jeu de données sur lequel est basé le rapport.  De même, les visualisations que vous avez épinglées à partir du rapport sont aussi préservées : elles restent sur le tableau de bord tant que vous ne les supprimez pas individuellement.
 
 ### <a name="to-delete-a-report"></a>Pour supprimer un rapport :
 1. Dans votre espace de travail, sélectionnez l’onglet **Rapports**.
-2. Recherchez le rapport à supprimer, puis sélectionnez l’icône Supprimer ![](media/service-delete/power-bi-delete-icon.png).   
+2. Recherchez le rapport à supprimer et sélectionnez l’icône Supprimer   ![icône supprimer](media/service-delete/power-bi-delete-icon.png).   
 
-    ![](media/service-delete/power-bi-delete-reportnew.png)
+    ![onglet Rapports d’un espace de travail](media/service-delete/power-bi-delete-reportnew.png)
 3. Confirmez la suppression.
 
-   ![](media/service-delete/power-bi-delete-report.png)
+   ![boîte de dialogue Supprimer le rapport](media/service-delete/power-bi-delete-report.png)
 
    > [!NOTE]
-   > si le rapport fait partie d’un [pack de contenu](service-organizational-content-pack-introduction.md), vous ne pourrez pas le supprimer en employant cette méthode.  Voir [Suppression de votre connexion à un pack de contenu d’organisation](service-organizational-content-pack-disconnect.md).
+   > Si le rapport fait partie d’un [pack de contenu](service-organizational-content-pack-introduction.md), vous ne pourrez pas le supprimer en employant cette méthode.  Consultez [Suppression de votre connexion à un pack de contenu d’organisation](service-organizational-content-pack-disconnect.md).
    >
    >
 
@@ -64,12 +64,12 @@ Si le classeur est stocké sur OneDrive Entreprise, sa suppression de Power BI n
 
 ### <a name="to-delete-a-workbook"></a>Pour supprimer un classeur
 1. Dans votre espace de travail, sélectionnez l’onglet **Classeurs**.
-2. Recherchez le classeur à supprimer, puis sélectionnez l’icône Supprimer ![](media/service-delete/power-bi-delete-report2.png).
+2. Recherchez le classeur à supprimer et sélectionnez l’icône Supprimer ![icône supprimer](media/service-delete/power-bi-delete-report2.png) .
 
-    ![](media/service-delete/power-bi-delete-workbooknew.png)
+    ![onglet Classeurs](media/service-delete/power-bi-delete-workbooknew.png)
 3. Confirmez la suppression.
 
-   ![](media/service-delete/power-bi-delete-confirm.png)
+   ![boîte de dialogue Supprimer le classeur](media/service-delete/power-bi-delete-confirm.png)
 
 ## <a name="delete-a-dataset"></a>Supprimer un jeu de données
 Vous pouvez supprimer des jeux de données. Toutefois, la suppression d’un jeu de données a également pour effet de supprimer l’ensemble des rapports et vignettes de tableau de bord contenant des données de ce jeu de données.
@@ -80,13 +80,13 @@ Si un jeu de données fait partie d’un ou plusieurs [packs de contenu d’orga
 1. Dans votre espace de travail, sélectionnez l’onglet **Jeux de données**.
 2. Localisez le jeu de données à supprimer, puis sélectionnez les points de suspension (…).  
 
-    ![](media/service-delete/power-bi-delete-datasetnew.png)
+    ![onglet Jeux de données](media/service-delete/power-bi-delete-datasetnew.png)
 3. Dans la liste déroulante, sélectionnez **Supprimer**.
 
-   ![](media/service-delete/power-bi-delete-datasetnew2.png)
+   ![menu des points de suspension](media/service-delete/power-bi-delete-datasetnew2.png)
 4. Confirmez la suppression.
 
-   ![](media/service-delete/power-bi-delete-dataset-confirm.png)
+   ![boîte de dialogue Supprimer le tableau de bord](media/service-delete/power-bi-delete-dataset-confirm.png)
 
 ## <a name="delete-an-app-workspace"></a>Supprimer un espace de travail d’application
 > [!WARNING]
@@ -99,13 +99,13 @@ En tant qu’auteur de l’espace de travail de l’application, vous pouvez sup
 ### <a name="to-delete-an-app-workspace---if-you-are-an-admin"></a>Pour supprimer un espace de travail d’application, si vous êtes un administrateur
 1. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail**.
 
-    ![](media/service-delete/power-bi-delete-workspace.png)
+    ![Espaces de travail d’application](media/service-delete/power-bi-delete-workspace.png)
 2. Sélectionnez les points de suspension (…) à droite de l’espace de travail à supprimer, puis choisissez **Modifier l’espace de travail**.
 
-   ![](media/service-delete/power-bi-edit-workspace.png)
+   ![menu de points de suspension > Modifier l’espace de travail](media/service-delete/power-bi-edit-workspace.png)
 3. Dans la fenêtre **Modifier l’espace de travail**, sélectionnez **Supprimer l’espace de travail** > **Supprimer**.
 
-    ![](media/service-delete/power-bi-delete-workspace2.png)
+    ![supprimer l’espace de travail](media/service-delete/power-bi-delete-workspace2.png)
 
 ### <a name="to-remove-an-app-workspace-from-your-list"></a>Pour supprimer un espace de travail d’application de votre liste
 Si vous ne souhaitez plus être un membre d’un espace de travail d’application, vous pouvez le ***quitter***. Il est alors supprimé de votre liste. Lorsque vous quittez un espace de travail, celui-ci reste en place pour tous ses autres membres.  
@@ -118,7 +118,7 @@ Si vous ne souhaitez plus être un membre d’un espace de travail d’applicati
 1. Démarrez dans l’espace de travail d’application que vous souhaitez supprimer.
 2. Dans l’angle supérieur droit, sélectionnez les points de suspension (…), puis choisissez **Quitter l’espace de travail** > **Quitter**.
 
-      ![](media/service-delete/power-bi-leave-workspace.png)
+      ![quitter l’espace de travail](media/service-delete/power-bi-leave-workspace.png)
 
    > [!NOTE]
    > Les options qui apparaissent dans la liste déroulante varient selon que vous êtes un administrateur ou un membre de cet espace de travail d’application.
@@ -134,7 +134,7 @@ La suppression d’une application de la page de votre liste d’applications n�
 1. Dans la volet de navigation de gauche, sélectionnez **Applications** pour ouvrir la page de la liste d’applications.
 2. Pointez sur l’application à supprimer, puis sélectionnez l’icône Supprimer ![](media/service-delete/power-bi-delete-report2.png).
 
-   ![](media/service-delete/power-bi-delete-app.png)
+   ![sélectionner Applications](media/service-delete/power-bi-delete-app.png)
 
    Si vous supprimez accidentellement une application, vous disposez de plusieurs options pour la récupérer.  Vous pouvez demander au créateur de l’application de la renvoyer, rechercher l’e-mail d’origine contenant le lien vers l’application, consulter votre [centre de notifications](service-notification-center.md) pour voir si la notification relative à cette application y figure toujours, ou vérifier l’[AppSource](service-install-use-apps.md) de votre organisation.
 

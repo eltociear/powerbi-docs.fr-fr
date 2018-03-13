@@ -16,17 +16,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 63497e7d517bed8aeba8abefcc4e48c628e06252
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 6c29f0915009fced89c80e05f40b91c467e505ce
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="display-the-power-bi-dashboards-that-have-been-shared-with-me"></a>Afficher les tableaux de bord Power BI qui ont été Partagé avec moi
 ## <a name="shared-with-me"></a>Partagé avec moi
-![](media/service-shared-with-me/power-bi-share-dash.png)
+![Icône de partage](media/service-shared-with-me/power-bi-share-dash.png)
 
 Quand un collègue partage un tableau de bord avec vous, son titre est ajouté à votre liste **Partagé avec moi**. Le tableau de bord est disponible uniquement à partir de **Partagé avec moi** et non à partir d’un espace de travail ou de la page **Applications**.
 
@@ -38,8 +39,8 @@ De nombreuses options permettent d’interagir avec le tableau de bord et son ra
 
 ## <a name="actions-available-from-the-shared-with-me-screen"></a>Actions disponibles à partir de l’écran **Partagé avec moi**
 * Sélectionnez l’icône Étoile pour [marquer un tableau de bord comme favori](service-dashboard-favorite.md).
-* [Supprimer un tableau de bord](service-delete.md)  ![](media/service-shared-with-me/power-bi-delete-icon.png)
-* Certains tableaux de bord peuvent être re-partagés ![](media/service-shared-with-me/power-bi-share-icon-new.png)
+* [Supprimer un tableau de bord](service-delete.md) ![icône de corbeille](media/service-shared-with-me/power-bi-delete-icon.png)
+* Certains tableaux de bord peuvent être repartagés  ![Icône de partage](media/service-shared-with-me/power-bi-share-icon-new.png)
 * De plus, si vos listes de tableaux de bord s’allongent, [utilisez le champ de recherche et le tri pour trouver ce que vous cherchez ](service-navigation-search-filter-sort.md).
   
   > [!NOTE]
@@ -51,7 +52,7 @@ De nombreuses options permettent d’interagir avec le tableau de bord et son ra
 ## <a name="filter-shared-dashboards-by-owner"></a>Filtrer des tableaux de bord partagés par propriétaire
 Le contenu de l’écran **Partagé avec moi** peut être filtré davantage par propriétaire du contenu. Par exemple, si je sélectionne **Amanda**, je vois uniquement le tableau de bord qu’Amanda a partagé avec moi.
 
-![](media/service-shared-with-me/power-bi-owner.png)
+![tableau de bord filtré par propriétaire](media/service-shared-with-me/power-bi-owner.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Power BI – Concepts de base](service-basic-concepts.md)  

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 02/20/2018
 ms.author: maghan
-ms.openlocfilehash: f0a50c0aba1a05c55236192a730c3187cb37c055
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 2cc78b3d2a877e465d5f4bdc67f501b7de87f88e
+ms.sourcegitcommit: 20dd809a2ef8c0d6c6f677baadb5f57f41438cbe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Vue d’ensemble du programme Pack de contenu du service Power BI
 Un pack de contenu est un ensemble de contenu prêt à l’emploi permettant aux utilisateurs d’obtenir immédiatement des analyses depuis une source. Un pack de contenu se concentre généralement sur un scénario d’entreprise spécifique en fournissant des analyses pour un rôle, un domaine ou un flux de travail.
@@ -64,9 +64,9 @@ Les packs de contenu offrent des analyses et données sur un scénario professio
 * Envisagez d’offrir plusieurs packs de contenu pour des scénarios uniques distincts  
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
-**Puis-je créer un pack de contenu de service Power BI pour une application SaaS tierce dont je ne suis pas propriétaire ?**
+**Puis-je créer, en tant que tiers, un pack de contenu de service Power BI pour une application SaaS dont je ne suis pas propriétaire ?**
 
-Non. Nous exigeons actuellement la signature d’un accord de partenariat avec le propriétaire de l’application SaaS avant de publier le pack de contenu dans le service.
+Nous exigeons la signature d’un accord de partenariat avec le propriétaire de l’application SaaS avant de publier un pack de contenu dans le service. En tant que tiers, vous devez organiser la signature de l’accord de partenariat avec le propriétaire de l’application SaaS.
 
 **Je n’ai pas d’API de développeur publique pour mon service. Puis-je quand même créer un pack de contenu de service Power BI qui extrait les données directement depuis le stockage de données ?**
 
@@ -76,9 +76,13 @@ Non. Les packs de contenu de service Power BI nécessitent une API développeur 
 
 Les packs de contenu de service Power BI prennent en charge les API REST ou les flux OData. Power BI peut accepter plusieurs types d’authentification tels que l’authentification de base, OAuth 2.0 et Clé d’API web. Pour plus d’informations, consultez la section sur les exigences techniques dans l’article sur la [création](template-content-pack-authoring.md#dashboard).
 
+**J’ai un pack de contenu publié dans Power BI. Comment puis-je le mettre à jour ?**
+
+Les packs de contenu publiés peuvent être mis à jour une fois par mois. Les demandes de mise à jour envoyées à [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com) avant le dernier jour du mois sont publiées la première semaine du mois suivant.
+
 **J’ai d’autres questions sur les packs de contenu de service. Comment puis-je vous contacter ?**
 
-N’hésitez pas à nous envoyer vos questions par courrier à l’adresse pbiservicesapps@microsoft.com.
+N’hésitez pas à nous envoyer vos questions par e-mail à l’adresse [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Support technique
 Pour de l’aide au cours du développement, veuillez utiliser [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Nous suivons et gérons activement les demandes. Les incidents utilisateur sont rapidement transmis à la bonne équipe.

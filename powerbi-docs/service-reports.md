@@ -15,19 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: baa94483b8174d62d0f7e27d726bb59dbb0b4c10
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+LocalizationGroup: Reports
+ms.openlocfilehash: 664e07b1a772c0eb5d14372061511bc86c671b64
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
 ## <a name="what-is-a-power-bi-report"></a>Qu’est-ce qu’un rapport Power BI ?
 Un ***rapport*** Power BI est un affichage sous plusieurs angles d’un jeu de données, comportant des visualisations de différentes observations et informations.  Un rapport peut comprendre une seule visualisation ou des pages remplies de visualisations. Selon votre fonction principale, vous pouvez être quelqu’un qui *crée* des rapports et/ou qui *consomme* ou utilise des rapports.
 
-![](media/service-reports/reportview.png)
+![page de rapport](media/service-reports/reportview.png)
 
 Ce rapport comporte 3 pages (ou onglets). Nous affichons actuellement la page Store Sales Overview (Vue d’ensemble des ventes du magasin). Cette page comprend 6 visualisations et un titre. Les visualisations peuvent être *épinglées* à des tableaux de bord et, quand une visualisation épinglée est sélectionnée, elle ouvre le rapport à partir duquel elle a été épinglée.
 

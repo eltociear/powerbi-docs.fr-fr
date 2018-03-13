@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 352efd894eb58823c9f506089ee28b7d11b30687
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Ask questions of your data
+ms.openlocfilehash: 80fb45e8f0d181779c699c081006b6610248dc50
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Résoudre les problèmes de Cortana pour Power BI
 Cet article fait partie d’une série. Si cela n’est pas déjà le cas, nous vous recommandons de lire les trois articles suivants.
@@ -95,7 +96,7 @@ Vous rencontrez toujours des problèmes ?  Le moment est venu d’exécuter l�
    Comme un résultat s’affiche, vous savez maintenant que Cortana **est** bien activé dans Power BI. Cela indique que le problème provient de Windows, du paramètre de langue de Cortana, ou du fait que vous avez plus de 100 jeux de données activés pour Cortana.
 
 ### <a name="having-trouble-retrieving-answers-from-a-dashboard"></a>Vous éprouvez des difficultés à extraire des réponses à partir d’un tableau de bord ?
-Vous recherchez un tableau de bord partagé avec vous ?  Ouvrez Power BI > **partagés Partagé avec moi**, puis recherchez le nom du tableau de bord.  Tapez ensuite ce nom dans le champ *Énoncés**.
+Vous recherchez un tableau de bord partagé avec vous ?  Ouvrez Power BI > **partagés Partagé avec moi**, puis recherchez le nom du tableau de bord.  Tapez ensuite ce nom dans le champ **Énoncés**.
 
 ![Ouvrez Partagé avec moi dans Power BI](media/service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
 

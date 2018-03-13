@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9f4d4897558f241d316ee9d7021b4c34660fe9bf
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cdea6474901dad27a4155b80fb605502102201a5
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Renommer pratiquement tout élément dans le service Power BI
 Cet article explique comment renommer un tableau de bord, un rapport, une page de rapport, un classeur, un jeu de données, une application et un espace de travail dans le service Power BI.
@@ -41,20 +41,20 @@ Cet article explique comment renommer un tableau de bord, un rapport, une page d
 | Contenu de **Partagé avec moi** |Non |Non |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Renommer un tableau de bord, un rapport ou un classeur
-1. Démarrez dans un espace de travail, puis sélectionnez l’onglet **Tableaux de bord**, **apports** ou **Classeurs**. Pointez sur l’élément à renommer, puis sélectionnez l’icône Engrenage ![](media/service-rename/powerbi-cog-icon.png). En l’absence d’icône d’engrenage, vous n’avez pas l’autorisation de renommer.
+1. Démarrez dans un espace de travail, puis sélectionnez l’onglet **Tableaux de bord**, **apports** ou **Classeurs**. Pointez sur l’élément à renommer, puis sélectionnez l’icône d’engrenage ![icône d’engrenage](media/service-rename/powerbi-cog-icon.png). En l’absence d’icône d’engrenage, vous n’avez pas l’autorisation de renommer.
    
-   ![](media/service-rename/power-bi-workspace-dashboards.png)
+   ![Espace de travail du service Power BI](media/service-rename/power-bi-workspace-dashboards.png)
 2. Dans la page Paramètres, tapez le nouveau nom, puis sélectionnez **Enregistrer**.
    
-   ![](media/service-rename/power-bi-rename-dashboard2.png)
+   ![Fenêtre Paramètres pour le jeu de données](media/service-rename/power-bi-rename-dashboard2.png)
 
 ## <a name="rename-a-dataset"></a>Renommer un jeu de données
 1. Démarrer dans un espace de travail, puis sélectionnez l’onglet **Jeux de données**.
    
-   ![](media/service-rename/power-bi-ellipses.png)
+   ![Onglet Jeux de données de l’espace de travail](media/service-rename/power-bi-ellipses.png)
 2. Pointez sur l’élément à renommer, sélectionnez les points de suspension (…), puis choisissez **Renommer**.  
    
-      ![](media/service-rename/power-bi-rename-datasets.png)
+      ![sélectionner Renommer](media/service-rename/power-bi-rename-datasets.png)
    
    > [!NOTE]
    > Les options dans la liste déroulante varient.
@@ -62,7 +62,7 @@ Cet article explique comment renommer un tableau de bord, un rapport, une page d
    > 
 3. Dans la page Paramètres, tapez un nouveau nom, puis sélectionnez **Enregistrer**.
    
-     ![](media/service-rename/power-bi-rename.png)
+     ![volet Renommer](media/service-rename/power-bi-rename.png)
 
 ## <a name="rename-an-app-workspace"></a>Renommer un espace de travail d’application
 Toute personne disposant d’autorisations d’administrateur peut renommer un espace de travail d’application.
@@ -70,10 +70,10 @@ Toute personne disposant d’autorisations d’administrateur peut renommer un e
 1. Démarrez dans l’espace de travail que vous souhaitez renommer.
 2. Dans l’angle supérieur droit, sélectionnez les points de suspension (…), puis choisissez **Modifier l’espace de travail**. Si vous ne voyez pas cette option, vous n’avez pas l’autorisation de renommer cet espace de travail. 
    
-    ![](media/service-rename/power-bi-edit-workspace.png)
+    ![sélectionner Modifier l’espace de travail](media/service-rename/power-bi-edit-workspace.png)
 3. Tapez un nouveau nom d’espace de travail, puis sélectionnez **Enregistrer**.
    
-   ![](media/service-rename/power-bi-workspace-rename.png)
+   ![volet Modifier l’espace de travail](media/service-rename/power-bi-workspace-rename.png)
 
 ## <a name="rename-a-page-in-a-report"></a>Renommer une page dans un rapport
 Vous n’aimez pas le nom d’une page dans votre rapport Power BI ?  Un simple clic est nécessaire pour le modifier. Vous ne pouvez pas renommer des pages en [mode Édition de rapport](service-interact-with-a-report-in-editing-view.md).
@@ -81,14 +81,14 @@ Vous n’aimez pas le nom d’une page dans votre rapport Power BI ?  Un simple
 1. Ouvrez le rapport en [mode Édition](service-reading-view-and-editing-view.md).
 2. Repérez les onglets de page de rapport en bas de la fenêtre Power BI.
    
-    ![](media/service-rename/report-page-tabs-new.png)
+    ![rapport avec des onglets mis en surbrillance](media/service-rename/report-page-tabs-new.png)
 3. Ouvrez la page de rapport à renommer en sélectionnant l’onglet correspondant.
 4. Double-cliquez sur le nom sous l’onglet pour le mettre en surbrillance.  
    
-    ![](media/service-rename/hilite-tab.png)
+    ![plan rapproché d’un nom d’onglet](media/service-rename/hilite-tab.png)
 5. Tapez un nouveau nom de page de rapport, puis sélectionnez Entrée.
    
-    ![](media/service-rename/new-name.png)
+    ![taper le nouveau nom de la page](media/service-rename/new-name.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 * Si l’élément à renommer a été partagé avec vous ou fait partie d’un pack de contenu, vous ne voyez pas l’icône Engrenage et n’avez pas accès aux paramètres.

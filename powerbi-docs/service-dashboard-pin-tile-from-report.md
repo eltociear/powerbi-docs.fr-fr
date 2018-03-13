@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 34574cf73d12d91df7a497cf297a9ecda9f5cc57
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 8fbc2ecafb34339a68b4ca5ecd0fa063082644a2
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Épingler une vignette à un tableau de bord Power BI à partir d’un rapport
 ## <a name="pinning-tiles-from-a-report"></a>Épinglage de vignettes à partir d’un rapport
@@ -45,7 +46,7 @@ Regardez Amanda créer un tableau de bord en épinglant des éléments visuels e
 
 1. Pointez sur la visualisation que vous voulez épingler, puis sélectionnez l’icône représentant une épingle ![](media/service-dashboard-pin-tile-from-report/pbi_pintile_small.png). Power BI ouvre l’écran **Épingler au tableau de bord** .
    
-     ![](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
+     ![fenêtre Épingler au tableau de bord](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
 2. Épinglez la vignette à un tableau de bord existant ou à un nouveau tableau de bord.
    
    * Tableau de bord existant : sélectionnez le nom du tableau de bord dans la liste déroulante. Les tableaux de bord qui ont été partagés avec vous n’apparaissent pas dans la liste déroulante.
@@ -55,7 +56,7 @@ Regardez Amanda créer un tableau de bord en épinglant des éléments visuels e
    
    Un message de réussite (dans l’angle supérieur droit) vous indique que la visualisation a été ajoutée, sous forme de vignette, à votre tableau de bord.
    
-   ![](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
+   ![message de réussite](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
 5. Dans le volet de navigation, sélectionnez le tableau de bord avec la nouvelle vignette. Sélectionnez la vignette pour retourner au rapport. Ou, [modifiez l'affichage et le comportement de la vignette](service-dashboard-edit-tile.md).
 
 ## <a name="pin-an-entire-report-page"></a>Épingler une page de rapport entière

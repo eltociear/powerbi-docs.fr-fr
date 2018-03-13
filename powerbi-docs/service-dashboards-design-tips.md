@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 83b813ccdc9ed0ef232f5eede715ad3a795253d0
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 769d669f00c87e6139d8ff2cb8640739d09edf7a
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Conseils pour la conception d’un tableau de bord Power BI
 Maintenant que vous avez créé un tableau de bord et ajouté des vignettes, pensez comment vous pourriez rendre votre tableau de bord aussi élégant que fonctionnel. En général, cela consiste à mettre en évidence les informations les plus importantes et à faire en sorte que votre tableau de bord soit clair et non encombré.
@@ -29,7 +30,7 @@ Maintenant que vous avez créé un tableau de bord et ajouté des vignettes, pen
 Voici quelques astuces.
 
 > [!TIP]
-> De nombreux principes de conception de rapports s’appliquent aussi aux tableaux de bord.  Lisez notre livre blanc [Meilleures pratiques en matière de conception de rapports et de visualisations](power-bi-visualization-best-practices.md).
+> De nombreux principes de conception de rapports s’appliquent aussi aux tableaux de bord.  Lisez notre livre blanc [Bonnes pratiques de conception de rapports et de visualisations](power-bi-visualization-best-practices.md).
 > 
 > 
 
@@ -50,7 +51,7 @@ Affichez votre tableau de bord en mode [plein écran](service-fullscreen-mode.md
 
 ### <a name="make-the-most-important-information-biggest"></a>Affichez les informations les plus importantes en grand format
 Si le texte et les visualisations de votre tableau de bord ont la même taille, vos lecteurs auront du mal à se concentrer sur ce qui est le plus important. Par exemple, les visualisations de carte sont un bon moyen de mettre en évidence un nombre important :  
-![](media/service-dashboards-design-tips/pbi_card.png)
+![Visualisation de carte](media/service-dashboards-design-tips/pbi_card.png)
 
 N’oubliez pas de préciser le contexte.  
 
@@ -73,7 +74,7 @@ La plupart des gens lisent de haut en bas. Placez donc les informations de haut 
 
 Pour plus d’informations sur les visualisations, consultez [Types de visualisations dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
-## <a name="learning-more-about-best-practice-dashboard-design"></a>En savoir plus sur les meilleures pratiques relatives à la création de tableaux de bord
+## <a name="learning-more-about-best-practice-dashboard-design"></a>En savoir plus sur les bonnes pratiques relatives à la création de tableaux de bord
 Pour maîtriser l’art de la conception des tableaux de bord, découvrez les principes de base de la Gestalt concernant la perception visuelle et comment communiquer clairement des informations pratiques en contexte. Heureusement, il existe une multitude de ressources qui sont disséminées dans nos blogs. Voici quelques-uns de nos livres préférés :
 
 * *Information Dashboard Design* par Stephen Few  

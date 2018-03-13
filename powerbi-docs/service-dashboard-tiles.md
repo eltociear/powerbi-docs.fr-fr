@@ -15,19 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: f6ddae485f15a1ebeed2ef1dfa7a1d373f9bb04b
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 3b6d8c31c9ba03b0119635af5f9270a584081139
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Vignettes d’un tableau de bord dans Power BI
 Les tableaux de bord et vignettes de tableau de bord caractérisent le service Power BI et non Power BI Desktop. Si vous ne pouvez pas créer ou épingler des vignettes de tableau de bord dans Power BI Mobile, vous [pouvez les afficher et les partager](mobile-tiles-in-the-mobile-apps.md). Par ailleurs, Power BI Mobile vous permet d’[ajouter des images à votre tableau de bord avec votre application iPhone](mobile-iphone-app-get-started.md).
 
 ## <a name="dashboard-tiles"></a>Vignettes d’un tableau de bord
-![](media/service-dashboard-tiles/power-bi-dashboard.png)
+![tableau de bord Power BI](media/service-dashboard-tiles/power-bi-dashboard.png)
 
 Une vignette est une capture instantanée de vos données, épinglée au tableau de bord. Une vignette peut être créée à partir d’un rapport, d’un jeu de données, d’un tableau de bord, de la zone Q&R, d’Excel et de SSRS (SQL Server Reporting Services) ou d’autres sources.  Cette capture d’écran montre différentes vignettes épinglées à un tableau de bord.
 
@@ -53,34 +54,34 @@ Vous pouvez ajouter (épingler) une vignette à un tableau de bord de plusieurs 
 
 Les vignettes autonomes pour les images, les zones de texte, les vidéos, les données de streaming et le contenu web peuvent être créées directement dans le tableau de bord à l’aide de l’option [Ajouter une vignette](service-dashboard-add-widget.md).
 
-  ![](media/service-dashboard-tiles/add_widgetnew.png)
+  ![icône Ajouter une vignette](media/service-dashboard-tiles/add_widgetnew.png)
 
 ## <a name="interacting-with-tiles-on-a-dashboard"></a>Interaction avec des vignettes dans un tableau de bord
 ### <a name="move-and-resize-a-tile"></a>Déplacement et redimensionnement d'une vignette
-Saisissez une vignette et [déplacez-la dans le tableau de bord](service-dashboard-edit-tile.md). Pointez et sélectionnez la poignée ![](media/service-dashboard-tiles/resize-handle.jpg) pour redimensionner la vignette.
+Saisissez une vignette et [déplacez-la dans le tableau de bord](service-dashboard-edit-tile.md). Pointez sur la poignée ![poignée](media/service-dashboard-tiles/resize-handle.jpg) et sélectionnez-la pour redimensionner la vignette.
 
 ### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Placer le curseur sur une vignette pour modifier son apparence et son comportement
 1. Placez le curseur sur la vignette pour afficher les points de suspension.
    
-    ![](media/service-dashboard-tiles/ellipses_new.png)
+    ![points de suspension de la vignette](media/service-dashboard-tiles/ellipses_new.png)
 2. Sélectionnez les points de suspension pour ouvrir le menu des actions de la vignette.
    
-    ![](media/service-dashboard-tiles/power-bi-tile-menu.png)
+    ![icône des points de suspension](media/service-dashboard-tiles/power-bi-tile-menu.png)
    
     Vous pouvez ici :
    
-   * [Ouvrir le rapport utilisé pour créer cette vignette ](service-reports.md) ![](media/service-dashboard-tiles/chart-icon.jpg)  
+   * [Ouvrir le rapport utilisé pour créer cette vignette ](service-reports.md) ![icône de rapport](media/service-dashboard-tiles/chart-icon.jpg)  
    
-   * [Ouvrir la feuille de calcul utilisée pour créer cette vignette ](service-reports.md) ![](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
+   * [Ouvrir la feuille de calcul utilisée pour créer cette vignette ](service-reports.md) ![icône de feuille de calcul](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [Afficher en mode Focus](service-focus-mode.md) ![](media/service-dashboard-tiles/fullscreen-icon.jpg)  
-     * [Exporter les données utilisées dans la vignette](power-bi-visualization-export-data.md) ![](media/service-dashboard-tiles/export-icon.png)
-     * [Modifier le titre et le sous-titre, ajouter un lien hypertexte, afficher l’heure de la dernière actualisation](service-dashboard-edit-tile.md) ![](media/service-dashboard-tiles/pencil-icon.jpg)
-     * [Exécuter Insights ](service-insights.md)![](media/service-dashboard-tiles/power-bi-insights.png)
-     * [Épingler la vignette sur un autre tableau de bord](service-pin-tile-to-another-dashboard.md)
-       ![](media/service-dashboard-tiles/pin-icon.jpg)
-   * [Supprimer la vignette](service-dashboard-edit-tile.md)
-     ![](media/service-dashboard-tiles/trash-icon.png)
+     * [Afficher en mode Focus](service-focus-mode.md) ![icône de focus](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+     * [Exporter les données utilisées dans la vignette](power-bi-visualization-export-data.md) ![icône Exporter les données](media/service-dashboard-tiles/export-icon.png)
+     * [Modifier le titre et le sous-titre, ajouter un lien hypertexte, afficher l’heure de la dernière actualisation](service-dashboard-edit-tile.md) ![icone Modifier](media/service-dashboard-tiles/pencil-icon.jpg)
+     * [Exécuter Insights ](service-insights.md) ![icône insights](media/service-dashboard-tiles/power-bi-insights.png)
+     * [Épingler la vignette à un autre tableau de bord](service-pin-tile-to-another-dashboard.md)
+       ![icone d’épingle](media/service-dashboard-tiles/pin-icon.jpg)
+     * [Supprimer la vignette](service-dashboard-edit-tile.md)
+     ![icône Supprimer](media/service-dashboard-tiles/trash-icon.png)
 3. Pour fermer le menu d’actions, sélectionnez une zone vide dans la zone de dessin.
 
 ### <a name="select-click-a-tile"></a>Sélectionner (cliquer sur) une vignette

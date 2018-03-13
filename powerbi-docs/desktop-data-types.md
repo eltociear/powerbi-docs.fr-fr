@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 0649a72623fc4ca6a98dfc4f7eeb7d475f5e402d
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Connect to data
+ms.openlocfilehash: d15aeaf90e748b9ba14a0160042d2db4f36d3150
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -124,7 +125,7 @@ Par exemple, si une date est utilisée dans une opération de soustraction avec 
 > 
 > 
 
-**Multiplication (*)**
+**Multiplication(*)**
 
 | Opérateur(*) | ENTIER | DEVISE | RÉEL | Date/Heure |
 | --- | --- | --- | --- | --- |

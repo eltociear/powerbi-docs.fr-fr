@@ -15,18 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: 6948f0e333ba1136f6fda8fa0f62b146cefdd710
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Reports
+ms.openlocfilehash: 6eca438c9e12d99f925aef864ed9b74e16ef30b7
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Modes Lecture et Édition dans les rapports du service Power BI
 Dans le service Power BI (mais pas dans Power BI Desktop), il existe deux modes d’utilisation et d’affichage des rapports : le mode Lecture et le mode Édition. Le mode Lecture est disponible pour tous les utilisateurs et il est spécialement conçu pour les *consommateurs* de données tandis que le mode Édition est disponible uniquement pour les propriétaires et les *créateurs* de rapports. 
 
-![](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
+![illustration des créateurs de rapports et consommateurs de rapports](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
 
 ## <a name="report-reading-view"></a>Mode Lecture des rapports
 
@@ -83,17 +84,17 @@ N’oubliez pas que seuls les propriétaires et les créateurs de rapports sont 
 
 1. Par défaut, un rapport s’ouvre généralement en mode Lecture. Vous êtes en mode Lecture si vous voyez une option **Modifier le rapport**. Si l’option **Modifier le rapport** est grisée, vous n’avez pas d’autorisations pour ouvrir le rapport en mode Édition.
 
-   ![](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
+   ![option Modifier le rapport grisée](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
 
 2. Si l’option **Modifier le rapport** n’est pas grisée, sélectionnez-la pour ouvrir le rapport en mode Édition. 
    
-   ![](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
+   ![option Modifier le rapport](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
    
    Le rapport est maintenant en mode Édition et utilise les mêmes [paramètres d’affichage](power-bi-report-display-settings.md) que ceux utilisés en mode Lecture.
 
 2. Pour revenir au **mode Lecture**, sélectionnez le mode Lecture dans la barre de navigation supérieure.
    
-    ![](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
+    ![option Mode Lecture](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
 
 
 

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: 6cb16aadfcae3d68beea71bb2f5a6befe68e984e
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: c73502381e99bf64a8e342ca46ee1bb7089b6825
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-sql-sentry-with-power-bi"></a>Se connecter à SQL Sentry avec Power BI
 L’analyse de vos données de performances collectées par SQL Sentry est facile avec Power BI. Power BI récupère vos données, puis génère un tableau de bord par défaut et des rapports associés à partir de ces données.
@@ -84,7 +85,7 @@ Les données suivantes sont disponibles à partir de SQL Sentry dans Power BI 
 <a name="FindingParams"></a>
 
 ## <a name="finding-parameters"></a>Recherche de paramètres
-Vous pouvez trouver l’**ID de base de données** en vous connectant à <https://cloud.sqlsentry.com> dans une nouvelle fenêtre de navigateur web.  L’ **ID de base de données** est répertorié dans la page de présentation principale :
+Pour rechercher l’**ID de base de données**, connectez-vous à <https://cloud.sqlsentry.com> dans une nouvelle fenêtre de navigateur web.  L’ **ID de base de données** est répertorié dans la page de présentation principale :
 
     ![](media/service-connect-to-sql-sentry/database2.png)
 
@@ -96,7 +97,7 @@ L’ **ID de base de données** s’affiche également dans l’écran Détails 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Si les données de certaines de vos applications ne s’affichent pas dans Power BI, assurez-vous que vous utilisez l’ID de base de données correct et que vous êtes en mesure d’afficher les données. 
 
-Si vous n’êtes pas le propriétaire de la base de données SQL Sentry synchronisée avec <https://cloud.sqlsentry.com>, contactez votre administrateur pour vérifier que vous disposez des droits nécessaires pour consulter les données collectées.
+Si vous n’êtes pas le propriétaire de la base de données SQL Sentry synchronisée avec <https://cloud.sqlsentry.com>, veuillez contacter l’administrateur afin de vous assurer que vous disposez des droits requis pour afficher les données collectées.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Prise en main de Power BI](service-get-started.md)

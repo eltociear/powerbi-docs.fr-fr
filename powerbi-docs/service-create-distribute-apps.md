@@ -14,13 +14,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/06/2018
+ms.date: 02/22/2018
 ms.author: maggies
-ms.openlocfilehash: 23c52f7eb66e4e7b0683a2392f0fc60ad76ea243
-ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
+LocalizationGroup: Share your work
+ms.openlocfilehash: d711e2276f2ac170ed54152d54c023261ca9c0bc
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -94,7 +95,7 @@ Par défaut, Power BI crée un petit cercle de couleur pour votre application, c
      ![Image personnalisée](media/service-create-distribute-apps/power-bi-apps-image.png)
 
 ## <a name="publish-your-app"></a>Publier votre application
-Lorsque les tableaux de bord et rapports dans votre espace de travail d’application sont prêts, publiez-les en tant qu’application. N’oubliez pas que vous n’avez pas à publier tous les rapports et tableaux de bord dans l’espace de travail. Vous pouvez publier uniquement ceux qui sont prêts. 
+Lorsque les tableaux de bord et rapports dans votre espace de travail d’application sont prêts, publiez-les en tant qu’application. N’oubliez pas que vous n’avez pas à publier tous les rapports et tableaux de bord dans l’espace de travail. Vous pouvez publier uniquement ceux qui sont prêts.
 
 1. Dans l’affichage liste de l’espace de travail, choisissez les tableaux de bord et rapports à inclure dans l’application.
 
@@ -104,23 +105,23 @@ Lorsque les tableaux de bord et rapports dans votre espace de travail d’applic
 
      ![Avertissement concernant un tableau de bord associé](media/service-create-distribute-apps/power-bi-apps-report-warning.png)
 
-1. En haut à droite, sélectionnez le bouton **Publier l’application** pour démarrer le processus de partage de tout le contenu de cet espace de travail.
+2. En haut à droite, sélectionnez le bouton **Publier l’application** pour démarrer le processus de partage de tout le contenu de cet espace de travail.
    
      ![Publier l’application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
-2. Dans **Détails**, remplissez la description pour aider les utilisateurs à trouver l’application. Vous pouvez définir une couleur d’arrière-plan pour personnaliser l’application.
+3. Dans **Détails**, remplissez la description pour aider les utilisateurs à trouver l’application. Vous pouvez définir une couleur d’arrière-plan pour personnaliser l’application.
    
      ![Détails de l’application](media/service-create-distribute-apps/power-bi-apps-details.png)
 
-3. Dans **Contenu** apparaît le contenu qui sera publié avec l’application, c’est-à-dire tout ce que vous avez sélectionné dans cet espace de travail. Vous pouvez également définir la page d’accueil de l’application, c’est-à-dire le tableau de bord ou le rapport que les utilisateurs voient en premier quand ils accèdent à celle-ci. Vous pouvez choisir **Aucun**. Dans ce cas, les utilisateurs accèdent à une liste répertoriant tout le contenu de l’application. 
+4. Dans **Contenu** apparaît le contenu qui sera publié avec l’application, c’est-à-dire tout ce que vous avez sélectionné dans cet espace de travail. Vous pouvez également définir la page d’accueil de l’application, c’est-à-dire le tableau de bord ou le rapport que les utilisateurs voient en premier quand ils accèdent à celle-ci. Vous pouvez choisir **Aucun**. Dans ce cas, les utilisateurs accèdent à une liste répertoriant tout le contenu de l’application. 
    
      ![Contenu de l’application](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. Dans **Accès**, choisissez qui a accès à l’application : tous les membres de l’organisation, des personnes spécifiques ou des groupes de sécurité Active Directory. Si vous disposez des autorisations nécessaires, vous pouvez installer l’application automatiquement pour les destinataires.
+5. Dans **Accès**, choisissez qui a accès à l’application : tous les membres de l’organisation, des personnes spécifiques ou des groupes de sécurité Active Directory. Si vous disposez des autorisations nécessaires, vous pouvez installer l’application automatiquement pour les destinataires. Vous pouvez activer ce paramètre dans le [portail d’administration Power BI](#how-to-enable-pushing-apps). Vous pouvez découvrir plus d’informations sur [les applications poussées](#how-to-enable-pushing-apps).
 
     ![Accès à l’application](media/service-create-distribute-apps/power-bi-apps-access.png)
 
-5. Lorsque vous sélectionnez **Terminer**, un message confirme que l’application est prête pour publication. Dans la boîte de dialogue confirmant le succès de la création de l’application, vous pouvez copier l’URL qui est le lien direct vers l’application, puis envoyer ce lien aux personnes avec lesquelles vous voulez partager celle-ci.
+6. Lorsque vous sélectionnez **Terminer**, un message confirme que l’application est prête pour publication. Dans la boîte de dialogue confirmant le succès de la création de l’application, vous pouvez copier l’URL qui est le lien direct vers l’application, puis envoyer ce lien aux personnes avec lesquelles vous voulez partager celle-ci.
    
      ![Achèvement de l’application](media/service-create-distribute-apps/power-bi-apps-success.png)
 
@@ -138,7 +139,7 @@ Une fois votre application publiée, il se peut que vous souhaitiez la modifier 
    
      L’espace de travail de l’application étant votre zone intermédiaire, vos modifications ne sont pas envoyées en temps réel à l’application tant que vous de republiez pas celle-ci. Cela vous permet d’apporter des modifications sans affecter les applications publiées.  
  
-1. Revenez à la liste de contenu de l’espace de travail de l’application, puis sélectionnez **Mettre à jour l’application**.
+3. Revenez à la liste de contenu de l’espace de travail de l’application, puis sélectionnez **Mettre à jour l’application**.
    
      ![Mettre à jour le bouton d’application](media/service-create-distribute-apps/power-bi-app-update-button.png)
 
@@ -147,6 +148,32 @@ Une fois votre application publiée, il se peut que vous souhaitiez la modifier 
      ![Mettre à jour le bouton d’application](media/service-create-distribute-apps/power-bi-app-update-complete.png)
 
 Les personnes pour lesquelles vous avez publié l’application voient automatiquement la version mise à jour de celle-ci. 
+
+# <a name="automatically-install-apps-for-end-users"></a>Installer automatiquement des applications pour les utilisateurs finaux
+Vous pouvez installer automatiquement des applications pour les utilisateurs finaux afin de faciliter la distribution des applications appropriées aux bonnes personnes ou groupes.
+
+Les applications fournissent les données dont vos utilisateurs finaux ont besoin pour effectuer leurs tâches. Vous pouvez maintenant installer automatiquement ces applications à partir de la liste de contenu Applications au lieu de les rechercher dans Microsoft AppSource ou de suivre un lien d’installation. De cette façon, vous pouvez déployer du contenu Power BI standard plus facilement pour vos utilisateurs.
+
+## <a name="how-to-install-an-app-automatically-for-end-users"></a>Comment installer une application automatiquement pour les utilisateurs finaux
+Une fois que l’administrateur a activé la fonctionnalité, les éditeurs d’application ont une nouvelle option à leur disposition pour **installer l’application automatiquement**. Quand la case est ***cochée*** et que l’éditeur de l’application sélectionne **Terminer** (ou **Mettre à jour l’application** pour les applications existantes), l’application est poussée pour tous les utilisateurs ou groupes définis dans la section **Autorisations** de l’application, sous l’onglet **Accès**.
+
+![Autorisation de pousser les applications](media/service-create-distribute-apps/power-bi-apps-access.png)
+
+## <a name="how-users-get-the-apps-that-were-pushed-to-them"></a>Comment les utilisateurs obtiennent les applications qui ont été poussées
+Dès que vous poussez une application, elle s’affiche automatiquement dans la liste Applications. Vous pouvez gérer les applications qui doivent être disponibles pour un rôle d’utilisateur ou de travail dans l’organisation.
+
+![Autorisation de pousser les applications](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
+
+### <a name="considerations-for-automatically-installing-apps"></a>Considérations sur l’installation automatique des applications
+Voici quelques points à garder à l’esprit quand vous poussez des applications pour les utilisateurs finaux :
+
+* L’installation automatique d’une application pour les utilisateurs peut prendre un certain temps. La plupart des applications s’installent immédiatement, mais si vous les poussez, cela peut prendre du temps.  Tout dépend du nombre d’éléments dans l’application et du nombre de personnes qui y ont accès. Nous vous recommandons de pousser les applications pendant les heures creuses et suffisamment avant que l’utilisateur en ait besoin. Vérifiez auprès de plusieurs utilisateurs avant d’envoyer une communication générale sur la disponibilité des applications.
+
+* Actualisez votre navigateur. Pour que l’application poussée apparaisse dans la liste Applications, l’utilisateur doit peut-être actualiser son navigateur, ou le fermer et le rouvrir.
+
+* Si l’utilisateur ne voit pas immédiatement l’application dans la liste Applications, il doit actualiser son navigateur, ou le fermer et le rouvrir.
+
+* Évitez de surcharger les utilisateurs. Ne poussez pas trop d’applications pour laisser la possibilité aux utilisateurs de se rendre compte de l’utilité des applications préinstallées. Il est préférable de contrôler qui peut pousser des applications pour les utilisateurs finaux afin de coordonner la planification. Vous pouvez mettre en place dans votre organisation un point de contact d’obtention des applications poussées pour les utilisateurs finaux.
 
 ## <a name="unpublish-an-app"></a>Annuler la publication d’une application
 Tout membre d’un espace de travail d’application peut annuler la publication de l’application.
@@ -167,7 +194,7 @@ Avec cette publication, nous avons renommé tous les espaces de travail de group
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>En quoi les applications diffèrent-elles des packs de contenu d’organisation ?
 Les applications constituent une évolution et une simplification des packs de contenu, et présentent quelques différences majeures. 
 
-* Quand des utilisateurs professionnels installent un pack de contenu, celui-ci perd son identité groupée : il s’agit simplement d’une liste de tableaux de bord et de rapports entremêlés avec d’autres tableaux de bord et rapports. En revanche, les applications conservent leur regroupement et leur identité même après installation. Les utilisateurs peuvent ainsi continuer à y accéder facilement au fil du temps.  
+* Quand des utilisateurs professionnels installent un pack de contenu, celui-ci perd son identité groupée : il s’agit simplement d’une liste de tableaux de bord et de rapports entremêlés avec d’autres tableaux de bord et rapports. En revanche, les applications conservent leur regroupement et leur identité même après installation. Les utilisateurs peuvent ainsi continuer à y accéder facilement au fil du temps.
 * Vous pouvez créer plusieurs packs de contenu à partir de tout espace de travail, mais une application a une relation un-à-un avec son espace de travail. Nous pensons que cela rend les applications plus faciles à comprendre et à gérer au fil du temps. Pour plus d’informations sur la façon dont nous prévoyons d’améliorer cet aspect, voir la section de feuille de route du blog Power BI. 
 * Étant donné que nous prévoyons de déconseiller progressivement les packs de contenu d’organisation, nous vous recommandons de commencer à créer des applications dès à présent.  
 
@@ -179,5 +206,5 @@ Avec une application, vous pouvez publier une version en lecture seule de l’es
 ## <a name="next-steps"></a>Étapes suivantes
 * [Installer et utiliser des applications dans Power BI](service-install-use-apps.md)
 * [Applications Power BI pour des services externes](service-connect-to-services.md)
+* [Portail d’administration Power BI](https://docs.microsoft.com/en-us/power-bi/service-admin-portal)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-

@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/21/2017
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 2a4134e1a06933927bd2c5453cd8e7a79394c384
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 187ca632ad947e5cb657f3a5d19e1d62262259b4
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Alertes de données dans le service Power BI
 Définissez des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà des limites que vous définissez. 
@@ -31,7 +32,7 @@ Des alertes ne peuvent être configurées que sur des vignettes épinglées à p
 
 Vous seul pouvez voir les alertes que vous définissez, même si vous partagez votre tableau de bord. Les alertes de données sont entièrement synchronisées entre plateformes. Définissez et affichez les alertes de données [dans les applications mobiles Power BI](mobile-set-data-alerts-in-the-mobile-apps.md) et dans le service Power BI. Elles ne sont pas disponibles dans Power BI Desktop. Les alertes peuvent même être [automatisées et intégrées avec Microsoft Flow](https://flow.microsoft.com) - [Essayez](service-flow-integration.md).
 
-![](media/service-set-data-alerts/powerbi-alert-types-new.png)
+![vignettes](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
 > [!WARNING]
 > Les notifications d’alerte pilotées par les données fournissent des informations sur vos données. Si vous affichez vos données Power BI sur un appareil mobile et que celui-ci est volé, nous vous recommandons d’utiliser le service Power BI pour désactiver toutes les règles d’alerte pilotées par les données.
@@ -47,15 +48,15 @@ Cet exemple utilise une vignette de carte de l’exemple de tableau Retail Analy
 
 1. Commencez sur un tableau de bord. Dans une jauge de tableau de bord, un indicateur de performance clé ou une vignette de carte, sélectionnez les points de suspension.
    
-   ![](media/service-set-data-alerts/powerbi-card.png)
-2. Sélectionnez l’icône représentant une cloche ![](media/service-set-data-alerts/power-bi-bell-icon.png) pour ajouter une ou plusieurs alertes pour **Total stores (Nombre total de magasins)**.
+   ![Vignette Total Stores](media/service-set-data-alerts/powerbi-card.png)
+2. Sélectionnez l’icône en forme de cloche ![icône d’alerte](media/service-set-data-alerts/power-bi-bell-icon.png) pour ajouter une ou plusieurs alertes pour **Total stores** (Nombre total de magasins).
    
 1. Pour commencer, sélectionnez **+ Ajouter une règle d’alerte**, vérifiez que le curseur est défini sur **Activé** et donnez un titre à l’alerte. Les titres vous aident à reconnaître facilement vos alertes.
    
-   ![](media/service-set-data-alerts/powerbi-alert-title.png)
+   ![Fenêtre Gérer les alertes](media/service-set-data-alerts/powerbi-alert-title.png)
 4. Faites défiler vers le bas, puis entrez les détails de l’alerte.  Dans cet exemple, nous allons créer une alerte qui nous avertit une fois par jour si le nombre total de magasins est supérieur à 100. Les alertes s’affichent dans notre centre de notification. Nous allons également demander à Power BI de nous envoyer un courrier électronique.
    
-   ![](media/service-set-data-alerts/power-bi-set-alert-details.png)
+   ![Fenêtre Gérer les alertes, Seuil défini](media/service-set-data-alerts/power-bi-set-alert-details.png)
 5. Sélectionnez **Enregistrer**.
 
 ## <a name="receiving-alerts"></a>Recevoir des alertes
@@ -65,13 +66,13 @@ Ensuite, Power BI envoie une alerte à votre centre de notification et éventue
 
 1. Si vous avez défini l’alerte de façon à recevoir un courrier électronique, vous recevez un message semblable à celui-ci dans votre boîte de réception.
    
-   ![](media/service-set-data-alerts/powerbi-alerts-email.png)
+   ![E-mail d’alerte](media/service-set-data-alerts/powerbi-alerts-email.png)
 2. Power BI ajoute un message à votre **centre de notification** et ajoute une nouvelle icône d’alerte à la vignette applicable.
    
-   ![](media/service-set-data-alerts/powerbi-alert-notifications.png)
+   ![icône Notification dans le service Power BI](media/service-set-data-alerts/powerbi-alert-notifications.png)
 3. Ouvrez le centre de notification pour afficher les détails de l’alerte.
    
-    ![](media/service-set-data-alerts/powerbi-alert-notfication.png)
+    ![lire l’alerte](media/service-set-data-alerts/powerbi-alert-notfication.png)
    
    > [!NOTE]
    > Les alertes fonctionnent uniquement sur les données actualisées Lorsque les données sont actualisées, Power BI vérifie si une alerte est définie pour celles-ci. Si les données ont atteint un seuil d’alerte, une alerte est déclenchée.
@@ -82,23 +83,23 @@ Ensuite, Power BI envoie une alerte à votre centre de notification et éventue
 Il existe de nombreuses façons de gérer vos alertes : à partir de la vignette de tableau de bord elle-même, dans le menu Paramètres de Power BI et sur une vignette spécifique dans l’[application mobile Power BI sur iPhone](mobile-set-data-alerts-in-the-mobile-apps.md) ou dans l’[application mobile Power BI pour Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### <a name="from-the-tile-itself"></a>À partir de la vignette elle-même
-1. Si vous devez modifier ou supprimer une alerte pour une vignette, rouvrez la fenêtre **Gérer les alertes** en sélectionnant l’icône représentant une cloche ![](media/service-set-data-alerts/power-bi-bell-icon.png). Toutes les alertes que vous avez définies pour cette vignette sont affichées.
+1. Si vous devez modifier ou supprimer une alerte pour une vignette, rouvrez la fenêtre **Gérer les alertes** en sélectionnant l’icône en forme de cloche ![icône d’alerte](media/service-set-data-alerts/power-bi-bell-icon.png). Toutes les alertes que vous avez définies pour cette vignette sont affichées.
    
-    ![](media/service-set-data-alerts/powerbi-see-alerts.png).
+    ![Fenêtre Gérer les alertes](media/service-set-data-alerts/powerbi-see-alerts.png).
 2. Pour modifier une alerte, sélectionnez la flèche à gauche du nom de l’alerte.
    
-    ![](media/service-set-data-alerts/powerbi-see-alerts-arrow.png).
+    ![flèche à côté du nom de l’alerte](media/service-set-data-alerts/powerbi-see-alerts-arrow.png).
 3. Pour supprimer une alerte, sélectionnez la poubelle à droite du nom de l’alerte.
    
-      ![](media/service-set-data-alerts/powerbi-see-alerts-delete.png)
+      ![icône de corbeille sélectionnée](media/service-set-data-alerts/powerbi-see-alerts-delete.png)
 
 ### <a name="from-the-power-bi-settings-menu"></a>Dans le menu Paramètres de Power BI
 1. Sélectionnez l’icône en forme d’engrenage dans la barre de menus de Power BI.
    
-    ![](media/service-set-data-alerts/powerbi-gear-icon.png).
+    ![icône d’engrenage](media/service-set-data-alerts/powerbi-gear-icon.png).
 2. Sous **Paramètres**, sélectionnez **Alertes**.
    
-    ![](media/service-set-data-alerts/powerbi-alert-settings.png)
+    ![onglet Alertes de la fenêtre Paramètres](media/service-set-data-alerts/powerbi-alert-settings.png)
 3. À ce stade, vous pouvez activer et désactiver les alertes, ouvrir la fenêtre **Gérer les alertes** pour apporter des modifications ou supprimer l’alerte.
 
 ## <a name="tips-and-troubleshooting"></a>Conseils et résolution des problèmes

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/30/2017
 ms.author: maghan
-ms.openlocfilehash: 6019cde4864087c75b22663ff5461790d4e24961
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Administration
+ms.openlocfilehash: c4fa2e0e2927f8050648884e1833adf618a7d4f5
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="purchasing-power-bi-pro"></a>Achat de Power BI Pro
 Power BI Pro s’adresse aux utilisateurs qui publient des rapports, partagent des tableaux de bord, collaborent avec des collègues dans des espaces de travail et sont impliqués dans d’autres activités connexes, par exemple :
@@ -63,7 +64,7 @@ Vous pouvez ensuite sélectionner **Démarrer l’évaluation**.
 > Avec la disponibilité de Power BI Premium et les modifications apportées à l’offre Power BI gratuite le 1 juin 2017, vous pouvez peut-être bénéficier de la version d’essai Pro prolongée. Pour plus d’informations, consultez [Activation de la version d’essai Pro prolongée](service-extended-pro-trial.md).
 
 ### <a name="what-this-looks-like-within-the-service"></a>Aperçu au sein du service
-Une fois dans le service, vous pouvez vous assurer de disposer d’un compte pour la version d’évaluation en accédant à l’icône d’**engrenage* et en sélectionnant **Gérer le stockage personnel**.
+Une fois dans le service, vous pouvez vérifier que vous avez un compte professionnel d’essai gratuit en accédant à l’icône **d’engrenage** et en sélectionnant **Gérer le stockage personnel**.
 
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro-trial3.png)
 

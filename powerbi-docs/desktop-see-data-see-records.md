@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/22/2018
 ms.author: davidi
-ms.openlocfilehash: a61a5d46c2f663ff7e8388a862f5649487504092
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Learn more
+ms.openlocfilehash: c44a5140fe40217aac170abb0b351197803b6299
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Utiliser Afficher les données et Afficher les enregistrements dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez explorer les détails de n’importe quel visuel et afficher une représentation textuelle des données ou éléments de données du visuel sélectionné. Ces fonctionnalités sont parfois appelées *clic*, *extraction* ou *extraction des détails*.
@@ -69,6 +70,9 @@ Vous pouvez également vous concentrer sur un élément de données d’un visue
 Une fois que **Afficher les enregistrements** est sélectionné, **Power BI Desktop** se concentre sur cet élément de données et consacre la zone du canevas à l’affichage des données de cet élément, comme indiqué dans l’image suivante.
 
 ![](media/desktop-see-data-see-records/see-data-see-records_8.png)
+
+> [!NOTE]
+> Vous ne pouvez pas enregistrer dans un rapport les changements des données affichées (ou modifiées par les utilisateurs) dans la vue **Afficher les enregistrements**.
 
 Pour revenir au rapport, sélectionnez le bouton **Retour au rapport** dans l’angle supérieur gauche du canevas.
 

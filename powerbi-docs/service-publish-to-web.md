@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/27/2017
 ms.author: maghan
-ms.openlocfilehash: 890c748c7e7502394fd2e6e024521e99082a1c77
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Share your work
+ms.openlocfilehash: ee1b403eaa8456266b452ff34814dc4f4059d9a6
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -135,7 +136,7 @@ Les éléments visuels personnalisés sont pris en charge par la fonctionnalité
 La fonctionnalité **Publier sur le web** est prise en charge pour la majeure partie des sources de données et rapports du service Power BI. Toutefois, les éléments suivants ne sont ni pris en charge ni disponibles avec la fonctionnalité Publier sur le web pour le moment :
 
 1. Rapports qui utilisent la sécurité au niveau des lignes
-2. Rapports qui utilisent les modèles tabulaires Analysis Services Tabular hébergés localement
+2. Rapports qui utilisent une source de données de connexion active, notamment une source de données tabulaire Analysis Services hébergée localement, une source de données multidimensionnelle Analysis Services, Azure Analysis Services et le service Power BI.
 3. Rapports partagés directement ou via un pack de contenu d’organisation
 4. Rapports d’un groupe dans lequel vous n’êtes pas un membre doté d’autorisations de modification
 5. Les éléments visuels R ne sont pas actuellement pris en charge dans les rapports Publier sur le web.

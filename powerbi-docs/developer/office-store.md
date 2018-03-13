@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/5/2017
 ms.author: maghan
-ms.openlocfilehash: 03be98e9aa2bd4d91357cc00208d82bd0116f69c
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 761f6a85d0f975f4178adfce830a6c73578aec73
+ms.sourcegitcommit: 20dd809a2ef8c0d6c6f677baadb5f57f41438cbe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publier des visuels personnalisés dans AppSource
 Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser. Office
@@ -86,7 +86,7 @@ Suivez les étapes ci-dessous pour terminer la soumission.
    * *Submission title (Titre de la soumission) :* indiquez la façon dont votre soumission sera nommée dans le centre de développement.
    * *Version :* votre numéro de version est rempli automatiquement à partir du package d’application du complément.
    * *Date de sortie :* sélectionnez la date de publication de votre application dans l’Office Store. Si vous choisissez une date ultérieure, votre application n’est pas disponible dans le Store jusqu’à cette date.
-   * *Catégorie :* la première catégorie est automatiquement remplie comme suit : « Visualisation de données + BI ». C’est la manière dont tous les visuels personnalisés Power BI sont marqués. Vous pouvez fournir jusqu’à 2 catégories supplémentaires afin que les utilisateurs trouvent facilement votre visuel.
+   * *Catégorie :* la première catégorie est automatiquement remplie comme suit : « Visualisation de données + BI ». C’est la façon dont tous les visuels Power BI personnalisés sont marqués. Vous pouvez fournir jusqu’à 2 catégories supplémentaires pour que les utilisateurs puissent facilement rechercher votre visuel
    * *Remarques relatives au test (facultatives) :* cette option est utile si vous souhaitez fournir des instructions pour les testeurs Microsoft
    * *Mon application fait appel à des solutions de chiffrement, prend en charge, contient ou utilise ce type de technologie :* gardez cette option désélectionnée.
    * *Ajouter ce complément au catalogue des compléments Office sur iPad :* gardez cette option désélectionnée.
@@ -121,7 +121,7 @@ Suivez les étapes ci-dessous pour terminer la soumission.
     > Si vous sélectionnez une autre option ou que vous avez inséré du contenu de type Achat dans l’application dans le visuel soumis, la soumission est rejetée.
     > 
     > 
-17. Vous pouvez maintenant sélectionner « Enregistrer comme brouillon » et soumettre le visuel ultérieurement, ou choisir **Soumettre pour approbation** pour soumettre le visuel personnalisé à l’Office Store.
+17. Vous pouvez maintenant sélectionner **Enregistrer comme brouillon** et envoyer le visuel plus tard, ou choisir **Envoyer pour approbation** pour envoyer le visuel personnalisé à l’Office Store.
 
 ## <a name="tracking-submission-status-and-usage"></a>Suivi de l’utilisation et de l’état de la soumission
 Vous pouvez passer en revue les [stratégies de validation](https://dev.office.com/officestore/docs/validation-policies#13-power-bi-custom-visuals).

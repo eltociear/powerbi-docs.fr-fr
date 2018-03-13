@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 2d8ed3c30d289646504071daca098df1f41f6aab
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 6b5467456321b171116cf984ec276c3694b4030b
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Nuages de points et graphiques en bulles dans Power BI (didacticiel)
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Ces derniers peuvent être distribués uniformément ou non sur l’axe horizontal, en fonction des données.
@@ -56,44 +57,55 @@ Regardez cette vidéo dans laquelle Will crée un graphique à nuages de points,
 
 Ces instructions s’appliquent à l’exemple Analyse de la vente au détail. Pour effectuer la procédure, [téléchargez l’exemple](sample-datasets.md) pour le service Power BI (app.powerbi.com) ou Power BI Desktop.   
 
-1. Commencez sur une [page de rapport vide](power-bi-report-add-page.md), puis sélectionnez les champs **Sales (Ventes)** \> **Sales Per Sq Ft (Ventes par mètre carré)** et **Sales (Ventes)** > **Total Sales Variance % (Pourcentage d’écart des ventes totales)**. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](service-interact-with-a-report-in-editing-view.md).
+1. Sélectionnez l’icône Plus jaune pour créer une [page de rapport vide ](power-bi-report-add-page.md).
  
-2. Dans le volet Champs, sélectionnez **District > District**.
-   
+2. Dans le volet Champs, sélectionnez les champs suivants :
+   - **Ventes** > **Ventes par mètre carré**
+   - **Ventes** > **% d’écart des ventes totales**
+   - **District** > **District**
+
     ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
-4. Effectuez la conversion en nuage de points. Dans le volet Visualisation, sélectionnez l’icône de nuage de points.
+
+    Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](service-interact-with-a-report-in-editing-view.md).
+
+3. Effectuez la conversion en nuage de points. Dans le volet Visualisation, sélectionnez l’icône de nuage de points.
+
    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
-5. Faites glisser **District** depuis **Détails** vers **Légende**.
-   
+
+4. Faites glisser **District** depuis **Détails** vers **Légende**. Cette opération affiche un nuage de points qui trace le **% d’écart des ventes totales** sur l’axe Y et les **Ventes par mètre carré** sur l’axe X. Les couleurs de points de données représentent des districts :
+
     ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
 
-Nous disposons désormais d’un nuage de points qui trace le pourcentage d’écart des ventes totales sur l’axe Y et les ventes par mètre carré sur l’axe X.  Les couleurs de points de données représentent des districts.  Ajoutons à présent une troisième dimension.
+Ajoutons à présent une troisième dimension.
 
 ## <a name="create-a-bubble-chart"></a>Créer un graphique en bulles
-1. Dans le volet Champs, faites glisser **Ventes** > **Ventes de cette année** > **Valeur** vers la zone **Taille**. 
+
+1. Dans le volet **Champs**, faites glisser **Ventes** > **Ventes de cette année** > **Valeur** vers la zone **Taille**. Les points de données se développent en volumes proportionnels à la valeur des ventes.
    
    ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
-2. Pointez sur une bulle.  La taille de la bulle reflète la valeur de la zone **Ventes de cette année**.
+
+2. Pointez sur une bulle. La taille de la bulle reflète la valeur de la zone **Ventes de cette année**.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
-3. Si vous le souhaitez, [mettez en forme les couleurs, étiquettes, titres, arrière-plan, etc. de la visualisation](service-getting-started-with-color-formatting-and-axis-properties.md).
+
+3. Pour définir le nombre de points de données à afficher dans votre graphique à bulles, dans la section **Format** du volet **Visualisations**, développez la carte **Général** et ajustez le **Volume de données**. Vous pouvez définir le volume maximal de données sur n’importe quel nombre jusqu’à 10 000 (la valeur par défaut est 3 500).
+
+    ![Volume de données](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
+
+   > [!NOTE]
+   > Étant donné que plus le nombre de points de données est important, plus le temps de chargement est long, si vous choisissez de publier des rapports avec des limites à l’extrémité supérieure de l’échelle, testez vos rapports sur le web et les appareils mobiles pour vérifier que les performances correspondent aux attentes de vos utilisateurs. Notez que pour des nombres plus élevés de points de données, vous devez tester les résultats sur différents facteurs de forme pour obtenir de bonnes performances.
+
+4. Vous pouvez [mettre en forme les couleurs, étiquettes, titres, arrière-plan, etc.](service-getting-started-with-color-formatting-and-axis-properties.md) de la visualisation. Pour [améliorer l’accessibilité](desktop-accessibility.md), ajoutez des formes de marqueur à chaque ligne. L’utilisation d’une forme de marqueur différente pour chaque ligne permet aux lecteurs du rapport de différencier plus facilement les lignes (ou aires) les unes des autres. Pour sélectionner la forme de marqueur, développez la carte **Formes**, puis sélectionnez une forme de marqueur.
+
+      ![Forme de marqueur](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
    Vous pouvez également modifier la forme de marqueur et la définir sur un losange, triangle ou carré :
 
    ![Marqueur Carré](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
-4. Si vous le souhaitez, pour définir le nombre de points de données à afficher dans votre graphique à bulles, dans la section **Format** du volet **Visualisations**, développez la carte **Général** et ajustez le **Volume de données**. La valeur par défaut est 3 500. 
- 
-    ![Volume de données](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
-
-   > [!NOTE]
-   > Étant donné que davantage de points de données peut entraîner un temps de chargement plus long, si vous choisissez de publier des rapports avec des limites à l’extrémité supérieure de l’échelle, veillez à tester vos rapports sur le web et les appareils mobiles pour vous assurer que les performances correspondent aux attentes de vos utilisateurs.
-
-5.   Si vous le souhaitez, pour sélectionner la forme de marqueur, développez la carte **Formes**, puis sélectionnez une forme de marqueur.
-
-      ![Forme de marqueur](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+
 ### <a name="your-scatter-chart-has-only-one-data-point"></a>**Votre nuage de points a un seul point de données**
 Votre nuage de points a-t-il uniquement un point de données qui regroupe toutes les valeurs sur les axes X et Y ?  Ou regroupe-t-il toutes les valeurs le long d’une unique ligne horizontale ou verticale ?
 

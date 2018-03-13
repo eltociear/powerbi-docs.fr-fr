@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/18/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: e6a83796afe6afab02ec463d3dd2074d1fdc529a
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Ask questions of your data
+ms.openlocfilehash: 38cb04269937aa0b56589e4831eb7a3b027986d0
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Création de questions exemplaires pour les Q&R de Power BI
 Si vous possédez un jeu de données, vous pouvez y ajouter vos propres questions exemplaires.  Questions et réponses dans Power BI affiche ces questions à ceux de vos collègues qui utilisent (*consomment*) votre jeu de données.  Les questions exemplaires ont pour but de donner à vos collègues des idées sur les types de questions qu’ils peuvent poser concernant le jeu de données. Le choix des questions exemplaires que vous ajoutez vous appartient. Vous pouvez ajouter des questions fréquemment posées, des questions qui présentent des résultats intéressants ou des questions qui peuvent être difficiles à formuler.
@@ -39,18 +40,18 @@ Cet article utilise [l’Exemple Analyse de la vente au détail](sample-datasets
 
 1. Sur le tableau de bord, sélectionnez la zone de questions Questions et réponses.   Notez que les Q&R sont déjà utiles en affichant une liste de termes qui figurent dans le jeu de données.
 2. Pour compléter cette liste, sélectionnez l’icône d’engrenage dans le coin supérieur droit de Power BI.  
-   ![](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
+   ![icône d’engrenage](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
 3. Sélectionnez **Paramètres** &gt; **Jeux de données** &gt; **Exemple Analyse de la vente au détail** &gt; **Questions exemplaires ds Q&R**.  
 4. Sélectionnez **Ajouter une question**.
    
-   ![](media/service-q-and-a-create-featured-questions/power-bi-settings.png)
+   ![menu Paramètres](media/service-q-and-a-create-featured-questions/power-bi-settings.png)
 5. Tapez votre question dans la zone de texte, puis sélectionnez **Appliquer**.   Si vous le souhaitez, ajoutez une autre question en sélectionnant **Ajouter une question**.  
-   ![](media/service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
+   ![Volet Questions proposées dans Questions et réponses](media/service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
 6. Revenez au tableau de bord de Power BI pour l’exemple « Retail Analysis Sample », puis placez le curseur dans la zone Q&R.   
-   ![](media/service-q-and-a-create-featured-questions/power-bi-featured-q.png)
+   ![zone Questions et réponses](media/service-q-and-a-create-featured-questions/power-bi-featured-q.png)
 7. La nouvelle question proposée **Sales by territory as a map** (Ventes par territoire sous forme de carte) figure en tête de la liste. Sélectionnez-la.  
 8. La réponse s’affiche sous la forme d’une visualisation de carte remplie.  
-   ![](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
+   ![Visualisation de la carte](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ### <a name="next-steps"></a>Étapes suivantes
 [Q&R dans Power BI](power-bi-q-and-a.md)  

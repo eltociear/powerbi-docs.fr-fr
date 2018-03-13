@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 3aa70a6382164cb8284e1a5f61ae73f66e54d2f3
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Dashboards
+ms.openlocfilehash: cb1db61a3e0017adf56314862a5bb71fe1288dc6
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Ajouter des images, du texte, de la vidéo, etc. à votre tableau de bord
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -31,12 +32,12 @@ ms.lasthandoff: 12/21/2017
 ## <a name="add-tile"></a>Ajouter une vignette
 Le contrôle **Ajouter une vignette** vous permet d’ajouter directement une image, une zone de texte, une vidéo, des données de streaming ou du code web à votre tableau de bord.
 
-1. Sélectionnez **Ajouter une vignette** dans la barre de menus supérieure. Selon les limitations d’espace, il se peut que vous ne puissiez voir que le signe plus ![](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png).
+1. Sélectionnez **Ajouter une vignette** dans la barre de menus supérieure. Selon les limitations d’espace, vous pouvez voir uniquement le signe plus ![signe plus](media/service-dashboard-add-widget/power-bi-add-tile-icon-small.png).
    
-    ![](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
+    ![icône Ajouter une vignette](media/service-dashboard-add-widget/power-bi-add-tile-icon.png)
 2. Sélectionnez le type de vignette à ajouter : **Image**, **Zone de texte**, **Vidéo**, **Contenu web** ou **Données de streaming personnalisées**.
    
-    ![](media/service-dashboard-add-widget/power-bi-add-tile.png)
+    ![fenêtre Ajouter une vignette](media/service-dashboard-add-widget/power-bi-add-tile.png)
 
 ## <a name="add-an-image"></a>Ajouter une image
 Supposons que vous voulez faire figurer le logo de votre entreprise ou toute autre image sur le tableau de bord. Vous devez enregistrer le fichier image en ligne et lui associer un lien. Vérifiez que des informations d’identification spéciales ne sont pas nécessaires pour accéder au fichier image. Par exemple, OneDrive et SharePoint requièrent l’authentification et les images qui y sont stockées ne peuvent pas être ajoutées à un tableau de bord de cette façon.  
@@ -44,14 +45,14 @@ Supposons que vous voulez faire figurer le logo de votre entreprise ou toute aut
 1. Sélectionnez **Image** > **Suivant**.
 2. Ajoutez des informations sur l’image dans la fenêtre **Ajouter une vignette d’image**.
    
-    ![](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
+    ![fenêtre Ajouter une vignette d’image](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
    
    * Pour afficher un titre au-dessus de l’image, sélectionnez *Afficher le titre et le sous-titre* et tapez un titre et/ou un sous-titre.
    * Entrez l’URL de l’image.
    * Pour transformer la vignette en lien hypertexte, sélectionnez **Définir un lien personnalisé** et entrez l’URL.  Quand vos collègues cliquent sur cette image ou sur un titre, ils sont dirigés vers cette URL.
    * Sélectionnez **Appliquer**.  Dans le tableau de bord, redimensionnez et déplacez l’image selon vos besoins.
      
-     ![](media/service-dashboard-add-widget/power-bi-add-image-dash.png)
+     ![image sur le tableau de bord](media/service-dashboard-add-widget/power-bi-add-image-dash.png)
 
 ## <a name="add-a-text-box-or-dashboard-heading"></a>Ajouter une zone de texte ou un en-tête de tableau de bord
 1. Sélectionnez **Zone de texte > Suivant**.
@@ -64,11 +65,11 @@ Supposons que vous voulez faire figurer le logo de votre entreprise ou toute aut
    * Entrez et mettez en forme le contenu de la zone de texte.  
    * Définissez éventuellement un lien personnalisé pour le titre. Un lien personnalisé peut être un site externe ou un tableau de bord ou rapport dans votre espace de travail. En revanche, dans cet exemple, nous avons ajouté des liens hypertexte dans la zone de texte elle-même, alors laissez la case **Définir un lien personnalisé** décochée.
 
-     ![](media/service-dashboard-add-widget/power-bi-add-textbox.png)
+     ![fenêtre Ajouter une vignette de zone de texte](media/service-dashboard-add-widget/power-bi-add-textbox.png)
    
 3. Sélectionnez **Appliquer**.  Dans le tableau de bord, redimensionnez et déplacez la zone de texte selon vos besoins.
    
-   ![](media/service-dashboard-add-widget/pbi-widget-text-added-new.png)
+   ![tableau de bord avec une image et une zone de texte](media/service-dashboard-add-widget/pbi-widget-text-added-new.png)
 
 ## <a name="add-a-video"></a>Ajouter une vidéo
 Quand vous ajoutez une vignette de vidéo YouTube ou Vimeo à votre tableau de bord, la vidéo est lue directement dans votre tableau de bord.
@@ -76,14 +77,14 @@ Quand vous ajoutez une vignette de vidéo YouTube ou Vimeo à votre tableau de b
 1. Sélectionnez **Vidéo > Suivant**.
 2. Ajoutez des informations sur la vidéo dans la fenêtre **Ajouter une vignette de vidéo**.
    
-    ![](media/service-dashboard-add-widget/power-bi-add-video-new.png)
+    ![fenêtre Ajouter une vignette de vidéo](media/service-dashboard-add-widget/power-bi-add-video-new.png)
    
    * Pour afficher un titre et un sous-titre en haut de la vignette vidéo, sélectionnez *Afficher le titre et le sous-titre* et tapez un titre et/ou un sous-titre. Dans cet exemple, nous ajoutons un sous-titre, puis nous le transformons en lien hypertexte dans la playlist sur YouTube.
    * Entrez l’URL de la vidéo.
    * Ajoutez un lien hypertexte pour le titre et le sous-titre.  Vous voulez peut-être que vos collègues, après avoir visionné la vidéo incorporée, puissent accéder à toute la playlist sur YouTube : ajoutez un lien vers votre playlist ici.
    * Sélectionnez **Appliquer**.  Dans le tableau de bord, redimensionnez et déplacez la vidéo selon vos besoins.
      
-      ![](media/service-dashboard-add-widget/pbi-widget-video-added-new.png)
+      ![tableau de bord avec la vignette de vidéo ajoutée](media/service-dashboard-add-widget/pbi-widget-video-added-new.png)
 3. Sélectionnez la vignette de la vidéo pour lire la vidéo.
 4. Sélectionnez le sous-titre pour accéder à la playlist sur YouTube.
 
@@ -96,13 +97,13 @@ Collez ou saisissez n’importe quel contenu HTML.  Power BI l’ajoute à vot
 1. Sélectionnez **Contenu web > Suivant**.
 2. Ajoutez des informations dans le volet **Ajouter une vignette de contenu web**.
    
-    ![](media/service-dashboard-add-widget/power-bi-add-web-content.png)
+    ![fenêtre Ajouter une vignette de contenu web](media/service-dashboard-add-widget/power-bi-add-web-content.png)
    
    * Pour afficher un titre au-dessus de la vignette, sélectionnez *Afficher le titre et le sous-titre* et tapez un titre et/ou un sous-titre.
    * Entrez le code incorporé. Dans cet exemple, nous allons copier et coller un flux Twitter.
 3. Sélectionnez **Appliquer**.  Dans le tableau de bord, redimensionnez et déplacez le contenu web selon vos besoins.
      
-      ![](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
+      ![tableau de bord avec 4 vignettes](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
 ## <a name="tips-for-embedding-web-content"></a>Conseils pour l'incorporation de contenu web
 * Pour des IFrames, utilisez une source sécurisée. Si vous entrez votre code intégré d’IFrame et obtenez une vignette vide, vérifiez si le protocole **http** est utilisé pour la source IFrame.  Dans ce cas, remplacez-le par **https**.
@@ -145,10 +146,10 @@ Pour apporter des modifications à une vignette...
 
 1. Placez le curseur en haut à droite de la vignette et sélectionnez les points de suspension.
    
-    ![](media/service-dashboard-add-widget/pbi_ellipses.png)
+    ![sélectionner les points de suspension de la vignette](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. Sélectionnez l’icône de modification pour rouvrir le volet **Détails de la vignette** et apporter des modifications.
    
-    ![](media/service-dashboard-add-widget/pbi-edit.png)
+    ![icône d’édition en forme de crayon](media/service-dashboard-add-widget/pbi-edit.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 * Pour faciliter le déplacement de la vignette sur votre tableau de bord, ajoutez un titre et/ou un sous-titre.
