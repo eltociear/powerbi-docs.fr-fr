@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/22/2018
 ms.author: maghan
-ms.openlocfilehash: 2dde59bba1c5d9ded1c82cf2dd1086be14f19304
-ms.sourcegitcommit: d6e013eb6291ae832970e220830d9862a697d1be
+ms.openlocfilehash: 0d7127d43e2764e1dcd15f7052b3367c8629d2f6
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
 La sécurité au niveau des lignes peut être utilisée pour restreindre l’accès aux données dans des tableaux de bord, vignettes, rapports et jeux de données. Plusieurs utilisateurs différents peuvent utiliser ces mêmes artefacts tout en voyant différentes données. L’incorporation prend en charge la sécurité au niveau des lignes.

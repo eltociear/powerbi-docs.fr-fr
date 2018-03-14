@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/04/2018
 ms.author: maggies
-ms.openlocfilehash: 6803c8aa2898c9ab27b515c04d7db813e7d44ea4
-ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
+ms.openlocfilehash: 7285e15b6f63cc53b9221a46e0a524313c413cda
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="take-power-bi-anywhere-in-mobile-apps-for-your-mobile-device"></a>Emportez Power BI partout dans les applications mobiles pour votre appareil mobile
 Vous pouvez afficher vos tableaux de bord et rapports Power BI dans le service Power BI ([https://powerbi.com](https://powerbi.com)), et vos rapports Power BI locaux sur [Power BI Report Server](report-server/get-started.md). Vous pouvez maintenant vous connecter à vos données, localement et dans le cloud, à partir des applications mobiles Power BI. Affichez et manipulez vos tableaux de bord et rapports Power BI sur votre appareil mobile, que ce soit sur iOS (iPad, iPhone, Ipod Touch ou Apple Watch), un téléphone ou une tablette Android ou un appareil Windows 10.
@@ -51,4 +51,5 @@ En savoir plus sur la [configuration des applications mobiles Power BI pour And
 ## <a name="next-steps"></a>Étapes suivantes
 * [Power BI :versions gratuite et Pro](service-free-vs-pro.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+
 
