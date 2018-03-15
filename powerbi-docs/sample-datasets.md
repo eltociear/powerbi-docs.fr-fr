@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/18/2018
+ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 8ff3470f45ec84798c9fe7302b31a8fe364f18c9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 8a2b330ee134bf8aeb94315b90e71824ec1eb8ef
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Quels exemples de données pouvez-vous utiliser avec Power BI ?
 Vous n’avez pas de données sous la main pour essayer Power BI ?  Vous avez un jeu de données, mais vous craignez de l’endommager, car vous ne connaissez pas assez bien le fonctionnement de Power BI ?
@@ -106,16 +106,16 @@ Les packs de contenu sont le seul format d’exemple disponible à partir de Pow
 ### <a name="get-and-open-a-sample-content-pack-in-power-bi-service"></a>Obtenir et ouvrir un exemple de pack de contenu dans le service Power BI
 1. Ouvrez le service Power BI (app.powerbi.com), puis connectez-vous.
 2. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
-   
+
     ![](media/sample-datasets/power-bi-get-data.png)
 3. Dans la page Obtenir des données qui s’affiche, sélectionnez l’icône **Exemples**.
-   
+
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez l’un des exemples pour ouvrir une description de cet exemple. Puis choisissez **Se connecter**.  
-   
+
    ![](media/sample-datasets/power-bi-connect.png)
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. Utilisez les exemples pour tester Power BI.  
-   
+
    ![](media/sample-datasets/power-bi-asterisk.png)
 
 Maintenant que vous avez des données, vous êtes sur la bonne voie.  Suivez certains de nos didacticiels en utilisant les exemples de packs de contenu ou ouvrez simplement le service Power BI pour le découvrir.
@@ -124,7 +124,7 @@ Maintenant que vous avez des données, vous êtes sur la bonne voie.  Suivez cer
 Chacun des exemples de packs de contenu est également disponible en tant que classeur Excel. Les classeurs Excel sont conçus pour être utilisés avec le service Power BI.  
 
 1. Téléchargez les fichiers individuels à l’aide des liens ci-dessous ou [téléchargez un fichier zip contenant tous les exemples de fichiers](http://go.microsoft.com/fwlink/?LinkId=535020). Si vous êtes un utilisateur expérimenté, nous vous recommandons de télécharger les classeurs Excel pour explorer ou modifier les modèles de données.
-   
+
    * [Exemple Analyse de la vente au détail](http://go.microsoft.com/fwlink/?LinkId=529778)
    * [Exemple Analyse de la qualité des fournisseurs](http://go.microsoft.com/fwlink/?LinkId=529779)
    * [Exemple Ressources humaines](http://go.microsoft.com/fwlink/?LinkId=529780)
@@ -134,35 +134,35 @@ Chacun des exemples de packs de contenu est également disponible en tant que cl
    * [Exemple Analyse de l’approvisionnement](http://go.microsoft.com/fwlink/?LinkId=529784)
    * [Exemple Vente et marketing](http://go.microsoft.com/fwlink/?LinkId=529785)
 2. Enregistrez le fichier téléchargé. L’emplacement d’enregistrement de votre fichier change tout.
-   
+
    * ![](media/sample-datasets/power-bi-local-file2.png) **Local** : si votre fichier est enregistré sur un disque local sur votre ordinateur ou un autre emplacement de votre organisation, vous pouvez importer votre fichier à partir de Power BI. Votre fichier est en fait conservé sur votre disque local. Il n’est donc pas entièrement importé dans Power BI. En réalité, un nouveau jeu de données est créé dans votre site Power BI, et les données, et dans certains cas le modèle de données, sont chargés dans ce jeu de données. Si votre fichier contient des rapports, ceux-ci apparaissent dans votre site Power BI sous Rapports.
    * ![](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive Entreprise** : si vous disposez de OneDrive Entreprise et que vous vous connectez avec le même compte que pour Power BI, cette méthode est de loin la plus efficace pour que votre travail dans Excel, Power BI ou un fichier CSV reste synchronisé avec vos jeux de données, rapports et tableaux de bord dans Power BI. Power BI et OneDrive étant tous les deux dans le cloud, Power BI se connecte à votre fichier sur OneDrive toutes les heures environ. Si des modifications sont détectées, vos jeu de données, rapports et tableaux de bord sont automatiquement mis à jour dans Power BI.
    * ![](media/sample-datasets/power-bi-onedrive-file.png) **OneDrive personnel** : si vous enregistrez vos fichiers sur votre compte OneDrive personnel, vous bénéficiez de la plupart des avantages obtenus avec OneDrive Entreprise. La différence principale réside dans le fait que, la première fois que vous vous connectez à votre fichier (via Obtenir des données > Fichiers > OneDrive personnel), vous devez vous connecter à votre compte OneDrive avec votre compte Microsoft, qui est généralement différent de celui utilisé pour vous connecter à Power BI. Lorsque vous vous connectez à OneDrive avec votre compte Microsoft, veillez à sélectionner l’option Maintenir la connexion. Power BI peut ainsi se connecter à votre fichier toutes les heures environ et s’assurer que votre jeu de données dans Power BI est synchronisé.
    * ![](media/sample-datasets/power-bi-sharepoint2.png) **Sites d’équipe SharePoint** : l’enregistrement de vos fichiers Power BI sur des sites d’équipe SharePoint revient plus ou moins à enregistrer dans OneDrive Entreprise. La différence majeure réside dans la manière dont vous vous connectez au fichier à partir de Power BI. Vous pouvez spécifier une URL ou vous connecter au dossier racine.
 3. Ouvrez le service Power BI (app.powerbi.com), puis connectez-vous.
-   
+
    > [!TIP]
    > À ce stade, nous vous recommandons de créer un tableau de bord, puis de le nommer selon le fichier que vous prévoyez d’importer.  Sinon, Power BI ne crée pas de tableau de bord nommé d’après l’exemple lors de l’importation du jeu de données Excel. Au lieu de cela, il ajoute une vignette au tableau de bord que vous avez ouvert. En sélectionnant cette vignette, vous accédez au rapport du jeu de données. Cela n’est pas grave, car vous pouvez toujours créer un tableau de bord plus tard. Cependant, partir d’un nouveau tableau de bord vous permet de gagner un peu de temps.
-   > 
-   > 
+   >
+   >
 4. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
-   
+
     ![](media/sample-datasets/power-bi-get-data.png)
 5. Dans la page Obtenir des données qui s’affiche, sélectionnez **Fichiers > Obtenir**.
-   
+
      ![](media/sample-datasets/power-bi-files.png)
 6. Accédez à l’emplacement où vous avez téléchargé et enregistré l’exemple.
-   
+
    ![](media/sample-datasets/power-bi-files3.png)
 7. Sélectionnez le fichier (ici **Exemple Analyse de l’approvisionnement.xlsx**) qui a été enregistré sur OneDrive Entreprise, puis sélectionnez **Se connecter**.
-   
+
    ![](media/sample-datasets/power-bi-connect2.png)
 8. Vous pouvez choisir d’importer les données ou d’afficher le classeur dans Power BI pour l’afficher exactement de la même manière que dans Excel Online.
-   
+
     ![](media/sample-datasets/power-bi-import.png)
 9. Si vous sélectionnez **Importer**, Power BI importe l’exemple de classeur et l’ajoute en tant que nouveau jeu de données nommé **Exemple Analyse de l’approvisionnement**.  Si le classeur contient des feuilles, tableaux ou plages Power View, ou un modèle de données, Power BI crée également un rapport (portant le même nom). Et si vous n’avez pas déjà ouvert de tableau de bord, Power BI en crée un. Dans le cas contraire, une fois que vous avez cliqué sur **Obtenir des données**, une vignette vide s’affiche sur votre tableau de bord.  En cliquant sur celle-ci, vous accédez au rapport du jeu de données que vous venez d’ajouter. Le nouveau contenu est nommé d’après l’exemple et il est signalé par un astérisque jaune.
 10. Lorsque l’écran **Votre jeu de données est prêt !** s’affiche, sélectionnez **Afficher le jeu de données** ou **Obtenir rapidement des informations** ou utilisez simplement la barre de navigation gauche de Power BI pour localiser et ouvrir le rapport ou le tableau de bord associé.  
-    
+
      ![](media/sample-datasets/power-bi-ready.png)
 
 ### <a name="optional-take-a-look-at-the-excel-samples-from-inside-excel-itself"></a>(Facultatif) Affichage des exemples Excel directement dans Excel
@@ -170,18 +170,18 @@ Vous voulez savoir comment les données d’un classeur Excel sont converties en
 
 * Quand vous ouvrez pour la première fois un classeur d’exemples, deux avertissements peuvent s’afficher. Le premier indique que le classeur est en mode protégé. Sélectionnez **Activer la modification**. Le second peut indiquer que le classeur contient des connexions de données externes. Sélectionnez **Activer le contenu**.
 * Chaque classeur contient plusieurs feuilles. Comme ces exemples Excel ont tous au moins une feuille Power View avec des visualisations, lorsque vous importez le fichier Excel dans Power BI, vous obtenez un jeu de données **et** un rapport.
-  
+
    Vous devrez peut-être [activer le complément Power View](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957).
 * Où se trouvent les données réelles ? Elles sont situées dans le modèle de données Power Pivot. Pour afficher les données, sous l’onglet **PowerPivot**, sélectionnez **Gérer le modèle de données**.
-  
-    Vous ne voyez pas l’onglet PowerPivot ? [Activez le complément PowerPivot](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
+
+    Vous ne voyez pas l’onglet PowerPivot ? [Activez le complément PowerPivot](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
 * L’onglet Info fournit des informations sur obviEnce, la société qui a créé l’exemple.
 
 ## <a name="the-power-bi-samples-as-pbix-files"></a>Exemples Power BI sous forme de fichiers .pbix
 Chacun des exemples de packs de contenu est également disponible en tant que fichier .pbix pour Power BI. Les fichiers .pbix sont conçus pour être utilisés avec Power BI Desktop.  
 
 1. Téléchargez les fichiers individuellement en utilisant les liens ci-dessous.
-   
+
    * [Exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail Analysis Sample PBIX.pbix)
    * [Exemple Analyse de la qualité des fournisseurs](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
    * [Exemple Ressources humaines](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix)
@@ -192,7 +192,7 @@ Chacun des exemples de packs de contenu est également disponible en tant que fi
    * [Exemple Vente et marketing](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales and Marketing Sample PBIX.pbix)
 2. Enregistrez le fichier téléchargé.
 3. À partir du bureau, sélectionnez **Fichier > Ouvrir**, puis accédez à l’emplacement où vous avez enregistré l’exemple de fichier .pbix.
-   
+
    ![](media/sample-datasets/power-bi-desktop-open.png)
 4. Sélectionnez le fichier .pbix pour l’ouvrir dans le bureau.
 
@@ -204,4 +204,3 @@ Chacun des exemples de packs de contenu est également disponible en tant que fi
 [Sources de données pour Power BI](service-get-data.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-
