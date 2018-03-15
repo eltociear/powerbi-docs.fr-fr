@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/10/2017
 ms.author: maghan
 LocalizationGroup: Premium
-ms.openlocfilehash: c94cbdbeaf6c7186b21a22c318a4195dbc509da3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: a6040871652484ad5de70a0d73e14a13742fe56a
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gérer les capacités dans Power BI Premium et Power BI Embedded
 Découvrez comment vous pouvez gérer les capacités Power BI Premium et Power BI Embedded qui fournissent des ressources dédiées pour votre contenu.
@@ -44,7 +44,7 @@ Pour plus d’informations, consultez [Qu’est-ce que Power BI Premium ?](se
 Pour tirer parti de la capacité dédiée, vous devez acheter un abonnement Power BI Premium par le biais du Centre d’administration Office 365 ou créer une ressource Power BI Embedded dans le portail Microsoft Azure. Pour plus d’informations, consultez les ressources suivantes :
 
 * **Power BI Premium:** [Acheter Power BI Premium](service-admin-premium-purchase.md)
-* **Power BI Embedded :** bientôt disponible.
+* **Power BI Embedded :** [Créer une capacité Power BI Embedded dans le portail Azure](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity)
 
 Lorsque vous achetez des références (SKU) Power BI Premium, votre locataire reçoit le nombre correspondant de v-cores pour une utilisation dans les capacités opérationnelles. Par exemple, l’achat d’une référence SKU Power BI Premium P3 fournit au locataire 32 v-cores.
 

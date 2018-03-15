@@ -862,6 +862,8 @@
       items:
         - name: "Applications Power\_BI pour iOS"
           href: mobile-ios-ipad-iphone-apps.md
+        - name: Power BI pour la réalité mixte
+          href: mobile-mixed-reality-app.md
         - name: Afficher des rapports et des indicateurs de performance clés locaux dans les applications mobiles
           href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
         - name: Tableaux de bord dans les applications mobiles
