@@ -46,7 +46,7 @@ Si vous faites partie d’une organisation qui utilise Office 365, vous pouvez 
 
 Pour vous inscrire à Power BI, vous devez avoir une adresse e-mail professionnelle. Une adresse e-mail personnelle ne fonctionne pas quand vous tentez de vous inscrire à Power BI.
 
-### <a name="what-email-address-can-be-used-with-power-bi"></a>Quelle adresse e-mail peut être utilisée avec Power BI ?
+### <a name="what-email-address-can-be-used-with-power-bi"></a>Quelle adresse de messagerie peut être utilisée avec Power BI ?
 L’inscription à Power BI nécessite l’utilisation d’une adresse e-mail professionnelle ou scolaire. Vous ne pouvez pas vous inscrire à Power BI avec des adresses e-mail fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunication. Cela inclut outlook.com, hotmail.com, gmail.com et autres.
 
 Si vous tentez de vous inscrire avec une adresse de messagerie personnelle, vous obtiendrez un message vous invitant à utiliser une adresse professionnelle ou scolaire.

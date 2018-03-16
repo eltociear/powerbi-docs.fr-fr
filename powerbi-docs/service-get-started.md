@@ -20,10 +20,10 @@ ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: cbb7697e3d3dbc92c2917b0a80deadfc0b9fd5a0
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="get-started-with-power-bi-service-apppowerbicom"></a>Prise en main du service Power BI (app.powerbi.com)
 Ce didacticiel vous aide à bien démarrer avec le ***service Power BI***. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de commencer par lire [Qu’est-ce que Power BI ?](guided-learning/gettingstarted.yml#step-1).
@@ -99,7 +99,7 @@ Maintenant que vous êtes connecté aux données, vous pouvez les explorer.  Une
 
 3. Comme ce contenu semble intéressant, nous allons l’*épingler* à un tableau de bord. Pointez sur la visualisation, puis sélectionnez l’icône **Épingler**.  Quand vous épinglez cette visualisation, celle-ci est stockée dans votre tableau de bord et mise à jour. Vous pouvez ainsi suivre la valeur la plus récente en un clin d’œil.
    
-   ![icône en forme d’épingle](media/service-get-started/pinnew.png)
+   ![icône d’épingle](media/service-get-started/pinnew.png)
 
 5. Comme il s’agit d’un nouveau rapport, vous êtes invité à l’enregistrer avant de pouvoir épingler une visualisation à un tableau de bord. Attribuez un nom à votre rapport (par exemple, *Ventes dans le temps*), puis sélectionnez **Enregistrer et continuer**. 
    
@@ -122,7 +122,7 @@ Maintenant que vous êtes connecté aux données, vous pouvez les explorer.  Une
    Sélectionnez la nouvelle vignette dans votre tableau de bord pour revenir au rapport à tout moment. Power BI vous renvoie à l’éditeur de rapport en mode Lecture. Pour revenir au mode Édition, sélectionnez **Modifier le rapport** à partir de la barre de menus supérieure. Une fois en mode Édition, continuez l’exploration et épinglez des vignettes. 
 
 ## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Étape 3 : Poursuivre l’exploration avec Questions et réponses (interrogation en langage naturel)
-1. Pour une exploration rapide de vos données, essayez de poser une question dans la zone Questions et réponses. La zone de question Questions et réponses se trouve en haut de votre tableau de bord (**Poser une question sur vos données**) et dans la barre de menus supérieure de votre rapport (**Poser une question**). Par exemple, essayez de taper « quel segment présente le meilleur chiffre d’affaires ».
+1. Pour une exploration rapide de vos données, essayez de poser une question dans la zone Q&R. La zone de question Questions et réponses se trouve en haut de votre tableau de bord (**Poser une question sur vos données**) et dans la barre de menus supérieure de votre rapport (**Poser une question**). Par exemple, essayez de taper « quel segment présente le meilleur chiffre d’affaires ».
    
    ![canevas Questions et réponses](media/service-get-started/powerbi-qna.png)
 
