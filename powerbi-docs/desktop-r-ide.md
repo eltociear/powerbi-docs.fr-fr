@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ab73dde22fdb0603a900ac67b6e76e8f5aaf3872
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3903a4d7351ab00da24750736840c6ba35cffa2b
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Utiliser un IDE R externe avec Power BI
 Avec **Power BI Desktop**, vous pouvez utiliser un IDE (environnement de développement intégré) R externe pour créer et affiner les scripts R, puis utiliser ces scripts dans Power BI.
@@ -35,7 +35,7 @@ Auparavant, vous deviez utiliser l’éditeur de script R dans **Power BI Des
 À partir de la version de septembre 2016 de **Power BI Desktop** (version 2.39.4526.362), vous pouvez spécifier l’IDE R que vous souhaitez utiliser et le lancer automatiquement à partir de **Power BI Desktop**.
 
 ### <a name="requirements"></a>Configuration requise
-Pour utiliser cette fonctionnalité, vous devez installer un **IDE R** sur votre ordinateur local. **Power BI Desktop** n’inclut pas, ne déploie pas ni n’installe le moteur R. Vous devez donc installer **R** séparément sur votre ordinateur local. Vous pouvez choisir l’IDE R à utiliser avec les options suivantes :
+Pour utiliser cette fonctionnalité, vous devez installer un **IDE R** sur votre ordinateur local. **Power BI Desktop** n’inclut pas, ne déploie pas et n’installe pas le moteur R. Vous devez donc installer **R** séparément sur votre ordinateur local. Vous pouvez choisir l’IDE R à utiliser avec les options suivantes :
 
 * Vous pouvez installer votre IDE R favori (nombre des IDE R étant disponibles gratuitement), tel que [Revolution Open](https://mran.revolutionanalytics.com/download/) et [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 * **Power BI Desktop** prend également en charge [R Studio](https://www.rstudio.com/) et **Visual Studio 2015** avec les éditeurs [*Outils R pour Visual Studio*](https://beta.visualstudio.com/vs/rtvs/).
@@ -53,7 +53,7 @@ Par défaut, **Power BI Desktop** lance **R Studio** en tant qu’IDE R exte
 Si aucune association au fichier **.R** n’existe, il est possible de spécifier un chemin d’accès à un IDE personnalisé dans la section *Accédez à votre IDE R préféré* de la boîte de dialogue **Options**. Vous pouvez également lancer un autre IDE R en sélectionnant l’icône en forme d’engrenage **Paramètres** en regard de l’icône représentant une flèche **Lancer un IDE R**, dans **Power BI Desktop**.
 
 ## <a name="launch-an-r-ide-from-power-bi-desktop"></a>Lancer un IDE R à partir de Power BI Desktop
-Pour lancer un IDE R à partir de **Power BI Desktop**, procédez comme suit.
+Pour lancer un IDE R à partir de **Power BI Desktop**, effectuez les étapes suivantes :
 
 1. Chargez des données dans **Power BI Desktop**.
 2. Sélectionnez quelques champs que vous souhaitez utiliser dans le volet **Champs**. Si vous n’avez pas encore activé les éléments visuels de script, vous êtes invité à le faire.
@@ -62,7 +62,7 @@ Pour lancer un IDE R à partir de **Power BI Desktop**, procédez comme suit.
 3. Lorsque les éléments visuels de script sont activés, vous pouvez sélectionner un élément visuel R à partir du volet **Visualisations**, qui crée un élément visuel R vide qui est prêt à afficher les résultats de votre script. Le volet **Éditeur de script R** s’affiche également.
    
    ![](media/desktop-r-ide/r-ide_4.png)
-4. Vous pouvez maintenant sélectionner les champs que vous souhaitez utiliser dans votre script R. Lorsque vous sélectionnez un champ, le champ **Éditeur de script R** crée automatiquement un code de script basé sur le ou les champs que vous sélectionnez. Vous pouvez créer (ou coller) votre script R directement dans le volet **Éditeur de script R** ou vous pouvez le laisser vide.
+4. Vous pouvez maintenant sélectionner les champs que vous souhaitez utiliser dans votre script R. Lorsque vous sélectionnez un champ, le champ **Éditeur de script R** crée automatiquement un code de script basé sur le ou les champs que vous sélectionnez. Vous pouvez créer (ou coller) votre script R directement dans le volet **Éditeur de script R**, ou le laisser vide.
    
    ![](media/desktop-r-ide/r-ide_5.png)
    

@@ -1,6 +1,6 @@
 ---
 title: "Bien démarrer avec l’utilisation de l’application mobile Power BI pour les tablettes Android"
-description: "Découvrez de quelle façon l’application mobile Power BI pour tablettes Android permet de bénéficier des fonctionnalités de Power BI en tout lieu, avec un accès mobile aux informations métier locales et dans le cloud."
+description: "Découvrez comment utiliser l’application mobile Power BI pour tablettes Android afin de bénéficier des fonctionnalités de Power BI en tout lieu, avec un accès mobile aux données de l’entreprise stockées en local et dans le cloud."
 services: powerbi
 documentationcenter: 
 author: maggiesMSFT
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: bd96466a8a8c19a495540b93a512cb62746a6837
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 407f4d8c2faf26b9837b24318c24c118786e21ae
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-tablets"></a>Bien démarrer avec l’utilisation de l’application mobile Power BI pour les tablettes Android
 L’application mobile Power BI pour tablettes Android permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. 
@@ -142,3 +142,4 @@ Découvrez ce que vous pouvez faire d’autre dans l’application pour tablette
 * [Téléchargez l’application Android](http://go.microsoft.com/fwlink/?LinkID=544867) à partir du magasin d’applications Android.
 * [Prise en main de Power BI](service-get-started.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+

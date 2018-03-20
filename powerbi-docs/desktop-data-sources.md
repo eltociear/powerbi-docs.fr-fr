@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 85ac8564efca953d338bef9aab8b59699d992c19
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ff28f5d43b065ae798e2e9f275c8e8b59e9ee1ce
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
@@ -78,13 +78,14 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Base de données Oracle
 * Base de données IBM DB2
 * Base de données Informix IBM (bêta)
-* IBM Netezza (bêta)
+* IBM Netezza
 * Base de données MySQL
 * Base de données PostgreSQL
 * Base de données Sybase
 * Base de données Teradata
 * Base de données SAP HANA
-* Serveur SAP Business Warehouse
+* SAP Business Warehouse Application Server
+* SAP Business Warehouse Message Server (bêta)
 * Amazon Redshift
 * Impala
 * Google BigQuery (bêta)
@@ -103,13 +104,14 @@ La catégorie **Azure** fournit les connexions de données suivantes :
 
 * Azure SQL Database
 * Azure SQL Data Warehouse
-* Base de données Azure Analysis Services (bêta)
+* Base de données Azure Analysis Services
 * Stockage Blob Azure
 * Stockage Table Azure
 * Azure Cosmos DB (bêta)
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark (bêta)
+* HDInsight Interactive Query (bêta)
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Azure**.
 
@@ -121,6 +123,7 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Liste SharePoint Online
 * Microsoft Exchange Online
 * Dynamics 365 (en ligne)
+* Dynamics NAV (bêta)
 * Dynamics 365 for Financials (bêta)
 * Common Data Service (bêta)
 * Microsoft Azure Consumption Insights (bêta)
@@ -128,23 +131,24 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Objets Salesforce
 * Rapports Salesforce
 * Google Analytics
+* Adobe Analytics
 * appFigures (bêta)
 * comScore Digital Analytix (bêta)
 * Dynamics 365 pour Insights client (bêta)
+* Data.World - Obtenir le jeu de données (bêta)
 * Facebook
 * GitHub (bêta)
-* Kusto (bêta)
 * MailChimp (bêta)
+* Marketo (bêta)
 * Mixpanel (bêta)
-* Planview Enterprise (bêta)
-* Projectplace (bêta)
+* Planview Enterprise One - PRM (bêta)
+* Planview Projectplace (bêta)
 * QuickBooks Online (bêta)
 * Smartsheet
 * SparkPost (bêta)
-* SQL Sentry (bêta)
 * Stripe (bêta)
 * SweetIQ (bêta)
-* Troux (bêta)
+* Planview Enterprise One - CMT (bêta)
 * Twilio (bêta)
 * tyGraph (bêta)
 * Webtrends (bêta)
@@ -157,6 +161,7 @@ L’illustration suivante montre la fenêtre **Obtenir les données** pour **Ser
 La catégorie **Autre** fournit les connexions de données suivantes :
 
 * Vertica (bêta)
+* Kusto (bêta)
 * Web
 * Liste SharePoint
 * Flux OData
@@ -203,4 +208,3 @@ Power BI Desktop vous permet d’effectuer des tâches très diverses. Pour pl
 * [Types de données dans Power BI Desktop](desktop-data-types.md)
 * [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)    
-

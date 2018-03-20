@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/21/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 634dc4efe6553a9de91716552a21563f5405fa69
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: 868d05891d1b2cb24dfae60b7f3bee405ff7d08f
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bonnes pratiques de conception de visuels et de rapports
 <!-- Shared newnav Include -->
@@ -44,7 +44,7 @@ Nous espérons que ce document vous servira de point de départ, que vous allez 
 ## <a name="a-look-at-the-landscape-and-terminology"></a>Présentation du contexte et de la terminologie
 Dans Power BI, un rapport peut avoir une ou plusieurs pages et toutes ces pages regroupées sont désignées collectivement sous le terme « rapport ». Les éléments de base du rapport sont les visuels (également appelés visualisations), les images autonomes et les zones de texte. Des points de données individuels aux éléments de rapport et aux pages de rapport elles-mêmes, il existe un nombre illimité d’options de mise en forme.
 
-Voici les points que nous allons aborder dans ce document : planification du rapport, principes de base liés à la conception de rapports, principes de conception visuelle et enfin description des bonnes pratiques en fonction des types de visuel.
+Voici les points que nous allons aborder dans ce document : planification du rapport, principes de base liés à la conception de rapports, principes de conception visuelle et enfin description des meilleures pratiques en fonction des types de visuel.
 
 Pour obtenir des conseils et des instructions complètes pour créer et utiliser les rapports Power BI, consultez la page **powerbi.com > Apprendre**.
 
@@ -53,7 +53,7 @@ La création d’un rapport commence avant même de créer le premier visuel, ca
 
 La réponse à ces questions va déterminer votre conception. Chaque rapport raconte une histoire. Assurez-vous que cette histoire correspond aux besoins de l’entreprise. Il peut être tentant d’ajouter des visuels qui montrent des insights spectaculaires, mais si ces insights ne correspondent pas aux besoins de l’entreprise, le rapport sera inutile et les utilisateurs risquent d’être distraits par ces visuels. En outre, il se peut que les informations nécessaires à la prise de décision ne puissent pas être extraites de ces données. Ce rapport peut-il être utilisé pour mesurer ce qui est nécessaire ?
 
-Les rapports peuvent être utilisés pour surveiller, découvrir, suivre, prévoir, mesurer, gérer, tester et bien plus encore. Si, par exemple, l’entreprise a besoin d’un rapport de ventes qui mesure les performances, vous pouvez concevoir un rapport qui examine les ventes actuelles, les compare aux ventes précédentes, effectue une comparaison avec celles des concurrents et inclut des indicateurs de performance clés qui déclenchent des alertes.  Les lecteurs peuvent peut-être explorer en détail les chiffres liés aux ventes pour voir les fermetures de magasin ou les problèmes de chaîne d’approvisionnement qui peuvent avoir un impact sur les ventes.  Ou ils peuvent examiner les ventes par magasin, région, produit, saison et bien plus encore.
+Les rapports peuvent être utilisés pour surveiller, découvrir, suivre, prévoir, mesurer, gérer, tester et bien plus encore. Si, par exemple, l’entreprise a besoin d’un rapport de ventes qui mesure les performances, vous pouvez concevoir un rapport qui examine les ventes actuelles, les compare aux ventes précédentes, effectue une comparaison avec celles des concurrents et inclut des indicateurs de performance clés qui déclenchent des alertes.  Les lecteurs peuvent peut-être explorer en détail les chiffres liés aux ventes pour voir les fermetures de magasin ou les problèmes de chaîne d’approvisionnement qui peuvent avoir un impact sur les ventes.  Ou ils peuvent examiner en détail les ventes par magasin, région, produit, saison, etc.
 
 Sachez à l’avance les clients auxquels le rapport est destiné et concevez un rapport qui utilise une terminologie familière et fournit des données à un niveau de détail et de complexité compréhensible par les clients. Vous avez plusieurs types de client ? Une seule taille ne convient pas pour tout ; concevez des pages de rapport distinctes en fonction de l’expertise et veillez à étiqueter chaque page clairement afin que les clients puissent s’identifier. Une autre option consiste à utiliser des segments afin que les clients puissent adapter la page à leur convenance. Impliquez le client dans la phase de planification et évitez de générer un rapport en vous basant sur ce que vous pensez savoir de ses besoins.  Soyez prêt à recommencer encore et encore.
 
@@ -68,7 +68,7 @@ Jetons un coup d’œil à la disposition, à la clarté et à l’esthétique.
 Le canevas de rapport dispose d’une quantité limitée d’espace.  Si tous les éléments ne tiennent pas sur une seule page, scindez le rapport en plusieurs pages.  Une page de rapport peut être adaptée à une audience spécifique (par exemple, les ressources humaines, le service informatique, les ventes, etc.) ou à une question métier spécifique (par exemple, « quel est l’impact des défauts sur notre temps d’activité ? », « quel est l’impact de nos campagnes marketing sur les émotions ? ») ou sous forme d’histoire progressive (par exemple, première page de vue d’ensemble ou servant à susciter l’intérêt, 2e page contenant le récit, 3e page qui approfondit le récit, etc.).  Si votre rapport entier tient sur une seule page, c’est parfait. Si ce n’est pas le cas, créez des pages de rapport distinctes qui segmentent le contenu de façon logique.  Et n’oubliez pas de donner des noms pertinents et utiles aux pages.
 
 Imaginez que vous deviez aménager une galerie d’art. Vous ne placeriez pas 50 œuvres dans un petit espace, rempli de chaises et dont chaque mur est peint d’une couleur différente. En tant que conservateur, vous choisiriez simplement les œuvres qui ont un thème commun, vous ajusteriez leur disposition autour de la pièce afin que les visiteurs aient suffisamment d’espace pour se déplacer et réfléchir et placeriez des fiches d’information décrivant ces œuvres. Il y a bien une raison pour laquelle les galeries les plus modernes ont des murs nus !
-Pour cet article, nous allons commencer par un exemple de rapport nécessitant beaucoup de travail.  Nous allons ensuite améliorer ce rapport en appliquant nos bonnes pratiques et principes de conception.
+Pour cet article, nous allons commencer par un exemple de rapport nécessitant beaucoup de travail.  Nous allons ensuite améliorer ce rapport en appliquant nos meilleures pratiques et principes de conception.
 
 ![](media/power-bi-visualization-best-practices/power-bi-example1newa.png)
 
@@ -147,7 +147,7 @@ Une page de rapport encombrée est difficile à comprendre en un clin d’œil e
 
 Edward Tufte y fait référence sous le terme « data to ink ratio » (proportion entre la place utilisée par les visuels et l’espace total) dans son livre *The Visual Display of Quantitative Information*.  Pour faire simple, supprimez tout ce qui n’est pas indispensable.
 
-L’encombrement que vous supprimez augmente l’espace blanc sur votre page de rapport. Vous avez ainsi davantage de place pour appliquer les bonnes pratiques abordées plus haut dans la section « Alignement, ordre et proximité ».
+L’encombrement que vous supprimez augmente l’espace blanc sur votre page de rapport. Vous avez ainsi davantage de place pour appliquer les meilleures pratiques abordées plus haut dans la section « Alignement, ordre et proximité ».
 
 Notre exemple semble déjà mieux conçu. Nous avons supprimé une grande partie de l’encombrement et ajouté des formes pour regrouper les éléments.  L’image d’arrière-plan a disparu, la flèche et la zone de texte inutiles ont disparu, un visuel a été déplacé sur une autre page du rapport, etc. Nous avons augmenté la taille de la page afin d’augmenter l’espace blanc (jaune en l’occurrence ici).
 
@@ -278,15 +278,15 @@ Ajoutez un arrière-plan blanc aux visuels restants sur la page de rapport. Dans
 
 ![](media/power-bi-visualization-best-practices/power-bi-example5a.png)
 
-**Figure 20 : Exemple de rapport auquel les bonnes pratiques de couleurs ont été appliquées (arrière-plan noir)**
+**Figure 20 : Exemple de rapport auquel les meilleures pratiques en matière de couleurs ont été appliquées (arrière-plan noir)**
 
 ![](media/power-bi-visualization-best-practices/power-bi-example5b.png)
 
-**Figure 21 : Exemple de rapport auquel les bonnes pratiques de couleurs ont été appliquées (arrière-plan blanc)**
+**Figure 21 : Exemple de rapport auquel les meilleures pratiques en matière de couleurs ont été appliquées (arrière-plan blanc)**
  
 
 ### <a name="aesthetics"></a>Esthétique
-Nous avons déjà parlé plus haut des éléments jouant sur l’esthétique : l’alignement, les couleurs, les polices, l’encombrement.  Mais il existe d’autres bonnes pratiques que nous souhaitons aborder concernant la conception d’un rapport : elles ont trait à l’apparence générale du rapport.  
+Nous avons déjà parlé plus haut des éléments jouant sur l’esthétique : l’alignement, les couleurs, les polices, l’encombrement.  Mais il existe d’autres meilleures pratiques que nous souhaitons aborder concernant la conception d’un rapport : elles ont trait à l’apparence générale du rapport.  
 
 N’oubliez pas que la fonction de votre rapport est de répondre aux besoins de l’entreprise, pas d’être joli.  Mais il est quand même nécessaire de proposer quelque chose de beau, surtout pour faire une première bonne impression. Le consultant Tony Bodoh de Nashville explique « L’émotion se déclenche une demi-seconde avant que la logique entre en action. »  Les lecteurs réagissent d’abord au niveau émotionnel avant de prendre le temps de mieux regarder votre page de rapport. Si votre page semble désorganisée, confuse, non professionnelle, votre lecteur risque de ne jamais découvrir la puissance des informations que vous présentez.
 
@@ -296,15 +296,15 @@ Concentrez-vous sur les éléments suivants :
 
 * Créez une apparence ou un thème que vous appliquez à toutes les pages du rapport.
 * Utilisez des images autonomes et d’autres graphiques pour soutenir l’histoire et non la distraire.
-* Et appliquez toutes les bonnes pratiques décrites jusqu’à présent dans cet article.
+* Et appliquez toutes les meilleures pratiques décrites jusqu’à présent dans cet article.
 
 ## <a name="principles-of-visual-design"></a>Principes liés à la conception de visuels
-Nous avons examiné les principes en matière de conception de rapports, à savoir comment organiser les éléments d’un rapport pour que ce dernier soit facile à comprendre.  Nous allons maintenant examiner les principes de conception relatifs aux visuels eux-mêmes.  Dans la section suivante, nous allons détailler des visuels spécifiques et présenter les bonnes pratiques pour certains types souvent utilisés.
+Nous avons examiné les principes en matière de conception de rapports, à savoir comment organiser les éléments d’un rapport pour que ce dernier soit facile à comprendre.  Nous allons maintenant examiner les principes de conception relatifs aux visuels eux-mêmes.  Dans la section suivante, nous allons détailler des visuels spécifiques et présenter les meilleures pratiques pour certains types souvent utilisés.
 
 Dans cette section, nous allons provisoirement laisser notre exemple de page de rapport de côté et voir d’autres exemples.  Une fois que nous aurons vu les principes liés à la conception de visuels, nous reviendrons à notre exemple de page de rapport et vous appliquerez ce que vous aurez appris (avec des instructions pas à pas).  
 
 ### <a name="planning--choose-the-right-visual"></a>Planification - Choisir le bon visuel
-Il est tout aussi important de planifier chaque visuel que de réfléchir à la conception du rapport avant même de commencer à le créer.  Posez-vous la question suivante : « Quelles informations veux-je présenter à l’aide de ce visuel ? ». Déterminez ensuite le type de visuel qui présentera le mieux ces informations. Vous pouvez afficher la progression d’un cycle de vente sous forme d’histogramme, mais un graphique en entonnoir ou en cascade ne conviendrait-il pas mieux ? Pour vous aider, consultez la dernière section de ce livre blanc « Types de visuel et bonnes pratiques » qui décrit les bonnes pratiques pour certains types les plus courants.  Ne soyez pas surpris si le premier type de visuel que vous choisissez n’est pas au final la meilleure option.  Essayez plusieurs types de visuel pour voir lequel est le plus adapté à votre message.
+Il est tout aussi important de planifier chaque visuel que de réfléchir à la conception du rapport avant même de commencer à le créer.  Posez-vous la question suivante : « Quelles informations veux-je présenter à l’aide de ce visuel ? ». Déterminez ensuite le type de visuel qui présentera le mieux ces informations. Vous pouvez afficher la progression d’un cycle de vente sous forme d’histogramme, mais un graphique en entonnoir ou en cascade ne conviendrait-il pas mieux ? Pour vous aider, consultez la dernière section de ce livre blanc « Types de visuel et meilleures pratiques » qui décrit les meilleures pratiques pour certains types les plus courants.  Ne soyez pas surpris si le premier type de visuel que vous choisissez n’est pas au final la meilleure option.  Essayez plusieurs types de visuel pour voir lequel est le plus adapté à votre message.
 
 Sachez reconnaître les différences entre les données catégorielles et quantitatives et quels types de visuel fonctionnent le mieux avec un type de données spécifique. Les données quantitatives sont souvent appelées « mesures » et sont généralement au format numérique. Les données catégoriques sont souvent appelées « dimensions » et peuvent être classées. Ce sujet est traité plus en détail dans la section « Choisir la mesure adéquate » ci-après.
 
@@ -591,7 +591,7 @@ Après
 6. Graphique à barres inférieur : nous avons effectué un tri par année dans l’ordre croissant comme dans le graphique ci-dessus. Nous avons modifié les couleurs pour qu’elles correspondent à la classe. Nous avons modifié le titre. Nous avons désactivé la légende pour donner davantage d’espace aux données. Nous avons activé les étiquettes de données qui n’apparaîtront pas dans le rapport (car le visuel est trop petit pour que les étiquettes soient lisibles), mais qui s’afficheront quand le visuel sera ouvert en mode focus. [En savoir plus sur le mode Focus](service-focus-mode.md). Nous avons ajouté le nombre d’événements (distincts) à **Info-bulles**. Ainsi, quand vous survolez un histogramme empilé, les info-bulles indiquent également le nombre d’événements qui ont été contestés l’année en question.
 7. Interactions avec les visuels : nous avons désactivé les interactions pour les deux cartes dans la mesure où je veux qu’elles affichent toujours le nombre total de jeux et de sports.
 
-## <a name="visual-types-and-best-practices"></a>Types de visuels et bonnes pratiques
+## <a name="visual-types-and-best-practices"></a>Types de visuels et meilleures pratiques
 Power BI fournit de nombreux types de visuel de façon native.  Ajoutez à cela les visuels personnalisés disponibles auprès de Microsoft et de la communauté Power BI et vous obtenez des options trop nombreuses pour être documentées ici. Mais examinons quelques-uns des types de visuels natifs les plus utilisés.  
 
 ### <a name="line-charts"></a>Graphiques en courbes
@@ -604,7 +604,7 @@ L’exemple ci-dessous montre les tendances dans le nombre de médailles distrib
 
 **Figure 47 : Graphiques en courbes**
 
-#### <a name="best-practices"></a>Bonnes pratiques
+#### <a name="best-practices"></a>Meilleures pratiques
 * Lorsque les utilisateurs regardent les graphiques en courbes, la première chose qu’ils voient est la forme de la courbe.  Cela signifie que vous avez besoin d’un axe X qui rend la courbe explicite, par exemple des catégories de temps et de distribution.  Si vous placez des champs de catégorie comme un produit ou une zone géographique sur l’axe X, le graphique en courbes n’est pas intéressant, car la forme de la courbe ne fournit aucune information pertinente.
 * Si vous choisissez de placer plusieurs graphiques les uns au-dessous des autres comme ceci, pour faciliter la comparaison entre les séries, alignez l’axe X. Utilisez des filtres pour vous assurer que la même plage de valeurs est affichée.  Par exemple, si vous examinez des plages de dates, vérifiez qu’elles sont identiques.  Par exemple, de 1896 à 2012 sur les deux graphiques.
 * Tirez pleinement parti de l’espace.  Si cela est pertinent pour vos données, définissez les points de début et de fin de l’axe Y pour éliminer l’espace vide en haut et en bas de votre graphique et mettre en évidence les points de données réels. Pour ce faire, ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau. Développez la zone **Axe Y** et définissez les points de **début** et de **fin**.
@@ -676,7 +676,7 @@ Cet histogramme empilé nous montre que le chiffre d’affaires total augmente a
 
 Dans ce graphique en courbes, il est plus facile de voir que le chiffre d’affaires de la catégorie Commercial a augmenté le plus, suivi par celui de Broadcast et Match Day.
 
-#### <a name="best-practices"></a>Bonnes pratiques
+#### <a name="best-practices"></a>Meilleures pratiques
 * Comme avec les barres/colonnes, vous avez la possibilité de choisir un affichage horizontal ou vertical.   L’affichage horizontal est un meilleur choix si vous avez de longues étiquettes et l’affichage vertical est idéal pour les données de séries chronologiques.  
 * Évitez d’utiliser des graphiques à barres/histogrammes empilés si vous souhaitez afficher les tendances et d’autres modèles de changement au fil du temps.  D’autres graphiques, tels que les graphiques en courbes, sont beaucoup plus efficaces.
 * Vous pouvez également baser la distribution sur le volume total ou comme pourcentage du total.  
@@ -709,7 +709,7 @@ La nouvelle page de rapport a un seul visuel constitué d’un histogramme empil
 
  **Figure 58 : Un unique graphique combiné**
 
-#### <a name="best-practices"></a>Bonnes pratiques
+#### <a name="best-practices"></a>Meilleures pratiques
 Le graphique combiné fonctionne mieux lorsque les deux visuels ont au moins un axe en commun.
 
 Faites attention aux axes ! Est-ce que votre graphique combiné est facile à lire et à interpréter ?  Ou est-ce qu’il utilise différentes valeurs et plages ? Par exemple, si l’échelle de l’axe X de l’histogramme est beaucoup plus petite que celle de l’axe Y du graphique en courbes, votre graphique combiné ne sera pas pertinent.  Par exemple, notez la troisième ligne (en cyan) tout en bas.
@@ -752,7 +752,7 @@ Le graphique en bulles ci-dessous s’intéresse à l’Amérique du Sud et comp
 
 Si vous ajoutez un axe de lecture, vous pouvez prétendre être Hans Rosling et raconter l’histoire au fil du temps (https://www.youtube.com/watch?v=PbaDBJWCeD4). Pour ajouter un axe de lecture, faites glisser un champ de date/heure dans la zone **Axe de lecture**.
 
-#### <a name="best-practices"></a>Bonnes pratiques
+#### <a name="best-practices"></a>Meilleures pratiques
 * Les graphiques en nuages de points et les graphiques à bulles sont un excellent moyen de présenter des informations. Mais ils n’ont pas une grande utilité lorsque vous tentez d’explorer des données.  C’est ce que Stephen Few souligne dans le paragraphe ci-dessous *Cette approche est puissante lorsqu’elle sert à raconter une histoire. Quand Rosling raconte ce qui se passe dans le graphique lorsque les bulles changent de place et de valeur, en nous montrant ce qu’il veut que nous voyons, les informations prennent vie. Toutefois, les graphiques en bulles animés sont bien moins efficaces pour explorer et donner un sens aux données par soi-même. Je ne pense pas que Rosling utilise cette méthode pour découvrir des histoires, mais seulement pour les raconter une fois qu’elles sont connues. Nous ne pouvons pas regarder plusieurs bulles à la fois lorsqu’elles se déplacent. Nous devons donc exécuter l’animation plusieurs fois pour essayer de comprendre ce qui se passe. Nous pouvons ajouter des pistes aux bulles sélectionnées, ce qui permet de voir la trajectoire complète suivie par ces bulles, mais si les pistes sont utilisées pour plus que quelques bulles, le graphique devient rapidement trop encombré. Fondamentalement, ce que je dis, c’est que ce n’est pas la meilleure façon d’afficher ces informations à des fins d’analyse et d’exploration.*
 * Ajoutez des étiquettes aux axes X et Y pour aider à raconter l’histoire.  Avec les graphiques en bulles plus particulièrement, il existe de nombreux composants à lire et les étiquettes aident les lecteurs à comprendre le visuel.
 * Ajoutez des étiquettes de données pour faciliter l’interprétation du visuel.  Avec les graphiques en bulles plus particulièrement, lorsque vous avez plusieurs éléments dans la légende, il peut être difficile de différencier des couleurs similaires.  Dans le visuel ci-dessus, les couleurs de légende pour Suriname, Columbia et Ecuador sont très similaires.
@@ -814,7 +814,7 @@ Pour plus d’informations, consultez :
 * [Didacticiel : Indicateurs de performance clés dans Power BI](power-bi-visualization-kpi.md)
 
 ## <a name="conclusion"></a>Conclusion
-Il est maintenant temps de tester ces bonnes pratiques.  Gardez le contact et partagez les vôtres. Vous n’êtes pas d’accord avec nos recommandations ou vous avez trouvé une bonne raison d’enfreindre les règles ?  Faites-nous part de vos commentaires à ce sujet.  
+Il est maintenant temps de tester ces meilleures pratiques.  Gardez le contact et partagez les vôtres. Vous n’êtes pas d’accord avec nos recommandations ou vous avez trouvé une bonne raison d’enfreindre les règles ?  Faites-nous part de vos commentaires à ce sujet.  
 
 ### <a name="book-recommendations"></a>Recommandations de livres
 Il existe plusieurs bons livres qui peuvent aider les équipes à réviser les techniques de conception de visuels. Nous vous recommandons fortement de lire le livre *Information Dashboard Design* de Stephen Few. Il approfondit le sujet dans deux autres livres : *Show Me the Numbers* et *Now You See It*. Stephen Few et d’autres ont trouvé leur inspiration auprès de Edward R. Tufte, dont le livre *The Visual Display of Quantitative Information* est considéré comme un classique dans le secteur. Tufte a également écrit *Visual Explanations*, *Envisioning Information* et *Beautiful Evidence*. Nous vous recommandons également le nouvel ouvrage de Andy Kirk *Data Visualization: A Handbook for Data Driven Design*. Voici d’autres auteurs recommandés : Lachlan James, William McKnight et Boris Evelson (Forrester), Darkhorse Analytics.

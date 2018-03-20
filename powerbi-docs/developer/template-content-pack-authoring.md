@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/09/2017
 ms.author: maghan
-ms.openlocfilehash: 9b8de53534c94ad995e2d953cfc6994b93915bd8
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: bfed948be385439d33b335b08da68b103cd7c1b8
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="author-template-content-packs-in-power-bi"></a>Créer des packs de contenu de modèle dans Power BI
 La création d’un pack de contenu de modèle implique l’utilisation de Power BI Desktop et PowerBI.com. Il existe quatre composants pour votre pack de contenu :
@@ -29,7 +29,7 @@ La création d’un pack de contenu de modèle implique l’utilisation de Power
 * Les requêtes vous permettent de [connecter](../desktop-connect-to-data.md) et [transformer](../desktop-query-overview.md) les données, ainsi que de définir les [paramètres](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
 * Le modèle de données vous permet de créer les [relations](../desktop-create-and-manage-relationships.md), [mesures](../desktop-measures.md) et améliorations Q&R  
 * Les [pages](../desktop-report-view.md) de rapport comprennent des éléments visuels et des filtres pour vous fournir des analyses sur vos données  
-* Le [tableau de bord](../service-dashboards.md) et les [mosaïques](../service-dashboard-create.md) vous offrent une vue d’ensemble des analyses incluses  
+* Le [tableau de bord](../service-dashboards.md) et les [vignettes](../service-dashboard-create.md) vous offrent une vue d’ensemble des analyses incluses  
 
 Vous connaissez peut-être chacun de ces éléments en tant que fonctionnalités Power BI existantes. Lors de la création d’un pack de contenu, d’autres points sont à prendre en compte pour chaque aspect. Consultez la section suivante pour plus de détails.
 
@@ -122,10 +122,10 @@ Pour créer un tableau de bord pour votre pack de contenu de modèle, téléchar
 > 
 
 ### <a name="additional-dashboard-tips"></a>Conseils supplémentaires pour le tableau de bord
-* Conservez le même thème lors de l’épinglage de sorte que les mosaïques sur votre tableau de bord soient cohérentes  
+* Conservez le même thème lors de l’épinglage de sorte que les vignettes sur votre tableau de bord soient cohérentes  
 * Épinglez un logo au thème afin que les consommateurs sachent d’où provient le pack  
-* La disposition suggérée pour travailler avec la plupart des résolutions d’écran est 5-6 petites mosaïques de large  
-* Toutes les mosaïques d’un tableau de bord doivent avoir des titres/sous-titres appropriés  
+* La disposition suggérée pour travailler avec la plupart des résolutions d’écran est 5-6 petites vignettes de large  
+* Toutes les vignettes d’un tableau de bord doivent avoir des titres/sous-titres appropriés  
 * Considérez les regroupements dans le tableau de bord pour différents scénarios, verticalement ou horizontalement  
 
 <a name="restrictions"></a>

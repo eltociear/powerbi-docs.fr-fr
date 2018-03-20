@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/07/2017
+ms.date: 03/02/2018
 ms.author: maghan
 LocalizationGroup: Administration
-ms.openlocfilehash: 09bd3064c7a694355255cb3cca29ade02986d42e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 55394392de78bcd1a2c38ecf92dd3218c8660132
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -31,7 +31,14 @@ Power BI s’intègre avec Azure Active Directory B2B (Azure AD B2B) pour permet
 > [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
 
 > [!NOTE]
+> Vous devez **activer** la fonctionnalité [Paramètres d’exportation et de partage](service-admin-portal.md#export-and-sharing-settings) dans les paramètres du locataire du portail d’administration Power BI avant d’inviter des utilisateurs.
+
+> [!NOTE]
 > Cette fonctionnalité n’est pas disponible actuellement avec les applications mobiles Power BI. Sur un appareil mobile, vous pouvez afficher le contenu Power BI partagé à l’aide d’Azure AD B2B dans un navigateur. 
+
+## <a name="who-can-you-invite"></a>Qui pouvez-vous inviter ?
+
+Vous pouvez inviter des utilisateurs qui ont une adresse e-mail, y compris des comptes personnels comme gmail.com, outlook.com ou hotmail.com. Dans Azure B2B, ils sont appelés « ID sociaux ». Pour plus d’informations, consultez [Azure B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ## <a name="invite-guest-users"></a>Inviter des utilisateurs
 
@@ -63,8 +70,9 @@ L’utilisateur invité doit sélectionner **Mise en route** dans l’e-mail d�
 
 ### <a name="ad-hoc-invites"></a>Invitations ad hoc
 
-Pour inviter un utilisateur externe à un moment quelconque, ajoutez-le à la liste d’accès d’une application lors de publication de celle-ci.
+Pour effectuer une invitation, ajoutez l’utilisateur externe à votre tableau de bord ou rapport à l’aide de l’interface utilisateur de partage, ou votre application à partir de la page d’accès.
 
+L’exemple suivant montre comment inviter un utilisateur externe à utiliser une application.
 ![Utilisateur externe ajouté à la liste d’accès d’une application](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
 L’utilisateur invité reçoit un e-mail l’informant que l’application a été partagée avec lui.
@@ -98,8 +106,9 @@ L’utilisateur invité dispose déjà d’une licence Power BI Pro assignée à
 
 ![Utilisateur invité apportant sa propre licence](media/service-admin-azure-ad-b2b/license-approach3.png)
 
-## <a name="limitations"></a>Limites
+## <a name="considerations-and-limitations"></a>Considérations et limitations
 
+* Si vous souhaitez inviter des utilisateurs qui ont des comptes e-mail personnels comme gmail.com, outlook.com ou hotmail.com, vous pouvez regarder cette [vidéo incorporée](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-redemption-experience) pour voir un exemple de la procédure d’inscription d’un utilisateur.
 * Les invités B2B externes peuvent uniquement consommer le contenu. Les invités B2B externes peuvent consulter les applications, les tableaux de bord, les rapports, exporter des données et créer des abonnements par courrier pour les tableaux de bord et les rapports. Ils ne peuvent pas accéder aux espaces de travail ou publier leur propre contenu.
 * Cette fonctionnalité n’est pas disponible actuellement avec les applications mobiles Power BI. Sur un appareil mobile, vous pouvez afficher le contenu Power BI partagé à l’aide d’Azure AD B2B dans un navigateur.
 * Le recours aux utilisateurs invités avec Power BI n’est pas pris en charge au sein des clouds souverains (administration).

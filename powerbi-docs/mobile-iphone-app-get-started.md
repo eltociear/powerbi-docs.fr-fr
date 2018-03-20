@@ -17,16 +17,16 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: e824c1e582b8ed3cf0953b59b790e90271a6d38c
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+ms.openlocfilehash: 9a2f381ea97fb62d85841cbfcace8352007dd60b
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-an-iphone-or-ipod-touch"></a>Bien démarrer avec l’application mobile Power BI sur iPhone ou iPod Touch
 L’application Microsoft Power BI pour iOS sur iPhone et iPod Touch permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. Et tenez-vous au courant des données les plus à jour sur votre [Apple Watch](mobile-apple-watch.md).  
 
-![Tableau de bord de application mobile iPhone Power BI](media/mobile-iphone-app-get-started/power-bi-mobile-get-started-dash.png)
+![Tableau de bord de l’application mobile iPhone Power BI](media/mobile-iphone-app-get-started/power-bi-mobile-get-started-dash.png)
 
 Vous créez des rapports Power BI dans Power BI Desktop, puis les publiez :
 
@@ -140,4 +140,5 @@ Découvrez ce que vous pouvez faire d’autre dans l’application iPhone avec 
 ### <a name="see-also"></a>Voir aussi
 * [Prise en main de Power BI](service-get-started.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+
 

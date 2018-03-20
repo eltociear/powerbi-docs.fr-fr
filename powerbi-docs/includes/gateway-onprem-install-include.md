@@ -17,7 +17,7 @@ Il existe quelques aspects à prendre en compte lors de l’installation d’un 
 * Vous ne pouvez pas installer les passerelles sur un contrôleur de domaine.
 * Vous pouvez installer jusqu’à deux passerelles de données locales sur le même ordinateur, une dans chaque mode (personnel et standard). 
 * Vous ne pouvez pas avoir plusieurs passerelles exécutées dans le même mode sur le même ordinateur.
-* Vous pouvez installer plusieurs passerelles de données locales sur différents ordinateurs, et les gérer toutes à partir de la même interface de gestion de passerelle Power BI (à l’exception du mode personnel - voir la puce suivante).
+* Vous pouvez installer plusieurs passerelles de données locales sur différents ordinateurs, et les gérer toutes à partir de la même interface de gestion de passerelle Power BI (à l’exception du mode personnel, comme expliqué au point suivant).
 * Vous ne pouvez avoir qu’une seule passerelle en mode personnel en cours d’exécution pour chaque utilisateur Power BI. Si vous installez une autre passerelle en mode personnel pour le même utilisateur, même sur un autre ordinateur, l’installation la plus récente remplace la précédente installation.
 
 ![On-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)

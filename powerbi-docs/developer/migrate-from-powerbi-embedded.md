@@ -1,6 +1,6 @@
 ---
-title: "Comment migrer le contenu d’une collection d’espaces de travail Power BI Embedded vers Power BI"
-description: "Découvrez comment migrer de Power BI Embedded vers le service Power BI, et tirez parti des progrès réalisés sur le plan de l’incorporation dans les applications."
+title: "Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI"
+description: "Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications."
 services: powerbi
 documentationcenter: 
 author: markingmyname
@@ -10,41 +10,41 @@ editor:
 tags: 
 qualityfocus: no
 qualitydate: 
-ms.service: powerbi
+ms.Embedded: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/24/2018
+ms.date: 03/06/2018
 ms.author: maghan
-ms.openlocfilehash: 59d395d11839903108f811ff4a6022ea04cadc8f
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: c8ad315976dd1ca47d6b4dc2fd9a191a11e044c7
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-migrate-power-bi-embedded-workspace-collection-content-to-power-bi"></a>Comment migrer le contenu d’une collection d’espaces de travail Power BI Embedded vers Power BI
-Découvrez comment migrer de Power BI Embedded vers le service Power BI, et tirez parti des progrès réalisés sur le plan de l’incorporation dans les applications.
+# <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
+Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications.
 
-Microsoft a récemment [annoncé Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), un nouveau modèle de gestion des licences basé sur la capacité, qui augmente la flexibilité en ce qui concerne la manière dont les utilisateurs consultent, partagent et distribuent du contenu. L’offre renforce également l’extensibilité et les performances du service Power BI.
+Microsoft [a récemment annoncé Power BI Embedded](https://powerbi.microsoft.com/en-us/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), un nouveau modèle de gestion des licences basé sur la capacité, qui apporte aux utilisateurs plus de flexibilité dans la consultation, le partage et la distribution de leur contenu. L’offre améliore également la scalabilité et les performances.
 
-Avec l’introduction de Power BI Premium, Power BI Embedded et le service Power BI convergent pour faire progresser la manière dont le contenu Power BI est incorporé dans les applications. Cela signifie que vous disposez d’une surface d’API, d’un ensemble cohérent de fonctionnalités et de l’accès aux dernières fonctionnalités de Power BI telles que des tableaux de bord, des passerelles et des espaces de travail d’application lors de l’incorporation de votre contenu. Plus tard, vous pourrez commencer à utiliser Power BI Desktop et passer au déploiement avec Power BI Premium qui sera généralement disponible à la fin du deuxième trimestre 2017.
+Avec Power BI Embedded, vous disposez d’une surface d’API, d’un ensemble cohérent de fonctionnalités et de l’accès aux dernières fonctionnalités de Power BI, telles que les tableaux de bord, les passerelles et les espaces de travail d’application, lors de l’incorporation de votre contenu. Plus tard, vous pourrez commencer à utiliser Power BI Desktop et passer au déploiement avec Power BI Embedded.
 
-Le service Power BI Embedded actuel restera disponible pendant une période limitée après la mise à disposition générale de l’offre convergée. Les clients sous Contrat Entreprise auront accès jusqu’à l’expiration de leur contrat. Les clients ayant acquis Power BI Embedded via des canaux directs ou CSP bénéficieront d’un accès pendant un an à partir de la mise à la disposition générale de Power BI Premium.  Cet article fournit quelques conseils pour la migration du service Azure vers le service Power BI et explique ce à quoi il faut s’attendre concernant les modifications dans votre application.
+La collection d’espaces de travail Power BI actuelle reste encore disponible pendant une durée limitée. Les clients avec un contrat Entreprise gardent l’accès jusqu’à l’expiration de leur contrat. Les clients qui ont acquis la collection d’espaces de travail Power BI par le biais de canaux directs ou CSP conservent l’accès pendant un an à partir de la version en disponibilité générale de Power BI Embedded.  Cet article fournit des conseils pour la migration de la collection d’espaces de travail Power BI vers la nouvelle version de Power BI Embedded, et explique les changements que cette migration entraîne dans votre application.
 
 > [!IMPORTANT]
-> Si la migration dépend du service Power BI, les utilisateurs de votre application ne dépendent pas de Power BI lorsque vous utilisez un **jeton incorporé**. Ils n’ont pas besoin de s’inscrire à Power BI pour afficher le contenu incorporé dans votre application. Vous pouvez utiliser cette approche d’incorporation pour les utilisateurs non-Power BI.
+> Il y a forcément une dépendance entre la migration et Power BI Embedded, mais il n’y a pas de dépendance entre Power BI et les utilisateurs de votre application qui utilisent un **jeton incorporé**. En effet, ces utilisateurs n’ont pas besoin de s’inscrire à Power BI pour afficher le contenu incorporé dans votre application. Vous pouvez utiliser cette approche d’incorporation pour les utilisateurs de contenu incorporé non-Power BI.
 > 
 > 
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
 ## <a name="prepare-for-the-migration"></a>Préparer la migration
-Pour préparer la migration du service Power BI Embedded Azure vers le service Power BI, vous devez effectuer quelques opérations. Vous allez avoir besoin d’un client disponible ainsi que d’un utilisateur détenteur d’une licence Power BI Pro.
+Pour préparer la migration d’une collection d’espaces de travail Power BI vers Power BI Embedded, vous devez effectuer quelques opérations. Vous allez avoir besoin d’un client disponible ainsi que d’un utilisateur détenteur d’une licence Power BI Pro.
 
 1. Assurez-vous que vous avez accès à un client Azure Active Directory (Azure AD).
    
-    Vous devez déterminer quel locataire utiliser.
+    Vous devez déterminer quelle configuration de locataire utiliser.
    
    * Utiliser le locataire Power BI existant de votre entreprise ?
    * Utiliser un locataire distinct pour votre application ?
@@ -67,7 +67,7 @@ Les comptes suivants doivent exister au sein de votre client.
 2. Des comptes pour les analystes devant créer du contenu.
    
     Ces utilisateurs doivent être affectés aux espaces de travail d’application en fonction des besoins.
-3. Un compte d’utilisateur *principal* d’applications, ou compte de service.
+3. Un compte d’utilisateur *principal* d’applications, ou compte incorporé.
    
     Le serveur principal d’applications stocke les informations d’identification de ce compte et les utilise pour se procurer le jeton Azure AD à utiliser avec les API REST Power BI. Ce compte est utilisé pour générer le jeton incorporé pour l’application. Ce compte doit également être l’administrateur des espaces de travail d’applications créés pour l’incorporation.
    
@@ -100,16 +100,16 @@ Pour créer un espace de travail d’applications dans Power BI, un utilisateur 
 > 
 
 ## <a name="content-migration"></a>Migration de contenu
-La migration du contenu de vos collections d’espaces de travail vers le service Power BI peut être effectuée parallèlement à votre solution actuelle et ne requiert aucun temps d’arrêt.
+La migration du contenu de vos collections d’espaces de travail vers Power BI Embedded peut être effectuée parallèlement à votre solution actuelle et ne demande aucun temps d’arrêt.
 
-Un **outil de migration** est à votre disposition pour vous aider à copier le contenu de Power BI Embedded vers le service Power BI. Celui-ci est particulièrement utile si votre contenu est volumineux. Pour plus d’informations, consultez [Outil de migration Power BI Embedded](migrate-tool.md).
+Un **outil de migration** est à votre disposition pour vous aider à copier le contenu de collections d’espaces de travail Power BI vers Power BI Embedded. Celui-ci est particulièrement utile si votre contenu est volumineux. Pour plus d’informations, consultez [Outil de migration Power BI Embedded](migrate-tool.md).
 
 La migration de contenu repose principalement sur deux API.
 
 1. Download PBIX (Télécharger PBIX) : cette API permet de télécharger les fichiers PBIX qui ont été chargés dans Power BI après octobre 2016.
 2. Import PBIX (Importer PBIX) : cette API charge n’importe quel fichier PBIX dans Power BI.
 
-Pour certains extraits de code associés, consultez [Extraits de code pour migrer du contenu à partir de Power BI Embedded](migrate-code-snippets.md).
+Pour obtenir des extraits de code associés, consultez [Extraits de code pour migrer du contenu à partir d’une collection d’espaces de travail Power BI](migrate-code-snippets.md).
 
 ### <a name="report-types"></a>Types de rapports
 Il existe différents types de rapports, chacun nécessitant un flux de migration différent.
@@ -148,9 +148,9 @@ L’API Download PBIX ne prend pas en charge les jeux de données *API de transm
 **Flux**
 
 1. Appelez l’API « Create dataset » (Créer un jeu de données) avec le jeu de données Json pour créer un jeu de données dans l’espace de travail SaaS.
-2. Régénérez le rapport pour le jeu de données créé*.
+2. Regénérez le rapport pour le jeu de données créé*.
 
-Des solutions de contournement peuvent être utilisées pour migrer le rapport de l’API de transmission de PaaS vers SaaS en essayant ce qui suit.
+Vous pouvez migrer le rapport de l’API d’envoi (push) de PaaS vers SaaS en essayant les solutions de contournement suivantes.
 
 1. Chargement de PBIX factices vers l’espace de travail PaaS.
 2. Clonez le rapport de l’API de transmission et liez-le au PBIX factice de l’étape 1.
@@ -160,7 +160,7 @@ Des solutions de contournement peuvent être utilisées pour migrer le rapport d
 6. Reliez le rapport au jeu de données de l’API de transmission.
 
 ## <a name="create-and-upload-new-reports"></a>Créer et charger de nouveaux rapports
-Outre le contenu que vous avez migré à partir du service Azure Power BI Embedded, vous pouvez créer vos rapports et jeux de données à l’aide de Power BI Desktop, puis publier ces rapports dans un espace de travail d’applications. Pour publier les rapports dans un espace de travail d’applications, l’utilisateur final doit disposer d’une licence Power BI Pro.
+En plus du contenu que vous avez migré à partir de la collection d’espaces de travail Power BI, vous pouvez créer vos rapports et jeux de données à l’aide de Power BI Desktop, puis publier ces rapports dans un espace de travail d’applications. Pour publier les rapports dans un espace de travail d’applications, l’utilisateur final doit disposer d’une licence Power BI Pro.
 
 ## <a name="rebuild-your-application"></a>Régénérer votre application
 1. Pour utiliser les API REST de Power BI et l’emplacement du rapport dans powerbi.com, vous devez modifier application.
@@ -174,30 +174,29 @@ Dans votre application, vous devez mapper les utilisateurs que vous gérez au se
 Lorsque vous êtes prêt à passer à la production, vous devez procéder comme suit.
 
 * Si vous utilisez un locataire distinct pour le développement, veillez à ce que vos espaces de travail d’applications ainsi que vos tableaux de bord et rapports soient disponibles dans votre environnement de production. Vérifiez également que vous avez créé l’application dans Azure AD pour votre locataire de production et attribué les autorisations d’application appropriées comme indiqué à l’étape 1.
-* Achetez une capacité adaptée à vos besoins. Pour mieux comprendre de quelle quantité et de quel type de capacité vous avez besoin, consultez le [Livre blanc Planification de la capacité - Analytique incorporée](https://aka.ms/pbiewhitepaper). Vous pouvez [acheter de la capacité](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) dans Azure.
+* Achetez une capacité adaptée à vos besoins. Pour mieux comprendre de quelle quantité et de quel type de capacité vous avez besoin, consultez le [Livre blanc sur la planification de la capacité d’analytique pour Power BI Embedded](https://aka.ms/pbiewhitepaper). Vous pouvez [acheter de la capacité](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) dans Azure.
 * Modifiez l’espace de travail d’applications et attribuez-le à une capacité Premium sous Avancé.
  
-    ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity.png)
+    ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
     
-* Déployez votre application mise à jour en production, puis commencez à incorporer des rapports à partir du service Power BI.
+* Déployez votre application mise à jour dans votre environnement de production, puis commencez à incorporer des rapports à partir de Power BI Embedded.
 
 ## <a name="after-migration"></a>Après la migration
 Vous devez effectuer un peu de nettoyage dans Azure.
 
-* Supprimez tous les espaces de travail de la solution déployée au sein du service Azure de Power BI Embedded.
+* Supprimez tous les espaces de travail de la solution déployée au sein de la collection d’espaces de travail Power BI incorporée dans Azure.
 * Supprimez toutes les collections d’espaces de travail existant dans Azure.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Incorporation avec Power BI](embedding.md)  
-[Outil de migration Power BI Embedded](migrate-tool.md)  
-[Extraits de code pour migrer du contenu à partir de Power BI Embedded](migrate-code-snippets.md)  
+[Outil de migration des collections d’espaces de travail Power BI](migrate-tool.md)  
+[Extraits de code pour migrer du contenu à partir d’une collection d’espaces de travail Power BI](migrate-code-snippets.md)  
 [Comment incorporer vos tableaux de bord, rapports et vignettes Power BI](embedding-content.md)  
 [Qu’est-ce que Power BI Premium ?](../service-premium.md)  
 [Dépôt Git d’API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Dépôt Git de C# pour Power BI ](https://github.com/Microsoft/PowerBI-CSharp)  
 [Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Livre blanc Planification d’une capacité d’analytique incorporée](https://aka.ms/pbiewhitepaper)  
+[Livre blanc sur la planification de la capacité d’analytique des collections d’espaces de travail](https://aka.ms/pbiewhitepaper)  
 [Livre blanc sur Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-

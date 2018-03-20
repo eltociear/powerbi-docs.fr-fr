@@ -1,5 +1,5 @@
 ---
-title: "Utilisation de signets dans Power BI (préversion)"
+title: "Utilisation de signets dans Power BI"
 description: "Les signets dans Power BI Desktop vous permettent d’enregistrer les vues et les paramètres dans vos rapports, ainsi que de créer des présentations de type récit."
 services: powerbi
 documentationcenter: 
@@ -15,16 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3a56983f48d80cf39b89958db4327e3632ee733e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 706662e9fd7c6bd41015b286a7b7f1025e40a15e
+ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi-preview"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI (préversion)
+# <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
 À l’aide des **signets** dans Power BI, vous pouvez capturer la vue actuellement configurée d’une page de rapport, y compris le filtrage et l’état des visuels, puis revenir à cet état en sélectionnant simplement le signet enregistré. 
 
 Vous pouvez également créer une collection de signets, les réorganiser dans l’ordre de votre choix, puis parcourir chaque signet d’une présentation pour mettre en avant une série d’insights ou le récit que vous souhaitez raconter avec vos visuels et rapports. 
@@ -33,12 +33,14 @@ Vous pouvez également créer une collection de signets, les réorganiser dans l
 
 Les signets ont de nombreuses utilisations. Vous pouvez les utiliser pour suivre la progression de la création de rapports (les signets sont faciles à ajouter, supprimer et renommer). Vous pouvez également créer des signets pour créer une présentation de type PowerPoint qui parcourt les signets dans l’ordre, en créant ainsi un récit avec votre rapport. Il existe peut-être d’autres utilisations en fonction de votre usage.
 
-### <a name="enable-the-bookmarks-preview"></a>Activer la préversion des signets
-Vous pouvez essayer la nouvelle fonctionnalités **Signets** disponible depuis la version d’**octobre 2017** de **Power BI Desktop**, et pour les rapports où les signets sont activés, dans le **service Power BI** également. Pour activer cette fonctionnalité en préversion, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en préversion**, puis activez la case en regard de **Signets**. Vous devez redémarrer Power BI Desktop après avoir effectué la sélection.
+### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Activer la préversion des signets (versions antérieures à mars 2018)
+Depuis la version de mars 2018 pour Power BI Desktop, les signets sont en disponibilité générale. 
+
+Nous vous conseillons de toujours effectuer la mise à niveau vers la version la plus récente. Si vous utilisez une version antérieure de Power BI Desktop, vous pouvez essayer la nouvelle fonctionnalité **Signets** disponible depuis la version d’**octobre 2017** de **Power BI Desktop** et, pour les rapports où les signets sont activés, dans le **service Power BI** également. Pour activer la fonctionnalité en préversion, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en préversion**, puis cochez la case à côté de **Signets**. 
 
 ![Activer les signets dans la fenêtre Options](media/desktop-bookmarks/bookmarks_02.png)
 
-Après avoir effectué la sélection, vous devez redémarrer **Power BI Desktop**.
+Vous devrez redémarrer **Power BI Desktop** après avoir activé la préversion des signets.
 
 ## <a name="using-bookmarks"></a>Utilisation des signets
 Pour utiliser des signets, sélectionnez le ruban **Vue**, puis activez la case du **volet Signets**. 
@@ -147,14 +149,13 @@ Dans le **service Power BI**, le **volet Signets** fonctionne comme dans **Power
 Notez que vous devez utiliser la barre de titre de signets en gris pour naviguer entre les signets et pas les flèches noires (celles-ci vous permettent de passer d’une page de rapport à une autre, et pas d’un signet à un autre).
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
-Dans cette préversion de la fonctionnalité **Signets**, vous devez garder à l’esprit les considérations et limitations suivantes.
+Pour cette préversion des **signets**, vous devez garder à l’esprit les considérations et limitations suivantes.
 
 * Les visuels personnalisés ne prennent pas en charge les signets s’ils sont la *source* du filtre. Si vous utilisez des visuels personnalisés pour filtrer les éléments sur une page (par exemple, le segment Chiclet) et que vous revenez sur cette page à l’aide d’un signet, la page peut être filtrée, mais le visuel personnalisé n’est pas mis à jour de manière à afficher la façon dont la page est filtrée. 
 * L’état de sélection croisée d’un volet de rapport n’est *pas* enregistré lorsque vous créez un signet. 
 * Si vous ajoutez un visuel sur une page de rapport après la création d’un signet, le visuel s’affiche dans son état par défaut. Cela signifie également que si vous introduisez un segment dans une page où vous avez précédemment créé des signets, le segment se comporte avec son état par défaut.
 * Le déplacement parmi les visuels après la création d’un signet est reflété dans le signet. 
 * Vous *devez* avoir au moins un signet dans votre rapport, lorsque vous publiez celui-ci dans le **service Power BI**, afin que les signets soient disponibles dans le service. Il s’agit d’une exigence pour chaque rapport que vous publiez.
-* Étant donné que les signets sont actuellement en préversion, ils ne sont pas encore disponibles dans [**Power BI Desktop pour Report Server**](report-server/quickstart-create-powerbi-report.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur les fonctionnalités qui sont similaires ou pour interagir avec des signets, consultez les articles suivants :

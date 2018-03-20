@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 5f22d39c17ddbbd06a9ed38eeb162d1106607105
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e584f48f5d3650821aac094ebfde7eef5261cc36
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="power-bi-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI 
 Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI.  
@@ -124,7 +124,7 @@ Pour découvrir plus en détail quels éléments visuels consomment le plus de t
    - Nom du serveur : localhost:[numéro de port identifié précédemment] 
    - Sur l’écran suivant, sélectionnez **Exécuter** 
    - SQL Server Profiler est maintenant actif et étudie activement les requêtes envoyées par Power BI Desktop. 
-   - Lorsque les requêtes sont exécutées, vous pouvez voir la durée et le temps processeur correspondants, qu permettent d’identifier les requêtes qui constituent des goulots d’étranglement.  
+   - Lorsque les requêtes sont exécutées, vous pouvez voir la durée et le temps processeur correspondants, qui permettent d’identifier les requêtes qui constituent des goulots d’étranglement.  
 
 SQL Profiler vous permet d’identifier les requêtes qui utilisent le plus de temps processeur, et qui sont susceptibles d’être des goulots d’étranglement des performances. Les éléments visuels qui exécutent ces requêtes doivent dès lors être au cœur de l’optimisation continue. 
 

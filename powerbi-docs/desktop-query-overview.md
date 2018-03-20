@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 8b7fb21e533fecbfe93481741ae53b0073f6a776
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 937cbf39d08bd830c16e9b2634f3d5a747689f54
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Présentation des requêtes dans Power BI Desktop
 Avec **Power BI Desktop**, vous pouvez vous connecter à tout un monde de données, créer des rapports attrayants et fondamentaux, puis les partager avec d’autres utilisateurs, qui peuvent ensuite s’appuyer sur votre travail pour développer leurs talents en matière de décisionnel.
@@ -102,7 +102,7 @@ Le volet gauche affiche le nombre de requêtes actives, ainsi que le nom des req
 ![](media/desktop-query-overview/queryoverview_theleftpane.png)
 
 ## <a name="the-center-data-pane"></a>Volet central (données)
-Dans le volet central, ou volet Données, les données issues de la requête sélectionnée sont affichées. C’est à cet endroit que l’essentiel du travail de la vue Requête est effectué.
+Le volet central, ou volet Données, affiche les données issues de la requête sélectionnée. C’est à cet endroit que l’essentiel du travail de la vue Requête est effectué.
 
 Dans l’image suivante, la connexion de données web établie précédemment s’affiche, la colonne **Overall score** (Score global) est sélectionnée et les éléments de menu disponibles s’affichent quand l’utilisateur clique avec le bouton droit sur l’en-tête de cette colonne. Notez que la plupart de ces éléments de menu contextuel correspondent à des boutons des onglets du ruban.  
 

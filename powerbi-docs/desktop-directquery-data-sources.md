@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/09/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3630d876f3e32cbe981d7fb5bcc38d9da1a257f2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2f395a5030cb2e025b8b69fa9b5375f471dea452
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Sources de données prises en charge par DirectQuery dans Power BI
 **Power BI Desktop** et le **service Power BI** possèdent de nombreuses sources de données auxquelles vous pouvez vous connecter pour accéder aux données. Cet article décrit quelles sources de données pour Power BI prennent en charge la méthode de connexion appelée **DirectQuery**. Pour plus d’informations sur DirectQuery, consultez [**DirectQuery dans Power BI**](desktop-directquery-about.md).
@@ -37,7 +37,8 @@ Les sources de données suivantes prennent en charge DirectQuery dans Power BI�
 * IBM Netezza (bêta)
 * Impala (version 2.x)
 * Oracle Database (version 12 et versions ultérieures)
-* SAP Business Warehouse (bêta)
+* SAP Business Warehouse Application Server
+* SAP Business Warehouse Message Server (bêta)
 * SAP HANA
 * Snowflake
 * Spark (bêta) (version 0.9 et versions ultérieures)
@@ -62,11 +63,14 @@ Le tableau suivant indique si une **passerelle de données locale** est nécessa
 | Base de données Teradata |Oui |
 | Amazon Redshift |Non |
 | Impala (version 2.x) |Oui |
-| Snowflake (préversion) |Pas encore pris en charge dans le **service Power BI** |
+| Snowflake |Oui |
 | Spark (bêta), version 0.9 et versions ultérieures |Pas encore pris en charge dans le **service Power BI** |
-| Azure HDInsight Spark (bêta) |Pas encore pris en charge dans le **service Power BI** |
-| IBM Netezza (bêta) |Pas encore pris en charge dans le **service Power BI** |
-| SAP Business Warehouse (bêta) |Pas encore pris en charge dans le **service Power BI** |
+| Azure HDInsight Spark (bêta) |Non |
+| IBM Netezza |Oui |
+| Serveur d’applications SAP Business Warehouse |Oui |
+| Serveur de messages SAP Business Warehouse |Pas encore pris en charge dans le **service Power BI** |
+| Google BigQuery |Non |
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur DirectQuery, consultez les ressources suivantes :

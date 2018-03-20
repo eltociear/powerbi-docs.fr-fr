@@ -18,18 +18,18 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d15aeaf90e748b9ba14a0160042d2db4f36d3150
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 71a2908357164cf93870800947ae5fa0aa04c75c
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
 
 Lorsque vous chargez des données dans Power BI Desktop, celui-ci tente de convertir le type de données de la colonne source en un type de données qui prend mieux en charge un stockage, des calculs et une visualisation des données plus efficaces. Par exemple, si une colonne de valeurs que vous importez à partir d’Excel ne contient aucune valeur fractionnaire, Power BI Desktop convertit toute la colonne de données en type de données Nombre entier, qui convient davantage au stockage des nombres entiers.
 
-Ceci est important, car certaines fonctions DAX ont des exigences particulières en matière de type de données. Même si très souvent DAX convertit implicitement un type de données pour vous, cela n’est pas toujours le cas.  Par exemple, si une fonction DAX nécessite un type de données Date et que le type de données de votre colonne est Texte, la fonction DAX ne fonctionnera pas correctement.  Il est donc important et utile d’obtenir le type de données correct pour une colonne. Les conversions implicites sont décrites plus loin dans cet article.
+Ce concept est important, car certaines fonctions DAX ont des exigences particulières en matière de type de données. Même si très souvent DAX convertit implicitement un type de données pour vous, cela n’est pas toujours le cas.  Par exemple, si une fonction DAX nécessite un type de données Date et que le type de données de votre colonne est Texte, la fonction DAX ne fonctionnera pas correctement.  Il est donc important et utile d’obtenir le type de données correct pour une colonne. Les conversions implicites sont décrites plus loin dans cet article.
 
 ## <a name="determine-and-specify-a-columns-data-type"></a>Déterminer et spécifier le type de données d’une colonne
 Dans Power BI Desktop, vous pouvez déterminer et spécifier le type de données d’une colonne dans l’Éditeur de requête ou dans la vue Données ou Rapport :
@@ -42,14 +42,14 @@ Dans Power BI Desktop, vous pouvez déterminer et spécifier le type de données
 
 ![](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
-La liste déroulante Type de données dans l’Éditeur de requête comporte deux types de données actuellement absents dans la vue Données ou Rapport : **Date/Heure/Fuseau horaire** et **Durée**. Lorsqu’une colonne avec ces types de données est chargée dans le modèle et affichée dans la vue Données ou Rapport, une colonne avec le type de données Date/Heure/Fuseau horaire est convertie au format Date/Heure et une colonne avec le type de données Durée est convertie au format Nombre décimal.
+La liste déroulante Type de données dans l’Éditeur de requête comporte deux types de données actuellement absents dans la vue Données ou Rapport : **Date/Heure/Fuseau horaire** et **Durée**. Quand une colonne avec ces types de données est chargée dans le modèle et affichée dans la vue Données ou Rapport, une colonne avec le type de données Date/Heure/Fuseau horaire est convertie au format Date/Heure et une colonne avec le type de données Durée est convertie au format Nombre décimal.
 
 ### <a name="number-types"></a>Types numériques
 Power BI Desktop prend en charge trois types numériques :
 
 **Nombre décimal** : représente un nombre à virgule flottante 64 bits (huit octets). C’est le type numérique le plus courant. Il correspond aux nombres tels qu’on se les représente habituellement.  Bien que conçu pour gérer les nombres avec des valeurs fractionnelles, il gère également les nombres entiers.  Le type Nombre décimal peut gérer des valeurs négatives comprises entre -1,79E +308 et -2,23E -308, 0, et des valeurs positives comprises entre 2,23E -308 et 1,79E +308. Par exemple, des nombres comme 34, 34,01 et 34,000367063 sont des nombres décimaux valides. La valeur maximale qui peut être représentée dans un type Nombre décimal a une longueur de 15 chiffres.  Le séparateur décimal peut figurer n’importe où dans le nombre. Le type Nombre décimal correspond à la manière dont Excel stocke les nombres.
 
-**Nombre décimal fixe** : possède un emplacement fixe pour le séparateur décimal. Le séparateur décimal a toujours quatre chiffres à sa droite et autorise 19 chiffres de précision.  La plus grande valeur, qu’il peut représenter est 922 337 203 685 477,5807 (positif ou négatif).  Le type Nombre décimal fixe est utile dans les cas où l’arrondi peut introduire des erreurs.  Quand vous travaillez avec de nombreux chiffres qui ont de petites valeurs fractionnelles, ils peuvent parfois s’accumuler et provoquer une petite imprécision.  Les valeurs situées après les quatre chiffres à droite du séparateur décimal étant tronquées, le type Nombre décimal fixe peut vous aider à éviter ces genres d’erreurs.   Si vous connaissez SQL Server, ce type de données correspond au format Décimal de SQL Server (19,4) ou au type de données Devise dans Power Pivot. 
+**Nombre décimal fixe** : possède un emplacement fixe pour le séparateur décimal. Le séparateur décimal a toujours quatre chiffres à sa droite et autorise 19 chiffres de précision.  La plus grande valeur, qu’il peut représenter est 922 337 203 685 477,5807 (positif ou négatif).  Le type Nombre décimal fixe est utile dans les cas où l’arrondi peut introduire des erreurs.  Si vous utilisez beaucoup de nombres ayant de petites valeurs fractionnelles, il y a un risque de cumul qui peut entraîner une légère imprécision.  Les valeurs situées après les quatre chiffres à droite du séparateur décimal étant tronquées, le type Nombre décimal fixe peut vous aider à éviter ces genres d’erreurs.   Si vous connaissez SQL Server, ce type de données correspond au format Décimal de SQL Server (19,4) ou au type de données Devise dans Power Pivot. 
 
 **Nombre entier** : représente un entier 64 bits (huit octets). S’agissant d’un entier, il ne comporte aucun chiffre à droite du séparateur décimal. Il autorise 19 chiffres ; les nombres entiers positifs ou négatifs compris entre -9 223 372 036 854 775 808 (-2^63) et 9 223 372 036 854 775 807 (2^63-1).  Il peut représenter le plus grand nombre possible parmi les divers types de données numériques.  Comme Nombre décimal fixe, le type Nombre entier peut être utile dans les cas où vous avez besoin de contrôler l’arrondi. 
 
@@ -125,7 +125,7 @@ Par exemple, si une date est utilisée dans une opération de soustraction avec 
 > 
 > 
 
-**Multiplication(*)**
+**Multiplication (*)**
 
 | Opérateur(*) | ENTIER | DEVISE | RÉEL | Date/Heure |
 | --- | --- | --- | --- | --- |
@@ -169,7 +169,7 @@ Les conversions sont effectuées implicitement pour les types numériques ou de 
 | Date/Heure |RÉEL |RÉEL |RÉEL |Date/Heure |
 
 ### <a name="handling-blanks-empty-strings-and-zero-values"></a>Gestion des vides, des chaînes vides et des valeurs zéro
-Dans DAX, une valeur null, une valeur vide, une cellule vide ou une valeur manquante sont toutes représentées par le même nouveau type de valeur, VIDE. Vous pouvez également générer des vides à l’aide de la fonction VIDE, ou vérifier la présence de vides à l’aide de la fonction ESTVIDE.
+Dans DAX, une valeur Null, une valeur vide, une cellule vide ou une valeur manquante sont toutes représentées par le même nouveau type de valeur, VIDE. Vous pouvez également générer des vides à l’aide de la fonction VIDE, ou vérifier la présence de vides à l’aide de la fonction ESTVIDE.
 
 Le traitement des vides dans des opérations telles que l’addition ou la concaténation dépend de la fonction. Le tableau suivant résume les différences entre les formules DAX et Microsoft Excel, dans la façon dont les vides sont gérés.
 

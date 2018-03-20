@@ -15,16 +15,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f9aa1570fe9386e5f8e726097a1c88d448dc2da1
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ac61259fc0f02e8f84a94502e9f8dd89d5ca4b96
+ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="power-bi-desktop-send-a-smile-privacy-statement"></a>Déclaration de confidentialité concernant l’option « Envoyer un sourire » de Power BI Desktop
+
+À partir de la version de mars 2018 de **Power BI Desktop**, les rapports d’erreurs utilisent la plateforme de rapports d’erreurs Windows à la place de la fonctionnalité *Envoyer un sourire* ou *Envoyer un smiley mécontent*. Pour plus d’informations sur la plateforme de rapports d’erreurs Windows, consultez le [blog sur la confidentialité Windows](https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/). 
+
+## <a name="for-versions-of-power-bi-desktop-prior-to-march-2018"></a>Pour les versions de Power BI Desktop antérieures à la version de mars 2018
+
 Microsoft s’efforce de préserver la confidentialité de vos informations, tout en proposant des produits offrant les performances, la puissance et la commodité souhaitées. Cette déclaration de confidentialité explique bon nombre des pratiques de collecte et d’utilisation des données du service *Envoyer un sourire*, en rapport avec les commentaires sur Microsoft Power BI Desktop . Elle ne s’applique pas à d’autres sites, produits ou services de Microsoft, tant en ligne que hors connexion.
 
 Sauf mention contraire dans cette déclaration, le service *Envoyer un sourire* ne communique pas d’informations personnelles à Microsoft. Sans votre autorisation, les informations communiquées à Microsoft ne sont pas partagées en dehors de Microsoft, ses filiales et sociétés affiliées.

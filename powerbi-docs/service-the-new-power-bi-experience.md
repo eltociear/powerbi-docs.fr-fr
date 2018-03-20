@@ -16,19 +16,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 38a3923469d64cc0761ea0e1b1b39005f6904d40
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 82aedf3defc1a3154c884c18b90dc27195847e9a
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="getting-around-in-power-bi-service"></a>Découverte du service Power BI
 ## <a name="the-left-navigation-pane"></a>Volet de navigation gauche
 
-![](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
+![volet de navigation gauche](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
 
 **Guide de référence rapide**
 
@@ -64,61 +64,61 @@ Commençons par examiner comment le contenu de base (tableaux de bord, rapports,
 
 Si vous avez une version gratuite de Power BI, vous voyez uniquement **Mon espace de travail**.
 
-![](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
+![courte vidéo de l’espace de travail](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
 
 ### <a name="favorite-dashboards-reports-and-apps"></a>Tableaux de bord, rapports et applications favoris
 Les**Favoris** vous permettent d’accéder rapidement au contenu dont vous avez le plus besoin.  
 
 1. Une fois le tableau de bord ou le rapport ouvert, sélectionnez **Ajouter un favori** en haut à droite.
    
-   ![](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
+   ![ajouter un favori](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
    
    **Ajouter un favori** devient **Retirer des favoris** et l’étoile devient jaune.
    
-   ![](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
+   ![supprimer le favori](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
 
 2. Pour une application, sélectionnez **Applications** dans le volet de navigation gauche, pointez sur l’application et choisissez l’étoile pour la définir comme favori.
 
 2. Pour afficher la liste de tous les contenus que vous avez ajoutés aux Favoris, dans le volet de navigation de gauche, sélectionnez la flèche à droite de **Favoris**. Étant donné que le volet de navigation de gauche est une fonctionnalité permanente du service Power BI, vous avez accès à cette liste quel que soit l’endroit où vous vous trouvez dans ce service.
    
-    ![](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
+    ![menu volant Favoris](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
    
     Vous pouvez alors sélectionner un tableau de bord, un rapport ou une application pour l’ouvrir.
 
 3. Pour ouvrir le volet **Favoris**, dans le volet de navigation gauche, sélectionnez **Favoris** ou l’icône Favoris ![](media/service-the-new-power-bi-experience/powerbi-star-icon.png).
    
-   ![](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
+   ![ouvrir l’écran Favoris](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
    
    À partir de là, vous pouvez ouvrir, rechercher du contenu, retirer des Favoris ou partager du contenu avec vos collègues.
 
 1. Vous pouvez aussi ajouter un tableau de bord ou un rapport dans les Favoris à partir de l’onglet d’espace de travail **Tableaux de bord** ou **Rapports**.  Il vous suffit d’ouvrir l’espace de travail pour afficher le contenu et de sélectionner l’icône représentant une étoile à gauche du nom.
    
-   ![](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
+   ![marquer comme favori](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
 Pour en savoir plus, consultez [Favoris](service-dashboard-favorite.md).
 
 ### <a name="recents"></a>Récents
-Accédez rapidement au contenu que vous avez récemment consulté en visitant le volet **Récents**. Ce volet contient des informations issues de l’ensemble de vos espaces de travail.
+Accédez rapidement au contenu que vous avez récemment consulté à partir du volet **Récents**. Ce volet contient des informations issues de l’ensemble de vos espaces de travail.
 
-  ![](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
+  ![volet Récents](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
 
 Comme avec les Favoris, vous pouvez rapidement accéder à vos documents récents depuis n’importe où dans le service Power BI en sélectionnant la flèche en regard de **Récents** dans le volet de navigation de gauche.
 
-  ![](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
+  ![menu volant Récents](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
 Pour en savoir plus, consultez [Récents dans Power BI](service-recent.md)
 
 ### <a name="apps"></a>Applications
 Une application est une collection de tableaux de bord et de rapports destinés à fournir des métriques clés dans un seul emplacement. Vous pouvez avoir des applications internes à votre organisation, ainsi que des [applications pour des services externes](service-connect-to-services.md), tels que Google Analytics et Microsoft Dynamics CRM. 
 
-![](media/service-the-new-power-bi-experience/power-bi-apps.png)
+![volet Applications](media/service-the-new-power-bi-experience/power-bi-apps.png)
 
 Pour en savoir plus, consultez **Espaces de travail d’application** (ci-dessous) et [Que sont les applications Power BI ?](service-install-use-apps.md).
 
 ### <a name="shared-with-me"></a>Partagé avec moi
-**Partagé avec moi** est l’emplacement de tout le contenu que vos collègues ont partagé avec vous.  Filtrez par propriétaire de tableau de bord, utilisez le champ de recherche pour trouver ce qui est pertinent et triez les éléments par date.  En outre, vous pouvez facilement ajouter aux favoris le contenu partagé que vous consultez souvent, directement à partir de la vue **Partagé avec moi**.
+**Partagé avec moi** est l’emplacement de tout le contenu que vos collègues ont partagé avec vous.  Filtrez le contenu par propriétaire de tableau de bord, utilisez le champ de recherche pour trouver du contenu pertinent et triez les éléments par date.  En outre, vous pouvez facilement ajouter aux favoris le contenu partagé que vous consultez souvent, directement à partir de la vue **Partagé avec moi**.
 
-![](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
+![volet Partagé avec moi](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
 
 Pour en savoir plus, consultez [Partagé avec moi](service-shared-with-me.md).
 
@@ -130,7 +130,7 @@ Si vous n’êtes pas membre d’un espace de travail d’application ou adminis
 #### <a name="my-workspace"></a>Mon espace de travail
 **Mon espace de travail** stocke tout le contenu que vous possédez. Considérez-le comme votre zone de travail ou bac à sable personnel pour votre propre contenu. À partir de Mon espace de travail, vous pouvez partager du contenu avec des collègues. Dans Mon espace de travail, votre contenu est organisé en 4 onglets : Tableaux de bord, Rapports, Classeurs et Jeux de données.
 
-![](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
+![écran Mon espace de travail](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
 
 #### <a name="app-workspaces"></a>Espaces de travail d’application
 Les applications et espaces de travail d’application sont une caractéristique de Power BI Pro. Si vous créez des tableaux de bord et rapports pour d’autres, vous utilisez des espaces de travail d’application pour ce faire. Un espace de travail d’application étant l’emplacement dans lequel vous créez l’application, pour créer une application, vous devez commencer par créer l’espace de travail d’application correspondant. Ils constituent l’évolution des espaces de travail de groupe, avec des zones intermédiaires et des conteneurs pour le contenu des applications.  Vos collègues et vous pouvez collaborer sur des tableaux de bord, rapports et autres contenus que vous prévoyez de distribuer à un public plus large, voire à votre organisation toute entière.
@@ -139,20 +139,20 @@ Pour en savoir plus, visitez [Créer et distribuer une application dans Power BI
 
 Comment dans **Mon espace de travail**, votre contenu est organisé en 4 onglets : Tableaux de bord, Rapports, Classeurs et Jeux de données.
 
-![](media/service-the-new-power-bi-experience/power-bi-app-workspace.png)
+![Espace de travail d’application](media/service-the-new-power-bi-experience/power-bi-app-workspace.png)
 
 Pour passer d’un espace de travail à l’autre, sélectionnez **Espaces de travail** dans le volet de navigation de gauche.
 
-![](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
+![Sélectionner un espace de travail](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
 
 ### <a name="search-and-sort-content"></a>Rechercher et trier du contenu
 La vue du contenu facilite la recherche, le filtrage et le tri du contenu. Pour rechercher un tableau de bord, un rapport ou un classeur, tapez dans la zone de recherche. Power BI filtre uniquement le contenu qui contient votre chaîne de recherche.
 
-![](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
+![rechercher un tableau de bord](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
 
 Vous pouvez également trier le contenu par nom ou propriétaire.  
 
-![](media/service-the-new-power-bi-experience/power-bi-sort.png)
+![trier le contenu](media/service-the-new-power-bi-experience/power-bi-sort.png)
 
 Pour en savoir plus, consultez [Navigation dans Power BI : rechercher, trier, filtrer](service-navigation-search-filter-sort.md).
 

@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 03/09/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6ea2e521350b6036b8d2e9b852eb47c546dd818f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 834800b26e8dd3738f274a73aa4ff9b36402a3d9
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 Vous pouvez obtenir une connectivité avec authentification unique transparente, permettant la mise à jour de rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec Kerberos. La passerelle de données locale facilite l’authentification unique (SSO) à l’aide de DirectQuery qu’elle utilise pour se connecter à des sources de données locales.
@@ -64,9 +64,13 @@ Des détails supplémentaires concernant ces étapes figurent ci-dessous :
 
 
 > [!NOTE]
-> Pour activer l’authentification unique pour SAP HANA, vous devez vous assurer que les configurations propres à HANA suivantes sont correctes pour SAP :
->    1. Vérifiez que le serveur SAP HANA exécute la version 2.00.022* ou supérieure/ultérieure. 
->    2. Sur l’ordinateur de la passerelle, installez le pilote ODBC HANA SAP le plus récent.  La version minimale est HANA ODBC 2.00.020.00 datant d’août 2017.
+> Pour activer l’authentification unique pour SAP HANA, assurez-vous que les configurations de SAP HANA suivantes sont correctes pour SAP :
+> 1. Vérifiez que le serveur SAP HANA exécute la version minimale requise, qui dépend du niveau de la plateforme de votre serveur SAP HANA :
+> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+>
+> 2. Sur l’ordinateur de la passerelle, installez le pilote ODBC HANA SAP le plus récent.  La version minimale est HANA ODBC 2.00.020.00 datant d’août 2017.
 >
 > Les liens suivants vers les correctifs et les mises à niveau à partir de SAP peuvent être utiles. Notez que vous devez vous connecter aux ressources suivantes avec votre compte SAP Support, et que SAP peut-changer ou mettre à jour ces liens.
 > 

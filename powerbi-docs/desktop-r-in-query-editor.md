@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d4358be705de4908de6a9aedb0dbd78e2ef9e17f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ab6d935eb955dea5e2362a1cc52cf30657f4f8df
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="using-r-in-query-editor"></a>Utilisation du langage R dans l’Éditeur de requête
 Vous pouvez utiliser le langage de programmation **R** largement utilisé par les analystes de données, les scientifiques de données et les statisticiens dans l’**Éditeur de requête** Power BI Desktop. Cette intégration de R dans l’**Éditeur de requête** permet de procéder au nettoyage des données à l’aide de R et d’effectuer une mise en forme et des analyses avancées des données dans les jeux de données, y compris la saisie de données manquantes, les prévisions et le clustering pour ne citer que quelques exemples. **R** est un langage puissant. Il peut être utilisé dans l’**Éditeur de requête** pour préparer votre modèle de données et créer des rapports.
@@ -31,9 +31,9 @@ Vous pouvez utiliser le langage de programmation **R** largement utilisé par le
 Pour utiliser **R** dans l’**Éditeur de requête** Power BI Desktop, vous devez installer **R** sur votre ordinateur local. Vous pouvez télécharger et installer **R** gratuitement à partir de nombreux emplacements, dont les pages [Download Revolution R Open](https://mran.revolutionanalytics.com/download/) et [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 
 ## <a name="using-r-in-query-editor"></a>Utilisation du langage R dans l’Éditeur de requête
-Pour vous montrer comment utiliser **R** dans l’**Éditeur de requête**, nous allons utiliser un exemple provenant d’un jeu de données boursières basé sur un fichier CSV que vous pouvez [télécharger ici](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Les étapes de cet exemple sont les suivantes :
+Pour comprendre comment utiliser **R** dans l’**Éditeur de requête**, prenez cet exemple qui provient d’un jeu de données boursières basé sur un fichier CSV ([téléchargeable ici](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv)). Les étapes de cet exemple sont les suivantes :
 
-1. Tout d’abord, entrez des données dans **Power BI Desktop**. Dans cet exemple, nous allons charger le fichier *EuStockMarkets_NA.csv*. Sélectionnez **Obtenir des données > CSV** dans le ruban **Accueil** de **Power BI Desktop**.
+1. Tout d’abord, entrez des données dans **Power BI Desktop**. Dans cet exemple, chargez le fichier *EuStockMarkets_NA.csv* et sélectionnez **Obtenir des données > CSV** dans le ruban **Accueil** de **Power BI Desktop**.
    
    ![](media/desktop-r-in-query-editor/r-in-query-editor_1.png)
 2. Sélectionnez le fichier et choisissez **Ouvrir**. Le fichier CSV s’affiche dans la boîte de dialogue **Fichier CSV**.
@@ -48,7 +48,7 @@ Pour vous montrer comment utiliser **R** dans l’**Éditeur de requête**, nous
 5. Sous l’onglet **Transformation**, sélectionnez **Exécuter un script R**. L’éditeur **Exécuter un script R** apparaît (voir l’étape suivante). Notez que les lignes 15 et 20 ont des données manquantes, comme les autres lignes qui ne figurent pas dans l’image suivante. Les étapes ci-dessous montrent comment R peut compléter ces lignes pour vous.
    
    ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
-6. Pour cet exemple, nous allons entrer le code de script suivant :
+6. Pour cet exemple, entrez le code de script suivant :
    
        library(mice)
        tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
@@ -64,24 +64,24 @@ Pour vous montrer comment utiliser **R** dans l’**Éditeur de requête**, nous
    Lorsqu’il est placé dans la boîte de dialogue **Exécuter un script R**, le code ressemble à ce qui suit :
    
    ![](media/desktop-r-in-query-editor/r-in-query-editor_5b.png)
-7. Lorsque vous sélectionnez **OK**, l’**Éditeur de requête** affiche un avertissement concernant la confidentialité des données.
+7. Une fois que vous avez sélectionné **OK**, l’**Éditeur de requête** affiche un avertissement concernant la confidentialité des données.
    
    ![](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
 8. Pour que les scripts R fonctionnent correctement dans le service Power BI, toutes les sources de données doivent être définies comme étant *publiques*. Pour plus d’informations sur les paramètres de confidentialité et leurs implications, consultez [Niveaux de confidentialité](desktop-privacy-levels.md).
    
    ![](media/desktop-r-in-query-editor/r-in-query-editor_7.png)
    
-   Une fois que cela est fait, nous voyons une nouvelle colonne dans la zone **Champs**, appelée *completedValues*. Il existe quelques éléments de données manquants, par exemple sur les lignes 15 et 18. Nous verrons comment R gère cela dans la section suivante.
+   Le volet **Champs** comporte une nouvelle colonne appelée *completedValues*. Il existe quelques éléments de données manquants, par exemple sur les lignes 15 et 18. La section suivante explique de quelle façon R gère ce problème.
    
 
 Avec seulement cinq lignes de script R, l’**Éditeur de requête** a renseigné les valeurs manquantes à l’aide d’un modèle de prévision.
 
-## <a name="creating-visuals-from-r-script-data"></a>Création d’éléments visuels à partir des données de script R
-Maintenant, nous pouvons créer un élément visuel pour voir comment le script R a complété les valeurs manquantes à l’aide de la bibliothèque *mice*, comme illustré dans l’image suivante.
+## <a name="creating-visuals-from-r-script-data"></a>Création de visuels à partir des données de script R
+Maintenant, nous pouvons créer un visuel pour voir comment le script R a complété les valeurs manquantes à l’aide de la bibliothèque *mice*, comme illustré dans l’image suivante :
 
 ![](media/desktop-r-in-query-editor/r-in-query-editor_8a.png)
 
-Une fois que l’élément visuel et les autres éléments visuels que nous pouvons créer à l’aide de **Power BI Desktop** sont terminés, nous pouvons enregistrer le fichier **Power BI Desktop** (au format .pbix), puis utiliser le modèle de données, y compris les scripts R associés, dans le service Power BI.
+Quand vous avez terminé ce visuel et les autres visuels éventuels à créer à l’aide de **Power BI Desktop**, vous pouvez enregistrer le fichier **Power BI Desktop** (au format .pbix), puis utiliser le modèle de données, y compris les scripts R associés, dans le service Power BI.
 
 > [!NOTE]
 > Vous voulez voir un fichier .pbix complété une fois les étapes ci-dessus terminées ? Vous pouvez télécharger le fichier **Power BI Desktop** complet utilisé dans ces exemples [ici](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete Values with R in PQ.pbix).
@@ -100,7 +100,7 @@ Il existe certaines limitations pour les requêtes qui incluent des scripts R c
   
   ![](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
   
-  Dans la boîte de dialogue **Paramètres de la source de données**, sélectionnez la ou les sources de données, puis **Modifier les autorisations...** et vérifiez que le **niveau de confidentialité** est défini sur *Public*.
+  Dans la boîte de dialogue **Paramètres de la source de données**, sélectionnez la ou les sources de données, puis sélectionnez **Modifier les autorisations...** et vérifiez que le **niveau de confidentialité** est défini sur *Public*.
   
   ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
 * Pour activer l’actualisation planifiée de vos éléments visuels R ou d’un jeu de données, vous devez activer l’**actualisation planifiée** et installer **Personal Gateway** sur l’ordinateur qui héberge le classeur et l’installation de R. Pour plus d’informations à ce sujet, consultez les liens indiqués dans la section précédente de cet article.

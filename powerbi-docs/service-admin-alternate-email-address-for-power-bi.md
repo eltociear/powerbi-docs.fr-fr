@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/09/2017
+ms.date: 03/08/2018
 ms.author: maghan
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c97f60e39d68060c8eb3396bac4eb7725dab9c86
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: adc78cceb8a6b6edd06896e53a1a64cf0d28b2b8
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="using-an-alternate-email-address"></a>Utilisation d’une autre adresse de messagerie
 Par défaut, l’adresse de messagerie avec laquelle vous vous êtes inscrit à Power BI est utilisée pour vous envoyer des mises à jour sur l’activité dans Power BI.  Par exemple, quand quelqu’un vous envoie une invitation de partage, elle est expédiée à cette adresse.
@@ -45,6 +45,19 @@ Vous souhaiterez peut-être parfois que ces messages soient envoyés à une adre
 > La modification de ce paramètre n’a aucun impact sur l’adresse de messagerie utilisée pour les mises à jour de service, les bulletins d’informations et les autres communications promotionnelles.  Ces éléments seront toujours envoyés à l’adresse de messagerie utilisée initialement lors de l’inscription à Power BI.
 > 
 > 
+
+## <a name="updating-through-azure-active-directory"></a>Mise à jour par le biais d’Azure Active Directory
+Pour capturer un jeton incorporé Active Azure Directory (AAD) pour Power BI, vous pouvez utiliser l’un des trois types d’e-mails suivants :
+
+* L’adresse e-mail principale associée au compte AAD d’un utilisateur
+* L’adresse e-mail UPN (UserPrincipalName)
+* L’attribut tableau d’une « autre » adresse e-mail
+
+Power BI sélectionne l’e-mail à utiliser selon les critères suivants :
+1.  Si l’attribut de messagerie est défini dans l’objet utilisateur du locataire AAD, Power BI l’utilise pour l’adresse e-mail
+2.  Si l’adresse e-mail UPN n’est *pas* une adresse e-mail du domaine **\*.onmicrosoft.com** (informations après le symbole « @ »), Power BI utilise cet attribut de messagerie pour l’adresse e-mail
+3.  Si l’attribut tableau d’une « autre » adresse e-mail est défini dans l’objet utilisateur AAD, Power BI utilise la première adresse e-mail dans cette liste (quand il y a plusieurs e-mails spécifiés dans cet attribut)
+4. Si aucun des critères ci-dessus n’est rempli, l’adresse UPN est utilisée
 
 ## <a name="updating-with-powershell"></a>Mise à jour avec PowerShell
 Vous pouvez également mettre à jour l’autre adresse de messagerie par le biais de PowerShell pour Azure Active Directory. Cette opération s’effectue avec la commande [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser).

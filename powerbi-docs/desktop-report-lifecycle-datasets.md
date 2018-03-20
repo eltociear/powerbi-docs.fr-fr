@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fff56b220579a19505337f2ac9697cd3e61e83cb
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 948c87e3e594ebb0ca2f75f747f7dd6fe36e18e7
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop
 Vous pouvez établir une connexion active à un jeu de données partagé dans le service Power BI, et créer de nombreux rapports différents à partir du même jeu de données. Cela signifie que vous pouvez créer votre modèle de données idéal dans Power BI Desktop et le publier sur le service Power BI, après quoi vos collègues et vous pouvez créer plusieurs rapports (dans des fichiers .pbix distinct) à partir de ce modèle de données commun. Cette fonctionnalité est appelée **Connexion active du service Power BI**.
@@ -116,8 +116,8 @@ Lors de l’utilisation de la **connexion active du service Power BI**, vous dev
 * Dans la mesure où il s’agit d’une connexion active, le volet de navigation de gauche et la modélisation sont désactivés. Ce comportement est similaire à celui observé en cas de connexion à **SQL Server Analysis Services**.
 * Dans la mesure où il s’agit d’une connexion active, la sécurité au niveau des lignes (RLS), OneDrive Entreprise et d’autres comportements de connexion similaires sont appliqués, tout comme en cas de connexion à **SQL Server Analysis Services**.
 * Lorsque vous sélectionnez le jeu de données auquel se connecter dans le **service Power BI**, la zone de recherche s’applique uniquement aux espaces de travail développés.
-* Si vous modifiez le fichier .pbix partagé d’origine, le jeu de données et le rapport partagé dans le **service Power BI** sont remplacés.
-* Vous ne pouvez pas remplacer le rapport partagé à l’origine. Sinon, un avertissement vous invite à renommer le fichier et à le publier.
+* Si le propriétaire modifie le fichier .pbix partagé d’origine, le jeu de données et le rapport partagé dans le **service Power BI** sont remplacés.
+* Les membres d’un espace de travail ne peuvent pas remplacer le rapport partagé d’origine. Sinon, un avertissement vous invite à renommer le fichier et à le publier.
 * Si vous supprimez le jeu de données partagé dans le **service Power BI**, les autres fichiers **Power BI Desktop** (.pbix) cessent de fonctionner correctement ou d’afficher leurs visuels.
 * Pour les packs de contenu, vous devez commencer par créer une copie d’un pack de contenu afin de l’utiliser comme base pour partager un rapport et un jeu de données .pbix pour le **service Power BI**.
 * Pour les packs de contenu à partir de *Mon organisation*, une fois la copie effectuée, vous ne pouvez pas remplacer le rapport créé sur le service et/ou un rapport créé dans le cadre de la copie d’un pack de contenu avec une connexion active. Sinon, un avertissement vous invite à renommer le fichier et à le publier. Dans ce cas, vous pouvez uniquement remplacer des rapports publiés connectés en direct.
