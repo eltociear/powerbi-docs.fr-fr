@@ -1,15 +1,15 @@
 ---
-title: "Utiliser des thèmes de rapport dans Power BI Desktop (version préliminaire)"
-description: "Découvrez comment utiliser une palette de couleurs personnalisée et l’appliquer à un rapport entier dans Power BI Desktop"
+title: Utiliser des thèmes de rapport dans Power BI Desktop (version préliminaire)
+description: Découvrez comment utiliser une palette de couleurs personnalisée et l’appliquer à un rapport entier dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8893e9f048f10f2c9c4d5bf787382b7cf65f54a9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9161966897811820935c72ac1657ceca58da403a
+ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Utiliser des thèmes de rapport dans Power BI Desktop (version préliminaire)
 Les **Thèmes de rapport** vous permettent d’appliquer un thème de couleur à un rapport entier. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières, ou de tout autre thème de votre choix. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
@@ -163,7 +163,7 @@ Pour créer un fichier JSON de format étendu, avec un contrôle plus précis et
         }
     }
 
-Pour les sections **visualName** et **cardName**, vous pouvez entrer un visuel et un nom de carte spécifiques, ou utiliser un astérisque («  *») si vous souhaitez que le paramètre s’applique à l’ensemble des visuels ou des cartes contenant une propriété pour un visuel spécifique. Vous pouvez utiliser l’astérisque («*  ») si vous souhaitez appliquer un paramètre de manière globale dans votre rapport, tel qu’une taille de police ou une famille de polices spécifique, à utiliser dans tous les visuels figurant dans votre rapport.
+Pour les sections **visualName** et **cardName**, vous pouvez entrer un visuel et un nom de carte spécifiques, ou utiliser un astérisque (« \* ») si vous souhaitez que le paramètre s’applique à l’ensemble des visuels ou des cartes contenant une propriété pour un visuel spécifique. Vous pouvez utiliser l’astérisque (« \* ») si vous souhaitez appliquer un paramètre de manière globale dans votre rapport, tel qu’une taille de police ou une famille de polices spécifique, à utiliser dans tous les visuels figurant dans votre rapport.
 
 > [!NOTE]
 > Vous devez uniquement spécifier les éléments de mise en forme que vous souhaitez affecter. Tous les éléments de mise en forme non inclus dans le fichier JSON reprennent simplement leurs valeurs et paramètres par défaut.
