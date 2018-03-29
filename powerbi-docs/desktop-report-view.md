@@ -1,15 +1,15 @@
 ---
-title: "Vue Rapport dans Power BI Desktop"
-description: "Vue Rapport dans Power BI Desktop"
+title: Vue Rapport dans Power BI Desktop
+description: Vue Rapport dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,16 +18,16 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e68a819325e601f869b34c4ccbe3e873fe9408b3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: af10699ea30b9d8e8dd8e3495860c43387a7e0be
+ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Vue Rapport dans Power BI Desktop
 Si vous avez déjà utilisé Power BI, vous savez combien il est facile de créer des rapports fournissant des perspectives et des informations dynamiques sur vos données. En outre, Power BI met à votre disposition d’autres fonctions avancées dans Power BI Desktop. Grâce  à Power BI Desktop, vous pouvez créer des requêtes avancées, combiner des données de plusieurs sources, créer des relations entre des tables et bien plus encore.
 
-Power BI Desktop comprend la **vue Rapport**, où vous pouvez créer un nombre quelconque de pages de rapport avec des visualisations. La vue Rapport procure pratiquement la même expérience conceptuelle que le mode Édition d’un rapport dans le service Power BI. Vous pouvez déplacer les visualisations et effectuer des opérations telles que le copier-coller ou la fusion.
+Power BI Desktop comprend la **vue Rapport**, où vous pouvez créer un nombre quelconque de pages de rapport avec des visualisations. La vue Rapport procure pratiquement la même expérience conceptuelle que le mode Édition d’un rapport dans le service Power BI. Vous pouvez déplacer des visualisations et effectuer des opérations comme copier-coller, fusionner, etc.
 
 La différence est qu’avec Power BI Desktop, vous pouvez utiliser vos requêtes et modéliser vos données pour obtenir les meilleures analyses possibles dans les rapports. Vous pouvez ensuite enregistrer votre fichier Power BI Desktop à l’emplacement de votre choix (lecteur local ou cloud).
 
@@ -36,7 +36,7 @@ Quand vous chargez pour la première fois des données dans Power BI Desktop, 
 
 ![](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
-Vous pouvez basculer entre la **vue Rapport**, la **vue Données** et la **vue Relations** en sélectionnant les icônes dans la barre de navigation de gauche :
+Vous pouvez basculer entre la **vue Rapport**, la **vue Données** et la **vue Relations** en sélectionnant les icônes dans la barre de navigation gauche :
 
 ![](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 
@@ -44,7 +44,7 @@ Une fois que vous avez ajouté des données, vous pouvez ajouter des champs à u
 
 ![](media/desktop-report-view/pbid_reportview_addvis.gif)
 
-Pour changer de type de visualisation, vous pouvez sélectionner le type souhaité dans le groupe **Visualisation** du ruban ou cliquer sur l’icône **Changer de type de visualisation** et sélectionner le type de votre choix.
+Pour changer de type de visualisation, vous pouvez le sélectionner dans le groupe **Visualisation** du ruban, ou cliquer sur l’icône **Changer de type de visualisation** et sélectionner le type de votre choix.
 
 ![](media/desktop-report-view/pbid_reportview_changevis.gif)
 
@@ -53,7 +53,7 @@ Pour changer de type de visualisation, vous pouvez sélectionner le type souhait
 > 
 > 
 
-Un rapport possède au moins une page vierge au départ. Les pages apparaissent dans le volet de navigation à gauche du canevas. Vous pouvez ajouter toutes sortes de visualisations à une page, mais il est important de ne pas en abuser. Une page qui comporte trop de visualisations apparaît surchargée et devient difficile à explorer. Vous pouvez ajouter de nouvelles pages à votre rapport. Il vous suffit de cliquer sur **Nouvelle page** dans le ruban.
+Un rapport possède au moins une page vierge au départ. Les pages apparaissent dans le volet de navigation à gauche du canevas. Vous pouvez ajouter toutes sortes de visualisations à une page, mais il est important de ne pas en abuser. Une page qui comporte trop de visualisations apparaît surchargée et devient difficile à explorer. Vous pouvez ajouter de nouvelles pages à votre rapport. Cliquez simplement sur **Nouvelle Page** dans le ruban.
 
 ![](media/desktop-report-view/pbidesignerreportviewnewpage.png)
 

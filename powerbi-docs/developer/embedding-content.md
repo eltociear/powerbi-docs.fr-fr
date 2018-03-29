@@ -1,27 +1,27 @@
 ---
-title: "Comment incorporer vos tableaux de bord, rapports et vignettes Power BI"
-description: "Découvrez les étapes à suivre pour incorporer du contenu Power BI dans votre application."
+title: Comment incorporer vos tableaux de bord, rapports et vignettes Power BI
+description: Découvrez les étapes à suivre pour incorporer du contenu Power BI dans votre application.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/11/2018
+ms.date: 03/12/2018
 ms.author: maghan
-ms.openlocfilehash: ff39d6847a296622d8ce0903370d17d41662df0c
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 014601a4c85be53d6fd06a455d04e5ee1f8daf2d
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Incorporer vos tableaux de bord, rapports et vignettes Power BI
 
@@ -88,6 +88,10 @@ Vous devez inscrire votre application avec Azure AD afin d’effectuer des appel
 Si vous incorporez des tableaux de bord et des rapports pour vos clients, ceux-ci doivent être placés dans un espace de travail d’applications. Le compte *principal* mentionné précédemment doit être administrateur de l’espace de travail d’applications.
 
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
+
+> [!NOTE]
+> Un utilisateur non-administrateur peut créer jusqu’à 250 espaces de travail d’application. Pour créer plus d’espaces de travail d’application, vous devez utiliser un compte d’administrateur de locataire.
+>
 
 ### <a name="create-and-upload-your-reports"></a>Créer et charger vos rapports
 

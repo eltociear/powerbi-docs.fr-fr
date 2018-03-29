@@ -1,15 +1,15 @@
 ---
-title: "Utilisation de données tabulaires Analysis Services dans Power BI Desktop"
-description: "Données tabulaires Analysis Services dans Power BI Desktop"
+title: Utilisation de données tabulaires Analysis Services dans Power BI Desktop
+description: Données tabulaires Analysis Services dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 02ce801db4eb6f5040c1d0e31ee0746a475c0bbb
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: ac5786c51fdf3f927605fdf20123a8ea93e74f8a
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Utilisation de données tabulaires Analysis Services dans Power BI Desktop
 Avec Power BI Desktop, il existe deux façons d’obtenir et de se connecter à des données à partir de vos modèles tabulaires SQL Server Analysis Services : vous pouvez explorer à l’aide d’une connexion active ou sélectionner des éléments et les importer dans Power BI Desktop.
@@ -54,7 +54,7 @@ Quand vous avez créé des rapports dynamiques dans Power BI Desktop, vous pouve
   ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_live.png)
 * Si vous avez choisi de sélectionner des éléments et d’obtenir des données, dans le navigateur, sélectionnez une perspective ou un modèle tabulaire. Vous pouvez sélectionner en plus uniquement des tables ou des colonnes spécifiques à charger. Pour mettre en forme vos données avant le chargement, cliquez sur Modifier pour ouvrir l’Éditeur de requête. Lorsque vous êtes prêt, cliquez sur Charger pour importer les données dans Power BI Desktop.
 
-![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
+  ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata_as_select.png)
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
 **Question :** Ai-je besoin d’une passerelle de données locale ?
@@ -73,7 +73,7 @@ Si vous choisissez de sélectionner des éléments et d’obtenir des données, 
 
 **Question :** si j’ai créé une connexion active, puis-je modifier le modèle ou la requête dans Power BI Desktop ?
 
-**Réponse :** Vous pouvez créer des mesures de niveau rapport dans Power BI Desktop, mais toutes les autres fonctionnalités d’interrogation et de modélisation sont désactivées lors de l’exploration de données actives.
+**Réponse :** Vous pouvez créer des mesures de niveau rapport dans Power BI Desktop, mais toutes les autres fonctionnalités d’interrogation et de modélisation sont désactivées lors de l’exploration de données actives.
 
 **Question :** si j’ai créé une connexion active, est-elle sécurisée ?
 

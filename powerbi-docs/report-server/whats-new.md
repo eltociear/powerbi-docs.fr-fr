@@ -1,34 +1,32 @@
 ---
-title: "Nouveautés dans Power BI Report Server"
-description: "Découvrez les nouveautés dans Power BI Report Server. Cet article aborde les principaux domaines de fonctionnalités et est mis à jour à mesure que de nouveaux éléments sont publiés."
+title: Nouveautés dans Power BI Report Server
+description: Découvrez les nouveautés dans Power BI Report Server. Cet article aborde les principaux domaines de fonctionnalités et est mis à jour à mesure que de nouveaux éléments sont publiés.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/31/2017
-ms.author: maghan
-ms.openlocfilehash: 2ac4efa4e1eff5099fa3732b0fa753b04941979e
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 03/19/2018
+ms.author: maggies
+ms.openlocfilehash: 4f149baccf551762589c17bd6d6ba17c36f4da37
+ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 Découvrez les nouveautés dans Power BI Report Server. Cet article aborde les principaux domaines de fonctionnalités et est mis à jour à mesure que de nouveaux éléments sont publiés.
 
 Pour télécharger Power BI Report Server et Power BI Desktop optimisé pour Power BI Report Server, accédez à la page [Rapports locaux avec Power BI Report Server](https://powerbi.microsoft.com/report-server/).
-
-![conseil](media/whats-new/fyi-tip.png "conseil") Pour les notes de publication actuelles, voir [Notes de publication de Power BI Report Server](release-notes.md).
 
 Pour plus d’informations sur les nouveautés, consultez :
 
@@ -37,6 +35,103 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Nouveautés dans les applications mobiles pour Power BI](../mobile-whats-new-in-the-mobile-apps.md)
 * [Blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/)
 
+## <a name="march-2018-release"></a>Version de mars 2018
+
+De nombreuses fonctionnalités nouvelles ont été ajoutées à la version de Power BI Desktop de mars 2018, optimisée pour Power BI Report Server. Voici ces fonctionnalités, réparties par domaine : 
+- [Visuels](#visuals-updates)
+- [Création de rapports](#reporting)
+- [Analytique](#analytics)
+- [Performances](#performance)
+- [Serveur de rapports](#report-server)
+- [Autres](#other-improvements)
+
+### <a name="highlights-of-this-release"></a>Caractéristiques principales de cette version
+
+Parmi la longue liste des nouvelles fonctionnalités, celles-ci sont particulièrement intéressantes.
+
+#### <a name="rule-based-conditional-formatting-for-table-and-matrixhttpspowerbimicrosoftcomblogpower-bi-desktop-november-2017-feature-summaryconditionalformatting"></a>[Mise en forme conditionnelle basée sur des règles pour les tables et les matrices](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
+ 
+Créer des règles pour appliquer de façon conditionnelle une couleur à l’arrière-plan ou à la police d’une colonne, en fonction d’une logique métier spécifique dans votre table ou votre matrice.
+
+#### <a name="show-and-hide-pageshttpspowerbimicrosoftcomblogpower-bi-desktop-january-2018-feature-summaryhidepages"></a>[Afficher et masquer des pages](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
+
+Vous voulez que les lecteurs aient accès à votre rapport, mais certaines des pages ne sont pas encore terminées. Vous pouvez désormais les masquer jusqu’à ce qu’elles soient prêtes. Vous pouvez aussi masquer des pages pour la navigation normale ; les lecteurs peuvent obtenir la page par extraction ou via des signets.
+
+#### <a name="bookmarkinghttpspowerbimicrosoftcomblogpower-bi-desktop-march-2018-feature-summarybookmarking"></a>[Signets](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+
+Vous pouvez créer des signets pour raconter une histoire avec les données de votre rapport.
+
+- [Mise en évidence croisée pour des signets](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting) : les signets gèrent et affichent l’état de mise en évidence croisée de la page d’un rapport au moment où vous avez créé le signet.
+- [Plus de flexibilité pour les signets](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility) : les signets reflètent les propriétés que vous définissez dans votre rapport et affectent seulement les visuels que vous choisissez.
+
+#### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Points de données à sélection multiple entre plusieurs graphiques](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+
+Sélectionnez plusieurs points de données dans plusieurs graphiques et appliquez le filtrage croisé à toute la page.
+
+#### <a name="sync-slicers-across-multiple-pages-of-your-reporthttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarysyncslicers"></a>[Synchronisation des segments sur plusieurs pages de votre rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+
+Un segment peut s’appliquer à une ou plusieurs pages d’un rapport.
+
+#### <a name="quick-measureshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summaryquickmeasures"></a>[Mesures rapides](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+
+Créez des mesures basées sur des mesures existantes et des colonnes numériques dans une table.
+
+#### <a name="drilling-down-filters-other-visualshttpspowerbimicrosoftcomblogpower-bi-desktop-december-feature-summarydrillfiltersothervisuals"></a>[L’exploration filtre d’autres visuels](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+
+Quand vous descendez dans la hiérarchie d’une catégorie dans un visuel, vous pouvez faire en sorte qu’il filtre tous les visuels de la page selon la même catégorie.
+
+### <a name="visuals-updates"></a>Mises à jour des visuels
+
+- [Alignement des cellules pour les tables et les matrices](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#alignment)
+- [Contrôle de l’affichage des unités et de la précision dans les colonnes des tables et des matrices](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits)
+- [Débordement des étiquettes de données pour les graphiques à barres et les histogrammes](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow)
+- [Contrôle de la couleur d’arrière-plan des étiquettes de données des visuels cartésiens et de carte](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground)
+- [Contrôle du remplissage des barres/colonnes](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#padding)
+- [Agrandissement de la zone utilisée pour les étiquettes d’axe dans les graphiques](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#axisSize)
+- [Visuel Nuage de points à partir de regroupements des axes X et Y](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#scatterChart)
+- [Échantillonnage à haute densité pour les cartes basé sur la latitude et la longitude](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#highDensityMaps)
+- [Segments réactifs](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#responsive)
+- [Ajout d’une date d’ancrage pour un segment de date relative](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#anchorDate)
+
+### <a name="reporting"></a>Création de rapports
+
+- [Désactivation de l’en-tête du visuel en mode Lecture dans un rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader)
+- [Options de rapport pour les sources de données lentes](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#slowDataSource)
+- [Amélioration du placement par défaut des visuels](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement)
+- [Contrôle de l’ordre des visuels dans le volet Sélection](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#selectionPane)
+- [Verrouillage des objets sur votre rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#lock)
+- [Recherche dans les volets Mise en forme et Analytique](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
+- [Volet Propriétés du champ et description de champs](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
+
+### <a name="analytics"></a>Analyse
+
+- [UTCNOW() et UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
+- [Marquage d’une table de dates personnalisée](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
+- [Filtres d’exploration d’autres visuels](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+- [Mise en forme au niveau de la cellule pour les modèles AS multidimensionnels pour carte à plusieurs lignes](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting)
+ 
+### <a name="performance"></a>Performances
+
+- [Améliorations des performances du filtrage](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering)
+- [Améliorations des performances de DirectQuery](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf)
+- [Amélioration des performances à l’ouverture et à l’enregistrement](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf)
+- [Amélioration de l’option Afficher les éléments sans données](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData)
+ 
+### <a name="report-server"></a>Serveur de rapports 
+
+#### <a name="export-to-accessible-pdf"></a>Exporter au format PDF accessible
+
+Quand vous exportez un rapport paginé (RDL) au format PDF, vous pouvez désormais obtenir un fichier PDF accessible/étiqueté. Sa taille est plus grande taille, mais la lecture et la navigation y sont plus faciles pour les lecteurs d’écran et les autres technologies d’assistance. Vous activez le format PDF accessible en définissant le paramètres d’informations de l’appareil **AccessiblePDF** sur **True**. Consultez [Paramètres d’informations de périphérique PDF](https://docs.microsoft.com/sql/reporting-services/pdf-device-information-settings) et [Modification des paramètres d’informations de périphérique](https://docs.microsoft.com/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings).
+
+
+### <a name="other-improvements"></a>Autres améliorations
+
+- [Amélioration de l’ajout d’une colonne à partir d’exemples](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#addColumnFromExamples)
+- [Lien rapide Services de conseil](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#consultingServices)
+- [Rapport d’erreurs amélioré](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#errors)
+- [Affichage des erreurs précédemment rencontrées](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#viewErrors)
+
+ 
 ## <a name="october-2017-release"></a>Version d’octobre 2017
 ### <a name="power-bi-report-data-sources"></a>Sources de données de rapport Power BI
 Les rapports Power BI dans Power BI Report Server peuvent se connecter à diverses sources de données. Vous pouvez importer des données et planifier une actualisation des données, ou les interroger directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services. Consultez la liste des sources de données qui prennent en charge l’actualisation planifiée et de celles qui prennent en charge DirectQuery dans « Sources de données de rapport Power BI dans Power BI Report Server ».
@@ -111,7 +206,6 @@ Power BI Report Server prend désormais en charge les nouveaux visuels de table 
 * Collaboration améliorée dans les rapports avec des commentaires
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Notes de publication de Power BI Report Server](release-notes.md)  
 [Manuel de l’utilisateur](user-handbook-overview.md)  
 [Manuel de l’administrateur](admin-handbook-overview.md)  
 [Démarrage rapide : installer Power BI Report Server](quickstart-install-report-server.md)  

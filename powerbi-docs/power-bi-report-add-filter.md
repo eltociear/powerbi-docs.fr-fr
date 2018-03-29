@@ -1,50 +1,58 @@
 ---
-title: "Ajouter une visualisation, une page, une extraction ou un filtre de rapport à un rapport"
-description: "Ajouter un filtre de page, un filtre de visualisation ou un filtre de rapport à un rapport dans Power BI"
+title: Ajouter une visualisation, une page, une extraction ou un filtre de rapport à un rapport
+description: Ajouter un filtre de page, un filtre de visualisation ou un filtre de rapport à un rapport dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: d30941e49915122864976868d36418d53844b927
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e222b9bddc3e7c204a728e207b8969cdf13d605f
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="add-a-filter-to-a-power-bi-report-in-editing-view"></a>Ajouter un filtre à un rapport Power BI (en mode Édition)
+# <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Ajouter un filtre à un rapport du service Power BI (en mode Édition)
 > [!TIP]
 > Nous vous recommandons de commencer par lire [À propos des filtres et de la mise en évidence dans les rapports Power BI](power-bi-reports-filters-and-highlighting.md).
+
+Les exemples de cet article montrent le service Power BI. La procédure est presque la même dans Power BI Desktop.
 > 
 > 
 
 ## <a name="what-is-the-difference-between-report-filters-in-editing-view-versus-reading-view"></a>Différence entre les filtres de rapport en mode Lecture et en mode Édition
 Il existe deux modes d’interaction avec les rapports : le [mode Lecture](service-reading-view-and-editing-view.md) et le [mode Edition](service-interact-with-a-report-in-editing-view.md).  Et les fonctionnalités de filtrage disponibles varient en fonction du mode dans lequel vous êtes.
 
-* En mode Édition, vous pouvez ajouter des filtres de rapport, de page et d’élément visuel. Les filtres sont enregistrés en même temps que le rapport. Les personnes qui examinent le rapport en mode Lecture peuvent interagir avec les filtres que vous avez ajoutés, mais pas enregistrer leurs modifications.
-* En mode Lecture, vous pouvez interagir avec les filtres de page, de visuel et de rapport qui existent déjà dans le rapport, mais vous ne pouvez pas enregistrer les modifications que vous apportez aux filtres.
+* En mode Édition, vous pouvez ajouter des filtres de rapport, de page et d’élément visuel. Les filtres sont enregistrés en même temps que le rapport. Les personnes qui examinent le rapport en mode Lecture peuvent interagir avec les filtres que vous avez ajoutés.
+* En mode Lecture, vous pouvez interagir avec les filtres de rapport, d’exploration, de page et de visuel qui existent déjà dans le rapport, mais vous ne pouvez pas ajouter de nouveaux filtres. Les modifications apportées dans le volet Filtres sont enregistrées avec le rapport, même si vous consultez le rapport dans une application mobile.  
 
 > [!NOTE]
 > Cet article explique comment créer des filtres de rapport en **mode Edition**.  Pour plus d’informations sur les filtres en mode Lecture, consultez [Interaction avec les filtres de rapport en mode Lecture](service-reading-view-and-editing-view.md).
-> 
-> 
 
-## <a name="visual-filters-page-filters-drillthrough-filters-and-report-filters"></a>Filtres visuels, filtres de page, filtres d’extraction et filtres de rapport
-Un **filtre de page** s’applique à tous les éléments visuels d’une page de rapport. Un **filtre visuel** s’applique à un seul élément visuel d’une page de rapport. Un **filtre de rapport** s’applique à toutes les pages du rapport.
 
-![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+## <a name="filters-available-in-the-power-bi-filters-pane"></a>Filtres disponibles dans le volet *Filtres* de Power BI
+Que vous utilisiez la version Desktop ou le service Power BI, le volet Filtres s’affiche du côté droit du canevas du rapport. Si vous ne voyez pas le volet Filtres, sélectionnez l’icône « > » dans le coin supérieur droit pour le développer.
+
+Il existe quatre types de filtres.
+
+- Un **filtre de page** s’applique à tous les visuels d’une page de rapport.     
+- Un **filtre visuel** s’applique à un seul visuel d’une page de rapport.    
+- Un **filtre d’extraction** s’applique à une seule entité dans un rapport.    
+- Un **filtre de rapport** s’applique à toutes les pages du rapport.    
+
+    ![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
 
 ## <a name="add-a-filter-to-a-specific-visualization-aka-visual-filter"></a>Ajouter un filtre à une visualisation spécifique (également appelé filtre visuel)
 Il existe 2 manières de procéder : 
@@ -130,11 +138,11 @@ Voyons comment fonctionne le filtre d’extraction.
 3. Dans le volet Champs, sélectionnez le champ que vous voulez ajouter en tant que nouveau filtre au niveau élément visuel, puis faites-le glisser vers la zone **Filtres au niveau du rapport**.  
 4. Sélectionnez les valeurs que vous voulez filtrer (consultez [Utilisation des filtres de rapport](power-bi-how-to-report-filter.md)).
 
-Les éléments visuels sur la page active et toutes les pages du rapport changent en fonction du nouveau filtre. Si vous enregistrez votre rapport avec le filtre, les personnes qui le consultent peuvent interagir avec le filtre en mode Lecture en sélectionnant ou en effaçant les valeurs.
+    Les éléments visuels sur la page active et toutes les pages du rapport changent en fonction du nouveau filtre. Si vous enregistrez votre rapport avec le filtre, les personnes qui le consultent peuvent interagir avec le filtre en mode Lecture en sélectionnant ou en effaçant les valeurs.
 
 1. Sélectionnez la flèche Précédent pour revenir à la page précédente du rapport.
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 ### <a name="why-your-visual-level-filter-and-page-level-filter-may-return-different-results"></a>Pour quelles raisons un filtre au niveau de l’élément visuel et un filtre au niveau de la page peuvent renvoyer des résultats différents ?
 Lorsque vous ajoutez un filtre au niveau de l’élément visuel, Power BI définit le filtre sur les résultats agrégés.  L’agrégation par défaut est Somme, mais vous pouvez en [modifier le type](service-aggregates.md).  
 

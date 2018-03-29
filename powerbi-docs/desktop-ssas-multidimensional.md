@@ -1,15 +1,15 @@
 ---
-title: "Données multidimensionnelles Analysis Services dans Power BI Desktop"
-description: "Données multidimensionnelles Analysis Services dans Power BI Desktop"
+title: Données multidimensionnelles Analysis Services dans Power BI Desktop
+description: Données multidimensionnelles Analysis Services dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,16 +18,16 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6009f938d2dc8961dc63cb0ac6b08459f41f3ea3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 18f80073bf690cd6fc64f94d25f8aad8bf5044e1
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Se connecter aux modèles multidimensionnels SSAS dans Power BI Desktop
 Power BI Desktop vous permet d’accéder aux **modèles multidimensionnels SSAS**, communément appelés **SSAS MD**.
 
-Pour vous connecter à une base de données **SSAS MD**, sélectionnez **Get Data &gt; Base de données &gt; Base de données SQL Server Analysis Services**, comme indiqué dans l’image suivante.
+Pour vous connecter à une base de données **SSAS MD**, sélectionnez **Obtenir des données &gt; Base de données &gt; Base de données SQL Server Analysis Services**, comme indiqué dans l’image suivante :
 
 ![](media/desktop-ssas-multidimensional/ssas-multidimensional-2.png)
 
@@ -37,13 +37,13 @@ Les **modèles multidimensionnels SSAS** en mode de connexion active sont pris e
 Les sections suivantes décrivent les fonctionnalités et capacités des connexions Power BI et SSAS MD.
 
 ### <a name="tabular-metadata-of-multidimensional-models"></a>Métadonnées tabulaires des modèles multidimensionnels
-Le tableau suivant illustre la correspondance entre les objets multidimensionnels et les métadonnées tabulaires qui sont renvoyés à Power BI Desktop. Power BI interroge le modèle sur les métadonnées tabulaires et, en fonction des métadonnées renvoyées, il exécute les requêtes DAX appropriées par rapport à Analysis Services lorsque vous créez une visualisation comme une table, une matrice, un graphique ou un segment.
+Le tableau suivant illustre la correspondance entre les objets multidimensionnels et les métadonnées tabulaires qui sont renvoyés à Power BI Desktop. Power BI interroge le modèle pour obtenir les métadonnées tabulaires et, en fonction des métadonnées renvoyées, il exécute les requêtes DAX appropriées sur Analysis Services quand vous créez une visualisation comme une table, une matrice, un graphique ou un segment.
 
 | Objet BISM multidimensionnel | Métadonnées tabulaires |
 | --- | --- |
 | Cube |Modèle |
 | Dimension de cube |Table |
-| Attributs de la dimension (clés, nom) |Colonnes |
+| Attributs de la dimension (clés), nom |Colonnes |
 | Groupe de mesures |Table |
 | Mesure |Mesure |
 | Mesures sans groupe de mesures associé |Dans une table appelée *Mesures* |
@@ -55,10 +55,10 @@ Le tableau suivant illustre la correspondance entre les objets multidimensionnel
 ### <a name="measures-measure-groups-and-kpis"></a>Mesures, groupes de mesures et indicateurs de performance clés
 Les groupes de mesures dans un cube multidimensionnel sont exposés dans Power BI sous forme de tables et accompagnés du signe ∑, dans le volet **Champs** . Les mesures calculées qui ne sont pas associées à un groupe de mesures sont regroupées dans une table spéciale appelée *Mesures* dans les métadonnées tabulaires.
 
-Dans un modèle multidimensionnel, vous pouvez définir un ensemble de mesures ou d’indicateurs de performance clés dans un cube à placer dans un *Dossier d’affichage*, ce qui peut simplifier les modèles complexes. Power BI reconnaît les dossiers d’affichage dans les métadonnées tabulaires et affiche les mesures et indicateurs de performance clés dans les dossiers d’affichage. Les indicateurs de performance clés dans les bases de données multidimensionnelles prennent en charge la *valeur*, l’ *objectif*, le *graphique d’état* et le *graphique de tendance*.
+Dans un modèle multidimensionnel, vous pouvez définir un ensemble de mesures ou d’indicateurs de performance clés dans un cube à placer dans un *Dossier d’affichage*, ce qui peut simplifier les modèles complexes. Power BI reconnaît les dossiers d’affichage dans les métadonnées tabulaires et affiche les mesures et indicateurs de performance clés dans les dossiers d’affichage. Les indicateurs de performance clés dans les bases de données multidimensionnelles prennent en charge *Valeur*, *Objectif*, *Graphique d’état* et *Graphique de tendance*.
 
 ### <a name="dimension-attribute-type"></a>Types d’attributs de dimension
-Les modèles multidimensionnels prennent également en charge l’association d’attributs de dimension avec des types d’attributs de dimension spécifiques. Par exemple, une dimension de **géographie** pour laquelle les attributs de dimension *ville*, *état/région*, *pays* et *code postal* sont associés à des types géographiques appropriés sont exposés dans les métadonnées tabulaires. Power BI reconnaît les métadonnées, ce qui vous permet de créer des visualisations de carte. Ces associations sont identifiables grâce à l’icône *carte* située en regard de l’élément dans le volet **champ** volet dans Power BI.
+Les modèles multidimensionnels prennent également en charge l’association d’attributs de dimension avec des types d’attributs de dimension spécifiques. Par exemple, une dimension **Géographie**, pour laquelle les attributs de dimension *Ville*, *État/région*, *Pays* et *Code postal* sont associés à des types géographiques appropriés, sont exposés dans les métadonnées tabulaires. Power BI reconnaît les métadonnées, ce qui vous permet de créer des visualisations de carte. Ces associations sont identifiables grâce à l’icône *carte* située en regard de l’élément dans le volet **champ** volet dans Power BI.
 
 Power BI peut également générer des images lorsque vous fournissez un champ contenant l’URL (Uniform Resource Locator) des images. Vous pouvez désigner ces champs comme type *ImageURL* dans SQL Server Data Tools (ou par la suite dans Power BI) et les informations relatives au type sont transmises à Power BI dans les métadonnées tabulaires. Power BI peut ensuite récupérer ces images à partir de l’URL et les afficher dans des visuels.
 
@@ -71,7 +71,7 @@ Les modèles multidimensionnels prennent en charge la création de différents t
 * membres calculés sur les hiérarchies d’attributs non frères de *Tous*
 * membres calculés sur les hiérarchies d’utilisateur
 
-Les modèles multidimensionnels exposent les *membres calculés dans les hiérarchies d’attributs* sous forme de valeurs d’une colonne. Il existe quelques options et contraintes supplémentaires lors de l’exposition de ce type de membre calculé :
+Les modèles multidimensionnels exposent les *membres calculés sur les hiérarchies d’attributs* sous forme de valeurs d’une colonne. Il existe quelques options et contraintes supplémentaires lors de l’exposition de ce type de membre calculé :
 
 * L’attribut de dimension peut avoir une propriété *UnknownMember* facultative
 * Un attribut contenant des membres calculés ne peut pas être l’attribut clé de la dimension, sauf s’il est le seul attribut de la dimension

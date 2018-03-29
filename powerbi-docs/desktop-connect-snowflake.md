@@ -1,15 +1,15 @@
 ---
-title: "Se connecter à un entrepôt Snowflake Computing dans Power BI Desktop"
-description: "Se connecter facilement à un entrepôt Snowflake Computing pour l’utiliser dans Power BI Desktop"
+title: Se connecter à un entrepôt Snowflake Computing dans Power BI Desktop
+description: Se connecter facilement à un entrepôt Snowflake Computing pour l’utiliser dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 8e4ad8d1780684ee122565dee29c0cea78dc8131
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 762a8bebfa757b41bfeafb54b278eca41a57f35d
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Se connecter à Snowflake dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à un entrepôt **Snowflake Computing** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop. 
@@ -33,7 +33,7 @@ Dans Power BI Desktop, vous pouvez vous connecter à un entrepôt **Snowflake C
 > 
 
 ## <a name="connect-to-a-snowflake-computing-warehouse"></a>Se connecter à un entrepôt Snowflake Computing
-Pour vous connecter à un entrepôt **Snowflake Computing**, sélectionnez **Obtenir des données** à partir du ruban **Accueil** de Power BI Desktop. Sélectionnez **Base de données** dans les catégories à gauche pour afficher **Snowflake**.
+Pour vous connecter à un entrepôt **Snowflake Computing**, sélectionnez **Obtenir des données** à partir du ruban **Accueil** de Power BI Desktop. Sélectionnez **Base de données** dans les catégories à gauche pour afficher **Snowflake**.
 
 ![](media/desktop-connect-snowflake/connect_snowflake_2b.png)
 

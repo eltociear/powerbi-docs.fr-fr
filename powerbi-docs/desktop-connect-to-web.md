@@ -1,15 +1,15 @@
 ---
-title: "Se connecter à une page web à partir de Power BI Desktop"
-description: "Se connecter à une page web et utiliser les données de cette page dans Power BI Desktop"
+title: Se connecter à une page web à partir de Power BI Desktop
+description: Se connecter à une page web et utiliser les données de cette page dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0ee3ff3b3ca33ea4760f9f08b4e05cbd65e2ab34
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 23984d8e64445d869062e942eb6155ff58b0d0ae
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Se connecter à une page web à partir de Power BI Desktop
 Vous pouvez vous connecter à une page web et importer ses données dans Power BI Desktop, pour les utiliser dans vos éléments visuels et dans vos modèles de données.
@@ -47,7 +47,7 @@ Lorsque vous sélectionnez **Charger**, Power BI Desktop importe les éléments
 
 Voilà comment se connecter à une page web et importer les données qu’elle contient dans Power BI Desktop.
 
-À partir de là, vous pouvez faire glisser ces champs sur le canevas de rapport et créer toutes les visualisations que vous voulez. Vous pouvez également utiliser les données de cette page web comme vous le feriez pour d’autres données : vous pouvez les mettre en forme, vous pouvez créer des relations entre elles et d’autres sources de données dans votre modèle et tout simplement faire ce dont vous avez besoin pour créer le rapport Power BI souhaité.
+À partir de là, vous pouvez faire glisser ces champs sur le canevas de rapport et créer toutes les visualisations que vous voulez. Vous pouvez également utiliser les données de cette page web comme vous le feriez pour d’autres données : vous pouvez les mettre en forme, vous pouvez créer des relations entre elles et d’autres sources de données de votre modèle et faire aussi ce dont vous avez besoin pour créer le rapport Power BI souhaité.
 
 Pour voir plus d’informations sur la connexion à une page web et voir ce processus en action, consultez le [Guide de prise en main de Power BI Desktop](desktop-getting-started.md).
 

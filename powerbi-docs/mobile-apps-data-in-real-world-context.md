@@ -1,33 +1,33 @@
 ---
-title: "Obtenir des données réelles avec les applications mobiles Power BI"
-description: "Les applications mobiles Power BI peuvent connecter des éléments du monde réel directement à des informations connexes BI, sans recherche."
+title: Obtenir des données réelles avec les applications mobiles Power BI
+description: Les applications mobiles Power BI peuvent connecter des éléments du monde réel directement à des informations connexes BI, sans recherche.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 03/13/2018
 ms.author: maggies
-ms.openlocfilehash: 670d83e41476bf3d38a0f98908e20e7d35f9e22d
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: f4ad86ddf6604e2e8bd9d562249b3f2865a3ec7d
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="get-data-from-the-real-world-with-the-power-bi-mobile-apps"></a>Obtenir des données réelles avec les applications mobiles Power BI
 Les applications mobiles Power BI peuvent connecter des éléments du monde réel directement à des informations connexes BI de différentes façons. 
 
 ## <a name="qr-codes-for-tiles"></a>Codes QR pour les vignettes
-Créez un code QR pour une vignette d’un tableau de bord et placez-le où bon vous semble. Quand vos collègues scannent le code à l’aide de leur iPhone ou de leur téléphone Android, ils peuvent voir la vignette que vous avez associée à ce code QR. Sur un iPhone, la vignette est affichée en réalité augmentée.
+Créez un code QR pour un rapport ou pour une vignette d’un tableau de bord, et placez-le où bon vous semble. Quand vos collègues scannent le code avec leur iPhone ou leur téléphone Android, ou avec l’application Power BI for Mixed Reality, ils peuvent voir la vignette que vous avez associée à ce code QR. Sur un iPhone, la vignette est affichée en réalité augmentée.
 
 ![Code QR](media/mobile-apps-data-in-real-world-context/power-bi-ios-qr-ar-scanner-small.png)
 
@@ -35,6 +35,7 @@ En savoir plus sur :
 
 * [Créer un code QR pour une vignette dans Power BI](service-create-qr-code-for-tile.md)
 * [Scanner un code QR Power BI à partir de votre appareil mobile](mobile-apps-qr-code.md)
+* [Scanner un code QR avec l’application Power BI for Mixed Reality](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="qr-codes-for-reports"></a>Codes QR pour les rapports
 Créez un code QR pour un rapport.  Quand vos collègues scannent le code avec leur iPhone (ou un téléphone Android prochainement), ils voient le rapport que vous avez associé à ce code QR. 

@@ -1,39 +1,39 @@
 ---
-title: "Modes Lecture et Édition pour un rapport dans le service Power BI"
-description: "Vue d’ensemble globale des différences entre le mode Lecture et le mode Édition pour les rapports du service Power BI"
+title: Modes Lecture et Édition pour un rapport dans le service Power BI
+description: Vue d’ensemble globale des différences entre le mode Lecture et le mode Édition pour les rapports du service Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6eca438c9e12d99f925aef864ed9b74e16ef30b7
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: a9cb6e3d3fe244a3d530efeb2624e3cc5a799e55
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Modes Lecture et Édition dans les rapports du service Power BI
-Dans le service Power BI (mais pas dans Power BI Desktop), il existe deux modes d’utilisation et d’affichage des rapports : le mode Lecture et le mode Édition. Le mode Lecture est disponible pour tous les utilisateurs et il est spécialement conçu pour les *consommateurs* de données tandis que le mode Édition est disponible uniquement pour les propriétaires et les *créateurs* de rapports. 
+Dans le service Power BI (mais pas dans Power BI Desktop), il existe deux modes d’utilisation et d’affichage des rapports : le mode Lecture et le mode Édition. Le mode Lecture est disponible pour tous les utilisateurs et il est spécialement conçu pour les *consommateurs* de données tandis que le mode Édition est disponible uniquement pour les propriétaires et les *créateurs* de rapports.
 
 ![illustration des créateurs de rapports et consommateurs de rapports](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
 
 ## <a name="report-reading-view"></a>Mode Lecture des rapports
 
- Le mode Lecture permet d’explorer et d’exploiter le rapport. C’est un cadre amusant et une méthode sûre pour jouer et vous familiariser avec vos données. Le mode Lecture est conçu pour les *consommateurs* de rapports, à savoir les utilisateurs qui ouvrent des rapports à partir d’applications ou qui ont accès à des [rapports partagés](service-share-dashboards.md). Le mode Lecture permet de s’assurer que chaque consommateur unique d’un rapport spécifique voit le même rapport, les mêmes visualisations, avec les mêmes filtres appliqués.  Les consommateurs peuvent interagir avec les rapports, mais ne peuvent pas enregistrer les modifications.
+ Le mode Lecture permet d’explorer et d’exploiter le rapport. C’est un cadre amusant et une méthode sûre pour jouer et vous familiariser avec vos données. Le mode Lecture est conçu pour les *consommateurs* de rapports, à savoir les utilisateurs qui ouvrent des rapports à partir d’applications ou qui ont accès à des [rapports partagés](service-share-dashboards.md). Le mode Lecture permet de garantir que chaque consommateur individuel d’un rapport spécifique voit le même rapport, les mêmes visualisations, avec les mêmes filtres éventuels appliqués.  Les consommateurs peuvent interagir avec les rapports et modifier les filtres existants (ces modifications étant enregistrées avec le rapport), mais ils ne peuvent pas ajouter de nouveaux filtres.
 
->**Remarque** : dans certains cas, les consommateurs de rapports peuvent afficher diverses données en raison d’autorisations d’accès aux données et de la sécurité au niveau des lignes. 
+>**Remarque** : dans certains cas, les consommateurs de rapports peuvent afficher diverses données en raison d’autorisations d’accès aux données et de la sécurité au niveau des lignes.
 
 ## <a name="report-editing-view"></a>Mode Édition dans un rapport
 
@@ -42,7 +42,7 @@ Le mode Édition est uniquement disponible pour l’utilisateur qui a créé le 
 Le Mode Édition est conçu pour les *créateurs* de rapports. C’est l’emplacement où les créateurs importent des jeux de données et s’y connectent, explorent les données et créent des rapports et tableaux de bord. Le mode Édition permet aux *créateurs* d’affiner l’analyse de leurs données par l’ajout et la suppression des champs, la modification du type des visualisations, la création de nouvelles visualisations et l’ajout et la suppression des visualisations et des pages d’un rapport. Ils peuvent alors partager les rapports qu’ils créent avec des collègues.
 
 ## <a name="reading-view-versus-editing-view"></a>Mode Lecture et mode Édition
-Ce graphique ne répertorie pas toutes les fonctionnalités de rapport du service Power BI ! Il répertorie uniquement les tâches de rapport qui ne sont pas disponibles **à la fois** en mode Lecture et en mode Édition. 
+Ce graphique ne répertorie pas toutes les fonctionnalités de rapport du service Power BI ! Il répertorie uniquement les tâches de rapport qui ne sont pas disponibles **à la fois** en mode Lecture et en mode Édition.
 
 
 |Tâche  | Mode Lecture  | Mode Édition |
@@ -52,7 +52,7 @@ Ce graphique ne répertorie pas toutes les fonctionnalités de rapport du servic
 | [Créer ou modifier un rapport](service-report-create-new.md) | Non  | Oui |
 | [Partager un rapport](service-share-reports.md)| Oui | Oui, ainsi que gérer les autorisations, notamment en attribuant d’autres autorisations de *propriétaire*. |
 | [Créer des filtres permanents au niveau du visuel, du détail, de la page et du rapport à partir du volet Filtres](power-bi-report-add-filter.md) | Non  | Oui |
-| [Utilisation du volet Filtres d’un rapport](power-bi-how-to-report-filter.md) | Oui, possibilité d’utiliser les filtres existants, mais les modifications ne sont pas enregistrées avec le rapport. | Oui |
+| [Utilisation du volet Filtres d’un rapport](power-bi-how-to-report-filter.md) | Oui, ils peuvent utiliser les filtres existants et les modifications peuvent être enregistrées avec le rapport, mais ils ne peuvent pas ajouter de nouveaux filtres. | Oui |
 | [Utiliser le volet Analytique d’un rapport](service-analytics-pane.md) | Non | Oui |
 | [Options d’**affichage** des rapports](power-bi-report-display-settings.md) | Oui, à quelques exceptions près. | Oui, tous, y compris le quadrillage, l’alignement et le verrouillage. |
 | [Créer une planification de l’actualisation](refresh-data.md) | Non  | Oui |
@@ -86,14 +86,14 @@ N’oubliez pas que seuls les propriétaires et les créateurs de rapports sont 
 
    ![option Modifier le rapport grisée](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
 
-2. Si l’option **Modifier le rapport** n’est pas grisée, sélectionnez-la pour ouvrir le rapport en mode Édition. 
-   
+2. Si l’option **Modifier le rapport** n’est pas grisée, sélectionnez-la pour ouvrir le rapport en mode Édition.
+
    ![option Modifier le rapport](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
-   
+
    Le rapport est maintenant en mode Édition et utilise les mêmes [paramètres d’affichage](power-bi-report-display-settings.md) que ceux utilisés en mode Lecture.
 
 2. Pour revenir au **mode Lecture**, sélectionnez le mode Lecture dans la barre de navigation supérieure.
-   
+
     ![option Mode Lecture](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
 
 
@@ -101,5 +101,4 @@ N’oubliez pas que seuls les propriétaires et les créateurs de rapports sont 
 ### <a name="next-steps"></a>Étapes suivantes
 Il existe de nombreuses façons d’interagir avec un rapport en mode Lecture, de découper vos données pour obtenir des informations détaillées et d’obtenir des réponses aux questions.  La rubrique suivante intitulée [Interagir avec un rapport en mode Lecture](service-interact-with-a-report-in-editing-view.md) décrit en détail certaines de ces méthodes.    
 Revenez à [Rapports dans Power BI](service-reports.md)    
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/) 
-
+D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

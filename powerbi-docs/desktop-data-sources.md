@@ -1,13 +1,13 @@
 ---
-title: "Sources de données dans Power BI Desktop"
-description: "Sources de données dans Power BI Desktop"
+title: Sources de données dans Power BI Desktop
+description: Sources de données dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: complete
 qualitydate: 04/29/2016
 ms.service: powerbi
@@ -18,16 +18,16 @@ ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ff28f5d43b065ae798e2e9f275c8e8b59e9ee1ce
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 4bfdbaaa305f80195fd08155ecca744444495aeb
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
 
-Pour vous connecter à des données, sélectionnez **Obtenir des données** à partir du ruban **Accueil**. Sélectionnez la flèche orientée vers le bas ou le texte **Obtenir les données** sur le bouton pour afficher le menu des types de données **Les plus courantes** illustré dans l’image suivante.
+Pour vous connecter à des données, sélectionnez **Obtenir des données** à partir du ruban **Accueil**. Sélectionnez la flèche orientée vers le bas ou le texte **Obtenir les données** sur le bouton pour afficher le menu des types de données **Les plus courantes** illustré dans l’image suivante :
 
 ![](media/desktop-data-sources/data-sources_1.png)
 

@@ -1,28 +1,28 @@
 ---
-title: "Précédentes mises à jour mensuelles de Power BI Desktop"
-description: "Mise à jour des fonctionnalités des précédentes versions de Power BI Desktop"
+title: Précédentes mises à jour mensuelles de Power BI Desktop
+description: Mise à jour des fonctionnalités des précédentes versions de Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: identified
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 03/14/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4997c29941608c12a89598b6e9cb1b1ad3aa2fe8
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 786e9adf9698b0d878043c684dc3b65a49bc760a
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -58,12 +58,12 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** en février 2018
 * Recherche dans les volets Mise en forme et Analytique [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=14m46s) [[article]](desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
 
 
-### <a name="custom-visuals"></a>Visuels personnalisés
+### <a name="custom-visuals"></a>Éléments visuels personnalisés
 
 * Organisation des visuels personnalisés (préversion) [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=19m23s) [[article]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
 
-### <a name="analytics"></a>Analytique
+### <a name="analytics"></a>Analyse
 
 * Définition de tables de dates personnalisées [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=16m4s) [[article]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
 * Mesures rapides accessibles à tous  [[vidéo]](https://youtu.be/KeVB5RwMzJo?t=17m52s)  [[article]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
@@ -122,7 +122,7 @@ Les mises à jour suivantes ont été apportées à **Power BI Desktop** en janv
 -   Sélection des N premiers dans Questions et réponses  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
 -   Nouveaux visuels personnalisés [[vidéo]](https://youtu.be/W8Pp5wuCXJw?t=11m32s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
 
-### <a name="analytics"></a>Analytique
+### <a name="analytics"></a>Analyse
 
 -   Mesure rapide du coefficient de corrélation [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#correlationCoefficient) 
 
@@ -228,7 +228,7 @@ Les mises à jour suivantes ont été ajoutées dans **Power BI Desktop** en nov
 -   Visuels personnalisés publiés récemment  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=20m50s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#customVisuals) 
 
 
-### <a name="analytics"></a>Analytique
+### <a name="analytics"></a>Analyse
 
 -   Mise en forme au niveau de la cellule des modèles AS multidimensionnels pour carte à plusieurs lignes  [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=27m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting) 
 
@@ -284,7 +284,7 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci sont l
 -   Marqueurs Nuage de points et Bulle [[vidéo]](https://youtu.be/jksjtR8GnBE?t=17m20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#markers) [[article]](desktop-accessibility.md)
 -   Augmenter le nombre de points de données affichés dans les visuels de nuage de points [[vidéo]](https://youtu.be/jksjtR8GnBE?t=19m51s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#dataVolume) 
 
-### <a name="analytics"></a>Analytique :
+### <a name="analytics"></a>Analyse :
 
 -   Mesures rapides pour les connexions actives SSAS [[vidéo]](https://youtu.be/jksjtR8GnBE?t=22m35s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#liveConnectQuickMeasures) [[article]](desktop-quick-measures.md)
 -   Ventes à partir de la nouvelle mesure rapide Clients [[vidéo]](https://youtu.be/jksjtR8GnBE?t=23m16s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2017-feature-summary/#newCustomers) [[article]](desktop-quick-measures.md)
@@ -510,7 +510,7 @@ Les mises à jour suivantes ont été apportées à **Power BI Desktop** en mai 
 -   Prise en charge de nouvelles URL dans les visuels de tableau et matrice [[vidéo]](https://youtu.be/CKISVNHcHVA?t=3m8s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#urlTables)
 -   Liens mailto dans les zones de texte [[vidéo]](https://youtu.be/CKISVNHcHVA?t=11m34s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#mailtoTextbox)
 
-### <a name="analytics"></a>Analytique :
+### <a name="analytics"></a>Analyse :
 
 -   Mesures au niveau du rapport pour les connexions actives aux modèles tabulaires Analysis Services et jeux de données du service Power BI [[vidéo]](https://youtu.be/CKISVNHcHVA?t=12m48s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#reportLevelMeasures)
 -   2 nouvelles mesures rapides (préversion) [[vidéo]](https://youtu.be/CKISVNHcHVA?t=15m39s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-feature-summary/#quickMeasures)
@@ -600,7 +600,7 @@ Les mises à jour suivantes ont été apportées à Power BI Desktop en mars 2
 -   Zone de texte - possibilité de choisir une couleur de police [[vidéo]](https://youtu.be/CaRTON3lJqw?t=13m17s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#textbox)
 -   Application de thèmes de rapport (version préliminaire) [[vidéo]](https://youtu.be/CaRTON3lJqw?t=15m8s) [[article]](desktop-report-themes.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#theme)
 
-### <a name="analytics"></a>Analytique :
+### <a name="analytics"></a>Analyse :
 
 -   Clustering - désormais à la disposition générale [[vidéo]](https://youtu.be/CaRTON3lJqw?t=19m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/#clustering)
 
@@ -642,7 +642,7 @@ Les nouvelles mises à jour apportées à Power BI Desktop en février sont les
 -   Largeur minimale des catégories dans les graphiques cartésiens [[vidéo]](https://youtu.be/mn75-LOPxMA?t=4m) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#categoryWidth)
 -   Épaisseur de ligne des graphique en courbes et contrôles du type de jointure [[vidéo]](https://youtu.be/mn75-LOPxMA?t=5m55s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#lineThickness)
 
-### <a name="analytics"></a>Analytique :
+### <a name="analytics"></a>Analyse :
 
 -   Deux nouveaux calculs rapides : pourcentage du total de la ligne et pourcentage du total de la colonne [[vidéo]](https://youtu.be/mn75-LOPxMA?t=7m46s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#quickCalcs)
 
@@ -731,7 +731,7 @@ Les mises à jour suivantes ont été apportées à Power BI Desktop en novembr
 -   Défilement dans les rapports mobiles [[vidéo]](https://youtu.be/kERJ_WOLuLk?t=7m7s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#mobileReports)
 
 
-### <a name="analytics"></a>Analytique
+### <a name="analytics"></a>Analyse
 
 -   Clustering (version préliminaire) [[vidéo]](https://youtu.be/kERJ_WOLuLk?t=8m52s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#clustering)
 -   Prévisions (maintenant disponibles dans le **service Power BI**) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-feature-summary/#forecasting)
@@ -879,7 +879,7 @@ La vidéo suivante décrit et montre chacune de ces mises à jour. Vous pouvez �
 
 
 
-## <a name="august-2016-update-2374464321"></a>Mise à jour d’août 2016 (2.37.4464.321)
+## <a name="august-2016-update-2384491282"></a>Mise à jour d’août 2016 (2.38.4491.282)
 
 La mise à jour publiée au mois d’août a introduit une collection complète de nouvelles fonctionnalités pour Power BI Desktop :
 

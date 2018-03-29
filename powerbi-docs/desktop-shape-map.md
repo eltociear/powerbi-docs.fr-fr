@@ -1,15 +1,15 @@
 ---
-title: "Utiliser des cartes de formes dans Power BI Desktop (version préliminaire)"
-description: "Créer des comparaisons relatives de régions à l’aide des cartes de formes dans Power BI Desktop"
+title: Utiliser des cartes de formes dans Power BI Desktop (version préliminaire)
+description: Créer des comparaisons relatives de régions à l’aide des cartes de formes dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 335e9800be3d2a2cd30cc84835ab7b0173922c46
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2bdd29f664d49dd4628b2f27d0eddf1f5dad1cf7
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
 Dans Power BI Desktop, vous pouvez créer un élément visuel **Carte de formes** pour afficher des comparaisons relatives de régions sur une carte en appliquant différentes couleurs aux différentes régions. Contrairement à l’élément visuel **Carte**, l’élément visuel **Carte de formes** ne peut pas afficher d’emplacements géographiques précis de points de données sur une carte. Son principal objectif est en effet d’afficher des comparaisons relatives de régions sur une carte en affectant des couleurs différentes à ces dernières.
@@ -73,6 +73,23 @@ Vous pouvez utiliser des cartes personnalisées avec **Carte de formes** tant qu
 Pour utiliser votre fichier de carte **TopoJSON**, ajoutez un élément visuel ShapeMap à votre rapport et ajoutez des données aux compartiments *Emplacement* et *Valeurs*. Ensuite, dans le volet **Visualisations** avec la section **Format** sélectionnée (icône en forme de pinceau, indiquée par (1) dans l’image suivante), développez la section **Forme** et sélectionnez **+ Ajouter une carte**.
 
 ![](media/desktop-shape-map/shape-map_6.png)
+
+## <a name="sample-custom-map"></a>Exemple de carte personnalisée
+Les *bureaux des avocats des États-Unis* publient un rapport fiscal annuel sur leurs données concernant les contentieux et le nombre de dossiers.  Tous leurs rapports sont accessibles via le lien ci-dessous,
+
+https://www.justice.gov/usao/resources/annual-statistical-reports
+
+Comme les États peuvent être divisés en plusieurs districts, nous devons utiliser une carte de formes personnalisée.  En important la carte **TopoJSON** des districts judiciaires des États-Unis dans **Power BI Desktop**, nous pouvons visualiser les données des avocats des districts de l’année fiscale.  L’image ci-dessous montre un exemple de cette carte.
+
+![](media/desktop-shape-map/shape-map_7a.png)
+
+Vous pouvez faire des choses intéressantes avec les cartes des états individuels et afficher plus de détails en fonction des districts qu’ils contiennent. 
+
+![](media/desktop-shape-map/shape-map_7b.png)
+
+Si vous voulez faire des essais avec ce jeu de données et cette visualisation, vous pouvez télécharger le fichier PBIX d’origine qui a été utilisé pour générer ce rapport via le lien suivant.
+
+* [Fichier .PBIX de démonstration de carte de formes personnalisée](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## <a name="getting-map-data"></a>Obtenir des données de carte
 Pour obtenir rapidement des données dans un modèle afin de tester l’élément visuel **Carte de formes**, copiez une des tables situées à la fin de cet article, puis sélectionnez **Entrer des données** dans le ruban **Accueil**.

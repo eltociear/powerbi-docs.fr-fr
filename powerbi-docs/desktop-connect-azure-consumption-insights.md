@@ -1,15 +1,15 @@
 ---
-title: "Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop (bêta)"
-description: "Se connecter aisément à Azure pour obtenir des informations sur la consommation et l’utilisation à l’aide de Power BI Desktop"
+title: Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop (bêta)
+description: Se connecter aisément à Azure pour obtenir des informations sur la consommation et l’utilisation à l’aide de Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,23 +18,23 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9127f7b2e19a304c514d5e6449cf1ceb7ecddb13
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1e82ec988389790a3d96cb6f98f0db5d1a385fda
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Se connecter à Azure Consumption Insights dans Power BI Desktop (bêta)
 Le connecteur **Azure Consumption Insights** vous permet d’utiliser **Power BI Desktop** pour vous connecter à Azure afin d’obtenir des données et informations détaillées sur l’utilisation des services Azure par votre organisation. Vous pouvez également créer des mesures, des colonnes personnalisées et des visuels afin de rapporter et partager l’utilisation d’Azure par votre organisation. Le connecteur **Azure Consumption Insights** étant publié en version bêta, il est susceptible de changer.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01.png)
 
-Cet article explique comment se connecter à l’aide du connecteur **Azure Consumption Insights** pour obtenir des données et abandonner l’utilisation du connecteur Azure Enterprise. Il présente également un mappage des *colonnes de détails d’utilisation* disponibles dans l’API **ACI** (Azure Consumption Insights).
+Cet article explique comment se connecter avec le connecteur **Azure Consumption Insights** pour obtenir des données et comment migrer depuis le connecteur Azure Enterprise. Il présente également un mappage des *colonnes de détails d’utilisation* disponibles dans l’API **ACI** (Azure Consumption Insights).
 
 ## <a name="connect-to-azure-consumption-insights"></a>Se connecter à Azure Consumption Insights
 Pour pouvoir vous connecter à l’aide du connecteur **Azure Consumption Insights**, vous devez avoir accès aux fonctionnalités d’entreprise au sein du portail Azure.
 
-Pour vous connecter à l’aide du connecteur **Azure Consumption Insights**, dans le ruban **Accueil** de **Power BI Desktop**, sélectionnez **Obtenir des données**. Sélectionnez **Services en ligne** dans les catégories à gauche pour afficher **Microsoft Azure Consumption Insights (bêta)**. Sélectionnez **Se connecter**.
+Pour vous connecter avec le connecteur **Azure Consumption Insights**, dans le ruban **Accueil** de **Power BI Desktop**, sélectionnez **Obtenir des données**. Sélectionnez **Services en ligne** dans les catégories à gauche pour afficher **Microsoft Azure Consumption Insights (bêta)**. Sélectionnez **Se connecter**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
 
@@ -42,11 +42,11 @@ Dans la boîte de dialogue qui s’affiche, entrez votre *Numéro d’inscriptio
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
-* Vous pouvez trouver celui-ci sur le portail [Microsoft Azure Enterprise Portal](https://ea.azure.com), à l’emplacement illustré dans l’image suivante.
+* Vous pouvez trouver celui-ci sur le portail [Azure Enterprise Portal](https://ea.azure.com), à l’emplacement montré dans l’image suivante :
   
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
   
-  Cette version du connecteur prend uniquement en charge les inscriptions d’entreprise via la page https://ea.azure.com. Les inscriptions en Chine ne sont pas prises en charge actuellement.
+  Cette version du connecteur prend en charge seulement les inscriptions d’entreprise depuis https://ea.azure.com. Les inscriptions en Chine ne sont pas prises en charge actuellement.
 
 Ensuite, entrez votre *Clé d’accès* pour établir la connexion.
 
@@ -61,7 +61,7 @@ Après que avez entré votre *Clé d’accès* et sélectionné **Se connecter**
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
 
 > [!NOTE]
-> Les tables Résumé et *Grille tarifaire* sont disponibles uniquement pour la clé API au niveau inscription. De plus, les données de ces tables sont, par défaut, celles du mois en cours pour l’*Utilisation* et la *Grille tarifaire*. Les tables *Résumé* et *Place de marché* ne sont pas limitées au mois en cours.
+> Les tableaux *Résumé* et *Grille tarifaire* sont disponibles seulement pour la clé d’API au niveau inscription. De plus, les données de ces tables sont, par défaut, celles du mois en cours pour l’*Utilisation* et la *Grille tarifaire*. Les tables *Résumé* et *Place de marché* ne sont pas limitées au mois en cours.
 > 
 > 
 
@@ -80,20 +80,20 @@ Une fois les données chargées à l’aide du connecteur **Azure Consumption In
 
 Azure comprend également une collection d’exemples de requêtes personnalisées que vous pouvez récupérer à l’aide d’une requête vide. Pour cela, dans le ruban **Accueil** de **Power BI Desktop**, sélectionnez la flèche déroulante **Obtenir des données**, puis choisissez **Requête vide**. Vous pouvez également faire cela dans l’**Éditeur de requête** en cliquant avec le bouton droit sur le volet**Requêtes** à gauche, puis en sélectionnant **Nouvelle requête > Requête vide** dans le menu qui s’affiche.
 
-Dans la **Barre de formule**, tapez ce qui suit :
+Dans la **Barre de formule**, tapez ce qui suit :
 
     = MicrosoftAzureConsumptionInsights.Contents
 
-Une collection d’exemples s’affiche, comme illustré dans l’image suivante.
+Une collection d’exemples s’affiche, comme illustré dans l’image suivante :
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
 
 Lors de la manipulation de rapports et de la création de requêtes, utilisez ce qui suit :
 
-* Pour définir le nombre de mois à partir de la date actuelle, utilisez *noOfMonths*.
+* Pour définir le nombre de mois à partir de la date actuelle, utilisez *numberOfMonth*.
   * Utilisez une valeur comprise entre 1 et 36 pour représenter le nombre de mois que vous voulez importer à partir de la date actuelle. Nous vous recommandons de ne pas récupérer plus de 12 mois de données afin d’éviter les seuils en lien avec les contraintes d’importation et le volume autorisé de données pour les requêtes dans Power BI.
 * Pour définir une période de mois dans une fenêtre de temps historique, utilisez *startBillingDataWindow* et *endBillingDataWindow*.
-* N’utilisez *pas* *noOfMonths* avec *startBillingDataWindow* ou *endBillingDataWindow*.
+* N’utilisez *pas* *numberOfMonth* avec *startBillingDataWindow* ou *endBillingDataWindow*.
 
 ## <a name="migrating-from-the-azure-enterprise-connector"></a>Migration à partir du connecteur Azure Enterprise
 Certains clients ont créé des visuels l’aide du *connecteur Azure Enterprise (bêta)*, qui sera finalement supprimé et remplacé par le connecteur **Azure Consumption Insights**. Le connecteur **Azure Consumption Insights** intègre les fonctionnalités et améliorations suivantes :
@@ -108,7 +108,7 @@ Pour aider les clients à opérer la transition vers le nouveau connecteur **Azu
 La première étape consiste à se connecter à l’aide du connecteur **Azure Consumption Insights** décrit en détail précédemment dans cet article. Dans le cadre de cette étape, dans le ruban **Accueil** de **Power BI Desktop**, sélectionnez **Obtenir des données > Requête vide**.
 
 ### <a name="step-2-use-the-advanced-editor-to-create-a-query"></a>Étape 2 : utiliser l’Éditeur avancé pour créer une requête
-Dans l’**Éditeur de requête**, dans la section **Requête** du ruban **Accueil**, sélectionnez **Éditeur avancé**. Dans la fenêtre **Éditeur avancé** qui s’affiche, entrez la requête suivante.
+Dans l’**Éditeur de requête**, dans la section **Requête** du ruban **Accueil**, sélectionnez **Éditeur avancé**. Dans la fenêtre **Éditeur avancé** qui apparaît, entrez la requête suivante :
 
     let    
         enrollmentNumber = "100",
@@ -121,7 +121,7 @@ Dans l’**Éditeur de requête**, dans la section **Requête** du ruban **Accue
 
 Bien entendu, vous devez remplacer la valeur *enrollmentNumber* par votre propre numéro d’inscription, que vous pouvez obtenir sur le portail [Azure Enterprise Portal](https://ea.azure.com). Le paramètre *numberOfMonth* spécifie le nombre de mois de données sur lesquels vous voulez revenir à partir de la date en cours. Utilisez zéro (0) pour le mois en cours.
 
-Lorsque vous sélectionnez **Terminé** dans la fenêtre **Éditeur avancé**, l’aperçu est actualisé pour afficher les données de la plage de mois spécifiée dans la table. Sélectionnez **Fermer & appliquer**, puis appuyez sur Entrée.
+Quand vous sélectionnez **Terminé** dans la fenêtre **Éditeur avancé**, l’aperçu est actualisé pour afficher les données de la plage de mois spécifiée dans la table. Sélectionnez **Fermer & appliquer**, puis appuyez sur Entrée.
 
 ### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Étape 3 : déplacer les mesures et les colonnes personnalisées vers le nouveau rapport
 Vous devez à présent déplacer les colonnes personnalisées ou les mesures que vous avez créées vers la nouvelle table des détails. Voici comment procéder.
@@ -131,7 +131,7 @@ Vous devez à présent déplacer les colonnes personnalisées ou les mesures que
    
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Remplacez *Query1* par le nom de la table des détails d’origine.
-4. Créez de nouvelles mesures et colonnes personnalisées dans votre table en cliquant avec le bouton droit sur la table et en choisissant **Nouvelle mesure**, puis coupez et collez toutes les mesures et colonnes de votre magasin.
+4. Créez de nouvelles mesures et des colonnes personnalisées dans votre table en cliquant avec le bouton droit sur la table et en choisissant **Nouvelle mesure**, puis coupez et collez toutes les mesures et colonnes de votre magasin.
 
 ### <a name="step-4-re-link-tables-that-had-relationships"></a>Étape 4 : lier de nouveau les tables qui avaient des relations
 De nombreux tableaux de bord comportent des tables supplémentaires qui sont utilisées pour la recherche ou le filtrage, telles que des tables de dates ou des tables destinées à des projets personnalisés. Le rétablissement de ces relations résout la plupart des problèmes restants. Voici comment procéder.

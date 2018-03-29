@@ -1,15 +1,15 @@
 ---
-title: "Utilisation de Q&A dans Power BI Desktop"
-description: "Vous pouvez maintenant utiliser des requêtes en langage naturel dans Power BI Desktop, à l’aide de Q&A"
+title: Utilisation de Q&A dans Power BI Desktop
+description: Vous pouvez maintenant utiliser des requêtes en langage naturel dans Power BI Desktop, à l’aide de Q&A
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: dacbb31e8e32abfcb34e565958620d579f68b4f2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d6075832d77f6bea7d7d8588719c4a002cdbf298
+ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Utiliser Q&A dans Power BI Desktop pour des requêtes en langage naturel
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et ce qui est encore plus fort, c’est que vos données répondent, grâce à Q&A dans **Power BI Desktop**.
@@ -33,7 +33,7 @@ Dans les sections suivantes, nous allons décrire comment ajuster votre modèle 
 
 ## <a name="add-missing-relationships"></a>Ajouter des relations manquantes
 
-Si des relations entre tables sont absentes de votre modèle, ni les rapports Power BI ni Q&A ne peuvent interpréter la façon de joindre ces tables si vous posez une questions les concernant. Les relations sont la pierre angulaire d’un bon modèle. Par exemple, vous ne pouvez pas demander le « total des ventes pour les clients de Seattle » si la relation entre la table *commandes* et la table *clients* n’existe pas. Les images suivantes vous montrent un exemple de modèle qui doit être modifié et un exemple prêt à être utilisé avec Q&A.
+Si des relations entre tables sont manquantes dans votre modèle, ni les rapports Power BI ni Q&A ne peuvent interpréter la façon de joindre ces tables si vous posez une question les concernant. Les relations sont la pierre angulaire d’un bon modèle. Par exemple, vous ne pouvez pas demander le « total des ventes pour les clients de Seattle » si la relation entre la table *commandes* et la table *clients* n’existe pas. Les images suivantes vous montrent un exemple de modèle qui doit être modifié et un exemple prêt à être utilisé avec Q&A.
 
 **Modification nécessaire**
 
@@ -50,7 +50,7 @@ Pour Q&A, le choix des tables et des colonnes est primordial. Par exemple, si vo
 
 Même si l’application est capable de reconnaître des mots de base et des pluriels, Q&A part du principe que le nom de vos tables et colonnes reflète précisément leur contenu.
 
-Prenons un autre exemple. Imaginez que vous avez une table nommée *Headcount* qui contient les noms et prénoms des employés ainsi que leur numéro, et une autre table nommée *Employees* qui contient des numéros des employés, des numéros de tâches et des dates de début. Même si les personnes habituées au modèle pourraient comprendre, une autre personne qui demande « nombre d’employés » obtiendra le total des lignes de la table « Employees », ce qui n’est probablement pas ce qu’elle recherchait, puisqu’il s’agit du nombre de tâches par employé. Il serait préférable de renommer ces tables de manière à refléter réellement ce qu’elles contiennent.
+Prenons un autre exemple. Imaginez que vous avez une table nommée *Headcount* qui contient les noms et prénoms des employés ainsi que leur numéro, et une autre table nommée *Employees* qui contient des numéros d’employés, des numéros de tâches et des dates de début. Même si les personnes habituées au modèle pourraient comprendre, une autre personne qui demande « nombre d’employés » obtiendra le total des lignes de la table « Employees », ce qui n’est probablement pas ce qu’elle recherchait, puisqu’il s’agit du nombre de tâches par employé. Il serait préférable de renommer ces tables de manière à refléter réellement ce qu’elles contiennent.
 
 **Modification nécessaire**
 
@@ -113,7 +113,7 @@ Si vous avez plusieurs colonnes qui forment une seule unité distincte au sein d
 
 Si votre modèle possède des conteneurs de propriétés, ceux-ci doivent être restructurés de manière à obtenir une seule colonne par propriété. Les conteneurs de propriétés, qui sont utiles pour gérer un grand nombre de propriétés, présentent trop de limitations inhérentes que ni les rapports Power BI ni Q&A ne peuvent contourner.
 
-Par exemple, prenons une table *CustomerDemographics* avec les colonnes CustomerID, Property et Value, dans laquelle chaque ligne représente une propriété différente du client (âge, état civil, ville, etc). Le fait d’avoir plusieurs significations pour la colonne Value, qui dépendent du contenu de la colonne Property, empêche Q&A d’interpréter la plupart des requêtes qui y font référence. Une question simple telle que « montrer l’âge de chaque client » est susceptible de marcher, car elle peut être interprétée comme « montrer les clients et les données démographiques des clients où la propriété est l’âge ». Cependant, la structure du modèle ne prend pas en charge les questions un peu plus complexes telles que « âge moyen des clients à Chicago ». Même si les utilisateurs qui créent directement des rapports Power BI peuvent trouver des astuces pour obtenir les données qu’ils recherchent, Q&A fonctionne uniquement lorsque chaque colonne ne possède qu’une seule signification.
+Par exemple, prenons une table *CustomerDemographics* avec les colonnes CustomerID, Property et Value, dans laquelle chaque ligne représente une propriété différente du client (âge, état civil, ville, etc). Le fait d’avoir plusieurs significations pour la colonne Value, qui dépendent du contenu de la colonne Property, empêche Q&A d’interpréter la plupart des requêtes qui y font référence. Une question simple telle que « montrer l’âge de chaque client » est susceptible de marcher, car elle peut être interprétée comme « montrer les clients et les données démographiques des clients où la propriété est l’âge ». Cependant, la structure du modèle ne prend pas en charge les questions un peu plus complexes telles que « âge moyen des clients à Chicago ». Même si les utilisateurs qui créent directement des rapports Power BI peuvent parfois trouver des astuces pour obtenir les données qu’ils recherchent, Q&A fonctionne seulement quand chaque colonne n’a qu’une seule signification.
 
 **Modification nécessaire**
 
@@ -154,7 +154,7 @@ De même, si vous avez une colonne contenant des noms complets, vous devez ajout
 
 ### <a name="create-new-tables-for-multi-value-columns"></a>Créer de nouvelles tables pour les colonnes à plusieurs valeurs
 
-Dans une situation similaire, si la source à partir de laquelle vous importez vos données contient des colonnes à plusieurs valeurs, les rapports Power BI (et Q&A) ne pourront pas atteindre le contenu de la colonne pour l’analyser. Ainsi, si vous avez une colonne Compositeur qui contient les noms de plusieurs compositeurs d’une chanson, vous devez la reproduire sur différentes lignes dans une table *Compositeurs* séparée.
+Dans une situation similaire, si la source à partir de laquelle vous importez vos données contient des colonnes à plusieurs valeurs, les rapports Power BI (et Q&A) ne pourront pas atteindre le contenu de la colonne pour l’analyser. Ainsi, si vous avez une colonne Compositeur qui contient les noms de plusieurs compositeurs d’une chanson, vous devez la diviser en plusieurs lignes dans une table *Compositeurs* distincte.
 
 **Modification nécessaire**
 
@@ -184,7 +184,7 @@ Cette étape peut se révéler essentielle. Même avec des noms de table et de c
 
 ![Ajouter des synonymes pour Q&A](media/desktop-qna-in-reports/desktop-qna_21.png)
 
-Le champ **Synonymes** apparaît à droite de l’écran **Power BI Desktop**, vous permettant d’ajouter vos synonymes, comme illustré ci-dessous.
+Le champ **Synonymes** apparaît du côté droit de **Power BI Desktop**, vous permettant d’ajouter vos synonymes, comme illustré ci-dessous.
 
 ![Ajouter des synonymes pour Q&A](media/desktop-qna-in-reports/desktop-qna_22.png)
 

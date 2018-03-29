@@ -1,15 +1,15 @@
 ---
-title: "Se connecter à une base de données Amazon Redshift dans Power BI Desktop"
-description: "Se connecter facilement à une base de données Amazon Redshift et l’utiliser dans Power BI Desktop"
+title: Se connecter à une base de données Amazon Redshift dans Power BI Desktop
+description: Se connecter facilement à une base de données Amazon Redshift et l’utiliser dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,21 +18,21 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: de0e6b61197bfe25048a2722d5aab42f1c15e999
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9597d056067fb1af291f46a088b94a39da57eab9
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-amazon-redshift-in-power-bi-desktop"></a>Se connecter à Amazon Redshift dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez vous connecter à une base de données **Amazon Redshift** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop.
 
 ## <a name="connect-to-an-amazon-redshift-database"></a>Se connecter à une base de données Amazon Redshift
-Pour vous connecter à une base de données **Amazon Redshift**, sélectionnez **Obtenir des données** dans le ruban **Accueil** de Power BI Desktop. Sélectionnez **Base de données** dans les catégories à gauche pour afficher **Amazon Redshift**.
+Pour vous connecter à une base de données **Amazon Redshift**, sélectionnez **Obtenir des données** dans le ruban **Accueil** de Power BI Desktop. Sélectionnez **Base de données** dans les catégories à gauche pour afficher **Amazon Redshift**.
 
 ![](media/desktop-connect-redshift/connect_redshift_3.png)
 
-Dans la fenêtre **Amazon Redshift** qui s’ouvre, tapez ou collez le nom de votre serveur et de votre base de données **Amazon Redshift** dans la zone. Dans le champ *Serveur*, les utilisateurs peuvent spécifier un port au format suivant : *URL_Serveur:Port*.
+Dans la fenêtre **Amazon Redshift** qui s’ouvre, tapez ou collez le nom de votre serveur et de votre base de données **Amazon Redshift** dans la zone. Dans le champ *Serveur*, les utilisateurs peuvent spécifier un port au format suivant : *URL_serveur:port*.
 
 ![](media/desktop-connect-redshift/connect_redshift_4.png)
 

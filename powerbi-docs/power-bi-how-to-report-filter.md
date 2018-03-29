@@ -1,39 +1,41 @@
 ---
-title: "Vue d’ensemble du volet Filtres de Power BI"
-description: "Vue d’ensemble du volet Filtres de rapport du service Power BI et du tableau de bord Power BI"
+title: Vue d’ensemble du volet Filtres de Power BI
+description: Vue d’ensemble du volet Filtres de rapport du service Power BI et du tableau de bord Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 03/15/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 83aed39c8a652ed5b38c18b67f1cdccfc7884240
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 00b0b116aa59ebab1d963a8803f788040761d9f5
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport
 Cet article présente en détail le volet Filtres de rapport. Vous le trouverez dans le [Mode Lecture et Édition du service Power BI](service-reading-view-and-editing-view.md) et dans [l’Affichage Rapport de Power BI Desktop](desktop-report-view.md).
 
 Il existe de nombreuses façons de filtrer des données dans Power BI. Nous vous recommandons de commencer par lire l’article [À propos des filtres et de la mise en évidence](power-bi-reports-filters-and-highlighting.md).
 
-## <a name="working-with-filters"></a>Utilisation des filtres
-Les rapports peuvent être ouverts en [mode Édition ou en mode Lecture](service-reading-view-and-editing-view.md). En mode Édition, les propriétaires de rapports [peuvent ajouter des filtres](power-bi-report-add-filter.md) et les enregistrer dans leurs rapports. Les utilisateurs qui consultent le rapport en mode Lecture peuvent interagir avec les filtres, mais ne peuvent pas enregistrer les modifications de filtres apportées au rapport.
+## <a name="working-with-the-report-filters-pane"></a>Utiliser le volet Filtres des rapports
+Dans Power BI Desktop, les rapports sont ouverts en mode Rapport. Dans le service Power BI, les rapports peuvent être ouverts en [mode Édition ou en mode Lecture](service-reading-view-and-editing-view.md). En mode Édition et dans le mode Rapport de la version Desktop, les propriétaires de rapports [peuvent ajouter des filtres à un rapport](power-bi-report-add-filter.md) et les enregistrer avec le rapport. Les utilisateurs qui consultent le rapport en mode Lecture peuvent interagir avec les filtres, mais ils ne peuvent pas ajouter de nouveaux filtres au rapport.
 
-## <a name="filters-in-reading-view"></a>Filtres en mode Lecture
-Quand un rapport est ouvert en Mode Lecture, le volet Filtres s’affiche sur le côté droit du canevas de rapport. Si vous ne voyez pas le volet, sélectionnez la flèche dans le coin supérieur droit pour le développer.
+Dans le service Power BI, les rapports conservent les modifications que vous apportez dans le volet Filtres, et ces modifications sont passées à la version mobile du rapport. Pour réinitialiser le volet Filtre aux valeurs par défaut du créateur, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus du haut.     
+
+## <a name="open-the-filters-pane"></a>Ouvrir le volet Filtres
+Quand un rapport est ouvert en mode Lecture, le volet Filtres s’affiche sur le côté droit du canevas du rapport. Si vous ne voyez pas le volet, sélectionnez la flèche dans le coin supérieur droit pour le développer. Si vous êtes dans le mode Lecture du service Power BI, le seul volet disponible sur le côté droit est le volet Filtres.
 
 Dans cet exemple, nous avons sélectionné un élément visuel contenant 6 filtres. La page de rapport dispose également de filtres qui sont répertoriés sous le titre **Filtres au niveau de la page**. Il y a un [filtre Extraction](power-bi-report-add-filter.md), et le rapport entier a également un filtre, **AnnéeFiscale**, défini sur 2013 ou 2014.
 
@@ -43,20 +45,24 @@ Certains des filtres sont accompagnés du mot **Tout**, ce qui signifie que tout
 
 Toute personne qui consulte ce rapport peut interagir avec ces filtres comme suit :
 
-* afficher les détails du filtre en sélectionnant la flèche en regard du filtre ;
+* Affichez les détails du filtre en sélectionnant la flèche en regard du filtre.
   
    ![](media/power-bi-how-to-report-filter/power-bi-expan-filter.png)
-* modifier le filtre, par exemple remplacer **Lindseys** par **Fashions Direct**.
+* Changez le filtre, par exemple en passant de **Lindseys** à **Fashions Direct**.
   
      ![](media/power-bi-how-to-report-filter/power-bi-filter-chain.png)
-* supprimer le filtre en sélectionnant la croix **x** en regard de son nom.
+
+* Réinitialisez les filtres à leur état d’origine en sélectionnant **Rétablir les valeurs par défaut** dans la barre de menus du haut.    
+    ![](media/power-bi-how-to-report-filter/power-bi-reset-to-default.png)
+    
+* Supprimez le filtre en sélectionnant la croix (**x**) en regard de son nom.
   
-  La suppression d’un filtre le supprime de la liste, mais ne supprime pas les données du rapport.  Par exemple, si vous supprimez le filtre **AnnéeFiscale est 2013 ou 2014**, les données relatives à l’année fiscale figurent toujours dans le rapport, mais elles ne sont plus filtrées pour afficher uniquement les années 2013 et 2014 ; elles affichent toutes les années fiscales contenues dans les données.  Néanmoins, une fois que vous supprimez le filtre, vous ne pouvez pas le modifier à nouveau, car il est supprimé de la liste. Une meilleure option consiste à effacer le filtre en sélectionnant l’icône représentant une gomme ![](media/power-bi-how-to-report-filter/power-bi-eraser-icon.png).
+  La suppression d’un filtre le supprime de la liste, mais ne supprime pas les données du rapport.  Par exemple, si vous supprimez le filtre **AnnéeFiscale est 2013 ou 2014**, les données relatives à l’année fiscale figurent toujours dans le rapport, mais elles ne sont plus filtrées pour afficher uniquement les années 2013 et 2014 ; toutes les années fiscales contenues dans les données sont affichées.  Néanmoins, une fois que vous supprimez le filtre, vous ne pouvez pas le modifier à nouveau, car il est supprimé de la liste. Une meilleure option consiste à effacer le filtre en sélectionnant l’icône représentant une gomme ![](media/power-bi-how-to-report-filter/power-bi-eraser-icon.png).
   
   ![](media/power-bi-how-to-report-filter/power-bi-delete-filter.png)
 
 ## <a name="filters-in-editing-view"></a>Filtres en mode Édition
-Quand un rapport est ouvert en mode Édition, le volet Filtres s’affiche sur le côté droit du canevas de rapport, dans la moitié inférieure du **volet Visualisation**. Si vous ne voyez pas le volet, sélectionnez la flèche dans le coin supérieur droit pour le développer.
+Quand un rapport est ouvert en mode Édition dans la version Desktop ou dans le service Power BI, le volet Filtres s’affiche sur le côté droit du canevas du rapport, dans la moitié inférieure du **volet Visualisation**. Si vous ne voyez pas le volet, sélectionnez la flèche dans le coin supérieur droit pour le développer.
 
 ![](media/power-bi-how-to-report-filter/power-bi-all-filters.png).  
 
@@ -73,16 +79,16 @@ Pour afficher les options d’un filtre donné, sélectionnez la flèche vers le
 ![](media/power-bi-how-to-report-filter/pbi_filterlistdropdown.jpg)
 
 ## <a name="clear-a-filter"></a>Supprimer un filtre
- En mode Filtrage de base ou avancé, sélectionnez l’icône en forme de gomme ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) pour réinitialiser le filtre. 
+ En mode Filtrage de base ou avancé, sélectionnez l’icône de gomme ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) pour effacer le filtre. 
 
 ## <a name="add-a-filter"></a>Ajouter un filtre
-* En Mode Édition, ajoutez un filtre à un visuel, à une page, à une extraction ou à un rapport en sélectionnant un champ dans le volet Champs, puis en le faisant glisser vers le puits de filtre correspondant, à l’endroit où apparaissent les mots **Faites glisser les champs ici**. Une fois que vous avez ajouté un champ en tant que filtre, affinez-le à l’aide des commandes des filtrages de base et avancé (décrites ci-dessous).
+* En mode Édition dans la version Desktop ou dans le service Power BI, ajoutez un filtre à un visuel, à une page, à une extraction ou à un rapport en sélectionnant un champ dans le volet Champs, puis en le faisant glisser vers le filtre correspondant, à l’endroit où apparaissent les mots **Faites glisser les champs ici**. Une fois que vous avez ajouté un champ en tant que filtre, affinez-le à l’aide des commandes des filtrages de base et avancé (décrites ci-dessous).
 
 - **Faire glisser un nouveau champ dans la zone de filtre au niveau Visuel n’a pas pour effet de l’ajouter au visuel**, mais cela permet de l’utiliser pour filtrer le visuel. Dans l’exemple ci-dessous, **Chain** est ajouté en tant que nouveau filtre à l’élément visuel. Notez que l’ajout de **Chain** en tant que filtre ne modifie pas l’élément visuel jusqu’à ce que vous utilisiez les commandes des filtrages de base et avancé.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 
-* Tous les champs utilisés pour créer une visualisation sont également disponibles en tant que filtres. Tout d’abord, sélectionnez un élément visuel pour l’activer. Les champs utilisés dans le visuel sont répertoriés dans le volet Visualisations (si vous êtes en mode Edition) et dans le volet Filtres sous le titre **Filtres au niveau de l’élément visuel**.
+* Tous les champs utilisés pour créer une visualisation sont également disponibles en tant que filtres. Tout d’abord, sélectionnez un élément visuel pour l’activer. Les champs utilisés dans l’élément visuel sont répertoriés dans le volet Visualisations et dans le volet Filtres sous l’en-tête **Filtres au niveau de l’élément visuel**.
   
    ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.png)  
   

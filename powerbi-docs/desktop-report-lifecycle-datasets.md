@@ -1,15 +1,15 @@
 ---
-title: "Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop"
-description: "Utiliser un jeu de données commun pour plusieurs rapports Power BI Desktop et gérer le cycle de vie de votre rapport"
+title: Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop
+description: Utiliser un jeu de données commun pour plusieurs rapports Power BI Desktop et gérer le cycle de vie de votre rapport
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 948c87e3e594ebb0ca2f75f747f7dd6fe36e18e7
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 09da52bea3486d95b730836a393ac0ffe9b10cc4
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop
 Vous pouvez établir une connexion active à un jeu de données partagé dans le service Power BI, et créer de nombreux rapports différents à partir du même jeu de données. Cela signifie que vous pouvez créer votre modèle de données idéal dans Power BI Desktop et le publier sur le service Power BI, après quoi vos collègues et vous pouvez créer plusieurs rapports (dans des fichiers .pbix distinct) à partir de ce modèle de données commun. Cette fonctionnalité est appelée **Connexion active du service Power BI**.
