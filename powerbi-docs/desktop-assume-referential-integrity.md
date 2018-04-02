@@ -1,15 +1,15 @@
 ---
-title: "Paramètre Intégrité référentielle supposée dans Power BI Desktop"
-description: "Avec DirectQuery, apprendre à amener Power BI Desktop à supposer l’intégrité référentielle"
+title: Paramètre Intégrité référentielle supposée dans Power BI Desktop
+description: Avec DirectQuery, apprendre à amener Power BI Desktop à supposer l’intégrité référentielle
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0d92fc16a6bde09f3783c2035a4a6b5c97e7b933
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9494b7774c8ba7d91398b14fb6ae2f21649050fa
+ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="assume-referential-integrity-settings-in-power-bi-desktop"></a>Paramètres Intégrité référentielle supposée dans Power BI Desktop
 Lorsque vous vous connectez à une source de données à l’aide de **DirectQuery**, vous pouvez utiliser l’option **Intégrité référentielle supposée** pour exécuter des requêtes plus efficaces sur votre source de données. Cette fonctionnalité impose quelques exigences de données sous-jacentes, et n’est disponible qu’en utilisant **DirectQuery**.
@@ -45,10 +45,10 @@ L’exemple suivant montre comment le paramètre **Intégrité référentielle s
 1. Dans l’illustration suivante qui présente les tables **Orders** et **Products**, notez qu’il existe une intégrité référentielle entre **Orders[ProductID]** et **Products[ProductID]**. La colonne **[ProductID]** de la table **Orders** n’a jamais la valeur *Null*, et chaque valeur apparaît également dans la table **Products**. Ainsi, le paramètre **Intégrité référentielle supposée** devrait être défini pour obtenir des requêtes plus efficaces (l’utilisation de ce paramètre ne modifie pas les valeurs affichées dans les éléments visuels).
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_2.png)
-2. Dans l’image suivante, vous pouvez remarquer qu’il n’existe pas d’intégrité référentielle entre **[DepotID]** et **Depots[DepotID]**, car la valeur de **DepotID** est *Null* pour certaines entrées de la table *Orders*. Par conséquent, le paramètre **Intégrité référentielle supposée** ne devrait *pas* être défini.
+2. Dans l’image suivante, vous pouvez remarquer qu’il n’existe pas d’intégrité référentielle entre **Orders[DepotID]** et **Depots[DepotID]**, car la valeur de **DepotID** est *Null* pour certaines entrées de la table *Orders*. Par conséquent, le paramètre **Intégrité référentielle supposée** ne devrait *pas* être défini.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_3.png)
-3. Enfin, il n’existe aucune intégrité référentielle entre **[CustomerID]** et **Customers[CustID]** dans les tables suivantes. La colonne **CustomerID** contient des valeurs (en l’occurrence, *CustX*) qui n’existent pas dans la table *Customers*. Par conséquent, le paramètre **Intégrité référentielle supposée** ne devrait *pas* être défini.
+3. Enfin, il n’existe aucune intégrité référentielle entre **Orders[CustomerID]** et **Customers[CustID]** dans les tables suivantes. La colonne **CustomerID** contient des valeurs (en l’occurrence, *CustX*) qui n’existent pas dans la table *Customers*. Par conséquent, le paramètre **Intégrité référentielle supposée** ne devrait *pas* être défini.
    
    ![](media/desktop-assume-referential-integrity/assume-referential-integrity_4.png)
 
@@ -62,7 +62,7 @@ Une fois sélectionné, le paramètre est validé par rapport aux données pour 
 De plus, la validation se produisant au moment de l’édition de la relation, elle ne reflète *pas* d’éventuelles modifications ultérieures des données.
 
 ## <a name="what-happens-if-you-incorrectly-set-assume-referential-integrity"></a>Que se passe-t-il si vous définissez erronément le paramètre Intégrité référentielle supposée ?
-Définir le paramètre **Intégrité référentielle supposée** quand il existe des problèmes d’intégrité référentielle dans les données ne génère pas d’erreurs. En revanche, cela entraîne des incohérences apparentes des données. Par exemple, dans le cas de la relation à la table **Depots** décrite ci-dessus, il en résulterait ce qui suit :
+Le fait de définir le paramètre **Intégrité référentielle supposée** quand il existe des problèmes d’intégrité référentielle dans les données n’a pas pour effet de générer des erreurs. En revanche, cela entraîne des incohérences apparentes des données. Par exemple, dans le cas de la relation à la table **Depots** décrite ci-dessus, il en résulterait ce qui suit :
 
 * Un élément visuel indiquant le total *Order Qty* indiquerait une valeur de 40
 * Un élément visuel indiquant le total *Order Qty by Depot City* indiquerait une valeur totale de seulement *30*, car il n’inclurait pas l’Order ID 1, où **DepotID** a la valeur *Null*.

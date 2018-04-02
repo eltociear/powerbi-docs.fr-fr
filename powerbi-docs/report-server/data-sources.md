@@ -1,27 +1,27 @@
 ---
-title: "Sources de données de rapport Power BI dans Power BI Report Server"
-description: "Les rapports Power BI peuvent se connecter à différentes sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles."
+title: Sources de données de rapport Power BI dans Power BI Report Server
+description: Les rapports Power BI peuvent se connecter à différentes sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/01/2017
+ms.date: 03/21/2018
 ms.author: maghan
-ms.openlocfilehash: caa45aab2c31974abb041a82eb2216ebee2eb148
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 3777c58bae36d6115b51b64e0422529fe390a13c
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à différentes sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
@@ -34,6 +34,7 @@ Ces sources de données sont spécifiques des rapports Power BI utilisés dans P
 > 
 
 ## <a name="list-of-supported-data-sources"></a>Liste des sources de données prises en charge
+
 D’autres sources de données non répertoriées sur la liste peuvent également fonctionner.
 
 | **Source de données** | **Données mises en cache** | **Actualisation planifiée** | **Active/DirectQuery** |
@@ -48,7 +49,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Amazon Redshift |Oui |Non |Non |
 | Stockage Blob Azure |Oui |Oui |Non |
 | Azure Data Lake Store |Oui |Non |Non |
-| Azure HDInsight (HDFS) |Oui |Oui |Non |
+| Azure HDInsight (HDFS) |Oui |Non |Non |
 | Azure HDInsight (Spark) |Oui |Oui |Non |
 | Stockage Table Azure |Oui |Oui |Non |
 | Dynamics 365 (en ligne) |Oui |Non |Non |
@@ -119,6 +120,100 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 > La sécurité au niveau des lignes configurée pour la source de données doit fonctionner pour certaines des connexions actives DirectQuery (SQL Server, Azure SQL Database, Oracle et Teradata) en supposant que Kerberos est correctement configuré dans votre environnement.
 > 
 > 
+
+## <a name="list-of-supported-authentication-methods-for-model-refresh"></a>Liste des méthodes d’authentification prises en charge pour l’actualisation de modèle
+
+Power BI Report Server ne prend pas en charge l’authentification OAuth pour l’actualisation de modèle. Certaines sources de données comme les bases de données Excel ou Access utilisent une étape distincte (p.ex., Fichier ou Web) pour se connecter aux données.
+
+| **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** |
+| --- | --- | --- | --- | --- |
+| Base de données SQL Server |Non |Non |Oui |Oui |
+| SQL Server Analysis Services |Non |Non |Oui |Oui |
+| Web |Oui |Non |Oui |Oui |
+| Azure SQL Database |Non |Non |Oui |Non |
+| Azure SQL Data Warehouse |Non |Non |Oui |Non |
+| Active Directory |Non |Non |Oui |Oui |
+| Amazon Redshift |Non |Non |Non |Non |
+| Stockage Blob Azure |Oui |Oui |Non |Non |
+| Azure Data Lake Store |Non |Non |Non |Non |
+| Azure HDInsight (HDFS) |Non |Non |Non |Non |
+| Azure HDInsight (Spark) |Oui |Oui |Non |Non |
+| Stockage Table Azure |Non |Oui |Non |Non |
+| Dynamics 365 (en ligne) |Non |Non |Non |Non |
+| Facebook |Non |Non |Non |Non |
+| Dossier |Non |Non |Non |Oui |
+| Google Analytics |Non |Non |Non |Non |
+| Fichier Hadoop (HDFS) |Non |Non |Non |Non |
+| Base de données IBM DB2 |Non |Non |Oui |Oui |
+| Impala |Non |Non |Non |Non |
+| Microsoft Exchange |Non |Non |Non |Non |
+| Microsoft Exchange Online |Non |Non |Non |Non |
+| Base de données MySQL |Non |Non |Oui |Oui |
+| Flux OData |Oui |Oui |Oui |Oui |
+| ODBC |Oui |Non |Oui |Oui |
+| OLE DB |Oui |Non |Oui |Oui |
+| Base de données Oracle |Non |Non |Oui |Oui |
+| Base de données PostgreSQL |Non |Non |Oui |Non |
+| Service Power BI |Non |Non |Non |Non |
+| Script R |Non |Non |Non |Non |
+| Objets Salesforce |Non |Non |Non |Non |
+| Rapports Salesforce |Non |Non |Non |Non |
+| Serveur SAP Business Warehouse |Non |Non |Oui |Non |
+| Base de données SAP HANA |Non |Non |Oui |Oui |
+| Dossier SharePoint (local) |Oui |Non |Non |Oui |
+| Liste SharePoint (local) |Oui |Non |Non |Oui |
+| Liste SharePoint Online |Non |Non |Non |Non |
+| Snowflake |Non |Non |Non |Non |
+| Base de données Sybase |Non |Non |Oui |Oui |
+| Base de données Teradata |Non |Non |Oui |Oui |
+| appFigures (bêta) |Non |Non |Non |Non |
+| Base de données Azure Analysis Services (bêta) |Non |Non |Non |Non |
+| Azure Cosmos DB (bêta) |Non |Non |Non |Non |
+| Azure HDInsight Spark (bêta) |Non |Non |Non |Non |
+| Common Data Service (bêta) |Non |Non |Non |Non |
+| comScore Digital Analytix (bêta) |Non |Non |Non |Non |
+| Dynamics 365 pour Insights client (bêta) |Non |Non |Non |Non |
+| Dynamics 365 for Financials (bêta) |Non |Non |Non |Non |
+| GitHub (bêta) |Non |Non |Non |Non |
+| Google BigQuery (bêta) |Non |Non |Non |Non |
+| Base de données Informix IBM (bêta) |Non |Non |Non |Non |
+| IBM Netezza (bêta) |Non |Non |Non |Non |
+| Kusto (bêta) |Non |Non |Non |Non |
+| MailChimp (bêta) |Non |Non |Non |Non |
+| Microsoft Azure Consumption Insights (bêta) |Non |Non |Non |Non |
+| Mixpanel (bêta) |Non |Non |Non |Non |
+| Planview Enterprise (bêta) |Non |Non |Non |Non |
+| Projectplace (bêta) |Non |Non |Non |Non |
+| QuickBooks Online (bêta) |Non |Non |Non |Non |
+| Smartsheet |Non |Non |Non |Non |
+| Spark (bêta) |Non |Non |Non |Non |
+| SparkPost (bêta) |Non |Non |Non |Non |
+| SQL Sentry (bêta) |Non |Non |Non |Non |
+| Stripe (bêta) |Non |Non |Non |Non |
+| SweetIQ (bêta) |Non |Non |Non |Non |
+| Troux (bêta) |Non |Non |Non |Non |
+| Twilio (bêta) |Non |Non |Non |Non |
+| tyGraph (bêta) |Non |Non |Non |Non |
+| Vertica (bêta) |Non |Non |Non |Non |
+| Visual Studio Team Services (version bêta) |Non |Non |Non |Non |
+| Webtrends (bêta) |Non |Non |Non |Non |
+| Zendesk (bêta) |Non |Non |Non |Non |
+
+## <a name="list-of-supported-authentication-methods-for-directquery"></a>Liste des méthodes d’authentification prises en charge pour DirectQuery
+
+Power BI Report Server ne prend pas en charge l’authentification OAuth pour DirectQuery.
+
+| **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** | **Authentification Windows intégrée** |
+| --- | --- | --- | --- | --- | --- |
+| Base de données SQL Server |Non |Non |Oui |Oui |Oui |
+| SQL Server Analysis Services |Non |Non |Oui |Oui |Oui |
+| Azure SQL Database |Non |Non |Oui |Non |Non |
+| Azure SQL Data Warehouse |Non |Non |Oui |Non |Non |
+| Base de données Oracle |Non |Non |Oui |Oui |Oui |
+| Serveur SAP Business Warehouse |Non |Non |Oui |Non |Oui |
+| Base de données SAP HANA |Non |Non |Oui |Oui |Non |
+| Base de données Teradata |Non |Non |Oui |Oui |Oui |
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Maintenant que votre source de données est sélectionnée, [créez un rapport](quickstart-create-powerbi-report.md) à l’aide des données à partir de cette source.

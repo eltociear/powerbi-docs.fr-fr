@@ -1,15 +1,15 @@
 ---
-title: "Power BI et ExpressRoute"
-description: "Power BI et ExpressRoute"
+title: Power BI et ExpressRoute
+description: Power BI et ExpressRoute
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: 30bc1c58d02634748acfc2dce4fbfbec51fa6cba
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: faf438e9f76a7a929f7369dc91ef4edb4fbef42d
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="power-bi-and-expressroute"></a>Power BI et ExpressRoute
 Avec **Power BI** et **ExpressRoute**, vous pouvez créer une connexion réseau privée de votre organisation à Power BI (ou en utilisant un centre de données d’un fournisseur de services Internet), et contourner ainsi Internet pour mieux sécuriser vos données et connexions Power BI sensibles.
@@ -94,5 +94,5 @@ Certains **éléments visuels personnalisés** sont créés par des tiers, d’a
 Ce document ne traite pas de l’utilisation des applications mobiles Power BI.  
 
 ### <a name="on-premises-data-gateway-and-expressroute"></a>Passerelle de données locale et ExpressRoute
-Lorsqu’une **passerelle de données locale** est utilisée avec Power BI, les transmissions sont conformes à ExpressRoute, à l’exception des activités de l’utilisateur décrites dans la section **Application SaaS Power BI et ExpressRoute** située plus haut dans cette rubrique.  
+Quand une **passerelle de données locale** est utilisée avec Power BI, les transmissions sont conformes à ExpressRoute, à l’exception des activités utilisateur décrites dans la section **Application SaaS Power BI et ExpressRoute** située plus haut dans cette rubrique.  
 

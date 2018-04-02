@@ -1,15 +1,15 @@
 ---
-title: "Actualisation des données dans Power BI"
-description: "Actualisation des données dans Power BI"
+title: Actualisation des données dans Power BI
+description: Actualisation des données dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 23709342f522d029e01cf7192627e179d260fa8d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: decd8a072ba644c9d67a7a0005b752423d32984a
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 L’obtention des données les plus récentes constitue souvent un facteur essentiel à la prise de décisions informées. Vous avez sans doute déjà utilisé la fonctionnalité Obtenir des données de Power BI pour vous connecter à des données et les charger, voire générer des rapports et un tableau de bord. Avant d’aller plus loin, vous devez vous assurer que les données que vous utilisez sont vraiment les plus récentes.
@@ -166,7 +166,7 @@ Avec la passerelle de données locale, vous pouvez émettre des requêtes de Pow
 
 Lors de la connexion à une source de données SSAS (SQL Service Analysis Services) à l’aide d’une connexion active, contrairement à DirectQuery, la connexion active à une source SSAS peut s’exécuter sur le cache, même lors du chargement d’un rapport. Ce comportement améliore les performances de chargement du rapport. Vous pouvez demander les données les plus récentes à partir de la source de données SSAS à l’aide du bouton **Actualiser**. Les propriétaires de sources de données SSAS peuvent configurer la fréquence d’actualisation planifiée du cache pour le jeu de données afin de s’assurer que les rapports sont à jour comme attendu. 
 
-Lorsque vous configurez une source de données avec la passerelle de données locale, vous pouvez utiliser cette source de données en tant qu’option d’actualisation planifiée. Cela constitue une alternative à l’utilisation de la passerelle personnelle.
+Quand il s’agit de configurer une source de données avec la passerelle de données locale, vous pouvez utiliser cette source de données comme option d’actualisation planifiée. Cela constitue une alternative à l’utilisation de la passerelle personnelle.
 
 > [!NOTE]
 > Si votre jeu de données est configuré pour une connexion active ou DirectQuery, les jeux de données sont actualisés environ toutes les heures ou suite à une interaction avec les données. Vous pouvez ajuster manuellement la *fréquence d’actualisation* à l’aide de l’option *Actualisation du cache planifiée* dans le Service Power BI.
