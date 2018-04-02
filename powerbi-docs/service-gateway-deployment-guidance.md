@@ -1,15 +1,15 @@
 ---
-title: "Conseils relatifs au déploiement d’une passerelle de données pour Power BI"
-description: "Familiarisez-vous avec les meilleures pratiques et considérations relatives au déploiement d’une passerelle pour Power BI."
+title: Conseils relatifs au déploiement d’une passerelle de données pour Power BI
+description: Familiarisez-vous avec les meilleures pratiques et considérations relatives au déploiement d’une passerelle pour Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 992c3cbeb9899a784cc8df9fdca9a29f57aa7e81
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3c1b0059ac39c8d8024fd840c0cf35bc9700a9aa
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Conseils relatifs au déploiement d’une passerelle de données pour Power BI
 Cet article fournit des conseils et indications sur le déploiement d’une passerelle de données dans votre environnement réseau. Une **passerelle** est un logiciel qui facilite l’accès aux données résidant sur un réseau local privé en vue de leur utilisation ultérieure dans un service cloud tel que Power BI. Cet article décrit le processus de déploiement et fournit des conseils sur l’installation de la **passerelle de données locale**.
@@ -31,7 +31,7 @@ Cet article fournit des conseils et indications sur le déploiement d’une pass
 
 Pour obtenir plus d’informations sur la **passerelle de données locale**, ainsi qu’un lien d’installation, consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
 
-## <a name="installation-considerations-for-the-on-premises-data-gateway"></a>Éléments à prendre en compte lors de l’installation de la passerelle de données locale
+## <a name="installation-considerations-for-the-on-premises-data-gateway"></a>Installation de la passerelle de données locale
 Avant d’entrer dans les détails de l’installation et du déploiement, différents éléments doivent être pris en compte. Les sections suivantes décrivent les principaux éléments à prendre en compte.
 
 ### <a name="number-of-users"></a>Nombre d’utilisateurs
@@ -91,7 +91,7 @@ Ces compteurs sont accessibles à partir de l’**Analyseur de performances Wind
 #### <a name="logs"></a>Journaux
 Les journaux de configuration et de service fournissent d’autres informations sur le fonctionnement de votre passerelle. N’hésitez pas à consulter les journaux de votre passerelle si votre connexion ne fonctionne pas comme prévu, car le service Power BI n’affiche pas tous les messages d’erreur.
 
-Pour afficher tous les fichiers journaux sur votre ordinateur local, la méthode la plus simple consiste à utiliser le bouton *Exporter les journaux* de la **passerelle de données locale** lorsque vous la rouvrez au terme de l’installation initiale, puis à sélectionner **Diagnostics > Exporter les journaux**.
+Pour afficher tous les fichiers journaux sur votre ordinateur local, la méthode la plus simple consiste à utiliser le bouton *Exporter les journaux* de la **passerelle de données locale** quand vous la rouvrez au terme de l’installation initiale, puis à sélectionner **Diagnostics > Exporter les journaux**.
 
 #### <a name="additional-logging"></a>Journalisation supplémentaire
 Par défaut, la passerelle procède à une journalisation de base. Si vous recherchez les causes d’un problème de passerelle et souhaitez obtenir des informations détaillées sur la connexion à la requête, vous pouvez temporairement activer la *journalisation détaillée* afin de recueillir des informations supplémentaires. Pour ce faire, dans la passerelle installée, sélectionnez **Diagnostics > Journalisation supplémentaire**.
