@@ -1,15 +1,15 @@
 ---
-title: "Utilisation d’une autre adresse de messagerie"
-description: "Utilisation d’une autre adresse de messagerie"
+title: Utilisation d’une autre adresse de messagerie
+description: Utilisation d’une autre adresse de messagerie
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -55,7 +55,7 @@ Pour capturer un jeton incorporé Active Azure Directory (AAD) pour Power BI, vo
 
 Power BI sélectionne l’e-mail à utiliser selon les critères suivants :
 1.  Si l’attribut de messagerie est défini dans l’objet utilisateur du locataire AAD, Power BI l’utilise pour l’adresse e-mail
-2.  Si l’adresse e-mail UPN n’est *pas* une adresse e-mail du domaine **\*.onmicrosoft.com** (informations après le symbole « @ »), Power BI utilise cet attribut de messagerie pour l’adresse e-mail
+2.  Si l’adresse e-mail UPN n’est *pas* une adresse e-mail du domaine **\*.onmicrosoft.com** (informations après le symbole « \@ »), Power BI utilise cet attribut de messagerie pour l’adresse e-mail
 3.  Si l’attribut tableau d’une « autre » adresse e-mail est défini dans l’objet utilisateur AAD, Power BI utilise la première adresse e-mail dans cette liste (quand il y a plusieurs e-mails spécifiés dans cet attribut)
 4. Si aucun des critères ci-dessus n’est rempli, l’adresse UPN est utilisée
 
