@@ -1,15 +1,15 @@
 ---
-title: "Gérer les capacités dans Power BI Premium et Power BI Embedded"
-description: "Découvrez comment gérer Power BI Premium et permettre à l’ensemble de votre organisation d’accéder au contenu."
+title: Gérer les capacités dans Power BI Premium et Power BI Embedded
+description: Découvrez comment gérer Power BI Premium et permettre à l’ensemble de votre organisation d’accéder au contenu.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/10/2017
 ms.author: maghan
 LocalizationGroup: Premium
-ms.openlocfilehash: a6040871652484ad5de70a0d73e14a13742fe56a
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 556f91464e8a08b5cb149648be2b097578964af9
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gérer les capacités dans Power BI Premium et Power BI Embedded
 Découvrez comment vous pouvez gérer les capacités Power BI Premium et Power BI Embedded qui fournissent des ressources dédiées pour votre contenu.
@@ -47,6 +47,10 @@ Pour tirer parti de la capacité dédiée, vous devez acheter un abonnement Powe
 * **Power BI Embedded :** [Créer une capacité Power BI Embedded dans le portail Azure](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity)
 
 Lorsque vous achetez des références (SKU) Power BI Premium, votre locataire reçoit le nombre correspondant de v-cores pour une utilisation dans les capacités opérationnelles. Par exemple, l’achat d’une référence SKU Power BI Premium P3 fournit au locataire 32 v-cores.
+
+> [!NOTE]
+> Vous bénéficierez de 30 jours d’accès total une fois votre abonnement terminé, mais après cela, votre contenu reviendra à une capacité partagée. Les modèles > 1 Go ne seront pas pris en charge avec une licence partagée standard.
+>
 
 ## <a name="capacity-admins"></a>Administrateurs de capacité
 > [!NOTE]

@@ -1,15 +1,15 @@
 ---
-title: "Ouvrir un rapport en mode Lecture ou en mode Édition dans le service Power BI"
+title: Ouvrir un rapport en mode Lecture ou en mode Édition dans le service Power BI
 description: Ouvrir un rapport Power BI en mode lecture ou en mode Edition
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,27 +1,27 @@
 ---
-title: "Nouveautés dans les applications mobiles pour Power BI"
-description: "Nouveautés dans les applications mobiles pour Power BI"
+title: Nouveautés dans les applications mobiles pour Power BI
+description: Nouveautés dans les applications mobiles pour Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/15/2018
+ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: 530e4a2dc47a2d790dde3d7d1e7a2faeb7d79732
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: 29241b4c0f059540e6f1496f04b3044ebbd7d68b
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -30,11 +30,33 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Nouveautés dans Power BI Desktop](desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](service-whats-new.md)  
 
+## <a name="march-2018"></a>Mars 2018
+
+### <a name="power-bi-for-mixed-reality-app-preview"></a>Application Power BI pour la réalité mixte (Preview)
+
+Dans notre effort le plus récent pour vous permettre d’accéder aux données là où vous êtes, nous avons créé l’application Power BI pour la réalité mixte. Consultez vos tableaux de bord et vos rapports tout en étant immergé dans le monde virtuel, ou placez-les et consultez-les à des emplacements spécifiques dans le contexte de votre environnement. Découvrez plus d’informations sur la nouvelle [application Power BI pour la réalité mixte](mobile-mixed-reality-app.md).
+
+### <a name="share-reports-and-dashboards-externally"></a>Partager des rapports et des tableaux de bord en externe
+
+Partagez des tableaux de bord et des rapports avec des utilisateurs externes à votre organisation, directement à partir de l’application. Le partage externe est activé pour les comptes professionnels et de réseaux sociaux. 
+
+### <a name="persistent-filters"></a>Filtres persistants
+
+Lorsque vous définissez des filtres et des segments dans Power BI sur le web, vos sélections de filtres sont aussi enregistrées dans votre application mobile, ce qui vous permet de reprendre là où vous en étiez.
+
+### <a name="refresh-reports-on-the-ipad"></a>Actualiser les rapports sur l’iPad
+
+Les rapports Power BI incluent maintenant un bouton Actualiser dans l’application iPad.
+
 ## <a name="february-2018"></a>Février 2018
 
 ### <a name="share-reports"></a>Partager des rapports
 
 Vous pouvez désormais partager un rapport directement à partir des applications mobiles. Découvrez plus en détails le [partage de tableaux de bord et de rapports à partir des applications mobiles](mobile-share-dashboard-from-the-mobile-apps.md)
+
+### <a name="improved-tooltips"></a>Info-bulles améliorées
+
+Quand vous appuyez et que vous maintenez le doigt sur un visuel d’un rapport pour accéder aux info-bulles, vous pouvez maintenant faire glisser votre doigt sur le visuel pour explorer des détails sur chaque de ses points de données.
 
 ## <a name="january-2018"></a>Janvier 2018
 
@@ -162,7 +184,7 @@ Vous pouvez désormais faire défiler des graphiques à barres et à colonnes da
 #### <a name="ios-devices"></a>Appareils iOS
 **Poser des questions sur vos données avec une version préliminaire de Questions/Réponses** 
 
-Questions/Réponses vous permet de poser des questions concernant vos données avec vos propres mots. Power BI fournit les réponses. Questions et réponses était déjà disponible dans le service Power BI sur http://powerbi.com. À présent, il est également [disponible dans l’application mobile sur votre iPhone ou iPad](mobile-apps-ios-qna.md).
+Questions/Réponses vous permet de poser des questions concernant vos données avec vos propres mots. Power BI fournit les réponses. Questions/Réponses est déjà disponible dans le service Power BI sur http://powerbi.com. À présent, il est également [disponible dans l’application mobile sur votre iPhone ou iPad](mobile-apps-ios-qna.md).
 
 **Se connecter à plusieurs serveurs SSRS** 
 

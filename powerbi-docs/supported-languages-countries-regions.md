@@ -1,28 +1,28 @@
 ---
-title: "Langues et pays/régions pris en charge pour Power BI"
-description: "Consultez la liste des langues et pays/régions pris en charge pour la documentation du service Power BI, de Power BI Desktop et de Power BI."
+title: Langues et pays/régions pris en charge pour Power BI
+description: Consultez la liste des langues et pays/régions pris en charge pour la documentation du service Power BI, de Power BI Desktop et de Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/18/2017
+ms.date: 03/20/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9c007202bc6526872ea3469ccc5e46b71a8e6dcb
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 0ca6a21e67e7ab1d2a0c0daa8da07052041db139
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Langues et pays/régions pris en charge pour Power BI
 
@@ -32,7 +32,7 @@ Cet article affiche la liste des langues et pays/régions pris en charge pour la
 Pour obtenir la liste des pays et régions où Power BI est disponible, consultez cette [liste de disponibilité internationale](https://products.office.com/business/international-availability). 
 
 ## <a name="languages-for-the-power-bi-service"></a>Langues disponibles pour le service Power BI
-Le service Power BI (dans le navigateur) est disponible dans les 42 langues suivantes :
+Le service Power BI (dans le navigateur) est disponible dans les 44 langues suivantes :
 
 * Arabe
 * Basque - Basque

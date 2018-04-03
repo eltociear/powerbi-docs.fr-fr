@@ -1,27 +1,27 @@
 ---
 title: Explorer des rapports dans les applications mobiles Power BI
-description: "Découvrez comment afficher des rapports et interagir avec eux dans les applications mobiles Power BI sur votre téléphone ou tablette. Vous créez des rapports dans le service Power BI ou Power BI Desktop, puis interagissez avec ces rapports dans les applications mobiles. "
+description: 'Découvrez comment afficher des rapports et interagir avec eux dans les applications mobiles Power BI sur votre téléphone ou tablette. Vous créez des rapports dans le service Power BI ou Power BI Desktop, puis interagissez avec ces rapports dans les applications mobiles. '
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/25/2018
+ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: 51006f70d0be13f08de7047f0097f7530d32a470
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+ms.openlocfilehash: 6edd5a6e9606150d4b489a79cdb5ca57ac2f8cce
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -33,7 +33,7 @@ S’applique à :
 Un rapport Power BI est une vue interactive de vos données, dont la découverte et l’analyse sont traduites par des insights. L’affichage de rapports dans les applications mobiles Power BI est la troisième étape du processus.
 
 1. [Créez des rapports dans Power BI Desktop](desktop-report-view.md). Vous pouvez même [optimiser un rapport pour les téléphones](mobile-apps-view-phone-report.md) dans Power BI Desktop. 
-2. Publiez ces rapports dans le service Power BI [(https://powerbi.com)](https://powerbi.com) ou [Power BI Report Server](report-server/get-started.md).  
+2. Publiez ces rapports dans le service Power BI [ (https://powerbi.com)](https://powerbi.com) ou [Power BI Report Server](report-server/get-started.md)).  
 3. Ensuite, exploitez ces rapports dans les applications mobiles Power BI.
 
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Ouvrir un rapport Power BI dans l’application mobile
@@ -50,7 +50,9 @@ Les rapports Power BI sont stockés dans des emplacements différents dans l’a
   ![Rapport sur téléphone en mode Paysage](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Afficher les rapports optimisés pour les téléphones
-Les auteurs de rapports Power BI peuvent créer une disposition de rapport spécialement optimisée pour les téléphones. Les pages de rapport optimisées pour les téléphones ont de nouvelles fonctionnalités : par exemple, vous pouvez effectuer une exploration vers le bas et un tri des visuels en mode Focus et vous pouvez accéder aux [filtres que l’auteur du rapport a ajoutés à la page de rapport](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Dans la liste des rapports, un rapport optimisé possède une icône spéciale ![icône de rapport sur téléphone](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png) :
+Les auteurs de rapports Power BI peuvent créer une disposition de rapport spécialement optimisée pour les téléphones. Les pages de rapport optimisées pour les téléphones ont de nouvelles fonctionnalités : par exemple, vous pouvez effectuer une exploration vers le bas et un tri des visuels en mode Focus et vous pouvez accéder aux [filtres que l’auteur du rapport a ajoutés à la page de rapport](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Le rapport s’ouvre sur votre téléphone. Il est filtré en fonction des valeurs filtrées dans le rapport sur le web, avec un message indiquant qu’il existe des filtres actifs sur la page. Vous pouvez modifier les filtres sur votre téléphone.
+
+Dans la liste des rapports, un rapport optimisé possède une icône spéciale ![Icône de rapport sur téléphone](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
 ![Ouvrir le rapport sur téléphone](media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
 
@@ -63,7 +65,7 @@ Lorsque vous affichez un rapport sur un téléphone, il s’ouvre en mode portra
 En savoir plus sur les [rapports optimisés pour l’affichage sur téléphone](mobile-apps-view-phone-report.md).
 
 ## <a name="use-slicers-to-filter-a-report-page"></a>Utiliser des segments pour filtrer une page de rapport
-Quand vous concevez un rapport dans Power BI Desktop ou le service Power BI, vous pouvez [ajouter des segments à une page de rapport](power-bi-visualization-slicers.md). Vous et vos collègues pouvez les utiliser pour filtrer la page dans un navigateur et dans les applications mobiles. Lorsque vous affichez le rapport sur un téléphone, vous pouvez voir et interagir avec les segments en mode paysage et sur une page optimisée pour le mode portrait du téléphone.
+Quand vous concevez un rapport dans Power BI Desktop ou le service Power BI, vous pouvez [ajouter des segments à une page de rapport](power-bi-visualization-slicers.md). Vous et vos collègues pouvez les utiliser pour filtrer la page dans un navigateur et dans les applications mobiles. Lorsque vous affichez le rapport sur un téléphone, vous pouvez voir et interagir avec les segments en mode paysage et sur une page optimisée pour le mode portrait du téléphone. Si vous sélectionnez une valeur dans un segment ou un filtre dans le navigateur, la valeur est également sélectionnée lorsque vous affichez la page dans l’application mobile. Un message s’affiche indiquant qu’il existe des filtres actifs sur la page.  
 
 * Lorsque vous sélectionnez une valeur dans un segment de la page de rapport, celle-ci filtre les autres visuels sur la page.
   
