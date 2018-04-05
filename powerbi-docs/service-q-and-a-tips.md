@@ -1,15 +1,15 @@
 ---
-title: "Conseils et astuces pour poser des questions avec Questions et réponses dans Power BI"
-description: "Conseils et astuces pour poser des questions avec Questions et réponses dans Power BI"
+title: Conseils et astuces pour poser des questions avec Questions et réponses dans Power BI
+description: Conseils et astuces pour poser des questions avec Questions et réponses dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: jastru
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: bdf1f161e0a95bda5b37d9c43a3bdcc6bde1066a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 28ebd938b1121e1d2d453a9c9e72592b1c814742
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Conseils pour poser des questions dans le moteur Questions et réponses de Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Mots et terminologie reconnus par Questions et réponses
@@ -94,9 +94,6 @@ Il fait de son mieux pour s’assurer que la réponse reflète précisément la 
 * Utilise la suggestion automatique pour proposer des termes de remplacement provenant des classeurs sous-jacents lorsque vous replacez le curseur dans la zone Question.
 * Reformule la question en fonction des données du ou des jeux de données sous-jacents. Vous pouvez ainsi vérifier que Questions et réponses a bien compris votre question, car l’outil remplace les mots que vous utilisez par des synonymes provenant des jeux de données sous-jacents.
 * Estompe les mots incompris.
-
-## <a name="combine-results-from-more-than-one-dataset"></a>Combiner les résultats de plusieurs jeux de données
-L’une des fonctionnalités les plus puissantes de Power BI est la possibilité de combiner des données à partir de différents jeux de données.  Ne limitez pas vos questions à un jeu de données unique : posez des questions interrogeant des données de plusieurs jeux de données. Par exemple, si mon tableau de bord comporte des vignettes à partir de l’Exemple Analyse de la vente au détail et d’un jeu à population d’état, je peux demander à *afficher le nombre de magasins par remplissage d’état en tant que graphique à barres décroissant*.
 
 ## <a name="dont-stop-now"></a>Continuez sur votre lancée
 Une fois que Questions et réponses a affiché vos résultats, poursuivez la conversation. Utilisez les fonctionnalités interactives de la visualisation et de Questions et réponses pour découvrir d’autres perspectives.
