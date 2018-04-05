@@ -232,7 +232,7 @@
           href: service-dashboard-pin-tile-from-q-and-a.md
         - name: "Épingler une page de rapport entière sur un tableau de bord Power\_BI"
           href: service-dashboard-pin-live-tile-from-report.md
-        - name: Partagé avec moi
+        - name: Partagées avec moi
           href: service-shared-with-me.md
         - name: Métriques d’utilisation des tableaux de bord
           href: service-usage-metrics.md
@@ -728,7 +728,7 @@
           href: desktop-common-query-tasks.md
         - name: "Utiliser des cartes de formes dans Power\_BI\_Desktop (version préliminaire)"
           href: desktop-shape-map.md
-        - name: Combiner des fichiers binaires
+        - name: Combiner des fichiers (binaires)
           href: desktop-combine-binaries.md
     - name: Modélisez vos données
       items:
