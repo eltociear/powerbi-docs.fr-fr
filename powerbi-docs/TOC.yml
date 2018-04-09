@@ -264,7 +264,7 @@
           href: service-data-classification.md
     - name: Posez des questions sur vos données
       items:
-        - name: Overview
+        - name: Vue d’ensemble
           items:
             - name: "Q&R dans Power\_BI"
               href: power-bi-q-and-a.md
@@ -940,7 +940,7 @@
           href: mobile-windows-10-app-presentation-mode.md
 - name: "Développeur de Power\_BI"
   items:
-    - name: Overview
+    - name: Vue d’ensemble
       items:
         - name: "Que peuvent faire les développeurs avec Power\_BI\_?"
           href: developer/what-can-you-do.md
@@ -992,6 +992,8 @@
           href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: Obtenir un élément personnel certifié
           href: power-bi-custom-visuals-certified.md
+        - name: Publier des visuels personnalisés dans AppSource
+          href: developer/office-store.md
     - name: Transmettre des données à un tableau de bord
       items:
         - name: Transmettre des données à un tableau de bord
@@ -1042,7 +1044,7 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848281'
 - name: Power BI Report Server
   items:
-    - name: Overview
+    - name: Vue d’ensemble
       items:
         - name: Bien démarrer
           href: report-server/get-started.md
@@ -1054,7 +1056,7 @@
           href: report-server/support-timeline.md
     - name: Manuel de l’utilisateur
       items:
-        - name: Overview
+        - name: Vue d’ensemble
           href: report-server/user-handbook-overview.md
         - name: Contenu de navigation
           href: report-server/getting-around.md
@@ -1090,7 +1092,7 @@
           href: report-server/scheduled-refresh-troubleshoot.md
     - name: Manuel de l’administrateur
       items:
-        - name: Overview
+        - name: Vue d’ensemble
           href: report-server/admin-handbook-overview.md
         - name: Configuration matérielle et logicielle requise
           href: report-server/system-requirements.md
@@ -1116,7 +1118,7 @@
           href: report-server/excel-oos.md
     - name: Manuel du développeur
       items:
-        - name: Overview
+        - name: Vue d’ensemble
           href: report-server/developer-handbook-overview.md
         - name: Contrôle Visionneuse de rapports
           href: 'https://go.microsoft.com/fwlink/?linkid=848724'
