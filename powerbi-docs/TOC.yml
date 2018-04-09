@@ -1,6 +1,6 @@
 - name: "Service Power\_BI"
   items:
-    - name: Commencer
+    - name: Bien démarrer
       items:
         - name: "Power\_BI – Concepts de base"
           href: service-basic-concepts.md
@@ -264,7 +264,7 @@
           href: service-data-classification.md
     - name: Posez des questions sur vos données
       items:
-        - name: Vue d’ensemble
+        - name: Overview
           items:
             - name: "Q&R dans Power\_BI"
               href: power-bi-q-and-a.md
@@ -624,7 +624,7 @@
           href: service-refresh-xero-credentials.md
 - name: "Power\_BI\_Desktop"
   items:
-    - name: Commencer
+    - name: Bien démarrer
       items:
         - name: "Obtenir Power\_BI\_Desktop"
           href: desktop-get-the-desktop.md
@@ -770,6 +770,8 @@
           href: desktop-insights.md
         - name: "Segments dans Power\_BI\_Desktop"
           href: desktop-slicers.md
+        - name: Utilisation des boutons dans Power BI
+          href: desktop-buttons.md
         - name: "Signets dans Power\_BI"
           href: desktop-bookmarks.md
         - name: Créer des info-bulles personnalisées pour les rapports (préversion)
@@ -852,7 +854,7 @@
           href: desktop-error-launching-desktop.md
 - name: "Applications mobiles Power\_BI"
   items:
-    - name: Commencer
+    - name: Bien démarrer
       items:
         - name: "Applications Power\_BI pour appareils mobiles"
           href: mobile-apps-for-mobile-devices.md
@@ -938,7 +940,7 @@
           href: mobile-windows-10-app-presentation-mode.md
 - name: "Développeur de Power\_BI"
   items:
-    - name: Vue d’ensemble
+    - name: Overview
       items:
         - name: "Que peuvent faire les développeurs avec Power\_BI\_?"
           href: developer/what-can-you-do.md
@@ -1040,9 +1042,9 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848281'
 - name: Power BI Report Server
   items:
-    - name: Vue d’ensemble
+    - name: Overview
       items:
-        - name: Commencer
+        - name: Bien démarrer
           href: report-server/get-started.md
         - name: Nouveautés
           href: report-server/whats-new.md
@@ -1052,7 +1054,7 @@
           href: report-server/support-timeline.md
     - name: Manuel de l’utilisateur
       items:
-        - name: Vue d’ensemble
+        - name: Overview
           href: report-server/user-handbook-overview.md
         - name: Contenu de navigation
           href: report-server/getting-around.md
@@ -1088,7 +1090,7 @@
           href: report-server/scheduled-refresh-troubleshoot.md
     - name: Manuel de l’administrateur
       items:
-        - name: Vue d’ensemble
+        - name: Overview
           href: report-server/admin-handbook-overview.md
         - name: Configuration matérielle et logicielle requise
           href: report-server/system-requirements.md
@@ -1114,7 +1116,7 @@
           href: report-server/excel-oos.md
     - name: Manuel du développeur
       items:
-        - name: Vue d’ensemble
+        - name: Overview
           href: report-server/developer-handbook-overview.md
         - name: Contrôle Visionneuse de rapports
           href: 'https://go.microsoft.com/fwlink/?linkid=848724'
