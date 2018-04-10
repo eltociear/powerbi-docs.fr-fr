@@ -1,15 +1,15 @@
 ---
-title: "Présentation des niveaux de confidentialité Power BI Desktop"
-description: "Niveaux de confidentialité Power BI Desktop"
+title: Présentation des niveaux de confidentialité Power BI Desktop
+description: Niveaux de confidentialité Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3cf6875fcb0756bfa9f5622a8d49f5b645b13c24
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 110d851e08ee8b63645c11507500eb2cbf179a46
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Niveaux de confidentialité Power BI Desktop
 Dans **Power BI Desktop**, les niveaux de confidentialité spécifient un niveau d’isolement qui définit le degré d’isolement d’une source de données par rapport aux autres sources de données. Bien qu'un niveau d'isolement restrictif empêche l’échange d’informations entre les sources de données, cela peut réduire les fonctionnalités et affecter les performances.
@@ -31,15 +31,6 @@ Le paramètre **Niveaux de confidentialité**, accessible via **Fichier > Option
 
 ![](media/desktop-privacy-levels/desktop_privacylevels1.png)
 
- La boîte de dialogue **Confidentialité** se trouve pour chaque source de données sous **Fichier > Options et paramètres > Paramètres de source de données**. Sélectionnez la source de données, puis sélectionnez **Modifier**. À partir de la boîte de dialogue **Paramètres de Source de données** qui s'affiche, vous pouvez sélectionner le niveau de confidentialité approprié dans le menu déroulant en bas de la boîte de dialogue, comme illustré dans l'image suivante.
-
- ![](media/desktop-privacy-levels/desktop_privacylevels2.png)
-
-> [!CAUTION]
-> Vous devez configurer une source de données contenant des données très sensibles ou confidentielles en tant que source **privée**.
-> 
-> 
-
 ## <a name="configure-a-privacy-level"></a>Configurer le niveau de confidentialité
 Les niveaux de confidentialité vous permettent de spécifier un niveau d'isolement qui définit le degré d'isolement d'une source de données par rapport aux autres sources de données.
 
@@ -47,10 +38,10 @@ Les niveaux de confidentialité vous permettent de spécifier un niveau d'isolem
 | --- | --- | --- |
 | **Source de données privées** |Une source de données **privée** contient des informations sensibles ou confidentielles. Sa visibilité peut être limitée aux utilisateurs autorisés. Une source de données privée est complètement isolée des autres sources de données. |Des données Facebook, un fichier texte contenant des primes sous forme d’actions, ou un classeur contenant des informations relatives à l’évaluation d’employés. |
 | **Source de données professionnelle** |La visibilité d’une source de données **professionnelle** est limitée à un groupe d'utilisateurs approuvé. Une source de données **professionnelle** est isolée de toutes les autres sources de données **publiques**, mais est visible pour les autres sources de données **professionnelles**. |Un document **Microsoft Word** sur un site intranet SharePoint avec des autorisations activées pour un groupe approuvé. |
-| **Source de données publique** |Une source de données **publique** offre une visibilité totale des données qu’elle contient à tous les utilisateurs. Seuls les sources de données Internet, de fichiers ou les données de classeur peuvent être marqués **publiques**. |Les données libres de la Place de marché Microsoft Azure, les données d'une page Wikipedia, ou un fichier local contenant des données copiées à partir d'une page web publique. |
+| **Source de données publique** |Une source de données **publique** offre une visibilité totale des données qu’elle contient à tous les utilisateurs. Seuls les fichiers, les sources de données Internet et les données de classeur peuvent être marqués comme **Publics**. |Des données libres provenant de la Place de marché Microsoft Azure, les données d'une page Wikipedia ou un fichier local contenant des données copiées à partir d'une page web publique. |
 
 ## <a name="configure-privacy-level-settings"></a>Configurer les paramètres de niveau de confidentialité
-La boîte de dialogue **Confidentialité** se trouve pour chaque source de données sous **Fichier > Options et paramètres > Paramètres de source de données**.
+La boîte de dialogue des paramètres **Confidentialité** se trouve, pour chaque source de données, sous **Fichier > Options et paramètres > Paramètres de source de données**.
 
 Pour configurer le niveau de confidentialité d’une source de données, sélectionnez la source de données, puis sélectionnez **Modifier**. À partir de la boîte de dialogue **Paramètres de Source de données** qui s'affiche, vous pouvez sélectionner le niveau de confidentialité approprié dans le menu déroulant en bas de la boîte de dialogue, comme illustré dans l'image suivante.
 

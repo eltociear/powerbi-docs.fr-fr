@@ -1,15 +1,15 @@
 ---
-title: "Utilisation de signets dans Power BI"
-description: "Les signets dans Power BI Desktop vous permettent d’enregistrer les vues et les paramètres dans vos rapports, ainsi que de créer des présentations de type récit."
+title: Utilisation de signets dans Power BI
+description: Les signets dans Power BI Desktop vous permettent d’enregistrer les vues et les paramètres dans vos rapports, ainsi que de créer des présentations de type récit.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,25 +18,25 @@ ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 706662e9fd7c6bd41015b286a7b7f1025e40a15e
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 1660f129ef5c93cf5aed5a3a5eda3c835e1885c1
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
-À l’aide des **signets** dans Power BI, vous pouvez capturer la vue actuellement configurée d’une page de rapport, y compris le filtrage et l’état des visuels, puis revenir à cet état en sélectionnant simplement le signet enregistré. 
+Les **signets** de Power BI permettent de capturer la vue actuellement configurée d’une page de rapport, filtrage et état des visuels compris, puis de revenir à cet état en sélectionnant simplement le signet enregistré. 
 
 Vous pouvez également créer une collection de signets, les réorganiser dans l’ordre de votre choix, puis parcourir chaque signet d’une présentation pour mettre en avant une série d’insights ou le récit que vous souhaitez raconter avec vos visuels et rapports. 
 
 ![Signets dans Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
-Les signets ont de nombreuses utilisations. Vous pouvez les utiliser pour suivre la progression de la création de rapports (les signets sont faciles à ajouter, supprimer et renommer). Vous pouvez également créer des signets pour créer une présentation de type PowerPoint qui parcourt les signets dans l’ordre, en créant ainsi un récit avec votre rapport. Il existe peut-être d’autres utilisations en fonction de votre usage.
+Les signets ont de nombreuses utilisations. Vous pouvez les utiliser pour suivre la progression de la création de rapports (les signets sont faciles à ajouter, à supprimer et à renommer). Il est également possible de créer des signets pour concevoir une présentation de type PowerPoint qui parcourt les signets dans l’ordre, de façon à accompagner votre rapport d’un récit. Il existe peut-être d’autres utilisations en fonction de votre usage.
 
 ### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Activer la préversion des signets (versions antérieures à mars 2018)
-Depuis la version de mars 2018 pour Power BI Desktop, les signets sont en disponibilité générale. 
+Depuis la version de mars 2018 de Power BI Desktop, les signets sont en disponibilité générale. 
 
-Nous vous conseillons de toujours effectuer la mise à niveau vers la version la plus récente. Si vous utilisez une version antérieure de Power BI Desktop, vous pouvez essayer la nouvelle fonctionnalité **Signets** disponible depuis la version d’**octobre 2017** de **Power BI Desktop** et, pour les rapports où les signets sont activés, dans le **service Power BI** également. Pour activer la fonctionnalité en préversion, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en préversion**, puis cochez la case à côté de **Signets**. 
+Nous vous conseillons de toujours effectuer la mise à niveau vers la version la plus récente. Si vous utilisez une version antérieure de Power BI Desktop, vous pouvez essayer la fonctionnalité **Signets** à partir de la version **d’octobre 2017** de **Power BI Desktop** et, pour les rapports compatibles avec les signets, dans le **service Power BI** également. Pour activer la fonctionnalité en préversion, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en préversion**, puis cochez la case à côté de **Signets**. 
 
 ![Activer les signets dans la fenêtre Options](media/desktop-bookmarks/bookmarks_02.png)
 
@@ -63,7 +63,7 @@ Configurez une page de rapport comme vous souhaitez qu’elle apparaisse dans le
 
 ![Ajouter un signet](media/desktop-bookmarks/bookmarks_04.png)
 
-**Power BI Desktop** crée un signet et lui attribue un nom générique. Vous pouvez facilement *renommer*, *supprimer* ou *mettre à jour* un signet en sélectionnant les points de suspension en regard de son nom, puis en sélectionnant une action dans le menu qui s’affiche.
+**Power BI Desktop** crée un signet et lui donne un nom générique. Vous pouvez facilement *renommer*, *supprimer* ou *mettre à jour* un signet en sélectionnant les points de suspension en regard de son nom, puis en choisissant une action dans le menu qui s’affiche.
 
 ![Sélectionnez le sous-menu d’un signet en utilisant les points de suspension.](media/desktop-bookmarks/bookmarks_05.png)
 
@@ -72,7 +72,7 @@ Une fois que vous avez un signet, vous pouvez l’afficher en cliquant simplemen
 ## <a name="arranging-bookmarks"></a>Organisation des signets
 Lorsque vous créez des signets, vous pouvez trouver que l’ordre dans lequel vous les créez n’est pas nécessairement l’ordre dans lequel vous voulez les présenter à votre audience. Cela ne constitue pas un problème, car vous pouvez facilement réorganiser l’ordre des signets.
 
-Dans le volet **Signets**, effectuez simplement un glisser-déplacer des signets pour modifier leur ordre, comme indiqué dans l’image suivante. La barre jaune entre les signets désigne où le signet déplacé sera positionné.
+Dans le volet **Signets**, effectuez simplement un glisser-déplacer des signets pour modifier leur ordre, comme dans l’image suivante. La barre jaune entre les signets désigne où le signet déplacé sera positionné.
 
 ![Modifier l’ordre des signets par glisser-déplacer](media/desktop-bookmarks/bookmarks_06.png)
 
@@ -84,15 +84,15 @@ Lorsque vous avez une collection de signets que vous souhaitez présenter dans l
 Le mode **Vue** offre quelques fonctionnalités utiles :
 
 1. Le nom du signet apparaît dans la barre de titre de celui-ci, qui apparaît au bas du canevas.
-2. La barre de titre des signets a des flèches qui vous permettent de passer au signet suivant ou précédent.
-3. Vous pouvez quitter le mode **Vue** en sélectionnant **Quitter** à partir du volet **Signets** ou en sélectionnant la croix (**X**) qui se trouve dans la barre de titre des signets. 
+2. La barre de titre des signets comporte des flèches permettant de passer au signet suivant ou précédent.
+3. Vous pouvez quitter le mode **Vue** en sélectionnant **Quitter** dans le volet **Signets** ou la croix (**X**) dans la barre de titre des signets. 
 
 ![Fonctionnalités de la barre de titre des signets](media/desktop-bookmarks/bookmarks_07.png)
 
-Lorsque vous êtes en mode **Vue**, vous pouvez fermer le volet **Signets** (en cliquant sur le signe X sur ce volet) pour fournir davantage d’espace pour votre présentation. De plus, en mode **Vue**, tous les visuels sont interactifs et disponibles pour sélection croisée, comme lorsque vous interagissez normalement avec eux. 
+Lorsque vous êtes en mode **Vue**, vous pouvez fermer le volet **Signets** (en cliquant sur le signe X sur ce volet) pour fournir davantage d’espace pour votre présentation. De plus, en mode **Vue**, tous les visuels sont interactifs et compatibles avec la sélection croisée, comme dans toute autre interaction. 
 
 ## <a name="visibility---using-the-selection-pane"></a>Visibilité à l’aide du volet Sélection
-Un nouveau volet **Sélection** est également mis à disposition avec les signets. Le volet **Sélection** fournit une liste de tous les objets de la page active. Il vous permet de sélectionner l’objet et de spécifier si un objet spécifique est visible. 
+Un nouveau volet **Sélection** est également mis à disposition avec les signets. Le volet **Sélection** donne la liste de tous les objets de la page active. Il permet de sélectionner l’objet et de spécifier si un objet en particulier est visible. 
 
 ![Activer le volet Sélection](media/desktop-bookmarks/bookmarks_08.png)
 

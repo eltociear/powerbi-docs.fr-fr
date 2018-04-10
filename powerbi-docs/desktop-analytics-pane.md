@@ -1,15 +1,15 @@
 ---
 title: Utilisation du volet Analytique dans Power BI Desktop
-description: "Créer des lignes de référence dynamiques pour des objets visuels dans Power BI Desktop"
+description: Créer des lignes de référence dynamiques pour des objets visuels dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 24f6f9037937049d24321791046aaf7a14e9fb6f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d0386f384698e0e66ce927466975eca7f25656db
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Utilisation du volet Analytique dans Power BI Desktop
 Avec le volet **Analyse** de **Power BI Desktop**, vous pouvez ajouter des *lignes de référence* dynamiques aux visuels et mettre en relief les analyses ou les tendances importantes. Le volet **Analyse** se trouve dans la partie **Visualisations** de Power BI Desktop.
@@ -60,7 +60,7 @@ Pour afficher les lignes de référence dynamiques pour un élément visuel, pro
    ![](media/desktop-analytics-pane/analytics-pane_3.png)
 3. Pour créer une ligne, sélectionnez **+ Ajouter**. Vous pouvez ensuite spécifier un nom pour la ligne en double-cliquant sur la zone de texte, puis en entrant votre nom.
    
-   Il existe toutes sortes d’options de ligne. Vous pouvez sélectionner sa *couleur*, sa *transparence*, son *style* et sa *position* (par rapport à des éléments de données de l’élément visuel) et l’ajout de l’étiquette. Et surtout, vous pouvez sélectionner la **mesure** sur laquelle sera fondée votre ligne dans l’élément visuel, dans la liste déroulante **Mesure**, qui est automatiquement remplie avec les éléments de données de l’élément visuel. Dans ce cas, nous allons sélectionner *Weather* (Météo) comme mesure, lui attribuer une étiquette *Average Weather* (Météo moyenne) et personnaliser certaines des autres options, comme indiqué ci-dessous.
+   Il existe toutes sortes d’options de ligne. Vous pouvez sélectionner sa *couleur*, sa *transparence*, son *style* et sa *position* (par rapport à des éléments de données de l’élément visuel) et l’ajout de l’étiquette. Et surtout, vous pouvez sélectionner la **mesure** du visuel sur laquelle sera basée votre ligne dans la liste déroulante **Mesure**, qui est automatiquement remplie avec les éléments de données du visuel. Dans ce cas, nous allons sélectionner *Weather* (Météo) comme mesure, lui attribuer une étiquette *Average Weather* (Météo moyenne) et personnaliser certaines des autres options, comme indiqué ci-dessous.
    
    ![](media/desktop-analytics-pane/analytics-pane_4.png)
 4. Si vous souhaitez afficher une étiquette de données, déplacez le curseur de l’**étiquette de données**. En procédant ainsi, vous obtenez un grand nombre d’options supplémentaires pour l’étiquette de données, comme illustré dans l’image suivante.
@@ -113,6 +113,8 @@ Enfin, les éléments visuels non cartésiens ne peuvent pas appliquer actuellem
 * Graphique en secteurs
 * Graphique en anneau
 * Table
+
+La ligne des centiles n’est disponible qu’avec des données importées dans **Power BI Desktop** ou en cas de connexion active à un modèle sur un serveur exécutant **Analysis Service 2016** ou une version ultérieure, **Azure Analysis Services** ou un jeu de données sur le service Power BI. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 Power BI Desktop vous permet d’effectuer des tâches très diverses. Pour plus d’informations sur ses fonctionnalités, passez en revue les ressources suivantes :

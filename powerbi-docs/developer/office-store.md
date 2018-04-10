@@ -1,27 +1,27 @@
 ---
-title: "Publier des visuels personnalisés dans AppSource"
-description: "Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser."
+title: Publier des visuels personnalisés dans AppSource
+description: Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/5/2017
+ms.date: 04/02/2018
 ms.author: maghan
-ms.openlocfilehash: 5dc5cda126943bbb6da25e384b789c169187b249
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 9730f92a7f50e2e0d0ad824f8a5f74f6a09ded97
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publier des visuels personnalisés dans AppSource
 Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser. Office
@@ -39,16 +39,20 @@ Une fois que vous avez terminé de coder et de tester votre visuel personnalisé
 | --- | --- | --- |
 | Le package Pbiviz contient toutes les métadonnées requises |Oui |Nom du visuel<br>Nom d’affichage<br>GUID<br>Version<br>Description<br>Nom et e-mail de l’auteur |
 | Exemple de fichier de rapport .pbix |Oui |Pour présenter votre visuel, vous devez en démontrer son utilité aux utilisateurs. Vous devez insister sur la valeur que le visuel apporte à l’utilisateur et donner des exemples d’utilisation, des options de mise en forme, etc. Vous pouvez également ajouter une page de *conseils* à la fin. Dans cette page, donnez quelques conseils et astuces, expliquez ce qu’il faut éviter de faire et donnez d’autres indications.<br>L’exemple de fichier de rapport .pbix doit pouvoir être utilisé hors connexion, sans connexion externe |
-| Icône |Oui |Vous devez inclure le logo du visuel personnalisé qui s’affiche sur la page principale de l’Office Store. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Les dimensions doivent être précisément de 300 pixels (largeur) x 300 pixels (hauteur). La taille de fichier ne peut pas être supérieure à 512 Ko. |
+| Icône |Oui |Vous devez inclure le logo du visuel personnalisé qui s’affiche sur la page principale de l’Office Store. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Les dimensions doivent être précisément de 300 pixels (largeur) x 300 pixels (hauteur). **Important :** Lisez attentivement le [petit guide](https://docs.microsoft.com/en-us/office/dev/store/craft-effective-appsource-store-images) avant de soumettre l’icône. |
 | Captures d’écran |Oui |Vous devez fournir au moins une capture d’écran. Les formats .png, .jpg, .jpeg et .gif sont disponibles. La taille doit être précisément de 1 366 px (largeur) sur 768 px (hauteur). Elle ne peut pas dépasser 1 024 Ko. *Pour une utilisation optimale, ajoutez des bulles de texte pour expliquer la proposition de valeur des principales fonctionnalités affichées dans chaque capture d’écran.* |
 | Lien vers le support |Oui |Fournissez l’URL à laquelle les clients peuvent se connecter s’ils rencontrent des problèmes avec votre visuel. Le format de votre URL doit inclure https:// ou http://. |
 | Lien vers le document sur la confidentialité |Oui |Indiquez un lien vers la politique de confidentialité pour les clients qui utilisent votre visuel. Le format de votre lien doit inclure https:// ou http://. |
-| Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels personnalisés Power BI. Pour utiliser le fichier CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de téléchargement du fichier « Contrat de Licence Utilisateur Final » du tableau de bord vendeur : [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf). |
+| Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels personnalisés Power BI. Pour utiliser le contrat CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de chargement du fichier « Contrat de Licence Utilisateur Final » du tableau de bord vendeur : [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf). |
 | Lien vers la vidéo |Non |Pour augmenter l’intérêt porté par les utilisateurs à votre visuel personnalisé, nous vous conseillons de fournir un lien vers une vidéo de présentation de votre visuel. Le format de votre URL doit inclure https:// ou http://. |
 | Dépôt GitHub |Non |Il est préférable d’avoir un lien valide et public vers un dépôt [GitHub](https://www.github.com) avec les sources de votre visuel et des exemples de données pour permettre aux autres développeurs de fournir des commentaires et de proposer des améliorations pour votre code. |
 
 ## <a name="submitting-to-power-bi"></a>Soumission à Power BI
 La soumission commence par l’envoi d’un e-mail à l’équipe de soumission des visuels personnalisés Power BI. Envoyez un e-mail à l’adresse [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+
+> [!IMPORTANT]
+> Vous devez renseigner les champs suivants dans le fichier pbiviz.json avant de créer le package .pbiviz : « description », « supportUrl », « author », « name » et « email ».
+> 
 
 Joignez le fichier .pbiviz et l’exemple de fichier de rapport .pbix à votre e-mail. Dans sa réponse, l’équipe Power BI vous donne des instructions et un fichier XML de package d’application à charger. Ce package d’application XML est requis pour soumettre votre visuel par le biais du Centre pour développeurs Office.
 
@@ -100,7 +104,7 @@ Suivez les étapes ci-dessous pour terminer la soumission.
    * Lien vers la vidéo
    * Contrat de Licence Utilisateur Final (CLUF)
      
-       Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels personnalisés Power BI. Pour utiliser le fichier CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de téléchargement du fichier « Contrat de Licence Utilisateur Final » du tableau de bord vendeur : [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf).
+       Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels personnalisés Power BI. Pour utiliser le contrat CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de chargement du fichier « Contrat de Licence Utilisateur Final » du tableau de bord vendeur : [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf).
 8. Sélectionnez **Suivant** pour accéder à la page **Détails**.
 9. Sélectionnez **Langue**, puis choisissez une langue dans la liste.
    

@@ -1,15 +1,15 @@
 ---
-title: "Tâches courantes relatives aux requêtes dans Power BI Desktop"
-description: "Tâches courantes relatives aux requêtes dans Power BI Desktop"
+title: Tâches courantes relatives aux requêtes dans Power BI Desktop
+description: Tâches courantes relatives aux requêtes dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4d0a8b9a1f855c373b43c5c78ec41b6bc34d1d18
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 37c5e55d426d308fe8ea7de5c6604a9c66f81896
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
 Quand vous travaillez dans la fenêtre **Éditeur de requête** de Power BI Desktop, vous avez accès à un certain nombre de tâches courantes. Ce document décrit ces tâches courantes et fournit des liens pour plus d’informations. 
@@ -45,7 +45,7 @@ La première connexion de données est un classeur Excel. L’autre est une ress
 Les étapes nécessaires pour se connecter à ces deux sources de données marquent le début des tâches courantes relatives aux requêtes.
 
 ## <a name="connect-to-data"></a>Connectez-vous à vos données
-Pour vous connecter à des données dans Power BI Desktop, cliquez sur le bouton **Obtenir des données** sous l’onglet **Accueil** du ruban. Power BI Desktop présente un menu qui répertorie les sources de données les plus courantes. Pour obtenir la liste complète des sources de données auxquelles Power BI Desktop peut se connecter, sélectionnez le bouton **Autres...** en bas du menu. Pour plus d’informations, consultez [Sources de données dans Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643).
+Pour vous connecter à des données dans Power BI Desktop, cliquez sur le bouton **Obtenir des données** sous l’onglet **Accueil** du ruban. Power BI Desktop présente un menu qui répertorie les sources de données les plus courantes. Pour obtenir la liste complète des sources de données auxquelles Power BI Desktop peut se connecter, sélectionnez le bouton **Autres...** en bas du menu. Pour plus d’informations, consultez [Sources de données dans Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-data-sources).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
@@ -67,27 +67,27 @@ Sélectionnez **OK**, et comme auparavant, Power BI Desktop inspecte le classe
 
 Les autres connexions de données sont similaires. Si l’authentification est nécessaire pour établir une connexion de données, Power BI Desktop vous invite à entrer les informations d’identification appropriées.
 
-Pour obtenir une démonstration détaillée de la connexion à des données dans Power BI Desktop, consultez [Connect to Data in Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635) (Se connecter à des données dans Power BI Desktop).
+Pour obtenir une démonstration détaillée de la connexion à des données dans Power BI Desktop, consultez [Connect to Data in Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-connect-to-data) (Se connecter à des données dans Power BI Desktop).
 
 ## <a name="shape-and-combine-data"></a>Mettre en forme et combiner des données
-Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour une démonstration plus complète de la mise en forme et de la combinaison de données, consultez la section **[Mettre en forme et combiner des données dans Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)**.
+Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour une démonstration plus complète de la mise en forme et de la combinaison de données, consultez la section **[Mettre en forme et combiner des données dans Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data)**.
 
-Dans la section précédente, nous avons connecté deux jeux de données : un classeur Excel et une ressource web. Une fois ces derniers chargés, l’Éditeur de requête présente l’aspect suivant, la requête issue de la page web étant sélectionnée (parmi les requêtes disponibles répertoriées dans le volet **Requêtes** , à gauche de la fenêtre Éditeur de requête).
+Dans la section précédente, nous avons connecté deux jeux de données : un classeur Excel et une ressource web. Une fois qu’ils sont chargés dans l’Éditeur de requête, on obtient le résultat suivant, la requête issue de la page web étant sélectionnée (parmi les requêtes disponibles listées dans le volet **Requêtes**, sur le côté gauche de la fenêtre Éditeur de requête).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_querypaneloaded.png)
 
 Quand vous mettez en forme les données, vous transformez une source de données en fonction de vos besoins. Dans notre cas, la première colonne intitulée *Header*étant superflue, nous allons la supprimer.
 
-Dans l’ **Éditeur de requête**, de nombreuses commandes sont accessibles dans le ruban et dans un menu contextuel. Par exemple, quand je clique avec le bouton droit sur la colonne *Header* , le menu qui apparaît me permet de supprimer la colonne. Je pourrais également sélectionner la colonne, puis cliquer sur le bouton **Supprimer les colonnes** du ruban.
+Dans l’ **Éditeur de requête**, de nombreuses commandes sont accessibles dans le ruban et dans un menu contextuel. Par exemple, si l’on clique avec le bouton droit sur la colonne *Header*, le menu qui apparaît permet de la supprimer. On pourrait également sélectionner la colonne, puis cliquer sur le bouton **Supprimer les colonnes** du ruban.
 
 ![](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
 
-Il existe d’autres façons de mettre en forme les données dans cette requête. Je pourrais supprimer un nombre quelconque de lignes à partir du haut ou du bas, ajouter des colonnes, fractionner des colonnes, remplacer des valeurs et effectuer d’autres tâches de mise en forme pour indiquer à l’Éditeur de requête d’obtenir les données comme je le souhaite.
+Il existe d’autres façons de mettre en forme les données dans cette requête : supprimer un certain nombre de lignes à partir du haut ou du bas, ajouter ou fractionner des colonnes, remplacer des valeurs et effectuer d’autres tâches de mise en forme pour indiquer à l’Éditeur de requête d’obtenir les données d’une certaine façon.
 
 ## <a name="group-rows"></a>Regrouper des lignes
 Dans l’Éditeur de requête, vous pouvez regrouper les valeurs de plusieurs lignes en une seule valeur. Cela peut être utile pour récapituler le nombre de produits proposés, le total des ventes ou le nombre d’étudiants.
 
-Dans cet exemple, nous regroupons des lignes dans un jeu de données d’inscription à des études. Les données se trouvent dans un classeur Excel et ont été mises en forme dans l’Éditeur de requête pour obtenir uniquement les colonnes dont nous avons besoin, puis la table a été renommée et quelques autres transformations ont été effectuées.
+Dans cet exemple, nous regroupons des lignes dans un jeu de données d’inscription à des études. Les données, provenant d’un classeur Excel, ont été mises en forme dans l’Éditeur de requête de façon à obtenir uniquement les colonnes nécessaires ; la table a été renommée et d’autres transformations ont été effectuées.
 
 Nous allons rechercher le nombre d’organismes (y compris les secteurs scolaires et autres organismes d’éducation) que compte chaque État. Nous sélectionnons la colonne *State Abbr* , puis nous cliquons sur le bouton **Regrouper par** situé sous l’onglet **Transformer** ou **Accueil** du ruban (**Regrouper par** est disponible sous les deux onglets).
 
@@ -95,14 +95,16 @@ Nous allons rechercher le nombre d’organismes (y compris les secteurs scolaire
 
 La fenêtre **Regrouper par...** s’affiche. Quand l’Éditeur de requête regroupe des lignes, elle crée une colonne dans laquelle elle place les résultats de l’opération **Regrouper par** . Vous pouvez ajuster l’opération **Regrouper par** comme suit :
 
-1. *Regrouper par* : il s’agit de la colonne à regrouper ; l’Éditeur de requête choisit la colonne sélectionnée, mais vous pouvez dans cette fenêtre remplacer cette colonne par n’importe quelle colonne de la table.
+1. *Regrouper par* : il s’agit de la colonne à regrouper ; l’Éditeur de requête choisit la colonne sélectionnée, mais vous pouvez dans cette fenêtre la remplacer par n’importe quelle colonne de la table.
 2. *Nouveau nom de colonne* : l’Éditeur de requête suggère un nom pour la nouvelle colonne, en fonction de l’opération qu’elle applique à la colonne regroupée, mais vous pouvez nommer la nouvelle colonne comme vous le souhaitez.
 3. *Opération* : ici, vous spécifiez l’opération appliquée par l’Éditeur de requête.
-4. *Signes + et -* : vous pouvez effectuer des opérations d’agrégation (actions**Regrouper par** ) sur plusieurs colonnes et effectuer plusieurs agrégations, toutes dans la fenêtre **Regrouper par** et simultanément. L’Éditeur de requête crée une colonne (en fonction des sélections que vous avez effectuées dans cette fenêtre) qui implique plusieurs colonnes. Cliquez sur le bouton **+** pour ajouter des colonnes ou des agrégations à une opération **Regrouper par**. Vous pouvez supprimer une colonne ou une agrégation en cliquant sur l’icône – ; essayez donc et regardez ce que cela donne. 
+4. *Ajouter un regroupement* et *Ajouter une agrégation* : ces options s’affichent une fois l’option **Avancé** sélectionnée. Vous pouvez effectuer des opérations de regroupement (actions**Regrouper par** ) sur plusieurs colonnes et effectuer plusieurs agrégations, toutes dans la fenêtre **Regrouper par** et simultanément. L’Éditeur de requête crée une colonne (en fonction des sélections que vous avez effectuées dans cette fenêtre) qui implique plusieurs colonnes. 
+
+Sélectionnez le bouton **Ajouter un regroupement** ou **Ajouter une agrégation** pour ajouter d’autres regroupements ou d’autres agrégations à une opération **Regrouper par**. Vous pouvez supprimer un regroupement ou une agrégation en cliquant sur l’icône **...** et en sélectionnant **Supprimer** ; essayez pour voir ce que cela donne.
    
    ![](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
-Quand nous sélectionnons **OK**, l’Éditeur de requête effectue l’opération **Regrouper par** et retourne les résultats. Eh bien, regardez ça : l’Ohio, le Texas, l’Illinois et la Californie comptent chacun plus de mille organismes !
+Quand nous sélectionnons **OK**, l’Éditeur de requête effectue l’opération **Regrouper par** et retourne les résultats. L’Ohio, le Texas, l’Illinois et la Californie comptent maintenant plus de mille organismes !
 
 ![](media/desktop-common-query-tasks/commonquerytasks_groupedresult.png)
 
@@ -115,7 +117,7 @@ Examinons un exemple. La table **Products** suivante a été mise en forme pour 
 
 ![](media/desktop-common-query-tasks/pivotcolumns_pivotbutton.png)
 
-La fenêtre **Colonne de tableau croisé dynamique** s’affiche, vous informant que les valeurs de la colonne permettront de créer des colonnes (1), et quand vous développez **Options avancées** (2), vous pouvez sélectionner la fonction à appliquer aux valeurs agrégées (3).
+La fenêtre **Colonne de tableau croisé dynamique** s’affiche ; elle indique quelles seront les valeurs de la colonne utilisées pour créer de nouvelles colonnes (1). Si l’on développe **Options avancées** (2), on peut sélectionner la fonction à appliquer aux valeurs agrégées (3).
 
 ![](media/desktop-common-query-tasks/pivotcolumns_pivotdialog.png)
 
@@ -126,7 +128,7 @@ Quand vous cliquez sur **OK**, l’Éditeur de requête affiche la table selon l
 ## <a name="create-custom-columns"></a>Créer des colonnes personnalisées
 Dans l’Éditeur de requête, vous pouvez créer des formules personnalisées qui impliquent plusieurs colonnes de votre table, puis placer les résultats de ces formules dans une nouvelle colonne (personnalisée). L’Éditeur de requête facilite la création de colonnes personnalisées.
 
-Dans l’Éditeur de requête, sélectionnez **Ajouter une colonne personnalisée** sous l’onglet **Ajouter une colonne** du ruban.
+Dans l’Éditeur de requête, sélectionnez **Colonne personnalisée** sous l’onglet **Ajouter une colonne** du ruban.
 
 ![](media/desktop-common-query-tasks/commonquerytasks_customcolumn.png)
 
@@ -147,7 +149,7 @@ L’Éditeur de requête conserve toutes les étapes appliquées pour chaque req
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Voici un aperçu de l’**Éditeur avancé**, où figurent les étapes associées à la requête **USA\_StudentEnrollment** affichée. Ces étapes sont créées dans le langage de formule Power Query, souvent appelé **M**. Pour plus d’informations, consultez [En savoir plus sur les formules Power Query](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&rs=en-US&ad=US). Pour afficher la spécification du langage proprement dite, téléchargez le document [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633) (Spécification du langage de formule Microsoft Power Query pour Excel).
+Voici un aperçu de l’**Éditeur avancé**, où figurent les étapes associées à la requête **USA\_StudentEnrollment** affichée. Ces étapes sont créées dans le langage de formule Power Query, souvent appelé **M**. Pour plus d’informations, consultez [En savoir plus sur les formules Power Query](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&rs=en-US&ad=US). Pour afficher la spécification du langage proprement dite, consultez la page [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633) (Spécification du langage de formule Microsoft Power Query pour Excel).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

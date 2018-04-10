@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9161966897811820935c72ac1657ceca58da403a
-ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
+ms.openlocfilehash: 8f5b80497850b8e61bd7df97c3c88777265d7a6b
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Utiliser des thèmes de rapport dans Power BI Desktop (version préliminaire)
-Les **Thèmes de rapport** vous permettent d’appliquer un thème de couleur à un rapport entier. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières, ou de tout autre thème de votre choix. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
+Les **Thèmes de rapport** permettent d’appliquer un thème de couleur à l’intégralité d’un rapport. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières ou de tout autre thème de votre choix. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
 
 ![](media/desktop-report-themes/report-themes_1.png)
 
@@ -68,7 +68,7 @@ Pour appliquer un style à un visuel de **table** ou de **matrice**, sélectionn
 
 ![](media/desktop-report-themes/report-themes_7.png)
 
-Afin de faciliter l’opération de copier-coller pour créer votre propre fichier JSON, voici le texte du fichier *St Patricks Day.json* :
+Afin de faciliter l’opération de copier-coller pour créer votre propre fichier JSON, voici le texte du fichier *St Patricks Day.json*:
 
     {
         "name": "St Patricks Day",
@@ -78,7 +78,7 @@ Afin de faciliter l’opération de copier-coller pour créer votre propre fichi
         "tableAccent": "#568410"
     }
 
-À partir de là, vous pouvez entrer votre propre code hexadécimal pour les couleurs sélectionnées.
+Vous pouvez entrer votre propre code hexadécimal pour les couleurs sélectionnées.
 
 À partir de la publication de septembre 2017 de **Power BI Desktop**, le fichier JSON peut être beaucoup plus complexe. Dans le fichier JSON, vous définissez uniquement la mise en forme que vous souhaitez affecter, et tout ce qui n’est *pas* spécifié dans le fichier JSON prend simplement les paramètres par défaut de Power BI.
 
@@ -91,7 +91,7 @@ Pour plus d’informations sur le format du fichier JSON détaillé, voir la sec
 ## <a name="how-report-theme-colors-stick-to-your-reports"></a>Comment les couleurs de thème de rapport restent associées à celui-ci
 Lorsque vous publiez votre rapport sur le **Service Power BI**, les couleurs de thème du rapport restent associées à celui-ci.
 
-De plus, la section **Couleurs des données** du volet **Format** reflète votre thème de rapport. Par exemple, après avoir appliqué la palette de couleurs vertes et marron du thème **St. Patrick's Day**, lorsque nous sélectionnons un élément visuel, puis accédons à **Format > Couleurs des données** nous voyons ce qui suit.
+De plus, la section **Couleurs des données** du volet **Format** reflète votre thème de rapport. Si, par exemple, après avoir appliqué la palette de couleurs vertes et marron du thème **St. Patrick's Day**, on sélectionne un élément visuel et on accède à **Format > Couleurs des données**, voici ce qui apparaît.
 
 ![](media/desktop-report-themes/report-themes_8.png)
 
@@ -100,7 +100,7 @@ Vous voyez tout ce vert ? C’est parce que ces couleurs faisaient partie du **
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situations où les couleurs de thème de rapport ne restent pas associées à vos rapports
 Si vous appliquez un jeu de couleurs personnalisé (ou une couleur) à un point de données spécifique dans un visuel, l’application d’un thème de rapport n’a *pas* pour effet de remplacer cette couleur de point de données personnalisée.
 
-De plus, si vous avez défini manuellement la couleur d’un point de données via la section Couleurs du thème de la palette de couleurs, cette couleur n’est *pas* mise à jour lorsque vous appliquez un nouveau thème de rapport. Pour rétablir votre couleurs par défaut (de façon à ce qu’elles soient mises à jour quand vous appliquez un nouveau thème de rapport), vous pouvez sélectionner **Rétablir les valeurs par défaut** dans la palette **Couleurs du thème**.
+Par ailleurs, si la couleur d’un point de données a été définie manuellement dans la section Couleurs du thème de la palette de couleurs, elle ne sera *pas* mise à jour lors de l’application d’un nouveau thème de rapport. Pour rétablir votre couleurs par défaut (de façon à ce qu’elles soient mises à jour quand vous appliquez un nouveau thème de rapport), vous pouvez sélectionner **Rétablir les valeurs par défaut** dans la palette **Couleurs du thème**.
 
 ![](media/desktop-report-themes/report-themes_9.png)
 
