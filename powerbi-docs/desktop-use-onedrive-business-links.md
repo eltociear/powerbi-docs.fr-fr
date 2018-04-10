@@ -2,14 +2,14 @@
 title: Utilisation des liens OneDrive Entreprise dans Power BI Desktop
 description: Utilisation des liens OneDrive Entreprise dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7d203668f3fbb3f9a50af50280d68d2fadf15f64
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ad83703b77907488f47f9b5f419e8e4d5145ae97
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Utilisation des liens OneDrive Entreprise dans Power BI Desktop
 Beaucoup de gens ont des classeurs Excel stockés sur leur lecteur OneDrive Entreprise qui seraient parfaitement adaptés à une utilisation avec Power BI Desktop. Avec **Power BI Desktop**, vous pouvez utiliser les liaisons en ligne pour les fichiers **Excel** stockés dans **OneDrive Entreprise** pour créer des rapports et des éléments visuels. Vous pouvez utiliser un compte **OneDrive Entreprise** de groupe, ou votre compte **OneDrive Entreprise** individuel.
@@ -59,7 +59,7 @@ Dans Power BI Desktop, vous pouvez utiliser le lien que vous venez de copier dan
 Une fenêtre de **Navigateur** s’affiche et vous permet de sélectionner parmi une liste de tableaux, feuilles et plages du classeur Excel. De là, vous pouvez utiliser le fichier OneDrive Entreprise comme n’importe quel autre fichier Excel, et créer des rapports et l’utiliser dans des jeux de données comme vous le feriez pour n’importe quelle autre source de données.
 
 > [!NOTE]
-> Pour utiliser le fichier **OneDrive Entreprise** en tant que source de données dans le service Power BI, avec l’option d’**actualisation du service** activée pour ce fichier, veillez à sélectionner **OAuth2** comme **méthode d’authentification** lors de la configuration de vos paramètres d’actualisation. Sinon, vous pouvez rencontrer une erreur (telle que *Échec de la mise à jour des informations d’identification de la source de données*) quand vous essayez de vous connecter ou d’actualiser. Si vous sélectionnez **OAuth2** comme méthode d’authentification, vous résolvez cette erreur d’informations d’identification.
+> Pour utiliser un fichier **OneDrive Entreprise** en tant que source de données dans le service Power BI, avec l’option d’**actualisation du service** activée pour ce fichier, veillez à sélectionner **OAuth2** comme **méthode d’authentification** lors de la configuration de vos paramètres d’actualisation. Sinon, vous pouvez rencontrer une erreur (telle que *Échec de la mise à jour des informations d’identification de la source de données*) quand vous essayez de vous connecter ou d’actualiser. Si vous sélectionnez **OAuth2** comme méthode d’authentification, vous résolvez cette erreur d’informations d’identification.
 > 
 > 
 

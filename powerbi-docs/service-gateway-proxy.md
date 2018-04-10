@@ -1,15 +1,15 @@
 ---
-title: "Configuration des paramètres de proxy pour la passerelle de données locale"
-description: "Informations sur la configuration des paramètres de proxy pour la passerelle de données locale."
+title: Configuration des paramètres de proxy de la passerelle de données locale
+description: Informations sur la configuration des paramètres de proxy pour la passerelle de données locale.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,13 +18,13 @@ ms.workload: powerbi
 ms.date: 11/21/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 27b8d36ed870501170efdb81c40edb6cb4727499
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f6bfc47e7b74d9b17479a2ac7fc3dbc3f3e76816
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Configuration des paramètres de proxy pour la passerelle de données locale
+# <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Configuration des paramètres de proxy de la passerelle de données locale
 Votre environnement de travail peut nécessiter que vous passiez par un proxy pour accéder à Internet. Cela pourrait empêcher la passerelle de données locale de se connecter au service.
 
 ## <a name="does-your-network-use-a-proxy"></a>Votre réseau utilise-t-il un proxy ?
@@ -82,7 +82,7 @@ Lorsque vous configurez les paramètres de proxy pour utiliser les informations 
         net stop PBIEgwService
    
         net start PBIEgwService
-3. Démarrez l’**outil de configuration de la passerelle de données locale**. Vous pouvez sélectionner le bouton Démarrer de Windows et rechercher *Passerelle de données locale*.
+3. Démarrez **l’outil de configuration de la passerelle de données locale**. Vous pouvez sélectionner le bouton Démarrer de Windows et rechercher *Passerelle de données locale*.
 4. Connectez-vous à Power BI.
 5. Restaurez la passerelle à l’aide de votre clé de récupération.
    

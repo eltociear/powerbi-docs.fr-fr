@@ -1,15 +1,15 @@
 ---
 title: Journal des modifications pour Power BI Report Server
-description: "Ce journal des modifications a trait à Power BI Report Server. Il répertorie les éléments nouveaux et les corrections de bogues introduits dans chaque version officielle publiée."
+description: Ce journal des modifications a trait à Power BI Report Server. Il répertorie les éléments nouveaux et les corrections de bogues introduits dans chaque version officielle publiée.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: jtarquino
 manager: jonhp
 backup: maggies
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,17 +17,41 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/11/2017
 ms.author: tankas
-ms.openlocfilehash: deff79bba0f7f191a8343629300c725f3150e509
-ms.sourcegitcommit: a44c29bbc220ecb1ed80810cb1e7df0db8ea611a
+ms.openlocfilehash: 1345cfee8eb92b9b4e3cf883f19edddee859a1c3
+ms.sourcegitcommit: c9905e625ba14dc28ad23835f320e49631c51d0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
 Ce journal des modifications a trait à Power BI Report Server. Il répertorie les éléments nouveaux et les corrections de bogues introduits dans chaque version officielle publiée.
 
-Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés dans Power BI Report Server](whats-new.md).
+Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés dans Power BI Report Server](whats-new.md). 
+
+## <a name="march-2018"></a>Mars 2018
+- **Power BI Report Server**
+    - *Version 1.2.6660.39920 (Build 15.0.2.389), publiée le 28 mars 2018*
+        - Corrections de bogues
+            - Pour les Rapports Power BI (PBIX), le correctif pour Exporter les données ne fonctionne pas à partir de Power BI Visuals
+            - Pour les Rapports Power BI (PBIX), le correctif pour les filtres URL ne fonctionne pas
+            - Pour les Rapports paginés (RDL), le correctif pour les images qui ne s’affichent pas correctement dans IE11 après la mise à niveau vers Power BI Report Server version publiée en mars
+
+    - *Version 1.2.6648.38132 (Build 15.0.2.378), publiée le 19 mars 2018*
+        - Mises à jour de sécurité
+        - Améliorations de l’accessibilité
+        - Corrections de bogues
+            - Pour les rapports paginés (RDL), correctif pour la visibilité des paramètres dans un rapport lié qui est rétabli après la modification de ses propriétés
+            - Correctif pour le portail web avec l’authentification de formulaires personnalisés qui ignore le cookie d’expiration décalée
+            - Correctif pour l’exportation vers Word qui crée une hauteur de ligne inégale si le contenu de la ligne est vide
+            - Pour les rapports paginés (RDL), correctif pour la chaîne de connexion basée sur une expression qui est supprimée quand vous changez les informations d’identification pour la source de données
+            - Correctif pour la possibilité d’utiliser des indicateurs de performance clés avec des valeurs texte
+            - Pour les rapports paginés (RDL), correctif pour la possibilité d’affecter un nouveau jeu de données à un rapport paginé (RDL) existant
+            - Autres correctifs de stabilité et de facilité d’utilisation
+
+- **Power BI Desktop optimisé pour Power BI Report Server**
+    - Version : 2.56.5023.1043 (mars 2018), Date de publication : 19 mars 2018
+        - Contient les modifications nécessaires pour la connexion à Power BI Report Server (mars 2018)
 
 ## <a name="october-2017"></a>Octobre 2017
 

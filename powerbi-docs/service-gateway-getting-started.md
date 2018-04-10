@@ -1,15 +1,15 @@
 ---
 title: Prise en main de Power BI Gateways
-description: "Découvrez les principes de base des passerelles de données pour Power BI."
+description: Découvrez les principes de base des passerelles de données pour Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: e56af5ae1c59afc7d7aef01450bb1c778eb70b14
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: bf01bb7764db09d6afe24e520f2d185c191ef56c
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="getting-started-with-power-bi-gateways"></a>Prise en main de Power BI Gateways
 Bienvenue dans le guide **Prise en main de Power BI Gateways**. Cette courte procédure pas à pas vous permet de vous familiariser avec les fonctionnalités d’une passerelle, la manière dont elle fonctionne et la façon d’obtenir votre propre passerelle installée, configurée et opérationnelle.  
@@ -86,7 +86,7 @@ Il convient de noter quelques éléments à ce point de décision :
 * Vous ne pouvez pas installer les passerelles sur un contrôleur de domaine.
 * Vous pouvez installer jusqu’à deux passerelles de données locales sur le même ordinateur, une dans chaque mode (personnel et standard). 
 * Vous ne pouvez pas avoir plusieurs passerelles exécutées dans le même mode sur le même ordinateur.
-* Vous pouvez installer plusieurs passerelles de données locales sur différents ordinateurs, et les gérer toutes à partir de la même interface de gestion de passerelle Power BI (à l’exception du mode personnel - voir la puce suivante).
+* Vous pouvez installer plusieurs passerelles de données locales sur différents ordinateurs, et les gérer toutes à partir de la même interface de gestion de passerelle Power BI (à l’exception du mode personnel, comme expliqué au point suivant).
 * Vous ne pouvez avoir qu’une seule passerelle en mode personnel en cours d’exécution pour chaque utilisateur Power BI. Si vous installez une autre passerelle en mode personnel pour le même utilisateur, même sur un autre ordinateur, l’installation la plus récente remplace la précédente installation.
 
 Lorsque vous sélectionnez **Suivant** l’installation de la passerelle commence. Vous devez spécifier où l’installer et l’emplacement par défaut est généralement préférable.

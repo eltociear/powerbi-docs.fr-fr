@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2bdd29f664d49dd4628b2f27d0eddf1f5dad1cf7
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 0b2ff8d7b7367e29e62b373ca9cb1312f7ddd10f
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
 Dans Power BI Desktop, vous pouvez créer un élément visuel **Carte de formes** pour afficher des comparaisons relatives de régions sur une carte en appliquant différentes couleurs aux différentes régions. Contrairement à l’élément visuel **Carte**, l’élément visuel **Carte de formes** ne peut pas afficher d’emplacements géographiques précis de points de données sur une carte. Son principal objectif est en effet d’afficher des comparaisons relatives de régions sur une carte en affectant des couleurs différentes à ces dernières.
@@ -32,7 +32,7 @@ Les éléments visuels **Carte de formes** sont basés sur les cartes ESRI/TopoJ
 ## <a name="creating-shape-maps"></a>Créer des cartes de formes
 Vous pouvez tester le contrôle **Carte de formes** avec les cartes fournies avec cette version préliminaire. Vous pouvez également utiliser votre propre carte personnalisée tant qu’elle répond aux exigences décrites dans la section suivante intitulée **Utiliser des cartes personnalisées**.
 
-L’élément visuel **Carte de formes** est en version préliminaire et doit être activé dans Power BI Desktop. Pour activer l’élément visuel **Carte de formes**, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis cochez la case **Carte de formes**. Vous devez redémarrer Power BI Desktop après avoir effectué la sélection.
+L’élément visuel **Carte de formes** est en version préliminaire et doit être activé dans Power BI Desktop. Pour activer l’élément visuel **Carte de formes**, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis cochez la case **Visuel Carte de formes**. Vous devez redémarrer Power BI Desktop après avoir effectué la sélection.
 
 ![](media/desktop-shape-map/shape-map_1a.png)
 
@@ -46,7 +46,7 @@ Power BI Desktop crée une zone de dessin d’élément visuel **Carte de form
 
 Procédez comme suit pour créer un élément visuel **Carte de formes** :
 
-1. Dans le volet **Champs**, faites glisser un champ de données contenant les noms (ou abréviations) de région sur le compartiment **Emplacement** et un champ de mesure de données sur le compartiment **Valeurs** (vous ne voyez pas encore de carte).
+1. Dans le volet **Champs**, faites glisser un champ de données contenant les noms (ou abréviations) de région sur le compartiment **Emplacement** et un champ de mesure de données sur le compartiment **Saturation des couleurs** (vous ne voyez pas encore de carte).
    
    > [!NOTE]
 > Voir la section intitulée **Obtenir des données de carte** ci-dessous pour plus d’informations sur la façon d’obtenir rapidement des données de carte afin de tester l’élément visuel **Carte de formes**.
@@ -70,7 +70,7 @@ Procédez comme suit pour créer un élément visuel **Carte de formes** :
 ## <a name="use-custom-maps"></a>Utiliser des cartes personnalisées
 Vous pouvez utiliser des cartes personnalisées avec **Carte de formes** tant qu’elles sont au format **TopoJSON**. Si votre carte est dans un autre format, vous pouvez utiliser les outils en ligne tels que le [**Modélisateur de carte**](http://mapshaper.org/) pour convertir vos cartes *shapefiles* ou *GeoJSON* au format **TopoJSON**.
 
-Pour utiliser votre fichier de carte **TopoJSON**, ajoutez un élément visuel ShapeMap à votre rapport et ajoutez des données aux compartiments *Emplacement* et *Valeurs*. Ensuite, dans le volet **Visualisations** avec la section **Format** sélectionnée (icône en forme de pinceau, indiquée par (1) dans l’image suivante), développez la section **Forme** et sélectionnez **+ Ajouter une carte**.
+Pour utiliser votre fichier de carte **TopoJSON**, ajoutez un élément visuel ShapeMap à votre rapport et ajoutez des données aux compartiments *Emplacement* et *Saturation des couleurs*. Ensuite, dans le volet **Visualisations** avec la section **Format** sélectionnée (indiquée par (1) dans l’image suivante), développez la section **Forme** et sélectionnez **+ Ajouter une carte**.
 
 ![](media/desktop-shape-map/shape-map_6.png)
 
@@ -96,7 +96,7 @@ Pour obtenir rapidement des données dans un modèle afin de tester l’élémen
 
 ![](media/desktop-shape-map/shape-map_4.png)
 
-Vous pouvez ensuite coller la table dans Power BI Desktop. La ligne supérieure est automatiquement identifiée comme en-tête.
+Si vos données contiennent plusieurs colonnes, vous devrez utiliser un éditeur comme Excel pour coller les données, puis copiez chaque colonne de données séparément. Vous pouvez ensuite coller les données dans Power BI Desktop. La ligne supérieure est automatiquement identifiée comme en-tête.
 
 ![](media/desktop-shape-map/shape-map_5.png)
 
@@ -112,9 +112,9 @@ Vous pouvez entrer une nouvelle colonne tout simplement en tapant un nouveau nom
 ## <a name="preview-behavior-and-requirements"></a>Comportement et exigences de la préversion
 Cette version préliminaire de l’élément visuel **Carte de formes** est associée à un certain nombre de considérations et exigences :
 
-* L’élément visuel **Carte de formes** est en version préliminaire et doit être activé dans Power BI Desktop. Pour activer l’élément visuel **Carte de formes**, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis cochez la case **Carte de formes**.
-* Actuellement, le compartiment **Valeurs** doit également être défini pour que la classification **Légende** puisse fonctionner correctement.
-* L’interface utilisateur de la version finale de **Carte de formes** indiquera les codes cartographiques de la carte actuellement sélectionnée (la date de sortie de la version finale n’est pas encore fixée, et **Shape Map** est toujours en préversion). Dans cette préversion, vous pouvez référencer les codes cartographiques de région des tables que vous trouverez dans la section **Codes de région** de cet article.
+* L’élément visuel **Carte de formes** est en version préliminaire et doit être activé dans Power BI Desktop. Pour activer l’élément visuel **Carte de formes**, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis cochez la case **Visuel Carte de formes**.
+* Actuellement, le compartiment **Saturation des couleurs** doit également être défini pour que la classification **Légende** puisse fonctionner correctement.
+* L’interface utilisateur de la version commerciale finale de l’élément visuel **Carte de formes** indiquera les codes cartographiques de la carte actuellement sélectionnée (il n’existe aucune date définie pour la version finale, et **Carte de formes** est encore en préversion). Dans cette préversion, vous pouvez référencer les codes cartographiques de région des tables que vous trouverez dans la section **Codes de région** de cet article.
 * Le visuel **Carte de formes** pourra tracer au maximum 1 000 points de données.
 
 ## <a name="region-keys"></a>Codes de région

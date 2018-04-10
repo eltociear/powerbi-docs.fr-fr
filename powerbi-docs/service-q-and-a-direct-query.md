@@ -1,15 +1,15 @@
 ---
-title: "Utilisation de Questions et réponses avec des connexions actives"
-description: "Documentation sur l’utilisation de requêtes en langage naturel dans Questions et réponses Power BI avec des connexions actives vers des données Analysis Services et la passerelle de données locale."
+title: Utilisation de Questions et réponses avec des connexions actives
+description: Documentation sur l’utilisation de requêtes en langage naturel dans Questions et réponses Power BI avec des connexions actives vers des données Analysis Services et la passerelle de données locale.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
 backup: mihart
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 7c33e1d3719b30569996425ed247c1eac87b78f1
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: c6fa26d85d362af0d66276509f4e52ba718d338a
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="enable-qa-for-live-connections"></a>Activer Questions et réponses pour les connexions actives
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Qu’est-ce que la passerelle de données locale ?  Qu’est-ce qu’une connexion active ?
@@ -42,27 +42,27 @@ Pour plus d’informations, consultez :
 * Qu’est-ce que la [passerelle de données locale](service-gateway-onprem.md) ?
 * [Présentation de Q&R de Power BI](power-bi-q-and-a.md)
 
-## <a name="enable-qa"></a>Activer Questions et réponses
+## <a name="enable-qa"></a>Activer les Q&R
 Une fois que vous avez configuré la passerelle de données, connectez-vous à vos données à partir de Power BI.  Créez un tableau de bord à l’aide de vos données locales ou téléchargez un fichier .pbix qui utilise des données locales.  Vous pouvez également disposer déjà des données locales dans des tableaux de bord, des rapports et des jeux de données qui ont été partagés avec vous.
 
 1. En haut à droite de Power BI, sélectionnez l’icône de roue dentée ![icône d’engrenage](media/service-q-and-a-direct-query/power-bi-cog.png), puis choisissez **Paramètres**.
    
    ![menu Paramètres](media/service-q-and-a-direct-query/powerbi-settings.png)
-2. Sélectionnez **Jeux de données**, puis choisissez le jeu de données à activer pour Questions et réponses.
+2. Sélectionnez **Jeux de données**, puis choisissez le jeu de données à activer pour les Q&R.
    
    ![écran Jeux de données du menu Paramètres](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
-3. Développez **QR et Cortana**, activez la case à cocher pour **activer Questions et réponses pour ce jeu de données** et choisissez **appliquer**.
+3. Développez **Q&R et Cortana**, activez la case à cocher pour **activer les Q&R pour ce jeu de données** et choisissez **appliquer**.
    
     ![Zone Questions et réponses développée](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## <a name="what-data-is-cached-and-how-is-privacy-protected"></a>Quelles sont les données mises en cache et quelle est la politique de confidentialité ?
-Lorsque vous activez Questions et réponses pour vos données locales, une partie des données est mise en cache dans le service. Le but est d’assurer des performances de Questions et réponses raisonnables. Power BI exclut les valeurs dépassant 24 caractères de la mise en cache. Le cache est supprimé après quelques heures une fois Questions et réponses désactivé en décochant la case permettant **d’activer Questions et réponses pour ce jeu de données**, ou lorsque vous supprimez votre jeu de données.
+Lorsque vous activez les Q&R pour vos données locales, un sous-ensemble de données est mis en cache dans le service. Le but est d’assurer des performances de Q&R raisonnables. Power BI exclut les valeurs dépassant 24 caractères de la mise en cache. Le cache est supprimé après quelques heures une fois les Q&R désactivées en décochant la case permettant **d’activer les Q&R pour ce jeu de données**, ou lorsque vous supprimez votre jeu de données.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 La version préliminaire de cette fonctionnalité comprend plusieurs limitations :
 
 * Initialement, la fonctionnalité n’est disponible que pour les sources de données tabulaires SQL Server 2016 Analysis Services. La fonctionnalité est optimisée pour travailler avec des données tabulaires. Certaines fonctionnalités sont disponibles pour les sources de données multidimensionnelles, mais l’expérience Questions et réponses complète n’est pas encore prise en charge pour ce type de données. D’autres sources de données prises en charge par la passerelle de données locale seront déployées au fil du temps.
-* La prise en charge complète de la sécurité au niveau des lignes définie dans SQL Server Analysis Services n’est pas disponible initialement dans la préversion publique. Lorsque vous posez des questions dans Questions et réponses, la « saisie semi-automatique » des questions peut afficher de valeurs de chaînes auxquelles un utilisateur n’a pas accès. Toutefois, la sécurité au niveau des lignes définie dans le modèle est respectée pour les rapports et graphiques visuels. Aucune donnée numérique sous-jacente ne peut donc être exposée. Des options permettant de contrôler ce comportement seront disponibles dans des prochaines mises à jour.
+* La prise en charge complète de la sécurité au niveau des lignes définie dans SQL Server Analysis Services n’est pas disponible initialement dans la préversion publique. Lorsque vous posez des questions dans les Q&R, la « saisie semi-automatique » des questions peut afficher de valeurs de chaînes auxquelles un utilisateur n’a pas accès. Toutefois, la sécurité au niveau des lignes définie dans le modèle est respectée pour les rapports et graphiques visuels. Aucune donnée numérique sous-jacente ne peut donc être exposée. Des options permettant de contrôler ce comportement seront disponibles dans des prochaines mises à jour.
 * Les connexions actives sont uniquement prises en charge avec la passerelle de données locale. Par conséquent, elles ne peuvent pas être utilisées avec la passerelle personnelle.
 
 ## <a name="next-steps"></a>Étapes suivantes

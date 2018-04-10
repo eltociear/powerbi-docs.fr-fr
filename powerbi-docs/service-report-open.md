@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: c5177f4ccce8e8e274944cdcb539ca65a8f87ca8
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: 17921d1fe28a1b4c0640748123efe4b70982b18d
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="open-a-report-in-power-bi-service-apppowerbicom"></a>Ouvrir un rapport dans le service Power BI (app.powerbi.com)
 Les rapports sont disponibles dans le service Power BI, Power BI Desktop, Power BI Mobile et Power BI Embedded. Cet article s’applique à l’ouverture de rapports dans le ***service Power BI***.
@@ -78,7 +78,7 @@ Un autre moyen d’ouvrir un rapport est de passer par un jeu de données. Lorsq
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Autres moyens pour ouvrir un rapport
 Une fois que vous serez familiarisé avec la navigation dans le service Power BI, vous pourrez déterminer le flux de travail qui vous convient le mieux. Voici d’autres façons d’accéder aux rapports :
-- À partir du volet de navigation gauche à l’aide de **Favoris**, **Récents**, **Applications* et **Partagés avec moi**. 
+- À partir du volet de navigation gauche à l’aide de **Favoris**, **Récents**, **Applications** et **Partagés avec moi**. 
 - À l’aide de [Afficher les éléments associés](service-related-content.md)
 - Dans un e-mail quand un utilisateur [partage avec vous](service-share-reports.md) ou que vous [définissez une alerte](service-set-data-alerts.md).    
 - À partir du [Centre de notifications](service-notification-center.md)    

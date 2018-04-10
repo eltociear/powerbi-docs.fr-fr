@@ -1,15 +1,15 @@
 ---
-title: "Passerelle de données locale (mode personnel)"
-description: "Passerelle de données pour Power BI que les utilisateurs peuvent utiliser pour se connecter aux données locales"
+title: Passerelle de données locale (mode personnel)
+description: Passerelle de données pour Power BI que les utilisateurs peuvent utiliser pour se connecter aux données locales
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/14/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2bd3604a3f16c6977c52c1b3484ac024445c65bb
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 777e5f27954890fe842096c0f2633f6803ebf319
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Passerelle de données locale (mode personnel)
 Vous pouvez utiliser des sources de données locales et créer des rapports et des tableaux de bord Power BI à l’aide d’une passerelle. Une **passerelle** est un logiciel qui facilite l’accès aux données stockées sur un réseau local privé, puis vous permet d’utiliser ces données dans les services en ligne comme le **service Power BI**. La **passerelle de données locale (mode personnel)** est une mise à jour récemment publiée de la passerelle Power BI qui permet aux utilisateurs d’installer une passerelle sur leur propre ordinateur et d’accéder aux données locales.
@@ -84,12 +84,12 @@ Pour déterminer la version de la passerelle personnelle actuellement installée
 Vous pouvez ouvrir **Ajout/Suppression de programmes** et voir si **Passerelle Power BI - Personal** s’affiche dans la liste. Si c’est le cas, vous disposez de la version précédente de la passerelle personnelle.
 
 ## <a name="using-fast-combine-with-the-personal-gateway"></a>Utilisation de Fast Combine avec la passerelle personnelle
-Si vous utilisiez **Fast Combine** avec la passerelle précédente, vous devez procéder comme suit pour réactiver **Fast Combine** afin que ce composant fonctionne avec la **passerelle de données locale (mode personnel)** :
+Si vous utilisiez **Fast Combine** avec la passerelle précédente, vous devez procéder comme suit pour réactiver **Fast Combine** pour que ce composant fonctionne avec la **passerelle de données locale (mode personnel)** :
 
 1. À l’aide de l’Explorateur de fichiers, ouvrez le fichier suivant :
    
    ```
-   %localappdata%\Microsoft\on-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+   %localappdata%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
    ```
 2. En bas du fichier, ajoutez le texte suivant :
    

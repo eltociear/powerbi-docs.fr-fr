@@ -1,28 +1,28 @@
 ---
-title: "Passerelle de données locale"
-description: "Voici une vue d’ensemble de la passerelle de données locale pour Power BI. Vous pouvez utiliser cette passerelle pour travailler avec les sources de données DirectQuery. Vous pouvez également utiliser cette passerelle pour actualiser les jeux de données cloud avec les données locales."
+title: Passerelle de données locale
+description: Voici une vue d’ensemble de la passerelle de données locale pour Power BI. Vous pouvez utiliser cette passerelle pour travailler avec les sources de données DirectQuery. Vous pouvez également utiliser cette passerelle pour actualiser les jeux de données cloud avec les données locales.
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 02/22/2018
-ms.author: davidi
+ms.date: 03/26/2018
+ms.author: maghan
 LocalizationGroup: Gateways
-ms.openlocfilehash: c9025194ebe8ce6b1829aacd9d74bff5d9c55e3c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1c0bd455d8b2dd34cc7d9ef20b0e75c5457034d2
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 La passerelle de données locale agit comme un pont, assurant un transfert de données rapide et sûr entre les données locales (les données qui ne sont pas dans le cloud) et les services Power BI, Microsoft Flow, Logic Apps et PowerApps.
@@ -90,6 +90,11 @@ Lorsque vous ajoutez une source de données à la passerelle, vous devez fournir
 
 <!-- How the gateway works -->
 [!INCLUDE [gateway-onprem-how-it-works-include](./includes/gateway-onprem-how-it-works-include.md)]
+
+## <a name="limitations-and-considerations"></a>Considérations et limitations
+* [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
+) n’est pas pris en charge actuellement
+* [L’accès en ligne](https://products.office.com/en-us/access) n’est pas pris en charge actuellement
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Si vous rencontrez des difficultés lors de l’installation et de la configuration d’une passerelle, consultez [Résolution des problèmes liés à la passerelle de données locale](service-gateway-onprem-tshoot.md). Si vous pensez que vous rencontrez un problème avec votre pare-feu, consultez la section [pare-feu ou proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) dans l’article de résolution des problèmes.

@@ -1,15 +1,15 @@
 ---
-title: "Didacticiel : Analyse de données de ventes à partir d’Excel et d’un flux OData dans Power BI Desktop"
-description: "Didacticiel : Analyse de données de ventes à partir d’Excel et d’un flux OData"
+title: 'Didacticiel : Analyse de données de ventes à partir d’Excel et d’un flux OData dans Power BI Desktop'
+description: 'Didacticiel : Analyse de données de ventes à partir d’Excel et d’un flux OData'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 4cab3ed114d03d42c6acf1bf62f70e7d920e16b2
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: aad93a6c636fb0d75ad89f9e3d9eb70ec203cc88
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="tutorial-analyzing-sales-data-from-excel-and-an-odata-feed"></a>Didacticiel : Analyse de données de ventes à partir d’Excel et d’un flux OData
 **Power BI Desktop** vous permet de vous connecter à toutes sortes de sources de données, puis de les combiner et de les mettre en forme pour faciliter la création d’analyses et de visualisations de données attrayantes et intéressantes. Dans ce didacticiel, vous allez apprendre à combiner des données provenant de deux sources de données. 
@@ -133,7 +133,7 @@ Calculer le total de ligne de chaque ligne **Order\_Details** :
 1. Sous l’onglet **Ajouter une colonne** du ruban, cliquez sur **Ajouter** **une colonne personnalisée**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_4.png)
-2. Dans la boîte de dialogue **Ajouter une colonne personnalisée**, dans la zone de texte **Formule de colonne personnalisée**, entrez **[Order\_Details.UnitPrice] \* [Order\_Details.Quantity]**.
+2. Dans la boîte de dialogue **Ajouter une colonne personnalisée**, dans la zone de texte **Formule de colonne personnalisée**, entrez **[Order\_Details.UnitPrice]** \* **[Order\_Details.Quantity]**
 3. Dans la zone de texte **Nouveau nom de colonne**, entrez **LineTotal**.
    
    ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/8.png)

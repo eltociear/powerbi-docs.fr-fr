@@ -1,15 +1,15 @@
 ---
-title: "Gérer votre source de données SAP HANA"
-description: "Gestion de la passerelle de données locale et des sources de données associées. Cet article est propre à SAP HANA."
+title: Gérer votre source de données SAP HANA
+description: Gestion de la passerelle de données locale et des sources de données associées. Cet article est propre à SAP HANA.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8f9ec69c2a131a8de8f53385170bbddc59211f7b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 43bc0c22918e041f354c29ae9cc3ee4806b8da1a
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="manage-your-sap-hana-data-source"></a>Gérer votre source de données SAP HANA
 Une fois que vous avez installé la passerelle de données locale, vous devez ajouter des sources de données qui peuvent être utilisées avec la passerelle. Cet article décrit comment utiliser les passerelles et les sources de données. Vous pouvez utiliser la source de données SAP HANA pour l’actualisation planifiée ou DirectQuery.

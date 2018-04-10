@@ -1,30 +1,30 @@
 ---
-title: "Résolution des problèmes de passerelle de données locale"
-description: "Cet article présente des méthodes permettant de résoudre les problèmes rencontrés avec la passerelle de données locale. Il fournit des solutions de contournement aux problèmes connus, ainsi que des outils d’aide."
+title: Dépannage de la passerelle de données locale
+description: Cet article présente des méthodes permettant de résoudre les problèmes rencontrés avec la passerelle de données locale. Il fournit des solutions de contournement aux problèmes connus, ainsi que des outils d’aide.
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/21/2017
-ms.author: davidi
+ms.date: 03/23/2018
+ms.author: maghan
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1651f18194cd47582376b52bb6359db10a330c27
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9742fd0d48f4a77b5019aa7547fa511404c6f63e
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="troubleshooting-the-on-premises-data-gateway"></a>Résolution des problèmes de passerelle de données locale
+# <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
 Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de la **passerelle de données locale**.
 
 <!-- Shared Community & support links Include -->
@@ -78,14 +78,14 @@ Pour corriger cela, procédez comme suit :
 1. Désinstallez la passerelle.
 2. Supprimez le dossier suivant.
    
-        c:\Program Files\on-premises data gateway
+        c:\Program Files\On-premises data gateway
 3. Réinstallez la passerelle.
 4. Vous pouvez éventuellement appliquer la clé de récupération pour restaurer une passerelle existante.
 
 ### <a name="support-for-tls-1112"></a>Prise en charge de TLS 1.1/1.2
 À partir de la mise à jour d’août 2017, la passerelle de données locale utilise, par défaut, le protocole TLS 1.1 ou 1.2 pour communiquer avec le **service Power BI**. Les versions précédentes de la passerelle de données locale utilisent le protocole TLS 1.0 par défaut. Le 1er novembre 2017, le protocole TLS 1.0 ne sera plus pris en charge. Vous devez mettre à niveau vos installations de passerelle de données locale vers la version d’août 2017 ou une version ultérieure avant cette date, afin que vos passerelles continuent à fonctionner.
 
-Il est important de noter que le protocole TLS 1.0 reste pris en charge par la passerelle de données locale jusqu’au 31 octobre, et est utilisé par celle-ci en tant que mécanisme de secours. Pour vous assurer que tout le trafic de passerelle utilise les protocoles TLS 1.1 ou 1.2 (et pour empêcher l’utilisation du protocole TLS 1.0 sur votre passerelle), vous devez ajouter ou modifier les clés de Registre suivantes sur l’ordinateur exécutant le service de passerelle :
+Il est important de noter que le protocole TLS 1.0 restera pris en charge par la passerelle de données locale jusqu’au 31 octobre, et sera utilisé par celle-ci en tant que mécanisme de secours. Pour vous assurer que tout le trafic de passerelle utilise les protocoles TLS 1.1 ou 1.2 (et pour empêcher l’utilisation du protocole TLS 1.0 sur votre passerelle), vous devez ajouter ou modifier les clés de Registre suivantes sur l’ordinateur exécutant le service de passerelle :
 
         [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
         [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
@@ -314,11 +314,13 @@ from [dbo].[V_CustomerOrders] as [$Table])
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
-### <a name="microsoftpowerbidatamovementpipelinegatewaycoredllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
-Dans le fichier *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config*, modifiez la valeur `TraceVerbosity` de `4` en `5`. Ce fichier se trouve, par défaut, dans *C:\Program Files\On-premises data gateway*. La modification de ce paramètre entraîne la journalisation d’entrées détaillées dans le journal de la passerelle. Celles-ci incluent les entrées indiquant une durée.
+### <a name="microsoftpowerbidatamovementpipelinediagnosticsdllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
+Dans le fichier *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config*, modifiez la valeur `TracingVerbosity` de `4` en `5`. Ce fichier se trouve, par défaut, dans *C:\Program Files\On-premises data gateway*. La modification de ce paramètre entraîne la journalisation d’entrées détaillées dans le journal de la passerelle. Celles-ci incluent les entrées indiquant une durée. Vous pouvez également activer des entrées détaillées en activant le bouton « Journalisation supplémentaire » dans l’application de passerelle locale.
+
+   ![journalisation supplémentaire](media/service-gateway-onprem-tshoot/additional-logging.png)
 
 > [!IMPORTANT]
-> L’activation de TraceVerbosity sur `5` peut augmenter considérablement la taille du journal en fonction de l’utilisation de la passerelle. Lorsque vous avez terminé d’examiner les journaux, vous pouvez définir TraceVerbosity sur `4`. Il est déconseillé de laisser ce paramètre activé à long terme.
+> L’activation de TracingVerbosity sur `5` peut augmenter considérablement la taille du journal en fonction de l’utilisation de la passerelle. Lorsque vous avez terminé d’examiner les journaux, vous pouvez définir TraceVerbosity sur `4`. Il est déconseillé de laisser ce paramètre activé à long terme.
 > 
 > 
 
@@ -352,6 +354,72 @@ Pour déterminer le temps nécessaire pour interroger la source de données, vou
    > 
    > 
 
+## <a name="kerberos"></a>Kerberos
+
+Si le serveur de base de données sous-jacent et la passerelle de données locale ne sont pas configurés correctement pour la [Délégation Kerberos contrainte](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), activez la [journalisation détaillée](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) sur la passerelle et recherchez les erreurs/traces dans les fichiers journaux de la passerelle comme point de départ pour la résolution du problème.
+
+### <a name="impersonationlevel"></a>ImpersonationLevel
+
+ImpersonationLevel est lié à la configuration SPN ou au paramètre de stratégie locale.
+
+```
+[DataMovement.PipeLine.GatewayDataAccess] About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Identification)
+```
+
+**Solution**
+
+Suivez ces étapes pour résoudre le problème :
+1. Configurer un SPN pour la passerelle locale
+2. Configurer la délégation contrainte dans votre Active Directory (AD)
+
+### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException : Impossible de créer l’identité Windows pour l’ID de l’utilisateur
+
+FailedToImpersonateUserException se produit si vous n’êtes pas en mesure d’emprunter l’identité d’un autre utilisateur. Cela peut également se produire si le compte dont vous tentez d’emprunter l’identité provient d’un autre domaine que celui du domaine de service de la passerelle (il s’agit d’une limitation).
+
+**Solution**
+* Vérifiez que la configuration est correcte conformément à la procédure de la section ImpersonationLevel ci-dessus
+* Vérifiez que l’ID utilisateur que vous tentez d’emprunter est un compte Active Directory valide
+
+### <a name="general-error-1033-error-while-parsing-protocol"></a>Erreur générale ; erreur 1033 lors de l’analyse de protocole
+
+Vous obtiendrez l’erreur 1033 lorsque votre ID externe qui est configuré dans SAP HANA ne correspond pas à la connexion si l’identité de l’utilisateur est empruntée à l’aide de l’UPN (alias@domain.com). Dans les journaux, « UPN d’origine 'alias@domain.com' est remplacé par un nouvel UPN 'alias@domain.com' en haut des journaux d’erreurs, comme indiqué ci-dessous. »
+
+```
+[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
+```
+
+**Solution**
+* SAP HANA oblige l’utilisateur impersonné à utiliser l’attribut sAMAccountName dans Active Directory (alias de l’utilisateur). Si ce n’est pas correct, l’erreur 1033 s’affiche.
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+
+* Dans les journaux, vous devez voir sAMAccountName (alias) et pas l’UPN, qui est l’alias suivi du domaine (alias@doimain.com)
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+
+```
+      <setting name="ADUserNameReplacementProperty" serializeAs="String">
+        <value>sAMAccount</value>
+      </setting>
+      <setting name="ADServerPath" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="CustomASDataSource" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="ADUserNameLookupProperty" serializeAs="String">
+        <value>AADEmail</value>
+```
+
+### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Majeur : « Échec divers [851968] », mineur : « Aucune information d’identification disponible dans le package de sécurité
+
+Vous obtiendrez le message d’erreur -Échec connexion 10709 si votre délégation n’est pas configurée correctement dans Active Directory.
+
+**Solution**
+* Assurez-vous que le serveur SAP Hana est dans l’onglet Délégation dans AD pour le compte de service de la passerelle
+
+   ![onglet Délégation](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+
 <!-- Shared Troubleshooting tools Include -->
 [!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
 
@@ -378,4 +446,3 @@ Pour plus d’informations sur la résolution des problèmes d’actualisation, 
 [Gérer votre source de données - SQL Server](service-gateway-enterprise-manage-sql.md)  
 [Gérer votre source de données - Importation/actualisation planifiée](service-gateway-enterprise-manage-scheduled-refresh.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

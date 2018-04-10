@@ -1,15 +1,15 @@
 ---
-title: "Se connecter à Project Online avec Power BI"
+title: Se connecter à Project Online avec Power BI
 description: Project Online pour Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6272b3f175d7da851e5d8086c574a91f0f00c933
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1d0cb4531dca1f200adbb21514fb49df8c872ecc
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="connect-to-project-online-with-power-bi"></a>Se connecter à Project Online avec Power BI
 Microsoft Project Online est une solution en ligne flexible pour la gestion de portefeuille de projets (PPM) et les tâches quotidiennes. Project Online permet aux organisations de prendre en main et de hiérarchiser les investissements de portefeuille de projet, ainsi que de produire la valeur commerciale souhaitée. Le pack de contenu Project Online pour Power BI vous permet d’explorer les données de votre projet avec des métriques prêtes à l’emploi, telles que la conformité du statut du portefeuille et des projets.
@@ -45,6 +45,9 @@ Connectez-vous au [pack de contenu Project Online](https://app.powerbi.com/getda
 5. Pour la méthode d’authentification, sélectionnez **oAuth2** \> **Se connecter**. Quand vous y êtes invité, entrez vos informations d’identification Project Online et suivez le processus d’authentification.
    
     ![](media/service-connect-to-project-online/creds.png)
+    
+Notez que vous devez disposer de la Visionneuse de portefeuilles, du Gestionnaire de portefeuilles ou d’autorisations Administrateur pour l’application Project Web App à laquelle vous vous connectez.
+
 6. Une notification indiquant que vos données sont en cours de chargement s’affiche. Selon la taille de votre compte, cela peut prendre un certain temps. Une fois les données importées dans Power BI, vous verrez un nouveau tableau de bord, un nouveau rapport et un nouveau jeu de données dans le volet de navigation gauche. Il s’agit du tableau de bord par défaut créé par Power BI pour afficher vos données. Vous pouvez modifier ce tableau de bord pour afficher vos données comme vous le souhaitez.
    
    ![](media/service-connect-to-project-online/dashboard2.png)

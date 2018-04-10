@@ -1,15 +1,15 @@
 ---
-title: "Utilisation de pages d’info-bulle de rapport dans Power BI"
-description: "Les pages d’info-bulle dans Power BI Desktop vous permettent de créer des info-bulles attrayantes qui s’affichent quand vous pointez sur les visuels dans vos rapports"
+title: Utilisation de pages d’info-bulle de rapport dans Power BI
+description: Les pages d’info-bulle dans Power BI Desktop vous permettent de créer des info-bulles attrayantes qui s’affichent quand vous pointez sur les visuels dans vos rapports
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2905dbc51e684ec39ac36a76c7024db0fe15cc18
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 87733126c4772b88c4e58cf60f9640668faf9cc7
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop (préversion)
 Vous pouvez créer des **info-bulles de rapport** attrayantes qui s’affichent quand vous pointez sur les visuels, basées sur les pages de rapport que vous créez dans **Power BI Desktop**. Quand vous créez une page de rapport à utiliser comme info-bulle, vos info-bulles personnalisées peuvent inclure des visuels, des images et toute autre collection d’éléments que vous créez dans la page de rapport. 
@@ -34,7 +34,7 @@ Vous pouvez créer autant de pages d’info-bulle que vous le souhaitez. Vous po
 Les infos-bulle de rapport permettent d’effectuer toutes sortes de choses intéressantes. Voyons maintenant comment créer et configurer des info-bulles.
 
 ### <a name="enable-the-tooltips-preview"></a>Activer la préversion des info-bulles 
-Étant donné que les info-bulles de rapport sont actuellement disponibles en préversion, vous devez les activer avant de pouvoir en créer. Pour activer la préversion des info-bulles de rapport, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en préversion** dans Power BI Desktop, puis cochez la case à côté de **Signets**. 
+Étant donné que les info-bulles de rapport sont actuellement disponibles en préversion, vous devez les activer avant de pouvoir en créer. Pour activer la préversion des info-bulles de rapport, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en préversion** dans Power BI Desktop, puis cochez la case à côté de **Info-bulles de page de rapport**. 
 
 ![Activer la fonctionnalité des info-bulles de rapport en préversion](media/desktop-tooltips/desktop-tooltips_01.png)
 

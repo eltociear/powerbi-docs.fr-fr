@@ -1,15 +1,15 @@
 ---
-title: "Clusters à haute disponibilité pour la passerelle de données locale"
-description: "Vous pouvez créer des clusters de passerelles de données locales pour fournir une haute disponibilité à votre entreprise."
+title: Clusters à haute disponibilité pour la passerelle de données locale
+description: Vous pouvez créer des clusters de passerelles de données locales pour fournir une haute disponibilité à votre entreprise.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 717451afc35614e9c356e5748f39f0302fa6244e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9ad1d4288184368dbb294bfafa69fe005780b322
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Clusters à haute disponibilité pour la passerelle de données locale
 Vous pouvez créer des **clusters à haute disponibilité** d’installations de **passerelle de données locale**, pour vous assurer que votre organisation peut accéder aux ressources de données locales utilisées dans les tableaux de bord et rapports Power BI. Ces clusters permettent aux administrateurs de passerelles de regrouper les passerelles afin d’éviter des points de défaillance uniques lors de l’accès aux ressources de données locales. Cet article décrit les étapes à suivre pour créer un cluster à haute disponibilité de passerelles de données locales et partage les meilleures pratiques de configuration. Les clusters de passerelles à haute disponibilité nécessitent d’appliquer la mise à jour de novembre 2017 ( ou version ultérieure) à la passerelle de données locale.

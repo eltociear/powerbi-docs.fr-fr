@@ -1,28 +1,28 @@
 ---
-title: "Publication sur le web à partir de Power BI"
-description: "Avec la fonctionnalité Publier sur le web de Power BI, vous pouvez facilement incorporer des visualisations Power BI interactives en ligne, par exemple dans des billets de blog ou des sites web, par le biais d’e-mails ou de réseaux sociaux sur l’appareil de votre choix."
+title: Publication sur le web à partir de Power BI
+description: Avec la fonctionnalité Publier sur le web de Power BI, vous pouvez facilement incorporer des visualisations Power BI interactives en ligne, par exemple dans des billets de blog ou des sites web, par le biais d’e-mails ou de réseaux sociaux sur l’appareil de votre choix.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 03/28/2018
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 089cd84f493343822293cb6e74330d26e2a8bcd6
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 31e40efee8c4d67ec524212996ac6d7a8caf1852
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -133,13 +133,16 @@ Les éléments visuels personnalisés sont pris en charge par la fonctionnalité
 
 ## <a name="limitations"></a>Limites
 
-La fonctionnalité **Publier sur le web** est prise en charge pour la majeure partie des sources de données et rapports du service Power BI. Toutefois, les éléments suivants ne sont ni pris en charge ni disponibles avec la fonctionnalité Publier sur le web pour le moment :
+La fonctionnalité **Publier sur le web** est prise en charge pour la majeure partie des sources de données et rapports du service Power BI. Toutefois, les éléments suivants **ne sont ni pris en charge ni disponibles** avec la fonctionnalité Publier sur le web pour le moment :
 
 1. Rapports qui utilisent la sécurité au niveau des lignes
-2. Rapports qui utilisent une source de données de connexion active, notamment une source de données tabulaire Analysis Services hébergée localement, une source de données multidimensionnelle Analysis Services, Azure Analysis Services et le service Power BI.
+2. Rapports qui utilisent une source de données de connexion active, notamment une source de données tabulaire Analysis Services hébergée localement, une source de données multidimensionnelle Analysis Services et Azure Analysis Services.
 3. Rapports partagés directement ou via un pack de contenu d’organisation
 4. Rapports d’un groupe dans lequel vous n’êtes pas un membre doté d’autorisations de modification
 5. Les éléments visuels R ne sont pas actuellement pris en charge dans les rapports Publier sur le web.
+6. Exportation de données à partir d’éléments visuels dans un rapport qui a été publié sur le web
+7. Éléments visuels ArcGIS Maps for Power BI
+8. [Informations confidentielles ou propriétaires sécurisées](#publish-to-web-from-power-bi)
 
 ## <a name="tenant-setting"></a>Paramètres de locataire
 
@@ -177,7 +180,7 @@ Vous devez être un utilisateur de Microsoft Power BI pour utiliser la fonctionn
 
 ## <a name="how-it-works-technical-details"></a>Fonctionnement (détails techniques)
 
-Quand vous créez un code incorporé à l’aide de la fonctionnalité **Publier sur le web**, vous permettez aux utilisateurs Internet de voir le rapport. Comme votre rapport est disponible publiquement, vous pouvez vous attendre à ce que des lecteurs le partagent facilement au moyen des réseaux sociaux. Quand les utilisateurs consultent le rapport, soit en ouvrant l’URL publique directe, soit en le consultant incorporé dans une page web ou un blog, Power BI met en cache la définition du rapport et les résultats des requêtes requises pour l’afficher. Cette approche garantit que le rapport est consultable par des milliers d’utilisateurs simultanés sans aucun impact sur les performances.  
+Quand vous créez un code incorporé à l’aide de la fonctionnalité **Publier sur le web**, vous permettez aux utilisateurs Internet de voir le rapport. Comme votre rapport est disponible publiquement, vous pouvez vous attendre à ce que des lecteurs le partagent facilement au moyen des réseaux sociaux. Quand les utilisateurs consultent le rapport, soit en ouvrant l’URL publique directe, soit en le consultant incorporé dans une page web ou un blog, Power BI met en cache la définition du rapport et les résultats des requêtes requises pour l’afficher. Cette approche garantit que le rapport est consultable par des milliers d’utilisateurs simultanés sans aucun impact sur les performances.
 
 Le cache est un cache à long terme, donc si vous mettez à jour la définition du rapport (par exemple, si vous changez son mode d’affichage) ou actualisez les données du rapport, vous devez attendre environ une heure avant que les modifications ne soient répercutées dans la version du rapport consultée par vos utilisateurs. Il est donc recommandé d’anticiper votre travail et de créer le code incorporé **Publier sur le web** uniquement quand vous êtes satisfait des paramètres.
 

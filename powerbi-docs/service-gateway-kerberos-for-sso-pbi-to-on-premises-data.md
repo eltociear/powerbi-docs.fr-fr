@@ -1,15 +1,15 @@
 ---
-title: "Utiliser Kerberos sur la passerelle locale pour l’authentification unique (SSO) de Power BI à des sources de données locales"
-description: "Configurer votre passerelle avec Kerberos pour permettre l’authentification unique de Power BI à des sources de données locales"
+title: Utiliser Kerberos sur la passerelle locale pour l’authentification unique (SSO) de Power BI à des sources de données locales
+description: Configurer votre passerelle avec Kerberos pour permettre l’authentification unique de Power BI à des sources de données locales
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 03/09/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 834800b26e8dd3738f274a73aa4ff9b36402a3d9
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: f60709e45e844ff7ab1a9c6bf3cb669c567dfcc8
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
-Vous pouvez obtenir une connectivité avec authentification unique transparente, permettant la mise à jour de rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec Kerberos. La passerelle de données locale facilite l’authentification unique (SSO) à l’aide de DirectQuery qu’elle utilise pour se connecter à des sources de données locales.
+Vous pouvez obtenir une connectivité avec authentification unique transparente, permettant la mise à jour de rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec Kerberos. La passerelle de données locale facilite l’authentification unique (SSO) à l’aide de la requête DirectQuery utilisée pour se connecter à des sources de données locales.
 
 Les sources de données SQL Server, SAP HANA et Teradata, toutes basées sur une [délégation Kerberos contrainte](https://technet.microsoft.com/library/jj553400.aspx) sont actuellement prises en charge.
 
@@ -94,7 +94,7 @@ Le résultat est qu’en raison de la configuration insuffisante de Kerberos, la
 Plusieurs éléments doivent être configurés pour qu’une délégation Kerberos contrainte fonctionne correctement, dont les *noms de principal du service* (SPN) et les paramètres de délégation sur les comptes de service.
 
 ### <a name="prerequisite-1-install--configure-the-on-premises-data-gateway"></a>Condition préalable 1 : installer et configurer la passerelle de données locale
-Cette version de la passerelle de données locale prend en charge une mise à niveau sur place, ainsi qu’une prise de contrôle des paramètres de passerelles existantes.
+Cette version de la passerelle de données locale prend en charge une mise à niveau locale, ainsi qu’une prise de contrôle des paramètres de passerelles existantes.
 
 ### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>Condition préalable 2 : exécuter le service Windows de passerelle en tant que compte de domaine
 Dans une installation standard, la passerelle s’exécute en tant que compte de service local de machine (en particulier, *NT Service\PBIEgwService*) comme illustré dans l’image suivante :
@@ -103,10 +103,10 @@ Dans une installation standard, la passerelle s’exécute en tant que compte de
 
 Pour activer une **délégation Kerberos contrainte**, la passerelle doit opérer en tant que compte de domaine, sauf si votre AAD est déjà synchronisé avec votre Active Directory local (à l’aide de AAD DirSync/Connect). Pour que cette modification compte fonctionne correctement, vous avez deux options :
 
-* Si vous avez démarré avec une version précédente de la passerelle de données locale, suivez précisément dans l’ordre les 5 étapes (y compris l’exécution de l’outil de configuration de passerelle à l’étape 3) décrites dans l’article suivant :
+* Si vous avez démarré avec une version précédente de la passerelle de données locale, suivez précisément dans l’ordre les cinq étapes (y compris l’exécution du configurateur de passerelle à l’étape 3) décrites dans l’article suivant :
   
   * [Remplacement du compte de service de passerelle par un utilisateur de domaine](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
-  * Si vous déjà installé la préversion de la passerelle de données locale, il existe une nouvelle approche guidée par interface utilisateur pour changer de compte de service directement à partir de l’outil de configuration de la passerelle. Voir la section **Basculement de la passerelle vers un compte de domaine** vers la fin de cet article.
+  * Si vous déjà installé la préversion de la passerelle de données locale, il existe une nouvelle approche guidée par interface utilisateur pour changer de compte de service directement à partir du configurateur de la passerelle. Voir la section **Basculement de la passerelle vers un compte de domaine** vers la fin de cet article.
 
 > [!NOTE]
 > Si AAD DirSync/Connect est configuré et que des comptes d’utilisateurs sont synchronisés, le service de passerelle n’a pas besoin d’effectuer de recherches Active Directory locales lors de l’exécution, et vous pouvez utiliser le SID du service local (au lieu d’exiger un compte de domaine) pour le service de passerelle. Les étapes de configuration de délégation Kerberos contrainte décrites dans cet article sont les mêmes que celle de cette configuration (elles sont simplement appliquées sur la base du SID de service, au lieu du compte de domaine).
@@ -208,7 +208,7 @@ Plus haut dans cet article, nous avons abordé le basculement de la passerelle �
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_11.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, consultez les ressources suivantes :
+Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, voir les ressources suivantes :
 
 * [Passerelle de données locale](service-gateway-onprem.md)
 * [DirectQuery dans Power BI](desktop-directquery-about.md)

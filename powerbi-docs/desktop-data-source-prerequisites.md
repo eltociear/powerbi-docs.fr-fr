@@ -1,15 +1,15 @@
 ---
-title: "Conditions préalables pour les sources de données Power BI"
-description: "Conditions préalables de source de données Power BI"
+title: Conditions préalables pour les sources de données Power BI
+description: Conditions préalables de source de données Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,22 +18,22 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 274c94c7cdb2586e0c03af77de7f937700b6814e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 282526e18777e623725859adc84475525dcf25ba
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="power-bi-data-source-prerequisites"></a>Conditions préalables pour les sources de données Power BI
 Pour chaque fournisseur de données, Power BI prend en charge une version de fournisseur spécifique sur les objets. Pour plus d’informations sur les sources de données accessibles à Power BI, consultez [Sources de données](desktop-data-sources.md). Le tableau suivant décrit ces conditions.
 
 | Sources de données | Fournisseur | Version minimale du fournisseur | Version minimale de la source de données | Objets de source de données pris en charge | Lien de téléchargement |
 | --- | --- | --- | --- | --- | --- |
-| SQL Server |ADO.net (intégré à .Net Framework) |.Net Framework 3.5 (uniquement) |SQL Server 2005+ |Tables/vues, fonctions scalaires, fonctions de table |Inclus dans .NET Framework 3.5 ou version ultérieure |
+| SQL Server |ADO.net (intégré à .Net Framework) |.NET Framework 3.5 (uniquement) |SQL Server 2005+ |Tables/vues, fonctions scalaires, fonctions de table |Inclus dans .NET Framework 3.5 ou version ultérieure |
 | Access |Moteur de base de données Microsoft Access (ACE) |ACE 2010 SP1 |Pas de restriction |Tables/vues |[Lien de téléchargement](http://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Excel (fichiers .xls uniquement) (voir remarque 1) |Moteur de base de données Microsoft Access (ACE) |ACE 2010 SP1 |Pas de restriction |Tables, feuilles |[Lien de téléchargement](http://go.microsoft.com/fwlink/?linkid=285987&clcid=0x409) |
 | Oracle (voir remarque 2) |ODP.NET |ODAC 11.2 Release 5 (11.2.0.3.20) |9.x + |Tables/vues |[Lien de téléchargement](http://go.microsoft.com/fwlink/?linkid=272376&clcid=0x409) |
-| System.Data.OracleClient (intégré dans .Net Framework) |.NET Framework 3.5 |9.x+ |Tables/vues |Inclus dans .NET Framework 3.5 ou version ultérieure | |
+| | System.Data.OracleClient (intégré dans .NET Framework) |.NET Framework 3.5 |9.x+ |Tables/vues |Inclus dans .NET Framework 3.5 ou version ultérieure |
 | IBM DB2 |Client ADO.Net d’IBM (partie intégrante du package de pilotes de serveur de données IBM) |10.1 |9.1+ |Tables/vues |[Lien de téléchargement](http://go.microsoft.com/fwlink/?linkid=274911&clcid=0x409) |
 | MySQL |Connector/Net |6.6.5 |5.1 |Tables/vues, fonctions scalaires |[Lien de téléchargement](http://go.microsoft.com/fwlink/?linkid=278885&clcid=0x409) |
 | PostgreSQL |Fournisseur NPGSQL ADO.NET |2.0.12 |7.4 |Tables/vues |[Lien de téléchargement](http://go.microsoft.com/fwlink/?linkid=282716&clcid=0x409) |

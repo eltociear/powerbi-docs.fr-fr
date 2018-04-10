@@ -1,28 +1,28 @@
 ---
-title: "Portail d’administration Power BI"
-description: "Le portail d’administration permet de gérer les clients Power BI de votre organisation. Il comprend notamment des métriques d’utilisation, un accès au Centre d’administration Office 365 et des paramètres."
+title: Portail d’administration Power BI
+description: Le portail d’administration permet de gérer les clients Power BI de votre organisation. Il comprend notamment des métriques d’utilisation, un accès au Centre d’administration Office 365 et des paramètres.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/02/2018
-ms.author: maghan
+ms.date: 04/02/2018
+ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1ce2bc2746773c344251b89173b5825940eb0174
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 54ddccf9ca6ffdc1d9cbe840dbfced8d978ad194
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -326,8 +326,8 @@ Important : La suppression est irréversible. Le rendu du visuel supprimé disp
  
 ### <a name="how-to-update-a-visual"></a>Mettre à jour un visuel
 
-Si vous souhaitez mettre à jour un visuel dans le référentiel parce qu’il en existe une nouvelle version (p. ex., correctifs de bogues, nouvelles fonctionnalités, etc.), chargez le nouveau fichier (vérifiez que l’ID du visuel reste le même) dans une nouvelle entrée de la liste en indiquant les bonnes informations dans le titre et la description (p. ex., « Mon visuel v2.0 »). La prochaine fois que les utilisateurs entreront dans le référentiel de l’organisation à partir de Power BI Desktop, ils pourront importer la nouvelle version et seront alors invités à remplacer la version déjà présente dans leur rapport.
- 
+Si vous voulez mettre à jour un visuel dans le référentiel parce qu’il en existe une version plus récente (par exemples, correctifs de bogues, nouvelle fonctionnalité, etc.), sélectionnez l’icône **Mettre à jour** et chargez le nouveau fichier. Assurez-vous que l’ID du visuel reste inchangé. Le nouveau fichier remplace le fichier précédent pour tous les rapports au sein de l’organisation. Toutefois, si la nouvelle version du visuel est susceptible de rompre l’utilisation ou la structure de données de la version précédente du visuel, alors ne remplacez pas la version précédente. Au lieu de cela, vous devez créer une nouvelle liste pour la nouvelle version du visuel. Par exemple, ajoutez un nouveau numéro de version (version X.X) au titre du nouveau visuel répertorié. Ainsi, il est clair qu’il s’agit du même visuel, avec un numéro de version mis à jour, ce qui permet de ne pas rompre les fonctionnalités des rapports existants. Encore une fois, assurez-vous que l’ID du visuel reste inchangé. Puis, la prochaine fois que les utilisateurs entrent dans le référentiel de l’organisation à partir de Power BI Desktop, ils peuvent importer la nouvelle version et sont alors invités à remplacer la version déjà présente dans leur rapport.
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Présentation du rôle d’administrateur Power BI](service-admin-role.md)  

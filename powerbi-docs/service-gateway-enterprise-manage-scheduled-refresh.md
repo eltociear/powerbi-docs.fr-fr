@@ -1,15 +1,15 @@
 ---
-title: "Gérer votre source de données - Importation/actualisation planifiée"
-description: "Gestion de la passerelle de données locale et des sources de données associées. Cet article porte spécifiquement sur les sources de données qui peuvent être utilisées avec les fonctions d’importation et d’actualisation planifiée."
+title: Gérer votre source de données - Importation/actualisation planifiée
+description: Gestion de la passerelle de données locale et des sources de données associées. Cet article porte spécifiquement sur les sources de données qui peuvent être utilisées avec les fonctions d’importation et d’actualisation planifiée.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8002cf2df278cd3329b62b5322a6faabc9394f57
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4fdd1380f10a44c45dd17b04c21ccfba8fbf9cd8
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Gérer votre source de données - Importation/actualisation planifiée
 Une fois que vous avez installé la passerelle de données locale, vous devez ajouter des sources de données qui peuvent être utilisées avec la passerelle. Cet article examine comment travailler avec des passerelles et des sources de données utilisées pour l’actualisation planifiée, et non pas avec des connexions actives ou DirectQuery.
