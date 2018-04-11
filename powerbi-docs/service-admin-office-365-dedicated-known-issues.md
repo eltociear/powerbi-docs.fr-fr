@@ -1,28 +1,28 @@
 ---
-title: "Clients Office 365 dédiés - Problèmes connus"
-description: "Prise en charge des clients Office 365 dédiés - problèmes connus. Cette rubrique décrit les problèmes propres à un client Office 365 dédié. Cela inclut les limitations de la fonctionnalité de groupe, ainsi que l’application iPhone avec les domaines personnels."
+title: Clients Office 365 dédiés - Problèmes connus
+description: Prise en charge des clients Office 365 dédiés - problèmes connus. Cette rubrique décrit les problèmes propres à un client Office 365 dédié. Cela inclut les limitations de la fonctionnalité de groupe, ainsi que l’application iPhone avec les domaines personnels.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 52557673256a05af21a252cc9fc564e562520882
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4ba9aaf309e7cc749ee9293b0bb906a26b81e59c
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="office-365-dedicated-customers---known-issues"></a>Clients Office 365 dédiés - Problèmes connus
 Power BI est maintenant pris en charge pour les clients Office 365 dédiés.  Si vous êtes un client O365 dédié, vous pouvez vous connecter avec un compte de ce client et utiliser Power BI. Il existe actuellement deux problèmes connus.

@@ -3,7 +3,7 @@ title: Conseils relatifs au déploiement d’une passerelle de données pour Pow
 description: Familiarisez-vous avec les meilleures pratiques et considérations relatives au déploiement d’une passerelle pour Power BI.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,13 +16,13 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 12/06/2017
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3c1b0059ac39c8d8024fd840c0cf35bc9700a9aa
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 899cef8c4e441c49f40acc7873348fe80a7b5f9d
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Conseils relatifs au déploiement d’une passerelle de données pour Power BI
 Cet article fournit des conseils et indications sur le déploiement d’une passerelle de données dans votre environnement réseau. Une **passerelle** est un logiciel qui facilite l’accès aux données résidant sur un réseau local privé en vue de leur utilisation ultérieure dans un service cloud tel que Power BI. Cet article décrit le processus de déploiement et fournit des conseils sur l’installation de la **passerelle de données locale**.

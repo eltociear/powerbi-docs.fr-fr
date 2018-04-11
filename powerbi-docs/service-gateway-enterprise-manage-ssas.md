@@ -3,7 +3,7 @@ title: Gérer votre source de données - Analysis Services
 description: Gestion de la passerelle de données locale et des sources de données associées. Cela s’applique à Analysis Services en mode multidimensionnel et en mode tabulaire.
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,13 +16,13 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 01/24/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 59fc3db101de246aaf4ab08c7916b25497b74fd2
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: fe875310f7dbfd6b0240096f3ed542d8031bcf99
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gérer votre source de données - Analysis Services
 Une fois que vous avez installé la passerelle de données locale, vous devez ajouter des sources de données qui peuvent être utilisées avec la passerelle. Cet article décrit comment utiliser les passerelles et les sources de données. Vous pouvez utiliser la source de données Analysis Services pour l’actualisation planifiée ou les connexions actives.

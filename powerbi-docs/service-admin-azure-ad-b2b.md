@@ -1,28 +1,28 @@
 ---
-title: "Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B"
-description: "Power BI s’intègre avec Azure Active Directory B2B (Azure AD B2B) pour permettre une distribution sécurisée de contenu Power BI à des utilisateurs invités extérieurs à l’organisation."
+title: Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
+description: Power BI s’intègre avec Azure Active Directory B2B (Azure AD B2B) pour permettre une distribution sécurisée de contenu Power BI à des utilisateurs invités extérieurs à l’organisation.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/02/2018
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 55394392de78bcd1a2c38ecf92dd3218c8660132
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 16820050ad879b128482af5754bc53973449f982
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -81,7 +81,7 @@ L’utilisateur invité reçoit un e-mail l’informant que l’application a é
 
 L’utilisateur invité doit se connecter en utilisant l’adresse e-mail de son organisation. Une fois connecté, il est invité à accepter l’invitation. Ensuite, il est redirigé vers le contenu de l’application. Pour revenir à l’application, marquez le lien à l’aide d’un signet, ou enregistrez l’e-mail.
 
-## <a name="licensing"></a>Gestion des licences
+## <a name="licensing"></a>Licensing
 
 L’utilisateur invité doit disposer de la licence appropriée pour afficher l’application partagée. Trois options le permettent.
 

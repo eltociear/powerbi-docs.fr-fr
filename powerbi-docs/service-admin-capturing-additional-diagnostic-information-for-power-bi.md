@@ -1,28 +1,28 @@
 ---
-title: "Capture d’informations de diagnostic supplémentaires"
-description: "Capture d’informations de diagnostic supplémentaires"
+title: Capture d’informations de diagnostic supplémentaires
+description: Capture d’informations de diagnostic supplémentaires
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 65954c19087e9c9968c549f610d4e36e942e3206
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9aef989b4b61ce8c9d11fd4275d68c867791f644
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="capturing-additional-diagnostic-information"></a>Capture d’informations de diagnostic supplémentaires
 ## <a name="capturing-additional-diagnostic-information-for-power-bi"></a>Capture d’informations de diagnostic supplémentaires pour Power BI
