@@ -1,15 +1,15 @@
 ---
-title: "Présentation de Questions et réponses dans Power BI Desktop et le service Power BI"
-description: "Rubrique de vue d’ensemble de la documentation pour les requêtes en langage naturel des questions et réponses Power BI."
+title: Présentation de Questions et réponses dans Power BI Desktop et le service Power BI
+description: Rubrique de vue d’ensemble de la documentation pour les requêtes en langage naturel des questions et réponses Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

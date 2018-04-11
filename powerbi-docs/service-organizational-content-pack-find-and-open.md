@@ -1,15 +1,15 @@
 ---
-title: "Rechercher un pack de contenu d’organisation et s’y connecter - Power BI"
-description: "Rechercher et ouvrir un pack de contenu d’organisation dans Power BI"
+title: Rechercher un pack de contenu d’organisation et s’y connecter - Power BI
+description: Rechercher et ouvrir un pack de contenu d’organisation dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

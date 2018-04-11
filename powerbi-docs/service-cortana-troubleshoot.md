@@ -1,16 +1,16 @@
 ---
-title: "Résoudre les problèmes de Cortana pour Power BI"
-description: "Les suggestions suivantes peuvent vous aider à résoudre certains problèmes rencontrés durant l’utilisation de Cortana pour Power BI."
+title: Résoudre les problèmes de Cortana pour Power BI
+description: Les suggestions suivantes peuvent vous aider à résoudre certains problèmes rencontrés durant l’utilisation de Cortana pour Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

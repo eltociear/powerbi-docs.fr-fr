@@ -1,15 +1,15 @@
 ---
-title: "Se connecter à appFigures avec Power BI"
+title: Se connecter à appFigures avec Power BI
 description: appFigures pour Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

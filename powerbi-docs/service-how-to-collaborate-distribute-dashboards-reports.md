@@ -1,13 +1,13 @@
 ---
 title: Comment travailler en collaboration et partager des documents dans Power BI ?
-description: "Dans Power BI, vous pouvez collaborer sur des tableaux de bord, des rapports, des vignettes et des apps, et les distribuer de plusieurs façons. Chacune a ses avantages."
+description: Dans Power BI, vous pouvez collaborer sur des tableaux de bord, des rapports, des vignettes et des apps, et les distribuer de plusieurs façons. Chacune a ses avantages.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: lukaszp
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 02/28/2017
 ms.service: powerbi

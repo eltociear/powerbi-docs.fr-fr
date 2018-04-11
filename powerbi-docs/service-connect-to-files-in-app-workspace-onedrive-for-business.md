@@ -1,15 +1,15 @@
 ---
-title: "Se connecter à des fichiers dans OneDrive pour un espace de travail d’application Power BI"
-description: "Consultez les informations concernant le stockage de vos fichiers Excel, CSV et Power BI Desktop sur le OneDrive pour l’espace de travail de votre application Power BI et la connexion à ceux-ci."
+title: Se connecter à des fichiers dans OneDrive pour un espace de travail d’application Power BI
+description: Consultez les informations concernant le stockage de vos fichiers Excel, CSV et Power BI Desktop sur le OneDrive pour l’espace de travail de votre application Power BI et la connexion à ceux-ci.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

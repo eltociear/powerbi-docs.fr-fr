@@ -1,15 +1,15 @@
 ---
-title: "Démarrage rapide - Bien démarrer avec Questions et réponses dans Power BI"
-description: "Démarrage rapide - Bien démarrer avec Questions et réponses dans le service Power BI avec l’exemple Analyse de la vente au détail"
+title: Démarrage rapide - Bien démarrer avec Questions et réponses dans Power BI
+description: Démarrage rapide - Bien démarrer avec Questions et réponses dans le service Power BI avec l’exemple Analyse de la vente au détail
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

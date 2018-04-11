@@ -1,15 +1,15 @@
 ---
 title: Pack de contenu SQL Database Auditing
-description: "Pack de contenu SQL Database Auditing pour Power BI"
+description: Pack de contenu SQL Database Auditing pour Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

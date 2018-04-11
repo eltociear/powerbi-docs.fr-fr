@@ -1,12 +1,12 @@
 ---
 title: Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
-description: "Dans Power BI, les applications rassemblent les rapports et tableaux de bord associés dans un même emplacement."
+description: Dans Power BI, les applications rassemblent les rapports et tableaux de bord associés dans un même emplacement.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 10/02/2017
 ms.service: powerbi

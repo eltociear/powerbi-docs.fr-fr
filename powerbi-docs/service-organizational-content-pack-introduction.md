@@ -1,15 +1,15 @@
 ---
-title: "Présentation des packs de contenu d’organisation dans Power BI"
-description: "Consultez les informations relatives à la réalisation de packages de vos propres tableaux de bord, rapports, classeurs Excel et jeux de données, que vous pouvez partager avec vos collègues dans des packs de contenu d’organisation."
+title: Présentation des packs de contenu d’organisation dans Power BI
+description: Consultez les informations relatives à la réalisation de packages de vos propres tableaux de bord, rapports, classeurs Excel et jeux de données, que vous pouvez partager avec vos collègues dans des packs de contenu d’organisation.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

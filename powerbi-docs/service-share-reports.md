@@ -1,13 +1,13 @@
 ---
-title: "Filtrer et partager des rapports Power BI avec des collègues"
-description: "Découvrez comment partager un rapport Power BI filtré avec des collègues de votre organisation."
+title: Filtrer et partager des rapports Power BI avec des collègues
+description: Découvrez comment partager un rapport Power BI filtré avec des collègues de votre organisation.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: lukaszp
-editor: 
-tags: 
+editor: ''
+tags: ''
 featuredvideoid: 0tUwn8DHo3s
 qualityfocus: complete
 qualitydate: 06/22/2016

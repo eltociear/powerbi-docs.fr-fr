@@ -1,15 +1,15 @@
 ---
-title: "Gérer l’espace de travail de votre application dans Power BI et Office 365"
-description: "Les espaces de travail d’application dans Power BI offrent une expérience collaborative basée sur des groupes Office 365. Gérez vos espaces de travail d’application dans Power BI ainsi que dans Office 365."
+title: Gérer l’espace de travail de votre application dans Power BI et Office 365
+description: Les espaces de travail d’application dans Power BI offrent une expérience collaborative basée sur des groupes Office 365. Gérez vos espaces de travail d’application dans Power BI ainsi que dans Office 365.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

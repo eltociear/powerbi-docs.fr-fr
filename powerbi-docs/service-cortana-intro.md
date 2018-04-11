@@ -1,11 +1,11 @@
 ---
-title: "Trouver et afficher rapidement vos rapports et tableaux de bord Power BI à l’aide de Cortana"
-description: "Utilisez Cortana avec Power BI pour obtenir des réponses à partir de vos données. Cortana opère actuellement avec les rapports et tableaux de bord."
+title: Trouver et afficher rapidement vos rapports et tableaux de bord Power BI à l’aide de Cortana
+description: Utilisez Cortana avec Power BI pour obtenir des réponses à partir de vos données. Cortana opère actuellement avec les rapports et tableaux de bord.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-editor: 
+editor: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

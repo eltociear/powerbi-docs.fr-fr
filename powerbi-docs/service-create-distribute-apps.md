@@ -1,14 +1,14 @@
 ---
-title: "Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI"
-description: "Découvrez comment créer et publier des applications qui sont des collections de tableaux de bord et rapports générés pour fournir des mesures clés pour votre organisation."
+title: Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI
+description: Découvrez comment créer et publier des applications qui sont des collections de tableaux de bord et rapports générés pour fournir des mesures clés pour votre organisation.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,15 +1,15 @@
 ---
-title: "Se connecter aux journaux d’audit Azure avec Power BI"
-description: "Journaux d’Audit Azure pour Power BI"
+title: Se connecter aux journaux d’audit Azure avec Power BI
+description: Journaux d’Audit Azure pour Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

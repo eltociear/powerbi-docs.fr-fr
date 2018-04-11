@@ -1,15 +1,15 @@
 ---
-title: "Partager un tableau de bord lié à un fichier Excel dans OneDrive - Power BI"
-description: "Consultez les informations relatives au partage de tableaux de bord connectés à un classeur Excel sur OneDrive Entreprise, avec des vignettes épinglées de ce classeur."
+title: Partager un tableau de bord lié à un fichier Excel dans OneDrive - Power BI
+description: Consultez les informations relatives au partage de tableaux de bord connectés à un classeur Excel sur OneDrive Entreprise, avec des vignettes épinglées de ce classeur.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

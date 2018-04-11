@@ -1,16 +1,16 @@
 ---
-title: "Création de questions exemplaires pour Questions et réponses dans Power BI"
-description: "Documentation sur la création de questions exemplaires pour les Q&R de Power BI"
+title: Création de questions exemplaires pour Questions et réponses dans Power BI
+description: Documentation sur la création de questions exemplaires pour les Q&R de Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: E1mIAyEXuF4
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -20,10 +20,10 @@ ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 38cb04269937aa0b56589e4831eb7a3b027986d0
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Création de questions exemplaires pour les Q&R de Power BI
 Si vous possédez un jeu de données, vous pouvez y ajouter vos propres questions exemplaires.  Questions et réponses dans Power BI affiche ces questions à ceux de vos collègues qui utilisent (*consomment*) votre jeu de données.  Les questions exemplaires ont pour but de donner à vos collègues des idées sur les types de questions qu’ils peuvent poser concernant le jeu de données. Le choix des questions exemplaires que vous ajoutez vous appartient. Vous pouvez ajouter des questions fréquemment posées, des questions qui présentent des résultats intéressants ou des questions qui peuvent être difficiles à formuler.

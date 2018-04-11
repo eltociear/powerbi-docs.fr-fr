@@ -3,7 +3,7 @@ title: Gérer les capacités dans Power BI Premium et Power BI Embedded
 description: Découvrez comment gérer Power BI Premium et permettre à l’ensemble de votre organisation d’accéder au contenu.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,13 +16,13 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/10/2017
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 556f91464e8a08b5cb149648be2b097578964af9
-ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
+ms.openlocfilehash: 4a96582eb8864cd41b5b307d05be890fc3bbff34
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gérer les capacités dans Power BI Premium et Power BI Embedded
 Découvrez comment vous pouvez gérer les capacités Power BI Premium et Power BI Embedded qui fournissent des ressources dédiées pour votre contenu.
@@ -124,7 +124,7 @@ Vous pouvez gérer une capacité en sélectionnant son nom. Cela a pour effet de
 
 Si aucun espace de travail n’a été attribué à la capacité, vous voyez un message vous permettant d’**Assigner des espaces de travail**.
 
-#### <a name="user-permissions"></a>Autorisations d’utilisateur
+#### <a name="user-permissions"></a>Autorisations de l’utilisateur
 Vous pouvez désigner des **administrateurs de capacité** supplémentaires pour les capacités Power BI Premium, ainsi que des utilisateurs titulaires d’**autorisations d’attribution de capacité**. Les utilisateurs disposant d’autorisations d’affectation peuvent affecter un espace de travail d’application à la capacité s’ils sont administrateur de cet espace de travail. Ils peuvent également affecter leur espace de travail personnel (*Mon espace de travail*) à la capacité. Les utilisateurs disposant d’autorisations d’affectation n’ont pas accès au portail d’administration.
 
 > [!NOTE]

@@ -1,15 +1,15 @@
 ---
-title: "Se déconnecter d’un pack de contenu d’organisation - Power BI"
-description: "Découvrez comment supprimer votre connexion à un pack de contenu d’organisation en supprimant le jeu de données associé dans Power BI."
+title: Se déconnecter d’un pack de contenu d’organisation - Power BI
+description: Découvrez comment supprimer votre connexion à un pack de contenu d’organisation en supprimant le jeu de données associé dans Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

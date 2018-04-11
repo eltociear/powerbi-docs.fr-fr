@@ -1,15 +1,15 @@
 ---
 title: Se connecter aux services que vous utilisez avec Power BI
-description: "Vous pouvez vous connecter à un certain nombre de services que vous utilisez pour conduire votre activité, tels que Salesforce, Microsoft Dynamics CRM et Google Analytics."
+description: Vous pouvez vous connecter à un certain nombre de services que vous utilisez pour conduire votre activité, tels que Salesforce, Microsoft Dynamics CRM et Google Analytics.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -35,7 +35,7 @@ Une fois l’application installée, vous pouvez afficher le tableau de bord et 
 
 ![Application Google Analytics dans l’application mobile Power BI](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
-## <a name="get-started"></a>Commencer
+## <a name="get-started"></a>Bien démarrer
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
 ## <a name="view-the-dashboard-and-reports"></a>Afficher le tableau de bord et les rapports

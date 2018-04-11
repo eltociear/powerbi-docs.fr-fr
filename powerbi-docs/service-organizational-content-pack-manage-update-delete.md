@@ -1,15 +1,15 @@
 ---
-title: "Packs de contenu d’organisation : gestion et mise à jour"
-description: "Consultez les informations relatives à la gestion, à la mise à jour et à la suppression des packs de contenu d’organisation dans Power BI."
+title: 'Packs de contenu d’organisation : gestion et mise à jour'
+description: Consultez les informations relatives à la gestion, à la mise à jour et à la suppression des packs de contenu d’organisation dans Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

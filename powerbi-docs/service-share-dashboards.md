@@ -1,13 +1,13 @@
 ---
-title: "Partager des rapports et des tableaux de bord Power BI avec des collègues et d’autres utilisateurs"
-description: "Comment partager des tableaux de bord et rapports Power BI avec vos collègues au sein et à l’extérieur de votre organisation et ce que vous devez savoir sur le partage."
+title: Partager des rapports et des tableaux de bord Power BI avec des collègues et d’autres utilisateurs
+description: Comment partager des tableaux de bord et rapports Power BI avec vos collègues au sein et à l’extérieur de votre organisation et ce que vous devez savoir sur le partage.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: lukaszp
-editor: 
-tags: 
+editor: ''
+tags: ''
 featuredvideoid: 0tUwn8DHo3s
 qualityfocus: monitoring
 qualitydate: 08/14/2017

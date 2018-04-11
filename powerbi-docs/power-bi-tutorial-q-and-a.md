@@ -1,12 +1,12 @@
 ---
-title: "Didacticiel - Utilisation de Questions et réponses sur un tableau de bord ou dans un rapport"
-description: "Didacticiel sur l’utilisation du moteur Questions et réponses de Power BI pour créer des visualisations sur des tableaux de bord et dans des rapports."
+title: Didacticiel - Utilisation de Questions et réponses sur un tableau de bord ou dans un rapport
+description: Didacticiel sur l’utilisation du moteur Questions et réponses de Power BI pour créer des visualisations sur des tableaux de bord et dans des rapports.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
