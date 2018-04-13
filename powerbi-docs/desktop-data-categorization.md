@@ -1,15 +1,15 @@
 ---
-title: "Catégorisation des données dans Power BI Desktop"
-description: "Catégorisation des données dans Power BI Desktop"
+title: Catégorisation des données dans Power BI Desktop
+description: Catégorisation des données dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 00b70b6e56d11d0d7dda959f1983cc4631f53ff9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cc66655e49860160b43afa5d1acb688c37468212
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Catégorisation des données dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez spécifier la catégorie de données pour une colonne pour que Power BI Desktop sache comment traiter ses valeurs dans une visualisation.
@@ -40,7 +40,7 @@ Power BI Desktop doit-il considérer les codes de la colonne Geocode comme l’a
 **Pour spécifier une catégorie de données**
 
 1. Dans la vue Rapport ou Données, dans la liste **Champs** , sélectionnez le champ que vous souhaitez trier selon une catégorisation différente.
-2. Dans le ruban, sous l’onglet **Outils de données, Modélisation** , cliquez sur la liste déroulante **Catégorie des données** .  Cela affiche la liste des catégories de données que vous pouvez choisir pour votre colonne.  Certaines options peuvent être désactivées si elles ne fonctionneront pas avec le type de données actuel de votre colonne.  Par exemple, si une colonne est un type de données binaires, Power BI Desktop ne vous autorise pas à choisir des catégories de données géographiques. 
+2. Dans le ruban, sous l’onglet **Modélisation**, cliquez sur la liste déroulante **Catégorie des données**.  Cela affiche la liste des catégories de données que vous pouvez choisir pour votre colonne.  Certaines options peuvent être désactivées si elles ne fonctionneront pas avec le type de données actuel de votre colonne.  Par exemple, si une colonne est un type de données binaires, Power BI Desktop ne vous autorise pas à choisir des catégories de données géographiques. 
 
 ![](media/desktop-data-categorization/datacategorization.gif)
 

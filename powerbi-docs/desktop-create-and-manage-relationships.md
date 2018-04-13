@@ -1,15 +1,15 @@
 ---
-title: "Créer et gérer des relations dans Power BI Desktop"
-description: "Créer et gérer des relations dans Power BI Desktop"
+title: Créer et gérer des relations dans Power BI Desktop
+description: Créer et gérer des relations dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: cd0f89766a07d468942735d5da0d99e5c6d1c87f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 0e9d1ed73abcd7234a96b28da638db649130c08e
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
 Quand vous importez plusieurs tables, vous êtes souvent amené à effectuer des analyses impliquant les données de ces tables. Les relations entre ces tables sont nécessaires pour obtenir des résultats précis et afficher les informations correctes dans vos rapports. Power BI Desktop facilite la création de ces relations. Dans la plupart des cas, vous n’avez rien à faire ; la fonctionnalité Détection automatique se charge de tout. Toutefois, dans certains cas, vous pouvez être amené à créer des relations vous-même ou à apporter des modifications à une relation. Dans les deux cas, il est important de comprendre le fonctionnement des relations dans Power BI Desktop et comment les créer et les modifier.
@@ -40,38 +40,38 @@ Sous l’onglet **Accueil**, cliquez sur **Gérer les relations**\>**Détection 
 2. Dans la boîte de dialogue **Créer une relation**, dans la première liste déroulante de tables, sélectionnez une table, puis sélectionnez la colonne que vous souhaitez utiliser dans la relation.
 3. Dans la seconde liste déroulante de tables, sélectionnez l’autre table que vous souhaitez dans la relation, puis l’autre colonne que vous souhaitez utiliser, puis cliquez sur **OK**.
 
-![](media/desktop-create-and-manage-relationships/manualrelationship.gif)
+![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
-Par défaut, Power BI Desktop configure automatiquement les propriétés Cardinalité (direction), Direction du filtrage croisé et Active pour votre nouvelle relation. Toutefois, vous pouvez les modifier si nécessaire dans Options avancées. Pour plus d’informations, consultez la section Présentation des options avancées plus loin dans cet article.
+Par défaut, Power BI Desktop configure automatiquement les propriétés Cardinalité (direction), Direction du filtrage croisé et Active pour votre nouvelle relation. Toutefois, vous pouvez les changer si nécessaire. Pour plus d’informations, consultez la section Présentation des options supplémentaires plus loin dans cet article.
 
 ## <a name="edit-a-relationship"></a>Modifier une relation
 1. Sous l’onglet **Accueil**, cliquez sur **Gérer les relations**.
 2. Dans la boîte de dialogue **Gérer les relations**, sélectionnez la relation, puis cliquez sur **Modifier**.
 
-## <a name="configure-advanced-options"></a>Configurer les options avancées
-Quand vous créez ou modifiez une relation, vous pouvez configurer des options avancées.  Par défaut, les options avancées sont configurées automatiquement d’après une estimation. Cette configuration étant déterminée par les données des colonnes, elle peut varier d’une relation à l’autre.
+## <a name="configure-additional-options"></a>Configurer des options supplémentaires
+Quand vous créez ou modifiez une relation, vous pouvez configurer des options supplémentaires.  Par défaut, les options supplémentaires sont configurées automatiquement d’après une estimation. Cette configuration étant déterminée par les données des colonnes, elle peut varier d’une relation à l’autre.
 
 ## <a name="cardinality"></a>Cardinalité
 **Plusieurs à un (\*:1)** : il s’agit du type par défaut, le plus courant. La colonne d’une table peut avoir plusieurs instances d’une valeur, tandis que la table connexe, souvent appelée table de recherche, n’a qu’une seule instance d’une valeur donnée.
 
 **Un à un (1:1)** : la colonne d’une table n’a qu’une seule instance d’une valeur donnée et la table connexe n’a qu’une seule instance d’une valeur donnée.
 
-Pour plus d’informations sur la modification de la cardinalité, consultez la section Présentation des options avancées plus loin dans cet article.
+Pour plus d’informations sur la modification de la cardinalité, consultez la section Présentation des options supplémentaires plus loin dans cet article.
 
 ## <a name="cross-filter-direction"></a>Direction du filtrage croisé
 **À double sens** : il s’agit de la direction par défaut, la plus courante. Pendant les opérations de filtrage, les deux tables sont traitées comme s’il s’agissait d’une table unique.  Cela fonctionne bien avec une table unique entourée de plusieurs tables de choix.  Une table de valeurs de ventes réelles avec une table de choix pour le service constitue un bon exemple.  On parle souvent de configuration de schéma en étoile (une table centrale avec plusieurs tables de choix.)  Toutefois, si vous avez plusieurs tables qui possèdent aussi des tables de choix (certaines en commun), vous ne devez pas utiliser le paramètre À double sens.  Pour continuer avec l’exemple précédent, vous avez également une table de ventes budgétées qui enregistre le budget cible pour chaque service.  Et la table des services est connectée à la fois à la table des ventes et à la table du budget.  Évitez le paramètre À double sens pour ce type de configuration.
 
 **À sens unique** : les choix de filtrage dans les tables connectées agissent sur la table dans laquelle les valeurs sont agrégées. Si vous importez un modèle de données Power Pivot dans Excel 2013 ou version antérieure, toutes les relations ont une seule direction. 
 
-Pour plus d’informations sur la modification de la direction du filtrage croisé, consultez la section Présentation des options avancées plus loin dans cet article.
+Pour plus d’informations sur le changement de direction du filtrage croisé, consultez la section Présentation des options supplémentaires plus loin dans cet article.
 
 ## <a name="make-this-relationship-active"></a>Rendre cette relation active
-Quand cette option est cochée, la relation fait office de relation par défaut active.  S’il existe plusieurs relations entre deux tables, la relation active permet à Power BI Desktop de créer automatiquement des visualisations qui incluent les deux tables.
+Quand cette option est cochée, la relation fait office de relation par défaut active.  S’il existe plusieurs relations entre deux tables, la relation active offre un moyen à Power BI Desktop de créer automatiquement des visualisations qui incluent les deux tables.
 
-Pour plus d’informations sur la façon de rendre une relation spécifique active, consultez la section Présentation des options avancées plus loin dans cet article.
+Pour plus d’informations sur la façon de rendre une relation active, consultez la section Présentation des options supplémentaires plus loin dans cet article.
 
 ## <a name="understanding-relationships"></a>Présentation des relations
-Une fois que vous avez connecté deux tables avec une relation, vous pouvez utiliser les données des deux tables comme s’il s’agissait d’une table unique ; ainsi, vous n’avez pas à vous soucier des détails de la relation et vous n’avez pas besoin d’aplatir ces tables dans une table unique avant de les importer.  Dans de nombreuses situations, Power BI Desktop peut créer automatiquement des relations à votre place. Toutefois, si Power BI Desktop ne peut pas déterminer avec un haut degré de certitude qu’une relation entre deux tables doit exister, il ne crée pas automatiquement la relation. Dans ce cas, vous devez la créer vous-même.   
+Une fois que vous avez connecté deux tables avec une relation, vous pouvez utiliser les données des deux tables comme s’il s’agissait d’une table unique ; ainsi, vous n’avez pas à vous soucier des détails de la relation et vous n’avez pas besoin d’aplatir ces tables dans une table unique avant de les importer.  Dans de nombreuses situations, Power BI Desktop peut créer automatiquement des relations à votre place. Toutefois, si Power BI Desktop ne peut pas déterminer avec une grande certitude qu’une relation entre deux tables doit exister, il ne crée pas automatiquement la relation. Dans ce cas, vous devez la créer vous-même.   
 
 Nous allons suivre un petit didacticiel pour mieux illustrer le fonctionnement des relations dans Power BI Desktop.
 
@@ -123,11 +123,11 @@ Vous vous souvenez de ces colonnes communes aux deux tables avec un nom de proje
 
 Pourquoi ces colonnes ? Si nous observons la colonne Projet du tableau HeuresProjet, nous y trouvons des valeurs telles que Bleu, Rouge, Jaune et Orange. Comme vous pouvez le constater, plusieurs lignes contiennent la même valeur. Nous avons donc de nombreuses valeurs de couleur pour Projet.
 
-Par contre, la colonne NomProjet du tableau ProjetEntreprise ne contient qu’une occurrence de chaque valeur de couleur de projet. Chaque valeur de couleur de cette table est unique ; cela est important, car nous pouvons créer une relation entre les deux tables. Dans ce cas, il s’agit d’une relation plusieurs-à-un. Dans une relation plusieurs-à-un, au moins une colonne d’une des tables doit contenir des valeurs uniques. Il existe des options avancées pour certaines relations, que nous verrons plus tard, mais pour l’instant nous allons créer une relation entre les colonnes Projet de chaque table.
+Par contre, la colonne NomProjet du tableau ProjetEntreprise ne contient qu’une occurrence de chaque valeur de couleur de projet. Chaque valeur de couleur de cette table est unique ; cela est important, car nous pouvons créer une relation entre les deux tables. Dans ce cas, il s’agit d’une relation plusieurs-à-un. Dans une relation plusieurs-à-un, au moins une colonne d’une des tables doit contenir des valeurs uniques. Il existe des options supplémentaires pour certaines relations, que nous verrons plus tard, mais pour l’instant nous allons créer une relation entre les colonnes Projet de chaque table.
 
 ### <a name="to-create-the-new-relationship"></a>Pour créer la relation
 1. Cliquez sur **Gérer les relations**.
-2. Dans **Gérer les relations**, cliquez sur **Nouveau**. La boîte de dialogue **Créer une relation** s’ouvre, dans laquelle nous pouvons sélectionner les tables, les colonnes et les paramètres avancés que nous souhaitons pour notre relation.
+2. Dans **Gérer les relations**, cliquez sur **Nouveau**. La boîte de dialogue **Créer une relation** s’ouvre, dans laquelle nous pouvons sélectionner les tables, les colonnes et les paramètres supplémentaires que nous souhaitons pour notre relation.
 3. Dans la première table, sélectionnez **HeuresProjet**, puis la colonne **Projet**. Il s’agit du côté « plusieurs » de notre relation.
 4. Dans la seconde table, sélectionnez **ProjetEntreprise**, puis la colonne **NomProjet**. Il s’agit du côté « un » de notre relation.  
 5. Cliquez sur **OK** dans les boîtes de dialogue **Créer une relation** et **Gérer les relations**.
@@ -146,12 +146,12 @@ Quand nous additionnons les heures par Priorité, Power BI Desktop recherche ch
 
 C’était assez facile. En fait, la fonctionnalité Détection automatique aurait même pu vous éviter tout ce travail.
 
-## <a name="understanding-advanced-options"></a>Présentation des options avancées
-Quand une relation est créée, manuellement ou avec la fonctionnalité Détection automatique, Power BI Desktop configure automatiquement les options avancées en fonction des données de vos tables. Vous pouvez configurer les propriétés avancées d’une relation en développant Options avancées dans la boîte de dialogue de création/modification de relations.
+## <a name="understanding-additional-options"></a>Présentation des options supplémentaires
+Quand une relation est créée, manuellement ou avec la fonctionnalité Détection automatique, Power BI Desktop configure automatiquement les options supplémentaires en fonction des données de vos tables. Vous pouvez configurer ces propriétés de relation supplémentaires situées tout en bas de la boîte de dialogue Créer/modifier une relation.
 
- ![](media/desktop-create-and-manage-relationships/candmrel_advancedoptions.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_advancedoptions2.png)
 
-Comme nous l’avons dit, ces propriétés sont généralement définies automatiquement et vous n’avez pas besoin d’y toucher ; toutefois, vous pouvez être amené à configurer les options avancées vous-même.
+Comme nous l’avons dit, ces propriétés sont généralement définies automatiquement et vous n’avez pas besoin d’y toucher ; toutefois, vous pouvez être amené à configurer ces options vous-même.
 
 ## <a name="future-updates-to-the-data-require-a-different-cardinality"></a>Les futures mises à jour des données nécessitent une cardinalité différente
 Normalement, Power BI Desktop peut déterminer automatiquement la meilleure cardinalité pour la relation.  Si vous avez besoin de remplacer le paramétrage automatique car vous savez que les données changeront ultérieurement, vous pouvez utiliser le contrôle Cardinalité. Examinons un exemple où nous devons sélectionner une cardinalité différente.
@@ -179,7 +179,7 @@ La table PrioritéProjetEntreprise ci-dessous répertorie tous les projets de l�
 
 Si nous créons une relation entre la colonne Projet de la table PrioritéProjetEntreprise et la colonne ProjetsApprouvés de la table BudgetProjet, comme suit :
 
- ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj2.png)
 
 La cardinalité prend automatiquement la valeur Un à un (1:1) et la direction du filtrage croisé la valeur À double sens (comme indiqué).  En effet, pour Power BI Desktop, la meilleure combinaison des deux tables ressemble à ceci :
 
@@ -219,9 +219,9 @@ Toutefois, supposons que les données sont censées changer à la prochaine actu
 | Bleu |A |80000 |6/1/2013 |
 | Rouge |B |90000 |6/1/2013 |
 
-Dans cette nouvelle table combinée, la colonne Projet contient des doublons.  Les deux tables d’origine n’auront pas de relation un à un une fois la table actualisée. Dans ce cas, comme nous savons que ces mises à jour ultérieures engendreront des doublons dans la colonne Projet, nous souhaitons définir la cardinalité sur Plusieurs à un (\*:1), avec la composante « plusieurs » côté BudgetProjet et la composante « un » côté ProjetEntreprise.
+Dans cette nouvelle table combinée, la colonne Projet contient des doublons.  Les deux tables d’origine n’auront pas de relation un à un une fois la table actualisée. Dans ce cas, comme nous savons que ces mises à jour ultérieures engendreront des doublons dans la colonne Projet, nous souhaitons définir la cardinalité sur Plusieurs à un (\*:1), avec la composante « plusieurs » côté BudgetProjet et la composante « un » côté PrioritéProjetEntreprise.
 
-## <a name="adjusting-cross-filter-direction-for-a-complex-set-of-tables-of-relationships"></a>Ajustement de la direction du filtrage croisé pour un jeu complexe de tables de relations
+## <a name="adjusting-cross-filter-direction-for-a-complex-set-of-tables-and-relationships"></a>Ajustement de la direction du filtrage croisé pour un jeu complexe de tables et de relations
 Pour la plupart des relations, la direction du filtrage croisé est définie sur « À double sens ».  Toutefois, dans certaines circonstances plus rares, vous pouvez être amené à la définir différemment, comme dans le cas où vous importez un modèle à partir d’une ancienne version de Power Pivot, où chaque relation est définie sur une direction à sens unique. 
 
 Le paramètre À double sens permet à Power BI Desktop de traiter tous les aspects des tables connectées comme s’il s’agissait d’une table unique.  Dans certaines situations, toutefois, Power BI Desktop ne peut pas définir la direction du filtrage croisé d’une relation sur « À double sens » tout en conservant un ensemble non ambigu de valeurs par défaut pour la création de rapports. En règle générale, la direction du filtrage croisé d’une relation n’est pas définie sur À double sens si cela risque de créer une ambiguïté.  Si la valeur par défaut de la direction du filtrage croisé ne fonctionne pas, essayez de la définir sur une table particulière ou sur À double sens.
@@ -252,7 +252,7 @@ La direction du filtrage croisé ne fonctionne pas correctement avec un modèle 
 
 Si vous disposez d’un modèle de tables comme celui-ci, avec des boucles, le filtrage croisé peut créer un ensemble de relations ambigu. Par exemple, si vous additionnez les valeurs d’un champ de la table X et que vous choisissez de filtrer par un champ de la table Y, il est difficile de savoir si le filtrage doit passer par la table supérieure ou inférieure. Un exemple courant de ce genre de modèle est TableX (une table de ventes avec des données réelles) et TableY (une table contenant des données de budget). Les tables intermédiaires sont des tables de choix utilisées par les deux tables, par exemple Division ou Région. 
 
-Comme dans le cas des relations actives/inactives, Power BI Desktop ne vous autorise pas à définir une relation À double sens si cela crée une ambiguïté dans les rapports. Face à cette situation, vous pouvez appliquer les deux procédures suivantes, parmi celles les plus couramment utilisées :
+Comme dans le cas des relations actives/inactives, Power BI Desktop ne vous autorise pas à définir une relation À double sens si cela crée une ambiguïté dans les rapports. Vous avez plusieurs moyens de résoudre le problème. Voici les deux plus courants :
 
 * Supprimez les relations ou marquez-les comme inactives pour réduire l’ambiguïté. Vous pourrez peut-être ensuite définir le filtrage croisé d’une relation sur À double sens.
 * Importez une table deux fois (avec un nom différent la deuxième fois) pour éliminer les boucles.  Ainsi, le modèle de relations s’apparente à un schéma en étoile.  Avec un schéma en étoile, toutes les relations peuvent être À double sens.

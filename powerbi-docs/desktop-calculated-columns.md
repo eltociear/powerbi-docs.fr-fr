@@ -1,15 +1,15 @@
 ---
-title: "Utilisation de colonnes calculées dans Power BI Desktop"
-description: "Colonnes calculées dans Power BI Desktop"
+title: Utilisation de colonnes calculées dans Power BI Desktop
+description: Colonnes calculées dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: e9d1820bff2768f2169530ec49cfa2963bff9baa
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4a47e707969b592ec27c79558699638ce14f8640
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Utilisation de colonnes calculées dans Power BI Desktop
 Les colonnes calculées vous permettent d’ajouter de nouvelles données à une table déjà présente dans votre modèle. Toutefois, au lieu d’interroger et de charger les valeurs dans votre nouvelle colonne à partir d’une source de données, vous créez une formule DAX (Data Analysis Expressions) qui définit les valeurs de la colonne. Dans Power BI Desktop, vous créez les colonnes calculées à l’aide de la fonctionnalité Nouvelle colonne dans la vue Rapport.
@@ -54,7 +54,7 @@ Cette formule crée simplement une nouvelle colonne nommée CityState et, pour c
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatefield.png)
 
-Il peut l’ajouter au canevas de son rapport avec le nombre d’expéditions. Très rapidement et avec un minimum d’efforts, Jeff dispose désormais d’un champ City, State (Ville, État). Il peut l’ajouter à quasiment n’importe quel type de visualisation. Jeff constate même que quand il crée une visualisation de carte, Power BI Desktop sait même lire les valeurs City, State dans sa nouvelle colonne.
+Il peut l’ajouter au canevas de son rapport avec le nombre d’expéditions. Très rapidement et avec un minimum d’efforts, Jeff a maintenant un champ City,State qu’il peut ajouter à peu près à tout type de visualisation. Jeff voit que quand il crée une visualisation de carte, Power BI Desktop sait même lire les valeurs City, State dans sa nouvelle colonne.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
