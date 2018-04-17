@@ -362,8 +362,6 @@
           href: service-reading-view-and-editing-view.md
         - name: "Interagir avec un rapport en mode Edition dans Power\_BI"
           href: service-interact-with-a-report-in-editing-view.md
-        - name: "Trucs et astuces pour créer des rapports dans le service Power\_BI"
-          href: power-bi-reports-tips-and-tricks-for-creating.md
         - name: Volet Analytique
           href: service-analytics-pane.md
         - name: Métriques d’utilisation des rapports
