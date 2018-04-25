@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a9cb6e3d3fe244a3d530efeb2624e3cc5a799e55
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 1ccc4eeff54bff91a9ed245fdb82462768b65264
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Modes Lecture et Édition dans les rapports du service Power BI
 Dans le service Power BI (mais pas dans Power BI Desktop), il existe deux modes d’utilisation et d’affichage des rapports : le mode Lecture et le mode Édition. Le mode Lecture est disponible pour tous les utilisateurs et il est spécialement conçu pour les *consommateurs* de données tandis que le mode Édition est disponible uniquement pour les propriétaires et les *créateurs* de rapports.
@@ -48,7 +48,6 @@ Ce graphique ne répertorie pas toutes les fonctionnalités de rapport du servic
 |Tâche  | Mode Lecture  | Mode Édition |
 |-------------------------|-------|-------|
 |**Rapports, en tant qu’ensemble**  |
-||||
 | [Créer ou modifier un rapport](service-report-create-new.md) | Non  | Oui |
 | [Partager un rapport](service-share-reports.md)| Oui | Oui, ainsi que gérer les autorisations, notamment en attribuant d’autres autorisations de *propriétaire*. |
 | [Créer des filtres permanents au niveau du visuel, du détail, de la page et du rapport à partir du volet Filtres](power-bi-report-add-filter.md) | Non  | Oui |
@@ -63,12 +62,10 @@ Ce graphique ne répertorie pas toutes les fonctionnalités de rapport du servic
 | [Enregistrer un rapport](service-report-save.md) | Oui, mais uniquement à l’aide de **Enregistrer sous**. | Oui |
 | [Supprimer un rapport](service-delete.md) | Non  | Oui |
 |**Page du rapport** |
-||||
 | [Ajouter ou renommer une page de rapport](power-bi-report-add-page.md)  | Non  | Oui  |
 | [Dupliquer une page de rapport](power-bi-report-copy-paste-page.md) | Non  | Oui |
 | [Supprimer une page de rapport](service-delete.md) | non | oui |
 |**Utilisation des visualisations de rapports**|
-||||
 | [Ajouter des visualisations à un rapport](power-bi-report-add-visualizations-i.md) | Non  | Oui |
 | [Ajouter des zones de texte et des formes à un rapport](power-bi-reports-add-text-and-shapes.md) | Non  | Oui |
 | [Utiliser le volet Mise en forme du rapport](service-the-report-editor-take-a-tour.md) | Non | Oui |

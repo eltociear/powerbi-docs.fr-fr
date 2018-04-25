@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/15/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 72afa61316800e9636d7b1a1536ff9c43b66c453
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: c23d36c408c1714df9a480d5f35da9691af620d9
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 Lorsque vous ouvrez un rapport dans le service Power BI, chaque page du rapport possède sa propre URL unique. Pour filtrer cette page de rapport, vous pouvez utiliser le volet Filtres sur le canevas de rapport.  Vous pouvez également ajouter des paramètres de chaîne de requête à l’URL pour filtrer le rapport. Imaginons que vous avez un rapport que vous envisagez de présenter à des collègues après l’avoir filtré pour eux au préalable. Une solution consiste à ajouter les paramètres de filtre à l’URL par défaut du rapport, puis à envoyer par courriel à vos collègues l’URL entière ainsi obtenue.
@@ -98,7 +98,7 @@ TerritoryChain = [Territoire] & " - " & [Chaîne]
 
 Publiez le rapport sur le service Power BI, puis utilisez la chaîne de requête d’URL pour filtrer les données affichées uniquement pour les magasins Lindseys en Caroline du Nord (NC).
 
-https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq ’NC–Lindseys’
+    https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Épingler une vignette d’un rapport filtré
 Après avoir filtré le rapport à l’aide de paramètres de chaîne de requête, vous pouvez épingler des visualisations de ce rapport à votre tableau de bord. La vignette épinglée au tableau de bord affiche les données filtrées, et la sélection de cette vignette a pour effet d’ouvrir le rapport utilisé pour la créer.  Toutefois, le filtrage que vous avez effectué à l’aide de l’URL n’est pas enregistré avec le rapport et, en cas de sélection de la vignette épinglée au tableau de bord, le rapport qui s’ouvre n’est pas filtré.  Cela signifie que les données qu’affiche la vignette épinglée au tableau de bord ne correspondent pas à celles présentées dans la visualisation du rapport.

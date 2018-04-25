@@ -1,29 +1,29 @@
 ---
-title: "Visuels des indicateurs de performance clés (didacticiel)"
-description: "Créer un indicateur de performance clé dans Power BI Desktop et le service Power BI"
+title: Visuels des indicateurs de performance clés (didacticiel)
+description: Créer un indicateur de performance clé dans Power BI Desktop et le service Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: xmja6EpqaO0
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/21/2017
+ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1a937b77135d6ad7843a6e0be779c235a1073f46
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4d6af52f10f16d973dc97ed0da1ed74bf63ec2cc
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="kpi-visuals-tutorial"></a>Visuels des indicateurs de performance clés (didacticiel)
 Un indicateur de performance clé (KPI) est un indice visuel qui représente la marge de progression réalisée en vue d’atteindre un objectif mesurable. Pour plus d’informations sur les indicateurs de performances clés, consultez [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -76,11 +76,8 @@ Les indicateurs de performances clés sont également disponibles sur vos appare
 * Si votre indicateur de performance clé ne ressemble pas à celui ci-dessus, vous devez peut-être effectuer un tri par mois. Étant donné que les indicateurs de performance clés n’ont pas d’option de tri, vous devez trier par mois *avant* de convertir votre visualisation en indicateur de performance clé.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Rapports dans Power BI](service-reports.md)
 
 [Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)
-
-[Power BI – Concepts de base](service-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

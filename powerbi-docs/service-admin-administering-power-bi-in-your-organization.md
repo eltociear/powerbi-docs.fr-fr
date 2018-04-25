@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 64dd0239026d3529129924b8d89eb5cc2642a9af
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: d5cb48469cc5ed5b49da841552bf7426ad29c3fb
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="administering-power-bi-in-your-organization"></a>Administration de Power BI dans votre organisation
 Microsoft Power BI permet aux utilisateurs de visualiser des données, de partager des découvertes et de collaborer de façon intuitive. Pour en savoir plus, consultez [Prise en main de Power BI](service-get-started.md).
@@ -185,8 +185,6 @@ Pour effectuer les étapes suivantes, vous devez installer la dernière version 
 Si votre organisation possède déjà un environnement Office 365 et que tous les utilisateurs de votre organisation ont des comptes Office 365, la gestion des identités ne change pas.
 
 Si votre organisation possède déjà un environnement Office 365, mais que tous les utilisateurs n’ont pas de compte Office 365, Microsoft crée un utilisateur dans le client et attribue des licences en fonction de l’adresse de messagerie professionnelle ou académique de l’utilisateur. Cela signifie que le nombre d’utilisateurs que vous gérez à un moment donné augmente à mesure que les utilisateurs de votre entreprise s’inscrivent au service.
-
-Si vous gérez votre répertoire localement et utilisez Active Directory Federation Services (AD FS), Microsoft n’ajoute pas les utilisateurs à votre client. Les utilisateurs qui tentent de rejoindre votre client reçoivent un message leur indiquant de contacter l’administrateur de l’organisation.
 
 Si votre organisation ne possède pas d’environnement Office 365 connecté à votre domaine de messagerie, la gestion des identités ne sera pas modifiée. Les utilisateurs seront ajoutés à un nouveau répertoire utilisateur situé dans le cloud et vous aurez la possibilité de devenir l’administrateur client et de gérer les utilisateurs.
 

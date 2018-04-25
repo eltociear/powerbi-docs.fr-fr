@@ -3,7 +3,7 @@ title: Résolution des problèmes de Power BI Gateway - Personal
 description: Résolution des problèmes de Power BI Gateway - Personal
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,13 +16,13 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 1063f8a34041e4c27b481085608d69c3eb32558a
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: d321d70fe201af500feb35ef4e5ea1df6cc558f0
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Résolution des problèmes de Power BI Gateway - Personal
 Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de Power BI Gateway - Personal.
@@ -60,7 +60,7 @@ Vous pouvez obtenir cette erreur dans les paramètres pour \<jeu de données\> s
 
 **Erreur : les informations d’identification fournies pour le jeu de données ne sont pas valides. Mettez à jour les informations d’identification via une actualisation ou dans la boîte de dialogue Paramètres de la source de données pour continuer.**
 
-**Solution :**si vous obtenez un message relatif aux informations d’identification, cela peut signifier ce qui suit :
+**Solution :** si vous obtenez un message relatif aux informations d’identification, cela peut signifier ce qui suit :
 
 * Vérifiez que les noms d’utilisateur et mots de passe utilisés pour se connecter aux sources de données sont à jour. Dans Power BI, accédez aux paramètres d’actualisation pour le jeu de données. Dans Gérer les sources de données, cliquez sur Modifier les informations d’identification pour mettre à jour ces informations pour la source de données.
 * Dans une même requête, les applications web hybrides entre une source cloud et une source locale ne parviennent pas à s’actualiser dans la passerelle personnelle si l’une des sources utilise OAuth pour l’authentification. C’est le cas, par exemple, d’une application web hybride entre CRM Online et un serveur SQL Server local. Cette opération échoue, car CRM Online requiert OAuth.

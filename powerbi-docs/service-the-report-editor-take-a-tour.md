@@ -1,29 +1,29 @@
 ---
-title: "Démarrage rapide : Visite guidée de l’éditeur de rapport"
-description: "Découverte de l’éditeur de rapport."
+title: 'Démarrage rapide : Visite guidée de l’éditeur de rapport'
+description: Découverte de l’éditeur de rapport.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
+backup: ''
+editor: ''
 featuredvideoid: IkJda4O7oGs
-tags: 
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ea40bafdc3c210771e5dd02368df41d3d9287baf
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: b134fe1e5d14f3707391888951178553d5cda7e5
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="the-report-editortake-a-tour"></a>Découverte de l’éditeur de rapport
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Modifier des rapports dans Power BI Desktop et le service Power BI
@@ -56,7 +56,6 @@ Le contenu affiché dans l’éditeur de rapport varie en fonction des sélectio
 |  |  |
 | --- | --- |
 | ![](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>La partie supérieure du volet Visualisations identifie le type de visuel en cours d’utilisation. Dans cet exemple, il s’agit d’un histogramme groupé.<br><br></li> <li>La partie inférieure du volet Visualisations (il se peut que vous deviez défiler vers le bas) affiche les champs utilisés dans le visuel. Ce graphique utilise les champs FiscalMonth, DistrictManager et Total Sales Variance. <br><br></li><li>Le volet Filtres (il se peut que vous deviez faire défiler vers le bas) affiche tous les filtres appliqués. <br><br></li><li>Le volet Champs répertorie les tables disponibles et, si vous développez le nom d’une table, les champs qui composent celle-ci. Une police de couleur jaune indique qu’au moins un champ de cette table est utilisé dans la visualisation.<br><br></li><li>![icône de rouleau de peinture](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) Pour afficher le volet de mise en forme pour la visualisation sélectionnée, choisissez l’icône de rouleau de peinture.<br><br></li><li>![icône de loupe](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) Pour afficher le volet d’analytique, sélectionnez l’icône de loupe.</ul> |
-|  | |
 
 ## <a name="the-visualizations-pane-from-top-to-bottom"></a>Le volet Visualisation (de haut en bas)
 ![haut du volet Visualisation](media/service-the-report-editor-take-a-tour/selectviz.png)

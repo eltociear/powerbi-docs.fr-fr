@@ -2,27 +2,27 @@
 title: Modifier le type de visualisation dans un rapport
 description: Modifier le type de visualisation de rapport dans le service Power BI et Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/20/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c6a5759be3df141e2a93fe8c969a45cdc0b004be
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4ed26bbec81093654314f058f8bcbfac927cf70f
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Modifier le type de visualisation dans un rapport Power BI
 Essayez différents types de visualisation dans le service Power BI et Power BI Desktop pour déterminer celui qui illustre le mieux vos données. 
