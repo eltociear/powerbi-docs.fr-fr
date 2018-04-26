@@ -1,28 +1,28 @@
 ---
-title: "Ajouter une colonne personnalisée dans Power BI Desktop"
-description: "Créer rapidement une colonne personnalisée dans Power BI Desktop"
+title: Ajouter une colonne personnalisée dans Power BI Desktop
+description: Créer rapidement une colonne personnalisée dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7408d7f5c0dff6d1f04ea42a3f4dfefc8600524f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 15d492aba39da23a06ac2f13bce676e0123a332c
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Ajouter une colonne personnalisée dans Power BI Desktop
 Vous pouvez facilement ajouter une nouvelle colonne personnalisée de données à votre modèle à l’aide de l’**éditeur de requête** dans **Power BI Desktop**. Vous pouvez créer et renommer votre colonne personnalisée à l’aide de boutons conviviaux pour créer des [formules M](https://msdn.microsoft.com/library/mt270235.aspx) qui définissent votre colonne personnalisée. Un [contenu de référence complet sur les fonctions](https://msdn.microsoft.com/library/mt779182.aspx) est disponible pour la formule M. 

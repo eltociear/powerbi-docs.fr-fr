@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 37c5e55d426d308fe8ea7de5c6604a9c66f81896
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: f144ed747fc28565a9bbd3a167f9af45725bf0d7
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
 Quand vous travaillez dans la fenêtre **Éditeur de requête** de Power BI Desktop, vous avez accès à un certain nombre de tâches courantes. Ce document décrit ces tâches courantes et fournit des liens pour plus d’informations. 
@@ -100,7 +100,7 @@ La fenêtre **Regrouper par...** s’affiche. Quand l’Éditeur de requête reg
 3. *Opération* : ici, vous spécifiez l’opération appliquée par l’Éditeur de requête.
 4. *Ajouter un regroupement* et *Ajouter une agrégation* : ces options s’affichent une fois l’option **Avancé** sélectionnée. Vous pouvez effectuer des opérations de regroupement (actions**Regrouper par** ) sur plusieurs colonnes et effectuer plusieurs agrégations, toutes dans la fenêtre **Regrouper par** et simultanément. L’Éditeur de requête crée une colonne (en fonction des sélections que vous avez effectuées dans cette fenêtre) qui implique plusieurs colonnes. 
 
-Sélectionnez le bouton **Ajouter un regroupement** ou **Ajouter une agrégation** pour ajouter d’autres regroupements ou d’autres agrégations à une opération **Regrouper par**. Vous pouvez supprimer un regroupement ou une agrégation en cliquant sur l’icône **...** et en sélectionnant **Supprimer** ; essayez pour voir ce que cela donne.
+Sélectionnez le bouton **Ajouter un regroupement** ou **Ajouter une agrégation** pour ajouter d’autres regroupements ou d’autres agrégations à une opération **Regrouper par**. Vous pouvez supprimer un regroupement ou une agrégation en cliquant sur l’icône  **...** et en sélectionnant **Supprimer** ; essayez pour voir ce que cela donne.
    
    ![](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
