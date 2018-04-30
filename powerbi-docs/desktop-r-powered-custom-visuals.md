@@ -1,15 +1,15 @@
 ---
-title: "Utiliser des visuels personnalisés optimisés pour R dans Power BI"
-description: "Utiliser des visuels personnalisés optimisés pour R dans Power BI"
+title: Utiliser des visuels personnalisés optimisés pour R dans Power BI
+description: Utiliser des visuels personnalisés optimisés pour R dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d43b9ec0d471c8a824d3c4d081a38f3bea6ad1e9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 30bb3628b48bbee66622afa30b3364eeacf054ca
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Utiliser des visuels personnalisés optimisés pour R dans Power BI
 Dans **Power BI Desktop** et dans le **service Power BI**, vous pouvez utiliser des visuels personnalisés optimisés pour R sans connaître R ni utiliser de script R. Cela vous permet d’exploiter la puissance d’analyse et visuelle des visuels R et des scripts R sans connaître R ni effectuer de programmation.
@@ -34,25 +34,24 @@ Pour utiliser les visuels personnalisés optimisés pour R, il suffit de sélect
 Les sections suivantes expliquent comment sélectionner, charger et utiliser les visuels optimisés pour R dans **Power BI Desktop**.
 
 ## <a name="use-r-custom-visuals"></a>Utiliser des visuels personnalisés R
-Pour utiliser les visuels optimisés pour R, vous devez télécharger chaque visuel depuis la bibliothèque **de visuels personnalisés**, puis vous pouvez utiliser le visuel comme n’importe quel autre type de visuel dans **Power BI Desktop**. Il existe deux façons d’obtenir des visuels personnalisés : vous pouvez les télécharger à partir du site en ligne **AppSource** ou les parcourir et les obtenir à partir de **Power BI Desktop**. 
+Pour utiliser les visuels optimisés pour R, téléchargez chaque visuel depuis la bibliothèque de **visuels personnalisés**, puis utilisez le visuel comme n’importe quel autre type de visuel dans **Power BI Desktop**. Il existe deux façons d’obtenir des visuels personnalisés : vous pouvez les télécharger à partir du site en ligne **AppSource** ou les parcourir et les obtenir à partir de **Power BI Desktop**. 
 
 ### <a name="get-custom-visuals-from-appsource"></a>Se procurer des visuels personnalisés à partir d’AppSource
 
 Voici les étapes pour parcourir et sélectionner des visuels à partir du site en ligne **AppSource** :
 
-1. Accédez à la bibliothèque des [visuels Power BI](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) à l’adresse [https://appsource.microsoft.com](https://appsource.microsoft.com/). Sélectionnez la case à cocher *Applications Power BI* sous *Affiner par produit*, puis sélectionnez le lien **Afficher tout**.
+1. Accédez à la bibliothèque des visuels Power BI à l’adresse [https://appsource.microsoft.com](https://appsource.microsoft.com/). Sélectionnez la case à cocher *Applications Power BI* sous *Affiner par produit*, puis sélectionnez le lien **Afficher tout**.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2a.png)
 
-2. Sélectionnez **Visuels Power BI** dans la liste des compléments dans le volet gauche. 
-
+2. Dans la page de la bibliothèque des [Visuels Power BI](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1), sélectionnez **Visuels Power BI** dans la liste des Compléments, sur le volet de gauche.
 
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2b.png)
 
 3. Sélectionnez le **visuel** qui vous intéresse dans la galerie. La fenêtre qui s’affiche décrit le visuel. Sélectionnez le bouton **Obtenir maintenant** pour effectuer le téléchargement.
    
    > [!NOTE]
-> Pour créer des scripts dans **Power BI Desktop**, il est nécessaire que R soit installé sur votre ordinateur local. Mais lorsque les utilisateurs souhaitent afficher un visuel optimisé pour R dans le **service Power BI**, *il n’est pas*  nécessaire que R soit installé localement.
+    > Pour créer des scripts dans **Power BI Desktop**, il est nécessaire que R soit installé sur votre ordinateur local. Mais, lorsque les utilisateurs souhaitent afficher un visuel optimisé pour R dans le **service Power BI**, il n’est pas nécessaire que R soit installé localement.
    > 
    > 
    
@@ -63,7 +62,7 @@ Voici les étapes pour parcourir et sélectionner des visuels à partir du site 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
 
-4. Une fois le visuel téléchargé (comme n’importe quel fichier depuis le navigateur), accédez à **Power BI Desktop** et cliquez avec le bouton droit sur les points de suspension (...) dans le volet **Visualisations**, puis sélectionnez **Importer à partir du fichier**.
+4. Une fois le visuel téléchargé (comme n’importe quel fichier depuis le navigateur), accédez à **Power BI Desktop** et cliquez sur les points de suspension (...) dans le volet **Visualisations**, puis sélectionnez **Importer à partir du fichier**.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 5. Un message vous met en garde sur l’importation d’un visuel personnalisé, comme dans l’image suivante :
@@ -79,23 +78,23 @@ Voici les étapes pour parcourir et sélectionner des visuels à partir du site 
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_8.png)
 
-Vous pouvez alors ajouter des données au visuel comme vous le feriez pour n’importe quel autre visuel **Power BI Desktop**. Lorsque vous avez terminé, votre visuel généré s’affiche sur le canevas. Dans l’élément visuel suivant, le visuel **Prévision** optimisé pour R a été utilisé dans les projections de natalité des Nations Unies (visuel sur la gauche).
+9. Vous pouvez alors ajouter des données au visuel comme vous le feriez pour n’importe quel autre visuel **Power BI Desktop**. Lorsque vous avez terminé, votre visuel généré s’affiche sur le canevas. Dans l’élément visuel suivant, le visuel **Prévision** optimisé pour R a été utilisé dans les projections de natalité des Nations Unies (visuel sur la gauche).
 
-![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_10.png)
+    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_10.png)
 
-Comme pour n’importe quel autre visuel **Power BI Desktop**, vous pouvez publier ce rapport avec ses visuels optimisés pour R dans le **service Power BI** et le partager avec d’autres utilisateurs.
+    Comme pour n’importe quel autre visuel **Power BI Desktop**, vous pouvez publier ce rapport avec ses visuels optimisés pour R dans le **service Power BI** et le partager avec d’autres utilisateurs.
 
-Visitez souvent la bibliothèque, car elle est continuellement mise à jour avec de nouveaux visuels.
+    Visitez souvent la bibliothèque, car elle est continuellement mise à jour avec de nouveaux visuels.
 
 ### <a name="get-custom-visuals-from-within-power-bi-desktop"></a>Obtenir des visuels personnalisés à partir de **Power BI Desktop**
 
-Vous pouvez également obtenir des visuels personnalisés à partir de **Power BI Desktop**. Dans **Power BI Desktop**, cliquez sur les points de suspension (...) dans le volet **Visualisations** et sélectionnez **Importer du Store**.
+1. Vous pouvez également obtenir des visuels personnalisés à partir de **Power BI Desktop**. Dans **Power BI Desktop**, cliquez sur les points de suspension (...) dans le volet **Visualisations** et sélectionnez **Importer de la Place de marché**.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 
-Lorsque vous procédez ainsi, la boîte de dialogue **Visuels personnalisés Power BI** apparaît. Vous pouvez y faire défiler les visuels personnalisés disponibles et sélectionner ceux qui vous intéressent. Vous pouvez effectuer une recherche par nom, sélectionner une catégorie ou simplement parcourir les visuels disponibles. Lorsque vous êtes prêt, sélectionnez simplement **ajouter** pour ajouter le visuel personnalisé à **Power BI Desktop**.
+2. Lorsque vous procédez ainsi, la boîte de dialogue **Visuels Power BI** apparaît. Vous pouvez y faire défiler les visuels personnalisés disponibles et sélectionner ceux qui vous intéressent. Vous pouvez effectuer une recherche par nom, sélectionner une catégorie ou simplement parcourir les visuels disponibles. Lorsque vous êtes prêt, sélectionnez simplement **ajouter** pour ajouter le visuel personnalisé à **Power BI Desktop**.
 
-![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
+   ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
 
 ## <a name="contribute-r-powered-custom-visuals"></a>Contribuer aux visuels personnalisés optimisés pour R
 Si vous créez vos propres visuels R pour les utiliser dans vos rapports, vous pouvez les partager de façon publique en les ajoutant à la **galerie de visuels personnalisés**. Le processus de contribution réalisé par le biais de GitHub est décrit ici :
@@ -114,19 +113,22 @@ La section suivante décrit les étapes de dépannage possibles pour aider à r�
 ### <a name="missing-or-outdated-r-packages"></a>Packages R manquants ou obsolètes
 Quand vous tentez d’installer un visuel personnalisé optimisé pour R, vous pouvez rencontrer des erreurs lorsque des packages R sont obsolètes ou manquants. Cela est généralement dû à une des raisons suivantes :
 
-* L’installation de R n’est pas compatible avec le package R.
-* Des paramètres de proxy, un logiciel antivirus ou un pare-feu empêchent R de se connecter à Internet.
-* La connexion Internet est lente ou il y a un problème de connexion.
+* L’installation de R n’est pas compatible avec le package R
+* Les paramètres de proxy, de logiciel antivirus ou de pare-feu empêchent R de se connecter à Internet
+* La connexion Internet est lente ou il y a un problème de connexion
 
-L’équipe Power BI travaille activement à atténuer ces problèmes en amont. La prochaine version de Power BI Desktop intègrera des mises à jour qui permettront de les résoudre. En attendant, vous pouvez effectuer une ou plusieurs des étapes suivantes pour atténuer les problèmes :
+L’équipe Power BI travaille activement pour atténuer ces problèmes en amont. La prochaine version de Power BI Desktop intègrera des mises à jour qui permettront de les résoudre. En attendant, vous pouvez effectuer une ou plusieurs des étapes suivantes pour atténuer les problèmes :
 
 1. Supprimez le visuel personnalisé, puis réinstallez-le. Cela lance une nouvelle installation des packages R.
-2. Si votre installation de R n’est pas à jour, mettez-la à niveau, puis supprimez/réinstallez le visuel personnalisé comme décrit à l’étape précédente.
+2. Si votre installation de R n’est pas à jour, mettez-la à niveau, puis supprimez et réinstallez le visuel personnalisé comme décrit à l’étape précédente.
    
-   * Les versions prises en charge de R sont répertoriées dans la description de chaque visuel personnalisé optimisé pour R, comme illustré dans l’image suivante.
+   Les versions prises en charge de R sont répertoriées dans la description de chaque visuel personnalisé optimisé pour R, comme illustré dans l’image suivante.
+   
      ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_11.png)
      > [!NOTE]
-> Vous pouvez conserver l’installation R d’origine et associer uniquement Power BI Desktop avec la version actuelle que vous installez. Accédez à **Fichier -> Options et paramètres -> Options > Script R**.
+    > Vous pouvez conserver l’installation R d’origine et associer uniquement Power BI Desktop avec la version actuelle que vous installez. Accédez à **Fichier -> Options et paramètres -> Options > Script R**.
+    >
+    >
 3. Installez les packages R manuellement à l’aide d’une console R. Les étapes de cette approche sont les suivantes :
    
    a.  Téléchargez le script d’installation des visuels optimisés pour R et enregistrez ce fichier sur un lecteur local.

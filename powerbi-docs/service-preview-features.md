@@ -1,36 +1,36 @@
 ---
-title: "S’inscrire pour accéder aux fonctionnalités en version préliminaire"
-description: "Activez et désactivez les fonctionnalités en version préliminaire de Power BI."
+title: S’inscrire pour accéder aux fonctionnalités en version préliminaire
+description: Activez et désactivez les fonctionnalités en version préliminaire de Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 45f10ab7fef7669adbbc836e67a4daaed267905e
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 54aa25b0d5252af24bdbefef3f1d5798df2f6168
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="opt-in-for-power-bi-preview-features"></a>Inscrivez-vous pour accéder aux fonctionnalités en version préliminaire de Power BI
+# <a name="opt-in-for-power-bi-service-preview-features"></a>Accéder aux fonctionnalités en préversion du service Power BI
 ## <a name="what-are-preview-features"></a>Que sont les*fonctionnalités en version préliminaire*?
-Dans le cadre des améliorations que nous apportons à Power BI, nous allons publier certaines nouvelles fonctionnalités en tant que *fonctionnalités en version préliminaire*. Vous pouvez activer et désactiver ces dernières afin de les essayer.
+Dans le cadre des améliorations que nous apportons à Power BI, nous allons publier certaines nouvelles fonctionnalités en tant que *fonctionnalités en préversion*. Vous pouvez activer et désactiver ces dernières afin de les essayer.
 
 > [!TIP]
-> Vous avez des questions ou des commentaires ? [Visitez le forum de la communauté Power BI](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview).
+> Les fonctionnalités en préversion sont également disponibles pour Power BI Desktop, pour plus d’informations [visitez le forum de la communauté Power BI Desktop](https://community.powerbi.com/t5/Desktop/bd-p/power-bi-designer).
 > 
 > 
 

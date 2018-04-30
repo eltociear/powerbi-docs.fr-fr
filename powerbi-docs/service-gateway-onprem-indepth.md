@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5f081dff246c478f1b9ee3c918de2099b8382100
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 5480768fc088b3a32a1af222d38e3829298e8f0d
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Informations approfondies sur la passerelle de données locale
 Les utilisateurs de votre organisation peuvent accéder aux données locales (auxquelles ils ont déjà accès), mais avant qu’ils puissent se connecter à votre source de données locale, vous devez installer et configurer une passerelle de données locale. La passerelle favorise une communication rapide et sécurisée en arrière-plan entre un utilisateur dans le cloud et votre source de données locale, dans les deux sens.
@@ -87,10 +87,7 @@ Les services cloud reconnaissent uniquement les comptes dans Azure Active Direct
    Vous pouvez créer un compte sur le portail Azure ou dans le portail d’administration Office 365. Le nom du compte correspond alors au nom d’utilisateur principal du compte Active Directory local.
 2. Vous pouvez utiliser l’outil [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) pour synchroniser les comptes locaux avec votre locataire Azure Active Directory.
    
-   L’outil Azure AD Connect fournit des options de synchronisation des annuaires et des mots de passe. Si vous n’êtes pas un administrateur de locataire ou un administrateur de domaine local, vous devez contacter votre administrateur pour qu’il se charge de la configuration.
-3. Vous pouvez configurer Active Directory Federation Services (ADFS).
-   
-   Vous pouvez associer votre serveur AD FS à votre locataire AAD avec l’outil [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/). ADFS utilise la synchronisation d’annuaires évoquée ci-dessus et autorise également l’authentification unique. Par exemple, si vous êtes dans le réseau de votre entreprise, quand vous vous connectez à un service cloud, il se peut que vous ne soyez pas invité à entrer un nom d’utilisateur ou un mot de passe. Vous devez voir avec votre administrateur si cette option est disponible pour votre organisation.
+   L’outil Azure AD Connect offre des options de synchronisation des répertoires et de configuration de l’authentification, y compris la synchronisation du hachage de mot de passe, l’authentification directe et la fédération. Si vous n’êtes pas un administrateur de locataire ou un administrateur de domaine local, vous devez contacter votre administrateur pour qu’il se charge de la configuration.
 
 L’utilisation d’Azure AD Connect permet de vérifier que les UPN d’AAD et de votre annuaire Active Directory local correspondent.
 

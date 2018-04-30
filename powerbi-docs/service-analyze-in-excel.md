@@ -1,28 +1,28 @@
 ---
 title: Analyser dans Excel
-description: "Découvrez comment analyser des jeux de données Power BI dans Excel"
+description: Découvrez comment analyser des jeux de données Power BI dans Excel
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 03/22/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 385a89d6b50507833c1e43327c405f02b2468ac2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5cd319266e91a6bc4736a123375b797331dba568
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
 Vous pouvez utiliser Excel pour afficher et interagir avec un jeu de données Power BI. L’option qui permet cela se nomme **Analyser dans Excel**. Cette option permet également d’accéder aux fonctionnalités de segments, de graphiques et de tableaux croisés dynamiques d’Excel, selon le jeu de données qui se trouve dans Power BI.
@@ -105,3 +105,5 @@ Quand un utilisateur avec lequel vous avez partagé votre classeur ouvre celui-c
 
 Étant donné que les utilisateurs doivent actualiser le jeu de donnée et que l’actualisation n’est pas prise en charge dans Excel Online pour les connexions externes, il est recommandé d’ouvrir le classeur dans une version de bureau d’Excel.
 
+## <a name="troubleshooting"></a>Résolution des problèmes
+Il peut arriver que vous obteniez un résultat inattendu lors de l’utilisation de la fonctionnalité Analyser dans Excel, ou que la fonctionnalité ne fonctionne pas comme prévu. [Cette page offre des résolutions communes des problèmes associés à l’utilisation de Analyser dans Excel](desktop-troubleshooting-analyze-in-excel.md)

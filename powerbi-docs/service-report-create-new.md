@@ -1,36 +1,36 @@
 ---
-title: "Didacticiel : Créer un rapport à partir d’un jeu de données "
-description: "Créez un rapport Power BI à partir d’un jeu de données."
+title: 'Didacticiel : Créer un rapport à partir d’un jeu de données '
+description: Créez un rapport Power BI à partir d’un jeu de données.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 7da16deb3e5919d509a5cbbb7fd845914c8c4ea4
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: e6c4a614f19a6ba7b9e24c199b7f291e7f57f098
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-a-new-power-bi-report-by-importing-a-dataset"></a>Créer un rapport Power BI en important un jeu de données
-Vous avez lu [apports dans Power BI](service-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe de nombreuses façons de créer un rapport. Dans cet article, nous allons commencer par créer un rapport très basique à partir d’un jeu de données Excel. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, les **Étapes suivantes** plus bas vous dirigeront vers des rubriques plus avancées concernant les rapports.  
+# <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Créer un nouveau rapport du service Power BI en important un jeu de données
+Vous avez lu [apports dans Power BI](service-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe de nombreuses façons de créer un rapport. Dans cet article, nous allons commencer par créer un rapport très basique à partir d’un jeu de données Excel à l’aide du service Power BI. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, les **Étapes suivantes** plus bas vous dirigeront vers des rubriques plus avancées concernant les rapports.  
 
 > **CONSEIL** : pour créer un rapport en copiant un rapport existant, voir [Copier un rapport](power-bi-report-copy.md).
 > 
 ### <a name="prerequisites"></a>Conditions préalables
-- Service Power BI (pour créer des rapports avec Power BI Desktop, consultez la section [Affichage Rapport Desktop](desktop-report-view.md)   
+- Service Power BI (pour créer des rapports avec Power BI Desktop, consultez [Affichage du rapport Desktop](desktop-report-view.md))  
 - Jeu de données d’exemple Analyse de la vente au détail
 
 ## <a name="import-the-dataset"></a>Importer le jeu de données

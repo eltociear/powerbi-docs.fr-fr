@@ -1,13 +1,13 @@
 ---
-title: "Inscription individuelle à Power BI"
-description: "Découvrez comment vous inscrire à Power BI et commencer à l’utiliser pour vos rapports et vos visualisations."
+title: Inscription individuelle à Power BI
+description: Découvrez comment vous inscrire à Power BI et commencer à l’utiliser pour vos rapports et vos visualisations.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 08/02/2017
 ms.service: powerbi
@@ -16,13 +16,13 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/02/2018
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: b098c87796306bedb8f9da43971d093f464dd4bd
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 7f40fdfd3e9784ab05fe0f44612cea6d48d739fe
+ms.sourcegitcommit: 20adb55065af8e2f48387a00e64c72cf6d700f0f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Inscription individuelle à Power BI
 Découvrez comment vous inscrire à Power BI et commencer à l’utiliser pour vos rapports et vos visualisations.
@@ -68,7 +68,7 @@ Le reste de cet article examinera comment s’inscrire à chaque option.
 La méthode la plus rapide pour vous inscrire à Power BI consiste à créer un compte Power BI (gratuit). La création de ce compte n’entraîne aucuns frais et vous permet d’utiliser de nombreuses fonctionnalités associées à ce service.
 
 > [!NOTE]
-> Si vous recevez un message indiquant que nous vous connaissons déjà, essayez d’accéder à la page https://app.powerbi.com et de vous connecter.
+> Si vous recevez un message disant que nous vous connaissons déjà, essayez d’accéder à https://app.powerbi.com et connectez-vous.
 > 
 > 
 
@@ -88,7 +88,7 @@ Pour vous inscrire à Power BI, vous pouvez procédez comme suit.
    
     ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup4.png)
 6. Cliquez sur le lien inclus dans le message pour vérifier votre adresse de courrier. Vous réintégrez alors la procédure d’inscription. Vous devrez peut-être fournir des informations personnelles supplémentaires.
-7. Vous êtes alors redirigé vers le site https://app.powerbi.com et vous pouvez commencer à utiliser Power BI en tant qu’utilisateur gratuit.
+7. Vous êtes alors redirigé vers https://app.powerbi.com et vous pouvez commencer à utiliser Power BI en tant qu’utilisateur gratuit.
 
 ### <a name="what-this-looks-like-within-the-service"></a>Aperçu au sein du service
 Une fois dans le service, vous pouvez vérifier que vous utilisez un compte gratuit en accédant à l’icône d’**engrenage** et en sélectionnant **Gérer le stockage personnel**.

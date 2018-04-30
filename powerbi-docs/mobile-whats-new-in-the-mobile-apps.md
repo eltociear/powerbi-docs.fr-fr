@@ -12,16 +12,16 @@ qualityfocus: no
 qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/20/2018
+ms.date: 04/09/2018
 ms.author: maggies
-ms.openlocfilehash: 29241b4c0f059540e6f1496f04b3044ebbd7d68b
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 9caf6e6867c55d3c601ac417add173d0af091897
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -29,6 +29,17 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](service-whats-new.md)  
+
+## <a name="april-2018"></a>Avril 2018
+
+### <a name="mobile-drill-down-and-drill-up"></a>Exploration mobile dans tous les sens
+
+Vous pouvez maintenant explorer des visuels du rapport dans tous les sens sur votre appareil mobile. Pour accéder à cette nouvelle fonctionnalité, appuyez et maintenez la pression sur le menu de l’info-bulle d’un rapport visuel pour l’ouvrir, puis appuyez sur les boutons d’extraction pour explorer vos données en profondeur.
+
+### <a name="persistent-filters"></a>Filtres persistants
+
+Nous avons récemment mis à jour les filtres et les segments de rapport, afin qu’ils soient automatiquement enregistrés à partir de Power BI sur le Web dans l’application mobile Power BI. À présent, les filtres et les segments que vous définissez dans l’application mobile sont automatiquement enregistrés dans Power BI sur le Web.
+
 
 ## <a name="march-2018"></a>Mars 2018
 

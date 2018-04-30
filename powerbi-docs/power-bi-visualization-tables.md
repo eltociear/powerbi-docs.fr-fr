@@ -1,29 +1,29 @@
 ---
-title: 'Didacticiel : Visualisations de tableaux dans les rapports et les tableaux de bord Power BI (didacticiel)'
+title: Visualisations de table dans les rapports et tableaux de bord Power BI (didacticiel)
 description: Ce didacticiel explique comment utiliser les visualisations de tableaux dans les rapports et les tableaux de bord Power BI, et notamment comment redimensionner la largeur des colonnes.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d41fd5085912ec74312fa4a4b25060cbd4afba94
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: a36e2afcda7c741c871b07c526ab010f77290a3b
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards-tutorial"></a>Utilisation des tableaux dans les rapports et les tableaux de bord Power BI (didacticiel)
 Un tableau est une grille qui contient les données connexes dans une série logique de lignes et colonnes. Il peut également contenir des en-têtes et une ligne de totaux. Les tableaux fonctionnent correctement avec des comparaisons quantitatives où vous examinez de nombreuses valeurs pour une même catégorie. Par exemple, ce tableau affiche 5 mesures différentes pour la **Catégorie**.
@@ -69,15 +69,21 @@ Il existe de très nombreuses façons de mettre en forme un tableau. Nous en abo
 
 * Essayez de mettre en forme la grille du tableau. Nous avons appliqué ici un quadrillage vertical de couleur bleue, ajouté de l’espace aux lignes, ainsi qu’augmenté légèrement la taille de contour et de texte.
   
-    ![](media/power-bi-visualization-tables/power-bi-table-grid2-new.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-gridnew.png)
   
     ![](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 * Pour les en-têtes de colonne, nous avons modifié la couleur d’arrière-plan, ajouté un contour et augmenté la taille de la police. 
   
-    ![](media/power-bi-visualization-tables/power-bi-table-column.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-column-headers.png)
+
   
     ![](media/power-bi-visualization-tables/power-bi-table-column2.png)
-* Après quelques retouches supplémentaires de la mise en forme, voici notre tableau final. Compte tenu du nombre très important d’options de mise en forme, la meilleure façon d’apprendre consiste à partir d’un tableau simple, à ouvrir le volet Mise en forme ![](media/power-bi-visualization-tables/power-bi-format.png), puis à explorer les options. 
+
+* Vous pouvez même appliquer la mise en forme aux colonnes individuelles et aux en-têtes de colonnes. Commencez par développer **Mise en forme des champs** et sélectionnez la colonne à mettre en forme dans la liste déroulante. Selon les valeurs des colonnes, Mise en forme des champs vous permet de définir des éléments tels que : unités d’affichage, couleur de police, nombre de places décimales, arrière-plan, alignement et bien plus encore. Une fois que vous avez ajusté les paramètres, décidez s’il faut appliquer ces paramètres à l’en-tête et à toutes les lignes également.
+
+    ![](media/power-bi-visualization-tables/power-bi-field-formatting.png)
+
+* Après quelques retouches supplémentaires de la mise en forme, voici notre tableau final. Compte tenu du nombre d’options de mise en forme, la meilleure façon d’apprendre consiste à commencer par la mise en forme par défaut, à ouvrir le volet Mise en forme ![](media/power-bi-visualization-tables/power-bi-format.png), puis à démarrer l’exploration. 
   
     ![](media/power-bi-visualization-tables/power-bi-table-format.png)
 

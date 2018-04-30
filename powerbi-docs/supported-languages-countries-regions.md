@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/20/2018
+ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0ca6a21e67e7ab1d2a0c0daa8da07052041db139
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 4552e08c5291ee5f0ce268e796e1a9148eb64be2
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Langues et pays/régions pris en charge pour Power BI
 
@@ -153,9 +153,9 @@ Si vous téléchargez Power BI Desktop ou l’installez à partir du Windows Sto
 
 1. Dans Power BI Desktop, sélectionnez **Fichier** > **Options et paramètres** > **Options**.
 2. Sous **Fichier actuel**, sélectionnez **Paramètres régionaux**.
-3. Dans la zone **Paramètres régionaux**, sélectionnez des paramètres régionaux différents. 
+3. Dans la boîte **Paramètres régionaux à importer**, sélectionnez des paramètres régionaux différents. 
    
-   ![Boîte de dialogue Options de Power BI Desktop](media/supported-languages-countries-regions/pbi_supptdlangs_locale.png)
+   ![Boîte de dialogue Options de Power BI Desktop](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Sélectionnez **OK**.
 
 ### <a name="choose-the-language-for-the-model-in-power-bi-desktop"></a>Choisir la langue du modèle dans Power BI Desktop

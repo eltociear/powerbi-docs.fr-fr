@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/11/2017
 ms.author: tankas
-ms.openlocfilehash: 1345cfee8eb92b9b4e3cf883f19edddee859a1c3
-ms.sourcegitcommit: c9905e625ba14dc28ad23835f320e49631c51d0f
+ms.openlocfilehash: 67b9a162d689a8615a3e2459295eab6dad6d2364
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -46,7 +46,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - Correctif pour l’exportation vers Word qui crée une hauteur de ligne inégale si le contenu de la ligne est vide
             - Pour les rapports paginés (RDL), correctif pour la chaîne de connexion basée sur une expression qui est supprimée quand vous changez les informations d’identification pour la source de données
             - Correctif pour la possibilité d’utiliser des indicateurs de performance clés avec des valeurs texte
-            - Pour les rapports paginés (RDL), correctif pour la possibilité d’affecter un nouveau jeu de données à un rapport paginé (RDL) existant
+            - Pour les rapports paginés (RDL), correctif pour pouvoir assigner un nouveau jeu de données à un rapport paginé (RDL) existant
             - Autres correctifs de stabilité et de facilité d’utilisation
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
@@ -64,7 +64,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - Correctif pour ExecutionNotFoundException lors de l’exportation d’un rapport avec différentes valeurs de paramètre au format PDF
 
     - *Version 1.1.6551.5155 (Build 14.0.600.438), publiée le 11 décembre 2017*
-        - Corrections de bogues
+        - Résolutions de bogues
             - Échec de l’enregistrement des données après actualisation pour certains rapports Power BI Desktop.
 
     - *Version 1.1.6530.30789 (Build 14.0.600.437), publiée le 17 novembre 2017*
@@ -75,8 +75,8 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - Pour les rapports Power BI (PBIX), correctif corrigeant le problème suivant : l’ajout de légendes à un graphique en courbes restitue un visuel vide
 
     - *Version 1.1.6514.9163 (Build 14.0.600.434), publiée le 1e novembre 2017*
-        - Corrections de bogues
-            - Résoudre des problèmes de fiabilité de chargement pour les rapports PBIX de plus de 500 Mo
+        - Résolutions de bogues
+            - Correctif des problèmes de fiabilité de chargement pour les rapports PBIX de plus de 500 Mo
             - Résoudre le problème de chargement de données pour les rapports PBIX de plus de 1 Go
 
     - *Version 1.1.6513.3500 (Build 14.0.600.433), publiée le 31 octobre 2017*
@@ -92,6 +92,9 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - Améliorations de l’accessibilité
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
+    - *Version : 2.51.4885.3981 (octobre 2017), publiée le 10 avril 2018*
+        - Mises à jour de sécurité
+
     - *Version : 2.51.4885.2501 (octobre 2017), publiée le 10 janvier 2018*
         - Mises à jour de sécurité
 
@@ -118,7 +121,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
     - *Build 14.0.600.301, publiée le 11 juillet 2017*
         - Corrections de bogues
             - La balise {{UserId}} est remplacée par des informations d’identification stockées plutôt que par l’utilisateur qui exécute le rapport dans Rapports Power BI
-            - Échec d’affichage de certaines images dans les rapports de Power BI Report Server
+            - Échec du rendu de certaines images dans des rapports de Power BI Report Server
             - Impossibilité de modifier le nom d’un rapport Power BI dans Power BI Report Server
             - Impossibilité de charger des éléments visuels personnalisés dans l’application Power BI Mobile (nécessite la réinstallation de l’application mobile pour effacer le cache local)
 

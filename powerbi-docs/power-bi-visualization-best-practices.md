@@ -1,35 +1,35 @@
 ---
-title: Bonnes pratiques de conception de visuels et de rapports (livre blanc)
-description: "Livre blanc : bonnes pratiques de conception de rapports dans Power BI"
+title: Meilleures pratiques en matière de conception de visuels et de rapports (livre blanc)
+description: 'Livre blanc : meilleures pratiques en matière de conception de rapports dans Power BI'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/21/2017
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 868d05891d1b2cb24dfae60b7f3bee405ff7d08f
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: c1b0d87d432dc337a1dab5d13bba10cc8c99dd14
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="best-design-practices-for-reports-and-visuals"></a>Bonnes pratiques de conception de visuels et de rapports
+# <a name="best-design-practices-for-reports-and-visuals"></a>Meilleures pratiques en matière de conception de visuels et de rapports
 <!-- Shared newnav Include -->
 [!INCLUDE [newnavbydefault](./includes/newnavbydefault.md)]
 
 ## <a name="introduction"></a>Introduction
-Ce document fournit les bonnes pratiques de conception de rapports dans Power BI. En commençant par la planification, il présente les principes de conception que vous pouvez appliquer à vos rapports et aux pages et visuels qui composent ces derniers.  Bon nombre de ces bonnes pratiques s’appliquent également à la conception de tableaux de bord.
+Ce document fournit les meilleures pratiques en matière de conception de rapports dans Power BI. En commençant par la planification, il présente les principes de conception que vous pouvez appliquer à vos rapports et aux pages et visuels qui composent ces derniers.  Bon nombre de ces meilleures pratiques s’appliquent également à la conception de tableaux de bord.
 
 Nous espérons que ce document vous servira de point de départ, que vous allez appliquer les connaissances acquises à vos propres rapports et visualisations et que vous allez continuer la conversation sur community.powerbi.com. La conception et la visualisation de rapports décisionnels est un vrai sujet d’actualité. De nombreux leaders d’opinion, blogueurs et sites web évoquent ce sujet en long et en large. Nous en avons répertorié quelques-uns à la fin de ce document.   
 
@@ -607,7 +607,7 @@ L’exemple ci-dessous montre les tendances dans le nombre de médailles distrib
 #### <a name="best-practices"></a>Meilleures pratiques
 * Lorsque les utilisateurs regardent les graphiques en courbes, la première chose qu’ils voient est la forme de la courbe.  Cela signifie que vous avez besoin d’un axe X qui rend la courbe explicite, par exemple des catégories de temps et de distribution.  Si vous placez des champs de catégorie comme un produit ou une zone géographique sur l’axe X, le graphique en courbes n’est pas intéressant, car la forme de la courbe ne fournit aucune information pertinente.
 * Si vous choisissez de placer plusieurs graphiques les uns au-dessous des autres comme ceci, pour faciliter la comparaison entre les séries, alignez l’axe X. Utilisez des filtres pour vous assurer que la même plage de valeurs est affichée.  Par exemple, si vous examinez des plages de dates, vérifiez qu’elles sont identiques.  Par exemple, de 1896 à 2012 sur les deux graphiques.
-* Tirez pleinement parti de l’espace.  Si cela est pertinent pour vos données, définissez les points de début et de fin de l’axe Y pour éliminer l’espace vide en haut et en bas de votre graphique et mettre en évidence les points de données réels. Pour ce faire, ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau. Développez la zone **Axe Y** et définissez les points de **début** et de **fin**.
+* Utilisez tout l’espace.  Si cela est pertinent pour vos données, définissez les points de début et de fin de l’axe Y pour éliminer l’espace vide en haut et en bas de votre graphique et mettre en évidence les points de données réels. Pour ce faire, ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau. Développez la zone **Axe Y** et définissez les points de **début** et de **fin**.
   
   ![](media/power-bi-visualization-best-practices/power-bi-start-end.png)
   
@@ -637,7 +637,7 @@ Si les graphiques en courbes sont la norme pour consulter les données sur une p
 
 **Figure 51 : Graphique à barres horizontales**
 
-#### <a name="best-practices"></a>Bonnes pratiques
+#### <a name="best-practices"></a>Meilleures pratiques
 * Affichez les étiquettes de données pour les valeurs.  Cela permet d’identifier plus facilement des valeurs spécifiques. Pour ce faire, ouvrez le volet Mise en forme et définissez **Étiquettes de données** sur Activé.
   
   ![](media/power-bi-visualization-best-practices/power-bi-data-labels.png)
@@ -655,7 +655,7 @@ Si les graphiques en courbes sont la norme pour consulter les données sur une p
 
 Pour plus d’informations sur les graphiques à barres et les histogrammes :
 
-* [Graphiques à barres 101](http://blog.newscred.com/article/data-visualization-101-bar-charts/3c53044d4add7c31e79a3f80128771f4?page=thankyou)
+* [Graphiques à barres 101](http://blog.newscred.com/article/data-visualization-101-bar-charts)
 * [Catalogue de visualisation de données : graphique à barres](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
 * [Catalogue de visualisation de données : graphique à barres multijeu](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
@@ -668,7 +668,7 @@ Ajoutez une autre dimension à vos graphiques à barres/histogrammes en empilant
 
 **Figure 54 : Histogramme empilé**
 
-Cet histogramme empilé nous montre que le chiffre d’affaires total augmente au fil du temps et que les catégories Commercial et Broadcasting augmentent régulièrement au fil du temps, ce qui contribue à l’augmentation globale du chiffre d’affaires.  Malgré tout, ce graphique ne permet pas de comparer facilement l’impact de chacune des 3 catégories entre elles. Par exemple, en quoi la croissance de la catégorie Commercial est-elle comparable à la croissance de la catégorie Broadcasting ou Match Day ?  Pour ces données, un graphique en courbes constitue un meilleur choix ou un visuel complémentaire.  
+Cet histogramme empilé nous montre que le chiffre d’affaires total augmente au fil du temps et que les catégories Commercial et Broadcasting augmentent régulièrement au fil du temps, ce qui contribue à l’augmentation globale du chiffre d’affaires.  Malgré tout, ce graphique ne permet pas de comparer facilement l’impact de chacune des 3 catégories entre elles. Par exemple, en quoi la croissance de la catégorie Commercial est-elle comparable à la croissance de la catégorie Broadcasting ou Match Day ?  Pour ces données, un graphique en courbes constitue un meilleur choix ou un visuel compagnon.  
 
 ![](media/power-bi-visualization-best-practices/power-bi-deloite2.png)
 
@@ -680,7 +680,7 @@ Dans ce graphique en courbes, il est plus facile de voir que le chiffre d’affa
 * Comme avec les barres/colonnes, vous avez la possibilité de choisir un affichage horizontal ou vertical.   L’affichage horizontal est un meilleur choix si vous avez de longues étiquettes et l’affichage vertical est idéal pour les données de séries chronologiques.  
 * Évitez d’utiliser des graphiques à barres/histogrammes empilés si vous souhaitez afficher les tendances et d’autres modèles de changement au fil du temps.  D’autres graphiques, tels que les graphiques en courbes, sont beaucoup plus efficaces.
 * Vous pouvez également baser la distribution sur le volume total ou comme pourcentage du total.  
-* Comme l’a indiqué Stephen Few, *il est difficile de comparer les segments d’un graphique à barres empilées. Si les segments sont organisés côte à côte et ont tous augmenté à partir de la même ligne de référence, il est facile de comparer leurs hauteurs, mais s’ils sont empilés les uns sur les autres, la tâche devient difficile. De plus, bien qu’il soit assez facile de voir comment (le chiffre d’affaires) a évolué d’un mois à l’autre, il est très difficile de voir comment (le chiffre d’affaires) d’autres (catégories) a changé*.  
+* Comme l’a indiqué Stephen Few, *il est difficile de comparer les segments d’un graphique à barres empilées. Si les segments sont organisés côte à côte et ont tous augmentés à partir de la même ligne de référence, il est facile de comparer leurs hauteurs, mais s’ils sont empilés les uns sur les autres, la tâche devient difficile. De plus, bien qu’il soit assez facile de voir comment (le chiffre d’affaires) a évolué d’un mois à l’autre, il est très difficile de voir comment (le chiffre d’affaires) d’autres (catégories) a changé*.  
 * Les graphiques empilés 100 % sont un bon choix lors de l’utilisation de pourcentages dont le total est égal à 100.  Dans l’exemple ci-dessous, nous voyons la distribution de catégorie par équipe.  Les pourcentages sont relatifs et nous permettent de visualiser en un clin d’œil les tendances. Par exemple, le chiffre d’affaires de Everton provient principalement de la catégorie Broadcasting (plus de 70 %) alors que celui de PSG tire seulement 20 % de son chiffre d’affaires de Broadcasting.  Le choix d’un affichage horizontal permet de facilement ajuster les étiquettes d’équipes et de voir l’impact du type de chiffre d’affaires.
   
   ![](media/power-bi-visualization-best-practices/power-bi-deloite3.png)
@@ -734,7 +734,7 @@ Pour ce faire, ouvrez le volet Mise en forme, développez **Axe Y** et définis
 
 Pour plus d’informations, consultez les rubriques suivantes :
 
-* [Didacticiel : graphique combiné dans Power BI](power-bi-visualization-combo-chart.md)
+* [Tutoriel : graphique combiné dans Power BI](power-bi-visualization-combo-chart.md)
 * [The danger of dual-scaled Axes in visuals](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf) (Le risque des axes à deux échelles dans les graphiques)
 
 ### <a name="scatter-chart"></a>Nuage de points
@@ -810,14 +810,14 @@ Les indicateurs de performance clés montrent la valeur, l’état, l’objectif
 
 Pour plus d’informations, consultez :
 
-* [Didacticiel : jauges radiales dans Power BI](power-bi-visualization-radial-gauge-charts.md)
+* [Tutoriel : graphiques en jauge radiale dans Power BI](power-bi-visualization-radial-gauge-charts.md)
 * [Didacticiel : Indicateurs de performance clés dans Power BI](power-bi-visualization-kpi.md)
 
 ## <a name="conclusion"></a>Conclusion
 Il est maintenant temps de tester ces meilleures pratiques.  Gardez le contact et partagez les vôtres. Vous n’êtes pas d’accord avec nos recommandations ou vous avez trouvé une bonne raison d’enfreindre les règles ?  Faites-nous part de vos commentaires à ce sujet.  
 
 ### <a name="book-recommendations"></a>Recommandations de livres
-Il existe plusieurs bons livres qui peuvent aider les équipes à réviser les techniques de conception de visuels. Nous vous recommandons fortement de lire le livre *Information Dashboard Design* de Stephen Few. Il approfondit le sujet dans deux autres livres : *Show Me the Numbers* et *Now You See It*. Stephen Few et d’autres ont trouvé leur inspiration auprès de Edward R. Tufte, dont le livre *The Visual Display of Quantitative Information* est considéré comme un classique dans le secteur. Tufte a également écrit *Visual Explanations*, *Envisioning Information* et *Beautiful Evidence*. Nous vous recommandons également le nouvel ouvrage de Andy Kirk *Data Visualization: A Handbook for Data Driven Design*. Voici d’autres auteurs recommandés : Lachlan James, William McKnight et Boris Evelson (Forrester), Darkhorse Analytics.
+Il existe plusieurs bons livres qui peuvent aider les équipes à réviser les techniques de conception de visuels. Nous vous recommandons fortement de lire le livre *Information Dashboard Design* de Stephen Few. Il approfondit le sujet dans deux autres livres : *Show Me the Numbers* et *Now You See It*. Few et d’autres ont trouvé leur inspiration auprès de Edward R. Tufte, dont le livre *The Visual Display of Quantitative Information* est considéré comme un classique dans le secteur. Tufte a également écrit *Visual Explanations*, *Envisioning Information* et *Beautiful Evidence*. Nous vous recommandons également le nouvel ouvrage de Andy Kirk *Data Visualization: A Handbook for Data Driven Design*. Voici d’autres auteurs recommandés : Lachlan James, William McKnight et Boris Evelson (Forrester), Darkhorse Analytics.
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
 

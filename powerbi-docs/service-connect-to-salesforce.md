@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/16/2017
+ms.date: 04/13/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8089c796441fd4200b146da6330dd5c208bf8b30
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 62624d35f1fb477c4daf2ffcef92bb18fb8a6a8e
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Se connecter à Salesforce avec Power BI
 Avec Power BI, vous pouvez facilement vous connecter à votre compte Salesforce.com. Créez cette connexion pour récupérer vos données et disposer automatiquement d’un tableau de bord et de rapports connexes basés sur vos données.
@@ -72,11 +72,13 @@ Vous pouvez modifier ce tableau de bord pour afficher vos données comme vous le
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
-## <a name="system-requirements"></a>Configuration requise
-* Être connecté avec un compte Salesforce de production qui autorise l’accès des API.
-* Autorisation accordée à l’application Power BI pendant la connexion.
-* Compte disposant de suffisamment d’appels d’API pour extraire et actualiser les données.
-* Un jeton d’authentification valide est nécessaire pour l’actualisation. Salesforce imposant une limite de 5 jetons d’authentification par application, vérifiez qu’au maximum 5 jeux de données Salesforce sont importés.
+## <a name="system-requirements-and-considerations"></a>Configuration requise et considérations
+- Être connecté avec un compte Salesforce de production qui autorise l’accès des API.
+- Autorisation accordée à l’application Power BI pendant la connexion.
+- Compte disposant de suffisamment d’appels d’API pour extraire et actualiser les données.
+- Un jeton d’authentification valide est nécessaire pour l’actualisation. Salesforce imposant une limite de 5 jetons d’authentification par application, vérifiez qu’au maximum 5 jeux de données Salesforce sont importés.
+- L’API des Rapports Salesforce possède une restriction qui prend en charge jusqu'à 2 000 lignes de données.
+
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Si vous rencontrez des erreurs, reportez-vous à la configuration requise ci-dessus. Notez également que la connexion à un domaine personnalisé ou sandbox n’est pas prise en charge pour l’instant.

@@ -1,35 +1,35 @@
 ---
-title: "Didacticiel : Exemple Rentabilité des clients pour Power BI : visite guidée"
-description: "Exemple Rentabilité des clients pour Power BI : visite guidée"
+title: 'Didacticiel : Exemple Rentabilité des clients pour Power BI : visite guidée'
+description: 'Exemple Rentabilité des clients pour Power BI : visite guidée'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: amandacofsky
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: b7931cb97ff1c409cc2524e31d079dd770160ec4
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 8c6d01cf1a89ea8e61506cc28344c77fe0276e47
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : visite guidée
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Vue d’ensemble de l’exemple Rentabilité des clients
 Le pack de contenu « Exemple Rentabilité des clients » contient un tableau de bord, un rapport et un jeu de données qui concernent une société qui fabrique des supports marketing. Ce tableau de bord a été créé par une directrice financière désireuse d’afficher des métriques clés sur les 5 responsables de division (encadrement), les produits, les clients et les marges brutes (GM). D’un simple coup d’œil, elle peut identifier les facteurs qui ont un impact sur la rentabilité.
 
-![](media/sample-customer-profitability/power-bi-dash.png)
+![tableau de bord Power BI](media/sample-customer-profitability/power-bi-dash.png)
 
 Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http://www.obvience.com/)), présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : application/pack de contenu, classeur Excel ou fichier PBIX Power BI Desktop. Consultez la section [Jeux de données d’exemple](sample-datasets.md).
 
@@ -41,10 +41,10 @@ Comment procéder ? Ce didacticiel utilise le service Power BI et le pack de co
 1. Ouvrez le service Power BI (app.powerbi.com), puis connectez-vous.
 2. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
 
-    ![](media/sample-datasets/power-bi-get-data.png)
+    ![obtenir les données](media/sample-datasets/power-bi-get-data.png)
 3. Dans la page Obtenir des données qui s’affiche, sélectionnez l’icône **Exemples**.
 
-   ![](media/sample-datasets/power-bi-samples-icon.png)
+   ![exemples d’icône](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez l’**exemple Rentabilité des clients**, puis choisissez **Se connecter**.  
 
    ![Obtenir les données](media/sample-customer-profitability/get-supplier-sample.png)
@@ -73,7 +73,7 @@ Sous **Mon espace de travail**, recherchez le tableau de bord de l’exemple Ren
 
 2. Passez en revue les vignettes du côté gauche du tableau de bord.
 
-    ![](media/sample-customer-profitability/power-bi-manager.png)
+    ![mosaïques pour gestionnaires](media/sample-customer-profitability/power-bi-manager.png)
 
 - La marge brute de notre société est de 42,5 %.
 - Nous avons 80 clients.
@@ -86,7 +86,7 @@ Sous **Mon espace de travail**, recherchez le tableau de bord de l’exemple Ren
 ### <a name="manager-specific-dashboard-tiles"></a>Vignettes de tableau de bord des responsables
 Les vignettes du côté droit du tableau de bord représentent la carte de performance de l’équipe. La directrice financière a besoin d’effectuer le suivi des responsables et ces vignettes lui offrent une vision globale des bénéfices, via GM% (ratio de la marge brute). Si la tendance du ratio de marge brute est inattendue pour l’un des responsables, elle peut étudier la question de plus près.
 
-![](media/sample-customer-profitability/power-bi-manager2.png)
+![% de marge brute pour gestionnaires](media/sample-customer-profitability/power-bi-manager2.png)
 
 - Tous les cadres, à l’exception de Carlos, ont déjà dépassé leur objectif de ventes. Mais les ventes réelles de Carlos sont les plus élevées.
 - Le ratio de marge brute d’Annelie est le plus bas, mais nous constatons cependant qu’il augmente de façon régulière depuis le mois de mars.
@@ -99,7 +99,7 @@ Ce tableau de bord comporte des vignettes qui pointent vers un rapport et un cla
 ### <a name="open-the-excel-online-data-source"></a>Ouvrir la source de données Excel Online
 Deux vignettes de ce tableau de bord, « Objectif / Réel » et « Croissance du chiffre d’affaires en glissement annuel », ont été épinglées à partir d’un classeur Excel. Lorsque l’une d’elles est sélectionnée, Power BI ouvre la source des données, Excel Online dans ce cas.
 
-![](media/sample-customer-profitability/power-bi-excel-online.png)
+![Excel Online](media/sample-customer-profitability/power-bi-excel-online.png)
 
 1. Sélectionnez l’une des vignettes épinglées à partir d’Excel. Excel Online s’ouvre dans le service Power BI.
 2. Vous remarquerez que le classeur comporte trois onglets de données. Ouvrez « Chiffre d’affaires ».
@@ -107,11 +107,11 @@ Deux vignettes de ce tableau de bord, « Objectif / Réel » et « Croissance
     a. Sur le curseur « Cadre », sélectionnez **Carlos Grilo**.   
     b. Le premier tableau croisé dynamique indique que le chiffre d’affaires de Carlos pour son produit phare, Primus, a baissé de 152 % par rapport à l’année dernière. Et le graphique en glissement annuel montre qu’il est au-dessous du budget la plupart du temps.  
 
-    ![](media/sample-customer-profitability/power-bi-pivotchart.png)
+    ![Tableau croisé dynamique](media/sample-customer-profitability/power-bi-pivotchart.png)
 
-    ![](media/sample-customer-profitability/power-bi-carlos.png)
+    ![résultats pour Carlos](media/sample-customer-profitability/power-bi-carlos.png)
 
-4. Poursuivez l’exploration ; si vous trouvez quelque chose d’intéressant, sélectionnez **Épingler** ![](media/sample-customer-profitability/power-bi-excel-pin.png) dans l’angle supérieur droit pour [l’épingler à un tableau de bord](service-dashboard-pin-tile-from-excel.md).
+4. Poursuivez l’exploration ; si vous trouvez quelque chose d’intéressant, sélectionnez **Épingler** ![icône Épingler](media/sample-customer-profitability/power-bi-excel-pin.png) dans le coin supérieur droit pour [l’épingler à un tableau de bord](service-dashboard-pin-tile-from-excel.md).
 
 5. Utilisez la flèche de retour de votre navigateur pour revenir au tableau de bord.
 
@@ -122,14 +122,14 @@ La majorité des vignettes du tableau de bord de l’exemple Rentabilité des cl
 
 2. Le rapport comporte trois pages. Chaque onglet au bas du rapport représente une page.
 
-    ![](media/sample-customer-profitability/power-bi-report-tabs.png)
+    ![3 onglets en bas](media/sample-customer-profitability/power-bi-report-tabs.png)
 
     * La page « Team Scorecard » (Carte de performance de l’équipe) se concentre sur les performances de 5 responsables et sur leur « activité ».
     * La page « Industry Margin Analysis » (Analyse de la marge sectorielle) permet d’analyser notre rentabilité par rapport au secteur.
     * La page « Executive Scorecard » (Carte de performance de l’exécutif) affiche chacun de nos responsables, selon une mise en page définie pour Cortana.
 
 ### <a name="team-scorecard-page"></a>Page « Team Scorecard » (Carte de performance de l’équipe)
-![](media/sample-customer-profitability/customer2.png)
+![Page de rapport Tableau de bord de l’équipe](media/sample-customer-profitability/customer2.png)
 
 Étudions le cas de deux membres de l’équipe et voyons les enseignements que l’on peut en tirer. Dans le segment situé à gauche, sélectionnez « Andrew » pour filtrer la page de rapport uniquement sur les données le concernant.
 
@@ -138,7 +138,7 @@ La majorité des vignettes du tableau de bord de l’exemple Rentabilité des cl
 * Le graphique « RevenueTY and Revenue Var % to Budget by Month » (Chiffre d’affaires annuel et Écart en % du chiffre d’affaires par rapport aux prévisions par mois) fait état d’un bénéficie régulier. Mais si l’on filtre en cliquant sur le carré de la région **Central** (Centre) dans le treemap des régions, on constate qu’Andrew n’a généré du chiffre d’affaires qu’en mars et seulement dans l’Indiana. Est-ce intentionnel ou y a-t-il une autre raison à découvrir ?
 
 Passons maintenant au cas de Valery. Dans le segment, sélectionnez Valery pour filtrer la page de rapport uniquement sur les données qui l’intéressent.  
-![](media/sample-customer-profitability/customer3.png)
+![coupe Executive pour Vaery Ushalov](media/sample-customer-profitability/customer3.png)
 
 * Notez que l’indicateur de performance clé **RevenueTY Status**(État du chiffre d’affaires annuel) est au rouge. Une analyse plus fine s’impose.
 * De même, l’écart de son chiffre d’affaires dresse un tableau inquiétant. Elle n’a pas atteint ses objectifs de marge.
@@ -150,7 +150,7 @@ Poursuivez l’analyse pour découvrir les raisons qui expliquent les mauvais r�
 
 ### <a name="industry-margin-analysis"></a>Analyse de la marge sectorielle
 La page du rapport intitulée « Industry Margin Analysis » propose une autre découpe des données. Elle s’intéresse à la marge brute de l’ensemble des secteurs, ventilée par segment. La directrice financière se sert de cette page pour comparer les métriques de l’entreprise et des divisions à celles des secteurs d’activité afin d’analyser les tendances et la rentabilité. Vous vous demandez peut-être se que fait le graphique en aires « Gross Margin by Month and Executive Name » (Marge brute par mois et par cadre » dans cette page, puisque celle-ci est censée concerner l’équipe. En fait, il permet de filtrer la page par responsable de division.  
-![](media/sample-customer-profitability/customer6.png)
+![Page de rapport Analyse de la marge sectorielle](media/sample-customer-profitability/customer6.png)
 
 Dans quelle mesure la rentabilité varie-t-elle en fonction du secteur d’activité ? Quelle est la répartition des produits et des clients par secteur d’activité ? Sélectionnez un ou plusieurs secteurs d’activité en haut à gauche. (Le premier est CPG, c’est-à-dire le secteur des biens emballés pour la vente au détail) Pour effacer le filtre, sélectionnez l’icône de gomme.
 
@@ -172,11 +172,11 @@ Pour notre analyse, il serait intéressant d’identifier le secteur d’activit
 
 2.  Dans la barre de menus supérieure, sélectionnez **Poser une question** pour ouvrir la zone Questions et réponses.
 
-    ![](media/sample-customer-profitability/power-bi-ask-question.png)
+    ![Poser une question sur vos données](media/sample-customer-profitability/power-bi-ask-question.png)
 
 3. Tapez **total revenue by industry for Valery**(chiffre d’affaires total par secteur pour Valery). Comme vous pouvez le constater, la visualisation se met à jour à mesure que vous tapez la question.
 
-    ![](media/sample-customer-profitability/power-bi-qna.png)
+    ![saisir une question dans la zone questions](media/sample-customer-profitability/power-bi-qna.png)
 
    Le secteur le plus porteur pour Valery est celui de la distribution.
 
@@ -186,15 +186,15 @@ Penchons-nous sur le secteur *Distribution* .
 1. Ouvrez la page de rapport « Analyse de la marge sectorielle ».
 2. Sans sélectionner de visualisations sur la page de rapport, développez le volet Filtres à droite (si ce n’est déjà fait). Le volet Filtres doit afficher uniquement les filtres au niveau page.  
 
-   ![](media/sample-customer-profitability/power-bi-filters.png)
+   ![Filtres au niveau de la page](media/sample-customer-profitability/power-bi-filters.png)
 3. Recherchez le filtre pour **Industry** ( secteur), puis cliquez sur la flèche pour développer la liste. Ajoutons un filtre de page pour le secteur Distribution. Tout d’abord, annulez toutes les sélections en désactivant la case à cocher **Sélectionner tout**. Ensuite, sélectionnez seulement **Distribution**.  
 
-   ![](media/sample-customer-profitability/customer7.png)
+   ![filtre pour Distribution](media/sample-customer-profitability/customer7.png)
 4. Le graphique en aires « Gross margin by Month and Executive Name » (Marge brute par mois et par cadre) nous apprend que seules Valery et Tina ont des clients dans ce secteur d’activité et que Valery ne travaille dans ce secteur que de juin à novembre.   
 5. Sélectionnez **Tina**, puis **Valery** dans la légende du graphique en aires « Gross margin by Month and Executive » (Marge brute par mois et Exécutif). Remarquez que la contribution de Tina au chiffre d’affaires total par produit (« Total Revenue by Product ») est très faible par rapport à celle de Valery.
 6. Pour afficher le chiffre d’affaires réel, utilisez la fonctionnalité Questions et réponses pour demander le **chiffre d’affaires total par cadre pour la distribution par scénario**.  
 
-     ![](media/sample-customer-profitability/power-bi-qna2.png)
+     ![saisir une question dans la zone questions pour afficher le graphique à barres](media/sample-customer-profitability/power-bi-qna2.png)
 
     Nous pouvons procéder de la même manière pour explorer d’autres secteurs, voire ajouter des clients à nos éléments visuels pour comprendre les performances de Valery.
 

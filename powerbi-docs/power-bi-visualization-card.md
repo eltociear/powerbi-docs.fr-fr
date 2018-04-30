@@ -1,28 +1,28 @@
 ---
-title: "Visualisations de carte (vignettes représentant un grand nombre)"
-description: "Créer une visualisation de carte dans Power BI"
+title: Visualisations de carte (vignettes représentant un grand nombre)
+description: Créer une visualisation de carte dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 03/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f38f3bb19be268cba4745c88aa98d09c080c773e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3e30e0f742d97817583ecdfd72df65a8658ec977
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="card-visualizations"></a>Visualisations de carte
 Vous pouvez parfois vouloir suivre un nombre unique dans votre tableau de bord ou rapport Power BI pour l’importance qu’il représente, qu’il s’agisse du total des ventes, de la part de marché d’une année sur l’autre ou du nombre total d’opportunités. Ce type de visualisation est appelé *carte*. Avec la plupart des visualisations Power BI natives, des cartes peuvent être créées à l’aide de l’éditeur de rapport ou dans Questions et réponses.
@@ -91,6 +91,25 @@ La zone de question Questions et réponses est le moyen le plus simple de créer
 - Si vous ne voyez pas de zone de question, contactez l’administrateur système ou du locataire.    
 - Si vous utilisez Power BI Desktop et que le fait de double-cliquer sur un espace vide dans un rapport n’ouvre pas Questions et réponses, vous devez peut-être l’activer.  Sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en préversion** et redémarrez Power BI Desktop.
 
+## <a name="format-a-card"></a>Mettre en forme une carte
+Vous disposez de nombreuses options pour modifier des étiquettes, du texte, la couleur et bien plus encore. La meilleure façon d’apprendre consiste à créer une carte et d’explorer le volet Mise en forme. Voici quelques-unes des options de mise en forme disponibles. 
+
+1. Commencez par sélectionner l’icône en forme de pinceau pour ouvrir le volet Mise en forme. 
+
+    ![](media/power-bi-visualization-card/power-bi-format-card.png)
+2. Développez **Étiquette de données** et changer la famille, la taille et la couleur de la police. Si vous aviez des milliers de magasins, vous pouvez utiliser **Unités d’affichage** pour afficher le nombre de magasins par milliers et contrôler les places des décimales. Par exemple, 125 800 au lieu de 125 832,00.
+
+3.  Développez **Étiquette de catégorie** et modifier la couleur et la taille.
+
+    ![](media/power-bi-visualization-card/power-bi-card-format.png)
+
+4. Développez **Arrière-plan** et déplacez le curseur sur On.  Maintenant, vous pouvez modifier la couleur et la transparence de l’arrière-plan.
+
+    ![](media/power-bi-visualization-card/power-bi-format-color.png)
+
+5. Continuez à explorer les options de mise en forme jusqu'à ce que votre carte soit exactement comment vous le souhaitez. 
+
+    ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Vignettes d’un tableau de bord dans Power BI](service-dashboard-tiles.md)

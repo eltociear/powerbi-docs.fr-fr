@@ -1,28 +1,28 @@
 ---
-title: "Conseils pour la conception d’un tableau de bord Power BI"
-description: "Conseils pour la conception d’un tableau de bord Power BI"
+title: Conseils pour la conception d’un tableau de bord Power BI
+description: Conseils pour la conception d’un tableau de bord Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/02/2018
+ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 769d669f00c87e6139d8ff2cb8640739d09edf7a
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 9d71d417a2d7beb7f968bf18fc6de90794663ec8
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Conseils pour la conception d’un tableau de bord Power BI
 Maintenant que vous avez créé un tableau de bord et ajouté des vignettes, pensez comment vous pourriez rendre votre tableau de bord aussi élégant que fonctionnel. En général, cela consiste à mettre en évidence les informations les plus importantes et à faire en sorte que votre tableau de bord soit clair et non encombré.
@@ -31,25 +31,28 @@ Voici quelques astuces.
 
 > [!TIP]
 > De nombreux principes de conception de rapports s’appliquent aussi aux tableaux de bord.  Lisez notre livre blanc [Meilleures pratiques en matière de conception de rapports et de visualisations](power-bi-visualization-best-practices.md).
-> 
-> 
+>
+>
 
-### <a name="consider-your-audience"></a>Prenez en compte votre public
+## <a name="watch-the-dashboard-makeover-webinarhttpsinfomicrosoftcomco-powerbi-wbnr-fy16-05may-12-dashboard-makeover-registrationhtml"></a>Visionnez le [webinaire consacré à l’optimisation des tableaux de bord](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html)
+Regardez comment Marc Reguera, responsable programme Microsoft et expert en tableaux de bord Power BI, [optimise un tableau de bord](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html).
+
+## <a name="consider-your-audience"></a>Prenez en compte votre public
 Quelles sont les métriques clés qui les aideront à prendre des décisions ? De quelle façon le tableau de bord sera-t-il utilisé ? Quelles hypothèses culturelles peuvent affecter vos choix en matière de conception ? De quelles informations votre public a-t-il besoin pour réussir ?
 
 N’oubliez pas qu’un tableau de bord fournit une vue d’ensemble, un emplacement unique duquel surveiller l’état actuel des données. Le tableau de bord est basé sur des rapports et des jeux de données sous-jacents qui peuvent contenir de très nombreux détails. Vos lecteurs peuvent explorer vos rapports depuis votre tableau de bord. Par conséquent, ne placez pas de détails sur le tableau de bord, sauf s’il s’agit des informations que vos lecteurs doivent surveiller.
 
 Sur quel type d’appareil le tableau de bord sera-t-il affiché ? S’il s’agit d’un grand écran, vous pouvez ajouter davantage de contenu. S’il doit être lu depuis une tablette, un nombre limité de vignettes le rendra plus lisible.
 
-### <a name="tell-a-story-and-keep-it-to-one-screen"></a>Racontez une histoire et contentez-vous d’un seul écran
+## <a name="tell-a-story-and-keep-it-to-one-screen"></a>Racontez une histoire et contentez-vous d’un seul écran
 Étant donné que les tableaux de bord permettent de lire des informations importantes en un seul coup d’œil, il est préférable que toutes les vignettes se trouvent sur un seul écran. Pouvez-vous éviter l’utilisation d’une barre de défilement dans votre tableau de bord ?
 
 Le tableau de bord est-il encombré ?  Ne gardez que les informations importantes qui peuvent être facilement lues et interprétées.
 
-### <a name="make-use-of-full-screen-mode"></a>Utiliser le mode plein écran
+## <a name="make-use-of-full-screen-mode"></a>Utiliser le mode plein écran
 Affichez votre tableau de bord en mode [plein écran](service-fullscreen-mode.md) sans distractions.
 
-### <a name="make-the-most-important-information-biggest"></a>Affichez les informations les plus importantes en grand format
+## <a name="make-the-most-important-information-biggest"></a>Affichez les informations les plus importantes en grand format
 Si le texte et les visualisations de votre tableau de bord ont la même taille, vos lecteurs auront du mal à se concentrer sur ce qui est le plus important. Par exemple, les visualisations de carte sont un bon moyen de mettre en évidence un nombre important :  
 ![Visualisation de carte](media/service-dashboards-design-tips/pbi_card.png)
 
@@ -57,10 +60,10 @@ N’oubliez pas de préciser le contexte.
 
 En savoir plus sur la [création d’une vignette avec un seul numéro](power-bi-visualization-card.md).
 
-### <a name="put-the-most-important-information-in-the-upper-corner"></a>Placez les informations les plus importantes au-dessus des autres
+## <a name="put-the-most-important-information-in-the-upper-corner"></a>Placez les informations les plus importantes au-dessus des autres
 La plupart des gens lisent de haut en bas. Placez donc les informations de haut niveau en haut et les informations détaillées en dessous pour suivre le mouvement de lecture de vos utilisateurs (de gauche à droite, de droite à gauche).
 
-### <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Utiliser la visualisation qui convient à vos données et la mettre en forme pour en faciliter la lecture
+## <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Utiliser la visualisation qui convient à vos données et la mettre en forme pour en faciliter la lecture
 Évitez d’utiliser trop de types de visualisations différents.  Les visualisations doivent représenter une image et être faciles à lire et à interpréter.  Pour certaines données et visualisations, une simple visualisation graphique est suffisante. Toutefois, certaines données peuvent nécessiter une visualisation plus complexe : utilisez des titres, des étiquettes et d’autres personnalisations pour aider le lecteur.  
 
 * [Choisissez des visualisations qui conviennent à vos données](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Soyez prudent quand vous utilisez des graphiques qui déforment la réalité, tels que les graphiques 3D. N’oubliez pas qu’il est difficile pour le cerveau humain d’interpréter les formes circulaires. Les graphiques à secteurs, les graphiques en anneau, les jauges et autres types de graphiques circulaires, aussi élégants qu’ils puissent être, ne sont pas recommandés pour les visualisations de données.
@@ -84,7 +87,6 @@ Pour maîtriser l’art de la conception des tableaux de bord, découvrez les pr
 * *Advanced Presentations* par Andrew Abela   
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Tableaux de bord dans Power BI](service-dashboards.md)  
+[Créer un tableau de bord à partir d’un rapport](service-dashboard-create.md)  
 [Power BI – Concepts de base](service-basic-concepts.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

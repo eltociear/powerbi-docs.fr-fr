@@ -1,32 +1,32 @@
 ---
-title: "Partie 1, Ajouter des visualisations à un rapport Power BI (didacticiel)"
-description: "Didacticiel : Partie 1, Ajouter des visualisations à un rapport Power BI"
+title: Partie 1, Ajouter des visualisations à un rapport Power BI (didacticiel)
+description: 'Didacticiel : Partie 1, Ajouter des visualisations à un rapport Power BI'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: IkJda4O7oGs
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b81061c25b453fc35e1490c3ded2d9c9770d4599
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b6fdc11b19e130272cf715f4cff58721f46dd6e8
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report-tutorial"></a>Partie 1, Ajouter des visualisations à un rapport Power BI (didacticiel)
-Cet article explique brièvement comment créer une visualisation dans un rapport.  Pour un contenu plus avancé, [consultez la partie 2](power-bi-report-add-visualizations-ii.md). Regardez Amanda montrer différentes manières de créer, modifier et mettre en forme les visuels sur un canevas de rapport. Essayez ensuite par vous-même d’utiliser l’[exemple Ventes et marketing](sample-datasets.md) pour créer votre propre rapport.
+Cet article explique brièvement comment créer une visualisation dans un rapport à l’aide du service Power BI ou de Power BI Desktop.  Pour un contenu plus avancé, [consultez la partie 2](power-bi-report-add-visualizations-ii.md). Regardez Amanda montrer différentes manières de créer, modifier et mettre en forme les visuels sur un canevas de rapport. Essayez ensuite par vous-même d’utiliser l’[exemple Ventes et marketing](sample-datasets.md) pour créer votre propre rapport.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 

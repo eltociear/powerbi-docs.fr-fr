@@ -846,10 +846,12 @@
           href: desktop-send-smile-privacy-statement.md
     - name: Résolution des problèmes
       items:
-        - name: "Résoudre des problèmes d’importation de bases de données Access et de feuilles de calcul Excel dans Power\_BI\_Desktop et Power\_Query"
-          href: desktop-access-database-errors.md
+        - name: Résoudre les problèmes de connexion pour Power BI Desktop
+          href: desktop-troubleshooting-sign-in.md
         - name: "Résoudre les problèmes de démarrage de Power\_BI\_Desktop"
           href: desktop-error-launching-desktop.md
+        - name: "Résoudre des problèmes d’importation de bases de données Access et de feuilles de calcul Excel dans Power\_BI\_Desktop et Power\_Query"
+          href: desktop-access-database-errors.md
 - name: "Applications mobiles Power\_BI"
   items:
     - name: Bien démarrer
@@ -1070,9 +1072,9 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848709'
         - name: Utilisation des indicateurs de performance clés (KPI)
           href: 'https://go.microsoft.com/fwlink/?linkid=849021'
-        - name: Sources de données prises en charge
+        - name: "Sources de données de rapport Power\_BI (.pbix)"
           href: report-server/data-sources.md
-        - name: Se connecter à la source de données
+        - name: Sources de données de rapport paginé (.rdl)
           href: report-server/connect-data-sources.md
         - name: 'Accès à des Jeux de données partagés en tant que flux OData '
           href: report-server/access-dataset-odata.md

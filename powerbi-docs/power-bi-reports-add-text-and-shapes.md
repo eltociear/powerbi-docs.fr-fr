@@ -1,32 +1,32 @@
 ---
 title: Zones de texte et formes dans les rapports Power BI
-description: "Documentation sur l’ajout et la création de zones de texte et de formes dans un rapport à l’aide du service Microsoft Power BI."
+description: Documentation sur l’ajout et la création de zones de texte et de formes dans un rapport à l’aide du service Microsoft Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
+backup: ''
+editor: ''
 featuredvideoid: _3q6VEBhGew
-tags: 
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ce10e5d7b0ea2247655a9f93bfc3534086106f2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5e71159e2c7d0cb7439a14bf5d8e082192c4ab7a
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="static-content-in-power-bi-reports"></a>Contenu statique dans les rapports Power BI
-Il est possible d’ajouter des formes et des zones de texte à des rapports à l’aide du service Power BI et de Power BI Desktop. Dans les deux cas, vous devez disposer d’autorisations de modification du rapport. Si un rapport a été partagé avec vous, vous n’aurez pas accès au Mode Édition. 
+Il est possible d’ajouter des formes et des zones de texte à des rapports à l’aide du service Power BI et de Power BI Desktop. Dans les deux cas, vous devez disposer d’autorisations de modification du rapport. Si un rapport a été partagé avec vous dans le service Power BI, vous n’aurez pas d’autorisations de modification. 
 
 Regardez comment Will utilise Power BI Desktop pour [ajouter des images statiques à un rapport](guided-learning/visualizations.yml#step-11), puis suivez les étapes ci-dessous pour essayer par vous-même avec cette fois le service Power BI.
 > 

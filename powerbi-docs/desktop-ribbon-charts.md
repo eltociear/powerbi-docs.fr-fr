@@ -1,15 +1,15 @@
 ---
 title: Utiliser des graphiques de ruban dans Power BI
-description: "Créer et utiliser des graphiques de ruban dans le service Power BI et dans Power BI Desktop"
+description: Créer et utiliser des graphiques de ruban dans le service Power BI et dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,19 +18,19 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3dab818c863f00c97635d00ba07e75eb3c8e5b37
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: fb1c85e8c7b4a9c8e92019e4917af16b83ae580c
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Utiliser des graphiques de ruban dans Power BI
-Vous pouvez utiliser des **graphiques de ruban** dans **Power BI** pour visualiser des données et déterminer rapidement la catégorie de données qui a le rang le plus élevé (valeur la plus grande). Les graphiques de ruban sont efficaces pour l’affichage de changements d’ordre, le rang (valeur) le plus élevé étant toujours affiché en première position pour chaque période de temps. Les graphiques de ruban sont disponibles dans **Power BI Desktop** depuis la publication de septembre 2017 et dans les mises à jour ultérieures du **service Power BI**.
+Vous pouvez utiliser des graphiques de ruban dans **Power BI** pour visualiser des données et déterminer rapidement la catégorie de données qui a le rang le plus élevé (valeur la plus grande). Les graphiques de ruban sont efficaces pour l’affichage de changements de rangs, la plage (valeur) la plus élevée étant toujours affichée en première position pour chaque période de temps. Les graphiques de ruban sont disponibles dans **Power BI Desktop** depuis la publication de septembre 2017 et dans les mises à jour ultérieures du **service Power BI**.
 
 ![](media/desktop-ribbon-charts/ribbon-charts_01.png)
 
 ## <a name="create-a-ribbon-chart"></a>Créer un graphique de ruban
-Pour créer un graphique de ruban, dans le panneau **Visualisations**, sélectionnez **Graphique de ruban**.
+Pour créer un graphique de ruban, sélectionnez **Graphique de ruban** dans le volet **Visualisations**.
 
 ![](media/desktop-ribbon-charts/ribbon-charts_02.png)
 

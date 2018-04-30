@@ -1,28 +1,28 @@
 ---
-title: "Accessibilité dans les rapports Power BI Desktop"
-description: "Fonctionnalités et suggestions pour la création de rapports Power BI Desktop accessibles"
+title: Accessibilité dans les rapports Power BI Desktop
+description: Fonctionnalités et suggestions pour la création de rapports Power BI Desktop accessibles
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/21/2017
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c0e11a46e6e228da2f2ca8ac3f7be63ae20c1d92
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9cf89867185487ab6ddec68bc6abf557b2fc929f
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 **Power BI Desktop** intègre des fonctionnalités qui permettent aux personnes présentant un handicap de plus facilement lire et utiliser les rapports **Power BI Desktop**, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -41,7 +41,7 @@ Depuis la version de septembre 2017 de **Power BI Desktop**, vous pouvez appuye
 
 Grâce aux améliorations en matière d’accessibilité, vous pouvez lire un rapport **Power BI Desktop** à l’aide d’un clavier ou d’un lecteur d’écran en procédant comme suit :
 
-Pour **faire passer la mise en évidence** d’un onglet de page de rapport à un autre ou d’un objet à un autre d’une page de rapport donnée, utilisez la combinaison de touche **Ctrl+F6**.
+Pour faire passer la mise en évidence d’un onglet de page de rapport à un autre ou d’un objet à un autre d’une page de rapport donnée, utilisez la combinaison de touche **Ctrl+F6**.
 
 * Lorsque la mise en évidence est sur les *onglets de page du rapport*, utilisez les touches *Tab* ou *flèche* pour faire passer la mise en évidence d’une page du rapport à la suivante. Le titre de la page de rapport est lu par le lecteur d’écran, qui indique également si cette page est actuellement sélectionnée. Pour charger la page de rapport actuellement mise en évidence, utilisez la touche *Entrée* ou *Espace*.
 * Lorsque la mise en évidence est sur une *page de rapport* chargée, utilisez la touche *Tab* pour la faire passer d’un objet à un autre de la page, notamment les zones de texte, les images, les formes et les graphiques. Le lecteur d’écran lit le type d’objet et la description de l’objet fournie par l’auteur. 
@@ -67,7 +67,7 @@ Les conseils suivants peuvent vous aider à créer des rapports **Power BI Des
   * L’utilisation d’une *forme de marqueur* différente pour chaque ligne permet aux lecteurs du rapport de plus facilement différencier les lignes (ou aires) les unes des autres.
 * En complément de la puce précédente, ne vous fiez pas aux couleurs pour transmettre des informations. L’utilisation de formes sur des lignes (marqueurs, tels que décrits dans les puces précédentes) est utile.
 * Sélectionnez un *thème* à contraste élevé et adapté pour les personnes daltoniennes dans la galerie de thèmes, puis importez-le à l’aide de la fonctionnalité en préversion [**Thème**](desktop-report-themes.md).
-* Pour chaque objet d’un rapport, fournissez un *texte de remplacement*. Cela vous permet de garantir que les lecteurs de votre rapport comprennent ce que vous essayez de communiquer avec un visuel, même s’ils ne peuvent pas voir le visuel, l’image, la forme ou la zone de texte. Pour fournir un *texte de remplacement* pour un objet d’un rapport **Power BI Desktop**, sélectionnez l’objet (par exemple un visuel, une forme, etc.) puis, dans le volet **Visualisations**, sélectionnez la section **Format**, développez **Général**, puis faites défiler vers le bas et renseignez la zone de texte **Texte de remplacement**.
+* Pour chaque objet d’un rapport, fournissez un *texte de remplacement*. Cela vous permet de garantir que les lecteurs de votre rapport comprennent ce que vous essayez de communiquer avec un visuel, même s’ils ne peuvent pas voir le visuel, l’image, la forme ou la zone de texte. Pour fournir un *Texte de remplacement* pour un objet d’un rapport **Power BI Desktop**, sélectionnez l’objet (par exemple un visuel, une forme, etc.) puis, dans le volet **Visualisations**, sélectionnez la section **Format**, développez **Général**, puis faites défiler vers le bas et renseignez la zone de texte **Texte de remplacement**.
   
   ![Il est possible d’ajouter un texte de remplacement à n’importe quel objet d’un rapport en sélectionnant Visualisations > Format > Général > zone de texte Texte de remplacement.](media/desktop-accessibility/accessibility_02.png)
 * Veillez à ce qu’il y ait suffisamment de contraste entre le texte et les couleurs d’arrière-plan de vos rapports.

@@ -1,15 +1,15 @@
 ---
-title: "Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI"
-description: "Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications."
+title: Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI
+description: Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.Embedded: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: maghan
-ms.openlocfilehash: c8ad315976dd1ca47d6b4dc2fd9a191a11e044c7
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 5cf1be502267b14075ac6160ce93fce47941d3c2
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications.
@@ -33,7 +33,7 @@ Avec Power BI Embedded, vous disposez d’une surface d’API, d’un ensemble c
 La collection d’espaces de travail Power BI actuelle reste encore disponible pendant une durée limitée. Les clients avec un contrat Entreprise gardent l’accès jusqu’à l’expiration de leur contrat. Les clients qui ont acquis la collection d’espaces de travail Power BI par le biais de canaux directs ou CSP conservent l’accès pendant un an à partir de la version en disponibilité générale de Power BI Embedded.  Cet article fournit des conseils pour la migration de la collection d’espaces de travail Power BI vers la nouvelle version de Power BI Embedded, et explique les changements que cette migration entraîne dans votre application.
 
 > [!IMPORTANT]
-> Il y a forcément une dépendance entre la migration et Power BI Embedded, mais il n’y a pas de dépendance entre Power BI et les utilisateurs de votre application qui utilisent un **jeton incorporé**. En effet, ces utilisateurs n’ont pas besoin de s’inscrire à Power BI pour afficher le contenu incorporé dans votre application. Vous pouvez utiliser cette approche d’incorporation pour les utilisateurs de contenu incorporé non-Power BI.
+> Il y a forcément une dépendance entre la migration et Power BI Embedded, mais il n’y a pas de dépendance entre Power BI et les utilisateurs de votre application qui utilisent un **jeton incorporé**. Ils n’ont pas besoin de s’inscrire à Power BI pour afficher le contenu incorporé dans votre application. Vous pouvez utiliser cette approche d’incorporation pour les utilisateurs de contenu incorporé non-Power BI.
 > 
 > 
 
@@ -58,8 +58,7 @@ Les comptes suivants doivent exister au sein de votre client.
 
 > [!NOTE]
 > Ces comptes doivent disposer de licences Power BI Pro pour utiliser les espaces de travail d’applications.
-> 
-> 
+>
 
 1. Un utilisateur administrateur du client.
    
@@ -71,10 +70,13 @@ Les comptes suivants doivent exister au sein de votre client.
    
     Le serveur principal d’applications stocke les informations d’identification de ce compte et les utilise pour se procurer le jeton Azure AD à utiliser avec les API REST Power BI. Ce compte est utilisé pour générer le jeton incorporé pour l’application. Ce compte doit également être l’administrateur des espaces de travail d’applications créés pour l’incorporation.
    
-   > [!NOTE]
-   > Il s’agit simplement d’un compte d’utilisateur ordinaire de votre organisation qui sera utilisé à des fins d’incorporation.
-   > 
-   > 
+> [!NOTE]
+> Il s’agit simplement d’un compte d’utilisateur ordinaire de votre organisation qui sera utilisé à des fins d’incorporation.
+>
+
+> [!NOTE]
+> Si l’authentification du jeton pour les applications uniquement est une condition requise par votre application, cliquez [ici](mailto:pbieci@microsoft.com?Subject=App-only%20token%20requirement) pour nous contacter.
+>
 
 ## <a name="app-registration-and-permissions"></a>Inscription et autorisations d’application
 Vous devez inscrire une application dans Azure AD et accorder certaines autorisations.
@@ -126,13 +128,13 @@ Les jeux de données en cache font référence aux fichiers PBIX comportant des 
 #### <a name="directquery-dataset--report"></a>Rapport et jeu de données DirectQuery
 **Flux**
 
-1. Appelez GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources et enregistrez la chaîne de connexion reçue.
+1. Appelez GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources et enregistrez la chaîne de connexion reçu.
 2. Appelez l’API Download PBIX pour procéder au téléchargement à partir de l’espace de travail PaaS.
 3. Enregistrez le fichier PBIX.
 4. Appelez l’API Import PBIX pour procéder à l’importation vers l’espace de travail SaaS.
-5. Mettez à jour la chaîne de connexion en appelant : POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Obtenez l’ID de GW et l’ID de la source de données en appelant : GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
-7. Mettez à jour les informations d’identification de l’utilisateur en appelant : PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
+5. Mettre à jour la chaîne de connexion en appelant - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
+6. Obtenir l’ID de GW et l’ID de la source de données en appelant - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+7. Mettre à jour les informations d’identification de l’utilisateur en appelant - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Jeux de données et rapports obsolètes
 Il s’agit des jeux de données/rapports créés avant octobre 2016. L’API Download PBIX ne prend pas en charge les fichiers PBIX chargés avant octobre 2016
@@ -148,7 +150,7 @@ L’API Download PBIX ne prend pas en charge les jeux de données *API de transm
 **Flux**
 
 1. Appelez l’API « Create dataset » (Créer un jeu de données) avec le jeu de données Json pour créer un jeu de données dans l’espace de travail SaaS.
-2. Regénérez le rapport pour le jeu de données créé*.
+2. Régénérez le rapport pour le jeu de données créé*.
 
 Vous pouvez migrer le rapport de l’API d’envoi (push) de PaaS vers SaaS en essayant les solutions de contournement suivantes.
 

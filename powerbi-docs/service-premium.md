@@ -1,28 +1,28 @@
 ---
-title: "Qu’est-ce que Power BI Premium ?"
-description: "Power BI Premium permet à votre organisation ou à votre équipe de bénéficier de performances plus fiables et de plus gros volumes de données sans qu’il soit nécessaire d’acquérir une licence pour chaque utilisateur."
+title: Qu’est-ce que Power BI Premium ?
+description: Power BI Premium permet à votre organisation ou à votre équipe de bénéficier de performances plus fiables et de plus gros volumes de données sans qu’il soit nécessaire d’acquérir une licence pour chaque utilisateur.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/05/2018
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 11cfdfdfbc4b918d00633b78ec0bdafabfe99cd6
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 617e56fd688016c8ee17184f726fb018a0128e05
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="power-bi-premium---what-is-it"></a>Qu’est-ce que Power BI Premium ?
 Power BI Premium fournit à votre organisation ou à votre équipe des ressources dédiées à l’exécution du service Power BI afin qu’elle bénéficie de performances plus fiables et de plus gros volumes de données. Premium permet également une diffusion étendue du contenu sans que vous soyez contraint d’acquérir une licence par utilisateur.
@@ -71,19 +71,21 @@ Power BI Premium est disponible dans des configurations de nœuds aux capacités
 * Les nœuds P peuvent être utilisés pour les déploiements incorporés ou pour les déploiements de services
 * Les nœuds EM sont réservés aux déploiements incorporés
 * EM1 et EM2 
-* Les liens indiqués dans ce tableau ne fonctionnent correctement que pour les utilisateurs qui sont des administrateurs généraux d’Office 365. Les autres utilisateurs reçoivent une erreur 404. 
 
-| Nœud de capacité | Nombre total de cœurs<br/>*(Serveur principal + serveur frontal)* | Cœurs du serveur principal | Cœurs du serveur frontal | Limites de connexions actives/DirectQuery | Rendus de pages au maximum aux heures de pointe | Disponibilité |
+>[!NOTE]
+>Les liens indiqués dans ce tableau ne fonctionnent correctement que pour les utilisateurs qui sont des administrateurs généraux d’Office 365. Les autres utilisateurs reçoivent une erreur 404. 
+
+| Nœud de capacité | Total des v-cores<br/>*(Serveur principal + serveur frontal)* | V-cores du principal | V-cores du serveur frontal | Limites de connexions actives/DirectQuery | Rendus de pages au maximum aux heures de pointe | Disponibilité |
 | --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-core |0,5 cœurs, 2,5 Go de RAM |.5 cœurs |3,75 par seconde |150-300 |Disponible |
-| [EM2 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 cœurs virtuels |1 cœur, 5 Go de RAM |1 cœur |7,5 par seconde |301-600 |Disponible |
-| [EM3 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 cœurs virtuels |2 cœurs, 10 Go de RAM |2 cœurs | |601-1 200 |Disponibilité |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 cœurs virtuels |4 cœurs, 25 Go de RAM |4 cœurs |30 par seconde |1 201-2 400 |Disponible ([de mois en mois](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) est également disponible) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 cœurs virtuels |8 cœurs, 50 Go de RAM |8 cœurs |60 par seconde |2 401-4 800 |Disponibilité |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 cœurs virtuels |16 cœurs, 100 Go de RAM |16 cœurs |120 par seconde |4 801-9 600 |Disponibilité |
+| [EM1 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-core |0,5 v-cores, 2,5 Go de RAM |0,5 v-cores |3,75 par seconde |150-300 |Disponible |
+| [EM2 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 cœurs virtuels |1 v-core, 5 Go de RAM |1 v-core |7,5 par seconde |301-600 |Disponible |
+| [EM3 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 cœurs virtuels |2 v-cores, 10 Go de RAM |2 cœurs virtuels | |601-1 200 |Disponibilité |
+| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 cœurs virtuels |4 v-cores, 25 Go de RAM |4 cœurs virtuels |30 par seconde |1 201-2 400 |Disponible ([de mois en mois](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) est également disponible) |
+| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 cœurs virtuels |8 v-cores, 50 Go de RAM |8 cœurs virtuels |60 par seconde |2 401-4 800 |Disponibilité |
+| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 cœurs virtuels |16 v-cores, 100 Go de RAM |16 cœurs virtuels |120 par seconde |4 801-9 600 |Disponible |
 
-* Les cœurs du serveur frontal assurent la gestion du service web, des tableaux de bord et des rapports, des droits d’accès, de la planification, des API, des chargements et téléchargements et, plus généralement, de tout ce qui concerne l’expérience utilisateur.
-* Les cœurs du serveur principal gèrent l’essentiel : traitement des requêtes, gestion du cache, exécution des serveurs R, actualisation des données, traitement du langage naturel, flux en temps réel et rendu côté serveur des rapports et images. Avec les cœurs du serveur principal, une partie de la mémoire est également réservée. Car il est impératif de disposer d’une mémoire suffisante pour traiter les modèles de données volumineux ou les grands nombres de jeux de données actifs.
+* Les v-cores du serveur frontal assurent la gestion des documents du service Web, des tableaux de bord et des rapports, la gestion des droits d’accès, la planification, les API, les chargements et téléchargements et, plus généralement, tout ce qui concerne l’expérience utilisateur.
+* Les v-cores principaux gèrent l’essentiel : traitement des requêtes, gestion du cache, exécution des serveurs R, actualisation des données, traitement du langage naturel, flux en temps réel et rendu côté serveur des rapports et images. Avec les v-cores principaux, une partie de la mémoire est également réservée. Car il est impératif de disposer d’une mémoire suffisante pour traiter les modèles de données volumineux ou les grands nombres de jeux de données actifs.
 
 ## <a name="power-bi-report-server"></a>Power BI Report Server
 Power BI Premium inclut le droit d’exécuter Power BI Report Server localement. Pour plus d’informations, consultez [Prise en main de Power BI Report Server](report-server/get-started.md).

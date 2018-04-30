@@ -1,31 +1,31 @@
 ---
-title: "S’abonner aux rapports et tableaux de bord Power BI"
-description: "Découvrez comment vous pouvez vous abonner ainsi que d’autres utilisateur à la capture instantanée d’un rapport et d’un tableau de bord Power BI."
+title: S’abonner aux rapports et tableaux de bord du service Power BI
+description: Découvrez comment vous pouvez vous abonner ainsi que d’autres utilisateur à la capture instantanée d’un rapport et d’un tableau de bord Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: saQx7G0pxhc
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 11e9a2ba499c6db2c75434d13c62bc53704a7cb3
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: af93d9d49b25fe2bc8fefcc2128dea74effc65ec
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>S’abonner à un rapport ou tableau de bord Power BI
+# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service-apppowerbicom"></a>S’abonner à un rapport ou un tableau de bord du service Power BI (app.powerbi.com)
 Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir des e-mails : de une fois par jour à une fois par semaine. 
 
 L’e-mail et l’instantané utiliseront la langue définie dans les paramètres de Power BI (cf. [Langues et pays/régions pris en charge par Power BI](supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI sélectionnera celle des paramètres régionaux du navigateur. Pour afficher ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](media/service-report-subscribe/power-bi-settings-icon.png) **> Paramètres > Général > Langue**. 

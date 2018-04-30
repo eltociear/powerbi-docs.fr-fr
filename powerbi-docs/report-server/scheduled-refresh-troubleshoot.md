@@ -1,15 +1,15 @@
 ---
-title: "Résoudre les problèmes d’actualisation planifiée dans Power BI Report Server"
-description: "Cet article décrit les ressources disponibles pour résoudre les problèmes d’actualisation planifiée dans Power BI Report Server."
+title: Résoudre les problèmes d’actualisation planifiée dans Power BI Report Server
+description: Cet article décrit les ressources disponibles pour résoudre les problèmes d’actualisation planifiée dans Power BI Report Server.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 466505ae2c4050629e8bbcc4ff90cde520d31375
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: cf084492a7b5d1ecc10ff933eeaef4cdbdc14022
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Résoudre les problèmes d’actualisation planifiée dans Power BI Report Server
 Cet article décrit les ressources disponibles pour résoudre les problèmes d’actualisation planifiée dans Power BI Report Server.
@@ -60,7 +60,6 @@ Les paramètres suivants permettent d’affecter une actualisation planifiée. L
 
 | Paramètre | Description |
 | --- | --- |
-| EnablePowerBIReportEmbeddedModels |Active ou désactive la possibilité d’utiliser des données importées dans vos rapports. Les valeurs valides sont True ou False. |
 | MaxFileSizeMb |Taille de fichier maximale des rapports chargés. La valeur par défaut est 1000 Mo (1 Go). La valeur maximale est 2000 Mo (2 Go). |
 | ModelCleanupCycleMinutes |Définit la fréquence à laquelle le modèle est vérifié en vue de le supprimer de la mémoire. La valeur par défaut est 15 minutes. |
 | ModelExpirationMinutes |Définit le temps restant avant l’expiration du modèle en fonction de la dernière heure d’utilisation et de suppression. La valeur par défaut est 60 minutes. |

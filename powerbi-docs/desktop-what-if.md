@@ -1,15 +1,15 @@
 ---
-title: "Utilisation des paramètres What if pour visualiser des variables dans Power BI Desktop"
-description: "Créer votre propre variable What if pour imaginer et visualiser des variables dans les rapports Power BI"
+title: Utilisation des paramètres What if pour visualiser des variables dans Power BI Desktop
+description: Créer votre propre variable What if pour imaginer et visualiser des variables dans les rapports Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,18 +18,18 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5222b6ba99c9e61d1070f66115b90aa29099fd8d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5c6aa2639b8991cd7a9e1527c780bdbe21ad64b9
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Créer et utiliser le paramètre What if pour visualiser des variables dans Power BI Desktop
 Depuis la version d’août 2017 de **Power BI Desktop**, vous pouvez créer des variables **What if** pour vos rapports, interagir avec la variable en tant que segment, ainsi que visualiser et quantifier différentes valeurs de clés dans vos rapports.
 
 ![](media/desktop-what-if/what-if_01.png)
 
-Le paramètre **What if** se trouve sous l’onglet **Modélisation** de **Power BI Desktop**. Lorsque vous procédez ainsi, une boîte de dialogue s’affiche, où vous pouvez configurer le paramètre.
+Le paramètre **What if** se trouve sous l’onglet **Modélisation** de **Power BI Desktop**. Lorsque vous le sélectionnez, une boîte de dialogue s’affiche et vous pouvez configurer le paramètre.
 
 ## <a name="creating-a-what-if-parameter"></a>Création d’un paramètre What if
 Pour créer le paramètre **What if**, sélectionnez le bouton **What if** sous l’onglet **Modélisation** de **Power BI Desktop**. Dans l’image suivante, nous avons créé un paramètre appelé *Pourcentage de remise* et défini son type de données sur *Nombre décimal*. La valeur *Minimum* est égale à zéro, la valeur *Maximum* est égale à 0,50 (50 %). Nous avons également défini l’*Incrément* sur 0,05 (ou 5 %). Il s’agit de la valeur d’ajustement du paramètre lors de son utilisation dans un rapport.
@@ -37,7 +37,7 @@ Pour créer le paramètre **What if**, sélectionnez le bouton **What if** sous 
 ![](media/desktop-what-if/what-if_02.png)
 
 > [!NOTE]
-> Veillez à faire précéder les nombres décimaux d’un zéro, comme dans 0,50 plutôt que simplement ,50 dans cette zone. Sinon, le nombre n’est pas validé et le bouton **OK** ne peut pas être sélectionné.
+> Pour les nombres décimaux, assurez-vous de les faire précéder d’un zéro, par exemple 0,50 plutôt que simplement ,50. Sinon, le nombre n’est pas validé et le bouton **OK** ne peut pas être sélectionné.
 > 
 > 
 
@@ -49,7 +49,7 @@ La création du paramètre **What if** crée également une mesure, qui vous per
 
 ![](media/desktop-what-if/what-if_04.png)
 
-Il est important et utile de noter que lorsque vous créez un paramètre **What if**, ce dernier et la mesure font alors partie de votre modèle. Ainsi, ils sont disponibles dans l’ensemble du rapport et peuvent être utilisés sur d’autres pages de rapport. De plus, dans la mesure où ils font partie du modèle, vous pouvez supprimer le segment de la page de rapport. Si vous souhaitez l’utiliser à nouveau, saisissez simplement le paramètre **What if** dans la liste **Champs** et faites-le glisser sur le canevas (puis remplacez le visuel par un segment) pour réafficher facilement le paramètre **What if** dans votre rapport.
+Il est important et utile de noter que lorsque vous créez un paramètre **What if**, ce dernier et la mesure font alors partie de votre modèle. Ainsi, ils sont disponibles dans l’ensemble du rapport et peuvent être utilisés sur d’autres pages du rapport. De plus, dans la mesure où ils font partie du modèle, vous pouvez supprimer le segment de la page du rapport. Si vous souhaitez l’utiliser à nouveau, saisissez simplement le paramètre **What if** dans la liste **Champs** et faites-le glisser sur le canevas (puis remplacez le visuel par un segment) pour réafficher facilement le paramètre dans votre rapport.
 
 ## <a name="using-a-what-if-parameter"></a>Utilisation d’un paramètre What if
 Vous allez créer un exemple simple d’utilisation du paramètre **What if**. Vous avez créé le paramètre **What if** dans la section précédente. Vous allez maintenant l’utiliser en créant une mesure dont la valeur s’ajuste avec le curseur. Pour ce faire, créez une mesure.
