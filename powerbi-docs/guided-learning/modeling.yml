@@ -1,74 +1,76 @@
 ### YamlMime:Tutorial
-title: "Modélisation"
+title: Modélisation
 metadata:
-  title: "Modélisation | Microsoft Power BI"
-  description: "Connectez-vous à plusieurs sources de données, puis combinez-les de manière à créer un modèle unique de données adapté à vos besoins."
+  title: Modélisation | Microsoft Power BI
+  description: Connectez-vous à plusieurs sources de données, puis combinez-les de manière à créer un modèle unique de données adapté à vos besoins.
   audience: Business User
   level: Beginner
-  nextTutorialHref: visualizations
+  nextTutorialHref: visualizations.yml
   nextTutorialTitle: Visualisations
   displayType: one-column
   author: davidiseminger
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 12/05/2017
+  ms.date: 05/02/2018
   ms.author: davidi
-  ms.openlocfilehash: 5b09b8365e59d8d89b30e4a01237f7d53559896f
-  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.openlocfilehash: 302dcaa8f76b9cd767ec7c3349abaea3cb0f8548
+  ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 05/04/2018
 items:
 - durationInMinutes: 1
-  content: "Avec les fonctionnalités de **modélisation** de **Power BI**, vous pouvez vous connecter à plusieurs sources de données, puis les combiner de manière à créer un modèle unique de données adapté à vos besoins.\n"
-- title: "Présentation de la modélisation des données"
+  content: >
+    Avec les fonctionnalités de **modélisation** de **Power BI**, vous pouvez vous connecter à plusieurs sources de données, puis les combiner de manière à créer un modèle unique de données adapté à vos besoins.
+- title: Présentation de la modélisation des données
   durationInMinutes: 3
   content: >
     > [!Video https://www.youtube.com/embed/VM1K15aEnm4?rel=0]
 
 
     [!INCLUDE [](includes/2-1-intro-modeling-data.md)]
-- title: "Comment gérer les relations entre vos données"
+- title: Comment gérer les relations entre vos données
   durationInMinutes: 9
   content: >
     > [!Video https://www.youtube.com/embed/MqNX5olPGGI?rel=0]
 
 
     [!INCLUDE [](includes/2-2-manage-data-relationships.md)]
-- title: "Créer des colonnes calculées"
+- title: Créer des colonnes calculées
   durationInMinutes: 9
   content: >
     > [!Video https://www.youtube.com/embed/GarBXef0Vew?rel=0]
 
 
     [!INCLUDE [](includes/2-3-create-calculated-columns.md)]
-- title: "Optimisation des modèles de données"
+- title: Optimisation des modèles de données
   durationInMinutes: 8
   content: >
     > [!Video https://www.youtube.com/embed/tDcrfnjjlgk?rel=0]
 
 
     [!INCLUDE [](includes/2-4-optimize-data-models.md)]
-- title: "Créer des mesures calculées"
+- title: Créer des mesures calculées
   durationInMinutes: 14
   content: >
     > [!Video https://www.youtube.com/embed/yn2bXVQJLx8?rel=0]
 
 
     [!INCLUDE [](includes/2-5-create-calculated-measures.md)]
-- title: "Créer des tables calculées"
+- title: Créer des tables calculées
   durationInMinutes: 4
   content: >
     > [!Video https://www.youtube.com/embed/aKX1E3krl4I?rel=0]
 
 
     [!INCLUDE [](includes/2-6-create-calculated-tables.md)]
-- title: "Explorer vos données temporelles"
+- title: Explorer vos données temporelles
   durationInMinutes: 6
   content: >
     > [!Video https://www.youtube.com/embed/MNAaHw4PxzE?rel=0]
 
 
     [!INCLUDE [](includes/2-6a-explore-time-based-data.md)]
-- content: "Vous êtes sur la bonne voie. Continuez votre formation sur Power BI ! Vous avez terminé la section **Modélisation** de la formation guidée sur Microsoft Power BI. La suite de la formation concerne les visualisations.\n"
+- content: >
+    Vous êtes sur la bonne voie. Continuez votre formation sur Power BI ! Vous avez terminé la section **Modélisation** de la formation guidée sur Microsoft Power BI. La suite de la formation concerne les visualisations.

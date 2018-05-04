@@ -1,56 +1,57 @@
 ### YamlMime:Tutorial
-title: "Exploration des données"
+title: Exploration des données
 metadata:
-  title: "Exploration de données | Microsoft Power BI"
-  description: "Découvrez comment rechercher, consulter et manipuler des données dans Power BI."
+  title: Exploration de données | Microsoft Power BI
+  description: Découvrez comment rechercher, consulter et manipuler des données dans Power BI.
   audience: Business User
   level: Beginner
-  nextTutorialHref: powerbiandexcel
-  nextTutorialTitle: "Power BI et Excel"
+  nextTutorialHref: powerbiandexcel.yml
+  nextTutorialTitle: Power BI et Excel
   displayType: one-column
   author: davidiseminger
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 12/05/2017
+  ms.date: 05/02/2018
   ms.author: davidi
-  ms.openlocfilehash: aa974a0f3448efde8a4410fabcf0e4f78a5050fd
-  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.openlocfilehash: 2d5e4f060aa342e7ce86af699032f7fa2256543e
+  ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 05/04/2018
 items:
 - durationInMinutes: 1
-  content: "Bienvenue dans le didacticiel sur l’**exploration de données**. Découvrez comment rechercher, consulter et manipuler des données dans Power BI.\n"
-- title: "Présentation du service Power BI"
+  content: >
+    Bienvenue dans le didacticiel sur l’**exploration de données**. Découvrez comment rechercher, consulter et manipuler des données dans Power BI.
+- title: Présentation du service Power BI
   durationInMinutes: 2
   content: >
     > [!Video https://www.youtube.com/embed/B2vd4MQrz4M?rel=0]
 
 
     [!INCLUDE [](includes/4-0-intro-power-bi-service.md)]
-- title: "Informations rapides dans Power BI"
+- title: Informations rapides dans Power BI
   durationInMinutes: 5
   content: >
     > [!Video https://www.youtube.com/embed/et_MLSL2sA8?rel=0]
 
 
     [!INCLUDE [](includes/4-1a-quick-insights.md)]
-- title: "Créer et configurer un tableau de bord"
+- title: Créer et configurer un tableau de bord
   durationInMinutes: 6
   content: >
     > [!Video https://www.youtube.com/embed/lJKgWnvl6bQ?rel=0]
 
 
     [!INCLUDE [](includes/4-2-create-configure-dashboards.md)]
-- title: "Poser des questions sur vos données en langage naturel"
+- title: Poser des questions sur vos données en langage naturel
   durationInMinutes: 9
   content: >
     > [!Video https://www.youtube.com/embed/qMf7OLJfCz8?rel=0]
 
 
     [!INCLUDE [](includes/4-3-asking-questions-natural-language.md)]
-- title: "Créer des suggestions Q&R personnalisées"
+- title: Créer des suggestions Q&R personnalisées
   durationInMinutes: 4
   content: >
     > [!Video https://www.youtube.com/embed/E1mIAyEXuF4?rel=0]
@@ -64,21 +65,21 @@ items:
 
 
     [!INCLUDE [](includes/4-4-share-dashboards.md)]
-- title: "Afficher des éléments visuels et des vignettes en plein écran"
+- title: Afficher des éléments visuels et des vignettes en plein écran
   durationInMinutes: 4
   content: >
     > [!Video https://www.youtube.com/embed/LoApjhwTse0?rel=0]
 
 
     [!INCLUDE [](includes/4-4b-display-visuals-tiles-fullscreen.md)]
-- title: "Modifier les détails d’une vignette et ajouter des widgets"
+- title: Modifier les détails d’une vignette et ajouter des widgets
   durationInMinutes: 6
   content: >
     > [!Video https://www.youtube.com/embed/XhqVbHqd5jQ?rel=0]
 
 
     [!INCLUDE [](includes/4-4d-change-tile-details.md)]
-- title: "Obtenir davantage d’espace sur votre tableau de bord"
+- title: Obtenir davantage d’espace sur votre tableau de bord
   durationInMinutes: 5
   content: >
     > [!Video https://www.youtube.com/embed/c31gZkyvC54?rel=0]
@@ -92,4 +93,4 @@ items:
 
 
     [!INCLUDE [](includes/4-6-install-configure-personal-gateway.md)]
-- content: "Cette section **Exploration de données** de la formation guidée vous a préparé à utiliser toutes sortes de types de données. Dans le didacticiel suivant, vous allez apprendre à utiliser une source de données commune - Excel.\0"
+- content: Cette section **Exploration de données** de la formation guidée vous a préparé à utiliser toutes sortes de types de données. Dans le didacticiel suivant, vous allez apprendre à utiliser une source de données commune - Excel.

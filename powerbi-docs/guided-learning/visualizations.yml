@@ -1,42 +1,43 @@
 ### YamlMime:Tutorial
 title: Visualisations
 metadata:
-  title: "Visualisation | Microsoft Power BI"
-  description: "Les visualisations donnent vie à vos données et révèlent des informations que seules des représentations visuelles attrayantes et étonnantes peuvent rendre. Cette section vous montre comment."
+  title: Visualisation | Microsoft Power BI
+  description: Les visualisations donnent vie à vos données et révèlent des informations que seules des représentations visuelles attrayantes et étonnantes peuvent rendre. Cette section vous montre comment.
   audience: Business User
   level: Beginner
-  nextTutorialHref: exploringdata
-  nextTutorialTitle: "Exploration des données"
+  nextTutorialHref: exploringdata.yml
+  nextTutorialTitle: Exploration des données
   displayType: one-column
   author: davidiseminger
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 12/05/2017
+  ms.date: 05/02/2018
   ms.author: davidi
-  ms.openlocfilehash: e1492e55e47ea0871f4a07a0cc599570f36cae40
-  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.openlocfilehash: 8ce82b4d86d6e6eb8affbe567cc606fe2cc37732
+  ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 05/04/2018
 items:
 - durationInMinutes: 1
-  content: "Les visualisations donnent vie à vos données et révèlent des informations que seules des représentations visuelles attrayantes et étonnantes peuvent rendre. Cette section de la formation guidée **Power BI** vous montre comment les utiliser.\n"
-- title: "Présentation des éléments visuels dans Power BI"
+  content: >
+    Les visualisations donnent vie à vos données et révèlent des informations que seules des représentations visuelles attrayantes et étonnantes peuvent rendre. Cette section de la formation guidée **Power BI** vous montre comment les utiliser.
+- title: Présentation des éléments visuels dans Power BI
   durationInMinutes: 2
   content: >
     > [!Video https://www.youtube.com/embed/SYk_gWrtKvM?rel=0]
 
 
     [!INCLUDE [](includes/3-1-intro-visualizations.md)]
-- title: "Créer et personnaliser des visualisations simples"
+- title: Créer et personnaliser des visualisations simples
   durationInMinutes: 8
   content: >
     > [!Video https://www.youtube.com/embed/IkJda4O7oGs?rel=0]
 
 
     [!INCLUDE [](includes/3-2-create-customize-simple-visualizations.md)]
-- title: "Graphiques combinés"
+- title: Graphiques combinés
   durationInMinutes: 5
   content: >
     > [!Video https://www.youtube.com/embed/lnv66cTZ5ho?rel=0]
@@ -78,14 +79,14 @@ items:
 
 
     [!INCLUDE [](includes/3-8-create-waterfall-funnel-charts.md)]
-- title: "Jauges et cartes à numéro unique"
+- title: Jauges et cartes à numéro unique
   durationInMinutes: 7
   content: >
     > [!Video https://www.youtube.com/embed/xmja6EpqaO0?rel=0]
 
 
     [!INCLUDE [](includes/3-9-create-gauges-cards.md)]
-- title: "Modifier les couleurs dans les graphiques et les éléments visuels"
+- title: Modifier les couleurs dans les graphiques et les éléments visuels
   durationInMinutes: 5
   content: >
     > [!Video https://www.youtube.com/embed/oNME83EAvLw?rel=0]
@@ -120,14 +121,14 @@ items:
 
 
     [!INCLUDE [](includes/3-11b-duplicate-page.md)]
-- title: "Afficher les catégories sans données"
+- title: Afficher les catégories sans données
   durationInMinutes: 3
   content: >
     > [!Video https://www.youtube.com/embed/rsUMVJAIH00?rel=0]
 
 
     [!INCLUDE [](includes/3-11c-display-empty-categories.md)]
-- title: "Options de résumé et de catégorie"
+- title: Options de résumé et de catégorie
   durationInMinutes: 9
   content: >
     > [!Video https://www.youtube.com/embed/Co2z9b-s_yM?rel=0]
@@ -141,18 +142,18 @@ items:
 
 
     [!INCLUDE [](includes/3-11f-arrange-visual-zorder.md)]
-- title: "Hiérarchies visuelles et exploration"
+- title: Hiérarchies visuelles et exploration
   durationInMinutes: 5
   content: >
     > [!Video https://www.youtube.com/embed/q8WDUAiTGeU?rel=0]
 
 
     [!INCLUDE [](includes/3-11g-visual-hierarchies-drilling.md)]
-- title: "Intégration de R dans Power BI Desktop"
+- title: Intégration de R dans Power BI Desktop
   durationInMinutes: 9
   content: >
     > [!Video https://www.youtube.com/embed/pV78e9aYHXk?rel=0]
 
 
     [!INCLUDE [](includes/3-11h-r-visual-integration.md)]
-- content: "Beau travail. Vous avez terminé la section **Visualisations** de la **formation guidée** et vous êtes prêt à passer au didacticiel suivant intitulé **Exploration de données**.\0"
+- content: Beau travail. Vous avez terminé la section **Visualisations** de la **formation guidée** et vous êtes prêt à passer au didacticiel suivant intitulé **Exploration de données**.
