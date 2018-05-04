@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/09/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: bb0800dc6a61efe1d7b331a6049460275b4412a3
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 344e6ecc31748d58f0803f95aed53badfa6be4f2
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 Vous pouvez obtenir une connectivité avec authentification unique transparente, permettant la mise à jour de rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec Kerberos. La passerelle de données locale facilite l’authentification unique (SSO) à l’aide de la requête DirectQuery utilisée pour se connecter à des sources de données locales.
@@ -64,19 +64,18 @@ Des détails supplémentaires concernant ces étapes figurent ci-dessous :
 
 
 > [!NOTE]
-> Pour activer l’authentification unique pour SAP HANA, assurez-vous que les configurations de SAP HANA suivantes sont correctes pour SAP :
-> 1. Vérifiez que le serveur SAP HANA exécute la version minimale requise, qui dépend du niveau de la plateforme de votre serveur SAP HANA :
-> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
-> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
-> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> Pour activer l’authentification unique pour SAP HANA :
 >
-> 2. Sur l’ordinateur de la passerelle, installez le pilote ODBC HANA SAP le plus récent.  La version minimale est HANA ODBC 2.00.020.00 datant d’août 2017.
+> - Vérifiez que le serveur SAP HANA exécute la version minimale requise, qui dépend du niveau de la plateforme de votre serveur SAP HANA :
+>     - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+>     - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+>     - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 >
-> Les liens suivants vers les correctifs et les mises à niveau à partir de SAP peuvent être utiles. Notez que vous devez vous connecter aux ressources suivantes avec votre compte SAP Support, et que SAP peut-changer ou mettre à jour ces liens.
-> 
-> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386) 
-> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324) 
-> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> - Sur l’ordinateur de la passerelle, installez le pilote ODBC HANA SAP le plus récent.  La version minimale est HANA ODBC 2.00.020.00 datant d’août 2017.
+>
+> Pour plus d’informations sur la configuration de l’authentification unique pour SAP HANA à l’aide de Kerberos, consultez la rubrique [Authentification unique à l’aide de Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/en-US/1885fad82df943c2a1974f5da0eed66d.html) dans le Guide de sécurité SAP HANA et les liens de cette page, notamment SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory]. 
+>
+>
 
 
 ## <a name="errors-from-an-insufficient-kerberos-configuration"></a>Erreurs d’une configuration insuffisante de Kerberos

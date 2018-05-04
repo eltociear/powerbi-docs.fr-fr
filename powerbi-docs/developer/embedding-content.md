@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/12/2018
 ms.author: maghan
-ms.openlocfilehash: 014601a4c85be53d6fd06a455d04e5ee1f8daf2d
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 2caf5adc442a5794a23e3ed5af478f5467068b14
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Incorporer vos tableaux de bord, rapports et vignettes Power BI
 
@@ -143,7 +143,7 @@ Si l’incorporation s’adresse à vos clients, effectuez les opérations suiva
 * Achetez une capacité adaptée à vos besoins. Vous pouvez utiliser le tableau ci-dessous pour identifier la référence SKU de la capacité Power BI Embedded dont vous avez besoin. Pour plus d’informations, consultez le [livre blanc Planification d’une capacité d’analytique incorporée](https://aka.ms/pbiewhitepaper). Lorsque vous êtes prêt, vous pouvez procéder à l’achat à partir du [portail Microsoft Azure](https://portal.azure.com). Pour plus d’informations sur la façon de créer une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le portail Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 
 > [!IMPORTANT]
-> Étant donné que les jetons incorporés sont uniquement destinés aux tests de développement, le nombre de jetons incorporés qu’un compte principal Power BI peut générer est limité. Vous [devez acheter une capacité](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée.
+> Étant donné que les jetons incorporés sont uniquement destinés aux tests de développement, le nombre de jetons incorporés qu’un compte principal Power BI peut générer est limité. Vous [devez acheter une capacité](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée. Accédez à [Obtenir les fonctionnalités disponibles](https://msdn.microsoft.com/en-us/library/mt846473.aspx) pour vérifier combien de jetons intégrés gratuits ont été utilisés.
 
 | Nœud de capacité | Nombre total de cœurs<br/>*(Serveur principal + serveur frontal)* | Cœurs du serveur principal | Cœurs du serveur frontal | Limites de connexions actives/DirectQuery | Rendus de pages au maximum aux heures de pointe |
 | --- | --- | --- | --- | --- | --- |

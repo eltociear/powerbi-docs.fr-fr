@@ -1,6 +1,6 @@
 ---
 title: Explorer des rapports dans les applications mobiles Power BI
-description: 'Découvrez comment afficher des rapports et interagir avec eux dans les applications mobiles Power BI sur votre téléphone ou tablette. Vous créez des rapports dans le service Power BI ou Power BI Desktop, puis interagissez avec ces rapports dans les applications mobiles. '
+description: Découvrez comment afficher des rapports et interagir avec eux dans les applications mobiles Power BI sur votre téléphone ou tablette. Vous créez des rapports dans le service Power BI ou Power BI Desktop, puis interagissez avec ces rapports dans les applications mobiles.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: 6edd5a6e9606150d4b489a79cdb5ca57ac2f8cce
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: a7bd77ec65fd3897c6e9af9acd2a20a229565415
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -50,7 +50,7 @@ Les rapports Power BI sont stockés dans des emplacements différents dans l’a
   ![Rapport sur téléphone en mode Paysage](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Afficher les rapports optimisés pour les téléphones
-Les auteurs de rapports Power BI peuvent créer une disposition de rapport spécialement optimisée pour les téléphones. Les pages de rapport optimisées pour les téléphones ont de nouvelles fonctionnalités : par exemple, vous pouvez effectuer une exploration vers le bas et un tri des visuels en mode Focus et vous pouvez accéder aux [filtres que l’auteur du rapport a ajoutés à la page de rapport](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Le rapport s’ouvre sur votre téléphone. Il est filtré en fonction des valeurs filtrées dans le rapport sur le web, avec un message indiquant qu’il existe des filtres actifs sur la page. Vous pouvez modifier les filtres sur votre téléphone.
+Les auteurs de rapports Power BI peuvent créer une disposition de rapport spécialement optimisée pour les téléphones. Les pages de rapport optimisées pour les téléphones ont de nouvelles fonctionnalités : par exemple, vous pouvez effectuer une exploration vers le bas et un tri des visuels, et vous pouvez accéder aux [filtres que l’auteur du rapport a ajoutés à la page de rapport](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Le rapport s’ouvre sur votre téléphone. Il est filtré en fonction des valeurs filtrées dans le rapport sur le web, avec un message indiquant qu’il existe des filtres actifs sur la page. Vous pouvez modifier les filtres sur votre téléphone.
 
 Dans la liste des rapports, un rapport optimisé possède une icône spéciale ![Icône de rapport sur téléphone](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
@@ -64,7 +64,7 @@ Lorsque vous affichez un rapport sur un téléphone, il s’ouvre en mode portra
 
 En savoir plus sur les [rapports optimisés pour l’affichage sur téléphone](mobile-apps-view-phone-report.md).
 
-## <a name="use-slicers-to-filter-a-report-page"></a>Utiliser des segments pour filtrer une page de rapport
+## <a name="use-slicers-to-filter-a-report"></a>Utiliser des segments pour filtrer un rapport
 Quand vous concevez un rapport dans Power BI Desktop ou le service Power BI, vous pouvez [ajouter des segments à une page de rapport](power-bi-visualization-slicers.md). Vous et vos collègues pouvez les utiliser pour filtrer la page dans un navigateur et dans les applications mobiles. Lorsque vous affichez le rapport sur un téléphone, vous pouvez voir et interagir avec les segments en mode paysage et sur une page optimisée pour le mode portrait du téléphone. Si vous sélectionnez une valeur dans un segment ou un filtre dans le navigateur, la valeur est également sélectionnée lorsque vous affichez la page dans l’application mobile. Un message s’affiche indiquant qu’il existe des filtres actifs sur la page.  
 
 * Lorsque vous sélectionnez une valeur dans un segment de la page de rapport, celle-ci filtre les autres visuels sur la page.
@@ -73,7 +73,7 @@ Quand vous concevez un rapport dans Power BI Desktop ou le service Power BI, vou
   
   Dans cette illustration, le segment filtre l’histogramme pour afficher uniquement les valeurs de juillet.
 
-## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>Effectuer un filtrage croisé et mettre en surbrillance une page de rapport Power BI
+## <a name="cross-filter-and-highlight-a-report"></a>Effectuer un filtrage croisé et mettre en surbrillance un rapport
 Lorsque vous sélectionnez une valeur dans un visuel, elle ne filtre pas les autres visuels. Elle met en surbrillance les valeurs associées dans les autres visuels.
 
 * Appuyez sur une valeur dans un visuel.
@@ -88,7 +88,7 @@ Lorsque vous sélectionnez une valeur dans un visuel, elle ne filtre pas les aut
    ![Trier un visuel](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * Pour inverser l’ordre de tri, rappuyez sur les points de suspension (**...**), puis appuyez sur le même nom de champ.
 
-## <a name="drill-down-and-up-in-a-visual-on-an-ipad-or-a-tablet"></a>Monter ou descendre dans la hiérarchie d’un visuel sur un iPad ou une tablette
+## <a name="drill-down-on-an-ipad-or-a-tablet"></a>Effectuer une exploration vers le bas sur un iPad ou une tablette
 Si un auteur de rapport a ajouté cette fonctionnalité à un visuel, sur un iPad ou une tablette, vous pouvez descendre dans la hiérarchie d’un visuel pour afficher les valeurs qui composent une partie de celui-ci. [Ajoutez la descente dans la hiérarchie à un visuel](power-bi-visualization-drill-down.md) dans le service Power BI ou dans Power BI Desktop. 
 
 > [!NOTE]

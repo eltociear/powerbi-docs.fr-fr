@@ -1,27 +1,27 @@
 ---
 title: Inscrire une application pour incorporer du contenu Power BI
-description: "Découvrez comment inscrire une application dans Azure Active Directory afin de l’utiliser avec l’incorporation de contenu Power BI."
+description: Découvrez comment inscrire une application dans Azure Active Directory afin de l’utiliser avec l’incorporation de contenu Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: cc9a4c7a29ddb84e6230d42f31a9c6a0427008f1
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: e3d0e8b98135e232809cd2b5e3fc06827b1f480e
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Inscrire une application Azure AD pour incorporer du contenu Power BI
 Découvrez comment inscrire une application dans Azure Active Directory (Azure AD) afin de l’utiliser avec l’incorporation de contenu Power BI.
@@ -58,6 +58,22 @@ Voici comment inscrire votre application avec l’outil d’inscription d’appl
 7. Sélectionnez **Inscrire l’application**.
    
     Vous recevez alors un **ID client**. Si vous avez sélectionné le type **Application web côté serveur**, vous recevez également une **clé secrète client**. Le cas échéant, vous pourrez récupérer l’**ID client** sur le portail Azure ultérieurement. Si vous perdez le **Secret du client**, vous devez en créer un autre dans le portail Azure.
+
+8. Vous devrez accéder à Azure pour sélectionner **Accorder des autorisations**.
+> [!Note]
+    > Pour ce faire, vous devez être un administrateur global dans le locataire Azure
+>
+
+* Accédez à Azure.
+* Recherchez et sélectionnez **Inscriptions des applications**.
+* Choisissez votre application.
+* Sélectionnez **Paramètres**.
+* Sélectionnez **Autorisations nécessaires**.
+* Sélectionnez **Service Power BI** pour vérifier les autorisations que vous avez sélectionnées à partir du site d’inscription de l’application.
+* Sélectionnez **Accorder des autorisations**.
+
+
+
 
 Vous pouvez à présent utiliser l’application inscrite au sein de votre application personnalisée pour interagir avec le service Power BI.
 
@@ -190,4 +206,5 @@ Vous devez être connecté en utilisant un compte *principal* pour l’incorpora
 Maintenant que vous avez enregistré votre application dans Azure AD, vous devez authentifier les utilisateurs dans votre application. Pour plus d’informations, consultez [Authentifier des utilisateurs et obtenir un jeton d’accès Azure AD pour votre application Power BI](get-azuread-access-token.md).
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+
 

@@ -1,28 +1,28 @@
 ---
-title: "Résoudre les problèmes de démarrage de Power BI Desktop"
-description: "Résoudre les problèmes de démarrage de Power BI Desktop"
+title: Résoudre les problèmes de démarrage de Power BI Desktop
+description: Résoudre les problèmes de démarrage de Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 43263afb63fa0350a240cae602f4a2acf8ef8edd
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 2014524b3209a67bd0f0aaa3d1ddf00042227c4d
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Résoudre les problèmes empêchant le démarrage de Power BI Desktop
 Dans **Power BI Desktop**, les utilisateurs ayant installé et exécuté des versions précédentes de la **passerelle de données locale Power BI** peuvent se retrouver dans l’impossibilité de démarrer Power BI Desktop. Cela est dû aux restrictions de stratégie d’administration placées par la passerelle de données locale sur les canaux nommés de l’ordinateur local. 
@@ -36,13 +36,15 @@ La dernière version de la passerelle de données locale Power BI ne place pas d
 ### <a name="resolution-2-uninstall-or-stop-the-power-bi-on-premises-data-gateway-windows-service"></a>Solution 2 : Désinstaller ou arrêter le service Windows de passerelle de données locale Power BI
 Vous pouvez désinstaller la passerelle de données locale Power BI si vous n’en avez plus besoin. Vous pouvez aussi arrêter le service Windows de passerelle de données locale Power BI, ce qui supprime la restriction de stratégie et permet à Power BI Desktop de démarrer.
 
-### <a name="resolution-3-run-power-bi-desktop-with-administrator-privilege"></a>Solution 3 : Exécuter Power BI Desktop avec des privilèges d’administrateur
+### <a name="resolution-3-run-power-bi-desktop-with-administrator-privilege"></a>Solution 3 : exécuter Power BI Desktop avec des privilèges d’administrateur
 Vous pouvez démarrer Power BI Desktop en tant qu’administrateur, ce qui permet également à Power BI Desktop de démarrer correctement. Il est toutefois recommandé d’installer la dernière version de la passerelle de données locale Power BI, comme décrit précédemment dans cet article.
+
+Il est important de noter que Power BI Desktop est conçu comme une architecture multitraitement et que plusieurs de ces processus communiquent à l’aide de canaux nommés de Windows. D’autres processus peuvent interférer avec ces canaux nommés. La raison la plus courante de telles interférences est la sécurité, notamment les situations où un logiciel antivirus ou des pare-feu peuvent bloquer les canaux ou rediriger le trafic vers un port spécifique. Le lancement de Power BI Desktop avec des privilèges d’administrateur peut résoudre ce problème. Si le lancement avec des privilèges d’administrateur n’est pas possible, contactez votre administrateur pour déterminer quelles règles de sécurité appliquées empêchent les canaux nommés de communiquer correctement et autoriser Power BI Desktop et ses sous-processus respectifs.
 
 ## <a name="help-with-other-issues-when-launching-power-bi-desktop"></a>Aide à la résolution des problèmes de lancement de Power BI Desktop
 Nous nous efforçons autant que possible de résoudre les problèmes qui se produisent avec **Power BI Desktop**. Nous examinons régulièrement les problèmes qui peuvent affecter de nombreux clients afin de les inclure dans nos articles.
 
-Si le problème avec le lancement de **Power BI Desktop** n’est pas associé à la passerelle de données locale, ou lorsque les solutions précédentes ne fonctionnent pas, vous pouvez soumettre un incident au [support Power BI](https://support.powerbi.com) (https://support.powerbi.com) pour aider à identifier et résoudre votre problème.
+Si le problème avec le lancement de **Power BI Desktop** n’est pas associé à la passerelle de données locale, ou lorsque les solutions précédentes ne fonctionnent pas, vous pouvez soumettre un incident au [support Power BI](https://support.powerbi.com) (https://support.powerbi.com)) pour aider à identifier et résoudre votre problème.
 
 Si, à l’avenir, vous rencontrez d’autres problèmes avec **Power BI Desktop** (nous espérons qu’ils seront peu nombreux voire inexistants), il est utile d’activer le suivi et de collecter des fichiers journaux, pour mieux isoler et identifier le problème. Pour activer le suivi, sélectionnez **Fichier > Options et paramètres > Options**, sélectionnez **Diagnostics**, puis activez **Activer le suivi** sous *Options de diagnostic*. Nous sommes conscients que **Power BI Desktop** doit être en cours d’exécution pour définir cette option, qui est plus utile pour les problèmes futurs associés au lancement de **Power BI Desktop**.
 

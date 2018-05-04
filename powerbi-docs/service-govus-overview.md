@@ -1,28 +1,28 @@
 ---
-title: "Power BI pour les clients US Government - Vue d’ensemble"
-description: "Si vous êtes un client US Government, découvrez les fonctionnalités et limitations du service Power BI US Government"
+title: Power BI pour les clients US Government - Vue d’ensemble
+description: Si vous êtes un client US Government, découvrez les fonctionnalités et limitations du service Power BI US Government
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b3682deb1897647a7de6f32dc87a4d7ed8bc2c9f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: fc917b3a6754c0e9badc11b0d331ae1328bf089c
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -61,6 +61,7 @@ Dans le cloud public, les plages d’IP sont disponibles, mais pour le cloud Azu
 ## <a name="limitations-of-power-bi-us-government"></a>Limitations de Power BI US Government
 Certaines des fonctionnalités disponibles dans la version commerciale du **service Power BI** ne sont *pas* disponibles dans le **service Power BI** US Government. L’équipe Power BI travaille activement à rendre ces fonctionnalités disponibles pour les clients US Government et mettra à jour cet article au moment opportun.
 
+* **Incorporer dans SharePoint Online** : il n’est pas possible d’incorporer du contenu dans SharePoint Online à l’aide de la partie web de Power BI.
 * **Power BI US Government** est disponible uniquement sous licence **Pro**. Toutes les références à des licences Power BI (Gratuit) dans un portail d’administration (ou en tant qu’utilisateur) s’exécutent dans un cloud de service Power BI commercial.
 * **Audit** : l’audit n’est pas disponible par le biais du portail Centre de sécurité et conformité Office 365.
 * **Contenu Power BI dans Cortana** - Les résultats Power BI ne s’affichent pas dans les résultats de recherche de Cortana, notamment les résultats de votre contenu Power BI (tableaux de bord, rapports, applications), ainsi que les résultats qui montrent des pages de rapport optimisées pour Cortana pour des mots clés spécifiques.

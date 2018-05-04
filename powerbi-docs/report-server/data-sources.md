@@ -1,6 +1,6 @@
 ---
 title: Sources de données de rapport Power BI dans Power BI Report Server
-description: Les rapports Power BI peuvent se connecter à différentes sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles.
+description: Les rapports Power BI (.pbix) peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles.
 services: powerbi
 documentationcenter: ''
 author: markingmyname
@@ -15,23 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/02/2018
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: bc490834b215af45df1063fd06b94ed9b735d852
-ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
+ms.openlocfilehash: a32ef2e1e85b252a2a1071cb95c80149486c2604
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
-Les rapports Power BI peuvent se connecter à différentes sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
+# <a name="power-bi-report-pbix-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI (.pbix) dans Power BI Report Server
+Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
 
-Ces sources de données sont spécifiques des rapports Power BI utilisés dans Power BI Report Server. Pour plus d’informations sur les sources de données prises en charge avec des rapports paginés, voir [Sources de données prises en charge par Reporting Services (SSRS)](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
+Ces sources de données sont spécifiques des rapports Power BI utilisés dans Power BI Report Server. Pour plus d’informations sur les sources de données prises en charge avec des rapports paginés (.rdl), consultez [Sources de données prises en charge par Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).
 
 > [!IMPORTANT]
-> Pour pouvoir configurer une actualisation planifiée, toutes les sources de données dans un rapport Power BI Desktop doivent être prises en charge.
-> 
-> 
+> Toutes les sources de données dans un rapport Power BI Desktop doivent prendre en charge la configuration de l’actualisation planifiée.
+>  
 
 ## <a name="list-of-supported-data-sources"></a>Liste des sources de données prises en charge
 
@@ -216,7 +215,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour Di
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-Maintenant que votre source de données est sélectionnée, [créez un rapport](quickstart-create-powerbi-report.md) à l’aide des données à partir de cette source.
+Maintenant que vous êtes connecté à votre source de données, [créez un rapport Power BI](quickstart-create-powerbi-report.md) à l’aide des données de cette source de données.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

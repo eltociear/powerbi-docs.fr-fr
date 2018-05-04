@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1660f129ef5c93cf5aed5a3a5eda3c835e1885c1
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 492eed949fd47b8f057bc67b127ba774b2218887
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
 Les **signets** de Power BI permettent de capturer la vue actuellement configurée d’une page de rapport, filtrage et état des visuels compris, puis de revenir à cet état en sélectionnant simplement le signet enregistré. 
@@ -69,6 +69,10 @@ Configurez une page de rapport comme vous souhaitez qu’elle apparaisse dans le
 
 Une fois que vous avez un signet, vous pouvez l’afficher en cliquant simplement dessus dans le volet **Signets**. 
 
+Vous pouvez également choisir si chaque signet appliquera des propriétés de *données*, comme des filtres et des segments, des propriétés *d’affichage*, comme À la une et sa visibilité, et les modifications de la page représentant la page qui était visible lors de l’ajout du signet. Ces fonctionnalités sont utiles si vous utilisez les signets pour naviguer entre les types de visuels. Dans ce cas, vous devrez sans doute désactiver les propriétés de données, afin que les filtres ne soient pas réinitialisés lorsque les utilisateurs modifient les types de visuels. 
+
+Pour effectuer ces modifications, sélectionnez les points de suspension en regard du nom du signet, comme illustré dans l’image précédente, puis sélectionnez ou désélectionnez les coches en regard de *Données*, *Affichage* et autres contrôles. 
+
 ## <a name="arranging-bookmarks"></a>Organisation des signets
 Lorsque vous créez des signets, vous pouvez trouver que l’ordre dans lequel vous les créez n’est pas nécessairement l’ordre dans lequel vous voulez les présenter à votre audience. Cela ne constitue pas un problème, car vous pouvez facilement réorganiser l’ordre des signets.
 
@@ -105,13 +109,13 @@ Lorsque vous ajoutez un signet, l’état visible de chaque objet est également
 Il est important de noter que **des segments** continuent de filtrer une page de rapport, qu’ils soient visibles ou non. Par conséquent, vous pouvez créer différents signets, avec différents paramètres de segment. Vous pouvez ainsi donner un aspect complètement différent à une page de rapport (et mettre en évidence différents insights) en créant différents signets.
 
 ## <a name="bookmarks-for-shapes-and-images"></a>Signets pour les formes et images
-Vous pouvez également lier des formes et des images à des signets. Lorsque vous cliquez sur un objet, cette fonctionnalité affiche le signet associé à cet objet. 
+Vous pouvez également lier des formes et des images à des signets. Lorsque vous cliquez sur un objet, cette fonctionnalité affiche le signet associé à cet objet. Cela peut s’avérer particulièrement utile si vous travaillez avec des boutons. Pour en savoir plus, lisez l’article sur [l’utilisation des boutons dans Power BI](desktop-buttons.md). 
 
-Pour affecter un signet à un objet, sélectionnez l’objet, puis sélectionnez **Lien** dans le volet **Format de la forme**, comme indiqué dans l’image suivante.
+Pour affecter un signet à un objet, sélectionnez l’objet, puis développez la section **Action** dans le volet **Format de la forme**, comme indiqué dans l’image suivante.
 
 ![Ajouter un lien de signet à un objet](media/desktop-bookmarks/bookmarks_10.png)
 
-Une fois que vous avez activé le curseur **Lien** en le définissant sur **Activé**, vous pouvez indiquer si l’objet est un lien ou un signet. Si vous sélectionnez Signet, vous pouvez ensuite sélectionner les signets auxquels l’objet est lié.
+Une fois que vous avez activé le curseur **Action** en le définissant sur **Activé**, vous pouvez indiquer si l’objet est un bouton de retour, un signet ou une commande Q&R. Si vous sélectionnez Signet, vous pouvez ensuite sélectionner les signets auxquels l’objet est lié.
 
 Les signets liés à des objets vous permettent d’effectuer des tâches très diverses. Vous pouvez créer un tableau visuel de contenu sur la page de rapport. Vous pouvez également fournir différentes vues (telles que les types de visuels) de la même information, en cliquant simplement sur un objet.
 
@@ -138,9 +142,7 @@ En revanche, lorsque **À la une** est sélectionné dans le menu contextuel du 
 Si l’un des modes est sélectionné lors de l’ajout d’un signet, ce mode (Focus ou À la une) est conservé dans le signet.
 
 ## <a name="bookmarks-in-the-power-bi-service"></a>Signets dans le service Power BI
-Lorsque vous publiez un rapport contenant au moins un signet dans le **service Power BI** , vous pouvez afficher et utiliser les signets dans le **service Power BI**. Chaque rapport que vous publiez doit inclure au préalable au moins un signet pour que la fonctionnalité de signet soit disponible dans le **service Power BI**.
-
-Lorsque les signets sont disponibles dans un rapport, vous pouvez sélectionner **Vue > volet Sélection** ou **Vue > volet Signets** pour afficher chacun de ces volets.
+Lorsque vous publiez un rapport contenant au moins un signet dans le **service Power BI** , vous pouvez afficher et utiliser les signets dans le **service Power BI**. Lorsque les signets sont disponibles dans un rapport, vous pouvez sélectionner **Vue > volet Sélection** ou **Vue > volet Signets** pour afficher chacun de ces volets.
 
 ![Afficher les volets Signets et Sélection dans le service Power BI](media/desktop-bookmarks/bookmarks_14.png)
 
@@ -151,11 +153,10 @@ Notez que vous devez utiliser la barre de titre de signets en gris pour naviguer
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Pour cette préversion des **signets**, vous devez garder à l’esprit les considérations et limitations suivantes.
 
-* Les visuels personnalisés ne prennent pas en charge les signets s’ils sont la *source* du filtre. Si vous utilisez des visuels personnalisés pour filtrer les éléments sur une page (par exemple, le segment Chiclet) et que vous revenez sur cette page à l’aide d’un signet, la page peut être filtrée, mais le visuel personnalisé n’est pas mis à jour de manière à afficher la façon dont la page est filtrée. 
-* L’état de sélection croisée d’un volet de rapport n’est *pas* enregistré lorsque vous créez un signet. 
+* La plupart des visuels personnalisés doivent fonctionner correctement avec l’attribution de signets. Si vous rencontrez des problèmes avec l’attribution de signets et un visuel personnalisé, contactez le créateur de ce dernier et demandez-lui d’ajouter la prise en charge des signets pour son visuel. 
 * Si vous ajoutez un visuel sur une page de rapport après la création d’un signet, le visuel s’affiche dans son état par défaut. Cela signifie également que si vous introduisez un segment dans une page où vous avez précédemment créé des signets, le segment se comporte avec son état par défaut.
 * Le déplacement parmi les visuels après la création d’un signet est reflété dans le signet. 
-* Vous *devez* avoir au moins un signet dans votre rapport, lorsque vous publiez celui-ci dans le **service Power BI**, afin que les signets soient disponibles dans le service. Il s’agit d’une exigence pour chaque rapport que vous publiez.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur les fonctionnalités qui sont similaires ou pour interagir avec des signets, consultez les articles suivants :

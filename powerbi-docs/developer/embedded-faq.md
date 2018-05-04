@@ -1,27 +1,27 @@
 ---
-title: "Questions fréquentes sur Power BI Embedded"
-description: "Parcourir une liste de questions fréquentes et de réponses sur Power BI Embedded."
+title: Questions fréquentes sur Power BI Embedded
+description: Parcourir une liste de questions fréquentes et de réponses sur Power BI Embedded.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/07/2018
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 52ff1095c063be867354a23e0e8e4908a4b4e1d7
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 24e4dbaf6ede92436ff05c8cb57756e3ab7e8526
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -60,10 +60,6 @@ Dans certains cas, un éditeur de logiciels indépendant (généralement de gran
 
 Les jetons incorporés avec une licence PRO étant destinés aux tests de développement, le nombre de jetons incorporés qu’un compte principal Power BI peut générer est limité. Vous devez [acheter une capacité](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) pour l’incorporation dans un environnement de production. Une fois une capacité achetée, le nombre de jetons incorporés que vous pouvez générer n’est pas limité.
 
-### <a name="when-will-power-bi-embedded-be-available-in-azure"></a>Quand Power BI Embedded sera-t-il disponible dans Azure ?
-
-Power BI Embedded est maintenant disponible.
-
 ## <a name="technical"></a>Technique
 
 ### <a name="what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365"></a>Quelle est la différence entre les références SKU A dans Azure et les références SKU EM dans Office 365 ?
@@ -74,7 +70,7 @@ Power BI Embedded est un ensemble d’API qui permet aux développeurs de créer
 
 Voici un tableau des différences de fonctionnalités.
 
-|Fonctionnalité  |Power BI Embedded<br>(Références SKU A) |Capacité Power BI Premium<br>(Références SKU EM)  |
+|Fonctionnalité  |Power BI Embedded<br>(Références SKU A) |Capacité Power BI Premium<br>(Références SKU EM)  | 
 |---------|---------|---------|
 |Incorporer des artefacts à partir d’espaces de travail d’application Power BI     |Capacité Azure |Capacité Office 365 |
 |Licence BI Power requise pour utiliser des rapports |Non  |Oui |
@@ -132,19 +128,11 @@ Sud-Est de l’Australie, Sud du Brésil, Canada Centre, Est des États-Unis 2, 
 
 Les **tableaux de bord** et les **vignettes** créés à partir de jeux de données du pack de contenu *ne peuvent pas* être incorporés, mais les **rapports** créés à partir d’un jeu de données du pack de contenu *peuvent* l’être.
 
-## <a name="licensing"></a>Gestion des licences
+## <a name="licensing"></a>Licensing
 
 ### <a name="how-do-i-purchase-power-bi-embedded"></a>Comment acheter Power BI Embedded ?
 
 Power BI Embedded est disponible via Azure.
-
-### <a name="how-power-bi-embedded-be-metered"></a>Comment est mesuré Power BI Embedded ?
-
-Power BI Embedded est facturé sur une base horaire.
-
-### <a name="how-does-the-usage-of-power-bi-embedded-show-up-on-my-bill"></a>Comment s’affiche l’utilisation de Power BI Embedded sur ma facture ?
-
-Power BI Embedded est facturé à un tarif horaire prévisible basé sur le type de nœuds déployé. Notez que tant que votre ressource est active, vous êtes facturé même si aucune utilisation n’est enregistrée. Pour ne plus être facturé, vous devez suspendre activement votre ressource. Pour cela, vous pouvez passer par Azure ou par les API ARM.
 
 ### <a name="what-happens-if-i-already-purchased-power-bi-premium-and-now-i-want-some-of-the-benefits-of-power-bi-embedded-in-azure"></a>Que se passe-t-il si j’ai déjà acheté Power BI Premium et que je veux maintenant profiter de certains des avantages de Power BI Embedded dans Azure ?
 
@@ -153,6 +141,14 @@ Les clients continueront à payer les achats Power BI Premium actuels jusqu’à
 ### <a name="do-i-still-have-to-buy-power-bi-premium-to-get-access-to-power-bi-embedded"></a>Dois-je toujours acheter Power BI Premium pour accéder à Power BI Embedded ?
 
 Non. Power BI Embedded inclut la capacité basée sur Azure dont vous avez besoin pour déployer et distribuer votre solution aux clients.
+
+### <a name="whats-the-purchase-commitment-for-power-bi-embedded"></a>Quel est la durée d’engagement pour Power BI Embedded ? 
+
+Les clients peuvent modifier leur utilisation sur une base horaire. Il n’existe aucun engagement mensuel ou annuel pour le service Power BI Embedded.
+
+### <a name="how-does-the-usage-of-power-bi-embedded-show-up-on-my-bill"></a>Comment s’affiche l’utilisation de Power BI Embedded sur ma facture ?
+
+Power BI Embedded est facturé à un tarif horaire prévisible basé sur le type de nœuds déployé. Notez que tant que votre ressource est active, vous êtes facturé même si aucune utilisation n’est enregistrée. Pour ne plus être facturé, vous devez suspendre activement votre ressource.
 
 ### <a name="who-needs-a-power-bi-pro-license-for-power-bi-embedded-and-why"></a>Qui a besoin d’une licence Power BI Pro pour Power BI Embedded et pourquoi ?
 
@@ -168,16 +164,21 @@ Oui, vous pouvez utiliser vos [crédits Azure](https://azure.microsoft.com/free/
 
 Étant donné que Power BI Embedded fait partie d’Azure, il est possible d’utiliser le service avec le [crédit de 200 $ reçu lors de l’inscription à Azure](https://azure.microsoft.com/free/).
 
-### <a name="whats-the-purchase-commitment-for-power-bi-embedded"></a>Quel est la durée d’engagement pour Power BI Embedded ? 
+### <a name="is-there-a-limit-to-the-number-of-embed-tokens-a-power-bi-master-account-can-generate"></a>Existe-t-il une limite du nombre de jetons intégrés que peut générer un compte principal Power BI ? 
 
-Les clients peuvent modifier leur utilisation sur une base horaire. Il n’existe aucun engagement mensuel ou annuel pour le service Power BI Embedded.
+Oui, le nombre est limité car ces jetons intégrés sont conçus uniquement à des fins de test du développement. Vous [devez acheter une capacité](#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée. Accédez à [Obtenir les fonctionnalités disponibles](https://msdn.microsoft.com/en-us/library/mt846473.aspx) pour vérifier combien de jetons intégrés gratuits ont été utilisés.
 
-### <a name="where-is-power-bi-embedded-available-us-government-germany-china-what-is-the-timing"></a>Où est disponible Power BI Embedded ? US Government ? Allemagne ? Chine ? Quel est le calendrier ?
+### <a name="is-power-bi-embedded-available-for-sovereign-clouds-us-government-germany-china"></a>Power BI Embedded est-il disponible pour les clouds souverains (gouvernement américain, Allemagne, Chine) ?
 
-Power BI Embedded est disponible dans les clouds commerciaux Azure et dans le cloud US Government.  Il sera disponible dans les clouds souverains en Allemagne et en Chine dans une version future.
+Power BI Embedded est disponible pour certains [clouds souverains](embed-sample-for-customers-sovereign-clouds.md). Il est toujours **PAS** disponible pour le cloud en Chine.
 
 ### <a name="is-power-bi-embedded-available-for-non-profits-and-educational"></a>Power BI Embedded est-il disponible pour les organisations à but non lucratif et les établissements d’enseignement ?
 
 Les organisations à but non lucratif et les établissements d’enseignement peuvent acheter Azure. Il n’existe aucune tarification spéciale pour ces types de clients dans Azure.
 
+Pour plus d’informations, consultez [Résolution des problèmes de votre application intégrée](embedded-troubleshoot.md)
+
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+
+
+

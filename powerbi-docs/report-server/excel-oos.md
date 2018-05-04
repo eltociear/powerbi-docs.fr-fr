@@ -1,39 +1,32 @@
 ---
-title: "Configurer votre serveur de rapports pour héberger des classeurs Excel à l’aide d’Office Online Server (OOS)"
-description: "Outre l’affichage de rapports Power BI sur le portail web, les utilisateurs professionnels peuvent désormais faire de même avec des classeurs Excel dans Power BI Report Server."
+title: Héberger des classeurs Excel à l’aide d’Office Online Server (OOS) - Power BI Report Server
+description: Outre l’affichage de rapports Power BI sur le portail web, Power BI Report Server peut héberger des classeurs Excel à l’aide d’Office Online Server (OOS).
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/23/2017
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: a9d5c1b8da8935a535ed112030a5c2a40132f176
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: f2ff2b695ca548572294a4705235ae1c2b0046c5
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Configurer votre serveur de rapports pour héberger des classeurs Excel à l’aide d’Office Online Server (OOS)
-Outre l’affichage de rapports Power BI sur le portail web, les utilisateurs professionnels peuvent désormais faire de même avec des classeurs Excel dans Power BI Report Server. Ils disposent ainsi d’un emplacement unique pour publier et consulter leur contenu Microsoft BI en libre-service.
+Outre l’affichage de rapports Power BI sur le portail web, Power BI Report Server peut héberger des classeurs Excel à l’aide de [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server-overview) (OOS). Votre serveur de rapports devient un emplacement unique pour publier et afficher le contenu de Microsoft BI en libre-service.
 
-> [!NOTE]
-> Il s’agit d’une fonctionnalité en préversion incluse dans la version préliminaire d’août 2017. Pour plus d’informations, voir [Nouveautés dans Power BI Report Server](whats-new.md).
-> 
-> 
-
-![Rapports Excel consultés via le portail web de serveur de rapports.](media/excel-oos/excel-in-pbirs.png)
-
-Cela est rendu possible par l’utilisation d’[Office Online Server](https://technet.microsoft.com/library/jj219437\(v=office.16\).aspx) (OOS).
+![Rapports Excel affichés via le portail web du serveur de rapports](media/excel-oos/excel-in-pbirs.png)
 
 ## <a name="prepare-server-to-run-office-online-server"></a>Préparer le serveur à l’exécution d’Office Online Server
 Effectuez les procédures suivants sur le serveur qui doit exécuter Office Online Server. Il doit s’agir d’un serveur Windows Server 2012 R2 ou Windows Server 2016. Windows Server 2016 requiert la version d’avril 2017 d’Office Online Server ou une version ultérieure.
@@ -92,7 +85,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Paramètres**
 
-* **– InternalURL** est le nom de domaine complet (FQDN) du serveur exécutant Office Online Server, tel que http://nomserveur.contoso.com.
+* **– InternalURL** est le nom de domaine complet (FQDN) du serveur exécutant Office Online Server, tel que http://servername.contoso.com.
 * **– ExternalURL** est le nom de domaine complet (FQDN) accessible sur Internet.
 * **–CertificateName** est le nom convivial du certificat.
 
@@ -105,7 +98,7 @@ New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
 
 **Paramètres**
 
-* **–InternalURL** est le nom du serveur exécutant Office Online Server, tels que http://nomserveur.
+* **–InternalURL** est le nom du serveur exécutant Office Online Server, tel que http://servername.
 * **– AllowHttp** configure la batterie de serveurs pour utiliser le protocole HTTP.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Vérifier que la batterie de serveurs Office Online Server a été correctement créée
