@@ -1,38 +1,38 @@
 ---
-title: "Utiliser le quadrillage et l’alignement sur la grille dans les rapports Power BI Desktop"
-description: "Utiliser le quadrillage, l’alignement sur la grille, l’ordre de plan, l’alignement et la distribution dans les rapports Power BI Desktop"
+title: Utiliser le quadrillage et l’alignement sur la grille dans les rapports Power BI Desktop
+description: Utiliser le quadrillage, l’alignement sur la grille, l’ordre de plan, l’alignement et la distribution dans les rapports Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 4/19/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1b6b1a3ecda7d3f827975da8fcfec5d9d5b67023
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 479668d2f5c21bc6d730097556ce6de46409c7ed
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Utiliser le quadrillage et l’alignement sur la grille dans les rapports Power BI Desktop
-Le canevas de rapport **Power BI Desktop** offre un quadrillage qui vous permet d’aligner proprement les visuels sur une page de rapport, ainsi qu’une fonctionnalité d’alignement sur la grille qui permet de respecter les mêmes espaces entre les visuels dans un rapport.
+Le canevas de rapport **Power BI Desktop** montre un quadrillage qui vous permet d’aligner proprement les visuels sur une page de rapport, ainsi qu’une fonctionnalité d’alignement sur la grille qui permet de respecter les mêmes espaces entre les visuels dans un rapport.
 
-Dans **Power BI Desktop**, vous pouvez également modifier l’ordre de plan (amener vers l’avant, amener vers l’arrière) des objets sur un rapport, ainsi qu’aligner ou répartir uniformément les visuels sélectionnés sur le canevas.
+Dans **Power BI Desktop**, vous pouvez également modifier l’ordre de plan (amener à l’avant, placer à l’arrière) des objets sur un rapport, et aligner ou répartir uniformément les visuels sélectionnés sur le canevas.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_0.png)
 
 ### <a name="enabling-gridlines-and-snap-to-grid"></a>Activation du quadrillage et de la grille automatique
-Pour activer le quadrillage et l’alignement sur la grille, sélectionnez le ruban **Affichage**, puis cochez les cases **Afficher le quadrillage** et **Aligner les objets sur la grille**. Vous pouvez sélectionner une ou plusieurs zones ; elles fonctionnent indépendamment les unes des autres.
+Pour activer le quadrillage et l’alignement sur la grille, sélectionnez le ruban **Affichage**, puis cochez les cases **Afficher le quadrillage** et **Aligner les objets sur la grille**. Vous pouvez sélectionner une ou plusieurs options ; elles fonctionnent indépendamment les unes des autres.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_1.png)
 
@@ -42,21 +42,21 @@ Pour activer le quadrillage et l’alignement sur la grille, sélectionnez le ru
 > 
 
 ### <a name="using-gridlines"></a>Utilisation du quadrillage
-Le quadrillage est constitué de repères visuels qui vous permettent de voir si plusieurs visuels sont alignés correctement. Lorsque vous tentez de déterminer si plusieurs visuels sont alignés horizontalement ou verticalement, utilisez le quadrillage pour savoir si leurs bordures sont parfaitement alignées.
+Le quadrillage est constitué de guides visibles qui vous aident à aligner vos visuels. Quand vous tentez de déterminer si deux visuels ou plus sont alignés horizontalement ou verticalement, utilisez le quadrillage pour savoir si leurs bordures sont alignées.
 
-Vous pouvez utiliser *CTRL + clic* pour sélectionner plusieurs visuels à la fois et d’afficher les bordures de ceux-ci afin de les aligner correctement.
+Utilisez Ctrl+Clic pour sélectionner plusieurs visuels à la fois : ceci fait apparaître les bordures de tous ces visuels et montre s’ils sont alignés correctement.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_2.png)
 
 #### <a name="using-gridlines-inside-visuals"></a>Utilisation du quadrillage dans les visuels
-Dans Power BI, les visuels contiennent également un quadrillage qui sert de repère visuel pour comparer des valeurs et des points de données. Depuis la publication de septembre 2017 de **Power BI Desktop**, vous pouvez gérer le quadrillage dans les visuels à l’aide de la carte **Axe X** ou **Axe Y** (en fonction du type de visuel), figurant dans la section **Format** du volet **Visualisations**. Vous pouvez gérer les aspect suivants du quadrillage dans un visuel :
+Dans Power BI, les visuels contiennent également un quadrillage, qui sert de repère visuel pour comparer des valeurs et des points de données. Depuis la publication de septembre 2017 de **Power BI Desktop**, vous pouvez gérer le quadrillage dans les visuels à l’aide de la carte **Axe X** ou **Axe Y** (en fonction du type de visuel), figurant dans la section **Format** du volet **Visualisations**. Vous pouvez gérer les aspect suivants du quadrillage dans un visuel :
 
 * activer ou désactiver le quadrillage ;
 * modifier la couleur du quadrillage ;
 * ajuster le trait (épaisseur) du quadrillage ;
 * sélectionner le style de trait du quadrillage dans le visuel (continu, en tirets ou en pointillés).
 
-La modification de certains aspects d’un quadrillage peut être particulièrement utile dans les rapports où les visuels s’affichent sur un arrière-plan foncé. L’illustration suivante montre la section *Quadrillage* de la carte **Axe X**.
+La modification de certains aspects d’un quadrillage peut être particulièrement utile dans les rapports où les visuels s’affichent sur un arrière-plan foncé. L’illustration suivante montre la section **Quadrillage** de la carte **Axe Y**.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_9.png)
 
@@ -65,22 +65,22 @@ Lorsque vous activez **l’alignement des objets sur la grille**, tous les visue
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_3.png)
 
-Ces quelques opérations d’utilisation du **quadrillage** et de l’**alignement sur la grille** suffisent à vérifier que les éléments visuels sont parfaitement alignés dans vos rapports.
+Ces quelques opérations d’utilisation du **quadrillage** et de l’**alignement sur la grille** suffisent pour vérifier que les visuels sont parfaitement alignés dans vos rapports.
 
 ### <a name="using-z-order-align-and-distribute"></a>Utilisation de l’ordre de plan, de l’alignement et de la répartition
-Vous pouvez également gérer l’ordre avant-arrière des visuels d’un rapport, souvent appelé *ordre de plan* des éléments. Cela vous permet de faire chevaucher les visuels dans comme vous le souhaitez, puis d’ajuster l’ordre avant-arrière de chaque visuel. Pour ajuster cet ordre, utilisez les boutons **Amener vers l’avant** et **Amener vers l’arrière**, situés dans la section **Organiser** du ruban **Format**, qui apparaît dès que vous sélectionnez un ou plusieurs visuels sur la page et n’est pas affiché si aucun visuel n’est sélectionné.
+Vous pouvez également gérer l’ordre avant-arrière des visuels d’un rapport, souvent appelé *ordre de plan* des éléments. Cette fonctionnalité vous permet de faire se chevaucher les visuels comme vous le souhaitez, puis d’ajuster l’ordre avant-arrière de chacun d’eux. Vous définissez l’ordre de vos visuels avec les boutons **Avancer** et **Reculer**, qui se trouvent dans la section **Organiser** du ruban **Format**. Le ruban **Format** apparaît dès que vous sélectionnez un ou plusieurs visuels dans la page.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_4.png)
 
-Le ruban **Format** vous permet également d’aligner vos visuels de différentes façons. Vous pouvez ainsi afficher vos visuels sur la page dans l’alignement le mieux adapté.
+Le ruban **Format** vous permet d’aligner vos visuels de différentes façons, ce qui garantit qu’ils apparaissent dans la page avec l’alignement qui convient le mieux.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_5.png)
 
-Lorsqu’un visuel est sélectionné, utilisez le bouton **Aligner** pour aligner le visuel sur le bord (ou le centre) du canevas du rapport, comme illustré dans l’image suivante.
+Le bouton **Aligner** aligne un visuel sélectionné sur le bord (ou le centre) du canevas du rapport, comme illustré dans l’image suivante.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_6.png)
 
-Lorsque deux ou plusieurs visuels sont sélectionnés, ils sont alignés ensemble et utilisent la limite alignée existante des visuels pour l’alignement. Par exemple, avec deux visuels sélectionnés et le bouton *Aligner à gauche* sélectionné, les visuels s’alignent sur la limite la plus à gauche de tous les visuels.
+Quand deux visuels ou plus sont sélectionnés, ils sont alignés ensemble et utilisent la limite alignée existante des visuels pour leur alignement. Par exemple, si vous sélectionnez deux visuels et que vous choisissez l’option **Aligner à gauche**, les visuels s’alignent sur la limite la plus à gauche de tous les visuels sélectionnés.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_7.png)
 
@@ -88,5 +88,5 @@ Vous pouvez également répartir vos visuels sur le canevas de rapport, vertical
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_8.png)
 
-En effectuant quelques sélections parmi les outils de quadrillage, d’alignement et de répartition, vos rapports s’affichent comme vous le souhaitez.
+Avec seulement quelques choix effectués dans ces outils de quadrillage, d’alignement et de distribution, vos rapports s’affichent exactement comme vous le souhaitez.
 

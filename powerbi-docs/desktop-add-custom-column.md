@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 15d492aba39da23a06ac2f13bce676e0123a332c
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: f982ba613bef66514aab39b43cf0fe92b1b7b81c
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Ajouter une colonne personnalisée dans Power BI Desktop
 Vous pouvez facilement ajouter une nouvelle colonne personnalisée de données à votre modèle à l’aide de l’**éditeur de requête** dans **Power BI Desktop**. Vous pouvez créer et renommer votre colonne personnalisée à l’aide de boutons conviviaux pour créer des [formules M](https://msdn.microsoft.com/library/mt270235.aspx) qui définissent votre colonne personnalisée. Un [contenu de référence complet sur les fonctions](https://msdn.microsoft.com/library/mt779182.aspx) est disponible pour la formule M. 
@@ -40,21 +40,21 @@ Une fois que vous avez lancé l’**éditeur de requête** et chargé quelques d
 
 ![](media/desktop-add-custom-column/add-custom-column_02.png)
 
-La fenêtre **Ajouter une colonne personnalisée** s’affiche alors. Nous en parlerons dans la section suivante.
+La fenêtre **Ajouter une colonne personnalisée** s’affiche alors. Elle est décrite dans la section suivante.
 
 ## <a name="the-add-custom-column-window"></a>Fenêtre Ajouter une colonne personnalisée
-Dans la fenêtre **Ajouter une colonne personnalisée**, consultez la liste des champs disponibles dans le volet de droite, le nom de votre colonne personnalisée en haut (vous pouvez la renommer en tapant simplement un nouveau nom dans cette zone de texte) et la formule [**M**](https://msdn.microsoft.com/library/mt779182.aspx) que vous créez (ou écrivez) en fonction de l’insertion de champs à partir de la droite, de l’ajout d’opérateurs ou de la génération de la formule sur laquelle votre nouvelle colonne personnalisée est définie. 
+Dans la fenêtre **Ajouter une colonne personnalisée**, consultez la liste des champs disponibles dans le volet de droite, le nom de votre colonne personnalisée en haut (vous pouvez la renommer en tapant simplement un nouveau nom dans cette zone de texte) et la formule [**M**](https://msdn.microsoft.com/library/mt779182.aspx) que vous créez (ou que vous écrivez) en fonction de l’insertion de champs à partir de la droite, de l’ajout d’opérateurs ou de la création de la formule sur laquelle votre nouvelle colonne personnalisée est définie. 
 
 ![](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## <a name="create-formulas-for-your-custom-column"></a>Créer des formules pour votre colonne personnalisée
 Vous pouvez sélectionner un champ à partir de la liste **Colonnes disponibles :** à droite, puis sélectionner **<< Insérer** pour les ajouter à la formule de colonne personnalisée. Vous pouvez également double-cliquer sur une colonne dans la liste pour l’ajouter.
 
-Lorsque vous tapez la formule et que vous générez votre colonne, la partie inférieure de la fenêtre affiche un indicateur qui vous informe en temps réel (en cours de frappe) si des erreurs de syntaxe sont détectées. Si tout est correct, une coche verte s’affiche.
+Quand vous tapez la formule et que vous créez votre colonne, la partie inférieure de la fenêtre affiche un indicateur qui vous informe en temps réel (au fil de la frappe) si des erreurs de syntaxe sont détectées. Si tout est correct, une coche verte s’affiche.
 
 ![](media/desktop-add-custom-column/add-custom-column_04.png)
 
-Toutefois, si vous rencontrez une sorte d’erreur dans votre syntaxe, une icône d’avertissement jaune s’affiche, ainsi que l’erreur détectée et un lien qui place le curseur (dans votre formule) là où l’erreur est détectée.
+Cependant, si votre syntaxe contient une erreur, une icône d’avertissement jaune s’affiche, ainsi que l’erreur détectée et un lien qui place le curseur (dans votre formule) là où l’erreur est détectée.
 
 ![](media/desktop-add-custom-column/add-custom-column_05.png)
 
