@@ -1,15 +1,15 @@
 ---
-title: "Service tiers : connecteur Facebook pour Power BI Desktop"
-description: "Service tiers : connecteur Facebook pour Power BI Desktop"
+title: 'Service tiers : connecteur Facebook pour Power BI Desktop'
+description: 'Service tiers : connecteur Facebook pour Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

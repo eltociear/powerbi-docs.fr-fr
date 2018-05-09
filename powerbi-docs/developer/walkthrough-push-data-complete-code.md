@@ -1,15 +1,15 @@
 ---
 title: Listing du code complet
-description: "Procédure pas à pas pour transmettre des données : listing du code complet"
+description: 'Procédure pas à pas pour transmettre des données : listing du code complet'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article

@@ -1,15 +1,15 @@
 ---
-title: "Exemple Ressources humaines : visite guidée"
-description: "Exemple Ressources humaines pour Power BI : visite guidée"
+title: 'Exemple Ressources humaines : visite guidée'
+description: 'Exemple Ressources humaines pour Power BI : visite guidée'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

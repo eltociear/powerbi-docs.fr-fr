@@ -1,15 +1,15 @@
 ---
-title: "Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI"
-description: "Découvrez les étapes à suivre pour incorporer du contenu Power BI dans votre application."
+title: Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
+description: Découvrez les étapes à suivre pour incorporer du contenu Power BI dans votre application.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

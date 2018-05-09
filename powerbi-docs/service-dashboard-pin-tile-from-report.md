@@ -1,16 +1,16 @@
 ---
-title: "Épingler une vignette à un tableau de bord Power BI à partir d’un rapport"
-description: "Épinglez une vignette à un tableau de bord Power BI à partir d’un rapport."
+title: Épingler une vignette à un tableau de bord Power BI à partir d’un rapport
+description: Épinglez une vignette à un tableau de bord Power BI à partir d’un rapport.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: lJKgWnvl6bQ
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

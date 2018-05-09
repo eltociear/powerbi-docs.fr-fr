@@ -1,15 +1,15 @@
 ---
-title: "Dispositions personnalisées avec le contenu incorporé Power BI"
-description: "En savoir plus sur les dispositions personnalisées lors de l’incorporation de contenu Power BI dans votre application."
+title: Dispositions personnalisées avec le contenu incorporé Power BI
+description: En savoir plus sur les dispositions personnalisées lors de l’incorporation de contenu Power BI dans votre application.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

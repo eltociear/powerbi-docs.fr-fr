@@ -1,15 +1,15 @@
 ---
-title: "Créer un locataire Azure Active Directory pour utiliser Power BI"
-description: "Découvrez comment créer un locataire Azure Active Directory (Azure AD) pour votre application personnalisée à l’aide des API REST Power BI."
+title: Créer un locataire Azure Active Directory pour utiliser Power BI
+description: Découvrez comment créer un locataire Azure Active Directory (Azure AD) pour votre application personnalisée à l’aide des API REST Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

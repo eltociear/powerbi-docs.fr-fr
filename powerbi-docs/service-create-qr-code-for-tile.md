@@ -1,15 +1,15 @@
 ---
-title: "Créer un code QR pour une vignette à utiliser dans les applications mobiles Power BI"
-description: "Les codes QR dans Power BI peuvent connecter n’importe quel élément du monde réel directement à des informations connexes en matière de décisionnel dans l’application mobile Power BI. Aucune navigation ni recherche n’est nécessaire."
+title: Créer un code QR pour une vignette à utiliser dans les applications mobiles Power BI
+description: Les codes QR dans Power BI peuvent connecter n’importe quel élément du monde réel directement à des informations connexes en matière de décisionnel dans l’application mobile Power BI. Aucune navigation ni recherche n’est nécessaire.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

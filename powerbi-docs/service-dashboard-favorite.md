@@ -1,16 +1,16 @@
 ---
 title: Favoris dans le service Power BI (tableaux de bord, rapports, applications)
-description: "Documentation sur la manière de définir des tableaux de bord, rapports et applications en tant que favoris dans le service Power BI"
+description: Documentation sur la manière de définir des tableaux de bord, rapports et applications en tant que favoris dans le service Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
+backup: ''
+editor: ''
 featuredvideoid: G26dr2PsEpk
-tags: 
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

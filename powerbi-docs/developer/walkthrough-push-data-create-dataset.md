@@ -1,15 +1,15 @@
 ---
-title: "Créer un jeu de données"
-description: "Procédure pas à pas - Transmettre des données à un jeu de données - Créer un jeu de données dans Power BI"
+title: Créer un jeu de données
+description: Procédure pas à pas - Transmettre des données à un jeu de données - Créer un jeu de données dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article

@@ -1,15 +1,15 @@
 ---
-title: "Utilisation d’OAuth pour la connexion à Reporting Services"
-description: "Découvrez comment configurer votre environnement pour prendre en charge l’authentification OAuth avec l’application mobile Power BI afin de vous connecter à Reporting Services 2016 ou version ultérieure."
+title: Utilisation d’OAuth pour la connexion à Reporting Services
+description: Découvrez comment configurer votre environnement pour prendre en charge l’authentification OAuth avec l’application mobile Power BI afin de vous connecter à Reporting Services 2016 ou version ultérieure.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

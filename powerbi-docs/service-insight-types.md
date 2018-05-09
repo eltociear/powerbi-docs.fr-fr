@@ -1,15 +1,15 @@
 ---
-title: "Types d’informations pris en charge par Power BI"
-description: "Informations rapides et Afficher les informations avec Power BI"
+title: Types d’informations pris en charge par Power BI
+description: Informations rapides et Afficher les informations avec Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,15 +1,15 @@
 ---
-title: "Intégrer un rapport Power BI dans une application pour votre organisation"
-description: "Découvrez comment intégrer (ou incorporer) un rapport dans une application web à l’aide des API REST Power BI."
+title: Intégrer un rapport Power BI dans une application pour votre organisation
+description: Découvrez comment intégrer (ou incorporer) un rapport dans une application web à l’aide des API REST Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article

@@ -1,15 +1,15 @@
 ---
-title: "Optimiser vos données pour en avoir un aperçu rapide dans Power BI"
-description: "Optimisez vos données pour en avoir un aperçu rapide dans Power BI. Si Power BI ne trouve pas d’informations dans vos données, voici quelques opérations que vous pouvez effectuer."
+title: Optimiser vos données pour en avoir un aperçu rapide dans Power BI
+description: Optimisez vos données pour en avoir un aperçu rapide dans Power BI. Si Power BI ne trouve pas d’informations dans vos données, voici quelques opérations que vous pouvez effectuer.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

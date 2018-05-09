@@ -1,16 +1,16 @@
 ---
-title: "Centre de notifications Power BI"
-description: "Le centre de notifications est un flux séquentiel d’informations sur votre expérience Power BI."
+title: Centre de notifications Power BI
+description: Le centre de notifications est un flux séquentiel d’informations sur votre expérience Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: bZMSv5KAlcE
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

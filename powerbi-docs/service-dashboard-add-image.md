@@ -1,16 +1,16 @@
 ---
-title: "Ajouter une image à un tableau de bord Power BI"
-description: "Documentation sur l’ajout d’une image à un tableau de bord Power BI."
+title: Ajouter une image à un tableau de bord Power BI
+description: Documentation sur l’ajout d’une image à un tableau de bord Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

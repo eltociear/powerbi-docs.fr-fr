@@ -1,15 +1,15 @@
 ---
-title: "Obtenir un jeton d’accès d’authentification"
-description: "Procédure pas à pas pour transmettre des données : obtenir un jeton d’accès d’authentification"
+title: Obtenir un jeton d’accès d’authentification
+description: 'Procédure pas à pas pour transmettre des données : obtenir un jeton d’accès d’authentification'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article

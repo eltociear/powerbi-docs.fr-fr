@@ -1,16 +1,16 @@
 ---
-title: "Tableaux de bord par défaut dans Power BI"
-description: "Documentation sur la création d’un tableau de bord par défaut dans le service Power BI"
+title: Tableaux de bord par défaut dans Power BI
+description: Documentation sur la création d’un tableau de bord par défaut dans le service Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: G26dr2PsEpk
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

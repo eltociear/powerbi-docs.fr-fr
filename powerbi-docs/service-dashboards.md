@@ -1,13 +1,13 @@
 ---
-title: "qu’est-ce qu’un tableau de bord Power BI ?"
-description: "Les tableaux de bord sont une fonctionnalité clé du service Power BI."
+title: qu’est-ce qu’un tableau de bord Power BI ?
+description: Les tableaux de bord sont une fonctionnalité clé du service Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 04/05/2017
 ms.service: powerbi

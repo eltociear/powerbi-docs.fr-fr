@@ -1,15 +1,15 @@
 ---
-title: "Expériences de modèle de pack de contenu dans Power BI"
-description: "Expériences de modèle de pack de contenu"
+title: Expériences de modèle de pack de contenu dans Power BI
+description: Expériences de modèle de pack de contenu
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,15 +1,15 @@
 ---
-title: "Informations de référence sur l’API REST de Power BI"
-description: "Informations de référence sur l’API REST de Power BI"
+title: Informations de référence sur l’API REST de Power BI
+description: Informations de référence sur l’API REST de Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,16 +1,16 @@
 ---
-title: "Créer une copie d’un tableau de bord Power BI"
-description: "Dupliquer un tableau de bord Power BI "
+title: Créer une copie d’un tableau de bord Power BI
+description: 'Dupliquer un tableau de bord Power BI '
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

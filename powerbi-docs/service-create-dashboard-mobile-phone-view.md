@@ -1,15 +1,15 @@
 ---
-title: "Créer une vue de tableau de bord Power BI pour les téléphones mobiles"
-description: "Apprenez à créer une vue personnalisée d’un tableau de bord dans le service Power BI, en particulier pour l’affichage sur les téléphones portables."
+title: Créer une vue de tableau de bord Power BI pour les téléphones mobiles
+description: Apprenez à créer une vue personnalisée d’un tableau de bord dans le service Power BI, en particulier pour l’affichage sur les téléphones portables.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

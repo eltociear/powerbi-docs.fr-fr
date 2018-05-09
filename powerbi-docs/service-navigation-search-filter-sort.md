@@ -2,14 +2,14 @@
 title: Recherche et tri de votre contenu dans un service Power BI
 description: documentation relative au tri et au tri de contenu dans les espaces de travail Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

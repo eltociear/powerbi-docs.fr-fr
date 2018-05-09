@@ -1,15 +1,15 @@
 ---
-title: "Power BI : prise en main d’applications tierces"
-description: "Power BI : prise en main d’applications tierces"
+title: 'Power BI : prise en main d’applications tierces'
+description: 'Power BI : prise en main d’applications tierces'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article

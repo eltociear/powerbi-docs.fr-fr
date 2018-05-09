@@ -1,15 +1,15 @@
 ---
-title: "Incorporation avec Power BI"
-description: "Power BI fournit des API pour l’incorporation de vos tableaux de bord et rapports dans des applications."
+title: Incorporation avec Power BI
+description: Power BI fournit des API pour l’incorporation de vos tableaux de bord et rapports dans des applications.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

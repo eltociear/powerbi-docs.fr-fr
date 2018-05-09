@@ -1,14 +1,14 @@
 ---
-title: "Vignettes de tableau de bord dans Power BI"
-description: "Toutes les informations dont vous avez besoin sur les vignettes de tableau de bord dans Power BI. Cela inclut les vignettes créées à partir de SQL Server Reporting Services (SSRS)."
+title: Vignettes de tableau de bord dans Power BI
+description: Toutes les informations dont vous avez besoin sur les vignettes de tableau de bord dans Power BI. Cela inclut les vignettes créées à partir de SQL Server Reporting Services (SSRS).
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: 
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: ''
 qualitydate: 03/15/2016
 ms.service: powerbi
 ms.devlang: NA

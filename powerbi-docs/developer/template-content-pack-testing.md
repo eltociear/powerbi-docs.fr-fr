@@ -1,15 +1,15 @@
 ---
-title: "Test des packs de contenu de modèle pour Power BI"
-description: "Test de modèle de pack de contenu"
+title: Test des packs de contenu de modèle pour Power BI
+description: Test de modèle de pack de contenu
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

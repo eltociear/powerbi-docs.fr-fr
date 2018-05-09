@@ -1,15 +1,15 @@
 ---
-title: "Authentifier les utilisateurs et obtenir un jeton d’accès Azure AD pour votre application"
-description: "Découvrez comment inscrire une application dans Azure Active Directory afin de l’utiliser avec l’incorporation de contenu Power BI."
+title: Authentifier les utilisateurs et obtenir un jeton d’accès Azure AD pour votre application
+description: Découvrez comment inscrire une application dans Azure Active Directory afin de l’utiliser avec l’incorporation de contenu Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

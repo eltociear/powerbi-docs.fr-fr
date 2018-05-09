@@ -1,15 +1,15 @@
 ---
-title: "Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée"
-description: "Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée"
+title: 'Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée'
+description: 'Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

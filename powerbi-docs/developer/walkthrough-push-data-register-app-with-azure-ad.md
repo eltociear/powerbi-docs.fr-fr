@@ -1,15 +1,15 @@
 ---
-title: "Inscrire une application auprès d’Azure AD"
-description: "Procédure pas à pas - Transmettre des données à un jeu de données - Inscrire une application auprès d’Azure AD"
+title: Inscrire une application auprès d’Azure AD
+description: Procédure pas à pas - Transmettre des données à un jeu de données - Inscrire une application auprès d’Azure AD
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article

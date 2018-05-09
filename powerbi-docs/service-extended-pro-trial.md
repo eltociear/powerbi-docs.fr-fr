@@ -1,15 +1,15 @@
 ---
-title: "Activation de l’essai Pro prolongé"
-description: "À partir du 1er juin 2017, tous les utilisateurs éligibles pourront choisir l’essai Pro prolongé du service Power BI."
+title: Activation de l’essai Pro prolongé
+description: À partir du 1er juin 2017, tous les utilisateurs éligibles pourront choisir l’essai Pro prolongé du service Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

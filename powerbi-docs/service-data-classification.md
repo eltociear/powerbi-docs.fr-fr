@@ -1,13 +1,13 @@
 ---
-title: "Classification des données des tableaux de bord"
-description: "En savoir plus sur la classification des données des tableaux de bord, y compris la manière dont un administrateur doit la configurer et dont les propriétaires de tableaux de bord peuvent la modifier."
+title: Classification des données des tableaux de bord
+description: En savoir plus sur la classification des données des tableaux de bord, y compris la manière dont un administrateur doit la configurer et dont les propriétaires de tableaux de bord peuvent la modifier.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: amandacofsky
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: complete
 qualitydate: 03/15/2016
 ms.service: powerbi

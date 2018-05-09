@@ -1,6 +1,6 @@
 ---
-title: "Formation guidée sur Microsoft Power BI"
-description: "Commencez votre parcours de formation avec cette collection en séquence de cours, puis découvrez la diversité et la puissance des capacités de Microsoft Power BI."
+title: Formation guidée sur Microsoft Power BI
+description: Commencez votre parcours de formation avec cette collection en séquence de cours, puis découvrez la diversité et la puissance des capacités de Microsoft Power BI.
 layout: LandingPage
 ms.openlocfilehash: c0c9b77489731ff2107135f8720b14d320d11e52
 ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d

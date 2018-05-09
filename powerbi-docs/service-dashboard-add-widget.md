@@ -1,16 +1,16 @@
 ---
-title: "Ajouter un image, du texte, une vidéo, des données de streaming à votre tableau de bord"
-description: "Documentation sur la façon d’utiliser le widget Ajouter une vignette pour ajouter une vignette d’image, de vidéo, de zone de texte, de code web de données de streaming à un tableau de bord."
+title: Ajouter un image, du texte, une vidéo, des données de streaming à votre tableau de bord
+description: Documentation sur la façon d’utiliser le widget Ajouter une vignette pour ajouter une vignette d’image, de vidéo, de zone de texte, de code web de données de streaming à un tableau de bord.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: e2PD8m1Q0vU
 qualityfocus: identified
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

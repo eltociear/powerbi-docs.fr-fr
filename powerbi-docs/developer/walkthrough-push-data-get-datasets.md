@@ -1,15 +1,15 @@
 ---
-title: "Obtenir un jeu de données pour ajouter des lignes"
-description: "Procédure pas à pas pour transmettre des données : obtenir un jeu de données pour ajouter des lignes à une table Power BI"
+title: Obtenir un jeu de données pour ajouter des lignes
+description: 'Procédure pas à pas pour transmettre des données : obtenir un jeu de données pour ajouter des lignes à une table Power BI'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article

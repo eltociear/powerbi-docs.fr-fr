@@ -1,15 +1,15 @@
 ---
-title: "Épingler une vignette d’un tableau de bord vers un autre"
-description: "Épingler une vignette d’un tableau de bord vers un autre"
+title: Épingler une vignette d’un tableau de bord vers un autre
+description: Épingler une vignette d’un tableau de bord vers un autre
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

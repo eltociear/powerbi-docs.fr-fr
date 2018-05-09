@@ -1,15 +1,15 @@
 ---
-title: "10 conseils pour obtenir de l’aide avec vos questions Power BI"
-description: "Voici 10 façons d’obtenir de l’aide quand vous avez une question sur le fonctionnement de Power BI"
+title: 10 conseils pour obtenir de l’aide avec vos questions Power BI
+description: Voici 10 façons d’obtenir de l’aide quand vous avez une question sur le fonctionnement de Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article

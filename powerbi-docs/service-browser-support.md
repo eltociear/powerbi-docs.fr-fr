@@ -1,15 +1,15 @@
 ---
-title: "Navigateurs pris en charge pour Power BI"
-description: "Afficher la liste des navigateurs qui prennent en charge Power BI"
+title: Navigateurs pris en charge pour Power BI
+description: Afficher la liste des navigateurs qui prennent en charge Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article

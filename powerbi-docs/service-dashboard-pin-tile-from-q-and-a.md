@@ -1,15 +1,15 @@
 ---
-title: "Épingler une vignette à un tableau de bord à partir de Questions et réponses"
-description: "Documentation sur la manière d’épingler une vignette à un tableau de bord Power BI à partir de la zone Q&R"
+title: Épingler une vignette à un tableau de bord à partir de Questions et réponses
+description: Documentation sur la manière d’épingler une vignette à un tableau de bord Power BI à partir de la zone Q&R
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

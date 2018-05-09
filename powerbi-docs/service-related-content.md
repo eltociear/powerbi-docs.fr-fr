@@ -1,16 +1,16 @@
 ---
-title: "Afficher un contenu associé dans le service Power BI"
-description: "Navigation facilitée, affichage de contenu associé dans les tableaux de bord, rapports et jeux de données"
+title: Afficher un contenu associé dans le service Power BI
+description: Navigation facilitée, affichage de contenu associé dans les tableaux de bord, rapports et jeux de données
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: B2vd4MQrz4M
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
