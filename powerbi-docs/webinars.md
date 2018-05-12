@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/20/2018
+ms.date: 04/26/2018
 ms.author: maikelson
-ms.openlocfilehash: 598266306657337e8190075b2a5e42de2b7d2144
-ms.sourcegitcommit: 20adb55065af8e2f48387a00e64c72cf6d700f0f
+ms.openlocfilehash: 9fa7f56f102ae098c870ae0e6e12f56cc26d0fde
+ms.sourcegitcommit: 0cae0e6e1fd06b6465721702b2d0bb8333eb5afb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -42,6 +42,14 @@ Planifiez un lancement efficace de Power BI pour votre organisation et explorez 
 <br>[Inscrivez-vous pour regarder maintenant la partie 3 - Gestion des services : insights sur la gestion du service Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
 <br>[Inscrivez-vous pour regarder maintenant la partie 2 - Gouvernance : régir l’utilisation de Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
 <br>[Inscrivez-vous pour regarder maintenant la partie 1 - Adoption : adopter une culture piloté par les données](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+
+**En savoir plus sur Power BI Embedded en 20 minutes**
+<br>par Megan Asarrane et Colin Murphy
+<br>*23 mai 2018 10:00 PST, 13:00 EST*
+
+Ce webinaire donne une présentation de Power BI Embedded. À la fin de ce webinaire, les utilisateurs devraient être en mesure de comprendre en quoi consiste Power BI Embedded, les étapes suivantes pour bien démarrer avec le produit et comment accéder à l’aide/aux ressources.
+
+[S’inscrire pour regarder le webinaire le 23 mai](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
 
 >[Assistez aux prochains webinaires de la Communauté Power BI](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
@@ -103,7 +111,7 @@ Regardez les sessions enregistrées à tout moment
 <br>par Patrick McGarry et Miguel Martinez
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
-### <a name="community"></a>Community ###
+### <a name="community"></a>Communauté ###
 
 **Narration avec vos données et Power BI**
 <br>par Tristan Malherbe
@@ -132,8 +140,9 @@ Regardez les sessions enregistrées à tout moment
 <br>[Inscrivez-vous pour regarder](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Télécharger le kit de démarrage Analytiques avancées pour suivre la procédure](https://aka.ms/pbiaawebinar)
 
-**Série de webinaires Pros de la finance Office 365 – Épisode 2 : Automatiser les rapports périodiques et activer l’analytique libre-service**
-<br>Mark Traverso et Miguel Martinez
+**Série de webinaires Office 365 Finance Pros**
+<br>par Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky et Miguel Martinez
+<br>Conseils, astuces et meilleures pratiques pour travailler plus efficacement au quotidien à l’aide d’Office 365.
 <br>[S’inscrire et regarder maintenant](https://aka.ms/Office365FinanceProsPBI)
 
 **Être un Jedi Power BI de pile complet – une présentation pas à pas des fonctionnalités Power BI les plus avancées via les données Star Wars**

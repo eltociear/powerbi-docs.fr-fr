@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 4/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b5da2bf43f2d38e0828571e2b9d404feb615ac69
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: 7be260a5989ffb6a9dc1b72dad90d227e0b6295b
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Utiliser une extraction dans Power BI Desktop
 Une **extraction** dans **Power BI Desktop** vous permet de créer dans votre rapport une page qui se concentre sur une entité spécifique, par exemple, un fournisseur, un client ou un fabricant. Dans cette page de rapport ciblée, les utilisateurs peuvent cliquer avec le bouton de droite sur un point de données renvoyant à une autre page de rapport et opérer une extraction vers la page ciblée pour obtenir les détails filtrés en fonction de ce contexte.
@@ -45,8 +45,8 @@ Une **extraction** dans **Power BI Desktop** vous permet de créer dans votre ra
 ## <a name="use-your-own-image-for-a-back-button"></a>Utiliser votre propre image pour un bouton Précédent    
  Étant donné que le bouton Précédent est une image, vous pouvez la remplacer par toute image de votre choix, qui continuera à fonctionner en tant que bouton Précédent permettant aux consommateurs du rapport de revenir à la page d’origine.
 
-1. Pour utiliser votre propre image pour un bouton Précédent, placez une image visuelle sur la page d’extraction.
-2. Sélectionnez le visuel et placez le curseur **bouton Précédent** dessus. Votre image fonctionne désormais comme un bouton Précédent.
+1. Dans l’onglet **Accueil**, cliquez sur **Image**, recherchez votre image, puis placez-la dans la page d’extraction.
+2. Sélectionnez votre nouvelle image sur la page d’extraction et sous la section Format de l’image, définissez le curseur **Lien** sur Activé et définissez le **Type** sur **Retour**. Votre image fonctionne désormais comme un bouton Précédent.
 
     ![](media/desktop-drillthrough/drillthrough_05.png)
 
