@@ -1,28 +1,28 @@
 ---
-title: "Utilisation des étiquettes de hiérarchie incluses dans Power BI Desktop"
-description: "Utilisation des étiquettes de hiérarchie incluses dans Power BI Desktop"
+title: Utilisation des étiquettes de hiérarchie incluses dans Power BI Desktop
+description: Utilisation des étiquettes de hiérarchie incluses dans Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9d5675b17973839f52699c5af9bfad9c8714a58e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 974194cb04701e2dc21814a0945227ad9c4b770c
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Utilisation des étiquettes de hiérarchie incluses dans Power BI Desktop
 **Power BI Desktop** prend en charge l’utilisation des **étiquettes de hiérarchie incluses**, la première des deux fonctionnalités visant à améliorer l’exploration hiérarchique. La deuxième fonctionnalité, qui est en cours de développement, est la possibilité d’utiliser des étiquettes de hiérarchie imbriquées (revenez régulièrement, nous mettons à jour le contenu fréquemment).   
