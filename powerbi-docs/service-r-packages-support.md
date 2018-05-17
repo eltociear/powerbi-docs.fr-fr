@@ -1,28 +1,28 @@
 ---
-title: "Découvrez quels packages R sont pris en charge pour l’utilisation et la création de scripts R dans Power BI"
-description: "Packages R pris et non pris en charge dans Power BI"
+title: Découvrez quels packages R sont pris en charge pour l’utilisation et la création de scripts R dans Power BI
+description: Packages R pris et non pris en charge dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 189e9ed8bb63df4fdbebc5eaa11625bef4592d38
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: c4ff69bff3c65fa64f90184668d34fac5a82815f
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>Packages R dans le service Power BI
 Vous pouvez utiliser le puissant [langage de programmation R](https://www.r-project.org/) pour créer des visuels dans le service Power BI. De nombreux packages R sont pris en charge dans le service Power BI (et bien plus encore sont pris en charge tout le temps), mais certains packages ne le sont pas.

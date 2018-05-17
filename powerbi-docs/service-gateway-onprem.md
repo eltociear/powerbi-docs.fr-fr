@@ -18,13 +18,14 @@ ms.workload: powerbi
 ms.date: 03/26/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ee696e4d967e995771480d660de260b6d3b755cd
-ms.sourcegitcommit: 0cae0e6e1fd06b6465721702b2d0bb8333eb5afb
+ms.openlocfilehash: e993a7ced826879e87b6f1d101f50e264fdc6854
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
+
 La passerelle de données locale agit comme un pont, assurant un transfert de données rapide et sûr entre les données locales (les données qui ne sont pas dans le cloud) et les services Power BI, Microsoft Flow, Logic Apps et PowerApps.
 
 Vous pouvez utiliser une seule passerelle avec différents services en même temps. Si vous utilisez Power BI ainsi que PowerApps, il est possible d’utiliser une seule passerelle pour les deux. Elle dépend du compte que vous utilisez pour vous connecter.

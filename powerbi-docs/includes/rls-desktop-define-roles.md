@@ -21,7 +21,7 @@ Pour définir les rôles de sécurité, vous pouvez procéder comme suit.
 7. Entrez les expressions DAX. Cette expression doit renvoyer vrai ou faux. Par exemple : [ID d’entité] = « Valeur ».
    
    > [!NOTE]
-   > Vous pouvez utiliser *username()* dans cette expression. N’oubliez pas que *username()* est au format *DOMAINE\nom_utilisateur* dans Power BI Desktop. Dans le service Power BI, il est au format UPN de l’utilisateur. Vous pouvez également utiliser *userprincipalname()*, qui renvoie systématiquement l’utilisateur au format de son nom d’utilisateur principal.
+   > Vous pouvez utiliser *username()* dans cette expression. N’oubliez pas que *username()* est au format *DOMAINE\nom_utilisateur* dans Power BI Desktop. Dans le service Power BI, il est au format UPN de l’utilisateur. Vous pouvez également utiliser *userprincipalname()*, qui retourne systématiquement l’utilisateur au format de son nom d’utilisateur principal.
    > 
    > 
    

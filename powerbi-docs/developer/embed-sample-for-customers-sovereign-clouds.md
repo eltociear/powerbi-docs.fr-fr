@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/28/2018
 ms.author: maghan
-ms.openlocfilehash: bef0748f1431a29c96d7aa23ab457683e247724a
-ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
+ms.openlocfilehash: 5d0d679a9b5d3bea494915dc981e155ad69eeac6
+ms.sourcegitcommit: 1c7780e0dfe0b6b8322e6fafdd0693177db455d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Incorporer un tableau de bord, une vignette ou un rapport Power BI dans votre application pour les clouds souverains
 Découvrez comment intégrer (ou incorporer) un tableau de bord, une vignette ou un rapport dans une application web en utilisant le SDK Power BI .NET, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à vos clients. Il s’agit typiquement d’un scénario concernant les éditeurs de logiciels indépendants.
@@ -38,7 +38,7 @@ Power BI prend également en charge les clouds souverains (privés). Chaque clou
 
 ![Tableau de bord incorporé](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un **compte Power BI**. Si vous n’avez pas de compte configuré, alors selon le type de gouvernement, vous pouvez [vous inscrire pour un compte Power BI pour le gouvernement américain](../service-govus-signup.md) ou [un compte cloud Power BI pour l’Allemagne](https://powerbi.microsoft.com/en-us/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
+Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un **compte Power BI**. Si vous n’avez pas de compte configuré, alors selon le type de gouvernement, vous pouvez [vous inscrire pour un compte Power BI pour le gouvernement américain](../service-govus-signup.md) ou [un compte cloud Power BI pour l’Allemagne](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
 
 > [!NOTE]
 > Vous voulez plutôt incorporer un tableau de bord s’adressant à votre organisation ? Consultez [Intégrer un tableau de bord dans une application pour votre organisation](integrate-dashboard.md).
@@ -407,7 +407,7 @@ Un exemple d’application associé est disponible dans l’[exemple Incorporati
 
 * Vous pouvez examiner un exemple d’application sur GitHub. Les exemples ci-dessus sont basés sur cet exemple. Pour plus d’informations, consultez l’[exemple Incorporation pour votre organisation](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 * Pour plus d’informations sur les API JavaScript, consultez [API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
-* Pour plus d’informations sur le cloud Power BI pour l’Allemagne, consultez [FAQ sur le cloud Power BI pour l’Allemagne](https://docs.microsoft.com/en-us/power-bi/service-govde-faq)
+* Pour plus d’informations sur le cloud Power BI pour l’Allemagne, consultez [FAQ sur le cloud Power BI pour l’Allemagne](https://docs.microsoft.com/power-bi/service-govde-faq)
 * [Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI](migrate-from-powerbi-embedded.md)
 
 Considérations et limitations

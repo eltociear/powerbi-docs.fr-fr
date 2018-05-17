@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: d9500f2c3d385e96b9133a3b634fe06f9769936e
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: f1b92cf370dfdfdbeadd71ee954030aa8a79d338
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop et le service Power BI
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des conseils et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop, le service Power BI *et* dans les éditions Microsoft Excel 2016 ou Excel 2013 Pro-Plus avec l’activation du complément Power Pivot et l’activation et l’installation de Power Query.
@@ -97,14 +97,14 @@ Vérifiez que le type de données de la colonne d’agrégation résultante est 
 
 Définition d’un histogramme prenant en charge le balayage : si des éléments visuels sont liés entre eux et qu’un utilisateur sélectionne un point de données dans un élément visuel, les autres éléments visuels de la page de rapport mettent en surbrillance ou filtrent les points de données liés à celui sélectionné. Voilà ce qu’on entend par « balayage ».  Étant donné que nous manipulons les données au moment de la requête, nous devons créer une relation entre les tables et déterminer l’élément de détail qui est lié au compartiment dans l’histogramme et vice-versa.
 
-Pour démarrer le processus, identifiez la requête contenant le champ à utiliser pour créer un histogramme, puis sélectionnez l’option « Référence ».  Nommez la nouvelle requête « Buckets ».  Dans cet exemple, nous allons appeler la requête d’origine « Details ».  Ensuite, supprimez toutes les colonnes à l’exception de celle que vous allez utiliser comme compartiment pour l’histogramme.  Maintenant, cliquez avec le bouton droit sur la colonne et sélectionnez « Supprimer les doublons » pour faire en sorte que les valeurs restantes soient uniques dans la colonne.   Si vous disposez de nombres décimaux, vous pouvez tout d’abord suivre le conseil visant à définir des compartiments pour générer un histogramme afin d’obtenir un ensemble gérable de compartiments.  Examinez à présent les données affichées dans l’aperçu de la requête.  Si vous voyez des valeurs vides ou null, vous devez les corriger avant de créer une relation.  Consultez la section « Création de relations si les données comprennent des valeurs null ou vides ».   Cette approche peut être problématique, car elle nécessite que les données soient triées.  Pour que les compartiments trient correctement les données, consultez « Ordre de tri : faire apparaître les catégories dans l’ordre souhaité ».  
+Pour démarrer le processus, identifiez la requête contenant le champ à utiliser pour créer un histogramme, puis sélectionnez l’option « Référence ».  Nommez la nouvelle requête « Buckets ».  Dans cet exemple, nous allons appeler la requête d’origine « Details ».  Ensuite, supprimez toutes les colonnes à l’exception de celle que vous allez utiliser comme compartiment pour l’histogramme.  Maintenant, cliquez avec le bouton droit sur la colonne et sélectionnez « Supprimer les doublons » pour faire en sorte que les valeurs restantes soient uniques dans la colonne.   Si vos données comportent des nombres décimaux, vous pouvez tout d’abord suivre la procédure « Définition de compartiments pour créer un histogramme » afin d’obtenir un ensemble gérable de compartiments.  Examinez à présent les données affichées dans l’aperçu de la requête.  Si vous voyez des valeurs vides ou null, vous devez les corriger avant de créer une relation.  Consultez la section « Création de relations si les données comprennent des valeurs null ou vides ».   Cette approche peut être problématique, car elle nécessite que les données soient triées.  Pour que les compartiments trient correctement les données, consultez « Ordre de tri : faire apparaître les catégories dans l’ordre souhaité ».  
 
 >[!NOTE]
 >Il est utile de réfléchir à l’ordre de tri avant de générer des visuels.   
 
 L’étape suivante du processus consiste à définir une relation entre les requêtes « Buckets » et « Details » dans la colonne des compartiments.  Dans le ruban de Power BI Desktop, cliquez sur **Gérer les relations**.  Créez une relation dans laquelle « Buckets » est dans la table de gauche et « Details » dans la table de droite, puis sélectionnez le champ que vous utilisez pour l’histogramme.
 
-La dernière étape consiste à créer l’histogramme.  Faites glisser le champ Bucket à partir de la table « Buckets ».  Supprimez le champ par défaut de l’histogramme résultant.  Maintenant, à partir de la table « Details », faites glisser le champ de l’histogramme dans le même élément visuel.  Dans la zone des champs, spécifiez l’agrégation par défaut Nombre.  L’histogramme est généré. Si vous créez un autre visuel comme un compartimentage à partir de la table Details, sélectionnez un point de données dans le compartimentage pour consulter l’histogramme en surbrillance et afficher l’histogramme pour le point de données sélectionné par rapport à la tendance de l’ensemble du jeu de données.
+La dernière étape consiste à créer l’histogramme.  Faites glisser le champ Bucket à partir de la table « Buckets ».  Supprimez le champ par défaut de l’histogramme résultant.  Maintenant, à partir de la table « Details », faites glisser le champ de l’histogramme dans le même élément visuel.  Dans la zone des champs, spécifiez l’agrégation par défaut Nombre.  Le résultat est l’histogramme. Si vous créez un autre visuel comme un compartimentage à partir de la table Details, sélectionnez un point de données dans le compartimentage pour consulter l’histogramme en surbrillance et afficher l’histogramme pour le point de données sélectionné par rapport à la tendance de l’ensemble du jeu de données.
 
 ### <a name="histograms"></a>Histogrammes
 Dans Power BI Desktop, vous pouvez utiliser un champ calculé pour définir un histogramme.  Identifiez la table et la colonne à utiliser pour créer un histogramme.  Dans la zone de calcul, tapez la formule suivante :
@@ -126,7 +126,7 @@ Si nous chargeons un jeu de données à partir des requêtes de service client e
 >
 >
 
-Quand nous souhaitons suivre tous les incidents et éléments de travail liés à un CustomerName spécifique, nous ne pouvons pas simplement créer une relation entre ces deux jeux de données.  Certains éléments de travail (WorkItems) ne sont peut être pas liés à un nom de client (CustomerName), et nous nous retrouvons avec un champ vide ou NULL.  Il peut y avoir plusieurs enregistrements dans WorkItems et CustomerIncidents pour un CustomerName donné.  
+Quand nous souhaitons suivre tous les incidents et éléments de travail liés à un CustomerName spécifique, nous ne pouvons pas simplement créer une relation entre ces deux jeux de données.  Certains WorkItems ne sont peut-être pas liés à un CustomerName et nous nous retrouvons avec un champ vide ou NULL.  Il peut y avoir plusieurs enregistrements dans WorkItems et CustomerIncidents pour un CustomerName donné.  
 
 #### <a name="creating-relationships-in-power-bi-desktop-when-the-data-has-null-or-blank-values"></a>Création de relations dans Power BI Desktop, lorsque les données comprennent des valeurs null ou vides
 Il arrive que des jeux de données contiennent des colonnes avec des valeurs null ou vides.  Cela peut poser des problèmes lors de la création de relations.  Pour résoudre le problème, deux options s’offrent à vous.  Vous pouvez supprimer les lignes qui contiennent des valeurs null ou vides.  Pour cela, utilisez la fonctionnalité de filtre sous l’onglet requête ou, si vous fusionnez des requêtes, sélectionnez l’option « Conserver uniquement les lignes correspondantes ». Vous pouvez aussi remplacer les valeurs null ou vides par des valeurs qui fonctionnent dans les relations, en général des chaînes comme « NULL » et « (Vide) ».   Il n’y a pas une approche meilleure que l’autre. Le filtrage de lignes dans l’étape de requête supprime les lignes et peut affecter les calculs et les statistiques récapitulatives.  Cette dernière approche conserve les lignes de données. Le problème, c’est que des lignes sans relation peuvent apparaître comme liées dans le modèle, ce qui peut engendrer des erreurs de calcul.  Si vous adoptez cette solution, veillez, le cas échéant, à utiliser des filtres au niveau de la vue ou du graphique pour obtenir des résultats précis.  Plus important encore, déterminez les lignes qui sont conservées/supprimés et mesurez l’impact global sur l’analyse.  
@@ -142,7 +142,7 @@ Si nous chargeons des jeux de données à partir de requêtes de service client 
 >
 >
 
-Quand nous souhaitons faire le suivi des incidents et des éléments de travail liés à un nom de client (CustomerName) spécifique, nous ne parvenons pas à créer une relation entre ces deux jeux de données.  Certains WorkItems ne sont peut-être pas liés à un CustomerName et nous nous retrouvons avec un champ vide ou NULL.  Si la table CustomerNames comprend des valeurs vides ou null, vous pouvez encore être dans impossibilité de créer une relation. Consultez « Création de relations si les données comprennent des valeurs null ou vides ».  Il existe peut-être plusieurs éléments WorkItems et CustomerIncidents pour un CustomerName donné.  
+Quand nous souhaitons faire le suivi des incidents et des éléments de travail liés à un nom de client (CustomerName) spécifique, nous ne parvenons pas à créer une relation entre ces deux jeux de données.  Certains éléments de travail (WorkItems) ne sont peut être pas liés à un nom de client (CustomerName), et nous nous retrouvons avec un champ vide ou NULL.  Si la table CustomerNames comprend des valeurs vides ou null, vous pouvez encore être dans impossibilité de créer une relation. Consultez « Création de relations si les données comprennent des valeurs null ou vides ».  Il existe peut-être plusieurs éléments WorkItems et CustomerIncidents pour un CustomerName donné.  
 
 Pour créer une relation dans ce cas, nous devons créer un jeu de données logique de tous les CustomerNames dans les deux jeux de données.  Sous l’onglet Requête, vous pouvez utiliser la séquence suivante pour créer le jeu de données logique :
 
@@ -166,7 +166,7 @@ Il est parfois utile de calculer des statistiques récapitulatives pour un jeu d
 ### <a name="using-dax-for-the-first-time"></a>Utilisation de DAX pour la première fois
 DAX est le langage des formules de calcul dans Power BI Desktop.  Il est optimisé pour l’analyse décisionnelle.  Si votre expérience est centrée autour d’un langage de requête semblable à SQL, DAX peut vous paraître légèrement différent de ce à quoi vous êtes habitué. Si vous souhaitez apprendre DAX, vous trouverez de très bonnes ressources en ligne et divers ouvrages sur le sujet.
 
-[Démarrage rapide : Principes fondamentaux de DAX dans Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
+[Découvrir les principes fondamentaux de DAX dans Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
 
 [Informations de référence sur DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 

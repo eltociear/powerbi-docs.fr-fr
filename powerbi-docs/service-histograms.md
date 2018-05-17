@@ -2,27 +2,27 @@
 title: Histogrammes
 description: Histogrammes
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 94c1e23fc012e40763247a28e8930a9abdd81425
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 7e4419afd4264b96d8f7fc60b72c7e276c014da4
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="histograms"></a>Histogrammes
 Il existe plusieurs façons de construire des histogrammes dans Power BI. Nous allons commencer par la plus simple avant d’examiner les autres.
@@ -43,7 +43,7 @@ Si des éléments visuels sont liés entre eux et qu’un utilisateur sélection
 Pour démarrer le processus, identifiez la requête contenant le champ à utiliser pour créer un histogramme, puis sélectionnez l’option *Référence* .  Nommez la nouvelle requête *Compartiments*.  Dans cet exemple, nous allons appeler la requête d’origine *Détails*.  Ensuite, supprimez toutes les colonnes à l’exception de celle que vous allez utiliser comme compartiment pour l’histogramme.  Maintenant, avec le bouton droit de la souris, cliquez sur la colonne et sélectionnez *Supprimer les doublons* pour faire en sorte que les valeurs restantes soient uniques dans la colonne. Si vos données comportent des nombres décimaux, vous pouvez tout d’abord suivre la procédure « Définition de compartiments pour créer un histogramme » afin d’obtenir un ensemble gérable de compartiments.  Examinez à présent les données affichées dans l’aperçu de la requête. Si vous voyez des valeurs vides ou null, vous devez les corriger avant de créer une relation. Consultez la section « Création de relations si les données comprennent des valeurs null ou vides ». Cette approche peut être problématique, car elle nécessite que les données soient triées. Pour que les compartiments trient correctement les données, consultez « Ordre de tri : faire apparaître les catégories dans l’ordre souhaité ». 
 
 > [!NOTE]
-> Il est conseillé de réfléchir à l’ordre de tri avant de créer des éléments visuels.   
+> Il est utile de réfléchir à l’ordre de tri avant de générer des visuels.   
 > 
 > 
 

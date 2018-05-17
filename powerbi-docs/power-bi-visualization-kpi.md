@@ -1,5 +1,5 @@
 ---
-title: Visuels des indicateurs de performance clés (didacticiel)
+title: Éléments visuels des indicateurs de performance clés
 description: Créer un indicateur de performance clé dans Power BI Desktop et le service Power BI
 services: powerbi
 documentationcenter: ''
@@ -19,13 +19,13 @@ ms.workload: powerbi
 ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4d6af52f10f16d973dc97ed0da1ed74bf63ec2cc
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: 92fafc120e34fc3f11d203ca784189f037ad5a7f
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="kpi-visuals-tutorial"></a>Visuels des indicateurs de performance clés (didacticiel)
+# <a name="kpi-visuals"></a>Éléments visuels des indicateurs de performance clés
 Un indicateur de performance clé (KPI) est un indice visuel qui représente la marge de progression réalisée en vue d’atteindre un objectif mesurable. Pour plus d’informations sur les indicateurs de performances clés, consultez [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
 
 ## <a name="when-to-use-a-kpi"></a>Quand utiliser un indicateur de performance clé ?

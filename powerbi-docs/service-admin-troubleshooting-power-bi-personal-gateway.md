@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d321d70fe201af500feb35ef4e5ea1df6cc558f0
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: 2f5ca353d26b83a8c8cce5356724b351cb9d1621
+ms.sourcegitcommit: 9fa954608e78dcdb8d8a503c3c9b01c43ca728ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Résolution des problèmes de Power BI Gateway - Personal
 Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de Power BI Gateway - Personal.
@@ -76,11 +76,11 @@ Vous pouvez obtenir cette erreur dans les paramètres pour \<jeu de données\> s
 
 **Erreur : [Impossible de combiner des données] &lt;partie de requête&gt;/&lt;…&gt;/&lt;…&gt; accède à des sources de données dont les niveaux de confidentialité ne peuvent pas être utilisés ensemble. Reconstruisez cette combinaison de données.**
 
-**Solution**: cette erreur est due à des restrictions du niveau de confidentialité et aux types de sources de données que vous utilisez. [En savoir plus](refresh-enable-fast-combine.md)
+**Solution**: cette erreur est due à des restrictions du niveau de confidentialité et aux types de sources de données que vous utilisez.
 
 **Erreur : Erreur de source de données : Désolé... Nous n'avons pas pu convertir la valeur « \[Table\] » en type Table.**
 
-**Solution**: cette erreur est due à des restrictions du niveau de confidentialité et aux types de sources de données que vous utilisez. [En savoir plus](refresh-enable-fast-combine.md)
+**Solution**: cette erreur est due à des restrictions du niveau de confidentialité et aux types de sources de données que vous utilisez.
 
 **Erreur : espace insuffisant pour cette ligne.**
 

@@ -1,15 +1,15 @@
 ---
-title: "Modifier la taille d’une page de rapport (didacticiel)"
-description: "Didacticiel : modifier les paramètres d’affichage d’une page dans un rapport Power BI"
+title: Changer la taille d’une page de rapport
+description: Changer les paramètres d’affichage d’une page dans un rapport Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: modifying
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,13 +18,13 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 9ec589655a3dc9b3e19def76cee2f20c48a512b2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 8381f3100676b6e20f7fb748045c4852b30c45b9
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="change-the-size-of-a-report-page-tutorial"></a>Modifier la taille d’une page de rapport (didacticiel)
+# <a name="change-the-size-of-a-report-page"></a>Changer la taille d’une page de rapport
 Dans [l’article précédent et la vidéo qui l’accompagne](power-bi-report-display-settings.md), vous avez découvert deux paramètres permettant de contrôler l’affichage des pages dans les rapports Power BI : **Affichage** et **Taille de la page**. Les modes Affichage et Taille de la page sont disponibles dans le service Power BI et dans Power BI Desktop. Ils ont presque le même fonctionnement, mais dans ce didacticiel, nous utilisons le service Power BI.
 
 ### <a name="prerequisites"></a>Conditions préalables

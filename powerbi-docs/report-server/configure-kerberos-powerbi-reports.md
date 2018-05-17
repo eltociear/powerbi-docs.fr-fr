@@ -1,15 +1,15 @@
 ---
 title: Configurer Kerberos pour utiliser les rapports Power BI
-description: "Découvrez comment configurer votre serveur de rapports pour l’authentification Kerberos auprès des sources de données utilisées dans vos rapports Power BI pour un environnement distribué."
+description: Découvrez comment configurer votre serveur de rapports pour l’authentification Kerberos auprès des sources de données utilisées dans vos rapports Power BI pour un environnement distribué.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 70d4992ad4680d2a412a6bdded895f4248f5dab1
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 8a99f4d07b17ae1a8d260c1655dfbb948f76c317
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Configurer Kerberos pour utiliser les rapports Power BI
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -223,7 +223,7 @@ Si cette configuration devrait fonctionner dans la plupart des cas, avec Kerbero
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Manuel de l’administrateur](admin-handbook-overview.md)  
-[Démarrage rapide : installer Power BI Report Server](quickstart-install-report-server.md)  
+[Installer Power BI Report Server](install-report-server.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

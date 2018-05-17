@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/23/2018
+ms.date: 05/09/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 7b8d3b4202ff08b5b97765fe20abe37c41518a31
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 4887204151d50e685ea98a2cf0252370ca4919bb
+ms.sourcegitcommit: 9fa954608e78dcdb8d8a503c3c9b01c43ca728ab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/11/2018
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
@@ -38,11 +38,15 @@ Vous pouvez également consulter les chaînes YouTube pour plus d’informations
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="march-2018"></a>Mars 2018
+## <a name="april-2018"></a>Avril 2018
+* [Livre blanc « Power BI GDPR »](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+* Les [journaux d’audit](https://docs.microsoft.com/power-bi/service-admin-auditing) du service Power BI sont activés par défaut pour le locataire Office 365.
+
+## <a name="previous-months-2018"></a>Mois précédents (2018)
+### <a name="march-2018"></a>Mars 2018
 * [Filtres persistants](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) dans le service Power BI.
 * Partager du contenu avec les utilisateurs à l’aide de leurs comptes de messagerie personnels. Extension de [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
 
-## <a name="previous-months-2018"></a>Mois précédents (2018)
 ### <a name="february-2018"></a>Février 2018
 * Installer automatiquement des [applications Power BI](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps) pour les utilisateurs finaux.
 * Capacités P4 et P5 sur Power BI Premium

@@ -1,6 +1,6 @@
 ---
-title: Démarrage rapide - Bien démarrer avec Questions et réponses dans Power BI
-description: Démarrage rapide - Bien démarrer avec Questions et réponses dans le service Power BI avec l’exemple Analyse de la vente au détail
+title: Bien démarrer avec Questions et réponses Power BI
+description: Bien démarrer avec les Questions et réponses dans le service Power BI avec l’exemple Analyse de la vente au détail
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -18,13 +18,13 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 0f4f56431fd0c667411c302f4f30f0c395269e4a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: aa9b90521d2bf8df88676756135442a22277a4e8
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="get-started-with-power-bi-qa-quickstart"></a>Bien démarrer avec Questions et réponses dans Power BI (démarrage rapide)
+# <a name="get-started-with-power-bi-qa"></a>Bien démarrer avec Questions et réponses Power BI
 ## <a name="use-power-bi-qa-with-the-retail-analysis-sample"></a>Utiliser Questions et réponses dans Power BI avec l’exemple Analyse de la vente au détail
 Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel.  Dans ce démarrage rapide, nous allons étudier deux façons de créer la même visualisation : en la créant directement dans un rapport et en posant une question à l’aide de Questions et réponses. Nous allons utiliser le service Power BI, mais le processus est presque identique si vous utilisez Power BI Desktop.
 

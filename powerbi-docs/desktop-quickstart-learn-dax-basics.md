@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 474cca86151925ee4991d477a6127536180808a8
-ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
+ms.openlocfilehash: 86f229ecf60a1e1ef89213eed83521a8fadd64a2
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Principes fondamentaux de DAX dans Power BI Desktop
 Cet article s’adresse aux utilisateurs qui débutent avec Power BI Desktop. Il est destiné à vous fournir une introduction rapide et simple de la façon dont vous pouvez utiliser le langage DAX (Data Analysis Expressions) pour résoudre un certain nombre de problèmes d’analyse de données et de calcul de base. Nous aborderons des informations conceptuelles, une série de tâches que vous pourrez effectuer et quelques questionnaires pour tester ce que vous aurez appris. À la fin de cet article, vous aurez acquis une bonne compréhension des concepts fondamentaux du langage DAX.
@@ -102,7 +102,7 @@ Pour effectuer cette tâche, vous devez ouvrir le fichier Contoso Sales Sample P
     
     Vous utilisez la fonction CALCULATE pour filtrer les montants que vous souhaitez additionner par un argument que vous passez à la fonction CALCULATE. Ceci porte le nom d’imbrication de fonctions. La fonction CALCULATE possède au moins deux arguments. Le premier est l’expression à évaluer et le second est un filtre.
    
-5.  Entre les parenthèses **()** de la fonction **CALCULATE**, tapez **Sales[SalesAmount]**. Il s’agit du premier argument de l’expression de votre fonction CALCULATE.
+5.  Entre les parenthèses  **()** de la fonction **CALCULATE**, tapez **Sales[SalesAmount]**. Il s’agit du premier argument de l’expression de votre fonction CALCULATE.
     
 6.  Tapez une virgule (**,**) pour spécifier le premier filtre, puis tapez **PREVIOUSQUARTER**, suivi d’une parenthèse ouvrante.
     

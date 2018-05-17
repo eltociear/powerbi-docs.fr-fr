@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 0e9d1ed73abcd7234a96b28da638db649130c08e
-ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
+ms.openlocfilehash: d6c624b80bb1ea30dc62026032b5b4f5dd1ef745
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
 Quand vous importez plusieurs tables, vous êtes souvent amené à effectuer des analyses impliquant les données de ces tables. Les relations entre ces tables sont nécessaires pour obtenir des résultats précis et afficher les informations correctes dans vos rapports. Power BI Desktop facilite la création de ces relations. Dans la plupart des cas, vous n’avez rien à faire ; la fonctionnalité Détection automatique se charge de tout. Toutefois, dans certains cas, vous pouvez être amené à créer des relations vous-même ou à apporter des modifications à une relation. Dans les deux cas, il est important de comprendre le fonctionnement des relations dans Power BI Desktop et comment les créer et les modifier.
@@ -52,7 +52,7 @@ Par défaut, Power BI Desktop configure automatiquement les propriétés Cardina
 Quand vous créez ou modifiez une relation, vous pouvez configurer des options supplémentaires.  Par défaut, les options supplémentaires sont configurées automatiquement d’après une estimation. Cette configuration étant déterminée par les données des colonnes, elle peut varier d’une relation à l’autre.
 
 ## <a name="cardinality"></a>Cardinalité
-**Plusieurs à un (\*:1)** : il s’agit du type par défaut, le plus courant. La colonne d’une table peut avoir plusieurs instances d’une valeur, tandis que la table connexe, souvent appelée table de recherche, n’a qu’une seule instance d’une valeur donnée.
+**Plusieurs à un (\*:1)**  : il s’agit du type par défaut, le plus courant. La colonne d’une table peut avoir plusieurs instances d’une valeur, tandis que la table connexe, souvent appelée table de recherche, n’a qu’une seule instance d’une valeur donnée.
 
 **Un à un (1:1)** : la colonne d’une table n’a qu’une seule instance d’une valeur donnée et la table connexe n’a qu’une seule instance d’une valeur donnée.
 

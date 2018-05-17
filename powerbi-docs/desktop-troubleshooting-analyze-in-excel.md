@@ -1,28 +1,28 @@
 ---
-title: "Résoudre les problèmes d’analyse dans Excel dans Power BI Desktop"
-description: "Solutions aux problèmes courants de la fonctionnalité Analyser dans Excel"
+title: Résoudre les problèmes d’analyse dans Excel dans Power BI Desktop
+description: Solutions aux problèmes courants de la fonctionnalité Analyser dans Excel
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 1760828290846b9ee7601ad4aa313ee3e9cbdf8a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 102eb23ad17e9669d9cd9f5176aafd3b6e2eec08
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Résolution des problèmes de la fonctionnalité Analyser dans Excel
 Il peut arriver que vous obteniez un résultat inattendu lors de l’utilisation de la fonctionnalité Analyser dans Excel, ou que la fonctionnalité ne fonctionne pas comme prévu. Cette page fournit des solutions pour les problèmes courants lors de l’utilisation de la fonctionnalité Analyser dans Excel.

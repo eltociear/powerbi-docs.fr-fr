@@ -1,15 +1,15 @@
 ---
-title: "Trouver la clé de produit de votre serveur de rapports"
-description: "Découvrez comment vous pouvez trouver votre clé de produit Power BI Report Server pour installer votre serveur dans un environnement de production."
+title: Trouver la clé de produit de votre serveur de rapports
+description: Découvrez comment vous pouvez trouver votre clé de produit Power BI Report Server pour installer votre serveur dans un environnement de production.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,18 +17,18 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: ff2e515823cbaa726fbdf72d1cb398381ea69363
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: b1bfbdc635c0abba7e6d14567c3e839fd6a0c716
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Trouver la clé de produit de votre serveur de rapports
 Découvrez comment vous pouvez trouver votre clé de produit Power BI Report Server pour installer votre serveur dans un environnement de production.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/6CQnf-NGtpU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Vous avez téléchargé Power BI Report Server et vous disposez d’un contrat Software Assurance SQL Server Enterprise. Ou vous avez acheté Power BI Premium. Vous souhaitez installer le serveur dans un environnement de production, mais vous avez besoin d’une clé de produit. Où se trouve-t-elle ? 
+Vous avez téléchargé Power BI Report Server et vous disposez d’un contrat Software Assurance SQL Server Entreprise. Ou vous avez acheté Power BI Premium. Vous souhaitez installer le serveur dans un environnement de production, mais vous avez besoin d’une clé de produit. Où se trouve-t-elle ? 
 
 La clé de produit peut être dans deux emplacements, selon ce que vous avez acheté.
 
@@ -42,7 +42,7 @@ La sélection de **Clé de Power BI Report Server** a pour effet d’afficher un
 ![Clé de produit Power BI Report Server](media/find-product-key/pbirs-product-key-dialog.png)
 
 ## <a name="purchased-software-assurance-agreeemnt"></a>Achat d’un contrat Software Assurance
-Si vous disposez d’un contrat SQL Server Enterprise Software Assurance, vous pouvez vous procurer votre clé de produit auprès du [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/). Regardez sous le dernier service pack pour connaître la dernière version de SQL Server. Si celle-ci n’apparaît pas, regardez sous la version RTM de la dernière version de SQL Server.
+Si vous disposez d’un contrat SQL Server Entreprise SA, vous pouvez vous procurer votre clé de produit auprès du [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/). Regardez sous le dernier service pack pour connaître la dernière version de SQL Server. Si celle-ci n’apparaît pas, regardez sous la version RTM de la dernière version de SQL Server.
 
 > [!NOTE]
 > Vous devez consulter la section sur le téléchargement. Pas la section sur les Clés.
@@ -52,7 +52,7 @@ Si vous disposez d’un contrat SQL Server Enterprise Software Assurance, vous p
 ![](media/find-product-key/vlsc-download.png "Centre de gestion des licences en volume")
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Démarrage rapide : installer Power BI Report Server](quickstart-install-report-server.md)  
+[Installer Power BI Report Server](install-report-server.md)  
 [Installer Power BI Desktop optimisé pour Power BI Report Server](install-powerbi-desktop.md)  
 [Installer le Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

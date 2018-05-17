@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 04/23/2018
 ms.author: maggies
-ms.openlocfilehash: eeb6fe244057f10e33936c475f753cfba95deed8
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 381cfeaf8e117cfdc952e361cd0e6cb633b65f47
+ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -271,7 +271,7 @@ Lisez le [résumé de novembre 2016 des fonctionnalités d’application mobile
 #### <a name="android-devices"></a>Appareils Android
 **Aperçu : Intune Mobile Application Management** : la prise en charge de Microsoft Intune Mobile Application Manager (MAM) pour Power BI est désormais disponible en version préliminaire pour les utilisateurs de Power BI Pro sur les appareils Android. 
 
-**Favoris** : identifiez vos tableaux de bord favoris sur votre appareil Android et affichez l’ensemble de vos [tableaux de bord Power BI favoris et indicateurs de performance clés et rapports mobiles Reporting Services](mobile-android-tablet-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) dans un même emplacement pratique. 
+**Favoris** : identifiez vos tableaux de bord favoris sur votre appareil Android et affichez l’ensemble de vos [tableaux de bord Power BI favoris et indicateurs de performance clés et rapports mobiles Reporting Services](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) dans un même emplacement pratique. 
 
 #### <a name="ios-devices"></a>Appareils iOS
 **Liens** : les URL dans les vignettes et les visualisations sont maintenant interactives et s’ouvrent dans un navigateur.

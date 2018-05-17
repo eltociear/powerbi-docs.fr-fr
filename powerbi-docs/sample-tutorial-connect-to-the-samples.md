@@ -1,13 +1,13 @@
 ---
-title: "Didacticiel : Utiliser les exemples Power BI"
-description: "Didacticiel : Utilisation des exemples Power BI"
+title: Utilisation des exemples Power BI
+description: Utilisation des exemples Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 03/08/2017
 ms.service: powerbi
@@ -18,13 +18,13 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 8255b14fea75f3a2f83629a6beb8fe3281d012e4
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3a9cf39d3601a3f1c6b35d20726144cb404bdbe2
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="the-power-bi-samples-a-tutorial"></a>Exemples Power BI (didacticiel)
+# <a name="the-power-bi-samples"></a>Exemples Power BI
 
 Nous vous recommandons de commencer par lire l’article [Exemples de jeux de données Power BI](sample-datasets.md). Celui-ci présente ce qu’il vous faut savoir sur nos exemples : comment les obtenir, où les enregistrer, comment les utiliser, ainsi que certains récits que les exemples peuvent illustrer. Puis, lorsque vous avez saisi les notions de base, revenez ici.   
 

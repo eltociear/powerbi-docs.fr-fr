@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 4a96582eb8864cd41b5b307d05be890fc3bbff34
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 611a8cd1f2ff3da16d700f8d2b9f15787dda8475
+ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gérer les capacités dans Power BI Premium et Power BI Embedded
 Découvrez comment vous pouvez gérer les capacités Power BI Premium et Power BI Embedded qui fournissent des ressources dédiées pour votre contenu.
@@ -55,8 +55,8 @@ Lorsque vous achetez des références (SKU) Power BI Premium, votre locataire re
 ## <a name="capacity-admins"></a>Administrateurs de capacité
 > [!NOTE]
 > Les administrateurs de la capacité Power BI Embedded sont définis dans le portail Microsoft Azure.
-> 
-> 
+>
+>
 
 Lorsque vous êtes désigné en tant qu’administrateur d’une capacité, vous contrôlez totalement la capacité et ses fonctions d’administration. À partir du portail d’administration Power BI, vous pouvez ajouter des administrateurs de capacité (Power BI Premium uniquement) ou donner à des utilisateurs des autorisations d’attribution de capacité. Vous pouvez attribuer en bloc des espaces de travail à une capacité, ainsi qu’afficher les métriques d’utilisation d’une capacité.
 
@@ -81,14 +81,14 @@ Si des v-cores sont disponibles, configurez votre nouvelle capacité en procéda
 1. Sélectionnez **Configurer une nouvelle capacité**.
 2. Attribuez un **nom** à votre capacité.
 3. Définissez qui est l’administrateur de cette capacité.
-   
+
     Un administrateur de capacité ne doit pas nécessairement être un administrateur Power BI ou un administrateur général Office 365. Pour plus d’informations, consultez [Administrateurs de capacité Power BI Premium](#capacity-admins).
 4. Sélectionnez la taille de votre capacité. Les options disponibles dépendent du nombre de v-cores disponibles. Vous ne pouvez pas sélectionner une option qui est supérieure à la quantité disponible.
-   
+
     ![Tailles de capacité Premium disponibles](media/service-admin-premium-manage/premium-capacity-size.png)
 5. Sélectionnez **Configurer**.
 
-![Configurer une nouvelle capacité](media/service-admin-premium-manage/set-up-capacity.png)
+    ![Configurer une nouvelle capacité](media/service-admin-premium-manage/set-up-capacity.png)
 
 Les administrateurs de capacité, ainsi que les administrateurs Power BI et les administrateurs généraux Office 365, peuvent voir la capacité répertoriée dans le portail d’administration.
 
@@ -103,15 +103,15 @@ Dans l’écran de gestion de capacité Premium, sous Actions, vous pouvez séle
 
 > [!NOTE]
 > Les paramètres de capacité Power BI Embedded sont gérés dans le portail Microsoft Azure.
-> 
-> 
+>
+>
 
 ### <a name="change-capacity-size-power-bi-premium"></a>Changer la taille de la capacité (Power BI Premium)
 Les administrateurs Power BI et les administrateurs généraux Office 365 modifient la taille de la capacité Power BI Premium en sélectionnant **Changer la taille de la capacité**. Un administrateur de capacité qui n’est pas administrateur Power BI ou administrateur général Office 365 n’a pas accès à cette option.
 
 ![Modifier la taille de la capacité Power BI Premium](media/service-admin-premium-manage/change-capacity-size.png)
 
-L’écran **Changer la taille de la capacité** vous permet de passer à une taille de capacité inférieure ou supérieure si vous disposez de ressources disponibles. Les administrateurs sont libres de créer, redimensionner et supprimer des nœuds, tant qu’ils ont le nombre requis de v-cores. 
+L’écran **Changer la taille de la capacité** vous permet de passer à une taille de capacité inférieure ou supérieure si vous disposez de ressources disponibles. Les administrateurs sont libres de créer, redimensionner et supprimer des nœuds, tant qu’ils ont le nombre requis de v-cores.
 
 Les références (SKU) P ne peuvent pas être réajustées à la référence inférieure EM. Vous pouvez pointer sur les options désactivées qui fournissent une explication.
 
@@ -129,31 +129,41 @@ Vous pouvez désigner des **administrateurs de capacité** supplémentaires pour
 
 > [!NOTE]
 > Les administrateurs de capacité Power BI Embedded sont définis dans le portail Microsoft Azure.
-> 
-> 
+>
+>
 
 ![](media/service-admin-premium-manage/capacity-user-permissions.png)
 
 ![](media/service-admin-premium-manage/capacity-user-permissions2.png)
 
 ## <a name="usage-measurements-power-bi-premium"></a>Mesures d’utilisation (Power BI Premium)
-Pour chaque capacité, vous pouvez utiliser les mesures d’utilisation du processeur, de la mémoire et DirectQuery (requête directe). Chaque indicateur de performance clé peut présenter trois informations : **Bonnes (vert)**, **Faibles (jaune)** et **Critiques (rouge)**. Nous vous suggérons de surveiller ces métriques pour vous assurer que vos utilisateurs constatent de bonnes performances lors de l’utilisation du contenu Premium.
+Pour chaque capacité, vous pouvez voir les mesures d’utilisation suivantes : Processeur, Utilisation de la mémoire, Écroulement de la mémoire et Requêtes directes/s. Nous vous suggérons de regarder attentivement ces métriques pour vous assurer que votre capacité offre de bonnes performances aux utilisateurs :
 
-**L’utilisation de la capacité Power BI Embedded est surveillée dans le portail Azure.**
+![Utilisation durant les sept derniers jours](media/service-admin-premium-manage/premium-dashboard-tiles.png)
 
-![](media/service-admin-premium-manage/usage-metrics-critical.png "Métriques d’utilisation de la capacité - critiques")
+> [!NOTE]
+> L’utilisation de la capacité Power BI Embedded est surveillée dans le portail Azure.
 
 | Métrique | Description |
 | --- | --- |
-| Processeur |Utilisation du processeur par vos cœurs. |
-| Mémoire |Représente la sollicitation de la mémoire par les cœurs de votre serveur principal. Plus précisément, il s’agit d’une métrique indiquant la fréquence à laquelle des modèles sont supprimés de la mémoire en raison de la sollicitation de celle-ci résultant de l’utilisation de plusieurs modèles. |
-| Requêtes directes/s |* Nous limitons le nombre total de requêtes DirectQuery et de connexions actives par seconde.<br/>* Les limites sont 30/s pour P1, 60/s pour P2 et 120/s pour P3.<br/>* En ce qui concerne la limitation ci-dessus, les requêtes DirectQuery et de connexion active sont comptabilisées de façon égale. Par exemple, si vous avez 15 requêtes DirectQueries et 15 requêtes de connexion active par seconde, vous avez atteint votre limite.<br/>* Cela s’applique tant aux connexion locales qu’aux connexions cloud. |
+| Processeur |Nombre de fois où l’utilisation du processeur a dépassé 80 %. |
+| Écroulement de la mémoire |Représente la sollicitation de la mémoire sur les cœurs du serveur principal. Plus précisément, cette métrique indique le nombre de fois où des jeux de données ont été supprimés de la mémoire en raison de la sollicitation de celle-ci résultant de l’utilisation de nombreux jeux de données. |
+| Utilisation de la mémoire |Utilisation moyenne de la mémoire, indiquée en gigaoctets (Go). |
+| Requêtes directes/s | Nombre de fois où le nombre de requêtes directes (DirectQuery) et de connexions actives ont dépassé 80 % de la limite. <br> <br> * Nous limitons le nombre total de requêtes DirectQuery et de connexions actives par seconde.<br><br>* Les limites sont 30/s pour P1, 60/s pour P2 et 120/s pour P3.<br><br> * En ce qui concerne la limitation ci-dessus, les requêtes DirectQuery et les connexions actives sont comptabilisées ensemble. Par exemple, si vous avez 15 requêtes DirectQueries et 15 requêtes de connexion active par seconde, vous avez atteint votre limite.<br/><br>* Cela s’applique tant aux connexion locales qu’aux connexions cloud. |
 
-Lorsque ces métriques sont critiques ou faibles, vos utilisateurs peuvent constater une dégradation des performances des rapports et de l’actualisation, en particulier lors de pics de charge.
+Les métriques reflètent l’utilisation sur la dernière semaine.  Si vous souhaitez avoir une vue plus détaillée des métriques, cliquez sur les vignettes de résumé.  Des graphiques détaillés s’affichent pour chacune des métriques de votre capacité Premium.  Ces graphiques récapitulent les données de la dernière semaine par heure. Ils permettent d’isoler plus facilement les événements liés aux performances spécifiques dans votre capacité Premium.  
 
-Les métriques reflètent l’utilisation au cours de la semaine précédente. Elles sont conçues pour compter les instances où la capacité est surchargée et fournit par conséquent à vos utilisateurs des performances non optimales.
+![Graphique d’utilisation détaillé - Processeur](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
 
-Chaque occurrence d’*utilisation à plus de 80 %* doit être considérée comme un cas potentiel de dégradation des performances. Un trop grand nombre de cas est un bon indicateur de problèmes de performances significatifs pour les utilisateurs.
+![Graphique d’utilisation détaillé - Écroulement de la mémoire](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
+
+
+![Graphique d’utilisation détaillé - Taille de la mémoire](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
+
+
+![Graphique d’utilisation détaillé - Écroulement de la mémoire](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
+
+Vous pouvez également exporter les données sous-jacentes de chacune des métriques dans un fichier csv.  Cette exportation fournit des informations détaillées par intervalle de trois minutes pour chaque jour de la dernière semaine.
 
 ## <a name="assign-a-workspace-to-a-capacity"></a>Affecter un espace de travail à une capacité
 Il existe plusieurs façons d’affecter un espace de travail à une capacité.
@@ -165,7 +175,7 @@ Les administrateurs de capacité, ainsi que les administrateurs Power BI et les 
 
 1. Sélectionnez **Assigner des espaces de travail**. Cette option figure dans plusieurs emplacements et effectue toujours la même tâche.
 2. Sélectionnez **Les espaces de travail de toute l’organisation** ou **Espaces de travail spécifiques par utilisateur**.
-   
+
    | Sélection | Description |
    | --- | --- |
    | **Les espaces de travail de toute l’organisation** |L’affectation des espaces de travail de toute l’organisation à une capacité Premium a pour effet d’affecter la totalité des espaces de travail d’application ainsi que des espaces Mon espace de travail dont dispose votre organisation à cette capacité Premium. Et elle a également pour effet d’autoriser tous les utilisateurs présents et futurs à réaffecter des espaces de travail spécifiques à cette capacité. |
@@ -180,23 +190,23 @@ Vous pouvez également affecter un espace de travail d’application à une capa
 Pour pouvoir déplacer un espace de travail vers une capacité, vous devez disposer d’autorisations d’administration sur cet espace de travail, ainsi que d’autorisations d’affectation de capacité sur cette capacité. Notez que les administrateurs d’un espace de travail peuvent toujours supprimer celui-ci d’une capacité Premium.
 
 1. Modifiez un espace de travail d’application en sélectionnant les **points de suspension (...)** , puis **Modifier l’espace de travail**.
-   
+
     ![Modifier l’espace de travail à partir du menu contextuel (points de suspension...)](media/service-admin-premium-manage/edit-app-workspace.png)
 2. Dans **Modifier l’espace de travail**, développez **Avancé**.
 3. Si vous avez reçu des autorisations d’affectation de capacité sur une capacité, vous pouvez activer **Premium** pour cet espace de travail.
 4. Sélectionnez la capacité à laquelle vous souhaitez assigner cet espace de travail d’application.
-   
+
     ![Liste déroulante de sélection de la capacité](media/service-admin-premium-manage/app-workspace-advanced.png)
 5. Sélectionnez **Enregistrer**.
 
 Une fois enregistrés, l’espace de travail et tout son contenu sont déplacés vers la capacité Premium sans que cela occasionne d’interruption d’expérience pour les utilisateurs finaux.
 
 ## <a name="what-premium-looks-like-for-users"></a>Apparence de la capacité Premium pour les utilisateurs
-Le plus souvent, les utilisateurs n’ont même pas besoin de savoir qu’ils se trouvent dans une capacité Premium. Leurs tableaux de bord et rapports fonctionnent normalement. En guise d’indication visuelle, vous pouvez voir une icône en forme de losange en regard des espaces de travail qui se trouvent dans une capacité Premium. 
+Le plus souvent, les utilisateurs n’ont même pas besoin de savoir qu’ils se trouvent dans une capacité Premium. Leurs tableaux de bord et rapports fonctionnent normalement. En guise d’indication visuelle, vous pouvez voir une icône en forme de losange en regard des espaces de travail qui se trouvent dans une capacité Premium.
 
 ![Losange montrant que l’espace de travail est soutenu par la capacité Premium](media/service-admin-premium-manage/premium-workspace.png)
 
-## <a name="power-bi-report-server-product-key"></a>clé de produit Power BI Report Server)
+## <a name="power-bi-report-server-product-key"></a>Clé de produit Power BI Report Server
 Votre clé de produit Power BI Report Server est accessible sous l’onglet **Paramètres de capacité** du portail d’administration de Power BI. Elle est réservée aux administrateurs généraux ou aux utilisateurs dotés du rôle d’administrateur du service Power BI et si vous avez acheté une référence Power BI Premium.
 
 ![Clé Power BI Report Server dans les paramètres de capacité](media/service-admin-premium-manage/pbirs-product-key.png)
@@ -211,4 +221,3 @@ Pour plus d’informations, consultez [Installer Power BI Report Server](report-
 Partagez des applications publiées avec les utilisateurs de la version gratuite lorsque vous affectez l’espace de travail à une capacité Premium. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](service-create-distribute-apps.md).
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-
