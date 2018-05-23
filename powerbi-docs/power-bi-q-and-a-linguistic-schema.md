@@ -1,31 +1,23 @@
 ---
 title: Modification du schéma linguistique de Questions et réponses et ajout de formulations
 description: Découvrez comment Power BI Desktop permet de modifier le schéma linguistique utilisé par l’outil Questions et réponses dans Power BI.
-services: powerbi
-documentationcenter: ''
 author: willthom
 manager: kfile
-backup: mihart
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: mihart
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/20/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 3be0422e914b4f78826715f03c9ddcd92baa7ead
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: b7fb59e7fca6a3211b542b2a942565d6865e560c
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Modélisation du langage et schéma linguistique 
-L’utilisation d’expressions courantes et d’un langage naturel pour poser des questions sur vos données est très efficace. Et quand vos données y répondent, c’est encore plus efficace. C’est ce que vous permet de faire Questions et réponses dans Power BI. Quand vous posez une question dans Questions et réponses, cet outil essaie de vous donner la meilleure réponse possible. 
+Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et quand vos données y répondent, c’est encore plus efficace. C’est ce que vous permet de faire Questions et réponses dans Power BI. Quand vous posez une question dans Questions et réponses, cet outil essaie de vous donner la meilleure réponse possible. 
 
 Toutefois, pour optimiser les interactions avec Questions et réponses, il existe des moyens d’obtenir des réponses encore plus pertinentes. La modification du schéma linguistique est l’un de ces moyens. 
 
@@ -40,7 +32,7 @@ Ces formulations se présentent dans diverses formes et tailles. Certaines corre
 
 Les schémas linguistiques sont enregistrés au format YAML. Ce format est similaire au très répandu format JSON, mais sa syntaxe est plus flexible et plus facilement lisible. Les schémas linguistiques peuvent être modifiés, exportés et importés dans Power BI Desktop.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 - Si vous n’avez pas encore lu l’article expliquant comment [améliorer votre modèle de données pour Questions et réponses](desktop-qna-in-reports.md), vous voudrez peut-être le faire maintenant. Cet article fournit de nombreux conseils pour vous aider à créer et améliorer votre modèle de données. Il comporte aussi une section importante sur l’ajout des synonymes.  
 
 - Le processus Questions et réponses a deux facettes.  La première est la préparation, c’est-à-dire la « modélisation ».  La seconde est la « consommation », qui consiste à poser des questions et à explorer les données. Dans certaines entreprises, ce sont les modélisateurs de données ou les administrateurs informatiques qui assemblent les jeux de données, créent les modèles de données et publient les jeux de données sur Power BI.  Les autres employés utilisent, ou « consomment », les données en ligne.  Dans d’autres entreprises, les employés peuvent combiner tous ces rôles. 
@@ -162,7 +154,7 @@ product_has_category:
   - Attribute: {Subject: product, Object: product.category}
 ```
  
-## <a name="name-phrasings"></a>Formulations nominales (Name)
+## <a name="name-phrasings"></a>Formulations Nom
 Les formulations nominales sont utiles si votre modèle de données comporte une table qui contient des objets nommés (par exemple, des noms d’athlètes et de clients). Par exemple, la formulation « les noms de produits sont les noms donnés aux produits » est essentielle pour pouvoir utiliser des noms de produits dans les questions. Une formulation nominale permet également d’utiliser « nommé » comme un verbe (par exemple, « Répertorier les clients nommés Christophe Beaulieu »), mais il est très important, quand elle est utilisée conjointement avec d’autres formulations, d’autoriser l’emploi d’une valeur nominale pour référencer une ligne spécifique de la table. Par exemple, dans la formulation « Clients qui ont acheté du chai », l’outil Questions et réponses comprend que la valeur « chai » fait référence à la ligne entière dans la table des produits, et pas seulement à une valeur particulière dans la colonne de nom de produit. Les formulations nominales sont utilisées dans le genre de questions suivantes :    
 - Quels employés sont nommés Gilbert Bonsaint ?
 - Qui est la personne nommée Thomas Margand ?
@@ -184,7 +176,7 @@ employee_has_name:
 ```
 
  
-## <a name="adjective-phrasings"></a>Formulations adjectivales (Adjective)
+## <a name="adjective-phrasings"></a>Formulations Adjectif
 Les formulations adjectivales définissent de nouveaux adjectifs utilisés pour décrire des éléments dans votre modèle. Par exemple, la formulation « les clients satisfaits sont les clients avec une évaluation > 6 » est nécessaire pour pouvoir poser des questions comme « répertorier les clients satisfaits à Bordeaux ». Il existe plusieurs formes de formulations adjectivales, destinées à différentes situations.
 
 Les *formulations adjectivales simples* définissent un nouvel adjectif basé sur une condition, par exemple, « les produits qui ne sont plus disponibles sont les produits avec l’état = D ». Les formulations adjectivales simples sont utilisées dans le genre de questions suivantes :
@@ -300,7 +292,7 @@ Binding: {Table: Customers}
 ```
 
  
-## <a name="verb-phrasings"></a>Formulations verbales (Verb)
+## <a name="verb-phrasings"></a>Formulations Verbe
 Les formulations verbales servent à décrire de quelle manière les éléments dans votre modèle sont liés entre eux par des verbes. Par exemple, la formulation « les clients achètent des produits » améliore la compréhension de questions telles que « qui a acheté du fromage ? » et « qu’a acheté Christophe ? » Les formulations verbales sont les plus flexibles de tous les types de formulations. Elles relient souvent plus de deux éléments entre eux, comme dans « les employés vendent des produits clients ». Les formulations verbales sont utilisées dans le genre de questions suivantes :
 
 - Qui a vendu quoi à qui ?

@@ -1,28 +1,20 @@
 ---
 title: Utiliser une extraction dans Power BI Desktop
 description: Découvrez comment explorer les données d’une nouvelle page de rapport dans Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d0c78643d285099f7b7856704ac7ee350ff9f93a
-ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
+ms.openlocfilehash: 8c9a0d075c6d55baa1f518874fa668a3f0db8cb3
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Utiliser une extraction dans Power BI Desktop
 Une **extraction** dans **Power BI Desktop** vous permet de créer dans votre rapport une page qui se concentre sur une entité spécifique, par exemple, un fournisseur, un client ou un fabricant. Dans cette page de rapport ciblée, les utilisateurs peuvent cliquer avec le bouton de droite sur un point de données renvoyant à une autre page de rapport et opérer une extraction vers la page ciblée pour obtenir les détails filtrés en fonction de ce contexte.
@@ -50,7 +42,7 @@ Une **extraction** dans **Power BI Desktop** vous permet de créer dans votre ra
 
     ![utiliser l’image pour revenir en arrière](media/desktop-drillthrough/drillthrough_05.png)
 
-    Une fois votre page **Extraction** terminée et une fois que les utilisateurs cliquent avec le bouton droit sur un point de données de votre rapport qui utilise le champ que vous avez placé dans le puits **Filtres d’extraction**, un menu contextuel s’affiche prenant en charge l’extraction vers cette page.
+    Une fois votre page **Extraction** terminée et une fois que les utilisateurs cliquent avec le bouton de droite sur un point de données de votre rapport qui utilise le champ que vous avez placé dans le puits **Filtres d’extraction**, un menu contextuel s’affiche prenant en charge l’extraction vers cette page.
 
     ![menu d’extraction](media/desktop-drillthrough/drillthrough_04.png)
 
@@ -71,6 +63,14 @@ Lorsque vous extrayez un visuel, vous pouvez voir les filtres qui ont été appl
 ![filtres temporaires en italique](media/desktop-drillthrough/drillthrough_07.png)
 
 Notez que vous pouvez effectuer cette opération avec les pages d’info-bulles, mais vous vivrez une drôle d’expérience (l’info-bulle vous semblerait ne pas fonctionner correctement), donc celle-ci n’est pas recommandée.
+
+## <a name="add-a-measure-to-drillthrough"></a>Ajouter une mesure à l’extraction
+
+En plus du passage de tous les filtres dans la fenêtre d’extraction, vous pouvez ajouter une mesure (ou une colonne numérique totalisée) dans la zone d’extraction. Faites simplement glisser le champ d’extraction dans la carte Extraction pour l’appliquer. 
+
+![ajouter une mesure à l’extraction](media/desktop-drillthrough/drillthrough_08.png)
+
+Lorsque vous ajoutez une mesure (ou une colonne numérique totalisée), vous pouvez accéder à la page si le champ est utilisé dans la zone *Valeur* d’un visuel.
 
 C’est tout ce que vous avez à faire pour utiliser une **extraction** dans vos rapports. Il s’agit d’un excellent moyen d’obtenir une vue développée des informations d’une entité que vous sélectionnez pour votre filtre d’extraction.
 

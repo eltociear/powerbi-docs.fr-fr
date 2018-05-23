@@ -1,28 +1,20 @@
 ---
 title: Passerelle de données locale (mode personnel)
 description: Passerelle de données pour Power BI que les utilisateurs peuvent utiliser pour se connecter aux données locales
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 97b1119577d90e6570625af7de95d3417d3c48ba
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 093339e820c45fcbd586bd1eb6d8933b6e5743f8
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Passerelle de données locale (mode personnel)
 Vous pouvez utiliser des sources de données locales et créer des rapports et des tableaux de bord Power BI à l’aide d’une passerelle. Une **passerelle** est un logiciel qui facilite l’accès aux données stockées sur un réseau local privé, puis vous permet d’utiliser ces données dans les services en ligne comme le **service Power BI**. La **passerelle de données locale (mode personnel)** est une mise à jour récemment publiée de la passerelle Power BI qui permet aux utilisateurs d’installer une passerelle sur leur propre ordinateur et d’accéder aux données locales.
@@ -84,7 +76,7 @@ Pour déterminer la version de la passerelle personnelle actuellement installée
 Vous pouvez ouvrir **Ajout/Suppression de programmes** et voir si **Passerelle Power BI - Personal** s’affiche dans la liste. Si c’est le cas, vous disposez de la version précédente de la passerelle personnelle.
 
 ## <a name="using-fast-combine-with-the-personal-gateway"></a>Utilisation de Fast Combine avec la passerelle personnelle
-Si vous utilisiez **Fast Combine** avec la passerelle précédente, vous devez procéder comme suit pour réactiver **Fast Combine** pour que ce composant fonctionne avec la **passerelle de données locale (mode personnel)** :
+Si vous utilisiez **Fast Combine** avec la passerelle précédente, vous devez procéder comme suit pour réactiver **Fast Combine** pour que ce composant fonctionne avec la **passerelle de données locale (mode personnel)**  :
 
 1. À l’aide de l’Explorateur de fichiers, ouvrez le fichier suivant :
    
@@ -107,7 +99,7 @@ Il existe quelques points à prendre en compte lorsque vous utilisez la **passer
   * *Le compte d’utilisateur que vous avez sélectionné ne correspond pas à la configuration requise de l’application. Veuillez utiliser un autre compte.*
   * Pour corriger cette erreur, sélectionnez *Utiliser un autre compte* et connectez-vous à nouveau. 
 
-Les sources de données suivantes ne sont actuellement pas prises en charge par la **passerelle de données locale (mode personnel)** :
+Les sources de données suivantes ne sont actuellement pas prises en charge par la **passerelle de données locale (mode personnel)**  :
 
 * ADO.NET 
 * CurrentWorkbook
@@ -125,7 +117,7 @@ La prise en charge de Spark est prévue pour la seconde moitié de l’année 2
 * Est-il possible d’utiliser la **passerelle de données locale (mode personnel)** en tant que service ?
   
   * **Réponse** : Non. La **passerelle de données locale (mode personnel)** peut uniquement être exécutée en tant qu’application. Si vous devez utiliser la passerelle en tant que service et/ou en mode administrateur, utilisez la [**passerelle de données locale** ](service-gateway-onprem.md) (version Enterprise de la passerelle).
-* Quelle est la fréquence de mise à jour de la **passerelle de données locale (mode personnel)** ?
+* Quelle est la fréquence de mise à jour de la **passerelle de données locale (mode personnel)**  ?
   
   * **Réponse** : Nous prévoyons de mettre à jour la passerelle tous les mois.
 * Pourquoi suis-je invité à mettre à jour mes informations d’identification ?

@@ -1,28 +1,20 @@
 ---
 title: Créer des analyses et des visualisations avancées à l’aide de scripts R dans Power BI
 description: Utiliser des scripts R dans Power BI pour créer des analyses et visualisations avancées
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0eb100a37a6267530d00b8293be63510c02bb4d9
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: fd4198bb6b826f8d4af22e83e313c4c0b8101024
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Création d’éléments visuels R dans le service Power BI
 Le service Power BI prend en charge l’affichage et l’utilisation des éléments visuels créés avec des scripts R. Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R*, peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R.

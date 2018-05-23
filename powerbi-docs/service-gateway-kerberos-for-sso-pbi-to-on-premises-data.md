@@ -1,28 +1,20 @@
 ---
 title: Utiliser Kerberos sur la passerelle locale pour l’authentification unique (SSO) de Power BI à des sources de données locales
 description: Configurer votre passerelle avec Kerberos pour permettre l’authentification unique de Power BI à des sources de données locales
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 03/09/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: f2d5cea1881d6a450b9188e9754ac503cb45f301
-ms.sourcegitcommit: 50016425005d2e929c8c606c2d0d393342e05d39
+ms.openlocfilehash: fc7885755da62c7b777bb0af7627626b1ce60aa0
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 Vous pouvez obtenir une connectivité avec authentification unique transparente, permettant la mise à jour de rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec Kerberos. La passerelle de données locale facilite l’authentification unique (SSO) à l’aide de la requête DirectQuery utilisée pour se connecter à des sources de données locales.

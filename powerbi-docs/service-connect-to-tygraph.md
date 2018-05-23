@@ -1,28 +1,20 @@
 ---
 title: Se connecter à tyGraph avec Power BI
 description: tyGraph pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3ff0a65d32a95a6926e2c808af119e31effd7e05
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 11073e7df57d4717e27fa73c6a5e1e315a9a8dcc
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Se connecter à tyGraph avec Power BI
 Visualisez et explorez vos données tyGraph dans Power BI avec le pack de contenu Power BI. Commencez par vous connecter à votre compte tyGraph et à charger le tableau de bord, les rapports et le jeu de données. Le contenu prêt à l’emploi inclut des données, telles que le score MAE (Measure of Active Engagement) et les principaux contributeurs. Personnalisez-le davantage pour mettre en évidence les informations qui vous intéressent le plus.  Les données sont actualisées automatiquement selon une planification que vous définissez.
@@ -45,7 +37,7 @@ Connectez-vous à [tyGraph pour Power BI](https://app.powerbi.com/getdata/servic
 5. Indiquez votre clé tyGraph pour vous connecter. Voir les détails sur la recherche de cette valeur ci-dessous.
    
     **Si vous avez le statut d’administrateur vérifié Yammer**  
-    Votre clé API vous est envoyée dans un e-mail dès que votre compte tyGraph est créé. Si vous ne trouvez plus votre clé, vous pouvez en demander une nouvelle en envoyant un message électronique à l’adresse support@unlimitedviz.com. Si vous ne disposez pas encore d’un compte tyGraph, vous pouvez démarrer une version d’évaluation à l’adresse [http://www.tygraph.com/](http://www.tygraph.com/). 
+    Votre clé API vous est envoyée dans un e-mail dès que votre compte tyGraph est créé. Si vous ne trouvez plus votre clé, vous pouvez en demander une nouvelle en envoyant un message électronique à l’adresse support@unlimitedviz.com. Si vous ne disposez pas encore d’un compte tyGraph, vous pouvez commencer une version d’essai sur [http://www.tygraph.com/](http://www.tygraph.com/). 
    
     **Si vous n’avez pas le statut d’administrateur vérifié Yammer**
    

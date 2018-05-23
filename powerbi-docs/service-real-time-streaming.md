@@ -1,28 +1,20 @@
 ---
 title: Streaming en temps réel dans Power BI
 description: Obtenir un streaming de données et des éléments visuels en temps réel dans Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ce42eceb478023b0ebbfd26e1762c63084ac84a6
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 15d8d4ff64b69143b30bd8e72264af3dcc42d53d
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout élément visuel ou tableau de bord qui peut être créé dans Power BI peut également l’être pour afficher et mettre à jour des données et des éléments visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des mesures d’utilisation de service, ou tout autre dispositif permettant de collecter ou transmettre des données.

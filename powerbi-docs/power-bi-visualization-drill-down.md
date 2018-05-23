@@ -1,29 +1,21 @@
 ---
-title: "Explorer une visualisation dans Power BI"
+title: Explorer une visualisation dans Power BI
 description: Ce document montre comment explorer une visualisation dans le service Microsoft Power BI et Power BI Desktop.
-services: powerbi
-documentationcenter: 
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+ms.reviewer: ''
 featuredvideoid: MNAaHw4PxzE
-qualityfocus: no
-qualitydate: 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 02/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fb834c92953c2cafcbca77bc1b3828b385755bca
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: d622e6b461668d1972a78f6844bd269fb6596061
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="drill-down-in-a-visualization-in-power-bi"></a>Explorer une visualisation dans Power BI
 ## <a name="drill-down-requires-a-hierarchy"></a>La fonction de descente dans la hiérarchie nécessite une hiérarchie
@@ -35,7 +27,7 @@ Vous ne savez pas quelles visualisations Power BI contiennent une hiérarchie ? 
 ![](media/power-bi-visualization-drill-down/power-bi-drill-icon4.png)  ![](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png)  ![](media/power-bi-visualization-drill-down/power-bi-drill-icon3.png)
 ![](media/power-bi-visualization-drill-down/power-bi-drill-icon5.png) ![](media/power-bi-visualization-drill-down/power-bi-drill-icon6.png)  
 
-Les dates sont un type unique de hiérarchie. Quand vous ajoutez un champ de date à une visualisation, Power BI ajoute automatiquement une hiérarchie de temps qui inclut l’année, le trimestre, le mois et le jour. Pour plus d’informations, consultez [Hiérarchies visuelles et comportement d’exploration](guided-learning/visualizations.yml#step-18) ou regardez la vidéo ci-dessous.
+Les dates sont un type unique de hiérarchie. Quand vous ajoutez un champ de date à une visualisation, Power BI ajoute automatiquement une hiérarchie de temps qui inclut l’année, le trimestre, le mois et le jour. Pour plus d’informations, consultez [Hiérarchies visuelles et comportement d’exploration](guided-learning/visualizations.yml?tutorial-step=18) ou regardez la vidéo ci-dessous.
 
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
@@ -126,10 +118,10 @@ En plus de la visualisation, nous pouvons voir la hiérarchie reflétée dans le
 Notez que les données sont les mêmes pour les rapports annuels et trimestriels, mais une fois que vous descendez dans la hiérarchie jusqu’au niveau de détail spécifié pour **Valeurs**, vous pouvez observer que le rapport pour un seul mois devient plus spécifique et que le rapport pour tous les mois a plus de données.
 
 
-|Mode Développer|Year|Quarter|Month|Day|
+|Mode Développer|Year|Quarter|Month|Jour|
 | ---|:---:|:---:|:---:|---|
 |À sens unique|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-month.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-day.png)|
-|Toutes|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-month.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-day.png)|
+|Tout|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-month.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-day.png)|
 
 
 ### <a name="hierarchical-category-data"></a>Données de catégorie hiérarchiques
@@ -147,10 +139,10 @@ Vous devez accéder au niveau le plus bas de la hiérarchie, qui affiche les ré
 En plus de la visualisation, nous pouvons voir la hiérarchie reflétée dans les données affichées pour chaque rapport. Le tableau suivant montre les résultats de l’action **Afficher les données** dans un rapport qui descend dans la hiérarchie pour un seul secteur de vente ou pour tous les secteurs de vente. Quand vous descendez dans la hiérarchie, vous pouvez observer que le rapport pour un seul secteur de vente devient plus spécifique et que le rapport pour tous les secteurs de vente a plus de données.
 
 
-| Mode Développer|Territoire|Ville|Code postal|Nom|
+| Mode Développer|Territory|City|Code postal|Nom|
 | ---|:---:|:---:|:---:|---|
 |À sens unique|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal-name.png)|
-|Toutes|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal-name.png)|
+|Tout|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal-name.png)|
 
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations

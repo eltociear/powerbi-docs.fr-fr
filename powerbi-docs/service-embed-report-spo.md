@@ -1,29 +1,21 @@
 ---
 title: Incorporer avec le composant WebPart Rapport dans SharePoint Online
 description: Avec le nouveau composant WebPart Rapport pour SharePoint Online, vous pouvez incorporer facilement des rapports Power BI interactifs dans les pages SharePoint Online.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 11/19/2017
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 11b1d2c1c5205fd1346e9350b0a814b7d76d4135
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 757f59b59ea13478a943650f23ef98d9cc5b3e08
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -143,6 +135,8 @@ Vous devez contacter le propriétaire de la page SharePoint Online pour qu’il 
   1. Déconnectez-vous de SharePoint, puis reconnectez-vous. Veillez à fermer toutes les fenêtres du navigateur avant de vous reconnecter.
 
   2. Si votre compte utilisateur requiert l’authentification multifacteur (MFA), veillez à vous connecter à SharePoint à l’aide de votre appareil d’authentification multifacteur (application de téléphone, carte à puce, etc.).
+  
+  3. Les comptes d’utilisateur invités Azure B2B ne sont pas pris en charge. Les utilisateurs verront le logo Power BI qui montre le composant WebPart en cours de chargement, mais le rapport ne s’affichera pas.
 
 * Power BI ne prend pas en charge les mêmes langues localisées que SharePoint Online. Par conséquent, vous risquez de ne pas voir la localisation appropriée dans le rapport incorporé.
 

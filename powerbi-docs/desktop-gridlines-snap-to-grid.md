@@ -1,28 +1,20 @@
 ---
 title: Utiliser le quadrillage et l’alignement sur la grille dans les rapports Power BI Desktop
 description: Utiliser le quadrillage, l’alignement sur la grille, l’ordre de plan, l’alignement et la distribution dans les rapports Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 4/19/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 479668d2f5c21bc6d730097556ce6de46409c7ed
-ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
+ms.openlocfilehash: 7477fc19dda5aeb7729fbbde319faa0d930db179
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Utiliser le quadrillage et l’alignement sur la grille dans les rapports Power BI Desktop
 Le canevas de rapport **Power BI Desktop** montre un quadrillage qui vous permet d’aligner proprement les visuels sur une page de rapport, ainsi qu’une fonctionnalité d’alignement sur la grille qui permet de respecter les mêmes espaces entre les visuels dans un rapport.

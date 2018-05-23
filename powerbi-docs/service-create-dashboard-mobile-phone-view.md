@@ -1,28 +1,20 @@
 ---
 title: Créer une vue de tableau de bord Power BI pour les téléphones mobiles
 description: Apprenez à créer une vue personnalisée d’un tableau de bord dans le service Power BI, en particulier pour l’affichage sur les téléphones portables.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: babc9f97ed8c45c2cb9ac994d881941d03629676
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4d237a308e059ce712872860031f122de9d6795c
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-a-view-of-a-power-bi-dashboard-optimized-for-mobile-phones"></a>Créer une vue de tableau de bord Power BI optimisée pour les téléphones mobiles
 Quand vous affichez les tableaux de bord dans l’application mobile Power BI sur un téléphone, les vignettes associées sont disposées l’une après l’autre et ont toutes la même taille. Dans le service Power BI, vous pouvez créer une vue personnalisée d’un tableau de bord que vous possédez, en particulier pour l’affichage sur les téléphones.

@@ -1,30 +1,23 @@
 ---
-title: 'Tutoriel : Se connecter à l’application GitHub à l’aide de Power BI'
+title: 'Tutoriel : Se connecter à un exemple GitHub à l’aide de Power BI'
 description: Dans ce tutoriel, vous vous connectez à de vraies données disponibles dans le service GitHub à l’aide de Power BI, qui crée automatiquement des rapports et des tableaux de bord.
 author: maggiesMSFT
 manager: kfile
-backup: SarinaJoan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.custom: connect-to-services
-ms.devlang: NA
 ms.topic: tutorial
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 05/05/2018
+ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5f393d8255128b27dce8422444b427835aeef0cb
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 1c2579f4250914933fd0459668fb55e4ba339f90
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/19/2018
 ---
-# <a name="tutorial-connect-to-the-github-app-with-power-bi"></a>Tutoriel : Se connecter à l’application GitHub à l’aide de Power BI
+# <a name="tutorial-connect-to-a-github-sample-with-power-bi"></a>Tutoriel : Se connecter à un exemple GitHub à l’aide de Power BI
 Dans ce tutoriel, vous vous connectez à de vraies données disponibles dans le service GitHub à l’aide de Power BI, qui crée automatiquement des rapports et des tableaux de bord. Vous vous connectez au dépôt public de contenu Power BI (également appelé *référentiel*) et, à partir des informations affichées, vous obtenez des réponses à ces questions : Combien de personnes contribuent au contenu public Power BI ? Qui y contribue le plus ? Quel jour de la semaine enregistre le plus de contributions ? Et des réponses à d’autres questions. 
 
 ![Rapport GitHub dans Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
@@ -42,7 +35,7 @@ Ce tutoriel vous montre comment effectuer les étapes suivantes :
 
 Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 Pour suivre ce tutoriel, vous avez besoin d’un compte GitHub (demandez-en un si vous n’en avez pas). 
 

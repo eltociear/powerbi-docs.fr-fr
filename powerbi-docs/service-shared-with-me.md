@@ -1,29 +1,21 @@
 ---
 title: Afficher le contenu Power BI qui a été partagé avec moi
 description: documentation sur Partagé avec moi dans Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6c29f0915009fced89c80e05f40b91c467e505ce
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: b95ca140322c207c6c352597e42d50d18a48e52e
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="display-the-power-bi-dashboards-that-have-been-shared-with-me"></a>Afficher les tableaux de bord Power BI qui ont été Partagé avec moi
 ## <a name="shared-with-me"></a>Partagé avec moi

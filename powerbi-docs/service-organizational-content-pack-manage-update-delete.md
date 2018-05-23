@@ -1,28 +1,20 @@
 ---
 title: 'Packs de contenu d’organisation : gestion et mise à jour'
 description: Consultez les informations relatives à la gestion, à la mise à jour et à la suppression des packs de contenu d’organisation dans Power BI.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4e48ce4269def6764630322ac798a8dd0e491861
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4ede737287c830d70283e3a73b627c59c38d1564
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Gérer, mettre à jour et supprimer des packs de contenu d’organisation
 > [!NOTE]

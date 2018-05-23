@@ -1,28 +1,20 @@
 ---
 title: Classification des données des tableaux de bord
 description: En savoir plus sur la classification des données des tableaux de bord, y compris la manière dont un administrateur doit la configurer et dont les propriétaires de tableaux de bord peuvent la modifier.
-services: powerbi
-documentationcenter: ''
 author: amandacofsky
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: complete
-qualitydate: 03/15/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: amac
 LocalizationGroup: Dashboards
-ms.openlocfilehash: aed13e5bc7a21caa87e4c5b25fd61d55dcfc6129
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f08e4199af06a4a7fd74cb525e918a67a27165a8
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="dashboard-data-classification"></a>Classification des données des tableaux de bord
 Chaque tableau de bord est différent et en fonction de la source de données à laquelle vous vous connectez, vous constaterez probablement que vous et les collègues avec qui vous les partagez devez prendre des précautions différentes en fonction de la sensibilité des données. Certains tableaux de bord ne doivent jamais être partagés avec des personnes extérieures à votre entreprise ou imprimés, tandis que d’autres peuvent l’être librement. À l’aide de la classification des données des tableaux de bord, vous pouvez sensibiliser les personnes qui accèdent à ces derniers sur le niveau de sécurité qui doit être utilisé. Vous pouvez baliser vos tableaux de bord avec des classifications définies par le service informatique de votre entreprise afin que toutes les personnes qui affichent le contenu aient le même niveau de compréhension de la sensibilité des données.

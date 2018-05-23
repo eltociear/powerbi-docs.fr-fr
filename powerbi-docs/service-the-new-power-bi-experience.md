@@ -1,31 +1,27 @@
 ---
 title: Découverte du service Power BI
 description: Vue d’ensemble de l’expérience de navigation Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
+ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: quickstart
 ms.component: powerbi-service
-ms.workload: powerbi
+ms.topic: quickstart
 ms.date: 05/07/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 58b1125a894ff064942e61534db990587bdf9f2a
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 157103ff224cf0d71e2ca14106903b9c89fdc3d4
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Démarrage rapide - Découverte du service Power BI
 
 Maintenant que vous connaissez les concepts de base de Power BI, vous êtes prêt à découvrir le **service Power BI**. Comme mentionné précédemment, une personne de votre équipe peut passer tout son temps à travailler dans **Power BI Desktop**, afin de combiner les données et créer des rapports pour d’autres. De votre côté, vous passez peut-être tout votre temps à travailler dans le service Power BI pour afficher et exploiter du contenu créé par d’autres personnes (expérience de **consommation**) ou pour obtenir des données et créer vos propres rapports et tableaux de bord (expérience de **création**). Dans ce guide de démarrage rapide, vous allez importer des exemples de données, puis vous servir de ces données pour apprendre à utiliser le service Power BI. 
  
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 - Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 

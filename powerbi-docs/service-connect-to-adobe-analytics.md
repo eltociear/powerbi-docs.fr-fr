@@ -1,28 +1,20 @@
 ---
 title: Se connecter à Adobe Analytics avec Power BI
 description: Connectez-vous à Adobe Analytics à partir de Power BI pour une application qui affiche les données de votre compte dans un tableau de bord et des rapports.
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 452f970efda4c49e197ed578f5c5b05917aa43e7
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e8e9b21e62f0a91234fccf78977a696e321ed8dc
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Se connecter à Adobe Analytics avec Power BI
 La connexion à Adobe Analytics via Power BI commence par la connexion à votre compte Adobe Analytics Marketing Cloud. Vous obtenez une application avec un tableau de bord Power BI et un ensemble de rapports Power BI qui fournissent des analyses relatives aux dimensions utilisateur et au trafic sur votre site. Les données sont actualisées automatiquement une fois par jour. Vous pouvez interagir avec le tableau de bord et les rapports, mais vous ne pouvez pas enregistrer les modifications.
@@ -98,7 +90,7 @@ Partie de la [documentation](https://marketing.adobe.com/resources/help/en_US/re
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Si vous voyez une erreur après avoir entré vos informations d'identification indiquant que vous ne disposez pas d’autorisations, demandez à votre administrateur si vous avez accès à l’API Adobe Analytics. Vérifiez également que l’ID Adobe fourni est liée à votre organisation Cloud Marketing (associée à une société Adobe Analytics).
 
-Si vous rencontrez une erreur après avoir entré correctement les informations d’identification, il se peut que la création des rapports prenne trop de temps. Une erreur courante se présente sous la forme *« Impossible d’obtenir les données du rapport Adobe Analytics. Le contenu incluait &quot;référent, page&quot;, la durée approximative était de xx secondes »*. Consultez la section «Ce qui est inclus » et comparez ces éléments à la taille de votre instance Adobe. Malheureusement, il n’existe actuellement aucun moyen de contourner ce problème de délai d’expiration. Toutefois, nous envisageons d’apporter des mises à jour afin de mieux prendre en charge les instances plus volumineuses. Merci d’envoyer vos commentaires à l’équipe Power BI via la page https://ideas.powerbi.com.
+Si vous rencontrez une erreur après avoir entré correctement les informations d’identification, il se peut que la création des rapports prenne trop de temps. Une erreur courante se présente sous la forme *« Impossible d’obtenir les données du rapport Adobe Analytics. Le contenu incluait &quot;référent, page&quot;, la durée approximative était de xx secondes »*. Consultez la section «Ce qui est inclus » et comparez ces éléments à la taille de votre instance Adobe. Malheureusement, il n’existe actuellement aucun moyen de contourner ce problème de délai d’expiration. Toutefois, nous envisageons d’apporter des mises à jour afin de mieux prendre en charge les plus grandes instances. Envoyez vos commentaires à l’équipe Power BI sur https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Que sont les applications dans Power BI ?](service-install-use-apps.md)

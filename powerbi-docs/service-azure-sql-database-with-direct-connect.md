@@ -1,28 +1,20 @@
 ---
 title: Azure SQL Database avec DirectQuery
 description: Azure SQL Database avec DirectQuery
-services: powerbi
-documentationcenter: 
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: a32326c089c50ef4913f6d646d68d66e31efdbfc
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 27b2eb90a07d3112b771fd3ee23cc86353a46991
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database avec DirectQuery
 Découvrez comment vous pouvez vous connecter directement à Azure SQL Database et créer des rapports qui utilisent des données actives. Vous pouvez conserver vos données à la source et pas dans Power BI.
@@ -35,13 +27,13 @@ Avec DirectQuery, les requêtes sont renvoyées à Azure SQL Database pendant qu
 * Vérifiez que les règles de pare-feu de la base de données sont définies sur [Autoriser l’accès aux services Azure](https://msdn.microsoft.com/library/azure/ee621782.aspx).
 * Chaque action, telle que la sélection d’une colonne ou l’ajout d’un filtre, renverra une requête à la base de données
 * Les vignettes sont actualisées chaque heure (il n’est pas nécessaire de planifier l’actualisation). Vous pouvez régler cet intervalle dans les paramètres avancés lorsque vous vous connectez.
-* Il n’y a pas de Q&R disponibles pour les jeux de données DirectQuery.
-* Les modifications apportées aux schémas ne sont pas appliquées automatiquement.
+* Q&R n’est pas disponible pour les jeux de données DirectQuery.
+* Les modifications apportées aux schémas ne sont pas appliquées automatiquement
 
 Ces points sont susceptibles de changer, car nous travaillons actuellement à améliorer le produit. Les étapes de connexion sont détaillées ci-dessous. 
 
 ## <a name="power-bi-desktop-and-directquery"></a>Power BI Desktop et DirectQuery
-Pour vous connecter à Azure SQL Database à l’aide de DirectQuery, vous devez utiliser Power BI Desktop. Cette approche offre des fonctionnalités et une flexibilité supplémentaires. Les rapports créés à l’aide de Power BI Desktop peuvent ensuite être publiés sur le service Power BI. Vous pouvez en savoir plus sur la connexion à [Azure SQL Database à l’aide de DirectQuery](desktop-use-directquery.md) dans Power BI Desktop. 
+Pour vous connecter à Azure SQL Database à l’aide de DirectQuery, vous devez utiliser Power BI Desktop. Cette approche offre des fonctionnalités supplémentaires et une flexibilité plus grande. Les rapports créés à l’aide de Power BI Desktop peuvent ensuite être publiés sur le service Power BI. Vous pouvez en savoir plus sur la connexion à [Azure SQL Database à l’aide de DirectQuery](desktop-use-directquery.md) dans Power BI Desktop. 
 
 ## <a name="single-sign-on"></a>Authentification unique
 

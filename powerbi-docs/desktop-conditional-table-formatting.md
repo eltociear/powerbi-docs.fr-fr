@@ -1,28 +1,20 @@
 ---
 title: Mise en forme conditionnelle des tables dans Power BI Desktop
 description: Appliquer une mise en forme personnalisée aux tables
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1626c2af5906004b6b4f79f4830f003b96e241fc
-ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
+ms.openlocfilehash: 9599b40940c9d9cca254bb2ed2e87c161cce371f
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="conditional-formatting-in-tables"></a>Mise en forme conditionnelle dans les tables
 Avec la mise en forme conditionnelle dans les tables, vous pouvez spécifier des couleurs d’arrière-plan de cellule personnalisées en fonction des valeurs de cellule, ou d’autres valeurs ou champs, et également utiliser des couleurs de dégradé. Pour accéder à la mise en forme conditionnelle, dans la zone **Champs** du volet **Visualisations** de Power BI Desktop, sélectionnez la flèche vers le bas à côté de la valeur dans la zone **Valeurs** que vous voulez mettre en forme (ou cliquez avec le bouton droit sur le champ). Vous pouvez uniquement gérer la mise en forme conditionnelle des champs dans la zone **Valeurs** de la zone **Champs**.

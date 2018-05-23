@@ -1,29 +1,21 @@
 ---
 title: 'Guide pratique pour épingler une page de rapport tout entière sur un tableau de bord Power BI '
 description: Documentation sur la manière d’épingler une page de rapport dynamique entière sur un tableau de bord Power BI à partir d’un rapport.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3638c99b0dfafa8a90a6c911051e203f3e6037c4
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 7703709361a6233b6d04d6fb2131ba41f109ca36
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Épingler une page entière de rapport, sous forme de vignette dynamique, sur un tableau de bord Power BI
 Pour ajouter une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md), vous pouvez aussi épingler une page entière de rapport. Il s’agit d’un moyen simple d’épingler plusieurs visualisations à la fois.  De plus, quand vous épinglez une page entière, les vignettes sont *dynamiques*: vous pouvez interagir avec elles directement sur le tableau de bord. Les modifications apportées ultérieurement à des visualisations dans l’éditeur de rapports, comme ajouter un filtre ou changer les champs utilisés dans le graphique, sont également répercutées dans la vignette du tableau de bord.  

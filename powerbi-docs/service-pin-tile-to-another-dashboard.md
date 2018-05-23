@@ -1,28 +1,20 @@
 ---
 title: Épingler une vignette d’un tableau de bord vers un autre
 description: Épingler une vignette d’un tableau de bord vers un autre
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4784a5d07cab1f637afa6cf6622ea00fd264d501
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: ed882a339e1ee7d53302dc33a7cedb1a95709b8b
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Épingler une vignette d’un tableau de bord vers un autre
 L’une des méthodes disponibles pour ajouter une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md) est de la copier à partir d’un autre tableau de bord. Chacune de ces vignettes fait office de lien qui, quand vous cliquez dessus, vous renvoie là où elle a été créée (soit dans Q&R, soit dans un rapport). 

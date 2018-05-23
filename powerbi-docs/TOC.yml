@@ -140,8 +140,6 @@
                   href: service-connect-to-azure-consumption-insights.md
                 - name: Recherche Azure
                   href: service-connect-to-azure-search.md
-                - name: Azure Security Center
-                  href: service-connect-to-azure-security-center.md
                 - name: Circuit ID
                   href: service-connect-to-circuit-id.md
                 - name: ClickDimensions
@@ -416,8 +414,6 @@
                   href: refresh-csv-file-onedrive.md
                 - name: Scénarios de résolution de problèmes liés à l’actualisation
                   href: refresh-troubleshooting-refresh-scenarios.md
-                - name: Désactivation des paramètres de confidentialité
-                  href: refresh-enable-fast-combine.md
             - name: Résolution des problèmes
               items:
                 - name: "Vous avez oublié votre mot de passe Power BI\_?"
@@ -470,6 +466,18 @@
       items:
         - name: Mettre en forme et combiner plusieurs sources de données
           href: desktop-shape-and-combine-data.md
+        - name: "Importer et analyser des données d’une page web avec Power\_BI\_Desktop"
+          href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
+        - name: ' Analyser des données de ventes provenant d’Excel et d’un flux OData'
+          href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
+        - name: "Créer ses propres mesures dans Power\_BI\_Desktop"
+          href: desktop-tutorial-create-measures.md
+        - name: "Créer des colonnes calculées dans Power\_BI\_Desktop"
+          href: desktop-tutorial-create-calculated-columns.md
+        - name: "Analyses Facebook avec Power\_BI\_Desktop"
+          href: desktop-tutorial-facebook-analytics.md
+        - name: Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services
+          href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: Exemples
       items:
         - name: "Télécharger le classeur d’exemples financiers pour Power\_BI"
@@ -526,18 +534,6 @@
           href: desktop-connect-to-data.md
         - name: "Publier à partir de Power\_BI\_Desktop"
           href: desktop-upload-desktop-files.md
-        - name: "Importer et analyser des données d’une page web avec Power\_BI\_Desktop"
-          href: desktop-tutorial-importing-and-analyzing-data-from-a-web-page.md
-        - name: ' Analyser des données de ventes provenant d’Excel et d’un flux OData'
-          href: desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed.md
-        - name: "Créer ses propres mesures dans Power\_BI\_Desktop"
-          href: desktop-tutorial-create-measures.md
-        - name: "Créer des colonnes calculées dans Power\_BI\_Desktop"
-          href: desktop-tutorial-create-calculated-columns.md
-        - name: "Analyses Facebook avec Power\_BI\_Desktop"
-          href: desktop-tutorial-facebook-analytics.md
-        - name: Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services
-          href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
         - name: "Visualisations personnalisées dans Power\_BI"
           href: power-bi-custom-visuals.md
         - name: Éléments visuels personnalisés pour les organisations dans Power BI
@@ -898,8 +894,6 @@
           href: developer/qanda.md
     - name: Guides pratiques
       items:
-        - name: Création d’un élément visuel personnalisé avec les outils de développement
-          href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: Comment incorporer votre contenu
           href: developer/embedding-content.md
         - name: Transmettre des données à un tableau de bord
@@ -914,6 +908,18 @@
           href: developer/integrate-report.md
         - name: Intégrer du contenu dans une application (l’application possède les données)
           href: developer/embed-sample-for-customers.md
+        - name: Intégrer du contenu dans une application pour des clouds souverains (l’application est propriétaire des données)
+          href: developer/embed-sample-for-customers-sovereign-clouds.md
+        - name: Créer un visuel personnalisé
+          items:
+            - name: Création d’un élément visuel personnalisé avec les outils de développement
+              href: service-custom-visuals-getting-started-with-developer-tools.md
+            - name: Examen des éléments visuels personnalisés pour la sécurité et la confidentialité
+              href: service-custom-visuals-review-for-security-and-privacy.md
+            - name: Obtenir un visuel personnalisé certifié
+              href: power-bi-custom-visuals-certified.md
+            - name: Publier des visuels personnalisés dans AppSource
+              href: developer/office-store.md
         - name: Incorporation
           items:
             - name: "Incorporation avec Power\_BI"
@@ -932,12 +938,6 @@
               href: developer/migrate-code-snippets.md
             - name: Résolution des problèmes de votre application incorporée
               href: developer/embedded-troubleshoot.md
-        - name: Créer un visuel personnalisé
-          items:
-            - name: Examen des éléments visuels personnalisés pour la sécurité et la confidentialité
-              href: service-custom-visuals-review-for-security-and-privacy.md
-            - name: Obtenir un élément personnel certifié
-              href: power-bi-custom-visuals-certified.md
         - name: Transmettre des données à un tableau de bord
           items:
             - name: Inscrire une application auprès d’Azure AD
@@ -976,7 +976,7 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
     - name: Ressources
       items:
-        - name: Démonstration de code incorporé JavaScript
+        - name: Exemple de JavaScript Playground
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Exemples
           href: 'https://go.microsoft.com/fwlink/?linkid=851293'
@@ -1126,10 +1126,12 @@
           href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
         - name: Configuration des paramètres de proxy
           href: service-gateway-proxy.md
-        - name: Informations approfondies sur la passerelle de données locale
-          href: service-gateway-onprem-indepth.md
         - name: Clusters à haute disponibilité pour la passerelle de données locale
           href: service-gateway-high-availability-clusters.md
+        - name: Passerelle de données locale
+          href: service-gateway-onprem.md
+        - name: Informations approfondies sur la passerelle de données locale
+          href: service-gateway-onprem-indepth.md
         - name: Passerelle de données locale (mode personnel)
           href: service-gateway-personal-mode.md
         - name: Résolution des problèmes de passerelle de données locale
@@ -1188,6 +1190,8 @@
           href: service-admin-health.md
         - name: "Fermeture de votre compte Power\_BI"
           href: service-admin-closing-your-account.md
+        - name: Power BI Pro dans votre organisation
+          href: service-admin-power-bi-pro-in-your-organization.md
         - name: "Power\_BI (gratuit) dans votre organisation"
           href: service-admin-service-free-in-your-organization.md
         - name: "Power\_BI et ExpressRoute"

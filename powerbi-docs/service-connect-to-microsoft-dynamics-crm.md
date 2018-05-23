@@ -1,31 +1,23 @@
 ---
 title: Se connecter à Microsoft Dynamics avec Power BI
 description: Microsoft Dynamics CRM pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e7bfb936bdff4ba7ddd5097c3f59003d48c70347
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1dadb70f2d75596bb7180a5e7360cae19e1515b8
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Se connecter à Microsoft Dynamics CRM avec Power BI
-Microsoft Dynamics CRM Online pour Power BI vous permet d’accéder à vos données et de les analyser facilement. Power BI utilise le flux OData pour créer un modèle descriptif, avec toutes les entités et mesures nécessaires, telles que Comptes, Activités, Opportunités, Produits, Prospects, Utilisateurs, et bien plus encore. Une fois l’application installée, vous pouvez afficher le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 
+Microsoft Dynamics CRM Online pour Power BI vous permet d’accéder à vos données et de les analyser facilement. Power BI utilise le flux OData pour créer un modèle descriptif, avec toutes les entités et mesures nécessaires, telles que Comptes, Activités, Opportunités, Produits, Prospects, Utilisateurs, et bien plus encore. Une fois l’application installée, vous pouvez voir le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 
 
 Connectez-vous au [Responsable des ventes](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-sales-manager) ou au [Responsable clientèle](https://msit.powerbi.com/groups/me/getdata/services/dynamics-crm-customer-service) de Dynamics CRM Online. Apprenez-en davantage sur l’[intégration de Dynamics CRM Online](https://powerbi.microsoft.com/integrations/microsoft-dynamicscrm) avec Power BI.
 
@@ -61,10 +53,10 @@ Le tableau de bord et les rapports visent à proposer des rapports opérationnel
 
 <a name="Sales"></a>
 
-### <a name="sales-manager"></a>Responsable des ventes
+### <a name="sales-manager"></a>Sales Manager
 Le tableau de bord et les rapports contiennent des métriques clés telles que les suivantes :  
 
-* Chiffre d’affaires   
+* Won Revenue   
 * Taux d’opportunités   
 * Chiffre d’affaires en cours   
 * Chiffre d’affaires perdu   

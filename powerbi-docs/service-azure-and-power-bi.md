@@ -1,28 +1,20 @@
 ---
 title: Azure et Power BI
 description: Azure et Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 9e4685174c5489b898777383925d601dd44fea39
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: a656866b1c9cdc0d1eb83b67c0edf79c182d1a71
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="azure-and-power-bi"></a>Azure et Power BI
 Avec les services **Azure** et **Power BI**, vos efforts de traitement des données peuvent aboutir à des analyses et des rapports qui fournissent des informations en temps réel sur votre entreprise. Azure et Power BI disposent de fonctionnalités d’intégration et de connectivité intégrées qui permettent de concrétiser vos efforts d’aide à la décision, que le traitement de vos données soit dans le cloud ou local, simple ou complexe, à source unique ou à grande échelle, sur des données stockées ou en temps réel.

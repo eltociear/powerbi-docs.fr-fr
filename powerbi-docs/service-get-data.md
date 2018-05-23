@@ -1,28 +1,20 @@
 ---
 title: Sources de données pour Power BI
 description: Sources de données pour Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: identified
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 70f1b5faa496c28dc39347831d4216db3ad07c59
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 183d0fdcf164ca706dd1704ea1c503f59ca7d715
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Sources de données pour le service Power BI
 Les données sont au cœur de Power BI. Chaque fois que vous explorez des données, créez des graphiques et des tableaux de bord ou posez des questions avec Questions et réponses, toutes les visualisations et les réponses que vous voyez tirent réellement leurs données sous-jacentes d’un jeu de données. Mais d’où provient ce jeu de données ? D’une source de données.
@@ -36,7 +28,7 @@ Vous pouvez obtenir des données à partir d’une de ces sources de données da
 ## <a name="files"></a>Fichiers
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (.xlsx, xlxm) � Excel est unique dans le sens où un classeur peut contenir des données que vous avez entrées vous-même dans des feuilles de calcul, mais aussi des données que vous avez récupérées et chargées à partir de sources de données externes à l’aide de Power Query (Obtenir et transformer dans Excel 2016) ou Power Pivot. Vous pouvez importer des données provenant de tableaux dans des feuilles de calcul (les données *doivent* être situées dans un tableau) ou importer des données qui sont chargées dans un modèle de données. Pour plus d’informations, consultez [Obtenir des données à partir d’Excel](service-get-data-from-files.md).
+**Excel** (.xlsx, xlxm) Excel est unique dans le sens où un classeur peut contenir des données que vous avez entrées vous-même dans des feuilles de calcul, mais aussi des données que vous avez récupérées et chargées à partir de sources de données externes à l’aide de Power Query (Obtenir et transformer dans Excel 2016) ou Power Pivot. Vous pouvez importer des données provenant de tableaux dans des feuilles de calcul (les données *doivent* être situées dans un tableau) ou importer des données qui sont chargées dans un modèle de données. Pour plus d’informations, consultez [Obtenir des données à partir d’Excel](service-get-data-from-files.md).
 
 **Power BI Desktop** (.pbix) : vous pouvez utiliser Power BI Desktop pour interroger et charger des données à partir de sources de données externes, étendre votre modèle de données avec des mesures et des relations, et créer des rapports. Vous pouvez importer votre fichier Power BI Desktop dans votre site Power BI. Power BI Desktop est idéal pour les utilisateurs plus expérimentés qui ont une bonne compréhension de leurs sources de données, de la transformation et des requêtes de données et des concepts de modélisation des données. Pour en savoir plus, consultez [Se connecter à des données dans Power BI Desktop](desktop-connect-to-data.md).
 

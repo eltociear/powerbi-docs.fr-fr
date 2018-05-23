@@ -1,28 +1,20 @@
 ---
-title: "Créer des rapports optimisés pour les applications Power BI pour téléphone"
-description: "Apprenez à optimiser les pages de rapport dans Power BI Desktop pour les applications Power BI pour téléphone."
-services: powerbi
-documentationcenter: 
+title: Créer des rapports optimisés pour les applications Power BI pour téléphone
+description: Apprenez à optimiser les pages de rapport dans Power BI Desktop pour les applications Power BI pour téléphone.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 12/08/2017
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: ea6da7eb23268e7605ff46281c63030a6d72798c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 58fa5214d1a5b7e7c80d199e23cfae9762a80f36
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Créer des rapports optimisés pour les applications Power BI pour téléphone
 Quand vous [créez un rapport dans Power BI Desktop](desktop-report-view.md), vous pouvez améliorer son utilisation dans les applications mobiles des téléphones en créant une version destinée spécifiquement à l’affichage sur téléphone. Adaptez votre rapport au téléphone en réorganisant et redimensionnant les visuels ou en choisissant d’en inclure uniquement une partie. Vous bénéficiez ainsi d’une expérience optimale. Vous pouvez également créer des [*visuels* réactifs](#optimize-a-visual-for-any-size) et des [segments réactifs](#enhance-slicers-to-to-work-well-in-phone-reports) qui se redimensionnent pour l’affichage sur un téléphone. De plus, si vous ajoutez des filtres à votre rapport, ceux-ci apparaissent automatiquement dans le rapport pour téléphone. Les lecteurs de votre rapport peuvent les afficher et les utiliser pour filtrer le rapport.

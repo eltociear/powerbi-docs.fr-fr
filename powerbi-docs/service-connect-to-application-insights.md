@@ -1,28 +1,20 @@
 ---
 title: Se connecter à Application Insights Connect dans Power BI
 description: Application Insights pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 04cc92bd33f342097b9952a744d8dfffced22bb3
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: 6ccf112a78e69e006a4ca3d6e8a7cd372adf5f05
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Se connecter à Application Insights avec Power BI
 Power BI permet de créer de puissants tableaux de bord personnalisés à partir de la télémétrie [Application Insight](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Envisagez la télémétrie de votre application autrement. Combinez des mesures de plusieurs applications ou services de composants sur un tableau de bord unique. La première version du pack de contenu Power BI pour Application Insights inclut des widgets pour des mesures courantes relatives à l’utilisation, telles que les utilisateurs actifs, l’affichage de page, les sessions, la version du navigateur et du système d’exploitation, et la répartition géographique des utilisateurs sur une carte.

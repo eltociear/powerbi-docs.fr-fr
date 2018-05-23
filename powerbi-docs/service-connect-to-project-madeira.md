@@ -1,28 +1,20 @@
 ---
 title: Se connecter à Project Madeira avec Power BI
 description: Project Madeira pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 02b8c2e8ed9a8a4ca0c8aaf9848699f3ca3c24c8
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: b4462d8ef5037cf4fe76a6ff061b7993e8d8ec44
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Se connecter à Project Madeira avec Power BI
 Power BI et le pack de contenu Project « Madeira » facilitent l’analyse des données Project « Madeira ». Power BI récupère vos données, à la fois les données de ventes et les données financières, puis crée un tableau de bord par défaut et des rapports basés sur ces données.

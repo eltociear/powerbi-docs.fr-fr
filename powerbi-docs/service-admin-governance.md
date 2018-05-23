@@ -1,28 +1,20 @@
 ---
 title: Méthodes de gouvernance et de déploiement
 description: Livre blanc pour en savoir plus sur les concepts, les options et les suggestions pour la gouvernance au sein de l’écosystème Power BI.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8f2f48143e9f1c5a304f8d864ea39b8118d331f8
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 955f4347630a781174d399d6a1363683745a4b3e
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="governance-and-deployment-approaches"></a>Méthodes de gouvernance et de déploiement
 Au cours des dernières décennies, les entreprises ont bien pris conscience de l’importance d’exploiter les données pour tirer profit des opportunités de marché. Qu’elles utilisent l’analyse concurrentielle ou l’analyse des modèles opérationnels, de nombreuses entreprises comprennent désormais qu’une stratégie de données peut leur permettre de prendre de l’avance sur leurs concurrents.  

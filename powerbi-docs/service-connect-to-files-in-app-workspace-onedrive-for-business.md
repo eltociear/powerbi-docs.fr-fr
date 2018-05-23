@@ -1,28 +1,20 @@
 ---
 title: Se connecter à des fichiers dans OneDrive pour un espace de travail d’application Power BI
 description: Consultez les informations concernant le stockage de vos fichiers Excel, CSV et Power BI Desktop sur le OneDrive pour l’espace de travail de votre application Power BI et la connexion à ceux-ci.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8a078475bc01dec37d49f654d1fa90162a9d8366
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e1161e5e461b3b32e549c69cfa7987c8f799e0fd
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Se connecter à des fichiers stockés dans OneDrive pour votre espace de travail d’application Power BI
 Après avoir [créé un espace de travail d’application dans Power BI](service-create-distribute-apps.md), vous pouvez stocker vos fichiers Excel, CSV et Power BI Desktop sur le OneDrive Entreprise de l’espace de travail de votre application Power BI. Vous pouvez continuer de mettre à jour les fichiers que vous stockez sur Entreprise. Ces mises à jour sont alors répercutées automatiquement dans les rapports et tableaux de bord Power BI basés sur les fichiers. 
@@ -86,6 +78,6 @@ L’ajout de fichiers à l’espace de travail de votre application est un proce
 * [Créer des applications et des espaces de travail d’application dans Power BI](service-create-distribute-apps.md)
 * [Importer des données de classeurs Excel](service-get-data-from-files.md)
 * [Se connecter à des classeurs Excel tout entiers](service-excel-workbook-files.md)
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
 * Vous souhaitez formuler des commentaires ? Consultez la page des [suggestions concernant Power BI](https://ideas.powerbi.com/forums/265200-power-bi).
 

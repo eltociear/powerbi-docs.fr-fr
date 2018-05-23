@@ -1,28 +1,20 @@
 ---
 title: Collaborer dans l’espace de travail de votre application Power BI
 description: Consultez les informations relatives à la collaboration sur des fichiers Power BI Desktop dans votre espace de travail d’application et avec des services Office 365 tels que le partage de fichiers sur OneDrive Entreprise, les conversations dans Exchange, le calendrier et les tâches.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/29/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1837bc36ac4707663b5583699b0090ac9a692eb7
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cab0f0513d73a865407574d43f8cd65ca5d75a9e
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Collaborer dans l’espace de travail de votre application Power BI
 Les espaces de travail d’application Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. Les espaces de travail sont en effet conçus pour la collaboration. Lorsque vous avez fini de collaborer avec vos collègues sur vos tableaux de bord et rapports, vous les empaquetez en tant qu’application, puis distribuez celle-ci. Pour en savoir plus, voir [Créer des applications et des espaces de travail d’application dans Power BI](service-create-distribute-apps.md). 
@@ -84,6 +76,6 @@ Si vous êtes propriétaire ou administrateur d’un espace de travail d’appli
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer des applications et des espaces de travail d’application dans Power BI](service-create-distribute-apps.md)
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
 * Vous souhaitez formuler des commentaires ? Consultez la page des [suggestions concernant Power BI](https://ideas.powerbi.com/forums/265200-power-bi).
 

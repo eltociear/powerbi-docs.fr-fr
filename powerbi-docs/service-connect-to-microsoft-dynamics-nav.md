@@ -1,31 +1,23 @@
 ---
 title: Se connecter à Microsoft Dynamics NAV avec Power BI
 description: Microsoft Dynamics NAV pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b06e756732c2c12e822967fbcfeb208bcb1ae334
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2ffa82cbc45a735bfb857a1f69c7e79e925ed753
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Se connecter à Microsoft Dynamics NAV avec Power BI
-Power BI vous permet d’extraire facilement des informations de vos données Microsoft Dynamics NAV. Power BI récupère vos données relatives aux ventes et aux aspects financiers, puis crée une application comprenant un tableau de bord et des rapports basés sur ces données. Power BI a besoin de vos autorisations d’accès aux tables à partir desquelles les données sont extraites, en l’occurrence, les données relatives aux ventes et aux aspects financiers. Vous trouverez plus d’informations sur la configuration requise ci-dessous. Une fois l’application installée, vous pouvez afficher le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 
+Power BI vous permet d’extraire facilement des informations de vos données Microsoft Dynamics NAV. Power BI récupère vos données relatives aux ventes et aux aspects financiers, puis crée une application comprenant un tableau de bord et des rapports basés sur ces données. Power BI a besoin de vos autorisations d’accès aux tables à partir desquelles les données sont extraites, en l’occurrence, les données relatives aux ventes et aux aspects financiers. Vous trouverez plus d’informations sur la configuration requise ci-dessous. Une fois l’application installée, vous pouvez voir le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 
 
 [Connectez-vous à Microsoft Dynamics NAV pour Power BI](https://app.powerbi.com/getdata/services/microsoft-dynamics-nav) ou consultez des informations supplémentaires sur l’[intégration de Dynamics NAV](https://powerbi.microsoft.com/integrations/microsoft-dynamics-nav) à Power BI.
 

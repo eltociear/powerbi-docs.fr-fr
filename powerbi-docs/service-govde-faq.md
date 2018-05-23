@@ -1,28 +1,20 @@
 ---
 title: Forum aux questions (FAQ) sur Power BI pour les clients des administrations allemandes
 description: Découvrez les questions courantes posées par les clients des administrations allemandes au sujet du service Power BI pour l’Allemagne
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4c9e059b97f845aa3a480238400df16c914e563a
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 909d524416b04654dc6f511a71b675381ec74e3a
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Forum aux questions (FAQ) sur Power BI pour les clients du cloud allemand
 Une version du **service Power BI**, souvent appelée Microsoft Cloud Deutschland (MCD), est disponible pour les clients de l’UE et de l’AELE. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients de l’UE/AELE. Elle est distincte et différente de la version commerciale du **service Power BI** ou des services Power BI destinés aux administrations.
@@ -78,7 +70,7 @@ Les questions et réponses suivantes fournissent des informations importantes su
 ### <a name="next-steps"></a>Étapes suivantes
 Power BI vous permet d’effectuer des tâches très diverses. Pour obtenir plus d’informations et accéder à des formations, dont un article qui vous montre comment vous inscrire au service, consultez les ressources suivantes :
 
-* [Formation guidée sur Power BI](guided-learning/gettingstarted.yml#step-1)
+* [Formation guidée sur Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Prise en main du service Power BI](service-get-started.md)
 * [Prise en main de Power BI Desktop](desktop-getting-started.md)
 

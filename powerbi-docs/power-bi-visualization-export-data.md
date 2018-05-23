@@ -1,29 +1,21 @@
 ---
-title: "Exporter des données à partir d’une visualisation Power BI"
-description: "Exportez des données à partir d’une visualisation de rapport et d’une visualisation de tableau de bord et affichez-les dans Excel."
-services: powerbi
-documentationcenter: 
+title: Exporter des données à partir d’une visualisation Power BI
+description: Exportez des données à partir d’une visualisation de rapport et d’une visualisation de tableau de bord et affichez-les dans Excel.
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+ms.reviewer: ''
 featuredvideoid: jtlLGRKBvXY
-qualityfocus: no
-qualitydate: 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b5e5463f19c95106a026770ad987f013f472e541
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5a3192910faf41bee925eb4938098bccb6434bb2
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="export-data-from-visualizations"></a>Exportez des données à partir de visualisations
 Si vous souhaitez afficher les données qui sont utilisées pour créer une visualisation, vous pouvez [le faire dans Power BI](service-reports-show-data.md) ou exporter ces données vers Excel sous forme de fichier .xlsx ou .csv.   

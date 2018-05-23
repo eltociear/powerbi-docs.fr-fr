@@ -1,28 +1,20 @@
 ---
-title: "Réorganiser les pages d’un rapport dans Power BI"
-description: "Réorganiser des pages dans un rapport dans le service Power BI et Power BI Desktop"
-services: powerbi
-documentationcenter: 
+title: Réorganiser les pages d’un rapport dans Power BI
+description: Réorganiser des pages dans un rapport dans le service Power BI et Power BI Desktop
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e137a0af200da7c32d3261eb43d53c9d82a3b476
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: 205df68a380c9c8b33ce11fae5509c555ec506cb
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reorder-pages-in-a-report-in-power-bi"></a>Réorganiser les pages d’un rapport dans Power BI
 Dans Power BI, un rapport est composé d’une ou plusieurs pages.  Chaque page comporte un onglet en bas.  Pour réorganiser un rapport, sélectionnez et faites glisser l’onglet vers son nouvel emplacement.

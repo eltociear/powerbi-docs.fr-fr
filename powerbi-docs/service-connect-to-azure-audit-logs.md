@@ -1,28 +1,20 @@
 ---
 title: Se connecter aux journaux d’audit Azure avec Power BI
 description: Journaux d’Audit Azure pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bb88ca524df5dd8c683c38a1a54a9bd626dad840
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 22020595b4f972f112f10e16fe7ae7d7fd4abed7
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Se connecter aux journaux d’audit Azure avec Power BI
 Avec le pack de contenu Journaux d’audit Azure, vous pouvez analyser et visualiser les informations stockées dans les journaux d’audit. Power BI récupère vos données, génère un tableau de bord par défaut et crée des rapports basés sur ces données.
@@ -67,8 +59,8 @@ Le pack de contenu des journaux d’audit d’Azure nécessite l’accès aux jo
 ## <a name="finding-parameters"></a>Recherche de paramètres
 Il existe deux moyens faciles de trouver votre ID d’abonnement.
 
-1. Sur https://portal.azure.com -&gt; Parcourir -&gt; Abonnements -&gt; ID d’abonnement
-2. Sur https://manage.windowsazure.com -&gt; Paramètres -&gt; ID d’abonnement
+1. Sur https://portal.azure.com -&gt; Parcourir -&gt; Abonnements - &gt;ID d’abonnement
+2. Sur https://manage.windowsazure.com -&gt; Paramètres  -&gt; ID d’abonnement
 
 Votre ID d’abonnement est une longue série de chiffres et de caractères, semblable à l’exemple à l’étape\#4 ci-dessus. 
 

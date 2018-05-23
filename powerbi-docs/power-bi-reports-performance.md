@@ -1,28 +1,20 @@
 ---
-title: "Bonnes pratiques relatives aux performances de Power BI"
-description: "Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI"
-services: powerbi
-documentationcenter: 
+title: Bonnes pratiques relatives aux performances de Power BI
+description: Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI
 author: MarkMcGeeAtAquent
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: monitoring
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/12/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: e584f48f5d3650821aac094ebfde7eef5261cc36
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 78dcd0ac0735bfbb3c22678d6bda1397120360cd
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="power-bi-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI 
 Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI.  
@@ -96,8 +88,14 @@ Notez que pour les connexions actives et DirectQuery, ce cache de requête est m
 ## <a name="understand-custom-visual-performance"></a>Comprendre les performances des éléments visuels personnalisés 
 Pour garantir des performances élevées, veillez à mettre à l’épreuve chaque élément visuel personnalisé. Les éléments visuels personnalisés mal optimisés peuvent diminuer les performances de l’intégralité du rapport. 
  
-## <a name="deep-dive-into-query-performance-with-sql-profiler-and-power-bi-desktop"></a>Présentation détaillée des performances de requêtes avec SQL Profiler et Power BI Desktop 
-Pour découvrir plus en détail quels éléments visuels consomment le plus de temps et de ressources, vous pouvez connecter SQL Profiler à Power BI Desktop afin d’obtenir une présentation complète des performances de requête. La procédure est la suivante : 
+## <a name="deep-dive-into-query-performance-with-sql-profiler-and-power-bi-desktop"></a>Présentation détaillée des performances de requêtes avec SQL Profiler et Power BI Desktop
+
+Pour découvrir plus en détail quels éléments visuels consomment le plus de temps et de ressources, vous pouvez connecter SQL Profiler à Power BI Desktop afin d’obtenir une présentation complète des performances de requête.
+
+> [!NOTE]
+> Power BI Desktop prend en charge la connexion à un port de diagnostic. Le port de diagnostic permet à d’autres outils de se connecter et d’effectuer des suivis pour établir un diagnostic. *L’apport de changements au modèle n’est pas pris en charge ! Les changements apportés au modèle peuvent entraîner une altération et une perte de données.*
+
+La procédure est la suivante :
   
 1. **Installer SQL Server Profiler et exécuter Power BI Desktop** 
 
@@ -124,7 +122,7 @@ Pour découvrir plus en détail quels éléments visuels consomment le plus de t
    - Nom du serveur : localhost:[numéro de port identifié précédemment] 
    - Sur l’écran suivant, sélectionnez **Exécuter** 
    - SQL Server Profiler est maintenant actif et étudie activement les requêtes envoyées par Power BI Desktop. 
-   - Lorsque les requêtes sont exécutées, vous pouvez voir la durée et le temps processeur correspondants, qui permettent d’identifier les requêtes qui constituent des goulots d’étranglement.  
+   - Lorsque les requêtes sont exécutées, vous pouvez voir la durée et le temps processeur correspondants, qu permettent d’identifier les requêtes qui constituent des goulots d’étranglement.  
 
 SQL Profiler vous permet d’identifier les requêtes qui utilisent le plus de temps processeur, et qui sont susceptibles d’être des goulots d’étranglement des performances. Les éléments visuels qui exécutent ces requêtes doivent dès lors être au cœur de l’optimisation continue. 
 

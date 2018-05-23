@@ -1,28 +1,20 @@
 ---
 title: Se connecter à Xero avec Power BI
 description: Xero pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d9f61067f89fb031926428109ef5dac5bcfd6392
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d3074602af73d937e64a9155d3d197b91b1b1ae8
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Se connecter à Xero avec Power BI
 Xero est un logiciel de comptabilité en ligne facile à utiliser, conçu spécifiquement pour les petites entreprises. Créez des visualisations attrayantes sur la base des informations financières de Xero avec ce pack de contenu Power BI. Votre tableau de bord par défaut comprend plusieurs mesures liées aux petites entreprises, comme l’état de la trésorerie, les recettes et les dépenses, les tendances liées aux bénéfices, les jours débiteur et le retour sur investissement.
@@ -102,7 +94,7 @@ Indiquez le nom de l’organisation à suivre dans Power BI. Cela vous permet d
 * Si votre pack de contenu ne parvient pas à s’actualiser, vérifiez si vous êtes connecté plusieurs fois à la même organisation dans Power BI. Xero autorise une seule connexion active à une organisation et vous risquez de voir une erreur indiquant que vos informations d’identification ne sont pas valides si vous vous connectez à la même organisation plusieurs fois.  
 * En cas de problème de connexion du pack de contenu Xero pour Power BI, par exemple des messages d’erreur ou un temps de chargement prolongé, videz d’abord le cache et effacez les cookies et redémarrez le navigateur, puis reconnectez-vous à Power BI.  
 
-Pour tout autre problème qui persiste, envoyez un ticket à http://support.powerbi.com.
+Pour tout autre problème qui persiste, envoyez un ticket sur http://support.powerbi.com.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Prise en main de Power BI](service-get-started.md)

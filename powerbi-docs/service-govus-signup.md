@@ -1,28 +1,20 @@
 ---
 title: Inscription des clients US Government à Power BI
 description: Si vous êtes un client US Government, découvrez comment inscrire votre organisation au service Power BI US Government
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/24/2017
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a52aaaffb5f66ba5596e788183ef52753f08c8bf
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 17d7c07cb35eb9046b6fcfe8da5a85ee15fe7eaf
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Inscrire votre organisation US Government au service Power BI
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -130,7 +122,7 @@ Pour identifier les utilisateurs qui exécutent la licence Gratuite de Power BI 
 Power BI vous permet d’effectuer des tâches très diverses. Pour obtenir plus d’informations et accéder à des formations, dont un article qui vous montre comment vous inscrire au service, consultez les ressources suivantes :
 
 * [Vue d’ensemble de Power BI for US Government](service-govus-overview.md)
-* [Formation guidée sur Power BI](guided-learning/gettingstarted.yml#step-1)
+* [Formation guidée sur Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Prise en main du service Power BI](service-get-started.md)
 * [Prise en main de Power BI Desktop](desktop-getting-started.md)
 

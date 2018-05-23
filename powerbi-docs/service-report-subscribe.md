@@ -1,29 +1,21 @@
 ---
 title: S’abonner aux rapports et tableaux de bord du service Power BI
 description: Découvrez comment vous pouvez vous abonner ainsi que d’autres utilisateur à la capture instantanée d’un rapport et d’un tableau de bord Power BI.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: saQx7G0pxhc
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: af93d9d49b25fe2bc8fefcc2128dea74effc65ec
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: fc4a84e3489b4b7adc24a58ed19c8e9eedb94293
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service-apppowerbicom"></a>S’abonner à un rapport ou un tableau de bord du service Power BI (app.powerbi.com)
 Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir des e-mails : de une fois par jour à une fois par semaine. 

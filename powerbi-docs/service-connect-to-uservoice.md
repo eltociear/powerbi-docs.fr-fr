@@ -1,28 +1,20 @@
 ---
 title: Se connecter à UserVoice avec Power BI
 description: UserVoice pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bc55031358fe27b5bb935b8255c8b6b1c191d4ab
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2761b2bd1230e18b5dd4e0b69342e55ed33d0983
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Se connecter à UserVoice avec Power BI
 Le suivi et l’exploration de vos données UserVoice sont faciles avec Power BI et le pack de contenu UserVoice. Power BI récupère vos données, y compris les tickets, les suggestions et les indices de satisfaction, puis génère un tableau de bord prêt à l’emploi et des rapports basés sur ces données.
@@ -42,7 +34,7 @@ Connectez-vous au [pack de contenu UserVoice](https://app.powerbi.com/getdata/se
 3. Sélectionnez **UserVoice**, puis **Obtenir**.
    
    ![](media/service-connect-to-uservoice/uservoice.png)
-4. Quand vous y êtes invité, entrez votre URL UserVoice. L’URL doit être exactement conforme au modèle https://fabrikam.uservoice.com, « fabrikam » devant être remplacé par le nom de votre produit ou service.
+4. Quand vous y êtes invité, entrez votre URL UserVoice. L’URL doit être exactement conforme au modèle suivant https://fabrikam.uservoice.com en remplaçant « fabrikam » par le nom de votre produit ou service.
    
    >[!NOTE]
    >Il n’existe aucune barre oblique finale et la connexion utilise http**s**.
@@ -81,7 +73,7 @@ Si vous obtenez une erreur « Échec de l’ouverture de session » après avo
 
 «**Désolé. Une erreur s’est produite.**»
 
-Si vous obtenez ce message d’erreur lors du chargement des données, assurez-vous que votre compte UserVoice n’a pas dépassé son quota d’utilisation des API mensuel. Si tout semble correct, essayez de vous reconnecter. Si le problème persiste, contactez le support Power BI à la page [https://community.powerbi.com](https://community.powerbi.com/).
+Si vous obtenez ce message d’erreur lors du chargement des données, assurez-vous que votre compte UserVoice n’a pas dépassé son quota d’utilisation des API mensuel. Si tout semble correct, essayez de vous reconnecter. Si le problème persiste, contactez le support Power BI sur [https://community.powerbi.com](https://community.powerbi.com/).
 
 **Autre**  
 

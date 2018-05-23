@@ -1,28 +1,20 @@
 ---
 title: Recherche et tri de votre contenu dans un service Power BI
 description: documentation relative au tri et au tri de contenu dans les espaces de travail Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a98780e0854b997e00a88f1ab3a5002e8c2fb10
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: a9b7d2326d62887a1a1acfef1ae164bec1cf2e62
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation : recherche et tri de votre contenu dans le service Power BI
 Il existe plusieurs façons de parcourir votre contenu dans le service Power BI. Dans les espaces de travail, le contenu est organisé par type : tableaux de bord, rapports, classeurs et jeux de données.  De plus, le contenu est également organisé par utilisation : favori, récent, application, partagé avec moi et par défaut. Cette organisation du contenu vous permet de trouver rapidement ce dont vous avez besoin dans le service Power BI.  
@@ -41,7 +33,7 @@ ________________________________________
 ## <a name="searching-and-sorting-in-workspaces"></a>Recherche et tri dans les espaces de travail
 Un espace de travail comporte quatre onglets de contenu : Tableaux de bord, Rapports, Classeurs et Jeux de données.  Chaque onglet contient un champ de recherche et un bouton de tri.  Lorsque vous commencez à utiliser le service Power BI, il se peut que vous ne les trouviez pas utiles, car vous n’avez qu’un ou deux éléments par onglet.  Pourtant, au fil du temps, vous pourriez vous retrouver avec un longue liste de contenus.  Utilisez les fonctions de recherche et le tri pour trouver facilement ce que vous avez besoin.
 
-![onglet Tableaux de bord](media/service-navigation-search-filter-sort/power-bi-search-sort2.png)
+![Onglet Tableaux de bord](media/service-navigation-search-filter-sort/power-bi-search-sort2.png)
 
 * Entrez un terme de recherche pour trouver une correspondance dans l’écran actuel.
   

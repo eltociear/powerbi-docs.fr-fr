@@ -1,28 +1,20 @@
 ---
 title: Inscription à Power BI avec une nouvelle version d’évaluation d’Office 365
 description: Inscription à Power BI avec une nouvelle version d’évaluation d’Office 365
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5db7d92b7d62d1518682d831dd425e8b4b6efe86
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: dd43c063d56f75fd1ba45b6c596f54fd002adad6
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Inscription à Power BI avec une nouvelle version d’évaluation d’Office 365
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -45,7 +37,7 @@ Si vous rencontrez des problèmes pour vous inscrire à Power BI avec votre adre
 4. C’est tout !  Une fois terminé, vous serez redirigé vers Power BI.
 
 ## <a name="important-considerations"></a>Considérations importantes
-En appliquant cette méthode d’inscription, vous créez un nouveau client d’organisation et vous devenez l’administrateur du client.  Le partage dans Power BI étant autorisé uniquement dans un seul client, vous ne pourrez pas partager avec des utilisateurs en dehors de ce client.  Par exemple, si vous créez le client votre_entreprise.onmicrosoft.com à l’étape 2, vous ne pourrez pas partager avec des utilisateurs de votre_entreprise.com.  Vous pouvez ajouter de nouveaux utilisateurs à votre client, puis partager avec eux, comme décrit dans [cette rubrique d’aide](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
+En appliquant cette méthode d’inscription, vous créez un nouveau client d’organisation et vous devenez l’administrateur du client. Vous pouvez ajouter de nouveaux utilisateurs à votre client, puis partager avec eux, comme décrit dans [cette rubrique d’aide](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Administration de Power BI dans votre organisation](service-admin-administering-power-bi-in-your-organization.md)  

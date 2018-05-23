@@ -1,28 +1,20 @@
 ---
 title: Vue d’ensemble du volet Filtres de Power BI
 description: Vue d’ensemble du volet Filtres de rapport du service Power BI et du tableau de bord Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/15/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 00b0b116aa59ebab1d963a8803f788040761d9f5
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: b0a18d5befe49a3ffaa400b0e081d88720cdd28c
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport
 Cet article présente en détail le volet Filtres de rapport. Vous le trouverez dans le [Mode Lecture et Édition du service Power BI](service-reading-view-and-editing-view.md) et dans [l’Affichage Rapport de Power BI Desktop](desktop-report-view.md).

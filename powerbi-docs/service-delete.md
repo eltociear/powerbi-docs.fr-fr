@@ -1,28 +1,20 @@
 ---
 title: Supprimer un tableau de bord, un rapport, un classeur, un jeu de données ou un espace de travail
 description: Découvrir comment supprimer pratiquement tout élément de Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 8da5ea98d7304169bc50cf8a5e94f8f1d5354666
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 5701176e362649d992fb6f9cd79e003abcf87bf5
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Supprimer pratiquement tout élément dans le service Power BI
 Cet article explique comment supprimer un tableau de bord, un rapport, un classeur, un jeu de données, une application, une visualisation ou un espace de travail dans le service Power BI.

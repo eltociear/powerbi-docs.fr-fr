@@ -1,28 +1,20 @@
 ---
 title: 'Packs de contenu d’organisation : accès et copie'
 description: Consultez les informations relatives à la création de copies de packs de contenu d’organisation et à la résolution des problèmes d’accès à ces derniers dans Power BI
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 328edd6f7bc1d7e0e2550eff2c34b97b5fd6442d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: a4c2eaed0e8d577359ad9b5ee191ad2894ada12b
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Packs de contenu d’organisation : copie, actualisation et accès
 > [!NOTE]
@@ -48,8 +40,8 @@ Vous disposez maintenant d’une copie que vous pouvez modifier. Personne d’au
 Cela peut se produire pour plusieurs raisons :
 
 * **Modifications d’appartenance :** les packs de contenu sont publiés à l’adresse de groupes de distribution d’e-mails, de groupes de sécurité et de [groupes Power BI basés sur Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).  Si vous êtes supprimé d’un groupe, vous n’avez plus accès au pack de contenu.
-* **Modifications de la distribution :**l’auteur du pack de contenu modifie la distribution. Par exemple, si le pack de contenu a été publié à l’origine pour l’organisation entière, puis que son créateur l’a republié à l’adresse d’un public plus restreint, il se peut que vous ne figuriez plus parmi ses destinataires.
-* **Modification des paramètres de sécurité :**si le tableau de bord et les rapports sont connectés à des sources de données SSAS locales et si des modifications sont apportées aux paramètres de sécurité, vos autorisations concernant ce serveur peuvent être révoquées.
+* **Modifications de la distribution :** l’auteur du pack de contenu modifie la distribution. Par exemple, si le pack de contenu a été publié à l’origine pour l’organisation entière, puis que son créateur l’a republié à l’adresse d’un public plus restreint, il se peut que vous ne figuriez plus parmi ses destinataires.
+* **Modification des paramètres de sécurité :** si le tableau de bord et les rapports sont connectés à des sources de données SSAS locales et si des modifications sont apportées aux paramètres de sécurité, vos autorisations concernant ce serveur peuvent être révoquées.
 
 ## <a name="how-are-organizational-content-packs-refreshed"></a>Comment les packs de contenu d’organisation sont-ils actualisés ?
 Quand un pack de contenu est créé, les paramètres d’actualisation sont hérités avec le jeu de données.  Quand vous créez une copie du pack de contenu, la nouvelle version conserve son lien au jeu de données d’origine et à la planification de l’actualisation. 

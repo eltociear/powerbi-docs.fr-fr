@@ -1,28 +1,20 @@
 ---
 title: Clusters à haute disponibilité pour la passerelle de données locale
 description: Vous pouvez créer des clusters de passerelles de données locales pour fournir une haute disponibilité à votre entreprise.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 12/05/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5ca925b45460f2b2e173e0a5e25b839e52eff309
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: e15983bf754a2fc1e2fe9ae376eedbed36e20ce4
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Clusters à haute disponibilité pour la passerelle de données locale
 Vous pouvez créer des **clusters à haute disponibilité** d’installations de **passerelle de données locale**, pour vous assurer que votre organisation peut accéder aux ressources de données locales utilisées dans les tableaux de bord et rapports Power BI. Ces clusters permettent aux administrateurs de passerelles de regrouper les passerelles afin d’éviter des points de défaillance uniques lors de l’accès aux ressources de données locales. Cet article décrit les étapes à suivre pour créer un cluster à haute disponibilité de passerelles de données locales et partage les meilleures pratiques de configuration. Les clusters de passerelles à haute disponibilité nécessitent d’appliquer la mise à jour de novembre 2017 ( ou version ultérieure) à la passerelle de données locale.

@@ -1,28 +1,20 @@
 ---
-title: "Modifier le mode tri d’un graphique dans un rapport Power BI"
-description: "Modifier le mode tri d’un graphique dans un rapport Power BI"
-services: powerbi
-documentationcenter: 
+title: Modifier le mode tri d’un graphique dans un rapport Power BI
+description: Modifier le mode tri d’un graphique dans un rapport Power BI
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8160011a30b54345d446f352148665e3840323d9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 6b70a9ef7774d1ba49bc5bf825a5c1cde47197f2
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Modifier le mode tri d’un graphique dans un rapport Power BI
 Dans un rapport Power BI, vous pouvez trier la plupart des visualisations par ordre alphabétique en fonction des noms de catégories du graphique ou des valeurs numériques de chaque catégorie. Par exemple, ce graphique est trié par nom de magasin.

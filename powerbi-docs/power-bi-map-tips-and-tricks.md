@@ -1,29 +1,21 @@
 ---
 title: Conseils et astuces pour les cartes (y compris l’intégration Bing Maps)
 description: 'Conseils et astuces pour les visualisations de carte Power BI, visuels, emplacements, longitude et latitude et explication de leur fonctionnement avec Bing Cartes. '
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ajTPGNpthcg
-qualityfocus: monitoring
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 031d977adbeb0697bcdd1bb6b19ebf21ec16e516
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 321ff4ec528ef9b72324758417e0f72d67258ac3
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Trucs et astuces pour les visualisations de carte Power BI
 De par son intégration à Bing Cartes, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui vous permet de créer des cartes. Les deux solutions utilisent des algorithmes pour identifier l’emplacement correct, mais parfois elles présentent seulement une estimation. Si l’instance Power BI ne parvient pas à créer la visualisation de carte, elle demande l’aide de Bing Cartes. 

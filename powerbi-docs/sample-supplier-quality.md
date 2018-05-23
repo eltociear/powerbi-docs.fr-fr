@@ -1,28 +1,20 @@
 ---
 title: 'Exemple Analyse de la qualité des fournisseurs pour Power BI : visite guidée'
 description: 'Exemple Analyse de la qualité des fournisseurs pour Power BI : visite guidée'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/19/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 5636ccd4685205b2b01dd4c591942d7d2670bc48
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: 5089fef7c0292f1a6651b23eea814cc6cd9da9ce
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la qualité des fournisseurs pour Power BI : visite guidée
 

@@ -1,28 +1,20 @@
 ---
 title: Informations approfondies sur la passerelle de données locale
 description: Cet article apporte des informations approfondies sur la passerelle locale. Il examine le fonctionnement du service avec Azure Active Directory et votre annuaire Active Directory local lorsque vous utilisez Analysis Services
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5480768fc088b3a32a1af222d38e3829298e8f0d
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 8b0121dbfe633eca9c438dfd272d3aeb56fd59a4
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Informations approfondies sur la passerelle de données locale
 Les utilisateurs de votre organisation peuvent accéder aux données locales (auxquelles ils ont déjà accès), mais avant qu’ils puissent se connecter à votre source de données locale, vous devez installer et configurer une passerelle de données locale. La passerelle favorise une communication rapide et sécurisée en arrière-plan entre un utilisateur dans le cloud et votre source de données locale, dans les deux sens.

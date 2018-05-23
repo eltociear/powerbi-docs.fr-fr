@@ -1,28 +1,20 @@
 ---
 title: Impossible d’ajouter Power BI au partenaire O365
 description: Impossible d’ajouter Power BI à un partenaire de syndication Office 365. Le modèle syndiqué est un modèle d’achat utilisé par Office 365.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: ace24b392668b5459d21a451319fd54eb6430371
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 39f40c4b8aaf53e81f15c1ad29d1d8425f017468
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Impossible d’ajouter Power BI à l’abonnement du partenaire Office 365
 Les entreprises peuvent revendre Office 365 dans une offre groupée et intégrée à leurs propres solutions, pour fournir aux utilisateurs finaux un seul point de contact pour l’achat, la facturation et le support technique.

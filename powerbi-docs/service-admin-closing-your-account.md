@@ -1,28 +1,20 @@
 ---
 title: Fermeture de votre compte Power BI
 description: Fermeture de votre compte Power BI
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d74aed9f3d2f21459853781089b4c32bcdf51b2c
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: be0b1bf3dbfba0f2e1545eced38ec19650342a19
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="closing-your-power-bi-account"></a>Fermeture de votre compte Power BI
 Si vous ne souhaitez plus utiliser Power BI, vous pouvez demander la fermeture de votre compte.  Une fois votre compte fermé, vous ne pourrez plus vous connecter à Power BI.  En outre, toutes les données client que vous avez chargées ou créées dans Power BI sont supprimées conformément à la stratégie de rétention des données qui figure dans les conditions d’utilisation de Power BI.

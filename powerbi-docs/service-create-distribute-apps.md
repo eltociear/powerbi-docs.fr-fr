@@ -1,27 +1,19 @@
 ---
 title: Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI
 description: Découvrez comment créer et publier des applications qui sont des collections de tableaux de bord et rapports générés pour fournir des mesures clés pour votre organisation.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c2f2fcca7c1d915f94960824d32a5d4f18a978b6
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 6efd54d868a5a1f2d8d657d352c7133d4036b0b6
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -107,7 +99,7 @@ Lorsque les tableaux de bord et rapports dans votre espace de travail d’applic
 
 2. En haut à droite, sélectionnez le bouton **Publier l’application** pour démarrer le processus de partage de tout le contenu de cet espace de travail.
    
-     ![Publier l’application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
+     ![Publier l'application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
 3. Dans **Détails**, remplissez la description pour aider les utilisateurs à trouver l’application. Vous pouvez définir une couleur d’arrière-plan pour personnaliser l’application.
    

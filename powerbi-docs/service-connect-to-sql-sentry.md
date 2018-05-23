@@ -1,28 +1,20 @@
 ---
 title: Se connecter à SQL Sentry avec Power BI
 description: SQL Sentry pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c73502381e99bf64a8e342ca46ee1bb7089b6825
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 8ad41917c887cff7db991051aa35d5dad6b6a8fa
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-sql-sentry-with-power-bi"></a>Se connecter à SQL Sentry avec Power BI
 L’analyse de vos données de performances collectées par SQL Sentry est facile avec Power BI. Power BI récupère vos données, puis génère un tableau de bord par défaut et des rapports associés à partir de ces données.
@@ -30,7 +22,7 @@ L’analyse de vos données de performances collectées par SQL Sentry est facil
 Connectez-vous au [pack de contenu SQL Sentry](https://app.powerbi.com/groups/me/getdata/services/sql-sentry) pour Power BI.
 
 >[!NOTE]
->Pour vous connecter, vous devez disposer d’un compte SQL Sentry que vous utilisez pour la connexion à http://cloud.sqlsentry.com et d’un ID de base de données à surveiller.  Des instructions permettant de savoir où trouver l’ID de base de données figurent ci-dessous.
+>Ppour vous connecter, vous devez disposer d’un compte SQL Sentry que vous utilisez pour la connexion à http://cloud.sqlsentry.com et d’un ID de base de données à surveiller.  Des instructions permettant de savoir où trouver l’ID de base de données figurent ci-dessous.
 
 ## <a name="how-to-connect"></a>Comment se connecter
 1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.

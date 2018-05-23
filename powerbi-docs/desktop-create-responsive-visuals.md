@@ -1,28 +1,20 @@
 ---
 title: Optimiser des visuels Power BI de toutes tailles
 description: Apprenez à optimiser les visuels dans des rapports existants de Power BI Desktop et du service Power BI pour les applications Power BI sur téléphone.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: d80e96fbca893fee3ff03ef9021988f5a22bb2e7
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: a6e683318c00a800f69334f90ce3a71d74489030
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Optimiser des visuels Power BI de toutes tailles
 Par défaut, lorsque vous créez un nouveau rapport, les visuels sont *réactifs*, changeant de manière dynamique pour afficher une quantité maximale de données et d’insights, quelle que soit la taille de l’écran. Pour les rapports plus anciens, vous pouvez définir leurs visuels pour un redimensionnement dynamique également.

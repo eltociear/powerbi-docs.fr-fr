@@ -1,28 +1,20 @@
 ---
-title: "Afficher les données utilisées pour créer la visualisation Power BI"
-description: "Ce document explique comment afficher les données utilisées pour créer un visuel dans Power BI et les exporter dans un fichier .csv."
-services: powerbi
-documentationcenter: 
+title: Afficher les données utilisées pour créer la visualisation Power BI
+description: Ce document explique comment afficher les données utilisées pour créer un visuel dans Power BI et les exporter dans un fichier .csv.
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b85fe5cf70c915a3355c80a61f01a32216450f03
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: 15ca7461c1661b83e1fbb08b66e7d1843bdb1c9f
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Afficher les données utilisées pour créer la visualisation
 ## <a name="show-data"></a>Afficher les données
@@ -37,10 +29,10 @@ Vous pouvez également exporter les données utilisées pour créer la visualisa
 
 ## <a name="using-show-data-in-power-bi-service"></a>Utiliser *Afficher les données* dans le service Power BI
 1. Dans le service Power BI, ouvrez un rapport en [mode Lecture ou en mode Édition](service-reading-view-and-editing-view.md) et sélectionnez un visuel.  Dans Power BI Desktop, ouvrez la vue Rapport.
-2. Pour afficher les données sous-jacentes du visuel, sélectionnez **Explorer** > **Afficher les données**.
+2. Pour afficher les données sous-jacentes de l’élément visuel, sélectionnez **Explorer** > **Afficher les données**.
    
    ![sélectionner Afficher les données](media/service-reports-show-data/power-bi-show-data.png)
-3. Par défaut, les données s’affichent sous le visuel.
+3. Par défaut, les données s’affichent sous l’élément visuel.
    
    ![affichage vertical du visuel et des données](media/service-reports-show-data/power-bi-explore-show-data.png)
 4. Pour modifier l’orientation, sélectionnez la disposition verticale ![](media/service-reports-show-data/power-bi-vertical-icon-new.png) dans l’angle supérieur droit de la visualisation.

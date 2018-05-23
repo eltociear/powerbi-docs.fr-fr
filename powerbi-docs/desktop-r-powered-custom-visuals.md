@@ -1,28 +1,20 @@
 ---
 title: Utiliser des visuels personnalisés optimisés pour R dans Power BI
 description: Utiliser des visuels personnalisés optimisés pour R dans Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: cc8d0165266c38a39d6a6c0b930f7e16443281e1
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: d7170ce02294c3eadbfa38f0a25a2ab58777720b
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Utiliser des visuels personnalisés optimisés pour R dans Power BI
 Dans **Power BI Desktop** et dans le **service Power BI**, vous pouvez utiliser des visuels personnalisés optimisés pour R sans connaître R ni utiliser de script R. Cela vous permet d’exploiter la puissance d’analyse et visuelle des visuels R et des scripts R sans connaître R ni effectuer de programmation.

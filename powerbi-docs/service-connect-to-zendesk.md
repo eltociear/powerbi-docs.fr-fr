@@ -1,28 +1,20 @@
 ---
 title: Se connecter à Zendesk avec Power BI
 description: Zendesk pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 52adef9d30ec269e6e3a954632a54814b241623d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 997dd8b598e67d590723c72fb35245c3b3486c8b
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Se connecter à Zendesk avec Power BI
 Le pack de contenu Zendesk propose un tableau de bord Power BI et un ensemble de rapports Power BI qui fournissent des analyses relatives aux volumes de vos tickets et aux performances de vos agents. Vous pouvez utiliser le tableau de bord et les rapports fournis ou les personnaliser pour mettre en avant les informations qui vous intéressent le plus.  Les données sont actualisées automatiquement une fois par jour. 
@@ -42,7 +34,7 @@ Connectez-vous au [pack de contenu Zendesk](https://app.powerbi.com/getdata/serv
 3. Sélectionnez **Zendesk** \> **Obtenir.**
    
    ![](media/service-connect-to-zendesk/zendesk.png)
-4. Indiquez l’URL associée à votre compte. Celle-ci doit être au format **https://company.zendesk.com** consultez les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
+4. Indiquez l’URL associée à votre compte. Celle-ci doit être au format **https://company.zendesk.com**. Consultez les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
    
    ![](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
 5. Quand vous y êtes invité, entrez vos informations d’identification Zendesk.  Sélectionnez **oAuth2** comme mécanisme d’authentification et cliquez sur **Se connecter**. Suivez le flux d’authentification Zendesk. (Si vous êtes déjà connecté à Zendesk dans votre navigateur, vous ne serez peut-être pas invité à entrer vos informations d’identification.)

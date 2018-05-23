@@ -1,28 +1,20 @@
 ---
 title: Se connecter à Lithium avec Power BI
 description: Lithium pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 501395503ef3c4b3bde8e6d7f0ae732af5a4cc6a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1d41ce3ff0c73675793e872170914b96a1d73d14
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Se connecter à Lithium avec Power BI
 Lithium crée des relations de confiance entre les meilleures marques du monde et leurs clients, en aidant les personnes à obtenir des réponses et à partager leurs expériences. En connectant le pack de contenu Lithium à Power BI, vous pouvez obtenir des chiffres clés sur votre communauté en ligne qui vous aideront à dynamiser les ventes, à réduire les coûts de service et à fidéliser davantage. 
@@ -42,7 +34,7 @@ Connectez-vous au [Pack de contenu Lithium](https://app.powerbi.com/getdata/serv
 3. Sélectionnez **Lithium** \> **Obtenir**.
    
    ![](media/service-connect-to-lithium/lithiumconnect.png)
-4. Spécifiez l’URL de votre communauté Lithium. L’URL aura le format *https://community.votresite.com*.
+4. Spécifiez l’URL de votre communauté Lithium. Le format de cette URL est *https://community.yoursite.com*.
    
    ![](media/service-connect-to-lithium/params.png)
 5. Quand vous y êtes invité, entrez vos informations d’identification Lithium. Sélectionnez **oAuth 2** comme mécanisme d’authentification et cliquez sur **Se connecter** , puis suivez le flux d’authentification de Lithium.

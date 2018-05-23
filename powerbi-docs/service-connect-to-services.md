@@ -1,28 +1,20 @@
 ---
 title: Se connecter aux services que vous utilisez avec Power BI
 description: Vous pouvez vous connecter à un certain nombre de services que vous utilisez pour conduire votre activité, tels que Salesforce, Microsoft Dynamics CRM et Google Analytics.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/29/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c1df66100206198f3de32bea9859261d51d3774d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5b8a438ed354f246c5ac1d5ac0d0488db19633dd
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Se connecter aux services que vous utilisez avec Power BI
 Connectez-vous à des services que vous utilisez pour conduire votre activité, tels que Salesforce, Microsoft Dynamics et Google Analytics. Power BI commence par utiliser vos informations d’identification pour se connecter au service, puis crée une application Power BI comprenant un tableau de bord et un ensemble de rapports Power BI qui affichent automatiquement vos données et fournissent des informations visuelles sur votre activité. 
@@ -31,7 +23,7 @@ Connectez-vous à Power BI pour afficher tous les [services auxquels vous pouvez
 
 ![Applications AppSource](media/service-connect-to-services/overview.png)
 
-Une fois l’application installée, vous pouvez afficher le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 
+Une fois l’application installée, vous pouvez voir le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 
 
 ![Application Google Analytics dans l’application mobile Power BI](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 

@@ -1,28 +1,20 @@
 ---
 title: Astuces pour créer des rapports attrayants
 description: Conseils et astuces pour créer des rapports dans le service Power BI et Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: willthom
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: willthom
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: f1b92cf370dfdfdbeadd71ee954030aa8a79d338
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 8305b9eab95e2b13f9104de6bcefe3f03a95d2f5
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop et le service Power BI
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des conseils et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop, le service Power BI *et* dans les éditions Microsoft Excel 2016 ou Excel 2013 Pro-Plus avec l’activation du complément Power Pivot et l’activation et l’installation de Power Query.

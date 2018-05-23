@@ -1,28 +1,20 @@
 ---
 title: Se connecter à Circuit ID avec Power BI
 description: Circuit ID pour Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 57c93ac0bc64e7171abf659ba54e453bf215296a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 0cc0125f35dc90a03eeaeed0d5e69c0a5c3115ae
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-circuit-id-with-power-bi"></a>Se connecter à Circuit ID avec Power BI
 L’analyse de vos données de communication à partir de Circuit ID est facile avec Power BI. Power BI récupère vos données, puis génère un tableau de bord par défaut et des rapports associés à partir de ces données. Une fois la connexion établie, vous pouvez explorer vos données et personnaliser le tableau de bord selon vos besoins. Les données sont actualisées automatiquement chaque jour.

@@ -1,28 +1,20 @@
 ---
 title: Utiliser des graphiques de ruban dans Power BI
 description: Créer et utiliser des graphiques de ruban dans le service Power BI et dans Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9855d0e0f0c3703773463f09faa95ec9a80ab343
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 3575a94ede595b4d83fef0cddcbb279ea7a533c0
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Utiliser des graphiques de ruban dans Power BI
 Vous pouvez utiliser des graphiques de ruban dans **Power BI** pour visualiser des données et déterminer rapidement la catégorie de données qui a le rang le plus élevé (valeur la plus grande). Les graphiques de ruban sont efficaces pour l’affichage de changements de rangs, la plage (valeur) la plus élevée étant toujours affichée en première position pour chaque période de temps. Les graphiques de ruban sont disponibles dans **Power BI Desktop** depuis la publication de septembre 2017 et dans les mises à jour ultérieures du **service Power BI**.

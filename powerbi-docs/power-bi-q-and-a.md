@@ -1,34 +1,31 @@
 ---
 title: Présentation de Questions et réponses dans Power BI Desktop et le service Power BI
 description: Rubrique de vue d’ensemble de la documentation pour les requêtes en langage naturel des questions et réponses Power BI.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c48e118a6708cae901a01d1956b6a3d0ea6c0561
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: a1d39d10982f1d598ffce7e978c1b030e0a442d4
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>Questions et réponses dans Power BI Desktop et le service Power BI
 ## <a name="what-is-qa"></a>Qu’est-ce que Q&R ?
 Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel. Par exemple, « quel était le total des ventes l’année dernière ».  Utilisez l’outil Q&R pour explorer vos données à l’aide des fonctionnalités intuitives du langage naturel et recevez des réponses sous la forme de graphiques et de diagrammes. Q&R diffère d’un moteur de recherche, car il ne fournit que des résultats sur les données de Power BI.
 
 Cet article est le point de départ pour tout ce qui concerne le moteur Questions et réponses. Sélectionnez un lien ci-dessous pour apprendre comment Questions et réponses fonctionne dans le service Power BI (tableaux de bord et rapports), Power BI Desktop (rapports), Power BI Embedded et Power BI Mobile.  
+
+> [!NOTE]
+> **Questions et réponses de Power BI** prend uniquement en charge les réponses aux questions en langage naturel formulées en anglais. Vous pouvez également essayer une fonctionnalité en préversion pour les questions posées en espagnol. Dans **Power BI Desktop**, accédez à **Fichier**, **Options et paramètres**, **Options** et recherchez l’onglet **Fonctionnalités en préversion**. Cochez la case **Prise en charge de l’espagnol dans Questions et réponses**.  
+>
+>
 
 ![](media/power-bi-q-and-a/pbi_qa_boxsalessqft.png)
 

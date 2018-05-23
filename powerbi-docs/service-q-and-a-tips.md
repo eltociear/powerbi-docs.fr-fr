@@ -1,28 +1,20 @@
 ---
 title: Conseils et astuces pour poser des questions avec Questions et réponses dans Power BI
 description: Conseils et astuces pour poser des questions avec Questions et réponses dans Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: jastru
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 28ebd938b1121e1d2d453a9c9e72592b1c814742
-ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
+ms.openlocfilehash: 0165eb7161e9ba931c336300f73316d215b1c88d
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Conseils pour poser des questions dans le moteur Questions et réponses de Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Mots et terminologie reconnus par Questions et réponses
@@ -57,11 +49,11 @@ Exemples : January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 
 
 Exemple : count of orders in the past 6 days.
 
-**Égalité (plage)** : in, equal to, =, after, is more than, in, between, before
+**Égalité (plage)**  : in, equal to, =, after, is more than, in, between, before
 
 Exemples : Order year is before 2012? Price equals between 10 and 20? Is the age of John greater than 40? Total sales in 200-300?
 
-**Égalite (valeur)** : is, equal, equal to, in, of, for, within, is in, is on
+**Égalite (valeur)**  : is, equal, equal to, in, of, for, within, is in, is on
 
 Exemples : Which products are green? Order date equals 2012. Is the age of John 40? Total sales that is not equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?
 
@@ -83,7 +75,7 @@ Exemples : 10 pm, 10:35 pm, 10:35:15 pm, 10 oclock, noon, midnight, hour, minut
 
 Exemple : show districts by month and sales total as bar chart
 
-**Relatifs (relation, qualification)** : when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what
+**Relatifs (relation, qualification)**  : when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what
 
 ## <a name="qa-helps-you-phrase-the-question"></a>Le moteur Questions et réponses vous aide à formuler la question
 Il fait de son mieux pour s’assurer que la réponse reflète précisément la question posée. Il utilise pour cela plusieurs méthodes. Pour ces dernières, vous pouvez accepter l’action entièrement, partiellement ou pas du tout. Lorsque vous tapez votre question, Questions et réponses :

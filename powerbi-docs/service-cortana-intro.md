@@ -1,24 +1,19 @@
 ---
 title: Rechercher et afficher rapidement vos rapports et tableaux de bord à l’aide de Cortana
 description: Utilisez Cortana avec Power BI pour obtenir des réponses à partir de vos données. Cortana opère actuellement avec les rapports et tableaux de bord.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-editor: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/13/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 46be9e170b0bdfb1aa18cfcdb126a16b78c9aa9d
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 5d11fd66e8b0aff15648aba6d3e397cd7fdb9bb3
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Trouver et afficher rapidement vos données Power BI à l’aide de Cortana pour Power BI
 Utilisez Cortana sur vos appareils Windows 10 pour obtenir directement des réponses à vos questions métier importantes. En s’intégrant avec Power BI, Cortana peut extraire des informations clés directement à partir de tableaux de bord et de rapports Power BI. Pour cela, il vous suffit de disposer de la version de novembre 2015 ou ultérieure de Windows 10, de Cortana, de Power BI, et d’avoir accès à au moins un jeu de données.
@@ -131,7 +126,7 @@ Lorsque vous posez une question dans Cortana, Power BI répond à partir de page
 * Cortana pour Power BI est actuellement disponible uniquement en anglais.
 * Cortana pour Power BI est disponible uniquement sur des appareils mobiles Windows.
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Activer l’intégration Cortana - Power BI - Windows pour les rapports](service-cortana-enable.md)
