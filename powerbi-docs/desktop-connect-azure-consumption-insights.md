@@ -1,28 +1,20 @@
 ---
 title: Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop (bêta)
 description: Se connecter aisément à Azure pour obtenir des informations sur la consommation et l’utilisation à l’aide de Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1f1eeda618c54def9e756f727161d5bc7d541218
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 59723d4c8e241781b7f29773ea182cd5b075e0c2
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Se connecter à Azure Consumption Insights dans Power BI Desktop (bêta)
 Le connecteur **Azure Consumption Insights** vous permet d’utiliser **Power BI Desktop** pour vous connecter à Azure afin d’obtenir des données et informations détaillées sur l’utilisation des services Azure par votre organisation. Vous pouvez également créer des mesures, des colonnes personnalisées et des visuels afin de rapporter et partager l’utilisation d’Azure par votre organisation. Le connecteur **Azure Consumption Insights** étant publié en version bêta, il est susceptible de changer.
@@ -162,7 +154,7 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | Cost |cost |ExtendedCost |Non |
 | Cost Center |costCenter |Cost Center |Non |
 | Date |date |Date |Non |
-| Day | |Day |Non |
+| Jour | |Jour |Non |
 | DepartmentName |departmentName |Department Name |Non |
 | DepartmentID |departmentId | |Oui |
 | Instance ID | | |Oui |
@@ -177,7 +169,7 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | Month | |Month |Non |
 | Product |product |Product |Non |
 | ProductId |productId | |Oui |
-| Resource Group |resourceGroup |Resource Group |Non |
+| Groupe de ressources |resourceGroup |Groupe de ressources |Non |
 | Resource Location |resourceLocation |Resource Location |Non |
 | ResourceGroupId | | |Oui |
 | ResourceLocationId |resourceLocationId | |Oui |
@@ -189,7 +181,7 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | ServiceInfo2Id | | |Oui |
 | Store Service Identifier |storeServiceIdentifier |Store Service Identifier |Non |
 | StoreServiceIdentifierId | | |Oui |
-| Subscription Name |subscriptionName |Subscription Name |Non |
+| Nom de l’abonnement |subscriptionName |Nom de l’abonnement |Non |
 | Balises |tags |Balises |Non |
 | TagsId | | |Oui |
 | Unit Of Measure |unitOfMeasure |Unit Of Measure |Non |

@@ -1,27 +1,19 @@
 ---
 title: Inscrire une application auprès d’Azure AD
 description: Procédure pas à pas - Transmettre des données à un jeu de données - Inscrire une application auprès d’Azure AD
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 48ab2a51a479269b8846288b64089964a0544681
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 660f79eab32ae7ade5cea990c6fc152bb9507297
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="step-1-register-an-app-with-azure-ad"></a>Étape 1 : Inscrire une application auprès d’Azure AD
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
@@ -39,7 +31,7 @@ Voici la procédure à suivre pour inscrire une application dans Azure AD.
 2. Cliquez sur **Connectez-vous avec votre compte existant**, puis connectez-vous à votre compte Power BI.
 3. Renseignez le **Nom de l’application**. Par exemple, entrez « Exemple d’application de transmission de données ».
 4. Pour **Type d’application**, choisissez **Application native**.
-5. Entrez une **URL de redirection**, telle que **https://login.live.com/oauth20_desktop.srf**. Pour une **application cliente native**, un URI de redirection fournit à **Azure AD** des détails supplémentaires sur l’application qu’il doit authentifier. L’URI standard pour une application cliente est https://login.live.com/oauth20_desktop.srf.
+5. Entrez une **URL de redirection**, comme **https://login.live.com/oauth20_desktop.srf**. Pour une **application cliente native**, un URI de redirection fournit à **Azure AD** des détails supplémentaires sur l’application qu’il doit authentifier. L’URI standard d’une application cliente est https://login.live.com/oauth20_desktop.srf.
 6. Pour **Choisissez les API auxquelles accéder**, choisissez **Lire et écrire tous les jeux de données**. Pour toutes les autorisations d’application Power BI, consultez [Autorisations Power BI](power-bi-permissions.md).
 7. Cliquez sur **Inscrire l’application**, puis enregistrez l’ **ID client** qui a été généré. Un **ID client** identifie l’application dans Azure AD.
 

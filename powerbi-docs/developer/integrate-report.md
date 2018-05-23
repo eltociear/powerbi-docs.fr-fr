@@ -1,27 +1,19 @@
 ---
 title: Intégrer un rapport Power BI dans une application pour votre organisation
 description: Découvrez comment intégrer (ou incorporer) un rapport dans une application web à l’aide des API REST Power BI.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 10/05/2017
 ms.author: maghan
-ms.openlocfilehash: 9ed341eb4428795bb4714ae8f1a34fd11c1bcbcd
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: d2fa65587fdbd85aabd429d531b79e9e614d2f49
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="integrate-a-report-into-an-app-for-your-organization"></a>Intégrer un rapport dans une application pour votre organisation
 Découvrez comment intégrer (ou incorporer) un rapport dans une application web en utilisant des appels d’API REST, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à votre organisation.

@@ -1,27 +1,19 @@
 ---
-title: "Afficher le mode de présentation dans Surface Hub et Windows 10 - Power BI"
-description: "Découvrez comment afficher des rapports Power BI dans Surface Hub et comment afficher des vignettes, des rapports et des tableaux de bord Power BI en mode plein écran sur les appareils Windows 10."
-services: powerbi
-documentationcenter: 
+title: Afficher le mode de présentation dans Surface Hub et Windows 10 - Power BI
+description: Découvrez comment afficher des rapports Power BI dans Surface Hub et comment afficher des vignettes, des rapports et des tableaux de bord Power BI en mode plein écran sur les appareils Windows 10.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: cd4fa5d694b76a93ccb017ec17473e8f2775ed85
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 13bfd1d587d59c1c87f03605dbe62f60fa90f5c6
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Afficher des rapports dans le mode de présentation dans Surface Hub et Windows 10 - Power BI
 Vous pouvez afficher des rapports en mode de présentation dans Surface Hub, ainsi que des vignettes, des rapports et des tableaux de bord en mode plein écran sur les appareils Windows 10. 

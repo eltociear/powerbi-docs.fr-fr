@@ -1,27 +1,19 @@
 ---
-title: "Bien démarrer avec l’application mobile Power BI sur iPad"
-description: "Découvrez comment l’application Microsoft Power BI pour iOS sur iPad apporte Power BI dans votre poche, avec un accès mobile aux informations métier locales et dans le cloud."
-services: powerbi
-documentationcenter: 
+title: Bien démarrer avec l’application mobile Power BI sur iPad
+description: Découvrez comment l’application Microsoft Power BI pour iOS sur iPad apporte Power BI dans votre poche, avec un accès mobile aux informations métier locales et dans le cloud.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: identified
-qualitydate: 08/08/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: a35197e7775fb1b0dfec5c0905706f44d6f14494
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: ded3ad829a0c9a2d4892a5a06250f60a93662c61
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-an-ipad"></a>Bien démarrer avec l’application mobile Power BI sur iPad
 Microsoft Power BI pour iOS sur iPad permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. 
@@ -46,7 +38,7 @@ Découvrez les [nouveautés des applications mobiles Power BI](mobile-whats-new
 > 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>S’inscrire au service Power BI
-Accédez à Power BI (https://powerbi.com) pour vous inscrire au service, si ce n’est déjà fait. C’est gratuit.
+Accédez à Power BI (https://powerbi.com)) pour vous inscrire au service, si ce n’est déjà fait. C’est gratuit.
 
 ## <a name="get-started-with-the-power-bi-app"></a>Prise en main de l’application Power BI
 1. Sur votre iPad, ouvrez l’application Power BI.
@@ -67,7 +59,7 @@ Vous pouvez afficher et utiliser les exemples de tableau de bord Power BI, mais
 1. Appuyez sur le bouton de navigation globale ![Bouton de navigation globale](media/mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) dans l’angle supérieur gauche, puis appuyez sur l’icône Paramètres ![icône Paramètres](media/mobile-ipad-app-get-started/power-bi-ios-settings-gear.png).
 2. Appuyez sur **Exemples Power BI**, choisissez un rôle, puis explorez l’exemple de tableau de bord pour ce rôle.  
    
-   ![Exemples de Power BI](media/mobile-ipad-app-get-started/pbi_ipad_samples2.png)
+   ![Power BI samples](media/mobile-ipad-app-get-started/pbi_ipad_samples2.png)
    
    > [!NOTE]
    > Certaines fonctionnalités ne sont pas disponibles dans les exemples. Par exemple, vous ne pouvez pas afficher les exemples de rapports qui sous-tendent les tableaux de bord. 

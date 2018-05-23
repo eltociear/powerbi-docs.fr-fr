@@ -1,27 +1,19 @@
 ---
-title: "Intégrer une vignette Power BI dans une application pour votre organisation"
-description: "Procédure pas à pas d’intégration d’une vignette à une application, exemple de code"
-services: powerbi
-documentationcenter: 
+title: Intégrer une vignette Power BI dans une application pour votre organisation
+description: Procédure pas à pas d’intégration d’une vignette à une application, exemple de code
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
-ms.openlocfilehash: c4c1b9223554491968a541c9d6b698a9655eded5
-ms.sourcegitcommit: 2ceea44d3606c15b57142c37649c9d481ec4becc
+ms.openlocfilehash: 6ad2138ab37b20fa16a5455ab167ec9e6b7e159c
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="integrate-a-tile-into-an-app-user-owns-data"></a>Intégrer une vignette dans une application (l’utilisateur possède les données)
 Découvrez comment intégrer (ou incorporer) une vignette dans une application web en utilisant des appels d’API REST, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à votre organisation.

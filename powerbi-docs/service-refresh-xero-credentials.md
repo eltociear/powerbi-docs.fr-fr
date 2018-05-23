@@ -1,28 +1,20 @@
 ---
 title: Comment actualiser vos identifiants du pack de contenu Xero
-description: "Si vous utilisez le pack de contenu Xero Power BI, vous avez peut-être rencontré un problème relatif à l’actualisation quotidienne du pack de contenu en raison d’un incident récent du service Power BI."
-services: powerbi
-documentationcenter: 
+description: Si vous utilisez le pack de contenu Xero Power BI, vous avez peut-être rencontré un problème relatif à l’actualisation quotidienne du pack de contenu en raison d’un incident récent du service Power BI.
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: sarinas
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 2be07994ebd136fa3cd99cd3d64967618cde7258
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5978443f05e039c34ff023f235624968b5eb8a3e
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-refresh-your-xero-content-pack-credentials-if-refresh-failed"></a>Comment actualiser vos identifiants du pack de contenu Xerox si l’actualisation a échoué
 Si vous utilisez le pack de contenu Xero Power BI, vous avez peut-être rencontré des problèmes relatifs à l’actualisation quotidienne du pack de contenu en raison d’un incident récent du service Power BI.
@@ -52,7 +44,7 @@ Si vous voyez que l’actualisation a échoué comme indiqué ci-dessus, suivez 
    
     ![](media/service-refresh-xero-credentials/powerbi-xero-refresh-now.png)
 
-Si vous rencontrez encore des problèmes d’actualisation, n’hésitez pas à nous contacter à l’adresse [http://support.powerbi.com](http://support.powerbi.com). 
+Si vous rencontrez encore des problèmes d’actualisation, n’hésitez pas à nous contacter à l’adresse [http://support.powerbi.com](http://support.powerbi.com) 
 
 Pour en savoir plus sur le pack de contenu Xero pour Power BI, consultez la [page d’aide sur le pack de contenu Xero](service-connect-to-xero.md).
 

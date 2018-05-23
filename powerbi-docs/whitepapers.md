@@ -1,27 +1,19 @@
 ---
 title: Livres blancs pour Power BI
 description: Les livres blancs vous permettent d’explorer Power BI de façon plus approfondie.
-services: powerbi
-documentationcenter: ''
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/11/2018
-ms.author: maghan
-ms.openlocfilehash: 049ffb993e749e9cb251130438e351d8adbe3bdf
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/18/2018
+ms.author: maggies
+ms.openlocfilehash: e64850351c9bdc1877eed3a53323e7934e11fbe7
+ms.sourcegitcommit: aa8045e42b979206c600bce4a8d17de1f0620462
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="whitepapers-for-power-bi"></a>Livres blancs pour Power BI
 
@@ -37,11 +29,12 @@ Les livres blancs vous permettent d’explorer Power BI de façon plus approfond
 | [Sécurité](service-admin-power-bi-security.md) |Fournit une explication détaillée concernant la sécurité au sein de Power BI. |
 | [Power BI et RGPD](https://aka.ms/power-bi-gdpr-whitepaper)| Power BI peut être une partie importante de votre trajet vers la conformité du RGPD. L’objectif de ce document est de vous fournir une compréhension de base du RGPD et concerne Power BI. Tandis que la conformité avec le RGPD est obligatoire dans des situations spécifiques décrites dans ce document, il ne s’agit pas d’un exercice de « case à cocher ». Il s’agit également d’un moyen visant à améliorer la protection globale de vos données et les fonctionnalités de confidentialité.|
 | [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper)|Ce document décrit comment distribuer du contenu à des utilisateurs externes à l’organisation en utilisant l’intégration d’Azure Active Directory B2B (AAD B2B).|
-| [Meilleures pratiques en matière de conception de visuels et de rapports](power-bi-visualization-best-practices.md) |Présente le meilleures pratiques en matière de conception de rapports dans Power BI. |
 | [Analytique avancée avec Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Décrit les fonctionnalités analytiques avancées de Power BI, y compris l’analyse prédictive, les visualisations personnalisées, l’intégration de R et les expressions d’analyse de données. |
+| [Meilleures pratiques en matière de conception de visuels et de rapports](power-bi-visualization-best-practices.md) |Présente le meilleures pratiques en matière de conception de rapports dans Power BI. |
 | [Filtrage bidirectionnel](desktop-bidirectional-filtering.md) |Décrit le filtrage croisé bidirectionnel dans Power BI Desktop (ce livre blanc aborde également SQL Server Analysis Services 2016, tous les deux ayant le même comportement). |
 | [DirectQuery dans SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |Pour SQL Server 2016, DirectQuery a été repensé de façon à fournir des performances et une vitesse véritablement supérieures. Toutefois, la fonctionnalité est également maintenant plus complexe à comprendre et à implémenter. |
-| [Sécurisation du modèle sémantique décisionnel au format tabulaire](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Ce document présente le modèle de sécurité relatif à la sémantique décisionnelle tabulaire et à Power BI. Il montre comment créer des rôles, implémenter la sécurité dynamique, configurer les paramètres d’emprunt d’identité, gérer des rôles et choisir une méthode de connexion aux modèles qui fonctionne dans le contexte de la sécurité réseau. |
 | [Power BI et SAP BW](https://aka.ms/powerbiandsapbw)| Ce document décrit comment les clients SAP peuvent tirer profit de la connexion de Power BI à leurs systèmes SAP Business Warehouse (BW) existants.|
+| [Approches de déploiement et de gouvernance Power BI](http://go.microsoft.com/fwlink/?LinkId=785915&clcid=0x409) | Fournit des concepts, des options et des suggestions pour la gouvernance au sein de l’écosystème Power BI. |
+| [Sécurisation du modèle sémantique décisionnel au format tabulaire](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Ce document présente le modèle de sécurité relatif à la sémantique décisionnelle tabulaire et à Power BI. Il montre comment créer des rôles, implémenter la sécurité dynamique, configurer les paramètres d’emprunt d’identité, gérer des rôles et choisir une méthode de connexion aux modèles qui fonctionne dans le contexte de la sécurité réseau. |
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

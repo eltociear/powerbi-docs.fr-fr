@@ -1,27 +1,19 @@
 ---
-title: "Vidéos Power BI"
-description: "Vidéos Power BI et lien vers la chaîne YouTube."
-services: powerbi
-documentationcenter: 
+title: Vidéos Power BI
+description: Vidéos Power BI et lien vers la chaîne YouTube.
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/19/2018
 ms.author: mihart
-ms.openlocfilehash: 4ef3991fc285adc84cdcb5efca00c2f9486e9825
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+ms.openlocfilehash: f9aa2a0d18e53c661b4639001bacdef6a508a7a4
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="power-bi-videos"></a>Vidéos Power BI
 Nous disposons d’une chaîne YouTube pour Power BI ! Vous pouvez visiter [notre canal](https://www.youtube.com/user/mspowerbi/videos) et, si vous ne maîtrisez pas encore Power BI, commencez par les vidéos de la [playlist « Analyze and Visualize data with Power BI »](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).

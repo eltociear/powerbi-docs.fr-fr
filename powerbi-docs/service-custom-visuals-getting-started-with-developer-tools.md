@@ -1,27 +1,19 @@
 ---
 title: Créer des visuels personnalisés à l’aide des outils de développement
 description: Les éléments visuels personnalisés vous permettent de répondre aux besoins de vos utilisateurs et de vous mettre en adéquation avec le design de votre application. Découvrez comment créer un élément visuel personnalisé pour Power BI à l’aide des outils de développement.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: c7ed6a9b8acc74c9d4e39ff21a10624a208847f4
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 8b5da248b6992c8ae3e8d30caf4f0fc6c47bdcf5
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Créer des visuels personnalisés à l’aide des outils de développement
 Les éléments visuels personnalisés vous permettent de répondre aux besoins de vos utilisateurs et de vous mettre en adéquation avec le design de votre application. Découvrez comment créer un élément visuel personnalisé pour Power BI à l’aide des outils de développement.
@@ -87,7 +79,7 @@ Pour créer un élément visuel personnalisé, vous devrez installer NodeJS. Nod
     --install-cert  Install localhost certificate
     </code></pre>
 
-<a name"ssl-setup"></a>
+<a name="ssl-setup"></a>
 
 ### <a name="server-certificate-setup"></a>Installation de certificat de serveur
 Pour activer un aperçu instantané de votre élément visuel, vous avez besoin d’un serveur HTTPS approuvé. Avant de commencer, vous devez installer un certificat SSL permettant le chargement d’éléments visuels dans votre navigateur web. 
@@ -97,9 +89,24 @@ Pour activer un aperçu instantané de votre élément visuel, vous avez besoin 
 > 
 > 
 
-Pour *Ajouter* un certificat, exécutez la commande suivante.
+Pour *créer* un certificat, exécutez la commande suivante.
+
+    pbiviz --create-cert
+
+> [!NOTE]
+> Vous devez voir un message vous indiquant le chemin d’accès au certificat et un mot de passe qui vient d’être généré.
+> 
+> 
+
+
+Pour *installer* un certificat, exécutez la commande suivante.
 
     pbiviz --install-cert
+    
+> [!NOTE]
+> Vous devez voir un message vous invitant à utiliser la phrase secrète qui vient d’être générée pour installer un certificat PFX.
+> 
+> 
 
 **Système d’exploitation Windows**
 

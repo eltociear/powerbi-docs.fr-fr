@@ -1,29 +1,21 @@
 ---
 title: Sources de données de rapport Power BI dans Power BI Report Server
-description: Les rapports Power BI (.pbix) peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles.
-services: powerbi
-documentationcenter: ''
+description: Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles.
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/23/2018
+ms.component: powerbi-report-server
+ms.topic: conceptual
+ms.date: 05/17/2018
 ms.author: maghan
-ms.openlocfilehash: a32ef2e1e85b252a2a1071cb95c80149486c2604
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 0f06d5c3742ea5187ff41f6f8974c8a81e5d1d33
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
-# <a name="power-bi-report-pbix-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI (.pbix) dans Power BI Report Server
+# <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
 
 Ces sources de données sont spécifiques des rapports Power BI utilisés dans Power BI Report Server. Pour plus d’informations sur les sources de données prises en charge avec des rapports paginés (.rdl), consultez [Sources de données prises en charge par Reporting Services](https://docs.microsoft.com/sql/reporting-services/report-data/data-sources-supported-by-reporting-services-ssrs).

@@ -1,27 +1,19 @@
 ---
 title: Prise en charge du navigateur pour Power BI Report Server
 description: Découvrez les versions de navigateur prises en charge pour la gestion et l’affichage de Power BI Report Server et les commandes de la visionneuse de rapports.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maghan
-ms.openlocfilehash: a0ac612ec132d5aefc8353b4ef92212913e3db5a
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 23eea014ca4554a2df676cf1fe0be54c2b69d15a
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Prise en charge du navigateur pour Power BI Report Server
 Découvrez les versions de navigateur prises en charge pour la gestion et l’affichage de Power BI Report Server et les commandes de la visionneuse de rapports.
@@ -54,7 +46,7 @@ Voici la liste actuelle des navigateurs pris en charge pour le portail web.
 
 * Google Chrome (+)
   
-  **(+)**  Dernière version publiée publiquement
+  **(+) ** Dernière version publiée publiquement
 
 ## <a name="browser-requirements-for-the-report-viewer-web-control-2015"></a>Configuration requise pour le contrôle web de la visionneuse de rapports (2015)
 Voici la liste actuelle des navigateurs pris en charge pour le contrôle web de la visionneuse de rapports. La visionneuse de rapports prend en charge l’affichage de rapports à partir du portail web.
@@ -72,7 +64,7 @@ Voici la liste actuelle des navigateurs pris en charge pour le contrôle web de 
 
 * Apple Safari (+)
   
-  **(+)**  Dernière version publiée publiquement
+  **(+) ** Dernière version publiée publiquement
 
 ### <a name="authentication-requirements"></a>Conditions requises pour l’authentification
 Les navigateurs prennent en charge des schémas d’authentification spécifiques qui doivent être gérés par le serveur de rapports pour que la demande du client aboutisse. Le tableau ci-dessous identifie les types d’authentifications par défaut pris en charge par chaque navigateur s’exécutant sur un système d’exploitation Windows.
@@ -85,7 +77,7 @@ Les navigateurs prennent en charge des schémas d’authentification spécifique
 | **Mozilla Firefox**(+) |NTLM, De base |NTLM |Oui. Les paramètres d’authentification par défaut fonctionnent avec Firefox. |
 | **Apple Safari**(+) |NTLM, De base |De base |Oui. Les paramètres d’authentification par défaut fonctionnent avec Safari. |
 
- **(+)**  Dernière version publiée publiquement
+ **(+) ** Dernière version publiée publiquement
 
 ### <a name="script-requirements-for-viewing-reports"></a>Exigences de script pour l’affichage de rapports
 Pour utiliser la visionneuse de rapports, configurez votre navigateur pour exécuter des scripts.
@@ -116,7 +108,7 @@ Utilisez un navigateur dans lequel la prise en charge des scripts est activée. 
 * Google Chrome (+)
 * Mozilla Firefox (+)
   
-  **(+)**  Dernière version publiée publiquement
+  **(+) ** Dernière version publiée publiquement
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Manuel de l’administrateur](admin-handbook-overview.md)  

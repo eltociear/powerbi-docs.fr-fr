@@ -1,34 +1,26 @@
 ---
-title: "Explorer vos données sur l’application mobile Power BI pour les appareils iOS"
-description: "Affichez et exploitez les tableaux de bord et rapports Power BI, ainsi que les rapports mobiles et les indicateurs de performance clés Reporting Services sur votre iPad, iPhone, Apple Watch et iPod Touch."
-services: powerbi
-documentationcenter: 
+title: Explorer vos données sur l’application mobile Power BI pour les appareils iOS
+description: Affichez et exploitez les tableaux de bord et rapports Power BI, ainsi que les rapports mobiles et les indicateurs de performance clés Reporting Services sur votre iPad, iPhone, Apple Watch et iPod Touch.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 0b09706b8d8f7f4dbf9c2f8d3f6fc844383ce6be
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: b0785555e288084f97d06d05161ebef78d21731c
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="explore-your-data-on-the-power-bi-mobile-app-for-ios-devices"></a>Explorer vos données sur l’application mobile Power BI pour les appareils iOS
 L’application Microsoft Power BI pour iOS permet de bénéficier de l’expérience BI mobile sur iPad, iPhone, Apple Watch et iPod Touch. Grâce à des fonctionnalités tactiles, elle vous fournit un accès mobile direct aux informations importantes. Vous pouvez ainsi afficher et utiliser les tableaux de bord et rapports Power BI de votre organisation, ainsi que les rapports mobiles et les indicateurs de performance clés Reporting Services, où que vous soyez. Explorez les données figurant dans vos tableaux de bord et partagez-les avec vos collègues dans des messages électroniques ou des messages texte.
 
 ![iPhone et iPad](media/mobile-ios-ipad-iphone-apps/pbi_ipad_iphonedevices.png)
 
-Accédez à Power BI (https://powerbi.com) pour vous inscrire au service Power BI.
+Accédez à Power BI (https://powerbi.com)) pour vous inscrire au service Power BI.
 
 Voir [Nouveautés dans les applications mobiles pour Power BI](mobile-whats-new-in-the-mobile-apps.md).
 

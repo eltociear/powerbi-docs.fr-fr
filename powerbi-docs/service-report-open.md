@@ -1,27 +1,19 @@
 ---
 title: Ouvrir un rapport en mode Lecture ou en mode Édition dans le service Power BI
 description: Ouvrir un rapport Power BI en mode lecture ou en mode Edition
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: 17921d1fe28a1b4c0640748123efe4b70982b18d
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: 13a745e65f1166690ade4f0279e0374ed95f053b
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="open-a-report-in-power-bi-service-apppowerbicom"></a>Ouvrir un rapport dans le service Power BI (app.powerbi.com)
 Les rapports sont disponibles dans le service Power BI, Power BI Desktop, Power BI Mobile et Power BI Embedded. Cet article s’applique à l’ouverture de rapports dans le ***service Power BI***.

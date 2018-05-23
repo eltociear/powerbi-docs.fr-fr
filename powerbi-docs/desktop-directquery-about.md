@@ -1,28 +1,20 @@
 ---
 title: Utilisation de DirectQuery dans Power BI
 description: Comprendre l’utilisation de DirectQuery avec Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bad0a8cb7f0f6eab7414d06ee5545e9499ccdc95
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 472be555bb4c46da41eb762c1eeae14ef991e742
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="using-directquery-in-power-bi"></a>Utilisation de DirectQuery dans Power BI
 Lorsque vous utilisez **Power BI Desktop** ou le **service Power BI**, vous pouvez vous connecter à toutes sortes de sources de données et établir ces connexions aux données de différentes façons. Vous pouvez soit *importer* des données dans Power BI, ce qui est la méthode la plus courante pour obtenir des données, soit vous connecter directement aux données dans leur dépôt source d’origine, ce qu’on appelle une requête **DirectQuery**. Cet article décrit la requête **DirectQuery** et ses fonctionnalités, et comprend les rubriques suivantes :

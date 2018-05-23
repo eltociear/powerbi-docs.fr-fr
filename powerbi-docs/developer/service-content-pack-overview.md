@@ -1,27 +1,19 @@
 ---
-title: "Vue d’ensemble du programme Pack de contenu du service Power BI"
+title: Vue d’ensemble du programme Pack de contenu du service Power BI
 description: Programme de certification du pack de contenu
-services: powerbi
-documentationcenter: 
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/20/2018
 ms.author: maghan
-ms.openlocfilehash: 2cc78b3d2a877e465d5f4bdc67f501b7de87f88e
-ms.sourcegitcommit: 20dd809a2ef8c0d6c6f677baadb5f57f41438cbe
+ms.openlocfilehash: cfb9727a41d602ce14bfd2a403a87e82d2f0e94d
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Vue d’ensemble du programme Pack de contenu du service Power BI
 Un pack de contenu est un ensemble de contenu prêt à l’emploi permettant aux utilisateurs d’obtenir immédiatement des analyses depuis une source. Un pack de contenu se concentre généralement sur un scénario d’entreprise spécifique en fournissant des analyses pour un rôle, un domaine ou un flux de travail.
@@ -84,8 +76,8 @@ Les packs de contenu publiés peuvent être mis à jour une fois par mois. Les d
 
 N’hésitez pas à nous envoyer vos questions par e-mail à l’adresse [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
-## <a name="support"></a>Support technique
-Pour de l’aide au cours du développement, veuillez utiliser [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Nous suivons et gérons activement les demandes. Les incidents utilisateur sont rapidement transmis à la bonne équipe.
+## <a name="support"></a>Support
+Pour bénéficier d’un support lors du développement, veuillez utiliser [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Nous suivons et gérons activement les demandes. Les incidents utilisateur sont rapidement transmis à la bonne équipe.
 
 ## <a name="next-step"></a>Étape suivante
 [Création](template-content-pack-authoring.md)

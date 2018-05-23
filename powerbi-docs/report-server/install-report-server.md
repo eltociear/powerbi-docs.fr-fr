@@ -1,27 +1,19 @@
 ---
 title: Installer Power BI Report Server
 description: Découvrez comment installer Power BI Report Server.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 03/19/2018
 ms.author: maggies
-ms.openlocfilehash: 8b8bb3867ec1630dc5163148e4aa20e10c0504b7
-ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
+ms.openlocfilehash: a0fc47776cd0eaceb4a03a99bc27b88b04da398d
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="install-power-bi-report-server"></a>Installer Power BI Report Server
 
@@ -49,8 +41,8 @@ La sélection de **Clé de Power BI Report Server** a pour effet d’afficher un
 
 ![](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Clé de produit Power BI Report Server")
 
-#### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise Software Assurance (SA)
-Si vous disposez d’un contrat SQL Server Enterprise SA, vous pouvez vous procurer votre clé de produit auprès du [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/).
+#### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Entreprise Software Assurance (SA)
+Si vous disposez d’un contrat SQL Server Entreprise SA, vous pouvez vous procurer votre clé de produit auprès du [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/).
 
 ## <a name="install-your-report-server"></a>Installer votre serveur de rapports
 L’installation de Power BI Report Server est très simple. Quelques étapes suffisent pour installer les fichiers.
