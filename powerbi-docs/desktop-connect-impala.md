@@ -1,28 +1,20 @@
 ---
 title: Se connecter à une base de données Impala dans Power BI Desktop
 description: Se connecter facilement à une base de données Impala et l’utiliser dans Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bef087b485573ba9a629887bfb05d875c88c8b4c
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 9b00120a0c4c22ba8f031663ab19d94d2c482d3b
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Se connecter à une base de données Impala dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à une base de données **Impala** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop.
@@ -36,7 +28,7 @@ Dans la fenêtre **Impala** qui s’affiche, tapez ou collez l’URL de votre se
 
 ![](media/desktop-connect-impala/connect_impala_3a.png)
 
-Lorsque vous y êtes invité, indiquez votre nom d’utilisateur et votre mot de passe ou connectez-vous de façon anonyme. Ces deux options sont prises en charge.
+Lorsque vous y êtes invité, entrez vos informations d’identification, ou connectez-vous de façon anonyme. Le connecteur Impala prend en charge l’authentification anonyme, de base (nom d’utilisateur + mot de passe) et Windows.
 
 ![](media/desktop-connect-impala/connect_impala_4.png)
 
@@ -52,7 +44,7 @@ Une fois que vous êtes connecté, une fenêtre **Navigateur** apparaît et affi
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 Il existe quelques limites et considérations à prendre en compte pour le connecteur **Impala** :
 
-* À l’avenir, nous prévoyons d’activer l’actualisation du support à l’aide de **Power BI Gateway**.
+* Le connecteur Impala est pris en charge sur la passerelle de données locale en utilisant l’un des trois mécanismes d’authentification pris en charge.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :

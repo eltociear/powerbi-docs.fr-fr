@@ -10,12 +10,14 @@
           href: service-the-new-power-bi-experience.md
     - name: Didacticiels
       items:
-        - name: Se connecter au service en ligne GitHub
+        - name: Se connecter à un exemple GitHub
           href: service-tutorial-connect-to-github.md
     - name: Concepts
       items:
         - name: "Nouveautés dans le service Power\_BI"
           href: service-whats-new.md
+        - name: Inscription libre-service
+          href: service-self-service-signup-for-power-bi.md
         - name: Informations de base sur Power BI
           items:
             - name: "Power\_BI – Concepts de base"
@@ -56,16 +58,12 @@
           items:
             - name: "Informations rapides dans Power\_BI"
               href: service-insights.md
-            - name: Créer un tableau de bord à partir d’un rapport
-              href: service-dashboard-create.md
             - name: Obtenez des données de fichiers
               href: service-get-data-from-files.md
             - name: Ouvrir un rapport Power BI en mode lecture ou en mode Edition
               href: service-reading-view-and-editing-view.md
             - name: Découverte de l’éditeur de rapport
               href: service-the-report-editor-take-a-tour.md
-            - name: "Exemples pour Power\_BI"
-              href: sample-datasets.md
             - name: "Visualisations dans Power\_BI"
               href: power-bi-report-visualizations.md
             - name: "Sources de données pour Power\_BI"
@@ -124,6 +122,8 @@
                   href: service-connect-to-services.md
                 - name: Acumatica
                   href: service-connect-to-acumatica.md
+                - name: "Adobe\_Analytics"
+                  href: service-connect-to-adobe-analytics.md
                 - name: Alpine Metrics Sales Predictions
                   href: service-connect-to-alpine-metrics.md
                 - name: appFigures
@@ -248,8 +248,6 @@
                   href: service-publish-to-powerpoint.md
         - name: "Travailler avec Power\_BI"
           items:
-            - name: "Utiliser les exemples de packs de contenu Power\_BI"
-              href: sample-tutorial-connect-to-the-samples.md
             - name: Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
               href: service-from-excel-to-stunning-report.md
             - name: Utiliser Questions et réponses pour créer des visualisations et générer des rapports
@@ -268,6 +266,8 @@
               href: refresh-scheduled-refresh.md
             - name: Tableaux de bord
               items:
+                - name: Créer un tableau de bord à partir d’un rapport
+                  href: service-dashboard-create.md
                 - name: Créer une copie d’un tableau de bord
                   href: service-dashboard-copy.md
                 - name: "Épingler une vignette à un tableau de bord Power\_BI à partir d’un rapport"
@@ -314,19 +314,15 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Partager votre travail
               items:
-                - name: Introduction aux packs de contenu d’organisation
-                  href: service-organizational-content-pack-introduction.md
-                - name: Créer et publier un pack de contenu d’organisation.
-                  href: service-organizational-content-pack-create-and-publish.md
                 - name: Partager un rapport filtré
                   href: service-share-reports.md
                 - name: "Publier à partir de Power\_BI sur le web"
                   href: service-publish-to-web.md
                 - name: Incorporer le rapport à SharePoint Online
                   href: service-embed-report-spo.md
-                - name: Se connecter à des fichiers sur l’application OneDrive Entreprise de votre groupe
+                - name: Se connecter à des fichiers sur le compte OneDrive de votre groupe
                   href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
-                - name: Collaborer dans votre espace de travail de groupe Power BI
+                - name: Collaborer dans votre espace de travail de groupe
                   href: service-collaborate-power-bi-workspace.md
                 - name: "Gérer votre groupe dans Power\_BI et Office\_365"
                   href: service-manage-app-workspace-in-power-bi-and-office-365.md
@@ -334,6 +330,10 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: 'Packs de contenu d’organisation : copie, actualisation et accès'
                   href: service-organizational-content-pack-copy-refresh-access.md
+                - name: Introduction aux packs de contenu d’organisation
+                  href: service-organizational-content-pack-introduction.md
+                - name: Créer et publier un pack de contenu d’organisation.
+                  href: service-organizational-content-pack-create-and-publish.md
                 - name: Suppression de votre connexion à un pack de contenu d’organisation
                   href: service-organizational-content-pack-disconnect.md
                 - name: Partager un tableau de bord lié à un classeur Excel sur OneDrive Entreprise
@@ -446,9 +446,13 @@
                   href: service-refresh-xero-credentials.md
     - name: Ressources
       items:
-        - name: "Navigateurs pris en charge pour Power\_BI"
+        - name: Vidéos
+          href: videos.md
+        - name: Webinaires
+          href: webinars.md
+        - name: Navigateurs pris en charge
           href: service-browser-support.md
-        - name: "Langues et pays/régions pris en charge pour Power\_BI"
+        - name: Langues et pays/régions pris en charge
           href: supported-languages-countries-regions.md
         - name: Livres blancs
           href: whitepapers.md
@@ -480,24 +484,28 @@
           href: desktop-tutorial-row-level-security-onprem-ssas-tabular.md
     - name: Exemples
       items:
-        - name: "Télécharger le classeur d’exemples financiers pour Power\_BI"
-          href: sample-financial-download.md
-        - name: "Exemple Analyse de la qualité des fournisseurs pour Power\_BI\_: visite guidée"
-          href: sample-supplier-quality.md
-        - name: "Exemple Analyse des dépenses informatiques pour Power\_BI\_: Visite guidée"
-          href: sample-it-spend.md
-        - name: "Exemple Vente et marketing pour Power\_BI\_: visite guidée"
-          href: sample-sales-and-marketing.md
-        - name: "Exemple Rentabilité des clients pour Power BI\_: visite guidée"
+        - name: "Exemples pour Power\_BI"
+          href: sample-datasets.md
+        - name: Utilisation des exemples de packs de contenu
+          href: sample-tutorial-connect-to-the-samples.md
+        - name: "Exemple Rentabilité des clients\_: visite guidée"
           href: sample-customer-profitability.md
+        - name: "Exemple Analyse des dépenses informatiques\_: visite guidée"
+          href: sample-it-spend.md
         - name: "Exemple Ressources humaines\_: visite guidée"
           href: sample-human-resources.md
-        - name: "Exemple Analyse des opportunités pour Power\_BI\_: visite guidée"
+        - name: "Exemple Analyse des opportunités\_: visite guidée"
           href: sample-opportunity-analysis.md
         - name: "Exemple Analyse de l’approvisionnement\_: visite guidée"
           href: sample-procurement.md
-        - name: "Exemple Analyse de la vente au détail pour Power\_BI\_: Visite guidée"
+        - name: "Exemple Analyse de la vente au détail\_: visite guidée"
           href: sample-retail-analysis.md
+        - name: "Exemple Vente et marketing\_: visite guidée"
+          href: sample-sales-and-marketing.md
+        - name: "Exemple Analyse de la qualité des fournisseurs\_: visite guidée"
+          href: sample-supplier-quality.md
+        - name: Télécharger le classeur d’exemples financiers
+          href: sample-financial-download.md
     - name: Concepts
       items:
         - name: "Nouveautés de la dernière mise à jour de Power\_BI\_Desktop"
@@ -806,6 +814,8 @@
           items:
             - name: Afficher des rapports locaux dans les applications mobiles
               href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: Application Power BI pour la réalité mixte (Preview)
+              href: mobile-mixed-reality-app.md
             - name: Partager un tableau de bord à partir de l’application mobile Power BI
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Interagir avec des vignettes dans les applications mobiles
@@ -836,8 +846,10 @@
           items:
             - name: "Prise en main de l’application Power\_BI pour Android"
               href: mobile-android-app-get-started.md
-            - name: Correction de l’erreur « votre certificat SSL d’entreprise n’est pas approuvé »
+            - name: Correction de l’erreur « Votre certificat SSL d’entreprise n’est pas approuvé »
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+            - name: Correction de l’erreur « Mise à jour requise de Android System Webview »
+              href: mobile-android-error-update-android-system-webview.md
         - name: iOS
           items:
             - name: "Bien démarrer avec l’application Power\_BI pour iOS"
@@ -916,7 +928,7 @@
               href: service-custom-visuals-getting-started-with-developer-tools.md
             - name: Examen des éléments visuels personnalisés pour la sécurité et la confidentialité
               href: service-custom-visuals-review-for-security-and-privacy.md
-            - name: Obtenir un visuel personnalisé certifié
+            - name: Obtenir un élément personnel certifié
               href: power-bi-custom-visuals-certified.md
             - name: Publier des visuels personnalisés dans AppSource
               href: developer/office-store.md
@@ -1004,8 +1016,6 @@
           href: report-server/changelog.md
         - name: Chronologie du support technique
           href: report-server/support-timeline.md
-        - name: Sources de données prises en charge
-          href: report-server/data-sources.md
         - name: Configuration matérielle et logicielle requise
           href: report-server/system-requirements.md
         - name: Navigateurs pris en charge
@@ -1016,9 +1026,9 @@
           items:
             - name: "Actualisation planifiée de rapport Power\_BI"
               href: report-server/scheduled-refresh.md
-            - name: "Sources de données de rapport Power\_BI (.pbix)"
+            - name: "Sources de données de rapport Power\_BI"
               href: report-server/data-sources.md
-            - name: Sources de données de rapport paginé (.rdl)
+            - name: Sources de données de rapport paginé
               href: report-server/connect-data-sources.md
             - name: Abonnements
               href: 'https://go.microsoft.com/fwlink/?linkid=851310'
@@ -1048,10 +1058,6 @@
               href: report-server/getting-around.md
             - name: Créer un rapport paginé pour un serveur de rapports
               href: report-server/quickstart-create-paginated-report.md
-            - name: "Rapports Power\_BI avancés"
-              href: 'https://go.microsoft.com/fwlink/?linkid=848708'
-            - name: Rapports paginés avancés
-              href: 'https://go.microsoft.com/fwlink/?linkid=848709'
             - name: Travailler avec des indicateurs de performance clés
               href: 'https://go.microsoft.com/fwlink/?linkid=849021'
             - name: 'Accès à des Jeux de données partagés en tant que flux OData '

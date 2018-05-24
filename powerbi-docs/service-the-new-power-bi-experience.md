@@ -8,14 +8,14 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 05/07/2018
+ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 157103ff224cf0d71e2ca14106903b9c89fdc3d4
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 004b9c921de9e94cb52f90cdea4815acd6162175
+ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Démarrage rapide - Découverte du service Power BI
 
@@ -125,6 +125,19 @@ Vous pouvez également trier le contenu par nom ou propriétaire.
 ![trier le contenu](media/service-the-new-power-bi-experience/power-bi-sort.png)
 
 Pour en savoir plus, consultez [Navigation dans Power BI : rechercher, trier, filtrer](service-navigation-search-filter-sort.md).
+
+## <a name="clean-up-resources"></a>Nettoyer les ressources
+Une fois que vous avez terminé ce guide de démarrage rapide, vous pouvez supprimer le rapport, le jeu de données et le tableau de bord de l’exemple Analyse des ventes au détail, si vous le souhaitez.
+
+1. Ouvrez le service Power BI (app.powerbi.com) et connectez-vous.    
+2. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail > Mon espace de travail**.  
+    Vous avez noté l’étoile jaune indiquant que c’est un favori ?    
+3. Sous l’onglet **Tableaux de bord**, sélectionnez l’icône **Supprimer** de la corbeille à côté du tableau de bord Analyse des ventes au détail.    
+
+    ![supprimer le tableau de bord](media/service-the-new-power-bi-experience/power-bi-cleanup.png)
+
+4. Sélectionnez l’onglet **Rapports** et procédez de la même façon pour le rapport Analyse des ventes au détail.
+1. Sélectionnez l’onglet **Jeux de données** et procédez de la même façon pour le jeu de données Analyse des ventes au détail.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

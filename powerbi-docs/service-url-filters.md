@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 071f7ea0c324ec8fe0160766f65cf929f811362a
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: aeaea6d14cf8f4fd62fbbf5098e68429fe40b96a
+ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 Lorsque vous ouvrez un rapport dans le service Power BI, chaque page du rapport possède sa propre URL unique. Pour filtrer cette page de rapport, vous pouvez utiliser le volet Filtres sur le canevas de rapport.  Vous pouvez également ajouter des paramètres de chaîne de requête à l’URL pour filtrer le rapport. Imaginons que vous avez un rapport que vous envisagez de présenter à des collègues après l’avoir filtré pour eux au préalable. Une solution consiste à ajouter les paramètres de filtre à l’URL par défaut du rapport, puis à envoyer par courriel à vos collègues l’URL entière ainsi obtenue.
@@ -97,9 +97,10 @@ Après avoir filtré le rapport à l’aide de paramètres de chaîne de requêt
 
 Cela peut cependant être utile lorsque vous souhaitez afficher différents résultats : filtrés sur le tableau de bord, non filtrés dans le rapport.
 
-## <a name="limitations-and-troubleshooting"></a>Limitations et résolution des problèmes
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder certaines choses à l’esprit.
 
+* Dans Power BI Report Server, vous pouvez [passer des paramètres de rapport](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) en les ajoutant dans une URL de rapport. Ces paramètres d’URL ne sont pas préfixés parce qu’ils sont passés directement dans le moteur de traitement de rapport. 
 * Le filtrage de chaîne de requête ne fonctionne pas avec des URL de type [Publier sur le web](service-publish-to-web.md) ou Power BI Embedded.   
 * Le type de champ doit être un nombre ou une chaîne.
 * Les noms de tableau et de champ ne peuvent pas contenir d’espaces.
