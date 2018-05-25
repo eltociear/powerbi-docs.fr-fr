@@ -96,6 +96,8 @@
                   href: service-print.md
                 - name: S’abonner à un rapport ou tableau de bord
                   href: service-report-subscribe.md
+                - name: Nombreux moyens d’ouvrir un rapport
+                  href: service-report-open.md
                 - name: Renommer du contenu dans Power BI
                   href: service-rename.md
                 - name: Afficher des tableaux de bord et des rapports en mode plein écran (mode TV)
