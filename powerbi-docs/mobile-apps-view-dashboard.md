@@ -1,27 +1,20 @@
 ---
 title: Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
-description: "Le service Power BI vous permet de créer des tableaux de bord et des rapports ou de vous y connecter. Affichez-les ensuite dans les applications mobiles Power BI."
-services: powerbi
-documentationcenter: 
+description: Le service Power BI vous permet de créer des tableaux de bord et des rapports ou de vous y connecter. Affichez-les ensuite dans les applications mobiles Power BI.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: complete
-qualitydate: 07/08/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/16/2018
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/07/2018
 ms.author: maggies
-ms.openlocfilehash: e91b9745663ad88d388b410feb83ac8dfdc791b6
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 2e178d3c8961865fa7d728d50f118c882788247e
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295870"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -37,7 +30,7 @@ Un tableau de bord est un portail qui donne accès au cycle de vie et aux proces
 
 Pour afficher des tableaux de bord et des rapports sur votre appareil mobile, vous devez les créer ou vous y connecter à partir d’un navigateur web. 
 
-1. Accédez au service Power BI ([https://www.powerbi.com](https://www.powerbi.com)), puis [créez un compte](service-self-service-signup-for-power-bi.md).
+1. Accédez au service Power BI ([https://www.powerbi.com](https://www.powerbi.com)) et [créez un compte](service-self-service-signup-for-power-bi.md).
 2. [Créez vos propres tableaux de bord et vos propres rapports Power BI](service-get-started.md) ou connectez-vous à des [applications Power BI](service-connect-to-services.md) existantes pour divers services, tels que [Microsoft Dynamics CRM](service-connect-to-microsoft-dynamics-crm.md) et [Adobe Analytics](service-connect-to-adobe-analytics.md).
 
 Voici un tableau de bord Power BI dans le service Power BI :
@@ -115,31 +108,21 @@ Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom av
    
    ![Page d’accueil du tableau de bord](media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
 
-     -     Les étoiles jaunes ![Étoile Favori](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord favoris. 
+    Les étoiles jaunes ![Étoile Favori](media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord favoris. 
 
-     -     Une notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](service-data-classification.md).
-
+    Une notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](service-data-classification.md).
 
     Les tableaux de bord Power BI ont une apparence un peu différente sur votre téléphone Android. Toutes les vignettes ont la même largeur et elles sont disposées verticalement.
 
     ![Mode portrait du tableau de bord](media/mobile-apps-view-dashboard/pbi_andr_dash.png)
 
-     Ou faites simplement pivoter votre téléphone pour les afficher en mode paysage.
-
-    > [AZURE.TIP] Si vous êtes le propriétaire du tableau de bord, [dans le service Power BI](service-create-dashboard-mobile-phone-view.md), vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 
+    Si vous êtes le propriétaire du tableau de bord, [dans le service Power BI](service-create-dashboard-mobile-phone-view.md), vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 
 
 1. Dans le tableau de bord, vous pouvez appuyer sur les points de suspension (...) verticaux en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
    
    ![Menu Points de suspension](media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Balayez vers le haut ou vers le bas pour voir toutes les [vignettes du tableau de bord](mobile-tiles-in-the-mobile-apps.md). 
 3. Pour revenir à la page d’accueil des tableaux de bord, appuyez sur le nom du tableau de bord pour ouvrir le cheminement de navigation, puis appuyez sur **Mon espace de travail**.   
-
-### <a name="view-dashboards-in-landscape-mode-on-your-android-phone"></a>Afficher les tableaux de bord en mode paysage sur votre téléphone Android
-Vous pouvez également afficher les tableaux de bord en mode paysage en faisant simplement pivoter votre téléphone. La disposition du tableau de bord passe d’une série de vignettes à une vue du tableau de bord dans son ensemble. Vous voyez toutes les vignettes du tableau de bord disposées comme elles le sont dans le service Power BI.
-
-![Mode paysage du tableau de bord](media/mobile-apps-view-dashboard/power-bi-android-landscape-dashboard.png)
-
-Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou le mouvement panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
 
 ## <a name="view-dashboards-on-your-android-tablet"></a>Afficher des tableaux de bord sur votre tablette Android
 1. Ouvrez l’application Power BI sur votre tablette Android et connectez-vous.

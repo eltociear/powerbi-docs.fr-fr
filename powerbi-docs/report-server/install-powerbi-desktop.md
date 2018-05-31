@@ -1,27 +1,20 @@
 ---
 title: Installer Power BI Desktop optimisé pour Power BI Report Server
 description: Découvrez comment installer Power BI Desktop optimisé pour Power BI Report Server
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: c22e909130767abd1dc6f0aa00d76e1fb6b99ee7
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 2061bb5afde8c19693eb565b298fabedebae89ac
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34310403"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installer Power BI Desktop optimisé pour Power BI Report Server
 Découvrez comment installer Power BI Desktop optimisé pour Power BI Report Server.
@@ -109,9 +102,9 @@ Si votre serveur de rapports est d’une version antérieure, vous avez besoin d
 ## <a name="next-steps"></a>Étapes suivantes
 À présent que Power BI Desktop est installé, vous pouvez commencer à créer des rapports Power BI.
 
-[Démarrage rapide : créer un rapport Power BI pour Power BI Report Server](quickstart-create-powerbi-report.md)  
+[Créer un rapport Power BI pour Power BI Report Server](quickstart-create-powerbi-report.md)  
 [Prise en main de Power BI Desktop](../desktop-getting-started.md)  
-Formation guidée : [Prise en main de Power BI Desktop](../guided-learning/gettingdata.yml#step-2)  
+Formation guidée : [Prise en main de Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
 [Présentation du Manuel de l’utilisateur, Power BI Report Server](user-handbook-overview.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

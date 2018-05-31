@@ -1,6 +1,6 @@
 ---
-title: Cartes thématiques (choroplèthes) dans Power BI (didacticiel)
-description: 'Documentation : didacticiel sur la création de cartes choroplèthes dans Power BI'
+title: Cartes choroplèthes dans Power BI
+description: Documentation sur la création de cartes choroplèthes dans Power BI
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -19,13 +19,14 @@ ms.workload: powerbi
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a6cddcf361072bdd265a94de9efd5dbc7ecf05c8
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: e982fa5cc75249ab2475e02150a92294cb87980a
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33812308"
 ---
-# <a name="filled-maps-choropleths-in-power-bi-tutorial"></a>Cartes thématiques (choroplèthes) dans Power BI (didacticiel)
+# <a name="filled-maps-choropleths-in-power-bi"></a>Cartes choroplèthes dans Power BI
 Une carte choroplèthe utilise des ombrages, des teintes ou des motifs pour représenter proportionnellement les variations d’une valeur entre des zones géographiques ou des régions.  Visualisez rapidement les écarts relatifs grâce aux ombrages allant du clair (moins fréquent/plus bas) au foncé (plus fréquent/plus élevé).    
 
 ![](media/power-bi-visualization-filled-maps-choropleths/large_map.png)

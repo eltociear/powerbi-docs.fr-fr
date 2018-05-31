@@ -1,15 +1,15 @@
 ---
-title: "Partie 2, Ajouter des visualisations à un rapport Power BI (didacticiel)"
-description: "Didacticiel : Partie 2, Ajouter des visualisations à un rapport Power BI"
+title: Partie 2, Ajouter des visualisations à un rapport Power BI
+description: Partie 2, Ajouter des visualisations à un rapport Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,19 +18,20 @@ ms.workload: powerbi
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 567bece0089a01170e218af9606331e44cb7834f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 39f11f2740918e5ec3fc62c86c72bac4544d5ff6
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33814309"
 ---
-# <a name="part-2-add-visualizations-to-a-power-bi-report-tutorial"></a>Partie 2, Ajouter des visualisations à un rapport Power BI (didacticiel)
+# <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Partie 2, Ajouter des visualisations à un rapport Power BI
 Dans la [partie 1](power-bi-report-add-visualizations-ii.md), vous avez créé une visualisation de base en cochant les cases en regard des noms de champs.  Dans la partie 2, vous allez apprendre à utiliser le glisser-déplacer et tirer pleinement parti des volets **Champs** et **Visualisations** pour créer et modifier des visualisations.
 
 ### <a name="prerequisites"></a>Conditions préalables
 - [Partie 1](power-bi-report-add-visualizations-ii.md)
 - Service Power BI - Il est possible d’ajouter des visualisations à des rapports à l’aide du service Power BI et de Power BI Desktop. Ce didacticiel utilise le service Power BI. 
-- Exemple Analyse de la vente au détail
+- Retail Analysis sample
 
 ## <a name="create-a-new-visualization"></a>Créer une visualisation
 Dans ce didacticiel, nous allons explorer notre jeu de données Analyse de vente au détail et créer quelques visualisations clés.

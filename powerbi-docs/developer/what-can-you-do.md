@@ -1,56 +1,41 @@
 ---
-title: "Que peuvent faire les développeurs avec Power BI ?"
-description: "Power BI offre un vaste éventail d’options pour les développeurs. Cela va de l’incorporation dans des visuels personnalisés aux jeux de données en streaming."
+title: Que peuvent faire les développeurs avec Power BI ?
+description: Power BI offre un vaste éventail d’options pour les développeurs. Cela va de l’incorporation dans des visuels personnalisés aux jeux de données en streaming.
 services: powerbi
-documentationcenter: 
 author: markingmyname
-manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
-ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 07/20/2017
 ms.author: maghan
-ms.openlocfilehash: b310562ac31694f398a659018743b8fa7aa46e35
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 05/03/2018
+ms.topic: overview
+ms.service: powerbi
+ms.custom: mvc
+manager: kfile
+ms.openlocfilehash: 473052ee652c1fd6e68294efdbd7334cbb2df714
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33810963"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Que peuvent faire les développeurs avec Power BI ?
-Power BI offre un vaste éventail d’options pour les développeurs. Cela va de l’incorporation dans des visuels personnalisés aux jeux de données en streaming.
+
+Les développeurs ont différentes possibilités pour inclure du contenu Power BI dans des applications, notamment **l’incorporer avec Power BI**, utiliser des **visuels personnalisés** ou **envoyer (push) des données dans Power BI**.
 
 ## <a name="embedding"></a>Incorporation
-Le service Power BI et Power BI Embedded dans Azure s’assemblent afin d’offrir une seule API pour incorporer vos tableaux de bord et rapports. Cela signifie que vous disposez d’une surface d’API, d’un ensemble cohérent de fonctionnalités et de l’accès aux dernières fonctionnalités de Power BI telles que des tableaux de bord, des passerelles et des espaces de travail d’application lors de l’incorporation de votre contenu. Pour plus d’informations, voir [Incorporation avec Power BI](embedding.md).
+Le service Power BI (SaaS) et le service Power BI Embedded dans Azure (PaaS) comportent des API permettant d’incorporer des tableaux de bord et des rapports. Vous avez donc accès aux dernières fonctionnalités de Power BI (tableaux de bord, passerelles et espaces de travail d’application, par exemple) pour incorporer votre contenu.
 
-![](media/what-can-you-do/powerbi-embed-sample.png)
+![Exemple PBIE](media/what-can-you-do/what-can-you-do-01.png)
 
-## <a name="custom-visuals"></a>Éléments visuels personnalisés
-Les visuels personnalisés vous permettent de créer vos propres visuels à utiliser dans les rapports Power BI. Les visuels personnalisés sont écrits en TypeScript, qui est un sur-ensemble de JavaScript prenant en charge certaines fonctionnalités avancées et un accès en avant-première aux fonctionnalités de ES6/ES7. Les styles de visuels sont gérés à l’aide de feuilles de style en cascade (CSS). Pour votre facilité, nous utilisons le précompilateur LESS qui prend en charge certaines fonctionnalités avancées, telles que l’imbrication, les variables, les mixins, les conditions, les boucles, etc. Si vous ne souhaitez pas utiliser ces fonctionnalités, vous pouvez simplement écrire une feuille de style CSS brute dans le fichier LESS.
+## <a name="develop-custom-visuals"></a>Développer des visuels personnalisés
+Les visuels personnalisés vous permettent de créer vos propres visuels à utiliser dans les rapports Power BI. Les visuels personnalisés sont écrits en TypeScript, un surensemble de JavaScript. TypeScript prend en charge certaines fonctionnalités avancées ainsi qu’un accès anticipé aux fonctionnalités ES6/ES7. Les styles de visuels sont gérés à l’aide de feuilles de style en cascade (CSS). Dans un souci de commodité, nous utilisons le précompilateur LESS, qui prend en charge certaines fonctionnalités avancées, notamment l’imbrication, les variables, les conditions, les boucles, etc. Si vous ne souhaitez pas utiliser ces fonctionnalités, vous pouvez simplement écrire une feuille de style CSS brute dans le fichier LESS.
 
-Pour plus d’informations sur la façon de développer et publier un visuel personnalisé, voir [Publier des visuels personnalisés dans l’Office Store](office-store.md).
-
-![](media/what-can-you-do/powerbi-custom-visual-store.png)
+![Exemple de visuel personnalisé](media/what-can-you-do/powerbi-custom-visual-store.png)
 
 ## <a name="push-data-into-power-bi"></a>Transmettre des données à Power BI
 Vous pouvez utiliser l’API Power BI pour envoyer des données dans un jeu de données. Cela vous permet d’ajouter une ligne à une table à l’intérieur d’un jeu de données. Les nouvelles données peuvent ensuite être reflétées dans des vignettes sur un tableau de bord et dans des visuels à l’intérieur de votre rapport.
 
-Pour plus d’informations, voir [Transmettre des données à un tableau de bord](walkthrough-push-data.md).
+![Exemple de données push](media/what-can-you-do/powerbi-push-data.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Incorporation avec Power BI](embedding.md)  
-[Comment migrer le contenu d’une collection d’espaces de travail Power BI Embedded vers Power BI](migrate-from-powerbi-embedded.md)  
-[Dépôt Git d’API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  
-[Dépôt Git de C# pour Power BI ](https://github.com/Microsoft/PowerBI-CSharp)  
 [Publier des visuels personnalisés dans l’Office Store](office-store.md)  
-[Dépôt Git de visuels Power BI](https://github.com/Microsoft/PowerBI-visuals)  
-[Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Livre blanc sur Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-
+[Transmettre des données à un tableau de bord](walkthrough-push-data.md)

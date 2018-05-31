@@ -1,33 +1,34 @@
 ---
-title: Mettre en forme et combiner des données dans Power BI Desktop
-description: Mettre en forme et combiner des données dans Power BI Desktop
-services: powerbi
-documentationcenter: ''
+title: Mettre en forme et combiner des données provenant de plusieurs sources
+description: Ce tutoriel explique comment mettre en forme et combiner des données dans Power BI Desktop.
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/30/2018
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/03/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0bb2f8a8d9299d525085a8ba7d2ecabdcd9e6c78
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: 27479add7839e1078e76bbb6523b287f10194566
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34288748"
 ---
-# <a name="shape-and-combine-data-in-power-bi-desktop"></a>Mettre en forme et combiner des données dans Power BI Desktop
-Avec **Power BI Desktop**, vous pouvez vous connecter à différents types de sources de données, puis mettre en forme les données en fonction de vos besoins. *Mettre en forme* des données consiste à transformer les données, par exemple à renommer des colonnes ou des tables, à remplacer du texte par des nombres, à supprimer des lignes, à définir la première ligne comme en-têtes, etc. *Combiner* des données consiste à se connecter à plusieurs sources de données, à les mettre en forme en fonction des besoins, puis à les consolider dans une seule requête utile.
+# <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop
 
-Cet article montre comment mettre en forme une requête à l’aide de Power BI Desktop, et met en évidence les tâches courantes. Pour plus d’informations sur la requête utilisée ici, notamment sur sa création de toutes pièces, consultez [Prise en main de Power BI Desktop](desktop-getting-started.md).
+Avec **Power BI Desktop**, vous pouvez vous connecter à différents types de sources de données, puis mettre en forme les données en fonction de vos besoins, de façon à créer des rapports visuels partageables avec d’autres. *Mettre en forme* des données consiste à transformer les données, par exemple à renommer des colonnes ou des tables, à remplacer du texte par des nombres, à supprimer des lignes, à définir la première ligne comme en-têtes, etc. *Combiner* des données consiste à se connecter à plusieurs sources de données, à les mettre en forme en fonction des besoins, puis à les consolider dans une seule requête utile.
+
+Dans ce tutoriel, vous allez découvrir comment :
+
+* mettre forme les données avec **l’Éditeur de requête** ;
+* vous connecter à une source de données ;
+* vous connecter à une autre source de données ;
+* combiner ces sources de données et créer un modèle de données utilisable dans des rapports.
+
+Ce tutoriel montre comment mettre en forme une requête avec Power BI Desktop, et présente les tâches les plus courantes. Pour plus d’informations sur la requête utilisée ici, notamment sur sa création de toutes pièces, consultez [Prise en main de Power BI Desktop](desktop-getting-started.md).
 
 Il est utile de savoir que l’ **Éditeur de requête** dans Power BI Desktop propose un grand nombre de menus contextuels, en plus du ruban. La plupart des éléments que vous pouvez sélectionner dans la section **Transformer** du ruban est également disponible en cliquant avec le bouton droit sur un élément (par exemple, sur une colonne) et en choisissant une option dans le menu qui s’affiche.
 

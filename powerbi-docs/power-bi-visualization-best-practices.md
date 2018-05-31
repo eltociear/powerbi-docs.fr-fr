@@ -18,11 +18,12 @@ ms.workload: powerbi
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c1b0d87d432dc337a1dab5d13bba10cc8c99dd14
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 26d04c77967a8223672cbe174a3c45e6d12602ea
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813366"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Meilleures pratiques en matière de conception de visuels et de rapports
 <!-- Shared newnav Include -->
@@ -607,7 +608,7 @@ L’exemple ci-dessous montre les tendances dans le nombre de médailles distrib
 #### <a name="best-practices"></a>Meilleures pratiques
 * Lorsque les utilisateurs regardent les graphiques en courbes, la première chose qu’ils voient est la forme de la courbe.  Cela signifie que vous avez besoin d’un axe X qui rend la courbe explicite, par exemple des catégories de temps et de distribution.  Si vous placez des champs de catégorie comme un produit ou une zone géographique sur l’axe X, le graphique en courbes n’est pas intéressant, car la forme de la courbe ne fournit aucune information pertinente.
 * Si vous choisissez de placer plusieurs graphiques les uns au-dessous des autres comme ceci, pour faciliter la comparaison entre les séries, alignez l’axe X. Utilisez des filtres pour vous assurer que la même plage de valeurs est affichée.  Par exemple, si vous examinez des plages de dates, vérifiez qu’elles sont identiques.  Par exemple, de 1896 à 2012 sur les deux graphiques.
-* Utilisez tout l’espace.  Si cela est pertinent pour vos données, définissez les points de début et de fin de l’axe Y pour éliminer l’espace vide en haut et en bas de votre graphique et mettre en évidence les points de données réels. Pour ce faire, ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau. Développez la zone **Axe Y** et définissez les points de **début** et de **fin**.
+* Tirez pleinement parti de l’espace.  Si cela est pertinent pour vos données, définissez les points de début et de fin de l’axe Y pour éliminer l’espace vide en haut et en bas de votre graphique et mettre en évidence les points de données réels. Pour ce faire, ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau. Développez la zone **Axe Y** et définissez les points de **début** et de **fin**.
   
   ![](media/power-bi-visualization-best-practices/power-bi-start-end.png)
   
@@ -668,7 +669,7 @@ Ajoutez une autre dimension à vos graphiques à barres/histogrammes en empilant
 
 **Figure 54 : Histogramme empilé**
 
-Cet histogramme empilé nous montre que le chiffre d’affaires total augmente au fil du temps et que les catégories Commercial et Broadcasting augmentent régulièrement au fil du temps, ce qui contribue à l’augmentation globale du chiffre d’affaires.  Malgré tout, ce graphique ne permet pas de comparer facilement l’impact de chacune des 3 catégories entre elles. Par exemple, en quoi la croissance de la catégorie Commercial est-elle comparable à la croissance de la catégorie Broadcasting ou Match Day ?  Pour ces données, un graphique en courbes constitue un meilleur choix ou un visuel compagnon.  
+Cet histogramme empilé nous montre que le chiffre d’affaires total augmente au fil du temps et que les catégories Commercial et Broadcasting augmentent régulièrement au fil du temps, ce qui contribue à l’augmentation globale du chiffre d’affaires.  Malgré tout, ce graphique ne permet pas de comparer facilement l’impact de chacune des 3 catégories entre elles. Par exemple, en quoi la croissance de la catégorie Commercial est-elle comparable à la croissance de la catégorie Broadcasting ou Match Day ?  Pour ces données, un graphique en courbes constitue un meilleur choix ou un visuel complémentaire.  
 
 ![](media/power-bi-visualization-best-practices/power-bi-deloite2.png)
 
@@ -680,7 +681,7 @@ Dans ce graphique en courbes, il est plus facile de voir que le chiffre d’affa
 * Comme avec les barres/colonnes, vous avez la possibilité de choisir un affichage horizontal ou vertical.   L’affichage horizontal est un meilleur choix si vous avez de longues étiquettes et l’affichage vertical est idéal pour les données de séries chronologiques.  
 * Évitez d’utiliser des graphiques à barres/histogrammes empilés si vous souhaitez afficher les tendances et d’autres modèles de changement au fil du temps.  D’autres graphiques, tels que les graphiques en courbes, sont beaucoup plus efficaces.
 * Vous pouvez également baser la distribution sur le volume total ou comme pourcentage du total.  
-* Comme l’a indiqué Stephen Few, *il est difficile de comparer les segments d’un graphique à barres empilées. Si les segments sont organisés côte à côte et ont tous augmentés à partir de la même ligne de référence, il est facile de comparer leurs hauteurs, mais s’ils sont empilés les uns sur les autres, la tâche devient difficile. De plus, bien qu’il soit assez facile de voir comment (le chiffre d’affaires) a évolué d’un mois à l’autre, il est très difficile de voir comment (le chiffre d’affaires) d’autres (catégories) a changé*.  
+* Comme l’a indiqué Stephen Few, *il est difficile de comparer les segments d’un graphique à barres empilées. Si les segments sont organisés côte à côte et ont tous augmenté à partir de la même ligne de référence, il est facile de comparer leurs hauteurs, mais s’ils sont empilés les uns sur les autres, la tâche devient difficile. De plus, bien qu’il soit assez facile de voir comment (le chiffre d’affaires) a évolué d’un mois à l’autre, il est très difficile de voir comment (le chiffre d’affaires) d’autres (catégories) a changé*.  
 * Les graphiques empilés 100 % sont un bon choix lors de l’utilisation de pourcentages dont le total est égal à 100.  Dans l’exemple ci-dessous, nous voyons la distribution de catégorie par équipe.  Les pourcentages sont relatifs et nous permettent de visualiser en un clin d’œil les tendances. Par exemple, le chiffre d’affaires de Everton provient principalement de la catégorie Broadcasting (plus de 70 %) alors que celui de PSG tire seulement 20 % de son chiffre d’affaires de Broadcasting.  Le choix d’un affichage horizontal permet de facilement ajuster les étiquettes d’équipes et de voir l’impact du type de chiffre d’affaires.
   
   ![](media/power-bi-visualization-best-practices/power-bi-deloite3.png)
@@ -734,7 +735,7 @@ Pour ce faire, ouvrez le volet Mise en forme, développez **Axe Y** et définis
 
 Pour plus d’informations, consultez les rubriques suivantes :
 
-* [Tutoriel : graphique combiné dans Power BI](power-bi-visualization-combo-chart.md)
+* [Graphique combiné dans Power BI](power-bi-visualization-combo-chart.md)
 * [The danger of dual-scaled Axes in visuals](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf) (Le risque des axes à deux échelles dans les graphiques)
 
 ### <a name="scatter-chart"></a>Nuage de points
@@ -810,14 +811,14 @@ Les indicateurs de performance clés montrent la valeur, l’état, l’objectif
 
 Pour plus d’informations, consultez :
 
-* [Tutoriel : graphiques en jauge radiale dans Power BI](power-bi-visualization-radial-gauge-charts.md)
-* [Didacticiel : Indicateurs de performance clés dans Power BI](power-bi-visualization-kpi.md)
+* [Graphiques en jauge radiale dans Power BI](power-bi-visualization-radial-gauge-charts.md)
+* [Indicateurs de performance clés dans Power BI](power-bi-visualization-kpi.md)
 
 ## <a name="conclusion"></a>Conclusion
 Il est maintenant temps de tester ces meilleures pratiques.  Gardez le contact et partagez les vôtres. Vous n’êtes pas d’accord avec nos recommandations ou vous avez trouvé une bonne raison d’enfreindre les règles ?  Faites-nous part de vos commentaires à ce sujet.  
 
 ### <a name="book-recommendations"></a>Recommandations de livres
-Il existe plusieurs bons livres qui peuvent aider les équipes à réviser les techniques de conception de visuels. Nous vous recommandons fortement de lire le livre *Information Dashboard Design* de Stephen Few. Il approfondit le sujet dans deux autres livres : *Show Me the Numbers* et *Now You See It*. Few et d’autres ont trouvé leur inspiration auprès de Edward R. Tufte, dont le livre *The Visual Display of Quantitative Information* est considéré comme un classique dans le secteur. Tufte a également écrit *Visual Explanations*, *Envisioning Information* et *Beautiful Evidence*. Nous vous recommandons également le nouvel ouvrage de Andy Kirk *Data Visualization: A Handbook for Data Driven Design*. Voici d’autres auteurs recommandés : Lachlan James, William McKnight et Boris Evelson (Forrester), Darkhorse Analytics.
+Il existe plusieurs bons livres qui peuvent aider les équipes à réviser les techniques de conception de visuels. Nous vous recommandons fortement de lire le livre *Information Dashboard Design* de Stephen Few. Il approfondit le sujet dans deux autres livres : *Show Me the Numbers* et *Now You See It*. Stephen Few et d’autres ont trouvé leur inspiration auprès de Edward R. Tufte, dont le livre *The Visual Display of Quantitative Information* est considéré comme un classique dans le secteur. Tufte a également écrit *Visual Explanations*, *Envisioning Information* et *Beautiful Evidence*. Nous vous recommandons également le nouvel ouvrage de Andy Kirk *Data Visualization: A Handbook for Data Driven Design*. Voici d’autres auteurs recommandés : Lachlan James, William McKnight et Boris Evelson (Forrester), Darkhorse Analytics.
 
-D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

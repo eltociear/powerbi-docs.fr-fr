@@ -1,28 +1,21 @@
 ---
 title: Résolution des erreurs de vignette
 description: Erreurs courantes qui peuvent survenir quand une vignette tente de s’actualiser
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
-ms.date: 12/06/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 0901860a190e29489b9c940231607d9fc63109ab
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 8b68ce7af749b7e7f292592f6debdc7e964d6c17
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34242883"
 ---
 # <a name="troubleshooting-tile-errors"></a>Résolution des erreurs de vignette
 Voici les erreurs courantes que vous pouvez rencontrer avec des vignettes, ainsi qu’une explication à ce sujet.
@@ -58,7 +51,7 @@ Il s’agit généralement d’un problème temporaire. Cela se produit généra
 
 Votre élément visuel a tenté d’interroger un trop grand nombre de données pour que nous puissions générer le résultat avec les ressources disponibles. Essayez de filtrer l’élément visuel pour réduire la quantité de données dans le résultat.
 
-**Nous ne pouvons pas identifier les champs suivants : {0}. Veuillez mettre à jour l’élément visuel avec des champs existant dans le jeu de données.**
+**Nous ne parvenons pas à identifier les champs suivants : {0}. Veuillez mettre à jour l’élément visuel avec des champs existant dans le jeu de données.**
 
 Le champ a probablement été supprimé ou renommé. Vous pouvez supprimer le champ incorrect de l’élément visuel, ajouter un autre champ, puis le réépingler.
 

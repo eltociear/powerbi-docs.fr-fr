@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/21/2018
 ms.author: davidi
-ms.openlocfilehash: d4c32d82fb25fcce47900080d3c454623e14cd74
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: f28df3bff1759c1a0b06d49710a8c7df017229fa
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33810894"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -59,11 +60,11 @@ Cette colonne calculée retourne la valeur 100, quel que soit l’emplacement o
 Quand vous utilisez une valeur catégorique (chaîne) dans Power BI pour les axes du graphique ou dans un segment ou un filtre, l’ordre par défaut est l’ordre alphabétique. Pour modifier cet ordre, par exemple si vous avez affaire à des éléments comme des jours de la semaine ou des mois, vous pouvez indiquer à Power BI Desktop de trier les valeurs selon une autre colonne. Pour en savoir plus, consultez [Trier par colonne dans Power BI Desktop](desktop-sort-by-column.md).
 
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Création simplifiée de cartes grâce aux indications fournies à Bing
-De par son intégration à Bing, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui facilite la création de cartes.  Bing utilise des algorithmes et des indications pour essayer d’obtenir le bon emplacement, mais il ne s’agit que d’une hypothèse. Pour augmenter vos chances d’obtenir un géocodage correct, appliquez les conseils suivants :
+De par son intégration à Bing, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui facilite la création de cartes.  Bing utilise des algorithmes et des indications pour essayer d’obtenir le bon emplacement, mais il ne s’agit que d’une hypothèse. Pour augmenter vos chances d’obtenir un géocodage correct, vous pouvez utiliser les conseils suivants :
 
 Quand vous créez une carte, vous cherchez souvent à tracer des pays, des États et des villes.  Dans Power BI Desktop, si vous nommez des colonnes après la désignation géographique, Bing sera plus à même de deviner ce que vous souhaitez afficher. Par exemple, si vous avez un champ contenant des états américains comme « Californie » et « Washington », Bing peut retourner l’emplacement de la ville de Washington, DC et non celui de l’État de Washington pour le mot « Washington ».  Vous pouvez nommer la colonne « État » pour améliorer le géocodage.  Il en va de même pour les colonnes nommées « Pays » et « Ville ».   
 
-Certaines désignations sont ambiguës lorsqu’elles sont envisagées dans le contexte de plusieurs pays ou régions.  Dans certains cas, ce qu’un pays ou une région considère comme un « état » peut être traité comme une « province », un « département » ou une autre désignation.  Pour augmenter la précision du géocodage, générez des colonnes qui ajoutent plusieurs champs et utilisez-les pour tracer les emplacements de vos données.  Par exemple, au lieu de passer uniquement « Wiltshire », vous pouvez passer « Wiltshire, Angleterre » pour obtenir un résultat de géocodage plus précis. 
+Certaines désignations sont ambiguës lorsqu’elles sont envisagées dans le contexte de plusieurs pays ou régions.  Dans certains cas, ce qu’un pays ou une région considère comme un « état » peut être traité comme une « province », un « département » ou une autre désignation.  Pour augmenter la précision du géocodage, créez des colonnes qui regroupent plusieurs champs et utilisez-les pour tracer les emplacements de vos données.  Par exemple, au lieu de passer uniquement « Wiltshire », vous pouvez passer « Wiltshire, Angleterre » pour obtenir un résultat de géocodage plus précis. 
 
 Vous pouvez toujours fournir des emplacements spécifiques basés sur la latitude et la longitude dans le service Power BI ou Desktop.  Si vous procédez de la sorte, vous devez également passer un champ Emplacement ; sinon, les données sont agrégées par défaut, et l’emplacement défini par la latitude et la longitude peut ne pas correspondre à celui que vous attendiez.
 
@@ -71,11 +72,11 @@ Vous pouvez toujours fournir des emplacements spécifiques basés sur la latitud
 Vous pouvez également vous assurer que les champs sont correctement géocodés en définissant la Catégorie de données sur les champs de données.   Dans Power BI Desktop, sélectionnez la table souhaitée, accédez au ruban d’options avancées, puis spécifiez Adresse, Ville, Continent, Région, Pays, Code Postal, État ou Province comme Catégorie de données.  Ces catégories de données aident Bing à encoder correctement les données. Pour plus d’informations, consultez [Catégorisation des données dans Power BI Desktop](desktop-data-categorization.md).
 
 ## <a name="better-geocoding-with-more-specific-locations"></a>Amélioration du géocodage grâce à des emplacements plus spécifiques
-Parfois, même la définition des catégories de données pour le mappage ne suffit pas.  Générez un emplacement plus spécifique, une rue par exemple, à l’aide de l’Éditeur de requête dans Power BI Desktop.  Utilisez la fonctionnalité Ajouter une colonne pour créer une colonne personnalisée.  Puis générez l’emplacement souhaité comme suit : 
+Parfois, même la définition des catégories de données pour le mappage ne suffit pas.  Générez un emplacement plus spécifique, une rue par exemple, à l’aide de l’Éditeur de requête dans Power BI Desktop.  Utilisez la fonctionnalité Ajouter une colonne pour créer une colonne personnalisée.  Puis créez l’emplacement souhaité comme suit : 
 
     = [Field1] & " " & [Field2]
 
-Utilisez ce champ résultant dans les visualisations de carte. Cette approche est très utile pour générer des rues à partir des champs « Adresse d’expédition » qui sont couramment employés dans les jeux de données.  Sachez toutefois que la concaténation ne fonctionne qu’avec des champs de texte.  Si nécessaire, convertissez le numéro de rue en type de données Texte avant de vous en servir pour générer une adresse.
+Utilisez ensuite ce champ résultant dans les visualisations de carte. Cette approche est très utile pour générer des rues à partir des champs « Adresse d’expédition » qui sont couramment employés dans les jeux de données.  Sachez toutefois que la concaténation ne fonctionne qu’avec des champs de texte.  Si nécessaire, convertissez le numéro de rue en type de données Texte avant de vous en servir pour générer une adresse.
 
 ## <a name="histograms-in-the-query-stage"></a>Histogrammes dans l’étape de requête
 Vous pouvez générer des histogrammes de plusieurs façons dans Power BI Desktop. Commençons par la plus simple :
@@ -97,11 +98,11 @@ Définition d’un histogramme prenant en charge le balayage : si des élément
 Pour démarrer le processus, identifiez la requête contenant le champ à utiliser pour créer un histogramme, puis sélectionnez l’option « Référence ».  Nommez la nouvelle requête « Buckets ».  Dans cet exemple, nous allons appeler la requête d’origine « Details ».  Ensuite, supprimez toutes les colonnes à l’exception de celle que vous allez utiliser comme compartiment pour l’histogramme.  Maintenant, cliquez avec le bouton droit sur la colonne et sélectionnez « Supprimer les doublons » pour faire en sorte que les valeurs restantes soient uniques dans la colonne.   Si vos données comportent des nombres décimaux, vous pouvez tout d’abord suivre la procédure « Définition de compartiments pour créer un histogramme » afin d’obtenir un ensemble gérable de compartiments.  Examinez à présent les données affichées dans l’aperçu de la requête.  Si vous voyez des valeurs vides ou null, vous devez les corriger avant de créer une relation.  Consultez la section « Création de relations si les données comprennent des valeurs null ou vides ».   Cette approche peut être problématique, car elle nécessite que les données soient triées.  Pour que les compartiments trient correctement les données, consultez « Ordre de tri : faire apparaître les catégories dans l’ordre souhaité ».  
 
 >[!NOTE]
->Il est conseillé de réfléchir à l’ordre de tri avant de créer des éléments visuels.   
+>Il est utile de réfléchir à l’ordre de tri avant de générer des visuels.   
 
 L’étape suivante du processus consiste à définir une relation entre les requêtes « Buckets » et « Details » dans la colonne des compartiments.  Dans le ruban de Power BI Desktop, cliquez sur **Gérer les relations**.  Créez une relation dans laquelle « Buckets » est dans la table de gauche et « Details » dans la table de droite, puis sélectionnez le champ que vous utilisez pour l’histogramme. 
 
-La dernière étape consiste à créer l’histogramme.  Faites glisser le champ Bucket à partir de la table « Buckets ».  Supprimez le champ par défaut de l’histogramme résultant.  Maintenant, à partir de la table « Details », faites glisser le champ de l’histogramme dans le même élément visuel.  Dans la zone des champs, spécifiez l’agrégation par défaut Nombre.  Le résultat est l’histogramme. Si vous créez un autre élément visuel comme un Treemap à partir de la table Details, sélectionnez un point de données dans Treemap pour mettre en surbrillance l’histogramme et afficher l’histogramme pour le point de données sélectionné par rapport à la tendance de l’ensemble du jeu de données.
+La dernière étape consiste à créer l’histogramme.  Faites glisser le champ Bucket à partir de la table « Buckets ».  Supprimez le champ par défaut de l’histogramme résultant.  Maintenant, à partir de la table « Details », faites glisser le champ de l’histogramme dans le même élément visuel.  Dans la zone des champs, spécifiez l’agrégation par défaut Nombre.  L’histogramme est généré. Si vous créez un autre élément visuel comme un Treemap à partir de la table Details, sélectionnez un point de données dans Treemap pour mettre en surbrillance l’histogramme et afficher l’histogramme pour le point de données sélectionné par rapport à la tendance de l’ensemble du jeu de données.
 
 ## <a name="histograms"></a>Histogrammes
 Dans Power BI Desktop, vous pouvez utiliser un champ calculé pour définir un histogramme.  Identifiez la table et la colonne à utiliser pour créer un histogramme.  Dans la zone de calcul, tapez la formule suivante :
@@ -139,7 +140,7 @@ Nous allons charger un jeu de données de demandes de support technique actives 
 > 
 > 
 
-Quand nous souhaitons faire le suivi des incidents et des éléments de travail liés à un nom de client (CustomerName) spécifique, nous ne parvenons pas à créer une relation entre ces deux jeux de données.  Certains éléments de travail (WorkItems) ne sont peut être pas liés à un nom de client (CustomerName), et nous nous retrouvons avec un champ vide ou NULL.  Si la table CustomerNames comprend des valeurs vides ou null, vous pouvez encore être dans l’impossibilité de créer une relation. Consultez « Création de relations si les données comprennent des valeurs null ou vides ».  Il existe peut-être plusieurs éléments WorkItems et CustomerIncidents pour un CustomerName donné.  
+Quand nous souhaitons faire le suivi des incidents et des éléments de travail liés à un nom de client (CustomerName) spécifique, nous ne parvenons pas à créer une relation entre ces deux jeux de données.  Certains éléments de travail (WorkItems) ne sont peut être pas liés à un nom de client (CustomerName), et nous nous retrouvons avec un champ vide ou NULL.  Si la table CustomerNames comprend des valeurs vides ou null, vous pouvez encore être dans impossibilité de créer une relation. Consultez « Création de relations si les données comprennent des valeurs null ou vides ».  Il existe peut-être plusieurs éléments WorkItems et CustomerIncidents pour un CustomerName donné.  
 
 Pour créer une relation dans ce cas, nous devons créer un jeu de données logique de tous les éléments CustomerNames dans les deux jeux de données.  Sous l’onglet Requête, vous pouvez utiliser la séquence suivante pour créer le jeu de données logique :
 
@@ -158,12 +159,12 @@ L’Éditeur de requête est un outil de manipulation des données très puissan
 Il est souvent nécessaire de générer un calcul dans Power BI Desktop qui transforme les données de plusieurs colonnes en une nouvelle colonne unique.  Cette opération peut être complexe.  Pour y parvenir, un moyen simple consiste à décomposer l’opération en plusieurs étapes.  Commencez par dupliquer les colonnes initiales. Créez ensuite les étapes des colonnes temporaires. Enfin, créez une colonne pour le résultat final.  Vous pouvez ensuite supprimer les colonnes temporaires pour ne pas saturer le jeu de données final. Cette approche est possible parce que l’onglet Requête exécute les étapes dans l’ordre. 
 
 ### <a name="duplicate-or-reference-queries-followed-by-merge-to-original-query"></a>Dupliquer ou référencer des requêtes, puis fusion avec la requête d’origine
-Il est parfois utile de calculer des statistiques récapitulatives pour un jeu de données.  Pour cela, la méthode la plus simple consiste à dupliquer la requête ou à faire référence à celle-ci sous l’onglet Requête. Ensuite, utilisez **Regrouper par** pour calculer les statistiques récapitulatives.  Les statistiques récapitulatives vous permettent de normaliser les données dans les données d’origine afin de faciliter les comparaisons.  Elles sont particulièrement utiles pour comparer des valeurs individuelles à l’ensemble des valeurs.  Pour cela, accédez à la requête d’origine, puis sélectionnez l’option Fusionner.  Ensuite, fusionnez les données de la requête de statistiques récapitulatives correspondant aux identificateurs appropriés.  Vous pouvez à présent normaliser les données en fonction des besoins de votre analyse.
+Il est parfois utile de calculer des statistiques récapitulatives pour un jeu de données.  Pour cela, la méthode la plus simple consiste à dupliquer la requête ou à faire référence à celle-ci sous l’onglet Requête. Ensuite, utilisez **Regrouper par** pour calculer les statistiques récapitulatives.  Les statistiques récapitulatives vous permettent de normaliser les données dans les données d’origine afin de faciliter les comparaisons.  Elles sont particulièrement utiles pour comparer des valeurs individuelles à l’ensemble des valeurs.  Pour cela, accédez à la requête d’origine, puis sélectionnez l’option de fusion.  Ensuite, fusionnez les données de la requête de statistiques récapitulatives correspondant aux identificateurs appropriés.  Vous pouvez à présent normaliser les données en fonction des besoins de votre analyse.
 
 ## <a name="using-dax-for-the-first-time"></a>Utilisation de DAX pour la première fois
-DAX est le langage des formules de calcul dans Power BI Desktop.  Il est optimisé pour l’analyse décisionnelle.  Si votre expérience est centrée uniquement autour d’un langage de requête semblable à SQL, cela peut vous paraître légèrement différent de ce à quoi vous êtes habitué. Si vous souhaitez apprendre DAX, vous trouverez de très bonnes ressources en ligne et divers ouvrages sur le sujet. 
+DAX est le langage des formules de calcul dans Power BI Desktop.  Il est optimisé pour l’analyse décisionnelle.  Si votre expérience est centrée autour d’un langage de requête semblable à SQL, DAX peut vous paraître légèrement différent de ce à quoi vous êtes habitué. Si vous souhaitez apprendre DAX, vous trouverez de très bonnes ressources en ligne et divers ouvrages sur le sujet. 
 
-[Démarrage rapide : Principes fondamentaux de DAX dans Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
+[Découvrir les principes fondamentaux de DAX dans Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
 
 [Informations de référence sur DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 

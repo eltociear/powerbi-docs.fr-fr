@@ -1,108 +1,107 @@
 ---
-title: "Intégrer un rapport à l’aide d’un iFrame"
-description: "L’installation de Power BI Report Server est un processus très rapide. Du téléchargement à la configuration en passant par l’installation, vous devriez être opérationnel en quelques minutes."
-services: powerbi
-documentationcenter: 
+title: Intégrer un rapport à l’aide d’un iFrame
+description: Intégration d’un rapport Power BI Report Server à l’aide d’un iFrame dans SharePoint Server
 author: markingmyname
-manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
-ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/09/2017
 ms.author: maghan
-ms.openlocfilehash: 56835bfb25c8c930099fadf710137f69fa89fc2e
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 05/04/2018
+ms.topic: quickstart
+ms.service: powerbi
+ms.component: powerbi-report-server
+ms.custom: mvc
+manager: kfile
+ms.openlocfilehash: 8d7653e6f390959df745fa2b19076ee89b26b1bc
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34293694"
 ---
-# <a name="quickstart-embed-a-power-bi-report-using-an-iframe-and-url-parameters"></a>Démarrage rapide : incorporer un rapport Power BI à l’aide d’un iFrame et de paramètres d’URL
+# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Démarrage rapide : Intégrer un rapport Power BI Report Server à l’aide d’un iFrame dans SharePoint Server
 
-Vous pouvez intégrer un rapport dans votre application à l’aide d’un iFrame. 
+Dans ce démarrage rapide, vous allez apprendre à intégrer un rapport Power BI Report Server à l’aide d’un iFrame dans une page SharePoint. Si vous utilisez SharePoint Online, Power BI Report Server doit être accessible publiquement. Dans SharePoint Online, le composant Power BI WebPart qui fonctionne avec le service Power BI ne fonctionne pas avec Power BI Report Server. 
 
-## <a name="url-parameter"></a>Paramètre d’URL
+![Exemple iFrame](media/quickstart-embed/quickstart_embed_01.png)
+## <a name="prerequisites"></a>Conditions préalables
+* Vous devez avoir installé et configuré [Power BI Report Server](https://powerbi.microsoft.com/en-us/report-server/).
+* Vous devez avoir installé [Power BI Desktop optimisé pour Power BI Report Server](install-powerbi-desktop.md).
+* Vous devez avoir un installé et configuré un environnement [SharePoint](https://docs.microsoft.com/en-us/sharepoint/install/install).
 
-Pour toute URL d’un rapport, vous pouvez ajouter un paramètre querystring défini sur `?rs:Embed=true`.
+## <a name="creating-the-power-bi-report-server-report-url"></a>Création de l’URL d’un rapport Power BI Report Server
 
-Par exemple :
+1. Téléchargez l’exemple [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) (Démonstration blog) à partir de GitHub.
 
-```
-http://myserver/reports/powerbi/Sales?rs:embed=true
-```
+    ![télécharger un exemple de fichier PBIX](media/quickstart-embed/quickstart_embed_14.png)
 
-Cela fonctionne sur tous les types de rapports dans Power BI Report Server.
+2. Ouvrez l’exemple de fichier PBIX à partir de GitHub dans **Power BI Desktop optimisé pour Power BI Report Server**.
 
-## <a name="iframe"></a>iFrame
+    ![Outil PBI RS Desktop](media/quickstart-embed/quickstart_embed_02.png)
 
-Une fois que vous avez votre URL, vous pouvez créer un iFrame dans une page Web pour héberger le rapport.
+3. Enregistrez le rapport dans **Power BI Report Server**. 
 
-Par exemple :
+    ![Enregistrement PBI RS](media/quickstart-embed/quickstart_embed_03.png)
 
-```
-<iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
-```
+4. Affichez le rapport dans le **portail web**.
 
-## <a name="url-filter"></a>Filtre d’URL
+    ![Portail web](media/quickstart-embed/quickstart_embed_04.png)
 
-Vous pouvez ajouter un paramètre de chaîne de requête à l’URL pour filtrer les données retournées dans le rapport Power BI.
+### <a name="capturing-the-url-parameter"></a>Capture du paramètre d’URL
 
-La syntaxe est simple. Il suffit d’accéder à l’URL du rapport, d’ajouter un point d’interrogation, puis cette syntaxe de filtre.
+Une fois que vous avez votre URL, vous pouvez créer un iFrame dans une page SharePoint pour héberger le rapport. Pour toute URL de rapport Power BI Report Server, vous pouvez ajouter un paramètre querystring défini sur `?rs:embed=true` afin d’intégrer votre rapport dans un iFrame. 
 
-URL?filter=***Tableau***/***Champ*** eq '***valeur***'
+   Par exemple :
+    ``` 
+    http://myserver/reports/powerbi/Sales?rs:embed=true
+    ```
+## <a name="embedding-a-power-bi-report-server-report-in-a-sharepoint-iframe"></a>Intégration d’un rapport Power BI Report Server dans un iFrame SharePoint
 
-Gardez les considérations suivantes à l’esprit :
+1. Accédez à une page **Contenu du site** SharePoint.
 
-- Les noms de **Tableau** et de **Champ** respectent la casse, pas la **valeur**.
-- Vous pouvez filtrer un rapport dont des champs sont masqués dans l’affichage Rapport.
-- La **valeur** doivent être placée entre apostrophes.
-- Le type de champ doit être une chaîne.
-- Les noms de table et de champ ne peuvent pas contenir d’espace.
+    ![Page Contenu du site](media/quickstart-embed/quickstart_embed_05.png)
 
-###  <a name="example-filter-on-a-field"></a>Exemple : filtrer sur un champ
+2. Sélectionnez la page où vous souhaitez ajouter votre rapport.
 
-Prenons l’[Exemple Analyse de la vente au détail](../sample-datasets.md). Supposons que ceci est l’URL du rapport sur le serveur de rapports dans un dossier nommé « power bi » :
+    ![Application de page Contenu du site](media/quickstart-embed/quickstart_embed_06.png)
 
-```
-https://report-server/reports/power-bi/Retail-Analysis-Sample
-```
+3. Sélectionnez l’engrenage en haut à droite, puis choisissez **Modifier la page**.
 
-Vous voyez que la visualisation de la carte dans l’exemple Analyse de la vente au détail affiche des magasins en Caroline du Nord et dans d’autres États.
+    ![Option Modifier la page](media/quickstart-embed/quickstart_embed_07.png)
 
-![Visualisation de la carte de l’exemple Analyse de la vente au détail](media/quickstart-embed/report-server-retail-analysis-sample-map.png)
+4. Sélectionnez **Ajouter un composant WebPart**.
 
-*NC* est la valeur pour North Carolina (Caroline du Nord) stockée dans le champ **Territoire** du tableau **Magasin**. Ainsi, pour filtrer le rapport afin d’afficher uniquement les données des magasins situés en Caroline du Nord, ajoutez à l’URL le code suivant :
+    ![Ajouter un composant WebPart](media/quickstart-embed/quickstart_embed_08.png)
 
-?filter=Store/Territory eq 'NC'
+5. Sous **Categories** (Catégories), sélectionnez **Media and Content** (Médias et contenu), sous **Parts** (Composants), sélectionnez **Content Editor** (Éditeur de contenu), puis **Add** (Ajouter).
 
-À présent, le rapport étant filtré sur la Caroline du Nord, les visualisations affichées sur la page du rapport présentent uniquement des données relatives à la Caroline du Nord.
+    ![Sélectionner un composant WebPart Content Editor (Éditeur de contenu)](media/quickstart-embed/quickstart_embed_09.png) ![Sélectionner Add (Ajouter)](media/quickstart-embed/quickstart_embed_091.png)
 
-![Visualisations filtrées de l’exemple Analyse de la vente au détail](media/quickstart-embed/report-server-retail-analysis-sample-filtered-map.png)
+6. Sélectionnez **Cliquez ici pour ajouter un nouveau contenu**.
 
-### <a name="create-a-dax-formula-to-filter-on-multiple-values"></a>Créer une formule DAX pour filtrer sur plusieurs valeurs
+    ![Ajouter un nouveau contenu](media/quickstart-embed/quickstart_embed_10.png)
 
-Une autre façon de filtrer sur plusieurs champs consiste à créer une colonne calculée dans Power BI Desktop, qui concatène deux champs pour former une seule valeur. Ensuite, vous pouvez utiliser cette valeur pour le filtrage.
+7. Dans le ruban, sélectionnez l’onglet **Mettre en forme le texte**, puis choisissez **Modifier la source**.
 
-Par exemple, l’exemple Analyse de la vente au détail comporte deux champs : Territoire et Chaîne. Dans Power BI Desktop, vous pouvez [créer une colonne calculée](../desktop-tutorial-create-calculated-columns.md) (champ) nommée TerritoryChain (TerritoireChaîne). N’oubliez pas que le nom de **Champ** ne peut pas contenir d’espaces. Voici la formule DAX pour cette colonne.
+     ![Modifier la source](media/quickstart-embed/quickstart_embed_11.png)
 
-TerritoryChain = [Territoire] & "-" & [Chaîne]
+8. Dans la fenêtre Modifier la source, collez votre code iFrame, puis sélectionnez OK.
 
-Publiez le rapport sur le serveur Power BI Report Server, puis utilisez la chaîne de requête d’URL pour filtrer afin d’afficher des données uniquement pour les magasins Lindseys de Caroline du Nord.
+    ![Code iFrame](media/quickstart-embed/quickstart_embed_12.png)
 
-```
-https://report-server/reports/power-bi/Retail-Analysis-Sample?filter=Store/TerritoryChain eq 'NC-Lindseys'
+     Par exemple :
+     ```
+     <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
+     ```
 
-```
+9. Dans le ruban, sélectionnez l’onglet **Page**, puis choisissez **Arrêter la modification**.
+
+    ![Arrêter la modification](media/quickstart-embed/quickstart_embed_13.png)
+
+10. Vous devriez maintenant voir le rapport sur la page.
+
+    ![Exemple iFrame](media/quickstart-embed/quickstart_embed_01.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Démarrage rapide : créer un rapport Power BI pour Power BI Report Server](quickstart-create-powerbi-report.md)  
 [Démarrage rapide : créer un rapport paginé pour Power BI Report Server](quickstart-create-paginated-report.md)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/) 

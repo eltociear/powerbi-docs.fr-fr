@@ -18,11 +18,12 @@ ms.workload: powerbi
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 2a92426061b37753c529b84a1de6b8068cb3bc5f
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 79d72cefbf6c6e5cf27aa0e4f90b4a1eb3114013
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33810917"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Utilisation de colonnes calculées dans Power BI Desktop
 Les colonnes calculées vous permettent d’ajouter de nouvelles données à une table déjà présente dans votre modèle. Toutefois, au lieu d’interroger et de charger les valeurs dans votre nouvelle colonne à partir d’une source de données, vous créez une formule DAX (Data Analysis Expressions) qui définit les valeurs de la colonne. Dans Power BI Desktop, vous créez les colonnes calculées à l’aide de la fonctionnalité Nouvelle colonne dans la vue Rapport.
@@ -59,7 +60,7 @@ Il peut l’ajouter au canevas de son rapport avec le nombre d’expéditions. T
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## <a name="learn-more"></a>En savoir plus
-Nous vous avons fourni ici une brève introduction aux colonnes calculées. N’hésitez pas à consulter le didacticiel [Création de colonnes calculées dans Power BI Desktop](desktop-tutorial-create-calculated-columns.md), où vous pourrez télécharger un exemple de fichier et obtenir des indications pas à pas sur la création de colonnes supplémentaires. 
+Nous vous avons fourni ici une brève introduction aux colonnes calculées. N’hésitez pas à consulter le tutoriel [Créer des colonnes calculées dans Power BI Desktop](desktop-tutorial-create-calculated-columns.md) ; vous pourrez télécharger un exemple de fichier et suivre des indications pas à pas pour créer des colonnes supplémentaires. 
 
 Pour en savoir plus sur DAX, consultez [Principes fondamentaux de DAX dans Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 

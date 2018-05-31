@@ -1,168 +1,196 @@
 ---
-title: "Didacticiel : importation et analyse des données à partir d’une page web à l’aide de Power BI Desktop"
-description: "Didacticiel : importation et analyse des données à partir d’une page web à l’aide de Power BI Desktop"
+title: 'Tutoriel : importer et analyser des données à partir d’une page web à l’aide de Power BI Desktop'
+description: 'Tutoriel : importer et analyser des données à partir d’une page web à l’aide de Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 9650f0be6ca795fdea3395721c0eb02e80464821
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 14c6cc0d221e5ed0a2fe6ead88deb9e8fb867290
+ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33945960"
 ---
-# <a name="analyzing-web-page-data-using-power-bi-desktop-tutorial"></a>Analyse des données de page web à l’aide de Power BI Desktop (didacticiel)
-Dans ce didacticiel, vous allez apprendre à importer une table de données à partir d’une page web et à créer un rapport pour visualiser ces données. Dans le cadre de ce processus, vous naviguez dans des tables via une page web et appliquez des étapes de transformation de données pour donner une nouvelle forme à la table.
+# <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Tutoriel : analyser des données de page web à l’aide de Power BI Desktop
 
- Contenu de cet article :
+En tant que fan de football depuis longtemps, vous souhaitez créer un rapport sur les vainqueurs du Championnat d’Europe (Euro Cup) au fil des années. Avec Power BI Desktop, vous pouvez importer ces données à partir d’une page web dans un rapport et créer des visualisations qui affichent les données. Dans ce tutoriel, vous allez apprendre à utiliser Power BI Desktop pour :
 
-* **Tâche 1 :** se connecter à une source de données web
-* **Tâche 2 :** mettre en forme les données dans la vue Requête
-  * Étape 1 : supprimer des colonnes pour afficher uniquement les colonnes dignes d’intérêt
-  * Étape 2 : remplacer des valeurs pour nettoyer les valeurs d’une colonne sélectionnée
-  * Étape 3 : filtrer les valeurs d’une colonne
-  * Étape 4 : renommer une colonne
-  * Étape 5 : filtrer les valeurs null d’une colonne
-  * Étape 6 : renommer une requête
-  * Étapes de requête créées
-* **Tâche 3 :** créer des visualisations en utilisant la vue Rapport
-  * Étape 1 : charger la requête dans votre rapport
-  * Étape 2 : créer une visualisation Carte
+- Vous connecter à une source de données web et en parcourir les tables disponibles,
+- Former et transformer des données dans **l’éditeur Power Query**,
+- Nommer une requête et l’importer dans un rapport Power BI Desktop, et 
+- Créer et personnaliser une carte et une visualisation sous forme de graphique à secteurs.
 
-## <a name="task-1-connect-to-a-web-data-source"></a>Tâche 1 : se connecter à une source de données web
- Dans la tâche 1, vous importez une table de résumé de tournoi à partir de la page Wikipédia du championnat d’Europe de football de l’UEFA à l’adresse suivante : http://en.wikipedia.org/wiki/UEFA\_European\_Football\_Championship
+## <a name="connect-to-a-web-data-source"></a>Se connecter à une source de données web
 
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
+Vous pouvez obtenir les données sur les vainqueurs du Championnat de l’UEFA à partir de la table Résultats sur la page Wikipédia consacrée au Championnat de football européen UEFA à l’adresse http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
-### <a name="add-a-wikipedia-page-data-source"></a>Ajouter une source de données d’une page Wikipédia
-1. Dans la boîte de dialogue **Prise en main** ou sous l’onglet **Accueil** du ruban, sélectionnez **Obtenir des données**.
-2. Dans la boîte de dialogue **Obtenir des données** qui s’affiche, vous pouvez choisir parmi une large gamme de sources de données pour importer des données dans Power BI Desktop. Nous allons sélectionner **Web**, qui est disponible sous le groupe **Toutes** ou **Autre**.
-3. Dans la boîte de dialogue **Contenu web**, dans la zone de texte **URL**, collez l’URL Wikipédia (http://en.wikipedia.org/wiki/UEFA\_European\_Football\_Championship).
-4. Cliquez sur **OK**.
+![Table Résultats de Wikipédia](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
-Une fois établie la connexion à la page web, la liste des tables disponibles dans cette page Wikipédia apparaît dans la boîte de dialogue **Navigateur**. Vous pouvez cliquer sur chacune de ces tables pour afficher un aperçu des données.
+Pour importer les données :
 
-Dans le volet gauche du **Navigateur**, sélectionnez la table **Results[edit]** des résultats récapitulatifs du tournoi, ou sélectionnez la table **Results[edit]** et sélectionnez **Modifier**. Cela nous permettra de remodeler cette table avant de la charger dans le rapport, car les données ne se présentent pas dans la forme nécessaire pour notre analyse.
+1. Dans l’onglet du ruban **Accueil** de Power BI Desktop, sélectionnez la flèche déroulante en regard de **Obtenir des données**, puis sélectionnez **Web**.
+   
+   ![Obtenir des données dans le ruban](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web3.png) 
+   
+   >[!NOTE]
+   >Vous pouvez également sélectionner l’élément **Obtenir des données** lui-même, ou sélectionnez **Obtenir des données** dans la boîte de dialogue **Prise en main** de Power BI, puis sélectionnez **Web** dans la section **Tous** ou **Autres** de la boîte de dialogue **Obtenir des données**, puis sélectionnez **Se connecter**.
+   
+2. Dans la boîte de dialogue **À partir du Web**, collez l’URL `http://en.wikipedia.org/wiki/UEFA_European_Football_Championship` dans la zone de texte **URL**, puis sélectionnez **OK**.
+   
+    ![Boîte de dialogue Obtenir des données à partir de](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
+   
+   Après la connexion à la page web de Wikipédia, la boîte de dialogue **Navigateur** de Power BI affiche une liste des tables disponibles dans la page. Vous pouvez sélectionner l’un des noms de table pour afficher un aperçu de ses données. La table **Results[edit]** contient les données souhaitées, bien que celles-ci n’aient pas la forme requise. Vous allez modifier la forme et nettoyer les données avant de les charger dans votre rapport. 
+   
+   ![Boîte de dialogue Navigateur](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
+   
+   >[!NOTE]
+   >Le volet **Aperçu** affiche la dernière table sélectionnée, mais toutes les tables sélectionnées sont chargées dans **l’éditeur Power Query** lorsque vous sélectionnez **Modifier** ou **Charger**. 
+   
+3. Sélectionnez la table **Results[edit]** dans la liste du **Navigateur**, puis sélectionnez **Modifier**. 
+   
+   Un aperçu de la table s’ouvre dans **l’éditeur Power Query**, où vous pouvez appliquer des transformations pour nettoyer les données. 
+   
+   ![Power Query Editor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+   
+## <a name="shape-data-in-power-query-editor"></a>Former des données dans l’éditeur Power Query
 
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/tutorialimanaly_navigator.png)
+Vous souhaitez simplifier l’analyse des données en affichant uniquement les années et les pays vainqueurs. Vous pouvez utiliser **l’éditeur Power Query** pour effectuer ces étapes de mise en forme et de nettoyage des données.
 
-Nous obtiendrons ainsi un aperçu de la table dans la vue Requête, où nous pourrons appliquer un ensemble d’étapes de transformation pour nettoyer les données.
+Premièrement, supprimez toutes les colonnes sauf **Year** et **Final Winner** dans la table.
 
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+1. Dans la grille de **l’éditeur Power Query**, sélectionnez les colonnes **Year** et **Final Winners** (maintenez la touche **Ctrl** enfoncée pour sélectionner plusieurs éléments).
+   
+2. Cliquez avec le bouton droit et sélectionnez **Supprimer d’autres colonnes** dans la liste déroulante, ou sélectionnez **Supprimer les colonnes** > **Supprimer d’autres colonnes** à partir du groupe **Gérer les colonnes** dans l’onglet du ruban **Accueil**, afin de supprimer toutes les autres colonnes de la table. 
+   
+   ![Liste déroulante Supprimer d’autres colonnes](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web6.png) ou ![Ruban Supprimer d’autres colonnes](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
 
-## <a name="task-2-shape-data-in-the-subject-table"></a>Tâche 2 : mettre en forme les données de la table subject
-La table subject étant sélectionnée pour votre requête de données, vous pouvez apprendre à effectuer différentes étapes de mise en forme et de nettoyage de données.
-
-**Étape 1 :** supprimer des colonnes pour afficher uniquement les colonnes dignes d’intérêt
-
-Dans cette étape, vous supprimez toutes les colonnes sauf **Year** et **Final Winner**.
-
-1. Dans la grille d’**aperçu de la requête**, sélectionnez les colonnes **Year** et **Final Winner** (utilisez **Ctrl** + **clic**.
-2. Cliquez avec le bouton droit sur un en-tête de colonne dans la grille d’ **aperçu de la requête**, puis cliquez sur **Supprimer d’autres colonnes** pour supprimer les colonnes non sélectionnées. Notez que vous pouvez également effectuer cette opération dans le groupe **Gérer les colonnes** de l’onglet **Accueil** du ruban.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage4.png)
-
-**Étape 2 :** remplacer des valeurs pour nettoyer les valeurs d’une colonne sélectionnée
-
-Dans cette étape, vous remplacez le suffixe Details dans la colonne **Year**. Ce suffixe étant sur une ligne à part, il n’est pas visible dans l’aperçu de la table. Toutefois, si vous cliquez sur l’une des cellules comportant une valeur numérique dans la colonne Year, vous verrez la valeur complète dans la vue détaillée.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage5.png)
+Ensuite, supprimez le mot supplémentaire **Details** des cellules de la colonne **Year**.
 
 1. Sélectionnez la colonne **Year**.
-2. Dans le ruban de la **vue Requête**, cliquez sur **Remplacer les valeurs** sous l’onglet **Accueil** ou cliquez avec le bouton droit sur la colonne **Year**, puis cliquez sur **Remplacer les valeurs** pour remplacer Details par une chaîne vide.
-3. Dans la boîte de dialogue **Remplacer les valeurs**, tapez Details dans la zone de texte **Valeur à rechercher** et laissez la zone de texte **Remplacer par** vide.
-4. Cliquez sur **OK**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
-
- **Étape 3 :** filtrer les valeurs d’une colonne
-
-Dans cette étape, vous filtrez la colonne **Year** pour afficher les lignes qui ne contiennent pas « Year ».
-
-1. Cliquez sur la flèche déroulante de filtre dans la colonne **Year**.
-2. Dans la liste déroulante **Filtrer**, décochez l’option **Year**.
-3. Cliquez sur **OK**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
-
-**Étape 4 :** renommer une colonne
-
-Les données de la colonne **Year** étant nettoyées, nous allons nous pencher sur la colonne **Final Winner**.
-
-Dans la mesure où seule la liste des vainqueurs nous intéresse, nous pouvons renommer cette colonne **Country**.
-
-1. Sélectionnez la colonne **Final Winner** dans l’aperçu de la requête.
-2. Dans la **vue Requête** du ruban, sous l’onglet **Transformer** et le groupe **N’importe quelle colonne**, sélectionnez l’option **Renommer**.
-3. Cela rend le nom de colonne modifiable. Nous allons renommer cette colonne **Country**.
-
-**Étape 5 :** filtrer les valeurs null d’une colonne
-
-Nous devons également filtrer les valeurs null de la colonne **Country**. Pour ce faire, nous pouvons utiliser le menu Filtrer vu à l’étape 3 ou procéder comme suit :
-
-1. Dans la colonne **Country**, cliquez avec le bouton droit sur une cellule qui contient une valeur null.
-2. Sélectionnez **Filtres de texte -\> N’est pas égal à** dans le menu contextuel.
-3. Cette opération crée une étape de filtre permettant de supprimer les lignes qui contiennent la valeur null dans la colonne **Country**.
-
-**Étape 6 :** nommer une requête
-
-Dans cette étape, vous nommez votre dernière requête **Euro Cup Winners**.
-
-1. Dans le volet **Paramètres d’une requête**, dans la zone de texte **Nom**, entrez **Euro Cup Winners**.
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
-
-## <a name="task-3-create-visualizations-using-the-report-view"></a>Tâche 3 : créer des visualisations à l’aide de la vue Rapport
-Les données ayant la forme nécessaire pour notre analyse, nous pouvons charger la table résultante dans notre rapport et créer quelques visualisations.
-
-**Étape 1 :** charger la requête dans votre rapport
-
-Pour charger les résultats de la requête dans Power BI Desktop et créer le rapport, nous sélectionnons **Fermer et charger** dans le ruban **Accueil**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
-
-Cette opération déclenche l’évaluation de la requête et le chargement de la sortie de table dans le rapport. Dans Power BI Desktop, sélectionnez l’icône **Rapport** pour afficher la vue Rapport dans Power BI Desktop.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage10.png)
-
-Les champs de la table résultants apparaissent dans le **volet Champs** à droite de la **vue Rapport**.
-
-![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
-
-**Étape 2 :** créer une visualisation Carte
-
-Pour créer une visualisation, nous pouvons faire glisser-déplacer des champs de la **liste Champs** dans le **canevas de rapport**.
-
-1. Faites glisser-déplacer le champ **Country** dans le **canevas de rapport**. Cette opération crée une visualisation dans le **canevas de rapport**. Dans ce cas, étant donné que nous disposons d’une liste de pays, nous obtenons une **visualisation Carte**.
+2. Cliquez avec le bouton droit, puis sélectionnez **Remplacer les valeurs** dans la liste déroulante, ou sélectionnez **Remplacer les valeurs** à partir du groupe **Transformer** dans l’onglet **Accueil** du ruban (également disponible dans le groupe **N’importe quelle colonne** dans l’onglet **Transformer**). 
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage12.png)
-2. Nous pouvons facilement modifier le type de visualisation en cliquant sur une autre icône dans le volet **Visualisation**.
+   ![Liste déroulante Remplacer les valeurs](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web7.png) ou ![Ruban Remplacer les valeurs](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8a.png)
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage13.png)
-3. Nous allons conserver le type de visualisation **Carte**. Nous pouvons aussi redimensionner la visualisation en faisant glisser un angle de la visualisation jusqu’à obtenir la taille souhaitée.
+3. Dans la boîte de dialogue **Remplacer les valeurs**, tapez **Details** dans la zone de texte **Valeur à rechercher**, laissez la zone de texte **Remplacer par** vide, puis sélectionnez **OK** pour supprimer le mot « Details » dans les entrées **Year**.
    
-   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
-4. Notez qu’actuellement tous les points de la carte ont la même taille. Nous voulons modifier cela afin que la taille du point représentant chaque pays soit proportionnelle au nombre de tournois de la coupe d’Europe gagnés par le pays concerné. Pour ce faire, nous pouvons faire glisser le champ **Year** de la **liste Champs** jusqu’à la zone **Valeurs** dans la moitié inférieure du **volet Champs**.
+   ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage6.png)
+
+Certaines cellules **Year** contiennent uniquement le mot « Year » au lieu des valeurs d’année. Vous pouvez filtrer la colonne **Year** pour afficher uniquement les lignes qui ne contiennent pas le mot « Year ». 
+
+1. Sélectionnez la flèche déroulante de filtre dans la colonne **Year**.
+   
+2. Faites défiler la liste déroulante vers le bas et décochez la case en regard de l’option **Year** et sélectionnez **OK**, afin de supprimer les lignes qui ont uniquement le mot « Year » dans la colonne **Year**. 
+
+   ![Filtrer les données](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7.png)
+
+Les données de la colonne **Year** étant nettoyées, vous pouvez travailler sur la colonne **Final Winner**. Dans la mesure où seule la liste des vainqueurs vous intéresse, vous pouvez renommer cette colonne **Country**. Pour renommer la colonne :
+
+1. Double-cliquez sur l’en-tête de colonne **Final Winner** ou appuyez dessus en continu, ou 
+   - Cliquez avec le bouton droit sur l’en-tête de colonne **Final Winner** et sélectionnez **Renommer** dans la liste déroulante, ou 
+   - Sélectionnez la colonne **Final Winner** et **Renommer** à partir du groupe **N’importe quelle colonne** dans l’onglet **Transformer** du ruban. 
+   
+   ![Liste déroulante Renommer](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage7a.png) ou ![Ruban Renommer](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web8.png)
+   
+2. Tapez **Country** dans l’en-tête et appuyez sur **Entrée** pour renommer la colonne.
+
+Vous souhaitez également filtrer les lignes comme « 2020 » qui contiennent des valeurs null dans la colonne **Country**. Vous pouvez utiliser le menu de filtre comme vous venez de le faire avec les valeurs **Year**, ou vous pouvez :
+
+1. Cliquer avec le bouton droit sur la cellule **Country** dans la ligne **2020**, dont la valeur est *null*. 
+2. Sélectionner **Filtres de texte** > **N’est pas égal à** dans le menu contextuel pour supprimer toutes les lignes qui contiennent la valeur de cette cellule.
+   
+   ![Filtre de texte](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web11.png)
+   
+## <a name="import-the-query-into-report-view"></a>Importer la requête dans la vue Rapport
+
+Maintenant que les données ont la forme souhaitée, vous êtes prêt à nommer votre requête « Euro Cup Winners » et à l’importer dans votre rapport.
+
+1. Dans le volet **Paramètres d’une requête**, dans la zone de texte **Nom**, entrez **Euro Cup Winners** et appuyez sur **Entrée**.
+   
+   ![Nommer la requête](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage8.png)
+
+2. Sélectionnez **Fermer & appliquer** > **Fermer & appliquer** à partir de l’onglet **Accueil** du ruban.
+   
+   ![Fermer & appliquer](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
+   
+La requête est chargée dans la **vue Rapport** de Power BI Desktop, où vous pouvez l’afficher dans le volet **Champs**. 
+   
+   ![Volet Champs](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
+>[!TIP]
+>Vous pouvez toujours revenir dans **l’éditeur Power Query** pour modifier et affiner votre requête en procédant comme suit :
+>- Sélectionnez les points de suspension **Plus d’options** (**...** ) à côté de **Euro Cup Winners** dans le volet **Champs** et sélectionnez **Modifier la requête** dans la liste déroulante, ou
+>- Sélectionnez **Modifier les requêtes** > **Modifier les requêtes** dans le groupe **Données externes** de l’onglet du ruban **Accueil** dans la vue Rapport. 
+
+## <a name="create-a-visualization"></a>Créer une visualisation
+
+Pour créer une visualisation en fonction de vos données : 
+
+1. Sélectionnez le champ **Country** dans le volet **Champs**, ou faites-le glisser vers le canevas de rapport. Power BI Desktop reconnaît les données en tant que noms de pays et crée automatiquement une visualisation **Carte**. 
+   
+   ![Visualisation Carte](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web14.png)
+   
+2. Agrandissez la carte en faisant glisser les poignées dans les coins afin que tous les noms des pays vainqueurs soient visibles.  
+
+   ![Agrandir la carte](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage14.png)
+   
+3. La carte affiche des points de données identiques pour tous les pays ayant remporté un tournoi Euro Cup. Pour que la taille de chaque point de données reflète le nombre de fois où un pays a gagné, faites glisser le champ **Year** vers **Faire glisser ici les champs de données** sous **Taille** dans la partie inférieure du volet **Visualisations**. Le champ se change automatiquement en mesure **Count of Year** et la visualisation de la carte affiche désormais des points de données plus gros pour les pays ayant remporté le plus de tournois. 
    
    ![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage15.png)
+   
 
-Comme vous pouvez le voir, il est très facile de personnaliser les visualisations dans votre rapport, afin de présenter les données de la façon souhaitée. Power BI Desktop fournit une expérience de bout en bout transparente, allant de la récupération de données d’un large éventail de sources de données à la visualisation de ces données au moyen de méthodes interactives et enrichies, en passant par leur mise en forme en fonction des besoins d’analyse. Une fois que votre rapport est prêt, vous pouvez [le charger dans Power BI](desktop-upload-desktop-files.md) et créer des tableaux de bord basés sur celui-ci, que vous pouvez partager avec d’autres utilisateurs de Power BI.
+## <a name="customize-the-visualization"></a>Personnaliser la visualisation
 
-Ainsi prend fin le didacticiel **Importation de données à partir du web**. Vous pouvez télécharger le fichier Power BI Desktop complet [ici](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Analyzing_Data_From_The_Web.pbix).
+Comme vous pouvez le voir, il est très facile de créer des visualisations en fonction de vos données. Il est également facile de personnaliser vos visualisations pour représenter au mieux les données de la manière que vous voulez. 
 
-## <a name="where-else-can-i-get-more-information"></a>Où obtenir des informations supplémentaires ?
+### <a name="format-the-map"></a>Mettre en forme la carte
+Vous pouvez modifier l’apparence d’une visualisation en la sélectionnant, puis en sélectionnant l’icône **Format** (rouleau de peinture) dans le volet **Visualisations**. Par exemple, les points de données « Germany » dans la visualisation peuvent être trompeurs, car l’Allemagne de l’ouest a gagné deux tournois et l’Allemagne en a gagné un, et la carte superpose les deux points plutôt que de les séparer ou de les ajouter. Vous pouvez colorer ces deux points différemment pour illustrer cela. Vous pouvez aussi donner à la carte un titre plus descriptif et plus intéressant. 
+
+1. Avec la visualisation sélectionnée, sélectionnez l’icône **Format**, puis **Couleurs des données** pour développer les options de couleur des données. 
+   
+   ![Mettre en forme les couleurs des données](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web15.png)
+   
+2. Configurez **Afficher tout** sur **Activé**, puis sélectionnez la liste déroulante à côté de **West Germany** et choisissez la couleur jaune. 
+   
+   ![Modifier la couleur](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
+   
+3. Sélectionnez **Titre** pour développer les options de titre, et dans le champ **Texte de titre**, tapez **Euro Cup Winners** à la place du titre actuel. 
+4. Définissez la **Couleur de police** sur rouge, la **Taille du texte** sur **12** et la **Famille de polices** sur **Segoe (gras)**. 
+   
+   ![Mettre en forme les couleurs des données](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
+   
+
+La visualisation de votre carte ressemble maintenant à ceci :
+
+![Visualisation de la carte mise en forme](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web18.png)
+   
+### <a name="change-the-visualization-type"></a>Changer de type de visualisation
+Vous pouvez modifier le type d’une visualisation en la sélectionnant, puis en sélectionnant une autre icône en haut du volet **Visualisation**. Par exemple, votre visualisation de la carte ne contient pas les données pour l’Union soviétique et la République tchèque, car ces pays n’existent plus sur la carte du monde. Un autre type de visualisation, comme un treemap ou un graphique à secteurs, peut être plus précis, car il affiche toutes les valeurs. 
+
+Pour modifier la carte en graphique à secteurs, sélectionnez la carte, puis sélectionnez l’icône **Graphique à secteurs** dans le volet **Visualisation**. 
+   
+![](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web19.png)
+
+>[!TIP]
+>- Vous pouvez utiliser les options de mise en forme **Couleurs des données** pour donner la même couleur à « Germany » et « West Germany ». 
+>- Pour regrouper les pays avec le plus de victoires sur le graphique à secteurs, sélectionnez les points de suspension (**...**) dans l’angle supérieur droit de la visualisation et sélectionnez **Trier par Count of Year** dans la liste déroulante. 
+
+Power BI Desktop fournit une expérience de bout en bout transparente, allant de la récupération de données d’un large éventail de sources de données à la visualisation de ces données au moyen de méthodes interactives et enrichies, en passant par leur mise en forme en fonction des besoins d’analyse. Une fois que votre rapport est prêt, vous pouvez [le charger dans Power BI](desktop-upload-desktop-files.md) et créer des tableaux de bord basés sur celui-ci, que vous pouvez partager avec d’autres utilisateurs de Power BI.
+
+## <a name="see-also"></a>Voir aussi
 * [Autres didacticiels Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521937)
 * [Vidéos relatives à Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Forum Power BI](http://go.microsoft.com/fwlink/?LinkID=519326)

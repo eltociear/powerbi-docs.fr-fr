@@ -1,31 +1,24 @@
 ---
-title: Prise en main de la mise en forme des visualisations Power BI (didacticiel)
-description: "Didacticiel : personnaliser le titre, l’arrière-plan et la légende d’une visualisation"
-services: powerbi
-documentationcenter: 
+title: Bien démarrer avec la mise en forme des visualisations Power BI
+description: Personnaliser le titre, l’arrière-plan et la légende d’une visualisation
 author: mihart
 manager: kfile
-backup: 
-editor: 
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-tags: 
-qualityfocus: monitoring
-qualitydate: 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e81f4e9ede3591accc94576291179b4fd40215e5
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d65281539bcc27ce24971a6da0945908ba65e754
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34297098"
 ---
-# <a name="customize-visualization-titles-legends-and-backgrounds-tutorial"></a>Personnaliser le titre, l’arrière-plan et la légende d’une visualisation (didacticiel)
+# <a name="customize-visualization-titles-legends-and-backgrounds"></a>Personnaliser le titre, la légende et l’arrière-plan d’une visualisation
 Ce didacticiel présente quelques façons de personnaliser vos visualisations.   Compte tenu du nombre important d’options de personnalisation pour les visualisations, la meilleure façon de les découvrir toutes consiste à explorer le volet Mise en forme (sélectionnez l’icône Rouleau à peindre).  Pour vous aider à commencer, cet article explique comment personnaliser le titre, la légende et l’arrière-plan d’une visualisation.  
 
 Les visualisations ne peuvent pas toutes être personnalisées. [Consultez la liste complète](#list).  
@@ -107,9 +100,9 @@ En reprenant le même histogramme, développez les options d’arrière-plan.
 | carte à plusieurs lignes |oui |oui |n/a |
 | colonne |oui |oui |oui |
 | combiné |oui |oui |oui |
-| anneau |oui |oui |oui |
+| anneau |Oui |oui |oui |
 | Carte choroplèthe |oui |oui |oui |
-| entonnoir |oui |oui |n/a |
+| entonnoir |Oui |oui |n/a |
 | jauge |oui |oui |n/a |
 | indicateur de performance clé |oui |oui |n/a |
 | courbes |oui |oui |oui |

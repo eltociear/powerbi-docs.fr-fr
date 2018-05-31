@@ -1,27 +1,28 @@
 ---
-title: "Favoris dans les applications mobiles Power BI"
-description: "Découvrez comment définir et afficher vos tableaux de bord, rapports et applications Power BI favoris, vos rapports Power BI Report Server et Reporting Services, ainsi que vos indicateurs de performance clés favoris dans les applications mobiles."
+title: Favoris dans les applications mobiles Power BI
+description: Découvrez comment définir et afficher vos tableaux de bord, rapports et applications Power BI favoris, vos rapports Power BI Report Server et Reporting Services, ainsi que vos indicateurs de performance clés favoris dans les applications mobiles.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/09/2018
+ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: d3b53618f43652fffcb53502fd9d55ef91f2aff3
-ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
+ms.openlocfilehash: 4edffdbf918e4ccf7e31821d359df54dfc275f46
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33812147"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Définir et afficher des favoris dans les applications mobiles Power BI
 S’applique à :
@@ -32,7 +33,7 @@ S’applique à :
 
 Découvrez comment définir et afficher vos tableaux de bord, rapports et applications Power BI favoris, vos rapports Power BI Report Server et Reporting Services locaux favoris, ainsi que vos indicateurs de performance clés favoris dans les applications mobiles.
 
-Quand vous marquez un élément comme favori dans les applications mobiles Power BI, vous pouvez y accéder sur votre page Favoris du service Power BI ([https://powerbi.com](https://powerbi.com)) et de tous vos appareils mobiles. 
+Quand vous marquez un élément comme favori dans les applications mobiles Power BI, il apparaît sur votre page Favoris du service Power BI ([https://powerbi.com](https://powerbi.com)) et de tous vos appareils mobiles. 
 
 ![Favoris dans les applications mobiles Power BI](media/mobile-apps-find-content-mobile-devices/power-bi-android-favorites-reports.png)
 
@@ -80,7 +81,7 @@ Vous pouvez définir un tableau de bord ou un rapport application comme favori �
     ![Étoile Favori Android](media/mobile-apps-favorites/power-bi-android-favorite-in-dashboard.png)
 
 ## <a name="make-favorite-power-bi-report-server-and-reporting-services-reports-and-kpis"></a>Marquer comme favoris des rapports et indicateurs de performance clés Power BI Report Server et Reporting Services
-Vous pouvez afficher vos rapports et indicateurs de performance clés Power BI Report Server et Reporting Services favoris dans les applications mobiles Power BI, mais vous ne pouvez pas les marquer en tant que favoris dans ces applications. Vous [les marquez en tant que favoris dans le portail web](report-server/getting-around.md#tag-your-favorite-reports-and-kpis). 
+Vous pouvez afficher vos rapports et indicateurs de performance clés Power BI Report Server et Reporting Services favoris dans les applications mobiles Power BI, mais vous ne pouvez pas les marquer en tant que favoris dans ces applications. Vous [les marquez en tant que favoris dans le portail web](report-server/tutorial-explore-report-server-web-portal.md#tag-your-favorites). 
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Tableaux de bord favoris dans le service Power BI](service-dashboard-favorite.md) 
