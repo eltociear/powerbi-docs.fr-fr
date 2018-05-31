@@ -1,16 +1,16 @@
 ---
-title: "Nuages de points dans Power BI (didacticiel)"
-description: "Didacticiel : Nuages de points dans Power BI"
+title: Nuages de points dans Power BI
+description: Nuages de points dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: PVcfPoVE3Ys
 qualityfocus: identified
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -19,13 +19,14 @@ ms.workload: powerbi
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b5467456321b171116cf984ec276c3694b4030b
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: a3befe1e32aa86113433a4f891ddd46a253c8062
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813113"
 ---
-# <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Nuages de points et graphiques en bulles dans Power BI (didacticiel)
+# <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Nuages de points et graphiques en bulles dans Power BI
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Ces derniers peuvent être distribués uniformément ou non sur l’axe horizontal, en fonction des données.
 
 Un graphique en bulles remplace les points de données par des bulles, la *taille* de la bulle représentant une dimension supplémentaire des données.

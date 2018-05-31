@@ -18,11 +18,12 @@ ms.workload: powerbi
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 4552e08c5291ee5f0ce268e796e1a9148eb64be2
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 62eab4de4dc46695f7bfd922333d588ed863f2bc
+ms.sourcegitcommit: c29525cbac2e747edb4dd3a1841084bb0ce42582
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/08/2018
+ms.locfileid: "33871475"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Langues et pays/régions pris en charge pour Power BI
 
@@ -165,6 +166,11 @@ Outre la définition de la langue de l’application Power BI Desktop, vous pouv
 - la façon dont nous comparons et trions des chaînes. Par exemple, étant donné que le turc possède deux lettres i, selon le classement de votre base de données, les deux peuvent se retrouver dans des ordres différents lors du tri. 
 - La langue que Power BI Desktop utilise lors de la création des tables avec dates masquées à partir de champs de date. Par exemple, les champs sont appelés Month/Monat/Mois, etc.
 
+> [!NOTE]
+> Le modèle Power BI utilise actuellement des paramètres régionaux qui ne respectent pas la casse (le jeu de caractères Kana), de sorte que « ABC » et « abc » sont interprétés de la même façon. Si « ABC » est chargé en premier dans la base de données, les autres chaînes qui diffèrent uniquement d’une casse, par exemple « Abc », ne seront pas chargées en tant que valeur distincte.
+> 
+>
+
 Voici comment définir la langue du modèle.
 
 1. Dans Power BI Desktop, sélectionnez **Fichier** > **Options et paramètres** > **Options**.
@@ -173,6 +179,10 @@ Voici comment définir la langue du modèle.
 
     ![Définir la langue du modèle dans Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
+> [!NOTE]
+> Une fois créée, la langue d’un modèle Power BI ne peut pas être modifiée.
+> 
+>
 
 ## <a name="languages-for-the-help-documentation"></a>Langues de la documentation d’aide
 L’aide est localisée dans les 10 langues suivantes : 

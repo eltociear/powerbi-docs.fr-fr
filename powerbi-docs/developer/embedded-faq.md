@@ -1,27 +1,20 @@
 ---
 title: Questions fréquentes sur Power BI Embedded
 description: Parcourir une liste de questions fréquentes et de réponses sur Power BI Embedded.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 24e4dbaf6ede92436ff05c8cb57756e3ab7e8526
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 255efac5d5bf73bca3126f869d4c7434d5c6ef0f
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34289737"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -58,7 +51,7 @@ Dans certains cas, un éditeur de logiciels indépendant (généralement de gran
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Combien de jetons incorporés puis-je créer ?
 
-Les jetons incorporés avec une licence PRO étant destinés aux tests de développement, le nombre de jetons incorporés qu’un compte principal Power BI peut générer est limité. Vous devez [acheter une capacité](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) pour l’incorporation dans un environnement de production. Une fois une capacité achetée, le nombre de jetons incorporés que vous pouvez générer n’est pas limité.
+Les jetons incorporés avec une licence PRO étant destinés aux tests de développement, le nombre de jetons incorporés qu’un compte principal Power BI peut générer est limité. Vous devez [acheter une capacité](#technical) pour l’incorporation dans un environnement de production. Une fois une capacité achetée, le nombre de jetons incorporés que vous pouvez générer n’est pas limité. Accédez à [Obtenir les fonctionnalités disponibles](https://msdn.microsoft.com/library/mt846473.aspx) pour vérifier la valeur d’utilisation qui indique l’utilisation actuelle d’Embedded en pourcentage.
 
 ## <a name="technical"></a>Technique
 
@@ -128,7 +121,7 @@ Sud-Est de l’Australie, Sud du Brésil, Canada Centre, Est des États-Unis 2, 
 
 Les **tableaux de bord** et les **vignettes** créés à partir de jeux de données du pack de contenu *ne peuvent pas* être incorporés, mais les **rapports** créés à partir d’un jeu de données du pack de contenu *peuvent* l’être.
 
-## <a name="licensing"></a>Licensing
+## <a name="licensing"></a>Gestion des licences
 
 ### <a name="how-do-i-purchase-power-bi-embedded"></a>Comment acheter Power BI Embedded ?
 
@@ -164,10 +157,6 @@ Oui, vous pouvez utiliser vos [crédits Azure](https://azure.microsoft.com/free/
 
 Étant donné que Power BI Embedded fait partie d’Azure, il est possible d’utiliser le service avec le [crédit de 200 $ reçu lors de l’inscription à Azure](https://azure.microsoft.com/free/).
 
-### <a name="is-there-a-limit-to-the-number-of-embed-tokens-a-power-bi-master-account-can-generate"></a>Existe-t-il une limite du nombre de jetons intégrés que peut générer un compte principal Power BI ? 
-
-Oui, le nombre est limité car ces jetons intégrés sont conçus uniquement à des fins de test du développement. Vous [devez acheter une capacité](#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée. Accédez à [Obtenir les fonctionnalités disponibles](https://msdn.microsoft.com/en-us/library/mt846473.aspx) pour vérifier combien de jetons intégrés gratuits ont été utilisés.
-
 ### <a name="is-power-bi-embedded-available-for-sovereign-clouds-us-government-germany-china"></a>Power BI Embedded est-il disponible pour les clouds souverains (gouvernement américain, Allemagne, Chine) ?
 
 Power BI Embedded est disponible pour certains [clouds souverains](embed-sample-for-customers-sovereign-clouds.md). Il est toujours **PAS** disponible pour le cloud en Chine.
@@ -176,9 +165,47 @@ Power BI Embedded est disponible pour certains [clouds souverains](embed-sample-
 
 Les organisations à but non lucratif et les établissements d’enseignement peuvent acheter Azure. Il n’existe aucune tarification spéciale pour ces types de clients dans Azure.
 
+## <a name="power-bi-workspace-collection"></a>Collection d’espaces de travail Power BI
+
+### <a name="what-is-power-bi-workspace-collection"></a>Présentation de la collection d’espaces de travail Power BI
+
+La **collection d’espaces de travail Power BI** (**Power BI Embedded** version 1) est une solution basée sur la ressource Azure **Collection d’espaces de travail Power BI**. Cette solution permet de créer des applications **Power BI Embedded** pour les clients avec du contenu Power BI sous la solution **Collection d’espaces de travail Power BI**, des API dédiées et des clés de collection d’espaces de travail permettant d’authentifier l’application sur Power BI.
+
+### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Peut-on migrer d’une collection d’espaces de travail Power BI vers Power BI Embedded ?
+
+1. Vous pouvez utiliser l’outil de migration pour cloner le contenu de la **collection d’espaces de travail Power BI** dans Power BI : https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
+
+2. Commencez par la preuve de concept d’application **Power BI Embedded** qui utilise le contenu Power BI.
+
+3. Au moment de passer en production, achetez une capacité dédiée **Power BI Embedded** et affectez-y votre contenu Power BI (espace de travail).
+
+>[!Note]
+Vous pouvez continuer à utiliser la **collection d’espaces de travail Power BI** tout en travaillant en parallèle avec une solution **Power BI Embedded**. Vous pourrez ensuite déplacer votre client vers la nouvelle solution **Power BI Embedded** et mettre hors service la solution **Collection d’espaces de travail Power BI**.
+
+Pour plus d’informations, voir [Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI Embedded vers Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded).
+
+### <a name="is-power-bi-workspace-collection-on-a-path-to-be-deprecated"></a>La collection d’espaces de travail Power BI est-elle en voie de devenir déconseillée ?
+
+Oui, mais les clients qui utilisent déjà la **collection d’espaces de travail Power BI** pourront continuer à s’en servir jusqu’à ce qu’elle soit déconseillée. Ils peuvent également créer de nouvelles collections d’espaces de travail et tous types d’applications **Power BI Embedded** qui utilisent toujours la solution **Collection d’espaces de travail Power BI**.
+
+Toutefois, cela signifie également qu’aucune nouvelle fonctionnalité ne sera ajoutée aux solutions **Collection d’espaces de travail Power BI** et que les clients sont encouragés à planifier leur migration vers la nouvelle solution **Power BI Embedded**.
+### <a name="when-will-power-bi-workspace-collection-support-be-discontinued"></a>Quand la prise en charge de la collection d’espaces de travail Power BI ne sera-t-elle plus disponible ?
+
+Les clients qui utilisent déjà la solution **Collection d’espaces de travail Power BI** pourront continuer à s’en servir jusqu’à la fin du mois de juin 2018 ou de leur contrat de support.
+
+### <a name="in-what-regions-can-pbi-workspace-collection-be-created"></a>Dans quelles régions peut-on créer des collections d’espaces de travail PBI ?
+
+Les régions disponibles sont les suivantes : Canada Centre, États-Unis de l’Ouest, États-Unis de l’Est 2, Europe de l’Ouest, Europe du Nord, Inde de l’Ouest, Japon de l’Est, Nord du centre des États-Unis, Royaume-Uni Sud, Sud du Brésil, Sud du centre des États-Unis, Sud-Est asiatique et Sud-Est de l’Australie.
+
+### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Pourquoi migrer d’une collection d’espaces de travail PBI vers Power BI Embedded ?
+
+De nouvelles fonctionnalités et fonctions ont été introduites dans la solution **Power BI Embedded**, qui n’étaient pas disponibles dans la **collection d’espaces de travail Power BI**.
+
+En voici quelques exemples :
+* Toutes les sources de données PBI sont prises en charge (contre deux sources de données avec la **collection d’espaces de travail Power BI**). 
+* De nouvelles fonctionnalités, comme les Questions et réponses, l’actualisation, les favoris, l’incorporation de tableaux de bord et de vignettes, le menu personnalisé, etc. ne sont prises en charge que dans la solution **Power BI Embedded**.
+* Modèle de facturation de la capacité.
+
 Pour plus d’informations, consultez [Résolution des problèmes de votre application intégrée](embedded-troubleshoot.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-
-
-

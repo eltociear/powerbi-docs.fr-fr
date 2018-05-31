@@ -1,27 +1,20 @@
 ---
 title: Journal des modifications pour Power BI Report Server
 description: Ce journal des modifications a trait à Power BI Report Server. Il répertorie les éléments nouveaux et les corrections de bogues introduits dans chaque version officielle publiée.
-services: powerbi
-documentationcenter: ''
 author: jtarquino
-manager: jonhp
-backup: maggies
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+manager: kfile
+ms.reviewer: maggies
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 12/11/2017
-ms.author: tankas
-ms.openlocfilehash: 67b9a162d689a8615a3e2459295eab6dad6d2364
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.author: jtarquino
+ms.openlocfilehash: 65ad5e6ca9fbdd71643f71fa56186ee3d01d2dd1
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295676"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -31,6 +24,24 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
 
 ## <a name="march-2018"></a>Mars 2018
 - **Power BI Report Server**
+    - *Version 1.2.6690.34729 (Build 15.0.2.402), publiée le 27 mars 2018*
+        - Corrections de bogues
+            - Activer la migration des catalogues SQL Server Reporting Services 2017
+            - Pour les rapports Power BI (PBIX)
+                - Les rapports peuvent être actualisés lorsqu’un serveur est configuré pour utiliser l’authentification personnalisée
+                - La modification des propriétés d’un rapport ne réinitialise pas les informations d’identification de la source de données
+            - Pour les rapports paginés (RDL)
+                - L’utilisation de `Lookup()` ou de fonctions dérivées telles que `LookupSet()` et `MultiLookup()` dans RDL Expresssions ne génère plus de résultats dans `#Error`
+                - Les rapports liés respectent le format de page du rapport cible lors de l’impression
+                - Des abonnements peuvent être créés pour les rapports liés qui utilisent des paramètres en cascade
+                - Les paramètres par défaut à valeurs multiples peuvent être modifiés lors de l’utilisation de IE11
+                - Les options de remise d’abonnement piloté par les données sont modifiables
+                - Les abonnements peuvent être affichés et modifiés pendant leur exécution
+                - La définition des informations d’identification de la source de données ne supprime pas les chaînes de connexion basées sur une expression
+            - Pour les indicateurs de performance clés
+                - Les courbes de tendance sont actualisées lors de la mise à jour des données
+            - Améliorations de la stabilité globale
+
     - *Version 1.2.6660.39920 (Build 15.0.2.389), publiée le 28 mars 2018*
         - Corrections de bogues
             - Pour les Rapports Power BI (PBIX), le correctif pour Exporter les données ne fonctionne pas à partir de Power BI Visuals
@@ -58,7 +69,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
 - **Power BI Report Server**
     - *Version 1.1.6582.41691 (Build 14.0.600.442), publiée le 10 janvier 2018*
         - Mises à jour de sécurité
-        - Corrections de bogues
+        - Résolutions de bogues
             - Correctif pour Model.GetParameters retournant 400
             - Correctif permettant d’affecter des rapports paginés (RDL) existants à un jeu de données partagé
             - Correctif pour ExecutionNotFoundException lors de l’exportation d’un rapport avec différentes valeurs de paramètre au format PDF
@@ -68,7 +79,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - Échec de l’enregistrement des données après actualisation pour certains rapports Power BI Desktop.
 
     - *Version 1.1.6530.30789 (Build 14.0.600.437), publiée le 17 novembre 2017*
-        - Corrections de bogues
+        - Résolutions de bogues
             - Correctif pour les scénarios d’authentification de base 
             - Correctif servant à corriger le fait que les jours de la semaine n’étaient pas sélectionnables sur la page de planification pour Abonnements, Plans d’actualisation du cache et Captures instantanées d'historique sur le portail
             - Pour les rapports paginés (RDL), correctif corrigeant le problème suivant : quand des expressions de la zone de texte ont la propriété CanGrow définie sur false, aucune valeur ne s’affiche et les polices et couleurs sont erronées
@@ -99,7 +110,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
         - Mises à jour de sécurité
 
     - *Version : 2.51.4885.1423 (octobre 2017), publiée le 17 novembre 2017*
-        - Corrections de bogues
+        - Résolutions de bogues
             - Correctif du problème suivant : la version 32 bits de Power BI Desktop ne parvient pas à s’exécuter sur les systèmes d’exploitation x86
             - Pour les rapports Power BI (PBIX), correctif de l’affichage du quadrillage de l’axe x
             - Autres correctifs mineurs de bogues
@@ -115,12 +126,12 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
         - Mises à jour de sécurité
 
     - *Build 14.0.600.305, publiée le 19 septembre 2017*  
-        - Corrections de bogues
+        - Résolutions de bogues
             - Mise à jour vers la dernière version [du contrôle web Bing Cartes](https://msdn.microsoft.com/library/mt712542.aspx)
 
     - *Build 14.0.600.301, publiée le 11 juillet 2017*
-        - Corrections de bogues
-            - La balise {{UserId}} est remplacée par des informations d’identification stockées plutôt que par l’utilisateur qui exécute le rapport dans Rapports Power BI
+        - Résolutions de bogues
+            - La balise `{{UserId}}` est remplacée par des informations d’identification stockées plutôt que par l’utilisateur qui exécute le rapport dans Rapports Power BI
             - Échec du rendu de certaines images dans des rapports de Power BI Report Server
             - Impossibilité de modifier le nom d’un rapport Power BI dans Power BI Report Server
             - Impossibilité de charger des éléments visuels personnalisés dans l’application Power BI Mobile (nécessite la réinstallation de l’application mobile pour effacer le cache local)
@@ -136,7 +147,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
 
 [Manuel de l’utilisateur](user-handbook-overview.md)  
 [Manuel de l’administrateur](admin-handbook-overview.md)  
-[Démarrage rapide : installer Power BI Report Server](quickstart-install-report-server.md)  
+[Installer Power BI Report Server](install-report-server.md)  
 [Installer le Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

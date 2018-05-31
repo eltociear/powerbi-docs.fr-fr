@@ -898,32 +898,14 @@
       items:
         - name: "Quelles sont les possibilités offertes par l’API Power\_BI\_?"
           href: developer/overview-of-power-bi-rest-api.md
-        - name: FORUM AUX QUESTIONS
-          href: developer/embedded-faq.md
         - name: "Autorisations Power\_BI"
           href: developer/power-bi-permissions.md
         - name: Sécurité au niveau des lignes (RLS)
           href: developer/embedded-row-level-security.md
-        - name: Questions et réponses sur l’incorporation
-          href: developer/qanda.md
+        - name: FORUM AUX QUESTIONS
+          href: developer/embedded-faq.md
     - name: Guides pratiques
       items:
-        - name: Comment incorporer votre contenu
-          href: developer/embedding-content.md
-        - name: Transmettre des données à un tableau de bord
-          href: developer/walkthrough-push-data.md
-        - name: Migrer Power BI Embedded
-          href: developer/migrate-from-powerbi-embedded.md
-        - name: Intégrer un tableau de bord dans une application (l’utilisateur possède les données)
-          href: developer/integrate-dashboard.md
-        - name: "Intégrer un vignette Power\_BI dans une application (l’utilisateur possède les données)"
-          href: developer/integrate-tile.md
-        - name: "Intégrer un rapport Power\_BI dans une application (l’utilisateur possède les données)"
-          href: developer/integrate-report.md
-        - name: Intégrer du contenu dans une application (l’application possède les données)
-          href: developer/embed-sample-for-customers.md
-        - name: Intégrer du contenu dans une application pour des clouds souverains (l’application est propriétaire des données)
-          href: developer/embed-sample-for-customers-sovereign-clouds.md
         - name: Créer un visuel personnalisé
           items:
             - name: Création d’un élément visuel personnalisé avec les outils de développement
@@ -938,6 +920,18 @@
           items:
             - name: "Incorporation avec Power\_BI"
               href: developer/embedding.md
+            - name: Comment incorporer votre contenu
+              href: developer/embedding-content.md
+            - name: Intégrer un tableau de bord dans une application (l’utilisateur possède les données)
+              href: developer/integrate-dashboard.md
+            - name: "Intégrer un vignette Power\_BI dans une application (l’utilisateur possède les données)"
+              href: developer/integrate-tile.md
+            - name: "Intégrer un rapport Power\_BI dans une application (l’utilisateur possède les données)"
+              href: developer/integrate-report.md
+            - name: Intégrer du contenu dans une application (l’application possède les données)
+              href: developer/embed-sample-for-customers.md
+            - name: Intégrer du contenu dans une application pour des clouds souverains (l’application est propriétaire des données)
+              href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Incorporer des dispositions personnalisées dans une application
               href: developer/embedded-custom-layout.md
             - name: Créer un client Azure Active Directory
@@ -946,14 +940,20 @@
               href: developer/register-app.md
             - name: "S’authentifier sur le service Power\_BI"
               href: developer/get-azuread-access-token.md
+            - name: Questions et réponses sur l’incorporation
+              href: developer/qanda.md
+            - name: Migrer Power BI Embedded
+              href: developer/migrate-from-powerbi-embedded.md
             - name: Outil de migration Power BI Embedded
               href: developer/migrate-tool.md
             - name: Extraits de code de migration
               href: developer/migrate-code-snippets.md
             - name: Résolution des problèmes de votre application incorporée
               href: developer/embedded-troubleshoot.md
-        - name: Transmettre des données à un tableau de bord
+        - name: Transmettre des données
           items:
+            - name: Transmettre des données à un tableau de bord
+              href: developer/walkthrough-push-data.md
             - name: Inscrire une application auprès d’Azure AD
               href: developer/walkthrough-push-data-register-app-with-azure-ad.md
             - name: Obtenir un jeton d’accès d’authentification
@@ -990,6 +990,8 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
     - name: Ressources
       items:
+        - name: Outil d’expérience d’intégration pour l’incorporation
+          href: 'https://aka.ms/embedsetup'
         - name: Exemple de JavaScript Playground
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Exemples
