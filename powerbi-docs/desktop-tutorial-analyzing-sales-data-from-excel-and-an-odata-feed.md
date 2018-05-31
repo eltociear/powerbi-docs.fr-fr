@@ -1,29 +1,21 @@
 ---
 title: 'Tutoriel : Combiner des données à partir d’Excel et d’un flux OData dans Power BI Desktop'
 description: 'Tutoriel : Combiner des données à partir d’Excel et d’un flux OData'
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 05/02/2018
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
-ms.openlocfilehash: 00c4915df0e18504ec6f5d26540d9289c2f5ddb2
-ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
+ms.openlocfilehash: c6cd75efd44259c2812f98a37875cf716d4843ad
+ms.sourcegitcommit: e6db826c2f43a69e4c63d5f4920baa8f66bc41be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33945983"
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34456200"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Combiner des données de ventes à partir d’Excel et d’un flux OData
 

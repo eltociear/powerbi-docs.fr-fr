@@ -1,29 +1,20 @@
 ---
 title: 'Tutoriel : Explorer Power BI Report Server dans une machine virtuelle'
 description: Dans ce tutoriel, vous créez une machine virtuelle avec Power BI Report Server déjà installé, puis explorez le portail web.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-ms.component: powerbi-report-server
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
+ms.component: powerbi-report-server
 ms.topic: tutorial
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 05/05/2018
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: a77dceac19368fc7997f79513b0b5f946a914dfc
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 38985014407a4d64998e25f6944f57aedcc67309
+ms.sourcegitcommit: aa8045e42b979206c600bce4a8d17de1f0620462
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33813941"
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34445000"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutoriel : Explorer le portail web Power BI Report Server dans une machine virtuelle
 Dans ce tutoriel, vous créez une machine virtuelle Azure avec Power BI Report Server déjà installé, pour pouvoir afficher, modifier et gérer des exemples de rapports Power BI Report Server et paginés ainsi que des indicateurs de performance clés.
@@ -59,6 +50,8 @@ Heureusement, l’équipe Power BI a créé une machine virtuelle fournie avec P
 
 6. Pour **Groupe de ressources**, conservez **Créer** et attribuez le nom **reportserverresourcegroup**.
 
+    Si vous effectuez plusieurs fois le tutoriel, vous devez renommer le groupe de ressources après la première fois. Vous ne pouvez pas utiliser deux fois le même nom de groupe de ressources dans un même abonnement. 
+
 7. Conservez les autres valeurs par défaut > **OK**.
 
     ![Nommer la machine virtuelle et le groupe de ressources](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create-resource-group.png)
@@ -91,7 +84,7 @@ Heureusement, l’équipe Power BI a créé une machine virtuelle fournie avec P
 
 7. La boîte de dialogue suivante indique que l’ordinateur distant ne peut pas être identifié. Sélectionnez **Oui**.
 
-   Voilà ! Votre nouvelle machine virtuelle s’ouvre.
+   Voilà ! Votre nouvelle machine virtuelle s’ouvre.
 
 ## <a name="power-bi-report-server-on-the-vm"></a>Power BI Report Server sur la machine virtuelle
 
@@ -165,6 +158,8 @@ Vous pouvez afficher et interagir avec les rapports Power BI dans le portail web
      Le rapport s’ouvre dans Power BI Desktop. Notez le nom dans la barre supérieure, « Power BI Desktop (mars 2018) ». Il s’agit de la version optimisée pour Power BI Report Server.
 
     ![Power BI Desktop](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
+
+     Utilisez la version de Power BI Desktop qui est installée sur la machine virtuelle. Vous ne pouvez pas passer d’un domaine à l’autre pour charger un rapport.
 
 3. Dans le volet Champs, développez la table Clients et faites glisser le champ Profession vers Filtres au niveau des rapports.
 
@@ -252,7 +247,9 @@ Maintenant que vous avez terminé ce tutoriel, supprimez le groupe de ressources
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce tutoriel, vous avez créé une machine virtuelle avec Power BI Report Server. Vous avez testé certaines fonctionnalités du portail web, puis ouvert un rapport Power BI et un rapport paginé dans leurs éditeurs respectifs. Pour plus d’informations sur la création de rapports pour Power BI Report Server, poursuivez la lecture.
+Dans ce tutoriel, vous avez créé une machine virtuelle avec Power BI Report Server. Vous avez testé certaines fonctionnalités du portail web, puis ouvert un rapport Power BI et un rapport paginé dans leurs éditeurs respectifs. Étant donné que des sources de données SQL Server Analysis Services sont installées sur cette machine virtuelle, vous pouvez essayer de créer vos propres rapports Power BI et paginés avec ces mêmes sources de données. 
+
+Pour plus d’informations sur la création de rapports pour Power BI Report Server, poursuivez la lecture.
 
 > [!div class="nextstepaction"]
 > [Créer un rapport Power BI pour Power BI Report Server](./quickstart-create-powerbi-report.md)

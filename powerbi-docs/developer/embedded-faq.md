@@ -1,20 +1,28 @@
 ---
 title: Questions fréquentes sur Power BI Embedded
 description: Parcourir une liste de questions fréquentes et de réponses sur Power BI Embedded.
+services: powerbi
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-ms.reviewer: ''
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 ms.service: powerbi
-ms.component: powerbi-developer
-ms.topic: conceptual
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 255efac5d5bf73bca3126f869d4c7434d5c6ef0f
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: f2d457c04f9db2bdd57f363ccb0c09e2496aefd6
+ms.sourcegitcommit: 1c7780e0dfe0b6b8322e6fafdd0693177db455d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34289737"
+ms.lasthandoff: 05/14/2018
+ms.locfileid: "34163319"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -121,7 +129,7 @@ Sud-Est de l’Australie, Sud du Brésil, Canada Centre, Est des États-Unis 2, 
 
 Les **tableaux de bord** et les **vignettes** créés à partir de jeux de données du pack de contenu *ne peuvent pas* être incorporés, mais les **rapports** créés à partir d’un jeu de données du pack de contenu *peuvent* l’être.
 
-## <a name="licensing"></a>Gestion des licences
+## <a name="licensing"></a>Licensing
 
 ### <a name="how-do-i-purchase-power-bi-embedded"></a>Comment acheter Power BI Embedded ?
 

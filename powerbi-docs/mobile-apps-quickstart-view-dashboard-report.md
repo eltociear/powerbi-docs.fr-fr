@@ -1,27 +1,20 @@
 ---
 title: 'Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI'
 description: Dans ce guide de démarrage rapide, vous allez explorer un exemple de tableau de bord et de rapport dans les applications mobiles Power BI.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.component: ''
-ms.devlang: NA
+ms.component: powerbi-mobile
 ms.topic: quickstart
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.date: 05/08/2018
 ms.author: maggies
-ms.openlocfilehash: 7d7d1cbe56f1f41d7fab02f0168c2794e5342abb
-ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
+ms.openlocfilehash: 3ad44bfaa4fe9fc2eb81adbaad17f6e5034d8b14
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33946098"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295764"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI
 Dans ce guide de démarrage rapide, vous allez explorer des tableaux de bord et des rapports dans les applications mobiles Power BI sur un téléphone Android. Vous pouvez également le suivre sur les autres applications mobiles. 
@@ -39,7 +32,7 @@ Un tableau de bord est un portail qui donne accès au cycle de vie et aux proces
 ## <a name="prerequisites"></a>Conditions préalables
 
 ### <a name="sign-up-for-power-bi"></a>S’inscrire à Power BI
-Si vous n’avez pas d’abonnement à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
+Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
 ### <a name="install-the-power-bi-for-android-app"></a>Installer l’application Power BI pour Android
 [Téléchargez l’application Power BI pour Android](http://go.microsoft.com/fwlink/?LinkID=544867) sur Google Play.
@@ -61,7 +54,7 @@ La première étape de ce guide de démarrage rapide consiste à télécharger l
 
 3. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
    
-    ![Obtenir les données](media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
+    ![Obtenir des données](media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
 
 3. Sur la page Obtenir des données, sélectionnez l’icône **Exemples**.
    
@@ -69,7 +62,7 @@ La première étape de ce guide de démarrage rapide consiste à télécharger l
 
 4. Sélectionnez **l’exemple Retail Analysis** (Analyse de la vente au détail).
  
-    ![Retail Analysis Sample](media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
+    ![Exemple Analyse de la vente au détail](media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
  
 8. Sélectionnez **Se connecter**.  
   

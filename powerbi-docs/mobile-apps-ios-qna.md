@@ -1,29 +1,20 @@
 ---
 title: Analyste virtuel des questions et réponses dans les applications iOS – Power BI
 description: Posez des questions concernant l’exemple de données en utilisant vos propres mots avec l’analyste virtuel des questions et réponses dans l’application mobile Power BI sur votre appareil iOS.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
-ms.devlang: NA
 ms.topic: conceptual
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
 ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: eaa8960de53b5c3e48c4bd619469beeec384b033
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 85487567d428618034f6f026324846fbfbd87baf
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33812170"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295005"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Analyste virtuel des questions et réponses dans les applications iOS – Power BI
 
@@ -39,7 +30,7 @@ L’analyste virtuel des questions et réponses est une expérience décisionnel
 
 ![Analyste virtuel des questions et réponses relatives aux meilleures ventes](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
-Si vous n’avez pas d’abonnement à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
+Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -70,21 +61,21 @@ La première étape consiste à télécharger les exemples Retail Analysis (Anal
 
 4. Sélectionnez **l’exemple Retail Analysis** (Analyse de la vente au détail).
  
-    ![Retail Analysis Sample](media/mobile-apps-ios-qna/power-bi-rs.png)
+    ![Exemple Analyse de la vente au détail](media/mobile-apps-ios-qna/power-bi-rs.png)
  
 8. Sélectionnez **Se connecter**.  
   
-   ![Retail Analysis Sample](media/mobile-apps-ios-qna/retail16.png)
+   ![Exemple Analyse de la vente au détail](media/mobile-apps-ios-qna/retail16.png)
    
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail.
    
-   ![Retail Analysis Sample](media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
+   ![Exemple Analyse de la vente au détail](media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
 
 **Obtenir l’exemple Opportunity Analysis** (Analyse des opportunités)
 
 - Suivez les mêmes étapes que pour l’exemple Retail Analysis (Analyse de la vente au détail), mais en sélectionnant **l’exemple Opportunity Analysis** (Analyse des opportunités) à l’étape 4.
 
-    ![Retail Analysis Sample](media/mobile-apps-ios-qna/power-bi-oa.png)
+    ![Exemple Analyse de la vente au détail](media/mobile-apps-ios-qna/power-bi-oa.png)
   
 Vous pouvez à présent consulter les exemples sur votre appareil iOS.
 
