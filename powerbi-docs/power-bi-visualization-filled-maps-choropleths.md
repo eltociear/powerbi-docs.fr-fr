@@ -1,30 +1,22 @@
 ---
 title: Cartes choroplèthes dans Power BI
 description: Documentation sur la création de cartes choroplèthes dans Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e982fa5cc75249ab2475e02150a92294cb87980a
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 5933404b9429ca773ed119addd81d86ad1a28597
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33812308"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34293050"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Cartes choroplèthes dans Power BI
 Une carte choroplèthe utilise des ombrages, des teintes ou des motifs pour représenter proportionnellement les variations d’une valeur entre des zones géographiques ou des régions.  Visualisez rapidement les écarts relatifs grâce aux ombrages allant du clair (moins fréquent/plus bas) au foncé (plus fréquent/plus élevé).    
@@ -53,7 +45,7 @@ Les cartes choroplèthes sont conseillées :
 
 ### <a name="prerequisites"></a>Conditions préalables
 - Service Power BI ou Power BI Desktop
-- Sales and Marketing Sample
+- Exemple Vente et marketing
 
 Pour la suite, le didacticiel utilise le service Power BI, et non Power BI Desktop.
 

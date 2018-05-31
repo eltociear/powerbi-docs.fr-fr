@@ -1,28 +1,20 @@
 ---
 title: Favoris dans les applications mobiles Power BI
 description: Découvrez comment définir et afficher vos tableaux de bord, rapports et applications Power BI favoris, vos rapports Power BI Report Server et Reporting Services, ainsi que vos indicateurs de performance clés favoris dans les applications mobiles.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: 4edffdbf918e4ccf7e31821d359df54dfc275f46
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: b6550eb49d33aba1399d169e0c5cdefce98760ba
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33812147"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34293970"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Définir et afficher des favoris dans les applications mobiles Power BI
 S’applique à :

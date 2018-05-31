@@ -1,30 +1,22 @@
 ---
 title: Graphiques de compartimentage dans Power BI
 description: Graphiques de compartimentage dans Power BI
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5c9ce6b7b25170e87ea3474519036e854b15e940
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 8b3f49487677f00e1026c9eab813633f470e6b41
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33813205"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295350"
 ---
 # <a name="treemaps-in-power-bi"></a>Graphiques de compartimentage dans Power BI
 Les treemaps utilisent des rectangles imbriqués pour présenter des données sous forme hiérarchique.  Chaque niveau de la hiérarchie est représenté par un rectangle de couleur (généralement appelé « branche ») qui contient d’autres rectangles (les « feuilles »).  L’espace à l’intérieur de chaque rectangle est attribué en fonction de la valeur quantitative mesurée. Les rectangles sont disposés par taille, avec le plus grand en haut à gauche et le plus petit en bas à droite.
@@ -45,7 +37,7 @@ Les treemaps sont conseillés :
 
 ### <a name="prerequisites"></a>Conditions préalables
  - Service Power BI ou Power BI Desktop
- - Retail Analysis sample
+ - Exemple Analyse de la vente au détail
 
 ## <a name="create-a-basic-treemap"></a>Créer un treemap simple
 Vous souhaitez d’abord regarder une personne créer un treemap ?  Accédez à la position 2:10 de cette vidéo pour voir comment Amanda crée un graphique de compartimentage.

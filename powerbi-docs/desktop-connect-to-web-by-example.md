@@ -1,21 +1,29 @@
 ---
 title: Extraire les données d’une page web, par exemple dans Power BI Desktop (préversion)
 description: Extraire les données d’une page web en fournissant un exemple de ce que vous voulez extraire
+services: powerbi
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-ms.reviewer: ''
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
-ms.topic: conceptual
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
 ms.date: 05/07/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 55c1a70e054b6bb6ff06c7fe6f83b58d8b1f26f3
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 3d67d9737ff09e3d5959ab24e615473f537654ab
+ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290979"
+ms.lasthandoff: 05/09/2018
+ms.locfileid: "33917202"
 ---
 # <a name="get-data-from-a-web-page-by-providing-an-example-preview"></a>Obtenir les données d’une page web en fournissant un exemple (préversion)
 
@@ -48,7 +56,7 @@ Si vous souhaitez suivre la procédure, vous pouvez utiliser l’[URL du Microso
 
 ![Boîte de dialogue web](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 
-Si vous sélectionnez **OK**, vous êtes dirigé vers la boîte de dialogue **Navigateur**, dans laquelle sont présentées toutes les tables automatiquement détectées dans la page web. Dans le cas illustré dans l’image ci-dessous, aucune table n’a été trouvée, mais il existe un bouton en bas de la page appelé **Extraire la table à l’aide des exemples** et qui vous permet de fournir des exemples.
+Si vous sélectionnez **OK**, vous êtes dirigé vers la boîte de dialogue **Navigateur**, dans laquelle sont présentées toutes les tables automatiquement détectées dans la page web. Dans le cas illustré dans l’image ci-dessous, aucune table n’a été trouvée, mais il existe un bouton en bas de la page appelé **Extraire la table à l'aide des exemples** et qui vous fournit des exemples.
 
 
 ![Fenêtre du navigateur](media/desktop-connect-to-web-by-example/web-by-example_05.png)

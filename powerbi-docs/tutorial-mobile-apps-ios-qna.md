@@ -1,20 +1,29 @@
 ---
 title: 'Tutoriel : poser des questions à l’aide de l’analyste virtuel Questions et réponses dans des applications iOS - Power BI'
 description: Dans ce tutoriel, posez des questions concernant l’exemple de données en utilisant vos propres mots avec l’analyste virtuel des questions et réponses dans l’application mobile Power BI sur votre appareil iOS.
+services: powerbi
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
+ms.devlang: NA
 ms.topic: tutorial
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
 ms.date: 05/08/2018
 ms.author: maggies
-ms.openlocfilehash: 5c8afc963c67493c30821048736d914d3aec278e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 270a6ef9f9c9559ae5dd303249fd372c5f4d2b79
+ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34297857"
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33945914"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-ios-apps---power-bi"></a>Tutoriel : poser des questions sur vos données avec l’analyste virtuel Questions et réponses dans des applications iOS - Power BI
 
@@ -26,7 +35,7 @@ S’applique à :
 |:--- |:--- |
 | iPhone |iPad |
 
-L’analyste virtuel des questions et réponses est une expérience décisionnelle de type conversationnel qui accède aux données de questions et réponses sous-jacentes du service Power BI [(https://powerbi.com)](https://powerbi.com). Il suggère des insights sur les données ; vous pouvez poser vos questions par écrit ou oralement.
+L’analyste virtuel des questions et réponses est une expérience de type conversation qui accède aux données de questions et réponses sous-jacentes dans le service Power BI [(https://powerbi.com)](https://powerbi.com). Il suggère des insights sur les données et vous pouvez poser vos questions par écrit ou par oral.
 
 ![Analyste virtuel des questions et réponses relatives aux meilleures ventes](media/tutorial-mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
@@ -42,11 +51,11 @@ Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](
 ## <a name="prerequisites"></a>Conditions préalables
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Installer l’application Power BI pour iOS
-[Téléchargez l’application iOS](http://go.microsoft.com/fwlink/?LinkId=522062 "Téléchargez l’application iPhone") à partir de l’Apple App Store sur votre iPad, iPhone ou iPod touch.
+[Téléchargez l’application iOS](http://go.microsoft.com/fwlink/?LinkId=522062 "Téléchargez l’application iPhone") à partir de l’Apple App Store sur votre iPad, iPhone ou iPod Touch.
 
-Les versions suivantes prennent en charge l’application Power BI pour iOS :
-- iPad sous iOS 10 (et versions ultérieures) ;
-- iPhone 5 (et versions ultérieures) sous iOS 10 (et versions ultérieures) ; 
+Ces versions prennent en charge l’application Power BI pour iOS :
+- iPad avec iOS 10 ou version ultérieure.
+- iPhone 5 et versions ultérieures, avec iOS 10 ou version ultérieure. 
 - iPod Touch avec iOS 10 ou version ultérieure.
 
 ### <a name="download-the-opportunity-analysis-sample"></a>Télécharger l’exemple Opportunity Analysis (Analyse des opportunités)
@@ -64,9 +73,9 @@ La première étape du tutoriel consiste à télécharger l’exemple Analyse de
 
 3. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
    
-    ![Obtenir des données](media/tutorial-mobile-apps-ios-qna/power-bi-get-data.png)
+    ![Obtenir les données](media/tutorial-mobile-apps-ios-qna/power-bi-get-data.png)
 
-3. Sur la page Obtenir des données, sélectionnez l’icône **Exemples**.
+3. Dans la page Obtenir des données, sélectionnez l’icône **Exemples**.
    
    ![Icône Exemples](media/tutorial-mobile-apps-ios-qna/power-bi-samples-icon.png)
 

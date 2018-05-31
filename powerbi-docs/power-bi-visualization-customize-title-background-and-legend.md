@@ -1,22 +1,30 @@
 ---
 title: Bien démarrer avec la mise en forme des visualisations Power BI
 description: Personnaliser le titre, l’arrière-plan et la légende d’une visualisation
+services: powerbi
+documentationcenter: ''
 author: mihart
 manager: kfile
-ms.reviewer: ''
+backup: ''
+editor: ''
 featuredvideoid: IkJda4O7oGs
+tags: ''
+qualityfocus: monitoring
+qualitydate: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
-ms.topic: conceptual
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d65281539bcc27ce24971a6da0945908ba65e754
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 9a61d0aa7bed1e46109b5e467e64922cf434c10e
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34297098"
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813274"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Personnaliser le titre, la légende et l’arrière-plan d’une visualisation
 Ce didacticiel présente quelques façons de personnaliser vos visualisations.   Compte tenu du nombre important d’options de personnalisation pour les visualisations, la meilleure façon de les découvrir toutes consiste à explorer le volet Mise en forme (sélectionnez l’icône Rouleau à peindre).  Pour vous aider à commencer, cet article explique comment personnaliser le titre, la légende et l’arrière-plan d’une visualisation.  
@@ -29,7 +37,7 @@ Regardez Amanda personnaliser des visualisations dans son rapport (à la minute 
 
 ### <a name="prerequisites"></a>Conditions préalables
 - Service Power BI ou Power BI Desktop
-- Exemple Analyse de la vente au détail
+- Retail Analysis sample
 
 ## <a name="customize-visualization-titles-in-reports"></a>Personnaliser les titres des visualisations dans les rapports
 Pour la suite, connectez-vous au service Power BI (app.powerbi.com), puis ouvrez le rapport [Exemple Analyse de la vente au détail](sample-datasets.md) en [Mode Édition](service-interact-with-a-report-in-editing-view.md).
@@ -100,9 +108,9 @@ En reprenant le même histogramme, développez les options d’arrière-plan.
 | carte à plusieurs lignes |oui |oui |n/a |
 | colonne |oui |oui |oui |
 | combiné |oui |oui |oui |
-| anneau |Oui |oui |oui |
+| anneau |oui |oui |oui |
 | Carte choroplèthe |oui |oui |oui |
-| entonnoir |Oui |oui |n/a |
+| entonnoir |oui |oui |n/a |
 | jauge |oui |oui |n/a |
 | indicateur de performance clé |oui |oui |n/a |
 | courbes |oui |oui |oui |
