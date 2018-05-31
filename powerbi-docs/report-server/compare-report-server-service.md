@@ -1,21 +1,22 @@
 ---
 title: Comparer Power BI Report Server et le service Power BI
 description: Cet article compare les fonctionnalités de Power BI Report Server et du service Power BI.
+services: powerbi
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
+ms.component: powerbi-report-server
 ms.date: 05/07/2018
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: c47722fda28fc45289858f082a0838f583b53dbb
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: d0a3e2870edc8b18cb982c33582c7578aa67f2c3
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34296778"
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813895"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparer Power BI Report Server et le service Power BI
 
