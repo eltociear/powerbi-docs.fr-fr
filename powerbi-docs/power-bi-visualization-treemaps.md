@@ -1,16 +1,16 @@
 ---
-title: "Treemaps dans Power BI (didacticiel)"
-description: "Didacticiel : treemaps dans Power BI"
+title: Graphiques de compartimentage dans Power BI
+description: Graphiques de compartimentage dans Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: IkJda4O7oGs
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -19,13 +19,14 @@ ms.workload: powerbi
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a803256e5902ffc19e77c67a450d4895982b4b8b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5c9ce6b7b25170e87ea3474519036e854b15e940
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813205"
 ---
-# <a name="treemaps-in-power-bi-tutorial"></a>Treemaps dans Power BI (didacticiel)
+# <a name="treemaps-in-power-bi"></a>Graphiques de compartimentage dans Power BI
 Les treemaps utilisent des rectangles imbriqués pour présenter des données sous forme hiérarchique.  Chaque niveau de la hiérarchie est représenté par un rectangle de couleur (généralement appelé « branche ») qui contient d’autres rectangles (les « feuilles »).  L’espace à l’intérieur de chaque rectangle est attribué en fonction de la valeur quantitative mesurée. Les rectangles sont disposés par taille, avec le plus grand en haut à gauche et le plus petit en bas à droite.
 
 ![](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
@@ -44,7 +45,7 @@ Les treemaps sont conseillés :
 
 ### <a name="prerequisites"></a>Conditions préalables
  - Service Power BI ou Power BI Desktop
- - Exemple Analyse de la vente au détail
+ - Retail Analysis sample
 
 ## <a name="create-a-basic-treemap"></a>Créer un treemap simple
 Vous souhaitez d’abord regarder une personne créer un treemap ?  Accédez à la position 2:10 de cette vidéo pour voir comment Amanda crée un graphique de compartimentage.

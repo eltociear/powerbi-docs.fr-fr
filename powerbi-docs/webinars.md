@@ -1,27 +1,20 @@
 ---
 title: Webinaires Power BI
 description: Webinaires Power BI
-services: powerbi
-documentationcenter: ''
 author: maikelson
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/26/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/09/2018
 ms.author: maikelson
-ms.openlocfilehash: 9fa7f56f102ae098c870ae0e6e12f56cc26d0fde
-ms.sourcegitcommit: 0cae0e6e1fd06b6465721702b2d0bb8333eb5afb
+ms.openlocfilehash: 29aba440f92f37763dd9887b5fa7511d6191a5f7
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34299283"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -31,17 +24,13 @@ Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions en
 
 Inscrivez-vous pour écouter des experts de Power BI et participer à des sessions de questions et réponses en direct
 
-**[Série de webinaires sur l’infrastructure d’adoption Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
-<br>par Manu Kanwarpal et Paul Henwood
-<br>*Mars, avril et mai 2018 9h00 PST, 12h00 EST*
+**Extraire les bons insights avec Power BI et Visio**
+<br>Shakun Grover
+<br>*22 mai 2018 10:00 PST, 13:00 EST*
 
-Planifiez un lancement efficace de Power BI pour votre organisation et explorez les nuances de la gestion efficace du Software as a Service (SaaS). Il s’agit de cinq parties qui visent à déverrouiller le potentiel de Power BI pour votre organisation.
+Participez à ce webinaire pour savoir comment combiner des tableaux de bord Power BI et des diagrammes Microsoft Visio afin de créer de puissants insights visuels. Visio et Power BI sont très visuels et naturellement complémentaires. Visio permet de créer des diagrammes illustration, par exemple, des workflows interconnectés et des dispositions réelles. Power BI permet de générer des tableaux de bord intuitifs à l’aide de graphiques et de cartes pour mesurer des indicateurs de performance clés et effectuer le suivi des objectifs.
 
-[Inscrivez-vous pour regarder le 1er mai la partie 5 - Lancement : lancement réussi de Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
-<br>[Inscrivez-vous pour regarder maintenant la partie 4 - Sécurité : conserver vos données sécurisées avec Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Inscrivez-vous pour regarder maintenant la partie 3 - Gestion des services : insights sur la gestion du service Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Inscrivez-vous pour regarder maintenant la partie 2 - Gouvernance : régir l’utilisation de Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Inscrivez-vous pour regarder maintenant la partie 1 - Adoption : adopter une culture piloté par les données](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+[S’inscrire pour regarder le webinaire le 22 mai](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
 
 **En savoir plus sur Power BI Embedded en 20 minutes**
 <br>par Megan Asarrane et Colin Murphy
@@ -88,6 +77,10 @@ Regardez les sessions enregistrées à tout moment
 **Comment concevoir des rapports Power BI visuellement attrayants**
 <br>par Charles Sterling
 <br>[Regarder maintenant](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Au-delà du tableur**
+<br>Gohul Shanmugalingam
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
 
 **Passer d’un rapport satisfaisant à un rapport exceptionnel !**
 <br>par Reid Havens
@@ -139,6 +132,14 @@ Regardez les sessions enregistrées à tout moment
 <br>par Nagasaikiran Kambhampati et Miguel Martinez
 <br>[Inscrivez-vous pour regarder](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Télécharger le kit de démarrage Analytiques avancées pour suivre la procédure](https://aka.ms/pbiaawebinar)
+
+**[Série de webinaires sur l’infrastructure d’adoption Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
+<br>par Manu Kanwarpal et Paul Henwood
+<br>[Inscrivez-vous pour regarder maintenant la partie 1 - Adoption : adopter une culture piloté par les données](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Inscrivez-vous pour regarder maintenant la partie 2 - Gouvernance : régir l’utilisation de Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Inscrivez-vous pour regarder maintenant la partie 3 - Gestion des services : insights sur la gestion du service Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Inscrivez-vous pour regarder maintenant la partie 4 - Sécurité : conserver vos données sécurisées avec Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Inscrivez-vous pour regarder maintenant la partie 5 – Lancement : réussir le lancement de Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Série de webinaires Office 365 Finance Pros**
 <br>par Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky et Miguel Martinez

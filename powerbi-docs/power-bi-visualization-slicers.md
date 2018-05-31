@@ -1,31 +1,24 @@
 ---
-title: Segments dans Power BI (didacticiel)
-description: 'Didacticiel : Segments dans Power BI'
-services: powerbi
-documentationcenter: ''
+title: Segments dans Power BI
+description: Segments dans Power BI
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
-qualityfocus: monitoring
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 03/05/2018
 ms.author: v-thepet
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 30f548e73dd9f3c4fb93f048dec0c46eee3845ca
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 77c1dbe528b218fe3b51992f548325bb8916c22c
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34297351"
 ---
-# <a name="slicers-in-power-bi-tutorial"></a>Segments dans Power BI (didacticiel)
+# <a name="slicers-in-power-bi"></a>Segments dans Power BI
 Vous souhaitez que vos lecteurs de rapports soient en mesure de rechercher des mesures de ventes globales, mais également de mettre en surbrillance des performances pour les responsables de région individuels et les différentes périodes. Vous pouvez créer des rapports distincts ou des graphiques de comparaison ou vous pouvez utiliser des segments. Un segment constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport. 
 
 Ce tutoriel utilise [Exemple Analyse de la vente au détail](sample-retail-analysis.md) gratuit pour vous expliquer pas à pas comment créer, mettre en forme et utiliser des segments de plages de dates et de listes. Amusez-vous à découvrir les différentes mises en forme et utilisations possibles des segments. 
@@ -187,7 +180,7 @@ Les autres options de mise en forme sont désactivées par défaut. Quand elles 
 
 Avez-vous des idées pour améliorer Power BI ? [Soumettez une idée](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
 
 [Ajouter une visualisation à un rapport](power-bi-report-add-visualizations-i.md)
 
