@@ -1,29 +1,21 @@
 ---
 title: Graphique en aires simple
 description: Graphique en aires simple.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 62d518b923d541ee937f485da946ae08b20fa386
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 23262d16993043bff90b50ccd55dc7903c5fc23b
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33811802"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34291739"
 ---
 # <a name="basic-area-chart"></a>Graphique en aires simple
 Le graphique en aires simple (également appelé graphique en aires empilées) est basé sur le graphique en courbes. La zone entre l’axe et la ligne est remplie avec des couleurs indiquant le volume. 
@@ -40,7 +32,7 @@ Les graphiques en aires simples sont conseillés pour :
 
 ### <a name="prerequisites"></a>Conditions préalables
  - Service Power BI
- - Retail Analysis sample
+ - Exemple Analyse de la vente au détail
 
 Pour effectuer la procédure, connectez-vous à Power BI et sélectionnez **Obtenir des données \> Exemples \> Exemple Analyse de la vente au détail > Se connecter**, puis choisissez **Accéder au tableau de bord**. 
 

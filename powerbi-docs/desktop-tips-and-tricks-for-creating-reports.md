@@ -1,30 +1,22 @@
 ---
 title: Conseils et astuces pour créer des rapports dans Power BI
 description: Conseils et astuces pour créer des rapports dans le service Power BI et Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: willthom
-editor: ''
-tags: ''
-qualityfocus: identified
-qualitydate: ''
+ms.reviewer: willthom
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: davidi
-ms.openlocfilehash: f28df3bff1759c1a0b06d49710a8c7df017229fa
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 7f1ec08fdd280d8c4c3e96367083e7bdb2d31e1b
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33810894"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34230206"
 ---
-# <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
+# <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Trucs et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
 
 ## <a name="learning-to-use-the-query-editor"></a>Prise en main de l’Éditeur de requête
@@ -60,7 +52,7 @@ Cette colonne calculée retourne la valeur 100, quel que soit l’emplacement o
 Quand vous utilisez une valeur catégorique (chaîne) dans Power BI pour les axes du graphique ou dans un segment ou un filtre, l’ordre par défaut est l’ordre alphabétique. Pour modifier cet ordre, par exemple si vous avez affaire à des éléments comme des jours de la semaine ou des mois, vous pouvez indiquer à Power BI Desktop de trier les valeurs selon une autre colonne. Pour en savoir plus, consultez [Trier par colonne dans Power BI Desktop](desktop-sort-by-column.md).
 
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Création simplifiée de cartes grâce aux indications fournies à Bing
-De par son intégration à Bing, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui facilite la création de cartes.  Bing utilise des algorithmes et des indications pour essayer d’obtenir le bon emplacement, mais il ne s’agit que d’une hypothèse. Pour augmenter vos chances d’obtenir un géocodage correct, vous pouvez utiliser les conseils suivants :
+De par son intégration à Bing, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui facilite la création de cartes.  Bing utilise des algorithmes et des indications pour essayer d’obtenir le bon emplacement, mais il ne s’agit que d’une hypothèse. Pour augmenter vos chances d’obtenir un géocodage correct, appliquez les conseils suivants :
 
 Quand vous créez une carte, vous cherchez souvent à tracer des pays, des États et des villes.  Dans Power BI Desktop, si vous nommez des colonnes après la désignation géographique, Bing sera plus à même de deviner ce que vous souhaitez afficher. Par exemple, si vous avez un champ contenant des états américains comme « Californie » et « Washington », Bing peut retourner l’emplacement de la ville de Washington, DC et non celui de l’État de Washington pour le mot « Washington ».  Vous pouvez nommer la colonne « État » pour améliorer le géocodage.  Il en va de même pour les colonnes nommées « Pays » et « Ville ».   
 
@@ -76,7 +68,7 @@ Parfois, même la définition des catégories de données pour le mappage ne suf
 
     = [Field1] & " " & [Field2]
 
-Utilisez ensuite ce champ résultant dans les visualisations de carte. Cette approche est très utile pour générer des rues à partir des champs « Adresse d’expédition » qui sont couramment employés dans les jeux de données.  Sachez toutefois que la concaténation ne fonctionne qu’avec des champs de texte.  Si nécessaire, convertissez le numéro de rue en type de données Texte avant de vous en servir pour générer une adresse.
+Utilisez ce champ résultant dans les visualisations de carte. Cette approche est très utile pour générer des rues à partir des champs « Adresse d’expédition » qui sont couramment employés dans les jeux de données.  Sachez toutefois que la concaténation ne fonctionne qu’avec des champs de texte.  Si nécessaire, convertissez le numéro de rue en type de données Texte avant de vous en servir pour générer une adresse.
 
 ## <a name="histograms-in-the-query-stage"></a>Histogrammes dans l’étape de requête
 Vous pouvez générer des histogrammes de plusieurs façons dans Power BI Desktop. Commençons par la plus simple :
