@@ -1,21 +1,29 @@
 ---
 title: Sources de données dans Power BI Desktop
 description: Sources de données dans Power BI Desktop
+services: powerbi
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-ms.reviewer: ''
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: complete
+qualitydate: 04/29/2016
 ms.service: powerbi
-ms.component: powerbi-desktop
-ms.topic: conceptual
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
 ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b7e08f586c0c1f0bf7409735683bc9c1cd6aa969
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 1558f78f8f496814ac7745afe9b86f327ef7772b
+ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34286862"
+ms.lasthandoff: 05/09/2018
+ms.locfileid: "33923451"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
@@ -38,7 +46,7 @@ Les types de données sont organisés dans les catégories suivantes :
 
 * Toutes
 * Fichier
-* Base de données
+* Database
 * Power BI
 * Azure
 * Online Services
@@ -162,7 +170,7 @@ L’illustration suivante montre la fenêtre **Obtenir les données** pour **Ser
 La catégorie **Autre** fournit les connexions de données suivantes :
 
 * Vertica (bêta)
-* web
+* Web
 * Liste SharePoint
 * Flux OData
 * Active Directory
