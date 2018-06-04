@@ -34,5 +34,5 @@
 
 Power BI crée l’espace de travail et l’ouvre. Celui-ci figure dans la liste des espaces de travail dont vous êtes membre. Étant donné que vous êtes administrateur, vous pouvez sélectionner les points de suspension (…) pour revenir en arrière afin d’apporter des modifications, d’ajouter des membres ou de modifier leurs autorisations.
 
-![Modifier l’espace de travail](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
+![Modifier l'espace de travail](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
 

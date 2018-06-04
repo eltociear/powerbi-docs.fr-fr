@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 7d6ad3cea224de097d5ebc81d33dbffa52b33378
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 5b4a35d9cdfa820956201e7fee20251b3c5ac0b7
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584297"
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -209,7 +210,7 @@ Cliquez ici pour en savoir plus sur [les applications poussées](service-create-
 Les utilisateurs de l’organisation peuvent poser des questions sur leurs données en utilisant Cortana.
 
 > [!NOTE]
-> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes spécifiques.
+> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Utiliser Analyser dans Excel avec des jeux de données locaux
 Les utilisateurs de l’organisation peuvent utiliser Excel pour afficher et interagir avec des jeux de données Power BI locaux. [En savoir plus](service-analyze-in-excel.md)
@@ -238,7 +239,7 @@ Les utilisateurs de l’organisation peuvent manipuler et partager des visuels p
 Les utilisateurs de l’organisation peuvent manipuler et partager des visuels créés avec des scripts R. [En savoir plus](service-r-visuals.md)
 
 > [!NOTE]
-> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes spécifiques.
+> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
 ## <a name="audit-settings"></a>Paramètres d’audit
 
@@ -249,7 +250,7 @@ Les utilisateurs de l’organisation peuvent utiliser l’audit pour surveiller 
 Ce paramètre doit être activé pour pouvoir enregistrer les entrées du journal d’audit.
 
 > [!NOTE]
-> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes spécifiques.
+> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
 ## <a name="dashboard-settings"></a>Paramètres du tableau de bord
 
@@ -258,7 +259,7 @@ Ce paramètre doit être activé pour pouvoir enregistrer les entrées du journa
 Les utilisateurs de l’organisation peuvent étiqueter les tableaux de bord avec des classifications indiquant les niveaux de sécurité des tableaux de bord. [En savoir plus](service-data-classification.md)
 
 > [!NOTE]
-> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes spécifiques.
+> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
 ## <a name="developer-settings"></a>Paramètres de développeur
 
