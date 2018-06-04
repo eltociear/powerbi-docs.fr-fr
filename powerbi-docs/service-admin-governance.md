@@ -11,10 +11,11 @@ ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 955f4347630a781174d399d6a1363683745a4b3e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293487"
 ---
 # <a name="governance-and-deployment-approaches"></a>Méthodes de gouvernance et de déploiement
 Au cours des dernières décennies, les entreprises ont bien pris conscience de l’importance d’exploiter les données pour tirer profit des opportunités de marché. Qu’elles utilisent l’analyse concurrentielle ou l’analyse des modèles opérationnels, de nombreuses entreprises comprennent désormais qu’une stratégie de données peut leur permettre de prendre de l’avance sur leurs concurrents.  

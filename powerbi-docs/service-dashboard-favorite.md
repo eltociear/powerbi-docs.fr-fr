@@ -12,10 +12,11 @@ ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 920e61ed173e979a92958e56f9e0276f26288b3f
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34250672"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Tableaux de bord, rapports et applications favoris dans le service Power BI
 Quand vous ajoutez du contenu aux *favoris*, vous pouvez y accéder à partir de tous vos espaces de travail.  Les favoris correspondent généralement aux contenus que vous consultez le plus souvent.

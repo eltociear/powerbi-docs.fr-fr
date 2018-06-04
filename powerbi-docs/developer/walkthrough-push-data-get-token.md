@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
 ms.openlocfilehash: 640c6dac9a896cff55bddad46ceef8bce7ccae14
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289369"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Étape 2 : Obtenir un jeton d’accès d’authentification
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).

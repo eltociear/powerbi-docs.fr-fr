@@ -11,10 +11,11 @@ ms.date: 08/10/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 36351491f7cb99a2e597ef4fd498ef7c38da386e
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34243888"
 ---
 # <a name="sql-database-auditing-content-pack-for-power-bi"></a>Pack de contenu SQL Database Auditing pour Power BI
 Le pack de contenu Azure [SQL Database Auditing](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) pour Power BI vous permet de comprendre l’activité de votre base de données, ainsi que les écarts et les anomalies pouvant indiquer des problèmes au niveau de l’activité de votre entreprise ou des violations potentielles de sécurité. 

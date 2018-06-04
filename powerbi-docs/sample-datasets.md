@@ -11,10 +11,11 @@ ms.date: 05/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
 ms.openlocfilehash: b6ef85549b729b1a91aa4a9a5f4686dcbbabaeb1
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34471982"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Quels exemples de données pouvez-vous utiliser avec Power BI ?
 Vous n’avez pas de données sous la main pour essayer Power BI ?  Vous avez un jeu de données, mais vous craignez de l’endommager, car vous ne connaissez pas assez bien le fonctionnement de Power BI ?

@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 206d9866b9bb4e47fea5dba58afbc8cdcf28b675
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 62827117c04e5332936e36b82ebbb35af82e975c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722106"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée
 
@@ -27,7 +28,7 @@ Cet exemple fait partie d’une série d’exemples qui illustre la façon dont 
 
 ## <a name="prerequisites"></a>Conditions préalables
 
- Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](https://docs.microsoft.com/en-us/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [fichier .pbix](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT Spend Analysis Sample PBIX.pbix) ou [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529783).
+ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](https://docs.microsoft.com/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [fichier .pbix](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT-Spend-Analysis-Sample-PBIX.pbix) ou [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529783).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
 
@@ -40,7 +41,7 @@ Cet exemple fait partie d’une série d’exemples qui illustre la façon dont 
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez **Exemple Analyse des dépenses informatiques**, puis choisissez **Se connecter**.  
   
-   ![Obtenir les données](media/sample-it-spend/it-connect.png)
+   ![Obtenir des données](media/sample-it-spend/it-connect.png)
    
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. 
    

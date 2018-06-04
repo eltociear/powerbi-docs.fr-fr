@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 05/07/2018
 ms.author: maggies
 ms.openlocfilehash: 84a2fe350c1146591aa89c5900c10f2747e90cf3
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34297443"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Bien démarrer avec l’application mobile Power BI sur appareils Android
@@ -32,7 +32,7 @@ Découvrez les [nouveautés des applications mobiles Power BI](mobile-whats-new
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-### <a name="get-the-app"></a>Se procurer l’application
+### <a name="get-the-app"></a>Obtenir l’application
 
 [Téléchargez l’application Power BI pour Android](http://go.microsoft.com/fwlink/?LinkID=544867) sur Google Play.
   

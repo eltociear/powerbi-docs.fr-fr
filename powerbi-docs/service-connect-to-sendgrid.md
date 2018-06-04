@@ -11,10 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: a08d9d10725a5c135ef6732b8397a57833463f4c
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34247823"
 ---
 # <a name="connect-to-sendgrid-with-power-bi"></a>Se connecter à SendGrid avec Power BI
 Le pack de contenu SendGrid pour Power BI vous permet d’extraire des données et des statistiques de votre compte SendGrid. À l’aide du pack de contenu SendGrid, vous pouvez visualiser vos statistiques SendGrid dans un tableau de bord.

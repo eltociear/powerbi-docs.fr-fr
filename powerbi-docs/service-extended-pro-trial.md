@@ -11,10 +11,11 @@ ms.date: 07/18/2017
 ms.author: maghan
 LocalizationGroup: Get started
 ms.openlocfilehash: c38b94b278bf0e2fe308e3249b27acf8ed7e7837
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34247984"
 ---
 # <a name="extended-pro-trial-activation"></a>Activation de l’essai Pro prolongé
 À partir du 1er juin 2017, tous les utilisateurs éligibles pourront choisir l’essai Pro prolongé du service Power BI.

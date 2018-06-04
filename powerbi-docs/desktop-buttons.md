@@ -11,10 +11,11 @@ ms.date: 04/04/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: a56108668bea3e5210c4429825045ebb23faf72c
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34228757"
 ---
 # <a name="using-buttons-in-power-bi"></a>Utilisation des boutons dans Power BI
 En utilisant les **boutons** de Power BI, vous pouvez créer des rapports et des tableaux de bord qui se comportent comme des applications et donc créer un environnement plus interactif dans lequel les utilisateurs peuvent se déplacer, cliquer et interagir davantage avec le contenu Power BI. Vous pouvez ajouter des boutons aux rapports de **Power BI Desktop**et partager ou publier ces rapports dans le service Power BI pour créer des tableaux de bord qui offrent un comportement semblable à celui des applications pour les utilisateurs.
@@ -40,7 +41,7 @@ Les cartes suivantes du volet **Visualisations** vous permettent d’ajuster la 
 
 * Texte du bouton
 * Icône
-* Plan
+* Contour
 * Remplir
 
 Pour sélectionner la manière dont le bouton doit apparaître pour chaque état, développez l’une de ces cartes et sélectionnez la liste déroulante qui apparaît en haut. Dans l’image suivante, vous voyez la carte **Plan** développée, avec la liste déroulante sélectionnée pour montrer les trois états :
@@ -58,7 +59,7 @@ Les options des actions de bouton sont :
 
 * Précédent
 * Signet
-* Questions/Réponses
+* Q&A
 
 La sélection de **Précédent** renvoie l’utilisateur à la page précédente du rapport. C’est particulièrement utile pour les pages d’exploration.
 

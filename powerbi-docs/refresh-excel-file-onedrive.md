@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: b7a49a04ed344d6977dba5ac739c0f0d41aca5b9
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34239127"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Actualiser un jeu de données créé à partir d’un classeur Excel sur OneDrive ou SharePoint Online
 Vous pouvez importer des classeurs Excel stockés sur votre ordinateur local ou dans le stockage cloud (OneDrive Entreprise ou SharePoint Online). Nous allons examiner les avantages de l’utilisation du stockage cloud pour vos fichiers Excel. Pour plus d’informations sur l’importation des fichiers Excel dans Power BI, consultez [Obtenir des données de classeurs Excel](service-excel-workbook-files.md).

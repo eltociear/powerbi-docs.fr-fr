@@ -10,10 +10,11 @@ ms.date: 01/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 0e98c68e62f36114257052171e0928db25853f24
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34239485"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Didacticiel : Utiliser Questions et réponses pour créer des visualisations et générer des rapports
 La [vue d’ensemble de Questions et réponses](power-bi-q-and-a.md) vous a présenté le moteur Questions et réponses de Power BI et a différentié les *consommateurs* (qui ont des tableaux de bord et rapports partagés avec eux) et les *créateurs* (qui possèdent les rapports et jeux de données sous-jacents). La première partie de ce didacticiel est principalement destinée aux utilisateurs consommant des tableaux de bord à l’aide du service Power BI. La deuxième partie est conçue pour les personnes qui créent des rapports à l’aide du service Power BI ou de Power BI Desktop. [Questions et réponses et Power BI Mobile](mobile-apps-ios-qna.md) et [Questions et réponses avec Power BI Embedded](developer/qanda.md) sont traités dans différents articles.

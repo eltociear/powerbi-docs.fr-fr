@@ -11,10 +11,10 @@ ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 20bcc45fa95bcff6eb8a761dae58c67a875f55cd
-ms.sourcegitcommit: e6db826c2f43a69e4c63d5f4920baa8f66bc41be
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34455993"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Tutoriel : analyser des données de page web à l’aide de Power BI Desktop
@@ -56,7 +56,7 @@ Pour importer les données :
    
    Un aperçu de la table s’ouvre dans **l’éditeur Power Query**, où vous pouvez appliquer des transformations pour nettoyer les données. 
    
-   ![Power Query Editor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+   ![Éditeur Power Query](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
    
 ## <a name="shape-data-in-power-query-editor"></a>Former des données dans l’éditeur Power Query
 

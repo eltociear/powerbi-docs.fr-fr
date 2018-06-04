@@ -11,10 +11,11 @@ ms.date: 09/11/2017
 ms.author: mgblythe
 LocalizationGroup: Premium
 ms.openlocfilehash: 3cf20899e705328c9f63bdbede4c30bd69488762
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34298317"
 ---
 # <a name="power-bi-premium-release-notes"></a>Notes de publication Power BI Premium
 Il s’agit des notes de publication de Power BI Premium, une capacité dédiée qui offre à votre organisation ou à votre équipe des performances plus fiables, des volumes de données plus importants et la possibilité de distribuer du contenu sans licence par utilisateur pour les lecteurs.

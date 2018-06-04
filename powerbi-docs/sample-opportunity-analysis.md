@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 1133c524999dcc00c81ff163fe7c6777f6b9f817
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.openlocfilehash: d3a18b2505739d28276fbe9fc269bbf774879fa6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481069"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des opportunités pour Power BI : visite guidée
 
@@ -37,7 +38,7 @@ Cet exemple fait partie d’une série d’exemples qui illustre la façon dont 
 
 ## <a name="prerequisites"></a>Conditions préalables
 
- Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](https://docs.microsoft.com/en-us/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample), [fichier .pbix](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity-Analysis-Sample-PBIX.pbix) ou [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529782).
+ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](https://docs.microsoft.com/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample), [fichier .pbix](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity-Analysis-Sample-PBIX.pbix) ou [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529782).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
 
@@ -50,7 +51,7 @@ Cet exemple fait partie d’une série d’exemples qui illustre la façon dont 
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez **Exemple Analyse des opportunités**, puis choisissez **Se connecter**.  
   
-   ![Obtenir les données](media/sample-opportunity-analysis/opportunity-connect.png)
+   ![Obtenir des données](media/sample-opportunity-analysis/opportunity-connect.png)
    
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. 
    

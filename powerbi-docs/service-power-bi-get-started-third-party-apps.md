@@ -11,10 +11,11 @@ ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Get started
 ms.openlocfilehash: 7ac6cee3331333b40119d6f5ab014b2e39d2ef23
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251746"
 ---
 # <a name="get-started-with-third-party-apps"></a>Prise en main d’applications tierces
 Avec Power BI, vous pouvez utiliser une application créée par une société ou une personne autres que Microsoft. Par exemple, vous pouvez utiliser une application tierce qui intègre les vignettes de Power BI dans une application web personnalisée. Lorsque vous utilisez une application tierce, vous êtes invité à accorder à cette application certaines autorisations d’accès à votre compte Power BI et à vos ressources. Il est important que seules les applications que vous connaissez et qui sont dignes de confiance bénéficient d’autorisations. Vous pouvez révoquer à tout moment les autorisations accordées à une application. Consultez la page [Révoquez les autorisations accordées à une application tierce](#revoke).

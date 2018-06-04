@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: f8eb978aaacd345a29f2d9e2395fad419a651be0
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289760"
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Utiliser les Mesures rapides pour effectuer facilement des calculs courants et puissants
 Les **Mesures rapides** permettent d’effectuer rapidement et facilement des calculs courants et puissants. Une **mesure rapide** exécute un ensemble de commandes DAX (créées automatiquement) en arrière-plan en fonction des données entrées dans une boîte de dialogue, puis affiche les résultats, que vous pourrez utiliser dans votre rapport. Mieux encore, vous pouvez voir la commande DAX exécutée par la mesure rapide, et ainsi vous lancer ou développer vos propres connaissances concernant DAX.

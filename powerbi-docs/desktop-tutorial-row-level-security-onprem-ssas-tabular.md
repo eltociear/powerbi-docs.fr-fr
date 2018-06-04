@@ -1,29 +1,22 @@
 ---
 title: Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services dans Power BI
 description: Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services
-services: powerbi
-documentationcenter: ''
 author: selvarms
 manager: amitaro
-backup: davidi
+ms.reviewer: davidi
 editor: davidi
-tags: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/12/2017
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 85b76c5defe2fe20b5e90fbc7a8b094e28c40481
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: f8c1aae757e80c0c2adbc321345c242eba25098c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33810848"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34456131"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services
 Ce didacticiel présente les étapes nécessaires à l’implémentation de la **sécurité au niveau des lignes** dans votre **modèle tabulaire Analysis Services**. Par ailleurs, il montre comment l’utiliser dans un rapport Power BI. Les étapes de ce didacticiel sont conçues pour vous aider à suivre facilement son déroulement et à apprendre les étapes nécessaires en se basant sur un exemple de jeu de données.

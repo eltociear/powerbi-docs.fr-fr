@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 8d04814a81390b98843cb402f495459c884a2e84
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34299651"
 ---
 # <a name="getting-started-with-color-formatting-and-axis-properties"></a>Prise en main de la mise en forme des couleurs et des propriétés d’axe
 Dans **Power BI**, vous pouvez modifier la couleur des séries de données, des points de données et même l’arrière-plan des visualisations. Vous pouvez également modifier la façon dont les axes X et Y sont présentés, ce qui vous donne un contrôle total de la façon dont vos tableaux de bord et vos rapports s’affichent.
@@ -41,7 +42,7 @@ Vous pouvez personnaliser de nombreux éléments de ces visualisations :
 * Titre
 * Arrière-plan
 * Les proportions
-* La bordure
+* Bordure
 
 > [!NOTE]
 >  

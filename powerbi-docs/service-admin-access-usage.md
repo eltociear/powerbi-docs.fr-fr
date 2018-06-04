@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1f482cf9e3f0cf344a2808ca778839a50d851ac7
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 50ace772c24b2a9e706e82ca16ddcb36d8b6b60c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722198"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Trouver les utilisateurs Power BI qui se sont connectés
 Si vous êtes administrateur de locataire et que vous voulez voir quels utilisateurs se sont connectés à Power BI, vous pouvez utiliser les rapports d’accès et d’utilisation Azure Active Directory pour une meilleure visibilité.
@@ -60,7 +61,7 @@ Dans l’écran Activité, vous pouvez sélectionner **Télécharger** dans la b
 Vous pouvez utiliser PowerShell pour exporter les données de connexion. Un [exemple](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script) est disponible dans la documentation Azure AD.
 
 > [!NOTE]
-> Pour que l’exemple PowerShell fonctionne, veillez à respecter la [configuration requise pour accéder à l’API de création de rapports Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-prerequisites).
+> Pour que l’exemple PowerShell fonctionne, veillez à respecter la [configuration requise pour accéder à l’API de création de rapports Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites).
 > 
 > 
 

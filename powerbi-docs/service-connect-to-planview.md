@@ -11,10 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 4641fc0c36ad7fb64cc5da08ee8eda180f4ccc31
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34240486"
 ---
 # <a name="connect-to-planview-enterprise-with-power-bi"></a>Se connecter à Planview Enterprise avec Power BI
 Le pack de contenu Planview Enterprise vous permet de visualiser vos ressources et données de gestion du travail d’une manière entièrement nouvelle dans Power BI. Utilisez vos informations d’identification de connexion Planview Enterprise pour consulter de façon interactive les dépenses d’investissement de votre portefeuille, comprendre où vous vous situez par rapport au budget, et savoir comment vos projets s’alignent sur vos priorités stratégiques d’entreprise. Vous pouvez également étendre le tableau de bord et les rapports prêts à l’emploi pour obtenir les informations les plus importantes pour vous.

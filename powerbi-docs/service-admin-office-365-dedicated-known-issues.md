@@ -11,10 +11,11 @@ ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: cedb3e1572fbf20a32abe4f28b38030539502124
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34238142"
 ---
 # <a name="office-365-dedicated-customers---known-issues"></a>Clients Office 365 dédiés - Problèmes connus
 Power BI est maintenant pris en charge pour les clients Office 365 dédiés.  Si vous êtes un client O365 dédié, vous pouvez vous connecter avec un compte de ce client et utiliser Power BI. Il existe actuellement deux problèmes connus.

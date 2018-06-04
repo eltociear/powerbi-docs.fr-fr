@@ -7,18 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: e77c77acb7808923097eb3e2146bef816eda51ee
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: a1cbcc6d265504bc93ef6447a6be381ca6399063
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721751"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Développer avec les API REST pour Power BI Report Server
 Power BI Report Server prend en charge les API Representational State Transfer (REST). Les API REST sont des points de terminaison de service qui prennent en charge un ensemble d’opérations HTTP (méthodes) qui fournissent un accès en création, récupération, mise à jour ou suppression aux ressources à l’intérieur d’un serveur de rapports.
 
 L’API REST fournit un accès par programme aux objets dans un catalogue Power BI Report Server. Ces objets sont, par exemple, des dossiers, des rapports, des indicateurs de performance clés, des sources de données, des jeux de données, des plans d’actualisation, des abonnements et bien plus encore. L’API REST vous permet, par exemple, de parcourir l’arborescence des dossiers, de découvrir le contenu d’un dossier, ou de télécharger une définition de rapport. Elle permet également de créer, mettre à jour et supprimer des objets. Des exemples d’utilisation d’objets sont le téléchargement d’un rapport, l’exécution d’un plan d’actualisation, la suppression d’un dossier et ainsi de suite.
+
+[!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
 ## <a name="components-of-a-rest-api-requestresponse"></a>Composants d’une requête-réponse d’API REST
 Une paire requête-réponse (ou demande/réponse) d’API REST peut être divisée en cinq composants :

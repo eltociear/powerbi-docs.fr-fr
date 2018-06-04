@@ -11,10 +11,11 @@ ms.date: 09/05/2017
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 2ba97b76b13c9adf3c9f20d5d42c5ec9c363edda
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34293671"
 ---
 # <a name="power-bi-free-in-your-organization"></a>Power BI (gratuit) dans votre organisation
 Cet article explique comment utiliser l’offre Power BI (gratuit) au sein de votre organisation. Le terme « organisation » signifie que vous disposez d’un client et que vous pouvez gérer les utilisateurs et services au sein de ce client. En tant qu’administrateur, vous pouvez contrôler l’attribution des licences ou autoriser les utilisateurs à s’inscrire en tant que particuliers. Nous nous intéresserons à la licence Power BI (gratuit) et à la manière dont vous pouvez contrôler l’inscription des particuliers.

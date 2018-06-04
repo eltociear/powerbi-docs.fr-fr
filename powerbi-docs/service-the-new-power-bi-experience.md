@@ -12,10 +12,11 @@ ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 004b9c921de9e94cb52f90cdea4815acd6162175
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34471591"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Démarrage rapide - Découverte du service Power BI
 
@@ -127,7 +128,7 @@ Vous pouvez également trier le contenu par nom ou propriétaire.
 Pour en savoir plus, consultez [Navigation dans Power BI : rechercher, trier, filtrer](service-navigation-search-filter-sort.md).
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
-Une fois que vous avez terminé ce guide de démarrage rapide, vous pouvez supprimer le rapport, le jeu de données et le tableau de bord de l’exemple Analyse des ventes au détail, si vous le souhaitez.
+Maintenant que vous avez suivi ce guide de démarrage rapide, vous pouvez si vous le souhaitez supprimer le rapport, le jeu de données et le tableau de bord de l’exemple Retail Analysis (Analyse des ventes au détail).
 
 1. Ouvrez le service Power BI (app.powerbi.com) et connectez-vous.    
 2. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail > Mon espace de travail**.  
@@ -137,7 +138,7 @@ Une fois que vous avez terminé ce guide de démarrage rapide, vous pouvez suppr
     ![supprimer le tableau de bord](media/service-the-new-power-bi-experience/power-bi-cleanup.png)
 
 4. Sélectionnez l’onglet **Rapports** et procédez de la même façon pour le rapport Analyse des ventes au détail.
-1. Sélectionnez l’onglet **Jeux de données** et procédez de la même façon pour le jeu de données Analyse des ventes au détail.
+1. Sélectionnez l’onglet **Jeux de données** et procédez de la même façon pour le jeu de données Retail Analysis (Analyse de la vente au détail).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

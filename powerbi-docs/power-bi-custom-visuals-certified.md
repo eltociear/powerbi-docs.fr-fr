@@ -1,29 +1,21 @@
 ---
 title: Certifier des visualisations Power BI personnalisées
 description: Découvrez la configuration requise et la procédure à suivre pour soumettre un visuel personnalisé pour certification. Cet article présente également une liste de visuels personnalisés déjà certifiés.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: no
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: 1a1484b14cf20ea428bdc31aa1513f43a85f3739
-ms.sourcegitcommit: c6e1cd09570efc355f4d45a2f87be562e23f3fc3
+ms.openlocfilehash: a1d3a18fd2f325cd82cd682feb52205f17dacf93
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32345530"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297006"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Obtention d’un visuel personnalisé *certifié*
 ## <a name="what-is-meant-by-certified"></a>Qu’entend-on par *certifié* ?

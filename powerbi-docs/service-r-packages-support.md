@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 39c6c11e4815df507431648b1d317f9a62a4b1c3
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34299191"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>Packages R dans le service Power BI
 Vous pouvez utiliser le puissant [langage de programmation R](https://www.r-project.org/) pour créer des visuels dans le service Power BI. De nombreux packages R sont pris en charge dans le service Power BI (et bien plus encore sont pris en charge tout le temps), mais certains packages ne le sont pas.

@@ -11,10 +11,10 @@ ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
 ms.openlocfilehash: c6cd75efd44259c2812f98a37875cf716d4843ad
-ms.sourcegitcommit: e6db826c2f43a69e4c63d5f4920baa8f66bc41be
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34456200"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Combiner des données de ventes à partir d’Excel et d’un flux OData
@@ -47,7 +47,7 @@ Tout d’abord, importez les données de produit à partir du classeur Excel Pro
    
 Un aperçu de la table s’ouvre dans **l’éditeur Power Query**, où vous pouvez appliquer des transformations pour nettoyer les données. 
    
-![Power Query Editor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
+![Éditeur Power Query](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
    
 >[!NOTE]
 >Vous pouvez également ouvrir **l’éditeur Power Query** en sélectionnant **Modifier les requêtes** > **Modifier les requêtes** à partir du ruban **Accueil** dans Power BI Desktop, ou en cliquant avec le bouton droit ou en choisissant **Plus d’options** en regard de n’importe quelle requête dans la **vue Rapport**, puis en sélectionnant **Modifier la requête**.

@@ -12,10 +12,11 @@ ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 9aa0169f76515dd2f05a3e9debb8bc3d10cbdd07
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34250143"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Afficher un contenu associé dans le service Power BI
 Le volet **Contenu associé** montre les interconnexions entre les éléments de contenu du service Power BI (tableaux de bord, rapports et jeux de données).  Et il s’améliore, car il permet d’effectuer des tâches courantes : actualisation, changement de nom, génération d’informations, et bien plus encore. Sélectionnez un rapport ou un tableau de bord pour l’ouvrir dans votre espace de travail Power BI.   

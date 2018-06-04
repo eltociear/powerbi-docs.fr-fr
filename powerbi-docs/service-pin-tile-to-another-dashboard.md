@@ -11,10 +11,11 @@ ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: ed882a339e1ee7d53302dc33a7cedb1a95709b8b
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34249111"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Épingler une vignette d’un tableau de bord vers un autre
 L’une des méthodes disponibles pour ajouter une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md) est de la copier à partir d’un autre tableau de bord. Chacune de ces vignettes fait office de lien qui, quand vous cliquez dessus, vous renvoie là où elle a été créée (soit dans Q&R, soit dans un rapport). 

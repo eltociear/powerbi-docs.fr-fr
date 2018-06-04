@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: ff5da3623d572b8ecb3edc8c5eb40d866e6961d5
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 3382562459c461d9864cfce7163fb0d049deb494
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481805"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la vente au détail pour Power BI : Visite guidée
 
@@ -24,7 +25,8 @@ Cet exemple de tableau de bord et son rapport sous-jacent permettent d’analyse
 
 ## <a name="prerequisites"></a>Conditions préalables
 
- Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](https://docs.microsoft.com/en-us/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [fichier .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) ou [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529778).
+ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](https://docs.microsoft.com/power-bi/sample-datasets#get-and-open-a-sample-content-pack-in-power-bi-service), [fichier .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail-Analysis-Sample-PBIX.pbix) ou [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529778).
+
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
 

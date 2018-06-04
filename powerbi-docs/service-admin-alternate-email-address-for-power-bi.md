@@ -11,10 +11,11 @@ ms.date: 03/08/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 5013c70e4d3998eb39e0de2a92f890417175fd62
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34240903"
 ---
 # <a name="using-an-alternate-email-address"></a>Utilisation d’une autre adresse de messagerie
 Par défaut, l’adresse de messagerie avec laquelle vous vous êtes inscrit à Power BI est utilisée pour vous envoyer des mises à jour sur l’activité dans Power BI.  Par exemple, quand quelqu’un vous envoie une invitation de partage, elle est expédiée à cette adresse.

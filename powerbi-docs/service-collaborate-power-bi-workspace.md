@@ -11,10 +11,11 @@ ms.date: 01/29/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: cab0f0513d73a865407574d43f8cd65ca5d75a9e
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34245451"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Collaborer dans l’espace de travail de votre application Power BI
 Les espaces de travail d’application Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. Les espaces de travail sont en effet conçus pour la collaboration. Lorsque vous avez fini de collaborer avec vos collègues sur vos tableaux de bord et rapports, vous les empaquetez en tant qu’application, puis distribuez celle-ci. Pour en savoir plus, voir [Créer des applications et des espaces de travail d’application dans Power BI](service-create-distribute-apps.md). 

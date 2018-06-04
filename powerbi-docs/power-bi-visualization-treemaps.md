@@ -12,10 +12,10 @@ ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 8b3f49487677f00e1026c9eab813633f470e6b41
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
 ms.locfileid: "34295350"
 ---
 # <a name="treemaps-in-power-bi"></a>Graphiques de compartimentage dans Power BI
@@ -37,7 +37,7 @@ Les treemaps sont conseillés :
 
 ### <a name="prerequisites"></a>Conditions préalables
  - Service Power BI ou Power BI Desktop
- - Exemple Analyse de la vente au détail
+ - Retail Analysis sample
 
 ## <a name="create-a-basic-treemap"></a>Créer un treemap simple
 Vous souhaitez d’abord regarder une personne créer un treemap ?  Accédez à la position 2:10 de cette vidéo pour voir comment Amanda crée un graphique de compartimentage.

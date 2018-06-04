@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maghan
 ms.openlocfilehash: 0f06d5c3742ea5187ff41f6f8974c8a81e5d1d33
-ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34310449"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
@@ -31,7 +32,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | **Source de données** | **Données mises en cache** | **Actualisation planifiée** | **Active/DirectQuery** |
 | --- | --- | --- | --- |
 | Base de données SQL Server |Oui |Oui |Oui |
-| SQL Server Analysis Services |Oui |Oui |Oui |
+| SQL Server Analysis Services |Oui |Oui |Oui |
 | Azure SQL Database |Oui |Oui |Oui |
 | Azure SQL Data Warehouse |Oui |Oui |Oui |
 | Excel |Oui |Oui |Non |
@@ -119,7 +120,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** |
 | --- | --- | --- | --- | --- |
 | Base de données SQL Server |Non |Non |Oui |Oui |
-| SQL Server Analysis Services |Non |Non |Oui |Oui |
+| SQL Server Analysis Services |Non |Non |Oui |Oui |
 | Web |Oui |Non |Oui |Oui |
 | Azure SQL Database |Non |Non |Oui |Non |
 | Azure SQL Data Warehouse |Non |Non |Oui |Non |
@@ -197,7 +198,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour Di
 | **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** | **Authentification Windows intégrée** |
 | --- | --- | --- | --- | --- | --- |
 | Base de données SQL Server |Non |Non |Oui |Oui |Oui |
-| SQL Server Analysis Services |Non |Non |Oui |Oui |Oui |
+| SQL Server Analysis Services |Non |Non |Oui |Oui |Oui |
 | Azure SQL Database |Non |Non |Oui |Non |Non |
 | Azure SQL Data Warehouse |Non |Non |Oui |Non |Non |
 | Base de données Oracle |Non |Non |Oui |Oui |Oui |

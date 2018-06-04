@@ -11,10 +11,11 @@ ms.date: 12/21/2017
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 37f4663a176e81f2c235111092fcfa5576bfe08a
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34244512"
 ---
 # <a name="analytics-pane-in-power-bi-service"></a>Volet Analyse du service Power BI
 Avec le volet **Analyse** de **Service Power BI**, vous pouvez ajouter des *lignes de référence* dynamiques aux visualisations et mettre en relief les analyses ou les tendances importantes.

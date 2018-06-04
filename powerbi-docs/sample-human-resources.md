@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 40be9e37204870cd304ef144ade8adf0bf692335
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.openlocfilehash: 770e200b0aa6916ac6d2de144902a04e9660e552
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34482012"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exemple Ressources humaines pour Power BI : visite guidée
 
@@ -31,7 +32,7 @@ Cet exemple fait partie d’une série d’exemples qui illustre la façon dont 
 
 ## <a name="prerequisites"></a>Conditions préalables
 
- Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](https://docs.microsoft.com/en-us/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [fichier pbix](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human-Resources-Sample-PBIX.pbix) ou [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529780).
+ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](https://docs.microsoft.com/power-bi/sample-human-resources#get-the-content-pack-for-this-sample), [fichier pbix](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human-Resources-Sample-PBIX.pbix) ou [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529780).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
 
@@ -44,7 +45,7 @@ Cet exemple fait partie d’une série d’exemples qui illustre la façon dont 
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez l’**exemple Ressources humaines**, puis choisissez **Se connecter**.  
    
-   ![Obtenir les données](media/sample-human-resources/pbi_hr_sample_connect.png)
+   ![Obtenir des données](media/sample-human-resources/pbi_hr_sample_connect.png)
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. 
    
    ![Astérisque](media/sample-human-resources/human-resources-sample-asterisk.png)
