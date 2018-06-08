@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/05/2018
+ms.date: 05/25/2018
 ms.author: v-thepet
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 77c1dbe528b218fe3b51992f548325bb8916c22c
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 75ae82e43987cb42b858fe4350330fda3692cf97
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34297351"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721498"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 Vous souhaitez que vos lecteurs de rapports soient en mesure de rechercher des mesures de ventes globales, mais également de mettre en surbrillance des performances pour les responsables de région individuels et les différentes périodes. Vous pouvez créer des rapports distincts ou des graphiques de comparaison ou vous pouvez utiliser des segments. Un segment constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport. 
@@ -43,6 +43,13 @@ Les segments Power BI présentent les limitations suivantes :
 ## <a name="create-slicers"></a>Créer des segments
 
 Pour créer un nouveau segment, vous pouvez sélectionner l’icône du segment et sélectionner le champ des données à partir duquel filtrer (ou faites-le glisser vers la boîte **Champs** dans le volet **Visualisations**) ou vous pouvez sélectionner ou faire glisser le champ de données en premier pour créer une visualisation, puis sélectionner l’icône du segment pour transformer la visualisation en segment. Différents types de données créent différents types de segments, avec des options et des effets différents. 
+
+La première fois que vous modifiez un rapport, le bouton pour **Rétablir les valeurs par défaut** est activé. Il s’agit d’un rappel indiquant que vous avez changé les paramètres du rapport d’origine. Si vous quittez le rapport, ces modifications sont enregistrées. Quand vous revenez au rapport, vous ne devez pas resegmenter le rapport.  Cependant, si vous voulez rétablir les paramètres par défaut de l’auteur du rapport, sélectionnez le bouton **Rétablir les valeurs par défaut** dans la barre de menus du haut.
+
+![Bouton Rétablir les valeurs par défaut](media/power-bi-visualization-slicers/power-bi-reset-to-default.png)
+
+> [!NOTE]
+> Si votre bouton **Rétablir les valeurs par défaut** reste désactivé, cela signifie que l’auteur du rapport a désactivé la fonctionnalité pour le rapport ou que le rapport contient un visuel personnalisé. Pointez simplement sur le bouton pour lire l’explication de l’info-bulle. 
 
 **Pour créer un nouveau segment pour filtrer les données par le Gestionnaire de districts**
 

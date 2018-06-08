@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 726d084201c59182655fbaf5ef35a0e999bc07fc
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: c92e91a08026ab3e4fce4513aa8e0892fa0c3db3
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799484"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Utilisation de données tabulaires Analysis Services dans Power BI Desktop
 Avec Power BI Desktop, il existe deux façons d’obtenir et de se connecter à des données à partir de vos modèles tabulaires SQL Server Analysis Services : vous pouvez explorer à l’aide d’une connexion active ou sélectionner des éléments et les importer dans Power BI Desktop.
@@ -30,7 +31,7 @@ Quand vous avez créé des rapports dynamiques dans Power BI Desktop, vous pouve
 **Sélectionner des éléments et les importer dans Power BI Desktop** : lorsque vous vous connectez avec cette option, vous pouvez sélectionner des éléments tels que des tables, des colonnes et des mesures dans votre perspective ou modèle tabulaire et les charger dans un modèle Power BI Desktop. Vous pouvez utiliser l’Éditeur de requête avancé de Power BI Desktop pour préciser ce que vous souhaitez obtenir. Vous pouvez utiliser les fonctionnalités de modélisation de Power BI Desktop pour modéliser davantage les données. Aucune connexion active entre Power BI Desktop et le modèle tabulaire n’est conservée. Vous pouvez ensuite explorer votre modèle Power BI Desktop hors connexion ou le publier sur votre site Power BI.
 
 ## <a name="to-connect-to-a-tabular-model"></a>Pour vous connecter à un modèle tabulaire
-1. Dans Power BI Desktop, sous l’onglet **Accueil**, cliquez sur **Obtenir des données**.
+1. Dans Power BI Desktop, sous l’onglet **Accueil** , cliquez sur **Obtenir des données**.
    
    ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata.png)
 2. Cliquez sur **Base de données SQL Server Analysis Services**, puis sur **Se connecter**.
@@ -84,4 +85,10 @@ Lorsque vous créez un fichier Power BI Desktop avec une connexion active, il pe
 2. Entrez le nouveau nom du serveur.
    
    ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_chname_dialog.png)
+   
+   
+## <a name="troubleshooting"></a>Résolution des problèmes 
+La liste suivante décrit tous les problèmes connus lors de la connexion à SQL Server Analysis Services (SSAS) ou Azure Analysis Services. 
+
+* **Erreur : Impossible de charger le schéma de modèle** : Cette erreur se produit généralement quand l’utilisateur qui se connecte à Analysis Services n’a pas accès à la base de données/au modèle.
 

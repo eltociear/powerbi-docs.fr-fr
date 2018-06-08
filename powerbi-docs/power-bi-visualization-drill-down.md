@@ -1,5 +1,5 @@
 ---
-title: Explorer une visualisation dans Power BI
+title: Mode Exploration pour une visualisation dans Power BI
 description: Ce document montre comment explorer une visualisation dans le service Microsoft Power BI et Power BI Desktop.
 author: mihart
 manager: kfile
@@ -8,17 +8,19 @@ featuredvideoid: MNAaHw4PxzE
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2018
+ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d622e6b461668d1972a78f6844bd269fb6596061
-ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
+ms.openlocfilehash: f0ac0ca1bd03f06e2b7679ab4afc1b9193286f5b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584205"
 ---
-# <a name="drill-down-in-a-visualization-in-power-bi"></a>Explorer une visualisation dans Power BI
-## <a name="drill-down-requires-a-hierarchy"></a>La fonction de descente dans la hiérarchie nécessite une hiérarchie
+# <a name="drill-mode-in-a-visualization-in-power-bi"></a>Mode Exploration pour une visualisation dans Power BI
+
+## <a name="drill-requires-a-hierarchy"></a>L’exploration nécessite une hiérarchie
 Quand un visuel a une hiérarchie, vous pouvez l’explorer pour révéler des détails supplémentaires. Par exemple, vous pouvez avoir une visualisation qui examine le nombre de médailles olympiques avec une hiérarchie constituée de sports, disciplines et événements. Par défaut, la visualisation indique le nombre de médailles olympiques par sport (gymnastique, ski, sports aquatiques, etc.). Toutefois, comme elle a une hiérarchie, si vous sélectionnez un élément visuel (par exemple, une barre, une ligne ou une bulle), une image encore plus détaillée s’affiche. Sélectionnez l’élément **aquatics** (sports aquatiques) afin d’afficher les données relatives à la natation, la plongée et le water polo.  Sélectionnez l’élément **diving** (plongée) pour afficher les détails relatifs au plongeoir, à la plateforme et aux événements de plongeon synchronisé.
 
 Vous pouvez ajouter des hiérarchies aux rapports que vous possédez, mais pas à ceux partagés avec vous.
@@ -35,64 +37,134 @@ Les dates sont un type unique de hiérarchie. Quand vous ajoutez un champ de dat
 > [!NOTE]
 > Pour savoir comment créer des hiérarchies à l’aide de Power BI Desktop, regardez la vidéo [Comment créer et ajouter des hiérarchies](https://youtu.be/q8WDUAiTGeU).
 > 
-> 
 
-## <a name="two-methods-to-drill-down"></a>Deux méthodes d’exploration
-Il existe deux méthodes pour descendre (et monter) dans la hiérarchie de votre visualisation.  Les deux sont décrites dans cet article. Les deux méthodes permettent d’accomplir la même chose : utilisez celle que vous appréciez le plus.
+## <a name="prerequisites"></a>Conditions préalables
+
+1. Dans le service Power BI ou dans Power BI Desktop, l’exploration nécessite une visualisation avec une hiérarchie. 
+   
+2. Pour suivre la procédure, [ouvrez l’exemple Retail Analysis](sample-datasets.md) et créez une treemap qui examine **Total Units This Year** (Values) par **Territory**, **City**, **PostalCode** et **Name** (Group).  La treemap a une hiérarchie constituée de secteurs, de villes, de codes postaux et de noms de ville. Chaque secteur a une ou plusieurs villes, chaque ville a un ou plusieurs codes postaux, etc. Par défaut, la visualisation affiche uniquement les données relatives au secteur, car le *secteur* (Territory) apparaît en premier dans la liste.
+   
+   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
+
+2. Comprendre comment les différentes icônes d’exploration fonctionnent ensemble peut prêter à confusion : nous allons donc filtrer la treemap pour afficher seulement 2 des plus petits secteurs : **KY** et **TN**. Sélectionnez la treemap et, sous **Filtres au niveau de l’élément visuel**, développez **Territory** et sélectionnez **KY** et **TN**.
+
+    ![Filtre pour KY et TN](media/power-bi-visualization-drill-down/power-bi-filter.png)    
+
+   Seuls deux secteurs apparaissent maintenant dans la treemap.
+
+   ![Icône d’exploration avec deux flèches](media/power-bi-visualization-drill-down/power-bi-territories.png)
+
+## <a name="three-ways-to-access-the-drill-features"></a>Trois façons d’accéder aux fonctionnalités d’exploration
+Vous disposez de plusieurs options pour accéder aux fonctionnalités d’exploration permettant de monter et de descendre dans la hiérarchie, et de développer, pour les visualisations qui ont des hiérarchies. Cet article explique comment utiliser la première option ci-dessous. Une fois que vous comprenez les principes fondamentaux de l’exploration permettant de descendre dans la hiérarchie et de développer, vous pouvez constater que ces trois méthodes accomplissent les mêmes choses, les tester et choisir celle que vous appréciez le plus.
+
+- Pointez sur une visualisation pour voir et utiliser les icônes.  
+
+    ![Parcours d’exploration](media/power-bi-visualization-drill-down/power-bi-hover.png)
+
+- Cliquez avec le bouton droit sur une visualisation pour faire apparaître et utiliser le menu.
+    
+    ![Menu contextuel](media/power-bi-visualization-drill-down/power-bi-drill-menu.png)
+
+- Dans la barre de menus de Power BI, sélectionnez le bouton **Explorer**.
+
+   ![](media/power-bi-visualization-drill-down/power-bi-explore.png)
+
+## <a name="drill-pathways"></a>Parcours d’exploration
+### <a name="drill-down"></a>Descendre dans la hiérarchie
+Vous disposez de plusieurs moyens pour explorer votre visualisation. ***Descendre dans la hiérarchie*** vous amène au niveau suivant dans la hiérarchie : ainsi, si vous considérez le niveau **Territory**, vous pouvez descendre dans la hiérarchie au niveau City, puis au niveau PostalCode, et enfin au niveau Name. Chaque étape de ce parcours vous montre de nouvelles informations.
+
+![Parcours d’exploration](media/power-bi-visualization-drill-down/power-bi-drill-path.png)
+
+### <a name="expand"></a>Développer
+
+***Développer*** ajoute un niveau de hiérarchie supplémentaire à la vue actuelle. Par conséquent, si vous considérez le niveau **Territory**, vous pouvez développer et ajouter des détails de City, PostalCode et Name à votre treemap. Chaque étape du parcours vous montre les mêmes informations et ajoute un niveau de nouvelles informations.
+
+![Parcours avec Développer](media/power-bi-visualization-drill-down/power-bi-expand-path.png)
+
+Vous pouvez également choisir de descendre dans la hiérarchie ou de développer sur un champ à la fois ou sur tous les champs en même temps. 
+
+## <a name="drill-down-all-fields-at-a-time"></a>Descendre dans la hiérarchie pour tous les champs à la fois
+
+1. Démarrez au plus haut niveau de la treemap montrant les données pour KY et TN. Élargissez votre treemap en sélectionnant une des poignées et en la faisant glisser vers la droite. 
+
+    ![Treemap montrant 2 États](media/power-bi-visualization-drill-down/power-bi-drill-down.png) .
+
+2. Pour descendre dans la hiérarchie pour ***tous les champs en même temps***, sélectionnez la flèche double en haut à gauche de la visualisation  ![Icône de descente dans la hiérarchie avec deux flèches](media/power-bi-visualization-drill-down/power-bi-drill-icon3.png). Votre treemap montre maintenant les données des villes pour le Kentucky et le Tennessee. 
+
+    ![Icône d’exploration avec deux flèches](media/power-bi-visualization-drill-down/power-bi-drill-down1.png)
+   
+5. Descendez dans la hiérarchie une nouvelle fois au niveau PostalCode.
+
+    ![Icône d’exploration avec deux flèches](media/power-bi-visualization-drill-down/power-bi-drill-down2.png)
+
+3. Pour remonter d’un niveau, sélectionnez la flèche vers le haut en haut à gauche de la visualisation ![](media/power-bi-visualization-drill-down/power-bi-drill-icon5.png).
+
+
+## <a name="drill-down-one-field-at-a-time"></a>Descendre dans la hiérarchie pour un champ à la fois
+Cette méthode utilise l’icône Descendre dans la hiérarchie qui apparaît en haut à droite de la visualisation elle-même. 
+
+1. Sélectionnez l’icône Descendre dans la hiérarchie pour l’activer ![Fonctionnalité Descendre dans la hiérarchie activée](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png). Vous avez maintenant la possibilité de descendre dans la hiérarchie ***un champ à la fois***. 
+   
+   ![](media/power-bi-visualization-drill-down/power-bi-drill-icon-new.png)
+
+   Si vous n’activez pas la fonctionnalité de descente dans la hiérarchie, le fait de sélectionner un visuel (comme une barre ou une bulle) ne fait pas descendre de niveau, mais effectue à la place un filtrage croisé des autres graphiques sur la page du rapport.
+
+2. Sélectionnez la *feuille* pour **TN**. Votre treemap montre maintenant toutes les villes du Tennessee qui ont un magasin. 
+
+    ![](media/power-bi-visualization-drill-down/power-bi-drill-down-one1.png)
+
+2. À ce stade, vous pouvez continuer à descendre dans la hiérarchie pour Tennesee ou pour une ville particulière du Tennesee, ou bien vous pouvez développer (consultez **Développer tous les champs à la fois** ci-dessous). Continuons à descendre dans la hiérarchie pour un champ à la fois.  Sélectionnez **Knoxville, TN**. Votre treemap montre maintenant le code postal pour votre magasin de Knoxville. 
+
+   ![](media/power-bi-visualization-drill-down/power-bi-drill-down-one2.png)
+
+    Notez que le titre change à mesure que vous explorez puis revenez en arrière.  
+
+## <a name="expand-all-and-expand-one-field-at-a-time"></a>Développer tout et développer un champ à la fois
+Une treemap qui nous montre uniquement un code postal n’apporte pas beaucoup d’informations.  Développons donc un niveau de la hiérarchie.  
+
+1. Avec la treemap active, sélectionnez l’icône *Développer vers le bas*![Icône Développer vers le bas](media/power-bi-visualization-drill-down/power-bi-drill-icon6.png) . Votre treemap montre maintenant les 2 niveaux de notre hiérarchie : le code postal et le nom du magasin. 
+
+    ![Affichage du code postal et du nom du magasin](media/power-bi-visualization-drill-down/power-bi-expand1.png)
+
+2. Pour afficher l’ensemble des 4 niveaux de hiérarchie des données pour Tennesee, sélectionnez la flèche Monter dans la hiérarchie jusqu’à atteindre le deuxième niveau, **Total units this year by territory and city**, de votre treemap. 
+
+    ![](media/power-bi-visualization-drill-down/power-bi-drill-down-one1.png)
+
+
+3. Vérifiez que la fonctionnalité Descendre dans la hiérarchie est toujours activée ![Fonctionnalité Descendre dans la hiérarchie activée](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png), puis sélectionnez l’icône *Développer vers le bas* ![Icône Développer vers le bas](media/power-bi-visualization-drill-down/power-bi-drill-icon6.png). Votre treemap montre maintenant des détails supplémentaires : au lieu de montrer seulement la ville et l’état, elle montre maintenant aussi le code postal. 
+
+    ![Icône d’exploration avec deux flèches](media/power-bi-visualization-drill-down/power-bi-expand-one3.png)
+
+4. Sélectionnez une fois de plus l’icône *Développer vers le bas* pour afficher l’ensemble des 4 niveaux de la hiérarchie des détails pour Tennesee sur votre treemap. Pointez sur une feuille pour voir davantage de détails.
+
+   ![Treemap montrant les données de Tennesee](media/power-bi-visualization-drill-down/power-bi-expand-all.png)
+
+## <a name="drilling-filters-other-visuals"></a>L’exploration filtre les autres visuels
+Quand vous travaillez en mode Exploration, vous devez décider comment les fonctionnalités Descendre dans la hiérarchie et Développer impactent les autres visualisations de la page. 
+
+Par défaut, l’exploration ne filtre pas les autres visuels d’un rapport. Cette fonctionnalité peut cependant être activée dans Power BI Desktop et dans le service Power BI. 
+
+1. Dans Power BI Desktop, sélectionnez l’onglet **Format** et cochez la case pour **Filtrages d’exploration sur les autres visuels**.
+
+    ![Paramètre dans Power BI Desktop](media/power-bi-visualization-drill-down/power-bi-drill-filters-desktop.png)
+
+2. Maintenant, quand vous descendez dans la hiérarchie (ou que vous montez dans la hiérarchie ou que vous développez) dans un visuel avec une hiérarchie, cette action filtre les autres visuels de la page. 
+
+    ![paramètre dans Desktop](media/power-bi-visualization-drill-down/power-bi-drill-filters.png)
+
+    ![paramètre dans Desktop](media/power-bi-visualization-drill-down/power-bi-drill-filters2.png)
 
 > [!NOTE]
-> Pour suivre la procédure, [ouvrez l’exemple Analyse de la vente au détail](sample-datasets.md) dans le service Power BI et créez un graphique de compartimentage qui examine le **Nombre total d’unités cette année** (Valeurs) par **Secteur**, **Ville**, **Code postal** et **Nom** (groupe).  
-> 
-> 
+> Pour activer cette option dans le service Power BI, dans la barre de menus de plus haut niveau, sélectionnez **Interactions entre les visuels > Filtrages d’exploration sur les autres visuels**.
+>
+> ![Paramètre dans le service Power BI](media/power-bi-visualization-drill-down/power-bi-drill-filters-service.png)
 
-## <a name="method-one-for-drill-down"></a>Méthode 1 pour descendre dans la hiérarchie
-Cette méthode utilise les icônes de descente dans la hiérarchie qui apparaissent dans les angles supérieurs de la visualisation elle-même.
 
-1. Dans Power BI, ouvrez un rapport en [mode Lecture ou en mode Édition](service-reading-view-and-editing-view.md). Pour pouvoir explorer une visualisation, celle-ci doit comporter une hiérarchie. 
-   
-   Une hiérarchie vous est présentée dans l’animation ci-dessous.  La visualisation a une hiérarchie constituée de secteurs, de villes, de codes postaux et de noms de ville. Chaque secteur a une ou plusieurs villes, chaque ville a un ou plusieurs codes postaux, etc. Par défaut, la visualisation affiche uniquement les données relatives au secteur, car le *secteur* (Territory) apparaît en premier dans la liste.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
-2. Pour activer l’exploration, sélectionnez l’icône de flèche en haut à droite de la visualisation. Une fois que l’icône est sombre, l’exploration est activée. Si vous n’activez pas la descente dans la hiérarchie, la sélection d’un élément visuel (par exemple une barre ou une bulle) effectue un filtrage croisé des autres graphiques sur la page de rapport.    
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-drill-icon.png)
-3. Pour explorer **un champ à la fois**, sélectionnez un des éléments dans la visualisation. Dans un graphique à barres, vous cliquez sur une des barres. Dans un graphique de compartimentage, vous cliquez sur un des **rectangles**. Notez que le titre change à mesure que vous explorez puis revenez en arrière. Dans cette animation, il passe de « Total Units This Year by Territory » (Nombre total d’unités cette année par secteur) à « Total Units This Year by Territory and City » (Nombre total d’unités cette année par secteur et ville), puis à « Total Units This Year by Territory, City and Postal Code » (Nombre total d’unités cette année par secteur, ville et code postal) à « Total Units This Year by Territory, City, PostalCode, and Name » (Nombre total d’unités cette année par secteur, ville, code postal et nom). Par ailleurs, pour remonter d’un niveau, sélectionnez l’icône **Monter dans la hiérarchie** ![](media/power-bi-visualization-drill-down/power-bi-drill-icon5.png) en haut à gauche de la visualisation, comme indiqué ci-dessous.
-   
-   ![](media/power-bi-visualization-drill-down/drill.gif)
-4. Pour explorer ***tous les champs à la fois***, sélectionnez la flèche double en haut à gauche de la visualisation.
-   
-   ![](media/power-bi-visualization-drill-down/pbi_drillall.png)
-5. Pour remonter d’un niveau, sélectionnez la flèche vers le haut en haut à gauche de la visualisation.
-   
-   ![](media/power-bi-visualization-drill-down/pbi_drillup2.png)
-
-## <a name="method-two-for-drill-down"></a>Méthode 2 pour descendre dans la hiérarchie
-Cette méthode utilise la liste déroulante **Explorer** dans la barre de menus supérieure de Power BI.
-
-1. Dans Power BI, ouvrez un rapport en [mode Lecture ou en mode Édition](service-reading-view-and-editing-view.md). Pour pouvoir explorer une visualisation, celle-ci doit comporter une hiérarchie. 
-   
-   Une hiérarchie vous est présentée dans l’image ci-dessous.  La visualisation a une hiérarchie constituée de secteurs, de villes, de codes postaux et de noms de ville. Chaque secteur a une ou plusieurs villes, chaque ville a un ou plusieurs codes postaux, etc. Par défaut, la visualisation affiche uniquement les données relatives au secteur, car le *secteur* (Territory) apparaît en premier dans la liste.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
-2. Pour activer la descente dans la hiérarchie, sélectionnez une visualisation pour l’activer, puis dans la barre de menus supérieure de Power BI, sélectionnez **Explorer** > **Descendre dans la hiérarchie**. L’icône de descente dans la hiérarchie en haut à droite de la visualisation a alors un arrière-plan noir. ![](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png)  
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-explore2.png)
-3. Après activation, descendez dans la hiérarchie d’un champ à la fois en sélectionnant l’une des feuilles du graphique de compartimentage. Dans cet exemple, le secteur nommé **NC** est sélectionné pour afficher le nombre total d’unités vendues cette année en Caroline du Nord par ville.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-drilldown-1.png)
-4. Pour explorer tous les champs à la fois, sélectionnez **Explorer** > **Afficher le niveau suivant**.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-show-next-level.png)
-5. Pour remonter dans la hiérarchie, sélectionnez **Explorer** > **Monter dans la hiérarchie**.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-drill-up2.png)
-
-6. Afin d’afficher les données utilisées pour créer le visuel, sélectionnez **Afficher les données**. Les données s’affichent dans un volet sous le visuel. Ce volet reste affiché pendant que vous continuez d’explorer l’élément visuel. Pour plus d’informations, consultez [Afficher les données utilisées pour créer le visuel](service-reports-show-data.md).
 
 ## <a name="understanding-the-hierarchy-axis-and-hierarchy-group"></a>Présentation de l’axe de hiérarchie et du groupe de hiérarchie
 Vous pouvez considérer l’axe de hiérarchie et le groupe de hiérarchie comme les mécanismes à utiliser pour augmenter et diminuer la granularité des données à afficher. Toutes les données qui peuvent être organisées en catégories et sous-catégories peuvent avoir une hiérarchie. Cela inclut, bien entendu, les dates et les heures.
 
-Vous pouvez créer une visualisation dans Power BI avec une hiérarchie en sélectionnant un ou plusieurs champs de données à ajouter à la zone **Axe** ou la zone **Groupe**, ainsi que les champs de données à examiner dans la zone **Valeurs**. Vous savez si vos données sont hiérarchiques si les icônes du Mode Exploration s’affichent en haut à droite et à gauche de votre visualisation. 
+Vous pouvez créer une visualisation dans Power BI avec une hiérarchie en sélectionnant un ou plusieurs champs de données à ajouter à la zone **Axe** ou la zone **Groupe**, ainsi que les champs de données à examiner dans la zone **Valeurs**. Vous savez si vos données sont hiérarchiques si les icônes du *Mode Exploration* apparaissent en haut à droite et à gauche de votre visualisation. 
 
 Fondamentalement, on peut dire qu’il existe deux types de données hiérarchiques :
 - Données de date et d’heure : Si vous avez un champ de données avec un type de données DateTime, vous avez déjà des données hiérarchiques. Power BI crée automatiquement une hiérarchie pour tout champ de données dont les valeurs peuvent être analysées dans une structure [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx). Vous devez uniquement ajouter un champ DateTime à la zone **Axe** ou **Groupe**.
@@ -118,7 +190,7 @@ En plus de la visualisation, nous pouvons voir la hiérarchie reflétée dans le
 Notez que les données sont les mêmes pour les rapports annuels et trimestriels, mais une fois que vous descendez dans la hiérarchie jusqu’au niveau de détail spécifié pour **Valeurs**, vous pouvez observer que le rapport pour un seul mois devient plus spécifique et que le rapport pour tous les mois a plus de données.
 
 
-|Mode Développer|Year|Quarter|Month|Jour|
+|Mode Développer|Year|Quarter|Month|Day|
 | ---|:---:|:---:|:---:|---|
 |À sens unique|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-month.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-day.png)|
 |Tout|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-month.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-day.png)|

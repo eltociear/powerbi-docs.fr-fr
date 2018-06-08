@@ -8,14 +8,15 @@ featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d6bb6bbed1d5423acbcf53ac50717debdfea4eaa
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 6cdcff66d48ede031a635e44e3a40af4e321c0c5
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584067"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Épingler une vignette à un tableau de bord Power BI à partir d’Excel
 Avant de pouvoir épingler une vignette à partir de votre classeur Excel, connectez ce classeur au service Power BI (app.powerbi.com). La connexion d’un classeur apporte essentiellement une version en lecture seule liée de ce classeur dans le service Power BI et vous permet d’épingler des plages à des tableaux de bord. Vous pouvez même épingler une feuille de calcul entière à un tableau de bord.  
@@ -65,14 +66,14 @@ Dans Power BI, vous pouvez ajouter une nouvelle [vignette de tableau de bord](se
     ![Boîte de dialogue Épinglé au tableau de bord](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
 5. Sélectionnez **Accéder au tableau de bord**. Ici, vous pouvez [renommer, redimensionner, lier et déplacer](service-dashboard-edit-tile.md) la visualisation épinglée. Par défaut, la sélection de la vignette épinglée a pour effet d’ouvrir le classeur dans Power BI.
 
-## <a name="pin-an-entire-table-or-pivot-chart-to-a-dashboard"></a>Épingler un tableau ou tableau croisé dynamique entier à un tableau de bord
+## <a name="pin-an-entire-table-or-pivottable-to-a-dashboard"></a>Épingler un tableau ou un tableau croisé dynamique entier à un tableau de bord
 Suivez les étapes ci-dessus, mais au lieu de sélectionner une plage de cellules, sélectionnez la totalité d’un tableau ou d’un tableau croisé dynamique.
 
 Pour épingler un tableau, sélectionnez l’ensemble du tableau en incluant les en-têtes.  Pour épingler un tableau croisé dynamique, pensez à inclure toutes les parties visibles, notamment les filtres utilisés.
 
  ![sélectionner les cellules](media/service-dashboard-pin-tile-from-excel/pbi_selecttable.png)
 
-Une vignette créée à partir d’un tableau ou d’un tableau croisé dynamique affiche le tableau entier.  Si vous ajoutez/supprimez/filtrez les lignes ou les colonnes du classeur d’origine, elles peuvent également être ajoutées/supprimées/filtrées dans la vignette.
+Une vignette créée à partir d’un tableau ou d’un tableau croisé dynamique montre le tableau entier.  Si vous ajoutez/supprimez/filtrez les lignes ou les colonnes du classeur d’origine, elles peuvent également être ajoutées/supprimées/filtrées dans la vignette.
 
 ## <a name="view-the-workbook-linked-to-the-tile"></a>Afficher le classeur lié à la vignette
 La sélection d’une vignette de classeur a pour effet d’ouvrir le classeur lié dans Power BI. Étant donné que le fichier de classeur se trouve dans l’espace OneDrive Entreprise du propriétaire, son affichage nécessite des autorisations de lecture. Si vous n’êtes pas autorisé à effectuer cette opération, vous recevez un message d’erreur.  

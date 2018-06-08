@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 90f7cddec13159c445dc97f7adeea790020f8c72
-ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
+ms.openlocfilehash: 938f7b5f905d156518f71a30b355575cf1c04683
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722540"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exporter un rapport du service Power BI vers Power BI Desktop (version préliminaire)
 Dans Power BI Desktop, vous pouvez exporter (*télécharger*) un rapport dans le service Power BI en l’enregistrant et en sélectionnant **Publier**. Vous pouvez également exporter dans l’autre sens également et télécharger un rapport du service Power BI vers Power BI Desktop. L’extension des fichiers en cours d’exportation, dans les deux directions, est *.pbix*.
@@ -57,6 +58,7 @@ Voici quelques considérations et limitations associées au téléchargement (à
 * Cette fonctionnalité ne fonctionne pas avec les rapports créés à l’origine dans le **service Power BI**, y compris les packs de contenu.
 * Vous devez toujours utiliser la dernière version de **Power BI Desktop** lors de l’ouverture des fichiers téléchargés. Il se peut que les fichiers *.pbix* téléchargés ne s’ouvrent pas dans des anciennes versions de **Power BI Desktop**.
 * Si votre administrateur a désactivé la possibilité d’exporter des données, cette fonctionnalité n’est pas visible dans le **service Power BI**.
+* Vous ne pouvez pas télécharger un jeu de données avec une actualisation incrémentielle dans un fichier *.pbix*.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Regardez la vidéo d’une minute **Guy in a Cube** qui présente cette fonctionnalité :

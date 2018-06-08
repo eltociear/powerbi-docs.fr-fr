@@ -9,11 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 8a002105fcb9f5dc07197aac5722a57c7bba14b6
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 705de47a1e89d765f34eadfcd35064ccde7aa66b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481897"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Configurer votre serveur de rapports pour héberger des classeurs Excel à l’aide d’Office Online Server (OOS)
 Outre l’affichage de rapports Power BI sur le portail web, Power BI Report Server peut héberger des classeurs Excel à l’aide de [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server-overview) (OOS). Votre serveur de rapports devient un emplacement unique pour publier et afficher le contenu de Microsoft BI en libre-service.
@@ -167,7 +168,7 @@ Après que vous avez entré l’URL de découverte, puis sélectionné **Appliqu
 * Vous pouvez accéder aux classeurs en lecture seule.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Manuel de l’administrateur](admin-handbook-overview.md)  
+[Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
 [Installer le Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

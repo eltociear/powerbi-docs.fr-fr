@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/21/2018
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9288c44194a7eabebfa9888b1bca0023a54950e8
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 6cc9b9cafe2b3efdb8e51e89c203e2cb123e909a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34293579"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584274"
 ---
 # <a name="combo-chart-in-power-bi"></a>Graphique combiné dans Power BI
 Dans Power BI, un graphique combiné est une visualisation qui combine un graphique en courbes et un histogramme. Combiner ces deux graphiques en un seul vous permet de comparer plus rapidement les données.
@@ -105,6 +105,7 @@ Dans cette tâche, nous allons comparer les ventes et la marge brute.
 
 * [Ajoutez le graphique combiné sous forme de vignette de tableau de bord](service-dashboard-tiles.md).
 * [Enregistrez le rapport](service-report-save.md).
+* [Rendre les rapports plus accessibles aux personnes handicapées](desktop-accessibility.md)
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisés
 

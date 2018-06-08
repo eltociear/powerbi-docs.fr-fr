@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 6d7ab55c3ecbb13b40354f67263d597f0e1179f7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5b4d5ea7970dd44cfebadca6935452688515aef5
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297673"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799415"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -81,25 +81,30 @@ Lorsque vous sélectionnez une valeur dans un visuel, elle ne filtre pas les aut
    ![Trier un visuel](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * Pour inverser l’ordre de tri, rappuyez sur les points de suspension (**...**), puis appuyez sur le même nom de champ.
 
-## <a name="drill-down-on-an-ipad-or-a-tablet"></a>Effectuer une exploration vers le bas sur un iPad ou une tablette
-Si un auteur de rapport a ajouté cette fonctionnalité à un visuel, sur un iPad ou une tablette, vous pouvez descendre dans la hiérarchie d’un visuel pour afficher les valeurs qui composent une partie de celui-ci. [Ajoutez la descente dans la hiérarchie à un visuel](power-bi-visualization-drill-down.md) dans le service Power BI ou dans Power BI Desktop. 
+## <a name="drill-down-and-up-in-a-visual"></a>Monter et descendre dans la hiérarchie d’un visuel
+Si l’auteur d’un rapport a ajouté cette fonctionnalité à un visuel, vous pouvez descendre dans la hiérarchie d’un visuel pour voir les valeurs qui composent une partie de celui-ci. [Ajoutez la descente dans la hiérarchie à un visuel](power-bi-visualization-drill-down.md) dans le service Power BI ou dans Power BI Desktop. 
 
-> [!NOTE]
-> Actuellement, la descente dans la hiérarchie ne fonctionne pas sur les cartes sur les iPad ou les tablettes.
-> 
-> 
+* Appuyez sur un point de données dans un visuel pour afficher son info-bulle. Si la fonctionnalité d’exploration est activée, l’info-bulle a des flèches en bas sur lesquelles vous pouvez appuyer. 
+  
+  ![Descendre dans la hiérarchie d’un visuel](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 
-* Appuyez sur un élément visuel. Si des flèches vers le bas et vers le haut apparaissent dans les coins supérieurs ![Icônes Monter/descendre dans la hiérarchie](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-down.png), vous pouvez descendre dans la hiérarchie. Pour descendre dans la hiérarchie d’une seule valeur, appuyez sur la flèche dans le coin supérieur droit, puis appuyez sur une valeur dans le visuel. Dans ce cas, la bulle FD-04 bleu foncé.
+* Pour remonter dans la hiérarchie, appuyez sur la flèche vers le haut de l’info-bulle.
   
-  ![Descendre dans la hiérarchie d’un visuel](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-one.png)
-* Pour remonter dans la hiérarchie, appuyez sur la flèche vers le haut dans le coin supérieur gauche.
-  
-  ![Monter dans la hiérarchie](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up.png)
+  ![Monter dans la hiérarchie](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
 
-## <a name="go-back-to-my-workspace"></a>Revenir à Mon espace de travail
-* Appuyez sur la flèche en regard du nom du rapport, puis sur **Mon espace de travail**.
-  
-  ![Retour en haut](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-back.png)
+* Vous pouvez aussi explorer tous les points de données d’un visuel. Ouvrez-le en mode Focus, appuyez sur l’icône Explorer, puis choisissez d’afficher tout le niveau suivant ou développez pour afficher le niveau actuel et le suivant.
+
+   ![Power BI, explorer tout](media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
+
+## <a name="drill-through-from-one-page-to-another"></a>Extraction d’une page vers une autre
+
+Avec *l’extraction*, quand vous appuyez sur une partie spécifique d’un visuel, Power BI vous redirige sur une autre page du rapport, filtrée sur la valeur que vous avez choisie. L’auteur d’un rapport peut définir une ou plusieurs options d’extraction, chacune vous redirigeant sur une page différente. Dans ce cas, vous pouvez choisir celle que vous voulez extraire. Dans l’exemple suivant, quand vous appuyez sur la valeur de la jauge, vous pouvez choisir entre effectuer une extraction selon **spent by business area** ou **planning by business area**.
+
+![Rapport d’extraction Power BI Mobile](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
+
+Quand vous effectuez une extraction, le bouton de retour vous redirige sur la page de rapport précédente.
+
+Découvrez comment [ajouter l’extraction dans Power BI Desktop](desktop-drillthrough.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Visualiser les rapports Power BI optimisés pour les téléphones et interagir avec eux](mobile-apps-view-phone-report.md)

@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/15/2018
+ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: b0a18d5befe49a3ffaa400b0e081d88720cdd28c
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 6d0a1afe27372c808e63adb34fda96e978b2e2be
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721383"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport
 Cet article présente en détail le volet Filtres de rapport. Vous le trouverez dans le [Mode Lecture et Édition du service Power BI](service-reading-view-and-editing-view.md) et dans [l’Affichage Rapport de Power BI Desktop](desktop-report-view.md).
@@ -22,7 +23,7 @@ Cet article présente en détail le volet Filtres de rapport. Vous le trouverez 
 Il existe de nombreuses façons de filtrer des données dans Power BI. Nous vous recommandons de commencer par lire l’article [À propos des filtres et de la mise en évidence](power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="working-with-the-report-filters-pane"></a>Utiliser le volet Filtres des rapports
-Dans Power BI Desktop, les rapports sont ouverts en mode Rapport. Dans le service Power BI, les rapports peuvent être ouverts en [mode Édition ou en mode Lecture](service-reading-view-and-editing-view.md). En mode Édition et dans le mode Rapport de la version Desktop, les propriétaires de rapports [peuvent ajouter des filtres à un rapport](power-bi-report-add-filter.md) et les enregistrer avec le rapport. Les utilisateurs qui consultent le rapport en mode Lecture peuvent interagir avec les filtres, mais ils ne peuvent pas ajouter de nouveaux filtres au rapport.
+Dans Power BI Desktop, les rapports sont ouverts en mode Rapport. Dans le service Power BI, les rapports peuvent être ouverts en [mode Édition ou en mode Lecture](service-reading-view-and-editing-view.md). En mode Édition et dans le mode Rapport de la version Desktop, les propriétaires de rapports [peuvent ajouter des filtres à un rapport](power-bi-report-add-filter.md) et les enregistrer avec le rapport. Les utilisateurs qui consultent le rapport en mode Lecture peuvent interagir avec les filtres et enregistrer leurs modifications, mais ils ne peuvent pas ajouter de nouveaux filtres au rapport.
 
 Dans le service Power BI, les rapports conservent les modifications que vous apportez dans le volet Filtres, et ces modifications sont passées à la version mobile du rapport. Pour réinitialiser le volet Filtre aux valeurs par défaut du créateur, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus du haut.     
 

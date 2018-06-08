@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4ede737287c830d70283e3a73b627c59c38d1564
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 4371846e77412c67d7441a993dca80493ef92e34
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34689869"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Gérer, mettre à jour et supprimer des packs de contenu d’organisation
 > [!NOTE]
@@ -71,7 +72,7 @@ Les créateurs de packs de contenu peuvent désormais développer ou restreindre
 En tant que créateur de packs de contenu, vous pouvez [planifier l’actualisation des jeux de données](refresh-data.md).  Quand vous créez et chargez le pack de contenu, la planification d’actualisation est chargée avec les jeux de données. Si vous modifiez la planification de l’actualisation, vous devez republier le pack de contenu (voir ci-dessus).
 
 ## <a name="delete-an-organizational-content-pack-from-appsource"></a>Supprimer un pack de contenu d’organisation d’AppSource
-Vous pouvez uniquement supprimer un pack de contenu à partir d’AppSource si vous l’avez créé. 
+Vous pouvez uniquement supprimer un pack de contenu à partir d’AppSource si vous l’avez créé. Si vous avez créé un pack de contenu d’organisation dans un espace de travail d’application et que vous décidez ensuite de supprimer cet espace de travail, veillez à supprimer d’abord le pack de contenu. Si vous supprimez l’espace de travail sans supprimer d’abord le pack de contenu, vous perdez tout accès à ces packs de contenu et vous devrez contacter le support technique de Microsoft pour obtenir de l’aide. 
 
 > [!TIP]
 > Vous pouvez [supprimer votre connexion à un pack de contenu](service-organizational-content-pack-disconnect.md) que vous n’avez pas créé. Cela n’a pas pour effet de supprimer le pack de contenu d’AppSource.

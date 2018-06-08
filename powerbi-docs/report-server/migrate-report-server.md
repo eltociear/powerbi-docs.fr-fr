@@ -9,11 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: maghan
-ms.openlocfilehash: e13a4810baf4898eb9aba7b09978991c9bc3d0a6
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 0bfad6dba38cce4bd170bb3f3bd7f9a7877b6174
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34480931"
 ---
 # <a name="migrate-a-report-server-installation"></a>Migrer une installation de serveur de rapports
 Découvrez comment migrer votre instance de SQL Server Reporting Services (SSRS) vers une instance de Power BI Report Server.
@@ -98,7 +99,7 @@ Le processus de migration d’un Power BI Report Server est le même que le proc
 * Effectuer tout nettoyage nécessaire pour l’ancienne installation de Power BI Report Server.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Manuel de l’administrateur](admin-handbook-overview.md)  
+[Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
 [Script avec l’utilitaire rs.exe et le service web](https://docs.microsoft.com/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 

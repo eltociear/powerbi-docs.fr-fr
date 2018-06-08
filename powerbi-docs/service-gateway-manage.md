@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 53995f0ee723590ae4e419eb62de0d9230deb4b6
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: aec57dc8d015afe80c9cc9cde83c2d1fd6ba26b0
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34298409"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722586"
 ---
 # <a name="manage-a-power-bi-gateway"></a>Gérer une passerelle Power BI
 
@@ -48,7 +48,7 @@ Power BI prend en charge de nombreuses sources de données locales, chacune ayan
 
 5. Pour SQL Server, vous choisissez la **méthode d’authentification** **Windows** ou **De base** (authentification SQL).  Si vous choisissez **De base**, entrez les informations d’identification de votre source de données.
 
-6. Sous **Paramètres avancés**, vous pouvez éventuellement configurer le [niveau de confidentialité]((https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)) de votre source de données (ne s’applique pas à [DirectQuery](desktop-directquery-about.md)).
+6. Sous **Paramètres avancés**, vous pouvez si vous le souhaitez configurer le [niveau de confidentialité](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) de votre source de données (ne s’applique pas à [DirectQuery](desktop-directquery-about.md)).
 
     ![Paramètres avancés](media/service-gateway-manage/advanced-settings.png)
 

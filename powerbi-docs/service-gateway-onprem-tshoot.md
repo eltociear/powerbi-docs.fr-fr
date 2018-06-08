@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e688561b6b669aab68c4251fa5e25157dc219cd6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e689e031395130bab8ad80d5d06936a9dabaf852
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722997"
+ms.locfileid: "34755067"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
 Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de la **passerelle de données locale**.
@@ -149,6 +149,9 @@ Vous devez collaborer avec les administrateurs de domaine pour vérifier la rela
 **Impossible de voir les sources de données de la passerelle de données dans l’expérience « Obtenir les données » pour Analysis Services à partir du service Power BI**
 
 Vérifiez que votre compte est répertorié sous l’onglet **Utilisateurs** de la source de données dans la configuration de la passerelle. Si vous n’avez pas accès à la passerelle, contactez son administrateur pour lui demander d’effectuer des vérifications. Seuls les comptes figurant dans la liste **Utilisateurs** verront la source de données répertoriée dans la liste Analysis Services.
+
+### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Erreur : Vous n’avez pas de passerelle installée ou configurée pour les sources de données dans ce jeu de données
+Vérifiez que vous avez ajouté une ou plusieurs sources de données à la passerelle, comme décrit dans [Ajouter une source de données](service-gateway-manage.md#add-a-data-source). Si la passerelle n’apparaît pas dans le portail d’administration sous **Gérer les passerelles**, essayez d’effacer le cache de votre navigateur, ou de vous déconnecter du service et de vous y reconnecter.
 
 ## <a name="datasets"></a>Jeux de données
 ### <a name="error-there-is-not-enough-space-for-this-row"></a>Erreur : espace insuffisant pour cette ligne.

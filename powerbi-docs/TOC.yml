@@ -234,6 +234,8 @@
                   href: service-dashboard-featured.md
                 - name: "Centre de notifications unifié Power\_BI"
                   href: service-notification-center.md
+                - name: Thèmes du tableau de bord
+                  href: service-dashboard-themes.md
             - name: Rapports
               items:
                 - name: "Modifier le mode tri d’un graphique dans un rapport Power\_BI"
@@ -572,6 +574,8 @@
               href: desktop-import-excel-workbooks.md
             - name: Se connecter aux données à l’aide d’interfaces génériques
               href: desktop-connect-using-generic-interfaces.md
+            - name: Se connecter à Adobe Analytics
+              href: desktop-connect-adobe-analytics.md
             - name: Se connecter à une base de données Oracle
               href: desktop-connect-oracle-database.md
             - name: "Exécution de scripts\_R dans Power\_BI\_Desktop"
@@ -616,8 +620,6 @@
               href: desktop-directquery-sap-hana.md
             - name: "Paramètre Intégrité référentielle supposée dans Power\_BI Desktop"
               href: desktop-assume-referential-integrity.md
-            - name: DirectQuery pour bases de données Oracle et Teradata
-              href: desktop-directquery-for-oracle-teradata.md
             - name: "Utilisation du connecteur SAP BW dans Power\_BI\_Desktop (version préliminaire)"
               href: desktop-sap-bw-connector.md
             - name: Utilisation des liens OneDrive Entreprise dans Power BI Desktop
@@ -788,6 +790,8 @@
           href: desktop-send-smile-privacy-statement.md
         - name: "Accessibilité dans les rapports Power\_BI"
           href: desktop-accessibility.md
+        - name: Gérer le formulaire de connexion Power BI Desktop
+          href: desktop-admin-sign-in-form.md
 - name: "Applications mobiles Power\_BI"
   items:
     - name: Vue d’ensemble

@@ -6,13 +6,14 @@ manager: kfile
 ms.reviewer: ''
 ms.Embedded: powerbi
 ms.topic: conceptual
-ms.date: 03/06/2018
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: bfee68658816d46e23a3b66f9b04b2069704a2b8
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 67b52fa94ee3af9da3bfcae17f69a72e1aa46c77
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34689780"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications.
@@ -26,9 +27,14 @@ La collection d’espaces de travail Power BI actuelle reste encore disponible p
 > [!IMPORTANT]
 > Il y a forcément une dépendance entre la migration et Power BI Embedded, mais il n’y a pas de dépendance entre Power BI et les utilisateurs de votre application qui utilisent un **jeton incorporé**. Ils n’ont pas besoin de s’inscrire à Power BI pour afficher le contenu incorporé dans votre application. Vous pouvez utiliser cette approche d’incorporation pour les utilisateurs de contenu incorporé non-Power BI.
 > 
-> 
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
+
+Avant de commencer la migration vers le nouveau Power BI Embedded, vous pouvez effectuer rapidement une procédure pas à pas pour configurer votre nouvel environnement Power BI Embedded avec [l’outil d’expérience d’intégration](https://aka.ms/embedsetup).
+
+Choisissez la solution qui vous convient :
+* **Incorporer pour vos clients** : si vous êtes intéressé par une solution où [l’application possède les données](https://aka.ms/embedsetup/AppOwnsData). [L’incorporation pour vos clients](embedding.md#embedding-for-your-customers) permet d’incorporer des tableaux de bord et des rapports pour les utilisateurs qui n’ont pas de compte Power BI. 
+* **Incorporer pour votre organisation** : si vous êtes intéressé par une solution où [l’utilisateur possède les données](https://aka.ms/embedsetup/UserOwnsData). [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI.
 
 ## <a name="prepare-for-the-migration"></a>Préparer la migration
 Pour préparer la migration d’une collection d’espaces de travail Power BI vers Power BI Embedded, vous devez effectuer quelques opérations. Vous allez avoir besoin d’un client disponible ainsi que d’un utilisateur détenteur d’une licence Power BI Pro.
@@ -63,10 +69,6 @@ Les comptes suivants doivent exister au sein de votre client.
    
 > [!NOTE]
 > Il s’agit simplement d’un compte d’utilisateur ordinaire de votre organisation qui sera utilisé à des fins d’incorporation.
->
-
-> [!NOTE]
-> Si l’authentification du jeton pour les applications uniquement est une condition requise par votre application, cliquez [ici](mailto:pbieci@microsoft.com?Subject=App-only%20token%20requirement) pour nous contacter.
 >
 
 ## <a name="app-registration-and-permissions"></a>Inscription et autorisations d’application

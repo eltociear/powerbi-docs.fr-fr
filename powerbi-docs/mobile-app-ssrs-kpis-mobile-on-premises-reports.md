@@ -7,24 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 12/18/2017
+ms.date: 05/21/2018
 ms.author: maggies
-ms.openlocfilehash: 4277a8353fa6d9538ff050f0c08b9644d4a218c6
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 999fdf0376973d6550a5c4e214b4315db01e74e0
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34482242"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Afficher des indicateurs de performance clés et des rapports Report Server locaux dans des applications mobiles Power BI
+
+Les applications mobiles Power BI vous offrent un accès mobile en direct à vos informations métier locales via une interface tactile dans Power BI Report Server et SQL Server 2016 Reporting Services (SSRS).
+
 S’applique à :
 
 | ![iPhone](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Téléphone Android](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Tablette Android](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
 | iPhone |iPad |Téléphones Android |Tablettes Android |
 
-Les applications mobiles Power BI vous offrent un accès mobile en direct à vos informations métier locales via une interface tactile dans Power BI Report Server et SQL Server 2016 Reporting Services (SSRS). 
 
- ![Accueil de Report Server dans les applications mobiles](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
+![Accueil de Report Server dans les applications mobiles](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-pbi-report-server-home.png)
 
 ## <a name="first-things-first"></a>Avant tout
 **Les applications mobiles sont l’emplacement où vous affichez du contenu Power BI, pas celui où vous le créez.**
@@ -43,7 +46,7 @@ Même si vous n’avez pas accès à un portail web Reporting Services, vous pou
    
    ![Exemples Reporting Services](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-ssrs-samples.png)
 
-## <a name="connect-to-an-on-premises-server"></a>Se connecter à un serveur local
+## <a name="connect-to-an-on-premises-report-server"></a>Se connecter à un serveur de rapports local
 Vous pouvez afficher des rapports Power BI locaux, des rapports mobiles Reporting Services et des indicateurs de performance clés dans les applications mobiles Power BI. 
 
 1. Sur votre appareil mobile, ouvrez l’application Power BI.
@@ -77,6 +80,24 @@ Vous pouvez afficher des rapports Power BI locaux, des rapports mobiles Reportin
 6. À présent, le serveur est visible dans la barre de navigation à gauche. Dans cet exemple, il est nommé « Power BI Report Server ».
    
    ![Serveur de rapports dans le volet de navigation gauche](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
+
+## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Se connecter à un serveur de rapports local dans iOS
+
+Si vous affichez Power BI dans l’application mobile iOS, votre administrateur informatique peut avoir défini une stratégie de configuration d’application. Dans ce cas, votre expérience de connexion au serveur de rapports est simplifiée et vous ne devez pas fournir beaucoup d’informations quand vous vous connectez à un serveur de rapports. 
+
+1. Vous voyez un message indiquant que leur application mobile est configurée avec un serveur de rapports. Appuyez sur **Se connecter**.
+
+    ![Se connecter au serveur de rapports](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-sign-in.png)
+
+2.  Dans la page **Se connecter au serveur**, les détails du serveur de rapports sont déjà renseignés. Appuyez sur **Se connecter**.
+
+    ![Détails du serveur de rapports renseignés](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-remote-configure-connect-server.png)
+
+3. Tapez un mot de passe pour vous authentifier, puis appuyez sur **Se connecter**. 
+
+    ![Détails du serveur de rapports renseignés](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-config-server-address.png)
+
+Vous pouvez désormais afficher et interagir avec les indicateurs de performance clés et les rapports Power BI stockés sur le serveur de rapports.
 
 ## <a name="view-power-bi-reports-and-kpis-in-the-power-bi-app"></a>Afficher les rapports Power BI et les indicateurs de performance clés dans l’application Power BI
 Les rapports Power BI, les rapports mobiles Reporting Services et les indicateurs de performance clés sont affichés dans les mêmes dossiers que sur le portail web Reporting Services. 

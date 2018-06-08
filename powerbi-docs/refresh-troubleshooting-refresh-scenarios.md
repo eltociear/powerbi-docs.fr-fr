@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 891e9d35be271f6479a832b234a69132736f09a5
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 6e1b2960eee8f436f8dbce660e755a5d0b39a68e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721567"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Scénarios de résolution de problèmes liés à l’actualisation
 Vous trouverez ici des informations concernant les différents scénarios auxquels vous pouvez être confronté au moment d’actualiser les données dans le service Power BI.
@@ -56,6 +57,14 @@ La taille maximale des jeux de données importés dans le **service Power BI** 
 
 ## <a name="scheduled-refresh-timeout"></a>Délai d’actualisation planifié
 Actualisation planifiée après deux heures du délai d’expiration des jeux de données importés. Ce délai d’expiration est porté à cinq heures pour les jeux de données dans des espaces de travail **Premium**. Si vous rencontrez cette limite, vous pouvez envisager de réduire la taille ou la complexité de votre jeu de données, ou de fractionner le jeu de données en éléments plus petits.
+
+## <a name="access-to-the-resource-is-forbidden"></a>L’accès à la ressource est interdit  
+Cette erreur peut se produire en raison de l’expiration des informations d’identification mises en cache. Effacez le cache de votre navigateur Internet en vous connectant à Power BI et en accédant à https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Ceci force une mise à jour de vos informations d’identification. 
+    
+    
+## <a name="data-refresh-failure-because-of-password-change-or-expired-credentials"></a>Échec de l’actualisation des données en raison du changement du mot de passe ou de l’expiration des informations d’identification 
+L’actualisation des données peut également échouer en raison de l’expiration des informations d’identification mises en cache. Effacez le cache de votre navigateur Internet en vous connectant à Power BI et en accédant à https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Ceci force une mise à jour de vos informations d’identification.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Actualisation des données](refresh-data.md)  

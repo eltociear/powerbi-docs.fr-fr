@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 82015b3e0c497f58b0505804adc852ebfb7a0202
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 387780371a82ab4f2c834683ab522258d130e18e
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34584320"
+ms.locfileid: "34755251"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Mesures d’utilisation pour les tableaux de bord et les rapports
 Si vous créez des tableaux de bord et des rapports, des mesures d’utilisation vous aident à comprendre leur impact. Lorsque vous exécutez des métriques d’utilisation de tableau de bord ou de rapport, vous découvrez comment les tableaux de bord et les rapports sont utilisés dans votre organisation : ce qui est utilisé, par qui et dans quel but.  
 
-Les métriques d’utilisation suivent l’utilisation de rapports incorporés dans SharePoint Online. Elles suivent également l’incorporation de tableaux de bord et rapports via les flux « l’utilisateur possède les informations d’identification » et « l’application possède les informations d’identification ». Les métriques d’utilisation ne suivent pas l’utilisation des rapports incorporés via [publier sur le web](service-publish-to-web.md).
+  > **REMARQUE** : Les métriques d’utilisation suivent l’utilisation des rapports incorporés dans SharePoint Online. Toutefois, elles ne suivent pas l’incorporation de tableaux de bord et rapports via les flux « l’utilisateur a des informations d’identification » et « l’application a des informations d’identification ». Les métriques d’utilisation ne suivent pas non plus l’utilisation des rapports incorporés via [publier sur le web](service-publish-to-web.md).
 
 Ces rapports de métriques d’utilisation sont en lecture seule. Toutefois, vous pouvez personnaliser un rapport de métriques d’utilisation à l’aide de la commande « Enregistrer sous ». Cette opération crée un nouveau jeu de données et convertit le rapport en lecture seule en un rapport Power BI pleinement fonctionnel que vous pouvez modifier. Non seulement le rapport personnalisé contient des métriques pour le tableau de bord ou le rapport sélectionné, mais en supprimant le filtre par défaut, vous avez accès aux métriques d’utilisation de tous les tableaux de bord et tous les rapports de l’espace de travail sélectionné.
 

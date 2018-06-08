@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 21ceec0ea522bd45a937096bcd778f2695c1edc3
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 4eb9f8e0b8548fbecd4e5d2e2fd47c4c3acd2bd6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722813"
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 
@@ -93,6 +94,11 @@ Lorsque vous ajoutez une source de données à la passerelle, vous devez fournir
 
 Actuellement, les administrateurs de locataires n’ont aucun endroit où ils peuvent gérer toutes les passerelles que les autres utilisateurs ont installées et configurées.  Si vous êtes administrateur de locataires, nous vous recommandons de demander aux utilisateurs de votre organisation de vous ajouter comme administrateur pour chaque passerelle qu’ils installent. Vous pourrez ainsi gérer toutes les passerelles de votre organisation en utilisant la page Paramètres de la passerelle ou les [commandes PowerShell](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
 
+## <a name="enabling-outbound-azure-connections"></a>Activation des connexions Azure sortantes 
+La passerelle de données locale s’appuie sur le Azure Service Bus pour la connectivité cloud et établit des connexions sortantes correspondantes avec sa région Azure associée. Par défaut, il s’agit de l’emplacement de votre locataire Power BI. Consultez [Où est situé mon locataire Power BI ?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+Si un pare-feu bloque les connexions sortantes, vous devez le configurer de façon à autoriser les connexions sortantes de la passerelle de données locale avec la région Azure associée. Pour plus d’informations sur les plages d’adresses IP de chaque centre de données Azure, consultez [Plages d’adresses IP des centres de données Microsoft Azure](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+> [!NOTE]
+> Les plages d’adresses IP peuvent changer au fil du temps, veillez donc à télécharger les informations les plus récentes de façon régulière. 
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Si vous rencontrez des difficultés lors de l’installation et de la configuration d’une passerelle, consultez [Résolution des problèmes liés à la passerelle de données locale](service-gateway-onprem-tshoot.md). Si vous pensez que vous rencontrez un problème avec votre pare-feu, consultez la section [pare-feu ou proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) dans l’article de résolution des problèmes.

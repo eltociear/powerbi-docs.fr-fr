@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/19/2018
+ms.date: 05/21/2018
 ms.author: maggies
-ms.openlocfilehash: 391edc8a2187f9a4af43b93f0713d40e41f6e943
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 07c393425d2a04376a4fcf81c2c35a0e115eeaee
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34295419"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481951"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 Découvrez les nouveautés dans Power BI Report Server. Cet article aborde les principaux domaines de fonctionnalités et est mis à jour à mesure que de nouveaux éléments sont publiés.
@@ -32,6 +32,12 @@ Pour des informations connexes sur les nouveautés de Power BI, voir :
 * [Nouveautés dans le service Power BI](../service-whats-new.md)
 * [Nouveautés dans Power BI Desktop](../desktop-latest-update.md)
 * [Nouveautés dans les applications mobiles pour Power BI](../mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="may-2018"></a>May 2018
+
+### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Configurer à distance des applications mobiles iOS Power BI pour les serveurs de rapports
+
+En tant qu’administrateur informatique, vous pouvez désormais utiliser l’outil MDM de votre organisation pour configurer à distance l’accès de l’application mobile iOS Power BI à un serveur de rapports. Pour plus d’informations, consultez [Configurer à distance l’accès d’une application mobile iOS Power BI à un serveur de rapports](configure-powerbi-mobile-apps-remote.md).
 
 ## <a name="march-2018-release"></a>Version de mars 2018
 
@@ -204,7 +210,7 @@ Power BI Report Server prend désormais en charge les nouveaux visuels de table 
 * Collaboration améliorée dans les rapports avec des commentaires
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Manuel de l’utilisateur](user-handbook-overview.md)  
+[Présentation de Power BI Report Server](get-started.md) 
 [Manuel de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
 [Installer le Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  

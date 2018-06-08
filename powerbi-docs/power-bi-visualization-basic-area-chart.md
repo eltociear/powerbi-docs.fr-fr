@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 23262d16993043bff90b50ccd55dc7903c5fc23b
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 09322a1ead6ae4c3a00dc42e2b4a642dcc2d6181
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34291739"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584136"
 ---
 # <a name="basic-area-chart"></a>Graphique en aires simple
 Le graphique en aires simple (également appelé graphique en aires empilées) est basé sur le graphique en courbes. La zone entre l’axe et la ligne est remplie avec des couleurs indiquant le volume. 
@@ -32,7 +32,7 @@ Les graphiques en aires simples sont conseillés pour :
 
 ### <a name="prerequisites"></a>Conditions préalables
  - Service Power BI
- - Exemple Analyse de la vente au détail
+ - Retail Analysis sample
 
 Pour effectuer la procédure, connectez-vous à Power BI et sélectionnez **Obtenir des données \> Exemples \> Exemple Analyse de la vente au détail > Se connecter**, puis choisissez **Accéder au tableau de bord**. 
 
@@ -62,7 +62,9 @@ Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à
 
 Pour mettre en surbrillance une zone particulière de votre graphique, sélectionnez cette zone ou sa bordure supérieure.  Contrairement à d’autres types de visualisation, s’il existe d’autres visualisations sur la même page, la mise en surbrillance d’un graphiques en aires de base n’effectue pas de filtrage croisé des autres visualisations de la page de rapport. Toutefois, les graphiques en aires sont une cible pour le filtrage croisé déclenché par d’autres visualisations sur la page du rapport. Pour plus d’informations, consultez [Interactions avec un élément visuel dans les rapports](service-reports-visual-interactions.md).
 
-## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes   
+* [Rendre les rapports plus accessibles aux personnes handicapées](desktop-accessibility.md)
 * Les graphiques en aires simples ne sont pas adaptés pour comparer des valeurs en raison de l’occlusion sur les aires empilées. Power BI utilise la transparence pour indiquer le chevauchement des aires. Toutefois, il fonctionne bien uniquement avec deux ou trois aires différentes. Quand vous devez comparer la tendance de plus de trois valeurs, utilisez plutôt des graphiques en courbes. Pour comparer le volume de plus de trois valeurs, utilisez plutôt un graphique de compartimentage (treemap).
 
 ## <a name="next-steps"></a>Étapes suivantes

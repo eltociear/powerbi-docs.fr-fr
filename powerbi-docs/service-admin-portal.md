@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5b4a35d9cdfa820956201e7fee20251b3c5ac0b7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 376fb2a6167e020e5d65c7d634ef05cd366b1aa2
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34584297"
+ms.locfileid: "34755136"
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -92,7 +92,7 @@ Quand vous cliquez sur **Accéder au centre d’administration O365**, vous acc�
 
 ## <a name="audit-logs"></a>Journaux d’audit
 
-Le troisième onglet du portail d’administration est **Journaux d’audit**. Les journaux sont situés dans le Centre de sécurité et conformité Office 365. Cette section vous permet d’accéder rapidement à cette zone dans Office 365. 
+Le troisième onglet du portail d’administration est **Journaux d’audit**. Les journaux sont situés dans le Centre de sécurité et conformité Office 365. Cette section vous permet d’accéder rapidement à cette zone dans Office 365.
 
 Pour plus d’informations sur les journaux d’audit, consultez [Audit de Power BI dans votre organisation](service-admin-auditing.md).
 
@@ -227,8 +227,6 @@ Les utilisateurs de l’organisation peuvent utiliser la visualisation ArcGIS Ma
 ### <a name="enable-custom-visuals-for-the-entire-organization"></a>Activer les visuels personnalisés pour l’ensemble de l’organisation
 Les utilisateurs de l’organisation peuvent manipuler et partager des visuels personnalisés. [En savoir plus](power-bi-custom-visuals.md)
 
-![Paramètres des visuels personnalisés](media/service-admin-portal/powerbi-admin-custom-visuals.png)
-
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
@@ -247,7 +245,7 @@ Les utilisateurs de l’organisation peuvent manipuler et partager des visuels c
 
 Les utilisateurs de l’organisation peuvent utiliser l’audit pour surveiller les actions effectuées dans Power BI par d’autres utilisateurs de l’organisation. [En savoir plus](service-admin-auditing.md)
 
-Ce paramètre doit être activé pour pouvoir enregistrer les entrées du journal d’audit.
+Ce paramètre doit être activé pour pouvoir enregistrer les entrées du journal d’audit. Une fois que vous avez activé l’audit, le délai avant de pouvoir voir les données d’audit peut aller jusqu’à 48 heures. Si vous ne voyez immédiatement les données, consultez les journaux d’audit plus tard. Le délai est sensiblement le même entre le moment où vous obtenez l’autorisation de voir les journaux d’audit et le moment où vous pouvez réellement y accéder.
 
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.

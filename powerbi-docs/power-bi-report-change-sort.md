@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b70a9ef7774d1ba49bc5bf825a5c1cde47197f2
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 3c32fc3cc9dc2b16384016ca624d4dd3a773aacb
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561790"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Modifier le mode tri d’un graphique dans un rapport Power BI
 Dans un rapport Power BI, vous pouvez trier la plupart des visualisations par ordre alphabétique en fonction des noms de catégories du graphique ou des valeurs numériques de chaque catégorie. Par exemple, ce graphique est trié par nom de magasin.
@@ -29,6 +30,13 @@ Il est facile de passer du tri par catégorie (nom de magasin) au tri par valeur
    ![](media/power-bi-report-change-sort/sortby.gif)
 
    **REMARQUE**: certains éléments visuels ne peuvent pas être triés.  C’est le cas, par exemple, des visuels suivants : Treemap, Carte géographique, Carte choroplèthe, Nuage de points, Jauge, Carte, Carte de plusieurs ligne, Cascade.
+
+## <a name="saving-changes-you-make-to-sort-order"></a>Enregistrement de vos modifications de l’ordre de tri
+Les rapports Power BI conservent les filtres, les sélecteurs, le tri et les autres changements que vous apportez aux vues de données. Ainsi, si vous quittez un rapport et que vous y revenez plus tard, vos modifications sont enregistrées.  Si vous voulez annuler vos modifications et revenir aux paramètres de l’auteur du rapport, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus du haut. 
+
+![Tri persistant](media/power-bi-report-change-sort/power-bi-reset-to-default.png)
+
+Cependant, si le bouton **Rétablir les valeurs par défaut** est grisé, cela signifie que l’auteur du rapport a désactivé la possibilité d’enregistrer vos modifications.
 
 <a name="other"></a>
 ## <a name="sorting-using-other-criteria"></a>Tri à l’aide d’autres critères

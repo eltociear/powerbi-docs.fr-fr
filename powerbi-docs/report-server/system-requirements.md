@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 05/18/2018
 ms.author: maghan
-ms.openlocfilehash: 2963dbe2a5d1109e4396568624e16bf49d98da10
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 3b0e9c148b86d8bf762a31cca5c3421df454502d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481726"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
 Vous trouverez ici les configurations matérielle et logicielle requises pour installer et exécuter Power BI Report Server.
@@ -66,8 +67,8 @@ Vous pouvez utiliser une connexion active à des instances tabulaires ou multidi
 | 2016 et versions ultérieures |Référence (SKU) standard ou version ultérieure |
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Manuel de l’utilisateur](user-handbook-overview.md)  
-[Manuel de l’administrateur](admin-handbook-overview.md)  
+[Présentation de Power BI Report Server](get-started.md)  
+[Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
 [Installer le Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

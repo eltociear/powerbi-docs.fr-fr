@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 51f813d4d92ac94b43c0f2b7cd0fcad1f0673b5e
-ms.sourcegitcommit: aa8045e42b979206c600bce4a8d17de1f0620462
+ms.openlocfilehash: 86dabdb84dd4ca949930c25213f554060135f10a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722951"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Données actives SQL Server Analysis Services dans Power BI
 Dans Power BI, vous disposez de deux méthodes pour vous connecter à des données actives provenant d’un serveur SQL Server Analysis Services. Dans **Obtenir des données**, vous pouvez vous connecter à un serveur SQL Server Analysis Services ou vous connecter à un [fichier Power BI Desktop](service-desktop-files.md) ou à un [classeur Excel](service-excel-workbook-files.md) qui est déjà connecté à un serveur Analysis Services. Comme bonne pratique, Microsoft recommande vivement l’utilisation de Power BI Desktop en raison de la richesse de ses outils et de sa capacité à conserver localement une copie de sauvegarde du fichier Power BI Desktop.
@@ -44,9 +45,12 @@ Une fois que vous êtes connectez au modèle, il apparaît dans votre site Power
 ## <a name="dashboard-tiles"></a>Vignettes d’un tableau de bord
 Si vous épinglez des éléments visuels d’un rapport dans le tableau de bord, les vignettes épinglées sont automatiquement actualisées toutes les 10 minutes. Si les données de votre serveur local Analysis Services sont mises à jour, les vignettes sont mises à jour automatiquement après 10 minutes.
 
+## <a name="common-issues"></a>Problèmes courants
+
+* Erreur due à l’impossibilité de charger le schéma du modèle : cette erreur se produit quand l’utilisateur qui se connecte à SSAS n’a pas accès à la base de données, au cube et au modèle SSAS.
+
 ## <a name="next-steps"></a>Étapes suivantes
 [Passerelle de données locale](service-gateway-onprem.md)  
 [Gérer les sources de données Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

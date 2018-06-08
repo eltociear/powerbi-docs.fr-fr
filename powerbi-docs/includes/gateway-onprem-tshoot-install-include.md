@@ -24,3 +24,6 @@ Vous pouvez forcer la passerelle pour communiquer avec Azure Service Bus à l’
 ### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Erreur : Impossible d’ajouter l’utilisateur au groupe.  (-2147463168   PBIEgwService   Utilisateurs du journal de performances   )
 Vous pouvez recevoir cette erreur si vous essayez d’installer la passerelle sur un contrôleur de domaine. Le déploiement sur un contrôleur de domaine n’est pas pris en charge. Vous devez déployer la passerelle sur un ordinateur qui n’est pas un contrôleur de domaine.
 
+### <a name="installation-fails"></a>Échec de l’installation
+Vous pouvez rencontrer des échecs d’installation si le logiciel antivirus sur l’ordinateur d’installation est obsolète. Vous pouvez mettre à jour l’installation de l’antivirus, ou désactiver l’antivirus seulement pendant la durée de l’installation de la passerelle, puis réactiver l’antivirus.
+

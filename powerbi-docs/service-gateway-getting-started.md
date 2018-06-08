@@ -10,18 +10,18 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: d569b68da7d13518f2d641817dfe1a68862698ac
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1da7591a490ae5bc6d132136691db05af7cffd81
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297880"
+ms.locfileid: "34754906"
 ---
 # <a name="what-are-power-bi-gateways"></a>Présentation des passerelles Power BI
 
 Une passerelle Power BI est un logiciel qui s’installe sur un réseau local et facilite l’accès aux données de ce réseau. Il s’agit d’une sorte d’opérateur de contrôle qui écoute les demandes de connexion des utilisateurs et n’y accède que lorsqu’elles remplissent certains critères. Cela permet aux organisations de conserver les bases de données et d’autres sources de données sur leurs réseaux locaux, tout en utilisant en toute sécurité ces données locales dans les tableaux de bord et rapports Power BI.
 
-Le diagramme suivant montre un aperçu général, dans lequel la passerelle gère les demandes provenant du cloud de trois ordinateurs locaux. Nous reviendrons dessus dans la suite de l’article.
+Une passerelle peut être utilisée pour une seule ou plusieurs sources de données. Le diagramme suivant montre un aperçu général, dans lequel la passerelle gère les demandes provenant du cloud de trois ordinateurs locaux. Nous reviendrons dessus dans la suite de l’article.
 
 ![Vue d’ensemble de la passerelle](media/service-gateway-getting-started/gateway-overview.png)
 

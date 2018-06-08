@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8ad48c0e5b78dabee7b1851c75b01e7fda611c1d
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 757c1465d2451da8ebf340c7b9bfe1f4d9ff04f1
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721176"
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Utiliser des thèmes de rapport dans Power BI Desktop (version préliminaire)
 Les **Thèmes de rapport** permettent d’appliquer un thème de couleur à l’intégralité d’un rapport. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières ou de tout autre thème de votre choix. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
@@ -54,7 +55,7 @@ Ce fichier JSON doit contenir les lignes suivantes :
 
 * **name** : il s’agit du nom du thème, qui est le seul champ obligatoire.
 * **dataColors** : il s’agit de la liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir un nombre quelconque de couleurs.
-* **background**, **foreground** et **tableAccent** : ces valeurs sont des couleurs à utiliser dans des visuels de **table** et de **matrice**. La manière dont ces couleurs sont utilisées varie selon le style de table ou de matrice appliqué. Les visuels de **table** et de **matrice** appliquent ces styles par défaut.
+* **background**, **foreground** et **tableAccent** : ces valeurs sont des couleurs qui doivent être appliquées dans différents types de visuels. **foreground** s’applique au texte de zone de texte, au texte d’objectif KPI, au texte de carte multiligne, au texte de valeur de carte, au texte de légende de jauge, au texte d’élément de segment vertical, ainsi qu’au texte de valeurs et de totaux de **table** et de **matrice**. **background** s’applique au remplissage de bouton et à l’arrière-plan des étiquettes de graphique combiné. La manière dont ces couleurs sont utilisées varie selon le style de visuel appliqué. Les visuels de **table** et de **matrice** appliquent ces styles par défaut.
 
 Pour appliquer un style à un visuel de **table** ou de **matrice**, sélectionnez-le. Dans le volet **Visualisations**, sélectionnez la section **Format**, puis développez **Style de matrice** et choisissez un style dans la liste déroulante **Style**.
 

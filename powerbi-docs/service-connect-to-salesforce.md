@@ -7,14 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f5eeb877488539254478ad4bc25d64d663b797f1
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: e36cff803af74d212f4c1804fe3a955a11c193cf
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722448"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Se connecter à Salesforce avec Power BI
 Avec Power BI, vous pouvez facilement vous connecter à votre compte Salesforce.com. Créez cette connexion pour récupérer vos données et disposer automatiquement d’un tableau de bord et de rapports connexes basés sur vos données.
@@ -73,7 +74,12 @@ Vous pouvez modifier ce tableau de bord pour afficher vos données comme vous le
 
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
-Si vous rencontrez des erreurs, reportez-vous à la configuration requise ci-dessus. Notez également que la connexion à un domaine personnalisé ou sandbox n’est pas prise en charge pour l’instant.
+Si vous rencontrez des erreurs, reportez-vous à la configuration requise ci-dessus. Notez également que la connexion à un domaine personnalisé ou bas à sable (sandbox) n’est actuellement pas prise en charge.
+
+### <a name="unable-to-connect-to-the-remote-server-message"></a>Message « Impossible de se connecter au serveur distant »
+
+Si vous recevez un message « Impossible de se connecter au serveur distant » quand vous tentez de vous connecter à votre compte Salesforce, reportez-vous à cette solution sur le forum Outsystems : [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Prise en main de Power BI](service-get-started.md)
