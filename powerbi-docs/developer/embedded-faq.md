@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: d7baa305c514d084f6390754d516b238794bcdbf
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 3e1b3b59fff26242e662d90365a6b8acc98259e6
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721015"
+ms.locfileid: "34754929"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -75,7 +75,7 @@ Voici un tableau des différences de fonctionnalités.
 
 |  |Référence SKU A (Power BI Embedded)  |Référence SKU EM (Power BI Premium)  |Référence SKU P (Power BI Premium)  |
 |---------|---------|---------|---------|
-|Acheter     |Portail Azure |Office |Office |
+|Purchase     |Portail Azure |Office |Office |
 |Cas d’usage |* Incorporer du contenu dans votre application |* Incorporer du contenu dans votre application<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI en dehors de PowerBI.com et incorporer dans d’autres applications SaaS (SharePoint, Teams) |* Incorporer du contenu dans votre application<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI en dehors de PowerBI.com et incorporer dans d’autres applications SaaS (SharePoint, Teams)<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI via PowerBI.com  |
 |Facturation |Toutes les heures |Mensuelle |Mensuelle |
 |Avec engagement  |Sans engagement |Annuel  |Mensuelle/Annuelle |
@@ -103,8 +103,7 @@ L’authentification et l’autorisation des utilisateurs de l’application ser
 
 Si vous disposez déjà d’un locataire Azure AD, vous pouvez utiliser votre répertoire actuel, ou vous pouvez créer un locataire Azure AD pour garantir la sécurité du contenu de votre application incorporée.
 
-Pour obtenir un jeton AAD, vous pouvez utiliser une des bibliothèques d’authentification Azure Active Directory. Des bibliothèques clientes sont disponibles pour plusieurs plateformes.
-https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries
+Pour obtenir un jeton AAD, vous pouvez utiliser une des bibliothèques d’authentification Azure Active Directory - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. Des bibliothèques clientes sont disponibles pour plusieurs plateformes.
 
 ### <a name="how-is-power-bi-embedded-different-from-other-azure-services"></a>En quoi Power BI Embedded est différent des autres services Azure ?
 

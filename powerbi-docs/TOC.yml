@@ -94,10 +94,6 @@
                   href: service-focus-mode.md
                 - name: 'Imprimer un tableau de bord, imprimer une vignette de tableau de bord, imprimer une page de rapport'
                   href: service-print.md
-                - name: S’abonner à un rapport ou tableau de bord
-                  href: service-report-subscribe.md
-                - name: Nombreux moyens d’ouvrir un rapport
-                  href: service-report-open.md
                 - name: Renommer du contenu dans Power BI
                   href: service-rename.md
                 - name: Afficher des tableaux de bord et des rapports en mode plein écran (mode TV)
@@ -238,12 +234,16 @@
                   href: service-dashboard-themes.md
             - name: Rapports
               items:
+                - name: Nombreux moyens d’ouvrir un rapport
+                  href: service-report-open.md
                 - name: "Modifier le mode tri d’un graphique dans un rapport Power\_BI"
                   href: power-bi-report-change-sort.md
                 - name: Exportez des données à partir d’une visualisation
                   href: power-bi-visualization-export-data.md
                 - name: Utilisation des filtres de rapport
                   href: power-bi-how-to-report-filter.md
+                - name: S’abonner à un rapport ou tableau de bord
+                  href: service-report-subscribe.md
             - name: Publier
               items:
                 - name: "Power\_BI Publisher pour Excel"
@@ -252,22 +252,6 @@
                   href: service-publish-to-powerpoint.md
         - name: "Travailler avec Power\_BI"
           items:
-            - name: Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
-              href: service-from-excel-to-stunning-report.md
-            - name: Utiliser Questions et réponses pour créer des visualisations et générer des rapports
-              href: power-bi-tutorial-q-and-a.md
-            - name: Obtenir des données de classeurs Excel
-              href: service-excel-workbook-files.md
-            - name: Créer un rapport à partir d’un jeu de données
-              href: service-report-create-new.md
-            - name: "Interagir avec un rapport en mode Edition dans Power\_BI"
-              href: service-interact-with-a-report-in-editing-view.md
-            - name: 'Comment partager des tableaux de bord, rapports et vignettes et collaborer ?'
-              href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Créer et distribuer des applications avec des tableaux de bord et des rapports
-              href: service-create-distribute-apps.md
-            - name: Configurer une actualisation planifiée
-              href: refresh-scheduled-refresh.md
             - name: Tableaux de bord
               items:
                 - name: Créer un tableau de bord à partir d’un rapport
@@ -304,6 +288,8 @@
                   href: service-data-classification.md
             - name: Posez des questions sur vos données
               items:
+                - name: Utiliser Questions et réponses pour créer des visualisations et générer des rapports
+                  href: power-bi-tutorial-q-and-a.md
                 - name: "Utilisation des Q&R avec les données Power\_BI\_Gateway — Enterprise (version préliminaire)"
                   href: service-q-and-a-direct-query.md
                 - name: "Optimiser vos données avec Q&R dans Power\_BI"
@@ -318,6 +304,10 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Partager votre travail
               items:
+                - name: 'Comment partager des tableaux de bord, rapports et vignettes et collaborer ?'
+                  href: service-how-to-collaborate-distribute-dashboards-reports.md
+                - name: Créer et distribuer des applications avec des tableaux de bord et des rapports
+                  href: service-create-distribute-apps.md
                 - name: Partager un rapport filtré
                   href: service-share-reports.md
                 - name: "Publier à partir de Power\_BI sur le web"
@@ -354,6 +344,10 @@
                   href: power-bi-report-add-filter.md
                 - name: "Enregistrer un rapport dans Power\_BI"
                   href: service-report-save.md
+                - name: Créer un rapport à partir d’un jeu de données
+                  href: service-report-create-new.md
+                - name: "Interagir avec un rapport en mode Edition dans Power\_BI"
+                  href: service-interact-with-a-report-in-editing-view.md
                 - name: Analyser dans Excel
                   href: service-analyze-in-excel.md
                 - name: Modifier l’interaction des éléments visuels dans un rapport
@@ -382,6 +376,10 @@
                   href: power-bi-visualizations-arcgis.md
             - name: Données de fichiers
               items:
+                - name: Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
+                  href: service-from-excel-to-stunning-report.md
+                - name: Obtenir des données de classeurs Excel
+                  href: service-excel-workbook-files.md
                 - name: "Obtenir des données de fichiers Power\_BI Desktop"
                   href: service-desktop-files.md
                 - name: Obtenir des données de fichiers de valeurs séparées par des virgules (.csv)
@@ -406,6 +404,8 @@
                   href: service-azure-and-power-bi.md
             - name: Actualisation des données
               items:
+                - name: Configurer une actualisation planifiée
+                  href: refresh-scheduled-refresh.md
                 - name: "Actualiser un jeu de données créé à partir d’un fichier Power\_BI\_Desktop - local"
                   href: refresh-desktop-file-local-drive.md
                 - name: "Actualiser un jeu de données créé à partir d’un fichier Power\_BI\_Desktop - cloud"
@@ -796,7 +796,7 @@
   items:
     - name: Vue d’ensemble
       items:
-        - name: "Présentation des applications mobiles Power\_BI"
+        - name: Présentation des applications mobiles
           href: mobile-apps-for-mobile-devices.md
     - name: Démarrages rapide
       items:
@@ -808,20 +808,20 @@
           href: tutorial-mobile-apps-ios-qna.md
     - name: Concepts
       items:
-        - name: Nouveautés dans les applications mobiles pour Power BI
+        - name: Nouveautés des applications mobiles
           href: mobile-whats-new-in-the-mobile-apps.md
-        - name: "Obtenez des données Power\_BI réelles avec les applications mobiles"
+        - name: Obtenir des données réelles avec les applications mobiles
           href: mobile-apps-data-in-real-world-context.md
-        - name: Affichage de vos données hors connexion dans les applications mobiles Power BI
+        - name: Voir vos données hors connexion dans les applications mobiles
           href: mobile-apps-offline-data.md
+        - name: Application Power BI pour la réalité mixte (Preview)
+          href: mobile-mixed-reality-app.md
     - name: Guides pratiques
       items:
         - name: Toutes les applications mobiles
           items:
             - name: Afficher des rapports locaux dans les applications mobiles
               href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-            - name: Application Power BI pour la réalité mixte (Preview)
-              href: mobile-mixed-reality-app.md
             - name: Partager un tableau de bord à partir de l’application mobile Power BI
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Interagir avec des vignettes dans les applications mobiles
@@ -850,7 +850,7 @@
               href: service-admin-mobile-intune.md
         - name: Appareils Android
           items:
-            - name: "Prise en main de l’application Power\_BI pour Android"
+            - name: Prise en main de l’application Android
               href: mobile-android-app-get-started.md
             - name: Correction de l’erreur « Votre certificat SSL d’entreprise n’est pas approuvé »
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
@@ -858,7 +858,7 @@
               href: mobile-android-error-update-android-system-webview.md
         - name: iOS
           items:
-            - name: "Bien démarrer avec l’application Power\_BI pour iOS"
+            - name: Prise en main de l’application iOS
               href: mobile-iphone-app-get-started.md
             - name: Prise en main de l’application iPad
               href: mobile-ipad-app-get-started.md
@@ -866,27 +866,27 @@
               href: mobile-apps-ios-qna.md
             - name: "Application Power\_BI pour Apple Watch"
               href: mobile-apple-watch.md
-            - name: "Scannez un code-barres depuis l’application Power\_BI sur votre iPhone"
+            - name: Scanner un code-barres avec l’application sur votre iPhone
               href: mobile-apps-scan-barcode-iphone.md
             - name: "Applications Power\_BI pour iOS"
               href: mobile-ios-ipad-iphone-apps.md
         - name: iOS et Android
           items:
-            - name: 'Annoter et partager une vignette, un rapport ou un visuel dans les applications mobiles'
+            - name: Annoter et partager dans les applications mobiles
               href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
         - name: "Application Power\_BI pour les appareils Windows\_10"
           items:
-            - name: "Prise en main de l’application mobile Power\_BI pour Windows\_10"
+            - name: "Prise en main de l’application mobile pour Windows\_10"
               href: mobile-windows-10-phone-app-get-started.md
             - name: Épingler un tableau de bord à l’écran d’accueil
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: "Afficher les rapports mobiles et les indicateurs de performance clés Reporting Services dans l’application Power\_BI pour Windows\_10"
+            - name: "Voir les rapports mobiles et les indicateurs de performance clés Reporting Services sur l’application pour Windows\_10"
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
             - name: Afficher Power BI sur Surface Hub
               href: mobile-windows-10-app-presentation-mode.md
     - name: Ressources
       items:
-        - name: Langues prises en charge dans les applications mobiles Power BI
+        - name: Langues prises en charge dans les applications mobiles
           href: mobile-apps-supported-languages.md
 - name: Power BI pour les développeurs
   items:
@@ -914,8 +914,6 @@
           items:
             - name: Création d’un élément visuel personnalisé avec les outils de développement
               href: service-custom-visuals-getting-started-with-developer-tools.md
-            - name: Examen des éléments visuels personnalisés pour la sécurité et la confidentialité
-              href: service-custom-visuals-review-for-security-and-privacy.md
             - name: Obtenir un élément personnel certifié
               href: power-bi-custom-visuals-certified.md
             - name: Publier des visuels personnalisés dans AppSource
@@ -983,7 +981,7 @@
     - name: Référence
       items:
         - name: API REST
-          href: developer/rest-api-reference.md
+          href: 'https://docs.microsoft.com/rest/api/power-bi/'
         - name: 'Dépôt Git Power BI C#'
           href: 'https://go.microsoft.com/fwlink/?linkid=848273'
         - name: Téléchargement du SDK .NET

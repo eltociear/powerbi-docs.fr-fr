@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: c0ad0c22d0787eaaa45cb36c74c01f6a1d1f85e3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ef554d7190709565610336169b4883d71970f822
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722655"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799553"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Configuration des paramètres de proxy de la passerelle de données locale
 Votre environnement de travail peut nécessiter que vous passiez par un proxy pour accéder à Internet. Cela pourrait empêcher la passerelle de données locale de se connecter au service.
@@ -50,7 +50,7 @@ La configuration de proxy par défaut est la suivante.
         <defaultProxy useDefaultCredentials="true" />
     </system.net>
 
-La configuration par défaut fonctionne avec l’authentification Windows. Si votre proxy utilise une autre forme d’authentification, vous devez modifier les paramètres. En cas de doute, vous devez contacter votre administrateur réseau.
+La configuration par défaut fonctionne avec l’authentification Windows. Si votre proxy utilise une autre forme d’authentification, vous devez modifier les paramètres. En cas de doute, vous devez contacter votre administrateur réseau. L’authentification de proxy de base n’est pas recommandée, et tenter de l’utiliser peut provoquer des erreurs d’authentification qui empêche la configuration correcte de la passerelle. Utiliser un mécanisme d’authentification de proxy plus fort pour corriger ce problème.
 
 En plus d’utiliser des informations d’identification par défaut, vous pouvez ajouter un élément <proxy> pour définir les paramètres du serveur proxy plus en détail. Par exemple, vous pouvez spécifier que votre passerelle de données locale doit toujours utiliser le proxy même pour des ressources locales, en définissant le paramètre bypassonlocal sur false. Ceci peut vous aider à résoudre les problèmes dans des situations où vous voulez effectuer le suivi de toutes les demandes HTTPS provenant d’une passerelle de données locale dans les fichiers journaux du proxy. L’exemple de configuration suivant spécifie que toutes les demandes doivent passer par un serveur proxy spécifique avec l’adresse IP 192.168.1.10.
 
@@ -93,6 +93,10 @@ Lorsque vous configurez les paramètres de proxy pour utiliser les informations 
 5. Restaurez la passerelle à l’aide de votre clé de récupération.
    
     Ainsi, le nouveau compte de service est en mesure de déchiffrer les informations d’identification stockées pour les sources de données.
+    
+> [!NOTE]
+> Lorsque vous modifiez le compte de service directement depuis le panneau de configuration Services, il ne met pas à jour les listes de contrôle d'accès (ACL) automatiquement. Vous devez vous assurer que le nouveau compte de service a accès au dossier et fichiers d’installation. Vous trouverez le dossier d’Installation de la passerelle sous C:\Program Files\On-premises data gateway. 
+> 
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Passerelle de données locale (mode personnel)](service-gateway-personal-mode.md)

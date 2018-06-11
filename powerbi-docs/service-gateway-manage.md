@@ -10,21 +10,25 @@ ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: aec57dc8d015afe80c9cc9cde83c2d1fd6ba26b0
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8369566712e24c035ac0ec07cc7d5a219041a400
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722586"
+ms.locfileid: "34755159"
 ---
 # <a name="manage-a-power-bi-gateway"></a>Gérer une passerelle Power BI
 
-Après avoir [installé une passerelle de données Power BI](service-gateway-install.md), vous pouvez la gérer à l’aide de l’option **Gérer les passerelles** du service Power BI dans l’application de la passerelle sur votre ordinateur local, et avec des scripts PowerShell. Cet article se concentre sur le service Power BI. Si vous venez d’installer une passerelle, nous vous recommandons d’[ajouter une source de données](#add-a-data-source), puis d’[ajouter des utilisateurs](#add-users-to-a-data-source) afin d’accéder à la source de données.
+Après avoir [installé une passerelle de données Power BI](service-gateway-install.md), vous la gérez en fonction de vos besoins. Dans cette rubrique, vous apprendrez à : ajouter et supprimer des sources de données et des utilisateurs ; redémarrer une passerelle ; migrer, restaurer, reprendre et supprimer une passerelle. 
+
+Vous pouvez gérer une passerelle à l’aide de l’option **Gérer les passerelles** du service Power BI dans l’application de la passerelle sur votre ordinateur local, et avec des scripts PowerShell. Cet article se concentre sur le service Power BI. 
+
+Si vous venez d’installer une passerelle, nous vous recommandons d’[ajouter une source de données](#add-a-data-source), puis d’[ajouter des utilisateurs](#add-users-to-a-data-source) afin d’accéder à la source de données.
 
 
 ## <a name="manage-data-sources"></a>Gérer les sources de données
 
-Power BI prend en charge de nombreuses sources de données locales, chacune ayant ses propres exigences. Pour cet exemple, nous allons vous montrer comment ajouter une source de données SQL Server, mais les étapes sont les mêmes pour d’autres sources de données.
+Power BI prend en charge de nombreuses sources de données locales, chacune ayant ses propres exigences. Une passerelle peut être utilisée pour une seule ou plusieurs sources de données. Pour cet exemple, nous allons vous montrer comment ajouter une source de données SQL Server, mais les étapes sont les mêmes pour d’autres sources de données.
 
 
 ### <a name="add-a-data-source"></a>Ajouter une source de données
@@ -113,6 +117,14 @@ Quand les administrateurs utilisent l’élément de menu **Gérer les passerell
 
 Tous les nouvelles opérations DirectQuery et demandes **d’actualisation planifiée** sont automatiquement routées vers l’instance principale d’un cluster de passerelles donné. Si l’instance de passerelle principale n’est pas en ligne, la demande est routée vers une autre instance de passerelle dans le cluster.
 
+
+## <a name="share-a-gateway"></a>Partager une passerelle
+
+Vous ne pouvez pas *partager* une passerelle per se, mais vous pouvez lui affecter des administrateurs et ajouter des utilisateurs à ses sources de données. 
+
+Après avoir installé une passerelle, vous êtes par défaut l’administrateur de cette passerelle. Comme indiqué précédemment, vous pouvez ajouter d’autres personnes en tant qu’administrateurs. Ces administrateurs peuvent ajouter des sources de données, configurer et supprimer la passerelle.
+
+Vous pouvez également affecter des utilisateurs aux sources de données que vous créez dans chacune de vos passerelles. Les utilisateurs peuvent ensuite utiliser ces sources de données pour actualiser les rapports Power BI. Cependant, ils ne peuvent pas modifier les sources de données ou les paramètres de la passerelle.
 
 ## <a name="migrate-restore-or-take-over-a-gateway"></a>Migrer, restaurer ou reprendre une passerelle
 
