@@ -4,8 +4,6 @@ De nombreux problèmes peuvent faire surface quand la version de la passerelle e
 ## <a name="common-issues"></a>Problèmes courants
 Voici quelques problèmes courants et solutions qui ont aidé un certain nombre de clients dans les environnements qui limitent l’accès à Internet.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-t7RO6mHATI?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ### <a name="authentication-to-proxy-server"></a>Authentification auprès du serveur proxy
 Votre proxy peut nécessiter l’authentification à partir d’un compte utilisateur de domaine. Par défaut, la passerelle utilise un SID de service pour l’utilisateur de connexion au service Windows. Remplacer l’utilisateur de connexion par un utilisateur de domaine peut vous y aider. Pour plus d’informations, voir [Remplacement du compte de service de passerelle par un utilisateur de domaine](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 

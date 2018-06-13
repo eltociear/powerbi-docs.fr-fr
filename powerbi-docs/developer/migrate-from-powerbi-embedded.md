@@ -8,12 +8,12 @@ ms.Embedded: powerbi
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 67b52fa94ee3af9da3bfcae17f69a72e1aa46c77
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d9dfdf3f77629a58b324945815a8608fa45f509f
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689780"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813500"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications.
@@ -159,7 +159,7 @@ En plus du contenu que vous avez migré à partir de la collection d’espaces d
 
 ## <a name="rebuild-your-application"></a>Régénérer votre application
 1. Pour utiliser les API REST de Power BI et l’emplacement du rapport dans powerbi.com, vous devez modifier application.
-2. Régénérez votre authentification AuthN/AuthZ à Power BI en utilisant le compte *principal* pour votre application. Vous pouvez tirer parti de l’utilisation d’un [jeton incorporé](https://msdn.microsoft.com/library/mt784614.aspx) pour autoriser cet utilisateur à agir au nom d’autres utilisateurs.
+2. Régénérez votre authentification AuthN/AuthZ à Power BI en utilisant le compte *principal* pour votre application. Vous pouvez tirer parti de l’utilisation d’un [jeton incorporé](https://docs.microsoft.com/rest/api/power-bi/embedtoken) pour autoriser cet utilisateur à agir au nom d’autres utilisateurs.
 3. Incorporez vos rapports de powerbi.com dans votre application.
 
 ## <a name="map-your-users-to-a-power-bi-user"></a>Mapper vos utilisateurs à un utilisateur de Power BI

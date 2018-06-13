@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/30/2018
+ms.date: 06/05/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1ea92be426312a738e03d78454a4c83a82b233c5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 331dc45f3049fe77145b86ffafd363162c74a589
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722517"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813799"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Utiliser des thèmes de tableau de bord dans le service Power BI
 Les **thèmes de tableau de bord** vous permettent d’appliquer un thème de couleur à l’intégralité d’un tableau de bord. Il peut s’agir des couleurs de votre organisation, de teintes liées à la saison ou de tout autre thème de votre choix. Quand vous appliquez un **thème de tableau de bord**, tous les visuels du tableau de bord utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
 
 ![Exemple de tableau de bord avec un thème](media/service-dashboard-themes/power-bi-full-dashboard-theme.png)
 
-Le changement des couleurs des visuels du rapport sur le tableau de bord n’affectent pas les visuels du rapport. En outre, quand vous épinglez des vignettes d’un rapport auquel un [thème de rapport](/desktop-report-themes.md) est déjà appliqué, vous pouvez choisir de conserver le thème actuel ou d’utiliser le thème du tableau de bord.
+Le changement des couleurs des visuels du rapport sur le tableau de bord n’affectent pas les visuels du rapport. En outre, quand vous épinglez des vignettes d’un rapport auquel un [thème de rapport](desktop-report-themes.md) est déjà appliqué, vous pouvez choisir de conserver le thème actuel ou d’utiliser le thème du tableau de bord.
 
 
 ## <a name="prerequisites"></a>Conditions préalables

@@ -1,5 +1,5 @@
 ---
-title: Notes de publication de Power BI Report Server
+title: Développer avec les API REST pour Power BI Report Server
 description: L’API REST fournit un accès par programme aux objets dans un catalogue Power BI Report Server.
 author: markingmyname
 manager: kfile
@@ -9,14 +9,15 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: a1cbcc6d265504bc93ef6447a6be381ca6399063
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 08c8075fe275ff1472d3e9845f954ef4d029b373
+ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721751"
+ms.lasthandoff: 06/09/2018
+ms.locfileid: "35250427"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Développer avec les API REST pour Power BI Report Server
+
 Power BI Report Server prend en charge les API Representational State Transfer (REST). Les API REST sont des points de terminaison de service qui prennent en charge un ensemble d’opérations HTTP (méthodes) qui fournissent un accès en création, récupération, mise à jour ou suppression aux ressources à l’intérieur d’un serveur de rapports.
 
 L’API REST fournit un accès par programme aux objets dans un catalogue Power BI Report Server. Ces objets sont, par exemple, des dossiers, des rapports, des indicateurs de performance clés, des sources de données, des jeux de données, des plans d’actualisation, des abonnements et bien plus encore. L’API REST vous permet, par exemple, de parcourir l’arborescence des dossiers, de découvrir le contenu d’un dossier, ou de télécharger une définition de rapport. Elle permet également de créer, mettre à jour et supprimer des objets. Des exemples d’utilisation d’objets sont le téléchargement d’un rapport, l’exécution d’un plan d’actualisation, la suppression d’un dossier et ainsi de suite.
@@ -24,6 +25,7 @@ L’API REST fournit un accès par programme aux objets dans un catalogue Power 
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
 ## <a name="components-of-a-rest-api-requestresponse"></a>Composants d’une requête-réponse d’API REST
+
 Une paire requête-réponse (ou demande/réponse) d’API REST peut être divisée en cinq composants :
 
 * L’**URI de demande**, qui comprend : `{URI-scheme} :// {URI-host} / {resource-path} ? {query-string}`. Bien que l’URI de demande soit incluse dans l’en-tête de message de demande, nous l’appelons séparément ici, car la plupart des langages ou infrastructures requiert que vous le passiez séparément du message de demande.
@@ -46,15 +48,17 @@ Une paire requête-réponse (ou demande/réponse) d’API REST peut être divis�
   * Des objets de réponse encodés MIME sont renvoyés dans le corps de la réponse HTTP, telle une réponse d’une méthode GET qui retourne des données. En règle générale, ces objets sont retournés dans un format structuré tel que JSON ou XML, comme indiqué par l’en-tête de réponse `Content-type`.
 
 ## <a name="api-documentation"></a>Documentation de l’API
+
 Une API REST moderne appelle une documentation moderne sur l’API. L’API REST repose sur la spécification OpenAPI (aussi appelée spécification Swagger), et une documentation est disponible sur [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0). Au-delà de la documentation de l’API, SwaggerHub aide à générer une bibliothèque cliente dans le langage choisi : JavaScript, TypeScript, c#, Java, Python, Ruby et bien plus encore.
 
 ## <a name="testing-api-calls"></a>Test des appels d’API
+
 Un outil pour tester les messages de requête-réponse HTTP est [Fiddler](http://www.telerik.com/fiddler). Fiddler est un site proxy de débogage web gratuit capable d’intercepter vos demandes REST, ce qui facilite le diagnostic des messages de requête-réponse HTTP.
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 Passez en revue les API disponibles sur de [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0).
 
 Des exemples sont disponibles sur [GitHub](https://github.com/Microsoft/Reporting-Services). L’exemple inclut une application HTML5 reposant sur TypeScript, React et Webpack ainsi qu’un exemple PowerShell.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

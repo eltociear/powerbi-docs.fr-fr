@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: e5866b249d95cd3b05c7d769fe0cdbab984a978d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a41acec10e2801d046185d34c64e4d51b5e9dae0
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289921"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813086"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Listing du code complet de la transmission de données à un jeu de données
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
@@ -228,7 +228,7 @@ Après avoir suivi les étapes 2 à 5 de **Transmettre des données à un jeu de
 [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)  
 [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)  
 [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)  
-[Référence de l’API REST de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 
 
