@@ -900,8 +900,18 @@
           href: developer/embed-sample-for-customers.md
     - name: Concepts
       items:
-        - name: "Quelles sont les possibilités offertes par l’API Power\_BI\_?"
-          href: developer/overview-of-power-bi-rest-api.md
+        - name: Utilisation des API REST Power BI
+          items:
+            - name: "Quelles sont les possibilités offertes par l’API Power\_BI\_?"
+              href: developer/overview-of-power-bi-rest-api.md
+            - name: "Limites de l’API REST de Power\_BI"
+              href: developer/api-rest-api-limitations.md
+            - name: Propriétés du jeu de données
+              href: developer/api-dataset-properties.md
+            - name: Gestion des versions du modèle de données
+              href: developer/api-data-model-versioning.md
+        - name: Création d’un élément visuel personnalisé avec les outils de développement
+          href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: "Autorisations Power\_BI"
           href: developer/power-bi-permissions.md
         - name: Sécurité au niveau des lignes (RLS)
@@ -968,6 +978,8 @@
               href: developer/walkthrough-push-data-add-rows.md
             - name: Listing du code complet
               href: developer/walkthrough-push-data-complete-code.md
+            - name: Stratégie de rétention automatique des données en temps réel
+              href: developer/api-automatic-retention-policy-for-real-time-data.md
         - name: Certification du pack de contenu
           items:
             - name: Programme de certification du pack de contenu
