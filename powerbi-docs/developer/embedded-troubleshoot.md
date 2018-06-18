@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: fa142a34da003328ef509c319faf24d556023440
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ad23161985cc2721562cfdfd9128e326db887ece
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34720808"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813155"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Résolution des problèmes de votre application incorporée
 
@@ -108,7 +108,7 @@ GenerateToken peut échouer, quand une identité effective est fournie, pour dif
 
 Pour vérifier le motif de l’erreur, essayez ce qui suit.
 
-* Exécutez la commande [get dataset](https://msdn.microsoft.com/library/mt784653.aspx). La propriété IsEffectiveIdentityRequired est-elle définie sur True ?
+* Exécutez [get dataset](https://docs.microsoft.com/rest/api/power-bi/datasets). La propriété IsEffectiveIdentityRequired est-elle définie sur True ?
 * Le nom d’utilisateur est obligatoire pour les identités effectives.
 * Si IsEffectiveIdentityRolesRequired est défini sur True, le rôle est requis.
 * L’ID du jeu de données est obligatoire pour les identités effectives.

@@ -9,11 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2018
 ms.author: maghan
-ms.openlocfilehash: 59f045d142fdf5ba22f9d240913687a9306e6b43
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ebbb004fe79bbae942243bc227e1c09fd51fa75f
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813707"
 ---
 # <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Incorporer un tableau de bord, une vignette ou un rapport Power BI dans votre application pour les clouds souverains
 Découvrez comment intégrer (ou incorporer) un tableau de bord, une vignette ou un rapport dans une application web en utilisant le SDK Power BI .NET, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à vos clients. Il s’agit typiquement d’un scénario concernant les éditeurs de logiciels indépendants.
@@ -36,7 +37,7 @@ Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un
 > Vous voulez plutôt incorporer un tableau de bord s’adressant à votre organisation ? Consultez [Intégrer un tableau de bord dans une application pour votre organisation](integrate-dashboard.md).
 >
 
-Pour intégrer un tableau de bord à une application web, utilisez l’API **Power BI** et un **jeton d’accès** d’autorisation Azure Active Directory (AD) pour obtenir un tableau de bord. Ensuite, chargez le tableau de bord à l’aide d’un jeton incorporé. L’API **Power BI** fournit un accès par programme à certaines ressources **Power BI**. Pour plus d’informations, consultez [Vue d’ensemble de l’API REST Power BI](https://msdn.microsoft.com/library/dn877544.aspx), [Kit de développement logiciel (SDK) Power BI .NET](https://github.com/Microsoft/PowerBI-CSharp) et [API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
+Pour intégrer un tableau de bord à une application web, utilisez l’API **Power BI** et un **jeton d’accès** d’autorisation Azure Active Directory (AD) pour obtenir un tableau de bord. Ensuite, chargez le tableau de bord à l’aide d’un jeton incorporé. L’API **Power BI** fournit un accès par programme à certaines ressources **Power BI**. Pour plus d’informations, consultez [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/), [Kit SDK Power BI .NET](https://github.com/Microsoft/PowerBI-CSharp) et [API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Télécharger l’exemple
 Cet article présente le code utilisé dans [l’exemple d’incorporation pour votre client](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) sur GitHub. Pour suivre cette procédure pas à pas, vous pouvez télécharger l’exemple.
@@ -201,7 +202,7 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### <a name="create-the-embed-token"></a>Créer le jeton incorporé
-Un jeton d’incorporation doit être généré pour être utilisé à partir de l’API JavaScript. Le jeton d’incorporation est propre à l’élément que vous incorporez. Cela signifie que chaque fois que vous incorporez un contenu Power BI, vous devez lui créer un jeton d’incorporation. Pour en savoir plus, notamment sur les niveaux d’accès (**accessLevel**) à utiliser, consultez [API GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
+Un jeton d’incorporation doit être généré pour être utilisé à partir de l’API JavaScript. Le jeton d’incorporation est propre à l’élément que vous incorporez. Cela signifie que chaque fois que vous incorporez un contenu Power BI, vous devez lui créer un jeton d’incorporation. Pour en savoir plus, notamment sur les niveaux d’accès (**accessLevel**) à utiliser, consultez [Incorporer un jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
 > Étant donné que les jetons incorporés sont uniquement destinés aux tests de développement, le nombre de jetons incorporés qu’un compte principal Power BI peut générer est limité. Vous [devez acheter une capacité](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée.

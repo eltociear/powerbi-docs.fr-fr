@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
-ms.openlocfilehash: 979b76350b9867bbc684a70bd89a82f88993e625
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: dd7276eb436dfd9d842930f6a2c550a2a6b521f3
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290266"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812948"
 ---
 # <a name="integrate-a-dashboard-into-an-app-for-your-organization"></a>Intégrer un tableau de bord dans une application pour votre organisation
 Découvrez comment intégrer (ou incorporer) un tableau de bord dans une application web en utilisant des appels d’API REST, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à votre organisation.
@@ -28,7 +28,7 @@ Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un
 > 
 > 
 
-Pour intégrer un tableau de bord à une application web, vous utilisez l’API REST **Power BI** ou le SDK Power BI C# et un **jeton d’accès** d’autorisation Azure Active Directory (AD) pour obtenir un tableau de bord. Vous chargez ensuite le tableau de bord en utilisant le même jeton d’accès. L’API **Power BI** fournit un accès par programme à certaines ressources **Power BI**. Pour plus d’informations, consultez [Vue d’ensemble de l’API REST Power BI](https://msdn.microsoft.com/library/dn877544.aspx) et [API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
+Pour intégrer un tableau de bord à une application web, vous utilisez l’API REST **Power BI** ou le SDK Power BI C# et un **jeton d’accès** d’autorisation Azure Active Directory (AD) pour obtenir un tableau de bord. Vous chargez ensuite le tableau de bord en utilisant le même jeton d’accès. L’API **Power BI** fournit un accès par programme à certaines ressources **Power BI**. Pour plus d’informations, consultez [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/) et [API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Télécharger l’exemple
 Cet article explique le code utilisé dans l’[exemple d’intégration d’application web de tableau de bord](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app) sur GitHub. Pour suivre cette procédure pas à pas, vous pouvez télécharger l’exemple.
@@ -44,12 +44,12 @@ Si vous avez téléchargé l’[exemple d’intégration de tableau de bord](htt
 Dans votre application, vous devez d’abord obtenir un **jeton d’accès**, à partir d’Azure AD, avant de pouvoir effectuer des appels d’API REST Power BI. Pour plus d’informations, consultez [Authentifier des utilisateurs et obtenir un jeton d’accès Azure AD pour votre application Power BI](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-dashboard"></a>Étape 3 : obtenir un tableau de bord
-Pour obtenir un tableau de bord **Power BI**, vous utilisez l’opération [Obtenir des tableaux de bord](https://msdn.microsoft.com/library/mt465739.aspx) opération qui obtient une liste de tableaux de bord **Power BI**. Dans la liste des tableaux de bord, vous pouvez obtenir un ID de tableau de bord.
+Pour obtenir un tableau de bord **Power BI**, vous utilisez l’opération [Obtenir des tableaux de bord](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) opération qui obtient une liste de tableaux de bord **Power BI**. Dans la liste des tableaux de bord, vous pouvez obtenir un ID de tableau de bord.
 
 ![](media/integrate-dashboard/powerbi-embed-dashboard-get-dashboards.png)
 
 ### <a name="get-dashboards-using-an-access-token"></a>Obtenir des tableaux de bord avec un jeton d’accès
-En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx). L’opération [Obtenir des tableaux de bord](https://msdn.microsoft.com/library/mt465739.aspx) renvoie la liste des tableaux de bord. Vous ne pouvez récupérer qu’un seul tableau de bord dans cette liste. Voici une méthode C# complète pour obtenir un tableau de bord. 
+En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Dashboards](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). L’opération [Obtenir des tableaux de bord](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards) renvoie la liste des tableaux de bord. Vous ne pouvez récupérer qu’un seul tableau de bord dans cette liste. Voici une méthode C# complète pour obtenir un tableau de bord. 
 
 Pour effectuer l’appel d’API REST, vous devez inclure un en-tête d’*autorisation* au format *Porteur {jeton d’accès}*.
 
@@ -258,7 +258,7 @@ Tile Clicked
 ```
 
 ## <a name="working-with-groups-app-workspaces"></a>Utilisation des groupes (espaces de travail d’application)
-Pour incorporer un tableau de bord à partir d’un groupe (espace de travail d’application), obtenez la liste de tous les tableaux de bord disponibles au sein d’un groupe à l’aide de l’appel d’API REST suivant. Pour plus d’informations sur cet appel d’API REST, consultez [Obtenir des tableaux de bord](https://msdn.microsoft.com/library/mt465739.aspx). Vous devez avoir l’autorisation requise dans le groupe pour que la requête puisse retourner les résultats.
+Pour incorporer un tableau de bord à partir d’un groupe (espace de travail d’application), obtenez la liste de tous les tableaux de bord disponibles au sein d’un groupe à l’aide de l’appel d’API REST suivant. Pour plus d’informations sur cet appel d’API REST, consultez [Obtenir des tableaux de bord](https://docs.microsoft.com/rest/api/power-bi/dashboards/getdashboards). Vous devez avoir l’autorisation requise dans le groupe pour que la requête puisse retourner les résultats.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/dashboards

@@ -9,23 +9,23 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: c94f0a94cfc2e59942a17b542efb7b1bb641174c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c6cbdf9effa3264eadf19de97be864cc3f152e8b
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290312"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812419"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Étape 3 : Créer un jeu de données dans Power BI
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
-À l’**étape 2** de la procédure de transmission des données à un jeu de données intitulée [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md), vous avez obtenu un jeton pour vous authentifier auprès d’**Azure AD**. Pendant cette étape, vous utilisez le jeton pour appeler l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx).
+À l’**étape 2** de la procédure de transmission des données à un jeu de données intitulée [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md), vous avez obtenu un jeton pour vous authentifier auprès d’**Azure AD**. Pendant cette étape, vous utilisez le jeton pour appeler l’opération [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets).
 
 Pour appeler une ressource REST, vous utilisez une URL qui localise la ressource et vous envoyez une chaîne JSON (JavaScript Objet Notation), qui décrit le jeu de données, à la ressource du service Power BI. Une ressource REST identifie la partie du service Power BI que vous voulez utiliser. Pour transmettre des données au jeu de données, la ressource cible est un **jeu de données**. L’URL qui identifie un jeu de données est https://api.PowerBI.com/v1.0/myorg/datasets. Si vous transmettez des données au sein d’un groupe, l’URL est https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
 
 Pour authentifier une opération REST Power BI, vous ajoutez le jeton que vous avez obtenu à l’étape [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md) à un en-tête de demande :
 
-Quand vous appelez l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx), un jeu de données est créé. 
+Quand vous appelez l’opération [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets), un jeu de données est créé. 
 
 ![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
@@ -228,10 +228,11 @@ Ci-après figure le [listing du code complet](#code).
 ## <a name="next-steps"></a>Étapes suivantes
 [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)  
 [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)  
-[Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx)  
+[PostDataset](https://docs.microsoft.com/rest/api/power-bi/datasets_postdataset)  
+[PostDatasetInGroup](https://docs.microsoft.com/rest/api/power-bi/datasets_postdatasetingroup)  
 [Transmettre des données à un tableau de bord Power BI](walkthrough-push-data.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
-[Référence de l’API REST de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

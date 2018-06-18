@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/20/2017
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 47dd0ab87b78e344de176ebe22a1e5dc9753b9b0
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 8a688f46a46dbb1015629c7785d96b62d4f8df26
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813232"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Comment les développeurs peuvent-ils se servir de l’API Power BI ?
 Power BI présente des tableaux de bord interactifs, qui peuvent être créés et mis à jour à partir de différentes sources de données en temps réel. À l’aide d’un langage de programmation qui prend en charge les appels REST, vous pouvez créer des applications qui s’intègrent à un tableau de bord Power BI en temps réel. Vous pouvez également intégrer des vignettes et des rapports Power BI à des applications.
@@ -26,7 +27,6 @@ Voici quelques opérations possibles avec les API Power BI.
 | --- | --- |
 | Incorporer des tableaux de bord, des rapports et des vignettes pour les utilisateurs Power BI et non-Power BI (l’application possède les données) |[Comment incorporer vos tableaux de bord, rapports et vignettes Power BI](embedding-content.md) |
 | Étendre un workflow d’entreprise existant pour transmettre des données clés à un tableau de bord Power BI. |[Transmettre des données à un tableau de bord](walkthrough-push-data.md) |
-| Importer un fichier Power BI Desktop |[Importer un fichier PBIX](https://msdn.microsoft.com/library/mt243837.aspx) |
 | Authentifiez-vous sur Power BI. |[S’authentifier sur Power BI](get-azuread-access-token.md) |
 | Créer un élément visuel personnalisé. |[Créer des visuels personnalisés à l’aide des outils de développement](../service-custom-visuals-getting-started-with-developer-tools.md) |
 
@@ -51,12 +51,17 @@ Les exemples des développeurs de Power BI comprennent des éléments pour l’
 ## <a name="developer-tools"></a>Outils développeurs
 Voici les outils que vous pouvez utiliser pour faciliter le développement d’éléments Power BI.
 
-* [Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo)
+Vous pouvez passer par [l’outil d’expérience d’intégration](https://aka.ms/embedsetup) pour démarrer et télécharger rapidement un exemple d’application sur l’incorporation de contenu Power BI.
+
+Choisissez la solution qui vous convient :
+* [L’incorporation pour vos clients](embedding.md#embedding-for-your-customers) permet d’incorporer des tableaux de bord et des rapports pour les utilisateurs qui n’ont pas de compte Power BI. Exécutez la solution [Incorporer pour vos clients](https://aka.ms/embedsetup/AppOwnsData).
+* [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI. Exécutez la solution [Incorporer pour votre organisation](https://aka.ms/embedsetup/UserOwnsData).
+
+Pour obtenir un exemple complet d’utilisation de l’API JavaScript, vous pouvez utiliser [l’outil Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). C’est un moyen rapide de jouer avec différents types d’exemples Power BI Embedded. Vous trouverez également d’autres informations sur l’API JavaScript sur la page [Wiki PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Transmission de données à un jeu de données](walkthrough-push-data.md)  
 [Prise en main des outils de développement de visuels personnalisés](../service-custom-visuals-getting-started-with-developer-tools.md) 
-[Référence sur l’API REST Power BI](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Référence sur l’API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-

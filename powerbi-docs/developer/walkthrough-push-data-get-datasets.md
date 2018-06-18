@@ -9,19 +9,19 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: c550b911eef43ade98b3bc771e3f13929b805e11
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ae8919bbe06c729cc43e230146c4c1a216a80168
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34287621"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813231"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Étape 4 : Obtenir un jeu de données pour ajouter des lignes à une table Power BI
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
-À l’**étape 3** de la procédure Transmettre des données à un jeu de données intitulée [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md), vous avez appelé l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx) pour créer un jeu de données dans Power BI. Pendant cette étape, vous utilisez l’opération [Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx) et Newtonsoft.Json pour obtenir un ID de jeu de données. Vous utilisez l’ID de jeu de données à l’étape 4 pour ajouter des lignes à un jeu de données. 
+À l’**étape 3** de la procédure Transmettre des données à un jeu de données intitulée [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md), vous avez appelé l’opération [Créer un jeu de données](https://docs.microsoft.com/rest/api/power-bi/datasets) pour créer un jeu de données dans Power BI. Pendant cette étape, vous utilisez l’opération [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/getdatasets) et Newtonsoft.Json pour obtenir un ID de jeu de données. Vous utilisez l’ID de jeu de données à l’étape 4 pour ajouter des lignes à un jeu de données. 
 
-Pour transmettre des données à un jeu de données Power BI, vous devez référencer la table dans le jeu de données. Pour référencer une table dans un jeu de données, vous devez d’abord obtenir un **ID de jeu de données**. Vous obtenez un **ID de jeu de données** à l’aide de l’opération [Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx). L’opération **Obtenir un jeu de données** retourne une chaîne JSON contenant la liste de tous les jeux de données dans Power BI. Pour désérialiser une chaîne JSON, il est recommandé d’utiliser [Newtonsoft.Json](http://www.newtonsoft.com/json).
+Pour transmettre des données à un jeu de données Power BI, vous devez référencer la table dans le jeu de données. Pour référencer une table dans un jeu de données, vous devez d’abord obtenir un **ID de jeu de données**. Vous obtenez un **ID de jeu de données** à l’aide de l’opération [Obtenir un jeu de données par ID](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasetbyid). L’opération **Obtenir un jeu de données par ID** retourne une chaîne JSON contenant la liste de tous les jeux de données dans Power BI. Pour désérialiser une chaîne JSON, il est recommandé d’utiliser [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
 Voici comment obtenir un jeu de données.
 
@@ -267,10 +267,10 @@ Ci-après figure le [listing du code complet](#code).
 ## <a name="next-steps"></a>Étapes suivantes
 [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
-[Obtenir des jeux de données](https://msdn.microsoft.com/library/mt203567.aspx)  
+[Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
 [Transmettre des données à Power BI](walkthrough-push-data.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
-[Référence de l’API REST de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

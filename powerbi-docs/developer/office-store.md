@@ -9,11 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: maghan
-ms.openlocfilehash: 6ecb9426ba1344fdf55789a22daec6b9fb6c6e89
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 7c3a50fa487b9444b2f10b9d546d247be70dd1c9
+ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35301777"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publier des visuels personnalisés dans AppSource
 Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser. Office
@@ -25,9 +26,9 @@ Une fois que vous avez créé votre visuel personnalisé, vous pouvez le publier
 Présentation d’AppSource Il s’agit simplement de l’endroit où vous pouvez rechercher des applications SaaS et des compléments pour vos produits et services Microsoft. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connecte des millions d’utilisateurs Office 365, Dynamics 365, Cortana Intelligence, etc. à des solutions qui les aident à effectuer leur travail de façon plus efficace, intelligente et élaborée.
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Préparation de la soumission de votre visuel personnalisé
-Une fois que vous avez terminé de coder et de tester votre visuel personnalisé et que vous l’avez empaqueté dans un fichier pbiviz, vous devez également préparer les éléments suivants pour la soumission.
+Une fois que vous avez terminé de coder et de tester votre visuel personnalisé et que vous l’avez empaqueté dans un fichier pbiviz, vous devez également préparer les éléments suivants pour l’envoyer.
 
-| Élément | Obligatoire | Description |
+| Item | Obligatoire | Description |
 | --- | --- | --- |
 | Le package Pbiviz contient toutes les métadonnées requises |Oui |Nom du visuel<br>Nom d’affichage<br>GUID<br>Version<br>Description<br>Nom et e-mail de l’auteur |
 | Exemple de fichier de rapport .pbix |Oui |Pour présenter votre visuel, vous devez en démontrer son utilité aux utilisateurs. Vous devez insister sur la valeur que le visuel apporte à l’utilisateur et donner des exemples d’utilisation, des options de mise en forme, etc. Vous pouvez également ajouter une page de *conseils* à la fin. Dans cette page, donnez quelques conseils et astuces, expliquez ce qu’il faut éviter de faire et donnez d’autres indications.<br>L’exemple de fichier de rapport .pbix doit pouvoir être utilisé hors connexion, sans connexion externe |

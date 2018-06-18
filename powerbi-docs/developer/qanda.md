@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
 ms.author: maghan
-ms.openlocfilehash: 86dd69cede6975021aff4b0ce3dada112db980ad
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d1fd42f059f8050662adc80018748d11c1e73e2b
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34287782"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813753"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Questions et réponses dans Power BI Embedded
 Power BI Embedded vous permet d’incorporer Questions et réponses dans une application et permet aux utilisateurs de poser des questions en utilisant un langage naturel, ainsi que de recevoir des réponses immédiates sous forme de visuels, par exemple des graphiques.
@@ -93,7 +93,7 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## <a name="embed-token"></a>Jeton d’incorporation
-Créez un jeton d’incorporation d’un jeu de données pour démarrer une partie Questions et réponses. Pour plus d’informations, consultez [Générer un jeton pour Questions et réponses](https://msdn.microsoft.com/library/mt784614.aspx#qanda).
+Créez un jeton d’incorporation d’un jeu de données pour démarrer une partie Questions et réponses. Pour plus d’informations, consultez [Générer un jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour essayer l’incorporation dans Questions et réponses, consultez l’[exemple d’incorporation JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/).

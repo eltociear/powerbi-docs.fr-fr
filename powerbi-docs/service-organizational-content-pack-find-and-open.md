@@ -7,19 +7,19 @@ ms.reviewer: ajayan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f1580aeeb25d5159eff7fcb4759bb426e5ff0bfd
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 20352a729b43e15fd1cd67cb5d52c321c3d150d4
+ms.sourcegitcommit: b7839f2aa68c3626f55ee7e49c8392169d1ec67e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251388"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34852253"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Rechercher un pack de contenu d’organisation et vous y connecter
 > [!NOTE]
-> Avez-vous déjà entendu parler des nouvelles *applications*? Les applications sont la nouvelle méthode pour distribuer du contenu à un large public dans Power BI. Nous recommandons d’utiliser des applications plutôt que des packs de contenu d’organisation ou des espaces de travail en lecture seule. En savoir [plus sur les applications](service-install-use-apps.md).
+> Avez-vous déjà entendu parler des nouvelles *applications*? Les applications sont la nouvelle méthode pour distribuer du contenu à un large public dans Power BI. Étant donné que nous prévoyons de déprécier les packs de contenu d’organisation bientôt, nous vous recommandons d’utiliser plutôt des applications. En savoir [plus sur les applications](service-install-use-apps.md).
 > 
 > 
 

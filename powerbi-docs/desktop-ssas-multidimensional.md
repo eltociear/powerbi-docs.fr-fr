@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 62f6c8ac23fad39dfb6942678cf92a37014de8bf
-ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
+ms.openlocfilehash: c16fe65d766c6a1c18d809a68b3b0f6af8047db0
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34799576"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813339"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Se connecter aux modèles multidimensionnels SSAS dans Power BI Desktop
 Power BI Desktop vous permet d’accéder aux **modèles multidimensionnels SSAS**, communément appelés **SSAS MD**.
@@ -36,7 +36,7 @@ Le tableau suivant illustre la correspondance entre les objets multidimensionnel
 | --- | --- |
 | Cube |Modèle |
 | Dimension de cube |Table |
-| Attributs de la dimension (clés), nom |Colonnes |
+| Attributs de la dimension (clés), nom |colonnes |
 | Groupe de mesures |Table |
 | Mesure |Mesure |
 | Mesures sans groupe de mesures associé |Dans une table appelée *Mesures* |
@@ -75,11 +75,12 @@ Les membres calculés des hiérarchies d’utilisateurs ne sont pas exposés dan
 ### <a name="security"></a>Sécurité
 Les modèles multidimensionnels prennent en charge la sécurité au niveau des cellules et de la dimension au moyen des *rôles*. Lorsque vous vous connectez à un cube avec Power BI, vous êtes authentifié et évalué afin d’obtenir les autorisations appropriées. Lorsque la *sécurité de dimension* est appliquée à un utilisateur, les membres de la dimension respective ne sont pas visibles par l’utilisateur dans Power BI. Toutefois, lorsqu’une autorisation de *sécurité de cellule* est définie pour un utilisateur, lorsque certaines cellules sont restreintes, cet utilisateur ne peut pas se connecter au cube à l’aide de Power BI.
 
-## <a name="limitations-of-ssas-multidimensional-models-in-power-bi-desktop"></a>Limitations des modèles multidimensionnels SSAS dans Power BI Desktop
+## <a name="considerations-and-limitations"></a>Considérations et limitations
 Il existe certaines limitations à l’utilisation de **SSAS MD**:
 
 * Les serveurs doivent exécuter SQL Server 2012 SP1 CU4 ou des versions ultérieures d’Analysis Services pour que le connecteur SSAS MD de Power BI Desktop fonctionne correctement
 * *Actions* et *jeux nommés* ne sont pas exposés à Power BI, mais vous pouvez toujours vous connecter à des cubes qui contiennent également les propriétés *actions* ou *jeux nommés* et créer des rapports et des éléments visuels.
+* Vous risquez de rencontrer un problème où Power BI affiche les métadonnées d’un modèle SSAS, mais vous n’arrivez pas à récupérer les données du modèle. Cela peut se produire si vous avez la version 32 bits du fournisseur MSOLAP installée sur votre système et pas la version 64 bits. L’installation de la version 64 bits peut résoudre le problème.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Fonctionnalités prises en charge de SSAS MD dans Power BI Desktop
 Les fonctionnalités suivantes de SSAS MD sont pris en charge dans Power BI Desktop :

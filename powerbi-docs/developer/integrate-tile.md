@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
-ms.openlocfilehash: 6ad2138ab37b20fa16a5455ab167ec9e6b7e159c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: afed2bc87e7e358d9ba02a465c43d223f6e7cba3
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34288311"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813776"
 ---
 # <a name="integrate-a-tile-into-an-app-user-owns-data"></a>Intégrer une vignette dans une application (l’utilisateur possède les données)
 Découvrez comment intégrer (ou incorporer) une vignette dans une application web en utilisant des appels d’API REST, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à votre organisation.
@@ -28,7 +28,7 @@ Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un
 > 
 > 
 
-Pour intégrer une vignette à une application web, vous utilisez l’API REST **Power BI** ou le SDK Power BI C# et un **jeton d’accès** d’autorisation Azure Active Directory (AD) pour obtenir une vignette. Vous chargez ensuite la vignette en utilisant le même jeton d’accès. L’API **Power BI** fournit un accès par programme à certaines ressources **Power BI**. Pour plus d’informations, consultez [Vue d’ensemble de l’API REST Power BI](https://msdn.microsoft.com/library/dn877544.aspx) et [API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
+Pour intégrer une vignette à une application web, vous utilisez l’API REST **Power BI** ou le SDK Power BI C# et un **jeton d’accès** d’autorisation Azure Active Directory (AD) pour obtenir une vignette. Vous chargez ensuite la vignette en utilisant le même jeton d’accès. L’API **Power BI** fournit un accès par programme à certaines ressources **Power BI**. Pour plus d’informations, consultez [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/) et [API JavaScript Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Télécharger l’exemple
 Cet article explique le code utilisé dans l’[exemple d’intégration d’application web de vignette](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app) sur GitHub. Pour suivre cette procédure pas à pas, vous pouvez télécharger l’exemple.
@@ -44,12 +44,12 @@ Si vous avez téléchargé [l’exemple d’intégration d’application web de 
 Dans votre application, vous devez d’abord obtenir un **jeton d’accès**, à partir d’Azure AD, avant de pouvoir effectuer des appels d’API REST Power BI. Pour plus d’informations, consultez [Authentifier des utilisateurs et obtenir un jeton d’accès Azure AD pour votre application Power BI](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-tile"></a>Étape 3 : obtenir une vignette
-Pour obtenir une vignette **Power BI**, vous utilisez l’opération [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) qui récupère une liste de vignettes **Power BI** à partir d’un tableau de bord donné. Dans la liste des vignettes, vous pouvez obtenir un ID de vignette et une URL incorporée.
+Pour obtenir une vignette **Power BI**, vous utilisez l’opération [Get Tiles](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles) qui récupère une liste de vignettes **Power BI** à partir d’un tableau de bord donné. Dans la liste des vignettes, vous pouvez obtenir un ID de vignette et une URL incorporée.
 
 Vous devez d’abord récupérer un ID de tableau de bord avant de pouvoir obtenir la vignette. Pour plus d’informations sur la récupération d’un tableau de bord, consultez [Intégrer un tableau de bord à une application (l’utilisateur possède les données)](integrate-dashboard.md).
 
 ### <a name="get-tiles-using-an-access-token"></a>Obtenir des vignettes à l’aide d’un jeton d’accès
-En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx). L’opération [Get Tiles](https://msdn.microsoft.com/library/mt465741.aspx) renvoie une liste de vignettes. Vous ne pouvez récupérer qu’une seule vignette dans cette liste. Voici une méthode C# complète pour obtenir une vignette. 
+En utilisant le **jeton d’accès** récupéré à l’[Étape 2](#step-2-get-an-access-token-from-azure-ad), vous pouvez appeler l’opération [Get Tiles](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles). L’opération [Get Tiles](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles) renvoie une liste de vignettes. Vous ne pouvez récupérer qu’une seule vignette dans cette liste. Voici une méthode C# complète pour obtenir une vignette. 
 
 Pour effectuer l’appel d’API REST, vous devez inclure un en-tête d’*autorisation* au format *Porteur {jeton d’accès}*.
 
@@ -216,7 +216,7 @@ Si vous avez téléchargé et exécuté [l’exemple d’intégration d’applic
 ![Vignette incorporée dans une application web](media/integrate-tile/powerbi-embedded-tile.png)
 
 ## <a name="working-with-groups-app-workspaces"></a>Utilisation des groupes (espaces de travail d’application)
-Pour incorporer une vignette à partir d’un groupe, obtenez la liste de toutes les vignettes disponibles dans le tableau de bord d’un groupe en utilisant l’appel d’API REST suivant. Pour plus d’informations sur cet appel d’API REST, consultez [Obtenir des vignettes](https://msdn.microsoft.com/library/mt465741.aspx). Vous devez avoir l’autorisation requise dans le groupe pour que la requête puisse retourner les résultats.
+Pour incorporer une vignette à partir d’un groupe, obtenez la liste de toutes les vignettes disponibles dans le tableau de bord d’un groupe en utilisant l’appel d’API REST suivant. Pour plus d’informations sur cet appel d’API REST, consultez [Obtenir des vignettes](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles). Vous devez avoir l’autorisation requise dans le groupe pour que la requête puisse retourner les résultats.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/dashboards/{dashboard_id}/tiles

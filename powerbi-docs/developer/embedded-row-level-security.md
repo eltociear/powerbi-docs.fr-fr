@@ -9,11 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: maghan
-ms.openlocfilehash: 218f4cd0aaaa5ffc8cab3a06b06af9544b02143d
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 806ec6051cf8b77dfe17664d82e6add40147f0ed
+ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35301731"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
 La sécurité au niveau des lignes peut être utilisée pour restreindre l’accès aux données dans des tableaux de bord, vignettes, rapports et jeux de données. Plusieurs utilisateurs différents peuvent utiliser ces mêmes artefacts tout en voyant différentes données. L’incorporation prend en charge la sécurité au niveau des lignes.
@@ -75,9 +76,9 @@ Appliquer le filtre comme vous l’avez fait ici a pour effet de filtrer tous le
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Application de l’utilisateur et du rôle à un jeton d’incorporation
 Maintenant que vous avez configuré vos rôles Power BI Desktop, vous devez effectuer certaines tâches dans votre application pour tirer parti des rôles.
 
-Les utilisateurs sont authentifiés et autorisés par votre application et les jetons d’incorporation sont utilisés pour accorder l’accès utilisateur à un rapport Power BI Embedded spécifique. Power BI Embedded n’a pas d’informations spécifiques sur l’utilisateur. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre un contexte supplémentaire dans le cadre de votre jeton d’incorporation sous la forme d’identités. Pour cela, utilisez l’API [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
+Les utilisateurs sont authentifiés et autorisés par votre application et les jetons d’incorporation sont utilisés pour accorder l’accès utilisateur à un rapport Power BI Embedded spécifique. Power BI Embedded n’a pas d’informations spécifiques sur l’utilisateur. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre un contexte supplémentaire dans le cadre de votre jeton d’incorporation sous la forme d’identités. Pour cela, utilisez l’API [Incorporer le jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
-L’API [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx) accepte une liste des identités avec l’indication des jeux de données pertinents. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre les éléments suivants au sein de l’identité.
+L’API accepte une liste des identités avec l’indication des jeux de données pertinents. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre les éléments suivants au sein de l’identité.
 
 * **Nom d’utilisateur (obligatoire)** : il s’agit d’une chaîne qui peut être utilisée pour identifier l’utilisateur lors de l’application des règles de sécurité au niveau des lignes. Un seul utilisateur peut être répertorié.
 * **Rôles (obligatoire)** : chaîne contenant les rôles à sélectionner lors de l’application des règles de sécurité au niveau des lignes. Si vous transmettez plusieurs rôles, ceux-ci doivent l’être en tant que tableau de chaînes.
@@ -177,7 +178,7 @@ Si vous appelez l’API REST, vous pouvez ajouter des données personnalisées d
 * L’attribution d’utilisateurs aux rôles, dans le service Power BI, n’affecte pas la sécurité au niveau des lignes lors de l’utilisation d’un jeton d’incorporation.
 * Alors que le service Power BI n’applique pas le paramètre de sécurité au niveau des lignes aux administrateurs ni aux membres dotés d’autorisations de modification, lorsque vous fournissez une identité avec un jeton d’incorporation, celle-ci est appliquée aux données.
 * Les connexions actives Analysis Services sont prises en charge pour les serveurs locaux.
-* Les connexions actives Azure Analysis Services prennent en charge le filtrage par rôles, mais pas le filtrage dynamique par nom d’utilisateur.
+* Les connexions actives Azure Analysis Services prennent en charge le filtrage par rôles, mais pas le filtrage dynamique par nom d’utilisateur. Le filtrage dynamique peut être effectué à l’aide de CustomData.
 * Si le jeu de données sous-jacent ne nécessite pas la sécurité au niveau des lignes, la demande GenerateToken ne doit **pas** contenir d’identité effective.
 * Si le jeu de données sous-jacent est un modèle cloud (modèle mis en cache ou DirectQuery), l’identité effective doit inclure au moins un rôle. Sinon, l’attribution de rôle n’est pas effectuée.
 * Une liste d’identités active plusieurs jetons d’identité pour l’incorporation de tableau de bord. Pour tous les autres artefacts, la liste contient une identité unique.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2018
+ms.date: 06/05/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4eb9f8e0b8548fbecd4e5d2e2fd47c4c3acd2bd6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c91e257d79e9d16fa5a7a58b696d58aefaaaaf92
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722813"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812810"
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 
@@ -47,7 +47,9 @@ Vous pouvez utiliser une connexion active à des instances tabulaires ou multidi
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Télécharger et installer la passerelle de données locale
-Pour télécharger la passerelle, sélectionnez **Passerelle de données** dans le menu Téléchargements. Téléchargez la [passerelle de données locale](http://go.microsoft.com/fwlink/?LinkID=820925).
+Pour télécharger la passerelle, sélectionnez **Passerelle de données** dans le menu Téléchargements. Téléchargez la [passerelle de données locale](http://go.microsoft.com/fwlink/?LinkID=820925). 
+
+Notez que la mise à jour de la passerelle de données locale est effectuée en réinstallant la passerelle, comme décrit dans cette section. Lors de la mise à jour de la passerelle (en la réinstallant), vos paramètres de passerelles existants sont conservés.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -56,9 +58,8 @@ Pour télécharger la passerelle, sélectionnez **Passerelle de données** dans 
 
 ## <a name="install-the-gateway-in-personal-mode"></a>Installer la passerelle en mode personnel
 > [!NOTE]
-> Le mode Personal ne fonctionne qu’avec Power BI.
-> 
-> 
+> La version personnelle de la passerelle fonctionne uniquement avec Power BI.
+
 
 Une fois la passerelle personnelle installée, vous devez lancer l’Assistant de configuration **Power BI Gateway - Personal**.
 

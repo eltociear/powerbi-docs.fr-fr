@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 376fb2a6167e020e5d65c7d634ef05cd366b1aa2
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: a604f50889d4443ba7c8e7da580275e579f69d15
+ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755136"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35301823"
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -218,10 +218,13 @@ Les utilisateurs de l’organisation peuvent utiliser Excel pour afficher et int
 > [!NOTE]
 > La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité **Analyser dans Excel**.
 
-### <a name="user-arcgis-maps-for-power-bi-preview"></a>Utiliser ArcGIS Maps pour Power BI (préversion)
+### <a name="use-arcgis-maps-for-power-bi"></a>Utiliser ArcGIS Maps for Power BI
 
-Les utilisateurs de l’organisation peuvent utiliser la visualisation ArcGIS Maps pour Power BI (préversion) fournie par Esri. [En savoir plus](power-bi-visualization-arcgis.md)
+Les utilisateurs de l’organisation peuvent utiliser la visualisation ArcGIS Maps for Power BI fournie par Esri. [En savoir plus](power-bi-visualization-arcgis.md)
 
+### <a name="use-global-search-for-power-bi-preview"></a>Utiliser la recherche générale pour Power BI (préversion)
+
+Les utilisateurs de l’organisation peuvent utiliser les fonctionnalités de recherche externe qui reposent sur le service Recherche Azure. Par exemple, les utilisateurs peuvent se servir de Cortana pour extraire des informations clés directement des tableaux de bord et des rapports Power BI. [En savoir plus](service-cortana-intro.md)
 
 ## <a name="custom-visuals-settings"></a>Paramètres des visuels personnalisés
 ### <a name="enable-custom-visuals-for-the-entire-organization"></a>Activer les visuels personnalisés pour l’ensemble de l’organisation

@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 640c6dac9a896cff55bddad46ceef8bce7ccae14
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 238d068e5083c8f46ac3299faddd4e0872f0654d
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289369"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812626"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Étape 2 : Obtenir un jeton d’accès d’authentification
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
@@ -104,7 +104,7 @@ Ajoutez ce code à Program {...}.
        #endregion
 ```
 
-Après avoir obtenu un jeton d’authentification, vous pouvez appeler une opération Power BI. L’étape suivante vous montre comment appeler l’opération [Créer un jeu de données](https://msdn.microsoft.com/library/mt203562.aspx) pour créer un jeu de données afin de transmettre des données à un tableau de bord.
+Après avoir obtenu un jeton d’authentification, vous pouvez appeler une opération Power BI. L’étape suivante vous montre comment appeler l’opération [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) pour créer un jeu de données afin de pousser des données vers un tableau de bord.
 
 L’étape suivante vous montre comment [créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md).
 
@@ -181,6 +181,6 @@ Ci-après figure le [listing du code complet](#code).
 [Package NuGet Bibliothèque d’authentification Azure AD pour .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
 [Transmettre des données à un jeu de données Power BI](walkthrough-push-data.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
-[Référence de l’API REST de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

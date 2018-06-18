@@ -7,19 +7,19 @@ ms.reviewer: ajayan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 06/07/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f88ad90ddf0cd9315a3a3830a01b038d7300c1c9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e07e28ca7fd4dbb38f931a3fbc2a97661294711c
+ms.sourcegitcommit: b7839f2aa68c3626f55ee7e49c8392169d1ec67e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34247317"
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34852345"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Présentation des packs de contenu d’organisation dans Power BI
 > [!NOTE]
-> Avez-vous déjà entendu parler des nouvelles *applications*? Les applications sont la nouvelle méthode pour distribuer du contenu à un large public dans Power BI. Nous recommandons d’utiliser des applications plutôt que des packs de contenu d’organisation ou des espaces de travail en lecture seule. En savoir [plus sur les applications](service-install-use-apps.md).
+> Avez-vous déjà entendu parler des nouvelles *applications*? Les applications sont la nouvelle méthode pour distribuer du contenu à un large public dans Power BI. Étant donné que nous prévoyons de déprécier les packs de contenu d’organisation bientôt, nous vous recommandons d’utiliser plutôt des applications. En savoir [plus sur les applications](service-install-use-apps.md).
 > 
 > 
 

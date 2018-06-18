@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 3e1b3b59fff26242e662d90365a6b8acc98259e6
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: bcdb20d22790b74b54caca5d21325039d6e718bf
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34754929"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812741"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -51,7 +51,7 @@ Dans certains cas, un éditeur de logiciels indépendant (généralement de gran
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Combien de jetons incorporés puis-je créer ?
 
-Les jetons incorporés avec une licence PRO étant destinés aux tests de développement, le nombre de jetons incorporés qu’un compte principal Power BI peut générer est limité. Vous devez [acheter une capacité](#technical) pour l’incorporation dans un environnement de production. Une fois une capacité achetée, le nombre de jetons incorporés que vous pouvez générer n’est pas limité. Accédez à [Obtenir les fonctionnalités disponibles](https://msdn.microsoft.com/library/mt846473.aspx) pour vérifier la valeur d’utilisation qui indique l’utilisation actuelle d’Embedded en pourcentage.
+Les jetons incorporés avec une licence PRO étant destinés aux tests de développement, le nombre de jetons incorporés qu’un compte principal Power BI peut générer est limité. Vous devez [acheter une capacité](#technical) pour l’incorporation dans un environnement de production. Une fois une capacité achetée, le nombre de jetons incorporés que vous pouvez générer n’est pas limité. Accédez à [Fonctionnalités disponibles](https://docs.microsoft.com/rest/api/power-bi/availablefeatures) pour vérifier la valeur qui indique l’utilisation actuelle de jetons incorporés en pourcentage.
 
 ## <a name="technical"></a>Technique
 
