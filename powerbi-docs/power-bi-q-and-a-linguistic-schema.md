@@ -15,6 +15,7 @@ ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34471890"
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Modélisation du langage et schéma linguistique 
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et quand vos données y répondent, c’est encore plus efficace. C’est ce que vous permet de faire Questions et réponses dans Power BI. Quand vous posez une question dans Questions et réponses, cet outil essaie de vous donner la meilleure réponse possible. 

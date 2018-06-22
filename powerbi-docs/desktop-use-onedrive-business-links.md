@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34290703"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Utilisation des liens OneDrive Entreprise dans Power BI Desktop
 Beaucoup de gens ont des classeurs Excel stockés sur leur lecteur OneDrive Entreprise qui seraient parfaitement adaptés à une utilisation avec Power BI Desktop. Avec **Power BI Desktop**, vous pouvez utiliser les liaisons en ligne pour les fichiers **Excel** stockés dans **OneDrive Entreprise** pour créer des rapports et des éléments visuels. Vous pouvez utiliser un compte **OneDrive Entreprise** de groupe, ou votre compte **OneDrive Entreprise** individuel.

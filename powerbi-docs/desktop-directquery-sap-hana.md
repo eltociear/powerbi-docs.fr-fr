@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34290611"
 ---
 # <a name="directquery-and-sap-hana"></a>DirectQuery et SAP HANA
 Vous pouvez vous connecter aux sources de données **SAP HANA** directement avec **DirectQuery**. Il existe deux moyens de se connecter à SAP HANA :

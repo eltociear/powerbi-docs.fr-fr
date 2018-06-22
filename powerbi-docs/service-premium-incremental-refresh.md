@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34298179"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Actualisation incrémentielle dans Power BI Premium
 

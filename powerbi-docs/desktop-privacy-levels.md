@@ -15,6 +15,7 @@ ms.sourcegitcommit: e6db826c2f43a69e4c63d5f4920baa8f66bc41be
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34455970"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Niveaux de confidentialité Power BI Desktop
 Dans **Power BI Desktop**, les niveaux de confidentialité spécifient un niveau d’isolement qui définit le degré d’isolement d’une source de données par rapport aux autres sources de données. Bien qu'un niveau d'isolement restrictif empêche l’échange d’informations entre les sources de données, cela peut réduire les fonctionnalités et affecter les performances.

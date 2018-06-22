@@ -15,6 +15,7 @@ ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34226710"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Résoudre les problèmes liés à la connexion dans Power BI Desktop
 Il est possible que vous rencontriez des erreurs lorsque vous tentez de vous connecter à **Power BI Desktop**. Il existe deux raisons principales aux problèmes de connexion : les **erreurs d’authentification de proxy** et les **erreurs de redirection d’URL non HTTPS**. 
