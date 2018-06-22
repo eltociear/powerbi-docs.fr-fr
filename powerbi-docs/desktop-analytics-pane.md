@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34287667"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Utilisation du volet Analytique dans Power BI Desktop
 Avec le volet **Analyse** de **Power BI Desktop**, vous pouvez ajouter des *lignes de référence* dynamiques aux visuels et mettre en relief les analyses ou les tendances importantes. Le volet **Analyse** se trouve dans la partie **Visualisations** de Power BI Desktop.
