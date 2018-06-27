@@ -11,10 +11,10 @@ ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: c92e91a08026ab3e4fce4513aa8e0892fa0c3db3
-ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34799484"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Utilisation de données tabulaires Analysis Services dans Power BI Desktop
@@ -31,7 +31,7 @@ Quand vous avez créé des rapports dynamiques dans Power BI Desktop, vous pouve
 **Sélectionner des éléments et les importer dans Power BI Desktop** : lorsque vous vous connectez avec cette option, vous pouvez sélectionner des éléments tels que des tables, des colonnes et des mesures dans votre perspective ou modèle tabulaire et les charger dans un modèle Power BI Desktop. Vous pouvez utiliser l’Éditeur de requête avancé de Power BI Desktop pour préciser ce que vous souhaitez obtenir. Vous pouvez utiliser les fonctionnalités de modélisation de Power BI Desktop pour modéliser davantage les données. Aucune connexion active entre Power BI Desktop et le modèle tabulaire n’est conservée. Vous pouvez ensuite explorer votre modèle Power BI Desktop hors connexion ou le publier sur votre site Power BI.
 
 ## <a name="to-connect-to-a-tabular-model"></a>Pour vous connecter à un modèle tabulaire
-1. Dans Power BI Desktop, sous l’onglet **Accueil** , cliquez sur **Obtenir des données**.
+1. Dans Power BI Desktop, sous l’onglet **Accueil**, cliquez sur **Obtenir des données**.
    
    ![](media/desktop-analysis-services-tabular-data/pbid_sqlas_getdata.png)
 2. Cliquez sur **Base de données SQL Server Analysis Services**, puis sur **Se connecter**.
