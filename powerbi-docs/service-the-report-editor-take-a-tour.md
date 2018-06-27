@@ -12,10 +12,11 @@ ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: ef05531ee6080593d232e48a2118a9be7e8cbd19
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "34299467"
 ---
 # <a name="the-report-editortake-a-tour"></a>Découverte de l’éditeur de rapport
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Modifier des rapports dans Power BI Desktop et le service Power BI

@@ -1,6 +1,6 @@
 ---
-title: Utiliser le connecteur SAP BW dans Power BI Desktop
-description: Utiliser le connecteur SAP BW dans Power BI Desktop
+title: Utilisation de SAP BW Connector dans Power BI Desktop
+description: Utilisation de SAP BW Connector dans Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -11,13 +11,13 @@ ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: d0cc0ce18a187280c48be0c84bf9adf680ea3ea4
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34813431"
 ---
-# <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Utiliser le connecteur SAP BW dans Power BI Desktop
+# <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Utilisation de SAP BW Connector dans Power BI Desktop
 Avec Power BI Desktop, vous pouvez accéder aux données **SAP BusinessWarehouse (BW)**.
 
 Pour plus d’informations sur comment les clients SAP peuvent tirer profit de la connexion de Power BI à leurs systèmes SAP Business Warehouse (BW) existants, consultez le [livre blanc Power BI et SAP BW](https://aka.ms/powerbiandsapbw).
@@ -60,7 +60,7 @@ Lors de l’installation, dans la fenêtre **Étapes d’installation facultativ
 ## <a name="standard-sap-bw-connector-features"></a>Fonctionnalités du connecteur SAP BW standard
 Le **connecteur SAP BW** standard dans Power BI Desktop vous permet d’importer des données à partir de vos cubes **SAP Business Warehouse Server** ou d’utiliser DirectQuery. 
 
-Pour en savoir plus sur le **connecteur SAP BW** et sur son utilisation avec DirectQuery, consultez l’article [DirectQuery et SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
+Pour en savoir plus sur **SAP BW Connector** et sur son utilisation avec DirectQuery, consultez l’article [DirectQuery et SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
 Pour pouvoir vous connecter, vous devez spécifier un *Serveur*, un *Numéro de système* et un *ID client*.
 

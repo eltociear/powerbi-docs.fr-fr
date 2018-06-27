@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 01/05/2017
 ms.author: maghan
 ms.openlocfilehash: 96b29c9dc6c384b663ef375d4968dedb011bd05d
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34813109"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
@@ -28,12 +28,12 @@ Avant de commencer à transmettre des données à un jeu de données, vous devez
 * Étape 4 : [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)
 * Étape 5 : [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)
 
-La section suivante est une présentation générale des opérations de l’API Power BI qui poussent (push) des données.
+La section suivante est une présentation générale des opérations de l’API Power BI qui transmettent des données.
 
-## <a name="power-bi-api-operations-to-push-data"></a>Opérations de l’API Power BI permettant de pousser des données
-Avec l’API REST Power BI, vous pouvez pousser des sources de données vers Power BI. Lorsqu’une application ajoute des lignes à un jeu de données, les vignettes du tableau de bord sont automatiquement mises à jour avec les données modifiées. Pour pousser des données, utilisez l’opération [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) avec l’opération [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows). Pour trouver un jeu de données, vous utilisez l’opération [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets). Pour chacune de ces opérations, vous pouvez passer un ID de groupe pour utiliser un groupe. Utilisez l’opération [Obtenir des groupes](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) pour obtenir la liste des ID de groupe.
+## <a name="power-bi-api-operations-to-push-data"></a>Opérations de l’API Power BI permettant de transmettre des données
+Avec l’API REST Power BI, vous pouvez transmettre des sources de données à Power BI. Lorsqu’une application ajoute des lignes à un jeu de données, les vignettes du tableau de bord sont automatiquement mises à jour avec les données modifiées. Pour pousser des données, utilisez l’opération [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) avec l’opération [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows). Pour trouver un jeu de données, vous utilisez l’opération [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets). Pour chacune de ces opérations, vous pouvez passer un ID de groupe pour utiliser un groupe. Utilisez l’opération [Obtenir des groupes](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) pour obtenir la liste des ID de groupe.
 
-Voici les opérations permettant de pousser des données vers un jeu de données :
+Voici les opérations permettant de transmettre des données à un jeu de données :
 
 * [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)
 * [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)

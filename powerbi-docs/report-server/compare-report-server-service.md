@@ -11,10 +11,10 @@ ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
 ms.openlocfilehash: c47722fda28fc45289858f082a0838f583b53dbb
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34296778"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparer Power BI Report Server et le service Power BI
@@ -36,8 +36,8 @@ Power BI Report Server et le service Power BI partagent de nombreuses similitude
 | Distribuer un groupe de rapports à l’aide d’applications | Non | Oui | [Créer et publier des applications avec des tableaux de bord et des rapports](../service-create-distribute-apps.md) 
 | Packs de contenu | Non | Oui | [Introduction aux packs de contenu d’organisation](../service-organizational-content-pack-introduction.md) 
 | Se connecter à des services comme Salesforce | Non | Oui | [Se connecter aux services que vous utilisez](../service-connect-to-services.md) avec le service Power BI
-| Q&A | Non | Oui | [Questions et réponses dans Power BI Desktop et le service Power BI](../power-bi-q-and-a.md) 
-| Insights rapides | Non | Oui | [Générer automatiquement des informations sur les données avec Power BI](../service-insights.md) 
+| Questions et réponses | Non | Oui | [Questions et réponses dans Power BI Desktop et le service Power BI](../power-bi-q-and-a.md) 
+| Informations rapides | Non | Oui | [Générer automatiquement des informations sur les données avec Power BI](../service-insights.md) 
 | Analyser dans Excel | Non | Oui | [Analyser dans Excel](../service-analyze-in-excel.md) 
 | Rapports paginés | Oui | Non | Les rapports paginés ne sont pas disponibles dans le service Power BI, mais vous pouvez [épingler des éléments de rapport paginé à des tableaux de bord Power BI](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 | Applications mobiles Power BI | Oui | Oui | [Vue d’ensemble des applications mobiles Power BI](../mobile-apps-for-mobile-devices.md) 
@@ -50,7 +50,7 @@ Power BI Report Server et le service Power BI partagent de nombreuses similitude
 | Collaboration Office 365 avancée | Non | Oui | [Collaborer dans un espace de travail d’application](../service-collaborate-power-bi-workspace.md) avec Office 365 
 | Visuels R | Non | Oui | [Créer des visuels R](../service-r-visuals.md) dans le service Power BI  
 | Fonctionnalités en préversion | Non | Oui | [Accéder aux fonctionnalités en préversion du service Power BI](../service-preview-features.md) 
-| Éléments visuels personnalisés | Oui | Oui | [Éléments visuels personnalisés dans Power BI](../power-bi-custom-visuals.md) 
+| Visuels personnalisés | Oui | Oui | [Éléments visuels personnalisés dans Power BI](../power-bi-custom-visuals.md) 
 | Power BI Desktop | Version optimisée pour Report Server, disponible en téléchargement avec Report Server | Version optimisée pour le service Power BI, disponible sur le Windows Store | [Power BI Desktop pour Report Server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop pour le service Power BI](http://aka.ms/pbidesktopstore)
 
 ## <a name="next-steps"></a>Étapes suivantes
