@@ -12,10 +12,10 @@ ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 22eb44048d8a4f681d8d112ce3fdb5a841d0511e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
+ms.lasthandoff: 06/27/2018
 ms.locfileid: "34584228"
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards"></a>Utiliser les tableaux dans les rapports et les tableaux de bord Power BI

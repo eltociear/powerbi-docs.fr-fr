@@ -11,10 +11,10 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: c3f495f64a2edeb85606453c951a7f6eaf2742fe
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
+ms.lasthandoff: 06/27/2018
 ms.locfileid: "34299444"
 ---
 # <a name="google-analytics-connector-for-power-bi-desktop"></a>Connecteur Google Analytics pour Power BI Desktop
