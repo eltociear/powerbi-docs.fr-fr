@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: v-thepet
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 75ae82e43987cb42b858fe4350330fda3692cf97
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 338b72ef39c5b9c9fe454c1063f26602e8ce2299
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721498"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964788"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 Vous souhaitez que vos lecteurs de rapports soient en mesure de rechercher des mesures de ventes globales, mais également de mettre en surbrillance des performances pour les responsables de région individuels et les différentes périodes. Vous pouvez créer des rapports distincts ou des graphiques de comparaison ou vous pouvez utiliser des segments. Un segment constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport. 
@@ -183,7 +183,7 @@ Les autres options de mise en forme sont désactivées par défaut. Quand elles 
 - **Bordure** : ajoute une bordure d’un pixel autour du segment et définit sa couleur. (Cette bordure de segment est distincte et indépendante des paramètres de contour définis sous Général.) 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Essayez-le gratuitement !](https://powerbi.com/)
+[S’inscrire à un essai gratuit](https://powerbi.microsoft.com/get-started/)
 
 Avez-vous des idées pour améliorer Power BI ? [Soumettez une idée](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
 

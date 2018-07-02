@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 91836970bda7e72c99977f360e2c0531a20bef20
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: eaef6c8273fc8f4b0d4d43dc1df82fdf97c2edf8
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34584113"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964765"
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Nuages de points et graphiques en bulles dans Power BI
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Ces derniers peuvent être distribués uniformément ou non sur l’axe horizontal, en fonction des données.
@@ -116,9 +116,9 @@ Ou, si vous n’en avez pas dans vos données, créez un champ qui concatène le
 Pour créer un champ, [utilisez l’éditeur de requête Power BI Desktop pour ajouter une colonne d’index](desktop-add-custom-column.md) à votre jeu de données.  Ajoutez ensuite cette colonne à la zone **Détails** de la visualisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
- [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Essayez-le gratuitement !](https://powerbi.com/)  
+[S’inscrire à un essai gratuit](https://powerbi.microsoft.com/get-started/)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 
