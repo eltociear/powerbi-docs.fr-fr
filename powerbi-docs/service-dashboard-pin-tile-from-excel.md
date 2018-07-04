@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6cdcff66d48ede031a635e44e3a40af4e321c0c5
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 90f32e96a6e2c7777c5d1535314e2c85989e1932
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34584067"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599591"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Épingler une vignette à un tableau de bord Power BI à partir d’Excel
 Avant de pouvoir épingler une vignette à partir de votre classeur Excel, connectez ce classeur au service Power BI (app.powerbi.com). La connexion d’un classeur apporte essentiellement une version en lecture seule liée de ce classeur dans le service Power BI et vous permet d’épingler des plages à des tableaux de bord. Vous pouvez même épingler une feuille de calcul entière à un tableau de bord.  
@@ -60,7 +60,7 @@ Dans Power BI, vous pouvez ajouter une nouvelle [vignette de tableau de bord](se
    * Tableau de bord existant : sélectionnez le nom du tableau de bord dans la liste déroulante.
    * Nouveau tableau de bord : tapez le nom du nouveau tableau de bord.
    
-    ![boîte de dialogue Épingler au tableau de bord](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+     ![boîte de dialogue Épingler au tableau de bord](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Sélectionnez **Épingler**. Un message de réussite (dans l’angle supérieur droit) vous indique que la plage a été ajoutée sous forme de vignette à votre tableau de bord. 
    
     ![Boîte de dialogue Épinglé au tableau de bord](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
