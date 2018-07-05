@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a584d61e1f2f55c244b453e6c086f3222217ee9a
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 43119a700b3b660a2734d1a8f974291a2817ce8e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34289001"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37597995"
 ---
 # <a name="bidirectional-cross-filtering-using-directquery-in-power-bi-desktop"></a>Filtrage croisé bidirectionnel avec DirectQuery dans Power BI Desktop
 
@@ -33,13 +33,11 @@ Pour activer le filtrage croisé, dans la boîte de dialogue **Modifier la relat
 
 * La valeur de **Direction du filtrage croisé** doit être **Les deux**.
 * L’option **Appliquer le filtre de sécurité dans les deux directions** doit également être activée.
-  
+
   ![](media/desktop-bidirectional-filtering/bidirectional-filtering_2.png)
 
 > [!NOTE]
-> Lors de la création de formules DAX de filtrage croisé dans Power BI Desktop, utilisez le *nom d’utilisateur principal* (qui est souvent le même que le nom de connexion de l’utilisateur, par exemple *joe@contoso.com*), plutôt que le *nom d’utilisateur*. Par conséquent, vous devez peut-être créer une table liée qui mappe le *nom d’utilisateur* (ou l’ID d’employé, par exemple) sur le *nom d’utilisateur principal*.
-> 
-> 
+> Lors de la création de formules DAX de filtrage croisé dans Power BI Desktop, utilisez le *nom d’utilisateur principal* (qui est souvent le même que le nom de connexion de l’utilisateur, par exemple <em>joe@contoso.com</em>), plutôt que le *nom d’utilisateur*. Par conséquent, vous devez peut-être créer une table liée qui mappe le *nom d’utilisateur* (ou l’ID d’employé, par exemple) au *nom d’utilisateur principal*.
 
 Pour plus d’informations et pour obtenir des exemples de fonctionnement du filtrage croisé bidirectionnel, consultez le [livre blanc](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) mentionné plus haut dans cet article.
 

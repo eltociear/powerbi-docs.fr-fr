@@ -2,12 +2,12 @@
 title: Formation guidée sur Microsoft Power BI
 description: Commencez votre parcours de formation avec cette collection en séquence de cours, puis découvrez la diversité et la puissance des capacités de Microsoft Power BI.
 layout: LandingPage
-ms.openlocfilehash: f80886799a2cfc960e4d441d3572d94f3c09b22e
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 2cd748b60da6781ff9ea710b5802f3d68c3bc6b8
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34310150"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600673"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -68,7 +68,7 @@ Prise en main </h3>
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Obtenir les données </h3>
+Obtention de données </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="gettingdata.yml?tutorial-step=1">Vue d’ensemble de Power BI Desktop</a>
@@ -272,8 +272,8 @@ Exploration des données </h3>
                                 <span style="margin-left: 32px; align-self: center;">9 m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Créer des suggestions Q&R personnalisées</a>
-                                <span style="margin-left: 32px; align-self: center;">4 m</span>
+                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Créer des suggestions personnalisées dans Questions et réponses</a>
+                                <span style="margin-left: 32px; align-self: center;">4m</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="exploringdata.yml?tutorial-step=6">Partager des tableaux de bord avec les membres de votre organisation</a>
