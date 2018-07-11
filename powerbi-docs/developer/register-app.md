@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/31/2018
 ms.author: maghan
-ms.openlocfilehash: f4aac424d448dcb3e2dd722efe54db99d318ba80
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: aa51d516e903908fb2b0121f9bbed41d54f5e670
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599482"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38924998"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Inscrire une application Azure AD pour incorporer du contenu Power BI
 Découvrez comment inscrire une application dans Azure Active Directory (Azure AD) afin de l’utiliser avec l’incorporation de contenu Power BI.
@@ -23,7 +23,6 @@ Vous devez inscrire votre application auprès d’Azure AD afin de l’autorise
 
 > [!IMPORTANT]
 > Pour pouvoir inscrire une application Power BI, vous devez disposer d’un [locataire Azure Active Directory et d’un utilisateur d’organisation](create-an-azure-active-directory-tenant.md). Si vous n’êtes pas encore inscrit à Power BI avec un utilisateur de votre locataire, l’inscription de l’application échoue.
-> 
 > 
 
 Vous pouvez inscrire votre application de deux façons. Vous pouvez vous servir de l’[outil d’inscription d’application Power BI](https://dev.powerbi.com/apps/) ou y accéder directement à partir du portail Azure. L’outil d’inscription d’application Power BI est l’option la plus simple, car il n’y a que quelques champs à renseigner. Utilisez le portail Azure si vous souhaitez apporter des modifications à votre application.
@@ -45,7 +44,7 @@ Voici comment inscrire votre application avec l’outil d’inscription d’appl
    
     L’**URL de la page d’accueil** est disponible uniquement si vous choisissez le type d’application **Application web côté serveur**.
    
-    Pour les exemples *Incorporation pour vos clients* et *integrate-dashboard-web-app*, l’URL de redirection est `http://localhost:13526/redirect`. Pour l’exemple de rapport et de vignette, l’URL de redirection est `http://localhost:13526/`.
+    Pour les exemples *Incorporation pour vos clients* et *integrate-dashboard-web-app*, **l’URL de redirection** est `http://localhost:13526/Redirect`. Pour l’exemple de rapport et de vignette, **l’URL de redirection** est `http://localhost:13526/`.
 6. Choisissez les API pour l’application qui a accès. Pour plus d’informations sur les autorisations d’accès Power BI, consultez [Autorisations Power BI](power-bi-permissions.md).
    
     ![](media/register-app/app-registration-apis.png)
@@ -83,7 +82,7 @@ L’autre option pour l’inscription de votre application consiste à accéder 
 5. Suivez les invites pour créer une application.
    
    * Pour des applications web, spécifiez l’URL de connexion, qui est l’URL de base de votre application, où les utilisateurs peuvent se connecter. Par exemple, `http://localhost:13526`.
-   * Pour des applications natives, spécifiez un URI de redirection qu’Azure AD utilise pour retourner des réponses de jeton. Entrez une valeur spécifique de votre application. Par exemple : `http://myapplication/redirect`
+   * Pour des applications natives, spécifiez un **URI de redirection** qu’Azure AD utilise pour retourner des réponses de jeton. Entrez une valeur spécifique de votre application. Par exemple : `http://myapplication/Redirect`
 
 Pour plus d’informations sur la façon d’inscrire des applications dans Azure Active Directory, consultez [Intégration d’applications dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 

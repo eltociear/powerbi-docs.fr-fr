@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 44756e45a6f9944f9d52afa98709b1a3f7b5b6e1
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: fde23a47bb0f4034e213a652d60241ff625921d3
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137488"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877328"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
 Quand vous travaillez dans la fenêtre **Éditeur de requête** de Power BI Desktop, vous avez accès à un certain nombre de tâches courantes. Ce document décrit ces tâches courantes et fournit des liens pour plus d’informations. 
@@ -38,7 +38,7 @@ La première connexion de données est un classeur Excel. L’autre est une ress
 Les étapes nécessaires pour se connecter à ces deux sources de données marquent le début des tâches courantes relatives aux requêtes.
 
 ## <a name="connect-to-data"></a>Connectez-vous à vos données
-Pour vous connecter à des données dans Power BI Desktop, cliquez sur le bouton **Obtenir des données** sous l’onglet **Accueil** du ruban. Power BI Desktop présente un menu qui répertorie les sources de données les plus courantes. Pour obtenir la liste complète des sources de données auxquelles Power BI Desktop peut se connecter, sélectionnez le bouton **Autres...** en bas du menu. Pour plus d’informations, consultez [Sources de données dans Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-data-sources).
+Pour vous connecter à des données dans Power BI Desktop, cliquez sur le bouton **Obtenir des données** sous l’onglet **Accueil** du ruban. Power BI Desktop présente un menu qui répertorie les sources de données les plus courantes. Pour obtenir la liste complète des sources de données auxquelles Power BI Desktop peut se connecter, sélectionnez le bouton **Autres...** en bas du menu. Pour plus d’informations, consultez [Sources de données dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-data-sources).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
@@ -60,10 +60,10 @@ Sélectionnez **OK**, et comme auparavant, Power BI Desktop inspecte le classe
 
 Les autres connexions de données sont similaires. Si l’authentification est nécessaire pour établir une connexion de données, Power BI Desktop vous invite à entrer les informations d’identification appropriées.
 
-Pour obtenir une démonstration détaillée de la connexion à des données dans Power BI Desktop, consultez [Connect to Data in Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-connect-to-data) (Se connecter à des données dans Power BI Desktop).
+Pour obtenir une démonstration détaillée de la connexion à des données dans Power BI Desktop, consultez [Connect to Data in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-to-data) (Se connecter à des données dans Power BI Desktop).
 
 ## <a name="shape-and-combine-data"></a>Mettre en forme et combiner des données
-Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour une démonstration plus complète de la mise en forme et de la combinaison de données, consultez la section **[Mettre en forme et combiner des données dans Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data)**.
+Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour une démonstration plus complète de la mise en forme et de la combinaison de données, consultez la section **[Mettre en forme et combiner des données dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
 
 Dans la section précédente, nous avons connecté deux jeux de données : un classeur Excel et une ressource web. Une fois qu’ils sont chargés dans l’Éditeur de requête, on obtient le résultat suivant, la requête issue de la page web étant sélectionnée (parmi les requêtes disponibles listées dans le volet **Requêtes**, sur le côté gauche de la fenêtre Éditeur de requête).
 
