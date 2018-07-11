@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/19/2018
 ms.author: maggies
-ms.openlocfilehash: a7012bf96ee0f8ac7e73d1db21e9a36f0fea88cb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b09fd5846689299f426fc779061efaa30f8f6909
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34481046"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599155"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Chronologie de prise en charge pour Power BI Report Server
 Power BI Report Server sera publié quelques fois par an. Des mises à jour de sécurité et critiques seront disponibles jusqu’à ce que la publication suivante soit généralement disponible (GA). Après une nouvelle publication, la publication précédente continuera de recevoir des mises à jour de sécurité pendant le restant de sa durée de vie de 12 mois.
@@ -27,6 +27,7 @@ Cette stratégie de prise en charge vous permet d’offrir des innovations à vo
     ![Graphique illustrant la plage de temps de prise en charge](media/support-timeline/report-server-support-timeline-mar-2018.png)
 
 ## <a name="version-history"></a>Historique des versions
+
 | **Version** | **Disponibilité** | **Date de fin du support** |
 | --- | --- | --- |
 | Juin 2017 |12 juin 2017 |12 juin 2018 |

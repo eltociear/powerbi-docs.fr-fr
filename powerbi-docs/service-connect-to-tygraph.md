@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 11073e7df57d4717e27fa73c6a5e1e315a9a8dcc
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 4e9e10f713be50707909c68b104f82cada6777b6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241133"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599044"
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Se connecter à tyGraph avec Power BI
 Visualisez et explorez vos données tyGraph dans Power BI avec le pack de contenu Power BI. Commencez par vous connecter à votre compte tyGraph et à charger le tableau de bord, les rapports et le jeu de données. Le contenu prêt à l’emploi inclut des données, telles que le score MAE (Measure of Active Engagement) et les principaux contributeurs. Personnalisez-le davantage pour mettre en évidence les informations qui vous intéressent le plus.  Les données sont actualisées automatiquement selon une planification que vous définissez.
@@ -42,7 +42,7 @@ Connectez-vous à [tyGraph pour Power BI](https://app.powerbi.com/getdata/servic
    
     **Si vous n’avez pas le statut d’administrateur vérifié Yammer**
    
-    Le pack de contenu tyGraph nécessite un compte tyGraph créé par un utilisateur ayant le statut d’administrateur vérifié Yammer. Une fois le compte créé, des clés supplémentaires peuvent être émises à l’intention d’utilisateurs au sein de la même organisation. Si l’utilisateur ayant le statut d’administrateur vérifié n’a pas encore créé de compte tyGraph, contactez-le pour lui demander de le faire. Si le compte est créé, vous pouvez demander une clé en envoyant un message électronique à l’adresse <mailto:support@unlimitedviz.com>.
+    Le pack de contenu tyGraph nécessite un compte tyGraph créé par un utilisateur ayant le statut d’administrateur vérifié Yammer. Une fois le compte créé, des clés supplémentaires peuvent être émises à l’intention d’utilisateurs au sein de la même organisation. Si l’utilisateur ayant le statut d’administrateur vérifié n’a pas encore créé de compte tyGraph, contactez-le pour lui demander de le faire. Si le compte est créé, vous pouvez demander une clé en envoyant un message électronique à l’adresse <support@unlimitedviz.com>.
    
     ![](media/service-connect-to-tygraph/creds.png)
 6. Après une authentification réussie, le processus d’importation démarre automatiquement. Une fois terminé, de nouveaux tableau de bord, rapport et modèle apparaîtront dans le volet de navigation. Sélectionnez le tableau de bord pour afficher vos données importées.

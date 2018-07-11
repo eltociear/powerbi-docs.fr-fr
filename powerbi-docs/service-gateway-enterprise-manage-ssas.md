@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: aa4bc70fa67af4e3b82b8ed9a4eb16851d98eaeb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297144"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599178"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gérer votre source de données - Analysis Services
 Une fois que vous avez installé la passerelle de données locale, vous devez ajouter des sources de données qui peuvent être utilisées avec la passerelle. Cet article décrit comment utiliser les passerelles et les sources de données. Vous pouvez utiliser la source de données Analysis Services pour l’actualisation planifiée ou les connexions actives.
@@ -52,7 +52,7 @@ La suppression d’une passerelle entraîne celle de toutes les sources de donn�
 
 1. Sélectionnez l’icône Engrenage ![](media/service-gateway-enterprise-manage-ssas/pbi_gearicon.png) en haut à droite > **Gérer les passerelles**.
 2. Passerelle > **Supprimer**
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings7.png)
 
 ## <a name="add-a-data-source"></a>Ajouter une source de données
@@ -119,15 +119,13 @@ Pour accéder à l’écran de mappage de nom UPN, procédez comme suit.
 2. Développez la passerelle qui contient la source de données Analysis Services. Ou, si vous n’avez pas créé la source de données Analysis Services, vous pouvez aussi le faire à ce stade.
 3. Sélectionnez la source de données, puis sélectionnez l’onglet **Utilisateurs**.
 4. Sélectionnez **Mapper les noms d’utilisateur**.
-   
+
     ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_02.png)
 
 Vous verrez alors des options permettant d’ajouter des règles ainsi que d’effectuer un test pour un utilisateur donné.
 
 > [!NOTE]
-> Vous pouvez modifier par inadvertance un utilisateur alors que vous ne le vouliez pas. Par exemple, si votre valeur **Remplacer (Nom d’origine)** est *@contoso.com* et que votre valeur **Avec (Nouveau nom)** est *@contoso.local*, tous les utilisateurs disposant d’une connexion qui contient *@contoso.com* sont alors remplacés par *@contoso.local*. De plus, si votre valeur **Remplacer (Nom d’origine)** est *dave@contoso.com* et que votre valeur **Avec (Nouveau nom)** est *dave@contoso.local*, un utilisateur disposant d’une connexion v-dave@contoso.com serait envoyé en tant que v-dave*@contoso.local*.
-> 
-> 
+> Vous pouvez modifier par inadvertance un utilisateur alors que vous ne le vouliez pas. Par exemple, si votre valeur **Remplacer (Nom d’origine)** est <em>@contoso.com</em> et que votre valeur **Avec (Nouveau nom)** est <em>@contoso.local</em>, tous les utilisateurs disposant d’une connexion qui contient <em>@contoso.com</em> sont alors remplacés par <em>@contoso.local</em>. De plus, si votre valeur **Remplacer (Nom d’origine)** est <em>dave@contoso.com</em> et que votre valeur **Avec (Nouveau nom)** est <em>dave@contoso.local</em>, un utilisateur disposant d’une connexion v-dave@contoso.com serait envoyé en tant que v-dave<em>@contoso.local</em>.
 
 ### <a name="ad-lookup-mapping"></a>Mappage de recherche AD
 Pour effectuer la recherche de propriétés Active Directory en local afin de remapper les UPN AAD avec les utilisateurs Active Directory, suivez les étapes de cette section. Pour commencer, voyons comment cela fonctionne.
@@ -147,17 +145,17 @@ Sur la passerelle de données locale avec le mappage d’utilisateur personnalis
 2. Recherchez l’attribut de la personne AD (tel que le *courrier électronique*) en fonction d’une chaîne UPN entrante (« firstName.lastName@contoso.com ») à partir du **service Power BI**.
 3. Si la recherche AD échoue, elle tente d’utiliser l’UPN transmis en tant qu’utilisateur effectif à SSAS.
 4. Si la recherche AD réussit, elle récupère le nom d’utilisateur principal (*UserPrincipalName*) de cette personne AD. 
-5. Elle transmet le courrier *UserPrincipalName* en tant que *EffectiveUser* à SSAS comme suit : *Alias@corp.on-prem.contoso*
+5. Elle transmet le courrier *UserPrincipalName* en tant que *EffectiveUser* à SSAS comme suit : <em>Alias@corp.on-prem.contoso</em>
 
 Comment configurer votre passerelle pour qu’elle effectue la recherche AD :
 
 1. Téléchargez et installez la passerelle la plus récente.
 2. Dans la passerelle, vous devez modifier le **service de passerelle de données locale** pour qu’il s’exécute avec un compte de domaine (au lieu d’un compte de service local, sinon la recherche AD ne fonctionne pas correctement lors de l’exécution). Vous devez redémarrer le service de passerelle pour que les modifications entrent en vigueur.  Accédez à l’application de passerelle sur votre ordinateur (effectuez une recherche sur le terme « passerelle de données locale »). Pour ce faire, accédez à **Paramètres de service > Modifier le compte de service**. Vérifiez que vous disposez de la clé de récupération pour cette passerelle, car vous devrez la restaurer sur le même ordinateur, sauf si vous souhaitez créer une passerelle à la place. 
 3. Accédez au dossier d’installation de la passerelle *C:\Program Files\Passerelle de données locale* en tant qu’administrateur pour vérifier que vous disposez d’autorisations d’écriture, puis modifiez le fichier suivant :
-   
+
        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 4. Modifiez les deux valeurs de configuration suivantes en fonction *des* configurations d’attributs Active Directory de vos utilisateurs AD. Les valeurs de configuration illustrées ci-dessous sont des exemples uniquement : vous devez les spécifier en fonction de votre configuration Active Directory. 
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
 5. Redémarrez le service **Passerelle de données locale** pour que les modifications de configuration entrent en vigueur.
 

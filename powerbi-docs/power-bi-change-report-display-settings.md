@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c2b9a106c4007af868cf69902ce511da8e03e75f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e4ffc542a9564ba3893245ef637b3edd01c38640
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244558"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598752"
 ---
 # <a name="change-the-size-of-a-report-page"></a>Changer la taille d’une page de rapport
 Dans [l’article précédent et la vidéo qui l’accompagne](power-bi-report-display-settings.md), vous avez découvert deux paramètres permettant de contrôler l’affichage des pages dans les rapports Power BI : **Affichage** et **Taille de la page**. Les modes Affichage et Taille de la page sont disponibles dans le service Power BI et dans Power BI Desktop. Ils ont presque le même fonctionnement, mais dans ce didacticiel, nous utilisons le service Power BI.
@@ -31,19 +31,19 @@ Dans [l’article précédent et la vidéo qui l’accompagne](power-bi-report-d
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_page.png)
 2. Assurez-vous qu’aucune visualisation n’est sélectionnée sur le canevas. Sélectionnez **Affichage** et passez en revue les options d’affichage.
 
-    * En mode Lecture, vous verrez ceci.
+   * En mode Lecture, vous verrez ceci.
 
      ![](media/power-bi-change-report-display-settings/power-bi-page-view-menu-new.png)
-    * En mode Edition, vous verrez ceci.
+   * En mode Edition, vous verrez ceci.
 
-    ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
+     ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
 
-1. Voyons comment la page s’affiche avec le paramètre **Taille réelle**.
+3. Voyons comment la page s’affiche avec le paramètre **Taille réelle**.
 
    ![](media/power-bi-change-report-display-settings/power-bi-actal-size2.png)
 
    Pas très bien. Le tableau de bord a maintenant deux barres de défilement.
-2. Changez le paramètre en **Ajuster à la largeur**.
+4. Changez le paramètre en **Ajuster à la largeur**.
 
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_width.png)
 

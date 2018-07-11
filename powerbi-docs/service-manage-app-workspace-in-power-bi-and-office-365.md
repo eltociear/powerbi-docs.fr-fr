@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 859ab3fdfd06040d8bbf131ab91ea6c9f84deb40
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d298c750d23e22ef0a6b2791916add13bb260ad0
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241944"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965202"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Gérer l’espace de travail de votre application dans Power BI et Office 365
 En tant que créateur ou administrateur d’un [espace de travail d’application dans Power BI](service-install-use-apps.md) ou dans Office 365, vous gérez certains aspects de l’espace de travail dans Power BI. Vous en gérez d’autres dans Office 365. 
@@ -33,7 +33,7 @@ En tant que créateur ou administrateur d’un [espace de travail d’applicatio
 * afficher l’adresse de messagerie du groupe ;
 * supprimer le groupe.
 
-Pour être administrateur ou membre d’un espace de travail d’application, vous devez posséder une licence [Power BI Pro](service-free-vs-pro.md). Les utilisateurs de votre application doivent également posséder une licence Power BI Pro, sauf si votre espace de travail d’application se trouve dans une capacité Power BI Premium. Les utilisateurs professionnels peuvent ensuite accéder à votre application avec une licence Power BI gratuite. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
+Pour être administrateur ou membre d’un espace de travail d’application, vous devez posséder une licence [Power BI Pro](service-free-vs-pro.md). Les utilisateurs de votre application doivent également posséder une licence Power BI Pro, sauf si votre espace de travail d’application se trouve dans une capacité Power BI Premium. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Modifier l’espace de travail de votre application dans Power BI
 1. Dans le service Power BI, sélectionnez la flèche située en regard de **Espaces de travail**, puis les points de suspension (**…**) en regard du nom de votre espace de travail, puis **Modifier l’espace de travail**. 

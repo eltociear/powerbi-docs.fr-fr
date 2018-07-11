@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 38985014407a4d64998e25f6944f57aedcc67309
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 32bf2d3cedbeeb2430620855a2ac95bf349af9a2
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34445000"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092043"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutoriel : Explorer le portail web Power BI Report Server dans une machine virtuelle
 Dans ce tutoriel, vous créez une machine virtuelle Azure avec Power BI Report Server déjà installé, pour pouvoir afficher, modifier et gérer des exemples de rapports Power BI Report Server et paginés ainsi que des indicateurs de performance clés.
@@ -100,7 +100,7 @@ Lorsque votre machine virtuelle s’ouvre, voici les éléments qui apparaissent
 |![Numéro 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Démarre Power BI Desktop optimisé pour Power BI Report Server (mars 2018)  |
 |![Numéro 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Ouvre le portail web Power BI Report Server dans le navigateur   |
 
-Double-cliquez sur l’icône **Portail web Report Server**. Le navigateur ouvre http://localhost/reports/browse. Le portail web affiche divers fichiers regroupés par type. 
+Double-cliquez sur l’icône **Portail web Report Server**. Le navigateur ouvre `http://localhost/reports/browse`. Le portail web affiche divers fichiers regroupés par type. 
 
 ![Portail web de Power BI Report Server web](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4c8601e15a415e680028b2259a4c2b8e56dbd3b4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: dce044a3f143ba85732c8345639ea57f44f05d5f
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297236"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926588"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -41,14 +41,13 @@ Cet article répond aux questions fréquemment posées concernant l’administra
 * [Comment supprimer Power BI pour les utilisateurs déjà inscrits ?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Comment connaître la date à laquelle les nouveaux utilisateurs ont rejoint mon locataire ?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Quels sont les éventuels autres aspects auxquels je dois être préparé ?](#are-there-any-additional-things-i-should-be-prepared-for)
-* [Est-ce gratuit ? Ces licences me seront-elles facturées ?](#is-this-free-will-i-be-charged-for-these-licenses)
 * [Où est situé mon locataire Power BI ?](#where-is-my-power-bi-tenant-located)
 * [Présentation du contrat SAL Power BI](#what-is-the-power-bi-sla)
 
 **Sécurité dans Power BI**
 
 * [Power BI répond-il aux exigences de conformité nationales, régionales et sectorielles ?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
-* [Comment fonctionne la sécurité dans Power BI ?](#how-does-security-work-in-power-bi?)
+* [Comment fonctionne la sécurité dans Power BI ?](#how-does-security-work-in-power-bi)
 
 ## <a name="sign-up-for-power-bi"></a>S’inscrire à Power BI
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Comment les utilisateurs peuvent-ils s’inscrire à Power BI ?
@@ -232,9 +231,6 @@ Vous pouvez avoir à gérer une augmentation des demandes de réinitialisation d
 
 Vous pouvez supprimer un utilisateur de votre client en suivant le processus standard dans le Centre d’administration Office 365. Cependant, si l’utilisateur a toujours une adresse de messagerie active au sein de votre organisation, il pourra s’associer au client, sauf si vous empêchez tous les utilisateurs de le faire.
 
-### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Est-ce gratuit ? Ces licences me seront-elles facturées ?
-Les licences **Power BI (gratuit)** correspondent à la version gratuite de Power BI. Si vous êtes intéressé par des fonctionnalités supplémentaires, consultez [Contenu Power BI Pro - De quoi s’agit-il ?](service-premium.md).
-
 ### <a name="where-is-my-power-bi-tenant-located"></a>Où est situé mon client Power BI ?
 Pour savoir comment trouver l’emplacement de votre client Power BI, également appelé région de données, consultez [Où est situé mon client Power BI ?](service-admin-where-is-my-tenant-located.md)
 
@@ -252,7 +248,6 @@ Power BI repose sur les bases d’Office 365, qui lui-même repose sur des serv
 [Portail d’administration Power BI](service-admin-portal.md)  
 [Présentation du rôle d’administrateur Power BI](service-admin-role.md)  
 [Inscription en libre-service à Power BI](service-self-service-signup-for-power-bi.md)  
-[Power BI (gratuit) dans votre organisation](service-admin-service-free-in-your-organization.md)  
 [Achat de Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Qu’est-ce que Power BI Premium ?](service-premium.md)  
 [Acheter Power BI Premium](service-admin-premium-purchase.md)  

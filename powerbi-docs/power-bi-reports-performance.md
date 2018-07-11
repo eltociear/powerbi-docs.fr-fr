@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 78dcd0ac0735bfbb3c22678d6bda1397120360cd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 58ae70553264b8055603da66a4cfd71b5c74a3e9
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310541"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598871"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI 
 Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI.  
@@ -115,7 +115,7 @@ La procédure est la suivante :
    [msmdsrv.exe] 
 
    Recherchez le port utilisé par msmdsrv.exe et notez-le pour la suite. Dans cet exemple, vous utilisez le port 55786. 
-3.  **Connecter SQL Server Profiler à Power BI Desktop** 
+3. **Connecter SQL Server Profiler à Power BI Desktop** 
 
    - Démarrez SQL Server Profiler à partir du menu **Démarrer** 
    - **Fichier** > **Nouvelle trace** 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ec5b46dcfebf614e70a0b8ebf858af7b34906eae
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 8813294f359c6bd6e1bb01fa3cc2ec3f5eb3d280
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290703"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598254"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Utilisation des liens OneDrive Entreprise dans Power BI Desktop
 Beaucoup de gens ont des classeurs Excel stockés sur leur lecteur OneDrive Entreprise qui seraient parfaitement adaptés à une utilisation avec Power BI Desktop. Avec **Power BI Desktop**, vous pouvez utiliser les liaisons en ligne pour les fichiers **Excel** stockés dans **OneDrive Entreprise** pour créer des rapports et des éléments visuels. Vous pouvez utiliser un compte **OneDrive Entreprise** de groupe, ou votre compte **OneDrive Entreprise** individuel.
@@ -26,7 +26,7 @@ Obtention d’un lien en ligne depuis **OneDrive Entreprise** requiert des étap
 1. Accédez à votre emplacement OneDrive Entreprise avec un navigateur. Faites un clic droit sur le fichier que vous souhaitez utiliser, puis sélectionnez **Ouvrir dans Excel**
    
    > [!NOTE]
-> L’interface de votre navigateur peut différer de celle de l’image. Il existe plusieurs manières de sélectionner **Ouvrir dans Excel** pour les fichiers de l’interface de votre navigateur **OneDrive Entreprise**. Vous pouvez utiliser n’importe quelle option qui vous permet d’ouvrir le fichier dans Excel.
+   > L’interface de votre navigateur peut différer de celle de l’image. Il existe plusieurs manières de sélectionner **Ouvrir dans Excel** pour les fichiers de l’interface de votre navigateur **OneDrive Entreprise**. Vous pouvez utiliser n’importe quelle option qui vous permet d’ouvrir le fichier dans Excel.
    > 
    > 
    

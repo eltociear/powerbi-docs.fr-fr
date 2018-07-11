@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9c67aa0982733847cdca7d6079fa8887e6c1d1d2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 7da86135a391f8a6206a913a1e13df423ad96fbd
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34247044"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944971"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Conseils pour la conception d’un tableau de bord Power BI
 Maintenant que vous avez créé un tableau de bord et ajouté des vignettes, pensez comment vous pourriez rendre votre tableau de bord aussi élégant que fonctionnel. En général, cela consiste à mettre en évidence les informations les plus importantes et à faire en sorte que votre tableau de bord soit clair et non encombré.
@@ -59,7 +59,7 @@ La plupart des gens lisent de haut en bas. Placez donc les informations de haut 
 ## <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Utiliser la visualisation qui convient à vos données et la mettre en forme pour en faciliter la lecture
 Évitez d’utiliser trop de types de visualisations différents.  Les visualisations doivent représenter une image et être faciles à lire et à interpréter.  Pour certaines données et visualisations, une simple visualisation graphique est suffisante. Toutefois, certaines données peuvent nécessiter une visualisation plus complexe : utilisez des titres, des étiquettes et d’autres personnalisations pour aider le lecteur.  
 
-* [Choisissez des visualisations qui conviennent à vos données](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Soyez prudent quand vous utilisez des graphiques qui déforment la réalité, tels que les graphiques 3D. N’oubliez pas qu’il est difficile pour le cerveau humain d’interpréter les formes circulaires. Les graphiques à secteurs, les graphiques en anneau, les jauges et autres types de graphiques circulaires, aussi élégants qu’ils puissent être, ne sont pas recommandés pour les visualisations de données.
+* [Choisissez des visualisations qui conviennent à vos données](https://www.youtube.com/watch?v=-tdkUYrzrio). Soyez prudent quand vous utilisez des graphiques qui déforment la réalité, tels que les graphiques 3D. N’oubliez pas qu’il est difficile pour le cerveau humain d’interpréter les formes circulaires. Les graphiques à secteurs, les graphiques en anneau, les jauges et autres types de graphiques circulaires, aussi élégants qu’ils puissent être, ne sont pas recommandés pour les visualisations de données.
 * Soyez cohérent avec les échelles des axes, l’ordre des dimensions et les couleurs utilisées pour les valeurs des dimensions dans les graphiques.
 * Encodez soigneusement les données quantitatives. Ne dépassez pas trois ou quatre chiffres pour les nombres. Affichez les mesures avec un ou deux chiffres à gauche de la décimale et procédez à une mise à l’échelle pour les milliers et les millions (c’est-à-dire 3,4 millions et non 3 400 000).
 * Ne mélangez pas les niveaux de précision et les unités de temps. Assurez-vous que les périodes sont bien comprises.  Ne mettez pas côte à côte un graphique concernant le mois dernier et des graphiques filtrés concernant un certain mois de l’année.

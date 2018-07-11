@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f283a8ed273dcb609e9d5160adbeb714e8935ab9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 57e1e8ce015db9b5f88f7b685c80092023540a6f
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251930"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599132"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Se connecter à Zuora avec Power BI
 Zuora pour Power BI vous permet de visualiser des données importantes sur votre chiffre d’affaires, votre facturation et vos abonnements. Utilisez le tableau de bord et les rapports par défaut pour analyser les tendances d’utilisation, suivre la facturation et les paiements, et surveiller les revenus réguliers, ou personnalisez-les pour répondre à vos besoins uniques.
@@ -32,7 +32,7 @@ Connectez-vous à [Zuora](https://app.powerbi.com/getdata/services/Zuora) pour P
 3. Sélectionnez **Zuora** \>  **Obtenir**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Spécifiez l’URL de Zuora. Il s’agit généralement de https://www.zuora.com. Consultez les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
+4. Spécifiez l’URL de Zuora. Il s’agit généralement de <https://www.zuora.com>. Consultez les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Pour **Méthode d’authentification**, sélectionnez **Basic** et indiquez vos nom d’utilisateur et mot de passe (en respectant la casse), puis sélectionnez **Se connecter**.

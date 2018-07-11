@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/06/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3550a3fc0cfc51b61e1d7e51a50c2a36325f2388
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 2547be7f7bdadb7f991db54230d4fd791941838d
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250607"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600064"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Fusionner ou ajouter des sources de données locales et cloud
 
@@ -38,17 +38,17 @@ La passerelle de données locale permet de fusionner ou d’ajouter des sources 
 
 4. Sous ce cluster de passerelle, ajoutez les [sources de données locales](service-gateway-enterprise-manage-scheduled-refresh.md#add-a-data-source) utilisées dans vos requêtes. Vous n’avez pas besoin d’ajouter des sources de données cloud ici.
 
-4. Chargez sur le service Power BI votre fichier Power BI Desktop avec des requêtes qui combinent des sources de données locales et cloud.
+5. Chargez sur le service Power BI votre fichier Power BI Desktop avec des requêtes qui combinent des sources de données locales et cloud.
 
-5. Dans la page **Paramètres du jeu de données** du nouveau jeu de données :
+6. Dans la page **Paramètres du jeu de données** du nouveau jeu de données :
 
-    - Pour la source locale, sélectionnez la passerelle associée à cette source de données.
+   - Pour la source locale, sélectionnez la passerelle associée à cette source de données.
 
-    - Sous **Informations d’identification de la source de données**, modifiez les informations d’identification des sources de données cloud selon vos besoins.
+   - Sous **Informations d’identification de la source de données**, modifiez les informations d’identification des sources de données cloud selon vos besoins.
 
-    ![Paramètres du jeu de données](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
+     ![Paramètres du jeu de données](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-6. Avec le jeu d’informations d’identification cloud, vous pouvez maintenant actualiser le jeu de données à l’aide de l’option **Actualiser maintenant** ou le planifier pour l’actualiser régulièrement.
+7. Avec le jeu d’informations d’identification cloud, vous pouvez maintenant actualiser le jeu de données à l’aide de l’option **Actualiser maintenant** ou le planifier pour l’actualiser régulièrement.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

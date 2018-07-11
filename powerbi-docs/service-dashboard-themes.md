@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 331dc45f3049fe77145b86ffafd363162c74a589
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: d17694d6dd2e2133b80d326a8aa86194d5710946
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813799"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944649"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Utiliser des thèmes de tableau de bord dans le service Power BI
 Les **thèmes de tableau de bord** vous permettent d’appliquer un thème de couleur à l’intégralité d’un tableau de bord. Il peut s’agir des couleurs de votre organisation, de teintes liées à la saison ou de tout autre thème de votre choix. Quand vous appliquez un **thème de tableau de bord**, tous les visuels du tableau de bord utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
@@ -89,7 +89,6 @@ Comme les options prédéfinies et personnalisées, quand le thème est chargé,
 
     ![Utiliser le thème de destination](media/service-dashboard-themes/power-bi-use-destination.png)
 
-* Les thèmes de tableau de bord ne sont actuellement pas pris en charge lors de l’affichage du tableau de bord incorporé avec l’API REST, sur les appareils mobiles ou par des utilisateurs externes.    
 * Vous ne pouvez pas appliquer des thèmes de tableau de bord à des pages de rapport dynamique épinglées, à des vignettes iframe, à des vignettes SSRS, à des vignettes de classeur ou à des images.
 * Les thèmes de tableau de bord peuvent être visualisés sur des appareils mobiles, mais vous pouvez les créer seulement dans le service Power BI. 
 * Les thèmes personnalisés de tableau de bord fonctionnent seulement avec les vignettes épinglées à partir des rapports. 

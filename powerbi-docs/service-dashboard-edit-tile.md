@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 07db52bd2ffd881417f7ff59647c6779f7dc6bce
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248339"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598975"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Modifier ou supprimer une vignette de tableau de bord
 
@@ -35,12 +35,12 @@ Cet article aborde les points suivants.
 * [Épingler la vignette à un autre tableau de bord](#different)
 * [Supprimer une vignette](#delete)
   
- > [!TIP]
- > Pour modifier la visualisation figurant sur la vignette elle-même, supprimez la vignette, puis ajoutez une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md).
- > 
+  > [!TIP]
+  > Pour modifier la visualisation figurant sur la vignette elle-même, supprimez la vignette, puis ajoutez une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md).
 
- ### <a name="prerequisites"></a>Conditions préalables
- 1. Pour effectuer la procédure, ouvrez le service Power BI (pas Power BI Desktop) et [téléchargez l’exemple Analyse des dépenses informatiques](sample-it-spend.md). Lorsque le message de réussite s’affiche, sélectionnez **Accéder au tableau de bord**.
+  
+## <a name="prerequisites"></a>Conditions préalables
+Pour effectuer la procédure, ouvrez le service Power BI (pas Power BI Desktop) et [téléchargez l’exemple Analyse des dépenses informatiques](sample-it-spend.md). Lorsque le message de réussite s’affiche, sélectionnez **Accéder au tableau de bord**.
 
 - - -
 <a name="create"></a>

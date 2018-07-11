@@ -1,27 +1,27 @@
 ---
 title: Expériences de modèle de pack de contenu dans Power BI
 description: Expériences de modèle de pack de contenu
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
-ms.author: maghan
-ms.openlocfilehash: 1a29767eb76122865e93927bbbec1fbdcebe5678
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.author: maggies
+ms.openlocfilehash: 08ef57499c53c084b3b738e8f847d4b7742aae70
+ms.sourcegitcommit: 6407e053c2c6c6fdb212b059693e90fefbaaadec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290772"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36290574"
 ---
 # <a name="template-content-pack-experiences-in-power-bi"></a>Expériences de modèle de pack de contenu dans Power BI
 Cette section présente une expérience classique pour un utilisateur qui se connecte à un [pack de contenu](../service-connect-to-services.md) ISV. 
 
 Essayez de vous connecter vous-même en vous connectant à un pack de contenu publié sur https://app.powerbi.com/getdata/services (comme le [pack de contenu GitHub](https://app.powerbi.com/getdata/services/github) décrit ci-dessous).
 
-## <a name="connect"></a>Connexion
+## <a name="connect"></a>Se connecter
 Pour commencer, un utilisateur parcourt à la galerie du pack de contenu et sélectionne un pack de contenu auquel se connecter. L’entrée du pack de contenu fournit un nom, une icône et un texte descriptif fournissant plus d’informations à l’utilisateur.
 
 ![connexion](media/template-content-pack-experience/github_data.png)

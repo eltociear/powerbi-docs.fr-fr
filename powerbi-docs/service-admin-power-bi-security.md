@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: d3b3e077ac3dadf92a1c25d3704a4f59adea588b
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ec8f1e40cac1c98bcfb5049d1fe8dd7397b616d6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34296224"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598848"
 ---
 # <a name="power-bi-security"></a>Sécurité dans Power BI
 Pour obtenir une explication détaillée de la sécurité de Power BI, [téléchargez le livre blanc sur la sécurité dans Power BI](http://go.microsoft.com/fwlink/?LinkId=829185) :
@@ -48,7 +48,7 @@ La ligne en pointillés dans l’image de cluster **principal** , ci-dessus, cla
 ## <a name="user-authentication"></a>Authentification utilisateur
 Power BI utilise Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) pour authentifier les utilisateurs qui se connectent au service Power BI et, à son tour, utilise les informations d’identification de connexion Power BI chaque fois qu’un utilisateur essaie d’accéder à des ressources qui nécessitent une authentification. Les utilisateurs se connectent au service Power BI à l’aide de l’adresse de messagerie utilisée pour créer leur compte Power BI. Power BI utilise cette adresse de messagerie de connexion comme *nom d’utilisateur effectif*, qui est transmis aux ressources chaque fois qu’un utilisateur essaie de se connecter aux données. Le *nom d’utilisateur effectif* est ensuite mappé à un *nom d’utilisateur principal* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) et mis en correspondance avec le compte de domaine Windows associé, auquel l’authentification est appliquée.
 
-Pour les organisations qui utilisaient des adresses de messagerie professionnelles pour la connexion à Power BI (telles que *david@contoso.com*), le mappage entre le *nom d’utilisateur effectif* et le nom UPN est simple. Pour les organisations qui n’utilisaient pas d’adresses de messagerie professionnelles pour la connexion à Power BI (telles que *david@contoso.onmicrosoft.com*), le mappage entre les informations d’identification AAD et locales nécessite une [synchronisation d’annuaire](https://technet.microsoft.com/library/jj573653.aspx) pour fonctionner correctement.
+Pour les organisations qui utilisaient des adresses de messagerie professionnelles pour la connexion à Power BI (telles que <em>david@contoso.com</em>), le mappage entre le *nom d’utilisateur effectif* et le nom UPN est simple. Pour les organisations qui n’utilisaient pas d’adresses de messagerie professionnelles pour la connexion à Power BI (telles que <em>david@contoso.onmicrosoft.com</em>), le mappage entre les informations d’identification AAD et locales nécessite une [synchronisation d’annuaire](https://technet.microsoft.com/library/jj573653.aspx) pour fonctionner correctement.
 
 La sécurité de plateforme pour Power BI inclut également la sécurité d’environnement d’architecture mutualisée, la sécurité réseau et la possibilité d’ajouter des mesures de sécurité supplémentaires basées sur AAD.
 

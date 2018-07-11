@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8b1e94ca0923c3e2ba509df266cec0f05596ab1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b95ff0d9102377b6aeb59488a565f7bcb9a65566
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852184"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598598"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Créer et publier un pack de contenu d’organisation Power BI (tutoriel)
 > [!NOTE]
@@ -43,24 +43,24 @@ Comment procéder ? Dans le [service Power BI](https://powerbi.com), accédez 
    
    N’oubliez pas que la bibliothèque de packs de contenu de votre organisation peut contenir plusieurs centaines de packs de contenu publiés pour l’organisation ou des groupes. Prenez le temps de donner un nom explicite à votre pack de contenu, d’ajouter une description utile et de sélectionner le public adéquat.  Utilisez des mots qui faciliteront la recherche de votre pack de contenu.
    
-   1.  Sélectionnez **Groupes spécifiques**, puis entrez les adresses e-mail complètes de chaque membre, des [groupes Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), des groupes de distribution ou des groupes de sécurité. Par exemple :
+   1. Sélectionnez **Groupes spécifiques**, puis entrez les adresses e-mail complètes de chaque membre, des [groupes Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), des groupes de distribution ou des groupes de sécurité. Par exemple :
       
-         salesmgrs@contoso.com; sales@contoso.com
+        salesmgrs@contoso.com; sales@contoso.com
       
       Pour ce didacticiel, essayez d’utiliser votre propre adresse e-mail ou celle de votre groupe.
    
-   2.  Nommez le pack de contenu **Opportunités de ventes**.
+   2. Nommez le pack de contenu **Opportunités de ventes**.
    
       > [!TIP]
       > Envisagez d’inclure le nom du tableau de bord dans le nom du pack de contenu. De cette manière, vos collègues trouveront le tableau de bord plus facilement une fois connectés à votre pack de contenu.
       > 
       > 
    
-   3.  Il est recommandé d’ajouter une **description**. Ainsi, vos collègues pourront trouver plus facilement les packs de contenu dont ils ont besoin. Outre la description, ajoutez des mots clés que vos collègues pourront utiliser pour trouver le pack de contenu. Ajoutez vos informations de contact au cas où vos collègues auraient des questions ou besoin d’aide.
+   3. Il est recommandé d’ajouter une **description**. Ainsi, vos collègues pourront trouver plus facilement les packs de contenu dont ils ont besoin. Outre la description, ajoutez des mots clés que vos collègues pourront utiliser pour trouver le pack de contenu. Ajoutez vos informations de contact au cas où vos collègues auraient des questions ou besoin d’aide.
    
-   4.  **Téléchargez une image ou un logo** pour permettre aux membres du groupe de trouver plus facilement le pack de contenu. Il est plus facile de repérer une image que du texte. Nous avons utilisé une image de la vignette d’histogramme empilé 100 % « Opportunity Count » (Nombre d’opportunités) dans la capture d’écran ci-dessous.
+   4. **Téléchargez une image ou un logo** pour permettre aux membres du groupe de trouver plus facilement le pack de contenu. Il est plus facile de repérer une image que du texte. Nous avons utilisé une image de la vignette d’histogramme empilé 100 % « Opportunity Count » (Nombre d’opportunités) dans la capture d’écran ci-dessous.
    
-   5.  Sélectionnez le tableau de bord **Exemple Analyse des opportunités** pour l’ajouter au pack de contenu.  Power BI ajoute automatiquement le rapport et le jeu de données associés. Vous pouvez en ajouter d’autres, si vous le souhaitez.
+   5. Sélectionnez le tableau de bord **Exemple Analyse des opportunités** pour l’ajouter au pack de contenu.  Power BI ajoute automatiquement le rapport et le jeu de données associés. Vous pouvez en ajouter d’autres, si vous le souhaitez.
    
       > [!NOTE]
       >  Seuls les tableaux de bord, rapports, jeux de données et classeurs que vous pouvez modifier sont répertoriés. Par conséquent, ceux qui sont partagés avec vous ne sont pas dans la liste.
@@ -71,7 +71,7 @@ Comment procéder ? Dans le [service Power BI](https://powerbi.com), accédez 
    
    6. Si vous avez des classeurs Excel, ils s’affichent sous Rapports, avec une icône Excel. Vous pouvez les ajouter également au pack de contenu.
    
-     ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
+      ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
    
       > [!NOTE]
       > Si des membres du groupe ne peuvent pas afficher le classeur Excel, vous devrez peut-être [partager le classeur avec eux dans OneDrive Entreprise](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).

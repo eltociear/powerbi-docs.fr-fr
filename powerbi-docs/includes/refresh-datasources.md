@@ -1,4 +1,5 @@
 ### <a name="on-premises-data-gateway"></a>Passerelle de données locale
+
 | **Source de données** |
 | --- |
 | Analysis Services (tabulaire) |

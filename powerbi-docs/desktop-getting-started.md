@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 606ef1f1c69643852a94a7d83ece93cca8940e7a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 175852a05c4964e6a476abf50684d9ffc12c4468
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34309920"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599866"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Prise en main de Power BI Desktop
 Bienvenue dans le **Guide de prise en main de Power BI Desktop**. Cette courte présentation de Power BI Desktop vous permettra de vous familiariser avec son fonctionnement. Elle vous montrera ce que l’application peut faire et vous permettra d’être plus vite apte à créer des modèles de données fiables, ainsi que des rapports de haute qualité, qui amplifieront vos efforts décisionnels. 
@@ -313,7 +313,7 @@ Le service **Power BI** affiche la première page du rapport. Au bas de la page
 
 Vous pouvez apporter des modifications à un rapport dans le service **Power BI** en sélectionnant **Modifier le rapport** dans la partie supérieure du canevas.
 
-Pour enregistrer votre rapport, sélectionnez **Fichier \>Enregistrer sous**à partir du service. Vous pouvez créer toutes sortes d’éléments visuels intéressants dans le service **Power BI** à partir de votre rapport et vous pouvez les épingler dans un *tableau de bord*. Pour en savoir plus sur les tableaux de bord dans le service **Power BI****[, consultez les conseils de conception d’un tableau de bord de qualité](service-dashboards-design-tips.md)**.
+Pour enregistrer votre rapport, sélectionnez **Fichier \>Enregistrer sous**à partir du service. Vous pouvez créer toutes sortes d’éléments visuels intéressants dans le service **Power BI** à partir de votre rapport et vous pouvez les épingler dans un *tableau de bord*. Pour en savoir plus sur les tableaux de bord dans le service **Power BI**<strong>[, consultez les conseils de conception d’un tableau de bord de qualité](service-dashboards-design-tips.md)</strong>.
 
  ![](media/desktop-getting-started/gsg_share5.png)
 

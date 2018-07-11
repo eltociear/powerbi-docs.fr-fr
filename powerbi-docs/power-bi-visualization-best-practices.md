@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8716e6b5b75c7cd3db1b8daecfaae240f0647a50
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e9b37ba2b44a23fa0f198bce7a649c67335ac0ed
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297259"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945132"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Meilleures pratiques en matière de conception de visuels et de rapports
 <!-- Shared newnav Include -->
@@ -787,8 +787,6 @@ Les graphiques en courbes, à barres et les histogrammes sont l’option idéale
 Il explique le seul cas de figure où les graphiques en secteurs peuvent être utiles : lors de la comparaison de relations entre les parties et un tout. Mais ce type de graphique est rarement plus adapté par exemple qu’un graphique à barres empilées 100 %.
 
 Un autre article (animation) intéressant(e) sur les graphiques en secteurs est disponible sur le [site de Darkhorse Analytics](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
-
-Nous vous conseillons également de lire un point de vue opposé dans l’article [Why Tufte is flat-out wrong about pie charts](http://speakingppt.com/2013/03/18/why-tufte-is-flat-out-wrong-about-pie-charts/).
 
 #### <a name="radial-gauges--kpis"></a>Jauges radiales et indicateurs de performance clés
 ![](media/power-bi-visualization-best-practices/power-bi-gauge.png)

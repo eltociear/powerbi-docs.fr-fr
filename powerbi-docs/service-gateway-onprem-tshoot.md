@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e689e031395130bab8ad80d5d06936a9dabaf852
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a99200707c8fc7de4fea2e32fe83238011bbf46c
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755067"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926586"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
 Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de la **passerelle de données locale**.
@@ -31,10 +31,10 @@ Cet article décrit certains problèmes courants que vous pouvez rencontrer lors
 La passerelle s’exécute comme un service Windows. Vous pouvez donc la démarrer et l’arrêter de plusieurs façons. Par exemple, vous pouvez ouvrir une invite de commandes avec des autorisations élevées sur l’ordinateur sur lequel la passerelle est exécutée, puis exécuter l’une des commandes suivantes :
 
 * Pour arrêter le service, exécutez la commande suivante :
-  
+
     '''   net stop PBIEgwService   '''
 * Pour démarrer le service, exécutez la commande suivante :
-  
+
     '''   net start PBIEgwService   '''
 
 ### <a name="error-failed-to-create-gateway-please-try-again"></a>Erreur : Échec de la création de la passerelle. Réessayez.
@@ -70,7 +70,7 @@ Pour corriger cela, procédez comme suit :
 
 1. Désinstallez la passerelle.
 2. Supprimez le dossier suivant.
-   
+
         c:\Program Files\On-premises data gateway
 3. Réinstallez la passerelle.
 4. Vous pouvez éventuellement appliquer la clé de récupération pour restaurer une passerelle existante.
@@ -129,11 +129,11 @@ Pour confirmer cela, procédez comme suit.
 
 1. Connectez-vous à l’ordinateur Analysis Services dans SQL Server Management Studio. Dans les propriétés de connexion avancées, incluez EffectiveUserName pour l’utilisateur en question et voyez si cela reproduit l’erreur.
 2. Vous pouvez utiliser l’outil dsacls d’Active Directory pour vérifier si l’attribut est répertorié. Cet outil se trouve normalement sur un contrôleur de domaine. Vous devez connaître le nom de domaine unique du compte et le transmettre à l’outil.
-   
+
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
-   
+
     Les résultats doivent avoir l’aspect suivant.
-   
+
             Allow BUILTIN\Windows Authorization Access Group
                                           SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
                                           READ PROPERTY
@@ -184,15 +184,15 @@ Pour confirmer cela, procédez comme suit.
 
 1. Recherchez le nom d’utilisateur en vigueur dans les [journaux de la passerelle](#logs).
 2. Une fois la valeur transmise, validez qu’elle est correcte. S’il s’agit de votre utilisateur, vous pouvez utiliser la commande suivante à partir d’une invite de commandes pour voir quel doit être le nom d’utilisateur principal. Ce dernier ressemble à une adresse de messagerie.
-   
+
         whoami /upn
 
 Si vous le souhaitez, vous pouvez voir ce que Power BI obtient d’Azure Active Directory.
 
-1. Accédez à [https://graphexplorer.cloudapp.net](https://graphexplorer.cloudapp.net).
+1. Accédez à [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Sélectionnez **Se connecter** dans le coin supérieur droit.
 3. Exécutez la requête suivante. Une réponse JSON plutôt volumineuse s’affiche.
-   
+
         https://graph.windows.net/me?api-version=1.5
 4. Recherchez **userPrincipalName**.
 
@@ -206,7 +206,7 @@ Pour trouver la région dans laquelle est situé votre centre de données, proc�
 1. Sélectionnez le signe **?** dans le coin supérieur droit du service Power BI.
 2. Sélectionnez **À propos de Power BI**.
 3. La région de vos données s’affiche dans **Vos données sont stockées dans**.
-   
+
     ![](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
 
 Si vous n’obtenez pas les informations souhaitées, vous pouvez essayer d’obtenir une trace réseau à l’aide d’un outil tel que [fiddler](#fiddler) ou netsh. Sachez toutefois que ces méthodes de collecte nécessitent un niveau avancé et que vous aurez peut-être besoin d’aide pour analyser les données collectées. Vous pouvez contacter le [support](https://support.microsoft.com) pour obtenir de l’aide.
@@ -329,6 +329,7 @@ Dans le fichier *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config*
 <a name="activities"></a>
 
 ### <a name="activity-types"></a>Types d’activités
+
 | Type d’activité | Description |
 | --- | --- |
 | MGEQ |Requêtes exécutées sur ADO.NET. Incluent les sources de données DirectQuery. |
@@ -342,9 +343,9 @@ Pour déterminer le temps nécessaire pour interroger la source de données, vou
 2. Recherchez un [Activity Type](#activities) (Type d’activité) pour trouver la requête. Un exemple serait MGEQ.
 3. Notez le second GUID, car il s’agit de l’ID de la demande.
 4. Continuez à rechercher MGEQ jusqu’à trouver l’entrée FireActivityCompletedSuccessfullyEvent indiquant la durée. Vous pouvez vérifier que l’entrée a le même ID de demande. La durée est exprimée en millisecondes.
-   
+
         DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway    baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
-   
+
    > [!NOTE]
    > FireActivityCompletedSuccessfullyEvent est une entrée détaillée. Cette entrée n’est journalisée que si TraceVerbosity est au niveau 5.
    > 
@@ -423,12 +424,12 @@ Vous obtiendrez le message d’erreur -Échec connexion 10709 si votre délégat
 Lors de l’utilisation de la passerelle pour un actualisation planifiée, l’**historique des actualisations** peut vous aider à déterminer les erreurs qui se sont produites. Vous pouvez aussi y trouver des données utiles au cas où vous auriez besoin de créer une demande de support. Vous pouvez visualiser à la fois les actualisations planifiées et les actualisations à la demande. Voici comment accéder à l’**historique des actualisations**.
 
 1. Dans le volet de navigation Power BI, dans **Jeux de données**, sélectionnez un jeu de données &gt; Menu Ouvrir &gt; **Planifier l’actualisation**
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 2. Dans **Paramètres pour...** &gt;**Planifier l’actualisation**, sélectionnez **Historique des actualisations**.
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
-   
+
     ![](media/service-gateway-onprem-tshoot/refresh-history.png)
 
 Pour plus d’informations sur la résolution des problèmes d’actualisation, consultez [Scénarios de résolution de problèmes liés à l’actualisation](refresh-troubleshooting-refresh-scenarios.md).

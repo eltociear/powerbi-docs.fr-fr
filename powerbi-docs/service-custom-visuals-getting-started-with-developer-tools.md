@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 8b5da248b6992c8ae3e8d30caf4f0fc6c47bdcf5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296295"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600376"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Créer des visuels personnalisés à l’aide des outils de développement
 Les éléments visuels personnalisés vous permettent de répondre aux besoins de vos utilisateurs et de vous mettre en adéquation avec le design de votre application. Découvrez comment créer un élément visuel personnalisé pour Power BI à l’aide des outils de développement.
@@ -32,14 +32,14 @@ Pour créer un élément visuel personnalisé, vous devrez installer NodeJS. Nod
 
 1. Téléchargez et installez [NodeJS](https://nodejs.org). La version 4.0 est requise, mais il est recommandé d’utiliser la version 5.0 ou un version ultérieure.
 2. Installez les outils en ligne de commande. Exécutez la commande suivante à partir d’une invite de commandes.
-   
+
         npm install -g powerbi-visuals-tools
 3. Vous pouvez vérifier que les outils sont installés en exécutant la commande suivante sans aucun paramètre.
-   
+
         pbiviz
-   
+
     Vous devriez voir la sortie de l’aide.
-   
+
     <pre><code>
          +syyso+/
     oms/+osyhdhyso/
@@ -59,22 +59,22 @@ Pour créer un élément visuel personnalisé, vous devrez installer NodeJS. Nod
                /dmmh /mmmm/ /osyhhy/
                  //   dmmd
                        ++
-   
+
        PowerBI Custom Visual Tool
-   
+
     Usage: pbiviz [options] [command]
-   
+
     Commands:
-   
+
     new [name]        Create a new visual
     info              Display info about the current visual
     start             Start the current visual
     package           Package the current visual into a pbiviz file
     update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified
     help [cmd]        display help for [cmd]
-   
+
     Options:
-   
+
     -h, --help      output usage information
     -V, --version   output the version number
     --install-cert  Install localhost certificate
@@ -103,7 +103,7 @@ Pour *créer* un certificat, exécutez la commande suivante.
 Pour *installer* un certificat, exécutez la commande suivante.
 
     pbiviz --install-cert
-    
+
 > [!NOTE]
 > Vous devez voir un message vous invitant à utiliser la phrase secrète qui vient d’être générée pour installer un certificat PFX.
 > 
@@ -112,20 +112,20 @@ Pour *installer* un certificat, exécutez la commande suivante.
 **Système d’exploitation Windows**
 
 1. Sélectionnez **Installer le certificat...**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 2. Sélectionnez **Utilisateur actuel**, puis **Suivant**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
 3. Sélectionnez **Placer tous les certificats dans le magasin suivant**, puis **Parcourir...**.
 4. Sélectionnez **Autorités de certification racines de confiance**, puis **OK**. Sélectionnez **Suivant**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
 5. Sélectionnez **Terminer**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
 6. Sélectionnez **Oui** dans la boîte de dialogue sécurité.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 7. Fermez les navigateurs que vous avez ouverts.
 
@@ -137,13 +137,13 @@ Pour *installer* un certificat, exécutez la commande suivante.
 **OSX**
 
 1. Si le verrou dans le coin supérieur gauche est verrouillé, sélectionnez-le pour le déverrouiller. Recherchez *localhost*, puis double-cliquez sur le certificat.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 2. Sélectionnez **Toujours faire confiance**fermez la fenêtre.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
 3. Entrez vos nom d’utilisateur et mot de passe. Sélectionnez **Mettre à jour les paramètres**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
 4. Fermez les navigateurs que vous avez ouverts.
 
@@ -157,15 +157,15 @@ Pour activer un aperçu instantané de votre élément visuel personnalisé, pro
 
 1. Accédez et connectez-vous à [app.powerbi.com](https://app.powerbi.com).
 2. Sélectionnez l’**icône d’engrenage**, puis **Paramètres**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
 3. Sélectionnez **Développeur**, puis **Activer l’élément visuel Développeur pour les tests**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
 4. Dans le volet **Visualisation**, sélectionnez **Élément visuel de développeur**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
-   
+
    > [!NOTE]
    > Cela nécessite que vous ayez exécuté `pbiviz start` à partir du dossier d’éléments visuels sur votre ordinateur de développement. Pour plus d’informations sur la création de votre visuel, voir [Créer un visuel](#create-a-new-visual) dans cet article.
    > 
@@ -196,11 +196,11 @@ Vous pouvez exécuter votre élément visuel en procédant comme suit.
 1. Ouvrez une invite de commandes.
 2. Faites de votre répertoire votre dossier d’éléments visuels. Il s’agit du dossier contenant le fichier `pbiviz.json`.
 3. Exécutez la commande suivante.
-   
+
     ```
     pbiviz start
     ```
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
 
 Si vous êtes dans le mauvais emplacement, un message d’erreur similaire au suivant s’affiche.
@@ -249,7 +249,7 @@ Vous pouvez empaqueter votre élément visuel en procédant comme suit.
 1. Ouvrez une invite de commandes.
 2. Faites de votre répertoire votre dossier d’éléments visuels. Il s’agit du dossier contenant le fichier `pbiviz.json`.
 3. Exécutez la commande suivante.
-   
+
     ```
     pbiviz package
     ```
@@ -294,6 +294,7 @@ Cela a pour effet de mettre à jour votre élément visuel vers la version d’A
 Votre projet d’élément visuel est le dossier créé lorsque vous exécutez la commande `pbiviz new`. 
 
 ### <a name="file-structure"></a>Structure des fichiers
+
 | Élément | Description |
 | --- | --- |
 | assets/ |Utilisé pour stocker les ressources visuelles (icône, captures d’écran, etc.). |

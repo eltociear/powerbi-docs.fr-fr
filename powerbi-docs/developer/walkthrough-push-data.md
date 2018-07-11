@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
 ms.author: maghan
-ms.openlocfilehash: 96b29c9dc6c384b663ef375d4968dedb011bd05d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1cc19d1ceefb95e0cb56e2a5dcbcc89609f654d5
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813109"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598546"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
 Avec l’API Power BI, vous pouvez transmettre des données à un jeu de données Power BI. Par exemple, vous voulez étendre un workflow d’entreprise existant pour transmettre des données clés à votre jeu de données. Dans ce cas, vous voulez transmettre un jeu de données Sales Marketing qui possède une table Product à un jeu de données.
@@ -98,6 +98,7 @@ Ainsi, pour notre exemple de jeu de données Sales Marketing, vous transmettriez
 Pour un schéma de table Power BI, vous pouvez utiliser les types de données suivants.
 
 ## <a name="power-bi-table-data-types"></a>Types de données de table Power BI
+
 | **Type de données** | **Restrictions** |
 | --- | --- |
 | Int64 |Valeurs Int64.MaxValue et Int64.MinValue non autorisées. |

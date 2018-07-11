@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 641a4f457782711902ee7e2414cb9afffb391afc
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 32b21e23a6cc4a5e6d9ae4915ddc56f9f9957d14
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286333"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599642"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Créer des éléments visuels Power BI avec R
 **Power BI Desktop** vous permet d’utiliser **R** pour visualiser vos données.
@@ -81,9 +81,9 @@ Après avoir spécifié votre installation R, vous pouvez commencer à créer de
    * Lorsque vous sélectionnez **Exécuter** dans la barre de titres **Éditeur de script R**
    * À chaque changement de données dû à l’actualisation des données, au filtrage ou à la mise en surbrillance
 
-    L’image suivante montre un exemple du code de tracé de corrélation et trace les corrélations entre les attributs de différents types de voitures.
+     L’image suivante montre un exemple du code de tracé de corrélation et trace les corrélations entre les attributs de différents types de voitures.
 
-    ![](media/desktop-r-visuals/r-visuals-6.png)
+     ![](media/desktop-r-visuals/r-visuals-6.png)
 
 5. Pour obtenir une vue agrandie des visualisations, vous pouvez réduire l’ **Éditeur de script R**. Bien entendu, comme pour d’autres visuels dans **Power BI Desktop**, vous pouvez appliquer un filtre croisé au tracé de corrélation en sélectionnant uniquement les voitures de sport dans le visuel en anneau (visuel rond à droite, dans l’exemple ci-dessus).
 

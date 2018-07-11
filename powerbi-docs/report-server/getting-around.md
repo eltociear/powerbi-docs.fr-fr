@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 9b896c9db6c1368c5e435df21c28cd99b8dda15f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 354ba336407f200d2c311f6bf0de91967cf3f5d1
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721705"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598136"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Gérer le contenu dans le portail web 
 Le portail web Power BI Report Server est un emplacement local destiné à l’affichage, au stockage et à la gestion de vos rapports mobiles et paginés, ainsi que de vos indicateurs de performance clés Power BI.
@@ -38,9 +38,9 @@ L’application du portail web s’exécute dans un navigateur. Lorsque vous dé
     Consultez la liste des [navigateurs web et des versions pris en charge](browser-support.md).
 2. Dans la barre d’adresse, tapez l’URL du portail web.
    
-    Par défaut, l’URL est *http://[NomOrdinateur]/reports*.
+    Par défaut, l’URL est <em>http://[NomOrdinateur]/reports</em>.
    
-    Le serveur de rapports peut être configuré pour utiliser un port spécifique. Par exemple, *http://[NomOrdinateur]:80/reports* ou *http://[NomOrdinateur]:8080/reports*.
+    Le serveur de rapports peut être configuré pour utiliser un port spécifique. Par exemple, <em>http://[NomOrdinateur]:80/reports</em> ou <em>http://[NomOrdinateur]:8080/reports</em>.
    
     Vous voyez les éléments des groupes du portail web dans les catégories suivantes :
    

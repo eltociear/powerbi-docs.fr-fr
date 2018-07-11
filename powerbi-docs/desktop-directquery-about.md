@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 472be555bb4c46da41eb762c1eeae14ef991e742
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ed9ab95aace7ab1ff0774732241bdd4a7fffcb15
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290864"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600986"
 ---
 # <a name="using-directquery-in-power-bi"></a>Utilisation de DirectQuery dans Power BI
 Lorsque vous utilisez **Power BI Desktop** ou le **service Power BI**, vous pouvez vous connecter à toutes sortes de sources de données et établir ces connexions aux données de différentes façons. Vous pouvez soit *importer* des données dans Power BI, ce qui est la méthode la plus courante pour obtenir des données, soit vous connecter directement aux données dans leur dépôt source d’origine, ce qu’on appelle une requête **DirectQuery**. Cet article décrit la requête **DirectQuery** et ses fonctionnalités, et comprend les rubriques suivantes :
@@ -152,7 +152,7 @@ Lorsque vous utilisez **DirectQuery**, bon nombre de ces enrichissements de mod�
     
     La raison à cela est qu’une telle mesure risquerait d’entraîner une dégradation des performances s’il y avait un très grand nombre d’éléments.
 * **Les tables calculées ne sont pas prises en charge :** la possibilité de définir une table calculée à l’aide d’une expression DAX n’est pas prise en charge en mode DirectQuery.
-* **Le filtrage des relations est limité à une seule direction :** en cas d’utilisation de DirectQuery, il n’est pas possible de définir la direction du filtrage d’une relation sur « Les deux ». Par exemple, avec les trois tables ci-dessous, il ne serait pas possible de générer un visuel affichant le genre de chaque client (Customer[Gender]) et la catégorie de produits (Product[Category]) achetée par chaque genre. L’utilisation d’un tel filtrage bidirectionnel est décrite dans ce [livre blanc détaillé](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional cross-filtering in Analysis Services 2016 and Power BI.docx) (le document présente des exemples dans le contexte de SQL Server Analysis Services, mais les points principaux s’appliquent également à Power BI).
+* **Le filtrage des relations est limité à une seule direction :** en cas d’utilisation de DirectQuery, il n’est pas possible de définir la direction du filtrage d’une relation sur « Les deux ». Par exemple, avec les trois tables ci-dessous, il ne serait pas possible de générer un visuel affichant le genre de chaque client (Customer[Gender]) et la catégorie de produits (Product[Category]) achetée par chaque genre. L’utilisation d’un tel filtrage bidirectionnel est décrite dans ce [livre blanc détaillé](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (le document présente des exemples dans le contexte de SQL Server Analysis Services, mais les points principaux s’appliquent également à Power BI).
   
   ![](media/desktop-directquery-about/directquery-about_01.png)
   

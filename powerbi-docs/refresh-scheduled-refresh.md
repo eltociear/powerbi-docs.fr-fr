@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e6dbd431a1ea37195a6cbb6e3d9a39d79a4e9b0d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 96c1709c1d85b8a960be9c96b6839b69b4f22eaa
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248132"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145453"
 ---
 # <a name="configuring-scheduled-refresh"></a>Configuration d’une actualisation planifiée
 
@@ -26,7 +26,7 @@ ms.locfileid: "34248132"
 
 Si votre jeu de données prend en charge l’actualisation planifiée au moyen des fonctionnalités Actualiser maintenant et Planifier l’actualisation, vous devez veiller à respecter certaines conditions et à définir correctement certains paramètres pour que l’actualisation fonctionne correctement. Ces paramètres sont **Connexion à la passerelle**, **Informations d’identification de Source de données** et **Planifier l’actualisation**. Examinons plus en détail chacun d’entre eux.
 
-Cette description a trait aux options disponibles tant pour [Power BI Gateway – Personal](personal-gateway.md) que pour la [passerelle de données locale](service-gateway-onprem.md).
+Cette description a trait aux options disponibles tant pour [Power BI Gateway – Personal](service-gateway-personal-mode.md) que pour la [passerelle de données locale](service-gateway-onprem.md).
 
 Pour accéder à l’écran de planification de l’actualisation, vous pouvez procéder comme suit.
 
@@ -123,7 +123,7 @@ Parfois, l’actualisation des données peut ne pas fonctionner comme prévu. Ce
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Actualisation des données dans Power BI](refresh-data.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [Passerelle de données locale](service-gateway-onprem.md)  
 [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)  
 [Résolution des problèmes liés à Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  

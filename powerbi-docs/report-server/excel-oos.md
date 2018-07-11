@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 705de47a1e89d765f34eadfcd35064ccde7aa66b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c57ae7a0213ce324f673e53862ba3dfa38f57409
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34481897"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092664"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Configurer votre serveur de rapports pour héberger des classeurs Excel à l’aide d’Office Online Server (OOS)
 Outre l’affichage de rapports Power BI sur le portail web, Power BI Report Server peut héberger des classeurs Excel à l’aide de [Office Online Server](https://docs.microsoft.com/officeonlineserver/office-online-server-overview) (OOS). Votre serveur de rapports devient un emplacement unique pour publier et afficher le contenu de Microsoft BI en libre-service.
@@ -78,7 +78,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Paramètres**
 
-* **– InternalURL** est le nom de domaine complet (FQDN) du serveur exécutant Office Online Server, tel que http://servername.contoso.com.
+* **– InternalURL** est le nom de domaine complet (FQDN) du serveur exécutant Office Online Server, tel que `http://servername.contoso.com`.
 * **– ExternalURL** est le nom de domaine complet (FQDN) accessible sur Internet.
 * **–CertificateName** est le nom convivial du certificat.
 
@@ -91,7 +91,7 @@ New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
 
 **Paramètres**
 
-* **–InternalURL** est le nom du serveur exécutant Office Online Server, tel que http://servername.
+* **–InternalURL** est le nom du serveur exécutant Office Online Server, tel que `http://servername`.
 * **– AllowHttp** configure la batterie de serveurs pour utiliser le protocole HTTP.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Vérifier que la batterie de serveurs Office Online Server a été correctement créée

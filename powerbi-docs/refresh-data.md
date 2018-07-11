@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 779bfb3e69a76d0fe9e9a34d6576b2054de89cc1
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: aa7fcc720861d1459183aaf7a82a2af8912eb5b6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34253616"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599745"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 L’obtention des données les plus récentes constitue souvent un facteur essentiel à la prise de décisions informées. Vous avez sans doute déjà utilisé la fonctionnalité Obtenir des données de Power BI pour vous connecter à des données et les charger, voire générer des rapports et un tableau de bord. Avant d’aller plus loin, vous devez vous assurer que les données que vous utilisez sont vraiment les plus récentes.
@@ -101,6 +101,7 @@ L’actualisation des données est prise en charge pour les fichiers Power BI 
 La possibilité de conserver vos fichiers sur OneDrive ou SharePoint Online, ainsi que de vous y connecter à partir de Power BI, offre une grande flexibilité. Le revers de la médaille, c’est que ce type d’actualisation est l’un des plus complexes. L’actualisation planifiée de fichiers stockés sur OneDrive ou SharePoint Online diffèrent de l’actualisation de package. Pour plus d’informations, consultez la section [Types d’actualisations](#types-of-refresh).
 
 ### <a name="power-bi-desktop-file"></a>Aide sur Power BI Desktop
+
 | **Source de données** | **Actualisation automatique** | **Actualisation manuelle ou planifiée configurée par l’utilisateur** | **Passerelle obligatoire** |
 | --- | --- | --- | --- |
 | La fonctionnalité Obtenir des données (située sur le ruban) permet de se connecter aux données de n’importe quelle source de données en ligne répertoriée et de les interroger. |Non |Oui |Non (voir ci-dessous) |
@@ -117,6 +118,7 @@ La possibilité de conserver vos fichiers sur OneDrive ou SharePoint Online, ain
 Pour plus de détails, consultez [Actualiser un jeu de données créé à partir d’un fichier Power BI Desktop sur OneDrive](refresh-desktop-file-onedrive.md).
 
 ### <a name="excel-workbook"></a>Classeur Excel
+
 | **Source de données** | **Actualisation automatique** | **Actualisation manuelle ou planifiée configurée par l’utilisateur** | **Passerelle obligatoire** |
 | --- | --- | --- | --- |
 | Les tables de données d’une feuille de calcul ne sont pas chargées dans le modèle de données Excel. |Oui, toutes les heures *(OneDrive/SharePoint Online uniquement)* |Manuel uniquement *(OneDrive/SharePoint Online uniquement)* |Non |
@@ -131,6 +133,7 @@ Pour plus de détails, consultez [Actualiser un jeu de données créé à partir
 Pour plus d’informations, consultez [Actualiser un jeu de données créé à partir d’un classeur Excel sur OneDrive](refresh-excel-file-onedrive.md).
 
 ### <a name="comma-separated-value-csv-file-on-onedrive-or-sharepoint-online"></a>Fichier de valeurs séparées par des virgules (.csv) sur OneDrive ou SharePoint Online
+
 | **Source de données** | **Actualisation automatique** | **Actualisation manuelle ou planifiée configurée par l’utilisateur** | **Passerelle obligatoire** |
 | --- | --- | --- | --- |
 | Valeur séparée par une virgule simple |Oui, toutes les heures |Manuelle uniquement |Non |
@@ -145,6 +148,7 @@ Il existe deux types de packs de contenu dans Power BI :
 **Packs de contenu d’organisation** : créés et partagés par les utilisateurs de votre organisation. Les consommateurs d’un pack de contenu ne peuvent ni actualiser manuellement les jeux de données ni configurer une planification d’actualisation. Seul le créateur d’un pack de contenu est autorisé à configurer l’actualisation des jeux de données figurant dans le pack de contenu. Les paramètres d’actualisation sont hérités avec le jeu de données.
 
 ### <a name="content-packs-from-online-services"></a>Packs de contenu provenant de services en ligne
+
 | **Source de données** | **Actualisation automatique** | **Actualisation manuelle ou planifiée configurée par l’utilisateur** | **Passerelle obligatoire** |
 | --- | --- | --- | --- |
 | Services en ligne dans Obtenir des données &gt; Services |Oui |Oui |Non |
@@ -237,7 +241,7 @@ Dans cet exemple, vous pouvez actualiser manuellement les données dans le jeu d
 > 
 > 
 
-Pour plus d’informations, consultez [Données Excel dans Power BI](service-excel-workbook-files.md), [Power BI Gateway - Personal](personal-gateway.md), [Passerelle de données locale](service-gateway-onprem.md) et [Actualiser un jeu de données créé à partir d’un classeur Excel sur un lecteur local](refresh-excel-file-local-drive.md).
+Pour plus d’informations, consultez [Données Excel dans Power BI](service-excel-workbook-files.md), [Power BI Gateway - Personal](service-gateway-personal-mode.md), [Passerelle de données locale](service-gateway-onprem.md) et [Actualiser un jeu de données créé à partir d’un classeur Excel sur un lecteur local](refresh-excel-file-local-drive.md).
 
 ### <a name="power-bi-desktop-file-with-data-from-an-odata-feed"></a>Fichier Power BI Desktop contenant des données provenant d’un flux OData
 Ici, vous utilisez la fonctionnalité Obtenir des données de Power BI Desktop pour vous connecter aux données de recensement d’un flux OData et les importer.  Vous créez plusieurs rapports dans Power BI Desktop, vous nommez le fichier WACensus, puis vous enregistrez ce fichier sur un partage de votre entreprise. Vous publiez ensuite le fichier sur le service Power BI.
@@ -270,7 +274,7 @@ Pour plus d’informations sur la résolution des problèmes, consultez [Outils 
 ## <a name="next-steps"></a>Étapes suivantes
 [Outils de résolution des problèmes liés à l’actualisation](service-gateway-onprem-tshoot.md)  
 [Scénarios de résolution de problèmes liés à l’actualisation](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [Passerelle de données locale](service-gateway-onprem.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

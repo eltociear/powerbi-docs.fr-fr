@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 019aa1425d05fcfdc4415570acdc29e7a684dc25
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 88b8b4a50913cd45c5e4ff80a5d5e0ded2eb4cdb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290956"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600746"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
 Dans Power BI Desktop, vous pouvez créer un élément visuel **Carte de formes** pour afficher des comparaisons relatives de régions sur une carte en appliquant différentes couleurs aux différentes régions. Contrairement à l’élément visuel **Carte**, l’élément visuel **Carte de formes** ne peut pas afficher d’emplacements géographiques précis de points de données sur une carte. Son principal objectif est en effet d’afficher des comparaisons relatives de régions sur une carte en affectant des couleurs différentes à ces dernières.
@@ -40,23 +40,23 @@ Power BI Desktop crée une zone de dessin d’élément visuel **Carte de form
 Procédez comme suit pour créer un élément visuel **Carte de formes** :
 
 1. Dans le volet **Champs**, faites glisser un champ de données contenant les noms (ou abréviations) de région sur le compartiment **Emplacement** et un champ de mesure de données sur le compartiment **Saturation des couleurs** (vous ne voyez pas encore de carte).
-   
+
    > [!NOTE]
-> Voir la section intitulée **Obtenir des données de carte** ci-dessous pour plus d’informations sur la façon d’obtenir rapidement des données de carte afin de tester l’élément visuel **Carte de formes**.
+   > Voir la section intitulée **Obtenir des données de carte** ci-dessous pour plus d’informations sur la façon d’obtenir rapidement des données de carte afin de tester l’élément visuel **Carte de formes**.
    > 
    > 
-   
+
    ![](media/desktop-shape-map/shape-map_3a.png)
 2. Dans le volet de paramètres **Format**, développez **Forme**, puis sélectionnez la liste déroulante **Cartes standard** pour afficher vos données. À ce stade, le rendu s’affiche comme illustré dans l’image suivante.
-   
+
    ![](media/desktop-shape-map/shape-map_3b.png)
-   
+
    > [!NOTE]
-> La section **Codes de région** à la fin de cet article présente une collection de tables qui répertorient des codes de région de carte que vous pouvez utiliser pour tester l’élément visuel **Carte de formes**.
+   > La section **Codes de région** à la fin de cet article présente une collection de tables qui répertorient des codes de région de carte que vous pouvez utiliser pour tester l’élément visuel **Carte de formes**.
    > 
    > 
 3. Vous pouvez ensuite modifier les paramètres de projection cartographique et de zoom, ainsi que les couleurs des points de données, dans le volet de paramètres **Format**. Vous pouvez également modifier les paramètres de zoom. Par exemple, vous pouvez modifier les couleurs, définir des valeurs maximales et minimales, etc.
-   
+
    ![](media/desktop-shape-map/shape-map_3d.png)
 4. Vous pouvez aussi ajouter une colonne de données de catégorie pour le compartiment **Légende** et classer les régions de la carte en fonction de catégories.
 
@@ -114,6 +114,7 @@ Cette version préliminaire de l’élément visuel **Carte de formes** est asso
 Utilisez les **codes de région** suivants dans cette version préliminaire pour tester l’élément visuel **Carte de formes**.
 
 ### <a name="australia-states"></a>Australie : États
+
 | id | abbr | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
@@ -126,6 +127,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
 ### <a name="austria-states"></a>Autriche : États
+
 | id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
@@ -139,6 +141,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
 ### <a name="brazil-states"></a>Brésil : États
+
 | id |
 | --- |
 | Tocantins |
@@ -174,6 +177,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | Litigated Zone 4 |
 
 ### <a name="canada-provinces"></a>Canada : provinces
+
 | id | iso | name | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
@@ -191,6 +195,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | ca-ab |CA-AB |Alberta |AB |
 
 ### <a name="france-regions"></a>France : régions
+
 | id | name | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
@@ -217,6 +222,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | Aquitaine |Aquitaine |Aquitaine |
 
 ### <a name="germany-states"></a>Allemagne : États
+
 | id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
@@ -237,6 +243,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
 ### <a name="ireland-counties"></a>Irlande : comtés
+
 | id |
 | --- |
 | Wicklow |
@@ -267,6 +274,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | Carlow |
 
 ### <a name="italy-regions"></a>Italie : régions
+
 | id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
@@ -291,6 +299,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
 ### <a name="mexico-states"></a>Mexique : États
+
 | id | abreviatura | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
@@ -327,6 +336,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
 ### <a name="netherlands-provinces"></a>Pays-Bas : provinces
+
 | id | iso | name | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
@@ -343,6 +353,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
 ### <a name="uk-countries"></a>Royaume-Uni : pays
+
 | id | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
@@ -351,6 +362,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | gb-eng |GB-ENG |England |
 
 ### <a name="usa-states"></a>États-Unis : États
+
 | id | name | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |

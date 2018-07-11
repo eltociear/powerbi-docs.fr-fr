@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d65281539bcc27ce24971a6da0945908ba65e754
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1a39b347a68cb5557ffff7758efbfba86884b5ce
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297098"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598998"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Personnaliser le titre, la légende et l’arrière-plan d’une visualisation
 Ce didacticiel présente quelques façons de personnaliser vos visualisations.   Compte tenu du nombre important d’options de personnalisation pour les visualisations, la meilleure façon de les découvrir toutes consiste à explorer le volet Mise en forme (sélectionnez l’icône Rouleau à peindre).  Pour vous aider à commencer, cet article explique comment personnaliser le titre, la légende et l’arrière-plan d’une visualisation.  
@@ -41,26 +41,26 @@ Pour la suite, connectez-vous au service Power BI (app.powerbi.com), puis ouvrez
 
 1. Accédez à la page « New Stores » (Nouveaux magasins) du rapport et sélectionnez l’histogramme « Open Store Count by Open Month... » (Nombre d’ouvertures de magasins pas mois).
 2. Dans le volet Visualisations, sélectionnez l’icône Rouleau à peindre pour afficher les options de mise en forme.  Sélectionnez **Titre** pour développer cette section.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 3. Activez ou désactivez l’affichage du  **Titre** en sélectionnant le curseur Activé ou Désactivé. Pour l’instant, laissez-le sur **Activé**.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
 4. Modifiez le **Texte du titre** en tapant **Store count by month opened** (Nombre d’ouvertures de magasins par mois) dans le champ de texte.  
 5. Changez la **Couleur de police** en orange et la **Couleur d’arrière-plan** en jaune.
-   
+
    * Sélectionnez la flèche déroulante et choisissez une couleur dans **Couleurs du thème**, **Couleurs récentes**ou **Couleur personnalisée**.
    * Sélectionnez la flèche déroulante pour fermer la fenêtre des couleurs.  
      ![](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
-   
+
    Vous pouvez toujours rétablir les couleurs par défaut en sélectionnant **Rétablir les valeurs par défaut** dans la fenêtre des couleurs.
 6. Augmentez la taille du texte à 12.
 7. Nous allons effectuer une dernière personnalisation : aligner le titre du graphique au centre de la visualisation. Le titre est aligné à gauche par défaut.  
    ![](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
-   
+
     À ce stade du didacticiel, le **titre** de votre histogramme doit ressembler à ceci :  
     ![](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
-   
+
     Pour annuler toutes les personnalisations du titre que nous avons faites jusqu’à présent, sélectionnez **Rétablir les valeurs par défaut**en bas du volet de personnalisation **Titre** .  
     ![](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
@@ -69,29 +69,30 @@ En reprenant le même histogramme, développez les options d’arrière-plan.
 
 1. Activez ou désactivez l’affichage de l’arrière-plan en sélectionnant le curseur Activé ou Désactivé. Pour l’instant, laissez-le sur **Activé**.
 2. Changez la couleur d’arrière-plan en gris 74 %.
-   
+
    * Sélectionnez la flèche déroulante et choisissez une couleur grise dans **Couleurs du thème**, **Couleurs récentes**ou **Couleur personnalisée**.
    * Définissez la transparence sur 74 %.   
      ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
-   
+
    Pour annuler toutes les personnalisations apportées à l’arrière-plan du titre jusqu’à présent, sélectionnez **Rétablir les valeurs par défaut**en bas du volet de personnalisation **Arrière-plan** .
 
 ## <a name="customize-visualization-legends"></a>Personnaliser les légendes des visualisations
 1. Ouvrez la page de rapport **Présentation** et sélectionnez le graphique « Total Sales Variance par FiscalMonth et directeur régional » (Variance du nombre de ventes totales par MoisFiscal et directeur régional).
 2. Dans l’onglet Visualisation, sélectionnez l’icône de pinceau pour ouvrir le volet Mise en forme.  
 3. Développez les options de **Légende** .
-   
+
       ![](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
 4. Activez ou désactivez l’affichage de la légende en sélectionnant le curseur Activé ou Désactivé. Pour l’instant, laissez-le sur **Activé**.
 5. Déplacez la légende à gauche de la visualisation.    
 6. Ajoutez un titre de légende en basculant **Titre** sur **Activé** et, dans le champ **Nom de la légende** , tapez **Directeurs**.
    ![](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
-   
+
    Pour annuler toutes les personnalisations de la légende que nous avons faites jusqu’à présent, sélectionnez **Rétablir les valeurs par défaut**en bas du volet de personnalisation **Légende** .
 
 <a name="list"></a>
 
 ## <a name="visualization-types-that-can-be-customized"></a>Types de visualisations personnalisables
+
 | Visualisation | Titre | Arrière-plan | Légende |
 |:--- |:--- |:--- |:--- |
 | aires |oui |oui |oui |

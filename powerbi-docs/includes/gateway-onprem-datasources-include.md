@@ -1,4 +1,5 @@
 ## <a name="list-of-available-data-source-types"></a>Liste des types de sources de données disponibles
+
 | **Source de données** | **Active/DirectQuery** | **Actualisation manuelle ou planifiée configurée par l’utilisateur** |
 | --- | --- | --- | --- |
 | Analysis Services (tabulaire) |Oui |Oui |

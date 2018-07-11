@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef554d7190709565610336169b4883d71970f822
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 621a5f92ebd9c7314b719b6643f5bfef958916c3
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34799553"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599332"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Configuration des paramètres de proxy de la passerelle de données locale
 Votre environnement de travail peut nécessiter que vous passiez par un proxy pour accéder à Internet. Cela pourrait empêcher la passerelle de données locale de se connecter au service.
@@ -77,23 +77,23 @@ Lorsque vous configurez les paramètres de proxy pour utiliser les informations 
 
 ### <a name="change-the-on-premises-data-gateway-service-account"></a>Modifier le compte de service de la passerelle de données locale
 1. Modifiez le compte de service Windows du **service de passerelle de données locale**.
-   
+
     Le compte par défaut de ce service est *NT SERVICE\PBIEgwService*. Vous pouvez le remplacer par un compte utilisateur de domaine au sein de votre domaine Active Directory. Vous pouvez également utiliser un compte de service administré pour éviter d’avoir à réinitialiser le mot de passe.
-   
+
     Vous pouvez modifier le compte sous l’onglet **Connexion** des propriétés du service Windows.
 2. Redémarrez le **service de passerelle de données locale**.
-   
+
     Dans une invite de commandes d’administration, exécutez les commandes suivantes.
-   
+
         net stop PBIEgwService
-   
+
         net start PBIEgwService
 3. Démarrez **l’outil de configuration de la passerelle de données locale**. Vous pouvez sélectionner le bouton Démarrer de Windows et rechercher *Passerelle de données locale*.
 4. Connectez-vous à Power BI.
 5. Restaurez la passerelle à l’aide de votre clé de récupération.
-   
+
     Ainsi, le nouveau compte de service est en mesure de déchiffrer les informations d’identification stockées pour les sources de données.
-    
+
 > [!NOTE]
 > Lorsque vous modifiez le compte de service directement depuis le panneau de configuration Services, il ne met pas à jour les listes de contrôle d'accès (ACL) automatiquement. Vous devez vous assurer que le nouveau compte de service a accès au dossier et fichiers d’installation. Vous trouverez le dossier d’Installation de la passerelle sous C:\Program Files\On-premises data gateway. 
 > 
