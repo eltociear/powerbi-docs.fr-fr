@@ -12,6 +12,8 @@
       items:
         - name: Se connecter à un exemple GitHub
           href: service-tutorial-connect-to-github.md
+        - name: "Prise en main de Power\_BI"
+          href: service-get-started.md
     - name: Concepts
       items:
         - name: "Nouveautés dans le service Power\_BI"
@@ -374,7 +376,7 @@
                   href: power-bi-reports-performance.md
                 - name: Interagir avec des cartes ArcGIS dans Power BI
                   href: power-bi-visualizations-arcgis.md
-            - name: Données de fichiers
+            - name: Données provenant de fichiers
               items:
                 - name: Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
                   href: service-from-excel-to-stunning-report.md
@@ -382,6 +384,8 @@
                   href: service-excel-workbook-files.md
                 - name: "Obtenir des données de fichiers Power\_BI Desktop"
                   href: service-desktop-files.md
+                - name: Paramètres pour les jeux de données
+                  href: service-parameters.md
                 - name: Obtenir des données de fichiers de valeurs séparées par des virgules (.csv)
                   href: service-comma-separated-value-files.md
                 - name: "Streaming en temps réel dans Power\_BI (version préliminaire)"
@@ -860,16 +864,12 @@
           items:
             - name: Prise en main de l’application iOS
               href: mobile-iphone-app-get-started.md
-            - name: Prise en main de l’application iPad
-              href: mobile-ipad-app-get-started.md
             - name: Questions et réponses – Analyste virtuel dans des applications mobiles iOS
               href: mobile-apps-ios-qna.md
             - name: "Application Power\_BI pour Apple Watch"
               href: mobile-apple-watch.md
             - name: Scanner un code-barres avec l’application sur votre iPhone
               href: mobile-apps-scan-barcode-iphone.md
-            - name: "Applications Power\_BI pour iOS"
-              href: mobile-ios-ipad-iphone-apps.md
         - name: iOS et Android
           items:
             - name: Annoter et partager dans les applications mobiles
@@ -940,8 +940,6 @@
               href: developer/integrate-tile.md
             - name: "Intégrer un rapport Power\_BI dans une application (l’utilisateur possède les données)"
               href: developer/integrate-report.md
-            - name: Intégrer du contenu dans une application (l’application possède les données)
-              href: developer/embed-sample-for-customers.md
             - name: Intégrer du contenu dans une application pour des clouds souverains (l’application est propriétaire des données)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Incorporer des dispositions personnalisées dans une application
@@ -1234,6 +1232,13 @@
           href: service-admin-syndication-partner.md
         - name: Configurer des applications mobiles avec Intune
           href: service-admin-mobile-intune.md
+    - name: Référence
+      items:
+        - name: 'PowerShell, API REST et kit SDK .NET'
+          href: service-admin-reference.md
+        - name: Applets de commande Power BI pour PowerShell
+          href: 'https://docs.microsoft.com/en-us/powershell/power-bi/'
+          maintainContext: true
     - name: Ressources
       items:
         - name: "Approches de déploiement et de gouvernance Power\_BI"
