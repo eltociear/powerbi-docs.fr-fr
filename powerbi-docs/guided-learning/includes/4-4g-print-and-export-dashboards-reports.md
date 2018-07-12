@@ -1,4 +1,4 @@
-Vous pouvez parfois souhaiter apporter un rapport ou un tableau de bord imprimé à une réunion, ou par conséquent, pour pouvoir ainsi le partager avec d’autres personnes. Avec Power BI, vous pouvez, depuis quelques jours, effectuer des impressions de vos éléments visuels.
+Vous pouvez parfois souhaiter apporter un rapport ou un tableau de bord imprimé à une réunion, ou par conséquent, pour pouvoir ainsi le partager avec d’autres personnes. Avec Power BI, vous pouvez effectuer des impressions de vos visuels de différentes manières.
 
 Dans le service Power BI, sélectionnez ... (points de suspension) en haut à droite du service, puis sélectionnez **Imprimer le tableau de bord**.
 
