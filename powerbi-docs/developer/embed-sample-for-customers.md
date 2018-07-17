@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: d9e2f76c63ee9ebff01080686277a3fbb5af46f3
-ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
+ms.openlocfilehash: a8833cb6b41ea76d50814975ada6239690a0c196
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37900074"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877415"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application pour les clients
 Avec **Power BI Embedded dans Azure**, vous pouvez incorporer des rapports, des tableaux de bord et des vignettes dans une application à l’aide de l’exemple **App Owns Data (L’application possède les données)**. **Application possède des données** vise à permettre d’avoir une application qui utilise Power BI comme sa plateforme d’analyse incorporée. Ce scénario concerne généralement les **développeurs des éditeurs de logiciels indépendants**. En tant que **développeur chez un éditeur de logiciels indépendant**, vous pouvez créer du contenu Power BI qui affiche des rapports, des tableaux de bord ou des vignettes dans une application qui est entièrement intégrée et interactive, sans exiger des utilisateurs de l’application qu’ils disposent d’une licence Power BI, ou même qu’ils sachent que c’est Power BI qui se cache derrière. Ce tutoriel montre comment intégrer un rapport dans une application avec le Kit de développement logiciel (SDK) **Power BI** .NET ainsi que l’API JavaScript **Power BI** en utilisant **Power BI Embedded dans Azure**  pour vos clients suivant un modèle **L’application possède les données**.
@@ -54,7 +54,7 @@ Inscrivez votre application sur Azure Active Directory pour l’autoriser à a
     ![Recherche d’inscription d’application](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Nouvelle inscription d’application](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Suivez les invites pour créer une application. Dans le cas où les applications possèdent les données, il est nécessaire d’utiliser le type d’application **Natif**. Vous devez également indiquer un **URI de redirection**, qui sera utilisé par **Azure AD** pour retourner des réponses de jeton. Entrez une valeur propre à votre application (par exemple, `http://localhost:13526/redirect`).
+4. Suivez les invites pour créer une application. Dans le cas où les applications possèdent les données, il est nécessaire d’utiliser le type d’application **Natif**. Vous devez également indiquer un **URI de redirection**, qui sera utilisé par **Azure AD** pour retourner des réponses de jeton. Entrez une valeur propre à votre application (par exemple, `http://localhost:13526/Redirect`).
 
     ![Créer une application](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
