@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 07/03/2018
 ms.author: maghan
-ms.openlocfilehash: ad23161985cc2721562cfdfd9128e326db887ece
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b3c9599ea3ce01094bb75d9b036fb25b1ca7109a
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813155"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926556"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Résolution des problèmes de votre application incorporée
 
@@ -96,6 +96,44 @@ Le backend de l’application doit peut-être actualiser le jeton d’authentifi
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
+## <a name="authentication"></a>Authentification
+
+### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Échec de l’authentification avec AADSTS70002 ou AADSTS50053
+
+**(AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect)**
+
+Si vous utilisez à la fois Power BI Embedded et l’authentification directe Azure AD et que vous obtenez des messages au moment de vous connecter, tels que ***error: unauthorized_client,error_description:AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect***, cela est dû au fait que l’authentification directe est désactivée depuis le 14/06/2018.
+
+Nous vous recommandons d’utiliser la prise en charge de l’[accès conditionnel Azure AD](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/) pour bloquer l’authentification héritée ou d’utiliser l’[authentification directe Azure AD Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+
+Cependant, il existe un moyen de la réactiver en utilisant une [stratégie Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) dont la portée peut être limitée à l’organisation ou à un [principal du service](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+
+**_Nous vous recommandons de recourir à cette option qu’au cas par cas, selon l’application, et uniquement si vous avez besoin d’une solution de contournement._**
+
+Pour créer cette stratégie, vous devez être **administrateur général** de l’annuaire dans lequel vous créez et affectez la stratégie. Voici un exemple de script qui vous montre comment créer la stratégie et l’affecter au principal du service de l’application :
+
+1. Installez le [module PowerShell Azure AD (Préversion)](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+
+2. Exécutez les commandes PowerShell ci-dessous ligne par ligne (en veillant à ce que la variable $sp n’ait pas plus de 1 application en résultat).
+
+```powershell
+Connect-AzureAD
+```
+
+```powershell
+$sp = Get-AzureADServicePrincipal -SearchString "Name_Of_Application"
+```
+
+```powershell
+$policy = New-AzureADPolicy -Definition @("{`"HomeRealmDiscoveryPolicy`":{`"AllowCloudPasswordValidation`":true}}") -DisplayName EnableDirectAuth -Type HomeRealmDiscoveryPolicy -IsOrganizationDefault $false
+```
+
+```powershell
+Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id 
+```
+
+Après avoir affecté la stratégie et avant d’effectuer un test, attendez environ 15 à 20 secondes, le temps qu’elle se propage.
+
 **La génération du jeton échoue lors de la fourniture de l’identité effective**
 
 GenerateToken peut échouer, quand une identité effective est fournie, pour différentes raisons.
@@ -113,6 +151,30 @@ Pour vérifier le motif de l’erreur, essayez ce qui suit.
 * Si IsEffectiveIdentityRolesRequired est défini sur True, le rôle est requis.
 * L’ID du jeu de données est obligatoire pour les identités effectives.
 * Pour Analysis Services, l’utilisateur principal doit être un administrateur de passerelle.
+
+### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094 : L’octroi nécessite une autorisation de l’administrateur
+
+**_Symptômes :_**</br>
+Quand un utilisateur non-administrateur tente de se connecter à une application pour la première fois et octroie un consentement, il obtient l’erreur suivante :
+* Le test de consentement nécessite une autorisation d’accès aux ressources de votre organisation que seul un administrateur peut accorder. Demandez à un administrateur de vous accorder une autorisation d’accès à cette application avant de l’utiliser.
+* AADSTS90094 : L’octroi nécessite une autorisation de l’administrateur.
+
+    ![Test de consentement](media/embedded-troubleshoot/consent-test-01.png)
+
+Un utilisateur administrateur peut se connecter et octroyer un consentement.
+
+**_Cause racine :_**</br>
+Le consentement de l’utilisateur est désactivé pour le locataire.
+
+**_Plusieurs solutions sont possibles :_**
+
+*Activez le consentement de l’utilisateur pour l’ensemble du locataire (tous les utilisateurs, toutes les applications)*
+1. Dans le portail Azure, accédez à « Azure Active Directory » => « Utilisateurs et groupes » => « Paramètres utilisateur »
+2. Activez « Les utilisateurs peuvent autoriser les applications à accéder aux données de l’entreprise en leur nom », puis enregistrez les modifications.
+
+    ![Correctif du test de consentement](media/embedded-troubleshoot/consent-test-02.png)
+
+*Octroyer des autorisations par un administrateur* Octroyer des autorisations d’accès à l’application par un administrateur (soit pour l’ensemble du locataire, soit pour un utilisateur spécifique).
 
 ## <a name="data-sources"></a>Sources de données
 
@@ -175,7 +237,7 @@ Quand vous exécutez l’exemple d’application **Embed for your organization**
 
     AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
 
-La raison en est que l’URL de redirection spécifiée pour l’application de serveur web est différente de l’URL de l’exemple. Si vous voulez inscrire l’exemple d’application, utilisez *http://localhost:13526/*  comme URL de redirection.
+La raison en est que l’URL de redirection spécifiée pour l’application de serveur web est différente de l’URL de l’exemple. Si vous voulez inscrire l’exemple d’application, utilisez `http://localhost:13526/` comme URL de redirection.
 
 Si vous voulez modifier l’application inscrite, découvrez comment modifier [l’application inscrite auprès d’AAD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), pour que l’application puisse fournir l’accès aux API web.
 

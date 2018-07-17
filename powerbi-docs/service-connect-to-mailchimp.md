@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6a62b97a4c7d75644bd3a824118414509ef8438f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: f54841b77d79854334ddb6d93ccdc9b5926201ac
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241179"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136699"
 ---
 # <a name="connect-to-mailchimp-with-power-bi"></a>Se connecter à MailChimp avec Power BI
 Le pack de contenu Power BI extrait des données de votre compte MailChimp et génère un tableau de bord, un ensemble de rapports et un jeu de données qui vous permettent d’explorer vos données. Exploitez la fonctionnalité d’analyse pour créer des [tableaux de bord MailChimp](https://powerbi.microsoft.com/integrations/mailchimp) et identifier rapidement les tendances de vos campagnes, rapports et abonnés. Les données sont actualisées tous les jours. Ainsi, vous êtes sûr que les données que vous utilisez sont à jour.
@@ -51,7 +51,7 @@ Connectez-vous au [pack de contenu MailChimp](https://app.powerbi.com/getdata/se
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Prise en main de Power BI](service-get-started.md)
+[Qu’est-ce que Power BI ?](power-bi-overview.md)
 
 [Power BI – Concepts de base](service-basic-concepts.md)
 

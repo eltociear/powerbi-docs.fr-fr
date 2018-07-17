@@ -1,7 +1,7 @@
 ## <a name="firewall-or-proxy"></a>Pare-feu ou proxy
 Pour plus d’informations sur la fourniture d’informations de proxy pour votre passerelle, consultez [Configuration des paramètres de proxy pour les passerelles Power BI](../service-gateway-proxy.md).
 
-Vous pouvez effectuer un test pour voir si votre pare-feu ou votre proxy risque de bloquer des connexions en exécutant la commande [Test-NetConnection](https://technet.microsoft.com/library/dn372891.aspx) à partir d’une invite PowerShell. Cette opération teste la connectivité à Azure Service Bus. Ce test s’applique uniquement à la connectivité réseau et ne concerne pas le service du serveur cloud ni la passerelle. Il permet de déterminer si votre ordinateur peut réellement atteindre Internet.
+Vous pouvez effectuer un test pour voir si votre pare-feu ou proxy bloque les connexions en exécutant [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection) à partir d’une invite PowerShell. Cette opération teste la connectivité à Azure Service Bus. Ce test s’applique uniquement à la connectivité réseau et ne concerne pas le service du serveur cloud ni la passerelle. Il permet de déterminer si votre ordinateur peut réellement atteindre Internet.
 
     Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a604f50889d4443ba7c8e7da580275e579f69d15
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301823"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965501"
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -99,6 +99,8 @@ Pour plus d’informations sur les journaux d’audit, consultez [Audit de Power
 ## <a name="tenant-settings"></a>Paramètres du client
 
 Le troisième onglet du portail d’administration est **Paramètres du client**. Les paramètres client vous permettent de décider des fonctionnalités qui doivent être mises à la disposition de votre organisation. Si vous vous inquiétez pour vos données sensibles, certaines de nos fonctionnalités peuvent ne pas être adaptées à votre organisation, ou nous vous recommandons d’attribuer certaines fonctionnalités à des groupes précis. Si c’est le cas, vous pouvez les désactiver dans votre client.
+
+Par exemple, les données par utilisateur sont activées par défaut pour les métriques d’utilisation et les informations de compte de créateur de contenu sont incluses dans le rapport des métriques. Si vous ne souhaitez pas inclure ces informations pour tout ou partie des utilisateurs, désactivez la fonctionnalité pour des groupes de sécurité spécifiés ou pour l’ensemble de l’organisation. Les informations de compte figurent alors dans le rapport sous l’intitulé *Sans nom*.
 
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -235,7 +237,7 @@ Les utilisateurs de l’organisation peuvent manipuler et partager des visuels p
 
 ## <a name="r-visuals-settings"></a>Paramètres des visuels R
 
-### <a name="interact-with-an-dshare-r-visuals"></a>Utiliser et partager des éléments visuels R
+### <a name="interact-with-and-share-r-visuals"></a>Utiliser et partager des éléments visuels R
 
 Les utilisateurs de l’organisation peuvent manipuler et partager des visuels créés avec des scripts R. [En savoir plus](service-r-visuals.md)
 

@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/22/2018
 ms.author: maghan
-ms.openlocfilehash: 806ec6051cf8b77dfe17664d82e6add40147f0ed
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: d41b0a84d512c5ef6cebf810a89fd74a838c672e
+ms.sourcegitcommit: 9efb94ddb254e9c03e9871ad232509065ee24bf2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301731"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864350"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
 La sécurité au niveau des lignes peut être utilisée pour restreindre l’accès aux données dans des tableaux de bord, vignettes, rapports et jeux de données. Plusieurs utilisateurs différents peuvent utiliser ces mêmes artefacts tout en voyant différentes données. L’incorporation prend en charge la sécurité au niveau des lignes.
@@ -65,11 +65,11 @@ Voici comment procéder :
 3. Dans la table **District (Secteur)**, entrez l’expression DAX suivante : **[Directeur régional] = USERNAME()**.
    
     ![Instruction DAX pour la règle de sécurité au niveau des lignes](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. Pour vous assurer que les règles fonctionnent, sous l’onglet **Modélisation**, sélectionnez **Afficher comme rôles**, puis sélectionnez le rôle **Manager (Directeur)** que vous venez de créer, ainsi que **Autre utilisateur**. Entrez **Andrew Ma** pour l’utilisateur.
+4. Pour vérifier que les règles fonctionnent, sous l’onglet **Modélisation**, sélectionnez **Afficher comme rôles**, puis sélectionnez le rôle **Manager (Directeur)** que vous venez de créer, ainsi que **Autres utilisateurs**. Entrez **AndrewMa** pour l’utilisateur.
    
     ![Boîte de dialogue Afficher comme rôles](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
    
-    Les rapports affichent maintenant les données comme si vous étiez connecté en tant que **Andrew Ma**.
+    Les rapports affichent maintenant les données comme si vous étiez connecté sous le nom **AndrewMa**.
 
 Appliquer le filtre comme vous l’avez fait ici a pour effet de filtrer tous les enregistrements des tables **District (Secteur)**, **Store (Magasin)** et **Sales (Ventes)**. Toutefois, en raison de la direction du filtrage sur les relations entre **Sales** et **Time**, **Sales** et **Item**, et **Item** et **Time**, les tables ne sont pas filtrées. Pour en savoir plus sur le filtrage croisé bidirectionnel, téléchargez le livre blanc [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 

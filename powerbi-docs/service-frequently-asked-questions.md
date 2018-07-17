@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/01/2018
+sktopms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6341d5b3bba051cc31fe95f526450e03c14d4b69
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964811"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145384"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 * Si vous avez des questions, [essayez d’interroger la communauté Power BI](http://community.powerbi.com/).
@@ -30,7 +30,7 @@ Power BI Pro est une licence individuelle qui autorise l’accès à la totalit�
 Premium offre une capacité dédiée pour fournir des performances plus cohérentes et une prise en charge de plus grands volumes de données dans Power BI. Pour les utilisateurs individuels, Premium permet également une large distribution de contenu par les utilisateurs Pro sans nécessiter de licences par utilisateur pour que les destinataires voient le contenu.
 
 ## <a name="how-much-does-power-bi-cost"></a>Combien coûte Power BI ?
-Power BI Desktop est gratuit. Un essai gratuit de 60 jours est disponible pour Power BI Pro. Découvrez les prix dans la page de [tarification de Power BI](https://powerbi.microsoft.com/pricing).
+Power BI Desktop est gratuit. Une version d’évaluation gratuite de 60 jours est disponible pour Power BI Pro. En savoir plus sur la tarification à la page sur la [tarification de Power BI](https://powerbi.microsoft.com/pricing).
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Où trouver des réponses à mes questions sur Power BI Premium ?
 Pour les questions relatives à Power BI Premium, consultez [Questions fréquentes Power BI Premium](service-premium-faq.md).
@@ -54,7 +54,7 @@ Oui, une tarification est disponible pour les associations à but non lucratif e
 Le service Power BI [https://powerbi.com](https://powerbi.com) n’est pas disponible en tant que service cloud interne et privé. Toutefois, vous avez trois autres options pour l’affichage et l’utilisation des données en local. 
 
 ### <a name="on-premises-data-gateway"></a>Passerelle de données locale
-Power BI et Power BI Desktop vous permettent de vous connecter en toute sécurité à vos propres sources de données locales. Avec la [passerelle de données locale](service-gateway-onprem.md), vous pouvez vous connecter en direct à votre serveur SQL Server Analysis Services local et aux autres sources de données. Vous pouvez également définir l’actualisation planifiée avec une passerelle centralisée. Si aucune passerelle n’est disponible, vous pouvez actualiser les données à partir de sources de données locales à l’aide de [Power BI Gateway - Personal](personal-gateway.md).
+Power BI et Power BI Desktop vous permettent de vous connecter en toute sécurité à vos propres sources de données locales. Avec la [passerelle de données locale](service-gateway-onprem.md), vous pouvez vous connecter en direct à votre serveur SQL Server Analysis Services local et aux autres sources de données. Vous pouvez également définir l’actualisation planifiée avec une passerelle centralisée. Si aucune passerelle n’est disponible, vous pouvez actualiser les données à partir de sources de données locales à l’aide de [Power BI Gateway - Personal](service-gateway-personal-mode.md).
 
 ### <a name="power-bi-report-server"></a>Power BI Report Server
 Power BI Report Server est une solution que vous déployez localement pour créer, publier et gérer des rapports, puis les remettre aux utilisateurs appropriés de différentes façons : dans un navigateur web, sur leur appareil mobile ou par l’envoi d’un courrier à leur boîte aux lettres. En savoir plus sur [Power BI Report Server](report-server/get-started.md).
@@ -138,6 +138,7 @@ Comme de nombreux autres services et logiciels Microsoft, Power BI permet d’a
 * Pour **annuler** votre dernière action ou les quelques actions précédentes, appuyez sur Ctrl+Z.
 
 ## <a name="next-steps"></a>Étapes suivantes
+* [Qu’est-ce que Power BI ?](power-bi-overview.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 * Le problème persiste ? Visitez la [page de support Power BI](https://powerbi.microsoft.com/support/).
 

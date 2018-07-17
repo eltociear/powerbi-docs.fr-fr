@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 53c4250949a696f4abbd0722cf89207f2c8d37c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 166d61c78f8e85a91dafa5de698d782b456834a7
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813845"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37601634"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -28,7 +28,7 @@ Les liens en regard de chaque mise à jour signifient ce qui suit :
 * Des extraits **[vidéo]** présentant la fonctionnalité sont disponibles dans un nouvel onglet de navigateur.
 * Certaines fonctionnalités ont un **[article]** qui fournit plus de détails.
 * La plupart des fonctionnalités sont expliquées dans le billet de **[blog]** sur la mise à jour mensuelle.
-* Enfin, certaines fonctionnalités sont explicites et ne disposent d’aucun article ou vidéo.
+* Enfin, certaines fonctionnalités sont explicites et ne nécessitent pas d’article ou de vidéo.
 
 Vous pouvez également regarder la vidéo sur les **dernières mises à jour** dès le début, directement dans cet article, en cliquant sur l’icône de **lecture** sur l’image vidéo située sous la liste des mises à jour.
 
@@ -255,7 +255,7 @@ Les liens en regard de chaque mise à jour signifient ce qui suit :
 * Des extraits **[vidéo]** présentant la fonctionnalité sont disponibles dans un nouvel onglet de navigateur.
 * Certaines fonctionnalités ont un **[article]** qui fournit plus de détails.
 * La plupart des fonctionnalités sont expliquées dans le billet de **[blog]** sur la mise à jour mensuelle.
--   Enfin, certaines fonctionnalités sont explicites et ne disposent d’aucun article ou vidéo.
+* Enfin, certaines fonctionnalités sont explicites et ne disposent d’aucun article ou vidéo.
 
 Vous pouvez également regarder la vidéo sur les **dernières mises à jour** du mois dès le début, directement dans cet article, en cliquant sur l’icône de **lecture** sur l’image vidéo située sous la liste des mises à jour.
 
@@ -1844,15 +1844,15 @@ Cette mise à jour comprend les nouvelles fonctionnalités et les améliorations
     -   Aperçu amélioré des sources multidimensionnelles (Analysis Services et SAP BusinessObjects)
     -   Option Afficher les éléments sélectionnés
     -   Amélioration des fonctionnalités de recherche dans l’arborescence du navigateur
--   Nouvelles Transformations
-    -   Opérations Âge et Soustraire pour les colonnes Date/Heure
-    -   Colonnes d’agrégation : option permettant de désactiver le préfixe des nouvelles colonnes
--   Améliorations apportées à la liste des champs
-    -   Développer/réduire des tables
-    -   Masquer/afficher des champs
-    -   Disposition optimisée (espacement, marges et polices)
--   Prise en charge du clavier pour la navigation au sein des pages d’un rapport
--   Résolution de nombreux bogues
+- Nouvelles Transformations
+  -   Opérations Âge et Soustraire pour les colonnes Date/Heure
+  -   Colonnes d’agrégation : option permettant de désactiver le préfixe des nouvelles colonnes
+- Améliorations apportées à la liste des champs
+  -   Développer/réduire des tables
+  -   Masquer/afficher des champs
+  -   Disposition optimisée (espacement, marges et polices)
+- Prise en charge du clavier pour la navigation au sein des pages d’un rapport
+- Résolution de nombreux bogues
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 

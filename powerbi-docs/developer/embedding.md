@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 06/22/2018
 ms.author: maghan
-ms.openlocfilehash: 2e899593cbe3453381dd2d3457cec97467aec4d6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 82a4c9c58567f5ace943363b7bed59fa744e85a5
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561744"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944097"
 ---
 # <a name="embedding-with-power-bi"></a>Incorporation avec Power BI
 Power BI fournit des API pour l’incorporation de vos tableaux de bord et rapports dans des applications. Les API Power BI offrent un ensemble cohérent de fonctionnalités et l’accès aux dernières fonctionnalités de Power BI telles que des tableaux de bord, des passerelles et des espaces de travail d’application lors de l’incorporation de contenu.
@@ -29,7 +29,7 @@ Reportez-vous à [Exemple de JavaScript incorporé](https://microsoft.github.io/
 ## <a name="embedding-for-your-organization"></a>Incorporation pour votre organisation
 L’incorporation pour votre organisation vous permet d’étendre le service Power BI. Pour voir son contenu, l’utilisateur de votre application doit se connecter au service Power BI. Une fois qu’un utilisateur de votre organisation est connecté, il a uniquement accès aux tableaux de bord et rapports dont il est propriétaire ou qui ont été partagés avec lui dans le service Power BI. 
 
-*Une application web interne, le composant WebPart SharePoint Online et l’intégration de Microsoft Teams sont des exemples d’incorporation pour votre organisation.*
+*Une application web interne, le composant WebPart SharePoint Online et l’intégration de Microsoft Teams [sont des exemples d’incorporation pour votre organisation (vous devez disposer de droits d’administrateur)](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/).*
 
 Pour l’incorporation s’adressant à votre organisation, consultez les procédures suivantes :
 

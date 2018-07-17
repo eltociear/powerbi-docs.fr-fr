@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2761b2bd1230e18b5dd4e0b69342e55ed33d0983
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e44d4bb48289b515797167fb3b91a9bbf0d2bcdd
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250823"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092158"
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Se connecter à UserVoice avec Power BI
 Le suivi et l’exploration de vos données UserVoice sont faciles avec Power BI et le pack de contenu UserVoice. Power BI récupère vos données, y compris les tickets, les suggestions et les indices de satisfaction, puis génère un tableau de bord prêt à l’emploi et des rapports basés sur ces données.
@@ -35,7 +35,7 @@ Connectez-vous au [pack de contenu UserVoice](https://app.powerbi.com/getdata/se
 3. Sélectionnez **UserVoice**, puis **Obtenir**.
    
    ![](media/service-connect-to-uservoice/uservoice.png)
-4. Quand vous y êtes invité, entrez votre URL UserVoice. L’URL doit être exactement conforme au modèle suivant https://fabrikam.uservoice.com en remplaçant « fabrikam » par le nom de votre produit ou service.
+4. Quand vous y êtes invité, entrez votre URL UserVoice. L’URL doit être exactement conforme au modèle suivant `https://fabrikam.uservoice.com` en remplaçant « fabrikam » par le nom de votre produit ou service.
    
    >[!NOTE]
    >Il n’existe aucune barre oblique finale et la connexion utilise http**s**.
@@ -63,7 +63,7 @@ Connectez-vous au [pack de contenu UserVoice](https://app.powerbi.com/getdata/se
 
 Si vous voyez cette erreur après avoir tapé votre URL UserVoice Assurez-vous que les conditions suivantes sont remplies :
 
-* L’URL est exactement conforme au modèle « https://fabrikam.uservoice.com » en remplaçant « fabrikam » par le préfixe correct de votre URL UserVoice.
+* L’URL est exactement conforme au modèle `https://fabrikam.uservoice.com` en remplaçant « fabrikam » par le préfixe correct de votre URL UserVoice.
 * Assurez-vous que toutes les lettres sont en minuscules.
 * Vérifiez que l’URL utilise « http**s** ».
 * Assurez-vous qu’il n’existe aucune barre oblique finale à la fin de l’URL.

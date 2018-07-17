@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 236a3d1bde84d4259d921d44730057a4e2fd3591
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e1320135ba0abb737a487036948c2822d0c337ae
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34256745"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136499"
 ---
 # <a name="spark-on-hdinsight-with-directquery"></a>Spark dans HDInsight avec DirectQuery
 Spark dans Azure HDInsight avec DirectQuery vous permet de créer des rapports dynamiques basés sur les données et les métriques déjà présentes dans votre cluster Spark. Avec DirectQuery, les requêtes sont renvoyées à votre cluster Spark Azure HDInsight pendant que vous explorez les données dans l’affichage du rapport. Cette fonctionnalité est conseillée aux utilisateurs qui connaissent bien les entités auxquelles ils se connectent.
@@ -26,6 +26,10 @@ Spark dans Azure HDInsight avec DirectQuery vous permet de créer des rapports d
 > 
 
 Suivez cette procédure pour vous connecter à votre source de données Spark dans Azure HDInsight à l’aide de DirectQuery dans le service Power BI.
+
+> [!Important]
+> Nous avons amélioré notre connectivité à Spark.  Pour une expérience optimale de connexion à votre source de données Spark, utilisez Power BI Desktop.  Une fois que vous avez créé votre modèle et votre rapport, vous pouvez publier ce dernier sur le service Power BI.  Le connecteur direct pour Spark rencontré dans le service Power BI est désormais déconseillé.
+>
 
 1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.
    
@@ -71,7 +75,7 @@ Vous pouvez également allouer des ressources supplémentaires au sein du portai
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Bien démarrer : Créer un cluster Apache Spark sur HDInsight Linux et exécuter des requêtes interactives à l’aide de Spark SQL](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
-[Prise en main de Power BI](service-get-started.md)  
+[Qu’est-ce que Power BI ?](power-bi-overview.md)  
 [Obtenir des données pour Power BI](service-get-data.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

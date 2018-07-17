@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 09/11/2017
 ms.author: mgblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 3cf20899e705328c9f63bdbede4c30bd69488762
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 52c6293bacb2cae1d74a7a0459c61fe3c3bc201f
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34298317"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944350"
 ---
 # <a name="power-bi-premium-release-notes"></a>Notes de publication Power BI Premium
 Il s’agit des notes de publication de Power BI Premium, une capacité dédiée qui offre à votre organisation ou à votre équipe des performances plus fiables, des volumes de données plus importants et la possibilité de distribuer du contenu sans licence par utilisateur pour les lecteurs.
 
-* Les utilisateurs disposant de licences Power BI gratuites peuvent désormais afficher les tableaux de bord partagés avec eux à partir d’espaces de travail Premium dans le service Power BI.
+* Tous les utilisateurs, quelle que soit la licence qui leur est attribuée, peuvent désormais consulter les tableaux de bord partagés avec eux à partir des espaces de travail Premium du service Power BI.
 * Les administrateurs de capacité reçoivent désormais automatiquement les autorisations d’affectation de capacité.
 * La sécurité au niveau des lignes (SNL) dynamique n’est pas encore disponible pour les cas d’utilisation incorporée. Pour plus d’informations, voir [Sécurité au niveau des lignes (SNL) avec une analytique incorporée](developer/embedded-row-level-security.md).
 * La distribution des applications Power BI aux utilisateurs des autres locataires AAD à l’aide de powerbi.com n’est pas encore prise en charge. Nous travaillons sur l’activation de cette fonctionnalité.

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/03/2018
 ms.author: maggies
-ms.openlocfilehash: 9cf6e1a0b4e711f696d9728850352a53ac8442f6
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 645e1e40867f52718f2ec79a17cf1b5525a3d951
+ms.sourcegitcommit: 9efb94ddb254e9c03e9871ad232509065ee24bf2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34799622"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37864396"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,16 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](service-whats-new.md)  
+
+## <a name="june-2018"></a>Juin 2018
+
+### <a name="full-canvas-reports"></a>Rapports en mode Zone de dessin complète
+
+Désormais, les barres d’action du haut et du bas disparaissent peu après le chargement de votre rapport pour vous permettre de voir immédiatement une plus grande partie du rapport.
+
+### <a name="increased-phone-report-canvas-size"></a>Canevas plus grand pour les rapports sur téléphone
+
+Nous avons agrandi le canevas de rapport sur téléphone de façon à avoir de la place pour davantage de visuels.
 
 ## <a name="may-2018"></a>May 2018
 

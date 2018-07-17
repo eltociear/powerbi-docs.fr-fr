@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/22/2018
+ms.date: 06/20/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6efd54d868a5a1f2d8d657d352c7133d4036b0b6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 25aa03c12b36bf19c05fe01dc6c24a0e4a3a2416
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34254829"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965294"
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Créer et publier des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -22,17 +22,15 @@ Dans Power BI, vous pouvez créer des *applications* qui rassemblent des tableau
 
 ![Applications Power BI](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-Vos utilisateurs en entreprise ont souvent besoin de plusieurs tableaux de bord et rapports Power BI pour effectuer leur travail. Les applications réunissent les éléments, de sorte qu’elles n’ont pas à mémoriser les noms et emplacements de tous ces tableaux de bord.  
-
-Avec les applications Power BI, actuellement en préversion, vous pouvez créer des collections de tableaux de bord et de rapports, et publier ces applications pour toute votre organisation, ou pour des personnes ou groupes spécifiques. Pour vous, en tant que créateur de rapports ou en tant qu’administrateur, les applications facilitent la gestion des autorisations sur les collections de tableaux de bord.
+Vos utilisateurs en entreprise ont souvent besoin de plusieurs tableaux de bord et rapports Power BI pour effectuer leur travail. Les applications réunissent les éléments, de sorte qu’elles n’ont pas à mémoriser les noms et emplacements de tous ces tableaux de bord. Avec les applications Power BI, vous pouvez créer des collections de tableaux de bord et de rapports et publier ces applications pour toute votre organisation ou pour des personnes ou groupes spécifiques. Pour vous, en tant que créateur de rapports ou en tant qu’administrateur, les applications facilitent la gestion des autorisations sur les collections de tableaux de bord.
 
 Les utilisateurs obtiennent vos applications de différentes manières. Si l’administrateur Power BI vous y autorise, vous pouvez les installer automatiquement dans les comptes Power BI de vos collègues. Autrement, ceux-ci peuvent installer vos applications à partir de Microsoft AppSource ou d’un lien direct que vous leur envoyez. Ils peuvent facilement trouver et revenir à votre contenu, car celui-ci figure dans un emplacement unique. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour en savoir plus, voir l’[expérience d’application pour les utilisateurs professionnels](service-install-use-apps.md).
 
 ### <a name="licenses-for-apps"></a>Licences pour des applications
-En tant que créateur d’application, vous avez besoin d’une licence Power BI Pro. Pour les utilisateurs de votre application, il existe deux options.
+En tant que créateur d’application, vous avez besoin d’une licence Power BI Pro. Pour afficher votre application, les utilisateurs ont le choix entre deux options.
 
-* Option 1 : tous les utilisateurs professionnels ont besoin de licences **Power BI Pro** pour consulter votre application. 
-* Option 2 : les utilisateurs gratuits de votre organisation peuvent consulter le contenu de l’application si votre application se trouve dans une capacité Premium de Power BI. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
+* Option 1 : une licence **Power BI Pro** leur est attribuée. 
+* Option 2 : aucune licence **Power BI Pro** ne leur a été attribuée, mais l’application réside dans une capacité Power BI Premium. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
 
 ### <a name="apps-and-organizational-content-packs"></a>Applications et packs de contenu d’organisation
 Les applications sont l’évolution des packs de contenu d’organisation. Si vous avez déjà des packs de contenu d’organisation, ceux-ci continuent à fonctionner parallèlement aux applications.
@@ -49,7 +47,7 @@ Vous pouvez ajouter des collègues à ces espaces de travail en tant que membres
 
 Lorsque le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous publiez l’application. Vous pouvez envoyer un lien direct à un public plus large, ou les destinataires de votre application peuvent trouver celle-ci sous l’onglet Applications en accédant à **Télécharger et explorer d’autres applications d’AppSource**. Ces personnes ne peuvent pas modifier le contenu de l’application, mais peuvent interagir avec celle-ci dans le service Power BI ou dans l’une des applications mobiles en filtrant, en mettant en surbrillance et triant elles-mêmes les données. 
 
-## <a name="create-an-app-workspace"></a>Créer un espace de travail d’application
+## <a name="create-an-app-workspace"></a>Créer un espace de travail d'application
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
 
 L’espace de travail étant vide, vous allez maintenant y ajouter du contenu. Notez que lorsque vous créez l’espace de travail pour la première fois, il peut se passer une heure environ avant qu’il se propage à Office 365. 
@@ -100,7 +98,7 @@ Lorsque les tableaux de bord et rapports dans votre espace de travail d’applic
 
 2. En haut à droite, sélectionnez le bouton **Publier l’application** pour démarrer le processus de partage de tout le contenu de cet espace de travail.
    
-     ![Publier l'application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
+     ![Publier l’application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
 3. Dans **Détails**, remplissez la description pour aider les utilisateurs à trouver l’application. Vous pouvez définir une couleur d’arrière-plan pour personnaliser l’application.
    

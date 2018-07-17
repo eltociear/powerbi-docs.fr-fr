@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 36351491f7cb99a2e597ef4fd498ef7c38da386e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: dd9b5b9f9db95b73a7001c34bcabcd2deacb8b4c
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34243888"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136559"
 ---
 # <a name="sql-database-auditing-content-pack-for-power-bi"></a>Pack de contenu SQL Database Auditing pour Power BI
 Le pack de contenu Azure [SQL Database Auditing](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) pour Power BI vous permet de comprendre l’activité de votre base de données, ainsi que les écarts et les anomalies pouvant indiquer des problèmes au niveau de l’activité de votre entreprise ou des violations potentielles de sécurité. 
@@ -68,5 +68,5 @@ Connectez-vous au [pack de contenu SQL Database Auditing](https://app.powerbi.co
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Obtenir des données pour Power BI](service-get-data.md)
-[Prise en main de Power BI](service-get-started.md)
+[Obtenir des données pour Power BI](service-get-data.md)
+[Qu’est-ce que Power BI ?](power-bi-overview.md)

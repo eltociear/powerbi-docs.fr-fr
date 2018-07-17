@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d350593f3a5168d959711e1ca2bbbd8a86524187
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a69cccafa9651bbda44ea2154ebe68463c9da907
+ms.sourcegitcommit: 7e0335bd8c263b5f8ba4303b986ddc450d842297
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34288058"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36330119"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
 Les **signets** de Power BI permettent de capturer la vue actuellement configurée d’une page de rapport, filtrage et état des visuels compris, puis de revenir à cet état en sélectionnant simplement le signet enregistré. 
@@ -56,9 +56,9 @@ Configurez une page de rapport comme vous souhaitez qu’elle apparaisse dans le
 
 ![Ajouter un signet](media/desktop-bookmarks/bookmarks_04.png)
 
-**Power BI Desktop** crée un signet et lui donne un nom générique. Vous pouvez facilement *renommer*, *supprimer* ou *mettre à jour* un signet en sélectionnant les points de suspension en regard de son nom, puis en choisissant une action dans le menu qui s’affiche.
+**Power BI Desktop** crée un signet et lui donne un nom générique. Vous pouvez facilement *renommer*, *supprimer* ou *mettre à jour* un signet en sélectionnant les points de suspension en regard de son nom, puis en sélectionnant une action dans le menu qui s’affiche.
 
-![Sélectionnez le sous-menu d’un signet en utilisant les points de suspension.](media/desktop-bookmarks/bookmarks_05.png)
+![Sélectionnez le sous-menu d’un signet en utilisant les points de suspension](media/desktop-bookmarks/bookmarks_05.png)
 
 Une fois que vous avez un signet, vous pouvez l’afficher en cliquant simplement dessus dans le volet **Signets**. 
 
@@ -120,7 +120,7 @@ La fonctionnalité **À la une** est également fournie avec les signets. Avec l
 Comparons les modes **À la une** et **Focus** pour voir en quoi ils diffèrent.
 
 1. En mode **focus**, vous pouvez avoir un visuel qui remplit l’intégralité du canevas en sélectionnant l’**icône Mode focus**.
-2. À l’aide du mode **À la une**, vous pouvez mettre en surbrillance un visuel dans sa taille d’origine, et atténuer tous les autres visuels en les rendant presque transparents. 
+2. En utilisant le mode **À la une**, vous pouvez mettre en évidence un visuel dans sa taille d’origine et atténuer tous les autres visuels en les rendant presque transparents. 
 
 ![Comparer les modes Focus et À la une](media/desktop-bookmarks/bookmarks_11.png)
 
@@ -128,7 +128,7 @@ Lorsque le visuel dans l’image précédente a l’icône **focus** activée, l
 
 ![mode Focus](media/desktop-bookmarks/bookmarks_12.png)
 
-En revanche, lorsque **À la une** est sélectionné dans le menu contextuel du visuel, la page ressemble à ce que vous avez vu ici :
+En revanche, quand **À la une** est sélectionné dans le menu des points de suspension du visuel, la page ressemble à ce que vous voyez ici :
 
 ![mode À la une](media/desktop-bookmarks/bookmarks_13.png)
 

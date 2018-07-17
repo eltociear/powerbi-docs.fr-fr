@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 3be6882219e23a2d22ee03e6805ce3a1e8e08b8f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fb05b6fd2378c8fe2b6dec35250df31d227b7760
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297719"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135441"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Créer un lien vers un emplacement spécifique dans les applications mobiles Power BI
 Vous pouvez créer et utiliser un URI pour créer un lien vers un emplacement spécifique (*lien ciblé*) dans les applications mobiles Power BI sur toutes les plateformes mobiles : iOS, Android et Windows 10.
@@ -103,5 +103,5 @@ Vos commentaires nous aident à développer les futurs processus d’implémenta
 * [Applications Power BI pour appareils mobiles](mobile-apps-for-mobile-devices.md)
 * Suivez @MSPowerBI sur Twitter
 * Rejoindre la conversation de la [Communauté Power BI](http://community.powerbi.com/)
-* [Prise en main de Power BI](service-get-started.md)
+* [Qu’est-ce que Power BI ?](power-bi-overview.md)
 

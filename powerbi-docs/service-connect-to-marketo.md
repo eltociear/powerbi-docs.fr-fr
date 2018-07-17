@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3f7ad953f36830db74fb8e611dc9a0641498affd
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d3051537298ac8f8fb5fc8661cfca998a07fc625
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34252459"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135257"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Se connecter à Marketo avec Power BI
 Le pack de contenu Marketo pour Power BI permet d’explorer votre compte Marketo avec des données relatives à des prospects et à leurs activités. Créez cette connexion pour récupérer vos données et disposer automatiquement d’un tableau de bord et de rapports connexes basés sur ces données.
@@ -86,7 +86,7 @@ La quantité d’appels d’API que Power BI effectue à destination de Marketo
 | **Nombre total d’appels d’API** | |**2 200** |
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Prise en main de Power BI](service-get-started.md)
+[Qu’est-ce que Power BI ?](power-bi-overview.md)
 
 [Obtenir des données pour Power BI](service-get-data.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b4462d8ef5037cf4fe76a6ff061b7993e8d8ec44
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1ce4fe4e80138995e7ec356b92f31e45f3a2c920
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245602"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599781"
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Se connecter à Project Madeira avec Power BI
 Power BI et le pack de contenu Project « Madeira » facilitent l’analyse des données Project « Madeira ». Power BI récupère vos données, à la fois les données de ventes et les données financières, puis crée un tableau de bord par défaut et des rapports basés sur ces données.
@@ -33,7 +33,7 @@ Connectez-vous au [pack de contenu Project « Madeira » Analytics](https://ap
     ![](media/service-connect-to-project-madeira/services.png)
 3. Sélectionnez **Project « Madeira »**, puis sélectionnez **Obtenir**.  
     ![](media/service-connect-to-project-madeira/projectmadeira.png)
-4. Quand vous y êtes invité, entrez l’URL de Project « Madeira ». L’URL doit suivre exactement le modèle https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US'), avec le nom d’entreprise de Project « Madeira ». Notez l’absence de la barre oblique finale et notez également qu’il s’agit d’une connexion « https ». Pour savoir comment trouver cette URL, voir [ci-dessous](#FindingParams).  
+4. Quand vous y êtes invité, entrez l’URL de Project « Madeira ». L’URL doit suivre exactement le modèle <https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US>'), avec le nom d’entreprise Project « Madeira ». Notez l’absence de la barre oblique finale et notez également qu’il s’agit d’une connexion « https ». Pour savoir comment trouver cette URL, voir [ci-dessous](#FindingParams).  
    
     ![](media/service-connect-to-project-madeira/params.png)
 5. Quand vous y êtes invité, sélectionnez la méthode d’authentification de base, entrez l’adresse de messagerie de Project « Madeira » comme nom d’utilisateur, puis entrez la clé d’accès de service web du compte Project « Madeira » comme mot de passe. Si vous êtes déjà connecté à Project « Madeira » dans votre navigateur, vous ne serez peut-être pas invité à entrer vos informations d’identification. Pour savoir comment générer cette clé d’accès, voir [ci-dessous](#FindingParams).  
@@ -93,10 +93,10 @@ Le tableau de bord Power BI s’appuie sur les services web publiés qui sont r
 
 Si cette erreur apparaît une fois l’URL de Project « Madeira » entrée, vérifiez que les conditions suivantes sont remplies :  
 
-   - L’URL respecte exactement le modèle suivant : https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
-   - Supprimez le texte situé après le nom de la société entre parenthèses.  
-   - Assurez-vous qu’il n’existe aucune barre oblique finale à la fin de l’URL.  
-   - Vérifiez que l’URL utilise une connexion sécurisée (elle doit commencer par « https »).  
+- L’URL respecte exactement le modèle suivant : https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')  
+- Supprimez le texte situé après le nom de la société entre parenthèses.  
+- Assurez-vous qu’il n’existe aucune barre oblique finale à la fin de l’URL.  
+- Vérifiez que l’URL utilise une connexion sécurisée (elle doit commencer par « https »).  
 
 **« Échec de l’ouverture de session »** Si vous obtenez cette erreur quand vous vous connectez au tableau de bord à l’aide des informations identification de Project « Madeira », vous avez peut-être l’un des problèmes suivants :  
 
@@ -104,16 +104,16 @@ Si cette erreur apparaît une fois l’URL de Project « Madeira » entrée, v
    - L’instance de Project « Madeira » à laquelle vous essayez de vous connecter ne dispose pas d’un certificat SSL valide. Dans ce cas, vous verrez un message d’erreur plus détaillé (similaire à « Impossible d’établir une relation de confiance SSL »). Notez que les certificats auto-signés ne sont pas pris en charge.  
 
 **« Oups »** Si vous voyez ce message d’erreur après vous être authentifié, il est très probable que cela soit dû à un problème de connexion aux données du pack de contenu. Vérifiez que l’URL respecte le modèle suivant :  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')
 
 L’erreur la plus courante consiste à spécifier l’URL complète d’un service web :  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')/powerbifinance
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')/powerbifinance
 
 Il est possible, également, que vous ayez oublié de spécifier le nom de la société :   
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/
+    https://<em>mycronusus</em>.projectmadeira.com:7048/NAV/OData/
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Prise en main de Power BI](service-get-started.md)
+[Qu’est-ce que Power BI ?](power-bi-overview.md)
 
 [Power BI – Concepts de base](service-basic-concepts.md)
 

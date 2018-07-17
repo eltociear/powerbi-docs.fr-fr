@@ -896,8 +896,10 @@
           href: developer/what-can-you-do.md
     - name: Didacticiels
       items:
-        - name: Incorporer du contenu pour les clients
+        - name: Incorporer du contenu pour vos clients
           href: developer/embed-sample-for-customers.md
+        - name: Incorporer du contenu pour votre organisation
+          href: developer/embed-sample-for-your-organization.md
     - name: Concepts
       items:
         - name: Utilisation des API REST Power BI
@@ -934,12 +936,8 @@
               href: developer/embedding.md
             - name: Comment incorporer votre contenu
               href: developer/embedding-content.md
-            - name: Intégrer un tableau de bord dans une application (l’utilisateur possède les données)
-              href: developer/integrate-dashboard.md
-            - name: "Intégrer un vignette Power\_BI dans une application (l’utilisateur possède les données)"
-              href: developer/integrate-tile.md
-            - name: "Intégrer un rapport Power\_BI dans une application (l’utilisateur possède les données)"
-              href: developer/integrate-report.md
+            - name: Comment incorporer à partir d’une application
+              href: developer/embed-from-apps.md
             - name: Intégrer du contenu dans une application pour des clouds souverains (l’application est propriétaire des données)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Incorporer des dispositions personnalisées dans une application

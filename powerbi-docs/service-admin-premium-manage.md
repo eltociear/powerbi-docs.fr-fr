@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: d1535dcdd818c3c49c71df9b1b08f115f6091cfc
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 08d5d5b8d44d1ebceab2bb41ddbb244afda64fb6
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34295833"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945040"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gérer les capacités dans Power BI Premium et Power BI Embedded
 Découvrez comment vous pouvez gérer les capacités Power BI Premium et Power BI Embedded qui fournissent des ressources dédiées pour votre contenu.
@@ -211,6 +211,6 @@ La sélection de **Clé de Power BI Report Server** a pour effet d’afficher un
 Pour plus d’informations, consultez [Installer Power BI Report Server](report-server/install-report-server.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-Partagez des applications publiées avec les utilisateurs de la version gratuite lorsque vous affectez l’espace de travail à une capacité Premium. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](service-create-distribute-apps.md).
+Partager des applications publiées avec les utilisateurs. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](service-create-distribute-apps.md).
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

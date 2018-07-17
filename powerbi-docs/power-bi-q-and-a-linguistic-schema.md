@@ -7,15 +7,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c504280257a959ccd7a46e61b9d377c22b76c14d
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.openlocfilehash: 08a65e7d312b0f57ec2824431bd00456c06860be
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34471890"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945201"
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Modélisation du langage et schéma linguistique 
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et quand vos données y répondent, c’est encore plus efficace. C’est ce que vous permet de faire Questions et réponses dans Power BI. Quand vous posez une question dans Questions et réponses, cet outil essaie de vous donner la meilleure réponse possible. 
@@ -340,7 +340,7 @@ Un autre exemple serait d’ajouter une autre formulation, « les employés ven
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 Si vous apportez une modification à un fichier .lsdl.yaml qui n’est pas conforme au format du schéma linguistique, vous voyez maintenant s’afficher des lignes ondulées de validation pour signaler les problèmes : 
 
-    ![yaml file showing errors](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
+![fichier yaml présentant des erreurs](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
 
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

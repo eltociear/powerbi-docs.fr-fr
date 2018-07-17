@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 4680ab3709f1a2cbe56445e6719ea4de15396eb0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5601ab79832f2d52622f5c13ecd23f346408f08e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297650"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598622"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -40,7 +40,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *Par exemple, dans ce graphique en courbes, les valeurs sélectionnées sont **This Year Sales (Ventes de cette année)** et **Last Year Sales (Ventes de l’année dernière)** pour le mois d’**août**.*  
+   <em>Par exemple, dans ce graphique en courbes, les valeurs sélectionnées se rapportent à **This Year Sales (Ventes de cette année)</em>* et à **Last Year Sales (Ventes de l’année dernière)** pour le mois d’**août**.*  
    
    Dans un graphique en secteurs, appuyez sur un secteur du graphique pour afficher la valeur du segment en haut du graphique.  
    
@@ -107,7 +107,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   *Dans ce graphique à barres, les valeurs pour la barre **Décoration** sont indiquées en haut du graphique.*
+   <em>Dans ce graphique à barres, les valeurs pour la barre **Decor (Décoration)</em>* sont indiquées en haut du graphique.*
    
    Cliquez sur l’icône **Plein écran** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) pour ouvrir la vignette en mode Plein écran, sans les barres de navigation et de menus.
    
@@ -126,6 +126,6 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
 4. Appuyez sur la flèche ou le bouton Précédent pour fermer la vignette et revenir au tableau de bord.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Prise en main de Power BI](service-get-started.md)
+* [Qu’est-ce que Power BI ?](power-bi-overview.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

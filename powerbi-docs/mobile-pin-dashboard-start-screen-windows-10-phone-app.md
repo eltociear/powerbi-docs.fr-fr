@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/25/2018
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 5492ed25dc5bd803661186694e7f9d3f4e19c30f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 6ba62900206149f754f774f6bfd031aeb71f7437
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291555"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37134843"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Épingler un tableau de bord à l’écran d’accueil Windows 10 à partir de l’application mobile Power BI
 Vous pouvez épingler des tableaux de bord Power BI à l’écran d’accueil de Windows à partir de l’application mobile Power BI pour Windows 10. Ils deviennent des *vignettes dynamiques*. Lorsque vous appuyez sur la vignette sur l’écran d’accueil, le tableau de bord s’ouvre dans l’application mobile Power BI pour Windows 10.
@@ -34,6 +34,6 @@ Vous pouvez épingler des tableaux de bord Power BI à l’écran d’accueil de
 ## <a name="next-steps"></a>Étapes suivantes
 * [Télécharger l’application mobile Power BI pour Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) à partir du Windows Store  
 * [Prise en main de l’application mobile Power BI pour Windows 10](mobile-windows-10-phone-app-get-started.md)  
-* [Prise en main de Power BI](service-get-started.md)
+* [Qu’est-ce que Power BI ?](power-bi-overview.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

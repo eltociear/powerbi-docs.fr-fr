@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7793b79ad26fdb0b01f3dc2a01be02c47047ce9c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 0536dc6fd637db07c0e26a4ed7f0da1071b646eb
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34253297"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137419"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – Concepts de base du service Power BI
 
@@ -70,7 +70,7 @@ Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’appl
 **UN** jeu de données…
 
 * peut être utilisé plusieurs fois dans un ou plusieurs espaces de travail ;
-* peut être utilisé dans de nombreux rapports différents ;
+* peut être utilisé dans de nombreux rapports.
 * peut comprendre différentes visualisations, et ces visualisations peuvent être affichées dans de nombreux tableaux de bord différents.
   
   ![](media/service-basic-concepts/drawing2.png)
@@ -105,7 +105,7 @@ Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’appl
 
 * est contenu dans un seul espace de travail
 * peut être associé à plusieurs tableaux de bord au sein de cet espace de travail (les vignettes épinglées à partir de ce rapport peuvent apparaître sur plusieurs tableaux de bord).
-* peut être créé en utilisant les données d’un jeu de données (la seule exception à cela est que Power BI Desktop peut combiner plusieurs jeux de données dans un même rapport et que ce rapport peut être importé dans Power BI).
+* peut être créé à l'aide des données d'un jeu de données unique (la seule exception à cela est que Power BI Desktop peut combiner plusieurs jeux de données dans un même rapport et que ce rapport peut être importé dans Power BI).
   
   ![](media/service-basic-concepts/drawing3new.png)
 
@@ -231,7 +231,7 @@ Cette zone de l’écran contient des options supplémentaires pour interagir av
    ![](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Prise en main de Power BI](service-get-started.md)  
+[Qu’est-ce que Power BI ?](power-bi-overview.md)  
 [Navigation : Découverte du service Power BI](service-the-new-power-bi-experience.md)
 [Vidéos Power BI](videos.md)  
 [Éditeur de rapport - Suivre une visite guidée](service-the-report-editor-take-a-tour.md)

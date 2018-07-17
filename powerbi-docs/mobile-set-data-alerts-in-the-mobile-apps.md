@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: aa4aac1b0628fb0670a4265095ba2abcae3c1dcf
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2ca419e1e07485ad29c486d8626e78d9605c8468
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292567"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965018"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Définir des alertes de données dans les applications mobiles Power BI
 S’applique à :
@@ -25,7 +25,7 @@ S’applique à :
 
 Vous pouvez définir des alertes sur des tableaux de bord dans le service Power BI et les applications mobiles Power BI. Des alertes vous avertissent quand des données d’une vignette changent au-delà des limites que vous définissez. Les alertes fonctionnent pour les vignettes présentant un seul nombre, telles les cartes et les jauges, pas avec des données de streaming. Vous pouvez définir des alertes de données sur votre appareil mobile et les afficher dans le service Power BI et inversement. Vous seul pouvez voir les alertes de données que vous définissez, même si vous partagez un tableau de bord ou une capture instantanée de vignette.
 
-Vous pouvez définir des alertes sur les vignettes si vous avez une licence Power BI Pro, ou si vous avez une licence gratuite de Power BI et que le tableau de bord partagé est dans une capacité Premium. 
+Vous pouvez définir des alertes sur les vignettes si vous avez une licence Power BI Pro ou si le tableau de bord partagé se trouve dans une capacité Premium. 
 
 > [!WARNING]
 > Les notifications d’alerte pilotées par les données fournissent des informations sur vos données. Si votre appareil est volé, nous vous recommandons d’accéder au service Power BI pour désactiver toutes les règles d’alerte pilotées par les données. 

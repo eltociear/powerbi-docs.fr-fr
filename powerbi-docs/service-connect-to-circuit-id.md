@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0cc0125f35dc90a03eeaeed0d5e69c0a5c3115ae
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 56be5b6a0618dea28ac286f5cbaa0c019d9037d2
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241156"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135993"
 ---
 # <a name="connect-to-circuit-id-with-power-bi"></a>Se connecter à Circuit ID avec Power BI
 L’analyse de vos données de communication à partir de Circuit ID est facile avec Power BI. Power BI récupère vos données, puis génère un tableau de bord par défaut et des rapports associés à partir de ces données. Une fois la connexion établie, vous pouvez explorer vos données et personnaliser le tableau de bord selon vos besoins. Les données sont actualisées automatiquement chaque jour.
@@ -47,7 +47,7 @@ Connectez-vous au [pack de contenu Circuit ID](https://app.powerbi.com/getdata/
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Prise en main de Power BI](service-get-started.md)
+[Qu’est-ce que Power BI ?](power-bi-overview.md)
 
 [Obtenir des données pour Power BI](service-get-data.md)
 

@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 35bdf975d9df31ded5a7c3f5be26ae6181002169
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a6b4795be959cfc1842a07f1ba0a74dd81109e89
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240427"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965593"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interagir avec un rapport en mode Édition dans le service Power BI
 Les rapports peuvent être créés et modifiés dans le service Power BI et Power BI Desktop. Dans le service Power BI, les rapports peuvent être créés et modifiés en **mode Édition**. Et, dans Power BI Desktop, les rapports peuvent être créés et modifiés en [**mode Rapport**](desktop-report-view.md). Cet article couvre le mode Édition dans le service Power BI. 
 
-Le service Power BI a deux modes différents pour l’interaction avec les rapports : le [mode Lecture](service-reading-view-and-editing-view.md) pour les *consommateurs* de rapports et le mode Édition pour les créateurs et les propriétaires de rapports.  Une licence Power BI Pro est nécessaire pour le partage des rapports ainsi que pour la modification des rapports créés par d’autres. Si vous êtes un utilisateur Power BI gratuit, vous serez toujours capables de créer des rapports, mais vous ne pourrez plus utiliser le [partage](service-share-reports.md).    
+Le service Power BI a deux modes différents pour l’interaction avec les rapports : le [mode Lecture](service-reading-view-and-editing-view.md) pour les *consommateurs* de rapports et le mode Édition pour les créateurs et les propriétaires de rapports.  Une licence Power BI Pro est nécessaire pour le partage des rapports ainsi que pour la modification des rapports créés par d’autres. Si vous n’avez pas de licence Pro, vous avez toujours la possibilité de créer des rapports, mais vous ne pouvez pas [les partager](service-share-reports.md).    
 
 Le mode Édition dans un rapport vous permet de bénéficier d’une grande souplesse pour l’exploration et la conception des rapports. Toutes les fonctionnalités du [mode Lecture](service-reading-view-and-editing-view.md) sont disponibles, ainsi que de nombreuses autres fonctions. Le mode Édition est uniquement disponible pour la personne qui a créé le rapport ou pour les collègues qui sont [copropriétaires d’un rapport en tant que membre ou administrateur d’un espace de travail d’application](service-create-distribute-apps.md).
 
@@ -39,7 +39,7 @@ Jetez un coup d’œil à la liste des rubriques sous l’en-tête **Rapports** 
 * Duplication d’une page de rapport
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-Une licence Power BI Pro est nécessaire pour modifier des rapports créés par d’autres, ainsi que pour partager vos rapports avec d’autres.  Si vous êtes un utilisateur Power BI gratuit, vous serez toujours capables de créer des rapports, mais vous ne pourrez plus utiliser le [partage](service-share-reports.md).
+Une licence Power BI Pro est nécessaire pour modifier des rapports créés par d’autres, ainsi que pour partager vos rapports avec d’autres.  Si vous n’avez pas de licence Pro, vous avez toujours la possibilité de créer des rapports, mais vous ne pouvez pas [les partager](service-share-reports.md).
 
 
 ## <a name="next-steps"></a>Étapes suivantes

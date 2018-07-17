@@ -3,18 +3,18 @@ title: Questions fréquentes sur Power BI Embedded
 description: Parcourir une liste de questions fréquentes et de réponses sur Power BI Embedded.
 author: markingmyname
 manager: kfile
+ms.author: maghan
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
-ms.author: maghan
-ms.openlocfilehash: bcdb20d22790b74b54caca5d21325039d6e718bf
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.date: 06/22/2018
+ms.openlocfilehash: 07d51448083f61725157d3ea37c5d9dc73e85157
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34812741"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599947"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -76,7 +76,7 @@ Voici un tableau des différences de fonctionnalités.
 |  |Référence SKU A (Power BI Embedded)  |Référence SKU EM (Power BI Premium)  |Référence SKU P (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Purchase     |Portail Azure |Office |Office |
-|Cas d’usage |* Incorporer du contenu dans votre application |* Incorporer du contenu dans votre application<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI en dehors de PowerBI.com et incorporer dans d’autres applications SaaS (SharePoint, Teams) |* Incorporer du contenu dans votre application<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI en dehors de PowerBI.com et incorporer dans d’autres applications SaaS (SharePoint, Teams)<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI via PowerBI.com  |
+|Cas d’usage |* Incorporer du contenu dans votre application |* Incorporer du contenu dans votre application<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI en dehors de PowerBI.com et l’incorporer dans d’autres applications SaaS (SharePoint, [Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/)) |* Incorporer du contenu dans votre application<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI en dehors de PowerBI.com et incorporer dans d’autres applications SaaS (SharePoint, Teams)<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI via PowerBI.com  |
 |Facturation |Toutes les heures |Mensuelle |Mensuelle |
 |Avec engagement  |Sans engagement |Annuel  |Mensuelle/Annuelle |
 |Différenciation |Élasticité complète : augmenter/réduire la taille, interrompre/reprendre des ressources dans le portail Azure ou via l’API  |Peut être utilisée pour incorporer du contenu dans SharePoint Online et Microsoft Teams |Combiner l’incorporation dans les applications et utiliser le service Power BI dans la même capacité |
@@ -95,6 +95,58 @@ La surveillance via Azure est prévue à court terme. La ressource Azure « Powe
 
 Bien que la mise à l’échelle automatique ne soit pas proposée à l’heure actuelle, toutes les API peuvent être mises à l’échelle à tout moment.
 
+### <a name="why-creatingscalingresuming-a-capacity-results-in-putting-the-capacity-into-a-suspended-state"></a>Pourquoi les opérations de création, mise à l’échelle et reprise d’une capacité la font-elles basculer dans un état interrompu ?
+
+Le provisionnement d’une capacité (mise à l’échelle/reprise/création) peut échouer. L’auteur de l’appel de provisionnement doit vérifier la valeur de la propriété ProvisioningState d’une capacité à l’aide de l’API d’obtention des détails : [Capacités - Obtenir les détails](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
+
+### <a name="why-can-i-only-create-pbie-in-a-specific-region"></a>Pourquoi est-il seulement possible de créer des capacités PBIE dans une région spécifique ?
+
+Vous pouvez créer des capacités PBIE uniquement pour la région de votre locataire PBI.
+
+### <a name="how-can-i-find-what-is-my-pbi-tenant-region"></a>Comment déterminer la région de mon locataire PBI ?
+
+Vous pouvez utiliser le portail PBI pour comprendre quelle est la région de votre locataire PBI.
+
+https://app.powerbi.com/ > ? > À propos de Power BI
+
+![À propos de Power BI](media/embedded-faq/about-01.png)
+![Région du locataire](media/embedded-faq/tenant-location-01.png)
+
+### <a name="what-is-supported-with-the-communicating-sequential-processes-csp-channel"></a>Que permet le canal des processus séquentiels de communication (CSP) ?
+
+* Le type d’abonnement CSP vous permet de créer des capacités PBIE pour votre locataire.
+* Le compte partenaire permet de se connecter au locataire d’un client et d’acheter des capacités PBIE pour ce dernier en spécifiant l’utilisateur du locataire du client comme administrateur de capacité Power BI.
+
+### <a name="why-do-i-get-an-unsupported-account-message"></a>Pourquoi j’obtiens un message de compte non pris en charge ?
+
+Power BI vous impose de vous inscrire avec un compte professionnel. Vous ne pouvez pas vous inscrire à Power BI avec un compte Microsoft (MSA).
+
+### <a name="can-i-use-apis-to-create--manage-azure-capacities"></a>Puis-je utiliser des API pour créer et gérer des capacités Azure ?
+
+Oui, les applets de commande Powershell et les API ARM vous permettent de créer et de gérer des ressources PBIE.
+
+* API REST : https://docs.microsoft.com/rest/api/power-bi-embedded/
+* Applets de commande PowerShell : https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
+
+### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Quel est le rôle d’une capacité dédiée PBI Embedded dans une solution PBI Embedded ?
+
+Pour [mettre votre solution en production](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), vous devez affecter le contenu Power BI (espace de travail d’application que vous utilisez dans votre application) à une capacité dédiée.
+
+### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Dans quelles régions Azure PBI Embedded est-il disponible ?
+
+[PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) - voir le responsable de la disponibilité produit
+
+Régions disponibles (16 - mêmes régions que Power BI)
+* États-Unis (6) - USA Est, USA Est 2, USA Centre Nord, USA Centre Sud, USA Ouest, USA Ouest 2
+* Europe (2) - Europe Nord, Europe Ouest
+* Asie-Pacifique (2) - Asie Sud-Est, Asie Est
+* Brésil (1) - Brésil Sud
+* Japon (1) - Japon Est
+* Australie (1) - Australie Sud-Est
+* Inde (1) - Inde Ouest
+* Canada (1) - Canada Centre
+* Royaume-Uni (1) - Royaume-Uni Sud
+
 ### <a name="what-is-the-authentication-model-for-power-bi-embedded"></a>Quel est le modèle d’authentification pour Power BI Embedded ?
 
 Power BI Embedded continuera à utiliser Azure AD pour l’authentification de l’utilisateur principal (utilisateur désigné sous licence Power BI Pro), en authentifiant l’application à l’intérieur de Power BI.
@@ -104,6 +156,17 @@ L’authentification et l’autorisation des utilisateurs de l’application ser
 Si vous disposez déjà d’un locataire Azure AD, vous pouvez utiliser votre répertoire actuel, ou vous pouvez créer un locataire Azure AD pour garantir la sécurité du contenu de votre application incorporée.
 
 Pour obtenir un jeton AAD, vous pouvez utiliser une des bibliothèques d’authentification Azure Active Directory - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. Des bibliothèques clientes sont disponibles pour plusieurs plateformes.
+
+### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>My Application utilise déjà AAD pour l’authentification utilisateur. Comment utiliser cette identité pour s’authentifier auprès de Power BI dans un scénario où l’utilisateur possède les données ? 
+
+Il s’agit d’un flux OAuth « Pour le compte de » standard (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) L’application doit être configurée pour exiger des autorisations d’accès au service Power BI (avec les étendues nécessaires), et dès lors que vous disposez d’un jeton d’utilisateur pour votre application, vous faites simplement appel à l’API ADAL API AcquireTokenAsync en utilisant le jeton d’accès utilisateur et spécifiez l’URL de la ressource Power BI en tant qu’ID de ressource. Consultez l’extrait de code ci-dessous pour savoir comment faire :
+
+```csharp
+var context = new AD.AuthenticationContext(authorityUrl);
+var userAssertion = new AD.UserAssertion(userAccessToken);
+var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificate)
+var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
+```
 
 ### <a name="how-is-power-bi-embedded-different-from-other-azure-services"></a>En quoi Power BI Embedded est différent des autres services Azure ?
 
@@ -117,7 +180,7 @@ Utilisez PowerBI.com pour attribuer/désattribuer des espaces de travail à votr
 
 ### <a name="what-deploy-regions-are-supported"></a>Quelles régions de déploiement sont prises en charge ?
 
-Sud-Est de l’Australie, Sud du Brésil, Canada Centre, Est des États-Unis 2, Inde-Ouest, Est du Japon, Nord-Centre des États-Unis, Europe du Nord, Sud-Centre des États-Unis, Asie du Sud-Est, Royaume-Uni Sud, Europe de l’Ouest, Ouest des États-Unis et Ouest des États-Unis 2.
+Sud-Est de l’Australie, Sud du Brésil, Canada Centre, États-Unis de l'Est 2, Inde-Ouest, Japon de l'Est, Nord du centre des États-Unis, Europe du Nord, Sud du centre des États-Unis, Sud-Est asiatique, Royaume-Uni Sud, Europe de l’Ouest, États-Unis de l'Ouest et États-Unis de l'Ouest 2.
 
 ### <a name="what-type-of-content-pack-data-can-be-embedded"></a>Quel type de données du pack de contenu est-il possible d’incorporer ?
 
@@ -181,8 +244,8 @@ La **collection d’espaces de travail Power BI** (**Power BI Embedded** version
 
 3. Au moment de passer en production, achetez une capacité dédiée **Power BI Embedded** et affectez-y votre contenu Power BI (espace de travail).
 
->[!Note]
-Vous pouvez continuer à utiliser la **collection d’espaces de travail Power BI** tout en travaillant en parallèle avec une solution **Power BI Embedded**. Vous pourrez ensuite déplacer votre client vers la nouvelle solution **Power BI Embedded** et mettre hors service la solution **Collection d’espaces de travail Power BI**.
+> [!Note]
+> Vous pouvez continuer à utiliser la **collection d’espaces de travail Power BI** tout en travaillant en parallèle avec une solution **Power BI Embedded**. Vous pourrez ensuite déplacer votre client vers la nouvelle solution **Power BI Embedded** et mettre hors service la solution **Collection d’espaces de travail Power BI**.
 
 Pour plus d’informations, voir [Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI Embedded vers Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded).
 

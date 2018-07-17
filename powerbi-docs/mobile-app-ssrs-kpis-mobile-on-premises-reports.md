@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 06/13/2018
 ms.author: maggies
-ms.openlocfilehash: 999fdf0376973d6550a5c4e214b4315db01e74e0
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 32d73b4be55190b908353083b497581cb1b08c6e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482242"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599021"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Afficher des indicateurs de performance clés et des rapports Report Server locaux dans des applications mobiles Power BI
 
@@ -103,6 +103,9 @@ Vous pouvez désormais afficher et interagir avec les indicateurs de performance
 Les rapports Power BI, les rapports mobiles Reporting Services et les indicateurs de performance clés sont affichés dans les mêmes dossiers que sur le portail web Reporting Services. 
 
 * Appuyer sur un rapport Power BI ![Icône de rapport Power BI](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-report-icon.png). Celui-ci s’ouvre en mode paysage et vous pouvez interagir avec lui dans l’application Power BI.
+
+    > [!NOTE]
+  > Monter et descendre dans une hiérarchie n’est actuellement pas autorisé dans les rapports Power BI sur un serveur Power BI Report Server.
   
     ![Rapport Power BI](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
 * Dans Power BI Desktop, les propriétaires de rapports peuvent [optimiser un rapport](desktop-create-phone-report.md) pour les applications mobiles Power BI. Sur votre téléphone mobile, les rapports optimisés ont une icône ![icône de rapport Power BI optimisé](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png) et une disposition spéciales.
@@ -129,6 +132,6 @@ Vous pouvez marquer des indicateurs de performance clés et des rapports en tant
 3. Appuyez sur **Supprimer le serveur**.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Prise en main de Power BI](service-get-started.md)  
+* [Qu’est-ce que Power BI ?](power-bi-overview.md)  
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

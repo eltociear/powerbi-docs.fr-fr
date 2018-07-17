@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 50ace772c24b2a9e706e82ca16ddcb36d8b6b60c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c1ac019b0d6f80c3129b105336f71a71e0925648
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722198"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926533"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Trouver les utilisateurs Power BI qui se sont connectés
 Si vous êtes administrateur de locataire et que vous voulez voir quels utilisateurs se sont connectés à Power BI, vous pouvez utiliser les rapports d’accès et d’utilisation Azure Active Directory pour une meilleure visibilité.
@@ -25,9 +25,7 @@ Si vous êtes administrateur de locataire et que vous voulez voir quels utilisat
 Vous pouvez accéder au rapport d’activité sur les portails Azure Active Directory (Azure AD) [nouveau](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins) et [classique](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports). Bien que la vidéo ci-dessus utilise le portail classique pour l’exemple, cet article utilise le nouveau portail.
 
 > [!NOTE]
-> Ce rapport d’activité inclut les utilisateurs de Power BI (Gratuit) et Pro, mais ne précise pas les licences dont ils disposent.
-> 
-> 
+> Ce rapport d’activité n’identifie pas le type de licence dont dispose chaque utilisateur.
 
 ## <a name="requirements"></a>Configuration requise
 Voici la configuration requise pour afficher le rapport d’activité de connexion.
@@ -70,7 +68,7 @@ Les données de connexion sont disponibles pour une durée maximale de 30 jours
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Rapports d’activité de connexion dans le portail Azure Active Directory (nouveau portail)](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins)  
-[Afficher vos rapports d’accès et d’utilisation (portail classique)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports#view-or-download-a-report)  
+[Afficher vos rapports d’accès et d’utilisation (portail classique)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)  
 [Script PowerShell d’exemple de connexion](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script)  
 [Stratégies de rétention de rapports Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)  
 [Utilisation de l’audit dans votre organisation](service-admin-auditing.md)  

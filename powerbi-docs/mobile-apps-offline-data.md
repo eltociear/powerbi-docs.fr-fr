@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 01/16/2018
+ms.date: 06/27/2018
 ms.author: maggies
-ms.openlocfilehash: 5dd171ccd7d8859286abeac2f87771b454421448
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: cade8b126742610814f47587c950458796cca474
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292843"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136476"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Affichage de vos données hors connexion dans les applications mobiles Power BI
 S’applique à :
@@ -55,7 +55,8 @@ Les restrictions suivantes peuvent s’appliquer en mode hors connexion avec Pow
 * Power BI peut mettre en cache jusqu’à 250 Mo de données hors connexion.
 * Certains types de vignette nécessitent une connexion active au serveur et ne sont donc pas disponibles hors ligne. C’est le cas des vignettes Bing ou des vignettes personnalisées par exemple.
 * Les classeurs Excel entiers dans Power BI ne sont pas disponibles en mode hors connexion.
-* Vous ne pouvez voir les rapports mobiles Reporting Services et les indicateurs de performance clés en mode hors connexion que si vous les avez consultés en étant connecté. Ils ne s’actualisent pas en arrière-plan. Ils s’actualisent chaque fois que vous les ouvrez. 
+* Vous ne pouvez voir les rapports mobiles Reporting Services et les indicateurs de performance clés en mode hors connexion que si vous les avez consultés en étant connecté. Ils ne s’actualisent pas en arrière-plan. Ils s’actualisent chaque fois que vous les ouvrez.
+* Dans les applications mobiles Power BI, vous ne pouvez pas voir les fichiers Power BI Desktop (.pbix) enregistrés dans Power BI Report Server. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 Vos commentaires nous aident à développer les futurs processus d’implémentation. N’oubliez pas de voter pour les fonctionnalités que vous aimeriez voir dans les applications mobiles Power BI. 
@@ -63,5 +64,5 @@ Vos commentaires nous aident à développer les futurs processus d’implémenta
 * [Applications Power BI pour appareils mobiles](mobile-apps-for-mobile-devices.md)
 * Suivez @MSPowerBI sur Twitter
 * Rejoindre la conversation de la [Communauté Power BI](http://community.powerbi.com/)
-* [Prise en main de Power BI](service-get-started.md)
+* [Qu’est-ce que Power BI ?](power-bi-overview.md)
 

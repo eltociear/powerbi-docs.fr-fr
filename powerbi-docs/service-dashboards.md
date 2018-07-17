@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 02a88f04d3c23746da702db043c1992267baf054
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d0e1fdc79ae4bcd5946d82f2cbf7b929a47372cb
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248674"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136798"
 ---
 # <a name="dashboards-in-power-bi-service"></a>Tableaux de bord dans le service Power BI
 
@@ -84,7 +84,7 @@ Power BI Pro est nécessaire pour partager un tableau de bord et afficher un ta
 > 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Prise en main de Power BI](service-get-started.md)  
+[Qu’est-ce que Power BI ?](power-bi-overview.md)  
 [Power BI – Concepts de base](service-basic-concepts.md)  
 [Qu’est-ce que Power BI Premium ?](service-premium.md)  
 

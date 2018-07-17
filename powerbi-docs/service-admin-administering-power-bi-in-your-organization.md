@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 05/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5e69ed0010c5a2ff496b761f54b4cf2561f9b4ca
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1f3c871d4ac47a110f2085ef1bdccb166fc00643
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297420"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944304"
 ---
 # <a name="what-is-power-bi-administration"></a>Présentation de l’administration de Power BI
 
@@ -73,12 +73,12 @@ Le tableau suivant décrit les différents outils liés à l’administration de
 
 | **Outil** | **Tâches courantes** |
 | --- | --- |
-| Portail d’administration Power BI |<ul><li>Empêcher les utilisateurs d’accéder à Power BI<br><li>Acquérir et travailler avec une capacité Premium<br><li>Garantir la qualité de service<br><li>Gérer la classification de données métiers<br><li>Participer à la publication de contenu et au partage de stratégies<br><li>Gérer les espaces de travail<br><li>Publier des visuels personnalisés<br><li>Vérifier les codes utilisés pour incorporer Power BI dans d’autres applications<br><li>Résoudre les problèmes d’accès aux données et autres</ul>|
-| Centre d’administration Office 365 |<ul><li>Gérer l’inscription des utilisateurs<br><li>Acheter et affecter des licences Pro</ul>|
-| Centre de sécurité et conformité Office 365 |<ul><li>Examiner et gérer les audits d’événements</ul>|
-| Azure Active Directory (AAD) sur le Portail Azure |<ul><li>Configurer l’accès conditionnel aux ressources de Power BI avec AAD<br><li>Approvisionner la capacité de Power BI Embedded</ul>|
-| Applets de commande PowerShell |<ul><li>Gérer les espaces de travail et d’autres aspects de Power BI avec des scripts</ul>|
-| API d’administration |<ul><li>Construire des outils d’administration personnalisés pour faciliter le travail d’un administrateur de Power BI (par exemple, Power BI Desktop peut utiliser ces API pour générer des rapports à partir de données liées à l’administration)</ul>|
+| Portail d’administration Power BI |<ul><li>Acquérir et travailler avec une capacité Premium</li><li>Garantir la qualité de service</li><li>Gérer la classification de données métiers</li><li>Participer à la publication de contenu et au partage de stratégies</li><li>Gérer les espaces de travail<br><li>Publier des visuels personnalisés</li><li>Vérifier les codes utilisés pour incorporer Power BI dans d’autres applications</li><li>Résoudre les problèmes d’accès aux données et autres</li></ul>|
+| Centre d’administration Office 365 |<ul><li>Gérer l’inscription des utilisateurs</li><li>Acheter et affecter des licences Pro</li><li>Empêcher les utilisateurs d’accéder à Power BI</li></ul>|
+| Centre de sécurité et conformité Office 365 |<ul><li>Examiner et gérer les audits d’événements</li></ul>|
+| Azure Active Directory (AAD) sur le Portail Azure |<ul><li>Configurer l’accès conditionnel aux ressources de Power BI avec AAD</li><li>Approvisionner la capacité de Power BI Embedded</li></ul>|
+| Applets de commande PowerShell |<ul><li>Gérer les espaces de travail et d’autres aspects de Power BI avec des scripts</li></ul>|
+| API d’administration et kit SDK |<ul><li>Construire des outils d’administration personnalisés pour faciliter le travail d’un administrateur de Power BI (par exemple, Power BI Desktop peut utiliser ces API pour générer des rapports à partir de données liées à l’administration)</li></ul>|
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 9d166dec82aa56fec1512e3d859e60142afcccd6
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 0b1aa1f9cdabc3508906cc87a4d41f277cd0b0b6
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755274"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092687"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service-apppowerbicom"></a>S’abonner à un rapport ou un tableau de bord du service Power BI (app.powerbi.com)
 Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous et abonnez vos collègues aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie un instantané dans votre boîte de réception. Indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir des e-mails : de une fois par jour à une fois par semaine. 
@@ -81,10 +81,12 @@ Les abonnements particuliers affichés dépendent de l’espace de travail actue
 Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le rapport est supprimé par le propriétaire ou si le compte d’utilisateur qui a servi à créer l’abonnement est supprimé.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+* Pour les abonnements à l’e-mail du tableau de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, celles-ci ne s’affichent pas.  Pour les abonnements à l’e-mail des rapports, si le jeu de données utilise SNL, vous ne pouvez pas créer d’abonnement.
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 * Pour les abonnements aux e-mails sur les jeux de données de la connexion active, vous recevez uniquement des e-mails lorsque les données changent. Par conséquent, si une actualisation se produit, mais que les données ne sont pas modifiées, Power BI ne vous envoie pas d’e-mail.
 * Les abonnements aux courriers ne prennent pas en charge la plupart des [visuels personnalisés](power-bi-custom-visuals.md).  La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](power-bi-custom-visuals-certified.md).  
-* Si toutes les vignettes ont la sécurité au niveau des lignes (SNL) appliquée, elles ne s’affichent pas.
+* Si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes du tableau de bord, celles-ci ne s’affichent pas.
+* Vous ne pouvez pas abonner d’autres utilisateurs à un rapport auquel la sécurité au niveau des lignes (SNL) est appliquée.
 * Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Le changement des valeurs par défaut avant l’abonnement ne sont pas montrés dans l’e-mail.    
 * Les abonnements par courrier ne sont pas encore pris en charge sur les pages de rapport créées par la fonctionnalité de connexion active au service de Power BI Desktop.    
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge,  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     

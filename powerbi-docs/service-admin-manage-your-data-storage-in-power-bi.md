@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e7c0399072bfef35a1103a5db448da183f64f74c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a30c90b1c180277a584a152f26c7f92549284c7d
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34245359"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944741"
 ---
 # <a name="manage-your-data-storage"></a>Gérer le stockage de vos données
 Découvrez comment vous pouvez gérer votre propre stockage de données ou celui d’un espace de travail d’application et ainsi veiller à ce que vous puissiez continuer à publier des rapports et jeux de données.
 
 Les utilisateurs et les espaces de travail d’application ont leurs propres capacités concernant les données
 
-* Les utilisateurs des versions Pro et gratuite disposent d’un espace de stockage de données maximal de 10 Go.
-* Les utilisateurs de la version Pro peuvent créer des espaces de travail d’application disposant chacun d’une capacité de stockage des données de 10 Go.
+* Tous les utilisateurs disposent d’un espace de stockage de données maximal de 10 Go.
+* Les utilisateurs disposant d’une licence Power BI Pro peuvent créer des espaces de travail d’application avec pour chacun une capacité de stockage de données maximal de 10 Go.
 
 Au niveau du locataire, l’utilisation totale ne peut pas dépasser 10 Go par utilisateur Pro parmi tous les utilisateurs et espaces de travail d’application Pro sur le locataire.
 

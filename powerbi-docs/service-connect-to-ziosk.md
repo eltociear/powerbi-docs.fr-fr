@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3308abbb3fbc1ceadb78b83d13d69d014de1bff1
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2c5fc1f8763b8360d7cd5a6f6605d6b4f3d5df3c
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34238546"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135648"
 ---
 # <a name="connect-to-ziosk-survey-analytics-with-power-bi"></a>Se connecter à Ziosk Survey Analytics avec Power BI
 Le pack de contenu Ziosk Survey Analytics pour Power BI offre aux restaurants un accès sans égal aux tablettes Ziosk lors de l’analyse de données d’enquête Ziosk, notamment la segmentation par jour, lieu, employé et bien plus encore.
@@ -71,7 +71,7 @@ Le pack de contenu inclut les tables suivantes :
 Un compte Ziosk avec des autorisations sur les tables ci-dessus est nécessaire afin d'instancier ce pack de contenu.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Prise en main de Power BI](service-get-started.md)
+[Qu’est-ce que Power BI ?](power-bi-overview.md)
 
 [Power BI – Concepts de base](service-basic-concepts.md)
 
