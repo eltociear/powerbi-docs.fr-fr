@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/22/2018
-ms.openlocfilehash: 07d51448083f61725157d3ea37c5d9dc73e85157
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: f3602f44bd2ab98e115f904baa89429db918637c
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599947"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39032068"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -76,7 +76,7 @@ Voici un tableau des différences de fonctionnalités.
 |  |Référence SKU A (Power BI Embedded)  |Référence SKU EM (Power BI Premium)  |Référence SKU P (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Purchase     |Portail Azure |Office |Office |
-|Cas d’usage |* Incorporer du contenu dans votre application |* Incorporer du contenu dans votre application<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI en dehors de PowerBI.com et l’incorporer dans d’autres applications SaaS (SharePoint, [Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/)) |* Incorporer du contenu dans votre application<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI en dehors de PowerBI.com et incorporer dans d’autres applications SaaS (SharePoint, Teams)<br>* Partager du contenu avec des utilisateurs de la version gratuite de Power BI via PowerBI.com  |
+|Cas d’usage |* Incorporer du contenu dans votre application |* Incorporer du contenu dans votre application<br>* Incorporer du contenu dans d’autres applications SaaS ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Incorporer du contenu dans votre application<br>* Incorporer du contenu dans d’autres applications SaaS ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Partager du contenu avec des utilisateurs Power BI par le biais du [service Power BI](https://powerbi.microsoft.com/en-us/)  |
 |Facturation |Toutes les heures |Mensuelle |Mensuelle |
 |Avec engagement  |Sans engagement |Annuel  |Mensuelle/Annuelle |
 |Différenciation |Élasticité complète : augmenter/réduire la taille, interrompre/reprendre des ressources dans le portail Azure ou via l’API  |Peut être utilisée pour incorporer du contenu dans SharePoint Online et Microsoft Teams |Combiner l’incorporation dans les applications et utiliser le service Power BI dans la même capacité |
@@ -157,7 +157,7 @@ Si vous disposez déjà d’un locataire Azure AD, vous pouvez utiliser votre r�
 
 Pour obtenir un jeton AAD, vous pouvez utiliser une des bibliothèques d’authentification Azure Active Directory - https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. Des bibliothèques clientes sont disponibles pour plusieurs plateformes.
 
-### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>My Application utilise déjà AAD pour l’authentification utilisateur. Comment utiliser cette identité pour s’authentifier auprès de Power BI dans un scénario où l’utilisateur possède les données ? 
+### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>My Application utilise déjà AAD pour l’authentification utilisateur. Comment utiliser cette identité pour s’authentifier auprès de Power BI dans un scénario où l’utilisateur est propriétaire des données ? 
 
 Il s’agit d’un flux OAuth « Pour le compte de » standard (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) L’application doit être configurée pour exiger des autorisations d’accès au service Power BI (avec les étendues nécessaires), et dès lors que vous disposez d’un jeton d’utilisateur pour votre application, vous faites simplement appel à l’API ADAL API AcquireTokenAsync en utilisant le jeton d’accès utilisateur et spécifiez l’URL de la ressource Power BI en tant qu’ID de ressource. Consultez l’extrait de code ci-dessous pour savoir comment faire :
 

@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6147f41ea99ad4a0416f6aa9c01288102f792771
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 72a900b1661a77e5b31c1d68b5726d989b236f7b
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34812925"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39031999"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
-**Power BI Desktop** intègre des fonctionnalités qui permettent aux personnes présentant un handicap de plus facilement lire et utiliser les rapports **Power BI Desktop**, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
+Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
 
 ![Utiliser différents marqueurs pour les graphiques en courbes et en aires en vue d’améliorer l’accessibilité](media/desktop-accessibility/accessibility_01.png)
 
@@ -32,20 +32,25 @@ Depuis la version de septembre 2017 de **Power BI Desktop**, vous pouvez appuye
 
 ![Appuyer sur la touche ? dans Power BI Desktop pour afficher les raccourcis clavier d’accessibilité](media/desktop-accessibility/accessibility_03.png)
 
-Grâce aux améliorations en matière d’accessibilité, vous pouvez lire un rapport **Power BI Desktop** à l’aide d’un clavier ou d’un lecteur d’écran en procédant comme suit :
+Grâce aux améliorations de l’accessibilité, vous pouvez lire un rapport Power BI en vous aidant d’un clavier ou d’un lecteur d’écran avec les techniques suivantes :
 
 Pour faire passer la mise en évidence d’un onglet de page de rapport à un autre ou d’un objet à un autre d’une page de rapport donnée, utilisez la combinaison de touche **Ctrl+F6**.
 
 * Lorsque la mise en évidence est sur les *onglets de page du rapport*, utilisez les touches *Tab* ou *flèche* pour faire passer la mise en évidence d’une page du rapport à la suivante. Le titre de la page de rapport est lu par le lecteur d’écran, qui indique également si cette page est actuellement sélectionnée. Pour charger la page de rapport actuellement mise en évidence, utilisez la touche *Entrée* ou *Espace*.
-* Lorsque la mise en évidence est sur une *page de rapport* chargée, utilisez la touche *Tab* pour la faire passer d’un objet à un autre de la page, notamment les zones de texte, les images, les formes et les graphiques. Le lecteur d’écran lit le type d’objet et la description de l’objet fournie par l’auteur. 
+* Lorsque la mise en évidence est sur une *page de rapport* chargée, utilisez la touche *Tab* pour la faire passer d’un objet à un autre de la page, notamment les zones de texte, les images, les formes et les graphiques. Le lecteur d’écran lit le type d’objet, le titre de l’objet s’il a un et la description de cet objet si elle est fournie par l’auteur du rapport. 
 
-Vous pouvez appuyer sur **Alt+Maj+F10** pour positionner le focus sur un menu de visuel.
+Quand vous naviguez entre les visuels, si vous voulez interagir davantage, vous pouvez appuyer sur **Alt+Maj+F10** pour déplacer le focus sur l’en-tête du visuel. Celui-ci contient différentes options, notamment le tri, l’exportation de données dans le graphique et le mode Focus. 
 
-Vous pouvez appuyer sur **Alt+Maj+F11** pour présenter une version accessible de la fenêtre *Voir les données*.
+Vous pouvez appuyer sur **Alt+Maj+F11** pour présenter une version accessible de la fenêtre *Afficher les données*. Vous pouvez ainsi explorer dans une table HTML les données utilisées dans le visuel, en utilisant les mêmes raccourcis clavier que ceux que vous utilisez normalement avec votre lecteur d’écran. 
 
 ![Appuyer sur Alt+Maj+F11 dans Power BI Desktop pour afficher une fenêtre Voir les données accessible pour un visuel](media/desktop-accessibility/accessibility_04.png)
 
-Ces ajouts à l’accessibilité ont été créés pour permettre aux utilisateurs d’exploiter pleinement les rapports **Power BI Desktop** à l’aide d’un lecteur d’écran et d’une navigation au clavier.
+> [!NOTE]
+> La fonctionnalité Afficher des données n’est accessible à un lecteur d’écran qu’avec ce raccourci clavier. Si vous ouvrez Afficher les données par le biais de l’option disponible dans l’en-tête du visuel, elle ne sera pas accessible à un lecteur d’écran.
+> 
+> 
+
+Ces ajouts à l’accessibilité ont été créés pour permettre aux utilisateurs de tirer pleinement parti des rapports Power BI à l’aide d’un lecteur d’écran et d’une navigation au clavier.
 
 ## <a name="tips-for-creating-accessible-reports"></a>Conseils pour la création de rapports accessibles
 Les conseils suivants peuvent vous aider à créer des rapports **Power BI Desktop** plus accessibles.
@@ -58,14 +63,17 @@ Les conseils suivants peuvent vous aider à créer des rapports **Power BI Des
   ![Utiliser différents marqueurs pour les graphiques en courbes et en aires en vue d’améliorer l’accessibilité](media/desktop-accessibility/accessibility_01.png)
   
   * L’utilisation d’une *forme de marqueur* différente pour chaque ligne permet aux lecteurs du rapport de plus facilement différencier les lignes (ou aires) les unes des autres.
-* En complément de la puce précédente, ne vous fiez pas aux couleurs pour transmettre des informations. L’utilisation de formes sur des lignes (marqueurs, tels que décrits dans les puces précédentes) est utile.
+* En complément de la puce précédente, ne vous fiez pas aux couleurs pour transmettre des informations. En plus de l’utilisation de formes sur les graphiques en courbes ou à nuages de points, ne vous appuyez pas sur la mise en forme conditionnelle pour fournir des insights dans des tables et des matrices. 
+* Choisissez un ordre de tri intentionnel pour chaque visuel figurant sur votre rapport. Quand les utilisateurs de lecteur d’écran parcourent les données affichées dans le graphique, le lecteur d’écran utilise le même ordre de tri que le visuel.
 * Sélectionnez un *thème* à contraste élevé et adapté pour les personnes daltoniennes dans la galerie de thèmes, puis importez-le à l’aide de la fonctionnalité en préversion [**Thème**](desktop-report-themes.md).
 * Pour chaque objet d’un rapport, fournissez un *texte de remplacement*. Cela vous permet de garantir que les lecteurs de votre rapport comprennent ce que vous essayez de communiquer avec un visuel, même s’ils ne peuvent pas voir le visuel, l’image, la forme ou la zone de texte. Pour fournir un *Texte de remplacement* pour un objet d’un rapport **Power BI Desktop**, sélectionnez l’objet (par exemple un visuel, une forme, etc.) puis, dans le volet **Visualisations**, sélectionnez la section **Format**, développez **Général**, puis faites défiler vers le bas et renseignez la zone de texte **Texte de remplacement**.
   
   ![Il est possible d’ajouter un texte de remplacement à n’importe quel objet d’un rapport en sélectionnant Visualisations > Format > Général > zone de texte Texte de remplacement.](media/desktop-accessibility/accessibility_02.png)
-* Veillez à ce qu’il y ait suffisamment de contraste entre le texte et les couleurs d’arrière-plan de vos rapports.
+* Veillez à ce qu’il y ait suffisamment de contraste entre le texte et les couleurs d’arrière-plan de vos rapports. Il existe plusieurs outils, comme [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/), que vous pouvez utiliser pour vérifier les couleurs de votre rapport. 
 * Utilisez des tailles et polices de texte facilement lisibles. Les textes de petite taille ou les polices difficiles à lire ont un impact négatif sur l’accessibilité.
 * Incluez un titre, des étiquettes d’axe et des étiquettes de données dans tous les visuels.
+* Utilisez des titres significatifs pour toutes les pages du rapport.
+* Évitez, si possible, les formes et les images décoratives dans votre rapport, car elles sont incluses dans l’ordre de tabulation du rapport. Si vous avez besoin d’inclure des objets décoratifs dans votre rapport, mettez à jour le texte de légende de l’objet pour informer les utilisateurs du lecteur d’écran qu’il est décoratif.
 
 ## <a name="high-contrast-support-for-reports"></a>Prise en charge du contraste élevé dans les rapports
 
@@ -87,7 +95,8 @@ Quand vous êtes dans **Power BI Desktop**, notez que certaines zones telles que
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 Il existe quelques limitations et problèmes connus concernant les fonctionnalités d’accessibilité, décrits dans la liste suivante :
 
-* JAWS est pris en charge dans les rapports qui sont affichés dans le **service Power BI**, y compris les rapports incorporés. JAWS est également pris en charge dans **Power BI Desktop**. Toutefois, vous devez ouvrir le lecteur d’écran avant d’ouvrir des fichiers **Power BI Desktop** pour que la lecture de l’écran fonctionne correctement.
+* Pour une expérience optimale quand vous utilisez des lecteurs d’écran avec **Power BI Desktop**, ouvrez le lecteur d’écran de votre choix avant d’ouvrir des fichiers dans Power BI Desktop.
+* Si vous utilisez le Narrateur, il existe certaines limitations concernant la navigation dans la fonctionnalité Afficher les données sous la forme d’une table HTML.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Utiliser des thèmes de rapport dans Power BI Desktop (préversion)](desktop-report-themes.md)

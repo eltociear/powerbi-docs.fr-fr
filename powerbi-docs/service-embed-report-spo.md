@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1c9948ad5c09b3123d898bf8841243d6e5fa83fd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 63cb1fe3061d1ba48e71a4ac09862fce29dd9196
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34553562"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39032045"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -84,7 +84,7 @@ Incorporer un rapport dans SharePoint Online n’accorde pas automatiquement aux
 > [!IMPORTANT]
 > Veillez à passer en revue les utilisateurs qui peuvent afficher le rapport dans le service Power BI et à accorder l’accès à ceux qui ne sont pas répertoriés.
 
-Il existe deux moyens de fournir un accès au rapport au sein du service Power BI. Si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, répertoriez l’utilisateur en tant que membre de l’espace de travail d’application dans le service Power BI. Cela permet de garantir que les utilisateurs peuvent afficher le contenu de ce groupe. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](service-create-distribute-apps.md).
+Il existe deux moyens de fournir un accès au rapport au sein du service Power BI. Si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, répertoriez l’utilisateur comme membre de l’**espace de travail d’application dans le service Power BI** et la **page SharePoint**. Cela permet de garantir que les utilisateurs peuvent afficher le contenu de ce groupe. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](service-create-distribute-apps.md).
 
 Vous pouvez également accorder aux utilisateurs l’accès à votre rapport en procédant comme suit.
 
@@ -129,7 +129,7 @@ Vous devez contacter le propriétaire de la page SharePoint Online pour qu’il 
 
 ## <a name="known-issues-and-limitations"></a>Problèmes connus et limitations
 
-* **Erreur : « Une erreur s’est produite. Essayez de vous déconnecter, de vous reconnecter, puis de revenir sur cette page. ID de corrélation : non défini. Statut de la réponse HTTP : 400. Code d’erreur du serveur 10001. Message : jeton d’actualisation manquant »**
+* Erreur : « Une erreur s’est produite. Essayez de vous déconnecter, de vous reconnecter, puis de revenir sur cette page. ID de corrélation : non défini. Statut de la réponse HTTP : 400. Code d’erreur du serveur 10001. Message : jeton d’actualisation manquant »
   
   Si vous recevez cette erreur, essayez une des opérations suivantes.
   
@@ -154,5 +154,4 @@ Vous devez contacter le propriétaire de la page SharePoint Online pour qu’il 
 [Partager un tableau de bord avec vos collègues et les autres utilisateurs](service-share-dashboards.md)  
 [Qu’est-ce que Power BI Premium ?](service-premium.md)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/) 
-
+D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
