@@ -1021,7 +1021,9 @@
             - name: "Quelles sont les possibilités offertes par l’API Power\_BI\_?"
               href: developer/overview-of-power-bi-rest-api.md
         - name: Didacticiels
-          items: null
+          items:
+            - name: Transmission de données à un jeu de données
+              href: developer/walkthrough-push-data.md
         - name: Concepts
           items:
             - name: Stratégie de rétention automatique des données en temps réel
@@ -1036,8 +1038,6 @@
                   href: developer/api-data-model-versioning.md
         - name: Guides pratiques
           items:
-            - name: Transmission de données à un jeu de données
-              href: developer/walkthrough-push-data.md
             - name: Inscrire une application auprès d’Azure AD
               href: developer/walkthrough-push-data-register-app-with-azure-ad.md
             - name: Obtenir un jeton d’accès d’authentification
