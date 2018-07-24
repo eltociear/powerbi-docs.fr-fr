@@ -530,6 +530,12 @@
       items:
         - name: "Nouveautés de la dernière mise à jour de Power\_BI\_Desktop"
           href: desktop-latest-update.md
+        - name: "Modèles composites dans Power\_BI\_Desktop (préversion)"
+          href: desktop-composite-models.md
+        - name: "Relations plusieurs-à-plusieurs dans Power\_BI\_Desktop (préversion)"
+          href: desktop-many-to-many-relationships.md
+        - name: "Mode de stockage dans Power\_BI\_Desktop (préversion)"
+          href: desktop-storage-mode.md
         - name: "Filtrage croisé bidirectionnel dans Power\_BI Desktop (version préliminaire)"
           href: desktop-bidirectional-filtering.md
         - name: Power BI et DirectQuery
@@ -670,6 +676,8 @@
               href: desktop-import-and-display-kpis.md
         - name: Créer des rapports
           items:
+            - name: Éléments visuels pour les rapports
+              href: desktop-visual-elements-for-reports.md
             - name: "Q&A dans Power\_BI\_Desktop"
               href: desktop-qna-in-reports.md
             - name: Volet Analyse de Power BI Desktop
@@ -918,7 +926,7 @@
           items:
             - name: Sécurité au niveau des lignes (RLS)
               href: developer/embedded-row-level-security.md
-            - name: FORUM AUX QUESTIONS
+            - name: Questions fréquentes (FAQ)
               href: developer/embedded-faq.md
             - name: "Autorisations Power\_BI"
               href: developer/power-bi-permissions.md
@@ -1244,13 +1252,15 @@
               href: service-premium-large-datasets.md
             - name: Actualisation incrémentielle
               href: service-premium-incremental-refresh.md
+            - name: Prise en charge de plusieurs zones géographiques (préversion)
+              href: service-admin-premium-multi-geo.md
             - name: "FAQ Power\_BI Premium"
               href: service-premium-faq.md
             - name: Notes de publication Power BI Premium
               href: service-premium-release-notes.md
         - name: "Rôle d’administration dans Office\_365"
           href: service-admin-role.md
-        - name: Foire aux questions (FAQ)
+        - name: Questions fréquentes (FAQ)
           href: service-admin-faq.md
     - name: Guides pratiques
       items:
