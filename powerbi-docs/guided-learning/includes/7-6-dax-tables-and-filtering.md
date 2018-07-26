@@ -34,7 +34,7 @@ Par exemple, Power BI et DAX incluent des valeurs dont les index croisés sont 
 
 Vous pouvez également créer des tables calculées entières à l’aide de fonctions DAX. Les tables calculées créées à l’aide de DAX requièrent un **NOM** et une fonction **TABLE**. Les tables calculées peuvent être utilisées comme n’importe quelle autre table, notamment en établissant des relations.
 
-> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

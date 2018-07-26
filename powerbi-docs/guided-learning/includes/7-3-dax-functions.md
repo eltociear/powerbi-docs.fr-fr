@@ -89,7 +89,7 @@ DAX intègre les fonctions de **date** suivantes :
 
 Bien que ces fonctions soient utiles pour calculer et extraire des informations à partir de valeurs de *date*, elles ne s’appliquent pas à Time Intelligence, qui utilise une table de dates.
 
-> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

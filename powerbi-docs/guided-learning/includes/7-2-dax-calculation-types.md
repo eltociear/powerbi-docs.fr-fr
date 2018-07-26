@@ -57,7 +57,7 @@ Les éléments requis pour une mesure calculée sont identiques à ceux d’une 
 * un nouveau nom de mesure ;
 * au moins une fonction ou une expression.
 
-> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 
