@@ -804,6 +804,8 @@
           href: desktop-data-types.md
         - name: "Niveaux de confidentialité Power\_BI\_Desktop"
           href: desktop-privacy-levels.md
+        - name: Extensibilité des connecteurs dans Power BI
+          href: desktop-connector-extensibility.md
     - name: Ressources
       items:
         - name: "Vidéos relatives à Power\_BI\_Desktop"
@@ -926,7 +928,7 @@
           items:
             - name: Sécurité au niveau des lignes (RLS)
               href: developer/embedded-row-level-security.md
-            - name: Questions fréquentes (FAQ)
+            - name: FORUM AUX QUESTIONS
               href: developer/embedded-faq.md
             - name: "Autorisations Power\_BI"
               href: developer/power-bi-permissions.md
@@ -1260,7 +1262,7 @@
               href: service-premium-release-notes.md
         - name: "Rôle d’administration dans Office\_365"
           href: service-admin-role.md
-        - name: Questions fréquentes (FAQ)
+        - name: Foire aux questions (FAQ)
           href: service-admin-faq.md
     - name: Guides pratiques
       items:

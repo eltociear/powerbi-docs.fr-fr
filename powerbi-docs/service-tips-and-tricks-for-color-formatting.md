@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/19/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3c91a6a70899a4a59c3d98cd9ab948284df5b662
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 144cdace662b5f6dbe546a213e07f087d634dcff
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298386"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256006"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Trucs et astuces pour la mise en forme des couleurs dans Power BI
 Power BI vous propose de nombreuses façons de personnaliser vos tableaux de bord et vos rapports. Cet article fournit des astuces pour rendre vos visualisations Power BI plus attrayantes, plus intéressantes et mieux adaptées à vos besoins.
@@ -97,7 +97,7 @@ Dans cette première image, notez comment les barres du graphique reflètent le 
 
 ![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_12.png)
 
-Voyons maintenant ce qui se passe quand nous définissons des valeurs numériques dans les zones des valeurs **Minimum** et **Maximum** situées sous les sélecteurs de couleurs **Minimum** et **Maximum** (illustrés dans l’image suivante). Nous allons définir **Minimum** sur 20 000 000 et **Maximum** sur 20 000 000.
+Voyons maintenant ce qui se passe quand nous définissons des valeurs numériques dans les zones des valeurs **Minimum** et **Maximum** situées sous les sélecteurs de couleurs **Minimum** et **Maximum** (illustrés dans l’image suivante). Nous allons définir **Minimum** sur 20 000 000 et **Maximum** sur 20 000 001.
 
 Quand nous définissons ces valeurs, le dégradé n’est plus appliqué aux valeurs du graphique qui sont inférieures à la valeur **Minimum** ou supérieures à la valeur **Maximum**. Toute barre ayant une valeur supérieure à la valeur **Maximum** est de couleur verte et toute barre dont la valeur est inférieure à la valeur **Minimum** est de couleur rouge.
 
