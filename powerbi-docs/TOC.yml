@@ -682,8 +682,10 @@
               href: desktop-qna-in-reports.md
             - name: Volet Analyse de Power BI Desktop
               href: desktop-analytics-pane.md
-            - name: "Utiliser des aperçus dans Power\_BI\_Desktop"
+            - name: Utilisation d’insights pour expliquer les hausses et les baisses
               href: desktop-insights.md
+            - name: Utilisation d’insights pour trouver où la distribution est différente dans les graphiques
+              href: desktop-insights-find-where-different.md
             - name: "Signets dans Power\_BI"
               href: desktop-bookmarks.md
             - name: Utiliser les thèmes de rapport
