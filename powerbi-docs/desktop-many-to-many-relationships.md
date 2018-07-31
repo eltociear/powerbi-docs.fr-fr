@@ -27,7 +27,7 @@ La capacité **relations plusieurs à plusieurs** dans **Power BI Desktop** fait
 
 * **Modèles composites** : permet à un rapport d’avoir plusieurs connexions de données, y compris des connexions provenant de DirectQuery ou d’une importation, dans toutes les combinaisons.
 * **Relations plusieurs-à-plusieurs** : les **modèles composites** vous permettent d’établir des **relations plusieurs-à-plusieurs** entre des tables, sans saisir obligatoirement des valeurs uniques dans les tables et en supprimant les précédentes solutions de contournement telles que la présentation de nouvelles tables uniquement pour établir des relations. 
-* **Mode de stockage** : vous pouvez désormais spécifier les visuels qui nécessitent une requête pour les sources de données principales, et ceux qui n’en ont pas besoin sont importés même s’ils sont basés sur DirectQuery, ce qui améliore les performances et réduit la charge du serveur principal. Auparavant, même de simples visuels comme les segments initiés par des requêtes sont envoyés à des sources principales. 
+* **Mode de stockage** : vous pouvez désormais spécifier les visuels qui nécessitent une requête pour les sources de données principales, et ceux qui n’en ont pas besoin sont importés même s’ils sont basés sur DirectQuery, ce qui améliore les performances et réduit la charge du serveur principal. Auparavant, même de simples visuels comme les segments initiés par des requêtes sont envoyés à des sources principales. 
 
 Cette collection de trois fonctionnalités connexes pour **modèles composites** est décrite dans différents articles :
 
@@ -158,7 +158,7 @@ Pour cette raison, il faut veiller à ce que des calculs avec *TOUT(\<Table>)*, 
 
 Il existe quelques limitations pour cette version de **relations plusieurs à plusieurs** et de **modèles composites**.
 
-Les sources multidimensionnelles suivantes ne peuvent pas être utilisées avec des **modèles composites** :
+Les sources multidimensionnelles suivantes ne peuvent pas être utilisées avec les **modèles composites** :
 
 * SAP HANA
 * SAP Business Warehouse

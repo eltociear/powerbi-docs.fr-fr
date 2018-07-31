@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 3246f13291b3dd46f60db9403b1b69029c65a513
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 43c103dcef6caad7e9aa36ab0f1c32939ee2dda6
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34289507"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39328577"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mesures dans Power BI Desktop
 **Power BI Desktop** vous aide à créer des analyses de vos données en quelques clics seulement. Mais parfois, ces données n’incluent pas tout ce dont vous avez besoin pour répondre à certaines de vos questions les plus importantes. Les mesures peuvent vous y aider.

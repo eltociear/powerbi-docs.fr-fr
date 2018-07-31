@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/09/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7c0037534fa61c5340206354beb6af04d3fc1f4a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5899274ba3cc8ce0a059978a9b83ae2a7fd08527
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249502"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280452"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Comment travailler en collaboration et partager des documents dans Power BI ?
 
@@ -75,7 +75,7 @@ Vous partagez une capture instantanée de la vignette, du rapport et du visuel e
 
 En savoir plus sur l’[annotation et le partage de vignettes, de rapports et de visuels](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) à partir des applications mobiles iOS et Android.
 
-Vous pouvez également [partager une capture instantanée d’une vignette](mobile-share-tile-windows-10-phone-app.md) à partir de l’application Power BI pour les appareils Windows 10.
+Vous pouvez également [partager une capture instantanée d’une vignette](mobile-windows-10-phone-app-get-started.md) à partir de l’application Power BI pour les appareils Windows 10.
 
 ## <a name="publish-to-the-web"></a>Publier sur le web
 Vous pouvez publiez des rapports Power BI sur le web en incorporant des visualisations interactives dans les billets de blog, les sites web, les réseaux sociaux et d’autres supports de communication en ligne sur n’importe quel appareil. Tous les utilisateurs d’Internet peuvent afficher vos rapports et vous n’avez aucun contrôle sur les personnes qui peuvent voir ce que vous avez publié. Celles-ci n’ont pas besoin d’une licence Power BI. La fonction de publication sur le web n’est disponible que pour les rapports que vous pouvez modifier. Vous ne pouvez pas publier des rapports sur le web s’ils sont partagés avec vous ou s’ils figurent dans une application. Informations complémentaires sur la [publication sur le web](service-publish-to-web.md)

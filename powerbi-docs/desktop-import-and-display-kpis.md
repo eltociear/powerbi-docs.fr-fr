@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: c077f64554101b97469dffc40b41ed3b1e8211cd
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9729791aa513db6daa4ccfd65f5279f198ef08de
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291302"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39327036"
 ---
 # <a name="import-and-display-kpis-in-power-bi"></a>Importer et afficher des indicateurs de performance clés (KPI)dans Power BI
 Avec **Power BI Desktop**, vous pouvez importer et afficher les indicateurs de performance clés (KPI, Key Performance Indicator) dans des tables, matrices et cartes.

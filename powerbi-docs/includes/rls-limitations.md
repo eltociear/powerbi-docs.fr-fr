@@ -5,7 +5,6 @@ Voici une liste des limites actuelles pour la sécurité au niveau des lignes su
 * Vous pouvez définir la sécurité au niveau des lignes uniquement sur les jeux de données créés à l’aide du client Power BI Desktop. Pour activer la sécurité au niveau des lignes pour les jeux de données créés avec Excel, vous devez d’abord convertir vos fichiers au format PBIX. [En savoir plus](../desktop-import-excel-workbooks.md)
 * Seules les connexions ETL et DirectQuery sont prises en charge. Les connexions actives à Analysis Services sont gérées dans le modèle local.
 * Le moteur Questions et réponses et Cortana ne sont pour l’instant pas pris en charge avec la sécurité au niveau des lignes. La zone d’entrée de Q&R n’est pas disponible pour les tableaux de bord si la sécurité au niveau des lignes est configurée sur tous les modèles. Cela est prévu, mais aucune date n’est disponible pour l’instant.
-* Le partage externe n’est actuellement pas pris en charge avec les jeux de données qui utilisent la sécurité au niveau des lignes.
 * Pour un modèle donné, vous pouvez attribuer jusqu’à 1 000 principaux Azure AD (c’est-à-dire des utilisateurs individuels ou des groupes de sécurité) aux rôles de sécurité. Pour attribuer un grand nombre d’utilisateurs à des rôles, préférez les groupes de sécurité aux utilisateurs individuels.
 
 ## <a name="known-issues"></a>Problèmes connus

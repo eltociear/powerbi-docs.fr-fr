@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c6edc34a8ac9c4a891814a7dea5b5863e4cb8998
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: c84ef0f57398bd9573488c1a8c5b16fd5511dd87
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135303"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39328968"
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>Se connecter à des flux OData dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à un **flux OData** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop.

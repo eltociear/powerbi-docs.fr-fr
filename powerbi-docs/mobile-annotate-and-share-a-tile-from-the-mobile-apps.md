@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: c70a5c50a139423f6c5e69ed6ec9a416dfae8b4e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: bb628f0cc6f723a195f3b90e6d20f4018d9f2709
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34295258"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279846"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Annoter et partager une vignette, un rapport ou un visuel dans les applications mobiles Power BI
 S’applique à :
@@ -31,7 +31,7 @@ Vous pouvez annoter et partager la capture instantanée d’une vignette, d’un
 
 Le message contenant la capture instantanée de la vignette, du rapport ou du visuel contient également un lien vers l’objet en question sur le service Power BI ([https://powerbi.com](https://powerbi.com)). Vos destinataires peuvent cliquer sur le lien et accéder directement à cette vignette, à ce rapport ou à ce visuel si vous et eux possédez une licence Power BI Pro, ou si le contenu est dans une [capacité Premium](service-premium.md), et que vous avez déjà partagé l’élément avec eux. 
 
-Vous pouvez [partager une vignette à partir de l’application Power BI pour les appareils Windows 10](mobile-share-tile-windows-10-phone-app.md), mais pas l’annoter.
+Vous pouvez [partager une vignette à partir de l’application Power BI pour les appareils Windows 10](mobile-windows-10-phone-app-get-started.md), mais pas l’annoter.
 
 ## <a name="open-a-tile-for-annotating"></a>Ouvrir une vignette à des fins d’annotation
 1. Appuyez sur la vignette pour l’ouvrir en mode focus.

@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/26/2018
 ms.author: maggies
 ms.custom: ''
-ms.openlocfilehash: 4a3b5aec179eb9436f1d8ed8a58bcf97906e1c1f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 75f64de25799488d85b4f9938fa134d0d277f222
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294706"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280038"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Présentation des applications mobiles Power BI
 Power BI propose tout un éventail d’applications mobiles pour appareils mobiles iOS, Android et Windows 10. Elles permettent de se connecter à des données cloud et locales et de les manipuler. 
@@ -42,6 +42,6 @@ Microsoft Intune permet aux organisations de contrôler divers éléments, comme
 En savoir plus sur la [configuration des applications mobiles Power BI pour Android et iOS avec Microsoft Intune](service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Afficher un tableau de bord dans les applications mobiles](mobile-apps-find-content-mobile-devices.md)
+[Afficher un tableau de bord dans les applications mobiles](mobile-apps-quickstart-view-dashboard-report.md)
 
 

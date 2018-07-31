@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/11/2017
 ms.author: maghan
-ms.openlocfilehash: 339390bba2e35101bdd42f7f51ab059473231575
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 51ad188479c11f5a0d16768eee8c533bdc71c59c
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290887"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359929"
 ---
 # <a name="authenticate-users-and-get-an-azure-ad-access-token-for-your-power-bi-app"></a>Authentifier les utilisateurs et obtenir un jeton d’accès Azure AD pour votre application Power BI
 Découvrez comment authentifier les utilisateurs au sein de votre application Power BI et récupérer un jeton d’accès à utiliser avec l’API REST.
@@ -190,7 +190,6 @@ var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "B
 Pour plus d’informations sur l’utilisation de l’instruction **await**, consultez [await (référence C#)](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/await)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Maintenant que vous avez le jeton d’accès, vous pouvez appeler l’API REST Power BI pour incorporer le contenu. Pour plus d’informations sur l’incorporation de votre contenu, consultez [Incorporation de vos tableaux de bord, rapports et vignettes Power BI](embedding-content.md#step-2-embed-your-content).
+Maintenant que vous avez le jeton d’accès, vous pouvez appeler l’API REST Power BI pour incorporer le contenu. Pour plus d’informations sur l’incorporation de votre contenu, consultez [Incorporation de vos tableaux de bord, rapports et vignettes Power BI](embed-sample-for-customers.md#embed-your-content-within-your-application).
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-

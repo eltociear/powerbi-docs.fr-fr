@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c3f495f64a2edeb85606453c951a7f6eaf2742fe
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 20deb3f0b2f42bfcde66cb685fd6242f7b4a4be3
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34299444"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39327013"
 ---
 # <a name="google-analytics-connector-for-power-bi-desktop"></a>Connecteur Google Analytics pour Power BI Desktop
 > [!NOTE]

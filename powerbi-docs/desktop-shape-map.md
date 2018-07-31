@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 88b8b4a50913cd45c5e4ff80a5d5e0ded2eb4cdb
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 4e8e620ca8737e37fb129212fd15e1b131954217
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600746"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39329244"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
 Dans Power BI Desktop, vous pouvez créer un élément visuel **Carte de formes** pour afficher des comparaisons relatives de régions sur une carte en appliquant différentes couleurs aux différentes régions. Contrairement à l’élément visuel **Carte**, l’élément visuel **Carte de formes** ne peut pas afficher d’emplacements géographiques précis de points de données sur une carte. Son principal objectif est en effet d’afficher des comparaisons relatives de régions sur une carte en affectant des couleurs différentes à ces dernières.

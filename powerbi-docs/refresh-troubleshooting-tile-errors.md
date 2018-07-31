@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 8b68ce7af749b7e7f292592f6debdc7e964d6c17
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b5329614ff988fd9863a51cba314671756b70477
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34242883"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39329566"
 ---
 # <a name="troubleshooting-tile-errors"></a>Résolution des erreurs de vignette
 Voici les erreurs courantes que vous pouvez rencontrer avec des vignettes, ainsi qu’une explication à ce sujet.

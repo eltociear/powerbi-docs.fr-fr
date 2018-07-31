@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b2437074fb6beff4b1be62287d547111488862e3
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: c21d04da722e017210f7f83df3e1a5aa7dde1166
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210327"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280751"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop (préversion)
 Vous pouvez créer des **info-bulles de rapport** attrayantes qui s’affichent quand vous pointez sur les visuels, basées sur les pages de rapport que vous créez dans **Power BI Desktop**. Quand vous créez une page de rapport à utiliser comme info-bulle, vos info-bulles personnalisées peuvent inclure des visuels, des images et toute autre collection d’éléments que vous créez dans la page de rapport. 
@@ -124,6 +124,7 @@ Pour cette préversion des **info-bulles** de rapport, il y a quelques considér
 * Les info-bulles de rapport ne sont pas prises en charge pour les visuels personnalisés. 
 * Les info-bulles de rapport ne prennent pas en charge l’affichage des champs clusters. 
 * Quand ils sélectionnent un champ à afficher pour les info-bulles de rapport, entre un champ et une catégorie, les visuels qui contiennent ce champ affichent uniquement l’info-bulle spécifiée si une correspondance est trouvée lors de la totalisation avec le champ sélectionné. 
+
 
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/19/2018
 ms.author: maggies
-ms.openlocfilehash: 41a8b463ca95d0e4e0e0ba71dbd9ec9a1ce78920
-ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
+ms.openlocfilehash: 7149fd43d4214ed756eff61a523805ec9f50e1ae
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39182722"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280774"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -185,7 +185,7 @@ Lisez le [résumé des fonctionnalités d’applications mobiles de juillet 201
 
 **Nouveau menu : Applications** Une application est une collection de tableaux de bord et de rapports conçus par votre organisation afin de fournir des mesures clés permettant de prendre plus rapidement et facilement des décisions pilotées par les données.
 
-En savoir plus sur l’[organisation de votre contenu Power BI](mobile-apps-find-content-mobile-devices.md).
+En savoir plus sur l’[organisation de votre contenu Power BI](mobile-apps-quickstart-view-dashboard-report.md).
 
 #### <a name="ios-and-android-devices"></a>Appareils iOS et Android
 **Power BI Report Server en préversion** Créez et publiez des rapports Power BI en local. Puis [affichez et utilisez-les dans votre appareil mobile Android ou iOS](mobile-app-ssrs-kpis-mobile-on-premises-reports.md). 
@@ -241,7 +241,7 @@ Questions/Réponses vous permet de poser des questions concernant vos données a
 Vous pouvez désormais établir des connexions à jusqu’à cinq serveurs SQL Server Reporting Services (SSRS) en même temps.
 
 #### <a name="android-tablets"></a>Tablettes Android
-L’**application mobile Power BI** pour tablettes Android est à présent disponible partout dans le monde. Commencez à utiliser [Power BI sur votre tablette Android](mobile-android-tablet-app-get-started.md).
+L’**application mobile Power BI** pour tablettes Android est à présent disponible partout dans le monde. Commencez à utiliser [Power BI sur votre tablette Android](mobile-android-app-get-started.md).
 
 #### <a name="ios-and-android-devices"></a>Appareils iOS et Android
 **Nouveau menu pour les vignettes du tableau de bord** Accédez au rapport sous-jacent, développez la vignette ou gérez une alerte, le tout directement à partir d’un menu sur la vignette d’un tableau de bord. 
@@ -304,7 +304,7 @@ Lisez le [résumé de novembre 2016 des fonctionnalités d’application mobile
 #### <a name="android-tablets"></a>Tablettes Android
 **Application mobile Power BI pour les tablettes Android** Oui, la version préliminaire est disponible.
 
-* Découvrez [Power BI sur votre tablette Android](mobile-android-tablet-app-get-started.md)
+* Découvrez [Power BI sur votre tablette Android](mobile-android-app-get-started.md)
 * Découvrez les [indicateurs de performance clés et les rapports mobiles Reporting Services sur votre tablette Android](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### <a name="android-devices"></a>Appareils Android
@@ -498,7 +498,7 @@ Toutes les améliorations apportées en janvier sont déjà dans la nouvelle [ap
 
 **Vignettes et widgets web R** : affichez ces nouveaux types de vignettes de tableau de bord sur votre appareil mobile.
 
-**Tableaux de bord Bing** Dans le service Power BI, vous pouvez désormais créer des [tableaux de bord avec les résultats d’une recherche Bing](service-connect-to-bing.md), et les afficher sur votre appareil mobile.
+**Tableaux de bord Bing** Dans le service Power BI, vous pouvez désormais créer des [tableaux de bord avec les résultats d’une recherche Bing](service-connect-to-services.md), et les afficher sur votre appareil mobile.
 
 **Pages de rapport épinglées en tant que vignettes aux tableaux de bord** : comme vous pouvez maintenant épingler la totalité d’une page de rapport à un tableau de bord dans le service Power BI, vous pouvez afficher des pages de rapport dans l’application Power BI sur votre iPhone ou votre téléphone Android.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: aa7fcc720861d1459183aaf7a82a2af8912eb5b6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: e75cc0f7ca31257ea46af20b63c29d0d870ef7a0
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599745"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39329681"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 L’obtention des données les plus récentes constitue souvent un facteur essentiel à la prise de décisions informées. Vous avez sans doute déjà utilisé la fonctionnalité Obtenir des données de Power BI pour vous connecter à des données et les charger, voire générer des rapports et un tableau de bord. Avant d’aller plus loin, vous devez vous assurer que les données que vous utilisez sont vraiment les plus récentes.

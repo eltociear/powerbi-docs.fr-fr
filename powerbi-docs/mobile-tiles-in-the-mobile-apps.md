@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 5601ab79832f2d52622f5c13ecd23f346408f08e
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: eda7f44c869829564703bda6112177234d3f2d44
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598622"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280130"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -92,7 +92,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10tileellpslink.png)
    
-    [Partager une capture instantanée de la vignette](mobile-share-tile-windows-10-phone-app.md).
+    [Partager une capture instantanée de la vignette](mobile-windows-10-phone-app-get-started.md).
    
     Appuyez sur **Ouvrir le rapport** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) pour [afficher le rapport sous-jacent](mobile-reports-in-the-mobile-apps.md).
    
@@ -120,7 +120,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
    
-   Appuyez sur l’icône Partager un instantané ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) pour [partager une vignette](mobile-share-tile-windows-10-phone-app.md) avec d’autres personnes.   
+   Appuyez sur l’icône Partager un instantané ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) pour [partager une vignette](mobile-windows-10-phone-app-get-started.md) avec d’autres personnes.   
    
    Appuyez sur l’icône Ouvrir le rapport ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) pour [afficher le rapport](mobile-reports-in-the-mobile-apps.md) sur lequel se base la vignette. 
 4. Appuyez sur la flèche ou le bouton Précédent pour fermer la vignette et revenir au tableau de bord.
