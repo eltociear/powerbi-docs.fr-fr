@@ -61,21 +61,21 @@ La première étape consiste à télécharger les exemples Retail Analysis (Anal
 
 4. Sélectionnez **l’exemple Retail Analysis** (Analyse de la vente au détail).
  
-    ![Retail Analysis Sample](media/mobile-apps-ios-qna/power-bi-rs.png)
+    ![Exemple Analyse de la vente au détail](media/mobile-apps-ios-qna/power-bi-rs.png)
  
 8. Sélectionnez **Se connecter**.  
   
-   ![Retail Analysis Sample](media/mobile-apps-ios-qna/retail16.png)
+   ![Exemple Analyse de la vente au détail](media/mobile-apps-ios-qna/retail16.png)
    
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail.
    
-   ![Retail Analysis Sample](media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
+   ![Exemple Analyse de la vente au détail](media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
 
 **Obtenir l’exemple Opportunity Analysis** (Analyse des opportunités)
 
 - Suivez les mêmes étapes que pour l’exemple Retail Analysis (Analyse de la vente au détail), mais en sélectionnant **l’exemple Opportunity Analysis** (Analyse des opportunités) à l’étape 4.
 
-    ![Retail Analysis Sample](media/mobile-apps-ios-qna/power-bi-oa.png)
+    ![Exemple Analyse de la vente au détail](media/mobile-apps-ios-qna/power-bi-oa.png)
   
 Vous pouvez à présent consulter les exemples sur votre appareil iOS.
 
