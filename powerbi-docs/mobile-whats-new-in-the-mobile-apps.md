@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/03/2018
+ms.date: 07/19/2018
 ms.author: maggies
-ms.openlocfilehash: 645e1e40867f52718f2ec79a17cf1b5525a3d951
-ms.sourcegitcommit: 9efb94ddb254e9c03e9871ad232509065ee24bf2
+ms.openlocfilehash: 41a8b463ca95d0e4e0e0ba71dbd9ec9a1ce78920
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37864396"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182722"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,19 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](service-whats-new.md)  
+
+## <a name="july-2018"></a>Juillet 2018
+
+### <a name="ios-and-android-only"></a>iOS et Android uniquement
+
+**Filtres partagés**
+
+Vous pouvez maintenant recevoir des rapports avec des filtres et des segments partagés.
+
+**Prise en charge des images d'arrière-plan**
+
+Quand vous voyez un rapport en mode paysage sur votre appareil mobile, vous voyez les mêmes images d'arrière-plan que dans Power BI sur le web.
+
 
 ## <a name="june-2018"></a>Juin 2018
 

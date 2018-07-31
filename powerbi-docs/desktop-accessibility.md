@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/06/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 72a900b1661a77e5b31c1d68b5726d989b236f7b
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.openlocfilehash: b26fbfccc3b0a98761ecc1444af4e535339c96de
+ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39031999"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39210281"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -47,8 +47,12 @@ Vous pouvez appuyer sur **Alt+Maj+F11** pour présenter une version accessible d
 
 > [!NOTE]
 > La fonctionnalité Afficher des données n’est accessible à un lecteur d’écran qu’avec ce raccourci clavier. Si vous ouvrez Afficher les données par le biais de l’option disponible dans l’en-tête du visuel, elle ne sera pas accessible à un lecteur d’écran.
-> 
-> 
+
+À partir de la version de juillet 2018 de **Power BI Desktop**, les segments sont également dotés d’une fonctionnalité d’accessibilité intégrée. Lorsque vous sélectionnez un segment, pour régler sa valeur, actionnez CTRL + flèche droite (contrôle plus la touche flèche droite) pour vous déplacer dans les différents contrôles du segment. Par exemple, lorsque vous appuyez d’abord sur CTRL + flèche droite, le focus est mis sur la gomme, et appuyer sur la barre d’espace revient à cliquer sur le bouton Gomme, ce qui efface toutes les valeurs sur le segment. 
+
+Vous pouvez parcourir les contrôles dans un segment en appuyant sur la touche TAB. En appuyant sur la touche TAB lorsque vous êtes sur la gomme, vous accédez au bouton de liste déroulante ; un autre actionnement de la touche TAB vous amène à la première valeur de segment (s’il existe plusieurs valeurs pour le segment, tels qu’une plage). 
+
+![Appuyez sur CTRL + (touche flèche vers la droite) dans Power BI Desktop pour ajuster l’élément ou des valeurs dans un segment, appuyez sur la barre d’espace pour sélectionner l’élément et régler sa valeur](media/desktop-accessibility/accessibility_07.png)
 
 Ces ajouts à l’accessibilité ont été créés pour permettre aux utilisateurs de tirer pleinement parti des rapports Power BI à l’aide d’un lecteur d’écran et d’une navigation au clavier.
 

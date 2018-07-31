@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1f53b0efc2195221fbcbe45f03102d2c98e8eef3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: b2437074fb6beff4b1be62287d547111488862e3
+ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34232105"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39210327"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop (préversion)
 Vous pouvez créer des **info-bulles de rapport** attrayantes qui s’affichent quand vous pointez sur les visuels, basées sur les pages de rapport que vous créez dans **Power BI Desktop**. Quand vous créez une page de rapport à utiliser comme info-bulle, vos info-bulles personnalisées peuvent inclure des visuels, des images et toute autre collection d’éléments que vous créez dans la page de rapport. 
@@ -119,6 +119,7 @@ Quand un visuel fait l’objet d’une mise en évidence croisée dans un rappor
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Pour cette préversion des **info-bulles** de rapport, il y a quelques considérations et limitations à prendre en compte.
 
+* À partir de la version de juillet 2018 de **Power BI Desktop**, les visuels de table et de matrice sont pris en charge pour les info-bulles. 
 * Les info-bulles de rapport ne sont pas prises en charge lors de l’affichage des rapports dans des applications mobiles, ou dans des environnements intégrés, y compris Publier sur le web. 
 * Les info-bulles de rapport ne sont pas prises en charge pour les visuels personnalisés. 
 * Les info-bulles de rapport ne prennent pas en charge l’affichage des champs clusters. 

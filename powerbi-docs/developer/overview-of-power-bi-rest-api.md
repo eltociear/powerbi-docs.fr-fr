@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 8a688f46a46dbb1015629c7785d96b62d4f8df26
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: a9d178ccfdb47152fd2c13d445b9190ced6115e1
+ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813232"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39157437"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Comment les développeurs peuvent-ils se servir de l’API Power BI ?
 Power BI présente des tableaux de bord interactifs, qui peuvent être créés et mis à jour à partir de différentes sources de données en temps réel. À l’aide d’un langage de programmation qui prend en charge les appels REST, vous pouvez créer des applications qui s’intègrent à un tableau de bord Power BI en temps réel. Vous pouvez également intégrer des vignettes et des rapports Power BI à des applications.
@@ -35,7 +35,7 @@ Voici quelques opérations possibles avec les API Power BI.
 > 
 > 
 
-## <a name="power-bi-developer-samples"></a>Exemples des développeurs de Power BI
+## <a name="power-bi-developer-samples"></a>Exemples pour les développeurs de Power BI
 Les exemples des développeurs de Power BI comprennent des éléments pour l’incorporation des tableaux de bord, des rapports et des vignettes.
 
 [Exemples des développeurs Power BI](https://github.com/Microsoft/PowerBI-Developer-Samples)
@@ -58,6 +58,11 @@ Choisissez la solution qui vous convient :
 * [L’incorporation pour votre organisation](embedding.md#embedding-for-your-organization) vous permet d’étendre le service Power BI. Exécutez la solution [Incorporer pour votre organisation](https://aka.ms/embedsetup/UserOwnsData).
 
 Pour obtenir un exemple complet d’utilisation de l’API JavaScript, vous pouvez utiliser [l’outil Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). C’est un moyen rapide de jouer avec différents types d’exemples Power BI Embedded. Vous trouverez également d’autres informations sur l’API JavaScript sur la page [Wiki PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
+
+## <a name="push-data-into-power-bi"></a>Transmettre des données à Power BI
+Vous pouvez utiliser l’API Power BI pour envoyer des données dans un jeu de données. Cela vous permet d’ajouter une ligne à une table à l’intérieur d’un jeu de données. Les nouvelles données peuvent ensuite être reflétées dans des vignettes sur un tableau de bord et dans des visuels à l’intérieur de votre rapport.
+
+![Exemple de données push](media/what-can-you-do/powerbi-push-data.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Transmission de données à un jeu de données](walkthrough-push-data.md)  

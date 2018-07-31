@@ -7,15 +7,15 @@ ms.reviewer: ajayan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 07/19/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1b7a111e1b240a37211c17bce4d497de2d864074
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 45e9207ffa666e33b298e82bbc78e07c226b780e
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852299"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182791"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Gérer, mettre à jour et supprimer des packs de contenu d’organisation
 > [!NOTE]
@@ -52,7 +52,7 @@ Quand vous apportez une modification au tableau de bord que vous avez inclus dan
 4. Apportez les modifications nécessaires dans la fenêtre **Mettre à jour le pack de contenu** , puis sélectionnez **Mettre à jour**. Un message **Réussite** s’affiche.
    
    * Pour les membres du groupe qui n’ont pas personnalisé le pack de contenu, la mise à jour est automatiquement appliquée.
-   * Les membres du groupe qui ont personnalisé le pack de contenu reçoivent une notification indiquant la disponibilité d’une nouvelle version.  Ils peuvent accéder à AppSource et obtenir le pack de contenu mis à jour sans perdre leur version personnalisée.  Ils ont alors deux versions : la version personnalisée et le pack de contenu mis à jour.  Dans la version personnalisée, toutes les mosaïques du pack de contenu d’origine auront disparu.  Toutefois, les vignettes épinglées provenant d’autres rapports seront toujours affichées.    
+   * Les membres du groupe qui ont personnalisé le pack de contenu reçoivent une notification indiquant la disponibilité d’une nouvelle version.  Ils peuvent accéder à AppSource et obtenir le pack de contenu mis à jour sans perdre leur version personnalisée.  Ils ont alors deux versions : la version personnalisée et le pack de contenu mis à jour.  Dans la version personnalisée, toutes les mosaïques du pack de contenu d’origine auront disparu.  Toutefois, les vignettes épinglées provenant d’autres rapports seront toujours affichées. Cependant, si le propriétaire du pack de contenu supprime le jeu de données sur lequel le pack est basé, tout le rapport sera supprimé.  
 
 ## <a name="update-the-audience-expand-or-restrict-access"></a>Modifier le public : développer ou restreindre l’accès
 Les créateurs de packs de contenu peuvent désormais développer ou restreindre l’accès aux packs de contenu.  Par exemple, vous avez publié un pack de contenu pour un public large et vous venez de décider d’en restreindre l’accès à un groupe moins large.  

@@ -8,15 +8,15 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 07/19/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0536dc6fd637db07c0e26a4ed7f0da1071b646eb
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: a1719f8a6f9f4ad3989aa498c584b337cd9fdd00
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137419"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182745"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – Concepts de base du service Power BI
 
@@ -48,9 +48,9 @@ Vous pouvez également regarder cette vidéo avant de lire le reste de cet artic
 Les 4 principaux composants de Power BI sont les ***tableaux de bord***, les ***rapports***, les ***classeurs*** et les ***jeux de données***. Ceux-ci sont organisés en ***espaces de travail***. Il est important de bien comprendre les espaces de travail avant d’étudier les 4 principaux composants. Nous allons donc commencer par là. 
 
 ## <a name="workspaces"></a>Espaces de travail
-Les espaces de travail sont des conteneurs pour les tableaux de bord, rapports, classeurs et jeux de données dans Power BI. Il existe deux types d’espaces de travail : **Mon espace de travail* et les espaces de travail d’application. Qu’est-ce qu’une *application* ? Une *application* Power BI est une collection de tableaux de bord et de rapports destinés à fournir des mesures clés pour votre organisation. Les applications sont interactives, mais ne peuvent pas être modifiées. 
+Les espaces de travail sont des conteneurs pour les tableaux de bord, rapports, classeurs et jeux de données dans Power BI. Il existe deux types d’espaces de travail : *Mon espace de travail* et les *espaces de travail d’application*. Qu’est-ce qu’une *application* ? Une *application* Power BI est une collection de tableaux de bord et de rapports destinés à fournir des mesures clés pour votre organisation. Les applications sont interactives, mais ne peuvent pas être modifiées. 
 
-- *Mon espace de travail* est l’espace de travail personnel qui permet à un client Power BI de travailler avec son contenu. Vous êtes le seul utilisateur à avoir accès à Mon espace de travail. Si vous souhaitez partager votre contenu, vous disposez de plusieurs options : créer un espace de travail d’application où vous regroupez le contenu dans une *application* et le rendez disponible à d’autres personnes de votre organisation, ou créer un espace de travail d’application et accorder à vos collègues l’accès à cet espace de travail, à des fins de partage et de collaboration.     
+- *Mon espace de travail* est l’espace de travail personnel qui permet à un client Power BI de travailler avec son propre contenu. Vous êtes le seul utilisateur à avoir accès à Mon espace de travail. Vous pouvez partager des tableaux de bord et des rapports à partir de votre espace Mon espace de travail. Pour collaborer sur des tableaux de bord et des rapports ou créer une application, vous devez travailler dans un espace de travail d’application.      
 -  Les *espaces de travail d’application* permettent de collaborer et de partager du contenu avec vos collègues. C’est également l’endroit où vous créez, publiez et gérez des applications pour votre organisation. Considérez-les comme des zones intermédiaires et des conteneurs pour le contenu d’une application Power BI. Vous pouvez ajouter des collègues à vos espaces de travail d’application et collaborer sur des tableaux de bord, rapports, classeurs et jeux de données. Tous les membres de l’espace de travail d’application doivent avoir des licences Power BI Pro, mais les consommateurs de l’application (collègues qui ont accès aux applications) ne doivent pas nécessairement avoir des licences Pro.  
 
 Pour plus d’informations, consultez la section **Partager votre travail** de la Table des matières, en commençant par [Comment dois-je collaborer et partager des tableaux de bord et rapports](service-how-to-collaborate-distribute-dashboards-reports.md)
