@@ -102,7 +102,7 @@ La différence est qu’avec Power BI Desktop, vous pouvez utiliser vos requête
 
     ![Exemple ouvert dans la vue Rapport de Power BI](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
-1. Le fichier s’ouvre dans l’affichage Rapport. Vous remarquerez les quatre onglets au bas de l’éditeur de rapport. Cela signifie qu’il y a quatre pages dans ce rapport et que la page « New stores » est actuellement sélectionnée. 
+1. Le fichier s’ouvre dans l’affichage Rapport. Vous remarquerez les quatre onglets au bas de l’éditeur de rapport. Cela signifie qu’il y a quatre pages dans ce rapport et que la page « Nouveaux magasins » est actuellement sélectionnée. 
 
     ![gros plan des onglets du bas et New Stores mis en évidence](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
 
