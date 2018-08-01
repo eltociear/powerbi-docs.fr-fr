@@ -482,9 +482,9 @@
       items:
         - name: "Qu’est-ce que Power\_BI\_Desktop\_?"
           href: desktop-what-is-desktop.md
-    - name: Démarrages rapide
+    - name: Guides de démarrage rapide
       items:
-        - name: Connectez-vous à vos données
+        - name: Se connecter aux données
           href: desktop-quickstart-connect-to-data.md
     - name: Didacticiels
       items:
@@ -918,30 +918,30 @@
       items:
         - name: Vue d’ensemble
           items:
-            - name: "Incorporation avec Power\_BI"
+            - name: "Qu’est-ce que l’incorporation avec Power\_BI"
               href: developer/embedding.md
+            - name: Qu’est-ce que Power BI Embedded dans Azure
+              href: developer/azure-pbie-what-is-power-bi-embedded.md
         - name: Didacticiels
           items:
             - name: Incorporer du contenu pour les clients
               href: developer/embed-sample-for-customers.md
             - name: Incorporer du contenu pour votre organisation
               href: developer/embed-sample-for-your-organization.md
+            - name: Intégrer du contenu dans votre application pour des clouds souverains
+              href: developer/embed-sample-for-customers-sovereign-clouds.md
         - name: Concepts
           items:
             - name: Sécurité au niveau des lignes (RLS)
               href: developer/embedded-row-level-security.md
-            - name: FORUM AUX QUESTIONS
+            - name: Questions fréquentes (FAQ)
               href: developer/embedded-faq.md
             - name: "Autorisations Power\_BI"
               href: developer/power-bi-permissions.md
         - name: Guides pratiques
           items:
-            - name: Comment incorporer votre contenu
-              href: developer/embedding-content.md
             - name: Comment incorporer à partir d’une application
               href: developer/embed-from-apps.md
-            - name: Intégrer du contenu dans une application pour des clouds souverains (l’application est propriétaire des données)
-              href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Créer un client Azure Active Directory
               href: developer/create-an-azure-active-directory-tenant.md
             - name: Inscrire une application
@@ -950,18 +950,36 @@
               href: developer/get-azuread-access-token.md
             - name: Questions et réponses sur l’incorporation
               href: developer/qanda.md
-            - name: Migrer Power BI Embedded
-              href: developer/migrate-from-powerbi-embedded.md
             - name: Résolution des problèmes de votre application incorporée
               href: developer/embedded-troubleshoot.md
+            - name: Gérer les capacités dans Azure
+              items:
+                - name: Créer une capacité dans Azure
+                  href: developer/azure-pbie-create-capacity.md
+                - name: Mettre à l’échelle une capacité dans Azure
+                  href: developer/azure-pbie-scale-capacity.md
+                - name: Suspendre et démarrer une capacité dans Azure
+                  href: developer/azure-pbie-pause-start.md
+            - name: Migrer à partir de collections d’espaces de travail
+              items:
+                - name: Guide pratique pour migrer à partir de collections d’espaces de travail Power BI
+                  href: developer/migrate-from-powerbi-embedded.md
+                - name: Outil de migration
+                  href: developer/migrate-tool.md
+                - name: Extraits de code de migration
+                  href: developer/migrate-code-snippets.md
         - name: Référence
           items:
+            - name: API
+              items:
+                - name: API REST Azure Resource Management
+                  href: 'https://docs.microsoft.com/rest/api/power-bi-embedded/'
+                - name: "API REST Power\_BI"
+                  href: 'https://msdn.microsoft.com/library/mt147898.aspx'
             - name: Téléchargement du SDK .NET
               href: 'https://go.microsoft.com/fwlink/?linkid=848274'
             - name: Incorporer des dispositions personnalisées dans une application
               href: developer/embedded-custom-layout.md
-            - name: Extraits de code de migration
-              href: developer/migrate-code-snippets.md
         - name: Ressources
           items:
             - name: Centre de développement
@@ -978,8 +996,6 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848273'
             - name: Exemples
               href: 'https://go.microsoft.com/fwlink/?linkid=851293'
-            - name: Outil de migration Power BI Embedded
-              href: developer/migrate-tool.md
             - name: Communauté Power BI
               href: 'https://go.microsoft.com/fwlink/?linkid=848280'
             - name: Stack Overflow
@@ -1064,8 +1080,6 @@
           items:
             - name: API REST
               href: 'https://docs.microsoft.com/rest/api/power-bi'
-            - name: "Informations de référence sur l’API REST de Power\_BI"
-              href: developer/rest-api-reference.md
             - name: Listing du code complet
               href: developer/walkthrough-push-data-complete-code.md
         - name: Ressources
@@ -1264,7 +1278,7 @@
               href: service-premium-release-notes.md
         - name: "Rôle d’administration dans Office\_365"
           href: service-admin-role.md
-        - name: Foire aux questions (FAQ)
+        - name: Questions fréquentes (FAQ)
           href: service-admin-faq.md
     - name: Guides pratiques
       items:
