@@ -1,21 +1,21 @@
 ---
 title: Utiliser le mode de stockage dans Power BI Desktop (préversion)
-description: Utiliser le mode de stockage pour contrôler si les données sont mises en cache en mémoire pour les rapports dans Power BI Desktop
+description: Utiliser le mode de stockage pour contrôler si les données des rapports sont mises en cache en mémoire dans Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 15580cd43e4bb2d286310868a8e853daff04f280
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 28dcc4812a37b5ad3f514227f4e5fbcdfebeb579
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210904"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388798"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Mode de stockage dans Power BI Desktop (préversion)
 
@@ -157,7 +157,7 @@ La requête suivante est intéressante, car elle combine les deux colonnes. Cett
 
 Les requêtes affichées dans la section précédente montrent que les tables **Doubles** accèdent parfois au cache et n’y accèdent parfois pas. Pour cette raison, si le cache est obsolète, des valeurs différentes peuvent être retournées. L’exécution de la requête ne tentera pas de masquer des problèmes de données, par exemple, en filtrant les résultats DirectQuery pour qu’ils correspondent aux valeurs mises en cache. Il vous incombe de connaître vos flux de données et de réaliser la conception en conséquence. Il existe des techniques établies pour gérer ces cas à la source, si nécessaire.
 
-Le mode de stockage **Double** est une optimisation des performances. Il ne doit être utilisé que de manières qui ne compromettent pas la capacité à répondre aux besoins de l’entreprise. Pour un autre comportement, envisagez d’utiliser les techniques décrites dans l’article [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md).
+Le mode de stockage **Double** est une optimisation des performances. Il doit être utilisé seulement s’il ne compromet pas la capacité à répondre aux besoins de l’entreprise. Pour un autre comportement, envisagez d’utiliser les techniques décrites dans l’article [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md).
 
 ## <a name="data-view"></a>Affichage des donnés
 Si au moins une table dans le jeu de données a son **mode de stockage** défini sur Importer ou Double, l’onglet **Affichage des données** s’affiche.
