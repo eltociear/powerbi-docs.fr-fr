@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/31/2018
+ms.date: 07/31/2018
 ms.author: maghan
-ms.openlocfilehash: 4242e2a88ab930c5f647bbfa4aa97fea1dc313ad
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: 06e7c27579f559928dab822a7e0323cfb4abc1a1
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157122"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388591"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Inscrire une application Azure AD pour incorporer du contenu Power BI
 Découvrez comment inscrire une application dans Azure Active Directory (Azure AD) afin de l’utiliser avec l’incorporation de contenu Power BI.
@@ -36,7 +36,7 @@ Voici comment inscrire votre application avec l’outil d’inscription d’appl
 3. Fournissez le **Nom de l’application**.
 4. La sélection du type d’application dépend du type d’application que vous utilisez.
    
-   * Optez pour le type **Application native** pour les applications qui s’exécutent sur des appareils clients. Vous devez choisir **Application native** si vous incorporez du contenu pour vos clients, quelle que soit l’application concernée. Même pour les applications web.
+   * Optez pour le type **Application native** pour les applications qui s’exécutent sur des appareils clients. Vous devez choisir **Application native** si vous incorporez du contenu pour vos clients, quelle que soit l’application concernée, même des applications web.
    * Optez pour le type **Application web côté serveur** pour les applications ou les API web.
 
 5. Spécifiez l’**URL de redirection** et l’**URL de la page d’accueil**. L’**URL de redirection** fonctionne avec n’importe quelle URL valide.
@@ -80,8 +80,8 @@ L’autre option pour l’inscription de votre application consiste à accéder 
     ![](media/register-app/azuread-new-app-registration.png)
 5. Suivez les invites pour créer une application.
    
-   * Pour des applications web, spécifiez l’URL de connexion, qui est l’URL de base de votre application, où les utilisateurs peuvent se connecter. Par exemple, `http://localhost:13526`.
-   * Pour des applications natives, spécifiez un **URI de redirection** qu’Azure AD utilise pour retourner des réponses de jeton. Entrez une valeur spécifique de votre application. Par exemple : `http://myapplication/Redirect`
+   * Pour des applications web, spécifiez l’URL de connexion, qui est l’URL de base de votre application, où les utilisateurs se connectent (par exemple, `http://localhost:13526`).
+   * Pour des applications natives, spécifiez un **URI de redirection** qu’Azure AD utilise pour retourner des réponses de jeton. Veillez à entrer une valeur spécifique à votre application (par exemple, `http://myapplication/Redirect`).
 
 Pour plus d’informations sur la façon d’inscrire des applications dans Azure Active Directory, consultez [Intégration d’applications dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 
@@ -93,7 +93,7 @@ Voici comment obtenir un ID client :
 1. Connectez-vous au [portail Azure](https://portal.azure.com).
 2. Choisissez votre locataire Azure AD en sélectionnant votre compte dans l’angle supérieur droit de la page.
 3. Dans le volet de navigation gauche, choisissez **Autres services**, puis sélectionnez **Inscriptions des applications**.
-4. Sélectionnez l’application dont vous souhaitez récupérer l’ID client.
+4. Sélectionnez l’application dont vous souhaitez récupérer l’ID client dont vous avez besoin.
 5. Vous pouvez voir un **ID d’application** répertorié en tant que GUID. Il s’agit de l’ID client pour l’application.
    
     ![ID client répertorié en tant qu’ID d’application lors de l’inscription d’application](media/register-app/powerbi-embedded-app-registration-client-id.png)
@@ -128,7 +128,7 @@ Vous devez être connecté avec un compte *principal* pour l’incorporation, ou
     ![](media/register-app/powerbi-embedded-azuread-app-permissions04.png)
 5. Dans **Autorisations requises**, sélectionnez **Accorder des autorisations**.
    
-    L’action **Accorder des autorisations** est nécessaire pour éviter qu’Azure AD exige une confirmation du *compte principal*. Si le compte qui effectue cette action est celui d’un administrateur général, vous pouvez accorder des autorisations pour tous les utilisateurs de votre organisation pour cette application. Si le compte qui effectue cette action est le *compte principal* et pas celui d’un administrateur général, vous pouvez uniquement accorder des autorisations au *compte principal* pour cette application.
+    L’action **Accorder des autorisations** a besoin du *compte principal* pour éviter d’être invitée à obtenir le consentement d’Azure AD. Si le compte qui effectue cette action est celui d’un administrateur général, vous pouvez accorder des autorisations pour tous les utilisateurs de votre organisation pour cette application. Si le compte qui effectue cette action est le *compte principal* et pas celui d’un administrateur général, vous pouvez uniquement accorder des autorisations au *compte principal* pour cette application.
    
     ![Accorder des autorisations dans la boîte de dialogue Autorisations requises](media/register-app/powerbi-embedded-azuread-app-grant-permissions.png)
 
@@ -160,19 +160,25 @@ Vous devez être connecté avec un compte *principal* pour l’incorporation, ou
     
      *Accorder des autorisations* est nécessaire pour éviter qu’Azure AD exige une confirmation du compte principal, ce qui n’est pas possible avec une connexion non interactive.
    
-     ```
+     ```json
      Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
      Authorization: Bearer ey..qw
      Content-Type: application/json
      { 
      "clientId":"{Service_Plan_ID}",
      "consentType":"AllPrincipals",
-     "resourceId":"c78b2585-1df6-41de-95f7-dc5aeb7dc98e",
+     "resourceId":"c78a3685-1ce7-52cd-95f7-dc5aea8ec98e",
      "scope":"Dataset.ReadWrite.All Dashboard.Read.All Report.Read.All Group.Read Group.Read.All Content.Create Metadata.View_Any Dataset.Read.All Data.Alter_Any",
      "expiryTime":"2018-03-29T14:35:32.4943409+03:00",
      "startTime":"2017-03-29T14:35:32.4933413+03:00"
      }
      ```
+    Le **resourceId** *c78a3685-1ce7-52cd-95f7-dc5aea8ec98e* n’est pas universel, mais il est dépendant du locataire. Cette valeur est l’objectId de l’application « Power BI Service » dans le locataire AAD.
+
+    L’utilisateur peut obtenir rapidement cette valeur dans le portail Azure :
+    1. https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/AllApps
+    2. Rechercher « Power BI Service » dans la zone de recherche
+
 5. Accorder les autorisations de l’application à Azure Active Directory (AAD)
    
    La valeur pour **consentType** peut fournir **AllPrincipals** ou **Principal**.
@@ -182,7 +188,7 @@ Vous devez être connecté avec un compte *principal* pour l’incorporation, ou
     
    *Accorder des autorisations* est nécessaire pour éviter qu’Azure AD exige une confirmation du compte principal, ce qui n’est pas possible avec une connexion non interactive.
 
-   ```
+   ```json
    Post https://graph.microsoft.com/beta/OAuth2PermissionGrants
    Authorization: Bearer ey..qw
    Content-Type: application/json

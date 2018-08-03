@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: cfc450216202f332f518955d28cb71df6aa0b800
-ms.sourcegitcommit: f2b106b5eb338a64f903e8ce6793bccb07f9440a
+ms.openlocfilehash: 544429528ed51dd2928eb82632f512ff3f7d5afd
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39105266"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359728"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application pour votre organisation
 Ce tutoriel montre comment intégrer un rapport à une application avec le **SDK .NET Power BI** ainsi que l’**API JavaScript Power BI** lors de l’incorporation de **Power BI**  à une application pour votre organisation. Avec **Power BI**, vous pouvez incorporer des rapports, des tableaux de bord ou des vignettes à une application à l’aide de l’exemple **User Owns Data** (L’utilisateur est propriétaire des données). **Utilisateur possède les données** permet à votre application d’étendre le service Power BI.
@@ -413,11 +413,28 @@ function updateEmbedReport() {
 Maintenant que votre application est développée, il est temps de sauvegarder votre espace de travail d’application avec une capacité dédiée.
 
 ### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
-En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail d’application. Si un espace de travail n’est pas assigné à une capacité dédiée, il est considéré comme une capacité partagée. Vous pouvez créer une capacité dédiée avec [Power BI Premium ](../service-admin-premium-purchase.md).
+En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail d’application. Vous pouvez créer une capacité dédiée avec [Power BI Premium ](../service-premium.md).
+
+Le tableau suivant liste les références SKU Power BI Premium disponibles dans [Office 365](../service-admin-premium-purchase.md).
+
+| Nœud de capacité | Total des cœurs virtuels<br/>*(Backend + Frontend)* | Cœurs virtuels backend | Cœurs virtuels frontend | Limites de connexions actives/DirectQuery | Rendus de pages au maximum aux heures de pointe |
+| --- | --- | --- | --- | --- | --- |
+| EM1 |1 cœur virtuel |0,5 cœur virtuel, 10 Go de RAM |0,5 cœur virtuel |3,75 par seconde |150-300 |
+| EM2 |2 cœurs virtuels |1 cœur virtuel, 10 Go de RAM |1 cœur virtuel |7,5 par seconde |301-600 |
+| EM3 |4 cœurs virtuels |2 cœurs virtuels, 10 Go de RAM |2 cœurs virtuels |15 par seconde |601-1 200 |
+| P1 |8 cœurs virtuels |4 cœurs virtuels, 25 Go de RAM |4 cœurs virtuels |30 par seconde |1 201-2 400 |
+| P2 |16 cœurs virtuels |8 cœurs virtuels, 50 Go de RAM |8 cœurs virtuels |60 par seconde |2 401-4 800 |
+| P3 |32 cœurs virtuels |16 cœurs virtuels, 100 Go de RAM |16 cœurs virtuels |120 par seconde |4 801-9 600 |
+| P4 |64 cœurs virtuels |32 cœurs virtuels, 200 Go de RAM |32 cœurs virtuels |240 par seconde |9601-19200
+| P5 |128 cœurs virtuels |64 cœurs virtuels, 400 Go de RAM |64 cœurs virtuels |480 par seconde |19201-38400
+
+*Avec les **_références SKU d’EM_**, **vous pouvez** accéder au contenu avec une licence Power BI GRATUITE quand vous tentez une incorporation avec des **_applications MS Office_**, mais **vous ne pouvez pas accéder au**  contenu avec une licence Power BI GRATUITE quand vous utilisez **_Powerbi.com_** ou  **_Power BI mobile_**.*
+
+*Avec les  **_références SKU de P_**, **vous pouvez** accéder au contenu avec une licence Power BI GRATUITE quand vous tentez une incorporation avec des **_applications MS Office_** en utilisant  **_Powerbi.com_** ou  **_Power BI mobile_**.*
 
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Affecter un espace de travail d’application à une capacité dédiée
 
-Une fois une capacité dédiée créée, vous pouvez lui affecter votre espace de travail d’application. Pour ce faire, effectuez les étapes suivantes.
+Une fois que vous avez créé une capacité dédiée, vous pouvez lui affecter votre espace de travail d’application. Pour ce faire, effectuez les étapes suivantes.
 
 1. Dans le **service Power BI**, développez les espaces de travail, puis sélectionnez les points de suspension en regard de l’espace de travail que vous utilisez pour incorporer votre contenu. Sélectionnez ensuite **Modifier l’espace de travail**.
 
@@ -431,13 +448,17 @@ Une fois une capacité dédiée créée, vous pouvez lui affecter votre espace d
 
     ![espace de travail lié à une capacité](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
+## <a name="admin-settings"></a>Paramètres d’administrateur
+
+Les administrateurs globaux ou les administrateurs de service Power BI peuvent activer ou désactiver la possibilité d’utiliser les API REST pour un locataire. Les administrateurs Power BI peuvent définir ce paramètre pour toute l’organisation ou pour certains groupes de sécurité. Il est activé par défaut pour toute l’organisation. Vous pouvez le faire au moyen du [portail d’administration Power BI](../service-admin-portal.md).
+
 ## <a name="next-steps"></a>Étapes suivantes
-Dans ce tutoriel, vous avez appris à incorporer du contenu Power BI à une application à l’aide de votre **compte d’organisation Power BI**. Vous pouvez maintenant essayer d’incorporer du contenu Power BI à une application à l’aide d’applications.  Vous pouvez également essayer d’incorporer du contenu Power BI pour des clients tiers.
+Dans ce tutoriel, vous avez appris à incorporer du contenu Power BI à une application à l’aide de votre **compte d’organisation Power BI**. Vous pouvez maintenant essayer d’incorporer du contenu Power BI à une application à l’aide d’applications.  Vous pouvez aussi essayer d’incorporer du contenu Power BI pour vos clients.
 
 > [!div class="nextstepaction"]
 > [Incorporer à partir d’applications](embed-from-apps.md)
 
 > [!div class="nextstepaction"]
->[Incorporer pour les clients tiers](embed-sample-for-customers.md)
+>[Incorporer pour vos clients](embed-sample-for-customers.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
