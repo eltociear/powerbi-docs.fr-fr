@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 55d6259c3ae044d395bd0b077577856dd88ff43c
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 61421db59a6488394cad0b8a921590a90b020bff
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34720762"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280636"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Sources de données prises en charge par DirectQuery dans Power BI
 **Power BI Desktop** et le **service Power BI** possèdent de nombreuses sources de données auxquelles vous pouvez vous connecter pour accéder aux données. Cet article décrit quelles sources de données pour Power BI prennent en charge la méthode de connexion appelée **DirectQuery**. Pour plus d’informations sur DirectQuery, consultez [**DirectQuery dans Power BI**](desktop-directquery-about.md).
@@ -39,7 +39,7 @@ Les sources de données suivantes prennent en charge DirectQuery dans Power BI�
 * Base de données Teradata
 * Vertica (bêta)
 
-Les sources de données dont le nom est suivi de **(bêta)** ou **(préversion)** peuvent être modifiées et ne sont pas prises en charge pour la production. Elles peuvent également ne pas être prises en charge après la publication d’un rapport vers le **service Power BI**, ce qui signifie que l’ouverture d’un rapport publié ou l’exploration du jeu de données peut entraîner une erreur.
+Les sources de données dont le nom est suivi de **(bêta)** ou **(préversion)** peuvent être modifiées et ne sont pas prises en charge pour la production. Elles peuvent aussi ne pas être prises en charge après la publication d’un rapport dans le **service Power BI**, ce qui signifie que l’ouverture d’un rapport publié ou l’exploration du jeu de données peut entraîner une erreur.
 
 La seule différence entre les sources de données **(bêta)** et **(préversion)** est que les sources **(préversion)** doivent être activées en tant que fonctionnalité en préversion pour être disponibles. Pour activer un connecteur de données **(préversion)**  : dans **Power BI Desktop**, accédez à **Fichier > Options et paramètres > Options**, puis sélectionnez **Fonctionnalités en préversion**.
 

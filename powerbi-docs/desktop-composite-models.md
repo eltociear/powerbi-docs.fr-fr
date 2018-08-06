@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/26/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4f882865271411d04a99c9213a68df24d000677d
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 2eb69896de8226fdf0033f980a8b4b5164c68c3d
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210896"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280153"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Modèles composites dans Power BI Desktop (préversion)
 
@@ -39,7 +39,7 @@ Cette collection de trois fonctionnalités connexes pour **modèles composites**
 
 La fonctionnalité **Modèles composites** est en version préliminaire et doit être activée dans **Power BI Desktop**. Pour activer les **modèles composites**, sélectionnez **Fichiers > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis cochez la case **modèles composites**. 
 
-![activation des fonctionnalités en version préliminaire](media/desktop-composite-models/composite-models_02.png)
+![activation des fonctionnalités en préversion](media/desktop-composite-models/composite-models_02.png)
 
 Vous devrez redémarrer **Power BI Desktop** pour activer la fonctionnalité.
 

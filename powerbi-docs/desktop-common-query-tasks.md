@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: fde23a47bb0f4034e213a652d60241ff625921d3
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: bec5bb108bc210f268db0392370e15d89c0352b7
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877328"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39330210"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
 Quand vous travaillez dans la fenêtre **Éditeur de requête** de Power BI Desktop, vous avez accès à un certain nombre de tâches courantes. Ce document décrit ces tâches courantes et fournit des liens pour plus d’informations. 
@@ -31,7 +31,7 @@ Les tâches courantes relatives aux requêtes illustrées ici sont les suivantes
 
 Nous allons utiliser plusieurs connexions de données pour effectuer ces tâches. Vous pouvez télécharger ces données ou vous y connecter, au cas où vous souhaiteriez parcourir ces tâches vous-même.
 
-La première connexion de données est un classeur Excel. L’autre est une ressource web (également utilisée dans d’autres contenus d’aide de Power BI Desktop), accessible à partir d’ici :
+La première connexion de données est un classeur Excel que vous pouvez télécharger à partir de [ce lien](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). L’autre est une ressource web (également utilisée dans d’autres contenus d’aide de Power BI Desktop), accessible à partir d’ici :
 
 [*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 

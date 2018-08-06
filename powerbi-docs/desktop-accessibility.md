@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b26fbfccc3b0a98761ecc1444af4e535339c96de
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: f07b5174d031c79f4d8f232c49836b54d95621f1
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210281"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256029"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -40,6 +40,8 @@ Pour faire passer la mise en évidence d’un onglet de page de rapport à un au
 * Lorsque la mise en évidence est sur une *page de rapport* chargée, utilisez la touche *Tab* pour la faire passer d’un objet à un autre de la page, notamment les zones de texte, les images, les formes et les graphiques. Le lecteur d’écran lit le type d’objet, le titre de l’objet s’il a un et la description de cet objet si elle est fournie par l’auteur du rapport. 
 
 Quand vous naviguez entre les visuels, si vous voulez interagir davantage, vous pouvez appuyer sur **Alt+Maj+F10** pour déplacer le focus sur l’en-tête du visuel. Celui-ci contient différentes options, notamment le tri, l’exportation de données dans le graphique et le mode Focus. 
+
+![Appuyez sur Alt+Maj+F10 dans Power BI Desktop pour déplacer le focus sur l’en-tête du visuel](media/desktop-accessibility/accessibility_08.png)
 
 Vous pouvez appuyer sur **Alt+Maj+F11** pour présenter une version accessible de la fenêtre *Afficher les données*. Vous pouvez ainsi explorer dans une table HTML les données utilisées dans le visuel, en utilisant les mêmes raccourcis clavier que ceux que vous utilisez normalement avec votre lecteur d’écran. 
 

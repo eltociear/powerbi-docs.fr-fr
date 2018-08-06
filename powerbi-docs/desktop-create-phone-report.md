@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6ac85bcaba34f705b0f21efc86ed1583e69c8c2c
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6cd1616dab92eb8709c5e89966259be591e4ede3
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721061"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280659"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Créer des rapports optimisés pour les applications Power BI pour téléphone
 Quand vous [créez un rapport dans Power BI Desktop](desktop-report-view.md), vous pouvez améliorer son utilisation dans les applications mobiles des téléphones en créant une version destinée spécifiquement à l’affichage sur téléphone. Adaptez votre rapport au téléphone en réorganisant et redimensionnant les visuels ou en choisissant d’en inclure uniquement une partie. Vous bénéficiez ainsi d’une expérience optimale. Vous pouvez également créer des [*visuels* réactifs](#optimize-a-visual-for-any-size) et des [segments réactifs](#enhance-slicers-to-to-work-well-in-phone-reports) qui se redimensionnent pour l’affichage sur un téléphone. De plus, si vous ajoutez des filtres à votre rapport, ceux-ci apparaissent automatiquement dans le rapport pour téléphone. Les lecteurs de votre rapport peuvent les afficher et les utiliser pour filtrer le rapport.
@@ -72,7 +72,7 @@ Vous choisissez d’activer ou non la réactivité pour chaque visuel. En savoir
   
    ![Suppression d’un visuel](media/desktop-create-phone-report/desktop-create-phone-report-7.gif)
 
-## <a name="enhance-slicers-to-to-work-well-in-phone-reports"></a>Améliorer les segments pour optimiser leur fonctionnement dans les rapports sur téléphone
+## <a name="enhance-slicers-to-work-well-in-phone-reports"></a>Améliorer les segments pour optimiser leur fonctionnement dans les rapports sur téléphone
 Les segments offrent un filtrage sur canevas des données de rapport. Quand vous concevez des segments dans le mode de création de rapports standard, vous pouvez modifier certains paramètres des segments pour faciliter leur utilisation dans les rapports sur téléphone :
 
 * Décidez si les lecteurs du rapport peuvent sélectionner un seul ou plusieurs éléments.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f7c619a5696a6f432f24e5e2c875cfde335ab32c
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: f110464d435130a40666e61dd6a9c89ad6b10ccf
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256052"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39280429"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -93,7 +93,7 @@ Les questions (et réponses) suivantes sont fournies pour vous aider à obtenir 
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-**Question :** Mon compte est provisionné dans plusieurs clouds souverains. Quand j’utilise **Power BI Desktop**, comment sélectionner le cloud auquel me connecter ?
+**Question :** Mon compte est provisionné dans plusieurs clouds souverains. Quand j’utilise **Power BI Desktop**, comment sélectionner le cloud auquel se connecter ?
 
 **Réponse :** À partir de la version de juillet 2018 de **Power BI Desktop**, vous pouvez choisir le cloud que vous voulez utiliser quand vous vous connectez à **Power BI Desktop**.
 

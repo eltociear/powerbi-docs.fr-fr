@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 421ef9609872515ae462de574d67528835bb78ab
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b55f9854d129c4ff7a70117b8382fbdbaff80ce8
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722836"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280268"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation : recherche et tri de votre contenu dans le service Power BI
 Il existe plusieurs façons de parcourir votre contenu dans le service Power BI. Dans les espaces de travail, le contenu est organisé par type : tableaux de bord, rapports, classeurs et jeux de données.  De plus, le contenu est également organisé par utilisation : favori, récent, application, partagé avec moi et par défaut. Cette organisation du contenu vous permet de trouver rapidement ce dont vous avez besoin dans le service Power BI.  
@@ -32,7 +32,7 @@ Le service Power BI sépare le contenu des espaces de travail par type : tablea
 ________________________________________
 
 ## <a name="searching-and-sorting-in-workspaces"></a>Recherche et tri dans les espaces de travail
-Un espace de travail comporte quatre onglets de contenu : Tableaux de bord, Rapports, Classeurs et Jeux de données.  Chaque onglet contient un champ de recherche et un bouton de tri.  Lorsque vous commencez à utiliser le service Power BI, il se peut que vous ne les trouviez pas utiles, car vous n’avez qu’un ou deux éléments par onglet.  Pourtant, au fil du temps, vous pourriez vous retrouver avec un longue liste de contenus.  Utilisez les fonctions de recherche et le tri pour trouver facilement ce que vous avez besoin.
+Un espace de travail comporte quatre onglets de contenu : Tableaux de bord, Rapports, Classeurs et Jeux de données.  Chaque onglet contient un champ de recherche et un bouton de tri.  Lorsque vous commencez à utiliser le service Power BI, il se peut que vous ne les trouviez pas utiles, car vous n’avez qu’un ou deux éléments par onglet.  Pourtant, au fil du temps, vous pouvez vous retrouver avec une longue liste de contenus.  Utilisez les fonctions de recherche et le tri pour trouver facilement ce que vous avez besoin.
 
 ![Onglet Tableaux de bord](media/service-navigation-search-filter-sort/power-bi-search-sort2.png)
 

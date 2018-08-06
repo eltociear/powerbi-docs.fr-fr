@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7e992152656a208c765743292e06b4d0d3708730
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 769e2adb30fb1969d16898db4bf954d2bcbad8c4
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600254"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280406"
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards"></a>Utiliser les tableaux dans les rapports et les tableaux de bord Power BI
 Un tableau est une grille qui contient les données connexes dans une série logique de lignes et colonnes. Il peut également contenir des en-têtes et une ligne de totaux. Les tableaux fonctionnent correctement avec des comparaisons quantitatives où vous examinez de nombreuses valeurs pour une même catégorie. Par exemple, ce tableau affiche 5 mesures différentes pour la **Catégorie**.
@@ -56,7 +56,7 @@ Vous allez créer le tableau illustré ci-dessus pour afficher les valeurs de ve
      ![](media/power-bi-visualization-tables/pbi_pintile.png)
 
 ## <a name="format-the-table"></a>Mettre en forme le tableau
-Il existe de très nombreuses façons de mettre en forme un tableau. Nous en abordons ici quelques-unes. Un excellent moyen d’en apprendre davantage sur les autres options de mise en forme consiste à ouvrir le volet Mise en forme (icône de rouleau à peindre ![](media/power-bi-visualization-tables/power-bi-format.png)), puis à explorer les options.
+Il existe diverses manières de mettre en forme un tableau. Nous en abordons ici quelques-unes. Un excellent moyen d’en apprendre davantage sur les autres options de mise en forme consiste à ouvrir le volet Mise en forme (icône de rouleau à peindre ![](media/power-bi-visualization-tables/power-bi-format.png)), puis à explorer les options.
 
 * Essayez de mettre en forme la grille du tableau. Nous avons appliqué ici un quadrillage vertical de couleur bleue, ajouté de l’espace aux lignes, ainsi qu’augmenté légèrement la taille de contour et de texte.
 

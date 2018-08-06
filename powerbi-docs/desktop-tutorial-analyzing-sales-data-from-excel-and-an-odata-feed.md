@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
-ms.openlocfilehash: c6cd75efd44259c2812f98a37875cf716d4843ad
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 0ec22bd142f7509935691ff7bfcd38cb51a04fb2
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34456200"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39280107"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Combiner des données de ventes à partir d’Excel et d’un flux OData
 
@@ -220,7 +220,7 @@ Ensuite, créez un graphique indiquant les montants en dollars des commandes (**
    
 2. Avec le graphique sélectionné, sélectionnez **OrderDate** sous **Commandes**, ou faites-le glisser sur le graphique. Le graphique affiche maintenant les totaux par ligne pour chaque date de commande. 
    
-3. Redimensionnez la visualisation en faisant glisser les angles afin d’afficher davantage de données. 
+3. Redimensionnez la visualisation en faisant glisser les angles pour afficher davantage de données. 
    
    ![Graphique en courbes LineTotals par OrderDate](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/20.png)
    

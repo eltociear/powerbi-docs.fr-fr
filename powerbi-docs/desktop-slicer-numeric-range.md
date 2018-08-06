@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1e380a6821db7207d14e719fa5e070af38196b97
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 135e6ff76a0972bdedbff3eaf7ab1222f82a94ab
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34286931"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39331170"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Utiliser le Sélecteur de plages numériques dans Power BI Desktop
 Le **Sélecteur de plages numériques** vous permet d’appliquer toutes sortes de filtres à toute colonne numérique dans votre modèle de données. Vous pouvez choisir de filtrer les nombres compris **entre** des valeurs, des nombres **inférieurs ou égaux** à une valeur, ou des nombres **supérieurs ou égaux** à une valeur. Bien que cette fonction puisse sembler simple, elle est très utile pour filtrer vos données.
@@ -53,7 +53,7 @@ Enfin, si nous sélectionnons l’option **Supérieur ou égal à**, la poignée
 
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Aligner sur des nombres entiers avec le sélecteur de plages numériques
 
-Un sélecteur de plages numériques s’aligne sur des nombres entiers, sauf s’il s’agit d’une plage décimale. avec précision sur des nombres entiers. 
+Un sélecteur de plages numériques s’aligne sur les nombres entiers si le type de données du champ sous-jacent est **Nombre entier**. Le sélecteur peut ainsi s’aligner avec précision sur des nombres entiers. Les champs de type **Nombre décimal** vous permettent d’entrer ou de sélectionner des fractions d’un nombre. La mise en forme appliquée dans la zone de texte correspond à la mise en forme définie dans le champ, même si vous pouvez entrer ou sélectionner des nombres plus précis.
 
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
@@ -61,3 +61,4 @@ Les considérations et limitations suivantes s’appliquent actuellement à l’
 
 * Le **Sélecteur de plages numériques** filtre actuellement chaque ligne sous-jacente dans les données, mais pas de valeur agrégée. Par exemple, en cas d’utilisation d’un champ *Montant des ventes*, chaque transaction basée sur un *Montant des ventes* est filtrée, mais pas la somme *Montant des ventes* pour chaque point de données d’un visuel.
 * Il ne fonctionne pas avec des mesures.
+* Vous pouvez taper n’importe quel nombre dans les zones de texte d’un sélecteur numérique, même s’il se trouve en dehors de la plage de valeurs de la colonne sous-jacente. Cela vous permet de configurer des filtres si vous savez que les données peuvent changer ultérieurement.

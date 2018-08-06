@@ -9,11 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 828c5e8afc28b496b1920468097ce629fe646e37
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 2ea6f2e557f26358ab6a93d33c890e90c96885f4
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34564647"
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Trouver la clé de produit de votre serveur de rapports
 Découvrez comment vous pouvez trouver votre clé de produit Power BI Report Server pour installer votre serveur dans un environnement de production.
@@ -33,7 +34,7 @@ La sélection de **Clé de Power BI Report Server** a pour effet d’afficher un
 
 ![Clé de produit Power BI Report Server](media/find-product-key/pbirs-product-key-dialog.png)
 
-## <a name="purchased-software-assurance-agreeemnt"></a>Achat d’un contrat Software Assurance
+## <a name="purchased-software-assurance-agreement"></a>Contrat Software Assurance acheté
 Si vous disposez d’un contrat SQL Server Entreprise SA, vous pouvez vous procurer votre clé de produit auprès du [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/). Regardez sous le dernier service pack pour connaître la dernière version de SQL Server. Si celle-ci n’apparaît pas, regardez sous la version RTM de la dernière version de SQL Server.
 
 > [!NOTE]
