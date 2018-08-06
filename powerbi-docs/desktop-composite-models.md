@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2eb69896de8226fdf0033f980a8b4b5164c68c3d
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: ddfe0c7ad116a74fa6887491ee41e544096de0f9
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280153"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388844"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Modèles composites dans Power BI Desktop (préversion)
 
@@ -33,7 +33,7 @@ Cette collection de trois fonctionnalités connexes pour **modèles composites**
 
 * Les **modèles composites** sont décrits en détail dans cet article.
 * Les **relations plusieurs-à-plusieurs** sont décrites dans un propre dédié, [Relations plusieurs-à-plusieurs dans Power BI Desktop (version préliminaire)](desktop-many-to-many-relationships.md).
-* Le **mode de stockage** est décrit dans un article dédié, [Mode de stockage dans Power BI Desktop (version préliminaire)](desktop-storage-mode.md).
+* Le **mode de stockage** est décrit dans un article dédié, [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md).
 
 ## <a name="enabling-the-composite-models-preview-feature"></a>Activation de la fonctionnalité préliminaire des modèles composites
 
