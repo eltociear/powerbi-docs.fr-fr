@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/28/2018
+sktopms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 5f117bdeb4e37986884c6a1021db1f361bdcddd3
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145384"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582665"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 * Si vous avez des questions, [essayez d’interroger la communauté Power BI](http://community.powerbi.com/).
@@ -30,7 +30,7 @@ Power BI Pro est une licence individuelle qui autorise l’accès à la totalit�
 Premium offre une capacité dédiée pour fournir des performances plus cohérentes et une prise en charge de plus grands volumes de données dans Power BI. Pour les utilisateurs individuels, Premium permet également une large distribution de contenu par les utilisateurs Pro sans nécessiter de licences par utilisateur pour que les destinataires voient le contenu.
 
 ## <a name="how-much-does-power-bi-cost"></a>Combien coûte Power BI ?
-Power BI Desktop est gratuit. Une version d’évaluation gratuite de 60 jours est disponible pour Power BI Pro. En savoir plus sur la tarification à la page sur la [tarification de Power BI](https://powerbi.microsoft.com/pricing).
+Power BI Desktop est gratuit. Un essai gratuit de 60 jours est disponible pour Power BI Pro. Découvrez les prix dans la page sur la [tarification de Power BI](https://powerbi.microsoft.com/pricing).
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Où trouver des réponses à mes questions sur Power BI Premium ?
 Pour les questions relatives à Power BI Premium, consultez [Questions fréquentes Power BI Premium](service-premium-faq.md).
@@ -47,8 +47,8 @@ Uniquement d’un navigateur web et d’une adresse de messagerie professionnell
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Pourquoi dois-je me connecter avec mon adresse de messagerie professionnelle ?
 Power BI ne prend pas en charge les adresses de messagerie fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunications. En savoir plus sur le [processus d’inscription en libre-service de Power BI](service-self-service-signup-for-power-bi.md).
 
-## <a name="is-government-academic-and-non-profit-pricing-available-for-power-bi"></a>Une tarification est-elle disponible pour le secteur public, l’enseignement et les associations à but non lucratif ?
-Oui, une tarification est disponible pour les associations à but non lucratif en cas d’achat direct auprès de Microsoft. Pour en savoir plus et vous inscrire, accédez au site consacré au [Don de produits Microsoft](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/). Une tarification pour le secteur public et l’enseignement est proposée via les programmes de licences MOSP/Direct, EA et Open. Une tarification pour le secteur public est également disponible via la syndication. 
+## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Des prix pour le secteur public, l’enseignement et les associations sont-ils proposés pour Power BI ?
+Oui, un prix est proposé pour les associations pour tout achat direct auprès de Microsoft. Vous pouvez en savoir plus et vous inscrire sur le site dédié aux [associations Microsoft](https://www.microsoft.com/en-us/nonprofits/power-bi). Un prix pour le secteur public et l’enseignement est proposé via les programmes de licences MOSP/Direct, EA et Open. Un prix pour le secteur public est également disponible via la syndication. 
 
 ## <a name="is-power-bi-available-on-premises"></a>Power BI est-il disponible localement ?
 Le service Power BI [https://powerbi.com](https://powerbi.com) n’est pas disponible en tant que service cloud interne et privé. Toutefois, vous avez trois autres options pour l’affichage et l’utilisation des données en local. 

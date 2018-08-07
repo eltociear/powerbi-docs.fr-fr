@@ -2,19 +2,19 @@
 title: Ajouter des lignes à une table
 description: 'Procédure pas à pas pour transmettre des données : ajouter des lignes à une table Power BI'
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: b6fdd950b77dedf9f5180f7cbc90d40c786051c7
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.date: 08/01/2018
+ms.openlocfilehash: 7608d9098177805849ec61f0427ee5bc662d58c9
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34812534"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39475657"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Étape 5 : Ajouter des lignes à une table Power BI
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
@@ -307,9 +307,10 @@ Ci-après figure le [listing du code complet](#code).
         }
     }
 
+Même si nous spécifions que nous **_//obtenons le premier ID_** dans le code ci-dessus, la meilleure chose à faire est de rechercher dans le jeu de données par nom.
+
 ## <a name="next-steps"></a>Étapes suivantes
 [Transmettre des données à un tableau de bord Power BI](walkthrough-push-data.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 [Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

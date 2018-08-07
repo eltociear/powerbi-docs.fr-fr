@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 14b5f3d4b571df8ae672ee9731ed97555c476abd
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 7c970cd28a50dc15a7b721107b17ceade24c3bb2
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/02/2018
-ms.locfileid: "34456024"
+ms.locfileid: "39475749"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -45,6 +45,11 @@ Power BI Desktop prend en charge trois types numériques :
 **Nombre décimal fixe** : possède un emplacement fixe pour le séparateur décimal. Le séparateur décimal a toujours quatre chiffres à sa droite et autorise 19 chiffres de précision.  La plus grande valeur, qu’il peut représenter est 922 337 203 685 477,5807 (positif ou négatif).  Le type Nombre décimal fixe est utile dans les cas où l’arrondi peut introduire des erreurs.  Si vous utilisez beaucoup de nombres ayant de petites valeurs fractionnelles, il y a un risque de cumul qui peut entraîner une légère imprécision.  Les valeurs situées après les quatre chiffres à droite du séparateur décimal étant tronquées, le type Nombre décimal fixe peut vous aider à éviter ces genres d’erreurs.   Si vous connaissez SQL Server, ce type de données correspond au format Décimal de SQL Server (19,4) ou au type de données Devise dans Power Pivot. 
 
 **Nombre entier** : représente un entier 64 bits (huit octets). S’agissant d’un entier, il ne comporte aucun chiffre à droite du séparateur décimal. Il autorise 19 chiffres ; les nombres entiers positifs ou négatifs compris entre -9 223 372 036 854 775 808 (-2^63) et 9 223 372 036 854 775 807 (2^63-1).  Il peut représenter le plus grand nombre possible parmi les divers types de données numériques.  Comme Nombre décimal fixe, le type Nombre entier peut être utile dans les cas où vous avez besoin de contrôler l’arrondi. 
+
+> [!NOTE]
+>  Le modèle de données Power BI Desktop prend en charge les valeurs d’entier 64 bits, mais le plus grand nombre de visuels pouvant être exprimé de façon sûre est 9,007,199,254,740,991 (2^53-1) en raison des limitations de JavaScript. Si vous travaillez avec des chiffres supérieurs dans votre modèle de données, vous pouvez réduire la taille par le biais de calculs avant de les ajouter à un visuel. 
+> 
+>
 
 ### <a name="datetime-types"></a>Types Date/Heure
 Power BI Desktop prend en charge cinq types de données Date/Heure dans la vue Requête et trois dans la vue Rapport et le modèle.   Les types Date/Heure/Fuseau horaire et Durée sont convertis pendant le chargement dans le modèle.
