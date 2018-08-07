@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 58ae70553264b8055603da66a4cfd71b5c74a3e9
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "37598871"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582568"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI 
 Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI.  
@@ -24,8 +24,8 @@ Cet article fournit des conseils relatifs à la création de rapports fiables et
 
 Plus un élément visuel contient de données à afficher, plus son chargement sera lent. Ce principe semble évident, mais il peut être facile de l’oublier. Par exemple, supposons que vous avez un jeu de données volumineux, à partir duquel vous créez un rapport avec une table de la table. Les utilisateurs finaux utilisent les segments sur la page pour accéder aux lignes qui les intéressent (généralement pas plus d’une dizaine).
 
-Une erreur courante consiste à utiliser la vue par défaut de la table non filtrée, soit la totalité des quelques 100 millions de lignes. Les données de ces lignes doivent être chargées en mémoire et décompressées à chaque actualisation. Cela crée des charges de mémoire considérables. La solution consiste à réduire le nombre maximal d’éléments à afficher dans la table à l’aide du filtre « N premiers ». Le nombre maximal d’éléments peut être largement supérieur à ce dont les utilisateurs peuvent avoir besoin, par exemple 10 000. Par conséquent, l’expérience de l’utilisateur final est inchangée, mais l’utilisation de la mémoire pour le rapport est considérablement réduite, ce qui a pour effet d’améliorer les performances. 
- 
+Une erreur courante consiste à utiliser la vue par défaut de la table non filtrée, soit la totalité des quelques 100 millions de lignes. Les données de ces lignes doivent être chargées en mémoire et décompressées à chaque actualisation. Cela crée des charges de mémoire considérables. La solution consiste à réduire le nombre maximal d’éléments à afficher dans la table à l’aide du filtre « N premiers ». Le nombre maximal d’éléments peut être largement supérieur à ce dont les utilisateurs peuvent avoir besoin, par exemple 10 000. Par conséquent, l’expérience de l’utilisateur final est inchangée, mais l’utilisation de la mémoire pour le rapport est considérablement réduite, ce qui a pour effet d’améliorer les performances.
+
 Une approche similaire à celle-ci est fortement recommandée pour tous les éléments visuels de vos rapports. Demandez-vous si toutes les données présentes dans l’élément visuel sont nécessaires. Est-il possible de filtrer la quantité de données affichées sur l’élément visuel d’une manière ou d’une autre sans gêner l’utilisateur ? Notez que les tables en particulier peuvent être très volumineuses. 
  
 ## <a name="limit-visuals-on-report-pages"></a>Limiter le nombre d’éléments visuels sur les pages de rapport 

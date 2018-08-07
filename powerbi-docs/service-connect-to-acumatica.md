@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9366eff71e09b1f6c71c1f2519feb3d2392e3c58
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: 452226f8d5b8e0ca05fc4d9e81355c7a4c10e923
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092641"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582635"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Se connecter à Acumatica avec Power BI
 Le pack de contenu Acumatica pour Power BI vous permet d’obtenir rapidement une vue d’ensemble de vos données d’opportunité. Power BI récupère vos données, y compris celles relatives aux opportunités, aux comptes et aux clients, puis génère un tableau de bord par défaut et des rapports associés à partir de ces données.
@@ -37,7 +37,7 @@ Connectez-vous au [pack de contenu Acumatica](https://app.powerbi.com/getdata/se
    ![](media/service-connect-to-acumatica/acumatica.png)
 4. Entrez votre point de terminaison OData Acumatica. Un point de terminaison OData permet à un système externe de demander des données à Acumatica. Un point de terminaison OData Acumatica est formaté comme suit et doit utiliser HTTPS:
    
-     https://[domaine_site]/OData/[nom_entreprise]
+     `https://[sitedomain]/odata/[companyname]`
    
    Le nom de l’entreprise est requis uniquement si vous avez un déploiement de plusieurs entreprises. Des informations supplémentaires sur la recherche de ce paramètre dans votre compte Acumatica figurent ci-dessous.
    
