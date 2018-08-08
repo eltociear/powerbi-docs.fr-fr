@@ -1,4 +1,4 @@
-1. Commencez par créer l’espace de travail. Sélectionnez **Espaces de travail** > **Créer un espace de travail d’application**.
+1. Commencez par créer l’espace de travail. Sélectionnez **Espaces de travail** > **Créer un espace de travail d’application**. 
    
      ![Créer un espace de travail d’application](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    
