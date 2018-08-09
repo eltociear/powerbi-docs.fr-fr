@@ -42,7 +42,7 @@
               href: service-cortana-intro.md
             - name: "Vignettes d’un tableau de bord dans Power\_BI"
               href: service-dashboard-tiles.md
-            - name: Partagé avec moi
+            - name: Partagés avec moi
               href: service-shared-with-me.md
             - name: "Actualisation des données dans Power\_BI"
               href: refresh-data.md
@@ -112,8 +112,6 @@
                   href: service-install-use-apps.md
                 - name: Rechercher un pack de contenu d’organisation et vous y connecter
                   href: service-organizational-content-pack-find-and-open.md
-                - name: Partager des tableaux de bord et rapports
-                  href: service-share-dashboards.md
                 - name: Bien démarrer avec Questions et réponses Power BI
                   href: power-bi-visualization-introduction-to-q-and-a.md
             - name: Se connecter aux services
@@ -306,9 +304,15 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Partager votre travail
               items:
-                - name: 'Comment partager des tableaux de bord, rapports et vignettes et collaborer ?'
+                - name: Comment collaborer et partager ?
                   href: service-how-to-collaborate-distribute-dashboards-reports.md
-                - name: Créer et distribuer des applications avec des tableaux de bord et des rapports
+                - name: Partager des tableaux de bord et rapports
+                  href: service-share-dashboards.md
+                - name: Créer des espaces de travail d’applications
+                  href: service-create-workspaces.md
+                - name: Créer de nouveaux espaces de travail (préversion)
+                  href: service-create-the-new-workspaces.md
+                - name: Publier des applications avec des tableaux de bord et des rapports
                   href: service-create-distribute-apps.md
                 - name: Partager un rapport filtré
                   href: service-share-reports.md
@@ -482,9 +486,9 @@
       items:
         - name: "Qu’est-ce que Power\_BI\_Desktop\_?"
           href: desktop-what-is-desktop.md
-    - name: Guides de démarrage rapide
+    - name: Démarrages rapide
       items:
-        - name: Se connecter aux données
+        - name: Connectez-vous à vos données
           href: desktop-quickstart-connect-to-data.md
     - name: Didacticiels
       items:
@@ -934,7 +938,7 @@
           items:
             - name: Sécurité au niveau des lignes (RLS)
               href: developer/embedded-row-level-security.md
-            - name: Questions fréquentes (FAQ)
+            - name: FORUM AUX QUESTIONS
               href: developer/embedded-faq.md
             - name: "Autorisations Power\_BI"
               href: developer/power-bi-permissions.md
@@ -1278,7 +1282,7 @@
               href: service-premium-release-notes.md
         - name: "Rôle d’administration dans Office\_365"
           href: service-admin-role.md
-        - name: Questions fréquentes (FAQ)
+        - name: Foire aux questions (FAQ)
           href: service-admin-faq.md
     - name: Guides pratiques
       items:
