@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 203648affe06abe304d0e8a328b00189b42fa143
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: fa812801eb01529c3e364d69f041b7efd193c3ae
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39328393"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657871"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
@@ -93,7 +93,6 @@ L’image suivante montre la fenêtre **Obtenir les données** pour **Base de do
 La catégorie **Power BI** fournit les connexions de données suivantes :
 
 * Jeux de données Power BI
-* Pools de données Power BI (bêta)
 
 L’image suivante montre la fenêtre **Obtenir des données** pour **Power BI**.
 
@@ -168,7 +167,7 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Active Directory
 * Microsoft Exchange
 * Fichier Hadoop (HDFS)
-* Spark (bêta)
+* Spark
 * Script R
 * ODBC
 * OLE DB

@@ -2,20 +2,20 @@
 title: Passerelle de données locale
 description: Voici une vue d’ensemble de la passerelle de données locale pour Power BI. Vous pouvez utiliser cette passerelle pour travailler avec les sources de données DirectQuery. Vous pouvez également utiliser cette passerelle pour actualiser les jeux de données cloud avec les données locales.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
-ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: c91e257d79e9d16fa5a7a58b696d58aefaaaaf92
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.date: 06/05/2018
+ms.openlocfilehash: c6c83c51779621b2b722ce0c21cbb00eecde1fb9
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38924915"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39658170"
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 
@@ -25,13 +25,12 @@ Vous pouvez utiliser une seule passerelle avec différents services en même tem
 
 > [!NOTE]
 > La passerelle de données locale implémente la compression de données et le chiffrement du transport dans tous les modes.
-> 
-> 
 
 <!-- Shared Requirements Include -->
 [!INCLUDE [gateway-onprem-requirements-include](./includes/gateway-onprem-requirements-include.md)]
 
 ### <a name="limitations-of-analysis-services-live-connections"></a>Limitations des connexions actives Analysis Services
+
 Vous pouvez utiliser une connexion active à des instances tabulaires ou multidimensionnelles.
 
 | **Version du serveur** | **Référence (SKU) requise** |
@@ -47,6 +46,7 @@ Vous pouvez utiliser une connexion active à des instances tabulaires ou multidi
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Télécharger et installer la passerelle de données locale
+
 Pour télécharger la passerelle, sélectionnez **Passerelle de données** dans le menu Téléchargements. Téléchargez la [passerelle de données locale](http://go.microsoft.com/fwlink/?LinkID=820925). 
 
 Notez que la mise à jour de la passerelle de données locale est effectuée en réinstallant la passerelle, comme décrit dans cette section. Lors de la mise à jour de la passerelle (en la réinstallant), vos paramètres de passerelles existants sont conservés.
@@ -57,9 +57,9 @@ Notez que la mise à jour de la passerelle de données locale est effectuée en 
 [!INCLUDE [gateway-onprem-install-include](./includes/gateway-onprem-install-include.md)]
 
 ## <a name="install-the-gateway-in-personal-mode"></a>Installer la passerelle en mode personnel
+
 > [!NOTE]
 > La version personnelle de la passerelle fonctionne uniquement avec Power BI.
-
 
 Une fois la passerelle personnelle installée, vous devez lancer l’Assistant de configuration **Power BI Gateway - Personal**.
 
@@ -78,6 +78,7 @@ Une fois l’installation terminée, vous devez accéder à vos jeux de données
 <a name="credentials"></a>
 
 ## <a name="storing-encrypted-credentials-in-the-cloud"></a>Stockage d’informations d’identification chiffrées dans le cloud
+
 Lorsque vous ajoutez une source de données à la passerelle, vous devez fournir les informations d’identification associées. Toutes les requêtes à la source de données sont exécutées à l’aide de ces informations d’identification. Les informations d’identification sont chiffrées en toute sécurité, à l’aide d’un chiffrage asymétrique de sorte qu’elles ne soient pas déchiffrées dans le cloud, avant qu’elles soient stockées dans le cloud. Les informations d’identification sont envoyées à l’ordinateur exécutant la passerelle en local, où elles sont déchiffrées lorsque les sources de données sont consultées.
 
 <!-- Account and Port information -->
@@ -87,26 +88,30 @@ Lorsque vous ajoutez une source de données à la passerelle, vous devez fournir
 [!INCLUDE [gateway-onprem-how-it-works-include](./includes/gateway-onprem-how-it-works-include.md)]
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
+
 * [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
 ) n’est pas pris en charge actuellement
 * [L’accès en ligne](https://products.office.com/en-us/access) n’est pas pris en charge actuellement
 
-## <a name="tenant-level-administration"></a>Administration au niveau locataire 
+## <a name="tenant-level-administration"></a>Administration au niveau locataire
 
 Actuellement, les administrateurs de locataires n’ont aucun endroit où ils peuvent gérer toutes les passerelles que les autres utilisateurs ont installées et configurées.  Si vous êtes administrateur de locataires, nous vous recommandons de demander aux utilisateurs de votre organisation de vous ajouter comme administrateur pour chaque passerelle qu’ils installent. Vous pourrez ainsi gérer toutes les passerelles de votre organisation en utilisant la page Paramètres de la passerelle ou les [commandes PowerShell](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
 
-## <a name="enabling-outbound-azure-connections"></a>Activation des connexions Azure sortantes 
+## <a name="enabling-outbound-azure-connections"></a>Activation des connexions Azure sortantes
+
 La passerelle de données locale s’appuie sur le Azure Service Bus pour la connectivité cloud et établit des connexions sortantes correspondantes avec sa région Azure associée. Par défaut, il s’agit de l’emplacement de votre locataire Power BI. Consultez [Où est situé mon locataire Power BI ?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
 Si un pare-feu bloque les connexions sortantes, vous devez le configurer de façon à autoriser les connexions sortantes de la passerelle de données locale avec la région Azure associée. Pour plus d’informations sur les plages d’adresses IP de chaque centre de données Azure, consultez [Plages d’adresses IP des centres de données Microsoft Azure](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
 > [!NOTE]
 > Les plages d’adresses IP peuvent changer au fil du temps, veillez donc à télécharger les informations les plus récentes de façon régulière. 
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
+
 Si vous rencontrez des difficultés lors de l’installation et de la configuration d’une passerelle, consultez [Résolution des problèmes liés à la passerelle de données locale](service-gateway-onprem-tshoot.md). Si vous pensez que vous rencontrez un problème avec votre pare-feu, consultez la section [pare-feu ou proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) dans l’article de résolution des problèmes.
 
 Si vous pensez que vous rencontrez des problèmes de proxy avec la passerelle, consultez [Configuration des paramètres de proxy pour les passerelles Power BI](service-gateway-proxy.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 [Gérer votre source de données - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
 [Gérer votre source de données - SAP HANA](service-gateway-enterprise-manage-sap.md)  
 [Gérer votre source de données - SQL Server](service-gateway-enterprise-manage-sql.md)  
@@ -115,5 +120,5 @@ Si vous pensez que vous rencontrez des problèmes de proxy avec la passerelle, c
 [Informations approfondies sur la passerelle de données locale](service-gateway-onprem-indepth.md)  
 [Passerelle de données locale (mode personnel) - nouvelle version de la passerelle personnelle](service-gateway-personal-mode.md)
 [Configuration des paramètres de proxy pour la passerelle de données locale](service-gateway-proxy.md)  
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 
+D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
