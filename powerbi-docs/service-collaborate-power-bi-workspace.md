@@ -3,24 +3,25 @@ title: Collaborer dans l’espace de travail de votre application Power BI
 description: Consultez les informations relatives à la collaboration sur des fichiers Power BI Desktop dans votre espace de travail d’application et avec des services Office 365 tels que le partage de fichiers sur OneDrive Entreprise, les conversations dans Exchange, le calendrier et les tâches.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cab0f0513d73a865407574d43f8cd65ca5d75a9e
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d059e8bb476f9862c372d9565581d58b336e81db
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34245451"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39623927"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Collaborer dans l’espace de travail de votre application Power BI
-Les espaces de travail d’application Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. Les espaces de travail sont en effet conçus pour la collaboration. Lorsque vous avez fini de collaborer avec vos collègues sur vos tableaux de bord et rapports, vous les empaquetez en tant qu’application, puis distribuez celle-ci. Pour en savoir plus, voir [Créer des applications et des espaces de travail d’application dans Power BI](service-create-distribute-apps.md). 
+Les espaces de travail d’application Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. La collaboration ne s’arrête pas aux espaces de travail dans Power BI. Office 365 offre d’autres services de groupe, comme le partage de fichiers sur OneDrive Entreprise, les conversations dans Exchange, le calendrier partagé, les tâches, etc. En savoir plus sur les[groupes dans Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)
 
-La collaboration ne s’arrête pas aux espaces de travail dans Power BI. Office 365 offre d’autres services de groupe, comme le partage de fichiers sur OneDrive Entreprise, les conversations dans Exchange, le calendrier partagé, les tâches, etc. En savoir plus sur les[groupes dans Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)
+> [!NOTE]
+> L’expérience des nouveaux espaces de travail en préversion change la relation entre les espaces de travail Power BI et les groupes Office 365. Vous ne créez plus automatiquement un groupe Office 365 chaque fois que vous créez un nouvel espace de travail. Pour plus d’informations, consultez [Création des nouveaux espaces de travail (préversion)](service-create-the-new-workspaces.md)
 
 Les espaces de travail d’application sont disponibles uniquement avec [Power BI Pro](service-free-vs-pro.md).
 

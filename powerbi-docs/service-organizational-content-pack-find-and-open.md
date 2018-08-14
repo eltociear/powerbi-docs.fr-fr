@@ -3,29 +3,29 @@ title: Rechercher un pack de contenu d’organisation et s’y connecter - Power
 description: Rechercher et ouvrir un pack de contenu d’organisation dans Power BI
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5ea86ab577298b6099487228cdf4c8a87e4fe421
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 67072d690f09e922601c6b14ad1c150e2298040b
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280222"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624272"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Rechercher un pack de contenu d’organisation et vous y connecter
-> [!NOTE]
-> Avez-vous déjà entendu parler des nouvelles *applications*? Les applications sont la nouvelle méthode pour distribuer du contenu à un large public dans Power BI. Étant donné que nous prévoyons de déprécier les packs de contenu d’organisation bientôt, nous vous recommandons d’utiliser plutôt des applications. En savoir [plus sur les applications](service-install-use-apps.md).
-> 
-> 
 
 Quand quelqu’un publie un pack de contenu d’organisation à l’adresse de votre organisation, de groupes de distribution ou de sécurité, ou de [groupes Office 365 auxquels vous appartenez](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), ce pack apparaît dans AppSource.  Pour rechercher et ouvrir des packs de contenu d’organisation, parcourez AppSource ou effectuez-y une recherche.
 
 La création de packs de contenu est différente du partage de tableaux de bord ou de la collaboration sur ces derniers dans un groupe. Pour déterminer l’option la plus adaptée à votre situation, consultez [Comment partager des tableaux de bord, rapports et vignettes ?](service-how-to-collaborate-distribute-dashboards-reports.md).
+
+> [!NOTE]
+> Vous ne pouvez pas créer ou installer des packs de contenu d’organisation dans les expériences des nouveaux espaces de travail en préversion. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
+> 
 
 ## <a name="find-an-organizational-content-pack"></a>Rechercher un pack de contenu d’organisation
 Tous les utilisateurs [Power BI Pro](https://powerbi.microsoft.com/pricing) peuvent accéder à AppSource, qui affiche les packs partagés avec leur organisation toute entière, des groupes de distribution ou de sécurité, et des groupes Office 365 auxquels ils appartiennent.  

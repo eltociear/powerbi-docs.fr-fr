@@ -3,33 +3,30 @@ title: Créer et publier un pack de contenu d’organisation - Power BI
 description: Dans ce didacticiel, vous allez créer un pack de contenu d’organisation, en restreindre l’accès à un groupe spécifique et le publier dans la bibliothèque de packs de contenu de votre organisation sur Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b95ff0d9102377b6aeb59488a565f7bcb9a65566
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 46cd5e2730d1b0e90fe37a93bbd4340ffb708348
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598598"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624249"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Créer et publier un pack de contenu d’organisation Power BI (tutoriel)
-> [!NOTE]
-> Avez-vous déjà entendu parler des nouvelles *applications*? Les applications sont la nouvelle méthode pour distribuer du contenu à un large public dans Power BI. Étant donné que nous prévoyons de déprécier les packs de contenu d’organisation bientôt, nous vous recommandons d’utiliser plutôt des applications. En savoir [plus sur les applications](service-install-use-apps.md).
-> 
-> 
 
 Dans ce didacticiel, vous allez créer un pack de contenu d’organisation, en donner l’accès à un groupe spécifique et le publier dans la bibliothèque de packs de contenu de votre organisation sur Power BI.
 
 La création de packs de contenu est différente du partage de tableaux de bord ou de la collaboration sur ces derniers dans un groupe. Pour déterminer l’option la plus adaptée à votre situation, consultez [Comment partager des tableaux de bord, rapports et vignettes ?](service-how-to-collaborate-distribute-dashboards-reports.md).
 
+Pour créer un pack de contenu d’organisation, vos collègues et vous devez avoir un [compte Power BI Pro](https://powerbi.microsoft.com/pricing). 
+
 > [!NOTE]
-> Pour créer un pack de contenu d’organisation, vos collègues et vous devez avoir un [compte Power BI Pro](https://powerbi.microsoft.com/pricing).
-> 
+> Vous ne pouvez pas créer ou installer des packs de contenu d’organisation dans les expériences des nouveaux espaces de travail en préversion. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
 > 
 
 Supposons que vous êtes responsable de la mise en production chez Contoso et que vous préparez le lancement d’un nouveau produit.  Vous avez créé un tableau de bord avec des rapports que vous aimeriez partager avec vos collègues qui travaillent sur le lancement. Vous voulez regrouper les tableaux de bord et les rapports dans une solution que vos collègues peuvent utiliser. 

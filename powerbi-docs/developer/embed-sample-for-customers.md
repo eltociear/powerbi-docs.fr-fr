@@ -9,15 +9,15 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 781e34eadfccb89954c0a8548589e1bf89830079
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: 1185b6195f0d802cec71143c1f27ce5cead584c6
+ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39359751"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39616048"
 ---
-# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application pour les clients
-Avec **Power BI Embedded dans Azure**, vous pouvez incorporer des rapports, des tableaux de bord et des vignettes dans une application à l’aide de l’exemple **App Owns Data (L’application possède les données)**. **Application possède des données** vise à permettre d’avoir une application qui utilise Power BI comme sa plateforme d’analyse incorporée. Ce scénario concerne généralement les **développeurs des éditeurs de logiciels indépendants**. En tant que **développeur chez un éditeur de logiciels indépendant**, vous pouvez créer du contenu Power BI qui affiche des rapports, des tableaux de bord ou des vignettes dans une application qui est entièrement intégrée et interactive, sans exiger des utilisateurs de l’application qu’ils disposent d’une licence Power BI, ou même qu’ils sachent que c’est Power BI qui se cache derrière. Ce tutoriel montre comment intégrer un rapport dans une application avec le Kit de développement logiciel (SDK) **Power BI** .NET ainsi que l’API JavaScript **Power BI** en utilisant **Power BI Embedded dans Azure**  pour vos clients suivant un modèle **L’application possède les données**.
+# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application pour vos clients
+Avec **Power BI Embedded dans Azure**, vous pouvez incorporer des rapports, des tableaux de bord et des vignettes dans une application à l’aide de l’exemple **App Owns Data (L’application possède les données)**. **Application possède des données** vise à permettre d’avoir une application qui utilise Power BI comme sa plateforme d’analyse incorporée. L’utilisation de **App Owns Data (L’application possède les données)** est généralement un scénario des **développeurs chez des éditeurs de logiciels indépendants**. En tant que **développeur chez un éditeur de logiciels indépendant**, vous pouvez créer du contenu **Power BI** qui affiche des rapports, des tableaux de bord ou des vignettes dans une application qui est entièrement intégrée et interactive, sans exiger des utilisateurs de l’application qu’ils disposent d’une licence Power BI. Ce tutoriel montre comment intégrer un rapport dans une application avec le Kit de développement logiciel (SDK) **Power BI** .NET ainsi que l’API JavaScript **Power BI** en utilisant **Power BI Embedded dans Azure**  pour vos clients suivant un modèle **L’application possède les données**.
 
 Dans ce tutoriel, vous allez découvrir comment :
 >[!div class="checklist"]
@@ -25,14 +25,14 @@ Dans ce tutoriel, vous allez découvrir comment :
 >* incorporer un rapport Power BI dans une application.
 
 ## <a name="prerequisites"></a>Conditions préalables
-Pour commencer, vous avez besoin d’un compte **Power BI Pro** (il s’agit de votre **compte principal**) et d’un abonnement **Microsoft Azure**.
+Pour commencer, vous avez besoin d’un compte **Power BI Pro** (ce compte est votre **compte principal**) et d’un abonnement **Microsoft Azure**.
 
 * Si vous n’avez pas d’abonnement à **Power BI Pro**, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/en-us/pricing/) avant de commencer.
 * Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
 * Vous aurez besoin de votre propre installation de [client Azure Active Directory ](create-an-azure-active-directory-tenant.md).
 * [Visual Studio](https://www.visualstudio.com/) doit être installé (version 2013 ou ultérieure).
 
-## <a name="setup-your-embedded-analytics-development-environment"></a>Configurer l’environnement de développement d’analytique incorporée
+## <a name="set-up-your-embedded-analytics-development-environment"></a>Configurer votre environnement de développement d’analytique incorporée
 
 Avant de commencer à incorporer des rapports, des tableaux de bord ou des vignettes dans votre application, vérifiez que votre environnement est configuré de façon à autoriser l’incorporation. Dans le cadre de la configuration, vous devez effectuer les opérations suivantes.
 
@@ -98,7 +98,7 @@ Il est nécessaire d’activer des autorisations supplémentaires pour l’appli
    
     ![Accorder des autorisations dans la boîte de dialogue Autorisations requises](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
-## <a name="setup-your-power-bi-environment"></a>Configurer un environnement Power BI
+## <a name="set-up-your-power-bi-environment"></a>Configurer votre environnement Power BI
 
 ### <a name="create-an-app-workspace"></a>Créer un espace de travail d'application
 
@@ -269,7 +269,9 @@ var embedConfig = new EmbedConfig()
 Cela suppose la création d’une classe pour **EmbedConfig** et **TileEmbedConfig**. Un exemple de ces éléments est disponible dans le fichier **Models\EmbedConfig.cs** et le fichier **Models\TileEmbedConfig.cs**.
 
 ### <a name="load-an-item-using-javascript"></a>Charger un élément en utilisant JavaScript
-JavaScript permet de charger un rapport dans un élément div sur votre page web. 
+JavaScript permet de charger un rapport dans un élément div sur votre page web.
+
+Pour obtenir un exemple complet d’utilisation de l’API JavaScript, vous pouvez utiliser [l’outil Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). C’est un moyen rapide de jouer avec différents types d’exemples Power BI Embedded. Pour plus d’informations sur l’API JavaScript, vous pouvez consulter la page du [wiki PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
 
 Voici un exemple qui utilise un modèle **EmbedConfig** et un modèle **TileEmbedConfig** avec les vues d’un rapport.
 
@@ -316,25 +318,23 @@ Voici un exemple qui utilise un modèle **EmbedConfig** et un modèle **TileEmbe
 </script>
 ```
 
-Pour obtenir un exemple complet d’utilisation de l’API JavaScript, vous pouvez utiliser [l’outil Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). C’est un moyen rapide de jouer avec différents types d’exemples Power BI Embedded. Des informations supplémentaires sur l’API JavaScript sont également disponibles sur la page du [wiki PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
-
 ## <a name="move-to-production"></a>Passer à la production
 
 Maintenant que votre application est développée, il est temps de sauvegarder votre espace de travail d’application avec une capacité dédiée. Une capacité dédiée est nécessaire de passer à la production.
 
 ### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
-En créant une capacité dédiée, vous pouvez profiter du fait que vous disposez d’une ressource dédiée pour votre client. Vous pouvez acheter une capacité dédiée dans le [Portail Microsoft Azure](https://portal.azure.com). Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+En créant une capacité dédiée, vous pouvez profiter du fait que vous disposez d’une ressource dédiée pour votre client. Vous pouvez acheter une capacité dédiée dans le [Portail Microsoft Azure](https://portal.azure.com). Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
 
 Examinez le tableau ci-dessous pour déterminer la capacité Power BI Embedded qui répond le mieux à vos besoins.
 
 | Nœud de capacité | Nombre total de cœurs<br/>*(Serveur principal + serveur frontal)* | Cœurs du serveur principal | Cœurs du serveur frontal | Limites de connexions actives/DirectQuery | Rendus de pages au maximum aux heures de pointe |
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 cœur virtuel |.5 cœurs, 3 Go de RAM |.5 cœurs | 5 par seconde |1-300 |
-| A2 |2 cœurs virtuels |1 cœur, 5 Go de RAM |1 cœur | 10 par seconde |301-600 |
-| A3 |4 cœurs virtuels |2 cœurs, 10 Go de RAM |2 cœurs | 15 par seconde |601-1 200 |
-| A4 |8 cœurs virtuels |4 cœurs, 25 Go de RAM |4 cœurs |30 par seconde |1 201-2 400 |
-| A5 |16 cœurs virtuels |8 cœurs, 50 Go de RAM |8 cœurs |60 par seconde |2 401-4 800 |
-| A6 |32 cœurs virtuels |16 cœurs, 100 Go de RAM |16 cœurs |120 par seconde |4 801-9 600 |
+| A1 |1 v-core(s) |.5 cœur(s), 3 Go de RAM |.5 cœurs | 5 par seconde |1-300 |
+| A2 |2 v-core(s) |1 cœur(s), 5 Go de RAM |1 cœur(s) | 10 par seconde |301-600 |
+| A3 |4 v-core(s) |2 cœur(s), 10 Go de RAM |2 cœur(s) | 15 par seconde |601-1 200 |
+| A4 |8 v-core(s) |4 cœur(s), 25 Go de RAM |4 cœur(s) |30 par seconde |1 201-2 400 |
+| A5 |16 v-core(s) |8 cœur(s), 50 Go de RAM |8 cœur(s) |60 par seconde |2 401-4 800 |
+| A6 |32 v-core(s) |16 cœur(s), 100 Go de RAM |16 cœur(s) |120 par seconde |4 801-9 600 |
 
 **_Les références SKU A ne vous permettent pas d’accéder à du contenu Power BI avec une licence Power BI GRATUITE._**
 
