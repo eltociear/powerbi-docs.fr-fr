@@ -7,20 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 422f0ba97f5118ddc57e9102055a070deaf99b90
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 805487087de865c25f08a29243d672fafbc26ca2
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329612"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39658034"
 ---
 # <a name="getting-started-with-color-formatting-and-axis-properties"></a>Prise en main de la mise en forme des couleurs et des propriétés d’axe
 Dans **Power BI**, vous pouvez modifier la couleur des séries de données, des points de données et même l’arrière-plan des visualisations. Vous pouvez également modifier la façon dont les axes X et Y sont présentés, ce qui vous donne un contrôle total de la façon dont vos tableaux de bord et vos rapports s’affichent.
 
 Pour commencer, sélectionnez un **rapport** dans le volet **Mon espace de travail** . Ensuite, dans la zone de menu supérieure, sélectionnez **Modifier le rapport**.  
+
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
 
 Quand vous modifiez un rapport alors qu’une visualisation est sélectionnée, le volet **Visualisations** s’affiche, ce qui vous permet d’ajouter ou de modifier des visualisations. Sous les visualisations disponibles se trouvent trois icônes : l’icône **Champs** (représentant des barres les unes sur les autres), l’icône **Format** (représentant un pinceau) et l’icône **Analytique** (représentant une loupe). Dans l’image ci-dessous, l’icône **Champs** est sélectionnée, ce qu’indique une barre jaune située sous l’icône.
@@ -28,6 +29,7 @@ Quand vous modifiez un rapport alors qu’une visualisation est sélectionnée, 
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_2a.png)
 
 Quand vous sélectionnez **Format**, la zone située sous l’icône affiche les personnalisations applicables aux couleurs et aux axes de la visualisation actuellement sélectionnée.  
+
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_3a.png)
 
 Vous pouvez personnaliser de nombreux éléments de ces visualisations :
@@ -36,7 +38,7 @@ Vous pouvez personnaliser de nombreux éléments de ces visualisations :
 * Axe X
 * Axe Y
 * Couleurs des données
-* Étiquettes des données
+* Étiquettes de données
 * Formes
 * Zone de traçage
 * Titre
@@ -47,14 +49,13 @@ Vous pouvez personnaliser de nombreux éléments de ces visualisations :
 > [!NOTE]
 >  
 > ces éléments n’apparaissent pas pour tous les types de visualisations. La disponibilité des personnalisations dépend de la visualisation que vous sélectionnez. Par exemple, vous ne verrez pas un axe X si vous avez sélectionné un graphique à secteurs, car ce type de graphique ne comprend pas d’axe X.
-> 
-> 
 
 Notez également que, si vous n’avez sélectionné aucune visualisation, le volet **Filtres** apparaît à la place des icônes, ce qui vous permet d’appliquer des filtres à toutes les visualisations de la page.
 
 Nous allons montrer deux exemples. Le premier illustre comment utiliser des couleurs et le deuxième comment modifier les propriétés d’un axe. Grâce à ces exemples, vous serez capable de personnaliser des couleurs, des axes et des étiquettes.
 
 ## <a name="working-with-colors"></a>Utilisation des couleurs
+
 Voyons les étapes nécessaires à la personnalisation des couleurs d’un graphique.
 
 1. Sélectionnez un **histogramme groupé** dans le canevas de rapport.
@@ -76,6 +77,7 @@ Les modifications sont indiquées dans l’image ci-dessous. Les couleurs de not
 Vous n’êtes pas satisfait de votre changement ? Utilisez **CTRL + Z** pour annuler votre modification.
 
 ## <a name="changing-axis-properties"></a>Modification des propriétés d’axe
+
 Il est souvent utile de modifier l’axe X ou l’axe Y. Comme pour l’utilisation des couleurs, vous pouvez modifier un axe en sélectionnant l’icône de flèche vers le bas située à gauche de l’axe que vous voulez modifier, comme illustré dans l’image suivante.  
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_7a.png)
 
@@ -88,11 +90,15 @@ Il existe un grand nombre de couleurs et de personnalisations à appliquer à vo
 > [!NOTE]
 >  
 > Les personnalisations des couleurs, des axes et autres qui sont disponibles quand l’icône **Format** est sélectionnée sont également disponibles dans Power BI Desktop.
-> 
-> 
 
-## <a name="next-step"></a>Étape suivante
+## <a name="setting-color-from-text-values"></a>Définition de couleur à partir de valeurs de texte
+
+À compter la mise à jour d’août 2018 de **Power BI Desktop**, vous pouvez définir des couleurs en fonction d’une valeur de texte, ou un code hexadécimal, pour un élément donné d’un rapport. Pour plus d’informations, consultez [Mise en forme conditionnelle dans les tables](desktop-conditional-table-formatting.md).
+
+
+## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations, consultez l’article suivant :  
 
 * [Trucs et astuces pour la mise en forme des couleurs dans Power BI](service-tips-and-tricks-for-color-formatting.md)  
+* [Mise en forme conditionnelle dans les tables](desktop-conditional-table-formatting.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Utiliser des thèmes de rapport dans Power BI Desktop (version préliminaire)
+title: Utiliser des thèmes de rapport dans Power BI Desktop
 description: Découvrez comment utiliser une palette de couleurs personnalisée et l’appliquer à un rapport entier dans Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 757c1465d2451da8ebf340c7b9bfe1f4d9ff04f1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6aa3e6ba5a471176a6af2551344744cdc45697fb
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721176"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657940"
 ---
-# <a name="use-report-themes-in-power-bi-desktop-preview"></a>Utiliser des thèmes de rapport dans Power BI Desktop (version préliminaire)
+# <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
 Les **Thèmes de rapport** permettent d’appliquer un thème de couleur à l’intégralité d’un rapport. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières ou de tout autre thème de votre choix. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
 
 ![](media/desktop-report-themes/report-themes_1.png)
@@ -26,10 +26,14 @@ Pour appliquer un **thème de rapport**, vous devez disposer d’un fichier JSON
 
 À partir de la publication de septembre 2017 de **Power BI Desktop**, vous pouvez définir davantage d’éléments de thème de rapport à l’aide d’un fichier JSON, ainsi que personnaliser (et standardiser) presque tous les éléments à l’aide du fichier JSON ajustable manuellement dans le volet **Mise en forme**. L’objectif de la publication de septembre 2017 (et des publications ultérieures) est de permettre un contrôle complet et précis de l’apparence des rapports.
 
-### <a name="enable-report-themes-in-preview"></a>Activer la fonctionnalité Thèmes de rapport en version préliminaire
-Vous pouvez essayer la nouvelle fonctionnalité **Thème de rapports** à partir de la version de **mars 2017** de **Power BI Desktop**. Pour activer cette fonctionnalité en version préliminaire, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis activez la case à cocher en regard de **Thèmes de rapport personnalisés**. Après avoir effectué la sélection, vous devez redémarrer **Power BI Desktop**.
+### <a name="enable-report-themes"></a>Activer les thèmes de rapport
+À compter de la version de **Power BI Desktop** d’août 2018, les thèmes de rapport sont en disponibilité générale et vous n’avez pas besoin de les activer. 
+
+Si vous utilisez une version antérieure de **Power BI Desktop**, vous pouvez les activer en tant que fonctionnalité en préversion en sélectionnant **Fichier > Options et paramètres > Options > Fonctionnalités en préversion**, puis en cochant la case à côté de **Thèmes de rapport personnalisés**. Après avoir effectué la sélection, vous devez redémarrer **Power BI Desktop**.
 
 ![](media/desktop-report-themes/report-themes_2.png)
+
+Nous recommandons toujours de mettre à niveau vers la version la plus récente de **Power BI Desktop**, que vous pouvez obtenir à partir d’un lien dans [Obtenir Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="how-report-themes-work"></a>Fonctionnement des thèmes de rapport
 Pour appliquer un thème de rapport à un rapport Power BI Desktop, sélectionnez le bouton **Changer de thème** dans le ruban **Accueil**, puis **Importer un thème** dans la liste déroulante.
@@ -54,7 +58,7 @@ Ouvert dans un éditeur, le fichier JSON de base sélectionné dans la section p
 Ce fichier JSON doit contenir les lignes suivantes :
 
 * **name** : il s’agit du nom du thème, qui est le seul champ obligatoire.
-* **dataColors** : il s’agit de la liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir un nombre quelconque de couleurs.
+* **dataColors** : il s’agit de la liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir un nombre quelconque de couleurs.
 * **background**, **foreground** et **tableAccent** : ces valeurs sont des couleurs qui doivent être appliquées dans différents types de visuels. **foreground** s’applique au texte de zone de texte, au texte d’objectif KPI, au texte de carte multiligne, au texte de valeur de carte, au texte de légende de jauge, au texte d’élément de segment vertical, ainsi qu’au texte de valeurs et de totaux de **table** et de **matrice**. **background** s’applique au remplissage de bouton et à l’arrière-plan des étiquettes de graphique combiné. La manière dont ces couleurs sont utilisées varie selon le style de visuel appliqué. Les visuels de **table** et de **matrice** appliquent ces styles par défaut.
 
 Pour appliquer un style à un visuel de **table** ou de **matrice**, sélectionnez-le. Dans le volet **Visualisations**, sélectionnez la section **Format**, puis développez **Style de matrice** et choisissez un style dans la liste déroulante **Style**.
@@ -71,7 +75,7 @@ Afin de faciliter l’opération de copier-coller pour créer votre propre fichi
         "tableAccent": "#568410"
     }
 
-Vous pouvez entrer votre propre code hexadécimal pour les couleurs sélectionnées.
+Vous pouvez entrer ici votre propre code hexadécimal pour les couleurs sélectionnées.
 
 À partir de la publication de septembre 2017 de **Power BI Desktop**, le fichier JSON peut être beaucoup plus complexe. Dans le fichier JSON, vous définissez uniquement la mise en forme que vous souhaitez affecter, et tout ce qui n’est *pas* spécifié dans le fichier JSON prend simplement les paramètres par défaut de Power BI.
 
@@ -100,7 +104,7 @@ Par ailleurs, si la couleur d’un point de données a été définie manuelleme
 Par ailleurs, bon nombre d’**éléments visuels personnalisés** n’appliquent pas les thèmes de rapport.
 
 ## <a name="report-theme-files-you-can-use-right-now"></a>Fichiers de thème de rapport que vous pouvez utiliser dès à présent
-Vous voulez commencer à utiliser des **thèmes de rapports** ? Excellent ! Voici quelques fichiers JSON de thème de rapport prêts à l’emploi, que vous pouvez télécharger et importer dans votre rapport **Power BI Desktop**, ainsi qu’une image de ce thème de rapport appliqué au rapport utilisé dans cet article.
+Vous voulez commencer à utiliser des **thèmes de rapports** ? Great! Voici quelques fichiers JSON de thème de rapport prêts à l’emploi, que vous pouvez télécharger et importer dans votre rapport **Power BI Desktop**, ainsi qu’une image de ce thème de rapport appliqué au rapport utilisé dans cet article.
 
 * Le [thème](https://go.microsoft.com/fwlink/?linkid=843924) utilisé dans le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-march-feature-summary/) qui annonçait la première version des **thèmes de rapport**, nommé [*waveform.json*](https://go.microsoft.com/fwlink/?linkid=843924).
 
@@ -141,7 +145,7 @@ Voici quelques thèmes de rapport supplémentaires que vous pouvez utiliser comm
 Le fichier JSON de base comprend cinq lignes obligatoires :
 
 * **name** : il s’agit du nom du thème, qui est le seul champ obligatoire.
-* **dataColors** : il s’agit de la liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir un nombre quelconque de couleurs.
+* **dataColors** : il s’agit de la liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir un nombre quelconque de couleurs.
 * **background**, **foreground** et **tableAccent** : ces valeurs sont des couleurs qui doivent être appliquées dans différents types de visuels. **foreground** s’applique au texte de zone de texte, au texte d’objectif KPI, au texte de carte multiligne, au texte de valeur de carte, au texte de légende de jauge, au texte d’élément de segment vertical, ainsi qu’au texte de valeurs et de totaux de **table** et de **matrice**. **background** s’applique au remplissage de bouton et à l’arrière-plan des étiquettes de graphique combiné. La manière dont ces couleurs sont utilisées varie selon le style de visuel appliqué. Les visuels de **table** et de **matrice** appliquent ces styles par défaut.
 
 Pour créer un fichier JSON de format étendu, avec un contrôle plus précis et détaillé de la mise en forme, vous devez ajouter au fichier JSON une section **visualStyles** dans laquelle incorporer les spécificités de la mise en forme. Le format de la section **visualStyles** est le suivant :

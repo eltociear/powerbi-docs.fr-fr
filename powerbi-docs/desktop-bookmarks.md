@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b8c4066f3128899d2c3c8121d7c5d41768f89dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: fe52646eef029359ac0e41c5fb32be524076a22d
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327818"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657963"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
 Les **signets** de Power BI permettent de capturer la vue actuellement configurée d’une page de rapport, filtrage et état des visuels compris, puis de revenir à cet état en sélectionnant simplement le signet enregistré. 
@@ -113,6 +113,33 @@ Une fois que vous avez activé le curseur **Action** en le définissant sur **Ac
 Les signets liés à des objets vous permettent d’effectuer des tâches très diverses. Vous pouvez créer un tableau visuel de contenu sur la page de rapport. Vous pouvez également fournir différentes vues (telles que les types de visuels) de la même information, en cliquant simplement sur un objet.
 
 Lorsque vous êtes en mode Modification, vous pouvez utiliser Ctrl + clic pour suivre le lien. Si vous êtes dans un autre mode, cliquez simplement sur l’objet pour suivre le lien. 
+
+## <a name="bookmark-groups"></a>Groupes de signets
+
+À compter de la version d’août 2018 de **Power BI Desktop**, vous pouvez créer et utiliser des groupes de signets. Un groupe de signets est une collection de signets que vous spécifiez et qui peuvent être affichés et organisés sous forme de groupe. 
+
+Pour créer un groupe de signets, maintenez la touche Ctrl enfoncée et sélectionnez les signets que vous voulez inclure dans le groupe, puis cliquez sur les points de suspension à côté de l’un des signets sélectionnés, puis sélectionnez **Grouper** dans le menu qui s’affiche.
+
+![Créer un groupe de signets](media/desktop-bookmarks/bookmarks_15.png)
+
+**Power BI Desktop** nomme automatiquement le groupe *Groupe 1*. Heureusement, vous pouvez simplement double-cliquer sur le nom et le renommer comme vous le souhaitez.
+
+![Renommer un groupe de signets](media/desktop-bookmarks/bookmarks_16.png)
+
+Le fait de cliquer sur le nom du groupe de signets développe ou réduit seulement le groupe de signets ; le nom ne représente pas un signet par lui-même. 
+
+Lors de l’utilisation de la fonctionnalité **Afficher** des signets, ceci s’applique :
+
+* Si le signet sélectionné est dans un groupe quand vous sélectionnez **Afficher** à partir des signets, seuls les signets *de ce groupe* apparaissent dans la session de visualisation. 
+
+* Si le signet sélectionné n’est pas un groupe ou est au plus haut niveau (comme le nom d’un groupe de signets), tous les signets de l’intégralité du rapport sont affichés, y compris les signets des groupes. 
+
+Pour dissocier des signets, sélectionnez simplement un signet dans un groupe, cliquez sur les points de suspension et sélectionnez **Dissocier** dans le menu qui apparaît. 
+
+![Dissocier un groupe de signets](media/desktop-bookmarks/bookmarks_17.png)
+
+Notez que la sélection de **Dissocier** pour un signet d’un groupe retire tous les signets du groupe (cette action supprimer le groupe, mais pas les signets eux-mêmes). Ainsi, pour supprimer un seul signet d’un groupe, vous devez **Dissocier** n’importe quel membre de ce groupe, ce qui supprime le regroupement, sélectionner les membres que vous voulez dans le nouveau groupe (en utilisant Ctrl et en cliquant sur chaque signet), puis resélectionner **Grouper**. 
+
 
 ## <a name="using-spotlight"></a>Utilisation du mode À la une
 La fonctionnalité **À la une** est également fournie avec les signets. Avec la fonction **À la une**, vous pouvez attirer l’attention sur un graphique spécifique, par exemple lors de la présentation de vos signets en mode **Vue**.

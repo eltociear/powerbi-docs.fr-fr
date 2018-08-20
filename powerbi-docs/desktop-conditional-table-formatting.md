@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 70aa61d6a02bea1b7058a68b20718008ace1b8c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 61a30484713ac96d3bbb65355310007a52f300a5
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34480885"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657802"
 ---
 # <a name="conditional-formatting-in-tables"></a>Mise en forme conditionnelle dans les tables 
 Avec la mise en forme conditionnelle des tables, vous pouvez spécifier des couleurs de cellule personnalisées en fonction des valeurs des cellules, ou en fonction d’autres valeurs ou champs, et notamment utiliser des couleurs de dégradé. Vous pouvez également afficher les valeurs des cellules avec des barres de données. 
@@ -95,3 +95,43 @@ Par défaut, l’option **Afficher seulement la barre** est décochée : la cell
 Si l’option **Afficher seulement la barre** est cochée, la cellule du tableau montre seulement la barre.
 
 ![Exemple de tableau avec seulement des barres de données](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
+
+## <a name="color-formatting-by-field-value"></a>Mise en forme des couleurs en fonction de la valeur du champ
+
+Vous pouvez utiliser une mesure ou une colonne avec une couleur spécifique en utilisant une valeur de texte ou un code hexadécimal, pour appliquer cette couleur à l’arrière-plan de la couleur de police d’un visuel de table ou de matrice. Vous pouvez également créer une logique personnalisée pour un champ donné et utiliser cette logique pour appliquer la couleur souhaitée à la police ou à l’arrière-plan.
+
+Par exemple, dans le tableau suivant, une couleur est associée à chaque modèle de produit. 
+
+![Champ ProductName avec un nom de couleur](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
+
+Pour mettre en forme cette cellule en fonction de sa valeur de champ, sélectionnez la boîte de dialogue **Mise en forme conditionnelle** en cliquant sur la colonne *Couleur* pour ce visuel et sélectionnez dans le cas présent **Couleur d’arrière-plan**  dans le menu. 
+
+![Sélectionner la couleur de l’arrière-plan dans le menu](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
+
+Dans la boîte de dialogue qui apparaît, sélectionnez **Valeur du champ** dans la zone de liste déroulante **Mettre en forme par**, comme illustré dans l’image suivante.
+
+![Mettre en forme par Valeur du champ](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
+
+Vous pouvez répéter ce processus pour la couleur de police : le résultat dans le visuel est alors une couleur unie dans la colonne **Couleur**, comme illustré dans l’écran suivant.
+
+![Mettre en forme par Valeur du champ](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
+
+Vous pouvez également créer un calcul DAX basé sur la logique métier, qui génère des codes hexadécimaux différents en fonction de conditions de votre choix. C’est généralement plus facile que de créer plusieurs règles dans la boîte de dialogue Mise en forme conditionnelle. Considérons le champ *ColorKPI* dans l’exemple d’image suivant.
+
+![Calculs DAX](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+
+Vous pouvez ensuite définir la valeur du champ pour **Couleur d’arrière-plan** de la façon suivante.
+
+![Définir la couleur du champ en fonction d’un indicateur de performance clé](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
+
+Vous pouvez alors obtenir des résultats comme la matrice suivante.
+
+![Visuel Matrice avec une couleur basée sur la valeur d’un indicateur de performance clé](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
+
+Vous pouvez créer de nombreuses autres variations, avec simplement votre imagination et un peu de code DAX.
+
+## <a name="next-steps"></a>Étapes suivantes
+Pour plus d’informations, consultez l’article suivant :  
+
+* [Trucs et astuces pour la mise en forme des couleurs dans Power BI](service-tips-and-tricks-for-color-formatting.md)  
+

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: be4651d1658c80c84105a65bc48e4072ed203794
-ms.sourcegitcommit: 7bdb76bd80973c5e5174747b7e304705754fe647
+ms.openlocfilehash: a3e39e6326eb5b32cd72e2aefec74c07804b4639
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217625"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657894"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Utiliser des éléments visuels pour améliorer des rapports Power BI
 
@@ -59,6 +59,9 @@ Lorsque vous définissez la transparence l’arrière-plan de votre page sur plu
 ![Une transparence supérieure à 50 % génère une bordure en pointillés](media/desktop-visual-elements-for-reports/visual-elements-for-reports_04.png)
 
 Il est important de noter que la limite en pointillés ne s’affiche *que* lors de la modification de votre rapport et n’est *pas* visible pour les personnes qui consultent votre rapport publié, par exemple dans le **service Power BI**.
+
+> [!NOTE]
+> Si vous utilisez des arrière-plans de couleur foncée pour le papier peint et que vous définissez la couleur de texte en blanc ou dans une couleur très claire, n’oubliez pas que la fonctionnalité **Exporter au format PDF** n’inclut pas le papier peint : ainsi, les exportations avec des polices de couleur blanche seront pratiquement invisibles dans le fichier PDF exporté. Pour plus d’informations sur **l’exportation au format PDF**, consultez [Exporter au format PDF](desktop-export-to-pdf.md).
 
 
 ## <a name="using-improved-visual-headers-in-power-bi-reports"></a>Utilisation d’en-têtes de visuels améliorés dans les rapports Power BI

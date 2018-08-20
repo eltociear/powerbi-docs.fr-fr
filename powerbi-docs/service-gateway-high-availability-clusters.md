@@ -2,26 +2,26 @@
 title: Clusters à haute disponibilité pour la passerelle de données locale
 description: Vous pouvez créer des clusters de passerelles de données locales pour fournir une haute disponibilité à votre entreprise.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/05/2017
-ms.author: mblythe
+ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9777131c25974a2bc9936ef1c1ce285bb652028c
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.openlocfilehash: 5b89b53cab0f7e4df07b15a05cd74c7d99b1392a
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39032022"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657986"
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Clusters à haute disponibilité pour la passerelle de données locale
+
 Vous pouvez créer des **clusters à haute disponibilité** d’installations de **passerelle de données locale**, pour vous assurer que votre organisation peut accéder aux ressources de données locales utilisées dans les tableaux de bord et rapports Power BI. Ces clusters permettent aux administrateurs de passerelles de regrouper les passerelles afin d’éviter des points de défaillance uniques lors de l’accès aux ressources de données locales. Le service Power BI utilise toujours la passerelle principale du cluster, sauf si elle n’est pas disponible. Dans ce cas, le service bascule vers la passerelle suivante du cluster, et ainsi de suite.
 
-Cet article décrit les étapes à suivre pour créer un cluster à haute disponibilité de passerelles de données locales et partage les meilleures pratiques de configuration. Les clusters de passerelles à haute disponibilité nécessitent d’appliquer la mise à jour de novembre 2017 ( ou version ultérieure) à la passerelle de données locale.
-
+Cet article décrit les étapes à suivre pour créer un cluster à haute disponibilité de passerelles de données locales, ainsi que les bonnes pratiques pour leur configuration. Les clusters de passerelles à haute disponibilité nécessitent d’appliquer la mise à jour de novembre 2017 ( ou version ultérieure) à la passerelle de données locale.
 
 ## <a name="setting-up-high-availability-clusters-of-gateways"></a>Configuration de clusters à haute disponibilité de passerelles de données locales
 
@@ -29,27 +29,32 @@ Lors du processus d’installation de la **passerelle de données locale**, vous
 
 ![](media/service-gateway-high-availability-clusters/gateway_clusters_01.png)
 
-Pour ajouter une passerelle à un cluster existant, vous devez fournir la *clé de récupération* de l’instance de la passerelle principale pour le cluster auquel la nouvelle passerelle sera jointe. La passerelle principale du cluster doit exécuter la mise à jour de passerelle de novembre 2017 ou ultérieure. 
-
+Pour ajouter une passerelle à un cluster existant, vous devez fournir la *clé de récupération* de l’instance de la passerelle principale pour le cluster auquel vous voulez joindre la nouvelle passerelle. La passerelle principale du cluster doit exécuter la mise à jour de passerelle de novembre 2017 ou ultérieure. 
 
 ## <a name="managing-a-gateway-cluster"></a>Gestion d’un cluster de passerelles
 
-Une fois qu’un cluster de passerelles est composé de deux ou plusieurs passerelles, toutes les opérations de gestion des passerelles, telles que l’ajout d’une source de données ou l’octroi d’autorisations d’administration à une passerelle, s’appliquent à toutes les passerelles qui font partie du cluster. 
+Une fois qu’un cluster de passerelles est composé de deux ou plusieurs passerelles, toutes les opérations de gestion des passerelles, telles que l’ajout d’une source de données ou l’octroi d’autorisations d’administration à une passerelle, s’appliquent à toutes les passerelles qui font partie du cluster.
 
 Quand les administrateurs utilisent l’élément de menu **Gérer les passerelles**, situé sous l’icône d’engrenage dans le **service Power BI**, ils voient la liste des clusters ou des passerelles, mais pas les instances de passerelles spécifiques qui sont membres du cluster.
 
 Tous les nouvelles opérations DirectQuery et demandes **d’actualisation planifiée** sont automatiquement routées vers l’instance principale d’un cluster de passerelles donné. Si l’instance de passerelle principale n’est pas en ligne, la demande est routée vers une autre instance de passerelle dans le cluster.
 
+## <a name="distribute-requests-traffic-across-all-gateways-in-a-cluster"></a>Distribuer le trafic des demandes entre toutes les passerelles d’un cluster
+
+Vous pouvez choisir d’autoriser la distribution du trafic entre toutes les passerelles d’un cluster. Dans la page **Gérer les passerelles** du **service Power BI**, quand vous cliquez sur un cluster de passerelles dans la liste de l’arborescence de navigation de gauche, vous pouvez activer l’option pour « Distribuer les demandes sur toutes les passerelles actives dans ce cluster ».
+
+![Équilibrer la charge](media/service-gateway-high-availability-clusters/gateway-onprem-loadbalance.png)
+
 ## <a name="powershell-support-for-gateway-clusters"></a>Prise en charge par PowerShell des clusters de passerelles
 
-Des scripts PowerShell sont disponibles dans le dossier d’installation de la passerelle de données locale. Par défaut, ce dossier se trouve dans *C:\Program Files\Passerelle de données locale*. Vous devez utiliser la version 5 ou ultérieure de PowerShell pour que ces scripts fonctionnent correctement. Les scripts PowerShell permettent aux utilisateurs d’effectuer les opérations suivantes :
+Des scripts PowerShell sont disponibles dans le dossier d’installation de la passerelle de données locale. Par défaut, ce dossier se trouve dans *C:\Program Files\Passerelle de données locale*. Vous devez utiliser PowerShell 5 ou ultérieur pour que ces scripts fonctionnent correctement. Les scripts PowerShell permettent aux utilisateurs d’effectuer les opérations suivantes :
 
 -   Récupérer la liste des clusters de passerelles disponibles pour un utilisateur
 -   Récupérer la liste des instances de passerelle inscrites dans un cluster, ainsi que leur état en ligne ou hors connexion
 -   Modifier l’état Activé/désactivé d’une instance de passerelle dans un cluster, ainsi que d’autres propriétés de passerelle
 -   Supprimer une passerelle
 
-Pour exécuter les commandes PowerShell indiquées dans le tableau, vous devez tout d’abord suivre les étapes suivantes :
+Pour exécuter les commandes PowerShell indiquées dans le tableau, vous devez d’abord effectuer les étapes suivantes :
 
 1. Ouvrez une fenêtre de commande PowerShell en tant qu’administrateur.
 2. Exécutez ensuite la commande PowerShell suivante à usage unique (cela suppose que vous n’avez jamais exécuté de commandes PowerShell sur l’ordinateur actuel) :
@@ -69,12 +74,11 @@ Une fois que vous avez effectué ces étapes, vous pouvez utiliser les commandes
 | **Commande** | **Description** | **Paramètres** |
 | --- | --- | --- |
 | *Login-OnPremisesDataGateway* |Cette commande permet à un utilisateur de se connecter pour gérer ses propres clusters de passerelles de données locales.  Vous devez exécuter cette commande et vous connecter *avant* que les autres commandes de haute disponibilité puissent fonctionner correctement. Remarque : le jeton d’authentification AAD acquis dans le cadre d’un appel de connexion est uniquement valide pendant 1 heure, après quoi il expire. Vous pouvez réexécuter la commande de connexion pour acquérir un nouveau jeton.| Nom d’utilisateur AAD et mot de passe (fournis dans le cadre de l’exécution de la commande, et non lors de l’appel initial)|
-| *Get-OnPremisesDataGatewayClusters* | Récupère la liste des clusters de passerelles pour l’utilisateur connecté. | Si vous le souhaitez, vous pouvez passer des paramètres de mise en forme de cette commande pour une meilleure lisibilité, par exemple : *Format-Table -AutoSize -Wrap* |
+| *Get-OnPremisesDataGatewayClusters* | Récupère la liste des clusters de passerelles pour l’utilisateur connecté. | Si vous le souhaitez, vous pouvez passer des paramètres de mise en forme de cette commande pour une meilleure lisibilité, par exemple *Format-Table -AutoSize -Wrap* |
 | *Get-OnPremisesDataClusterGateways* | Récupère la liste des passerelles dans le cluster spécifié, ainsi que des informations supplémentaires pour chaque passerelle (état en ligne/hors connexion, nom de l’ordinateur, etc.) | *-ClusterObjectID xyz* (où *xyz* est remplacé par une valeur réelle d’ID objet cluster, qui peut être récupérée à l’aide de la commande *Get-OnPremisesDataGatewayClusters*)|
-| *Set-OnPremisesDataGateway* | Vous permet de définir les valeurs des propriétés d’une passerelle donnée dans un cluster, y compris la possibilité d’activer ou de désactiver une instance de passerelle spécifique  | *-ClusterObjectID xyz* (*xyz* doit être remplacé par une valeur d’ID objet cluster proprement dit, qui peut être récupérée à l’aide de la commande *Get-OnPremisesDataGatewayClusters*) *-GatewayObjectID abc*  (*abc* doit être remplacé par une valeur d’ID objet passerelle réelle, qui peut être récupérée à l’aide de la commande *Get-OnPremisesDataClusterGateways*, étant donné un ID d’objet cluster) |
+| *Set-OnPremisesDataGateway* | Vous permet de définir les valeurs des propriétés d’une passerelle donnée dans un cluster, y compris la possibilité d’activer ou de désactiver une instance de passerelle spécifique  | *-ClusterObjectID xyz* (*xyz* doit être remplacé par une valeur d’ID objet cluster réelle, qui peut être récupérée avec la commande *Get-OnPremisesDataGatewayClusters*) *-GatewayObjectID abc*  (*abc* doit être remplacé par une valeur d’ID objet passerelle réelle, qui peut être récupérée avec la commande *Get-OnPremisesDataClusterGateways*, étant donné un ID d’objet cluster) |
 | *Get-OnPremisesDataGatewayStatus* | Vous permet de récupérer l’état d’une instance de passerelle donnée au sein d’un cluster  | *-ClusterObjectID xyz* (*xyz* doit être remplacé par une valeur d’ID objet cluster proprement dit, qui peut être récupérée à l’aide de la commande *Get-OnPremisesDataGatewayClusters*) *-GatewayObjectID abc*  (*abc* doit être remplacé par une valeur d’ID objet passerelle réelle, qui peut être récupérée à l’aide de la commande *Get-OnPremisesDataClusterGateways*, étant donné un ID d’objet cluster) |
-| *Remove-OnPremisesDataGateway*  | Vous permet de supprimer une instance de passerelle d’un cluster. Notez que la passerelle principale du cluster ne peut pas être supprimée tant que toutes les autres passerelles du cluster n’ont pas été supprimées.| *-ClusterObjectID xyz* (*xyz* doit être remplacé par une valeur d’ID objet cluster proprement dit, qui peut être récupérée à l’aide de la commande *Get-OnPremisesDataGatewayClusters*) *-GatewayObjectID abc*  (*abc* doit être remplacé par une valeur d’ID objet passerelle réelle, qui peut être récupérée à l’aide de la commande *Get-OnPremisesDataClusterGateways*, étant donné un ID d’objet cluster) |
-
+| *Remove-OnPremisesDataGateway*  | Vous permet de supprimer une instance de passerelle d’un cluster. Notez que la passerelle principale du cluster ne peut pas être supprimée tant que toutes les autres passerelles du cluster ne sont pas supprimées.| *-ClusterObjectID xyz* (*xyz* doit être remplacé par une valeur d’ID objet cluster proprement dit, qui peut être récupérée à l’aide de la commande *Get-OnPremisesDataGatewayClusters*) *-GatewayObjectID abc*  (*abc* doit être remplacé par une valeur d’ID objet passerelle réelle, qui peut être récupérée à l’aide de la commande *Get-OnPremisesDataClusterGateways*, étant donné un ID d’objet cluster) |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
