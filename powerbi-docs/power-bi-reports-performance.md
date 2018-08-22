@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
-ms.author: v-mamcge
+ms.author: kfile
 LocalizationGroup: Reports
-ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 2e8888679f36b64a6fc5956a9ca10dc3d07dce1a
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582568"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257187"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI 
 Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI.  
@@ -46,10 +46,10 @@ Pour plus d’informations sur l’optimisation des sources de données pour Dir
  
 ## <a name="directquery-and-live-connection-understand-underlying-data-source-performance"></a>Connexion DirectQuery et active : comprendre les performances de source de données sous-jacente 
 
-Dans le cas des connexions DirectQuery ou actives, lorsque les utilisateurs consultent un rapport Power BI, Power BI envoie des requêtes en temps réel à la source de données sous-jacente. Une fois que la source de données renvoie les données de la requête, le rapport est rendu. Par conséquent, les performances de votre rapport dans ces cas-là dépendent largement de celles de la source de données sous-jacente. 
- 
-Il est donc important de comprendre les performances de votre source de données sous-jacente. Différentes sources de données disposent de différents outils pour comprendre les performances des requêtes. Par exemple, SQL Server et Azure SQL fournissent le Magasin de données des requêtes, qui capture un historique des requêtes et leurs statistiques d’exécution. 
- 
+Dans le cas des connexions DirectQuery ou actives, lorsque les utilisateurs consultent un rapport Power BI, Power BI envoie des requêtes en temps réel à la source de données sous-jacente. Une fois que la source de données renvoie les données de la requête, le rapport est rendu. Par conséquent, les performances de votre rapport dans ces cas-là dépendent largement de celles de la source de données sous-jacente.
+
+Il est donc important de comprendre les performances de votre source de données sous-jacente. Différentes sources de données disposent de différents outils pour comprendre les performances des requêtes. Par exemple, SQL Server et Azure SQL fournissent le Magasin de données des requêtes, qui capture un historique des requêtes et leurs statistiques d’exécution.
+
 En règle générale, lors du déploiement de rapports Power BI créés à partir de connexions actives et DirectQuery, testez les actions de vos utilisateurs finaux dans Power BI Desktop. Si le chargement du rapport dans Power BI Desktop est lent, il le sera également dans le service pour vos utilisateurs finaux. 
  
 ## <a name="directquery-best-practices"></a>Bonnes pratiques relatives à DirectQuery 

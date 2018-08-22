@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 08/06/2018
+ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 5f117bdeb4e37986884c6a1021db1f361bdcddd3
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 4c5a50a5bab76fd856099a3c1430638dc9e33ea8
+ms.sourcegitcommit: 1574ecba7530e6e0ee97235251a3138fb0e4789b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582665"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40256850"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 * Si vous avez des questions, [essayez d’interroger la communauté Power BI](http://community.powerbi.com/).
@@ -30,7 +30,7 @@ Power BI Pro est une licence individuelle qui autorise l’accès à la totalit�
 Premium offre une capacité dédiée pour fournir des performances plus cohérentes et une prise en charge de plus grands volumes de données dans Power BI. Pour les utilisateurs individuels, Premium permet également une large distribution de contenu par les utilisateurs Pro sans nécessiter de licences par utilisateur pour que les destinataires voient le contenu.
 
 ## <a name="how-much-does-power-bi-cost"></a>Combien coûte Power BI ?
-Power BI Desktop est gratuit. Un essai gratuit de 60 jours est disponible pour Power BI Pro. Découvrez les prix dans la page sur la [tarification de Power BI](https://powerbi.microsoft.com/pricing).
+Power BI Desktop est gratuit. Une version d’évaluation gratuite de 60 jours est disponible pour Power BI Pro. En savoir plus sur la tarification à la page sur la [tarification de Power BI](https://powerbi.microsoft.com/pricing).
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Où trouver des réponses à mes questions sur Power BI Premium ?
 Pour les questions relatives à Power BI Premium, consultez [Questions fréquentes Power BI Premium](service-premium-faq.md).
@@ -48,7 +48,7 @@ Uniquement d’un navigateur web et d’une adresse de messagerie professionnell
 Power BI ne prend pas en charge les adresses de messagerie fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunications. En savoir plus sur le [processus d’inscription en libre-service de Power BI](service-self-service-signup-for-power-bi.md).
 
 ## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Des prix pour le secteur public, l’enseignement et les associations sont-ils proposés pour Power BI ?
-Oui, un prix est proposé pour les associations pour tout achat direct auprès de Microsoft. Vous pouvez en savoir plus et vous inscrire sur le site dédié aux [associations Microsoft](https://www.microsoft.com/en-us/nonprofits/power-bi). Un prix pour le secteur public et l’enseignement est proposé via les programmes de licences MOSP/Direct, EA et Open. Un prix pour le secteur public est également disponible via la syndication. 
+Oui, un prix est proposé pour les associations pour tout achat direct auprès de Microsoft. Vous pouvez en savoir plus et vous inscrire sur le site dédié aux [associations Microsoft](https://www.microsoft.com/en-us/nonprofits/power-bi). Une tarification pour le secteur public et l’enseignement est proposée via les programmes de licences MOSP/Direct, EA et Open. Une tarification pour le secteur public est également disponible via la syndication. 
 
 ## <a name="is-power-bi-available-on-premises"></a>Power BI est-il disponible localement ?
 Le service Power BI [https://powerbi.com](https://powerbi.com) n’est pas disponible en tant que service cloud interne et privé. Toutefois, vous avez trois autres options pour l’affichage et l’utilisation des données en local. 
