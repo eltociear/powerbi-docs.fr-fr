@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/02/2018
+ms.date: 08/15/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: db77e3e7421074383f67bffad318e6f7f4c3df28
+ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965501"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256930"
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -100,36 +100,37 @@ Pour plus d’informations sur les journaux d’audit, consultez [Audit de Power
 
 Le troisième onglet du portail d’administration est **Paramètres du client**. Les paramètres client vous permettent de décider des fonctionnalités qui doivent être mises à la disposition de votre organisation. Si vous vous inquiétez pour vos données sensibles, certaines de nos fonctionnalités peuvent ne pas être adaptées à votre organisation, ou nous vous recommandons d’attribuer certaines fonctionnalités à des groupes précis. Si c’est le cas, vous pouvez les désactiver dans votre client.
 
-Par exemple, les données par utilisateur sont activées par défaut pour les métriques d’utilisation et les informations de compte de créateur de contenu sont incluses dans le rapport des métriques. Si vous ne souhaitez pas inclure ces informations pour tout ou partie des utilisateurs, désactivez la fonctionnalité pour des groupes de sécurité spécifiés ou pour l’ensemble de l’organisation. Les informations de compte figurent alors dans le rapport sous l’intitulé *Sans nom*.
-
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
 > L’activation ou la désactivation d’un paramètre peut prendre jusqu’à 10 minutes pour tous les utilisateurs de votre client.
 
-Les fonctionnalités peuvent avoir trois états, selon votre configuration.
+Les paramètres peuvent avoir trois états :
 
-### <a name="disabled-for-the-entire-organization"></a>Désactivé pour toute l’organisation
+* **Désactivé pour toute l’organisation** : Vous pouvez désactiver une fonctionnalité pour que les utilisateurs ne puissent plus l’utiliser.
 
-Vous pouvez désactiver une fonctionnalité pour que les utilisateurs ne puissent plus l’utiliser.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+* **Activé pour toute l’organisation** : Vous pouvez activer une fonctionnalité pour toute votre organisation, ce qui permet à tous les utilisateurs d’y accéder.
 
-### <a name="enabled-for-the-entire-organization"></a>Activé pour toute l’organisation
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-Vous pouvez activer une fonctionnalité pour toute votre organisation, ce qui permet à tous les utilisateurs d’y accéder.
+* **Activé pour une partie de l’organisation** : Vous pouvez également activer une fonctionnalité pour une partie de votre organisation. Cela peut se produire de différentes manières. Vous pouvez l’activer pour toute votre organisation à l’exception d’un groupe spécifique d’utilisateurs.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-### <a name="enabled-for-a-subset-of-the-organization"></a>Activé pour une partie de l’organisation
+    Vous pouvez également activer la fonctionnalité uniquement pour un groupe d’utilisateurs spécifique, mais également la désactiver pour un autre groupe d’utilisateurs. Vous pouvez ainsi vous assurer que certains utilisateurs n’ont pas accès à la fonctionnalité, même s’ils se trouvent dans le groupe des utilisateurs autorisés.
 
-Vous pouvez également activer une fonctionnalité pour une partie de votre organisation. Cela peut se produire de différentes manières. Vous pouvez l’activer pour toute votre organisation à l’exception d’un groupe spécifique d’utilisateurs.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+Les sections suivantes fournissent une vue d’ensemble des différents types de paramètres de locataire.
 
-Vous pouvez également activer la fonctionnalité uniquement pour un groupe d’utilisateurs spécifique, mais également la désactiver pour un autre groupe d’utilisateurs. Vous pouvez ainsi vous assurer que certains utilisateurs n’ont pas accès à la fonctionnalité, même s’ils se trouvent dans le groupe des utilisateurs autorisés.
+## <a name="workspace-settings"></a>Paramètres d’espace de travail
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+### <a name="create-workspaces-preview"></a>Créer des espaces de travail (préversion)
+Les utilisateurs de l’organisation peuvent créer des espaces de travail d’application pour collaborer sur des tableaux de bord, des rapports et autre contenu.
+
+Pour plus d’informations, consultez [Créer les nouveaux espaces de travail](service-create-the-new-workspaces.md).
 
 ## <a name="export-and-sharing-settings"></a>Paramètres d’exportation et de partage
 
@@ -193,7 +194,7 @@ Les utilisateurs de l’organisation peuvent publier des packs de contenu pour t
 
 Les utilisateurs de l’organisation peuvent créer des packs de contenu modèles qui utilisent des jeux de données basés sur une même source de données dans Power BI Desktop.
 
-### <a name="push-apps-to-end-users"></a>Pousser des applications pour les utilisateurs finaux
+### <a name="push-apps-to-end-users"></a>Effectuer une transmission de type push des applications pour les utilisateurs finaux
 
 L’administrateur de votre locataire permet de pousser des applications dans les **Paramètres du locataire**.
 
@@ -220,7 +221,7 @@ Les utilisateurs de l’organisation peuvent utiliser Excel pour afficher et int
 > [!NOTE]
 > La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité **Analyser dans Excel**.
 
-### <a name="use-arcgis-maps-for-power-bi"></a>Utiliser ArcGIS Maps for Power BI
+### <a name="use-arcgis-maps-for-power-bi"></a>Utiliser ArcGIS Maps pour Power BI
 
 Les utilisateurs de l’organisation peuvent utiliser la visualisation ArcGIS Maps for Power BI fournie par Esri. [En savoir plus](power-bi-visualization-arcgis.md)
 
@@ -244,7 +245,7 @@ Les utilisateurs de l’organisation peuvent manipuler et partager des visuels c
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
-## <a name="audit-settings"></a>Paramètres d’audit
+## <a name="audit-and-usage-settings"></a>Paramètres d’audit et d’utilisation
 
 ### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Créer des journaux d’audit pour l’audit des activités internes et la vérification de la conformité
 
@@ -254,6 +255,25 @@ Ce paramètre doit être activé pour pouvoir enregistrer les entrées du journa
 
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
+
+### <a name="usage-metrics-for-content-creators"></a>Métriques d’utilisation pour les créateurs de contenu
+Les utilisateurs de l’organisation peuvent voir les métriques d’utilisation des tableaux de bord et des rapports qu’ils ont créés. [En savoir plus](service-usage-metrics.md).
+
+Vous pouvez passer le paramètre à **Activé**, puis spécifier qui peut voir les métriques d’utilisation (l’ensemble de l’organisation ou des groupes de sécurité spécifiques).
+
+> [!NOTE]
+> N’oubliez pas que l’application des changements de paramètre de locataire peut prendre un certain temps.
+
+### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Données par utilisateur dans les métriques d’utilisation pour les créateurs de contenu
+Les métriques d’utilisation pour créateurs de contenu exposent les noms d’affichage et les adresses e-mail des utilisateurs qui accèdent à du contenu. [En savoir plus](service-usage-metrics.md).
+
+Vous pouvez passer le paramètre à **Activé**, puis spécifier qui peut voir les noms d’affichage et les adresses e-mail dans les métriques d’utilisation (l’ensemble de l’organisation ou des groupes de sécurité spécifiques).
+
+Par défaut, les données par utilisateur sont activées pour les métriques d’utilisation et les informations des comptes de créateur de contenu sont incluses dans le rapport des métriques. Si vous ne souhaitez pas inclure ces informations pour tout ou partie des utilisateurs, désactivez la fonctionnalité pour des groupes de sécurité spécifiés ou pour l’ensemble de l’organisation. Les informations de compte figurent alors dans le rapport sous l’intitulé *Sans nom*.
+
+> [!NOTE]
+> N’oubliez pas que l’application des changements de paramètre de locataire peut prendre un certain temps.
+
 
 ## <a name="dashboard-settings"></a>Paramètres du tableau de bord
 
@@ -270,9 +290,9 @@ Les utilisateurs de l’organisation peuvent étiqueter les tableaux de bord ave
 
 Les utilisateurs de l’organisation peuvent incorporer des tableaux de bord et des rapports Power BI dans des applications Saas (Software as a Service). La désactivation de ce paramètre empêche les utilisateurs d’utiliser les API REST pour incorporer du contenu Power BI dans leur application.
 
-## <a name="premium-settings"></a>Paramètres Premium
+## <a name="capacity-settings"></a>Paramètres de capacité
 
-L’onglet Paramètres Premium vous permet de gérer les capacités Power BI Premium souscrites pour votre organisation. Tous les utilisateurs membres de votre organisation voient l’onglet Paramètres Premium, mais ne peuvent en voir le contenu que s’ils disposent d’autorisations d’**administrateur de capacité** ou d’autorisations d’affectation. Si un utilisateur ne possède aucune autorisation, le message suivant apparaît.
+L’onglet Paramètres de capacité vous permet de gérer les capacités Power BI Premium achetées pour votre organisation. Tous les utilisateurs membres de votre organisation voient l’onglet Paramètres Premium, mais ne peuvent en voir le contenu que s’ils disposent d’autorisations d’**administrateur de capacité** ou d’autorisations d’affectation. Si un utilisateur ne possède aucune autorisation, le message suivant apparaît.
 
 ![](media/service-admin-portal/premium-settings-no-access.png "Aucun accès aux paramètres Premium")
 

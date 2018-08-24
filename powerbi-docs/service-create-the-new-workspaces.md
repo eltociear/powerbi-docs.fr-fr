@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2018
+ms.date: 08/17/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 36343b4db0481ea61fbfac1c791aa84760ee2c77
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 271859dbc13e909d255e4287ae14e66b2d85724f
+ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624649"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "40256977"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Créer les nouveaux espaces de travail (préversion) dans Power BI
 
@@ -34,7 +34,7 @@ Quand vous créez un des nouveaux espaces de travail, vous ne créez pas de grou
 Vous ajoutez des groupes d’utilisateurs ou des personnes individuelles aux nouveaux espaces de travail en tant que membres, contributeurs ou administrateurs. Tous les utilisateurs d’un groupe d’utilisateurs reçoivent le rôle que vous avez défini. Si une personne est dans plusieurs groupes d’utilisateurs, elle reçoit le niveau d’autorisation le plus élevé fourni par le rôle.  Consultez [Rôles dans les nouveaux espaces de travail](#roles-in-the-new-workspaces) plus loin dans cet article pour une explication des différents rôles.
 
 Toutes les personnes que vous ajoutez à un espace de travail d’application doivent avoir une licence Power BI Pro. Dans l’espace de travail, ces utilisateurs peuvent collaborer sur des tableaux de bord et des rapports que vous prévoyez de publier pour un public plus large, ou même pour votre organisation toute entière. Si vous voulez distribuer du contenu à d’autres personnes au sein de votre organisation, vous pouvez attribuer des licences Power BI Pro à ces utilisateurs ou placer l’espace de travail dans une capacité Power BI Premium.
-Comme il s’agit d’une fonctionnalité en préversion, elle est soumise à certaines limitations que vous devez connaître. Vous pouvez <section link> trouver une explication des limitations actuelles plus loin dans cet article. Avec les nouveaux espaces de travail, nous proposons une nouvelle conception de certaines fonctionnalités. Consultez <lien vers la section> plus loin dans cet article pour obtenir une explication des modifications présentes dans la préversion et qui seront rendues permanentes.
+Comme il s’agit d’une fonctionnalité en préversion, elle est soumise à certaines limitations que vous devez connaître. Afficher <section link> trouver une explication des limitations actuelles plus loin dans cet article. Avec les nouveaux espaces de travail, nous proposons une nouvelle conception de certaines fonctionnalités. Consultez <lien vers la section> plus loin dans cet article pour obtenir une explication des modifications présentes dans la préversion et qui seront rendues permanentes.
 
 ## <a name="roll-out-new-app-workspaces"></a>Déployer les nouveaux espaces de travail d’application
 
@@ -112,8 +112,8 @@ Les nouveaux espaces de travail offrent trois rôles : administrateurs, membres 
 **Les membres peuvent :** 
 
 - Ajouter des membres ou d’autres rôles avec des autorisations inférieures.
-- Publier et mettre à jour des applications.
-- Partager des éléments et des applications.
+- Publier et mettre à jour une application.
+- Partager un élément ou une application.
 - Permettre à d’autres utilisateurs de repartager des éléments.
 - Faire tout ce que les contributeurs peuvent faire.
 
@@ -129,7 +129,7 @@ Nous créons des flux de travail Demander l’accès dans l’ensemble du servic
 
 ## <a name="distribute-an-app"></a>Distribuer une application
 
-Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant *qu’application*. Vos collègues peuvent obtenir vos applications de différentes manières. Vous pouvez les installer automatiquement dans les comptes Power BI de vos collègues si l’administrateur Power BI vous y autorise. Sinon, ils peuvent rechercher et installer vos applications à partir de Microsoft AppSource ou d’un lien direct que vous leur envoyez. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour plus d’informations, consultez [Publier des applications avec des tableaux de bord et des rapports dans Power BI](service-create-distribute-apps.md).
+Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant *qu’application*. Vous pouvez créer une application à partir de chaque espace de travail. Vos collègues peuvent obtenir votre application de différentes manières. Vous pouvez l’installer automatiquement dans les comptes Power BI de vos collègues si l’administrateur Power BI vous y autorise. Sinon, ils peuvent rechercher et installer votre application à partir de Microsoft AppSource ou d’un lien direct que vous leur envoyez. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour plus d’informations, consultez [Publier des applications avec des tableaux de bord et des rapports dans Power BI](service-create-distribute-apps.md).
 
 ## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Convertir les anciens espaces de travail d’application en nouveaux espaces de travail d’application
 
@@ -161,7 +161,7 @@ Certaines autres fonctionnalités des nouveaux espaces de travail d’applicatio
 Certaines fonctionnalités des espaces de travail d’application actuels fonctionnent différemment dans les nouveaux espaces de travail d’application. Ces différences sont intentionnelles et basées sur le feedback que nous avons reçu des clients. Elles permettent une approche plus souple de la collaboration avec des espaces de travail :
 
 - Les membres peuvent ou non repartager : remplacé par le rôle Contributeur
-- Espaces de travail en lecture seule : remplacé par un rôle Lecteur à venir, qui permet l’accès en lecture seule au contenu d’un espace de travail.
+- Espaces de travail en lecture seule : au lieu d’accorder aux utilisateurs un accès en lecture seule à un espace de travail, vous affecterez les utilisateurs à un rôle Visiteur prochainement disponible, qui permet un accès en lecture seule similaire au contenu dans un espace de travail.
 
 ## <a name="known-issues"></a>Problèmes connus
 

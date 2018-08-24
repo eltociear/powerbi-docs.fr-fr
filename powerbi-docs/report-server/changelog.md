@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: e0f90ccade44960cf24fd133b4caf46280b4a511
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ec97676fc043f9d8bd014465cc1fd2c0ffcca423
+ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482127"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257137"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -22,6 +22,18 @@ Ce journal des modifications a trait à Power BI Report Server. Il répertorie l
 
 Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés dans Power BI Report Server](whats-new.md). 
 
+## <a name="august-2018"></a>Août 2018
+- **Power BI Report Server**
+    - *Version 1.3.6801.38816 (Build 15.0.2.540), publiée le 15 août 2018*
+        - Fonctionnalités
+            - La prise en charge de DirectQuery avec authentification unique SAP HANA avec Kerberos est désormais disponible pour les rapports Power BI
+            - API des visuels personnalisés livrée avec la version - version 1.13.0
+            - Les visuels personnalisés utiliseront comme solution de repli une version antérieure compatible avec la version actuelle de l’API du serveur (si elle est disponible)
+
+- **Power BI Desktop optimisé pour Power BI Report Server**
+    - *Version : 2.61.5192.64 (août 2018), publiée le 15 août 2018*
+        - Contient les modifications nécessaires pour la connexion à Power BI Report Server (août 2018)         
+        
 ## <a name="march-2018"></a>Mars 2018
 - **Power BI Report Server**
     - *Version 1.2.6690.34729 (Build 15.0.2.402), publiée le 27 mars 2018*

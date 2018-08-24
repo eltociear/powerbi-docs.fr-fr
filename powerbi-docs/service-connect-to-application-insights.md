@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/10/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6ccf112a78e69e006a4ca3d6e8a7cd372adf5f05
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3c1000eb48cfb53f5838f19f6c0ece4403e9d3ba
+ms.sourcegitcommit: 126e5eca8bfab6273581dabd7603df88be755240
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244246"
+ms.lasthandoff: 08/11/2018
+ms.locfileid: "40256876"
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Se connecter à Application Insights avec Power BI
 Power BI permet de créer de puissants tableaux de bord personnalisés à partir de la télémétrie [Application Insight](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Envisagez la télémétrie de votre application autrement. Combinez des mesures de plusieurs applications ou services de composants sur un tableau de bord unique. La première version du pack de contenu Power BI pour Application Insights inclut des widgets pour des mesures courantes relatives à l’utilisation, telles que les utilisateurs actifs, l’affichage de page, les sessions, la version du navigateur et du système d’exploitation, et la répartition géographique des utilisateurs sur une carte.
@@ -23,7 +23,7 @@ Power BI permet de créer de puissants tableaux de bord personnalisés à parti
 Connectez-vous au [pack de contenu Application Insights pour Power BI](https://app.powerbi.com/getdata/services/application-insights).
 
 >[!NOTE]
->L’accès au panneau Vue d’ensemble d’Application Insights pour votre application dans le portail Azure en version préliminaire est nécessaire pour se connecter. Vous trouverez plus d’informations sur la configuration requise ci-dessous.
+>Cette méthode d’intégration est désormais **dépréciée**. Pour plus d’informations sur la méthode préférée de connexion d’Application Insights à Power BI, utilisez la [fonctionnalité d’exportation des requêtes analytiques](https://docs.microsoft.com/azure/application-insights/app-insights-export-power-bi#export-analytics-queries).
 
 ## <a name="how-to-connect"></a>Comment se connecter
 1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.

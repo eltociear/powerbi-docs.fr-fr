@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
+ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600376"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40256849"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Créer des visuels personnalisés à l’aide des outils de développement
 Les éléments visuels personnalisés vous permettent de répondre aux besoins de vos utilisateurs et de vous mettre en adéquation avec le design de votre application. Découvrez comment créer un élément visuel personnalisé pour Power BI à l’aide des outils de développement.
@@ -178,10 +178,10 @@ Vous pouvez maintenant commencer à développer votre élément visuel.
 Vous pouvez créer un projet d’élément visuel en exécutant la commande suivante.
 
 ```
-pbiviz new My Visual name
+pbiviz new MyVisualName
 ```
 
-Vous pouvez remplacer *Nom de mon élément visuel* par le nom que vous voulez attribuer à cet élément. Vous pouvez le modifier ultérieurement via les champs `name` et `displayName` du fichier `pbiviz.json` généré.
+Vous pouvez remplacer *MyVisualName* par le nom que vous voulez donner à cet élément. Vous pouvez le modifier ultérieurement via les champs `name` et `displayName` du fichier `pbiviz.json` généré.
 
 Cette commande crée un dossier dans le répertoire dans lequel elle a été exécutée. Elle génère un modèle de démarrage pour votre élément visuel. Une fois l’exécution de la commande terminée, vous pouvez ouvrir le répertoire et utiliser votre éditeur favori pour commencer à travailler sur votre nouvel élément visuel.
 

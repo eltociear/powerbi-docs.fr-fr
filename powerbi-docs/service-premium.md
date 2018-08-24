@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 02/05/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 15b64b917fed56e9d9ab6be2023060378324c794
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 81a03c7728d92bcc78dba9a02cbe4c45f582fd3d
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38925433"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257054"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Qu’est-ce que Power BI Premium ?
-Power BI Premium fournit à votre organisation ou à votre équipe des ressources dédiées à l’exécution du service Power BI afin qu’elle bénéficie de performances plus fiables et de plus gros volumes de données. Premium permet également une diffusion étendue du contenu sans que vous soyez contraint d’acquérir une licence par utilisateur.
+Power BI Premium fournit à votre organisation ou à votre équipe des ressources dédiées à l’exécution du service Power BI. Il vous offre des performances plus fiables et permet de traiter de gros volumes de données. Premium permet également une diffusion étendue du contenu sans que vous soyez contraint d’acquérir une licence par utilisateur.
 
 Pour tirer parti de Power BI Premium, vous pouvez attribuer des espaces de travail à une capacité Premium. Une *capacité Premium* est une ressource dédiée à votre organisation. Les espaces de travail non affectés à une capacité Premium sont attribués à une capacité partagée.
 
-Le mode *Capacité partagée* est celui auquel vous êtes habitué avec Power BI. Vos charges de travail s’y exécutent sur des ressources de calcul partagées par d’autres clients. Une capacité partagée impose des limites aux utilisateurs individuels afin de garantir une expérience de qualité à tous les utilisateurs.
+Avec une *capacité partagée*, vos charges de travail s’exécutent sur des ressources de calcul partagées par d’autres clients. Une capacité partagée impose des limites aux utilisateurs individuels afin de garantir une expérience de qualité à tous les utilisateurs.
 
 [!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
 
@@ -33,7 +33,7 @@ Il existe deux types de capacité dans Power BI : la capacité partagée et la
 
 |  | Capacité partagée | Capacité Power BI Premium |
 | --- | --- | --- |
-| **Fréquence d’actualisation** |8/jour |Non restreinte |
+| **Fréquence d’actualisation** |8/jour |48/jour |
 | **Isolement avec matériel dédié** |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible") |
 | **Distribution d’entreprise à** ***tous les utilisateurs*** | | |
 | Applications et partage |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible")<sup>1</sup> |
@@ -48,10 +48,10 @@ Pour commencer à utiliser une capacité Power BI Premium, vous devez lui attrib
 
 Lorsqu’un espace de travail est soutenu par une capacité Premium, vous bénéficiez des avantages de Power BI Premium.
 
-* Actualisations planifiées : auparavant, avec les modèles importés, les utilisateurs ne pouvaient pas planifier plus de 8 actualisations par jour. Cette limitation a été supprimée pour les jeux de données des espaces de travail Premium. Cela ne s’applique pas aux paramètres d’actualisation planifiée du cache pour DirectQuery. Ces paramètres restent identiques pour la capacité Premium et la capacité partagée.
-* Isolement avec matériel dédié : dans une capacité partagée, les performances de vos rapports et tableaux de bord peuvent être affectées par les demandes de ressources des autres charges de travail de la capacité, en dépit des garde-fous que nous avons mis en place. À l’inverse, Premium offre des performances plus cohérentes et plus fiables en isolant les charges de travail non liées.
+* **Actualisations planifiées** : avec une capacité partagée, les actualisations planifiées des modèles importés sont limitées à 8 fois par jour. Le nombre d’actualisations est augmenté à 48 fois par jour pour les jeux de données dans les espaces de travail Premium. Cela ne s’applique pas aux paramètres d’actualisation planifiée du cache pour DirectQuery. Ces paramètres restent identiques pour la capacité Premium et la capacité partagée.
+* **Isolement avec matériel dédié** : étant donnée la nature d’une capacité partagée, les performances de vos rapports et tableaux de bord peuvent être affectées par les demandes de ressources des autres charges de travail de la capacité, en dépit des protections que nous avons mises en place. À l’inverse, Premium offre des performances plus cohérentes et plus fiables en isolant les charges de travail non liées.
 
-Si une application est soutenue par une capacité Premium (autrement dit, si elle a été publiée à partir d’un espace de travail d’applications actuellement attribué à Premium), elle peut être utilisée par n’importe quel utilisateur de votre organisation, quelle que soit sa licence.
+Si une application est adossée à une capacité Premium (autrement dit, si elle a été publiée à partir d’un espace de travail d’application actuellement affecté à Premium), elle peut être utilisée par n’importe quel utilisateur de votre organisation, quelle que soit sa licence.
 
 ### <a name="shared-capacity"></a>Capacité partagée
 Par défaut, votre espace de travail est en mode Capacité partagée. Cela inclut votre espace de travail personnel (*Mon espace de travail*) ainsi que les espaces de travail d’applications. Le mode Capacité partagée est celui auquel vous êtes habitué avec Power BI. Vos charges de travail s’y exécutent sur des ressources de calcul partagées par d’autres clients.
@@ -69,18 +69,18 @@ Power BI Premium est disponible dans des configurations de nœuds aux capacités
 
 | Nœud de capacité | Total des v-cores<br/>*(Serveur principal + serveur frontal)* | V-cores du principal | V-cores du serveur frontal | Limites de connexions actives/DirectQuery | Rendus de pages au maximum aux heures de pointe | Disponibilité |
 | --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-core |0,5 v-cores, 2,5 Go de RAM |0,5 v-cores |3,75 par seconde |150-300 |Disponible |
-| [EM2 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 cœurs virtuels |1 v-core, 5 Go de RAM |1 v-core |7,5 par seconde |301-600 |Disponible |
-| [EM3 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 cœurs virtuels |2 v-cores, 10 Go de RAM |2 cœurs virtuels | |601-1 200 |Disponibilité |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 cœurs virtuels |4 v-cores, 25 Go de RAM |4 cœurs virtuels |30 par seconde |1 201-2 400 |Disponible ([de mois en mois](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) est également disponible) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 cœurs virtuels |8 v-cores, 50 Go de RAM |8 cœurs virtuels |60 par seconde |2 401-4 800 |Disponibilité |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 cœurs virtuels |16 v-cores, 100 Go de RAM |16 cœurs virtuels |120 par seconde |4 801-9 600 |Disponible |
+| [EM1 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-core |0,5 cœur virtuel, 2,5 Go de RAM |0,5 cœur virtuel |3,75 par seconde |150-300 |Disponible |
+| [EM2 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 cœurs virtuels |1 cœur virtuel, 5 Go de RAM |1 v-core |7,5 par seconde |301-600 |Disponible |
+| [EM3 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 cœurs virtuels |2 cœurs virtuels, 10 Go de RAM |2 cœurs virtuels | |601-1 200 |Disponibilité |
+| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 cœurs virtuels |4 cœurs virtuels, 25 Go de RAM |4 cœurs virtuels |30 par seconde |1 201-2 400 |Disponible ([de mois en mois](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) est également disponible) |
+| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 cœurs virtuels |8 cœurs virtuels, 50 Go de RAM |8 cœurs virtuels |60 par seconde |2 401-4 800 |Disponibilité |
+| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 cœurs virtuels |16 cœurs virtuels, 100 Go de RAM |16 cœurs virtuels |120 par seconde |4 801-9 600 |Disponible |
 
 * Les v-cores du serveur frontal assurent la gestion des documents du service Web, des tableaux de bord et des rapports, la gestion des droits d’accès, la planification, les API, les chargements et téléchargements et, plus généralement, tout ce qui concerne l’expérience utilisateur.
 * Les v-cores principaux gèrent l’essentiel : traitement des requêtes, gestion du cache, exécution des serveurs R, actualisation des données, traitement du langage naturel, flux en temps réel et rendu côté serveur des rapports et images. Avec les v-cores principaux, une partie de la mémoire est également réservée. Car il est impératif de disposer d’une mémoire suffisante pour traiter les modèles de données volumineux ou les grands nombres de jeux de données actifs.
 
 ## <a name="power-bi-report-server"></a>Power BI Report Server
-Power BI Premium inclut le droit d’exécuter Power BI Report Server localement. Pour plus d’informations, consultez [Prise en main de Power BI Report Server](report-server/get-started.md).
+Power BI Premium inclut le droit d’exécuter Power BI Report Server localement. Pour plus d’informations, voir [Prise en main de Power BI Report Server](report-server/get-started.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Questions fréquentes Power BI Premium](service-premium-faq.md)  

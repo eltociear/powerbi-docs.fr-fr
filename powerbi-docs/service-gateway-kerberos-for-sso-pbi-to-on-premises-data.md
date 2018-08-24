@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/09/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 402a39ef9e52fe61d80940a5050997ba19930209
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: bf5120b1c4d787dd13e21245b234207123221fc4
+ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964834"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40257082"
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 Vous pouvez obtenir une connectivité avec authentification unique transparente, permettant la mise à jour de rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec Kerberos. La passerelle de données locale facilite l’authentification unique (SSO) à l’aide de la requête DirectQuery utilisée pour se connecter à des sources de données locales.
@@ -48,12 +48,10 @@ Des détails supplémentaires concernant ces étapes figurent ci-dessous :
    b.  Autrement, la passerelle peut rechercher et mapper l’UPN AD Azure à un utilisateur local en effectuant une recherche dans le domaine Active Directory local.
 3. Le processus du service de passerelle emprunte l’identité de l’utilisateur local mappé, ouvre la connexion à la base de données sous-jacente, et envoie la requête. Il n’est pas nécessaire d’installer la passerelle sur la même machine que la base de données.
    
-   - L’emprunt d’identité de l’utilisateur et la connexion à la base de données ne réussissent que si le compte de service de passerelle est un compte de domaine (ou SID ddu service), et si une délégation Kerberos contrainte a été configurée pour la base de données afin d’accepter des tickets Kerberos en provenance du compte de service de passerelle.  
+   - L’emprunt d’identité de l’utilisateur et la connexion à la base de données ne réussissent que si le compte de service de passerelle est un compte de domaine (ou SID du service), et si une délégation Kerberos contrainte a été configurée pour la base de données afin d’accepter des tickets Kerberos en provenance du compte de service de passerelle.  
    
    > [!NOTE]
-   > En ce qui concerne le SID du service, si AAD DirSync/Connect est configuré et que des comptes d’utilisateurs sont synchronisés, le service de passerelle n’a pas besoin d’effectuer de recherches Active Directory locales lors de l’exécution, et vous pouvez utiliser le SID du service local (au lieu d’exiger un compte de domaine) pour le service de passerelle.  Les étapes de configuration de délégation Kerberos contrainte décrites dans ce documents sont les mêmes (simplement appliquées sur la base du SID du service, au lieu du compte de domaine).
-   > 
-   > 
+   > En ce qui concerne le SID du service, si AAD DirSync/Connect est configuré et que des comptes d’utilisateurs sont synchronisés, le service de passerelle n’a pas besoin d’effectuer de recherches Active Directory locales lors de l’exécution, et vous pouvez utiliser le SID du service local (au lieu d’exiger un compte de domaine) pour le service de passerelle. Les étapes de configuration de la délégation Kerberos contrainte décrites dans cet article sont les mêmes que celles de cette configuration (elles sont simplement appliquées à l’objet ordinateur de la passerelle dans Active Directory, au lieu du compte de domaine).
 
 
 > [!NOTE]
