@@ -1,17 +1,24 @@
+items:
 - name: Docs
   href: /
   topicHref: /
   items:
-    - name: "Power\_BI"
-      tocHref: /power-bi/
-      topicHref: /power-bi/
-      items:
-        - name: Développeurs
-          tocHref: /power-bi/developer/
-          topicHref: /power-bi/developer/
-        - name: Formation guidée
-          tocHref: /power-bi/guided-learning/
-          topicHref: /power-bi/guided-learning/
-        - name: Report Server
-          tocHref: /power-bi/report-server/
-          topicHref: /power-bi/report-server/
+  - name: Power BI
+    tocHref: /power-bi/
+    topicHref: /power-bi/
+    items:
+    - name: Développeur
+      tocHref: /power-bi/developer/
+      topicHref: /power-bi/developer/embedding
+    - name: Formation guidée
+      tocHref: /power-bi/guided-learning/
+      topicHref: /power-bi/guided-learning/
+    - name: Report Server
+      tocHref: /power-bi/report-server/
+      topicHref: /power-bi/report-server/get-started
+ms.openlocfilehash: 2f2c65a67a87a47a383a094b9df90d5d24f98a2c
+ms.sourcegitcommit: 15b877343540bb7e21f1d5bbd3d6f64e66fa138c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42914493"
