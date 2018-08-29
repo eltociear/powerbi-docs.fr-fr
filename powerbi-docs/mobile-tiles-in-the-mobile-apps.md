@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: eda7f44c869829564703bda6112177234d3f2d44
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 20bdd4731cd4aad3c6412d1959de3be088a3457a
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280130"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151949"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -28,10 +28,6 @@ Les vignettes sont des captures instantanées dynamiques de vos données qui son
 Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mode focus et interagissez avec elles. Vous pouvez ouvrir les vignettes avec tous les types d’éléments visuels, y compris des vignettes basées sur Bing et R.
 
 ## <a name="tiles-in-the-ios-apps"></a>Vignettes dans les applications iOS
-> [!NOTE]
-> Vous pouvez [créer des vignettes d’image avec votre application iPhone](mobile-iphone-app-get-started.md) et les enregistrer dans vos tableaux de bord.
-> 
-> 
 
 1. Ouvrez un [tableau de bord dans l’application mobile pour iOS](mobile-apps-view-dashboard.md).
 2. Appuyez sur une vignette. Elle s’ouvre en mode focus, où il est plus facile de consulter et d’explorer ses données. En mode focus, vous pouvez :
@@ -40,7 +36,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   <em>Par exemple, dans ce graphique en courbes, les valeurs sélectionnées se rapportent à **This Year Sales (Ventes de cette année)</em>* et à **Last Year Sales (Ventes de l’année dernière)** pour le mois d’**août**.*  
+   *Par exemple, dans ce graphique en courbes, les valeurs sélectionnées sont **This Year Sales (Ventes de cette année)** et **Last Year Sales (Ventes de l’année dernière)** pour le mois d’**août**.*  
    
    Dans un graphique en secteurs, appuyez sur un secteur du graphique pour afficher la valeur du segment en haut du graphique.  
    
@@ -107,7 +103,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   <em>Dans ce graphique à barres, les valeurs pour la barre **Decor (Décoration)</em>* sont indiquées en haut du graphique.*
+   *Dans ce graphique à barres, les valeurs pour la barre **Décoration** sont indiquées en haut du graphique.*
    
    Cliquez sur l’icône **Plein écran** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) pour ouvrir la vignette en mode Plein écran, sans les barres de navigation et de menus.
    

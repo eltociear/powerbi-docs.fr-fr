@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: f0f29cb88c77f3d7775670c0869ee55938327763
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: cbc1d6304a7ee34b489d93488115ceb80864a42d
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39658009"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151903"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
 
@@ -279,7 +279,7 @@ Voici la liste des compteurs de performance disponibles.
 | Nombre d’ouvertures de connexion Mashup ayant échoué par seconde |Nombre d’actions d’ouverture de connexion Mashup ayant échoué par seconde. |
 | Nombre de requêtes Mashup exécutées par seconde |Nombre de requêtes Mashup exécutées par seconde (ayant réussi ou échoué). |
 | Nombre de requêtes Mashup ayant échoué par seconde |Nombre de requêtes Mashup ayant échoué exécutées par seconde. |
-| Nombre de jeux de résultats multiples de requêtes OLEDB ayant échoué par seconde |Nombre de jeux de résultats multiples de requêtes OLEDB ayant échoué exécutées par seconde. |
+| Nombre de requêtes de jeux de résultats multiples OLEDB ayant échoué par seconde |Nombre de jeux de résultats multiples de requêtes OLEDB ayant échoué exécutées par seconde. |
 | Nombre de jeux de résultats multiples OLEDB de requêtes exécutées par seconde |Nombre de jeux de résultats multiples OLEDB de requêtes exécutées par seconde (ayant réussi ou échoué). |
 | Nombre d’ouvertures de connexion OLEDB exécutées par seconde |Nombre d’actions d’ouverture de connexion OLEDB exécutées par seconde (ayant réussi ou échoué). |
 | Nombre d’ouvertures de connexion OLEDB ayant échoué par seconde |Nombre d’actions d’ouverture de connexion OLEDB ayant échoué par seconde. |
