@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d696a7492f1295f2e2c9b39088b0eacdb66b15ca
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: be532e428680d9286247f57d81cab2802aea1fe3
+ms.sourcegitcommit: 9a666382484882162690efaed106b82a4bcbf883
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310173"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42799042"
 ---
 # <a name="hyperlinks-in-tables"></a>Liens hypertexte dans les tables
 Cette rubrique explique comment utiliser Power BI Desktop pour créer des liens hypertexte. Une fois que vous avez créé des liens hypertexte, utilisez Power BI Desktop ou le service Power BI pour les ajouter à vos tableaux et matrices de rapport. 
@@ -39,8 +39,10 @@ La procédure d’ajout d’un lien hypertexte varie selon que vous avez import�
     ![](media/power-bi-hyperlinks-in-tables/pbi_data_category.png)
 3. Sélectionnez **URL web**.
 4. Passez au mode Rapport et créez un tableau ou une matrice à l’aide du champ classé comme URL web. Les liens hypertexte sont en bleu et soulignés.
-   
     ![](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
+> **REMARQUE** : l’URL doit commencer par **http://, https://** ou **www**.
+> 
+>   
 5. Si vous ne souhaitez pas afficher une URL longue dans une table, vous pouvez afficher une icône de lien hypertexte ![](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) à la place. Notez que vous ne pouvez pas afficher d’icônes dans une matrice.
    
    * Sélectionnez le graphique pour l’activer.
