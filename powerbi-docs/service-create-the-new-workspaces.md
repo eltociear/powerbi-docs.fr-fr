@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/17/2018
+ms.date: 08/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 271859dbc13e909d255e4287ae14e66b2d85724f
-ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
+ms.openlocfilehash: cde28e7c41a35c3bbc37d0da56313ad7f8698110
+ms.sourcegitcommit: 15b877343540bb7e21f1d5bbd3d6f64e66fa138c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "40256977"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42914516"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Créer les nouveaux espaces de travail (préversion) dans Power BI
 
@@ -29,12 +29,13 @@ Avec la préversion des nouveaux espaces de travail, vous pouvez désormais :
 - Créer un espace de travail dans Power BI sans créer un groupe Office 365.
 - Utiliser des rôles d’espace de travail plus granulaires, pour une gestion plus flexible des autorisations dans un espace de travail.
  
-Quand vous créez un des nouveaux espaces de travail, vous ne créez pas de groupe Office 365 associé sous-jacent. Toute l’administration des espaces de travail se fait dans Power BI et non pas dans Office 365. Vous pouvez toujours ajouter un groupe Office 365 à l’espace de travail pour continuer à gérer l’accès des utilisateurs au contenu via des groupes Office 365. Cependant, vous pouvez en plus utiliser des groupes de sécurité et des listes de distribution, et ajouter des personnes individuelles directement dans Power BI, ce qui vous donne un moyen souple de gérer l’accès à l’espace de travail
+Quand vous créez un des nouveaux espaces de travail, vous ne créez pas de groupe Office 365 associé sous-jacent. Toute l’administration des espaces de travail se fait dans Power BI et non pas dans Office 365. Vous pouvez toujours ajouter un groupe Office 365 à l’espace de travail pour continuer à gérer l’accès des utilisateurs au contenu via des groupes Office 365. Cependant, vous pouvez en plus utiliser des groupes de sécurité et des listes de distribution, et ajouter des personnes une par une directement dans Power BI, ce qui représente un moyen souple de gérer l’accès à l’espace de travail. L’administration de l’espace de travail se trouvant à présent dans Power BI, ce sont les administrateurs Power BI qui choisissent quels membres de l’organisation peuvent créer des espaces de travail. Pour plus d’informations, consultez [l’article sur le portail d’administration de Power BI, section Espaces de travail](service-admin-portal.md#workspace-settings). 
 
 Vous ajoutez des groupes d’utilisateurs ou des personnes individuelles aux nouveaux espaces de travail en tant que membres, contributeurs ou administrateurs. Tous les utilisateurs d’un groupe d’utilisateurs reçoivent le rôle que vous avez défini. Si une personne est dans plusieurs groupes d’utilisateurs, elle reçoit le niveau d’autorisation le plus élevé fourni par le rôle.  Consultez [Rôles dans les nouveaux espaces de travail](#roles-in-the-new-workspaces) plus loin dans cet article pour une explication des différents rôles.
 
-Toutes les personnes que vous ajoutez à un espace de travail d’application doivent avoir une licence Power BI Pro. Dans l’espace de travail, ces utilisateurs peuvent collaborer sur des tableaux de bord et des rapports que vous prévoyez de publier pour un public plus large, ou même pour votre organisation toute entière. Si vous voulez distribuer du contenu à d’autres personnes au sein de votre organisation, vous pouvez attribuer des licences Power BI Pro à ces utilisateurs ou placer l’espace de travail dans une capacité Power BI Premium.
-Comme il s’agit d’une fonctionnalité en préversion, elle est soumise à certaines limitations que vous devez connaître. Afficher <section link> trouver une explication des limitations actuelles plus loin dans cet article. Avec les nouveaux espaces de travail, nous proposons une nouvelle conception de certaines fonctionnalités. Consultez <lien vers la section> plus loin dans cet article pour obtenir une explication des modifications présentes dans la préversion et qui seront rendues permanentes.
+Toutes les personnes que vous ajoutez à un espace de travail d’application doivent avoir une licence Power BI Pro. Dans l’espace de travail, ces utilisateurs peuvent collaborer sur des tableaux de bord et des rapports que vous prévoyez de publier pour un public plus large, ou même pour votre organisation toute entière. Si vous voulez distribuer du contenu à d’autres utilisateurs au sein de votre organisation, vous pouvez leur attribuer des licences Power BI Pro ou placer l’espace de travail dans une capacité Power BI Premium.
+
+Avec les nouveaux espaces de travail, nous proposons une nouvelle conception de certaines fonctionnalités. Voir [Fonctionnalités de l’espace de travail d’applications fonctionnant différemment](#app-workspace-features-that-work-differently) plus loin dans cet article pour connaître les modifications de la préversion qui seront vraisemblablement rendues permanentes. Comme il s’agit d’une fonctionnalité en préversion, elle est soumise à certaines limitations que vous devez connaître. Voir [Problèmes connus](#known-issues) plus loin dans cet article pour trouver une explication des limitations actuelles. 
 
 ## <a name="roll-out-new-app-workspaces"></a>Déployer les nouveaux espaces de travail d’application
 
