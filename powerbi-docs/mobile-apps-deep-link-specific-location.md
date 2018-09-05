@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 3ea99d26418a583a6ca588879aeafcd114aeaa6e
-ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
+ms.openlocfilehash: e1df06c07f767936d861788c89205bce20cd5582
+ms.sourcegitcommit: 60f637d8555fd59fd9a86de720b89b388fb85ac0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616002"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43695130"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Créer un lien vers un emplacement spécifique dans les applications mobiles Power BI
 Vous pouvez créer et utiliser un URI pour créer un lien vers un emplacement spécifique (*lien ciblé*) dans les applications mobiles Power BI sur toutes les plateformes mobiles : iOS, Android et Windows 10.
@@ -68,7 +68,7 @@ Cet URI ouvre un rapport spécifique dans l’application mobile Power BI :
 
 Pour rechercher l’ID d’objet de rapport contenant 36 caractères, accédez au rapport spécifique dans le service Power BI (https://powerbi.com)). Par exemple, consultez la section en surbrillance de cette URL :
 
-https://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300`
 
 ## <a name="open-to-a-specific-report-page"></a>Ouvrir une page de rapport spécifique
 Cet URI ouvre une page de rapport spécifique dans l’application mobile Power BI :
@@ -79,7 +79,7 @@ La page de rapport porte le nom « ReportSection » suivi d’un nombre. Là e
 
 Par exemple, consultez la section en surbrillance de cette URL :
 
-https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**ReportSection11**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/ReportSection11`
 
 ## <a name="open-in-full-screen-mode"></a>Ouvrir en mode plein écran
 Ajoutez le paramètre en gras pour ouvrir un rapport spécifique en mode plein écran :
@@ -95,7 +95,7 @@ Vous pouvez également ajouter le contexte dans la chaîne. Par la suite, si vou
 
 Par exemple, consultez la section en surbrillance de cette URL : 
 
-https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**&context=SlackDeepLink**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/&context=SlackDeepLink`
 
 ## <a name="next-steps"></a>Étapes suivantes
 Vos commentaires nous aident à développer les futurs processus d’implémentation. N’oubliez pas de voter pour les fonctionnalités que vous aimeriez voir dans les applications mobiles Power BI. 
