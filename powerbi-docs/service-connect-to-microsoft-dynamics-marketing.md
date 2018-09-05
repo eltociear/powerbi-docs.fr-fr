@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7cc2519353be7f83f69cdc6dda9d5f1a8ccc33a3
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: c69b73be481408884cc4fbfc5ae4987714b10d9d
+ms.sourcegitcommit: 60f637d8555fd59fd9a86de720b89b388fb85ac0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137019"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43695107"
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Se connecter à Microsoft Dynamics Marketing avec Power BI
 Le pack de contenu Microsoft Dynamics Marketing pour Power BI vous permet d’accéder à vos données et de les analyser facilement depuis Dynamics Marketing. Le pack de contenu utilise un modèle descriptif s’appuyant sur le flux OData, avec toutes les entités et les mesures nécessaires, telles que les programmes, les campagnes, les contacts et entreprises de marketing, les prospects, les interactions avec les prospects, la notation des prospects, les e-mails marketing, les sites web, les observations des comportements, les budgets, les transactions financières, les indicateurs de performance clés, et bien plus encore. 
@@ -35,7 +35,7 @@ Connectez-vous au [pack de contenu Dynamics Marketing](https://app.powerbi.com/g
 3. Sélectionnez **Microsoft Dynamics Marketing** \> **Obtenir**.
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/mdmarketing.png)
-4. Indiquez l’URL OData associée à votre compte.  Le format de cette URL est le suivant : « https://[nom\_instance].marketing.dynamics.com/analytics ».
+4. Indiquez l’URL OData associée à votre compte.  Cela se présentera sous la forme  "`https://[instance\_name].marketing.dynamics.com/analytics.`"
    
    ![](media/service-connect-to-microsoft-dynamics-marketing/pbi_dynmktgserviceurl.png)
 5. Quand vous y êtes invité, indiquez vos informations d’identification (cette étape peut être ignorée si vous êtes déjà connecté avec votre navigateur). Pour la méthode d’authentification, entrez **oAuth2** et cliquez sur **Se connecter**:
