@@ -2,19 +2,19 @@
 title: Questions fréquentes sur Power BI Embedded
 description: Parcourir une liste de questions fréquentes et de réponses sur Power BI Embedded.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/22/2018
-ms.openlocfilehash: ab637be12487029d17d7b1bfa89022dbae9aaa49
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.date: 08/21/2018
+ms.openlocfilehash: c1f9da598abee29a1d8eef0419fcb472f0a1467e
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39415389"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241519"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -25,7 +25,7 @@ ms.locfileid: "39415389"
 
 ### <a name="what-is-power-bi-embedded"></a>Qu'est-ce que Power BI Embedded ?
 
-Microsoft Power BI Embedded permet aux développeurs d’incorporer des applications, rapports, tableaux de bord et vignettes totalement interactifs dans les applications sans que ceux-ci doivent passer du temps à créer entièrement leurs propres visualisations de données et contrôles.
+Microsoft Power BI Embedded (PBIE) permet aux développeurs d’applications d’incorporer des rapports stupéfiants entièrement interactifs dans des applications sans consacrer ni temps ni argent à créer entièrement leurs propres visualisations et contrôles de données.
 
 ### <a name="who-is-the-target-audience-for-power-bi-embedded"></a>Qui est le public cible de Power BI Embedded ?
 
@@ -47,7 +47,7 @@ Power BI Embedded est conçu pour les éditeurs de logiciels indépendants ou le
 
 Microsoft recommande aux entreprises d’acheter Power BI Premium (solution d’informatique décisionnelle cloud libre-service de classe Entreprise), et aux éditeurs de logiciels indépendants d’acheter Power BI Embedded, qui regroupe des composants d’analytique incorporée fonctionnant dans le cloud. Toutefois, il n’existe aucune restriction sur le produit qu’un client peut acheter.
 
-Dans certains cas, un éditeur de logiciels indépendant (généralement de grande taille) peut vouloir utiliser une référence SKU P pour obtenir les avantages supplémentaires du service Power BI complet au sein de leur organisation, ainsi que les incorporer dans leurs applications. Bien sûr, certaines entreprises peuvent décider d’utiliser des références SKU A dans Azure si elles ne sont intéressées que par la création d’applications métiers et l’incorporation d’analytiques dans celles-ci et si elles ne sont pas intéressées par l’utilisation du service Power BI complet.
+Dans certains cas, un éditeur de logiciels indépendant (généralement de grande taille) peut vouloir utiliser une référence SKU P pour obtenir les avantages supplémentaires du service Power BI complet au sein de leur organisation, ainsi que les incorporer dans leurs applications. Bien sûr, certaines entreprises peuvent décider d’utiliser des références SKU A dans Azure si elles ne sont intéressées que par la création d’applications métier et par l’incorporation d’analyses dans ces dernière, mais pas par l’utilisation du service Power BI complet.
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Combien de jetons incorporés puis-je créer ?
 
@@ -70,7 +70,7 @@ Voici un tableau des différences de fonctionnalités.
 | Utiliser des rapports Power BI dans une application incorporée | Oui | Oui | Oui |
 | Utiliser des rapports Power BI dans SharePoint | Non | Oui | Oui |
 | Utiliser des rapports Power BI dans Dynamics | Non | Oui | Oui |
-| Utiliser des rapports Power BI dans Teams | Non | Oui | Oui |
+| Utiliser des rapports Power BI dans Teams (à l’exception de l’application mobile) | Non | Oui | Oui |
 | Accéder à du contenu avec une licence Power BI gratuite dans Powerbi.com et Power BI Mobile | Non | Non | Oui |
 | Accéder à du contenu incorporé dans des applications MS Office avec une licence Power BI GRATUITE | Non | Oui | Oui |
 
@@ -78,13 +78,13 @@ Voici un tableau des différences de fonctionnalités.
 
 |  |Référence SKU A (Power BI Embedded)  |Référence SKU EM (Power BI Premium)  |Référence SKU P (Power BI Premium)  |
 |---------|---------|---------|---------|
-|Purchase     |Portail Azure |Office |Office |
-|Cas d’usage |* Incorporer du contenu dans votre application |* Incorporer du contenu dans votre application<br>* Incorporer du contenu dans d’autres applications MS Office ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Incorporer du contenu dans votre application<br>* Incorporer du contenu dans d’autres applications MS Office ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Partager du contenu avec des utilisateurs Power BI par le biais du [service Power BI](https://powerbi.microsoft.com/en-us/)  |
+|Purchase  |Portail Azure |Office |Office |
+|Cas d’usage | Incorporer du contenu dans votre application | <li> Incorporer du contenu dans votre application <br><br></br> <li> Incorporer du contenu dans les applications MS Office : <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (à l’exception de l’application mobile)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Incorporer du contenu dans votre application <br><br></br> <li> Incorporer du contenu dans les applications MS Office : <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (à l’exception de l’application mobile)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Partager du contenu avec des utilisateurs de Power BI par le biais du [service Power BI](https://powerbi.microsoft.com/en-us/)  |
 |Facturation |Toutes les heures |Mensuelle |Mensuelle |
 |Avec engagement  |Sans engagement |Annuel  |Mensuelle/Annuelle |
-|Différenciation |Élasticité complète : augmenter/réduire la taille, interrompre/reprendre des ressources dans le portail Azure ou via l’API  |Peut être utilisée pour incorporer du contenu dans SharePoint Online et Microsoft Teams |Combiner l’incorporation dans les applications et utiliser le service Power BI dans la même capacité |
+|Différenciation |Élasticité complète : augmenter/réduire la taille, interrompre/reprendre des ressources dans le portail Azure ou via l’API  |Peut être utilisée pour incorporer du contenu dans SharePoint Online et Microsoft Teams (à l’exception de l’application mobile) |Combiner l’incorporation dans les applications et utiliser le service Power BI dans la même capacité |
 
-### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Quelles sont les prérequis à la création d’une capacité PBIE dans Azure ?
+### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Quelles sont les prérequis à la création d’une capacité PBIE dans Azure ? 
 
 * Vous devez vous connecter à votre annuaire d’organisation (les comptes MSA ne sont pas pris en charge).
 * Vous devez avoir un locataire Power BI (c’est-à-dire qu’au moins un utilisateur dans votre annuaire doit être inscrit à Power BI). 
@@ -126,14 +126,14 @@ Power BI vous impose de vous inscrire avec un compte professionnel. Vous ne pouv
 
 ### <a name="can-i-use-apis-to-create--manage-azure-capacities"></a>Puis-je utiliser des API pour créer et gérer des capacités Azure ?
 
-Oui, les applets de commande Powershell et les API ARM vous permettent de créer et de gérer des ressources PBIE.
+Oui, les applets de commande Powershell et les API Azure Resource Manager (ARM) vous permettent de créer et de gérer des ressources PBIE.
 
 * API REST : https://docs.microsoft.com/rest/api/power-bi-embedded/
 * Applets de commande PowerShell : https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Quel est le rôle d’une capacité dédiée PBI Embedded dans une solution PBI Embedded ?
 
-Pour [mettre votre solution en production](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), vous devez affecter le contenu Power BI (espace de travail d’application que vous utilisez dans votre application) à une capacité dédiée.
+Pour [mettre votre solution en production](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production), vous devez affecter le contenu Power BI (espace de travail d’application que vous utilisez dans votre application) à une capacité Power BI Embedded (référence SKU A).
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Dans quelles régions Azure PBI Embedded est-il disponible ?
 
@@ -273,7 +273,7 @@ De nouvelles fonctionnalités et fonctions ont été introduites dans la solutio
 
 En voici quelques exemples :
 * Toutes les sources de données PBI sont prises en charge (contre deux sources de données avec la **collection d’espaces de travail Power BI**). 
-* De nouvelles fonctionnalités, comme les Questions et réponses, l’actualisation, les favoris, l’incorporation de tableaux de bord et de vignettes, le menu personnalisé, etc. ne sont prises en charge que dans la solution **Power BI Embedded**.
+* De nouvelles fonctionnalités, comme les Questions et réponses, l’actualisation, les favoris, l’incorporation de tableaux de bord et de vignettes et les menus personnalisés, ne sont prises en charge que dans la solution **Power BI Embedded**.
 * Modèle de facturation de la capacité.
 
 ## <a name="onboarding-experience-tool-for-embedding"></a>Outil d’expérience d’intégration pour l’incorporation

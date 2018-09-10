@@ -2,20 +2,20 @@
 title: Utiliser des thèmes de tableau de bord dans le service Power BI
 description: Découvrez comment utiliser une palette de couleurs personnalisée et comment l’appliquer à tout un tableau de bord dans le service Power BI
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 08/22/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d17694d6dd2e2133b80d326a8aa86194d5710946
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 25bd28db7b31921d5f1a02ae72cee47207134f2a
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944649"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241473"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Utiliser des thèmes de tableau de bord dans le service Power BI
 Les **thèmes de tableau de bord** vous permettent d’appliquer un thème de couleur à l’intégralité d’un tableau de bord. Il peut s’agir des couleurs de votre organisation, de teintes liées à la saison ou de tout autre thème de votre choix. Quand vous appliquez un **thème de tableau de bord**, tous les visuels du tableau de bord utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
@@ -46,7 +46,7 @@ Le thème par défaut pour les tableaux de bord Power BI est **Clair**. Si vous 
 
 ![Sélectionner Personnalisé dans la liste déroulante](media/service-dashboard-themes/power-bi-theme-custom.png)
 
-Utilisez les options de personnalisation pour créer votre propre thème de tableau de bord. Si vous ajoutez une image d’arrière-plan, nous vous recommandons d’utiliser une image avec une résolution d’au moins 1 920 x 1 080.  
+Utilisez les options de personnalisation pour créer votre propre thème de tableau de bord. Si vous ajoutez une image d’arrière-plan, nous vous recommandons d’utiliser une image avec une résolution d’au moins 1 920 x 1 080. Pour utiliser une image comme arrière-plan, chargez-la sur un site web public, copiez l’URL et collez-la dans le champ **URL de l’image**. 
 
 ### <a name="using-json-themes"></a>Utilisation de thèmes JSON
 Une autre façon de créer un thème personnalisé consiste à télécharger un fichier JSON qui contient des paramètres pour toutes les couleurs que vous voulez utiliser pour votre tableau de bord. Dans Power BI Desktop, les créateurs de rapports utilisent des fichiers JSON pour [créer des thèmes pour les rapports](desktop-report-themes.md). Ces mêmes fichiers JSON peuvent être chargés pour les tableaux de bord ; vous pouvez aussi rechercher et charger des fichiers JSON à partir de la [page Galerie Thèmes](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery) dans la Communauté Power BI. 

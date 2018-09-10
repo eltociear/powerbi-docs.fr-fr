@@ -2,19 +2,19 @@
 title: Résolution des problèmes de votre application incorporée
 description: Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’incorporation de contenu à partir de Power BI.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/09/2018
-ms.author: maghan
-ms.openlocfilehash: d6b30d97b1982ceca34579751e412a279b0d8881
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.date: 08/31/2018
+ms.openlocfilehash: 48faf9ebde5860b59569a7e0a3a96664d06a1b0d
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877021"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241565"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Résolution des problèmes de votre application incorporée
 
@@ -24,13 +24,13 @@ Cet article décrit certains problèmes courants que vous pouvez rencontrer lors
 
 ### <a name="fiddler-trace"></a>Trace Fiddler
 
-[Fiddler](http://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP.  Vous pouvez voir les allers et retours au niveau des API Power BI à partir de l’ordinateur client. Vous pouvez ainsi repérer les erreurs et d’autres informations connexes.
+[Fiddler](http://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP.  Vous pouvez voir le trafic au niveau des API Power BI depuis l’ordinateur client. Cet outil peut indiquer des erreurs et d’autres informations connexes.
 
 ![Trace Fiddler](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
 
 ### <a name="f12-in-browser-for-front-end-debugging"></a>F12 dans le navigateur pour le débogage frontal
 
-F12 lance la fenêtre de développeur dans votre navigateur. Cela vous permet d’examiner le trafic réseau et d’autres informations.
+F12 lance la fenêtre de développeur dans votre navigateur. Cet outil vous permet de consulter le trafic réseau et d’autres informations.
 
 ![Débogage de navigateur F12](media/embedded-troubleshoot/browser-f12.png)
 
@@ -38,7 +38,7 @@ F12 lance la fenêtre de développeur dans votre navigateur. Cela vous permet d�
 
 Cet extrait de code montre comment extraire les détails de l’erreur d’une exception HTTP :
 
-```
+```csharp
 public static string GetExceptionText(this HttpOperationException exc)
 {
     var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
@@ -52,16 +52,17 @@ public static string GetExceptionText(this HttpOperationException exc)
     return errorText;
 }
 ```
-Nous vous recommandons de journaliser les ID de demande (et les détails de l’erreur à des fins de dépannage).
-Indiquez l’ID de la demande lorsque vous contactez le support Microsoft.
+
+Nous vous recommandons de journaliser les ID de requête (et les détails des erreurs à des fins de dépannage).
+Indiquez l’ID de la requête lorsque vous contactez le support Microsoft.
 
 ## <a name="app-registration"></a>Inscriptions des applications
 
 **Échec de l’inscription des applications**
 
-Les messages d’erreur dans le portail Azure ou la page d’inscription des applications Power BI indiquent des privilèges insuffisants. Pour inscrire une application, vous devez être administrateur du locataire Azure AD ou des inscriptions d’applications doivent être activées pour les utilisateurs non-administrateurs.
+Les messages d’erreur dans le portail Azure ou la page d’inscription des applications Power BI indiquent des privilèges insuffisants. Pour inscrire une application, vous devez être administrateur du locataire Azure AD, ou des inscriptions d’applications doivent être activées pour les utilisateurs non-administrateurs.
 
-**Le service Power BI n’apparaît pas dans le portail Azure lors de l’inscription d’une nouvelle application**
+**Le service Power BI n’apparaît pas dans le portail Azure lors de l’inscription d’une nouvelle application.**
 
 Au moins un utilisateur doit être inscrit à Power BI. Si vous ne voyez pas **Service Power BI** dans la liste des API, aucun utilisateur n’est inscrit à Power BI.
 
@@ -102,7 +103,7 @@ Le backend de l’application doit peut-être actualiser le jeton d’authentifi
 
 **(AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect)**
 
-Si vous utilisez à la fois Power BI Embedded et l’authentification directe Azure AD et que vous obtenez des messages au moment de vous connecter, tels que ***error: unauthorized_client,error_description:AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect***, cela est dû au fait que l’authentification directe est désactivée depuis le 14/06/2018 par défaut.
+Si vous utilisez à la fois Power BI Embedded et l’authentification directe Azure AD et qu’au moment de vous connecter, vous recevez des messages tels que ***error:unauthorized_client, error_description:AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect***, cela est dû au fait que l’authentification directe est désactivée depuis le 14/06/2018 par défaut.
 
 Il existe un moyen de la réactiver en utilisant une [stratégie Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications) dont la portée peut être limitée à l’organisation ou à un [principal du service](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
@@ -172,7 +173,7 @@ Le consentement de l’utilisateur est désactivé pour le locataire.
 
     ![Correctif du test de consentement](media/embedded-troubleshoot/consent-test-02.png)
 
-*Octroyer des autorisations par un administrateur* Octroyer des autorisations d’accès à l’application par un administrateur (soit pour l’ensemble du locataire, soit pour un utilisateur spécifique).
+*Octroi d’autorisations par un administrateur* Octroi d’autorisations d’accès à l’application par un administrateur (pour l’ensemble du locataire ou pour un utilisateur spécifique).
 
 ## <a name="data-sources"></a>Sources de données
 
@@ -188,11 +189,45 @@ Vérifiez que le jeton d’incorporation n’a pas expiré. Vérifiez que vous c
 
 **Le tableau de bord ou rapport n’est pas chargé**
 
-Si l’utilisateur ne peut pas voir le rapport ou le tableau de bord, vérifiez que ce dernier se charge correctement dans powerbi.com. Le rapport ou tableau de bord ne fonctionne pas dans votre application s’il n’est pas chargé dans powerbi.com.
+Si l’utilisateur ne peut pas voir le rapport ou le tableau de bord, vérifiez que ce dernier se charge correctement dans powerbi.com. Le rapport ou le tableau de bord ne fonctionne pas dans votre application s’il n’est pas chargé dans powerbi.com.
 
 **Un tableau de bord ou rapport s’exécute lentement**
 
 Ouvrez le fichier à partir de Power BI Desktop ou dans powerbi.com, puis vérifiez que les performances sont acceptables pour écarter des problèmes avec votre application ou les API d’incorporation.
+
+## <a name="troubleshooting-your-embedded-application-with-the-ierror-object"></a>Résolution des problèmes de votre application incorporée avec l’objet IError
+
+Utilisez l’[**objet IError** retourné par l’événement *erreur* à partir du **kit de développement logiciel (SDK) JavaScript**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts) pour déboguer votre application et mieux comprendre la cause de vos erreurs.
+
+Après l’acquisition de l’objet IError, vous devez examiner la table d’erreurs courantes appropriée qui correspond au type d’incorporation que vous utilisez. Comparez les **propriétés IError** avec celles de la table et recherchez la ou les raisons possibles de l’échec.
+
+### <a name="typical-errors-when-embedding-for-power-bi-users"></a>Erreurs courantes lors de l’incorporation pour les utilisateurs de Power BI
+
+| Message | Message détaillé | Code d’erreur | Raison(s) possible(s) |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès | 403 | Jeton arrivé à expiration  |
+| PowerBIEntityNotFound | Réception d’une notification d’échec du rapport | 404 | <li> ID du rapport erroné <li> Le rapport n'existe pas  |
+| Paramètres non valides | Paramètre powerbiToken non spécifié | N/A | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
+| LoadReportFailed | Échec de l’initialisation : le cluster n’a pas pu être résolu | 403 | * Jeton d’accès incorrect * Le type d’incorporation ne correspond pas au type de jeton |
+| PowerBINotAuthorizedException | Réception d’une notification d’échec du rapport | 401 | <li> ID de groupe incorrecte <li> Groupe non autorisé |
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un élément visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
+| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un élément visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | N/A | <li> Capacité suspendue <li> Capacité supprimée |
+
+### <a name="typical-errors-when-embedding-for-non-power-bi-users-using-an-embed-token"></a>Erreurs courantes lors de l’incorporation pour d’autres utilisateurs que ceux de Power BI (avec un jeton d’incorporation)
+
+| Message | Message détaillé | Code d’erreur | Raison(s) |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès | 403 | Jeton arrivé à expiration  |
+| LoadReportFailed | Réception d’une notification d’échec du rapport | 404 | <li> ID du rapport erroné <li> Le rapport n'existe pas  |
+| LoadReportFailed | Réception d’une notification d’échec du rapport | 403 | L’ID du rapport ne correspond pas au jeton |
+| LoadReportFailed | Réception d’une notification d’échec du rapport | 500 | Il ressort du rapport que l’ID n’est pas un guid |
+| Paramètres non valides | Paramètre powerbiToken non spécifié | N/A | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
+| LoadReportFailed | Échec de l’initialisation : le cluster n’a pas pu être résolu | 403 | Type de jeton incorrect, jeton incorrect |
+| PowerBINotAuthorizedException | Réception d’une notification d’échec du rapport | 401 | ID de groupe incorrect/non autorisé |
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un élément visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
+| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un élément visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | N/A | <li> Capacité suspendue <li> Capacité supprimée |
 
 ## <a name="onboarding-experience-tool-for-embedding"></a>Outil d’expérience d’intégration pour l’incorporation
 
@@ -209,7 +244,7 @@ Vérifiez que vous disposez de tous les prérequis appropriés avant d’utilise
 
 ### <a name="common-issues"></a>Problèmes courants
 
-Voici quelques problèmes courants que vous pouvez rencontrer lors du test avec l’outil d’expérience d’intégration :
+Voici quelques problèmes courants que vous pouvez rencontrer lors du test avec l’outil d’expérience d’intégration :
 
 #### <a name="using-the-embed-for-your-customers-sample-application"></a>Utilisation de l’exemple d’application Embed for your customers (Incorporer pour vos clients)
 
@@ -243,4 +278,6 @@ Si vous voulez modifier votre profil ou vos données utilisateur Power BI, déco
 
 Pour plus d’informations, consultez le [FAQ sur Power BI Embedded](embedded-faq.md).
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
+
+Si vous avez besoin d’aide, [contactez le support ](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) ou [créez un ticket de support via le portail Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest), et fournissez le ou les messages d’erreur que vous recevez.

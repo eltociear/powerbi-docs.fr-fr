@@ -2,20 +2,20 @@
 title: Qu’est-ce que Power BI Premium ?
 description: Power BI Premium permet à votre organisation ou à votre équipe de bénéficier de performances plus fiables et de plus gros volumes de données sans qu’il soit nécessaire d’acquérir une licence pour chaque utilisateur.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2018
-ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 81a03c7728d92bcc78dba9a02cbe4c45f582fd3d
-ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
+ms.openlocfilehash: f7024b3e4827201edb4137eb513333030e39059f
+ms.sourcegitcommit: 2bdcb9e9959302a35ee90a145e4ff832a02aacb9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40257054"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43250747"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Qu’est-ce que Power BI Premium ?
 Power BI Premium fournit à votre organisation ou à votre équipe des ressources dédiées à l’exécution du service Power BI. Il vous offre des performances plus fiables et permet de traiter de gros volumes de données. Premium permet également une diffusion étendue du contenu sans que vous soyez contraint d’acquérir une licence par utilisateur.
@@ -29,6 +29,7 @@ Avec une *capacité partagée*, vos charges de travail s’exécutent sur des re
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="capacity-tiers"></a>Niveaux de capacité
+
 Il existe deux types de capacité dans Power BI : la capacité partagée et la capacité Power BI Premium. Les différences entre ces deux capacités sont décrites ci-dessous.
 
 |  | Capacité partagée | Capacité Power BI Premium |
@@ -44,9 +45,10 @@ Il existe deux types de capacité dans Power BI : la capacité partagée et la
 *<sup>2</sup> Améliorations prévues dans la version post disponibilité générale de Power BI Premium.*
 
 ### <a name="premium-capacity"></a>Capacité Premium
+
 Pour commencer à utiliser une capacité Power BI Premium, vous devez lui attribuer un espace de travail. Pour plus d’informations sur l’attribution d’un espace de travail à une capacité Premium, consultez [Gérer Power BI Premium](service-admin-premium-manage.md).
 
-Lorsqu’un espace de travail est soutenu par une capacité Premium, vous bénéficiez des avantages de Power BI Premium.
+Lorsqu’une capacité Premium soutient un espace de travail, vous bénéficiez des avantages de Power BI Premium.
 
 * **Actualisations planifiées** : avec une capacité partagée, les actualisations planifiées des modèles importés sont limitées à 8 fois par jour. Le nombre d’actualisations est augmenté à 48 fois par jour pour les jeux de données dans les espaces de travail Premium. Cela ne s’applique pas aux paramètres d’actualisation planifiée du cache pour DirectQuery. Ces paramètres restent identiques pour la capacité Premium et la capacité partagée.
 * **Isolement avec matériel dédié** : étant donnée la nature d’une capacité partagée, les performances de vos rapports et tableaux de bord peuvent être affectées par les demandes de ressources des autres charges de travail de la capacité, en dépit des protections que nous avons mises en place. À l’inverse, Premium offre des performances plus cohérentes et plus fiables en isolant les charges de travail non liées.
@@ -54,18 +56,20 @@ Lorsqu’un espace de travail est soutenu par une capacité Premium, vous béné
 Si une application est adossée à une capacité Premium (autrement dit, si elle a été publiée à partir d’un espace de travail d’application actuellement affecté à Premium), elle peut être utilisée par n’importe quel utilisateur de votre organisation, quelle que soit sa licence.
 
 ### <a name="shared-capacity"></a>Capacité partagée
+
 Par défaut, votre espace de travail est en mode Capacité partagée. Cela inclut votre espace de travail personnel (*Mon espace de travail*) ainsi que les espaces de travail d’applications. Le mode Capacité partagée est celui auquel vous êtes habitué avec Power BI. Vos charges de travail s’y exécutent sur des ressources de calcul partagées par d’autres clients.
 
 <a name="premiumskus"/>
 
 ### <a name="premium-capacity-nodes"></a>Nœuds de capacité Premium
+
 Power BI Premium est disponible dans des configurations de nœuds aux capacités différentes en termes de cœurs virtuels. Pour plus d’informations sur les offres et les coûts d’une référence SKU spécifique, consultez [Tarification de Power BI](https://powerbi.microsoft.com/pricing/). Un [module de calcul de coût](https://powerbi.microsoft.com/calculator/) est également disponible. Pour plus d’informations sur la planification d’une capacité d’analytique incorporée, consultez le [livre blanc Planification d’un déploiement de Power BI en entreprise](https://aka.ms/pbienterprisedeploy).
 
 * Les nœuds P peuvent être utilisés pour les déploiements incorporés ou pour les déploiements de services.
 * Les nœuds EM sont réservés aux déploiements incorporés. Les nœuds EM n’ont pas accès aux fonctionnalités premium comme le partage d’applications avec des utilisateurs qui ne disposent pas d’une licence Power BI Pro.
 
 >[!NOTE]
->Les liens indiqués dans ce tableau ne fonctionnent correctement que pour les utilisateurs qui sont des administrateurs généraux d’Office 365. Les autres utilisateurs reçoivent une erreur 404. 
+>Les liens indiqués dans ce tableau ne fonctionnent correctement que pour les utilisateurs qui sont des administrateurs généraux d’Office 365. Les autres utilisateurs reçoivent une erreur 404.
 
 | Nœud de capacité | Total des v-cores<br/>*(Serveur principal + serveur frontal)* | V-cores du principal | V-cores du serveur frontal | Limites de connexions actives/DirectQuery | Rendus de pages au maximum aux heures de pointe | Disponibilité |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -92,4 +96,3 @@ Power BI Premium inclut le droit d’exécuter Power BI Report Server localement
 [Administration de Power BI dans votre organisation](service-admin-administering-power-bi-in-your-organization.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-

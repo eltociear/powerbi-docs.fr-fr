@@ -10,12 +10,12 @@ ms.devlang: csharp, javascript
 ms.topic: conceptual
 ms.reviewer: ''
 ms.date: 07/31/2018
-ms.openlocfilehash: 222a6368bc717880fee4f6ce6958455959b491bd
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: f364bb725c492c1bffd2493c1e2a48ee8c442a9e
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360294"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300043"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Créer une capacité Power BI Embedded dans le Portail Microsoft Azure
 
@@ -54,7 +54,7 @@ Pour suivre ce guide de démarrage rapide, vous avez besoin des éléments suiva
     |**Abonnement**|Abonnement pour lequel vous souhaitez créer la capacité.|
     |**Groupe de ressources**|Groupe de ressources qui contient cette nouvelle capacité. Choisissez un groupe de ressources existant ou créez-en un autre. Pour plus d’informations, consultez [Vue d’ensemble d’Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).|
     |**Administrateur de capacité Power BI**|Les administrateurs de capacité Power BI peuvent afficher la capacité dans le portail d’administration Power BI et accorder des autorisations d’affectation à d’autres utilisateurs. Par défaut, l’administrateur de capacité est votre compte. L’administrateur de capacité doit faire partie de votre locataire Power BI.|
-    |**Emplacement**|Emplacement où est hébergé Power BI pour votre locataire. Ce paramètre est résolu automatiquement et aucun autre emplacement ne peut être sélectionné.|
+    |**Emplacement**|Emplacement où est hébergé Power BI pour votre locataire. Votre emplacement par défaut est votre région d’origine, mais vous pouvez modifier l’emplacement avec les [options Zone géographique multiple](embedded-multi-geo.md).
     |**Niveau tarifaire**|Sélectionnez la référence SKU (nombre de cœurs v-core et taille de la mémoire) qui correspond à vos besoins.  Pour plus d’informations, consultez [Tarifs de Power BI Embedded](https://azure.microsoft.com/pricing/details/power-bi-embedded/).|
 
 6. Sélectionnez **Créer**.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/15/2018
+ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: db77e3e7421074383f67bffad318e6f7f4c3df28
-ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
+ms.openlocfilehash: 592c3bf5fbd508d63236d16ca21164ee507df35b
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40256930"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300112"
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -23,7 +23,7 @@ Le portail d’administration permet de gérer les clients Power BI de votre or
 
 La gestion des clients Power BI de votre entreprise s’effectue via le portail d’administration Power BI. Le portail d’administration est accessible à tous les utilisateurs qui sont administrateurs généraux dans Office 365 ou qui sont assignés au rôle d’administrateur de Service Power BI. Pour plus d’informations sur le rôle d’administrateur de Service Power BI, voir [Présentation du rôle d’administrateur Power BI](service-admin-role.md).
 
-Tous les utilisateurs peuvent voir **Portail d’administration** sous l’icône d’engrenage. Les non-administrateurs voient uniquement la section **Paramètres Premium** ainsi que les capacités qu’ils ont le droit de gérer.
+Tous les utilisateurs peuvent voir **Portail d’administration** sous l’icône d’engrenage. Les non-administrateurs ne peuvent voir que la section **Paramètres Premium** ainsi que les capacités qu’ils ont le droit de gérer.
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Accès au portail d’administration
 
@@ -52,9 +52,9 @@ Le premier onglet du portail d’administration est **Métriques d’utilisation
 > [!NOTE]
 > La première fois que vous accédez au tableau de bord ou si vous y accédez de nouveau après une longue période, un écran de chargement s’affiche probablement pendant le chargement du tableau de bord.
 
-Une fois le tableau de bord chargé, vous verrez deux sections de vignettes. La première section comprend des données d’utilisation pour chacun des utilisateurs, et la deuxième section comporte des informations similaires pour les groupes de votre organisation.
+Une fois le tableau de bord chargé, vous pouvez voir deux sections de vignettes. La première section comprend des données d’utilisation pour chacun des utilisateurs, et la deuxième section comporte des informations similaires pour les groupes de votre organisation.
 
-Voici le détail de ce que vous verrez dans chacune d’elle :
+Voici le détail de ce que vous pouvez voir dans chacune d’elles :
 
 * Le nombre de tableaux de bord, de rapports et de jeux de données de l’espace de travail utilisateur
   
@@ -76,7 +76,7 @@ Voici le détail de ce que vous verrez dans chacune d’elle :
   
     ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-La deuxième section affiche le même type d’informations, mais pour les groupes. Vous pouvez ainsi voir les groupes de votre organisation qui sont les plus actifs et quels types d’informations ils utilisent.
+La deuxième section affiche le même type d’informations, mais pour les groupes. Vous pouvez voir les groupes de votre organisation qui sont les plus actifs et quels types d’informations ils utilisent.
 
 Avec ces informations, vous pourrez savoir comment les employés de votre organisation utilisent Power BI et quels sont les utilisateurs et les groupes qui sont les plus actifs.
 
@@ -150,13 +150,13 @@ Les utilisateurs de l’organisation peuvent publier des rapports sur le web. [E
 
 ![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
 
-Les utilisateurs voient différentes options dans l’interface utilisateur en fonction de la définition du paramètre de publication sur le web.
+Les utilisateurs peuvent voir différentes options dans l’interface utilisateur en fonction de la définition du paramètre de publication sur le web.
 
 |Fonctionnalité |Activée pour toute l’organisation |Désactivée pour toute l’organisation |Groupes de sécurité spécifiques   |
 |---------|---------|---------|---------|
 |**Publier sur le web** sous le menu **Fichier** du rapport.|Activée pour tous|Non visible pour tous|Visible uniquement par les utilisateurs ou groupes autorisés.|
 |**Gérer les codes d’incorporation** sous **Paramètres**|Activée pour tous|Activée pour tous|Activée pour tous<br><br>Option * **Supprimer** uniquement pour les utilisateurs ou groupes autorisés.<br>* **Obtenir les codes** activé pour tous.|
-|**Codes d’incorporation** au sein du portail d’administration|L’état reflète une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué|L’état affiche **Désactivé**|L’état reflète une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué<br><br>Si un utilisateur n’est pas autorisé en fonction du paramètre de locataire, l’état affiche **violation**.|
+|**Codes d’incorporation** au sein du portail d’administration|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué|L’état affiche **Désactivé**|L’état reflète l’une des options suivantes :<br>* Actif<br>* Non pris en charge<br>* Bloqué<br><br>Si un utilisateur n’est pas autorisé en fonction du paramètre de locataire, l’état affiche **violation**.|
 |Rapports publiés existants|Tout activé|Tout désactivé|Les rapports continuent à être restitués pour tous.|
 
 ### <a name="export-data"></a>Exporter des données
@@ -166,7 +166,7 @@ Les utilisateurs de l’organisation peuvent exporter des données depuis une vi
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
-> La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité **Analyser dans Excel** ainsi que la connexion active au service Power BI.
+> La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité **Analyser dans Excel** ainsi que la connexion active du service Power BI.
 
 ### <a name="export-reports-as-powerpoint-presentations"></a>Exporter les rapports comme présentations PowerPoint
 
@@ -210,12 +210,14 @@ Cliquez ici pour en savoir plus sur [les applications poussées](service-create-
 ## <a name="integration-settings"></a>Paramètres d’intégration
 
 ### <a name="ask-questions-about-data-using-cortana"></a>Poser des questions sur les données à l’aide de Cortana
+
 Les utilisateurs de l’organisation peuvent poser des questions sur leurs données en utilisant Cortana.
 
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Utiliser Analyser dans Excel avec des jeux de données locaux
+
 Les utilisateurs de l’organisation peuvent utiliser Excel pour afficher et interagir avec des jeux de données Power BI locaux. [En savoir plus](service-analyze-in-excel.md)
 
 > [!NOTE]
@@ -230,7 +232,9 @@ Les utilisateurs de l’organisation peuvent utiliser la visualisation ArcGIS Ma
 Les utilisateurs de l’organisation peuvent utiliser les fonctionnalités de recherche externe qui reposent sur le service Recherche Azure. Par exemple, les utilisateurs peuvent se servir de Cortana pour extraire des informations clés directement des tableaux de bord et des rapports Power BI. [En savoir plus](service-cortana-intro.md)
 
 ## <a name="custom-visuals-settings"></a>Paramètres des visuels personnalisés
+
 ### <a name="enable-custom-visuals-for-the-entire-organization"></a>Activer les visuels personnalisés pour l’ensemble de l’organisation
+
 Les utilisateurs de l’organisation peuvent manipuler et partager des visuels personnalisés. [En savoir plus](power-bi-custom-visuals.md)
 
 > [!NOTE]
@@ -292,11 +296,23 @@ Les utilisateurs de l’organisation peuvent incorporer des tableaux de bord et 
 
 ## <a name="capacity-settings"></a>Paramètres de capacité
 
-L’onglet Paramètres de capacité vous permet de gérer les capacités Power BI Premium achetées pour votre organisation. Tous les utilisateurs membres de votre organisation voient l’onglet Paramètres Premium, mais ne peuvent en voir le contenu que s’ils disposent d’autorisations d’**administrateur de capacité** ou d’autorisations d’affectation. Si un utilisateur ne possède aucune autorisation, le message suivant apparaît.
+### <a name="premium-settings"></a>Paramètres Premium
 
-![](media/service-admin-portal/premium-settings-no-access.png "Aucun accès aux paramètres Premium")
+L’onglet Paramètres Premium vous permet de gérer les capacités Power BI Premium (Em ou SKU P) achetées pour votre organisation. Tous les utilisateurs membres de votre organisation peuvent voir l’onglet Paramètres Premium, mais ne peuvent en voir le contenu que s’ils disposent d’autorisations d’**administrateur de capacité** ou d’autorisations d’affectation. Si un utilisateur ne possède aucune autorisation, le message suivant apparaît.
+
+![Paramètres d’administration de Power BI Premium](media/service-admin-portal/premium-settings-no-access.png "Aucun accès aux paramètres Premium")
 
 Pour plus d’informations sur la gestion des paramètres Premium, consultez [Gérer Power BI Premium](service-admin-premium-manage.md).
+
+### <a name="power-bi-embedded-settings"></a>Paramètres de Power BI Embedded
+
+L’onglet Paramètres de Power BI Embedded vous permet de vous permet d’afficher les capacités de Power BI Embedded (une référence SKU A) que vous avez achetées pour votre client. Dans la mesure où vous ne pouvez acheter des références SKU A qu’à partir d’Azure, vous pouvez [gérer les capacités incorporées dans Azure](developer/azure-pbie-create-capacity.md) depuis **le portail Azure**.
+
+![Paramètres d'administration de Power BI Embedded](media/service-admin-portal/manage-pbie-capacities-01.png)
+
+![Détails des paramètres d'administration de Power BI Embedded](media/service-admin-portal/manage-pbie-capacities-02.png)
+
+Pour plus d’informations sur la gestion des paramètres de Power BI Embedded (référence SKU A), consultez [Qu’est-ce que Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
 ## <a name="embed-codes"></a>Codes incorporés
 
@@ -307,10 +323,10 @@ En tant qu’administrateur, vous pouvez afficher les codes incorporés qui sont
 ## <a name="organization-visuals"></a>Visuels de l’organisation
 
 L’onglet des visuels de l’organisation vous permet de déployer et de gérer en toute simplicité les visuels personnalisés et protégés dans votre organisation, afin que les auteurs de rapports puissent les détecter facilement et les importer directement dans leurs rapports à partir de Power BI Desktop.
- 
+
 La page affiche tous les visuels personnalisés actuellement déployés dans le référentiel de l’organisation.
- 
-![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
+
+![Visuel de l’administrateur de l’organisation](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
 ### <a name="add-a-new-custom-visual"></a>Ajouter un visuel personnalisé
 
@@ -320,26 +336,38 @@ Pour ajouter un visuel personnalisé à la liste, sélectionnez **Ajouter un vis
 
 > [!WARNING]
 > Un visuel personnalisé est susceptible de contenir du code présentant des risques pour la sécurité ou la confidentialité ; vérifiez que vous faites confiance à son auteur et à sa source avant de le déployer dans le référentiel d’origine.
-> 
 
 Remplissez les champs :
- 
+
 * Choisissez un fichier .pbiviz (obligatoire) : sélectionnez un fichier visuel personnalisé à charger. Seuls les visuels personnalisés d’API avec version sont pris en charge (lisez ici ce que cela signifie).
+
 Avant de charger un visuel personnalisé, examinez-le afin de déterminer s’il présente un risque en matière de sécurité et de confidentialité et s’il répond aux standards de votre organisation. En savoir plus sur la sécurité des visuels personnalisés.
- 
+
 * Nommez vos visuels personnalisés (obligatoire) : donnez un titre court au visuel pour que les utilisateurs de Power BI Desktop comprennent facilement ce qu’il fait.
- 
-* Icône (obligatoire) : il s’agit du fichier d’icône qui s’affichera dans l’interface utilisateur de Power BI Desktop.
- 
+
+* Icône (obligatoire) : il s’agit du fichier d’icône qui s’affiche dans l’interface utilisateur de Power BI Desktop.
+
 * Description : rédigez une brève description du visuel pour donner plus de contexte et d’informations à l’utilisateur.
- 
-Sélectionnez « Appliquer » pour lancer la demande de chargement. Si elle aboutit, le nouvel élément apparaîtra dans la liste. En cas d’échec, vous recevrez le message d’erreur correspondant.
- 
+
+Sélectionnez « Appliquer » pour lancer la demande de chargement. Si elle aboutit, le nouvel élément s’affiche dans la liste. En cas d’échec, vous recevez le message d’erreur correspondant.
+
 ### <a name="delete-a-custom-visual-from-the-list"></a>Supprimer un visuel personnalisé de la liste
 
 Sélectionnez l’icône de la corbeille pour supprimer définitivement le visuel du référentiel.
-Important : La suppression est irréversible. Le rendu du visuel supprimé disparaît immédiatement des rapports existants. Même si vous rechargiez le même visuel, il ne remplacerait pas celui qui a été supprimé ; les utilisateurs devraient réimporter le nouveau et remplacer l’instance présente dans leurs rapports.
- 
+Important : La suppression est irréversible. Le rendu du visuel supprimé disparaît immédiatement des rapports existants. Même si vous rechargez le même visuel, il ne remplace pas celui qui a été supprimé ; les utilisateurs peuvent réimporter le nouveau et remplacer l’instance présente dans leurs rapports.
+
+### <a name="disable-a-custom-visual-in-the-list"></a>Désactiver un visuel personnalisé dans la liste
+
+Pour désactiver le visuel à partir du magasin de l’organisation, sélectionnez l’icône d’engrenage. Dans la section **Accès**, désactivez le visuel personnalisé.
+
+Après la désactivation du visuel, son rendu ne s’affiche plus dans les rapports existants et le message d’erreur suivant s’affiche.
+
+*Ce visuel personnalisé n’est plus disponible. Pour plus d’informations, contactez votre administrateur.*
+
+Toutefois, les visuels marqués d’un signet continuent à fonctionner.
+
+Après une mise à jour ou un changement d’administrateur, les utilisateurs de Power BI Desktop doivent redémarrer l’application ou actualiser le navigateur dans le service Power BI pour voir les mises à jour.
+
 ### <a name="how-to-update-a-visual"></a>Mettre à jour un visuel
 
 Si vous voulez mettre à jour un visuel dans le référentiel parce qu’il en existe une version plus récente (par exemples, correctifs de bogues, nouvelle fonctionnalité, etc.), sélectionnez l’icône **Mettre à jour** et chargez le nouveau fichier. Assurez-vous que l’ID du visuel reste inchangé. Le nouveau fichier remplace le fichier précédent pour tous les rapports au sein de l’organisation. Toutefois, si la nouvelle version du visuel est susceptible de rompre l’utilisation ou la structure de données de la version précédente du visuel, alors ne remplacez pas la version précédente. Au lieu de cela, vous devez créer une nouvelle liste pour la nouvelle version du visuel. Par exemple, ajoutez un nouveau numéro de version (version X.X) au titre du nouveau visuel répertorié. Ainsi, il est clair qu’il s’agit du même visuel, avec un numéro de version mis à jour, ce qui permet de ne pas rompre les fonctionnalités des rapports existants. Encore une fois, assurez-vous que l’ID du visuel reste inchangé. Puis, la prochaine fois que les utilisateurs entrent dans le référentiel de l’organisation à partir de Power BI Desktop, ils peuvent importer la nouvelle version et sont alors invités à remplacer la version déjà présente dans leur rapport.

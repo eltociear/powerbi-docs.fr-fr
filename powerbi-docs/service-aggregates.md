@@ -2,20 +2,20 @@
 title: Agrégations (somme, moyenne, maximum, etc.) dans les visualisations
 description: Modifier l’agrégation dans un graphique (somme, moyenne, maximum, etc.) dans Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/04/2018
+ms.date: 08/29/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 39adfd04118362fa706f0840daa5c2520d899b5e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d48f99c8415b7b347a504525b0c6539d1e90f4dd
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247593"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241542"
 ---
 # <a name="aggregates-in-power-bi-visualizations"></a>Agrégations dans les visualisations Power BI
 ## <a name="what-is-an-aggregate"></a>Qu’est qu’un agrégat ?
@@ -26,15 +26,15 @@ Lorsque le service Power BI et Power BI Desktop créent des visualisations, ils 
 Tout d’abord, examinons les *types* de données, car le type de données détermine le mode d’agrégation et la possibilité de faire appel à cette fonctionnalité.
 
 ## <a name="types-of-data"></a>Types des données
-La plupart des jeux de données ont plusieurs types de données. Au niveau le plus basique, les données sont numériques ou ne le sont pas. Les données numériques peuvent être agrégées à l’aide d’une fonction somme, moyenne, nombre, minimum, écart et bien plus encore. Même les données textuelles, souvent appelées données *catégorielles*, peuvent être agrégées. S vous tentez d’agréger un champ de catégorie (en le plaçant dans un compartiment uniquement numérique comme **Valeurs** ou **Info-bulles**), Power BI compte les occurrences de chaque catégorie ou les occurrences distinctes de chaque catégorie. De plus, des types de données spéciaux, tels que des dates, ont leurs propres options d’agrégation : plus ancien, plus récent, premier et dernier. 
+La plupart des jeux de données ont plusieurs types de données. Au niveau le plus basique, les données sont numériques ou ne le sont pas. Les données numériques peuvent être agrégées à l’aide d’une fonction somme, moyenne, nombre, minimum, écart et bien plus encore. Même les données textuelles, souvent appelées données *catégorielles*, peuvent être agrégées. Si vous tentez d’agréger un champ de catégorie (en le plaçant dans un compartiment uniquement numérique comme **Valeurs** ou **Info-bulles**), Power BI compte les occurrences de chaque catégorie ou les occurrences distinctes de chaque catégorie. De plus, des types de données spéciaux, tels que des dates, ont leurs propres options d’agrégation : plus ancien, plus récent, premier et dernier. 
 
 Prenons l’exemple ci-dessous :
-- **Units Sold (Unités vendues)** et **Manufacturing Price (Prix de fabrication)** sont des colonnes qui contiennent des données numériques.
+- Les colonnes **Units Sold (Unités vendues)** et **Manufacturing Price (Prix de fabrication)** contiennent des données numériques.
 -  **Segment**, **Country (Pays)**, **Product (Produit)**, **Month (Mois)** et **Month Name (Nom du mois)** contiennent des données catégorielles.
 
    ![](media/service-aggregates/power-bi-aggregate-chart.png)
 
-Lorsque vous créez une visualisation dans Power BI, les champs numériques sont agrégés (la valeur par défaut étant *somme*) sur un champ catégoriel.  Par exemple, « Unités vendues ***par produit***, « Unités vendues ***par mois***» et « Prix de fabrication ***par Segment*** ». Certains champs numériques sont appelés **mesures**. Il est facile d’identifier les mesures dans l’éditeur de rapport Power BI : celles-ci sont indiquées par le symbole ∑ dans la liste de champs. Pour plus d’informations, consultez [Découverte de l’éditeur de rapport](service-the-report-editor-take-a-tour.md).
+Lorsque vous créez une visualisation dans Power BI, les champs numériques sont agrégés (la valeur par défaut étant *somme*) sur un champ catégoriel.  Par exemple, « Unités vendues ***par produit***, « Unités vendues ***par mois***» et « Prix de fabrication ***par Segment*** ». Certains champs numériques sont appelés **mesures**. Il est facile d’identifier les mesures dans l’éditeur de rapport Power BI : elles sont indiquées par le symbole ∑ dans la liste de champs. Pour plus d’informations, consultez [Découverte de l’éditeur de rapport](service-the-report-editor-take-a-tour.md).
 
 ![](media/service-aggregates/power-bi-aggregate-fields.png)
 
@@ -43,9 +43,9 @@ Lorsque vous créez une visualisation dans Power BI, les champs numériques sont
 ## <a name="why-dont-aggregates-work-the-way-i-want-them-to"></a>Pourquoi les agrégats ne fonctionnent pas comme je le souhaite ?
 L’utilisation d’agrégats dans le service Power BI peut prêter à confusion ; vous disposez peut-être d’un champ numérique et Power BI ne vous permet pas de modifier l’agrégation. Ou vous disposez peut-être d’un champ, comme une année, et vous ne souhaitez pas l’agréger, mais simplement compter le nombre d’occurrences.
 
-En règle générale, la source du problème est la façon dont le champ a été défini dans le jeu de données. Il se peut que le champ soit défini en tant que texte, ce qui explique pourquoi il ne peut pas faire l’objet d’une somme ou d’une moyenne. Malheureusement, [seul le propriétaire du jeu de données peut modifier la façon dont un champ est classé](desktop-measures.md). Par conséquent, si vous disposez des autorisations de propriétaire sur le jeu de données, soit dans Desktop ou le programme qui a été utilisé pour créer le jeu de données (par exemple, Excel), vous pouvez résoudre ce problème. Dans le cas contraire, vous devez contacter le propriétaire du jeu de données pour lui demander de l’aide.  
+En règle générale, la source du problème est la façon dont le champ a été défini dans le jeu de données. Il se peut que le champ soit défini en tant que texte, ce qui explique pourquoi il ne peut pas faire l’objet d’une somme ou d’une moyenne. Malheureusement, [seul le propriétaire du jeu de données peut modifier la façon dont un champ est classé](desktop-measures.md). Par conséquent, si vous disposez des autorisations de propriétaire sur le jeu de données, soit dans Desktop, soit dans le programme qui a été utilisé pour créer le jeu de données (par exemple, Excel), vous pouvez résoudre ce problème. Dans le cas contraire, vous devez contacter le propriétaire du jeu de données pour lui demander de l’aide.  
 
-Pour vous aider, nous avons inclus une section spéciale à la fin de cet article, appelée **Considérations et résolution des problèmes**.  Si vous n’y trouvez pas votre réponse, publiez votre question sur le [forum de la communauté Power BI](http://community.powerbi.com) pour obtenir une réponse rapide directement de l’équipe Power BI.
+Pour vous aider, nous avons inclus à la fin de cet article une section spéciale intitulée **Considérations et résolution des problèmes**.  Si vous n’y trouvez pas votre réponse, publiez votre question sur le [forum de la communauté Power BI](http://community.powerbi.com) pour obtenir une réponse rapide directement de l’équipe Power BI.
 
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Modifier le mode d’agrégation d’un champ numérique
 Supposons que vous avez un graphique qui fait la somme des unités vendues pour différents produits. Or, il s’avère que vous préfèreriez obtenir la moyenne. 
@@ -78,7 +78,7 @@ Voici certaines des options qui peuvent être disponibles pour l’agrégation d
 * **Nombre (distinct).** compte le nombre de valeurs différentes dans le champ.
 * **Écart type.**
 * **Écart**.
-* **Médiane**.  Affiche la valeur médiane (centrale). Il s’agit de la valeur ayant le même nombre d’éléments au-dessus et au-dessous.  S’il existe 2 médianes, Power BI calcule une moyenne.
+* **Médiane**.  Affiche la valeur médiane (centrale). Il s’agit de la valeur ayant le même nombre d’éléments au-dessus et au-dessous.  S’il existe deux médianes, Power BI calcule leur moyenne.
 
 Par exemple, ces données :
 
@@ -129,7 +129,7 @@ R : Le champ que vous avez sélectionné est probablement une mesure calculée 
 
 Q : Mon champ **est** numérique. Pourquoi mes seuls choix sont **Nombre** et **Comptage de valeurs** ?
 
-R1 : L’explication la plus probable est que le propriétaire du jeu de données n’a *pas* classé le champ en tant que nombre, accidentellement ou volontairement. Par exemple, si un jeu de données a un champ **année**, le propriétaire du jeu de données peut le classer comme texte, car il est plus que probable que le champ **année** fasse l’objet d’un décompte (par exemple le nombre de personnes nées en 1974) et non d’une somme ou d’une moyenne. Si vous êtes le propriétaire, vous pouvez ouvrir le jeu de données dans Power BI Desktop et utiliser l’onglet **Modélisation** pour modifier le type de données.  
+R1 : L’explication la plus probable est que le propriétaire du jeu de données n’a *pas* classé le champ en tant que nombre, accidentellement ou volontairement. Par exemple, si un jeu de données a un champ **année**, le propriétaire du jeu de données peut le classer comme texte, car il est plus que probable que le champ **année** fasse l’objet d’une comptage (par exemple le nombre de personnes nées en 1974) plutôt que d’une somme ou d’une moyenne. Si vous êtes le propriétaire, vous pouvez ouvrir le jeu de données dans Power BI Desktop et utiliser l’onglet **Modélisation** pour modifier le type de données.  
 
 R2 : Si le champ a une icône de calculatrice, cela signifie qu’il s’agit d’une *mesure calculée* et chaque mesure calculée possède sa propre formule codée en dur qui ne peut être modifiée que par le propriétaire du jeu de données. Le calcul utilisé peut être une agrégation simple comme une moyenne ou une somme, mais il peut également être plus complexe, comme un « pourcentage de contribution à la catégorie parente » ou « total cumulé depuis le début de l’année ». Power BI ne va pas calculer la somme ou la moyenne des résultats, mais juste recalculer (à l’aide de la formule codée en dur) chaque point de données.
 
@@ -139,6 +139,10 @@ R4 : Une troisième possibilité est que vous utilisez le champ pour un axe. Su
 
 >[!NOTE]
 >L’exception à cette règle est le graphique à nuages de points, qui *nécessite* des valeurs agrégées pour les axes X et Y.
+
+Q : Pourquoi ne puis-je pas agréger les champs de texte pour les sources de données SSAS ?
+
+R : Les Connexions directes à SSAS MD n’autorisent pas les agrégations côté client. Ceci inclut premier, dernier, moyenne, mininum, maximum et somme.
 
 Q : J’ai un graphique à nuages de points et je ne veux *pas* d’agrégation pour mon champ.  Comment faire ?
 

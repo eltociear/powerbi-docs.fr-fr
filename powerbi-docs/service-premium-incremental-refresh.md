@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/30/2018
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: 1b6a3c35abeff33e2fb1e0fecdc5c2a5c88e1530
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: fd62e90d4a4f348ee7b3a524f85725d517180068
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34298179"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300135"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Actualisation incrémentielle dans Power BI Premium
 
@@ -43,6 +43,12 @@ Les jeux de données volumineux, contenant potentiellement des milliards de lign
 
 Pour utiliser l’actualisation incrémentielle dans le service Power BI, vous devez filtrer les données à l’aide de paramètres date/heure Power Query définis avec les noms réservés respectant la casse **RangeStart** et **RangeEnd**.
 
+Une fois publiées, les valeurs des paramètres sont automatiquement remplacées par le service Power BI. Vous n’avez pas besoin de les définir dans les paramètres du jeu de données du service.
+ 
+Il est important que le filtre soit poussé vers le système source lorsque des requêtes sont envoyées pour les opérations d’actualisation. Cela signifie que la source de données doit prendre en charge le « Query folding ». Étant donné les différents niveaux de prise en charge du Query folding pour chaque source de données, nous vous recommandons de vérifier que la logique du filtre est incluses dans les requêtes source. Sinon, chaque requête interroge toutes les données depuis la source, ce qui va à l’encontre de l’objectif d’actualisation incrémentielle.
+ 
+Le filtre est utilisé pour partitionner les données en plages dans le service Power BI. Il n’est pas conçu pour prendre en charge la mise à jour de la colonne de date filtrée. Une mise à jour sera interprétée comme une insertion et une suppression (et non pas comme une mise à jour). Si la suppression se produit dans la plage historique et pas dans la plage incrémentielle, elle ne sera pas récupérée.
+
 Dans l’éditeur Power Query, sélectionnez **Gérer les paramètres** pour définir les paramètres avec les valeurs par défaut.
 
 ![Gérer les paramètres](media/service-premium-incremental-refresh/manage-parameters.png)
@@ -61,9 +67,6 @@ Vérifiez que les lignes sont filtrées quand la valeur de colonne *est postéri
 > `(x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
 Sélectionnez **Fermer et appliquer** dans l’éditeur Power Query. Vous devez avoir un sous-ensemble du jeu de données dans Power BI Desktop.
-
-> [!NOTE]
-> Une fois publiées, les valeurs des paramètres sont automatiquement remplacées par le service Power BI. Vous n’avez pas besoin de les définir dans les paramètres du jeu de données.
 
 ### <a name="define-the-refresh-policy"></a>Définir la stratégie d’actualisation
 
@@ -102,9 +105,11 @@ La première actualisation effectuée dans le service Power BI peut être plus l
 
 **Quand vous avez terminé la définition de ces plages, vous pouvez passer directement à l’étape de publication suivante. Les autres menus déroulants concernent des fonctionnalités avancées.**
 
+### <a name="advanced-policy-options"></a>Options de stratégie avancée
+
 #### <a name="detect-data-changes"></a>Détecter les changements de données
 
-L’actualisation incrémentielle des données des dix derniers jours est évidemment beaucoup plus rapide qu’une actualisation complète des données des cinq années. Toutefois, ce processus peut encore être amélioré. Si vous cochez la case **Détecter les changements de données**, vous pouvez sélectionner une colonne date/heure à utiliser pour identifier et actualiser uniquement les jours où les données ont changé. Cela suppose que cette colonne existe dans le système source, généralement à des fins d’audit. La valeur maximale de cette colonne est évaluée pour chacune des périodes définies dans la plage incrémentielle. Si cette valeur n’a pas changé depuis la dernière actualisation, la période n’a pas besoin d’être actualisée. Dans l’exemple, cela peut réduire les jours concernés par l’actualisation incrémentielle de dix à deux.
+L’actualisation incrémentielle des données des dix derniers jours est évidemment beaucoup plus rapide qu’une actualisation complète des données des cinq années. Toutefois, ce processus peut encore être amélioré. Si vous cochez la case **Détecter les changements de données**, vous pouvez sélectionner une colonne date/heure à utiliser pour identifier et actualiser uniquement les jours où les données ont changé. Cela suppose que cette colonne existe dans le système source, généralement à des fins d’audit. **Cela ne doit pas être la même colonne que celle utilisée pour partitionner les données avec les paramètres RangeStart/RangeEnd.** La valeur maximale de cette colonne est évaluée pour chacune des périodes définies dans la plage incrémentielle. Si cette valeur n’a pas changé depuis la dernière actualisation, la période n’a pas besoin d’être actualisée. Dans l’exemple, cela peut réduire les jours concernés par l’actualisation incrémentielle de dix à deux.
 
 ![Détecter les changements](media/service-premium-incremental-refresh/detect-changes.png)
 

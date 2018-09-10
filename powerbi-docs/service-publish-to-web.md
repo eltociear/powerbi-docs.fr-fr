@@ -2,33 +2,33 @@
 title: Publication sur le web à partir de Power BI
 description: Avec la fonctionnalité Publier sur le web de Power BI, vous pouvez facilement incorporer des visualisations Power BI interactives en ligne, par exemple dans des billets de blog ou des sites web, par le biais d’e-mails ou de réseaux sociaux sur l’appareil de votre choix.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2018
-ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e02b4dfe9798eed393a0097ef4f220746acfdf6
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: b305c684ccf0938cfa8f5d9a2aa06f27a8c8be12
+ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092342"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380333"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
 Avec la fonctionnalité **Publier sur le web** de Power BI, vous pouvez facilement incorporer des visualisations Power BI interactives en ligne, par exemple dans des billets de blog ou des sites web, par le biais d’e-mails ou de réseaux sociaux sur l’appareil de votre choix.
 
-Vous pouvez aussi facilement modifier, mettre à jour et actualiser vos éléments visuels publiés, ou encore en annuler le partage.
+Vous pouvez également modifier, mettre à jour ou actualiser vos éléments visuels publiés, ou bien annuler leur partage.
 
 > [!WARNING]
 > Quand vous utilisez la fonctionnalité **Publier sur le web**, le rapport ou visuel que vous publiez peut être consulté par tout le monde sur Internet. Aucune authentification n’est utilisée pour voir ces rapports. Utilisez uniquement la fonctionnalité Publier sur le web pour les rapports et données qui peuvent être vus par tout le monde sur Internet (membres non authentifiés du grand public). Cela inclut les données de niveau de détail qui sont agrégées dans vos rapports. Avant de publier ce rapport, vérifiez que vous avez le droit de partager les données et les visualisations publiquement. Ne publiez pas d’informations confidentielles ou propriétaires. En cas de doute, vérifiez les stratégies de votre organisation avant la publication.
 
 ## <a name="how-to-use-publish-to-web"></a>Comment utiliser Publier sur le web
 
-La fonctionnalité **Publier sur le web** est disponible dans les rapports de vos espaces de travail personnel ou de groupe que vous pouvez modifier.  Vous ne pouvez pas l’utiliser avec les rapports qui ont été partagés avec vous ou ceux qui reposent sur la sécurité au niveau des lignes pour la sécurisation des données. Consultez la section **Limitations** ci-dessous pour obtenir la liste complète des situations où la publication sur le web n’est pas prise en charge. Reportez-vous à l’ **avertissement** plus haut dans cet article avant d’utiliser la fonctionnalité Publier sur le web.
+La fonctionnalité **Publier sur le web** est disponible dans les rapports de vos espaces de travail personnel ou de groupe que vous pouvez modifier.  Vous ne pouvez pas l’utiliser avec les rapports qui ont été partagés avec vous ou ceux qui reposent sur la sécurité au niveau des lignes pour la sécurisation des données. Consultez la section **Limitations** ci-dessous pour obtenir la liste complète des situations où la publication sur le web n’est pas prise en charge. Lisez l’**avertissement** plus haut dans cet article avant d’utiliser la fonctionnalité Publier sur le web.
 
 Pour comprendre comment elle fonctionne, vous pouvez visionner la *petite vidéo*suivante. Ensuite, effectuez les étapes ci-dessous pour essayer vous-même cette fonctionnalité.
 
@@ -65,7 +65,7 @@ Le tableau suivant fournit des instructions sur le mode d’affichage et les eff
 
 | Mode d’affichage | Son aspect quand il est incorporé |
 | --- | --- |
-| ![](media/service-publish-to-web/publish_to_web6b.png) |Le mode d’affichage **Ajuster à la page** respecte la hauteur et la largeur de page de votre rapport. Si vous définissez les proportions de votre page sur « Dynamique » (par exemple 16:9 ou 4:3), votre contenu est ajusté à l’iFrame que vous avez fourni. En cas d’incorporation dans un iFrame, l’utilisation de l’option **Ajuster à la page** risque de générer un **cadre**, où un fond gris est affiché dans des zones de l’iFrame après que le contenu a été mis à l’échelle de manière à s’ajuster à l’iFrame. Pour diminuer le cadre, définissez la hauteur et la largeur de votre iFrame de manière appropriée. |
+| ![](media/service-publish-to-web/publish_to_web6b.png) |Le mode d’affichage **Ajuster à la page** respecte la hauteur et la largeur de page de votre rapport. Si vous définissez les proportions de votre page sur « Dynamique » (par exemple 16:9 ou 4:3), votre contenu est ajusté au sein de l’iFrame que vous avez fourni. En cas d’incorporation dans un iFrame, l’utilisation de l’option **Ajuster à la page** risque de générer un **cadre**, où un fond gris est affiché dans des zones de l’iFrame après que le contenu a été mis à l’échelle de manière à s’ajuster à l’iFrame. Pour diminuer le cadre, définissez la hauteur et la largeur de votre iFrame de manière appropriée. |
 | ![](media/service-publish-to-web/publish_to_web6d.png) |Avec le mode d’affichage **Taille réelle**, le rapport conserve sa taille telle qu’elle est définie dans la page de rapport. Du coup, des barres de défilement peuvent apparaître dans votre iFrame. Définissez-les afin d’éviter les barres de défilement. |
 | ![](media/service-publish-to-web/publish_to_web6c.png) |Avec le mode d’affichage **Ajuster à la largeur**, le contenu tient dans la zone horizontale de votre iFrame. Une bordure apparaît quand même, mais le contenu est mis à l’échelle pour utiliser tout l’espace horizontal disponible. |
 
@@ -128,15 +128,16 @@ Les éléments visuels personnalisés sont pris en charge par la fonctionnalité
 
 La fonctionnalité **Publier sur le web** est prise en charge pour la majeure partie des sources de données et rapports du service Power BI. Toutefois, les éléments suivants **ne sont ni pris en charge ni disponibles** avec la fonctionnalité Publier sur le web pour le moment :
 
-1. Rapports qui utilisent la sécurité au niveau des lignes
-2. Rapports qui utilisent une source de données de connexion active, notamment une source de données tabulaire Analysis Services hébergée localement, une source de données multidimensionnelle Analysis Services et Azure Analysis Services.
-3. Rapports partagés directement ou via un pack de contenu d’organisation
-4. Rapports d’un groupe dans lequel vous n’êtes pas un membre doté d’autorisations de modification
-5. Les éléments visuels R ne sont pas actuellement pris en charge dans les rapports Publier sur le web.
-6. Exportation de données à partir d’éléments visuels dans un rapport qui a été publié sur le web
-7. Éléments visuels ArcGIS Maps for Power BI
-8. Rapports contenant des mesures DAX au niveau du rapport
-9. [Informations confidentielles ou propriétaires sécurisées](#publish-to-web-from-power-bi)
+- Rapports qui utilisent la sécurité au niveau des lignes
+- Rapports qui utilisent une source de données de connexion active, notamment une source de données tabulaire Analysis Services hébergée localement, une source de données multidimensionnelle Analysis Services et Azure Analysis Services.
+- Rapports partagés directement ou via un pack de contenu d’organisation
+- Rapports d’un groupe dans lequel vous n’êtes pas un membre doté d’autorisations de modification
+- Les éléments visuels R ne sont pas actuellement pris en charge dans les rapports Publier sur le web.
+- Exportation de données à partir d’éléments visuels dans un rapport qui a été publié sur le web
+- Éléments visuels ArcGIS Maps for Power BI
+- Rapports contenant des mesures DAX au niveau du rapport
+- Modèles de requêtes de données à authentification unique
+- [Informations confidentielles ou propriétaires sécurisées](#publish-to-web-from-power-bi)
 
 ## <a name="tenant-setting"></a>Paramètres de locataire
 

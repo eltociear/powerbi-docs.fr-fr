@@ -2,20 +2,20 @@
 title: Vignettes de tableau de bord dans Power BI
 description: Toutes les informations dont vous avez besoin sur les vignettes de tableau de bord dans Power BI. Cela inclut les vignettes créées à partir de SQL Server Reporting Services (SSRS).
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 08/21/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e53945e0a112d9498dc6798e2441dd3d925a64c1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 09fcce65539d89c9d42bc05369f13a6048eb96c2
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249065"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241588"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Vignettes d’un tableau de bord dans Power BI
 Les tableaux de bord et vignettes de tableau de bord caractérisent le service Power BI et non Power BI Desktop. Si vous ne pouvez pas créer ou épingler des vignettes de tableau de bord dans Power BI Mobile, vous [pouvez les afficher et les partager](mobile-tiles-in-the-mobile-apps.md). Par ailleurs, Power BI Mobile vous permet d’[ajouter des images à votre tableau de bord avec votre application iPhone](mobile-iphone-app-get-started.md).
@@ -67,9 +67,9 @@ Saisissez une vignette et [déplacez-la dans le tableau de bord](service-dashboa
    
    * [Ouvrir la feuille de calcul utilisée pour créer cette vignette ](service-reports.md) ![icône de feuille de calcul](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [Afficher en mode Focus](service-focus-mode.md) ![icône de focus](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+    * [Afficher en mode Focus](service-focus-mode.md) ![icône de focus](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [Exporter les données utilisées dans la vignette](power-bi-visualization-export-data.md) ![icône Exporter les données](media/service-dashboard-tiles/export-icon.png)
-     * [Modifier le titre et le sous-titre, ajouter un lien hypertexte, afficher l’heure de la dernière actualisation](service-dashboard-edit-tile.md) ![icone Modifier](media/service-dashboard-tiles/pencil-icon.jpg)
+     * [Modifier le titre et le sous-titre, ajouter un lien hypertexte](service-dashboard-edit-tile.md) ![modifier l’icône](media/service-dashboard-tiles/pencil-icon.jpg)
      * [Exécuter Insights ](service-insights.md) ![icône insights](media/service-dashboard-tiles/power-bi-insights.png)
      * [Épingler la vignette à un autre tableau de bord](service-pin-tile-to-another-dashboard.md)
        ![icone d’épingle](media/service-dashboard-tiles/pin-icon.jpg)
