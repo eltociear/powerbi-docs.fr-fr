@@ -535,6 +535,8 @@ items:
     items:
     - name: Nouveautés de la dernière mise à jour de Power BI Desktop
       href: desktop-latest-update.md
+    - name: Agrégations dans Power BI Desktop (préversion)
+      href: desktop-aggregations.md
     - name: Modèles composites dans Power BI Desktop (préversion)
       href: desktop-composite-models.md
     - name: Relations plusieurs-à-plusieurs dans Power BI Desktop (préversion)
@@ -601,6 +603,8 @@ items:
         href: desktop-import-excel-workbooks.md
       - name: Se connecter aux données à l’aide d’interfaces génériques
         href: desktop-connect-using-generic-interfaces.md
+      - name: Se connecter à un fichier PDF
+        href: desktop-connect-pdf.md
       - name: Se connecter à Adobe Analytics
         href: desktop-connect-adobe-analytics.md
       - name: Se connecter à une base de données Oracle
@@ -683,6 +687,8 @@ items:
       items:
       - name: Éléments visuels pour les rapports
         href: desktop-visual-elements-for-reports.md
+      - name: Créer des info-bulles basées sur les pages de rapport
+        href: desktop-tooltips.md
       - name: Exporter au format PDF et imprimer des rapports
         href: desktop-export-to-pdf.md
       - name: Q&A dans Power BI Desktop
@@ -1346,9 +1352,9 @@ items:
       href: service-admin-power-bi-security.md
     - name: Migration de Power BI pour Office 365 vers Power BI
       href: service-admin-o365portal-retired.md
-ms.openlocfilehash: 55614628ef823534357fa7e1700e21417e821ca6
-ms.sourcegitcommit: 37bb070a71a658cba7ed421feef65015e8b515ae
+ms.openlocfilehash: 7058954c3269da6f3802454c439671989bdcb52e
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821728"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512199"
