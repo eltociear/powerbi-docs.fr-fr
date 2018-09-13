@@ -1,6 +1,6 @@
 ---
-title: Créer un tableau de bord à partir d’un rapport
-description: Créer un tableau de bord à partir d’un rapport
+title: Créer un tableau de bord dans le service Power BI à partir d’un rapport
+description: Créer un tableau de bord dans Power BI à partir d’un rapport
 author: mihart
 manager: kfile
 ms.reviewer: ''
@@ -8,16 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 09/02/2018
 ms.author: mihart
-ms.openlocfilehash: 56a26b50f50dd52d4355cd8326ec0d104dab19c0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a550aabb3590018666a3784e602ede15696862e5
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248927"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44168086"
 ---
-# <a name="create-a-power-bi-dashboard-from-a-report"></a>Créer un tableau de bord à partir d’un rapport
+# <a name="create-a-power-bi-dashboard-in-power-bi-service"></a>Créer un tableau de bord Power BI dans le service Power BI
 Vous avez lu [Tableaux de bord dans Power BI](service-dashboards.md) et vous souhaitez maintenant créer vos propres tableaux de bord. Il existe de nombreuses façons de créer un tableau de bord : à partir d’un rapport, en partant de zéro, à partir d’un jeu de données, en dupliquant un tableau de bord existant, et bien plus encore.  
 
 Il peut être difficile de savoir par où commencer ; nous allons créer un tableau de bord simple et rapide en épinglant des visualisations à partir d’un rapport déjà généré. Lorsque vous aurez suivi ce guide de démarrage rapide, vous aurez une bonne compréhension de la relation entre les tableaux de bord et les rapports ; vous saurez ouvrir le Mode Édition dans l’éditeur de rapport, épingler des vignettes et naviguer entre un tableau de bord et un rapport. Suivez ensuite les liens de la Table des matières à gauche ou des **Étapes suivantes** en bas pour passer à des rubriques plus avancées.

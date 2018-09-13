@@ -684,7 +684,7 @@ items:
       - name: Graphiques de compartimentage dans Power BI
         href: ../power-bi-visualization-treemaps.md
       - name: Graphiques en cascade dans Power BI
-        href: ../power-bi-visualization-waterfall-charts.md
+        href: ../visuals/power-bi-visualization-waterfall-charts.md
       - name: Cartes (vignettes représentant un grand nombre) dans Power BI
         href: ../power-bi-visualization-card.md
       - name: Créer des analyses et des visualisations avancées à l’aide de scripts R dans Power BI
@@ -1144,9 +1144,9 @@ items:
       href: ../service-admin-power-bi-security.md
     - name: Migration de Power BI pour Office 365 vers Power BI
       href: ../service-admin-o365portal-retired.md
-ms.openlocfilehash: a3df6001023dc9b02ce09c33068f232e46604c3a
-ms.sourcegitcommit: 8bad5ed58e9e406aca53996415b1240c2972805e
+ms.openlocfilehash: d25fd05dc0ddd28498dec3b55f67404a10106047
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44343596"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728269"

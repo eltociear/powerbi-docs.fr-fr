@@ -2,20 +2,20 @@
 title: Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
 description: Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
 LocalizationGroup: Data from files
-ms.openlocfilehash: f24d4055bd5fcf5fdee058112c268a1a0e197012
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3244a185c7b7e9caa689ab7b90c184c9bf5b4662
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247169"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044414"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
 Votre responsable attend de vous un rapport présentant vos chiffres de vente les plus récents et vos dernières impressions concernant la campagne avant la fin de la journée. Vos données les plus récentes sont stockées sur différents systèmes tiers et sur des fichiers de votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des éléments visuels et mettre en forme un rapport. Vous commencez à vous inquiéter.
@@ -34,7 +34,7 @@ Mettez ensuite en forme vos données sous forme de tableau : Dans Excel, sous l
 ![données sous forme de tableau](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
 ## <a name="upload-your-excel-file-into-power-bi"></a>Télécharger votre fichier Excel dans Power BI
-Power BI se connecte à de nombreuses sources de données, y compris des fichiers Excel stockés sur votre ordinateur. Pour commencer, connectez-vous à Power BI. Si vous n’êtes pas encore inscrit, [vous pouvez le faire gratuitement](https://powerbi.com).
+Power BI se connecte à de nombreuses sources de données, y compris des fichiers Excel stockés sur votre ordinateur. Pour commencer, connectez-vous au service Power BI. Si vous n’êtes pas encore inscrit, [vous pouvez le faire gratuitement](https://powerbi.com).
 
 Vous voulez créer un tableau de bord. Ouvrez **Mon espace de travail**, puis sélectionnez l’icône **+ Créer**.
 

@@ -2,21 +2,21 @@
 title: Exporter des données à partir d’une visualisation Power BI
 description: Exportez des données à partir d’une visualisation de rapport et d’une visualisation de tableau de bord et affichez-les dans Excel.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 09/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7bf7742726a66fe5933bb180471af4d766457255
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 55fe4a2e8b3121431567309e935e9fa4a15cd31b
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599407"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44168040"
 ---
 # <a name="export-data-from-visualizations"></a>Exportez des données à partir de visualisations
 Si vous souhaitez afficher les données qui sont utilisées pour créer une visualisation, vous pouvez [le faire dans Power BI](service-reports-show-data.md) ou exporter ces données vers Excel sous forme de fichier .xlsx ou .csv.   
@@ -78,7 +78,7 @@ Pour effectuer cette procédure, ouvrez le [rapport Exemple Analyse de l'approvi
    ![](media/power-bi-visualization-export-data/power-bi-export-data8.png)
 
 ## <a name="export-underlying-data-details"></a>Exporter les détails concernant les données sous-jacentes
-Ce qui s’affiche à l’écran quand vous sélectionnez **Données sous-jacentes** peut varier selon le cas. L’aide de votre administrateur ou de votre service informatique peut s’avérer nécessaire pour bien comprendre ces détails. In Power BI Desktop ou le service Power BI, dans la vue de création de rapports, une *mesure* s’affiche dans la liste Champs avec une icône représentant une calculatrice ![icône affichée](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Les mesures sont créées dans Power BI Desktop, et non dans le service Power BI.
+Ce qui s’affiche à l’écran quand vous sélectionnez **Données sous-jacentes** peut varier selon le cas. L’aide de votre administrateur ou de votre service informatique peut s’avérer nécessaire pour bien comprendre ces détails. Dans Power BI Desktop ou le service Power BI, dans la vue de création de rapports, une *mesure* s’affiche dans la liste Champs avec une icône représentant une calculatrice ![icône affichée](media/power-bi-visualization-export-data/power-bi-calculator-icon.png). Les mesures sont créées dans Power BI Desktop, et non dans le service Power BI.
 
 
 | Contenu du visuel |                                                                              Contenu de l’exportation                                                                              |

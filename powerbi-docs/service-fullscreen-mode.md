@@ -1,30 +1,30 @@
 ---
-title: Afficher des tableaux de bord, des mosaïques, des pages de rapport et des visualisations en mode plein écran
+title: Afficher des tableaux de bord, des vignettes, des pages de rapport et des visualisations en mode plein écran
 description: Affichez les tableaux de bord, vignettes de tableau de bord, pages de rapport et éléments visuels de rapport en mode plein écran, ou *Mode TV*.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 7b84b473f64b4ee2d37a3a39de9976f2cf147059
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2ff39f0594150c7b29fd88e8f4e4f6baef86e806
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244108"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044322"
 ---
 # <a name="full-screen-mode-in-power-bi-service"></a>Mode plein écran dans le service Power BI
 ## <a name="what-is-full-screen-mode"></a>Qu’est-ce que le mode plein écran ?
 ![tableau de bord en mode normal et en mode plein écran](media/service-fullscreen-mode/power-bi-full-screen-comparison.png)
 
-Affichez votre contenu Power BI (tableaux de bord, pages de rapport, mosaïques et visualisations) sans vous laisser distraire par les menus et barres de navigation.  Vous disposez en permanence d’une vue instantanée complète, et sans fioritures, de votre contenu. Cet affichage est parfois appelé Mode TV. Les fonctionnalités disponibles en mode plein écran varient selon le contenu. 
+Affichez votre contenu Power BI (tableaux de bord, pages de rapport, vignettes et visualisations) sans vous laisser distraire par les menus et barres de navigation.  Vous disposez en permanence d’une vue instantanée complète, et sans fioritures, de votre contenu. Elle est parfois appelée mode TV. Les fonctionnalités disponibles en mode plein écran varient selon le contenu. 
 
-Si vous utilisez Power BI mobile, [le plein écran est disponible pour les applications mobiles Windows 10](mobile-windows-10-app-presentation-mode.md). Power BI Desktop n’a pas de mode plein écran pour les rapports ou les visualisations, mais dispose de Ajuster à la page pour la [vue Relation](desktop-report-view.md) et le [mode focus pour des visuels de rapport](service-focus-mode.md).
+Si vous utilisez Power BI mobile, [le plein écran est disponible pour les applications mobiles Windows 10](mobile-windows-10-app-presentation-mode.md). Power BI Desktop n’a pas de mode plein écran pour les rapports ou les visualisations, mais propose Ajuster à la page pour la [vue Relation et la vue Rapport](desktop-report-view.md) et le [mode focus pour les visuels de rapport](service-focus-mode.md).
 
  
 
@@ -44,7 +44,7 @@ Regardez Amanda ouvrir et parcourir son tableau de bord en mode plein écran, pu
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c31gZkyvC54" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="dashboards-and-report-pages-in-full-screen-mode"></a>Tableaux de bord et pages de rapport en mode plein écran
-1. Dans la barre de menus de Power BI située au-dessus de votre tableau de bord ou rapport, sélectionnez l’icône **plein écran** ![icône plein écran](media/service-fullscreen-mode/power-bi-full-screen-icon.png). Le canevas de tableau de bord ou la page de rapport occupe tout l’écran. L’exemple ci-dessous est un tableau de bord.
+1. Dans la barre de menus du service Power BI située au-dessus de votre tableau de bord ou rapport, sélectionnez l’icône **plein écran** ![icône plein écran](media/service-fullscreen-mode/power-bi-full-screen-icon.png). Le canevas de tableau de bord ou la page de rapport occupe tout l’écran. L’exemple ci-dessous est un tableau de bord.
    
       ![Tableau de bord affiché en mode Plein écran](media/service-fullscreen-mode/power-bi-dash-full-screen.png)
 2. En mode plein écran, vous disposez de plusieurs options de menu.  Pour afficher le menu, déplacez votre souris ou le curseur. 

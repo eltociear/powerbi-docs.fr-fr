@@ -2,31 +2,31 @@
 title: Afficher le contenu de récemment visité dans Power BI
 description: documentation pour Récents dans Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 09/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: c3d75f6cada62e7fc1dd026a4bdfa1daa8e94153
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ae57617b1b70a3ed6181ab164accb69dac29779c
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250928"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044207"
 ---
 # <a name="recent-content-in-power-bi-service"></a>Contenu **récent** dans le service Power BI
 
 
 ## <a name="what-is-recent-content"></a>Qu’est ce que le contenu récent
-Le contenu récent regroupe les derniers éléments que vous avez consultés (maximum 20).  Il peut s’agir de tableaux de bord, de rapports, d’applications et de classeurs dans l’ensemble de vos espaces de travail.
+Le contenu récent regroupe les derniers éléments que vous avez consultés dans le service Power BI (maximum 20).  Il peut s’agir de tableaux de bord, de rapports, d’applications et de classeurs dans l’ensemble de vos espaces de travail.
 
 ![fenêtre Contenu récent](media/service-recent/power-bi-recent-screen.png)
 
-Regardez Amanda montrer comment les listes de contenu **Récent** sont remplies, puis suivez les instructions détaillées sous la vidéo pour essayer vous-même.
+Regardez Amanda montrer comment les listes de contenu **Récent** du service Power BI sont remplies, puis suivez les instructions détaillées sous la vidéo pour essayer vous-même.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 

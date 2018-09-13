@@ -2,21 +2,21 @@
 title: Définir des alertes de données dans le service Power BI
 description: Découvrez comment utiliser le service Microsoft Power BI afin de définir des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà des limites que vous définissez.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ffbad48df6665d5dff6c4eca97e86e6f2850565f
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 153676c983ef81bcccf1ea6bf0adf95ef29a2765
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137545"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44167925"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Alertes de données dans le service Power BI
 Définissez des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà des limites que vous définissez. 
@@ -42,15 +42,15 @@ Cet exemple utilise une vignette de carte de l’exemple de tableau Retail Analy
 1. Commencez sur un tableau de bord. Dans une jauge de tableau de bord, un indicateur de performance clé ou une vignette de carte, sélectionnez les points de suspension.
    
    ![Vignette Total Stores](media/service-set-data-alerts/powerbi-card.png)
-2. Sélectionnez l’icône en forme de cloche ![icône d’alerte](media/service-set-data-alerts/power-bi-bell-icon.png) pour ajouter une ou plusieurs alertes pour **Total stores** (Nombre total de magasins).
+2. Sélectionnez l’icône en forme de cloche ![icône d’alerte](media/service-set-data-alerts/power-bi-bell-icon.png) ou **Gérer les alertes** pour ajouter une ou plusieurs alertes pour **Total stores** (Nombre total de magasins).
    
-1. Pour commencer, sélectionnez **+ Ajouter une règle d’alerte**, vérifiez que le curseur est défini sur **Activé** et donnez un titre à l’alerte. Les titres vous aident à reconnaître facilement vos alertes.
+1. Dans le volet **Gérer les alertes**, sélectionnez **+ Ajouter une règle d’alerte**.  Vérifiez que le curseur est défini sur **Activé** et donnez un titre à votre alerte. Les titres vous aident à reconnaître facilement vos alertes.
    
    ![Fenêtre Gérer les alertes](media/service-set-data-alerts/powerbi-alert-title.png)
 4. Faites défiler vers le bas, puis entrez les détails de l’alerte.  Dans cet exemple, nous allons créer une alerte qui nous avertit une fois par jour si le nombre total de magasins est supérieur à 100. Les alertes s’affichent dans notre centre de notification. Nous allons également demander à Power BI de nous envoyer un courrier électronique.
    
    ![Fenêtre Gérer les alertes, Seuil défini](media/service-set-data-alerts/power-bi-set-alert-details.png)
-5. Sélectionnez **Enregistrer**.
+5. Sélectionnez **Enregistrer et fermer**.
 
 ## <a name="receiving-alerts"></a>Recevoir des alertes
 Lorsque les données suivies atteignent un des seuils définis, cela a plusieurs conséquences. Tout d’abord, Power BI vérifie si cela fait plus d’une heure ou plus de 24 heures (selon l’option sélectionnée) que la dernière alerte a été envoyée. Tant que les données se trouvent au-delà du seuil, vous recevez une alerte.
@@ -104,6 +104,4 @@ Il existe de nombreuses façons de gérer vos alertes : à partir de la vignett
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer un flux Microsoft Flow qui inclut une alerte de données](service-flow-integration.md)    
 [Définir des alertes de données sur votre appareil mobile](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Qu’est-ce que Power BI ?](power-bi-overview.md)    
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 
