@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8e31d3128e38453212a8a0ecef2a139fa2d0f356
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 565c43be3489c23f26a98f99ce2d70022be965d2
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250542"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727993"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Configurer des applications mobiles avec Microsoft Intune
 Microsoft Intune permet aux organisations de gérer des appareils et des applications. Grâce à l’intégration des applications mobiles Power BI pour iOS et Android à Intune, vous pouvez gérer votre application sur vos appareils et contrôler la sécurité. Vous pouvez mettre en place des stratégies de configuration pour contrôler divers éléments, comme la nécessité de disposer d’un code confidentiel d’accès, la façon dont l’application traite les données et même le chiffrement des données de l’application quand cette dernière n’est pas utilisée.
@@ -163,7 +163,7 @@ Une fois l’installation de votre application terminée, la mention **Géré pa
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Configurer et déployer des stratégies de gestion des applications mobiles dans la console Microsoft Intune](https://technet.microsoft.com/library/dn878026.aspx)  
-[Applications Power BI pour appareils mobiles](mobile-apps-for-mobile-devices.md)  
+[Applications Power BI pour appareils mobiles](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

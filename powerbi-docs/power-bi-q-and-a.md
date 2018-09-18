@@ -2,20 +2,20 @@
 title: Présentation de Questions et réponses dans Power BI Desktop et le service Power BI
 description: Rubrique de vue d’ensemble de la documentation pour les requêtes en langage naturel des questions et réponses Power BI.
 author: mihart
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/18/2018
+ms.date: 01/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 1680a1aacf84eb5440703385dc831c32433456bb
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: 94faaac1067b2ab377639d0d6a1822b182e214b6
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44167948"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726567"
 ---
 # <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>Questions et réponses dans Power BI Desktop et le service Power BI
 ## <a name="what-is-qa"></a>Qu’est-ce que Q&R ?
@@ -48,9 +48,11 @@ Outre l’utilisation de Questions et réponses pour explorer leurs données, le
 
 ## <a name="how-does-qa-know-how-to-answer-questions"></a>Comment la fonctionnalité Q&R sait-elle répondre aux questions ?
 ### <a name="which-datasets-does-qa-use"></a>Quels jeux de données la fonctionnalité Q&R utilise-t-elle ?
-Comment la fonctionnalité Q&R réussit-elle à répondre à des questions spécifiques aux données ? Elle s’appuie sur le nom des tables, des colonnes et des champs calculés du jeu de données sous-jacent. La façon dont le propriétaire du jeu de données nomme les éléments est donc très importante. Si vous ne parvenez pas à obtenir des réponses à vos questions avec Questions et réponses, contactez le propriétaire du jeu de données pour voir s’il peut rendre le jeu de données plus conviviale.
+Comment la fonctionnalité Q&R réussit-elle à répondre à des questions spécifiques aux données ? Elle s’appuie sur le nom des tables, des colonnes et des champs calculés du jeu de données sous-jacent. La façon dont vous (ou le propriétaire du jeu de données) nommez les éléments est donc très importante.
 
-Questions et réponses peut répondre aux questions qui sont basées sur la façon dont le jeu de données est organisé. Comment cela fonctionne-t-il pour les données issues de Salesforce ? Quand vous vous connectez à votre compte salesforce.com, Power BI génère automatiquement un tableau de bord.  Avant de commencer à poser des questions, regardez les données qui s’affichent dans les visualisations du tableau de bord, ainsi que les données affichées dans la liste déroulante de Q&R.
+Par exemple, supposons que vous disposiez d’un tableau Excel nommé « Ventes » et comprenant les colonnes suivantes : « Produit », « Mois », « Unités vendues », « Ventes brutes » et « Bénéfices ». Vous pouvez poser des questions sur n’importe laquelle de ces entités.  Vous pouvez demander ce qui suit : « afficher les *ventes*», « total des *bénéfices* par *mois*», « trier les *produits* par *unités vendues*» et ainsi de suite.
+
+Q&R peut répondre aux questions qui sont basées sur la façon dont votre jeu de données est organisé. Comment cela fonctionne-t-il pour les données issues de Salesforce ? Quand vous vous connectez à votre compte salesforce.com, Power BI génère automatiquement un tableau de bord.  Avant de commencer à poser des questions, regardez les données qui s’affichent dans les visualisations du tableau de bord, ainsi que les données affichées dans la liste déroulante de Q&R.
 
 * Si les étiquettes et les valeurs d’axe des visualisations comprennent les mots « ventes », « compte », « mois » et « opportunités », vous pouvez poser des questions telles que : « quel *compte* possède le nombre le plus élevé d’*opportunités* ? » ou « afficher les *ventes* par mois sous la forme d’un graphique à barres ».
 * Si la liste déroulante inclut les mots « vendeur », « état » et « année », vous pouvez poser des questions telles que : « quel *vendeur* a obtenu les *ventes* les plus basses en *Floride* en *2013* ? »
@@ -68,7 +70,7 @@ Pour plus d’informations sur les mots clés reconnus par Q&R, consultez [Conse
 ## <a name="for-more-details-about-power-bi-qa"></a>Pour plus d’informations sur les Questions et réponses de Power BI :
 [Présentation : Utilisation du moteur Questions et réponses dans les rapports et tableaux de bord Power BI](power-bi-tutorial-q-and-a.md) : instructions étape par étape sur l’utilisation du moteur Questions et réponses et vue d’ensemble de son fonctionnement.
 
-[Application Microsoft Power BI](mobile-apps-ios-qna.md) pour iOS sur les appareils iPad, iPhone et iPod Touch.
+[Application Microsoft Power BI](consumer/mobile/mobile-apps-ios-qna.md) pour iOS sur les appareils iPad, iPhone et iPod Touch.
 
 [Microsoft Power BI Embedded](developer/qanda.md) Incorporez Questions et réponses dans une application.
 
@@ -78,6 +80,8 @@ Pour plus d’informations sur les mots clés reconnus par Q&R, consultez [Conse
 
 [Activer Questions et réponses pour vos jeux de données locaux](service-q-and-a-direct-query.md) Si vous avez besoin d’une passerelle pour vous connecter au jeu de données, utilisez les paramètres Power BI pour activer et désactiver Questions et réponses.
 
-[Tutoriel : Utiliser le moteur Questions et réponses avec l’exemple Analyse de la vente au détail dans Power BI](power-bi-visualization-introduction-to-q-and-a.md) : utilisez Questions et réponses dans le cadre d’un tutoriel proposant des cas concrets.
+[Didacticiel : Utiliser le moteur Questions et réponses avec l’exemple Analyse de la vente au détail dans Power BI](power-bi-visualization-introduction-to-q-and-a.md) : utilisez Questions et réponses dans le cadre d’un didacticiel proposant des cas concrets.
+
+[Optimiser vos données avec Questions et réponses](service-prepare-data-for-q-and-a.md) : vous êtes chargé de la création de jeux de données et de modèles de données ?  Cette rubrique est pour vous.
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

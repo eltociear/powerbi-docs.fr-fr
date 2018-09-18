@@ -2,21 +2,21 @@
 title: Ajouter un lien hypertexte à une zone de texte dans un rapport
 description: Ajouter un lien hypertexte à une zone de texte dans le service Power BI et Power BI Desktop
 author: mihart
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/06/2018
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: da3c67a62cf32bdbc0413f23f21fd169ea1809cc
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: e8a03cdd666f84b788d3bd90b8ebf2a84fc12a9b
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44168017"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726981"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Ajouter un lien hypertexte à une zone de texte dans un rapport
 Vous pouvez ajouter des zones de texte aux rapports, les épingler à des tableaux de bord à partir de rapports et les ajouter directement à des tableaux de bord. Les liens hypertexte peuvent être ajoutés à une zone de texte, quel que soit son emplacement.  

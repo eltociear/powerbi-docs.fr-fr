@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 760eda5625bd52bf7129ba7cfe5f213921d469b7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a85733e8450c9e1d3574afb71ace64fa2622fe0c
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247800"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44725624"
 ---
 # <a name="create-a-new-report-from-an-existing-report-copy-a-report"></a>Créer un nouveau rapport à partir d’un rapport existant (copier un rapport)
 Vous disposez peut-être déjà d’un rapport qui se connecte à votre jeu de données et possède certains éléments visuels que vous souhaitez réutiliser ou modifier.  Pourquoi ne pas simplement copier ce rapport comme base pour créer un nouveau rapport ?  Pour ce faire :
@@ -37,7 +37,7 @@ Vous disposez peut-être déjà d’un rapport qui se connecte à votre jeu de d
 5. Amusez-vous à mettre à jour et à modifier votre nouveau rapport.
 
 ## <a name="next-steps"></a>Étapes suivantes :
-[Créer des visualisations](power-bi-report-add-visualizations-ii.md)
+[Créer des visualisations](visuals/power-bi-report-add-visualizations-ii.md)
 
 [Supprimer des visualisations](service-delete.md) dont vous n’avez pas besoin
 

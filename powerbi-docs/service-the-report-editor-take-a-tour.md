@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ef05531ee6080593d232e48a2118a9be7e8cbd19
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 78d9004a718990cbcd310835e8e9b8ae5e3eae17
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34299467"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726636"
 ---
 # <a name="the-report-editortake-a-tour"></a>Découverte de l’éditeur de rapport
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Modifier des rapports dans Power BI Desktop et le service Power BI
@@ -65,7 +65,7 @@ Pour supprimer un champ de la visualisation, sélectionnez le **X** à droite de
 
 ![Supprimer StoreType dans la légende](media/service-the-report-editor-take-a-tour/deletefield.png)
 
-Pour plus d’informations, consultez [Ajouter des visualisations à un rapport Power BI](power-bi-report-add-visualizations-i.md).
+Pour plus d’informations, consultez [Ajouter des visualisations à un rapport Power BI](visuals/power-bi-report-add-visualizations-i.md).
 
 ### <a name="format-your-visuals"></a>Mettre en forme vos éléments visuels
 Sélectionnez l’icône Rouleau de peinture pour afficher le volet de mise en forme. Les options disponibles varient selon le type de la visualisation sélectionnée.
@@ -74,9 +74,9 @@ Sélectionnez l’icône Rouleau de peinture pour afficher le volet de mise en f
 
 Les possibilités de mise en forme sont pratiquement illimitées.  Pour en savoir plus, explorez par vous-même ou consultez les articles suivants :
 
-* [Personnalisation du titre, de l’arrière-plan et de la légende de la visualisation](power-bi-visualization-customize-title-background-and-legend.md)
-* [Mise en forme des couleurs](service-getting-started-with-color-formatting-and-axis-properties.md)
-* [Personnalisation des propriétés des axes X et Y](power-bi-visualization-customize-x-axis-and-y-axis.md)
+* [Personnalisation du titre, de l’arrière-plan et de la légende de la visualisation](visuals/power-bi-visualization-customize-title-background-and-legend.md)
+* [Mise en forme des couleurs](visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
+* [Personnalisation des propriétés des axes X et Y](visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### <a name="add-analytics-to-your-visualizations"></a>Ajouter des analyses à vos visualisations
 Sélectionnez l’icône Loupe pour afficher le volet Analyse. Les options disponibles varient selon le type de la visualisation sélectionnée.
@@ -126,7 +126,7 @@ Le canevas de rapport est l’emplacement où votre travail s’affiche. Lorsque
 ## <a name="next-steps"></a>Étapes suivantes :
 [Créer un rapport](service-report-create-new.md)
 
-Découvrez plus en détail les rapports dans le [service Power BI](service-reports.md), [Power BI Desktop](desktop-report-view.md) et [Power BI Mobile](mobile-apps-view-phone-report.md).
+Découvrez plus en détail les rapports dans le [service Power BI](service-reports.md), [Power BI Desktop](desktop-report-view.md) et [Power BI Mobile](consumer/mobile/mobile-apps-view-phone-report.md).
 
 [Power BI – Concepts de base](service-basic-concepts.md)
 

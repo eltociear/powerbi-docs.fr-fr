@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: maghan
-ms.openlocfilehash: 2147a5ccb1df8bd107d662559c97400a24dd490e
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: c407b967ce4a8c1ee31b9a750f2e281ff0a8caa7
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092112"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558490"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publier des visuels personnalisés dans AppSource
 Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser.
@@ -32,7 +32,7 @@ Une fois que vous avez terminé de coder et de tester votre visuel personnalisé
 | --- | --- | --- |
 | Le package Pbiviz contient toutes les métadonnées requises |Oui |Nom du visuel<br>Nom d’affichage<br>GUID<br>Version<br>Description<br>Nom et e-mail de l’auteur |
 | Exemple de fichier de rapport .pbix |Oui |Pour présenter votre visuel, vous devez en démontrer son utilité aux utilisateurs. Vous devez insister sur la valeur que le visuel apporte à l’utilisateur et donner des exemples d’utilisation, des options de mise en forme, etc. Vous pouvez également ajouter une page de *conseils* à la fin. Dans cette page, donnez quelques conseils et astuces, expliquez ce qu’il faut éviter de faire et donnez d’autres indications.<br>L’exemple de fichier de rapport .pbix doit pouvoir être utilisé hors connexion, sans connexion externe |
-| Icône |Oui |Vous devez inclure le logo du visuel personnalisé qui s’affiche sur la page principale de l’Office Store. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Les dimensions doivent être précisément de 300 pixels (largeur) x 300 pixels (hauteur). **Important :** Lisez attentivement le [petit guide](https://docs.microsoft.com/en-us/office/dev/store/craft-effective-appsource-store-images) avant de soumettre l’icône. |
+| Icône |Oui |Vous devez inclure le logo du visuel personnalisé qui s’affiche sur la page principale de l’Office Store. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Les dimensions doivent être précisément de 300 pixels (largeur) x 300 pixels (hauteur). **Important :** Lisez attentivement le [petit guide](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) avant de soumettre l’icône. |
 | Captures d’écran |Oui |Vous devez fournir au moins une capture d’écran. Les formats .png, .jpg, .jpeg et .gif sont disponibles. La taille doit être précisément de 1 366 px (largeur) sur 768 px (hauteur). Elle ne peut pas dépasser 1 024 Ko. *Pour une utilisation optimale, ajoutez des bulles de texte pour expliquer la proposition de valeur des principales fonctionnalités affichées dans chaque capture d’écran.* |
 | Lien vers le support |Oui |Fournissez l’URL à laquelle les clients peuvent se connecter s’ils rencontrent des problèmes avec votre visuel. Le format de votre URL doit inclure https:// ou http://. |
 | Lien vers le document sur la confidentialité |Oui |Indiquez un lien vers la politique de confidentialité pour les clients qui utilisent votre visuel. Le format de votre lien doit inclure https:// ou http://. |
@@ -130,7 +130,7 @@ Une fois votre visuel créé, vous pouvez éventuellement le faire certifier. Ce
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer des visuels personnalisés à l’aide des outils de développement](../service-custom-visuals-getting-started-with-developer-tools.md)  
-[Visualisations dans Power BI](../power-bi-report-visualizations.md)  
+[Visualisations dans Power BI](../visuals/power-bi-report-visualizations.md)  
 [Visualisations personnalisées dans Power BI](../power-bi-custom-visuals.md)  
 [*Certification* d’un visuel personnalisé](../power-bi-custom-visuals-certified.md)
 

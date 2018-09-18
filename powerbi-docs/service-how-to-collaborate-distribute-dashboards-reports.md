@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 585c1c854ed3e95cc176d34f442fec6416f23dcd
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 7b1b55475e2ad19c869ba92cdb9621caa0fc3538
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39623950"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726659"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Comment travailler en collaboration et partager des documents dans Power BI ?
 
@@ -83,9 +83,9 @@ Dans les applications mobiles Power BI pour les appareils iOS et Android, vous p
 
 Vous partagez une capture instantanée de la vignette, du rapport et du visuel et vos destinataires voient cet élément exactement tel qu’il était quand vous avez envoyé l’e-mail. Le message contient également un lien vers le tableau de bord ou le rapport. Si vos destinataires possèdent une licence Power BI Pro ou que le contenu est dans une [capacité Premium](service-premium.md), et que vous avez déjà partagé l’objet avec eux, ils peuvent l’ouvrir. Vous pouvez envoyer des instantanés de vignettes à tout le monde, pas simplement à vos collègues dans le même domaine de messagerie.
 
-En savoir plus sur l’[annotation et le partage de vignettes, de rapports et de visuels](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) à partir des applications mobiles iOS et Android.
+En savoir plus sur l’[annotation et le partage de vignettes, de rapports et de visuels](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) à partir des applications mobiles iOS et Android.
 
-Vous pouvez également [partager une capture instantanée d’une vignette](mobile-windows-10-phone-app-get-started.md) à partir de l’application Power BI pour les appareils Windows 10.
+Vous pouvez également [partager une capture instantanée d’une vignette](consumer/mobile/mobile-windows-10-phone-app-get-started.md) à partir de l’application Power BI pour les appareils Windows 10.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Imprimer ou enregistrer au format PDF ou dans un autre format de fichier statique
 Vous pouvez imprimer ou enregistrer au format PDF (ou dans un autre format de fichier statique) un tableau de bord entier, une vignette de tableau de bord, une page de rapport ou une visualisation à partir du service Power BI. Les rapports ne peuvent être imprimés qu’une page à la fois. Vous ne pouvez peut pas imprimer l’intégralité du rapport en une fois. En savoir plus sur l’[impression ou l’enregistrement en tant que fichier statique](service-print.md).

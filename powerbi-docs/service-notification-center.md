@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ca8b7ded6427f912933618ebdeaeeecea41b8681
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 8db686b842f01653e45e8d2d6313cb4ac39bcaeb
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249936"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727165"
 ---
 # <a name="power-bi-notifications"></a>Notifications Power BI
 Le centre de notifications est un flux séquentiel d’informations sur votre expérience Power BI. Ouvrez-le pour voir les messages sur les nouveaux tableaux de bord partagés avec vous, les modifications apportées à votre espace de groupe, les informations sur les événements et réunions Power BI, les alertes que vous avez définies, et bien plus encore. Vous pouvez [définir des alertes dans le service Power BI](service-set-data-alerts.md), ainsi que dans les applications mobiles Power BI.
@@ -40,7 +40,7 @@ Regardez Amanda passer en revue les notifications qu’elle a reçues, les gére
 ### <a name="next-steps"></a>Étapes suivantes
 * [Alertes de données dans le service Power BI](service-set-data-alerts.md)
 * [Créer un flux Microsoft Flow déclenché par une alerte de données Power BI](service-flow-integration.md)
-* [Définir des alertes de données dans l’application iPhone (Power BI pour iOS)](mobile-set-data-alerts-in-the-mobile-apps.md)
-* [Définir des alertes dans l’application mobile Power BI pour Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Définir des alertes de données dans l’application iPhone (Power BI pour iOS)](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
+* [Définir des alertes dans l’application mobile Power BI pour Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

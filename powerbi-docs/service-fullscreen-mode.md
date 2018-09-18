@@ -1,5 +1,5 @@
 ---
-title: Afficher des tableaux de bord, des vignettes, des pages de rapport et des visualisations en mode plein écran
+title: Afficher des tableaux de bord, des mosaïques, des pages de rapport et des visualisations en mode plein écran
 description: Affichez les tableaux de bord, vignettes de tableau de bord, pages de rapport et éléments visuels de rapport en mode plein écran, ou *Mode TV*.
 author: mihart
 manager: kvivek
@@ -11,20 +11,20 @@ ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 2ff39f0594150c7b29fd88e8f4e4f6baef86e806
-ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
+ms.openlocfilehash: 58a739c0d566030d2b09094264da14f6afd6d6fc
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44044322"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727579"
 ---
 # <a name="full-screen-mode-in-power-bi-service"></a>Mode plein écran dans le service Power BI
 ## <a name="what-is-full-screen-mode"></a>Qu’est-ce que le mode plein écran ?
 ![tableau de bord en mode normal et en mode plein écran](media/service-fullscreen-mode/power-bi-full-screen-comparison.png)
 
-Affichez votre contenu Power BI (tableaux de bord, pages de rapport, vignettes et visualisations) sans vous laisser distraire par les menus et barres de navigation.  Vous disposez en permanence d’une vue instantanée complète, et sans fioritures, de votre contenu. Elle est parfois appelée mode TV. Les fonctionnalités disponibles en mode plein écran varient selon le contenu. 
+Affichez votre contenu Power BI (tableaux de bord, pages de rapport, mosaïques et visualisations) sans vous laisser distraire par les menus et barres de navigation.  Vous disposez en permanence d’une vue instantanée complète, et sans fioritures, de votre contenu. Elle est parfois appelée mode TV. Les fonctionnalités disponibles en mode plein écran varient selon le contenu. 
 
-Si vous utilisez Power BI mobile, [le plein écran est disponible pour les applications mobiles Windows 10](mobile-windows-10-app-presentation-mode.md). Power BI Desktop n’a pas de mode plein écran pour les rapports ou les visualisations, mais propose Ajuster à la page pour la [vue Relation et la vue Rapport](desktop-report-view.md) et le [mode focus pour les visuels de rapport](service-focus-mode.md).
+Si vous utilisez Power BI mobile, [le plein écran est disponible pour les applications mobiles Windows 10](consumer/mobile/mobile-windows-10-app-presentation-mode.md). Power BI Desktop n’a pas de mode plein écran pour les rapports ou les visualisations, mais propose Ajuster à la page pour la [vue Relation et la vue Rapport](desktop-report-view.md) et le [mode focus pour les visuels de rapport](service-focus-mode.md).
 
  
 

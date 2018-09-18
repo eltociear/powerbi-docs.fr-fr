@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d683ce3d06e2ac6be6c51f257e4f9483e718e2d8
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: b34c16337158e784b0c41bd3e3fd93aca9504cd7
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624388"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727303"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Partager des rapports et des tableaux de bord Power BI avec des collègues et d’autres utilisateurs
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI propose également [d’autres façons de collaborer et de distribuer des tableaux de bord et des rapports](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -27,7 +27,7 @@ Que vous partagiez du contenu à l’intérieur ou à l’extérieur de votre or
 
 Vous pouvez partager des tableaux de bord et des rapports à différents endroits du service Power BI : Favoris, Récents, Partagés avec moi (si le propriétaire le permet), Mon espace de travail ou d’autres espaces de travail. Quand vous partagez un tableau de bord ou un rapport avec des utilisateurs, ces derniers peuvent l’afficher et interagir avec, mais pas le modifier. Ils voient les mêmes données que vous dans le tableau de bord ou le rapport, sauf si la [Sécurité au niveau des lignes](service-admin-rls.md) est appliquée. Ils peuvent également le partager avec leurs collègues, si vous les y autorisez. Les utilisateurs qui ne font pas partie de votre organisation peuvent consulter et interagir avec le tableau de bord ou le rapport, mais pas le partager. 
 
-Vous pouvez également [partager un tableau de bord à partir de l’une des applications mobiles Power BI](mobile-share-dashboard-from-the-mobile-apps.md). Vous pouvez partager des tableaux de bord à partir du service Power BI et des applications mobiles Power BI, mais pas de Power BI Desktop.
+Vous pouvez également [partager un tableau de bord à partir de l’une des applications mobiles Power BI](consumer/mobile/mobile-share-dashboard-from-the-mobile-apps.md). Vous pouvez partager des tableaux de bord à partir du service Power BI et des applications mobiles Power BI, mais pas de Power BI Desktop.
 
 ## <a name="video-share-a-dashboard"></a>Vidéo : Partager un tableau de bord
 Regardez Amanda partager son tableau de bord avec des collègues à l’intérieur et à l’extérieur de son entreprise. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même.

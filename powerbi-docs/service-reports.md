@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: da9a4ffad948a43077d864e442af36b0db6bb617
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 80e5b31f4fd8e59333848da26995388874d1746c
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136959"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728039"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
 ## <a name="what-is-a-power-bi-report"></a>Qu’est-ce qu’un rapport Power BI ?
@@ -27,7 +27,7 @@ Ce rapport comporte 3 pages (ou onglets). Nous affichons actuellement la page St
 
 Si vous êtes novice dans Power BI, vous pouvez obtenir de bonnes bases en lisant [Power BI – Concepts de base](service-basic-concepts.md).
 
-Les rapports sont une caractéristique du service Power BI et de Power BI Desktop. L’expérience d’utilisation des rapports est presque identique. Pour les applications mobiles, vous ne pouvez pas créer de rapports mais vous pouvez [afficher, partager et annoter des rapports](mobile-reports-in-the-mobile-apps.md).
+Les rapports sont une caractéristique du service Power BI et de Power BI Desktop. L’expérience d’utilisation des rapports est presque identique. Pour les applications mobiles, vous ne pouvez pas créer de rapports mais vous pouvez [afficher, partager et annoter des rapports](consumer/mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="advantages-of-reports"></a>Avantages des rapports
 Les rapports sont basés sur un seul jeu de données. Les visualisations dans un rapport représentent chacune une pépite d’informations. Par ailleurs, les visualisations ne sont pas statiques. Vous pouvez ajouter et supprimer des données, modifier les types de visualisations et appliquer des filtres et segments à mesure que vous explorez les données pour découvrir des informations et trouver des réponses. Plus encore qu’un tableau de bord, un rapport est hautement interactif et personnalisable, et les visualisations s’actualisent à mesure que les données sous-jacentes changent.

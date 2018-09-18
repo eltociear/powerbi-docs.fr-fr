@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: eacadb04935dd0c929a85904335b613f3d5d4d58
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 736d4b53f82255e84e3bd54a2177ae17c264039b
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251664"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726751"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Modes Lecture et Édition dans les rapports du service Power BI
 Dans le service Power BI (mais pas dans Power BI Desktop), il existe deux modes d’utilisation et d’affichage des rapports : le mode Lecture et le mode Édition. Le mode Lecture est disponible pour tous les utilisateurs et il est spécialement conçu pour les *consommateurs* de données tandis que le mode Édition est disponible uniquement pour les propriétaires et les *créateurs* de rapports.
@@ -59,13 +59,13 @@ Ce graphique ne répertorie pas toutes les fonctionnalités de rapport du servic
 | [Dupliquer une page de rapport](power-bi-report-copy-paste-page.md) | Non  | Oui |
 | [Supprimer une page de rapport](service-delete.md) | non | oui |
 |**Utilisation des visualisations de rapports**|
-| [Ajouter des visualisations à un rapport](power-bi-report-add-visualizations-i.md) | Non  | Oui |
+| [Ajouter des visualisations à un rapport](visuals/power-bi-report-add-visualizations-i.md) | Non  | Oui |
 | [Ajouter des zones de texte et des formes à un rapport](power-bi-reports-add-text-and-shapes.md) | Non  | Oui |
 | [Utiliser le volet Mise en forme du rapport](service-the-report-editor-take-a-tour.md) | Non | Oui |
 | [Définir des interactions entre les visuels](service-reports-visual-interactions.md) | Non  | Oui |
 | [Afficher les données utilisées pour créer la visualisation](service-reports-show-data.md) | Non  | Oui |
 | [Configurer l’exploration](power-bi-visualization-drill-down.md) | Non  | Oui |
-| [Modifier la visualisation utilisée](power-bi-report-change-visualization-type.md) | Non | Oui|
+| [Modifier la visualisation utilisée](visuals/power-bi-report-change-visualization-type.md) | Non | Oui|
 | [Supprimer une visualisation, une zone de texte ou une forme](service-delete.md)| Non | Oui |
 
 

@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b2d8509c83ccce3d76926d926c64061ca78c100d
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: fc4d62134bccae1a1ac0fd10444dd47c84ecc945
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256167"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727027"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>Packages R dans le service Power BI
 Vous pouvez utiliser le puissant [langage de programmation R](https://www.r-project.org/) pour créer des visuels dans le service Power BI. De nombreux packages R sont pris en charge dans le service Power BI (et bien plus encore sont pris en charge tout le temps), mais certains packages ne le sont pas.
 
-Les sections suivantes présentent un tableau contenant les packages R pris en charge dans Power BI, et ceux qui ne le sont pas, classés par ordre alphabétique. Pour en savoir plus sur l’utilisation de R dans Power BI, consultez l’article [Visuels R](service-r-visuals.md).
+Les sections suivantes présentent un tableau contenant les packages R pris en charge dans Power BI, et ceux qui ne le sont pas, classés par ordre alphabétique. Pour en savoir plus sur l’utilisation de R dans Power BI, consultez l’article [Visuels R](visuals/service-r-visuals.md).
 
 ## <a name="request-support-for-a-new-r-package"></a>Demander la prise en charge d’un nouveau package R
 Les packages R pris en charge pour le **service Power BI** se trouvent dans la section suivante intitulée **Packages pris en charge**. Si vous souhaitez demander la prise en charge d’un package R introuvable dans cette liste, vous pouvez envoyer un e-mail décrivant votre demande à l’[équipe chargé de traiter les commentaires sur R dans Power BI](mailto:rinpbifb@microsoft.com).
@@ -475,7 +475,7 @@ Le tableau suivant indique les packages **pris en charge** dans le service Power
 |MASS| stats| gmodels|
 |MasterBayes|2.55| https://cran.r-project.org/web/packages/MasterBayes/index.html|
 |Matrice| 1.2-10| https://cran.r-project.org/web/packages/Matrix/index.html|
-|Matrix| 1.2-10| https://cran.r-project.org/web/packages/Matrix/index.html|
+|Matrice| 1.2-10| https://cran.r-project.org/web/packages/Matrix/index.html|
 |matrixcalc| coda| N/A|
 |matrixcalc| 1.0-3| https://cran.r-project.org/web/packages/matrixcalc/index.html|
 |MatrixModels| Rcpp (>= 0.11.2)| methods|
@@ -676,7 +676,7 @@ Le tableau suivant indique les packages **pris en charge** dans le service Power
 |relimp| 1.0-5| https://cran.r-project.org/web/packages/relimp/index.html|
 |rematch| 1.0.1| https://cran.r-project.org/web/packages/rematch/index.html|
 |Renext| 3.1-0| https://cran.r-project.org/web/packages/Renext/index.html|
-|reports| 0.1.4| https://cran.r-project.org/web/packages/reports/index.html|
+|rapports| 0.1.4| https://cran.r-project.org/web/packages/reports/index.html|
 |reshape| 0.8.6| https://cran.r-project.org/web/packages/reshape/index.html|
 |reshape2| stats| stats4|
 |reshape2| scales (>= 0.4.1)| stats|
@@ -867,7 +867,7 @@ Le tableau suivant indique les packages **pris en charge** dans le service Power
 |tools| 3.4.1| N/A|
 |topicmodels| 0.2-6| https://cran.r-project.org/web/packages/topicmodels/index.html|
 |TraMineR| 2.0-7| https://cran.r-project.org/web/packages/TraMineR/index.html|
-|translations| 3.4.1| N/A|
+|Traductions| 3.4.1| N/A|
 |tree| 1.0-37| https://cran.r-project.org/web/packages/tree/index.html|
 |treemap| 2.4-2| https://cran.r-project.org/web/packages/treemap/index.html|
 |trimcluster| 0.1-2| https://cran.r-project.org/web/packages/trimcluster/index.html|
@@ -940,7 +940,7 @@ Le tableau suivant indique les packages **non pris en charge** dans le service P
 ## <a name="next-steps"></a>Étapes suivantes
 Pour en savoir plus sur R dans Power BI, consultez les articles suivants :
 
-* [Création de visuels R dans le service Power BI](service-r-visuals.md)
+* [Création de visuels R dans le service Power BI](visuals/service-r-visuals.md)
 * [Créer des visuels Power BI avec R](desktop-r-visuals.md)
 * [Exécution de scripts R dans Power BI Desktop](desktop-r-scripts.md)
 * [Utilisation du langage R dans l’Éditeur de requête](desktop-r-in-query-editor.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 15ca7461c1661b83e1fbb08b66e7d1843bdb1c9f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a86e9f93023e317ba665ec04bb3a67ebfbdfe8a1
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298938"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727441"
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Afficher les données utilisées pour créer la visualisation
 ## <a name="show-data"></a>Afficher les données
@@ -48,7 +48,7 @@ Vous pouvez également exporter les données utilisées pour créer la visualisa
 
 ### <a name="next-steps"></a>Étapes suivantes
 [Exporter des données à partir des visualisations Power BI](power-bi-visualization-export-data.md)    
-[Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)    
+[Visualisations dans des rapports Power BI](visuals/power-bi-report-visualizations.md)    
 [Rapports Power BI](service-reports.md)    
 [Power BI – Concepts de base](service-basic-concepts.md)    
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

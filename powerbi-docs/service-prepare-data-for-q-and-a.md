@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: a6216169eb50ca535b73b07f5553c9b3d5e17470
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: efc806787f2a1d5cd110439c1c5505bb7e77e980
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240959"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727464"
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Optimiser vos données Excel avec Questions et réponses dans Power BI
 Si vous êtes chargé de créer des modèles de données ou des classeurs Excel qui seront utilisés avec Power BI, continuez votre lecture…
@@ -27,7 +27,7 @@ Le moteur Questions et réponses peut être utilisé sur n’importe quel fichie
 ### <a name="how-qa-works-with-excel"></a>Fonctionnement de Questions et réponses avec Excel
 Q&R présente des capacités de compréhension de base du langage naturel qui peuvent être utilisées sur l’ensemble de vos données. Il comprend une recherche par mot clé dépendante du contexte pour les noms de tables, colonnes et champs calculés Excel. Il a également une connaissance intégrée de la manière dont les données doivent être filtrées, triées, agrégées, regroupées et affichées. 
 
-Par exemple, si vous disposiez d’un tableau Excel nommé « Ventes » comprenant les colonnes « Produits », « Mois », « Unités vendues », « Ventes brutes » et « Bénéfices », vous pourriez poser des questions sur l’une de ces entités.  Vous pourriez demander d’afficher les ventes, le total des bénéfices par mois, les produits triés par unités vendues, et ainsi de suite. Pour plus d’informations, découvrez les [types de question que vous pouvez poser](power-bi-q-and-a.md) et les [types de visualisation que vous pouvez spécifier dans une requête Questions et réponses](power-bi-visualization-types-for-reports-and-q-and-a.md).
+Par exemple, si vous disposiez d’un tableau Excel nommé « Ventes » comprenant les colonnes « Produits », « Mois », « Unités vendues », « Ventes brutes » et « Bénéfices », vous pourriez poser des questions sur l’une de ces entités.  Vous pourriez demander d’afficher les ventes, le total des bénéfices par mois, les produits triés par unités vendues, et ainsi de suite. Pour plus d’informations, découvrez les [types de question que vous pouvez poser](power-bi-q-and-a.md) et les [types de visualisation que vous pouvez spécifier dans une requête Questions et réponses](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### <a name="prepare-an-excel-dataset-for-qa"></a>Préparer un jeu de données Excel pour Questions et réponses
 Q&R s’appuie sur les noms des tables, des colonnes et des champs calculés pour répondre aux questions spécifiques aux données. Le nom que vous attribuez à vos entités est donc important.

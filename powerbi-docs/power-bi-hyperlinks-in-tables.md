@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: be532e428680d9286247f57d81cab2802aea1fe3
-ms.sourcegitcommit: 9a666382484882162690efaed106b82a4bcbf883
+ms.openlocfilehash: 80995f77a4e11c2773e9b03a224d42ac8d492228
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42799042"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727556"
 ---
 # <a name="hyperlinks-in-tables"></a>Liens hypertexte dans les tables
 Cette rubrique explique comment utiliser Power BI Desktop pour créer des liens hypertexte. Une fois que vous avez créé des liens hypertexte, utilisez Power BI Desktop ou le service Power BI pour les ajouter à vos tableaux et matrices de rapport. 
@@ -87,7 +87,7 @@ R : Non. Il est possible d’utiliser une icône de lien. Si vous avez besoin d�
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)
+[Visualisations dans des rapports Power BI](visuals/power-bi-report-visualizations.md)
 
 [Power BI – Concepts de base](service-basic-concepts.md)
 

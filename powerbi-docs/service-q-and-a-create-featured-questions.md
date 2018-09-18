@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: f3a9e8aabbd45cb476866158165e2e37a3d8f652
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d50d3c3a34364dd795c44b3e45e91857bcc222f0
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242384"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726314"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Création de questions exemplaires pour les Q&R de Power BI
 Si vous possédez un jeu de données, vous pouvez y ajouter vos propres questions exemplaires.  Questions et réponses dans Power BI affiche ces questions à ceux de vos collègues qui utilisent (*consomment*) votre jeu de données.  Les questions exemplaires ont pour but de donner à vos collègues des idées sur les types de questions qu’ils peuvent poser concernant le jeu de données. Le choix des questions exemplaires que vous ajoutez vous appartient. Vous pouvez ajouter des questions fréquemment posées, des questions qui présentent des résultats intéressants ou des questions qui peuvent être difficiles à formuler.
@@ -26,7 +26,7 @@ Regardez Will ajouter des questions proposées aux Q&R de Power BI et ensuite u
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Les questions proposées par la fonctionnalité Questions et réponses sont disponibles dans l’[application Microsoft Power BI pour iOS sur les appareils iPad, iPhone et iPod Touch](mobile-apps-ios-qna.md) et la préversion de Questions et réponses dans Power BI Desktop. La création de questions n’est toutefois disponible que dans le service Power BI (app.powerbi.com).
+> Les questions proposées par la fonctionnalité Questions et réponses sont disponibles dans l’[application Microsoft Power BI pour iOS sur les appareils iPad, iPhone et iPod Touch](consumer/mobile/mobile-apps-ios-qna.md) et la préversion de Questions et réponses dans Power BI Desktop. La création de questions n’est toutefois disponible que dans le service Power BI (app.powerbi.com).
 > 
 
 Cet article utilise [l’Exemple Analyse de la vente au détail](sample-datasets.md).

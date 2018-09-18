@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7da86135a391f8a6206a913a1e13df423ad96fbd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 327e9d9973aabb17761b55d355598462ce70e20e
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944971"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726044"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Conseils pour la conception d’un tableau de bord Power BI
 Maintenant que vous avez créé un tableau de bord et ajouté des vignettes, pensez comment vous pourriez rendre votre tableau de bord aussi élégant que fonctionnel. En général, cela consiste à mettre en évidence les informations les plus importantes et à faire en sorte que votre tableau de bord soit clair et non encombré.
@@ -23,7 +23,7 @@ Maintenant que vous avez créé un tableau de bord et ajouté des vignettes, pen
 Voici quelques astuces.
 
 > [!TIP]
-> De nombreux principes de conception de rapports s’appliquent aussi aux tableaux de bord.  Lisez notre livre blanc [Meilleures pratiques en matière de conception de rapports et de visualisations](power-bi-visualization-best-practices.md).
+> De nombreux principes de conception de rapports s’appliquent aussi aux tableaux de bord.  Lisez notre livre blanc [Meilleures pratiques en matière de conception de rapports et de visualisations](visuals/power-bi-visualization-best-practices.md).
 >
 >
 
@@ -51,7 +51,7 @@ Si le texte et les visualisations de votre tableau de bord ont la même taille, 
 
 N’oubliez pas de préciser le contexte.  
 
-En savoir plus sur la [création d’une vignette avec un seul numéro](power-bi-visualization-card.md).
+En savoir plus sur la [création d’une vignette avec un seul numéro](visuals/power-bi-visualization-card.md).
 
 ## <a name="put-the-most-important-information-in-the-upper-corner"></a>Placez les informations les plus importantes au-dessus des autres
 La plupart des gens lisent de haut en bas. Placez donc les informations de haut niveau en haut et les informations détaillées en dessous pour suivre le mouvement de lecture de vos utilisateurs (de gauche à droite, de droite à gauche).
@@ -68,7 +68,7 @@ La plupart des gens lisent de haut en bas. Placez donc les informations de haut 
 * Faites attention à la manière dont les [graphiques sont organisés](power-bi-report-change-sort.md).  Si vous voulez attirer l’attention sur le nombre le plus élevé ou le plus bas, effectuez un tri par mesure.  Si vous voulez que les utilisateurs puissent trouver rapidement une catégorie parmi de nombreuses autres catégories, effectuez un tri par axe.  
 * Si vous avez moins de huit catégories, les graphiques en secteurs conviendront le mieux. Étant donné que vous ne pouvez pas comparer des valeurs côte à côte, il est plus difficile de comparer des valeurs dans un graphique à secteurs que dans un graphique à barres ou dans un histogramme. Les graphiques en secteurs conviennent mieux à l’affichage des relations partie-tout qu’à la comparaison de différentes parties. Les graphiques en jauge conviennent parfaitement à l’affichage de l’état actuel dans le contexte d’un objectif.
 
-Pour plus d’informations sur les visualisations, consultez [Types de visualisations dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md).  
+Pour plus d’informations sur les visualisations, consultez [Types de visualisations dans Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
 
 ## <a name="learning-more-about-best-practice-dashboard-design"></a>En savoir plus sur les meilleures pratiques relatives à la création de tableaux de bord
 Pour maîtriser l’art de la conception des tableaux de bord, découvrez les principes de base de la Gestalt concernant la perception visuelle et comment communiquer clairement des informations pratiques en contexte. Heureusement, il existe une multitude de ressources qui sont disséminées dans nos blogs. Voici quelques-uns de nos livres préférés :

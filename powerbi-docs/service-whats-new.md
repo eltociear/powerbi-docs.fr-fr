@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 08/27/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: d7f966834e2d6b44f3a887991bd0ebd6e38836f0
-ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
+ms.openlocfilehash: 83d9e435c1dca10a444f3125830eb6432aecf6bd
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44044345"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728200"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
 
 - [Nouveautés dans Power BI Desktop](desktop-latest-update.md)  
-- [Nouveautés dans les applications mobiles pour Power BI](mobile-whats-new-in-the-mobile-apps.md)  
+- [Nouveautés dans les applications mobiles pour Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/)
 - [Notes de publication - Printemps 2018 - Applications métier](http://aka.ms/businessappsreleasenotes) de Dynamics 365 : dernières mises à jour de nos applications métier et nouvelles fonctionnalités pour générer vos applications et extensions sur notre plateforme. 
 
@@ -516,7 +516,7 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 * Les Q&R relatives à Power BI vous permettent d’explorer vos données à l’aide de questions simples et intuitives, et de recevoir des réponses sous la forme de diagrammes et graphiques interactifs. Dans cette version, nous avons ajouté une fonctionnalité qui vous aidera à vous familiariser avec Q&R Power BI, même si vous ignorez tout des données. Pour commencer, [accédez à n’importe quel tableau de bord, puis cliquez sur le lien « Comment demander » près de la zone de question Q&R](power-bi-tutorial-q-and-a.md). Power BI affiche un certain nombre de suggestions en fonction de vos données.
 * Il y a deux semaines, nous avons introduit la prise en charge de l’insertion de formes dans le canevas de rapport dans Power BI Desktop. Cette semaine, nous avons le plaisir d’annoncer que vous pouvez désormais ajouter des formes à votre canevas de rapport lors de la création ou de la modification de rapports dans l’application web Power BI.
-* Nous avons ajouté la possibilité de désactiver les notifications par courrier électronique lorsque vous partagez un tableau de bord. Désactivez simplement la case à cocher « Send email notification to recipients » (Envoyer une notification par courrier électronique aux destinataires) dans la boîte de dialogue de Power BI relative au partage. Une URL s’affiche. Copiez-la et partagez-la avec vos collègues afin de leur donner accès au tableau de bord.
+* Vous pouvez aussi désactiver les e-mails de notification quand vous partagez un tableau de bord. Désactivez simplement la case à cocher « Envoyer un e-mail de notification aux destinataires » dans la boîte de dialogue de partage Power BI. Une URL s’affiche. Copiez-la et partagez-la avec vos collègues afin de leur donner accès au tableau de bord.
 * Microsoft Dynamics NAV est une solution de gestion d’entreprise pour les organisations de tailles petite et moyenne. Il s’agit pour les clients d’une solution complète pour leur entreprise, qui leur permet de mieux contrôler leurs finances et processus d’entreprise. Le pack de contenu Power BI fournit des rapports prêts à l’emploi pour les utilisateurs de Dynamics NAV en relation, par exemple, avec les ventes et bénéfices, le pipeline d’opportunités, la rentabilité et bien plus encore. Ces mesures sont organisées dans un tableau de bord entièrement personnalisable qui vous permet de vous connecter aisément et de commencer immédiatement à explorer vos données.
 
 Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service-weekly-update-10-06.aspx) et notre [documentation en ligne](service-get-started.md).

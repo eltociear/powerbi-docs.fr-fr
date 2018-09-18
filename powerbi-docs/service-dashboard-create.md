@@ -1,6 +1,6 @@
 ---
-title: Créer un tableau de bord dans le service Power BI à partir d’un rapport
-description: Créer un tableau de bord dans Power BI à partir d’un rapport
+title: Créer un tableau de bord à partir d’un rapport
+description: Créer un tableau de bord à partir d’un rapport
 author: mihart
 manager: kfile
 ms.reviewer: ''
@@ -8,16 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/02/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: a550aabb3590018666a3784e602ede15696862e5
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: a528c4a641dbdecce7d33f29e7afbe6118ee34b5
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44168086"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726475"
 ---
-# <a name="create-a-power-bi-dashboard-in-power-bi-service"></a>Créer un tableau de bord Power BI dans le service Power BI
+# <a name="create-a-power-bi-dashboard-from-a-report"></a>Créer un tableau de bord à partir d’un rapport
 Vous avez lu [Tableaux de bord dans Power BI](service-dashboards.md) et vous souhaitez maintenant créer vos propres tableaux de bord. Il existe de nombreuses façons de créer un tableau de bord : à partir d’un rapport, en partant de zéro, à partir d’un jeu de données, en dupliquant un tableau de bord existant, et bien plus encore.  
 
 Il peut être difficile de savoir par où commencer ; nous allons créer un tableau de bord simple et rapide en épinglant des visualisations à partir d’un rapport déjà généré. Lorsque vous aurez suivi ce guide de démarrage rapide, vous aurez une bonne compréhension de la relation entre les tableaux de bord et les rapports ; vous saurez ouvrir le Mode Édition dans l’éditeur de rapport, épingler des vignettes et naviguer entre un tableau de bord et un rapport. Suivez ensuite les liens de la Table des matières à gauche ou des **Étapes suivantes** en bas pour passer à des rubriques plus avancées.
@@ -25,7 +25,7 @@ Il peut être difficile de savoir par où commencer ; nous allons créer un tabl
 ## <a name="who-can-create-a-dashboard"></a>Qui peut créer un tableau de bord ?
 La création d’un tableau de bord est une fonctionnalité de **créateur** qui nécessite des autorisations de modification du rapport. Ces autorisations sont réservées aux créateurs de rapports et aux collègues à qui les premiers ont accordé l’accès. Par exemple, si David crée un rapport dans workspaceABC et vous ajoute comme membre de cet espace de travail, David et vous aurez tous deux des autorisations de modification. Si, à l’inverse, le rapport a été partagé avec vous directement ou dans le cadre d’une [application Power BI](service-install-use-apps.md) (vous êtes **consommateur** du rapport), vous ne pourrez pas épingler des vignettes au tableau de bord.
 
-> **REMARQUE**: les tableaux de bord sont une fonctionnalité du service Power BI et non de Power BI Desktop. Les tableaux de bord ne peut pas être créés dans l’application mobile Power BI, mais ils peuvent être [affichés et partagés](mobile-apps-view-dashboard.md).
+> **REMARQUE**: les tableaux de bord sont une fonctionnalité du service Power BI et non de Power BI Desktop. Les tableaux de bord ne peut pas être créés dans l’application mobile Power BI, mais ils peuvent être [affichés et partagés](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 

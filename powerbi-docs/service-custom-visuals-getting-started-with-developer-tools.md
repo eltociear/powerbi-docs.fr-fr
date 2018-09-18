@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
-ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
+ms.openlocfilehash: ec6399d815cb17bb0f2542144c63535835659017
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40256849"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726682"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Créer des visuels personnalisés à l’aide des outils de développement
 Les éléments visuels personnalisés vous permettent de répondre aux besoins de vos utilisateurs et de vous mettre en adéquation avec le design de votre application. Découvrez comment créer un élément visuel personnalisé pour Power BI à l’aide des outils de développement.
@@ -388,7 +388,7 @@ Exécutez le serveur d’éléments visuels avec la commande `pbiviz start` dans
 Pour plus d’informations, voir [Exécution de votre élément visuel](#running-your-visual) ou [Installation de certificat de serveur](#ssl-setup).
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Visualisations dans Power BI](power-bi-report-visualizations.md)  
+[Visualisations dans Power BI](visuals/power-bi-report-visualizations.md)  
 [Visualisations personnalisées dans Power BI](power-bi-custom-visuals.md)  
 [Publier des visuels personnalisés dans l’Office Store](developer/office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  

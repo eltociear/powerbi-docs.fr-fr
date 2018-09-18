@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: d9b0cc26a3662b49cd7ed14a3a645ddf2a4536bc
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: 648938006cd15e2bb92b305aa9a2af24d028cead
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40258009"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726935"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -32,7 +32,7 @@ Pour des informations connexes sur les nouveautés de Power BI, voir :
 
 * [Nouveautés dans le service Power BI](../service-whats-new.md)
 * [Nouveautés dans Power BI Desktop](../desktop-latest-update.md)
-* [Nouveautés dans les applications mobiles pour Power BI](../mobile-whats-new-in-the-mobile-apps.md)
+* [Nouveautés dans les applications mobiles pour Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
 ## <a name="august-2018"></a>Août 2018
 
@@ -120,7 +120,7 @@ La prise en charge de DirectQuery avec authentification unique SAP HANA avec Ker
 - [Réitération pour le sélecteur](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicer)
 - [Info-bulles de page de rapport](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#reportPageTooltips)
 
-### <a name="analytics"></a>Analytique
+### <a name="analytics"></a>Analyse
 
 - [Nouvelle fonction DAX : COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
 - [Extraction de mesure](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)

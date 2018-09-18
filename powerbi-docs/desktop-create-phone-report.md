@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6cd1616dab92eb8709c5e89966259be591e4ede3
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 5f34207640fe0db02d38464ce8600a44b6ffab4c
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280659"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726452"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Créer des rapports optimisés pour les applications Power BI pour téléphone
 Quand vous [créez un rapport dans Power BI Desktop](desktop-report-view.md), vous pouvez améliorer son utilisation dans les applications mobiles des téléphones en créant une version destinée spécifiquement à l’affichage sur téléphone. Adaptez votre rapport au téléphone en réorganisant et redimensionnant les visuels ou en choisissant d’en inclure uniquement une partie. Vous bénéficiez ainsi d’une expérience optimale. Vous pouvez également créer des [*visuels* réactifs](#optimize-a-visual-for-any-size) et des [segments réactifs](#enhance-slicers-to-to-work-well-in-phone-reports) qui se redimensionnent pour l’affichage sur un téléphone. De plus, si vous ajoutez des filtres à votre rapport, ceux-ci apparaissent automatiquement dans le rapport pour téléphone. Les lecteurs de votre rapport peuvent les afficher et les utiliser pour filtrer le rapport.
@@ -56,7 +56,7 @@ Quand un visuel change de taille, Power BI hiérarchise la vue de données, par 
 
 ![Redimensionnement de visuel réactif](media/desktop-create-phone-report/desktop-create-phone-report-6.gif)
 
-Vous choisissez d’activer ou non la réactivité pour chaque visuel. En savoir plus sur l’[optimisation des visuels](desktop-create-responsive-visuals.md).
+Vous choisissez d’activer ou non la réactivité pour chaque visuel. En savoir plus sur l’[optimisation des visuels](visuals/desktop-create-responsive-visuals.md).
 
 ## <a name="considerations-when-creating-phone-report-layouts"></a>Considérations relatives à la création de dispositions de rapport sur téléphone
 * Pour les rapports contenant plusieurs pages, vous pouvez optimiser toutes les pages ou seulement quelques unes. 
@@ -101,11 +101,11 @@ Si seules certaines pages sont optimisées, les lecteurs voient un message qui s
 
 ![Page pour téléphone non optimisée](media/desktop-create-phone-report/desktop-create-phone-report-9.png)
 
-Les lecteurs du rapport peuvent tourner leur téléphone sur le côté pour afficher la page en mode paysage. Apprenez-en davantage sur l’[interaction avec les rapports Power BI optimisés pour votre téléphone](mobile-apps-view-phone-report.md).
+Les lecteurs du rapport peuvent tourner leur téléphone sur le côté pour afficher la page en mode paysage. Apprenez-en davantage sur l’[interaction avec les rapports Power BI optimisés pour votre téléphone](consumer/mobile/mobile-apps-view-phone-report.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer une vue téléphone d’un tableau de bord dans Power BI](service-create-dashboard-mobile-phone-view.md)
-* [Afficher les rapports Power BI optimisés pour votre téléphone](mobile-apps-view-phone-report.md)
-* [Créer des visuels réactifs optimisés pour toute taille](desktop-create-responsive-visuals.md)
+* [Afficher les rapports Power BI optimisés pour votre téléphone](consumer/mobile/mobile-apps-view-phone-report.md)
+* [Créer des visuels réactifs optimisés pour toute taille](visuals/desktop-create-responsive-visuals.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 
