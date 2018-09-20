@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 1d51a09094c6825570103ce3c0b51ebfe4b7d47f
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: 7fa3e2e63ef5f43206a398f58d9e8f13bdf8067a
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512084"
+ms.locfileid: "44728131"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Nouveautés de la dernière mise à jour de Power BI Desktop
 
@@ -44,7 +44,7 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci sont l
 * Info-bulles de page de rapport généralement disponibles, nouvelle prise en charge des cartes [[vidéo]](https://youtu.be/Rzw2WyI09kY?t=8m10s)  [[article]](desktop-tooltips.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#themes) 
 * Améliorations d’accessibilité pour l’analytique et prise en charge de la mise en forme des volets [[vidéo]](https://youtu.be/Rzw2WyI09kY?t=9m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#accessibility)
 
-### <a name="analytics"></a>Analytique
+### <a name="analytics"></a>Analyse
 
 * Agrégations (préversion) [[vidéo]](https://youtu.be/Rzw2WyI09kY?t=11m37s)  [[article]](desktop-aggregations.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2018-feature-summary/#aggregations) 
 
@@ -74,7 +74,7 @@ La vidéo suivante décrit et montre chacune de ces mises à jour. Vous pouvez �
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Rzw2WyI09kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
-> Les rubriques [Nouveautés du service Power BI](service-whats-new.md) et [Nouveautés dans les applications mobiles pour Power BI](mobile-whats-new-in-the-mobile-apps.md) sont également susceptibles de vous intéresser.
+> Les rubriques [Nouveautés du service Power BI](service-whats-new.md) et [Nouveautés dans les applications mobiles pour Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md) sont également susceptibles de vous intéresser.
 
 ## <a name="more-videos"></a>Plus de vidéos
 
