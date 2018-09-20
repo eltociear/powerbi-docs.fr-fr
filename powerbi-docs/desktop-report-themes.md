@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6aa3e6ba5a471176a6af2551344744cdc45697fb
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 4cc2c0ae14cf457c3a704b2891e070f4e4e00166
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657940"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512176"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
 Les **Thèmes de rapport** permettent d’appliquer un thème de couleur à l’intégralité d’un rapport. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières ou de tout autre thème de votre choix. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
@@ -36,7 +36,17 @@ Si vous utilisez une version antérieure de **Power BI Desktop**, vous pouvez le
 Nous recommandons toujours de mettre à niveau vers la version la plus récente de **Power BI Desktop**, que vous pouvez obtenir à partir d’un lien dans [Obtenir Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="how-report-themes-work"></a>Fonctionnement des thèmes de rapport
-Pour appliquer un thème de rapport à un rapport Power BI Desktop, sélectionnez le bouton **Changer de thème** dans le ruban **Accueil**, puis **Importer un thème** dans la liste déroulante.
+Pour appliquer un thème de rapport à un rapport Power BI Desktop, vous pouvez effectuer votre choix parmi les thèmes de rapport intégrés disponibles ou importer un thème personnalisé.
+
+Pour choisir parmi les thèmes de rapport intégrés, sélectionnez le bouton **Changer de thème** dans le ruban **Accueil**, puis sélectionnez l’un des thèmes inclus dans le menu déroulant.
+
+![sélectionner un thème de rapport](media/desktop-report-themes/report-themes_2a.png)
+
+Votre thème de rapport est appliqué au rapport, tout est prêt.
+
+### <a name="importing-report-themes"></a>Importation de thèmes de rapport
+
+Pour importer un thème de rapport personnalisé, sélectionnez le bouton **Changer de thème** dans le ruban **Accueil**, puis **Importer un thème** dans la liste déroulante.
 
 ![](media/desktop-report-themes/report-themes_3.png)
 
