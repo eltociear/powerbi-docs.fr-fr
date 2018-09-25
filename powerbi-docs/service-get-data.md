@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: fba2ea948190a59039766ffc2b5fab6189896ab8
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 4b61ff56ea1aec64a3e88db46836f948c4190d60
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328485"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547450"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Sources de données pour le service Power BI
 Les données sont au cœur de Power BI. Chaque fois que vous explorez des données, créez des graphiques et des tableaux de bord ou posez des questions avec Questions et réponses, toutes les visualisations et les réponses que vous voyez tirent réellement leurs données sous-jacentes d’un jeu de données. Mais d’où provient ce jeu de données ? D’une source de données.
@@ -26,7 +26,7 @@ Vous pouvez obtenir des données à partir d’une de ces sources de données da
 
 ![](media/service-get-data/pbi_getdata_startscreen.png)
 
-## <a name="files"></a>des fichiers
+## <a name="files"></a>Fichiers
 ![](media/service-get-data/pbi_getdata_files.png)
 
 **Excel** (.xlsx, xlxm) Excel est unique dans le sens où un classeur peut contenir des données que vous avez entrées vous-même dans des feuilles de calcul, mais aussi des données que vous avez récupérées et chargées à partir de sources de données externes à l’aide de Power Query (Obtenir et transformer dans Excel 2016) ou Power Pivot. Vous pouvez importer des données provenant de tableaux dans des feuilles de calcul (les données *doivent* être situées dans un tableau) ou importer des données qui sont chargées dans un modèle de données. Pour plus d’informations, consultez [Obtenir des données à partir d’Excel](service-get-data-from-files.md).
@@ -44,7 +44,7 @@ De plus, l’endroit où vous stockez vos fichiers peut faire une grosse différ
 
 Les packs de contenu contiennent toutes les données et tous les rapports dont vous avez besoin, déjà prêts. Dans Power BI, il existe deux types de packs de contenu : ceux des services tels que Google Analytics, Marketo ou Salesforce et ceux créés et partagés par d’autres utilisateurs dans votre organisation.
 
-**Services** : il existe des douzaines de services avec des packs de contenu pour Power BI et de nouveaux packs sont constamment ajoutés. La plupart des services nécessitent de posséder un compte. Pour plus d’informations, consultez [Se connecter aux services](service-connect-to-services.md).
+**Services** : il existe des douzaines de services avec des packs de contenu pour Power BI et de nouveaux packs sont constamment ajoutés. La plupart des services nécessitent de posséder un compte. Pour plus d’informations, consultez [Se connecter aux services](consumer/end-user-connect-to-services.md).
 
 **Organisationnel** : si vous et d’autres utilisateurs de l’organisation possédez un compte Power BI Pro, vous pouvez créer, partager et utiliser des packs de contenu. Pour plus d’informations, consultez [Packs de contenu organisationnels](service-organizational-content-pack-introduction.md).
 
