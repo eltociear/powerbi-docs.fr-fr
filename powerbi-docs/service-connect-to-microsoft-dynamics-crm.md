@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1dadb70f2d75596bb7180a5e7360cae19e1515b8
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 3d4065a6ab0c5a3c8f18350ef6c3a0444febda08
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38937259"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547059"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Se connecter à Microsoft Dynamics CRM avec Power BI
 Microsoft Dynamics CRM Online pour Power BI vous permet d’accéder à vos données et de les analyser facilement. Power BI utilise le flux OData pour créer un modèle descriptif, avec toutes les entités et mesures nécessaires, telles que Comptes, Activités, Opportunités, Produits, Prospects, Utilisateurs, et bien plus encore. Une fois l’application installée, vous pouvez voir le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 
@@ -154,7 +154,7 @@ Si vous ne disposez pas de CRM Online 2016 ou version ultérieure, utilisez Pow
 Si vous voyez une erreur dont le message indique que l’actualisation des données a échoué parce que la requête dépassait la limite maximale de 100 000 enregistrements, envisagez de vous connecter directement à partir de Power BI Desktop ou d’utiliser le modèle de solution CRM.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Que sont les applications dans Power BI ?](service-install-use-apps.md)
+* [Que sont les applications dans Power BI ?](consumer/end-user-apps.md)
 * [Obtenir des données dans Power BI](service-get-data.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

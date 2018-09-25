@@ -10,23 +10,23 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e71412febc5b8d8a9ee4ff20174496de0c7d51f2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9cf5855acc5efe773f8f06e6de9f769f75794bdb
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251411"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548729"
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Épingler une vignette à un tableau de bord à partir de Questions et réponses
 ## <a name="how-to-pin-a-tile-from-qa"></a>Épingler une vignette à partir de Q&R
 Q&R est l’outil de génération de rapports ad hoc de Power BI. Vous avez besoin de données spécifiques ? Posez une question à propos de vos données et recevez une réponse sous la forme d’une visualisation.
 
-Dans cette procédure, nous allons utiliser le service Power BI (app.powerbi.com) pour ouvrir un tableau de bord, poser une question en langage naturel pour créer une visualisation et épingler cette visualisation à un tableau de bord. Les tableaux de bord ne sont pas disponibles dans Power BI Desktop. Pour plus d’informations sur l’utilisation de Questions et réponses avec d’autres outils et contenu Power BI, consultez la [présentation de Questions et réponses dans Power BI](power-bi-q-and-a.md). 
+Dans cette procédure, nous allons utiliser le service Power BI (app.powerbi.com) pour ouvrir un tableau de bord, poser une question en langage naturel pour créer une visualisation et épingler cette visualisation à un tableau de bord. Les tableaux de bord ne sont pas disponibles dans Power BI Desktop. Pour plus d’informations sur l’utilisation de Questions et réponses avec d’autres outils et contenu Power BI, consultez la [présentation de Questions et réponses dans Power BI](consumer/end-user-q-and-a.md). 
 
 Pour suivre la procédure, ouvrez le tableau de bord [Exemple Analyse de la vente au détail](sample-retail-analysis.md).
 
 
-1. Ouvrez un [tableau de bord](service-dashboards.md) sur lequel au moins une vignette est épinglée à partir d’un rapport. Lorsque vous posez une question, Power BI cherche la réponse dans un jeu de données dont une vignette est épinglée à ce tableau de bord.  Pour plus d’informations, voir [obtenir des données](service-get-data.md).
+1. Ouvrez un [tableau de bord](consumer/end-user-dashboards.md) sur lequel au moins une vignette est épinglée à partir d’un rapport. Lorsque vous posez une question, Power BI cherche la réponse dans un jeu de données dont une vignette est épinglée à ce tableau de bord.  Pour plus d’informations, voir [obtenir des données](service-get-data.md).
 2. En haut de votre tableau de bord, dans la zone de question, commencez à taper ce que vous voulez savoir sur vos données.  
    ![zone Questions et réponses](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. Par exemple, quand vous tapez « ventes de l’année dernière par mois et par secteur »…  
@@ -62,6 +62,6 @@ Pour suivre la procédure, ouvrez le tableau de bord [Exemple Analyse de la vent
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Renommer, redimensionner, ajouter un lien hypertexte, repositionner la vignette et bien plus encore](service-dashboard-edit-tile.md)    
-[Afficher la vignette de votre tableau de bord en mode Focus](service-focus-mode.md)     
-[Revenir à Q&R dans Power BI](power-bi-q-and-a.md)  
+[Afficher la vignette de votre tableau de bord en mode Focus](consumer/end-user-focus.md)     
+[Revenir à Q&R dans Power BI](consumer/end-user-q-and-a.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

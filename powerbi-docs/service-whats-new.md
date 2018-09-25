@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/27/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 83d9e435c1dca10a444f3125830eb6432aecf6bd
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 090a59f406f1e3874f678752f0e0bc9656ae492f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728200"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548945"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
@@ -89,13 +89,13 @@ Vous pouvez également consulter les chaînes YouTube pour plus d’informations
 
 ### <a name="august-2017"></a>Août 2017
 * Connaissez votre public avec des [métriques d’utilisation par utilisateur](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
-* Prise en main des applications du [service Power BI](service-connect-to-services.md) pour les services en ligne.
+* Prise en main des applications du [service Power BI](consumer/end-user-connect-to-services.md) pour les services en ligne.
 * Connectez-vous à IBM Netezza avec la passerelle de données locale via l’importation et les modes de connectivité de DirectQuery.
 * [SNL dynamique](developer/embedded-row-level-security.md) désormais prise en charge pour Power BI Embedded.
 * [API de filtrage](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) avancé désormais ajoutée pour la version 1.7 des API de visuels personnalisés.
 
 ### <a name="july-2017"></a>Juillet 2017
-* Prise en charge des [abonnements à l’e-mail](service-report-subscribe.md) sur les tableaux de bord.
+* Prise en charge des [abonnements à l’e-mail](consumer/end-user-subscribe.md) sur les tableaux de bord.
 * Étudiez et diagnostiquez la raison pour laquelle le temps de chargement est médiocre pour les tableaux de bord utilisant l’Inspecteur des performances.
 * Snowflake et SAP BusinessWarehouse DirectQuery désormais pris en charge pour la passerelle de données locale.
 * Nouvelles [API pour gérer l’actualisation de données](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) dans le service Power BI.
@@ -206,12 +206,12 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/).
 
-* [Prise en charge de Questions et réponses dans Power BI pour les modèles tabulaires SQL Server 2016 Analysis Services](service-q-and-a-direct-query.md) : nous sommes fiers de vous proposer des améliorations de l’expérience utilisateur de Questions et réponses dans Power BI et le lancement de la version préliminaire publique de Questions et réponses dans Power BI pour les sources de données Enterprise Gateway, à commencer par la prise en charge des modèles tabulaires SQL Server 2016 Analysis Services. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/).
+* [Prise en charge de Questions et réponses dans Power BI pour les modèles tabulaires SQL Server 2016 Analysis Services](consumer/end-user-q-and-a-direct-query.md) : nous sommes fiers de vous proposer des améliorations de l’expérience utilisateur de Questions et réponses dans Power BI et le lancement de la version préliminaire publique de Questions et réponses dans Power BI pour les sources de données Enterprise Gateway, à commencer par la prise en charge des modèles tabulaires SQL Server 2016 Analysis Services. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/).
 * [Prise en charge des fichiers locaux pour les rapports Excel](service-excel-workbook-files.md#local-excel-workbooks) : vous pouvez désormais charger vos fichiers Excel à partir de votre disque local ou d’autres services de stockage et utiliser le rapport Excel comme vous le feriez dans Excel Online, avec tous les avantages de Power BI. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/).
 
 **28 avril 2016**
 
-* [Aperçus rapides sur les vignettes du tableau de bord](service-insights.md) : lors de l’affichage d’une vignette en mode Focus, cliquez sur Obtenir des informations pour rechercher la vignette et les données associées pour voir automatiquement et en quelques secondes les corrélations, les valeurs hors norme, les tendances, la saisonnalité, les points de changement dans les tendances et d’autres facteurs importants.
+* [Aperçus rapides sur les vignettes du tableau de bord](consumer/end-user-insights.md) : lors de l’affichage d’une vignette en mode Focus, cliquez sur Obtenir des informations pour rechercher la vignette et les données associées pour voir automatiquement et en quelques secondes les corrélations, les valeurs hors norme, les tendances, la saisonnalité, les points de changement dans les tendances et d’autres facteurs importants.
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/).
 
@@ -437,7 +437,7 @@ Pour plus d’informations, y compris une vidéo présentant un grand nombre de 
 
 **3 décembre 2015.**
 
-* Détectez automatiquement les tendances d’un jeu de données avec les aperçus rapides : [vidéo](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) ou [article](service-insights.md)
+* Détectez automatiquement les tendances d’un jeu de données avec les aperçus rapides : [vidéo](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) ou [article](consumer/end-user-insights.md)
 * [Visualiser vos données VMob dans Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Intégration de Power BI avec Cortana](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Version préliminaire de la passerelle Power BI pour les entreprises](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
@@ -587,7 +587,7 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 * Nous sommes heureux d’annoncer le lancement de Power BI en disponibilité générale (version GA). Inscrivez-vous dès aujourd’hui à [Power BI Pro](service-self-service-signup-for-power-bi.md). La version GA offre de nouvelles fonctionnalités très utiles :
 * Nouvelle expérience en matière de création de visualisations et de rapports : le nouveau canevas de création de rapports propose un plus large éventail de visualisations et offre davantage de contrôle sur la mise en forme des vignettes, légendes, axes, couleurs, arrière-plans, etc.
-* [Groupes Power BI](service-create-distribute-apps.md) : ils offrent de puissantes fonctionnalités de collaboration basées sur les groupes Office 365.
+* [Groupes Power BI](consumer/end-user-create-apps.md) : ils offrent de puissantes fonctionnalités de collaboration basées sur les groupes Office 365.
 * [Packs de contenus d’organisation](service-organizational-content-pack-introduction.md) : Power BI facilite considérablement la création des tableaux de bord et des rapports, et permet maintenant aux utilisateurs de publier leurs contenus dans la bibliothèque de contenus d’organisation.
 * [Importation de fichiers Excel entiers](service-excel-workbook-files.md) : vous pouvez importer n’importe quel classeur Excel stocké sur OneDrive Entreprise dans Power BI et afficher le classeur entier, exactement comme vous le feriez dans Excel Online.
 * [Importation de fichiers CSV](service-get-data-from-files.md) : comme tout fichier Excel ou Power BI Desktop, un fichier texte de valeurs séparées par des virgules (CSV) peut également servir de jeu de données pour vos tableaux de bord et rapports Power BI.

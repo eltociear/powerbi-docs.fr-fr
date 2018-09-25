@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 732f27a8272c780d156912da904bab82de03f326
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 68b14e6554c0c12590f555f6447198f1a850e9b1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732900"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544000"
 ---
 # <a name="combo-chart-in-power-bi"></a>Graphique combiné dans Power BI
 Dans Power BI, un graphique combiné est une visualisation qui combine un graphique en courbes et un histogramme. Combiner ces deux graphiques en un seul vous permet de comparer plus rapidement les données.
@@ -103,13 +103,13 @@ Dans cette tâche, nous allons comparer les ventes et la marge brute.
 
 À ce stade, vous souhaiterez effectuer les tâches suivantes :
 
-* [Ajoutez le graphique combiné sous forme de vignette de tableau de bord](../service-dashboard-tiles.md).
+* [Ajoutez le graphique combiné sous forme de vignette de tableau de bord](../consumer/end-user-tiles.md).
 * [Enregistrez le rapport](../service-report-save.md).
 * [Rendre les rapports plus accessibles aux personnes handicapées](../desktop-accessibility.md)
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisés
 
-La mise en surbrillance d’une colonne ou d’une ligne dans un graphique combiné entraîne la mise en surbrillance et le filtrage croisés des autres visualisations sur la page du rapport, et vice versa. Utilisez le contrôle [Interactions entre les visuels](../service-reports-visual-interactions.md) pour modifier ce comportement par défaut.
+La mise en surbrillance d’une colonne ou d’une ligne dans un graphique combiné entraîne la mise en surbrillance et le filtrage croisés des autres visualisations sur la page du rapport, et vice versa. Utilisez le contrôle [Interactions entre les visuels](../consumer/end-user-interactions.md) pour modifier ce comportement par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -117,6 +117,6 @@ La mise en surbrillance d’une colonne ou d’une ligne dans un graphique combi
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI – Concepts de base](../service-basic-concepts.md)
+[Power BI – Concepts de base](../consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

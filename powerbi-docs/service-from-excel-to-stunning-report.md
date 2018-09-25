@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: mihart
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3244a185c7b7e9caa689ab7b90c184c9bf5b4662
-ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
+ms.openlocfilehash: ebbca73f781946f989b2f3afa65aa0a940f7a680
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44044414"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545127"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
 Votre responsable attend de vous un rapport présentant vos chiffres de vente les plus récents et vos dernières impressions concernant la campagne avant la fin de la journée. Vos données les plus récentes sont stockées sur différents systèmes tiers et sur des fichiers de votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des éléments visuels et mettre en forme un rapport. Vous commencez à vous inquiéter.
@@ -98,6 +98,6 @@ Power BI affiche la page Partager le tableau de bord. Dans la zone située en h
 
 * [Prise en main du service Power BI](service-get-started.md)
 * [Prise en main de Power BI Desktop](desktop-getting-started.md)
-* [Power BI – Concepts de base](service-basic-concepts.md)
+* [Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 * D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

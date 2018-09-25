@@ -1,2 +1,2 @@
 Nous avons publié une nouvelle expérience améliorée de navigation dans le contenu relatif à Power BI, et nous sommes en train de mettre à jour toute notre documentation.
-Il se peut que les informations et captures d’écran présentées sur cette page ne correspondent pas à ce que vous voyez sur votre écran. Pour plus d’informations, voir [Navigation dans le service Power BI](../service-the-new-power-bi-experience.md).</font>
+Il se peut que les informations et captures d’écran présentées sur cette page ne correspondent pas à ce que vous voyez sur votre écran. Pour plus d’informations, voir [Navigation dans le service Power BI](../consumer/end-user-experience.md).</font>

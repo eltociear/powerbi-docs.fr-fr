@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 8b7c46ad1e9ea9c4c79a8f5a1b48c73ab3336306
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: 7253a340ce0852039a08d0ed17c488fc8fdbfa69
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157428"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545919"
 ---
 # <a name="author-template-content-packs-in-power-bi"></a>Créer des packs de contenu de modèle dans Power BI
 La création d’un pack de contenu de modèle implique l’utilisation de Power BI Desktop et PowerBI.com. Il existe quatre composants pour votre pack de contenu :
@@ -22,7 +22,7 @@ La création d’un pack de contenu de modèle implique l’utilisation de Power
 * Les requêtes vous permettent de [connecter](desktop-connect-to-data.md) et [transformer](desktop-query-overview.md) les données, ainsi que de définir les [paramètres](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
 * Le modèle de données vous permet de créer les [relations](desktop-create-and-manage-relationships.md), [mesures](desktop-measures.md) et améliorations Q&R  
 * Les [pages](desktop-report-view.md) de rapport comprennent des éléments visuels et des filtres pour vous fournir des analyses sur vos données  
-* Le [tableau de bord](service-dashboards.md) et les [mosaïques](service-dashboard-create.md) vous offrent une vue d’ensemble des analyses incluses  
+* Le [tableau de bord](consumer/end-user-dashboards.md) et les [mosaïques](service-dashboard-create.md) vous offrent une vue d’ensemble des analyses incluses  
 
 Vous connaissez peut-être chacun de ces éléments en tant que fonctionnalités Power BI existantes. Lors de la création d’un pack de contenu, d’autres points sont à prendre en compte pour chaque aspect. Consultez la section suivante pour plus de détails.
 

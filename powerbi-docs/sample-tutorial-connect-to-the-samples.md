@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 02c3998a95e7d481ee032513054933f1484ae7f9
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 8b4a0605df348957c4adb0d8e02975f4cd752307
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "36944603"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543788"
 ---
 # <a name="the-power-bi-samples"></a>Exemples Power BI
 
@@ -79,7 +79,7 @@ Lorsque vous sélectionnez **Se connecter** en utilisant un exemple de pack de c
     ![page de rapport avec visuel correspondant mis en évidence](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Si la vignette est créée à l’aide de [Questions et réponses Power BI](power-bi-q-and-a.md), c’est la page Questions et réponses qui s’ouvre. Si la vignette a été [épinglée à partir d’Excel](service-dashboard-pin-tile-from-excel.md), c’est Excel Online qui s’ouvre dans Power BI.
+   > Si la vignette est créée à l’aide de [Questions et réponses Power BI](consumer/end-user-q-and-a.md), c’est la page Questions et réponses qui s’ouvre. Si la vignette a été [épinglée à partir d’Excel](service-dashboard-pin-tile-from-excel.md), c’est Excel Online qui s’ouvre dans Power BI.
    > 
    > 
 1. Revenez à votre onglet **Jeux de données**. Vous disposez de plusieurs options pour l’exploration de votre jeu de données.  Vous ne pouvez pas l’ouvrir et afficher toutes ses lignes et colonnes (comme dans Power BI Desktop ou Excel).  Lorsqu’un utilisateur partage un pack de contenu avec des collègues, il souhaite généralement partager des insights, et non permettre à ses collègues d’accéder directement aux données. Mais vous pouvez tout de même explorer le jeu de données.  
@@ -89,7 +89,7 @@ Lorsque vous sélectionnez **Se connecter** en utilisant un exemple de pack de c
    * L’une des méthodes employées pour l’exploration d’un jeu de données consiste à créer vos propres visualisations et rapports à partir de zéro.  Sélectionnez l’icône de graphique ![icône de rapport](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) pour ouvrir le jeu de données en mode Édition de rapports.
      
        ![nouveau rapport](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
-   * Une autre méthode d’exploration d’un jeu de données consiste à exécuter la fonctionnalité [Informations rapides](service-insights.md). Sélectionnez les points de suspension (...) et choisissez **Obtenir des informations**. Lorsque les informations sont prêtes, sélectionnez **Afficher les informations**.
+   * Une autre méthode d’exploration d’un jeu de données consiste à exécuter la fonctionnalité [Informations rapides](consumer/end-user-insights.md). Sélectionnez les points de suspension (...) et choisissez **Obtenir des informations**. Lorsque les informations sont prêtes, sélectionnez **Afficher les informations**.
      
        ![rapport Insights](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
@@ -130,7 +130,7 @@ Explorez à présent le jeu de données, les relations et le rapport par vous-m�
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Power BI - Concepts de base](service-basic-concepts.md)
+[Power BI - Concepts de base](consumer/end-user-basic-concepts.md)
 
 [Exemples pour le service Power BI](sample-datasets.md)
 

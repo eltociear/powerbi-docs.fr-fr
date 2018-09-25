@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: aa73da576a64a3245a3e8a9deab124dcefbc79f8
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 946746b1c868ca5310edd929434cc852400b5bc3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736211"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548071"
 ---
 # <a name="treemaps-in-power-bi"></a>Graphiques de compartimentage dans Power BI
 Les treemaps utilisent des rectangles imbriqués pour présenter des données sous forme hiérarchique.  Chaque niveau de la hiérarchie est représenté par un rectangle de couleur (généralement appelé « branche ») qui contient d’autres rectangles (les « feuilles »).  L’espace à l’intérieur de chaque rectangle est attribué en fonction de la valeur quantitative mesurée. Les rectangles sont disposés par taille, avec le plus grand en haut à gauche et le plus petit en bas à droite.
@@ -62,7 +62,7 @@ Ou bien, créez votre propre treemap. Ces instructions s’appliquent à l’exe
    > 
 5. Pointez sur une zone **Chaîne** pour afficher l’info-bulle correspondant à cette portion de la **Catégorie**.  Par exemple, si vous placez le curseur sur **Lindseys** dans le rectangle **040-Juniors** , vous affichez l’info-bulle pour le sous-ensemble Lindsey de la catégorie Juniors.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Ajoutez le treemap sous forme de vignette de tableau de bord (épinglez l’élément visuel)](../service-dashboard-tiles.md). 
+6. [Ajoutez le treemap sous forme de vignette de tableau de bord (épinglez l’élément visuel)](../consumer/end-user-tiles.md). 
 7. [Enregistrez le rapport](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
@@ -76,11 +76,11 @@ La mise en surbrillance d’une catégorie ou de détails dans un treemap entra�
 2. Dans le graphique en secteurs **Ventes de l’année dernière par chaîne**, sélectionnez le secteur **Fashions Direct** pour filtrer le graphique de compartimentage.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
-3. Pour gérer la mise en surbrillance croisée et le filtrage croisé des tableaux entre eux, consultez [Interactions de visualisation dans un rapport Power BI](../service-reports-visual-interactions.md).
+3. Pour gérer la mise en surbrillance croisée et le filtrage croisé des tableaux entre eux, consultez [Interactions de visualisation dans un rapport Power BI](../consumer/end-user-interactions.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Épingler une visualisation à un tableau de bord](../service-dashboard-pin-tile-from-report.md)  
-[Power BI – Concepts de base](../service-basic-concepts.md)  
+[Power BI – Concepts de base](../consumer/end-user-basic-concepts.md)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)  
 

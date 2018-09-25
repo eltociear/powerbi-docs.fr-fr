@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d19e0a77f603ce6b80ce70ba5df4506699bd0969
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a3a78c27ab8d6e7c321af3f5ba4144e8b320e4a9
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34252137"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545725"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Renommer pratiquement tout élément dans le service Power BI
 Cet article explique comment renommer un tableau de bord, un rapport, une page de rapport, un classeur, un jeu de données, une application et un espace de travail dans le service Power BI.
@@ -71,7 +71,7 @@ Toute personne disposant d’autorisations d’administrateur peut renommer un e
 ## <a name="rename-a-page-in-a-report"></a>Renommer une page dans un rapport
 Vous n’aimez pas le nom d’une page dans votre rapport Power BI ?  Un simple clic est nécessaire pour le modifier. Vous ne pouvez pas renommer des pages en [mode Édition de rapport](service-interact-with-a-report-in-editing-view.md).
 
-1. Ouvrez le rapport en [mode Édition](service-reading-view-and-editing-view.md).
+1. Ouvrez le rapport en [mode Édition](consumer/end-user-reading-view.md).
 2. Repérez les onglets de page de rapport en bas de la fenêtre Power BI.
    
     ![rapport avec des onglets mis en surbrillance](media/service-rename/report-page-tabs-new.png)

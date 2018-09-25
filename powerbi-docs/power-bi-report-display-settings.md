@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/24/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: af90ba6bcf85c07d2d046ed21f733ca7c16e3856
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a22bee33254e447f27f717b78a53fe3a5cc34fb2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242128"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545449"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Paramètres d’affichage de page dans un rapport Power BI
 Nous sommes conscients qu’il est essentiel de préserver la qualité de présentation de vos rapports. Cela n’est pas toujours évident, car vous et vos collègues consultez ces rapports sur des écrans de taille et de proportions différentes. 
@@ -39,7 +39,7 @@ Dans le service Power BI, ouvrez un rapport, puis sélectionnez **Affichage** à
 
 ![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Les paramètres du mode Page sont disponibles à la fois en [mode Lecture et en mode Édition](service-reading-view-and-editing-view.md). En mode Édition, le propriétaire d’un rapport peut affecter un paramètre de mode Page à certaines pages d’un rapport. Ces paramètres sont alors enregistrés avec le rapport. Quand un collègue ouvre ce rapport en mode Lecture, il voit les pages du rapport s’afficher avec les paramètres du propriétaire.  En mode Lecture, les collègues peuvent modifier *certains* des paramètres de mode Page, mais les modifications ne sont pas enregistrées lorsqu’ils quittent le rapport.
+Les paramètres du mode Page sont disponibles à la fois en [mode Lecture et en mode Édition](consumer/end-user-reading-view.md). En mode Édition, le propriétaire d’un rapport peut affecter un paramètre de mode Page à certaines pages d’un rapport. Ces paramètres sont alors enregistrés avec le rapport. Quand un collègue ouvre ce rapport en mode Lecture, il voit les pages du rapport s’afficher avec les paramètres du propriétaire.  En mode Lecture, les collègues peuvent modifier *certains* des paramètres de mode Page, mais les modifications ne sont pas enregistrées lorsqu’ils quittent le rapport.
 
 ##    <a name="page-view-settings"></a>Paramètres de mode Page
 Le premier ensemble de paramètres du *mode Page* contrôle l’affichage de votre page de rapport dans la fenêtre du navigateur.  Choisissez parmi les options suivantes :
@@ -62,7 +62,7 @@ Le deuxième ensemble de paramètres du *mode Page* contrôle le positionnement 
 ## <a name="page-size-settings"></a>Paramètres Taille de la page
 ![](media/power-bi-report-display-settings/power-bi--page-size.png)
 
-Les paramètres de *taille de page* sont uniquement disponibles pour les propriétaires de rapport. Dans le service Power BI (app.powerbi.com), vous devez donc ouvrir le rapport en [mode Édition](service-reading-view-and-editing-view.md). Ces paramètres permettent de contrôler les proportions et la taille réelle (en pixels) d’affichage du canevas de rapport.   
+Les paramètres de *taille de page* sont uniquement disponibles pour les propriétaires de rapport. Dans le service Power BI (app.powerbi.com), vous devez donc ouvrir le rapport en [mode Édition](consumer/end-user-reading-view.md). Ces paramètres permettent de contrôler les proportions et la taille réelle (en pixels) d’affichage du canevas de rapport.   
 
 * Proportions 4:3
 * Proportions 16:9 (par défaut)
@@ -71,11 +71,11 @@ Les paramètres de *taille de page* sont uniquement disponibles pour les propri�
 * Personnalisé (hauteur et largeur en pixels)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Découvrez comment utiliser les paramètres Mode Page et Taille de la page dans vos propres rapports Power BI](power-bi-change-report-display-settings.md).
+[Découvrez comment utiliser les paramètres Mode Page et Taille de la page dans vos propres rapports Power BI](consumer/end-user-report-view.md).
 
-En savoir plus sur les [rapports dans Power BI](service-reports.md)
+En savoir plus sur les [rapports dans Power BI](consumer/end-user-reports.md)
 
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

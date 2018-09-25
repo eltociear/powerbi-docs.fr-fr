@@ -2,7 +2,7 @@
 title: Graphiques en cascade dans Power BI
 description: Graphiques en cascade dans Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: feb608455add8740d7894fa2cec3c54a8a26944e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d1c771ed49a000374c58beb694dda511a8c9a097
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732590"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565817"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Graphiques en cascade dans Power BI
 Un graphique en cascade affiche un résultat cumulé à mesure que les valeurs sont additionnées ou soustraites. Ce type de graphique est utile pour comprendre de quelle façon une valeur initiale (par exemple, un revenu net) est affectée par une série de variations positives et négatives.
@@ -74,13 +74,13 @@ Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à
 La mise en surbrillance d’une colonne dans un graphique en cascade entraîne le filtrage croisé des autres visualisations sur la page du rapport, et inversement. Toutefois, la colonne Total ne déclenche pas la mise en surbrillance et ne répond pas à un filtrage croisé.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Rapports dans Power BI](../service-reports.md)
+[Rapports dans Power BI](../consumer/end-user-reports.md)
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)
 
-[Power BI – Concepts de base](../service-basic-concepts.md)
+[Power BI – Concepts de base](../consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

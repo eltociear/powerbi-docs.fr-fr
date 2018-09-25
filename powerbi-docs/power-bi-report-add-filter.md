@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e5e257fd245687f2aeb83a9ee45c0342cf16392d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: c8f99cf9c4d0645638b2ef300606f89a2d28aa0d
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34561698"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545965"
 ---
 # <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Ajouter un filtre à un rapport du service Power BI (en mode Édition)
 > [!TIP]
@@ -26,13 +26,13 @@ Les exemples de cet article montrent le service Power BI. La procédure est pres
 > 
 
 ## <a name="what-is-the-difference-between-report-filters-in-editing-view-versus-reading-view"></a>Différence entre les filtres de rapport en mode Lecture et en mode Édition
-Il existe deux modes d’interaction avec les rapports : le [mode Lecture](service-reading-view-and-editing-view.md) et le [mode Edition](service-interact-with-a-report-in-editing-view.md).  Et les fonctionnalités de filtrage disponibles varient en fonction du mode dans lequel vous êtes.
+Il existe deux modes d’interaction avec les rapports : le [mode Lecture](consumer/end-user-reading-view.md) et le [mode Edition](service-interact-with-a-report-in-editing-view.md).  Et les fonctionnalités de filtrage disponibles varient en fonction du mode dans lequel vous êtes.
 
 * En mode Édition, vous pouvez ajouter des filtres de rapport, de page et d’élément visuel. Les filtres sont enregistrés en même temps que le rapport. Les personnes qui examinent le rapport en mode Lecture peuvent interagir avec les filtres que vous avez ajoutés.
 * En mode Lecture, vous pouvez interagir avec les filtres de rapport, d’exploration, de page et de visuel qui existent déjà dans le rapport, mais vous ne pouvez pas ajouter de nouveaux filtres. Cependant, les modifications apportées dans le volet Filtres sont enregistrées avec le rapport, même si vous consultez le rapport dans une application mobile, et même si vous quittez le rapport et que vous y revenez ultérieurement.  
 
 > [!NOTE]
-> Cet article explique comment créer des filtres de rapport en **mode Edition**.  Pour plus d’informations sur les filtres en mode Lecture, consultez [Interaction avec les filtres de rapport en mode Lecture](service-reading-view-and-editing-view.md).
+> Cet article explique comment créer des filtres de rapport en **mode Edition**.  Pour plus d’informations sur les filtres en mode Lecture, consultez [Interaction avec les filtres de rapport en mode Lecture](consumer/end-user-reading-view.md).
 
 
 ## <a name="filters-available-in-the-power-bi-filters-pane"></a>Filtres disponibles dans le volet *Filtres* de Power BI
@@ -58,7 +58,7 @@ Il existe 2 manières de procéder :
 * en identifiant un champ qui n’est pas encore utilisé par la visualisation et en ajoutant ce champ directement au compartiment **Filtres au niveau de l’élément visuel** ;
 
 ### <a name="by-filtering-the-fields-already-in-the-visualization"></a>en filtrant les champs déjà présents dans la visualisation.
-1. Ouvrez votre [rapport en mode Edition](service-reading-view-and-editing-view.md).
+1. Ouvrez votre [rapport en mode Edition](consumer/end-user-reading-view.md).
    
    ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Ouvrez le volet Visualisations et filtres et le volet Champs (si ce n’est pas déjà fait).
@@ -72,7 +72,7 @@ Il existe 2 manières de procéder :
    * Faites défiler jusqu’à la zone **Filtres au niveau de l’élément visuel**, puis sélectionnez la flèche pour développer le champ que vous souhaitez filtrer. Dans cet exemple, nous filtrons **StoreNumberName**.
      
       ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
-   * Définissez des contrôles de filtrage **De base** **Avancé** ou **N premiers** (voir [Utilisation des filtres de rapport](power-bi-how-to-report-filter.md)). Dans cet exemple, nous allons sélectionner le filtrage De base et cocher 10, 11, 15 et 18.
+   * Définissez des contrôles de filtrage **De base** **Avancé** ou **N premiers** (voir [Utilisation des filtres de rapport](consumer/end-user-report-filter.md)). Dans cet exemple, nous allons sélectionner le filtrage De base et cocher 10, 11, 15 et 18.
      
       ![](media/power-bi-report-add-filter/power-bi-basic-filters.png) 
    * L’élément visuel change en fonction du nouveau filtre. Si vous enregistrez votre rapport avec le filtre, les personnes qui le consultent peuvent interagir avec le filtre en mode Lecture en sélectionnant ou en effaçant les valeurs.
@@ -91,10 +91,10 @@ Il existe 2 manières de procéder :
      ![](media/power-bi-report-add-filter/power-bi-filtered-andrew.png)
 
 ## <a name="add-a-filter-to-an-entire-page-aka-page-view-filter"></a>Ajouter un filtre à une page entière (également appelé filtre du mode Page)
-1. Ouvrez votre [rapport en mode Edition](service-reading-view-and-editing-view.md).
+1. Ouvrez votre [rapport en mode Edition](consumer/end-user-reading-view.md).
 2. Ouvrez le volet Visualisations et filtres et le volet Champs (si ce n’est pas déjà fait).
 3. Dans le volet Champs, sélectionnez le champ que vous voulez ajouter en tant que nouveau filtre au niveau page, puis faites-le glisser vers la zone **Filtres au niveau de la page**.  
-4. Sélectionnez les valeurs à filtrer et définissez des contrôles de filtrage **De base** ou **Avancé** (consultez [Utilisation des filtres de rapport](power-bi-how-to-report-filter.md)).
+4. Sélectionnez les valeurs à filtrer et définissez des contrôles de filtrage **De base** ou **Avancé** (consultez [Utilisation des filtres de rapport](consumer/end-user-report-filter.md)).
    
    Tous les visualisations sur la page qui sont affectées par ce filtre sont redessinées pour refléter la modification. 
    
@@ -130,10 +130,10 @@ Voyons comment fonctionne le filtre d’extraction.
     ![](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
 ## <a name="add-a-filter-to-an-entire-report-aka-report-filter"></a>Ajouter un filtre à un rapport entier (filtre de rapport)
-1. Ouvrez votre [rapport en mode Edition](service-reading-view-and-editing-view.md).
+1. Ouvrez votre [rapport en mode Edition](consumer/end-user-reading-view.md).
 2. Ouvrez le volet Visualisations et filtres et le volet Champs (si ce n’est pas déjà fait).
 3. Dans le volet Champs, sélectionnez le champ que vous voulez ajouter en tant que nouveau filtre au niveau élément visuel, puis faites-le glisser vers la zone **Filtres au niveau du rapport**.  
-4. Sélectionnez les valeurs que vous voulez filtrer (consultez [Utilisation des filtres de rapport](power-bi-how-to-report-filter.md)).
+4. Sélectionnez les valeurs que vous voulez filtrer (consultez [Utilisation des filtres de rapport](consumer/end-user-report-filter.md)).
 
     Les éléments visuels sur la page active et toutes les pages du rapport changent en fonction du nouveau filtre. Si vous enregistrez votre rapport avec le filtre, les personnes qui le consultent peuvent interagir avec le filtre en mode Lecture en sélectionnant ou en effaçant les valeurs.
 
@@ -149,13 +149,13 @@ Voyons comment fonctionne le filtre d’extraction.
 - Si vous avez apporté un grand nombre de modifications aux filtres et que vous voulez rétablir les paramètres par défaut de l’auteur du rapport, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus du haut.
 
 ## <a name="next-steps"></a>Étapes suivantes
- [Utilisation des filtres de rapport](power-bi-how-to-report-filter.md)
+ [Utilisation des filtres de rapport](consumer/end-user-report-filter.md)
 
   [Filtres et mise en évidence dans les rapports](power-bi-reports-filters-and-highlighting.md)
 
-[Interagir avec les filtres et la mise en évidence dans les rapports en mode Lecture](service-reading-view-and-editing-view.md)
+[Interagir avec les filtres et la mise en évidence dans les rapports en mode Lecture](consumer/end-user-reading-view.md)
 
-[Modifier la façon dont le filtrage croisé et la mise en évidence croisée affectent les visuels d’un rapport](service-reports-visual-interactions.md)
+[Modifier la façon dont le filtrage croisé et la mise en évidence croisée affectent les visuels d’un rapport](consumer/end-user-interactions.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

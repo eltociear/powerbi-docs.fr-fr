@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/23/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d09f9d9d0de8608a39111f24e6f605c3fbce55fb
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 3bf0aa516f50d363b53d2ed91b86d999e7855c30
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732705"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545019"
 ---
 # <a name="doughnut-charts-in-power-bi"></a>Graphiques en anneau dans Power BI
 Un graphique en anneau est similaire à un graphique en secteurs, car il représente aussi la relation de parties par rapport à un ensemble. La seule différence est que le centre est vide et qu’il y a de la place pour une étiquette ou une icône.
@@ -43,13 +43,13 @@ Ces instructions utilisent l’Exemple Analyse de la vente au détail pour crée
 * Les graphiques en anneau sont davantage adaptés pour comparer une section spécifique par rapport à l’ensemble que pour comparer des sections individuelles entre elles. 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Rapports dans Power BI](../service-reports.md)
+[Rapports dans Power BI](../consumer/end-user-reports.md)
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)
 
-[Power BI – Concepts de base](../service-basic-concepts.md)
+[Power BI – Concepts de base](../consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

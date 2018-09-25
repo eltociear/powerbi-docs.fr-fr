@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a0216b5659548af0b69cdb1b94df887eec0bd4e0
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 83826e812f9173db522c929ae80c31fc7134e5bd
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736451"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549842"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Cartes choroplèthes dans Power BI
 Une carte choroplèthe utilise des ombrages, des teintes ou des motifs pour représenter proportionnellement les variations d’une valeur entre des zones géographiques ou des régions.  Visualisez rapidement les écarts relatifs grâce aux ombrages allant du clair (moins fréquent/plus bas) au foncé (plus fréquent/plus élevé).    
@@ -109,7 +109,7 @@ Si vous ne possédez pas de données de latitude et de longitude, [suivez ces in
 Pour plus d’informations sur les visualisations de carte, consultez [Tips and tricks for map visualizations](power-bi-map-tips-and-tricks.md) (Trucs et astuces pour les visualisations de carte).
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Ajouter la carte choroplèthe sous forme de vignette de tableau de bord (épingler le visuel)](../service-dashboard-tiles.md)    
+[Ajouter la carte choroplèthe sous forme de vignette de tableau de bord (épingler le visuel)](../consumer/end-user-tiles.md)    
  [Ajouter une visualisation à un rapport](power-bi-report-add-visualizations-i.md)  
  [Types de visualisations dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Modifier le type de visualisation utilisé](power-bi-report-change-visualization-type.md)      

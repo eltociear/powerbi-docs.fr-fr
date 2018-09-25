@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 0e462fa6faf8d83bfcdb8658e2fcb852aeac5c3b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: deba4a654c1b43361f7c44c2f0717fb7e348cb98
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248904"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548669"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Enregistrer un rapport dans le service Power BI et Power BI Desktop
 Une fois que vous avez modifié un rapport dans Power BI, vous pouvez l’enregistrer, l’enregistrer sous un autre nom ou le fermer sans enregistrer vos modifications. Supposons que vous ayez ouvert le rapport, créé une visualisation, puis épinglé cette visualisation au tableau de bord. Si vous le fermez sans enregistrer vos modifications, la vignette restera sur le tableau de bord, mais la visualisation ne sera pas enregistrée dans le rapport. Si vous cliquez sur cette vignette dans le tableau de bord, le rapport s’ouvre, mais la visualisation ne figure pas dans le rapport.
@@ -29,7 +29,7 @@ Une fois que vous avez modifié un rapport dans Power BI, vous pouvez l’enreg
 1. Si vous essayez de quitter un rapport qui a été modifié, Power BI affiche une invite.
    
    ![Enregistrer les modifications](media/service-report-save/power-bi-unsaved.png)
-2. Pour enregistrer le rapport, vous pouvez également sélectionner **Fichier** \> **Enregistrer** ou **Enregistrer sous**. Si vous êtes en [mode Lecture](service-reading-view-and-editing-view.md) vous voyez uniquement l’option Enregistrer sous. 
+2. Pour enregistrer le rapport, vous pouvez également sélectionner **Fichier** \> **Enregistrer** ou **Enregistrer sous**. Si vous êtes en [mode Lecture](consumer/end-user-reading-view.md) vous voyez uniquement l’option Enregistrer sous. 
    
    ![Enregistrer le rapport](media/service-report-save/power-bi-save-new.png)
 3. S’il s’agit d’un nouveau rapport (Enregistrer) ou d’une nouvelle version d’un rapport existant (Enregistrer sous), attribuez-lui un nom descriptif.  **Le rapport est ajouté à l’espace de travail actif**.
@@ -37,9 +37,9 @@ Une fois que vous avez modifié un rapport dans Power BI, vous pouvez l’enreg
     ![nommer le rapport](media/service-report-save/power-bi-save-dialog.png)
 
 ### <a name="next-steps"></a>Étapes suivantes
-En savoir plus sur les [rapports dans Power BI](service-reports.md)
+En savoir plus sur les [rapports dans Power BI](consumer/end-user-reports.md)
 
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

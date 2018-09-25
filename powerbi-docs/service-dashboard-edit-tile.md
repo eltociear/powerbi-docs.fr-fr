@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0de070cc8661d4973d406ddf0749ef4852fc916c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598975"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546093"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Modifier ou supprimer une vignette de tableau de bord
 
@@ -36,7 +36,7 @@ Cet article aborde les points suivants.
 * [Supprimer une vignette](#delete)
   
   > [!TIP]
-  > Pour modifier la visualisation figurant sur la vignette elle-même, supprimez la vignette, puis ajoutez une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md).
+  > Pour modifier la visualisation figurant sur la vignette elle-même, supprimez la vignette, puis ajoutez une nouvelle [vignette de tableau de bord](consumer/end-user-tiles.md).
 
   
 ## <a name="prerequisites"></a>Conditions préalables
@@ -142,11 +142,11 @@ Par défaut, si vous sélectionnez une vignette, vous êtes normalement dirigé 
 
 - - -
 ## <a name="next-steps"></a>Étapes suivantes
-[Vignettes d’un tableau de bord dans Power BI](service-dashboard-tiles.md)
+[Vignettes d’un tableau de bord dans Power BI](consumer/end-user-tiles.md)
 
-[Tableaux de bord dans Power BI](service-dashboards.md)
+[Tableaux de bord dans Power BI](consumer/end-user-dashboards.md)
 
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

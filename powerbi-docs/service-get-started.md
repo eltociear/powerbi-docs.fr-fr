@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 51c3fdbef345a0d6020abe35ba7c71aaa67882e4
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c64a5e487725bdfedf03b496322a52e7664f5455
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726843"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545081"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Tutoriel : Bien démarrer avec le service Power BI (app.powerbi.com)
 Ce didacticiel vous aide à bien démarrer avec le ***service Power BI***. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de commencer par lire [Qu’est-ce que Power BI ?](power-bi-overview.md).
@@ -53,9 +53,9 @@ Visitez notre [sélection sur YouTube](https://www.youtube.com/playlist?list=PL1
 > 
 
 ## <a name="what-is-power-bi-service"></a>Qu’est-ce que le service Power BI ?
-Le service Microsoft Power BI est parfois appelé Power BI en ligne ou app.powerbi.com. Power BI vous aide à rester informé dans les domaines qui vous intéressent.  Grâce au service Power BI, les ***tableaux de bord*** vous permettent de prendre en permanence le pouls de votre activité.  Vos tableaux de bord affichent des ***vignettes*** sur lesquelles vous pouvez cliquer pour ouvrir des ***rapports*** qui vous donnent de plus amples détails.  Connectez-vous à plusieurs ***jeux de données*** pour rassembler au même endroit toutes les données pertinentes. Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consultez [Power BI – Concepts de base](service-basic-concepts.md).
+Le service Microsoft Power BI est parfois appelé Power BI en ligne ou app.powerbi.com. Power BI vous aide à rester informé dans les domaines qui vous intéressent.  Grâce au service Power BI, les ***tableaux de bord*** vous permettent de prendre en permanence le pouls de votre activité.  Vos tableaux de bord affichent des ***vignettes*** sur lesquelles vous pouvez cliquer pour ouvrir des ***rapports*** qui vous donnent de plus amples détails.  Connectez-vous à plusieurs ***jeux de données*** pour rassembler au même endroit toutes les données pertinentes. Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consultez [Power BI – Concepts de base](consumer/end-user-basic-concepts.md).
 
-Si vous avez des données importantes dans des fichiers Excel ou CSV, vous pouvez créer un tableau de bord Power BI pour rester informé où que vous soyez et partager les informations avec d’autres personnes.  Disposez-vous d’un abonnement à une application SaaS comme Salesforce ?  Connectez-vous à Salesforce dès maintenant pour créer automatiquement un tableau de bord à partir de ces données, ou [découvrez toutes les autres applications SaaS](service-get-data.md) auxquelles vous pouvez vous connecter. Si vous faites partie d’une organisation, voyez si des [applications](service-create-distribute-apps.md) ont été publiées pour vous.
+Si vous avez des données importantes dans des fichiers Excel ou CSV, vous pouvez créer un tableau de bord Power BI pour rester informé où que vous soyez et partager les informations avec d’autres personnes.  Disposez-vous d’un abonnement à une application SaaS comme Salesforce ?  Connectez-vous à Salesforce dès maintenant pour créer automatiquement un tableau de bord à partir de ces données, ou [découvrez toutes les autres applications SaaS](service-get-data.md) auxquelles vous pouvez vous connecter. Si vous faites partie d’une organisation, voyez si des [applications](consumer/end-user-create-apps.md) ont été publiées pour vous.
 
 En savoir plus sur toutes les autres façons d’[obtenir des données pour Power BI](service-get-data.md).
 
@@ -87,7 +87,7 @@ Voici un exemple d’obtention de données à partir d’un fichier CSV. Vous s
 
     ![option Mode Lecture](media/service-get-started/power-bi-editing-view.png)
 
-    En mode Édition, vous pouvez créer et modifier vos rapports, car vous êtes le *propriétaire* du rapport ; vous êtes un *créateur*. Lorsque vous partagez votre rapport avec vos collègues, ceux-ci sont seulement en mesure d’interagir avec le rapport en mode Lecture : ils sont des *consommateurs*. En savoir plus sur les [Mode Lecture et mode Édition](service-reading-view-and-editing-view.md).
+    En mode Édition, vous pouvez créer et modifier vos rapports, car vous êtes le *propriétaire* du rapport ; vous êtes un *créateur*. Lorsque vous partagez votre rapport avec vos collègues, ceux-ci sont seulement en mesure d’interagir avec le rapport en mode Lecture : ils sont des *consommateurs*. En savoir plus sur les [Mode Lecture et mode Édition](consumer/end-user-reading-view.md).
     
     Un excellent moyen de vous familiariser avec l’éditeur de rapport consiste à [suivre une visite guidée](service-the-report-editor-take-a-tour.md).
    > 
@@ -158,5 +158,5 @@ Maintenant que vous avez terminé le tutoriel, vous pouvez supprimer le jeu de d
 Prêt à aller plus loin ?  Voici comment poursuivre votre exploration de Power BI de façon intéressante.
 
 > [!div class="nextstepaction"]
-> [Se connecter aux services en ligne que vous utilisez](./service-connect-to-services.md)
+> [Se connecter aux services en ligne que vous utilisez](consumer/end-user-connect-to-services.md)
 

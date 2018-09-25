@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b486ad6bc4027aa2122ee72fc7fb89f0fd80c875
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a219ad94725f8d5423597bd65321f0024f95c1bb
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732735"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546001"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Personnaliser le titre, la légende et l’arrière-plan d’une visualisation
 Ce didacticiel présente quelques façons de personnaliser vos visualisations.   Compte tenu du nombre important d’options de personnalisation pour les visualisations, la meilleure façon de les découvrir toutes consiste à explorer le volet Mise en forme (sélectionnez l’icône Rouleau à peindre).  Pour vous aider à commencer, cet article explique comment personnaliser le titre, la légende et l’arrière-plan d’une visualisation.  
@@ -120,6 +120,6 @@ En reprenant le même histogramme, développez les options d’arrière-plan.
 ## <a name="next-steps"></a>Étapes suivantes
 [Personnaliser les axes x et y](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Personnaliser les couleurs et les propriétés des axes](service-getting-started-with-color-formatting-and-axis-properties.md)  
-[Power BI – Concepts de base](../service-basic-concepts.md)  
+[Power BI – Concepts de base](../consumer/end-user-basic-concepts.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

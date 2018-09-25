@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bb1ebf08c7ffb7a18cc0dd273c767c082f89f1aa
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d3afa24c68db5ffcaec1dddae09b0b9719bf2bb5
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732655"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543540"
 ---
 # <a name="kpi-visuals"></a>Éléments visuels des indicateurs de performance clés
 Un indicateur de performance clé (KPI) est un indice visuel qui représente la marge de progression réalisée en vue d’atteindre un objectif mesurable. Pour plus d’informations sur les indicateurs de performances clés, consultez [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -42,7 +42,7 @@ Vous pouvez également écouter Will qui vous montre comment créer des élémen
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Ouvrez le rapport en [mode Édition](../service-reading-view-and-editing-view.md) et [ajouter une nouvelle page](../power-bi-report-add-page.md).    
+1. Ouvrez le rapport en [mode Édition](../consumer/end-user-reading-view.md) et [ajouter une nouvelle page](../power-bi-report-add-page.md).    
 2. Sélectionnez **Ventes > Nombre total d’unités cette année**.  Il s’agit de l’indicateur.
 3. Ajoutez **Temps > Mois**.  Ceci représente la tendance.
 4. IMPORTANT : Triez le graphique par **mois**. Une fois que vous convertissez la visualisation en indicateur de performance clé, il n’existe aucune option de tri.

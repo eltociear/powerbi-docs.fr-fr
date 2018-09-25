@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 7239351a7a9486aeeab53e4ab7fc5c3c3e877ff6
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 9dd80776690e1fd45144c99570be8aa787a2938c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34561445"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544497"
 ---
 # <a name="about-filters-and-highlighting-in-power-bi-reports"></a>À propos des filtres et de la mise en évidence dans les rapports Power BI
 Les ***filtres*** masquent tout, sauf les données qui vous intéressent.  Contrairement au filtrage, qui masque les données, la ***mise en évidence*** met en évidence un sous-ensemble des données visibles ; les données qui ne sont pas mises en évidence restent visibles, mais sont estompées.
@@ -24,9 +24,9 @@ Il existe de nombreuses façons de filtrer et de mettre en évidence des rapport
 
 * Présentation des filtres et de la mise en évidence (cet article)
 * Méthodes permettant de [créer et d’utiliser des filtres et la mise en évidence dans des rapports en mode Édition dont vous êtes propriétaire](power-bi-report-add-filter.md). Quand vous disposez d’autorisations de modification d’un rapport, vous pouvez créer, modifier et supprimer les filtres et la mise en évidence dans ce rapport.
-* Méthodes permettant d’[utiliser des filtres et la mise en évidence dans un rapport partagé avec vous ou en mode Lecture](service-reading-view-and-editing-view.md). Ce que vous pouvez faire est plus limité, mais Power BI vous donne toujours un large éventail d’options de filtrage et de mise en évidence.  
-* [Visite guidée détaillée des commandes de filtrage et de mise en évidence disponibles en mode Édition](power-bi-how-to-report-filter.md), y compris une présentation détaillée des types de filtre (date et heure, numérique, texte, etc.) et la différence entre les options de base et avancée.
-* Maintenant que vous connaissez le fonctionnement par défaut des filtres et de la mise en évidence, [découvrez comment modifier l’affichage des visualisations sur un filtre au niveau de la page et effectuer une mise en évidence](service-reports-visual-interactions.md)
+* Méthodes permettant d’[utiliser des filtres et la mise en évidence dans un rapport partagé avec vous ou en mode Lecture](consumer/end-user-reading-view.md). Ce que vous pouvez faire est plus limité, mais Power BI vous donne toujours un large éventail d’options de filtrage et de mise en évidence.  
+* [Visite guidée détaillée des commandes de filtrage et de mise en évidence disponibles en mode Édition](consumer/end-user-report-filter.md), y compris une présentation détaillée des types de filtre (date et heure, numérique, texte, etc.) et la différence entre les options de base et avancée.
+* Maintenant que vous connaissez le fonctionnement par défaut des filtres et de la mise en évidence, [découvrez comment modifier l’affichage des visualisations sur un filtre au niveau de la page et effectuer une mise en évidence](consumer/end-user-interactions.md)
 
 > [!TIP]
 > Comment Power BI peut savoir la façon dont les données sont liées ?  Power BI utilise les relations entre les différentes tables et les différents champs du [modèle de données](https://support.office.com/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&rs=en-US&ad=US) sous-jacent pour que les éléments d’une page de rapport interagissent les uns avec les autres.
@@ -46,7 +46,7 @@ Les filtres et la mise en évidence peuvent être appliqués à l’aide du vole
 > 
 
 ## <a name="filters-in-reading-view-versus-editing-view"></a>Filtres en mode Lecture et en mode Édition
-Il existe deux modes d’interaction avec les rapports : le [mode Lecture et le mode Édition](service-reading-view-and-editing-view.md).  Et les fonctionnalités de filtrage disponibles varient en fonction du mode dans lequel vous êtes.
+Il existe deux modes d’interaction avec les rapports : le [mode Lecture et le mode Édition](consumer/end-user-reading-view.md).  Et les fonctionnalités de filtrage disponibles varient en fonction du mode dans lequel vous êtes.
 
 * En mode Édition, vous pouvez ajouter des filtres de rapport, de page, d’exploration et de visuel. Quand vous enregistrez le rapport, les filtres sont enregistrés avec le rapport, même si vous l’ouvrez dans une application mobile. Les personnes qui consultent le rapport en mode Lecture peuvent interagir avec les filtres que vous avez ajoutés, mais elles ne peuvent pas ajouter de nouveaux filtres.
 * En mode Lecture, vous pouvez interagir avec les filtres qui déjà existent dans le rapport et enregistrer la sélection que vous effectuez.  Vous ne pouvez cependant pas ajouter de nouveaux filtres.
@@ -62,7 +62,7 @@ Pour voir si des filtres au niveau de l’élément visuel existent, sélectionn
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
-En mode Lecture, explorez les données en modifiant les filtres existants. Les modifications que vous avez apportées sont enregistrées avec le rapport, même si vous ouvrez le rapport dans une application mobile. Découvrez plus d’informations dans [Mode Lecture et mode Édition dans le service Power BI](service-reading-view-and-editing-view.md)
+En mode Lecture, explorez les données en modifiant les filtres existants. Les modifications que vous avez apportées sont enregistrées avec le rapport, même si vous ouvrez le rapport dans une application mobile. Découvrez plus d’informations dans [Mode Lecture et mode Édition dans le service Power BI](consumer/end-user-reading-view.md)
 
 ### <a name="the-filters-pane-in-editing-view"></a>Volet Filtres en mode Édition
 Quand vous disposez des autorisations de propriétaire sur un rapport et que vous ouvrez celui-ci en mode Édition, **Filtres** est l’un des volets d’édition disponibles.
@@ -74,7 +74,7 @@ En mode Lecture (ci-dessus), cette page de rapport a 6 filtres au niveau de la 
 Toutefois, en mode Édition, les filtres et la mise en évidence permettent d’effectuer de nombreuses autres opérations. La principale différence est que nous pouvons ajouter de nouveaux filtres. Découvrez comment et bien plus encore dans l’article [Ajouter un filtre à un rapport](power-bi-report-add-filter.md)
 
 ## <a name="ad-hoc-filtering-and-highlighting"></a>Filtrage et mise en évidence ad hoc
-Sélectionnez un champ sur le canevas de rapport pour filtrer et mettre en évidence le reste de la page. Sélectionnez un espace vide dans ce même élément visuel pour le supprimer. Ce type de filtrage et de mise en évidence est un moyen facile d’explorer rapidement l’impact des données. Pour plus d’informations sur le filtrage croisé et la mise en évidence croisée, consultez [Interactions avec les visualisations](service-reports-visual-interactions.md).
+Sélectionnez un champ sur le canevas de rapport pour filtrer et mettre en évidence le reste de la page. Sélectionnez un espace vide dans ce même élément visuel pour le supprimer. Ce type de filtrage et de mise en évidence est un moyen facile d’explorer rapidement l’impact des données. Pour plus d’informations sur le filtrage croisé et la mise en évidence croisée, consultez [Interactions avec les visualisations](consumer/end-user-interactions.md).
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
@@ -83,15 +83,15 @@ Quand vous quittez le rapport, vos modifications sont enregistrées. Pour annule
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Interagir avec les filtres et la mise en évidence (en mode Lecture)](service-reading-view-and-editing-view.md)
+[Interagir avec les filtres et la mise en évidence (en mode Lecture)](consumer/end-user-reading-view.md)
 
 [Ajouter un filtre à un rapport (en mode Édition)](power-bi-report-add-filter.md)
 
-[Découvrir les filtres de rapport](power-bi-how-to-report-filter.md)
+[Découvrir les filtres de rapport](consumer/end-user-report-filter.md)
 
-[Modifier la façon dont le filtrage croisé et la mise en évidence croisée affectent les visuels d’un rapport](service-reports-visual-interactions.md)
+[Modifier la façon dont le filtrage croisé et la mise en évidence croisée affectent les visuels d’un rapport](consumer/end-user-interactions.md)
 
-En savoir plus sur les [rapports dans Power BI](service-reports.md)
+En savoir plus sur les [rapports dans Power BI](consumer/end-user-reports.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

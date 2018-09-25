@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 891d496fcdf809a816c9c18a6d21e4c486f76d76
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 0397921d239ec1d07312e69061890f8898e9687b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726797"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549957"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop et le service Power BI
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des conseils et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop, le service Power BI *et* dans les éditions Microsoft Excel 2016 ou Excel 2013 Pro-Plus avec l’activation du complément Power Pivot et l’activation et l’installation de Power Query.
@@ -206,7 +206,7 @@ La plupart des gens lisent de haut en bas. Placez donc les informations de haut 
 * Essayez d’éviter de mélanger des niveaux de précision et d’heure. Assurez-vous que les périodes sont bien comprises.  Ne mettez pas côte à côte un graphique concernant le mois dernier et des graphiques filtrés concernant un certain mois de l’année.    
 * Essayez également d’éviter de mélanger des grandes et des petites mesures sur une même mise à l’échelle, telle qu’une ligne ou un graphique à barres.  Par exemple, une mesure en millions et une autre en milliers.  Avec une telle échelle, il serait difficile de voir les différences de la mesure en milliers.  Si vous devez les mélanger, choisissez une visualisation, par exemple un graphique combiné, qui permet d’utiliser un deuxième axe.    
 * Évitez d’encombrer vos graphiques avec des étiquettes de données qui ne sont pas nécessaires. Les valeurs exprimées sous la forme de graphiques à barres, ***si elles sont suffisamment grandes***, sont généralement bien comprises et ne nécessitent pas l’affichage du nombre réel.   
-* Faites attention à la manière dont les [graphiques sont organisés](power-bi-report-change-sort.md).  Si vous voulez attirer l’attention sur le nombre le plus élevé ou le plus bas, effectuez un tri par mesure.  Si vous voulez que les utilisateurs puissent trouver rapidement une catégorie parmi de nombreuses autres catégories, effectuez un tri par axe.  
+* Faites attention à la manière dont les [graphiques sont organisés](consumer/end-user-change-sort.md).  Si vous voulez attirer l’attention sur le nombre le plus élevé ou le plus bas, effectuez un tri par mesure.  Si vous voulez que les utilisateurs puissent trouver rapidement une catégorie parmi de nombreuses autres catégories, effectuez un tri par axe.  
 * Si vous avez moins de huit catégories, les graphiques en secteurs conviendront le mieux. Étant donné que vous ne pouvez pas comparer des valeurs côte à côte, il est plus difficile de comparer des valeurs dans un graphique à secteurs que dans un graphique à barres ou dans un histogramme. Les graphiques en secteurs conviennent mieux à l’affichage des relations partie-tout qu’à la comparaison de différentes parties. Les graphiques en jauge conviennent parfaitement à l’affichage de l’état actuel dans le contexte d’un objectif.    
 
 Pour plus de conseils spécifiques aux visualisations, consultez [Types de visualisations dans Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).  
@@ -222,8 +222,8 @@ Voici quelques-uns de nos livres préférés :
 * *Conception des présentations avancées* par Andrew Abela   
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 
-[Rapports dans Power BI](service-reports.md)
+[Rapports dans Power BI](consumer/end-user-reports.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

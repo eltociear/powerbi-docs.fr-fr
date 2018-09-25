@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 90f32e96a6e2c7777c5d1535314e2c85989e1932
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 3bb151de24a984406aa6fd40a70977f2e9eaf1be
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599591"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548048"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Épingler une vignette à un tableau de bord Power BI à partir d’Excel
 Avant de pouvoir épingler une vignette à partir de votre classeur Excel, connectez ce classeur au service Power BI (app.powerbi.com). La connexion d’un classeur apporte essentiellement une version en lecture seule liée de ce classeur dans le service Power BI et vous permet d’épingler des plages à des tableaux de bord. Vous pouvez même épingler une feuille de calcul entière à un tableau de bord.  
@@ -49,7 +49,7 @@ Vous ne pouvez pas modifier votre classeur dans Power BI. Toutefois, si vous de
     ![Excel Online dans Power BI](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## <a name="pin-a-range-of-cells-to-a-dashboard"></a>Épingler une plage de cellules à un tableau de bord
-Dans Power BI, vous pouvez ajouter une nouvelle [vignette de tableau de bord](service-dashboard-tiles.md) à partir d’un classeur Excel. Les plages peuvent être épinglées à partir de classeurs Excel enregistrés dans votre espace OneDrive Entreprise ou une autre bibliothèque de documents partagés dans un groupe. Elles peuvent contenir des données, graphiques, tableaux, tableaux croisés dynamiques, graphiques croisés dynamiques et autres composants Excel.
+Dans Power BI, vous pouvez ajouter une nouvelle [vignette de tableau de bord](consumer/end-user-tiles.md) à partir d’un classeur Excel. Les plages peuvent être épinglées à partir de classeurs Excel enregistrés dans votre espace OneDrive Entreprise ou une autre bibliothèque de documents partagés dans un groupe. Elles peuvent contenir des données, graphiques, tableaux, tableaux croisés dynamiques, graphiques croisés dynamiques et autres composants Excel.
 
 1. Mettez en surbrillance les cellules que vous souhaitez épingler au tableau de bord.
    

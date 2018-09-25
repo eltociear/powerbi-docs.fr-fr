@@ -2,7 +2,7 @@
 title: Graphiques en jauge radiale dans Power BI
 description: Graphiques en jauge radiale dans Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fa097c7111e630b4c0c80e71d812be73cc232ea6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: e090515514897dd4dcbc9962d0dadacae5611ff0
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732720"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565551"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Graphiques en jauge radiale dans Power BI
 Un graphique en jauge radiale est en forme d’arc de cercle. Il affiche une seule valeur qui mesure la progression vers un objectif/indicateur de performance clé.  L’objectif (valeur cible) est représenté par la ligne (aiguille). La progression vers l’objectif est représentée par l’ombrage.  La valeur représentant cette progression est indiquée en caractères gras à l’intérieur de l’arc. Toutes les valeurs possibles sont réparties uniformément le long de l’arc, de la valeur minimale (la plus à gauche) à la valeur maximale (la plus à droite).
@@ -92,7 +92,7 @@ Dans l’étape 2, Power BI a utilisé le champ Valeur pour définir automatiq
 
 ### <a name="step-5-save-your-report"></a>Étape 5 : enregistrer le rapport
 1. [Enregistrez le rapport](../service-report-save.md).
-2. [Ajoutez le graphique en jauge sous forme de vignette de tableau de bord](../service-dashboard-tiles.md). 
+2. [Ajoutez le graphique en jauge sous forme de vignette de tableau de bord](../consumer/end-user-tiles.md). 
 
 ## <a name="use-formatting-options-to-manually-set-minimum-maximum-and-target-values"></a>Utilisez les options de mise en forme pour définir manuellement les valeurs Minimum, Maximum et Cible.
 1. Supprimez **Max of Gross Sales** (Chiffre d’affaires brut maximum) de **Valeur maximale** .
@@ -117,7 +117,7 @@ Dans l’étape 2, Power BI a utilisé le champ Valeur pour définir automatiq
 
 [Épingler une visualisation à un tableau de bord](../service-dashboard-pin-tile-from-report.md)
 
-[Power BI - Concepts de base](../service-basic-concepts.md)
+[Power BI - Concepts de base](../consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

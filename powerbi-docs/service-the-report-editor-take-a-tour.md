@@ -11,25 +11,25 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 78d9004a718990cbcd310835e8e9b8ae5e3eae17
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 3c6ae5351908bd71888040c3bc900323837935c2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726636"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546070"
 ---
 # <a name="the-report-editortake-a-tour"></a>Découverte de l’éditeur de rapport
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Modifier des rapports dans Power BI Desktop et le service Power BI
 L’éditeur de rapport dans le service Power BI et l’éditeur de rapport dans Power BI Desktop sont très similaires. La vidéo montre l’éditeur de rapport dans Power BI Desktop et cet article montre l’éditeur de rapport dans le service Power BI. 
 
 ## <a name="the-difference-between-report-creators-and-report-consumers"></a>La différence entre les *créateurs* et les *consommateurs* de rapports
-La possibilité de créer et de modifier un rapport est réservée aux propriétaires de rapports (également appelés *créateurs*). Si vous êtes *consommateur* d’un rapport qui a été partagé avec vous, vous pourrez toujours ouvrir et interagir avec le rapport dans le service Power BI en [Mode Lecture seule](service-reading-view-and-editing-view.md), mais vous ne profiterez pas de toutes les fonctionnalités robustes auxquelles le créateur de rapports a accès.  
+La possibilité de créer et de modifier un rapport est réservée aux propriétaires de rapports (également appelés *créateurs*). Si vous êtes *consommateur* d’un rapport qui a été partagé avec vous, vous pourrez toujours ouvrir et interagir avec le rapport dans le service Power BI en [Mode Lecture seule](consumer/end-user-reading-view.md), mais vous ne profiterez pas de toutes les fonctionnalités robustes auxquelles le créateur de rapports a accès.  
 
-Pour plus d’informations sur le Mode Lecture des rapports, consultez la section [Modes Lecture et Édition dans le service Power BI](service-reading-view-and-editing-view.md). 
+Pour plus d’informations sur le Mode Lecture des rapports, consultez la section [Modes Lecture et Édition dans le service Power BI](consumer/end-user-reading-view.md). 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-Dans le service Power BI, l’*éditeur de rapport* est disponible uniquement en [mode Édition](service-reading-view-and-editing-view.md). Pour ouvrir un rapport en Mode Édition, vous devez en être propriétaire ou créateur.
+Dans le service Power BI, l’*éditeur de rapport* est disponible uniquement en [mode Édition](consumer/end-user-reading-view.md). Pour ouvrir un rapport en Mode Édition, vous devez en être propriétaire ou créateur.
 
 L’éditeur de rapport dans Power BI comprend 3 sections :  
 
@@ -126,9 +126,9 @@ Le canevas de rapport est l’emplacement où votre travail s’affiche. Lorsque
 ## <a name="next-steps"></a>Étapes suivantes :
 [Créer un rapport](service-report-create-new.md)
 
-Découvrez plus en détail les rapports dans le [service Power BI](service-reports.md), [Power BI Desktop](desktop-report-view.md) et [Power BI Mobile](consumer/mobile/mobile-apps-view-phone-report.md).
+Découvrez plus en détail les rapports dans le [service Power BI](consumer/end-user-reports.md), [Power BI Desktop](desktop-report-view.md) et [Power BI Mobile](consumer/mobile/mobile-apps-view-phone-report.md).
 
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

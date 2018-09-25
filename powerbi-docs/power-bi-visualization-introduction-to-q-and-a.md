@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c567921b765f03fbaa11f2b98724cea1a1ce1905
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 92506d4ce2f372a4535a0a178ef43791c6d94f83
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240982"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547956"
 ---
 # <a name="get-started-with-power-bi-qa"></a>Bien démarrer avec Questions et réponses Power BI
 ## <a name="use-power-bi-qa-with-the-retail-analysis-sample"></a>Utiliser Questions et réponses dans Power BI avec l’exemple Analyse de la vente au détail
@@ -57,7 +57,7 @@ Comment faire pour générer le même graphique en courbes avec Q&R ?
 4. Pour épingler le graphique à votre tableau de bord, sélectionnez l’icône d’épingle ![](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Q&R dans Power BI](power-bi-q-and-a.md)
+[Q&R dans Power BI](consumer/end-user-q-and-a.md)
 
 [Optimiser vos données avec Q&R dans Power BI](service-prepare-data-for-q-and-a.md)
 

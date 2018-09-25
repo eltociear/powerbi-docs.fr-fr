@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.date: 01/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 320bcd80a6a258879568d323afdae60daacfee6c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2c90db1c08ba1d172acc4d0e82d23409d835879a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727937"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543587"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Didacticiel : Utiliser Questions et réponses pour créer des visualisations et générer des rapports
-La [vue d’ensemble de Questions et réponses](power-bi-q-and-a.md) vous a présenté le moteur Questions et réponses de Power BI et a différentié les *consommateurs* (qui ont des tableaux de bord et rapports partagés avec eux) et les *créateurs* (qui possèdent les rapports et jeux de données sous-jacents). La première partie de ce didacticiel est principalement destinée aux utilisateurs consommant des tableaux de bord à l’aide du service Power BI. La deuxième partie est conçue pour les personnes qui créent des rapports à l’aide du service Power BI ou de Power BI Desktop. [Questions et réponses et Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) et [Questions et réponses avec Power BI Embedded](developer/qanda.md) sont traités dans différents articles.
+La [vue d’ensemble de Questions et réponses](consumer/end-user-q-and-a.md) vous a présenté le moteur Questions et réponses de Power BI et a différentié les *consommateurs* (qui ont des tableaux de bord et rapports partagés avec eux) et les *créateurs* (qui possèdent les rapports et jeux de données sous-jacents). La première partie de ce didacticiel est principalement destinée aux utilisateurs consommant des tableaux de bord à l’aide du service Power BI. La deuxième partie est conçue pour les personnes qui créent des rapports à l’aide du service Power BI ou de Power BI Desktop. [Questions et réponses et Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) et [Questions et réponses avec Power BI Embedded](developer/qanda.md) sont traités dans différents articles.
 
 Q&R est interactif et même amusant, car une question en entraîne beaucoup d’autres au fur et à mesure que les visualisations révèlent des voies intéressantes à explorer. Regardez Amanda illustrer l’utilisation de Questions et réponses pour créer des visualisations, les explorer et les épingler à des tableaux de bord.
 
@@ -64,7 +64,7 @@ Utilisez Questions et réponses pour explorer votre jeu de données et pour ajou
 
 ![](media/power-bi-tutorial-q-and-a/power-bi-view-related.png)
 
-Pour pouvoir utiliser Questions et réponses dans des rapports, vous devez disposer d’autorisations de modification du rapport et du jeu de données sous-jacent. Dans la [rubrique présentant Questions et réponses](power-bi-q-and-a.md), nous avons fait référence à ce comportement par le terme de *créateur*. Par conséquent, si vous *consommez* à la place un rapport qui a été partagé avec vous, Questions et réponses n’est pas disponible.
+Pour pouvoir utiliser Questions et réponses dans des rapports, vous devez disposer d’autorisations de modification du rapport et du jeu de données sous-jacent. Dans la [rubrique présentant Questions et réponses](consumer/end-user-q-and-a.md), nous avons fait référence à ce comportement par le terme de *créateur*. Par conséquent, si vous *consommez* à la place un rapport qui a été partagé avec vous, Questions et réponses n’est pas disponible.
 
 1. Ouvrez un rapport en mode Édition (service Power BI) ou Rapport (Power BI Desktop) et sélectionnez **Poser une question** dans la barre de menus.
 
@@ -98,14 +98,14 @@ Pour pouvoir utiliser Questions et réponses dans des rapports, vous devez dispo
 Grâce à Questions et réponses, non seulement vous pouvez demander à vos données de parler d’elles-mêmes, mais vous pouvez également indiquer à Power BI comment afficher la réponse. Il suffit d’ajouter « sous forme de <visualization type> » à la fin de votre question.  Par exemple, « afficher le volume du stock par site sous la forme d’une carte » et « afficher le stock total sous la forme d’une carte ».  Essayez ces requêtes.
 
 ##  <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-- Si vous vous êtes connecté à un jeu de données à l’aide d’une connexion active ou d’une passerelle, Questions et réponses doit être [activé pour ce jeu de données](service-q-and-a-direct-query.md).
+- Si vous vous êtes connecté à un jeu de données à l’aide d’une connexion active ou d’une passerelle, Questions et réponses doit être [activé pour ce jeu de données](consumer/end-user-q-and-a-direct-query.md).
 
 - Vous avez ouvert un rapport et vous ne voyez pas l’option Questions et réponses. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en mode Édition. Si vous ne pouvez pas ouvrir le mode Édition, cela signifie que vous n’avez pas les autorisations de modification pour ce rapport et que vous ne pouvez pas utiliser Questions et réponses avec celui-ci.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Revenir à [Questions et réponses dans Power BI](power-bi-q-and-a.md)   
+Revenir à [Questions et réponses dans Power BI](consumer/end-user-q-and-a.md)   
 [Didacticiel : Utiliser Questions et réponses avec l’exemple Analyse de la vente au détail](power-bi-visualization-introduction-to-q-and-a.md)   
-[Conseils de formulation des questions dans Questions et réponses](service-q-and-a-tips.md)   
+[Conseils de formulation des questions dans Questions et réponses](consumer/end-user-q-and-a-tips.md)   
 [Préparer un classeur pour Q&R](service-prepare-data-for-q-and-a.md)  
-[Préparer un jeu de données local pour Questions et réponses](service-q-and-a-direct-query.md)
+[Préparer un jeu de données local pour Questions et réponses](consumer/end-user-q-and-a-direct-query.md)
 [Épingler une vignette au tableau de bord à partir de Questions et réponses](service-dashboard-pin-tile-from-q-and-a.md)

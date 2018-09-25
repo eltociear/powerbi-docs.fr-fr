@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6abe55f41211e5af907fb0a2642b3f8420236e1b
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 54cb45d1e9649fa761cfaf67aab708a2707e7516
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330486"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546743"
 ---
 # <a name="using-buttons-in-power-bi"></a>Utilisation des boutons dans Power BI
 En utilisant les **boutons** de Power BI, vous pouvez créer des rapports et des tableaux de bord qui se comportent comme des applications et donc créer un environnement plus interactif dans lequel les utilisateurs peuvent se déplacer, cliquer et interagir davantage avec le contenu Power BI. Vous pouvez ajouter des boutons aux rapports de **Power BI Desktop**et partager ou publier ces rapports dans le service Power BI pour créer des tableaux de bord qui offrent un comportement semblable à celui des applications pour les utilisateurs.
@@ -75,6 +75,6 @@ Vous pouvez essayer ou tester les boutons que vous créez pour votre rapport en 
 Pour plus d’informations sur les fonctionnalités qui sont similaires ou pour interagir avec des boutons, consultez les articles suivants :
 
 * [Utiliser une extraction dans Power BI Desktop](desktop-drillthrough.md)
-* [Afficher une vignette de tableau de bord ou un visuel de rapport en mode Focus](service-focus-mode.md)
+* [Afficher une vignette de tableau de bord ou un visuel de rapport en mode Focus](consumer/end-user-focus.md)
 * [Utiliser des signets pour partager des insights et créer des récits dans Power BI](desktop-bookmarks.md)
 

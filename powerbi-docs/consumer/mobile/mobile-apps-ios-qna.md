@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: 320ab8cef7ba2b36846550dcdb3171c7fb4b788a
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: abd0e6b36af02753d8ff08c8f7405cc6502977d1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732750"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548107"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Analyste virtuel des questions et réponses dans les applications iOS – Power BI
 
@@ -137,11 +137,11 @@ Consultez la section relative à la reconnaissance vocale dans la page [Nouveaut
 Vous pouvez améliorer les résultats que vous et vos clients obtenez lorsque vous utilisez l’analyste virtuel des questions et réponses sur un jeu de données, soit en posant des questions plus ciblées, soit en améliorant le jeu de données.
 
 ### <a name="how-to-ask-questions"></a>Comment poser des questions
-* Suivez ces [conseils pour poser des questions dans Questions et réponses](../../service-q-and-a-tips.md) dans le service Power BI ou l’analyste virtuel des questions et réponses dans votre application mobile iOS.
+* Suivez ces [conseils pour poser des questions dans Questions et réponses](../end-user-q-and-a-tips.md) dans le service Power BI ou l’analyste virtuel des questions et réponses dans votre application mobile iOS.
 
 ### <a name="how-to-enhance-the-dataset"></a>Comment améliorer le jeu de données
 * Améliorez le jeu de données dans le service Power BI ou Power BI Desktop pour [que vos données fonctionnent bien avec Questions et réponses et l’analyste virtuel des questions et réponses](../../service-prepare-data-for-q-and-a.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Questions et réponses dans le service Power BI](../../power-bi-q-and-a.md)
+* [Questions et réponses dans le service Power BI](../end-user-q-and-a.md)
 * Vous avez des questions ? Consultez la [section Mobile Apps dans la communauté Power BI](https://go.microsoft.com/fwlink/?linkid=839277)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 1f6c899932390bc4f9818fdcbb499848ca88a8d5
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: d499f3f3635442f8d9ed0fbf167e53d13ec0ae53
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558513"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549980"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Inscription individuelle à Power BI
 Découvrez comment vous inscrire à Power BI et commencer à l’utiliser pour vos rapports et vos visualisations.
@@ -99,7 +99,7 @@ Vous voyez ensuite un message vous demandant de sélectionner **Démarrer**.
 ## <a name="in-service-power-bi-pro-60-day-trial"></a>Version d’essai en service de 60 jours de Power BI Pro
 Une fois votre compte gratuit créé, vous avez la possibilité d’essayer gratuitement la version Pro pendant 60 jours. Vous aurez accès à toutes les fonctionnalités de la version Pro pendant toute la durée de la version d’évaluation. Power BI Pro dispose de toutes les fonctionnalités de la version gratuite de Power BI, ainsi que de fonctionnalités de partage et de collaboration supplémentaires. Pour plus d’informations, consultez [Tarification de Power BI](https://powerbi.microsoft.com/pricing). Pour essayer une version d’évaluation gratuite de 60 jours de Power BI Pro, connectez-vous à Power BI et essayez l’une des fonctionnalités Power BI Pro suivantes :
 
-* [Créer un espace de travail d’application](service-create-distribute-apps.md)
+* [Créer un espace de travail d’application](consumer/end-user-create-apps.md)
 * [Partager un tableau de bord](service-share-dashboards.md)
 
 Lorsque vous essayez l’une de ces fonctionnalités, vous êtes invité à démarrer votre version d’évaluation gratuite. Vous pouvez sélectionner manuellement cette option en cliquant sur l’icône d’engrenage et en sélectionnant **Gérer le stockage personnel**. Sélectionnez ensuite **Essayez gratuitement la version Pro** sur la droite.

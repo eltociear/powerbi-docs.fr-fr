@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7a002bb99cb80d805298d29916d4eb56f692b479
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 617809e072a492fb9887930e58bafd89ca8201e8
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310288"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544939"
 ---
 # <a name="static-content-in-power-bi-reports"></a>Contenu statique dans les rapports Power BI
 Il est possible d’ajouter des formes et des zones de texte à des rapports à l’aide du service Power BI et de Power BI Desktop. Dans les deux cas, vous devez disposer d’autorisations de modification du rapport. Si un rapport a été partagé avec vous dans le service Power BI, vous n’aurez pas d’autorisations de modification. 
@@ -65,6 +65,6 @@ Regardez comment Will utilise Power BI Desktop pour [ajouter des images statique
 ### <a name="next-steps"></a>Étapes suivantes
 [Ajouter un lien hypertexte à une zone de texte](service-add-hyperlink-to-text-box.md)
 
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

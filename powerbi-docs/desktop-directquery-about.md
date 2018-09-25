@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 81a8b5454e39088b8b406e600707d1d5073e14dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 1104c7f90f46252a74c4aa8e5ec573a159ef1c40
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330164"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550118"
 ---
 # <a name="using-directquery-in-power-bi"></a>Utilisation de DirectQuery dans Power BI
 Lorsque vous utilisez **Power BI Desktop** ou le **service Power BI**, vous pouvez vous connecter à toutes sortes de sources de données et établir ces connexions aux données de différentes façons. Vous pouvez soit *importer* des données dans Power BI, ce qui est la méthode la plus courante pour obtenir des données, soit vous connecter directement aux données dans leur dépôt source d’origine, ce qu’on appelle une requête **DirectQuery**. Cet article décrit la requête **DirectQuery** et ses fonctionnalités, et comprend les rubriques suivantes :
@@ -277,7 +277,7 @@ Lorsque vous créez un rapport à l’aide d’une connexion DirectQuery, suivez
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  Dans DirectQuery, le filtrage et la mise en surbrillance croisés impliquent l’envoi de requêtes à la source sous-jacente ; l’interaction doit donc être désactivée si le temps nécessaire pour répondre aux sélections des utilisateurs devient excessivement long. La désactivation est possible soit pour l’intégralité du rapport (cf. la section *Options de réduction des requêtes* ci-dessus) soit au cas par cas comme le décrit [cet article](service-reports-visual-interactions.md).
+  Dans DirectQuery, le filtrage et la mise en surbrillance croisés impliquent l’envoi de requêtes à la source sous-jacente ; l’interaction doit donc être désactivée si le temps nécessaire pour répondre aux sélections des utilisateurs devient excessivement long. La désactivation est possible soit pour l’intégralité du rapport (cf. la section *Options de réduction des requêtes* ci-dessus) soit au cas par cas comme le décrit [cet article](consumer/end-user-interactions.md).
 
 En plus de la liste de suggestions ci-dessus, notez que chacune des fonctions de création de rapports suivantes peut entraîner des problèmes de performances :
 

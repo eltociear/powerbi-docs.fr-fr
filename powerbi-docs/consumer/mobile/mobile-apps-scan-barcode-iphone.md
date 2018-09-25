@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 42ba9b042209dfd717c58042834e8d7966f97ecf
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d221cfdc849a18ba934ebacaf58ef40999ac0117
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732585"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543310"
 ---
 # <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Scanner un code-barres depuis l’application Power BI sur votre iPhone
 Scannez des codes-barres dans le monde réel pour accéder directement à des informations décisionnelles filtrées dans l’application mobile Power BI.
@@ -67,6 +67,6 @@ Le rapport que vous avez choisi de filtrer est basé sur un modèle de données 
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Marquer un champ de code-barres dans Power BI Desktop](../../desktop-mobile-barcodes.md)
-* [Vignettes d’un tableau de bord dans Power BI](../../service-dashboard-tiles.md)
-* [Tableaux de bord dans Power BI](../../service-dashboards.md)
+* [Vignettes d’un tableau de bord dans Power BI](../end-user-tiles.md)
+* [Tableaux de bord dans Power BI](../end-user-dashboards.md)
 

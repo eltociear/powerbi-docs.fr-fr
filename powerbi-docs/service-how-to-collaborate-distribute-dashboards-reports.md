@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7b1b55475e2ad19c869ba92cdb9621caa0fc3538
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 22d32315040352e013ae8331e9433a9e60e97f5c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726659"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545748"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Comment travailler en collaboration et partager des documents dans Power BI ?
 
@@ -57,7 +57,7 @@ Supposons que vous souhaitez distribuer votre tableau de bord à un public plus 
 
 ![Icône Publier l’application](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Si votre administrateur Power BI vous y autorise, vous pouvez installer une application automatiquement dans les comptes Power BI de vos collègues. Apprenez-en davantage sur la [publication de vos applications](service-create-distribute-apps.md). 
+Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Si votre administrateur Power BI vous y autorise, vous pouvez installer une application automatiquement dans les comptes Power BI de vos collègues. Apprenez-en davantage sur la [publication de vos applications](consumer/end-user-create-apps.md). 
 
 Après avoir installé une application, ils peuvent l’afficher dans leur navigateur ou sur leur appareil mobile.
 
@@ -88,7 +88,7 @@ En savoir plus sur l’[annotation et le partage de vignettes, de rapports et de
 Vous pouvez également [partager une capture instantanée d’une vignette](consumer/mobile/mobile-windows-10-phone-app-get-started.md) à partir de l’application Power BI pour les appareils Windows 10.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Imprimer ou enregistrer au format PDF ou dans un autre format de fichier statique
-Vous pouvez imprimer ou enregistrer au format PDF (ou dans un autre format de fichier statique) un tableau de bord entier, une vignette de tableau de bord, une page de rapport ou une visualisation à partir du service Power BI. Les rapports ne peuvent être imprimés qu’une page à la fois. Vous ne pouvez peut pas imprimer l’intégralité du rapport en une fois. En savoir plus sur l’[impression ou l’enregistrement en tant que fichier statique](service-print.md).
+Vous pouvez imprimer ou enregistrer au format PDF (ou dans un autre format de fichier statique) un tableau de bord entier, une vignette de tableau de bord, une page de rapport ou une visualisation à partir du service Power BI. Les rapports ne peuvent être imprimés qu’une page à la fois. Vous ne pouvez peut pas imprimer l’intégralité du rapport en une fois. En savoir plus sur l’[impression ou l’enregistrement en tant que fichier statique](consumer/end-user-print.md).
 
 ## <a name="publish-to-the-web"></a>Publier sur le web
 
@@ -99,7 +99,7 @@ Vous pouvez publiez des rapports Power BI sur le web en incorporant des visualis
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager des tableaux de bord avec vos collègues et d’autres utilisateurs](service-share-dashboards.md)
-* [Créer et publier une application dans Power BI](service-create-distribute-apps.md)
+* [Créer et publier une application dans Power BI](consumer/end-user-create-apps.md)
 * Vous voulez donner votre avis ? Accédez au [site de la communauté Power BI](https://community.powerbi.com/) pour effectuer des suggestions.
 * D’autres questions ? [Posez vos questions à la Communauté Power BI](http://community.powerbi.com/).
 

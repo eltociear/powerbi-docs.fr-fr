@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a85733e8450c9e1d3574afb71ace64fa2622fe0c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: f0337b26989b3d42e86339c4afc087579c2c3529
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44725624"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548784"
 ---
 # <a name="create-a-new-report-from-an-existing-report-copy-a-report"></a>Créer un nouveau rapport à partir d’un rapport existant (copier un rapport)
 Vous disposez peut-être déjà d’un rapport qui se connecte à votre jeu de données et possède certains éléments visuels que vous souhaitez réutiliser ou modifier.  Pourquoi ne pas simplement copier ce rapport comme base pour créer un nouveau rapport ?  Pour ce faire :
 
-1. [Ouvrez un rapport](service-report-open.md).
+1. [Ouvrez un rapport](consumer/end-user-report-open.md).
 2. Dans le menu **Fichier** , sélectionnez **Enregistrer sous**.
    
    ![](media/power-bi-report-copy/powerbi-save-as.png)
@@ -39,6 +39,6 @@ Vous disposez peut-être déjà d’un rapport qui se connecte à votre jeu de d
 ## <a name="next-steps"></a>Étapes suivantes :
 [Créer des visualisations](visuals/power-bi-report-add-visualizations-ii.md)
 
-[Supprimer des visualisations](service-delete.md) dont vous n’avez pas besoin
+[Supprimer des visualisations](consumer/end-user-delete.md) dont vous n’avez pas besoin
 
 [Créer un rapport à l’aide de Power BI Desktop](desktop-report-view.md)

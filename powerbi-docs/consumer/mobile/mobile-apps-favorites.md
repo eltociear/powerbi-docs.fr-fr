@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: 586e95ba624bde1d18b5c431a1b9dcbb642b939c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a689a3b04ca3b48c0b924ae62a52315dc3535faf
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44735546"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544941"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Définir et afficher des favoris dans les applications mobiles Power BI
 S’applique à :
@@ -30,7 +30,7 @@ Quand vous marquez un élément comme favori dans les applications mobiles Power
 ![Favoris dans les applications mobiles Power BI](./media/mobile-apps-favorites/power-bi-android-favorites-reports.png)
 
 
-Vous pouvez également [marquer comme favoris des tableaux de bord et applications Power BI dans le service Power BI](../../service-dashboard-favorite.md). Vous pouvez ensuite les consulter sur la page Favoris dans l’application mobile.
+Vous pouvez également [marquer comme favoris des tableaux de bord et applications Power BI dans le service Power BI](../end-user-favorite.md). Vous pouvez ensuite les consulter sur la page Favoris dans l’application mobile.
 
 Vous pouvez marquer des indicateurs de performance clés et rapports en tant que favoris sur un portail web Power BI Report Server ou Reporting Services, puis les afficher dans un seul dossier sur votre appareil mobile, ainsi que vos tableaux de bord Power BI favoris.
 
@@ -76,6 +76,6 @@ Vous pouvez définir un tableau de bord ou un rapport application comme favori �
 Vous pouvez afficher vos rapports et indicateurs de performance clés Power BI Report Server et Reporting Services favoris dans les applications mobiles Power BI, mais vous ne pouvez pas les marquer en tant que favoris dans ces applications. Vous [les marquez en tant que favoris dans le portail web](../../report-server/tutorial-explore-report-server-web-portal.md#tag-your-favorites). 
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Tableaux de bord favoris dans le service Power BI](../../service-dashboard-favorite.md) 
+* [Tableaux de bord favoris dans le service Power BI](../end-user-favorite.md) 
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

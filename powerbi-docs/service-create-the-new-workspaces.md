@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cde28e7c41a35c3bbc37d0da56313ad7f8698110
-ms.sourcegitcommit: 15b877343540bb7e21f1d5bbd3d6f64e66fa138c
+ms.openlocfilehash: 5a94b4c808dcb7cbb040f68c0de7588a3b99c155
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42914516"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548830"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Créer les nouveaux espaces de travail (préversion) dans Power BI
 
@@ -130,7 +130,7 @@ Nous créons des flux de travail Demander l’accès dans l’ensemble du servic
 
 ## <a name="distribute-an-app"></a>Distribuer une application
 
-Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant *qu’application*. Vous pouvez créer une application à partir de chaque espace de travail. Vos collègues peuvent obtenir votre application de différentes manières. Vous pouvez l’installer automatiquement dans les comptes Power BI de vos collègues si l’administrateur Power BI vous y autorise. Sinon, ils peuvent rechercher et installer votre application à partir de Microsoft AppSource ou d’un lien direct que vous leur envoyez. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour plus d’informations, consultez [Publier des applications avec des tableaux de bord et des rapports dans Power BI](service-create-distribute-apps.md).
+Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant *qu’application*. Vous pouvez créer une application à partir de chaque espace de travail. Vos collègues peuvent obtenir votre application de différentes manières. Vous pouvez l’installer automatiquement dans les comptes Power BI de vos collègues si l’administrateur Power BI vous y autorise. Sinon, ils peuvent rechercher et installer votre application à partir de Microsoft AppSource ou d’un lien direct que vous leur envoyez. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour plus d’informations, consultez [Publier des applications avec des tableaux de bord et des rapports dans Power BI](consumer/end-user-create-apps.md).
 
 ## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Convertir les anciens espaces de travail d’application en nouveaux espaces de travail d’application
 
@@ -174,5 +174,5 @@ Les problèmes suivants sont connus et des correctifs sont en cours de développ
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Créer les espaces de travail actuels](service-create-workspaces.md)
-* [Installer et utiliser des applications dans Power BI](service-install-use-apps.md)
+* [Installer et utiliser des applications dans Power BI](consumer/end-user-apps.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

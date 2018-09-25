@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 938f7b5f905d156518f71a30b355575cf1c04683
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2f7133bb376cc04e181eed2d90a45e3361190d0b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722540"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547021"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Exporter un rapport du service Power BI vers Power BI Desktop (version préliminaire)
 Dans Power BI Desktop, vous pouvez exporter (*télécharger*) un rapport dans le service Power BI en l’enregistrant et en sélectionnant **Publier**. Vous pouvez également exporter dans l’autre sens également et télécharger un rapport du service Power BI vers Power BI Desktop. L’extension des fichiers en cours d’exportation, dans les deux directions, est *.pbix*.
@@ -27,7 +27,7 @@ Il existe quelques limites et considérations à prendre en compte (voir plus lo
 ## <a name="download-the-report-as-a-pbix"></a>Télécharger le rapport au format .pbix
 Pour télécharger le fichier .pbix, procédez comme suit :
 
-1. Dans le **service Power BI**, ouvrez le rapport que vous souhaitez télécharger en [mode Edition](service-reading-view-and-editing-view.md).
+1. Dans le **service Power BI**, ouvrez le rapport que vous souhaitez télécharger en [mode Edition](consumer/end-user-reading-view.md).
 2. Dans la barre de menus, sélectionnez **Fichier > Télécharger le rapport**.
    
    > [!NOTE]
@@ -67,8 +67,8 @@ Regardez la vidéo d’une minute **Guy in a Cube** qui présente cette fonction
 
 En outre, voici quelques articles supplémentaires qui peuvent vous aider à apprendre à utiliser le **service Power BI** :
 
-* [Rapports dans Power BI](service-reports.md)
-* [Power BI – Concepts de base](service-basic-concepts.md)
+* [Rapports dans Power BI](consumer/end-user-reports.md)
+* [Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 
 Après avoir installé **Power BI Desktop**, consultez le contenu suivant pour apprendre à maîtriser l’application :
 

@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 5fe4212be55a42a6892a94e2a07da8af5c035b6d
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44735616"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547243"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -82,7 +82,7 @@ Lorsque vous sélectionnez une valeur dans un visuel, elle ne filtre pas les aut
 * Pour inverser l’ordre de tri, rappuyez sur les points de suspension (**...**), puis appuyez sur le même nom de champ.
 
 ## <a name="drill-down-and-up-in-a-visual"></a>Monter et descendre dans la hiérarchie d’un visuel
-Si l’auteur d’un rapport a ajouté cette fonctionnalité à un visuel, vous pouvez descendre dans la hiérarchie d’un visuel pour voir les valeurs qui composent une partie de celui-ci. [Ajoutez la descente dans la hiérarchie à un visuel](../../power-bi-visualization-drill-down.md) dans le service Power BI ou dans Power BI Desktop. 
+Si l’auteur d’un rapport a ajouté cette fonctionnalité à un visuel, vous pouvez descendre dans la hiérarchie d’un visuel pour voir les valeurs qui composent une partie de celui-ci. [Ajoutez la descente dans la hiérarchie à un visuel](../end-user-drill.md) dans le service Power BI ou dans Power BI Desktop. 
 
 * Appuyez et maintenez l’appui sur une barre ou un point spécifique dans un visuel pour afficher son info-bulle. Si la fonctionnalité d’exploration est activée, l’info-bulle a des flèches en bas sur lesquelles vous pouvez appuyer. 
   

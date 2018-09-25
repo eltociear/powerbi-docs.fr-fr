@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 6a930342806eb32f22efe3d2974625c54c5377bf
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a312a4311590d02d0fa8bd97726f9cf596cfe6a0
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732825"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545771"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaction avec des cartes ArcGIS dans Power BI
 Cette rubrique est écrite du point de vue d’une personne qui *utilise* une carte ArcGIS dans le service Power BI, dans Power BI Desktop ou dans la version mobile de Power BI. Une fois qu’un créateur a partagé une carte ArcGIS avec vous, il existe de nombreuses façons d’interagir avec celle-ci.  Pour en savoir plus sur la création d’une carte ArcGIS, consultez le [tutoriel sur les cartes ArcGIS par ESRI](../power-bi-visualization-arcgis.md).
@@ -55,9 +55,9 @@ ArcGIS Maps pour Power BI offre trois modes de sélection. Il n’est pas possib
 <br/>
 
 ## <a name="interacting-with-an-arcgis-map"></a>Interaction avec une carte ArcGIS
-Les fonctionnalités disponibles varient selon que vous êtes le *créateur* (la personne qui a créé la carte) ou l’*utilisateur* (celui qui a partagé la carte ArcGIS avec vous). Si vous interagissez avec une carte ArcGIS en tant qu’utilisateur (en [mode Lecture](../service-reading-view-and-editing-view.md)), voici les actions disponibles.
+Les fonctionnalités disponibles varient selon que vous êtes le *créateur* (la personne qui a créé la carte) ou l’*utilisateur* (celui qui a partagé la carte ArcGIS avec vous). Si vous interagissez avec une carte ArcGIS en tant qu’utilisateur (en [mode Lecture](../consumer/end-user-reading-view.md)), voici les actions disponibles.
 
-* Comme avec d’autres types de visualisation, vous pouvez les [épingler aux tableaux de bord](../service-dashboard-pin-tile-from-report.md), [afficher](../service-reports-show-data.md) et/ou [exporter les données sous-jacentes](../power-bi-visualization-export-data.md) et afficher la carte en [mode Focus](../service-focus-mode.md) et [Plein écran](../service-fullscreen-mode.md).    
+* Comme avec d’autres types de visualisation, vous pouvez les [épingler aux tableaux de bord](../service-dashboard-pin-tile-from-report.md), [afficher](../consumer/end-user-show-data.md) et/ou [exporter les données sous-jacentes](../consumer/end-user-export-data.md) et afficher la carte en [mode Focus](../consumer/end-user-focus.md) et [Plein écran](../service-fullscreen-mode.md).    
 * Développez le volet **Filtres** pour explorer la carte à l’aide de filtres. Lorsque vous fermez le rapport, les filtres que vous avez appliqués ne sont pas enregistrés.    
     ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Si la carte a une couche de référence, sélectionnez des emplacements pour afficher les détails dans une info-bulle. Dans l’image ci-dessous, Adams County a été sélectionné pour afficher des données de la couche de référence sur les revenus moyens des ménages que le créateur a ajoutée à la carte.

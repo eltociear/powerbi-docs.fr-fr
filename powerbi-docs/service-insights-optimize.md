@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2017
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: eed9b668cccf3bc8252d70f1dee94675063a8844
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: fbf49a9ddbec5f087a28e51144c782e2f1739db0
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34247754"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546941"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimisez vos données pour en avoir un aperçu rapide dans Power BI
 Vous souhaitez améliorer les résultats d’un aperçu rapide ?  Si vous êtes propriétaire d’un jeu de données, essayez ceci :
@@ -26,7 +26,7 @@ Vous souhaitez améliorer les résultats d’un aperçu rapide ?  Si vous êtes
 * Obtenez-vous un message d’erreur indiquant que vos données ne sont pas statistiquement significatives ?  Cela peut se produire avec les modèles très simples ou ceux qui ne contiennent pas beaucoup de données ou ne possèdent pas de colonnes numériques ou de date. Pour pouvoir générer des informations, votre jeu de données doit comprendre au moins une dimension et une mesure.
 
 ### <a name="next-steps"></a>Étapes suivantes
-[Aperçus rapides Power BI](service-insights.md)
+[Aperçus rapides Power BI](consumer/end-user-insights.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

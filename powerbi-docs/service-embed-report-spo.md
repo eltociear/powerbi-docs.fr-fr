@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 08/16/2018
-ms.openlocfilehash: 85e04993639d3c2897d2d7dddc00e79fd4fdf0c6
-ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
+ms.openlocfilehash: 6960945d878269344e8993577a8eac239d8ca4a4
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40257215"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549888"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -85,7 +85,7 @@ Incorporer un rapport dans SharePoint Online n’accorde pas automatiquement aux
 > [!IMPORTANT]
 > Veillez à passer en revue les utilisateurs qui peuvent afficher le rapport dans le service Power BI et à accorder l’accès à ceux qui ne sont pas répertoriés.
 
-Il existe deux moyens de fournir un accès au rapport au sein du service Power BI. Si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, répertoriez l’utilisateur comme membre de l’**espace de travail d’application dans le service Power BI** et la **page SharePoint**. Ceci permet de garantir que les utilisateurs peuvent visualiser les contenus de ce groupe. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](service-create-distribute-apps.md).
+Il existe deux moyens de fournir un accès au rapport au sein du service Power BI. Si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, répertoriez l’utilisateur comme membre de l’**espace de travail d’application dans le service Power BI** et la **page SharePoint**. Ceci permet de garantir que les utilisateurs peuvent visualiser les contenus de ce groupe. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](consumer/end-user-create-apps.md).
 
 Vous pouvez également accorder aux utilisateurs l’accès à votre rapport en procédant comme suit.
 
@@ -106,12 +106,12 @@ Voici une description des paramètres qui peuvent être ajustés pour le composa
 | Afficher le volet de navigation |Affiche ou masque le volet de navigation Page. |
 | Afficher le volet Filtre |Affiche ou masque le volet Filtre. |
 
-## <a name="multi-factor-authentication"></a>Authentification multifacteur
+## <a name="multi-factor-authentication"></a>Multi-Factor Authentication
 
 Si votre environnement Power BI nécessite une connexion via l’authentification multifacteur, vous pouvez être invité à vous connecter avec un dispositif de sécurité pour vérifier votre identité. Ce cas de figure se produit si vous ne vous êtes pas connecté à SharePoint Online avec l’authentification multifacteur, mais que votre environnement Power BI nécessite un compte validé par un dispositif de sécurité.
 
 > [!NOTE]
-> L’authentification multifacteur n’est pas encore prise en charge dans Azure Active Directory 2.0. Les utilisateurs reçoivent un message indiquant une *erreur*. Si l’utilisateur se reconnecte à SharePoint Online en utilisant son dispositif de sécurité, il peut visualiser le rapport.
+> Multi-Factor Authentication n’est pas encore pris en charge dans Azure Active Directory 2.0. Les utilisateurs reçoivent un message indiquant une *erreur*. Si l’utilisateur se reconnecte à SharePoint Online en utilisant son dispositif de sécurité, il peut visualiser le rapport.
 
 ## <a name="reports-that-do-not-load"></a>Rapports qui ne sont pas chargés
 
@@ -142,7 +142,7 @@ Vous devez contacter le propriétaire de la page SharePoint Online pour qu’il 
 
 * Power BI ne prend pas en charge les mêmes langues localisées que SharePoint Online. Par conséquent, vous risquez de ne pas voir la localisation appropriée dans le rapport incorporé.
 
-* Vous pouvez rencontrer des problèmes si vous utilisez Internet Explorer 10. Vous pouvez passer en revue les [navigateurs pris en charge par Power BI](service-browser-support.md) et [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
+* Vous pouvez rencontrer des problèmes si vous utilisez Internet Explorer 10. Vous pouvez passer en revue les [navigateurs pris en charge par Power BI](consumer/end-user-browsers.md) et [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
 
 * Le composant WebPart Power BI n’est pas disponible pour les [clouds souverains](https://powerbi.microsoft.com/en-us/clouds/).
 
@@ -151,7 +151,7 @@ Vous devez contacter le propriétaire de la page SharePoint Online pour qu’il 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Autoriser ou empêcher la création de pages de site moderne par les utilisateurs finaux](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Créer et distribuer une application dans Power BI](service-create-distribute-apps.md)  
+[Créer et distribuer une application dans Power BI](consumer/end-user-create-apps.md)  
 [Partager un tableau de bord avec vos collègues et les autres utilisateurs](service-share-dashboards.md)  
 [Qu’est-ce que Power BI Premium ?](service-premium.md)  
 

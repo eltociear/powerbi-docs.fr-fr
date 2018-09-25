@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 08/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c3dae6bcd59f44ab66b305b009da1e6fdabc9879
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 6cfd4cf1ae090351a710b00ee82600ddcbc71632
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732840"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546162"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisations dans des rapports Power BI
 Les visualisations (également appelées visuels) affichent des insights qui ont été détectés dans les données. Un rapport Power BI peut avoir une seule page avec un visuel unique ou des pages contenant de nombreux visuels. Dans le service Power BI, les visuels peuvent être [épinglés des rapports aux tableaux de bord](../service-dashboard-pin-tile-from-report.md). 
 
-Il est important de faire la distinction entre les *créateurs* et les *consommateurs* de rapports. Si vous êtes chargé de la création ou modification du rapport, vous êtes un créateur.  Les créateurs disposent d’autorisations de modification du rapport et de son jeu de données sous-jacent. Dans Power BI Desktop, cela signifie que vous pouvez ouvrir le jeu de données en mode Données et créer des visuels en mode rapport. Dans le service Power BI, cela signifie que vous pouvez ouvrir le jeu de données ou le rapport dans l’éditeur de rapport en [mode Édition](../service-reading-view-and-editing-view.md). Si un rapport ou un tableau de bord a été [partagé avec vous](../service-shared-with-me.md), vous en êtes **consommateur**. Vous pouvez alors afficher et manipuler le rapport et ses visuels, mais vous ne pouvez pas enregistrer de modifications.
+Il est important de faire la distinction entre les *créateurs* et les *consommateurs* de rapports. Si vous êtes chargé de la création ou modification du rapport, vous êtes un créateur.  Les créateurs disposent d’autorisations de modification du rapport et de son jeu de données sous-jacent. Dans Power BI Desktop, cela signifie que vous pouvez ouvrir le jeu de données en mode Données et créer des visuels en mode rapport. Dans le service Power BI, cela signifie que vous pouvez ouvrir le jeu de données ou le rapport dans l’éditeur de rapport en [mode Édition](../consumer/end-user-reading-view.md). Si un rapport ou un tableau de bord a été [partagé avec vous](../consumer/end-user-shared-with-me.md), vous en êtes **consommateur**. Vous pouvez alors afficher et manipuler le rapport et ses visuels, mais vous ne pouvez pas enregistrer de modifications.
 
 Il existe de nombreux types de visuels directement disponibles dans le volet Visualisations de Power BI. 
 

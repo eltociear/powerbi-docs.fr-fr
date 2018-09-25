@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 58a739c0d566030d2b09094264da14f6afd6d6fc
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 83b9d87bf494c3b9e974ee9dfdfa97beb68a6579
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727579"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545794"
 ---
 # <a name="full-screen-mode-in-power-bi-service"></a>Mode plein écran dans le service Power BI
 ## <a name="what-is-full-screen-mode"></a>Qu’est-ce que le mode plein écran ?
@@ -24,7 +24,7 @@ ms.locfileid: "44727579"
 
 Affichez votre contenu Power BI (tableaux de bord, pages de rapport, mosaïques et visualisations) sans vous laisser distraire par les menus et barres de navigation.  Vous disposez en permanence d’une vue instantanée complète, et sans fioritures, de votre contenu. Elle est parfois appelée mode TV. Les fonctionnalités disponibles en mode plein écran varient selon le contenu. 
 
-Si vous utilisez Power BI mobile, [le plein écran est disponible pour les applications mobiles Windows 10](consumer/mobile/mobile-windows-10-app-presentation-mode.md). Power BI Desktop n’a pas de mode plein écran pour les rapports ou les visualisations, mais propose Ajuster à la page pour la [vue Relation et la vue Rapport](desktop-report-view.md) et le [mode focus pour les visuels de rapport](service-focus-mode.md).
+Si vous utilisez Power BI mobile, [le plein écran est disponible pour les applications mobiles Windows 10](consumer/mobile/mobile-windows-10-app-presentation-mode.md). Power BI Desktop n’a pas de mode plein écran pour les rapports ou les visualisations, mais propose Ajuster à la page pour la [vue Relation et la vue Rapport](desktop-report-view.md) et le [mode focus pour les visuels de rapport](consumer/end-user-focus.md).
 
  
 
@@ -35,7 +35,7 @@ Le mode plein écran peut être utile pour les utilisations suivantes :
 * Affichage sur un petit écran
 * Consultation en mode verrouillé ; vous pouvez toucher l’écran ou passer le curseur de la souris sur les vignettes sans ouvrir le rapport ou le tableau de bord sous-jacent
 
-> **REMARQUE** : le mode plein écran est différent du [mode Focus (ouvrir dans une nouvelle fenêtre)](service-focus-mode.md).
+> **REMARQUE** : le mode plein écran est différent du [mode Focus (ouvrir dans une nouvelle fenêtre)](consumer/end-user-focus.md).
 > 
 > 
 
@@ -78,7 +78,7 @@ Regardez Amanda ouvrir et parcourir son tableau de bord en mode plein écran, pu
       ![](media/service-fullscreen-mode/exit-fullscreen-new.png)
 
 ## <a name="visualizations-and-dashboard-tiles-in-full-screen-mode"></a>Visualisations et vignettes de tableau de bord en mode plein écran
-1. Pour afficher des vignettes de tableau de bord et des visualisations de rapport en mode plein écran, la vignette ou visualisation voulue doit déjà être en [mode Focus](service-focus-mode.md). 
+1. Pour afficher des vignettes de tableau de bord et des visualisations de rapport en mode plein écran, la vignette ou visualisation voulue doit déjà être en [mode Focus](consumer/end-user-focus.md). 
    
     ![](media/service-fullscreen-mode/power-bi-focus3.png)
 2. Sélectionnez ensuite l’icône Plein écran ![Icône Plein écran](media/service-fullscreen-mode/power-bi-full-screen-icon.png)  pour la vignette ou le visuel en question. La vignette ou le visuel s’affiche en plein écran sans menus ni barres de navigation.
@@ -86,8 +86,8 @@ Regardez Amanda ouvrir et parcourir son tableau de bord en mode plein écran, pu
     ![](media/service-fullscreen-mode/power-bi-fullscreen.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Tableaux de bord dans Power BI](service-dashboards.md)  
-[Mode Focus](service-focus-mode.md)    
+[Tableaux de bord dans Power BI](consumer/end-user-dashboards.md)  
+[Mode Focus](consumer/end-user-focus.md)    
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

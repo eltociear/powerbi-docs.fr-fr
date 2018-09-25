@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 04a385d67a8cc462b21c16cf7daaa5aa675436d9
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 72c51a6eae4acec5bfc0af7b471f98dfcb22da67
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732775"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549797"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -23,7 +23,7 @@ S’applique à :
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone |iPad |Téléphones Android |Tablettes Android |Appareils Windows 10 |
 
-Les vignettes sont des captures instantanées dynamiques de vos données qui sont épinglées dans un tableau de bord. Leurs valeurs changent à mesure que les données changent. **Vous [ajoutez des vignettes à un tableau de bord dans le service Power BI](../../service-dashboard-tiles.md).** 
+Les vignettes sont des captures instantanées dynamiques de vos données qui sont épinglées dans un tableau de bord. Leurs valeurs changent à mesure que les données changent. **Vous [ajoutez des vignettes à un tableau de bord dans le service Power BI](../end-user-tiles.md).** 
 
 Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mode focus et interagissez avec elles. Vous pouvez ouvrir les vignettes avec tous les types d’éléments visuels, y compris des vignettes basées sur Bing et R.
 

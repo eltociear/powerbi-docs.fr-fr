@@ -1,6 +1,6 @@
 ---
-title: Utilisation de Questions et réponses dans Power BI Desktop
-description: Vous pouvez maintenant utiliser des requêtes en langage naturel dans Power BI Desktop en utilisant Questions et réponses
+title: Utilisation de Q&A dans Power BI Desktop
+description: Vous pouvez maintenant utiliser des requêtes en langage naturel dans Power BI Desktop, à l’aide de Q&A
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a14ed61d8d7e72090a034319052600cb429e8c16
-ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
+ms.openlocfilehash: 507cc25d324f47f00434430461d78013baa7210f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475726"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546933"
 ---
-# <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Utiliser Questions et réponses dans Power BI Desktop pour des requêtes en langage naturel
-Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et ce qui est encore plus fort, c’est quand vos données répondent, ce que permet Questions et réponses dans **Power BI Desktop**.
+# <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Utiliser Q&A dans Power BI Desktop pour des requêtes en langage naturel
+Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et ce qui est encore plus fort, c’est que vos données répondent, grâce à Q&A dans **Power BI Desktop**.
 
-Pour que la fonctionnalité Questions et réponses interprète correctement les nombreuses questions auxquelles elle peut répondre, elle doit émettre des hypothèses sur le modèle. Si la structure de votre modèle ne répond pas à une ou plusieurs de ces hypothèses, vous devrez ajuster votre modèle. Ces ajustements pour Questions et réponses sont les mêmes optimisations recommandées pour tous les modèles dans Power BI, indépendamment de Questions et réponses. 
+Pour que l’application Q&A interprète correctement les nombreuses questions auxquelles elle peut répondre, elle doit émettre des hypothèses sur le modèle. Si la structure de votre modèle ne répond pas à une ou plusieurs de ces hypothèses, vous devrez ajuster votre modèle. Ces ajustements pour Q&A sont les mêmes optimisations recommandées pour tous les modèles dans Power BI, indépendamment de Q&A. 
 
 > [!NOTE]
-> Questions et réponses est disponible uniquement quand vous utilisez un modèle qui contient des données **importées**. Les connexions actives aux modèles SSAS et DirectQuery ne sont pas prises en charge.
+> Q&A est disponible uniquement quand vous utilisez un modèle qui contient des données **importées**. Les connexions actives aux modèles SSAS et DirectQuery ne sont pas prises en charge.
 >
 >
 
@@ -198,5 +198,5 @@ Le champ **Synonymes** apparaît du côté droit de **Power BI Desktop**, vous p
 Pour en savoir plus sur les fonctionnalités de Power BI Desktop, consultez les articles suivants :
 
 * [Utiliser une extraction dans Power BI Desktop](desktop-drillthrough.md)
-* [Afficher une vignette de tableau de bord ou un visuel de rapport en mode Focus](service-focus-mode.md)
+* [Afficher une vignette de tableau de bord ou un visuel de rapport en mode Focus](consumer/end-user-focus.md)
 
