@@ -1,21 +1,21 @@
 ---
 title: Guide pratique pour ajouter un lien hypertexte à un tableau
 description: Liens hypertexte dans les tables
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/22/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 869eb25b17233d6c926f759c09923f528a4eb72e
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 9c1fc61d4a667b10728af8b7496e20803d024a83
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545196"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187556"
 ---
 # <a name="hyperlinks-in-tables"></a>Liens hypertexte dans les tables
 Cette rubrique explique comment utiliser Power BI Desktop pour créer des liens hypertexte. Une fois que vous avez créé des liens hypertexte, utilisez Power BI Desktop ou le service Power BI pour les ajouter à vos tableaux et matrices de rapport. 

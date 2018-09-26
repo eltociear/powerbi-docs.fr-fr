@@ -10,30 +10,30 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c50bcf656f967502e8bb01f7ca5184996170bed
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 1260f2c69a4ab913f7451671ab7821ee250998c0
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566323"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187234"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Optimiser des visuels Power BI de toutes tailles
 Par défaut, lorsque vous créez un nouveau rapport, les visuels sont *réactifs*, changeant de manière dynamique pour afficher une quantité maximale de données et d’insights, quelle que soit la taille de l’écran. Pour les rapports plus anciens, vous pouvez définir leurs visuels pour un redimensionnement dynamique également.
 
 Quand un visuel change de taille, Power BI hiérarchise la vue de données, par exemple, en supprimant le remplissage et en déplaçant automatiquement la légende vers le haut du visuel de façon à ce que celui-ci reste informatif, même quand sa taille diminue. La réactivité est particulièrement utile dans les visuels de l’application mobile Power BI sur les téléphones.
 
-![Redimensionnement de visuel réactif](./media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
+![Redimensionnement de visuel réactif](media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
 
 Tout visuel avec des axes X et Y, ainsi que des segments, peut être redimensionné de façon réactive.
 
 ## <a name="turn-on-responsiveness-in-power-bi-desktop"></a>Activer la réactivité dans Power BI Desktop
 1. Dans un rapport plus ancien de Power BI Desktop, sous l’onglet **Affichage**, vérifiez que vous êtes en **Mode poste de travail**.
    
-    ![Icône Mode poste de travail](./media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
+    ![Icône Mode poste de travail](media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
 2. Sélectionnez un visuel, puis, dans le volet **Visualisations**, sélectionnez la section **Format**.
 3. Développez **Général** > définissez **Réactif** sur **Activé**.
    
-    ![Réactif activé](././media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Réactif activé](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Désormais, lorsque vous [créez un rapport optimisé pour le téléphone](../desktop-create-phone-report.md), puis ajoutez cet visuel, celui-ci se redimensionne harmonieusement.
 
@@ -44,7 +44,7 @@ Vous pouvez activer la réactivité pour un visuel dans un rapport plus ancien d
 2. Sélectionnez un visuel, puis, dans le volet **Visualisations**, sélectionnez la section **Format**.
 3. Développez **Général** > définissez **Réactif** sur **Activé**.
    
-    ![Réactif activé](././media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Réactif activé](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Désormais, lorsque vous [créez une affichage sur téléphone de ce rapport](../desktop-create-phone-report.md), puis ajoutez ce visuel, celui-ci se redimensionne harmonieusement.
 

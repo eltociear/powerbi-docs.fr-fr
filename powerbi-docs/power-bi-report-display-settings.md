@@ -1,7 +1,7 @@
 ---
 title: Paramètres d’affichage des pages et de mode Page pour un rapport
 description: Paramètres d’affichage des pages et de mode Page pour un rapport
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/24/2017
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: a22bee33254e447f27f717b78a53fe3a5cc34fb2
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 733b45e856f2f3c3c2d31576ac884e4a4cd4a8cd
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545449"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187188"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Paramètres d’affichage de page dans un rapport Power BI
 Nous sommes conscients qu’il est essentiel de préserver la qualité de présentation de vos rapports. Cela n’est pas toujours évident, car vous et vos collègues consultez ces rapports sur des écrans de taille et de proportions différentes. 

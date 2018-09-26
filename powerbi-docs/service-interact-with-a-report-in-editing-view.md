@@ -1,21 +1,21 @@
 ---
 title: Interagir avec un rapport en mode Édition
 description: Interagir avec un rapport en mode Édition dans le service Power BI
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 04/11/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 7640c9f49205de97556af9cfa51c641a93d9d69c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4c206e6b1abb37bdaeb0e03fbce31b7b12e356ba
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547427"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47186650"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interagir avec un rapport en mode Édition dans le service Power BI
 Les rapports peuvent être créés et modifiés dans le service Power BI et Power BI Desktop. Dans le service Power BI, les rapports peuvent être créés et modifiés en **mode Édition**. Et, dans Power BI Desktop, les rapports peuvent être créés et modifiés en [**mode Rapport**](desktop-report-view.md). Cet article couvre le mode Édition dans le service Power BI. 
