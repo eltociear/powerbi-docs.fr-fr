@@ -4,17 +4,16 @@ description: Découvrez comment intégrer (ou incorporer) un tableau de bord, un
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
 ms.date: 07/26/2018
-ms.openlocfilehash: 2d722428ce2029ef4689e6b4bf5dfcdd208baff8
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: c9e38f3ca1c8ee43ab9d51d621dfc7d835c39db1
+ms.sourcegitcommit: 767c0d770e32e91ff28a176f79595fab523f69eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39255868"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48039436"
 ---
 # <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Tutoriel : Incorporer un tableau de bord, une vignette ou un rapport Power BI dans votre application pour les clouds souverains
 Découvrez comment intégrer (ou incorporer) un tableau de bord, une vignette ou un rapport dans une application web en utilisant le SDK Power BI .NET, ainsi que l’API JavaScript Power BI, lorsque l’incorporation s’adresse à vos clients. Il s’agit typiquement d’un scénario concernant les éditeurs de logiciels indépendants.
@@ -415,3 +414,4 @@ Considérations et limitations
 * Les comptes GCC prennent désormais uniquement en charge les capacités P et EM
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+
