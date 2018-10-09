@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9c36034ad5e8175e08f1d16c2f5148c5dab0ebbd
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: 2536ea34cadae5f348e619d713420787db4c467a
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42702865"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799043"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Utiliser des connecteurs de données personnalisés avec la passerelle de données locale
 
@@ -45,8 +45,6 @@ Quand cette option est activée, vous voyez vos connecteurs personnalisés en ta
 
 * Vérifiez que le dossier que vous créez est accessible par le service de passerelle d’arrière-plan. En règle générale, les dossiers sous le dossier Windows ou sous les dossiers système de l’utilisateur ne sont pas accessibles. L’outil de configuration de passerelle affiche un message si le dossier n’est pas accessible (ceci ne s’applique pas pour la version personnelle de la passerelle)
 * Pour que les connecteurs personnalisés fonctionnent avec la passerelle de données locale, ils doivent implémenter une section « TestConnection » dans leur code. Ce n’est pas nécessaire lors de l’utilisation de connecteurs personnalisés avec Power BI Desktop. Vous pouvez en avoir un qui fonctionne avec la version Desktop, mais pas avec la passerelle pour cette raison. Reportez-vous à [cette documentation](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support) pour savoir comment implémenter une section TestConnection.
-* Les connecteurs personnalisés avec l’authentification OAuth ne sont pas pris en charge.
-* Les connecteurs personnalisés utilisant DirectQuery ne sont pas pris en charge.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
