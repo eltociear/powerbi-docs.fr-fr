@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bd8a8b9a9aff451282c5cef8a6dd6f27b90335d7
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1bb1831d37dc3f8bfe5ee141859cbccec541735e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548692"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908782"
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Se connecter à Google Analytics avec Power BI
 La connexion à Google Analytics via Power BI commence par la connexion à votre compte Google Analytics. Vous obtenez un tableau de bord Power BI et un ensemble de rapports Power BI qui fournissent des analyses relatives aux dimensions utilisateur et au trafic sur votre site. Vous pouvez interagir avec le tableau de bord et les rapports, mais vous ne pouvez pas enregistrer les modifications. Les données sont actualisées automatiquement une fois par jour.
@@ -27,16 +27,16 @@ Vous pouvez créer des tableaux de bord et rapports personnalisés en partant du
 ## <a name="how-to-connect"></a>Comment se connecter
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Sélectionnez **Google Analytics** \> **Obtenir**.
+3. Sélectionnez **Google Analytics** \> **Obtenir**.
    
    ![](media/service-connect-to-google-analytics/ga.png)
-2. Lorsque vous y êtes invité, entrez vos informations d’identification Google Analytics. Sélectionnez **oAuth2** comme mécanisme d’authentification et cliquez sur **Se connecter**. Suivez le flux d’authentification Google qui peut inclure une authentification à 2 facteurs si vous l’avez configurée.
+4. Lorsque vous y êtes invité, entrez vos informations d’identification Google Analytics. Sélectionnez **oAuth2** comme mécanisme d’authentification et cliquez sur **Se connecter**. Suivez le flux d’authentification Google qui peut inclure une authentification à 2 facteurs si vous l’avez configurée.
    
    ![](media/service-connect-to-google-analytics/creds.png)
-3. Cliquez sur **Accepter** pour autoriser Power BI à accéder à vos données Google Analytics.
+5. Cliquez sur **Accepter** pour autoriser Power BI à accéder à vos données Google Analytics.
    
    ![](media/service-connect-to-google-analytics/googleanalytics.png)
-4. Power BI se connecte à un affichage spécifique de Google Analytics. Sélectionnez le nom du compte, le nom de la propriété et le nom de la vue à laquelle vous souhaitez vous connecter. Vous trouverez ces informations dans votre compte Google Analytics, en haut à gauche ou sous l’onglet **Accueil** . Passez en revue les détails ci-dessous. 
+6. Power BI se connecte à un affichage spécifique de Google Analytics. Sélectionnez le nom du compte, le nom de la propriété et le nom de la vue à laquelle vous souhaitez vous connecter. Vous trouverez ces informations dans votre compte Google Analytics, en haut à gauche ou sous l’onglet **Accueil** . Passez en revue les détails ci-dessous. 
    
    ![](media/service-connect-to-google-analytics/params2.png)
 5. Cliquez sur **Se connecter** pour commencer le processus d’importation. 
@@ -44,7 +44,7 @@ Vous pouvez créer des tableaux de bord et rapports personnalisés en partant du
 ## <a name="view-the-google-analytics-dashboard-and-reports"></a>Afficher le tableau de bord et les rapports de Google Analytics
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![](media/service-connect-to-google-analytics/googleanalytics2.png)
+   ![](media/service-connect-to-google-analytics/googleanalytics2.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
@@ -69,7 +69,7 @@ Les problèmes persistent ? Ouvrez un ticket de support pour contacter l’équ
 * Sur le site de support technique de Power BI (où vous lisez cet article), sélectionnez **Contacter le support technique** sur le côté droit de la page.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Que sont les applications dans Power BI ?](consumer/end-user-apps.md)
+* [Que sont les applications dans Power BI ?](service-create-distribute-apps.md)
 * [Obtenir des données dans Power BI](service-get-data.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

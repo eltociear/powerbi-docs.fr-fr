@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 5268241c32112847c879407374b325dd63dd8aab
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: cae5c83f6e220689bfd7d484d5d86c188325ad05
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564830"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908621"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
 ## <a name="what-is-a-power-bi-report"></a>Qu’est-ce qu’un rapport Power BI ?
@@ -67,7 +67,7 @@ Voici quelques rubriques, par rôle, qui vous aideront à démarrer.
 * Commencez par une [présentation du service Power BI](end-user-basic-concepts.md) afin de savoir où trouver les rapports et les outils de rapport.
 * Découvrez comment [ouvrir un rapport](end-user-report-open.md) et toutes les interactions disponibles en [Mode Lecture](end-user-reading-view.md).
 * Familiarisez-vous avec les rapports en suivant la présentation de l’un de nos [exemples](../sample-tutorial-connect-to-the-samples.md).  
-* Vous n’avez plus besoin d’un rapport ? Vous pouvez le [supprimer](end-user-delete.md).
+<!--* Don't need the report any more? You can [remove it](../service-delete.md).-->
 * Pour afficher le jeu de données que le rapport utilise et les tableaux de bord ayant des vignettes épinglées à partir du rapport, [affichez le contenu associé](end-user-related.md).
 
 > [!TIP]
@@ -79,6 +79,4 @@ Voici quelques rubriques, par rôle, qui vous aideront à démarrer.
 [Qu’est-ce que Power BI ?](../power-bi-overview.md) 
 
 [Power BI – Concepts de base](end-user-basic-concepts.md)
-
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

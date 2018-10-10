@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c99d2047bc021f7e9d98145bc9cb884917fa3b5c
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: bcec05211d3748e992f0e0cf68acd6460b2715d4
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271707"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908966"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Comment travailler en collaboration et partager des documents dans Power BI ?
 
@@ -57,7 +57,7 @@ Supposons que vous souhaitez distribuer votre tableau de bord à un public plus 
 
 ![Icône Publier l’application](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Si votre administrateur Power BI vous y autorise, vous pouvez installer une application automatiquement dans les comptes Power BI de vos collègues. Apprenez-en davantage sur la [publication de vos applications](consumer/end-user-create-apps.md). 
+Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Si votre administrateur Power BI vous y autorise, vous pouvez installer une application automatiquement dans les comptes Power BI de vos collègues. Apprenez-en davantage sur la [publication de vos applications](service-create-distribute-apps.md). 
 
 Après avoir installé une application, ils peuvent l’afficher dans leur navigateur ou sur leur appareil mobile.
 
@@ -99,7 +99,7 @@ Vous pouvez publiez des rapports Power BI sur le web en incorporant des visualis
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager des tableaux de bord avec vos collègues et d’autres utilisateurs](service-share-dashboards.md)
-* [Créer et publier une application dans Power BI](consumer/end-user-create-apps.md)
+* [Créer et publier une application dans Power BI](service-create-distribute-apps.md)
 * Vous voulez donner votre avis ? Accédez au [site de la communauté Power BI](https://community.powerbi.com/) pour effectuer des suggestions.
 * D’autres questions ? [Posez vos questions à la Communauté Power BI](http://community.powerbi.com/).
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a9f394cdfefabf1392b0219079d95a35d38b1754
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 334bffeabbf5342c21424fa5d9907eba7e71fd4e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546116"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909035"
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -205,7 +205,7 @@ Vous pouvez basculer le paramètre sur **Activé**, puis spécifier qui obtient 
 > [!NOTE]
 > N’oubliez pas que l’application des changements de paramètre de locataire peut prendre un certain temps.
 
-Cliquez ici pour en savoir plus sur [les applications poussées](consumer/end-user-create-apps.md#how-to-install-an-app-automatically-for-end-users).
+Cliquez ici pour en savoir plus sur [les applications poussées](service-create-distribute-apps.md).
 
 ## <a name="integration-settings"></a>Paramètres d’intégration
 

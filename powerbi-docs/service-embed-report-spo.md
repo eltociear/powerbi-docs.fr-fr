@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 08/16/2018
-ms.openlocfilehash: 6960945d878269344e8993577a8eac239d8ca4a4
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 111987fda4b0f841c0806dbdc454ac96ddb3c666
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549888"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908368"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -85,7 +85,7 @@ Incorporer un rapport dans SharePoint Online n’accorde pas automatiquement aux
 > [!IMPORTANT]
 > Veillez à passer en revue les utilisateurs qui peuvent afficher le rapport dans le service Power BI et à accorder l’accès à ceux qui ne sont pas répertoriés.
 
-Il existe deux moyens de fournir un accès au rapport au sein du service Power BI. Si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, répertoriez l’utilisateur comme membre de l’**espace de travail d’application dans le service Power BI** et la **page SharePoint**. Ceci permet de garantir que les utilisateurs peuvent visualiser les contenus de ce groupe. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](consumer/end-user-create-apps.md).
+Il existe deux moyens de fournir un accès au rapport au sein du service Power BI. Si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, répertoriez l’utilisateur comme membre de l’**espace de travail d’application dans le service Power BI** et la **page SharePoint**. Ceci permet de garantir que les utilisateurs peuvent visualiser les contenus de ce groupe. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](service-create-distribute-apps.md).
 
 Vous pouvez également accorder aux utilisateurs l’accès à votre rapport en procédant comme suit.
 
@@ -151,7 +151,7 @@ Vous devez contacter le propriétaire de la page SharePoint Online pour qu’il 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Autoriser ou empêcher la création de pages de site moderne par les utilisateurs finaux](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Créer et distribuer une application dans Power BI](consumer/end-user-create-apps.md)  
+[Créer et distribuer une application dans Power BI](service-create-distribute-apps.md)  
 [Partager un tableau de bord avec vos collègues et les autres utilisateurs](service-share-dashboards.md)  
 [Qu’est-ce que Power BI Premium ?](service-premium.md)  
 

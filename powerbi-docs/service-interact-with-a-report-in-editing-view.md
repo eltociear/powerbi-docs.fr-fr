@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4c206e6b1abb37bdaeb0e03fbce31b7b12e356ba
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: e03f6b4542c4f5f6c1d1a84892030520651ac9a3
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186650"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908304"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interagir avec un rapport en mode Édition dans le service Power BI
 Les rapports peuvent être créés et modifiés dans le service Power BI et Power BI Desktop. Dans le service Power BI, les rapports peuvent être créés et modifiés en **mode Édition**. Et, dans Power BI Desktop, les rapports peuvent être créés et modifiés en [**mode Rapport**](desktop-report-view.md). Cet article couvre le mode Édition dans le service Power BI. 
 
 Le service Power BI a deux modes différents pour l’interaction avec les rapports : le [mode Lecture](consumer/end-user-reading-view.md) pour les *consommateurs* de rapports et le mode Édition pour les créateurs et les propriétaires de rapports.  Une licence Power BI Pro est nécessaire pour le partage des rapports ainsi que pour la modification des rapports créés par d’autres. Si vous n’avez pas de licence Pro, vous avez toujours la possibilité de créer des rapports, mais vous ne pouvez pas [les partager](service-share-reports.md).    
 
-Le mode Édition dans un rapport vous permet de bénéficier d’une grande souplesse pour l’exploration et la conception des rapports. Toutes les fonctionnalités du [mode Lecture](consumer/end-user-reading-view.md) sont disponibles, ainsi que de nombreuses autres fonctions. Le mode Édition est uniquement disponible pour la personne qui a créé le rapport ou pour les collègues qui sont [copropriétaires d’un rapport en tant que membre ou administrateur d’un espace de travail d’application](consumer/end-user-create-apps.md).
+Le mode Édition dans un rapport vous permet de bénéficier d’une grande souplesse pour l’exploration et la conception des rapports. Toutes les fonctionnalités du [mode Lecture](consumer/end-user-reading-view.md) sont disponibles, ainsi que de nombreuses autres fonctions. Le mode Édition est uniquement disponible pour la personne qui a créé le rapport ou pour les collègues qui sont [copropriétaires d’un rapport en tant que membre ou administrateur d’un espace de travail d’application](service-create-distribute-apps.md).
 
 ## <a name="functionality-only-available-in-editing-view"></a>Fonctionnalités disponibles uniquement en mode Édition
 Jetez un coup d’œil à la liste des rubriques sous l’en-tête **Rapports** dans la Table des matières à gauche. La liste est longue et bon nombre des rubriques traitent de fonctionnalités *disponibles uniquement si vous disposez des autorisations nécessaire pour modifier un rapport*.  Pour vous aider à naviguer dans la Table des matières, le mode Édition est requis pour les opérations suivantes :

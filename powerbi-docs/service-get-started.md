@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6efef092002c0dc401c4c5328dd3e0d595beff66
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 554e9f3bbea5a1da6ac43f21f72b054a26849f23
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187119"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908742"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Tutoriel : Bien démarrer avec le service Power BI (app.powerbi.com)
 Ce didacticiel vous aide à bien démarrer avec le ***service Power BI***. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de commencer par lire [Qu’est-ce que Power BI ?](power-bi-overview.md).
@@ -55,7 +55,7 @@ Visitez notre [sélection sur YouTube](https://www.youtube.com/playlist?list=PL1
 ## <a name="what-is-power-bi-service"></a>Qu’est-ce que le service Power BI ?
 Le service Microsoft Power BI est parfois appelé Power BI en ligne ou app.powerbi.com. Power BI vous aide à rester informé dans les domaines qui vous intéressent.  Grâce au service Power BI, les ***tableaux de bord*** vous permettent de prendre en permanence le pouls de votre activité.  Vos tableaux de bord affichent des ***vignettes*** sur lesquelles vous pouvez cliquer pour ouvrir des ***rapports*** qui vous donnent de plus amples détails.  Connectez-vous à plusieurs ***jeux de données*** pour rassembler au même endroit toutes les données pertinentes. Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consultez [Power BI – Concepts de base](consumer/end-user-basic-concepts.md).
 
-Si vous avez des données importantes dans des fichiers Excel ou CSV, vous pouvez créer un tableau de bord Power BI pour rester informé où que vous soyez et partager les informations avec d’autres personnes.  Disposez-vous d’un abonnement à une application SaaS comme Salesforce ?  Connectez-vous à Salesforce dès maintenant pour créer automatiquement un tableau de bord à partir de ces données, ou [découvrez toutes les autres applications SaaS](service-get-data.md) auxquelles vous pouvez vous connecter. Si vous faites partie d’une organisation, voyez si des [applications](consumer/end-user-create-apps.md) ont été publiées pour vous.
+Si vous avez des données importantes dans des fichiers Excel ou CSV, vous pouvez créer un tableau de bord Power BI pour rester informé où que vous soyez et partager les informations avec d’autres personnes.  Disposez-vous d’un abonnement à une application SaaS comme Salesforce ?  Connectez-vous à Salesforce dès maintenant pour créer automatiquement un tableau de bord à partir de ces données, ou [découvrez toutes les autres applications SaaS](service-get-data.md) auxquelles vous pouvez vous connecter. Si vous faites partie d’une organisation, voyez si des [applications](service-create-distribute-apps.md) ont été publiées pour vous.
 
 En savoir plus sur toutes les autres façons d’[obtenir des données pour Power BI](service-get-data.md).
 

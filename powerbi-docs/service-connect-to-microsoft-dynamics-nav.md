@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a00913ea326f472993553910a79e3cc208356499
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 94ca76af9366752f4e1033fa05147f867e7096d9
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546714"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908897"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Se connecter à Microsoft Dynamics NAV avec Power BI
 Power BI vous permet d’extraire facilement des informations de vos données Microsoft Dynamics NAV. Power BI récupère vos données relatives aux ventes et aux aspects financiers, puis crée une application comprenant un tableau de bord et des rapports basés sur ces données. Power BI a besoin de vos autorisations d’accès aux tables à partir desquelles les données sont extraites, en l’occurrence, les données relatives aux ventes et aux aspects financiers. Vous trouverez plus d’informations sur la configuration requise ci-dessous. Une fois l’application installée, vous pouvez voir le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 
@@ -25,9 +25,9 @@ Power BI vous permet d’extraire facilement des informations de vos données Mi
 ## <a name="how-to-connect"></a>Comment se connecter
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Sélectionnez **Microsoft Dynamics NAV**, puis cliquez sur **Obtenir**.  
+3. Sélectionnez **Microsoft Dynamics NAV**, puis cliquez sur **Obtenir**.  
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
-2. Lorsque vous y êtes invité, entrez votre URL OData de Microsoft Dynamics NAV. L’URL doit correspondre au modèle suivant :
+4. Lorsque vous y êtes invité, entrez votre URL OData de Microsoft Dynamics NAV. L’URL doit correspondre au modèle suivant :
    
     `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
@@ -37,12 +37,12 @@ Power BI vous permet d’extraire facilement des informations de vos données Mi
      
      Dans Dynamics NAV, un moyen facile d’obtenir cette URL consiste à accéder à Services web, à rechercher le service web powerbifinance et à copier l’URL Odata, mais en omettant la partie « /powerbifinance » de la chaîne d’URL.  
      ![](media/service-connect-to-microsoft-dynamics-nav/param.png)
-3. Sélectionnez **De base** et entrez vos informations d'identification Microsoft Dynamics NAV.
+5. Sélectionnez **De base** et entrez vos informations d'identification Microsoft Dynamics NAV.
    
     Vous avez besoin d’informations d’identification d’administrateur (ou au moins d’autorisations d’accès aux données de ventes et financières) pour votre compte Microsoft Dynamics NAV.  Seule l’authentification de base (nom d'utilisateur et mot de passe) est actuellement prise en charge.
    
     ![](media/service-connect-to-microsoft-dynamics-nav/creds.png)
-4. Power BI récupère vos données Microsoft Dynamics NAV, crée un tableau de bord prêt à l’emploi et génère un rapport pour vous.   
+6. Power BI récupère vos données Microsoft Dynamics NAV, crée un tableau de bord prêt à l’emploi et génère un rapport pour vous.   
    ![](media/service-connect-to-microsoft-dynamics-nav/dashboard.png)
 
 ## <a name="view-the-dashboard-and-reports"></a>Afficher le tableau de bord et les rapports
@@ -99,7 +99,7 @@ Si ce message d’erreur s’affiche après que vous êtes passé par la boîte 
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Que sont les applications dans Power BI ?](consumer/end-user-apps.md)
+* [Que sont les applications dans Power BI ?](service-create-distribute-apps.md)
 * [Obtenir des données dans Power BI](service-get-data.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

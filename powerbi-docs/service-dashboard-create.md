@@ -8,22 +8,22 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/02/2018
 ms.author: mihart
-ms.openlocfilehash: 462e9b1d991690846c57a225552b271fca19499c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e4173811db0de0dc95e0bd324517a5750165983e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544392"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908644"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Créer un tableau de bord à partir d’un rapport
-Vous avez lu [Tableaux de bord dans Power BI](consumer/end-user-dashboards.md) et vous souhaitez maintenant créer vos propres tableaux de bord. Il existe de nombreuses façons de créer un tableau de bord : à partir d’un rapport, en partant de zéro, à partir d’un jeu de données, en dupliquant un tableau de bord existant, et bien plus encore.  
+Vous avez lu [Tableaux de bord dans Power BI](service-dashboards.md) et vous souhaitez maintenant créer vos propres tableaux de bord. Il existe de nombreuses façons de créer un tableau de bord : à partir d’un rapport, en partant de zéro, à partir d’un jeu de données, en dupliquant un tableau de bord existant, et bien plus encore.  
 
 Il peut être difficile de savoir par où commencer ; nous allons créer un tableau de bord simple et rapide en épinglant des visualisations à partir d’un rapport déjà généré. Lorsque vous aurez suivi ce guide de démarrage rapide, vous aurez une bonne compréhension de la relation entre les tableaux de bord et les rapports ; vous saurez ouvrir le Mode Édition dans l’éditeur de rapport, épingler des vignettes et naviguer entre un tableau de bord et un rapport. Suivez ensuite les liens de la Table des matières à gauche ou des **Étapes suivantes** en bas pour passer à des rubriques plus avancées.
 
 ## <a name="who-can-create-a-dashboard"></a>Qui peut créer un tableau de bord ?
-La création d’un tableau de bord est une fonctionnalité de **créateur** qui nécessite des autorisations de modification du rapport. Ces autorisations sont réservées aux créateurs de rapports et aux collègues à qui les premiers ont accordé l’accès. Par exemple, si David crée un rapport dans workspaceABC et vous ajoute comme membre de cet espace de travail, David et vous aurez tous deux des autorisations de modification. Si, à l’inverse, le rapport a été partagé avec vous directement ou dans le cadre d’une [application Power BI](consumer/end-user-apps.md) (vous êtes **consommateur** du rapport), vous ne pourrez pas épingler des vignettes au tableau de bord.
+La création d’un tableau de bord est une fonctionnalité de **créateur** qui nécessite des autorisations de modification du rapport. Ces autorisations sont réservées aux créateurs de rapports et aux collègues à qui les premiers ont accordé l’accès. Par exemple, si David crée un rapport dans workspaceABC et vous ajoute comme membre de cet espace de travail, David et vous aurez tous deux des autorisations de modification. Si, à l’inverse, le rapport a été partagé avec vous directement ou dans le cadre d’une [application Power BI](service-create-distribute-apps.md) (vous êtes **consommateur** du rapport), vous ne pourrez pas épingler des vignettes au tableau de bord.
 
 > **REMARQUE**: les tableaux de bord sont une fonctionnalité du service Power BI et non de Power BI Desktop. Les tableaux de bord ne peut pas être créés dans l’application mobile Power BI, mais ils peuvent être [affichés et partagés](consumer/mobile/mobile-apps-view-dashboard.md).
 >
@@ -65,7 +65,7 @@ Nous allons importer l’un des exemples de jeu de données Power BI et l’uti
 1. Sans quitter l’espace de travail, sélectionnez l’onglet **Rapports**. Le rapport nouvellement importé s’affiche avec un astérisque jaune. Sélectionnez le nom du rapport pour l’ouvrir.
 
     ![Onglet Rapports](media/service-dashboard-create/power-bi-reports.png)
-2. Le rapport s’ouvre en [mode Lecture](consumer/end-user-reading-view.md). Notez qu’il comporte deux onglets en bas : Discount Analysis (Analyse des remises) et Spend Overview (Vue d’ensemble des dépenses). Chaque onglet représente une page du rapport.
+2. Le rapport s’ouvre en mode Lecture. Notez qu’il comporte deux onglets en bas : Discount Analysis (Analyse des remises) et Spend Overview (Vue d’ensemble des dépenses). Chaque onglet représente une page du rapport.
     Sélectionnez **Modifier le rapport** pour ouvrir le rapport en Mode Édition.
 
     ![rapport en mode Lecture](media/service-dashboard-create/power-bi-reading-view.png)
@@ -108,9 +108,9 @@ Félicitations pour la création de votre premier tableau de bord ! Maintenant 
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Redimensionner et déplacer des vignettes](service-dashboard-edit-tile.md)
-* [Toutes les informations dont vous avez besoin sur les vignettes du tableau de bord](consumer/end-user-tiles.md)
-* [Partager votre tableau de bord en créant une application](consumer/end-user-create-apps.md)
-* [Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
+* [Toutes les informations dont vous avez besoin sur les vignettes du tableau de bord](service-dashboard-tiles.md)
+* [Partager votre tableau de bord en créant une application](service-install-use-apps.md)
+* [Power BI – Concepts de base](service-basic-concepts.md)
 * [Conseils pour la conception d’un tableau de bord réussi](service-dashboards-design-tips.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

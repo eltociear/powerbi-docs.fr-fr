@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 2b39d9ab5b8bae32dde6eda66f09f69a9718d569
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: f78638097ea33f9954f3db78c117f1935a68530b
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548485"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908528"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparer Power BI Report Server et le service Power BI
 
@@ -33,7 +33,7 @@ Power BI Report Server et le service Power BI partagent de nombreuses similitude
 | Passerelle obligatoire | Non | Oui, pour les sources de données locales |  
 | Streaming en temps réel | Non | Oui | [Streaming en temps réel dans Power BI](../service-real-time-streaming.md)
 | Tableaux de bord | Non | Oui | [Tableaux de bord dans le service Power BI](../consumer/end-user-dashboards.md) 
-| Distribuer un groupe de rapports à l’aide d’applications | Non | Oui | [Créer et publier des applications avec des tableaux de bord et des rapports](../consumer/end-user-create-apps.md) 
+| Distribuer un groupe de rapports à l’aide d’applications | Non | Oui | [Créer et publier des applications avec des tableaux de bord et des rapports](../service-create-distribute-apps.md) 
 | Packs de contenu | Non | Oui | [Introduction aux packs de contenu d’organisation](../service-organizational-content-pack-introduction.md) 
 | Se connecter à des services comme Salesforce | Non | Oui | [Se connecter aux services que vous utilisez](../consumer/end-user-connect-to-services.md) avec le service Power BI
 | Questions et réponses | Non | Oui | [Questions et réponses dans Power BI Desktop et le service Power BI](../consumer/end-user-q-and-a.md) 

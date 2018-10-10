@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: c33e7dd69d4bd0a0d09ebc124739d5d017c631bc
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4c11b65d8d9dcb4a0b07db6dcf0d264350f351bf
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46550026"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908750"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Bien démarrer avec l’application mobile Power BI sur appareils Android
 L’application Android pour Microsoft Power BI permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. 
@@ -119,11 +119,11 @@ En savoir plus sur la [configuration des applications mobiles Power BI pour And
 Découvrez ce que vous pouvez faire d’autre dans l’application Power BI pour appareils Android avec les tableaux de bord et les rapports de Power BI, ainsi que les rapports et indicateurs de performance clés du portail web Power BI Report Server ou Reporting Services.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Tableaux de bord et rapports Power BI
-* Affichez [vos applications](../end-user-apps.md).
+* Affichez [vos applications](../../service-create-distribute-apps.md).
 * Affichez vos [tableaux de bord](../../mobile-apps-view-dashboard.md).
 * Explorez les [vignettes de vos tableaux de bord](../../mobile-tiles-in-the-mobile-apps.md).
 * Ouvrez des [rapports Power BI](../../mobile-reports-in-the-mobile-apps.md).
-* Affichez [vos applications](../end-user-apps.md).
+* Affichez [vos applications](../../service-create-distribute-apps.md).
 * [Annotez et partagez des vignettes](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Partagez des [tableaux de bord](../../mobile-share-dashboard-from-the-mobile-apps.md).
 * [Numérisez un code QR Power BI](../../mobile-apps-qr-code.md) avec votre téléphone Android pour ouvrir une vignette de tableau de bord ou un rapport associé. 
