@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 922352c0cdbacd57d3e6706d490b3cc7e65ab8f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 09e7534146ace617ee3e517eca6a453aa9002d38
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736476"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546898"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,25 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="september-2018"></a>Septembre 2018
+
+### <a name="phone-report-editing-in-the-browser-all-devices"></a>Édition d’un rapport en mode téléphone dans le navigateur (tous les appareils)
+
+Maintenant, vous pouvez créer un mode téléphone pour un rapport qui est déjà publié dans le service Power BI et pas seulement dans Power BI Desktop. Créez-le en mode édition dans votre navigateur.
+
+### <a name="dashboard-commenting-ios-and-android"></a>Commentaires dans les tableaux de bord (iOS et Android) 
+
+Vous pouvez ajouter des commentaires directement dans des tableaux de bord et des vignettes spécifiques pour discuter de vos données. Toutes les personnes qui voient les tableaux de bord verront aussi vos commentaires. Vous pouvez aussi inclure d’autres personnes de votre organisation dans la conversation en les mentionnant avec @mentioning. Elles reçoivent alors une notification push avec votre message sur leur téléphone mobile.
+
+Actuellement disponible sur les appareils iOS et Android. Prise en charge de Windows prochainement.
+
+Lisez le [billet de blog sur les commentaires dans les tableaux de bord](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) Power BI.
+
+### <a name="single-sign-on-windows"></a>Authentification unique (Windows)
+
+L’authentification unique (SSO) est l’une des fonctionnalités les plus demandées pour Power BI Mobile pour Windows. Maintenant, vous pouvez utiliser votre compte professionnel principal pour vous connecter non seulement à vos appareils mobiles Windows joints à un domaine, mais aussi au service Power BI de manière fluide. Découvrez plus en détail l’[authentification unique et les applications mobiles Windows](mobile-windows-10-app-single-sign-on-sso.md).
+
 
 ## <a name="july-2018"></a>Juillet 2018
 
@@ -177,7 +196,7 @@ Lisez le [résumé des fonctionnalités d’applications mobiles de juillet 201
 
 ### <a name="june-2107"></a>Juin 2017
 #### <a name="all-devices"></a>Tous les appareils
-**Marquer des applications en tant que favorites** Vous pouvez déjà marquer un tableau de bord en tant que favori. Récemment, Power BI a introduit la possibilité de marquer également des [applications](../../service-install-use-apps.md) en tant que favorites. 
+**Marquer des applications en tant que favorites** Vous pouvez déjà marquer un tableau de bord en tant que favori. Récemment, Power BI a introduit la possibilité de marquer également des [applications](../end-user-apps.md) en tant que favorites. 
 
 ### <a name="may-2017"></a>Mai 2017
 #### <a name="all-devices"></a>Tous les appareils
@@ -498,7 +517,7 @@ Toutes les améliorations apportées en janvier sont déjà dans la nouvelle [ap
 
 **Vignettes et widgets web R** : affichez ces nouveaux types de vignettes de tableau de bord sur votre appareil mobile.
 
-**Tableaux de bord Bing** Dans le service Power BI, vous pouvez désormais créer des [tableaux de bord avec les résultats d’une recherche Bing](../../service-connect-to-services.md), et les afficher sur votre appareil mobile.
+**Tableaux de bord Bing** Dans le service Power BI, vous pouvez désormais créer des [tableaux de bord avec les résultats d’une recherche Bing](../end-user-connect-to-services.md), et les afficher sur votre appareil mobile.
 
 **Pages de rapport épinglées en tant que vignettes aux tableaux de bord** : comme vous pouvez maintenant épingler la totalité d’une page de rapport à un tableau de bord dans le service Power BI, vous pouvez afficher des pages de rapport dans l’application Power BI sur votre iPhone ou votre téléphone Android.
 
