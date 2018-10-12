@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: a84a5da9600daa7ef55ed5a707affa4ee1da4aba
+ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599178"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47238097"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gérer votre source de données - Analysis Services
 Une fois que vous avez installé la passerelle de données locale, vous devez ajouter des sources de données qui peuvent être utilisées avec la passerelle. Cet article décrit comment utiliser les passerelles et les sources de données. Vous pouvez utiliser la source de données Analysis Services pour l’actualisation planifiée ou les connexions actives.
@@ -150,13 +150,38 @@ Sur la passerelle de données locale avec le mappage d’utilisateur personnalis
 Comment configurer votre passerelle pour qu’elle effectue la recherche AD :
 
 1. Téléchargez et installez la passerelle la plus récente.
+
 2. Dans la passerelle, vous devez modifier le **service de passerelle de données locale** pour qu’il s’exécute avec un compte de domaine (au lieu d’un compte de service local, sinon la recherche AD ne fonctionne pas correctement lors de l’exécution). Vous devez redémarrer le service de passerelle pour que les modifications entrent en vigueur.  Accédez à l’application de passerelle sur votre ordinateur (effectuez une recherche sur le terme « passerelle de données locale »). Pour ce faire, accédez à **Paramètres de service > Modifier le compte de service**. Vérifiez que vous disposez de la clé de récupération pour cette passerelle, car vous devrez la restaurer sur le même ordinateur, sauf si vous souhaitez créer une passerelle à la place. 
-3. Accédez au dossier d’installation de la passerelle *C:\Program Files\Passerelle de données locale* en tant qu’administrateur pour vérifier que vous disposez d’autorisations d’écriture, puis modifiez le fichier suivant :
 
-       Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
-4. Modifiez les deux valeurs de configuration suivantes en fonction *des* configurations d’attributs Active Directory de vos utilisateurs AD. Les valeurs de configuration illustrées ci-dessous sont des exemples uniquement : vous devez les spécifier en fonction de votre configuration Active Directory. 
+3. Accédez au dossier d’installation de la passerelle *C:\Program Files\Passerelle de données locale* en tant qu’administrateur pour vérifier que vous disposez d’autorisations d’écriture, puis modifiez le fichier suivant : Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
-   ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+4. Modifiez les deux valeurs de configuration suivantes en fonction de *vos* configurations d’attributs Active Directory de vos utilisateurs AD. Les valeurs de configuration illustrées ci-dessous sont des exemples uniquement : vous devez les spécifier en fonction de votre configuration Active Directory. Ces configurations respectent la casse. Par conséquent, assurez-vous qu’elles correspondent aux valeurs spécifiées dans Active Directory.
+
+    ![Paramètres Azure Active Directory](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+
+    Si aucune valeur n’est fournie pour la configuration ADServerPath, la passerelle utilise le catalogue global par défaut. Vous pouvez également spécifier plusieurs valeurs pour ADServerPath. Chaque valeur doit être séparée par un point-virgule, comme dans l’exemple suivant.
+
+    ```xml
+    <setting name="ADServerPath" serializeAs="String">
+        <value> >GC://serverpath1; GC://serverpath2;GC://serverpath3</value>
+    </setting>
+    ```
+    La passerelle analyse les valeurs spécifiées pour ADServerPath de gauche à droite jusqu'à ce qu’elle trouve une correspondance. Si aucune correspondance n’est trouvée, l’UPN d’origine est utilisé. Assurez-vous que le compte exécutant le service de passerelle (PBIEgwService) dispose des autorisations de requête pour tous les serveurs Active Directory que vous spécifiez dans ADServerPath.
+
+    La passerelle prend en charge deux types de chemin ADServerPath, comme dans les exemples suivants.
+
+    **WinNT**
+
+    ```xml
+    <value="WinNT://usa.domain.corp.contoso.com,computer"/>
+    ```
+
+    **GC**
+
+    ```xml
+    <value> GC://USA.domain.com </value>
+    ```
+
 5. Redémarrez le service **Passerelle de données locale** pour que les modifications de configuration entrent en vigueur.
 
 ### <a name="working-with-mapping-rules"></a>Utilisation des règles de mappage

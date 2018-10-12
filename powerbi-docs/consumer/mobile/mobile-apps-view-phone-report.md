@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 6ea5814cdba7df6d7e7bb4bbb284f52110ca184c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732800"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547795"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Afficher les rapports Power BI optimisés pour votre téléphone
 
@@ -24,7 +24,7 @@ S’applique à :
 |:--- |:--- |
 | iPhone |Téléphones Android |
 
-Quand vous créez un rapport Power BI dans Power BI Desktop, vous pouvez également créer une version [optimisée de ce rapport pour un affichage dans l’application Power BI pour téléphone](../../desktop-create-phone-report.md).
+Quand vous créez un rapport Power BI dans Power BI Desktop ou dans le service Power BI, vous pouvez également créer une version [optimisée de ce rapport pour un affichage dans l’application Power BI pour téléphone](../../desktop-create-phone-report.md).
 
 Ensuite, quand vous ouvrez un rapport Power BI sur un téléphone, Power BI détecte si le rapport a été optimisé pour les téléphones, puis, si c’est le cas, l’ouvre automatiquement en mode portrait.
 
@@ -79,7 +79,7 @@ Voici les actions qui ne sont possibles qu’en mode focus en raison des contrai
     L’action Rétablir est disponible au niveau du rapport en effaçant toute l’exploration dans l’ensemble des visuels, ou au niveau du visuel en effaçant toute l’exploration du visuel spécifique sélectionné.   
 
 ## <a name="drill-down-in-a-visual"></a>Descendre dans la hiérarchie d’un visuel
-Si des niveaux de la hiérarchie sont définis dans un visuel, vous pouvez descendre dans la hiérarchie des informations détaillées affichées, puis revenir en arrière. Vous pouvez [ajouter une descente dans la hiérarchie d’un visuel](../../power-bi-visualization-drill-down.md) soit dans le service Power BI, soit dans Power BI Desktop. La descente dans la hiérarchie fonctionne uniquement avec des rapports Power BI optimisés pour l’affichage sur téléphone. 
+Si des niveaux de la hiérarchie sont définis dans un visuel, vous pouvez descendre dans la hiérarchie des informations détaillées affichées, puis revenir en arrière. Vous pouvez [ajouter une descente dans la hiérarchie d’un visuel](../end-user-drill.md) soit dans le service Power BI, soit dans Power BI Desktop. La descente dans la hiérarchie fonctionne uniquement avec des rapports Power BI optimisés pour l’affichage sur téléphone. 
 
 1. Dans un rapport pour téléphone, cliquez sur les points de suspension (**...**) situés dans le coin supérieur droit, puis sur **Développer en mode focus**.
    

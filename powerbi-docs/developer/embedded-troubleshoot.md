@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/31/2018
-ms.openlocfilehash: d540dd29214422dfc33dca2bf2fb1cb74ebe6de7
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: 71cb40ef6f1346bd3d8486658b05427e66d1dbf3
+ms.sourcegitcommit: 9719eccf29298c9c673200350abc58281ef14869
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558571"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46474043"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Résolution des problèmes de votre application incorporée
 
@@ -84,18 +84,18 @@ Une capture Fiddler peut être nécessaire pour approfondir vos recherches. Plus
 
 Le backend de l’application doit peut-être actualiser le jeton d’authentification avant d’appeler GenerateToken.
 
-```
+    ```
     GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
     Host: wabi-us-north-central-redirect.analysis.windows.net
     ...
     Authorization: Bearer eyJ0eXAiOi...
     ...
- 
+
     HTTP/1.1 403 Forbidden
     ...
-     
+
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-```
+    ```
 
 ## <a name="authentication"></a>Authentification
 
@@ -210,8 +210,8 @@ Après l’acquisition de l’objet IError, vous devez examiner la table d’err
 | Paramètres non valides | Paramètre powerbiToken non spécifié | N/A | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
 | LoadReportFailed | Échec de l’initialisation : le cluster n’a pas pu être résolu | 403 | * Jeton d’accès incorrect * Le type d’incorporation ne correspond pas au type de jeton |
 | PowerBINotAuthorizedException | Réception d’une notification d’échec du rapport | 401 | <li> ID de groupe incorrecte <li> Groupe non autorisé |
-| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un élément visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
-| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un élément visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
+| OpenConnectionError | Impossible d'afficher le visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | N/A | <li> Capacité suspendue <li> Capacité supprimée |
 
 ### <a name="typical-errors-when-embedding-for-non-power-bi-users-using-an-embed-token"></a>Erreurs courantes lors de l’incorporation pour d’autres utilisateurs que ceux de Power BI (avec un jeton d’incorporation)
@@ -225,17 +225,17 @@ Après l’acquisition de l’objet IError, vous devez examiner la table d’err
 | Paramètres non valides | Paramètre powerbiToken non spécifié | N/A | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
 | LoadReportFailed | Échec de l’initialisation : le cluster n’a pas pu être résolu | 403 | Type de jeton incorrect, jeton incorrect |
 | PowerBINotAuthorizedException | Réception d’une notification d’échec du rapport | 401 | ID de groupe incorrect/non autorisé |
-| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un élément visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
-| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un élément visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
+| OpenConnectionError | Impossible d’afficher le visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | N/A | <li> Capacité suspendue <li> Capacité supprimée |
 
-## <a name="onboarding-experience-tool-for-embedding"></a>Outil d’expérience d’intégration pour l’incorporation
+## <a name="embedding-setup-tool"></a>Outil de configuration de l’incorporation
 
-Vous pouvez passer par [l’outil d’expérience d’intégration](https://aka.ms/embedsetup) pour télécharger rapidement un exemple d’application. Vous pouvez ensuite comparer votre application à l’exemple.
+Vous pouvez passer par l’[outil de configuration de l’incorporation](https://aka.ms/embedsetup) pour télécharger rapidement un exemple d’application. Vous pouvez ensuite comparer votre application à l’exemple.
 
 ### <a name="prerequisites"></a>Conditions préalables
 
-Vérifiez que vous disposez de tous les prérequis appropriés avant d’utiliser l’outil d’expérience d’intégration. Vous avez besoin d’un compte **Power BI Pro** et d’un abonnement **Microsoft Azure**.
+Vérifiez que vous disposez de tous les prérequis appropriés avant d’utiliser l’outil de configuration de l’incorporation. Vous avez besoin d’un compte **Power BI Pro** et d’un abonnement **Microsoft Azure**.
 
 * Si vous n’avez pas d’abonnement à **Power BI Pro**, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/en-us/pricing/) avant de commencer.
 * Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
@@ -244,7 +244,7 @@ Vérifiez que vous disposez de tous les prérequis appropriés avant d’utilise
 
 ### <a name="common-issues"></a>Problèmes courants
 
-Voici quelques problèmes courants que vous pouvez rencontrer lors du test avec l’outil d’expérience d’intégration :
+Voici quelques problèmes courants que vous pouvez rencontrer lors du test avec l’outil de configuration de l’incorporation :
 
 #### <a name="using-the-embed-for-your-customers-sample-application"></a>Utilisation de l’exemple d’application Embed for your customers (Incorporer pour vos clients)
 
@@ -262,6 +262,10 @@ Le message d’erreur suivant s’affiche lors de l’exécution de l’exemple 
 
 Cette erreur se produit, car la seule valeur qui n’est pas injectée dans l’exemple d’application est votre mot de passe utilisateur. Ouvrez le fichier Web.config dans la solution et renseignez le champ pbiPassword avec votre mot de passe utilisateur.
 
+Si vous obtenez l’erreur - AADSTS50079 : L’utilisateur doit utiliser l’authentification multifacteur.
+
+    Need to use an AAD account that does not have MFA enabled.
+
 #### <a name="using-the-embed-for-your-organization-sample-application"></a>Utilisation de l’exemple d’application Embed for your organization (Incorporer pour votre organisation)
 
 Si vous travaillez avec l’expérience **Incorporer pour votre organisation**, enregistrez et décompressez le fichier *PowerBI-Developer-Samples.zip*. Ensuite, ouvrez le dossier *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* et exécutez le fichier *pbi-saas-embed-report.sln*.
@@ -275,6 +279,10 @@ La raison en est que l’URL de redirection spécifiée pour l’application de 
 Si vous voulez modifier l’application inscrite, découvrez comment modifier [l’application inscrite auprès d’AAD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), pour que l’application puisse fournir l’accès aux API web.
 
 Si vous voulez modifier votre profil ou vos données utilisateur Power BI, découvrez comment modifier vos [données Power BI](https://docs.microsoft.com/power-bi/service-basic-concepts).
+
+Si vous obtenez l’erreur - AADSTS50079 : L’utilisateur doit utiliser l’authentification multifacteur.
+
+    Need to use an AAD account that does not have MFA enabled.
 
 Pour plus d’informations, consultez le [FAQ sur Power BI Embedded](embedded-faq.md).
 

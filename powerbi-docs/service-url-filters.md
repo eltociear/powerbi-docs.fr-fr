@@ -1,22 +1,22 @@
 ---
 title: Ajouter des paramètres de rapport Power BI à l’aide de l’URL
 description: Filtrez un rapport à l’aide de paramètres de chaîne de requête URL et filtrez même sur plusieurs champs.
-author: mihart
-ms.author: mihart
-manager: annebe
+author: maggiesMSFT
+ms.author: maggies
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 10/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 1124163b985f575df08a9ba4f065c6a6b1abf54c
-ms.sourcegitcommit: cca21f8089e71b595d3aca30c95f12e4bbf767cc
+ms.openlocfilehash: 562af0b21c4ecd4617de0e524cca20ec6935ca7a
+ms.sourcegitcommit: 31f9da5f562cd02a729b6f012b4b3326416adb0e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45626028"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48232923"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -106,7 +106,7 @@ Power BI prend en charge de nombreux opérateurs en plus de **and**. Le tableau 
 |**gt**     | supérieur à        |non | oui | oui  | product/price gt 20
 |**le**     |   inférieur ou égal à      | non | oui | oui  | product/price le 100
 |**lt**     |  inférieur à       | non | oui | oui |  product/price lt 20
-|**in****     |  incluant       | non | Non |  oui | Student/Age in (27, 29)
+|**in****     |  incluant       | oui | oui |  oui | Student/Age in (27, 29)
 
 
 \** Lors de l’utilisation de **in**, les valeurs à droite de **in** peuvent être une liste séparée par des virgules et entourée de parenthèses, ou une expression unique qui retourne une collection.
@@ -127,18 +127,18 @@ Un filtre d’URL Power BI peut inclure des nombres dans les formats suivants.
 
 Power BI prend en charge OData V3 et V4 pour les types de données **Date** et **DateTimeOffset**.  Les dates sont représentées selon le format de modèle EDM (2019-02-12T00:00:00). Cela signifie que quand vous spécifiez une date en AAAA-MM-JJ, Power BI l’interprète en AAAA-MM-JJT00:00:00.
 
-Pourquoi cette distinction est-elle importante ? Supposons que vous créez un paramètre de chaîne de requête **Table/Date gt 2018-08-03**.  Les résultats vont-ils inclure le 3 août 2018 ou commencer le 4 août 2018 ? Comme Power BI traduit votre requête en **Table/Date gt 2018-08-03T00:00:00**, vos résultats incluent toutes les dates qui ont une partie heure différente de zéro, ces dates étant supérieures à **2018-08-03T00:00:00**.
+Pourquoi cette distinction est-elle importante ? Supposons que vous créez un paramètre de chaîne de requête **Table/Date gt 2018-08-03**.  Les résultats vont-ils inclure le 3 août 2018 ou commencer le 4 août 2018 ? Comme Power BI traduit votre requête en **Table/Date gt 2018-08-03T00:00:00**, vos résultats incluent toutes les dates qui ont une partie heure différente de zéro, ces dates étant supérieures à **2018-08-03T00:00:00**.
 
 ## <a name="special-characters-in-url-filters"></a>Caractères spéciaux dans les filtres d’URL
 
-Les caractères spéciaux et les espaces nécessitent une mise en forme supplémentaire. Quand votre requête contient des espaces, des tirets ou d’autres caractères non-ASCII, faites précéder ces caractères spéciaux d’un *code d’échappement* (**_x**) et du code **Unicode** de 4 chiffres. Si le code Unicode a moins de 4 caractères, vous devez le compléter avec des zéros. Voici quelques exemples.
+Les caractères spéciaux et les espaces nécessitent une mise en forme supplémentaire. Quand votre requête contient des espaces, des tirets ou d’autres caractères non-ASCII, faites précéder ces caractères spéciaux d’un *code d’échappement* commençant par un trait de soulignement et X (**_x**), suivi du code **Unicode** à 4 chiffres et se terminant par un autre trait de soulignement. Si le code Unicode a moins de 4 caractères, vous devez le compléter avec des zéros. Voici quelques exemples.
 
 |Identificateur  |Unicode  | Codage pour Power BI  |
 |---------|---------|---------|
-|**Nom du tableau**     | Espace : 0x20        |  Table_x0020_Name       |
-|**Column**@**Number**     |   @ : 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  [:0x005B ]:0x0050       |  _x0058_Column_x0050       |
-|**Column+Plus**     | + : 0x2B        |  Column_x002B_Plus       |
+|**Nom du tableau**     | Le code Unicode pour l’espace est 0x20        |  Table_x0020_Name       |
+|**Column**@**Number**     |   Le code Unicode pour @ est 0x40     |  Column_x0040_Number       |
+|**[Column]**     |  Le code Unicode pour [est 0x0058] est 0x0050       |  _x0058_Column_x0050       |
+|**Column+Plus**     | Le code Unicode pour + est 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![visuel de table affichant des caractères spéciaux](media/service-url-filters/power-bi-special-characters1.png)
 
@@ -159,9 +159,9 @@ Publiez le rapport sur le service Power BI, puis utilisez la chaîne de requête
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Épingler une vignette d’un rapport filtré
 
-Après avoir filtré le rapport à l’aide de paramètres de chaîne de requête, vous pouvez épingler des visualisations de ce rapport à votre tableau de bord.  La vignette épinglée au tableau de bord affiche les données filtrées, et la sélection de cette vignette a pour effet d’ouvrir le rapport utilisé pour la créer.  Toutefois, le filtrage que vous avez effectué à l’aide de l’URL n’est pas enregistré avec le rapport et, en cas de sélection de la vignette épinglée au tableau de bord, le rapport qui s’ouvre n’est pas filtré.  Cela signifie que les données qu’affiche la vignette épinglée au tableau de bord ne correspondent pas à celles présentées dans la visualisation du rapport.
+Après avoir filtré le rapport à l’aide de paramètres de chaîne de requête, vous pouvez épingler des visualisations de ce rapport à votre tableau de bord.  La vignette épinglée au tableau de bord affiche les données filtrées. La sélection de cette vignette a pour effet d’ouvrir le rapport utilisé pour la créer.  Toutefois, le filtrage que vous avez effectué à l’aide de l’URL n’est pas enregistré avec le rapport et, en cas de sélection de la vignette épinglée au tableau de bord, le rapport qui s’ouvre n’est pas filtré.  Cela signifie que les données affichées par la vignette épinglée au tableau de bord ne correspondent pas à celles présentées dans la visualisation du rapport.
 
-C’est utile quand vous voulez afficher des résultats différents : filtrés sur le tableau de bord et non filtrés dans le rapport.
+C’est utile quand vous voulez afficher des résultats différents : filtrés sur le tableau de bord et non filtrés dans le rapport.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 
@@ -171,6 +171,7 @@ Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder 
 * Dans Power BI Report Server, vous pouvez [passer des paramètres de rapport](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) en les ajoutant dans une URL de rapport. Ces paramètres d’URL ne sont pas préfixés parce qu’ils sont passés directement dans le moteur de traitement de rapport.
 * Le filtrage de chaîne de requête ne fonctionne pas avec des URL de type [Publier sur le web](service-publish-to-web.md) ou Power BI Embedded.   
 * Le type de données long est (2^53 - 1) en raison des limitations de JavaScript.
+* Les filtres d’URL de rapport sont limités à 10 expressions (10 filtres connectés par AND).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

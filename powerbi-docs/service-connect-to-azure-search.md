@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 09171c02dcbf5af50553c6e82f46f7f81b15a4cc
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 5ba3c1336abc10872e58ef2ec38f076dfa120d47
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136200"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544954"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Se connecter à Recherche Azure avec Power BI
 Azure Search Traffic Analytics vous permet de surveiller et de comprendre le trafic vers votre service Recherche Azure. Le pack de contenu Recherche Azure pour Power BI fournit des informations détaillées sur vos données de recherche, notamment les recherches, indexations, statistiques du service et latences des 30 derniers jours. Pour plus de détails, consultez ce [billet de blog Azure](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
@@ -44,9 +44,9 @@ Connectez-vous au [pack de contenu Recherche Azure](https://app.powerbi.com/getd
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
-* [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
+* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="system-requirements"></a>Configuration requise
@@ -58,5 +58,5 @@ Vérifiez que le nom du compte de stockage et la clé d’accès complète sont 
 ## <a name="next-steps"></a>Étapes suivantes
 [Qu’est-ce que Power BI ?](power-bi-overview.md)
 
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 

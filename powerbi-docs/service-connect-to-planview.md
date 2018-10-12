@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1f3bdb66d9737102c63ecace5359ba1b96265f6a
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: ad93a57e08f858c78e71d66792315d1836c2a075
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137396"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547657"
 ---
 # <a name="connect-to-planview-enterprise-with-power-bi"></a>Se connecter à Planview Enterprise avec Power BI
 Le pack de contenu Planview Enterprise vous permet de visualiser vos ressources et données de gestion du travail d’une manière entièrement nouvelle dans Power BI. Utilisez vos informations d’identification de connexion Planview Enterprise pour consulter de façon interactive les dépenses d’investissement de votre portefeuille, comprendre où vous vous situez par rapport au budget, et savoir comment vos projets s’alignent sur vos priorités stratégiques d’entreprise. Vous pouvez également étendre le tableau de bord et les rapports prêts à l’emploi pour obtenir les informations les plus importantes pour vous.
@@ -44,9 +44,9 @@ Connexion au [pack de contenu Planview Enterprise dans Power BI](https://app.po
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
-* [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
+* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="system-requirements"></a>Configuration requise

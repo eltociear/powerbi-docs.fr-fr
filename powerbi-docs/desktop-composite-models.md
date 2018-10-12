@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ddfe0c7ad116a74fa6887491ee41e544096de0f9
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 4e7692be8ec78c79076408635a75dbf0ab9080d2
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388844"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974043"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Modèles composites dans Power BI Desktop (préversion)
 
@@ -164,12 +164,13 @@ Par ailleurs, avec les relations **plusieurs-à-plusieurs**, des requêtes disti
 
 Il existe quelques limitations pour cette version de **modèles composites**.
 
-Les sources multidimensionnelles suivantes ne peuvent pas être utilisées avec les **modèles composites** :
+Les sources (multidimensionnelles) Live Connect suivantes ne peuvent pas être utilisées avec les **modèles composites** :
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Jeux de données Power BI
+* Azure Analysis Services
 
 Lors de la connexion à ces sources multidimensionnelles à l’aide de DirectQuery, vous ne pouvez pas non plus vous connecter à une autre source DirectQuery ni combiner les données avec des données importées.
 

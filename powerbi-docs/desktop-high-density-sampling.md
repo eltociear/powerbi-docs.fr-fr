@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4540c00e4956e87e1c012dc2a35c00e61e00b5a6
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: ae17eff366fe5e931963c9367586c08fd39eda69
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328141"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973928"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Échantillonnage de lignes à haute densité dans Power BI
 À compter de la version de juin 2017 de **Power BI Desktop** et des mises à jour du **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore les visuels qui échantillonnent des données à haute densité. Par exemple, vous pouvez créer un graphique en courbes à partir des résultats des ventes de magasins, chacun d’eux enregistrant plus de dix mille reçus d’achat chaque année. Un graphique en courbes de telles informations échantillonne des données (sélectionnez une représentation explicite de ces données pour illustrer les variations des ventes au fil du temps) à partir des données de chaque magasin, et montre plusieurs séries, représentant ainsi les données sous-jacentes. Il s’agit d’une pratique courante pour la visualisation de données à haute densité. Cet article décrit en détail comment Power BI Desktop a amélioré son échantillonnage des données à haute densité.
@@ -24,8 +24,6 @@ ms.locfileid: "39328141"
 
 > [!NOTE]
 > L’algorithme **Échantillonnage à haute densité** décrit dans cet article est disponible dans **Power BI Desktop** et dans le **service Power BI**.
-> 
-> 
 
 ## <a name="how-high-density-line-sampling-works"></a>Fonctionnement de l’échantillonnage de ligne à haute densité
 Auparavant, **Power BI** sélectionnait une collection de points de données échantillons dans la plage complète des données sous-jacentes de manière déterministe. Par exemple, pour des données à haute densité sur un visuel s’étendant sur une année civile, il pouvait y avoir 350 échantillons de points de données affichés dans le visuel, chacun d’eux étant sélectionné de façon que la plage complète des données (la série globale de données sous-jacentes) était représentée dans le visuel. Pour comprendre comment cela fonctionne, imaginons que nous traçons une cotation sur une période d’un an, et que nous avons sélectionné 365 points de données pour créer un visuel de graphique en courbes (soit un point de données pour chaque jour).
@@ -42,17 +40,25 @@ Pour un visuel à haute densité, **Power BI** découpe vos données de façon a
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Valeurs minimales et maximales pour les visuels de ligne à haute densité
 Pour chaque visualisation, les limitations visuelles suivantes s’appliquent :
 
-* Le nombre maximal de points de données *affichés* sur le visuel est de **3 500**, quel que soit le nombre de points de données ou de séries sous-jacents. Par conséquent, si vous avez 10 séries avec 350 points de données chacune, le visuel a atteint sa limite globale maximale de points de données. Si vous avez une seule série, celle-ci peut comprendre jusqu’à 3 500 points de données si le nouvel algorithme estime qu’il s’agit de l’échantillonnage optimal pour les données sous-jacentes.
+* Le nombre maximal de points de données *affichés* sur la plupart des visuels est **3 500**, quel que soit le nombre de séries ou de points de données sous-jacents (voir les *exceptions* dans la liste à puces suivante). Par conséquent, si vous avez 10 séries avec 350 points de données chacune, le visuel a atteint sa limite globale maximale de points de données. Si vous avez une seule série, celle-ci peut comprendre jusqu’à 3 500 points de données si le nouvel algorithme estime qu’il s’agit de l’échantillonnage optimal pour les données sous-jacentes.
+
 * Le nombre maximal de séries pour un visuel est fixé à **60**. Si vous avez plus de 60 séries, divisez les données et créez plusieurs visuels représentant chacun au maximum 60 séries. Il est recommandé d’utiliser un **slicer** (segment) afin d’afficher uniquement des segments des données (seulement certaines séries). Par exemple, si vous affichez toutes les sous-catégories dans la légende, vous pouvez utiliser un slicer afin de filtrer par catégorie générale sur la même page de rapport.
+
+Le nombre maximal de limites de données est plus élevé pour les types de visuel suivants, qui sont des *exceptions* à la limite de points de données de 3 500 :
+
+* **150 000** points de données au maximum pour les visuels R.
+* **30 000** points de données pour les visuels personnalisés.
+* **10 000** points de données pour les graphiques à nuages de points (la valeur par défaut est 3 500)
+* **3 500** pour tous les autres visuels
 
 Ces paramètres garantissent que les visuels dans Power BI Desktop s’affichent très rapidement et réagissent aux interactions des utilisateurs, et qu’ils n’entraînent pas une surcharge de calcul excessive sur l’ordinateur affichant le visuel.
 
 ### <a name="evaluating-representative-data-points-for-high-density-line-visuals"></a>Évaluation des points de données représentatifs pour les visuels de ligne à haute densité
-Quand le nombre de points de données sous-jacents dépasse le nombre maximal de points de données qui peuvent être représentés dans le visuel (3 500), un processus appelé *compartimentage* démarre, qui découpe les données sous-jacentes en blocs nommés *compartiments*, qu’il affine ensuite de manière itérative.
+Quand le nombre de points de données sous-jacents dépasse le nombre maximal de points de données pouvant être représentés dans le visuel, un processus appelé *compartimentage* démarre et découpe les données sous-jacentes en blocs nommés *compartiments*, qu’il affine ensuite de manière itérative.
 
 L’algorithme crée le plus grand nombre possible d’emplacements afin d’offrir une granularité maximale pour le visuel. Dans chaque emplacement, l’algorithme détecte les valeurs de données minimale et maximale pour s’assurer que les valeurs importantes et significatives (par exemple, des valeurs hors norme) sont capturées et affichées dans le visuel. Selon les résultats du compartimentage et de l’évaluation des données qui s’en suit par Power BI, la résolution minimale de l’axe X du visuel est déterminée de façon à garantir une granularité maximale de celui-ci.
 
-Comme mentionné précédemment, la granularité minimale de chaque série est de 350 points, la granularité maximale de 3 500.
+Comme mentionné précédemment, la précision minimale pour chaque série est de 350 points et la valeur maximale est de 3 500 pour la plupart des visuels, avec des *exceptions* listées dans les paragraphes précédents.
 
 Chaque emplacement est représenté par deux points de données qui deviennent les points de données représentatifs de l’emplacement dans le visuel. Les points de données sont simplement les valeurs haute et basse de cet emplacement et, en sélectionnant ces valeurs hautes et basses, le processus de compartimentage garantit qu’une valeur haute importante ou valeur basse significative est capturée et restituée dans le visuel.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: e08eeed7b4adf1a392d2661613dd190cce1fb52f
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 0cf9c152c9481e223a143bed3985e883c92af192
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565932"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416817"
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Utiliser le visuel Matrice dans Power BI Desktop
 La fonctionnalité visuelle **Matrice** vous permet de créer des visuels de matrice (également appelés *tables*) dans des rapports **Power BI Desktop** et de mettre en évidence des éléments au sein de la matrice en les croisant avec d’autres visuels. Vous pouvez également sélectionner des lignes, colonnes et cellules pour les mettre en évidence croisée. Enfin, pour optimiser l’utilisation de l’espace de disposition, le visuel de matrice prend en charge une disposition échelonnée.
@@ -25,7 +25,7 @@ La fonctionnalité visuelle **Matrice** vous permet de créer des visuels de mat
 De nombreuses fonctionnalités sont associées à la matrice, que nous allons passer en revue dans les sections suivantes de cet article.
 
 > [!NOTE]
-> Depuis la version de **Power BI Desktop** publiée en juillet 2017, les visuels de matrice et de table reflètent le style (y compris les couleurs) du **thème de rapport** appliqué. Il se peut que ces couleurs soient différentes de celles attendues pour votre visuel de matrice, mais vous pouvez les modifier dans votre configuration de **thème de rapport**. Pour plus d’informations sur les thèmes, consultez [**Utiliser les thèmes de rapport dans Power BI Desktop**](../desktop-report-themes.md).
+> Depuis la version de **Power BI Desktop** publiée en juillet 2017, les visuels de matrice et de table reflètent le style (y compris les couleurs) du **thème de rapport** appliqué. Il se peut que ces couleurs soient différentes de celles attendues pour votre visuel de matrice, mais vous pouvez les modifier dans votre configuration de **thème de rapport**. Pour plus d’informations, consultez [**Utiliser les thèmes de rapport dans Power BI Desktop**](../desktop-report-themes.md).
 > 
 > 
 
@@ -43,10 +43,10 @@ Lorsque vous étudiez les totaux et les sous-totaux, n’oubliez pas que ces val
 
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Descendre dans la hiérarchie avec le visuel Matrice
-Le visuel **Matrice** vous permet d’effectuer toutes sortes d’opérations intéressantes de descente dans la hiérarchie qui n’étaient pas possibles avant. Vous pouvez notamment descendre dans la hiérarchie en utilisant des lignes, des colonnes, voire des sections et cellules individuelles. Voyons comment ces opérations fonctionnent.
+Le visuel **Matrice** vous permet d’effectuer toutes sortes d’opérations intéressantes de descente dans la hiérarchie qui n’étaient pas possibles avant. Vous pouvez notamment descendre dans la hiérarchie en utilisant les lignes, les colonnes, voire des sections et cellules individuelles. Voyons comment ces opérations fonctionnent.
 
 ### <a name="drill-down-on-row-headers"></a>Descendre dans la hiérarchie sur des en-têtes de ligne
-Dans le volet **Visualisations**, lorsque vous ajoutez plusieurs champs à la section **Lignes** du puits **Champs**, vous activez la descente dans la hiérarchie sur les lignes du visuel de matrice. Cette opération est similaire à la création d’une hiérarchie, qui vous permet de descendre (et remonter) dans cette hiérarchie et d’analyser les données à chaque niveau.
+Dans le volet **Visualisations**, lorsque vous ajoutez plusieurs champs à la section **Lignes** du puits **Champs**, vous permettez la descente dans la hiérarchie sur les lignes du visuel Matrice. Cette opération est similaire à la création d’une hiérarchie, qui vous permet de descendre (et remonter) dans cette hiérarchie et d’analyser les données à chaque niveau.
 
 Dans l’image suivante, la section **Lignes** contient les éléments *Catégorie* et *Sous-catégorie*, qui créent un regroupement (ou une hiérarchie) dans les lignes, à partir duquel nous pouvons extraire.
 
@@ -56,7 +56,7 @@ Lorsque le visuel comporte un regroupement créé dans la section **Lignes**, le
 
 ![](media/desktop-matrix-visual/matrix-visual_5.png)
 
-Similairement au comportement des fonctions Explorer et Développer dans d’autres visuels, ces boutons permettent de descendre (ou remonter) dans la hiérarchie. Dans ce cas, nous pouvons descendre dans la hiérarchie de *Catégorie* à *Sous-catégorie*, comme l’illustre l’image suivante, où l’icône Descendre d’un niveau dans la hiérarchie (en forme de fourche) a été sélectionnée.
+À l’instar du comportement des fonctions Explorer et Développer dans d’autres visuels, ces boutons permettent de descendre (ou remonter) dans la hiérarchie. Dans ce cas, nous pouvons descendre dans la hiérarchie de *Catégorie* à *Sous-catégorie*, comme l’illustre l’image suivante, où l’icône Descendre d’un niveau dans la hiérarchie (en forme de fourche) a été sélectionnée.
 
 ![](media/desktop-matrix-visual/matrix-visual_6.png)
 
@@ -66,7 +66,7 @@ Outre l’utilisation de ces icônes, vous pouvez cliquer avec le bouton de droi
 
 Notez que ce menu affiche quelques options qui produisent des résultats différents :
 
-La sélection de l’option **Descendre dans la hiérarchie** a pour effet de développe la matrice pour *ce* niveau de ligne *en excluant* tous les autres en-têtes de ligne à l’exception de celui sur lequel nous cliquons avec le bouton droit. Dans l’image suivante, le clic avec le bouton droit a été effectué sur *Ordinateurs* et l’option **Descendre dans la hiérarchie** a été sélectionnée. Vous pouvez constater que d’autres lignes de niveau supérieur n’apparaissent plus dans la matrice. Cela est utile et s’avèrera particulièrement appréciable lorsque nous aborderons la section **Sélection croisée**.
+La sélection de l’option **Descendre dans la hiérarchie** a pour effet de développe la matrice pour *ce* niveau de ligne *en excluant* tous les autres en-têtes de ligne à l’exception de celui sur lequel nous cliquons avec le bouton droit. Dans l’image suivante, le clic avec le bouton droit a été effectué sur *Ordinateurs* et l’option **Descendre dans la hiérarchie** a été sélectionnée. Vous pouvez constater que d’autres lignes de niveau supérieur n’apparaissent plus dans la matrice. Cette manière d’explorer est utile et s’avèrera particulièrement appréciable lorsque nous aborderons la section **Sélection croisée**.
 
 ![](media/desktop-matrix-visual/matrix-visual_8.png)
 
@@ -74,7 +74,7 @@ Vous pouvez cliquer sur l’icône **Monter dans la hiérarchie** pour revenir �
 
 ![](media/desktop-matrix-visual/matrix-visual_8a.png)
 
-Lorsque vous cliquez sur l’icône **Monter dans la hiérarchie** dans le coin supérieur gauche pour que la matrice affiche toutes les catégories de niveau supérieur, puis cliquez à nouveau avec le bouton de droite et sélectionnez **Développer au prochain niveau**, ce qui suit s’affiche :
+Lorsque vous cliquez sur l’icône **Monter dans la hiérarchie** dans le coin supérieur gauche pour que la matrice affiche toutes les catégories de niveau supérieur, puis cliquez à nouveau avec le bouton de droite et sélectionnez **Développer au prochain niveau**, le visuel suivant s’affiche :
 
 ![](media/desktop-matrix-visual/matrix-visual_9.png)
 
@@ -103,7 +103,7 @@ Les autres éléments du menu contextuel opèrent sur les colonnes de la même m
 ## <a name="stepped-layout-with-matrix-visuals"></a>Disposition échelonnée avec des visuels de matrice
 Le visuel **Matrice** met automatiquement en retrait les sous-catégories dans une hiérarchie sous chaque parent. C’est ce qu’on appelle une **Disposition échelonnée**.
 
-Dans la version *d’origine* du visuel de matrice, les sous-catégories s’affichaient dans une colonne tout à fait distincte, occupant beaucoup plus d’espace que le visuel. L’image suivante présente la table dans le visuel de **Matrice** d’origine. Vous pouvez constater que les sous-catégories apparaissent dans une colonne totalement distincte.
+Dans la version *d’origine* du visuel de matrice, les sous-catégories s’affichaient dans une colonne tout à fait distincte, occupant beaucoup plus d’espace que le visuel. L’image suivante présente le tableau dans le visuel **Matrice** d’origine. Vous pouvez constater que les sous-catégories apparaissent dans une colonne distincte.
 
 ![](media/desktop-matrix-visual/matrix-visual_14.png)
 
@@ -129,7 +129,7 @@ Dans la section **Format** du volet **Visualisations**, développez la carte **S
 Le même processus s’applique pour les sous-totaux des colonnes.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Sélection croisée avec des visuels de matrice
-Avec le visuel **Matrice**, tous les éléments de la matrice peuvent être sélectionnés comme base pour une sélection croisée. Lorsque vous sélectionnez une colonne dans un visuel **Matrice**, cette colonne s’affiche en surbrillance, comme tous les autres visuels sur la page de rapport. Il s’agit d’une fonctionnalité commune d’autres visuels et sélections de point de données, ainsi, à présent, le visuel **Matrice** offre la même fonction.
+Avec le visuel **Matrice**, tous les éléments de la matrice peuvent être sélectionnés comme base pour une sélection croisée. Lorsque vous sélectionnez une colonne dans un visuel **Matrice**, cette colonne s’affiche en surbrillance, comme tous les autres visuels sur la page de rapport. Ce type de sélection croisée est une fonctionnalité courante d’autres visuels et sélections de point de données et est à présent également disponible pour le visuel **Matrice**.
 
 De plus, la combinaison Ctrl+Clic fonctionne également pour la sélection croisée. Par exemple, dans l’image suivante, une collection de sous-catégories a été sélectionnée dans le visuel **Matrice**. Notez comment les éléments non sélectionnés dans le visuel sont grisés, et comment les autres visuels de la page reflètent les sélections opérées dans le visuel **Matrice**.
 
@@ -153,10 +153,6 @@ Chacune de ces approches permet d’obtenir le même résultat. Sélectionner *C
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Les articles suivants pourraient également vous intéresser :
+[Nuages de points et graphiques en bulles dans Power BI](power-bi-visualization-scatter.md)
 
-* [Utiliser le quadrillage et l’alignement sur la grille dans les rapports Power BI Desktop](../desktop-gridlines-snap-to-grid.md)
-* [Sources de données dans Power BI Desktop](../desktop-data-sources.md)
-* [Types de données dans Power BI Desktop](../desktop-data-types.md)
-
- 
+[Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

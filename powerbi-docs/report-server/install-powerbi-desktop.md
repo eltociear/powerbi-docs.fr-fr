@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/24/2018
+ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: d3b7ace4fe611cc55965f96f770caf7b4ebf21b1
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c65b945260357b0679f8fdb83c534aac53481126
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726383"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46564782"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installer Power BI Desktop optimisé pour Power BI Report Server
 Découvrez comment installer Power BI Desktop optimisé pour Power BI Report Server.
@@ -31,7 +31,7 @@ Le moyen le plus simple d’avoir la version la plus récente de Power BI Deskto
 
     ![Télécharger Power BI Desktop à partir du portail web](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Vous pouvez aussi accéder directement à [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimisé pour Power BI Report Server - mars 2018) dans le Centre de téléchargement Microsoft.
+    Vous pouvez aussi accéder directement à [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (optimisé pour Power BI Report Server - août 2018) dans le Centre de téléchargement Microsoft.
 
 2. Dans la page du Centre de téléchargement, sélectionnez **Télécharger**.
 
@@ -41,7 +41,8 @@ Le moyen le plus simple d’avoir la version la plus récente de Power BI Deskto
 
     - **PBIDesktopRS_x64.msi** (version 64 bits).
 
-1. Après avoir téléchargé le programme d’installation, exécutez l’Assistant Installation de Power BI Desktop (octobre 2017).
+1. Après avoir téléchargé le programme d’installation, exécutez l’Assistant Installation de Power BI Desktop (août 2018).
+
 2. À l’issue de l’installation, cochez **Démarrer Power BI Desktop maintenant**.
    
     Power BI Desktop démarre et vous pouvez l’utiliser.
@@ -49,7 +50,7 @@ Le moyen le plus simple d’avoir la version la plus récente de Power BI Deskto
 ## <a name="verify-you-are-using-the-correct-version"></a>Vérifier que vous utilisez la version correcte
 Vous pouvez vérifier que vous utilisez la version appropriée de Power BI Desktop en regardant l’écran de lancement ou la barre de titre dans Power BI Desktop. La barre de titre indique le mois et l’année de publication.
 
-![Barre de titre pour Power BI Desktop optimisé pour Power BI Report Server](media/quickstart-create-powerbi-report/report-server-desktop-march-2018.png)
+![Barre de titre pour Power BI Desktop optimisé pour Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-august-2018.png)
 
 La barre de titre de la version Power BI Desktop du service Power BI n’affiche pas le mois et l’année.
 
@@ -63,12 +64,12 @@ Vous pouvez toujours commencer par ouvrir la version de Power BI Desktop que vou
 La modification d’un rapport Power BI à partir de Power BI Report Server, ou la création d’un rapport Power BI à partir du portail web ont toujours pour effet d’ouvrir la version appropriée de Power BI Destop.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
-Les rapports dans Power BI Report Server et dans le service Power BI (http://powerbi.com)) fonctionnent pratiquement de la même manière, mais certaines fonctionnalités diffèrent.
+Les rapports Power BI dans Power BI Report Server, dans le service Power BI (http://app.powerbi.com) et dans les applications mobiles Power BI fonctionnent pratiquement de la même manière, mais certaines fonctionnalités diffèrent.
 
 ### <a name="in-a-browser"></a>Dans un navigateur
 Les rapports Power BI Report Server prennent en charge toutes les visualisations, à savoir :
 
-* Éléments visuels personnalisés
+* Visuels personnalisés
 
 Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalités suivantes :
 
@@ -80,15 +81,15 @@ Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalit�
 ### <a name="in-the-power-bi-mobile-apps"></a>Dans les applications mobiles Power BI
 Les rapports Power BI Report Server prennent en charge toutes les fonctionnalités de base des [applications mobiles Power BI](../consumer/mobile/mobile-apps-for-mobile-devices.md), à savoir :
 
-* [Disposition des rapports pour téléphone](../desktop-create-phone-report.md) : vous pouvez optimiser un rapport pour les applications mobiles Power BI. Sur votre téléphone mobile, les rapports optimisés ont une icône ![icône de disposition de rapport sur téléphone](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-icon.png) et une disposition spéciales.
+* [Disposition des rapports pour téléphone](../desktop-create-phone-report.md) : vous pouvez optimiser un rapport pour les applications mobiles Power BI. Sur votre téléphone mobile, les rapports optimisés ont une icône ![icône de disposition de rapport sur téléphone](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png) et une disposition spéciales.
   
-    ![Rapports optimisés pour les téléphones](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-report.png)
+    ![Rapports optimisés pour les téléphones](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-report.png)
 
 Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalités suivantes dans les applications mobiles Power BI :
 
 * Visuels R
 * ArcGIS Maps
-* Éléments visuels personnalisés
+* Visuels personnalisés
 * Fil d’Ariane
 * Filtrage basé sur la géolocalisation ou codes barres
 

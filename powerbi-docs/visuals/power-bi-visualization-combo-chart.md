@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 68b14e6554c0c12590f555f6447198f1a850e9b1
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1855b65277fe778a20bd9e4629f8db1e7b9000a3
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544000"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448957"
 ---
 # <a name="combo-chart-in-power-bi"></a>Graphique combiné dans Power BI
 Dans Power BI, un graphique combiné est une visualisation qui combine un graphique en courbes et un histogramme. Combiner ces deux graphiques en un seul vous permet de comparer plus rapidement les données.
@@ -55,9 +55,9 @@ Regardez comment créer un graphique combiné à l’aide de l’exemple Vente e
     c.  Sélectionnez **Time** \> **FiscalMonth** (Période > Mois fiscal) pour l’ajouter à **Axe**.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Sélectionnez les points de suspension (...) dans le coin supérieur droit de la visualisation, puis sélectionnez **Trier par MoisFiscal**. Vous devrez peut-être sélectionner deux fois cette option pour trier par ordre croissant ou décroissant.
+5. Sélectionnez les points de suspension (...) dans le coin supérieur droit de la visualisation, puis sélectionnez **Trier par > MoisFiscal**. Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et choisissez **Tri croissant** ou **Tri décroissant**.
 
-6. Convertissez l’histogramme en graphique combiné. Après avoir sélectionné l’histogramme, ouvrez le volet **Visualisations** et sélectionnez **Graphique en courbes et histogramme groupé**.
+6. Convertissez l’histogramme en graphique combiné. Deux graphiques combinés sont disponibles : **Ligne et histogramme empilé** et **Ligne et histogramme groupé**. Après avoir sélectionné l’histogramme, ouvrez le volet **Visualisations** et sélectionnez **Graphique en courbes et histogramme groupé**.
 
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. À partir du volet **Champs**, faites glisser **Sales** \> **Last Year Sales** (Ventes > Ventes de l’année dernière) vers **Valeurs de ligne**.
@@ -71,7 +71,8 @@ Regardez comment créer un graphique combiné à l’aide de l’exemple Vente e
 ## <a name="create-a-combo-chart-with-two-axes"></a>Créer un graphique combiné avec deux axes
 Dans cette tâche, nous allons comparer les ventes et la marge brute.
 
-1. Créez un graphique en courbes qui affiche le **pourcentage de marge brute de l’année précédente** par **mois**.  En janvier, la marge brute était de 35 %. Elle a subi un pic à 45 % en avril, a baissé en juillet et a augmenté à nouveau en août. Verrons-nous un modèle similaire dans les ventes de l’année dernière et de cette année ?
+1. Créez un graphique en courbes qui affiche le **pourcentage de marge brute de l’année précédente** par **mois**. Sélectionnez les points de suspension pour le trier par **mois** et dans l’ordre **croissant**.  
+En janvier, la marge brute était de 35 %. Elle a subi un pic à 45 % en avril, a baissé en juillet et a augmenté à nouveau en août. Verrons-nous un modèle similaire dans les ventes de l’année dernière et de cette année ?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
 2. Ajoutez **This Year Sales > Value** (Ventes de l’année > Valeur) et **Last Year Sales** (Ventes de l’année dernière) au graphique en courbes. L’échelle utilisée pour **Gross Margin Last Year %** (Pourcentage de marge brute de l’année précédente) est beaucoup plus petite que l’échelle pour **Sales** (Ventes), ce qui rend difficile la comparaison des données.      
@@ -80,7 +81,7 @@ Dans cette tâche, nous allons comparer les ventes et la marge brute.
 3. Pour faciliter la lecture et l’analyse de la visualisation, convertissez le graphique en courbes en un graphique en courbes et histogramme empilé.
 
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-4. Faites glisser **Gross Margin Last Year %** (Pourcentage de marge brute de l’année précédente) de **Valeurs de colonne** vers **Valeurs de ligne**. Power BI crée deux axes, ce qui permet de définir des échelles différentes pour les jeux de données. L’axe de gauche mesure le montant des ventes et l’axe de droite mesure le pourcentage.
+4. Faites glisser **Gross Margin Last Year %** (Pourcentage de marge brute de l’année précédente) de **Valeurs de colonne** vers **Valeurs de ligne**. Power BI crée deux axes, ce qui permet de définir des échelles différentes pour les jeux de données. L’axe de gauche mesure le montant des ventes et l’axe de droite mesure le pourcentage. Et nous voyons la réponse à notre question : oui, nous notons un modèle similaire.
 
    ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
 
@@ -103,20 +104,16 @@ Dans cette tâche, nous allons comparer les ventes et la marge brute.
 
 À ce stade, vous souhaiterez effectuer les tâches suivantes :
 
-* [Ajoutez le graphique combiné sous forme de vignette de tableau de bord](../consumer/end-user-tiles.md).
+* [Ajoutez le graphique combiné sous forme de vignette de tableau de bord](../service-dashboard-tiles.md).
 * [Enregistrez le rapport](../service-report-save.md).
-* [Rendre les rapports plus accessibles aux personnes handicapées](../desktop-accessibility.md)
+* [Rendez les rapports plus accessibles aux personnes handicapées](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisés
 
-La mise en surbrillance d’une colonne ou d’une ligne dans un graphique combiné entraîne la mise en surbrillance et le filtrage croisés des autres visualisations sur la page du rapport, et vice versa. Utilisez le contrôle [Interactions entre les visuels](../consumer/end-user-interactions.md) pour modifier ce comportement par défaut.
+La mise en surbrillance d’une colonne ou d’une ligne dans un graphique combiné entraîne la mise en surbrillance et le filtrage croisés des autres visualisations sur la page du rapport, et vice versa. Utilisez le contrôle [Interactions entre les visuels](../service-reports-visual-interactions.md) pour modifier ce comportement par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Présentation des visualisations dans des rapports Power BI](power-bi-report-visualizations.md)
+[Graphiques en anneau dans Power BI](power-bi-visualization-doughnut-charts.md)
 
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Power BI – Concepts de base](../consumer/end-user-basic-concepts.md)
-
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

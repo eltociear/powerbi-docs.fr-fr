@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2c5fc1f8763b8360d7cd5a6f6605d6b4f3d5df3c
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 4b47e620c0469ed56a7afb413a5775cf2a34c4d4
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135648"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546542"
 ---
 # <a name="connect-to-ziosk-survey-analytics-with-power-bi"></a>Se connecter à Ziosk Survey Analytics avec Power BI
 Le pack de contenu Ziosk Survey Analytics pour Power BI offre aux restaurants un accès sans égal aux tablettes Ziosk lors de l’analyse de données d’enquête Ziosk, notamment la segmentation par jour, lieu, employé et bien plus encore.
@@ -43,9 +43,9 @@ Connectez-vous au [pack de contenu Ziosk Survey Analytics](https://app.powerbi.c
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
-* [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
+* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="whats-included"></a>Ce qui est inclus
@@ -73,5 +73,5 @@ Un compte Ziosk avec des autorisations sur les tables ci-dessus est nécessaire 
 ## <a name="next-steps"></a>Étapes suivantes
 [Qu’est-ce que Power BI ?](power-bi-overview.md)
 
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 

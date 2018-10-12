@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69c0e6d253a1d8d8ecad9f562c0b992c01d4d577
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4264b10ac9ae42585ea8b814d0c15de7ea318752
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547118"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416794"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop
 Vous pouvez créer des **info-bulles de rapport** attrayantes qui s’affichent quand vous pointez sur les visuels, basées sur les pages de rapport que vous créez dans **Power BI Desktop**. Quand vous créez une page de rapport à utiliser comme info-bulle, vos info-bulles personnalisées peuvent inclure des visuels, des images et toute autre collection d’éléments que vous créez dans la page de rapport. 
@@ -125,7 +125,7 @@ Gardez à l’esprit les considérations et les limitations suivantes relatives 
 
 * À compter de la version de septembre 2018 de **Power BI Desktop**, qui a marqué la disponibilité générale des info-bulles, les visuels de carte prennent également en charge les info-bulles.
 * À partir de la version de juillet 2018 de **Power BI Desktop**, les visuels de table et de matrice sont pris en charge pour les info-bulles. 
-* Les info-bulles de rapport ne sont pas prises en charge lors de l’affichage des rapports dans des applications mobiles, ou dans des environnements intégrés, y compris Publier sur le web. 
+* Les info-bulles de rapport ne sont pas prises en charge lors de l’affichage des rapports dans des applications mobiles. 
 * Les info-bulles de rapport ne sont pas prises en charge pour les visuels personnalisés. 
 * Les info-bulles de rapport ne prennent pas en charge l’affichage des champs clusters. 
 * Quand ils sélectionnent un champ à afficher pour les info-bulles de rapport, entre un champ et une catégorie, les visuels qui contiennent ce champ affichent uniquement l’info-bulle spécifiée si une correspondance est trouvée lors de la totalisation avec le champ sélectionné. 

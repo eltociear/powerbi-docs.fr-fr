@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7a10429561efed82d9481b2899a997cc89737d55
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 150277c4069be8c292e02caa495e8c545138227e
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37135556"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546047"
 ---
 # <a name="connect-to-mandrill-with-power-bi"></a>Se connecter à Mandrill avec Power BI
 Le pack de contenu Power BI extrait des données de votre compte Mandrill et génère un tableau de bord, un ensemble de rapports et un jeu de données qui vous permettent d’explorer vos données. Utilisez les analyses de Mandrill pour obtenir rapidement une vue d’ensemble de votre bulletin d’informations ou campagne marketing. Les données sont actualisées tous les jours. Ainsi, vous êtes sûr que les données que vous utilisez sont à jour.
@@ -41,13 +41,13 @@ Connectez-vous au [pack de contenu Mandrill pour Power BI](http://app.powerbi.c
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
-* [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
+* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Qu’est-ce que Power BI ?](power-bi-overview.md)
 
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 

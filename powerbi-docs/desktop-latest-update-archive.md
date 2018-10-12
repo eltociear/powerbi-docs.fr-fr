@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e7eadadede8f342b25ea59dcd2053f53d654ffff
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c9e4769be12d3da96064a82661a739a94e8a7c6e
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728315"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417392"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
 Cet article décrit les précédentes mises à jour de **Power BI Desktop**. Pour la version du mois la plus récente, consultez les dernières mises à jour [**Power BI Desktop**](desktop-latest-update.md).
 
-Vous pouvez toujours [télécharger la dernière version de Power BI Desktop](https://powerbi.microsoft.com/desktop). Si vous exécutez Windows 10, vous pouvez également obtenir **Power BI Desktop** à partir du Windows Store. Les versions mensuelles sont les mêmes, quelle que soit la façon dont vous installez **Power BI Desktop**. Pour plus d’informations, voir [cet article](desktop-get-the-desktop.md). 
+Vous pouvez toujours [télécharger la dernière version de Power BI Desktop](https://powerbi.microsoft.com/desktop). Si vous exécutez Windows 10, vous pouvez également obtenir **Power BI Desktop** à partir du Windows Store. Les versions mensuelles sont identiques, même si la numérotation de version peut différer d’une version à l’autre, quelle que soit la façon dont vous installez **Power BI Desktop**. Pour plus d’informations, voir [cet article](desktop-get-the-desktop.md). 
 
 Les liens en regard de chaque mise à jour signifient ce qui suit :
 
@@ -468,15 +468,15 @@ Les mises à jour suivantes ont été apportées à **Power BI Desktop** en dé
 -   Sélection croisée pour les signets [[vidéo]](https://youtu.be/ZPU8B-1BxjI?t=4m18s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting) 
 -   Amélioration de la flexibilité des signets [[vidéo]](https://youtu.be/ZPU8B-1BxjI?t=4m18s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility) 
 -   Volet Propriétés du champ et description de champs[[vidéo]](https://youtu.be/ZPU8B-1BxjI?t=13m19s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane) 
--   Élément visuel Nuage de points à partir de regroupements des axes X et Y [[vidéo]](https://youtu.be/ZPU8B-1BxjI?t=15m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#scatterChart) 
+-   Visuel Nuage de points à partir de regroupements des axes X et Y [[vidéo]](https://youtu.be/ZPU8B-1BxjI?t=15m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#scatterChart) 
 -   Échantillonnage à haute densité pour les cartes basées sur la latitude et la longitude [[vidéo]](https://youtu.be/ZPU8B-1BxjI?t=17m3s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#highDensityMaps) 
 -   Segments réactifs [[vidéo]](https://youtu.be/sI3yRjdnJ7w?t=20m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#responsive) 
 -   Visuels personnalisés publiés récemment  [[vidéo]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
 
 
-### <a name="analytics"></a>Analyse
+### <a name="analytics"></a>Analytique
 
--   Filtres d’exploration dans d’autres éléments visuels  [[vidéo]](https://youtu.be/ZPU8B-1BxjI?t=28m53s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals) 
+-   Filtres d’exploration dans d’autres visuels  [[vidéo]](https://youtu.be/ZPU8B-1BxjI?t=28m53s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals) 
 
 
 ### <a name="data-connectivity"></a>Connectivité aux données
@@ -1200,7 +1200,7 @@ Les nouvelles mises à jour apportées à Power BI Desktop ce mois-ci sont les 
 -   Disponibilité générale des hiérarchies incluses [[article]](desktop-inline-hierarchy-labels.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vidéo]](https://youtu.be/0VvG7Eqoke8?t=4m6s)
 -   Styles de matrice prédéfinis (semblables à la mise en forme d’un tableau Excel) prédéfinis [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vidéo]](https://youtu.be/0VvG7Eqoke8?t=4m59s)
 -   Réorganiser les champs, dans les graphiques et les info-bulles [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vidéo]](https://youtu.be/0VvG7Eqoke8?t=6m23s)
--   Mise en forme de la couleur d’éléments visuels des indicateurs de performance clés [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vidéo]](https://youtu.be/0VvG7Eqoke8?t=7m9s)
+-   Mise en forme de la couleur des visuels des indicateurs de performance clés [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vidéo]](https://youtu.be/0VvG7Eqoke8?t=7m9s)
 
 ### <a name="analytics-new"></a>Analyse (Nouveau !)
 
@@ -1290,7 +1290,7 @@ En juin, nous avons publié des mises à jour intéressantes pour Power BI Des
 
 ### <a name="report-view"></a>Vue Rapport :
 
--   Nouvel élément visuel - Carte de formes [[vidéo]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[article]](visuals/desktop-shape-map.md)
+-   Nouveau visuel - Carte de formes [[vidéo]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[article]](visuals/desktop-shape-map.md)
 -   Segments pouvant faire l’objet d’une recherche [[vidéo]](https://youtu.be/sZsL2l6oS4A?t=6m25s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 -   Étiquettes de graphiques en courbes configurables [[vidéo]](https://youtu.be/sZsL2l6oS4A?t=7m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 -   Nouveaux points d’entrée de connexion [[vidéo]](https://youtu.be/sZsL2l6oS4A?t=2m30s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)

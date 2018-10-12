@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 62f03283a978978314e91c86aaacbe6defe2e19e
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 550d3bc609afbbac69c63c373e452eac11244152
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37134521"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549464"
 ---
 # <a name="connect-to-stripe-with-power-bi"></a>Se connecter à Stripe avec Power BI
 Visualisez et explorez vos données Stripe dans Power BI avec le pack de contenu Power BI. Le pack de contenu Power BI Stripe extrait des données sur vos clients, frais, événements et factures. Les données incluent les dix mille événements et les cinq mille frais les plus récents au cours des 30 derniers jours. Le contenu est actualisé automatiquement une fois par jour selon un planning que vous contrôlez. 
@@ -41,9 +41,9 @@ Connectez-vous au [pack de contenu Stripe pour Power BI](https://app.powerbi.co
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
-* [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
+* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="next-steps"></a>Étapes suivantes

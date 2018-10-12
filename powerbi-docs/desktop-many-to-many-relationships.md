@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 40799bb2716b2f6e85405e76c2a301acef3509aa
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 5c0c6fd619a2487f9c801200d732cda628a68055
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388752"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973997"
 ---
 # <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Relations plusieurs-à-plusieurs dans Power BI Desktop (préversion)
 
@@ -68,7 +68,7 @@ Imaginez également que la table *Sales* a seulement quatre lignes, y compris *V
 
 ![visuel de table](media/desktop-many-to-many-relationships/many-to-many-relationships_04.png)
 
-Un élément visuel qui affichait *ProductName* et *Price* (à partir de la table *Produit*), ainsi que le total *Qty* pour chaque produit (à partir de la table *ProductSales*) s’affiche comme le montre l’image suivante : 
+Un visuel qui affichait *ProductName* et *Price* (à partir de la table *Produit*), ainsi que le total *Qty* pour chaque produit (à partir de la table *ProductSales*) s’affiche comme le montre l’image suivante : 
 
 ![visuel de table](media/desktop-many-to-many-relationships/many-to-many-relationships_05.png)
 
@@ -135,7 +135,7 @@ Par exemple, lors de la création d’une relation directe entre *CityData* et *
 
 ![Boîte de dialogue Modifier la relation](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-L’**affichage des relations** en résultant contiendrait alors la relation directe **Plusieurs à plusieurs** entre les deux tables. L’apparence dans la liste des **champs** et le comportement ultérieur suivant lors de la création de visuels sont alors identique à l’utilisation de la solution de contournement décrite dans la section précédente, où la table supplémentaire (contenant la commande distincte *états*) ne sont pas rendus visibles. Par exemple, comme dans la section précédente décrivant la solution de contournement, un élément visuel montrant les *états*, ainsi que la totalité de la population et des ventes, se présenterait comme suit.
+L’**affichage des relations** en résultant contiendrait alors la relation directe **Plusieurs à plusieurs** entre les deux tables. L’apparence dans la liste des **champs** et le comportement ultérieur suivant lors de la création de visuels sont alors identique à l’utilisation de la solution de contournement décrite dans la section précédente, où la table supplémentaire (contenant la commande distincte *états*) ne sont pas rendus visibles. Par exemple, comme dans la section précédente décrivant la solution de contournement, un visuel montrant les *états*, ainsi que la totalité de la population et des ventes, se présenterait comme suit.
 
 ![visuel de table](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
 
@@ -158,12 +158,13 @@ Pour cette raison, il faut veiller à ce que des calculs avec *TOUT(\<Table>)*, 
 
 Il existe quelques limitations pour cette version de **relations plusieurs à plusieurs** et de **modèles composites**.
 
-Les sources multidimensionnelles suivantes ne peuvent pas être utilisées avec les **modèles composites** :
+Les sources (multidimensionnelles) Live Connect suivantes ne peuvent pas être utilisées avec les **modèles composites** :
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Jeux de données Power BI
+* Azure Analysis Services
 
 Lors de la connexion à ces sources multidimensionnelles à l’aide de DirectQuery, vous ne pouvez pas non plus vous connecter à une autre source DirectQuery ni combiner les données avec des données importées.
 

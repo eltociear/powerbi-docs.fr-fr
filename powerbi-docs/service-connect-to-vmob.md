@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b1f2970ad73783acf3736856463915161056b801
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 01c7866a47d20b51055aa77bdd4792e2277c335f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34237873"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549734"
 ---
 # <a name="connect-to-vmob-with-power-bi"></a>Se connecter à VMob avec Power BI
 Le suivi et l’exploration de vos données VMob sont faciles avec Power BI et le pack de contenu VMob. Power BI récupère les données suivantes : statistiques utilisateur pour toutes les périodes au cours des 30 derniers jours, indicateurs de performance clés de vente au détail pour les 30 derniers jours et performances de campagne pour les 30 derniers jours.
@@ -44,9 +44,9 @@ Connectez-vous au [pack de contenu VMob](https://app.powerbi.com/getdata/service
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
-* [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
+* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="next-steps"></a>Étapes suivantes

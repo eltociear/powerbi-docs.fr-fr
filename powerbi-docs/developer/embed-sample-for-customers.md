@@ -9,14 +9,15 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 1185b6195f0d802cec71143c1f27ce5cead584c6
-ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
+ms.openlocfilehash: 3cb33180c24022c1e328691ce3a776875d4c87a9
+ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616048"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47238120"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application pour vos clients
+
 Avec **Power BI Embedded dans Azure**, vous pouvez incorporer des rapports, des tableaux de bord et des vignettes dans une application à l’aide de l’exemple **App Owns Data (L’application possède les données)**. **Application possède des données** vise à permettre d’avoir une application qui utilise Power BI comme sa plateforme d’analyse incorporée. L’utilisation de **App Owns Data (L’application possède les données)** est généralement un scénario des **développeurs chez des éditeurs de logiciels indépendants**. En tant que **développeur chez un éditeur de logiciels indépendant**, vous pouvez créer du contenu **Power BI** qui affiche des rapports, des tableaux de bord ou des vignettes dans une application qui est entièrement intégrée et interactive, sans exiger des utilisateurs de l’application qu’ils disposent d’une licence Power BI. Ce tutoriel montre comment intégrer un rapport dans une application avec le Kit de développement logiciel (SDK) **Power BI** .NET ainsi que l’API JavaScript **Power BI** en utilisant **Power BI Embedded dans Azure**  pour vos clients suivant un modèle **L’application possède les données**.
 
 Dans ce tutoriel, vous allez découvrir comment :
@@ -25,6 +26,7 @@ Dans ce tutoriel, vous allez découvrir comment :
 >* incorporer un rapport Power BI dans une application.
 
 ## <a name="prerequisites"></a>Conditions préalables
+
 Pour commencer, vous avez besoin d’un compte **Power BI Pro** (ce compte est votre **compte principal**) et d’un abonnement **Microsoft Azure**.
 
 * Si vous n’avez pas d’abonnement à **Power BI Pro**, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/en-us/pricing/) avant de commencer.
@@ -36,9 +38,10 @@ Pour commencer, vous avez besoin d’un compte **Power BI Pro** (ce compte est v
 
 Avant de commencer à incorporer des rapports, des tableaux de bord ou des vignettes dans votre application, vérifiez que votre environnement est configuré de façon à autoriser l’incorporation. Dans le cadre de la configuration, vous devez effectuer les opérations suivantes.
 
-Vous pouvez accéder à [l’outil d’expérience d’intégration](https://aka.ms/embedsetup/AppOwnsData) pour démarrer rapidement et télécharger un exemple d’application qui vous permet de créer un environnement et d’incorporer un rapport.
+Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup/AppOwnsData) pour démarrer rapidement et télécharger un exemple d’application qui vous permet de créer un environnement et d’incorporer un rapport.
 
 Cependant, si vous choisissez de configurer l’environnement manuellement, vous pouvez continuer et suivre les instructions ci-dessous.
+
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Inscrire une application dans Azure Active Directory (Azure AD)
 
 Inscrivez votre application sur Azure Active Directory pour l’autoriser à accéder aux API REST Power BI. Vous pourrez ainsi établir une identité pour votre application et spécifier des autorisations sur les ressources REST de Power BI.
@@ -46,11 +49,11 @@ Inscrivez votre application sur Azure Active Directory pour l’autoriser à a
 1. Acceptez les [conditions d’utilisation de l’API Microsoft Power BI](https://powerbi.microsoft.com/api-terms).
 
 2. Connectez-vous au [portail Azure](https://portal.azure.com).
- 
+
     ![Page principale du Portail Azure](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
 3. Dans le volet de navigation de gauche, choisissez **Tous les services** et sélectionnez **Inscriptions d’applications**, puis **Nouvelle inscription d’application**.
-   
+
     ![Recherche d’inscription d’application](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Nouvelle inscription d’application](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
@@ -65,11 +68,11 @@ Il est nécessaire d’activer des autorisations supplémentaires pour l’appli
 ### <a name="use-the-azure-active-directory-portal"></a>Utiliser le portail Azure Active Directory
 
 1. Accédez à [Inscriptions des applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) dans le portail Azure, puis sélectionnez l’application que vous utilisez pour l’incorporation.
-   
+
     ![Choisir l’application](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
 2. Sélectionnez **Paramètres** ; ensuite, sous **Accès aux API**, sélectionnez **Autorisations requises**.
-   
+
     ![Autorisations requises](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
 
 3. Sélectionnez **Windows Azure Active Directory** puis vérifiez que l’option **Accéder au répertoire en tant qu’utilisateur actuellement connecté** est sélectionnée. Sélectionnez **Enregistrer**.
@@ -170,7 +173,9 @@ Suivez ces étapes pour commencer l’incorporation de votre contenu à l’aide
 
     Dans le volet de navigation de gauche, choisissez **Tous les services**, puis sélectionnez **Inscriptions d’applications**.
 
-    **Recherche d’inscription d’application** Sélectionnez l’application pour laquelle vous souhaitez récupérer la valeur ![clientId](media/embed-sample-for-customers/embed-sample-for-customers-003.png).
+    ![Recherche d’inscription d’application](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+
+    Sélectionnez l’application pour laquelle vous souhaitez récupérer la valeur **clientId**.
 
     ![Choisir l’application](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
@@ -204,6 +209,7 @@ Suivez ces étapes pour commencer l’incorporation de votre contenu à l’aide
     ![Voir l’application](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 ## <a name="embed-your-content-within-your-application"></a>Incorporer votre contenu dans l’application
+
 Même si les étapes permettant d’incorporer votre contenu peuvent être effectuées avec les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/), les exemples de code décrits dans cet article utilisent le **kit SDK .NET**.
 
 L’incorporation pour vos clients dans votre application exige que vous obteniez un **jeton d’accès** pour votre compte principal à partir d’**Azure AD**. Vous devez obligatoirement [obtenir un jeton d’accès Azure AD](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) pour votre application Power BI en utilisant le modèle **L’application possède les données** avant de faire appel aux [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/).
@@ -225,6 +231,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ```
 
 ### <a name="get-the-content-item-you-want-to-embed"></a>Obtenir l’élément de contenu que vous souhaitez incorporer
+
 Vous pouvez utiliser l’objet client Power BI pour récupérer une référence à l’élément que vous souhaitez incorporer.
 
 Voici un exemple de code montrant comment récupérer le premier rapport à partir d’un espace de travail donné.
@@ -243,6 +250,7 @@ Report report = reports.Value.FirstOrDefault();
 ```
 
 ### <a name="create-the-embed-token"></a>Créer le jeton incorporé
+
 Un jeton d’incorporation doit être généré pour être utilisé à partir de l’API JavaScript. Le jeton d’incorporation est spécifique à l’élément que vous incorporez. De ce fait, chaque fois que vous incorporez un élément de contenu Power BI, vous devez lui créer un jeton d’incorporation. Pour en savoir plus, notamment sur les niveaux d’accès (**accessLevel**) à utiliser, consultez [API GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx).
 
 Voici un exemple d’ajout d’un jeton d’incorporation de rapport à votre application.
@@ -323,6 +331,7 @@ Voici un exemple qui utilise un modèle **EmbedConfig** et un modèle **TileEmbe
 Maintenant que votre application est développée, il est temps de sauvegarder votre espace de travail d’application avec une capacité dédiée. Une capacité dédiée est nécessaire de passer à la production.
 
 ### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
+
 En créant une capacité dédiée, vous pouvez profiter du fait que vous disposez d’une ressource dédiée pour votre client. Vous pouvez acheter une capacité dédiée dans le [Portail Microsoft Azure](https://portal.azure.com). Pour en savoir plus sur la création d’une capacité Power BI Embedded, consultez [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](azure-pbie-create-capacity.md).
 
 Examinez le tableau ci-dessous pour déterminer la capacité Power BI Embedded qui répond le mieux à vos besoins.
@@ -359,6 +368,7 @@ Une fois que vous avez créé une capacité dédiée, vous pouvez lui affecter v
     ![espace de travail lié à une capacité](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 Dans ce tutoriel, vous avez appris à incorporer du contenu Power BI dans une application pour vos clients. Vous pouvez aussi essayer d’incorporer du contenu Power BI pour votre organisation.
 
 > [!div class="nextstepaction"]

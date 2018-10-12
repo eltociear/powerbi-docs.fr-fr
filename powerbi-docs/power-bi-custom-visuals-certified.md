@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 09/24/2018
 ms.author: mihart
-ms.openlocfilehash: 45bd00877aadba2a84ac533add18b82337fa8403
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 54c484153896430a7c5c886864459361cae97428
+ms.sourcegitcommit: fbc1fabcb5e3b285228c9aa192b9b421b2782922
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546254"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47059067"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Obtention d’un visuel personnalisé *certifié*
 ## <a name="what-is-meant-by-certified"></a>Qu’entend-on par *certifié* ?
@@ -27,7 +27,7 @@ Vous êtes un développeur web et souhaitez créer vos propres visualisations et
 ## <a name="certification-requirements"></a>Critères de certification
 * Approuvé(s) par Microsoft AppSource    
 * Le visuel personnalisé est écrit avec une API version 1.2 ou supérieure.    
-* Un référentiel de code est disponible pour examen (par exemple, code de l’élément visuel accessible via GitHub).    
+* Un référentiel de code est disponible pour examen (par exemple, code du visuel accessible via GitHub).    
 * Le visuel utilise uniquement des composants OSS publics consultables.    
 * Le visuel n’accède pas à des services ou ressources externes.    
 
@@ -102,11 +102,12 @@ Microsoft peut, à sa discrétion, supprimer un visuel de la liste certifiée.
 | [Graphique KPI par Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381432) | |
 | [Colonne KPI par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380996) | [Vidéo](https://youtu.be/rU0xoOlIq1U) |
 | [Grille KPI par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380947) | [Vidéo](https://youtu.be/dM4PvZh71V0) |
-| [Indicateur d’indicateur de performance clé](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380832) | |
+| [Indicateur KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380832) | |
 | [KPI Ticker par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380946) | [Vidéo](https://youtu.be/cudG4gsZ2V8) |
 | [Linear Gauge par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821) | [Vidéo](https://youtu.be/7_jFaM30dkc) |
 | [LineDot Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380766) | |
 | [Graphique Mekko](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380785) | [Vidéo](https://youtu.be/90FLCKpgicA) |
+| [Multi KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381763) | |
 | [Vue d’ensemble par CloudScope](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381477) | |
 | [Axe de lecture (segment dynamique)](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380981) | |
 | [Power KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083) | [Vidéo](https://youtu.be/IvfIP3E6-1Q) |

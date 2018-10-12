@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f54841b77d79854334ddb6d93ccdc9b5926201ac
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: e6e09ceb6aa40f26e145b5ace7a3c9e94bfcb44d
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136699"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547749"
 ---
 # <a name="connect-to-mailchimp-with-power-bi"></a>Se connecter à MailChimp avec Power BI
 Le pack de contenu Power BI extrait des données de votre compte MailChimp et génère un tableau de bord, un ensemble de rapports et un jeu de données qui vous permettent d’explorer vos données. Exploitez la fonctionnalité d’analyse pour créer des [tableaux de bord MailChimp](https://powerbi.microsoft.com/integrations/mailchimp) et identifier rapidement les tendances de vos campagnes, rapports et abonnés. Les données sont actualisées tous les jours. Ainsi, vous êtes sûr que les données que vous utilisez sont à jour.
@@ -45,13 +45,13 @@ Connectez-vous au [pack de contenu MailChimp](https://app.powerbi.com/getdata/se
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
 * [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
-* [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
+* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Qu’est-ce que Power BI ?](power-bi-overview.md)
 
-[Power BI – Concepts de base](service-basic-concepts.md)
+[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 

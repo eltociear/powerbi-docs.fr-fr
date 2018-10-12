@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a3102ff26a4dbf58d8db0073f1af9cf2db5b6515
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 63b75aae9fb9299119b606458a4a8832d77dd1be
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329382"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417162"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout élément visuel ou tableau de bord qui peut être créé dans Power BI peut également l’être pour afficher et mettre à jour des données et des éléments visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des mesures d’utilisation de service, ou tout autre dispositif permettant de collecter ou transmettre des données.
@@ -65,7 +65,7 @@ Le tableau suivant (ou la matrice si vous préférez) décrit les trois types de
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> Pour plus d’informations sur les limites **d’envoi** et la quantité de données pouvant être envoyées, voir [cet article de MSDN](https://msdn.microsoft.com/library/dn950053.aspx).
+> Pour plus d’informations sur les limites **d’envoi** et la quantité de données pouvant être envoyées, voir [cet article](https://docs.microsoft.com/power-bi/developer/api-rest-api-limitations).
 > 
 > 
 
@@ -83,14 +83,12 @@ Jetons un œil à chacune de ces approches.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Utilisation des API REST Power BI pour transmettre des données
 Vous pouvez utiliser les **API REST Power BI** pour créer et envoyer des données à des jeux de données de **transmission** et à des jeux de données de **streaming**. Lorsque vous créez un jeu de données à l’aide des API REST Power BI, l’indicateur *defaultMode* spécifie s’il s’agit d’un jeu de données de transmission ou de streaming. Si aucun indicateur *defaultMode* n’est défini, il s’agit par défaut d’un jeu de données de **transmission**.
 
-Si la valeur de l’indicateur *defaultMode* est *pushStreaming*, le jeu de données est à la fois un jeu de données de **transmission** *et* **de streaming**, avec les avantages de ces deux types de jeu de données. L’[article sur les API REST et la **création de jeu de données**](https://msdn.microsoft.com/library/mt203562.aspx) montre comment créer un jeu de données de streaming, ainsi que l’indicateur *defaultMode* en action.
+Si la valeur de l’indicateur *defaultMode* est *pushStreaming*, le jeu de données est à la fois un jeu de données de **transmission** *et* **de streaming**, avec les avantages de ces deux types de jeu de données. 
 
 > [!NOTE]
 > Lorsque vous utilisez des jeux de données avec l’indicateur *defaultMode* défini sur *pushStreaming*, si une requête dépasse la restriction de taille de 15 Ko pour un jeu de données de **streaming**, mais qu’elle est inférieure à la restriction de taille de 16 Mo d’un jeu de données de **transmission**, la requête aboutit et les données sont actualisées dans le jeu de données de transmission. Toutefois, les vignettes de streaming échouent de façon temporaire.
-> 
-> 
 
-Une fois que vous avez créé un jeu de données, utilisez les API REST pour transmettre les données à l’aide de l’[API **Ajouter des lignes**](https://msdn.microsoft.com/library/mt203561.aspx), tel que [présenté dans cet article](https://msdn.microsoft.com/library/mt203561.aspx).
+Une fois que vous avez créé un jeu de données, utilisez les API REST pour transmettre les données à l’aide de l’[API **PostRows**](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows).
 
 Toutes les demandes aux API REST sont sécurisées à l’aide d’**Azure AD OAuth**.
 
@@ -159,9 +157,9 @@ Les sections suivantes examinent successivement chaque option.
 
 ![](media/service-real-time-streaming/real-time-streaming_5.png)
 
-Si vous souhaitez que Power BI stocke les données envoyées via ce flux de données, activez *Analyse des données d’historique* afin de pouvoir générer des rapports et effectuer des analyses à partir du flux des données collectées. Vous pouvez également [en savoir plus sur l’API](https://msdn.microsoft.com/library/dn877544.aspx).
+Si vous souhaitez que Power BI stocke les données envoyées via ce flux de données, activez *Analyse des données d’historique* afin de pouvoir générer des rapports et effectuer des analyses à partir du flux des données collectées. Vous pouvez également [en savoir plus sur l’API](https://docs.microsoft.com/rest/api/power-bi/).
 
-Après avoir correctement créé votre flux de données, vous disposez d’un point de terminaison associé à une URL d’API REST, que votre application peut appeler à l’aide de requêtes *POST* pour envoyer vos données au jeu de **données de streaming** Power BI vous avez créé.
+Après avoir correctement créé votre flux de données, vous disposez d’un point de terminaison associé à une URL d’API REST, que votre application peut appeler à l’aide de requêtes *POST* pour envoyer vos données au jeu de **données de streaming** Power BI que vous avez créé.
 
 Lors de l’établissement d’une demande *POST*, vous devez vous assurer que le corps de celle-ci correspond à l’exemple de JSON fourni par l’interface utilisateur de Power BI. Par exemple, encapsulez vos objets JSON dans un tableau.
 
@@ -223,16 +221,16 @@ Pour les jeux de données de transmission, en supposant que vous avez un horodat
 Non, cette option n’est pas disponible pour l’instant.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>Étant donné la question précédente, comment puis-je modéliser les jeux de données en temps réel ?
-La modélisation n’est pas possible sur un jeu de données de streaming, car les données ne sont pas stockées définitivement. Pour un jeu de données de transmission, vous pouvez utiliser les API REST de mise à jour de table/jeu de données pour ajouter des mesures et des relations. Pour plus d’informations, consultez l’[article sur la mise à jour du schéma de table](https://msdn.microsoft.com/library/mt203560.aspx) et l’article sur les [propriétés du jeu de données](https://msdn.microsoft.com/library/mt742155.aspx).
+La modélisation n’est pas possible sur un jeu de données de streaming, car les données ne sont pas stockées définitivement. Pour un jeu de données de transmission, vous pouvez utiliser les API REST de mise à jour de table/jeu de données pour ajouter des mesures et des relations. 
 
 #### <a name="how-can-i-clear-all-the-values-on-a-push-dataset-how-about-streaming-dataset"></a>Comment effacer toutes les valeurs d’un jeu de données de transmission ? Qu’en est-il du jeu de données de streaming ?
-Sur un jeu de données de transmission, vous pouvez utiliser l’appel de l’API REST de suppression de lignes. Séparément, vous pouvez également utiliser cet outil très pratique, qui est un wrapper autour des API REST. Il n’existe actuellement aucun moyen d’effacer les données d’un jeu de données de streaming, bien que les données s’effacent d’elles-mêmes au bout d’une heure.
+Sur un jeu de données de transmission, vous pouvez utiliser l’appel de l’API REST de suppression de lignes. Il n’existe actuellement aucun moyen d’effacer les données d’un jeu de données de streaming, bien que les données s’effacent d’elles-mêmes au bout d’une heure.
 
 #### <a name="i-set-up-an-azure-stream-analytics-output-to-power-bi-but-i-dont-see-it-appearing-in-power-bi--whats-wrong"></a>J’ai configuré une sortie Azure Stream Analytics vers Power BI, mais elle n’apparaît pas dans Power BI : que se passe-t-il ?
 Voici une liste de vérification pour résoudre le problème :
 
 1. Redémarrez le travail Azure Stream Analytics (les travaux créés avant la disponibilité générale du streaming nécessitent un redémarrage).
-2. Essayez de nouveau d’autoriser votre connexion Power BI dans Azure Stream Analytics.
+2. Essayez de nouveau d’autoriser votre connexion Power BI dans Azure Stream Analytics.
 3. Quel espace de travail avez-vous spécifié dans la sortie Azure Stream Analytics ? Dans le service Power BI, êtes-vous connecté à ce même espace de travail ?
 4. Est-ce que la requête Azure Stream Analytics effectue une sortie explicite vers la sortie Power BI ? (en utilisant le mot clé INTO)
 5. Le travail Azure Stream Analytics a-t-il des données transitant par son intermédiaire ? Le jeu de données est créé uniquement lorsqu’il existe des données transmises.
@@ -241,9 +239,6 @@ Voici une liste de vérification pour résoudre le problème :
 ## <a name="next-steps"></a>Étapes suivantes
 Voici quelques liens qui peuvent vous être utiles lorsque vous travaillez avec le streaming en temps réel dans Power BI :
 
-* [Vue d’ensemble de l’API REST Power BI avec les données en temps réel](https://msdn.microsoft.com/library/dn877544.aspx)
-* [Limites de l’API REST Power BI](https://msdn.microsoft.com/library/dn950053.aspx)
-* [Article sur l’API REST pour la **création d’un jeu de données**](https://msdn.microsoft.com/library/mt203562.aspx)
-* [**Ajouter des lignes** API REST Power BI](https://msdn.microsoft.com/library/mt203561.aspx)
+* [Vue d’ensemble de l’API REST Power BI avec les données en temps réel](https://docs.microsoft.com/rest/api/power-bi/)
 * [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)
 

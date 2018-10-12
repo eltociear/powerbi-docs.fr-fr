@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: dda983aec42731aa885323749d9302db75066569
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 5cd858ad14c1a5fcf76ddf23dafdac2bb5585b10
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136775"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548255"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Se connecter à Salesforce avec Power BI
 Avec Power BI, vous pouvez facilement vous connecter à votre compte Salesforce.com. Créez cette connexion pour récupérer vos données et disposer automatiquement d’un tableau de bord et de rapports connexes basés sur vos données.
@@ -56,13 +56,15 @@ Connectez-vous au [pack de contenu Salesforce](https://app.powerbi.com/getdata/s
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 
-Vous pouvez modifier ce tableau de bord pour afficher vos données comme vous le souhaitez. Vous pouvez poser des questions dans la zone Q&R, ou bien cliquer sur une vignette pour [ouvrir le rapport sous-jacent](service-dashboard-tiles.md) et [modifier les vignettes](service-dashboard-edit-tile.md) du tableau de bord.
+Vous pouvez modifier ce tableau de bord pour afficher vos données comme vous le souhaitez. Vous pouvez poser des questions dans la zone Q&R, ou bien cliquer sur une vignette pour [ouvrir le rapport sous-jacent](consumer/end-user-tiles.md) et [modifier les vignettes](service-dashboard-edit-tile.md) du tableau de bord.
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](power-bi-q-and-a.md) en haut du tableau de bord.
-* [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
+* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
+* [Changez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
+* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
 * [Sélectionnez une vignette](service-dashboard-tiles.md) pour ouvrir le rapport sous-jacent.
+>>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="system-requirements-and-considerations"></a>Configuration requise et considérations

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 03/19/2018
+ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: 3efd7da5ef320e08ab620da3c63a6d3ff327396a
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 1d74ed5e39d73252d0779458d0ba8619908c99f2
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250381"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565909"
 ---
 # <a name="install-power-bi-report-server"></a>Installer Power BI Report Server
 
@@ -30,11 +30,11 @@ Avant d’installer Power BI Report Server, il est recommandé de lire l’artic
 ### <a name="power-bi-report-server-product-key"></a>Clé de produit Power BI Report Server
 
 #### <a name="power-bi-premium"></a>Power BI Premium
-Si vous avez acheté Power BI Premium, la clé de produit de votre instance de Power BI Report Server est accessible à partir de l’onglet **Paramètres Premium** du portail d’administration Power BI. Celle-ci est réservée aux administrateurs généraux ou aux utilisateurs dotés du rôle d’administrateur du service Power BI.
+Si vous avez acheté Power BI Premium, vous pouvez accéder à la clé de produit de votre instance de Power BI Report Server sous l’onglet **Paramètres Premium** du portail d’administration Power BI. C’est réservé aux administrateurs généraux ou aux utilisateurs qui ont le rôle d’administrateur du service Power BI.
 
 ![](../media/service-admin-premium-manage/pbirs-product-key.png "Clé Power BI Report Server dans les paramètres Premium")
 
-La sélection de **Clé de Power BI Report Server** a pour effet d’afficher une boîte de dialogue contenant votre clé de produit. Copiez-la pour l’utiliser lors de l’installation.
+Si vous sélectionnez **Clé de Power BI Report Server**, une boîte de dialogue contenant votre clé de produit s’affiche. Copiez-la pour l’utiliser lors de l’installation.
 
 ![](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Clé de produit Power BI Report Server")
 

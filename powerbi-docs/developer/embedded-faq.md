@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/21/2018
-ms.openlocfilehash: e83224932048aeab2dde6187eb217da7d89fed85
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.date: 09/17/2018
+ms.openlocfilehash: b50f3d5a3b01e32dcbaf80db5e25bd046c5e27a2
+ms.sourcegitcommit: ded8b85276e7eda166d6e67f72d1fe3d5e234745
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558565"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46506796"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -84,15 +84,19 @@ Voici un tableau des différences de fonctionnalités.
 |Avec engagement  |Sans engagement |Annuel  |Mensuelle/Annuelle |
 |Différenciation |Élasticité complète : augmenter/réduire la taille, interrompre/reprendre des ressources dans le portail Azure ou via l’API  |Peut être utilisée pour incorporer du contenu dans SharePoint Online et Microsoft Teams (à l’exception de l’application mobile) |Combiner l’incorporation dans les applications et utiliser le service Power BI dans la même capacité |
 
-### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Quelles sont les prérequis à la création d’une capacité PBIE dans Azure ? 
+### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Quelles sont les prérequis à la création d’une capacité PBIE dans Azure ?
 
 * Vous devez vous connecter à votre annuaire d’organisation (les comptes MSA ne sont pas pris en charge).
 * Vous devez avoir un locataire Power BI (c’est-à-dire qu’au moins un utilisateur dans votre annuaire doit être inscrit à Power BI). 
 * Vous devez disposer d’un abonnement Azure dans votre annuaire d’organisation.
 
-### <a name="how-can-i-monitor-capacity-consumption"></a>Comment puis-je surveiller la consommation de capacité ?
+### <a name="how-can-i-monitor-power-bi-embedded-capacity-consumption"></a>Comment superviser la consommation des capacités Power BI Embedded ?
 
-La surveillance via Azure est prévue à court terme. La ressource Azure « Power BI Embedded » inclura des indicateurs de performance clés de surveillance qui indiqueront l’intégrité et l’utilisation.
+* Utilisez [le portail d’administration de Power BI](../service-admin-portal.md#power-bi-embedded-settings).
+
+* Téléchargez l’[application de métriques](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) dans Power BI.
+
+* Utilisez la [Journalisation des diagnostics Azure](azure-pbie-diag-logs.md).
 
 ### <a name="will-my-capacity-scale-automatically-to-adjust-to-the-consumption-of-my-app"></a>Ma capacité évoluera-t-elle automatiquement pour s’ajuster à la consommation de mon application ?
 
@@ -276,11 +280,11 @@ En voici quelques exemples :
 * De nouvelles fonctionnalités, comme les Questions et réponses, l’actualisation, les favoris, l’incorporation de tableaux de bord et de vignettes et les menus personnalisés, ne sont prises en charge que dans la solution **Power BI Embedded**.
 * Modèle de facturation de la capacité.
 
-## <a name="onboarding-experience-tool-for-embedding"></a>Outil d’expérience d’intégration pour l’incorporation
+## <a name="embedding-setup-tool-for-embedding"></a>Outil de configuration de l’incorporation
 
-### <a name="what-is-the-onboarding-experience-tool"></a>Présentation de l’outil d’expérience d’intégration
+### <a name="what-is-the-embedding-setup-tool"></a>Qu’est-ce que l’outil de configuration de l’incorporation ?
 
-[L’outil d’expérience d’intégration](https://aka.ms/embedsetup) vous permet de démarrer rapidement et de télécharger un exemple d’application pour commencer l’incorporation avec Power BI.
+[L’outil de configuration de l’incorporation](https://aka.ms/embedsetup) vous permet de démarrer rapidement et de télécharger un exemple d’application pour commencer l’incorporation avec Power BI.
 
 ### <a name="which-solution-should-i-choose"></a>Quelle solution dois-je choisir ?
 

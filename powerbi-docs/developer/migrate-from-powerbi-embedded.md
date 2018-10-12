@@ -8,12 +8,12 @@ ms.Embedded: powerbi
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: 6de0efe3bad1662d1324488a7030894248056730
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 6b500acee862d8f16c186a9adc2fe0b194003e50
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388660"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973836"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications.
@@ -30,7 +30,7 @@ La collection d’espaces de travail Power BI actuelle reste encore disponible p
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
-Avant de commencer la migration vers le nouveau Power BI Embedded, vous pouvez effectuer rapidement une procédure pas à pas pour configurer votre nouvel environnement Power BI Embedded avec [l’outil d’expérience d’intégration](https://aka.ms/embedsetup).
+Avant de commencer la migration vers le nouveau Power BI Embedded, vous pouvez suivre une procédure pas à pas rapide pour configurer votre nouvel environnement Power BI Embedded avec [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup).
 
 Choisissez la solution qui vous convient :
 * **Incorporer pour vos clients** : si vous êtes intéressé par une solution où [l’application possède les données](https://aka.ms/embedsetup/AppOwnsData). [L’incorporation pour vos clients](embedding.md#embedding-for-your-customers) permet d’incorporer des tableaux de bord et des rapports pour les utilisateurs qui n’ont pas de compte Power BI. 

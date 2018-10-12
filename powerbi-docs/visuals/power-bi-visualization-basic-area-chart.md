@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ddf08edf7494cd8b918a93d41b384b4e89376d95
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: d6793c41cea8da251fd700800e1f11ca88bb0be4
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543347"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416955"
 ---
 # <a name="basic-area-chart"></a>Graphique en aires simple
 Le graphique en aires simple (également appelé graphique en aires empilées) est basé sur le graphique en courbes. La zone entre l’axe et la ligne est remplie avec des couleurs indiquant le volume. 
@@ -55,21 +55,29 @@ Pour effectuer la procédure, connectez-vous à Power BI et sélectionnez **Obt
    c.  Sélectionnez **Time\> > Month** (Période > Mois) pour l’ajouter à la ligne **Axe**.   
    ![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
    
-   d.  Pour afficher le graphique par mois, sélectionnez les points de suspension (dans le coin supérieur droit de l’élément visuel) et choisissez **Trier par mois**.
+   d.  Pour afficher le graphique par mois, sélectionnez les points de suspension (dans le coin supérieur droit du visuel) et choisissez **Trier par mois**. Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et sélectionnez **Tri croissant** ou **Tri décroissant**.
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
 Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../power-bi-report-add-filter.md).
 
-Pour mettre en surbrillance une zone particulière de votre graphique, sélectionnez cette zone ou sa bordure supérieure.  Contrairement à d’autres types de visualisation, s’il existe d’autres visualisations sur la même page, la mise en surbrillance d’un graphiques en aires de base n’effectue pas de filtrage croisé des autres visualisations de la page de rapport. Toutefois, les graphiques en aires sont une cible pour le filtrage croisé déclenché par d’autres visualisations sur la page du rapport. Pour plus d’informations, consultez [Interactions avec un élément visuel dans les rapports](../consumer/end-user-interactions.md).
+Pour mettre en surbrillance une zone particulière de votre graphique, sélectionnez cette zone ou sa bordure supérieure.  Contrairement à d’autres types de visualisation, s’il existe d’autres visualisations sur la même page, la mise en surbrillance d’un graphiques en aires de base n’effectue pas de filtrage croisé des autres visualisations de la page de rapport. Toutefois, les graphiques en aires sont une cible pour le filtrage croisé déclenché par d’autres visualisations sur la page du rapport. 
+
+1. Essayez en sélectionnant votre graphique en aires, puis en le copiant dans une autre page de rapport (Ctrl+C et Ctrl+V).
+2. Sélectionnez l’une des aires ombrées, puis l’autre. Vous pouvez constater que cela n’a aucun impact sur les autres visualisations de la page.
+
+    ![Ventes de cette année sélectionné dans le graphique en aires](media/power-bi-visualization-basic-area-chart/power-bi-select-area.png)
+
+3. Sélectionnez maintenant un élément dans l’une des autres visualisations de la page, comme une barre d’un histogramme ou un mois dans un graphique en courbes. Notez l’impact sur le graphique en aires : il est filtré.  
+
+    ![Barre FT Oglethorpe sélectionnée](media/power-bi-visualization-basic-area-chart/power-bi-filter.png) 
+
+Pour plus d’informations, consultez [Interactions avec un visuel dans les rapports](../service-reports-visual-interactions.md).
 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes   
 * [Rendre les rapports plus accessibles aux personnes handicapées](../desktop-accessibility.md)
-* Les graphiques en aires simples ne sont pas adaptés pour comparer des valeurs en raison de l’occlusion sur les aires empilées. Power BI utilise la transparence pour indiquer le chevauchement des aires. Toutefois, il fonctionne bien uniquement avec deux ou trois aires différentes. Quand vous devez comparer la tendance de plus de trois valeurs, utilisez plutôt des graphiques en courbes. Pour comparer le volume de plus de trois valeurs, utilisez plutôt un graphique de compartimentage (treemap).
+* Les graphiques en aires simples ne sont pas adaptés pour comparer des valeurs en raison de l’occlusion sur les aires empilées. Power BI utilise la transparence pour indiquer le chevauchement des aires. Toutefois, il fonctionne bien uniquement avec deux ou trois aires différentes. Quand vous devez comparer la tendance de plus de trois valeurs, utilisez plutôt des graphiques en courbes. Pour comparer le volume de plus de trois valeurs, utilisez plutôt un treemap.
 
-## <a name="next-steps"></a>Étapes suivantes
-[Rapports dans Power BI](../consumer/end-user-reports.md)  
-[Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)  
-[Power BI – Concepts de base](../consumer/end-user-basic-concepts.md)  
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+## <a name="next-step"></a>Étape suivante
+[Rapports dans Power BI](power-bi-visualization-card.md)  
 

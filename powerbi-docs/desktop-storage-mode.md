@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 28dcc4812a37b5ad3f514227f4e5fbcdfebeb579
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: ce4aab1a477485a30a4166d86d166a4ac289108f
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388798"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974227"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Mode de stockage dans Power BI Desktop (préversion)
 
@@ -171,12 +171,13 @@ Lorsqu’elles sont sélectionnées dans *Affichage des données**, les tables *
 
 Il existe quelques limitations pour cette version de **mode de stockage** et sa corrélation avec des **modèles composites**.
 
-Les sources multidimensionnelles suivantes ne peuvent pas être utilisées avec les **modèles composites** :
+Les sources (multidimensionnelles) Live Connect suivantes ne peuvent pas être utilisées avec les **modèles composites** :
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Jeux de données Power BI
+* Azure Analysis Services
 
 Lors de la connexion à ces sources multidimensionnelles à l’aide de DirectQuery, vous ne pouvez pas non plus vous connecter à une autre source DirectQuery ni combiner les données avec des données importées.
 

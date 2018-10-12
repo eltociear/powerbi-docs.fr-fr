@@ -1,5 +1,5 @@
 ---
-title: Segments dans Power BI
+title: 'Tutoriel : Segments dans Power BI'
 description: Segments dans Power BI
 author: mihart
 manager: kvivek
@@ -7,23 +7,23 @@ ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
-ms.topic: conceptual
-ms.date: 05/25/2018
-ms.author: mihart
+ms.topic: tutorial
+ms.date: 09/25/2018
+ms.author: v-thepet
 LocalizationGroup: Visualizations
-ms.openlocfilehash: babd30b89970108a06475ec3e7dab7e2ca708425
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: e42504c2c320e4f102cab5e2272e6123bf580cf5
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565081"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448980"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 Vous souhaitez que vos lecteurs de rapports soient en mesure de rechercher des mesures de ventes globales, mais également de mettre en surbrillance des performances pour les responsables de région individuels et les différentes périodes. Vous pouvez créer des rapports distincts ou des graphiques de comparaison ou vous pouvez utiliser des segments. Un segment constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport. 
 
 Ce tutoriel utilise [Exemple Analyse de la vente au détail](../sample-retail-analysis.md) gratuit pour vous expliquer pas à pas comment créer, mettre en forme et utiliser des segments de plages de dates et de listes. Amusez-vous à découvrir les différentes mises en forme et utilisations possibles des segments. 
 
-![segment](./media/power-bi-visualization-slicers/slicer2.gif)
+![segment](media/power-bi-visualization-slicers/slicer2.gif)
 
 ## <a name="when-to-use-a-slicer"></a>Quand utiliser un segment
 Les segments sont très utiles pour :
@@ -46,7 +46,7 @@ Pour créer un nouveau segment, vous pouvez sélectionner l’icône du segment 
 
 La première fois que vous modifiez un rapport, le bouton pour **Rétablir les valeurs par défaut** est activé. Il s’agit d’un rappel indiquant que vous avez changé les paramètres du rapport d’origine. Si vous quittez le rapport, ces modifications sont enregistrées. Quand vous revenez au rapport, vous ne devez pas resegmenter le rapport.  Cependant, si vous voulez rétablir les paramètres par défaut de l’auteur du rapport, sélectionnez le bouton **Rétablir les valeurs par défaut** dans la barre de menus du haut.
 
-![Bouton Rétablir les valeurs par défaut](./media/power-bi-visualization-slicers/power-bi-reset-to-default.png)
+![Bouton Rétablir les valeurs par défaut](media/power-bi-visualization-slicers/power-bi-reset-to-default.png)
 
 > [!NOTE]
 > Si votre bouton **Rétablir les valeurs par défaut** reste désactivé, cela signifie que l’auteur du rapport a désactivé la fonctionnalité pour le rapport ou que le rapport contient un visuel personnalisé. Pointez simplement sur le bouton pour lire l’explication de l’info-bulle. 
@@ -54,23 +54,23 @@ La première fois que vous modifiez un rapport, le bouton pour **Rétablir les v
 **Pour créer un nouveau segment pour filtrer les données par le Gestionnaire de districts**
 
 1. Ouvrez [Exemple Analyse de la vente au détail](../sample-retail-analysis.md) dans Power BI Desktop ou le service Power BI. (Dans le service Power BI, sélectionnez **Modifier le rapport** en haut à gauche.)
-2. Dans la page **Vue d’ensemble**, rien n’est sélectionné sur le canevas, sélectionnez l’icône **Segment** ![icône du segment](./media/power-bi-visualization-slicers/slicer-icon.png) dans le volet **Visualisations** pour créer un nouveau segment. 
+2. Dans la page **Vue d’ensemble**, rien n’est sélectionné sur le canevas, sélectionnez l’icône **Segment** ![icône du segment](media/power-bi-visualization-slicers/slicer-icon.png) dans le volet **Visualisations** pour créer un nouveau segment. 
 3. Une fois le nouveau segment sélectionné, sélectionnez **Gestionnaire de districts** sous **District** dans le volet **Champs** pour remplir le segment. Le nouveau segment est une liste des boîtes de sélection avant les noms. 
     
-    ![nouveau segment](./media/power-bi-visualization-slicers/2-slicer.png)
+    ![nouveau segment](media/power-bi-visualization-slicers/2-slicer.png)
     
 4. Redimensionnez et faites glisser le segment et autres éléments sur le canevas pour libérer de l’espace pour le segment. Notez que les éléments de segment sont tronqués si vous redimensionnez le segment trop petit. 
 5. Sélectionnez les noms sur le segment et notez les effets sur les autres visualisations de la page. Sélectionnez à nouveau les noms pour les désélectionner, maintenez la touche **Ctrl** enfoncée pour sélectionner plusieurs noms. La sélection de tous les noms a le même effet que la sélection d’aucun nom. 
 
 >[!TIP]
->Par défaut, les éléments de segment de liste sont triés par ordre alphanumérique croissant. Pour inverser le tri par ordre décroissant, sélectionnez les points de suspension (**...**) en haut à droite du segment et choisissez **Trier par Gestionnaire de districts** dans la liste déroulante. 
+>Par défaut, les éléments de segment de liste sont triés par ordre alphanumérique croissant. Pour inverser l’ordre de tri et utiliser l’ordre décroissant, sélectionnez les points de suspension (**...**) en haut à droite du segment et choisissez **Trier par Gestionnaire de districts** dans la liste déroulante. 
 
 **Pour créer un nouveau segment pour filtrer les données par plage de dates**
 
 1. Sans aucun élément sélectionné dans le canevas, faites défiler la liste déroulante **Heure** dans le volet Champs et faites glisser **Mois** (ou **Date** dans le service Power BI) vers la boîte **Valeurs**zone dans le volet Visualisations pour créer une nouvelle visualisation.
 2. Une fois la nouvelle visualisation sélectionnée, sélectionnez l’icône **Segment** pour convertir la nouvelle visualisation en segment. Ce segment est un segment de contrôle avec la plage de dates remplie.
     
-    ![nouveau segment de plages](./media/power-bi-visualization-slicers/2a-date-slicer.png)
+    ![nouveau segment de plages](media/power-bi-visualization-slicers/2a-date-slicer.png)
     
 4. Redimensionnez et faites glisser le segment et autres éléments sur le canevas pour libérer de l’espace pour le segment. Notez que le curseur est redimensionné selon la taille du segment, mais il disparaît et les dates sont tronquées si vous redimensionnez le segment trop petit. 
 4. Sélectionnez des plages de dates différentes avec le curseur ou sélectionnez un champ de date pour entrer une valeur ou afficher un calendrier pour une sélection plus précise. Notez les effets sur les autres visualisations de la page.
@@ -93,12 +93,12 @@ Vous pouvez utiliser **Interactions avec le visuel** pour empêcher certaines vi
     - Dans Power BI Desktop, sélectionnez le menu **Format** sous **Outils d'élément visuel**, puis sélectionnez **Modifier les interactions**.
     - Dans le service Power BI, cliquez sur la liste déroulante **Interactions avec l’élément visuel** dans la barre de menus et activez **Modifier les interactions**. 
    
-   Les contrôles de filtre ![contrôles de filtre](./media/power-bi-visualization-slicers/filter-controls.png) s’affichent au-dessus de tous les autres visuels de la page. Au départ, toutes les icônes **Filtre** sont sélectionnées.
+   Les contrôles de filtre ![contrôles de filtre](media/power-bi-visualization-slicers/filter-controls.png) s’affichent au-dessus de tous les autres visuels de la page. Au départ, toutes les icônes **Filtre** sont sélectionnées.
    
 2. Sélectionnez l’icône **Aucun** au-dessus du graphique **Variance des ventes totales par FiscalMonth et Gestionnaire de districts** pour arrêter le filtrage par le segment. 
 3. Sélectionnez le segment **Mois** et sélectionnez à nouveau l’icône **Aucun** au-dessus du graphique **Variance des ventes totales par FiscalMonth et Gestionnaire de districts** pour arrêter le filtrage par ce segment. Désormais, lorsque vous sélectionnez les noms et les plages de dates dans les segments, le graphique Variance des ventes totales par FiscalMonth et Gestionnaire de districts est inchangé. 
 
-Pour plus d’informations sur la modification des interactions, consultez [Interactions entre les visuels dans un rapport Power BI](../consumer/end-user-interactions.md).
+Pour plus d’informations sur la modification des interactions, consultez [Interactions entre les visuels dans un rapport Power BI](../service-reports-visual-interactions.md).
 
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Synchroniser et utiliser des segments dans d’autres pages
 À compter de la mise à jour de février 2018 de Power BI, vous pouvez synchroniser un segment et l’utiliser dans toutes les pages d’un rapport ou dans certaines pages uniquement. 
@@ -108,7 +108,7 @@ Dans le rapport actuel, la page **Ventes mensuelles du district** comporte égal
 1. Dans le menu **Affichage**, sélectionnez **Synchroniser les segments** dans Power BI Desktop (ou activez le **volet Synchroniser les segments** dans le service Power BI). Le volet **Synchroniser les segments** s’affiche. 
 2. Sur la page **Vue d’ensemble**, sélectionnez le segment **Gestionnaire de districts**. Notez que la page **Ventes mensuelles du district** est déjà sélectionnée dans la colonne **Visible**, car il existe aussi un segment Gestionnaire de districts sur cette page, mais il n’est pas sélectionné dans la colonne **Synchrone**. 
     
-    ![synchroniser les segments](./media/power-bi-visualization-slicers/9-sync-slicers.png)
+    ![synchroniser les segments](media/power-bi-visualization-slicers/9-sync-slicers.png)
     
 3. Dans la colonne **Synchrone**, sélectionnez la page **Nouveaux magasins** et la page **Ventes mensuelles du district** pour synchroniser le segment **Vue d’ensemble** pour ces pages. 
     
@@ -126,7 +126,7 @@ Différentes options de mise en forme sont disponibles selon le type de segment.
 
 1. Une fois le segment **Gestionnaire de districts** sélectionné sur une page, dans le volet **Visualisations**, sélectionnez l’icône **Format** ![](media/power-bi-visualization-slicers/power-bi-paintroller.png) pour afficher les contrôles de mise en forme. 
     
-    ![mise en forme](./media/power-bi-visualization-slicers/3-format.png)
+    ![mise en forme](media/power-bi-visualization-slicers/3-format.png)
     
 2. Sélectionnez les flèches de liste déroulante à côté de chaque catégorie pour afficher et modifier les options. 
 
@@ -134,25 +134,25 @@ Différentes options de mise en forme sont disponibles selon le type de segment.
 1. Sélectionnez la couleur rouge sous **Couleur du contour** et changez la valeur **Épaisseur du contour** à « 2 ». Ces options définissent la couleur et l’épaisseur des contours ou soulignements de l’en-tête et des éléments, quand ils sont activés. 
 2. Sous **Orientation**, **Vertical** est la valeur par défaut. Sélectionnez **Horizontal** pour produire un segment avec des mosaïques ou des boutons organisés horizontalement et utilisez les flèches pour accéder aux éléments qui ne tiennent pas dans le segment.
     
-    ![horizontale](./media/power-bi-visualization-slicers/4-horizontal.png)
+    ![horizontale](media/power-bi-visualization-slicers/4-horizontal.png)
     
 3. Activez la disposition **Dynamique** pour modifier la taille et la disposition des éléments de segment en fonction de la taille de l’écran et des segments. Pour les segments de la liste, la disposition dynamique est disponible uniquement dans une orientation horizontale et empêche que des éléments soient tronqués sur de petits écrans. Pour les segments de curseurs de plages, la mise en forme dynamique modifie le style du curseur et fournit un redimensionnement plus flexible. Les deux types de segments deviennent des icônes de filtre de très petite taille. 
     
-    ![dynamique](./media/power-bi-visualization-slicers/5-responsive.png)
+    ![dynamique](media/power-bi-visualization-slicers/5-responsive.png)
     
     >[!NOTE]
     >Les changements de disposition dynamique peuvent substituer la mise en forme spécifique du titre et des éléments que vous avez définie. 
     
 4. Définissez la position et la taille du segment avec une précision numérique sous **Position X**, **Position Y**, **Largeur** et **Hauteur** ou déplacez et redimensionnez le segment directement sur le canevas. Faites des essais avec des tailles d’éléments et des dispositions différentes et notez les modifications de la mise en forme dynamique en conséquence.  
 
-    ![boutons horizontaux](./media/power-bi-visualization-slicers/6-buttons.png)
+    ![boutons horizontaux](media/power-bi-visualization-slicers/6-buttons.png)
 
 Pour plus d’informations sur l’orientation horizontale et la disposition dynamique, consultez [Créer un segment réactif que vous pouvez redimensionner dans Power BI](../power-bi-slicer-filter-responsive.md).
 
 ### <a name="selection-controls-options-list-slicers-only"></a>Options des contrôles de sélection (uniquement pour les segments de liste)
 1. L’option **Afficher Sélectionner tout** est **Désactivée** par défaut. **Activez-la** pour ajouter un élément **Sélectionner tout** au segment qui sélectionne ou désélectionne tous les éléments, le cas échéant. Quand tous les éléments sont sélectionnés, il suffit de cliquer ou d’appuyer sur un élément pour le désélectionner. Il s’agit d’un filtre de type « n’est pas ». 
     
-    ![sélectionner tout](./media/power-bi-visualization-slicers/7-select-all.png)
+    ![sélectionner tout](media/power-bi-visualization-slicers/7-select-all.png)
     
 2. L’option **Sélection simple** est **Activée** par défaut. Pour sélectionner un seul élément, cliquez ou appuyez dessus et maintenez la touche **Ctrl** en cliquant ou en tapant pour sélectionner plusieurs éléments. **Désactivez** l’option **Sélection simple** pour pouvoir sélectionner plusieurs éléments sans avoir à maintenir la touche **Ctrl** enfoncée. Le fait de cliquer ou d’appuyer à nouveau sur un élément sélectionné le désélectionne. 
 
@@ -165,7 +165,7 @@ Pour plus d’informations sur l’orientation horizontale et la disposition dyn
 1. Mettez en forme le texte et l’arrière-plan des éléments en définissant les options **Couleur de police** sur noir, **Arrière-plan** sur rouge clair, **Taille du texte** sur 10 points et **Famille de polices** sur Arial. 
 2. Sous **Contour**, choisissez **Cadre** pour dessiner une bordure autour de chaque élément avec la taille et la couleur que vous avez définies dans les options **Général**. 
     
-    ![mise en forme](./media/power-bi-visualization-slicers/8-formatted.png)
+    ![mise en forme](media/power-bi-visualization-slicers/8-formatted.png)
     
     >[!TIP]
     >- Avec **Orientation > Horizontal**, les éléments désélectionnés affichent le texte et l’arrière-plan dans les couleurs choisies, alors que les éléments sélectionnés utilisent les couleurs par défaut du système, généralement, les arrière-plans sont en noir et le texte est en blanc.
@@ -183,15 +183,7 @@ Les autres options de mise en forme sont désactivées par défaut. Quand elles 
 - **Bordure** : ajoute une bordure d’un pixel autour du segment et définit sa couleur. (Cette bordure de segment est distincte et indépendante des paramètres de contour définis sous Général.) 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[S’inscrire à un essai gratuit](https://powerbi.microsoft.com/get-started/)
-
-Avez-vous des idées pour améliorer Power BI ? [Soumettez une idée](https://ideas.powerbi.com/forums/265200-power-bi-ideas).
-
-D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
-
-[Ajouter une visualisation à un rapport](power-bi-report-add-visualizations-i.md)
-
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI – Concepts de base](../consumer/end-user-basic-concepts.md)
+[Tableaux dans Power BI](power-bi-visualization-tables.md)
 

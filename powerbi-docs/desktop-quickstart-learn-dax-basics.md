@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: ca2f9e3393df2fd205474983ab9868aa9401ed9d
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 474fe7eee6dbcb296a7eaec6057ecfa56cd3f144
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329198"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417116"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Principes fondamentaux de DAX dans Power BI Desktop
 Cet article s’adresse aux utilisateurs qui débutent avec Power BI Desktop. Il est destiné à vous fournir une introduction rapide et simple de la façon dont vous pouvez utiliser le langage DAX (Data Analysis Expressions) pour résoudre un certain nombre de problèmes d’analyse de données et de calcul de base. Nous aborderons des informations conceptuelles, une série de tâches que vous pourrez effectuer et quelques questionnaires pour tester ce que vous aurez appris. À la fin de cet article, vous aurez acquis une bonne compréhension des concepts fondamentaux du langage DAX.
@@ -87,25 +87,23 @@ Pour effectuer cette tâche, vous devez ouvrir le fichier Contoso Sales Sample P
     
 2. Dans la barre de formule, remplacez **Mesure** en tapant un nouveau nom de mesure, **Previous Quarter Sales**.
     
-3. Après le signe égal, tapez **SUM** suivi d’une parenthèse ouvrante.
-    
-   Au lieu de taper immédiatement un nom de colonne à totaliser, vous allez entrer une autre fonction, pour *filtrer* les données à cumuler.
-    
-4. Entre les parenthèses, tapez **CALCULATE**, suivi d’une parenthèse ouvrante.
-    
+3. Après le signe égal, tapez les premières lettres **CAL**, puis double-cliquez sur la fonction que vous souhaitez utiliser. Dans cette formule, vous souhaitez utiliser la fonction **CALCULATE**.
+
    Vous utilisez la fonction CALCULATE pour filtrer les montants que vous souhaitez additionner par un argument que vous passez à la fonction CALCULATE. Ceci porte le nom d’imbrication de fonctions. La fonction CALCULATE possède au moins deux arguments. Le premier est l’expression à évaluer et le second est un filtre.
    
-5. Entre les parenthèses  **()** de la fonction **CALCULATE**, tapez **Sales[SalesAmount]**. Il s’agit du premier argument de l’expression de votre fonction CALCULATE.
+4. Après la parenthèse ouvrante **(** de la fonction **CALCULATE**, tapez **SUM** suivi d’un autre parenthèse ouvrante **(**. Nous devons à présent passer un argument à la fonction SUM.
+
+5. Commencez à taper **Sal**, puis sélectionnez **Sales [SalesAmount]**, suivi d’une parenthèse fermante **)**. Il s’agit du premier argument de l’expression de votre fonction CALCULATE.
     
-6. Tapez une virgule (**,**) pour spécifier le premier filtre, puis tapez **PREVIOUSQUARTER**, suivi d’une parenthèse ouvrante.
+6. Tapez une virgule (**,**) suivie d’un espace pour spécifier le premier filtre, puis tapez **PREVIOUSQUARTER**. Il s’agit de notre filtre.
     
    La fonction temporelle PREVIOUSQUARTER sert à filtrer les résultats de SUM sur la base du trimestre précédent.
     
-7. Entre les parenthèses **()** de la fonction PREVIOUSQUARTER, tapez **Calendar[DateKey]**.
+7. Après la parenthèse ouvrante **(** de la fonction PREVIOUSQUARTER, tapez **Calendar[DateKey]**.
     
-   La fonction PREVIOUSQUARTER possède un seul argument, une colonne contenant une plage de dates contiguë.
+   La fonction PREVIOUSQUARTER possède un seul argument, une colonne contenant une plage de dates contiguë. Dans notre cas, il s’agit de la colonne DateKey de la table Calendar.
     
-8. Vérifiez que les deux arguments transmis aux fonctions PREVIOUSQUARTER et CALCULATE sont fermés par deux parenthèses fermantes **))**.
+8. Vérifiez que les deux arguments passés aux fonctions PREVIOUSQUARTER et CALCULATE sont fermés en tapant deux parenthèses fermantes **))**.
     
    La formule doit maintenant ressembler à ceci :
     

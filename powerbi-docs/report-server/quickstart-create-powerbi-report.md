@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: 64757d6cbd82b666bf18f1ee87d8e51954872990
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: bb6868784314b369fcc02e3a36caf7c82c3c5966
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726728"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46564920"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Créer un rapport Power BI pour Power BI Report Server
 Vous pouvez stocker et gérer des rapports Power BI localement sur le portail web Power BI Report Server tout comme vous pouvez stocker des rapports Power BI dans le cloud, dans le service Power BI (https://powerbi.com)). Créez et modifiez des rapports dans Power BI Desktop, puis publiez-les sur le portail web. Les lecteurs au sein de votre organisation peuvent alors les consulter dans un navigateur ou dans une application mobile Power BI sur un appareil mobile.
@@ -31,7 +31,7 @@ Si vous avez déjà créé des rapports Power BI dans Power BI Desktop, vous êt
 
     ![Télécharger Power BI Desktop à partir du portail web](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Vous pouvez aussi accéder directement à [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimisé pour Power BI Report Server - mars 2018) dans le Centre de téléchargement Microsoft.
+    Vous pouvez aussi accéder directement à [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (optimisé pour Power BI Report Server - août 2018) dans le Centre de téléchargement Microsoft.
 
 2. Dans la page du Centre de téléchargement, sélectionnez **Télécharger**.
 
@@ -41,13 +41,13 @@ Si vous avez déjà créé des rapports Power BI dans Power BI Desktop, vous êt
 
     - **PBIDesktopRS_x64.msi** (version 64 bits).
 
-4. Après avoir téléchargé le programme d’installation, exécutez l’Assistant Installation de Power BI Desktop (mars 2018).
+4. Après avoir téléchargé le programme d’installation, exécutez l’Assistant Installation de Power BI Desktop (août 2018).
 
 2. À l’issue de l’installation, cochez **Démarrer Power BI Desktop maintenant**.
    
-    Power BI Desktop démarre et vous pouvez l’utiliser. Vous pouvez voir que vous disposez de la version adéquate, car « Power BI Desktop (mars 2018) » apparaît dans la barre de titre.
+    Power BI Desktop démarre et vous pouvez l’utiliser. Vous pouvez voir que vous disposez de la bonne version, car « Power BI Desktop (août 2018) » apparaît dans la barre de titre.
 
-    ![Version Power BI Desktop de mars 2018](media/quickstart-create-powerbi-report/report-server-desktop-march-2018.png)
+    ![Power BI Desktop, version d’août 2018](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-august-2018.png)
 
 3. Si vous n’êtes pas familiarisé avec Power BI Desktop, songez à regarder les vidéos proposées sur l’écran d’accueil.
    
@@ -70,7 +70,7 @@ Vous pouvez vous connecter à un vaste éventail de sources de données. Pour en
     ![Sélection du serveur de rapports](media/quickstart-create-powerbi-report/report-server-select-server.png)
 
 ## <a name="step-3-design-your-report"></a>Étape 3 : créer votre rapport
-C’est la partie amusante la plus agréable : créer des éléments visuels illustrant vos données.
+C’est la partie amusante la plus agréable : créer des visuels illustrant vos données.
 
 Par exemple, vous pouvez créer un graphique en entonnoir de valeurs de clients et de groupe par revenu annuel.
 
@@ -91,36 +91,6 @@ Une fois le rapport prêt, enregistrez-le sur le serveur de rapports Power BI Re
 2. Vous pouvez à présent l’afficher dans le portail web.
    
     ![Afficher le rapport dans le portail web](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
-
-## <a name="considerations-and-limitations"></a>Considérations et limitations
-Les rapports dans Power BI Report Server et dans le service Power BI (http://powerbi.com)) fonctionnent pratiquement de la même manière, mais certaines fonctionnalités diffèrent.
-
-### <a name="in-a-browser"></a>Dans un navigateur
-Les rapports Power BI Report Server prennent en charge toutes les visualisations, à savoir :
-
-* Éléments visuels personnalisés
-
-Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalités suivantes :
-
-* Visuels R
-* ArcGIS Maps
-* Fil d’Ariane
-* Fonctionnalités en préversion Power BI Desktop
-
-### <a name="in-the-power-bi-mobile-apps"></a>Dans les applications mobiles Power BI
-Les rapports Power BI Report Server prennent en charge toutes les fonctionnalités de base des [applications mobiles Power BI](../consumer/mobile/mobile-apps-for-mobile-devices.md), à savoir :
-
-* [Disposition des rapports pour téléphone](../desktop-create-phone-report.md) : vous pouvez optimiser un rapport pour les applications mobiles Power BI. Sur votre téléphone mobile, les rapports optimisés ont une icône ![icône de disposition de rapport sur téléphone](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-icon.png) et une disposition spéciales.
-  
-    ![Rapports optimisés pour les téléphones](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-report.png)
-
-Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalités suivantes dans les applications mobiles Power BI :
-
-* Visuels R
-* ArcGIS Maps
-* Éléments visuels personnalisés
-* Fil d’Ariane
-* Filtrage basé sur la géolocalisation ou codes barres
 
 ## <a name="next-steps"></a>Étapes suivantes
 ### <a name="power-bi-desktop"></a>Power BI Desktop
