@@ -3,29 +3,29 @@ title: Incorporer du contenu Power BI dans une application pour votre organisati
 description: Découvrez comment intégrer ou incorporer un rapport, un tableau de bord ou une vignette dans une application web de votre organisation avec les API Power BI.
 author: markingmyname
 ms.author: maghan
-ms.date: 07/13/2018
+manager: kfile
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-manager: kfile
-ms.openlocfilehash: 7dd1c323584ae1d9013b839717bfeb59a97c078c
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.date: 07/13/2018
+ms.openlocfilehash: 9df612d80d3f322a8391eeb43430942a03850470
+ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47238074"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48827453"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application de votre organisation
 
-Ce tutoriel montre comment intégrer un rapport dans une application. Utilisez le SDK .NET Power BI et l’API JavaScript Power BI pour incorporer Power BI dans une application de votre organisation. Dans Power BI, vous pouvez incorporer des rapports, des tableaux de bord ou des vignettes dans une application à l’aide de l’exemple **user owns data**. L’exemple **User owns Data** permet à votre application d’étendre le service Power BI.
+Ce tutoriel montre comment intégrer un rapport dans une application. Utilisez le SDK .NET Power BI et l’API JavaScript Power BI pour incorporer Power BI dans une application de votre organisation. Dans Power BI, vous pouvez incorporer des rapports, des tableaux de bord ou des vignettes dans une application à l’aide de l’exemple **user owns data**. **Utilisateur possède les données** permet à votre application d’étendre le service Power BI.
 
 ![Rapport d’incorporation Power BI](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 Ce tutoriel vous montre comment effectuer les tâches suivantes :
 >[!div class="checklist"]
->* Inscrire une application dans Azure.
->* Incorporer un rapport Power BI dans une application.
+>* inscrire une application dans Azure ;
+>* incorporer un rapport Power BI dans une application.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -134,7 +134,7 @@ Si vous incorporez des rapports, des tableaux de bord ou des vignettes pour vos 
 
 Vous pouvez créer vos rapports et vos jeux de données à l’aide de Power BI Desktop. Vous pouvez ensuite publier ces rapports sur l’espace de travail d’une application. Pour publier les rapports dans l’espace de travail d’une application, l’utilisateur final doit disposer d’une licence Power BI Pro.
 
-1. Téléchargez l’exemple [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) sur GitHub.
+1. Téléchargez l’exemple [Blog Demo](https://github.com/Microsoft/powerbi-desktop-samples) (Démonstration blog) sur GitHub.
 
     ![Télécharger la démonstration](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026-1.png)
 

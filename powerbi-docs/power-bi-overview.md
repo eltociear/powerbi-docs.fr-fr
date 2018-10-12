@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 73a3188256b754517beb9f83a382c4005de6e7e7
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 61264a2a127ea45f542543d40fd62a9de8c3620d
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416978"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48798905"
 ---
 # <a name="what-is-power-bi"></a>Qu’est-ce que Power BI ?
 **Power BI** est un ensemble de services logiciels, d’applications et de connecteurs qui œuvrent ensemble pour transformer des sources de données disparates en informations visuelles immersives et interactives. Quelle que soit la nature de vos données (une simple feuille de calcul Excel ou plusieurs entrepôts de données hybrides dans le cloud et en local), **Power BI** vous permet de vous connecter facilement à vos sources de données, de visualiser (ou découvrir) les informations importantes et de les partager avec les personnes de votre choix.
@@ -35,7 +35,7 @@ La façon dont vous utilisez Power BI peut varier selon la fonction que vous oc
 
 Par exemple, vous pouvez très bien utiliser le **service Power BI** tandis que votre collègue spécialiste des chiffres et de la création de rapports d’entreprise préférera utiliser **Power BI Desktop** (et publier les rapports Desktop dans le service Power BI, que vous pouvez ensuite consulter). De son côté, votre collègue du service commercial pourra, quant à lui, utiliser principalement son application mobile Power BI pour suivre l’évolution de ses ventes et examiner les détails concernant les nouveaux prospects.
 
-Si vous êtes un développeur, vous pouvez utiliser les API de Power BI pour transmettre des données à des jeux de données ou pour incorporer des tableaux de bord et des rapports dans vos propres applications personnalisées. Vous souhaitez créer un visuel ? Faites-le vous-même et partagez-le avec d’autres utilisateurs.  
+Si vous êtes un développeur, vous pouvez utiliser les API de Power BI pour transmettre des données à des jeux de données ou pour incorporer des tableaux de bord et des rapports dans vos propres applications personnalisées. Vous souhaitez créer un élément visuel ? Faites-le vous-même et partagez-le avec d’autres utilisateurs.  
 
 Vous pouvez aussi être amené à utiliser chaque élément de **Power BI** à des moments différents, selon ce que vous voulez faire ou selon votre rôle dans un projet ou une mission donnés.
 
@@ -43,7 +43,7 @@ Vous pouvez par exemple visualiser l’évolution des stocks et de la production
 
 Pour explorer les documents relatifs à votre rôle :
 - Power BI pour les [***développeurs***](desktop-what-is-desktop.md)
-- Power BI pour les [***consommateurs***](consumer/end-user-consuming.md)
+- Power BI pour les [***consommateurs***](consumer/end-user-consumer.md)
 - Power BI pour les [***développeurs***](developer/what-can-you-do.md)
 - Power BI pour les [***administrateurs***](service-admin-administering-power-bi-in-your-organization.md)
 

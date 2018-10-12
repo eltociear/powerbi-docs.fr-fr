@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/23/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 1472646d1a4dc338740583ab759c2fc71aa1e56d
-ms.sourcegitcommit: fbc1fabcb5e3b285228c9aa192b9b421b2782922
+ms.openlocfilehash: 10f637e822817d6bd0fa1692a6d1b029be312d4f
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47059090"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909173"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
@@ -48,7 +48,7 @@ Vous pouvez également consulter les chaînes YouTube pour plus d’informations
 * Partage de rapports avec des filtres et des segments.
 * Interface utilisateur nouvelle et améliorée pour les [connexions de passerelle](https://powerbi.microsoft.com/blog/easier-set-up-of-datasets-in-power-bi/) et la configuration des jeux de données.
 
-### <a name="may-2018"></a>Mai 2018
+### <a name="may-2018"></a>May 2018
 * [Tableaux de bord à thèmes](service-dashboard-themes.md) dans le service Power BI.
 * [Actualisation incrémentielle](service-premium-incremental-refresh.md) avec Premium.
 * Flux de travail de demande d’accès pour les [applications Power BI](service-create-distribute-apps.md).
@@ -223,7 +223,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 
 **26 avril 2016**
 
-* Narrations pour Power BI : lorsque vous interagissez avec vos données et vos visualisations, ce visuel personnalisé propose des informations de façon dynamique sous forme narrative, comme pourrait les écrire un analyste. Ce visuel est proposé par [Narrative Science Quill](https://www.narrativescience.com/quill).
+* Narrations pour Power BI : lorsque vous interagissez avec vos données et vos visualisations, cet élément visuel personnalisé propose des informations de façon dynamique sous forme narrative, comme pourrait les écrire un analyste. Cet élément visuel est proposé par [Narrative Science Quill](https://www.narrativescience.com/quill).
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/get-natural-language-narratives-in-power-bi-reports/).
 
@@ -264,9 +264,9 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 * Sécurité au niveau des lignes : il s’agit d’une fonctionnalité préliminaire qui permet de définir des autorisations sur les jeux de données Power BI.
 * Désactivation de l’exportation des données : les utilisateurs de votre client ne pourront plus exporter des vignettes et des données visuelles vers un fichier .csv.
 
-***Questions et réponses***
+***Q&R***
 
-* Saisie semi-automatique pour « est » : la fonctionnalité Questions et réponses suggère désormais des valeurs si vous tapez le nom de la colonne suivi de « est ».
+* Saisie semi-automatique pour « est » : la fonctionnalité Q&R suggère désormais des valeurs si vous tapez le nom de la colonne suivi de « est ».
 
 ***Mobile***
 
@@ -285,7 +285,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 
 **11 mars 2016**
 
-Ce mois-ci, nous avons apporté des modifications aux tableaux de bord, à Quick Insights et à la fonctionnalité Questions et réponses.
+Ce mois-ci, nous avons apporté des modifications aux tableaux de bord, à Quick Insights et à la fonctionnalité Q&R.
 
 ***Tableaux de bord***
 
@@ -297,10 +297,10 @@ Ce mois-ci, nous avons apporté des modifications aux tableaux de bord, à Quick
 
 * Les analyses de tendances et corrélation proposent désormais des courbes de tendance afin d’identifier plus facilement les comportements dans les données.
 
-***Questions et réponses***
+***Q&R***
 
-* Vous pouvez désormais spécifier des graphiques en aires ou des schémas de jauge dans Questions et réponses.
-* Amélioration de la saisie semi-automatique dans Questions et réponses : il vous suffit de saisir quelques caractères et Questions et réponses commence la saisie semi-automatique et la suggestion de visuels.
+* Vous pouvez désormais spécifier des graphiques en aires ou des schémas de jauge dans Q&R.
+* Amélioration de la saisie semi-automatique dans Q&R : il vous suffit de saisir quelques caractères et Q&R commence la saisie semi-automatique et la suggestion d’éléments visuels.
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/power-bi-service-march-update/).
 
@@ -345,7 +345,7 @@ Mises à jour des rapports et visualisations :
 
 Améliorations des performances pour le rendu des rapports, la mise en évidence croisée, etc.
 
-* Avec cette nouvelle mise à jour, et quelle que soit la version du navigateur utilisée, les utilisateurs peuvent remarquer une nette amélioration des performances quand ils chargent des rapports, changent de page, mettent en évidence croisée des données de visuels, etc.
+* Avec cette nouvelle mise à jour, et quelle que soit la version du navigateur utilisée, les utilisateurs peuvent remarquer une nette amélioration des performances quand ils chargent des rapports, changent de page, mettent en évidence croisée des données d’éléments visuels, etc.
 
 **6 janvier 2016**
 
@@ -367,7 +367,7 @@ L’équipe Power BI a beaucoup travaillé pendant les vacances de fin d’ann�
 ***Rapports***
 
 * Imprimer la page actuelle d’un rapport
-* Exporter les données des visuels d’un rapport
+* Exporter les données des éléments visuels d’un rapport
 
 ***Connectivité***
 
@@ -396,18 +396,18 @@ Un grand nombre de mises à jour de cette semaine, la plupart s’appliquant à 
 * Mises à jour pour le volet et le ruban de mise en forme de la création de rapports :
   
   1. Mettre en forme des étiquettes de données par série de catégories
-  2. Modifier le nombre de décimales affichées dans les visuels
-  3. Modifier la taille du texte dans les visuels
-  4. Possibilité de disposer les visuels avec précision : alignement, distribution, taille, position (nécessite Power BI Desktop pour la création)
-  5. Définir des styles pour plusieurs visuels via Reproduire la mise en forme (nécessite Power BI Desktop pour la création)
+  2. Modifier le nombre de décimales affichées dans les éléments visuels
+  3. Modifier la taille du texte dans les éléments visuels
+  4. Possibilité de disposer les éléments visuels avec précision : alignement, distribution, taille, position (nécessite Power BI Desktop pour la création)
+  5. Définir des styles pour plusieurs éléments visuels via Reproduire la mise en forme (nécessite Power BI Desktop pour la création)
 * Améliorations apportées aux visualisations :
   
-  1. repère des visuels pour l’état de tri dans le visuel Table
-  2. nouveau visuel : graphique à aires empilées
+  1. repère des éléments visuels pour l’état de tri dans l’élément visuel Table
+  2. nouvel élément visuel : graphique à aires empilées
   3. info-bulles dynamiques pour les graphiques Aires et Courbes au passage du curseur
-  4. possibilité de créer une ligne/région de référence pour un visuel Cartésien
+  4. possibilité de créer une ligne/région de référence pour un élément visuel Cartésien
   5. étiquettes de données améliorées pour les graphiques Secteur et Nuage de points
-* intégration de visuels R dans la version Desktop (fonctionnalité en version Preview)
+* intégration d’éléments visuels R dans la version Desktop (fonctionnalité en version Preview)
 * relations de table à table suggérées par la version Desktop lors de la tentative de création de deux tables qui ne sont pas connexes
 * disposition du ruban Accueil optimisée pour la version Desktop
 * mises à jour de la modélisation des données dans la vue Relations pour la version Desktop :
@@ -433,7 +433,7 @@ Pour plus d’informations, y compris une vidéo présentant un grand nombre de 
 * Épingler des pages de rapport au tableau de bord
 * Actualiser les vignettes du tableau de bord
 * Utiliser des images dans des segments
-* Modifier les interactions entre les visuels d’un rapport
+* Modifier les interactions entre les éléments visuels d’un rapport
   
   Pour plus d’informations, consultez le [Blog Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx).
 
@@ -502,7 +502,7 @@ Pour plus d’informations, consultez le [Blog Power BI](http://blogs.msdn.com/
 **20 octobre 2015**
 
 * Membres en lecture seule dans des groupes Power BI
-* Questions proposées dans Questions et réponses
+* Questions importantes de Q&R
 * Mode plein écran pour les visualisations de rapports
 
 Pour plus d’informations, consultez le [Blog Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/power-bi-weekly-service-update-1020.aspx).
@@ -520,7 +520,7 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 **6 octobre 2015**
 
-* Avec Questions et réponses Power BI, vous pouvez explorer vos données à l’aide de questions simples et intuitives, et recevoir des réponses sous la forme de graphiques et de graphes interactifs. Dans cette version, nous avons ajouté une fonctionnalité qui vous aidera à vous familiariser avec Questions et réponses Power BI, même si vous ignorez tout des données. Pour commencer, [accédez à n’importe quel tableau de bord, puis cliquez sur le lien « Comment demander » près de la zone de question Questions et réponses](power-bi-tutorial-q-and-a.md). Power BI affiche un certain nombre de suggestions en fonction de vos données.
+* Les Q&R relatives à Power BI vous permettent d’explorer vos données à l’aide de questions simples et intuitives, et de recevoir des réponses sous la forme de diagrammes et graphiques interactifs. Dans cette version, nous avons ajouté une fonctionnalité qui vous aidera à vous familiariser avec Q&R Power BI, même si vous ignorez tout des données. Pour commencer, [accédez à n’importe quel tableau de bord, puis cliquez sur le lien « Comment demander » près de la zone de question Q&R](power-bi-tutorial-q-and-a.md). Power BI affiche un certain nombre de suggestions en fonction de vos données.
 * Il y a deux semaines, nous avons introduit la prise en charge de l’insertion de formes dans le canevas de rapport dans Power BI Desktop. Cette semaine, nous avons le plaisir d’annoncer que vous pouvez désormais ajouter des formes à votre canevas de rapport lors de la création ou de la modification de rapports dans l’application web Power BI.
 * Vous pouvez aussi désactiver les e-mails de notification quand vous partagez un tableau de bord. Désactivez simplement la case à cocher « Envoyer un e-mail de notification aux destinataires » dans la boîte de dialogue de partage Power BI. Une URL s’affiche. Copiez-la et partagez-la avec vos collègues afin de leur donner accès au tableau de bord.
 * Microsoft Dynamics NAV est une solution de gestion d’entreprise pour les organisations de tailles petite et moyenne. Il s’agit pour les clients d’une solution complète pour leur entreprise, qui leur permet de mieux contrôler leurs finances et processus d’entreprise. Le pack de contenu Power BI fournit des rapports prêts à l’emploi pour les utilisateurs de Dynamics NAV en relation, par exemple, avec les ventes et bénéfices, le pipeline d’opportunités, la rentabilité et bien plus encore. Ces mesures sont organisées dans un tableau de bord entièrement personnalisable qui vous permet de vous connecter aisément et de commencer immédiatement à explorer vos données.
@@ -548,9 +548,9 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 **15 septembre 2015.**
 
-* Vous pouvez maintenant choisir à quel tableau de bord vous voulez épingler votre visuel. Choisissez le tableau de bord cible parmi vos tableaux de bord existants, ou créez un autre tableau de bord et épinglez-y le visuel en une seule opération.
-* De plus, vous pouvez définir les couleurs de votre visuel dans le tableau de bord. Si votre rapport n’utilise pas le même thème que celui du tableau de bord, vous pouvez déterminer si le visuel doit conserver le thème actuel, ou utiliser le thème du tableau de bord par défaut pour garantir la cohérence entre les  visuels des diverses sources.
-* Vous pouvez désormais épingler facilement la vignette d’un tableau de bord à l’autre, de la même façon que vous épinglez un visuel de rapport à un tableau de bord.
+* Vous pouvez maintenant choisir à quel tableau de bord vous voulez épingler votre élément visuel. Choisissez le tableau de bord cible parmi vos tableaux de bord existants, ou créez un autre tableau de bord et épinglez-y l’élément visuel en une seule opération.
+* De plus, vous pouvez définir les couleurs de votre élément visuel dans le tableau de bord. Si votre rapport n’utilise pas le même thème que celui du tableau de bord, vous pouvez déterminer si l’élément visuel doit conserver le thème actuel, ou utiliser le thème du tableau de bord par défaut pour garantir la cohérence entre les éléments visuels des diverses sources.
+* Vous pouvez désormais épingler facilement la vignette d’un tableau de bord à l’autre, de la même façon que vous épinglez un élément visuel de rapport à un tableau de bord.
 * Si votre période d’évaluation de 60 jours de Power BI Pro arrive à expiration, vous pouvez [nous contacter](http://go.microsoft.com/fwlink/?LinkID=624573&clcid=0x409now) pour demander une extension de votre période d’évaluation. Si votre demande est acceptée, votre version d’évaluation sera prolongée de 60 jours.
 * comScore Digital Analytix est une solution en ligne qui fournit des informations détaillées sur votre base d’utilisateurs, grâce à des analyses et des données démographiques sur l’audience complètes. Avec le pack de contenu comScore pour Power BI, vous pouvez rapidement vous connecter à vos données analytiques web et commencer à les exploiter pour obtenir de précieuses informations. Ce pack de contenu comprend un tableau de bord prêt à l’emploi, un ensemble de rapports et un jeu de données organisé pour vous aider à explorer et analyser vos données. Pour en savoir plus sur le pack de contenu, consultez notre [blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/16/visualize-and-explore-your-comscore-data-with-power-bi.aspx) et notre [rubrique d’aide](service-connect-to-connect-to.md). 
 
@@ -564,7 +564,7 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 **1er septembre 2015**
 
 * Webtrends aide les sociétés à exploiter leurs données client pour rendre leurs campagnes marketing en ligne plus efficaces. Les utilisateurs ont la possibilité d’observer, d’analyser et de fournir des informations détaillées sur le parcours des clients sur les différents canaux (web, réseaux sociaux, applications mobiles et SharePoint). Grâce à ce [pack de contenu Webtrends](http://blogs.msdn.com/b/powerbi/archive/2015/09/01/visualize-and-explore-your-webtrends-data-in-power-bi.aspx), les utilisateurs peuvent désormais utiliser Power BI pour surveiller, analyser et visualiser leurs données analytiques Webtrends. Pour en savoir plus sur le pack de contenu Webtrends pour Power BI, consultez notre [rubrique d’aide](service-connect-to-webtrends.md).
-* La prise en main de Questions et réponses est encore plus simple. Dès que vous placez le curseur dans la zone de texte de Questions et réponses, vous voyez aussitôt s’afficher une liste de questions et de métriques clés qui ont trait à vos données.  La liste déroulante affiche par défaut les questions concernant les vignettes déjà épinglées au tableau de bord, ainsi qu’une entrée pour chaque tableau inclus dans votre jeu de données.
+* La prise en main de Q&R est encore plus simple. Dès que vous placez le curseur dans la zone de texte de Q&R, vous voyez aussitôt s’afficher une liste de questions et de métriques clés qui ont trait à vos données.  La liste déroulante affiche par défaut les questions concernant les vignettes déjà épinglées au tableau de bord, ainsi qu’une entrée pour chaque tableau inclus dans votre jeu de données.
 * La taille de canevas dynamique utilisée par défaut permet d’afficher tous les éléments de rapport dans les dimensions optimales pour la taille de la fenêtre du navigateur. Si vous voulez conserver les proportions ou présenter votre rapport d’une façon différente, vous disposez maintenant de trois nouvelles options : Ajuster à la page, Ajuster à la largeur et Taille actuelle.
 * Nous avons également augmenté la limite du nombre de jeux de données et de rapports autorisé. Vous pouvez maintenant utiliser jusqu’à 200 jeux de données et 200 rapports pour chaque jeu de données dans votre compte Power BI.
 
@@ -593,7 +593,7 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 * Nous sommes heureux d’annoncer le lancement de Power BI en disponibilité générale (version GA). Inscrivez-vous dès aujourd’hui à [Power BI Pro](service-self-service-signup-for-power-bi.md). La version GA offre de nouvelles fonctionnalités très utiles :
 * Nouvelle expérience en matière de création de visualisations et de rapports : le nouveau canevas de création de rapports propose un plus large éventail de visualisations et offre davantage de contrôle sur la mise en forme des vignettes, légendes, axes, couleurs, arrière-plans, etc.
-* [Groupes Power BI](consumer/end-user-create-apps.md) : ils offrent de puissantes fonctionnalités de collaboration basées sur les groupes Office 365.
+* [Groupes Power BI](service-create-distribute-apps.md) : ils offrent de puissantes fonctionnalités de collaboration basées sur les groupes Office 365.
 * [Packs de contenus d’organisation](service-organizational-content-pack-introduction.md) : Power BI facilite considérablement la création des tableaux de bord et des rapports, et permet maintenant aux utilisateurs de publier leurs contenus dans la bibliothèque de contenus d’organisation.
 * [Importation de fichiers Excel entiers](service-excel-workbook-files.md) : vous pouvez importer n’importe quel classeur Excel stocké sur OneDrive Entreprise dans Power BI et afficher le classeur entier, exactement comme vous le feriez dans Excel Online.
 * [Importation de fichiers CSV](service-get-data-from-files.md) : comme tout fichier Excel ou Power BI Desktop, un fichier texte de valeurs séparées par des virgules (CSV) peut également servir de jeu de données pour vos tableaux de bord et rapports Power BI.
@@ -660,15 +660,15 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 **15 avril 2015**
 
 * Vous pouvez maintenant visualiser et explorer vos données **Google Analytics** à l’aide de notre nouveau pack de contenu ! Avec le pack de contenu Google Analytics, vous disposez d’un tableau de bord, d’un rapport et d’un jeu de données qui vous permettent d’obtenir des informations détaillées concernant l’utilisation de votre site au cours des six derniers mois. Pour en savoir plus, consultez notre [billet de blog](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) et notre [documentation](service-connect-to-google-analytics.md).
-* Vous pouvez maintenant **épingler toutes les cartes**, à l’exception de celles comportant des indicateurs de performance clés et des images, à partir de vos rapports et de Questions et réponses.
+* Vous pouvez maintenant **épingler toutes les cartes**, à l’exception de celles comportant des indicateurs de performance clés et des images, à partir de vos rapports et de Q&R.
 * Vous pouvez maintenant **utiliser des cartes dans Questions et réponses** en ajoutant l’expression « as card » (sous forme de carte) à la fin de votre requête.
 
 **31 mars 2015**
 
-* Les tableaux de bord **GitHub** comportent de nouveaux visuels ayant trait à la création de communautés, à l’amélioration des calculs et à l’amélioration de la disposition.
-* Les tableaux de bord **SendGrid** offrent de nouveaux visuels et une nouvelle disposition pour vous aider à obtenir toutes les informations dont vous avez besoin.
+* Les tableaux de bord **GitHub** comportent de nouveaux éléments visuels ayant trait à la création de communautés, à l’amélioration des calculs et à l’amélioration de la disposition.
+* Les tableaux de bord **SendGrid** offrent de nouveaux éléments visuels et une nouvelle disposition pour vous aider à obtenir toutes les informations dont vous avez besoin.
 * Vous pouvez maintenant utiliser les **treemaps dans Q&R** en ajoutant l’expression « as treemap » (sous forme de treemap) à la fin de votre requête.
-* Vous pouvez maintenant **épingler les treemaps** à partir de vos rapports et de Questions et réponses. 
+* Vous pouvez maintenant **épingler les treemaps** à partir de vos rapports et de Q&R. 
 * Résolution de nombreux bogues.
 
 **25 février 2015**
