@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 09e7534146ace617ee3e517eca6a453aa9002d38
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 798b1daa13079e69788bc977f37748531e38f431
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546898"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909242"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -31,7 +31,7 @@ Maintenant, vous pouvez créer un mode téléphone pour un rapport qui est déj�
 
 ### <a name="dashboard-commenting-ios-and-android"></a>Commentaires dans les tableaux de bord (iOS et Android) 
 
-Vous pouvez ajouter des commentaires directement dans des tableaux de bord et des vignettes spécifiques pour discuter de vos données. Toutes les personnes qui voient les tableaux de bord verront aussi vos commentaires. Vous pouvez aussi inclure d’autres personnes de votre organisation dans la conversation en les mentionnant avec @mentioning. Elles reçoivent alors une notification push avec votre message sur leur téléphone mobile.
+Vous pouvez ajouter des commentaires directement dans des tableaux de bord et des vignettes spécifiques pour discuter de vos données. Toutes les personnes qui voient les tableaux de bord verront aussi vos commentaires. Vous pouvez aussi inclure d’autres personnes de votre organisation dans la conversation en les mentionnant avec @mentioning. Elles reçoivent alors une notification push avec @mentioned votre message sur leur téléphone mobile.
 
 Actuellement disponible sur les appareils iOS et Android. Prise en charge de Windows prochainement.
 
@@ -196,7 +196,7 @@ Lisez le [résumé des fonctionnalités d’applications mobiles de juillet 201
 
 ### <a name="june-2107"></a>Juin 2017
 #### <a name="all-devices"></a>Tous les appareils
-**Marquer des applications en tant que favorites** Vous pouvez déjà marquer un tableau de bord en tant que favori. Récemment, Power BI a introduit la possibilité de marquer également des [applications](../end-user-apps.md) en tant que favorites. 
+**Marquer des applications en tant que favorites** Vous pouvez déjà marquer un tableau de bord en tant que favori. Récemment, Power BI a introduit la possibilité de marquer également des [applications](../../service-create-distribute-apps.md) en tant que favorites. 
 
 ### <a name="may-2017"></a>Mai 2017
 #### <a name="all-devices"></a>Tous les appareils
