@@ -11,25 +11,25 @@ ms.date: 05/18/2018
 ms.author: kfile
 LocalizationGroup: Reports
 ms.openlocfilehash: 08ead2570602538218085327c6d385c36e0d7e8c
-ms.sourcegitcommit: 8bad5ed58e9e406aca53996415b1240c2972805e
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 10/12/2018
 ms.locfileid: "44343320"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI 
 Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI.  
 
-## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Utiliser des filtres pour limiter l’affichage des visuels de rapport au strict nécessaire 
+## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Utiliser des filtres pour limiter l’affichage des éléments visuels de rapport au strict nécessaire 
 
-Plus un visuel contient de données à afficher, plus son chargement sera lent. Ce principe semble évident, mais il peut être facile de l’oublier. Par exemple, supposons que vous avez un jeu de données volumineux, à partir duquel vous créez un rapport avec une table de la table. Les utilisateurs finaux utilisent les segments sur la page pour accéder aux lignes qui les intéressent (généralement pas plus d’une dizaine).
+Plus un élément visuel contient de données à afficher, plus son chargement sera lent. Ce principe semble évident, mais il peut être facile de l’oublier. Par exemple, supposons que vous avez un jeu de données volumineux, à partir duquel vous créez un rapport avec une table de la table. Les utilisateurs finaux utilisent les segments sur la page pour accéder aux lignes qui les intéressent (généralement pas plus d’une dizaine).
 
 Une erreur courante consiste à utiliser la vue par défaut de la table non filtrée, soit la totalité des quelques 100 millions de lignes. Les données de ces lignes doivent être chargées en mémoire et décompressées à chaque actualisation. Cela crée des charges de mémoire considérables. La solution consiste à réduire le nombre maximal d’éléments à afficher dans la table à l’aide du filtre « N premiers ». Le nombre maximal d’éléments peut être largement supérieur à ce dont les utilisateurs peuvent avoir besoin, par exemple 10 000. Par conséquent, l’expérience de l’utilisateur final est inchangée, mais l’utilisation de la mémoire pour le rapport est considérablement réduite, ce qui a pour effet d’améliorer les performances.
 
-Une approche similaire à celle-ci est fortement recommandée pour tous les visuels de vos rapports. Demandez-vous si toutes les données présentes dans le visuel sont nécessaires. Est-il possible de filtrer la quantité de données affichées sur le visuel d’une manière ou d’une autre sans gêner l’utilisateur ? Notez que les tables en particulier peuvent être très volumineuses. 
+Une approche similaire à celle-ci est fortement recommandée pour tous les éléments visuels de vos rapports. Demandez-vous si toutes les données présentes dans l’élément visuel sont nécessaires. Est-il possible de filtrer la quantité de données affichées sur l’élément visuel d’une manière ou d’une autre sans gêner l’utilisateur ? Notez que les tables en particulier peuvent être très volumineuses. 
  
-## <a name="limit-visuals-on-report-pages"></a>Limiter le nombre de visuels sur les pages de rapport 
-Le principe ci-dessus s’applique également au nombre de visuels sur les rapports. Il est fortement recommandé de limiter le nombre de visuels sur un rapport au strict nécessaire. Les pages d’extraction permettent d’ajouter des détails supplémentaires au rapport sans accumuler les visuels.  
+## <a name="limit-visuals-on-report-pages"></a>Limiter le nombre d’éléments visuels sur les pages de rapport 
+Le principe ci-dessus s’applique également au nombre d’éléments visuels sur les rapports. Il est fortement recommandé de limiter le nombre de visuels sur un rapport au strict nécessaire. Les pages d’extraction permettent d’ajouter des détails supplémentaires au rapport sans accumuler les éléments visuels.  
  
 ## <a name="optimize-your-model"></a>Optimiser votre modèle 
 Bonnes pratiques : 
@@ -69,29 +69,29 @@ La section suivante décrit les bonnes pratiques générales relatives à la con
 
 ### <a name="general"></a>Général 
 - Appliquez les filtres en premier lieu. 
-- Envisagez de désactiver l’interaction entre les visuels. Cela permet de réduire la charge de requête lorsque les utilisateurs effectuent des sélections croisées. 
-- Limitez le nombre de visuels et de données par visuel, comme décrit ci-dessus. 
+- Envisagez de désactiver l’interaction entre les éléments visuels. Cela permet de réduire la charge de requête lorsque les utilisateurs effectuent des sélections croisées. 
+- Limitez le nombre d’éléments visuels et de données par élément visuel, comme décrit ci-dessus. 
 - L’activation de la sécurité au niveau des lignes peut entraîner des modifications importantes des performances. Veillez à tester les différents rôles de sécurité au niveau des lignes que vos utilisateurs vont assumer. 
-- Notez que des délais d’expiration de requête sont appliqués par le service pour que les requêtes longues ne monopolisent pas les ressources système. Les requêtes qui dépassent 225 secondes expirent et entraînent une erreur au niveau du visuel. 
+- Notez que des délais d’expiration de requête sont appliqués par le service pour que les requêtes longues ne monopolisent pas les ressources système. Les requêtes qui dépassent 225 secondes expirent et entraînent une erreur au niveau de l’élément visuel. 
 
 ## <a name="understanding-dashboards-and-query-caches"></a>Présentation des tableaux de bord et des caches de requête 
-Les visuels épinglés aux tableaux de bord sont pris en charge par le cache de requête lorsque le tableau de bord est chargé. À l’inverse, lors de la consultation d’un rapport, les requêtes sont immédiatement envoyées à la source de données : soit le service Power BI (dans le cas d’une importation), soit la source de données que vous spécifiez (dans le cas d’une connexion active ou DirectQuery).  
+Les éléments visuels épinglés aux tableaux de bord sont pris en charge par le cache de requête lorsque le tableau de bord est chargé. À l’inverse, lors de la consultation d’un rapport, les requêtes sont immédiatement envoyées à la source de données : soit le service Power BI (dans le cas d’une importation), soit la source de données que vous spécifiez (dans le cas d’une connexion active ou DirectQuery).  
  
 > [!NOTE]
 > Lorsque vous épinglez des vignettes de rapport dynamiques à un tableau de bord, elles ne sont pas prises en charge à partir du cache de requête : elles se comportent comme des rapports et envoient immédiatement des requêtes aux serveurs principaux. 
  
 
-Comme son nom l’indique, la récupération de données à partir du cache de requête offre des performances supérieures et plus cohérentes que par la source de données. Pour tirer parti de cette fonctionnalité, vous pouvez notamment définir les tableaux de bord comme page d’accueil pour vos utilisateurs. Épinglez les visuels les plus utilisés et demandés aux tableaux de bord. Les tableaux de bord deviennent ainsi une « première ligne de défense » utile qui offre des performances cohérentes et une charge moindre sur la capacité. Les utilisateurs peuvent cliquer pour accéder au rapport afin de consulter les détails.  
+Comme son nom l’indique, la récupération de données à partir du cache de requête offre des performances supérieures et plus cohérentes que par la source de données. Pour tirer parti de cette fonctionnalité, vous pouvez notamment définir les tableaux de bord comme page d’accueil pour vos utilisateurs. Épinglez les éléments visuels les plus utilisés et demandés aux tableaux de bord. Les tableaux de bord deviennent ainsi une « première ligne de défense » utile qui offre des performances cohérentes et une charge moindre sur la capacité. Les utilisateurs peuvent cliquer pour accéder au rapport afin de consulter les détails.  
  
 
-Notez que pour les connexions actives et DirectQuery, ce cache de requête est mis à jour régulièrement en interrogeant la source de données. Par défaut, cela se produit toutes les heures, mais la fréquence peut être configurée dans les paramètres du jeu de données. Chaque mise à jour du cache de requête envoie des requêtes à la source de données sous-jacente pour mettre à jour le cache. Le nombre de requêtes générées dépend du nombre de visuels épinglés aux tableaux de bord qui s’appuient sur cette source de données. Notez que si la sécurité au niveau des lignes est activée, les requêtes sont générées pour chaque contexte de sécurité différent. Par exemple, si vos utilisateurs relèvent de deux rôles différents, présentant chacun un affichage différent des données, deux jeux de données sont générés lors de l’actualisation du cache de requête. 
+Notez que pour les connexions actives et DirectQuery, ce cache de requête est mis à jour régulièrement en interrogeant la source de données. Par défaut, cela se produit toutes les heures, mais la fréquence peut être configurée dans les paramètres du jeu de données. Chaque mise à jour du cache de requête envoie des requêtes à la source de données sous-jacente pour mettre à jour le cache. Le nombre de requêtes générées dépend du nombre d’éléments visuels épinglés aux tableaux de bord qui s’appuient sur cette source de données. Notez que si la sécurité au niveau des lignes est activée, les requêtes sont générées pour chaque contexte de sécurité différent. Par exemple, si vos utilisateurs relèvent de deux rôles différents, présentant chacun un affichage différent des données, deux jeux de données sont générés lors de l’actualisation du cache de requête. 
  
-## <a name="understand-custom-visual-performance"></a>Comprendre les performances des visuels personnalisés 
-Pour garantir des performances élevées, veillez à mettre à l’épreuve chaque visuel personnalisé. Les visuels personnalisés mal optimisés peuvent diminuer les performances de l’intégralité du rapport. 
+## <a name="understand-custom-visual-performance"></a>Comprendre les performances des éléments visuels personnalisés 
+Pour garantir des performances élevées, veillez à mettre à l’épreuve chaque élément visuel personnalisé. Les éléments visuels personnalisés mal optimisés peuvent diminuer les performances de l’intégralité du rapport. 
  
 ## <a name="deep-dive-into-query-performance-with-sql-profiler-and-power-bi-desktop"></a>Présentation détaillée des performances de requêtes avec SQL Profiler et Power BI Desktop
 
-Pour découvrir plus en détail quels visuels consomment le plus de temps et de ressources, vous pouvez connecter SQL Profiler à Power BI Desktop afin d’obtenir une présentation complète des performances de requête.
+Pour découvrir plus en détail quels éléments visuels consomment le plus de temps et de ressources, vous pouvez connecter SQL Profiler à Power BI Desktop afin d’obtenir une présentation complète des performances de requête.
 
 > [!NOTE]
 > Power BI Desktop prend en charge la connexion à un port de diagnostic. Le port de diagnostic permet à d’autres outils de se connecter et d’effectuer des suivis pour établir un diagnostic. *L’apport de changements au modèle n’est pas pris en charge ! Les changements apportés au modèle peuvent entraîner une altération et une perte de données.*
@@ -125,7 +125,7 @@ La procédure est la suivante :
    - SQL Server Profiler est maintenant actif et étudie activement les requêtes envoyées par Power BI Desktop. 
    - Lorsque les requêtes sont exécutées, vous pouvez voir la durée et le temps processeur correspondants, qu permettent d’identifier les requêtes qui constituent des goulots d’étranglement.  
 
-SQL Profiler vous permet d’identifier les requêtes qui utilisent le plus de temps processeur, et qui sont susceptibles d’être des goulots d’étranglement des performances. Les visuels qui exécutent ces requêtes doivent dès lors être au cœur de l’optimisation continue. 
+SQL Profiler vous permet d’identifier les requêtes qui utilisent le plus de temps processeur, et qui sont susceptibles d’être des goulots d’étranglement des performances. Les éléments visuels qui exécutent ces requêtes doivent dès lors être au cœur de l’optimisation continue. 
 
 ## <a name="gateway-best-practices"></a>Bonnes pratiques relatives à la passerelle 
 

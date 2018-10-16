@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 261d6fdb12a75fd1476c5f19ded034a3f85d1fb3
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 41bd4148845754d1b714060e538f559b310969d8
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48798928"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112150"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Démarrage rapide - Découverte du service Power BI
 
@@ -125,7 +125,7 @@ Vous pouvez également trier le contenu par nom ou propriétaire.
 
 ![trier le contenu](./media/end-user-experience/power-bi-sort.png)
 
-Pour en savoir plus, consultez [Navigation dans Power BI : rechercher, trier, filtrer](end-user-search-filter-sort.md).
+Pour en savoir plus, consultez [Navigation dans Power BI : rechercher, trier, filtrer](end-user-search-sort.md).
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 Maintenant que vous avez suivi ce guide de démarrage rapide, vous pouvez si vous le souhaitez supprimer le rapport, le jeu de données et le tableau de bord de l’exemple Retail Analysis (Analyse des ventes au détail).
