@@ -72,7 +72,7 @@ Si vous voyez cette erreur après avoir tapé votre URL UserVoice Assurez-vous q
 
 Si vous obtenez une erreur « Échec de l’ouverture de session » après avoir utilisé vos informations d’identification UserVoice pour vous connecter, le compte que vous utilisez ne dispose pas des autorisations requises pour récupérer les données UserVoice à partir de votre compte. Vérifiez qu’il s’agit d’un compte d’administrateur et réessayez.
 
-«**Désolé. Une erreur s’est produite.**»
+**"Désolé. Une erreur s’est produite."**
 
 Si vous obtenez ce message d’erreur lors du chargement des données, assurez-vous que votre compte UserVoice n’a pas dépassé son quota d’utilisation des API mensuel. Si tout semble correct, essayez de vous reconnecter. Si le problème persiste, contactez le support Power BI sur [https://community.powerbi.com](https://community.powerbi.com/).
 

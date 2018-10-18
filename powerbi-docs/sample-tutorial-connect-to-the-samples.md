@@ -49,7 +49,7 @@ Ce didacticiel explique comment :
 ## <a name="what-exactly-was-imported"></a>Quels sont les éléments importés ?
 Lorsque vous sélectionnez **Se connecter** en utilisant un exemple de pack de contenu, Power BI transfère pour vous une copie de ce pack de contenu sur le cloud, à des fins de stockage. Comme la personne qui a créé le pack de contenu y a inclus un jeu de données, un rapport et un tableau de bord, vous obtenez ces éléments lorsque vous cliquez sur **Se connecter**. 
 
-1. Power BI crée le tableau de bord et le répertorie sous votre onglet **Tableaux de bord**. L’astérisque jaune (*) indique qu’il s’agit d’un nouvel élément.
+1. Power BI crée le tableau de bord et le répertorie sous votre onglet **Tableaux de bord**. L’astérisque jaune indique qu’il s’agit d’un nouvel élément.
    
    ![message de réussite](media/sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
 2. Ouvrez l’onglet **Rapports**.  Vous pouvez constater la présence d’un nouveau rapport nommé *Exemple Analyse de la vente au détail*.
