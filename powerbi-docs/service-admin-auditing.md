@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: bcf012d94dedfd912479c3e51e0de388b177c294
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5051ed66b4214b7ef55ecf2a95d5ed4bc38653ce
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755021"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642008"
 ---
 # <a name="using-auditing-within-your-organization"></a>Utilisation de l’audit dans votre organisation
 
@@ -202,7 +202,7 @@ Pour obtenir la liste complète, consultez [Propriétés détaillées du journal
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Portail d’administration Power BI](service-admin-portal.md)  
-[Qu’est-ce que Power BI Premium ?](service-premium.md)  
+[Qu’est-ce que Power BI Premium ?](service-premium.md)  
 [Achat de Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Autorisations dans Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx)  
 [Se connecter à Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx)  

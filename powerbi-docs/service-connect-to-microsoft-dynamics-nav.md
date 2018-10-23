@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 94ca76af9366752f4e1033fa05147f867e7096d9
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2085f1ca852839c27c4943872e5f5ddb248e8638
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908897"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641387"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Se connecter à Microsoft Dynamics NAV avec Power BI
 Power BI vous permet d’extraire facilement des informations de vos données Microsoft Dynamics NAV. Power BI récupère vos données relatives aux ventes et aux aspects financiers, puis crée une application comprenant un tableau de bord et des rapports basés sur ces données. Power BI a besoin de vos autorisations d’accès aux tables à partir desquelles les données sont extraites, en l’occurrence, les données relatives aux ventes et aux aspects financiers. Vous trouverez plus d’informations sur la configuration requise ci-dessous. Une fois l’application installée, vous pouvez voir le tableau de bord et les rapports dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et dans les applications mobiles Power BI. 
@@ -29,7 +29,7 @@ Power BI vous permet d’extraire facilement des informations de vos données Mi
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
 4. Lorsque vous y êtes invité, entrez votre URL OData de Microsoft Dynamics NAV. L’URL doit correspondre au modèle suivant :
    
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
    * « instance.navserver.com » remplacé par le nom de votre NAV Server ;
    * « DynamicsNAV90\_Instance1 » remplacé par le nom de votre instance NAV Server ;
@@ -72,7 +72,7 @@ Si vous voyez cette erreur après avoir tapé votre URL Microsoft Dynamics NAV. 
 
 * L’URL suit exactement le modèle suivant :
   
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
   
   * « instance.navserver.com » remplacé par le nom de votre NAV Server ;
   * « DynamicsNAV90\_Instance1 » remplacé par le nom de votre instance NAV Server ;
@@ -92,11 +92,11 @@ Si ce message d’erreur s’affiche après que vous êtes passé par la boîte 
 
 * Vérifiez que l’URL est conforme au modèle spécifié ci-dessus. Une erreur courante consiste à spécifier ceci :
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
   
     Toutefois, vous devez inclure la section « Company(’CRONUS%20International%20Ltd.’) » avec votre nom de société NAV :
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Que sont les applications dans Power BI ?](service-create-distribute-apps.md)

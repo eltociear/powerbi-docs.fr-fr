@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: f15bd3395ad9edc39589a0a5b1563cfcc00e2c3c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6cd667a81a743a0b074155e0e16a49178157bc6c
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547872"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396494"
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Optimiser vos données Excel avec Questions et réponses dans Power BI
 Si vous êtes chargé de créer des modèles de données ou des classeurs Excel qui seront utilisés avec Power BI, continuez votre lecture…
@@ -45,7 +45,7 @@ Voici quelques conseils pour tirer le meilleur parti de Q&R.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Revenir à [Q&R dans Power BI](consumer/end-user-q-and-a.md)  
-[Préparer des jeux de données locaux pour Questions et réponses](consumer/end-user-q-and-a-direct-query.md)   
+[Préparer des jeux de données locaux pour Questions et réponses](service-q-and-a-direct-query.md)   
 [Démarrage rapide Questions et réponses](power-bi-visualization-introduction-to-q-and-a.md)  
 [Obtenir des données (pour Power BI)](service-get-data.md)  
 

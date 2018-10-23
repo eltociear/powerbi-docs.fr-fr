@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
-ms.openlocfilehash: e4173811db0de0dc95e0bd324517a5750165983e
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 666938d8d852793b68bb278147c61f077c839ed2
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908644"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435361"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Créer un tableau de bord à partir d’un rapport
 Vous avez lu [Tableaux de bord dans Power BI](service-dashboards.md) et vous souhaitez maintenant créer vos propres tableaux de bord. Il existe de nombreuses façons de créer un tableau de bord : à partir d’un rapport, en partant de zéro, à partir d’un jeu de données, en dupliquant un tableau de bord existant, et bien plus encore.  
@@ -109,7 +109,7 @@ Félicitations pour la création de votre premier tableau de bord ! Maintenant 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Redimensionner et déplacer des vignettes](service-dashboard-edit-tile.md)
 * [Toutes les informations dont vous avez besoin sur les vignettes du tableau de bord](service-dashboard-tiles.md)
-* [Partager votre tableau de bord en créant une application](service-install-use-apps.md)
+* [Partager votre tableau de bord en créant une application](service-create-workspaces.md)
 * [Power BI – Concepts de base](service-basic-concepts.md)
 * [Conseils pour la conception d’un tableau de bord réussi](service-dashboards-design-tips.md)
 

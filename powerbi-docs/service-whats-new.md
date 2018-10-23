@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/23/2018
+ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 10f637e822817d6bd0fa1692a6d1b029be312d4f
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: b54a38f4c5639eae549a36a93c887d87630b7daf
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909173"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396747"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
@@ -212,7 +212,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/).
 
-* [Prise en charge de Questions et réponses dans Power BI pour les modèles tabulaires SQL Server 2016 Analysis Services](consumer/end-user-q-and-a-direct-query.md) : nous sommes fiers de vous proposer des améliorations de l’expérience utilisateur de Questions et réponses dans Power BI et le lancement de la version préliminaire publique de Questions et réponses dans Power BI pour les sources de données Enterprise Gateway, à commencer par la prise en charge des modèles tabulaires SQL Server 2016 Analysis Services. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/).
+* [Prise en charge de Questions et réponses dans Power BI pour les modèles tabulaires SQL Server 2016 Analysis Services](service-q-and-a-direct-query.md) : nous sommes fiers de vous proposer des améliorations de l’expérience utilisateur de Questions et réponses dans Power BI et le lancement de la version préliminaire publique de Questions et réponses dans Power BI pour les sources de données Enterprise Gateway, à commencer par la prise en charge des modèles tabulaires SQL Server 2016 Analysis Services. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/).
 * [Prise en charge des fichiers locaux pour les rapports Excel](service-excel-workbook-files.md#local-excel-workbooks) : vous pouvez désormais charger vos fichiers Excel à partir de votre disque local ou d’autres services de stockage et utiliser le rapport Excel comme vous le feriez dans Excel Online, avec tous les avantages de Power BI. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/).
 
 **28 avril 2016**
