@@ -2,12 +2,13 @@
 title: Formation guidée sur Microsoft Power BI
 description: Commencez votre parcours de formation avec cette collection en séquence de cours, puis découvrez la diversité et la puissance des capacités de Microsoft Power BI.
 layout: LandingPage
-ms.openlocfilehash: 2cd748b60da6781ff9ea710b5802f3d68c3bc6b8
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.service: powerbi
+ms.openlocfilehash: 8e9c26e48f50eb5b95a23f98329dbaea578e01d3
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600673"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799066"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -32,25 +33,9 @@ ms.locfileid: "37600673"
 Prise en main </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=1">Présentation de Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">5 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=2">Utilisation de Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">4 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=3">Blocs de construction de Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">6 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=4">Présentation rapide du service Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">9 m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingstarted.yml?tutorial-step=5">Récapitulatif et étapes suivantes</a>
-                                <span style="margin-left: 32px; align-self: center;">5 m</span>
-                              </li>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/">Démarrez avec Power BI à l’aide de Microsoft Learn</a>
+                                <span style="margin-left: 32px; align-self: center;">47 m</span>
+                              </li>                              
                           </ul>
                       </div>
                     </div>

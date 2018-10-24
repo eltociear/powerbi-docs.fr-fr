@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 10/08/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2cc7691e81f5edab9d9f7a2a6d878420ca1c82f4
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47418460"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112259"
 ---
 # <a name="export-data-from-visualizations"></a>Exportez des données à partir de visualisations
 Si vous souhaitez afficher les données qui sont utilisées pour créer une visualisation, vous pouvez le faire dans Power BI ou exporter ces données vers Excel sous forme de fichier .xlsx ou .csv.   
@@ -55,8 +55,7 @@ Pour effectuer cette procédure, ouvrez le [rapport Exemple Analyse de l'approvi
 4. Sélectionnez les ellipses, dans le coin supérieur droit de la visualisation. Choisissez  **Exporter des données**.
 
    ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. Dans Power BI en ligne, si votre visualisation a un agrégat (par exemple si vous avez défini **Nombre** sur *Moyenne*, *Somme* ou *Minimum*), vous avez deux options : **Données résumées** et **Données sous-jacentes**. Dans Power BI Desktop, seule l’option **Données résumées** est disponible. Pour mieux comprendre les agrégats, consultez [Agrégats dans Power BI](../service-aggregates.md).
-
+5. Dans Power BI en ligne, si votre visualisation a un agrégat (par exemple si vous avez défini **Nombre** sur *Moyenne*, *Somme* ou *Minimum*), vous avez deux options : **Données résumées** et **Données sous-jacentes**. Dans Power BI Desktop, vous aurez seulement l’option **Données résumées**. Pour comprendre le fonctionnement des agrégats, consultez [Agrégats dans Power BI](../service-aggregates.md).
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Sélectionnez **Données résumées** > **Exporter** et choisissez .xlsx ou .csv. Power BI exporte les données.  Si vous avez appliqué des filtres à la visualisation, les données sont exportées en étant filtrées. Lorsque vous sélectionnez **Exporter**, votre navigateur vous invite à enregistrer le fichier. Lorsque c’est fait, ouvrez le fichier dans Excel.
 
@@ -90,6 +89,26 @@ Ce qui s’affiche à l’écran quand vous sélectionnez **Données sous-jacent
 |    Mesures     |                                      Toutes les données de toutes les tables associées à une ou plusieurs tables contenant les mesures via une chaîne de \*: 1 sur 1:1.                                      |
 |  Mesures uniquement  |                                                   Toutes les colonnes non masqués de toutes les tables associées (dans le but d’étendre la mesure)                                                   |
 |  Mesures uniquement  |                                                             Les données résumées de toutes les lignes en double pour les mesures du modèle.                                                              |
+
+### <a name="set-the-export-options"></a>Définir les options d’exportation
+Les concepteurs de rapports Power BI contrôlent les types d’options d’exportation de données qui sont à la disposition de leurs clients. Les choix sont les suivants :
+- Autoriser l’exportation de résumés uniquement (il s’agit de la valeur par défaut pour les rapports) 
+- Autoriser l’exportation de données résumées et sous-jacentes  
+- Ne pas autoriser l’exportation de données  
+
+1. Pour définir ces options, démarrez dans Power BI Desktop.
+
+2. Dans le coin supérieur gauche, sélectionnez **Fichier** > **Options et paramètres** > **Options**. 
+
+3. Sous **Fichier actuel**, sélectionnez **Paramètres du rapport**.
+
+    ![paramètres du rapport Desktop](media/power-bi-visualization-export-data/desktop-report-settings.png)
+
+4. Effectuez votre sélection dans la liste déroulante **Exporter des données**.
+
+Vous pouvez également mettre à jour ce paramètre dans le service Power BI.  
+
+Il est important de noter que si les paramètres du portail d’administration Power BI sont en conflit avec les paramètres du rapport des données d’exportation, les paramètres administrateur remplaceront les paramètres des données d’exportation. 
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 * Le nombre maximal de lignes pouvant être exportées de **Power BI Desktop** et du **service Power BI** au format .csv est de 30 000.

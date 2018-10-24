@@ -1,5 +1,5 @@
 ---
-title: Extraire les données d’une page web, par exemple dans Power BI Desktop (préversion)
+title: Extraire les données d’une page web, par exemple dans Power BI Desktop
 description: Extraire les données d’une page web en fournissant un exemple de ce que vous voulez extraire
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 55c1a70e054b6bb6ff06c7fe6f83b58d8b1f26f3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: f90f2ea4737fc5c98df4d171f8e1e65c2704607d
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290979"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336803"
 ---
-# <a name="get-data-from-a-web-page-by-providing-an-example-preview"></a>Obtenir les données d’une page web en fournissant un exemple (préversion)
+# <a name="get-data-from-a-web-page-by-providing-an-example"></a>Obtenir les données d’une page web en fournissant un exemple
 
 L’obtention des données d’une page web permet aux utilisateurs d’extraire facilement les données de pages web et d’importer ces données dans **Power BI Desktop**. Cependant, les données des pages web figurent souvent dans des tables mal classées et donc difficiles à extraire. L’obtention des données de ces pages peut être compliquée, même si les données sont structurées et cohérentes. 
 
@@ -26,13 +26,6 @@ Mais il existe une solution. Grâce à la fonctionnalité **Obtenir les données
 ![Obtenir les données du web par exemple](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
 
-## <a name="enabling-the-preview-feature-get-data-from-web-by-example"></a>Activation de la fonctionnalité (préversion) Obtenir les données du web par exemple
-
-L’option **Obtenir les données du web par exemple** est en préversion et doit être activée dans **Power BI Desktop**. Pour l’activer, sélectionnez **Fichiers > Options et paramètres > Options > Fonctionnalités en préversion**, puis cochez la case **Nouveauté de l’expérience web**. Vous devez redémarrer Power BI Desktop après avoir effectué la sélection.
-
-![activer la fonctionnalité d’aperçu](media/desktop-connect-to-web-by-example/web-by-example_02.png)
-
-Une fois la fonctionnalité en préversion activée, vous pouvez commencer à l’utiliser. 
 
 ## <a name="using-get-data-from-web-by-example"></a>Utilisation de l’option Obtenir les données du web par exemple
 
