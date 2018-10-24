@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/09/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0d9f16933bff264b10c0bff3e1b7c440a3d373a2
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 0cb5e9ae8256f9df6c849df612f156d7fe9d12a8
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48907851"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112196"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 Dans Power BI, les *applications* rassemblent les rapports et tableaux de bord associés dans un même emplacement. Les personnes de votre organisation peuvent créer et distribuer des applications avec les informations clés de l’entreprise. Des [services externes](end-user-connect-to-services.md) que vous utilisez peut-être déjà, tels que Google Analytics et Microsoft Dynamics CRM, offrent également des applications Power BI. 
@@ -34,13 +34,13 @@ Pour installer une nouvelle application, le moyen le plus simple consiste à rec
 
 **Sur votre ordinateur** 
 
-Lorsque vous cliquez sur le lien dans l’e-mail, le service Power BI ([https://powerbi.com](https://powerbi.com)) s’ouvre dans un navigateur. Vous confirmez que vous souhaitez installer l’application, puis la page d’accès de l’application s’ouvre.
+Sélectionnez le lien dans l’e-mail pour ouvrir le service Power BI ([https://powerbi.com](https://powerbi.com)) dans un navigateur. Confirmez que vous souhaitez installer l’application, puis la page d’accueil de l’application s’ouvre.
 
 ![Page d’accueil de l’application dans le service Power BI](./media/end-user-apps/power-bi-app-landing-page-opportunity-480.png)
 
 **Sur votre appareil mobile Android ou iOS** 
 
-Quand vous cliquez sur le lien qui figure dans l’e-mail sur votre appareil mobile, l’application s’installe automatiquement et ouvre la liste des contenus dans l’application mobile. 
+Quand vous sélectionnez le lien qui figure dans l’e-mail sur votre appareil mobile, l’application s’installe automatiquement et ouvre la liste des contenus dans l’application mobile. 
 
 ![Liste de contenu d’application sur l’appareil mobile](./media/end-user-apps/power-bi-app-index-it-spend-360.png)
 
@@ -50,7 +50,7 @@ Vous pouvez également rechercher et installer des applications auxquelles vous 
 1. Sélectionnez **Applications** ![Applications dans le volet de navigation de gauche](./media/end-user-apps/power-bi-apps-bar.png) > **Obtenir des applications**. 
    
      ![Icône Obtenir des applications](./media/end-user-apps/power-bi-service-apps-get-apps-oppty.png)
-2. Dans AppSource, vous pouvez chercher sous **Mon organisation** pour affiner les résultats et trouver l’application souhaitée.
+2. Dans AppSource, cherchez sous **Mon organisation** pour affiner les résultats et trouver l’application souhaitée.
    
      ![Dans AppSource sous Mon organisation](./media/end-user-apps/power-bi-appsource-my-org.png)
 3. Sélectionnez **Obtenir maintenant** pour l’ajouter à votre page Applications. 

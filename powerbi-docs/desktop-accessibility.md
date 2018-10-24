@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f07b5174d031c79f4d8f232c49836b54d95621f1
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256029"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336872"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -61,6 +61,8 @@ Ces ajouts à l’accessibilité ont été créés pour permettre aux utilisateu
 ## <a name="tips-for-creating-accessible-reports"></a>Conseils pour la création de rapports accessibles
 Les conseils suivants peuvent vous aider à créer des rapports **Power BI Desktop** plus accessibles.
 
+### <a name="general-tips-for-accessible-reports"></a>Conseils d’ordre général sur les rapports accessibles
+
 * Pour les visuels **Ligne**, **Zone** et **Zone de liste modifiable** (ainsi que pour les visuels **Nuage de points** et **Bulle**), activez les marqueurs et utilisez une *forme de marqueur* différente pour chaque ligne.
   
   * Pour activer les *marqueurs*, sélectionnez la section **Format** du volet **Visualisations**, développez la section **Formes**, puis faites défiler vers le bas jusqu’à la bascule **Marqueurs** et réglez celle-ci sur *Activé*.
@@ -80,6 +82,13 @@ Les conseils suivants peuvent vous aider à créer des rapports **Power BI Des
 * Incluez un titre, des étiquettes d’axe et des étiquettes de données dans tous les visuels.
 * Utilisez des titres significatifs pour toutes les pages du rapport.
 * Évitez, si possible, les formes et les images décoratives dans votre rapport, car elles sont incluses dans l’ordre de tabulation du rapport. Si vous avez besoin d’inclure des objets décoratifs dans votre rapport, mettez à jour le texte de légende de l’objet pour informer les utilisateurs du lecteur d’écran qu’il est décoratif.
+
+### <a name="arranging-items-in-field-buckets"></a>Organisation des éléments dans des compartiments Champ
+À partir de la version d’octobre 2018 de **Power BI Desktop**, le puits **Champs** est accessible avec un clavier et interagit avec les lecteurs d’écran. 
+
+Pour améliorer le processus de création de rapports avec les lecteurs d’écran, un menu contextuel est disponible pour permettre le déplacement des champs dans le puits vers le haut ou vers le bas dans la liste **Champs**, ou le déplacement du champ vers d’autres puits, comme **Légende** ou **Valeur**, ou autres.
+
+![Le menu contextuel dans les Champs vous permet de déplacer les champs vers le haut, vers le bas ou vers une autre zone](media/desktop-accessibility/accessibility_09.png)
 
 ## <a name="high-contrast-support-for-reports"></a>Prise en charge du contraste élevé dans les rapports
 

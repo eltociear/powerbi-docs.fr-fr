@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 10/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4e7692be8ec78c79076408635a75dbf0ab9080d2
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 49540dd491d02c6a6b474ff80690a75eecfd27db
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974043"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336987"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Modèles composites dans Power BI Desktop (préversion)
 
@@ -58,7 +58,7 @@ Lorsque vous utilisez DirectQuery avec des **modèles composites**, il est possi
 Par exemple, avec des **modèles composites**, il est possible de générer un modèle qui combine les données de ventes de l’entrepôt de données d’une entreprise avec les données de cibles commerciales se trouvant dans la base de données SQL Server d’un service, ainsi que certaines données importées à partir d’une feuille de calcul. Un modèle combinant les données de plusieurs sources DirectQuery ou DirectQuery avec des données importées est appelé *modèle composite*.
 
 > [!NOTE]
-> Les modèles composites en version préliminaire ne peuvent pas être publiés dans le service Power BI. 
+> À partir de la version d’octobre 2018 de **Power BI Desktop**, vous *pouvez* publier des modèles composites sur le service Power BI. Pour l’actualisation planifiée et l’actualisation de la mosaïque du tableau de bord, les modèles composites dans le service Power BI se comportent de la même façon que les modèles d’importation. 
 
 Vous pouvez créer des relations entre les tables car vous devez toujours, même lorsque ces tables proviennent de différentes sources, tenir compte de la restriction suivante : toutes les relations entre les sources doivent être définies comme ayant une cardinalité **plusieurs-à-plusieurs** , quelle que soit leur cardinalité réelle. Le comportement de ces relations est alors le même que pour les relations **plusieurs-à-plusieurs**, comme décrit dans [Relations plusieurs-à-plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md). Notez que dans le contexte des modèles composites, toutes les tables importées sont en fait une source unique, indépendamment de la source de données sous-jacente réelle à partir de laquelle elles sont réellement importées.   
 

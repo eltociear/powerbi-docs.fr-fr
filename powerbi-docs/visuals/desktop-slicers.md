@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 161ea8f20db36c129787e84242ea002980d0f8dd
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: df4afe91de955eabfba6eeea9022cc5f9475cc33
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565863"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336849"
 ---
 # <a name="using-slicers-power-bi-desktop"></a>Utilisation de segments Power BI Desktop
 
@@ -65,6 +65,12 @@ Vous pouvez également appliquer un **nom de groupe** à une collection de segme
 Cette fonctionnalité vous permet de créer un groupe personnalisé de segments à maintenir synchronisés. Vous pouvez utiliser le nom par défaut fourni ou un nom de votre choix. 
 
 Le nom de groupe rend l’utilisation des segments plus souple. Vous pouvez créer des groupes distincts pour synchroniser les segments qui utilisent le même champ, ou placer les segments avec des champs différents dans le même groupe. 
+
+## <a name="how-filtering-affects-selection-in-slicers"></a>Comment le filtrage affecte la sélection dans les segments
+
+Si vous effectuez une sélection dans un segment et appliquez ensuite un filtre qui supprimerait normalement l’élément sélectionné, celui-ci reste en bas de la liste des éléments dans le segment. Si le filtre est supprimé, la sélection est toujours présente dans le segment. Vous remarquerez que si vous désélectionnez l’élément dans le segment, il disparaît de la liste.
+
+![sélection conservée dans les segments](./media/desktop-slicers/retained-selection-in-slicers.gif)
 
 
 ## <a name="next-steps"></a>Étapes suivantes

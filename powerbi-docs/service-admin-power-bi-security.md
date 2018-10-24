@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: 072f548c3725c4133bb548a72fc58679e74f5fc7
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 6055a9c5e41f1745b088df93587d701393c0d495
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417093"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336734"
 ---
 # <a name="power-bi-security"></a>Sécurité dans Power BI
 Pour obtenir une explication détaillée de la sécurité de Power BI, [téléchargez le livre blanc sur la sécurité dans Power BI](http://go.microsoft.com/fwlink/?LinkId=829185) :
@@ -58,4 +58,14 @@ Pour en savoir plus, visitez le [Centre de gestion de la confidentialité de Mic
 Comme décrit plus haut dans cet article, la connexion Power BI d’un utilisateur est utilisée par les serveurs Active Directory locaux pour le mappage à un nom UPN pour obtenir les informations d’identification. Toutefois, il est **important** de noter que les utilisateurs sont responsables des données qu’ils partagent : si un utilisateur se connecte à des sources de données à l’aide de ses informations d’identification et qu’il partage ensuite un rapport (ou un tableau de bord ou un jeu de données) basé sur ces données, les utilisateurs avec lesquels le tableau de bord est partagé ne sont pas authentifiés par rapport à la source de données d’origine et ils auront accès au rapport.
 
 Les connexions à **SQL Server Analysis Services** à l’aide de la **passerelle de données locale** constituent une exception. Les tableaux de bord sont mis en cache dans Power BI, mais l’accès aux rapports ou jeux de données sous-jacents initie l’authentification de l’utilisateur qui tente d’accéder au rapport (ou au jeu de données) et l’accès n’est accordé que si l’utilisateur dispose d’informations d’identification suffisantes pour accéder aux données. Pour plus d’informations, consultez [Présentation détaillée de la passerelle de données locale](service-gateway-onprem-indepth.md).
+
+## <a name="enforcing-tls-version-usage"></a>Mise en œuvre de l’utilisation de la version TLS
+
+Les administrateurs informatiques et réseau peuvent appliquer l’impératif d’utiliser la version TLS (Transport Layer Security) actuelle pour toutes les communications sécurisées sur leur réseau. Windows prend en charge des versions TLS sur Microsoft Schannel Provider, comme [décrit dans l’article TLS Schannel SSP](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+
+Cette mise en œuvre est possible en définissant des clés de Registre au niveau administratif. La mise en œuvre est décrite dans [l’article Gestion des protocoles SSL dans AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+
+**Power BI Desktop** respecte les paramètres de clé de Registre décrits dans ces articles et créé uniquement des connexions à l’aide de la version TLS autorisée dans ces paramètres du Registre, le cas échéant.
+
+Pour plus d’informations sur la définition de ces clés de Registre, consultez l’article [Paramètres de Registre TLS](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
 

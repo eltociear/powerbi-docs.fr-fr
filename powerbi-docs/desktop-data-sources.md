@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a644c300a0879b2f5eedd95cdddc537cc6fd0b
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512061"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336895"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
@@ -26,7 +26,7 @@ Pour vous connecter à des données, sélectionnez **Obtenir des données** à p
 
 En sélectionnant **Plus...** dans le menu **Les plus courantes**, vous accédez à la fenêtre **Obtenir les données**. Vous pouvez également faire apparaître la fenêtre **Obtenir les données** (et ignorer le menu **Les plus courantes** ) en sélectionnant directement le **bouton d’icône** **Obtenir les données**.
 
-![Bouton Obtenir des données](media/desktop-data-sources/data-sources_02.png)
+![Bouton Get Data](media/desktop-data-sources/data-sources_02.png)
 
 > [!NOTE]
 > L’équipe Power BI enrichit en permanence les sources de données disponibles pour **Power BI Desktop** et le **service Power BI**. Par conséquent, les premières versions des sources de données en cours de création sont souvent marquées de la mention *Bêta* ou *Préversion*. Une source de données marquée de la mention *Bêta* ou *Préversion* a un support et des fonctionnalités limités et ne doit pas être utilisée dans les environnements de production.
@@ -75,13 +75,15 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Base de données Teradata
 * Base de données SAP HANA
 * SAP Business Warehouse Application Server
-* SAP Business Warehouse Message Server (bêta)
+* Serveur de messages SAP Business Warehouse
 * Amazon Redshift
 * Impala
 * Google BigQuery
 * Snowflake
+* Dremio (bêta)
 * Exasol (bêta)
 * Jethro (bêta)
+* Kyligence Enterprise (bêta)
 
 > [!NOTE]
 > Certains connecteurs de base de données doivent être activés. Pour cela, sélectionnez **Fichier > Options et paramètres > Options**, puis sélectionnez **Fonctionnalités en version préliminaire** et activez le connecteur. Si vous ne voyez pas certains des connecteurs mentionnés ci-dessus et que vous souhaitez les utiliser, vérifiez les paramètres **Fonctions en version préliminaire**. Notez également qu’une source de données marquée de la mention *Bêta* ou *Préversion* a un support et des fonctionnalités limités et ne doit pas être utilisée dans les environnements de production.
@@ -112,7 +114,7 @@ La catégorie **Azure** fournit les connexions de données suivantes :
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
-* HDInsight Interactive Query (bêta)
+* HDInsight Interactive Query
 * Azure KustoDB (bêta)
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Azure**.
@@ -124,10 +126,10 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Liste SharePoint Online
 * Microsoft Exchange Online
 * Dynamics 365 (en ligne)
-* Dynamics NAV (bêta)
+* Dynamics NAV
 * Dynamics 365 Business Central
+* Dynamics 365 Business Central (local)
 * Common Data Service for Apps (bêta)
-* Common Data Service (bêta)
 * Microsoft Azure Consumption Insights (bêta)
 * Visual Studio Team Services (version bêta)
 * Objets Salesforce
@@ -163,7 +165,7 @@ L’illustration suivante montre la fenêtre **Obtenir les données** pour **Ser
 
 La catégorie **Autre** fournit les connexions de données suivantes :
 
-* Vertica (bêta)
+* Vertica
 * Web
 * Liste SharePoint
 * Flux OData
@@ -175,6 +177,8 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Script Python
 * ODBC
 * OLE DB
+* Denado
+* Paxata (bêta)
 * Requête vide
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Autre**.
