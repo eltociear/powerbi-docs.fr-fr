@@ -8,88 +8,57 @@ featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 10/10/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: be2f1997fe27878967ac22435c0a6dbe94ffc5a2
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: f68e962eacf04005d83ec0def10cf8e0e24f6e10
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565288"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112035"
 ---
 # <a name="automatically-generate-data-insights-with-power-bi"></a>Générer automatiquement des informations sur les données avec Power BI
-Vous disposez d’un jeu de données et vous ne savez pas par quoi commencer ?  Vous voulez créer rapidement un tableau de bord ?  Vous souhaitez rechercher des informations que vous auriez manquées ?
+Chaque mosaïque de visualisation sur votre tableau de bord est une voie d’accès à l’exploration des données. Lorsque vous sélectionnez une mosaïque, un rapport dans lequel vous pouvez filtrer, trier et explorer le jeu de données derrière le rapport s’ouvre. Et lorsque vous exécutez un aperçu, Power BI effectue l’exploration de données pour vous.
 
-Exécutez un aperçu rapide pour générer des visualisations interactives intéressantes basées sur vos données. L’aperçu rapide peut être exécuté sur un jeu de données entier (aperçu rapide) ou sur une vignette de tableau de bord spécifique (aperçu délimité). Vous pouvez même exécuter un aperçu rapide sur un aperçu !
-
-> **REMARQUE** : Informations ne fonctionne pas avec DirectQuery (seulement avec les données chargées sur Power BI).
-> 
+Exécutez un aperçu rapide pour générer des visualisations interactives intéressantes basées sur vos données. L’aperçu rapide peut être exécuté sur une mosaïque de tableau de bord spécifique, et vous pouvez même exécuter un aperçu sur un autre aperçu !
 
 La fonctionnalité d’aperçu repose sur un [ensemble croissant d’algorithmes analytiques avancés](end-user-insight-types.md) développés conjointement avec Microsoft Research, que nous continuerons d’utiliser pour permettre à davantage de personnes de tirer des informations de leurs données de façon innovante et intuitive.
 
-## <a name="run-quick-insights-on-a-dataset"></a>Exécuter un aperçu rapide sur un jeu de données
-Regardez Amanda exécuter un aperçu rapide sur un jeu de données, ouvrir une information en mode Focus, épingler l’une de ces informations en tant que vignette à son tableau de bord, et obtenir des informations sur une vignette de tableau de bord.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
-
-
-Maintenant, à vous de jouer. Explorez les informations en vous appuyant sur l’[exemple Analyse de la qualité des fournisseurs](../sample-supplier-quality.md).
-
-1. Sous l’onglet **Jeux de données**, sélectionnez les points de suspension (…) puis choisissez **Obtenir des informations**.
-   
-    ![onglet Jeux de données](./media/end-user-insights/power-bi-ellipses.png)
-   
-    ![menu des points de suspension](./media/end-user-insights/power-bi-tab.png)
-2. Power BI utilise [différents algorithmes](end-user-insight-types.md) pour rechercher des tendances dans votre jeu de données.
-   
-    ![boîte de dialogue Recherche d’informations](./media/end-user-insights/pbi_autoinsightssearching.png)
-3. En quelques secondes, vos informations sont prêtes.  Sélectionnez **Afficher les informations** pour afficher des visualisations.
-   
-    ![message de réussite](./media/end-user-insights/pbi_autoinsightsuccess.png)
-   
-   > **Remarque** : certains jeux de données ne peuvent pas générer d’informations, car les données ne sont pas significatives d’un point de vue statistique.  Pour en savoir plus, consultez [Optimiser vos données pour obtenir des informations](../service-insights-optimize.md).
-   > 
-   > 
-1. Les visualisations s’affichent dans une zone de dessin **Informations rapides** spéciale comprenant jusqu’à 32 cartes d’information distinctes. Chaque carte possède un graphique et une brève description.
-   
-    ![canevas Informations rapides](./media/end-user-insights/power-bi-insights.png)
-
-## <a name="interact-with-the-insight-cards"></a>Interagir avec les cartes d’informations
-  ![icône d’épingle](./media/end-user-insights/pbi_hover.png)
-
-1. Pointez le curseur sur une carte, puis sélectionnez l’icône en forme d’épingle pour ajouter la visualisation à un tableau de bord.
-2. Pointez sur une carte, sélectionnez les points de suspension (...) et choisissez **Afficher les informations**. L’aperçu rapide s’affiche en plein écran.
-   
-    ![informations en plein écran](./media/end-user-insights/power-bi-insight-focus.png)
-3. Dans le mode Focus, vous pouvez :
-   
-   * Filtrez les visualisations.  Pour afficher les filtres, dans l’angle supérieur droit, sélectionnez la flèche pour développer le volet Filtres.
-        ![informations et menu Filtres développé](./media/end-user-insights/power-bi-insights-filter-new.png)
-   * Épinglez la carte d’information à un tableau de bord en sélectionnant l’icône d’épingle ![icône d’épingle](./media/end-user-insights/power-bi-pin-icon.png) ou l’option **Épingler un visuel**.
-   * Exécuter un aperçu sur la carte elle-même. C’est ce que l’on appelle un **aperçu délimité**. En haut à droite, sélectionnez l’icône en forme d’ampoule ![icône Obtenir des informations](./media/end-user-insights/power-bi-bulb-icon.png) ou **Obtenir des informations**.
-     
-       ![barre de menus affichant l’icône Obtenir des informations](./media/end-user-insights/pbi-autoinsights-tile.png)
-     
-     L’aperçu s’affiche à gauche et de nouvelles cartes, basées uniquement sur les données de cet aperçu, s’affichent à droite.
-     
-       ![informations sur les informations](./media/end-user-insights/power-bi-insights-on-insights-new.png)
-4. Pour revenir au canevas d’aperçu d’origine, dans le coin supérieur gauche, sélectionnez **Quitter le mode Focus**.
-
 ## <a name="run-insights-on-a-dashboard-tile"></a>Exécuter un aperçu sur une vignette de tableau de bord
-Au lieu de rechercher des informations dans un jeu de données complet, limitez votre recherche aux données ayant servi à créer une vignette de tableau de bord. Cette opération est également souvent appelée **aperçu délimité**.
+Lorsque vous exécutez un aperçu sur une mosaïque de tableau de bord, Power BI recherche simplement les données utilisées pour créer cette mosaïque de tableau de bord unique. 
 
-1. Ouvrez un tableau de bord.
-2. Pointez sur une vignette, sélectionnez les points de suspension (...) et choisissez **Afficher des informations**. La vignette s’ouvre en [mode Focus](end-user-focus.md), qui présente les cartes d’informations à droite.    
+1. [Ouvrir un tableau de bord](end-user-dashboards.md).
+2. Pointez sur une vignette, Sélectionnez les points de suspension (...) et choisissez **Afficher des informations**. 
+
+    ![Mode de menu Points de suspension](./media/end-user-insights/power-bi-hover.png)
+
+
+3. La vignette s’ouvre en [mode Focus](end-user-focus.md), qui présente les cartes d’informations à droite.    
    
     ![Mode focus](./media/end-user-insights/pbi-insights-tile.png)    
 4. Une information suscite votre intérêt ? Sélectionnez la carte d’informations pour en savoir plus. L’information sélectionnée s’affiche à gauche et les nouvelles cartes d’informations, basées uniquement sur les données de cette information, s’affichent à droite.    
-6. Continuez à explorer vos données et, dès que vous trouvez une information intéressante, épinglez-la à votre tableau de bord en sélectionnant **Épingler un élément visuel** en haut à droite.
+
+ ## <a name="interact-with-the-insight-cards"></a>Interagir avec les cartes d’informations
+   * Filtrez les visualisations.  Pour afficher les filtres, dans l’angle supérieur droit, sélectionnez la flèche pour développer le volet Filtres.
+
+     ![aperçu et menu Filtres développé](./media/end-user-insights/power-bi-insights-on-insights.png)
+   
+   * Exécuter un aperçu sur la carte proprement dite. C’est ce que l’on appelle un **aperçu connexe**. En haut à droite, sélectionnez l’icône en forme d’ampoule ![icône Obtenir des informations](./media/end-user-insights/power-bi-bulb-icon.png) ou **Obtenir des informations**.
+     
+     ![barre de menus affichant l’icône Obtenir des informations](./media/end-user-insights/power-bi-autoinsights-tile.png)
+     
+     L’aperçu s’affiche à gauche et de nouvelles cartes, basées uniquement sur les données de cet aperçu, s’affichent à droite.
+     
+     ![informations sur les informations](./media/end-user-insights/power-bi-insights-on-insights-new.png)
+
+Pour revenir au canevas d’aperçu d’origine, dans le coin supérieur gauche, sélectionnez **Quitter le mode Focus**.
+
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+- **Afficher les informations** ne fonctionne pas avec DirectQuery (seulement avec les données chargées sur Power BI).
+- **Afficher les informations** ne fonctionne pas avec tous les types de mosaïque de tableau de bord. Par exemple, il n’est pas disponible pour les visuels personnalisés.<!--[custom visuals](end-user-custom-visuals.md)-->
+
 
 ## <a name="next-steps"></a>Étapes suivantes
-Si vous possédez un jeu de données, [optimisez-le pour la fonction Informations rapides](../service-insights-optimize.md).
-
 Découvrez les [types d’Informations rapides disponibles](end-user-insight-types.md).
-
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 
