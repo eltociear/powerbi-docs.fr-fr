@@ -5,12 +5,12 @@ items:
     items:
     - name: Qu’est-ce que Power BI Desktop ?
       href: desktop-what-is-desktop.md
-  - name: Démarrages rapide
+  - name: Guides de démarrage rapide
     items:
-    - name: Connectez-vous à vos données
+    - name: Se connecter aux données
       href: desktop-quickstart-connect-to-data.md
     expanded: true
-  - name: Didacticiels
+  - name: Tutoriels
     items:
     - name: Mettre en forme et combiner plusieurs sources de données
       href: desktop-shape-and-combine-data.md
@@ -216,7 +216,7 @@ items:
         href: desktop-tooltips.md
       - name: Exporter au format PDF et imprimer des rapports
         href: desktop-export-to-pdf.md
-      - name: Q&A dans Power BI Desktop
+      - name: Questions et réponses dans Power BI Desktop
         href: desktop-qna-in-reports.md
       - name: Volet Analyse de Power BI Desktop
         href: desktop-analytics-pane.md
@@ -372,7 +372,7 @@ items:
     items:
     - name: Qu’est-ce que Power BI ?
       href: power-bi-overview.md
-  - name: Didacticiels
+  - name: Tutoriels
     items:
     - name: Se connecter à un exemple GitHub
       href: service-tutorial-connect-to-github.md
@@ -498,8 +498,6 @@ items:
         href: service-connect-to-prevedere.md
       - name: Project Online
         href: service-connect-to-project-online.md
-      - name: Project Madeira
-        href: service-connect-to-project-madeira.md
       - name: Projectplace
         href: service-connect-to-projectplace.md
       - name: QuickBooks Online
@@ -786,13 +784,13 @@ items:
         href: developer/embedding.md
       - name: Qu’est-ce que Power BI Embedded dans Azure
         href: developer/azure-pbie-what-is-power-bi-embedded.md
-    - name: Didacticiels
+    - name: Tutoriels
       items:
       - name: Incorporer du contenu pour les clients
         href: developer/embed-sample-for-customers.md
       - name: Incorporer du contenu pour votre organisation
         href: developer/embed-sample-for-your-organization.md
-      - name: Intégrer du contenu dans votre application pour des clouds souverains
+      - name: Incorporer du contenu pour les clouds souverains
         href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Concepts
       items:
@@ -876,7 +874,7 @@ items:
       items:
       - name: Ajout de visuels personnalisés dans Power BI
         href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
-    - name: Didacticiels
+    - name: Tutoriels
       items:
       - name: Développement d’un visuel personnalisé Power BI
         href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
@@ -918,7 +916,7 @@ items:
       items:
       - name: Quelles sont les possibilités offertes par l’API Power BI ?
         href: developer/overview-of-power-bi-rest-api.md
-    - name: Didacticiels
+    - name: Tutoriels
       items:
       - name: Transmission de données à un jeu de données
         href: developer/walkthrough-push-data.md
@@ -970,7 +968,7 @@ items:
       href: report-server/get-started.md
     - name: Comparer Power BI Report Server et le service
       href: report-server/compare-report-server-service.md
-  - name: Didacticiels
+  - name: Tutoriels
     items:
     - name: Explorer Power BI Report Server dans une machine virtuelle
       href: report-server/tutorial-explore-report-server-web-portal.md
@@ -1070,7 +1068,7 @@ items:
     items:
     - name: Présentation des passerelles Power BI
       href: service-gateway-getting-started.md
-  - name: Didacticiels
+  - name: Tutoriels
     items:
     - name: Se connecter à des données SQL Server
       href: service-gateway-sql-tutorial.md
@@ -1138,7 +1136,7 @@ items:
         href: service-admin-premium-purchase.md
       - name: Gérer Power BI Premium
         href: service-admin-premium-manage.md
-      - name: Rapport de supervision des capacités Power BI Premium
+      - name: Superviser Power BI Premium
         href: service-admin-premium-monitor-capacity.md
       - name: Prise en charge de jeux de données volumineux
         href: service-premium-large-datasets.md
@@ -1203,9 +1201,9 @@ items:
       href: service-admin-power-bi-security.md
     - name: Migration de Power BI pour Office 365 vers Power BI
       href: service-admin-o365portal-retired.md
-ms.openlocfilehash: bc509b1cd6717cc3ec38e0b8eb404dc9bb4885d3
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 513c5a62b5436d157b1b22fbf1f06735a589dd3b
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641985"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003061"
