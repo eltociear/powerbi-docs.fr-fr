@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: d499f3f3635442f8d9ed0fbf167e53d13ec0ae53
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 411fd408998ba67c4a91ae01e166396530631678
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549980"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909058"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Inscription individuelle à Power BI
 Découvrez comment vous inscrire à Power BI et commencer à l’utiliser pour vos rapports et vos visualisations.
@@ -24,7 +24,7 @@ Découvrez comment vous inscrire à Power BI et commencer à l’utiliser pour 
 
 Power BI peut servir aussi bien d’outil de rapport et de visualisation personnel que de moteur d’analytique et de décision pour des projets de groupe, des divisions ou des grandes entreprises.
 
-Cet article vous guidera tout au long des possibilités qui vous sont offertes pour vous inscrire et commencer à utiliser le service Power BI. Pour plus d’informations sur les différences entre les versions gratuite et Pro de Power BI, consultez la page sur les [versions gratuite et Pro de Power BI](service-free-vs-pro.md).
+Cet article vous guidera tout au long des possibilités qui vous sont offertes pour vous inscrire et commencer à utiliser le service Power BI. Pour plus d’informations sur les différences de fonctionnalités entre les différents types de licences Power BI, consultez [Fonctionnalités Power BI par type de licence](service-features-license-type.md).
 
 ## <a name="you-have-a-few-options"></a>Vous avez plusieurs possibilités
 En tant que personne, vous avez plusieurs possibilités pour vous inscrire et commencer à utiliser Power BI. Vous pouvez choisir de vous inscrire gratuitement ou vous pouvez acheter un abonnement Power BI Pro. Si vous vous inscrivez pour obtenir un compte gratuit, une fois que vous êtes inscrit au service, vous pouvez choisir une version d’essai gratuite de 60 jours de Power BI Pro.
@@ -99,7 +99,7 @@ Vous voyez ensuite un message vous demandant de sélectionner **Démarrer**.
 ## <a name="in-service-power-bi-pro-60-day-trial"></a>Version d’essai en service de 60 jours de Power BI Pro
 Une fois votre compte gratuit créé, vous avez la possibilité d’essayer gratuitement la version Pro pendant 60 jours. Vous aurez accès à toutes les fonctionnalités de la version Pro pendant toute la durée de la version d’évaluation. Power BI Pro dispose de toutes les fonctionnalités de la version gratuite de Power BI, ainsi que de fonctionnalités de partage et de collaboration supplémentaires. Pour plus d’informations, consultez [Tarification de Power BI](https://powerbi.microsoft.com/pricing). Pour essayer une version d’évaluation gratuite de 60 jours de Power BI Pro, connectez-vous à Power BI et essayez l’une des fonctionnalités Power BI Pro suivantes :
 
-* [Créer un espace de travail d’application](consumer/end-user-create-apps.md)
+* [Créer un espace de travail d’application](service-create-distribute-apps.md)
 * [Partager un tableau de bord](service-share-dashboards.md)
 
 Lorsque vous essayez l’une de ces fonctionnalités, vous êtes invité à démarrer votre version d’évaluation gratuite. Vous pouvez sélectionner manuellement cette option en cliquant sur l’icône d’engrenage et en sélectionnant **Gérer le stockage personnel**. Sélectionnez ensuite **Essayez gratuitement la version Pro** sur la droite.
@@ -139,8 +139,7 @@ Dans de nombreux cas, l’inscription à Power BI peut être effectuée en suiv
 |            **Inscription libre-service désactivée** Vous recevez un message comme celui-ci pendant l’inscription : <br /><br /> *Nous ne pouvons pas poursuivre le processus d’inscription. Votre service informatique a désactivé l’inscription à Microsoft Power BI. Contactez-le pour terminer l’inscription.* <br /><br /> ou <br /><br /> *Il semble que vous utilisez une adresse de messagerie personnelle. Entrez votre adresse professionnelle pour que nous puissions vous connecter aux autres utilisateurs de votre organisation. Ne vous inquiétez pas. Nous ne communiquerons pas votre adresse de messagerie.*             |                             L’administrateur informatique de votre organisation a désactivé l’inscription à Power BI. <br /><br /> Pour terminer l’inscription, contactez votre administrateur et demandez-lui de suivre les instructions de la page ci-dessous pour autoriser les utilisateurs existants à s’inscrire à Power BI et pour permettre aux nouveaux utilisateurs de rejoindre le client existant. <br/><br/> Vous pouvez également rencontrer ce problème si vous êtes inscrit à Office 365 par l’intermédiaire d’un partenaire. [En savoir plus](service-admin-syndication-partner.md) <br /><br /> [Power BI dans votre organisation](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant)                              |
 |                                                                                          **L’adresse de messagerie n’est pas un ID Office 365** Vous recevez un message comme celui-ci pendant l’inscription : <br /><br /> *Nous ne vous avons pas trouvé sur contoso.com.  Utilisez-vous un ID différent au sein de votre organisation ou de votre établissement ? <br /><br /> Essayez de vous connecter avec cette adresse et, si elle ne fonctionne pas, contactez votre service informatique.*                                                                                           | Votre organisation utilise des ID pour la connexion à Office 365 et à d’autres services Microsoft et ces ID ne correspondent pas à votre adresse de messagerie.  Par exemple, votre adresse de messagerie peut être Nancy.Smith@contoso.com, mais votre ID est nancys@contoso.com. <br /><br /> Pour terminer l’inscription, utilisez l’ID que votre organisation vous a attribué pour vous connecter à Office 365 ou aux autres services Microsoft.  Si vous ne le connaissez pas, contactez votre administrateur informatique. <br /><br /> Si vous ne pouvez toujours pas vous inscrire, mais êtes en mesure d’effectuer un processus d’installation plus avancé, vous pouvez [vous inscrire à une version d’évaluation d’Office 365 et utiliser cette adresse de messagerie pour vous inscrire](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
-## <a name="next-steps"></a>Étapes suivantes
-[Power BI (gratuit) dans votre organisation](service-admin-service-free-in-your-organization.md)  
+## <a name="next-steps"></a>Étapes suivantes  
 [Achat de Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Contrat du service Power BI pour les utilisateurs individuels](https://powerbi.microsoft.com/terms-of-service/)  
 [Qu’est-ce que Power BI Premium ?](service-premium.md)  

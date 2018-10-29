@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f4eb0ec93057f309720fc4fef33a55d924881383
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ef59d5f42ba913e4ecad79116dea635744534198
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544621"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908575"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Se connecter à Adobe Analytics avec Power BI
 La connexion à Adobe Analytics via Power BI commence par la connexion à votre compte Adobe Analytics Marketing Cloud. Vous obtenez une application avec un tableau de bord Power BI et un ensemble de rapports Power BI qui fournissent des analyses relatives aux dimensions utilisateur et au trafic sur votre site. Les données sont actualisées automatiquement une fois par jour. Vous pouvez interagir avec le tableau de bord et les rapports, mais vous ne pouvez pas enregistrer les modifications.
@@ -25,26 +25,26 @@ Connectez-vous à [Adobe Analytics](https://app.powerbi.com/getdata/services/ado
 ## <a name="how-to-connect"></a>Comment se connecter
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Sélectionnez **Adobe Analytics** \>  **Obtenir**.
+3. Sélectionnez **Adobe Analytics** \>  **Obtenir**.
    
    ![](media/service-connect-to-adobe-analytics/adobe.png)
-2. Power BI se connecte en utilisant les champs Adobe Analytics Company et Report Suite ID (pas le nom de Report Suite). Voir les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
+4. Power BI se connecte en utilisant les champs Adobe Analytics Company et Report Suite ID (pas le nom de Report Suite). Voir les détails sur la [recherche de ces paramètres](#FindingParams) ci-dessous.
    
    ![](media/service-connect-to-adobe-analytics/parameters.png)
-3. Pour la **Méthode d’authentification**, sélectionnez **oAuth2** \> **Se connecter**. Quand vous y êtes invité, entrez vos informations d’identification Adobe Analytics. 
+5. Pour la **Méthode d’authentification**, sélectionnez **oAuth2** \> **Se connecter**. Quand vous y êtes invité, entrez vos informations d’identification Adobe Analytics. 
    
     ![](media/service-connect-to-adobe-analytics/creds.png)
    
     ![](media/service-connect-to-adobe-analytics/adobe_signin.png)
-4. Cliquez sur **Accepter** pour autoriser Power BI à accéder à vos données Adobe Analytics.
+6. Cliquez sur **Accepter** pour autoriser Power BI à accéder à vos données Adobe Analytics.
    
    ![](media/service-connect-to-adobe-analytics/adobe_authorize.png)
-5. Après approbation, le processus d’importation démarre automatiquement. 
+7. Après approbation, le processus d’importation démarre automatiquement. 
 
 ## <a name="view-the-adobe-analytics-dashboard-and-reports"></a>Afficher le tableau de bord et les rapports Adobe Analytics
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![Adobe Analytics dashboard](media/service-connect-to-adobe-analytics/dashboard.png)
+   ![Tableau de bord Adobe Analytics](media/service-connect-to-adobe-analytics/dashboard.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
@@ -82,19 +82,19 @@ La valeur du champ Company se trouve en haut à droite de votre compte une fois 
 
 **Report Suite ID**
 
-L’ID de suite est créé lors de la création de Report Suite. Vous pouvez contacter votre administrateur pour identifier la valeur de l’ID. Notez qu’il ne s’agit pas du nom de Report Suite.
+L’ID de suite est créé lors de la création de Report Suite. Vous pouvez contacter votre administrateur pour identifier la valeur de l’ID. Il ne s’agit pas du nom de Report Suite.
 
 Partie de la [documentation](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html) Adobe :
 
 ![](media/service-connect-to-adobe-analytics/reportsuiteid.png)
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
-Si vous voyez une erreur après avoir entré vos informations d'identification indiquant que vous ne disposez pas d’autorisations, demandez à votre administrateur si vous avez accès à l’API Adobe Analytics. Vérifiez également que l’ID Adobe fourni est liée à votre organisation Cloud Marketing (associée à une société Adobe Analytics).
+Si après avoir entré vos informations d’identification, vous voyez une erreur indiquant que vous ne disposez pas des autorisations nécessaires, vérifiez auprès de votre administrateur que vous avez bien accès à l’API Adobe Analytics. Vérifiez également que l’ID Adobe fourni est liée à votre organisation Cloud Marketing (associée à une société Adobe Analytics).
 
-Si vous rencontrez une erreur après avoir entré correctement les informations d’identification, il se peut que la création des rapports prenne trop de temps. Une erreur courante se présente sous la forme *« Impossible d’obtenir les données du rapport Adobe Analytics. Le contenu incluait &quot;référent, page&quot;, la durée approximative était de xx secondes »*. Consultez la section «Ce qui est inclus » et comparez ces éléments à la taille de votre instance Adobe. Malheureusement, il n’existe actuellement aucun moyen de contourner ce problème de délai d’expiration. Toutefois, nous envisageons d’apporter des mises à jour afin de mieux prendre en charge les plus grandes instances. Envoyez vos commentaires à l’équipe Power BI sur https://ideas.powerbi.com
+Si vous rencontrez une erreur après avoir entré correctement les informations d’identification, il se peut que la création des rapports prenne trop de temps. Une erreur courante se présente sous la forme *« Impossible d’obtenir les données du rapport Adobe Analytics. Le contenu incluait &quot;référent, page&quot;, la durée approximative était de xx secondes »*. Consultez la section « Ce qui est inclus » et comparez ces éléments à la taille de votre instance Adobe. Malheureusement, il n’existe actuellement aucun moyen de contourner ce problème de délai d’expiration. Toutefois, nous prévoyons d’apporter des modifications afin de mieux prendre en charge les plus grandes instances. Vous pouvez envoyer vos commentaires à l’équipe Power BI sur https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Que sont les applications dans Power BI ?](consumer/end-user-apps.md)
+* [Que sont les applications dans Power BI ?](service-create-distribute-apps.md)
 * [Obtenir des données dans Power BI](service-get-data.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

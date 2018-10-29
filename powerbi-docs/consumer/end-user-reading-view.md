@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: de7766176f5c25288912cf463dce79f487e7335d
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: f108ab3c924f6ff69bc6ee6aae5ed0539ce3f11d
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565104"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908077"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Modes Lecture et Édition dans les rapports du service Power BI
 Dans le service Power BI (mais pas dans Power BI Desktop), il existe deux modes d’utilisation et d’affichage des rapports : le mode Lecture et le mode Édition. Le mode Lecture est disponible pour tous les utilisateurs et il est spécialement conçu pour les *consommateurs* de données tandis que le mode Édition est disponible uniquement pour les propriétaires et les *créateurs* de rapports.
@@ -26,11 +26,12 @@ Dans le service Power BI (mais pas dans Power BI Desktop), il existe deux modes 
 
  Le mode Lecture permet d’explorer et d’exploiter le rapport. C’est un cadre amusant et une méthode sûre pour jouer et vous familiariser avec vos données. Le mode Lecture est conçu pour les *consommateurs* de rapports, à savoir les utilisateurs qui ouvrent des rapports à partir d’applications ou qui ont accès à des [rapports partagés](../service-share-dashboards.md). Le mode Lecture permet de garantir que chaque consommateur individuel d’un rapport spécifique voit le même rapport, les mêmes visualisations, avec les mêmes filtres éventuels appliqués.  Les consommateurs peuvent interagir avec les rapports et modifier les filtres existants (ces modifications étant enregistrées avec le rapport), mais ils ne peuvent pas ajouter de nouveaux filtres.
 
->**Remarque** : dans certains cas, les consommateurs de rapports peuvent afficher diverses données en raison d’autorisations d’accès aux données et de la sécurité au niveau des lignes.
+> [!NOTE]
+> Dans certains cas, les consommateurs de rapports peuvent voir des données différentes en raison d’autorisations d’accès aux données et de la sécurité au niveau des lignes.
 
 ## <a name="report-editing-view"></a>Mode Édition dans un rapport
 
-Le mode Édition est uniquement disponible pour l’utilisateur qui a créé le rapport ou qui est [copropriétaire d’un rapport en tant que membre ou administrateur d’un espace de travail d’application](end-user-create-apps.md).
+Le mode Édition est uniquement disponible pour l’utilisateur qui a créé le rapport ou qui est [copropriétaire d’un rapport en tant que membre ou administrateur d’un espace de travail d’application](../service-create-distribute-apps.md).
 
 Le Mode Édition est conçu pour les *créateurs* de rapports. C’est l’emplacement où les créateurs importent des jeux de données et s’y connectent, explorent les données et créent des rapports et tableaux de bord. Le mode Édition permet aux *créateurs* d’affiner l’analyse de leurs données par l’ajout et la suppression des champs, la modification du type des visualisations, la création de nouvelles visualisations et l’ajout et la suppression des visualisations et des pages d’un rapport. Ils peuvent alors partager les rapports qu’ils créent avec des collègues.
 
@@ -53,11 +54,11 @@ Ce graphique ne répertorie pas toutes les fonctionnalités de rapport du servic
 | [Afficher les métriques d’utilisation](../service-usage-metrics.md) | Oui, sur le canevas de rapport. | Oui, dans la liste des rapports (affichage de contenu) |
 | [Afficher les éléments associés](end-user-related.md) | Oui, sur le canevas de rapport. | Oui, dans la liste des rapports (affichage de contenu) |
 | [Enregistrer un rapport](../service-report-save.md) | Oui, mais uniquement à l’aide de **Enregistrer sous**. | Oui |
-| [Supprimer un rapport](end-user-delete.md) | Non  | Oui |
+| [Supprimer un rapport](../service-delete.md) | Non  | Oui |
 |**Page du rapport** |
 | [Ajouter ou renommer une page de rapport](../power-bi-report-add-page.md)  | Non  | Oui  |
 | [Dupliquer une page de rapport](../power-bi-report-copy-paste-page.md) | Non  | Oui |
-| [Supprimer une page de rapport](end-user-delete.md) | non | oui |
+| [Supprimer une page de rapport](../service-delete.md) | non | oui |
 |**Utilisation des visualisations de rapports**|
 | [Ajouter des visualisations à un rapport](../visuals/power-bi-report-add-visualizations-i.md) | Non  | Oui |
 | [Ajouter des zones de texte et des formes à un rapport](../power-bi-reports-add-text-and-shapes.md) | Non  | Oui |
@@ -66,7 +67,7 @@ Ce graphique ne répertorie pas toutes les fonctionnalités de rapport du servic
 | [Afficher les données utilisées pour créer la visualisation](end-user-show-data.md) | Non  | Oui |
 | [Configurer l’exploration](end-user-drill.md) | Non  | Oui |
 | [Modifier la visualisation utilisée](../visuals/power-bi-report-change-visualization-type.md) | Non | Oui|
-| [Supprimer une visualisation, une zone de texte ou une forme](end-user-delete.md)| Non | Oui |
+| [Supprimer une visualisation, une zone de texte ou une forme](../service-delete.md)| Non | Oui |
 
 
 ## <a name="navigating-between-editing-view-and-reading-view"></a>Basculer du mode Lecture au mode Édition et inversement
@@ -88,7 +89,6 @@ N’oubliez pas que seuls les propriétaires et les créateurs de rapports sont 
 
 
 
-### <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 Il existe de nombreuses façons d’interagir avec un rapport en mode Lecture, de découper vos données pour obtenir des informations détaillées et d’obtenir des réponses aux questions.  La rubrique suivante intitulée [Interagir avec un rapport en mode Lecture](../service-interact-with-a-report-in-editing-view.md) décrit en détail certaines de ces méthodes.    
-Revenez à [Rapports dans Power BI](end-user-reports.md)    
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+Revenir à [Rapports dans Power BI](end-user-reports.md)    

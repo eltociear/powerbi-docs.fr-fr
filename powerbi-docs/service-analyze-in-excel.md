@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4e2ff9afcccc9bc32d47359fba386fcb0c704457
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: bbffe00507462c3a41ee07cb86c2376a072e5437
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327634"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271552"
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
 Vous pouvez utiliser Excel pour afficher et interagir avec un jeu de données Power BI. L’option qui permet cela se nomme **Analyser dans Excel**. Cette option permet également d’accéder aux fonctionnalités de segments, de graphiques et de tableaux croisés dynamiques d’Excel, selon le jeu de données qui se trouve dans Power BI.
@@ -26,7 +26,7 @@ Il existe certaines conditions à l’utilisation de l’option **Analyser dans 
 * **Analyser dans Excel** est compatible avec Microsoft Excel 2010 SP1 et versions ultérieures.
 * Les tableaux croisés dynamiques d’Excel ne prennent pas en charge l’agrégation des champs numériques en mode glisser-déposer. Des *mesures doivent être prédéfinies* pour votre jeu de données dans Power BI.
 * Certaines organisations appliquent des règles de stratégie de groupe qui empêchent l’installation des mises à jour requises relatives à l’option **Analyser dans Excel**. Si vous ne parvenez pas à installer les mises à jour, contactez votre administrateur.
-* **Analyser dans Excel** requiert une licence Pro. Pour en savoir plus sur les différences de fonctionnalités entre la licence gratuite et la licence Pro, consultez la section [Comparaison entre Power BI gratuit et Power BI Pro](service-free-vs-pro.md). 
+* **Analyser dans Excel** requiert une licence Pro. Pour plus d’informations sur les différences de fonctionnalités entre les différents types de licences, consultez [Fonctionnalités Power BI par type de licence](service-features-license-type.md). 
 
 ## <a name="how-does-it-work"></a>Comment ça marche ?
 Quand vous sélectionnez **Analyser dans Excel** à partir du bouton de sélection (...) associé à un groupe de données ou à un rapport dans **Power BI**, Power BI crée un fichier .ODC et le télécharge sur votre ordinateur à partir du navigateur.

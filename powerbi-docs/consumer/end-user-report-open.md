@@ -1,23 +1,23 @@
 ---
-title: Afficher un rapport dans le service Power BI
-description: Ouvrir un rapport Power BI en mode Lecture.
+title: Affichez un rapport dans le service Power BI pour les consommateurs.
+description: Cette rubrique montre comment les utilisateurs finaux et consommateurs de Power BI peuvent ouvrir et afficher un rapport Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 10/17/2018
 ms.author: mihart
-ms.openlocfilehash: 4d37c1389628078466d8fedb290d928c3f02e7d5
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 15259d472ad315eb0a6274e59ebb30b94f48a302
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112012"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396931"
 ---
-# <a name="view-a-report-in-power-bi-service-apppowerbicom"></a>Afficher un rapport dans le service Power BI (app.powerbi.com)
-Un rapport est constitué d’une ou de plusieurs pages d’éléments visuels. Les rapports sont créés par Power BI *concepteurs de rapports* et [partagés avec vous directement](end-user-shared-with-me.md) ou comme partie d’une [application](end-user-apps.md). 
+# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Afficher un rapport dans le service Power BI pour les *consommateurs*
+Un rapport est constitué d’une ou de plusieurs pages d’éléments visuels. Les rapports sont créés par des *concepteurs de rapports* Power BI et [partagés avec des *consommateurs* directement](end-user-shared-with-me.md) ou dans le cadre d’une [application](end-user-apps.md). 
 
 Il existe différentes manières d’ouvrir un rapport et nous vous en montrerons deux : ouvrir à partir de la page d’accueil et ouvrir à partir d’un tableau de bord. 
 
@@ -42,7 +42,7 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous en 
    
    ![section Partagé avec moi de la page d’accueil](./media/end-user-report-open/power-bi-shared.png)
 
-4. Il suffit de sélectionner une des cartes de rapport pour ouvrir le rapport.
+4. Il suffit de sélectionner l’une des *cartes* de rapport pour ouvrir le rapport.
 
    ![page de rapport](./media/end-user-report-open/power-bi-report1.png)
 
@@ -65,10 +65,10 @@ Si vous avez reçu des applications de collègues ou d’AppSource, ces applicat
 
    ![Page d'accueil](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Sélectionnez une des applications pour l’ouvrir. Selon les options définies par le *concepteur* de l’application, celle-ci ouvrira un tableau de bord ou un rapport. Si vous sélectionnez l’application :
+8. Sélectionnez une des applications pour l’ouvrir. Selon les options définies par le *concepteur* de l’application, celle-ci ouvrira un tableau de bord, un rapport ou une liste de contenu d’application. Si vous sélectionnez l’application :
     - le rapport s’ouvre, c’est parti.
     - un tableau de bord s’ouvre, consultez [Ouvrir un rapport à partir d’un tableau de bord](#Open-a-report-from-a-dashboard) ci-dessous.
-
+    - la liste de contenu d’application s’ouvre sous **Rapports**, sélectionnez le rapport pour l’ouvrir.
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Ouvrir un rapport à partir d’un tableau de bord
@@ -83,15 +83,15 @@ Les rapports peuvent être ouverts à partir d’un tableau de bord. La plupart 
     ![rapport ouvert en mode Lecture](./media/end-user-report-open/power-bi-report-new.png)
 
 > [!NOTE]
-> Toutes les vignettes ne conduisent pas à un rapport. Si vous sélectionnez une vignette [créée avec Questions et réponses](../service-dashboard-pin-tile-from-q-and-a.md), l’écran Questions et réponses s’ouvre. Si vous sélectionnez une vignette [créée à l’aide du widget](../service-dashboard-add-widget.md) **Ajouter une vignette** du tableau de bord, l’Assistant q**Modifier une vignette** s’ouvre.  
+> Toutes les vignettes ne conduisent pas à un rapport. Si vous sélectionnez une vignette [créée avec Questions et réponses](end-user-q-and-a.md), l’écran Questions et réponses s’ouvre. Si vous sélectionnez une vignette [créée à l’aide du widget **Ajouter une vignette** du tableau de bord](../service-dashboard-add-widget.md), plusieurs événements différents peuvent se produire.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Autres moyens pour ouvrir un rapport
 Une fois que vous serez familiarisé avec la navigation dans le service Power BI, vous pourrez déterminer le flux de travail qui vous convient le mieux. Voici d’autres façons d’accéder aux rapports :
 - À partir du volet de navigation gauche, à l’aide de **Favoris** et de **Récent**    
 - À l’aide de [Afficher les éléments associés](end-user-related.md)    
-- Dans un e-mail quand un utilisateur [partage avec vous](../service-share-reports.md) ou que vous [définissez une alerte](../service-set-data-alerts.md)    
-- À partir de votre [Centre de Notification] (end-user-notification-center.md)    
+- Dans un e-mail quand un utilisateur [partage avec vous](../service-share-reports.md) ou que vous [définissez une alerte](end-user-alerts.md)    
+- À partir du [Centre de notifications](end-user-notification-center.md)    
 - Et plus encore
 
 ## <a name="next-steps"></a>Étapes suivantes

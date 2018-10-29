@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112259"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396807"
 ---
 # <a name="export-data-from-visualizations"></a>Exportez des données à partir de visualisations
-Si vous souhaitez afficher les données qui sont utilisées pour créer une visualisation, vous pouvez le faire dans Power BI ou exporter ces données vers Excel sous forme de fichier .xlsx ou .csv.   
+Si vous souhaitez afficher les données qui sont utilisées pour créer une visualisation, vous pouvez le faire dans Power BI ou exporter ces données vers Excel sous forme de fichier .xlsx ou .csv. La possibilité d’exporter les données nécessite une licence Pro ou Premium et des autorisations de modification sur le jeu de données et le rapport. 
 
 Regardez Will pendant qu’il exporte les données à partir d’une des visualisations de son rapport, les enregistre au format .xlsx et ouvre le fichier dans Excel. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même.
 
@@ -88,13 +88,16 @@ Ce qui s’affiche à l’écran quand vous sélectionnez **Données sous-jacent
 |    Mesures     |                                       Toutes les données non masquées des tables qui contiennent cette mesure (dans la mesure où il s’agit d’une relation \*:1 ou 1:1)                                       |
 |    Mesures     |                                      Toutes les données de toutes les tables associées à une ou plusieurs tables contenant les mesures via une chaîne de \*: 1 sur 1:1.                                      |
 |  Mesures uniquement  |                                                   Toutes les colonnes non masqués de toutes les tables associées (dans le but d’étendre la mesure)                                                   |
-|  Mesures uniquement  |                                                             Les données résumées de toutes les lignes en double pour les mesures du modèle.                                                              |
+|  Mesures uniquement  |                                                             Les données totalisées de toutes les lignes en double pour les mesures du modèle.                                                              |
 
 ### <a name="set-the-export-options"></a>Définir les options d’exportation
 Les concepteurs de rapports Power BI contrôlent les types d’options d’exportation de données qui sont à la disposition de leurs clients. Les choix sont les suivants :
-- Autoriser l’exportation de résumés uniquement (il s’agit de la valeur par défaut pour les rapports) 
-- Autoriser l’exportation de données résumées et sous-jacentes  
+- Autoriser l’exportation de données totalisées uniquement (il s’agit de la valeur par défaut pour les nouveaux rapports) 
+- Autoriser l’exportation de données totalisées et sous-jacentes (il s’agissait de la valeur par défaut avant octobre 2018) 
 - Ne pas autoriser l’exportation de données  
+
+    > [!IMPORTANT]
+    > Nous recommandons aux concepteurs de rapports de réexaminer les anciens rapports et de réinitialiser manuellement l’option d’exportation en fonction des besoins.
 
 1. Pour définir ces options, démarrez dans Power BI Desktop.
 

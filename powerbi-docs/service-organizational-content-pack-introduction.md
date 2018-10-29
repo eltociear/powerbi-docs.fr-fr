@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 453b0f5852fefb1008b8013a0c42af4cc1d42f32
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 3f8a5075290620d9d1ed1829008002ff71d25c82
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547634"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908156"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Présentation des packs de contenu d’organisation dans Power BI
 > [!NOTE]
@@ -33,11 +33,11 @@ Dans AppSource, vous pouvez parcourir ou rechercher les packs de contenu publié
 Les tableaux de bord, rapports et classeurs Excel sont en lecture seule. Toutefois, vous pouvez copier les tableaux de bord et les rapports pour vous en servir comme point de départ afin de créer votre propre version personnalisée du pack de contenu.
 
 > [!NOTE]
-> Les packs de contenu d’organisation sont disponibles seulement si vos collègues et vous-même disposez de [Power BI Pro](service-free-vs-pro.md).
+> Les packs de contenu d’organisation sont disponibles seulement si vos collègues et vous-même disposez de [licences Power BI Pro](service-features-license-type.md).
 > 
 > 
 
-## <a name="what-is-appsource"></a>Qu’est-ce qu’*AppSource* ?
+## <a name="what-is-appsource"></a>Qu’est-ce qu’*AppSource* ?
 La publication d’un pack de contenu d’organisation l’ajoute à AppSource.  Ce dépôt centralisé permet à des membres de parcourir et de découvrir facilement des tableaux de bord, des rapports et des jeux de données publiés pour eux.  
 
 * Pour afficher AppSource, sélectionnez **Obtenir les données** > **Mon organisation** > **Obtenir**.
@@ -52,7 +52,7 @@ Le cycle de vie ressemble à ceci :
 1. Dans Power BI Pro, Nate crée un pack de contenu et le publie dans le groupe de distribution Marketing. Les paramètres d’actualisation sont hérités avec le jeu de données et peuvent être modifiés uniquement par Nate.
    
    > [!NOTE]
-   > Si Nate crée le pack de contenu au sein d’un [espace de travail Power BI](consumer/end-user-create-apps.md) auquel il appartient, même s’il quitte cet espace de travail, d’autres utilisateur de l’espace de travail Power BI peuvent en prendre possession.
+   > Si Nate crée le pack de contenu au sein d’un [espace de travail Power BI](service-create-distribute-apps.md) auquel il appartient, même s’il quitte cet espace de travail, d’autres utilisateur de l’espace de travail Power BI peuvent en prendre possession.
    > 
    > 
 2. Nate envoie un message au groupe de distribution, en lui donnant des informations sur le nouveau pack de contenu.
@@ -76,7 +76,7 @@ Tous les membres d’un groupe de distribution ont les mêmes autorisations sur 
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer et publier un pack de contenu d’organisation](service-organizational-content-pack-create-and-publish.md)
-* [Créer et distribuer une application dans Power BI](consumer/end-user-create-apps.md) 
+* [Créer et distribuer une application dans Power BI](service-create-distribute-apps.md) 
 * [Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
 * D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

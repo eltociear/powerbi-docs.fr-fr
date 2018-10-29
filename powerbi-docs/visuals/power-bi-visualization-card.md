@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 865e19f368b8e1915d0262ae6356e70a8dbc2781
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 9654e2838b1b62dcc856e2870b3fcc1e5301641c
+ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416893"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48874572"
 ---
 # <a name="card-visualizations"></a>Visualisations de carte
 Vous pouvez parfois vouloir suivre un nombre unique dans votre tableau de bord ou rapport Power BI pour l’importance qu’il représente, qu’il s’agisse du total des ventes, de la part de marché d’une année sur l’autre ou du nombre total d’opportunités. Ce type de visualisation est appelé *carte*. Avec la plupart des visualisations Power BI natives, des cartes peuvent être créées à l’aide de l’éditeur de rapport ou dans Questions et réponses.
@@ -58,7 +58,7 @@ La zone de question Questions et réponses est le moyen le plus simple de créer
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
 > [!TIP]
-> Dans un rapport Power BI, en [mode Édition](../service-reading-view-and-editing-view.md), sélectionnez **Poser une question** dans la barre de menus supérieure. Dans un rapport Power BI Desktop, recherchez un espace vide et double-cliquez pour ouvrir une zone de question.
+> Dans un rapport du service Power BI, en mode Édition, sélectionnez **Poser une question** dans la barre de menus supérieure. Dans un rapport Power BI Desktop, recherchez un espace vide et double-cliquez pour ouvrir une zone de question.
 
 3. Par exemple, tapez « nombre d’opportunités » dans la zone de question.
 

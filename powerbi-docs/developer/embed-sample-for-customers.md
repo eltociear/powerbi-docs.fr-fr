@@ -3,18 +3,18 @@ title: Incorporer du contenu Power BI dans une application pour vos clients
 description: Découvrez comment intégrer ou incorporer un rapport, un tableau de bord ou une vignette dans une application web avec les API Power BI pour vos clients.
 author: markingmyname
 ms.author: maghan
-ms.date: 06/20/2018
+manager: kfile
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-manager: kfile
-ms.openlocfilehash: 3cb33180c24022c1e328691ce3a776875d4c87a9
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.date: 06/20/2018
+ms.openlocfilehash: 6685b47de6fbcc4ce35d5087c545814e34092d11
+ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47238120"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48827430"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application pour vos clients
 
@@ -57,7 +57,7 @@ Inscrivez votre application sur Azure Active Directory pour l’autoriser à a
     ![Recherche d’inscription d’application](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Nouvelle inscription d’application](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Suivez les invites pour créer une application. Dans le cas où les applications possèdent les données, il est nécessaire d’utiliser le type d’application **Natif**. Vous devez également indiquer un **URI de redirection**, qui sera utilisé par **Azure AD** pour retourner des réponses de jeton. Entrez une valeur propre à votre application (par exemple, `http://localhost:13526/Redirect`).
+4. Suivez les invites pour créer une application. Dans le cas où les applications sont propriétaires des données, vous devez utiliser le type d’application **Natif**. Vous devez également indiquer un **URI de redirection**, qui sera utilisé par **Azure AD** pour retourner des réponses de jeton. Entrez une valeur propre à votre application (par exemple, `http://localhost:13526/Redirect`).
 
     ![Créer une application](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
@@ -76,7 +76,7 @@ Il est nécessaire d’activer des autorisations supplémentaires pour l’appli
     ![Autorisations requises](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
 
 3. Sélectionnez **Windows Azure Active Directory** puis vérifiez que l’option **Accéder au répertoire en tant qu’utilisateur actuellement connecté** est sélectionnée. Sélectionnez **Enregistrer**.
-   
+
     ![Autorisations Windows Azure AD](media/embed-sample-for-customers/embed-sample-for-customers-011.png)
 
 4. Sélectionnez **Ajouter**.
@@ -92,13 +92,13 @@ Il est nécessaire d’activer des autorisations supplémentaires pour l’appli
     ![Sélectionner PBI Services](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
 7. Sous **Autorisations déléguées**, sélectionnez toutes les autorisations. Vous devez les sélectionner une par une pour enregistrer les sélections. Lorsque vous avez terminé, sélectionnez **Enregistrer**.
-   
+
     ![Sélectionner les autorisations déléguées](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
 8. Dans **Autorisations requises**, sélectionnez **Accorder des autorisations**.
-   
+
     L’action **Accorder des autorisations** a besoin du *compte principal* pour éviter d’être invitée à obtenir le consentement d’Azure AD. Si le compte qui effectue cette action est celui d’un administrateur général, vous devez accorder des autorisations à tous les utilisateurs de votre organisation pour cette application. Si le compte qui effectue cette action est le *compte principal* et pas celui d’un administrateur général, vous devez uniquement accorder des autorisations au *compte principal* pour cette application.
-   
+
     ![Accorder des autorisations dans la boîte de dialogue Autorisations requises](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurer votre environnement Power BI
@@ -171,7 +171,7 @@ Suivez ces étapes pour commencer l’incorporation de votre contenu à l’aide
 
     ![Page principale du Portail Azure](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-    Dans le volet de navigation de gauche, choisissez **Tous les services**, puis sélectionnez **Inscriptions d’applications**.
+    Dans le volet de navigation gauche, choisissez **Tous les services**, puis sélectionnez **Inscriptions d’applications**.
 
     ![Recherche d’inscription d’application](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
@@ -277,6 +277,7 @@ var embedConfig = new EmbedConfig()
 Cela suppose la création d’une classe pour **EmbedConfig** et **TileEmbedConfig**. Un exemple de ces éléments est disponible dans le fichier **Models\EmbedConfig.cs** et le fichier **Models\TileEmbedConfig.cs**.
 
 ### <a name="load-an-item-using-javascript"></a>Charger un élément en utilisant JavaScript
+
 JavaScript permet de charger un rapport dans un élément div sur votre page web.
 
 Pour obtenir un exemple complet d’utilisation de l’API JavaScript, vous pouvez utiliser [l’outil Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). C’est un moyen rapide de jouer avec différents types d’exemples Power BI Embedded. Pour plus d’informations sur l’API JavaScript, vous pouvez consulter la page du [wiki PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).

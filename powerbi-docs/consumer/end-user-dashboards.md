@@ -7,32 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ccfa947f83a5079cda3bfb173c0f83f6b811a9ff
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 7db5bf514b567cbcaf9dddc5d48006762237a622
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564736"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909127"
 ---
 # <a name="dashboards-in-power-bi-service"></a>Tableaux de bord dans le service Power BI
 
 Un ***tableau de bord*** Power BI est une page unique, souvent appelée canevas, qui utilise des visualisations pour raconter une histoire. Comme il est limité à une seule page, un tableau de bord bien conçu contient uniquement les éléments les plus importantes de cette histoire.
 
-![tableau de bord](./media/end-user-dashboards/power-bi-dashboard2.png)
+![tableau de bord](media/end-user-dashboards/power-bi-dashboard2.png)
 
 Les visualisations que vous voyez dans le tableau de bord sont appelées *vignettes* et sont *épinglées* au tableau de bord à partir de rapports. Si vous êtes novice dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Power BI – Concepts de base](end-user-basic-concepts.md).
 
 > [!NOTE]
-> Les tableaux de bord sont une fonctionnalité du service Power BI et ne sont pas disponibles dans Power BI Desktop. Les tableaux de bord ne peuvent pas être créés sur les appareils mobiles, mais ils peuvent être [affichés et partagés](mobile/mobile-apps-view-dashboard.md).
+> Les tableaux de bord sont une fonctionnalité du service Power BI et ne sont pas disponibles dans Power BI Desktop. Les tableaux de bord ne peuvent pas être créés sur les appareils mobiles, mais ils peuvent être [affichés et partagés](/mobile/mobile-apps-view-dashboard.md).
 > 
 > 
 
 Les visualisations sur un tableau de bord proviennent de rapports, et chaque rapport est basé sur un jeu de données. En fait, on peut considérer un tableau de bord comme une porte d’entrée dans les rapports et les jeux de données sous-jacents. La sélection d’une visualisation vous amène au rapport (et au jeu de données) utilisé(s) pour la créer.
 
-![diagramme montrant la relation entre les tableaux de bord, les rapports, les jeux de données](./media/end-user-dashboards/power-bi-diagram.png)
+![diagramme montrant la relation entre les tableaux de bord, les rapports, les jeux de données](media/end-user-dashboards/power-bi-diagram.png)
 
 ## <a name="advantages-of-dashboards"></a>Avantages des tableaux de bord
 Les tableaux de bord sont un moyen formidable pour surveiller votre activité, pour rechercher des réponses et pour afficher vos mesures les plus importantes en un coup d’œil. Les visualisations sur un tableau de bord peuvent provenir d’un ou plusieurs jeux de données sous-jacents et d’un ou plusieurs rapports sous-jacents. Un tableau de bord combine des données locales et issues du cloud, offrant ainsi une vue consolidée, quel que soit l’endroit où les données résident.
@@ -40,7 +40,7 @@ Les tableaux de bord sont un moyen formidable pour surveiller votre activité, p
 Un tableau de bord n’est pas simplement une belle image ; il est extrêmement interactif et hautement personnalisable ; et les vignettes sont mises à jour au fur et à mesure que les données sous-jacentes changent.
 
 ## <a name="dashboards-versus-reports"></a>Tableaux de bord et rapports
-Les [rapports](end-user-reports.md) sont souvent confondus avec les tableaux de bord, car il s’agit également de canevas remplis avec des visualisations. Mais il existe quelques différences majeures.
+Les rapports sont souvent confondus avec les tableaux de bord, car il s’agit également de canevas contenant des visualisations. Mais il existe quelques différences majeures.
 
 | **Fonctionnalité** | **Tableaux de bord** | **Rapports** |
 | --- | --- | --- |
@@ -65,28 +65,16 @@ Voici quelques rubriques, par rôle, qui vous aideront à démarrer.
 
 Power BI Pro est nécessaire pour partager un tableau de bord et afficher un tableau de bord partagé.
 
-### <a name="if-you-will-be-creating-and-sharing-dashboards"></a>Si vous devez créer et partager des tableaux de bord
-* Utilisez l’un de nos exemples pour [créer un tableau de bord à partir d’un rapport](../service-dashboard-create.md).
-* Apprenez-en plus sur les [vignettes du tableau de bord](end-user-tiles.md) et les différentes façons de les épingler sur un tableau de bord.
-* Aidez vos utilisateurs en créant des tableaux de bord qui [fonctionnent correctement avec les requêtes en langage naturel Q&R](../service-prepare-data-for-q-and-a.md) et avec des [informations rapides](../service-insights-optimize.md).
-* Découvrez les différentes méthodes disponibles pour [partager un tableau de bord avec des collègues](../service-how-to-collaborate-distribute-dashboards-reports.md).
-
 ### <a name="if-you-will-be-receiving-and-consuming-dashboards"></a>Si vous devez recevoir et utiliser des tableaux de bord
 * Familiarisez-vous avec les tableaux de bord en effectuant une visite guidée d’un de nos [exemples de tableau de bord](../sample-tutorial-connect-to-the-samples.md).
 * Apprenez-en plus sur les [vignettes du tableau de bord](end-user-tiles.md) et ce qui se produit lorsque vous sélectionnez une.
-* Vous n’aimez pas l’aspect d’un tableau de bord ?  Vous pouvez [redimensionner, déplacer et renommer les vignettes](../service-dashboard-edit-tile.md).
-* Si vous souhaitez effectuer le suivi d’une vignette du tableau de bord et recevoir un e-mail lorsqu’elle atteint un certain seuil ? [Créer des alertes sur les vignettes](../service-set-data-alerts.md).
-* Amusez-vous en posant des questions à votre tableau de bord. Découvrez comment utiliser [Power BI Q&A](../power-bi-tutorial-q-and-a.md) pour poser une question concernant vos données et obtenir la réponse sous la forme d’une visualisation.
+* Si vous souhaitez effectuer le suivi d’une vignette du tableau de bord et recevoir un e-mail lorsqu’elle atteint un certain seuil ? [Créer des alertes sur les vignettes](end-user-alerts.md).
+* Amusez-vous en posant des questions à votre tableau de bord. Découvrez comment utiliser [Power BI Q&A](end-user-q-and-a.md) pour poser une question concernant vos données et obtenir la réponse sous la forme d’une visualisation.
 
 > [!TIP]
 > Si vous n’avez pas trouvé pas ce que vous cherchiez ici, utilisez la table des matières sur la gauche.
-> 
 > 
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Qu’est-ce que Power BI ?](../power-bi-overview.md)  
 [Power BI – Concepts de base](end-user-basic-concepts.md)  
-[Qu’est-ce que Power BI Premium ?](../service-premium.md)  
-
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-
