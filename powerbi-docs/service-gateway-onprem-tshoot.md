@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: a8f0360d87fe5bf4e19632a92d8dfe4cf61da16e
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 2a4fb3bdf4e1041ceb90cde9b6c5f26fcb9a3871
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49474023"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101643"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
 
@@ -446,7 +446,7 @@ Les résultats du test listent tous les serveurs, ports et adresses IP qui sont 
 
 ## <a name="kerberos"></a>Kerberos
 
-Si le serveur de base de données sous-jacent et la passerelle de données locale ne sont pas configurés correctement pour la [Délégation Kerberos contrainte](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), activez la [journalisation détaillée](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) sur la passerelle et recherchez les erreurs/traces dans les fichiers journaux de la passerelle comme point de départ pour la résolution du problème.
+Si le serveur de base de données sous-jacent et la passerelle de données locale ne sont pas configurés correctement pour la [Délégation Kerberos contrainte](service-gateway-sso-kerberos.md), activez la [journalisation détaillée](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) sur la passerelle et recherchez les erreurs/traces dans les fichiers journaux de la passerelle comme point de départ pour la résolution du problème.
 
 ### <a name="impersonationlevel"></a>ImpersonationLevel
 
