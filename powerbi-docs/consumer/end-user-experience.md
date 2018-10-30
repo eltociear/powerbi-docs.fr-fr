@@ -8,19 +8,19 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/02/2018
+ms.date: 10/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 41bd4148845754d1b714060e538f559b310969d8
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112150"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473862"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Démarrage rapide - Découverte du service Power BI
 
-Maintenant que vous connaissez les concepts de base de Power BI, vous êtes prêt à découvrir le **service Power BI**. Comme mentionné précédemment, une personne de votre équipe peut passer tout son temps à travailler dans **Power BI Desktop**, afin de combiner les données et créer des rapports pour d’autres. De votre côté, vous passez peut-être tout votre temps à travailler dans le service Power BI pour afficher et exploiter du contenu créé par d’autres personnes (expérience de **consommation**) ou pour obtenir des données et créer vos propres rapports et tableaux de bord (expérience de **création**). Dans ce guide de démarrage rapide, vous allez importer des exemples de données, puis vous servir de ces données pour apprendre à utiliser le service Power BI. 
+Maintenant que vous connaissez les concepts de base de Power BI, vous êtes prêt à découvrir le **service Power BI**. Comme mentionné précédemment, une personne de votre équipe peut passer tout son temps à travailler dans **Power BI Desktop**, afin de combiner les données et créer des rapports pour d’autres. De votre côté, vous passez peut-être tout votre temps à travailler dans le service Power BI pour afficher et exploiter du contenu créé par d’autres personnes (expérience de **consommation**). Dans ce guide de démarrage rapide, vous allez importer des exemples de données, puis vous servir de ces données pour apprendre à utiliser le service Power BI. 
  
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -48,9 +48,11 @@ Suivez Amanda dans une visite guidée de l’expérience de navigation du servic
 
 
 ## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Affichage du contenu (tableaux de bord, rapports, classeurs, jeux de données, espaces de travail, applications)
-Commençons par examiner comment le contenu de base (tableaux de bord, rapports, jeux de données, classeurs) est organisé. Le contenu s’affiche dans le contexte d’un espace de travail. Pour le moment, vous voyez un seul espace de travail, appelé **Mon espace de travail**. Mon espace de travail stocke tout le contenu qui vous appartient. Considérez-le comme votre zone de travail ou bac à sable personnel pour votre propre contenu. À partir de Mon espace de travail, vous pouvez partager du contenu avec des collègues. Dans Mon espace de travail, votre contenu est organisé en 4 onglets : Tableaux de bord, Rapports, Classeurs et Jeux de données.
+Commençons par examiner comment le contenu de base (tableaux de bord, rapports, jeux de données, classeurs) est organisé. Le contenu s’affiche dans le contexte d’un espace de travail. Pour le moment, vous voyez un seul espace de travail, appelé **Mon espace de travail**. En général, les consommateurs n’ont pas besoin d’autres espaces de travail. Mon espace de travail stocke tout le contenu qui vous appartient. Considérez-le comme votre zone de travail ou bac à sable personnel pour votre propre contenu. Mon espace de travail est l’emplacement où l’exemple Analyse de la vente au détail que vous venez de télécharger est enregistré. 
 
-![écran Mon espace de travail](./media/end-user-experience/power-bi-my-workspace2.png)
+Dans Mon espace de travail, votre contenu est organisé en 4 onglets : Tableaux de bord, Rapports, Classeurs et Jeux de données.
+
+![écran Mon espace de travail](./media/end-user-experience/power-bi-my-workspace.png)
 
 Sélectionnez un espace de travail dans le volet de navigation de gauche. Les onglets correspondant au contenu associé (tableaux de bord, rapports, classeurs, jeu de données) occupent la zone de dessin de Power BI à droite.
 
@@ -58,7 +60,7 @@ Si vous êtes un nouvel utilisateur, vous voyez seulement **Mon espace de travai
 
 ![courte vidéo de l’espace de travail](./media/end-user-experience/nav.gif)
 
-Ces onglets (les *vues du contenu*) présentent des informations sur le contenu ainsi que les actions possibles sur ce contenu.  Par exemple, à partir de l’onglet Tableaux de bord, vous pouvez ouvrir un tableau de bord et effectuer diverses actions sur le contenu, notamment partager, supprimer, rechercher, créer et trier du contenu.
+Ces onglets (les *vues du contenu*) présentent des informations sur le contenu ainsi que les actions possibles sur ce contenu.  Par exemple, sous l’onglet Tableaux de bord, vous pouvez ouvrir un tableau de bord, effectuer une recherche, trier, et bien plus encore.
 
 ![Onglet Tableaux de bord](./media/end-user-experience/power-bi-dashboard-tab.png)
 
@@ -83,7 +85,7 @@ Les**Favoris** vous permettent d’accéder rapidement au contenu dont vous avez
    
     Pour le moment, il n’y a qu’un seul favori. Les favoris peuvent désigner des tableaux de bord, des rapports ou des applications.  
 
-1. Vous pouvez aussi ajouter un tableau de bord ou un rapport dans les Favoris à partir de l’onglet d’espace de travail **Tableaux de bord** ou **Rapports**.  Ouvrez l’onglet **Rapports** et sélectionnez l’icône étoile à gauche du nom du rapport.
+1. Vous pouvez aussi ajouter un tableau de bord ou un rapport dans les Favoris à partir de l’onglet d’affichage de contenu **Tableaux de bord** ou **Rapports**.  Ouvrez l’onglet **Rapports** et sélectionnez l’icône étoile à gauche du nom du rapport.
    
    ![marquer comme favori](./media/end-user-experience/power-bi-report-favorite.png)
 
@@ -108,7 +110,7 @@ Pour en savoir plus, consultez [Favoris](end-user-favorite.md).
 
     Dans le menu volant, sélectionnez le contenu à ouvrir.
 
-2. Parfois, vous ne voudrez pas ouvrir le contenu récent, mais afficher des informations ou effectuer une autre action, comme partager le contenu, créer des insights ou exporter le contenu dans Excel. Pour effectuer ces actions, ouvrez le volet **Récents** en sélectionnant **Récent** ou son icône dans le volet de navigation de gauche. Si vous aviez plusieurs espaces de travail, cette liste inclurait le contenu de l’ensemble de vos espaces de travail.
+2. Parfois, vous ne voulez pas juste ouvrir du contenu récent, mais afficher des informations ou effectuer une autre action, comme afficher des insights ou exporter du contenu dans Excel. Pour effectuer ces actions, ouvrez le volet **Récents** en sélectionnant **Récent** ou son icône dans le volet de navigation de gauche. Si vous aviez plusieurs espaces de travail, cette liste inclurait le contenu de l’ensemble de vos espaces de travail.
 
    ![volet Récents](./media/end-user-experience/power-bi-recent.png)
 
@@ -119,13 +121,15 @@ La vue du contenu facilite la recherche, le filtrage et le tri du contenu. Pour 
 
 Étant donné que vous utilisez un seul exemple, la recherche et le tri sont inutiles.  Toutefois, les fonctionnalités de recherche et de tri sont très utiles quand vous avez de longues listes de tableaux de bord, de rapports, de classeurs et de jeux de données.
 
-![rechercher un tableau de bord](./media/end-user-experience/power-bi-search-sort.png)
+![rechercher un rapport](./media/end-user-experience/power-bi-search.png)
 
-Vous pouvez également trier le contenu par nom ou propriétaire.  
+Vous pouvez également trier le contenu par nom ou propriétaire. Notez la flèche vers le haut à droite de **Nom**. Nous trions actuellement 83 éléments par ordre alphabétique par nom, dans l’ordre croissant. Pour utiliser l’ordre de tri décroissant, sélectionnez **Nom**. La flèche vers le haut est remplacée par une flèche vers le bas.
 
-![trier le contenu](./media/end-user-experience/power-bi-sort.png)
+![trier le contenu](./media/end-user-experience/power-bi-sort-new.png)
 
-Pour en savoir plus, consultez [Navigation dans Power BI : rechercher, trier, filtrer](end-user-search-sort.md).
+Toutes les colonnes ne peuvent pas être triées. Placez le curseur sur les en-têtes de colonne pour savoir lesquelles peuvent être triées.
+
+Pour en savoir plus, consultez [Navigation dans Power BI : rechercher et trier](end-user-search-sort.md).
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 Maintenant que vous avez suivi ce guide de démarrage rapide, vous pouvez si vous le souhaitez supprimer le rapport, le jeu de données et le tableau de bord de l’exemple Retail Analysis (Analyse des ventes au détail).
@@ -143,4 +147,4 @@ Maintenant que vous avez suivi ce guide de démarrage rapide, vous pouvez si vou
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Modes Lecture et Édition dans les rapports du service Power BI](end-user-reading-view.md)
+> [Mode Lecture dans le service Power BI](end-user-reading-view.md)

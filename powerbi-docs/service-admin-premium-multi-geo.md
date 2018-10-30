@@ -1,21 +1,21 @@
 ---
 title: Prise en charge de zones géographiques multiples dans Power BI Premium (préversion)
 description: Découvrez comment déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI.
-author: maggiesMSFT
-ms.author: maggies
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/31/2018
+ms.date: 10/21/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 135217acbe6289edb73c39035f58df8babf32566
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 1041dcf8c345bfdf8d5a6ae9823d4cecd5c323a6
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300181"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641665"
 ---
 # <a name="multi-geo-support-for-power-bi-premium-preview"></a>Prise en charge de zones géographiques multiples dans Power BI Premium (préversion)
 
@@ -40,7 +40,7 @@ Les zones géographiques multiples sont désormais également disponibles dans P
 Pour de nouvelles capacités, activez les zones géographiques multiples en sélectionnant une région autre que la région par défaut dans la liste déroulante.  Chaque capacité disponible indique la région où elle est actuellement située, par exemple, les **USA Centre-Ouest**.
 
 ![Taille de la capacité : sélectionnez une région. Zones géographiques multiples Power BI](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
-  
+
 Une fois que vous avez créé la capacité, elle reste dans cette région, et le contenu des espaces de travail créés sera stocké dans cette région. Vous pouvez migrer des espaces de travail d’une région à une autre via la liste déroulante dans l’écran des paramètres d’espace de travail.
 
 ![Modifier l’espace de travail : choisir une capacité disponible. Zones géographiques multiples Power BI](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
@@ -81,9 +81,9 @@ Si vous devez modifier la région pour du contenu existant, vous avez deux optio
 - Créer une deuxième capacité et déplacer des espaces de travail. Les utilisateurs gratuits ne rencontrent aucun temps d’arrêt tant que le locataire a des cœurs v-core de rechange.
 - Si la création d’une deuxième capacité n’est pas une option, vous pouvez déplacer à nouveau temporairement le contenu vers une capacité partagée à partir de Premium. Vous n’avez pas besoin de cœurs v-core supplémentaires, mais les utilisateurs gratuits seront parfois confrontés à un temps d’arrêt.
 
-## <a name="move-content-out-of-multi-geo"></a>Déplacer du contenu en dehors de zones géographiques multiples  
+## <a name="move-content-out-of-multi-geo"></a>Déplacer du contenu en dehors de Multi-Géo  
 
-Vous pouvez prendre des espaces de travail en dehors de la capacité de zone géographique multiple de deux manières :
+Vous pouvez prendre des espaces de travail en dehors de la capacité Multi-Géo de deux manières :
 
 - Supprimer la capacité actuelle où se trouve l’espace de travail.  Cela ramène l’espace de travail à une capacité partagée dans la région d’origine.
 - Migrer à nouveau des espaces de travail individuels vers une capacité Premium située dans le locataire d’origine.
@@ -91,11 +91,8 @@ Vous pouvez prendre des espaces de travail en dehors de la capacité de zone gé
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 
 - Confirmez que tout mouvement que vous lancez entre des régions est conforme à toutes les exigences de conformité des entreprises et du gouvernement avant d’amorcer le transfert de données.
-
 - Une requête de mise en cache stockée dans une région distante reste dans cette région au repos. Toutefois, les autres données en transit peuvent aller et venir entre des zones géographiques multiples.
-
 - Lors du déplacement de données d’une région à une autre dans un environnement de zones géographiques multiples, les données source peuvent rester dans la région à partir de laquelle les données ont été déplacées pendant 30 jours maximum. Pendant ce temps, les utilisateurs finaux n’y ont pas accès. Elles sont supprimées de cette région et détruites pendant la période de 30 jours.
-
 - Les zones géographiques multiples ne sont généralement pas à l’origine de performances meilleures. Le chargement de rapports et de tableaux de bord implique toujours des requêtes à la région d’origine pour les métadonnées.
 
 ## <a name="next-steps"></a>Étapes suivantes

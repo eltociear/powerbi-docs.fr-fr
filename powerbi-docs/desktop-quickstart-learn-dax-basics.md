@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 474fe7eee6dbcb296a7eaec6057ecfa56cd3f144
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 433710918cb77ca9ee002673dbe6298f0d2184aa
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417116"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003291"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Principes fondamentaux de DAX dans Power BI Desktop
 Cet article s’adresse aux utilisateurs qui débutent avec Power BI Desktop. Il est destiné à vous fournir une introduction rapide et simple de la façon dont vous pouvez utiliser le langage DAX (Data Analysis Expressions) pour résoudre un certain nombre de problèmes d’analyse de données et de calcul de base. Nous aborderons des informations conceptuelles, une série de tâches que vous pourrez effectuer et quelques questionnaires pour tester ce que vous aurez appris. À la fin de cet article, vous aurez acquis une bonne compréhension des concepts fondamentaux du langage DAX.
@@ -83,9 +83,9 @@ Nous allons créer une formule simple. Cette tâche vous aidera à mieux compren
 ### <a name="task-create-a-measure-formula"></a>Tâche : créer une formule de mesure
 Pour effectuer cette tâche, vous devez ouvrir le fichier Contoso Sales Sample Power BI Desktop.
     
-1. Dans la vue Rapport, cliquez avec le bouton droit sur la table **Sales** figurant dans la liste des champs, puis cliquez sur **Nouvelle mesure**.
+1. Dans la vue Rapport, cliquez avec le bouton droit sur la table **Sales** figurant dans la liste des champs, puis cliquez sur Nouvelle mesure.
     
-2. Dans la barre de formule, remplacez **Mesure** en tapant un nouveau nom de mesure, **Previous Quarter Sales**.
+2. Dans la barre de formule, remplacez **Mesure** en tapant un nouveau nom de mesure, Previous Quarter Sales.
     
 3. Après le signe égal, tapez les premières lettres **CAL**, puis double-cliquez sur la fonction que vous souhaitez utiliser. Dans cette formule, vous souhaitez utiliser la fonction **CALCULATE**.
 
@@ -142,7 +142,7 @@ DAX comprend des fonctions des catégories suivantes : [Date et heure](https://
 * DAX inclut une large variété de fonctions Time Intelligence. Ces fonctions vous permettent de définir ou de sélectionner des plages de dates, et d’effectuer des calculs dynamiques basés sur ces plages. Par exemple, vous pouvez comparer des sommes sur des périodes parallèles.
 * Excel possède une fonction très populaire, RECHERCHEV. Les fonctions DAX n’acceptent pas une cellule ou une plage de cellules en tant que référence comme RECHERCHEV dans Excel. Les fonctions DAX acceptent une colonne ou une table comme référence. Gardez à l’esprit que vous utilisez un modèle de données relationnelles dans Power BI Desktop. La recherche de valeurs dans une autre table est vraiment très simple et, dans la plupart des cas, vous n’avez pas besoin de créer de formule du tout.
   
-  Comme vous pouvez le voir, les fonctions DAX peuvent vous aider à créer des formules très puissantes. Nous avons vraiment à peine abordé les principes élémentaires des fonctions. Au fur et à mesure que vos compétences DAX se développeront, vous créerez des formules en utilisant de nombreuses fonctions différentes. La page [Informations de référence sur les fonctions DAX](https://msdn.microsoft.com/library/ee634396.aspx) est l’une des meilleures ressources pour découvrir chaque fonction DAX en détail.
+  Comme vous pouvez le voir, les fonctions DAX peuvent vous aider à créer des formules très puissantes. Nous avons vraiment à peine abordé les principes élémentaires des fonctions. Au fur et à mesure que vos compétences DAX se développeront, vous créerez des formules en utilisant de nombreuses fonctions différentes. La page [Informations de référence sur les fonctions DAX](https://msdn.microsoft.com/en-us/query-bi/dax/data-analysis-expressions-dax-reference) est l’une des meilleures ressources pour découvrir chaque fonction DAX en détail.
 
 ### <a name="functions-quickquiz"></a>Questionnaire rapide sur les fonctions
 1. À quoi une fonction fait-elle toujours référence ?

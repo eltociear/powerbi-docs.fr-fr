@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 770b2796eb8f29cadfe8371cb2baef12cec7c0e8
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 0d07953fb4f9474f929c108df5b76acb61c7df7c
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909894"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435334"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Supprimer pratiquement tout élément dans le service Power BI
 Cet article explique comment supprimer un tableau de bord, un rapport, un classeur, un jeu de données, une application, une visualisation ou un espace de travail dans le service Power BI.
@@ -129,7 +129,7 @@ La suppression d’une application de la page de votre liste d’applications n�
 
    ![sélectionner Applications](media/service-delete/power-bi-delete-app.png)
 
-   Si vous supprimez accidentellement une application, vous disposez de plusieurs options pour la récupérer.  Vous pouvez demander au créateur de l’application de la renvoyer, rechercher l’e-mail d’origine contenant le lien vers l’application, consulter votre [centre de notifications](service-notification-center.md) pour voir si la notification relative à cette application y figure toujours, ou vérifier l’[AppSource](service-install-use-apps.md) de votre organisation.
+   Si vous supprimez accidentellement une application, vous disposez de plusieurs options pour la récupérer.  Vous pouvez demander au créateur de l’application de la renvoyer, rechercher l’e-mail d’origine contenant le lien vers l’application, consulter votre [centre de notifications](service-notification-center.md) pour voir si la notification relative à cette application y figure toujours, ou vérifier l’[AppSource de votre organisation](consumer/end-user-apps.md).
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 Cet article a expliqué comment supprimer les principaux blocs de construction principaux du service Power BI. Mais il existe d’autres éléments que vous pouvez supprimer dans Power BI.  

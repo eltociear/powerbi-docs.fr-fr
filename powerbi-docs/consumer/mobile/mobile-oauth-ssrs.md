@@ -9,19 +9,22 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
 ms.author: maghan
-ms.openlocfilehash: 3777d082d8e0d166abadd2ab89035d6895421f24
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a03870fd0443a00803edceb5d4821161ccb7693a
+ms.sourcegitcommit: d8109b605052096fc0eb613f2a1340570b99b2f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44735216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49651031"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Utilisation d’OAuth pour se connecter à Power BI Report Server et SSRS
 Découvrez comment configurer votre environnement pour prendre en charge l’authentification OAuth avec l’application mobile Power BI afin de vous connecter à Power BI Report Server et SQL Server Reporting Services 2016 ou ultérieur.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
-Vous pouvez utiliser OAuth pour vous connecter à Power BI Report Server et Reporting Services afin d’afficher des rapports mobiles ou des indicateurs de performance clés. Windows Server 2016 fournit quelques améliorations au rôle Proxy d’application web (WAP) qui autorisent ce type d’authentification. Notez que l’affichage des rapports Power BI hébergés dans Power BI Report Server à l’aide de WAP pour l’authentification n’est pas officiellement pris en charge pour l’instant.
+Vous pouvez utiliser OAuth pour vous connecter à Power BI Report Server et Reporting Services afin d’afficher des rapports mobiles ou des indicateurs de performance clés. Windows Server 2016 fournit quelques améliorations au rôle Proxy d’application web (WAP) qui autorisent ce type d’authentification.
+
+   > [!NOTE]
+   > L’affichage des rapports Power BI hébergés dans Power BI Report Server à l’aide de WAP pour l’authentification n’est pas officiellement pris en charge pour l’instant.
 
 ## <a name="requirements"></a>Configuration requise
 Windows Server 2016 est requis pour les serveurs Proxy d’application web (WAP) et Active Directory Federation Services (ADFS). Il est inutile d’avoir un domaine de niveau fonctionnel Windows 2016.

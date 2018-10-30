@@ -8,15 +8,15 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/19/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d23e168f6192629ce9dd945e29691dcf40ae1427
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 66956a38a4f2076a01cf224bbef3a20490915e9b
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565403"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473701"
 ---
 # <a name="featured-dashboards-in-power-bi-service"></a>Tableaux de bord par défaut dans le service Power BI
 ## <a name="create-a-featured-dashboard"></a>Créer un tableau de bord par défaut
@@ -41,7 +41,7 @@ Regardez Amanda créer un tableau de bord par défaut, puis suivez les instructi
 
 
 1. Ouvrez le tableau de bord que vous souhaitez définir comme tableau de bord *par défaut*. 
-2. Dans la barre de navigation supérieure, vous voyez l’option **Définir comme tableau de bord par défaut** ou simplement l’icône Par défaut ![icône d’élément par défaut](./media/end-user-featured/power-bi-featured-icon.png). Sélectionnez l’une des deux.
+2. Dans la barre de menus supérieure, vous voyez l’option **Définir comme tableau de bord par défaut** ou simplement l’icône Définir comme tableau de bord par défaut ![icône Définir comme tableau de bord par défaut](./media/end-user-featured/power-bi-featured-icon.png). Sélectionnez l’une des deux.
    
     ![icône Définir comme tableau de bord par défaut](./media/end-user-featured/power-bi-set-as-featured.png)
 3. Confirmez votre sélection.

@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 562af0b21c4ecd4617de0e524cca20ec6935ca7a
-ms.sourcegitcommit: 31f9da5f562cd02a729b6f012b4b3326416adb0e
+ms.openlocfilehash: 7a034e865b0e0b6ba55385f8873d039dba0662db
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48232923"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396954"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -169,7 +169,8 @@ Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder 
 
 * Quand vous utilisez l’opérateur *in*, les valeurs à droite de *in* doivent être sous forme de liste séparée par des virgules et placée entre des parenthèses.    
 * Dans Power BI Report Server, vous pouvez [passer des paramètres de rapport](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) en les ajoutant dans une URL de rapport. Ces paramètres d’URL ne sont pas préfixés parce qu’ils sont passés directement dans le moteur de traitement de rapport.
-* Le filtrage de chaîne de requête ne fonctionne pas avec des URL de type [Publier sur le web](service-publish-to-web.md) ou Power BI Embedded.   
+* Le filtrage de chaîne de requête ne fonctionne pas avec [Publier sur le web](service-publish-to-web.md).
+* L’[incorporation avec le composant WebPart Rapport dans SharePoint Online](service-embed-report-spo.md) ne prend pas en charge les filtres d’URL.
 * Le type de données long est (2^53 - 1) en raison des limitations de JavaScript.
 * Les filtres d’URL de rapport sont limités à 10 expressions (10 filtres connectés par AND).
 

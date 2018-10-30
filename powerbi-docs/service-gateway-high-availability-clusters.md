@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5b89b53cab0f7e4df07b15a05cd74c7d99b1392a
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 21a254cfc4543649cfe863830a56abe666480e63
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657986"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100864"
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Clusters à haute disponibilité pour la passerelle de données locale
 
@@ -90,6 +90,6 @@ Une fois que vous avez effectué ces étapes, vous pouvez utiliser les commandes
 -   [Informations approfondies sur la passerelle de données locale](service-gateway-onprem-indepth.md)  
 -   [Passerelle de données locale (mode personnel)](service-gateway-personal-mode.md)
 -   [Configuration des paramètres de proxy de la passerelle de données locale](service-gateway-proxy.md)  
--   [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
+-   [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-kerberos.md)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

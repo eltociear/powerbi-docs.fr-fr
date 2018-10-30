@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2eb880ee512a3f13c56bb6dbf880209f05cdf7b4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ff770320e0e6cd3f591e3318637a04977152e488
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296307"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101413"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Gérer votre source de données - SQL Server
 Une fois que vous avez installé la passerelle de données locale, vous pouvez ajouter des sources de données utilisables avec la passerelle. Cet article décrit comment utiliser les passerelles et les sources de données. Vous pouvez utiliser la source de données SQL Server pour l’actualisation planifiée ou DirectQuery.
@@ -60,7 +60,7 @@ Vous devez ensuite renseigner les informations relatives à la source de donnée
 Vous devez également choisir une **méthode d’authentification**.  Ce peut être **Windows** ou **De base**.  Choisissez **De base** si vous comptez utiliser l’authentification SQL plutôt que l’authentification Windows. Entrez les informations d’identification qui seront utilisées pour cette source de données.
 
 > [!NOTE]
-> Toutes les requêtes adressées à la source de données utilisent ces informations d’identification, sauf si une authentification unique (SSO) Kerberos est configurée et activé pour la source de données. Avec l’authentification unique, les jeux de données d’importation utilisent les informations d’identification stockées, mais les jeux de données DirectQuery se servent de l’utilisateur Power BI actif pour exécuter les requêtes à l’aide de l’authentification unique. Pour plus d’informations, voir l’article sur passerelle de données locale principale expliquant comment les [informations d’identification](service-gateway-onprem.md#credentials) sont stockées, ou l’article décrivant comment [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md).
+> Toutes les requêtes adressées à la source de données utilisent ces informations d’identification, sauf si une authentification unique (SSO) Kerberos est configurée et activé pour la source de données. Avec l’authentification unique, les jeux de données d’importation utilisent les informations d’identification stockées, mais les jeux de données DirectQuery se servent de l’utilisateur Power BI actif pour exécuter les requêtes à l’aide de l’authentification unique. Pour plus d’informations, voir l’article sur passerelle de données locale principale expliquant comment les [informations d’identification](service-gateway-onprem.md#credentials) sont stockées, ou l’article décrivant comment [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-kerberos.md).
 > 
 > 
 
@@ -123,6 +123,6 @@ Si vous êtes répertorié sous l’onglet **Utilisateurs** de la source de donn
 * [Passerelle de données locale](service-gateway-onprem.md)  
 * [Informations approfondies sur la passerelle de données locale](service-gateway-onprem-indepth.md)  
 * [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)
-* [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales (préversion)](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
+* [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales (préversion)](service-gateway-sso-kerberos.md). 
 * D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

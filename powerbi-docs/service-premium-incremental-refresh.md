@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/30/2018
+ms.date: 10/19/2018
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: fd62e90d4a4f348ee7b3a524f85725d517180068
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 96756adc0c24992e99dee0236bb2eb0b81716e4b
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300135"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641778"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Actualisation incrémentielle dans Power BI Premium
 
 L’actualisation incrémentielle permet d’utiliser des jeux de données très volumineux dans le service Power BI Premium, en offrant les avantages suivants :
 
-- **Les actualisations sont plus rapides.** Seules les données qui ont changé sont actualisées. Par exemple, vous pouvez actualiser uniquement les données des cinq derniers jours dans un jeu de données de dix ans.
+- **Les actualisations sont plus rapides.** Seules les données qui ont changé sont actualisées. Par exemple, vous pouvez actualiser uniquement les données des 5 derniers jours dans un jeu de données de 10 ans.
 
 - **Les actualisations sont plus fiables.** Vous n’avez notamment pas besoin de conserver des connexions longues à des systèmes sources volatiles.
 
@@ -44,10 +44,10 @@ Les jeux de données volumineux, contenant potentiellement des milliards de lign
 Pour utiliser l’actualisation incrémentielle dans le service Power BI, vous devez filtrer les données à l’aide de paramètres date/heure Power Query définis avec les noms réservés respectant la casse **RangeStart** et **RangeEnd**.
 
 Une fois publiées, les valeurs des paramètres sont automatiquement remplacées par le service Power BI. Vous n’avez pas besoin de les définir dans les paramètres du jeu de données du service.
- 
-Il est important que le filtre soit poussé vers le système source lorsque des requêtes sont envoyées pour les opérations d’actualisation. Cela signifie que la source de données doit prendre en charge le « Query folding ». Étant donné les différents niveaux de prise en charge du Query folding pour chaque source de données, nous vous recommandons de vérifier que la logique du filtre est incluses dans les requêtes source. Sinon, chaque requête interroge toutes les données depuis la source, ce qui va à l’encontre de l’objectif d’actualisation incrémentielle.
- 
-Le filtre est utilisé pour partitionner les données en plages dans le service Power BI. Il n’est pas conçu pour prendre en charge la mise à jour de la colonne de date filtrée. Une mise à jour sera interprétée comme une insertion et une suppression (et non pas comme une mise à jour). Si la suppression se produit dans la plage historique et pas dans la plage incrémentielle, elle ne sera pas récupérée.
+
+Il est important que le filtre soit poussé vers le système source lorsque des requêtes sont envoyées pour les opérations d’actualisation. Le filtre peut être rapproché des données seulement si la source de données prend en charge le « Query folding ». La plupart des sources de données qui prennent en charge les requêtes SQL prennent également en charge le « Query folding ». Ce n’est généralement pas le cas des sources de données telles que les fichiers plats, les objets blob, le web et les flux OData. Étant donné les différents niveaux de prise en charge du Query folding pour chaque source de données, nous vous recommandons de vérifier que la logique du filtre est incluse dans les requêtes sources. Dans les cas où le filtre n’est pas pris en charge par le back-end de source de données, il ne peut pas être rapproché des données. Dans ces cas, le moteur de mashup compense et applique le filtre localement, ce qui peut nécessiter la récupération du jeu de données complet à partir de la source de données. Cette opération peut ralentir sensiblement l’actualisation incrémentielle, et le processus peut manquer de ressources dans le service Power BI ou dans la passerelle de données locale éventuellement utilisée.
+
+Le filtre est utilisé pour partitionner les données en plages dans le service Power BI. Il n’est pas conçu pour prendre en charge la mise à jour de la colonne de date filtrée. Une mise à jour sera interprétée comme une insertion et une suppression (et non pas comme une mise à jour). Si la suppression se produit dans la plage historique et pas dans la plage incrémentielle, elle ne sera pas récupérée. Cela peut entraîner des échecs d’actualisation des données en raison de conflits de clé de partition.
 
 Dans l’éditeur Power Query, sélectionnez **Gérer les paramètres** pour définir les paramètres avec les valeurs par défaut.
 
@@ -85,21 +85,21 @@ La boîte de dialogue Actualisation incrémentielle s’affiche. Utilisez le bou
 
 Le texte d’en-tête décrit ce qui suit :
 
--   L’actualisation incrémentielle est prise en charge uniquement pour les espaces de travail sur une capacité Premium. Les stratégies d’actualisation sont définies dans Power BI Desktop. Elles sont appliquées par les opérations d’actualisation dans le service.
+- L’actualisation incrémentielle est prise en charge uniquement pour les espaces de travail sur une capacité Premium. Les stratégies d’actualisation sont définies dans Power BI Desktop. Elles sont appliquées par les opérations d’actualisation dans le service.
 
--   Si vous pouvez télécharger le fichier PBIX contenant une stratégie d’actualisation incrémentielle à partir du service Power BI, le fichier ne s’ouvre pas dans Power BI Desktop. Vous ne pourrez bientôt plus du tout le télécharger. Cela ne sera peut-être plus le cas dans une version future, mais sachez que la taille de ces jeux de données peut augmenter considérablement, au point qu’il ne soit plus possible de les télécharger ni de les ouvrir sur un PC de bureau classique.
+- Si vous pouvez télécharger le fichier PBIX contenant une stratégie d’actualisation incrémentielle à partir du service Power BI, le fichier ne s’ouvre pas dans Power BI Desktop. Vous ne pourrez bientôt plus du tout le télécharger. Cela ne sera peut-être plus le cas dans une version future, mais sachez que la taille de ces jeux de données peut augmenter considérablement, au point qu’il ne soit plus possible de les télécharger ni de les ouvrir sur un PC de bureau classique.
 
 #### <a name="refresh-ranges"></a>Plages d’actualisation
 
-L’exemple suivant définit une stratégie d’actualisation qui permet de stocker cinq ans de données au total et d’actualiser de manière incrémentielle dix jours de données. Si le jeu de données est actualisé quotidiennement, les étapes suivantes sont effectuées à chaque opération d’actualisation.
+L’exemple suivant définit une stratégie d’actualisation pour stocker les données de cinq années calendaires complètes, ainsi que les données de l’année en cours jusqu’à la date actuelle et actualiser 10 jours de données de manière incrémentielle. La première opération d’actualisation charge les données historiques. Les actualisations suivantes sont incrémentielles et effectuent les opérations suivantes (si elles sont planifiées pour s’exécuter tous les jours).
 
--   Ajout d’un nouveau jour de données.
+- Ajout d’un nouveau jour de données.
 
--   Actualisation des données des dix derniers jours avant la date actuelle.
+- Actualisation des données des dix derniers jours avant la date actuelle.
 
--   Suppression des années du calendrier qui sont antérieures aux cinq années précédant la date actuelle. Par exemple, si la date actuelle est le 1er janvier 2019, l’année 2013 est supprimée.
+- Suppression des années calendaires qui sont antérieures aux cinq années précédant la date actuelle. Par exemple, si la date actuelle est le 1er janvier 2019, l’année 2013 est supprimée.
 
-La première actualisation effectuée dans le service Power BI peut être plus longue, car toutes les données des cinq ans passés doivent être importées. Les actualisations suivantes sont généralement très rapides.
+La première actualisation effectuée dans le service Power BI peut être plus longue, car toutes les données des cinq années calendaires complètes doivent être importées. Les actualisations suivantes sont généralement très rapides.
 
 ![Plages d’actualisation](media/service-premium-incremental-refresh/refresh-ranges.png)
 

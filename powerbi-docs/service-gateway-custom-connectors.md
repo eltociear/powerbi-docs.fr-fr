@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2536ea34cadae5f348e619d713420787db4c467a
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 75e760c1ad808d05986de46cf2bc427bb078e3ce
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799043"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101275"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Utiliser des connecteurs de données personnalisés avec la passerelle de données locale
 
@@ -56,6 +56,6 @@ Quand cette option est activée, vous voyez vos connecteurs personnalisés en ta
 * [Informations approfondies sur la passerelle de données locale](service-gateway-onprem-indepth.md)  
 * [Passerelle de données locale (mode personnel)](service-gateway-personal-mode.md)
 * [Configuration des paramètres de proxy de la passerelle de données locale](service-gateway-proxy.md)  
-* [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
+* [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-kerberos.md)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

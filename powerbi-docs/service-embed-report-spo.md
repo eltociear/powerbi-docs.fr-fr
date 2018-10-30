@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 08/16/2018
-ms.openlocfilehash: 111987fda4b0f841c0806dbdc454ac96ddb3c666
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.date: 10/01/2018
+ms.openlocfilehash: b701ce9921d055dfe124c5a419f02900b15a9f62
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908368"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641203"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -87,7 +87,7 @@ Incorporer un rapport dans SharePoint Online n’accorde pas automatiquement aux
 
 Il existe deux moyens de fournir un accès au rapport au sein du service Power BI. Si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, répertoriez l’utilisateur comme membre de l’**espace de travail d’application dans le service Power BI** et la **page SharePoint**. Ceci permet de garantir que les utilisateurs peuvent visualiser les contenus de ce groupe. Pour plus d’informations, voir [Créer et distribuer des applications dans Power BI](service-create-distribute-apps.md).
 
-Vous pouvez également accorder aux utilisateurs l’accès à votre rapport en procédant comme suit.
+Vous pouvez également accorder aux utilisateurs l’accès à votre rapport en effectuant les étapes ci-après.
 
 1. Ajoutez une vignette de votre rapport à un tableau de bord.
 
@@ -126,7 +126,7 @@ Il existe deux raisons habituelles pour ce message.
 1. Vous n’avez pas accès au rapport.
 2. Le rapport a été supprimé.
 
-Vous devez contacter le propriétaire de la page SharePoint Online pour qu’il vous aide à résoudre le problème.
+Contactez le propriétaire de la page SharePoint Online pour qu’il vous aide à résoudre le problème.
 
 ## <a name="known-issues-and-limitations"></a>Problèmes connus et limitations
 
@@ -148,11 +148,13 @@ Vous devez contacter le propriétaire de la page SharePoint Online pour qu’il 
 
 * Le serveur SharePoint classique n’est pas pris en charge avec ce composant WebPart.
 
+* Les [filtres d’URL](service-url-filters.md) ne sont pas pris en charge avec le composant WebPart SPO.
+
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Autoriser ou empêcher la création de pages de site moderne par les utilisateurs finaux](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 [Créer et distribuer une application dans Power BI](service-create-distribute-apps.md)  
 [Partager un tableau de bord avec vos collègues et les autres utilisateurs](service-share-dashboards.md)  
-[Qu’est-ce que Power BI Premium ?](service-premium.md)  
+[Qu’est-ce que Power BI Premium ?](service-premium.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

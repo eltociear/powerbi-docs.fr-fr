@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8b0121dbfe633eca9c438dfd272d3aeb56fd59a4
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 30ac2c0620607d680874e423c841c381fc273904
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38921504"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101505"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Informations approfondies sur la passerelle de données locale
 Les utilisateurs de votre organisation peuvent accéder aux données locales (auxquelles ils ont déjà accès), mais avant qu’ils puissent se connecter à votre source de données locale, vous devez installer et configurer une passerelle de données locale. La passerelle favorise une communication rapide et sécurisée en arrière-plan entre un utilisateur dans le cloud et votre source de données locale, dans les deux sens.
@@ -52,7 +52,7 @@ L’aptitude d’un utilisateur à interroger et à afficher les données de mod
 La mise en œuvre d’une sécurité basée sur les rôles et dynamique au niveau des lignes dans les modèles dépasse le cadre de cet article.  Pour en savoir plus, consultez les rubriques [Rôles (SSAS Tabulaire)](https://msdn.microsoft.com/library/hh213165.aspx) et [Rôles de sécurité (Analysis Services - Données multidimensionnelles)](https://msdn.microsoft.com/library/ms174840.aspx) sur MSDN. En outre, pour approfondir au maximum votre compréhension de la sécurité des modèles tabulaires, téléchargez et lisez le livre blanc [Securing the Tabular BI Semantic Model](https://msdn.microsoft.com/library/jj127437.aspx).
 
 ## <a name="what-about-azure-active-directory"></a>Qu’en est-il d’Azure Active Directory ?
-Les services cloud Microsoft utilisent [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) pour prendre en charge l’authentification des utilisateurs. Azure Active Directory est le locataire qui contient les groupes de sécurité et les noms d’utilisateur. En règle générale, un utilisateur se connecte avec l’adresse de messagerie qui correspond au nom d’utilisateur principal du compte.
+Les services cloud Microsoft utilisent [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) pour prendre en charge l’authentification des utilisateurs. Azure Active Directory est le locataire qui contient les groupes de sécurité et les noms d’utilisateur. En règle générale, un utilisateur se connecte avec l’adresse de messagerie qui correspond au nom d’utilisateur principal du compte.
 
 Qu’est-ce qu’un rôle Active Directory local ?
 
@@ -78,7 +78,7 @@ Les services cloud reconnaissent uniquement les comptes dans Azure Active Direct
 1. Vous pouvez ajouter manuellement des comptes à Azure Active Directory.
    
    Vous pouvez créer un compte sur le portail Azure ou dans le portail d’administration Office 365. Le nom du compte correspond alors au nom d’utilisateur principal du compte Active Directory local.
-2. Vous pouvez utiliser l’outil [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) pour synchroniser les comptes locaux avec votre locataire Azure Active Directory.
+2. Vous pouvez utiliser l’outil [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) pour synchroniser les comptes locaux avec votre locataire Azure Active Directory.
    
    L’outil Azure AD Connect offre des options de synchronisation des répertoires et de configuration de l’authentification, y compris la synchronisation du hachage de mot de passe, l’authentification directe et la fédération. Si vous n’êtes pas un administrateur de locataire ou un administrateur de domaine local, vous devez contacter votre administrateur pour qu’il se charge de la configuration.
 
@@ -90,7 +90,7 @@ L’utilisation d’Azure AD Connect permet de vérifier que les UPN d’AAD et 
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>C’est là que la passerelle entre en scène.
-La passerelle fait office de pont entre le cloud et votre serveur local. Le transfert de données entre le cloud et la passerelle est sécurisé au moyen d’[Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/). Service Bus crée un canal sécurisé entre le cloud et votre serveur local via une connexion sortante sur la passerelle.  Vous n’avez pas besoin d’ouvrir une connexion entrante sur votre pare-feu local.
+La passerelle fait office de pont entre le cloud et votre serveur local. Le transfert de données entre le cloud et la passerelle est sécurisé au moyen d’[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus crée un canal sécurisé entre le cloud et votre serveur local via une connexion sortante sur la passerelle.  Vous n’avez pas besoin d’ouvrir une connexion entrante sur votre pare-feu local.
 
 Si vous avez une source de données Analysis Services, vous devez installer la passerelle sur un ordinateur associé à la même forêt ou au même domaine que votre serveur Analysis Services.
 
@@ -116,8 +116,10 @@ Nous n’expliquerons pas ici comment résoudre les problèmes liés à la passe
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)  
-[Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
-[Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
+[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/)  
+[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
+
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

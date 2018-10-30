@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 07/13/2018
-ms.openlocfilehash: 9df612d80d3f322a8391eeb43430942a03850470
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827453"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396862"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application de votre organisation
 
@@ -158,13 +158,13 @@ Pour incorporer votre contenu à l’aide d’un exemple d’application, suivez
 
     ![Exemple d’application User Owns Data](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Ouvrez le fichier **Cloud.config** dans l’exemple d’application. Pour exécuter correctement l’application, vous devez remplir quelques champs : **ClientID** et **ClientSecret**.
+2. Ouvrez le fichier **Cloud.config** dans l’exemple d’application. Pour exécuter correctement l’application, vous devez remplir certains champs : **ApplicationID** et **ApplicationSecret**.
 
     ![Fichier Cloud.config](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Renseignez les informations de **ClientID** avec l’**ID d’application** d’Azure. La valeur **ClientID** est utilisée par l’application pour s’identifier auprès des utilisateurs auxquels vous demandez des autorisations.
+    Renseignez les informations du champ **ApplicationID** avec **l’ID d’application** d’Azure. La valeur **ApplicationID** est utilisée par l’application pour s’identifier auprès des utilisateurs auxquels vous demandez des autorisations.
 
-    Pour obtenir la valeur **ClientID**, effectuez les étapes suivantes :
+    Pour obtenir la valeur **ApplicationID**, effectuez les étapes suivantes :
 
     1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
@@ -174,17 +174,17 @@ Pour incorporer votre contenu à l’aide d’un exemple d’application, suivez
 
         ![Recherche d’inscription d’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Sélectionnez l’application qui doit utiliser la valeur **ClientID**.
+    1. Sélectionnez l’application qui doit utiliser la valeur **ApplicationID**.
 
         ![Choisir une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Un **ID d’application** devrait être listé au format GUID. Utilisez cet **ID d’application** comme **ClientID** pour l’application.
+    1. Un **ID d’application** devrait être listé au format GUID. Utilisez cet **ID d’application** comme **ApplicationID** pour l’application.
 
-        ![ClientID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Renseignez les informations **ClientSecret** à partir de la section **Clés** de votre section **Inscriptions des applications** dans **Azure**.
+    1. Renseignez les informations **ApplicationSecret** à partir de la section **Clés** de votre section **Inscriptions d’applications** dans **Azure**.
 
-    1. Pour obtenir la valeur **ClientSecret**, effectuez les étapes suivantes :
+    1. Pour obtenir la valeur **ApplicationSecret**, effectuez les étapes suivantes :
 
         1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
@@ -194,7 +194,7 @@ Pour incorporer votre contenu à l’aide d’un exemple d’application, suivez
 
             ![Recherche d’inscription d’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Sélectionnez l’application qui doit utiliser la valeur **ClientSecret**.
+        1. Sélectionnez l’application qui doit utiliser la valeur **ApplicationSecret**.
 
             ![Choisir une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
