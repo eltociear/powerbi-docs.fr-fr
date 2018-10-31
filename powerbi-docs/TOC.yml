@@ -5,12 +5,12 @@ items:
     items:
     - name: Qu’est-ce que Power BI Desktop ?
       href: desktop-what-is-desktop.md
-  - name: Guides de démarrage rapide
+  - name: Démarrages rapide
     items:
-    - name: Se connecter aux données
+    - name: Connectez-vous à vos données
       href: desktop-quickstart-connect-to-data.md
     expanded: true
-  - name: Tutoriels
+  - name: Didacticiels
     items:
     - name: Mettre en forme et combiner plusieurs sources de données
       href: desktop-shape-and-combine-data.md
@@ -70,6 +70,8 @@ items:
       href: desktop-directquery-data-sources.md
     - name: Conditions préalables de source de données Power BI
       href: desktop-data-source-prerequisites.md
+    - name: FAQ visuels personnalisés
+      href: power-bi-custom-visuals-faq.md
   - name: Guides pratiques
     items:
     - name: Obtenir Power BI Desktop
@@ -104,7 +106,7 @@ items:
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: Personnaliser le titre, l’arrière-plan et la légende d’une visualisation
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: Se connecter aux données
+    - name: Connectez-vous à vos données
       items:
       - name: Sources de données dans Power BI Desktop
         href: desktop-data-sources.md
@@ -190,7 +192,7 @@ items:
         href: visuals/desktop-shape-map.md
       - name: Combiner des fichiers binaires
         href: desktop-combine-binaries.md
-    - name: Modéliser vos données
+    - name: Modélisez vos données
       items:
       - name: Catégorisation des données dans Power BI Desktop
         href: desktop-data-categorization.md
@@ -216,7 +218,7 @@ items:
         href: desktop-tooltips.md
       - name: Exporter au format PDF et imprimer des rapports
         href: desktop-export-to-pdf.md
-      - name: Questions et réponses dans Power BI Desktop
+      - name: Q&A dans Power BI Desktop
         href: desktop-qna-in-reports.md
       - name: Volet Analyse de Power BI Desktop
         href: desktop-analytics-pane.md
@@ -372,7 +374,7 @@ items:
     items:
     - name: Qu’est-ce que Power BI ?
       href: power-bi-overview.md
-  - name: Tutoriels
+  - name: Didacticiels
     items:
     - name: Se connecter à un exemple GitHub
       href: service-tutorial-connect-to-github.md
@@ -784,7 +786,7 @@ items:
         href: developer/embedding.md
       - name: Qu’est-ce que Power BI Embedded dans Azure
         href: developer/azure-pbie-what-is-power-bi-embedded.md
-    - name: Tutoriels
+    - name: Didacticiels
       items:
       - name: Incorporer du contenu pour les clients
         href: developer/embed-sample-for-customers.md
@@ -798,7 +800,7 @@ items:
         href: developer/embedded-row-level-security.md
       - name: Journalisation des diagnostics Azure pour Power BI Embedded
         href: developer/azure-pbie-diag-logs.md
-      - name: FORUM AUX QUESTIONS
+      - name: FAQ incorporation
         href: developer/embedded-faq.md
       - name: Autorisations Power BI
         href: developer/power-bi-permissions.md
@@ -874,10 +876,12 @@ items:
       items:
       - name: Ajout de visuels personnalisés dans Power BI
         href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
-    - name: Tutoriels
+    - name: Didacticiels
       items:
       - name: Développement d’un visuel personnalisé Power BI
-        href: https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/
+        href: developer/custom-visual-develop-tutorial.md
+      - name: Ajout d’options de mise en forme
+        href: developer/custom-visual-develop-tutorial-format-options.md
     - name: Concepts
       items:
       - name: Utilisation des fonctionnalités
@@ -916,7 +920,7 @@ items:
       items:
       - name: Quelles sont les possibilités offertes par l’API Power BI ?
         href: developer/overview-of-power-bi-rest-api.md
-    - name: Tutoriels
+    - name: Didacticiels
       items:
       - name: Transmission de données à un jeu de données
         href: developer/walkthrough-push-data.md
@@ -968,7 +972,7 @@ items:
       href: report-server/get-started.md
     - name: Comparer Power BI Report Server et le service
       href: report-server/compare-report-server-service.md
-  - name: Tutoriels
+  - name: Didacticiels
     items:
     - name: Explorer Power BI Report Server dans une machine virtuelle
       href: report-server/tutorial-explore-report-server-web-portal.md
@@ -1068,7 +1072,7 @@ items:
     items:
     - name: Présentation des passerelles Power BI
       href: service-gateway-getting-started.md
-  - name: Tutoriels
+  - name: Didacticiels
     items:
     - name: Se connecter à des données SQL Server
       href: service-gateway-sql-tutorial.md
@@ -1189,7 +1193,7 @@ items:
     - name: PowerShell, API REST et kit SDK .NET
       href: service-admin-reference.md
     - name: Applets de commande Power BI pour PowerShell
-      href: https://docs.microsoft.com/en-us/powershell/power-bi/
+      href: https://docs.microsoft.com/powershell/power-bi/
       maintainContext: true
     - name: Informations de référence sur les URL du service
       href: power-bi-whitelist-urls.md
@@ -1201,9 +1205,9 @@ items:
       href: service-admin-power-bi-security.md
     - name: Migration de Power BI pour Office 365 vers Power BI
       href: service-admin-o365portal-retired.md
-ms.openlocfilehash: 513c5a62b5436d157b1b22fbf1f06735a589dd3b
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 5ce694f906a9c637407e6cfd0b47504ac7112bc1
+ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003061"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50222125"
