@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 10/30/2018
 ms.author: mihart
-ms.openlocfilehash: 54c484153896430a7c5c886864459361cae97428
-ms.sourcegitcommit: fbc1fabcb5e3b285228c9aa192b9b421b2782922
+ms.openlocfilehash: ba6c59d168deb5fb68f4b339f11fba795bae6452
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47059067"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252396"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Obtention d’un visuel personnalisé *certifié*
 ## <a name="what-is-meant-by-certified"></a>Qu’entend-on par *certifié* ?
@@ -27,7 +27,7 @@ Vous êtes un développeur web et souhaitez créer vos propres visualisations et
 ## <a name="certification-requirements"></a>Critères de certification
 * Approuvé(s) par Microsoft AppSource    
 * Le visuel personnalisé est écrit avec une API version 1.2 ou supérieure.    
-* Un référentiel de code est disponible pour examen (par exemple, code du visuel accessible via GitHub).    
+* Un référentiel de code est disponible pour examen (par exemple, code de l’élément visuel accessible via GitHub).    
 * Le visuel utilise uniquement des composants OSS publics consultables.    
 * Le visuel n’accède pas à des services ou ressources externes.    
 
@@ -86,6 +86,7 @@ Microsoft peut, à sa discrétion, supprimer un visuel de la liste certifiée.
 | [Enlighten Slicer](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380960) | |
 | [Enlighten Stack Shuffle](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380849) | |
 | [Enlighten Waffle Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380850) | |
+| [Filter by List par Devscope](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381413) | [Vidéo](https://youtu.be/RetEWGwBu0I) |
 | [Graphique Force-Directed](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380764) | [Vidéo](https://youtu.be/YsTa7uyJ4sg) |
 | [Funnel with Source par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381334) | [Vidéo](https://youtu.be/R_EcimsLI8U) |
 | [Diagramme de Gantt](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380765) | [Vidéo](https://youtu.be/qJ7s_KrGiUU) |
@@ -102,7 +103,7 @@ Microsoft peut, à sa discrétion, supprimer un visuel de la liste certifiée.
 | [Graphique KPI par Akvelon](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381432) | |
 | [Colonne KPI par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380996) | [Vidéo](https://youtu.be/rU0xoOlIq1U) |
 | [Grille KPI par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380947) | [Vidéo](https://youtu.be/dM4PvZh71V0) |
-| [Indicateur KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380832) | |
+| [Indicateur d’indicateur de performance clé](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380832) | |
 | [KPI Ticker par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380946) | [Vidéo](https://youtu.be/cudG4gsZ2V8) |
 | [Linear Gauge par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380821) | [Vidéo](https://youtu.be/7_jFaM30dkc) |
 | [LineDot Chart](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380766) | |

@@ -1,6 +1,6 @@
 ---
-title: Questions fréquentes (FAQ) sur Power BI Premium
-description: Parcourez une liste de questions fréquemment posées et de réponses sur l’offre Power BI Premium.
+title: FAQ Power BI Premium
+description: Parcourir une liste de questions (FAQ) et de réponses sur l’offre de Power BI Premium.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: fa68657d10de961a6c3a6c3491b0c17fb6d84051
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: da529c860037afe0d83f42209bda86d49222b83f
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641318"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252442"
 ---
-# <a name="power-bi-premium-faq"></a>Questions fréquentes (FAQ) sur Power BI Premium
+# <a name="power-bi-premium-faq"></a>FAQ Power BI Premium
 
 Cet article répond aux questions fréquemment posées concernant Power BI Premium. Pour obtenir une vue d’ensemble, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
 
@@ -27,9 +27,9 @@ Cet article répond aux questions fréquemment posées concernant Power BI Prem
 **Qu’est-ce que Power BI Premium ?**  
 Power BI Premium est une offre basée sur la capacité qui inclut :
 
-* La flexibilité de publier largement des rapports dans une entreprise, sans exiger que les destinataires soient titulaires d’une licence par utilisateur.
+* la possibilité de diffuser largement des rapports au sein d’une entreprise, sans exiger que les destinataires possèdent une licence individuelle par utilisateur ;
 * Une échelle et des performances supérieures à une capacité partagée dans le service Power BI.
-* La possibilité de conserver les ressources BI locales avec Power BI Report Server.
+* la possibilité de mettre à jour les actifs BI locaux avec Power BI Report Server ;
 * Une surface d’API, un ensemble cohérent de fonctionnalités et l’accès aux dernières fonctionnalités d’analytique incorporée.
 
 **Quelles sont les caractéristiques de Power BI Premium ? Comment fonctionne-t-il ?**  
@@ -49,7 +49,7 @@ La licence Power BI Premium est basée sur la capacité et celle de Power BI�
 Oui. Power BI Pro est requis pour publier des rapports, partager des tableaux de bord, collaborer avec des collègues dans des espaces de travail et s’impliquer dans d’autres activités connexes. Power BI Pro n’est pas nécessaire pour consommer du contenu dans la capacité Premium.
 
 **Pouvez-vous décrire un scénario illustrant la manière dont Power BI Pro et Power BI Premium fonctionnent pour offrir une informatique décisionnelle moderne couvrant les besoins d’une organisation ?**  
-Les exemples suivants montrent comment les clients peuvent répondre à leurs besoins en décisionnel à l’aide d’une combinaison de Power BI Pro et de Power BI Premium.
+Les exemples suivants montrent comment les clients peuvent répondre à leurs besoins en décisionnel en combinant Power BI Pro et Power BI Premium.
 
 | Scénario 1 | Scénario 2 | Scénario 3 | Scénario 4 |
 | --- | --- | --- | --- |

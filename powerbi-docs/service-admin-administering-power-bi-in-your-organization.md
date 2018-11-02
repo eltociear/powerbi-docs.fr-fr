@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: overview
-ms.date: 05/01/2018
+ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1f3c871d4ac47a110f2085ef1bdccb166fc00643
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fcc7563ef1c1196a7e00e107bb1dadd6b10075d3
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944304"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252465"
 ---
 # <a name="what-is-power-bi-administration"></a>Présentation de l’administration de Power BI
 
@@ -30,7 +30,6 @@ Power BI est conçu pour l’informatique décisionnelle en libre-service ; l’
 - augmenter l’adoption et le retour sur investissement d’un déploiement Power BI.
 
 La tâche consiste à rendre plus productifs les utilisateurs professionnels et à garantir la sécurité et la conformité à la législation et aux réglementations. Parmi les responsabilités assumées figurent l’aide et le support et, dans de nombreux cas, l’accompagnement des utilisateurs professionnels.
-
 
 ## <a name="administrator-roles-related-to-power-bi"></a>Rôles d’administrateur liés à Power BI
 
@@ -50,7 +49,6 @@ Les administrateurs du service Power BI ont accès au portail d’administration
 
 Le rôle d’administrateur du service Power BI n’accorde pas la possibilité d’affecter des licences aux utilisateurs ou de consulter les journaux d’audit dans Office 365. Par conséquent, les utilisateurs qui sont seulement membres du rôle d’administrateur du service Power BI ne peuvent pas à l’heure actuelle assurer la tâche d’administration de Power BI.
 
-
 ## <a name="administrative-tasks"></a>Tâches d’administration
 
 Le tableau suivant décrit les nombreuses tâches effectuées par les administrateurs pour prendre en charge le client Power BI de leur organisation.
@@ -65,7 +63,6 @@ Le tableau suivant décrit les nombreuses tâches effectuées par les administra
 | Gérer les ressources Power BI |<ul><li>Gérer les espaces de travail<br><li>Publier des visuels personnalisés<br><li>Vérifier les codes utilisés pour incorporer Power BI dans d’autres applications|
 | Offrir de l’aide et un support aux utilisateurs du client |<ul><li>Résoudre les problèmes d’accès aux données et autres</ul>|
 | Autres tâches |<ul><li>Déployer Power BI Desktop, par exemple, avec System Center Configuration Manager<br><li>Gérer le déploiement d’applications mobiles Power BI avec Intune<br><li>Gérer la sécurité et la confidentialité des données, notamment des données sources</ul>|
-
 
 ## <a name="administrative-tools"></a>Outils d’administration
 
@@ -82,11 +79,12 @@ Le tableau suivant décrit les différents outils liés à l’administration de
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Nous espérons que cet article vous aura donné un rapide éclairage sur le travail de l’administrateur de Power BI et les rôles, tâches et outils impliqués. Nous vous recommandons les deux rubriques ci-dessous pour approfondir vos connaissances.
+Nous espérons que cet article vous aura donné un rapide éclairage sur le travail de l’administrateur de Power BI et les rôles, tâches et outils impliqués. Nous vous recommandons de consulter les deux rubriques suivantes pour approfondir votre compréhension.
 
 [Utiliser le portail d’administration de Power BI](service-admin-portal.md)
+
+[Utiliser les applets de commande PowerShell](/powershell/power-bi/overview?toc=%2Fen-us%2Fpower-bi%2FTOC.json&bc=%2Fen-us%2Fpower-bi%2Fbreadcrumb%2Ftoc.json&view=powerbi-ps)
 
 [FAQ sur l’administration de Power BI](service-admin-faq.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-
