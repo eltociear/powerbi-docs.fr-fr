@@ -1,6 +1,6 @@
 ---
-title: Nuages de points dans Power BI
-description: Nuages de points dans Power BI
+title: Nuages de points, graphiques en bulles et graphiques à points dans Power BI
+description: Nuages de points, graphiques à points et graphiques en bulles dans Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,22 +8,26 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bd09adf21292b16ee27f111ac92bbd8c83c384d8
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: 7739dda4647a82b3c9d4b58976db89038428625a
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448842"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003176"
 ---
-# <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Nuages de points et graphiques en bulles dans Power BI
+# <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Nuages de points, graphiques en bulles et graphiques à points dans Power BI
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Ces derniers peuvent être distribués uniformément ou non sur l’axe horizontal, en fonction des données.
 
 Un graphique en bulles remplace les points de données par des bulles, la *taille* de la bulle représentant une dimension supplémentaire des données.
 
 ![exemple de graphique en bulles](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+
+Un graphique à points est similaire à un graphique en bulles et à un nuage de points sauf que vous pouvez tracer des données numériques ou de catégorie sur l’axe X. 
+
+![exemple de graphique en bulles](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
 Vous pouvez définir le nombre de points de donnée, dans la limite maximale de 10 000.  
 
@@ -41,6 +45,9 @@ Vous pouvez définir le nombre de points de donnée, dans la limite maximale de 
 * Si vos données ont 3 séries de données qui contiennent chacune un jeu de valeurs.
 * Pour présenter des données financières.  Différentes tailles de bulles sont utiles pour souligner visuellement des valeurs spécifiques.
 * Pour utiliser avec des quadrants.
+
+### <a name="dot-plot-charts-are-a-great-choice-in-place-of-a-scatter-or-bubble"></a>Les graphiques à points constituent un meilleur choix que les nuages de points ou les graphiques en bulles :
+* si vous voulez inclure des données de catégorie sur l’axe X
 
 ## <a name="create-a-scatter-chart"></a>Créer un nuage de points
 Regardez cette vidéo dans laquelle Will crée un graphique à nuages de points, puis suivez les étapes ci-dessous pour en créer un vous-même.
@@ -63,11 +70,11 @@ Ces instructions s’appliquent à l’exemple Analyse de la vente au détail. P
 
 3. Effectuez la conversion en nuage de points. Dans le volet Visualisation, sélectionnez l’icône de nuage de points.
 
-   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
+   ![](media/power-bi-visualization-scatter/power-bi-scatter-new.png).
 
 4. Faites glisser **District** depuis **Détails** vers **Légende**. Cette opération affiche un nuage de points qui trace le **% d’écart des ventes totales** sur l’axe Y et les **Ventes par mètre carré** sur l’axe X. Les couleurs de points de données représentent des districts :
 
-    ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
+    ![](media/power-bi-visualization-scatter/power-bi-scatter2.png)
 
 Ajoutons à présent une troisième dimension.
 
@@ -75,18 +82,17 @@ Ajoutons à présent une troisième dimension.
 
 1. Dans le volet **Champs**, faites glisser **Ventes** > **Ventes de cette année** > **Valeur** vers la zone **Taille**. Les points de données se développent en volumes proportionnels à la valeur des ventes.
    
-   ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
+   ![les points deviennent des bulles](media/power-bi-visualization-scatter/power-bi-scatter-chart-size.png)
 
 2. Pointez sur une bulle. La taille de la bulle reflète la valeur de la zone **Ventes de cette année**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
+    ![affichage d’info-bulles](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
 3. Pour définir le nombre de points de données à afficher dans votre graphique en bulles, dans la section **Mise en forme** du volet **Visualisations**, développez la carte **Général** et ajustez le **Volume de données**. Vous pouvez définir le volume maximal de données sur n’importe quel nombre jusqu’à 10 000. Quand vous atteignez des nombres très élevés, nous vous suggérons de commencer par tester pour vérifier que vous conservez de bonnes performances. 
 
     ![Volume de données](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
-   > [!NOTE]
-   > Étant donné que plus le nombre de points de données est important, plus le temps de chargement est long, si vous choisissez de publier des rapports avec des limites à l’extrémité supérieure de l’échelle, testez vos rapports sur le web et les appareils mobiles pour vérifier que les performances correspondent aux attentes de vos utilisateurs. Notez que pour des nombres plus élevés de points de données, vous devez tester les résultats sur différents facteurs de forme pour obtenir de bonnes performances.
+   Étant donné que plus le nombre de points de données est important, plus le temps de chargement est long, si vous choisissez de publier des rapports avec des limites à l’extrémité supérieure de l’échelle, testez vos rapports sur le web et les appareils mobiles pour vérifier que les performances correspondent aux attentes de vos utilisateurs. 
 
 4. Vous pouvez [mettre en forme les couleurs, étiquettes, titres, arrière-plan, etc.](service-getting-started-with-color-formatting-and-axis-properties.md) de la visualisation. Pour [améliorer l’accessibilité](../desktop-accessibility.md), ajoutez des formes de marqueur à chaque ligne. L’utilisation d’une forme de marqueur différente pour chaque ligne permet aux lecteurs du rapport de différencier plus facilement les lignes (ou aires) les unes des autres. Pour sélectionner la forme de marqueur, développez la carte **Formes**, puis sélectionnez une forme de marqueur.
 
@@ -95,6 +101,13 @@ Ajoutons à présent une troisième dimension.
    Vous pouvez également modifier la forme de marqueur et la définir sur un losange, triangle ou carré :
 
    ![Marqueur Carré](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
+
+## <a name="create-a-dot-plot"></a>Créer un graphique à points
+Pour créer un graphique à points, remplacez le champ d’axe X numérique par un champ de catégorie.
+
+Dans le volet **Axe X**, remplacez **Sales per sq ft** par **District > DM**.
+   
+![nouveau graphique à points](media/power-bi-visualization-scatter/power-bi-dot-plot-squares.png)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes

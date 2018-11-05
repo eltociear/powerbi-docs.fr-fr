@@ -1,5 +1,5 @@
 ---
-title: Qu’est-ce qu’un tableau de bord pour les consommateurs du service Power BI ?
+title: Tableaux de bord dans le service Power BI
 description: Les tableaux de bord sont une fonctionnalité clé du service Power BI.
 author: maggieMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/02/2018
-ms.author: maggie
+ms.date: 10/18/2018
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6be3d095ca68cf83ff7a2ba4c7fd02a9340f3474
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: b7f94d47452fb9d1ea24c950dba2988c6c80c053
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908437"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473725"
 ---
-# <a name="dashboards-in-power-bi-service"></a>Tableaux de bord dans le service Power BI
+# <a name="dashboards-in-the-power-bi-service"></a>Tableaux de bord dans le service Power BI
 
 Un ***tableau de bord*** Power BI est une page unique, souvent appelée canevas, qui utilise des visualisations pour raconter une histoire. Comme il est limité à une seule page, un tableau de bord bien conçu contient uniquement les éléments les plus importantes de cette histoire.
 

@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/09/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: b2627950ea51239acb19972fde3244f3bd158255
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909219"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003199"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Surveiller les capacités de Power BI Premium et Power BI Embedded
 
@@ -61,13 +61,11 @@ L’onglet **Filtres appliqués à toutes les pages** vous permet de sélectionn
 
 ### <a name="datasets-tab"></a>onglet Jeux de données
 
-L’onglet **Jeux de données** fournit l’essentiel des mesures de l’application. Utilisez les quatre boutons en haut de l’onglet pour accéder à différentes zones : **Résumé**, **Actualisations**, **Requêtes** et **Jeux de données**.
+L’onglet **Jeux de données** fournit l’essentiel des mesures de l’application. Utilisez les boutons en haut de l’onglet pour accéder aux différentes zones : **Résumé**, **Actualisations**, **Durées des requêtes**, **Attentes des requêtes** et **Jeux de données**.
 
 ![onglet Jeux de données](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Zone Résumé
-
-![Bouton Résumé](media/service-admin-premium-monitor-capacity/summary-button.png)
 
 La zone **Résumé** affiche une vue de vos capacités basée sur les entités, les ressources système et les charges de travail de jeux de données.
 
@@ -80,19 +78,27 @@ La zone **Résumé** affiche une vue de vos capacités basée sur les entités, 
 
 #### <a name="refreshes-area"></a>Zone Actualisations
 
-![Bouton Actualisations](media/service-admin-premium-monitor-capacity/refreshes-button.png)
-
 La zone **Actualisations** répertorie la totalité des actualisations, les mesures de réussite, le temps d’attente d’actualisation moyen/maximal et la durée d’actualisation moyenne/maximale en tranches de jeux de données au cours des sept derniers jours. Les deux graphiques du bas montrent une comparaison des actualisations et de la consommation de mémoire en Go, ainsi que les temps d’attente moyens divisés en compartiments d’une heure, signalés à l’heure locale. Les graphiques à barres du haut répertorient les cinq jeux de données principaux par la durée moyenne nécessaire pour terminer l’actualisation du jeu de données (durée d’actualisation) et la durée d’attente d’actualisation moyenne. Plusieurs pics élevés de temps d’attente d’actualisation indiquent une très forte sollicitation des capacités.
 
-#### <a name="queries-area"></a>Zone Requêtes
+#### <a name="query-durations-area"></a>Zone Durées des requêtes
 
-![Bouton Requêtes](media/service-admin-premium-monitor-capacity/queries-button.png)
+La zone **Durées des requêtes** liste le nombre total de requêtes exécutées et leur durée moyenne/maximale en millisecondes. Ces données sont segmentées par jeu de données, espace de travail et intervalles d’une heure au cours des sept derniers jours. Le graphique du bas indique le nombre et la durée moyenne (en millisecondes) des requêtes par rapport à la consommation de mémoire en Go, divisé en intervalles d’une heure et exprimé en heure locale.
 
-La zone **Requêtes** répertorie le nombre total de requêtes exécutées, le nombre total d’attentes des requêtes pour Live query/Direct query, la durée moyenne/maximale, le temps d’attente moyen/maximal en millisecondes segmenté par jeu de données, espace de travail et intervalle d’une heure au cours des sept derniers jours. Les graphiques du bas indiquent le nombre de requêtes, la durée moyenne (en millisecondes) et le temps d’attente moyen (en millisecondes) versus la consommation de mémoire en Go, divisés en intervalles d’une heure et exprimés en heure locale. Les deux graphiques en haut à droite répertorient les cinq premiers jeux de données en fonction de la durée moyenne des requêtes et du temps d’attente nécessaire pour terminer les requêtes. Des durées de requêtes et des temps d’attente longs indiquent que la capacité est en surchauffe. Cela peut également signifier qu’un seul jeu de données est à l’origine de problèmes et que des recherches plus approfondies sont nécessaires.
+Le graphique du haut présente l’histogramme de répartition des durées des requêtes. L’histogramme est regroupé par durées de requêtes exprimées en millisecondes dans les catégories suivantes : intervalles <= 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 s, 1-3 s, 3-10 s, 10-30 s et >30 s.
+
+Le graphique en bas à droite liste les cinq premiers jeux de données en fonction de la durée moyenne d’exécution des requêtes.
+
+Des durées de requêtes et des temps d’attente longs indiquent que la capacité est en surchauffe. Cela peut également signifier qu’un seul jeu de données est à l’origine de problèmes et que des recherches plus approfondies sont nécessaires.
+
+#### <a name="query-waits-area"></a>Zone Attentes des requêtes
+
+La zone **Attentes des requêtes** liste le nombre total de requêtes exécutées, le nombre total d’attentes de requêtes pour Live query/Direct query et le temps d’attente moyen/maximal en millisecondes. Ces données sont segmentées par jeu de données, espace de travail et intervalles d’une heure au cours des sept derniers jours. Le graphique du bas indique le nombre d’attentes et le temps d’attente moyen (en millisecondes) des requêtes par rapport à la consommation de mémoire en Go, divisé en intervalles d’une heure et exprimé en heure locale.
+
+Le graphique du haut présente l’histogramme de répartition des temps d’attente des requêtes. L’histogramme est regroupé par durées de requêtes exprimées en millisecondes dans les catégories suivantes : intervalles <= 50 ms, 50-100 ms, 100-200 ms, 200-400 ms, 400 ms-1 s, 1-5 s, et >5 s.
+
+Le graphique en bas à droite liste les cinq premiers jeux de données en fonction du temps d’attente moyen de lancement des requêtes.
 
 #### <a name="datasets-area"></a>Zone Jeux de données
-
-![Bouton Jeux de données](media/service-admin-premium-monitor-capacity/datasets-button.png)
 
 L’onglet **Jeux de données** affiche les jeux de données complets exclus par heure en raison d’une sollicitation de la mémoire.
 

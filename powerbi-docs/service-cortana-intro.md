@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2018
+ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 95fa59d91a73101d7d04f3921a81236bfae7d0bb
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: ccc99c2f9810bcda80e1f02ce67e49390fd0308f
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187303"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003245"
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Trouver et afficher rapidement vos données Power BI à l’aide de Cortana pour Power BI
 Utilisez Cortana sur vos appareils Windows 10 pour obtenir directement des réponses à vos questions métier importantes. En s’intégrant avec Power BI, Cortana peut extraire des informations clés directement à partir de tableaux de bord et de rapports Power BI. Pour cela, il vous suffit de disposer de la version de novembre 2015 ou ultérieure de Windows 10, de Cortana, de Power BI, et d’avoir accès à au moins un jeu de données.
@@ -29,12 +29,12 @@ Depuis un certain temps déjà, vous pouvez [utiliser Cortana pour extraire cert
 > 
 > 
 
-La technologie sous-jacente utilise le [service Recherche Azure de Microsoft](). Ce service offre des fonctionnalités supplémentaires, telles que le classement intelligent, la correction d’erreurs et la saisie semi-automatique.
+La technologie sous-jacente utilise le [service Recherche Microsoft Azure](https://docs.microsoft.com/azure/search/). Ce service offre des fonctionnalités supplémentaires, telles que le classement intelligent, la correction d’erreurs et la saisie semi-automatique.
 
 Les deux expériences Cortana existeront côte à côte.
 
 ## <a name="cortana-for-power-bi-documentation"></a>Documentation de Cortana pour Power BI
-Nous tenons à votre disposition 4 documents qui vous guident dans la configuration et l’utilisation de Cortana pour Power BI. Cette série contient plusieurs articles, dont les procédures vous guideront pour :
+Nous avons à votre disposition quatre documents qui vous guideront tout au long de la configuration et de l’utilisation de Cortana pour Power BI. Cette série contient plusieurs articles, dont les procédures vous guideront pour :
 
 **Article 1** (cet article) : comprendre comment Cortana et Power BI fonctionnent ensemble
 
@@ -54,13 +54,13 @@ Si Cortana trouve une correspondance, il affiche le nom de la page de tableau de
 ### <a name="cortana-and-dashboards-the-new-experience"></a>Cortana et Tableaux de bord (*nouvelle expérience*)
 Cortana peut trouver des réponses dans des tableaux de bord qui vous appartiennent et des tableaux de bord partagés avec vous. Posez à Cortana des questions en utilisant des titres, mots clés, noms de propriétaire, noms d’espace de travail, noms d’application et bien plus encore.
 
-Pour que Cortana puisse trouver une réponse, votre question doit comporter au moins 2 mots. Par conséquent, si vous effectuez une recherche sur un tableau de bord dont le nom ne comprend qu’un seul mot (par exemple, Marketing), ajoutez à votre question le mot « montrer », « Power BI » ou « <owner name> », comme dans « afficher Marketing » et « exemple michele hart ». 
+Pour que Cortana puisse trouver une réponse, votre question doit comporter au moins deux mots. Par conséquent, si vous effectuez une recherche sur un tableau de bord dont le nom ne comprend qu’un seul mot (par exemple, Marketing), ajoutez à votre question le mot « afficher », « Power BI » ou le nom du propriétaire, comme dans « afficher Marketing » et « exemple michele hart ». 
 
-Si votre tableau de bord comprend un titre de plusieurs mots, Cortana renvoie ce tableau de bord uniquement si votre recherche correspond à au moins deux de ces mots, ou si le tableau de bord correspond à l’un des mots, plus le nom du propriétaire. Pour un tableau de bord nommé « Exemple Rentabilité des clients » : 
+Si le titre de votre tableau de bord comprend plusieurs mots, Cortana retourne ce tableau de bord uniquement si votre recherche correspond à au moins deux de ces mots, ou à l’un des mots plus le nom du propriétaire. Pour un tableau de bord nommé « Exemple Rentabilité des clients » : 
 
 * L’énoncé « montrer clients » ne retourne *pas* de résultat de tableau de bord Power BI.   
 * En revanche, des énoncés tels que « montrer rentabilité clients », « client r », « client e », « exemple rentabilité », « exemple michele hart », « montrer rentabilité clients exemple  » et « montrer clients r » *retournent* un résultat de Power BI.
-* « powerbi » comptant comme l’un des 2 mots obligatoires, « powerbi exemple » *retourne* un résultat de Power BI. 
+* « powerbi » comptant comme l’un des deux mots obligatoires, « powerbi exemple » *retourne* un résultat de Power BI. 
   
     ![Recherche de Cortana au moins 2 mots](media/service-cortana-intro/power-bi-cortana-2-words.png)
 
@@ -69,7 +69,7 @@ Si votre tableau de bord comprend un titre de plusieurs mots, Cortana renvoie ce
 
 La technologie sous-jacente pour les rapports utilise les [Q&R sur Power BI de Microsoft](consumer/end-user-q-and-a.md).
 
-Lorsque vous posez une question dans Cortana, Power BI répond à partir de pages de rapport spécifiquement conçues pour Cortana. Les réponses possibles sont déterminées par Cortana à la volée directement à partir des *cartes de réponse* Cortana déjà créées dans Power BI.  Pour explorer davantage une réponse, ouvrez simplement un résultat dans Power BI.
+Lorsque vous posez une question dans Cortana, Power BI répond à partir de pages de rapport spécifiquement conçues pour Cortana. Les réponses possibles sont déterminées par Cortana à la volée directement à partir des *cartes de réponse* Cortana déjà créées dans Power BI.  Pour explorer plus en détail une réponse, ouvrez un résultat dans Power BI.
 
 > [!NOTE]
 > Avant que Cortana puisse rechercher des réponses dans vos rapports Power BI, vous avez besoin d’[activer cette fonctionnalité dans le service Power BI et de configurer Windows pour communiquer avec Power BI](service-cortana-enable.md).  
@@ -94,7 +94,7 @@ Lorsque vous posez une question dans Cortana, Power BI répond à partir de page
 
     Vous pouvez modifier la disposition en [modifiant la *vue téléphone* du tableau de bord](service-create-dashboard-mobile-phone-view.md). 
 
-1. À partir de Cortana, vous disposez également d’options permettant d’ouvrir le tableau de bord dans le service Power BI ou Power Bi Mobile. Ouvrez le tableau de bord dans le service Power BI en sélectionnant **Ouvrir sur le web**. 
+1. À partir de Cortana, vous avez aussi la possibilité d’ouvrir le tableau de bord dans le service Power BI ou Power Bi Mobile. Ouvrez le tableau de bord dans le service Power BI en sélectionnant **Ouvrir sur le web**. 
    
    ![Ouvrir le tableau de bord à partir de Cortana](media/service-cortana-intro/power-bi-dashboard-opens.png "Ouvrir le tableau de bord à partir de Cortana")   
 4. Utilisons à présent Cortana pour rechercher un rapport. Nous devons être informés de l’existence d’un [rapport comprenant une page avec une carte de réponse Cortana ](service-cortana-answer-cards.md). Dans cet exemple, un rapport nommé « Cortana-New-Stores » comporte une page de carte de réponse Cortana nommée « cortana stores ».  

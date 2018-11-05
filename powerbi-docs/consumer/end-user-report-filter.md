@@ -1,21 +1,21 @@
 ---
-title: Vue d’ensemble du volet Filtres de Power BI pour les consommateurs
-description: Vue d’ensemble du volet Filtres de rapport du service Power BI
+title: Ajouter un filtre de rapport
+description: Guide pratique pour afficher un rapport dans le service Power BI pour les consommateurs
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 10/19/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c49e075bd7fbe2debb0b577a1ce2771491d5fac4
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 31b3584b0cbd2481db64160bcf502caf46e7acc3
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908276"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473804"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport
 Cet article présente le volet Filtres de rapport du service Power BI.
@@ -29,7 +29,7 @@ Quand un collègue partage un rapport avec vous, recherchez le volet **Filtres**
 
 ![rapport dans le navigateur](media/end-user-report-filter/power-bi-expanded.png)
 
-Le volet Filtres contient les filtres qui ont été ajoutés au rapport par le *concepteur* du rapport. Les *consommateurs* comme vous peuvent interagir avec les filtres et enregistrer leurs modifications, mais ils ne peuvent pas ajouter de nouveaux filtres au rapport.
+Le volet Filtres contient les filtres qui ont été ajoutés au rapport par le *concepteur* du rapport. Les *consommateurs* comme vous peuvent interagir avec les filtres et enregistrer leurs modifications, mais ils ne peuvent pas ajouter de nouveaux filtres au rapport. Par exemple, dans la capture d’écran ci-dessus, le concepteur ajouté deux filtres au niveau de la page : Segment et Year (Année). Vous pouvez interagir avec ces filtres et les modifier, mais vous ne pouvez pas ajouter de troisième filtre au niveau de la page.
 
 Dans le service Power BI, les rapports conservent les modifications que vous apportez dans le volet Filtres, et ces modifications sont passées à la version mobile du rapport. Pour réinitialiser le volet Filtres aux valeurs par défaut du concepteur, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus du haut.     
 
@@ -40,11 +40,15 @@ Dans cet exemple, nous avons sélectionné un élément visuel contenant 6 filt
 
 ![liste de filtres](media/end-user-report-filter/power-bi-filter-list.png)
 
-Certains des filtres sont accompagnés du mot **Tout**, ce qui signifie que toutes les valeurs sont incluses dans le filtre.  Par exemple, dans la capture d’écran ci-dessous, **Chain(Tout)** indique que cette page de rapport inclut des données sur toutes les chaînes de magasin.  En revanche, le filtre au niveau du rapport **AnnéeFiscale est 2013 ou 2014** indique que le rapport inclut des données uniquement pour les années fiscales 2013 et 2014.
+Certains des filtres sont accompagnés du mot **Tout**, ce qui signifie que toutes les valeurs sont incluses dans le filtre.  Par exemple, dans la capture d’écran ci-dessous, **Chain (All)** (Chaîne (Tout)) indique que cette page de rapport comporte des données sur toutes les chaînes de magasins.  En revanche, le filtre au niveau du rapport **AnnéeFiscale est 2013 ou 2014** indique que le rapport inclut des données uniquement pour les années fiscales 2013 et 2014.
 
 Toute personne qui consulte ce rapport peut interagir avec ces filtres comme suit :
 
-* Affichez les détails du filtre en sélectionnant la flèche en regard du filtre.
+- Recherchez et sélectionnez la valeur souhaitée sur la page, dans l’élément visuel, dans le rapport et dans les filtres d’extraction. 
+
+    ![Recherche dans un filtre](media/end-user-report-filter/power-bi-filter-search.png)
+
+- Affichez les détails du filtre en sélectionnant la flèche en regard du filtre.
   
    ![montre Lindseys sélectionné](media/end-user-report-filter/power-bi-expan-filter.png)
 * Changez le filtre, par exemple en passant de **Lindseys** à **Fashions Direct**.
@@ -56,9 +60,11 @@ Toute personne qui consulte ce rapport peut interagir avec ces filtres comme sui
     
 * Supprimez le filtre en sélectionnant la croix (**x**) en regard de son nom.
   
-  La suppression d’un filtre le supprime de la liste, mais ne supprime pas les données du rapport.  Par exemple, si vous supprimez le filtre **AnnéeFiscale est 2013 ou 2014**, les données relatives à l’année fiscale figurent toujours dans le rapport, mais elles ne sont plus filtrées pour afficher uniquement les années 2013 et 2014 ; toutes les années fiscales contenues dans les données sont affichées.  Néanmoins, une fois que vous supprimez le filtre, vous ne pouvez pas le modifier à nouveau, car il est supprimé de la liste. Une meilleure option consiste à effacer le filtre en sélectionnant l’icône représentant une gomme ![icône de gomme](media/end-user-report-filter/power-bi-eraser-icon.png).
+    ![x mis en surbrillance](media/end-user-report-filter/power-bi-delete-filter.png)
+
+  La suppression d’un filtre le supprime de la liste, mais ne supprime pas les données du rapport.  Par exemple, si vous supprimez le filtre **AnnéeFiscale est 2013 ou 2014**, les données relatives à l’année fiscale figurent toujours dans le rapport, mais elles ne sont plus filtrées pour afficher uniquement les années 2013 et 2014 ; toutes les années fiscales contenues dans les données sont affichées.  Néanmoins, une fois que vous supprimez le filtre, vous ne pouvez pas le modifier à nouveau, car il est supprimé de la liste. Il est préférable d’effacer le filtre en sélectionnant l’icône représentant une gomme ![icône de gomme](media/end-user-report-filter/power-bi-eraser-icon.png).
   
-  ![x mis en surbrillance](media/end-user-report-filter/power-bi-delete-filter.png)
+  
 
 
 
@@ -70,14 +76,14 @@ Toute personne qui consulte ce rapport peut interagir avec ces filtres comme sui
 ### <a name="list-mode"></a>Mode Liste
 Le fait de cocher une case sélectionne ou désélectionne la valeur. La case **Tout** peut être utilisée pour activer ou désactiver l’ensemble des cases à cocher. Les cases à cocher représentent toutes les valeurs disponibles pour ce champ.  Quand vous ajustez le filtre, la reformulation est mise à jour pour refléter vos choix. 
 
-![filtre du mode Liste](media/end-user-report-filter/pbi_restatement.png)
+![filtre du mode Liste](media/end-user-report-filter/power-bi-restatement-new.png)
 
-Notez que la reformulation est à présent « est Amarilla ou Carretera ».
+La reformulation indique à présent « is Mar, Apr or May » (« est mar, avr ou mai »).
 
 ### <a name="advanced-mode"></a>Mode Avancé
 Sélectionnez **Filtrage avancé** pour basculer en mode Avancé. Utilisez les contrôles de liste déroulante et les zones de texte pour identifier les champs à inclure. En choisissant **Et** ou **Ou**, vous pouvez créer des expressions de filtre complexes. Cliquez sur le bouton **Appliquer le filtre** une fois que vous avez défini les valeurs souhaitées.  
 
-![mode Avancé](media/end-user-report-filter/aboutfilters.png)
+![mode Avancé](media/end-user-report-filter/power-bi-advanced.png)
 
 ## <a name="types-of-filters-numeric-field-filters"></a>Types de filtres : filtres de champ numérique
 ### <a name="list-mode"></a>Mode Liste
@@ -86,7 +92,7 @@ Si les valeurs sont limitées, le fait de sélectionner le nom du champ afficher
 ### <a name="advanced-mode"></a>Mode Avancé
 Si les valeurs sont infinies ou représentent une plage, le fait de sélectionner le nom du champ ouvrira le mode Filtre avancé. Utilisez la liste déroulante et les zones de texte pour spécifier la plage de valeurs que vous voulez afficher. 
 
-![filtres avancés](media/end-user-report-filter/pbi_dropdown-and-text.png)
+![filtres avancés](media/end-user-report-filter/power-bi-dropdown-and-text.png)
 
 En choisissant **Et** ou **Ou**, vous pouvez créer des expressions de filtre complexes. Cliquez sur le bouton **Appliquer le filtre** une fois que vous avez défini les valeurs souhaitées.
 
