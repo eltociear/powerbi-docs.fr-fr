@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
-ms.openlocfilehash: 34f34fd0a83367e306f8d84b4f9ebdf3cf30af93
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 88bfd67ddf284ea6b518c5ebdd6386887513f393
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396770"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223050"
 ---
 # <a name="whitepapers-for-power-bi"></a>Livres blancs pour Power BI
 
@@ -30,7 +30,7 @@ Les livres blancs vous permettent d’explorer Power BI de façon plus approfond
 | [Sécurité](service-admin-power-bi-security.md) |Fournit une explication détaillée concernant la sécurité au sein de Power BI. | Juillet 2018 |
 | [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper)|Ce document décrit comment distribuer du contenu à des utilisateurs externes à l’organisation en utilisant l’intégration d’Azure Active Directory B2B (AAD B2B).| Mars 2018 |
 | [Analytique avancée avec Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Décrit les fonctionnalités analytiques avancées de Power BI, y compris l’analyse prédictive, les visualisations personnalisées, l’intégration de R et les expressions d’analyse de données. | Février 2017 |
-| [Bonnes pratiques de conception de visuels et de rapports](visuals/power-bi-visualization-best-practices.md) |Présente le bonnes pratiques de conception de rapports dans Power BI. | Juin 2018 |
+| [Meilleures pratiques en matière de conception de visuels et de rapports](visuals/power-bi-visualization-best-practices.md) |Présente le meilleures pratiques en matière de conception de rapports dans Power BI. | Juin 2018 |
 | [Filtrage bidirectionnel](desktop-bidirectional-filtering.md) |Décrit le filtrage croisé bidirectionnel dans Power BI Desktop (ce livre blanc aborde également SQL Server Analysis Services 2016, tous les deux ayant le même comportement). | Juillet 2018 |
 | [DirectQuery dans SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |Pour SQL Server 2016, DirectQuery a été repensé de façon à fournir des performances et une vitesse véritablement supérieures. Toutefois, la fonctionnalité est également maintenant plus complexe à comprendre et à implémenter. | Janvier 2017 |
 | [Power BI et SAP BW](https://aka.ms/powerbiandsapbw)| Ce document décrit comment les clients SAP peuvent tirer profit de la connexion de Power BI à leurs systèmes SAP Business Warehouse (BW) existants.| Février 2018 |

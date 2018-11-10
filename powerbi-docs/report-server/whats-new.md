@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: 648938006cd15e2bb92b305aa9a2af24d028cead
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a365cab0420fdf373d62f5b1774a4d86985adfe3
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726935"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101252"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -328,7 +328,7 @@ Power BI Report Server prend désormais en charge les nouveaux visuels de table 
 [Présentation de Power BI Report Server](get-started.md) 
 [Manuel de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
-[Installer le Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Télécharger le générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

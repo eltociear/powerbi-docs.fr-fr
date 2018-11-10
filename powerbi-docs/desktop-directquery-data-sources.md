@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fee4acf21e38ddeaf78ff785d76b41c774c7022d
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 97d9fc6bf7a27b9d681d10ae20ab0780622e5ee8
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909545"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223395"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Sources de données prises en charge par DirectQuery dans Power BI
 **Power BI Desktop** et le **service Power BI** possèdent de nombreuses sources de données auxquelles vous pouvez vous connecter pour accéder aux données. Cet article décrit quelles sources de données pour Power BI prennent en charge la méthode de connexion appelée **DirectQuery**. Pour plus d’informations sur DirectQuery, consultez [**DirectQuery dans Power BI**](desktop-directquery-about.md).
@@ -65,7 +65,7 @@ Le tableau suivant indique si une **passerelle de données locale** est nécessa
 | Spark (bêta), version 0.9 et versions ultérieures |Pas encore pris en charge dans le **service Power BI** |
 | Azure HDInsight Spark (bêta) |Non |
 | IBM Netezza |Oui |
-| Serveur d’applications SAP Business Warehouse |Oui |
+| SAP Business Warehouse Application Server |Oui |
 | Serveur de messages SAP Business Warehouse |Pas encore pris en charge dans le **service Power BI** |
 | Google BigQuery |Non |
 

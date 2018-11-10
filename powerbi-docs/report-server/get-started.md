@@ -4,18 +4,18 @@ description: Obtenez une vue d’ensemble de Power BI Report Server pour compren
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/07/2018
+ms.date: 10/24/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 1be2270074011f73c3d942677211dd99d18c6b2b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 95a97c86ae7d17091b49fbf33cf5ec0d26053c3e
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294568"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101391"
 ---
 # <a name="what-is-power-bi-report-server"></a>Présentation de Power BI Report Server
 
@@ -28,6 +28,9 @@ Power BI Report Server ressemble à la fois à SQL Server Reporting Services et 
 
 ## <a name="licensing-power-bi-report-server"></a>Gestion des licences Power BI Report Server
 Power BI Report Server est disponible avec deux licences : [Power BI Premium](../service-premium.md) et [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) avec Software Assurance. Une licence Power BI Premium vous permet de créer un déploiement hybride combinant ressources dans le cloud et ressources locales.  
+
+> [!NOTE]
+> Pour Power BI Premium, Power BI Report Server est uniquement inclus dans les références (SKU) P. Il n’est pas inclus dans les références (SKU) EM.
 
 ## <a name="web-portal"></a>Portail web
 Le point d’entrée de Power BI Report Server est un portail web sécurisé affichable dans n’importe quel navigateur moderne. Ici, vous pouvez accéder à l’ensemble de vos rapports et indicateurs de performance clés. Le contenu du portail web est organisé sous forme d’une hiérarchie standard de dossiers. Dans vos dossiers, le contenu est organisé par type : rapports Power BI, rapports mobiles, rapports paginés, indicateurs de performance clés et classeurs Excel, mais aussi jeux de données partagés et sources de données à utiliser comme blocs de construction pour vos rapports. Vous pouvez marquer des favoris pour les afficher dans un dossier unique. Vous pouvez également créer des indicateurs de performance clés directement dans le portail web. 
@@ -66,7 +69,7 @@ Plus de [Documentation pour les développeurs de Reporting Services](https://doc
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Installer Power BI Report Server](install-report-server.md)  
-[Installer le Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Télécharger le générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

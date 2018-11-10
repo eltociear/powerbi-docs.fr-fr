@@ -2,32 +2,33 @@
 title: Créer des visuels personnalisés à l’aide des outils de développement
 description: Les éléments visuels personnalisés vous permettent de répondre aux besoins de vos utilisateurs et de vous mettre en adéquation avec le design de votre application. Découvrez comment créer un élément visuel personnalisé pour Power BI à l’aide des outils de développement.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 11/30/2017
-ms.author: maghan
-ms.openlocfilehash: ec6399d815cb17bb0f2542144c63535835659017
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a8aca5e3410d6352d64044cdc1d8575b2449912c
+ms.sourcegitcommit: f2eab2c3e7b5ec3684f63d819f10cb3dcfa21e73
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726682"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50153699"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Créer des visuels personnalisés à l’aide des outils de développement
+
 Les éléments visuels personnalisés vous permettent de répondre aux besoins de vos utilisateurs et de vous mettre en adéquation avec le design de votre application. Découvrez comment créer un élément visuel personnalisé pour Power BI à l’aide des outils de développement.
 
 > [!NOTE]
 > Ce document vous permettra de devenir opérationnel. Pour plus de détails, voir les informations de référence dans la [documentation Git relative aux éléments visuels dans Power BI](https://github.com/Microsoft/PowerBI-visuals).
-> 
-> 
 
 ## <a name="requirements"></a>Configuration requise
+
 * NodeJS 4.0+ requis (version 5.0 ou ultérieure recommandée) [Télécharger NodeJS](https://nodejs.org)
 
 ## <a name="install-nodejs-and-the-power-bi-tools"></a>Installer NodeJS et Power BI Tools
+
 Pour créer un élément visuel personnalisé, vous devrez installer NodeJS. NodeJS est requis pour exécuter les outils en ligne de commande.
 
 1. Téléchargez et installez [NodeJS](https://nodejs.org). La version 4.0 est requise, mais il est recommandé d’utiliser la version 5.0 ou un version ultérieure.
@@ -83,12 +84,11 @@ Pour créer un élément visuel personnalisé, vous devrez installer NodeJS. Nod
 <a name="ssl-setup"></a>
 
 ### <a name="server-certificate-setup"></a>Installation de certificat de serveur
+
 Pour activer un aperçu instantané de votre élément visuel, vous avez besoin d’un serveur HTTPS approuvé. Avant de commencer, vous devez installer un certificat SSL permettant le chargement d’éléments visuels dans votre navigateur web. 
 
 > [!NOTE]
 > Il s’agit d’une installation unique pour votre station de travail de développement.
-> 
-> 
 
 Pour *créer* un certificat, exécutez la commande suivante.
 
@@ -96,9 +96,6 @@ Pour *créer* un certificat, exécutez la commande suivante.
 
 > [!NOTE]
 > Vous devez voir un message vous indiquant le chemin d’accès au certificat et un mot de passe qui vient d’être généré.
-> 
-> 
-
 
 Pour *installer* un certificat, exécutez la commande suivante.
 
@@ -106,8 +103,6 @@ Pour *installer* un certificat, exécutez la commande suivante.
 
 > [!NOTE]
 > Vous devez voir un message vous invitant à utiliser la phrase secrète qui vient d’être générée pour installer un certificat PFX.
-> 
-> 
 
 **Système d’exploitation Windows**
 
@@ -131,8 +126,6 @@ Pour *installer* un certificat, exécutez la commande suivante.
 
 > [!NOTE]
 > Si le certificat n’est pas reconnu, il se peut que vous deviez redémarrer votre ordinateur.
-> 
-> 
 
 **OSX**
 
@@ -149,10 +142,9 @@ Pour *installer* un certificat, exécutez la commande suivante.
 
 > [!NOTE]
 > Si le certificat n’est pas reconnu, il se peut que vous deviez redémarrer votre ordinateur.
-> 
-> 
 
-## <a name="enable-live-preview-of-developer-visual"></a>Activer l’aperçu instantané de l’élément visuel de développeur
+## <a name="enable-a-live-preview-of-the-developer-visual"></a>Activer un aperçu instantané de l’élément visuel de développeur
+
 Pour activer un aperçu instantané de votre élément visuel personnalisé, procédez comme suit. Cela permet d’utiliser l’élément visuel dans le service Power BI lors de la modification des rapports.
 
 1. Accédez et connectez-vous à [app.powerbi.com](https://app.powerbi.com).
@@ -168,16 +160,16 @@ Pour activer un aperçu instantané de votre élément visuel personnalisé, pro
 
    > [!NOTE]
    > Cela nécessite que vous ayez exécuté `pbiviz start` à partir du dossier d’éléments visuels sur votre ordinateur de développement. Pour plus d’informations sur la création de votre visuel, voir [Créer un visuel](#create-a-new-visual) dans cet article.
-   > 
-   > 
+
 5. Sélectionnez l’élément visuel dans le canevas de rapport. Vous pouvez associer des données de la même façon que d’autres éléments visuels.
 
 Vous pouvez maintenant commencer à développer votre élément visuel.
 
 ## <a name="create-a-new-visual"></a>Créer un élément visuel
+
 Vous pouvez créer un projet d’élément visuel en exécutant la commande suivante.
 
-```
+```powershell
 pbiviz new MyVisualName
 ```
 
@@ -186,18 +178,20 @@ Vous pouvez remplacer *MyVisualName* par le nom que vous voulez donner à cet é
 Cette commande crée un dossier dans le répertoire dans lequel elle a été exécutée. Elle génère un modèle de démarrage pour votre élément visuel. Une fois l’exécution de la commande terminée, vous pouvez ouvrir le répertoire et utiliser votre éditeur favori pour commencer à travailler sur votre nouvel élément visuel.
 
 ## <a name="testing-your-visual-in-power-bi"></a>Test de votre élément visuel dans Power BI
+
 Vous pouvez tester votre élément visuel dans le service Power BI, à l’intérieur des rapports et tableaux de bord.
 
 <a name="running-your-visual"></a>
 
 ### <a name="running-your-visual"></a>Exécution de votre élément visuel
+
 Vous pouvez exécuter votre élément visuel en procédant comme suit.
 
 1. Ouvrez une invite de commandes.
 2. Faites de votre répertoire votre dossier d’éléments visuels. Il s’agit du dossier contenant le fichier `pbiviz.json`.
 3. Exécutez la commande suivante.
 
-    ```
+    ```powershell
     pbiviz start
     ```
 
@@ -205,7 +199,7 @@ Vous pouvez exécuter votre élément visuel en procédant comme suit.
 
 Si vous êtes dans le mauvais emplacement, un message d’erreur similaire au suivant s’affiche.
 
-```
+```powershell
     error  LOAD ERROR Error: pbiviz.json not found. You must be in the root of a visual project to run this command.
         at e (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:67:35)
         at Function.loadVisualPackage (C:\Users\[user]\AppData\Roaming\npm\node_modules\powerbi-visuals-tools\lib\VisualPackage.js:62:16)
@@ -220,14 +214,13 @@ Si vous êtes dans le mauvais emplacement, un message d’erreur similaire au su
 ```
 
 ### <a name="viewing-your-visual-in-power-bi"></a>Affichage de votre élément visuel dans Power BI
+
 Pour afficher votre élément visuel dans un rapport, accédez à celui-ci, puis sélectionnez l’élément visuel dans le volet **Visualisations**.
 
 > [!NOTE]
 > Avant de faire cela, vous devez exécuter la commande `pbiviz start`, comme décrit dans la section [Exécution de votre élément visuel](#running-your-visual).
-> 
-> 
 
-![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
+![Sélection des visuels de développeur Power BI](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
 Vous voyez ensuite le modèle de démarrage pour l’élément visuel.
 
@@ -237,11 +230,12 @@ Vous voyez ensuite le modèle de démarrage pour l’élément visuel.
 | --- | --- |
 | Actualiser l’élément visuel |Sert à actualiser manuellement l’élément visuel si le rechargement automatique est désactivé. |
 | Activer/désactiver le rechargement automatique |Quand le rechargement automatique est activé, l’élément visuel est automatiquement actualisé chaque fois que vous enregistrez son fichier. |
-| Afficher le Dataview |Affiche la vue de données sous-jacente de l’élément visuel à des fins de débogage. |
+| Afficher la vue des données |Affiche la vue de données sous-jacente de l’élément visuel à des fins de débogage. |
 | Obtenir de l’aide |Documentation dans GitHub |
 | Envoyer des commentaires |Dites-nous comment améliorer votre expérience. (nécessite un compte GitHub). |
 
 ## <a name="package-your-visual-for-use-in-power-bi-desktop-and-distribution"></a>Empaqueter votre élément visuel pour une utilisation dans Power BI Desktop et la distribution
+
 Pour pouvoir charger votre élément visuel dans [Power BI Desktop](https://powerbi.microsoft.com/desktop/) ou le partager avec la communauté dans la [galerie d’éléments visuels de Power BI](https://visuals.powerbi.com), vous devez générer un fichier `pbiviz`.
 
 Vous pouvez empaqueter votre élément visuel en procédant comme suit.
@@ -250,19 +244,21 @@ Vous pouvez empaqueter votre élément visuel en procédant comme suit.
 2. Faites de votre répertoire votre dossier d’éléments visuels. Il s’agit du dossier contenant le fichier `pbiviz.json`.
 3. Exécutez la commande suivante.
 
-    ```
+    ```powershell
     pbiviz package
     ```
 
 Cette commande crée un fichier `pbiviz` dans le répertoire `dist/` de votre projet d’élément visuel. Si un fichier `pbiviz` y figure déjà, il est remplacé.
 
 ## <a name="updating-the-visuals-api-version"></a>Mise à jour de la version d’API d’éléments visuels
+
 Lorsque vous créez un élément visuel à l’aide de `pbiviz new`, une copie des définitions et schémas json de type d’API appropriés est placée dans le répertoire de votre élément visuel. Si nécessaire, la commande `pbiviz update`permet de mettre à jour ces fichiers. Cela peut être utile si nous publions un correctif pour une version d’API antérieure, ou si vous souhaitez procéder à une mise à jour vers la dernière version d’API.
 
 ### <a name="updating-your-existing-api-version"></a>Mise à jour de votre version d’API
+
 Si nous publions une mise à jour pour une API existante, vous pouvez obtenir la dernière version en procédant comme suit.
 
-```
+```powershell
 #Update your version of pbiviz
 npm install -g powerbi-visuals-tools
 
@@ -273,9 +269,10 @@ pbiviz update
 Cela a pour effet de télécharger les outils les plus récents de npm,  qui incluent les définitions et schémas de type mis à jour. `pbiviz update` remplace la propriété `apiVersion` dans votre fichier *pbiviz.json* par la version la plus récente.
 
 ### <a name="upgrading-to-a-different-api-version"></a>Mise à niveau vers une autre version d’API
+
 Vous pouvez effectuer une mise à jour vers une autre version d’API en procédant de la manière décrite ci-dessus. Vous pouvez spécifier explicitement la version d’API à utiliser.
 
-```
+```powershell
 #Update your version of pbiviz
 npm install -g powerbi-visuals-tools
 
@@ -287,10 +284,9 @@ Cela a pour effet de mettre à jour votre élément visuel vers la version d’A
 
 > [!WARNING]
 > La version d’API par défaut dont se servent les outils est toujours la version stable de l’API. Les versions postérieures à la version d’API par défaut sont instables et susceptibles de changer. Elles peuvent avoir des comportements inattendus, et le service Power BI et Power BI Desktop peuvent opérer différemment. Pour la version d’API stable actuelle, voir le [journal des modifications](https://github.com/Microsoft/PowerBI-visuals/blob/master/ChangeLog.md). Pour plus d’informations sur les versions précommerciale, voir la [feuille de route](https://github.com/Microsoft/PowerBI-visuals/blob/master/Roadmap/README.md).
-> 
-> 
 
 ## <a name="inside-the-visual-project"></a>À l’intérieur du projet d’élément visuel
+
 Votre projet d’élément visuel est le dossier créé lorsque vous exécutez la commande `pbiviz new`. 
 
 ### <a name="file-structure"></a>Structure des fichiers
@@ -308,6 +304,7 @@ Votre projet d’élément visuel est le dossier créé lorsque vous exécutez l
 | tsconfig.json |Paramètres du compilateur TypeScript. En savoir plus sur [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html). |
 
 ### <a name="pbivizjson"></a>pbiviz.json
+
 Ce fichier est le fichier de configuration principal de votre élément visuel. Il contient des métadonnées ainsi que des informations sur vos fichiers, nécessaires pour créer votre élément visuel.
 
 ```
@@ -336,6 +333,7 @@ Ce fichier est le fichier de configuration principal de votre élément visuel. 
 ```
 
 ### <a name="visual-source-typescript"></a>Visual Source (TypeScript)
+
 Le code de l’élément visuel doit être écrit en TypeScript, qui est un sur-ensemble de JavaScript prenant en charge des fonctionnalités plus avancées et un accès en avant-première aux fonctionnalités de ES6/ES7.
 
 Tous les fichiers TypeScript doivent être stockés dans le répertoire `src/`et ajoutés au tableau `files`dans `tsconfig.json`. Cela permet au compilateur TypeScript de les charger et d’en déterminer l’ordre.
@@ -347,6 +345,7 @@ Vous pouvez créer le nombre de fichiers et de classes nécessaires à la créat
 En savoir plus sur [TypeScript](http://www.typescriptlang.org/).
 
 ### <a name="visual-style-less"></a>Style d’élément visuel (LESS)
+
 Les styles d’éléments visuels sont gérés à l’aide de feuilles de style en cascade (CSS). Pour votre facilité, nous utilisons le précompilateur LESS qui prend en charge certaines fonctionnalités avancées, telles que l’imbrication, les variables, les mixins, les conditions, les boucles, etc. Si vous ne souhaitez pas utiliser ces fonctionnalités, vous pouvez simplement écrire une feuille de style CSS brute dans le fichier LESS.
 
 Tous les fichiers LESS doivent être stockés dans le répertoire `style/`. Le fichier spécifié dans le champ `style`au sein de votre fichier `pbiviz.json` sera chargé. Tous les autres fichiers doivent être chargés à l’aide de `@import`.
@@ -354,12 +353,15 @@ Tous les fichiers LESS doivent être stockés dans le répertoire `style/`. Le f
 En savoir plus sur [LESS](http://lesscss.org/).
 
 ## <a name="debugging"></a>Débogage
+
 Pour obtenir des conseils sur le débogage de votre élément visuel personnalisé, voir le [guide de débogage](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
 ## <a name="submit-your-visual-to-appsource"></a>Soumettre votre visuel à AppSource
+
 Vous pouvez répertorier votre visuel pour que d’autres utilisateurs puissent s’en servir, mais en le soumettant à AppSource. Pour plus d’informations sur ce processus, consultez [Publier des visuels personnalisés dans AppSource](developer/office-store.md).
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
+
 **Commande Pbiviz introuvable (ou erreurs similaires)**
 
 Si vous exécutez `pbiviz` dans votre terminal/ligne de commande, vous devez voir l’écran d’aide. Si ce n’est pas le cas, cela signifie qu’il n’est pas installé correctement. Assurez-vous d’avoir au moins la version 4.0 de NodeJS installée.
@@ -376,8 +378,6 @@ Si vous ne le voyez pas, assurez-vous que vous l’avez activé dans les paramè
 
 > [!NOTE]
 > L’élément visuel de débogage est actuellement disponible uniquement dans le service Power BI, pas dans Power BI Desktop ou dans l’application mobile. L’élément visuel empaqueté fonctionne partout.
-> 
-> 
 
 Pour plus d’informations, voir [Activer l’aperçu instantané de l’élément visuel de développeur](#enable-live-preview-of-developer-visual).
 
@@ -388,11 +388,11 @@ Exécutez le serveur d’éléments visuels avec la commande `pbiviz start` dans
 Pour plus d’informations, voir [Exécution de votre élément visuel](#running-your-visual) ou [Installation de certificat de serveur](#ssl-setup).
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 [Visualisations dans Power BI](visuals/power-bi-report-visualizations.md)  
 [Visualisations personnalisées dans Power BI](power-bi-custom-visuals.md)  
 [Publier des visuels personnalisés dans l’Office Store](developer/office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  
 [CSS LESS](http://lesscss.org/)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-
+D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/) 

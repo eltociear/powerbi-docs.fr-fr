@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7de1b47656ae06f522b4b86a124bf558a660ba4e
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: b2e73621fe974da97e3a766fa25110522b36448b
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473402"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223280"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Nouveautés de la dernière mise à jour de Power BI Desktop
 
@@ -47,7 +47,7 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci sont l
 
 * Améliorations de l’éditeur DAX [[vidéo]](https://youtu.be/GO1dhDJhSDY)  [[article]](desktop-formula-editor.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
 
-### <a name="analytics"></a>Analyse
+### <a name="analytics"></a>Analytique
 
 * Prise en charge des modèles et agrégations composites dans le service Power BI service (préversion) [[vidéo]](https://youtu.be/8E6UokaDtc0)  [[article – agrégations]](desktop-aggregations.md) [[article – modèles composites]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
 * Expliquer l’augmentation pour les mesures non additives [[vidéo]](https://youtu.be/8E6UokaDtc0?t=107)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
@@ -62,7 +62,7 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci sont l
 * Implémentation du connecteur SAP BW v2 maintenant disponible de manière générale  [[vidéo]](https://youtu.be/MhrhIXNtelw?t=133)   [[article]](desktop-sap-bw-connector.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBW) 
 * Connecteur SAP BW Message Server maintenant disponible généralement [[vidéo]](https://youtu.be/MhrhIXNtelw?t=159)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBWmessageServer) 
 * Connecteur Vertica maintenant disponible généralement   [[vidéo]](https://youtu.be/MhrhIXNtelw?t=175)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23vertica) 
-* Connecteurs Dynamics NAV et Dynamics 365 Business Central maintenant disponibles généralement   [[vidéo]](https://youtu.be/MhrhIXNtelw?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
+* Connecteurs Dynamics NAV et Dynamics 365 Business Central maintenant en disponibilité générale   [[vidéo]](https://youtu.be/MhrhIXNtelw?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
 * Nouveau connecteur Dynamics 365 Business Central local   [[vidéo]](https://youtu.be/MhrhIXNtelw?t=219)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamicsOnPrem) 
 
 ### <a name="data-preparation"></a>Préparation des données

@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62950462f60fea6db44a9756eff8f99a6841d1d4
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435439"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100815"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publier des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -63,7 +63,7 @@ Quand les tableaux de bord et rapports de votre espace de travail sont prêts, v
    
      ![Contenu de l’application](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-5. Dans **Accès**, choisissez qui a accès à l’application : tous les membres de l’organisation, des personnes spécifiques ou des groupes de sécurité Active Directory. Si vous disposez des autorisations nécessaires, vous pouvez installer l’application automatiquement pour les destinataires. Vous pouvez activer ce paramètre dans le [portail d’administration Power BI](#how-to-enable-pushing-apps). Vous pouvez découvrir plus d’informations sur [les applications poussées](#how-to-enable-pushing-apps).
+5. Dans **Accès**, choisissez qui a accès à l’application : tous les membres de l’organisation, des personnes spécifiques ou des groupes de sécurité Active Directory. Si vous disposez des autorisations nécessaires, vous pouvez installer l’application automatiquement pour les destinataires. Un administrateur Power BI peut activer ce paramètre dans le portail d’administration Power BI. En savoir plus sur [l’installation automatique d’une application](#how-to-install-an-app-automatically-for-end-users).
 
     ![Accès à l’application](media/service-create-distribute-apps/power-bi-apps-access.png)
 

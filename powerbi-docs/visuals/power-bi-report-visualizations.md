@@ -2,6 +2,7 @@
 title: Présentation des visualisations de rapport dans le service Power BI et dans Power BI Desktop
 description: Présentation des visualisations de rapport (visuels) dans Microsoft Power BI.
 author: mihart
+ms.author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: SYk_gWrtKvM
@@ -9,16 +10,16 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6cfd4cf1ae090351a710b00ee82600ddcbc71632
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: fedfbd8da9b0582c84224ef846cd0ba1c14d0683
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546162"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223234"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisations dans des rapports Power BI
+
 Les visualisations (également appelées visuels) affichent des insights qui ont été détectés dans les données. Un rapport Power BI peut avoir une seule page avec un visuel unique ou des pages contenant de nombreux visuels. Dans le service Power BI, les visuels peuvent être [épinglés des rapports aux tableaux de bord](../service-dashboard-pin-tile-from-report.md). 
 
 Il est important de faire la distinction entre les *créateurs* et les *consommateurs* de rapports. Si vous êtes chargé de la création ou modification du rapport, vous êtes un créateur.  Les créateurs disposent d’autorisations de modification du rapport et de son jeu de données sous-jacent. Dans Power BI Desktop, cela signifie que vous pouvez ouvrir le jeu de données en mode Données et créer des visuels en mode rapport. Dans le service Power BI, cela signifie que vous pouvez ouvrir le jeu de données ou le rapport dans l’éditeur de rapport en [mode Édition](../consumer/end-user-reading-view.md). Si un rapport ou un tableau de bord a été [partagé avec vous](../consumer/end-user-shared-with-me.md), vous en êtes **consommateur**. Vous pouvez alors afficher et manipuler le rapport et ses visuels, mais vous ne pouvez pas enregistrer de modifications.
@@ -35,16 +36,21 @@ Pour avoir encore plus de choix, visitez le [site de la communauté Microsoft Ap
   Si vous débutez avec Power BI ou que vous avez besoin d’une remise à niveau, utilisez les liens ci-dessous pour découvrir les principes de base des visualisations de Power BI.  Vous pouvez également utiliser la table des matières (à gauche de cet article) pour trouver d’autres informations utiles.
 
 ## <a name="add-a-visualization-in-power-bi"></a>Ajouter une visualisation dans Power BI
+
 [Créez des visualisations](power-bi-report-add-visualizations-i.md) dans les pages de vos rapports. Parcourez la [liste des visualisations et des didacticiels de visualisation disponibles](power-bi-visualization-types-for-reports-and-q-and-a.md). 
 
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Charger une visualisation personnalisée et l’utiliser dans Power BI
-Ajoutez une visualisation personnalisée que vous avez créée vous-même ou que vous avez trouvée sur le [site Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Vous vous sentez créatif ? Explorez notre code source et utilisez nos [outils de développement](../service-custom-visuals-getting-started-with-developer-tools.md) pour créer un nouveau type de visualisation et le [partager avec la communauté](../developer/office-store.md).
+
+Ajoutez une visualisation personnalisée que vous avez créée vous-même ou que vous avez trouvée sur le [site Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Vous vous sentez créatif ? Explorez notre code source et utilisez nos [outils de développement](../developer/custom-visual-develop-tutorial.md) pour créer un nouveau type de visualisation et le [partager avec la communauté](../developer/office-store.md).
 
 ## <a name="change-the-visualization-type"></a>Changer de type de visualisation
+
 Essayez de [changer de type de visualisation](power-bi-report-change-visualization-type.md) pour trouver la visualisation la mieux adaptée à vos données.
 
 ## <a name="pin-the-visualization"></a>Épingler la visualisation
+
 Dans le service Power BI, quand vous avez trouvé la visualisation qui vous convient, vous pouvez [l’épingler au tableau de bord](../service-dashboard-pin-tile-from-report.md) sous forme de vignette. Si vous modifiez la visualisation utilisée dans le rapport après l’avoir épinglée, la vignette du tableau de bord ne change pas : s’il s’agit d’un graphique en courbes, celui-ci reste ainsi, même si vous l’avez changé en graphique en anneau dans le rapport.
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 ms.date: 09/17/2018
-ms.openlocfilehash: ac35e0c61576e561afd495e51d814bc38ab0a3f5
-ms.sourcegitcommit: 9719eccf29298c9c673200350abc58281ef14869
+ms.openlocfilehash: 5fb4583dccf7b6543881f1c9062227b9a3a68b05
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473974"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223126"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Que peuvent faire les développeurs avec Power BI ?
 
-Les développeurs ont différentes possibilités pour inclure du contenu Power BI dans des applications. En tant que développeur, vous pouvez **incorporer avec Power BI**, utiliser des **visuels personnalisés** ou **envoyer (push) des données dans Power BI**.
+Les développeurs ont différentes possibilités pour inclure du contenu Power BI dans des applications, En tant que développeur, vous pouvez **incorporer avec Power BI**, utiliser des **visuels personnalisés** ou **envoyer (push) des données dans Power BI**.
 
 ## <a name="embedding-power-bi-content"></a>Incorporation de contenu Power BI
 
@@ -44,7 +44,7 @@ Les visuels personnalisés vous permettent de créer vos visuels à utiliser dan
 
 ![Exemple de visuel personnalisé](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-Pour en savoir plus sur le développement de visuels personnalisés, consultez [Créer des visuels personnalisés à l’aide des outils de développement](../service-custom-visuals-getting-started-with-developer-tools.md).
+Pour en savoir plus sur le développement de visuels personnalisés, consultez [Développement d’un visuel personnalisé Power BI](custom-visual-develop-tutorial.md).
 
 ## <a name="using-api-automation"></a>Utilisation de l’automatisation des API
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: bdd43c820f87bb9308478b4e2100514349644d11
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 11ad100bce2e13d5622676f43573dee411a93221
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252373"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973301"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Gestion des licences Power BI dans votre organisation
 
@@ -150,6 +150,9 @@ Le paramètre AAD qui contrôle l’inscription est **AllowAdHocSubscriptions**.
     ```powershell
      Set-MsolCompanySettings -AllowAdHocSubscriptions $true
     ```
+
+> [!NOTE]
+> L’indicateur AllowAdHocSubscriptions permet de contrôler plusieurs fonctionnalités d’utilisateur dans votre organisation, notamment la possibilité pour les utilisateurs de s’inscrire au service Azure Rights Management. La modification de cet indicateur affecte toutes ces fonctionnalités.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

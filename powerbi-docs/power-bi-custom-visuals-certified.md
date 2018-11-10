@@ -2,6 +2,7 @@
 title: Certifier des visualisations Power BI personnalisées
 description: Découvrez la configuration requise et la procédure à suivre pour soumettre un visuel personnalisé pour certification. Cet article présente également une liste de visuels personnalisés déjà certifiés.
 author: mihart
+ms.author: mihart
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -9,45 +10,46 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.author: mihart
-ms.openlocfilehash: ba6c59d168deb5fb68f4b339f11fba795bae6452
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 72b09083c50a88e2d22e9aa22f54ff014dafa998
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252396"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223441"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Obtention d’un visuel personnalisé *certifié*
+
 ## <a name="what-is-meant-by-certified"></a>Qu’entend-on par *certifié* ?
+
 Un *visuel personnalisé certifié* est un visuel qui satisfait à un ensemble d’exigences de code et qui a passé avec succès des tests de sécurité stricts.  Une fois certifié, un visuel personnalisé peut être [exporté vers PowerPoint](consumer/end-user-powerpoint.md) et il apparaît dans les courriers reçus lorsqu’un utilisateur [s’inscrit à des pages de rapport](consumer/end-user-subscribe.md). Bien entendu, vous pouvez aussi l’utiliser comme [visuel personnalisé standard](power-bi-custom-visuals.md), l’ajouter au service Power BI et aux rapports Power BI Desktop, et l’afficher dans Power BI Mobile et Embedded.
 
-Vous êtes un développeur web et souhaitez créer vos propres visualisations et les ajouter à [Microsoft AppSource](https://appsource.microsoft.com) ? Pour savoir comment procéder, consultez [Prise en main des outils de développement](service-custom-visuals-getting-started-with-developer-tools.md).
-
+Vous êtes un développeur web et souhaitez créer vos propres visualisations et les ajouter à [Microsoft AppSource](https://appsource.microsoft.com) ? Pour savoir comment, consultez [Développement d’un visuel personnalisé Power BI](developer/custom-visual-develop-tutorial.md).
 
 ## <a name="certification-requirements"></a>Critères de certification
-* Approuvé(s) par Microsoft AppSource    
-* Le visuel personnalisé est écrit avec une API version 1.2 ou supérieure.    
-* Un référentiel de code est disponible pour examen (par exemple, code de l’élément visuel accessible via GitHub).    
-* Le visuel utilise uniquement des composants OSS publics consultables.    
-* Le visuel n’accède pas à des services ou ressources externes.    
+
+* Approuvé(s) par Microsoft AppSource
+* Le visuel personnalisé est écrit avec une API version 1.2 ou supérieure.
+* Un référentiel de code est disponible pour examen (par exemple, code de l’élément visuel accessible via GitHub).
+* Le visuel utilise uniquement des composants OSS publics consultables.
+* Le visuel n’accède pas à des services ou ressources externes.
 
 > **CONSEIL** : nous vous recommandons d’utiliser EsLint avec un ensemble des règles de sécurité par défaut afin de pré-valider votre code avant de le soumettre.
-> 
-> 
 
 ## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Processus de soumission d’un visuel personnalisé en vue de sa certification
+
 Pour soumettre un visuel personnalisé en vue de sa certification :
 
 1. Envoyez un e-mail au support technique des visuels personnalisés de Power BI (pbicvsupport@microsoft.com). Dans l’e-mail, incluez les informations suivantes :    
 
-   * Titre : Demande de certification de visuel    
-   * Lien vers le dépôt GitHub où est hébergé le code source du visuel    
-   * Respect de la configuration requise (voir ci-dessus)    
-   * Révision réussie du code et de la sécurité    
+   * Titre : Demande de certification de visuel
+   * Lien vers le dépôt GitHub où est hébergé le code source du visuel
+   * Respect de la configuration requise (voir ci-dessus)
+   * Révision réussie du code et de la sécurité
 
 2. L’équipe de Microsoft en charge des visuels personnalisés vous avertit après que votre visuel personnalisé a été certifié et ajouté à la liste certifiée (voir ci-dessous) ou rejeté avec un rapport des problèmes à résoudre. Il incombe au développeur d’ouvrir et de maintenir ouverte une ligne de communication avec Microsoft, ainsi que de mettre à jour ses visuels certifiés au besoin.
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Suppression de visuels personnalisés certifiés Power BI
+
 Microsoft peut, à sa discrétion, supprimer un visuel de la liste certifiée.  
 
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>Liste de visuels personnalisés certifiés
@@ -142,10 +144,11 @@ Microsoft peut, à sa discrétion, supprimer un visuel de la liste certifiée.
 | [Nuage de mots](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380752) | [Vidéo](https://youtu.be/AblTenl9fqo) |
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Prise en main des outils de développement de visuels personnalisés (version préliminaire)](service-custom-visuals-getting-started-with-developer-tools.md)      
-[Sélection de visuels personnalisés de Microsoft sur YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-[Visualisations dans Power BI](visuals/power-bi-report-visualizations.md)  
-[Visualisations personnalisées dans Power BI](power-bi-custom-visuals.md)  
-[Publier des visuels personnalisés dans Microsoft AppSource](developer/office-store.md)  
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 
+* [Développement d’un visuel personnalisé Power BI](developer/custom-visual-develop-tutorial.md)
+* [Sélection de visuels personnalisés de Microsoft sur YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
+* [Visualisations dans Power BI](visuals/power-bi-report-visualizations.md)  
+* [Visualisations personnalisées dans Power BI](power-bi-custom-visuals.md)  
+* [Publier des visuels personnalisés dans Microsoft AppSource](developer/office-store.md)  
+
+D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: cda575c11be90c8e18a3a9f3b8325ccf674afffc
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: b068516b13b3aab134b20f95939c75a5b6e949b5
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49337079"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101689"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -341,7 +341,7 @@ Nous sommes très contents des mises à jour de **Power BI Desktop** de ce mois 
 
 ### <a name="reporting"></a>Création de rapports
 
-* Info-bulles de page de rapport  [[vidéo]](https://youtu.be/kuI6MMzDh34?t=16s) [[article]]()  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
+* Info-bulles de page de rapport  [[vidéo]](https://youtu.be/kuI6MMzDh34?t=16s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
 * Disponibilité générale de la fonctionnalité de création de signets  [[vidéo]](https://youtu.be/kuI6MMzDh34?t=9m2s) [[article]](desktop-bookmarks.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking) 
 * Contrôle de la précision et des unités d’affichage dans les colonnes de table et de matrice  [[vidéo]](https://youtu.be/kuI6MMzDh34?t=11m1s)  [[article]](desktop-slicer-numeric-range.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits) 
 * Désactivation de l’en-tête de visuel en mode lecture dans un rapport  [[vidéo]](https://youtu.be/kuI6MMzDh34?t=12m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 

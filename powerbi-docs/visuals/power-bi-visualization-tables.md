@@ -8,20 +8,22 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d2aae3abeca51cdcc142660190332f84adcfddfb
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: c94fd3ce58cefdb9e3cc7749b6486ab9bb0577cb
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448819"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101459"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tableaux dans les rapports et les tableaux de bord Power BI
 Un tableau est une grille qui contient les données connexes dans une série logique de lignes et colonnes. Il peut également contenir des en-têtes et une ligne de totaux. Les tableaux fonctionnent correctement avec des comparaisons quantitatives où vous examinez de nombreuses valeurs pour une même catégorie. Par exemple, ce tableau affiche 5 mesures différentes pour la **Catégorie**.
 
 ![](media/power-bi-visualization-tables/table.png)
+
+Créez des tables dans les rapports et mettez les éléments en surbrillance croisée dans la table avec d’autres visuels sur la même page de rapport.  Vous pouvez également sélectionner des lignes, colonnes et cellules pour les mettre en évidence croisée. Les sélections de cellules individuelles et de plusieurs cellules peuvent être copiées et collées dans d’autres applications.
 
 ## <a name="when-to-use-a-table"></a>Quand utiliser un tableau ?
 Les tableaux sont recommandés :
@@ -108,9 +110,24 @@ Dans le contexte des tables, la mise en forme conditionnelle vous permet de spé
 6. Pour supprimer la mise en forme conditionnelle d’une visualisation, il suffit de cliquer à nouveau avec le bouton droit sur le champ et de sélectionner **Supprimer la mise en forme conditionnelle**.
 
 > [!TIP]
-> L’option Mise en forme conditionnelle est également disponible dans le volet Mise en forme (icône de rouleau à peindre). Sélectionnez la valeur à mettre en forme, puis activez les options **Échelles de couleurs** ou **Barres de données** pour appliquer les paramètres par défaut. Ou bien, pour personnaliser les paramètres, sélectionnez **Contrôles avancés**.
+> L’option Mise en forme conditionnelle est également disponible dans le volet Mise en forme (icône de rouleau à peindre). Sélectionnez la valeur à mettre en forme, puis **activez** les options **Échelles de couleurs** ou **Barres de données** pour appliquer les paramètres par défaut. Ou bien, pour personnaliser les paramètres, sélectionnez **Contrôles avancés**.
 > 
-> 
+## <a name="copy-values-from-power-bi-tables-for-use-in-other-applications"></a>Copier les valeurs à partir des tables Power BI pour une utilisation dans d’autres applications
+
+Votre table ou matrice peut avoir un contenu que vous aimeriez utiliser dans d’autres applications, comme Dynamics CRM, Excel et même d’autres rapports Power BI. Avec le clic droit Power BI, vous pouvez copier une cellule unique ou une sélection de cellules dans votre Presse-papiers et les coller dans l’autre application.
+
+
+* Pour copier la valeur d’une cellule unique, sélectionnez la cellule, cliquez avec le bouton droit, puis choisissez **Copier la valeur**. Avec la valeur de cellule non mise en forme dans votre Presse-papiers, vous pouvez maintenant la coller dans une autre application.
+
+    ![options de copie](media/power-bi-visualization-tables/power-bi-copy-value.png)
+
+* Pour copier plusieurs cellules, sélectionnez une plage de cellules ou utilisez la touche CTRL pour sélectionner une ou plusieurs cellules. La copie inclut les en-têtes de colonne et de ligne.
+
+    ![options de copie](media/power-bi-visualization-tables/power-bi-copy-selection.png)
+
+    La copie inclut les en-têtes de colonne et de ligne.
+
+    ![coller dans Excel](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Ajustez la largeur de colonne d’un tableau
 Parfois, Power BI tronque l’en-tête d’une colonne dans un tableau de bord et sur un rapport. Pour afficher le nom entier de la colonne, placez le pointeur au-dessus de l’espace à droite de l’en-tête pour faire apparaître les doubles flèches, puis sélectionnez-les et faites-les glisser.

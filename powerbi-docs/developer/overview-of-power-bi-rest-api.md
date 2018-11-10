@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 3b19740616e7b9a390a883fde2fd96320de7b94a
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: a1492a98825ad26b2dde359cf9cec96cc4623e04
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973583"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223165"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Comment les développeurs peuvent-ils se servir de l’API Power BI ?
 
@@ -29,7 +29,7 @@ Voici quelques opérations possibles avec les API Power BI.
 | Incorporer des tableaux de bord, des rapports et des vignettes pour les utilisateurs Power BI et non-Power BI (l’application est propriétaire des données) |[Comment incorporer vos tableaux de bord, rapports et vignettes Power BI](embedding-content.md) |
 | Étendre un workflow d’entreprise existant pour transmettre des données clés à un tableau de bord Power BI. |[Transmettre des données à un tableau de bord](walkthrough-push-data.md) |
 | Authentifiez-vous sur Power BI. |[S’authentifier sur Power BI](get-azuread-access-token.md) |
-| Créer un visuel personnalisé. |[Créer des visuels personnalisés à l’aide des outils de développement](../service-custom-visuals-getting-started-with-developer-tools.md) |
+| Créer un élément visuel personnalisé. |[Développement d’un visuel personnalisé Power BI](custom-visual-develop-tutorial.md) |
 
 > [!NOTE]
 > Les API Power BI font encore référence aux espaces de travail d’application en tant que groupes. Toutes les références à des groupes indiquent que vous travaillez avec des espaces de travail d’applications.
@@ -72,7 +72,7 @@ Vous pouvez utiliser l’API Power BI pour envoyer des données dans un jeu de d
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Transmission de données à un jeu de données](walkthrough-push-data.md)  
-[Bien démarrer avec les outils de développement de visuels personnalisés](../service-custom-visuals-getting-started-with-developer-tools.md)  
+[Développement d’un visuel personnalisé Power BI](custom-visual-develop-tutorial.md)  
 [Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

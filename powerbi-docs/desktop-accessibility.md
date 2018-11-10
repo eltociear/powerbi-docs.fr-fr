@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336872"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223372"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -34,6 +34,8 @@ Depuis la version de septembre 2017 de **Power BI Desktop**, vous pouvez appuye
 
 Grâce aux améliorations de l’accessibilité, vous pouvez lire un rapport Power BI en vous aidant d’un clavier ou d’un lecteur d’écran avec les techniques suivantes :
 
+Lorsque vous voyez un rapport, vous devez généralement avoir le mode d’analyse désactivé.
+
 Pour faire passer la mise en évidence d’un onglet de page de rapport à un autre ou d’un objet à un autre d’une page de rapport donnée, utilisez la combinaison de touche **Ctrl+F6**.
 
 * Lorsque la mise en évidence est sur les *onglets de page du rapport*, utilisez les touches *Tab* ou *flèche* pour faire passer la mise en évidence d’une page du rapport à la suivante. Le titre de la page de rapport est lu par le lecteur d’écran, qui indique également si cette page est actuellement sélectionnée. Pour charger la page de rapport actuellement mise en évidence, utilisez la touche *Entrée* ou *Espace*.
@@ -48,7 +50,7 @@ Vous pouvez appuyer sur **Alt+Maj+F11** pour présenter une version accessible d
 ![Appuyer sur Alt+Maj+F11 dans Power BI Desktop pour afficher une fenêtre Voir les données accessible pour un visuel](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
-> La fonctionnalité Afficher des données n’est accessible à un lecteur d’écran qu’avec ce raccourci clavier. Si vous ouvrez Afficher les données par le biais de l’option disponible dans l’en-tête du visuel, elle ne sera pas accessible à un lecteur d’écran.
+> La fonctionnalité Afficher des données n’est accessible à un lecteur d’écran qu’avec ce raccourci clavier. Si vous ouvrez Afficher les données par le biais de l’option disponible dans l’en-tête du visuel, elle ne sera pas accessible à un lecteur d’écran. Lorsque vous utilisez Afficher les données, activez le mode d’analyse pour tirer parti de tous les raccourcis que fournit votre lecteur d’écran.
 
 À partir de la version de juillet 2018 de **Power BI Desktop**, les segments sont également dotés d’une fonctionnalité d’accessibilité intégrée. Lorsque vous sélectionnez un segment, pour régler sa valeur, actionnez CTRL + flèche droite (contrôle plus la touche flèche droite) pour vous déplacer dans les différents contrôles du segment. Par exemple, lorsque vous appuyez d’abord sur CTRL + flèche droite, le focus est mis sur la gomme, et appuyer sur la barre d’espace revient à cliquer sur le bouton Gomme, ce qui efface toutes les valeurs sur le segment. 
 
@@ -112,6 +114,55 @@ Il existe quelques limitations et problèmes connus concernant les fonctionnalit
 
 * Pour une expérience optimale quand vous utilisez des lecteurs d’écran avec **Power BI Desktop**, ouvrez le lecteur d’écran de votre choix avant d’ouvrir des fichiers dans Power BI Desktop.
 * Si vous utilisez le Narrateur, il existe certaines limitations concernant la navigation dans la fonctionnalité Afficher les données sous la forme d’une table HTML.
+
+## <a name="keyboard-shortcuts"></a>Raccourcis clavier
+### <a name="frequently-used-shortcuts"></a>Raccourcis fréquemment utilisés
+| Pour           | Appuyer sur                |
+| :------------------- | :------------------- |
+| Déplacer le focus entre les sections  | Ctrl + F6 |
+| Déplacer le focus vers l’avant de la section | Tab         |
+| Déplacer le focus vers l’arrière de la section | Maj + Tab |
+
+### <a name="on-visual"></a>Sur le visuel
+| Pour           | Appuyer sur                |
+| :------------------- | :------------------- |
+| Déplacer le focus sur le menu du visuel | Alt + Maj + F10 |
+| Afficher les données | Alt + Maj + F11  |
+
+### <a name="pane-navigation"></a>Navigation dans les volets
+| Pour           | Appuyer sur                |
+| :------------------- | :------------------- |
+| Ouvrir un menu contextuel | <ul><li>Clavier Windows : Touche de contexte Windows + F10.  La touche de contexte Windows se trouve entre la touche Alt de gauche et la touche Flèche Gauche</li><li>Autre clavier : Maj + F10</li></ul> |
+
+### <a name="slicer"></a>Segment
+| Pour           | Appuyer sur                |
+| :------------------- | :------------------- |
+| Interagir avec un segment | Ctrl + Flèche droite |
+
+### <a name="selection-pane"></a>Volet Sélection
+| Pour           | Appuyer sur                |
+| :------------------- | :------------------- |
+| Activer le volet Sélection | F6 |
+| Déplacer un objet vers le haut dans la superposition | Ctrl + Maj + F |
+| Déplacer un objet vers le bas dans la superposition | Ctrl + Maj + B |
+| Masquer/afficher un objet | Ctrl + Maj + S |
+
+### <a name="dax-editor"></a>Éditeur DAX
+| Pour           | Appuyer sur                |
+| :------------------- | :------------------- |
+| Déplacer une ligne vers le haut/le bas | ALT + Flèche Haut / Flèche Bas |
+| Copier une ligne en haut / bas | Maj +Alt + Flèche Haut / Flèche Bas |
+| Insérer la ligne ci-dessous | Ctrl + Entrée |
+| Insérer la ligne ci-dessus | Ctrl + Maj + Entrée |
+| Sauter au crochet correspondant | Ctrl + Maj + \ |
+| Mettre en retrait positif/négatif une ligne | Ctrl + ] / [ |
+| Insérer le curseur | Alt + Clic |
+| Sélectionner la ligne actuelle | Ctrl + I |
+| Sélectionner toutes les occurrences de la sélection actuelle | Ctrl + Maj + L |
+| Sélectionner toutes les occurrences du mot actuel | Ctrl + F2 |
+
+
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Utiliser des thèmes de rapport dans Power BI Desktop (préversion)](desktop-report-themes.md)

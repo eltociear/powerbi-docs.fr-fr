@@ -1,5 +1,5 @@
 ---
-title: Exporter des rapports de Power BI vers PowerPoint (version préliminaire)
+title: Exporter des rapports de Power BI vers PowerPoint
 description: Découvrez comment exporter un rapport Power BI vers PowerPoint.
 author: mihart
 manager: kvivek
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 85a0a34f9c67d29fee7be6335f79e97b482548be
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 661d615ed33b12ae0557fd8feaa0bc47b3a6638f
+ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565334"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50736938"
 ---
-# <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Exporter des rapports de Power BI vers PowerPoint (version préliminaire)
+# <a name="export-reports-from-power-bi-to-powerpoint"></a>Exporter des rapports de Power BI vers PowerPoint
 Avec Power BI, vous pouvez à présent publier votre rapport dans **Microsoft PowerPoint** et créer facilement un ensemble de diapositives en fonction de votre rapport Power BI. Lorsque vous **exportez vers PowerPoint**, les éléments suivants se produisent :
 
 * Chaque page du rapport Power BI devient une diapositive dans PowerPoint.
@@ -77,9 +77,9 @@ Voici quelques considérations et limitations à prendre en compte lorsque vous 
 * Les **éléments visuels R** ne sont actuellement pas pris en charge. Tout élément visuel de ce type est exporté en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que l’élément visuel n’est pas pris en charge.
 * Les **éléments visuels personnalisés** qui ont été **certifiés** sont pris en charge. Pour plus d’informations sur les éléments visuels personnalisés certifiés, notamment concernant la manière de certifier un élément visuel personnalisé, voir [Obtention d’un visuel personnalisé certifié](../power-bi-custom-visuals-certified.md). Les éléments visuel personnalisés non certifiés ne sont pas pris en charge. Tout élément visuel de ce type est exporté en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que l’élément visuel n’est pas pris en charge.
 * Les **visuels personnalisés certifiés** sont pris en charge. Un visuel personnalisé certifié a été approuvé pour une utilisation avec Power BI, répond à certaines exigences de code et a réussi des tests de sécurité stricts. Vous pouvez [en savoir plus **sur les visuels personnalisés certifiés**](../power-bi-custom-visuals-certified.md).
-* Les rapports contenant plus de 15 pages ne peuvent pas être exportés actuellement.
+* Les rapports contenant plus de 30 pages ne peuvent pas être exportés actuellement.
 * Le processus d’exportation du rapport vers PowerPoint peut prendre quelques minutes. Soyez patient. Les facteurs qui peuvent avoir un impact sur la durée d’exportation sont la structure du rapport et la charge actuelle sur le service Power BI.
-* Si l’option de menu **Exporter vers PowerPoint (version préliminaire)** n’est pas disponible dans le service Power BI, il est probable que votre administrateur ait désactivé la fonctionnalité. Pour plus d’informations, contactez l’administrateur du locataire.
+* Si l’option de menu **Exporter vers PowerPoint** n’est pas disponible dans le service Power BI, il est probable que votre administrateur ait désactivé la fonctionnalité. Pour plus d’informations, contactez l’administrateur du locataire.
 * Les images en arrière-plan sont rognées en fonction du cadre englobant du graphique. Il est fortement recommandé de supprimer les images en arrière-plan avant d’exporter vers PowerPoint.
 * L’**interactivité dans la session**, comme la mise en évidence et le filtrage, l’exploration, etc. n’est pas encore pris en charge lors de l’exportation vers PowerPoint. Le PowerPoint exporté montre les visuels d’origine tels qu’ils ont été enregistrés dans le rapport.
 * Les pages dans PowerPoint sont toujours créées dans la taille standard 9:16, quelles que soient les tailles de page ou dimensions d’origine dans le rapport Power BI.

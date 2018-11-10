@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f8c1aae757e80c0c2adbc321345c242eba25098c
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: c49750ef51c1b8bacc36946d2d5c75a08abb36d7
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34456131"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101574"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services
 Ce didacticiel présente les étapes nécessaires à l’implémentation de la **sécurité au niveau des lignes** dans votre **modèle tabulaire Analysis Services**. Par ailleurs, il montre comment l’utiliser dans un rapport Power BI. Les étapes de ce didacticiel sont conçues pour vous aider à suivre facilement son déroulement et à apprendre les étapes nécessaires en se basant sur un exemple de jeu de données.
@@ -72,6 +72,9 @@ De nombreux articles publiés décrivent comment définir la sécurité dynamiqu
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     Dans cette formule, la fonction **LOOKUPVALUE** renvoie toutes les valeurs de la colonne **DimUserSecurity[SalesTerritoryID]**, où **DimUserSecurity[UserName]** est identique à l’utilisateur Windows actuellement connecté et où **DimUserSecurity[SalesTerritoryID]** est identique à **DimSalesTerritory[SalesTerritoryKey]**.
    
+    > [!IMPORTANT]
+    > N’oubliez pas que la fonction DAX [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) n’est pas prise en charge lors de l’utilisation de la sécurité au niveau des lignes.
+
    L’ensemble de ventes SalesTerritoryKey renvoyé par **LOOKUPVALUE** est ensuite utilisé pour limiter les lignes affichées dans **DimSalesTerritory**. Seules les lignes où l’élément **SalesTerritoryKey** de la ligne est compris dans la plage d’ID renvoyée par la fonction **LOOKUPVALUE** sont affichées.
 8. Pour la table **DimUserSecurity**, dans la colonne **DAX Filter**, tapez la formule suivante :
    

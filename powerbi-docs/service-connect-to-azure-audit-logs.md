@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 882fdad2b29c9bd21ea0b979d5009dee86304159
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4faaa63a3845125b4df1ec634d22b084b5ae25f2
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548140"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101206"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Se connecter aux journaux d’audit Azure avec Power BI
 Avec le pack de contenu Journaux d’audit Azure, vous pouvez analyser et visualiser les informations stockées dans les journaux d’audit. Power BI récupère vos données, génère un tableau de bord par défaut et crée des rapports basés sur ces données.
@@ -53,7 +53,7 @@ Avec le pack de contenu Journaux d’audit Azure, vous pouvez analyser et visual
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
 ## <a name="system-requirements"></a>Configuration requise
-Le pack de contenu des journaux d’audit d’Azure nécessite l’accès aux journaux d’Audit dans le portail Azure. Vous trouverez plus de détails [ici](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/).
+Le pack de contenu des journaux d’audit d’Azure nécessite l’accès aux journaux d’audit dans le portail Azure. Vous trouverez plus de détails [ici](/azure/azure-resource-manager/resource-group-audit/).
 
 <a name="FindingParams"></a>
 

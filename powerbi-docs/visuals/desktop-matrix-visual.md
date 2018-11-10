@@ -7,27 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 10/25/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0cf9c152c9481e223a143bed3985e883c92af192
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 96b2fb3cb1558f862c792b3bed77c9f0c2bc61a5
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416817"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101367"
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Utiliser le visuel Matrice dans Power BI Desktop
-La fonctionnalité visuelle **Matrice** vous permet de créer des visuels de matrice (également appelés *tables*) dans des rapports **Power BI Desktop** et de mettre en évidence des éléments au sein de la matrice en les croisant avec d’autres visuels. Vous pouvez également sélectionner des lignes, colonnes et cellules pour les mettre en évidence croisée. Enfin, pour optimiser l’utilisation de l’espace de disposition, le visuel de matrice prend en charge une disposition échelonnée.
+La fonctionnalité visuelle **Matrice** vous permet de créer des visuels de matrice (également appelés *tables*) dans des rapports **Power BI Desktop** et **de service Power BI** ainsi que de mettre en évidence des éléments au sein de la matrice en les croisant avec d’autres visuels. Vous pouvez également sélectionner des lignes, colonnes et cellules pour les mettre en évidence croisée. Les sélections de cellules individuelles et de plusieurs cellules peuvent être copiées et collées dans d’autres applications. Enfin, pour optimiser l’utilisation de l’espace de disposition, le visuel de matrice prend en charge une disposition échelonnée.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
 
 De nombreuses fonctionnalités sont associées à la matrice, que nous allons passer en revue dans les sections suivantes de cet article.
 
-> [!NOTE]
-> Depuis la version de **Power BI Desktop** publiée en juillet 2017, les visuels de matrice et de table reflètent le style (y compris les couleurs) du **thème de rapport** appliqué. Il se peut que ces couleurs soient différentes de celles attendues pour votre visuel de matrice, mais vous pouvez les modifier dans votre configuration de **thème de rapport**. Pour plus d’informations, consultez [**Utiliser les thèmes de rapport dans Power BI Desktop**](../desktop-report-themes.md).
-> 
-> 
+## <a name="report-themes"></a>Report themes
+Les visuels de matrice et de table reflètent le style (y compris les couleurs) du **thème de rapport** appliqué. Il se peut que ces couleurs soient différentes de celles attendues pour votre visuel de matrice, mais vous pouvez les modifier dans votre configuration de **thème de rapport**. Pour plus d’informations, consultez [**Utiliser les thèmes de rapport dans Power BI Desktop**](../desktop-report-themes.md).
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Comprendre comment Power BI calcule les totaux
 
@@ -134,6 +132,20 @@ Avec le visuel **Matrice**, tous les éléments de la matrice peuvent être sél
 De plus, la combinaison Ctrl+Clic fonctionne également pour la sélection croisée. Par exemple, dans l’image suivante, une collection de sous-catégories a été sélectionnée dans le visuel **Matrice**. Notez comment les éléments non sélectionnés dans le visuel sont grisés, et comment les autres visuels de la page reflètent les sélections opérées dans le visuel **Matrice**.
 
 ![](media/desktop-matrix-visual/matrix-visual_16.png)
+
+## <a name="copying-values-from-power-bi-for-use-in-other-applications"></a>Copie des valeurs à partir de Power BI pour une utilisation dans d’autres applications
+
+Votre matrice ou votre table peuvent avoir un contenu que vous aimeriez utiliser dans d’autres applications, comme Dynamics CRM, Excel et même d’autres rapports Power BI. Avec le clic droit Power BI, vous pouvez copier une cellule unique ou une sélection de cellules dans votre Presse-papiers et les coller dans l’autre application.
+
+![options de copie](media/desktop-matrix-visual/power-bi-cell-copy.png)
+
+* Pour copier la valeur d’une cellule unique, sélectionnez la cellule, cliquez avec le bouton droit, puis choisissez **Copier la valeur**. Avec la valeur de cellule non mise en forme dans votre Presse-papiers, vous pouvez maintenant la coller dans une autre application.
+
+    ![options de copie](media/desktop-matrix-visual/power-bi-copy.png)
+
+* Pour copier plusieurs cellules, sélectionnez une plage de cellules ou utilisez la touche CTRL pour sélectionner une ou plusieurs cellules. La copie inclut les en-têtes de colonne et de ligne.
+
+    ![coller dans Excel](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Couleurs d’ombrage et de police avec les visuels Matrice
 Avec le visuel **Matrice**, vous pouvez appliquer la **Mise en forme conditionnelle** (couleurs et ombrage) à l’arrière-plan des cellules de la matrice et une mise en forme conditionnelle au texte et aux valeurs elles-mêmes.

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 10/24/2018
 ms.author: maghan
-ms.openlocfilehash: 1dbca883bc4df2bde743963db7994361616be192
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2c8319395bd4daf44562f71380fc254964708c2b
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721912"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100608"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Vue d’ensemble de l’administration, Power BI Report Server
 Cet article fournit une vue d’ensemble de l’administration de Power BI Report Server, un emplacement local destiné au stockage et à la gestion de vos rapports Power BI, mobiles et paginés. Cet article présente les concepts permettant de planifier, déployer et gérer Power BI Report Server, avec des liens vers plus d’informations.
@@ -28,7 +28,7 @@ Vous devez installer Power BI Report Server pour pouvoir commencer à l’utilis
 
 Avant de d’installer, de mettre à niveau ou de migrer vers Power BI Report Server, examinez la [configuration système requise](system-requirements.md) pour le serveur de rapports.
 
-### <a name="installing"></a>Installation
+### <a name="installing"></a>Installing
 Si vous déployez un nouveau Power BI Report Server, le document suivant peut vous aider. 
 
 [Installer Power BI Report Server](install-report-server.md)
@@ -44,13 +44,13 @@ Lors de la configuration de votre serveur de rapports, vous disposez de nombreus
 L’essentiel de la configuration doit s’effectuer dans le Gestionnaire de configuration du serveur de rapports. Pour plus de détails, voir la documentation du [Gestionnaire de configuration](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 
 ## <a name="security"></a>Sécurité
-La sécurité et la protection sont importantes pour toute organisation. Pour découvrir l’authentification, l’autorisation, les rôles et les permissions, voir la documentation relative à la [sécurité](https://docs.microsoft.com/sql/reporting-services/security/reporting-services-security-and-protection).
+La sécurité et la protection sont importantes pour toute organisation. Pour découvrir l’authentification, l’autorisation, les rôles et les permissions, consultez la documentation relative à la [sécurité](https://docs.microsoft.com/sql/reporting-services/security/reporting-services-security-and-protection).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Installer Power BI Report Server](install-report-server.md)  
 [Trouver la clé de produit de votre serveur de rapports](find-product-key.md)  
 [Installer Power BI Desktop optimisé pour Power BI Report Server](install-powerbi-desktop.md)  
-[Installer le Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
