@@ -7,59 +7,68 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/08/2018
+ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 5013c70e4d3998eb39e0de2a92f890417175fd62
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 41b3a0b1032616045b854e4a4776ba82bffffe47
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240903"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909412"
 ---
-# <a name="using-an-alternate-email-address"></a>Utilisation d’une autre adresse de messagerie
-Par défaut, l’adresse de messagerie avec laquelle vous vous êtes inscrit à Power BI est utilisée pour vous envoyer des mises à jour sur l’activité dans Power BI.  Par exemple, quand quelqu’un vous envoie une invitation de partage, elle est expédiée à cette adresse.
+# <a name="using-an-alternate-email-address"></a>Utilisation d’une autre adresse e-mail
 
-Vous souhaiterez peut-être parfois que ces messages soient envoyés à une adresse autre que celle avec laquelle vous vous êtes inscrit à Power BI.
+Lorsque vous vous inscrivez à Power BI, vous fournissez une adresse e-mail. Par défaut, Power BI utilise cette adresse pour vous envoyer des mises à jour sur l’activité dans le service. Par exemple, quand quelqu’un vous envoie une invitation de partage, elle est expédiée à cette adresse.
 
-## <a name="updating-through-office-365-personal-info-page"></a>Mise à jour par le biais de la page d’informations personnelles Office 365
-1. Accédez à votre [page d’informations personnelles Office 365](https://portal.office.com/account/#personalinfo).  Si vous êtes y invité, connectez-vous avec l’adresse de messagerie et le mot de passe que vous utilisez pour Power BI.
-2. Cliquez sur le lien Modifier dans la section Détails du contact.  
-   
-   > [!NOTE]
-   > Si aucun lien Modifier n’est visible, cela signifie que votre adresse de messagerie est gérée par l’administrateur Office 365. Vous devrez le contacter pour mettre à jour votre adresse de messagerie.
-   > 
-   > 
-   
-   ![](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
-3. Dans le champ Autre adresse de messagerie, entrez l’adresse de messagerie qui doit recevoir les mises à jour de Power BI.
+Dans certains cas, vous souhaiterez peut-être que ces e-mails soient envoyés à une autre adresse e-mail que celle utilisée pour vous inscrire. Cet article explique comment spécifier une autre adresse dans Office 365 et dans PowerShell. Cet article explique également comment une adresse e-mail est résolue dans Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> La modification de ce paramètre n’a aucun impact sur l’adresse de messagerie utilisée pour les mises à jour de service, les bulletins d’informations et les autres communications promotionnelles.  Ces éléments seront toujours envoyés à l’adresse de messagerie utilisée initialement lors de l’inscription à Power BI.
-> 
-> 
+> La spécification d’une autre adresse n’affecte pas l’adresse e-mail utilisée par Power BI pour les mises à jour du service, les lettres d’information et les autres communications publicitaires.  Ces communications sont toujours envoyées à l’adresse e-mail que vous avez utilisée pour vous inscrire à Power BI.
 
-## <a name="updating-through-azure-active-directory"></a>Mise à jour par le biais d’Azure Active Directory
-Pour capturer un jeton incorporé Active Azure Directory (AAD) pour Power BI, vous pouvez utiliser l’un des trois types d’e-mails suivants :
+## <a name="use-office-365"></a>Utiliser Office 365
 
-* L’adresse e-mail principale associée au compte AAD d’un utilisateur
-* L’adresse e-mail UPN (UserPrincipalName)
-* L’attribut tableau d’une « autre » adresse e-mail
+Pour spécifier une autre adresse dans Office 365, procédez comme suit.
 
-Power BI sélectionne l’e-mail à utiliser selon les critères suivants :
-1.  Si l’attribut de messagerie est défini dans l’objet utilisateur du locataire AAD, Power BI l’utilise pour l’adresse e-mail
-2.  Si l’adresse e-mail UPN n’est *pas* une adresse e-mail du domaine **\*.onmicrosoft.com** (informations après le symbole « \@ »), Power BI utilise cet attribut de messagerie pour l’adresse e-mail
-3.  Si l’attribut tableau d’une « autre » adresse e-mail est défini dans l’objet utilisateur AAD, Power BI utilise la première adresse e-mail dans cette liste (quand il y a plusieurs e-mails spécifiés dans cet attribut)
-4. Si aucun des critères ci-dessus n’est rempli, l’adresse UPN est utilisée
+1. Ouvrez la [page d’informations personnelles Office 365](https://portal.office.com/account/#personalinfo). Si vous êtes y invité, connectez-vous avec l’adresse de messagerie et le mot de passe que vous utilisez pour Power BI.
 
-## <a name="updating-with-powershell"></a>Mise à jour avec PowerShell
-Vous pouvez également mettre à jour l’autre adresse de messagerie par le biais de PowerShell pour Azure Active Directory. Cette opération s’effectue avec la commande [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser).
+1. Dans le menu de gauche, sélectionnez **informations personnelles**.
 
-```
+1. Dans la section **Détails du contact**, sélectionnez **Modifier**.
+
+    Si vous ne pouvez pas modifier les détails vous concernant, cela signifie que votre adresse e-mail est gérée par votre administrateur Office 365. Contactez votre administrateur pour mettre à jour votre adresse e-mail.
+
+    ![Détails du contact](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+
+1. Dans le champ **Autre adresse e-mail**, entrez l’adresse e-mail à laquelle vous souhaitez recevoir les mises à jour de Power BI.
+
+## <a name="use-powershell"></a>Utiliser PowerShell
+
+Pour spécifier une autre adresse dans PowerShell, utilisez la commande [Set-AzureADUser](/powershell/module/azuread/set-azureaduser/).
+
+```powershell
 Set-AzureADUser -ObjectId john@contoso.com -OtherMails "otheremail@somedomain.com"
 ```
 
-Pour plus d’informations, consultez [Azure Active Directory PowerShell Version 2](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+## <a name="email-address-resolution-in-azure-ad"></a>Résolution d’adresse e-mail ans Azure AD
+
+Lors de la capture d'un jeton d'intégration d'Azure AD pour Power BI, vous pouvez utiliser trois types d'e-mails différents :
+
+* L’adresse e-mail principale associée au compte Azure AD d’un utilisateur
+
+* L’adresse e-mail UPN (UserPrincipalName)
+
+* L’attribut de tableau *autre adresse e-mail*
+
+Power BI sélectionne l’e-mail à utiliser en fonction de la séquence suivante :
+
+1. Si l’attribut de messagerie est défini dans l’objet utilisateur Azure AD, Power BI l’utilise pour l’adresse e-mail.
+
+1. Si l’adresse e-mail UPN n’est *pas* une adresse e-mail du domaine **\*.onmicrosoft.com** (informations après le symbole « @ »), Power BI utilise cet attribut de messagerie pour l’adresse e-mail.
+
+1. Si l’attribut de tableau *autre adresse e-mail* est défini dans l’objet utilisateur Azure AD, la première adresse e-mail de cette liste (quand plusieurs e-mails sont spécifiés dans cet attribut) est utilisée.
+
+1. Si aucune des conditions ci-dessus n’est remplie, l’adresse UPN est utilisée.
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

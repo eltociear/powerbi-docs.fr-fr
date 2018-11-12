@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6bc8eea6138f2961457d03eaf5ef88d0327a058d
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549911"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909568"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
 Les **signets** de Power BI permettent de capturer la vue actuellement configurée d’une page de rapport, filtrage et état des visuels compris, puis de revenir à cet état en sélectionnant simplement le signet enregistré. 
@@ -44,13 +44,12 @@ Lorsque vous créez un signet, les éléments suivants sont enregistrés :
 
 * Page actuelle
 * Filtres
-* Segments
+* Segments, y compris le type de segments (par exemple, liste déroulante ou liste) et l’état des segment
+* État de sélection des visuels (par exemple, filtres de mise en surbrillance croisée)
 * Ordre de tri
 * Emplacement d’exploration
 * Visibilité (d’un objet, à l’aide du volet **Sélection**)
 * Le mode focus ou **À la une** des objets visibles
-
-Actuellement, les signets n’enregistrent pas l’état de sélection croisée. 
 
 Configurez une page de rapport comme vous souhaitez qu’elle apparaisse dans le signet. Une fois que votre page de rapport et les visuels sont organisés comment vous le souhaitez, sélectionnez **Ajouter** dans le volet **Signets** pour ajouter un signet. 
 
@@ -108,7 +107,7 @@ Pour affecter un signet à un objet, sélectionnez l’objet, puis développez l
 
 ![Ajouter un lien de signet à un objet](media/desktop-bookmarks/bookmarks_10.png)
 
-Une fois que vous avez activé le curseur **Action** en le définissant sur **Activé**, vous pouvez indiquer si l’objet est un bouton de retour, un signet ou une commande Questions et réponses. Si vous sélectionnez Signet, vous pouvez ensuite sélectionner les signets auxquels l’objet est lié.
+Une fois que vous avez activé le curseur **Action** en le définissant sur **Activé**, vous pouvez indiquer si l’objet est un bouton de retour, un signet ou une commande Q&R. Si vous sélectionnez Signet, vous pouvez ensuite sélectionner les signets auxquels l’objet est lié.
 
 Les signets liés à des objets vous permettent d’effectuer des tâches très diverses. Vous pouvez créer un tableau visuel de contenu sur la page de rapport. Vous pouvez également fournir différentes vues (telles que les types de visuels) de la même information, en cliquant simplement sur un objet.
 
