@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a4c73cc81a09a3747ff34e6a20508b4ff19eafa8
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: c01af129e15025b97925f59532d1be7a6671b47f
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280291"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909614"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Utiliser des insights dans Power BI Desktop pour expliquer les hausses et les baisses observées dans les visuels (préversion)
 
@@ -35,7 +35,7 @@ Cette fonctionnalité est contextuelle et basée sur le point de données imméd
 > Cette fonctionnalité étant en préversion, elle est sujette à modification. La fonctionnalité permettant d’obtenir des informations est activée par défaut (vous n’avez pas besoin de cliquer sur une zone d’aperçu pour l’activer) à partir de la version de septembre 2017 de **Power BI Desktop**.
 
 
-## <a name="using-insights"></a>Utilisation des insights
+## <a name="using-insights"></a>Utilisation des informations
 Pour utiliser les insights et obtenir une explication sur les hausses et les baisses observées dans les graphiques, cliquez simplement avec le bouton droit sur un point de données dans un histogramme ou un graphique en courbes, puis sélectionnez **Analyser > Expliquer la hausse** (ou *Expliquer la baisse*, sachant que tous les insights fournis sont basés sur l’évolution par rapport au point de données précédent).
 
 ![Menu Afficher les insights](media/desktop-insights/insights_02.png)
@@ -113,7 +113,6 @@ La liste suivante répertorie les scénarios actuellement non pris en charge pou
 * Filtres TopN
 * Filtres Inclure/Exclure
 * Filtres de mesures
-* Mesures et agrégats non additifs
 * Mesures non numériques
 * Utilisation de « Afficher la valeur comme »
 * Mesures filtrées (les mesures filtrées sont des calculs effectués au niveau du visuel auxquels est appliqué un filtre spécifique (par exemple, *Total des ventes pour la France*) ; elles sont utilisées dans certains visuels créés par la fonctionnalité d’insights)
