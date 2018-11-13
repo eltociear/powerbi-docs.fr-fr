@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: d265e465825fb8def167207ed632f1702adcbc7f
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 4bc9a0fe6dd3becd67c2b6dd8ffeb9d7922705a6
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973629"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507930"
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Afficher des rapports dans le mode de présentation dans Surface Hub et Windows 10 - Power BI
 Vous pouvez afficher des rapports en mode de présentation dans Surface Hub, ainsi que des vignettes, des rapports et des tableaux de bord en mode plein écran sur les appareils Windows 10. 
@@ -27,7 +27,7 @@ En mode plein écran dans l’application mobile Power BI, tout ce qui est inut
 
 Lorsque vous affichez un rapport en mode de présentation sur Surface Hub, vous pouvez dessiner sur les pages avec différentes couleurs d’encre et naviguer entre elles.
 
-Vous pouvez également [afficher les tableaux de bord et les rapports en mode Plein écran à partir du service Power BI](../../service-fullscreen-mode.md) sur le web.
+Vous pouvez également [afficher les tableaux de bord et les rapports en mode Plein écran à partir du service Power BI](../end-user-focus.md) sur le web.
 
 > [!NOTE]
 > Le mode de présentation est différent du [mode Focus pour les vignettes](mobile-tiles-in-the-mobile-apps.md).
@@ -74,6 +74,6 @@ Le mode Présentation est activé par défaut dans Surface Hub. Si ce n’est pa
 7. Pour quitter le mode plein écran, faites défiler de haut en bas et appuyez sur les deux flèches orientées vers l’intérieur ![](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-hub-icon.png).
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Afficher les tableaux de bord et les rapports en mode Plein écran à partir du service Power BI](../../service-fullscreen-mode.md)
+* [Afficher les tableaux de bord et les rapports en mode Plein écran à partir du service Power BI](../end-user-focus.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

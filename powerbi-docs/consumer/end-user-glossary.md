@@ -5,14 +5,14 @@ services: power-bi
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 09/27/2018
+ms.date: 11/09/2018
 ms.author: mihart
-ms.openlocfilehash: 30c8d94d6f224175cb2bee4cc6e6e475fe352f60
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: d8238ae96bb57c580c0b74725b105ad7f4332136
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799183"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51508011"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -229,7 +229,7 @@ Basée sur SQL Server Reporting Services avec ses fonctionnalités de création 
 **paramètre de chaîne de requête**  
 Ajouté à une URL pour préfiltrer les résultats affichés dans un rapport Power BI. Dans un sens plus large, une chaîne de requête récupère des informations auprès d’une base de données.
 
-**Quick Insights**
+**Informations rapides**
 
 
 **mesures rapides**
@@ -317,4 +317,4 @@ Les tableaux de bord Power BI contiennent des vignettes de rapport.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Concepts de base pour le consommateur du service Power BI](/consumers/end-user-basic-concepts.md)
+[Concepts de base pour le consommateur du service Power BI](end-user-basic-concepts.md)

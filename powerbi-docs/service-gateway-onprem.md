@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: b56134314b9396dff1b965786e65e62129e5e7b9
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558444"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297133"
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 
@@ -47,9 +47,9 @@ Vous pouvez utiliser une connexion active à des instances tabulaires ou multidi
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Télécharger et installer la passerelle de données locale
 
-Pour télécharger la passerelle, sélectionnez **Passerelle de données** dans le menu Téléchargements. Téléchargez la [passerelle de données locale](http://go.microsoft.com/fwlink/?LinkID=820925). 
+Pour télécharger la passerelle, sélectionnez **Passerelle de données** dans le menu Téléchargements. Téléchargez la [passerelle de données locale](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-Notez que la mise à jour de la passerelle de données locale est effectuée en réinstallant la passerelle, comme décrit dans cette section. Lors de la mise à jour de la passerelle (en la réinstallant), vos paramètres de passerelles existants sont conservés.
+Notez que vous mettez à jour la passerelle de données locale en la réinstallant, comme cela est décrit dans cette section. Tant que vous installez une version plus récente de la passerelle, vos paramètres existants sont conservés. Si vous installez la même version, il la traite comme une réinstallation complète et vos paramètres ne sont pas conservés.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -118,7 +118,7 @@ Si vous pensez que vous rencontrez des problèmes de proxy avec la passerelle, c
 [Gérer votre source de données - Oracle](service-gateway-onprem-manage-oracle.md)  
 [Gérer votre source de données - Importation/actualisation planifiée](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [Informations approfondies sur la passerelle de données locale](service-gateway-onprem-indepth.md)  
-[Passerelle de données locale (mode personnel) - nouvelle version de la passerelle personnelle](service-gateway-personal-mode.md)
-[Configuration des paramètres de proxy pour la passerelle de données locale](service-gateway-proxy.md)  
+[Passerelle de données locale (mode personnel) - nouvelle version de la passerelle personnelle](service-gateway-personal-mode.md)  
+[Configuration des paramètres de proxy de la passerelle de données locale](service-gateway-proxy.md)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

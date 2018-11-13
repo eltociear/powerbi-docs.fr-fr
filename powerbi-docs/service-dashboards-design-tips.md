@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 580d1ead35042d14c155c5a28fdb6ba6e6dbcd54
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 082d0ba1e638e8eaf6ae16fa8d5ed63c128c8ad5
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544959"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507850"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Conseils pour la conception d’un tableau de bord Power BI
 Maintenant que vous avez créé un tableau de bord et ajouté des vignettes, pensez comment vous pourriez rendre votre tableau de bord aussi élégant que fonctionnel. En général, cela consiste à mettre en évidence les informations les plus importantes et à faire en sorte que votre tableau de bord soit clair et non encombré.
@@ -43,7 +43,7 @@ Sur quel type d’appareil le tableau de bord sera-t-il affiché ? S’il s’a
 Le tableau de bord est-il encombré ?  Ne gardez que les informations importantes qui peuvent être facilement lues et interprétées.
 
 ## <a name="make-use-of-full-screen-mode"></a>Utiliser le mode plein écran
-Affichez votre tableau de bord en mode [plein écran](service-fullscreen-mode.md) sans distractions.
+Affichez votre tableau de bord en mode [plein écran](consumer/end-user-focus.md) sans distractions.
 
 ## <a name="make-the-most-important-information-biggest"></a>Affichez les informations les plus importantes en grand format
 Si le texte et les visualisations de votre tableau de bord ont la même taille, vos lecteurs auront du mal à se concentrer sur ce qui est le plus important. Par exemple, les visualisations de carte sont un bon moyen de mettre en évidence un nombre important :  

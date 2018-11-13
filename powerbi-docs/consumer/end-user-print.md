@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 636dbceae129d7a5288fa6dfc8a281d5257a087f
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: be7597cf13732e251f40f73a853e6ea7b0032652
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564989"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507666"
 ---
 # <a name="printing-from-power-bi-service"></a>Impression depuis le service Power BI
 Imprimer un tableau de bord entier, une vignette de tableau de bord, une page de rapport ou un visuel de rapport à partir du service Power BI. Les rapports ne peuvent être imprimés qu’une page à la fois. Vous ne pouvez peut pas imprimer l’intégralité du rapport en une fois.
@@ -47,7 +47,7 @@ Regardez Amanda imprimer à partir de son tableau de bord et de son rapport. Sui
 1. [Ouvrez la vignette en mode Focus](end-user-focus.md) en sélectionnant les points de suspension et en choisissant l’icône Focus ![icône Focus](./media/end-user-print/power-bi-focus-icon.png).
    
     ![menu des points de suspension](./media/end-user-print/menu-options.png)
-2. Ouvrez la vignette en [mode Plein écran](../service-fullscreen-mode.md) en sélectionnant l’icône Plein écran ![icône Plein écran](./media/end-user-print/power-bi-full-screen-icon.png) dans la barre de navigation supérieure.
+2. Ouvrez la vignette en [mode Plein écran](end-user-focus.md) en sélectionnant l’icône Plein écran ![icône Plein écran](./media/end-user-print/power-bi-full-screen-icon.png) dans la barre de navigation supérieure.
 3. Pointez sur la vignette pour afficher le menu Options
    
     ![menu d’options Plein écran](./media/end-user-print/menu-options-new.png)

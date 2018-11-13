@@ -28,7 +28,7 @@ Il est recommandé de *toujours* procéder comme suit :
 ## <a name="creating-calculated-columns"></a>Créer des colonnes calculées
 Les **colonnes calculées** s’avèrent utiles quand vous voulez segmenter ou filtrer la valeur ou si vous voulez un calcul pour chaque ligne de votre table.
 
-Vous pouvez créer des colonnes calculées dans Power BI Desktop en sélectionnant **Nouvelle colonne** dans l’onglet **Modélisation**. Il est préférable d’être dans la vue **Données** (plutôt que dans la vue **Rapport** ou **Relations**) car vous pouvez voir la colonne créée, et **la barre de formule** est renseignée et prête pour votre formule DAX.
+Vous pouvez créer des colonnes calculées dans Power BI Desktop en sélectionnant **Nouvelle colonne** dans l’onglet **Modélisation**. Il est préférable d’être dans la vue Données (plutôt que dans la vue Rapport ou **Relations**) car vous pouvez voir la colonne créée, et **la barre de formule** est renseignée et prête pour votre formule DAX.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_2a.png)
 
