@@ -54,9 +54,11 @@ items:
     items:
     - name: Nouveautés de la dernière mise à jour de Power BI Desktop
       href: desktop-latest-update.md
+    - name: Affichage Modélisation dans Power BI Desktop (préversion)
+      href: desktop-modeling-view.md
     - name: Agrégations dans Power BI Desktop (préversion)
       href: desktop-aggregations.md
-    - name: Modèles composites dans Power BI Desktop (préversion)
+    - name: Modèles composites dans Power BI Desktop
       href: desktop-composite-models.md
     - name: Relations plusieurs-à-plusieurs dans Power BI Desktop (préversion)
       href: desktop-many-to-many-relationships.md
@@ -232,6 +234,8 @@ items:
         href: desktop-bookmarks.md
       - name: Utiliser les thèmes de rapport
         href: desktop-report-themes.md
+      - name: Essayer la nouvelle expérience de filtre
+        href: power-bi-report-filter-preview.md
       - name: Utiliser les mesures rapides
         href: desktop-quick-measures.md
       - name: Utiliser les paramètres Scénarios
@@ -768,17 +772,17 @@ items:
       items:
       - name: Préparation des données en libre-service avec des flux de données (préversion)
         href: service-dataflows-overview.md
-      - name: Créer et utiliser des flux de données
+      - name: Créer et utiliser des flux de données (préversion)
         href: service-dataflows-create-use.md
-      - name: Entités calculées avec Power BI Premium
+      - name: Entités calculées avec Power BI Premium (préversion)
         href: service-dataflows-computed-entities-premium.md
-      - name: Utilisation de flux de données avec des sources de données locales
+      - name: Utilisation de flux de données avec des sources de données locales (préversion)
         href: service-dataflows-on-premises-gateways.md
       - name: Lier des entités entre des flux de données (préversion)
         href: service-dataflows-linked-entities.md
       - name: Utilisation d’une actualisation incrémentielle avec des flux de données (préversion)
         href: service-dataflows-incremental-refresh.md
-      - name: Ressources du développeur pour les flux de données
+      - name: Ressources sur les flux de données pour les développeurs (préversion)
         href: service-dataflows-developer-resources.md
       - name: Se connecter à des flux de données dans Power BI Desktop
         href: desktop-connect-dataflows.md
@@ -794,7 +798,7 @@ items:
       href: whitepapers.md
 - name: Rapports paginés dans Power BI
   items:
-  - name: Overview
+  - name: Vue d’ensemble
     items:
     - name: Que sont les rapports paginés ? (Préversion)
       href: paginated-reports-report-builder-power-bi.md
@@ -1249,9 +1253,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 7c2025a2dd23ce58937cd9987bec8d28b8ffb04c
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 89c0a22887d00b325abeddd193bbf71af97feb9f
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508057"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619659"
