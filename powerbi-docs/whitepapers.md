@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: 88bfd67ddf284ea6b518c5ebdd6386887513f393
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: bff5e42b239fee572ea0a453301f154da3b999b3
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223050"
+ms.locfileid: "51266090"
 ---
 # <a name="whitepapers-for-power-bi"></a>Livres blancs pour Power BI
 
@@ -22,6 +22,7 @@ Les livres blancs vous permettent d’explorer Power BI de façon plus approfond
 
 | Livre blanc | Description | Date |
 | --- | --- | --- |
+| [Power BI et flux de données](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Ce livre blanc présente les détails techniques des flux de données et décrit les fonctionnalités et les initiatives qui soutiennent les fonctionnalités des flux de données. | Novembre 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Décrit Power BI Premium, tel qu’il existe à son lancement et tel qu’il évoluera. | Octobre 2017 |
 | [Planification et déploiement de Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment)| Ce document fournit des conseils et meilleures pratiques concernant la planification et le déploiement de la capacité Premium pour les charges de travail bien définies.| Novembre 2017 |
 | [Planifier la capacité pour l’analytique incorporée avec Power BI Premium](https://aka.ms/pbiewhitepaper) |Ce document fournit des conseils pour les développeurs d’applications ou les éditeurs de logiciels afin de déterminer la capacité plus appropriée pour l’entreprise. | Octobre 2017 |

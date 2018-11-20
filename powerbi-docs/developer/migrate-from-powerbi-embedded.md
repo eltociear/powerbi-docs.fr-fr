@@ -7,12 +7,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: f53b7e02ac3f744a7eb0fa7dd74b7144a434a42f
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: ff9218a84ba9c0055e965f4b000b73a490d250a5
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271851"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297171"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications.
@@ -79,7 +79,7 @@ Vous devez inscrire votre application avec Azure AD afin d’effectuer des appel
 Vous devez inscrire l’application à l’aide du compte **principal** d’application.
 
 ## <a name="create-app-workspaces-required"></a>Créer des espaces de travail d’application (facultatif)
-Vous pouvez tirer parti des espaces de travail d’application pour mettre en place une meilleure isolation si votre application sert plusieurs clients. Les tableaux de bord et rapports sont ainsi isolés entre vos clients. Vous pouvez ensuite utiliser un compte Power BI par espace de travail d’application afin d’isoler davantage les expériences d’application entre vos clients.
+Vous pouvez tirer parti des espaces de travail de l’application pour mettre en place une meilleure isolation si votre application sert plusieurs clients. Les tableaux de bord et rapports sont ainsi isolés entre vos clients. Vous pouvez ensuite utiliser un compte Power BI par espace de travail d’application afin d’isoler davantage les expériences d’application entre vos clients.
 
 > [!IMPORTANT]
 > Vous ne pouvez pas utiliser un espace de travail personnel pour tirer parti de l’incorporation à des utilisateurs non-Power BI.

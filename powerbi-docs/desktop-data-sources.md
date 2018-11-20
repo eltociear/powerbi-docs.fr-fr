@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336895"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619813"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
@@ -30,8 +30,6 @@ En sélectionnant **Plus...** dans le menu **Les plus courantes**, vous accédez
 
 > [!NOTE]
 > L’équipe Power BI enrichit en permanence les sources de données disponibles pour **Power BI Desktop** et le **service Power BI**. Par conséquent, les premières versions des sources de données en cours de création sont souvent marquées de la mention *Bêta* ou *Préversion*. Une source de données marquée de la mention *Bêta* ou *Préversion* a un support et des fonctionnalités limités et ne doit pas être utilisée dans les environnements de production.
-> 
-> 
 
 ## <a name="data-sources"></a>Sources de données
 Les types de données sont organisés dans les catégories suivantes :
@@ -74,21 +72,20 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Base de données Sybase
 * Base de données Teradata
 * Base de données SAP HANA
-* SAP Business Warehouse Application Server
+* Serveur d’applications SAP Business Warehouse
 * Serveur de messages SAP Business Warehouse
 * Amazon Redshift
 * Impala
 * Google BigQuery
 * Snowflake
+* Connecteur BI
+* Exasol
 * Dremio (bêta)
-* Exasol (bêta)
 * Jethro (bêta)
 * Kyligence Enterprise (bêta)
 
 > [!NOTE]
 > Certains connecteurs de base de données doivent être activés. Pour cela, sélectionnez **Fichier > Options et paramètres > Options**, puis sélectionnez **Fonctionnalités en version préliminaire** et activez le connecteur. Si vous ne voyez pas certains des connecteurs mentionnés ci-dessus et que vous souhaitez les utiliser, vérifiez les paramètres **Fonctions en version préliminaire**. Notez également qu’une source de données marquée de la mention *Bêta* ou *Préversion* a un support et des fonctionnalités limités et ne doit pas être utilisée dans les environnements de production.
-> 
-> 
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Base de données**.
 
@@ -111,11 +108,11 @@ La catégorie **Azure** fournit les connexions de données suivantes :
 * Stockage Blob Azure
 * Stockage Table Azure
 * Azure Cosmos DB (bêta)
-* Azure Data Lake Store
+* Azure Data Lake Storage
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure KustoDB (bêta)
+* Azure Data Explorer (bêta)
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Azure**.
 
@@ -131,7 +128,8 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Dynamics 365 Business Central (local)
 * Common Data Service for Apps (bêta)
 * Microsoft Azure Consumption Insights (bêta)
-* Visual Studio Team Services (version bêta)
+* Azure DevOps (bêta)
+* Azure DevOps Server (bêta)
 * Objets Salesforce
 * Rapports Salesforce
 * Google Analytics
@@ -187,8 +185,6 @@ L’image suivante montre la fenêtre **Obtenir les données** pour **Autre**.
 
 > [!NOTE]
 > À ce stade, il n’est pas possible de se connecter aux sources de données personnalisées sécurisées à l’aide d’Azure Active Directory.
-> 
-> 
 
 ## <a name="connecting-to-a-data-source"></a>Connexion à une source de données
 Pour vous connecter à une source de données, sélectionnez la source de données dans la fenêtre **Obtenir les données** et sélectionnez **Se connecter**. Dans l’image suivante, l’option **Web** est sélectionnée dans la catégorie de connexions de données **Autre**.

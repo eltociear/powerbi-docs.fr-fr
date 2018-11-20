@@ -1,5 +1,5 @@
 ---
-title: Utiliser des modèles composites dans Power BI Desktop (préversion)
+title: Utiliser des modèles composites dans Power BI Desktop
 description: Créer des modèles de données avec plusieurs connexions de données et des relations plusieurs-à-plusieurs dans Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 47c99e40b1665b98c33d16b685e359c10277a560
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: b7a8323557f769fa2a05d504de2540bc505e7a54
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435393"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619698"
 ---
-# <a name="use-composite-models-in-power-bi-desktop-preview"></a>Utiliser des modèles composites dans Power BI Desktop (préversion)
+# <a name="use-composite-models-in-power-bi-desktop"></a>Utiliser des modèles composites dans Power BI Desktop
 
 Avant dans Power BI Desktop, quand vous utilisiez un DirectQuery dans un rapport, aucune autre connexion de données, DirectQuery ou d’importation, n’était autorisée pour ce rapport. Avec les modèles composites, cette restriction est levée. Un rapport peut en toute transparence inclure des connexions de données provenant de plusieurs connexions de données DirectQuery ou d’importation, dans la combinaison de votre choix.
 
@@ -27,19 +27,9 @@ La fonctionnalité des modèles composites dans Power BI Desktop se compose de t
 
 * **Modèles composites** : permet à un rapport d’avoir plusieurs connexions de données, notamment des connexions provenant de DirectQuery ou d’une importation, dans toutes les combinaisons. Cet article décrit en détail les modèles composites.
 
-* **Relations plusieurs à plusieurs** : avec les *modèles composites*, vous pouvez établir des *relations plusieurs à plusieurs* entre les tables. Cette approche supprime la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md).
+* **Relations plusieurs à plusieurs** : avec les *modèles composites*, vous pouvez établir des *relations plusieurs à plusieurs* entre les tables. Cette approche supprime la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md).
 
 * **Mode de stockage** : vous pouvez désormais spécifier les visuels qui nécessitent une requête sur les sources de données back-end. Les visuels qui ne nécessitent pas une requête sont importés même s’ils sont basés sur DirectQuery. Cette fonctionnalité permet d’améliorer les performances et de réduire la charge du back-end. Avant, même de simples visuels, comme les segments, lançaient des requêtes qui étaient envoyées à des sources back-end. Pour plus d’informations, consultez [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md).
-
-## <a name="enable-the-composite-models-preview-feature"></a>Activer la fonctionnalité en préversion des modèles composites
-
-La fonctionnalité des modèles composites est en préversion et doit être activée dans Power BI Desktop. Pour activer les modèles composites, sélectionnez **Fichier** > **Options et paramètres** > **Options** > **Fonctionnalités en préversion**, puis cochez la case **Modèles composites**. 
-
-![Volet « Fonctionnalités en préversion »](media/desktop-composite-models/composite-models_02.png)
-
-Pour activer la fonctionnalité, vous devez redémarrer Power BI Desktop.
-
-![Fenêtre « La fonctionnalité nécessite un redémarrage »](media/desktop-composite-models/composite-models_03.png)
 
 
 ## <a name="use-composite-models"></a>Utiliser des modèles composites

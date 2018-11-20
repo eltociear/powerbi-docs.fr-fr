@@ -9,12 +9,12 @@ ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
 manager: kfile
-ms.openlocfilehash: 99c84aff932c7ce56a4aaa81d71e4583bce3e4c2
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 534c06c66d561a04dbffc04412095d6924c92781
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641738"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266067"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Gestion et optimisation des ressources de capacité de Microsoft Power BI Premium
 
@@ -26,6 +26,7 @@ Cet article décrit comment Power BI Premium gère les ressources. Il fournit é
 
 * Les jeux de données qui sont chargés en mémoire
 * L’actualisation des jeux de données (planifiée et à la demande)
+* Charges de travail prises en charge par la capacité
 * Requêtes de rapport
 
 Lorsqu’une requête est émise sur un jeu de données publié dans votre capacité, ce jeu de données est chargé en mémoire à partir du stockage persistant (également appelé chargement d’image). Le fait de conserver le jeu de données chargé en mémoire aide à répondre rapidement aux requêtes ultérieures sur ce jeu de données. En plus de la mémoire nécessaire pour conserver le jeu de données chargé en mémoire, les requêtes de rapport et l’actualisation du jeu de données consomment de la mémoire supplémentaire.
@@ -52,6 +53,10 @@ Si la mémoire requise n’est pas disponible en dépit de la suppression, l’a
 
 Si une requête interactive est émise sur n’importe quel jeu de données dans la capacité et que la mémoire disponible n’est pas suffisante en raison d’une actualisation en cours, cette requête échoue et doit être retentée par l’utilisateur.
 
+### <a name="workloads"></a>Charges de travail
+
+Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** prennent en charge uniquement la charge de travail associée aux requêtes Power BI exécutées dans le cloud. Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : **les rapports paginés** et **les flux de données**. Si elles sont utilisées, ces charges de travail peuvent avoir un impact sur l’utilisation de la mémoire de votre capacité. Pour plus d’informations, consultez [Configurer des charges de travail](service-admin-premium-manage.md#configure-workloads).
+
 ## <a name="cpu-resource-management-in-premium-capacity"></a>Gestion des ressources du processeur dans la capacité Premium
 
 Il existe deux principaux consommateurs des ressources du processeur :
@@ -65,9 +70,9 @@ Les requêtes de rapport consomment des ressources d’UC dans votre capacité. 
 
 ### <a name="refresh-parallelization-policy"></a>Stratégie de parallélisation de l’actualisation
 
-La mémoire n’est pas la seule ressource qui peut contraindre l’actualisation des jeux de données. Le nombre de cœurs virtuels sur un serveur peut également être un facteur. Étant donné que chaque opération d’actualisation nécessite un certain nombre de cœurs virtuels, il existe une limite du nombre d’actualisations qui peuvent s’exécuter en parallèle. La limite par référence SKU est détaillée dans le tableau suivant. Les actualisations supplémentaires qui vont au-delà de ces limites sont mises en attente.
+La mémoire n’est pas la seule ressource qui peut contraindre l’actualisation des jeux de données. Le nombre de cœurs v-core sur un serveur peut également être un facteur. Étant donné que chaque opération d’actualisation nécessite un certain nombre de cœurs virtuels, il existe une limite du nombre d’actualisations qui peuvent s’exécuter en parallèle. La limite par référence SKU est détaillée dans le tableau suivant. Les actualisations supplémentaires qui vont au-delà de ces limites sont mises en attente.
 
- | Référence | Cœurs virtuels du back-end | Parallélisme de l’actualisation de modèle |
+ | Référence | V-cores du principal | Parallélisme de l’actualisation de modèle |
  | --- | --- | --- |
  | A1  | 0.5  | 1  |
  | A2  | 1  | 2  |
@@ -107,7 +112,7 @@ Voici certains scénarios courants et les actions effectuées par le service :
 
 Si les rapports sont lents ou ne répondent pas, commencez par tester pour un seul utilisateur dans votre rapport. Ensuite, augmentez la charge d’utilisateurs simultanés pour rechercher la limite. Dans de nombreux cas, le paramétrage de vos requêtes DAX peut changer considérablement les performances de vos rapports. Le paramétrage des requêtes permet également d’augmenter le nombre d’utilisateurs simultanés pris en charge par votre capacité. [Supervisez votre capacité](service-admin-premium-monitor-capacity.md) pour identifier les problèmes de performances éventuels.
 
-Utilisez la capacité Power BI Embedded dans Azure pour tester différentes références SKU et déterminer la meilleure référence SKU Premium pour votre charge de travail attendue. La référence SKU A4 Power BI Embedded est égale à P1, A5 = P2 et A6 = P3. Dans Azure, vous pouvez passer facilement d’une référence SKU à une autre en effectuant un scale up et un scale down dans le portail Azure. Lorsque vous trouvez la référence SKU qui convient le mieux à votre charge de travail et que vos tests sont terminés, vous pouvez supprimer la référence SKU.
+Utilisez la capacité Power BI Embedded dans Azure pour tester différentes références SKU et déterminer la meilleure référence SKU Premium pour votre charge de travail attendue. La référence SKU A4 Power BI Embedded est égale à P1, A5 = P2 et A6 = P3. Dans Azure, vous pouvez basculer facilement entre les références SKU en appliquant la montée (scale up) et la descente (scale down) en puissance dans le portail Azure. Lorsque vous trouvez la référence SKU qui convient le mieux à votre charge de travail et que vos tests sont terminés, vous pouvez supprimer la référence SKU.
 
 Dans certains cas, le fait d’ouvrir un fichier Power BI Desktop (.pbix) du modèle sur votre ordinateur et de vérifier la consommation de la mémoire et du processeur offre beaucoup d’informations sur le problème. Cela n’est pas utile pour les modèles très volumineux, mais pour certains modèles plus petits, essayez d’ouvrir, d’actualiser et d’interroger le modèle à partir de votre ordinateur. Vérifiez la taille du modèle, la mémoire et le processeur consommés lorsque vous ouvrez le modèle. Essayez de réactualiser et d’interroger. Utilisez le Gestionnaire des tâches pour vérifier la consommation de mémoire et d’UC pour le fichier local. Parfois, les métriques sur votre ordinateur peuvent indiquer qu’une capacité Premium inférieure comme P1 / P2 ne fonctionnera pas pour votre solution.
 

@@ -7,25 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223372"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619629"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
 
 ![Utiliser différents marqueurs pour les graphiques en courbes et en aires en vue d’améliorer l’accessibilité](media/desktop-accessibility/accessibility_01.png)
-
-> [!NOTE]
-> Ces fonctionnalités d’accessibilité sont disponibles dans la version de juin 2017 de **Power BI Desktop** et dans les versions ultérieures. Des fonctionnalités d’accessibilité supplémentaires sont également prévues pour les versions futures.
-> 
-> 
 
 ## <a name="consuming-a-power-bi-desktop-report-with-a-keyboard-or-screen-reader"></a>Lire un rapport Power BI Desktop à l’aide d’un clavier ou d’un lecteur d’écran
 Depuis la version de septembre 2017 de **Power BI Desktop**, vous pouvez appuyer sur la touche **?** pour afficher une fenêtre décrivant les raccourcis clavier d’accessibilité disponibles dans **Power BI Desktop**.
@@ -115,13 +110,27 @@ Il existe quelques limitations et problèmes connus concernant les fonctionnalit
 * Pour une expérience optimale quand vous utilisez des lecteurs d’écran avec **Power BI Desktop**, ouvrez le lecteur d’écran de votre choix avant d’ouvrir des fichiers dans Power BI Desktop.
 * Si vous utilisez le Narrateur, il existe certaines limitations concernant la navigation dans la fonctionnalité Afficher les données sous la forme d’une table HTML.
 
-## <a name="keyboard-shortcuts"></a>Raccourcis clavier
+## <a name="keyboard-shortcuts"></a>Keyboard Shortcuts
+Les raccourcis clavier sont utiles pour vous déplacer dans les rapports Power BI à l’aide d’un clavier. Les tableaux suivants décrivent les raccourcis disponibles dans un rapport Power BI. Outre l’utilisation de ces raccourcis clavier dans Power BI Desktop, ces raccourcis fonctionnent aussi dans les expériences suivantes :
+
+* Boîte de dialogue Explorateur Q&R
+* Boîte de dialogue Bien démarrer
+* Boîte de dialogue Menu fichier et À propos
+* Barre d’avertissement
+* Boîte de dialogue Restaurer le fichier
+* Boîte de dialogue Smileys
+
+Dans nos efforts constants pour améliorer l’accessibilité, les expériences mentionnées ci-dessus prennent également en charge les lecteurs d’écran et les paramètres de contraste élevé.
+
+
 ### <a name="frequently-used-shortcuts"></a>Raccourcis fréquemment utilisés
 | Pour           | Appuyer sur                |
 | :------------------- | :------------------- |
 | Déplacer le focus entre les sections  | Ctrl + F6 |
 | Déplacer le focus vers l’avant de la section | Tab         |
 | Déplacer le focus vers l’arrière de la section | Maj + Tab |
+| Sélectionner ou désélectionner un objet | Entrée ou Espace |
+| Sélection de plusieurs objets | Ctrl + espace |
 
 ### <a name="on-visual"></a>Sur le visuel
 | Pour           | Appuyer sur                |

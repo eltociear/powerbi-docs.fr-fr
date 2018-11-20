@@ -8,15 +8,15 @@ featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 18e33fa4767eb0d9e457589ea3fa3b61721dce51
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 81867ba36e79a26acb168c1b02fc31e228bd6439
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548025"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266044"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Cartes ArcGIS dans le service Power BI et Power BI Desktop par ESRI
 Ce tutoriel est écrit du point de vue d’une personne qui crée une carte ArcGIS. Une fois que le créateur partage une carte ArcGIS avec un collègue, ce dernier peut afficher et exploiter la carte, mais pas enregistrer de modifications. Pour en savoir plus sur l’affichage d’une carte ArcGIS, consultez [Interaction avec des cartes ArcGIS](visuals/power-bi-visualizations-arcgis.md).
@@ -26,7 +26,7 @@ L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà 
  Vous ne pouvez pas créer de cartes ArcGIS sur un appareil mobile, mais ce dernier vous permet de les afficher et les utiliser. Consultez [Interaction avec des cartes ArcGIS](visuals/power-bi-visualizations-arcgis.md).
 
 > [!TIP]
-> SIG (ou GIS pour Geographic Information Science en anglais) signifie système d’informations géographiques.
+> SIG (ou GIS pour Geographic Information System en anglais) signifie système d’informations géographiques.
 
 
 L’exemple ci-dessous utilise une zone de dessin gris foncé pour afficher les ventes régionales en tant que carte thermique par rapport à une couche démographique du revenu disponible médian 2016. Comme vous le découvrirez en poursuivant votre lecture, l’utilisation d’ArcGIS Maps offre une fonctionnalité de cartographie améliorée pratiquement sans limites, des données démographiques et des visualisations de carte encore plus attrayantes pour développer vos scénarios.

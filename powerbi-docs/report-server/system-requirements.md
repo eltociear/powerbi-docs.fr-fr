@@ -1,23 +1,23 @@
 ---
 title: Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
-description: Vous trouverez ici les configurations matérielle et logicielle requises pour installer et exécuter Power BI Report Server.
+description: Cet article mentionne les configurations matérielle et logicielle requises pour installer et exécuter Power BI Report Server.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: c2784bf8e8dca857ae2a1b55d1ad8560e552cafb
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37780555"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507903"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
-Vous trouverez ici les configurations matérielle et logicielle requises pour installer et exécuter Power BI Report Server.
+Cet article mentionne les configurations matérielle et logicielle requises pour installer et exécuter Power BI Report Server.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Configurations requises du processeur, de la mémoire et du système d’exploitation
 
@@ -43,18 +43,19 @@ SQL Server est utilisé pour héberger les bases de données des serveurs de rap
 * SQL Server 2014
 * SQL Server 2012
 
-La création de la base de données du serveur de rapports sur un ordinateur distant nécessite que vous configuriez la connexion pour que celle-ci utilise un compte d’utilisateur de domaine ou un compte de service qui a accès au réseau. Si vous décidez d’utiliser une instance distante de SQL Server, choisissez attentivement quelles informations d’identification le serveur de rapports doit utiliser pour se connecter à l’instance SQL Server. Pour plus d’informations, consultez [Configurer la connexion de base de données d’un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
+Lorsque vous créez la base de données du serveur de rapports sur un ordinateur distant, vous devez configurer la connexion pour utiliser un compte d’utilisateur de domaine ou un compte de service ayant accès au réseau. Si vous décidez d’utiliser une instance distante de SQL Server, choisissez attentivement quelles informations d’identification le serveur de rapports doit utiliser pour se connecter à l’instance SQL Server. Pour plus d’informations, consultez [Configurer la connexion de base de données d’un serveur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager).
 
 ## <a name="considerations"></a>Considérations
 Power BI Report Server installe les valeurs par défaut pour configurer les principaux paramètres requis pour rendre un serveur de rapports opérationnel. Les conditions requises sont les suivantes :
 
 * Un moteur de base de données SQL Server doit être disponible après l’installation et avant de configurer la base de données pour le serveur de rapports. L’instance du moteur de base de données héberge la base de données du serveur de rapports que le Gestionnaire de configuration de Reporting Services doit créer. Le moteur de base de données n’est pas requis pour l’expérience d’installation réelle.
-* Le compte d’utilisateur utilisé pour exécuter l’installation doit être membre du groupe Administrateurs local.
-* Le compte d’utilisateur utilisé pour le Gestionnaire de configuration de Reporting Services doit disposer d’autorisations d’accès et de création sur les bases de données de l’instance du moteur de base de données hébergeant les bases de données du serveur de rapports.
+- [Fonctionnalités des services de rapports prises en charge par les éditions de SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) met en avant les différences entre les éditions de SQL Server.
+* Le compte d’utilisateur qui exécute l’installation doit être membre du groupe d’administrateurs local.
+* Le compte d’utilisateur qui exécute le Gestionnaire de configuration de Reporting Services doit disposer d’autorisations d’accès et de création sur les bases de données de l’instance du moteur de base de données hébergeant les bases de données du serveur de rapports.
 * Le programme d’installation doit pouvoir utiliser les valeurs par défaut pour réserver les URL donnant accès au serveur de rapports et au portail web. Ces valeurs sont le port 80, un caractère générique fort et les noms de répertoire virtuel au format **ReportServer** et **Reports**.
 
 ## <a name="read-only-domain-controller-rodc"></a>Contrôleur de domaine en lecture seule (RODC)
- Si le serveur de rapports peut être installé dans un environnement disposant d’un contrôleur de domaine en lecture seule (RODC), pour fonctionner correctement, Reporting Services doit avoir accès à un contrôleur de domaine en lecture-écriture. Si Reporting Services a accès uniquement à un RODC, il se peut que vous rencontriez des erreurs lors de la tentative d’administrer le service.
+ Vous pouvez installer le serveur de rapports dans un environnement qui comporte un contrôleur de domaine en lecture seule (RODC). Reporting Services doit cependant pouvoir accéder à un contrôleur de domaine en lecture/écriture pour fonctionner correctement. Si Reporting Services a accès uniquement à un RODC, il se peut que vous rencontriez des erreurs lors de la tentative d’administrer le service.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Rapports Power BI et connexions actives Analysis Services
 Vous pouvez utiliser une connexion active à des instances tabulaires ou multidimensionnelles. Pour fonctionner correctement, votre serveur Analysis Services doit être de la version et de l’édition appropriées.
@@ -69,7 +70,7 @@ Vous pouvez utiliser une connexion active à des instances tabulaires ou multidi
 [Présentation de Power BI Report Server](get-started.md)  
 [Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
-[Installer le Générateur de rapports](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

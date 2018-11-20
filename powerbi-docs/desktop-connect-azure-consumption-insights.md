@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a84d34bf82be99eb52fccfb6318142f7d47de1
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329911"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619606"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Se connecter à Azure Consumption Insights dans Power BI Desktop (bêta)
 Le connecteur **Azure Consumption Insights** vous permet d’utiliser **Power BI Desktop** pour vous connecter à Azure afin d’obtenir des données et informations détaillées sur l’utilisation des services Azure par votre organisation. Vous pouvez également créer des mesures, des colonnes personnalisées et des visuels afin de rapporter et partager l’utilisation d’Azure par votre organisation. Le connecteur **Azure Consumption Insights** étant publié en version bêta, il est susceptible de changer.
@@ -49,9 +49,20 @@ Ensuite, entrez votre *Clé d’accès* pour établir la connexion.
   
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Après que avez entré votre *Clé d’accès* et sélectionné **Se connecter**, une fenêtre du **Navigateur** affiche les quatre tables à votre disposition : *Résumé*, *Utilisation*, *Grille tarifaire* et *Place de marché*. Vous pouvez activer une case à cocher en regard d’une table pour afficher un aperçu. Vous pouvez sélectionner une ou plusieurs tables en cochant la case en regard de leur nom, puis sélectionner **Charger**.
+Une fois que vous avez entré votre *Clé d’accès* et sélectionné **Se connecter**, une fenêtre **Navigateur** affiche les neuf tables à votre disposition : 
+* **Budgets** : informations budgétaires permettant de comparer les coûts et l’utilisation réels aux objectifs budgétaires. 
+* **MarketPlace** : frais de la Place de marché Azure en fonction de l’utilisation.
+* **PriceSheets** : tarifs applicables par compteur pour une inscription.
+* **RICharges** : frais associés à vos instances réservées au cours des 24 derniers mois.
+* **RIRecommendations_Single** : recommandations d’achat d’instances réservées en fonction de vos tendances d’utilisation sur un seul abonnement au cours des 7, 30 ou 60 derniers jours.
+* **RIRecommendations_Shared** : recommandations d’achat d’instances réservées en fonction de vos tendances d’utilisation sur tous vos abonnements au cours des 7, 30 ou 60 derniers jours.
+* **RIUsage** : informations sur la consommation de vos instances réservées existantes au cours du mois dernier.
+* **Summaries** : résumé mensuel des soldes, nouveaux achats, frais de service de la Place de marché Azure, ajustements et dépassements des frais.
+* **UsageDetails** : répartition des quantités consommées et des frais estimés pour une inscription.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
+Vous pouvez activer une case à cocher en regard d’une table pour afficher un aperçu. Vous pouvez sélectionner une ou plusieurs tables en cochant la case en regard de leur nom, puis sélectionner **Charger**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04b.png)
 
 > [!NOTE]
 > Les tableaux *Résumé* et *Grille tarifaire* sont disponibles seulement pour la clé d’API au niveau inscription. De plus, les données de ces tables sont, par défaut, celles du mois en cours pour l’*Utilisation* et la *Grille tarifaire*. Les tables *Résumé* et *Place de marché* ne sont pas limitées au mois en cours.
@@ -155,19 +166,19 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | Cost |cost |ExtendedCost |Non |
 | Cost Center |costCenter |Cost Center |Non |
 | Date |date |Date |Non |
-| Day | |Day |Non |
+| Jour | |Jour |Non |
 | DepartmentName |departmentName |Department Name |Non |
 | DepartmentID |departmentId | |Oui |
 | Instance ID | | |Oui |
 | InstanceId |instanceId |Instance ID |Non |
-| Emplacement | | |Oui |
+| Location | | |Oui |
 | Meter Category |meterCategory |Meter Category |Non |
 | Meter ID | | |Oui |
 | Meter Name |meterName |Meter Name |Non |
 | Meter Region |meterRegion |Meter Region |Non |
 | Meter Sub-Category |meterSubCategory |Meter Sub-Category |Non |
 | MeterId |meterId |Meter ID |Non |
-| Month | |Month |Non |
+| Mois | |Mois |Non |
 | Product |product |Product |Non |
 | ProductId |productId | |Oui |
 | Groupe de ressources |resourceGroup |Groupe de ressources |Non |
@@ -183,10 +194,10 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | Store Service Identifier |storeServiceIdentifier |Store Service Identifier |Non |
 | StoreServiceIdentifierId | | |Oui |
 | Nom de l’abonnement |subscriptionName |Nom de l’abonnement |Non |
-| Balises |tags |Balises |Non |
+| Étiquettes |tags |Étiquettes |Non |
 | TagsId | | |Oui |
 | Unit Of Measure |unitOfMeasure |Unit Of Measure |Non |
-| Year | |Year |Non |
+| Année | |Année |Non |
 | SubscriptionId |subscriptionId |SubscriptionId |Oui |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |Non |
 

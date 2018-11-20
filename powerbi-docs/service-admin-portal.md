@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: 3e125061766d6ade0daeaacb208d3070d8e9bd9b
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: b03e9da87aa507812045378b1fa3e581b7de159c
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973255"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266113"
 ---
 # <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
 
@@ -296,6 +296,15 @@ Les utilisateurs de l’organisation peuvent accéder aux espaces de travail pou
 ### <a name="import-data-into-power-bi"></a>Importer des données dans Power BI
 
 Les utilisateurs de l’organisation peuvent importer des données dans le service, par exemple, publier des rapports Power BI Desktop, charger des fichiers de rapport Power BI et se connecter aux données directement à partir du service. [En savoir plus](desktop-upload-desktop-files.md)
+
+## <a name="dataflow-settings-preview"></a>Paramètres de dataflow (préversion)
+
+### <a name="create-and-use-dataflows-preview"></a>Créer et utiliser des dataflows (préversion)
+
+Les utilisateurs de l'organisation peuvent créer et utiliser des dataflows. [En savoir plus](service-dataflows-overview.md)
+
+> [!NOTE]
+> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
 ## <a name="capacity-settings"></a>Paramètres de capacité
 

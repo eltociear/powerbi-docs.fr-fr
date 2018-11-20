@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: df61b9c68407ef0d00d1d5981c57021e7659cfff
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359743"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619491"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Mode de stockage dans Power BI Desktop (préversion)
 
@@ -43,16 +43,6 @@ Le paramètre de mode de stockage dans Power BI Desktop est une des trois foncti
 
 * **Mode de stockage** : vous pouvez désormais spécifier les visuels qui nécessitent une requête sur les sources de données back-end. Les visuels qui ne nécessitent pas une requête sont importés même s’ils sont basés sur DirectQuery. Cette fonctionnalité permet d’améliorer les performances et de réduire la charge du serveur principal. Auparavant, même de simples visuels, comme les segments, initiaient des requêtes qui étaient envoyées à des sources back-end. Le mode de stockage est décrit en détail dans cet article.
 
-## <a name="enable-the-storage-mode-preview-feature"></a>Activer la fonctionnalité en préversion du mode de stockage
-
-La fonctionnalité Mode de stockage est en préversion et doit être activée dans Power BI Desktop. Pour activer le mode de stockage, sélectionnez **Fichier** > **Options et paramètres** > **Options** > **Fonctionnalités en préversion**, puis cochez la case **Modèles composites**. 
-
-![Volet « Fonctionnalités en préversion »](media/desktop-composite-models/composite-models_02.png)
-
-Pour activer la fonctionnalité, redémarrez Power BI Desktop.
-
-![Fenêtre « La fonctionnalité nécessite un redémarrage »](media/desktop-composite-models/composite-models_03.png)
-
 ## <a name="use-the-storage-mode-property"></a>Utiliser la propriété du mode de stockage
 
 Vous pouvez définir la propriété Mode de stockage sur chaque table dans votre modèle. Pour définir le mode de stockage, dans le volet **Champs**, cliquez avec le bouton droit sur la table dont vous voulez définir les propriétés et sélectionnez **Propriétés**.
@@ -75,19 +65,7 @@ Le fait de modifier une table sur le paramètre **Importer** est une opération 
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>Contraintes sur les tables DirectQuery et Double
 
-Les tables doubles ont les mêmes contraintes que les tables DirectQuery. Ces contraintes incluent des transformations M limitées et des fonctions DAX restreintes dans les colonnes calculées. Pour plus d’informations, consultez [Implications de l’utilisation de DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
-
-## <a name="relationship-rules-on-tables-with-different-storage-modes"></a>Règles de relation sur des tables avec différents modes de stockage
-
-Les relations doivent respecter les règles basées sur le mode de stockage des tables associées. Cette section fournit des exemples de combinaisons valides. Pour plus d’informations, consultez [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md).
-
-Sur un jeu de données avec une seule source de données, les combinaisons de relations *1 à plusieurs* suivantes sont valides :
-
-| Table côté *plusieurs* | Table côté *1* |
-| ------------- |----------------------| 
-| Double          | Double                 | 
-| Importer        | Importer ou Double       | 
-| DirectQuery   | DirectQuery ou Double  | 
+Les tables doubles ont les mêmes contraintes fonctionnelles que les tables DirectQuery. Ces contraintes incluent des transformations M limitées et des fonctions DAX restreintes dans les colonnes calculées. Pour plus d’informations, consultez [Implications de l’utilisation de DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
 
 ## <a name="propagation-of-dual"></a>Propagation de double
 Considérez le modèle simple suivant, où toutes les tables sont d’une source unique qui prend en charge l’importation et DirectQuery.
@@ -98,19 +76,16 @@ Supposons que toutes les tables dans ce modèle sont en mode DirectQuery pour co
 
 ![Fenêtre d’avertissement sur le mode de stockage](media/desktop-storage-mode/storage-mode_05.png)
 
-Les tables de dimension (*Client*, *Date* et *Géographie*) doivent être définies sur **Double** pour se conformer aux règles de relation décrites précédemment. Au lieu de devoir définir ces tables sur **Double** à l’avance, vous pouvez les définir en une seule opération.
+Les tables de dimension (*Customer* (Client), *Geography* (Géographie) et *Date*) peuvent être définies sur **Dual** (Double) afin de réduire le nombre de relations faibles dans le jeu de données et améliorer les performances. Les relations faibles impliquent en général au moins une table DirectQuery où la logique de jonction ne peut pas être envoyée aux systèmes sources. Le fait que les tables **Double** peuvent agir en tant que DirectQuery ou Importer permet d’éviter ce problème.
 
 La logique de propagation est conçue pour apporter une aide dans le cas de modèles qui contiennent de nombreuses tables. Supposons que vous disposez d’un modèle de 50 tables et que seules certaines tables de faits (transactionnelles) doivent être mises en cache. La logique dans Power BI Desktop calcule l’ensemble minimal des tables de dimension qui doivent être définies sur **Double**, de sorte que vous n’êtes pas obligé de le faire.
 
 La logique de la propagation traverse uniquement un côté des relations **1 à plusieurs**.
 
-* La modification de la table *Client* en **Importer** (au lieu de modifier *SurveyResponse*) n’est pas autorisée en raison de ses relations avec les tables DirectQuery *Sales* et *SurveyResponse*.
-* La modification de la table *Client* en **Double** (au lieu de modifier *SurveyResponse*) est autorisée. La logique de propagation définit également la table *Géographie* sur **Double**.
-
 ## <a name="storage-mode-usage-example"></a>Exemple d’utilisation du mode de stockage
 Nous allons poursuivre avec l’exemple de la section précédente et imaginer que nous appliquons les paramètres de propriété de mode de stockage suivants :
 
-| Table                   | Mode de stockage         |
+| Tableau                   | Mode de stockage         |
 | ----------------------- |----------------------| 
 | *Sales*                 | DirectQuery          | 
 | *SurveyResponse*        | Importer               | 
@@ -191,4 +166,3 @@ Pour plus d’informations sur les modèles composites et DirectQuery, consultez
 * [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md)
 * [Utiliser DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery dans Power BI](desktop-directquery-data-sources.md)
-

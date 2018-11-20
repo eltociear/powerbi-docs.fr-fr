@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4c10a0ffdf11829d8faa15ea14be136922c86382
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 7b511a28f056df268216552f7d075a88c047f9f3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545028"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619836"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Mesures d’utilisation pour les tableaux de bord et les rapports
 
@@ -69,7 +69,7 @@ Pour explorer les données du rapport ou pour créer vos propres rapports sur le
     > [!NOTE]
     > Si vous épinglez une vignette du rapport de métriques d’utilisation à un tableau de bord, ce tableau de bord ne peut pas être ajouté à une application ni à un pack de contenu.
 
-## <a name="what-metrics-are-reported"></a>Métriques d’utilisation figurant sur le rapport
+## <a name="which-metrics-are-reported"></a>Métriques figurant dans le rapport
 
 | Métrique | Tableau de bord | Rapport | Description |
 | --- | --- | --- | --- |
@@ -162,6 +162,15 @@ Lorsque vous désactivez les métriques d’utilisation pour toute l’organisat
 Power BI est disponible dans des cloud nationaux distincts. Ces clouds offrent les mêmes niveaux de sécurité, de confidentialité, de conformité et de transparence que la version internationale de Power BI. Ils proposent en plus un modèle unique adapté aux réglementations locales en matière de fourniture, de résidence des données, d’accès et de contrôle. En raison de ce modèle unique adapté aux réglementations locales, les métriques d’utilisation ne sont pas disponibles dans les clouds nationaux. Pour plus d’informations, consultez [Clouds nationaux](https://powerbi.microsoft.com/en-us/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
+
+Il est important de savoir que la comparaison entre les journaux d’audit et les métriques d’utilisation peut produire des différences, et de comprendre pourquoi. Les *journaux d’audit* sont collectés à l’aide de données issues du service Power BI ; les *métriques d’utilisation*, elles, sont collectées sur le client. Les compteurs d’activités agrégés dans les journaux d’audit ne correspondent donc pas toujours aux métriques d’utilisation :
+
+* Il arrive que les métriques d’utilisation sous-estiment les activités en raison de connexions réseau incohérentes, de bloqueurs de publicité ou d’autres problèmes susceptibles de perturber l’envoi d’événements à partir du client.
+* Certains types d’affichages ne sont pas inclus dans les métriques d’utilisation, comme on l’a vu dans cet article.
+* Les métriques d’utilisation surestiment parfois les activités, dans les situations où le client actualise la page sans qu’il soit nécessaire de renvoyer une requête au service Power BI.
+
+
+Outre les différences potentielles entre les journaux d’audit et les métriques d’utilisation, les questions et les réponses suivantes, sur les métriques d’utilisation, pourront être utiles aux utilisateurs et aux administrateurs :
 
 Q : Je ne peux pas exécuter les mesures d’utilisation sur un tableau de bord ou rapport R : Vous ne pouvez voir les mesures d’utilisation que pour le contenu que vous possédez ou que vous êtes autorisé à modifier.
 

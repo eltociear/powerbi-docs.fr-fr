@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8239c271bff5dff6dc068b1c547b8ab2d7731da5
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c4b4114d21d7afc6652d8706235dab4ad0ba0c37
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327726"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619769"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Vue Rapport dans Power BI Desktop
 Si vous avez déjà utilisé Power BI, vous savez combien il est facile de créer des rapports fournissant des perspectives et des informations dynamiques sur vos données. En outre, Power BI met à votre disposition d’autres fonctions avancées dans Power BI Desktop. Grâce  à Power BI Desktop, vous pouvez créer des requêtes avancées, combiner des données de plusieurs sources, créer des relations entre des tables et bien plus encore.
@@ -27,35 +27,46 @@ La différence est qu’avec Power BI Desktop, vous pouvez utiliser vos requête
 ## <a name="lets-take-a-look"></a>Jetons un œil !
 Quand vous chargez pour la première fois des données dans Power BI Desktop, le canevas de la **vue Rapport** est vide.
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
+![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
 Vous pouvez basculer entre la **vue Rapport**, la **vue Données** et la **vue Relations** en sélectionnant les icônes dans la barre de navigation gauche :
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
+![Icône affichage Rapport](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 
 Une fois que vous avez ajouté des données, vous pouvez ajouter des champs à une nouvelle visualisation dans le canevas.
 
-![](media/desktop-report-view/pbid_reportview_addvis.gif)
+![Ajouter un visuel en le faisant glisser à partir du volet Champs](media/desktop-report-view/pbid_reportview_addvis.gif)
 
 Pour changer de type de visualisation, vous pouvez le sélectionner dans le groupe **Visualisation** du ruban, ou cliquer sur l’icône **Changer de type de visualisation** et sélectionner le type de votre choix.
 
-![](media/desktop-report-view/pbid_reportview_changevis.gif)
+![Changer de visuel en en sélectionnant un autre](media/desktop-report-view/pbid_reportview_changevis.gif)
 
 > [!TIP]
 > Effectuez des essais avec différents types de visualisations. Il est important que votre visualisation véhicule clairement les informations contenues dans vos données.
-> 
-> 
 
 Un rapport possède au moins une page vierge au départ. Les pages apparaissent dans le volet de navigation à gauche du canevas. Vous pouvez ajouter toutes sortes de visualisations à une page, mais il est important de ne pas en abuser. Une page qui comporte trop de visualisations apparaît surchargée et devient difficile à explorer. Vous pouvez ajouter de nouvelles pages à votre rapport. Cliquez simplement sur **Nouvelle Page** dans le ruban.
 
-![](media/desktop-report-view/pbidesignerreportviewnewpage.png)
+![Icône Nouvelle page](media/desktop-report-view/pbidesignerreportviewnewpage.png)
 
 Pour supprimer une page, cliquez sur le **X** sur l’onglet de la page au bas de la vue Rapport.
 
-![](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
+![Ajouter une page à un rapport](media/desktop-report-view/pbi_reportviewinpbidesigner_deletepage.png)
 
 > [!NOTE]
 > Vous ne pouvez pas épingler des rapports et des visualisations à un tableau de bord à partir de Power BI Desktop. Au lieu de cela, vous devez [Publier à partir de Power BI Desktop](desktop-upload-desktop-files.md) sur votre site Power BI.
+
+## <a name="copy-and-paste-between-reports"></a>Faire des copier-coller d’un rapport à un autre
+
+Vous pouvez facilement prendre un visuel d’un rapport Power BI Desktop pour le coller dans un autre rapport. Utilisez simplement le raccourci clavier **CTRL + C** pour copier votre visuel de rapport ; ensuite, dans l’autre rapport Power BI Desktop, appuyez sur **CTRL + V** pour le coller. Vous pouvez sélectionner un seul visuel ou bien tous les éléments visuels d’une page pour les copier, puis les coller dans le rapport Power BI Desktop de destination. 
+
+La possibilité de copier-coller des visuels est utile pour les personnes qui créent et mettent fréquemment à jour plusieurs rapports. En cas de copie entre différents fichiers, les paramètres et la mise en forme qui ont été définis explicitement dans le volet Mise en forme sont reportés, tandis que les visuels qui s’appuient sur un thème ou sur les paramètres par défaut sont automatiquement mis à jour en fonction du thème du rapport de destination. Par conséquent, une fois votre visuel mis en forme à votre guise, vous pouvez le copier et le coller dans de nouveaux rapports en préservant ce travail de mise en forme.
+
+![Erreur de copier/coller du visuel – Aucun champ de données](media/desktop-report-view/report-view_05.png)
+
+Si les champs de votre modèle sont différents, le visuel présentera une erreur et un avertissement sur les champs qui n’existent pas. L’erreur est similaire à celle qui apparaît en cas de suppression d’un champ du modèle utilisé par un visuel. Pour corriger l’erreur, remplacez simplement les champs rompus par ceux que vous souhaitez utiliser dans le modèle où le visuel a été collé. Si vous utilisez un visuel personnalisé, il doit lui aussi être importé dans le rapport de destination.
+
+
+
 
 ## <a name="hide-report-pages"></a>Masquer les pages d’un rapport
 
@@ -63,13 +74,13 @@ Lorsque vous créez un rapport, vous pouvez également masquer les pages d’un 
 
 Il est facile de masquer une page de rapport. Il suffit de cliquer avec le bouton droit sur l’onglet de la page du rapport puis de sélectionner **Masquer** dans le menu qui s’affiche.
 
-![](media/desktop-report-view/report-view_05.png)
+![Option Masquer la page](media/desktop-report-view/report-view_05.png)
 
 Il existe quelques considérations à prendre en compte lorsque vous masquez une page de rapport :
 
 * Vous pouvez toujours afficher un rapport masqué dans **Power BI Desktop**, même si le titre de la page est grisé. Dans l’image suivante, la page 4 est masquée.
 
-    ![](media/desktop-report-view/report-view_06.png)
+    ![Page grisée masquée](media/desktop-report-view/report-view_06.png)
 
 * Vous *ne pouvez pas* afficher une page de rapport masquée lorsque vous visualisez le rapport dans le **service Power BI**.
 

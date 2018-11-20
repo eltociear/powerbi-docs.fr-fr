@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 093339e820c45fcbd586bd1eb6d8933b6e5743f8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
+ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298202"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273330"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Passerelle de données locale (mode personnel)
 Vous pouvez utiliser des sources de données locales et créer des rapports et des tableaux de bord Power BI à l’aide d’une passerelle. Une **passerelle** est un logiciel qui facilite l’accès aux données stockées sur un réseau local privé, puis vous permet d’utiliser ces données dans les services en ligne comme le **service Power BI**. La **passerelle de données locale (mode personnel)** est une mise à jour récemment publiée de la passerelle Power BI qui permet aux utilisateurs d’installer une passerelle sur leur propre ordinateur et d’accéder aux données locales.
@@ -132,7 +132,7 @@ La prise en charge de Spark est prévue pour la seconde moitié de l’année 2
   * **Réponse** : Si vous actualisez vos rapports avec la passerelle actuelle, vos actualisations s’arrêteront. La seule façon de créer une nouvelle planification d’actualisation sera d’installer et de configurer la nouvelle passerelle.
 * J’utilise des scripts R. Est-ce qu’ils sont pris en charge ?
   
-  * **Réponse** : Nous prévoyons d’ajouter la prise en charge des scripts R pour bientôt.
+  * **Réponse** : Les scripts R sont pris en charge pour le mode personnel.
 * Pourquoi est-ce que je ne vois pas le message pour mettre à jour la passerelle dans le **service Power BI** ?
   
   * **Réponse** : Ceci est vraisemblablement dû au fait que vous avez un ou plusieurs jeux de données qui incluent une source de données non prise en charge.

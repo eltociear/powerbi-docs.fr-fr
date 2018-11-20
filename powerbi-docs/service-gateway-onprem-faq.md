@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b4ecec3b2e53c2fea0fcbb7d78d1114da1a105ed
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: da8fb3da7ea0e4f0457951bc421a5f207c3c6911
+ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299628"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273307"
 ---
 # <a name="on-premises-data-gateway-faq"></a>FAQ Passerelle de données locale
 <!-- Shared FAQ shared Include -->
@@ -68,6 +68,9 @@ ms.locfileid: "34299628"
 
 **Question :** La passerelle fonctionne-t-elle avec ExpressRoute ?  
 **Réponse :** Oui. Pour plus d’informations sur ExpressRoute et Power BI, consultez [Power BI et ExpressRoute](service-admin-power-bi-expressroute.md).
+
+**Question :** J’utilise des scripts R. Est-ce qu’ils sont pris en charge ?
+**Réponse** : Les scripts R sont pris en charge uniquement pour le mode personnel.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Passerelle de données locale](service-gateway-onprem.md)  

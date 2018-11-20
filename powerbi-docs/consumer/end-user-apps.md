@@ -7,22 +7,22 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 11/09/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: bc68be50917b113371fc168d1b6e3defa2b5001e
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 9c9a99e2bfe0ae90607da4f27d77cb0a2a78a7c8
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473425"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507643"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 Dans Power BI, les *applications* rassemblent les rapports et tableaux de bord associés dans un même emplacement. Les personnes de votre organisation créent et distribuent des applications avec les informations clés de l’entreprise. Des [services externes](end-user-connect-to-services.md) que vous utilisez peut-être déjà, tels que Google Analytics et Microsoft Dynamics CRM, offrent également des applications Power BI. 
 
 ![Applications dans Power BI](./media/end-user-apps/power-bi-apps-navbar.png)
 
-Les applications sont faciles à trouver et à installer dans le service Power BI ([app.powerbi.com](https:app.powerbi.com)) et sur votre appareil mobile. Une fois que vous avez installé une application, vous n’êtes pas obligé de mémoriser les noms d’un grand nombre de tableaux de bord, car ces derniers sont rassemblés dans une même application, dans votre navigateur ou sur votre appareil mobile.
+Les applications sont faciles à trouver et à installer dans le service Power BI et sur votre appareil mobile. Une fois que vous avez installé une application, vous n’êtes pas obligé de mémoriser les noms d’un grand nombre de tableaux de bord, car ces derniers sont rassemblés dans une même application, dans votre navigateur ou sur votre appareil mobile.
 
 Chaque fois que l’auteur de l’application publie des mises à jour, vous voyez automatiquement les modifications. L’auteur contrôle également la fréquence à laquelle l’actualisation des données est planifiée. Vous n’avez pas besoin de vous soucier de la mise à jour. 
 

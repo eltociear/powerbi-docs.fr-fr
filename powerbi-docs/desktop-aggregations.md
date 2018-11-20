@@ -7,33 +7,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3e94dc516f41d764394828309ba4b612083d4583
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: e88e60bc1745a08ea53c7336f6f1fb9e4cda1ec8
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359720"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619721"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Agrégations dans Power BI Desktop (préversion)
 
-L’utilisation d’**agrégations** dans Power BI permet d’effectuer une analyse interactive de Big Data jusqu’ici impossible. Les **agrégations** peuvent réduire considérablement le coût de déverrouillage des jeux de données volumineux pour la prise de décision.
+Les **agrégations** de Power BI permettent d’effectuer une analyse interactive du Big Data qui jusqu’ici était impossible. Les **agrégations** peuvent réduire considérablement le coût de déverrouillage des jeux de données volumineux pour la prise de décision.
 
 ![agrégations dans Microsoft Power BI Desktop](media/desktop-aggregations/aggregations_07.jpg)
 
 La liste suivante décrit les avantages offerts par l’utilisation des **agrégations** :
 
-* **Performances des requêtes sur de grands jeux de données** : à mesure que les utilisateurs interagissent avec les visuels dans les rapports Power BI, les requêtes DAX sont soumises au jeu de données. Vous pouvez améliorer la rapidité des requêtes en mettant en cache les données au niveau agrégé, à l’aide d’une fraction des ressources requises au niveau du détail. Déverrouillez les Big Data d’une manière qui serait impossible autrement.
+* **Performances des requêtes sur le Big Data** : lorsque les utilisateurs interagissent avec des visuels dans les rapports Power BI, des requêtes DAX sont soumises au jeu de données. Vous pouvez améliorer la rapidité des requêtes en mettant en cache les données au niveau agrégé, à l’aide d’une fraction des ressources requises au niveau du détail. Exploitez comme jamais tout le potentiel du Big Data.
 * **Optimisation de l’actualisation des données** : réduisez la taille des caches et la durée des actualisations en mettant en cache les données au niveau agrégé. Accélérez la mise à disposition des données aux utilisateurs.
 * **Bénéficiez d’architectures équilibrées** : autorisez le cache en mémoire de Power BI à gérer l’agrégation des requêtes, ce qu’il fait efficacement. Limitez les requêtes envoyées à la source de données en mode DirectQuery, afin de rester dans les limites de concurrence. Les requêtes qui parviennent à passer sont le plus souvent des requêtes filtrées, au niveau transactionnel, normalement bien gérées par les systèmes de Big Data et les entrepôts de données.
 
 ### <a name="table-level-storage"></a>Stockage de niveau table
-Le stockage de niveau table est normalement utilisé avec la fonctionnalité d’agrégations. Pour plus d’informations, consultez l’article [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md).
+Le stockage de niveau table est normalement utilisé avec la fonctionnalité d’agrégations. Pour plus d’informations, voir l’article [Mode de stockage dans Power BI Desktop](desktop-storage-mode.md).
 
 ### <a name="data-source-types"></a>Types de sources de données
-Les agrégations sont utilisées avec des sources de données représentant des modèles dimensionnels, telles que des mini-Data Warehouses et des entrepôts de données, ainsi que des sources de Big Data basées sur Hadoop. Cet article décrit les principales différences de modélisation dans Power BI pour chaque type de source de données.
+Les agrégations sont utilisées avec des sources de données représentant des modèles dimensionnels, par exemple, des entrepôts de données, des mini-data warehouses et des sources de Big Data Hadoop. Cet article décrit les principales différences de modélisation dans Power BI pour chaque type de source de données.
 
 Toutes les sources (non-multidimensionnelles) DirectQuery et d’importation Power BI fonctionnent avec les agrégations.
 
@@ -55,11 +55,11 @@ Considérez le modèle suivant, qui provient d’une seule source de données. S
 
 ![tables dans un modèle](media/desktop-aggregations/aggregations_02.jpg)
 
-À la place, nous créons la table **Sales Agg** en tant que table d’agrégation. Elle se trouve à un niveau de granularité plus élevé que **Sales**, et donc contiendra beaucoup moins de lignes. Le nombre de lignes doit être égal à la somme des **SalesAmount** regroupés par **CustomerKey**, **DateKey** et **ProductSubcategoryKey**. Au lieu d’avoir plusieurs milliards de lignes, nous n’en aurons peut-être que quelques millions, ce qui est beaucoup plus facile à gérer.
+À la place, nous créons la table **Sales Agg** en tant que table d’agrégation. Comme elle se trouve à un niveau de granularité plus élevé que **Sales**, elle contiendra beaucoup moins de lignes. Le nombre de lignes doit être égal à la somme des **SalesAmount** regroupés par **CustomerKey**, **DateKey** et **ProductSubcategoryKey**. Au lieu d’avoir plusieurs milliards de lignes, nous n’en aurons peut-être que quelques millions, ce qui est beaucoup plus facile à gérer.
 
-Supposez que les tables de dimension suivantes sont les plus couramment utilisées pour les requêtes à forte valeur métier. Il s’agit des tables qui peuvent filtrer **Sales Agg** à l’aide de relations *un-à-plusieurs* (ou *plusieurs-à-un*). Les autres types de relations tels que *plusieurs-à-plusieurs* ou *à sources multiples* ne sont pas pris en compte pour les agrégations.
+Supposez que les tables de dimension suivantes sont les plus couramment utilisées pour les requêtes à forte valeur métier. Il s’agit des tables qui peuvent filtrer **Sales Agg** à l’aide de relations *un-à-plusieurs* (ou *plusieurs-à-un*).
 
-* Geography
+* Géographie
 * Client
 * Date
 * Sous-catégorie de produit
@@ -77,7 +77,7 @@ Poursuivons avec notre exemple. Nous affectons **Importer** comme mode de stocka
 
 ![définition du mode de stockage](media/desktop-aggregations/aggregations_04.jpg)
 
-La boîte de dialogue suivante s’affiche et nous signale que les tables de dimension connexes seront définies sur le mode de stockage **Double**. 
+La boîte de dialogue suivante s’affiche alors. Elle nous signale que les tables de dimension associées peuvent être définies sur le mode de stockage **Double**. 
 
 ![boîte de dialogue de mode de stockage](media/desktop-aggregations/aggregations_05.jpg)
 
@@ -88,7 +88,23 @@ La définition du mode **Double** permet aux tables de dimension connexes d’ag
 
 Pour plus d’informations sur le mode de stockage **Double**, consultez l’article [Mode de stockage](desktop-storage-mode.md).
 
-> Remarque : La table **Sales Agg** est masquée. Les tables d’agrégation doivent être masquées aux yeux des consommateurs du jeu de données. Les consommateurs et les requêtes font référence à la table de détail, et non à la table d’agrégation. Ils n’ont même pas besoin de savoir que la table d’agrégation existe.
+### <a name="strong-vs-weak-relationships"></a>Relations fortes et relations faibles
+Les correspondances d’agrégation qui s’appuient sur des relations impliquent des relations fortes.
+
+Les relations fortes correspondent aux combinaisons suivantes, où les deux tables proviennent d’une *source unique*.
+
+| Table côté *plusieurs | Table côté *1* |
+| ------------- |----------------------| 
+| Double          | Double                 | 
+| Importer        | Importer ou Double       | 
+| DirectQuery   | DirectQuery ou Double  | 
+
+Le seul cas où une relation *inter-sources* est considérée comme forte est celui où les deux tables sont de type Import. Les relations plusieurs-à-plusieurs sont toujours considérées comme faibles.
+
+Pour les correspondances d’agrégation *inter-sources* qui ne dépendent pas de relations, voir la section ci-dessous sur les agrégations en fonction des colonnes Grouper par.
+
+### <a name="aggregation-table-is-hidden"></a>La table d’agrégation est masquée
+La table **Sales Agg** est masquée. Les tables d’agrégation doivent toujours être masquées aux yeux des consommateurs du jeu de données. Les consommateurs et les requêtes font référence à la table de détail, et non à la table d’agrégation. Ils n’ont même pas besoin de savoir que la table d’agrégation existe.
 
 ### <a name="manage-aggregations-dialog"></a>Boîte de dialogue Gérer les agrégations
 Maintenant, nous allons définir les agrégations. Sélectionnez le menu contextuel **Gérer les agrégations** pour la table **Sales Agg** en cliquant avec le bouton droit sur la table.
@@ -155,29 +171,29 @@ La requête suivante atteint l’agrégation, car les colonnes de la table *Date
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_02.jpg)
 
-La requête suivante n’atteindra pas l’agrégation. Bien qu’elle demande la somme de **SalesAmount**, elle exécute une opération Grouper par sur une colonne de la table **Product**, qui ne se trouve pas au niveau de granularité pouvant atteindre l’agrégation. Si vous observez les relations dans le modèle, une sous-catégorie de produits peut avoir plusieurs lignes **Product** ; la requête ne serait pas en mesure de déterminer le produit à agréger. Dans ce cas, la requête rebascule vers DirectQuery et soumet une requête SQL à la source de données.
+La requête suivante n’atteint pas l’agrégation. Bien qu’elle demande la somme de **SalesAmount**, elle exécute une opération Grouper par sur une colonne de la table **Product**, dont le niveau de granularité ne permet pas d’atteindre l’agrégation. Observons les relations présentes dans le modèle : une sous-catégorie de produits peut avoir plusieurs lignes **Product** ; la requête ne pourrait pas déterminer quel produit agréger. Dans ce cas, la requête rebascule vers DirectQuery et soumet une requête SQL à la source de données.
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_03.jpg)
 
-Les agrégations ne sont pas uniquement destinées aux calculs simples qui effectuent une simple addition. Les calculs complexes peuvent également en tirer parti. Conceptuellement, un calcul complexe est divisé en sous-requêtes pour chaque SUM, MIN, MAX et COUNT, et chaque sous-requête est évaluée afin de déterminer si l’agrégation peut être atteinte. Cette logique n’est pas valable dans tous les cas en raison de l’optimisation du plan de requête, mais en général elle doit s’appliquer. L’exemple suivant atteindra l’agrégation :
+Les agrégations ne sont pas uniquement destinées à des calculs simples qui effectuent une simple addition. Les calculs complexes peuvent également en tirer parti. Conceptuellement, un calcul complexe est divisé en sous-requêtes pour chaque SUM, MIN, MAX et COUNT, et chaque sous-requête est évaluée afin de déterminer si l’agrégation peut être atteinte. Si cette logique n’est pas valable dans tous les cas en raison de l’optimisation du plan de requête, elle doit d’une manière générale s’appliquer. L’exemple suivant atteint l’agrégation :
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_04.jpg)
 
-La fonction COUNTROWS peut tirer parti des agrégations. La requête suivante atteindra l’agrégation, car il y a une agrégation **Count** des lignes de la table définie pour la table **Sales**.
+La fonction COUNTROWS peut tirer parti des agrégations. La requête suivante atteint l’agrégation, car il y a une agrégation **Count** des lignes de la table définie pour la table **Sales**.
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_05.jpg)
 
-La fonction AVERAGE peut tirer parti des agrégations. La requête suivante atteindra l’agrégation, car en interne AVERAGE équivaut à une SUM divisée par un COUNT. Étant donné que la colonne **UnitPrice** a des agrégations définies pour SUM et COUNT, l’agrégation est atteinte.
+La fonction AVERAGE peut tirer parti des agrégations. La requête suivante atteint l’agrégation, car AVERAGE équivaut en interne à une SUM divisée par un COUNT. Étant donné que la colonne **UnitPrice** a des agrégations définies pour SUM et COUNT, l’agrégation est atteinte.
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_06.jpg)
 
-Dans certains cas, la fonction DISTINCTCOUNT peut tirer parti des agrégations. La requête suivante atteindra l’agrégation, car il existe une entrée GroupBy pour **CustomerKey**, qui préserve le caractère distinct de **CustomerKey** dans la table d’agrégation. Cette technique est toujours soumise au seuil de performances, où une quantité de valeurs distinctes comprise entre deux et cinq millions peut affecter les performances des requêtes. Toutefois, elle peut être utile dans les scénarios où il existe des milliards de lignes dans la table de détail et de deux à cinq millions de valeurs distinctes dans la colonne. Dans ce cas, il peut être plus rapide de compter les valeurs distinctes que d’analyser la table contenant des milliards de lignes, même si elles sont mises en cache en mémoire.
+Dans certains cas, la fonction DISTINCTCOUNT peut tirer parti des agrégations. La requête suivante atteint l’agrégation, car il existe une entrée GroupBy pour **CustomerKey**, qui préserve le caractère distinct de **CustomerKey** dans la table d’agrégation. Cette technique est toujours soumise au seuil de performances, où une quantité de valeurs distinctes comprise entre deux et cinq millions peut affecter les performances des requêtes. Toutefois, elle peut être utile dans les scénarios où il existe des milliards de lignes dans la table de détail et de deux à cinq millions de valeurs distinctes dans la colonne. Dans ce cas, il peut être plus rapide de compter les valeurs distinctes que d’analyser la table contenant des milliards de lignes, même si elles sont mises en cache en mémoire.
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_07.jpg)
 
 ## <a name="aggregations-based-on-group-by-columns"></a>Agrégations basées sur des colonnes Grouper par 
 
-Les modèles de Big Data basés sur Hadoop ont des caractéristiques différentes des modèles dimensionnels. Pour éviter les jointures entre les tables de grande taille, ils évitent souvent de reposer sur les relations. Au lieu de cela, les attributs de dimension sont souvent dénormalisés en tables de faits. Ces modèles de Big Data peuvent être déverrouillés pour effectuer une analyse interactive à l’aide d’**agrégations** basées sur des colonnes Grouper par.
+Les modèles de Big Data basés sur Hadoop ont des caractéristiques différentes des modèles dimensionnels. Pour éviter les jointures entre de grandes tables, ils évitent souvent de reposer sur des relations. Au lieu de cela, les attributs de dimension sont souvent dénormalisés en tables de faits. Ces modèles de Big Data peuvent être déverrouillés pour effectuer une analyse interactive à l’aide d’**agrégations** basées sur des colonnes Grouper par.
 
 Le tableau suivant contient la colonne numérique **Movement** à agréger. Toutes les autres colonnes sont des attributs par lesquels effectuer un regroupement. Cette table contient des données IoT et une quantité immense de lignes. Le mode de stockage est DirectQuery. Les requêtes sur la source de données agrégées sur l’ensemble du jeu de données sont lentes en raison du volume élevé.
 
@@ -201,7 +217,7 @@ Dans cet exemple, les entrées **GroupBy** **ne sont pas facultatives** ; sans 
 
 ### <a name="query-examples"></a>Exemples de requêtes
 
-La requête suivante atteindra l’agrégation, car la colonne **Activity Date** est couverte par la table d’agrégation. L’agrégation Compter les lignes de la table est utilisée par la fonction COUNTROWS.
+La requête suivante atteint l’agrégation, car la colonne **Activity Date** est couverte par la table d’agrégation. L’agrégation Compter les lignes de la table est utilisée par la fonction COUNTROWS.
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_08.jpg)
 
@@ -253,7 +269,7 @@ La requête suivante atteint l’agrégation car CalendarMonth est couvert par l
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_09.jpg)
 
-La requête suivante n’atteindra pas l’agrégation, car CalendarDay n’est pas couvert par la table d’agrégation.
+La requête suivante n’atteint pas l’agrégation, car CalendarDay n’est pas couvert par la table d’agrégation.
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_10.jpg)
 
@@ -263,7 +279,7 @@ La requête Time Intelligence suivante n’atteindra pas l’agrégation, car la
 
 ## <a name="caches-should-be-kept-in-sync"></a>Les caches doivent toujours être synchronisés.
 
-Les **agrégations** qui combinent les modes de stockage DirectQuery et Importer et/ou Double peuvent retourner des données différentes si le cache en mémoire n’est pas synchronisé avec la source de données. L’exécution de la requête ne tentera pas de masquer des problèmes de données, par exemple, en filtrant les résultats DirectQuery pour qu’ils correspondent aux valeurs mises en cache. Ces fonctionnalités sont des optimisations de performances. Elles doivent être utilisées uniquement d’une manière qui ne compromet pas votre capacité à répondre aux besoins de l’entreprise. Il vous incombe de connaître vos flux de données et de réaliser la conception en conséquence. Il existe des techniques établies pour gérer ces problèmes à la source, si nécessaire.
+Les **agrégations** qui combinent les modes de stockage DirectQuery et Importer et/ou Double peuvent retourner des données différentes si le cache en mémoire n’est pas synchronisé avec la source de données. L’exécution de la requête ne tente pas de masquer les problèmes de données, par exemple, en filtrant les résultats DirectQuery pour qu’ils correspondent aux valeurs mises en cache. Ces fonctionnalités sont des optimisations de performances. Elles doivent être utilisées uniquement d’une manière qui ne compromet pas votre capacité à répondre aux besoins de l’entreprise. Il vous incombe de connaître vos flux de données et de réaliser la conception en conséquence. Il existe des techniques établies pour gérer ces problèmes à la source, si nécessaire.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -277,4 +293,3 @@ Articles DirectQuery :
 
 * [Utilisation de DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery dans Power BI](desktop-directquery-data-sources.md)
-

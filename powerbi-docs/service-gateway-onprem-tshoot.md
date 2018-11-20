@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2a4fb3bdf4e1041ceb90cde9b6c5f26fcb9a3871
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 795f97403ea80caad52e57e54edc3d54a4c5d952
+ms.sourcegitcommit: 3b1a1f55465e5dca88783046c6b4c073e4e22e4b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101643"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51580537"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
 
@@ -103,17 +103,14 @@ Pour corriger cela, effectuez les étapes suivantes.
 3. Réinstallez la passerelle.
 4. Vous pouvez éventuellement appliquer la clé de récupération pour restaurer une passerelle existante.
 
-### <a name="support-for-tls-1112"></a>Prise en charge de TLS 1.1/1.2
+## <a name="support-for-tls-12"></a>Prise en charge de TLS 1.2
 
-À partir de la mise à jour d’août 2017, la passerelle de données locale utilise, par défaut, le protocole TLS 1.1 ou 1.2 pour communiquer avec le **service Power BI**. Les versions précédentes de la passerelle de données locale utilisent le protocole TLS 1.0 par défaut. Vous devez mettre à niveau vos installations de passerelles de données locales vers la version d’août 2017 ou une version ultérieure, pour que vos passerelles continuent à fonctionner.
+Par défaut, la passerelle de données locale utilise le protocole TLS (Transport Layer Security) 1.2 pour communiquer avec le service Power BI. Pour que tout le trafic de passerelle utilise bien le protocole TLS 1.2, il vous faudra peut-être ajouter ou modifier les clés de Registre suivantes sur l’ordinateur exécutant le service de passerelle :
 
->[!NOTE]
->La prise en charge de TLS 1.0 a pris fin le 1er novembre 2017.
-
-Il est important de noter que TLS 1.0 reste pris en charge par la passerelle de données locale jusqu’au 1er novembre 2017, et qu’il est utilisé par celle-ci en tant que mécanisme de secours. Pour vous assurer que tout le trafic de passerelle utilise les protocoles TLS 1.1 ou 1.2 (et pour empêcher l’utilisation du protocole TLS 1.0 sur votre passerelle), vous devez ajouter ou modifier les clés de Registre suivantes sur l’ordinateur exécutant le service de passerelle :
-
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-        [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
+```
 
 > [!NOTE]
 > L’ajout ou la modification de ces clés de Registre s’appliquent à toutes les applications .NET. Pour plus d’informations sur les modifications du Registre qui affectent le protocole TLS pour d’autres applications, voir [Paramètres de Registre pour le protocole TLS](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
