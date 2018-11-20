@@ -1,21 +1,21 @@
 ---
 title: 'Exemple Rentabilité des clients pour Power BI : visite guidée'
 description: 'Exemple Rentabilité des clients pour Power BI : visite guidée'
-author: amandacofsky
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: fb06b83ca2fe949751337347c91b3947e115286d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a47a63311dd28f2f1f313bc0a5cfcd68cdb0401b
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944718"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717973"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : visite guidée
 
@@ -40,7 +40,7 @@ Comment procéder ? Ce didacticiel utilise le service Power BI et le pack de co
    ![exemples d’icône](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez l’**exemple Rentabilité des clients**, puis choisissez **Se connecter**.  
 
-   ![Obtenir des données](media/sample-customer-profitability/get-supplier-sample.png)
+   ![Obtenir les données](media/sample-customer-profitability/get-supplier-sample.png)
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. Utilisez les exemples pour tester Power BI.  
 
    ![Astérisque](media/sample-customer-profitability/supplier-sample-asterisk.png)

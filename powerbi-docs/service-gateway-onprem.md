@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 9a739efdba84279e938fd8e13d6521cf975d0b9d
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297133"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679015"
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 
@@ -100,7 +100,7 @@ Actuellement, les administrateurs de locataires n’ont aucun endroit où ils pe
 ## <a name="enabling-outbound-azure-connections"></a>Activation des connexions Azure sortantes
 
 La passerelle de données locale s’appuie sur le Azure Service Bus pour la connectivité cloud et établit des connexions sortantes correspondantes avec sa région Azure associée. Par défaut, il s’agit de l’emplacement de votre locataire Power BI. Consultez [Où est situé mon locataire Power BI ?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
-Si un pare-feu bloque les connexions sortantes, vous devez le configurer de façon à autoriser les connexions sortantes de la passerelle de données locale avec la région Azure associée. Pour plus d’informations sur les plages d’adresses IP de chaque centre de données Azure, consultez [Plages d’adresses IP des centres de données Microsoft Azure](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+Si un pare-feu bloque les connexions sortantes, vous devez le configurer de façon à autoriser les connexions sortantes de la passerelle de données locale avec la région Azure associée. Pour plus d’informations sur les plages d’adresses IP de chaque centre de données Azure, consultez [Plages d’adresses IP des centres de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653).
 > [!NOTE]
 > Les plages d’adresses IP peuvent changer au fil du temps, veillez donc à télécharger les informations les plus récentes de façon régulière. 
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e74c8db22a2a1c4ddb188ae13a8ca5df9f862f3
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 432e38ffdcb92ee1d2cf1d62f7f34863d748885b
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507712"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679107"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Rechercher un pack de contenu d’organisation et vous y connecter
 
@@ -38,7 +38,7 @@ Tous les utilisateurs [Power BI Pro](https://powerbi.microsoft.com/pricing) pe
 ## <a name="connect-to-an-organizational-content-pack"></a>Se connecter à un pack de contenu d’organisation
 * Sélectionnez **Obtenir maintenant** pour vous connecter au pack de contenu et l’ajouter à votre espace de travail actif. Les nouveaux tableaux de bord, rapports, classeurs Excel et jeux de données sont indiqués à l’aide d’un astérisque jaune.
 
-Si le pack de contenu a un classeur Excel, il se peut qu’un avertissement s’affiche, indiquant que vous n’êtes pas autorisé à afficher le classeur. Dans ce cas, demandez au propriétaire du pack de contenu de [partager le classeur avec vous sur OneDrive Entreprise](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
+Si le pack de contenu a un classeur Excel, il se peut qu’un avertissement s’affiche, indiquant que vous n’êtes pas autorisé à afficher le classeur. Dans ce cas, demandez au propriétaire du pack de contenu de [partager le classeur avec vous sur OneDrive Entreprise](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
 Le pack de contenu est verrouillé. Vous pouvez [enregistrer votre propre copie du tableau de bord et des rapports](../service-organizational-content-pack-copy-refresh-access.md). 
 

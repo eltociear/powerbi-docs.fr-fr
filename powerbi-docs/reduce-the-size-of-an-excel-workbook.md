@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12ff54b1aa44edaead98b1fab6942acbd76216c7
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5d21dff56620e4b2eb05ed3bbf123ff1d1805075
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329428"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679352"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Réduire la taille d’un classeur Excel pour l’afficher dans Power BI
 Vous pouvez charger n’importe quel classeur Excel dans Power BI à condition que sa taille ne dépasse pas 1 Go. Un classeur Excel peut être constitué de deux parties : un modèle de données et le reste du rapport, c’est-à-dire, le contenu principal des feuilles de calcul. Dans la mesure où le rapport ne dépasse pas les tailles limites suivantes, vous pouvez l’enregistrer sur **OneDrive Entreprise**, vous y connecter à partir de Power BI et l’afficher dans Excel Online :
@@ -28,7 +28,7 @@ Voici quelques éléments qui peuvent entraîner le dépassement de la taille li
 
 * Images.
 * Cellules ombrées. [Supprimez un format d’ombrage de cellule](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
-* Utilisation de couleurs dans les feuilles de calcul. [Supprimez un arrière-plan de feuille](https://support.office.com/en-US/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
+* Utilisation de couleurs dans les feuilles de calcul. [Supprimez un arrière-plan de feuille](https://support.office.com/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
 * Zones de texte.
 * Images clipart.
 
@@ -55,7 +55,7 @@ Si vous devez importer des données dans Excel, suivez ces conseils :
 * **À partir de l’onglet Données Excel**: ne cochez pas **Table** dans la zone **Importer des données** .
 
 ## <a name="workbook-size-optimizer"></a>Optimiseur de taille de classeur
-Si votre classeur contient un modèle de données, vous pouvez exécuter l’optimiseur de taille du classeur pour réduire la taille de celui-ci. [Télécharger l’optimiseur de taille de classeur](https://www.microsoft.com/en-us/download/details.aspx?id=38793).
+Si votre classeur contient un modèle de données, vous pouvez exécuter l’optimiseur de taille du classeur pour réduire la taille de celui-ci. [Télécharger l’optimiseur de taille de classeur](https://www.microsoft.com/download/details.aspx?id=38793).
 
 ## <a name="related-info"></a>Informations connexes
 [Créer un modèle de données économe en mémoire](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)

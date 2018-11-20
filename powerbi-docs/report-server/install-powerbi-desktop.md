@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: c65b945260357b0679f8fdb83c534aac53481126
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 54f49bf28019ba41df7d68e1d5312ee975023859
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564782"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679061"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installer Power BI Desktop optimisé pour Power BI Report Server
 Découvrez comment installer Power BI Desktop optimisé pour Power BI Report Server.
@@ -31,7 +31,7 @@ Le moyen le plus simple d’avoir la version la plus récente de Power BI Deskto
 
     ![Télécharger Power BI Desktop à partir du portail web](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Vous pouvez aussi accéder directement à [Microsoft Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=57271) (optimisé pour Power BI Report Server - août 2018) dans le Centre de téléchargement Microsoft.
+    Vous pouvez aussi accéder directement à [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimisé pour Power BI Report Server - août 2018) dans le Centre de téléchargement Microsoft.
 
 2. Dans la page du Centre de téléchargement, sélectionnez **Télécharger**.
 
@@ -69,7 +69,7 @@ Les rapports Power BI dans Power BI Report Server, dans le service Power BI (htt
 ### <a name="in-a-browser"></a>Dans un navigateur
 Les rapports Power BI Report Server prennent en charge toutes les visualisations, à savoir :
 
-* Visuels personnalisés
+* Éléments visuels personnalisés
 
 Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalités suivantes :
 
@@ -89,7 +89,7 @@ Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalit�
 
 * Visuels R
 * ArcGIS Maps
-* Visuels personnalisés
+* Éléments visuels personnalisés
 * Fil d’Ariane
 * Filtrage basé sur la géolocalisation ou codes barres
 

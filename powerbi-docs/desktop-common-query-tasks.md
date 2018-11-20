@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: bec5bb108bc210f268db0392370e15d89c0352b7
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 33462cbdac69d13d64d396a1dd93a6e1922a9e2c
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39330210"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679370"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
 Quand vous travaillez dans la fenêtre **Éditeur de requête** de Power BI Desktop, vous avez accès à un certain nombre de tâches courantes. Ce document décrit ces tâches courantes et fournit des liens pour plus d’informations. 
 
 Les tâches courantes relatives aux requêtes illustrées ici sont les suivantes :
 
-* Connectez-vous à vos données
+* Se connecter aux données
 * Mettre en forme et combiner des données
 * Regrouper des lignes
 * Créer un tableau croisé dynamique des colonnes
@@ -37,7 +37,7 @@ La première connexion de données est un classeur Excel que vous pouvez téléc
 
 Les étapes nécessaires pour se connecter à ces deux sources de données marquent le début des tâches courantes relatives aux requêtes.
 
-## <a name="connect-to-data"></a>Connectez-vous à vos données
+## <a name="connect-to-data"></a>Se connecter aux données
 Pour vous connecter à des données dans Power BI Desktop, cliquez sur le bouton **Obtenir des données** sous l’onglet **Accueil** du ruban. Power BI Desktop présente un menu qui répertorie les sources de données les plus courantes. Pour obtenir la liste complète des sources de données auxquelles Power BI Desktop peut se connecter, sélectionnez le bouton **Autres...** en bas du menu. Pour plus d’informations, consultez [Sources de données dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-data-sources).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
@@ -146,7 +146,7 @@ Voici un aperçu de l’**Éditeur avancé**, où figurent les étapes associée
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 
-Power BI Desktop fournit un ensemble complet de catégories de formules. Pour en savoir plus et pour obtenir des informations de référence complètes sur toutes les formules disponibles dans l’Éditeur de requête, consultez [Power Query Formula Categories](https://support.office.com/en-in/article/Power-Query-formula-categories-125024ec-873c-47b9-bdfd-b437f8716819) (Catégories de formules Power Query).
+Power BI Desktop fournit un ensemble complet de catégories de formules. Pour en savoir plus et pour obtenir des informations de référence complètes sur toutes les formules disponibles dans l’Éditeur de requête, consultez [Power Query Formula Categories](https://support.office.com/article/Power-Query-formula-categories-125024ec-873c-47b9-bdfd-b437f8716819) (Catégories de formules Power Query).
 
 Les catégories de formules pour l’Éditeur de requête sont les suivantes :
 

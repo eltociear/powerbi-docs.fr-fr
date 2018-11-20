@@ -1,21 +1,21 @@
 ---
 title: 'Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée'
 description: 'Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 86e896caa8cbeaf50c56c4bf126fead8f603c640
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 66a1999637f31083681a6984d4698d78815dc1c1
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945063"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717467"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée
 
@@ -41,7 +41,7 @@ Cet exemple fait partie d’une série d’exemples qui illustre la façon dont 
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez **Exemple Analyse des dépenses informatiques**, puis choisissez **Se connecter**.  
   
-   ![Obtenir des données](media/sample-it-spend/it-connect.png)
+   ![Obtenir les données](media/sample-it-spend/it-connect.png)
    
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. 
    

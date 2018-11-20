@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 28934a525c332344b31de599363fb41126a18cfa
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ccb73b05998eded0c32742deed57b2bee35fbbb6
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548761"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679084"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Partager un tableau de bord Power BI avec des liens vers un fichier Excel dans OneDrive
 Dans Power BI, vous pouvez vous [connecter à des classeurs Excel sur OneDrive Entreprise](service-excel-workbook-files.md) et épingler des vignettes sur un tableau de bord à partir de ce classeur. Quand vous partagez ce tableau de bord, ou créez un pack de contenu qui l’inclut :
 
 * Vos collègues peuvent afficher les vignettes sans avoir besoin d’autorisations pour le classeur lui-même. Ainsi, vous pouvez créer un pack de contenu en sachant que vos collègues peuvent afficher les vignettes créées à partir du classeur Excel sur OneDrive.
-* Le fait de cliquer sur la vignette ouvre le classeur dans Power BI. Le classeur s’ouvre uniquement si vos collègues ont au moins des [autorisations de lecture](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) sur le classeur sur OneDrive Entreprise.
+* Le fait de cliquer sur la vignette ouvre le classeur dans Power BI. Le classeur s’ouvre uniquement si vos collègues ont au moins des [autorisations de lecture](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) sur le classeur sur OneDrive Entreprise.
 
 ## <a name="share-a-dashboard-that-contains-workbook-tiles"></a>Partager un tableau de bord contenant des vignettes de classeur
 Pour partager un tableau de bord lié à un classeur Excel sur OneDrive Entreprise, consultez [Partager un tableau de bord](service-share-dashboards.md). La différence est que vous avez la possibilité de modifier les autorisations du classeur Excel lié avant de le partager.
@@ -30,7 +30,7 @@ Pour partager un tableau de bord lié à un classeur Excel sur OneDrive Entrepri
 
 1. Entrez l’adresse de messagerie de vos collègues.
 2. Pour autoriser vos collègues à afficher le classeur Excel dans Power BI, sélectionnez **Accéder à OneDrive Entreprise pour définir les autorisations du classeur**.
-3. Sur OneDrive, [modifiez les autorisations](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) en fonction des besoins.
+3. Sur OneDrive, [modifiez les autorisations](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) en fonction des besoins.
 4. Sélectionnez **Partager**.
 
 >[!NOTE]
@@ -46,7 +46,7 @@ Quand vous [publiez un pack de contenu](service-organizational-content-pack-crea
    
     ![Classeur Excel dans un pack de contenu](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_contpack_workbk.png)
 3. Sélectionnez **Accéder à OneDrive Entreprise pour définir les autorisations du classeur**.
-4. Sur OneDrive, [modifiez les autorisations](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) en fonction des besoins.
+4. Sur OneDrive, [modifiez les autorisations](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) en fonction des besoins.
 5. Sélectionnez **Publier**.
 
 ## <a name="share-a-dashboard-from-a-power-bi-workspace"></a>Partager un tableau de bord à partir d’un espace de travail Power BI

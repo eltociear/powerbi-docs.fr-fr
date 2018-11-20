@@ -1,21 +1,21 @@
 ---
 title: Visite guidée des exemples disponibles avec Power BI
 description: Exemples de packs de contenu, fichiers PBIX et jeux de données Excel pour Power BI
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 91c08ab428852cc0fa8a721278e232400ed19bfa
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: fa6c6094e4fdfefebd0c7bb1f9ec8fa87d41766b
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546484"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717789"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Quels exemples de données pouvez-vous utiliser avec Power BI ?
 Vous n’avez pas de données sous la main pour essayer Power BI ?  Vous avez un jeu de données, mais vous craignez de l’endommager, car vous ne connaissez pas assez bien le fonctionnement de Power BI ?

@@ -1,21 +1,21 @@
 ---
 title: 'Exemple Analyse de la vente au détail pour Power BI : Visite guidée'
 description: 'Exemple Analyse de la vente au détail pour Power BI : Visite guidée'
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/24/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 6955bc0c41e5a6a145d2101ab527d753f98d5c61
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: c07c33cb6ae859c9cf202ae67119dbfb8dd45e26
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46550072"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717674"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la vente au détail pour Power BI : Visite guidée
 
@@ -39,11 +39,11 @@ Cet exemple de tableau de bord et son rapport sous-jacent permettent d’analyse
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez **Exemple Analyse de la vente au détail**, puis choisissez **Se connecter**.  
   
-   ![Exemple Analyse de la vente au détail](media/sample-retail-analysis/retail16.png)
+   ![Retail Analysis Sample](media/sample-retail-analysis/retail16.png)
    
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. 
    
-   ![Exemple Analyse de la vente au détail](media/sample-retail-analysis/retail17.png)
+   ![Retail Analysis Sample](media/sample-retail-analysis/retail17.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 
