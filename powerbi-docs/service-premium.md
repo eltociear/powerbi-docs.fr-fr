@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 2ca75f191f27bd158b9fab67c7be6902154f8ac1
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 451727d473b59afd362e4f31e8aef634d2168f83
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641226"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717628"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Présentation de Microsoft Power BI Premium
 
@@ -46,7 +46,7 @@ Le tableau suivant résume les différences entre la capacité partagée et la c
 | --- | --- | --- |
 | **Fréquence d’actualisation** |8/jour |48/jour |
 | **Isolement avec matériel dédié** |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible") |
-| **Distribution d’entreprise à** ***tous les utilisateurs*** | | |
+| **Distribution d’entreprise à** _**tous les utilisateurs**_ | | |
 | Applications et partage |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible")<sup>1</sup> |
 | API et commandes incorporées |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible")<sup>2</sup> |
 | **Publier des rapports Power BI localement** |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible") |
@@ -83,6 +83,39 @@ Power BI Premium est disponible dans des configurations de nœuds aux capacités
 * Les v-cores du serveur frontal assurent la gestion des documents du service Web, des tableaux de bord et des rapports, la gestion des droits d’accès, la planification, les API, les chargements et téléchargements et, plus généralement, tout ce qui concerne l’expérience utilisateur.
 
 * Les v-cores principaux gèrent l’essentiel : traitement des requêtes, gestion du cache, exécution des serveurs R, actualisation des données, traitement du langage naturel, flux en temps réel et rendu côté serveur des rapports et images. Avec les v-cores principaux, une partie de la mémoire est également réservée. Car il est impératif de disposer d’une mémoire suffisante pour traiter les modèles de données volumineux ou les grands nombres de jeux de données actifs.
+
+## <a name="workloads-in-premium-capacity"></a>Charges de travail dans une capacité Premium
+
+Considérez une charge de travail dans Power BI comme un des nombreux services que vous pouvez présenter aux utilisateurs. Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** ne prennent en charge que la charge de travail associé à l’exécution de requêtes Power BI dans le cloud.
+
+Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : **les rapports paginés** et **les flux de données**. Vous autorisez ces charges de travail dans le portail d’administration Power BI ou via l’API REST de Power BI. Vous définissez également la mémoire maximale que chaque charge de travail peut consommer pour pouvoir contrôler la façon dont les différentes charges de travail s’affectent mutuellement. Pour plus d’informations, consultez [Configurer des charges de travail](service-admin-premium-manage.md#configure-workloads).
+
+### <a name="default-memory-settings"></a>Paramètres de mémoire par défaut
+
+Les tableaux suivants présentent les valeurs de mémoire par défaut et minimales en fonction des différents [nœuds de capacité](#premium-capacity-nodes) disponibles. La mémoire est allouée dynamiquement aux flux de données, mais elle est allouée statiquement aux rapports paginés. Pour plus d’informations, consultez la section suivante, [Considérations pour les rapports paginés](#considerations-for-paginated-reports).
+
+#### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Références (SKU) Microsoft Office pour les scénarios SaaS (Software as a Service)
+
+|                     | EM3                      | P1                       | P2                      | P3                       |
+|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
+| Rapports paginés | N/A | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
+| Flux de données | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum  |
+| | | | | |
+
+#### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Références (SKU) Microsoft Azure pour les scénarios PaaS (Platform as a Service)
+
+|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
+|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
+| Rapports paginés | N/A                      | N/A                      | N/A                     | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
+| Flux de données         | 27 % par défaut ; 27 % minimum | 20 % par défaut ; 16 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum   |
+
+### <a name="considerations-for-paginated-reports"></a>Considérations pour les rapports paginés
+
+Si vous utilisez la charge de travail des rapports paginés, gardez les points suivants à l’esprit.
+
+* **Allocation de mémoire dans les rapports paginés** : les rapports paginés vous permettent d’exécuter votre propre code lors de la génération d’un rapport (par exemple, pour modifier dynamiquement la couleur du texte en fonction du contenu). De ce fait, nous sécurisons la capacité de Power BI Premium en exécutant des rapports paginés dans un espace contenu au sein de la capacité. Nous affectons la mémoire maximale que vous spécifiez à cet espace, que la charge de travail soit active ou non. Si vous utilisez des rapports Power BI ou des flux de données dans la même capacité, veillez à définir pour les rapports paginés une mémoire suffisamment faible qui n’affecte pas négativement les autres charges de travail.
+
+* **Les rapports paginés ne sont pas disponibles** : dans de rares cas, la charge de travail des rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
 
 ## <a name="power-bi-report-server"></a>Power BI Report Server
 

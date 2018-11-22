@@ -10,24 +10,32 @@ ms.topic: conceptual
 ms.date: 10/18/2018
 ms.author: jocaplan
 LocalizationGroup: Premium
-ms.openlocfilehash: 416f022ee3c413c69650e6f1736cc94edcd58f13
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 0449d7953b5cefb4c76d89f05ec5b3fa70e9c0da
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641249"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679374"
 ---
 # <a name="power-bi-premium-support-for-large-datasets"></a>Prise en charge de jeux de données volumineux dans Power BI Premium
 
-Power BI Premium prend en charge les téléchargements de fichiers Power BI Desktop (.pbix) d’une taille maximale de 10 Go. Une fois chargé, un jeu de données peut être actualisé jusqu'à une taille maximale de 12 Go. Pour utiliser un jeu de données volumineux, vous devez le publier sur un espace de travail affecté à la capacité Premium. Cet article décrit les considérations et les bonnes pratiques quand vous utilisez de grands jeux de données.
+Power BI Premium prend en charge les téléchargements de fichiers Power BI Desktop (.pbix) d’une taille maximale de 10 Go. Une fois chargé, un jeu de données peut être actualisé jusqu'à une taille maximale de 12 Go. Pour utiliser un jeu de données volumineux, vous devez le publier sur un espace de travail affecté à la capacité Premium.
+ 
+## <a name="best-practices"></a>Meilleures pratiques
 
-**Les grands modèles peuvent être très gourmands en ressources** sur votre capacité. Nous recommandons au moins une référence SKU P1 pour tous les modèles supérieurs à 1 Go. Le tableau suivant décrit les références SKU recommandées pour différentes tailles de fichiers .pbix :
+Cette section décrit les recommandations relatives à l’utilisation de jeux de données volumineux.
+
+**Les grands modèles peuvent être très gourmands en ressources** sur votre capacité. Nous recommandons au moins une référence SKU P1 pour tous les modèles supérieurs à 1 Go. Même si la publication de grands modèles dans des espaces de travail soutenus par des références (SKU) A jusqu’à A3 peut fonctionner, il n’en est pas de même pour leur actualisation.
+
+Le tableau suivant décrit les références SKU recommandées pour différentes tailles de fichiers .pbix :
 
    |Référence SKU  |Taille de fichier .pbix   |
    |---------|---------|
    |P1    | < 3 Go        |
    |P2    | < 6 Go        |
-   |P3, P4, P5    | jusqu’à 10 Go |
+   |P3, P4, P5    | jusqu’à 10 Go   |
+
+La référence (SKU) A4 Power BI Embedded est égale à la référence P1, A5 = P2 et A6 = P3. Notez que la publication de grands modèles pour des références SKU A et EM peut retourner des erreurs qui ne sont pas spécifiques à l’erreur de limitation de taille de modèle dans la capacité partagée. Les erreurs d’actualisation pour les grands modèles dans les références SKU A et EM sont susceptibles de pointer vers des expirations de délai. Nous travaillons sur l’amélioration des messages d’erreur pour ces scénarios.
 
 **Vos fichiers .pbix représentent des données dans un état fortement compressé**. Les données seront probablement développées plusieurs fois lors de leur chargement en mémoire, et dès lors peuvent être encore développées plusieurs fois au moment de l’actualisation.
 

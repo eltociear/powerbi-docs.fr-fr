@@ -10,18 +10,22 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/06/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: bb7527a197c9556509ebba721ee49a2d9817b6f5
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 4fc036bf9191d0ed56be11e69152e579cfc5102d
+ms.sourcegitcommit: 883d7e76816f2696e88ae391744ac6c7b1cb59c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266205"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51688393"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Surveiller les capacités de Power BI Premium et Power BI Embedded
 
 Cet article fournit une vue d’ensemble de la surveillance des métriques pour vos capacités de Power BI Premium. Surveillance de l’utilisation de capacité vous permet d’adopter une approche informée de la gestion de vos capacités.
 
-Vous pouvez surveiller la capacité avec l’application Power BI Premium Capacity Metrics, ou dans le portail d’administration. Nous vous recommandons l’application, car elle fournit des informations plus détaillées, bien que cet article traite les deux options. **La version actuelle de l’application est 1.8 (publiée le 7 novembre 2018).**
+Vous pouvez surveiller la capacité avec l’application Power BI Premium Capacity Metrics, ou dans le portail d’administration. Nous vous recommandons l’application, car elle fournit des informations plus détaillées, bien que cet article traite les deux options.
+
+**La version actuelle de l’application est 1.9 (publiée le 14 novembre 2018).**
+
+.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -87,7 +91,7 @@ La zone **Résumé** affiche une vue de vos capacités basée sur les entités, 
 | --- | --- |
 | **Entités** | * Le nombre de capacités que vous possédez<br> * Le nombre distinct de jeux de données dans votre capacité<br> * Le nombre distinct d’espaces de travail dans votre capacité |
 | **Système** | * L’utilisation moyenne de la mémoire en Go au cours des sept derniers jours<br> * La consommation de mémoire la plus élevée au cours des sept derniers jours et l’heure locale où elle a eu lieu<br> * Le nombre de fois où l’UC a dépassé 80 % des seuils au cours des sept derniers jours, divisé en compartiments de trois minutes<br> * La plupart des fois où l’UC a dépassé 80 % au cours des sept derniers jours, divisé en compartiments d’une heure, et l’heure locale où cela a eu lieu<br> * Le nombre de fois où les requêtes directes/les connexions actives ont dépassé 80 % des seuils au cours des sept derniers jours, divisé en compartiments de trois minutes<br> * La plupart des fois où les requêtes directes/les connexions actives ont dépassé 80 % au cours des sept derniers jours, divisé en compartiments d’une heure, et l’heure locale où cela a eu lieu |
-| **Charges de travail de jeux de données** | * Nombre total d’actualisations au cours des sept derniers jours<br> * Nombre total d’actualisations réussies au cours des sept derniers jours<br> * Nombre total d’actualisations ayant échoué au cours des sept derniers jours<br> * Nombre total d’actualisations ayant échoué en raison d’une mémoire insuffisante<br> * La durée moyenne de l’actualisation est le temps nécessaire pour terminer l’opération, en minutes<br> * Le temps d’attente d’actualisation moyen est le délai moyen entre l’heure planifiée et le début de l’opération, en minutes<br> * Nombre total de requêtes exécutées au cours des sept derniers jours<br> * Nombre total de requêtes réussies au cours des sept derniers jours<br> * Nombre total de requêtes ayant échoué au cours des sept derniers jours<br> * La durée moyenne des requêtes est le temps nécessaire pour terminer l’opération, en minutes<br> *Nombre total de modèles exclus en raison d’une sollicitation de la mémoire |
+| **Charges de travail de jeux de données** | * Nombre total d’actualisations au cours des sept derniers jours<br> * Nombre total d’actualisations réussies au cours des sept derniers jours<br> * Nombre total d’actualisations ayant échoué au cours des sept derniers jours<br> * Nombre total d’actualisations ayant échoué en raison d’une mémoire insuffisante<br> * La durée moyenne de l’actualisation est le temps nécessaire pour terminer l’opération, en minutes<br> * Le temps d’attente d’actualisation moyen est le délai moyen entre l’heure planifiée et le début de l’opération, en minutes<br> * Nombre total de requêtes exécutées au cours des sept derniers jours<br> * Nombre total de requêtes réussies au cours des sept derniers jours<br> * Nombre total de requêtes ayant échoué au cours des sept derniers jours<br> * La durée moyenne des requêtes est le temps nécessaire pour terminer l’opération, en minutes<br> *Nombre total de modèles exclus en raison d’une sollicitation de la mémoire<br> * Taille moyenne des jeux de données <br> * Nombre moyen de jeux de données chargés en mémoire |
 |  |  |
 
 #### <a name="refreshes-area"></a>Zone Actualisations
@@ -136,6 +140,8 @@ La zone **Jeux de données** contient les métriques suivantes.
 | --- | --- |
 | **Nombre d’éviction de jeux de données** | * Total : nombre total d’*évictions* de jeux de données pour chaque capacité. Quand une capacité est confrontée à une sollicitation de la mémoire, le nœud supprime un ou plusieurs jeux de données de la mémoire. Les jeux de données qui sont inactifs (ceux pour lesquels aucune opération d’interrogation ou d’actualisation n’est en cours d’exécution) sont supprimés en premier. Ensuite, l’ordre d’éviction est basé sur une mesure dite « dernier récemment utilisé (LRU) ».|
 | **Évictions de jeux de données par heure et consommation de mémoire** | * Évictions de jeux de données et consommation de mémoire en Go, divisées en intervalles d’une heure et exprimé en heure locale |
+| **Nombre de jeux de données chargés par heure** | * Nombre de jeux de données chargés en mémoire et consommation de mémoire en Go, divisé en intervalles d’une heure et exprimé en heure locale |
+| **Tailles de données**  | * Taille maximale : taille maximale du jeu de données, en Mo, pour la période affichée |
 |  |  |
 
 ### <a name="paginated-reports-tab"></a>Onglet Rapports paginés

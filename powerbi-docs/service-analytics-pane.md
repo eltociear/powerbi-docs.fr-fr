@@ -1,5 +1,5 @@
 ---
-title: Volet Analyse du service Power BI
+title: Créer des lignes de référence dynamiques pour des visuels
 description: Créer des lignes de référence dynamiques pour des visuels dans le service Power BI
 author: mihart
 manager: kfile
@@ -7,17 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2017
+ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 37f4663a176e81f2c235111092fcfa5576bfe08a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 04173d98185d7900848e93563b8e981bf3b200e6
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244512"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717697"
 ---
-# <a name="analytics-pane-in-power-bi-service"></a>Volet Analyse du service Power BI
+# <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Créer des lignes de référence dynamiques pour des visuels dans le service Power BI
+
 Avec le volet **Analyse** de **Service Power BI**, vous pouvez ajouter des *lignes de référence* dynamiques aux visualisations et mettre en relief les analyses ou les tendances importantes.
 
 ![](media/service-analytics-pane/power-bi-analytics-pane.png)
@@ -27,8 +28,8 @@ Avec le volet **Analyse** de **Service Power BI**, vous pouvez ajouter des *lign
 > 
 > 
 
-## <a name="using-the-analytics-pane"></a>Utilisation du volet Analyse
-Avec le volet **Analyse**, vous pouvez créer les types de lignes de référence dynamiques (toutes les lignes ne sont pas disponibles pour tous les types d’éléments visuels) suivants :
+## <a name="use-the-analytics-pane"></a>Utilisation du volet Analytique
+Avec le volet **Analytique**, vous pouvez créer les types de lignes de référence dynamiques (toutes les lignes ne sont pas disponibles pour tous les types de visuels) suivants :
 
 * Ligne de constante de l’axe X
 * Ligne de constante de l’axe Y
@@ -39,9 +40,9 @@ Avec le volet **Analyse**, vous pouvez créer les types de lignes de référence
 * Ligne Centile
 
 
-Pour afficher les lignes de référence dynamiques pour un élément visuel, procédez comme suit :
+Pour voir les lignes de référence dynamiques d’un visuel, procédez comme suit :
 
-1. Sélectionnez ou créez un visuel, puis sélectionnez l’icône **Analyse** ![](media/service-analytics-pane/power-bi-analytics-icon.png)dans le volet **Visualisations**.
+1. Sélectionnez ou créez un visuel, puis sélectionnez l’icône **Analytique** ![](media/service-analytics-pane/power-bi-analytics-icon.png)dans le volet **Visualisations**.
 
 2. Sélectionnez la flèche vers le bas pour le type de ligne que vous souhaitez créer afin de développer ses options. Dans ce cas, nous allons sélectionner **Ligne moyenne**.
    

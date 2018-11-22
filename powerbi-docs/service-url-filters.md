@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 11/16/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: d708a4ff07a0d202fcc709f6348e48505d7589d0
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 6a2cfd4926089bce8973070949791e450a47cc4b
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973370"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850588"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -47,7 +47,7 @@ Le type du champ peut être un nombre, une date/heure ou une chaîne, et le type
 
 * Les **chaînes** doivent être placées entre des guillemets simples : 'nom responsable'.
 * Les **nombres** ne nécessitent par de mise en forme spéciale.
-* Les **dates et les heures** doivent être entourées de guillemets simples et précédées du mot **DateTime**.
+* Les **dates et heures** doivent être placées entre des guillemets simples. Dans OData v3, ils doivent être précédés du mot datetime, mais datetime n’est pas nécessaire dans OData v4.
 
 Si cela ne vous semble pas clair, poursuivez votre lecture. Nous allons décomposer la syntaxe.  
 
@@ -97,10 +97,10 @@ Pour filtrer sur des champs supplémentaires, ajoutez un '**and**' et un autre c
 
 Power BI prend en charge de nombreux opérateurs en plus de '**and**'. Le tableau ci-dessous liste ces opérateurs, ainsi que le type de contenu qu’ils prennent en charge.
 
-|Opérateur  | Définition | chaîne  | nombre | Date |  Exemple|
+|Opérateur  | Définition | chaîne  | nombre | Date |  Example|
 |---------|---------|---------|---------|---------|---------|
 |**and**     | and |  oui      | oui |  oui|  product/price le 200 and price gt 3,5 |
-|**eq**     | égal à |  oui      | oui   |  oui       | Address/City eq 'Redmond' |
+|**eq**     | est égal à |  oui      | oui   |  oui       | Address/City eq 'Redmond' |
 |**ne**     | différent de |   oui      | oui  | oui        |  Address/City ne 'London' |
 |**ge**     |  supérieur ou égal à       | non | oui |oui |  product/price ge 10
 |**gt**     | supérieur à        |non | oui | oui  | product/price gt 20
@@ -115,7 +115,7 @@ Power BI prend en charge de nombreux opérateurs en plus de '**and**'. Le tablea
 
 Un filtre d’URL Power BI peut inclure des nombres dans les formats suivants.
 
-|Type de nombre  |Exemple  |
+|Type de nombre  |Example  |
 |---------|---------|
 |**integer**     |   5      |
 |**long**     |   5L ou 5l      |

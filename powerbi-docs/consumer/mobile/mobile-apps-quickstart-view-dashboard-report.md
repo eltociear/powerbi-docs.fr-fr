@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI'
+title: 'Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles'
 description: Dans ce guide de démarrage rapide, vous allez explorer un exemple de tableau de bord et de rapport dans les applications mobiles Power BI.
 author: maggiesMSFT
 manager: kfile
@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: quickstart
-ms.date: 05/08/2018
+ms.date: 11/16/2018
 ms.author: maggies
-ms.openlocfilehash: 89f45409607cbe8da6cb1b167b6e71238d6edde0
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6d5d543c3654da13592b24f4c70bc964eb7bddff
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548807"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157261"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI
 Dans ce guide de démarrage rapide, vous allez explorer des tableaux de bord et des rapports dans les applications mobiles Power BI sur un téléphone Android. Vous pouvez également le suivre sur les autres applications mobiles. 
@@ -54,7 +54,7 @@ La première étape de ce guide de démarrage rapide consiste à télécharger l
 
 3. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
    
-    ![Obtenir des données](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
+    ![Obtenir les données](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-get-data.png)
 
 3. Sur la page Obtenir des données, sélectionnez l’icône **Exemples**.
    
@@ -62,7 +62,7 @@ La première étape de ce guide de démarrage rapide consiste à télécharger l
 
 4. Sélectionnez **l’exemple Retail Analysis** (Analyse de la vente au détail).
  
-    ![Exemple Analyse de la vente au détail](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
+    ![Retail Analysis Sample](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
  
 8. Sélectionnez **Se connecter**.  
   

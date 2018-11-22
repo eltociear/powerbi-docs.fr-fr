@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5089be0cb8bd96573a0d1b3e25c742c1f559253b
-ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
+ms.openlocfilehash: ef20b37d781e266de9e72117d2c57e58f802d4fa
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50736846"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850381"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Inscription à Power BI avec une nouvelle version d’évaluation d’Office 365
 
@@ -27,13 +27,13 @@ Cet article décrit une autre méthode pour vous inscrire à Power BI, en utilis
 
 1. À l’issue du processus d’inscription, un nouveau nom de connexion semblable à you@yourcompany.onmicrosoft.com vous sera attribué. Il s’agit de la connexion que vous utiliserez avec Power BI.
 
-1. Inscrivez-vous à Power BI [à l’aide de ce lien](https://portal.office.com/Start/Confirm?Sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&ru=https%3A%2F%2Fapp.powerbi.com%3FredirectedFromSignup%3D1%26noSignUpCheck%3D1). Si vous y êtes invité, connectez-vous à l’aide du nom de connexion et du mot de passe que vous avez sélectionnés pour Office 365 à l’étape précédente.
+1. Inscrivez-vous à Power BI [à l’aide de ce lien](https://app.powerbi.com/signupredirect?pbi_source=web). Si vous y êtes invité, connectez-vous à l’aide du nom de connexion et du mot de passe que vous avez sélectionnés pour Office 365 à l’étape précédente.
 
 1. C’est tout ! Une fois terminé, vous serez redirigé vers Power BI. Si vous avez des problèmes de connexion avec le nouveau compte, essayez d’utiliser une session de navigation privée.
 
 ## <a name="important-considerations"></a>Considérations importantes
 
-En appliquant cette méthode d’inscription, vous créez un locataire d’organisation et vous devenez l’administrateur du locataire. Pour plus d’informations, consultez [Qu’est-ce que l’administration Power BI ?](service-admin-administering-power-bi-in-your-organization.md). Vous pouvez ajouter de nouveaux utilisateurs à votre locataire, puis partager avec eux, comme décrit dans la [documentation sur l’administration d’Office 365](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
+En appliquant cette méthode d’inscription, vous créez un locataire d’organisation et vous devenez l’administrateur du locataire. Pour plus d’informations, consultez [Présentation de l’administration de Power BI](service-admin-administering-power-bi-in-your-organization.md). Vous pouvez ajouter de nouveaux utilisateurs à votre locataire, puis partager avec eux, comme décrit dans la [documentation sur l’administration d’Office 365](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/24/2018
+ms.date: 11/14/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cc1f348deb222ce080ac41ac2574f4fb1437e8db
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: cdc406ddd9c086114ca118130bb4973737de3ed1
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909012"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717892"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Créer les nouveaux espaces de travail (préversion) dans Power BI
 
@@ -168,7 +168,7 @@ Certaines fonctionnalités des espaces de travail d’application actuels foncti
 
 Les problèmes suivants sont connus et des correctifs sont en cours de développement :
 
-- Les utilisateurs ou les groupes d’utilisateurs gratuits ajoutés comme destinataires des abonnements aux e-mails peuvent ne pas recevoir des e-mails qui devraient leur être envoyés. Le problème se produit quand l’expérience des nouveaux espaces de travail se fait dans une capacité Premium, mais que l’espace Mon espace de travail de l’utilisateur qui crée l’abonnement n’est pas dans une capacité Premium. Si l’espace Mon espace de travail est dans une capacité Premium, les utilisateurs et les groupes d’utilisateurs gratuits reçoivent bien les e-mails.
+- Les utilisateurs ou les groupes d’utilisateurs gratuits ajoutés comme destinataires des abonnements aux e-mails peuvent ne pas recevoir des e-mails qui devraient leur être envoyés. Le problème se produit quand l’un des nouveaux espaces de travail se fait dans une capacité Premium, mais que l’espace Mon espace de travail de l’utilisateur qui crée l’abonnement n’est pas dans une capacité Premium. Si l’espace Mon espace de travail est dans une capacité Premium, les utilisateurs et les groupes d’utilisateurs gratuits reçoivent bien les e-mails.
 - Après le déplacement d’un espace de travail d’une capacité Premium vers une capacité partagée, dans certains cas, les utilisateurs et les groupes d’utilisateurs gratuits continuent de recevoir des e-mails qu’ils ne devraient pas recevoir. Le problème se produit quand l’espace Mon espace de travail de l’utilisateur qui crée l’abonnement est dans une capacité Premium.
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9fed01feb86530dbee10e446d41799a3e2ccd9e3
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: 38a735a6cc258f3285787202b832ade9c6525994
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271506"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678969"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Partager un rapport Power BI filtré avec des collègues
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI propose également [d’autres façons de collaborer et de distribuer des rapports](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -49,7 +49,7 @@ Est-il possible de partager une version filtrée d’un rapport ? Par exemple u
    
    app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-xxxxxxxxxxxx/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
 
-3. [Partagez le rapport](service-share-dashboards.md), mais décochez la case **Envoyer une notification par courrier électronique aux destinataires**. 
+3. [Partagez le rapport](service-share-dashboards.md), mais décochez la case **Envoyer un e-mail de notification aux destinataires**. 
 
     ![Boîte de dialogue Partager le rapport](media/service-share-reports/power-bi-share-report-dialog.png)
 

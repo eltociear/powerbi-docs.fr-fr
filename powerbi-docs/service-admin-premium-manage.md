@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/20/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 39429d0f09431da3f860bf0454843c65ce07a524
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 3ef719f85690297cd523a6fefb7f0ba5f77c9199
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265998"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717605"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gérer les capacités dans Power BI Premium et Power BI Embedded
 
@@ -56,13 +56,9 @@ Le plus souvent, les utilisateurs n’ont pas besoin de savoir qu’ils se trouv
 
 ## <a name="configure-workloads"></a>Configurer des charges de travail
 
-Considérez une charge de travail dans Power BI comme un des nombreux services que vous pouvez présenter aux utilisateurs. Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** ne prennent en charge que la charge de travail associé à l’exécution de requêtes Power BI dans le cloud.
+Par défaut, les capacités pour Power BI Premium et Power BI Embedded ne prennent en charge que la charge de travail associée à l’exécution de requêtes Power BI dans le cloud. Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : **les rapports paginés** et **les flux de données**. Pour plus d’informations, consultez [Charges de travail dans la capacité Premium](service-premium.md#workloads-in-premium-capacity).
 
-Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : **les rapports paginés** et **les flux de données**. Vous autorisez ces charges de travail dans le portail d’administration Power BI ou via l’API REST de Power BI. Vous définissez également la mémoire maximale que chaque charge de travail peut consommer pour pouvoir contrôler la façon dont les différentes charges de travail s’affectent mutuellement.
-
-### <a name="enable-workloads-in-the-power-bi-admin-portal"></a>Activer des charge de travail dans le portail d’administration Power BI
-
-Pour activer des charges de travail, procédez comme indiqué ci-dessous.
+Pour activer des charges de travail dans le portail d’administration Power BI, effectuez les étapes suivantes.
 
 1. Sous **Paramètres de capacité**, sélectionnez une capacité.
 
@@ -73,24 +69,6 @@ Pour activer des charges de travail, procédez comme indiqué ci-dessous.
     ![Configurer des charges de travail dans le portail d’administration](media/service-admin-premium-manage/admin-portal-workloads.png)
 
 1. Sélectionnez **Appliquer**.
-
-### <a name="default-memory-settings"></a>Paramètres de mémoire par défaut
-
-Le tableau suivant présente les valeurs de mémoire par défaut et minimales en fonction des différents [nœuds de capacité](service-premium.md#premium-capacity-nodes) disponibles. La mémoire est allouée dynamiquement aux flux de données, mais elle est allouée statiquement aux rapports paginés. Pour plus d’informations, consultez la section suivante, [Considérations pour les rapports paginés](#considerations-for-paginated-reports).
-
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Rapports paginés | N/A | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| Flux de données | 15 % par défaut ; 8 % minimum  | 15 % par défaut ; 4 % minimum  | 15 % par défaut ; 2 % minimum | 15 % par défaut ; 1 % minimum  |
-| | | | | |
-
-### <a name="considerations-for-paginated-reports"></a>Considérations pour les rapports paginés
-
-Si vous utilisez la charge de travail des rapports paginés, gardez les points suivants à l’esprit.
-
-* **Allocation de mémoire dans les rapports paginés** : les rapports paginés vous permettent d’exécuter votre propre code lors de la génération d’un rapport (par exemple, pour modifier dynamiquement la couleur du texte en fonction du contenu). De ce fait, nous sécurisons la capacité de Power BI Premium en exécutant des rapports paginés dans un espace contenu au sein de la capacité. Nous affectons la mémoire maximale que vous spécifiez à cet espace, que la charge de travail soit active ou non. Si vous utilisez des rapports Power BI ou des flux de données dans la même capacité, veillez à définir pour les rapports paginés une mémoire suffisamment faible qui n’affecte pas négativement les autres charges de travail.
-
-* **Les rapports paginés ne sont pas disponibles** : dans de rares cas, la charge de travail des rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
 
 ## <a name="monitor-capacity-usage"></a>Surveiller l’utilisation de la capacité
 
