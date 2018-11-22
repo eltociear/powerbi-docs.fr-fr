@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/21/2018
+ms.date: 11/20/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 1041dcf8c345bfdf8d5a6ae9823d4cecd5c323a6
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 91e1880e1a879ee98d65d6ad91b26e534e807040
+ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641665"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268294"
 ---
 # <a name="multi-geo-support-for-power-bi-premium-preview"></a>Prise en charge de zones géographiques multiples dans Power BI Premium (préversion)
 
 La fonctionnalité de zones géographiques multiples de Power BI Premium permet à des clients multinationaux de répondre à des exigences de résidence des données régionales, spécifiques à certains secteurs ou en fonction de l’organisation. En tant que client Power BI Premium vous pouvez déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI. Une zone géographique (géographie) peut contenir plusieurs régions. Par exemple, les États-Unis sont une zone géographique, et les USA Centre-Ouest et les USA Centre Sud sont des régions des États-Unis. Vous pouvez choisir de déployer du contenu vers l’une des zones géographiques suivantes :
 
-- États-Unis
+- United States
 - Canada
 - United Kingdom
 - Brazil
@@ -81,7 +81,7 @@ Si vous devez modifier la région pour du contenu existant, vous avez deux optio
 - Créer une deuxième capacité et déplacer des espaces de travail. Les utilisateurs gratuits ne rencontrent aucun temps d’arrêt tant que le locataire a des cœurs v-core de rechange.
 - Si la création d’une deuxième capacité n’est pas une option, vous pouvez déplacer à nouveau temporairement le contenu vers une capacité partagée à partir de Premium. Vous n’avez pas besoin de cœurs v-core supplémentaires, mais les utilisateurs gratuits seront parfois confrontés à un temps d’arrêt.
 
-## <a name="move-content-out-of-multi-geo"></a>Déplacer du contenu en dehors de Multi-Géo  
+## <a name="move-content-out-of-multi-geo"></a>Déplacer du contenu en dehors de zones géographiques multiples  
 
 Vous pouvez prendre des espaces de travail en dehors de la capacité Multi-Géo de deux manières :
 
@@ -94,6 +94,7 @@ Vous pouvez prendre des espaces de travail en dehors de la capacité Multi-Géo 
 - Une requête de mise en cache stockée dans une région distante reste dans cette région au repos. Toutefois, les autres données en transit peuvent aller et venir entre des zones géographiques multiples.
 - Lors du déplacement de données d’une région à une autre dans un environnement de zones géographiques multiples, les données source peuvent rester dans la région à partir de laquelle les données ont été déplacées pendant 30 jours maximum. Pendant ce temps, les utilisateurs finaux n’y ont pas accès. Elles sont supprimées de cette région et détruites pendant la période de 30 jours.
 - Les zones géographiques multiples ne sont généralement pas à l’origine de performances meilleures. Le chargement de rapports et de tableaux de bord implique toujours des requêtes à la région d’origine pour les métadonnées.
+- La fonctionnalité des [dataflows](service-dataflows-overview.md) (en préversion) n’est pas prise en charge dans plusieurs zones géographiques pour l’instant.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
