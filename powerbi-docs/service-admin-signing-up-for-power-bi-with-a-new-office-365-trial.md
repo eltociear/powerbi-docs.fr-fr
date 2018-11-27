@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: ef20b37d781e266de9e72117d2c57e58f802d4fa
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 26fa709eee00607911b2bee2e8bf3f5f1cba732f
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850381"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289102"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Inscription à Power BI avec une nouvelle version d’évaluation d’Office 365
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Cet article décrit une autre méthode pour vous inscrire à Power BI, en utilisant une version d’évaluation d’Office 365. Si vous rencontrez des problèmes d’inscription à Power BI avec votre adresse e-mail professionnelle, vérifiez d’abord qu’il s’agit d’une [adresse e-mail qui peut être utilisée avec Power BI](service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi). Si cela ne fonctionne pas, essayez d’abord de vous inscrire à une version d’évaluation d’Office 365, puis de vous inscrire à Power BI. Vous pourrez utiliser Power BI même après l’expiration de la version d’évaluation d’Office 365.
+Cet article décrit une autre méthode pour vous inscrire à Power BI, en utilisant une version d’évaluation d’Office 365. Si vous rencontrez des problèmes d’inscription à Power BI avec votre adresse e-mail professionnelle, vérifiez d’abord qu’il s’agit d’une [adresse e-mail qui peut être utilisée avec Power BI](service-self-service-signup-for-power-bi.md#supported-email-addresses). Si cela ne fonctionne pas, essayez d’abord de vous inscrire à une version d’évaluation d’Office 365, puis de vous inscrire à Power BI. Vous pourrez utiliser Power BI même après l’expiration de la version d’évaluation d’Office 365.
 
 1. Inscrivez-vous pour une version d’évaluation d’Office 365 [sur le site web Office 365](https://go.microsoft.com/fwlink/p/?LinkID=403802).
 
