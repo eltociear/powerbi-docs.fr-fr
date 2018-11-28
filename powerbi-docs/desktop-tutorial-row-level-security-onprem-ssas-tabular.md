@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c49750ef51c1b8bacc36946d2d5c75a08abb36d7
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: c2d4dc5d8c11db035cc2470c0c44d64a6b78cd1a
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101574"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452749"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services
 Ce didacticiel présente les étapes nécessaires à l’implémentation de la **sécurité au niveau des lignes** dans votre **modèle tabulaire Analysis Services**. Par ailleurs, il montre comment l’utiliser dans un rapport Power BI. Les étapes de ce didacticiel sont conçues pour vous aider à suivre facilement son déroulement et à apprendre les étapes nécessaires en se basant sur un exemple de jeu de données.
@@ -50,7 +50,7 @@ De nombreux articles publiés décrivent comment définir la sécurité dynamiqu
    Nous reviendrons à ces utilisateurs lors des prochaines tâches.
 4. Ensuite, nous faisons une *jointure interne* avec la table **DimSalesTerritory**, qui affiche les détails de région associés à l’utilisateur. Le code suivant exécute la *jointure interne* et l’image ci-dessous montre comment la table s’affiche une fois la *jointure interne* correctement effectuée.
    
-       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryID]
+       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_join_users.png)
 5. Notez que l’image ci-dessus présente des informations telles que l’utilisateur responsable de la région de ventes. Ces données sont affichées en raison de la relation que nous avons créée à l’**étape 2**. Notez également que l’utilisateur **Jon Doe fait partie de la région de ventes Australie**. Nous reviendrons à John Doe lors des tâches et étapes à venir.

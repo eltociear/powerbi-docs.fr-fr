@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/08/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ba27b42d6449d38fef2659507f035144c67f23fd
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 7982c2b29d5d92a992a115c92cbc7f0d128cb9d6
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223211"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452588"
 ---
 # <a name="tutorial-set-data-alerts-in-power-bi-service"></a>Tutoriel : Définir des alertes de données dans le service Power BI
 Définissez des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà des limites que vous définissez. 
@@ -75,7 +75,7 @@ Ensuite, Power BI envoie une alerte à votre centre de notification et éventue
    ![icône Notification dans le service Power BI](media/end-user-alerts/powerbi-alert-notifications.png)
 3. Ouvrez le centre de notification pour afficher les détails de l’alerte.
    
-    ![lire l’alerte](media/end-user-alerts/powerbi-alert-notfication.png)
+    ![lire l’alerte](media/end-user-alerts/powerbi-alert-notification.png)
    
    > [!NOTE]
    > Les alertes fonctionnent uniquement sur les données actualisées Lorsque les données sont actualisées, Power BI vérifie si une alerte est définie pour celles-ci. Si les données ont atteint un seuil d’alerte, une alerte est déclenchée.

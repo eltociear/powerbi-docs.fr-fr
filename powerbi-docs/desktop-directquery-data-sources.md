@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 97d9fc6bf7a27b9d681d10ae20ab0780622e5ee8
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 098447f4d0c0b1dc9534c91e84827c4cefb8850c
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223395"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452542"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Sources de données prises en charge par DirectQuery dans Power BI
 **Power BI Desktop** et le **service Power BI** possèdent de nombreuses sources de données auxquelles vous pouvez vous connecter pour accéder aux données. Cet article décrit quelles sources de données pour Power BI prennent en charge la méthode de connexion appelée **DirectQuery**. Pour plus d’informations sur DirectQuery, consultez [**DirectQuery dans Power BI**](desktop-directquery-about.md).
@@ -31,8 +31,8 @@ Les sources de données suivantes prennent en charge DirectQuery dans Power BI�
 * IBM Netezza (bêta)
 * Impala (version 2.x)
 * Oracle Database (version 12 et versions ultérieures)
-* SAP Business Warehouse Application Server
-* SAP Business Warehouse Message Server (bêta)
+* Serveur d’applications SAP Business Warehouse
+* Serveur de messages SAP Business Warehouse (bêta)
 * SAP HANA
 * Snowflake
 * Spark (bêta) (version 0.9 et versions ultérieures)
@@ -62,10 +62,10 @@ Le tableau suivant indique si une **passerelle de données locale** est nécessa
 | Amazon Redshift |Non |
 | Impala (version 2.x) |Oui |
 | Snowflake |Oui |
-| Spark (bêta), version 0.9 et versions ultérieures |Pas encore pris en charge dans le **service Power BI** |
+| Spark (bêta), version 0.9 et versions ultérieures |Oui |
 | Azure HDInsight Spark (bêta) |Non |
 | IBM Netezza |Oui |
-| SAP Business Warehouse Application Server |Oui |
+| Serveur d’applications SAP Business Warehouse |Oui |
 | Serveur de messages SAP Business Warehouse |Pas encore pris en charge dans le **service Power BI** |
 | Google BigQuery |Non |
 
