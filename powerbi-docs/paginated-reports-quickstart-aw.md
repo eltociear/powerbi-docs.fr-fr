@@ -9,12 +9,12 @@ ms.component: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: 91cf4e2115b2eaae3178b2fb25e487e0501e3a6d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: b057fd14083cdabff96d9821d1399da07b93556b
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267294"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452821"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI
 
@@ -107,8 +107,8 @@ Voici les conditions préalables pour le chargement de votre rapport paginé dan
 10. Dans la page **Créer une requête**, développez SalesLT, développez Tables, puis sélectionnez ces tables :
 
     - Adresse
-    - Client
-    - Product
+    - Customer
+    - Produit
     - ProductCategory
     - SalesOrderDetail
     - SalesOrderHeader
@@ -166,8 +166,8 @@ Faisons une pause afin d’examiner les résultats de l’assistant.
 5. Le volet de regroupement contient les trois groupes de lignes que vous avez créés dans l’assistant : 
 
     - CompanyName
-    - Sales Order
-    - Product Name
+    - Commande client
+    - Nom du produit
 
     Cette matrice ne comporte aucun groupe de colonnes.
 
