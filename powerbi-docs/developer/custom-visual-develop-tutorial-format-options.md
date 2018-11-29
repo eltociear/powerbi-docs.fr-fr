@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 11/06/2018
-ms.openlocfilehash: a3d36f988847df283576dae6cfe5870b707c6f98
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.date: 11/21/2018
+ms.openlocfilehash: 56de3745d59e4a26dffbb988e9543c294de261e3
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223257"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289171"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Tutoriel : Ajouter des options de mise en forme à un visuel personnalisé Power BI
 
@@ -32,7 +32,7 @@ Dans ce tutoriel, vous allez découvrir comment :
 
     Le message suivant apparaît : *Les options de mise en forme ne sont pas disponibles pour ce visuel*.
 
-    ![Pinceau de mise en forme](media/custom-visual-develop-tutorial/format-paintbrush.png)
+    ![Pinceau de mise en forme](media/custom-visual-develop-tutorial-format-options/format-paintbrush.png)
 
 2. Dans **Visual Studio Code**, ouvrez le fichier *capabilities.json*.
 
@@ -41,7 +41,7 @@ Dans ce tutoriel, vous allez découvrir comment :
     ```json
     "objects": {},
     ```
-    ![Ajouter objects](media/custom-visual-develop-tutorial/add-objects.png)
+    ![Ajouter objects](media/custom-visual-develop-tutorial-format-options/add-objects.png)
 
 4. Enregistrez le fichier **capabilities.json**.
 
@@ -50,13 +50,13 @@ Dans ce tutoriel, vous allez découvrir comment :
     > [!Note]
     > Si vous ne voyez pas de changement dans les options de mise en forme, sélectionnez **Recharger le visuel personnalisé**.
 
-    ![Afficher les options de mise en forme](media/custom-visual-develop-tutorial/view-formatting-options.png)
+    ![Afficher les options de mise en forme](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
 
 6. Définissez l’option **Titre** sur *Désactivé*. Le visuel n’affiche plus le nom de la mesure dans le coin supérieur gauche.
 
-    ![L’option Vignette est désactivée](media/custom-visual-develop-tutorial/tile-option-off.png)
+    ![L’option Vignette est désactivée](media/custom-visual-develop-tutorial-format-options/tile-option-off.png)
 
-    ![Aucune vignette de nom](media/custom-visual-develop-tutorial/no-name-tile.png)
+    ![Aucune vignette de nom](media/custom-visual-develop-tutorial-format-options/no-name-tile.png)
 
 ### <a name="adding-custom-formatting-options"></a>Ajouter des options de mise en forme personnalisées
 
@@ -64,7 +64,7 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
 
 1. Dans PowerShell, arrêtez le visuel personnalisé.
 
-2. Dans Visual Studio Code, dans le fichier **capabilities.json**, insérez le fragment JSON suivant dans l’objet **objects**.
+2. Dans Visual Studio Code, dans le fichier **capabilities.json**, insérez le fragment JSON suivant dans l’objet intitulé **objects**.
 
     ```json
     "circle": {
@@ -89,12 +89,12 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
                  }
              }
          }
-     }
+     },
     ```
 
     Le fragment JSON décrit un groupe nommé circle, qui se compose de deux options nommées circleColor et circleThickness.
 
-   ![Code d’épaisseur du cercle](media/custom-visual-develop-tutorial/circle-thickness-code.png)
+   ![Code d’épaisseur du cercle](media/custom-visual-develop-tutorial-format-options/circle-thickness-code.png)
 
 3. Enregistrez le fichier **capabilities.json**.
 
@@ -112,7 +112,7 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
     }
     ```
 
-    ![Classes de module](media/custom-visual-develop-tutorial/module-classes.png)
+    ![Classes de module](media/custom-visual-develop-tutorial-format-options/module-classes.png)
 
     Ce module définit les deux classes. La classe **CircleSettings** définit deux propriétés dont le nom correspond aux objets définis dans le fichier **capabilities.json** (**circleColor** et **circleThickness**), ainsi que les valeurs par défaut. La classe **VisualSettings** hérite de la classe **DataViewObjectParser**, ajoute une propriété nommée **circle**, qui correspond à l’objet défini dans le fichier *capabilities.json*, et retourne une instance de **CircleSettings**.
 
@@ -127,7 +127,7 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
     ```
     Cette propriété stocke une référence à l’objet **VisualSettings**, qui décrit les paramètres du visuel.
 
-    ![Ajouter une classe Visual](media/custom-visual-develop-tutorial/visual-class-add-on.png)
+    ![Ajouter une classe Visual](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
 
 9. Dans la classe **Visual**, ajoutez la méthode suivante avant la méthode **update**. Cette méthode est utilisée pour remplir les options de mise en forme.
 
@@ -140,7 +140,7 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
     ```
     Cette méthode est utilisée pour remplir les options de mise en forme.
 
-    ![Objet de paramètres Visual](media/custom-visual-develop-tutorial/visual-settings-object.png)
+    ![Objet de paramètres Visual](media/custom-visual-develop-tutorial-format-options/visual-settings-object.png)
 
 10. Dans la méthode **update**, après la déclaration de la variable **radius**, ajoutez le code suivant.
 
@@ -150,7 +150,7 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
     ```
     Ce code récupère les options de mise en forme. Il ajuste les valeurs de la propriété **circleThickness**, en les convertissant en 0 si elles sont négatives, ou en 10 si elles sont supérieures à 10.
 
-    ![Variable radius](media/custom-visual-develop-tutorial/radius.png)
+    ![Variable radius](media/custom-visual-develop-tutorial-format-options/radius.png)
 
 11. Dans **l’élément circle**, remplacez la valeur de **style fill** par l’expression suivante.
 
@@ -158,7 +158,7 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
     this.visualSettings.circle.circleColor
     ```
 
-    ![Remplissage de l’élément circle](media/custom-visual-develop-tutorial/circle-element-fill.png)
+    ![Remplissage de l’élément circle](media/custom-visual-develop-tutorial-format-options/circle-element-fill.png)
 
 12. Dans **l’élément circle**, remplacez la valeur de **style stroke-width** par l’expression suivante.
 
@@ -166,7 +166,7 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
     this.visualSettings.circle.circleThickness
     ```
 
-    ![Largeur de trait du cercle](media/custom-visual-develop-tutorial/circle-stroke-width.png)
+    ![Largeur de trait du cercle](media/custom-visual-develop-tutorial-format-options/circle-stroke-width.png)
 
 13. Enregistrez le fichier visual.ts.
 
@@ -180,7 +180,7 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
 
 16. Dans les options **Mise en forme du visuel**, développez **Cercle**.
 
-    ![Mise en forme du cercle](media/custom-visual-develop-tutorial/circle-format.png)
+    ![Mise en forme du cercle](media/custom-visual-develop-tutorial-format-options/circle-format.png)
 
     Modifiez les options **Couleur** et **Épaisseur**.
 
@@ -198,7 +198,7 @@ Entrez les valeurs des propriétés du projet de visuel personnalisé, mettez à
 
     Dans le volet **Visualisations**, placez le curseur sur l’icône pour révéler le nom d’affichage.
 
-    ![Nom d’affichage du visuel](media/custom-visual-develop-tutorial/display-name-viz.png)
+    ![Nom d’affichage du visuel](media/custom-visual-develop-tutorial-format-options/display-name-viz.png)
 
 4. Dans la propriété **description**, entrez le texte suivant.
 
@@ -216,7 +216,7 @@ Entrez les valeurs des propriétés du projet de visuel personnalisé, mettez à
 
 10. Vérifiez l’icône.
 
-    ![Image du volet Visualisations](media/custom-visual-develop-tutorial/viz-pane-image.png)
+    ![Image du volet Visualisations](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
 11. Dans Visual Studio Code, vérifiez que tous les fichiers sont enregistrés.
 
@@ -226,7 +226,7 @@ Entrez les valeurs des propriétés du projet de visuel personnalisé, mettez à
     pbiviz package
     ```
 
-    ![Dossier dist](media/custom-visual-develop-tutorial/dist-folder.png)
+    ![Dossier dist](media/custom-visual-develop-tutorial-format-options/dist-folder.png)
 
 Le package est maintenant généré dans le dossier **dist** du projet. Le package contient tous les éléments requis pour importer le visuel personnalisé dans le service Power BI ou dans un rapport Power BI Desktop. Vous avez maintenant packagé le visuel personnalisé ; il est prêt à être utilisé.
 
@@ -238,7 +238,7 @@ Vous pouvez maintenant ouvrir le rapport Power BI Desktop et importer le visuel 
 
 2. Dans le volet **_Visualisations_**, sélectionnez les **points de suspension**, puis **Importer à partir d’un fichier**.
 
-    ![Ajouter un visuel personnalisé au bureau](media/custom-visual-develop-tutorial/add-custom-viz-to-desktop.png)
+    ![Ajouter un visuel personnalisé au bureau](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
 3. Dans la **fenêtre Importer**, sélectionnez **Importer**.
 
@@ -250,13 +250,13 @@ Vous pouvez maintenant ouvrir le rapport Power BI Desktop et importer le visuel 
 
 7. Vérifiez que le visuel a été ajouté au volet **_Visualisations_**.
 
-    ![Affichage dans le volet Visualisations de Power BI Desktop](media/custom-visual-develop-tutorial/view-in-desktop-viz-pane.png)
+    ![Affichage dans le volet Visualisations de Power BI Desktop](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 
 8. Placez le curseur sur l’icône **Circle Card** ; l’info-bulle s’affiche.
 
 ## <a name="debugging"></a>Débogage
 
-Pour obtenir des conseils sur le débogage de votre visuel personnalisé, consultez le [guide de débogage](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
+Pour obtenir des conseils sur le débogage de votre élément visuel personnalisé, voir le [guide de débogage](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

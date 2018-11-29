@@ -1,5 +1,5 @@
 ---
-title: Service Power BI - Concepts de base
+title: Fondamentaux pour les concepteurs dans le service Power BI
 description: Espaces de travail du service Power BI, tableaux de bord, rapports, jeux de données et classeurs.
 author: maggiesMSFT
 manager: kfile
@@ -8,25 +8,25 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9b02bdfd2c0025977dbb69eae44f4e976a527a30
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: d18c44724899b243a34821db4d4866863e577b48
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717766"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52332031"
 ---
-# <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – Concepts de base du service Power BI
+# <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Fondamentaux pour les concepteurs dans le service Power BI
 
-Cet article suppose que vous êtes déjà [inscrit au service Power BI](service-self-service-signup-for-power-bi.md) et que vous avez [ajouté des données](service-get-data.md).
+Cet article part du principe que vous êtes déjà [inscrit au service Power BI](service-self-service-signup-for-power-bi.md) et que vous avez [ajouté des données](service-get-data.md). Si vous n’avez pas encore de données, vous pouvez installer un [exemple de pack de contenu Power BI](sample-datasets.md#the-power-bi-samples-as-content-packs).
 
 Quand vous ouvrez le service Power BI, un **_tableau de bord_** s’affiche. Les tableaux de bord sont différents dans le service Power BI et dans Power BI Desktop.
 
-![](media/service-basic-concepts/completenewest.png)
+![Service Power BI dans un navigateur](media/service-basic-concepts/completenewest.png)
 
-Voici les principales fonctionnalités de l’interface utilisateur du service Power BI :
+Voici les principales fonctionnalités de l’interface utilisateur du service Power BI :
 
 1. volet de navigation gauche
 2. canevas (dans ce cas, tableau de bord avec vignettes)
@@ -37,7 +37,7 @@ Voici les principales fonctionnalités de l’interface utilisateur du service P
 7. bouton Accueil de Power BI
 8. Boutons d’icônes étiquetés
 
-Nous étudierons ces éléments ultérieurement, mais passons tout d’abord en revue quelques concepts propres à Power BI.
+Nous étudierons ces fonctionnalités ultérieurement, mais passons tout d’abord en revue quelques concepts propres à Power BI.
 
 Vous pouvez également regarder cette vidéo avant de lire le reste de cet article.  Dans cette vidéo, Will passe en revue les concepts de base et propose une visite guidée du service Power BI.
 
@@ -45,7 +45,7 @@ Vous pouvez également regarder cette vidéo avant de lire le reste de cet artic
 
 
 ## <a name="power-bi-concepts"></a>Concepts Power BI
-Les 4 principaux composants de Power BI sont les **_tableaux de bord_**, les **_rapports_**, les **_classeurs_** et les **_jeux de données_**. Ceux-ci sont tous organisés en **_espaces de travail_**. Il est important de bien comprendre les espaces de travail avant d’étudier les 4 principaux composants. Nous allons donc commencer par là.
+Les 4 principaux composants de Power BI sont les **_tableaux de bord_**, les **_rapports_**, les **_classeurs_** et les **_jeux de données_**. Ceux-ci sont tous organisés en **_espaces de travail_**. Il est important de bien comprendre les espaces de travail avant d’étudier les quatre principaux composants. Nous allons donc commencer par cela.
 
 ## <a name="workspaces"></a>Espaces de travail
 Les espaces de travail sont des conteneurs pour les tableaux de bord, rapports, classeurs et jeux de données dans Power BI. Il existe deux types d’espaces de travail : *Mon espace de travail* et les *espaces de travail d’application*. Qu’est-ce qu’une *application* ? Une *application* Power BI est une collection de tableaux de bord et de rapports destinés à fournir des mesures clés pour votre organisation. Les applications sont interactives, mais ne peuvent pas être modifiées.
@@ -56,7 +56,7 @@ Les espaces de travail sont des conteneurs pour les tableaux de bord, rapports, 
 Pour plus d’informations, consultez la section **Partager votre travail** de la Table des matières, en commençant par [Comment dois-je collaborer et partager des tableaux de bord et rapports](service-how-to-collaborate-distribute-dashboards-reports.md)
 
 
-Étudions maintenant les principaux composants de Power BI. Vous ne pouvez pas avoir de tableaux de bord ni de rapports sans données (vous pouvez avoir des tableaux de bord et des rapports vides, mais ils ne sont pas très utiles tant qu’ils ne contiennent pas de données). Pour commencer, intéressons-nous aux **jeux de données**.
+Étudions maintenant les principaux composants de Power BI. Vous ne pouvez pas avoir de tableaux de bord ni de rapports sans données (vous pouvez avoir des tableaux de bord et des rapports vides, mais ils ne sont pas utiles tant qu’ils ne contiennent pas de données). Pour commencer, intéressons-nous aux **jeux de données**.
 
 ## <a name="datasets"></a>Jeux de données
 Un *jeu de données* est une collection de données que vous *importez* ou auxquelles vous *vous connectez*. Power BI vous permet de vous connecter à toutes sortes de jeux de données regroupés au même endroit et de les importer dans un même emplacement.  
@@ -65,7 +65,7 @@ Les jeux de données associés aux *espaces de travail* et un même jeu de donn�
 
 Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’application « Ventes et marketing » et cliqué sur l’onglet pour **Jeux de données**.
 
-![](media/service-basic-concepts/power-bi-datasets.png)
+![Jeux de données sélectionnés](media/service-basic-concepts/power-bi-datasets.png)
 
 **UN** jeu de données…
 
@@ -73,9 +73,9 @@ Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’appl
 * peut être utilisé dans de nombreux rapports.
 * peut comprendre différentes visualisations, et ces visualisations peuvent être affichées dans de nombreux tableaux de bord différents.
 
-  ![](media/service-basic-concepts/drawing2.png)
+  ![Diagramme du jeu de données](media/service-basic-concepts/drawing2.png)
 
-Pour vous [connecter à un jeu de données ou en importer un](service-get-data.md), sélectionnez **Obtenir des données** (au bas de la barre de navigation gauche) ou sélectionnez **+ Créer un jeux de données** (dans le coin supérieur droit). Suivez les instructions permettant de vous connecter à la source spécifique ou de l’importer et d’ajouter le jeu de données à l’espace de travail actif. Les nouveaux jeux de données sont signalés par un astérisque jaune. Le travail que vous effectuez dans Power BI ne modifie pas le jeu de données sous-jacent.
+Pour vous [connecter à un jeu de données ou en importer un](service-get-data.md), sélectionnez **Obtenir des données** (au bas de la barre de navigation gauche) ou sélectionnez **+ Créer un jeu de données** (en haut à droite). Suivez les instructions permettant de vous connecter à la source spécifique ou de l’importer et d’ajouter le jeu de données à l’espace de travail actif. Les nouveaux jeux de données sont signalés par un astérisque jaune. Le travail que vous effectuez dans Power BI ne modifie pas le jeu de données sous-jacent.
 
 Si vous faites [partie d’un **_espace de travail d’application_**](service-collaborate-power-bi-workspace.md), les jeux de données ajoutés par un membre de cet espace de travail sont accessibles par les autres membres de l’espace de travail.
 
@@ -87,11 +87,11 @@ Les jeux de données peuvent être actualisés, renommés, explorés et supprim�
 * [Exemples de jeux de données pour Power BI](sample-datasets.md)
 
 ## <a name="reports"></a>Rapports
-Un rapport Power BI se compose d’une ou de plusieurs pages de visualisations (graphiques en courbes, en secteurs, de compartimentage, etc.). Les visualisations sont également appelées **_visuels_**. Toutes les visualisations dans un rapport proviennent d’un seul jeu de données. Les rapports peuvent être créés de toutes pièces dans Power BI, peuvent être importés avec les tableaux de bord que des collègues partagent avec vous ou peuvent être créés automatiquement quand vous vous connectez à des jeux de données à partir d’Excel, de Power BI Desktop, de bases de données, d’applications SaaS et d’[applications](service-get-data.md).  Par exemple, quand vous vous connectez à un classeur Excel qui contient des feuilles Power View, Power BI crée un rapport basé sur ces feuilles. Et lorsque vous vous connectez à une application SaaS, Power BI importe un rapport prédéfini.
+Un rapport Power BI se compose d’une ou de plusieurs pages de visualisations (graphiques en courbes, en secteurs, de compartimentage, etc.). Les visualisations sont également appelées **_visuels_**. Toutes les visualisations dans un rapport proviennent d’un seul jeu de données. Les rapports peuvent être créés de toutes pièces dans Power BI, être importés avec les tableaux de bord que des collègues partagent avec vous ou être créés automatiquement quand vous vous connectez à des jeux de données à partir d’Excel, de Power BI Desktop, de bases de données, d’applications SaaS et d’[applications](service-get-data.md).  Par exemple, quand vous vous connectez à un classeur Excel qui contient des feuilles Power View, Power BI crée un rapport basé sur ces feuilles. Et lorsque vous vous connectez à une application SaaS, Power BI importe un rapport prédéfini.
 
-Il existe 2 façons d’afficher les rapports et d’interagir avec eux : le [mode Lecture et le mode Édition](service-reading-view-and-editing-view.md).  Seuls la personne qui a créé le rapport, les copropriétaires et les personnes autorisées ont accès à l’ensemble des fonctions d’exploration, de conception, de génération et de partage du **_mode Edition_** pour ce rapport. Et les personnes avec qui ils partagent le rapport peuvent explorer et interagir avec les rapports en **_mode Lecture_**.   
+Il existe deux façons d’afficher les rapports et d’interagir avec eux : [le mode Lecture et le mode Edition](service-reading-view-and-editing-view.md).  Seuls la personne qui a créé le rapport, les copropriétaires et les personnes autorisées ont accès à l’ensemble des fonctions d’exploration, de conception, de génération et de partage du **_mode Edition_** pour ce rapport. Et les personnes avec qui ils partagent le rapport peuvent explorer et interagir avec les rapports en **_mode Lecture_**.   
 
-Lorsque vous ouvrez un espace de travail, les rapports associés sont répertoriés sous l’onglet **Rapports**. Chaque rapport répertorié représente une ou plusieurs pages de visualisations basées sur un seul des jeux de données sous-jacents. Pour ouvrir un rapport, il vous suffit de le sélectionner.
+Lorsque vous ouvrez un espace de travail, les rapports associés sont répertoriés sous l’onglet **Rapports**. Chaque rapport répertorié représente une ou plusieurs pages de visualisations basées sur un seul des jeux de données sous-jacents. Pour ouvrir un rapport, sélectionnez-le.
 
 Lorsque vous ouvrez une application, vous voyez un tableau de bord.  Pour accéder à un rapport sous-jacent, sélectionnez une vignette de tableau de bord (nous approfondirons ce sujet ultérieurement) qui a été épinglée à partir d’un rapport. Gardez à l’esprit que toutes les vignettes ne sont pas épinglées à partir de rapports. Vous devrez donc peut-être cliquer sur quelques vignettes pour trouver un rapport.
 
@@ -99,7 +99,7 @@ Par défaut, le rapport s’ouvre en mode Lecture.  Sélectionnez **Modifier le 
 
 Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’application « Ventes et marketing » et cliqué sur l’onglet pour **Rapports**.
 
-![](media/service-basic-concepts/power-bi-reports.png)
+![Rapports sélectionnés](media/service-basic-concepts/power-bi-reports.png)
 
 **UN** rapport…
 
@@ -107,7 +107,7 @@ Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’appl
 * peut être associé à plusieurs tableaux de bord au sein de cet espace de travail (les vignettes épinglées à partir de ce rapport peuvent apparaître sur plusieurs tableaux de bord).
 * peut être créé à l'aide des données d'un jeu de données unique (la seule exception à cela est que Power BI Desktop peut combiner plusieurs jeux de données dans un même rapport et que ce rapport peut être importé dans Power BI).
 
-  ![](media/service-basic-concepts/drawing3new.png)
+  ![Diagramme de rapports](media/service-basic-concepts/drawing3new.png)
 
 ### <a name="dig-deeper"></a>Aller plus loin
 * [Rapports dans Power BI Desktop et le service Power BI](service-reports.md)
@@ -124,7 +124,7 @@ Pourquoi créer des tableaux de bord ?  En voici quelques raisons :
 * Pour surveiller la santé d’une entreprise, d’un produit, d’une unité organisationnelle, d’une campagne marketing, etc.
 * Pour créer une vue personnalisée d’un tableau de bord plus large en affichant les métriques qui vous intéressent.
 
-Lorsque vous ouvrez un espace de travail, les tableaux de bord associés sont répertoriés sous l’onglet **Tableaux de bord**. Pour ouvrir un tableau de bord, il vous suffit de le sélectionner. Lorsque vous ouvrez une application, vous voyez un tableau de bord.  Chaque tableau de bord représente une vue personnalisée d’un sous-ensemble des jeux de données sous-jacents.  Si vous êtes propriétaire du tableau de bord, vous avez aussi accès en modification aux jeux de données et rapports sous-jacents.  Si le tableau de bord a été partagé avec vous, vous pouvez interagir avec le tableau de bord et les rapports sous-jacents, mais vous ne pouvez pas enregistrer de modifications.
+Lorsque vous ouvrez un espace de travail, les tableaux de bord associés sont répertoriés sous l’onglet **Tableaux de bord**. Pour ouvrir un tableau de bord, sélectionnez-le. Lorsque vous ouvrez une application, vous voyez un tableau de bord.  Chaque tableau de bord représente une vue personnalisée d’un sous-ensemble des jeux de données sous-jacents.  Si vous êtes propriétaire du tableau de bord, vous avez aussi accès en modification aux jeux de données et rapports sous-jacents.  Si le tableau de bord a été partagé avec vous, vous pouvez interagir avec le tableau de bord et les rapports sous-jacents, mais vous ne pouvez pas enregistrer de modifications.
 
 Il existe différentes manières de [partager un tableau de bord](service-share-dashboards.md). Power BI Pro est nécessaire pour partager un tableau de bord et peut être requis pour afficher un tableau de bord partagé.
 
@@ -138,9 +138,9 @@ Il existe différentes manières de [partager un tableau de bord](service-share-
 * est associé à un seul espace de travail.
 * peut afficher des visualisations à partir de nombreux jeux de données différents ;
 * peut afficher des visualisations à partir de nombreux rapports différents
-* peut afficher des visualisations épinglées à partir d’autres outils (par exemple Excel)
+* peut afficher des visualisations épinglées à partir d’autres outils (par exemple, Excel)
 
-  ![](media/service-basic-concepts/drawing1.png)
+  ![Tableau de bord sélectionné](media/service-basic-concepts/drawing1.png)
 
 ### <a name="dig-deeper"></a>Aller plus loin
 * [Créez un tableau de bord vide, puis obtenez des données](service-dashboard-create.md).
@@ -163,15 +163,15 @@ Vous ne pouvez pas modifier votre classeur dans Power BI. Toutefois, si vous de
 ## <a name="my-workspace"></a>Mon espace de travail
 Nous avons couvert les espaces de travail et les principaux composants. Examinons encore une fois l’interface Power BI et les éléments qui composent la page de destination pour le service Power BI.
 
-![](media/service-basic-concepts/completenewest.png)
+![Service Power BI dans un navigateur](media/service-basic-concepts/completenewest.png)
 
 ### <a name="1-navigation-pane-left-navpane"></a>1. **Volet de navigation** (volet de navigation gauche)
 Utilisez le volet de navigation pour rechercher et parcourir vos espaces de travail et les principaux composants de Power BI : tableaux de bord, rapports, classeurs et jeux de données.  
 
-  ![](media/service-basic-concepts/power-bi-navigation.png)
+  ![Volet de navigation](media/service-basic-concepts/power-bi-navigation.png)
 
 * Sélectionnez **Obtenir des données** pour [ajouter des jeux de données, des rapports et des tableaux de bord à Power BI](service-get-data.md).
-* Développez et réduisez la barre de navigation avec cette icône ![](media/service-basic-concepts/expand-icon.png).
+* Développez et réduisez la barre de navigation avec cette icône ![icône du volet de navigation](media/service-basic-concepts/expand-icon.png).
 * Ouvrez ou gérez votre contenu favori en sélectionnant **Favoris**.
 * Affichez et ouvrez votre contenu le plus récemment visité en sélectionnant **Récents**.
 * Affichez, ouvrez ou supprimez une application en sélectionnant **Applications**.
@@ -181,7 +181,7 @@ Utilisez le volet de navigation pour rechercher et parcourir vos espaces de trav
 Effectuez un clic simple sur
 
 * une icône ou un titre pour l’ouvrir en mode Contenu
-* une flèche vers la droite (>) pour ouvrir un menu contextuel Favoris, Récents et Espaces de travail.
+* une flèche vers la droite (>) pour ouvrir un menu contextuel Favoris, Récents et Espaces de travail.
 * une icône de chevron () pour afficher la liste déroulante **Mon espace de travail** constituée de tableaux de bord, rapports, classeurs et jeux de données.
 * un jeu de données pour l’explorer.
 
@@ -211,24 +211,24 @@ Les icônes figurant dans l’angle supérieur droit sont des ressources vous pe
 ### <a name="5-dashboard-title-navigation-path-aka-breadcrumbs"></a>5. **Titre du tableau de bord** (chemin de navigation, également appelé fil d’Ariane)
 Comme il n’est pas toujours facile de déterminer quels espaces de travail et tableaux de bord sont actifs, Power BI crée un chemin de navigation pour vous.  Dans cet exemple, vous voyez l’espace de travail (Mon espace de travail) et le titre du tableau de bord (Exemple Analyse de la vente au détail).  Si nous avions ouvert un rapport, le nom du rapport serait ajouté à la fin du chemin de navigation.  Chaque section du chemin est un lien hypertexte actif.  
 
-Notez l’icône « C » après le titre du tableau de bord. Ce tableau de bord comporte une [balise de classification de données](service-data-classification.md) nommée « confidentiel ». La balise identifie la sensibilité et le niveau de sécurité des données. Si votre administrateur a activé la classification des données, chaque tableau de bord a une balise par défaut définie. Les propriétaires de tableaux de bord doivent modifier la balise en fonction du niveau de sécurité approprié de leur tableau de bord.
+Notez l’icône « C » après le titre du tableau de bord. Ce tableau de bord comporte une [balise de classification de données](service-data-classification.md) nommée « confidentiel ». La balise identifie la sensibilité et le niveau de sécurité des données. Si votre administrateur a activé la classification des données, chaque tableau de bord a une étiquette par défaut définie. Les propriétaires de tableaux de bord doivent modifier la balise en fonction du niveau de sécurité approprié de leur tableau de bord.
 
-![](media/service-basic-concepts/power-bi-title.png)
+![Icône de classification des données](media/service-basic-concepts/power-bi-title.png)
 
 ### <a name="6-office-365-app-launcher"></a>6. **Lanceur d’applications Office 365**
-Avec le Lanceur d’applications, toutes vos applications Office 365 sont facilement disponibles en un clic. Avec celui-ci, vous pouvez rapidement lancer votre messagerie, des documents, un calendrier et bien plus encore.
+Avec le Lanceur d’applications, toutes vos applications Office 365 sont facilement disponibles en un clic. En effet, il vous permet de démarrer rapidement votre e-mail, vos documents, votre calendrier et bien plus encore.
 
 ![Lanceur d’applications Office](media/service-basic-concepts/power-bi-waffle.png)
 
 ### <a name="7-power-bi-home"></a>7. **Accueil de Power BI**
-Cette sélection a pour effet d’ouvrir votre [tableau de bord par défaut](service-dashboard-featured.md) (si vous en avez défini un). Sinon, elle ouvre le dernier tableau de bord que vous avez consulté.
+Sélectionnez **Power BI** pour revenir à la page d’accueil de Power BI.
 
-   ![](media/service-basic-concepts/version-new.png)
+   ![Power BI dans le service](media/service-basic-concepts/version-new.png)
 
 ### <a name="8-labeled-icon-buttons"></a>8. **Boutons d’icônes étiquetés**
 Cette zone de l’écran contient des options supplémentaires pour interagir avec le contenu (dans ce cas, avec le tableau de bord).  En plus des icônes étiquetées que vos pouvez voir, sélectionner le bouton de sélection (points de suspension) pour afficher les options de duplication, d’impression et d’actualisation du tableau de bord et bien plus encore.
 
-   ![](media/service-basic-concepts/power-bi-labeled-icons.png)
+   ![Boutons d’icônes étiquetés](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Qu’est-ce que Power BI ?](power-bi-overview.md)  

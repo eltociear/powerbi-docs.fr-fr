@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/20/2018
+ms.date: 11/20/2018
 ms.author: maggies
-ms.openlocfilehash: 4a5d124ffd213c54d628ff15e32ece18e56913eb
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157425"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289194"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Vue d’ensemble du programme Pack de contenu du service Power BI
 Un pack de contenu est un ensemble de contenu prêt à l’emploi permettant aux utilisateurs d’obtenir immédiatement des analyses depuis une source. Un pack de contenu se concentre généralement sur un scénario d’entreprise spécifique en fournissant des analyses pour un rôle, un domaine ou un flux de travail.
 
-Les éditeurs de logiciels indépendants peuvent créer des packs de contenu de modèle permettant aux clients de se connecter et d’instancier avec leurs propres comptes. En tant qu’experts de leur domaine, ils peuvent déverrouiller les données d’une façon facilement consommable par les utilisateurs professionnels. Les packs de contenu offrent à vos clients des analyses et la surveillance ad hoc sans avoir à investir lourdement dans une infrastructure de rapports.
+Les éditeurs de logiciels indépendants peuvent créer des packs de contenu de modèle permettant aux clients de se connecter et d’instancier avec leurs propres comptes. En tant qu’experts dans leur domaine, ils peuvent déverrouiller les données pour les rendre facilement consommables par les utilisateurs professionnels. Les packs de contenu offrent à vos clients des analyses et la surveillance ad hoc sans avoir à investir lourdement dans une infrastructure de rapports.
 
 Ces packs de contenu de modèle conçus pour les éditeurs de logiciels indépendants peuvent être envoyés à l’équipe Power BI qui les rendra disponibles publiquement dans la galerie de packs de contenu de Power BI (app.powerbi.com/getdata/services) et sur Microsoft AppSource (appsource.microsoft.com). Vous trouverez un exemple d’expérience de pack de contenu public [ici](template-content-pack-experience.md).
 
@@ -45,10 +45,10 @@ Pour créer et envoyer un pack de contenu pour qu’il soit publié dans le serv
 * Votre application SaaS est approuvée et peut publier un pack de contenu. Envoyez votre demande à pbiservicesapps@microsoft.com. Nous allons examiner chaque envoi en nous basant sur sa pertinence et l’utilisation attendue. 
 * Accord de partenariat signé. Cette opération a lieu à l’[étape de soumission](template-content-pack-testing.md#submission).
 
-Veuillez consulter la section [création](template-content-pack-authoring.md) pour plus d’informations sur les spécifications techniques.
+Consultez la section sur la [création](template-content-pack-authoring.md) pour plus d’informations sur les spécifications techniques.
 
 ## <a name="business-scenario"></a>Scénario professionnel
-Les packs de contenu offrent des analyses et données sur un scénario professionnel spécifique. Comprendre votre public et les avantages qu’ils tireront du pack de contenu vous aidera à vous assurer que les utilisateurs exploitent avec succès le contenu que vous offrez.
+Les packs de contenu offrent des analyses et données sur un scénario professionnel spécifique. En comprenant votre public et les avantages qu’il tire du pack de contenu, vous vous assurez que le contenu que vous fournissez correspond aux besoins des utilisateurs.
 
 ### <a name="tips"></a>Conseils
 * Identifiez votre public et la tâche à accomplir  
@@ -77,8 +77,8 @@ Les packs de contenu publiés peuvent être mis à jour une fois par mois. Les d
 
 N’hésitez pas à nous envoyer vos questions par e-mail à l’adresse [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
-## <a name="support"></a>Support
-Pour bénéficier d’un support lors du développement, veuillez utiliser [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Nous suivons et gérons activement les demandes. Les incidents utilisateur sont rapidement transmis à la bonne équipe.
+## <a name="support"></a>Support technique
+Pour bénéficier d’un support durant le développement, utilisez [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Les incidents utilisateur sont rapidement transmis à la bonne équipe.
 
 ## <a name="next-step"></a>Étape suivante
 [Création](template-content-pack-authoring.md)
