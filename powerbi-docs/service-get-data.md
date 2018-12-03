@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4b61ff56ea1aec64a3e88db46836f948c4190d60
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 2a23a725ecad5641c3f82fa4c57ee1a0bc951e28
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547450"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670375"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Sources de données pour le service Power BI
 Les données sont au cœur de Power BI. Chaque fois que vous explorez des données, créez des graphiques et des tableaux de bord ou posez des questions avec Questions et réponses, toutes les visualisations et les réponses que vous voyez tirent réellement leurs données sous-jacentes d’un jeu de données. Mais d’où provient ce jeu de données ? D’une source de données.
