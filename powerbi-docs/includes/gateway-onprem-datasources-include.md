@@ -20,6 +20,7 @@
 | SAP HANA |Oui |Oui |
 | Liste SharePoint (local) |Non |Oui |
 | Snowflake |Oui |Oui |
+| Spark |Oui |Oui |
 | SQL Server |Oui |Oui |
 | Sybase |Non |Oui |
 | Teradata |Oui |Oui |

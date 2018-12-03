@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: quickstart
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: f7266691573c0d02bafa7120b5d4a28ff0c03076
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 01f36c65c63527256ce11c63f66c3ce4bc0a76c5
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327658"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670805"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Démarrage rapide : Se connecter aux données dans Power BI Desktop
 
@@ -37,27 +37,27 @@ Après avoir installé **Power BI Desktop**, lancez l’application pour l’ex�
 
 ![Power BI Desktop - canevas vierge](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 
-## <a name="connect-to-data"></a>Connectez-vous à vos données
+## <a name="connect-to-data"></a>Se connecter aux données
 
 **Power BI Desktop** vous permet de vous connecter à de nombreux types de données. Vous pouvez vous connecter à des sources de données de base telle qu’un fichier Microsoft Excel, et à des services en ligne hébergeant toutes sortes de données comme Salesforce, Microsoft Dynamics, Stockage Blob Azure, et bien plus encore. 
 
 Pour vous connecter à des données, dans le ruban **Accueil**, sélectionnez **Obtenir les données**.
 
-![Obtenir des données](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
+![Obtenir les données](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
 La fenêtre **Obtenir les données** s’affiche, où vous pouvez choisir parmi les différentes sources de données auxquelles **Power BI Desktop** peut se connecter. Dans ce démarrage rapide, nous utilisons le classeur Excel que vous avez téléchargé, comme décrit dans la section *Conditions préalables* au début de cet article. 
 
-![Obtenir des données](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
+![Obtenir les données](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
 
 Puisqu’il s’agit d’un fichier Excel, sélectionnez **Excel** dans la fenêtre **Obtenir les données**, puis cliquez sur le bouton **Se connecter**.
 
 À l’invite, indiquez l’emplacement du fichier Excel auquel vous souhaitez vous connecter. Le fichier téléchargé s’appelle *Financial Sample*. Sélectionnez ce fichier, puis cliquez sur **Ouvrir**.
 
-![Obtenir des données](media/desktop-quickstart-connect-to-data/qs-connect-data_04.png)
+![Obtenir les données](media/desktop-quickstart-connect-to-data/qs-connect-data_04.png)
 
 **Power BI Desktop** charge alors le classeur et lit son contenu, puis affiche les données disponibles dans le fichier dans la fenêtre **Navigator**, où vous pouvez choisir les données à charger dans Power BI Desktop. Vous sélectionnez les tables en cochant les cases en regard de chaque table à importer. Dans ce cas, nous allons importer les deux tables disponibles.
 
-![Obtenir des données](media/desktop-quickstart-connect-to-data/qs-connect-data_05.png)
+![Obtenir les données](media/desktop-quickstart-connect-to-data/qs-connect-data_05.png)
 
 Après avoir effectué vos sélections, choisissez **Charger** pour importer les données dans Power BI Desktop.
 
@@ -65,7 +65,7 @@ Après avoir effectué vos sélections, choisissez **Charger** pour importer les
 
 Une fois les tables chargées, le volet **Champs** affiche les données. Vous pouvez développer chaque table en cliquant sur le triangle à côté de son nom. Dans l’image suivante, la table *financials* est développée, montrant chacun de ses champs. 
 
-![Obtenir des données](media/desktop-quickstart-connect-to-data/qs-connect-data_06.png)
+![Obtenir les données](media/desktop-quickstart-connect-to-data/qs-connect-data_06.png)
 
 Et voilà ! Vous vous êtes connecté à des données dans **Power BI Desktop**, vous avez chargé ces données, et vous pouvez maintenant voir tous les champs disponibles dans ces tables.
 

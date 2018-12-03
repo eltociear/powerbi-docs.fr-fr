@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: overview
-ms.date: 07/10/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 57d5158098f6ba7b2754ae25afaca524723255f5
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.openlocfilehash: a083512a1d280044b30f07c46d201def33fa66fa
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39031899"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578517"
 ---
 # <a name="what-is-power-bi-desktop"></a>Qu’est-ce que Power BI Desktop ?
 
@@ -25,7 +25,7 @@ ms.locfileid: "39031899"
 
 Voici les utilisations les plus courantes de **Power BI Desktop** :
 
-* Connectez-vous à vos données
+* Se connecter aux données
 * Transformer et nettoyer ces données pour créer un modèle de données
 * Créer des visuels, par exemple, des graphiques, qui donnent des représentations visuelles des données
 * Créer des rapports correspondant à des collections de visuels, sur une ou plusieurs pages de rapport
@@ -35,7 +35,7 @@ Les personnes responsables de ces tâches sont souvent considérées comme des *
 
 Avec **Power BI Desktop**, vous pouvez créer des rapports complexes et riches visuellement à partir de données provenant de plusieurs sources, pour ensuite les partager avec d’autres personnes de votre organisation. 
 
-## <a name="connect-to-data"></a>Connectez-vous à vos données
+## <a name="connect-to-data"></a>Se connecter aux données
 La première chose à faire pour commencer à utiliser **Power BI Desktop** est de se connecter aux données. De nombreuses sources de données sont accessibles avec **Power BI Desktop**. Pour vous connecter à des données, sélectionnez le ruban **Accueil**, puis **Obtenir des données > Plus**. L’illustration suivante montre la fenêtre **Obtenir des données** qui s’affiche, indiquant le vaste éventail de catégories auxquelles Power BI Desktop peut se connecter.
 
 ![Obtenir des données dans Power BI Desktop](media/desktop-what-is-desktop/what-is-desktop_02.png)

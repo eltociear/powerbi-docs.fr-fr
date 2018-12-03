@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 06/05/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 32de597b594fe8b148a2b0471352e4784d596cec
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: d0c37ff2a48315b72c699ab53238416eeb0f04b5
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34813178"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578839"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Tutoriel : analyser des données de page web à l’aide de Power BI Desktop
 
@@ -119,7 +119,7 @@ Maintenant que les données ont la forme souhaitée, vous êtes prêt à nommer 
 
 2. Sélectionnez **Fermer & appliquer** > **Fermer & appliquer** à partir de l’onglet **Accueil** du ruban.
    
-   ![Fermer & appliquer](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
+   ![Fermer et appliquer](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage9.png)
    
 La requête est chargée dans la **vue Rapport** de Power BI Desktop, où vous pouvez l’afficher dans le volet **Champs**. 
    

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: eedbe8c6f9b9453acf2e07f484bf1cac7272f390
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 5a355e3d19a781def54a1dcf747f404ed7852444
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39285974"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670874"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Utiliser des insights dans Power BI Desktop pour identifier les différences de répartition (préversion)
 
@@ -64,32 +64,32 @@ Voici comment fonctionne l’algorithme : après avoir pris toutes les autres c
 
 Il va de soi que vous vous demandez probablement ce que l’on entend par *différent*. Par exemple, supposons que la répartition globale des ventes entre les États-Unis et le Canada était la suivante :
 
-|Pays  |Ventes (en millions de dollars)|
+|Country  |Ventes (en millions de dollars)|
 |---------|----------|
-|États-Unis      |15        |
+|USA      |15        |
 |Canada   |5         |
 
 Ensuite, pour une catégorie de produit déterminée (*Road Bikes*) (Vélos de route), les ventes pouvaient être réparties comme suit :
 
-|Pays  |Ventes (en millions de dollars)|
+|Country  |Ventes (en millions de dollars)|
 |---------|----------|
-|États-Unis      |3        |
+|USA      |3        |
 |Canada   |1         |
 
 Même si les chiffres sont différents dans chacun de ces tableaux, les valeurs relatives entre les États-Unis et le Canada sont identiques (75 % et 25 % pour les ventes globales et de vélos de route). De ce fait, elles ne sont pas considérées comme étant différentes. Pour des mesures additives simples comme celles-ci, l’algorithme recherche donc des différences dans les valeurs *relatives*.  
 
 Maintenant, penchons-nous sur un autre type de mesure : la marge, qui est calculée en tant que Bénéfice/Coût. Supposons que les marges globales pour les États-Unis et le Canada étaient les suivantes :
 
-|Pays  |Marge (%)|
+|Country  |Marge (%)|
 |---------|----------|
-|États-Unis      |15        |
+|USA      |15        |
 |Canada   |5         |
 
 Ensuite, pour une catégorie de produit déterminée (*Road Bikes*) (Vélos de route), les ventes pouvaient être réparties comme suit :
 
-|Pays  |Marge (%)|
+|Country  |Marge (%)|
 |---------|----------|
-|États-Unis      |3        |
+|USA      |3        |
 |Canada   |1         |
 
 Compte tenu de la nature de ces mesures, elles *sont* considérés comme étant différentes et donc intéressantes. Par conséquent, pour les mesures non additives telles que cet exemple de marge, l’algorithme recherche des différences dans la valeur absolue.

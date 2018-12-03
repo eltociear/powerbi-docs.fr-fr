@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: bb7addcaec3aea089a55e63aaada0b9a04b7360c
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 2c092d75b6cc1dfb9e639f6421d6f1622f47d134
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330256"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578540"
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Ajouter une colonne à partir d’un exemple dans Power BI Desktop
 Depuis la publication de **Power BI Desktop** d’avril 2017, vous pouvez ajouter des colonnes de données à votre modèle à l’aide de l’**Éditeur de requête** en fournissant un ou plusieurs exemples de valeurs pour votre nouvelle colonne. Vous pouvez créer un exemple de colonne à partir d’une sélection active ou fournir une entrée basée sur la totalité ou une sélection des colonnes d’un tableau donné.
@@ -114,8 +114,8 @@ De nombreuses transformations sont disponibles lorsque vous utilisez la fonction
   * Trimestre de l’année
   * Semaine du mois
   * Semaine de l’année
-  * Year
-  * Âge
+  * Année
+  * Age
   * Début de l’année
   * Fin de l’année
   * Début du mois

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c08fc09a74b6515e9dad98c010a7f09e5c75e8b
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5f202597fa641bf68b8e49c461ed5c25ea987c3e
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329888"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670922"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Prise en main de Power BI Desktop
 Bienvenue dans le **Guide de prise en main de Power BI Desktop**. Cette courte présentation de Power BI Desktop vous permettra de vous familiariser avec son fonctionnement. Elle vous montrera ce que l’application peut faire et vous permettra d’être plus vite apte à créer des modèles de données fiables, ainsi que des rapports de haute qualité, qui amplifieront vos efforts décisionnels. 
@@ -77,7 +77,7 @@ L’écran suivant montre les icônes des trois vues à gauche de Power BI Des
 
 Une fois l’application Power BI Desktop installée, vous pouvez vous connecter à des données, les mettre en forme et créer des rapports (généralement dans cet ordre). Dans les sections suivantes, nous passerons en revue chacune de ces opérations.
 
-## <a name="connect-to-data"></a>Connectez-vous à vos données
+## <a name="connect-to-data"></a>Se connecter aux données
 Quand l’application Power BI Desktop est installée, vous pouvez vous connecter au monde en perpétuelle expansion des données. Il existe *toutes sortes* de sources de données disponibles dans la fenêtre Requête. L’illustration ci-dessous montre comment se connecter aux données, en sélectionnant l’onglet **Accueil** du ruban, puis **Obtenir des données \> Autres**.
 
  ![](media/desktop-getting-started/getdatavidsmall.gif)

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/19/2018
+ms.date: 11/28/2018
 ms.author: davidi
-ms.openlocfilehash: 98b4f6e6d44205abc79ebd9c4e88e7c0f7ed7b2d
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 89eb19fb89193e2859a79d20156d89bf012b7fda
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186521"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578034"
 ---
 # <a name="power-bi-videos"></a>Vidéos Power BI
 Nous disposons d’une chaîne YouTube pour Power BI ! Vous pouvez visiter [notre canal](https://www.youtube.com/user/mspowerbi/videos) et, si vous ne maîtrisez pas encore Power BI, commencez par les vidéos de la [playlist « Analyze and Visualize data with Power BI »](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).

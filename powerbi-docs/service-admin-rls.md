@@ -7,18 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/02/2018
 ms.author: mblythe
+ms.date: 01/02/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: b99f346102ae8b5f31db8101e499fb6915d870de
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 920fa426f98098768583e07d8f2b6c9825bfad1b
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850404"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578425"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sécurité au niveau des lignes avec Power BI
-La sécurité au niveau des lignes avec Power BI peut être utilisée pour restreindre l’accès aux données pour certains utilisateurs. Les filtres limitent l’accès aux données au niveau des lignes, et vous pouvez définir des filtres dans des rôles. N’oubliez pas que, dans le service Power BI, les membres d’un espace de travail ont accès aux jeux de données de l’espace de travail. La sécurité au niveau des lignes (SNL) ne restreint pas cet accès aux données. 
+
+La sécurité au niveau des lignes avec Power BI peut être utilisée pour restreindre l’accès aux données pour certains utilisateurs. Les filtres limitent l’accès aux données au niveau des lignes, et vous pouvez définir des filtres dans des rôles. N’oubliez pas que, dans le service Power BI, les membres d’un espace de travail ont accès aux jeux de données de l’espace de travail. La sécurité au niveau des lignes (SNL) ne restreint pas cet accès aux données.
 
 Vous pouvez configurer la sécurité au niveau des lignes (SNL) pour les modèles de données importés dans Power BI avec Power BI Desktop. Vous pouvez également configurer la sécurité au niveau des lignes sur les jeux de données qui utilisent DirectQuery, tels que SQL Server. Auparavant, vous pouviez uniquement implémenter la sécurité au niveau des lignes dans les modèles Analysis Services locaux en dehors de Power BI. Pour les connexions actives Analysis Services, la sécurité au niveau des lignes doit être configurée sur le modèle local. L’option de sécurité ne s’affiche pas pour les jeux de données d’une connexion active.
 
@@ -34,6 +35,7 @@ Pour plus d’informations, consultez [Filtrage croisé bidirectionnel avec Dire
 [!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
 
 ## <a name="manage-security-on-your-model"></a>Gérer la sécurité sur votre modèle
+
 Pour gérer la sécurité sur votre modèle de données, vous devez effectuer les opérations suivantes.
 
 1. Cliquez sur les **points de suspension (…)** d’un jeu de données.
@@ -46,7 +48,9 @@ Cette action vous dirige vers la page de la fonctionnalité Sécurité au niveau
 Vous pouvez uniquement créer ou modifier des rôles dans Power BI Desktop.
 
 ## <a name="working-with-members"></a>Utilisation des membres
+
 ### <a name="add-members"></a>Ajouter des membres
+
 Vous pouvez ajouter un membre au rôle en entrant l’adresse de messagerie ou le nom de l’utilisateur, du groupe de sécurité ou de la liste de distribution que vous voulez ajouter. Le membre doit faire partie de votre organisation. Vous ne pouvez pas ajouter les groupes qui ont été créés dans Power BI.
 
 ![](media/service-admin-rls/rls-add-member.png)
@@ -56,11 +60,13 @@ Vous pouvez également voir combien de membres font partie du rôle grâce au no
 ![](media/service-admin-rls/rls-member-count.png)
 
 ### <a name="remove-members"></a>Supprimer des membres
+
 Vous pouvez supprimer des membres en cliquant sur la croix correspondant à leur nom. 
 
 ![](media/service-admin-rls/rls-remove-member.png)
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Validation du rôle au sein du service Power BI
+
 Vous pouvez vérifier que le rôle que vous avez défini fonctionne correctement en le testant. 
 
 1. Sélectionnez les **points de suspension (...)** situés en regard du rôle.
@@ -83,12 +89,11 @@ Pour revenir à l’affichage normal, sélectionnez **Retour à la sécurité au
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
 ## <a name="using-rls-with-app-workspaces-in-power-bi"></a>Utilisation de la sécurité au niveau des lignes (SNL) avec des espaces de travail d’applications dans Power BI
+
 Si vous publiez votre rapport Power BI Desktop dans un espace de travail d’applications du service Power BI, les rôles sont appliqués aux membres en lecture seule. Vous devez alors indiquer dans les paramètres de l’espace de travail d’applications que les membres peuvent uniquement afficher du contenu Power BI.
 
 > [!WARNING]
 > Si vous avez configuré l’espace de travail d’applications afin que les membres disposent d’autorisations de modification, les rôles SNL ne s’appliquent pas à eux. Les utilisateurs sont en mesure de voir toutes les données.
-> 
-> 
 
 ![](media/service-admin-rls/rls-group-settings.png)
 
@@ -100,4 +105,3 @@ Si vous publiez votre rapport Power BI Desktop dans un espace de travail d’app
 [Sécurité au niveau des lignes avec Power BI Desktop](desktop-rls.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 44a629ca93eedc7baf5accd45c7b3fdd0ac00406
-ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
+ms.openlocfilehash: 6c890b830ca38e15bb6cc0efe36c93488ed951b4
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49952277"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52670828"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>Packages R dans le service Power BI
 Vous pouvez utiliser le puissant [langage de programmation R](https://www.r-project.org/) pour créer des visuels dans le service Power BI. De nombreux packages R sont pris en charge dans le service Power BI (et bien plus encore sont pris en charge tout le temps), mais certains packages ne le sont pas.
@@ -189,7 +189,7 @@ Le tableau suivant indique les packages **pris en charge** dans le service Power
 |data.table| 1.10.4| https://cran.r-project.org/web/packages/data.table/index.html |
 |data.table| zoo| grid|
 |data.tree| 0.7.0| https://cran.r-project.org/web/packages/data.tree/index.html |
-|jeux de données| 3.4.1| N/A|
+|datasets| 3.4.1| N/A|
 |date| 1.2-37| https://cran.r-project.org/web/packages/date/index.html |
 |DBI|0.7| https://cran.r-project.org/web/packages/DBI/index.html |
 |dbscan| 1.1-1| https://cran.r-project.org/web/packages/dbscan/index.html |
