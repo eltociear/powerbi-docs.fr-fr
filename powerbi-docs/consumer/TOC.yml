@@ -51,6 +51,8 @@ items:
         href: end-user-show-data.md
       - name: Explorer une visualisation dans Power BI
         href: end-user-drill.md
+      - name: Interagir avec des cartes ArcGIS
+        href: ../power-bi-visualizations-arcgis.md
     - name: Tâches communes
       items:
       - name: Différentes façons de zoomer sur du contenu à l’aide des modes focus et plein écran
@@ -99,11 +101,11 @@ items:
     items:
     - name: Présentation des applications mobiles
       href: mobile/mobile-apps-for-mobile-devices.md
-  - name: Démarrages rapide
+  - name: Guides de démarrage rapide
     items:
     - name: Explorer des tableaux de bord et des rapports
       href: mobile/mobile-apps-quickstart-view-dashboard-report.md
-  - name: Didacticiels
+  - name: Tutoriels
     items:
     - name: Poser des questions dans les applications mobiles iOS
       href: mobile/tutorial-mobile-apps-ios-qna.md
@@ -185,9 +187,9 @@ items:
     items:
     - name: Langues prises en charge dans les applications mobiles
       href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: 5a696c51a72320bc53a12a913c1785fb5ba742c8
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: f3f9e579a85ae880b28c6f846c5cb362dc49e9a2
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473888"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829831"
