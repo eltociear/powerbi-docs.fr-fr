@@ -1,21 +1,21 @@
 ---
 title: Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
 description: Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
-author: mihart
-manager: kvivek
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/28/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ebbca73f781946f989b2f3afa65aa0a940f7a680
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e3b7a6ca4471fb1a6454f6efb9fba1f89b8ae1da
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545127"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829984"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
 Votre responsable attend de vous un rapport présentant vos chiffres de vente les plus récents et vos dernières impressions concernant la campagne avant la fin de la journée. Vos données les plus récentes sont stockées sur différents systèmes tiers et sur des fichiers de votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des éléments visuels et mettre en forme un rapport. Vous commencez à vous inquiéter.

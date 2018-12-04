@@ -10,19 +10,17 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 96b46e595ffd2373a2d59776cb8c2b4314727d89
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: a5762964b75d73d8dabceac58c47f616753b94cc
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718042"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830175"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Créer un nouveau rapport du service Power BI en important un jeu de données
 Vous avez lu [apports dans Power BI](consumer/end-user-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe de nombreuses façons de créer un rapport. Dans cet article, nous allons commencer par créer un rapport très basique à partir d’un jeu de données Excel à l’aide du service Power BI. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, les **Étapes suivantes** plus bas vous dirigeront vers des rubriques plus avancées concernant les rapports.  
 
-> **CONSEIL** : pour créer un rapport en copiant un rapport existant, voir [Copier un rapport](power-bi-report-copy.md).
-> 
-> ### <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables
 > - Service Power BI (pour créer des rapports avec Power BI Desktop, consultez [Affichage du rapport Desktop](desktop-report-view.md))  
 > - Jeu de données d’exemple Analyse de la vente au détail
 
@@ -93,7 +91,7 @@ Notre Directrice marketing a des questions supplémentaires à nous poser. Elle 
 Continuer d’explorer vos données et d’ajouter des visualisations. Lorsque vous trouvez des informations particulièrement intéressantes, [épinglez-les à un tableau de bord](service-dashboard-pin-tile-from-report.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Ajouter une nouvelle page au rapport](power-bi-report-add-page.md)  
+
 * Découvrez comment [épingler des visualisations à un tableau de bord](service-dashboard-pin-tile-from-report.md).   
 * D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

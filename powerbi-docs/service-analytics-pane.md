@@ -2,7 +2,7 @@
 title: Créer des lignes de référence dynamiques pour des visuels
 description: Créer des lignes de référence dynamiques pour des visuels dans le service Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/14/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 04173d98185d7900848e93563b8e981bf3b200e6
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: f3653404bb89674ce838cc326daefbaeaab4c8b8
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717697"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830176"
 ---
 # <a name="create-dynamic-reference-lines-for-visuals-in-the-power-bi-service"></a>Créer des lignes de référence dynamiques pour des visuels dans le service Power BI
 
@@ -29,7 +29,7 @@ Avec le volet **Analyse** de **Service Power BI**, vous pouvez ajouter des *lign
 > 
 
 ## <a name="use-the-analytics-pane"></a>Utilisation du volet Analytique
-Avec le volet **Analytique**, vous pouvez créer les types de lignes de référence dynamiques (toutes les lignes ne sont pas disponibles pour tous les types de visuels) suivants :
+Avec le volet **Analyse**, vous pouvez créer les types de lignes de référence dynamiques (toutes les lignes ne sont pas disponibles pour tous les types d’éléments visuels) suivants :
 
 * Ligne de constante de l’axe X
 * Ligne de constante de l’axe Y
@@ -40,9 +40,9 @@ Avec le volet **Analytique**, vous pouvez créer les types de lignes de référe
 * Ligne Centile
 
 
-Pour voir les lignes de référence dynamiques d’un visuel, procédez comme suit :
+Pour afficher les lignes de référence dynamiques pour un élément visuel, procédez comme suit :
 
-1. Sélectionnez ou créez un visuel, puis sélectionnez l’icône **Analytique** ![](media/service-analytics-pane/power-bi-analytics-icon.png)dans le volet **Visualisations**.
+1. Sélectionnez ou créez un visuel, puis sélectionnez l’icône **Analyse** ![](media/service-analytics-pane/power-bi-analytics-icon.png)dans le volet **Visualisations**.
 
 2. Sélectionnez la flèche vers le bas pour le type de ligne que vous souhaitez créer afin de développer ses options. Dans ce cas, nous allons sélectionner **Ligne moyenne**.
    
