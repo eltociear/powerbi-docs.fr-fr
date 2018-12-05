@@ -1,5 +1,5 @@
 ---
-title: Visuels des indicateurs de performance clés
+title: Éléments visuels des indicateurs de performance clés
 description: Créer des visuels des indicateurs de performance clés dans Power BI
 author: mihart
 manager: kvivek
@@ -11,14 +11,14 @@ ms.topic: tutorial
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: aec8bc2d7faa8d3c4b9c7b4eb69ed9a930cfbcd1
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 0492390ae47c8d5aa0930a063370712c80d61de2
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417231"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829639"
 ---
-# <a name="kpi-visuals"></a>Visuels des indicateurs de performance clés
+# <a name="kpi-visuals"></a>Éléments visuels des indicateurs de performance clés
 Un indicateur de performance clé (KPI) est un indice visuel qui représente la marge de progression réalisée en vue d’atteindre un objectif mesurable. Pour plus d’informations sur les indicateurs de performances clés, consultez [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
 
 Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
@@ -46,13 +46,13 @@ Vous pouvez également écouter Will qui vous montre comment créer des élémen
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Ouvrez le rapport en mode Rapport et [sélectionnez l’onglet jaune pour ajouter une nouvelle page](../power-bi-report-add-page.md).    
+1. Ouvrez le rapport en mode Rapport et sélectionnez l’onglet jaune pour ajouter une nouvelle page.    
 2. Dans le volet Champs, sélectionnez **Sales > This Year Sales** (Ventes > Ventes de cette année).  Il s’agit de l’indicateur.
 3. Ajoutez **Heure > MoisFiscal**.  Ceci représente la tendance.
 4. IMPORTANT : triez le graphique par **MoisFiscal**. Une fois que vous convertissez la visualisation en indicateur de performance clé, il n’existe aucune option de tri.
 
     ![](media/power-bi-visualization-kpi/power-bi-chart.png)
-5. Convertissez le visuel en indicateur de performance clé en sélectionnant l’icône correspondante dans le volet de visualisation.
+5. Convertissez l’élément visuel en indicateur de performance clé en sélectionnant l’icône correspondante dans le volet de visualisation.
    
     ![](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
 6. Ajoutez un objectif. Ajoutez les ventes de l’année précédente comme objectif. Faites glisser **Nombre total d’unités l’année dernière** dans le champ **Objectifs cibles**.
@@ -61,8 +61,8 @@ Vous pouvez également écouter Will qui vous montre comment créer des élémen
 7. Vous pouvez aussi formater l’indicateur de performance clé en sélectionnant l’icône représentant un rouleau qui ouvre le volet de Mise en forme.
    
    * **Indicateur** : contrôle les unités d’affichage de l’indicateur et les décimales.
-   * **Axe de tendance** : quand il est **activé**, l’axe de tendance est affiché en arrière-plan du visuel de l’indicateur de performance clé.  
-   * **Objectifs** : quand il est **activé**, le visuel affiche l’objectif et la distance restante pour atteindre l’objectif, sous forme de pourcentage.
+   * **Axe de tendance** : quand il est **activé**, l’axe de tendance est affiché en arrière-plan de l’élément visuel de l’indicateur de performance clé.  
+   * **Objectifs** : quand il est **activé**, l’élément visuel affiche l’objectif et la distance restante pour atteindre l’objectif, sous forme de pourcentage.
    * **Code couleur > Direction** : certains indicateurs de performances clés sont considérés comme *meilleurs* pour des valeurs plus élevées et d’autres sont considérés comme *meilleurs* pour des valeurs plus faibles. Par exemple, les bénéfices par rapport au temps d’attente. De manière générale, une valeur plus élevée pour les bénéfices est mieux considérée qu’une valeur de temps d’attente élevée. Sélectionnez **une valeur élevée est meilleure** et modifiez éventuellement les paramètres de couleur.
 
 

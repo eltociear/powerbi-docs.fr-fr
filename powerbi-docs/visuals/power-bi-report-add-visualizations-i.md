@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: df53cf238a52502cecb4d1f77482b7b1a09c6b7a
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: f2edbd7b0b977b378d25634a0f9505101350d73b
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545265"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829800"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Partie 1, Ajouter des visualisations à un rapport Power BI
 Cet article explique brièvement comment créer une visualisation dans un rapport à l’aide du service Power BI ou de Power BI Desktop.  Pour un contenu plus avancé, [consultez la partie 2](power-bi-report-add-visualizations-ii.md). Regardez Amanda montrer différentes manières de créer, modifier et mettre en forme les visuels sur un canevas de rapport. Essayez ensuite par vous-même d’utiliser l’[exemple Ventes et marketing](../sample-datasets.md) pour créer votre propre rapport.
@@ -29,7 +29,7 @@ Cet article explique brièvement comment créer une visualisation dans un rappor
 2. Si le volet Champs n’est pas visible, sélectionnez l’icône de flèche pour l’ouvrir. 
    
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)
-3. [Ajoutez une page vierge au rapport](../power-bi-report-add-page.md).
+3. Ajoutez une page vierge au rapport.
 
 ## <a name="add-visualizations-to-the-report"></a>Ajouter des visualisations au rapport
 1. Créez une visualisation en sélectionnant un champ dans le volet **Champs**.  

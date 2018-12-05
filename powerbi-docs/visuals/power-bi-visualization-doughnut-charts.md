@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab292964bb1b6b1f4218d41c46eb2c28c82a034c
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 5720e52b61332aeca82d0b23b776f590634e622f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416748"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829616"
 ---
 # <a name="doughnut-charts-in-power-bi"></a>Graphiques en anneau dans Power BI
 Un graphique en anneau est similaire à un graphique en secteurs, car il représente aussi la relation de parties par rapport à un ensemble. La seule différence est que le centre est vide et qu’il y a de la place pour une étiquette ou une icône.
@@ -23,7 +23,7 @@ Un graphique en anneau est similaire à un graphique en secteurs, car il représ
 ## <a name="create-a-doughnut-chart"></a>Créer un graphique en anneau
 Ces instructions utilisent l’Exemple Analyse de la vente au détail pour créer un graphique en anneau qui affiche les ventes de cette année par catégorie. [Téléchargez l’exemple](../sample-datasets.md) pour le service Power BI ou Power BI Desktop.
 
-1. Démarrez sur une [page de rapport vide](../power-bi-report-add-page.md). Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
+1. Démarrez sur une page de rapport vierge. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
 
 2. Dans le volet Champs, sélectionnez **Sales** \> **Last Year Sales** (Ventes > Ventes de l’année dernière).  
    

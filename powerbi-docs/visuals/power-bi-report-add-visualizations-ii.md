@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a15975f456bab94fd04fa7501760c9874fabf952
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 01051ab47304713fe3cf0f9128f5cd99af58bffe
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732650"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830214"
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Partie 2, Ajouter des visualisations à un rapport Power BI
 Dans la [partie 1](power-bi-report-add-visualizations-ii.md), vous avez créé une visualisation de base en cochant les cases en regard des noms de champs.  Dans la partie 2, vous allez apprendre à utiliser le glisser-déplacer et tirer pleinement parti des volets **Champs** et **Visualisations** pour créer et modifier des visualisations.
@@ -32,7 +32,7 @@ Dans ce didacticiel, nous allons explorer notre jeu de données Analyse de vente
 1. Ouvrez le fichier .PBIX de l’exemple Analyse de la vente au détail dans Power BI Desktop. 
    ![](media/power-bi-report-add-visualizations-ii/power-bi-open-desktop.png)   
 
-2.  [Ajoutez une nouvelle page](../power-bi-report-add-page.md) en sélectionnant l’icône représentant un signe « + » de couleur jaune au bas du canevas.
+2. Ajoutez une nouvelle page en sélectionnant l’icône représentant un signe « + » de couleur jaune au bas du canevas.
 
 ### <a name="add-a-visualization-that-looks-at-this-years-sales-compared-to-last-year"></a>Ajoutez une visualisation qui compare les ventes de cette année à celles de l’année dernière.
 1. Dans la table **Sales** (Ventes), sélectionnez **This Year Sales** (Ventes de cette année) > **Value** (Valeur) **et Last Year Sales** (Ventes de l’année dernière). Power BI crée un histogramme.  Vous trouvez cela intéressant et vous voulez faire une exploration plus approfondie. Qu’en est-il des ventes par mois ?  

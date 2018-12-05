@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7739dda4647a82b3c9d4b58976db89038428625a
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 9b508964062146ff140bcb85b0b8b42e9bf4f68f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003176"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830122"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Nuages de points, graphiques en bulles et graphiques à points dans Power BI
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Ces derniers peuvent être distribués uniformément ou non sur l’axe horizontal, en fonction des données.
@@ -57,7 +57,7 @@ Regardez cette vidéo dans laquelle Will crée un graphique à nuages de points,
 
 Ces instructions s’appliquent à l’exemple Analyse de la vente au détail. Pour effectuer la procédure, [téléchargez l’exemple](../sample-datasets.md) pour le service Power BI (app.powerbi.com) ou Power BI Desktop.   
 
-1. Ouvrez le rapport en mode Édition, puis sélectionnez l’icône Plus jaune pour créer une [page de rapport vide](../power-bi-report-add-page.md).
+1. Ouvrez le rapport en mode Édition, puis sélectionnez l’icône Plus jaune pour créer une page de rapport vierge.
  
 2. Dans le volet Champs, sélectionnez les champs suivants :
    - **Ventes** > **Ventes par mètre carré**

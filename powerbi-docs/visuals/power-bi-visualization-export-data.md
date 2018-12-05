@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396807"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830099"
 ---
 # <a name="export-data-from-visualizations"></a>Exportez des données à partir de visualisations
 Si vous souhaitez afficher les données qui sont utilisées pour créer une visualisation, vous pouvez le faire dans Power BI ou exporter ces données vers Excel sous forme de fichier .xlsx ou .csv. La possibilité d’exporter les données nécessite une licence Pro ou Premium et des autorisations de modification sur le jeu de données et le rapport. 
@@ -38,7 +38,7 @@ Regardez Will pendant qu’il exporte les données à partir d’une des visuali
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>À partir d’une visualisation dans un rapport
-Pour effectuer cette procédure, ouvrez le [rapport Exemple Analyse de l'approvisionnement](../sample-procurement.md) en [mode Édition](../consumer/end-user-reading-view.md). [Ajoutez une nouvelle page de rapport vide](../power-bi-report-add-page.md). Puis suivez les étapes ci-dessous pour ajouter un regroupement et un filtre au niveau des visualisations.
+Pour effectuer cette procédure, ouvrez le [rapport Exemple Analyse de l'approvisionnement](../sample-procurement.md) en [mode Édition](../consumer/end-user-reading-view.md). Ajoutez une nouvelle page de rapport vierge. Puis suivez les étapes ci-dessous pour ajouter un regroupement et un filtre au niveau des visualisations.
 
 1. Créez un histogramme.  Dans le volet Champs, sélectionnez **Location > City** (Emplacement > Ville) et **Invoice > Discount Percent** (Facture > % de remise).  Vous devrez peut-être déplacer **Discount Percent** (% de remise) dans la zone Valeur. 
 
@@ -88,7 +88,7 @@ Ce qui s’affiche à l’écran quand vous sélectionnez **Données sous-jacent
 |    Mesures     |                                       Toutes les données non masquées des tables qui contiennent cette mesure (dans la mesure où il s’agit d’une relation \*:1 ou 1:1)                                       |
 |    Mesures     |                                      Toutes les données de toutes les tables associées à une ou plusieurs tables contenant les mesures via une chaîne de \*: 1 sur 1:1.                                      |
 |  Mesures uniquement  |                                                   Toutes les colonnes non masqués de toutes les tables associées (dans le but d’étendre la mesure)                                                   |
-|  Mesures uniquement  |                                                             Les données totalisées de toutes les lignes en double pour les mesures du modèle.                                                              |
+|  Mesures uniquement  |                                                             Les données résumées de toutes les lignes en double pour les mesures du modèle.                                                              |
 
 ### <a name="set-the-export-options"></a>Définir les options d’exportation
 Les concepteurs de rapports Power BI contrôlent les types d’options d’exportation de données qui sont à la disposition de leurs clients. Les choix sont les suivants :

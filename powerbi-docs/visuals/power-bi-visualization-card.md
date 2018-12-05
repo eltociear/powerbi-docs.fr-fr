@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9654e2838b1b62dcc856e2870b3fcc1e5301641c
-ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
+ms.openlocfilehash: b15d285774f0b6735fbc5df0ca2d00a81b944012
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874572"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829938"
 ---
 # <a name="card-visualizations"></a>Visualisations de carte
 Vous pouvez parfois vouloir suivre un nombre unique dans votre tableau de bord ou rapport Power BI pour l’importance qu’il représente, qu’il s’agisse du total des ventes, de la part de marché d’une année sur l’autre ou du nombre total d’opportunités. Ce type de visualisation est appelé *carte*. Avec la plupart des visualisations Power BI natives, des cartes peuvent être créées à l’aide de l’éditeur de rapport ou dans Questions et réponses.
@@ -25,7 +25,7 @@ Vous pouvez parfois vouloir suivre un nombre unique dans votre tableau de bord o
 ## <a name="create-a-card-using-the-report-editor"></a>Créer une carte à l’aide de l’éditeur de rapport
 Ces instructions s’appliquent à l’exemple Analyse de la vente au détail. Pour effectuer la procédure, [téléchargez l’exemple](../sample-datasets.md) pour le service Power BI (app.powerbi.com) ou Power BI Desktop.   
 
-1. Démarrez sur une [page de rapport vierge](../power-bi-report-add-page.md), puis sélectionnez le champ **Store (Magasin)** \> **Open store count (Nombre de magasins ouverts)**. Si vous utilisez le service Power BI, vous devez ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
+1. Démarrez sur une page de rapport vierge, puis sélectionnez le champ **Store (Magasin)** \> **Open store count (Nombre de magasins ouverts)**. Si vous utilisez le service Power BI, vous devez ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
 
     Power BI crée un histogramme à partir d’un seul nombre.
 

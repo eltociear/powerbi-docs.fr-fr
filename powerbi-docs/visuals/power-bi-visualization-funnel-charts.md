@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 962f76666e4b139b24225daefd5af776f36b3d0d
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 345293e6b8bd7047ecfe1716f0b7be1c5bed9c58
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416931"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829869"
 ---
 # <a name="funnel-charts"></a>Graphiques en entonnoir
 Un graphique en entonnoir vous permet de mieux visualiser un processus linéaire qui comporte des étapes séquentielles liées entre elles. Par exemple, avec l’entonnoir de ventes Lead \> Qualified Lead \> Prospect \> Contract \> Close (Prospect > Prospect qualifié > Client potentiel > Contrat > Clôture), vous effectuez le suivi des clients tout au long des étapes.  En regardant la forme de l’entonnoir, vous savez instantanément comment se déroule le processus dont vous effectuez le suivi.
@@ -55,7 +55,7 @@ Regardez cette vidéo pour voir comment créer un graphique en entonnoir à l’
 
 Ces instructions s’appliquent à l’exemple Analyse d’opportunités. Pour effectuer la procédure, [téléchargez l’exemple](../sample-datasets.md) pour le service Power BI (app.powerbi.com) ou Power BI Desktop.   
 
-1. Démarrez sur une [page de rapport vierge](../power-bi-report-add-page.md), puis sélectionnez le champ **SalesStage** \> **Étape de vente**. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
+1. Démarrez sur une page de rapport vierge, puis sélectionnez le champ **SalesStage** \> **Étape de vente**. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
    
     ![sélectionner Étape de vente](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
 2. [Convertissez le graphique](power-bi-report-change-visualization-type.md) en Entonnoir. Notez que **Étape de vente** se trouve dans la zone **Groupe** . 

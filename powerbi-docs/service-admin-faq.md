@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4379caf909360688e602601795066f51c9660633
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157077"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830306"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -174,11 +174,15 @@ Pour accéder au portail d’administration Power BI, votre compte doit être u
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Quel est la procédure à suivre pour gérer un client créé par Microsoft pour mes utilisateurs ?
 
-Si un client a été créé par Microsoft, vous pouvez le revendiquer et le gérer en procédant comme suit :
+Lorsqu’un utilisateur libre-service s’inscrit à un service cloud qui utilise Azure AD, il est ajouté à un annuaire Azure AD non managé basé sur son domaine de messagerie. Vous pouvez revendiquer et gérer le locataire qui a été créé à l’aide d’un processus appelé *prise de contrôle par l’administrateur*. Le type de prise de contrôle varie selon qu’il existe ou non un locataire managé associé à votre domaine :
 
-1. Associez-vous au client en vous inscrivant à Power BI et en utilisant un domaine d’adresse de messagerie correspondant au domaine de client que vous voulez gérer. Par exemple, si Microsoft a créé le client contoso.com, vous vous associez au client dont l’adresse e-mail se termine par @contoso.com.
+* Utilisez une *prise de contrôle interne* afin de créer un nouveau client managé pour le domaine.
 
-1. Revendiquez le contrôle d’administrateur en vérifiant que vous êtes propriétaire du domaine. Une fois dans le client, vous pouvez vous attribuer vous-même le rôle *d’administrateur global* en vérifiant la propriété du domaine. Pour ce faire, suivez ces étapes, suivez les étapes de la [documentation Office 365](/office365/admin/misc/become-the-admin).
+* Utilisez une *prise de contrôle externe* pour déplacer le domaine vers un locataire managé existant.
+
+Pour plus d’informations, consultez [Prise de contrôle d’un annuaire non managé en tant qu’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+
+Lorsque vous effectuez une prise de contrôle externe, le contenu Power BI qui a été créé avant la prise de contrôle est placé dans un [espace de travail archivé Power BI](service-admin-power-bi-archived-workspace.md). Vous devez migrer manuellement le contenu que vous souhaitez utiliser dans le nouveau locataire.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Si j’utilise plusieurs domaines, puis-je contrôler le client Office 365 auquel sont ajoutés les utilisateurs ?
 

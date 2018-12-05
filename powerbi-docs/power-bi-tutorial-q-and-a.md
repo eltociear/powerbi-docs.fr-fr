@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 6f595a2d6423b1e79e927ee2d229363632022d58
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 9ca771d200f5bd4b50dfbddbd8eb67931be375c1
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49397000"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830007"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Didacticiel : Utiliser Questions et réponses pour créer des visualisations et générer des rapports
 La [vue d’ensemble de Questions et réponses](consumer/end-user-q-and-a.md) vous a présenté le moteur Questions et réponses de Power BI et a différentié les *consommateurs* (qui ont des tableaux de bord et rapports partagés avec eux) et les *créateurs* (qui possèdent les rapports et jeux de données sous-jacents). La première partie de ce didacticiel est principalement destinée aux utilisateurs consommant des tableaux de bord à l’aide du service Power BI. La deuxième partie est conçue pour les personnes qui créent des rapports à l’aide du service Power BI ou de Power BI Desktop. [Questions et réponses et Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) et [Questions et réponses avec Power BI Embedded](developer/qanda.md) sont traités dans différents articles.
@@ -74,7 +74,7 @@ Pour pouvoir utiliser Questions et réponses dans des rapports, vous devez dispo
     **Service**    
     ![](media/power-bi-tutorial-q-and-a/power-bi-service.png)
 
-2. Une zone de question Questions et réponses s’affiche sur le canevas de rapport. Dans l’exemple ci-dessous, la zone de question s’affiche sur une autre visualisation. C’est un fonctionnement correct, mais il peut être préférable d’[ajouter une page vierge au rapport](power-bi-report-add-page.md) avant de poser une question.
+2. Une zone de question Questions et réponses s’affiche sur le canevas de rapport. Dans l’exemple ci-dessous, la zone de question s’affiche sur une autre visualisation. C’est un fonctionnement correct, mais il peut être préférable d’ajouter une page vierge au rapport avant de poser une question.
 
     ![](media/power-bi-tutorial-q-and-a/power-bi-ask-question.png)
 
