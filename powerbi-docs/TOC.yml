@@ -444,22 +444,10 @@ items:
         href: service-power-bi-get-started-third-party-apps.md
   - name: Guides pratiques
     items:
-    - name: Tâches communes
-      items:
-      - name: Renommer du contenu dans Power BI
-        href: service-rename.md
-      - name: Informations rapides dans Power BI
-        href: service-insights.md
-      - name: Inscrivez votre organisation du gouvernement américain
-        href: service-govus-signup.md
-      - name: Alertes de données dans le service Power BI
-        href: service-set-data-alerts.md
-      - name: Bien démarrer avec Questions et réponses Power BI
-        href: power-bi-visualization-introduction-to-q-and-a.md
-      - name: Supprimer pratiquement tout dans Power BI
-        href: service-delete.md
     - name: Se connecter aux services
       items:
+      - name: Se connecter aux services
+        href: service-connect-to-services.md
       - name: Acumatica
         href: service-connect-to-acumatica.md
       - name: Adobe Analytics
@@ -574,7 +562,7 @@ items:
         href: service-parameters.md
       - name: Obtenir des données de fichiers de valeurs séparées par des virgules (.csv)
         href: service-comma-separated-value-files.md
-      - name: Streaming en temps réel dans Power BI (version préliminaire)
+      - name: Streaming en temps réel dans Power BI
         href: service-real-time-streaming.md
       - name: Publier sur Power BI à partir d’Excel 2016
         href: service-publish-from-excel.md
@@ -626,6 +614,8 @@ items:
         href: service-dashboard-pin-tile-from-q-and-a.md
       - name: Épingler une page de rapport entière à un tableau de bord
         href: service-dashboard-pin-live-tile-from-report.md
+      - name: Alertes de données dans le service Power BI
+        href: service-set-data-alerts.md
       - name: Métriques d’utilisation des tableaux de bord
         href: service-usage-metrics.md
       - name: Ajouter une image, une zone de texte, une vidéo ou du code à un tableau de bord
@@ -634,8 +624,6 @@ items:
         href: service-dashboard-edit-tile.md
       - name: Conseils pour la conception d’un tableau de bord réussi
         href: service-dashboards-design-tips.md
-      - name: Optimiser vos données pour Quick Insights
-        href: service-insights-optimize.md
       - name: Créer une vue téléphone d’un tableau de bord
         href: service-create-dashboard-mobile-phone-view.md
       - name: Créer un code QR pour une vignette
@@ -664,7 +652,7 @@ items:
         href: service-usage-metrics.md
       - name: Créer un code QR pour un rapport
         href: service-create-qr-code-for-report.md
-      - name: Exporter un rapport du service vers Power BI Desktop (préversion)
+      - name: Exporter un rapport vers Power BI Desktop (préversion)
         href: service-export-to-pbix.md
       - name: Filtrer un rapport à l’aide de paramètres dans l’URL
         href: service-url-filters.md
@@ -672,18 +660,24 @@ items:
         href: power-bi-reports-performance.md
     - name: Posez des questions sur vos données
       items:
+      - name: Bien démarrer avec Questions et réponses Power BI
+        href: power-bi-visualization-introduction-to-q-and-a.md
       - name: Utiliser Questions et réponses pour créer des visualisations et des rapports
         href: power-bi-tutorial-q-and-a.md
       - name: Optimiser vos données avec Questions et réponses
         href: service-prepare-data-for-q-and-a.md
-      - name: Activer Cortana pour Power BI
-        href: service-cortana-enable.md
       - name: Créer des questions recommandées pour Questions et réponses
         href: service-q-and-a-create-featured-questions.md
-      - name: Types de visualisations dans Power BI
+      - name: Types de visualisations dans Questions et réponses
         href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: Utiliser Questions et réponses avec des connexions actives
         href: service-q-and-a-direct-query.md
+      - name: Activer Cortana pour Power BI
+        href: service-cortana-enable.md
+      - name: Informations rapides dans Power BI
+        href: service-insights.md
+      - name: Optimiser vos données pour Quick Insights
+        href: service-insights-optimize.md
     - name: Partager votre travail
       items:
       - name: Comment collaborer et partager ?
@@ -710,28 +704,6 @@ items:
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
       - name: Partager un tableau de bord lié à un classeur Excel sur OneDrive
         href: service-share-dashboard-that-links-to-excel-onedrive.md
-    - name: Packs de contenu
-      items:
-      - name: Gérer, mettre à jour et supprimer des packs de contenu d’organisation
-        href: service-organizational-content-pack-manage-update-delete.md
-      - name: 'Packs de contenu d’organisation : copie, actualisation et accès'
-        href: service-organizational-content-pack-copy-refresh-access.md
-      - name: Introduction aux packs de contenu d’organisation
-        href: service-organizational-content-pack-introduction.md
-      - name: Créer et publier un pack de contenu d’organisation.
-        href: service-organizational-content-pack-create-and-publish.md
-      - name: Suppression de votre connexion à un pack de contenu d’organisation
-        href: service-organizational-content-pack-disconnect.md
-      - name: Certification
-        items:
-        - name: Programme de certification du pack de contenu
-          href: service-content-pack-overview.md
-        - name: Création d’un pack de contenu de modèle
-          href: template-content-pack-authoring.md
-        - name: Test d’un pack de contenu de modèle
-          href: template-content-pack-testing.md
-        - name: Expériences d’un pack de contenu de modèle
-          href: template-content-pack-experience.md
     - name: Publier
       items:
       - name: Power BI Publisher pour Excel
@@ -788,26 +760,56 @@ items:
       items:
       - name: Que sont les rapports paginés ? (Préversion)
         href: paginated-reports-report-builder-power-bi.md
-      - name: Forum aux questions sur les rapports paginés
+      - name: Forum aux questions sur les rapports paginés (préversion)
         href: paginated-reports-faq.md
-      - name: Créer un rapport paginé et le télécharger
+      - name: Créer un rapport paginé et le charger (préversion)
         href: paginated-reports-quickstart-aw.md
-      - name: Naviguer dans le Mode Création de rapport
+      - name: Naviguer dans le Mode Création de rapport (préversion)
         href: paginated-reports-report-design-view.md
-      - name: Entrer des données directement dans un rapport paginé
+      - name: Entrer des données directement dans un rapport paginé (préversion)
         href: paginated-reports-enter-data.md
-      - name: Créer une source de données incorporée
+      - name: Créer une source de données incorporée (préversion)
         href: paginated-reports-embedded-data-source.md
-      - name: Créer un jeu de données incorporé
+      - name: Créer un jeu de données incorporé (préversion)
         href: paginated-reports-create-embedded-dataset.md
-      - name: Créer des paramètres
+      - name: Créer des paramètres (préversion)
         href: paginated-reports-parameters.md
-      - name: Publier un rapport paginé
+      - name: Publier un rapport paginé (préversion)
         href: paginated-reports-save-to-power-bi-service.md
-      - name: Afficher un rapport paginé
+      - name: Afficher un rapport paginé (préversion)
         href: paginated-reports-view-power-bi-service.md
-      - name: Interagir avec des paramètres
+      - name: Interagir avec des paramètres (préversion)
         href: paginated-reports-view-parameters.md
+    - name: Autres tâches
+      items:
+      - name: Renommer du contenu dans Power BI
+        href: service-rename.md
+      - name: Inscrivez votre organisation du gouvernement américain
+        href: service-govus-signup.md
+      - name: Supprimer pratiquement tout dans Power BI
+        href: service-delete.md
+      - name: Packs de contenu
+        items:
+        - name: Gérer, mettre à jour et supprimer des packs de contenu d’organisation
+          href: service-organizational-content-pack-manage-update-delete.md
+        - name: 'Packs de contenu d’organisation : copie, actualisation et accès'
+          href: service-organizational-content-pack-copy-refresh-access.md
+        - name: Introduction aux packs de contenu d’organisation
+          href: service-organizational-content-pack-introduction.md
+        - name: Créer et publier un pack de contenu d’organisation.
+          href: service-organizational-content-pack-create-and-publish.md
+        - name: Suppression de votre connexion à un pack de contenu d’organisation
+          href: service-organizational-content-pack-disconnect.md
+        - name: Certification
+          items:
+          - name: Programme de certification du pack de contenu
+            href: service-content-pack-overview.md
+          - name: Création d’un pack de contenu de modèle
+            href: template-content-pack-authoring.md
+          - name: Test d’un pack de contenu de modèle
+            href: template-content-pack-testing.md
+          - name: Expériences d’un pack de contenu de modèle
+            href: template-content-pack-experience.md
   - name: Ressources
     items:
     - name: Vidéos
@@ -1249,9 +1251,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a9156a07a1677c5cac424eef7349949bd47e79e0
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 83446170e1ee29cdf2e2d2f1298a37c58e255f1b
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830398"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900379"
