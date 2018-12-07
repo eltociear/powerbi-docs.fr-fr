@@ -1,5 +1,5 @@
 ---
-title: Afficher les paramètres de rapports paginés dans le service Power BI | Microsoft Docs
+title: Afficher les paramètres de rapports paginés dans le service Power BI (préversion)
 description: Dans cet article, vous allez apprendre à interagir avec les paramètres de rapports paginés dans le service Power BI.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: d144030db1d35e103a476af8e96fa4b2b8b1dfaa
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 404ec820b766716810b2881351f8be8e77902803
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267230"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900149"
 ---
-# <a name="view-parameters-for-paginated-reports-in-the-power-bi-service"></a>Afficher les paramètres de rapports paginés dans le service Power BI
+# <a name="view-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Afficher les paramètres de rapports paginés dans le service Power BI (préversion)
 
 Dans cet article, vous allez apprendre à interagir avec les paramètres de rapports paginés dans le service Power BI.  Un paramètre de rapport permet de filtrer les données de rapport. Les paramètres offrent une liste de valeurs disponibles, et vous pouvez choisir une ou plusieurs de ces valeurs. Parfois, les paramètres affichent une valeur par défaut, et parfois vous devez choisir une valeur avant de pouvoir voir le rapport.  
 

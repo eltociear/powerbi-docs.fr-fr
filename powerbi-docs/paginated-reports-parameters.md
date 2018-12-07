@@ -1,5 +1,5 @@
 ---
-title: Créer des paramètres de rapports paginés dans le service Power BI | Microsoft Docs
+title: Créer les paramètres de rapports paginés dans le service Power BI (préversion)
 description: Dans cet article, vous allez apprendre créer des paramètres de rapports paginés dans le service Power BI.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 3a1d497f112e84aeb958b86658ee3ffae3e87c6d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: d36f8e26282ae794976b0d679feb426ea04a981b
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267204"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900287"
 ---
-# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Créer des paramètres de rapports paginés dans le service Power BI
+# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Créer les paramètres de rapports paginés dans le service Power BI (préversion)
 
 Dans cet article, vous allez apprendre créer des paramètres de rapports paginés dans le service Power BI.  Un paramètre de rapport permet de choisir des données de rapport et de varier la présentation du rapport. Vous pouvez fournir une valeur par défaut et une liste de valeurs disponibles, et les lecteurs de votre rapport peuvent modifier la sélection.  
 

@@ -1,5 +1,5 @@
 ---
-title: Publier un rapport paginé dans le service Power BI | Microsoft Docs
+title: Publier un rapport paginé dans le service Power BI (préversion)
 description: Dans ce tutoriel, vous apprendrez à publier un rapport paginé dans le service Power BI en le chargeant depuis votre ordinateur local.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 6f2d1a4e4de87ea6eb63826b59286a9abd54b94f
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 1114f1949c68e4bebf2d636906bf754e7de77273
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267229"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900264"
 ---
-# <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publier un rapport paginé dans le service Power BI
+# <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publier un rapport paginé dans le service Power BI (préversion)
 
 Dans cet article, vous apprendrez à publier un rapport paginé dans le service Power BI en le chargeant depuis votre ordinateur local. Vous pouvez charger des rapports paginés vers Mon espace de travail ou d’autres espaces de travail, tant que l’espace de travail figure dans une capacité Premium. Recherchez l’icône en forme de losange ![Icône en forme de losange pour la capacité Power BI Premium](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) en regard du nom de l'espace de travail. 
 
