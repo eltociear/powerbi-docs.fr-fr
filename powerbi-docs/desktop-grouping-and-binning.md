@@ -4,25 +4,26 @@ description: Découvrez comment utiliser des éléments de groupe et de comparti
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6363cbe3afdce351acc728fe29af8662702b8254
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 64ec167a295255a6813244ef6cb222b4eccb50f3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670690"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025239"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Utiliser le regroupement et le compartimentage dans Power BI Desktop
 Lorsque **Power BI Desktop** crée des visuels, il regroupe vos données en blocs (ou groupes) en fonction des valeurs trouvées dans les données sous-jacentes. Cela suffit généralement, mais vous pouvez affiner la présentation de ces segments. Par exemple, vous pouvez placer trois catégories de produits dans une catégorie supérieure (un *groupe*). Ou vous pouvez souhaiter afficher les chiffres de ventes dans des compartiments de 1 000 000 dollars, au lieu de compartiments de 923 983 dollars divisés de façon égale.
 
 Dans Power BI Desktop, vous pouvez **Grouper** des points de données pour vous aider à afficher, analyser et explorer plus clairement les données et les tendances de vos visuels. Vous pouvez également définir la **Taille du compartiment**, souvent appelée *quantification*, pour placer des valeurs dans des groupes de taille égale qui vous permettent de visualiser les données de manière explicite.
 
-### <a name="using-grouping"></a>Utilisation du regroupement
+## <a name="using-grouping"></a>Utilisation du regroupement
 Pour utiliser le regroupement, sélectionnez deux éléments ou plus d’un visuel à l’aide de Ctrl+clic pour sélectionner plusieurs éléments. Cliquez ensuite avec le bouton de droite sur les éléments sélectionnés, puis sélectionnez **Groupe** dans le menu qui s’affiche.
 
 ![](media/desktop-grouping-and-binning/grouping-binning_1.png)
@@ -45,10 +46,8 @@ Vous pouvez ajouter une valeur non groupée dans un groupe existant : sélectio
 
 > [!NOTE]
 > Vous pouvez créer des groupes pour n’importe quel champ de la zone **Champs** sans avoir à effectuer une sélection multiple à partir d’un visuel existant. Cliquez avec le bouton de droite et sélectionnez **Nouveau groupe** dans le menu qui s’affiche.
-> 
-> 
 
-### <a name="using-binning"></a>Utilisation du compartimentage
+## <a name="using-binning"></a>Utilisation du compartimentage
 Vous pouvez définir la taille de compartiment des champs numériques et horaires dans **Power BI Desktop.** Vous pouvez utiliser le compartimentage pour redimensionner correctement les données affichées par **Power BI Desktop**.
 
 Pour appliquer une taille de compartiment, cliquez avec le bouton de droite sur un **Champ** et sélectionnez **Nouveau groupe**.

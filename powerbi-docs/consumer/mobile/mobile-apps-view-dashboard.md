@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 1b5f62e965a5a5df97a16c20f60043db534b8f77
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 9738660ced6b8dbe32e7308b86f671f21c8c312c
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547588"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979487"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -31,7 +31,7 @@ Un tableau de bord est un portail qui donne accès au cycle de vie et aux proces
 Pour afficher des tableaux de bord et des rapports sur votre appareil mobile, vous devez les créer ou vous y connecter à partir d’un navigateur web. 
 
 1. Accédez au service Power BI ([https://www.powerbi.com](https://www.powerbi.com)) et [créez un compte](../../service-self-service-signup-for-power-bi.md).
-2. [Créez vos propres tableaux de bord et vos propres rapports Power BI](../../service-get-started.md) ou connectez-vous à des [applications Power BI](../end-user-connect-to-services.md) existantes pour divers services, tels que [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md) et [Adobe Analytics](../../service-connect-to-adobe-analytics.md).
+2. [Créez vos propres tableaux de bord et vos propres rapports Power BI](../../service-get-started.md) ou connectez-vous à des [applications Power BI](../../service-connect-to-services.md) existantes pour divers services, tels que [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md) et [Adobe Analytics](../../service-connect-to-adobe-analytics.md).
 
 Voici un tableau de bord Power BI dans le service Power BI :
 

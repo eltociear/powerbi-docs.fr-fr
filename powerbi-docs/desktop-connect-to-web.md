@@ -4,18 +4,19 @@ description: Se connecter à une page web et utiliser les données de cette page
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2aef47ab1716464c0896b624069a6ebbeb4adc54
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: a0d7eeccede8f6402256eb8655657ca12dde075b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578379"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026566"
 ---
 # <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Se connecter à une page web à partir de Power BI Desktop
 Vous pouvez vous connecter à une page web et importer ses données dans Power BI Desktop, pour les utiliser dans vos éléments visuels et dans vos modèles de données.
@@ -44,7 +45,7 @@ Voilà comment se connecter à une page web et importer les données qu’elle c
 
 Pour voir plus d’informations sur la connexion à une page web et voir ce processus en action, consultez le [Guide de prise en main de Power BI Desktop](desktop-getting-started.md).
 
-### <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :
 
 * [Sources de données dans Power BI Desktop](desktop-data-sources.md)

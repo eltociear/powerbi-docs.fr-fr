@@ -4,18 +4,19 @@ description: Utiliser SAP HANA dans Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ba49fc09fb7b5a3885dbbcdf61086026e822ae03
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 7f4ff77522f083c103210dce4cdc3a7cd2325ec5
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669609"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025146"
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>Utiliser SAP HANA dans Power BI Desktop
 Avec Power BI Desktop, vous pouvez désormais accéder aux bases de données **SAP HANA** . Pour utiliser **SAP HANA**, le pilote ODBC de HANA SAP doit être installé sur l’ordinateur client local pour que la connexion de données **SAP HANA** de Power BI Desktop fonctionne correctement. Vous pouvez télécharger le pilote ODBC de SAP HANA à partir du [centre de téléchargement des logiciels SAP](https://support.sap.com/swdc). À partir de là, recherchez SAP HANA CLIENT pour les ordinateurs Windows. Étant donné que le **Centre de téléchargement de logiciels SAP** modifie sa structure fréquemment, des informations plus spécifiques sur la navigation dans ce site ne sont pas disponibles.
@@ -30,7 +31,7 @@ Lorsque vous vous connectez à une base de données SAP HANA, spécifiez le nom 
 
 Dans cette version, **SAP HANA** en mode [DirectQuery](desktop-directquery-sap-hana.md) est pris en charge dans Power BI Desktop et le service Power BI, et vous pouvez publier ou charger des rapports qui utilisent **SAP HANA** en mode DirectQuery pour le service Power BI. Vous pouvez également publier et charger des rapports dans le service Power BI quand vous n’utilisez pas **SAP HANA** en mode DirectQuery.
 
-### <a name="supported-features-for-sap-hana"></a>Fonctionnalités prises en charge pour SAP HANA
+## <a name="supported-features-for-sap-hana"></a>Fonctionnalités prises en charge pour SAP HANA
 Cette version comporte de nombreuses fonctionnalités pour **SAP HANA**, comme indiqué dans la liste suivante :
 
 * Le connecteur Power BI pour **SAP HANA** utilise le pilote ODBC de SAP pour offrir la meilleure expérience utilisateur.
@@ -40,8 +41,7 @@ Cette version comporte de nombreuses fonctionnalités pour **SAP HANA**, comme i
 * Comprend la navigation améliorée pour les modèles HANA
 * Power BI prend en charge les variables et paramètres d’entrée **SAP HANA** .
 
-### <a name="installing-the-sap-hana-odbc-driver"></a>Installation du pilote ODBC SAP HANA
-### <a name="limitations-of-sap-hana"></a>Limitations de SAP HANA
+## <a name="limitations-of-sap-hana"></a>Limitations de SAP HANA
 Il existe également quelques limitations à l’utilisation de **SAP HANA**, indiquées ci-dessous :
 
 * Les chaînes NVARCHAR sont tronquées à 4 000 caractères Unicode.

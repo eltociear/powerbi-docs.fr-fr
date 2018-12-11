@@ -4,18 +4,19 @@ description: Se connecter à un flux OData et utiliser les données dans Power 
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6cffff89a8c0086cbd7c7e229b4e678052fe6c70
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a0aa658aedb3599d7962e08289b306bf0f24028e
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669478"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025210"
 ---
 # <a name="connect-to-odata-feeds-in-power-bi-desktop"></a>Se connecter à des flux OData dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à un **flux OData** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop.
@@ -46,7 +47,7 @@ C’est tout.
 
 Vous êtes maintenant prêt à utiliser les données importées du flux OData dans Power BI Desktop pour créer des éléments visuels et des rapports ou bien pour interagir avec toutes les autres données auxquelles vous souhaitez vous connecter et que vous voulez importer, par exemple d’autres classeurs Excel, des bases de données ou toute autre source de données.
 
-### <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)

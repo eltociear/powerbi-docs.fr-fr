@@ -4,18 +4,19 @@ description: Se connecter à un classeur Excel et utiliser les données de ce fi
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 36c01851138ae8b8e74acd60b39f5b358e20e392
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: cff8950526393fd2243dbe5a4a8dcc16fcc44821
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669057"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025255"
 ---
 # <a name="connect-to-excel-in-power-bi-desktop"></a>Se connecter à Excel dans Power BI Desktop
 La connexion à un classeur Excel à partir de Power BI Desktop est simple. Cet article vous guide dans le processus.
@@ -45,7 +46,7 @@ C’est tout.
 
 Vous êtes maintenant prêt à utiliser les données importées de votre classeur Excel dans Power BI Desktop pour créer des éléments visuels et des rapports ou bien pour interagir avec toutes les autres données auxquelles vous souhaitez vous connecter et que vous voulez importer, par exemple d’autres classeurs Excel, des bases de données ou toute autre source de données.
 
-### <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
