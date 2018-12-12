@@ -32,21 +32,21 @@ items:
       href: sample-datasets.md
     - name: Utilisation des exemples de packs de contenu
       href: sample-tutorial-connect-to-the-samples.md
-    - name: 'Exemple Rentabilité des clients : visite guidée'
+    - name: 'Exemple Rentabilité des clients : Visite guidée'
       href: sample-customer-profitability.md
-    - name: 'Exemple Analyse des dépenses informatiques : visite guidée'
+    - name: 'Exemple Analyse des dépenses informatiques : Visite guidée'
       href: sample-it-spend.md
-    - name: 'Exemple Ressources humaines : visite guidée'
+    - name: 'Exemple Ressources humaines : Visite guidée'
       href: sample-human-resources.md
-    - name: 'Exemple Analyse des opportunités : visite guidée'
+    - name: 'Exemple Analyse des opportunités : Visite guidée'
       href: sample-opportunity-analysis.md
-    - name: 'Exemple Analyse de l’approvisionnement : visite guidée'
+    - name: 'Exemple Analyse de l’approvisionnement : Visite guidée'
       href: sample-procurement.md
-    - name: 'Exemple Analyse de la vente au détail : visite guidée'
+    - name: 'Exemple Analyse de la vente au détail : Visite guidée'
       href: sample-retail-analysis.md
-    - name: 'Exemple Vente et marketing : visite guidée'
+    - name: 'Exemple Vente et marketing : Visite guidée'
       href: sample-sales-and-marketing.md
-    - name: 'Exemple Analyse de la qualité des fournisseurs : visite guidée'
+    - name: 'Exemple Analyse de la qualité des fournisseurs : Visite guidée'
       href: sample-supplier-quality.md
     - name: Télécharger le classeur d’exemples financiers
       href: sample-financial-download.md
@@ -184,9 +184,9 @@ items:
         href: desktop-sap-bw-connector.md
       - name: Utilisation des liens OneDrive Entreprise dans Power BI Desktop
         href: desktop-use-onedrive-business-links.md
-      - name: 'Service tiers : connecteur Facebook pour Power BI Desktop'
+      - name: 'Service tiers : Connecteur Facebook pour Power BI Desktop'
         href: service-facebook-connector.md
-      - name: 'Service tiers : connecteur Google Analytics pour Power BI Desktop'
+      - name: 'Service tiers : Connecteur Google Analytics pour Power BI Desktop'
         href: service-google-analytics-connector.md
       - name: 'Project Online : se connecter à des données au moyen de Power BI Desktop'
         href: desktop-project-online-connect-to-data.md
@@ -734,7 +734,7 @@ items:
         href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
       - name: Dépannage d’une actualisation planifiée pour Azure SQL Database
         href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
-      - name: 'Erreur : impossible de trouver des données dans votre classeur Excel'
+      - name: 'Erreur : Impossible de trouver des données dans ce classeur Excel'
         href: service-admin-troubleshoot-excel-workbook-data.md
       - name: Résolution des erreurs de vignette
         href: refresh-troubleshooting-tile-errors.md
@@ -742,22 +742,30 @@ items:
         href: service-refresh-xero-credentials.md
     - name: Préparation des données en libre-service
       items:
-      - name: Préparation des données en libre-service avec des flux de données (préversion)
+      - name: Préparation des données en libre-service avec des dataflows (préversion)
         href: service-dataflows-overview.md
-      - name: Créer et utiliser des flux de données (préversion)
+      - name: Créer et utiliser des dataflows (préversion)
         href: service-dataflows-create-use.md
       - name: Entités calculées avec Power BI Premium (préversion)
         href: service-dataflows-computed-entities-premium.md
-      - name: Utilisation de flux de données avec des sources de données locales (préversion)
+      - name: Utilisation de dataflows avec des sources de données locales (préversion)
         href: service-dataflows-on-premises-gateways.md
-      - name: Lier des entités entre des flux de données (préversion)
+      - name: Lier des entités entre des dataflows (préversion)
         href: service-dataflows-linked-entities.md
-      - name: Utilisation d’une actualisation incrémentielle avec des flux de données (préversion)
+      - name: Utilisation d’une actualisation incrémentielle avec des dataflows (préversion)
         href: service-dataflows-incremental-refresh.md
-      - name: Ressources sur les flux de données pour les développeurs (préversion)
+      - name: Ressources sur les dataflows pour les développeurs (préversion)
         href: service-dataflows-developer-resources.md
-      - name: Se connecter à des flux de données dans Power BI Desktop
+      - name: Se connecter à des dataflows dans Power BI Desktop
         href: desktop-connect-dataflows.md
+      - name: Intégration de dataflows et d’Azure Data Lake (préversion)
+        href: service-dataflows-azure-data-lake-integration.md
+      - name: Connecter Azure Data Lake Storage Gen2 pour le stockage de dataflows (préversion)
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+      - name: Configurer les paramètres de dataflow d’espace de travail (préversion)
+        href: service-dataflows-configure-workspace-storage-settings.md
+      - name: Ajouter un dossier CDM à Power BI comme dataflow (préversion)
+        href: service-dataflows-add-cdm-folder.md
     - name: Rapports paginés dans Power BI
       items:
       - name: Que sont les rapports paginés ? (Préversion)
@@ -794,9 +802,9 @@ items:
         items:
         - name: Gérer, mettre à jour et supprimer des packs de contenu d’organisation
           href: service-organizational-content-pack-manage-update-delete.md
-        - name: 'Packs de contenu d’organisation : copie, actualisation et accès'
+        - name: 'Packs de contenu d’organisation : Copier, actualiser et obtenir l’accès'
           href: service-organizational-content-pack-copy-refresh-access.md
-        - name: Introduction aux packs de contenu d’organisation
+        - name: 'Packs de contenu d’organisation : Introduction'
           href: service-organizational-content-pack-introduction.md
         - name: Créer et publier un pack de contenu d’organisation.
           href: service-organizational-content-pack-create-and-publish.md
@@ -1253,9 +1261,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 066aa4a3b87375e29e14d1611e7e67ab58dfd482
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979671"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53181010"
