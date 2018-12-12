@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/03/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2e6eb9817071f3cbccd442014564e21463bf06f8
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: ebec34690001293e93dafd69dd76f7bdbf54981c
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448934"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900518"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 ## <a name="power-bi-visualizations"></a>Visualisations Power BI
@@ -129,7 +129,7 @@ Pour plus d’informations, consultez [Cartes de formes dans Power BI](desktop-
 ### <a name="matrix"></a>Matrice
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
 
-Pour plus d’informations, consultez [Visuels Matrice dans Power BI](desktop-shape-map.md).
+Pour plus d’informations, consultez [Visuels Matrice dans Power BI](desktop-matrix-visual.md).
 
 ### <a name="pie-charts"></a>Graphiques en secteurs
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)

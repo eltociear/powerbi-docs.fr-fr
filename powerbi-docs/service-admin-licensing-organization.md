@@ -10,20 +10,16 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 861b9c411b3088b6c16b7ad601f374bd771b13ed
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: ce44e87144d9338fbd88f0bc7183daf1b5339b35
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331985"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900471"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Gestion des licences Power BI dans votre organisation
 
-Dans le service Power BI, les fonctionnalités définies pour les utilisateurs sont basées sur deux types de licences :
-
-* **Par utilisateur** - *Licences Power BI Pro et licences gratuites*. Une licence Power BI Pro permet d’accéder à la totalité du contenu et des fonctionnalités du service Power BI, notamment la possibilité de partager du contenu et de collaborer avec d’autres utilisateurs Pro. Seuls les utilisateurs Pro peuvent publier et consulter du contenu sur des espaces de travail d’application, partager des tableaux de bord et s’abonner à des rapports et à des tableaux de bord. Une licence gratuite permet d’accéder à certaines des fonctionnalités du service Power BI. Pour plus d’informations, consultez [Fonctionnalités du service Power BI par type de licence](service-features-license-type.md).
-
-* **Selon la capacité** - *Licences Power BI Premium*. Premium offre une capacité dédiée pour fournir des performances plus cohérentes et une prise en charge de plus grands volumes de données dans Power BI. Pour les utilisateurs individuels, Premium permet également une large distribution de contenu par les utilisateurs Pro, sans nécessiter de licences Pro pour que les destinataires voient le contenu. Pour plus d’informations, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
+[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
 
 Cet article se concentre sur la gestion des licences par utilisateur du point de vue d’un administrateur.
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 554e9f3bbea5a1da6ac43f21f72b054a26849f23
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908742"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900527"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Tutoriel : Bien démarrer avec le service Power BI (app.powerbi.com)
 Ce didacticiel vous aide à bien démarrer avec le ***service Power BI***. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de commencer par lire [Qu’est-ce que Power BI ?](power-bi-overview.md).
@@ -158,5 +158,5 @@ Maintenant que vous avez terminé le tutoriel, vous pouvez supprimer le jeu de d
 Prêt à aller plus loin ?  Voici comment poursuivre votre exploration de Power BI de façon intéressante.
 
 > [!div class="nextstepaction"]
-> [Se connecter aux services en ligne que vous utilisez](consumer/end-user-connect-to-services.md)
+> [Se connecter aux services en ligne que vous utilisez](service-connect-to-services.md)
 

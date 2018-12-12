@@ -9,15 +9,15 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 723aa8e1a6817551f5e8f1c0cf096d185b1e53ae
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 23a8875479197f1d200a9f086fcfd27d483faf40
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543773"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900218"
 ---
 # <a name="template-content-pack-experiences-in-power-bi"></a>Expériences de modèle de pack de contenu dans Power BI
-Cette section présente une expérience classique pour un utilisateur qui se connecte à un [pack de contenu](consumer/end-user-connect-to-services.md) ISV.
+Cette section présente une expérience classique pour un utilisateur qui se connecte à un [pack de contenu](service-connect-to-services.md) ISV.
 
 Essayez de vous connecter vous-même en vous connectant à un pack de contenu publié sur https://app.powerbi.com/getdata/services (comme le [pack de contenu GitHub](https://app.powerbi.com/getdata/services/github) décrit ci-dessous).
 

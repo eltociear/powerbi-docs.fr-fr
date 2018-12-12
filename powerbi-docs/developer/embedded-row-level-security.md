@@ -8,21 +8,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/18/2018
-ms.openlocfilehash: 60061d781542f8b5a3ef67a75e61d902459d4963
-ms.sourcegitcommit: ded8b85276e7eda166d6e67f72d1fe3d5e234745
+ms.date: 11/28/2018
+ms.openlocfilehash: 901c087c486598019e905598ee83382664842cc8
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46506773"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578770"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
 
-La sécurité au niveau des lignes peut être utilisée pour restreindre l’accès aux données dans des tableaux de bord, vignettes, rapports et jeux de données. Plusieurs utilisateurs différents peuvent utiliser ces mêmes artefacts tout en voyant différentes données. L’incorporation prend en charge la sécurité au niveau des lignes.
+La **sécurité au niveau des lignes** peut être utilisée pour restreindre l’accès aux données dans des tableaux de bord, vignettes, rapports et jeux de données. Différents utilisateurs peuvent travailler sur ces mêmes artefacts tout en voyant des données différentes. L’incorporation prend en charge la sécurité au niveau des lignes.
 
-Si vous incorporez un rapport pour les utilisateurs non-Power BI (l’application possède les données), en général un scénario ISV, cet article est fait pour vous. Vous devez configurer le jeton d’incorporation pour prendre en compte l’utilisateur et le rôle. Poursuivez votre lecture pour savoir comment procéder.
+Si vous incorporez un rapport pour les utilisateurs non-Power BI (l’application possède les données), en général un scénario ISV, cet article est fait pour vous. Configurez le jeton d’incorporation pour prendre en compte l’utilisateur et le rôle.
 
-Si vous incorporez des rapports pour des utilisateurs Power BI (l’utilisateur possède les données), au sein de votre organisation, la sécurité au niveau des lignes fonctionne de la même façon que dans le service Power BI directement. Il n’y a rien de plus à faire dans votre application. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI](../service-admin-rls.md).
+Si vous incorporez des rapports pour des utilisateurs Power BI (l’utilisateur possède les données) au sein de votre organisation, la sécurité au niveau des lignes fonctionne de la même façon que dans le service Power BI directement. Il n’y a rien de plus à faire dans votre application. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI](../service-admin-rls.md).
 
 ![Éléments impliqués dans la sécurité au niveau des lignes.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
@@ -32,14 +32,14 @@ Pour tirer parti de la sécurité au niveau des lignes, il est important de comp
 
 **Rôles** : les utilisateurs appartiennent à des rôles. Un rôle est un conteneur de règles et peut être nommé en *Directeur des ventes* ou *Commercial*. Vous créez des rôles dans Power BI Desktop. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI Desktop](../desktop-rls.md).
 
-**Règles** : les rôles ont des règles et ces dernières sont les filtres réels qui vont être appliqués aux données. Cela peut être aussi simple que « Pays = États-Unis » ou quelque chose de beaucoup plus dynamique.
-Dans le reste de cet article, vous verrez un exemple de création d’une sécurité au niveau des lignes et de consommation au sein d’une application incorporée. Cet exemple utilise le fichier PBIX [Exemple Analyse de la vente au détail](http://go.microsoft.com/fwlink/?LinkID=780547).
+**Règles** : les rôles ont des règles et ces dernières sont les filtres réels qui vont être appliqués aux données. Les règles peuvent être aussi simples que « Pays = États-Unis » ou quelque chose de beaucoup plus dynamique.
+Dans le reste de cet article, vous verrez un exemple de création de sécurité au niveau des lignes et de consommation au sein d’une application incorporée. Cet exemple utilise le fichier PBIX [Exemple Analyse de la vente au détail](http://go.microsoft.com/fwlink/?LinkID=780547).
 
 ![Exemple de rapport](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
 ## <a name="adding-roles-with-power-bi-desktop"></a>Ajout de rôles dans Power BI Desktop
 
-Notre exemple Analyse de la vente au détail affiche les ventes pour tous les magasins d’une chaîne de distribution. Sans la sécurité au niveau des lignes, tous les directeurs régionaux qui se connectent au rapport pour le consulter voient les mêmes données. La direction a déterminé que chaque directeur régional doit voir uniquement les ventes des magasins qu’il gère, et pour ce faire, vous pouvez utiliser la sécurité au niveau des lignes.
+Notre **exemple Analyse de la vente au détail** affiche les ventes pour tous les magasins d’une chaîne de distribution. Sans la sécurité au niveau des lignes, tous les directeurs régionaux qui se connectent au rapport pour le consulter voient les mêmes données. La direction a déterminé que chaque directeur régional devait voir uniquement les ventes des magasins qu’il gère. La sécurité au niveau des lignes permet à la direction de limiter les données en fonction d’un directeur régional.
 
 La sécurité au niveau des lignes est créée dans Power BI Desktop. Lorsque le jeu de données et les rapports sont ouverts, vous pouvez basculer vers la vue de diagramme pour voir le schéma :
 
@@ -64,10 +64,10 @@ Voici comment procéder :
 2. Créez un rôle nommé **Directeur**.
 
     ![Créer un rôle](media/embedded-row-level-security/powerbi-embedded-new-role.png)
-3. Dans la table **District (Secteur)**, entrez l’expression DAX suivante : **[Directeur régional] = USERNAME()**.
+3. Dans la table **District (Secteur)**, entrez cette expression DAX : **[District Manager] = USERNAME()**.
 
     ![Instruction DAX pour la règle de sécurité au niveau des lignes](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. Pour vérifier que les règles fonctionnent, sous l’onglet **Modélisation**, sélectionnez **Afficher comme rôles**, puis sélectionnez le rôle **Manager (Directeur)** que vous venez de créer, ainsi que **Autres utilisateurs**. Entrez **AndrewMa** pour l’utilisateur.
+4. Pour vérifier que les règles fonctionnent, sous l’onglet **Modélisation**, sélectionnez **Afficher comme rôles**, puis sélectionnez le rôle **Manager (Directeur)** que vous avez créé ainsi que **Autres utilisateurs**. Entrez **AndrewMa** pour l’utilisateur.
 
     ![Boîte de dialogue Afficher comme rôles](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
 
@@ -79,13 +79,13 @@ En appliquant le filtre comme vous l’avez fait ici, tous les enregistrements d
 
 Maintenant que vous avez configuré vos rôles Power BI Desktop, vous devez effectuer certaines tâches dans votre application pour tirer parti des rôles.
 
-Les utilisateurs sont authentifiés et autorisés par votre application et les jetons d’incorporation sont utilisés pour accorder l’accès utilisateur à un rapport Power BI Embedded spécifique. Power BI Embedded n’a pas d’informations spécifiques sur l’utilisateur. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre un contexte supplémentaire dans le cadre de votre jeton d’incorporation sous la forme d’identités. Pour cela, utilisez l’API [Incorporer le jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Les utilisateurs sont authentifiés et autorisés par votre application et les jetons d’incorporation sont utilisés pour accorder l’accès utilisateur à un rapport Power BI Embedded spécifique. Power BI Embedded n’a pas d’informations spécifiques sur l’utilisateur. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre un contexte supplémentaire dans le cadre de votre jeton d’incorporation sous la forme d’identités. Vous pouvez passer les identités à l’aide de l’API [Jeton d’incorporation](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
-L’API accepte une liste des identités avec l’indication des jeux de données pertinents. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre les éléments suivants au sein de l’identité.
+L’API accepte une liste des identités avec l’indication des jeux de données pertinents. Pour que la sécurité au niveau des lignes fonctionne, vous devez transmettre les éléments suivants dans le cadre de l’identité.
 
-* **Nom d’utilisateur (obligatoire)** : il s’agit d’une chaîne qui peut être utilisée pour identifier l’utilisateur lors de l’application des règles de sécurité au niveau des lignes. Un seul utilisateur peut être répertorié. Votre nom d’utilisateur peut être créé avec des caractères *ASCII*.
+* **Nom d’utilisateur (obligatoire)**  : chaîne qui peut être utilisée pour identifier l’utilisateur lors de l’application des règles de sécurité au niveau des lignes. Un seul utilisateur peut être répertorié. Votre nom d’utilisateur peut être créé avec des caractères *ASCII*.
 * **Rôles (obligatoire)** : chaîne contenant les rôles à sélectionner lors de l’application des règles de sécurité au niveau des lignes. Si vous transmettez plusieurs rôles, ceux-ci doivent l’être en tant que tableau de chaînes.
-* **Jeu de données (obligatoire)** : jeu de données applicable à l’artefact que vous incorporez.
+* **Jeu de données (obligatoire)**  : jeu de données applicable à l’artefact que vous incorporez.
 
 Vous pouvez créer le jeton d’incorporation à l’aide de la méthode **GenerateTokenInGroup** sur **PowerBIClient.Reports**.
 
@@ -106,7 +106,9 @@ var generateTokenRequestParameters = new GenerateTokenRequest("View", null, iden
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "reportId", generateTokenRequestParameters);
 ```
 
-Si vous appelez l’API REST, l’API mise à jour accepte maintenant un tableau JSON supplémentaire, nommé **Identités**, qui contient un nom d’utilisateur, la liste des rôles de chaîne et la liste des jeux de données de chaîne, par exemple :
+Si vous appelez l’API REST, l’API mise à jour accepte maintenant un tableau JSON supplémentaire, nommé **Identités**, qui contient un nom d’utilisateur, la liste des rôles de chaîne et la liste des jeux de données de chaîne. 
+
+Utilisez le code suivant en guise d’exemple :
 
 ```json
 {
@@ -121,7 +123,7 @@ Si vous appelez l’API REST, l’API mise à jour accepte maintenant un tableau
 }
 ```
 
-Maintenant, quand une personne se connecte à votre application pour afficher cet artefact, elle peut uniquement voir les données qu’elle est autorisée à voir, en fonction de ce qui a été défini par la sécurité au niveau des lignes.
+Maintenant, quand une personne se connecte à votre application pour afficher cet artefact, elle voit les données qu’elle est autorisée à voir, en fonction de ce qui a été défini par la sécurité au niveau des lignes.
 
 ## <a name="working-with-analysis-services-live-connections"></a>Utilisation des connexions actives d’Analysis Services
 
@@ -129,38 +131,45 @@ Vous pouvez utiliser la sécurité au niveau des lignes avec les connexions acti
 
 L’identité effective fournie pour la propriété de nom d’utilisateur doit être celle d’un utilisateur Windows disposant d’autorisations sur le serveur Analysis Services.
 
-**Configuration d’une passerelle de données locale**
+### <a name="on-premises-data-gateway-configuration"></a>Configuration d’une passerelle de données locale
 
 Une [passerelle de données locale](../service-gateway-onprem.md) est utilisée lors de l’utilisation des connexions actives d’Analysis Services. Lorsque vous générez un jeton incorporé, avec une identité répertoriée, le compte principal doit être répertorié en tant qu’administrateur de la passerelle. Si le compte principal n’est pas listé, la sécurité au niveau des lignes n’est pas appliquée à la propriété des données. Une personne qui n’est pas administrateur de la passerelle peut fournir des rôles, mais doit spécifier son propre nom d’utilisateur en tant qu’identité effective.
 
-**Utilisation des rôles**
+### <a name="use-of-roles"></a>Utilisation des rôles
 
 Des rôles peuvent être fournis avec l’identité dans un jeton d’incorporation. Si aucun rôle n’est fourni, le nom d’utilisateur fourni peut être utilisé pour résoudre les rôles associés.
 
-**Utilisation de la fonctionnalité CustomData**
+### <a name="using-the-customdata-feature"></a>Utilisation de la fonctionnalité CustomData
 
-La fonctionnalité CustomData permet de passer du texte libre (chaîne) à l’aide de la propriété de chaîne de connexion CustomData, une valeur qu’utilise AS (via la fonction CUSTOMDATA()).
-Vous pouvez l’utiliser comme un autre moyen de personnaliser la consommation de données.
+CustomData fonctionne uniquement pour les modèles qui résident dans **Azure Analysis Services** et uniquement en mode **Connexion directe**. Contrairement aux utilisateurs et aux rôles, la fonctionnalité Customdata ne peut pas être définie dans un fichier .pbix. Lors de la génération d’un jeton avec la fonctionnalité Customdata, vous devez avoir un nom d’utilisateur.
+
+La fonctionnalité CustomData vous permet d’ajouter un filtre de lignes lors de l’affichage des données Power BI dans votre application quand vous utilisez **Azure Analysis Services** comme source de données (affichage de données Power BI connectées à Azure Analysis Services dans votre application).
+
+La fonctionnalité CustomData permet de passer du texte libre (chaîne) à l’aide de la propriété de chaîne de connexion CustomData. Analysis Services utilise cette valeur par le biais de la fonction *CUSTOMDATA()*.
+
+Le seul moyen de disposer d’une sécurité au niveau des lignes dynamique (qui utilise des valeurs dynamiques pour l’évaluation de filtre) dans **Azure Analysis Services** consiste à utiliser la fonction *CUSTOMDATA()*.
+
 Vous pouvez l’utiliser à l’intérieur de la requête DAX de rôle, de même que sans aucun rôle dans une requête DAX de mesure.
 La fonctionnalité CustomData fait partie de nos fonctionnalités de génération de jetons pour les artefacts suivants : tableau de bord, rapport et vignette. Les tableaux de bord peuvent avoir plusieurs identités CustomData (une par vignette/modèle).
 
-> [!NOTE]
-> CustomData fonctionne uniquement pour les modèles qui se trouvent dans Azure Analysis Services et uniquement en mode réel. Contrairement aux utilisateurs et aux rôles, la fonctionnalité de données personnalisées ne peut pas être définie dans un fichier .pbix. Quand vous générez un jeton avec la fonctionnalité de données personnalisées, vous devez avoir un nom d’utilisateur.
-
-**Ajouts du SDK CustomData**
+#### <a name="customdata-sdk-additions"></a>Ajouts du SDK CustomData
 
 La propriété de chaîne CustomData a été ajoutée à notre identité effective dans le scénario de génération de jetons.
 
-        [JsonProperty(PropertyName = "customData")]
-        public string CustomData { get; set; }
+```json
+[JsonProperty(PropertyName = "customData")]
+public string CustomData { get; set; }
+```
 
 L’identité peut être créée avec des données personnalisées à l’aide de l’appel suivant :
 
-        public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```csharp
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```
 
-**Utilisation du SDK CustomData**
+#### <a name="customdata-sdk-usage"></a>Utilisation du SDK CustomData
 
-Si vous appelez l’API REST, vous pouvez ajouter des données personnalisées dans chaque identité, par exemple :
+Si vous appelez l’API REST, vous pouvez ajouter des données personnalisées dans chaque identité, par exemple :
 
 ```json
 {
@@ -176,14 +185,68 @@ Si vous appelez l’API REST, vous pouvez ajouter des données personnalisées d
 }
 ```
 
+Voici les étapes pour commencer à configurer la fonctionnalité CustomData() avec votre application Power BI Embedded.
+
+1. Créez votre base de données Azure Analysis Services. Ensuite, connectez-vous à votre serveur Azure Analysis Services par le biais de [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+
+    ![Créer une base de données Azure Analysis Services](media/embedded-row-level-security/azure-analysis-services-database-create.png)
+
+    ![Base de données Analysis Services](media/embedded-row-level-security/azure-analysis-services-database.png)
+
+2. Créez un rôle dans le serveur Analysis Services.
+
+    ![Créer un rôle](media/embedded-row-level-security/azure-analysis-services-database-create-role.png)
+
+3. Définissez vos paramètres **Généraux**.  Ici, vous attribuez le **Nom du rôle** et définissez les autorisations de base de données sur **Lecture** uniquement.
+
+    ![Créer un rôle - Définir les paramètres généraux](media/embedded-row-level-security/azure-analysis-services-database-create-role-general-settings.png)
+
+4. Définissez les paramètres d’**Appartenance**. Ici, vous ajoutez les utilisateurs qui sont concernés par ce rôle.
+
+    ![Créer un rôle - Définir les paramètres d’appartenance](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
+
+5. Définissez votre requête DAX **Filtres de lignes** à l’aide de la fonction *CUSTOMDATA()*.
+
+    ![Créer un rôle - Définir des filtres de lignes](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
+
+6. Générez un rapport PBI et publiez-le sur un espace de travail avec une capacité dédiée.
+
+    ![Exemple de rapport PBI](media/embedded-row-level-security/rls-sample-pbi-report.png)
+
+7. Utilisez les API Power BI pour utiliser la fonctionnalité CustomData dans votre application.  Lors de la génération d’un jeton avec la fonctionnalité Customdata, vous devez avoir un nom d’utilisateur. Le nom d’utilisateur doit être identique à l’UPN de l’utilisateur principal. L’utilisateur principal doit être un membre du ou des rôles que vous avez créés. Si aucun rôle n’est spécifié, tous les rôles dont l’utilisateur principal est membre sont utilisés pour l’évaluation de la fonction de sécurité au niveau des lignes.
+
+    > [!Note]
+    > Quand vous êtes prêt à déployer votre application en production, l’option ou le champ de compte d’utilisateur principal ne doit pas être visible par l’utilisateur final.
+
+    Affichez le [code](#customdata-sdk-additions) pour ajouter la fonctionnalité CustomData.
+
+8. Vous pouvez maintenant afficher le rapport dans votre application avant d’appliquer les valeurs Customdata pour voir toutes les données contenues dans votre rapport.
+
+    ![Avant l’application des données personnalisées](media/embedded-row-level-security/customdata-before.png)
+
+    Appliquez ensuite les valeurs Customdata pour vérifier que le rapport affiche un ensemble de données différent.
+    ![Après l’application des données personnalisées](media/embedded-row-level-security/customdata-after.png)
+
+## <a name="using-rls-vs-javascript-filters"></a>Utilisation de la sécurité au niveau des lignes ou de filtres JavaScript
+
+Quand vous décidez de filtrer vos données dans un rapport, vous pouvez utiliser la **sécurité au niveau des lignes** ou des **filtres JavaScript**.
+
+La [sécurité au niveau des lignes](../service-admin-rls.md) est une fonctionnalité qui filtre les données au niveau du modèle de données. Votre source de données back-end contrôle vos paramètres de sécurité au niveau des lignes. En fonction de votre modèle de données, la génération de jeton d’incorporation définit le nom d’utilisateur et les rôles pour la session. Ces informations ne peuvent pas être substituées, supprimées ou contrôlées par le code côté client, c’est pourquoi elles sont considérées comme sécurisées. Nous vous recommandons d’utiliser la sécurité au niveau des lignes pour filtrer les données en toute sécurité. Vous pouvez filtrer les données avec la sécurité au niveau des lignes en utilisant l’une des options ci-dessous.
+
+* [Configuration des rôles dans un rapport Power BI](../desktop-rls.md).
+* Configuration des rôles au niveau de la source de données (connexion active Analysis Services uniquement).
+* Par programmation avec un [jeton d’incorporation](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) à l’aide de `EffectiveIdentity`. Quand vous utilisez un jeton d’incorporation, le filtre réel traverse le jeton d’incorporation pour une session spécifique.
+
+Les [filtres de JavaScript](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) servent à autoriser l’utilisateur à consommer une vue des données filtrée, réduite ou à portée spécifique. Toutefois, l’utilisateur a quand même accès aux tables, colonnes et mesures du schéma de modèle, et il peut potentiellement accéder à toutes les données qui s’y trouvent. L’accès restreint aux données peut uniquement être appliqué avec la sécurité au niveau des lignes, et non par le biais des API de filtrage côté client.
+
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
 * L’attribution d’utilisateurs aux rôles, dans le service Power BI, n’affecte pas la sécurité au niveau des lignes lors de l’utilisation d’un jeton d’incorporation.
-* Alors que le service Power BI n’applique pas le paramètre de sécurité au niveau des lignes aux administrateurs ni aux membres dotés d’autorisations de modification, lorsque vous fournissez une identité avec un jeton d’incorporation, celle-ci est appliquée aux données.
+* Bien que le service Power BI n’applique pas le paramètre de sécurité au niveau des lignes aux administrateurs ni aux membres dotés d’autorisations de modification, quand vous fournissez une identité avec un jeton d’incorporation, celle-ci est appliquée aux données.
 * Les connexions actives Analysis Services sont prises en charge pour les serveurs locaux.
 * Les connexions actives Azure Analysis Services prennent en charge le filtrage par rôles. Le filtrage dynamique peut être effectué à l’aide de CustomData.
 * Si le jeu de données sous-jacent ne nécessite pas la sécurité au niveau des lignes, la demande GenerateToken ne doit **pas** contenir d’identité effective.
-* Si le jeu de données sous-jacent est un modèle cloud (modèle mis en cache ou DirectQuery), l’identité effective doit inclure au moins un rôle. Sinon, l’attribution de rôle n’est pas effectuée.
+* Si le jeu de données sous-jacent est un modèle cloud (modèle mis en cache ou DirectQuery), l’identité effective doit inclure au moins un rôle. Sinon, l’attribution de rôle n’a pas lieu.
 * Une liste d’identités active plusieurs jetons d’identité pour l’incorporation de tableau de bord. Pour tous les autres artefacts, la liste contient une identité unique.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

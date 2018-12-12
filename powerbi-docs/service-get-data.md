@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a23a725ecad5641c3f82fa4c57ee1a0bc951e28
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: e0721efaaca879ffb2915315af9aea4dbafca3ca
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670375"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900241"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Sources de données pour le service Power BI
 Les données sont au cœur de Power BI. Chaque fois que vous explorez des données, créez des graphiques et des tableaux de bord ou posez des questions avec Questions et réponses, toutes les visualisations et les réponses que vous voyez tirent réellement leurs données sous-jacentes d’un jeu de données. Mais d’où provient ce jeu de données ? D’une source de données.
@@ -44,7 +44,7 @@ De plus, l’endroit où vous stockez vos fichiers peut faire une grosse différ
 
 Les packs de contenu contiennent toutes les données et tous les rapports dont vous avez besoin, déjà prêts. Dans Power BI, il existe deux types de packs de contenu : ceux des services tels que Google Analytics, Marketo ou Salesforce et ceux créés et partagés par d’autres utilisateurs dans votre organisation.
 
-**Services** : il existe des douzaines de services avec des packs de contenu pour Power BI et de nouveaux packs sont constamment ajoutés. La plupart des services nécessitent de posséder un compte. Pour plus d’informations, consultez [Se connecter aux services](consumer/end-user-connect-to-services.md).
+**Services** : il existe des douzaines de services avec des packs de contenu pour Power BI et de nouveaux packs sont constamment ajoutés. La plupart des services nécessitent de posséder un compte. Pour plus d’informations, consultez [Se connecter aux services](service-connect-to-services.md).
 
 **Organisationnel** : si vous et d’autres utilisateurs de l’organisation possédez un compte Power BI Pro, vous pouvez créer, partager et utiliser des packs de contenu. Pour plus d’informations, consultez [Packs de contenu organisationnels](service-organizational-content-pack-introduction.md).
 
