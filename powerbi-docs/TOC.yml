@@ -262,19 +262,19 @@ items:
         href: desktop-inline-hierarchy-labels.md
       - name: Utiliser un sélecteur de plages numériques
         href: desktop-slicer-numeric-range.md
-      - name: Créer un segment réactif que vous pouvez redimensionner
+      - name: Créer un segment redimensionnable
         href: power-bi-slicer-filter-responsive.md
-      - name: Créer des cartes de réponse personnalisées Power BI pour Cortana
+      - name: Créer des cartes de réponse personnalisées pour Cortana
         href: service-cortana-answer-cards.md
       - name: Sécurité au niveau des lignes
         href: desktop-rls.md
-      - name: Personnalisation des info-bulles dans Power BI Desktop
+      - name: Personnaliser des info-bulles
         href: desktop-custom-tooltips.md
-      - name: Mise en forme conditionnelle des tables dans Power BI Desktop
+      - name: Mise en forme conditionnelle des tables
         href: desktop-conditional-table-formatting.md
       - name: Trier par colonne dans Power BI Desktop
         href: desktop-sort-by-column.md
-      - name: Créer des rapports optimisés pour les applications Power BI pour téléphone
+      - name: Créer des rapports optimisés pour les applications mobiles
         href: desktop-create-phone-report.md
       - name: Utiliser les options Afficher les données et Afficher les enregistrements
         href: desktop-see-data-see-records.md
@@ -284,23 +284,23 @@ items:
       items:
       - name: Meilleures pratiques de visualisation
         href: visuals/power-bi-visualization-best-practices.md
-      - name: Modifier le type de visualisation dans un rapport Power BI
+      - name: Modifier le type de visualisation dans un rapport
         href: visuals/power-bi-report-change-visualization-type.md
       - name: Limites par type d’élément visuel du point de données
         href: visuals/power-bi-data-points.md
       - name: Prise en main de la mise en forme des couleurs et des propriétés d’axe
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
-      - name: Trucs et astuces pour la mise en forme des couleurs dans Power BI
+      - name: Trucs et astuces pour la mise en forme des couleurs
         href: visuals/service-tips-and-tricks-for-color-formatting.md
-      - name: Copier et coller une visualisation dans Power BI
+      - name: Copier et coller une visualisation
         href: visuals/power-bi-visualization-copy-paste.md
       - name: Exporter les données utilisées pour créer la visualisation
         href: visuals/power-bi-visualization-export-data.md
-      - name: Déplacer, redimensionner et ouvrir dans une nouvelle fenêtre une visualisation dans un rapport Power BI
+      - name: Déplacer, redimensionner et ouvrir dans une nouvelle fenêtre une visualisation dans un rapport
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: Liens hypertexte dans les tables
         href: power-bi-hyperlinks-in-tables.md
-      - name: Ajouter un lien hypertexte à une zone de texte dans un rapport Power BI
+      - name: Ajouter un lien hypertexte à une zone de texte dans un rapport
         href: service-add-hyperlink-to-text-box.md
       - name: Modifier l’interaction des éléments visuels dans un rapport
         href: service-reports-visual-interactions.md
@@ -598,7 +598,7 @@ items:
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Tableaux de bord
       items:
-      - name: Tableau de bord Power BI
+      - name: Présentation des tableaux de bord
         href: service-dashboards.md
       - name: Mise à jour des vignettes de tableau de bord
         href: service-dashboard-tiles.md
@@ -692,6 +692,8 @@ items:
         href: service-create-workspaces.md
       - name: Créer de nouveaux espaces de travail (préversion)
         href: service-create-the-new-workspaces.md
+      - name: Gérer le stockage de données dans des espaces de travail
+        href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: Partager un rapport filtré
         href: service-share-reports.md
       - name: Publier à partir de Power BI sur le web
@@ -742,21 +744,21 @@ items:
         href: service-refresh-xero-credentials.md
     - name: Préparation des données en libre-service
       items:
-      - name: Préparation des données en libre-service avec des dataflows (préversion)
+      - name: Préparation des données en libre-service avec des flux de données (préversion)
         href: service-dataflows-overview.md
-      - name: Créer et utiliser des dataflows (préversion)
+      - name: Créer et utiliser des flux de données (préversion)
         href: service-dataflows-create-use.md
       - name: Entités calculées avec Power BI Premium (préversion)
         href: service-dataflows-computed-entities-premium.md
-      - name: Utilisation de dataflows avec des sources de données locales (préversion)
+      - name: Utilisation de flux de données avec des sources de données locales (préversion)
         href: service-dataflows-on-premises-gateways.md
-      - name: Lier des entités entre des dataflows (préversion)
+      - name: Lier des entités entre des flux de données (préversion)
         href: service-dataflows-linked-entities.md
-      - name: Utilisation d’une actualisation incrémentielle avec des dataflows (préversion)
+      - name: Utilisation d’une actualisation incrémentielle avec des flux de données (préversion)
         href: service-dataflows-incremental-refresh.md
-      - name: Ressources sur les dataflows pour les développeurs (préversion)
+      - name: Ressources sur les flux de données pour les développeurs (préversion)
         href: service-dataflows-developer-resources.md
-      - name: Se connecter à des dataflows dans Power BI Desktop
+      - name: Se connecter à des flux de données dans Power BI Desktop
         href: desktop-connect-dataflows.md
       - name: Intégration de dataflows et d’Azure Data Lake (préversion)
         href: service-dataflows-azure-data-lake-integration.md
@@ -1261,9 +1263,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 0189fe52981e1bc926ae8a836791e7111e4b530e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53181010"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280959"
