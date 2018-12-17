@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: fb25ae7408ddb19d7e8bc9c91c0e1b0f65d2bf42
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026244"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280624"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>La nouvelle expérience de filtre dans les rapports Power BI (préversion)
 
@@ -34,11 +34,11 @@ En tant que concepteur de rapports, voici ce que vous pouvez faire avec les nouv
 
 ## <a name="turn-on-the-new-filter-experience"></a>Activer la nouvelle expérience de filtre 
 
-Vous activez la nouvelle expérience dans Power BI Desktop. Ensuite, vous pouvez modifier les filtres à cet emplacement ou dans le service Power BI (https://app.powerbi.com). Étant donné que cette nouvelle expérience de filtre est disponible en préversion, vous devez tout d’abord l’activer dans Power BI Desktop. 
+Vous activez la nouvelle expérience dans Power BI Desktop. Ensuite, vous pouvez modifier les filtres à cet emplacement ou dans le service Power BI (https://app.powerbi.com). Étant donné que cette nouvelle expérience de filtre est disponible en préversion, vous devez tout d’abord l’activer dans Power BI Desktop. Si vous commencez par créer un rapport dans le service Power BI, celui-ci ne peut pas avoir les nouveaux filtres.
 
 ### <a name="turn-on-new-filters-for-all-new-reports"></a>Activer de nouveaux filtres pour tous les nouveaux rapports
 
-1. Sélectionnez **Fichier** > **Options et paramètres** > **Options** > **Fonctionnalités en préversion**, puis cochez la case **Nouvelle expérience de filtre**. 
+1. Dans Power BI Desktop, sélectionnez **Fichier** > **Options et paramètres** > **Options** > **Fonctionnalités en préversion**, puis cochez la case **Nouvelle expérience de filtre**. 
 2. Redémarrez Power BI Desktop pour afficher la nouvelle expérience de filtre dans tous les nouveaux rapports.
 
 Une fois que vous redémarrez Power BI Desktop, la nouvelle expérience est activée par défaut pour tous les nouveaux rapports que vous créez.  
@@ -47,7 +47,7 @@ Une fois que vous redémarrez Power BI Desktop, la nouvelle expérience est acti
 
 Vous pouvez également activer les nouveaux filtres pour les rapports existants.
 
-1. Dans un rapport existant, sélectionnez **Fichier** > **Options et paramètres** > **Options**
+1. Dans Power BI Desktop, dans un rapport existant, sélectionnez **Fichier** > **Options et paramètres** > **Options**
 2. Sous **Paramètres du rapport**, sélectionnez **Activer le volet de filtre mis à jour et afficher les filtres dans l'en-tête du visuel de ce rapport**.
 
 ## <a name="build-the-new-filter-pane"></a>Générer le nouveau volet de filtre
@@ -79,14 +79,14 @@ Vous pouvez également configurer l’état de votre volet de filtre pour qu’i
 
 Une grande partie de cette nouvelle expérience est que vous pouvez désormais mettre en forme le volet de filtre pour qu’il corresponde à l’apparence de votre rapport. Vous pouvez mettre en forme le volet de filtre différemment pour chaque page du rapport. Voici les éléments que vous pouvez mettre en forme : 
 
-- Couleur d’arrière-plan
+- Couleur d'arrière-plan
 - Transparence d’arrière-plan
 - Bordure du volet de filtre activée ou désactivée
 - Couleur de bordure du volet de filtre
 
 Vous pouvez également mettre en forme ces éléments pour les cartes de filtre, selon qu’elles sont appliquées (définies sur quelque chose) ou disponibles (désactivées) : 
 
-- Couleur d’arrière-plan
+- Couleur d'arrière-plan
 - Transparence d’arrière-plan
 - Bordure : activée ou désactivée
 - Couleur de la bordure

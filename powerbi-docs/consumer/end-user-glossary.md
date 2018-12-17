@@ -2,17 +2,18 @@
 title: Glossaire pour les consommateurs de Power BI
 description: Power BI introduit de nombreux termes nouveaux, ainsi que de nouvelles utilisations de termes familiers. Utilisez notre glossaire pour bien comprendre la terminologie de Power BI.
 services: power-bi
+ms.custom: seodec18
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/12/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026343"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280785"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -42,7 +43,7 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 **AppSource** Référentiel en ligne centralisé où vous pouvez parcourir et découvrir des tableaux de bord, rapports, jeux de données et applications à télécharger.
 
-**ArcGIS Maps for Power BI** ArcGIS est une plateforme de mappage et d’analytique créée par la société ESRI. Le nom du visuel inclus dans la bibliothèque de visuels Power BI est « ArcGIS Maps for Power BI ».
+**ArcGIS pour Power BI** ArcGIS est une plateforme de mappage et d’analytique créée par la société ESRI. Le nom du visuel inclus dans la bibliothèque de visuels Power BI est « ArcGIS pour Power BI ».
 
 **affecter** [Power BI Premium] Verbe utilisé pour le déplacement d’un espace de travail dans ou en dehors d’une capacité dédiée. N’utilisez pas « promouvoir » pour le déplacement d’un espace de travail vers une capacité dédiée, car cela a une connotation de supériorité de la capacité dédiée sur la capacité partagée.  
 

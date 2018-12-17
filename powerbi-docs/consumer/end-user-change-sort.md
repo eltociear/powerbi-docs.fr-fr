@@ -1,33 +1,34 @@
 ---
-title: Modifier le mode tri d’un graphique dans un rapport Power BI
-description: Modifier le mode tri d’un graphique dans un rapport Power BI
+title: Changer le mode tri d’un graphique dans un rapport
+description: Changer le mode tri d’un graphique dans un rapport Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: Conceptual
-ms.date: 09/20/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: f4ca6633eb401e7df8041ea385284210c14995ad
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: 191dfdeba436322052befdbc6548fd08f96f0738
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979332"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280003"
 ---
-# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Modifier le mode tri d’un graphique dans un rapport Power BI
+# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Changer le mode tri d’un graphique dans un rapport Power BI
 Dans un rapport Power BI, vous pouvez trier la plupart des visualisations par ordre alphabétique en fonction des noms de catégories du graphique ou des valeurs numériques de chaque catégorie. Par exemple, ce graphique est trié par la catégorie **nom de magasin**.
 
-![](media/end-user-change-sort/pbi_chartsortcategory.png)
+![graphique à barres trié par l’axe des X](media/end-user-change-sort/pbi_chartsortcategory.png)
 
 Il est facile de passer du tri par catégorie (nom de magasin) au tri par valeur (ventes par mètres carrés).
 
 1. Sélectionnez les points de suspension (...) et choisissez **Trier par > Sales Per Sq Ft** (Ventes par m²).
 2. Si nécessaire, sélectionnez les points de suspension à nouveau et choisissez **Tri décroissant**.
 
-   ![](media/end-user-change-sort/sort.gif)
+   ![vidéo montrant la sélection de Trier par, puis Croissant et Décroissant](media/end-user-change-sort/sort.gif)
 
    **REMARQUE** : Certains visuels ne peuvent pas être triés.  Par exemple, les visuels suivants ne peuvent pas être triés : Arborescence, Carte géographique, Carte choroplèthe, Nuage de points, Jauge, Carte, Carte de plusieurs ligne, Cascade.
 
