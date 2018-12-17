@@ -1,44 +1,42 @@
 ---
-title: Versions gratuite et Pro de Power BI
-description: Chaque utilisateur dans Power BI a soit la version gratuite soit la version Pro. Il est utile de comprendre les différences entre ces deux types d’utilisateur.
+title: Fonctionnalités du service Power BI par type de licence
+description: 'Dans le service Power BI, les fonctionnalités définies pour les utilisateurs sont basées sur deux types de licences : par utilisateur (gratuit et Pro) et selon la capacité.'
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/13/2018
+ms.date: 12/06/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 62d6a274b7cfb784f4f61b0973bad22ea6194698
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: fab6181997fd57448a152fe315efcadf076e4fbb
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641295"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025871"
 ---
-# <a name="power-bi-free-vs-pro"></a>Versions gratuite et Pro de Power BI
+# <a name="power-bi-service-features-by-license-type"></a>Fonctionnalités du service Power BI par type de licence
 
-Chaque utilisateur dans Power BI a soit la version gratuite soit la version Pro. Il est utile de comprendre les différences entre ces deux types d’utilisateur.
+[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
 
-*Les utilisateurs* du service se décomposent en deux catégories : Gratuits ou Pro. La principale différence entre un utilisateur gratuit ou Pro est axée sur le partage et la collaboration. Seuls les utilisateurs Pro peuvent publier du contenu sur les espaces de travail d’application, consommer des applications sans la capacité Premium, partager des tableaux de bord et s’abonner aux rapports et tableaux de bord. Les utilisateurs gratuits peuvent maintenant se connecter à toutes les sources de données au moyen de l’ensemble des options de connectivité (DirectQuery, connexion active, utilisation de la passerelle de données, etc.).
+## <a name="per-user-license-type-comparison"></a>Comparaison des types de licences par utilisateur
 
-Si une application est publiée et que l’espace de travail d’application associé est attribué à la capacité Premium, les utilisateurs de la version gratuite peuvent consommer ces applications.
-
-## <a name="free-vs-pro-comparison"></a>Comparaison entre les versions gratuite et Pro
-Voici la liste des fonctionnalités prises en charge par type d’utilisateur.
+Voici la liste des fonctionnalités prises en charge par le type de licence par utilisateur.
 
 |  | Gratuit | Pro |
 | --- | --- | --- |
 | **Connexion à plus de 70 sources de données** |![Fonctionnalité disponible](media/features-license-type/available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
 | **Publication sur le web** |![Fonctionnalité disponible](media/features-license-type/available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
-| **Partage pair à pair** |![Fonctionnalité non disponible](media/features-license-type/not-available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
 | **Exportation vers PowerPoint, Excel, CSV** |![Fonctionnalité disponible](media/features-license-type/available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
 | **Distribution d’entreprise** | | |
 | Applications |![Fonctionnalité non disponible](media/features-license-type/not-available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
 | Abonnements par courrier |![Fonctionnalité non disponible](media/features-license-type/not-available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
 | API et commandes incorporées |![Fonctionnalité non disponible](media/features-license-type/not-available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
 | **Collaboration** | | |
+| Partage pair à pair |![Fonctionnalité non disponible](media/features-license-type/not-available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
 | Espaces de travail d’application |![Fonctionnalité non disponible](media/features-license-type/not-available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
 | Analyser dans Excel, analyser dans Power BI Desktop |![Fonctionnalité non disponible](media/features-license-type/not-available.png) |![Fonctionnalité disponible](media/features-license-type/available.png) |
 

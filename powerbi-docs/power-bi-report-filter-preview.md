@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d2d8bef9689fd2e9db99c0a521a5ee326845b1de
-ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
+ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51611357"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026244"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>La nouvelle expérience de filtre dans les rapports Power BI (préversion)
 
-Cet article décrit la nouvelle expérience de filtre : les filtres dans Power BI bénéficient de nouvelles fonctionnalités et d’une nouvelle conception. Lorsque vous concevez des rapports dans Power BI Desktop ou dans le service Power BI, vous pouvez faire en sorte que le volet Filtres ressemble à l’ensemble du rapport et interagisse avec celui-ci. Dans la nouvelle expérience, l’ancien volet Filtres agit en tant que volet d’édition de filtre et le nouveau volet Filtre est le seul que vos consommateurs de rapports peuvent afficher. 
+Cet article décrit la nouvelle expérience de filtre : Les filtres dans Power BI bénéficient de nouvelles fonctionnalités et d’une nouvelle conception. Lorsque vous concevez des rapports dans Power BI Desktop ou dans le service Power BI, vous pouvez faire en sorte que le volet Filtres ressemble à l’ensemble du rapport et interagisse avec celui-ci. Dans la nouvelle expérience, l’ancien volet Filtres agit en tant que volet d’édition de filtre et le nouveau volet Filtre est le seul que vos consommateurs de rapports peuvent afficher. 
  
 ![Affichage par défaut (aucune personnalisation supplémentaire appliquée)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
 
@@ -98,7 +98,7 @@ Vous pouvez également mettre en forme ces éléments pour les cartes de filtre,
 
     ![Sélectionner l’icône Format](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
-1. Développez le **volet Filtre** pour définir la couleur de l’arrière-plan, la police, l’icône et la bordure gauche de la page du rapport.
+1. Développez le **volet Filtre** pour définir la couleur de l’arrière-plan, l’icône et la bordure gauche de la page du rapport.
 
     ![Développer le volet Filtre](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
 

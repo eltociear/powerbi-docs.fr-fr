@@ -1,5 +1,5 @@
 ---
-title: Gérer une passerelle pour Power BI
+title: Gérer une passerelle locale Power BI
 description: Découvrez comment gérer une passerelle pour pouvoir vous connecter à des données locales dans Power BI.
 author: mgblythe
 manager: kfile
@@ -9,15 +9,16 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8369566712e24c035ac0ec07cc7d5a219041a400
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 21eaca02502ae67ba5ecddff8e1b8890e0a049af
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755159"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026382"
 ---
-# <a name="manage-a-power-bi-gateway"></a>Gérer une passerelle Power BI
+# <a name="manage-a-power-bi-on-premises-gateway"></a>Gérer une passerelle locale Power BI
 
 Après avoir [installé une passerelle de données Power BI](service-gateway-install.md), vous la gérez en fonction de vos besoins. Dans cette rubrique, vous apprendrez à : ajouter et supprimer des sources de données et des utilisateurs ; redémarrer une passerelle ; migrer, restaurer, reprendre et supprimer une passerelle. 
 

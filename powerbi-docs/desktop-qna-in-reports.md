@@ -1,21 +1,21 @@
 ---
 title: Utilisation de Q&A dans Power BI Desktop
 description: Vous pouvez maintenant utiliser des requêtes en langage naturel dans Power BI Desktop, à l’aide de Q&A
-author: davidiseminger
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.author: davidi
+ms.date: 12/05/2018
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c0736728d1dfce5a571eb1950670bc9fc9fa1c1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 4a9ab6173422ec2f897050b2f456847b342e9fa2
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670759"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026727"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Utiliser Q&A dans Power BI Desktop pour des requêtes en langage naturel
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et ce qui est encore plus fort, c’est que vos données répondent, grâce à Q&A dans **Power BI Desktop**.
@@ -25,9 +25,6 @@ Pour que l’application Q&A interprète correctement les nombreuses questions a
 > [!NOTE]
 > Q&A est disponible uniquement quand vous utilisez un modèle qui contient des données **importées**. Les connexions actives aux modèles SSAS et DirectQuery ne sont pas prises en charge.
 >
->
-
-> [!NOTE]
 > Questions et réponses nécessite la mise à jour du runtime C suivante si vous utilisez une version de Windows antérieure à Windows 10. Vous pouvez essayer d’installer des mises à jour importantes à partir de Windows Update ou installer manuellement le composant requis à partir de Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
@@ -49,11 +46,11 @@ Si des relations entre tables sont manquantes dans votre modèle, ni les rapport
 
 ## <a name="rename-tables-and-columns"></a>Renommer les tables et les colonnes
 
-Pour Q&A, le choix des tables et des colonnes est primordial. Par exemple, si vous avez une table nommée *CustomerSummary* qui contient une liste de vos clients, vous devez poser des questions telles que « Liste des résumés de client à Chicago » plutôt que « Liste des clients à Chicago ». 
+Pour Q&A, le choix des tables et des colonnes est important. Par exemple, imaginons que vous avez une table nommée *CustomerSummary* qui contient une liste de vos clients. Vous devriez poser des questions comme « Liste des résumés clients à Chicago » plutôt que « Liste des clients à Chicago ». 
 
 Même si l’application est capable de reconnaître des mots de base et des pluriels, Q&A part du principe que le nom de vos tables et colonnes reflète précisément leur contenu.
 
-Prenons un autre exemple. Imaginez que vous avez une table nommée *Headcount* qui contient les noms et prénoms des employés ainsi que leur numéro, et une autre table nommée *Employees* qui contient des numéros d’employés, des numéros de tâches et des dates de début. Même si les personnes habituées au modèle pourraient comprendre, une autre personne qui demande « nombre d’employés » obtiendra le total des lignes de la table « Employees », ce qui n’est probablement pas ce qu’elle recherchait, puisqu’il s’agit du nombre de tâches par employé. Il serait préférable de renommer ces tables de manière à refléter réellement ce qu’elles contiennent.
+Prenons un autre exemple. Imaginons que vous avez une table nommée *Headcount* qui contient les noms et prénoms, et le nombre des employés. Vous avez une autre table nommée *Employees* qui contient le nombre des employés, le nombre de tâches et les dates de début. Les utilisateurs familiarisés avec le modèle peuvent comprendre cette structure. Une autre personne qui demande « compter les employés » va obtenir le nombre de lignes à partir de la table « Employees ». Ce résultat n’est probablement pas ce qu’elle avait en tête, car il s’agit du nombre de toutes les tâches qu’un employé a effectué. Il serait préférable de renommer ces tables de manière à refléter réellement ce qu’elles contiennent.
 
 **Modification nécessaire**
 
@@ -65,7 +62,7 @@ Prenons un autre exemple. Imaginez que vous avez une table nommée *Headcount* q
 
 ## <a name="fix-incorrect-data-types"></a>Résoudre les types de données incorrects
 
-Les données importées peuvent présenter des types de données incorrects. En particulier, les colonnes contenant des *dates* et des *nombres* qui sont importées en tant que *chaînes* ne seront pas interprétées par Q&A comme des dates et des nombres. Vous devez veiller à sélectionner le type de données approprié dans votre modèle Power BI.
+Les données importées peuvent présenter des types de données incorrects. En particulier, les colonnes contenant des *dates* et des *nombres* qui sont importées en tant que *chaînes* ne sont pas interprétées par Q&A comme des dates et des nombres. Veillez à sélectionner le type de données approprié dans votre modèle Power BI.
 
 ![choisissez le type de données approprié pour vous assurer de sa disponibilité dans Q&A](media/desktop-qna-in-reports/desktop-qna_05.png)
 
@@ -77,7 +74,7 @@ Power BI agrège par défaut les colonnes numériques de façon radicale. Par co
 
 ## <a name="choose-a-data-category-for-each-date-and-geography-column"></a>Choisir une catégorie de données pour chaque colonne contenant des dates et des indications géographiques
 
-La **catégorie de données** apporte des informations sémantiques supplémentaires sur le contenu d’une colonne au-delà de son type de données. Par exemple, une colonne d’entiers peut être marquée Code postal, une colonne de chaînes peut indiquer Ville, Pays, Région, etc. Ces informations sont utilisées par Q&A de deux manières : pour la sélection de la visualisation et pour les tendances de langage.
+La **catégorie de données** apporte des informations sémantiques supplémentaires sur le contenu d’une colonne au-delà de son type de données. Par exemple, une colonne d’entiers peut être marquée Code postal, une colonne de chaînes peut indiquer Ville, Pays, Région, etc. Ces informations sont utilisées par Q&A de deux manières importantes : Pour la sélection de visualisation et les tendances de langage.
 
 Premièrement, Q&A utilise la **catégorie de données** pour guider les choix en matière de présentation visuelle. Par exemple, l’application reconnaît que les colonnes contenant une **catégorie de données** « date » ou « heure » sont généralement appropriées pour l’axe horizontal d’un graphique en courbes ou pour l’axe de lecture d’un graphique en bulles. L’application estime également que les résultats contenant des colonnes avec des **catégories de données** d’indication géographique se prêtent parfaitement à un affichage sur une carte.
 
@@ -94,15 +91,15 @@ La propriété **Trier par colonne** permet d’effectuer automatiquement le tri
 
 ## <a name="normalize-your-model"></a>Normaliser votre modèle
 
-Rassurez-vous, nous ne vous conseillons pas de reformer entièrement votre modèle. Cependant, certaines structures sont tellement complexes que Q&A ne pourra pas les traiter correctement. Si vous effectuez une normalisation simple de la structure de votre modèle, la facilité d’utilisation des rapports Power BI augmentera de manière significative, de même que la précision des résultats de Q&A.
+Rassurez-vous, nous ne vous conseillons pas de reformer entièrement votre modèle. Toutefois, certaines structures sont si compliquées que Q&A ne les traite pas correctement. Si vous effectuez une normalisation simple de la structure de votre modèle, la facilité d’utilisation des rapports Power BI augmentera de manière significative, de même que la précision des résultats de Q&A.
 
-La règle générale à suivre est la suivante : chaque « objet » unique dont parle l’utilisateur doit être représenté par un seul objet de modèle (table ou colonne). Ainsi, si vos utilisateurs parlent de clients, vous devez avoir un objet *client*. S’ils parlent de ventes, vous devez avoir un objet *ventes*. Ça paraît simple, non ? La simplicité du processus dépend de la forme de vos données de départ. Des fonctionnalités enrichies de mise en forme des données sont disponibles dans l’**Éditeur de requête**, mais la plupart des transformations simples peuvent être effectuées à l’aide de calculs dans le modèle Power BI.
+Suivez cette règle générale : chaque « objet » unique dont parle l’utilisateur doit être représenté par un seul objet de modèle (table ou colonne). Ainsi, si vos utilisateurs parlent de clients, vous devez avoir un objet *client*. S’ils parlent de ventes, vous devez avoir un objet *ventes*. Ça paraît simple, non ? La simplicité du processus dépend de la forme de vos données de départ. Des fonctionnalités enrichies de mise en forme des données sont disponibles dans l’**Éditeur de requête**, mais la plupart des transformations simples peuvent être effectuées à l’aide de calculs dans le modèle Power BI.
 
 Les sections suivantes présentent des transformations courantes que vous pourriez être amené à effectuer.
 
 ### <a name="create-new-tables-for-multi-column-entities"></a>Créer de nouvelles tables pour les entités à plusieurs colonnes
 
-Si vous avez plusieurs colonnes qui forment une seule unité distincte au sein d’une table plus grande, celles-ci doivent être fractionnées en tables propres. Par exemple, si votre table *Sociétés* comporte les colonnes Nom du contact, Fonction du contact et Téléphone du contact, il serait préférable d’utiliser une table *Contacts* distincte contenant les informations Nom, Fonction et Téléphone ainsi qu’un lien vers la table *Sociétés*. Cela simplifie grandement l’interrogation à propos des contacts, indépendamment des questions concernant les sociétés qu’ils représentent, et améliore la flexibilité de l’affichage.
+Si vous avez plusieurs colonnes qui forment une seule unité distincte au sein d’une table plus grande, celles-ci doivent être fractionnées en tables propres. Par exemple, supposons que vous avez une colonne Nom du contact, Titre du contact et Téléphone du contact dans votre table *Entreprises*. Une meilleure conception consisterait à avoir une table *Contacts* distincte qui contiendrait le nom, le titre et le téléphone, ainsi qu’un lien pour revenir à la table *Entreprises*. Cela simplifie l’interrogation à propos des contacts, indépendamment des questions concernant les sociétés qu’ils représentent, et améliore la flexibilité de l’affichage.
 
 **Modification nécessaire**
 
@@ -128,9 +125,9 @@ Par exemple, prenons une table *CustomerDemographics* avec les colonnes Customer
 
 ### <a name="union-to-eliminate-partitioning"></a>Unir pour éliminer le partitionnement
 
-Si vous avez partitionné vos données sur plusieurs tables ou réutilisé des valeurs dans différentes colonnes, certaines opérations courantes vont se révéler difficiles voire impossibles à effectuer pour vos utilisateurs. Prenons tout d’abord un partitionnement de table typique : une table *Sales2000-2010* et une table *Sales2011-2020*. Si vos rapports importants sont tous limités à une décennie spécifique, vous pouvez les laisser tels quels pour les rapports Power BI. Cependant, la flexibilité de Q&A amènera vos utilisateurs à attendre des réponses à des questions telles que « total des ventes par année ». Pour que cela fonctionne, vous devrez réunir les données en une seule table de modèle Power BI.
+Si vous avez partitionné vos données sur plusieurs tables ou réutilisé des valeurs dans différentes colonnes, certaines opérations courantes vont se révéler difficiles voire impossibles à effectuer pour vos utilisateurs. Prenons tout d’abord un partitionnement de table typique : une table *Sales2000-2010* et une table *Sales2011-2020*. Si vos rapports importants sont tous limités à une décennie spécifique, vous pouvez les laisser tels quels pour les rapports Power BI. Cependant, la flexibilité de Q&A amènera vos utilisateurs à attendre des réponses à des questions telles que « total des ventes par année ». Pour que cette requête fonctionne, vous devez réunir les données en une seule table de modèle Power BI.
 
-De même, prenons un colonne de valeur croisée dynamique typique : une table *BookTour* contenant les colonnes Author, Book, City1, City2 et City3. Avec une telle structure, même une question simple telle que « compter les livres par ville » ne peut pas être interprétée correctement. Pour que cela fonctionne, vous devez créer une table *BookTourCities* séparée, qui réunit les valeurs de villes en une seule colonne.
+De même, prenons un colonne de valeur croisée dynamique typique : une table *BookTour* contenant les colonnes Author, Book, City1, City2 et City3. Avec une telle structure, même une question simple telle que « compter les livres par ville » ne peut pas être interprétée correctement. Pour que cette requête fonctionne, créez une table *BookTourCities* séparée, qui réunit les valeurs de villes en une seule colonne.
 
 **Modification nécessaire**
 
@@ -169,7 +166,7 @@ Dans une situation similaire, si la source à partir de laquelle vous importez v
 
 ### <a name="denormalize-to-eliminate-inactive-relationships"></a>Dénormaliser pour éliminer les relations inactives
 
-La règle de toujours préférer la normalisation accepte une seule exception : lorsqu’il existe plusieurs façons de passer d’une table à l’autre. Par exemple, si vous avez une table *Flights* avec les colonnes SourceCityID et DestinationCityID, chacune étant reliée à la table *Cities*, l’une de ces relations devra être marquée comme inactive. Étant donné que Q&A ne peut utiliser que des relations actives, vous ne pourrez pas poser de questions sur le point de départ ou la destination, selon ce que vous choisissez. Si vous dénormalisez les colonnes contenant le nom des villes dans la table *Flights*, vous pourrez poser des questions telles que : « Liste des vols pour demain au départ de Seattle et à destination de San Francisco ».
+La règle de toujours préférer la normalisation accepte une seule exception : lorsqu’il existe plusieurs façons de passer d’une table à l’autre. Par exemple, si vous avez une table *Flights* avec les colonnes SourceCityID et DestinationCityID, chacune étant reliée à la table *Cities*. L’une de ces relations devra être marquée comme inactive. Étant donné que Q&A ne peut utiliser que des relations actives, vous ne pouvez pas poser de questions sur le point de départ ou la destination, selon ce que vous choisissez. Si vous dénormalisez les colonnes contenant le nom des villes dans la table *Flights*, vous pouvez poser des questions telles que : « Liste des vols pour demain au départ de Seattle et à destination de San Francisco ».
 
 **Modification nécessaire**
 
@@ -183,7 +180,7 @@ La règle de toujours préférer la normalisation accepte une seule exception :
 
 Cette étape s’applique spécifiquement à Q&A (et non aux rapports Power BI en général). Les utilisateurs ont souvent recours à différents termes pour parler de la même chose, par exemple total des ventes, ventes nettes, total net des ventes. Le modèle Power BI permet d’ajouter ces synonymes aux tables et aux colonnes au sein du modèle. 
 
-Cette étape peut se révéler essentielle. Même avec des noms de table et de colonne simples, les utilisateurs de Q&A posent des questions à l’aide d’un vocabulaire spontané, et ne choisissent pas dans une liste de colonnes prédéfinie. Plus vous ajouterez de synonymes justes, meilleure sera l’expérience de vos utilisateurs avec votre rapport. Pour ajouter des synonymes, dans la vue **Relations**, sélectionnez le bouton Synonymes du ruban, comme illustré ci-dessous.
+Cette étape peut être importante. Même avec des noms de table et de colonne simples, les utilisateurs de Q&A posent des questions à l’aide d’un vocabulaire spontané, et ne choisissent pas dans une liste de colonnes prédéfinie. Plus vous ajouterez de synonymes justes, meilleure sera l’expérience de vos utilisateurs avec votre rapport. Pour ajouter des synonymes, dans la vue **Relations**, sélectionnez le bouton Synonymes du ruban, comme illustré ci-dessous.
 
 ![Ajouter des synonymes pour Q&A](media/desktop-qna-in-reports/desktop-qna_21.png)
 

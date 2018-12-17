@@ -1,22 +1,22 @@
 ---
 title: 'Tutoriel : Segments dans Power BI'
 description: Segments dans Power BI
-author: mihart
+author: v-thepet
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/25/2018
-ms.author: v-thepet
+ms.date: 10/25/2018
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e42504c2c320e4f102cab5e2272e6123bf580cf5
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: e6b738060875685a7de8e07a55d28afaf071b32e
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448980"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979648"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 Vous souhaitez que vos lecteurs de rapports soient en mesure de rechercher des mesures de ventes globales, mais également de mettre en surbrillance des performances pour les responsables de région individuels et les différentes périodes. Vous pouvez créer des rapports distincts ou des graphiques de comparaison ou vous pouvez utiliser des segments. Un segment constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport. 
@@ -177,10 +177,10 @@ Pour plus d’informations sur l’orientation horizontale et la disposition dyn
 
 ### <a name="other-formatting-options"></a>Autres options de mise en forme
 Les autres options de mise en forme sont désactivées par défaut. Quand elles sont **activées** : 
-- **Titre** : ajoute et met en forme un titre (en plus et indépendamment de l’en-tête) en haut du segment. 
-- **Arrière-plan** : ajoute une couleur d’arrière-plan au segment entier et définit sa transparence.
-- **Verrouiller l’aspect** : conserve la forme du segment quand il est redimensionné.
-- **Bordure** : ajoute une bordure d’un pixel autour du segment et définit sa couleur. (Cette bordure de segment est distincte et indépendante des paramètres de contour définis sous Général.) 
+- **Titre :** ajoute et met en forme un titre (en plus et indépendamment de l’en-tête) en haut du segment. 
+- **Arrière-plan :** ajoute une couleur d’arrière-plan au segment entier et définit sa transparence.
+- **Verrouiller l’aspect :** conserve la forme du segment quand il est redimensionné.
+- **Bordure :** ajoute une bordure d’un pixel autour du segment et définit sa couleur. (Cette bordure de segment est distincte et indépendante des paramètres de contour définis sous Général.) 
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

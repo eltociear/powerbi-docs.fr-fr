@@ -1,31 +1,32 @@
 ---
-title: Incorporer du contenu Power BI dans une application pour votre organisation
-description: Découvrez comment intégrer ou incorporer un rapport, un tableau de bord ou une vignette dans une application web de votre organisation avec les API Power BI.
+title: Analytique incorporée permettant d’incorporer du contenu Power BI dans une application pour son organisation
+description: Découvrez comment intégrer ou incorporer un rapport, un tableau de bord ou une vignette dans une application avec les API Power BI dans le cadre de l’analytique incorporée pour votre organisation. Découvrez comment intégrer Power BI dans votre application à l’aide de logiciels et d’outils d’analytique incorporée, ainsi que d’outils d’informatique décisionnelle incorporés.
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.topic: tutorial
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.custom: mvc
-ms.date: 10/17/2018
-ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.topic: tutorial
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: 541e6e62ac075922cdb301343361ac328a3db28e
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396862"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180757"
 ---
-# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application de votre organisation
+# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application pour son organisation
 
-Ce tutoriel montre comment intégrer un rapport dans une application. Utilisez le SDK .NET Power BI et l’API JavaScript Power BI pour incorporer Power BI dans une application de votre organisation. Dans Power BI, vous pouvez incorporer des rapports, des tableaux de bord ou des vignettes dans une application à l’aide de l’exemple **user owns data**. **Utilisateur possède les données** permet à votre application d’étendre le service Power BI.
+Dans **Power BI**, vous pouvez incorporer des rapports, des tableaux de bord et des vignettes dans une application à l’aide de l’exemple User owns data (l’utilisateur est propriétaire des données). **User owns data** permet à l’application d’étendre le service Power BI à l’analytique incorporée. Ce tutoriel montre comment intégrer un rapport dans une application. Vous utiliserez le kit de développement logiciel (SDK) .NET Power BI avec l’API JavaScript Power BI pour incorporer Power BI dans une application de votre organisation.
 
-![Rapport d’incorporation Power BI](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+![Rapport incorporé Power BI](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 Ce tutoriel vous montre comment effectuer les tâches suivantes :
->[!div class="checklist"]
->* inscrire une application dans Azure ;
->* incorporer un rapport Power BI dans une application.
+> [!div class="checklist"]
+> * inscrire une application dans Azure ;
+> * incorporer un rapport Power BI dans une application.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -40,9 +41,9 @@ Pour commencer, vous devez disposer d’un compte Power BI Pro et d’un abonnem
 
 Avant de commencer à incorporer des rapports, des tableaux de bord ou des vignettes dans votre application, vérifiez que votre environnement est configuré de façon à autoriser l’incorporation. Dans le cadre de la configuration, effectuez l’une de ces actions :
 
-- Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup/UserOwnsData) pour démarrer rapidement et télécharger un exemple d’application qui vous guide tout au long de la création d’un environnement et de l’incorporation d’un rapport.
+* Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup/UserOwnsData) pour démarrer rapidement et télécharger un exemple d’application permettant de créer un environnement et d’incorporer un rapport.
 
-- Si vous choisissez de configurer l’environnement manuellement, effectuez les étapes des sections suivantes.
+* Si vous choisissez de configurer l’environnement manuellement, effectuez les étapes des sections suivantes.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Inscrire une application dans Azure Active Directory
 
@@ -60,13 +61,13 @@ Pour donner à votre application l’accès aux API REST Power BI, inscrivez-la 
 
     ![Nouvelle inscription d’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-4. Suivez les invites pour créer une application. Pour **user owns data**, utilisez **Application/API web** comme **Type d’application**. Vous devez également indiquer une **URL de connexion** qu’utilise Azure AD pour retourner les réponses de jeton. Entrez une valeur propre à votre application. Par exemple, `http://localhost:13526/`.
+4. Suivez les invites pour créer une application. Pour **user owns data**, utilisez **Application/API web** comme **Type d’application**. Indiquez une **URL de connexion** permettant à Azure AD de retourner les réponses de jeton. Entrez une valeur propre à votre application. Par exemple, `http://localhost:13526/`.
 
     ![Créer une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Appliquer des autorisations à une application dans Azure Active Directory
 
-Vous devez activer des autorisations pour votre application en plus de celles que vous avez spécifiées dans la page d’inscription de l’application. Connectez-vous avec un compte d’administrateur général pour activer les autorisations.
+Activez les autorisations de votre application en plus de celles que vous avez spécifiées sur la page d’inscription de l’application. Connectez-vous avec un compte d’administrateur général pour activer les autorisations.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Utiliser le portail Azure Active Directory
 
@@ -100,7 +101,7 @@ Vous devez activer des autorisations pour votre application en plus de celles qu
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurer votre environnement Power BI
 
-### <a name="create-an-app-workspace"></a>Créer un espace de travail d'application
+### <a name="create-an-app-workspace"></a>Créer un espace de travail d’application
 
 Si vous incorporez des rapports, des tableaux de bord ou des vignettes pour vos clients, vous devez placer votre contenu au sein d’un espace de travail d’application :
 
@@ -158,7 +159,7 @@ Pour incorporer votre contenu à l’aide d’un exemple d’application, suivez
 
     ![Exemple d’application User Owns Data](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Ouvrez le fichier **Cloud.config** dans l’exemple d’application. Pour exécuter correctement l’application, vous devez remplir certains champs : **ApplicationID** et **ApplicationSecret**.
+2. Ouvrez le fichier **Cloud.config** dans l’exemple d’application. Certains champs sont obligatoires pour que l’application s’exécute correctement : **ApplicationID** et **ApplicationSecret**.
 
     ![Fichier Cloud.config](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
@@ -168,69 +169,69 @@ Pour incorporer votre contenu à l’aide d’un exemple d’application, suivez
 
     1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
-        ![Tableau de bord du portail Azure](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Tableau de bord du portail Azure](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-    1. Dans le volet de navigation de gauche, choisissez **Tous les services** et sélectionnez **Inscriptions d’applications**.
+    2. Dans le volet de navigation de gauche, choisissez **Tous les services** et sélectionnez **Inscriptions d’applications**.
 
-        ![Recherche d’inscription d’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![Recherche d’inscription d’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Sélectionnez l’application qui doit utiliser la valeur **ApplicationID**.
+    3. Sélectionnez l’application qui doit utiliser la valeur **ApplicationID**.
 
-        ![Choisir une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Choisir une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Un **ID d’application** devrait être listé au format GUID. Utilisez cet **ID d’application** comme **ApplicationID** pour l’application.
+    4. Un **ID d’application** devrait être listé au format GUID. Utilisez cet **ID d’application** comme **ApplicationID** pour l’application.
 
         ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Renseignez les informations **ApplicationSecret** à partir de la section **Clés** de votre section **Inscriptions d’applications** dans **Azure**.
+    Renseignez les informations **ApplicationSecret** à partir de la section **Clés** de votre section **Inscriptions d’applications** dans **Azure**.
 
-    1. Pour obtenir la valeur **ApplicationSecret**, effectuez les étapes suivantes :
+    Pour obtenir la valeur **ApplicationSecret**, effectuez les étapes suivantes :
 
-        1. Connectez-vous au [portail Azure](https://portal.azure.com).
+    1. Connectez-vous au [portail Azure](https://portal.azure.com).
 
-            ![Portail Azure](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Portail Azure](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-        1. Dans le volet de navigation de gauche, choisissez **Tous les services** et sélectionnez **Inscriptions d’applications**.
+    2. Dans le volet de navigation de gauche, choisissez **Tous les services** et sélectionnez **Inscriptions d’applications**.
 
-            ![Recherche d’inscription d’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![Recherche d’inscription d’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Sélectionnez l’application qui doit utiliser la valeur **ApplicationSecret**.
+    3. Sélectionnez l’application qui doit utiliser la valeur **ApplicationSecret**.
 
-            ![Choisir une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Choisir une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-        1. Sélectionnez **Paramètres**.
+    4. Sélectionnez **Paramètres**.
 
-            ![Sélectionner Paramètres](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+       ![Sélectionner Paramètres](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-        1. Sélectionnez **Clés**.
+    5. Sélectionnez **Clés**.
 
-            ![Sélectionner Clés](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+       ![Sélectionner Clés](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    1. Entrez un nom dans la zone **Description** et sélectionnez une durée. Puis sélectionnez **Enregistrer** afin d’obtenir la **valeur** pour votre application. Lorsque vous fermez le volet **Clés** après l’enregistrement de la valeur de la clé, le champ de valeur apparaît uniquement masqué. À ce stade, vous n’êtes pas en mesure de récupérer la valeur de la clé. Si vous perdez la valeur de la clé, créez-en une autre dans le portail Azure.
+    6. Entrez un nom dans la zone **Description** et sélectionnez une durée. Puis sélectionnez **Enregistrer** afin d’obtenir la **valeur** pour votre application. Lorsque vous fermez le volet **Clés** après l’enregistrement de la valeur de la clé, le champ de valeur apparaît uniquement masqué. À ce stade, vous n’êtes pas en mesure de récupérer la valeur de la clé. Si vous perdez la valeur de la clé, créez-en une autre dans le portail Azure.
 
-        ![Valeur de la clé](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+          ![Valeur de la clé](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    1. Pour **groupId**, entrez le GUID d’espace de travail de l’application de Power BI.
+    7. Pour **groupId**, entrez le GUID d’espace de travail de l’application de Power BI.
 
-        ![Entrer le groupeId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+       ![Entrer le groupeId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-    1. Pour **reportId**, entrez le GUID de rapport de Power BI.
+    8. Pour **reportId**, entrez le GUID de rapport de Power BI.
 
-        ![Entrer le reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+       ![Entrer le reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
 3. Exécutez l’application :
 
-    1. Tout d’abord, sélectionnez **Exécuter** dans **Visual Studio**.
+    Sélectionnez **Exécuter** dans **Visual Studio**.
 
-        ![Exécuter l’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
+    ![Exécuter l’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
-    1. Sélectionnez ensuite **Obtenir le rapport**.
+    Sélectionnez ensuite **Obtenir le rapport**.
 
-        ![Sélectionner le contenu](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
+    ![Sélectionner le contenu](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
-    1. Vous pouvez à présent voir le rapport dans l’exemple d’application.
+    Vous pouvez à présent voir le rapport dans l’exemple d’application.
 
-        ![Afficher le rapport dans l’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+    ![Afficher le rapport dans l’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## <a name="embed-your-content-within-your-application"></a>Incorporer votre contenu dans l’application
 

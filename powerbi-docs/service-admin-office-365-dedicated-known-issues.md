@@ -9,13 +9,14 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: cedb3e1572fbf20a32abe4f28b38030539502124
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8f9ab0a9a4beddf9be3fc933174f92ac4ae96a6b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34238142"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026497"
 ---
 # <a name="office-365-dedicated-customers---known-issues"></a>Clients Office 365 dédiés - Problèmes connus
 Power BI est maintenant pris en charge pour les clients Office 365 dédiés.  Si vous êtes un client O365 dédié, vous pouvez vous connecter avec un compte de ce client et utiliser Power BI. Il existe actuellement deux problèmes connus.
@@ -23,7 +24,7 @@ Power BI est maintenant pris en charge pour les clients Office 365 dédiés.  S
 ## <a name="groups"></a>Groupes
 Lorsque vous sélectionnez **Membres** ou **Calendrier** dans le menu contextuel du groupe, vous êtes redirigé vers l’application de messagerie.  **Fichiers** et **Conversations** fonctionnent comme prévu.
 
-![](media/service-admin-office-365-dedicated-known-issues/group-menu.png)
+![Regrouper à partir de Power BI](media/service-admin-office-365-dedicated-known-issues/group-menu.png)
 
 ## <a name="iphone-app---sign-in-with-vanity-domain-leads-to-error"></a>Application iPhone : la connexion avec un domaine personnel génère une erreur
 Quand vous vous connectez dans l’application iPhone à l’aide d’une connexion avec un domaine personnel, une erreur peut se produire.
@@ -33,7 +34,7 @@ Quand vous vous connectez dans l’application iPhone à l’aide d’une connex
 
 Pour contourner ce problème, connectez-vous avec l’adresse de messagerie répertoriée quand vous cliquez sur l’icône de l’utilisateur dans le service Power BI plutôt qu’avec le domaine personnel.
 
-![](media/service-admin-office-365-dedicated-known-issues/sign-in-address.png)
+![E-mail de connexion](media/service-admin-office-365-dedicated-known-issues/sign-in-address.png)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

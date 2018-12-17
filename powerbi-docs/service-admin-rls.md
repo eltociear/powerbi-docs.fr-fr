@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.author: mblythe
 ms.date: 01/02/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 920fa426f98098768583e07d8f2b6c9825bfad1b
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 466e91786dcb75f09db808306ba7d9d9f486718b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578425"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025117"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sécurité au niveau des lignes avec Power BI
 
@@ -41,7 +42,7 @@ Pour gérer la sécurité sur votre modèle de données, vous devez effectuer le
 1. Cliquez sur les **points de suspension (…)** d’un jeu de données.
 2. Sélectionnez **Sécurité**.
    
-   ![](media/service-admin-rls/rls-security.png)
+   ![Appliquer le filtre de sécurité dans les deux directions](media/service-admin-rls/rls-security.png)
 
 Cette action vous dirige vers la page de la fonctionnalité Sécurité au niveau des lignes pour ajouter des membres à un rôle que vous avez créé dans Power BI Desktop. L’option Sécurité est disponible uniquement pour les propriétaires du jeu de données. Si le jeu de données se trouve dans un groupe, seuls les administrateurs de ce groupe verront l’option de sécurité. 
 
@@ -53,17 +54,17 @@ Vous pouvez uniquement créer ou modifier des rôles dans Power BI Desktop.
 
 Vous pouvez ajouter un membre au rôle en entrant l’adresse de messagerie ou le nom de l’utilisateur, du groupe de sécurité ou de la liste de distribution que vous voulez ajouter. Le membre doit faire partie de votre organisation. Vous ne pouvez pas ajouter les groupes qui ont été créés dans Power BI.
 
-![](media/service-admin-rls/rls-add-member.png)
+![Ajouter un membre](media/service-admin-rls/rls-add-member.png)
 
 Vous pouvez également voir combien de membres font partie du rôle grâce au nombre entre parenthèses situé en regard du nom du rôle ou en regard des membres.
 
-![](media/service-admin-rls/rls-member-count.png)
+![Membres du rôle](media/service-admin-rls/rls-member-count.png)
 
 ### <a name="remove-members"></a>Supprimer des membres
 
 Vous pouvez supprimer des membres en cliquant sur la croix correspondant à leur nom. 
 
-![](media/service-admin-rls/rls-remove-member.png)
+![Supprimer un membre](media/service-admin-rls/rls-remove-member.png)
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Validation du rôle au sein du service Power BI
 
@@ -72,15 +73,15 @@ Vous pouvez vérifier que le rôle que vous avez défini fonctionne correctement
 1. Sélectionnez les **points de suspension (...)** situés en regard du rôle.
 2. Sélectionnez **Tester les données comme rôle**
 
-![](media/service-admin-rls/rls-test-role.png)
+![Tester comme rôle](media/service-admin-rls/rls-test-role.png)
 
 Vous verrez ensuite les rapports qui sont disponibles pour ce rôle. Les tableaux de bord ne s’affichent pas dans cette vue. Dans la barre bleue située au-dessus, vous voyez ce qui est appliqué.
 
-![](media/service-admin-rls/rls-test-role2.png)
+![Affichage actuel en tant que <rôle>](media/service-admin-rls/rls-test-role2.png)
 
 Vous pouvez tester les autres rôles, ou une combinaison de rôles, en sélectionnant **Affichage actuel comme**.
 
-![](media/service-admin-rls/rls-test-role3.png)
+![Tester d’autres rôles](media/service-admin-rls/rls-test-role3.png)
 
 Vous pouvez choisir d’afficher les données assignées à une personne spécifique, ou vous pouvez sélectionner une combinaison de rôles disponibles pour tester leur fonctionnement. 
 
@@ -95,7 +96,7 @@ Si vous publiez votre rapport Power BI Desktop dans un espace de travail d’app
 > [!WARNING]
 > Si vous avez configuré l’espace de travail d’applications afin que les membres disposent d’autorisations de modification, les rôles SNL ne s’appliquent pas à eux. Les utilisateurs sont en mesure de voir toutes les données.
 
-![](media/service-admin-rls/rls-group-settings.png)
+![Paramètres de groupe](media/service-admin-rls/rls-group-settings.png)
 
 [!INCLUDE [include-short-name](./includes/rls-limitations.md)]
 

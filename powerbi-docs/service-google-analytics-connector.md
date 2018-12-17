@@ -1,27 +1,26 @@
 ---
-title: 'Service tiers : connecteur Google Analytics pour Power BI Desktop'
-description: 'Service tiers : connecteur Google Analytics pour Power BI Desktop'
+title: 'Service tiers : Connecteur Google Analytics'
+description: 'Service tiers : Connecteur Google Analytics pour Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a0c98a8f65529575cb70fccec927c1ee00d9a089
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: b7451f156503d88baf4bdf3f3ae2cb99c04a94c1
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669425"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025600"
 ---
 # <a name="google-analytics-connector-for-power-bi-desktop"></a>Connecteur Google Analytics pour Power BI Desktop
 > [!NOTE]
 > Le pack de contenu et le connecteur Google Analytics de Power BI Desktop s’appuient sur l’API Core Reporting de Google Analytics. Ses fonctionnalités et sa disponibilité peuvent donc varier au fil du temps.
-> 
-> 
 
 Vous pouvez vous connecter aux données Google Analytics à l’aide du connecteur **Google Analytics**. Pour vous connecter aux données, procédez comme suit :
 

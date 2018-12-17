@@ -4,29 +4,30 @@ description: Résoudre des problèmes d’importation de bases de données Acces
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 76423f26203da23658b621d7d01565c04ca21709
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: a1a350a8348dce5ba2553873077a0dfb102a187c
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578172"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024726"
 ---
 # <a name="resolve-issues-importing-access-and-xls-files-in-power-bi-desktop"></a>Résoudre les problèmes d’importation de fichiers Access et .XLS dans Power BI Desktop
 Dans **Power BI Desktop**, les **bases de données Access** et les premières versions de **classeurs Excel** (fichiers .XLS de type Excel 97-2003) utilisent le *moteur de base de données Access*. Trois situations courantes peuvent empêcher le moteur de base de données Access de fonctionner correctement :
 
-### <a name="situation-1-no-access-database-engine-installed"></a>Situation 1 : aucun moteur de base de données Access installé
+## <a name="situation-1-no-access-database-engine-installed"></a>Situation 1 : aucun moteur de base de données Access installé
 Quand le message d’erreur de Power BI Desktop indique que le moteur de base de données Access n’est pas installé, vous devez installer la version 32 bits ou 64 bits du moteur de base de données Access correspondant à votre version de Power BI Desktop. Vous pouvez installer le moteur de base de données Access à partir de la [page des téléchargements](http://www.microsoft.com/download/details.aspx?id=13255).
 
 >[!NOTE]
 >Si la version (32 bits ou 64 bits) du moteur de base de données Access installé diffère de celle de votre installation Microsoft Office, les applications Office ne pourront pas utiliser le moteur de base de données Access.
 
-### <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>Situation 2 : la version (32 bits ou 64 bits) du moteur de base de données Access diffère de celle de votre installation Power BI Desktop
+## <a name="situation-2-the-access-database-engine-bit-version-32-bit-or-64-bit-is-different-from-your-power-bi-desktop-bit-version"></a>Situation 2 : la version (32 bits ou 64 bits) du moteur de base de données Access diffère de celle de Power BI Desktop
 Cette situation se produit souvent quand la version installée de Microsoft Office est 32 bits alors que la version installée de Power BI Desktop est 64 bits. L’inverse peut également se produire et l’incompatibilité de version de bits se produit dans les deux cas (si vous utilisez un abonnement Office 365, consultez la section **Cas 3** qui présente un autre problème et sa résolution). Toutes les solutions suivantes permettent de remédier à cette erreur d’incompatibilité de version de bits :
 
 1. Modifiez la version (32 bits ou 64 bits) de Power BI Desktop de façon à ce qu’elle corresponde à la version de votre installation Microsoft Office. Pour modifier la version de Power BI Desktop, désinstallez Power BI Desktop, puis installez la version de Power BI Desktop correspondant à votre installation Office. Pour sélectionner une version de Power BI Desktop, dans la page de téléchargement pour postes de travail, sélectionnez **Options de téléchargement avancées**.
@@ -47,11 +48,11 @@ Cette situation se produit souvent quand la version installée de Microsoft Offi
    
        c:\users\joe\downloads\AccessDatabaseEngine_x64.exe /passive
 
-### <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Cas 3 : Problèmes d’utilisation de fichiers Access ou XLS avec un abonnement Office 365
+## <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Situation 3 : problèmes d’utilisation de fichiers Access ou XLS avec un abonnement Office 365
 Si vous utilisez un abonnement Office 365 (**Office 2013** ou **Office 2016**), le fournisseur de moteur de base de données Access est enregistré dans un emplacement de registre virtuel *uniquement* accessible par les processus Office. Par conséquent, le moteur d’application web hybride (qui est chargé d’exécuter les versions d’Excel et Power BI Desktop non associées à Office 365), qui n’est pas un processus Office, ne peut pas utiliser le fournisseur de moteur de base de données Access.
 
 Pour remédier à cette situation, vous pouvez [télécharger et installer le package redistribuable de moteur de base de données Access](http://www.microsoft.com/download/details.aspx?id=13255) qui correspond à la version de bits de votre installation de Power BI Desktop (voir les sections précédentes pour plus d’informations sur les versions de bits).
 
-### <a name="other-situations-that-cause-import-issues"></a>Autres situations qui entraînent des problèmes d’importation
+## <a name="other-situations-that-cause-import-issues"></a>Autres situations qui entraînent des problèmes d’importation
 Nous nous efforçons autant que possible de résoudre les problèmes qui se produisent avec les fichiers XLS ou Access. Si vous rencontrez un problème qui n’est pas abordé dans cet article, envoyez une question à son sujet au [support Power BI](https://powerbi.microsoft.com/support/). Nous examinons régulièrement les problèmes qui peuvent affecter de nombreux clients afin de les inclure dans nos articles.
 

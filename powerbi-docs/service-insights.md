@@ -1,30 +1,31 @@
 ---
-title: Générer automatiquement des informations sur les données avec Power BI
+title: Générer automatiquement des insights sur les données avec Power BI
 description: Découvrez comment obtenir des informations sur vos jeux de données et vignettes de tableaux de bord.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/25/2018
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3b58b0b88ed0417f88784824a67ab294dda7343e
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 386f4fb24488df3856f8e731fcd6c95043c86d74
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850427"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180918"
 ---
-# <a name="automatically-generate-data-insights-with-power-bi"></a>Générer automatiquement des informations sur les données avec Power BI
+# <a name="generate-data-insights-automatically-with-power-bi"></a>Générer automatiquement des insights sur les données avec Power BI
 Vous disposez d’un jeu de données et vous ne savez pas par quoi commencer ?  Vous voulez créer rapidement un tableau de bord ?  Vous souhaitez rechercher des informations que vous auriez manquées ?
 
 Exécutez un aperçu rapide pour générer des visualisations interactives intéressantes basées sur vos données. L’aperçu rapide peut être exécuté sur un jeu de données entier (aperçu rapide) ou sur une vignette de tableau de bord spécifique (aperçu délimité). Vous pouvez même exécuter un aperçu rapide sur un aperçu !
 
 > [!NOTE]
-> Insight ne fonctionne pas avec DirectQuery (seulement avec les données chargées sur Power BI).
+> Les insights ne fonctionnent pas avec DirectQuery (seulement avec les données chargées sur Power BI).
 > 
 
 La fonctionnalité d’aperçu repose sur un [ensemble croissant d’algorithmes analytiques avancés](service-insight-types.md) développés conjointement avec Microsoft Research, que nous continuerons d’utiliser pour permettre à davantage de personnes de tirer des informations de leurs données de façon innovante et intuitive.

@@ -8,15 +8,15 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/24/2018
+ms.date: 11/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0492390ae47c8d5aa0930a063370712c80d61de2
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c726ba8d50f077a640879f666fd441e27b19d3c7
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829639"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979334"
 ---
 # <a name="kpi-visuals"></a>Éléments visuels des indicateurs de performance clés
 Un indicateur de performance clé (KPI) est un indice visuel qui représente la marge de progression réalisée en vue d’atteindre un objectif mesurable. Pour plus d’informations sur les indicateurs de performances clés, consultez [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -49,7 +49,7 @@ Vous pouvez également écouter Will qui vous montre comment créer des élémen
 1. Ouvrez le rapport en mode Rapport et sélectionnez l’onglet jaune pour ajouter une nouvelle page.    
 2. Dans le volet Champs, sélectionnez **Sales > This Year Sales** (Ventes > Ventes de cette année).  Il s’agit de l’indicateur.
 3. Ajoutez **Heure > MoisFiscal**.  Ceci représente la tendance.
-4. IMPORTANT : triez le graphique par **MoisFiscal**. Une fois que vous convertissez la visualisation en indicateur de performance clé, il n’existe aucune option de tri.
+4. IMPORTANT : triez le graphique par **MoisFiscal**. Une fois que vous convertissez la visualisation en indicateur de performance clé, il n’existe aucune option de tri.
 
     ![](media/power-bi-visualization-kpi/power-bi-chart.png)
 5. Convertissez l’élément visuel en indicateur de performance clé en sélectionnant l’icône correspondante dans le volet de visualisation.

@@ -9,15 +9,16 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 663a6bb9629e98dabab9934c7647bba6f7c14cd4
-ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
+ms.openlocfilehash: 5f377f60935f23b62b90731c5d7bc16c8119ab83
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268363"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026704"
 ---
-# <a name="power-bi-admin-portal"></a>Portail d’administration Power BI
+# <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
 Le portail d’administration vous permet de gérer un *client* Power BI pour votre organisation. Il comprend notamment des métriques d’utilisation, un accès au Centre d’administration Office 365, ainsi que des paramètres.
 
@@ -105,15 +106,15 @@ L’image suivante présente les deux premières sections de l’onglet **Param�
 
 Les paramètres peuvent avoir trois états :
 
-* **Désactivé pour toute l’organisation** : aucun utilisateur de votre organisation ne peut utiliser la fonctionnalité en question.
+* **Désactivé pour toute l’organisation** : Personne dans votre organisation ne peut utiliser cette fonctionnalité.
 
     ![Paramètre Désactivé pour tous](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Activé pour toute l’organisation** : tous les utilisateurs de votre organisation peuvent utiliser la fonctionnalité en question.
+* **Activé pour toute l’organisation** : Tout le monde dans votre organisation peut utiliser cette fonctionnalité.
 
     ![Paramètre Activé pour tous](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Activé pour une partie de l’organisation** : un sous-ensemble spécifique d’utilisateurs ou de groupes de votre organisation peut utiliser la fonctionnalité en question.
+* **Activé pour une partie de l’organisation** : Un sous-ensemble spécifique d’utilisateurs ou de groupes de votre organisation peut utiliser la fonctionnalité en question.
 
     Vous pouvez activer la fonctionnalité pour toute votre organisation à l’exception d’un groupe spécifique d’utilisateurs.
 
@@ -355,7 +356,7 @@ Pour ajouter un nouveau visuel personnalisé à la liste, procédez comme suit.
 
     * **Nommer vos visuels personnalisés** (obligatoire) : donnez un titre court au visuel pour que les utilisateurs de Power BI Desktop comprennent facilement ce qu’il fait
 
-    * **Icône** : il s’agit du fichier d’icône qui s’affiche dans l’interface utilisateur de Power BI Desktop.
+    * **Icône** : Il s’agit du fichier d’icône qui s’affiche dans l’interface utilisateur de Power BI Desktop.
 
     * **Description** : rédigez une brève description du visuel pour donner plus de contexte et d’informations à l’utilisateur
 

@@ -5,14 +5,14 @@ services: power-bi
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/09/2018
+ms.date: 11/12/2018
 ms.author: mihart
-ms.openlocfilehash: d8238ae96bb57c580c0b74725b105ad7f4332136
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508011"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026343"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -23,7 +23,7 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 **compte** Il existe différents types de comptes Power BI.  Un compte Power BI Pro est un abonnement mensuel payant.  Un compte Power BI gratuit permet de voir le contenu qui est hébergé sur une capacité Power BI Premium.  
 
-**portail d’administration** Emplacement où les administrateurs Power BI gèrent les utilisateurs, les fonctionnalités et les paramètres pour Power BI dans leur organisation. (Remarque : Office 365, Azure et PowerApps utilisent le centre d’administration.)
+**portail d’administration** Emplacement où les administrateurs Power BI gèrent les utilisateurs, les fonctionnalités et les paramètres pour Power BI dans leur organisation. (Remarque : Office 365, Azure et PowerApps utilisent le centre d’administration.)
 
 **agrégats** Quand les valeurs de plusieurs lignes sont regroupées comme entrée sur des critères, pour former une seule valeur d’une indication ou d’une mesure plus significative.
 
@@ -40,9 +40,9 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
  
 **espace de travail d’application** Tous les espaces de travail de Power BI, à l’exception de Mon espace de travail, sont désormais des espaces de travail d’application. Le contenu peut être regroupé dans une application Power BI. Ceux qui sont stockés dans une capacité Premium peuvent être partagés avec les utilisateurs gratuits. Les espaces de travail personnels (sous Mon espace de travail) peuvent être hébergés dans une capacité Premium.  
 
-**AppSource**
+**AppSource** Référentiel en ligne centralisé où vous pouvez parcourir et découvrir des tableaux de bord, rapports, jeux de données et applications à télécharger.
 
-**ArcGIS pour Power BI** ArcGIS est une plateforme de mappage et d’analytique créée par la société ESRI. Le nom du visuel inclus dans la bibliothèque de visuels Power BI est « ArcGIS pour Power BI ».
+**ArcGIS Maps for Power BI** ArcGIS est une plateforme de mappage et d’analytique créée par la société ESRI. Le nom du visuel inclus dans la bibliothèque de visuels Power BI est « ArcGIS Maps for Power BI ».
 
 **affecter** [Power BI Premium] Verbe utilisé pour le déplacement d’un espace de travail dans ou en dehors d’une capacité dédiée. N’utilisez pas « promouvoir » pour le déplacement d’un espace de travail vers une capacité dédiée, car cela a une connotation de supériorité de la capacité dédiée sur la capacité partagée.  
 
@@ -69,7 +69,7 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 **liste de contenus** Index des contenus pour une application.
 
-**pack de contenu**
+**pack de contenu** Collection de jeux de données, rapports et tableaux de bord préintégrés. Désormais **apps**, découvrez [l’expérience des nouveaux espaces de travail](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
 
 **affichage du contenu**
 
@@ -92,11 +92,11 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 **modèle de données, modèle de données Excel**
 
 
-**jeu de données** et **source de données**
+**jeu de données** ou **source de données** Un **jeu de données** est une collection de données utilisées pour créer des visualisations et des rapports.
 
 **capacité dédiée** [Power BI Premium] Modèles de données s’exécutant sur du matériel dédié dans les centres de données du cloud Microsoft, de façon à offrir des performances cohérentes à grande échelle. Les solutions décisionnelles sont fournies à toute l’organisation, quelle que soit la licence Power BI.
 
-**Desktop** Première occurrence : Power BI Desktop. Occurrences suivantes : Desktop
+**Bureau** Première instance : Mentions suivantes de Power BI Desktop : Bureau
 
 
 **losange** Power BI Premium. Forme de l’icône représentant un espace de travail qui est un espace de travail de capacité Premium.
@@ -110,6 +110,8 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 **points de suspension** ...
 
 **code incorporé** Standard commun sur Internet. Dans Power BI, le client peut générer un code incorporé et le copier pour placer du contenu, comme le visuel d’un rapport, sur un site web ou un blog.
+
+**Embedded** Voir Power BI Embedded. 
 
 **incorporation** Dans l’offre Power BI pour les développeurs, le processus d’intégration d’analytique dans des applications avec l’API REST de Power BI et le SDK Power BI.
 
@@ -133,7 +135,7 @@ Vous pouvez utiliser « environnement Power BI » (locataire) dans la documentat
 
 ## <a name="g"></a>G
 
-**passerelles** ou **passerelles de données locales** Pont vers des sources de données sous-jacentes. Il assure le transfert rapide et sécurisé des données entre le service Power BI et les sources de données locales prenant en charge l’actualisation. Habituellement géré par le département informatique. passerelles de données locales
+**passerelles** ou **passerelles de données locales** Pont vers des sources de données sous-jacentes. Il assure le transfert rapide et sécurisé des données entre le service Power BI et les sources de données locales prenant en charge l’actualisation. Habituellement géré par le département informatique. 
 
 ## <a name="h"></a>H
 **visuels à haute densité** Visuels avec plus de points de données que ce que Power BI peut restituer. Power BI échantillonne les données pour montrer la forme et les valeurs hors norme.
@@ -160,7 +162,7 @@ Première occurrence : volet de navigation gauche. Occurrences suivantes : volet
 
 ## <a name="m"></a>M
 
-**mesures** Calculs personnalisés écrits dans Power BI Desktop avec du code DAX ou des mesures rapides.
+**Application mobile** Applications qui vous permettent d’exécuter Power BI sur des appareils iOS, Android et Windows.
 
 **modélisation** [Power BI Desktop] Obtention des données auxquelles vous êtes connecté, prêtes pour une utilisation dans Power BI. Ceci inclut la création de relations entre des tables dans plusieurs sources de données, la création de mesures et l’affectation de métriques.
 
@@ -180,6 +182,9 @@ Première occurrence : volet de navigation gauche. Occurrences suivantes : volet
 ## <a name="o"></a>O
 
 **OneDrive Entreprise** et **OneDrive** OneDrive est un compte personnel et OneDrive Entreprise est destiné aux comptes professionnels.  
+
+**Passerelle de données locale**
+
 
 
 ## <a name="p"></a>P
@@ -202,7 +207,7 @@ Première occurrence : volet de navigation gauche. Occurrences suivantes : volet
 
 **Power BI**, **service Power BI**, **Power BI Desktop**, **Power BI Mobile** Certaines des offres Power BI. *Power BI* est le terme général. Il est souvent utilisé à la place d’un nom de produit complet, comme *service Power BI* et *Power BI Mobile*, après la première mention du nom complet du produit.
 
-**Power BI Desktop** Également appelé *Desktop*.
+**Power BI Desktop** Également appelé *Desktop*. L’application Windows gratuite de Power BI est une application gratuite qui s’installe sur un ordinateur local et permet de se connecter à des données, de les transformer et de les visualiser. Utilisée par les administrateurs et les concepteurs de rapports. Pour plus d’informations, consultez [Qu’est-ce que Power BI ?](../power-bi-overview.md).
 
 **Power BI Embedded** Produit utilisé par les développeurs pour incorporer des tableaux de bord et des rapports Power BI dans leurs propres applications, sites et outils.
 
@@ -210,8 +215,9 @@ Première occurrence : volet de navigation gauche. Occurrences suivantes : volet
 
 **licence Power BI Pro** Licence utilisateur mensuelle qui offre la possibilité de créer des tableaux de bord, de collaborer sur des données partagées, de conserver automatiquement les données à jour, d’auditer et de gouverner la façon dont les données sont accessibles et utilisées, ainsi que la possibilité de créer des packages avec le contenu à distribuer (des applications Power BI).
 
-**Power BI Report Server** Nouvelle offre personnalisée de SSRS lancée avec Power BI Premium, pour permettre aux organisations de créer des systèmes décisionnels hybrides et distribués (une combinaison de déploiements locaux et cloud).
-Basée sur SQL Server Reporting Services avec ses fonctionnalités de création de rapports puissantes et basées sur des pages, et de rapports mobiles, couplés à la capacité de traiter des rapports Power BI créés avec Power BI Desktop et de les délivrer dans les applications mobiles Power BI. SSRS classique continue d’être vendu.
+**Power BI Report Server** Nouvelle offre personnalisée de SSRS lancée avec Power BI Premium, pour permettre aux organisations de créer des systèmes décisionnels hybrides et distribués (une combinaison de déploiements locaux et cloud). Embedded offre un moyen localisé pour stocker et gérer des rapports Power BI.
+
+**Service Power BI** Service SaaS (logiciel en tant que service) en ligne. Pour plus d’informations, consultez [Qu’est-ce que Power BI ?](../power-bi-overview.md).
 
 **connecteur du service Power BI** Ce connecteur permet aux utilisateurs de Power BI Desktop de se connecter à des jeux de données dans le service Power BI à partir de la version Desktop. Ils peuvent créer un modèle une seule fois, puis le réutiliser dans de nombreux rapports et tableaux de bord.
 

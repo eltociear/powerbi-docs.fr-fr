@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 694ae2cd6f77fbcf898a984b135fb65b9163a43b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547243"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180987"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -105,6 +105,16 @@ Avec *l’extraction*, quand vous appuyez sur une partie spécifique d’un visu
 Quand vous effectuez une extraction, le bouton de retour vous redirige sur la page de rapport précédente.
 
 Découvrez comment [ajouter l’extraction dans Power BI Desktop](../../desktop-drillthrough.md).
+
+## <a name="show-data-and-copy-values"></a>Afficher les données et copier les valeurs
+
+En sélectionnant les points de suspension (**...** ) des options Menu dans l’angle supérieur droit d’une visualisation dans un rapport sur téléphone, puis en sélectionnant **Afficher les données**, vous pouvez voir les données sous-jacentes d’une visualisation.
+
+![Power BI Mobile, option de menu Afficher les données](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+
+Le fait d’appuyer longuement sur une cellule dans le tableau présenté affiche le menu natif de sélection et de copie, donc vous serez en mesure de choisir de copier les données à partir du tableau (ou le tableau dans sa totalité).
+
+![Rapport d’extraction Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Visualiser les rapports Power BI optimisés pour les téléphones et interagir avec eux](mobile-apps-view-phone-report.md)

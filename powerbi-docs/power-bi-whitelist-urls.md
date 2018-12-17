@@ -1,5 +1,5 @@
 ---
-title: URL pour Power BI
+title: URL Power BI pour mise sur liste verte
 description: Cet article décrit les points de terminaison qui doivent être accessibles pour les clients à l’aide de Power BI.
 author: mgblythe
 ms.author: mblythe
@@ -9,14 +9,15 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.openlocfilehash: 47fb90ba0f73bba2b210a9003b782a477dbf8214
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.custom: seodec18
+ms.openlocfilehash: dcf51f26aac018acdd58e4244f21e41a1b6f1bc6
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578724"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026625"
 ---
-# <a name="power-bi-urls"></a>URL pour Power BI
+# <a name="power-bi-urls-for-whitelisting"></a>URL Power BI pour mise sur liste verte
 
 **Le service en ligne Power BI**, également appelé « application SaaS Power BI », nécessite une connectivité à Internet. Les points de terminaison ci-dessous doivent être accessibles aux clients utilisant le service en ligne Power BI.
 
@@ -45,12 +46,12 @@ Pour l’utilisation générale de Power BI, vous devez être en mesure de vous 
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Obligatoire :** API de backend | *.analysis.windows.net | TCP 443 |
+| 1 | **Obligatoire :** API de back-end | *.analysis.windows.net | TCP 443 |
 | 2 | **Obligatoire :** Intégration Office 365 | Consultez la documentation d’Office 365 relative à [Office Online et aux URL courantes](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
 | 3 | **Obligatoire :** Portail | app.powerbi.com | TCP 443 |
-| 4 | **Obligatoire :** Télémétrie du service | dc.services.visualstudio.com | TCP 443 |
+| 4 | **Obligatoire :** Données de télémétrie du service | dc.services.visualstudio.com | TCP 443 |
 | 5 | **Facultatif :** Messages d’information | dynmsg.modpim.com | TCP 443 |
-| 6 | **Facultatif :** Enquêtes NPS | nps.onyx.azure.net | TCP 443 |
+| 6 | **Facultatif :** Sondages NPS | nps.onyx.azure.net | TCP 443 |
 | | | |
 
 ## <a name="administration"></a>Administration
@@ -69,7 +70,7 @@ Pour obtenir des données auprès de sources de données spécifiques, comme One
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
 | 1 | **Obligatoire :** AppSource (applications internes ou externes dans Power BI) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
-| 2 | **Facultatif :** Se connecter et obtenir des données pour les packs de contenu | Dépend des packs de contenu utilisés | Dépend des packs de contenu utilisés |
+| 2 | **Facultatif :** Se connecter et obtenir des données pour les packs de contenu | Dépend des packs de contenu utilisés | Dépend des packs de contenu utilisés |
 | 3 | **Facultatif :** Importation de fichiers à partir de OneDrive - Personnel | Consultez le site [URL et ports nécessaires pour OneDrive](https://docs.microsoft.com/onedrive/required-urls-and-ports) | N/A |
 | 4 | **Facultatif :** Vidéo du tutoriel Power BI en 60 secondes | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
 | 5 | **Facultatif :** Sources de données de streaming PubNub | Consultez la [documentation de PubNub](https://support.pubnub.com/support/solutions/articles/14000043522) | N/A |
@@ -81,7 +82,7 @@ Power BI dépend de certains points de terminaison pour pouvoir prendre en charg
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Obligatoire :** Intégration d’Excel | Consultez la documentation d’Office 365 relative à [Office Online et aux URL courantes](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
+| 1 | **Obligatoire :** Intégration d’Excel | Consultez la documentation d’Office 365 relative à [Office Online et aux URL courantes](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online). | N/A |
 | | | |
 
 ## <a name="custom-visuals"></a>Visuels personnalisés
@@ -90,7 +91,7 @@ Power BI dépend de certains points de terminaison pour pouvoir voir et accéder
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Obligatoire :** Importer un visuel personnalisé à partir de l’interface de Place de marché ou d’un fichier | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
+| 1 | **Obligatoire :** Importer un visuel personnalisé à partir de l’interface de Place de marché ou d’un fichier | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
 | 2 | **Facultatif :** Bing Maps | bing.com </br> platform.bing.com </br> *.virtualearth.net | TCP 443 |
 | 3 | **Facultatif :** PowerApps | Consultez la [section Services requis](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) sur site de la configuration système requise pour PowerApps | N/A |
 | 4 | **Facultatif :** Visio | Consultez la documentation d’Office 365 relative à [Office Online et aux URL courantes](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online), ainsi qu’à [SharePoint Online et OneDrive Entreprise](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business). | N/A |
@@ -102,12 +103,12 @@ Power BI établit des liaisons vers d’autres sites connexes. Ces sites incluen
 
 | Ligne | Objectif | Destination(s) | Port(s) |
 | --- | --- | --- | --- |
-| 1 | **Facultatif :** site de la communauté | community.powerbi.com </br> oxcrx34285.i.lithium.com | TCP 443 |
-| 2 | **Facultatif :** site de la documentation | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.net </br> ing-district.clicktale.net | TCP 443 |
-| 3 | **Facultatif :** site de téléchargement (pour Power BI Desktop, etc.) | download.microsoft.com | TCP 443 |
-| 4 | **Facultatif :** redirections externes | aka.ms </br> go.microsoft.com | TCP 443 |
-| 5 | **Facultatif :** site des commentaires sur les idées| ideas.powerbi.com </br> powerbi.uservoice.com | TCP 443 |
-| 6 | **Facultatif :** site Power BI ; page d’arrivée, liens vers des informations supplémentaires, site de support, liens de téléchargement, présentation des partenaires, etc. | powerbi.microsoft.com | TCP 443 |
-| 7 | **Facultatif :** Centre développeurs Power BI | dev.powerbi.com | TCP 443 |
-| 8 | **Facultatif :** site de support | support.powerbi.com </br> s3.amazonaws.com </br> *.olark.com </br> logx.optimizely.com </br> mscom.demdex.net </br> tags.tiqcdn.com | TCP 443 |
+| 1 | **Facultatif :** Site de la Communauté | community.powerbi.com </br> oxcrx34285.i.lithium.com | TCP 443 |
+| 2 | **Facultatif :** Site de documentation | docs.microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.net </br> ing-district.clicktale.net | TCP 443 |
+| 3 | **Facultatif :** Site de téléchargement (pour Power BI Desktop, etc.) | download.microsoft.com | TCP 443 |
+| 4 | **Facultatif :** Redirections externes | aka.ms </br> go.microsoft.com | TCP 443 |
+| 5 | **Facultatif :** Site des commentaires sur les idées| ideas.powerbi.com </br> powerbi.uservoice.com | TCP 443 |
+| 6 | **Facultatif :** Site Power BI ; page d’arrivée, liens vers des informations supplémentaires, site de support, liens de téléchargement, présentation des partenaires, etc. | powerbi.microsoft.com | TCP 443 |
+| 7 | **Facultatif :** Centre de développement Power BI | dev.powerbi.com | TCP 443 |
+| 8 | **Facultatif :** Site du support technique | support.powerbi.com </br> s3.amazonaws.com </br> *.olark.com </br> logx.optimizely.com </br> mscom.demdex.net </br> tags.tiqcdn.com | TCP 443 |
 | | | |

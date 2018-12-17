@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b69b84c7c61227ef7a827722c86f54100bd2f3b7
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 258b526c08615a81f3cc940fc3b9f2fcda063a12
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267245"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180642"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Lier des entités entre des flux de données dans Power BI (préversion)
 
@@ -32,6 +32,12 @@ Les entités liées sont **en lecture seule**. Si vous souhaitez créer des tran
 Les entités liées nécessitent un abonnement [Power BI Premium](service-premium.md) à actualiser. Les entités liées sont disponibles dans n’importe quel flux de données sur un espace de travail hébergé sur la capacité Power BI Premium. Il n’existe aucune limitation concernant le flux de données source.
 
 Les entités liées fonctionnent uniquement correctement dans les nouveaux espaces de travail Power BI. Si vous le souhaitez, des [informations supplémentaires sur les nouveaux espaces de travail Power BI](service-create-the-new-workspaces.md) sont disponibles. Pour fonctionner correctement, tous les flux de données liés doivent se trouver dans les nouveaux espaces de travail.
+
+> [!NOTE]
+> Les entités peuvent être standard ou calculées. Les entités standard (souvent appelées simplement « entités ») interrogent une source de données externe, comme une base de données SQL. Les entités calculées ont besoin d’une capacité Premium sur Power BI. Elles effectuent leurs transformations sur les données qui sont déjà dans le stockage Power BI. 
+>
+>Même si votre flux de données ne se trouve pas dans un espace de travail de capacité Premium, vous pouvez faire référence à une requête unique ou en combiner plusieurs tant que les transformations ne sont pas définies comme des transformations dans le stockage. Ces références sont considérées comme des entités standard. Pour cela, désactivez l’option **Activer la charge** de sorte que les requêtes référencées empêchent la matérialisation et l’ingestion des données dans le stockage. Vous pouvez alors faire référence à ces requêtes **Activer la charge = false** et définir **Activer la charge** sur **Activé** pour les requêtes que vous souhaitez matérialiser (et seulement celles-ci).
+
 
 ## <a name="how-to-link-entities-between-dataflows"></a>Guide pratique pour lier des entités entre des flux de données
 

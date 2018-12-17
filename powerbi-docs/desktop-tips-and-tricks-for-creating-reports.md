@@ -1,20 +1,21 @@
 ---
 title: Conseils et astuces pour créer des rapports dans Power BI
-description: Conseils et astuces pour créer des rapports dans le service Power BI et Power BI Desktop
+description: Découvrez les meilleures pratiques pour la création de rapports dans le service Power BI et Power BI Desktop
 author: davidi
 manager: kfile
 ms.reviewer: willthom
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
-ms.openlocfilehash: ae1c54ee0c5c5de54fc5069f7215c39175cedf8d
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c68c29449873e22c7e338279e80f049d522ba347
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830283"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026357"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -27,7 +28,7 @@ Vous pouvez obtenir des informations supplémentaires à partir du [Centre de re
 Vous pouvez également afficher la [référence de formule](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## <a name="data-types-in-query-editor"></a>Types de données dans l’Éditeur de requête
-Quand vous utilisez l’Éditeur de requête dans Power BI Desktop pour charger des données, celui-ci détecte le type de données sur la base de la meilleure hypothèse.  Si vous utilisez des formules, les paramètres de type de données affectés aux colonnes ne sont parfois pas conservés. Nous vous recommandons donc de vérifier le type de données de vos colonnes après les opérations Charger des données (chargement initial dans l’onglet Requête), Utiliser la première ligne comme en-tête, Ajouter une colonne, Regrouper par, Fusionner et Ajouter, mais aussi avant d’appuyer sur le bouton de chargement des données pour la première fois.
+Quand vous utilisez l’Éditeur de requête dans Power BI Desktop pour charger des données, celui-ci détecte le type de données sur la base de la meilleure hypothèse.  Si vous utilisez des formules, les paramètres de type de données affectés aux colonnes ne sont parfois pas conservés. Vous devez vérifier que le type de données des colonnes est correct après avoir effectué les opérations suivantes :  Charger des données (chargement initial dans l’onglet Requête), Utiliser la première ligne comme en-tête, Ajouter une colonne, Regrouper par, Fusionner et Ajouter, mais aussi avant d’appuyer sur le bouton de chargement des données pour la première fois.
 
 Souvenez-vous de ce point important : le texte en italique dans la grille de données ne signifie pas que le type de données est correctement défini. Cela veut simplement dire que les données ne sont pas considérées comme du texte.
 

@@ -1,23 +1,25 @@
 ---
-title: Incorporer du contenu Power BI dans une application pour vos clients pour les clouds souverains et du secteur public
-description: Découvrez comment intégrer (ou incorporer) un tableau de bord, une vignette ou un rapport dans une application web à l’aide d’API Power BI pour vos clients.
+title: Analytique incorporée permettant d’incorporer du contenu Power BI dans une application pour les clouds souverains et du secteur public
+description: Découvrez comment intégrer ou incorporer un rapport, un tableau de bord ou une vignette dans une application avec les API Power BI dans le cadre de l’analytique incorporée pour vos clients. Découvrez comment intégrer Power BI dans votre application à l’aide de logiciels et d’outils d’analytique incorporée, ainsi que d’outils d’informatique décisionnelle incorporés.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 10/25/2018
-ms.openlocfilehash: 76b80ad296f2f595fb5014e13bbd48d414cd8bbe
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: aabf472e236f545fe51d4007dcd8fbdf36632931
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003153"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180619"
 ---
-# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Tutoriel : Incorporer un tableau de bord, une vignette ou un rapport Power BI dans votre application pour les clouds souverains
+# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Tutoriel : Incorporer un tableau de bord, une vignette ou un rapport Power BI dans votre application pour les clouds souverains
 
-Découvrez comment incorporer un tableau de bord, une vignette ou un rapport dans votre application web en utilisant le SDK Power BI .NET, ainsi que l’API JavaScript Power BI, quand l’intégration de données s’adresse à vos clients.
+Découvrez comment incorporer du contenu analytique dans vos applications de processus d’entreprise pour le cloud souverain. Vous pouvez utiliser le kit de développement logiciel (SDK) .NET Power BI avec l’API JavaScript Power BI pour incorporer un rapport, un tableau de bord ou une vignette dans vos applications web.
 
 Power BI prend également en charge les clouds souverains (privés).
 
@@ -132,7 +134,7 @@ Inscrivez votre application auprès d’Azure AD pour effectuer des appels d’A
 
 * Cloud Power BI pour la Chine - https://app.powerbi.cn/apps
 
-Si vous avez téléchargé l’[exemple Embedding for your customer](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) (Incorporation pour votre client), utilisez **l’ID d’application** que vous obtenez après l’inscription pour que l’exemple puisse s’authentifier auprès d’Azure AD. Pour configurer l’exemple, modifiez **l’ID d’application** dans le fichier *web.config*.
+Si vous avez téléchargé [l’exemple Embedding for your customer](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) (Incorporation pour votre client), utilisez **l’ID d’application** obtenu pour que l’exemple puisse s’authentifier auprès d’Azure AD. Pour configurer l’exemple, modifiez **l’ID d’application** dans le fichier *web.config*.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Étape 2 : obtenir un jeton d’accès à partir d’Azure AD
 
@@ -227,7 +229,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Créer le jeton incorporé
 
-En utilisant l’API JavaScript, vous pouvez générer un jeton d’incorporation. Le jeton d’incorporation est spécifique à l’élément que vous incorporez. Chaque fois que vous incorporez un élément de contenu Power BI, vous devez lui créer un jeton d’incorporation. Pour en savoir plus, notamment sur les niveaux d’accès (**accessLevel**) à utiliser, consultez [Incorporer un jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+En utilisant l’API JavaScript, vous pouvez générer un jeton d’incorporation. Le jeton d’incorporation est propre à l’élément incorporé. Chaque fois que vous incorporez un élément de contenu Power BI, vous devez lui créer un jeton d’incorporation. Pour en savoir plus, notamment sur les niveaux d’accès (**accessLevel**) à utiliser, consultez [Incorporer un jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
 > Étant donné que les jetons d’incorporation sont uniquement destinés aux tests de développeur, le nombre de jetons d’incorporation qu’un compte principal Power BI peut générer est limité. Vous [devez acheter une capacité](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée.

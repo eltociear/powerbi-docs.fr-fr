@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8131722d0e035f28fcb88827b1a68c2da97959cb
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: b63b8a601040751cda81e022d571d3a0ed6d501f
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267278"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180665"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Utilisation d’entités calculées sur Power BI Premium (préversion)
 
@@ -77,16 +77,21 @@ Et voilà, la transformation est effectuée sur les données dans le flux de don
 
 Il est important de noter que si vous supprimez l’espace de travail à partir de la capacité Power BI Premium, le flux de données associé n’est plus actualisé. 
 
+Lorsque vous travaillez avec des flux de données spécifiquement créés dans le compte Azure Data Lake Storage Gen2 d’une organisation, les entités liées et les entités calculées ne fonctionnent correctement que lorsque les entités résident dans le même compte de stockage. Pour plus d’informations, consultez [Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
+
+En outre, les entités liées ne sont pas disponibles pour les flux de données qui sont créés à partir de dossiers CDM. Consultez [Ajouter un dossier CDM à Power BI en tant que flux de données (préversion)](service-dataflows-add-cdm-folder.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Cet article décrit les entités calculées et les flux de données disponibles dans le service Power BI. Voici quelques articles plus qui peuvent être utiles.
 
-
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
 * [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
 * [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
+* [Configurer les paramètres de flux de données d’espace de travail (préversion)](service-dataflows-configure-workspace-storage-settings.md)
+* [Ajouter un dossier CDM à Power BI comme en tant que flux de données (préversion)](service-dataflows-add-cdm-folder.md)
+* [Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Pour plus d’informations sur Power Query et l’actualisation planifiée, vous pouvez consulter ces articles :
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)

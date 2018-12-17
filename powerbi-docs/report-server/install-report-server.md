@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 12/07/2018
 ms.author: maggies
-ms.openlocfilehash: 1d74ed5e39d73252d0779458d0ba8619908c99f2
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: a4914bf0fb6945bc5ee45bdf6559ca75bbd7c2b5
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565909"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180941"
 ---
 # <a name="install-power-bi-report-server"></a>Installer Power BI Report Server
 
@@ -26,6 +26,10 @@ Pour télécharger Power BI Report Server, accédez à [Rapports locaux avec Pow
 
 ## <a name="before-you-begin"></a>Avant de commencer
 Avant d’installer Power BI Report Server, il est recommandé de lire l’article [Configurations matérielle et logicielle requises pour installer Power BI Report Server](system-requirements.md).
+
+ > [!IMPORTANT]
+ > Même si vous pouvez installer Power BI Report Server dans un environnement disposant d’un contrôleur de domaine en lecture seule (RODC), pour fonctionner correctement, Power BI Report Server doit avoir accès à un contrôleur de domaine en lecture-écriture. Si Power BI Report Server a accès uniquement à un RODC, il se peut que vous rencontriez des erreurs lors de la tentative d’administrer le service.
+
 
 ### <a name="power-bi-report-server-product-key"></a>Clé de produit Power BI Report Server
 

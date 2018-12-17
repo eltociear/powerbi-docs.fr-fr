@@ -1,21 +1,22 @@
 ---
-title: Utiliser des insights dans Power BI Desktop pour expliquer les hausses et les baisses dans les visuels (préversion)
+title: Utiliser des insights pour expliquer les hausses et les baisses dans les visuels (préversion)
 description: Obtenir facilement des informations sur des augmentations ou des diminutions dans Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c01af129e15025b97925f59532d1be7a6671b47f
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: ca4e1ac208b0056c6a3052e77769624118f0e54f
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909614"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026681"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Utiliser des insights dans Power BI Desktop pour expliquer les hausses et les baisses observées dans les visuels (préversion)
 

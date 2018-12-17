@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: e64496461e7d81d3b39e9a8d7174a3e985d04002
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: cb508681950cd5bb585da1208683deb31c8b6e64
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850473"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026819"
 ---
 # <a name="using-auditing-within-your-organization"></a>Utilisation de l’audit dans votre organisation
 
@@ -73,13 +74,13 @@ Vous pouvez rechercher dans les journaux par plage de dates à l’aide des cham
 
 Une erreur s’affiche si la période sélectionnée est supérieure à 90 jours. Si vous utilisez la période maximale de 90 jours, sélectionnez l’heure actuelle comme **Date de début**. Sinon, vous recevez une erreur indiquant que la date de début est antérieure à la date de fin. Si vous avez activé l’audit dans les 90 derniers jours, la plage de dates ne peut pas commencer avant la date à laquelle l’audit a été activé.
 
-![](media/service-admin-auditing/search-audit-log-by-date.png)
+![Rechercher par date](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Rechercher les journaux d’audit par utilisateur
 
 Vous pouvez rechercher des entrées du journal d’audit pour les activités effectuées par des utilisateurs spécifiques. Pour ce faire, entrez un ou plusieurs noms d’utilisateur dans le champ **Utilisateurs**. Le nom d’utilisateur ressemble à une adresse e-mail ; il s’agit du compte avec lequel les utilisateurs se connectent à Power BI. Laissez cette zone vide afin de renvoyer les entrées pour tous les utilisateurs (et les comptes de service) de votre organisation.
 
-![Rechercher par date](media/service-admin-auditing/search-audit-log-by-user.png)
+![Rechercher par utilisateurs](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="view-search-results"></a>Afficher les résultats de recherche
 
@@ -191,7 +192,7 @@ Les activités suivantes sont auditées par Power BI.
 | Échec de la suppression d’autorisations de dataflow             | FailedToRemoveDataflowPermissions           | Non utilisée actuellement                       |
 | Jeton SAS de dataflow Power BI généré             | GenerateDataflowSasToken                    |                                          |
 | Jeton d’incorporation Power BI généré                    | GenerateEmbedToken                          |                                          |
-| Fichier importé dans Power BI                         | Import                                      |                                          |
+| Fichier importé dans Power BI                         | Importer                                      |                                          |
 | Application Power BI installée                            | InstallApp                                  |                                          |
 | Espace de travail migré vers une capacité                  | MigrateWorkspaceIntoCapacity                |                                          |
 | Commentaire Power BI publié                           | PostComment                                 |                                          |

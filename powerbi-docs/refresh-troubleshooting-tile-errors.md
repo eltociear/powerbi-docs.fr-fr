@@ -1,21 +1,22 @@
 ---
 title: Résolution des erreurs de vignette
-description: Erreurs courantes qui peuvent survenir quand une vignette tente de s’actualiser
+description: Erreurs courantes qui peuvent survenir quand une vignette tente de s’actualiser dans Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 1341caa1f67d01a03128344acd67261abf450f90
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: d03bf92331d1536337cfb8279c182822630c6c80
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669862"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025029"
 ---
 # <a name="troubleshooting-tile-errors"></a>Résolution des erreurs de vignette
 Voici les erreurs courantes que vous pouvez rencontrer avec des vignettes, ainsi qu’une explication à ce sujet.

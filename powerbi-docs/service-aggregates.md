@@ -9,13 +9,14 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/29/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: a79fc16f183edb359c15da31ebd6f2747fa7859d
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: dfc3006c37d6055bac435fceb05febd596f0cd1a
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187280"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026474"
 ---
 # <a name="aggregates-in-power-bi-visualizations"></a>Agrégations dans les visualisations Power BI
 ## <a name="what-is-an-aggregate"></a>Qu’est qu’un agrégat ?
@@ -32,11 +33,11 @@ Prenons l’exemple ci-dessous :
 - Les colonnes **Units Sold (Unités vendues)** et **Manufacturing Price (Prix de fabrication)** contiennent des données numériques.
 -  **Segment**, **Country (Pays)**, **Product (Produit)**, **Month (Mois)** et **Month Name (Nom du mois)** contiennent des données catégorielles.
 
-   ![](media/service-aggregates/power-bi-aggregate-chart.png)
+   ![Exemple de jeu de données](media/service-aggregates/power-bi-aggregate-chart.png)
 
 Lorsque vous créez une visualisation dans Power BI, les champs numériques sont agrégés (la valeur par défaut étant *somme*) sur un champ catégoriel.  Par exemple, « Unités vendues ***par produit***, « Unités vendues ***par mois***» et « Prix de fabrication ***par Segment*** ». Certains champs numériques sont appelés **mesures**. Il est facile d’identifier les mesures dans l’éditeur de rapport Power BI : elles sont indiquées par le symbole ∑ dans la liste de champs. Pour plus d’informations, consultez [Découverte de l’éditeur de rapport](service-the-report-editor-take-a-tour.md).
 
-![](media/service-aggregates/power-bi-aggregate-fields.png)
+![liste Champs](media/service-aggregates/power-bi-aggregate-fields.png)
 
 
 
@@ -52,18 +53,18 @@ Supposons que vous avez un graphique qui fait la somme des unités vendues pour 
 
 1. Créez un graphique qui utilise une catégorie et une mesure. Dans cet exemple, utilisez Units Sold by Product (Unités vendues par produit).  Par défaut, Power BI crée un graphique qui additionne les unités vendues (mesure dans le compartiment Valeur) pour chaque produit (catégorie dans le compartiment Axe).
 
-   ![](media/service-aggregates/power-bi-aggregate-sum.png)
+   ![Agrégation de somme](media/service-aggregates/power-bi-aggregate-sum.png)
 
 2. Dans le volet Visualisations, cliquez avec le bouton droit sur la mesure, puis sélectionnez le type d’agrégation dont vous avez besoin. Dans ce cas, sélectionnez Moyenne. Si vous ne voyez pas l’agrégation dont vous avez besoin, consultez Considérations et résolution des problèmes ci-dessous.  
    
-   ![](media/service-aggregates/power-bi-aggregate-average.png)
+   ![Agrégation moyenne](media/service-aggregates/power-bi-aggregate-average.png)
    
    > [!NOTE]
    > Les options disponibles dans la liste déroulante varient en fonction 1) du champ sélectionné et 2) de la façon dont le champ a été classé par le propriétaire du jeu de données.
    > 
 3. Votre visualisation est à présent agrégée par moyenne.
 
-   ![](media/service-aggregates/power-bi-aggregate-average2.png)
+   ![Moyenne des unités vendues](media/service-aggregates/power-bi-aggregate-average2.png)
 
 ##    <a name="ways-to-aggregate-your-data"></a>Comment regrouper vos données
 
@@ -94,71 +95,71 @@ Par exemple, ces données :
 
 donneraient les résultats suivants :
 
-* **Ne pas résumer**: chaque valeur est affichée séparément
-* **Somme**: 750
-* **Moyenne**: 125
-* **Maximum** : 150
-* **Minimum**: 100
-* **Nombre (non vide)** : 6
-* **Nombre (distinct)** : 4
-* **Écart type :** 20.4124145...
-* **Écart :** 416.666...
-* **Médiane :** 125
+* **Ne pas synthétiser** : chaque valeur est affichée séparément
+* **Somme** : 750
+* **Moyenne** : 125
+* **Maximum** :  150
+* **Minimum** : 100
+* **Nombre (non vide) :** 6
+* **Nombre (distinct) :** 4
+* **Écart type :** 20.4124145...
+* **Variance :** 416.666...
+* **Médiane :** 125
 
 ## <a name="create-an-aggregate-using-a-category-text-field"></a>Créez une agrégation à l’aide d’un champ de catégorie (texte)
 Vous pouvez également agréger un champ non numérique. Par exemple, si vous avez un champ Nom de produit, vous pouvez l’ajouter comme valeur et le définir sur **Nombre**, **Nombre distinct**, **Premier** ou **Dernier**. 
 
 1. Dans cet exemple, nous avons déplacé le champ **Produit** dans le compartiment Valeurs. Le compartiment Valeurs sert généralement pour les champs numériques. Power BI reconnaît qu’il s’agit d’un champ de texte, définit l’agrégation **Ne pas synthétiser** et propose une table avec une seule colonne.
    
-   ![](media/service-aggregates/power-bi-aggregate-value.png)
+   ![Champ de produit dans la zone des valeurs](media/service-aggregates/power-bi-aggregate-value.png)
 2. Si vous remplacez l’agrégation par défaut **Ne pas synthétiser** par **Nombre (distinct)**, Power BI compte le nombre de produits différents. Dans cet exemple, il y en a 4.
    
-   ![](media/service-aggregates/power-bi-aggregates-count.png)
+   ![Nombre distinct de produits](media/service-aggregates/power-bi-aggregates-count.png)
 3. Et si vous remplacez l’agrégation par **Nombre**, Power BI compte le nombre total. Dans cet exemple, il y a 7 entrées pour **Produit**. 
    
-   ![](media/service-aggregates/power-bi-aggregate-count2.png)
+   ![Nombre de produits](media/service-aggregates/power-bi-aggregate-count2.png)
 
 4. En faisant glisser ce même champ (dans ce cas **Produit**) dans le compartiment Valeurs et en laissant l’agrégation par défaut **Ne pas synthétiser**, Power BI décompose le nombre par produit.
 
-   ![](media/service-aggregates/power-bi-aggregate-final.png)
+   ![Produit et nombre de produits](media/service-aggregates/power-bi-aggregate-final.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-Q : Pourquoi est-ce que l’option **Ne pas synthétiser** ne s’affiche pas ?
+Q :  Pourquoi est-ce que l’option **Ne pas synthétiser** ne s’affiche pas ?
 
-R : Le champ que vous avez sélectionné est probablement une mesure calculée ou une mesure avancée créée dans Excel ou [Power BI Desktop](desktop-measures.md). Chaque mesure calculée a sa propre formule codée en dur. Vous ne pouvez pas changer l’agrégation utilisée.  Par exemple, s’il s’agit d’une somme, elle peut uniquement être une somme. Dans la liste Champs, les *mesures calculées* sont indiquées par le symbole de calculatrice.
+R :  Le champ que vous avez sélectionné est probablement une mesure calculée ou une mesure avancée créée dans Excel ou [Power BI Desktop](desktop-measures.md). Chaque mesure calculée a sa propre formule codée en dur. Vous ne pouvez pas changer l’agrégation utilisée.  Par exemple, s’il s’agit d’une somme, elle peut uniquement être une somme. Dans la liste Champs, les *mesures calculées* sont indiquées par le symbole de calculatrice.
 
-Q : Mon champ **est** numérique. Pourquoi mes seuls choix sont **Nombre** et **Comptage de valeurs** ?
+Q :  Mon champ **est** numérique. Pourquoi mes seuls choix sont **Nombre** et **Comptage de valeurs** ?
 
-R1 : L’explication la plus probable est que le propriétaire du jeu de données n’a *pas* classé le champ en tant que nombre, accidentellement ou volontairement. Par exemple, si un jeu de données a un champ **année**, le propriétaire du jeu de données peut le classer comme texte, car il est plus que probable que le champ **année** fasse l’objet d’une comptage (par exemple le nombre de personnes nées en 1974) plutôt que d’une somme ou d’une moyenne. Si vous êtes le propriétaire, vous pouvez ouvrir le jeu de données dans Power BI Desktop et utiliser l’onglet **Modélisation** pour modifier le type de données.  
+R1 :  L’explication la plus probable est que le propriétaire du jeu de données n’a *pas* classé le champ en tant que nombre, accidentellement ou volontairement. Par exemple, si un jeu de données a un champ **année**, le propriétaire du jeu de données peut le classer comme texte, car il est plus que probable que le champ **année** fasse l’objet d’une comptage (par exemple le nombre de personnes nées en 1974) plutôt que d’une somme ou d’une moyenne. Si vous êtes le propriétaire, vous pouvez ouvrir le jeu de données dans Power BI Desktop et utiliser l’onglet **Modélisation** pour modifier le type de données.  
 
-R2 : Si le champ a une icône de calculatrice, cela signifie qu’il s’agit d’une *mesure calculée* et chaque mesure calculée possède sa propre formule codée en dur qui ne peut être modifiée que par le propriétaire du jeu de données. Le calcul utilisé peut être une agrégation simple comme une moyenne ou une somme, mais il peut également être plus complexe, comme un « pourcentage de contribution à la catégorie parente » ou « total cumulé depuis le début de l’année ». Power BI ne va pas calculer la somme ou la moyenne des résultats, mais juste recalculer (à l’aide de la formule codée en dur) chaque point de données.
+R2 : Si le champ a une icône de calculatrice, cela signifie qu’il s’agit d’une *mesure calculée* et chaque mesure calculée possède sa propre formule codée en dur qui ne peut être modifiée que par le propriétaire du jeu de données. Le calcul utilisé peut être une agrégation simple comme une moyenne ou une somme, mais il peut également être plus complexe, comme un « pourcentage de contribution à la catégorie parente » ou « total cumulé depuis le début de l’année ». Power BI ne va pas calculer la somme ou la moyenne des résultats, mais juste recalculer (à l’aide de la formule codée en dur) chaque point de données.
 
-R3 : Il se peut également que vous ayez supprimé le champ dans un *compartiment* qui autorise uniquement les valeurs de catégorie.  Dans ce cas, les seules options proposées sont Nombre et Comptage de valeurs.
+R3 :  Il se peut également que vous ayez supprimé le champ dans un *compartiment* qui autorise uniquement les valeurs de catégorie.  Dans ce cas, les seules options proposées sont Nombre et Comptage de valeurs.
 
-R4 : Une troisième possibilité est que vous utilisez le champ pour un axe. Sur l’axe d’un histogramme par exemple, Power BI affiche une barre pour chaque valeur distincte et n’agrège pas du tout les valeurs de champ. 
+R4 :  Une troisième possibilité est que vous utilisez le champ pour un axe. Sur l’axe d’un histogramme par exemple, Power BI affiche une barre pour chaque valeur distincte et n’agrège pas du tout les valeurs de champ. 
 
 >[!NOTE]
 >L’exception à cette règle est le graphique à nuages de points, qui *nécessite* des valeurs agrégées pour les axes X et Y.
 
-Q : Pourquoi ne puis-je pas agréger les champs de texte pour les sources de données SSAS ?
+Q :  Pourquoi ne puis-je pas agréger les champs de texte pour les sources de données SSAS ?
 
-R : Les Connexions directes à SSAS MD n’autorisent pas les agrégations côté client. Ceci inclut premier, dernier, moyenne, mininum, maximum et somme.
+R :  Les Connexions directes à SSAS MD n’autorisent pas les agrégations côté client. Ceci inclut premier, dernier, moyenne, mininum, maximum et somme.
 
-Q : J’ai un graphique à nuages de points et je ne veux *pas* d’agrégation pour mon champ.  Comment faire ?
+Q :  J’ai un graphique à nuages de points et je ne veux *pas* d’agrégation pour mon champ.  Comment faire ?
 
-R : Ajoutez le champ au compartiment **Détails** et pas aux compartiments des axes X ou Y.
+R :  Ajoutez le champ au compartiment **Détails** et pas aux compartiments des axes X ou Y.
 
-Q : Quand j’ajoute des champs numériques à une visualisation, la plupart de ces champs ont par défaut le type Somme, alors que d’autres sont de type Moyenne ou Nombre ou une autre agrégation.  Pourquoi l’agrégation par défaut est-elle différente à chaque fois ?
+Q :  Quand j’ajoute des champs numériques à une visualisation, la plupart de ces champs ont par défaut le type Somme, alors que d’autres sont de type Moyenne ou Nombre ou une autre agrégation.  Pourquoi l’agrégation par défaut est-elle différente à chaque fois ?
 
-R : Les propriétaires du jeu de données ont la possibilité de définir le résumé par défaut pour chaque champ. Si vous êtes propriétaire d’un jeu de données, modifiez le résumé par défaut dans l’onglet **Modélisation** de Power BI Desktop.
+R :  Les propriétaires du jeu de données ont la possibilité de définir le résumé par défaut pour chaque champ. Si vous êtes propriétaire d’un jeu de données, modifiez le résumé par défaut dans l’onglet **Modélisation** de Power BI Desktop.
 
-Q : Je suis propriétaire d’un jeu de données et je veux être certain qu’aucun champ n’est jamais agrégé.
+Q :  Je suis propriétaire d’un jeu de données et je veux être certain qu’aucun champ n’est jamais agrégé.
 
-R : Dans Power BI Desktop, dans l’onglet **Modélisation**, définissez **Type de données** sur **Texte**.
+R :  Dans Power BI Desktop, dans l’onglet **Modélisation**, définissez **Type de données** sur **Texte**.
 
-Q : Je ne vois pas **Ne pas synthétiser** en tant qu’option dans ma liste déroulante.
+Q :  Je ne vois pas **Ne pas synthétiser** en tant qu’option dans ma liste déroulante.
 
-R : Essayez de supprimer le champ puis de le rajouter.
+R :  Essayez de supprimer le champ puis de le rajouter.
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

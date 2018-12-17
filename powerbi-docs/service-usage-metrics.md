@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 53d39eaf7c615d2ed279e7c45330dacbdad7994a
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 1c6c0a803e77ead6d43c23ac2b12b305d5960ef7
+ms.sourcegitcommit: 2882b8962ed03c188257c042e537c76b052545c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830329"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53111539"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Mesures d’utilisation pour les tableaux de bord et les rapports
 
@@ -84,8 +84,8 @@ Pour explorer les données du rapport ou pour créer vos propres rapports sur le
 | Nombre total de visiteurs |oui |oui |Nombre de visiteurs uniques au cours des 90 derniers jours. |
 | Nombre total de partages |oui |non |Nombre de fois où que le tableau de bord ou le rapport a été partagé au cours des 90 derniers jours. |
 | Total dans l’organisation |oui |oui |Nombre de tableaux de bord ou de rapports dans toute l’organisation qui ont été consultés au moins une fois au cours des 90 derniers jours.  Utilisé pour calculer le classement. |
-| Classement : nombre total de visites |oui |oui |Classement de ce tableau de bord ou rapport dans le nombre total de visites de tous les tableaux de bord ou rapports dans l’organisation au cours des 90 derniers jours. |
-| Classement : nombre total de partages |oui |non |Classement de ce tableau de bord ou rapport dans le nombre total de partages de tous les tableaux de bord ou rapports dans l’organisation au cours des 90 derniers jours. |
+| Classer : Nombre total de vues |oui |oui |Classement de ce tableau de bord ou rapport dans le nombre total de visites de tous les tableaux de bord ou rapports dans l’organisation au cours des 90 derniers jours. |
+| Classer : Nombre total de partages |oui |non |Classement de ce tableau de bord ou rapport dans le nombre total de partages de tous les tableaux de bord ou rapports dans l’organisation au cours des 90 derniers jours. |
 
 ### <a name="dashboard-usage-metrics-report"></a>Rapport Métriques d’utilisation du tableau de bord
 
@@ -172,19 +172,19 @@ Il est important de savoir que la comparaison entre les journaux d’audit et le
 
 Outre les différences potentielles entre les journaux d’audit et les métriques d’utilisation, les questions et les réponses suivantes, sur les métriques d’utilisation, pourront être utiles aux utilisateurs et aux administrateurs :
 
-Q : Je ne peux pas exécuter les mesures d’utilisation sur un tableau de bord ou rapport R : Vous ne pouvez voir les mesures d’utilisation que pour le contenu que vous possédez ou que vous êtes autorisé à modifier.
+Q :    Je ne parviens pas à lancer les métriques d’utilisation sur un tableau de bord ou un rapport. R :    Vous ne pouvez voir les métriques d’utilisation que pour le contenu dont vous êtes propriétaire ou que vous avez l’autorisation de modifier.
 
-Q : les métriques d’utilisation captureront-elles des vues de tableaux de bord et rapports incorporés ?
-R : Actuellement, les métriques d’utilisation ne prennent pas en charge la capture de l’utilisation des tableaux de bord et rapports incorporés, ni le flux [publier sur le web](service-publish-to-web.md).          Dans ce cas, nous vous recommandons d’utiliser des plateformes Web Analytics existantes pour effectuer le suivi de l’utilisation de l’application ou du portail d’hébergement.
+Q :    Les métriques d’utilisation captureront-elles des vues de tableaux de bord et de rapports incorporés ?
+R :    Actuellement, les métriques d’utilisation ne prennent pas en charge la capture de l’utilisation des tableaux de bord et des rapports incorporés, ni le flux [publier sur le web](service-publish-to-web.md).          Dans ce cas, nous vous recommandons d’utiliser des plateformes Web Analytics existantes pour effectuer le suivi de l’utilisation de l’application ou du portail d’hébergement.
 
-Q : Je ne parviens à exécuter les métriques d’utilisation sur aucun contenu.
-R1 : Les administrateurs ont la possibilité de désactiver cette fonctionnalité dans leur organisation.  Contactez votre administrateur pour vérifier si c’est le cas.
-R2 : Les mesures d’utilisation sont une fonctionnalité Power BI Pro.
+Q :    Je ne parviens à lancer les métriques d’utilisation sur aucun contenu.
+R1 :    Les administrateurs ont la possibilité de désactiver cette fonctionnalité dans leur organisation.  Contactez votre administrateur pour vérifier si c’est le cas.
+R2 :    Les mesures d’utilisation sont une fonctionnalité de Power BI Pro.
 
-Q : Les données ne semblent pas à jour. Par exemple, les méthodes de distribution n’apparaissent pas, des pages de rapport sont manquantes, etc. R : La mise à jour des données peut prendre jusqu’à 24 heures.
+Q :    Les données ne semblent pas à jour. Par exemple, les méthodes de distribution n’apparaissent pas, des pages de rapport sont manquantes, etc. R :    La mise à jour des données peut prendre jusqu’à 24 heures.
 
-Q : Il existe quatre rapports dans l’espace de travail, mais le rapport des métriques d’utilisation n’en affiche que 3.
-R : Le rapport des métriques d’utilisation comprend uniquement les rapports (ou les tableaux de bord) qui ont été utilisés au cours des 90 derniers jours.  Si un rapport (ou un tableau de bord) n’apparaît pas, c’est probablement parce qu’il n’a pas été utilisé au cours des 90 derniers jours.
+Q :    Il y a quatre rapports dans l’espace de travail, mais le rapport des métriques d’utilisation n’en compte que trois.
+R :    Le rapport des métriques d’utilisation ne comprend que les rapports (ou les tableaux de bord) qui ont été consultés au cours des 90 derniers jours.  Si un rapport (ou un tableau de bord) n’apparaît pas, c’est probablement parce qu’il n’a pas été utilisé au cours des 90 derniers jours.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

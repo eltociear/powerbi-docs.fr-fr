@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d7e39d0ee048f51066783b1cc9c98333e0352dcf
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 9e7f43780048a222b9d024b39d983968f45c59f7
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267286"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180573"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Création et utilisation de flux de données dans Power BI (préversion)
 
@@ -143,6 +143,10 @@ Vous pouvez également utiliser la **barre de recherche** près du haut de la fe
 
 Lorsque vous sélectionnez l’entité, puis le bouton **Charger**, les entités s’affichent dans le volet **Champs** dans **Power BI Desktop**. Elles s’affichent et se comportent comme des **tables** de n’importe quel autre jeu de données.
 
+## <a name="using-dataflows-stored-in-azure-data-lake-storage-gen2"></a>Utiliser des flux de données stockés dans Azure Data Lake Storage Gen2
+
+Certaines organisations souhaitent utiliser leur propre stockage pour la création et la gestion des flux de données. Vous pouvez intégrer des flux de données avec Azure Data Lake Storage Gen2, si vous suivez les spécifications et gérez correctement les autorisations. La documentation de la configuration requise pour cette approche commence par le document de vue d’ensemble, [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md).
+
 
 ## <a name="troubleshooting-data-connections"></a>Résolution des problèmes liés à la connexion de données
 
@@ -160,6 +164,7 @@ Cet article décrit comment vous pouvez créer votre propre **flux de données**
 * [Utilisation d’entités calculées sur Power BI Premium (préversion)](service-dataflows-computed-entities-premium.md)
 * [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
 * [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
+* [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :
 * [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)

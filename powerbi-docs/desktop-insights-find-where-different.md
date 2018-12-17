@@ -1,21 +1,22 @@
 ---
-title: Utiliser des insights dans Power BI Desktop pour identifier les différences de répartition (préversion)
+title: Utiliser des insights pour trouver où la distribution est différente (préversion)
 description: Obtenez facilement des insights pour identifier les différences de répartition dans un graphique Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5a355e3d19a781def54a1dcf747f404ed7852444
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 1966c39fef818d6df84b9b47039b1d762374ce28
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670874"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026781"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Utiliser des insights dans Power BI Desktop pour identifier les différences de répartition (préversion)
 

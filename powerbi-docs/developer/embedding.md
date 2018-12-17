@@ -1,6 +1,6 @@
 ---
-title: Incorporation avec Power BI
-description: Power BI fournit des API pour l’incorporation de vos tableaux de bord et rapports dans des applications.
+title: Analytique intégrée avec Power BI
+description: Power BI fournit des API pour utiliser l’analytique intégrée pour vos tableaux de bord et rapports dans des applications. En savoir plus sur l’incorporation avec Power BI à la fois dans un environnement PaaS et un environnement SaaS à l’aide de logiciels d’analytique intégrés, d’outils d’analytique intégrés ou d’outils d’analyse décisionnelle intégrés.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,15 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: overview
-ms.date: 07/31/2018
-ms.openlocfilehash: 7b96e671a6fe9b450fff683ced3caa611ae70bd7
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: a4c0a66fb70797cc8b42094c65b23c71944b67a2
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973767"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180326"
 ---
-# <a name="embedding-with-power-bi"></a>Incorporation avec Power BI
+# <a name="embedded-analytics-with-power-bi"></a>Analytique intégrée avec Power BI
 
 Le service Power BI (SaaS) et le service Power BI Embedded dans Azure (PaaS) comportent des API permettant d’incorporer des tableaux de bord et des rapports. Cette fonctionnalité signifie que vous avez un ensemble de fonctions et que vous accédez aux dernières fonctionnalités de Power BI (tableaux de bord, passerelles et espaces de travail d’application, par exemple) pour incorporer votre contenu.
 
@@ -47,7 +48,7 @@ Pour l’incorporation s’adressant à votre organisation, consultez les procé
 
 * [Intégrer un rapport à une application](embed-sample-for-your-organization.md)
 
-Les fonctionnalités en libre-service, telles que la modification ou l’enregistrement, sont disponibles par le bais de l’[API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript) lors de l’incorporation relative aux utilisateurs Power BI.
+Les fonctionnalités en libre-service, telles que la modification ou l’enregistrement, sont disponibles par le bais de [l’API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript) lors de l’incorporation relative aux utilisateurs Power BI.
 
 Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup/UserOwnsData) pour démarrer rapidement et télécharger un exemple d’application qui vous guide dans l’intégration d’un rapport pour votre organisation.
 

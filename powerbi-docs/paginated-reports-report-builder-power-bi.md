@@ -1,23 +1,23 @@
 ---
 title: Présentation des rapports paginés dans Power BI Premium (Préversion)
-description: Les rapports paginés sont des rapports qui peuvent être imprimés ou partagés. Vous pouvez contrôler exactement la disposition des rapports. Ils affichent toutes les données dans une table, par exemple, même si la table s’étend sur plusieurs pages.
+description: Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Ces rapports peuvent être imprimés ou partagés. Vous pouvez contrôler exactement la disposition des rapports. Ils affichent toutes les données dans une table, par exemple, même si la table s’étend sur plusieurs pages.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/20/2018
+ms.date: 12/05/2018
 ms.author: maggies
-ms.openlocfilehash: 7a39d7b3bdbbd592afc6481c5936efc76569ad11
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: d79299f469062ec74c49ff4b7e9edda26c3409a3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289217"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026115"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Présentation des rapports paginés dans Power BI Premium (Préversion)
-Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Les rapports paginés sont des rapports conçus pour être imprimés ou partagés. Ils sont appelés « paginés », car ils sont mis en forme pour tenir sur une page. Ils affichent toutes les données dans une table, même si la table s’étend sur plusieurs pages. Ils sont parfois appelés « pixel parfait », car vous pouvez contrôler exactement leur mise en page. Les rapports paginés sont basés sur la technologie de rapport RDL dans SQL Server Reporting Services. Le Générateur de rapports est l’outil autonome pour la création de rapports paginés. 
+Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Ces rapports peuvent être imprimés ou partagés. Ils sont appelés « paginés », car ils sont mis en forme pour tenir sur une page. Ils affichent toutes les données dans une table, même si la table s’étend sur plusieurs pages. Ils sont parfois appelés « pixel parfait », car vous pouvez contrôler exactement leur mise en page. Les rapports paginés sont basés sur la technologie de rapport RDL dans SQL Server Reporting Services. Le Générateur de rapports est l’outil autonome pour la création de rapports paginés. 
 
 Les rapports paginés peuvent avoir de nombreuses pages. Par exemple, ce rapport compte 563 pages. Chaque page est mise en page exactement, avec une page par facture et des en-têtes et pieds de page récurrents.
 
@@ -43,11 +43,11 @@ Des sources de données supplémentaires seront disponibles pendant la période 
 
 ### <a name="create-paginated-reports-with-matrix-chart-and-free-form-layouts"></a>Créer des rapports paginés avec des mises en page matricielles, graphiques et de forme libre
 
-Créer des rapports de tableaux pour les données en colonnes, des rapports de matrices (par exemple, des rapports d’analyse croisée ou de tableaux croisés dynamiques) pour les données résumées, des rapports graphiques pour les données graphiques et des *listes* de rapports en forme libre pour tous les autres éléments, comme les factures. 
+Les rapports de tableaux fonctionnent bien pour les données en colonnes. Les rapports de matrices, comme des rapports d’analyse croisée ou de tableaux croisés dynamiques, conviennent pour les données résumées. Les rapports graphiques présentent les données graphiques et les *listes* de rapports en forme libre peuvent présenter presque tous les autres éléments, comme les factures. 
   
 Vous pouvez démarrer avec un des Assistants du Générateur de rapports. Les Assistants Table, Matrice et Graphique vous guident lors de la création de la connexion de source de données incorporées et le jeu de données incorporé. Faites ensuite glisser-déplacer des champs pour créer une requête de jeu de données, sélectionnez une disposition et un style, et personnalisez votre rapport.  
   
-Avec l’Assistant Carte, vous créez des rapports qui affichent des données agrégées sur un arrière-plan géographique ou géométrique. Les données cartographiques peuvent être des données spatiales issues d’une requête Transact-SQL ou un fichier de forme de l’Environmental Systems Research Institute, Inc. Vous pouvez également ajouter un arrière-plan de mosaïque Microsoft Bing.  
+Avec l’Assistant Carte, vous créez des rapports qui affichent des données agrégées sur un arrière-plan géographique ou géométrique. Les données cartographiques peuvent être des données spatiales issues d’une requête Transact-SQL ou un fichier de forme de l’Environmental Systems Research Institute, Inc. (ESRI). Vous pouvez également ajouter un arrière-plan de mosaïque Microsoft Bing.  
 
 ### <a name="add-more-to-your-report"></a>Ajouter une page à votre rapport
 
@@ -66,7 +66,7 @@ Vous affichez votre rapport paginé dans le service Power BI dans un navigateur
 
 Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la version initiale :
 
-- Épinglage des pages de rapport ou des visuels sur des tableaux de bord Power BI.
+- Épinglage des pages de rapport ou des visuels sur des tableaux de bord Power BI. Vous pouvez toujours épingler des visualisations à un tableau de bord Power BI à partir d’un rapport paginé local sur un serveur Power BI Report Server ou un serveur de rapports Reporting Services. Pour plus d’informations, consultez [Épingler les éléments Reporting Services aux tableaux de bord Power BI](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
 - Fonctionnalités interactives telles que des cartes de documents et des boutons Afficher/Masquer.
 - Sous-rapports et rapports d’extraction.
 - Abonnements.
@@ -78,7 +78,7 @@ Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la versi
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Installer le Générateur de rapports à partir du centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/?LinkID=734968)
-- [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
+- [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
 - [Entrer des données directement dans un rapport paginé](paginated-reports-enter-data.md)
 
   

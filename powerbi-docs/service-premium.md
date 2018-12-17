@@ -9,13 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
+ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 451727d473b59afd362e4f31e8aef634d2168f83
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: cbfee8034639a65517f9adc57cc95dd1271e6044
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717628"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025439"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Présentation de Microsoft Power BI Premium
 
@@ -45,11 +46,11 @@ Le tableau suivant résume les différences entre la capacité partagée et la c
 |  | Capacité partagée | Capacité Power BI Premium |
 | --- | --- | --- |
 | **Fréquence d’actualisation** |8/jour |48/jour |
-| **Isolement avec matériel dédié** |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible") |
+| **Isolement avec matériel dédié** |![Non disponible](media/service-premium/not-available.png) |![Disponible](media/service-premium/available.png) |
 | **Distribution d’entreprise à** _**tous les utilisateurs**_ | | |
-| Applications et partage |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible")<sup>1</sup> |
-| API et commandes incorporées |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible")<sup>2</sup> |
-| **Publier des rapports Power BI localement** |![](media/service-premium/not-available.png "Non disponible") |![](media/service-premium/available.png "Disponible") |
+| Applications et partage |![Non disponible](media/service-premium/not-available.png) |![Disponible](media/service-premium/available.png) |
+| API et commandes incorporées |![Non disponible](media/service-premium/not-available.png) |![Disponible](media/service-premium/available.png)<sup>2</sup> |
+| **Publier des rapports Power BI localement** |![Non disponible](media/service-premium/not-available.png) |![Disponible](media/service-premium/available.png) |
 | | | |
 
 *<sup>1</sup> Pour plus d’informations, consultez [Fonctionnalités par type de licence](service-features-license-type.md).*  
@@ -86,9 +87,9 @@ Power BI Premium est disponible dans des configurations de nœuds aux capacités
 
 ## <a name="workloads-in-premium-capacity"></a>Charges de travail dans une capacité Premium
 
-Considérez une charge de travail dans Power BI comme un des nombreux services que vous pouvez présenter aux utilisateurs. Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** ne prennent en charge que la charge de travail associé à l’exécution de requêtes Power BI dans le cloud.
+Considérez une charge de travail dans Power BI comme un des nombreux services que vous pouvez présenter aux utilisateurs. Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** prennent en charge uniquement la charge de travail associée aux requêtes Power BI exécutées dans le cloud.
 
-Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : **les rapports paginés** et **les flux de données**. Vous autorisez ces charges de travail dans le portail d’administration Power BI ou via l’API REST de Power BI. Vous définissez également la mémoire maximale que chaque charge de travail peut consommer pour pouvoir contrôler la façon dont les différentes charges de travail s’affectent mutuellement. Pour plus d’informations, consultez [Configurer des charges de travail](service-admin-premium-manage.md#configure-workloads).
+Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : les **rapports paginés** et les **flux de données**. Vous autorisez ces charges de travail dans le portail d’administration Power BI ou via l’API REST de Power BI. Vous définissez également la mémoire maximale que chaque charge de travail peut consommer pour pouvoir contrôler la façon dont les différentes charges de travail s’affectent mutuellement. Pour plus d’informations, consultez [Configurer des charges de travail](service-admin-premium-manage.md#configure-workloads).
 
 ### <a name="default-memory-settings"></a>Paramètres de mémoire par défaut
 
@@ -99,7 +100,7 @@ Les tableaux suivants présentent les valeurs de mémoire par défaut et minimal
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
 | Rapports paginés | N/A | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| Flux de données | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum  |
+| Dataflows | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum  |
 | | | | | |
 
 #### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Références (SKU) Microsoft Azure pour les scénarios PaaS (Platform as a Service)
@@ -107,13 +108,13 @@ Les tableaux suivants présentent les valeurs de mémoire par défaut et minimal
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
 | Rapports paginés | N/A                      | N/A                      | N/A                     | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| Flux de données         | 27 % par défaut ; 27 % minimum | 20 % par défaut ; 16 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum   |
+| Dataflows         | 27 % par défaut ; 27 % minimum | 20 % par défaut ; 16 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum   |
 
 ### <a name="considerations-for-paginated-reports"></a>Considérations pour les rapports paginés
 
 Si vous utilisez la charge de travail des rapports paginés, gardez les points suivants à l’esprit.
 
-* **Allocation de mémoire dans les rapports paginés** : les rapports paginés vous permettent d’exécuter votre propre code lors de la génération d’un rapport (par exemple, pour modifier dynamiquement la couleur du texte en fonction du contenu). De ce fait, nous sécurisons la capacité de Power BI Premium en exécutant des rapports paginés dans un espace contenu au sein de la capacité. Nous affectons la mémoire maximale que vous spécifiez à cet espace, que la charge de travail soit active ou non. Si vous utilisez des rapports Power BI ou des flux de données dans la même capacité, veillez à définir pour les rapports paginés une mémoire suffisamment faible qui n’affecte pas négativement les autres charges de travail.
+* **Allocation de mémoire dans les rapports paginés** : les rapports paginés vous permettent d’exécuter votre propre code lors de la génération d’un rapport (par exemple, pour modifier dynamiquement la couleur du texte en fonction du contenu). De ce fait, nous sécurisons la capacité de Power BI Premium en exécutant des rapports paginés dans un espace contenu au sein de la capacité. Nous affectons la mémoire maximale que vous spécifiez à cet espace, que la charge de travail soit active ou non. Si vous utilisez des rapports Power BI ou des flux de données dans la même capacité, veillez à définir pour les rapports paginés une mémoire suffisamment faible qui n’affecte pas négativement les autres charges de travail.
 
 * **Les rapports paginés ne sont pas disponibles** : dans de rares cas, la charge de travail des rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
 

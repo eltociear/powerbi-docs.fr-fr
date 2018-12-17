@@ -1,21 +1,22 @@
 ---
-title: Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop (bêta)
+title: Connexion aux données Azure Consumption Insights (bêta)
 description: Se connecter aisément à Azure pour obtenir des informations sur la consommation et l’utilisation à l’aide de Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 622a236ba2a240202a570a07e7b6abb201da9dde
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619606"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026780"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Se connecter à Azure Consumption Insights dans Power BI Desktop (bêta)
 Le connecteur **Azure Consumption Insights** vous permet d’utiliser **Power BI Desktop** pour vous connecter à Azure afin d’obtenir des données et informations détaillées sur l’utilisation des services Azure par votre organisation. Vous pouvez également créer des mesures, des colonnes personnalisées et des visuels afin de rapporter et partager l’utilisation d’Azure par votre organisation. Le connecteur **Azure Consumption Insights** étant publié en version bêta, il est susceptible de changer.
@@ -51,13 +52,13 @@ Ensuite, entrez votre *Clé d’accès* pour établir la connexion.
 
 Une fois que vous avez entré votre *Clé d’accès* et sélectionné **Se connecter**, une fenêtre **Navigateur** affiche les neuf tables à votre disposition : 
 * **Budgets** : informations budgétaires permettant de comparer les coûts et l’utilisation réels aux objectifs budgétaires. 
-* **MarketPlace** : frais de la Place de marché Azure en fonction de l’utilisation.
-* **PriceSheets** : tarifs applicables par compteur pour une inscription.
+* **Place de marché** : frais de la Place de marché Azure en fonction de l’utilisation.
+* **Grille tarifaire** : tarifs applicables par compteur pour une inscription.
 * **RICharges** : frais associés à vos instances réservées au cours des 24 derniers mois.
 * **RIRecommendations_Single** : recommandations d’achat d’instances réservées en fonction de vos tendances d’utilisation sur un seul abonnement au cours des 7, 30 ou 60 derniers jours.
 * **RIRecommendations_Shared** : recommandations d’achat d’instances réservées en fonction de vos tendances d’utilisation sur tous vos abonnements au cours des 7, 30 ou 60 derniers jours.
 * **RIUsage** : informations sur la consommation de vos instances réservées existantes au cours du mois dernier.
-* **Summaries** : résumé mensuel des soldes, nouveaux achats, frais de service de la Place de marché Azure, ajustements et dépassements des frais.
+* **Résumés** : résumé mensuel des soldes, nouveaux achats, frais de service de la Place de marché Azure, ajustements et dépassements des frais.
 * **UsageDetails** : répartition des quantités consommées et des frais estimés pour une inscription.
 
 Vous pouvez activer une case à cocher en regard d’une table pour afficher un aperçu. Vous pouvez sélectionner une ou plusieurs tables en cochant la case en regard de leur nom, puis sélectionner **Charger**.
@@ -108,10 +109,10 @@ Certains clients ont créé des visuels l’aide du *connecteur Azure Enterprise
 
 Pour aider les clients à opérer la transition vers le nouveau connecteur **Azure Consumption Insights**, ainsi qu’à préserver leur travail de création de tableaux de bord ou de rapports personnalisés, les étapes suivantes montrent comment migrer vers le nouveau connecteur.
 
-### <a name="step-1-connect-to-azure-using-the-new-connector"></a>Étape 1 : se connecter à Azure à l’aide du nouveau connecteur
+### <a name="step-1-connect-to-azure-using-the-new-connector"></a>Étape 1 : Se connecter à Azure à l’aide du nouveau connecteur
 La première étape consiste à se connecter à l’aide du connecteur **Azure Consumption Insights** décrit en détail précédemment dans cet article. Dans le cadre de cette étape, dans le ruban **Accueil** de **Power BI Desktop**, sélectionnez **Obtenir des données > Requête vide**.
 
-### <a name="step-2-use-the-advanced-editor-to-create-a-query"></a>Étape 2 : utiliser l’Éditeur avancé pour créer une requête
+### <a name="step-2-use-the-advanced-editor-to-create-a-query"></a>Étape 2 : Utiliser l’Éditeur avancé pour créer une requête
 Dans l’**Éditeur de requête**, dans la section **Requête** du ruban **Accueil**, sélectionnez **Éditeur avancé**. Dans la fenêtre **Éditeur avancé** qui apparaît, entrez la requête suivante :
 
     let    
@@ -127,7 +128,7 @@ Bien entendu, vous devez remplacer la valeur *enrollmentNumber* par votre propre
 
 Quand vous sélectionnez **Terminé** dans la fenêtre **Éditeur avancé**, l’aperçu est actualisé pour afficher les données de la plage de mois spécifiée dans la table. Sélectionnez **Fermer & appliquer**, puis appuyez sur Entrée.
 
-### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Étape 3 : déplacer les mesures et les colonnes personnalisées vers le nouveau rapport
+### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Étape 3 : Déplacer les mesures et les colonnes personnalisées vers le nouveau rapport
 Vous devez à présent déplacer les colonnes personnalisées ou les mesures que vous avez créées vers la nouvelle table des détails. Voici comment procéder.
 
 1. Ouvrez l’application Bloc-notes (ou un autre éditeur de texte).
@@ -137,14 +138,14 @@ Vous devez à présent déplacer les colonnes personnalisées ou les mesures que
 3. Remplacez *Query1* par le nom de la table des détails d’origine.
 4. Créez de nouvelles mesures et des colonnes personnalisées dans votre table en cliquant avec le bouton droit sur la table et en choisissant **Nouvelle mesure**, puis coupez et collez toutes les mesures et colonnes de votre magasin.
 
-### <a name="step-4-re-link-tables-that-had-relationships"></a>Étape 4 : lier de nouveau les tables qui avaient des relations
+### <a name="step-4-re-link-tables-that-had-relationships"></a>Étape 4 : Lier de nouveau les tables qui avaient des relations
 De nombreux tableaux de bord comportent des tables supplémentaires qui sont utilisées pour la recherche ou le filtrage, telles que des tables de dates ou des tables destinées à des projets personnalisés. Le rétablissement de ces relations résout la plupart des problèmes restants. Voici comment procéder.
 
 - Sous l’onglet **Modélisation** de **Power BI Desktop**, sélectionnez **Gérer les relations** pour afficher une fenêtre permettant de gérer les relations au sein du modèle. Liez de nouveau vos tables, en fonction des besoins.
    
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
-### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Étape 5 : vérifier vos visuels et ajuster la mise en forme des champs au besoin
+### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Étape 5 : Vérifier vos visuels et ajuster la mise en forme des champs au besoin
 À ce stade, la plupart de vos visuels, tables et vues détaillées d’origine devraient fonctionner comme prévu. Toutefois, quelques ajustements mineurs de la mise en forme peuvent être nécessaires pour obtenir l’aspect souhaité. Prendre un peu de temps pour jeter un coup d’œil à chacun de vos tableaux de bord et visuels afin de vous assurer qu’ils s’affichent comme vous le souhaitez.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Utilisation de l’API ACI (Azure Consumption Insights) pour obtenir des données de consommation
@@ -171,15 +172,15 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | DepartmentID |departmentId | |Oui |
 | Instance ID | | |Oui |
 | InstanceId |instanceId |Instance ID |Non |
-| Location | | |Oui |
+| Emplacement | | |Oui |
 | Meter Category |meterCategory |Meter Category |Non |
 | Meter ID | | |Oui |
 | Meter Name |meterName |Meter Name |Non |
 | Meter Region |meterRegion |Meter Region |Non |
 | Meter Sub-Category |meterSubCategory |Meter Sub-Category |Non |
 | MeterId |meterId |Meter ID |Non |
-| Mois | |Mois |Non |
-| Product |product |Product |Non |
+| Month | |Month |Non |
+| Produit |product |Produit |Non |
 | ProductId |productId | |Oui |
 | Groupe de ressources |resourceGroup |Groupe de ressources |Non |
 | Resource Location |resourceLocation |Resource Location |Non |
