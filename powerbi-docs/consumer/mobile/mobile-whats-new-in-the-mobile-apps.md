@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297225"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979541"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -51,7 +51,7 @@ Maintenant, vous pouvez créer un mode téléphone pour un rapport qui est déj�
 
 ### <a name="dashboard-commenting-ios-and-android"></a>Commentaires dans les tableaux de bord (iOS et Android) 
 
-Vous pouvez ajouter des commentaires directement dans des tableaux de bord et des vignettes spécifiques pour discuter de vos données. Toutes les personnes qui voient les tableaux de bord verront aussi vos commentaires. Vous pouvez aussi inclure d’autres personnes de votre organisation dans la conversation en les mentionnant avec @mentioning. Elles reçoivent alors une notification push avec votre message sur leur téléphone mobile.
+Vous pouvez ajouter des commentaires directement dans des tableaux de bord et des vignettes spécifiques pour discuter de vos données. Toutes les personnes qui voient les tableaux de bord verront aussi vos commentaires. Vous pouvez aussi inclure d’autres personnes de votre organisation dans la conversation en les mentionnant avec @mentioning. Elles reçoivent alors une notification push avec @mentioned votre message sur leur téléphone mobile.
 
 Actuellement disponible sur les appareils iOS et Android. Prise en charge de Windows prochainement.
 
@@ -100,7 +100,7 @@ Désormais, lorsque vous parcourez un rapport en balayant, si vous choisissez un
 
 Lorsque les auteurs de rapports personnalisent des thèmes de tableau de bord dans le service Power BI, l’apparence du tableau de bord est modifiée dans l’application mobile. Toutefois, les images d’arrière-plan n’apparaissent pas.
 
-#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS : configurer à distance l’accès d’une application mobile iOS Power BI à un serveur de rapports
+#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS : Configurer à distance l’accès d’une application mobile iOS Power BI à un serveur de rapports
 
 Votre administrateur informatique peut désormais utiliser un outil MDM pour configurer l’accès d’une application mobile iOS Power BI à un serveur de rapports. Pour plus d’informations, consultez [Configurer à distance l’accès d’une application mobile iOS Power BI à un serveur de rapports](../../report-server/configure-powerbi-mobile-apps-remote.md).
 
@@ -346,7 +346,7 @@ Lisez le [résumé de novembre 2016 des fonctionnalités d’application mobile
 * Découvrez les [indicateurs de performance clés et les rapports mobiles Reporting Services sur votre tablette Android](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### <a name="android-devices"></a>Appareils Android
-**Aperçu : Intune Mobile Application Management** : la prise en charge de Microsoft Intune Mobile Application Manager (MAM) pour Power BI est désormais disponible en version préliminaire pour les utilisateurs de Power BI Pro sur les appareils Android. 
+**Préversion : Intune Mobile Application Management** : la prise en charge de Microsoft Intune Mobile Application Manager (MAM) pour Power BI est désormais disponible en version préliminaire pour les utilisateurs de Power BI Pro sur les appareils Android. 
 
 **Favoris** : identifiez vos tableaux de bord favoris sur votre appareil Android et affichez l’ensemble de vos [tableaux de bord Power BI favoris et indicateurs de performance clés et rapports mobiles Reporting Services](mobile-android-app-get-started.md#view-your-favorite-dashboards-kpis-and-reports) dans un même emplacement pratique. 
 
@@ -458,9 +458,9 @@ Le centre de notifications de votre application mobile Power BI présente les n
 ### <a name="may-2016"></a>Mai 2016
 #### <a name="ios-devices-and-android-phones"></a>Appareils iOS et téléphones Android
 * **Les codes QR** sont désormais également disponibles **pour les rapports**. Scannez le code avec votre application Power BI pour accéder directement à un rapport connexe, sans navigation ni recherche.
-* **Amélioration de la gestion des données** pour SQL Server 2016 Reporting Services : réduit la durée de chargement et la consommation de données sur votre appareil.
-* **Rapports mobiles à thème SQL Server 2016** : voir les thèmes pour rapports mobiles sur votre appareil.
-* **Filtrage géographique** : filtrez des rapports en fonction de votre emplacement actuel.
+* **Amélioration de la gestion des données** pour SQL Server 2016 Reporting Services : consommation des données et délais de chargement réduits sur votre appareil.
+* **Rapports mobiles à thème SQL Server 2016** : affichez des thèmes pour les rapports mobiles sur votre appareil.
+* **Filtrage géographique** : filtrez des rapports en fonction de votre emplacement actuel.
 
 ### <a name="april-2016"></a>Avril 2016
 Pour plus d’informations, consultez le [blog du mois d’avril sur les applications mobiles Power BI](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/).
@@ -523,7 +523,7 @@ Affichez les tableaux de bord en [mode paysage sur les téléphones Windows 10]
 
 Affichez les [rapports sur votre téléphone Windows 10](mobile-reports-in-the-mobile-apps.md).
 
-Affichage plus rapide des [informations sur vos tableaux de bord Windows 10 mobiles](mobile-tiles-in-the-mobile-apps.md) : partagez un instantané sous forme de vignette ou ouvrez un rapport directement à partir du tableau de bord.
+Accès plus rapide aux [insights sur vos tableaux de bord Windows 10 Mobile](mobile-tiles-in-the-mobile-apps.md) : partagez une capture instantanée en vignette ou ouvrez un rapport directement à partir du tableau de bord.
 
 ### <a name="january-2016"></a>Janvier 2016
 Toutes les améliorations apportées en janvier sont déjà dans la nouvelle [application Power BI pour téléphones Windows 10](mobile-windows-10-phone-app-get-started.md) publiée en décembre 2015. Ces améliorations sont actuellement déployées sur les autres applications Power BI pour appareils mobiles. Pour en savoir plus sur ces améliorations, lisez le billet de blog.
@@ -536,7 +536,7 @@ Toutes les améliorations apportées en janvier sont déjà dans la nouvelle [ap
 
 **Vignettes et widgets web R** : affichez ces nouveaux types de vignettes de tableau de bord sur votre appareil mobile.
 
-**Tableaux de bord Bing** Dans le service Power BI, vous pouvez désormais créer des [tableaux de bord avec les résultats d’une recherche Bing](../end-user-connect-to-services.md), et les afficher sur votre appareil mobile.
+**Tableaux de bord Bing** Dans le service Power BI, vous pouvez désormais créer des [tableaux de bord avec les résultats d’une recherche Bing](../../service-connect-to-services.md), et les afficher sur votre appareil mobile.
 
 **Pages de rapport épinglées en tant que vignettes aux tableaux de bord** : comme vous pouvez maintenant épingler la totalité d’une page de rapport à un tableau de bord dans le service Power BI, vous pouvez afficher des pages de rapport dans l’application Power BI sur votre iPhone ou votre téléphone Android.
 
@@ -599,14 +599,14 @@ Lisez le [billet de blog de la mi-octobre sur Power BI Mobile](http://blogs.msd
 ### <a name="september-2015"></a>Septembre 2015
 Améliorations apportées dans les applications mobiles Power BI : Android, iOS (iPhone et iPad) et Windows. Lisez le [billet de blog de la mi-septembre sur Power BI Mobile](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/power-bi-mobile-mid-september-updates-are-here.aspx).
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Téléphone
 * Prise en charge des espaces de travail de groupe : collaborez avec des collègues dans des espaces de travail de groupe. 
-* Prise en charge des utilisateurs non authentifiés : pour les quelques scénarios où les utilisateurs ne parviennent pas à se connecter à l’application, nous avons ajouté un moyen rapide et pratique de contacter le support technique et d’envoyer des commentaires.
+* Prise en charge des utilisateurs non authentifiés :  pour les quelques scénarios où les utilisateurs ne parviennent pas à se connecter à l’application, nous avons ajouté un moyen rapide et pratique de contacter le support technique et d’envoyer des commentaires.
 * Amélioration de l’expérience utilisateur lors de l’accès aux tableaux de bord à l’aide de la sécurité basée sur les rôles.          
 * Amélioration de la mise en forme des données des graphiques et de l’alignement de toutes les vignettes de tableau de bord. 
 
 #### <a name="ios-iphone-and-ipad"></a>iOS (iPhone et iPad)
-* Navigation nouvelle et améliorée : la nouvelle navigation en tiroir optimise l’espace d’écran et améliore la navigation dans toute l’application. 
+* Navigation nouvelle et améliorée : La nouvelle navigation en tiroir optimise l’espace d’écran et améliore la navigation dans toute l’application. 
 * Espaces de travail de groupe : collaborez avec des collègues dans des espaces de travail de groupe. 
 * Mise à niveau du processus d’authentification : des améliorations en matière de qualité, de performances et de fonctionnalités rendent le processus d’authentification d’application plus performant, grâce notamment à la prise en charge de l’authentification unique. 
 * Amélioration de la représentation des données dans les vignettes des graphiques en courbes pour une meilleure compression de l’axe des abscisses.

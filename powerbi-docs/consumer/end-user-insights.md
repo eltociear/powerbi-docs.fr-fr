@@ -1,24 +1,25 @@
 ---
-title: Générer automatiquement des informations sur les données avec Power BI
-description: Découvrez comment obtenir des informations sur vos jeux de données et vignettes de tableaux de bord.
+title: Exécuter et afficher des insights sur les vignettes de tableaux de bord
+description: En tant qu’utilisateur final de Power BI, découvrez comment obtenir des insights sur vos vignettes de tableaux de bord.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f68e962eacf04005d83ec0def10cf8e0e24f6e10
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: dd59f572da6bb3b62fa142ea7b7eab4aef5a3466
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112035"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180527"
 ---
-# <a name="automatically-generate-data-insights-with-power-bi"></a>Générer automatiquement des informations sur les données avec Power BI
+# <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Afficher des insights sur les données sur les vignettes de tableaux de bord avec Power BI
 Chaque mosaïque de visualisation sur votre tableau de bord est une voie d’accès à l’exploration des données. Lorsque vous sélectionnez une mosaïque, un rapport dans lequel vous pouvez filtrer, trier et explorer le jeu de données derrière le rapport s’ouvre. Et lorsque vous exécutez un aperçu, Power BI effectue l’exploration de données pour vous.
 
 Exécutez un aperçu rapide pour générer des visualisations interactives intéressantes basées sur vos données. L’aperçu rapide peut être exécuté sur une mosaïque de tableau de bord spécifique, et vous pouvez même exécuter un aperçu sur un autre aperçu !
@@ -40,7 +41,9 @@ Lorsque vous exécutez un aperçu sur une mosaïque de tableau de bord, Power BI
 4. Une information suscite votre intérêt ? Sélectionnez la carte d’informations pour en savoir plus. L’information sélectionnée s’affiche à gauche et les nouvelles cartes d’informations, basées uniquement sur les données de cette information, s’affichent à droite.    
 
  ## <a name="interact-with-the-insight-cards"></a>Interagir avec les cartes d’informations
-   * Filtrez les visualisations.  Pour afficher les filtres, dans l’angle supérieur droit, sélectionnez la flèche pour développer le volet Filtres.
+Une fois que vous avez un insight ouvert, continuez l’exploration.
+
+   * Filtrez le visuel sur le canevas.  Pour afficher les filtres, dans l’angle supérieur droit, sélectionnez la flèche pour développer le volet Filtres.
 
      ![aperçu et menu Filtres développé](./media/end-user-insights/power-bi-insights-on-insights.png)
    

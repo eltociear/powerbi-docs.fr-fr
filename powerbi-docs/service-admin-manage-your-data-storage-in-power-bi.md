@@ -1,26 +1,28 @@
 ---
-title: Gérer le stockage de vos données
-description: Découvrez comment vous pouvez gérer votre propre stockage de données ou celui d’un espace de travail d’application et ainsi veiller à ce que vous puissiez continuer à publier des rapports et jeux de données.
+title: Gérer le stockage de données dans vos espaces de travail
+description: Découvrez comment gérer le stockage de données dans votre espace de travail ou celui de l’application et ainsi veiller à pouvoir continuer à publier des rapports et des jeux de données.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: 864d50d8850a8ceed964f128cea71b0daf5d8322
-ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
+ms.openlocfilehash: 239cc7e0574c9c6a4d76cdff83e14cf6af742689
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50736869"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180458"
 ---
-# <a name="manage-your-data-storage"></a>Gérer le stockage de vos données
-Découvrez comment vous pouvez gérer votre propre stockage de données ou celui d’un espace de travail d’application et ainsi veiller à ce que vous puissiez continuer à publier des rapports et jeux de données.
+# <a name="manage-data-storage-in-power-bi-workspaces"></a>Gérer le stockage de données dans les espaces de travail Power BI
 
-Les utilisateurs et les espaces de travail d’application ont leurs propres capacités concernant les données
+Découvrez comment gérer le stockage de données dans votre espace de travail ou celui de l’application et ainsi veiller à pouvoir continuer à publier des rapports et des jeux de données.
+
+Les utilisateurs et les espaces de travail d’application ont leurs propres capacités en matière de données :
 
 * Tous les utilisateurs disposent d’un espace de stockage de données maximal de 10 Go.
 * Les utilisateurs disposant d’une licence Power BI Pro peuvent créer des espaces de travail d’application avec pour chacun une capacité de stockage de données maximal de 10 Go.
@@ -44,36 +46,36 @@ Consultez l’espace de stockage des données que vous utilisez dans votre compt
 
 1. Pour gérer votre propre stockage, accédez à **Mon espace de travail** dans le volet de navigation gauche.
    
-    ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
-2. Sélectionnez l’icône représentant une roue dentée (![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png)) située en haut à droite \> **Gérer le stockage personnel**.
+    ![Mon espace de travail](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+2. Sélectionnez l’icône représentant un engrenage ![Engrenage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) située en haut à droite \> **Gérer le stockage personnel**.
    
     La barre supérieure montre la part de votre limite de stockage que vous avez utilisée.
    
-    ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
+    ![Gérer la limite de stockage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
    
     Les jeux de données et rapports sont répartis sous deux onglets :
    
-    **Je suis le propriétaire :** il s’agit des rapports et des jeux de données que vous avez chargés sur votre compte Power BI, y compris les jeux de données de service tels que Salesforce et Dynamics CRM.  
-    **Les autres sont les propriétaires :** ces rapports et jeux de données ont été partagés avec vous par d’autres personnes.
-3. Pour supprimer un jeu de données ou un rapport, sélectionnez l’icône de la Corbeille ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
+    **Je suis propriétaire :** il s’agit des rapports et des jeux de données que vous avez chargés sur votre compte Power BI, y compris les jeux de données de service tels que Salesforce et Dynamics CRM.  
+    **Les propriétaires sont des tiers :** ces rapports et ces jeux de données ont été partagés avec vous par d’autres personnes.
+3. Pour supprimer un jeu de données ou un rapport, sélectionnez l’icône représentant une corbeille ![Corbeille](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
 
 N’oubliez pas que vous-même ou une autre personne pouvez avoir des rapports et des tableaux de bord basés sur un jeu de données. Si vous supprimez le jeu de données, les rapports et les tableaux de bord ne fonctionneront plus.
 
 ## <a name="manage-your-app-workspace"></a>Gérer votre espace de travail d’application
 1. Sélectionnez la flèche en regard de **Espaces de travail** \>, puis sélectionnez le nom de l’espace de travail d’application.
    
-    ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
-2. Sélectionnez l’icône représentant une roue dentée (![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png)) située en haut à droite \> **Gérer le stockage de groupe**.
+    ![Sélectionner un espace de travail d’application](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+2. Sélectionnez l’icône représentant un engrenage ![Engrenage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) située en haut à droite \> **Gérer le stockage de groupe**.
    
     La barre supérieure montre la part de la limite de stockage du groupe qui est utilisée.
    
-    ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Gérer le stockage de l’espace de travail d’application](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     Les jeux de données et rapports sont répartis sous deux onglets :
    
-    **Nous sommes les propriétaires :** il s’agit des rapports et des jeux de données que vous-même ou une autre personne avez chargés sur le compte Power BI du groupe, y compris les jeux de données de service tels que Salesforce et Dynamics CRM.
-    **Les autres sont les propriétaires :** ces rapports et jeux de données ont été partagés avec votre groupe par d’autres personnes.
-3. Pour supprimer un jeu de données ou un rapport, sélectionnez l’icône de la Corbeille ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
+    **Nous sommes propriétaires :** il s’agit des rapports et des jeux de données que vous-même ou une autre personne avez chargés sur le compte Power BI du groupe, y compris les jeux de données de service comme Salesforce ou Dynamics CRM.
+    **Les propriétaires sont des tiers :** ces rapports et ces jeux de données ont été partagés avec votre groupe par d’autres personnes.
+3. Pour supprimer un jeu de données ou un rapport, sélectionnez l’icône représentant une corbeille ![Corbeille](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
    > Tous les membres dotés d’autorisations de modification d’un espace de travail d’application sont autorisés à supprimer des jeux de données et des rapports de l’espace de travail d’application.
@@ -88,17 +90,17 @@ Power BI limite chaque jeu de données importé à 1 Go. Si vous conservez l�
 ## <a name="what-happens-when-you-hit-a-limit"></a>Que se passe-t-il lorsque vous atteignez une limite ?
 Lorsque vous atteignez la limite de capacité de données, le service vous en informe. 
 
-Lorsque vous sélectionnez l’icône d’engrenage ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), vous voyez une barre rouge indiquant que vous avez dépassé votre limite de capacité de données.
+L’icône représentant un engrenage ![icône d’engrenage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png)permet d’afficher une barre rouge indiquant que la limite de capacité de données est dépassée.
 
-![](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
+![Limite de stockage atteinte]](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
 
 Cela est également affiché dans **Gérer le stockage personnel**.
 
- ![](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
+ ![Gérer le stockage personnel, limite de stockage atteinte](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
  Lorsque vous essayez d’exécuter une action qui atteindra l’une des limites, une invite s’affiche lorsque la limite est atteinte. Vous pouvez [gérer](#manage) votre stockage afin de réduire le volume de votre stockage et de dépasser la limite.
 
- ![](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+ ![Limite de stockage dépassée](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
  D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 
