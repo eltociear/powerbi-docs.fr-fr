@@ -1,22 +1,23 @@
 ---
-title: Impression depuis le service Power BI
+title: Imprimer depuis le service Power BI
 description: Impression d’un tableau de bord, d’une vignette ou d’une page de rapport à partir de Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: be7597cf13732e251f40f73a853e6ea7b0032652
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: bb3ecb8a343d2ed3f3693dd136b11b7543cabc70
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507666"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280739"
 ---
 # <a name="printing-from-power-bi-service"></a>Impression depuis le service Power BI
 Imprimer un tableau de bord entier, une vignette de tableau de bord, une page de rapport ou un visuel de rapport à partir du service Power BI. Les rapports ne peuvent être imprimés qu’une page à la fois. Vous ne pouvez peut pas imprimer l’intégralité du rapport en une fois.
@@ -85,7 +86,7 @@ Vous pouvez imprimer les rapport une seule page à la fois.
 * R : Vous ne voyez cette option que si vous avez déjà configuré le pilote PDF dans votre navigateur.    
 * Q : Ce que je vois lorsque je sélectionne **Imprimer** ne correspond pas à ce qui est affiché ici.    
 * R : Les fenêtres d’impression varient selon la version du navigateur et des logiciels.
-* Q : Mon impression n’est pas dimensionnée correctement.  Mon tableau de bord ne tient pas sur la page. Autres questions sur la mise à l’échelle et l’orientation.    
+* Q : Mon impression n’est pas dimensionnée correctement.  Mon tableau de bord ne tient pas sur la page. Autres questions sur la mise à l’échelle et l’orientation.    
 * R : Nous ne pouvons pas garantir que la copie imprimée aura exactement la même apparence que dans le service Power BI. Les fonctionnalités telles que la mise à l’échelle, les marges, les détails des visuels, l’orientation et la taille ne sont pas contrôlées par Power BI. Pour résoudre des problèmes de ce type, reportez-vous à la documentation de votre navigateur.      
 
 ## <a name="next-steps"></a>Étapes suivantes

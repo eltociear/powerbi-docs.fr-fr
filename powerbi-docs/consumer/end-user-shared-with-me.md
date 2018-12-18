@@ -1,25 +1,26 @@
 ---
-title: Afficher le contenu Power BI qui a été partagé avec moi
+title: Afficher les tableaux de bord et les rapports qui ont été partagés avec moi
 description: documentation sur Partagé avec moi dans Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e06f0157476207bfe50abba01bd31d7605236a95
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: d1147f02e357984ce7dc7660898317b9071b3a86
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112173"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280693"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Afficher les tableaux de bord et les rapports qui ont été partagés avec moi
-## <a name="shared-with-me"></a>Partagés avec moi
+## <a name="shared-with-me"></a>Partagé avec moi
 
 Quand un collègue partage du contenu avec vous, à l’aide du bouton **Partager**, il s’affiche dans votre conteneur **Partagés avec moi**. Le tableau de bord ou le rapport est disponible uniquement à partir de **Partagés avec moi** et non depuis **Applications**.
 

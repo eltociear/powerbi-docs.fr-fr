@@ -1,22 +1,23 @@
 ---
-title: 'Mode Focus et mode plein écran : comment zoomer pour afficher plus de détails.'
+title: 'Mode Focus et mode plein écran : comment zoomer pour afficher plus de détails'
 description: Documentation pour l'affichage d'un tableau de bord Power BI, d'une mosaïque de tableau de bord, d'un rapport ou d'une visualisation de rapport en mode Focus ou plein écran
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 70e7fcb9f38c6dbf52adf58f8477f671156c9da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 13032e011446fad765961dacdb83fbb8bd5a2f6e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507958"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279957"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Afficher du contenu plus en détail : mode Focus et plein écran
 
@@ -83,7 +84,7 @@ Menu pour les pages de rapport
     Dans les rapports en mode plein écran, utilisez ces flèches pour vous déplacer entre les pages du rapport.    
   * Pour quitter le mode plein écran, sélectionnez l’icône **Quitter le plein écran**.
 
-      ![](media/end-user-focus/exit-fullscreen-new.png)
+      ![icône quitter le mode plein écran](media/end-user-focus/exit-fullscreen-new.png)
 
 ## <a name="working-in-focus-mode"></a>Utilisation en mode Focus
 Il y deux façons d’ouvrir le mode Focus : une pour les mosaïques de tableau de bord et une autre pour les visualisations de rapports.

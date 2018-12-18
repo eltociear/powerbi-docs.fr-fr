@@ -5,18 +5,19 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 3b3eaa33879a1f0c6d51aecaa93cae6ce5c90d10
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473862"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280808"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Démarrage rapide - Découverte du service Power BI
 
@@ -40,7 +41,7 @@ Vous allez récupérer quelques exemples de données qui vous serviront pendant 
 
     Le service Power BI importe l’exemple et affiche le tableau de bord. Les tableaux de bord sont différents dans le service Power BI et dans Power BI Desktop. L’exemple inclut également un rapport et un jeu de données, que vous découvrirez plus tard.
 
-    ![](media/end-user-experience/power-bi-dashboard.png)
+    ![affichages de tableaux de bord](media/end-user-experience/power-bi-dashboard.png)
 
 Suivez Amanda dans une visite guidée de l’expérience de navigation du service Power BI.  Suivez ensuite les instructions détaillées sous la vidéo pour explorer par vous-même.
 

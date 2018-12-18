@@ -1,26 +1,27 @@
 ---
-title: Présentation de Questions et réponses dans Power BI Desktop et le service Power BI
+title: Présentation de Questions et réponses dans le service Power BI
 description: Rubrique de vue d’ensemble de la documentation pour les requêtes en langage naturel des questions et réponses Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 361c71c979d65e5c71ada6889bc7312ef64da23e
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 3548041be39705c3013d09740040afc3e7f1c9e7
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396356"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279575"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Questions et réponses pour les **consommateurs** Power BI
-## <a name="what-is-qa"></a>Qu’est-ce que Questions et réponses ?
+## <a name="what-is-qa"></a>Qu’est-ce que Q&R ?
 Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel. Par exemple, « quel était le total des ventes l’année dernière ».  
-Utilisez Questions et réponses pour explorer vos données à l’aide des fonctionnalités intuitives du langage naturel et recevez des réponses sous la forme de graphiques et de graphes. Questions et réponses diffère d’un moteur de recherche, car il ne fournit que des résultats sur les données de Power BI.
+Utilisez l’outil Q&R pour explorer vos données à l’aide des fonctionnalités intuitives du langage naturel et recevez des réponses sous la forme de graphiques et de diagrammes. Q&R diffère d’un moteur de recherche, car il ne fournit que des résultats sur les données de Power BI.
 
 **Questions et réponses de Power BI** prend uniquement en charge les réponses aux questions en langage naturel formulées en anglais. Votre administrateur Power BI peut activer une préversion disponible en espagnol.
 
@@ -38,7 +39,7 @@ Vous trouverez Questions et réponses sur les tableaux de bord dans le service P
 
 ![zone de question](media/end-user-q-and-a/powerbi-qna.png)
 
-## <a name="how-does-qa-know-how-to-answer-questions"></a>Comment la fonctionnalité Questions et réponses sait répondre aux questions ?
+## <a name="how-does-qa-know-how-to-answer-questions"></a>Comment la fonctionnalité Q&R sait-elle répondre aux questions ?
 Questions et réponses recherche des réponses dans tous les jeux de données associés au tableau de bord. Si un jeu de données a une vignette sur le tableau de bord, Questions et réponses recherche des réponses dans ce jeu de données. 
 
 ## <a name="how-do-i-start"></a>Comment commencer ?
@@ -57,21 +58,21 @@ Questions et réponses peut aussi vous aider à poser des questions avec des inv
 ![vidéo](media/end-user-q-and-a/qa.gif) 
 
 
-### <a name="which-visualization-does-qa-use"></a>Quelles visualisations la fonctionnalité Questions et réponses utilise ?
-Questions et réponses choisit la meilleure visualisation en fonction des données affichées. Parfois les données du jeu sous-jacent sont définies en tant que type ou catégorie, ce qui aide Questions et réponses à savoir comment les afficher. Par exemple, si les données sont définies en tant que date, elles seront davantage susceptibles de s’afficher sous la forme d’un graphique en courbes. Les données appartenant à la catégorie « Ville » seront davantage susceptibles de s’afficher sous forme de carte.
+### <a name="which-visualization-does-qa-use"></a>Quelles visualisations la fonctionnalité Q&R utilise-t-elle ?
+Q&R choisit la meilleure visualisation en fonction des données affichées. Parfois les données du jeu sous-jacent sont définies en tant que type ou catégorie, ce qui aide Q&R à savoir comment les afficher. Par exemple, si les données sont définies en tant que date, elles seront davantage susceptibles de s’afficher sous la forme d’un graphique en courbes. Les données appartenant à la catégorie « Ville » seront davantage susceptibles de s’afficher sous forme de carte.
 
-Vous pouvez également indiquer à Questions et réponses quelle visualisation utiliser en l’ajoutant à votre question. Gardez toutefois à l’esprit qu’il n’est pas toujours possible pour Questions et réponses d’afficher les données avec la visualisation demandée. Questions et réponses vous fournit une liste de types de visualisations applicables.
+Vous pouvez également indiquer à Q&R quelle visualisation utiliser en l’ajoutant à votre question. Gardez toutefois à l’esprit qu’il n’est pas toujours possible pour Q&R d’afficher les données avec la visualisation demandée. Questions et réponses vous fournit une liste de types de visualisations applicables.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 **Question** : Je ne vois pas Questions et réponses sur ce tableau de bord.    
-**Réponse 1** : Si vous ne voyez pas de zone de question, commencez par vérifier vos paramètres. Pour ce faire, sélectionnez l’icône d’engrenage en haut à droit de votre barre d’outils Power BI.   
+**Réponse 1** : Si vous ne voyez pas de zone de question, commencez par vérifier vos paramètres. Pour ce faire, sélectionnez l’icône d’engrenage en haut à droit de votre barre d’outils Power BI.   
 ![icône d’engrenage](media/end-user-q-and-a/power-bi-settings.png)
 
 Choisissez ensuite **Paramètres** > **Tableaux de bord**. Vérifiez qu’il y a une coche à côté de l’option **Afficher la zone de recherche de Questions et réponses dans ce tableau de bord**.
 ![Paramètres Questions et réponses pour le tableau de bord](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 
-**Réponse 2** : Parfois, le *concepteur* du tableau de bord ou votre administrateur désactive Questions et réponses. Vérifiez auprès d’eux s’il est possible de le réactiver.   
+**Réponse 2** : Parfois, le *concepteur* du tableau de bord ou votre administrateur désactive Questions et réponses. Vérifiez auprès d’eux s’il est possible de le réactiver.   
 
 **Question** : Je n’obtiens pas les résultats attendus quand je tape une question.    
 **Réponse** : Contactez le *concepteur* du tableau de bord. Il y a beaucoup de choses que le concepteur peut faire pour améliorer les résultats de Questions et réponses. Par exemple, il peut renommer des colonnes dans le jeu de données pour utiliser des termes qui sont faciles à comprendre (`CustomerFirstName` au lieu de `CustFN`). Étant donné que le concepteur connaît parfaitement le jeu de données, il peut également trouver des questions utiles et les ajouter au canevas Questions et réponses.

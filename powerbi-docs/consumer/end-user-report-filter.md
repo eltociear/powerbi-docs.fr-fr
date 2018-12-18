@@ -1,21 +1,22 @@
 ---
-title: Ajouter un filtre de rapport
+title: Ajouter un filtre à un rapport
 description: Guide pratique pour afficher un rapport dans le service Power BI pour les consommateurs
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 31b3584b0cbd2481db64160bcf502caf46e7acc3
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: ea219071b475bf5bb9123e1aa3bbaca412507a8e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473804"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280762"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport
 Cet article présente le volet Filtres de rapport du service Power BI.
@@ -36,7 +37,7 @@ Dans le service Power BI, les rapports conservent les modifications que vous app
 ## <a name="open-the-filters-pane"></a>Ouvrir le volet Filtres
 Quand un rapport est ouvert en mode Lecture, le volet Filtres s’affiche sur le côté droit du canevas du rapport. Si vous ne voyez pas le volet, sélectionnez la flèche dans le coin supérieur droit pour le développer.  
 
-Dans cet exemple, nous avons sélectionné un élément visuel contenant 6 filtres. La page de rapport dispose également de filtres qui sont répertoriés sous le titre **Filtres au niveau de la page**. Il y a un [filtre Extraction](../power-bi-report-add-filter.md), et le rapport entier a également un filtre, **AnnéeFiscale**, défini sur 2013 ou 2014.
+Dans cet exemple, nous avons sélectionné un élément visuel contenant 6 filtres. La page de rapport dispose également de filtres qui sont répertoriés sous le titre **Filtres au niveau de la page**. Il y a un [filtre Extraction](../power-bi-report-add-filter.md), et le rapport entier a également un filtre :  **AnnéeFiscale**, défini sur 2013 ou 2014.
 
 ![liste de filtres](media/end-user-report-filter/power-bi-filter-list.png)
 

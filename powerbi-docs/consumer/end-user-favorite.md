@@ -3,20 +3,21 @@ title: Favoris dans le service Power BI (tableaux de bord, rapports, application
 description: Documentation sur la manière de définir des tableaux de bord, rapports et applications en tant que favoris dans le service Power BI
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 46b943b9de7e8bae29c20617f957c81de2d49f94
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: cc94f352c550d7fba96f71f894e8d81ba5bc487a
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452496"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280185"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Tableaux de bord, rapports et applications favoris dans le service Power BI
 Quand vous ajoutez du contenu aux *favoris*, vous pouvez y accéder à partir de tous vos espaces de travail.  Les favoris correspondent généralement aux contenus que vous consultez le plus souvent.
@@ -71,7 +72,7 @@ Vous n’utilisez plus souvent un rapport ?  Vous pouvez le retirer des favoris.
    ![écran Favoris](./media/end-user-favorite/power-bi-unfavorites-screen.png)
 2. Sélectionnez l’étoile jaune en regard du contenu à retirer des favoris.
 
-> **REMARQUE** : vous pouvez également retirer un tableau de bord, un rapport ou une application des favoris. Pour cela, il vous suffit d’ouvrir l’élément en question et de désélectionner l’icône jaune.   
+> **REMARQUE** : Vous pouvez également retirer un tableau de bord, un rapport ou une application des favoris. Pour cela, il vous suffit d’ouvrir l’élément en question et de désélectionner l’icône jaune.   
 > 
 > 
 

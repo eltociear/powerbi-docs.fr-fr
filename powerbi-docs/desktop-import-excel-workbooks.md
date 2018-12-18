@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 56f25730730a6f218f2dbaa678abdf182470f177
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: eea68f0a17deff3aaa5a39558ffc2165b4c2b6f6
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670253"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280349"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Importer des classeurs Excel dans Power BI Desktop
 Avec **Power BI Desktop**, vous pouvez facilement importer des classeurs Excel qui contiennent des requêtes Power Query, des modèles Power Pivot et des feuilles de calcul Power View dans Power BI Desktop. Les rapports et les visualisations sont créées automatiquement à partir du classeur Excel et, une fois importés, vous pouvez continuer à améliorer et à affiner ces rapports à l’aide de Power BI Desktop, avec les fonctionnalités existantes et les nouvelles fonctionnalités publiées lors de chaque mise à jour mensuelle de Power BI Desktop.
@@ -42,7 +42,7 @@ Une fois l’importation terminée, une page **Résumé** décrit les éléments
 
 ![](media/desktop-import-excel-workbooks/importexceltopbi_3.png)
 
-Lorsque vous sélectionnez **Fermer**, le rapport est chargé dans Power BI Desktop. L’illustration suivante montre Power BI Desktop après l’importation d’un classeur Excel : Power BI Desktop a chargé automatiquement le rapport d’après le contenu du classeur.
+Lorsque vous sélectionnez **Fermer**, le rapport est chargé dans Power BI Desktop. L’illustration suivante montre Power BI Desktop après l’importation d’un classeur Excel : Power BI Desktop a chargé automatiquement le rapport d’après le contenu du classeur.
 
 ![](media/desktop-import-excel-workbooks/importexceltopbi_4.png)
 
@@ -55,7 +55,7 @@ Power BI Desktop peut importer les éléments suivants, communément appelés *o
 | --- | --- |
 | Requêtes Power Query |Toutes les requêtes Power Query dans Excel sont converties en requêtes dans Power BI Desktop. Si des groupes de requêtes étaient définis dans le classeur Excel, la même organisation est répliquée dans Power BI Desktop. Toutes les requêtes sont chargées, sauf si elles étaient configurées avec l’option « Ne créer que la connexion » dans Excel. Vous pouvez personnaliser le comportement de chargement à partir de la boîte de dialogue **Propriétés** sous l’onglet **Accueil** de l’ **Éditeur de requête** dans Power BI Desktop. |
 | Connexions de données externes Power Pivot |Toutes les connexions de données externes Power Pivot sont converties en requêtes dans Power BI Desktop. |
-| Tables liées ou tables du classeur actuel |S’il existe dans Excel un tableau de feuille de calcul qui a été lié au modèle de données ou à une requête (à l’aide de l’option *À partir du tableau* ou de la fonction *Excel.CurrentWorkbook()* en M), les options suivantes sont proposées : 1. Importer le tableau dans le fichier Power BI Desktop. Ce tableau est une capture instantanée ponctuelle des données, après laquelle vous ne pouvez pas modifier les données du tableau dans Power BI Desktop. Il existe une limite de taille de 1 million de caractères (au total, combinaison de tous les en-têtes de colonnes et de toutes les cellules) pour les tables créées à l’aide de cette option. 2. Conserver une connexion au classeur d’origine. En guise d’alternative, vous pouvez conserver une connexion au classeur Excel d’origine et Power BI Desktop récupère le contenu le plus récent de ce tableau à chaque actualisation, comme pour toute autre requête créée par rapport à un classeur Excel dans Power BI Desktop. |
+| Tables liées ou tables du classeur actuel |S’il existe dans Excel un tableau de feuille de calcul qui a été lié au modèle de données ou à une requête (à l’aide de l’option *À partir du tableau* ou de la fonction *Excel.CurrentWorkbook()* en M), les options suivantes sont proposées : <ol><li>Importer le tableau dans le fichier Power BI Desktop. Ce tableau est une capture instantanée ponctuelle des données, après laquelle vous ne pouvez pas modifier les données du tableau dans Power BI Desktop. Il existe une limite de taille de 1 million de caractères (au total, combinaison de tous les en-têtes de colonnes et de toutes les cellules) pour les tables créées à l’aide de cette option.</li><li>Conserver une connexion au classeur d’origine. En guise d’alternative, vous pouvez conserver une connexion au classeur Excel d’origine et Power BI Desktop récupère le contenu le plus récent de ce tableau à chaque actualisation, comme pour toute autre requête créée par rapport à un classeur Excel dans Power BI Desktop.</li></ul> |
 | Mesures, catégories de données, relations et colonnes calculées du modèle de données |Ces objets de modèle de données sont convertis en objets équivalents dans Power BI Desktop. Notez que certaines catégories de données, comme **Image**, ne sont pas encore disponibles dans Power BI Desktop. Dans ces cas-là, les informations de catégorie de données sont réinitialisées pour les colonnes en question. |
 | Feuilles de calcul Power View |Une page de rapport est créée pour chaque feuille de calcul Power View dans Excel. Le nom et l’ordre de ces pages de rapport correspondent à ceux du classeur Excel d’origine. |
 
@@ -66,6 +66,6 @@ L’importation d’un classeur dans Power BI Desktop est soumise aux limitation
 * **Hiérarchies :** ce type d’objet de modèle de données n’est pas pris en charge actuellement dans Power BI Desktop. Par conséquent, les hiérarchies sont ignorées lors de l’importation d’un classeur Excel dans Power BI Desktop.
 * **Colonnes de données binaires :** ce type de colonne de modèle de données n’est pas pris en charge actuellement dans Power BI Desktop. Les colonnes de données binaires sont supprimées de la table résultante dans Power BI Desktop.
 * **Éléments Power View non pris en charge :** certaines fonctionnalités de Power View ne sont pas encore disponibles dans Power BI Desktop, telles que les thèmes ou certains types de visualisations (nuages de points avec axe de lecture, comportements de descente dans la hiérarchie, et ainsi de suite). Ces visualisations non prises en charge génèrent des messages *Visualisation non prise en charge* à leurs emplacements correspondants dans le rapport Power BI Desktop, que vous pouvez supprimer ou reconfigurer en fonction de vos besoins.
-* **Plages nommées utilisant*****À partir du tableau*****dans Power Query ou utilisant*****Excel.CurrentWorkbook*****en M :** l’importation des données de cette plage nommée dans Power BI Desktop n’est pas prise en charge actuellement, mais il s’agit d’une mise à jour planifiée pour Power BI Desktop. Actuellement, ces plages nommées sont chargées dans Power BI Desktop en tant que connexion au classeur Excel externe.
+* **Plages nommées utilisant** ***À partir du tableau*** **dans Power Query ou utilisant** ***Excel.CurrentWorkbook*** **en M :** l’importation des données de cette plage nommée dans Power BI Desktop n’est pas prise en charge actuellement, mais il s’agit d’une mise à jour planifiée pour Power BI Desktop. Actuellement, ces plages nommées sont chargées dans Power BI Desktop en tant que connexion au classeur Excel externe.
 * **PowerPivot vers SSRS :** les connexions externes PowerPivot vers SQL Server Reporting Services (SSRS) ne sont pas prises en charge actuellement, car cette source de données n’est pas disponible actuellement dans Power BI Desktop.
 

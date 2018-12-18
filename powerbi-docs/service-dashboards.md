@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/21/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 709518924fbb9d83201eb5c070b7a3e93838ec79
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 7a1187373304387ac511053d241e5cfb31f7fcd9
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331939"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280578"
 ---
 # <a name="intro-to-dashboards-for-power-bi-designers"></a>Introduction aux tableaux de bord pour les concepteurs Power BI
 
@@ -48,15 +48,15 @@ Les [rapports](service-reports.md) et les tableaux de bord semblent similaires, 
 | --- | --- | --- |
 | Pages |Une seule page |Une ou plusieurs pages |
 | Sources de données |Un ou plusieurs rapports et un ou plusieurs jeux de données par tableau de bord |Un seul jeu de données par rapport |
-| Disponible dans Power BI Desktop |Non |Oui, les ***créateurs*** peuvent créer et afficher des rapports dans Desktop |
+| Disponible dans Power BI Desktop |Non | Possibilité de créer et d’afficher des rapports dans Power BI Desktop |
 | S’abonner |Possibilité de s’abonner à un tableau de bord |Possibilité de s’abonner à des pages de rapport |
 | Filtrage |Impossible de filtrer ou découper |Différentes manières de filtrer, mettre en surbrillance et découper |
 | Sélection |Possibilité de définir un tableau de bord comme votre tableau de bord « par défaut » |Impossible de créer un rapport proposé |
 | Favori | Possibilité de définir des tableaux de bord comme *Favoris* | Possibilité de définir des rapports comme *Favoris*
 | Définir des alertes |Disponible pour les vignettes de tableau de bord dans certaines circonstances |Non disponible à partir de rapports |
-| Requêtes en langage naturel |Disponible à partir du tableau de bord |Non disponible à partir de rapports |
+| Requêtes en langage naturel (Questions et réponses) |Disponible dans les tableaux de bord | Disponible dans les rapports |
 | Possibilité d’afficher les tables et les champs sous-jacents d’un jeu de données |Non. Possibilité d’exporter les données, mais pas de voir les tables et les champs dans le tableau de bord. |Oui. Possibilité de voir les tables d’un jeu de données ainsi que les champs et les valeurs. |
-| Personnalisation |Non |En mode Lecture, vous pouvez publier, incorporer, filtrer, exporter, télécharger en tant que .pbix, afficher le contenu associé, générer des codes de QR, analyser dans Excel et plus encore.  |
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 * Familiarisez-vous avec les tableaux de bord en effectuant une visite guidée d’un de nos [exemples de tableau de bord](sample-tutorial-connect-to-the-samples.md).
