@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: f272d0e40de5c65de9134c3d184195889233496b
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979541"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280923"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,36 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="november-2018"></a>Novembre 2018
+
+### <a name="modern-visual-header"></a>En-tête de visuel moderne 
+
+Les rapports qui utilisent le nouvel « en-tête de visuel moderne » n'allouent plus d'espace aux en-têtes, ce qui a pour effet d'avoir moins d'espace vide et plus de place pour vos visualisations.
+
+### <a name="enhance-presentation-mode-windows"></a>Mode de présentation amélioré (Windows)
+
+Mode de présentation amélioré pour les appareils Surface Hub et Windows 10.  Profitez d’une nouvelle expérience de salle de réunion Surface Hub. Avec des outils de présentation et de collaboration améliorés et une vue grand écran optimisée, vous pouvez mieux vous concentrer sur vos données. Ce mode de présentation fournit également des outils qui vous aideront à présenter efficacement vos informations et favoriseront les discussions autour de vos données. Cliquez [ici](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/) pour savoir plus sur le mode de présentation.
+
+### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Disposition de rapports en mode Portrait sur les tablettes (iOS et Android)
+
+Nous utilisons maintenant la disposition de rapport sur téléphone, quand elle existe, pour afficher les rapports sur votre tablette en mode portrait. En savoir plus sur la [création d’une disposition sur téléphone dans le service Power BI ou Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+
+### <a name="supporting-report-query-string"></a>Prise en charge d’une chaîne de requête de rapport 
+
+L’ouverture d’un lien de rapport incluant une chaîne de requête se fera désormais dans l’application mobile et sera préfiltrée selon les conditions définies dans la chaîne de requête. En savoir plus sur la [création d’une URL de rapport avec une chaîne de requête](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+
+### <a name="shared-credentials-now-in-android"></a>Informations d’identification partagées (maintenant sur Android)
+
+II n’a jamais été aussi facile de se connecter à Power BI à partir de votre application mobile. Avec les informations d’identification partagées, nous avons simplifié le processus de connexion avec d’autres informations d'identification d’applications Office 365 sur l’appareil pour vous authentifier dans le service Power BI.
+
+### <a name="in-app-urls-now-in-android"></a>URL dans l’application (maintenant sur Android) 
+
+Les liens dans les rapports qui pointent vers d’autres artefacts Power BI s’ouvrent maintenant directement à l’intérieur de l’application. Vous pouvez ainsi créer des flux de navigation personnalisés, par exemple, en reliant un rapport à un tableau de bord.
+
+### <a name="show-data-and-copy-values"></a>Afficher les données et copier les valeurs
+
+Le menu d’actions pour les visuels du rapport (...) propose maintenant une option permettant d’afficher les données sous-jacentes dans un tableau. Dans le tableau, vous pouvez appuyer longuement pour sélectionner puis copier des valeurs (à condition qu’il n’existe aucune stratégie Intune empêchant la copie).
 
 ## <a name="october-2018"></a>Octobre 2018
 
