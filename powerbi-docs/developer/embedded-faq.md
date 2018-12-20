@@ -114,7 +114,7 @@ Vous pouvez créer des capacités PBIE uniquement pour la région de votre locat
 
 Vous pouvez utiliser le portail PBI pour comprendre quelle est la région de votre locataire PBI.
 
-https://app.powerbi.com/ > ? > À propos de Power BI
+[https://app.powerbi.com/](https://app.powerbi.com/) > ? > À propos de Power BI
 
 ![À propos de Power BI](media/embedded-faq/about-01.png)
 ![Région du locataire](media/embedded-faq/tenant-location-01.png)
