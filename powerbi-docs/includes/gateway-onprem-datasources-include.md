@@ -6,7 +6,7 @@
 | Analysis Services (multidimensionnelle) |Oui |Oui |
 | Fichier |Non |Oui |
 | Dossier |Non |Oui |
-| IBM DB2 |Non |Oui |
+| IBM DB2 |Oui |Oui |
 | Base de données Informix IBM |Non |Oui |
 | IBM Netezza |Oui |Oui |
 | Impala |Oui |Oui |

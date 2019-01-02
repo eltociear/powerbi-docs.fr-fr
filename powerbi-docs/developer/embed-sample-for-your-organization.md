@@ -10,12 +10,12 @@ ms.component: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 541e6e62ac075922cdb301343361ac328a3db28e
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: ea4292fd95fa72a553d9f91b39ff0bc5de71a584
+ms.sourcegitcommit: 9913c213d40b45ba83c6c3b3a7ef0b757800e3ad
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180757"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53301847"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Tutoriel : Incorporer un rapport, un tableau de bord ou une vignette Power BI dans une application pour son organisation
 
@@ -429,17 +429,16 @@ En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous
 
 Le tableau suivant liste les références SKU Power BI Premium disponibles dans [Microsoft Office 365](../service-admin-premium-purchase.md) :
 
-| Nœud de capacité | Nb total de vCores<br/>(backend + frontend) | vCores backend | vCores frontend | Limites de connexions actives/DirectQuery | Rendus de pages au maximum aux heures de pointe |
+| Nœud de capacité | Nb total de vCores<br/>(backend + frontend) | vCores backend | vCores frontend | Limites de connexions actives/DirectQuery |
 | --- | --- | --- | --- | --- | --- |
-| EM1 |1 vCore |0,5 vCore, 10 Go de RAM |0,5 vCore |3,75 par seconde |150-300 |
-| EM2 |2 vCores |1 vCore, 10 Go de RAM |1 vCore |7,5 par seconde |301-600 |
-| EM3 |4 vCores |2 vCores, 10 Go de RAM |2 vCores |15 par seconde |601-1 200 |
-| P1 |8 vCores |4 vCores, 25 Go de RAM |4 vCores |30 par seconde |1 201-2 400 |
-| P2 |16 vCores |8 vCores, 50 Go de RAM |8 vCores |60 par seconde |2 401-4 800 |
-| P3 |32 vCores |16 vCores, 100 Go de RAM |16 vCores |120 par seconde |4 801-9 600 |
-| P4 |64 vCores |32 vCores, 200 Go de RAM |32 vCores |240 par seconde |9 601-19 200 |
-| P5 |128 vCores |64 vCores, 400 Go de RAM |64 vCores |480 par seconde |19 201-38 400 |
-
+| EM1 |1 vCore |0,5 vCore, 10 Go de RAM |0,5 vCore |3,75 par seconde |
+| EM2 |2 vCores |1 vCore, 10 Go de RAM |1 vCore |7,5 par seconde |
+| EM3 |4 vCores |2 vCores, 10 Go de RAM |2 vCores |15 par seconde |
+| P1 |8 vCores |4 vCores, 25 Go de RAM |4 vCores |30 par seconde |
+| P2 |16 vCores |8 vCores, 50 Go de RAM |8 vCores |60 par seconde |
+| P3 |32 vCores |16 vCores, 100 Go de RAM |16 vCores |120 par seconde |
+| P4 |64 vCores |32 vCores, 200 Go de RAM |32 vCores |240 par seconde |
+| P5 |128 vCores |64 vCores, 400 Go de RAM |64 vCores |480 par seconde |
 > [!NOTE]
 > - Lorsque vous tentez une incorporation avec des applications Microsoft Office, vous pouvez utiliser les références SKU EM pour accéder au contenu avec une licence gratuite de Power BI. Toutefois, vous ne pouvez pas accéder au contenu avec une licence gratuite de Power BI si vous utilisez Powerbi.com ou Power BI Mobile.
 > - Lorsque vous tentez une incorporation avec des applications Microsoft Office en utilisant Powerbi.com ou Power BI Mobile, vous pouvez accéder au contenu avec une licence gratuite de Power BI.

@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/20/2018
 ms.author: maggies
 ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289194"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451349"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Vue d’ensemble du programme Pack de contenu du service Power BI
 Un pack de contenu est un ensemble de contenu prêt à l’emploi permettant aux utilisateurs d’obtenir immédiatement des analyses depuis une source. Un pack de contenu se concentre généralement sur un scénario d’entreprise spécifique en fournissant des analyses pour un rôle, un domaine ou un flux de travail.
@@ -77,7 +77,7 @@ Les packs de contenu publiés peuvent être mis à jour une fois par mois. Les d
 
 N’hésitez pas à nous envoyer vos questions par e-mail à l’adresse [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
-## <a name="support"></a>Support technique
+## <a name="support"></a>Assistance
 Pour bénéficier d’un support durant le développement, utilisez [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Les incidents utilisateur sont rapidement transmis à la bonne équipe.
 
 ## <a name="next-step"></a>Étape suivante
