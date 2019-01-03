@@ -69,7 +69,7 @@ Vous pouvez **Obtenir des données**, consulter les **Sources récentes**ou **Ou
 
 ![](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-Power BI Desktop propose trois vues : **Rapport** , **Données****Relations** . Power BI Desktop comprend également un **Éditeur de requête**qui s’ouvre dans une fenêtre distincte. L’ **Éditeur de requête**permet de créer des requêtes et de transformer des données, puis de charger ce modèle de données filtrées dans Power BI Desktop pour créer des rapports.
+Power BI Desktop propose trois vues : **Rapport** , **Données** **Relations** . Power BI Desktop comprend également un **Éditeur de requête**qui s’ouvre dans une fenêtre distincte. L’ **Éditeur de requête**permet de créer des requêtes et de transformer des données, puis de charger ce modèle de données filtrées dans Power BI Desktop pour créer des rapports.
 
 L’écran suivant montre les icônes des trois vues à gauche de Power BI Desktop : **Rapport**, **Données**et **Relations**(de haut en bas). La vue actuellement affichée est indiquée par une barre jaune à gauche de l’icône. Dans le cas présent, c’est la vue **Rapport** qui est actuellement affichée. Vous pouvez changer de vue en cliquant sur l’une de ces trois icônes.
 
