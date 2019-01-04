@@ -11,11 +11,11 @@ ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: f12974d4e53217fc6c29ad172153ec9c51ecc44e
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452634"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451418"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Créer des espaces de travail avec vos collègues dans Power BI
 
@@ -27,7 +27,7 @@ Quand vous créez un espace de travail, vous créez un groupe Office 365 associ�
 
 **Le saviez-vous ?** Power BI propose une nouvelle expérience d’espace de travail en préversion. Lisez [Créer de nouveaux espaces de travail (préversion)](service-create-the-new-workspaces.md) pour voir comment les espaces de travail seront à l’avenir. 
 
-## <a name="video-apps-and-app-workspaces"></a>Vidéo : applications et espaces de travail d’application
+## <a name="video-apps-and-app-workspaces"></a>Vidéo : Applications et espaces de travail d’application
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="create-an-app-workspace-based-on-an-office-365-group"></a>Créer un espace de travail d’application basé sur un groupe Office 365

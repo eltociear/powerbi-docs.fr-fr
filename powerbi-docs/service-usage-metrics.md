@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1c6c0a803e77ead6d43c23ac2b12b305d5960ef7
-ms.sourcegitcommit: 2882b8962ed03c188257c042e537c76b052545c5
+ms.openlocfilehash: f7aad6b0e3dd38c795d886d1aba26a82a8529c01
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53111539"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649368"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Mesures d’utilisation pour les tableaux de bord et les rapports
 
@@ -166,7 +166,7 @@ Power BI est disponible dans des cloud nationaux distincts. Ces clouds offrent 
 Il est important de savoir que la comparaison entre les journaux d’audit et les métriques d’utilisation peut produire des différences, et de comprendre pourquoi. Les *journaux d’audit* sont collectés à l’aide de données issues du service Power BI ; les *métriques d’utilisation*, elles, sont collectées sur le client. Les compteurs d’activités agrégés dans les journaux d’audit ne correspondent donc pas toujours aux métriques d’utilisation :
 
 * Il arrive que les métriques d’utilisation sous-estiment les activités en raison de connexions réseau incohérentes, de bloqueurs de publicité ou d’autres problèmes susceptibles de perturber l’envoi d’événements à partir du client.
-* Certains types d’affichages ne sont pas inclus dans les métriques d’utilisation, comme on l’a vu dans cet article.
+* Certains types d’affichages ne sont pas inclus dans les métriques d’utilisation, comme décrit précédemment dans cet article.
 * Les métriques d’utilisation surestiment parfois les activités, dans les situations où le client actualise la page sans qu’il soit nécessaire de renvoyer une requête au service Power BI.
 
 

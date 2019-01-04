@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: e09c08780011ffaac7d37468e6018b079c41c669
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619813"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329737"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
@@ -78,6 +78,7 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Impala
 * Google BigQuery
 * Snowflake
+* Essbase (bêta)
 * Connecteur BI
 * Exasol
 * Dremio (bêta)
@@ -122,7 +123,7 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 
 * Liste SharePoint Online
 * Microsoft Exchange Online
-* Dynamics 365 (en ligne)
+* Dynamics 365 (Online)
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (local)
@@ -136,8 +137,8 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Adobe Analytics
 * appFigures (bêta)
 * comScore Digital Analytix (bêta)
-* Dynamics 365 pour Insights client (bêta)
-* Data.World - Obtenir le jeu de données (bêta)
+* Dynamics 365 pour Customer Insights (bêta)
+* Data.World – Obtenir le jeu de données (bêta)
 * Facebook
 * GitHub (bêta)
 * MailChimp (bêta)

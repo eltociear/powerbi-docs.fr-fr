@@ -13,7 +13,7 @@ Si vous rencontrez des problèmes d’authentification avec votre serveur proxy,
 
 ## <a name="ports"></a>Ports
 
-La passerelle crée une connexion sortante vers Azure Service Bus. Elle communique sur des ports de sortie : TCP 443 (valeur par défaut), 5671, 5672, 9350 à 9354.  La passerelle ne nécessite pas de ports d’entrée.
+La passerelle crée une connexion sortante vers Azure Service Bus. Elle communique sur des ports de sortie : TCP 443 (valeur par défaut), 5671, 5672, 9350 à 9354.  La passerelle ne nécessite pas de ports d’entrée.
 
 Nous vous recommandons d’ajouter les adresses IP de votre région de données à la liste verte dans votre pare-feu. Vous pouvez télécharger la [liste d’adresses IP des centres de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653), qui est mise à jour chaque semaine. La passerelle communique avec Azure Service Bus à l’aide de l’adresse IP et du nom de domaine complet. Si vous forcez la passerelle à communiquer à l’aide de HTTPS, elle utilise uniquement un nom de domaine complet et aucune communication n’est établie au moyen des adresses IP.
 

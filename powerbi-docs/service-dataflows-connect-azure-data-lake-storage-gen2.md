@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 58c9d41769179b84d9d7cdc79d02f66bc4c99953
-ms.sourcegitcommit: 76b07d55e85110a6ae8c49e08e80e4fa63826166
+ms.openlocfilehash: 72c3c2fde92de45d3a93f087d217af1f50e50601
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200646"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649042"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)
 
@@ -76,7 +76,7 @@ Dans la fenêtre **Ajouter une attribution de rôle**, sélectionnez le rôle **
 
 Vous devez créer un système de fichiers nommé *powerbi* avant de pouvoir ajouter votre compte de stockage à Power BI. Il existe de nombreuses façons de créer le système de fichiers, y compris à l’aide d’Azure Databricks, HDInsight, AZCopy ou Explorateur Stockage Azure. Cette section vous montre un moyen simple de créer un système de fichiers à l’aide de l’Explorateur Stockage Azure.
 
-Cette étape nécessite que vous installiez l’Explorateur Stockage Azure. Pour installer l’Explorateur Stockage Azure pour Windows, Macintosh ou Linux, consultez [Explorateur Stockage Azure](https://azure.microsoft.com/features/storage-explorer/).
+Cette étape nécessite que vous installiez l’Explorateur Stockage Azure version 1.6.1 ou version ultérieure. Pour installer l’Explorateur Stockage Azure pour Windows, Macintosh ou Linux, consultez [Explorateur Stockage Azure](https://azure.microsoft.com/features/storage-explorer/).
 
 1. Une fois que vous avez installé l’Explorateur Stockage Azure, lors du premier lancement, la fenêtre Explorateur Stockage Microsoft Azure - Connexion s’affiche. Bien que l’Explorateur Stockage offre plusieurs façons de se connecter à des comptes de stockage, une seule méthode est actuellement prise en charge pour la configuration requise. 
 
@@ -108,11 +108,11 @@ Pour rechercher des applications de votre locataire, procédez comme suit :
 
     ![Applications d’entreprise AAD](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
 
-4. Dans la barre de recherche, tapez *Power* et une collection d’ID d’objet pour les applications Power BI et Power Query s’affiche.
+4. Dans la barre de recherche, tapez *Power* et une collection d’ID d’objet pour les applications Power BI et Power Query s’affiche. Vous aurez besoin des trois valeurs dans les étapes suivantes.  
 
     ![Rechercher des applications Power](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Sélectionnez et copiez l’ID d’objet du service Power BI à partir des résultats de votre recherche. Soyez prêt à coller cette valeur dans les étapes suivantes.
+5. Sélectionnez et copiez les ID d’objet du service Power BI et de Power BI Premium à partir des résultats de votre recherche. Soyez prêt à coller ces valeurs dans les étapes suivantes.
 
 7. Ensuite, utilisez **Explorateur Stockage Azure** pour accéder au système de fichiers *powerbi* que vous avez créé dans la section précédente. Suivez les instructions de la section [Gestion de l’accès](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) de l’article [Définir des autorisations au niveau du fichier et du répertoire à l’aide de l’Explorateur Stockage Azure](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
 
@@ -120,7 +120,7 @@ Pour rechercher des applications de votre locataire, procédez comme suit :
 
    ![attribuer les trois autorisations pour les deux](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. Pour l’ID d’objet Power Query Online collecté à l’étape 5, attribuez l’accès **Écriture**, **Exécuter** et les ACL par défaut à votre système de fichiers *powerbi*.
+9. Pour l’ID d’objet Power Query Online collecté à l’étape 4, attribuez les accès **Écriture**, **Exécuter** et les ACL par défaut à votre système de fichiers *powerbi*.
 
    ![ensuite, attribuer Écriture et Exécuter](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
@@ -195,9 +195,9 @@ Questions et réponses courantes :
 
 Cet article fournit des conseils sur la façon de se connecter à un Azure Data Lake Gen2 pour le stockage de flux de données. Pour plus d’informations, consultez les articles suivants :
 
-Pour plus d’informations sur les flux de données, CDM et Azure Data Lake Storage Gen2, consultez les articles suivants :
+Pour plus d’informations sur les flux de données, le format CDM et Azure Data Lake Storage Gen2, voir les articles suivants :
 
-* [Flux de données et intégration d’Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
+* [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 * [Configurer les paramètres de flux de données d’espace de travail (préversion)](service-dataflows-configure-workspace-storage-settings.md)
 * [Ajouter un dossier CDM à Power BI comme en tant que flux de données (préversion)](service-dataflows-add-cdm-folder.md)
 
@@ -208,12 +208,12 @@ Pour plus d’informations générales sur les flux de données, consultez les a
 * [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
 * [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
 
-Pour plus d’informations sur le stockage Azure, vous pouvez consulter ces articles :
+Pour plus d’informations sur le stockage Azure, voir les articles suivants :
 * [Guide de sécurité sur le Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :
 * [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [Dossiers CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Définition du fichier modèle CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Définition du fichier model CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Et vous pouvez toujours essayer de [poser des questions à la Communauté Power BI](http://community.powerbi.com/).
+Vous pouvez aussi [poser des questions à la Communauté Power BI](http://community.powerbi.com/).

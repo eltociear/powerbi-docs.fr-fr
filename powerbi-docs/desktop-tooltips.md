@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8ec638eefa95ef70ab04606881bee421f82b7f11
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 0b5693dfa53feba35acb559bf8606b1d03f97fdb
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223314"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329783"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Créer des info-bulles basées sur des pages de rapport dans Power BI Desktop
 Vous pouvez créer des **info-bulles de rapport** attrayantes qui s’affichent quand vous pointez sur les visuels, basées sur les pages de rapport que vous créez dans **Power BI Desktop**. Quand vous créez une page de rapport à utiliser comme info-bulle, vos info-bulles personnalisées peuvent inclure des visuels, des images et toute autre collection d’éléments que vous créez dans la page de rapport. 
@@ -25,17 +25,6 @@ Vous pouvez créer des **info-bulles de rapport** attrayantes qui s’affichent 
 Vous pouvez créer autant de pages d’info-bulle que vous le souhaitez. Vous pouvez associer chaque page d’info-bulle à un ou plusieurs champs dans votre rapport. De cette manière, quand vous pointez sur un visuel qui inclut le champ sélectionné, l’info-bulle que vous avez créée dans votre page d’info-bulle s’affiche, filtrée sur le point de données sur lequel vous pointez avec la souris. 
 
 Les infos-bulle de rapport permettent d’effectuer toutes sortes de choses intéressantes. Voyons maintenant comment créer et configurer des info-bulles.
-
-### <a name="enable-the-tooltips-preview"></a>Activer la préversion des info-bulles 
-À compter de la version de septembre 2018 de **Power BI Desktop**, les info-bulles sont généralement disponibles et n’ont pas besoin d’être activées. 
-
-Si vous utilisez une version antérieure de **Power BI Desktop**, vous pouvez les activer en tant que fonctionnalité en préversion en sélectionnant **Fichier > Options et paramètres > Options > Fonctionnalités en préversion** dans Power BI Desktop, puis en cochant la case en regard de **Info-bulles de page de rapport**. 
-
-![Activer la fonctionnalité des info-bulles de rapport en préversion](media/desktop-tooltips/desktop-tooltips_01.png)
-
-Vous devrez redémarrer **Power BI Desktop** après avoir activé la préversion des info-bulles de rapport.
-
-Nous recommandons toujours de mettre à niveau vers la version la plus récente de **Power BI Desktop**, que vous pouvez obtenir à partir d’un lien dans [Obtenir Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="create-a-report-tooltip-page"></a>Créer une page d’info-bulle de rapport
 Pour commencer, créez une page de rapport en cliquant sur le bouton **+** situé en bas du canevas de **Power BI Desktop**, dans la zone des onglets. Le bouton se trouve après le dernier onglet dans le rapport. 
@@ -123,8 +112,7 @@ Quand un visuel fait l’objet d’une mise en évidence croisée dans un rappor
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Gardez à l’esprit les considérations et les limitations suivantes relatives aux **info-bulles**.
 
-* À compter de la version de septembre 2018 de **Power BI Desktop**, qui a marqué la disponibilité générale des info-bulles, les visuels de carte prennent également en charge les info-bulles.
-* À partir de la version de juillet 2018 de **Power BI Desktop**, les visuels de table et de matrice sont pris en charge pour les info-bulles. 
+* Depuis la version de décembre 2018 de **Power BI Desktop**, les visuels de bouton prennent également en charge les info-bulles.
 * Les info-bulles de rapport ne sont pas prises en charge lors de l’affichage des rapports dans des applications mobiles. 
 * Les info-bulles de rapport ne sont pas prises en charge pour les visuels personnalisés. 
 * Les info-bulles de rapport ne prennent pas en charge l’affichage des champs clusters. 

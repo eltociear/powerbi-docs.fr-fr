@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 3e8e8359742a422049751a348bce6a5d4015bd72
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 129649367efa3a2b23fbf3be181e14df158eba02
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619859"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329852"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -33,6 +33,57 @@ Les liens en regard de chaque mise à jour signifient ce qui suit :
 Vous pouvez également regarder la vidéo sur les **dernières mises à jour** dès le début, directement dans cet article, en cliquant sur l’icône de **lecture** sur l’image vidéo située sous la liste des mises à jour.
 
 Les sections suivantes décrivent les mises à jour **Power BI Desktop** des mois précédents.
+
+## <a name="november-2018-update-2645285461"></a>Mise à jour de novembre 2018 (2.64.5285.461)
+
+Nos mises à jour de novembre comportent de nombreuses nouvelles fonctionnalités. Alors, rassemblez votre équipe de passionnés de données et d’analytique et examinez toutes nos mises à jour. 
+
+Les mises à jour suivantes ont été ajoutées dans **Power BI Desktop** en novembre :
+
+### <a name="reporting"></a>Création de rapports
+
+* Développer et réduire des en-têtes de lignes de matrice  [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=16)  [[article]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23expandCollapse) 
+* Copier et coller entre des fichiers Desktop [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=199)  [[article]](desktop-report-view.md#copy-and-paste-between-reports)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23copyPaste)
+* Expérience de filtrage mise à jour (préversion) [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=410)   [[article]](power-bi-reports-filters-and-highlighting.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23filterPane)
+* Améliorations de l’accessibilité au rapport [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=1036)  [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23reportAccessibility)
+
+### <a name="analytics"></a>Analytique
+
+* Saturation de la couleur sur les visuels mis à niveau pour utiliser la mise en forme conditionnelle [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=1224)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23conditionalFormatting) 
+* Questions de suivi dans l’explorateur Q&R [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=1429)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
+
+
+### <a name="modeling"></a>Modélisation
+
+* Nouvel affichage de modélisation (préversion) [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=1642)  [[article]](desktop-modeling-view.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingView) 
+* Disponibilité générale des modèles composites [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=1941)  [[article]](desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23compositeModels) 
+* Améliorations de l’accessibilité à la modélisation [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=2023)  [[article]](desktop-accessibility.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingAccessibility) 
+* Nouvelles fonctions DAX [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=2066)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23dax) 
+
+### <a name="custom-visuals"></a>Visuels personnalisés
+
+* Cinq nouveaux visuels personnalisés  [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=2108)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23customVisuals) 
+
+### <a name="data-connectivity"></a>Connectivité aux données
+
+* Connecteur Azure DevOps Server [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=2641)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23devOps) 
+* Prise en charge du connecteur PDF pour les paramètres Page de démarrage et Page de fin  [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=2667)   [[article]](desktop-connect-pdf.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23pdf) 
+* Connecteur Azure Consumption Insights amélioré  [[vidéo]](https://youtu.be/1xsXXoyTxfk?t=2704)  [[article]](desktop-connect-azure-consumption-insights.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23consumptionInsights) 
+
+
+> [!NOTE]
+> Cous pouvez aussi [consulter la liste des sources de données accessibles à Power BI Desktop](desktop-data-sources.md). Cette liste étant en constante évolution, consultez-la régulièrement.
+
+Vous souhaitez plus d’informations sur ces mises à jour ? Consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary) pour obtenir des informations plus détaillées sur chacune de ces nouvelles fonctionnalités (voir le billet de blog référencé dans la liste ci-dessus).
+
+
+Le canal vidéo suivant décrit et montre chacune de ces mises à jour. Vous pouvez également voir la vidéo à partir du billet de blog.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1xsXXoyTxfk?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Les rubriques [Nouveautés du service Power BI](service-whats-new.md) et [Nouveautés dans les applications mobiles pour Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md) sont également susceptibles de vous intéresser.
+
 
 ## <a name="october-2018-update-263327240262"></a>Mise à jour d’octobre 2018 (2.63.3272.40262)
 
@@ -363,7 +414,7 @@ Les mises à jour suivantes ont été apportées à **Power BI Desktop** en avr
 ### <a name="analytics"></a>Analytique
 
 * Mettre à jour votre schéma linguistique [[vidéo]](https://youtu.be/W_Nb73Od_AI?t=22m)  [[article]](power-bi-custom-visuals-organization.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
-* Nouvelle fonction DAX : COMBINEVALUES() [[vidéo]](https://youtu.be/W_Nb73Od_AI?t=23m37s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
+* Nouvelle fonction DAX : COMBINEVALUES()  [[vidéo]](https://youtu.be/W_Nb73Od_AI?t=23m37s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
 
 ### <a name="custom-visuals"></a>Visuels personnalisés
 
@@ -373,7 +424,7 @@ Les mises à jour suivantes ont été apportées à **Power BI Desktop** en avr
 ### <a name="data-connectivity"></a>Connectivité aux données
 
 * Connecteur Adobe Analytics en disponibilité générale  [[vidéo]](https://youtu.be/kuI6MMzDh34?t=32m) [[article]](desktop-multi-select.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#adobeAnalytics) 
-* Amélioration du connecteur SAP HANA : sélection de port  [[vidéo]](https://youtu.be/kuI6MMzDh34?t=32m44s)  [[article]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
+* Amélioration du connecteur SAP HANA : sélection de port [[vidéo]](https://youtu.be/kuI6MMzDh34?t=32m44s)  [[article]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
 * Connecteur Dynamics 365 Business Central [[vidéo]](https://youtu.be/kuI6MMzDh34?t=34m10s)  [[article]](desktop-directquery-sap-hana.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#dynamics365BusinessCentral) 
 
 
@@ -1050,7 +1101,7 @@ Les nouvelles mises à jour apportées à Power BI Desktop en février sont les
 
 ### <a name="analytics"></a>Analyse :
 
--   Deux nouveaux calculs rapides : pourcentage du total de la ligne et pourcentage du total de la colonne [[vidéo]](https://youtu.be/mn75-LOPxMA?t=7m46s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#quickCalcs)
+-   Deux nouveaux calculs rapides : pourcentage du total de la ligne et pourcentage du total de la colonne [[vidéo]](https://youtu.be/mn75-LOPxMA?t=7m46s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-feature-summary/#quickCalcs)
 
 ### <a name="data-connectivity"></a>Connexion de données :
 
@@ -1584,7 +1635,7 @@ La mise à jour de mars offre toutes sortes de renouvellement et d'actualisation
     -   Ajout d’informations de schéma pour la hiérarchie de navigation des sources ODBC
     -   Possibilité de désactiver la publication à partir de **Navigator**
     -   Prise en charge des noms techniques
--   Charge : étape automatique destinée à lever l'ambiguïté des noms de colonnes en conflit (comparaison insensible à la casse)
+-   Charge : étape automatique destinée à lever l’ambiguïté des noms de colonnes en conflit (comparaison insensible à la casse)
 -   Vous pouvez maintenant renommer des requêtes directement à partir du volet **Requêtes**
 
 
@@ -1612,7 +1663,7 @@ Nous prenons de l’avance et vous proposons encore plus de mises à jour de ce 
 -   Consultez les données liées au visuel (y compris *Exporter les données au format CSV*)
 -   Améliorations des cartes : tracer une carte avec la latitude et la longitude uniquement
 -   Prise en charge de la version de consommation des indicateurs de performance clés (y compris la prise en charge de hiérarchie de navigation et de la tendance des indicateurs de performance clés pour SSAS MD)
--   Mode d’exploration SSAS : prise en charge des dossiers d’ **affichage** dans le volet **Champs**
+-   Mode d’exploration SSAS : prise en charge des dossiers d’**affichage** dans le volet **Champs**
 -   Améliorations de la disposition du ruban : onglet ruban contextuel pour les **Outils de rapport**
 -   Nouveau visuel des indicateurs de performance clés
 -   Ouvrez les rapports à la page affichée lors de leur enregistrement
@@ -1623,7 +1674,7 @@ Nous prenons de l’avance et vous proposons encore plus de mises à jour de ce 
 ### <a name="data-modeling"></a>Modélisation des données :
 
 -   Possibilité de définir des hiérarchies
--   Amélioration des performances : optimisation pour le changement de nom des tables et colonnes
+-   Améliorations des performances : optimisation pour le changement de nom des tables et colonnes
 
 ### <a name="data-connectivity"></a>Connexion de données :
 
@@ -1711,7 +1762,7 @@ Décembre est le mois des cadeaux. Dans cet esprit, l’équipe de Power BI vou
 
 -   Améliorations apportées aux visualisations :
     - Signal visuel concernant l’état de tri dans l’élément visuel **Table**
-    - Nouvel élément visuel : graphique **Aires empilées**
+    - Nouveau visuel : graphique **Aires empilées**
     - Info-bulles dynamiques pour les graphiques **Aires** et **Ligne** sur pointage
     - Possibilité de créer une ligne/région de référence pour un élément visuel **Cartésien**
     - Étiquettes de données améliorées pour les graphiques **Secteur** et **Nuage de points**
@@ -1872,7 +1923,7 @@ Le grand ensemble suivant de 44 fonctionnalités a été ajouté à cette mise 
         - Sens des étiquettes de l’axe des X (horizontal / en diagonale)
         - Prise en charge des échelles logarithmiques et linéaires pour les valeurs de l’axe des Y
         - Affichage du texte des liens hypertexte dans des zones de texte
-        - Améliorations des visualisations existantes : table, matrice, segment, graphique à nuages de points, cartes uniques, graphiques combinés et jauges
+        - Améliorations des visualisations existantes : table, matrice, segment, graphique à nuages de points, cartes uniques, graphiques combinés et jauges
         - Prise en charge de l’affichage des valeurs de saturation des couleurs dans les info-bulles
         - Possibilité de redimensionner les images et appliquer des options de mise en forme supplémentaires
 
@@ -1888,7 +1939,7 @@ Le grand ensemble suivant de 44 fonctionnalités a été ajouté à cette mise 
     - Copiez le contenu d’une table dans le Presse-papiers.
 - Synthèse des champs :
     - Prise en charge d’opérations supplémentaires dans le volet Champs : moyenne, écart type et variance
-    - Synthèse par défaut : les utilisateurs peuvent maintenant personnaliser l’opération de synthèse par défaut pour un champ donné dans leur modèle
+    - Synthèse par défaut : les utilisateurs peuvent maintenant personnaliser l’opération de synthèse par défaut pour un champ donné dans leur modèle
 
 ### <a name="data-connectivity"></a>Connectivité aux données
 
@@ -1912,8 +1963,8 @@ Le grand ensemble suivant de 44 fonctionnalités a été ajouté à cette mise 
 - Option « Détecter les types des colonnes » pour déclencher la détection du type à la demande
 - « Actualiser tous les aperçus » pour actualiser tous les aperçus de l’éditeur de requête en un seul clic
 - Améliorations des performances
-    - Boîte de dialogue Choisir les colonnes : expérience utilisateur plus rapide pour traiter les grandes tables
-    - Fenêtres contextuelles Filtre automatique et Développer/agréger : plus rapides pour un grand nombre de valeurs/champs
+    - Boîte de dialogue Choisir les colonnes : expérience utilisateur plus rapide pour traiter les grandes tables
+    - Fenêtres contextuelles Filtre automatique et Développer/agréger : plus rapides pour un grand nombre de valeurs/champs
 
 La vidéo suivante montre ces fonctionnalités plus en détail.
 
@@ -1969,13 +2020,13 @@ Cette mise à jour comprend les nouvelles fonctionnalités suivantes :
 
 -   **Nouveaux connecteurs de données**: appFigures, Quickbooks Online, Zendesk, Github, Twilio et SweetIQ.
 
--   **Nouvelles transformations**: extraction de caractères (premier/dernier/plage) d’une colonne de texte, option permettant de spécifier le type de jointure dans la boîte de dialogue Fusionner des requêtes, possibilité de personnaliser le style de citation dans la boîte de dialogue Fractionner la colonne par délimiteur.
+-   **Nouvelles transformations** : extraction de caractères (premier/dernier/plage) d’une colonne de texte, option permettant de spécifier le type de jointure dans la boîte de dialogue Fusionner des requêtes, possibilité de personnaliser le style de citation dans la boîte de dialogue Fractionner la colonne par délimiteur.
 
--   **Améliorations concernant la création de rapports** : nouvelles visualisations (Graphique en aires, Graphique en cascade, Graphique en anneau et Matrice), nouvelles options de mise en forme et de personnalisation (étiquettes, titres, arrière-plan, légende, couleurs, etc.), possibilité d’insérer une zone de texte et une image dans un rapport, prise en charge des liens hypertexte dans les rapports et les tables de rapport, actions Annuler/Rétablir.
+-   **Améliorations concernant la création de rapports** : nouvelles visualisations (Graphique en aires, Graphique en cascade, Graphique en anneau et Matrice), nouvelles options de mise en forme et de personnalisation (étiquettes, titres, arrière-plan, légende, couleurs, etc.), possibilité d’insérer une zone de texte et une image dans un rapport, prise en charge des liens hypertexte dans les rapports et les tables de rapport, actions Annuler/Rétablir.
 
 -   **Exploration directe de rapports** sur les modèles tabulaires Analysis Services.
 
--   **Modélisation de données :** nouvelles vues Données et Relations.
+-   **Modélisation de données :** nouvelles vues Données et Relations.
 
 -   Possibilité de publier des rapports sur PowerBI.com directement à partir de Power BI Desktop.
 
@@ -2001,7 +2052,7 @@ Cette mise à jour comprend les nouvelles fonctionnalités suivantes :
 
 -   Tri par une autre colonne
 
--   Éditeur de formule DAX amélioré : aide sur les fonctions et prototype de fonction
+-   Éditeur de formule DAX amélioré : aide sur les fonctions et prototype de fonction
 
 **Obtenir des données et effectuer une requête**
 
@@ -2102,7 +2153,7 @@ Cette mise à jour comprend les nouvelles fonctionnalités et les améliorations
     -   Amélioration des fonctionnalités de recherche dans l’arborescence du navigateur
 - Nouvelles Transformations
   -   Opérations Âge et Soustraire pour les colonnes Date/Heure
-  -   Colonnes d’agrégation : option permettant de désactiver le préfixe des nouvelles colonnes
+  -   Colonnes d’agrégation : option permettant de désactiver le préfixe des nouvelles colonnes
 - Améliorations apportées à la liste des champs
   -   Développer/réduire des tables
   -   Masquer/afficher des champs

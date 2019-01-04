@@ -1,5 +1,5 @@
 ---
-title: 'Rapports paginés dans Power BI : FAQ (préversion)'
+title: 'Rapports paginés dans Power BI : FAQ (préversion)'
 description: Cet article répond aux questions fréquemment posées sur les rapports paginés. Ces rapports sont mis en forme, optimisés au pixel près pour la sortie par impression ou la génération de fichiers PDF.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 0ddf95563c52af135ac7ae4fe71aeddcd2ce7313
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: d3fdf9b568aa13ba5a8437c684835e0fce803d19
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267277"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649442"
 ---
-# <a name="paginated-reports-in-power-bi-faq-preview"></a>Rapports paginés dans Power BI : FAQ (préversion)
+# <a name="paginated-reports-in-power-bi-faq-preview"></a>Rapports paginés dans Power BI : FAQ (préversion)
 
 Cet article répond aux questions fréquemment posées sur les rapports paginés. Ces rapports sont mis en forme, optimisés au pixel près pour la sortie par impression ou la génération de fichiers PDF. Ils sont appelés « paginés », car ils sont mis en forme pour tenir sur plusieurs pages. Les rapports paginés sont basés sur la technologie de rapport RDL dans SQL Server Reporting Services. 
 
@@ -59,7 +59,7 @@ Les journaux d’audit fournissent également les événements suivants pour les
 
 ### <a name="can-i-monitor-this-workload-through-the-premium-capacity-monitoring-app"></a>Puis-je surveiller cette charge de travail via l’application de surveillance de capacité Premium ?
 
-Pas encore. La surveillance sera disponible en préversion publique en tant que nouvel onglet dans le rapport existant, avec les mêmes détails pertinents dont vous disposez pour vos jeux de données Power BI.
+Oui, la surveillance est disponible en tant que nouvel onglet avec les mêmes détails pertinents que pour vos jeux de données Power BI.
 
 ### <a name="do-i-need-a-pro-license-to-create-and-publish-paginated-reports"></a>Ai-je besoin d’une licence Pro pour créer et publier des rapports paginés ?
 
@@ -73,9 +73,9 @@ Vous recevez un message d’erreur et vous ne pouvez pas afficher votre rapport 
 
 Mémoire par défaut dans chaque référence SKU Premium pour des rapports paginés :
 
-- **P1/A4** : 20 % par défaut ; 10 % minimum
-- **P2/A5** : 10 % par défaut ; 5 % minimum
-- **P3/A6** : 5 % par défaut ; 2,5 % minimum
+- **P1/A4** : 20 % par défaut ; 10 % minimum
+- **P2/A5** : 20 % par défaut ; 5 % minimum
+- **P3/A6** : 20 % par défaut ; 2,5 % minimum
 
 ## <a name="general"></a>Général
 
@@ -113,15 +113,12 @@ Actuellement, les rapports paginés ne prennent pas en charge les éléments sui
 - Signets
 - Couches de carte Bing
 - Polices personnalisées
-- Paramètres masqués
-
-Le basculement et le tri interactif ne sont pas encore en production, mais sont attendus pour bientôt.    
 
 Vous obtenez un message d’erreur si vous essayez de charger un fichier avec une fonctionnalité non prise en charge autre que basculer/trier dans le service Power BI.
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Quelles sources de données prenez-vous actuellement en charge pour les rapports paginés ?
 
-Nous prenons en charge les modèles tabulaires Azure SQL Database, SQL Server et SQL Server Analysis Services (SSAS) à l’aide de la passerelle locale. Nous ne prenons actuellement pas en charge les modèles SSAS multidimensionnels (MDX).
+Nous prenons en charge les modèles tabulaires (DAX) et multidimensionnels (MDX) Azure SQL Database, SQL Server et SQL Server Analysis Services (SSAS) à l’aide de la passerelle locale.
 
 Lorsque vous accédez à SSAS via la passerelle, l’utilisateur dont les informations d’identification sont stockées a besoin d’autorisations avec élévation de privilèges dans SSAS pour fonctionner via la passerelle.
 
@@ -135,7 +132,7 @@ Pas encore, mais cette prise en charge est prévue prochainement.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Puis-je utiliser des procédures stockées via la passerelle ?
 
-Vous pouvez utiliser une procédure stockée via la passerelle, sauf si elle contient des paramètres.
+Vous pouvez utiliser une procédure stockée via la passerelle, mais vous pouvez rencontrer des problèmes dans certains scénarios si la procédure stockée contient des paramètres.
 
 ### <a name="what-export-formats-are-available-for-my-report-in-the-power-bi-service"></a>Quels sont les formats d’exportation disponibles pour mon rapport dans le service Power BI ?
 
@@ -143,15 +140,15 @@ Vous pouvez exporter vers Microsoft Excel, Microsoft Word, Microsoft PowerPoint,
 
 ### <a name="can-i-print-paginated-reports"></a>Puis-je imprimer des rapports paginés ?
 
-Actuellement, vous pouvez exporter au format PDF et imprimer le fichier. L’impression directement à partir d’un rapport paginé doit être disponible bientôt. 
+Oui, l’impression est disponible pour les rapports paginés, comprenant un nouvel aperçu amélioré de l’impression. 
 
 ### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Des abonnements par e-mail sont-ils disponibles pour des rapports paginés ?
 
-Non, les abonnements par e-mail seront disponibles ultérieurement.
+Non, cependant les abonnements par e-mail seront bientôt disponibles.
 
 ### <a name="what-features-from-ssrs-will-you-be-supporting-in-the-power-bi-service"></a>Quelles sont les fonctionnalités à partir de SSRS que vous prendrez en charge dans le service Power BI ?
 
-Notre objectif est de fournir plus la plus grande parité possible entre les deux produits.  Il peut ne pas être judicieux d’essayer de modifier certaines choses dans SSRS et Power BI pour s’adapter à des modèles SSRS existants, tels que les différents modèles d’autorisation Power BI, mais nous tiendrons compte des commentaires des clients pour prendre ces types de décisions.
+Notre objectif est de fournir une parité des fonctionnalités pour la plupart des scénarios. Mais il peut ne pas être judicieux d’essayer de modifier certaines choses dans SSRS et Power BI pour s’adapter à des modèles SSRS existants.  Par exemple, les différents modèles d’autorisation Power BI ne peuvent pas être mappés à nouveau dans SSRS.  Nous tiendrons compte des commentaires des clients et des partenaires pour prendre ces types de décisions.
 
 ### <a name="can-i-run-custom-code-in-my-report"></a>Puis-je exécuter du code personnalisé dans mon rapport ?
 
@@ -171,7 +168,7 @@ Pas encore, mais nous prévoyons absolument de prendre en charge ce scénario.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Puis-je partager mon contenu de rapport paginé via une application Power BI ?
 
-Actuellement, vous pouvez partager des rapports paginés individuels avec d’autres utilisateurs via l’action de partage dans le portail. Nous ne prenons pas encore en charge le partage dans une application, mais ce sera bientôt le cas. Le bouton de partage se trouvera également dans la barre d’outils.
+Actuellement, vous pouvez partager des rapports paginés individuels avec d’autres utilisateurs via l’action de partage dans le portail ou la barre d’outils. Nous ne prenons pas encore en charge le partage dans une application, mais ce sera bientôt le cas. 
 
 ### <a name="will-other-report-specific-features-in-power-bi-like-pinning-to-report-tiles-to-dashboards-work-with-paginated-reports"></a>D’autres fonctionnalités spécifiques aux rapports dans Power BI, telles que l’épinglage pour reporter des mosaïques de rapports sur des tableaux de bord, fonctionneront-elles avec des rapports paginés ?
 
@@ -179,15 +176,15 @@ Nous prévoyons que les rapports prennent autant que possible en charge les mêm
 
 ### <a name="are-you-planning-to-create-a-new-authoring-tool-for-paginated-reports-in-the-power-bi-service--we-cant-do-everything-we-need-to-with-report-builder-today"></a>Vous prévoyez de créer un nouvel outil de création de rapports paginés dans le service Power BI ?  Aujourd’hui, nous ne pouvons pas faire tout ce qui est nécessaire avec le Générateur de rapports.
 
-Nous sommes toujours à la recherche de différentes options pour la meilleure histoire d'outillage, mais soyez assurés que nous aurons une prise en charge des fonctionnalités comme ALM, les extensions personnalisées et d'autres fonctionnalités qui peuvent n’être incluses que dans l'un des outils de création pour SSRS. 
+Nous sommes toujours à la recherche de différentes options pour la meilleure histoire d’outillage pour les rapports paginés dans Power BI. 
 
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Un outil de migration qui permettrait aux clients SSRS de déplacer leurs ressources et rapports existants vers Power BI est-il prévu ?
 
-Oui, mais pas avant que l’ensemble des fonctionnalités prises en charge dans le service Power BI ne soit complet.
+Nous évaluons les options présentes ici pour autoriser le déplacement du contenu vers Power BI de manière automatisée, mais cette option ne sera pas disponible avant la disponibilité générale.
 
 ### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>Pourrai-je un jour créer des rapports paginés et des rapports Power BI dans un seul outil de création ?
 
-Nous ne prévoyons actuellement pas d’outil de création unique, mais nous cherchons des moyens de distribuer potentiellement les outils de création ensemble en tant que suite BI unique au lieu de téléchargements/de marques individuels.
+Potentiellement.  Nous cherchons des solutions pour prendre en charge ce scénario, ou si nous distribuons simplement les outils de création ensemble en tant que suite BI unique au lieu de téléchargements/de marques individuels.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Y-a-t-il un contrôle de visionneuse de rapports pour les rapports paginés dans le service Power BI ?
 
@@ -200,4 +197,4 @@ Non, vous ne pouvez actuellement pas rechercher vos rapports paginés depuis la 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Installer le Générateur de rapports à partir du centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=53613)
-- [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
+- [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)

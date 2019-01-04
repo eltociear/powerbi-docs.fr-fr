@@ -11,11 +11,11 @@ ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452864"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451441"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Utilisation de SAP BW Connector dans Power BI Desktop
 Avec Power BI Desktop, vous pouvez accéder aux données **SAP BusinessWarehouse (BW)**.
@@ -66,7 +66,7 @@ Pour pouvoir vous connecter, vous devez spécifier un *Serveur*, un *Numéro de 
 
 ![Paramètres de connexion du serveur SAP](media/desktop-sap-bw-connector/sap_bw_3a.png)
 
-Vous pouvez également spécifier deux autres **options avancées** : le code de langue et une instruction MDX personnalisée à exécuter sur le serveur spécifié.
+Vous pouvez également spécifier deux autres **options avancées** : le code de langue et une instruction MDX personnalisée à exécuter sur le serveur spécifié.
 
 ![informations de connexion supplémentaires](media/desktop-sap-bw-connector/sap_bw_4a.png)
 
@@ -78,9 +78,9 @@ Lorsque vous sélectionnez un ou plusieurs éléments sur le serveur, un aperçu
 
 La fenêtre **Navigator** fournit également un certain nombre d’**Options d’affichage** qui vous permettent d’effectuer les opérations suivantes :
 
-* **Affichage *Uniquement les éléments sélectionnés* ou *Tous les éléments* (affichage par défaut) :** cette option est utile pour la vérification de l’ensemble final d’éléments sélectionnés. Une approche alternative à cet affichage consiste à sélectionner les *Noms de colonne* dans la zone *Aperçu*.
-* **Activer les aperçus de données (comportement par défaut) :** Vous pouvez également contrôler si les aperçus de données doivent être affichés dans cette boîte de dialogue. La désactivation des aperçus de données réduit le nombre des appels serveur car les données jusqu’alors requises pour les aperçus deviennent inutiles.
-* **Noms techniques :** SAP BW prend en charge la notion de *noms techniques* pour les objets d’un cube. Les noms techniques permettent à un propriétaire de cube d’exposer des *noms conviviaux* pour des objets du cube et non pas uniquement des *noms physiques* pour ces objets.
+* **Affichage *Uniquement les éléments sélectionnés* ou *Tous les éléments* (affichage par défaut) :** cette option est utile pour la vérification de l’ensemble final d’éléments sélectionnés. Une approche alternative à cet affichage consiste à sélectionner les *Noms de colonne* dans la zone *Aperçu*.
+* **Activer les aperçus de données (comportement par défaut) :** vous pouvez également contrôler si les aperçus de données doivent être affichés dans cette boîte de dialogue. La désactivation des aperçus de données réduit le nombre des appels serveur car les données jusqu’alors requises pour les aperçus deviennent inutiles.
+* **Noms techniques :** SAP BW prend en charge la notion de *noms techniques* pour les objets d’un cube. Les noms techniques permettent à un propriétaire de cube d’exposer des *noms conviviaux* pour des objets du cube et non pas uniquement des *noms physiques* pour ces objets.
 
 ![Fenêtre du navigateur](media/desktop-sap-bw-connector/sap_bw_6.png)
 
