@@ -98,18 +98,12 @@ items:
       href: desktop-connect-to-data.md
     - name: Publier à partir de Power BI Desktop
       href: desktop-upload-desktop-files.md
-    - name: Visualisations personnalisées dans Power BI
-      href: power-bi-custom-visuals.md
-    - name: Éléments visuels personnalisés pour les organisations dans Power BI
-      href: power-bi-custom-visuals-organization.md
     - name: Partie 1, Ajouter des visualisations à un rapport Power BI
       href: visuals/power-bi-report-add-visualizations-i.md
     - name: Partie 2, Ajouter des visualisations à un rapport Power BI
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: Personnaliser le titre, l’arrière-plan et la légende d’une visualisation
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
-    - name: Résoudre les problèmes d’éléments visuels personnalisés
-      href: power-bi-custom-visuals-troubleshoot.md
     - name: Se connecter aux données
       items:
       - name: Sources de données dans Power BI Desktop
@@ -358,7 +352,7 @@ items:
         href: visuals/power-bi-visualization-waterfall-charts.md
       - name: Créer des lignes de référence dynamiques
         href: service-analytics-pane.md
-    - name: Résolution des problèmes
+    - name: Résoudre des problèmes
       items:
       - name: Résoudre des problèmes d’importation de bases de données Access et de feuilles de calcul Excel dans Power BI Desktop et Power Query
         href: desktop-access-database-errors.md
@@ -618,7 +612,7 @@ items:
         href: service-share-dashboard-that-links-to-excel-onedrive.md
       - name: Power BI Publisher pour Excel
         href: publisher-for-excel.md
-    - name: Résolution des problèmes
+    - name: Résoudre des problèmes
       items:
       - name: Vous avez oublié votre mot de passe Power BI ?
         href: service-admin-forgot-your-password.md
@@ -880,7 +874,7 @@ items:
         href: developer/power-bi-permissions.md
     - name: Guides pratiques
       items:
-      - name: Comment incorporer à partir d’une application
+      - name: Incorporer à partir d’une application
         href: developer/embed-from-apps.md
       - name: Créer un client Azure Active Directory
         href: developer/create-an-azure-active-directory-tenant.md
@@ -890,8 +884,6 @@ items:
         href: developer/get-azuread-access-token.md
       - name: Questions et réponses sur l’incorporation
         href: developer/qanda.md
-      - name: Résolution des problèmes de votre application incorporée
-        href: developer/embedded-troubleshoot.md
       - name: Gérer les capacités dans Azure
         items:
         - name: Créer une capacité dans Azure
@@ -902,6 +894,10 @@ items:
           href: developer/azure-pbie-scale-capacity.md
         - name: Suspendre et démarrer une capacité dans Azure
           href: developer/azure-pbie-pause-start.md
+      - name: Résoudre des problèmes
+        items:
+        - name: Résoudre les problèmes de votre application incorporée
+          href: developer/embedded-troubleshoot.md
       - name: Migrer à partir de collections d’espaces de travail
         items:
         - name: Guide pratique pour migrer à partir de collections d’espaces de travail Power BI
@@ -944,12 +940,12 @@ items:
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: Stack Overflow
         href: https://go.microsoft.com/fwlink/?linkid=848281
-  - name: Développer des visuels personnalisés
+  - name: Visuels personnalisés
     items:
     - name: Vue d’ensemble
       items:
-      - name: Ajout de visuels personnalisés dans Power BI
-        href: https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/
+      - name: Éléments visuels personnalisés dans Power BI
+        href: power-bi-custom-visuals.md
     - name: Tutoriels
       items:
       - name: Développement d’un visuel personnalisé Power BI
@@ -958,6 +954,8 @@ items:
         href: developer/custom-visual-develop-tutorial-format-options.md
     - name: Concepts
       items:
+      - name: Éléments visuels personnalisés pour les organisations dans Power BI
+        href: power-bi-custom-visuals-organization.md
       - name: Marche à suivre pour les visuels Power BI
         href: developer/office-store-in-app-purchase-visual-guidelines.md
       - name: FAQ visuels personnalisés
@@ -978,8 +976,12 @@ items:
         href: power-bi-custom-visuals-certified.md
       - name: Publier des visuels personnalisés dans AppSource
         href: developer/office-store.md
-      - name: Résoudre les problèmes d’éléments visuels personnalisés
-        href: power-bi-custom-visuals-troubleshoot.md
+      - name: Utiliser des visuels personnalisés optimisés pour R dans Power BI
+        href: desktop-r-powered-custom-visuals.md
+      - name: Résoudre des problèmes
+        items:
+        - name: Résoudre des problèmes liés au développement de visuels personnalisés
+          href: power-bi-custom-visuals-troubleshoot.md
     - name: Référence
       items:
       - name: API
@@ -1283,9 +1285,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: bb2600fea9af9578ab9b9dd7260e358a8de7e646
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 2e6a77d0aadd85cce05d8dc4fb5fdb60e4cbe91d
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008876"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072333"
