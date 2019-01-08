@@ -8,16 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 15f8716a42372cb0a02f88ea37531963e9a0557a
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 4d38cf108a4c2e863811cfee68fc2d0b95c1990e
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223309"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056038"
 ---
-# <a name="custom-visuals-in-power-bi"></a>Visuels personnalisés dans Power BI
+# <a name="custom-visuals-in-power-bi"></a>Éléments visuels personnalisés dans Power BI
 
 Lorsque vous créez ou modifiez un rapport Power BI, il existe plusieurs types de visuels que vous pouvez utiliser. Ces visuels s’affichent dans le volet **Visualisations**. Lorsque vous téléchargez Power BI Desktop ou que vous ouvrez le service Power BI (app.powerbi.com), cet ensemble de visuels est fourni par défaut.
 
@@ -163,11 +164,11 @@ Vous avez deux options pour le téléchargement et l’importation de visuels pe
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-* Un visuel personnalisé est ajouté à un rapport spécifique lors son importation. Si vous souhaitez utiliser le visuel dans un autre rapport, vous devez l’y importer. Quand un rapport comportant un visuel personnalisé est enregistré à l’aide de l’option **Enregistrer sous**, une copie du visuel personnalisé est enregistrée avec le nouveau rapport.
+* Un élément visuel personnalisé est ajouté à un rapport spécifique lors son importation. Si vous souhaitez utiliser l’élément visuel dans un autre rapport, vous devez l’y importer. Quand un rapport comportant un élément visuel personnalisé est enregistré à l’aide de l’option **Enregistrer sous** , une copie de l’élément visuel personnalisé est enregistrée avec le nouveau rapport.
 
 * Si vous ne voyez pas le volet **Visualisations**, cela signifie que vous n’avez pas l’autorisation de modifier le rapport.  Vous pouvez uniquement ajouter des visuels personnalisés aux rapports que vous pouvez modifier, et non à ceux qui ont été partagés avec vous.
 
-## <a name="troubleshoot"></a>Résoudre les problèmes
+## <a name="troubleshoot"></a>Résoudre des problèmes
 
 Pour plus d’informations, visitez [Résolution des problèmes de vos visuels personnalisés Power BI](power-bi-custom-visuals-troubleshoot.md).
 

@@ -8,15 +8,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
-ms.openlocfilehash: ed3a7a7c9f649f5ce834594572e3ab87b91181f5
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: c98abde63942724d4ff42136aaea7e8786e08975
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223418"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056153"
 ---
-# <a name="tutorial-developing-a-power-bi-custom-visual"></a>Tutoriel : développement d’un visuel personnalisé Power BI
+# <a name="tutorial-developing-a-power-bi-custom-visual"></a>Tutoriel : Développement d’un visuel personnalisé Power BI
 
 Nous permettons aux développeurs d’ajouter facilement des visuels personnalisées à Power BI utilisables dans les tableaux de bord et les rapports. Pour vous aider à démarrer, nous avons publié le code de toutes nos visualisations sur GitHub.
 
@@ -580,7 +581,7 @@ Dans le tutoriel suivant, vous allez apprendre à ajouter des options de mise en
 
 ## <a name="debugging"></a>Débogage
 
-Pour obtenir des conseils sur le débogage de votre visuel personnalisé, consultez le [guide de débogage](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
+Pour obtenir des conseils sur le débogage de votre élément visuel personnalisé, voir le [guide de débogage](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

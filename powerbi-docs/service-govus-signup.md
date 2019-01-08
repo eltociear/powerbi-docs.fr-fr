@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2800eb5b01e8203632ae60c9b304a5ed9ce28b69
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 281e84b1dd3a3c21a7aaebce4784551a8afb31ba
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670221"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056061"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Inscrire votre organisation US Government au service Power BI
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -102,7 +102,7 @@ Si vous disposez de licences Gratuites et de licences Pro pour le secteur public
 
 En cas d’utilisation d’un mélange de licences Gratuites et Pro dans un client du secteur public américain et de passage par le processus de *mise en liste verte*, vous pouvez vous attendre à ce qui suit :
 
-**Avant la *mise en liste verte*** :
+**Avant la _mise en liste verte_**  :
 
 * Les utilisateurs disposant de licences gratuites opèrent dans un cloud commercial
 * Les licences Pro pour le secteur public américain apparaissent dans le portail, et l’administrateur peut attribuer ces licences à des utilisateurs. Les utilisateurs Pro du secteur public américain ne perdent pas les données associées à leurs licences Gratuites une fois que l’administrateur leur attribue une licence Pro pour le secteur public américain. Les utilisateurs affectés ont accès aux fonctionnalités de Power BI Pro pour les clients du secteur public américain. Toutefois, la liste à puces suivante répertorie les lacunes de fonctionnalités qui persistent jusqu’à ce que le client soit correctement *mis en liste verte* :
@@ -112,7 +112,7 @@ En cas d’utilisation d’un mélange de licences Gratuites et Pro dans un clie
   * Les fichiers PBIX doivent être chargés manuellement à partir du service Power BI commercial
   * Les applications mobiles Power BI ne sont pas disponibles
 
-**Après la *mise en liste verte*** :
+**Après la _mise en liste verte_**  :
 
 * Les utilisateurs de la version Gratuite opérant dans le service Power BI commercial peuvent continuer à le faire, mais ils cessent de s’authentifier comme prévu.
 * Les utilisateurs de la version Pro opérant dans le cloud pour le secteur public américain peuvent utiliser le service **Power BI pour les clients du secteur public américain** comme prévu.
