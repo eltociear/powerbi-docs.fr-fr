@@ -2,20 +2,21 @@
 title: Utiliser des visuels personnalisés optimisés pour R dans Power BI
 description: Utiliser des visuels personnalisés optimisés pour R dans Power BI
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
-ms.author: maghan
 LocalizationGroup: Create reports
-ms.openlocfilehash: b9f9b6faa7490ed05626f52623750ea79183d36a
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 84b6acfcf87601712622cbbd2b4e7d396f75f0b8
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187372"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056084"
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Utiliser des visuels personnalisés optimisés pour R dans Power BI
 Dans **Power BI Desktop** et dans le **service Power BI**, vous pouvez utiliser des visuels personnalisés optimisés pour R sans connaître R ni utiliser de script R. Cela vous permet d’exploiter la puissance d’analyse et visuelle des visuels R et des scripts R sans connaître R ni effectuer de programmation.
@@ -33,7 +34,7 @@ Pour utiliser les visuels optimisés pour R, téléchargez chaque visuel depuis 
 
 Voici les étapes pour parcourir et sélectionner des visuels à partir du site en ligne **AppSource** :
 
-1. Accédez à la bibliothèque des visuels Power BI à l’adresse [https://appsource.microsoft.com](https://appsource.microsoft.com/). Sélectionnez la case à cocher *Applications Power BI* sous *Affiner par produit*, puis sélectionnez le lien **Afficher tout**.
+1. Accédez à la bibliothèque des visuels Power BI à l’adresse [https://appsource.microsoft.com](https://appsource.microsoft.com/). Sélectionnez la case à cocher **Applications Power BI** sous *Affiner par produit*, puis sélectionnez le lien Afficher tout.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2a.png)
 
