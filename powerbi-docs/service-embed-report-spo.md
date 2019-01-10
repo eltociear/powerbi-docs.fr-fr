@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 11/01/2018
-ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 3ad4335cabac159aee38d54fbfff0f689009fd68
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973324"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136596"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -75,7 +75,7 @@ Pour incorporer votre rapport dans SharePoint Online, vous devez d’abord obten
 
     ![Rapport chargé SP](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
-## <a name="granting-access-to-reports"></a>Accorder l’accès aux rapports
+## <a name="grant-access-to-reports"></a>Accorder l’accès aux rapports
 
 Incorporer un rapport dans SharePoint Online n’accorde pas automatiquement aux utilisateurs l’autorisation d’afficher le rapport. Les autorisations pour afficher le rapport sont définies dans le service Power BI.
 
@@ -94,7 +94,7 @@ Vous pouvez également partager un rapport directement avec les utilisateurs en 
 
 4. Maintenant, tous les utilisateurs finaux doivent aussi installer l’application. Toutefois, vous pouvez configurer l’application afin qu’elle soit préinstallée pour les utilisateurs finaux à l’aide de la fonctionnalité **Installer l’application automatiquement**, qui peut être activée dans le [portail d’administration de Power BI](service-admin-portal.md).
 
-   ![Installer l'application automatiquement](media/service-embed-report-spo/install-app-automatically.png)
+   ![Installer l’application automatiquement](media/service-embed-report-spo/install-app-automatically.png)
 
 5. L’auteur ouvre l’application et accède au rapport.
 
@@ -152,7 +152,7 @@ Les utilisateurs affichant un rapport dans SharePoint ont besoin au choix d’un
 
 ## <a name="known-issues-and-limitations"></a>Problèmes connus et limitations
 
-* Erreur : « Une erreur s’est produite. Essayez de vous déconnecter, de vous reconnecter, puis de revenir sur cette page. ID de corrélation : non défini. Statut de la réponse HTTP : 400. Code d’erreur du serveur 10001. Message : jeton d’actualisation manquant »
+* Erreur : « Une erreur s’est produite. Essayez de vous déconnecter, de vous reconnecter, puis de revenir sur cette page. ID de corrélation : indéfini, état de la réponse http : 400, code d’erreur du serveur 10001, message : Jeton d’actualisation manquant »
   
   Si vous recevez cette erreur, essayez l’une des étapes de dépannage ci-dessous.
   
@@ -174,9 +174,10 @@ Les utilisateurs affichant un rapport dans SharePoint ont besoin au choix d’un
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Autoriser ou empêcher la création de pages de site moderne par les utilisateurs finaux](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Créer et distribuer une application dans Power BI](service-create-distribute-apps.md)  
-[Partager un tableau de bord avec vos collègues et les autres utilisateurs](service-share-dashboards.md)  
-[Qu’est-ce que Power BI Premium ?](service-premium.md)  
+* [Autoriser ou empêcher la création de pages de site moderne par les utilisateurs finaux](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
+* [Créer et distribuer une application dans Power BI](service-create-distribute-apps.md)  
+* [Partager un tableau de bord avec vos collègues et les autres utilisateurs](service-share-dashboards.md)  
+* [Qu’est-ce que Power BI Premium ?](service-premium.md)
+* [Incorporer un rapport dans un site web ou portail sécurisé](service-embed-secure.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

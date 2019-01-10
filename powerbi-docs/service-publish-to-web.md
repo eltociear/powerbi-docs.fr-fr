@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/13/2018
+ms.date: 01/08/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0ef3bd027c7fc14f88a569cab160f90044689784
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: ab5f891b8769657f18861863562c0ab866044a18
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558536"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136619"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -26,6 +26,9 @@ Vous pouvez également modifier, mettre à jour ou actualiser vos éléments vis
 > [!WARNING]
 > Quand vous utilisez la fonctionnalité **Publier sur le web**, le rapport ou visuel que vous publiez peut être consulté par tout le monde sur Internet. Aucune authentification n’est utilisée pour voir ces rapports. Utilisez uniquement la fonctionnalité Publier sur le web pour les rapports et données qui peuvent être vus par tout le monde sur Internet (membres non authentifiés du grand public). Cela inclut les données de niveau de détail qui sont agrégées dans vos rapports. Avant de publier ce rapport, vérifiez que vous avez le droit de partager les données et les visualisations publiquement. Ne publiez pas d’informations confidentielles ou propriétaires. En cas de doute, vérifiez les stratégies de votre organisation avant la publication.
 
+>[!Note]
+>Pour incorporer votre contenu en toute sécurité dans un portail interne ou site web, utilisez les options [Incorporer](service-embed-secure.md) ou [Incorporer dans SharePoint Online](service-embed-report-spo.md). Cela garantit que toutes les autorisations et la sécurité des données sont appliquées lorsque vos utilisateurs affichent vos données internes.
+
 ## <a name="how-to-use-publish-to-web"></a>Comment utiliser Publier sur le web
 
 La fonctionnalité **Publier sur le web** est disponible dans les rapports de vos espaces de travail personnel ou de groupe que vous pouvez modifier.  Vous ne pouvez pas l’utiliser avec les rapports qui ont été partagés avec vous ou ceux qui reposent sur la sécurité au niveau des lignes pour la sécurisation des données. Consultez la section **Limitations** ci-dessous pour obtenir la liste complète des situations où la publication sur le web n’est pas prise en charge. Lisez l’**avertissement** plus haut dans cet article avant d’utiliser la fonctionnalité Publier sur le web.
@@ -34,46 +37,45 @@ Pour comprendre comment elle fonctionne, vous pouvez visionner la *petite vidéo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
-
 Les étapes suivantes décrivent comment utiliser **Publier sur le web**.
 
 1. Dans un rapport sur votre espace de travail que vous pouvez modifier, sélectionnez **Fichier > Publier sur le web**
-   
-   ![](media/service-publish-to-web/publish_to_web1.png)
+
+   ![PtW1](media/service-publish-to-web/publish_to_web1.png)
 
 2. Lisez le contenu de la boîte de dialogue, puis sélectionnez **Créer un code incorporé** comme indiqué dans la boîte de dialogue suivante.
-   
-   ![](media/service-publish-to-web/publish_to_web2_ga.png)
+
+   ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
 3. Lisez l’avertissement, illustré dans la boîte de dialogue suivante, puis confirmez que les données peuvent être incorporées dans un site web public. Le cas échéant, sélectionnez **Publier**.
-   
-   ![](media/service-publish-to-web/publish_to_web3_ga.png)
+
+   ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
 4. Une boîte de dialogue s’affiche avec un lien que vous pouvez envoyer par e-mail, incorporer dans le code (comme un iFrame) ou coller directement dans votre page web ou votre blog.
-   
-   ![](media/service-publish-to-web/publish_to_web4.png)
+
+   ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
 5. Si vous avez déjà créé un code incorporé pour le rapport, celui-ci s’affiche rapidement. Vous pouvez créer un seul code incorporé pour chaque rapport.
-   
-   ![](media/service-publish-to-web/publish_to_web5.png)
+
+   ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
 ## <a name="tips-and-tricks-for-view-modes"></a>Trucs et astuces pour les modes d’affichage
 
 Quand vous incorporez du contenu dans un billet de blog, vous avez généralement besoin de l’ajuster à une taille d’écran spécifique.  Vous pouvez ajuster la hauteur et la largeur de la balise iFrame selon vos besoins, mais vous devez également vérifier que votre rapport tient dans la zone donnée de l’iFrame. C’est pourquoi vous devez également définir un mode d’affichage approprié quand vous modifiez le rapport.
 
-Le tableau suivant fournit des instructions sur le mode d’affichage et les effets de son incorporation. 
+Le tableau suivant fournit des instructions sur le mode d’affichage et les effets de son incorporation.
 
 | Mode d’affichage | Son aspect quand il est incorporé |
 | --- | --- |
-| ![](media/service-publish-to-web/publish_to_web6b.png) |Le mode d’affichage **Ajuster à la page** respecte la hauteur et la largeur de page de votre rapport. Si vous définissez les proportions de votre page sur « Dynamique » (par exemple 16:9 ou 4:3), votre contenu est ajusté au sein de l’iFrame que vous avez fourni. En cas d’incorporation dans un iFrame, l’utilisation de l’option **Ajuster à la page** risque de générer un **cadre**, où un fond gris est affiché dans des zones de l’iFrame après que le contenu a été mis à l’échelle de manière à s’ajuster à l’iFrame. Pour diminuer le cadre, définissez la hauteur et la largeur de votre iFrame de manière appropriée. |
-| ![](media/service-publish-to-web/publish_to_web6d.png) |Avec le mode d’affichage **Taille réelle**, le rapport conserve sa taille telle qu’elle est définie dans la page de rapport. Du coup, des barres de défilement peuvent apparaître dans votre iFrame. Définissez-les afin d’éviter les barres de défilement. |
-| ![](media/service-publish-to-web/publish_to_web6c.png) |Avec le mode d’affichage **Ajuster à la largeur**, le contenu tient dans la zone horizontale de votre iFrame. Une bordure apparaît quand même, mais le contenu est mis à l’échelle pour utiliser tout l’espace horizontal disponible. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |Le mode d’affichage **Ajuster à la page** respecte la hauteur et la largeur de page de votre rapport. Si vous définissez les proportions de votre page sur « Dynamique » (par exemple 16:9 ou 4:3), votre contenu est ajusté au sein de l’iFrame que vous avez fourni. En cas d’incorporation dans un iFrame, l’utilisation de l’option **Ajuster à la page** risque de générer un **cadre**, où un fond gris est affiché dans des zones de l’iFrame après que le contenu a été mis à l’échelle de manière à s’ajuster à l’iFrame. Pour diminuer le cadre, définissez la hauteur et la largeur de votre iFrame de manière appropriée. |
+| ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |Avec le mode d’affichage **Taille réelle**, le rapport conserve sa taille telle qu’elle est définie dans la page de rapport. Du coup, des barres de défilement peuvent apparaître dans votre iFrame. Définissez-les afin d’éviter les barres de défilement. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |Avec le mode d’affichage **Ajuster à la largeur**, le contenu tient dans la zone horizontale de votre iFrame. Une bordure apparaît quand même, mais le contenu est mis à l’échelle pour utiliser tout l’espace horizontal disponible. |
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Conseils et astuces pour la hauteur et la largeur de l’iFrame
 
 Le code incorporé que vous recevez après une publication sur le web ressemble à ceci :
 
-![](media/service-publish-to-web/publish_to_web7.png)
+![PtW7](media/service-publish-to-web/publish_to_web7.png)
 
 Vous pouvez modifier manuellement la largeur et la hauteur pour vous assurer que le code s’adapte exactement à la page dans laquelle vous l’incorporez.
 
@@ -93,20 +95,20 @@ Pour obtenir un ajustement idéal, vous pouvez essayer d’ajouter 56 pixels à
 Une fois que vous avez créé un code incorporé **Publier sur le web** , vous pouvez le gérer à partir du menu **Paramètres** du service Power BI. Si vous gérez des codes incorporés, vous pouvez supprimer l’élément visuel ou le rapport de destination d’un code (ce qui rend le code incorporé inutilisable) ou récupérer celui-ci.
 
 1. Pour gérer vos codes incorporés **Publier sur le web** , ouvrez **Paramètres** et sélectionnez **Gérer des codes incorporés**.
-   
-   ![](media/service-publish-to-web/publish_to_web8.png)
+
+   ![PtW8](media/service-publish-to-web/publish_to_web8.png)
 
 2. La liste des codes incorporés que vous avez créés s’affiche, comme illustré dans l’image suivante.
-   
-   ![](media/service-publish-to-web/publish_to_web9.png)
+
+   ![PtW9](media/service-publish-to-web/publish_to_web9.png)
 
 3. Vous pouvez récupérer ou supprimer chaque code incorporé **Publier sur le web** figurant dans la liste. Une suppression rend inutilisable tous les liens vers le rapport ou l’élément visuel correspondant.
-   
-   ![](media/service-publish-to-web/publish_to_web10.png)
+
+   ![PtW10](media/service-publish-to-web/publish_to_web10.png)
 
 4. Si vous sélectionnez **Supprimer**, vous devez indiquer si vous êtes certain de vouloir supprimer le code incorporé.
-   
-   ![](media/service-publish-to-web/publish_to_web11.png)
+
+   ![PtW11](media/service-publish-to-web/publish_to_web11.png)
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Mises à jour des rapports et actualisation des données
 
@@ -120,7 +122,7 @@ Pour en savoir plus, consultez la section **Fonctionnement** plus loin dans cet 
 
 Les actualisations de données sont répercutées automatiquement dans votre rapport ou élément visuel incorporé. Un délai d’environ une heure peut être nécessaire pour que les données actualisées soient visibles à partir des codes incorporés. Vous pouvez désactiver l’actualisation automatique en sélectionnant **Ne pas actualiser** dans la planification du jeu de données utilisé par le rapport.  
 
-## <a name="custom-visuals"></a>Éléments visuels personnalisés
+## <a name="custom-visuals"></a>Visuels personnalisés
 
 Les éléments visuels personnalisés sont pris en charge par la fonctionnalité **Publier sur le web**. Quand vous utilisez la fonctionnalité Publier sur le web, les utilisateurs avec lesquels vous partagez votre élément visuel publié n’ont pas besoin d’activer les éléments visuels personnalisés pour afficher le rapport.
 
@@ -138,6 +140,7 @@ La fonctionnalité **Publier sur le web** est prise en charge pour la majeure pa
 - Rapports contenant des mesures DAX au niveau du rapport
 - Modèles de requêtes de données à authentification unique
 - [Informations confidentielles ou propriétaires sécurisées](#publish-to-web-from-power-bi)
+- La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez l’approche [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md) pour l’incorporation. En savoir plus sur [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md).
 
 ## <a name="tenant-setting"></a>Paramètres de locataire
 
@@ -167,7 +170,7 @@ Pour signaler un problème lié à du contenu **Publier sur le web** incorporé 
 
 Pour signaler un problème, sélectionnez l’icône représentant un **drapeau** dans la barre inférieure du rapport Publier sur le rapport que vous êtes en train de consulter.
 
-![](media/service-publish-to-web/publish_to_web12_ga.png)
+![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
 
 ## <a name="licensing-and-pricing"></a>Gestion des licences et tarification
 
@@ -178,5 +181,11 @@ Vous devez être un utilisateur de Microsoft Power BI pour utiliser la fonctionn
 Quand vous créez un code incorporé à l’aide de la fonctionnalité **Publier sur le web**, vous permettez aux utilisateurs Internet de voir le rapport. Comme votre rapport est disponible publiquement, vous pouvez vous attendre à ce que des lecteurs le partagent facilement au moyen des réseaux sociaux. Quand les utilisateurs consultent le rapport, soit en ouvrant l’URL publique directe, soit en le consultant incorporé dans une page web ou un blog, Power BI met en cache la définition du rapport et les résultats des requêtes requises pour l’afficher. Cette approche garantit que le rapport est consultable par des milliers d’utilisateurs simultanés sans aucun impact sur les performances.
 
 Le cache est un cache à long terme, donc si vous mettez à jour la définition du rapport (par exemple, si vous changez son mode d’affichage) ou actualisez les données du rapport, vous devez attendre environ une heure avant que les modifications ne soient répercutées dans la version du rapport consultée par vos utilisateurs. Il est donc recommandé d’anticiper votre travail et de créer le code incorporé **Publier sur le web** uniquement quand vous êtes satisfait des paramètres.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+- [Composant web du rapport SharePoint Online](service-embed-report-spo.md) 
+
+- [Incorporer un rapport dans un site web ou portail sécurisé](service-embed-secure.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
