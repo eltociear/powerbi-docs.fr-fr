@@ -25,7 +25,7 @@ Pour que l’application Q&A interprète correctement les nombreuses questions a
 > [!NOTE]
 > Q&A est disponible uniquement quand vous utilisez un modèle qui contient des données **importées**. Les connexions actives aux modèles SSAS et DirectQuery ne sont pas prises en charge.
 >
-> Questions et réponses nécessite la mise à jour du runtime C suivante si vous utilisez une version de Windows antérieure à Windows 10. Vous pouvez essayer d’installer des mises à jour importantes à partir de Windows Update ou installer manuellement le composant requis à partir de Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
+> Questions et réponses nécessite la mise à jour du runtime C suivante si vous utilisez une version de Windows antérieure à Windows 10. Vous pouvez essayer d’installer des mises à jour importantes à partir de Windows Update ou installer manuellement le composant requis à partir de Microsoft (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)
 >
 >
 

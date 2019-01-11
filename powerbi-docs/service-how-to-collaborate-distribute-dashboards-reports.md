@@ -2,32 +2,32 @@
 title: Méthodes de partage du travail
 description: Dans Power BI, vous pouvez collaborer sur des tableaux de bord, des rapports, des vignettes et des apps, et les distribuer de plusieurs façons. Chacune a ses avantages.
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/17/2018
-ms.author: maggies
+ms.date: 01/08/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: bc4f58920feaf5219d63761116ef9a742edd4eed
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: ec1cfdc02f64db0adf3554c970a87ede35344723
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53983528"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136550"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Moyens de partager votre travail dans Power BI
 
 Vous avez créé des tableaux de bord et des rapports. Vous avez peut-être collaboré dessus avec vos collègues. À présent, vous souhaitez les partager avec d’autres utilisateurs. Qu’est la meilleure façon de les distribuer ?
 
-Cet article compare les options de collaboration et de partage dans Power BI : 
+Cet article compare les options de collaboration et de partage dans Power BI :
 
 * collaborer avec des collègues pour créer des rapports et tableaux de bord éloquents dans des *espaces de travail* ;
 * regrouper les tableaux de bord et rapports dans des *applications* et les publier pour un groupe plus important ou toute l’organisation ;
 * partager des tableaux de bord ou rapports avec quelques personnes, à partir du service ou d’applications mobiles Power BI ;
-- imprimer des rapports ;
-* publier sur le web pour des sites web publics, où n’importe qui dans le monde entier peut voir et interagir avec l’application.
+* imprimer des rapports ;
+* incorporer des rapports dans des portails sécurisés ou sites web publics.
 
 Quelle que soit l’option choisie, pour partager un tableau de bord, vous avez besoin d’une [licence Power BI Pro](service-features-license-type.md) ou le contenu doit être dans une [capacité Premium](service-premium.md). Les besoins en licence varient pour les collègues qui consultent vos tableaux de bord, selon l’option que vous choisissez. Les sections suivantes offrent des informations détaillées. 
 
@@ -39,13 +39,13 @@ Quelle que soit l’option choisie, pour partager un tableau de bord, vous avez 
 
 Quand des équipes travaillent ensemble, elles ont besoin d’accéder aux mêmes documents pour pouvoir collaborer rapidement. Les espaces de travail dans Power BI constituent l’endroit où les équipes se retrouvent pour partager la propriété et la gestion des tableaux de bord, des rapports, des jeux de données et des classeurs qui sont importants pour elles. Les utilisateurs Power BI organisent parfois leurs espaces de travail en fonction des structures organisationnelles, et d’autres fois, ils les créent pour des projets spécifiques. D’autres organisations utilisent plusieurs espaces de travail pour stocker différentes versions des rapports ou des tableaux de bord qu’elles utilisent. 
 
-Les espaces de travail fournissent des rôles qui déterminent les autorisations de vos collègues. Vous pouvez utiliser ces rôles pour déterminer qui peut gérer tout l’espace de travail ou seulement lui fournir du contenu.
+Les espaces de travail fournissent des rôles qui déterminent les autorisations de vos collègues. Vous pouvez utiliser ces rôles pour déterminer qui peut gérer tout l’espace de travail ou lui fournir du contenu.
 
 ![Espaces de travail](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
 Certains utilisateurs placent naturellement du contenu dans leur espace Mon espace de travail et le partagent. Les espaces de travail conviennent mieux à la collaboration que Mon espace de travail, car ils permettent la copropriété du contenu. Vous et toute votre équipe pouvez facilement mettre à jour ou donner un accès à d’autres personnes. Mon espace de travail convient mieux à une utilisation par des personnes individuelles pour du contenu ponctuel ou personnel.
 
-Imaginons que vous avez un tableau de bord terminé, que vous devez partager avec vos collègues. Quel est la meilleure façon de leur donner accès au tableau de bord ? La réponse dépend de plusieurs facteurs. Si un collègue spécifique doit avoir la propriété du tableau de bord et le maintenir à jour, ou s’il a besoin d’accéder à tout le contenu de l’espace de travail, il peut être préférable de les ajouter à l’espace de travail. Si votre collègue doit seulement consulter ce tableau de bord mais pas tout le contenu de l’espace de travail, vous pouvez à nouveau choisir entre différentes possibilités. Si le tableau de bord fait partie d’un ensemble de contenus plus importants que vous devez distribuer à de nombreux collègues, la publication d’une application est probablement le meilleur choix. Cependant, si ce collègue a besoin de ce seul tableau de bord, partager le tableau de bord peut s’avérer être la meilleure solution. 
+Imaginons que vous avez un tableau de bord terminé, que vous devez partager avec vos collègues. Quel est la meilleure façon de leur donner accès au tableau de bord ? La réponse dépend de plusieurs facteurs. Si un collègue spécifique doit être propriétaire du tableau de bord et le garder à jour, ou s’il doit accéder à tout le contenu de l’espace de travail, il peut être préférable de l’ajouter à l’espace de travail. Si votre collègue doit seulement consulter ce tableau de bord mais pas tout le contenu de l’espace de travail, vous pouvez à nouveau choisir entre différentes possibilités. Si le tableau de bord fait partie d’un ensemble de contenus plus importants que vous devez distribuer à de nombreux collègues, la publication d’une application est probablement le meilleur choix. Cependant, si ce collègue a besoin de ce seul tableau de bord, partager le tableau de bord peut s’avérer être la meilleure solution.
 
 Pour plus d’informations, consultez [Création d’espaces de travail](service-create-workspaces.md).
 
@@ -53,11 +53,11 @@ Pour plus d’informations, consultez [Création d’espaces de travail](service
 
 ## <a name="distribute-data-and-insights-by-creating-an-app"></a>Distribuer des données et des insights en créant une application
 
-Supposons que vous souhaitez distribuer votre tableau de bord à un public plus large. Vos collègues et vous avez créé un *espace de travail*, puis créé et affiné des tableaux de bord, des rapports et des jeux de données dans cet espace. Désormais, vous sélectionnez les tableaux de bord et les rapports de votre choix, et vous les publiez en tant qu’application pour un groupe ou pour toute votre organisation. 
+Supposons que vous souhaitez distribuer votre tableau de bord à un public plus large. Vos collègues et vous avez créé un *espace de travail*, puis créé et affiné des tableaux de bord, des rapports et des jeux de données dans cet espace. Désormais, vous sélectionnez les tableaux de bord et les rapports de votre choix, et vous les publiez en tant qu’application pour un groupe ou pour toute votre organisation.
 
 ![Icône Publier l’application](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Si votre administrateur Power BI vous y autorise, vous pouvez installer une application automatiquement dans les comptes Power BI de vos collègues. Apprenez-en davantage sur la [publication de vos applications](service-create-distribute-apps.md). 
+Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Si votre administrateur Power BI vous y autorise, vous pouvez installer une application automatiquement dans les comptes Power BI de vos collègues. Apprenez-en davantage sur la [publication de vos applications](service-create-distribute-apps.md).
 
 Après avoir installé une application, ils peuvent l’afficher dans leur navigateur ou sur leur appareil mobile.
 
@@ -66,6 +66,7 @@ Pour que vos utilisateurs puissent voir l’application, ils doivent posséder u
 Vous pouvez également publier des applications pour des personnes extérieures à votre organisation. Celles-ci peuvent consulter le tableau de bord et interagir avec celui-ci, mais elles ne peuvent pas le partager avec d’autres personnes.
 
 ## <a name="share-dashboards-and-reports"></a>Partager des tableaux de bord et rapports
+
 Supposons que vous avez finalisé un tableau de bord et un rapport dans votre espace de travail personnel ou dans un espace de travail, et que vous voulez que quelques autres utilisateurs y aient accès. Une des options est de le *partager* avec eux. 
 
 ![Icône de partage](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
@@ -77,7 +78,8 @@ Vous pouvez également partager le tableau de bord avec des personnes extérieur
 Découvrez plus en détails le [partage de tableaux de bord et de rapports](service-share-dashboards.md) à partir du service Power BI. Vous pouvez également ajouter un filtre à un lien et [partager une vue filtrée de votre rapport](service-share-reports.md).
 
 ## <a name="annotate-and-share-from-the-power-bi-mobile-apps"></a>Annoter et partager à partir des applications mobiles Power BI
-Dans les applications mobiles Power BI pour les appareils iOS et Android, vous pouvez annoter une vignette, un rapport ou un visuel et le partager avec tout le monde par e-mail. 
+
+Dans les applications mobiles Power BI pour les appareils iOS et Android, vous pouvez annoter une vignette, un rapport ou un visuel et le partager avec tout le monde par e-mail.
 
 ![Annoter et partager dans les applications mobiles](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-iphone-annotate.png)
 
@@ -88,18 +90,26 @@ En savoir plus sur l’[annotation et le partage de vignettes, de rapports et de
 Vous pouvez également [partager une capture instantanée d’une vignette](consumer/mobile/mobile-windows-10-phone-app-get-started.md) à partir de l’application Power BI pour les appareils Windows 10.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Imprimer ou enregistrer au format PDF ou dans un autre format de fichier statique
+
 Vous pouvez imprimer ou enregistrer au format PDF (ou dans un autre format de fichier statique) un tableau de bord entier, une vignette de tableau de bord, une page de rapport ou une visualisation à partir du service Power BI. Les rapports ne peuvent être imprimés qu’une page à la fois. Vous ne pouvez peut pas imprimer l’intégralité du rapport en une fois. En savoir plus sur l’[impression ou l’enregistrement en tant que fichier statique](consumer/end-user-print.md).
 
-## <a name="publish-to-the-web"></a>Publier sur le web
+## <a name="embed-reports-in-secure-portals-or-public-websites"></a>Incorporer des rapports dans des portails sécurisés ou sites web publics
 
-> [!WARNING]
-> Utilisez **Publier sur le web** seulement pour partager du contenu publiquement, mais pas pour un partage en interne.
+Vous pouvez incorporer des rapports Power BI dans des portails ou des sites web où les utilisateurs s’attendent à les voir.  
 
-Vous pouvez publiez des rapports Power BI sur le web en incorporant des visualisations interactives dans les billets de blog, les sites web, les réseaux sociaux et d’autres supports de communication en ligne sur n’importe quel appareil. Tous les utilisateurs d’Internet peuvent afficher vos rapports et vous n’avez aucun contrôle sur les personnes qui peuvent voir ce que vous avez publié. Celles-ci n’ont pas besoin d’une licence Power BI. La fonction de publication sur le web n’est disponible que pour les rapports que vous pouvez modifier. Vous ne pouvez pas publier des rapports sur le web s’ils sont partagés avec vous ou s’ils figurent dans une application. Informations complémentaires sur la [publication sur le web](service-publish-to-web.md)
+Les options **Incorporer dans SharePoint Online** et **Incorporer** du service Power BI vous permettent d’incorporer des rapports pour vos utilisateurs internes de manière sécurisée. L’option Incorporer dans SharePoint Online fonctionne avec le composant WebPart de Power BI pour SharePoint Online et fournit une expérience d’authentification unique en contrôlant le mode d’incorporation du rapport. L’option Incorporer fonctionne avec n’importe quel portail ou site web qui prend en charge l’incorporation de contenu à l’aide d’une URL ou d’un iFrame. Quelle que soit l’option choisie, les deux vous assurent que toutes les autorisations et la sécurité des données sont appliquées avant que l’utilisateur puisse voir le contenu. La personne qui consulte le rapport doit avoir la licence appropriée. Plus d’informations sur les options [Incorporer dans SharePoint Online](service-embed-report-spo.md) et [Incorporer](service-embed-secure.md) dans Power BI.
+
+Avec **Publier sur le web**, vous pouvez publier des rapports Power BI sur le web en incorporant des visualisations interactives dans les billets de blog, les sites web, les réseaux sociaux et d’autres supports de communication en ligne sur n’importe quel appareil. Tous les utilisateurs d’Internet peuvent afficher vos rapports et vous n’avez aucun contrôle sur les personnes qui peuvent voir ce que vous avez publié. Celles-ci n’ont pas besoin d’une licence Power BI. La fonction de publication sur le web n’est disponible que pour les rapports que vous pouvez modifier. Vous ne pouvez pas publier des rapports sur le web s’ils sont partagés avec vous ou s’ils figurent dans une application. Informations complémentaires sur la [publication sur le web](service-publish-to-web.md)
+
+>[!Warning]
+>Utilisez [Publier sur le web](service-publish-to-web.md) seulement pour partager du contenu publiquement, mais pas pour un partage en interne.
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 * [Partager des tableaux de bord avec vos collègues et d’autres utilisateurs](service-share-dashboards.md)
 * [Créer et publier une application dans Power BI](service-create-distribute-apps.md)
-* Vous voulez donner votre avis ? Accédez au [site de la communauté Power BI](https://community.powerbi.com/) pour effectuer des suggestions.
-* D’autres questions ? [Posez vos questions à la Communauté Power BI](http://community.powerbi.com/).
+* [Incorporer un rapport dans un site web ou portail sécurisé](service-embed-secure.md)
 
+Vous voulez donner votre avis ? Accédez au [site de la communauté Power BI](https://community.powerbi.com/) pour effectuer des suggestions.
+
+D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
