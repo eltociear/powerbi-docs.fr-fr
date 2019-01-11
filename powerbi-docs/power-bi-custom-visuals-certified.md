@@ -9,13 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: 7830aa829dc05e29ec0b8dc23d7f35b58991b007
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: e839fabffc685ac0f97146cb7ee5218039df1c18
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830145"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056176"
 ---
 # <a name="certified-custom-visuals"></a>Visuels personnalisés certifiés
 
@@ -73,6 +74,7 @@ Pour soumettre un visuel personnalisé en vue de sa certification :
 
 | Lien vers AppSource | Lien vers la vidéo |
 | --- | --- |
+| [Systèmes 3AG - histogramme avec écart relatif](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381803) | |
 | [Traçage Aster](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380759) | |
 | [Calendrier Beyondsoft](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381096) | |
 | [Bowtie Chart par MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380838) | [Vidéo](https://youtu.be/So5xKMSpVJI) |

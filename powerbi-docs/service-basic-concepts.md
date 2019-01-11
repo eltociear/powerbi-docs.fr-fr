@@ -8,34 +8,31 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/21/2018
+ms.date: 12/18/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d18c44724899b243a34821db4d4866863e577b48
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: b76a0910a18c3239dc6c35597ebea8b085afcd48
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52332031"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983850"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Fondamentaux pour les concepteurs dans le service Power BI
 
-Cet article part du principe que vous êtes déjà [inscrit au service Power BI](service-self-service-signup-for-power-bi.md) et que vous avez [ajouté des données](service-get-data.md). Si vous n’avez pas encore de données, vous pouvez installer un [exemple de pack de contenu Power BI](sample-datasets.md#the-power-bi-samples-as-content-packs).
+Cet article part du principe que vous êtes déjà [inscrit au service Power BI](service-self-service-signup-for-power-bi.md) et que vous avez [ajouté des données](service-get-data.md). Si vous n’avez pas encore de données, essayez d’installer un [exemple de pack de contenu Power BI](sample-datasets.md#the-power-bi-samples-as-content-packs).
 
-Quand vous ouvrez le service Power BI, un **_tableau de bord_** s’affiche. Les tableaux de bord sont différents dans le service Power BI et dans Power BI Desktop.
+![Écran d’accueil du service Power BI dans un navigateur](media/service-basic-concepts/power-bi-home-screen.png)
 
-![Service Power BI dans un navigateur](media/service-basic-concepts/completenewest.png)
+Voici les éléments que vous voyez lorsque vous ouvrez le service Power BI dans le navigateur :
 
-Voici les principales fonctionnalités de l’interface utilisateur du service Power BI :
-
-1. volet de navigation gauche
-2. canevas (dans ce cas, tableau de bord avec vignettes)
-3. zone Questions et réponses
-4. boutons d’icône, y compris aide et commentaires
-5. titre du tableau de bord (chemin de navigation, également appelé fil d’Ariane)
-6. Lanceur d’applications Office 365
-7. bouton Accueil de Power BI
-8. Boutons d’icônes étiquetés
+1. Volet de navigation (gauche)
+2. Lanceur d’applications Office 365
+3. bouton Accueil de Power BI
+4. Boutons d’icône, notamment paramètres, aide et commentaires
+5. Zone de recherche
+6. Vignettes d’un tableau de bord favori
+7. Rapports et tableaux de bord favoris et fréquents
 
 Nous étudierons ces fonctionnalités ultérieurement, mais passons tout d’abord en revue quelques concepts propres à Power BI.
 
@@ -75,7 +72,7 @@ Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’appl
 
   ![Diagramme du jeu de données](media/service-basic-concepts/drawing2.png)
 
-Pour vous [connecter à un jeu de données ou en importer un](service-get-data.md), sélectionnez **Obtenir des données** (au bas de la barre de navigation gauche) ou sélectionnez **+ Créer un jeu de données** (en haut à droite). Suivez les instructions permettant de vous connecter à la source spécifique ou de l’importer et d’ajouter le jeu de données à l’espace de travail actif. Les nouveaux jeux de données sont signalés par un astérisque jaune. Le travail que vous effectuez dans Power BI ne modifie pas le jeu de données sous-jacent.
+Pour vous [connecter à un jeu de données ou en importer un](service-get-data.md), sélectionnez **Obtenir des données** (au bas de la barre de navigation gauche) ou sélectionnez **+ Créer un jeux de données** (dans le coin supérieur droit). Suivez les instructions permettant de vous connecter à la source spécifique ou de l’importer et d’ajouter le jeu de données à l’espace de travail actif. Les nouveaux jeux de données sont signalés par un astérisque jaune. Le travail que vous effectuez dans Power BI ne modifie pas le jeu de données sous-jacent.
 
 Si vous faites [partie d’un **_espace de travail d’application_**](service-collaborate-power-bi-workspace.md), les jeux de données ajoutés par un membre de cet espace de travail sont accessibles par les autres membres de l’espace de travail.
 
@@ -87,9 +84,9 @@ Les jeux de données peuvent être actualisés, renommés, explorés et supprim�
 * [Exemples de jeux de données pour Power BI](sample-datasets.md)
 
 ## <a name="reports"></a>Rapports
-Un rapport Power BI se compose d’une ou de plusieurs pages de visualisations (graphiques en courbes, en secteurs, de compartimentage, etc.). Les visualisations sont également appelées **_visuels_**. Toutes les visualisations dans un rapport proviennent d’un seul jeu de données. Les rapports peuvent être créés de toutes pièces dans Power BI, être importés avec les tableaux de bord que des collègues partagent avec vous ou être créés automatiquement quand vous vous connectez à des jeux de données à partir d’Excel, de Power BI Desktop, de bases de données, d’applications SaaS et d’[applications](service-get-data.md).  Par exemple, quand vous vous connectez à un classeur Excel qui contient des feuilles Power View, Power BI crée un rapport basé sur ces feuilles. Et lorsque vous vous connectez à une application SaaS, Power BI importe un rapport prédéfini.
+Un rapport Power BI correspond à une ou plusieurs pages de visualisations comme des graphiques en courbes, des cartes et des treemaps. Les visualisations sont également appelées **_visuels_**. Toutes les visualisations dans un rapport proviennent d’un seul jeu de données. Les rapports peuvent être créés de toutes pièces dans Power BI, être importés avec les tableaux de bord que des collègues partagent avec vous ou être créés automatiquement quand vous vous connectez à des jeux de données à partir d’Excel, de Power BI Desktop, de bases de données, d’applications SaaS et d’[applications](service-get-data.md).  Par exemple, quand vous vous connectez à un classeur Excel qui contient des feuilles Power View, Power BI crée un rapport basé sur ces feuilles. Et lorsque vous vous connectez à une application SaaS, Power BI importe un rapport prédéfini.
 
-Il existe deux façons d’afficher les rapports et d’interagir avec eux : [le mode Lecture et le mode Edition](service-reading-view-and-editing-view.md).  Seuls la personne qui a créé le rapport, les copropriétaires et les personnes autorisées ont accès à l’ensemble des fonctions d’exploration, de conception, de génération et de partage du **_mode Edition_** pour ce rapport. Et les personnes avec qui ils partagent le rapport peuvent explorer et interagir avec les rapports en **_mode Lecture_**.   
+Il existe deux modes d’affichage et d’interaction pour les rapports : [mode Lecture et mode Édition](service-reading-view-and-editing-view.md).  Seuls la personne qui a créé le rapport, les copropriétaires et les personnes autorisées ont accès à l’ensemble des fonctions d’exploration, de conception, de génération et de partage du **_mode Edition_** pour ce rapport. Les personnes avec qui ils partagent le rapport peuvent l’explorer et interagir avec lui en **_mode Lecture_**.   
 
 Lorsque vous ouvrez un espace de travail, les rapports associés sont répertoriés sous l’onglet **Rapports**. Chaque rapport répertorié représente une ou plusieurs pages de visualisations basées sur un seul des jeux de données sous-jacents. Pour ouvrir un rapport, sélectionnez-le.
 
@@ -103,7 +100,7 @@ Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’appl
 
 **UN** rapport…
 
-* est contenu dans un seul espace de travail
+* est contenu dans un seul espace de travail.
 * peut être associé à plusieurs tableaux de bord au sein de cet espace de travail (les vignettes épinglées à partir de ce rapport peuvent apparaître sur plusieurs tableaux de bord).
 * peut être créé à l'aide des données d'un jeu de données unique (la seule exception à cela est que Power BI Desktop peut combiner plusieurs jeux de données dans un même rapport et que ce rapport peut être importé dans Power BI).
 
@@ -118,8 +115,8 @@ Un *tableau de bord* est un élément que vous créez dans **Power BI** ou qu’
 
 Pourquoi créer des tableaux de bord ?  En voici quelques raisons :
 
-* Pour voir, en un coup d’œil, toutes les informations requises pour prendre des décisions.
-* Pour surveiller les informations les plus importantes concernant votre activité.
+* Pour voir en un coup d’œil toutes les informations nécessaires pour prendre des décisions.
+* Pour superviser les informations les plus importantes concernant votre activité.
 * Pour vous assurer que tous vos collègues accèdent à la même page, et qu’ils consultent et utilisent les mêmes informations que vous.
 * Pour surveiller la santé d’une entreprise, d’un produit, d’une unité organisationnelle, d’une campagne marketing, etc.
 * Pour créer une vue personnalisée d’un tableau de bord plus large en affichant les métriques qui vous intéressent.
@@ -127,11 +124,6 @@ Pourquoi créer des tableaux de bord ?  En voici quelques raisons :
 Lorsque vous ouvrez un espace de travail, les tableaux de bord associés sont répertoriés sous l’onglet **Tableaux de bord**. Pour ouvrir un tableau de bord, sélectionnez-le. Lorsque vous ouvrez une application, vous voyez un tableau de bord.  Chaque tableau de bord représente une vue personnalisée d’un sous-ensemble des jeux de données sous-jacents.  Si vous êtes propriétaire du tableau de bord, vous avez aussi accès en modification aux jeux de données et rapports sous-jacents.  Si le tableau de bord a été partagé avec vous, vous pouvez interagir avec le tableau de bord et les rapports sous-jacents, mais vous ne pouvez pas enregistrer de modifications.
 
 Il existe différentes manières de [partager un tableau de bord](service-share-dashboards.md). Power BI Pro est nécessaire pour partager un tableau de bord et peut être requis pour afficher un tableau de bord partagé.
-
-
-> [!NOTE]
-> Les éléments épinglés et les vignettes sont traités plus en détail ci-dessous, dans la section Tableau de bord avec vignettes.
->
 
 **UN** tableau de bord…
 
@@ -160,30 +152,29 @@ Vous ne pouvez pas modifier votre classeur dans Power BI. Toutefois, si vous de
 * [Publier sur Power BI à partir d’Excel](service-publish-from-excel.md)
 
 
-## <a name="my-workspace"></a>Mon espace de travail
-Nous avons couvert les espaces de travail et les principaux composants. Examinons encore une fois l’interface Power BI et les éléments qui composent la page de destination pour le service Power BI.
+## <a name="a-dashboard-in-my-workspace"></a>Un tableau de bord dans Mon espace de travail
+Nous avons couvert les espaces de travail et les principaux composants. Rassemblons tout ça et passons en revue les éléments qui composent un tableau de bord dans le service Power BI.
 
 ![Service Power BI dans un navigateur](media/service-basic-concepts/completenewest.png)
 
-### <a name="1-navigation-pane-left-navpane"></a>1. **Volet de navigation** (volet de navigation gauche)
+### <a name="1-navigation-pane-left-nav"></a>1. **Volet de navigation gauche**
 Utilisez le volet de navigation pour rechercher et parcourir vos espaces de travail et les principaux composants de Power BI : tableaux de bord, rapports, classeurs et jeux de données.  
 
   ![Volet de navigation](media/service-basic-concepts/power-bi-navigation.png)
 
 * Sélectionnez **Obtenir des données** pour [ajouter des jeux de données, des rapports et des tableaux de bord à Power BI](service-get-data.md).
-* Développez et réduisez la barre de navigation avec cette icône ![icône du volet de navigation](media/service-basic-concepts/expand-icon.png).
+* Développer et réduire le volet de navigation avec cette icône ![icône du volet de navigation](media/service-basic-concepts/expand-icon.png).
 * Ouvrez ou gérez votre contenu favori en sélectionnant **Favoris**.
 * Affichez et ouvrez votre contenu le plus récemment visité en sélectionnant **Récents**.
 * Affichez, ouvrez ou supprimez une application en sélectionnant **Applications**.
 * Un collègue a partagé du contenu avec vous ? Sélectionnez **Partagés avec moi** pour rechercher et trier le contenu dont vous avez besoin.
 * Affichez et ouvrez vos espaces de travail en sélectionnant **Espaces de travail**.
 
-Effectuez un clic simple sur
+Cliquez une seule fois sur ces éléments :
 
 * une icône ou un titre pour l’ouvrir en mode Contenu
 * une flèche vers la droite (>) pour ouvrir un menu contextuel Favoris, Récents et Espaces de travail.
-* une icône de chevron () pour afficher la liste déroulante **Mon espace de travail** constituée de tableaux de bord, rapports, classeurs et jeux de données.
-* un jeu de données pour l’explorer.
+* une icône de chevron pour afficher la liste déroulante **Mon espace de travail** constituée de tableaux de bord, rapports, classeurs et jeux de données.
 
 ### <a name="2-canvas"></a>2. **Canevas**
 Étant donné que nous avons ouvert un tableau de bord, le canevas affiche des vignettes de visualisation. Si, par exemple, nous avions ouvert l’éditeur de rapport, le canevas afficherait une page de rapport.
@@ -192,7 +183,7 @@ Les tableaux de bord se composent de [vignettes](service-dashboard-tiles.md).  L
 
 ![Canevas de tableau de bord Power BI](media/service-basic-concepts/canvas.png)
 
-Pour plus d’informations, consultez **Tableaux de bord** (ci-dessus).
+Pour plus d’informations, consultez [Tableaux de bord](#dashboards) (ci-dessus).
 
 ### <a name="3-qa-question-box"></a>3. **Zone Questions et réponses**
 Une manière d’explorer vos données consiste à poser une question et à laisser Q&R Power BI y répondre, sous la forme d’une visualisation. La zone Questions et réponses peut être utilisée pour ajouter du contenu à un rapport ou tableau de bord.
@@ -231,9 +222,9 @@ Cette zone de l’écran contient des options supplémentaires pour interagir av
    ![Boutons d’icônes étiquetés](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Qu’est-ce que Power BI ?](power-bi-overview.md)  
-[Navigation : Découverte du service Power BI](service-the-new-power-bi-experience.md)
-[Vidéos Power BI](videos.md)  
-[Éditeur de rapport - Suivre une visite guidée](service-the-report-editor-take-a-tour.md)
+- [Qu’est-ce que Power BI ?](power-bi-overview.md)  
+- [Navigation : Découverte du service Power BI](service-the-new-power-bi-experience.md)
+- [Vidéos Power BI](videos.md)  
+- [Éditeur de rapport - Suivre une visite guidée](service-the-report-editor-take-a-tour.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

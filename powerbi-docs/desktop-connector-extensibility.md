@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2018
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bba674df9864697199a274698a1b17320b8ccd80
-ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
+ms.openlocfilehash: eaf76f2ba762a603bf37385ea00cd714499db4b5
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40257168"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983413"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Extensibilité des connecteurs dans Power BI
 
@@ -42,7 +42,7 @@ Sous **Extensions de données**, vous avez le choix entre deux niveaux de sécur
 * (Recommandé) Autoriser uniquement le chargement des extensions certifiées
 * (Non recommandé) Autoriser le chargement de toutes les extensions sans avertissement
 
-Si vous prévoyez d’utiliser des **connecteurs personnalisés**, ou des connecteurs que vous-même ou un tiers avez développés et distribués, vous devez sélectionner **« (Non recommandé) Autoriser le chargement de toutes les extensions sans avertissement »**. Nous ne recommandons pas ce paramètre de sécurité, sauf si vous prévoyez d’exécuter des **connecteurs personnalisés**.
+Si vous prévoyez d’utiliser des **connecteurs personnalisés**, ou des connecteurs que vous-même ou un tiers avez développés et distribués, vous devez sélectionner **« (Non recommandé) Autoriser le chargement de toutes les extensions sans avertissement »**. Nous déconseillons ce paramètre de sécurité, sauf si vous faites entièrement confiance à vos connecteurs personnalisés, étant donné que le code qu’il implique permet de gérer les informations d’identification (y compris de les envoyer par protocole HTTP) et d’ignorer les niveaux de confidentialité.
 
 Dans le cas du paramètre de sécurité **« (Recommandé) »**, si des connecteurs personnalisés sont présents sur votre système, une erreur s’affiche avec une description des connecteurs qui ne peuvent pas être chargés pour des raisons de sécurité.
 

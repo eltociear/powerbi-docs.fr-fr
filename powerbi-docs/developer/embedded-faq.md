@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/27/2018
-ms.openlocfilehash: 71cbae5f282883ca26a5bf0b2ae7b5609b86eb58
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.date: 12/20/2018
+ms.openlocfilehash: 3971651caf9be7e754f4232ffec8b4e4dbfdfe6d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578793"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008416"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
@@ -74,7 +74,7 @@ Voici un tableau des différences de fonctionnalités.
 | Accéder à du contenu avec une licence Power BI gratuite dans Powerbi.com et Power BI Mobile | Non | Non | Oui |
 | Accéder à du contenu incorporé dans des applications MS Office avec une licence Power BI GRATUITE | Non | Oui | Oui |
 
-### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI propose à présent les trois références SKU suivantes pour l’incorporation : A, EM et P. Laquelle dois-je acheter pour mon scénario ?
+### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI propose maintenant trois références SKU pour l’incorporation : A, EM et P. Laquelle dois-je acheter pour mon scénario ?
 
 |  |Référence SKU A (Power BI Embedded)  |Référence SKU EM (Power BI Premium)  |Référence SKU P (Power BI Premium)  |
 |---------|---------|---------|---------|
@@ -320,4 +320,8 @@ Vous pouvez découvrir comment modifier vos données Power BI [ici](https://docs
 
 Pour plus d’informations, consultez [Résolution des problèmes de votre application intégrée](embedded-troubleshoot.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
+
+### <a name="what-are-the-best-practices-to-improve-performance"></a>Quelles sont les bonnes pratiques pour améliorer les performances ?
+
+[Performances de Power BI Embedded](embedded-performance-best-practices.md)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f997ee7574c5dd9dc6b4d28767d599a97bf297ed
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a2402872744b3029e37bf49eaaeae27a3ad95734
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669839"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983620"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Utiliser le Sélecteur de plages numériques dans Power BI Desktop
 Le **Sélecteur de plages numériques** vous permet d’appliquer toutes sortes de filtres à toute colonne numérique dans votre modèle de données. Vous pouvez choisir de filtrer les nombres compris **entre** des valeurs, des nombres **inférieurs ou égaux** à une valeur, ou des nombres **supérieurs ou égaux** à une valeur. Bien que cette fonction puisse sembler simple, elle est très utile pour filtrer vos données.
@@ -54,6 +54,14 @@ Enfin, si nous sélectionnons l’option **Supérieur ou égal à**, la poignée
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Aligner sur des nombres entiers avec le sélecteur de plages numériques
 
 Un sélecteur de plages numériques s’aligne sur les nombres entiers si le type de données du champ sous-jacent est **Nombre entier**. avec précision sur des nombres entiers. Les champs de type **Nombre décimal** vous permettent d’entrer ou de sélectionner des fractions d’un nombre. La mise en forme appliquée dans la zone de texte correspond à la mise en forme définie dans le champ, même si vous pouvez entrer ou sélectionner des nombres plus précis.
+
+## <a name="display-formatting-with-the-date-range-slicer"></a>Format d’affichage du sélecteur de plages de dates
+
+Quand vous utilisez un sélecteur pour afficher ou définir une plage de dates, la date est toujours affichée au format **Date courte**, selon les paramètres régionaux du navigateur ou du système d’exploitation de l’utilisateur. Le format d’affichage ne tient pas compte des paramètres de type de données dans le modèle sous-jacent ou les données sous-jacentes. 
+
+Par exemple, le type des données sous-jacentes peut être au format Date longue (comme *jjjj j MMMM aaaa*, qui permet d’afficher une date dans d’autres visuels ou circonstances au format *mercredi 14 mars 2001*), alors que, dans le sélecteur de plages de dates, les dates s’affichent selon le format *14/03/2001*.
+
+L’affichage au format **Date courte** dans le sélecteur garantit le maintien d’une longueur de chaîne cohérente et compacte dans le sélecteur. 
 
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations

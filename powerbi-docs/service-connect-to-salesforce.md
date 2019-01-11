@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5cd858ad14c1a5fcf76ddf23dafdac2bb5585b10
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 02b98d807ccc84aa83826ae5e9eecdbdd1987a91
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548255"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008577"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Se connecter à Salesforce avec Power BI
 Avec Power BI, vous pouvez facilement vous connecter à votre compte Salesforce.com. Créez cette connexion pour récupérer vos données et disposer automatiquement d’un tableau de bord et de rapports connexes basés sur vos données.
@@ -80,7 +80,7 @@ Si vous rencontrez des erreurs, reportez-vous à la configuration requise ci-des
 
 ### <a name="unable-to-connect-to-the-remote-server-message"></a>Message « Impossible de se connecter au serveur distant »
 
-Si vous recevez un message « Impossible de se connecter au serveur distant » quand vous tentez de vous connecter à votre compte Salesforce, reportez-vous à cette solution sur le forum Outsystems : [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+Si vous recevez un message « Impossible de se connecter au serveur distant » lorsque vous tentez de vous connecter à votre compte Salesforce, consultez cette solution sur le forum Outsystems : [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
 
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 98250e30d1ca944aa536e0d8a05e6ee6c227fc61
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 87e2ff9bf8e4eb87b4b915492bf8cfa4a97a9150
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546750"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008853"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Se connecter à Xero avec Power BI
 Xero est un logiciel de comptabilité en ligne facile à utiliser, conçu spécifiquement pour les petites entreprises. Créez des visualisations attrayantes sur la base des informations financières de Xero avec ce pack de contenu Power BI. Votre tableau de bord par défaut comprend plusieurs mesures liées aux petites entreprises, comme l’état de la trésorerie, les recettes et les dépenses, les tendances liées aux bénéfices, les jours débiteur et le retour sur investissement.
@@ -81,7 +81,7 @@ Le jeu de données comprend également les tableaux suivants pour personnaliser 
 * Comptes Xero
 
 ## <a name="system-requirements"></a>Configuration requise
-Les rôles suivants sont nécessaires pour accéder au pack de contenu Xero : « Rapports + Standard » ou « Conseiller ».
+Les rôles suivants sont nécessaires pour accéder au pack de contenu Xero : « Standard + Rapports » ou « Advisor ».
 
 <a name="FindingParams"></a>
 
@@ -89,7 +89,7 @@ Les rôles suivants sont nécessaires pour accéder au pack de contenu Xero : �
 Indiquez le nom de l’organisation à suivre dans Power BI. Cela vous permet de vous connecter à plusieurs organisations différentes. Notez que vous ne pouvez pas vous connecter à la même organisation plusieurs fois, car cela affecte l’actualisation planifiée.   
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
-* Les utilisateurs Xero suivants sont nécessaires pour accéder au pack de contenu Xero : « Rapports + Standard » ou « Conseiller ». Le pack de contenu s’appuie sur les autorisations utilisateur pour accéder aux données de rapports via Power BI.  
+* Les utilisateurs Xero ont besoin des rôles suivants pour accéder au pack de contenu Xero pour Power BI : « Standard + Rapports » ou « Advisor ». Le pack de contenu s’appuie sur les autorisations utilisateur pour accéder aux données de rapports via Power BI.  
 * Si vous recevez une erreur après le chargement pendant un certain temps, vérifiez au bout de combien de temps ce message d’erreur s’est affiché. Notez que le jeton d’accès fourni par Xero est uniquement valide pendant 30 minutes. Par conséquent, les comptes échouent s’ils contiennent plus de données que le volume pouvant être chargé dans ce laps de temps. Nous travaillons activement pour améliorer cette situation.
 * Lors du chargement, les vignettes du tableau de bord sont dans un état de chargement générique. Cet état ne change pas jusqu’à la fin du chargement. Si vous recevez une notification indiquant que le chargement est terminé alors que les vignettes sont toujours en cours de chargement, essayez d’actualiser les vignettes du tableau de bord en utilisant les points de suspension (...) en haut à droite de votre tableau de bord.
 * Si votre pack de contenu ne parvient pas à s’actualiser, vérifiez si vous êtes connecté plusieurs fois à la même organisation dans Power BI. Xero autorise une seule connexion active à une organisation et vous risquez de voir une erreur indiquant que vos informations d’identification ne sont pas valides si vous vous connectez à la même organisation plusieurs fois.  

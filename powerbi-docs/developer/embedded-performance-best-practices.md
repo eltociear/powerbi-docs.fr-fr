@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-embedded
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: d0f4ca29e30e5f6e6176f036dc535601eb580471
-ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
+ms.openlocfilehash: e28801a15cf50351d737af63bc48f655ca85d28f
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53329875"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008163"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI Embedded
 
@@ -71,6 +71,6 @@ Maintenez les outils et les packages du SDK à jour.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Performances du rapport](../power-bi-reports-performance.md)
+* [Bonnes pratiques relatives aux performances des rapports Power BI](../power-bi-reports-performance.md)
 * [Comment résoudre les problèmes de Power BI Embedded](embedded-troubleshoot.md)
 * [FAQ sur Power BI Embedded](embedded-faq.md)

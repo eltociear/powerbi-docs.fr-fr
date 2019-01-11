@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 12/19/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 04e00537db4ffbcb6c1a154cb69fb2c856bd7596
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 09c505d114eaa951978f23061d9c79c1b6870fad
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565656"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983367"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Trucs et astuces pour la mise en forme des couleurs dans Power BI
 Power BI vous propose de nombreuses façons de personnaliser vos tableaux de bord et vos rapports. Cet article fournit des astuces pour rendre vos visualisations Power BI plus attrayantes, plus intéressantes et mieux adaptées à vos besoins.
@@ -29,38 +29,35 @@ Ces astuces sont répertoriées ci-dessous. Vous en avez une autre à proposer 
 * Utiliser des échelles de couleurs divergentes
 * Comment annuler dans Power BI
 
-Pour apporter des modifications, vous devez être en mode Edition : sélectionnez votre **Rapport** depuis le volet **Mon espace de travail** , puis sélectionnez **Modifier le rapport** dans la zone de menu supérieure, comme illustré dans l’image suivante.
+Pour apporter des modifications, vous devez être en mode Edition : sélectionnez votre **Rapport** depuis le volet **Mon espace de travail** , puis sélectionnez **Modifier le rapport** dans la zone de menu supérieure, comme illustré dans l’image suivante. Cet exemple utilise l’**exemple Human Resources** (Ressources humaines).
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_1.png)
+![canevas de rapport avec Modifier le rapport mis en surbrillance](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 Quand le volet **Visualisations** s’affiche à droite du canevas de **rapport** , vous pouvez commencer la personnalisation.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_2.png)
+![rapport avec le volet de mise en forme affiché](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Modifier la couleur d’un seul point de données
-Parfois, il peut être nécessaire de mettre en évidence un point de données particulier. Il peut s’agir de chiffres de ventes pour le lancement d’un nouveau produit ou de l’amélioration de la qualité après le lancement d’un nouveau programme. Avec Power BI, vous pouvez mettre en évidence un point de données spécifique en modifiant sa couleur.
+Parfois, il peut être nécessaire de mettre en évidence un point de données particulier. Il peut s’agir de chiffres de ventes pour le lancement d’un nouveau produit ou de l’amélioration de la qualité après le lancement d’un nouveau programme. Avec Power BI, et pour la plupart des types de visuels, vous pouvez mettre en surbrillance un point de données particulier en modifiant sa couleur.
 
-La visualisation suivante classe des zones géographiques en fonction du coût de la vie. 
+La visualisation suivante présente les marges de ventes par employé avec les couleurs par défaut. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_3.png)
+![graphique en aires](media/service-tips-and-tricks-for-color-formatting/power-bi-area-chart.png)
 
-Imaginons que vous vouliez montrer rapidement où Washington se classe dans cette liste en utilisant des couleurs. Voici les étapes à suivre :
+La zone correspondant à Annelie est difficile à voir, nous allons donc utiliser une autre couleur pour la faire ressortir davantage. Voici les étapes à suivre :
 
 Développez la section **Couleurs des données** . Voici ce qui s’affiche :
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_4.png)
+![Zone de sélection Couleurs des données sous Mise en forme](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors.png)
 
-Définissez **Afficher tout** sur **Activé**. Cela affiche les couleurs de chaque élément de données de la visualisation. Quand vous pointez sur les points de données, le défilement est activé pour vous permettre de les modifier.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_5.png)
+Dans cet exemple, nous allons sélectionner une couleur foncée mais vive qui ne ressemble pas à la couleur utilisée pour Valery. Sélectionnez la flèche vers le bas dans la zone de couleur d’Annelie, sélectionnez **Couleur personnalisée** et choisissez un bleu vif.
 
-Ici, nous allons changer la couleur de **Washington** en vert. Nous allons faire défiler jusqu’à **Washington**, puis sélectionner la flèche bas située dans sa zone de couleur. La fenêtre de sélection de couleur s’affiche.
+![sélections de couleurs](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
+Une fois sélectionnée, la zone d’Annelie est beaucoup plus facile à distinguer de celle des autres employés. 
 
-Une fois sélectionné, le point de données **Washington** se distingue facilement par sa couleur verte.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_7.png)
+![graphique en aires, zone Annalie maintenant en bleu vif](media/service-tips-and-tricks-for-color-formatting/power-bi-color.png)
 
 Même si vous modifiez les types de visualisations, puis revenez, Power BI se souvient de votre sélection et conserve la couleur verte pour **Washington** .
 

@@ -1,6 +1,6 @@
 ---
-title: Mesures d’utilisation pour les tableaux de bord et les rapports
-description: Affichage, enregistrement et utilisation des métriques d’utilisation pour les rapports et tableaux de bord Power BI. Mesurez et augmentez votre impact avec les métriques d’utilisation pour les créateurs de contenu.
+title: Superviser les métriques d’utilisation de tableaux de bord et de rapports
+description: Guide pratique pour voir, enregistrer, et utiliser des métriques d’utilisation pour des rapports et tableaux de bord Power BI.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -9,21 +9,21 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/19/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f7aad6b0e3dd38c795d886d1aba26a82a8529c01
-ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
+ms.openlocfilehash: 435f7ec433e45202ef2b5ddbd9a9ffb996f84129
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53649368"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983781"
 ---
-# <a name="usage-metrics-for-dashboards-and-reports"></a>Mesures d’utilisation pour les tableaux de bord et les rapports
+# <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Superviser les métriques d’utilisation de tableaux de bord et de rapports Power BI
 
 Si vous créez des tableaux de bord et des rapports, des mesures d’utilisation vous aident à comprendre leur impact. Lorsque vous exécutez des métriques d’utilisation de tableau de bord ou de rapport, vous découvrez comment les tableaux de bord et les rapports sont utilisés dans votre organisation : ce qui est utilisé, par qui et dans quel but.  
 
 > [!NOTE]
-> Les métriques d’utilisation suivent l’utilisation de rapports incorporés dans SharePoint Online. Toutefois, elles ne suivent pas l’incorporation de tableaux de bord et rapports via les flux « l’utilisateur a des informations d’identification » et « l’application a des informations d’identification ». Les métriques d’utilisation ne suivent pas non plus l’utilisation des rapports incorporés via [publier sur le web](service-publish-to-web.md).
+> Les métriques d’utilisation permettent de suivre l’utilisation des rapports incorporés dans SharePoint Online. Toutefois, elles n’effectuent pas le suivi de l’incorporation des tableaux de bord et rapports par le biais des flux « l’utilisateur a des informations d’identification » et « l’application a des informations d’identification ». Les métriques d’utilisation ne suivent pas l’utilisation des rapports incorporés par le biais d’une [publication sur le web](service-publish-to-web.md).
 
 Ces rapports de métriques d’utilisation sont en lecture seule. Toutefois, vous pouvez personnaliser un rapport de métriques d’utilisation à l’aide de la commande « Enregistrer sous ». Cette opération crée un nouveau jeu de données et convertit le rapport en lecture seule en un rapport Power BI pleinement fonctionnel que vous pouvez modifier. Non seulement le rapport personnalisé contient des métriques pour le tableau de bord ou le rapport sélectionné, mais en supprimant le filtre par défaut, vous avez accès aux métriques d’utilisation de tous les tableaux de bord et tous les rapports de l’espace de travail sélectionné. Et vous pouvez même voir les noms de vos utilisateurs finaux.
 
@@ -33,7 +33,7 @@ Ces rapports de métriques d’utilisation sont en lecture seule. Toutefois, vou
 
 De cette manière, vous pouvez démontrer votre impact et hiérarchiser vos efforts. Vos mesures d’utilisation peuvent indiquer qu’un de vos rapports est utilisé quotidiennement par un segment important de l’organisation ou que vous avez créé un tableau de bord qui n’est pas du tout consulté. Ce type de retour est essentiel car il guide vos efforts de travail.
 
-L’exécution de rapports de métriques d’utilisation n’est disponible que dans le service Power BI.  Toutefois, si vous enregistrez un rapport de métriques d’utilisation ou que vous l’épinglez à un tableau de bord, vous pouvez ouvrir et interagir avec ce rapport sur des appareils mobiles.
+L’exécution de rapports de métriques d’utilisation n’est disponible que dans le service Power BI.  Toutefois, si vous enregistrez un rapport des métriques d’utilisation ou que vous l’épinglez à un tableau de bord, vous pouvez l’ouvrir et le manipuler sur des appareils mobiles.
 
 ### <a name="prerequisites"></a>Conditions préalables
 
@@ -75,7 +75,7 @@ Pour explorer les données du rapport ou pour créer vos propres rapports sur le
 | --- | --- | --- | --- |
 | Segment Méthode de distribution |oui |oui |Manière dont les utilisateurs ont eu accès au contenu. Il existe 3 méthodes possibles : les utilisateurs peuvent accéder au tableau de bord ou au rapport s’ils sont membres d’un [espace de travail d’application](consumer/end-user-experience.md), quand du contenu est [partagé avec eux](service-share-dashboards.md) ou en installant un pack ou une application de contenu.  Notez que les vues dans une application sont comptées comme « packs de contenu ». |
 | Segment Plateformes |oui |oui |L’accès au tableau de bord ou au rapport a-t-il eu lieu via le service Power BI (powerbi.com) ou un appareil mobile ? L’accès mobile inclut toutes nos applications iOS, Android et Windows. |
-| Segment Page de rapport |non |oui |Si le rapport comporte plus d’une page, segmentez-le par page(s) visitées(s). Si vous voyez une option de liste « Vide », cela signifie qu’une page de rapport a été ajoutée récemment (dans les 24 heures, le nom réel de la nouvelle page s’affiche dans la liste des segments) et/ou que des pages de rapport ont été supprimées. « Vide » capture ces types de situations. |
+| Segment Page de rapport |non |oui |Si le rapport comporte plus d’une page, segmentez-le par page(s) visitées(s). Si vous voyez une option de liste « Vide », cela signifie qu’une page de rapport a été ajoutée récemment (dans les 24 heures, le nom réel de la nouvelle page s’affiche dans la liste des segments) et/ou que des pages de rapport ont été supprimées. « Vide » capture ces types de situations. |
 | Visites par jour |oui |oui |Nombre total de visites par jour : une visite correspond à un chargement de page de rapport ou de tableau de bord par un utilisateur. |
 | Visiteurs uniques par jour |oui |oui |Nombre d’utilisateurs *différents* qui ont consulté le tableau de bord ou le rapport (basé sur le compte d’utilisateur AAD). |
 | Vues par l’utilisateur |oui |oui |Nombre de vues au cours des 90 derniers jours, ventilées par utilisateur. |
@@ -105,7 +105,7 @@ Mieux encore, le jeu de données sous-jacent comprend les détails d’utilisati
 
 ### <a name="what-is-created-when-using-save-as"></a>Qu’est-ce qui est créé lors de l’utilisation de la commande « Enregistrer sous » ?
 
-Quand Power BI crée le rapport pleinement fonctionnel, il crée également un jeu de données **composé de tous les tableaux de bord et tous les rapports de l’espace de travail en cours** qui ont été consultés au cours des 90 derniers jours. Par exemple, supposons que vous ayez un espace de travail appelé « Ventes », qu’il contient trois tableaux de bord et deux rapports, et que vous créez un rapport de métriques d’utilisation du tableau de bord « Nord-est ». Vous utilisez ensuite **Enregistrer sous** pour le personnaliser et le convertir en rapport pleinement fonctionnel. Le jeu de données de ce nouveau rapport contient les métriques d’utilisation *non seulement pour ce tableau d’un bord nommé « Nord-est »*, mais pour les trois tableaux de bord de l’espace de travail « Ventes ». Par défaut, le rapport affiche des données du tableau de bord « Nord-est » et vous devrez [supprimer un filtre](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (un seul clic) pour afficher les données des trois tableaux de bord.
+Quand Power BI crée le rapport pleinement fonctionnel, il crée également un jeu de données **composé de tous les tableaux de bord et tous les rapports de l’espace de travail en cours** qui ont été consultés au cours des 90 derniers jours. Par exemple, supposons que vous ayez un espace de travail appelé « Ventes », qu’il contient trois tableaux de bord et deux rapports, et que vous créez un rapport de métriques d’utilisation du tableau de bord « Nord-est ». Vous utilisez ensuite **Enregistrer sous** pour le personnaliser et le convertir en rapport pleinement fonctionnel. Le jeu de données de ce nouveau rapport contient les métriques d’utilisation *non seulement pour ce tableau d’un bord nommé « Nord-est »*, mais pour les trois tableaux de bord de l’espace de travail « Ventes ». Par défaut, le rapport présente des données du tableau de bord « Nord-est » et vous devez [supprimer un filtre](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (un seul clic) pour afficher les données des trois tableaux de bord.
 
 ### <a name="create-a-copy-of-the-usage-report-using-save-as"></a>Créer une copie du rapport d’utilisation à l’aide de « Enregistrer sous »
 
@@ -128,7 +128,7 @@ Lorsque vous créez une copie à l’aide de la commande « Enregistrer sous �
 
 Pour voir les métriques de tous les tableaux de bord ou tous les rapports dans l’espace de travail, vous devrez supprimer un filtre. Par défaut, le rapport personnalisé est filtré pour n’afficher que les métriques du tableau de bord ou du rapport qui a été utilisé pour le créer.
 
-Si par exemple vous avez utilisé le tableau de bord « Ventes en Europe » pour créer ce rapport personnalisé, seules les données d’utilisation du tableau de bord « Ventes en Europe » s’affichent. Pour supprimer le filtre et activer les données de tous les tableaux de bord dans cet espace de travail :
+Si, par exemple, vous avez utilisé le tableau de bord « Ventes en Europe » pour créer ce rapport personnalisé, seules les données d’utilisation du tableau de bord « Ventes en Europe » apparaissent. Pour supprimer le filtre et activer les données de tous les tableaux de bord dans cet espace de travail :
 
 1. Ouvrez le rapport personnalisé en mode Édition.
 
@@ -169,22 +169,31 @@ Il est important de savoir que la comparaison entre les journaux d’audit et le
 * Certains types d’affichages ne sont pas inclus dans les métriques d’utilisation, comme décrit précédemment dans cet article.
 * Les métriques d’utilisation surestiment parfois les activités, dans les situations où le client actualise la page sans qu’il soit nécessaire de renvoyer une requête au service Power BI.
 
+## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
 Outre les différences potentielles entre les journaux d’audit et les métriques d’utilisation, les questions et les réponses suivantes, sur les métriques d’utilisation, pourront être utiles aux utilisateurs et aux administrateurs :
 
-Q :    Je ne parviens pas à lancer les métriques d’utilisation sur un tableau de bord ou un rapport. R :    Vous ne pouvez voir les métriques d’utilisation que pour le contenu dont vous êtes propriétaire ou que vous avez l’autorisation de modifier.
+**Q :**    Je ne parviens pas à lancer les métriques d’utilisation sur un tableau de bord ou un rapport.
 
-Q :    Les métriques d’utilisation captureront-elles des vues de tableaux de bord et de rapports incorporés ?
-R :    Actuellement, les métriques d’utilisation ne prennent pas en charge la capture de l’utilisation des tableaux de bord et des rapports incorporés, ni le flux [publier sur le web](service-publish-to-web.md).          Dans ce cas, nous vous recommandons d’utiliser des plateformes Web Analytics existantes pour effectuer le suivi de l’utilisation de l’application ou du portail d’hébergement.
+**R :**    Vous ne pouvez voir les métriques d’utilisation que pour le contenu dont vous êtes propriétaire ou que vous avez l’autorisation de modifier.
 
-Q :    Je ne parviens à lancer les métriques d’utilisation sur aucun contenu.
-R1 :    Les administrateurs ont la possibilité de désactiver cette fonctionnalité dans leur organisation.  Contactez votre administrateur pour vérifier si c’est le cas.
-R2 :    Les mesures d’utilisation sont une fonctionnalité de Power BI Pro.
+**Q :**    Les métriques d’utilisation capturent-elles des vues de tableaux de bord et de rapports incorporés ?
 
-Q :    Les données ne semblent pas à jour. Par exemple, les méthodes de distribution n’apparaissent pas, des pages de rapport sont manquantes, etc. R :    La mise à jour des données peut prendre jusqu’à 24 heures.
+**R :**    Actuellement, les métriques d’utilisation ne prennent pas en charge la capture de l’utilisation des tableaux de bord et des rapports incorporés, ni le flux [publier sur le web](service-publish-to-web.md).          Dans ce cas, nous vous recommandons d’utiliser des plateformes Web Analytics existantes pour effectuer le suivi de l’utilisation de l’application ou du portail d’hébergement.
 
-Q :    Il y a quatre rapports dans l’espace de travail, mais le rapport des métriques d’utilisation n’en compte que trois.
-R :    Le rapport des métriques d’utilisation ne comprend que les rapports (ou les tableaux de bord) qui ont été consultés au cours des 90 derniers jours.  Si un rapport (ou un tableau de bord) n’apparaît pas, c’est probablement parce qu’il n’a pas été utilisé au cours des 90 derniers jours.
+**Q :**    Je ne parviens à lancer les métriques d’utilisation sur aucun contenu.
+
+**R1 :**    Les administrateurs ont la possibilité de désactiver cette fonctionnalité dans leur organisation.  Contactez votre administrateur pour vérifier si c’est le cas.
+
+**R2 :**    Les mesures d’utilisation sont une fonctionnalité de Power BI Pro.
+
+**Q :**    Les données ne semblent pas à jour. Par exemple, les méthodes de distribution n’apparaissent pas, des pages de rapport sont manquantes, etc.
+
+**R :**    La mise à jour des données peut prendre jusqu’à 24 heures.
+
+**Q :**    Il y a quatre rapports dans l’espace de travail, mais le rapport des métriques d’utilisation n’en compte que trois.
+
+**R :**    Le rapport des métriques d’utilisation ne comprend que les rapports (ou les tableaux de bord) qui ont été consultés au cours des 90 derniers jours.  Si un rapport (ou un tableau de bord) n’apparaît pas, c’est probablement parce qu’il n’a pas été utilisé au cours des 90 derniers jours.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

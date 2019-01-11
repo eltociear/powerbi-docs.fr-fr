@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 8d79d92577da25a316eba8e789a1b7b004a9967a
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830099"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983758"
 ---
 # <a name="export-data-from-visualizations"></a>Exportez des données à partir de visualisations
-Si vous souhaitez afficher les données qui sont utilisées pour créer une visualisation, vous pouvez le faire dans Power BI ou exporter ces données vers Excel sous forme de fichier .xlsx ou .csv. La possibilité d’exporter les données nécessite une licence Pro ou Premium et des autorisations de modification sur le jeu de données et le rapport. 
+Si vous souhaitez voir les données utilisées pour créer une visualisation, [vous pouvez le faire dans Power BI](service-reports-show-data.md) ou exporter ces données vers Excel sous forme de fichier .xlsx ou .csv. La possibilité d’exporter les données nécessite une licence Pro ou Premium et des autorisations de modification sur le jeu de données et le rapport. 
 
 Regardez Will pendant qu’il exporte les données à partir d’une des visualisations de son rapport, les enregistre au format .xlsx et ouvre le fichier dans Excel. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même.
 
@@ -38,7 +38,7 @@ Regardez Will pendant qu’il exporte les données à partir d’une des visuali
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>À partir d’une visualisation dans un rapport
-Pour effectuer cette procédure, ouvrez le [rapport Exemple Analyse de l'approvisionnement](../sample-procurement.md) en [mode Édition](../consumer/end-user-reading-view.md). Ajoutez une nouvelle page de rapport vierge. Puis suivez les étapes ci-dessous pour ajouter un regroupement et un filtre au niveau des visualisations.
+Pour effectuer cette procédure, ouvrez l’[exemple de rapport Procurement Analysis](../sample-procurement.md) (Analyse de l’approvisionnement) en mode Édition. Ajoutez une nouvelle page de rapport vierge. Puis suivez les étapes ci-dessous pour ajouter un regroupement et un filtre au niveau des visualisations.
 
 1. Créez un histogramme.  Dans le volet Champs, sélectionnez **Location > City** (Emplacement > Ville) et **Invoice > Discount Percent** (Facture > % de remise).  Vous devrez peut-être déplacer **Discount Percent** (% de remise) dans la zone Valeur. 
 
@@ -55,7 +55,7 @@ Pour effectuer cette procédure, ouvrez le [rapport Exemple Analyse de l'approvi
 4. Sélectionnez les ellipses, dans le coin supérieur droit de la visualisation. Choisissez  **Exporter des données**.
 
    ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. Dans Power BI en ligne, si votre visualisation a un agrégat (par exemple si vous avez défini **Nombre** sur *Moyenne*, *Somme* ou *Minimum*), vous avez deux options : **Données résumées** et **Données sous-jacentes**. Dans Power BI Desktop, vous aurez seulement l’option **Données résumées**. Pour comprendre le fonctionnement des agrégats, consultez [Agrégats dans Power BI](../service-aggregates.md).
+5. Dans Power BI Online, si votre visualisation a un agrégat (par exemple, si vous avez défini **Nombre** sur *Moyenne*, *Somme* ou *Minimum*), vous avez deux options : **Données résumées** et **Données sous-jacentes**. Dans Power BI Desktop, vous aurez seulement l’option **Données résumées**. Pour comprendre le fonctionnement des agrégats, consultez [Agrégats dans Power BI](../service-aggregates.md).
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Sélectionnez **Données résumées** > **Exporter** et choisissez .xlsx ou .csv. Power BI exporte les données.  Si vous avez appliqué des filtres à la visualisation, les données sont exportées en étant filtrées. Lorsque vous sélectionnez **Exporter**, votre navigateur vous invite à enregistrer le fichier. Lorsque c’est fait, ouvrez le fichier dans Excel.
 
@@ -129,9 +129,6 @@ Il est important de noter que si les paramètres du portail d’administration P
   2. Dans l’onglet **Données**, sélectionnez **Obtenir des données externes** > **À partir du texte**.
 * Les administrateurs Power BI ont la possibilité de désactiver l’exportation des données.
 
-## <a name="next-steps"></a>Étapes suivantes
-[Tableaux de bord dans Power BI](../consumer/end-user-dashboards.md)  
-[Power BI – Concepts de base](../consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

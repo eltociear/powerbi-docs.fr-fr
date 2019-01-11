@@ -1,24 +1,24 @@
 ---
-title: Agrégations (somme, moyenne, maximum, etc.) dans les visualisations
-description: Modifier l’agrégation dans un graphique (somme, moyenne, maximum, etc.) dans Power BI
+title: Utiliser des agrégats (somme, moyenne, etc.) dans le service Power BI
+description: Découvrez comment modifier l’agrégation dans un graphique (somme, moyenne, maximum, etc.) dans le service Power BI.
 author: mgblythe
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 12/21/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: dfc3006c37d6055bac435fceb05febd596f0cd1a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 7a88cc7f210c6119e57a5dcf30920a95e180b85f
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026474"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983712"
 ---
-# <a name="aggregates-in-power-bi-visualizations"></a>Agrégations dans les visualisations Power BI
+# <a name="work-with-aggregates-sum-average-etc-in-the-power-bi-service"></a>Utiliser des agrégats (somme, moyenne, etc.) dans le service Power BI
 ## <a name="what-is-an-aggregate"></a>Qu’est qu’un agrégat ?
 Vous pouvez parfois mathématiquement combiner des valeurs dans vos données. L’opération mathématique peut être une somme, une moyenne, un maximum, un nombre, etc. Lorsque vous combinez des valeurs dans vos données, cette opération est appelée *agrégation*. Le résultat de cette opération mathématique est une *agrégation*. 
 
@@ -70,16 +70,16 @@ Supposons que vous avez un graphique qui fait la somme des unités vendues pour 
 
 Voici certaines des options qui peuvent être disponibles pour l’agrégation d’un champ :
 
-* **Ne pas résumer**. si vous choisissez cette option, chaque valeur du champ en question est traitée séparément et n’est pas résumée. Cette option est souvent utilisée en présence d’une colonne d’ID numériques qui ne doivent pas être additionnés.
-* **Somme**. cette option permet d’ajouter toutes les valeurs contenues dans le champ.
+* **Ne pas résumer**. si vous choisissez cette option, chaque valeur du champ en question est traitée séparément et n’est pas résumée. Utilisez cette option en présence d’une colonne d’ID numériques qui ne doivent pas être additionnés.
+* **Somme**. Additionne toutes les valeurs contenues dans le champ.
 * **Moyenne**. prend une moyenne arithmétique des valeurs.
 * **Minimum**. affiche la valeur la plus petite.
 * **Maximum**. affiche la valeur la plus grande.
-* **Nombre (non vide).** compte le nombre de valeurs dans le champ qui ne sont pas vides.
-* **Nombre (distinct).** compte le nombre de valeurs différentes dans le champ.
+* **Nombre (non vide).** Compte le nombre de valeurs dans le champ qui ne sont pas vides.
+* **Nombre (distinct).** Compte le nombre de valeurs différentes dans le champ.
 * **Écart type.**
 * **Écart**.
-* **Médiane**.  Affiche la valeur médiane (centrale). Il s’agit de la valeur ayant le même nombre d’éléments au-dessus et au-dessous.  S’il existe deux médianes, Power BI calcule leur moyenne.
+* **Médiane**.  Affiche la valeur médiane (centrale). Cette valeur a le même nombre d’éléments au-dessus et en dessous.  S’il existe deux médianes, Power BI calcule leur moyenne.
 
 Par exemple, ces données :
 
@@ -141,13 +141,13 @@ R4 :  Une troisième possibilité est que vous utilisez le champ pour un axe. Su
 >[!NOTE]
 >L’exception à cette règle est le graphique à nuages de points, qui *nécessite* des valeurs agrégées pour les axes X et Y.
 
-Q :  Pourquoi ne puis-je pas agréger les champs de texte pour les sources de données SSAS ?
+Q :  Pourquoi je ne peux pas agréger des champs de texte pour des sources de données SQL Server Analysis Services (SSAS) ?
 
-R :  Les Connexions directes à SSAS MD n’autorisent pas les agrégations côté client. Ceci inclut premier, dernier, moyenne, mininum, maximum et somme.
+R :  Les connexions actives à des modèles multidimensionnels SSAS n’autorisent pas les agrégations côté client, notamment les agrégations dernier, moyenne, min, max et somme.
 
-Q :  J’ai un graphique à nuages de points et je ne veux *pas* d’agrégation pour mon champ.  Comment faire ?
+Q :  J’ai un graphique à nuages de points et je ne veux *pas* d’agrégation pour mon champ.  Comment faire ?
 
-R :  Ajoutez le champ au compartiment **Détails** et pas aux compartiments des axes X ou Y.
+R :  Ajoutez le champ au compartiment **Détails** et pas aux compartiments des axes X ou Y.
 
 Q :  Quand j’ajoute des champs numériques à une visualisation, la plupart de ces champs ont par défaut le type Somme, alors que d’autres sont de type Moyenne ou Nombre ou une autre agrégation.  Pourquoi l’agrégation par défaut est-elle différente à chaque fois ?
 
