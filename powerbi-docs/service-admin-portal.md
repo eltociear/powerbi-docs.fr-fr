@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6fff11d37b0f099effeafb6b88dbfa68af88f3d6
-ms.sourcegitcommit: f5e39e9ead37445bbeab795890b3d80633383032
+ms.openlocfilehash: e83c853ac1c3fc7c7d4d5e79c9f6be965d880361
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53735566"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072287"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -44,7 +44,7 @@ Le portail compte sept onglets. Le reste de cet article fournit des informations
 * [Paramètres du locataire](#tenant-settings)
 * [Paramètres Premium](#premium-settings)
 * [Codes incorporés](#embed-codes)
-* [Visuels de l’organisation](#organization-visuals)
+* [Visuels organisationnels](#organization-visuals)
 
 ## <a name="usage-metrics"></a>Métriques d’utilisation
 
@@ -329,9 +329,9 @@ En tant qu’administrateur, vous pouvez afficher les codes incorporés qui sont
 
 ![Codes incorporés au sein du portail d’administration Power BI](media/service-admin-portal/embed-codes.png)
 
-## <a name="organization-visuals"></a>Visuels de l’organisation
+## <a name="organizational-visuals"></a>Visuels organisationnels
 
-L’onglet **Visuels de l’organisation** vous permet de déployer et de gérer des visuels personnalisés au sein de votre organisation. Avec les visuels d’organisation, vous pouvez facilement déployer des visuels propriétaires dans votre organisation, que les auteurs de rapports peuvent ensuite détecter et importer dans leurs rapports à partir de Power BI Desktop. [En savoir plus](power-bi-custom-visuals-organization.md)
+L’onglet **Visuels organisationnels** vous permet de déployer et de gérer des visuels personnalisés au sein de votre organisation. Avec les visuels d’organisation, vous pouvez facilement déployer des visuels propriétaires dans votre organisation, que les auteurs de rapports peuvent ensuite détecter et importer dans leurs rapports à partir de Power BI Desktop. [En savoir plus](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Un visuel personnalisé est susceptible de contenir du code présentant des risques pour la sécurité ou la confidentialité ; vérifiez que vous faites confiance à son auteur et à sa source avant de le déployer dans le référentiel de l’organisation.

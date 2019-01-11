@@ -11,30 +11,32 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: cb508681950cd5bb585da1208683deb31c8b6e64
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: d9cf6255cfa57790c13ee1fc9d3201860552863b
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026819"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072356"
 ---
 # <a name="using-auditing-within-your-organization"></a>Utilisation de l’audit dans votre organisation
 
 Il est important de savoir qui effectue une action sur un élément donné de votre abonné Power BI, afin de permettre à votre entreprise de répondre à ses exigences, notamment en matière de conformité réglementaire et de gestion des enregistrements. Utilisez l’audit Power BI pour auditer les actions effectuées par les utilisateurs, comme « Voir le rapport » et « Voir le tableau de bord ». Vous ne pouvez pas utiliser l’audit pour auditer les autorisations.
 
-Utilisez l’audit dans le Centre de sécurité et de conformité Office 365 ou PowerShell. Nous abordons les deux dans cet article. Vous pouvez filtrer les données d’audit par période, utilisateur, tableau de bord, rapport, jeu de données et type d’activité. Vous pouvez également télécharger les activités dans un fichier .csv (valeurs séparées par des virgules) pour les analyser hors connexion.
+Utilisez l’audit dans le Centre de sécurité et de conformité Office 365 ou PowerShell. L’audit s’appuie sur des fonctionnalités d’Exchange Online, qui est automatiquement configuré de façon à prendre en charge Power BI.
+
+Vous pouvez filtrer les données d’audit par période, utilisateur, tableau de bord, rapport, jeu de données et type d’activité. Vous pouvez également télécharger les activités dans un fichier .csv (valeurs séparées par des virgules) pour les analyser hors connexion.
 
 ## <a name="requirements"></a>Configuration requise
 
 Vous devez respecter ces exigences suivantes pour accéder aux journaux d’audit :
 
-- Pour accéder à la section d’audit du Centre Sécurité et conformité Office 365, vous devez disposer d’une licence Exchange Online (incluse avec les abonnements Office 365 Entreprise E3 et E5).
+* Vous devez être administrateur général ou avoir le rôle Journaux d’audit ou Journaux d’audit en affichage seul dans Exchange Online pour pouvoir accéder au journal d’audit. Par défaut, ces rôles sont affectés aux groupes de rôles Gestion de la conformité et Gestion de l’organisation sur la page **Autorisations** du Centre d’administration Exchange.
 
-- Vous devez être administrateur général ou disposer d’un rôle d’administrateur Exchange qui fournit l’accès au journal d’audit. Les rôles d’administrateur Exchange sont contrôlés par le biais du centre d’administration Exchange. Pour plus d’informations, consultez [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo/).
+    Pour donner accès au journal d’audit à des comptes non administrateurs, vous devez ajouter l’utilisateur à la liste des membres de l’un de ces groupes de rôles. L’autre possibilité consiste à créer un groupe de rôles personnalisé dans le Centre d’administration Exchange, à affecter à ce groupe le rôle Journaux d’audit ou Journaux d’audit en affichage seul, puis à ajouter le compte non administrateur au nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
-- Si vous avez accès au journal d’audit, mais que vous n’êtes ni un administrateur général ni un administrateur de service Power BI, vous n’avez pas accès au portail d’administration de Power BI. Dans ce cas, vous devez obtenir un lien direct au [Centre Sécurité et conformité Office 365](https://sip.protection.office.com/#/unifiedauditlog).
+    Si vous ne pouvez pas accéder au Centre d’administration Exchange à partir du Centre d’administration Office 365, accédez à https://outlook.office365.com/ecp et connectez-vous avec vos informations d’identification.
 
-- Afin d’afficher l’audit pour Power BI dans votre abonné, ce dernier doit avoir au moins une licence de boîte aux lettres Exchange dans votre abonné.
+* Si vous avez accès au journal d’audit, mais que vous n’êtes ni un administrateur général ni un administrateur de service Power BI, vous n’avez pas accès au portail d’administration de Power BI. Dans ce cas, vous devez utiliser un lien direct vers le [Centre de sécurité et conformité Office 365](https://sip.protection.office.com/#/unifiedauditlog).
 
 ## <a name="accessing-your-audit-logs"></a>Accès à vos journaux d’audit
 
@@ -51,8 +53,6 @@ Les journaux d’audit de Power BI sont disponibles directement dans le [Centre 
 1. Sélectionnez **Accéder au Centre d’administration O365**.
 
    ![Accéder au Centre d’administration O365](media/service-admin-auditing/audit-log-o365-admin-center.png)
-
-Pour fournir l’accès au journal d’audit à des comptes non-administrateurs, vous devez assigner les autorisations dans le centre d’administration Exchange Online. Par exemple, vous pouvez assigner un utilisateur à un groupe de rôles existant, tel que Gestion de l’organisation ou vous pouvez créer un nouveau groupe de rôles avec le rôle Journaux d’audit. Pour plus d’informations, consultez [Autorisations dans Exchange Online](/exchange/permissions-exo/permissions-exo/).
 
 ## <a name="search-only-power-bi-activities"></a>Rechercher des activités Power BI uniquement
 
@@ -119,9 +119,7 @@ Pour exporter le journal d’audit Power BI dans un fichier .csv, suivez ces é
 
 ## <a name="use-powershell-to-search-audit-logs"></a>Utiliser PowerShell pour rechercher dans les journaux d’audit
 
-Vous pouvez aussi utiliser PowerShell pour accéder aux journaux d’audit en fonction de votre connexion. L’exemple suivant montre comment utiliser la commande [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) pour tirer (pull) les entrées du journal d’audit Power BI.
-
-Pour utiliser la commande [New-PSSession](/powershell/module/microsoft.powershell.core/new-pssession/), votre compte doit avoir une licence Exchange Online et vous devez accéder au journal d’audit de votre abonné. Pour plus d’informations sur la connexion à Exchange Online, consultez [Se connecter à Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/).
+Vous pouvez aussi utiliser PowerShell pour accéder aux journaux d’audit en fonction de votre connexion. L’exemple suivant montre comment se connecter à Exchange Online PowerShell, puis utiliser la commande [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) pour extraire les entrées du journal d’audit Power BI. Pour exécuter le script, vous devez avoir les autorisations nécessaires, qui sont décrites dans la section [Exigences](#requirements).
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -134,7 +132,7 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
-Pour un autre exemple d’utilisation de PowerShell avec les journaux d’audit, consultez [Utilisation du journal d’audit Power BI et de PowerShell pour attribuer des licences Power BI Pro](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
+Pour plus d’informations sur la connexion à Exchange Online, consultez [Se connecter à Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). Pour un autre exemple d’utilisation de PowerShell avec les journaux d’audit, consultez [Utilisation du journal d’audit Power BI et de PowerShell pour attribuer des licences Power BI Pro](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
 ## <a name="activities-audited-by-power-bi"></a>Activités auditées par Power BI
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 92af01b7020f734f286d927650e58a5fea5d8047
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: d9cd9c812aa2fdd1d336dbd63ea280516a96e4d9
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180826"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072218"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Préparation des données en libre-service dans Power BI (préversion)
 
@@ -92,7 +92,7 @@ Le tableau suivant décrit les fonctionnalités de flux de données et leurs cap
 |Entités liées à un flux de données| |        +|
 |Schéma standardisé/Prise en charge intégrée pour le Common Data Model|  +|  +|
 
-
+Pour savoir comment activer la capacité Premium sur des charges de travail de flux de données, voir l’article [Configurer des charges de travail](service-admin-premium-manage.md#configure-workloads) pour Power BI Premium.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Résumé de la préparation des données en libre-service pour le Big Data dans Power BI
 Comme mentionné précédemment dans cet article, il existe de multiples scénarios et exemples où des **flux de données** peuvent vous permettre de mieux contrôler vos données métier et d’en tirer plus rapidement des insights. En utilisant un modèle de données standard (schéma) défini par le Common Data Model, les flux de données peuvent importer vos précieuses données d'entreprise et les rendre prêtes pour la modélisation et la création d’insights BI en très peu de temps... dans ce qui prenait auparavant des mois, voire plus, à créer. 

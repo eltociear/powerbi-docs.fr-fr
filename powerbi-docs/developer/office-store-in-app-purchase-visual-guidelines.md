@@ -8,13 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/26/2018
-ms.openlocfilehash: 9ef7890c6f80845a9e6d1bd02e35778ed866ff54
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 2b7a71baafd8ec2ef839aaca95529221c642357f
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52332164"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072172"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Marche à suivre pour les visuels Power BI avec des achats supplémentaires
 
@@ -25,7 +26,7 @@ Jusqu’à une date récente, la **Place de marché (AppSource)** acceptait uniq
 
 ## <a name="whats-changing-in-the-submission-process"></a>Qu’est-ce qui change dans le processus de soumission ?
 
-Les développeurs chargent leurs visuels IAP sur AppSource par le biais du tableau de bord du vendeur, comme pour les visuels gratuits. Pour indiquer que le visuel soumis a des fonctionnalités IAP, les développeurs doivent indiquer « visuel avec achat dans l’application » dans les notes du tableau de bord du vendeur. Les développeurs doivent également fournir un jeton ou une clé de licence pour que l’équipe chargée de la validation puisse valider les fonctionnalités IAP. Une fois le visuel validé et approuvé, l’entrée AppSource correspondant au visuel IAP indique « Un autre achat peut être requis » sous les options de prix.
+Les développeurs chargent leurs visuels IAP sur AppSource par le biais du tableau de bord du vendeur, comme pour les visuels gratuits. Pour indiquer que le visuel soumis comporte des fonctionnalités IAP, les développeurs doivent écrire la mention suivante dans les notes du tableau de bord vendeur : « Visuel avec achat dans l’application ». Les développeurs doivent également fournir un jeton ou une clé de licence pour que l’équipe chargée de la validation puisse valider les fonctionnalités IAP. Une fois le visuel validé et approuvé, l’entrée AppSource correspondant au visuel IAP indique « Un autre achat peut être requis » sous les options de prix.
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Qu’est-ce qu’un visuel Power BI avec des fonctionnalités IAP ?
 
@@ -50,7 +51,7 @@ Cette section décrit les spécifications relatives à l’ajout de logos et de 
 
 ![edit-mode](media/office-store-in-app-purchase-visual-guidelines/logos-in-edit-mode.png)
 
-## <a name="best-practices"></a>Bonnes pratiques
+## <a name="best-practices"></a>Meilleures pratiques
 
 ### <a name="visual-landing-page"></a>Page d’arrivée du visuel
 
@@ -59,6 +60,10 @@ Utilisez la page d’arrivée pour indiquer aux utilisateurs comment utiliser vo
 ### <a name="license-key-and-token"></a>Jeton et clé de licence
 
 Par souci pratique pour l’utilisateur, ajoutez des champs liés au jeton ou à la clé de licence en haut du volet de format pour que les utilisateurs puissent les trouver plus facilement.
+
+## <a name="faq"></a>FORUM AUX QUESTIONS
+
+Pour plus d’informations et des réponses à vos questions, voir [Foire aux questions sur les visuels avec achats supplémentaires](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

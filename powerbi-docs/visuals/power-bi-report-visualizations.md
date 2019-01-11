@@ -11,24 +11,24 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/21/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fedfbd8da9b0582c84224ef846cd0ba1c14d0683
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 73350a579096e4126ea2f65654a7d1ed7a4980c1
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223234"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072264"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisations dans des rapports Power BI
 
-Les visualisations (également appelées visuels) affichent des insights qui ont été détectés dans les données. Un rapport Power BI peut avoir une seule page avec un visuel unique ou des pages contenant de nombreux visuels. Dans le service Power BI, les visuels peuvent être [épinglés des rapports aux tableaux de bord](../service-dashboard-pin-tile-from-report.md). 
+Les visualisations (également appelées visuels) affichent des insights qui ont été détectés dans les données. Un rapport Power BI peut avoir une seule page avec un visuel unique ou des pages contenant de nombreux visuels. Dans le service Power BI, les visuels peuvent être [épinglés des rapports aux tableaux de bord](../service-dashboard-pin-tile-from-report.md).
 
 Il est important de faire la distinction entre les *créateurs* et les *consommateurs* de rapports. Si vous êtes chargé de la création ou modification du rapport, vous êtes un créateur.  Les créateurs disposent d’autorisations de modification du rapport et de son jeu de données sous-jacent. Dans Power BI Desktop, cela signifie que vous pouvez ouvrir le jeu de données en mode Données et créer des visuels en mode rapport. Dans le service Power BI, cela signifie que vous pouvez ouvrir le jeu de données ou le rapport dans l’éditeur de rapport en [mode Édition](../consumer/end-user-reading-view.md). Si un rapport ou un tableau de bord a été [partagé avec vous](../consumer/end-user-shared-with-me.md), vous en êtes **consommateur**. Vous pouvez alors afficher et manipuler le rapport et ses visuels, mais vous ne pouvez pas enregistrer de modifications.
 
-Il existe de nombreux types de visuels directement disponibles dans le volet Visualisations de Power BI. 
+Il existe de nombreux types de visuels directement disponibles dans le volet Visualisations de Power BI.
 
 ![](media/power-bi-report-visualizations/power-bi-templates.png)
 
-Pour avoir encore plus de choix, visitez le [site de la communauté Microsoft AppSource](https://appsource.microsoft.com) afin de rechercher et de télécharger [des visuels personnalisés](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) fournis par Microsoft et la communauté.    
+Pour avoir encore plus de choix, visitez le [site de la communauté Microsoft AppSource](https://appsource.microsoft.com) afin de rechercher et de [télécharger](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) des [visuels personnalisés](../developer/custom-visual-develop-tutorial.md) fournis par Microsoft et la communauté.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -41,7 +41,7 @@ Pour avoir encore plus de choix, visitez le [site de la communauté Microsoft Ap
 
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Charger une visualisation personnalisée et l’utiliser dans Power BI
 
-Ajoutez une visualisation personnalisée que vous avez créée vous-même ou que vous avez trouvée sur le [site Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Vous vous sentez créatif ? Explorez notre code source et utilisez nos [outils de développement](../developer/custom-visual-develop-tutorial.md) pour créer un nouveau type de visualisation et le [partager avec la communauté](../developer/office-store.md).
+Ajoutez une visualisation personnalisée que vous avez créée vous-même ou que vous avez trouvée sur le [site Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Vous vous sentez créatif ? Explorez notre code source et utilisez nos [outils de développement](../developer/custom-visual-develop-tutorial.md) pour créer un nouveau type de visualisation et le [partager avec la communauté](../developer/office-store.md). Pour en savoir plus sur le développement de visuels personnalisés, voir [Développer un visuel personnalisé Power BI](../developer/custom-visual-develop-tutorial.md).
 
 ## <a name="change-the-visualization-type"></a>Changer de type de visualisation
 
@@ -53,4 +53,5 @@ Dans le service Power BI, quand vous avez trouvé la visualisation qui vous conv
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Visuels personnalisés](../power-bi-custom-visuals.md)
