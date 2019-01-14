@@ -72,6 +72,8 @@ items:
       href: desktop-directquery-data-sources.md
     - name: Conditions préalables de source de données Power BI
       href: desktop-data-source-prerequisites.md
+    - name: Membre par défaut dans des modèles multidimensionnels dans Power BI
+      href: desktop-default-member-multidimensional-models.md
     - name: FAQ visuels personnalisés
       href: power-bi-custom-visuals-faq.md
   - name: Guides pratiques
@@ -104,6 +106,8 @@ items:
       href: visuals/power-bi-report-add-visualizations-ii.md
     - name: Personnaliser le titre, l’arrière-plan et la légende d’une visualisation
       href: visuals/power-bi-visualization-customize-title-background-and-legend.md
+    - name: Afficher les éléments sans données dans Power BI
+      href: desktop-show-items-no-data.md
     - name: Se connecter aux données
       items:
       - name: Sources de données dans Power BI Desktop
@@ -864,8 +868,10 @@ items:
       items:
       - name: Bonnes pratiques relatives aux performances
         href: developer/embedded-performance-best-practices.md
-      - name: Sécurité au niveau des lignes (RLS)
+      - name: Sécurité au niveau des lignes
         href: developer/embedded-row-level-security.md
+      - name: Gérer plusieurs locataires
+        href: developer/embed-multi-tenancy.md
       - name: Journalisation des diagnostics Azure pour Power BI Embedded
         href: developer/azure-pbie-diag-logs.md
       - name: FAQ incorporation
@@ -1287,9 +1293,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: cf29eebc31ef8a62b20b08606e97b4fd035b3fec
-ms.sourcegitcommit: c4455dcb6d9a091ac80f4a5135433b162fcaba58
+ms.openlocfilehash: a3abfd814e95ca00c433b66e7fe6aad665f8426f
+ms.sourcegitcommit: 4695f5ef54cc9929828320132f890317b4c3018e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54211364"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239287"
