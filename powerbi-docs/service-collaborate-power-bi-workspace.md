@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 19a029564fecdc9a54a136d045e75bb9580193da
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 145ef2da33e0d596f03f75c76aaa99e90f58c4c2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908237"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288517"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Collaborer dans l’espace de travail de votre application Power BI
 Les espaces de travail d’application Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. La collaboration ne s’arrête pas aux espaces de travail dans Power BI. Office 365 offre d’autres services de groupe, comme le partage de fichiers sur OneDrive Entreprise, les conversations dans Exchange, le calendrier partagé, les tâches, etc. En savoir plus sur les[groupes dans Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)

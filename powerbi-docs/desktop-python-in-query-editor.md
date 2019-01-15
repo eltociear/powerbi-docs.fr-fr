@@ -5,17 +5,17 @@ author: otarb
 manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c3664eee2d3836fc802d1728bbfe7fce3e03e18d
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: d97c59b7c5d25e85dee5f3b5b5b6ae8d24ae6cb2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297202"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283319"
 ---
 # <a name="using-python-in-query-editor"></a>Utilisation de Python dans l’Éditeur de requête
 Vous pouvez utiliser **Python**, langage de programmation largement utilisé par les analystes de données, les scientifiques des données et les statisticiens, dans l’**Éditeur de requête** Power BI Desktop. Cette intégration de Python dans l’**Éditeur de requête** vous permet de procéder au nettoyage des données à l’aide de Python et d’effectuer une mise en forme et une analytique avancées des données des jeux de données, notamment la saisie de données manquantes, les prédictions et le clustering pour ne citer que quelques exemples. **Python** est un langage puissant qui peut être utilisé dans l’**Éditeur de requête** pour préparer votre modèle de données et créer des rapports.

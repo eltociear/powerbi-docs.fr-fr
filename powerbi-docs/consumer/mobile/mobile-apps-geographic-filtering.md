@@ -1,19 +1,19 @@
 ---
 title: Filtrer un rapport en fonction de l’emplacement géographique dans une application mobile Power BI
 description: Découvrez comment filtrer un rapport en fonction de votre emplacement géographique dans les applications mobiles Microsoft Power BI, si le propriétaire du rapport a défini des balises géographiques.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 02/09/2018
-ms.author: maggies
-ms.openlocfilehash: c694b7e04ff0611a73adf5c69cd1872796dc4c54
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.author: mshenhav
+ms.openlocfilehash: 828dcb4aeb8b7c5e69292685470f112a2d85cb71
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736076"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274648"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrer un rapport en fonction de l’emplacement géographique dans les applications mobiles Power BI
 S’applique à :

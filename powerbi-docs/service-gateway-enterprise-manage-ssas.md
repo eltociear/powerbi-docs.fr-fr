@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a84a5da9600daa7ef55ed5a707affa4ee1da4aba
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.openlocfilehash: 5c388a15132c7f433a50c2975aa4b45195c55bf9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47238097"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285044"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Gérer votre source de données - Analysis Services
 Une fois que vous avez installé la passerelle de données locale, vous devez ajouter des sources de données qui peuvent être utilisées avec la passerelle. Cet article décrit comment utiliser les passerelles et les sources de données. Vous pouvez utiliser la source de données Analysis Services pour l’actualisation planifiée ou les connexions actives.
@@ -153,7 +153,7 @@ Comment configurer votre passerelle pour qu’elle effectue la recherche AD :
 
 2. Dans la passerelle, vous devez modifier le **service de passerelle de données locale** pour qu’il s’exécute avec un compte de domaine (au lieu d’un compte de service local, sinon la recherche AD ne fonctionne pas correctement lors de l’exécution). Vous devez redémarrer le service de passerelle pour que les modifications entrent en vigueur.  Accédez à l’application de passerelle sur votre ordinateur (effectuez une recherche sur le terme « passerelle de données locale »). Pour ce faire, accédez à **Paramètres de service > Modifier le compte de service**. Vérifiez que vous disposez de la clé de récupération pour cette passerelle, car vous devrez la restaurer sur le même ordinateur, sauf si vous souhaitez créer une passerelle à la place. 
 
-3. Accédez au dossier d’installation de la passerelle *C:\Program Files\Passerelle de données locale* en tant qu’administrateur pour vérifier que vous disposez d’autorisations d’écriture, puis modifiez le fichier suivant : Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
+3. Accédez au dossier d’installation de la passerelle *C:\Program Files\Passerelle de données locale* en tant qu’administrateur pour vérifier que vous disposez d’autorisations d’écriture, puis modifiez le fichier suivant : Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
 4. Modifiez les deux valeurs de configuration suivantes en fonction de *vos* configurations d’attributs Active Directory de vos utilisateurs AD. Les valeurs de configuration illustrées ci-dessous sont des exemples uniquement : vous devez les spécifier en fonction de votre configuration Active Directory. Ces configurations respectent la casse. Par conséquent, assurez-vous qu’elles correspondent aux valeurs spécifiées dans Active Directory.
 

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2c092d75b6cc1dfb9e639f6421d6f1622f47d134
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 02ef382ffa4199255612c4ae6c782a55efb2f7ff
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578540"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281939"
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Ajouter une colonne à partir d’un exemple dans Power BI Desktop
 Depuis la publication de **Power BI Desktop** d’avril 2017, vous pouvez ajouter des colonnes de données à votre modèle à l’aide de l’**Éditeur de requête** en fournissant un ou plusieurs exemples de valeurs pour votre nouvelle colonne. Vous pouvez créer un exemple de colonne à partir d’une sélection active ou fournir une entrée basée sur la totalité ou une sélection des colonnes d’un tableau donné.

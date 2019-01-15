@@ -7,17 +7,17 @@ ms.reviewer: ''
 featuredvideoid: MNAaHw4PxzE
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b24a58556c35a3213f3360b70d604a0e9b51b074
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: d935b044e5cbe1a2c84ce5749c3a0b58c528bab0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280982"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282353"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Mode Exploration pour une visualisation dans Power BI
 
@@ -140,7 +140,7 @@ Une tree map qui nous montre uniquement un code postal n’apporte pas beaucoup 
 
    ![Tree map montrant les données de Tennessee](./media/end-user-drill/power-bi-expand-all.png)
 
-## <a name="drilling-filters-other-visuals"></a>Filtrages d’exploration sur les autres visuels
+## <a name="drilling-filters-other-visuals"></a>L'exploration filtre les autres visuels
 Quand vous travaillez en mode Exploration, vous devez décider comment les fonctionnalités Descendre dans la hiérarchie et Développer impactent les autres visualisations de la page. 
 
 Par défaut, l’exploration ne filtre pas les autres visuels d’un rapport. Cette fonctionnalité peut cependant être activée dans Power BI Desktop et dans le service Power BI. 

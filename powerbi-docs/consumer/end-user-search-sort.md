@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7f56cb4ec9859750c218975d25f3b8e2dd8a0469
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: ef8d7c61d35f15517db4fdbbea347a525a130f31
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280463"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288218"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation : recherche et tri de votre contenu dans le service Power BI
 Il existe plusieurs façons de parcourir votre contenu dans le service Power BI. Dans les espaces de travail, le contenu est organisé par type : tableaux de bord, rapports, classeurs et jeux de données.  De plus, le contenu est également organisé par utilisation : favori, récent, application, partagé avec moi et par défaut. Pour assurer une navigation fluide, la page d’accueil organise tout le contenu sur une page. Cette organisation du contenu vous permet de trouver rapidement ce dont vous avez besoin dans le service Power BI.  

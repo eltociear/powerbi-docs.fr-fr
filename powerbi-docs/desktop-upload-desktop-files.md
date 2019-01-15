@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: bbfb4a33c8413fe47f1c7749b001bf602dd4956c
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 80905abfe271ebd5d0aeec73d1287428e281da99
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578126"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276672"
 ---
 # <a name="publish-from-power-bi-desktop"></a>Publier à partir de Power BI Desktop
 Lorsque vous publiez un fichier **Power BI Desktop** vers le **service Power BI**, les données du modèle et des rapports que vous avez créés dans la vue **Rapport** sont publiées dans votre espace de travail Power BI. Un nouveau jeu de données du même nom et tous les rapports seront visibles dans le navigateur de votre espace de travail.
