@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5e330c54969b0dd866c4b80afd71a765976f658d
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 3505bbf2a549ef3d211f12ec050759ef44835053
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669678"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296751"
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Publier sur Power BI à partir d’Excel 2016
 Avec Excel 2016, vous pouvez publier vos classeurs Excel directement sur votre site [Power BI](https://powerbi.microsoft.com), où vous pouvez créer des rapports interactifs et des tableaux de bord basés sur les données de votre classeur. Vous pouvez ensuite partager vos informations avec d’autres personnes au sein de votre organisation.

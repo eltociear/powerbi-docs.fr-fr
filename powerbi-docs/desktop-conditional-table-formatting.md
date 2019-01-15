@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 324a9b7f8a3718c6da0efb7533751d88dd717bcf
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 4b45c6708f2f4c1ec0f8df2a330dcbb683210926
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728085"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292038"
 ---
 # <a name="conditional-formatting-in-tables"></a>Mise en forme conditionnelle dans les tables 
 Avec la mise en forme conditionnelle des tables, vous pouvez spécifier des couleurs de cellule personnalisées en fonction des valeurs des cellules, ou en fonction d’autres valeurs ou champs, et notamment utiliser des couleurs de dégradé. Vous pouvez également afficher les valeurs des cellules avec des barres de données. 
@@ -33,7 +33,7 @@ Pour supprimer la mise en forme conditionnelle d’une visualisation, il suffit 
 
 ![Menu Supprimer la mise en forme conditionnelle](media/desktop-conditional-table-formatting/table-formatting-1-remove.png)
 
-## <a name="background-color-scales"></a>Nuances de couleurs de l’arrière-plan
+## <a name="background-color-scales"></a>Échelles de couleurs de l’arrière-plan
 
 Le fait de sélectionner **Mise en forme conditionnelle**, puis **Échelles de couleurs de l’arrière-plan**, affiche la boîte de dialogue suivante.
 

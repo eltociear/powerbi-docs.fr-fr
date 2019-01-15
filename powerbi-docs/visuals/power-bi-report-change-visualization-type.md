@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/20/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2b1e5c28bd705e064dc4e0e3283eb3941452647b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 201e4e75c9a1ce0d05c85112457191a8d306c596
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547020"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287022"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Modifier le type de visualisation dans un rapport Power BI
 Essayez différents types de visualisation dans le service Power BI et Power BI Desktop pour déterminer celui qui illustre le mieux vos données. 

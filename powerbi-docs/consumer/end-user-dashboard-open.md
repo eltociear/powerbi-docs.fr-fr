@@ -6,17 +6,17 @@ manager: kvivek
 ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2fa614683ecfebc0693829c834dcfa4f160d22b1
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: a4dff6ca2020a349c3f06e5c828e186b3e11bdb6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53279750"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288701"
 ---
 # <a name="view-a-dashboard"></a>Afficher un tableau de bord
 Les consommateurs de Power BI consacrent beaucoup de temps à l’affichage des tableaux de bord. Les tableaux de bord sont conçus pour mettre en évidence des informations spécifiques des rapports et jeux de données sous-jacents. Et les consommateurs de Power BI utilisent ces informations pour le suivi, la surveillance, les réponses aux questions, les tests et bien plus encore, afin de prendre des décisions commerciales pilotées par les données.

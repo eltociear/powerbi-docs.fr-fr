@@ -5,17 +5,17 @@ author: otarb
 manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 634acc9e456462e2ca6d1a09bb6d97b87e75605b
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 3e7169e1aa54db93488f0c55e701188667f70305
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974986"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289258"
 ---
 # <a name="use-an-external-python-ide-with-power-bi"></a>Utiliser un IDE Python externe avec Power BI
 Avec **Power BI Desktop**, vous pouvez utiliser un IDE (environnement de développement intégré) Python externe pour créer et affiner des scripts Python, puis utiliser ces scripts dans Power BI.
@@ -49,7 +49,7 @@ Si aucune association au fichier **.PY** n’existe, il est possible de spécifi
 Pour lancer un IDE Python à partir de **Power BI Desktop**, effectuez les étapes suivantes :
 
 1. Chargez des données dans **Power BI Desktop**.
-2. Sélectionnez quelques champs que vous souhaitez utiliser dans le volet **Champs**. Si vous n’avez pas encore activé les visuels de script, vous êtes invité à le faire.
+2. Sélectionnez quelques champs que vous souhaitez utiliser dans le volet **Champs**. Si vous n’avez pas encore activé les éléments visuels de script, vous êtes invité à le faire.
    
    ![](media/desktop-python-ide/python-ide-3.png)
 3. Lorsque les visuels de script sont activés, vous pouvez sélectionner un visuel Python à partir du volet **Visualisations**, qui crée un visuel Python vide prêt à afficher les résultats de votre script. Le volet **Éditeur de script Python** s’affiche également.

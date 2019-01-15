@@ -6,16 +6,16 @@ manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: df28cd585998b8877a788e709eaf6b22474e6122
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 004396150f0301dadee32bd08ac64ce5ae36fb17
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53281048"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296590"
 ---
 # <a name="view-a-report-in-power-bi-service-for-consumers"></a>Afficher un rapport dans le service Power BI pour les *consommateurs*
 Un rapport est constitué d’une ou de plusieurs pages d’éléments visuels. Les rapports sont créés par des *concepteurs de rapports* Power BI et [partagés avec des *consommateurs* directement](end-user-shared-with-me.md) ou dans le cadre d’une [application](end-user-apps.md). 

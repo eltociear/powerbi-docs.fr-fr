@@ -6,17 +6,17 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: ea26ba39a9ec06b79330719afd4fb3b3a572d912
-ms.sourcegitcommit: 9913c213d40b45ba83c6c3b3a7ef0b757800e3ad
+ms.openlocfilehash: 1749fc932b3aa6cfb86de87bc9ecd71f78d92af5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53301801"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281962"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Présentation de Microsoft Power BI Premium
 
@@ -100,7 +100,7 @@ Les tableaux suivants présentent les valeurs de mémoire par défaut et minimal
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
 | Rapports paginés | N/A | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| Dataflows | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum  |
+| Flux de données | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum  |
 | | | | | |
 
 #### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Références (SKU) Microsoft Azure pour les scénarios PaaS (Platform as a Service)
@@ -108,7 +108,7 @@ Les tableaux suivants présentent les valeurs de mémoire par défaut et minimal
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
 | Rapports paginés | N/A                      | N/A                      | N/A                     | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| Dataflows         | 27 % par défaut ; 27 % minimum | 20 % par défaut ; 16 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum   |
+| Flux de données         | 27 % par défaut ; 27 % minimum | 20 % par défaut ; 16 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum   |
 
 ### <a name="considerations-for-paginated-reports"></a>Considérations pour les rapports paginés
 

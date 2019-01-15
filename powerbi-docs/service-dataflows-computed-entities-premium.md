@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b63b8a601040751cda81e022d571d3a0ed6d501f
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: a8a7aa8ed33e5c1baa7319ea65a67b6338c41ca2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180665"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277799"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Utilisation d’entités calculées sur Power BI Premium (préversion)
 
@@ -90,7 +90,7 @@ Cet article décrit les entités calculées et les flux de données disponibles 
 * [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
 * [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
 * [Configurer les paramètres de flux de données d’espace de travail (préversion)](service-dataflows-configure-workspace-storage-settings.md)
-* [Ajouter un dossier CDM à Power BI comme en tant que flux de données (préversion)](service-dataflows-add-cdm-folder.md)
+* [Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)](service-dataflows-add-cdm-folder.md)
 * [Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Pour plus d’informations sur Power Query et l’actualisation planifiée, vous pouvez consulter ces articles :

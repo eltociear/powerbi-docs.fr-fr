@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maghan
-ms.openlocfilehash: 737fa3158078e24d56270fea9b212a06935652ae
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 84f159e38f8fee239e8fca3280d852e456fb61a6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101551"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274901"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Prise en charge du navigateur pour Power BI Report Server
 Découvrez les versions de navigateur prises en charge pour la gestion et l’affichage de Power BI Report Server et les commandes de la visionneuse de rapports.

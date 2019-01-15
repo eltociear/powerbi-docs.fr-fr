@@ -7,17 +7,17 @@ ms.reviewer: ''
 featuredvideoid: bZMSv5KAlcE
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 47329053fa774634f4af44c2bed549222d68a4a0
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 7bd0f1d45015e099d3950907ed100ed34d55e431
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280049"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279087"
 ---
 # <a name="view-power-bi-notifications"></a>Afficher les notifications Power BI
 Le centre de notifications est un flux séquentiel d’informations sur votre expérience Power BI. Ouvrez-le pour voir les messages sur les nouveaux tableaux de bord partagés avec vous, les modifications apportées à votre espace de groupe, les informations sur les événements et réunions Power BI, les alertes que vous avez définies, et bien plus encore. Vous pouvez [définir des alertes dans le service Power BI](../service-set-data-alerts.md), ainsi que dans les applications mobiles Power BI.

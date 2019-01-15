@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 25fbcbeba8be2148269fa8eb6d2ac632eb8efb0f
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 3337efa6bf7c1f3eafe389d28f083df377543bc5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670046"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279938"
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>Exécuter des scripts R dans Power BI Desktop
 Vous pouvez exécuter des scripts R directement dans **Power BI Desktop** et importer les jeux de données obtenus dans un modèle de données Power BI Desktop.

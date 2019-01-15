@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 01/09/2019
 ms.author: maggies
-ms.openlocfilehash: bff5e42b239fee572ea0a453301f154da3b999b3
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 76ea3250c3032c253b87f5f2b0713460a805787e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266090"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295800"
 ---
 # <a name="whitepapers-for-power-bi"></a>Livres blancs pour Power BI
 
@@ -26,7 +26,7 @@ Les livres blancs vous permettent d’explorer Power BI de façon plus approfond
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Décrit Power BI Premium, tel qu’il existe à son lancement et tel qu’il évoluera. | Octobre 2017 |
 | [Planification et déploiement de Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment)| Ce document fournit des conseils et meilleures pratiques concernant la planification et le déploiement de la capacité Premium pour les charges de travail bien définies.| Novembre 2017 |
 | [Planifier la capacité pour l’analytique incorporée avec Power BI Premium](https://aka.ms/pbiewhitepaper) |Ce document fournit des conseils pour les développeurs d’applications ou les éditeurs de logiciels afin de déterminer la capacité plus appropriée pour l’entreprise. | Octobre 2017 |
-| [Planification d’un déploiement de Power BI en entreprise](https://aka.ms/pbienterprisedeploy) |Ce livre blanc technique met en avant les considérations relatives à un déploiement de Power BI performant et sécurisé au sein d’une organisation. | Juillet 2018 |
+| [Planification d’un déploiement de Power BI en entreprise](https://go.microsoft.com/fwlink/?linkid=2057861) |Ce livre blanc technique met en avant les considérations relatives à un déploiement de Power BI performant et sécurisé au sein d’une organisation. | Juillet 2018 |
 | [Conseils sur la planification de la capacité de Power BI Report Server](report-server/capacity-planning.md) |Ce document propose des conseils sur la planification de la capacité de Power BI Report Server en partageant les résultats de plusieurs exécutions de test de charge de différentes charges de travail exécutées sur un serveur de rapports. | Mars 2018 |
 | [Sécurité](service-admin-power-bi-security.md) |Fournit une explication détaillée concernant la sécurité au sein de Power BI. | Juillet 2018 |
 | [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](https://aka.ms/powerbi-b2b-whitepaper)|Ce document décrit comment distribuer du contenu à des utilisateurs externes à l’organisation en utilisant l’intégration d’Azure Active Directory B2B (AAD B2B).| Mars 2018 |

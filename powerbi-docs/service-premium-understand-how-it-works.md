@@ -4,17 +4,17 @@ description: Comprendre l’optimisation et la gestion de la mémoire capacité 
 ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
 manager: kfile
-ms.openlocfilehash: 534c06c66d561a04dbffc04412095d6924c92781
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: efb0f1dfd340c0defcba8a67e0e46051d0d9be25
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266067"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293841"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Gestion et optimisation des ressources de capacité de Microsoft Power BI Premium
 
@@ -55,7 +55,7 @@ Si une requête interactive est émise sur n’importe quel jeu de données dans
 
 ### <a name="workloads"></a>Charges de travail
 
-Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** prennent en charge uniquement la charge de travail associée aux requêtes Power BI exécutées dans le cloud. Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : **les rapports paginés** et **les flux de données**. Si elles sont utilisées, ces charges de travail peuvent avoir un impact sur l’utilisation de la mémoire de votre capacité. Pour plus d’informations, consultez [Configurer des charges de travail](service-admin-premium-manage.md#configure-workloads).
+Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** prennent en charge uniquement la charge de travail associée aux requêtes Power BI exécutées dans le cloud. Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : les **rapports paginés** et les **flux de données**. Si elles sont utilisées, ces charges de travail peuvent avoir un impact sur l’utilisation de la mémoire de votre capacité. Pour plus d’informations, consultez [Configurer des charges de travail](service-admin-premium-manage.md#configure-workloads).
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>Gestion des ressources du processeur dans la capacité Premium
 
@@ -72,7 +72,7 @@ Les requêtes de rapport consomment des ressources d’UC dans votre capacité. 
 
 La mémoire n’est pas la seule ressource qui peut contraindre l’actualisation des jeux de données. Le nombre de cœurs v-core sur un serveur peut également être un facteur. Étant donné que chaque opération d’actualisation nécessite un certain nombre de cœurs virtuels, il existe une limite du nombre d’actualisations qui peuvent s’exécuter en parallèle. La limite par référence SKU est détaillée dans le tableau suivant. Les actualisations supplémentaires qui vont au-delà de ces limites sont mises en attente.
 
- | Référence | V-cores du principal | Parallélisme de l’actualisation de modèle |
+ | SKU | V-cores du principal | Parallélisme de l’actualisation de modèle |
  | --- | --- | --- |
  | A1  | 0.5  | 1  |
  | A2  | 1  | 2  |

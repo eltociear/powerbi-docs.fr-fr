@@ -1,20 +1,20 @@
 ---
 title: Explorer les vignettes dans les applications mobiles Power BI
 description: Les vignettes sont des captures instantanées dynamiques de vos données qui sont épinglées dans un tableau de bord. En savoir plus sur l’interaction avec des vignettes dans les applications mobiles Power BI.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
-ms.author: maggies
-ms.openlocfilehash: 72c51a6eae4acec5bfc0af7b471f98dfcb22da67
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: aa0827c0be31d65db7bff2c6e2476e5db59b2895
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549797"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286401"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :

@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: b520eb2758088feadff963f86ddf310ae7a7ed8b
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: cd88270c75b46267217147d8f02fc707eeef26ab
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388637"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290399"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Outil de migration Power BI Embedded
 Vous pouvez utiliser cet outil de migration pour copier vos rapports du service Azure Power BI Embedded (PaaS) vers le service Power BI (SaaS).
@@ -84,7 +84,7 @@ Pour ouvrir un plan de migration existant, procédez comme suit.
     ![](media/migrate-tool/migrate-tool-open-plan.png)
 2. Sélectionnez votre fichier de migration, puis **Ouvrir**.
 
-## <a name="step-1-analyze--plan-migration"></a>Étape 1 : analyser et planifier la migration
+## <a name="step-1-analyze--plan-migration"></a>Étape 1 : Analyser et planifier la migration
 L’onglet **Analyze & Plan Migration** (Analyser et planifier la migration) vous donne un aperçu de ce que contient actuellement le groupe de ressources de votre abonnement Azure.
 
 ![Onglet Analyser et planifier la migration](media/migrate-tool/migrate-tool-step1.png)
@@ -137,7 +137,7 @@ Vous avez la possibilité de cliquer avec le bouton droit sur un groupe et de le
 > 
 > 
 
-## <a name="step-2-download"></a>Étape 2 : télécharger
+## <a name="step-2-download"></a>Étape 2 : Télécharger
 L’onglet **Télécharger** comprend la liste des rapports et les métadonnées associées. Il indique également l’état actuel de l’exportation, ainsi que son état précédent.
 
 ![](media/migrate-tool/migrate-tool-download-tab.png)
@@ -153,7 +153,7 @@ Si le téléchargement a réussi, l’état indique *Terminé* et reflète que l
 
 Une fois le téléchargement terminé, sélectionnez l’onglet **Créer des groupes**.
 
-## <a name="step-3-create-groups"></a>Étape 3 : créer des groupes
+## <a name="step-3-create-groups"></a>Étape 3 : Créer des groupes
 Une fois que vous avez téléchargé les rapports disponibles, vous pouvez accéder à l’onglet **Créer des groupes**. Cet onglet va créer les espaces de travail d’application dans le service Power BI en fonction du plan de migration que vous avez créé. Il crée l’espace de travail d’application avec le nom que vous avez indiqué sous l’ongler **Charger** dans **Analyser et planifier la migration**.
 
 ![](media/migrate-tool/migrate-tool-create-groups.png)
@@ -172,7 +172,7 @@ Vous pouvez vérifier que l’espace de travail d’application a bien été cr�
 
 Une fois l’espace de travail créé, vous pouvez passer à l’onglet **Charger**.
 
-## <a name="step-4-upload"></a>Étape 4 : charger
+## <a name="step-4-upload"></a>Étape 4 : Charger
 L’onglet **Charger** permet de charger les rapports dans le service Power BI. Il comprend une liste des rapports téléchargés dans l’onglet Télécharger, ainsi que le nom des groupes cibles conformément à votre plan de migration.
 
 ![](media/migrate-tool/migrate-tool-upload-tab.png)

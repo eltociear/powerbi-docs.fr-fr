@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 19fdadb6476dab9eda0fa5c76f17680cbd7b4cfe
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 5a436a276a68b2cade6a1622a54590bc379cebd8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026408"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283457"
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Utiliser les Mesures rapides pour effectuer facilement des calculs courants et puissants
 Les **Mesures rapides** permettent d’effectuer rapidement et facilement des calculs courants et puissants. Une **mesure rapide** exécute un ensemble de commandes DAX (créées automatiquement) en arrière-plan en fonction des données entrées dans une boîte de dialogue, puis affiche les résultats, que vous pourrez utiliser dans votre rapport. Mieux encore, vous pouvez voir la commande DAX exécutée par la mesure rapide, et ainsi vous lancer ou développer vos propres connaissances concernant DAX.

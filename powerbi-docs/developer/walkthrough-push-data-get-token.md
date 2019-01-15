@@ -5,18 +5,18 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 238d068e5083c8f46ac3299faddd4e0872f0654d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2cba79a98400ba517bca8e61fca743bc0024a122
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34812626"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288862"
 ---
-# <a name="step-2-get-an-authentication-access-token"></a>Étape 2 : Obtenir un jeton d’accès d’authentification
+# <a name="step-2-get-an-authentication-access-token"></a>Étape 2 : Obtenir un jeton d’accès d’authentification
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
 À l’**étape 1** de la procédure de transmission des données à un jeu de données intitulée [Inscrire l’application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), vous avez inscrit une application cliente dans Azure AD. Pendant cette étape, vous obtenez un jeton d’accès d’authentification. Les applications Power BI sont intégrées à **Azure AD** afin d’offrir une connexion et une autorisation sécurisées pour votre application. Vous utilisez un jeton pour vous authentifier auprès d’ **Azure AD** et accéder aux ressources Power BI.
@@ -24,7 +24,7 @@ Cet article fait partie d’une procédure pas à pas pour [transmettre des donn
 Voici comment obtenir un jeton d’accès d’authentification.
 
 ## <a name="get-an-authentication-access-token"></a>Obtenir un jeton d’accès d’authentification
-> **REMARQUE** : avant de commencer, veillez à suivre les étapes précédentes de la procédure pas à pas intitulée [Transmettre des données à un jeu de données](walkthrough-push-data.md).
+> **REMARQUE** : Avant de commencer, veillez à suivre les étapes précédentes de la procédure pas à pas [Transmettre des données à un jeu de données](walkthrough-push-data.md).
 > 
 > 
 

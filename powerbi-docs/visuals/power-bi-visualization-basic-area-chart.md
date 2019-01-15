@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d6793c41cea8da251fd700800e1f11ca88bb0be4
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 02d81a4ebb92ec199887109c7f2d9afcb6449eda
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416955"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276120"
 ---
 # <a name="basic-area-chart"></a>Graphique en aires simple
 Le graphique en aires simple (également appelé graphique en aires empilées) est basé sur le graphique en courbes. La zone entre l’axe et la ligne est remplie avec des couleurs indiquant le volume. 
@@ -31,7 +31,7 @@ Les graphiques en aires simples sont conseillés pour :
 * des séries individuelles représentant un ensemble dénombrable physiquement.
 
 ### <a name="prerequisites"></a>Conditions préalables
- - Service Power BI
+ - service Power BI
  - Retail Analysis sample
 
 Pour effectuer la procédure, connectez-vous à Power BI et sélectionnez **Obtenir des données \> Exemples \> Exemple Analyse de la vente au détail > Se connecter**, puis choisissez **Accéder au tableau de bord**. 
@@ -55,7 +55,7 @@ Pour effectuer la procédure, connectez-vous à Power BI et sélectionnez **Obt
    c.  Sélectionnez **Time\> > Month** (Période > Mois) pour l’ajouter à la ligne **Axe**.   
    ![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
    
-   d.  Pour afficher le graphique par mois, sélectionnez les points de suspension (dans le coin supérieur droit du visuel) et choisissez **Trier par mois**. Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et sélectionnez **Tri croissant** ou **Tri décroissant**.
+   d.  Pour afficher le graphique par mois, sélectionnez les points de suspension (dans le coin supérieur droit de l’élément visuel) et choisissez **Trier par mois**. Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et sélectionnez **Tri croissant** ou **Tri décroissant**.
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
 Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../power-bi-report-add-filter.md).
@@ -71,12 +71,12 @@ Pour mettre en surbrillance une zone particulière de votre graphique, sélectio
 
     ![Barre FT Oglethorpe sélectionnée](media/power-bi-visualization-basic-area-chart/power-bi-filter.png) 
 
-Pour plus d’informations, consultez [Interactions avec un visuel dans les rapports](../service-reports-visual-interactions.md).
+Pour plus d’informations, consultez [Interactions avec un élément visuel dans les rapports](../service-reports-visual-interactions.md).
 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes   
 * [Rendre les rapports plus accessibles aux personnes handicapées](../desktop-accessibility.md)
-* Les graphiques en aires simples ne sont pas adaptés pour comparer des valeurs en raison de l’occlusion sur les aires empilées. Power BI utilise la transparence pour indiquer le chevauchement des aires. Toutefois, il fonctionne bien uniquement avec deux ou trois aires différentes. Quand vous devez comparer la tendance de plus de trois valeurs, utilisez plutôt des graphiques en courbes. Pour comparer le volume de plus de trois valeurs, utilisez plutôt un treemap.
+* Les graphiques en aires simples ne sont pas adaptés pour comparer des valeurs en raison de l’occlusion sur les aires empilées. Power BI utilise la transparence pour indiquer le chevauchement des aires. Toutefois, il fonctionne bien uniquement avec deux ou trois aires différentes. Quand vous devez comparer la tendance de plus de trois valeurs, utilisez plutôt des graphiques en courbes. Pour comparer le volume de plus de trois valeurs, utilisez plutôt un graphique de compartimentage (treemap).
 
 ## <a name="next-step"></a>Étape suivante
 [Rapports dans Power BI](power-bi-visualization-card.md)  

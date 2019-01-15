@@ -1,20 +1,20 @@
 ---
 title: Bien démarrer avec l’application mobile Power BI pour iOS
 description: Découvrez comment l’application mobile Microsoft Power BI pour iOS parvient à mettre Power BI dans votre poche, avec un accès mobile aux informations métier en local et dans le cloud.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
-ms.author: maggies
-ms.openlocfilehash: a09fc4471f9af3a9406dcbcdd80d5bcc7a3632f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.author: mshenhav
+ms.openlocfilehash: b0de20cc32c32360f4f37c70e673dba01740a860
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736416"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281778"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Bien démarrer avec l’application mobile Power BI sur les appareils iOS
 L’application Microsoft Power BI pour iOS sur iPhone, iPad ou iPod Touch permet de vivre l’expérience mobile de Power BI, Power BI Report Server et Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. Et tenez-vous au courant des données les plus à jour sur votre [Apple Watch](mobile-apple-watch.md).  
@@ -90,7 +90,7 @@ Sur la page Favoris dans les applications mobiles, vous pouvez voir vos tableaux
   
    ![Page Favoris](./media/mobile-iphone-app-get-started/power-bi-iphone-faves-report-server-number-callouts.png)
   
-  1. Tableaux de bord sur le service Power BI
+  1. Tableaux de bord dans le service Power BI
   2. Indicateurs de performance clés sur Power BI Report Server
   3. Rapports Power BI sur Power BI Report Server
 

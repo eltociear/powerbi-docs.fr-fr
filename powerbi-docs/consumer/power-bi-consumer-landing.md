@@ -4,19 +4,19 @@ description: Vous démarrez avec Power BI ? Familiarisez-vous avec les fonctio
 author: mihart
 manager: kvivek
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: landing-page
 ms.date: 12/10/2018
 ms.author: mihart
 layout: LandingPage
 ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: e9a59703ff76d0d1f9401d80c6702d69eec5d049
-ms.sourcegitcommit: f5e39e9ead37445bbeab795890b3d80633383032
+ms.openlocfilehash: 7ebeb80de73ed9212c8565461d21d375c63badc6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53735520"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282997"
 ---
 # <a name="power-bi-for-consumers"></a>Power BI pour les consommateurs
 Si vous êtes un *utilisateur final* ou un *consommateur*, vous êtes la personne qui reçoit les tableaux de bord, les rapports et les applications de vos collègues. Vous travaillez dans le ***service Power BI*** pour consulter et interagir avec ce contenu afin de prendre des décisions métier.

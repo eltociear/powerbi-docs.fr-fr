@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maghan
-ms.openlocfilehash: 0f06d5c3742ea5187ff41f6f8974c8a81e5d1d33
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: de16c10a03654802e4c65bfa92e60259e2f9510d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310449"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291754"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
@@ -44,7 +44,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Azure HDInsight (HDFS) |Oui |Non |Non |
 | Azure HDInsight (Spark) |Oui |Oui |Non |
 | Stockage Table Azure |Oui |Oui |Non |
-| Dynamics 365 (en ligne) |Oui |Non |Non |
+| Dynamics 365 (Online) |Oui |Non |Non |
 | Facebook |Oui |Non |Non |
 | Dossier |Oui |Oui |Non |
 | Google Analytics |Oui |Non |Non |
@@ -60,7 +60,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | OLE DB |Oui |Oui |Non |
 | Base de données Oracle |Oui |Oui |Oui |
 | Base de données PostgreSQL |Oui |Oui |Non |
-| Service Power BI |Non |Non |Non |
+| service Power BI |Non |Non |Non |
 | Script R |Oui |Non |Non |
 | Objets Salesforce |Oui |Non |Non |
 | Rapports Salesforce |Oui |Non |Non |
@@ -81,7 +81,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Azure HDInsight Spark (bêta) |Oui |Non |Non |
 | Common Data Service (bêta) |Oui |Non |Non |
 | comScore Digital Analytix (bêta) |Oui |Non |Non |
-| Dynamics 365 pour Insights client (bêta) |Oui |Non |Non |
+| Dynamics 365 pour Customer Insights (bêta) |Oui |Non |Non |
 | Dynamics 365 for Financials (bêta) |Oui |Non |Non |
 | GitHub (bêta) |Oui |Non |Non |
 | Google BigQuery (bêta) |Oui |Non |Non |
@@ -104,7 +104,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Twilio (bêta) |Oui |Non |Non |
 | tyGraph (bêta) |Oui |Non |Non |
 | Vertica (bêta) |Oui |Non |Non |
-| Visual Studio Team Services (version bêta) |Oui |Non |Non |
+| Visual Studio Team Services (bêta) |Oui |Non |Non |
 | Webtrends (bêta) |Oui |Non |Non |
 | Zendesk (bêta) |Oui |Non |Non |
 
@@ -131,7 +131,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Azure HDInsight (HDFS) |Non |Non |Non |Non |
 | Azure HDInsight (Spark) |Oui |Oui |Non |Non |
 | Stockage Table Azure |Non |Oui |Non |Non |
-| Dynamics 365 (en ligne) |Non |Non |Non |Non |
+| Dynamics 365 (Online) |Non |Non |Non |Non |
 | Facebook |Non |Non |Non |Non |
 | Dossier |Non |Non |Non |Oui |
 | Google Analytics |Non |Non |Non |Non |
@@ -146,7 +146,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | OLE DB |Oui |Non |Oui |Oui |
 | Base de données Oracle |Non |Non |Oui |Oui |
 | Base de données PostgreSQL |Non |Non |Oui |Non |
-| Service Power BI |Non |Non |Non |Non |
+| service Power BI |Non |Non |Non |Non |
 | Script R |Non |Non |Non |Non |
 | Objets Salesforce |Non |Non |Non |Non |
 | Rapports Salesforce |Non |Non |Non |Non |
@@ -164,7 +164,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Azure HDInsight Spark (bêta) |Non |Non |Non |Non |
 | Common Data Service (bêta) |Non |Non |Non |Non |
 | comScore Digital Analytix (bêta) |Non |Non |Non |Non |
-| Dynamics 365 pour Insights client (bêta) |Non |Non |Non |Non |
+| Dynamics 365 pour Customer Insights (bêta) |Non |Non |Non |Non |
 | Dynamics 365 for Financials (bêta) |Non |Non |Non |Non |
 | GitHub (bêta) |Non |Non |Non |Non |
 | Google BigQuery (bêta) |Non |Non |Non |Non |
@@ -187,7 +187,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Twilio (bêta) |Non |Non |Non |Non |
 | tyGraph (bêta) |Non |Non |Non |Non |
 | Vertica (bêta) |Non |Non |Non |Non |
-| Visual Studio Team Services (version bêta) |Non |Non |Non |Non |
+| Visual Studio Team Services (bêta) |Non |Non |Non |Non |
 | Webtrends (bêta) |Non |Non |Non |Non |
 | Zendesk (bêta) |Non |Non |Non |Non |
 

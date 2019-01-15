@@ -7,17 +7,17 @@ ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/09/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: cc2369f6e1e074231267ceb41c19585eccfdb6f9
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: e3b7731dec23c6fda49d31716d6e450231ab4bc5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280718"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276603"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Afficher un contenu associé dans le service Power BI
 Le volet **Contenu associé** montre les interconnexions entre les éléments de contenu du service Power BI (tableaux de bord, rapports et jeux de données). Le volet Contenu associé est également une plate-forme de lancement pour prendre des mesures. À ce stade, vous pouvez actualiser, renommer, obtenir des insights, et faire bien plus encore. Sélectionnez un rapport ou un tableau de bord pour l’ouvrir dans votre espace de travail Power BI.   
