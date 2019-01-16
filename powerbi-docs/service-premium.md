@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/21/2018
+ms.date: 01/15/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1749fc932b3aa6cfb86de87bc9ecd71f78d92af5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6cc26f386a77ad8482d7f1af69fd0fdf2b7de5ac
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281962"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54324017"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Présentation de Microsoft Power BI Premium
 
-Microsoft Power BI Premium fournit à votre organisation des ressources dédiées à l’exécution du service Power BI. Il vous offre des performances plus fiables et permet de traiter de gros volumes de données. Premium permet également une diffusion étendue du contenu sans qu’il soit nécessaire d’acquérir une licence Pro par utilisateur du contenu. Pour plus d’informations sur l’acquisition de la solution, voir [Guide pratique pour acheter Power BI Premium](service-admin-premium-purchase.md).
+Microsoft Power BI Premium fournit à votre organisation des ressources dédiées à l’exécution du service Power BI. Il vous offre des performances plus fiables et permet de traiter de gros volumes de données. Premium permet également une diffusion étendue du contenu sans qu’il soit nécessaire d’acquérir une licence Pro par utilisateur du contenu. Pour plus d’informations sur l’acquisition de la solution, voir [Guide pratique pour acheter Power BI Premium](service-admin-premium-purchase.md).   
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -41,24 +41,21 @@ L’illustration suivante montre la relation entre la capacité Premium et une c
 
 Dans une capacité partagée, Power BI impose plus de limites aux utilisateurs individuels afin de garantir une expérience de qualité à tous les utilisateurs. Par défaut, votre espace de travail se trouve dans une capacité partagée, notamment votre espace *Mon espace de travail* personnel et vos espaces de travail d’application.
 
-Le tableau suivant résume les différences entre la capacité partagée et la capacité Premium.
+Le tableau suivant résume les différences entre la capacité partagée et la capacité Premium :
 
 |  | Capacité partagée | Capacité Power BI Premium |
 | --- | --- | --- |
 | **Fréquence d’actualisation** |8/jour |48/jour |
-| **Isolement avec matériel dédié** |![Non disponible](media/service-premium/not-available.png) |![Disponible](media/service-premium/available.png) |
-| **Distribution d’entreprise à** _**tous les utilisateurs**_ | | |
-| Applications et partage |![Non disponible](media/service-premium/not-available.png) |![Disponible](media/service-premium/available.png) |
-| API et commandes incorporées |![Non disponible](media/service-premium/not-available.png) |![Disponible](media/service-premium/available.png)<sup>2</sup> |
-| **Publier des rapports Power BI localement** |![Non disponible](media/service-premium/not-available.png) |![Disponible](media/service-premium/available.png) |
+| Isolement avec matériel dédié |![Non disponible](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| Distribution d’entreprise à *tous les utilisateurs* | | |
+| Applications et partage |![Non disponible](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
+| API et commandes incorporées |![Non disponible](media/service-premium/not-available.png) |![](media/service-premium/available.png)<sup>[1](#fnt1)</sup> |
+| Publier des rapports Power BI localement |![Non disponible](media/service-premium/not-available.png) |![](media/service-premium/available.png) |
 | | | |
 
-*<sup>1</sup> Pour plus d’informations, consultez [Fonctionnalités par type de licence](service-features-license-type.md).*  
-*<sup>2</sup> Améliorations prévues dans Power BI Premium.*
+<a name="fnt1">1</a> Améliorations prévues dans Power BI Premium.
 
-Pour en savoir plus sur l’attribution des espaces de travail à une capacité Premium, consultez [Gérer Power BI Premium](service-admin-premium-manage.md).
 
-<a name="premiumskus"/>
 
 ### <a name="premium-capacity-nodes"></a>Nœuds de capacité Premium
 
@@ -68,22 +65,19 @@ Power BI Premium est disponible dans des configurations de nœuds aux capacités
 
 * Les nœuds EM sont réservés aux déploiements incorporés. Les nœuds EM n’ont pas accès aux fonctionnalités premium comme le partage d’applications avec des utilisateurs qui ne disposent pas d’une licence Power BI Pro.
 
->[!NOTE]
->Les liens indiqués dans ce tableau ne fonctionnent correctement que pour les utilisateurs possédant le rôle Administrateur général d’Office 365. Les autres utilisateurs reçoivent une erreur 404.
-
-| Nœud de capacité | Total des v-cores<br/>*(Serveur principal + serveur frontal)* | V-cores du principal | V-cores du serveur frontal | Limites de connexions actives/DirectQuery | Disponibilité |
-| --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-core |0,5 cœur virtuel, 2,5 Go de RAM |0,5 cœur virtuel |3,75 par seconde |Disponible |
-| [EM2 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 cœurs virtuels |1 cœur virtuel, 5 Go de RAM |1 v-core |7,5 par seconde |Disponible |
-| [EM3 (de mois en mois)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 cœurs virtuels |2 cœurs virtuels, 10 Go de RAM |2 cœurs virtuels | |Disponible |
-| [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 cœurs virtuels |4 cœurs virtuels, 25 Go de RAM |4 cœurs virtuels |30 par seconde |Disponible ([de mois en mois](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) est également disponible) |
-| [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16 cœurs virtuels |8 cœurs virtuels, 50 Go de RAM |8 cœurs virtuels |60 par seconde |Disponible |
-| [P3](https://portal.office.com/SubscriptionDetails?OfferId=40c7d673-375c-42a1-84ca-f993a524fed0&adminportal=1) |32 cœurs virtuels |16 cœurs virtuels, 100 Go de RAM |16 cœurs virtuels |120 par seconde |Disponible |
+| Nœud de capacité | Total des v-cores<br/>*(Back-end+front-end)*  | Cœurs virtuels back-end <sup>[1](#fn1)</sup> | Cœurs virtuels front-end <sup>[2](#fn2)</sup> | Limites de connexions actives/DirectQuery | Actualisations simultanées max. |  Disponibilité
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| EM1 (de mois en mois) |1 v-core |0,5 cœur virtuel, 2,5 Go de RAM |0,5 cœur virtuel |3,75 par seconde |  1 | Disponible |
+| EM2 (de mois en mois) |2 cœurs virtuels |1 cœur virtuel, 5 Go de RAM |1 v-core |7,5 par seconde |  2 | Disponible |
+| EM3 (de mois en mois) |4 cœurs virtuels |2 cœurs virtuels, 10 Go de RAM |2 cœurs virtuels | | 3 |  Disponible |
+| P1 |8 cœurs virtuels |4 cœurs virtuels, 25 Go de RAM |4 cœurs virtuels |30 par seconde | 6 | Disponible (de mois en mois est également disponible) |
+| P2 |16 cœurs virtuels |8 cœurs virtuels, 50 Go de RAM |8 cœurs virtuels |60 par seconde | 12 | Disponible |
+| P3 |32 cœurs virtuels |16 cœurs virtuels, 100 Go de RAM |16 cœurs virtuels |120 par seconde | 24 | Disponible |
 | | | | | | | |
 
-* Les v-cores du serveur frontal assurent la gestion des documents du service Web, des tableaux de bord et des rapports, la gestion des droits d’accès, la planification, les API, les chargements et téléchargements et, plus généralement, tout ce qui concerne l’expérience utilisateur.
+<a name="fn1">1</a> : Les cœurs virtuels front-end sont responsables du service web. Par exemple, des tableaux de bord et des rapports, des droits d’accès, de la planification, des API, des chargements et téléchargements et, plus généralement, de tout ce qui concerne l’expérience utilisateur. 
 
-* Les v-cores principaux gèrent l’essentiel : traitement des requêtes, gestion du cache, exécution des serveurs R, actualisation des données, traitement du langage naturel, flux en temps réel et rendu côté serveur des rapports et images. Avec les v-cores principaux, une partie de la mémoire est également réservée. Car il est impératif de disposer d’une mémoire suffisante pour traiter les modèles de données volumineux ou les grands nombres de jeux de données actifs.
+<a name="fn2">2</a> : Les cœurs virtuels back-end gèrent l’essentiel : traitement des requêtes, gestion du cache, exécution des serveurs R, actualisation des données, traitement du langage naturel, flux en temps réel et rendu côté serveur des rapports et images. Avec les v-cores principaux, une partie de la mémoire est également réservée. Car il est impératif de disposer d’une mémoire suffisante pour traiter les modèles de données volumineux ou les grands nombres de jeux de données actifs.
 
 ## <a name="workloads-in-premium-capacity"></a>Charges de travail dans une capacité Premium
 
@@ -112,11 +106,9 @@ Les tableaux suivants présentent les valeurs de mémoire par défaut et minimal
 
 ### <a name="considerations-for-paginated-reports"></a>Considérations pour les rapports paginés
 
-Si vous utilisez la charge de travail des rapports paginés, gardez les points suivants à l’esprit.
+Si vous utilisez la charge de travail des rapports paginés, n’oubliez pas que les rapports paginés vous permettent d’exécuter votre propre code lors de la génération d’un rapport (par exemple, pour modifier dynamiquement la couleur du texte en fonction du contenu). De ce fait, nous sécurisons la capacité de Power BI Premium en exécutant des rapports paginés dans un espace contenu au sein de la capacité. Nous affectons la mémoire maximale que vous spécifiez à cet espace, que la charge de travail soit active ou non. Si vous utilisez des rapports Power BI ou des flux de données dans la même capacité, veillez à définir pour les rapports paginés une mémoire suffisamment faible qui n’affecte pas négativement les autres charges de travail.
 
-* **Allocation de mémoire dans les rapports paginés** : les rapports paginés vous permettent d’exécuter votre propre code lors de la génération d’un rapport (par exemple, pour modifier dynamiquement la couleur du texte en fonction du contenu). De ce fait, nous sécurisons la capacité de Power BI Premium en exécutant des rapports paginés dans un espace contenu au sein de la capacité. Nous affectons la mémoire maximale que vous spécifiez à cet espace, que la charge de travail soit active ou non. Si vous utilisez des rapports Power BI ou des flux de données dans la même capacité, veillez à définir pour les rapports paginés une mémoire suffisamment faible qui n’affecte pas négativement les autres charges de travail.
-
-* **Les rapports paginés ne sont pas disponibles** : dans de rares cas, la charge de travail des rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
+dans de rares cas, la charge de travail des rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
 
 ## <a name="power-bi-report-server"></a>Power BI Report Server
 
@@ -129,6 +121,5 @@ Power BI Premium offre également la possibilité d’exécuter Power BI Report 
 [Gérer Power BI Premium](service-admin-premium-manage.md)
 [Livre blanc sur Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 [Livre blanc sur la planification d’un déploiement de Power BI dans une entreprise](https://aka.ms/pbienterprisedeploy)
-[Administrer Power BI en entreprise](service-admin-administering-power-bi-in-your-organization.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

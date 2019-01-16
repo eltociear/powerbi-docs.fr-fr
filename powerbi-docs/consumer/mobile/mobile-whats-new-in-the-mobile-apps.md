@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 3aa4ea96e9bea4e52de05b49fa0c958a6c2a6943
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b7301d46279d9b975a07b07506c023e19437631b
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286861"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54324040"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,12 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="december-2018"></a>Décembre 2018
+
+### <a name="filter-is-now-available-for-landscape-reports"></a>Le filtre est désormais disponible pour les rapports en paysage 
+
+Le volet de filtre de rapport est désormais disponible pour les rapports en paysage (en plus du rapport sur téléphone).
 
 ## <a name="november-2018"></a>Novembre 2018
 
