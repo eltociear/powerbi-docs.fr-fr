@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
-ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
+ms.openlocfilehash: 512b189575acd7651dea8747c36e8666875edae5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273330"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295744"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Passerelle de données locale (mode personnel)
 Vous pouvez utiliser des sources de données locales et créer des rapports et des tableaux de bord Power BI à l’aide d’une passerelle. Une **passerelle** est un logiciel qui facilite l’accès aux données stockées sur un réseau local privé, puis vous permet d’utiliser ces données dans les services en ligne comme le **service Power BI**. La **passerelle de données locale (mode personnel)** est une mise à jour récemment publiée de la passerelle Power BI qui permet aux utilisateurs d’installer une passerelle sur leur propre ordinateur et d’accéder aux données locales.
@@ -114,28 +114,28 @@ La prise en charge de Spark est prévue pour la seconde moitié de l’année 2
 ## <a name="frequently-asked-questions-faq"></a>Forum Aux Questions
 * Puis-je exécuter la **passerelle de données locale (mode personnel)** côte à côte avec la **passerelle de données locale** (version Enterprise de la passerelle) ?
   
-  * **Réponse** : Oui, avec la nouvelle version, ces deux versions peuvent fonctionner simultanément.
+  * **Réponse** : oui, avec la nouvelle version, ces deux versions peuvent fonctionner simultanément.
 * Est-il possible d’utiliser la **passerelle de données locale (mode personnel)** en tant que service ?
   
   * **Réponse** : Non. La **passerelle de données locale (mode personnel)** peut uniquement être exécutée en tant qu’application. Si vous devez utiliser la passerelle en tant que service et/ou en mode administrateur, utilisez la [**passerelle de données locale** ](service-gateway-onprem.md) (version Enterprise de la passerelle).
 * Quelle est la fréquence de mise à jour de la **passerelle de données locale (mode personnel)**  ?
   
-  * **Réponse** : Nous prévoyons de mettre à jour la passerelle tous les mois.
+  * **Réponse** : nous prévoyons de mettre à jour la passerelle tous les mois.
 * Pourquoi suis-je invité à mettre à jour mes informations d’identification ?
   
-  * **Réponse** : Plusieurs situations peuvent déclencher une demande d’informations d’identification. La plus courante est que vous avez réinstallé la **passerelle de données locale (mode personnel)** sur un ordinateur différent de celui sur lequel vous avez installé votre **Passerelle Power BI - Personal**. Il peut également s’agir d’un problème dans la source de données et Power BI n’a pas pu effectuer le test de connexion, le délai d’attente a été dépassé ou une erreur système s’est produite. Vous pouvez mettre à jour vos informations d’identification dans le **service Power BI** en accédant à l’**icône d’engrenage** et en sélectionnant **Paramètres**, puis **Jeux de données**. Recherchez ensuite le jeu de données en question et cliquez sur *Mettre à jour les informations d’identification*.
+  * **Réponse** : plusieurs situations peuvent déclencher une demande d’informations d’identification. La plus courante est que vous avez réinstallé la **passerelle de données locale (mode personnel)** sur un ordinateur différent de celui sur lequel vous avez installé votre **Passerelle Power BI - Personal**. Il peut également s’agir d’un problème dans la source de données et Power BI n’a pas pu effectuer le test de connexion, le délai d’attente a été dépassé ou une erreur système s’est produite. Vous pouvez mettre à jour vos informations d’identification dans le **service Power BI** en accédant à l’**icône d’engrenage** et en sélectionnant **Paramètres**, puis **Jeux de données**. Recherchez ensuite le jeu de données en question et cliquez sur *Mettre à jour les informations d’identification*.
 * Pendant combien de temps ma passerelle personnelle est-elle hors connexion pendant la mise à niveau ?
   
-  * **Réponse** : La mise à niveau de la passerelle personnelle vers la nouvelle version ne doit prendre que quelques minutes. 
+  * **Réponse** : la mise à niveau de la passerelle personnelle vers la nouvelle version ne doit prendre que quelques minutes. 
 * Que se passe-t-il si je ne migre pas vers la nouvelle passerelle personnelle avant le 31 juillet 2017 ?
   
-  * **Réponse** : Si vous actualisez vos rapports avec la passerelle actuelle, vos actualisations s’arrêteront. La seule façon de créer une nouvelle planification d’actualisation sera d’installer et de configurer la nouvelle passerelle.
+  * **Réponse** : si vous actualisez vos rapports avec la passerelle actuelle, vos actualisations s’arrêteront. La seule façon de créer une nouvelle planification d’actualisation sera d’installer et de configurer la nouvelle passerelle.
 * J’utilise des scripts R. Est-ce qu’ils sont pris en charge ?
   
-  * **Réponse** : Les scripts R sont pris en charge pour le mode personnel.
+  * **Réponse** : les scripts R sont pris en charge pour le mode personnel.
 * Pourquoi est-ce que je ne vois pas le message pour mettre à jour la passerelle dans le **service Power BI** ?
   
-  * **Réponse** : Ceci est vraisemblablement dû au fait que vous avez un ou plusieurs jeux de données qui incluent une source de données non prise en charge.
+  * **Réponse** : ceci est vraisemblablement dû au fait que vous avez un ou plusieurs jeux de données qui incluent une source de données non prise en charge.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Configuration des paramètres de proxy pour les passerelles Power BI](service-gateway-proxy.md)  

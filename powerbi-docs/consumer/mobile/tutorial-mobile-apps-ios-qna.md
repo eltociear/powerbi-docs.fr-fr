@@ -1,22 +1,22 @@
 ---
-title: 'Tutoriel : Poser des questions à l’aide de l’analyste virtuel Questions et réponses dans des applications iOS'
+title: 'Tutoriel : poser des questions à l’aide de l’analyste virtuel Questions et réponses dans des applications iOS'
 description: Dans ce tutoriel, posez des questions concernant l’exemple de données en utilisant vos propres mots avec l’analyste virtuel des questions et réponses dans l’application mobile Power BI sur votre appareil iOS.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/16/2018
-ms.author: maggies
-ms.openlocfilehash: 9fd0d06b186d84412ec36749270d261ddd01fb2f
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.author: mshenhav
+ms.openlocfilehash: 74949d2b71dbdca46bbda9623a962616a72af45e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157146"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282929"
 ---
-# <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Tutoriel : Poser des questions sur vos données avec l’analyste virtuel Questions et réponses dans des applications iOS pour Power BI
+# <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Tutoriel : poser des questions sur vos données avec l’analyste virtuel Questions et réponses dans des applications iOS pour Power BI
 
 Le moyen le plus simple de tirer des enseignements de vos données consiste à poser des questions à leur sujet en utilisant vos propres mots. Dans ce tutoriel, vous posez des questions et affichez les insights proposés sur les exemples de données à l’aide de l’analyste virtuel des questions et réponses dans l’application mobile Microsoft Power BI sur votre iPad, iPhone et iPod Touch. 
 
@@ -72,7 +72,7 @@ La première étape du tutoriel consiste à télécharger l’exemple Analyse de
 
 4. Sélectionnez **l’exemple Opportunity Analysis** (Analyse des opportunités).
  
-    ![Opportunity Analysis Sample](./media/tutorial-mobile-apps-ios-qna/power-bi-oa.png)
+    ![Exemple Analyse des opportunités](./media/tutorial-mobile-apps-ios-qna/power-bi-oa.png)
  
 8. Sélectionnez **Se connecter**.  
   

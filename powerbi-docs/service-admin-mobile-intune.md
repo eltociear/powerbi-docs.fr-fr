@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 428ea77de2151f4ec3417f62819b3d6481c17ae2
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 65c2de2d505866b3b00a88eaaa309d7c61a7625d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909683"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296222"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Configurer des applications mobiles avec Microsoft Intune
 
@@ -30,7 +30,7 @@ Microsoft Intune et la gestion des appareils mobiles peuvent coexister dans Offi
 > [!NOTE]
 > Après avoir configuré Intune, l’actualisation des données d’arrière-plan est désactivée pour l’application mobile Power BI sur votre appareil iOS ou Android. Power BI actualise les données à partir du service Power BI sur le web lorsque vous entrez dans l’application.
 
-## <a name="step-1-get-the-url-for-the-application"></a>Étape 1 : obtenir l’URL de l’application
+## <a name="step-1-get-the-url-for-the-application"></a>Étape 1 : obtenir l’URL de l’application
 
 Avant de créer l’application dans Intune, vous devez obtenir les URL des applications. Pour iOS, vous pouvez obtenir cette information dans iTunes. Pour Android, cette information est disponible dans la page mobile Power BI.
 
@@ -56,7 +56,7 @@ L’URL doit ressembler à ce qui suit : *https://itunes.apple.com/us/app/micro
 
 Vous pouvez obtenir l’URL de Google Play à partir de la [page Power BI mobile](https://powerbi.microsoft.com/mobile/). Sélectionnez **Télécharger à partir de Google Play** pour accéder à la page de l’application. Vous pouvez copier l’URL à partir de la barre d’adresses du navigateur. Elle doit ressembler à ce qui suit : *https://play.google.com/store/apps/details?id=com.microsoft.powerbim*.
 
-## <a name="step-2-create-a-mobile-application-management-policy"></a>Étape 2 : créer une stratégie de gestion des applications mobiles
+## <a name="step-2-create-a-mobile-application-management-policy"></a>Étape 2 : créer une stratégie de gestion des applications mobiles
 
 La stratégie de gestion des applications mobiles vous permet de forcer certains éléments, comme un code confidentiel d’accès. Vous pouvez en créer un dans le portail Intune.
 
@@ -72,7 +72,7 @@ Vous pouvez commencer par créer l’application ou la stratégie. L’ordre dan
 
 1. Modifiez la stratégie pour configurer les restrictions désirées sur l’application.
 
-## <a name="step-3-create-the-application"></a>Étape 3 : créer l’application
+## <a name="step-3-create-the-application"></a>Étape 3 : créer l’application
 
 L’application est une référence ou un package qui est enregistré dans Intune en vue de son déploiement. Nous allons créer une application et référencer l’URL de l’application que nous avons obtenue dans Google Play ou iTunes.
 
@@ -106,7 +106,7 @@ Vous pouvez commencer par créer l’application ou la stratégie. L’ordre dan
 
 1. Entrez l’URL de l’application obtenue à l’[étape 1](#step-1-get-the-URL-for-the-application), puis sélectionnez **Suivant**.
 
-    ![Installation du logiciel : iOS](media/service-admin-mobile-intune/intune-add-software-android1.png)
+    ![Installation du logiciel : Téléphone](media/service-admin-mobile-intune/intune-add-software-android1.png)
 
 1. Indiquez un **Éditeur**, un **Nom** et une **Description**. Vous pouvez éventuellement fournir une **Icône**. La **Catégorie** s’applique à l’application Portail d’entreprise. Une fois que vous avez terminé, sélectionnez **Suivant**.
 
@@ -116,7 +116,7 @@ Vous pouvez commencer par créer l’application ou la stratégie. L’ordre dan
 
     ![Onglet Applications](media/service-admin-mobile-intune/intune-add-software-android2.png)
 
-## <a name="step-4-deploy-the-application"></a>Étape 4 : déployer l’application
+## <a name="step-4-deploy-the-application"></a>Étape 4 : déployer l’application
 
 Après avoir ajouté l’application, vous devez la déployer pour qu’elle soit accessible à vos utilisateurs finaux. C’est au cours de cette étape que vous allez lier la stratégie créée à l’application.
 
@@ -159,7 +159,7 @@ Une fois l’application déployée, la mention **Oui** doit apparaître en rega
 
 Une fois l’application déployée, la mention **Oui** doit apparaître en regard de Déployé dans la page des applications.
 
-## <a name="step-5-install-the-application-on-a-device"></a>Étape 5 : installer l’application sur un appareil
+## <a name="step-5-install-the-application-on-a-device"></a>Étape 5 : installer l’application sur un appareil
 
 Vous installez l’application par l’intermédiaire de l’application *Portail d’entreprise*. Si vous n’avez pas installé le Portail d’entreprise, vous pouvez le télécharger à partir du magasin d’applications de la plateforme iOS ou Android. Vous devez vous connecter au Portail d’entreprise avec les identifiants de votre organisation.
 

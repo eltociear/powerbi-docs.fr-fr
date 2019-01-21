@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d5f2fa0abe6f0503ce5f41387f66db928ae0267e
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 642bd39cb9348bae2a1f30dbc9ee026e11ff7401
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145407"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284515"
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Résolution des problèmes de Power BI Gateway - Personal
 Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de Power BI Gateway - Personal.
@@ -45,22 +45,22 @@ De nombreux problèmes peuvent faire surface quand la version de la passerelle e
  **Configuration du proxy** Vous risquez de rencontrer des problèmes avec la configuration de la passerelle personnelle si votre environnement nécessite l’utilisation d’un proxy. Pour en savoir plus sur la configuration des informations du proxy, consultez [Configuration des paramètres de proxy pour les passerelles Power BI](service-gateway-proxy.md)
 
 ## <a name="schedule-refresh"></a>Planifier l’actualisation
-**Erreur : les informations d’identification stockées dans le cloud sont manquantes.**
+**Erreur : les informations d’identification stockées dans le cloud sont manquantes.**
 
 Vous pouvez obtenir cette erreur dans les paramètres pour \<jeu de données\> si vous avez planifié une actualisation, puis désinstallé et réinstallé Personal Gateway. Quand vous désinstallez Personal Gateway, les informations d’identification de la source de données pour un jeu de données qui a été configuré pour l’actualisation sont supprimées du service Power BI.
 
 **Solution :** dans Power BI, accédez aux paramètres d’actualisation pour un jeu de données. Dans Gérer les sources de données, pour toute source de données avec une erreur, cliquez sur Modifier les informations d’identification et connectez-vous à nouveau à la source de données.
 
-**Erreur : les informations d’identification fournies pour le jeu de données ne sont pas valides. Mettez à jour les informations d’identification via une actualisation ou dans la boîte de dialogue Paramètres de la source de données pour continuer.**
+**Erreur : les informations d’identification fournies pour le jeu de données ne sont pas valides. Mettez à jour les informations d’identification via une actualisation ou dans la boîte de dialogue Paramètres de la source de données pour continuer.**
 
-**Solution :** si vous obtenez un message relatif aux informations d’identification, cela peut signifier ce qui suit :
+**Solution** : si vous obtenez un message relatif aux informations d’identification, cela peut signifier ce qui suit :
 
 * Vérifiez que les noms d’utilisateur et mots de passe utilisés pour se connecter aux sources de données sont à jour. Dans Power BI, accédez aux paramètres d’actualisation pour le jeu de données. Dans Gérer les sources de données, cliquez sur Modifier les informations d’identification pour mettre à jour ces informations pour la source de données.
 * Dans une même requête, les applications web hybrides entre une source cloud et une source locale ne parviennent pas à s’actualiser dans la passerelle personnelle si l’une des sources utilise OAuth pour l’authentification. C’est le cas, par exemple, d’une application web hybride entre CRM Online et un serveur SQL Server local. Cette opération échoue, car CRM Online requiert OAuth.
   
   Il s’agit d’un problème connu qui est actuellement traité. Pour contourner le problème, utilisez une requête distincte pour la source cloud et la source locale et optez pour une requête de fusion ou d’adjonction pour combiner ces deux sources.
 
-**Erreur : source de données non prise en charge.**
+**Erreur : source de données non prise en charge.**
 
 **Solution :** si vous obtenez un message indiquant une source de données non prise en charge dans les paramètres de planification de l’actualisation, cela peut signifier ce qui suit : 
 
@@ -69,13 +69,13 @@ Vous pouvez obtenir cette erreur dans les paramètres pour \<jeu de données\> s
 
 **Erreur : [Impossible de combiner des données] &lt;partie de requête&gt;/&lt;…&gt;/&lt;…&gt; accède à des sources de données dont les niveaux de confidentialité ne peuvent pas être utilisés ensemble. Reconstruisez cette combinaison de données.**
 
-**Solution**: cette erreur est due à des restrictions du niveau de confidentialité et aux types de sources de données que vous utilisez.
+**Solution** : cette erreur est due à des restrictions du niveau de confidentialité et aux types de sources de données que vous utilisez.
 
-**Erreur : Erreur de source de données : Désolé... Nous n'avons pas pu convertir la valeur « \[Table\] » en type Table.**
+**Erreur : erreur de source de données : Désolé... Nous n'avons pas pu convertir la valeur « \[Table\] » en type Table.**
 
-**Solution**: cette erreur est due à des restrictions du niveau de confidentialité et aux types de sources de données que vous utilisez.
+**Solution** : cette erreur est due à des restrictions du niveau de confidentialité et aux types de sources de données que vous utilisez.
 
-**Erreur : espace insuffisant pour cette ligne.**
+**Erreur : espace insuffisant pour cette ligne.**
 
 Cela se produit si la taille d’une seule ligne est supérieure à 4 Mo. Vous devez identifier la ligne dans votre source de données et essayer de l’éliminer ou d’en réduire la taille.
 
@@ -91,7 +91,7 @@ Cela se produit si la taille d’une seule ligne est supérieure à 4 Mo. Vous 
 
   ![](media/service-admin-troubleshooting-power-bi-personal-gateway/pbi_pg_credentialserror.jpg.png)
 
-**Erreur : Erreur de connexion lors de la sélection de l’authentification Windows pour une source de données avec ACE OLEDB**. Si vous obtenez l’erreur suivante lors de la saisie des informations d’identification de la source de données pour une source de données avec le fournisseur ACE OLEDB :
+**Erreur : Erreur de connexion lors de la sélection de l’authentification Windows pour une source de données avec ACE OLEDB**. Si vous obtenez l’erreur suivante lors de la saisie des informations d’identification de la source de données pour une source de données avec le fournisseur ACE OLEDB :
 
 ![](media/service-admin-troubleshooting-power-bi-personal-gateway/aceoledberror.png)
 

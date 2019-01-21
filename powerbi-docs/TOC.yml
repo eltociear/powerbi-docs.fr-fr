@@ -270,6 +270,12 @@ items:
         href: desktop-rls.md
       - name: Personnaliser des info-bulles
         href: desktop-custom-tooltips.md
+      - name: Zones de texte et formes dans les rapports
+        href: power-bi-reports-add-text-and-shapes.md
+      - name: Ajouter un lien hypertexte à une zone de texte
+        href: service-add-hyperlink-to-text-box.md
+      - name: Liens hypertexte dans les tables
+        href: power-bi-hyperlinks-in-tables.md
       - name: Mise en forme conditionnelle des tables
         href: desktop-conditional-table-formatting.md
       - name: Trier par colonne dans Power BI Desktop
@@ -302,18 +308,12 @@ items:
         href: visuals/power-bi-visualization-export-data.md
       - name: Déplacer, redimensionner et ouvrir dans une nouvelle fenêtre une visualisation dans un rapport
         href: visuals/power-bi-visualization-move-and-resize.md
-      - name: Liens hypertexte dans les tables
-        href: power-bi-hyperlinks-in-tables.md
-      - name: Ajouter un lien hypertexte à une zone de texte dans un rapport
-        href: service-add-hyperlink-to-text-box.md
       - name: Modifier l’interaction des éléments visuels dans un rapport
         href: service-reports-visual-interactions.md
       - name: Histogrammes
         href: visuals/service-histograms.md
       - name: Trucs et astuces pour les visualisations de carte Power BI
         href: visuals/power-bi-map-tips-and-tricks.md
-      - name: Zones de texte dans les rapports Power BI
-        href: power-bi-reports-add-text-and-shapes.md
       - name: Personnaliser les propriétés des axes X et Y
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
       - name: Cartes ArcGIS dans Power BI
@@ -1293,9 +1293,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a3abfd814e95ca00c433b66e7fe6aad665f8426f
-ms.sourcegitcommit: 4695f5ef54cc9929828320132f890317b4c3018e
+ms.openlocfilehash: b3553d493940b831e3e604fe43176ace125fe995
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54239287"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406727"

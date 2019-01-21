@@ -1,23 +1,23 @@
 ---
-title: 'Exemple Ressources humaines : visite guidée'
-description: 'Exemple Ressources humaines pour Power BI : visite guidée'
+title: 'Exemple Ressources humaines : Visite guidée'
+description: 'Exemple Ressources humaines pour Power BI : Visite guidée'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/26/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c0f1df47501c297e65e7dc3ccdb8d745c84b2e55
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 1670fffd33e741962db5e7312f2a27273151980d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717869"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293937"
 ---
-# <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exemple Ressources humaines pour Power BI : visite guidée
+# <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exemple Ressources humaines pour Power BI : Visite guidée
 
 ## <a name="overview-of-the-human-resources-sample"></a>Présentation de l’exemple Ressources humaines
 Les services de ressources humaines utilisent tous le même modèle de présentation de rapports, quels que soient le secteur d’activité et la taille des entreprises. Cet exemple s’intéresse aux nouvelles recrues, aux employés actifs et aux employés qui ont quitté l’entreprise dans le but de déceler des tendances en matière de stratégie de recrutement. Nos principaux objectifs sont répondre aux questions :
@@ -141,5 +141,5 @@ La [zone Questions et réponses](power-bi-tutorial-q-and-a.md) vous permet de ta
 
 Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours choisir de ne pas enregistrer les modifications apportées. Si vous les enregistrez, vous pouvez toujours accéder à **Obtenir des données** pour avoir une nouvelle copie de cet exemple.
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
+## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
 Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations des données de ressources humaines. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).  

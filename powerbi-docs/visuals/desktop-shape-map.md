@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 71dbdd79e6bedee3f1377f0e7c29fcc6efbbba03
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417323"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290886"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
 Créez un visuel **Carte de formes** pour comparer des régions sur une carte à l’aide de la couleur. À la différence du visuel **Carte**, le visuel **Carte de formes** ne permet pas d’afficher l’emplacement géographique précis de points de données sur une carte. Il a pour principal objectif de montrer des comparaisons relatives de régions sur une carte en leur appliquant une couleur différente.
@@ -126,7 +126,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | au-nsw |NSW |AU-NSW |New South Wales |NSW |
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
-### <a name="austria-states"></a>Autriche : États
+### <a name="austria-states"></a>Austriche : États
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -176,7 +176,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | Litigated Zone 3 |
 | Litigated Zone 4 |
 
-### <a name="canada-provinces"></a>Canada : provinces
+### <a name="canada-provinces"></a>Canada : Provinces
 
 | `id` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | ca-bc |CA-BC |British Columbia |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>France : régions
+### <a name="france-regions"></a>France : Régions
 
 | `id` | `name` | `name-en` |
 | --- | --- | --- |
@@ -242,7 +242,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | de-by |DE-BY |Bayern |Bavaria |BY |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
-### <a name="ireland-counties"></a>Irlande : comtés
+### <a name="ireland-counties"></a>Irlande : Pays
 
 | `id` |
 | --- |
@@ -273,7 +273,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Italie : régions
+### <a name="italy-regions"></a>Italie : Régions
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -335,7 +335,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Pays-Bas : provinces
+### <a name="netherlands-provinces"></a>Pays-Bas : Provinces
 
 | `id` | `iso` | `name` | `name-en` |
 | --- | --- | --- | --- |

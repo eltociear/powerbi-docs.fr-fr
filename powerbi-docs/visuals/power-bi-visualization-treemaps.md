@@ -1,29 +1,29 @@
 ---
-title: Treemaps dans Power BI
-description: Treemaps dans Power BI
+title: Graphiques de compartimentage dans Power BI
+description: Graphiques de compartimentage dans Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 92e86817231e959db50af3c32fe8eba761c79a61
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: dd7360761cc78aed9b01eb99165de9f0b4b91ffe
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448865"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274763"
 ---
-# <a name="treemaps-in-power-bi"></a>Treemaps dans Power BI
+# <a name="treemaps-in-power-bi"></a>Graphiques de compartimentage dans Power BI
 Les treemaps utilisent des rectangles imbriqués pour présenter des données sous forme hiérarchique.  Chaque niveau de la hiérarchie est représenté par un rectangle de couleur (généralement appelé « branche ») qui contient d’autres rectangles (les « feuilles »).  L’espace à l’intérieur de chaque rectangle est alloué en fonction de la valeur mesurée. Les rectangles sont disposés par taille du haut à gauche (le plus grand) au bas à droite (le plus petit).
 
 ![](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
 
-Imaginons que j’utilise ce graphique pour analyser mes ventes. Les grands rectangles (également appelés *branches*) correspondront aux catégories de vêtements **Urban**, **Rural**, **Youth** et **Mix**.  Ces rectangles de catégorie seront divisés en rectangles plus petits, également appelés *feuilles*, correspondant aux fabricants de vêtements dans cette catégorie. Ces rectangles plus petits auront une taille et une nuance qui dépendent du nombre d’articles vendus.  
+Imaginons que j’utilise ce graphique pour analyser mes ventes. Les grands rectangles (également appelés *branches*) correspondront aux catégories de vêtements : **Urban**, **Rural**, **Youth** et **Mix**.  Ces rectangles de catégorie seront divisés en rectangles plus petits, également appelés *feuilles*, correspondant aux fabricants de vêtements dans cette catégorie. Ces rectangles plus petits auront une taille et une nuance qui dépendent du nombre d’articles vendus.  
 
 Dans la branche **Urban** ci-dessus, un grand nombre de vêtements `Maximus` a été vendu, moins de `Natura` et `Fama` et quelques `Leo`.  Par conséquent, la branche **Urban** de mon treemap se présentera comme suit :
 * le plus grand rectangle pour `Maximus` dans le coin supérieur gauche
@@ -48,7 +48,7 @@ Les treemaps sont conseillés :
  - Retail Analysis sample
 
 ## <a name="create-a-basic-treemap"></a>Créer un treemap simple
-Vous souhaitez d’abord regarder une personne créer un treemap ?  Accédez à la position 2:10 de cette vidéo pour voir comment Amanda crée un treemap.
+Vous souhaitez d’abord regarder une personne créer un treemap ?  Accédez à la position 2:10 de cette vidéo pour voir comment Amanda crée un graphique de compartimentage.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -70,7 +70,7 @@ Ou bien, créez votre propre treemap. Ces instructions s’appliquent à l’exe
    > 
 5. Pointez sur une zone **Chaîne** pour afficher l’info-bulle correspondant à cette portion de la **Catégorie**.  Par exemple, si vous pointez sur **Fashions Direct** dans le rectangle **090-Home**, l’info-bulle pour la portion Fashions Direct de la catégorie Home s’affiche.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Ajoutez le treemap sous forme de vignette de tableau de bord (épinglez le visuel)](../service-dashboard-tiles.md). 
+6. [Ajoutez le treemap sous forme de vignette de tableau de bord (épinglez l’élément visuel)](../service-dashboard-tiles.md). 
 7. [Enregistrez le rapport](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
@@ -81,7 +81,7 @@ La mise en surbrillance d’une catégorie ou de détails dans un treemap entra�
 1. Dans le treemap, sélectionnez une catégorie ou une chaîne au sein d’une catégorie.  Cela met en surbrillance croisée les autres visualisations sur la page. Sélectionnez la catégorie **050-Shoes**, par exemple, pour afficher le montant des ventes de chaussures l’année dernière (3 640 471 $) et la part de ces ventes réalisée par Fashions Direct (2 174 185 $).  
    ![](media/power-bi-visualization-treemaps/treemaphiliting.png)
 
-2. Dans le graphique en secteurs **Ventes de l’année dernière par chaîne**, sélectionnez le secteur **Fashions Direct** pour filtrer le treemap.  
+2. Dans le graphique en secteurs **Ventes de l’année dernière par chaîne**, sélectionnez le secteur **Fashions Direct** pour filtrer le graphique de compartimentage.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)    
 
 3. Pour gérer la mise en surbrillance croisée et le filtrage croisé des tableaux entre eux, consultez [Interactions de visualisation dans un rapport Power BI](../service-reports-visual-interactions.md).
