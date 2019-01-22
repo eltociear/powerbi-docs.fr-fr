@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: d4eeebca1505d376a403bf18f125782efb0d656d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 81bd3dc166a92f7be6fe9081f4b88feedc7514d3
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283871"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394753"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Actualisation planifiée de rapport Power BI dans Power BI Report Server
 L’actualisation planifiée des rapports Power BI permet de tenir à jour les données d’un rapport.
@@ -49,7 +49,7 @@ Il n’est pas possible de créer un plan d’actualisation planifiée sur certa
 * Votre rapport contient une ou plusieurs sources de données qui utilisent DirectQuery.
 * Votre rapport ne contient aucune source de données. Par exemple, les données sont entrées manuellement via l’option *Entrer des données* ou un rapport contient uniquement du contenu statique tel que des images, du texte, etc.
 
-Outre la liste ci-dessus, il existe des scénarios spécifiques avec des sources de données en mode d’*importation*, pour lesquels vous ne pouvez pas créer des plans d’actualisation.
+En plus de la liste ci-dessus, il existe des scénarios spécifiques avec des sources de données en mode d’*importation*, pour lesquels vous ne pouvez pas créer des plans d’actualisation.
 
 * Si une source de données *Fichier* ou *Dossier* est utilisée, et si le chemin d’accès du fichier est un chemin local (par exemple, C:\Users\user\Documents), il n’est pas possible de créer un plan d’actualisation. Le chemin d’accès doit être un chemin auquel le serveur de rapports peut se connecter, tel un partage réseau. Par exemple, *\\myshare\Documents*.
 * Si la source de données peut être connectée uniquement à l’aide d’OAuth (par exemple, Facebook, Google Analytique, Salesforce, etc.), le plan d’actualisation du cache ne peut pas être créé. Actuellement, le serveur de rapports ne prend en charge l’authentification OAuth pour aucune source de données, que ce soit pour un rapport paginé, mobile ou Power BI.

@@ -1,24 +1,24 @@
 ---
 title: Zones de texte et formes dans les rapports Power BI
 description: Documentation sur l’ajout et la création de zones de texte et de formes dans un rapport à l’aide du service Microsoft Power BI.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/22/2018
-ms.author: mihart
+ms.date: 01/16/2019
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 937e15f5cd56f7c720afa945598f9fc1641468f7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: cf5cecc8df5c1e6c3057cab6eb41e40e934b1510
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295532"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406543"
 ---
-# <a name="static-content-in-power-bi-reports"></a>Contenu statique dans les rapports Power BI
+# <a name="text-boxes-and-shapes-power-bi-reports"></a>Zones de texte et formes des rapports Power BI
 Il est possible d’ajouter des formes et des zones de texte à des rapports à l’aide du service Power BI et de Power BI Desktop. Dans les deux cas, vous devez disposer d’autorisations de modification du rapport. Si un rapport a été partagé avec vous dans le service Power BI, vous n’aurez pas d’autorisations de modification. 
 
 Regardez comment Will utilise Power BI Desktop pour [ajouter des images statiques à un rapport](guided-learning/visualizations.yml?tutorial-step=11), puis suivez les étapes ci-dessous pour essayer par vous-même avec cette fois le service Power BI.

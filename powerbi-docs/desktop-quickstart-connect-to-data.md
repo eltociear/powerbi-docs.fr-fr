@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 4b8cd79eca1711b424d772737b27400f9291cef0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4d121a469257c79e37212ab0e357bb9ee8be68ec
+ms.sourcegitcommit: 19b4d45db8f55cdbb5d7de0d61f6be5163a2852e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279202"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54420783"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Démarrage rapide : Se connecter à des données dans Power BI Desktop
 
@@ -39,13 +39,13 @@ Après avoir installé **Power BI Desktop**, lancez l’application pour l’ex�
 
 ## <a name="connect-to-data"></a>Se connecter aux données
 
-**Power BI Desktop** vous permet de vous connecter à de nombreux types de données. Vous pouvez vous connecter à des sources de données de base telle qu’un fichier Microsoft Excel, et à des services en ligne hébergeant toutes sortes de données comme Salesforce, Microsoft Dynamics, Stockage Blob Azure, et bien plus encore. 
+**Power BI Desktop** vous permet de vous connecter à de nombreux types de données. Vous pouvez vous connecter à des sources de données de base telle qu’un fichier Microsoft Excel, et à des services en ligne hébergeant toutes sortes de données comme Salesforce, Microsoft Dynamics, Stockage Blob Azure, et bien plus encore.
 
 Pour vous connecter à des données, dans le ruban **Accueil**, sélectionnez **Obtenir les données**.
 
 ![Obtenir les données](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
-La fenêtre **Obtenir les données** s’affiche, où vous pouvez choisir parmi les différentes sources de données auxquelles **Power BI Desktop** peut se connecter. Dans ce démarrage rapide, nous utilisons le classeur Excel que vous avez téléchargé, comme décrit dans la section *Conditions préalables* au début de cet article. 
+La fenêtre **Obtenir les données** s’affiche, où vous pouvez choisir parmi les différentes sources de données auxquelles **Power BI Desktop** peut se connecter. Dans ce démarrage rapide, nous utilisons le classeur Excel que vous avez téléchargé, comme décrit dans la section *Conditions préalables* au début de cet article.
 
 ![Obtenir les données](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
 
@@ -69,10 +69,8 @@ Une fois les tables chargées, le volet **Champs** affiche les données. Vous po
 
 Et voilà ! Vous vous êtes connecté à des données dans **Power BI Desktop**, vous avez chargé ces données, et vous pouvez maintenant voir tous les champs disponibles dans ces tables.
 
-
 ## <a name="next-steps"></a>Étapes suivantes
+
 Il existe toutes sortes d’opérations que vous pouvez effectuer avec **Power BI Desktop** une fois que vous vous êtes connecté aux données, par exemple créer des rapports et des éléments visuels. Pour commencer, examinez les ressources suivantes :
 
 * [Prise en main de Power BI Desktop](desktop-getting-started.md)
-
-
