@@ -1,22 +1,22 @@
 ---
-title: 'Tutoriel : Explorer Power BI Report Server dans une machine virtuelle'
+title: 'Tutoriel : Explorer Power BI Report Server dans une machine virtuelle'
 description: Dans ce tutoriel, vous créez une machine virtuelle avec Power BI Report Server déjà installé, puis explorez le portail web.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 32bf2d3cedbeeb2430620855a2ac95bf349af9a2
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: 4eb9f5dc7e45006d1b5697f35b79d0e9d11fa2df
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092043"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281387"
 ---
-# <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutoriel : Explorer le portail web Power BI Report Server dans une machine virtuelle
+# <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutoriel : Explorer le portail web Power BI Report Server dans une machine virtuelle
 Dans ce tutoriel, vous créez une machine virtuelle Azure avec Power BI Report Server déjà installé, pour pouvoir afficher, modifier et gérer des exemples de rapports Power BI Report Server et paginés ainsi que des indicateurs de performance clés.
 
 ![Portail web Power BI Report Server](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm-no-numbers.png)
@@ -92,7 +92,7 @@ Lorsque votre machine virtuelle s’ouvre, voici les éléments qui apparaissent
 
 ![La machine virtuelle Power BI Report Server démarre](media/tutorial-explore-report-server-web-portal/power-bi-report-server-start-vm-numbered.png)
 
-|Number  |Ce que cela représente  |
+|Numéro  |Ce que cela représente  |
 |---------|---------|
 |![Numéro 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Démarre SQL Server Data Tools pour créer des rapports paginés (.RDL) |
 |![Numéro 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Exemples de rapports Power BI (.PBIX)  |
@@ -104,7 +104,7 @@ Double-cliquez sur l’icône **Portail web Report Server**. Le navigateur ouvre
 
 ![Portail web de Power BI Report Server web](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 
-|Number  |Ce que cela représente  |
+|Numéro  |Ce que cela représente  |
 |---------|---------|
 |![Numéro 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Indicateurs de performance clés créés dans le portail web |
 |![Numéro 2](media/tutorial-explore-report-server-web-portal/number-2.png) |  Rapports Power BI (.PBIX)  |
@@ -135,7 +135,7 @@ Vous pouvez basculer vers le mode Liste qui facilite le déplacement ou la suppr
    
     ![Changer de vue](media/tutorial-explore-report-server-web-portal/report-server-web-portal-list-view.png)
 
-2. Revenez en mode Vignettes : sélectionnez **Liste** > **Vignettes**.
+2. Revenez à la vue Vignettes : Sélectionnez **Liste** > **Vignettes**.
 
 ## <a name="power-bi-reports"></a>Rapports Power BI
 

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ffb82303584249641454c81f61e399d2b1d4f574
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 734af04ae515b1cae19b5afc99166619a85ab828
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452772"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290454"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Utiliser des modèles composites dans Power BI Desktop
 
@@ -25,11 +25,11 @@ Avant dans Power BI Desktop, quand vous utilisiez un DirectQuery dans un rapport
 
 La fonctionnalité des modèles composites dans Power BI Desktop se compose de trois fonctionnalités connexes :
 
-* **Modèles composites** : permet à un rapport d’avoir plusieurs connexions de données, notamment des connexions provenant de DirectQuery ou d’une importation, dans toutes les combinaisons. Cet article décrit en détail les modèles composites.
+* **Modèles composites** : Permet à un rapport d’avoir plusieurs connexions de données, notamment des connexions provenant de DirectQuery ou d’une importation, dans toutes les combinaisons. Cet article décrit en détail les modèles composites.
 
-* **Relations plusieurs à plusieurs** : avec les *modèles composites*, vous pouvez établir des *relations plusieurs à plusieurs* entre les tables. Cette approche supprime la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md).
+* **Relations plusieurs à plusieurs** : Avec les *modèles composites*, vous pouvez établir des *relations plusieurs à plusieurs* entre les tables. Cette approche supprime la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md).
 
-* **Mode de stockage** : vous pouvez désormais spécifier les visuels qui nécessitent une requête sur les sources de données back-end. Les visuels qui ne nécessitent pas une requête sont importés même s’ils sont basés sur DirectQuery. Cette fonctionnalité permet d’améliorer les performances et de réduire la charge du back-end. Avant, même de simples visuels, comme les segments, lançaient des requêtes qui étaient envoyées à des sources back-end. Pour plus d’informations, consultez [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md).
+* **Mode de stockage** : Vous pouvez désormais spécifier les visuels qui nécessitent une requête sur les sources de données back-end. Les visuels qui ne nécessitent pas une requête sont importés même s’ils sont basés sur DirectQuery. Cette fonctionnalité permet d’améliorer les performances et de réduire la charge du back-end. Avant, même de simples visuels, comme les segments, lançaient des requêtes qui étaient envoyées à des sources back-end. Pour plus d’informations, consultez [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md).
 
 
 ## <a name="use-composite-models"></a>Utiliser des modèles composites
@@ -156,11 +156,11 @@ Quand vous utilisez DirectQuery, tenez toujours compte des performances pour gar
 
 L’utilisation des modèles composites implique de nouvelles considérations sur les performances. Un seul visuel peut entraîner l’envoi de requêtes vers plusieurs sources, souvent en passant les résultats d’une requête à une deuxième source. Cette situation peut se produire dans les scénarios d’exécution suivants :
 
-* **Une requête SQL incluant un grand nombre de valeurs littérales** : par exemple, un visuel demandant le montant total des ventes (*Sales Amount*) pour un groupe spécifique de chefs de produit (*Product Managers*) doit d’abord identifier les produits *(Products)* gérés par ces chefs de produit. Cette séquence doit se produire avant que le visuel n’envoie une requête SQL qui contient tous les ID de produit dans une clause *WHERE*.
+* **Une requête SQL incluant un grand nombre de valeurs littérales** : Par exemple, un visuel demandant le montant total des ventes (*Sales Amount*) pour un groupe spécifique de chefs de produit (*Product Managers*) doit d’abord identifier les produits *(Products)* gérés par ces chefs de produit. Cette séquence doit se produire avant que le visuel n’envoie une requête SQL qui contient tous les ID de produit dans une clause *WHERE*.
 
-* **Une requête SQL effectuée à un niveau inférieur de granularité avec les données agrégées localement** : comme le nombre de produits (*Products*) qui correspondent aux critères de filtre Chef de produit (*Product Manager*) est de plus en plus important, il peut s’avérer inefficace ou impossible d’inclure tous les produits dans une clause *WHERE*. Au lieu de cela, vous pouvez interroger la source relationnelle au niveau inférieur *Product* (Produit), puis agréger les résultats localement. Si la cardinalité des *produits* dépasse une limite de 1 million, la requête échoue.
+* **Une requête SQL effectuée à un niveau inférieur de granularité avec les données agrégées localement** : Comme le nombre de produits (*Products*) qui correspondent aux critères de filtre Chef de produit (*Product Manager*) est de plus en plus important, il peut s’avérer inefficace ou impossible d’inclure tous les produits dans une clause *WHERE*. Au lieu de cela, vous pouvez interroger la source relationnelle au niveau inférieur *Product* (Produit), puis agréger les résultats localement. Si la cardinalité des *produits* dépasse une limite de 1 million, la requête échoue.
 
-* **Plusieurs requêtes SQL, une par groupe et par valeur** : quand l’agrégation utilise des données **DistinctCount** regroupées par une colonne d’une autre source, si la source externe ne prend pas en charge la transmission efficace des nombreuses valeurs littérales qui définissent le regroupement, il est nécessaire d’envoyer une requête SQL par groupe et par valeur. 
+* **Plusieurs requêtes SQL, une par groupe et par valeur** : Lorsque l’agrégation utilise des données **DistinctCount** regroupées par une colonne d’une autre source, si la source externe ne prend pas en charge la transmission efficace des nombreuses valeurs littérales qui définissent le regroupement, il est nécessaire d’envoyer une requête SQL par groupe et par valeur. 
 
    Par exemple, un visuel demandant un décompte distinct de la valeur *CustomerAccountNumber* (de la table SQL Server) par *Product Manager* (table importée de la feuille de calcul) doit passer les détails de la table *Product Managers* dans la requête envoyée à SQL Server. Avec d’autres sources, par exemple Redshift, cette action n’est pas possible. Au lieu de cela, une requête SQL est envoyée pour chaque *responsable commercial* jusqu’à une limite pratique à laquelle la requête échoue. 
 

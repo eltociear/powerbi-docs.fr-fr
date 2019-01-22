@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 63b75aae9fb9299119b606458a4a8832d77dd1be
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 196d2ef3eb0d8ed8b7f008eef1b247d9e7f1cd18
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417162"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296498"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout élément visuel ou tableau de bord qui peut être créé dans Power BI peut également l’être pour afficher et mettre à jour des données et des éléments visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des mesures d’utilisation de service, ou tout autre dispositif permettant de collecter ou transmettre des données.
@@ -44,7 +44,7 @@ Il existe deux éléments à prendre en compte concernant les vignettes épingl�
 * Une fois qu’un visuel est épinglé à un tableau de bord, vous pouvez utiliser la fonction **Questions et réponses** pour poser des questions au jeu de données de transmission en langage naturel. Une fois que vous avez envoyé une requête à la fonction **Questions et réponses**, vous pouvez le visuel généré au tableau de bord. Ce dernier est alors *également* mis à jour en temps réel.
 
 ### <a name="streaming-dataset"></a>Jeu de données de streaming
-Avec un **jeu de données de streaming**, les données sont également transmises au service Power BI, avec une différence importante toutefois : Power BI stocke uniquement les données dans un cache temporaire qui expire rapidement. Le cache temporaire est utilisé uniquement pour afficher des visuels qui ont un historique temporaire, par exemple un graphique en courbes qui possède une fenêtre d’une heure.
+Avec un **jeu de données de streaming**, des données sont également transmises au service Power BI, avec toutefois une différence importante : Power BI stocke uniquement les données dans un cache temporaire qui expire rapidement. Le cache temporaire est utilisé uniquement pour afficher des visuels qui ont un historique temporaire, par exemple un graphique en courbes qui possède une fenêtre d’une heure.
 
 Avec un **jeu de données de streaming**, il n’y a *aucune* base de données sous-jacente. Vous ne *pouvez donc pas* créer de visuels de rapport à l’aide des données qui transitent à partir du flux. Par conséquent, vous ne pouvez pas utiliser les fonctionnalités de rapport telles que le filtrage, les visuels personnalisés et d’autres fonctions de rapport.
 
@@ -55,7 +55,7 @@ Dans la pratique, l’utilisation des jeux de données de streaming et des visue
 ### <a name="pubnub-streaming-dataset"></a>Jeu de données de streaming PubNub
 Avec un jeu de données de streaming **PubNub**, le client web Power BI utilise le SDK PubNub pour lire un flux de données PubNub existant et aucune donnée n’est stockée par le service Power BI.
 
-Comme avec le **jeu de données de streaming**, avec le **jeu de données de streaming PubNub**, il n’existe aucune base de données sous-jacente dans Power BI. Vous ne pouvez donc pas créer de visuels de rapport sur les données qui transitent, ni utiiliser les fonctionnalités de rapport telles que le filtrage, les visuels personnalisés et ainsi de suite. Par conséquent, le **jeu de données de streaming PubNub** peut uniquement être visualisé en ajoutant une vignette au tableau de bord et en configurant le flux de données PubNub en tant que source.
+Comme avec le **jeu de données de streaming**, avec le **jeu de données de streaming PubNub**, il n’existe aucune base de données sous-jacente dans Power BI. Vous ne pouvez donc pas créer de visuels de rapport sur les données qui transitent, ni utiliser les fonctionnalités de rapport telles que le filtrage, les visuels personnalisés et ainsi de suite. Par conséquent, le **jeu de données de streaming PubNub** peut uniquement être visualisé en ajoutant une vignette au tableau de bord et en configurant le flux de données PubNub en tant que source.
 
 Les vignettes basées sur le **jeu de données de streaming PubNub** sont optimisées pour afficher rapidement les données en temps réel. Comme Power BI est connecté directement au flux de données PubNub, il y a une très faible latence entre le moment où les données sont transmises au service Power BI et le moment où le visuel est mis à jour.
 
