@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 73d9d84552d49ca507fe4b6f9ec022bb7fb98866
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 8535787cb66ad2dc897ff3a3e4ecaccddfaa80f0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670851"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285113"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Scénarios de résolution de problèmes liés à l’actualisation
 Vous trouverez ici des informations concernant les différents scénarios auxquels vous pouvez être confronté au moment d’actualiser les données dans le service Power BI.
@@ -37,7 +37,7 @@ Patientez de 10 à 15 minutes environ avant que l’actualisation se reflète d
 ## <a name="gatewaynotreachable-when-setting-credentials"></a>Passerelle inaccessible pendant la définition d’informations d’identification
 Il se peut que vous obteniez une erreur indiquant que la passerelle est inaccessible pendant que vous essayez de définir les informations d’identification d’une source de données. Cela peut résulter d’une passerelle obsolète.  Installez la passerelle la plus récente et réessayez.
 
-## <a name="processing-error-the-following-system-error-occurred-type-mismatch"></a>Erreur de traitement : L’erreur système suivante s’est produite : incompatibilité de type
+## <a name="processing-error-the-following-system-error-occurred-type-mismatch"></a>Erreur de traitement : L’erreur système suivante s’est produite : Incompatibilité de type
 Il peut s’agir d’un problème lié à votre script M dans votre fichier Power BI Desktop ou un classeur Excel.  Cela peut aussi être dû à une version obsolète de Power BI Desktop.
 
 ## <a name="tile-refresh-errors"></a>Erreurs d’actualisation des vignettes

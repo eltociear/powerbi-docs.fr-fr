@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5eb2e63d9bac7249e106ad4c4b525ca3f3ab5cf8
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: be4ebfdfa7dca5ce212c2b5d242d87b0001b7750
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909591"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281916"
 ---
 # <a name="get-power-bi-desktop"></a>Obtenir Power BI Desktop
 **Power BI Desktop** vous permet de créer des requêtes, des modèles et des rapports avancés qui visualisent des données. Avec **Power BI Desktop**, vous pouvez créer des modèles de données et des rapports et partager votre travail en le publiant sur le service Power BI.  Le téléchargement de **Power BI Desktop** est gratuit.
@@ -94,10 +94,10 @@ La liste suivante présente la configuration minimale requise pour exécuter **P
 * Windows 7/ Windows Server 2008 R2 ou version ultérieure
 * .NET 4.5
 * Internet Explorer 9 ou version ultérieure
-* **Mémoire (RAM) :** au moins 1 Go de disponible (1,5 Go ou plus recommandés).
-* **Affichage :** résolution minimale de 1440 x 900 (1600 x 900 ou 16:9 recommandée). Les résolutions inférieures telles que 1024 x 768 ou 1280 x 800 ne sont pas recommandées, car certains contrôles comme la fermeture de l’écran de démarrage apparaissent au-delà de ces résolutions.
-* **Paramètres d’affichage de Windows :** si vos paramètres d’affichage sont définis pour modifier la taille du texte, les applications et les autres éléments de plus de 100 %, il est possible que vous ne puissiez pas afficher certaines boîtes de dialogue qui doivent être fermées ou auxquelles vous devez répondre pour pouvoir continuer en utilisant **Power BI Desktop**. Si vous rencontrez ce problème, vérifiez vos **Paramètres d’affichage** en accédant à **Paramètres > Système > Affichage** dans Windows, puis utilisez le curseur pour rétablir les paramètres d’affichage sur 100 %.
-* **Processeur :** 1 gigahertz (GHz) ou plus rapide (processeur x86 ou x64 bits recommandé).
+* **Mémoire (RAM) :** Au moins 1 Go de disponible (1,5 Go ou plus recommandés).
+* **Affichage :** Résolution minimale recommandée de 1440 x 900 ou 1600 x 900 (16:9). Les résolutions inférieures telles que 1024 x 768 ou 1280 x 800 ne sont pas recommandées, car certains contrôles comme la fermeture de l’écran de démarrage apparaissent au-delà de ces résolutions.
+* **Paramètres d’affichage de Windows :** Si vos paramètres d’affichage sont définis pour modifier la taille du texte, les applications et les autres éléments de plus de 100 %, il est possible que vous ne puissiez pas afficher certaines boîtes de dialogue qui doivent être fermées ou auxquelles vous devez répondre pour pouvoir continuer en utilisant **Power BI Desktop**. Si vous rencontrez ce problème, vérifiez vos **Paramètres d’affichage** en accédant à **Paramètres > Système > Affichage** dans Windows, puis utilisez le curseur pour rétablir les paramètres d’affichage sur 100 %.
+* **Processeur :** 1 gigahertz (GHz) ou plus rapide (processeur x86 ou x64 bits recommandé).
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
@@ -115,7 +115,7 @@ La mise à jour vers la version actuelle de Power BI Desktop résout généralem
 Nous vous recommandons de mettre à jour vers la version la plus récente de Power BI Desktop pour profiter des progrès en matière de fonctionnalités, de performances, de stabilité, ainsi que d’autres améliorations. Certaines organisations peuvent ne pas vouloir que les utilisateurs mettent à jour vers chaque nouvelle version. Vous pouvez désactiver les notifications en modifiant le Registre comme suit :
 
 1. À l’aide de l’Éditeur du Registre, accédez à *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
-2. Créez-y une nouvelle entrée avec les paramètres suivants : *REG_DWORD : DisableUpdateNotification*
+2. Créez une nouvelle entrée avec les paramètres suivants : *REG_DWORD : DisableUpdateNotification*
 3. Définissez la valeur de cette nouvelle entrée sur **1**.
 
 Vous devez redémarrer votre ordinateur pour que la modification prenne effet.
@@ -125,7 +125,7 @@ Vous devez redémarrer votre ordinateur pour que la modification prenne effet.
 Dans certaines circonstances, y compris certaines configurations de résolution d’écran, certains utilisateurs peuvent voir de grandes zones noires dans le contenu affiché dans Power BI Desktop. C’est généralement plutôt dû à des mises à jour récentes du système d’exploitation qui affectent le rendu des éléments que directement à la manière dont Power BI Desktop présente le contenu. Quoi qu'il en soit, les grandes zones noires ne sont pas aussi attrayantes que d’excellents visuels. Par conséquent, pour résoudre ce problème, procédez comme suit :
 
 1. Appuyez sur la touche Démarrer et tapez le mot *flou* dans la barre de recherche qui s’affiche.
-2. Dans la boîte de dialogue qui s’affiche, sélectionnez l’option : *Laissez Windows réparer les applications floues.*
+2. Dans la boîte de dialogue qui s’affiche, sélectionnez l’option : *Laisser Windows corriger les applications qui sont floues.*
 3. Redémarrez Power BI Desktop.
 
 Ce problème peut être résolu après la publication des mises à jour ultérieures de Windows. 

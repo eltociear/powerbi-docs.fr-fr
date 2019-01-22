@@ -6,16 +6,16 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: maggies
-ms.openlocfilehash: 28a282ff6a35061422995c46fbbcd34c21b533a7
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: c42aa07fd78430c5692067ae8476b22288470c8c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717421"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294257"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Créer un tableau de bord à partir d’un rapport
 Vous avez lu [Tableaux de bord dans Power BI](service-dashboards.md) et vous souhaitez maintenant créer vos propres tableaux de bord. Il existe de nombreuses façons de créer un tableau de bord : à partir d’un rapport, en partant de zéro, à partir d’un jeu de données, en dupliquant un tableau de bord existant, et bien plus encore.  
@@ -25,7 +25,7 @@ Il peut être difficile de savoir par où commencer ; nous allons créer un tabl
 ## <a name="who-can-create-a-dashboard"></a>Qui peut créer un tableau de bord ?
 La création d’un tableau de bord est une fonctionnalité de **créateur** qui nécessite des autorisations de modification du rapport. Ces autorisations sont réservées aux créateurs de rapports et aux collègues à qui les premiers ont accordé l’accès. Par exemple, si David crée un rapport dans workspaceABC et vous ajoute comme membre de cet espace de travail, David et vous aurez tous deux des autorisations de modification. Si, à l’inverse, le rapport a été partagé avec vous directement ou dans le cadre d’une [application Power BI](service-create-distribute-apps.md) (vous êtes **consommateur** du rapport), vous ne pourrez pas épingler des vignettes au tableau de bord.
 
-> **REMARQUE**: les tableaux de bord sont une fonctionnalité du service Power BI et non de Power BI Desktop. Les tableaux de bord ne peut pas être créés dans l’application mobile Power BI, mais ils peuvent être [affichés et partagés](consumer/mobile/mobile-apps-view-dashboard.md).
+> **REMARQUE** : Les tableaux de bord sont une fonctionnalité du service Power BI et non de Power BI Desktop. Les tableaux de bord ne peut pas être créés dans l’application mobile Power BI, mais ils peuvent être [affichés et partagés](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 
@@ -65,7 +65,7 @@ Nous allons importer l’un des exemples de jeu de données Power BI et l’uti
 1. Sans quitter l’espace de travail, sélectionnez l’onglet **Rapports**. Le rapport nouvellement importé s’affiche avec un astérisque jaune. Sélectionnez le nom du rapport pour l’ouvrir.
 
     ![Onglet Rapports](media/service-dashboard-create/power-bi-reports.png)
-2. Le rapport s’ouvre en mode Lecture. Notez qu’il comporte deux onglets en bas : Discount Analysis (Analyse des remises) et Spend Overview (Vue d’ensemble des dépenses). Chaque onglet représente une page du rapport.
+2. Le rapport s’ouvre en mode Lecture. Il comporte deux onglets en bas : Discount Analysis (Analyse des remises) et Spend Overview (Vue d’ensemble des dépenses). Chaque onglet représente une page du rapport.
     Sélectionnez **Modifier le rapport** pour ouvrir le rapport en Mode Édition.
 
     ![rapport en mode Lecture](media/service-dashboard-create/power-bi-reading-view.png)

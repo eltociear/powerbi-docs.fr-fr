@@ -5,17 +5,17 @@ author: mihart
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: daada8a7f69c600acf6fc45669ed6a42c2fdd831
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: c35f418362c5036331030bf100d9bfca6b943a4a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900655"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295801"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
@@ -24,7 +24,7 @@ Consultez cette page pour obtenir des informations sur les problèmes connus et 
 - [Nouveautés dans Power BI Desktop](desktop-latest-update.md)  
 - [Nouveautés dans les applications mobiles pour Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/)
-- [Notes de publication - Printemps 2018 - Applications métier](http://aka.ms/businessappsreleasenotes) de Dynamics 365 : dernières mises à jour de nos applications métier et nouvelles fonctionnalités pour générer vos applications et extensions sur notre plateforme. 
+- [Applications métier – Printemps 18 – Notes de publication](http://aka.ms/businessappsreleasenotes) de Dynamics 365 : les dernières mises à jour de nos applications métier, ainsi que de nouvelles fonctionnalités permettant de créer des extensions et des applications sur notre plateforme. 
 
 Vous pouvez également consulter les chaînes YouTube pour plus d’informations sur les nouveautés et les fonctionnalités.
 
@@ -119,7 +119,7 @@ Vous pouvez également consulter les chaînes YouTube pour plus d’informations
 * Composant WebPart SharePoint Power BI à disposition de tous les utilisateurs.
 * Connectez Power BI à n’importe quelle source de données à l’aide du [SDK du connecteur de données](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).
 * Accédez aux rapports avec plusieurs paramètres de filtrage d’URL.
-* Préversion : [utilisez les applications Power BI](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/) pour diffuser de façon élargie vos tableaux de bord et vos rapports au grand public.
+* Préversion : [Utiliser les applications Power BI](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/) pour distribuer à grande échelle des tableaux de bord et des rapports.
 
 ### <a name="march-2017"></a>Mars 2017
 * Optimisez l’utilisation de Power BI dans votre organisation avec les [contrôles d’administrateur détaillés](https://powerbi.microsoft.com/blog/announcing-granular-tenant-settings-in-power-bi/).
@@ -128,13 +128,13 @@ Vous pouvez également consulter les chaînes YouTube pour plus d’informations
 * Contrôlez plus étroitement vos jeux de données avec les [planifications personnalisées d’actualisation de cache](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
 * Connectez-vous à [Amazon Redshift](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
 * Parcourez les [visuels personnalisés de Power BI dans Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
-* Préversion : [Abonnez-vous à des pages de rapport](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) pour suivre vos données.
+* Préversion : [S’abonner à des pages de rapport](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) pour rester au fait des données.
 * Utilisez le pack de contenu Azure AD pour plus d’informations sur la façon dont vos employés et partenaires utilisent Azure AD.
 
 ### <a name="february-2017"></a>Février 2017
 * [Améliorations de la navigation dans la préversion](https://powerbi.microsoft.com/blog/power-bi-service-february-feature-summary/) : passez plus facilement d’un espace de travail à un autre et agissez sur le contenu dans l’espace de travail actuel. 
 * [Incorporez des tableaux de bord Power BI](https://powerbi.microsoft.com/blog/embed-dashboard/) dans votre application personnalisée.
-* Préversion : [Intégrez des rapports Power BI à SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/). 
+* Préversion : [Intégrer des rapports Power BI à SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/). 
 
 ### <a name="january-2017"></a>Janvier 2017
 * Administrer Power BI avec le [rôle d’administrateur de Power BI](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
@@ -142,25 +142,25 @@ Vous pouvez également consulter les chaînes YouTube pour plus d’informations
 * La version 1.4 des [outils de développement et des API des visuels personnalisés](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) est publiée.
 * [Jeu de fonctionnalités de streaming en temps réel](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) publié.
 * [Transmettez des données à Power BI à l’aide de Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) sans écrire une seule ligne de code.
-* Préversion : [Abonnez-vous à des pages de rapport](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) pour suivre vos données.
+* Préversion : [S’abonner à des pages de rapport](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) pour rester au fait des données.
 * Utilisez le pack de contenu Azure AD pour plus d’informations sur la façon dont vos employés et partenaires utilisent Azure AD.
 
 ## <a name="2016"></a>2016
 ### <a name="november-2016"></a>Novembre 2016
-* Version préliminaire : essayez la [nouvelle navigation du service Power BI, à l’adresse powerbi.com](https://powerbi.microsoft.com/blog/announcing-the-new-power-bi-navigation-preview/)
-* Version préliminaire : [exportez un rapport Power BI vers PowerPoint](https://powerbi.microsoft.com/blog/export-power-bi-report-to-powerpoint-preview/).
-* Version préliminaire : [téléchargez des rapports Power BI (fichiers PBIX)](https://powerbi.microsoft.com/blog/announcing-preview-of-download-power-bi-desktop-files-from-the-web/) à partir du service Power BI afin de pouvoir les modifier dans Power BI Desktop.
+* Préversion : essayez la [nouvelle navigation du service Power BI, powerbi.com](https://powerbi.microsoft.com/blog/announcing-the-new-power-bi-navigation-preview/).
+* Préversion : [Exporter un rapport Power BI dans PowerPoint](https://powerbi.microsoft.com/blog/export-power-bi-report-to-powerpoint-preview/).
+* Préversion : [Télécharger des rapports Power BI (fichiers PBIX)](https://powerbi.microsoft.com/blog/announcing-preview-of-download-power-bi-desktop-files-from-the-web/) à partir du service Power BI afin de les modifier dans Power BI Desktop.
 * Créez une [jauge remplie de liquide](https://powerbi.microsoft.com/blog/visual-awesomeness-unlocked-liquid-fill-gauge/), une jauge en forme de cercle qui représente une valeur de pourcentage avec des vagues liquides animées.
 * Explorez vos [données de gestion de projet Jira](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) avec ce pack de contenu Power BI
 * Explorez vos [données Insightcentr](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) avec ce pack de contenu Power BI
 * Créez des éléments d’infographie rapidement avec le [visuel personnalisé de concepteur d’infographie](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/)
-* Version préliminaire privée : [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) génère des jeux de données de streaming Power BI avec lesquels vous pouvez créer des vignettes de streaming.
-* Version préliminaire : ajoutez [des visualisations de carte ArcGIS ESRI](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) à vos rapports et tableaux de bord
+* Préversion privée : [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) génère des jeux de données de streaming Power BI permettant de créer des vignettes de streaming.
+* Préversion : ajoutez des [Visualisations ArcGIS Maps ESRI](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) à vos rapports et tableaux de bord.
 
 ### <a name="october-2016"></a>Octobre 2016
 * Tirez parti de l’[intégration de Power BI avec le nouvel espace de travail Microsoft Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/).
 * Concevez des [visualisations R](https://powerbi.microsoft.com/blog/r-powered-custom-visuals/) dans Power BI sans comprendre le langage R.
-* Version préliminaire : avec [Azure Analysis Services](https://powerbi.microsoft.com/blog/introducing-azure-analysis-services/), les professionnels du décisionnel peuvent créer des modèles sémantiques BI basés sur les données qui résident dans le cloud ou localement, pour fournir aux utilisateurs un affichage simplifié de leurs données.
+* Préversion : avec [Azure Analysis Services](https://powerbi.microsoft.com/blog/introducing-azure-analysis-services/), les professionnels de l’informatique décisionnelle peuvent créer des modèles sémantiques décisionnels à partir de données cloud ou locales, pour offrir aux utilisateurs professionnels un affichage simplifié de leurs données.
 * Le nouveau [rôle d’administrateur de service Power BI](https://powerbi.microsoft.com/blog/making-it-easier-to-administer-power-bi/) peut être affecté aux utilisateurs qui doivent pouvoir accéder au portail d’administration de Power BI mais pas aux autres accès d’administration d’Office 365.
 * Explorez vos [données avancées MYOB avec Power BI](https://powerbi.microsoft.com/blog/explore-your-myob-advanced-data-with-power-bi/).
 * Découvrez comment un utilisateur non-administrateur peut consulter le [journal d’audit Power BI](https://powerbi.microsoft.com/blog/tech-tip-thursday-power-bi-auditing-for-a-non-administrator/)
@@ -184,52 +184,52 @@ Pour tous les détails, voir le [blog de l’équipe Power BI](https://powerbi.
 ### <a name="june-2016"></a>Juin 2016
 ***Informations rapides***
 
-* Les aperçus rapides fonctionnent avec des filtres complexes : nous avons le plaisir d’annoncer que les aperçus rapides limités à une seule vignette comprennent désormais les filtres complexes.
+* Quick Insights fonctionne avec des filtres complexes : nous avons le plaisir de vous annoncer que Quick Insights, limité à une seule vignette, comprend désormais les filtres complexes.
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/).
 
 ### <a name="may-2016"></a>Mai 2016
 ***Obtenir des données***
 
-* Augmentation de la limite de taille des fichiers à 1 Go : nous avons relevé la limite de taille pour les classeurs Excel et les fichiers Power BI Desktop à 1 Go.
-* Rechercher des serveurs SSAS configurés avec Enterprise Gateway et autres mises à jour de passerelle : lorsque vous configurez Enterprise Gateway, les utilisateurs de votre entreprise peuvent accéder à ces serveurs dans le service Power BI via la page Obtenir des données. Nous avons également ajouté la prise en charge pour l’actualisation des jeux de données qui incluent des données venant de SAP Business Warehouse Server à l’aide de la passerelle, en créant des règles de mappage UPN lorsque vous utilisez Analysis Services avec la passerelle.
+* Augmentation de la limite de taille des fichiers à 1 Go : nous avons relevé à 1 Go la limite de taille des classeurs Excel et des fichiers Power BI Desktop.
+* Rechercher des serveurs SSAS configurés avec Enterprise Gateway et autres mises à jour de passerelle : lorsque vous configurez Enterprise Gateway, les utilisateurs de votre entreprise peuvent accéder à ces serveurs dans le service Power BI, sur la page Obtenir des données. Nous avons également ajouté la prise en charge pour l’actualisation des jeux de données qui incluent des données venant de SAP Business Warehouse Server à l’aide de la passerelle, en créant des règles de mappage UPN lorsque vous utilisez Analysis Services avec la passerelle.
 
 ***Sécurité au niveau des lignes***
 
-* Prise en charge des groupes Azure Active Directory (AAD) : les utilisateurs peuvent désormais affecter des groupes AAD (groupes de sécurité et listes de distribution) à un rôle. Cela simplifie l’attribution de rôles à un grand groupe d’utilisateurs.
-* [Tester vos rôles RLS avec des rapports basés sur les données avec la sécurité au niveau des lignes (RLS) ](service-admin-rls.md#validating-the-role-within-power-bi-desktop) : nous avons ajouté une fonctionnalité à la fonction RLS préliminaire qui vous permet de tester votre jeu de données en tant que rôle spécifique. Cela permet de garantir le fonctionnement du rôle avant que les utilisateurs ne commencent à utiliser votre tableau de bord.
-* Définir et appliquer la sécurité au niveau des lignes aux modèles cloud basés sur les requêtes directes : vous pouvez désormais créer et appliquer des règles RLS pour les sources de données de requête directe.
+* Prise en charge des groupes Azure Active Directory (AAD) : les utilisateurs peuvent maintenant affecter un rôle à des groupes AAD (groupes de sécurité et listes de distribution). Cela simplifie l’attribution de rôles à un grand groupe d’utilisateurs.
+* [Tester des rôles SNL avec des rapports qui s’appuient sur les données SNL](service-admin-rls.md#validating-the-role-within-power-bi-desktop) : nous avons ajouté une fonctionnalité à notre préversion SNL, qui permet de tester un jeu de données dans un rôle spécifique. Cela permet de garantir le fonctionnement du rôle avant que les utilisateurs ne commencent à utiliser votre tableau de bord.
+* Définir et appliquer la sécurité SNL à des modèles cloud basés sur des requêtes directes : il est maintenant possible de créer et d’appliquer des règles SNL avec des sources de données à requête directe.
 
 ***Tableaux de bord***
 
-* Tableaux de bord favoris : pour vous aider à atteindre les tableaux de bord que vous utilisez le plus souvent, nous avons ajouté la possibilité de mettre en favori ces tableaux de bord, afin de les rendre plus facilement accessibles à partir de vos espaces de travail.
+* Tableaux de bord favoris : pour rendre plus accessibles les tableaux de bord les plus souvent utilisés dans tous les espaces de travail, nous avons ajouté la possibilité de les mettre en favori.
 
 ***Analyser dans Excel***
 
-* Amélioration de l’expérience de téléchargement : téléchargez facilement les mises à jour de la fonction d’analyse dans Excel avec la nouvelle boîte de dialogue.
-* Prise en charge de la sécurité au niveau des lignes : une fois que vous définissez des lignes, les règles à appliquer aux données suivent lorsqu’un utilisateur analyse ces données dans Excel.
-* Amélioration des messages d’erreur pour les bases de données Analysis Services locales : auparavant, quand vous sélectionniez Analyser dans Excel pour une source de données non prise en charge, vous n’obteniez un message d’erreur qu’après avoir téléchargé le fichier ODC et tenté de vous connecter à Power BI. Maintenant, dès que vous sélectionnez Analyser dans Excel pour une source de données qui n’est pas prise en charge, un message vous informe que cette source de données n’est pas encore prise en charge.
+* Amélioration de l’expérience de téléchargement : téléchargez facilement les mises à jour de la fonction Analyser dans Excel avec la nouvelle boîte de dialogue.
+* Prise en charge de la sécurité SNL : une fois la sécurité SNL configurée, les règles à appliquer aux données sont transmises lorsqu’un utilisateur analyse ces données dans Excel.
+* Amélioration des messages d’erreur des bases de données Analysis Services locales : auparavant, quand on sélectionnait Analyser dans Excel pour une source de données non prise en charge, le message d’erreur n’apparaissait qu’après avoir téléchargé le fichier ODC et tenté de se connecter à Power BI. Maintenant, dès que vous sélectionnez Analyser dans Excel pour une source de données qui n’est pas prise en charge, un message vous informe que cette source de données n’est pas encore prise en charge.
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/).
 
-* [Prise en charge de Questions et réponses dans Power BI pour les modèles tabulaires SQL Server 2016 Analysis Services](service-q-and-a-direct-query.md) : nous sommes fiers de vous proposer des améliorations de l’expérience utilisateur de Questions et réponses dans Power BI et le lancement de la version préliminaire publique de Questions et réponses dans Power BI pour les sources de données Enterprise Gateway, à commencer par la prise en charge des modèles tabulaires SQL Server 2016 Analysis Services. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/).
-* [Prise en charge des fichiers locaux pour les rapports Excel](service-excel-workbook-files.md#local-excel-workbooks) : vous pouvez désormais charger vos fichiers Excel à partir de votre disque local ou d’autres services de stockage et utiliser le rapport Excel comme vous le feriez dans Excel Online, avec tous les avantages de Power BI. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/).
+* [Prise en charge de Questions et réponses Power BI pour les modèles tabulaires SQL Server 2016 Analysis Services](service-q-and-a-direct-query.md) : nous avons le plaisir de vous annoncer que nous avons amélioré l’expérience utilisateur de Questions et réponses Power BI et lancé la préversion publique de Questions et réponses Power BI pour les sources de données connectées à Enterprise Gateway, à commencer par la prise en charge des modèles tabulaires SQL Server 2016 Analysis Services. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/).
+* [Prise en charge des fichiers locaux pour les rapports Excel](service-excel-workbook-files.md#local-excel-workbooks) : il est maintenant possible de charger des fichiers Excel à partir d’un disque local ou d’autres services de stockage et d’utiliser ce rapport Excel comme avec Excel Online, mais avec tous les avantages de Power BI. Pour plus d’informations, [voir le billet de blog](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/).
 
 **28 avril 2016**
 
-* [Aperçus rapides sur les vignettes du tableau de bord](consumer/end-user-insights.md) : lors de l’affichage d’une vignette en mode Focus, cliquez sur Obtenir des informations pour rechercher la vignette et les données associées pour voir automatiquement et en quelques secondes les corrélations, les valeurs hors norme, les tendances, la saisonnalité, les points de changement dans les tendances et d’autres facteurs importants.
+* [Quick Insights sur des vignettes de tableau de bord](consumer/end-user-insights.md) : lorsque vous consultez une vignette en mode Focus, cliquez sur Obtenir des insights pour rechercher, automatiquement et en quelques secondes, les corrélations, les valeurs hors norme, les tendances, la saisonnalité, les points de changement dans les tendances et d’autres facteurs importants dans la vignette et les données associées.
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/).
 
 **26 avril 2016**
 
-* Narrations pour Power BI : lorsque vous interagissez avec vos données et vos visualisations, cet élément visuel personnalisé propose des informations de façon dynamique sous forme narrative, comme pourrait les écrire un analyste. Cet élément visuel est proposé par [Narrative Science Quill](https://www.narrativescience.com/quill).
+* Textes descriptifs pour Power BI : pendant l’interaction avec des données et des visualisations, ce visuel personnalisé offre de façon dynamique des insights sous forme narrative, comme pourrait les écrire un analyste. Cet élément visuel est proposé par [Narrative Science Quill](https://www.narrativescience.com/quill).
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/get-natural-language-narratives-in-power-bi-reports/).
 
 **16 avril 2016**
 
-* Microsoft Trust Center : Power BI rejoint Microsoft Trust Center, une source unique pour documenter les certifications de conformité des produits Microsoft. Les certifications de Power BI incluent les normes ISO 27001, ISO 27018, les clauses contractuelles type de l’UE, HIPAA BAA et UK G-Cloud.
+* Centre de confidentialité Microsoft : Power BI rejoint le Centre de confidentialité Microsoft, source unique de documentation des certifications de conformité des produits Microsoft. Les certifications de Power BI incluent les normes ISO 27001, ISO 27018, les clauses contractuelles type de l’UE, HIPAA BAA et UK G-Cloud.
 
 Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/power-bi-added-to-microsoft-trust-center/).
 
@@ -238,11 +238,11 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 ***Entreprise***
 
 * [ExpressRoute](service-admin-power-bi-expressroute.md) : permet d’établir une connexion privée et gérée avec Power BI.
-* [Prise en charge du pack de contenu pour la sécurité au niveau des lignes](service-admin-rls.md) (version préliminaire) : si la sécurité au niveau des lignes est définie pour les tableaux de bord et les rapports qui sont distribués dans le cadre d’un pack de contenu, les règles de sécurité seront respectées pour ces packs de contenu.
+* [Prise en charge du pack de contenu de la sécurité SNL](service-admin-rls.md) (préversion) : si la sécurité SNL est définie pour les tableaux de bord et les rapports distribués dans un pack de contenu, les règles de sécurité sont respectées pour ces packs de contenu.
 
 ***Tableaux de bord***
 
-* [Vignette vidéo Vimeo](service-dashboard-add-widget.md) : dans le tableau de bord, ajoutez une vignette contenant un lecteur Vimeo intégré.
+* [Vignette vidéo Vimeo](service-dashboard-add-widget.md) :  dans le tableau de bord, ajoutez une vignette contenant un lecteur Vimeo incorporé.
 
 ***Analyser dans Excel***
 
@@ -266,7 +266,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 
 ***Q&R***
 
-* Saisie semi-automatique pour « est » : la fonctionnalité Q&R suggère désormais des valeurs si vous tapez le nom de la colonne suivi de « est ».
+* Autocomplétion de « is » : la fonctionnalité Questions et réponses suggère des valeurs si l’on tape le nom de la colonne suivi de « is ».
 
 ***Mobile***
 
@@ -403,7 +403,7 @@ Un grand nombre de mises à jour de cette semaine, la plupart s’appliquant à 
 * Améliorations apportées aux visualisations :
   
   1. repère des éléments visuels pour l’état de tri dans l’élément visuel Table
-  2. nouvel élément visuel : graphique à aires empilées
+  2. nouveau visuel : graphique à aires empilées
   3. info-bulles dynamiques pour les graphiques Aires et Courbes au passage du curseur
   4. possibilité de créer une ligne/région de référence pour un élément visuel Cartésien
   5. étiquettes de données améliorées pour les graphiques Secteur et Nuage de points
@@ -421,10 +421,10 @@ Un grand nombre de mises à jour de cette semaine, la plupart s’appliquant à 
   1. Prise en charge multidimensionnelle de SSAS – prise en charge des hiérarchies (version Preview)
   2. Connecteur Stripe
   3. Connecteur Smartsheet
-  4. « Entrer des données » : coller ou entrer des données pour créer une table
-  5. Améliorations apportées à DirectQuery : prise en charge de tous les types de données de T-SQL et de SAP HANA pour accroître les performances
-  6. Connecteur ODBC : prise en charge de la sélection des noms de sources de données utilisateur/système
-  7. Connecteur CSV : possibilité de spécifier le délimiteur de colonne dans la boîte de dialogue Source
+  4. « Entrer des données » : coller ou entrer des données pour créer une table
+  5. Améliorations apportées à DirectQuery :  prise en charge de tous les types de données de T-SQL et de SAP HANA pour accroître les performances
+  6. Connecteur ODBC : prise en charge de la sélection des noms de sources de données utilisateur/système
+  7. Connecteur CSV : possibilité de spécifier le délimiteur de colonne dans la boîte de dialogue Source
 
 Pour plus d’informations, y compris une vidéo présentant un grand nombre de ces mises à jour, consultez le [blog Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx).
 
@@ -447,8 +447,8 @@ Pour plus d’informations, y compris une vidéo présentant un grand nombre de 
 * [Visualiser vos données VMob dans Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Intégration de Power BI avec Cortana](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Version préliminaire de la passerelle Power BI pour les entreprises](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
-* Présentation d’un nouveau pack de contenu : [Analyse de la recherche à partir de Bing dans les tableaux de bord Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
-* Nouvelles améliorations destinées aux développeurs : [Deux nouvelles API et inscription facilitée des applications](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
+* Présentation d’un nouveau pack de contenu : [Analyse de la recherche Bing sur les tableaux de bord Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
+* Nouvelles améliorations destinées aux développeurs : [Deux nouvelles API et inscription d’application facilitée](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
 **24 novembre 2015**
 
@@ -541,7 +541,7 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 * Bénéficiez de davantage de souplesse pour personnaliser vos tableaux de bord avec des tailles de vignettes supplémentaires, allant de 1 x 1 à 5 x 5.
 * Vous pouvez désormais [partager un tableau de bord (ou en annuler le partage) à partir de votre espace de groupe](service-collaborate-power-bi-workspace.md) exactement comme vous le feriez dans votre propre espace. Une fois que vos collègues acceptent votre invitation de partage, le tableau de bord partagé (et les rapports associés) est ajouté dans leur propre espace avec une autorisation de lecture seule.
-* Nous avons ajouté à Power BI cinq [exemples supplémentaires liés à un usage professionnel](sample-datasets.md) : Rentabilité des clients, Ressources humaines, Analyse des opportunités, Analyse de l’approvisionnement et Vente et marketing.
+* Nous avons ajouté à Power BI cinq [exemples supplémentaires liés à différents secteurs](sample-datasets.md) : Rentabilité des clients, Ressources humaines, Analyse des opportunités, Analyse de l’approvisionnement et Vente et marketing.
 * Stripe est une plateforme de paiement avancée pour les entreprises opérant en ligne. Des entreprises naissantes aux entreprises figurant au classement de Fortune 500, des milliers d’organisation utilisent Stripe pour encaisser des paiements dans plus de 130 devises, en provenance de personne partout dans le monde. En connectant Power BI à votre compte Stripe, vous pouvez [utiliser le pack de contenu Stripe de Power BI pour analyser, explorer et visualiser votre activité Stripe](service-connect-to-stripe.md).
 
 [Pour en savoir plus, consultez notre blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/22/power-bi-weekly-service-update-0922.aspx).
@@ -592,11 +592,11 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 **24 juillet 2015**
 
 * Nous sommes heureux d’annoncer le lancement de Power BI en disponibilité générale (version GA). Inscrivez-vous dès aujourd’hui à [Power BI Pro](service-self-service-signup-for-power-bi.md). La version GA offre de nouvelles fonctionnalités très utiles :
-* Nouvelle expérience en matière de création de visualisations et de rapports : le nouveau canevas de création de rapports propose un plus large éventail de visualisations et offre davantage de contrôle sur la mise en forme des vignettes, légendes, axes, couleurs, arrière-plans, etc.
+* Nouvelle expérience de visualisation et de création de rapports : le nouveau canevas de création de rapports propose un plus large éventail de visualisations et offre davantage de contrôle sur la mise en forme des vignettes, des légendes, des axes, des couleurs, des arrière-plans, etc.
 * [Groupes Power BI](service-create-distribute-apps.md) : ils offrent de puissantes fonctionnalités de collaboration basées sur les groupes Office 365.
-* [Packs de contenus d’organisation](service-organizational-content-pack-introduction.md) : Power BI facilite considérablement la création des tableaux de bord et des rapports, et permet maintenant aux utilisateurs de publier leurs contenus dans la bibliothèque de contenus d’organisation.
-* [Importation de fichiers Excel entiers](service-excel-workbook-files.md) : vous pouvez importer n’importe quel classeur Excel stocké sur OneDrive Entreprise dans Power BI et afficher le classeur entier, exactement comme vous le feriez dans Excel Online.
-* [Importation de fichiers CSV](service-get-data-from-files.md) : comme tout fichier Excel ou Power BI Desktop, un fichier texte de valeurs séparées par des virgules (CSV) peut également servir de jeu de données pour vos tableaux de bord et rapports Power BI.
+* [Packs de contenu professionnels](service-organizational-content-pack-introduction.md) : Power BI facilite considérablement la création de tableaux de bord et de rapports, et permet maintenant aux utilisateurs de publier ces contenus dans la galerie de contenus professionnelle.
+* [Importer des fichiers Excel entiers](service-excel-workbook-files.md) : il est possible d’importer dans Power BI n’importe quel classeur Excel stocké sur OneDrive Entreprise et d’afficher la totalité du classeur, exactement comme avec Excel Online.
+* [Importer des fichiers CSV](service-get-data-from-files.md) : comme tout fichier Excel ou Power BI Desktop, un fichier texte de valeurs séparées par des virgules (CSV) peut également servir de jeu de données pour des tableaux de bord et des rapports Power BI.
 * Remplacement de fichiers Excel, Power BI Desktop et CSV : vous pouvez charger une version mise à jour d’un fichier dans Power BI pour remplacer le jeu de données existant. Tous les rapports et tableaux de bord connectés à ce jeu de données utiliseront automatiquement la nouvelle version.
 * Grâce à la mise à jour de Power BI que nous avons effectuée cette semaine, les utilisateurs peuvent désormais effectuer le suivi des éléments de travail à l’aide du [pack de contenu Visual Studio Online](http://blogs.msdn.com/b/powerbi/archive/2015/07/22/monitoring-your-visual-studio-online-work-items-with-power-bi.aspx). Cette mise à jour comprend un nouveau tableau de bord, un nouveau rapport ainsi qu’un jeu de données mis à jour permettant d’obtenir des informations détaillées sur vos éléments de travail, en plus des métriques importantes concernant votre référentiel Git, les demandes d’extraction et le contenu de gestion de version incluses dans la version initiale. Pour plus d’informations sur la prise en main, consultez notre [rubrique d’aide sur le pack de contenu Visual Studio Online pour Power BI](service-connect-to-quickbooks-online.md).
 

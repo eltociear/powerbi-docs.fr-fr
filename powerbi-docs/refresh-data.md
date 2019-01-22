@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: bb29cd9edc5e44293344b7194ec94af482bd0166
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 097f0ae9da29d193fd7a337c9a164ab8c67dc4d9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417369"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277661"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 L’obtention des données les plus récentes constitue souvent un facteur essentiel à la prise de décisions informées. Vous avez sans doute déjà utilisé la fonctionnalité Obtenir des données de Power BI pour vous connecter à des données et les charger, voire générer des rapports et un tableau de bord. Avant d’aller plus loin, vous devez vous assurer que les données que vous utilisez sont vraiment les plus récentes.
@@ -221,7 +221,7 @@ Bien souvent, le meilleur moyen de se familiariser avec l’actualisation des do
 ### <a name="excel-workbook-with-tables-of-data"></a>Classeur Excel avec des tables de données
 Vous disposez d’un classeur Excel contenant plusieurs tables de données, mais aucune d’entre elles n’est chargée dans le modèle de données Excel. Vous utilisez la fonctionnalité Obtenir des données pour charger le fichier de classeur de votre disque local dans Power BI, puis vous créez un tableau de bord. Après avoir modifié quelques tables du classeur sur votre disque local, vous souhaitez mettre à jour votre tableau de bord dans Power BI avec les nouvelles données.
 
-Malheureusement, ce scénario ne prend pas en charge l’actualisation. Pour actualiser le jeu de données de votre tableau de bord, vous devez charger à nouveau le classeur. Il existe cependant une solution brillante qui consiste à placer votre fichier de classeur sur OneDrive ou SharePoint Online.
+Malheureusement, ce scénario ne prend pas en charge l’actualisation. Pour actualiser le jeu de données de votre tableau de bord, vous devez charger à nouveau le classeur. Toutefois, il existe une solution brillante : Placez votre fichier de classeur sur OneDrive ou SharePoint Online !
 
 Quand vous vous connectez à un fichier sur OneDrive ou SharePoint Online, vos rapports et tableaux de bord affichent les données telles qu’elles apparaissent dans le fichier (dans le cas présent, un classeur Excel). Toutes les heures, Power BI examine automatiquement le fichier pour voir s’il a été mis à jour. Ainsi, si vous modifiez le classeur (stocké dans OneDrive ou SharePoint Online), les modifications sont reflétées dans votre tableau de bord et vos rapports dans l’heure qui suit. Il n’est en aucune façon nécessaire de configurer l’actualisation. Toutefois, si vous souhaitez examiner immédiatement vos mises à jour dans Power BI, vous pouvez actualiser manuellement le jeu de données à l’aide de la fonctionnalité Actualiser maintenant.
 

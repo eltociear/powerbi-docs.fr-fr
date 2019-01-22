@@ -5,23 +5,23 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 660f79eab32ae7ade5cea990c6fc152bb9507297
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: db3184f7bc3c181b685c22d0bcad27206b4a0f8f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34285965"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296360"
 ---
-# <a name="step-1-register-an-app-with-azure-ad"></a>Étape 1 : Inscrire une application auprès d’Azure AD
+# <a name="step-1-register-an-app-with-azure-ad"></a>Étape 1 : Inscrire une application auprès d’Azure AD
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
 La première étape pour transmettre des données à un jeu de données Power BI consiste à inscrire votre application dans Azure AD. Vous devez commencer par cette inscription pour obtenir un **ID client** qui identifie votre application dans Azure AD. Sans **ID client**, Azure AD ne peut pas authentifier votre application.
 
-> **REMARQUE** : avant d’inscrire une application pour Power BI, vous devez vous [Inscrire à Power BI](create-an-azure-active-directory-tenant.md).
+> **REMARQUE** : Pour pouvoir inscrire une application auprès de Power BI, il est impératif de [S’inscrire à Power BI](create-an-azure-active-directory-tenant.md).
 > 
 > 
 
@@ -47,7 +47,7 @@ L’étape suivante vous montre comment [obtenir un jeton d’accès d’authent
 ## <a name="next-steps"></a>Étapes suivantes
 [S’inscrire à Power BI](create-an-azure-active-directory-tenant.md)  
 [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)  
-[Procédure pas à pas : Transmettre des données à un jeu de données](walkthrough-push-data.md)  
+[Procédure pas à pas : Effectuer une transmission de données de type push à un jeu de données](walkthrough-push-data.md)  
 [Inscrire une application](register-app.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 

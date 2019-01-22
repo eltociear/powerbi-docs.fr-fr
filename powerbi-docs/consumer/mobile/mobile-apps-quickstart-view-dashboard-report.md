@@ -1,29 +1,29 @@
 ---
-title: 'Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles'
+title: 'Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles'
 description: Dans ce guide de démarrage rapide, vous allez explorer un exemple de tableau de bord et de rapport dans les applications mobiles Power BI.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 11/16/2018
-ms.author: maggies
-ms.openlocfilehash: 6d5d543c3654da13592b24f4c70bc964eb7bddff
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.author: mshenhav
+ms.openlocfilehash: 9bb6dec4cdb689d2a21812b1dab8ebeb49090542
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157261"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279110"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI
 Dans ce guide de démarrage rapide, vous allez explorer des tableaux de bord et des rapports dans les applications mobiles Power BI sur un téléphone Android. Vous pouvez également le suivre sur les autres applications mobiles. 
 
 S’applique à :
 
-| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Android](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Appareils Windows 10](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![iPad](./media/mobile-apps-quickstart-view-dashboard-report/ipad-logo-30-px.png) | ![Téléphone](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | ![Appareils Windows 10](./media/mobile-apps-quickstart-view-dashboard-report/win-10-logo-30-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone | iPad | Android | Windows 10 |
+| iPhone | iPad | Téléphone | Windows 10 |
 
 Un tableau de bord est un portail qui donne accès au cycle de vie et aux processus de votre entreprise. Il fournit une vue d’ensemble, un emplacement unique d’où surveiller l’état actuel des activités de l’entreprise. Les rapports constituent une vue interactive des données, avec des visuels représentant différentes observations et différents insights. 
 
@@ -153,5 +153,5 @@ Maintenant que vous avez suivi ce guide de démarrage rapide, vous pouvez si vou
 Dans ce guide de démarrage rapide, vous avez exploré un exemple de tableau de bord et de rapport sur votre appareil Android. Découvrez plus en détail comment travailler avec le service Power BI. 
 
 > [!div class="nextstepaction"]
-> [Démarrage rapide : Découvrir le service Power BI](../end-user-experience.md)
+> [Démarrage rapide : Découverte du service Power BI](../end-user-experience.md)
 

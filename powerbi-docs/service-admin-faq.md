@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 494612b9c8ef448756dfe2d516bfca68e69d2e7a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830306"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296820"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -67,13 +67,13 @@ En outre, les utilisateurs de votre organisation peuvent s’inscrire à Power 
 
 Trois scénarios peuvent s’appliquer aux utilisateurs de votre organisation :
 
-* **Scénario 1** : votre organisation possède déjà un environnement Office 365 et l’utilisateur qui s’inscrit à Power BI a déjà un compte Office 365.
+* **Scénario 1** : votre organisation possède déjà un environnement Office 365, et l’utilisateur qui s’inscrit à Power BI a déjà un compte Office 365.
     Dans ce scénario, si un utilisateur possède déjà un compte professionnel ou scolaire dans le client (par exemple, contoso.com) mais n’a pas encore Power BI, Microsoft active simplement l’offre pour ce compte et l’utilisateur est automatiquement informé sur la manière d’utiliser le service Power BI.
 
-* **Scénario 2** : votre organisation possède un environnement Office 365, mais l’utilisateur qui s’inscrit à Power BI n’a pas de compte Office 365.
+* **Scénario 2** : votre organisation possède déjà un environnement Office 365, mais l’utilisateur qui s’inscrit à Power BI n’a pas de compte Office 365.
     Dans ce scénario, l’utilisateur possède une adresse de messagerie appartenant au domaine de votre organisation (par exemple, contoso.com), mais il ne possède pas encore de compte Office 365. Dans ce cas, l’utilisateur peut s’inscrire à Power BI et reçoit automatiquement un compte. Il peut ainsi accéder au service Power BI. Par exemple, si une employée nommée Nancy utilise son adresse e-mail professionnelle (par exemple, nancy@contoso.com) pour s’inscrire, Microsoft ajoute automatiquement Nancy en tant qu’utilisateur dans l’environnement Office 365 de Contoso et active Power BI pour son compte.
 
-* **Scénario 3** : votre organisation n’a pas d’environnement Office 365 connecté à votre domaine de courrier.
+* **Scénario 3** : votre organisation n’a pas d’environnement Office 365 connecté à votre domaine de courrier.
     Il n’est pas nécessaire que votre organisation prenne une action administrative pour utiliser Power BI. Les utilisateurs sont ajoutés à un nouveau répertoire utilisateur situé dans le cloud et vous avez la possibilité de devenir l’administrateur client et de gérer les utilisateurs.
 
 > [!IMPORTANT]
@@ -156,13 +156,13 @@ Pour permettre aux utilisateurs existants de s’inscrire à Power BI, exécute
 
 Trois scénarios peuvent s’appliquer aux utilisateurs de votre organisation :
 
-* **Scénario 1** : si votre organisation possède déjà un environnement Office 365 et que tous les utilisateurs de votre organisation ont des comptes Office 365, la manière dont vous gérez les identités n’est pas modifiée.
+* **Scénario 1** : si votre organisation possède déjà un environnement Office 365 et que tous les utilisateurs de votre organisation ont un compte Office 365, la gestion des identités n’est pas modifiée.
 
-* **Scénario 2** : si votre organisation possède déjà un environnement Office 365, mais que tous les utilisateurs n’ont pas de compte Office 365, Microsoft crée un utilisateur dans le client et attribue des licences en fonction de l’adresse e-mail professionnelle ou scolaire de l’utilisateur.
+* **Scénario 2** : si votre organisation possède déjà un environnement Office 365, mais que tous les utilisateurs n’ont pas de compte Office 365, Microsoft crée un utilisateur dans le client et attribue des licences en fonction de l’adresse e-mail professionnelle ou scolaire de l’utilisateur.
 
     Cela signifie que le nombre d’utilisateurs que vous gérez à un moment donné augmente à mesure que les utilisateurs de votre entreprise s’inscrivent au service.
 
-* **Scénario 3** : si l’entreprise ne dispose pas d’un environnement Office 365 connecté à votre domaine de courrier, la manière dont vous gérez les identités n’est pas modifiée.
+* **Scénario 3** : Si votre organisation ne possède pas d’environnement Office 365 connecté à votre domaine de courrier, la gestion des identités n’est pas modifiée.
 
     Les utilisateurs sont ajoutés à un nouveau répertoire utilisateur situé dans le cloud et vous avez la possibilité de devenir l’administrateur client et de gérer les utilisateurs.
 
@@ -186,7 +186,7 @@ Lorsque vous effectuez une prise de contrôle externe, le contenu Power BI qui a
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Si j’utilise plusieurs domaines, puis-je contrôler le client Office 365 auquel sont ajoutés les utilisateurs ?
 
-Si vous ne faites rien, un locataire est créé pour chaque domaine et sous-domaine de courrier de l’utilisateur. Si vous voulez que tous les utilisateurs se trouvent dans le même client indépendamment des extensions de leurs adresses e-mail, créez un client cible au préalable, ou utilisez un client existant, puis ajoutez tous les domaines et sous-domaines existants que vous voulez consolider au sein de ce client. Tous les utilisateurs dont les adresses e-mail se terminent par ces domaines et sous-domaines sont alors automatiquement associés au locataire cible lorsqu’ils se connectent.
+Si vous ne faites rien, un locataire est créé pour chaque domaine et sous-domaine de courrier de l’utilisateur. Si vous voulez regrouper tous les utilisateurs dans un seul client quelle que soit leur extension d’adresse de messagerie : Créez un client cible au préalable, ou utilisez un client existant, puis ajoutez tous les domaines et sous-domaines existants que vous voulez consolider au sein de ce client. Tous les utilisateurs dont les adresses e-mail se terminent par ces domaines et sous-domaines sont alors automatiquement associés au locataire cible lorsqu’ils se connectent.
 
 > [!IMPORTANT]
 > Il n’existe aucun mécanisme automatique permettant de déplacer des utilisateurs d’un client à l’autre une fois ceux-ci créés. Pour en savoir plus sur l’ajout de domaines à un seul client Office 365, consultez [Vérifier votre domaine dans Office 365, configurer des domaines](/office365/admin/setup/add-domain/).

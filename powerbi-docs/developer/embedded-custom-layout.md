@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
 ms.author: maghan
-ms.openlocfilehash: 36f9665f0e42ee62e5a1a4a7584a2492bea276b0
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37597909"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288931"
 ---
 # <a name="custom-layouts"></a>Dispositions personnalisées
 
@@ -64,9 +64,9 @@ enum DisplayOption {
 }
 ```
 
-- `pageSize` : utilisez la taille de page pour contrôler la taille du canevas (par exemple, zone blanche du rapport).
-- `displayOptions` : les valeurs possibles sont FitToWidth, FitToPage ou ActualSize. Cette option contrôle la mise à l’échelle du canevas pour l’ajuster au Iframe.
-- `pagesLayout` : contrôle la disposition de chaque visuel. Pour plus d’informations, contactez la rubrique sur la disposition des pages.
+- `pageSize` : Utilisez la taille de page pour contrôler la taille du canevas (par exemple, zone blanche du rapport).
+- `displayOptions` : Les valeurs possibles sont : FitToWidth, FitToPage ou ActualSize. Cette option contrôle la mise à l’échelle du canevas pour l’ajuster au Iframe.
+- `pagesLayout` : Contrôle la disposition de chaque visuel. Pour plus d’informations, contactez la rubrique sur la disposition des pages.
 
 ## <a name="pages-layout"></a>Disposition des pages
 
@@ -111,9 +111,9 @@ enum VisualContainerDisplayMode {
 }
 ```
 
-- `x,y,z` : définit la nouvelle position du visuel.
-- `width`, hauteur : définit la nouvelle taille du visuel.
-- `displayState` : définit la visibilité du visuel.
+- `x,y,z` : Définit la nouvelle position du visuel.
+- `width`, hauteur : Définit la nouvelle taille du visuel.
+- `displayState` : Définit la visibilité du visuel.
 
 
 ## <a name="update-layout"></a>Mettre à jour la disposition

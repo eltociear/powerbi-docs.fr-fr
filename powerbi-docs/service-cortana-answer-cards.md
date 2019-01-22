@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3a0ef369aa690044dbef9c4ef0cda070565b9922
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: e1748c478f9f58b568b901f3a243e64e4658f6a6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829892"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54273084"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Utiliser le service Power BI ou Power BI Desktop pour créer une page de réponse personnalisée pour Cortana
 Utilisez les fonctionnalités complètes de Power BI pour créer des pages de rapport spéciales, nommées *pages de réponse Cortana* (ou parfois *cartes de réponse Cortana*), spécifiquement conçues pour répondre aux questions de Cortana.
@@ -32,11 +32,11 @@ Vous avez à votre disposition quatre documents qui vous guident dans la configu
 
 **Article 1** : [Découvrir comment Cortana et Power BI fonctionnent ensemble](service-cortana-intro.md)
 
-**Article 2** : [pour rechercher dans des rapports Power BI : activer l’intégration de Cortana - Power BI - Windows](service-cortana-enable.md)
+**Article 2** : [Pour la recherche dans les rapports Power BI : Activer l’intégration Cortana - Power BI - Windows](service-cortana-enable.md)
 
-**Article 3** : cet article
+**Article 3** : Cet article
 
-**Article 4** : [résoudre les problèmes](service-cortana-troubleshoot.md)
+**Article 4** : [Résoudre les problèmes](service-cortana-troubleshoot.md)
 
 ## <a name="create-a-cortana-answer-page-designed-specifically-for-cortana"></a>Créer une page de réponse Cortana spécifiquement conçue pour Cortana
 Une *page de réponse Cortana* dans un rapport est dimensionnée spécifiquement pour que Cortana puisse l’afficher à l’écran en tant que réponse à une question. Pour créer une page de réponse pour Cortana :

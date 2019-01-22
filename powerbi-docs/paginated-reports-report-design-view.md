@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 85950e2510147c3bed36d4911360f7c365c79da6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900448"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283526"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Découverte du mode Création de rapport pour les rapports paginés - Power BI (préversion)
 
@@ -88,14 +88,14 @@ La taille du canevas de conception peut être différente de la zone d’impress
  Selon la propriété sélectionnée, vous pouvez définir une valeur de propriété dans la liste déroulante, taper la valeur ou sélectionner `<Expression>` pour créer une expression.  
   
 ### <a name="changing-the-properties-pane-view"></a>Modification de l’affichage du volet des propriétés  
- Par défaut, les propriétés affichées dans le volet des propriétés sont classées en catégories, par exemple Action, Bordure, Remplissage, Police et Général. Chaque catégorie est associée à un ensemble de propriétés. Par exemple, les propriétés suivantes sont répertoriées dans la catégorie Police : Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight et TextDecoration. Si vous préférez, vous pouvez classer par ordre alphabétique toutes les propriétés répertoriées dans le volet. Cela supprime les catégories et classe toutes les propriétés par ordre alphabétique, quelle que soit la catégorie.  
+ Par défaut, les propriétés affichées dans le volet des propriétés sont classées en catégories, par exemple Action, Bordure, Remplissage, Police et Général. Chaque catégorie est associée à un ensemble de propriétés. Par exemple, les propriétés suivantes sont répertoriées dans la catégorie Police : Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight, et TextDecoration. Si vous préférez, vous pouvez classer par ordre alphabétique toutes les propriétés répertoriées dans le volet. Cela supprime les catégories et classe toutes les propriétés par ordre alphabétique, quelle que soit la catégorie.  
   
- Trois boutons apparaissent en haut du volet des propriétés : **Catégorie**, **Alphabétiser** et **Page de propriétés**. Sélectionnez les boutons Catégorie et Alphabétiser pour basculer entre les affichages du volet des propriétés. Sélectionnez le bouton **Pages de propriétés** pour ouvrir la boîte de dialogue des propriétés d’un élément de rapport sélectionné.  
+ Le haut du volet Propriétés possède trois boutons : **Catégorie**, **Classer par ordre alphabétique** et **Page des propriétés**. Sélectionnez les boutons Catégorie et Alphabétiser pour basculer entre les affichages du volet des propriétés. Sélectionnez le bouton **Pages de propriétés** pour ouvrir la boîte de dialogue des propriétés d’un élément de rapport sélectionné.  
   
   
 ## <a name="5-grouping-pane"></a>5 Volet de regroupement
 
- Les groupes permettent de classer les données de votre rapport selon une hiérarchie visuelle et de calculer des totaux. Vous pouvez afficher les groupes de lignes et de colonnes d’une région de données sur le canevas de conception, ainsi que dans le volet de regroupement. Le volet de regroupement comporte deux volets : Groupes de lignes et Groupes de colonnes. Lorsque vous sélectionnez une région de données, le volet de regroupement affiche tous les groupes au sein de cette région de données sous la forme d’une liste hiérarchique : les groupes enfants apparaissent en retrait, sous leurs groupes parents.  
+ Les groupes permettent de classer les données de votre rapport selon une hiérarchie visuelle et de calculer des totaux. Vous pouvez afficher les groupes de lignes et de colonnes d’une région de données sur le canevas de conception, ainsi que dans le volet de regroupement. Le volet Regroupement comporte deux volets : Groupes de lignes et Groupes de colonnes. Lorsque vous sélectionnez une région de données, le volet de regroupement affiche tous les groupes au sein de cette région de données sous la forme d’une liste hiérarchique : les groupes enfants apparaissent en retrait, sous leurs groupes parents.  
   
  Vous pouvez créer des groupes en faisant glisser des champs dans le volet des données du rapport et en les déposant sur le canevas de conception ou dans le volet de regroupement. Dans le volet de regroupement, vous pouvez ajouter la page parente, adjacente, et les groupes enfants, modifier les propriétés de groupe et supprimer des groupes.  
   

@@ -6,16 +6,16 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 795f97403ea80caad52e57e54edc3d54a4c5d952
-ms.sourcegitcommit: 3b1a1f55465e5dca88783046c6b4c073e4e22e4b
+ms.openlocfilehash: 623eb93c27f0ec762b2c9d063b646d757c3b1f0c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51580537"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296567"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
 
@@ -60,7 +60,7 @@ Les journaux de service de passerelle sont classés en trois catégories : info
 
 Ce fichier se trouve par défaut à l’emplacement *\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config*. Pour configurer le nombre de fichiers journaux à conserver, changez le premier nombre (20 dans cet exemple) : `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`.
 
-### <a name="error-failed-to-create-a-gateway-try-again"></a>Erreur : Échec de la création d’une passerelle. Réessayez
+### <a name="error-failed-to-create-a-gateway-try-again"></a>Erreur : Échec de la création d’une passerelle. Réessayez
 
 Tous les détails sont disponibles, mais l’appel au service Power BI a renvoyé une erreur. L’erreur et un ID d’activité sont affichés. Cela peut se produire pour différentes raisons. Pour plus d’informations, vous pouvez collecter et examiner les journaux comme indiqué ci-dessous.
 
@@ -78,7 +78,7 @@ Les informations ont été reçues du service Power BI vers la passerelle. Elles
 
 Vous pouvez recevoir une erreur de script lorsque vous vous connectez à Power BI dans le cadre de la configuration de la passerelle de données locale. L’installation de la mise à jour de sécurité suivante résout le problème. L’installation peut être effectuée via Windows Update.
 
-[MS16-051 : Mise à jour de sécurité pour Internet Explorer : 10 mai 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
+[MS16-051 : Mise à jour de sécurité pour Internet Explorer : 10 mai 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
 
 ### <a name="gateway-configuration-failed-with-a-null-reference-exception"></a>La configuration de la passerelle a échoué avec une exception de référence null
 
@@ -117,7 +117,7 @@ Par défaut, la passerelle de données locale utilise le protocole TLS (Transpor
 
 ## <a name="data-sources"></a>Sources de données
 
-### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Erreur : connexion impossible. Détails : « Informations d’identification de connexion non valides »
+### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Erreur : Connexion impossible. Détails : « Informations d'identification de connexion non valides »
 
 Le message d’erreur reçu de la source de données apparaît dans **Afficher les détails**. Pour SQL Server, vous voyez un message comme celui-ci.
 
@@ -125,7 +125,7 @@ Le message d’erreur reçu de la source de données apparaît dans **Afficher l
 
 Vérifiez l’exactitude du nom d’utilisateur et du mot de passe. Vérifiez également que les informations d’identification permettent bien de se connecter à la source de données. Vérifiez que le compte utilisé correspond à la **méthode d’authentification**.
 
-### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Erreur : connexion impossible. Détails : « Impossible de se connecter à la base de données »
+### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Erreur : Connexion impossible. Détails : « Impossible de se connecter à la base de données »
 
 Nous avons établi la connexion au serveur, mais pas à la base de données fournie. Vérifiez le nom de la base de données et que les informations d’identification de l’utilisateur possèdent les autorisations appropriées pour accéder à cette base de données.
 
@@ -133,7 +133,7 @@ Le message d’erreur reçu de la source de données apparaît dans **Afficher l
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
-### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Erreur : connexion impossible. Détails : « Erreur inconnue dans la passerelle de données »
+### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Erreur : Connexion impossible. Détails : « Erreur inconnue dans la passerelle de données »
 
 Cette erreur peut se produire pour différentes raisons. Veillez à valider que vous pouvez vous connecter à la source de données à partir de l’ordinateur qui héberge la passerelle. Cela peut être dû au fait que le serveur ne soit pas accessible.
 
@@ -141,7 +141,7 @@ Le code d’erreur **DM_GWPipeline_UnknownError**apparaît dans **Afficher les d
 
 Pour plus d’informations, vous pouvez également consulter les journaux d’événements > **Journaux des applications et des services** > **Service Passerelle de données locale**.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Erreur : Nous avons rencontré une erreur lors de la tentative de connexion à <server> Détails : « Nous avons pu accéder à la data gateway, mais celle-ci ne peut pas accéder à la source de données locale ».
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Erreur : Nous avons rencontré une erreur lors de la tentative de connexion à <server>. Détails : « Nous avons pu accéder à la passerelle de données, mais elle ne peut pas accéder à la source de données locale. »
 
 Nous n’avons pas pu nous connecter à la source de données spécifiée. Veillez à valider les informations fournies pour cette source de données.
 
@@ -182,17 +182,17 @@ Vous devez collaborer avec les administrateurs de domaine pour vérifier la rela
 
 Vérifiez que votre compte est répertorié sous l’onglet **Utilisateurs** de la source de données dans la configuration de la passerelle. Si vous n’avez pas accès à la passerelle, contactez son administrateur pour lui demander d’effectuer des vérifications. Seuls les comptes figurant dans la liste **Utilisateurs** peuvent voir la source de données dans la liste Analysis Services.
 
-### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Erreur : Vous n’avez pas de passerelle installée ou configurée pour les sources de données dans ce jeu de données
+### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Erreur : Aucune passerelle n’est installée ou configurée pour les sources de données de ce jeu de données
 
 Vérifiez que vous avez ajouté une ou plusieurs sources de données à la passerelle, comme décrit dans [Ajouter une source de données](service-gateway-manage.md#add-a-data-source). Si la passerelle n’apparaît pas dans le portail d’administration sous **Gérer les passerelles**, essayez d’effacer le cache de votre navigateur, ou de vous déconnecter du service et de vous y reconnecter.
 
 ## <a name="datasets"></a>Jeux de données
 
-### <a name="error-there-is-not-enough-space-for-this-row"></a>Erreur : espace insuffisant pour cette ligne
+### <a name="error-there-is-not-enough-space-for-this-row"></a>Erreur : espace insuffisant pour cette ligne
 
 Ceci se produit si la taille d’une seule ligne est supérieure à 4 Mo. Vous devez identifier la ligne dans votre source de données et essayer de l’éliminer ou d’en réduire la taille.
 
-### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Erreur : Le nom de serveur fourni ne correspond pas au nom de serveur du certificat SSL SQL Server
+### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Erreur : Le nom de serveur fourni ne correspond pas au nom de serveur du certificat SSL SQL Server
 
 Ceci peut se produire quand le nom commun du certificat correspond au nom de domaine complet du serveur, mais que vous avez fourni seulement le nom NetBIOS du serveur. Ceci provoque une erreur de non-correspondance du certificat. Pour résoudre ce problème, vous devez faire en sorte que le nom de serveur de la source de données de la passerelle et le fichier PBIX utilisent le nom de domaine complet du serveur.
 
@@ -204,7 +204,7 @@ Cela peut être dû à différents scénarios.
 2. Votre compte n’est pas répertorié sous l’onglet **Utilisateurs** de la source de données dans la configuration de la passerelle. Vous devez contacter l’administrateur de la passerelle pour que celui-ci l’ajoute à cette liste.
 3. Votre fichier Power BI Desktop a plusieurs sources de données et celles-ci ne sont pas toutes configurées avec la passerelle. Chaque source de données définie avec la passerelle doit s’afficher dans l’actualisation planifiée.
 
-### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-the-limit"></a>Erreur : Les données non compressées reçues sur le client de la passerelle ont dépassé la limite
+### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-the-limit"></a>Erreur : Les données non compressées reçues sur le client de la passerelle ont dépassé la limite
 
 La limitation exacte est de 10 Go de données non compressées par table. Si vous rencontrez ce problème, il existe plusieurs options pour l’optimiser et l’éviter. Une solution conseillée est de réduire l’utilisation de valeurs de chaîne très longues et constantes, et d’utiliser à la place une clé normalisée ou de supprimer la colonne (si celle-ci n’est pas utilisée).
 
@@ -459,7 +459,7 @@ Suivez ces étapes pour résoudre le problème :
 1. Configurer un SPN pour la passerelle locale
 2. Configurer la délégation contrainte dans votre Active Directory (AD)
 
-### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException : Impossible de créer l’identité Windows pour l’ID de l’utilisateur
+### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException : Impossible de créer l’identité Windows pour l’utilisateur userid
 
 Une exception FailedToImpersonateUserException se produit si vous n’êtes pas en mesure d’emprunter l’identité d’un autre utilisateur. Cela peut également se produire si le compte dont vous tentez d’emprunter l’identité provient d’un autre domaine que celui du domaine de service de la passerelle (il s’agit d’une limitation).
 
@@ -500,7 +500,7 @@ Vous recevez l’erreur 1033 quand votre ID externe qui est configuré dans SAP 
         <value>AADEmail</value>
 ```
 
-### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Majeur : « Échec divers [851968] », mineur : « Aucune information d’identification disponible dans le package de sécurité
+### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Majeur : « Défaillance diverse [851968] », mineur : « Aucune information d’identification disponible dans le package de sécurité
 
 Vous recevez le message d’erreur -10709 Échec de la connexion si votre délégation n’est pas configurée correctement dans Active Directory.
 

@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: d8283f1abf05ab788336413bd18582ea71d4e43f
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: 4ca6d7c5ed47433614dc194db7d09162d5e96eae
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "34296261"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285711"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Comment configurer une actualisation planifiée de rapport Power BI
 Pour actualiser les données dans votre rapport Power BI, vous devez créer un plan d’actualisation planifiée. Cela s’effectue à l’intérieur de la zone *Gérer* d’un rapport Power BI.
@@ -79,7 +79,7 @@ Affichez l’état d’un plan d’actualisation planifiée dans le portail web.
    | Actualisation des données |Actualisation des données dans le modèle. |
    | Suppression des informations d’identification du modèle |Suppression du modèle des informations d’identification utilisées pour se connecter à la source de données. |
    | Enregistrement du modèle dans le catalogue |L’actualisation des données est terminée et le modèle actualisé est réenregistré dans la base de données du catalogue du serveur de rapports. |
-   | Terminé : actualisation des données |L’actualisation est terminée. |
+   | Terminé : Actualisation des données |L’actualisation est terminée. |
    | Erreur : |Une erreur s’est produite lors de l’actualisation et s’affiche. |
 
 La page web doit être actualisée pour afficher l’état actuel. L’état ne changera pas automatiquement.

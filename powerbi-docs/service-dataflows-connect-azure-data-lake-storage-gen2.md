@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 72c3c2fde92de45d3a93f087d217af1f50e50601
-ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
+ms.openlocfilehash: d48df3287813229e673bbc523281cdb2218ec384
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53649042"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277270"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)
 
@@ -76,7 +76,7 @@ Dans la fenêtre **Ajouter une attribution de rôle**, sélectionnez le rôle **
 
 Vous devez créer un système de fichiers nommé *powerbi* avant de pouvoir ajouter votre compte de stockage à Power BI. Il existe de nombreuses façons de créer le système de fichiers, y compris à l’aide d’Azure Databricks, HDInsight, AZCopy ou Explorateur Stockage Azure. Cette section vous montre un moyen simple de créer un système de fichiers à l’aide de l’Explorateur Stockage Azure.
 
-Cette étape nécessite que vous installiez l’Explorateur Stockage Azure version 1.6.1 ou version ultérieure. Pour installer l’Explorateur Stockage Azure pour Windows, Macintosh ou Linux, consultez [Explorateur Stockage Azure](https://azure.microsoft.com/features/storage-explorer/).
+Cette étape nécessite que vous installiez l’Explorateur Stockage Azure version 1.6.2 ou version ultérieure. Pour installer l’Explorateur Stockage Azure pour Windows, Macintosh ou Linux, consultez [Explorateur Stockage Azure](https://azure.microsoft.com/features/storage-explorer/).
 
 1. Une fois que vous avez installé l’Explorateur Stockage Azure, lors du premier lancement, la fenêtre Explorateur Stockage Microsoft Azure - Connexion s’affiche. Bien que l’Explorateur Stockage offre plusieurs façons de se connecter à des comptes de stockage, une seule méthode est actuellement prise en charge pour la configuration requise. 
 

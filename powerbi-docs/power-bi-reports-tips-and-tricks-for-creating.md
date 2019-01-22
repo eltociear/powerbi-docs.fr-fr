@@ -5,17 +5,17 @@ author: davidi
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 2093800f10484a24eb4db9f77f45468ae4b9b4c3
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 02202e8b5e89aa8d312a96d448c825f2ca44447a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829823"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290495"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop et le service Power BI
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des conseils et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop, le service Power BI *et* dans les éditions Microsoft Excel 2016 ou Excel 2013 Pro-Plus avec l’activation du complément Power Pivot et l’activation et l’installation de Power Query.
@@ -30,7 +30,7 @@ Vous pouvez obtenir des informations supplémentaires à partir du [Centre de re
 Vous pouvez également afficher la [référence de formule](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ### <a name="data-types-in-query-editor"></a>Types de données dans l’Éditeur de requête
-Quand vous utilisez l’Éditeur de requête dans Power BI Desktop pour charger des données, celui-ci détecte le type de données sur la base de la meilleure hypothèse.  Si vous utilisez des formules, les paramètres de type de données affectés aux colonnes ne sont parfois pas conservés. Nous vous recommandons donc de vérifier le type de données de vos colonnes après les opérations Charger des données (chargement initial dans l’onglet Requête), Utiliser la première ligne comme en-tête, Ajouter une colonne, Regrouper par, Fusionner et Ajouter, mais aussi avant d’appuyer sur le bouton de chargement des données pour la première fois.
+Quand vous utilisez l’Éditeur de requête dans Power BI Desktop pour charger des données, celui-ci détecte le type de données sur la base de la meilleure hypothèse.  Si vous utilisez des formules, les paramètres de type de données affectés aux colonnes ne sont parfois pas conservés. Vous devez vérifier que le type de données des colonnes est correct après avoir effectué les opérations suivantes :  Charger des données (chargement initial dans l’onglet Requête), Utiliser la première ligne comme en-tête, Ajouter une colonne, Regrouper par, Fusionner et Ajouter, mais aussi avant d’appuyer sur le bouton de chargement des données pour la première fois.
 
 Souvenez-vous de ce point important : le texte en italique dans la grille de données ne signifie pas que le type de données est correctement défini. Cela veut simplement dire que les données ne sont pas considérées comme du texte.
 
@@ -167,8 +167,8 @@ DAX est le langage des formules de calcul dans Power BI Desktop.  Il est optim
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Service Power BI *et* Power BI Desktop
 
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Lisez le livre blanc : [Principes de conception des rapports Power BI](visuals/power-bi-visualization-best-practices.md)
-Ce document fournit les meilleures pratiques liées à la conception de rapports dans Power BI. En commençant par la planification, il présente les principes de conception que vous pouvez appliquer à vos rapports et aux pages et visuels qui composent ces derniers. Bon nombre de ces meilleures pratiques s’appliquent également à la conception de tableaux de bord.
+### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Lisez le livre blanc : [Principes de conception des rapports Power BI](visuals/power-bi-visualization-best-practices.md)
+Ce document fournit les meilleures pratiques en matière de conception de rapports dans Power BI. En commençant par la planification, il présente les principes de conception que vous pouvez appliquer à vos rapports et aux pages et visuels qui composent ces derniers. Bon nombre de ces meilleures pratiques s’appliquent également à la conception de tableaux de bord.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Lisez et/ou regardez « How to design visually stunning reports (and dashboards) in Power BI » (Comment concevoir des rapports et tableaux de bord attrayants dans Power BI).
 Miguel Myers, membre de la communauté, est spécialiste en données et concepteur graphique.

@@ -6,15 +6,15 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
-ms.openlocfilehash: 01bcc545d3ba8edb23ef583467322401780e657d
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 0990f6ddaf458d5723cd04fedf0b34f497de16cb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974181"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278490"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
 
@@ -24,11 +24,11 @@ Avant de commencer à transmettre des données à un jeu de données, vous devez
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Étapes de transmission de données à un jeu de données
 
-* Étape 1 : [Inscrire une application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
-* Étape 2 : [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)
-* Étape 3 : [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)
-* Étape 4 : [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)
-* Étape 5 : [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)
+* Étape 1 : [Inscrire une application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
+* Étape 2 : [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md)
+* Étape 3 : [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)
+* Étape 4 : [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md)
+* Étape 5 : [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)
 
 La section suivante est une présentation générale des opérations de l’API Power BI qui transmettent des données.
 
@@ -59,7 +59,7 @@ La chaîne JSON d’un jeu de données est au format suivant :
         ]
     }
 
-Ainsi, pour notre exemple de jeu de données Sales Marketing, vous transmettriez une chaîne JSON, comme dans l’exemple ci-dessous. Dans cet exemple, **SalesMarketing** est le nom du jeu de données et **Product** le nom de la table. Après avoir défini la table, vous définissez le schéma de table. Pour le jeu de données **SalesMarketing** , le schéma de table comporte ces colonnes : ProductID, Manufacturer, Category, Segment, Product et IsCompete.
+Ainsi, pour notre exemple de jeu de données Sales Marketing, vous transmettriez une chaîne JSON, comme dans l’exemple ci-dessous. Dans cet exemple, **SalesMarketing** est le nom du jeu de données et **Product** le nom de la table. Après avoir défini la table, vous définissez le schéma de table. Pour le jeu de données **SalesMarketing**, le schéma de table comporte ces colonnes : ProductID, Manufacturer, Category, Segment, Product, et IsCompete.
 
 **Exemple d’objet JSON de jeu de données**
 
@@ -112,7 +112,7 @@ Pour un schéma de table Power BI, vous pouvez utiliser les types de données su
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>En savoir plus sur la transmission de données à Power BI
 
-Pour commencer à transmettre des données à un jeu de données, consultez [Étape 1 : Inscrire une application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) dans le volet de navigation gauche.
+Pour commencer à transmettre des données à un jeu de données, consultez [Étape 1 : Inscrire une application avec Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) dans le volet de navigation gauche.
 
 [Étape suivante >](walkthrough-push-data-register-app-with-azure-ad.md)
 

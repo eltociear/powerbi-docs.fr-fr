@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: a5762964b75d73d8dabceac58c47f616753b94cc
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 31a7221d3b284e6342b192384f92616a52e12631
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830175"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280246"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Créer un nouveau rapport du service Power BI en important un jeu de données
 Vous avez lu [apports dans Power BI](consumer/end-user-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe de nombreuses façons de créer un rapport. Dans cet article, nous allons commencer par créer un rapport très basique à partir d’un jeu de données Excel à l’aide du service Power BI. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, les **Étapes suivantes** plus bas vous dirigeront vers des rubriques plus avancées concernant les rapports.  
@@ -46,7 +46,7 @@ Cette méthode de création d’un rapport démarre avec un jeu de données et u
    
    ![éditeur de rapport](media/service-report-create-new/power-bi-blank-report.png)
 
-> **CONSEIL** : si vous n’êtes pas familiarisé avec le canevas de modification de rapport ou si avez besoin de vous rafraîchir la mémoire, [suivez la visite guidée de l’éditeur de rapport](service-the-report-editor-take-a-tour.md) avant de continuer.
+> **CONSEIL** : Si vous n’êtes pas familiarisé avec le canevas de modification de rapport ou si avez besoin de vous rafraîchir la mémoire, [suivez la visite guidée de l’éditeur de rapport](service-the-report-editor-take-a-tour.md) avant de continuer.
 > 
 > 
 

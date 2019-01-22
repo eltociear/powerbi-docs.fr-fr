@@ -1,23 +1,23 @@
 ---
-title: 'Exemple Analyse de la qualité des fournisseurs pour Power BI : visite guidée'
-description: 'Exemple Analyse de la qualité des fournisseurs pour Power BI : visite guidée'
+title: 'Exemple Analyse de la qualité des fournisseurs pour Power BI : Visite guidée'
+description: 'Exemple Analyse de la qualité des fournisseurs pour Power BI : Visite guidée'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 0b214e2c08e6a39e4b09643c02bccedb56d5b9f4
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 3ef48bbe55793825693382252ac143068549d7a8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717651"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292979"
 ---
-# <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la qualité des fournisseurs pour Power BI : visite guidée
+# <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la qualité des fournisseurs pour Power BI : Visite guidée
 
 ## <a name="a-brief-overview-of-the-supplier-quality-analysis-sample"></a>Courte présentation de l’exemple Analyse de la qualité des fournisseurs
 Cet exemple sectoriel de tableau de bord et son rapport sous-jacent se focalisent sur l’un des enjeux classiques dans une chaîne d’approvisionnement : l’analyse de la qualité des fournisseurs.
@@ -46,7 +46,7 @@ Il s’agit de données réelles provenant d’obviEnce ([www.obvience.com](http
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez l’**exemple Analyse de la qualité des fournisseurs**, puis choisissez **Se connecter**.  
   
-   ![Supplier Quality Analysis Sample](media/sample-supplier-quality/supplier16.png)
+   ![Exemple d’analyse de qualité du fournisseur](media/sample-supplier-quality/supplier16.png)
    
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. 
    
@@ -167,5 +167,5 @@ Examinons une autre vignette de tableau de bord relative au nombre total de déf
 
 Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours choisir de ne pas enregistrer les modifications apportées. Mais si vous les enregistrez, vous pouvez toujours accéder à **Obtenir des données** pour avoir une nouvelle copie de cet exemple.
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
+## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
 Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations des données sur la qualité des fournisseurs. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).

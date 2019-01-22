@@ -4,17 +4,17 @@ description: Découvrez comment publier des applications qui sont des collection
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100815"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294053"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publier des applications avec des tableaux de bord et des rapports dans Power BI
 
@@ -31,14 +31,14 @@ Les utilisateurs obtiennent vos applications de différentes manières. Si l’a
 ## <a name="apps-and-organizational-content-packs"></a>Applications et packs de contenu d’organisation
 Les applications sont l’évolution des packs de contenu d’organisation. Les packs de contenu ne sont pas disponibles dans les expériences des nouveaux espaces de travail en préversion. Une fois l’expérience des nouveaux espaces de travail en disponibilité générale, vous ne pourrez plus utiliser des packs de contenu dans les espaces de travail nouvellement créés. Si vous ne l’avez pas déjà fait, commencez à migrer vos packs de contenu vers des applications.
 
-## <a name="video-apps-and-app-workspaces"></a>Vidéo : applications et espaces de travail d’application
+## <a name="video-apps-and-app-workspaces"></a>Vidéo : Applications et espaces de travail d’application
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="licenses-for-apps"></a>Licences pour des applications
 Chaque membre d’un espace de travail d’application doit avoir une licence Power BI Pro. Pour les utilisateurs des applications, il existe deux options.
 
-* Option 1 : tous les utilisateurs professionnels ont besoin de licences **Power BI Pro** pour consulter votre application. 
-* Option 2 : si votre application se trouve dans une capacité Power BI Premium, les utilisateurs gratuits de votre organisation peuvent consulter le contenu de l’application. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
+* Option 1 : Tous les utilisateurs professionnels ont besoin de licences **Power BI Pro** pour consulter votre application. 
+* Option 2 : Si votre application se trouve dans une capacité Power BI Premium, les utilisateurs gratuits de votre organisation peuvent consulter le contenu de l’application. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
 
 ## <a name="publish-your-app"></a>Publier votre application
 Quand les tableaux de bord et rapports de votre espace de travail sont prêts, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant qu’application. Vous pouvez envoyer un lien direct à un public plus large, ou les destinataires de votre application peuvent trouver celle-ci sous l’onglet Applications en accédant à **Télécharger et explorer d’autres applications d’AppSource**. 

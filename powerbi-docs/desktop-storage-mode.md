@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 26ab2ec7dfd7a091a6a7df89ee4492dc124ed60c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619491"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279179"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Mode de stockage dans Power BI Desktop (préversion)
 
@@ -25,23 +25,23 @@ Dans Microsoft Power BI Desktop, vous pouvez spécifier le *mode de stockage* de
 
 La définition du mode de stockage offre de nombreux avantages. Vous pouvez définir le mode de stockage pour chaque table individuellement dans votre modèle. Cette action permet d’avoir un seul jeu de données, ce qui offre les avantages suivants :
 
-* **Performances des requêtes** : comme les utilisateurs interagissent avec les visuels dans les rapports Power BI, les requêtes Data Analysis Expressions (DAX) sont soumises au jeu de données. La mise en cache des données en mémoire par définition correcte du mode de stockage peut améliorer les performances des requêtes et l’interactivité de vos rapports.
+* **Performances des requêtes** : Comme les utilisateurs interagissent avec les visuels dans les rapports Power BI, les requêtes Data Analysis Expressions (DAX) sont soumises au jeu de données. La mise en cache des données en mémoire par définition correcte du mode de stockage peut améliorer les performances des requêtes et l’interactivité de vos rapports.
 
-* **Jeux de données volumineux** : les tables qui ne sont pas mises en cache ne consomment pas de mémoire pour la mise en cache. Vous pouvez activer une analyse interactive de jeux de données volumineux qui sont trop grands ou trop coûteux pour être complètement mis en cache en mémoire. Vous pouvez choisir quelles tables valent la peine d’être mises en cache et quelles tables n’en valent pas la peine.
+* **Jeux de données volumineux** : Les tables qui ne sont pas mises en cache ne consomment pas de mémoire pour la mise en cache. Vous pouvez activer une analyse interactive de jeux de données volumineux qui sont trop grands ou trop coûteux pour être complètement mis en cache en mémoire. Vous pouvez choisir quelles tables valent la peine d’être mises en cache et quelles tables n’en valent pas la peine.
 
-* **Optimisation de l’actualisation des données** : les tables qui ne sont pas mises en cache n’ont pas besoin d’être actualisées. Vous pouvez réduire les temps d’actualisation en mettant en cache uniquement les données nécessaires pour répondre à vos accords de niveau de service et aux besoins de votre entreprise.
+* **Optimisation de l’actualisation des données** : Les tables qui ne sont pas mises en cache n’ont pas besoin d’être actualisées. Vous pouvez réduire les temps d’actualisation en mettant en cache uniquement les données nécessaires pour répondre à vos accords de niveau de service et aux besoins de votre entreprise.
 
-* **Exigences de temps quasi réel** : les tables avec des exigences de temps quasi réel peuvent tirer parti de ne pas être mises en cache afin de réduire la latence des données.
+* **Exigences de temps quasi réel** : Les tables avec des exigences de temps quasi réel peuvent tirer parti de ne pas être mises en cache afin de réduire la latence des données.
 
-* **Réécriture** : l’écriture différée permet aux utilisateurs professionnels d’analyser des scénarios en modifiant les valeurs des cellules. Des applications personnalisées peuvent appliquer des modifications à la source de données. Les tables qui ne sont pas mises en cache peuvent afficher des modifications immédiatement, permettant l’analyse instantanée des effets.
+* **Réécriture** : L’écriture différée permet aux utilisateurs professionnels d’analyser des scénarios en modifiant les valeurs des cellules. Des applications personnalisées peuvent appliquer des modifications à la source de données. Les tables qui ne sont pas mises en cache peuvent afficher des modifications immédiatement, permettant l’analyse instantanée des effets.
 
 Le paramètre de mode de stockage dans Power BI Desktop est une des trois fonctionnalités connexes :
 
-* **Modèles composites** : permet à un rapport d’avoir deux connexions de données ou plus, y compris des connexions provenant de DirectQuery ou d’une importation, dans toutes les combinaisons. Pour plus d’informations, consultez [Modèles composites dans Power BI Desktop (préversion)](desktop-composite-models.md).
+* **Modèles composites** : Permet à un rapport d’avoir deux connexions de données ou plus, y compris des connexions provenant de DirectQuery ou d’une importation, dans toutes les combinaisons. Pour plus d’informations, consultez [Modèles composites dans Power BI Desktop (préversion)](desktop-composite-models.md).
 
-* **Relations plusieurs à plusieurs** : avec les *modèles composites*, vous pouvez établir des *relations plusieurs à plusieurs* entre les tables. Les *relations plusieurs à plusieurs* suppriment la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement préalables, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md).
+* **Relations plusieurs à plusieurs** : Avec les *modèles composites*, vous pouvez établir des *relations plusieurs à plusieurs* entre les tables. Les *relations plusieurs à plusieurs* suppriment la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement préalables, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations plusieurs à plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md).
 
-* **Mode de stockage** : vous pouvez désormais spécifier les visuels qui nécessitent une requête sur les sources de données back-end. Les visuels qui ne nécessitent pas une requête sont importés même s’ils sont basés sur DirectQuery. Cette fonctionnalité permet d’améliorer les performances et de réduire la charge du serveur principal. Auparavant, même de simples visuels, comme les segments, initiaient des requêtes qui étaient envoyées à des sources back-end. Le mode de stockage est décrit en détail dans cet article.
+* **Mode de stockage** : Vous pouvez désormais spécifier les visuels qui nécessitent une requête sur les sources de données back-end. Les visuels qui ne nécessitent pas une requête sont importés même s’ils sont basés sur DirectQuery. Cette fonctionnalité permet d’améliorer les performances et de réduire la charge du serveur principal. Auparavant, même de simples visuels, comme les segments, initiaient des requêtes qui étaient envoyées à des sources back-end. Le mode de stockage est décrit en détail dans cet article.
 
 ## <a name="use-the-storage-mode-property"></a>Utiliser la propriété du mode de stockage
 
@@ -55,11 +55,11 @@ La propriété active s’affiche dans la liste déroulante **Mode de stockage**
 
 Il existe trois valeurs pour le mode de stockage :
 
-* **Importer** : lorsque la valeur est définie sur **Importer**, les tables importées sont mises en cache. Les requêtes soumises au jeu de données Power BI qui retournent des données à partir de tables d’importation peuvent uniquement être satisfaites à partir de données mises en cache.
+* **Importer** : Lorsque la valeur est définie sur **Importer**, les tables importées sont mises en cache. Les requêtes soumises au jeu de données Power BI qui retournent des données à partir de tables d’importation peuvent uniquement être satisfaites à partir de données mises en cache.
 
-* **DirectQuery** : avec ce paramètre, les tables DirectQuery ne sont pas mises en cache. Les requêtes que vous soumettez au jeu de données Power BI (par exemple, les requêtes DAX) et qui retournent des données à partir de tables DirectQuery ne peuvent être satisfaites qu’en exécutant des requêtes à la demande à la source de données. Les requêtes envoyées à la source de données utilisent le langage de requête de cette source de données (par exemple, SQL).
+* **DirectQuery** : Avec ce paramètre, les tables DirectQuery ne sont pas mises en cache. Les requêtes que vous soumettez au jeu de données Power BI (par exemple, les requêtes DAX) et qui retournent des données à partir de tables DirectQuery ne peuvent être satisfaites qu’en exécutant des requêtes à la demande à la source de données. Les requêtes envoyées à la source de données utilisent le langage de requête de cette source de données (par exemple, SQL).
 
-* **Double** : les tables doubles peuvent agir comme mises en cache ou non mises en cache, selon le contexte de la requête envoyée au jeu de données Power BI. Dans certains cas, vous répondez aux requêtes à partir des données mises en cache. Dans d’autres cas, vous répondez aux requêtes en exécutant une requête à la demande à la source de données.
+* **Double** : Les tables doubles peuvent agir comme mises en cache ou non mises en cache, selon le contexte de la requête envoyée au jeu de données Power BI. Dans certains cas, vous répondez aux requêtes à partir des données mises en cache. Dans d’autres cas, vous répondez aux requêtes en exécutant une requête à la demande à la source de données.
 
 Le fait de modifier une table sur le paramètre **Importer** est une opération *irréversible*. Cette propriété ne peut pas être remodifiée en DirectQuery ou Double.
 
@@ -85,7 +85,7 @@ La logique de la propagation traverse uniquement un côté des relations **1 à 
 ## <a name="storage-mode-usage-example"></a>Exemple d’utilisation du mode de stockage
 Nous allons poursuivre avec l’exemple de la section précédente et imaginer que nous appliquons les paramètres de propriété de mode de stockage suivants :
 
-| Tableau                   | Mode de stockage         |
+| Table                   | Mode de stockage         |
 | ----------------------- |----------------------| 
 | *Sales*                 | DirectQuery          | 
 | *SurveyResponse*        | Importer               | 

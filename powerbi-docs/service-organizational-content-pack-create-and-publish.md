@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4638842217127c1d80ec115e05f8db1a6d3eb36c
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 3a434c418e8a385db921dd910f354bda04ad8edd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679038"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289322"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Créer et publier un pack de contenu d’organisation Power BI (tutoriel)
 
@@ -53,7 +53,7 @@ Comment procéder ? Dans le [service Power BI](https://powerbi.com), accédez 
       > 
       > 
    
-   3. Il est recommandé d’ajouter une **description**. Ainsi, vos collègues pourront trouver plus facilement les packs de contenu dont ils ont besoin. Outre la description, ajoutez des mots clés que vos collègues pourront utiliser pour trouver le pack de contenu. Ajoutez vos informations de contact au cas où vos collègues auraient des questions ou besoin d’aide.
+   3. Configuration recommandée : Ajoutez une **description**. Ainsi, vos collègues pourront trouver plus facilement les packs de contenu dont ils ont besoin. Outre la description, ajoutez des mots clés que vos collègues pourront utiliser pour trouver le pack de contenu. Ajoutez vos informations de contact au cas où vos collègues auraient des questions ou besoin d’aide.
    
    4. **Téléchargez une image ou un logo** pour permettre aux membres du groupe de trouver plus facilement le pack de contenu. Il est plus facile de repérer une image que du texte. Nous avons utilisé une image de la vignette d’histogramme empilé 100 % « Opportunity Count » (Nombre d’opportunités) dans la capture d’écran ci-dessous.
    

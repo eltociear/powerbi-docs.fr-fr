@@ -7,15 +7,15 @@ ms.author: maggies
 ms.date: 11/20/2018
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: ee8086a149e752d68aa8d6801844676d038257e3
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: 4db2f7ca5a84563e86b3a3033daae6d83bffcf5e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289148"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291972"
 ---
 # <a name="what-is-power-bi-report-server"></a>Présentation de Power BI Report Server
 
@@ -27,13 +27,13 @@ Power BI Report Server est un serveur de rapports local avec un portail web dan
 Power BI Report Server ressemble à la fois à SQL Server Reporting Services et au service en ligne Power BI, mais avec quelques différences. Comme le service Power BI, Power BI Report Server héberge des rapports Power BI (.PBIX) et des fichiers Excel. Comme Reporting Services, Power BI Report Server est installé localement et héberge des rapports paginés (.RDL). Power BI Report Server est un sur-ensemble de Reporting Services : tout ce que vous pouvez faire dans Reporting Services, vous pouvez aussi le faire avec Power BI Report Server, avec en plus la prise en charge des rapports Power BI. Consultez [Comparer Power BI Report Server et le service Power BI](compare-report-server-service.md) pour plus d’informations.
 
 ## <a name="licensing-power-bi-report-server"></a>Gestion des licences Power BI Report Server
-Power BI Report Server est disponible avec deux licences : [Power BI Premium](../service-premium.md) et [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) avec Software Assurance. Une licence Power BI Premium vous permet de créer un déploiement hybride combinant ressources dans le cloud et ressources locales.  
+Power BI Report Server est disponible sous deux licences différentes : [Power BI Premium](../service-premium.md) et [SQL Server Enterprise](https://www.microsoft.com/sql-server/sql-server-2017-editions) avec Software Assurance. Une licence Power BI Premium vous permet de créer un déploiement hybride combinant ressources dans le cloud et ressources locales.  
 
 > [!NOTE]
 > Pour Power BI Premium, Power BI Report Server est uniquement inclus dans les références (SKU) P. Il n’est pas inclus dans les références (SKU) EM.
 
 ## <a name="web-portal"></a>Portail web
-Le point d’entrée de Power BI Report Server est un portail web sécurisé affichable dans n’importe quel navigateur moderne. Ici, vous accédez à l’ensemble de vos rapports et indicateurs de performance clés. Le contenu du portail web est organisé sous forme d’une hiérarchie standard de dossiers. Dans vos dossiers, le contenu est organisé par type : rapports Power BI, rapports mobiles, rapports paginés, indicateurs de performance clés et classeurs Excel. Les jeux de données partagés et les sources de données partagées sont dans leurs propres dossiers, et vous pouvez les utiliser en tant que modules pour vos rapports. Vous marquez des favoris pour les afficher dans un dossier unique. Vous créez également des indicateurs de performance clés directement dans le portail web. 
+Le point d’entrée de Power BI Report Server est un portail web sécurisé affichable dans n’importe quel navigateur moderne. Ici, vous accédez à l’ensemble de vos rapports et indicateurs de performance clés. Le contenu du portail web est organisé sous forme d’une hiérarchie standard de dossiers. Dans les dossiers, le contenu est regroupé par type : rapports Power BI, rapports mobiles, rapports paginés, indicateurs de performance clés et classeurs Excel. Les jeux de données partagés et les sources de données partagées sont dans leurs propres dossiers, et vous pouvez les utiliser en tant que modules pour vos rapports. Vous marquez des favoris pour les afficher dans un dossier unique. Vous créez également des indicateurs de performance clés directement dans le portail web. 
 
 ![Portail web de Power BI Report Server web](media/get-started/web-portal.png)
 

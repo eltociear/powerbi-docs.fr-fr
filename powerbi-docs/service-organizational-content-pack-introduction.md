@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3f8a5075290620d9d1ed1829008002ff71d25c82
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 3fa76b19e187f7a27dc8b9268dad4d9b5ab8f101
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908156"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286378"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Présentation des packs de contenu d’organisation dans Power BI
 > [!NOTE]
 > Vous ne pouvez pas créer des packs de contenu d’organisation ou les installer dans les expériences des nouveaux espaces de travail en préversion. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
 > 
 
-Vous distribuez régulièrement des rapports par courrier électronique à votre équipe ? Essayez cette opération à la place : faites des packages de vos tableaux de bord, rapports, classeurs Excel et jeux de données, et partagez-les avec votre équipe sous forme de *pack de contenu d’organisation*. Les packs de contenu que vous créez sont faciles à trouver par votre équipe, car ils sont regroupés dans AppSource. Dans la mesure où ils font partie de Power BI, ils bénéficient de toutes les fonctionnalités de Power BI, notamment l’exploration interactive des données, de nouveaux éléments visuels, les Questions et réponses, l’intégration à d’autres sources de données, l’actualisation des données, et bien plus encore.
+Vous distribuez régulièrement des rapports par courrier électronique à votre équipe ? Essayez plutôt de procéder ainsi : faites des packages de vos tableaux de bord, rapports, classeurs Excel et jeux de données, et partagez-les avec votre équipe sous forme de *pack de contenu professionnel*. Les packs de contenu que vous créez sont faciles à trouver par votre équipe, car ils sont regroupés dans AppSource. Dans la mesure où ils font partie de Power BI, ils bénéficient de toutes les fonctionnalités de Power BI, notamment l’exploration interactive des données, de nouveaux éléments visuels, les Questions et réponses, l’intégration à d’autres sources de données, l’actualisation des données, et bien plus encore.
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 

@@ -1,23 +1,23 @@
 ---
-title: 'Exemple Analyse de l’approvisionnement : visite guidée'
-description: 'Exemple Analyse de l’approvisionnement pour Power BI : visite guidée'
+title: 'Exemple Analyse de l’approvisionnement : Visite guidée'
+description: 'Exemple Analyse de l’approvisionnement pour Power BI : Visite guidée'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3b0c6fcc72e5b2f95b06f1184341298d449bf57e
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717145"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287345"
 ---
-# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de l’approvisionnement pour Power BI : visite guidée
+# <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de l’approvisionnement pour Power BI : Visite guidée
 
 ## <a name="overview-of-the-procurement-analysis-sample"></a>Présentation de l’exemple Analyse de l’approvisionnement
 Cet exemple sectoriel de tableau de bord et son rapport sous-jacent permettent d’analyser les dépenses d’une entreprise de fabrication auprès des fournisseurs, par catégorie et par emplacement géographique. Dans cet exemple, nous explorons les points suivants :
@@ -71,10 +71,10 @@ Commençons par rechercher les tendances en matière de dépenses par catégorie
 
 Notez plusieurs choses :
 
-* Dans le graphique en courbes **Total Invoice by Month and Category** (Total de facturation par mois et par catégorie) : la catégorie **Direct** présente des dépenses relativement homogènes, la catégorie **Logistics** (Logistique) présente un pic en décembre et la catégorie **Other** (Autre) présente un pic en février.
-* Dans la carte **Total Invoice by Country/Region** (Total de facturation par pays/région) : la plupart de nos dépenses se font aux États-Unis.
-* Dans l’histogramme **Total Invoice by Sub Category** (Total de facturation par sous-catégorie) : les sous-catégories **Hardware** (Matériel) et **Indirect Goods & Services** (Biens et services indirects) sont les plus importantes.
-* Dans le graphique à barres Total Invoice by Tier (Total de facturation par niveau), nous traitons essentiellement avec nos fournisseurs de niveau 1 (les 10 principaux). Cela permet de mieux gérer les relations avec les fournisseurs.
+* Dans le graphique en courbes **Total Invoice by Month and Category** : Les dépenses relevant de la catégorie **Direct** sont assez homogènes, tandis que celles de la catégorie **Logistics** (Logistique) connaît un pic en décembre, et celles de la catégorie **Other** (Autre) connaît un pic en février.
+* Dans le plan **Total Invoice by Country/Region** : La plupart de nos dépenses se font aux États-Unis.
+* Dans l’histogramme **Total Invoice by Sub Category** : Les catégories **Hardware** (Matériel) et **Indirect Goods & Services** (Biens et services indirects) sont les principaux postes de dépense.
+* Dans le graphique à barres Total Invoice by Tier : Nous traitons essentiellement avec nos fournisseurs de niveau 1 (les 10 principaux). Cela permet de mieux gérer les relations avec les fournisseurs.
 
 ## <a name="spending-in-mexico"></a>Dépenses au Mexique
 Explorons les postes de dépenses au Mexique.
@@ -139,5 +139,5 @@ Sélectionnez **Modifier le rapport** en haut à gauche et faites une exploratio
 
 Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours choisir de ne pas enregistrer les modifications apportées. Si vous les enregistrez, vous pouvez toujours accéder à **Obtenir des données** pour avoir une nouvelle copie de cet exemple.
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
+## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
 Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord et rapports Power BI pour tirer des informations des données d’approvisionnement. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).

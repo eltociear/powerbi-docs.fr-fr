@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 763b79b50266678a78dc956372f504f30836c4fc
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507903"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292957"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
 Cet article mentionne les configurations matérielle et logicielle requises pour installer et exécuter Power BI Report Server.
@@ -25,8 +25,8 @@ Cet article mentionne les configurations matérielle et logicielle requises pour
 | --- | --- |
 | .NET Framework |4.6<br><br>Vous pouvez installer manuellement .NET Framework à partir de la page [Microsoft .NET Framework 4.6 (programme d’installation Web) pour Windows](http://support.microsoft.com/kb/3045560).<br/><br/> Pour plus d’informations, des recommandations et des instructions concernant .NET Framework 4.6, voir [Guide de déploiement de .NET Framework pour les développeurs](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Avant l’installation de .NET Framework 4.6, Windows 8.1 et Windows Server 2012 R2 nécessitent la [Mise à jour KB2919355](http://support.microsoft.com/kb/2919355). |
 | Disque dur |Power BI Report Server nécessite au minimum 1 Go d’espace disponible sur le disque dur.<br><br>Un espace supplémentaire est requis sur le serveur de base de données hébergeant la base de données du serveur de rapports. |
-| Mémoire |**Minimum :** 1 GB<br/><br/> **Recommandé :** au moins 4 Go |
-| Vitesse du processeur |**Minimum :** processeur x64 : 1,4 GHz<br/><br/> **Recommandé :** processeur cadencé à 2,0 GHz ou plus |
+| Mémoire |**Configuration minimale :** 1 Go<br/><br/> **Configuration recommandée :** Au moins 4 Go |
+| Vitesse du processeur |**Minimum :** processeur x64 : 1,4 GHz<br/><br/> **Configuration recommandée :** 2,0 GHz ou plus rapide |
 | Type de processeur |Processeur x64 : AMD Opteron, AMD Athlon 64, Intel Xeon avec prise en charge d’Intel EM64T, Intel Pentium IV avec prise en charge d’EM64T |
 | Système d’exploitation |Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Famille<br><br>Windows 10 Professionnel<br><br>Windows 10 Entreprise<br><br>Windows 8.1<br><br>Windows 8.1 Professionnel<br><br>Windows 8.1 Entreprise<br><br>Windows 8<br><br>Windows 8 Professionnel<br><br>Windows 8 Entreprise |
 

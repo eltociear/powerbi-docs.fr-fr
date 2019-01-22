@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 85f7dd131806cd808c28c23cb70230a0c719e0a1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670198"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285619"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Obtenir des données de classeurs Excel
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -43,7 +43,7 @@ Si vous utilisez Excel pour vous connecter à une source de données externe, un
 La présence, ou l’absence, de vos feuilles PowerView, tableaux croisés dynamiques et graphiques dans Power BI dépend de l’emplacement où est enregistré votre classeur et de la manière dont vous l’intégrez à Power BI. Nous allons approfondir ce sujet ci-dessous.
 
 ## <a name="data-types"></a>Type de données
-Power BI prend en charge les types de données suivants : nombre entier, nombre décimal, devise, date, vrai/faux, texte. Le marquage des données en tant que types de données spécifiques dans Excel améliore l’expérience de Power BI.
+Power BI prend en charge les types de données suivants : Nombre entier, Nombre décimal, Devise, Date, True/False, Texte. Le marquage des données en tant que types de données spécifiques dans Excel améliore l’expérience de Power BI.
 
 ## <a name="prepare-your-workbook-for-power-bi"></a>Préparer votre classeur pour Power BI
 Regardez cette vidéo pratique pour savoir comment vérifier que vos classeurs Excel sont prêts pour Power BI.
@@ -119,7 +119,7 @@ L’utilisation de la fonctionnalité **Publier sur Power BI** dans Excel 2016
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Votre classeur est trop volumineux ? Consultez [Réduire la taille d’un classeur Excel pour l’afficher dans Power BI](reduce-the-size-of-an-excel-workbook.md).
 
-Actuellement, quand vous sélectionnez Importer, Power BI importe uniquement les données qui font partie d’une table nommée ou d’un modèle de données. Par conséquent, si le classeur ne contient pas de tables nommées, de feuilles Power View ou de modèles de données Excel, le message d’erreur suivant peut apparaître : **« Impossible de trouver des données dans ce classeur Excel »**. [Cet article](service-admin-troubleshoot-excel-workbook-data.md) explique comment corriger votre classeur et l’importer à nouveau.
+Actuellement, quand vous sélectionnez Importer, Power BI importe uniquement les données qui font partie d’une table nommée ou d’un modèle de données. Par conséquent, si le classeur ne contient ni table nommée, ni feuille Power View, ni modèle de données Excel, cette erreur risque de se produire : **« Impossible de trouver des données dans ce classeur Excel »**. [Cet article](service-admin-troubleshoot-excel-workbook-data.md) explique comment corriger votre classeur et l’importer à nouveau.
 
 ## <a name="next-steps"></a>Étapes suivantes
 **Explorez vos données** : une fois vos données et rapports importés dans Power BI à partir de votre fichier, il est temps de les explorer. Cliquez simplement avec le bouton droit sur le nouveau jeu de données, puis cliquez sur Explorer. Si vous avez choisi de vous connecter à un classeur sur OneDrive à l’étape 4, votre classeur apparaît dans Rapports. Lorsque vous cliquez dessus, il s’ouvre dans Power BI, comme il le ferait dans Excel Online.

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a27e192c5ccc1fb3a7af9bafbc9c4fd14ccabf4c
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: a48ad26b9da5d5dba9fa04ab74301da7e1265d0b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900103"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292050"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -73,29 +73,29 @@ Pour résoudre ces problèmes, contactez votre responsable de compte.
 ## <a name="frequently-asked-questions-faq-for-the-us-government-version-of-the-power-bi-service"></a>FAQ sur la version US Government du service Power BI
 Les questions (et réponses) suivantes sont fournies pour vous aider à obtenir rapidement les informations nécessaires au sujet du service.
 
-**Question :** comment migrer mes données commerciales **Power BI** vers le **service Power BI** US Government ?
+**Question :** Comment migrer mes données commerciales **Power BI** vers le **service Power BI** US Government ?
 
-**Réponse :** votre administrateur doit créer une nouvelle instance de **Power BI** sous un abonnement distinct spécifique à la version US Government. Vous pouvez ensuite répliquer vos données commerciales dans le **service Power BI** US Government, supprimer votre licence commerciale et associer votre domaine existant au nouveau service US Government.
+**Réponse :** Votre administrateur doit créer une nouvelle instance de **Power BI** sous un abonnement distinct spécifique à la version US Government. Vous pouvez ensuite répliquer vos données commerciales dans le **service Power BI** US Government, supprimer votre licence commerciale et associer votre domaine existant au nouveau service US Government.
 
-**Question :** pourquoi ne puis-je pas me connecter à un pack de contenu spécifique ?
+**Question :** Pourquoi ne puis-je pas me connecter à un pack de contenu spécifique ?
 
-**Réponse :** vous devez vérifier que votre abonnement est activé avant de vous connecter à ce pack de contenu.
+**Réponse :** Vous devez vérifier que votre abonnement est activé avant de vous connecter à ce pack de contenu.
 
-**Question :** je souhaite obtenir **Power BI** pour mon organisation US Government. Par quoi commencer ?
+**Question :** Je souhaite obtenir **Power BI** pour mon organisation US Government. Par quoi commencer ?
 
-**Réponse :** l’inscription (souvent appelée *intégration*) peut varier en fonction de vos licences et abonnements existants. Pour plus d’informations, voir [Inscription à la version US Government de Power BI](service-govus-signup.md).
+**Réponse :** L’inscription (souvent appelée *intégration*) peut varier en fonction de vos licences et abonnements existants. Pour plus d’informations, voir [Inscription à la version US Government de Power BI](service-govus-signup.md).
 
-**Question :** est-ce que l’URL de connexion à la version US Government de **Power BI** est différente de celle de la version commerciale de **Power BI** ?
+**Question :** Est-ce que l’URL de connexion à la version US Government de **Power BI** est différente de celle de la version commerciale de **Power BI** ?
 
-**Réponse :** oui, les URL sont différentes. Le tableau suivant présente chaque URL :
+**Réponse :** Oui, les URL sont différentes. Le tableau suivant présente chaque URL :
 
 | URL de la version commerciale | URL de la version US Government |
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-**Question :** Mon compte est provisionné dans plusieurs clouds souverains. Quand j’utilise **Power BI Desktop**, comment sélectionner le cloud auquel se connecter ?
+**Question :** Mon compte est provisionné dans plusieurs clouds souverains. Quand j’utilise **Power BI Desktop**, comment sélectionner le cloud auquel se connecter ?
 
-**Réponse :** À partir de la version de juillet 2018 de **Power BI Desktop**, vous pouvez choisir le cloud que vous voulez utiliser quand vous vous connectez à **Power BI Desktop**.
+**Réponse :** À partir de la version de juillet 2018 de **Power BI Desktop**, vous pouvez choisir le cloud que vous voulez utiliser quand vous vous connectez à **Power BI Desktop**.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

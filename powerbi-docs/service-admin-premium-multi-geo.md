@@ -6,22 +6,22 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/20/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 91e1880e1a879ee98d65d6ad91b26e534e807040
-ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
+ms.openlocfilehash: 4b91ac08001118c6a0241cdd1caf32ebfd9098f2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268294"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291714"
 ---
 # <a name="multi-geo-support-for-power-bi-premium-preview"></a>Prise en charge de zones géographiques multiples dans Power BI Premium (préversion)
 
 La fonctionnalité de zones géographiques multiples de Power BI Premium permet à des clients multinationaux de répondre à des exigences de résidence des données régionales, spécifiques à certains secteurs ou en fonction de l’organisation. En tant que client Power BI Premium vous pouvez déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI. Une zone géographique (géographie) peut contenir plusieurs régions. Par exemple, les États-Unis sont une zone géographique, et les USA Centre-Ouest et les USA Centre Sud sont des régions des États-Unis. Vous pouvez choisir de déployer du contenu vers l’une des zones géographiques suivantes :
 
-- United States
+- États-Unis
 - Canada
 - United Kingdom
 - Brazil
@@ -43,7 +43,7 @@ Pour de nouvelles capacités, activez les zones géographiques multiples en sél
 
 Une fois que vous avez créé la capacité, elle reste dans cette région, et le contenu des espaces de travail créés sera stocké dans cette région. Vous pouvez migrer des espaces de travail d’une région à une autre via la liste déroulante dans l’écran des paramètres d’espace de travail.
 
-![Modifier l’espace de travail : choisir une capacité disponible. Zones géographiques multiples Power BI](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
+![Modifier l’espace de travail : Choisir une capacité disponible. Zones géographiques multiples Power BI](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
 
 Vous voyez ce message pour confirmer la modification.
 
@@ -98,7 +98,7 @@ Vous pouvez prendre des espaces de travail en dehors de la capacité Multi-Géo 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Qu’est-ce que Power BI Premium ?](service-premium.md)
+- [Power BI Premium : Qu’est-ce que c’est ?](service-premium.md)
 - [Zones géographiques multiples pour des capacités Power BI Embedded](developer/embedded-multi-geo.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

@@ -5,17 +5,17 @@ author: otarb
 manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 588b8cd6289c1f5d1242ade73dea149474bfed38
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 7390f029144e5cb37830921071ad5c2c678b2d4d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45975216"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275476"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Créer des visuels Power BI avec Python
 **Power BI Desktop** vous permet d’utiliser **Python** pour visualiser vos données.
@@ -70,7 +70,7 @@ Après avoir spécifié votre installation de Python, vous pouvez commencer à c
    > 
    > 
    
-   La trame de données générée est appelée **dataset** et les colonnes sélectionnées sont accessibles par leurs noms respectifs. Par exemple, vous pouvez accéder au champ d’engrenage en écrivant *dataset["gear"]* dans votre script Python.
+   La tramedonnées générée est appelée **jeu de données** et les colonnes sélectionnées sont accessibles par leurs noms respectifs. Par exemple, vous pouvez accéder au champ d’engrenage en écrivant *dataset["gear"]* dans votre script Python.
 
 4. Une fois la trame de données générée automatiquement par les champs que vous avez sélectionnés, vous pouvez écrire un script Python qui aboutit au traçage sur l’appareil Python par défaut. Une fois le script terminé, sélectionnez **Exécuter** dans la barre de titre **Éditeur de script Python** (**Exécuter** se trouve à droite de la barre de titre).
    
@@ -107,7 +107,7 @@ Après avoir spécifié votre installation de Python, vous pouvez commencer à c
 
     ![](media/desktop-python-visuals/python-visuals-8.png)
 
-    > **Sécurité des scripts Python :** Les visuels Python sont créés à partir de scripts Python, qui peuvent contenir du code présentant des risques pour la sécurité ou la confidentialité. Quand un utilisateur tente de voir ou d’utiliser un visuel Python pour la première fois, un message d’avertissement de sécurité lui est présenté. Activez les visuels Python seulement si vous faites confiance à l’auteur et à la source ou après avoir examiné et compris le script Python.
+    > **Sécurité des scripts Python :** Les éléments visuels Python sont créés à partir de scripts Python, qui peuvent contenir du code qui présente des risques pour la sécurité ou la confidentialité. Quand un utilisateur tente de voir ou d’utiliser un visuel Python pour la première fois, un message d’avertissement de sécurité lui est présenté. Activez les visuels Python seulement si vous faites confiance à l’auteur et à la source ou après avoir examiné et compris le script Python.
     > 
     > 
 
@@ -116,7 +116,7 @@ Les visuels Python dans **Power BI Desktop** présentent quelques limitations 
 
 * Limites concernant la taille des données : les données utilisées par les visuels Python pour le traçage sont limitées à 150 000 lignes. Si plus de 150 000 lignes sont sélectionnées, seules les 150 000 premières lignes sont utilisées et un message s’affiche sur l’image.
 * Limite concernant la durée du calcul : si le calcul d’un visuel Python prend plus de 5 minutes, le délai d’exécution est dépassé et une erreur est générée.
-* Relations : comme avec d’autres visuels Power BI Desktop, si des champs de données issus de différentes tables avec aucune relation définie entre elles sont sélectionnés, une erreur se produit.
+* Relations : comme avec d’autres éléments visuels Power BI Desktop, si des champs de données issus de différentes tables avec aucune relation définie entre elles sont sélectionnés, une erreur se produit.
 * Les visuels Python sont actualisés lors de la mise à jour, du filtrage et de la sélection des données. Toutefois, l’image elle-même n’est pas interactive et ne peut pas être la source du filtrage croisé.
 * Les visuels Python répondent à la sélection d’autres visuels, mais vous ne pouvez pas cliquer sur des éléments dans le visuel Python pour appliquer un filtre croisé à d’autres éléments.
 * Seuls les tracés représentés sur l’écran Python par défaut s’affichent correctement sur le canevas. Évitez d’utiliser explicitement un autre écran Python.

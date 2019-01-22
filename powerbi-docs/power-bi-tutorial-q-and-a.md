@@ -4,19 +4,19 @@ description: Didacticiel sur l’utilisation du moteur Questions et réponses de
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9ca771d200f5bd4b50dfbddbd8eb67931be375c1
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c139d5561a19dab147610914bc11e1bfd9e9e481
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830007"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277362"
 ---
-# <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Didacticiel : Utiliser Questions et réponses pour créer des visualisations et générer des rapports
+# <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Tutoriel : Comment utiliser Questions et réponses pour créer des visualisations et générer des rapports
 La [vue d’ensemble de Questions et réponses](consumer/end-user-q-and-a.md) vous a présenté le moteur Questions et réponses de Power BI et a différentié les *consommateurs* (qui ont des tableaux de bord et rapports partagés avec eux) et les *créateurs* (qui possèdent les rapports et jeux de données sous-jacents). La première partie de ce didacticiel est principalement destinée aux utilisateurs consommant des tableaux de bord à l’aide du service Power BI. La deuxième partie est conçue pour les personnes qui créent des rapports à l’aide du service Power BI ou de Power BI Desktop. [Questions et réponses et Power BI Mobile](consumer/mobile/mobile-apps-ios-qna.md) et [Questions et réponses avec Power BI Embedded](developer/qanda.md) sont traités dans différents articles.
 
 Q&R est interactif et même amusant, car une question en entraîne beaucoup d’autres au fur et à mesure que les visualisations révèlent des voies intéressantes à explorer. Regardez Amanda illustrer l’utilisation de Questions et réponses pour créer des visualisations, les explorer et les épingler à des tableaux de bord.
@@ -104,7 +104,7 @@ Grâce à Questions et réponses, non seulement vous pouvez demander à vos donn
 
 ## <a name="next-steps"></a>Étapes suivantes
 Revenir à [Questions et réponses dans Power BI](consumer/end-user-q-and-a.md)   
-[Didacticiel : Utiliser Questions et réponses avec l’exemple Analyse de la vente au détail](power-bi-visualization-introduction-to-q-and-a.md)   
+[Tutoriel : Utiliser Questions et réponses avec l’exemple Analyse de la vente au détail](power-bi-visualization-introduction-to-q-and-a.md)   
 [Conseils de formulation des questions dans Questions et réponses](consumer/end-user-q-and-a-tips.md)   
 [Préparer un classeur pour Q&R](service-prepare-data-for-q-and-a.md)  
 [Préparer un jeu de données local pour Questions et réponses](service-q-and-a-direct-query.md)

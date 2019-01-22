@@ -1,20 +1,20 @@
 ---
 title: Afficher les rapports Power BI optimisés pour votre téléphone
 description: En savoir plus sur l’interaction avec les pages de rapport optimisées pour l’affichage dans les applications Power BI pour téléphone.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/14/2018
-ms.author: maggies
-ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: 99f40837f4b2c188120c4ca0311be3e9ded5fe95
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547795"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276903"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Afficher les rapports Power BI optimisés pour votre téléphone
 
@@ -48,7 +48,7 @@ Si des filtres ont été définis dans un rapport optimisé pour les téléphone
     ![Filtre avancé de rapport sur téléphone Power BI](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Sélection croisée de visuels
-La sélection croisée de visuels dans les rapports sur téléphone fonctionne comme dans le service Power BI et dans les rapports sur téléphone en mode paysage : quand vous sélectionnez les données d’un visuel, les données connexes sont mises en évidence dans les autres visuels de cette page.
+La sélection croisée de visuels dans les rapports téléphoniques fonctionne de la même façon que dans le service Power BI et dans les rapports sur les téléphones en mode paysage : Lorsque vous sélectionnez des données dans un visuel, cela met en évidence les données associées dans les autres visuels sur cette page.
 
 En savoir plus sur le [filtrage et la mise en évidence dans Power BI](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -70,7 +70,7 @@ Voici les actions qui ne sont possibles qu’en mode focus en raison des contrai
 
 * **Descendre dans la hiérarchie** des informations affichées dans un visuel. Pour en savoir plus sur les [opérations de montée et descente dans la hiérarchie](mobile-apps-view-phone-report.md#drill-down-in-a-visual) dans un rapport pour téléphone, consultez la suite de cet article.
 * **Trier** les valeurs du visuel.
-* **Rétablir** : effacer les étapes d’exploration effectuées sur un visuel et revenir à la définition définie lors de la création du rapport.
+* **Rétablir** : Effacer les étapes d’exploration effectuées sur un visuel et revenir à la définition définie lors de la création du rapport.
   
     Pour effacer toutes les explorations à partir d’un visuel, cliquez sur les points de suspension (**...**), puis sur **Rétablir**.
   

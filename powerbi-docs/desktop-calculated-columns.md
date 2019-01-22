@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d875a5cd3ded8769ab3734601bd81cf0f17d7cea
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 74567016fe98d57b68d972084761ab8e50bf7b23
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578264"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284722"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Utilisation de colonnes calculées dans Power BI Desktop
 Les colonnes calculées vous permettent d’ajouter de nouvelles données à une table déjà présente dans votre modèle. Toutefois, au lieu d’interroger et de charger les valeurs dans votre nouvelle colonne à partir d’une source de données, vous créez une formule DAX (Data Analysis Expressions) qui définit les valeurs de la colonne. Dans Power BI Desktop, vous créez les colonnes calculées à l’aide de la fonctionnalité Nouvelle colonne dans la vue Rapport.
@@ -52,7 +52,7 @@ Il peut l’ajouter au canevas de son rapport avec le nombre d’expéditions. T
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## <a name="learn-more"></a>En savoir plus
-Nous vous avons fourni ici une brève introduction aux colonnes calculées. N’hésitez pas à consulter le tutoriel [Créer des colonnes calculées dans Power BI Desktop](desktop-tutorial-create-calculated-columns.md) ; vous pourrez télécharger un exemple de fichier et suivre des indications pas à pas pour créer des colonnes supplémentaires. 
+Nous vous avons fourni ici une brève introduction aux colonnes calculées. Veillez à consulter le [Tutoriel : Création de colonnes calculées dans Power BI Desktop](desktop-tutorial-create-calculated-columns.md), où vous pourrez télécharger un exemple de fichier et obtenir des indications pas à pas sur la création de colonnes supplémentaires. 
 
 Pour en savoir plus sur DAX, consultez [Principes fondamentaux de DAX dans Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 

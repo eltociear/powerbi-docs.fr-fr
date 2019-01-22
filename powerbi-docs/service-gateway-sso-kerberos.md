@@ -6,20 +6,20 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: ed9281ba14ad25e2acb347a2394ec729e9d4465c
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508034"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295256"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 
-Utilisez la [délégation Kerberos contrainte](https://technet.microsoft.com/library/jj553400.aspx) pour activer la connectivité d’authentification unique fluide. L’activation de SSO permet aux rapports et tableaux de bord Power BI d’actualiser les données à partir des sources locales plus facilement.
+Utilisez la [délégation Kerberos contrainte](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) pour activer la connectivité d’authentification unique fluide. L’activation de SSO permet aux rapports et tableaux de bord Power BI d’actualiser les données à partir des sources locales plus facilement.
 
 ## <a name="supported-data-sources"></a>Sources de données prises en charge
 
@@ -50,11 +50,11 @@ Pour plus d’informations sur la configuration de l’authentification unique p
 
 Plusieurs éléments doivent être configurés pour qu’une délégation Kerberos contrainte fonctionne correctement, dont les *noms de principal du service* (SPN) et les paramètres de délégation sur les comptes de service.
 
-### <a name="prerequisite-1-install--configure-the-on-premises-data-gateway"></a>Condition préalable 1 : installer et configurer la passerelle de données locale
+### <a name="prerequisite-1-install--configure-the-on-premises-data-gateway"></a>Prérequis 1 : Installer et configurer la passerelle de données locale
 
 Cette version de la passerelle de données locale prend en charge une mise à niveau locale, ainsi qu’une prise de contrôle des paramètres de passerelles existantes.
 
-### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>Condition préalable 2 : exécuter le service Windows de passerelle en tant que compte de domaine
+### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>Prérequis 2 : Exécuter le service Windows de passerelle en tant que compte de domaine
 
 Dans une installation standard, la passerelle s’exécute en tant que compte de service local de machine (en particulier, *NT Service\PBIEgwService*) comme illustré dans l’image suivante :
 
@@ -65,7 +65,7 @@ Pour activer une **délégation Kerberos contrainte**, la passerelle doit opére
 > [!NOTE]
 > Si Azure AD DirSync/Connect est configuré et que des comptes d’utilisateurs sont synchronisés, le service de passerelle n’a pas besoin d’effectuer de recherches Active Directory locales durant l’exécution, et vous pouvez utiliser le SID du service local (au lieu d’exiger un compte de domaine) pour le service de passerelle. Les étapes de configuration de la délégation Kerberos contrainte décrites dans cet article sont les mêmes que celles de cette configuration (elles sont simplement appliquées à l’objet ordinateur de la passerelle dans Active Directory, au lieu du compte de domaine).
 
-### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>Condition préalable 3 : obtenir des droits d’administrateur de domaine pour configurer les noms de principal du service (SetSPN) et les paramètres de délégation Kerberos contrainte
+### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>Prérequis 3 : Obtenir des droits d’administrateur de domaine pour configurer les noms de principal du service (SetSPN) et les paramètres de délégation Kerberos contrainte
 
 S’il est techniquement possible pour un administrateur de domaine ne disposant pas de droits d’administrateur de domaine d’accorder temporairement ou définitivement à quelqu’un d’autre les droits de configurer des noms de principal du service et une délégation Kerberos, cette approche n’est pas recommandée. La section suivante décrit en détail les étapes de configuration nécessaires pour la **Condition préalable 3**.
 
@@ -111,8 +111,8 @@ Cette section suppose que vous avez déjà configuré des noms de principal du s
 
 Dans les étapes suivantes, nous supposons un environnement local comprenant deux machines : une machine de passerelle et un serveur de base de données exécutant SQL Server. Nous supposons également les paramètres et noms suivants :
 
-* Nom de la machine de passerelle : **PBIEgwTestGW**
-* Compte de service de passerelle : **PBIEgwTest\GatewaySvc** (nom d’affichage du compte : connecteur de passerelle)
+* Nom de la machine de la passerelle : **PBIEgwTestGW**
+* Compte de service de passerelle : **PBIEgwTest\GatewaySvc** (nom complet du compte : Gateway Connector)
 * Nom de la machine source de données SQL Server : **PBIEgwTestSQL**
 * Compte de service de source de données SQL Server : **PBIEgwTest\SQLService**
 
@@ -202,7 +202,7 @@ Plus haut dans cet article, nous avons abordé le basculement de la passerelle �
 
 Comme vous comprenez maintenant comment fonctionne Kerberos avec une passerelle, vous pouvez configurer l’authentification unique pour votre système SAP BW (SAP Business Warehouse). Les étapes suivantes supposent que vous avez déjà [préparé la délégation Kerberos contrainte](#preparing-for-kerberos-constrained-delegation), comme décrit précédemment dans cet article.
 
-Ce guide tente d’être aussi complet que possible. Si vous avez déjà franchi certaines de ces étapes, vous pouvez les ignorer : par exemple, vous avez déjà créé un utilisateur de service pour votre serveur BW et y avez mappé un SPN, ou bien vous avez déjà installé la bibliothèque gsskrb5.
+Ce guide tente d’être aussi complet que possible. Si vous avez déjà effectué certaines étapes, vous pouvez les ignorer : Par exemple, vous avez déjà créé un utilisateur de service pour votre serveur BW et y avez mappé un SPN, ou bien vous avez déjà installé la bibliothèque gsskrb5.
 
 ### <a name="setup-gsskrb5-on-client-machines-and-the-bw-server"></a>Installer gsskrb5 sur les machines clientes et le serveur BW
 
@@ -367,7 +367,7 @@ Si vous n’avez pas configuré Azure AD DirSync, suivez ces étapes pour **chaq
 
 ### <a name="add-a-new-bw-application-server-data-source-to-the-power-bi-service"></a>Ajouter une nouvelle source de données de serveur d’applications BW au service Power BI
 
-Ajoutez la source de données BW à votre passerelle : suivez les instructions indiquées plus haut dans cet article au sujet de l’[exécution d’un rapport](#running-a-power-bi-report).
+Ajoutez la source de données BW à votre passerelle : Suivez les instructions indiquées plus haut dans cet article au sujet de [l’exécution d’un rapport](#running-a-power-bi-report).
 
 1. Dans la fenêtre de la configuration de la source de données, entrez le **Nom d’hôte**, le **Numéro système**, et l’**ID client** du serveur d’applications que vous utiliseriez pour vous connecter à votre serveur BW à partir de Power BI Desktop. Pour la **Méthode d’authentification**, sélectionnez **Windows**.
 

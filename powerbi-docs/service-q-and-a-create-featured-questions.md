@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: E1mIAyEXuF4
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 02663648002f7924725791e378e10532fadc1128
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 7e57233dac635cadf8f1dc31b4956b4f8e503083
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51716938"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284009"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Création de questions exemplaires pour les Q&R de Power BI
 Si vous possédez un jeu de données, vous pouvez y ajouter vos propres questions exemplaires.  Questions et réponses dans Power BI affiche ces questions à ceux de vos collègues qui utilisent (*consomment*) votre jeu de données.  Les questions exemplaires ont pour but de donner à vos collègues des idées sur les types de questions qu’ils peuvent poser concernant le jeu de données. Le choix des questions exemplaires que vous ajoutez vous appartient. Vous pouvez ajouter des questions fréquemment posées, des questions qui présentent des résultats intéressants ou des questions qui peuvent être difficiles à formuler.
@@ -48,7 +48,7 @@ Cet article utilise [l’Exemple Analyse de la vente au détail](sample-datasets
 
 ### <a name="next-steps"></a>Étapes suivantes
 [Q&R dans Power BI](consumer/end-user-q-and-a.md)  
-[Didacticiel : Présentation de Q&R de Power BI](power-bi-visualization-introduction-to-q-and-a.md)  
+[Tutoriel : Présentation de Q&R de Power BI](power-bi-visualization-introduction-to-q-and-a.md)  
 [Power BI – Concepts de base](consumer/end-user-basic-concepts.md)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

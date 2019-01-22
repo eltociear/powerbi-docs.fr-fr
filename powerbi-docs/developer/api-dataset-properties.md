@@ -6,15 +6,15 @@ manager: kfile
 ms.author: maghan
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: cf489f842d114dbf0ac1add561a93c2ce5499971
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 4654534d9643b9c5cf5911249a0eda33b5cc32af
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37780556"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277894"
 ---
 # <a name="dataset-properties"></a>Propriétés du jeu de données
 
@@ -50,7 +50,7 @@ name     |  String        | Nom de colonne défini par l’utilisateur.        |
 dataType     |  String       |  [Types de données EDM](https://msdn.microsoft.com/library/ee382832.aspx) pris en charge et restrictions. Consultez [Restrictions des types de données](#DataTypeRestrictions).      |  Faux       | Vrai        
 formatString     | String        | Chaîne décrivant la façon dont la valeur doit être mise en forme lorsqu’elle est affichée. Pour en savoir plus sur la mise en forme des chaînes, consultez [Contenu FORMAT_STRING](https://msdn.microsoft.com/library/ms146084.aspx).      | Faux        | Faux        
 sortByColumn    | String        |   Nom de chaîne d’une colonne dans la même table à utiliser pour trier la colonne en cours.     | Faux        | Faux       
-dataCategory     | String        |  Valeur de chaîne à utiliser pour la catégorie de données qui décrit les données de cette colonne. Voici certaines valeurs courantes : Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl       |  Faux       | Faux        
+dataCategory     | String        |  Valeur de chaîne à utiliser pour la catégorie de données qui décrit les données de cette colonne. Exemples de valeurs courantes : Address, City, Continent, Country, Image, ImageUrl, Latitude, Longitude, Organization, Place, PostalCode, StateOrProvince, WebUrl.       |  False       | Faux        
 isHidden    |  Boolean       |  Propriété qui indique si la colonne est masquée. La valeur par défaut est Faux.       | Faux        | Faux        
 summarizeBy     | String        |  Méthode d’agrégation par défaut pour la colonne. Voici les valeurs disponibles : default, none, sum, min, max, count, average, distinctCount     |  Faux       | Faux
 
@@ -68,7 +68,7 @@ isHidden     | String        |  Si Vrai, la table est masquée dans les outils c
 Nom  |Type  |Description  |En lecture seule  |Obligatoire 
 ---------|---------|---------|---------|---------
 name     | String        | Nom de relation défini par l’utilisateur. Sert également d’identificateur de la relation.        | Faux       | Vrai        
-crossFilteringBehavior     | String        |    Direction de filtrage de la relation : OneDirection (par défaut), BothDirections, Automatic       | Faux        | Faux        
+crossFilteringBehavior     | Chaîne        |    Direction du filtrage de la relation : OneDirection (par défaut), BothDirections, Automatic.       | False        | Faux        
 fromTable     | String        | Nom de la table de clé étrangère.        | Faux        | Vrai         
 fromColumn    | String        | Nom de la colonne de clé étrangère.        | Faux        | Vrai         
 toTable    | String        | Nom de la table de clé primaire.        | Faux        | Vrai         
@@ -84,10 +84,10 @@ Int64     |   Valeurs Int64.MaxValue et Int64.MinValue non autorisées.
 Double     |  Les valeurs Double.MaxValue et Double.MinValue ne sont pas autorisées. NAN non pris en charge. + Infinity et - Infinity non pris en charge dans certaines fonctions (par exemple, Min, Max).       
 Boolean     |   Vrai ou Faux.
 DateTime    |   Lors du chargement des données nous quantifions les valeurs avec des fractions de jour en multiples de 1/300ème de seconde (3.33ms).      
-String     |  Autorise actuellement jusqu’à 4 000 caractères par valeur de chaîne.
-Decimal|précision=28, échelle=4
+Chaîne     |  Autorise actuellement jusqu’à 4 000 caractères par valeur de chaîne.
+Décimal|précision=28, échelle=4
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>Example
 L’exemple de code suivant inclut un certain nombre de ces propriétés :
 
 ```

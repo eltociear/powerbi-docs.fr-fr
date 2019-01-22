@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: e3b7a6ca4471fb1a6454f6efb9fba1f89b8ae1da
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829984"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290390"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
 Votre responsable attend de vous un rapport présentant vos chiffres de vente les plus récents et vos dernières impressions concernant la campagne avant la fin de la journée. Vos données les plus récentes sont stockées sur différents systèmes tiers et sur des fichiers de votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des éléments visuels et mettre en forme un rapport. Vous commencez à vous inquiéter.
@@ -50,7 +50,7 @@ En bas du volet de navigation de gauche, sélectionnez **Obtenir les données**.
 
 Dans la page Fichiers, sélectionnez **Fichier local**. Accédez au classeur Excel sur votre ordinateur et sélectionnez-le pour le charger dans Power BI. Sélectionnez **Importer**.
 
-> **REMARQUE** : pour suivre le reste de ce didacticiel, utilisez le [classeur d’exemple Financier](sample-financial-download.md).
+> **REMARQUE** : Pour suivre le reste de ce didacticiel, utilisez le [classeur d’exemple Financier](sample-financial-download.md).
 > 
 > 
 
@@ -67,7 +67,7 @@ Vous pouvez maintenant commencer à créer des visualisations. Votre responsable
 
 ![histogramme dans l’éditeur de rapport](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
-> **CONSEIL** : si votre graphique ne ressemble pas à celui attendu, vérifiez vos agrégations. Par exemple, dans la zone **Valeur**, cliquez avec le bouton droit sur le champ que vous venez d’ajouter et vérifiez que les données sont agrégées comme vous le souhaitez.  Dans notre exemple, nous utilisons **Somme**.
+> **CONSEIL** : Si votre graphique ne ressemble pas à celui attendu, vérifiez vos agrégations. Par exemple, dans la zone **Valeur**, cliquez avec le bouton droit sur le champ que vous venez d’ajouter et vérifiez que les données sont agrégées comme vous le souhaitez.  Dans notre exemple, nous utilisons **Somme**.
 > 
 > 
 

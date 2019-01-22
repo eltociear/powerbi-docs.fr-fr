@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 09bf82d86301967fb46b8724822e183a21008b92
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 760335b0a08156b3c5b594ffc27be4cb0ad12342
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452726"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289920"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Modifier le schéma linguistique de la fonctionnalité Questions et réponses et ajouter des formulations dans Power BI Desktop 
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et quand vos données y répondent, c’est encore plus efficace. C’est ce que vous permet de faire Questions et réponses dans Power BI. Quand vous posez une question dans Questions et réponses, cet outil essaie de vous donner la meilleure réponse possible. 
@@ -49,7 +49,7 @@ Les schémas linguistiques sont enregistrés au format YAML. Ce format est simil
 Nous vous recommandons d’utiliser Visual Studio Code pour modifier des fichiers de schéma linguistique au format YAML. Visual Studio Code offre une prise en charge directe des fichiers YAML et peut être installé avec une extension de validation spécifique du format des schémas linguistiques Power BI.
 1. Installez [Visual Studio Code](https://code.visualstudio.com/).    
 
-2. Sélectionnez l’exemple de schéma linguistique que vous avez précédemment enregistré : [fichier YAML](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
+2. Sélectionnez l’exemple de schéma linguistique que vous avez précédemment enregistré : [Fichier YAML](https://go.microsoft.com/fwlink/?linkid=871858) (SummerOlympics.lsdl.yaml).    
 4. Sélectionnez **Visual Studio Code** et **Toujours utiliser cette application pour ouvrir les fichiers .yaml**.
 
     ![Comment voulez-vous ouvrir ce fichier ?](media/power-bi-q-and-a-linguistic-schema/power-bi-visual-code.png)
@@ -78,7 +78,7 @@ Questions et réponses combine toutes ces informations et les éventuelles amél
 
 
 ## <a name="edit-a-linguistic-schema"></a>Modifier un schéma linguistique
-Quand vous exportez un schéma linguistique pour la première fois à partir de Power BI Desktop, la plus grande partie ou la totalité du contenu du fichier est automatiquement générée par le moteur Questions et réponses. Ces entités, mots (synonymes), relations et formulations générés sont marqués avec une balise **State: Generated** (État : Généré). Ils sont inclus dans le fichier à titre d’information principalement, mais ils peuvent servir de base de travail pour vos propres modifications. 
+Quand vous exportez un schéma linguistique pour la première fois à partir de Power BI Desktop, la plus grande partie ou la totalité du contenu du fichier est automatiquement générée par le moteur Questions et réponses. Ces entités générées, les mots (synonymes), les relations et les formulations sont désignés avec une balise **État : Généré** et sont inclus dans le fichier principalement à des fins d’information, mais peuvent constituer un point de départ utile pour vos propres modifications. 
 
 > [!NOTE]
 > L’exemple de fichier YAML fourni dans ce tutoriel ne contient pas de balises **State:Generated** (État : Généré) ou **State:Deleted** (État : Supprimé), car il a été spécialement préparé pour les besoins du tutoriel. Pour voir ces balises, ouvrez un fichier .pbix non modifié dans la vue Relations et exportez le schéma linguistique.
@@ -86,7 +86,7 @@ Quand vous exportez un schéma linguistique pour la première fois à partir de 
 ![YAML affichant State:Generated (État : Généré)](media/power-bi-q-and-a-linguistic-schema/power-bi-generated-state.png)
 
 
-Quand vous réimportez le fichier de schéma linguistique dans Power BI Desktop, tous les éléments marqués avec la balise **State: Generated** sont ignorés (ils seront regénérés plus tard). Si vous souhaitez changer un contenu généré, vous devez donc aussi supprimer la balise **State: Generated** correspondante. De la même façon, pour supprimer un contenu généré, vous devez changer la balise **State:Generated** en **State: Deleted** afin d’empêcher la regénération du contenu au moment de l’importation du fichier de schéma linguistique.
+Lorsque vous importez votre fichier de schéma linguistique dans Power BI Desktop, tout ce qui est marqué **État : Généré** est ignoré (et ultérieurement regénéré), donc si vous souhaitez apporter une modification à du contenu généré, veillez donc à supprimer la balise **État : Généré** correspondante également. De même, si vous souhaitez supprimer du contenu généré, vous devez remplacer la balise **État : Généré** par **État : Supprimé** afin qu’il ne soit pas regénéré lorsque vous importez votre fichier de schéma linguistique.
 
 1. Ouvrez le jeu de données dans la *vue Relations* dans Power BI Desktop. 
 2. Sélectionnez l’onglet **Modélisation** et choisissez **Exporter un schéma linguistique**.

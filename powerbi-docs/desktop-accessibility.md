@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619629"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280053"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -34,9 +34,9 @@ Lorsque vous voyez un rapport, vous devez généralement avoir le mode d’analy
 Pour faire passer la mise en évidence d’un onglet de page de rapport à un autre ou d’un objet à un autre d’une page de rapport donnée, utilisez la combinaison de touche **Ctrl+F6**.
 
 * Lorsque la mise en évidence est sur les *onglets de page du rapport*, utilisez les touches *Tab* ou *flèche* pour faire passer la mise en évidence d’une page du rapport à la suivante. Le titre de la page de rapport est lu par le lecteur d’écran, qui indique également si cette page est actuellement sélectionnée. Pour charger la page de rapport actuellement mise en évidence, utilisez la touche *Entrée* ou *Espace*.
-* Lorsque la mise en évidence est sur une *page de rapport* chargée, utilisez la touche *Tab* pour la faire passer d’un objet à un autre de la page, notamment les zones de texte, les images, les formes et les graphiques. Le lecteur d’écran lit le type d’objet, le titre de l’objet s’il a un et la description de cet objet si elle est fournie par l’auteur du rapport. 
+* Lorsque la mise en évidence est sur une *page de rapport* chargée, utilisez la touche *Tab* pour la faire passer d’un objet à un autre de la page, notamment les zones de texte, les images, les formes et les graphiques. Le lecteur d’écran lit le type d’objet, le titre de l’objet (le cas échéant) et la description de cet objet si elle est fournie par l’auteur du rapport. 
 
-Quand vous naviguez entre les visuels, si vous voulez interagir davantage, vous pouvez appuyer sur **Alt+Maj+F10** pour déplacer le focus sur l’en-tête du visuel. Celui-ci contient différentes options, notamment le tri, l’exportation de données dans le graphique et le mode Focus. 
+Quand vous naviguez entre les visuels, vous pouvez appuyer sur **Alt+Maj+F10** pour déplacer le focus sur l’en-tête du visuel. Celui-ci contient différentes options, notamment le tri, l’exportation de données dans le graphique et le mode Focus. 
 
 ![Appuyez sur Alt+Maj+F10 dans Power BI Desktop pour déplacer le focus sur l’en-tête du visuel](media/desktop-accessibility/accessibility_08.png)
 
@@ -47,9 +47,9 @@ Vous pouvez appuyer sur **Alt+Maj+F11** pour présenter une version accessible d
 > [!NOTE]
 > La fonctionnalité Afficher des données n’est accessible à un lecteur d’écran qu’avec ce raccourci clavier. Si vous ouvrez Afficher les données par le biais de l’option disponible dans l’en-tête du visuel, elle ne sera pas accessible à un lecteur d’écran. Lorsque vous utilisez Afficher les données, activez le mode d’analyse pour tirer parti de tous les raccourcis que fournit votre lecteur d’écran.
 
-À partir de la version de juillet 2018 de **Power BI Desktop**, les segments sont également dotés d’une fonctionnalité d’accessibilité intégrée. Lorsque vous sélectionnez un segment, pour régler sa valeur, actionnez CTRL + flèche droite (contrôle plus la touche flèche droite) pour vous déplacer dans les différents contrôles du segment. Par exemple, lorsque vous appuyez d’abord sur CTRL + flèche droite, le focus est mis sur la gomme, et appuyer sur la barre d’espace revient à cliquer sur le bouton Gomme, ce qui efface toutes les valeurs sur le segment. 
+À partir de la version de juillet 2018 de **Power BI Desktop**, les segments sont également dotés d’une fonctionnalité d’accessibilité intégrée. Lorsque vous sélectionnez un segment, pour régler sa valeur, actionnez CTRL + flèche droite (contrôle plus la touche flèche droite) pour vous déplacer dans les différents contrôles du segment. Par exemple, lorsque vous appuyez d’abord sur CTRL+flèche droite, le focus est mis sur la gomme, et appuyer sur la barre d’espace revient à cliquer sur le bouton Gomme, ce qui efface toutes les valeurs sur le segment. 
 
-Vous pouvez parcourir les contrôles dans un segment en appuyant sur la touche TAB. En appuyant sur la touche TAB lorsque vous êtes sur la gomme, vous accédez au bouton de liste déroulante ; un autre actionnement de la touche TAB vous amène à la première valeur de segment (s’il existe plusieurs valeurs pour le segment, tels qu’une plage). 
+Vous pouvez parcourir les contrôles dans un segment en appuyant sur la touche TAB. En appuyant sur la touche TAB lorsque vous êtes sur la gomme, vous accédez au bouton de liste déroulante. Un autre actionnement de la touche TAB vous amène à la première valeur de segment (s’il existe plusieurs valeurs pour le segment, tels qu’une plage). 
 
 ![Appuyez sur CTRL + (touche flèche vers la droite) dans Power BI Desktop pour ajuster l’élément ou des valeurs dans un segment, appuyez sur la barre d’espace pour sélectionner l’élément et régler sa valeur](media/desktop-accessibility/accessibility_07.png)
 
@@ -74,7 +74,7 @@ Les conseils suivants peuvent vous aider à créer des rapports **Power BI Des
 * Pour chaque objet d’un rapport, fournissez un *texte de remplacement*. Cela vous permet de garantir que les lecteurs de votre rapport comprennent ce que vous essayez de communiquer avec un visuel, même s’ils ne peuvent pas voir le visuel, l’image, la forme ou la zone de texte. Pour fournir un *Texte de remplacement* pour un objet d’un rapport **Power BI Desktop**, sélectionnez l’objet (par exemple un visuel, une forme, etc.) puis, dans le volet **Visualisations**, sélectionnez la section **Format**, développez **Général**, puis faites défiler vers le bas et renseignez la zone de texte **Texte de remplacement**.
   
   ![Il est possible d’ajouter un texte de remplacement à n’importe quel objet d’un rapport en sélectionnant Visualisations > Format > Général > zone de texte Texte de remplacement.](media/desktop-accessibility/accessibility_02.png)
-* Veillez à ce qu’il y ait suffisamment de contraste entre le texte et les couleurs d’arrière-plan de vos rapports. Il existe plusieurs outils, comme [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/), que vous pouvez utiliser pour vérifier les couleurs de votre rapport. 
+* Veillez à ce qu’il y ait suffisamment de contraste entre le texte et les couleurs d’arrière-plan de vos rapports. Il existe plusieurs outils, comme [Color Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/), que vous pouvez utiliser pour vérifier les couleurs de votre rapport. 
 * Utilisez des tailles et polices de texte facilement lisibles. Les textes de petite taille ou les polices difficiles à lire ont un impact négatif sur l’accessibilité.
 * Incluez un titre, des étiquettes d’axe et des étiquettes de données dans tous les visuels.
 * Utilisez des titres significatifs pour toutes les pages du rapport.
@@ -141,7 +141,7 @@ Dans nos efforts constants pour améliorer l’accessibilité, les expériences 
 ### <a name="pane-navigation"></a>Navigation dans les volets
 | Pour           | Appuyer sur                |
 | :------------------- | :------------------- |
-| Ouvrir un menu contextuel | <ul><li>Clavier Windows : Touche de contexte Windows + F10.  La touche de contexte Windows se trouve entre la touche Alt de gauche et la touche Flèche Gauche</li><li>Autre clavier : Maj + F10</li></ul> |
+| Ouvrir un menu contextuel | <ul><li>Clavier Windows : Clé de contexte Windows + F10.  La touche de contexte Windows se trouve entre la touche Alt de gauche et la touche Flèche Gauche</li><li>Autre clavier : Maj + F10</li></ul> |
 
 ### <a name="slicer"></a>Segment
 | Pour           | Appuyer sur                |
@@ -170,7 +170,10 @@ Dans nos efforts constants pour améliorer l’accessibilité, les expériences 
 | Sélectionner toutes les occurrences de la sélection actuelle | Ctrl + Maj + L |
 | Sélectionner toutes les occurrences du mot actuel | Ctrl + F2 |
 
-
+### <a name="enter-data"></a>Entrer des données
+| Pour           | Appuyer sur                |
+| :------------------- | :------------------- |
+| Quitter la grille modifiable | Ctrl + Tab |
 
 
 ## <a name="next-steps"></a>Étapes suivantes

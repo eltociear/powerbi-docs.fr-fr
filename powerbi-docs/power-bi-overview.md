@@ -4,17 +4,17 @@ description: 'Vue d’ensemble de Power BI et de la façon dont les différents 
 author: davidiseminger
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: overview
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 357af2f995fc927e7b55283c762e5f4b52376444
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: bc712b892cd35259bc036f41b6e3e16a5388ffad
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619583"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293064"
 ---
 # <a name="what-is-power-bi"></a>Qu’est-ce que Power BI ?
 **Power BI** est un ensemble de services logiciels, d’applications et de connecteurs qui œuvrent ensemble pour transformer des sources de données disparates en informations visuelles immersives et interactives. Quelle que soit la nature de vos données (une simple feuille de calcul Excel ou plusieurs entrepôts de données hybrides dans le cloud et en local), **Power BI** vous permet de vous connecter facilement à vos sources de données, de visualiser (ou découvrir) les informations importantes et de les partager avec les personnes de votre choix.
@@ -64,4 +64,4 @@ Power BI Report Server est une solution que vous déployez derrière votre pare-
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Se connecter, obtenir des données et se familiariser avec le service Power BI](service-the-new-power-bi-experience.md)   
-[Tutoriel : Bien démarrer avec le service Power BI](service-get-started.md)
+[Tutoriel : Prise en main du service Power BI](service-get-started.md)

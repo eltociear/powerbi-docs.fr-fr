@@ -1,23 +1,23 @@
 ---
-title: 'Exemple Rentabilité des clients pour Power BI : visite guidée'
-description: 'Exemple Rentabilité des clients pour Power BI : visite guidée'
+title: 'Exemple Rentabilité des clients pour Power BI : Visite guidée'
+description: 'Exemple Rentabilité des clients pour Power BI : Visite guidée'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: a47a63311dd28f2f1f313bc0a5cfcd68cdb0401b
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 3dd4f5f0404737685757400202d3a92767e44189
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717973"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280835"
 ---
-# <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : visite guidée
+# <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : Visite guidée
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Vue d’ensemble de l’exemple Rentabilité des clients
 Le pack de contenu « Exemple Rentabilité des clients » contient un tableau de bord, un rapport et un jeu de données qui concernent une société qui fabrique des supports marketing. Ce tableau de bord a été créé par une directrice financière désireuse d’afficher des métriques clés sur les 5 responsables de division (encadrement), les produits, les clients et les marges brutes (GM). D’un simple coup d’œil, elle peut identifier les facteurs qui ont un impact sur la rentabilité.
@@ -179,7 +179,7 @@ Penchons-nous sur le secteur *Distribution* .
 1. Ouvrez la page de rapport « Analyse de la marge sectorielle ».
 2. Sans sélectionner de visualisations sur la page de rapport, développez le volet Filtres à droite (si ce n’est déjà fait). Le volet Filtres doit afficher uniquement les filtres au niveau page.  
 
-   ![Filtres au niveau de la page](media/sample-customer-profitability/power-bi-filters.png)
+   ![Filtres de niveau page](media/sample-customer-profitability/power-bi-filters.png)
 3. Recherchez le filtre pour **Industry** ( secteur), puis cliquez sur la flèche pour développer la liste. Ajoutons un filtre de page pour le secteur Distribution. Tout d’abord, annulez toutes les sélections en désactivant la case à cocher **Sélectionner tout**. Ensuite, sélectionnez seulement **Distribution**.  
 
    ![filtre pour Distribution](media/sample-customer-profitability/customer7.png)
@@ -195,7 +195,7 @@ Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours ch
 
 Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529781).
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
+## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
 Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations des données client. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).
 
 [Revenir aux exemples Power BI](sample-datasets.md)  

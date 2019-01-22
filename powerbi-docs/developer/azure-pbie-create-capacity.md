@@ -5,17 +5,17 @@ author: markingmyname
 manager: kfile
 ms.author: maghan
 ms.service: power-bi-embedded
-ms.component: ''
+ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: conceptual
 ms.reviewer: ''
 ms.date: 07/31/2018
-ms.openlocfilehash: f364bb725c492c1bffd2493c1e2a48ee8c442a9e
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: caab7ce649687ec22d171e112382aa13d7652fb9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300043"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288540"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Créer une capacité Power BI Embedded dans le Portail Microsoft Azure
 
@@ -29,10 +29,10 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 Pour suivre ce guide de démarrage rapide, vous avez besoin des éléments suivants :
 
-* **Abonnement Azure :** accédez à la page [Azure - Essai gratuit](https://azure.microsoft.com/free/) pour créer un compte.
-* **Azure Active Directory :** votre abonnement doit être associé à un locataire Azure Active Directory (AAD). De plus, ***vous devez être connecté à Azure avec un compte relevant de ce locataire***. Les comptes Microsoft ne sont pas pris en charge. Pour en savoir plus, consultez [Authentification et autorisations utilisateur](https://docs.microsoft.com/azure/analysis-services/analysis-services-manage-users).
-* **Locataire Power BI :** au moins un compte de votre locataire AAD doit avoir souscrit à Power BI.
-* **Groupe de ressources :** utilisez un groupe de ressources que vous possédez déjà ou [créez-en un](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
+* **Abonnement Azure :** Accédez à la page [Azure - Essai gratuit](https://azure.microsoft.com/free/) pour créer un compte.
+* **Azure Active Directory :** Votre abonnement doit être associé à un locataire Azure Active Directory (AAD). De plus, ***vous devez être connecté à Azure avec un compte relevant de ce locataire***. Les comptes Microsoft ne sont pas pris en charge. Pour en savoir plus, consultez [Authentification et autorisations utilisateur](https://docs.microsoft.com/azure/analysis-services/analysis-services-manage-users).
+* **Locataire Power BI :** Au moins un compte de votre locataire AAD doit avoir souscrit à Power BI.
+* **Groupe de ressources :** Utilisez un groupe de ressources que vous possédez déjà ou [créez-en un](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).
 
 ## <a name="create-a-capacity"></a>Créer une capacité
 

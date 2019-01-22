@@ -6,19 +6,19 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 2a033e6893cffb71c4a898f1260aca615ae4e4b8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900527"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291982"
 ---
-# <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Tutoriel : Bien démarrer avec le service Power BI (app.powerbi.com)
+# <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Tutoriel : Prise en main du service Power BI (app.powerbi.com)
 Ce didacticiel vous aide à bien démarrer avec le ***service Power BI***. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de commencer par lire [Qu’est-ce que Power BI ?](power-bi-overview.md).
 
 ![illustration représentant la relation entre le service Power BI, Power BI Desktop et Power BI Mobile](media/service-get-started/power-bi-components.png)
@@ -59,7 +59,7 @@ Si vous avez des données importantes dans des fichiers Excel ou CSV, vous pouve
 
 En savoir plus sur toutes les autres façons d’[obtenir des données pour Power BI](service-get-data.md).
 
-## <a name="step-1-get-data"></a>Étape 1 : obtenir des données
+## <a name="step-1-get-data"></a>Étape 1 : Obtenir des données
 Voici un exemple d’obtention de données à partir d’un fichier CSV. Vous souhaitez suivre ce didacticiel ? [Téléchargez cet exemple de fichier CSV](http://go.microsoft.com/fwlink/?LinkID=521962)
 
 1. [Connectez-vous à Power BI](http://www.powerbi.com/). Vous n’avez pas de compte ? Vous pouvez vous inscrire pour un essai gratuit.
@@ -93,7 +93,7 @@ Voici un exemple d’obtention de données à partir d’un fichier CSV. Vous s
    > 
  
 
-## <a name="step-2-start-exploring-your-dataset"></a>Étape 2 : Commencer à explorer votre jeu de données
+## <a name="step-2-start-exploring-your-dataset"></a>Étape 2 : Commencer à explorer le jeu de données
 Maintenant que vous êtes connecté aux données, vous pouvez les explorer.  Une fois que vous avez trouvé des informations intéressantes, vous pouvez créer un tableau de bord pour les suivre et voir leur évolution. Voyons comment cela fonctionne.
     
 1. Dans l’éditeur de rapport, vous allez utiliser le volet **Champs** sur le côté droit de la page pour créer une visualisation.  Cochez les cases en regard de **Gross Sales** (Chiffre d’affaires brut) et **Date**.
@@ -128,7 +128,7 @@ Maintenant que vous êtes connecté aux données, vous pouvez les explorer.  Une
    
    Sélectionnez la nouvelle vignette dans votre tableau de bord pour revenir au rapport à tout moment. Power BI vous renvoie à l’éditeur de rapport en mode Lecture. Pour revenir au mode Édition, sélectionnez **Modifier le rapport** à partir de la barre de menus supérieure. Une fois en mode Édition, continuez l’exploration et épinglez des vignettes. 
 
-## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Étape 3 : Poursuivre l’exploration avec Questions et réponses (interrogation en langage naturel)
+## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Étape 3 :  Poursuivre l’exploration avec Questions et réponses (requêtes en langage naturel)
 1. Pour une exploration rapide de vos données, essayez de poser une question dans la zone Q&R. La zone de question Questions et réponses se trouve en haut de votre tableau de bord (**Poser une question sur vos données**) et dans la barre de menus supérieure de votre rapport (**Poser une question**). Par exemple, essayez de taper « quel segment présente le meilleur chiffre d’affaires ».
    
    ![canevas Questions et réponses](media/service-get-started/powerbi-qna.png)

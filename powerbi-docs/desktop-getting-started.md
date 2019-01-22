@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5f202597fa641bf68b8e49c461ed5c25ea987c3e
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 019ee7985c27c72ca41a09c8d13754316fd60232
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670922"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291645"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Prise en main de Power BI Desktop
 Bienvenue dans le **Guide de prise en main de Power BI Desktop**. Cette courte présentation de Power BI Desktop vous permettra de vous familiariser avec son fonctionnement. Elle vous montrera ce que l’application peut faire et vous permettra d’être plus vite apte à créer des modèles de données fiables, ainsi que des rapports de haute qualité, qui amplifieront vos efforts décisionnels. 
@@ -69,7 +69,7 @@ Vous pouvez **Obtenir des données**, consulter les **Sources récentes**ou **Ou
 
 ![](media/desktop-getting-started/designer_gsg_blankreport.png)
 
-Power BI Desktop propose trois vues : **Rapport** , **Données** **Relations** . Power BI Desktop comprend également un **Éditeur de requête**qui s’ouvre dans une fenêtre distincte. L’ **Éditeur de requête**permet de créer des requêtes et de transformer des données, puis de charger ce modèle de données filtrées dans Power BI Desktop pour créer des rapports.
+Il existe trois vues dans Power BI Desktop : **Rapport**, **Données** et **Relations**. Power BI Desktop comprend également un **Éditeur de requête**qui s’ouvre dans une fenêtre distincte. L’ **Éditeur de requête**permet de créer des requêtes et de transformer des données, puis de charger ce modèle de données filtrées dans Power BI Desktop pour créer des rapports.
 
 L’écran suivant montre les icônes des trois vues à gauche de Power BI Desktop : **Rapport**, **Données**et **Relations**(de haut en bas). La vue actuellement affichée est indiquée par une barre jaune à gauche de l’icône. Dans le cas présent, c’est la vue **Rapport** qui est actuellement affichée. Vous pouvez changer de vue en cliquant sur l’une de ces trois icônes.
 

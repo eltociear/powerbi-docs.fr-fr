@@ -1,29 +1,29 @@
 ---
-title: 'Didacticiel : créer vos propres mesures dans Power BI Desktop'
-description: 'Didacticiel : créer vos propres mesures dans Power BI Desktop'
+title: 'Tutoriel : Créer ses propres mesures dans Power BI Desktop'
+description: 'Tutoriel : Créer ses propres mesures dans Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 85c16822a51bc3c4a59bbfaa363f742f77552b72
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ba9cc81c966ebadb2aaff8c339b8a151aef7b6fd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578632"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287582"
 ---
-# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Didacticiel : créer vos propres mesures dans Power BI Desktop
+# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Tutoriel : Créer ses propres mesures dans Power BI Desktop
 Vous pouvez créer certaines solutions d’analyse de données parmi les plus puissantes dans Power BI Desktop à l’aide de mesures. Les mesures vous aident en effectuant des calculs sur vos données quand vous interagissez avec vos rapports. Ce didacticiel vous aidera à comprendre les mesures et à créer vos propres mesures élémentaires dans Power BI Desktop.
 
 ### <a name="prerequisites"></a>Conditions préalables
 - Ce didacticiel s’adresse aux utilisateurs de Power BI déjà familiarisés avec l’utilisation de Power BI Desktop pour créer des modèles plus avancés. Vous devez déjà bien connaître l’utilisation de la fonctionnalité Obtenir des données et de l’Éditeur de requête pour importer des données, l’utilisation de plusieurs tables connexes et l’ajout de champs dans le Canevas de rapport. Si vous découvrez seulement Power BI Desktop, veillez à consulter [Prise en main de Power BI Desktop](desktop-getting-started.md).
   
-- Téléchargez le fichier [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip) qui contient des données sur les ventes en ligne de la société fictive Contoso, Inc. Comme ces données ont été importées à partir d’une base de données, vous ne pouvez pas vous connecter à la source de données ni l’afficher dans l’Éditeur de requête. Extrayez le fichier sur votre ordinateur et ouvrez-le dans Power BI Desktop.
+- Téléchargez le fichier [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), qui inclut des données de vente en ligne de la société fictive Contoso, Inc. Ces données ont été importées à partir d’une base de données, donc vous ne pourrez pas vous connecter à la source de données ni l’afficher dans l’éditeur de requête. Extrayez le fichier sur votre ordinateur et ouvrez-le dans Power BI Desktop.
 
 ## <a name="understand-measures"></a>Comprendre les mesures
 
@@ -128,7 +128,7 @@ Sélectionnez le champ **SalesAmount** ou faites-le glisser sur le graphique pou
 
 ![Montant des ventes et ventes nettes par pays](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
 
-Le graphique utilise désormais deux mesures : SalesAmount qui a été totalisée automatiquement et la mesure Net Sales que vous avez créée. Chaque mesure a été calculée dans le contexte d’un autre champ, RegionCountryName.
+Le graphique utilise désormais deux mesures : la mesure SalesAmount qui a été totalisée automatiquement et la mesure Net Sales que vous avez créée. Chaque mesure a été calculée dans le contexte d’un autre champ, RegionCountryName.
     
 ### <a name="use-your-measure-with-a-slicer"></a>Utiliser votre mesure avec un segment
 

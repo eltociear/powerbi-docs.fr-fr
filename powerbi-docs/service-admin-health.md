@@ -5,21 +5,21 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 101c49a67cabc41251fc6be5c84a26b54a3de46d
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: afb579c3163fac5da8b3a14f2f2b974d64213098
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973186"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296424"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Effectuer le suivi de l’intégrité du service Power BI dans Office 365
 
-Le Centre d’administration Office 365 comporte des outils importants pour les administrateurs de Power BI, y compris des informations historiques et actuelles sur l’intégrité du service. Pour accéder à ces informations, vous devez avoir l’un des rôles suivants : Administrateur du service Power BI ou Administrateur général d’Office 365. Pour plus d’informations sur les rôles, voir [Rôles d’administrateur liés à Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+Le Centre d’administration Office 365 comporte des outils importants pour les administrateurs de Power BI, y compris des informations historiques et actuelles sur l’intégrité du service. Pour accéder à ces informations, vous devez avoir l’un des rôles suivants : Administrateur de Service Power BI ou Administrateur général Office 365. Pour plus d’informations sur les rôles, voir [Rôles d’administrateur liés à Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Connectez-vous au [Centre d’administration Office 365](https://portal.office.com/adminportal).
 

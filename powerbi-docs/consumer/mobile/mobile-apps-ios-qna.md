@@ -1,20 +1,20 @@
 ---
 title: Analyste virtuel des questions et réponses dans les applications iOS – Power BI
 description: Posez des questions concernant l’exemple de données en utilisant vos propres mots avec l’analyste virtuel des questions et réponses dans l’application mobile Power BI sur votre appareil iOS.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
-ms.author: maggies
-ms.openlocfilehash: abd0e6b36af02753d8ff08c8f7405cc6502977d1
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: 0517299240137bf63ace8aca6a1da577a4443d2d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548107"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278697"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Analyste virtuel des questions et réponses dans les applications iOS – Power BI
 
@@ -61,21 +61,21 @@ La première étape consiste à télécharger les exemples Retail Analysis (Anal
 
 4. Sélectionnez **l’exemple Retail Analysis** (Analyse de la vente au détail).
  
-    ![Exemple Analyse de la vente au détail](./media/mobile-apps-ios-qna/power-bi-rs.png)
+    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-rs.png)
  
 8. Sélectionnez **Se connecter**.  
   
-   ![Exemple Analyse de la vente au détail](./media/mobile-apps-ios-qna/retail16.png)
+   ![Retail Analysis Sample](./media/mobile-apps-ios-qna/retail16.png)
    
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail.
    
-   ![Exemple Analyse de la vente au détail](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
+   ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
 
 **Obtenir l’exemple Opportunity Analysis** (Analyse des opportunités)
 
 - Suivez les mêmes étapes que pour l’exemple Retail Analysis (Analyse de la vente au détail), mais en sélectionnant **l’exemple Opportunity Analysis** (Analyse des opportunités) à l’étape 4.
 
-    ![Exemple Analyse de la vente au détail](./media/mobile-apps-ios-qna/power-bi-oa.png)
+    ![Retail Analysis Sample](./media/mobile-apps-ios-qna/power-bi-oa.png)
   
 Vous pouvez à présent consulter les exemples sur votre appareil iOS.
 
@@ -100,7 +100,7 @@ Vous pouvez à présent consulter les exemples sur votre appareil iOS.
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-expanded-chart.png)
 7. Appuyez sur la flèche dans l’angle supérieur gauche pour revenir à la fenêtre de conversation de l’analyste virtuel des questions et réponses.
 8. Appuyez sur le X à droite de la zone de texte pour supprimer le texte et recommencer.
-9. Essayez une nouvelle question : appuyez sur **top** (haut) dans les mots clés, sur **sale by avg $/unit ly** > **Envoyer** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
+9. Essayez une nouvelle question : Appuyez sur **top** (haut) dans les mots clés, sur **sale by avg $/unit ly** > **Envoyer** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).
 
     ![](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-2.png)
 10. Choisissez **by** (par) dans les mots clés, appuyez sur **time** (heure) dans la liste de suggestions en haut, puis sur **Envoyer** ![](./media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e23182b1e607498c5187882740b556455657ba1d
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: f39f5ae569c757072a55647becb5697c881abbe2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670897"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285666"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop
 
@@ -81,7 +81,7 @@ Pour supprimer la colonne **Cost of living** (Coût de la vie), sélectionnez-la
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-Vous remarquerez que les valeurs _Nouveau classement_ n’ont pas changé, à cause de l’ordre des étapes. Étant donné que l’Éditeur de requête enregistre les étapes de manière séquentielle, mais indépendamment les unes des autres, vous pouvez déplacer chaque **étape appliquée** vers le haut ou vers le bas dans la séquence. Cliquez simplement avec le bouton droit sur n’importe quelle étape. L’Éditeur de requête vous propose alors un menu comportant les options suivantes : **Renommer**, **Supprimer**, **Supprimer** **jusqu’à la fin** (supprimer l’étape actuelle, ainsi que toutes les étapes suivantes), **Monter** ou **Descendre**. Poursuivez et déplacez la dernière étape _Removed Columns_ (Suppression de colonnes) juste au-dessus de l’étape _Added Custom_ (Ajout de colonne personnalisée).
+Vous remarquerez que les valeurs _Nouveau classement_ n’ont pas changé, à cause de l’ordre des étapes. Étant donné que l’Éditeur de requête enregistre les étapes de manière séquentielle, mais indépendamment les unes des autres, vous pouvez déplacer chaque **étape appliquée** vers le haut ou vers le bas dans la séquence. Cliquez avec le bouton droit sur n’importe quelle étape et l’Éditeur de requête fournit un menu qui vous permet d’effectuer les opérations suivantes : **Renommer**, **Supprimer**, **Supprimer** **jusqu’à la fin** (supprimer l’étape actuelle, ainsi que toutes les étapes suivantes), **Déplacer vers le haut** ou **Déplacer vers le bas**. Poursuivez et déplacez la dernière étape _Removed Columns_ (Suppression de colonnes) juste au-dessus de l’étape _Added Custom_ (Ajout de colonne personnalisée).
 
 ![](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
 
@@ -179,7 +179,7 @@ La fenêtre **Supprimer les lignes du haut** s’affiche, dans laquelle vous pou
 
 ![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Supprimez quelques colonnes inutiles : sachant qu’il nous faut simplement le mappage des États avec leurs abréviations officielles en deux lettres, vous pouvez supprimer les autres colonnes : **Column1**, **Column3**, **Column4** et de **Column6** à **Column11**. Tout d’abord, sélectionnez **Column1**, puis maintenez la touche **CTRL** enfoncée pour sélectionner les autres colonnes à supprimer (vous pouvez ainsi sélectionner plusieurs colonnes non contiguës). Sous l’onglet Accueil du ruban, sélectionnez **Supprimer les colonnes \> Supprimer les colonnes**.
+* Supprimez quelques colonnes inutiles : nous avons besoin uniquement du mappage des États avec leurs abréviations à deux lettres officielles, si bien que vous pouvez supprimer les colonnes suivantes : **Colonne1**, **Colonne3**, **Colonne4**, puis **Colonne6** à **Colonne11**. Tout d’abord, sélectionnez **Column1**, puis maintenez la touche **CTRL** enfoncée pour sélectionner les autres colonnes à supprimer (vous pouvez ainsi sélectionner plusieurs colonnes non contiguës). Sous l’onglet Accueil du ruban, sélectionnez **Supprimer les colonnes \> Supprimer les colonnes**.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 

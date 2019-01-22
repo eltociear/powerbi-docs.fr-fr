@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/03/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ebec34690001293e93dafd69dd76f7bdbf54981c
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: dc756e98a58d30edd476112ca249dae032d0d79a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900518"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296797"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 ## <a name="power-bi-visualizations"></a>Visualisations Power BI
@@ -26,7 +26,7 @@ Consultez [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste des visualisations disponibles dans Power BI
 Toutes ces visualisations peuvent être ajoutées à des rapports Power BI, spécifiées dans Questions et réponses, et épinglées à des tableaux de bord.
 
-### <a name="area-charts-basic-layered-and-stacked"></a>Graphiques en aires : de base (superposées) et empilées
+### <a name="area-charts-basic-layered-and-stacked"></a>Graphiques en aires : De base (superposées) et empilées
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
 >[!TIP]
@@ -42,10 +42,10 @@ Pour plus d’informations, consultez [Graphique en aires de base](power-bi-visu
 >[!TIP]
 >Les graphiques à barres sont la norme pour la recherche d’une valeur spécifique dans différentes catégories.
 
-### <a name="cards-multi-row"></a>Cartes : à plusieurs lignes
+### <a name="cards-multi-row"></a>Cartes : Plusieurs lignes
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
-### <a name="cards-single-number"></a>Cartes : à numéro unique
+### <a name="cards-single-number"></a>Cartes : Numéro unique
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
 Pour plus d’informations, consultez [Créer une vignette représentant un grand nombre](power-bi-visualization-card.md).
@@ -96,7 +96,7 @@ Pour plus d’informations, consultez [Indicateurs de performance clés dans Pow
 >[!TIP]
 >Mettez en évidence la forme générale de l’ensemble d’une série de valeurs, normalement au fil du temps.
 
-### <a name="maps-basic-maps"></a>Cartes : de base
+### <a name="maps-basic-maps"></a>Cartes : Cartes simples
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy_viz_map.png)
 
 >[!TIP]
@@ -104,12 +104,12 @@ Pour plus d’informations, consultez [Indicateurs de performance clés dans Pow
 
 Pour plus d’informations, consultez [Trucs et astuces pour les éléments visuels de la carte](power-bi-map-tips-and-tricks.md).
 
-### <a name="maps-arcgis-maps"></a>Cartes : ArcGIS
+### <a name="maps-arcgis-maps"></a>Cartes : ArcGIS Maps
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
 Pour plus d’informations, consultez [Cartes ArcGIS dans Power BI](../power-bi-visualization-arcgis.md).
 
-### <a name="maps-filled-maps-choropleth"></a>Cartes : choroplèthes (thématiques)
+### <a name="maps-filled-maps-choropleth"></a>Cartes : Cartes choroplèthes (thématiques)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
 
 >[!TIP]
@@ -117,7 +117,7 @@ Pour plus d’informations, consultez [Cartes ArcGIS dans Power BI](../power-bi
 
 Pour plus d’informations, consultez [Cartes choroplèthes dans Power BI](power-bi-visualization-filled-maps-choropleths.md).
 
-### <a name="maps-shape-maps"></a>Cartes : de formes
+### <a name="maps-shape-maps"></a>Cartes : Cartes de formes
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
 
 >[!TIP]

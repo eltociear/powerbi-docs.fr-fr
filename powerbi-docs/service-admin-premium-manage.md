@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/20/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 3ef719f85690297cd523a6fefb7f0ba5f77c9199
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 0ad902fc08592addb234517af99faedf1851503a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717605"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280930"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Gérer les capacités dans Power BI Premium et Power BI Embedded
 
@@ -42,9 +42,9 @@ Les administrateurs généraux Office 365 et les administrateurs de service Pow
 
 Pour tirer parti de la capacité dédiée, vous devez acheter Power BI Premium par le biais du Centre d’administration Office 365 ou créer une ressource Power BI Embedded dans le portail Microsoft Azure. Pour plus d’informations, consultez les articles suivants :
 
-* **Power BI Premium:** [Acheter Power BI Premium](service-admin-premium-purchase.md)
+* **Power BI Premium :** [Acheter Power BI Premium](service-admin-premium-purchase.md)
 
-* **Power BI Embedded :** [Créer une capacité Power BI Embedded dans le portail Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity)
+* **Power BI Embedded :** [Créer une capacité Power BI Embedded dans le Portail Microsoft Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity)
 
 Quand vous achetez des références SKU Power BI Premium ou Embedded, votre locataire reçoit le nombre correspondant de cœurs virtuels à utiliser dans les capacités opérationnelles. Par exemple, l’achat d’une référence SKU Power BI Premium P3 fournit au locataire 32 v-cores. Pour plus d’informations sur les références SKU, consultez [Nœuds de capacité Premium](service-premium.md#premium-capacity-nodes).
 
@@ -56,7 +56,7 @@ Le plus souvent, les utilisateurs n’ont pas besoin de savoir qu’ils se trouv
 
 ## <a name="configure-workloads"></a>Configurer des charges de travail
 
-Par défaut, les capacités pour Power BI Premium et Power BI Embedded ne prennent en charge que la charge de travail associée à l’exécution de requêtes Power BI dans le cloud. Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : **les rapports paginés** et **les flux de données**. Pour plus d’informations, consultez [Charges de travail dans la capacité Premium](service-premium.md#workloads-in-premium-capacity).
+Par défaut, les capacités pour Power BI Premium et Power BI Embedded ne prennent en charge que la charge de travail associée à l’exécution de requêtes Power BI dans le cloud. Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : les **rapports paginés** et les **flux de données**. Pour plus d’informations, consultez [Charges de travail dans la capacité Premium](service-premium.md#workloads-in-premium-capacity).
 
 Pour activer des charges de travail dans le portail d’administration Power BI, effectuez les étapes suivantes.
 

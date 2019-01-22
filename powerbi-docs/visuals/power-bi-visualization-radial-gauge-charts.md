@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 71cde810f98a81ab5670b3ab04bc1cd502277c1c
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 079494a47452ca0ca043032f78fa35c7d1755d11
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416863"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282560"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Graphiques en jauge radiale dans Power BI
 Un graphique en jauge radiale est en forme d’arc de cercle. Il affiche une seule valeur qui mesure la progression vers un objectif/indicateur de performance clé.  L’objectif (valeur cible) est représenté par la ligne (aiguille). La progression vers l’objectif est représentée par l’ombrage.  La valeur représentant cette progression est indiquée en caractères gras à l’intérieur de l’arc. Toutes les valeurs possibles sont réparties uniformément le long de l’arc, de la valeur minimale (la plus à gauche) à la valeur maximale (la plus à droite).
@@ -44,7 +44,7 @@ Vous pouvez également écouter Will qui vous montre comment créer des élémen
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-### <a name="step-1-open-the-financial-sample-excel-file"></a>Étape 1 : Ouvrir le fichier Excel d’exemple financier
+### <a name="step-1-open-the-financial-sample-excel-file"></a>Étape 1 : Ouvrir le fichier Excel d’exemple financier
 1. [Téléchargez le fichier Excel d’exemple financier](../sample-financial-download.md) si ce n’est pas déjà fait. Notez l’endroit où vous l’enregistrez.
 
 2. Ouvrez le fichier dans le ***service Power BI*** en sélectionnant **Obtenir des données \>Fichiers** et en accédant à l’emplacement où vous avez enregistré le fichier. Sélectionnez **Importer**. L’exemple financier est ajouté à votre espace de travail en tant que jeu de données.
@@ -53,7 +53,7 @@ Vous pouvez également écouter Will qui vous montre comment créer des élémen
 
     ![](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
 
-### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Étape 2 : créer une jauge pour effectuer le suivi du chiffre d’affaires brut
+### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Étape 2 : Créer une jauge pour effectuer le suivi du chiffre d’affaires brut
 1. Dans le volet **Champs** , sélectionnez **Gross Sales**(Chiffre d’affaires brut).
    
    ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue_new.png)
@@ -66,7 +66,7 @@ Vous pouvez également écouter Will qui vous montre comment créer des élémen
    
    ![](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
 
-### <a name="step-3-set-a-target-value"></a>Étape 3 : sélectionner la valeur cible
+### <a name="step-3-set-a-target-value"></a>Étape 3 : Sélectionner la valeur cible
 1. Faites glisser **COGS** vers **Valeur cible** .
 2. Changez l’agrégation en **Moyenne**.
    Power BI ajoute une aiguille pour représenter la valeur cible **145 480 $**. Comme vous pouvez le remarquer, l’objectif a même été dépassé.
@@ -78,7 +78,7 @@ Vous pouvez également écouter Will qui vous montre comment créer des élémen
    > 
    > 
 
-### <a name="step-4-set-a-maximum-value"></a>Étape 4 : définir une valeur maximale
+### <a name="step-4-set-a-maximum-value"></a>Étape 4 : Définir une valeur maximale
 Dans l’étape 2, Power BI a utilisé le champ Valeur pour définir automatiquement un minimum (valeur de départ) et un maximum (valeur de fin).  Comment faire pour définir votre propre valeur maximale ?  Supposons qu’au lieu de définir la valeur maximale possible au double de la valeur actuelle, vous souhaitez la définir au chiffre d’affaires brut le plus élevé dans votre jeu de données ? 
 
 1. Faites glisser **Gross Sales** (Chiffre d’affaires brut) de la liste **Champs** vers **Valeur maximale** .
@@ -90,7 +90,7 @@ Dans l’étape 2, Power BI a utilisé le champ Valeur pour définir automatiq
    
    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-final-gauge.png)
 
-### <a name="step-5-save-your-report"></a>Étape 5 : enregistrer le rapport
+### <a name="step-5-save-your-report"></a>Étape 5 : Enregistrer votre rapport
 1. [Enregistrez le rapport](../service-report-save.md).
 2. [Ajoutez le graphique en jauge sous forme de vignette de tableau de bord](../service-dashboard-pin-tile-from-report.md). 
 

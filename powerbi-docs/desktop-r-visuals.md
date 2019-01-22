@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0a739e963039e61aa66e398d27fa82982eb26bb0
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: c1a4ba0a89f84cb0fce205373f1d0f00cc1479ac
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670506"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278574"
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Créer des éléments visuels Power BI avec R
 **Power BI Desktop** vous permet d’utiliser **R** pour visualiser vos données.
@@ -107,7 +107,7 @@ Après avoir spécifié votre installation R, vous pouvez commencer à créer de
 
     ![](media/desktop-r-visuals/r-visuals-9.png)
 
-    > **Sécurité des scripts R :** les éléments visuels R sont créés à partir de scripts R, qui peuvent contenir du code qui présente des risques pour la sécurité ou la confidentialité. Quand un utilisateur tente d’afficher un visuel R ou d’interagir avec ce dernier pour la première fois, un message d’avertissement de sécurité lui est présenté. Activez les éléments visuels R seulement si vous faites confiance à l’auteur et à la source ou après avoir examiné et compris le script R.
+    > **Sécurité des scripts R :** Les éléments visuels R sont créés à partir de scripts R, qui peuvent contenir du code qui présente des risques pour la sécurité ou la confidentialité. Quand un utilisateur tente d’afficher un visuel R ou d’interagir avec ce dernier pour la première fois, un message d’avertissement de sécurité lui est présenté. Activez les éléments visuels R seulement si vous faites confiance à l’auteur et à la source ou après avoir examiné et compris le script R.
     > 
     > 
 

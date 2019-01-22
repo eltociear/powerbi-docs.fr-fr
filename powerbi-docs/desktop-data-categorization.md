@@ -5,24 +5,24 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 55e496656046037226a7414c994697b670bcf8c9
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 92191c96409a3a75ad44f8d3472805a3e98da7dd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669724"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275706"
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Catégorisation des données dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez spécifier la catégorie de données pour une colonne pour que Power BI Desktop sache comment traiter ses valeurs dans une visualisation.
 
 Quand Power BI Desktop importe des données, il obtient non seulement les données proprement dites, mais également des informations telles que les noms de la table et de la colonne, s’il s’agit d’une clé primaire, et ainsi de suite.  Avec ces informations, Power BI Desktop émet des hypothèses pour vous procurer la meilleure expérience par défaut lors de la création d’une visualisation. 
 
-Voici un exemple : quand Power BI Desktop détecte qu’une colonne contient des valeurs numériques, il en déduit que vous souhaiterez probablement les agréger d’une façon ou d’une autre. Il la place donc dans la zone Valeurs. Pour une colonne avec des valeurs de date et d’heure, il part du principe que vous l’utiliserez probablement comme axe de hiérarchie de temps sur un graphique en courbes.
+Voici un exemple : Quand Power BI Desktop détecte qu’une colonne contient des valeurs numériques, il en déduit que vous souhaiterez probablement les agréger d’une façon ou d’une autre. Il la place donc dans la zone Valeurs. Pour une colonne avec des valeurs de date et d’heure, il part du principe que vous l’utiliserez probablement comme axe de hiérarchie de temps sur un graphique en courbes.
 
 Cependant, certains cas sont un peu plus complexes, comme quand il s’agit de géographie. Examinez le tableau suivant tiré d’une feuille de calcul Excel :
 

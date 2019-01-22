@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/11/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8856a8641b38b7a8256b199acccd54e030bdce40
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: dd4ee055501974345c819f7604ff30174cd4c5ba
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53984417"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279000"
 ---
 # <a name="organize-work-in-the-new-workspaces-preview-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail (préversion) dans Power BI
 
@@ -43,7 +43,7 @@ Pendant la période de la préversion, les espaces de travail anciens et nouveau
 
 ## <a name="roles-in-the-new-workspaces"></a>Rôles dans les nouveaux espaces de travail
 
-Vous ajoutez des groupes d’utilisateurs ou des personnes individuelles aux nouveaux espaces de travail en tant que membres, contributeurs ou administrateurs. Tous les utilisateurs d’un groupe d’utilisateurs reçoivent le rôle que vous avez défini. Si une personne fait partie de plusieurs groupes d’utilisateurs, elle reçoit le niveau d’autorisation le plus élevé fourni par le rôle.  Consultez [Rôles dans les nouveaux espaces de travail](#roles-in-the-new-workspaces) plus loin dans cet article pour une explication des différents rôles.
+Vous ajoutez des groupes d’utilisateurs ou des personnes individuelles aux nouveaux espaces de travail en tant que membres, contributeurs ou administrateurs. Tous les utilisateurs d’un groupe d’utilisateurs reçoivent le rôle que vous avez défini. Si une personne fait partie de plusieurs groupes d’utilisateurs, elle reçoit le niveau d’autorisation le plus élevé fourni par le rôle.
 
 Toutes les personnes que vous ajoutez à un espace de travail doivent avoir une licence Power BI Pro. Dans l’espace de travail, ces utilisateurs peuvent collaborer sur des tableaux de bord et des rapports que vous prévoyez de publier pour un public plus large, ou même pour votre organisation tout entière. Si vous voulez distribuer du contenu à d’autres utilisateurs au sein de votre organisation, vous pouvez leur attribuer des licences Power BI Pro ou placer l’espace de travail dans une capacité Power BI Premium.
 
@@ -83,9 +83,7 @@ Pendant la période de préversion, vous ne pouvez pas convertir automatiquement
 
 Quand les nouveaux espaces de travail seront en disponibilité générale, vous pourrez choisir de migrer les anciens automatiquement. À un moment donné après la disponibilité générale, vous devrez les migrer.
 
-## <a name="power-bi-apps-faq"></a>Forum aux questions sur les applications Power BI
-
-### <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>En quoi les nouveaux espaces de travail diffèrent-ils des espaces de travail actuels ?
+## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>En quoi les nouveaux espaces de travail diffèrent-ils des espaces de travail actuels ?
 
 Avec les nouveaux espaces de travail, nous proposons une nouvelle conception de certaines fonctionnalités. Voici les modifications que vous pouvez considérer comme définitives avec la préversion. 
 
@@ -94,6 +92,13 @@ Avec les nouveaux espaces de travail, nous proposons une nouvelle conception de 
 - Vous pouvez créer un pack de contenu d’organisation à partir d’un espace de travail actuel. Vous ne pouvez pas en créer un à partir des nouveaux espaces de travail.
 - Vous pouvez consommer un pack de contenu d’organisation à partir d’un espace de travail actuel. Vous ne pouvez pas en consommer un à partir des nouveaux espaces de travail.
 - Dans la préversion, certaines fonctionnalités ne sont pas encore activées pour les nouveaux espaces de travail. Pour plus d’informations, consultez la section suivante [Fonctionnalités planifiées pour les nouveaux espaces de travail](service-new-workspaces.md#planned-new-workspace-preview-features).
+
+## <a name="limitations-and-considerations"></a>Considérations et limitations
+
+Limitations à connaître :
+
+- Les espaces de travail peuvent contenir un maximum de 1 000 jeux de données ou 1 000 rapports par jeu de données. 
+- Une personne disposant d’une licence Power BI Pro peut être membre de 250 espaces de travail au maximum.
 
 ## <a name="planned-new-workspace-preview-features"></a>Fonctionnalités planifiées pour les nouveaux espaces de travail en préversion
 

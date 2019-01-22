@@ -4,17 +4,17 @@ description: Découvrez les étapes à suivre pour incorporer du contenu Power B
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.openlocfilehash: 901c087c486598019e905598ee83382664842cc8
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.date: 12/20/2018
+ms.openlocfilehash: 785461290493db59c534a58b548620b6d2f58cd7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578770"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284170"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
 
@@ -54,7 +54,7 @@ Il convient de noter quelques points avec ce schéma :
   
     ![Lignes d’une table District (Secteur)](media/embedded-row-level-security/powerbi-embedded-district-table.png)
 
-En fonction de ce schéma, si vous appliquez un filtre à la colonne **District Manager** (Directeur régional) dans la table **District** (Secteur), et si ce filtre correspond à l’utilisateur qui consulte le rapport, il filtre les tables **Store** (Magasin) et **Sales** (Ventes) pour afficher uniquement les données de ce directeur régional.
+En fonction de ce schéma, si vous appliquez un filtre à la colonne **District Manager** (Directeur régional) dans la table **District** (Secteur), et si ce filtre correspond à l’utilisateur qui consulte le rapport, il filtre les tables **Store** (Magasin) et **Sales** (Ventes) pour afficher les données de ce directeur régional.
 
 Voici comment procéder :
 
@@ -141,7 +141,7 @@ Des rôles peuvent être fournis avec l’identité dans un jeton d’incorporat
 
 ### <a name="using-the-customdata-feature"></a>Utilisation de la fonctionnalité CustomData
 
-CustomData fonctionne uniquement pour les modèles qui résident dans **Azure Analysis Services** et uniquement en mode **Connexion directe**. Contrairement aux utilisateurs et aux rôles, la fonctionnalité Customdata ne peut pas être définie dans un fichier .pbix. Lors de la génération d’un jeton avec la fonctionnalité Customdata, vous devez avoir un nom d’utilisateur.
+CustomData fonctionne uniquement pour les modèles qui résident dans **Azure Analysis Services** et uniquement en mode **Connexion directe**. Contrairement aux utilisateurs et aux rôles, la fonctionnalité de données personnalisées ne peut pas être définie dans un fichier .pbix. Lors de la génération d’un jeton avec la fonctionnalité Custom data, vous devez avoir un nom d’utilisateur.
 
 La fonctionnalité CustomData vous permet d’ajouter un filtre de lignes lors de l’affichage des données Power BI dans votre application quand vous utilisez **Azure Analysis Services** comme source de données (affichage de données Power BI connectées à Azure Analysis Services dans votre application).
 
@@ -213,18 +213,18 @@ Voici les étapes pour commencer à configurer la fonctionnalité CustomData() a
 
     ![Exemple de rapport PBI](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
-7. Utilisez les API Power BI pour utiliser la fonctionnalité CustomData dans votre application.  Lors de la génération d’un jeton avec la fonctionnalité Customdata, vous devez avoir un nom d’utilisateur. Le nom d’utilisateur doit être identique à l’UPN de l’utilisateur principal. L’utilisateur principal doit être un membre du ou des rôles que vous avez créés. Si aucun rôle n’est spécifié, tous les rôles dont l’utilisateur principal est membre sont utilisés pour l’évaluation de la fonction de sécurité au niveau des lignes.
+7. Utilisez les API Power BI pour utiliser la fonctionnalité CustomData dans votre application.  Lors de la génération d’un jeton avec la fonctionnalité Custom data, vous devez avoir un nom d’utilisateur. Le nom d’utilisateur doit être identique à l’UPN de l’utilisateur principal. L’utilisateur principal doit être un membre du ou des rôles que vous avez créés. Si aucun rôle n’est spécifié, tous les rôles dont l’utilisateur principal est membre sont utilisés pour l’évaluation de la fonction de sécurité au niveau des lignes.
 
     > [!Note]
     > Quand vous êtes prêt à déployer votre application en production, l’option ou le champ de compte d’utilisateur principal ne doit pas être visible par l’utilisateur final.
 
     Affichez le [code](#customdata-sdk-additions) pour ajouter la fonctionnalité CustomData.
 
-8. Vous pouvez maintenant afficher le rapport dans votre application avant d’appliquer les valeurs Customdata pour voir toutes les données contenues dans votre rapport.
+8. Vous pouvez maintenant afficher le rapport dans votre application avant d’appliquer les valeurs Custom data pour voir toutes les données contenues dans votre rapport.
 
     ![Avant l’application des données personnalisées](media/embedded-row-level-security/customdata-before.png)
 
-    Appliquez ensuite les valeurs Customdata pour vérifier que le rapport affiche un ensemble de données différent.
+    Appliquez ensuite les valeurs Custom data pour vérifier que le rapport affiche un ensemble de données différent.
     ![Après l’application des données personnalisées](media/embedded-row-level-security/customdata-after.png)
 
 ## <a name="using-rls-vs-javascript-filters"></a>Utilisation de la sécurité au niveau des lignes ou de filtres JavaScript
@@ -239,6 +239,75 @@ La [sécurité au niveau des lignes](../service-admin-rls.md) est une fonctionna
 
 Les [filtres de JavaScript](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) servent à autoriser l’utilisateur à consommer une vue des données filtrée, réduite ou à portée spécifique. Toutefois, l’utilisateur a quand même accès aux tables, colonnes et mesures du schéma de modèle, et il peut potentiellement accéder à toutes les données qui s’y trouvent. L’accès restreint aux données peut uniquement être appliqué avec la sécurité au niveau des lignes, et non par le biais des API de filtrage côté client.
 
+## <a name="token-based-identity-with-azure-sql-database-preview"></a>Identité basée sur les jetons avec Azure SQL Database (préversion)
+
+**L’identité basée sur les jetons** vous permet de spécifier l’identité effective pour un jeton incorporé à l’aide d’un jeton d’accès **Azure Active Directory (AAD)** pour une base de données **Azure SQL Database**.
+
+Les clients qui conservent leurs données dans **Azure SQL Database** bénéficient désormais d’une nouvelle fonctionnalité permettant de gérer les utilisateurs et leur accès aux données dans Azure SQL lors de l’intégration avec **Power BI Embedded**.
+
+Lorsque vous générez le jeton d’incorporation, vous pouvez spécifier l’identité effective d’un utilisateur dans Azure SQL. Vous pouvez spécifier l’identité effective d’un utilisateur en passant le jeton d’accès AAD au serveur. Le jeton d’accès est utilisé pour extraire uniquement les données pertinentes pour cet utilisateur à partir d’Azure SQL pour cette session spécifique.
+
+Il peut être utilisé pour gérer l’affichage de chaque utilisateur dans Azure SQL ou se connecter à Azure SQL en tant que client spécifique dans une base de données multi-locataire. Il peut également être utilisé pour appliquer la sécurité au niveau des lignes sur cette session dans Azure SQL et récupérer uniquement les données pertinentes pour cette session, ce qui évite d’avoir à gérer la SNL dans Power BI.
+
+Ces problèmes d’identité effective s’appliquent à des règles SNL directement sur le serveur Azure SQL. Power BI Embedded utilise le jeton d’accès fourni lors de l’interrogation des données à partir du serveur Azure SQL. L’UPN de l’utilisateur (pour lequel le jeton d’accès a été fourni) est accessible suite à la fonction SQL USER_NAME().
+
+L’identité basée sur les jetons fonctionne uniquement pour les modèles DirectQuery sur une capacité dédiée, connectée à Azure SQL Database, qui est configuré pour autoriser l’authentification AAD ([en savoir plus sur l’authentification AAD pour Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). La source de données du jeu de données doit être configurée pour utiliser les informations d’identification OAuth2 des utilisateurs finaux, en vue d’utiliser l’identité basée sur les jetons.
+
+   ![Configurer le serveur Azure SQL Server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
+
+### <a name="token-based-identity-sdk-additions"></a>Ajouts au SDK de l’identité basée sur les jetons
+
+La propriété de blob d’identité a été ajoutée à notre identité effective dans le scénario de génération de jetons.
+
+```JSON
+[JsonProperty(PropertyName = "identityBlob")]
+public IdentityBlob IdentityBlob { get; set; }
+```
+
+Le type IdentityBlob est une structure JSON simple contenant une propriété de chaîne de valeur
+
+```JSON
+[JsonProperty(PropertyName = "value")]
+public string value { get; set; }
+```
+
+EffectiveIdentity peut être créé avec le blob d’identité à l’aide de l’appel suivant :
+
+```C#
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null, IdentityBlob identityBlob = null);
+```
+
+Le blob d’identité peut être créé à l’aide de l’appel suivant.
+
+```C#
+public IdentityBlob(string value);
+```
+
+### <a name="token-based-identity-rest-api-usage"></a>Utilisation de l’API REST de l’identité basée sur les jetons
+
+Si vous appelez [l’API REST](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetoken#definitions), vous pouvez ajouter le blob d’identité dans chaque identité.
+
+```JSON
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "datasets": ["fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc"],
+        “identityBlob”: {
+            “value”: “eyJ0eXAiOiJKV1QiLCJh….”
+         }
+        }
+    ]
+}
+```
+
+La valeur fournie dans le blob d’identité doit être un jeton d’accès valide à Azure SQL Server (avec une URL de ressource de (<https://database.windows.net/>).
+
+   > [!Note]
+   > Pour pouvoir créer un jeton d’accès pour Azure SQL, l’application doit avoir l’autorisation déléguée **Accéder à Azure SQL Database et Data Warehouse** à l’API **Azure SQL Database** sur la configuration de l’inscription d’application AAD dans le portail Azure.
+
+   ![Inscriptions des applications](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
 * L’attribution d’utilisateurs aux rôles, dans le service Power BI, n’affecte pas la sécurité au niveau des lignes lors de l’utilisation d’un jeton d’incorporation.
@@ -248,5 +317,11 @@ Les [filtres de JavaScript](https://github.com/Microsoft/PowerBI-JavaScript/wiki
 * Si le jeu de données sous-jacent ne nécessite pas la sécurité au niveau des lignes, la demande GenerateToken ne doit **pas** contenir d’identité effective.
 * Si le jeu de données sous-jacent est un modèle cloud (modèle mis en cache ou DirectQuery), l’identité effective doit inclure au moins un rôle. Sinon, l’attribution de rôle n’a pas lieu.
 * Une liste d’identités active plusieurs jetons d’identité pour l’incorporation de tableau de bord. Pour tous les autres artefacts, la liste contient une identité unique.
+
+### <a name="token-based-identity-limitations-preview"></a>Limitations de l’identité basée sur les jetons (préversion)
+
+* Cette fonctionnalité restreint l’utilisation avec Power BI Premium uniquement.
+* Cette fonctionnalité ne fonctionne pas avec SQL Server en local.
+* Cette fonctionnalité ne fonctionne pas avec plusieurs zones géographiques.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

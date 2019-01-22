@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1ef0ecdfaea51a9ca50e0f105b51b8239ebc4fa1
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: ad044a5b3f6ddcb4b8e1dbffa1bb2a7dac01eb31
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717536"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284975"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Épingler une vignette à un tableau de bord Power BI à partir d’Excel
 Avant de pouvoir épingler une vignette à partir de votre classeur Excel, connectez ce classeur au service Power BI (app.powerbi.com). La connexion d’un classeur apporte essentiellement une version en lecture seule liée de ce classeur dans le service Power BI et vous permet d’épingler des plages à des tableaux de bord. Vous pouvez même épingler une feuille de calcul entière à un tableau de bord.  
@@ -81,7 +81,7 @@ La sélection d’une vignette de classeur a pour effet d’ouvrir le classeur l
  ![vidéo](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-Fonctionnalités non prises en charge : Power BI utilise Excel Services pour récupérer les vignettes de classeur. Aussi, étant donné que l’API REST Excel Services ne prend pas en charge certaines fonctionnalités d’Excel, celles-ci n’apparaissent pas sur les vignettes dans Power BI. Par exemple : graphiques sparkline, mise en forme conditionnelle de jeu d’icônes et segments de temps. Pour obtenir la liste complète des fonctionnalités non prises en charge, consultez [Fonctionnalités non prises en charge dans l’API REST Excel Services](http://msdn.microsoft.com/library/office/ff394477.aspx)
+Fonctionnalités non prises en charge : Power BI utilise Excel Services pour récupérer les vignettes de classeur. Aussi, étant donné que l’API REST Excel Services ne prend pas en charge certaines fonctionnalités d’Excel, celles-ci n’apparaissent pas sur les vignettes dans Power BI. Par exemple : Graphiques sparkline, mise en forme conditionnelle de jeu d’icônes et segments de temps. Pour obtenir la liste complète des fonctionnalités non prises en charge, consultez [Fonctionnalités non prises en charge dans l’API REST Excel Services](http://msdn.microsoft.com/library/office/ff394477.aspx)
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Partager un tableau de bord avec des liens vers un classeur Excel](service-share-dashboard-that-links-to-excel-onedrive.md)

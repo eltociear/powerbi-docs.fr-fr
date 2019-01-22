@@ -5,16 +5,16 @@ author: maikelson
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: b144f3101606a58b2cd0b48db976a70477442d40
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 24d023d726183119a3bd098c61db75cb68969c52
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670414"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283136"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -46,15 +46,15 @@ Commencez avec ces webinaires populaires à la demande
 <br>par Cory Hrncirik et Miguel Martinez
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
 
-**Power BI : l’analytique réussie**
+**Power BI : des analyses dans les règles de l’art**
 <br>Gohul Shanmugalingam
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
 
-**Rendre vos données Power BI visuelles : principaux types de graphiques et comment les utiliser**
+**Rendre vos données Power BI visuelles :  principaux types de graphiques et usage**
 <br>par Miranda Li
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
 
-**Power BI, Excel et Office 365 : optimisez vos données d’entreprise**
+**Power BI, Excel et Office 365 : optimisez vos données d’entreprise**
 <br>par Olaf Hubel et Miguel Martinez
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
@@ -78,7 +78,7 @@ Regardez les sessions enregistrées à tout moment
 <br>par Charles Sterling
 <br>[Regarder maintenant](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
-**Mieux ensemble : 5 avantages de l’utilisation de Power BI pour les utilisateurs d’Excel**
+**Mieux ensemble : cinq avantages de Power BI pour les utilisateurs d’Excel**
 <br>par Carlos Otero et Miguel Martinez
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
@@ -112,7 +112,7 @@ Regardez les sessions enregistrées à tout moment
 <br>par Ed Bobrin d’Avanade
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
-**Fabricants : votre secteur est en phase de transition numérique. Maintenez votre leadership en tirant parti de l’analyse pour optimiser la rentabilité**
+**Fabricants : votre secteur est en phase de transition numérique – maintenez votre leadership en tirant parti des analyses pour optimiser votre rentabilité**
 <br>par Jon Thompson de Blue Margin et Jim Pastor d’Elgin Fastener Group
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
@@ -142,7 +142,7 @@ Regardez les sessions enregistrées à tout moment
 <br>par Kasper de Jonge
 <br>[Regarder maintenant](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
-**Demandez à un partenaire : développement de visuels personnalisés pour Power BI**
+**Demandez à un partenaire : développer des visuels personnalisés pour Power BI**
 <br>par Ted Pattison
 <br>[Regarder maintenant](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
@@ -155,11 +155,11 @@ Regardez les sessions enregistrées à tout moment
 
 **[Série de webinaires sur l’infrastructure d’adoption Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
 <br>par Manu Kanwarpal et Paul Henwood
-<br>[Inscrivez-vous pour regarder maintenant la partie 1 - Adoption : adopter une culture piloté par les données](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
-<br>[Inscrivez-vous pour regarder maintenant la partie 2 - Gouvernance : régir l’utilisation de Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Inscrivez-vous pour regarder maintenant la partie 3 - Gestion des services : insights sur la gestion du service Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Inscrivez-vous pour regarder maintenant la partie 4 - Sécurité : conserver vos données sécurisées avec Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Inscrivez-vous pour regarder maintenant la partie 5 – Lancement : réussir le lancement de Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+<br>[Inscrivez-vous pour regarder maintenant la partie 1 – Adoption : adopter une culture piloté par les données](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Inscrivez-vous pour regarder maintenant la partie 2 – Gouvernance : régir l’utilisation de Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Inscrivez-vous pour regarder maintenant la partie 3 – Gestion des services : insights sur la gestion du service Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Inscrivez-vous pour regarder maintenant la partie 4 – Sécurité : préserver la sécurité des données avec Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Inscrivez-vous pour regarder maintenant la partie 5 – Lancement : réussir le lancement de Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Série de webinaires Office 365 Finance Pros**
 <br>par Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky et Miguel Martinez

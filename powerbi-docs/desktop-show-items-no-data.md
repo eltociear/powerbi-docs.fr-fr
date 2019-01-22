@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f4c9fec65f9c006095470a8983f889d44f3ce460
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072885"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279984"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Afficher les éléments sans données dans Power BI
 
@@ -65,7 +65,7 @@ Par conséquent, Power BI affiche les combinaisons qui possèdent des entrées d
 
 **4. Groupes issus de tables différentes et non liées**
 
-L’exemple de modèle ne possède pas cette combinaison, mais, s’il y avait des groupes provenant de tables différentes et non liées, Power BI ne pourrait pas relier deux colonnes : en résulterait une jointure croisée de toutes les valeurs de chaque colonne. Dans cette situation, Power BI génère une erreur de type *jointure sans contrainte*, car de telles jointures croisées sont coûteuses à calculer dans la base de données et fournissent peu d’informations à l’utilisateur. 
+L’exemple de modèle ne possède pas cette combinaison, mais, s’il y avait des groupes provenant de tables différentes et non liées, Power BI ne pourrait pas relier deux colonnes. Il en résulterait une jointure croisée de toutes les valeurs de chaque colonne. Dans cette situation, Power BI génère une erreur de type *jointure sans contrainte*, car de telles jointures croisées sont coûteuses à calculer dans la base de données et fournissent peu d’informations à l’utilisateur. 
 
 ![Erreur affichée pour une jointure sans contrainte](media/desktop-show-items-no-data/show-items-no-data_01.png)
 
@@ -76,7 +76,7 @@ Dans la section précédente, nous avons expliqué comment Power BI détermine q
 
 C’est précisément ce que permet de faire la fonctionnalité **Afficher les éléments sans données** : inclure des lignes et des colonnes de données qui ne contiennent pas de données de mesure (valeurs de mesure vide).
 
-Pour activer la fonctionnalité **Afficher les éléments sans données**, sélectionnez un visuel, puis, dans la zone **Champs**, cliquez avec le bouton droit sur le champ et sélectionnez **Afficher les éléments sans données** dans le menu qui s’affiche, comme l’illustre l’image suivante.
+Pour activer la fonctionnalité **Afficher les éléments sans données**, sélectionnez un visuel, puis, dans la zone **Champs**, cliquez avec le bouton droit sur le champ et sélectionnez **Afficher les éléments sans données** dans le menu qui s’affiche, comme l’illustre l’image suivante :
 
 ![Activer la fonctionnalité Afficher les éléments sans données](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -139,7 +139,7 @@ Les combinaisons *(Gloss-Red)* et *(None, vide)* sont apparues. En voici la rais
 
 Il est important de savoir que le mécanisme de sélection de valeurs pour les colonnes est dépendant de l’ordre. On peut le voir comme une opération de *jointure externe gauche* entre les tables. Si l’ordre des colonnes est modifié, les résultats changent également.
 
-Reprenons l’exemple de l’élément **2** de cette section en changeant l’ordre, et examinons l’incidence sur les résultats.
+Examinons un exemple de modification de l’ordre, et son incidence sur les résultats. **2** de cette section en changeant l’ordre, et examinons l’incidence sur les résultats.
 
 **Product[Color] – ProductStyle[Finish] – Sum(Sales[Quantity])**
 
@@ -193,6 +193,6 @@ Cette section montre l’exemple de modèle de données utilisé dans les exempl
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-L’objectif de cet article était d’expliquer comment activer la fonctionnalité **Afficher les éléments sans données** dans Power BI. Les articles suivants pourraient également vous intéresser. 
+L’objectif de cet article était d’expliquer comment activer la fonctionnalité **Afficher les éléments sans données** dans Power BI. Les articles suivants pourraient également vous intéresser : 
 
-* [Sources de données dans Power BI Desktop](desktop-data-sources.md)
+* [Membre par défaut dans des modèles multidimensionnels dans Power BI](desktop-default-member-multidimensional-models.md)

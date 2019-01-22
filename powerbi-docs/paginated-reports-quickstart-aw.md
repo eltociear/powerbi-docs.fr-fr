@@ -1,22 +1,22 @@
 ---
-title: 'Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)'
+title: 'Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)'
 description: Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Puis vous utilisez un assistant dans le Générateur de rapports pour créer un rapport paginé. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: fbeb617207c13459fe88487547609323391487e2
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 05805ea7b30f0ab0bd14265caecbb04a4e975300
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900609"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296458"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)
 
 Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Vous utilisez un assistant dans le Générateur de rapports pour créer un rapport paginé avec un tableau réparti sur plusieurs pages. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI. Les rapports paginés disponibles dans le service Power BI sont actuellement en préversion.
 
@@ -74,13 +74,13 @@ Voici les conditions préalables pour le chargement de votre rapport paginé dan
 
     ![Propriétés de la source de données - Build](media/paginated-reports-quickstart-aw/power-bi-paginated-data-source-properties-build.png)
 
-9. **Dans Azure :**   accédez au portail Azure, puis sélectionnez **Bases de données SQL**.
+9. **Dans Azure :** Accédez au portail Azure, puis sélectionnez **Bases de données SQL**.
 
 1. Sélectionnez la base de données SQL Azure que vous avez créée dans le Guide de démarrage rapide « Créer un exemple de base de données SQL Azure dans le portail Azure » dans la section **Conditions préalables** de cet article.
 
 1. Dans l’onglet **Vue d’ensemble**, copiez la valeur dans la zone **Nom du serveur**.
 
-2. **Dans le Générateur de rapports** : dans la boîte de dialogue **Propriétés de connexion**, sous **Nom du serveur**, collez le nom du serveur que vous avez copié. 
+2. **Dans le Générateur de rapports** : Dans la boîte de dialogue **Propriétés de connexion**, sous **Nom du serveur**, collez le nom du serveur que vous avez copié. 
 
 1. Pour **Ouvrez une session sur le serveur**, assurez-vous que l’option **Utiliser l'authentification SQL Server** est sélectionnée, puis tapez le nom d’utilisateur et le mot de passe créés dans Azure pour l’exemple de base de données.
 

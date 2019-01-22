@@ -1,23 +1,23 @@
 ---
-title: 'Didacticiel : analyses de Facebook à l’aide de Power BI Desktop'
-description: 'Didacticiel : analyses de Facebook à l’aide de Power BI Desktop'
+title: 'Tutoriel : Analyses Facebook avec Power BI Desktop'
+description: 'Tutoriel : Analyses Facebook avec Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: ec90e63de1e42350ff205febdc66abf4ba6ee626
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ae2d40d5a53a7a84c0f6070a7be1011968d7ed7b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578494"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276971"
 ---
-# <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Didacticiel : analyses de Facebook à l’aide de Power BI Desktop
+# <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Tutoriel : Analyses Facebook avec Power BI Desktop
 
 Dans ce didacticiel, vous apprenez à importer des données depuis Facebook et à les utiliser dans Power BI Desktop. Vous allez vous connecter et importer des données depuis la page Facebook Power BI, vous appliquerez des transformations aux données importées et vous utiliserez les données dans des visualisations de rapport.
 
@@ -187,7 +187,7 @@ C’est mieux, mais toutes les étiquettes de données ont une décimale **.0**,
 2. Dans Power Query Editor, sélectionnez la colonne **Number of comments** (Nombre de commentaires) et modifiez le type de données sur **Whole Number** (Nombre entier) en procédant de l’une des manières suivantes : 
    - En sélectionnant l’icône **1.2** en regard de l’en-tête de la colonne **Number of comments** (Nombre de commentaires), puis en sélectionnant **Whole Number** (Nombre entier) dans la liste déroulante, ou
    - En cliquant avec le bouton droit sur l’en-tête de la colonne et en sélectionnant **Modifier le type > Nombre entier**, ou
-   - En sélectionnant **Type de données : nombre décimal** dans le groupe **Transformer** de l’onglet Accueil, ou le groupe **N’importe quelle colonne** de l’onglet **Transformer**, et en sélectionnant **Nombre entier**.
+   - En sélectionnant **Type de données : Nombre décimal** dans le groupe **Transformer** de l’onglet Accueil, ou le groupe **N’importe quelle colonne** de l’onglet **Transformer**, et en sélectionnant **Nombre entier**.
    
    L’icône dans l’en-tête de la colonne est remplacé par **123**, ce qui indique un type de données Nombre entier.
    

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 215b4c8f46b2d39c6dcc5853c07e4e6526027881
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.openlocfilehash: 5c383cf3c7fcbae88be6943bb418026c849db196
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51027457"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277431"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
 Les **Thèmes de rapport** permettent d’appliquer un thème de couleur à l’intégralité d’un rapport. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières ou de tout autre thème de couleur. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné. Quelques exceptions s’appliquent. Elles sont décrites plus loin dans cet article.
@@ -83,11 +83,11 @@ Une fois le fichier de thème correctement chargé, Power BI Desktop vous en inf
 
 Ce fichier JSON doit contenir les lignes suivantes :
 
-* **name** : le nom du thème, qui est le seul champ obligatoire.
+* **name** : Le nom du thème, qui est le seul champ obligatoire.
 
-* **dataColors** : la liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir le nombre de couleurs que vous voulez.
+* **dataColors** : La liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir le nombre de couleurs que vous voulez.
 
-* **background**, **foreground** et **tableAccent** : les couleurs qui doivent être appliquées dans différents types de visuels. 
+* **background**, **foreground**, et **tableAccent** : Les couleurs qui doivent être appliquées dans différents types de visuels. 
   - **foreground** s’applique au texte de zone de texte, au texte d’objectif KPI, au texte de carte multiligne, au texte de valeur de carte, au texte de légende de jauge, au texte d’élément de segment vertical, ainsi qu’au texte de valeurs et de totaux de **table** et de **matrice**. 
   - **background** s’applique au remplissage de bouton et à l’arrière-plan des étiquettes de graphique combiné. La manière dont ces couleurs sont utilisées varie selon le style de visuel appliqué. 
   - Les visuels de **table** et de **matrice** appliquent ces styles par défaut.
@@ -178,9 +178,9 @@ Voici quelques thèmes de rapport supplémentaires que vous pouvez utiliser comm
 ## <a name="report-theme-json-file-format"></a>Format de fichier de JSON de thèmes de rapport
 Le fichier JSON de base comprend cinq lignes obligatoires :
 
-* **name** : le nom du thème, qui est le seul champ obligatoire.
-* **dataColors** : la liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir le nombre de couleurs que vous voulez.
-* **background**, **foreground** et **tableAccent** : les couleurs qui doivent être appliquées dans différents types de visuels. **foreground** s’applique au texte de zone de texte, au texte d’objectif KPI, au texte de carte multiligne, au texte de valeur de carte, au texte de légende de jauge, au texte d’élément de segment vertical, ainsi qu’au texte de valeurs et de totaux de **table** et de **matrice**. **background** s’applique au remplissage de bouton et à l’arrière-plan des étiquettes de graphique combiné. La manière dont ces couleurs sont utilisées varie selon le style de visuel appliqué. Les visuels de **table** et de **matrice** appliquent ces styles par défaut.
+* **name** : Le nom du thème, qui est le seul champ obligatoire.
+* **dataColors** : La liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir le nombre de couleurs que vous voulez.
+* **background**, **foreground**, et **tableAccent** : Les couleurs qui doivent être appliquées dans différents types de visuels. **foreground** s’applique au texte de zone de texte, au texte d’objectif KPI, au texte de carte multiligne, au texte de valeur de carte, au texte de légende de jauge, au texte d’élément de segment vertical, ainsi qu’au texte de valeurs et de totaux de **table** et de **matrice**. **background** s’applique au remplissage de bouton et à l’arrière-plan des étiquettes de graphique combiné. La manière dont ces couleurs sont utilisées varie selon le style de visuel appliqué. Les visuels de **table** et de **matrice** appliquent ces styles par défaut.
 
 Pour créer un fichier JSON de format étendu, avec un contrôle plus précis et détaillé de la mise en forme, vous devez ajouter au fichier JSON une section **visualStyles**. Vous incorporez les spécificités de la mise en forme dans la section **visualStyles**. La section **visualStyles** est similaire au format suivant :
 
@@ -231,7 +231,7 @@ Les valeurs booléennes sont *true* (vrai) ou *false* (faux). Les chaînes doive
 | lineChart |
 | lineClusteredColumnComboChart |
 | lineStackedColumnComboChart |
-| carte |
+| map |
 | multiRowCard |
 | graphique à secteurs |
 | tableau croisé dynamique |
@@ -248,30 +248,30 @@ Le tableau suivant définit les valeurs de *cardName*. La première valeur dans 
 
 | **cardName** |
 | --- |
-| axis : Axe de la jauge |
-| breakdown : Répartition |
-| bubbles : Bulles |
+| axis : Axe de la jauge |
+| breakdown : Répartition |
+| bubbles : Bulles |
 | calloutValue : Valeur de la légende |
-| card : Carte |
-| cardTitle : Titre de carte |
-| categoryAxis : Axe X |
-| categoryLabels : Étiquettes de catégorie |
+| card : Carte |
+| cardTitle : Titre de la carte |
+| categoryAxis : Axe X |
+| categoryLabels : Étiquettes des catégories |
 | columnFormatting : Mise en forme des champs |
-| en-têtes de colonne : En-têtes de colonne |
-| dataLabels : Étiquettes des données |
-| fill : Remplissage |
+| columnHeaders : En-têtes de colonne |
+| dataLabels : Étiquettes de données |
+| fill : Remplir |
 | fillPoint : Point de remplissage |
-| forecast : Prévision |
-| general : Général |
-| goals : Objectifs |
-| grid : Grille |
-| header : En-tête |
+| forecast : Feuille |
+| general : Général |
+| goals : Objectifs |
+| grid : Grille |
+| header : En-tête |
 | imageScaling : Mise à l’échelle |
-| indicator : Indicateur |
-| items : Éléments |
-| labels : Étiquettes des données |
-| legend : Légende |
-| lineStyles : Formes |
+| indicator : Indicateur |
+| items : Éléments |
+| labels : Étiquettes de données |
+| legend : Légende |
+| lineStyles : Formes |
 | mapControls : Commandes de la carte |
 | mapStyles : Styles de la carte |
 | numericInputStyle : Entrées numériques |
@@ -280,25 +280,25 @@ Le tableau suivant définit les valeurs de *cardName*. La première valeur dans 
 | plotAreaShading : Symétrie en grisé |
 | ratioLine : Ligne du ratio |
 | referenceLine : Ligne de constante |
-| ribbonChart : Rubans |
-| rotation : Rotation |
+| ribbonChart : Rubans |
+| rotation : Rotation |
 | rowHeaders : En-têtes de ligne |
-| selection : Contrôles de sélection |
+| selection : Contrôles de sélection |
 | sentimentColors : Couleurs de sentiment |
-| shape : Forme |
-| slider : Curseur |
-| status : Code couleur |
-| subTotals : Sous-totaux |
-| target : Cible |
-| total : Total général |
-| trend : Courbe de tendance |
-| trendline : Axe de la tendance |
-| valueAxis : Axe Y |
-| values : Valeurs |
+| shape : Forme |
+| slider : Curseur |
+| status : Code couleur |
+| subTotals : Sous-totaux |
+| target : Cible |
+| total : Total général |
+| trend : Courbe de tendance |
+| trendline : Axe de tendance |
+| valueAxis : Axe Y |
+| values : Valeurs |
 | wordWrap : Retour automatique à la ligne |
-| xAxisReferenceLine : Ligne de constante de l’axe X |
-| y1AxisReferenceLine : Ligne de constante |
-| zoom : Zoom |
+| xAxisReferenceLine : Ligne de constante de l’axe X |
+| y1AxisReferenceLine : Ligne de constante |
+| zoom : Zoom |
 
 ### <a name="properties-within-each-card"></a>Propriétés au sein de chaque carte
 La section suivante définit les propriétés de chaque carte :

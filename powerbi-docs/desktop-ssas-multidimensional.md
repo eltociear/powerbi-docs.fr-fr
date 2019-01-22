@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 40da2a9a53cfb7a0e497f85f87bca6a133046720
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 8668e477a2778bfdeec8260a31ca63af9d4124a6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578701"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287689"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Se connecter aux modèles multidimensionnels SSAS dans Power BI Desktop
 Power BI Desktop vous permet d’accéder aux **modèles multidimensionnels SSAS**, communément appelés **SSAS MD**.
@@ -36,7 +36,7 @@ Le tableau suivant illustre la correspondance entre les objets multidimensionnel
 | --- | --- |
 | Cube |Modèle |
 | Dimension de cube |Table |
-| Attributs de la dimension (clés), nom |les colonnes |
+| Attributs de la dimension (clés), nom |Colonnes |
 | Groupe de mesures |Table |
 | Mesure |Mesure |
 | Mesures sans groupe de mesures associé |Dans une table appelée *Mesures* |
@@ -103,4 +103,4 @@ Les fonctionnalités suivantes de SSAS MD sont pris en charge dans Power BI Des
 ## <a name="troubleshooting"></a>Résolution des problèmes 
 La liste suivante décrit tous les problèmes connus lors de la connexion à SQL Server Analysis Services (SSAS). 
 
-* **Erreur : Impossible de charger le schéma de modèle** : Cette erreur se produit généralement quand l’utilisateur qui se connecte à Analysis Services n’a pas accès à la base de données/au cube.
+* **Erreur : Impossible de charger le schéma de modèle** : cette erreur se produit généralement quand l’utilisateur qui se connecte à Analysis Services n’a pas accès à la base de données/au cube.

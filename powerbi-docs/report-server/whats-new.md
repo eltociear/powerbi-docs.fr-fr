@@ -6,15 +6,15 @@ ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: a365cab0420fdf373d62f5b1774a4d86985adfe3
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101252"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292450"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -120,7 +120,7 @@ La prise en charge de DirectQuery avec authentification unique SAP HANA avec Ker
 - [Réitération pour le sélecteur](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicer)
 - [Info-bulles de page de rapport](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#reportPageTooltips)
 
-### <a name="analytics"></a>Analyse
+### <a name="analytics"></a>Analytique
 
 - [Nouvelle fonction DAX : COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
 - [Extraction de mesure](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
@@ -167,8 +167,8 @@ Vous voulez que les lecteurs aient accès à votre rapport, mais certaines des p
 
 Vous pouvez créer des signets pour raconter une histoire avec les données de votre rapport.
 
-- [Mise en évidence croisée pour des signets](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting) : les signets gèrent et affichent l’état de mise en évidence croisée de la page d’un rapport au moment où vous avez créé le signet.
-- [Plus de flexibilité pour les signets](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility) : les signets reflètent les propriétés que vous définissez dans votre rapport et affectent seulement les visuels que vous choisissez.
+- [Sélection croisée pour les signets](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting) : les signets gèrent et affichent l’état de sélection croisée de la page d’un rapport au moment de la création du signet.
+- [Amélioration de la flexibilité des signets](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility) : les signets reflètent les propriétés définies dans le rapport et affectent seulement les visuels choisis.
 
 #### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Points de données à sélection multiple entre plusieurs graphiques](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
 
@@ -209,7 +209,7 @@ Quand vous descendez dans la hiérarchie d’une catégorie dans un visuel, vous
 - [Recherche dans les volets Mise en forme et Analytique](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
 - [Volet Propriétés du champ et description de champs](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
 
-### <a name="analytics"></a>Analyse
+### <a name="analytics"></a>Analytique
 
 - [UTCNOW() et UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
 - [Marquage d’une table de dates personnalisée](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
@@ -266,13 +266,13 @@ Cette version prend en charge la montée en puissance parallèle. Pour une expé
 
 Les administrateurs peuvent définir les propriétés suivantes dans les propriétés avancées de SSMS pour la batterie de serveurs :
 
-* EnableCustomVisuals : True/False
-* EnablePowerBIReportEmbeddedModels : True/False
-* EnablePowerBIReportExportData : True/False
-* MaxFileSizeMb : la valeur par défaut est désormais 1000
-* ModelCleanupCycleMinutes : fréquence de vérification pour la suppression de modèles de la mémoire
-* ModelExpirationMinutes : durée avant que le modèle expire et soit supprimé, en fonction de l’heure de la dernière utilisation
-* ScheduleRefreshTimeoutMinutes : temps que l’actualisation de données peut prendre pour un modèle Par défaut, il s’agit de deux heures.  Il n’existe aucune limite supérieure.
+* EnableCustomVisuals : Vrai/Faux
+* EnablePowerBIReportEmbeddedModels : Vrai/Faux
+* EnablePowerBIReportExportData : Vrai/Faux
+* MaxFileSizeMb : la valeur par défaut est maintenant 1000
+* ModelCleanupCycleMinutes : fréquence de vérification pour la suppression de modèles de la mémoire
+* ModelExpirationMinutes : délai avant que le modèle expire et soit supprimé, en fonction de l’heure de la dernière utilisation
+* ScheduleRefreshTimeoutMinutes : durée maximale de l’actualisation des données d’un modèle Par défaut, il s’agit de deux heures.  Il n’existe aucune limite supérieure.
 
 **Fichier de configuration rsreportserver.config**
 
@@ -328,7 +328,7 @@ Power BI Report Server prend désormais en charge les nouveaux visuels de table 
 [Présentation de Power BI Report Server](get-started.md) 
 [Manuel de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
-[Télécharger le générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
+[Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

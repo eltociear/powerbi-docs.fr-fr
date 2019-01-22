@@ -1,27 +1,27 @@
 ---
 title: Application Power BI pour la réalité mixte (Preview)
 description: Consultez vos tableaux de bord et vos rapports dans l’application Power BI pour la réalité mixte (préversion) pendant votre immersion dans le monde virtuel ou dans le contexte de votre environnement.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/05/2018
-ms.author: maggies
-ms.openlocfilehash: a9db2854ee7f1c0844e17e3641fc07f1d6aaf154
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.author: mshenhav
+ms.openlocfilehash: 443615a64bee1f4723450c6c8cc3c49feb81989c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44732700"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275131"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Application Power BI pour la réalité mixte (Preview)
 Consultez vos tableaux de bord et vos rapports dans l’application Power BI pour la réalité mixte (préversion) pendant votre immersion dans le monde virtuel ou placez-les dans des emplacements spécifiques du contexte de votre environnement. 
 
-[Téléchargez l’application Power BI pour la réalité mixte](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) à partir du Windows Store : recherchez-la sous le nom de « Power BI Mobile ». Interagissez avec vos tableaux de bord et rapports dans le monde virtuel, puis sélectionnez ceux que vous voulez placer. 
+[Téléchargez l’application Power BI pour Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab) à partir du Windows Store : Dans le Windows Store, elle porte le nom « Power BI Mobile ». Interagissez avec vos tableaux de bord et rapports dans le monde virtuel, puis sélectionnez ceux que vous voulez placer. 
 
-## <a name="two-views-windows-classic-and-holographic"></a>Deux vues : Windows classique et holographique
+## <a name="two-views-windows-classic-and-holographic"></a>Deux vues : Windows classique et holographique
 
 Power BI pour la réalité mixte est basé sur l’application mobile Windows Power BI avec des fonctionnalités supplémentaires spécifiques à la réalité mixte. Quand vous démarrez Power BI pour la réalité mixte, vous êtes dans cette vue Windows « classique » de Power BI. Dans cette vue, vous pouvez naviguer entre les tableaux de bord et les rapports auxquels vous avez accès. Quand vous trouvé celui que vous voulez, vous pouvez passer de la vue Windows classique à l’expérience holographique. 
 

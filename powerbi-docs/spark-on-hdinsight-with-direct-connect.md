@@ -6,16 +6,16 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/01/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 92b8d0e0ecfa9bae36e552e30cf8f1a7fcecff4b
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 398737276e55e15273a2245a4b7a72fdca938438
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100746"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287712"
 ---
 # <a name="spark-on-hdinsight-with-directquery"></a>Spark dans HDInsight avec DirectQuery
 
@@ -76,7 +76,7 @@ Vous pouvez également allouer des ressources supplémentaires au sein du portai
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Bien démarrer : Créer un cluster Apache Spark sur HDInsight Linux et exécuter des requêtes interactives à l’aide de Spark SQL](/azure/hdinsight/spark/apache-spark-jupyter-spark-sql/)  
+[Bien démarrer : Créer un cluster Apache Spark sur HDInsight Linux et exécuter des requêtes interactives avec Spark SQL](/azure/hdinsight/spark/apache-spark-jupyter-spark-sql/)  
 [Qu’est-ce que Power BI ?](power-bi-overview.md)  
 [Obtenir des données pour Power BI](service-get-data.md)
 [Utiliser Kerberos sur la passerelle locale pour l’authentification unique](service-gateway-sso-kerberos.md)

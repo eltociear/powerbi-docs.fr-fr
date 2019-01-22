@@ -1,23 +1,23 @@
 ---
-title: 'Exemple Analyse des opportunités pour Power BI : visite guidée'
-description: 'Exemple Analyse des opportunités pour Power BI : visite guidée'
+title: 'Exemple Analyse des opportunités pour Power BI : Visite guidée'
+description: 'Exemple Analyse des opportunités pour Power BI : Visite guidée'
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/20/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 12bc6039f7b6580782d3dfac181443caa6557447
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 7f7b9d09b3761a5a02bdf4f706c6470b7d8cf2b6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717490"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275522"
 ---
-# <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des opportunités pour Power BI : visite guidée
+# <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des opportunités pour Power BI : Visite guidée
 
 ## <a name="overview-of-the-opportunity-analysis-sample"></a>Présentation de l’exemple Analyse des opportunités
 L’**exemple Analyse des opportunités** contient le tableau de bord (et le rapport associé) d’une société de logiciels qui s’appuie sur 2 canaux de vente : *direct* et *partenaires*. Le directeur des ventes a créé ce tableau de bord pour suivre les opportunités et le chiffre d’affaires par région, par volume de transactions et par canal.
@@ -121,7 +121,7 @@ Notre directrice financière se sert de cette page pour gérer la charge de trav
 
 Il s’agit d’un environnement sécurisé à explorer. Vous pouvez toujours choisir de ne pas enregistrer les modifications apportées. Mais si vous les enregistrez, vous pouvez toujours accéder à **Obtenir des données** pour avoir une nouvelle copie de cet exemple.
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Connexion à vos données
+## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
 Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations de données de suivi des opportunités. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. En savoir plus sur [la prise en main de Power BI](service-get-started.md).
 
 [Télécharger les exemples](sample-datasets.md)  
