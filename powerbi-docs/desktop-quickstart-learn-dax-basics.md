@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a171dd2aa375f8d12830b051dd8ce6437e4b3236
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 323391268e930d3b7b2926590f3377b850b65624
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679452"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282583"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Principes fondamentaux de DAX dans Power BI Desktop
 Cet article s’adresse aux utilisateurs qui débutent avec Power BI Desktop. Il est destiné à vous fournir une introduction rapide et simple de la façon dont vous pouvez utiliser le langage DAX (Data Analysis Expressions) pour résoudre un certain nombre de problèmes d’analyse de données et de calcul de base. Nous aborderons des informations conceptuelles, une série de tâches que vous pourrez effectuer et quelques questionnaires pour tester ce que vous aurez appris. À la fin de cet article, vous aurez acquis une bonne compréhension des concepts fondamentaux du langage DAX.
@@ -33,10 +33,10 @@ Nous allons tâcher de comprendre les formules DAX dans le cadre des calculs, et
 
 **Exemple de classeur**
 
-La meilleure façon d’apprendre le langage DAX consiste à créer des formules de base, à les utiliser avec des données réelles et à examiner les résultats obtenus. Les exemples et les tâches mentionnés dans cet article utilisent le fichier Contoso Sales Sample for Power BI Desktop Preview. Il s’agit du même fichier d’exemple que celui utilisé dans l’article [Didacticiel : Créer vos propres mesures dans Power BI Desktop](desktop-tutorial-create-measures.md). Voici le [fichier d’exemple](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) à télécharger.
+La meilleure façon d’apprendre le langage DAX consiste à créer des formules de base, à les utiliser avec des données réelles et à examiner les résultats obtenus. Les exemples et les tâches mentionnés dans cet article utilisent le fichier Contoso Sales Sample for Power BI Desktop Preview. Il s’agit du même exemple de fichier utilisé dans l’article [Tutoriel : Créer ses propres mesures dans Power BI Desktop](desktop-tutorial-create-measures.md). Voici le [fichier d’exemple](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip) à télécharger.
 
 ## <a name="lets-begin"></a>Au travail !
-Nous allons bâtir notre compréhension de DAX autour de trois concepts fondamentaux : la *syntaxe* , les *fonctions* et le *contexte* . Bien entendu, il existe d’autres concepts importants propres à DAX, mais la compréhension de ces trois concepts fournit un socle optimal sur lequel vous pourrez développer vos compétences DAX.
+Nous allons bâtir notre compréhension de DAX autour de trois concepts fondamentaux : la *syntaxe* , les *fonctions* et le *contexte*. Bien entendu, il existe d’autres concepts importants propres à DAX, mais la compréhension de ces trois concepts fournit un socle optimal sur lequel vous pourrez développer vos compétences DAX.
 
 ### <a name="syntax"></a>Syntaxe
 Avant de créer vos propres formules, examinez la syntaxe des formules DAX. La syntaxe inclut les différents éléments qui constituent une formule, ou plus simplement, la manière dont la formule est écrite. Par exemple, examinons une formule DAX simple.
@@ -65,7 +65,7 @@ Pour mieux comprendre une formule DAX, il est souvent utile de séparer chaque �
 
 Quand elle est ajoutée dans un rapport, cette mesure calcule et retourne des valeurs en effectuant la somme des montants des ventes pour chacun des autres champs que vous incluez, tels que les téléphones mobiles aux États-Unis.
 
-Vous vous demandez peut-être si cette mesure revient au même que d’ajouter simplement le champ SalesAmount dans votre rapport. Vous avez raison. Toutefois, il y a une bonne raison de créer votre propre mesure qui calcule la somme des valeurs du champ SalesAmount : vous pouvez l’utiliser en tant qu’argument dans d’autres formules. Cela peut sembler un peu confus à ce stade, mais quand vos compétences en matière de formules DAX se seront développées, savoir cela améliorera l’efficacité de vos formules et de votre modèle. En fait, vous verrez la mesure Total Sales utilisée en tant qu’argument dans d’autres formules par la suite.
+Vous vous demandez peut-être si cette mesure revient au même que d’ajouter simplement le champ SalesAmount dans votre rapport. Vous avez raison. Toutefois, il y a une bonne raison de créer votre propre mesure qui calcule la somme des valeurs du champ SalesAmount : Vous pouvez l’utiliser en tant qu’argument dans d’autres formules. Cela peut sembler un peu confus à ce stade, mais quand vos compétences en matière de formules DAX se seront développées, savoir cela améliorera l’efficacité de vos formules et de votre modèle. En fait, vous verrez la mesure Total Sales utilisée en tant qu’argument dans d’autres formules par la suite.
 
 Attardons-nous sur quelques éléments concernant cette formule. En particulier, nous avons présenté une fonction, [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Les fonctions sont des formules pré-écrites qui facilitent des calculs et des manipulations complexes avec des nombres, des dates, des heures, du texte, etc. Vous en apprendrez davantage sur les fonctions ultérieurement.
 
@@ -80,12 +80,12 @@ Il est important que vos formules aient une syntaxe correcte. Dans la plupart de
 
 Nous allons créer une formule simple. Cette tâche vous aidera à mieux comprendre la syntaxe des formules et la manière dont la fonctionnalité de suggestions dans la barre de formule peut vous aider.
 
-### <a name="task-create-a-measure-formula"></a>Tâche : créer une formule de mesure
+### <a name="task-create-a-measure-formula"></a>Tâche : Créer une formule de mesure
 Pour effectuer cette tâche, vous devez ouvrir le fichier Contoso Sales Sample Power BI Desktop.
     
-1. Dans la vue Rapport, cliquez avec le bouton droit sur la table **Sales** figurant dans la liste des champs, puis cliquez sur Nouvelle mesure.
+1. Dans la vue Rapport, cliquez avec le bouton droit sur la table **Sales** figurant dans la liste des champs, puis cliquez sur **Nouvelle mesure**.
     
-2. Dans la barre de formule, remplacez **Mesure** en tapant un nouveau nom de mesure, Previous Quarter Sales.
+2. Dans la barre de formule, remplacez **Mesure** en tapant un nouveau nom de mesure, **Previous Quarter Sales**.
     
 3. Après le signe égal, tapez les premières lettres **CAL**, puis double-cliquez sur la fonction que vous souhaitez utiliser. Dans cette formule, vous souhaitez utiliser la fonction **CALCULATE**.
 
@@ -134,7 +134,7 @@ Les réponses sont fournies à la fin de cet article.
 ### <a name="functions"></a>Fonctions
 Les fonctions sont des formules prédéfinies qui effectuent des calculs en utilisant des valeurs spécifiques, appelées arguments, dans un ordre particulier ou dans une structure particulière. Les arguments peuvent être des fonctions, une formule, une expression, des références de colonne, des nombres, du texte, des valeurs logiques telles que TRUE ou FALSE, ou des constantes.
 
-DAX comprend des fonctions des catégories suivantes : [Date et heure](https://msdn.microsoft.com/library/ee634786.aspx), [Time Intelligence](https://msdn.microsoft.com/library/ee634763.aspx), [Information](https://msdn.microsoft.com/library/ee634552.aspx), [Logique](https://msdn.microsoft.com/library/ee634365.aspx), [Mathématique](https://msdn.microsoft.com/library/ee634241.aspx), [Statistique](https://msdn.microsoft.com/library/ee634822.aspx), [Texte](https://msdn.microsoft.com/library/ee634938.aspx), [Parent/enfant](https://msdn.microsoft.com/library/mt150102.aspx) et [Autre](https://msdn.microsoft.com/library/mt150101.aspx). Si vous connaissez bien les fonctions dans les formules Excel, un grande nombre des fonctions DAX vous paraîtront similaires. Toutefois, les fonctions DAX sont uniques du fait des particularités suivantes :
+DAX intègre les catégories de fonctions suivantes : [Date et heure](https://msdn.microsoft.com/library/ee634786.aspx), [Time Intelligence](https://msdn.microsoft.com/library/ee634763.aspx), [Information](https://msdn.microsoft.com/library/ee634552.aspx), [Logique](https://msdn.microsoft.com/library/ee634365.aspx), [Mathématique](https://msdn.microsoft.com/library/ee634241.aspx), [Statistique](https://msdn.microsoft.com/library/ee634822.aspx), [Texte](https://msdn.microsoft.com/library/ee634938.aspx), [Parent/enfant](https://msdn.microsoft.com/library/mt150102.aspx) et [Autre](https://msdn.microsoft.com/library/mt150101.aspx). Si vous connaissez bien les fonctions dans les formules Excel, un grande nombre des fonctions DAX vous paraîtront similaires. Toutefois, les fonctions DAX sont uniques du fait des particularités suivantes :
 
 * Une fonction DAX fait toujours référence à une colonne ou à une table entière. Si vous souhaitez utiliser uniquement des valeurs particulières d’une table ou d’une colonne, vous pouvez ajouter des filtres à la formule.
 * Si vous devez personnaliser des calculs ligne par ligne, DAX fournit des fonctions qui vous permettent d’utiliser la valeur de la ligne actuelle ou une valeur associée comme type d’argument, afin d’effectuer des calculs qui varient selon le contexte. Vous en apprendrez davantage sur le contexte ultérieurement.
@@ -160,7 +160,7 @@ La façon la plus simple de considérer le contexte de ligne est de penser à la
 
 **Contexte de filtre**
 
-Le contexte de filtre est un peu plus difficile à comprendre que le contexte de ligne. Vous pouvez aisément considérer le contexte de filtre comme : un ou plusieurs filtres appliqués dans un calcul qui détermine un résultat ou une valeur.
+Le contexte de filtre est un peu plus difficile à comprendre que le contexte de ligne. Vous pouvez aisément considérer le contexte de filtre comme : Un ou plusieurs filtres appliqués dans un calcul qui déterminent un résultat ou une valeur.
 
 Le contexte de filtre ne se substitue pas au contexte de ligne. Il s’applique plutôt en plus du contexte de ligne. Par exemple, pour limiter encore les valeurs à inclure dans un calcul, vous pouvez appliquer un contexte de filtre qui non seulement spécifie le contexte de ligne, mais spécifie également une valeur particulière (filtre) dans ce contexte de ligne.
 
