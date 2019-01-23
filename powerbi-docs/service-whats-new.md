@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32a052ca009c613b262d5277a0fd85b186c8e148
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: acfc4062677a28824458781b900b271bedd51eb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406750"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488911"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
@@ -197,7 +197,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 ***Sécurité au niveau des lignes***
 
 * Prise en charge des groupes Azure Active Directory (AAD) : les utilisateurs peuvent maintenant affecter un rôle à des groupes AAD (groupes de sécurité et listes de distribution). Cela simplifie l’attribution de rôles à un grand groupe d’utilisateurs.
-* [Tester des rôles SNL avec des rapports qui s’appuient sur les données SNL](service-admin-rls.md#validating-the-role-within-power-bi-desktop) : nous avons ajouté une fonctionnalité à notre préversion SNL, qui permet de tester un jeu de données dans un rôle spécifique. Cela permet de garantir le fonctionnement du rôle avant que les utilisateurs ne commencent à utiliser votre tableau de bord.
+* [Tester des rôles SNL avec des rapports qui s’appuient sur les données SNL](service-admin-rls.md#validate-the-roles-within-power-bi-desktop) : nous avons ajouté une fonctionnalité à notre préversion SNL, qui permet de tester un jeu de données dans un rôle spécifique. Cela permet de garantir le fonctionnement du rôle avant que les utilisateurs ne commencent à utiliser votre tableau de bord.
 * Définir et appliquer la sécurité SNL à des modèles cloud basés sur des requêtes directes : il est maintenant possible de créer et d’appliquer des règles SNL avec des sources de données à requête directe.
 
 ***Tableaux de bord***
