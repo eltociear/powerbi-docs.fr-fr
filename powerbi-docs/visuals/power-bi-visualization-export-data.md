@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 06ff1326c902c723614b3b89c0b5c1217fa06ea3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 83ca49a3307a12e8a92c01de4175fcb117e3163d
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295630"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838436"
 ---
 # <a name="export-data-from-visualizations"></a>Exportez des données à partir de visualisations
 Si vous souhaitez voir les données utilisées pour créer une visualisation, [vous pouvez le faire dans Power BI](service-reports-show-data.md) ou exporter ces données vers Excel sous forme de fichier .xlsx ou .csv. La possibilité d’exporter les données nécessite une licence Pro ou Premium et des autorisations de modification sur le jeu de données et le rapport. 
@@ -83,7 +83,7 @@ Ce qui s’affiche à l’écran quand vous sélectionnez **Données sous-jacent
 | Contenu du visuel |                                                                              Contenu de l’exportation                                                                              |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   Agrégats    |                                                 Le *premier* agrégat et les données non masquées de la table entière pour cet agrégat                                                  |
-|   Agrégats    | Les données associées, si le visuel utilise les données d’autres tables de données *\*\*associées*\* à celle qui contient l’agrégat (dans la mesure où il s’agit d’une relation \*: 1 ou 1:1. |
+|   Agrégats    | Les données associées, si le visuel utilise les données d’autres tables de données *associées* à celle qui contient l’agrégat (dans la mesure où il s’agit d’une relation \*:1 ou 1:1) |
 |    Mesures     |                                      Toutes les mesures contenues dans le visuel *et* toutes les mesures d’une table de données contenant une mesure utilisée dans le visuel                                      |
 |    Mesures     |                                       Toutes les données non masquées des tables qui contiennent cette mesure (dans la mesure où il s’agit d’une relation \*:1 ou 1:1)                                       |
 |    Mesures     |                                      Toutes les données de toutes les tables associées à une ou plusieurs tables contenant les mesures via une chaîne de \*: 1 sur 1:1.                                      |
