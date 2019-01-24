@@ -8,31 +8,47 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/22/2019
+ms.openlocfilehash: 2a65baf94abcb79dac7bb9419ad67124f2b65bb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292450"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488934"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
 Découvrez les nouveautés dans Power BI Report Server. Cet article aborde les principaux domaines de fonctionnalités et est mis à jour à mesure que de nouveaux éléments sont publiés.
 
-Pour télécharger Power BI Report Server et Power BI Desktop optimisé pour Power BI Report Server, accédez à la page [Rapports locaux avec Power BI Report Server](https://powerbi.microsoft.com/report-server/).
-
-Consultez également les sources suivantes pour vous tenir au courant des nouvelles fonctionnalités de Power BI Report Server.
-
-* [Blog Microsoft Power BI](https://powerbi.microsoft.com/blog/)
-* [Blog de l’équipe SQL Server Reporting Services](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* [Chaîne YouTube Guy in a Cube](https://aka.ms/guyinacube)
+Pour télécharger les dernières versions de Power BI Report Server et de Power BI Desktop optimisé pour Power BI Report Server, accédez à [Rapports locaux avec Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 
 Pour des informations connexes sur les nouveautés de Power BI, voir :
 
 * [Nouveautés dans le service Power BI](../service-whats-new.md)
 * [Nouveautés dans Power BI Desktop](../desktop-latest-update.md)
 * [Nouveautés dans les applications mobiles pour Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="january-2019"></a>Janvier 2019
+
+Prise en charge de ces fonctionnalités dans les rapports Power BI :
+
+[**Sécurité au niveau des lignes**](row-level-security-report-server.md) La configuration de la sécurité au niveau des lignes (SNL) avec Power BI Report Server peut restreindre l’accès aux données pour certains utilisateurs. Les filtres limitent l’accès aux données au niveau des lignes, et vous pouvez définir des filtres dans des rôles.
+
+[**Développer et réduire les en-têtes de lignes d’une matrice**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Nous avons ajouté la possibilité de développer et de réduire les en-têtes de lignes d’une matrice, l’une des fonctionnalités les plus demandées pour ce visuel.
+
+[**Faire des copier-coller d’un fichier .pbix à un autre**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Vous pouvez copier des visuels d’un fichier .pbix à un autre. Pour cela, utilisez le menu contextuel du visuel ou le raccourci clavier Ctrl+C standard, puis collez le visuel dans un autre rapport avec Ctrl+V.
+
+[**Guides d’alignement intelligents**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Comme dans PowerPoint, des guides d’alignement intelligents apparaissent quand vous déplacez des objets dans votre page de rapport pour vous aider à tout aligner. Ces guides s’affichent chaque fois que vous faites glisser ou redimensionnez un élément sur votre page. Quand vous déplacez un objet près d’un autre, il s’aligne avec celui-ci.
+
+**Fonctionnalités d’accessibilité** Elles sont trop nombreuses pour toutes les énumérer ici. Citons par exemple la [prise en charge de fonctionnalités d’accessibilité dans le volet de liste de champs](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Le volet de liste de champs est entièrement accessible. Vous pouvez naviguer dans le volet en utilisant simplement votre clavier et un lecteur d’écran, puis utiliser le menu contextuel pour ajouter des champs à votre page de rapport.
+
+### <a name="administrator-settings"></a>Paramètres administrateur
+
+Les administrateurs peuvent définir les propriétés suivantes dans les propriétés avancées de SSMS pour la batterie de serveurs :
+
+**AllowedResourceExtensionsForUpload** Définissez les extensions des ressources pouvant être chargées sur le serveur de rapports. Vous n’êtes pas obligé d’inclure des extensions pour les types de fichiers intégrés comme &ast;.rdl et &ast;.pbix. La valeur par défaut est « &ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx ». 
+
+**SupportedHyperlinkSchemes** Définit une liste séparée par des virgules des schémas d’URI autorisés à être définis sur les actions de lien hypertexte dont l’affichage est permis ou « &ast; » pour activer tous les schémas de lien hypertexte. Par exemple, le fait de définir « http,https » autorise les liens hypertexte vers « https://www. contoso.com », mais supprime les liens hypertexte vers « mailto:bill@contoso.com » ou « javascript:window.open('www.contoso.com', '_blank') ». La valeur par défaut est « &ast; ».
 
 ## <a name="august-2018"></a>Août 2018
 
@@ -325,10 +341,10 @@ Power BI Report Server prend désormais en charge les nouveaux visuels de table 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Présentation de Power BI Report Server](get-started.md) 
-[Manuel de l’administrateur](admin-handbook-overview.md)  
-[Installer Power BI Report Server](install-report-server.md)  
-[Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+Consultez les sources suivantes pour vous tenir au courant des nouvelles fonctionnalités de Power BI Report Server.
+
+* [Blog Microsoft Power BI](https://powerbi.microsoft.com/blog/)
+* [Blog de l’équipe SQL Server Reporting Services](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* [Chaîne YouTube Guy in a Cube](https://aka.ms/guyinacube)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

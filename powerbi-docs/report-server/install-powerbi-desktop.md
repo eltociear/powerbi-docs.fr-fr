@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
+ms.date: 01/14/2019
 ms.author: maggies
-ms.openlocfilehash: 943e81c8c49a4a0707ed41b593093fc27a85a01e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1f7da83629b932d2e14fbc57682e0f7f7988739a
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295878"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488819"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installer Power BI Desktop optimisé pour Power BI Report Server
 Découvrez comment installer Power BI Desktop optimisé pour Power BI Report Server.
@@ -31,7 +31,7 @@ Le moyen le plus simple d’avoir la version la plus récente de Power BI Deskto
 
     ![Télécharger Power BI Desktop à partir du portail web](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Vous pouvez aussi accéder directement à [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimisé pour Power BI Report Server - août 2018) dans le Centre de téléchargement Microsoft.
+    Vous pouvez aussi accéder directement à [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimisé pour Power BI Report Server - janvier 2019) dans le Centre de téléchargement Microsoft.
 
 2. Dans la page du Centre de téléchargement, sélectionnez **Télécharger**.
 
@@ -41,7 +41,7 @@ Le moyen le plus simple d’avoir la version la plus récente de Power BI Deskto
 
     - **PBIDesktopRS_x64.msi** (version 64 bits).
 
-1. Après avoir téléchargé le programme d’installation, exécutez l’Assistant Installation de Power BI Desktop (août 2018).
+1. Après avoir téléchargé le programme d’installation, exécutez l’Assistant Installation de Power BI Desktop (janvier 2019).
 
 2. À l’issue de l’installation, cochez **Démarrer Power BI Desktop maintenant**.
    
