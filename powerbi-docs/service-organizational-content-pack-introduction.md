@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fa76b19e187f7a27dc8b9268dad4d9b5ab8f101
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f7e8d58e5fd738e5da678723ef239f5303be5070
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286378"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838459"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Présentation des packs de contenu d’organisation dans Power BI
 > [!NOTE]
@@ -41,8 +41,6 @@ Les tableaux de bord, rapports et classeurs Excel sont en lecture seule. Toutef
 La publication d’un pack de contenu d’organisation l’ajoute à AppSource.  Ce dépôt centralisé permet à des membres de parcourir et de découvrir facilement des tableaux de bord, des rapports et des jeux de données publiés pour eux.  
 
 * Pour afficher AppSource, sélectionnez **Obtenir les données** > **Mon organisation** > **Obtenir**.
-
-En savoir plus sur [la recherche et l’ouverture des packs de contenu d’organisation](consumer/end-user-content-pack.md).
 
 ## <a name="the-life-cycle-of-an-organizational-content-pack"></a>Cycle de vie d’un pack de contenu d’organisation
 Tout utilisateur Power BI Pro peut créer et publier des packs de contenu d’organisation, et y accéder. Seul le créateur du pack de contenu peut modifier le classeur et le jeu de données, planifier l’actualisation et le supprimer.
