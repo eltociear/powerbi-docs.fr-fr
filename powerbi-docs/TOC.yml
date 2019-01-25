@@ -64,7 +64,7 @@ items:
       href: desktop-many-to-many-relationships.md
     - name: Mode de stockage dans Power BI Desktop (préversion)
       href: desktop-storage-mode.md
-    - name: Filtrage croisé bidirectionnel dans Power BI Desktop (version préliminaire)
+    - name: Filtrage croisé bidirectionnel dans Power BI Desktop
       href: desktop-bidirectional-filtering.md
     - name: Power BI et DirectQuery
       href: desktop-directquery-about.md
@@ -1110,13 +1110,15 @@ items:
         href: report-server/quickstart-create-powerbi-report.md
       - name: Gérer le contenu dans le serveur de rapports
         href: report-server/getting-around.md
+      - name: Sécurité au niveau des lignes (RLS) dans le serveur de rapports
+        href: report-server/row-level-security-report-server.md
       - name: Créer un rapport paginé pour un serveur de rapports
         href: report-server/quickstart-create-paginated-report.md
       - name: Entrer des données directement dans un rapport paginé
         href: paginated-reports-enter-data.md
       - name: Travailler avec des indicateurs de performance clés
         href: https://go.microsoft.com/fwlink/?linkid=849021
-      - name: 'Accès à des Jeux de données partagés en tant que flux OData '
+      - name: Accès à des Jeux de données partagés en tant que flux OData
         href: report-server/access-dataset-odata.md
       - name: Configurer une actualisation planifiée
         href: report-server/configure-scheduled-refresh.md
@@ -1293,9 +1295,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: b3553d493940b831e3e604fe43176ace125fe995
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: ae98cdee3793186b590ded6143546b5b79062685
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488888"
