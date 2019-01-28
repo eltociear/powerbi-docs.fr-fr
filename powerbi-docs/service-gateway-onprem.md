@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 4bc704eb5aeb2bf6da18a43a6d4502b5541ce249
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: eea6fe12fdd8821c803863b63ede93179bf67f07
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287896"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899247"
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 
@@ -96,7 +96,9 @@ Lorsque vous ajoutez une source de données à la passerelle, vous devez fournir
 
 ## <a name="tenant-level-administration"></a>Administration au niveau locataire
 
-Actuellement, les administrateurs de locataires n’ont aucun endroit où ils peuvent gérer toutes les passerelles que les autres utilisateurs ont installées et configurées.  Si vous êtes administrateur de locataires, nous vous recommandons de demander aux utilisateurs de votre organisation de vous ajouter comme administrateur pour chaque passerelle qu’ils installent. Vous pourrez ainsi gérer toutes les passerelles de votre organisation en utilisant la page Paramètres de la passerelle ou les [commandes PowerShell](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
+En tant qu’administrateur de locataire, vous pouvez voir toutes les passerelles de données locales installées dans votre locataire et les gérer. Cette fonctionnalité est actuellement en préversion publique Pour plus d’informations, consultez la [documentation du centre d’administration de Power Platform](/power-platform/admin/onpremises-data-gateway-management).
+
+Si vous êtes administrateur de locataire, nous vous recommandons de demander aux utilisateurs de votre organisation de vous ajouter comme administrateur pour chaque passerelle qu’ils installent. Vous pourrez ainsi gérer toutes les passerelles de votre organisation en utilisant la page Paramètres de la passerelle ou les [commandes PowerShell](service-gateway-high-availability-clusters.md#powershell-support-for-gateway-clusters). 
 
 ## <a name="enabling-outbound-azure-connections"></a>Activation des connexions Azure sortantes
 
