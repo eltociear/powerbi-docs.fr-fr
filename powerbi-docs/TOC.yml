@@ -410,10 +410,10 @@ items:
         href: service-get-data.md
       - name: Visite guidée de l’éditeur de rapport
         href: service-the-report-editor-take-a-tour.md
-      - name: Organisation de votre travail
-        href: service-new-workspaces.md
     - name: Workflow dans Power BI
       items:
+      - name: Organisation de votre travail
+        href: service-new-workspaces.md
       - name: Méthodes de partage du travail
         href: service-how-to-collaborate-distribute-dashboards-reports.md
       - name: Actualisation des données
@@ -1295,9 +1295,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: ae98cdee3793186b590ded6143546b5b79062685
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: 6278920f313261f1e25d72093058fd61dbb13803
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488888"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147516"
