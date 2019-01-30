@@ -1,6 +1,6 @@
 ---
-title: Bien démarrer avec le service Power BI (Power BI en ligne)
-description: Bien démarrer avec Power BI en ligne (app.powerbi.com)
+title: Bien démarrer avec le service Power BI
+description: Bien démarrer avec le service en ligne Power BI (app.powerbi.com)
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,25 +8,25 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a033e6893cffb71c4a898f1260aca615ae4e4b8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 06b60e5d493532efbdb49932ace48897e17961c1
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291982"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147493"
 ---
-# <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Tutoriel : Prise en main du service Power BI (app.powerbi.com)
-Ce didacticiel vous aide à bien démarrer avec le ***service Power BI***. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de commencer par lire [Qu’est-ce que Power BI ?](power-bi-overview.md).
+# <a name="tutorial-get-started-with-the-power-bi-service-apppowerbicom"></a>Tutoriel : Bien démarrer avec le service Power BI (app.powerbi.com)
+Ce tutoriel vous aide à bien démarrer avec le ***service Power BI***. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de commencer par lire [Qu’est-ce que Power BI ?](power-bi-overview.md).
 
 ![illustration représentant la relation entre le service Power BI, Power BI Desktop et Power BI Mobile](media/service-get-started/power-bi-components.png)
 
 Ce tutoriel vous montre comment effectuer les étapes suivantes :
 
 > [!div class="checklist"]
-> * Rechercher d’autres contenus de prise en main du service Power BI
+> * Rechercher d’autres contenus pour démarrer avec le service Power BI
 > * Vous connecter à votre compte Power BI en ligne ou vous inscrire si vous n’en avez pas encore un
 > * Ouvrir le service Power BI
 > * Obtenir des données et les ouvrir dans la vue Rapport
@@ -35,14 +35,14 @@ Ce tutoriel vous montre comment effectuer les étapes suivantes :
 > * Ajouter une autre visualisation à votre tableau de bord à l’aide de l’outil de langage naturel de la fonctionnalité Questions et réponses
 > * Nettoyer les ressources en supprimant le jeu de données, le rapport et le tableau de bord
 
-## <a name="sign-up-for-power-bi-service"></a>S’inscrire au service Power BI
+## <a name="sign-up-for-the-power-bi-service"></a>S’inscrire au service Power BI
 Si vous n’avez pas d’abonnement à Power BI Pro, [inscrivez-vous à un essai gratuit de Power BI Pro](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
 Si vous avez déjà un compte, ouvrez un navigateur et tapez app.powerbi.com pour ouvrir le service Power BI. 
 
 ![Connectez-vous ou inscrivez-vous gratuitement](media/service-get-started/power-bi-sign-up.png)
 
-Si vous avez besoin d’aide sur Power BI Desktop, consultez [Prise en main de Desktop](desktop-getting-started.md). Si vous recherchez de l’aide sur la version mobile de Power BI, consultez la page [Applications Power BI pour appareils mobiles](consumer/mobile/mobile-apps-for-mobile-devices.md).
+Si vous avez besoin d’aide sur Power BI Desktop, consultez [Bien démarrer avec Power BI Desktop](desktop-getting-started.md). Si vous recherchez de l’aide sur la version mobile de Power BI, consultez la page [Applications Power BI pour appareils mobiles](consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 > [!TIP]
 > Vous préférez un cours gratuit à votre rythme à la place ? [Inscrivez-vous à notre cours sur l’analyse et la visualisation des données sur EdX](http://aka.ms/edxpbi).
@@ -52,8 +52,8 @@ Visitez notre [sélection sur YouTube](https://www.youtube.com/playlist?list=PL1
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-## <a name="what-is-power-bi-service"></a>Qu’est-ce que le service Power BI ?
-Le service Microsoft Power BI est parfois appelé Power BI en ligne ou app.powerbi.com. Power BI vous aide à rester informé dans les domaines qui vous intéressent.  Grâce au service Power BI, les ***tableaux de bord*** vous permettent de prendre en permanence le pouls de votre activité.  Vos tableaux de bord affichent des ***vignettes*** sur lesquelles vous pouvez cliquer pour ouvrir des ***rapports*** qui vous donnent de plus amples détails.  Connectez-vous à plusieurs ***jeux de données*** pour rassembler au même endroit toutes les données pertinentes. Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consultez [Power BI – Concepts de base](consumer/end-user-basic-concepts.md).
+## <a name="what-is-the-power-bi-service"></a>Qu’est-ce que le service Power BI ?
+Le service Microsoft Power BI est parfois appelé Power BI en ligne ou app.powerbi.com. Power BI vous aide à rester informé dans les domaines qui vous intéressent.  Avec le service Power BI, les ***tableaux de bord*** vous permettent de prendre le pouls de votre activité à tout moment.  Vos tableaux de bord affichent des ***vignettes*** sur lesquelles vous pouvez cliquer pour ouvrir des ***rapports*** qui vous donnent de plus amples détails.  Connectez-vous à plusieurs ***jeux de données*** pour rassembler au même endroit toutes les données pertinentes. Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consultez [Power BI – Concepts de base](consumer/end-user-basic-concepts.md).
 
 Si vous avez des données importantes dans des fichiers Excel ou CSV, vous pouvez créer un tableau de bord Power BI pour rester informé où que vous soyez et partager les informations avec d’autres personnes.  Disposez-vous d’un abonnement à une application SaaS comme Salesforce ?  Connectez-vous à Salesforce dès maintenant pour créer automatiquement un tableau de bord à partir de ces données, ou [découvrez toutes les autres applications SaaS](service-get-data.md) auxquelles vous pouvez vous connecter. Si vous faites partie d’une organisation, voyez si des [applications](service-create-distribute-apps.md) ont été publiées pour vous.
 
@@ -72,7 +72,7 @@ Voici un exemple d’obtention de données à partir d’un fichier CSV. Vous s
 4. Recherchez le fichier sur votre ordinateur, puis choisissez **Ouvrir**. Si vous l’avez enregistré dans OneDrive Entreprise, sélectionnez cette option. Si vous l’avez enregistré localement, sélectionnez **Fichier local**. 
    
    ![écran Obtenir les données > Fichiers](media/service-get-started/gs2.png)
-5. Pour ce didacticiel, nous allons sélectionner **Importer** pour ajouter le fichier Excel en tant que jeu de données que nous pouvons ensuite utiliser pour créer des rapports et tableaux de bord. Si vous sélectionnez **Charger**, le classeur Excel entier est chargé vers Power BI où vous pouvez l’ouvrir et le modifier dans Excel en ligne.
+5. Pour ce tutoriel, nous allons sélectionner **Importer** pour ajouter le fichier Excel en tant que jeu de données que nous pouvons ensuite utiliser pour créer des rapports et des tableaux de bord. Si vous sélectionnez **Charger**, le classeur Excel entier est chargé vers Power BI où vous pouvez l’ouvrir et le modifier dans Excel en ligne.
    
    ![choisir Importer](media/service-get-started/power-bi-import.png)
 6. Quand votre jeu de données est prêt, sélectionnez **Afficher le jeu de données** pour l’ouvrir dans l’éditeur de rapport. 
@@ -104,11 +104,11 @@ Maintenant que vous êtes connecté aux données, vous pouvez les explorer.  Une
    
    ![éditeur de rapport avec une icône sélectionnée](media/service-get-started/gettingstart5new.png)
 
-3. Comme ce contenu semble intéressant, nous allons l’*épingler* à un tableau de bord. Pointez sur la visualisation, puis sélectionnez l’icône **Épingler**.  Quand vous épinglez cette visualisation, celle-ci est stockée dans votre tableau de bord et mise à jour. Vous pouvez ainsi suivre la valeur la plus récente en un clin d’œil.
+3. Comme ce graphique semble intéressant, nous allons l’*épingler* à un tableau de bord. Pointez sur la visualisation, puis sélectionnez l’icône **Épingler**.  Quand vous épinglez cette visualisation, celle-ci est stockée dans votre tableau de bord et mise à jour. Vous pouvez ainsi suivre la valeur la plus récente en un clin d’œil.
    
    ![icône d’épingle](media/service-get-started/pinnew.png)
 
-4. Comme il s’agit d’un nouveau rapport, vous êtes invité à l’enregistrer avant de pouvoir épingler une visualisation à un tableau de bord. Attribuez un nom à votre rapport (par exemple, *Ventes dans le temps*), puis sélectionnez **Enregistrer et continuer**. 
+4. Comme ce rapport est nouveau, vous êtes invité à l’enregistrer avant de pouvoir épingler une visualisation à un tableau de bord. Attribuez un nom à votre rapport (par exemple, *Évolution des ventes*), puis sélectionnez **Enregistrer et continuer**. 
    
    ![boîte de dialogue Enregistrer le rapport](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
@@ -118,7 +118,7 @@ Maintenant que vous êtes connecté aux données, vous pouvez les explorer.  Une
    
 1. Sélectionnez **Épingler**.
    
-    Un message de réussite (dans l’angle supérieur droit) vous indique que la visualisation a été ajoutée, sous forme de vignette, à votre tableau de bord.
+    Un message de réussite (en haut à droite) vous indique que la visualisation a été ajoutée, sous forme de vignette, à votre tableau de bord.
    
     ![Boîte de dialogue Épinglé au tableau de bord](media/service-get-started/power-bi-pin-success.png)
 

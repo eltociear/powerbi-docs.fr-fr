@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 04f67f82552f7915f8ca4fc6e639de3e616c2f8a
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295256"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147585"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 
@@ -205,6 +205,9 @@ Comme vous comprenez maintenant comment fonctionne Kerberos avec une passerelle,
 Ce guide tente d’être aussi complet que possible. Si vous avez déjà effectué certaines étapes, vous pouvez les ignorer : Par exemple, vous avez déjà créé un utilisateur de service pour votre serveur BW et y avez mappé un SPN, ou bien vous avez déjà installé la bibliothèque gsskrb5.
 
 ### <a name="setup-gsskrb5-on-client-machines-and-the-bw-server"></a>Installer gsskrb5 sur les machines clientes et le serveur BW
+
+> [!NOTE]
+> gsskrb5 n’est plus activement pris en charge par SAP. Pour plus d’informations, consultez [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Notez également que gsskrb5 n’autorise pas les connexions d’authentification unique de la passerelle de données aux serveurs de messages BW. Seules les connexions aux serveurs d’applications BW sont possibles.
 
 gsskrb5 doit être utilisé par le client et par le serveur pour établir une connexion à authentification unique via la passerelle. La bibliothèque Common Crypto Library (sapcrypto) n’est actuellement pas prise en charge.
 

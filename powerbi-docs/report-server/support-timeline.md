@@ -8,22 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: e24cf43c5797293f83c7f678dee328d502ac2243
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/24/2019
+ms.openlocfilehash: b2ddf1e55f54b9c671a92df497c0a2ae1afdcced
+ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280541"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54907514"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Chronologie de prise en charge pour Power BI Report Server
 
-Power BI Report Server sera publié quelques fois par an. Des mises à jour de sécurité et critiques seront disponibles jusqu’à ce que la publication suivante soit généralement disponible (GA). Après la nouvelle publication, la publication précédente continuera de recevoir des mises à jour de sécurité pendant le reste des 12 mois de sa durée de vie.
+Power BI Report Server est publié quelques fois par an. Des mises à jour de sécurité et critiques sont disponibles jusqu’à ce que la publication suivante soit en disponibilité générale (GA). Après la nouvelle publication, la publication précédente continue de recevoir des mises à jour de sécurité pendant le reste des 12 mois de son cycle de vie.
 
 Cette stratégie de prise en charge vous permet d’offrir des innovations à vos clients rapidement tout en offrant une flexibilité suffisante pour leur permettre d’adopter les innovations à leur propre rythme.
 
-* Phase de service des mises à jour de sécurité et critiques : lors de l’exécution de la version la plus récente de Power BI Report Server, vous recevrez des mises à jour de sécurité et critiques.
-* Phase de maintenance des mises à jour de sécurité (uniquement) : après la publication d’une nouvelle version, le support des versions antérieures est réduit aux seules mises à jour de sécurité pendant le reste du cycle de vie de 12 mois du support (voir figure 1).
+* Phase de service des mises à jour de sécurité et critiques : lors de l’exécution de la version la plus récente de Power BI Report Server, vous recevez des mises à jour de sécurité et critiques.
+* Phase de maintenance des mises à jour de sécurité (uniquement) : après la publication d’une nouvelle version, le support des versions antérieures est réduit aux seules mises à jour de sécurité pendant le reste des 12 mois du cycle de vie du support (voir figure 1).
 
     ![Graphique illustrant la plage de temps de prise en charge](media/support-timeline/report-server-support-timeline-overall.png)
 
@@ -31,10 +31,11 @@ Cette stratégie de prise en charge vous permet d’offrir des innovations à vo
 
 | **Version** | **Disponibilité** | **Date de fin du support** |
 | --- | --- | --- |
-| Juin 2017 |12 juin 2017 |Non pris en charge |
-| Octobre 2017 |31 octobre 2017 |31 octobre 2018 |
+| Juin 2017 |12 juin 2017 |Plus pris en charge |
+| Octobre 2017 |31 octobre 2017 | Plus pris en charge |
 | Mars 2018 | 19 mars 2018 | 19 mars 2019 |
 | Août 2018 | 15 août 2018 | 15 août 2019 |
+| Janvier 2019 | 23 janvier 2019 | 23 janvier 2020 |
 
 Pour télécharger Power BI Report Server et Power BI Desktop optimisé pour Power BI Report Server, accédez à la page [Rapports locaux avec Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 

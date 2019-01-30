@@ -10,23 +10,23 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: acfc4062677a28824458781b900b271bedd51eb8
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: ed519f920fc872c8f13d5a10d59ce0f2f531f2fc
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488911"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147562"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
 
+- [Quelles sont les nouveautés du décisionnel dans les notes de publication du 18 octobre ](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) du groupe Microsoft Business Applications : Les dernières mises à jour de nos applications métier.
 - [Nouveautés dans Power BI Desktop](desktop-latest-update.md)  
 - [Nouveautés dans les applications mobiles pour Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/)
-- [Applications métier – Printemps 18 – Notes de publication](http://aka.ms/businessappsreleasenotes) de Dynamics 365 : les dernières mises à jour de nos applications métier, ainsi que de nouvelles fonctionnalités permettant de créer des extensions et des applications sur notre plateforme. 
 
-Vous pouvez également consulter les chaînes YouTube pour plus d’informations sur les nouveautés et les fonctionnalités.
+Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveautés et les fonctionnalités.
 
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
