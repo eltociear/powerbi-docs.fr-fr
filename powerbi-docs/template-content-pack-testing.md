@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 2ceb8440cd64b05966caaadc9346771dd28cba82
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8a5382a5e435f916599b05310f89d9b1f0327023
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281226"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430668"
 ---
 # <a name="testing-template-content-packs-for-power-bi"></a>Test des packs de contenu de modèle pour Power BI
 Il existe plusieurs façons de tester votre pack de contenu avant de le soumettre pour publication.  
@@ -68,7 +68,7 @@ Nous vous suggérons d’affecter des noms cohérents à vos tableau de bord, ra
 <a name="submission"></a>
 
 ## <a name="submission"></a>Soumission
-Le processus de soumission via [Microsoft AppSource](https://appsource.microsoft.com/en-us/partners/list-an-app) vous permet de publier votre pack de contenu de modèle dans la galerie des packs de contenu de service dans PowerBI.com, ainsi que de faire figurer votre pack de contenu dans [Microsoft AppSource](http://appsource.microsoft.com).
+Le processus de soumission via [Microsoft AppSource](https://appsource.microsoft.com/partners/list-an-app) vous permet de publier votre pack de contenu de modèle dans la galerie des packs de contenu de service dans PowerBI.com, ainsi que de faire figurer votre pack de contenu dans [Microsoft AppSource](http://appsource.microsoft.com).
 
 ### <a name="before-submission"></a>Avant la soumission
 * Passez en revue les conseils de création pour chacun des artefacts dans le pack de contenu.
@@ -77,7 +77,7 @@ Le processus de soumission via [Microsoft AppSource](https://appsource.microsoft
 * Vérifiez que le pack de contenu répond bien à Questions et réponses. Nous vous suggérons de tester au moins 30 questions variées dans le modèle de données. (Ignorez cette étape si vous avez développé votre propre [connecteur de données](https://aka.ms/DataConnectors))
 
 ### <a name="submission"></a>Soumission
-Une fois que vous êtes prêt pour l’envoi, visitez la [page relative à la soumission d’applications](https://appsource.microsoft.com/en-us/partners/list-an-app) sur AppSource et envoyez vos informations. Veillez à sélectionner Power BI dans la liste des produits disponibles.
+Une fois que vous êtes prêt pour l’envoi, visitez la [page relative à la soumission d’applications](https://appsource.microsoft.com/partners/list-an-app) sur AppSource et envoyez vos informations. Veillez à sélectionner Power BI dans la liste des produits disponibles.
 
 L’équipe Power BI vérifie votre soumission et vous recontacte pour s’assurer que tous les artefacts satisfont aux contraintes de la soumission. Outre leur caractère exhaustif, nous validons la qualité du tableau de bord et des rapports fournis, en vérifiant qu’ils satisfont au scénario d’entreprise dans l’application.
 

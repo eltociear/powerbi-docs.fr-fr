@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: f95b778daa9112324c20b0f358e21dd004092060
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 280f60d0ae60a445d94a640af974a2624c73bb83
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294033"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430001"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Marche à suivre pour les visuels Power BI avec des achats supplémentaires
 
@@ -62,7 +62,7 @@ Par souci pratique pour l’utilisateur, ajoutez des champs liés au jeton ou à
 
 ## <a name="faq"></a>FORUM AUX QUESTIONS
 
-Pour plus d’informations et des réponses à vos questions, voir [Foire aux questions sur les visuels avec achats supplémentaires](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
+Pour plus d’informations et des réponses à vos questions, voir [Foire aux questions sur les visuels avec achats supplémentaires](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#visuals-with-additional-purchases).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: b7301d46279d9b975a07b07506c023e19437631b
-ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
+ms.openlocfilehash: 771b7361efaea436d67c26ee05741f6dc3eba810
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54324040"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431243"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -37,15 +37,15 @@ Les rapports qui utilisent le nouvel « en-tête de visuel moderne » n'alloue
 
 ### <a name="enhance-presentation-mode-windows"></a>Mode de présentation amélioré (Windows)
 
-Mode de présentation amélioré pour les appareils Surface Hub et Windows 10.  Profitez d’une nouvelle expérience de salle de réunion Surface Hub. Avec des outils de présentation et de collaboration améliorés et une vue grand écran optimisée, vous pouvez mieux vous concentrer sur vos données. Ce mode de présentation fournit également des outils qui vous aideront à présenter efficacement vos informations et favoriseront les discussions autour de vos données. Cliquez [ici](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/) pour savoir plus sur le mode de présentation.
+Mode de présentation amélioré pour les appareils Surface Hub et Windows 10.  Profitez d’une nouvelle expérience de salle de réunion Surface Hub. Avec des outils de présentation et de collaboration améliorés et une vue grand écran optimisée, vous pouvez mieux vous concentrer sur vos données. Ce mode de présentation fournit également des outils qui vous aideront à présenter efficacement vos informations et favoriseront les discussions autour de vos données. Cliquez [ici](https://powerbi.microsoft.com/blog/presentation-mode-in-power-bi-windows-app/) pour savoir plus sur le mode de présentation.
 
 ### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Disposition de rapports en mode Portrait sur les tablettes (iOS et Android)
 
-Nous utilisons maintenant la disposition de rapport sur téléphone, quand elle existe, pour afficher les rapports sur votre tablette en mode portrait. En savoir plus sur la [création d’une disposition sur téléphone dans le service Power BI ou Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+Nous utilisons maintenant la disposition de rapport sur téléphone, quand elle existe, pour afficher les rapports sur votre tablette en mode portrait. En savoir plus sur la [création d’une disposition sur téléphone dans le service Power BI ou Desktop](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
 
 ### <a name="supporting-report-query-string"></a>Prise en charge d’une chaîne de requête de rapport 
 
-L’ouverture d’un lien de rapport incluant une chaîne de requête se fera désormais dans l’application mobile et sera préfiltrée selon les conditions définies dans la chaîne de requête. En savoir plus sur la [création d’une URL de rapport avec une chaîne de requête](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+L’ouverture d’un lien de rapport incluant une chaîne de requête se fera désormais dans l’application mobile et sera préfiltrée selon les conditions définies dans la chaîne de requête. En savoir plus sur la [création d’une URL de rapport avec une chaîne de requête](https://docs.microsoft.com/power-bi/service-url-filters/).  
 
 ### <a name="shared-credentials-now-in-android"></a>Informations d’identification partagées (maintenant sur Android)
 
@@ -65,7 +65,7 @@ Le menu d’actions pour les visuels du rapport (...) propose maintenant une opt
 
 Des rapports paginés sont désormais disponibles sur le service Power BI. Les utilisateurs ayant accès à des rapports paginés dans le service Power BI peuvent également accéder à ces rapports à partir de leur application mobile. 
 
-Lire le [billet de blog sur les rapports paginés dans l’application mobile](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/) de Power BI.
+Lire le [billet de blog sur les rapports paginés dans l’application mobile](https://powerbi.microsoft.com/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/) de Power BI.
 
 ### <a name="shared-credentials-ios"></a>Informations d’identification partagées (iOS)
 

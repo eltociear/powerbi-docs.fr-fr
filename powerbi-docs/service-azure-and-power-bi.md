@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/26/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 8717e4938ef558eb4bb8c0614990b651d2b59c28
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 142096ca30422549227ddc1dc2d07e129e22e9af
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277707"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430875"
 ---
 # <a name="azure-and-power-bi"></a>Azure et Power BI
 
@@ -55,7 +55,7 @@ Vous pouvez vous développer autant que nécessaire avec Azure et Power BI. Ma�
 
 ## <a name="context-insights-with-power-bi-embedded-analytics"></a>Informations de contexte avec l’analytique Power BI Embedded
 
-Incorporez des visualisations de données interactives impressionnantes dans des applications, sites web et portails, entre autres, afin de tirer parti de vos données métier. Avec [Power BI Embedded en tant que ressource dans Azure](https://azure.microsoft.com/services/power-bi-embedded/), vous pouvez incorporer facilement des rapports et tableaux de bord interactifs afin d’offrir à vos utilisateurs des expériences cohérentes et haute fidélité sur leurs divers appareils.  Utilisé avec l’incorporation d’analytique, Power BI vous aide à parcourir le processus Données ->Connaissances -> Insights -> Actions.  Vous pouvez également augmenter la valeur de Power BI Pro et d’Azure en incorporant une analytique visuelle dans des [applications et portails internes de votre organisation](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/).
+Incorporez des visualisations de données interactives impressionnantes dans des applications, sites web et portails, entre autres, afin de tirer parti de vos données métier. Avec [Power BI Embedded en tant que ressource dans Azure](https://azure.microsoft.com/services/power-bi-embedded/), vous pouvez incorporer facilement des rapports et tableaux de bord interactifs afin d’offrir à vos utilisateurs des expériences cohérentes et haute fidélité sur leurs divers appareils.  Utilisé avec l’incorporation d’analytique, Power BI vous aide à parcourir le processus Données ->Connaissances -> Insights -> Actions.  Vous pouvez également augmenter la valeur de Power BI Pro et d’Azure en incorporant une analytique visuelle dans des [applications et portails internes de votre organisation](https://powerbi.microsoft.com/developers/embedded-analytics/organization/).
 
 Vous trouverez des informations très complètes sur les API Power BI dans le [portail des développeurs Power BI](http://dev.powerbi.com).
 

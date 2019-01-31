@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: eea6fe12fdd8821c803863b63ede93179bf67f07
-ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
+ms.openlocfilehash: f477cbd5f2d767333c16a43308b4793527665806
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899247"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430783"
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 
@@ -91,7 +91,7 @@ Lorsque vous ajoutez une source de données à la passerelle, vous devez fournir
 
 * [Azure Information Protection](https://docs.microsoft.com/microsoft-365/enterprise/protect-files-with-aip
 ) n’est pas pris en charge pour l’instant.
-* L’[accès en ligne](https://products.office.com/en-us/access) n’est pas pris en charge pour l’instant.
+* L’[accès en ligne](https://products.office.com/access) n’est pas pris en charge pour l’instant.
 * Les scripts R sont pris en charge seulement si la passerelle s’exécute en mode personnel.
 
 ## <a name="tenant-level-administration"></a>Administration au niveau locataire
@@ -102,7 +102,7 @@ Si vous êtes administrateur de locataire, nous vous recommandons de demander au
 
 ## <a name="enabling-outbound-azure-connections"></a>Activation des connexions Azure sortantes
 
-La passerelle de données locale s’appuie sur le Azure Service Bus pour la connectivité cloud et établit des connexions sortantes correspondantes avec sa région Azure associée. Par défaut, il s’agit de l’emplacement de votre locataire Power BI. Consultez [Où est situé mon locataire Power BI ?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+La passerelle de données locale s’appuie sur le Azure Service Bus pour la connectivité cloud et établit des connexions sortantes correspondantes avec sa région Azure associée. Par défaut, il s’agit de l’emplacement de votre locataire Power BI. Consultez [Où est situé mon locataire Power BI ?](https://powerbi.microsoft.com/documentation/powerbi-admin-where-is-my-tenant-located/)
 Si un pare-feu bloque les connexions sortantes, vous devez le configurer de façon à autoriser les connexions sortantes de la passerelle de données locale avec la région Azure associée. Pour plus d’informations sur les plages d’adresses IP de chaque centre de données Azure, consultez [Plages d’adresses IP des centres de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653).
 > [!NOTE]
 > Les plages d’adresses IP peuvent changer au fil du temps, veillez donc à télécharger les informations les plus récentes de façon régulière. 

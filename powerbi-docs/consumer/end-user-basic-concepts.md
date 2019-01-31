@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 660f76b5bf04f742d435df928e068e434ca70531
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e8e27c55cdcd85fd9f88a3b1ad425829cfa9cf0d
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281985"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430599"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Concepts de base pour les ***consommateurs*** du service Power BI
 
@@ -37,7 +37,7 @@ Pour commencer, ouvrez juste un navigateur et tapez **app.powerbi.com**. La prem
 ![Écran d’accueil du service Power BI](media/end-user-basic-concepts/power-bi-open.png)
 
 Quand vous utiliserez Power BI, vous personnaliserez ce que vous voyez chaque fois que vous ouvrirez le site web.  Par exemple, certaines personnes aiment que Power BI s’ouvre sur la page d’accueil, tandis que d’autres ont un tableau de bord favori qu’ils veulent voir en premier. Ne vous inquiétez pas, nous allons vous apprendre comment procéder. 
-- [Accueil en préversion](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search)    
+- [Accueil en préversion](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)    
 - [Définir du contenu comme étant **par défaut**](end-user-featured.md) 
 
 ![affiche la vue de la page d’accueil et du tableau de bord](media/end-user-basic-concepts/power-bi-first.png)

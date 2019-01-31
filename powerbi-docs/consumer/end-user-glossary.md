@@ -8,12 +8,12 @@ ms.service: powerbi-service
 ms.topic: resource
 ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 1722c401dfd5d2fdfbba530f440cecf9f1e075f3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280785"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431266"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -70,7 +70,7 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 **liste de contenus** Index des contenus pour une application.
 
-**pack de contenu** Collection de jeux de données, rapports et tableaux de bord préintégrés. Désormais **apps**, découvrez [l’expérience des nouveaux espaces de travail](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
+**pack de contenu** Collection de jeux de données, rapports et tableaux de bord préintégrés. Désormais **apps**, découvrez [l’expérience des nouveaux espaces de travail](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **affichage du contenu**
 

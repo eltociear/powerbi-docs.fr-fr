@@ -10,16 +10,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cac436c97515f6b6f7b6cfc110469615e7afc4c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1ebb9633451ab8e2f1b8cbf8ada743ce6c42692e
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289274"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431128"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Éléments visuels personnalisés dans Power BI
 
-Lorsque vous créez ou modifiez un rapport Power BI, il existe plusieurs types de visuels que vous pouvez utiliser. Ces visuels s’affichent dans le volet **Visualisations**. Lorsque vous téléchargez [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) ou que vous ouvrez le [service Power BI](https://app.powerbi.com), cet ensemble de visuels est fourni par défaut.
+Lorsque vous créez ou modifiez un rapport Power BI, il existe plusieurs types de visuels que vous pouvez utiliser. Ces visuels s’affichent dans le volet **Visualisations**. Lorsque vous téléchargez [Power BI Desktop](https://powerbi.microsoft.com/desktop/) ou que vous ouvrez le [service Power BI](https://app.powerbi.com), cet ensemble de visuels est fourni par défaut.
 
 ![visualisations](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
@@ -48,16 +48,16 @@ Pour plus d’informations sur les visuels personnalisés d’une organisation, 
 
 ## <a name="marketplace-visuals"></a>Visuels de la Place de marché
 
-Les membres de la communauté, ainsi que Microsoft, ont mis à disposition du public leurs propres visuels sur la Place de marché [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals). Vous pouvez télécharger et ajouter ces visuels à des rapports Power BI. Tous ces visuels personnalisés ont été testés et approuvés par Microsoft en termes de fonctionnalité et de qualité.
+Les membres de la communauté, ainsi que Microsoft, ont mis à disposition du public leurs propres visuels sur la Place de marché [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Vous pouvez télécharger et ajouter ces visuels à des rapports Power BI. Tous ces visuels personnalisés ont été testés et approuvés par Microsoft en termes de fonctionnalité et de qualité.
 
-Qu’est-ce qu’[AppSource](developer/office-store.md) ? Il s’agit de l’endroit où vous pouvez rechercher des applications, des compléments et des extensions pour vos logiciels Microsoft. [AppSource](https://appsource.microsoft.com/en-us/) connecte des millions d’utilisateurs de produits Office 365, Azure, Dynamics 365, Cortana et Power BI à des solutions qui les aident à effectuer leur travail de façon plus efficace, intelligente et élaborée.
+Qu’est-ce qu’[AppSource](developer/office-store.md) ? Il s’agit de l’endroit où vous pouvez rechercher des applications, des compléments et des extensions pour vos logiciels Microsoft. [AppSource](https://appsource.microsoft.com/) connecte des millions d’utilisateurs de produits Office 365, Azure, Dynamics 365, Cortana et Power BI à des solutions qui les aident à effectuer leur travail de façon plus efficace, intelligente et élaborée.
 
 ### <a name="certified-visuals"></a>Visuels certifiés
 
 Les visuels certifiés Power BI sont des visuels de la Place de marché qui ont passé des tests de qualité rigoureux et qui sont pris en charge dans d’autres scénarios, notamment les [abonnements par e-mail](https://docs.microsoft.com/power-bi/service-report-subscribe) et l’[exportation vers PowerPoint](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint).
 Pour afficher la liste des visuels personnalisés certifiés ou pour soumettre les vôtres, voir [Visuels personnalisés certifiés](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified).
 
-Vous êtes un développeur web et souhaitez créer vos propres visualisations et les ajouter à AppSource ? Consultez [Développement d’un visuel personnalisé Power BI](developer/custom-visual-develop-tutorial.md) et découvrez comment [publier des visuels personnalisés dans AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
+Vous êtes un développeur web et souhaitez créer vos propres visualisations et les ajouter à AppSource ? Consultez [Développement d’un visuel personnalisé Power BI](developer/custom-visual-develop-tutorial.md) et découvrez comment [publier des visuels personnalisés dans AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Importer un visuel personnalisé à partir d’un fichier
 
@@ -135,7 +135,7 @@ Vous avez deux options pour le téléchargement et l’importation de visuels pe
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Accédez alors à la [page de résultats d’applications](https://appsource.microsoft.com/en-us/marketplace/apps) dans laquelle vous pouvez afficher les principales applications dans chaque catégorie, notamment les *applications Power BI*. Toutefois, comme vous recherchez des visuels personnalisés, limitez les résultats en sélectionnant **Visuels Power BI** dans la liste de navigation gauche.
+2. Accédez alors à la [page de résultats d’applications](https://appsource.microsoft.com/marketplace/apps) dans laquelle vous pouvez afficher les principales applications dans chaque catégorie, notamment les *applications Power BI*. Toutefois, comme vous recherchez des visuels personnalisés, limitez les résultats en sélectionnant **Visuels Power BI** dans la liste de navigation gauche.
 
     ![Visuels AppSource](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 

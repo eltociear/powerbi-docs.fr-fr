@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2bd35e5c2bc92ee660a9524754a3daef95e6e83d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 164385fc232774999a21e1870b02fcb59b74ad50
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275798"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430185"
 ---
 # <a name="card-visualizations"></a>Visualisations de carte
 Vous pouvez parfois vouloir suivre un nombre unique dans votre tableau de bord ou rapport Power BI pour l’importance qu’il représente, qu’il s’agisse du total des ventes, de la part de marché d’une année sur l’autre ou du nombre total d’opportunités. Ce type de visualisation est appelé *carte*. Avec la plupart des visualisations Power BI natives, des cartes peuvent être créées à l’aide de l’éditeur de rapport ou dans Questions et réponses.
@@ -49,7 +49,7 @@ Ces instructions s’appliquent à l’exemple Analyse de la vente au détail. P
 
 
 ## <a name="create-a-card-from-the-qa-question-box"></a>Créer une carte à partir de la zone de question Questions et réponses
-La zone de question Questions et réponses est le moyen le plus simple de créer une carte. Elle est disponible dans le service Power BI à partir d’un tableau de bord ou d’un rapport et dans l’affichage du rapport Desktop. Les étapes ci-dessous décrivent la création d’une carte à partir d’un tableau de bord dans le service Power BI. Si vous souhaitez créer une carte à l’aide de Questions et réponses dans Power BI Desktop, [suivez ces instructions](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) pour accéder à la préversion de Questions et réponses pour les rapports Power BI Desktop.
+La zone de question Questions et réponses est le moyen le plus simple de créer une carte. Elle est disponible dans le service Power BI à partir d’un tableau de bord ou d’un rapport et dans l’affichage du rapport Desktop. Les étapes ci-dessous décrivent la création d’une carte à partir d’un tableau de bord dans le service Power BI. Si vous souhaitez créer une carte à l’aide de Questions et réponses dans Power BI Desktop, [suivez ces instructions](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA) pour accéder à la préversion de Questions et réponses pour les rapports Power BI Desktop.
 
 1. Créez un [tableau de bord](../service-dashboards.md) et [obtenez des données](../service-get-data.md). Cet exemple utilise l’[exemple Analyse des opportunités](../sample-opportunity-analysis.md).
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8eb428857e98a696ffb368c729525acd80e268f2
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 001fab5caae7663a70b0f4d4272a1f9abbb1765e
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394775"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55429909"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 * Si vous avez des questions, [essayez d’interroger la communauté Power BI](http://community.powerbi.com/).
@@ -50,7 +50,7 @@ Uniquement d’un navigateur web et d’une adresse de messagerie professionnell
 Power BI ne prend pas en charge les adresses de messagerie fournies par des services de messagerie de consommateur ou par des fournisseurs de télécommunications. En savoir plus sur le [processus d’inscription en libre-service de Power BI](../service-self-service-signup-for-power-bi.md).
 
 ## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Des prix pour le secteur public, l’enseignement et les associations sont-ils proposés pour Power BI ?
-Oui, un prix est proposé pour les associations pour tout achat direct auprès de Microsoft. Vous pouvez en savoir plus et vous inscrire sur le site dédié aux [associations Microsoft](https://www.microsoft.com/en-us/nonprofits/power-bi). Une tarification pour le secteur public et l’enseignement est proposée via les programmes de licences MOSP/Direct, EA et Open. Une tarification pour le secteur public est également disponible via la syndication. 
+Oui, un prix est proposé pour les associations pour tout achat direct auprès de Microsoft. Vous pouvez en savoir plus et vous inscrire sur le site dédié aux [associations Microsoft](https://www.microsoft.com/nonprofits/power-bi). Une tarification pour le secteur public et l’enseignement est proposée via les programmes de licences MOSP/Direct, EA et Open. Une tarification pour le secteur public est également disponible via la syndication. 
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Power BI prend-il en charge les appareils mobiles ?
 Oui. Power BI a des applications natives pour les téléphones et tablettes Android, les appareils iOS et les appareils Windows 10. Téléchargez l’une des [applications mobiles Power BI](https://powerbi.microsoft.com/mobile) à partir de son Store respectif :  

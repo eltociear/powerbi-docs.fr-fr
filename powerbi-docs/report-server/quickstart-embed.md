@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: a0224188a0205cf134f2b2ee123bf5a3ac7ef0d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 01815d2e5aa7dd7f05d3a9be33ca4e458deb78ec
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288494"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55429771"
 ---
 # <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Démarrage rapide : Intégrer un rapport Power BI Report Server à l’aide d’un iFrame dans SharePoint Server
 
@@ -22,7 +22,7 @@ Dans ce démarrage rapide, vous allez apprendre à intégrer un rapport Power BI
 
 ![Exemple iFrame](media/quickstart-embed/quickstart_embed_01.png)
 ## <a name="prerequisites"></a>Conditions préalables
-* Vous devez avoir installé et configuré [Power BI Report Server](https://powerbi.microsoft.com/en-us/report-server/).
+* Vous devez avoir installé et configuré [Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 * Vous devez avoir installé [Power BI Desktop optimisé pour Power BI Report Server](install-powerbi-desktop.md).
 * Vous devez avoir un installé et configuré un environnement [SharePoint](https://docs.microsoft.com/sharepoint/install/install).
 

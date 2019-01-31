@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 52f679ee143e1009068c7de1ed9ce13e82e957dc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295371"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430438"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Limites et stratégies par type de visuel du point de données
 
@@ -40,7 +40,7 @@ Pour chaque stratégie, il existe des valeurs par défaut en fonction de la form
 ## <a name="statistics"></a>Statistiques
 Certains modèles peuvent fournir des statistiques sur le nombre de valeurs pour certaines colonnes. Lorsque ces informations sont présentes, nous en tirons parti pour fournir un meilleur équilibrage sur plusieurs hiérarchies, si un visuel ne remplace pas explicitement le nombre de valeurs pour une stratégie.
 
-Pour plus d’informations, consultez [Nouveautés dans Analysis Services](https://docs.microsoft.com/en-us/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
+Pour plus d’informations, consultez [Nouveautés dans Analysis Services](https://docs.microsoft.com/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
 
 ## <a name="dynamic-limits"></a>Limites dynamiques
 Outre les stratégies ci-dessus, les visuels avec deux hiérarchies de colonnes de regroupement (axe et légende ou catégorie et série) utilisent une stratégie supplémentaire appelée *Limites dynamiques*.  Les limites dynamiques sont conçues pour mieux équilibrer les points de données. 
@@ -128,7 +128,7 @@ Aucune stratégie de réduction
 - Valeurs : Virtualisation à l’aide d’une fenêtre de 200 lignes à la fois
 
 ### <a name="scatter-chart-high-density"></a>Graphique en nuage de points (haute densité)
-Consultez [Nuages de points à haute densité](https://docs.microsoft.com/en-us/power-bi/visuals/desktop-high-density-scatter-charts)
+Consultez [Nuages de points à haute densité](https://docs.microsoft.com/power-bi/visuals/desktop-high-density-scatter-charts)
 
 ### <a name="pie"></a>Secteurs
 - Points max. : 3,500
