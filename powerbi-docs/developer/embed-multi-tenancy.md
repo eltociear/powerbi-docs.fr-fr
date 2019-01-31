@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: d09312ecf462e557ef33851d9d2b1f91ec936dae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7bb805877cf2e7453148d667f863cbbc8b01ee52
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289207"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430714"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gérer la mutualisation avec l’analytique incorporée Power BI
 
@@ -29,7 +29,7 @@ Cet article décrit les différentes approches et les analyse en fonction de plu
 
 ## <a name="concepts-and-terminology"></a>Concepts et terminologie
 
-**[AAD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)** : Azure Active Directory.
+**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** : Azure Active Directory.
 
 **Application AAD** : identité d’application dans AAD. Une application AAD est nécessaire pour l’authentification.
 
@@ -105,7 +105,7 @@ Power BI Embedded prend en charge le déploiement multigéographique (fonctionna
 
 ### <a name="cost"></a>Cost
 
-[Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) inclut un modèle d’achat basé sur les ressources, tel que **Power BI Premium**. Vous achetez une ou plusieurs capacités avec une puissance de calcul et une mémoire fixes. Cette capacité est le facteur de coût principal lorsque vous utilisez **Power BI Embedded**. Le nombre d’utilisateurs utilisant la capacité est illimité. La seule limite concerne la performance de la capacité. Une [licence Power BI Pro](../service-admin-licensing-organization.md) est nécessaire pour chaque utilisateur *maître* ou des utilisateurs spécifiques devant accéder au portail Power BI.
+[Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/) inclut un modèle d’achat basé sur les ressources, tel que **Power BI Premium**. Vous achetez une ou plusieurs capacités avec une puissance de calcul et une mémoire fixes. Cette capacité est le facteur de coût principal lorsque vous utilisez **Power BI Embedded**. Le nombre d’utilisateurs utilisant la capacité est illimité. La seule limite concerne la performance de la capacité. Une [licence Power BI Pro](../service-admin-licensing-organization.md) est nécessaire pour chaque utilisateur *maître* ou des utilisateurs spécifiques devant accéder au portail Power BI.
 
 Nous vous recommandons de tester et de mesurer la charge prévue sur votre capacité en simulant l’environnement et l’utilisation, puis d’effectuer un test de charge sur la capacité. Vous pouvez mesurer la charge et la performance avec les diverses mesures disponibles dans la capacité Azure ou l’[application de mesures de capacité Premium](../service-admin-premium-monitor-capacity.md).
 
@@ -132,17 +132,17 @@ Deux approches principales de gestion des données du locataire sont possibles.
 
 Si le stockage de l’application SaaS conserve une base de données distincte par locataire, la solution naturelle consiste à utiliser des jeux de données à locataire unique dans Power BI avec la chaîne de connexion de chaque jeu de données pointant vers la base de données correspondante.
 
-Si le stockage de l’application SaaS utilise une base de données multi-locataire pour tous les locataires, il est facile de séparer les locataires par espace de travail. Vous pouvez configurer la connexion de base de données du jeu de données Power BI avec une requête de base de données pouvant être paramétrée qui ne récupère que les données du locataire utiles. Vous pouvez mettre à jour la connexion à l’aide de [Power BI Desktop](../desktop-query-overview.md) ou à l’aide de l’[API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) avec des [paramètres](https://docs.microsoft.com/en-us/rest/api/power-bi/datasets/updateparametersingroup) sur la requête.
+Si le stockage de l’application SaaS utilise une base de données multi-locataire pour tous les locataires, il est facile de séparer les locataires par espace de travail. Vous pouvez configurer la connexion de base de données du jeu de données Power BI avec une requête de base de données pouvant être paramétrée qui ne récupère que les données du locataire utiles. Vous pouvez mettre à jour la connexion à l’aide de [Power BI Desktop](../desktop-query-overview.md) ou à l’aide de l’[API](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) avec des [paramètres](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) sur la requête.
 
 ### <a name="data-isolation"></a>Isolation des données
 
-Dans ce modèle de location, les données sont séparées au niveau de l’espace de travail. Un mappage simple entre un espace de travail et un locataire empêche les utilisateurs d’un locataire de voir le contenu d’un autre locataire. Le recours à un utilisateur *maître* unique nécessite que vous ayez accès à l’ensemble des différents espaces de travail. La configuration des données affichées par l’utilisateur final est définie lors de la [génération du jeton incorporé](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken), un processus principal uniquement que les utilisateurs finaux ne peut pas voir ni modifier.
+Dans ce modèle de location, les données sont séparées au niveau de l’espace de travail. Un mappage simple entre un espace de travail et un locataire empêche les utilisateurs d’un locataire de voir le contenu d’un autre locataire. Le recours à un utilisateur *maître* unique nécessite que vous ayez accès à l’ensemble des différents espaces de travail. La configuration des données affichées par l’utilisateur final est définie lors de la [génération du jeton incorporé](https://docs.microsoft.com/rest/api/power-bi/embedtoken), un processus principal uniquement que les utilisateurs finaux ne peut pas voir ni modifier.
 
 Pour ajouter une isolation supplémentaire, un développeur d’applications peut définir un utilisateur *maître* ou une application par l’espace de travail plutôt qu’un utilisateur *maître* ou une application unique ayant accès à plusieurs espaces de travail. Vous pouvez ainsi vous assurer que toute erreur humaine ou fuite d’informations d’identification n’entraîne pas une exposition des données de plusieurs clients.
 
 ### <a name="scalability"></a>Extensibilité
 
-Un avantage de ce modèle est tel que la séparation des données en plusieurs jeux de données pour chaque locataire permet de pallier les [limites de taille d’un jeu de données unique](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (de 10 Go actuellement dans une capacité). Lorsque la capacité est dépassée, [les jeux de données non utilisés peuvent être supprimés](../service-premium-understand-how-it-works.md) pour libérer de la mémoire pour les jeux de données actifs. Ceci n’est pas possible avec un jeu de données volumineux unique. Grâce à plusieurs jeux de données, il est également possible de séparer les locataires entre plusieurs capacités Power BI si nécessaire. [En savoir plus sur le fonctionnement de la capacité](../service-admin-premium-manage.md).
+Un avantage de ce modèle est tel que la séparation des données en plusieurs jeux de données pour chaque locataire permet de pallier les [limites de taille d’un jeu de données unique](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (de 10 Go actuellement dans une capacité). Lorsque la capacité est dépassée, [les jeux de données non utilisés peuvent être supprimés](../service-premium-understand-how-it-works.md) pour libérer de la mémoire pour les jeux de données actifs. Ceci n’est pas possible avec un jeu de données volumineux unique. Grâce à plusieurs jeux de données, il est également possible de séparer les locataires entre plusieurs capacités Power BI si nécessaire. [En savoir plus sur le fonctionnement de la capacité](../service-admin-premium-manage.md).
 
 Malgré ces avantages, vous devez prendre en compte l’échelle que l’application SaaS peut atteindre ultérieurement. Par exemple, une application peut atteindre les limitations du nombre d’artefacts qu’elle peut effectivement gérer. Pour plus de détails, consultez les [limitations](#summary-comparison-of-the-different-approaches) de déploiement plus loin dans cet article. La référence SKU de capacité utilisée présente une limite de taille de mémoire à laquelle les jeux de données doivent s’adapter, [de nombre d’actualisations pouvant être exécutées simultanément](../service-premium-understand-how-it-works.md) et de fréquence maximale d’actualisation des données. Il est recommandé de tester lorsque vous gérez des centaines, voire des milliers, de jeux de données. Il est également recommandé de prendre en compte le volume moyen et maximal d’utilisation, ainsi que les locataires spécifiques ayant des jeux de données volumineux ou des modèles d’utilisation différents, qui sont gérés différemment des autres locataires.
 
