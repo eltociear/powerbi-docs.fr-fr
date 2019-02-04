@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 494612b9c8ef448756dfe2d516bfca68e69d2e7a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9002b1871f5e7db4ef67d4f2f77b6b8769aa1de6
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296820"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430277"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -45,6 +45,7 @@ Cet article répond aux questions fréquemment posées concernant l’administra
 * [Quels sont les éventuels autres aspects auxquels je dois être préparé ?](#are-there-any-additional-things-i-should-be-prepared-for)
 * [Où est situé mon locataire Power BI ?](#where-is-my-power-bi-tenant-located)
 * [Présentation du contrat SAL Power BI](#what-is-the-power-bi-sla)
+* [Comment Power BI gère la haute disponibilité et le basculement ?](#how-does-power-bi-handle-high-availability-and-failover)
 
 ### <a name="security-in-power-bi-section"></a>Sécurité dans la section Power BI
 
@@ -241,11 +242,15 @@ Pour plus d’informations sur la région de données où se trouve votre client
 
 Pour plus d’informations sur le contrat de niveau de service Power BI, consultez les [termes du contrat de licence et la documentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) dans la section **Gestion des licences** du site web Microsoft Licensing.
 
+### <a name="how-does-power-bi-handle-high-availability-and-failover"></a>Comment Power BI gère la haute disponibilité et le basculement ?
+
+Pour plus d’informations sur la haute disponibilité et le basculement, consultez [FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI](service-admin-failover.md).
+
 ## <a name="security-in-power-bi"></a>Sécurité dans Power BI
 
 ### <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Power BI répond-il aux exigences de conformité nationales, régionales et sectorielles ?
 
-Pour plus d’informations sur la conformité Power BI, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/en-us/TrustCenter/CloudServices/business-application-platform/default.aspx).
+Pour plus d’informations sur la conformité Power BI, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx).
 
 ### <a name="how-does-security-work-in-power-bi"></a>Comment fonctionne la sécurité dans Power BI ?
 

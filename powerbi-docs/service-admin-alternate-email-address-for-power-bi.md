@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 5998f4b63a168c3056a5464844d008bd657ef7c9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a37daca38c13cff08be13da619735214002646a3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294256"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430530"
 ---
 # <a name="using-an-alternate-email-address"></a>Utilisation d’une autre adresse e-mail
 
@@ -64,7 +64,7 @@ Power BI sélectionne l’e-mail à utiliser en fonction de la séquence suivant
 
 1. Si l’attribut de messagerie est défini dans l’objet utilisateur Azure AD, Power BI l’utilise pour l’adresse e-mail.
 
-1. Si l’adresse e-mail UPN n’est *pas* une adresse e-mail du domaine **\*.onmicrosoft.com** (informations après le symbole « @ »), Power BI utilise cet attribut de messagerie pour l’adresse e-mail.
+1. Si l’adresse e-mail UPN n’est *pas* une adresse e-mail du domaine **\*.onmicrosoft.com** (informations après le symbole « \@ »), Power BI utilise cet attribut de messagerie pour l’adresse e-mail.
 
 1. Si l’attribut de tableau *autre adresse e-mail* est défini dans l’objet utilisateur Azure AD, la première adresse e-mail de cette liste (quand plusieurs e-mails sont spécifiés dans cet attribut) est utilisée.
 

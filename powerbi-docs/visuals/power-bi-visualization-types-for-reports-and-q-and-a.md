@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/03/2018
+ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: dc756e98a58d30edd476112ca249dae032d0d79a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ee0063d5266c663079a9801777ee2c900957c52f
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296797"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234298"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 ## <a name="power-bi-visualizations"></a>Visualisations Power BI
@@ -82,6 +82,11 @@ Pour plus d’informations, consultez [Graphiques en entonnoir dans Power BI](p
 
 Pour plus d’informations, consultez [Graphiques en jauge dans Power BI](power-bi-visualization-radial-gauge-charts.md).
 
+<!-- ### Key influencers chart
+![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+
+A key influencer chart displays the major contributors to a selected result or value. -->
+
 ### <a name="kpis"></a>Indicateurs de performance clés
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
@@ -107,7 +112,7 @@ Pour plus d’informations, consultez [Trucs et astuces pour les éléments visu
 ### <a name="maps-arcgis-maps"></a>Cartes : ArcGIS Maps
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-Pour plus d’informations, consultez [Cartes ArcGIS dans Power BI](../power-bi-visualization-arcgis.md).
+Pour plus d’informations, consultez [Cartes ArcGIS dans Power BI](power-bi-visualization-arcgis.md).
 
 ### <a name="maps-filled-maps-choropleth"></a>Cartes : Cartes choroplèthes (thématiques)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -133,6 +138,13 @@ Pour plus d’informations, consultez [Visuels Matrice dans Power BI](desktop-m
 
 ### <a name="pie-charts"></a>Graphiques en secteurs
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+
+Ils montrent la relation des parties par rapport à un tout. 
+
+### <a name="ribbon-chart"></a>Graphique de ruban
+![graphique de ruban](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
+
+Ils montrent la catégorie de données qui a le rang le plus élevé (la plus grande valeur). Les graphiques de ruban sont efficaces pour l’affichage de changements de rangs, la plage (valeur) la plus élevée étant toujours affichée en première position pour chaque période de temps.
 
 ### <a name="scatter-and-bubble-charts"></a>Graphiques en nuages de points et graphiques à bulles
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)

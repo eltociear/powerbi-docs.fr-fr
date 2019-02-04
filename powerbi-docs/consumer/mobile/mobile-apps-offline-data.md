@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: 36a3026ebbdf1290d7f809f5c1ccaac7f5fbd7d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b4977bd043cec08c86fbd3c8893e8f1e185dc1fc
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292404"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430553"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Affichage de vos données hors connexion dans les applications mobiles Power BI
 S’applique à :
@@ -57,6 +57,7 @@ Les restrictions suivantes peuvent s’appliquer en mode hors connexion avec Pow
 * Les classeurs Excel entiers dans Power BI ne sont pas disponibles en mode hors connexion.
 * Vous ne pouvez voir les rapports mobiles Reporting Services et les indicateurs de performance clés en mode hors connexion que si vous les avez consultés en étant connecté. Ils ne s’actualisent pas en arrière-plan. Ils s’actualisent chaque fois que vous les ouvrez.
 * Dans les applications mobiles Power BI, vous ne pouvez pas voir les fichiers Power BI Desktop (.pbix) enregistrés dans Power BI Report Server. 
+* Les rapports paginés (RDL) ne sont pas disponibles quand le réseau est hors connexion.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Vos commentaires nous aident à développer les futurs processus d’implémentation. N’oubliez pas de voter pour les fonctionnalités que vous aimeriez voir dans les applications mobiles Power BI. 

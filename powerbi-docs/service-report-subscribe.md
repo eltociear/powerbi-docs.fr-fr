@@ -1,6 +1,6 @@
 ---
-title: S’abonner à des rapports et à des tableaux de bord dans le service Power BI
-description: Découvrez comment abonner d’autres utilisateurs à la capture instantanée d’un rapport et d’un tableau de bord Power BI.
+title: Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
+description: Découvrez comment vous abonner vous et d’autres utilisateur à un instantané de rapport ou de tableau de bord Power BI.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,32 +8,31 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/04/2018
+ms.date: 01/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 73e89b0228a1adf78bf1676749f910c6d1866a81
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: a7c9c72dfbb75958be3119db61fa3aa03ac89171
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406635"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430944"
 ---
-# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>S’abonner à un rapport ou à un tableau de bord dans le service Power BI
-Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous et abonnez vos collègues aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie un instantané dans votre boîte de réception. Indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir des e-mails : de une fois par jour à une fois par semaine. 
+# <a name="subscribe-yourself-and-others-to-a-report-or-dashboard-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à un rapport ou tableau de bord dans le service Power BI
 
-L’e-mail et l’instantané utiliseront la langue définie dans les paramètres de Power BI (cf. [Langues et pays/régions pris en charge par Power BI](supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI sélectionnera celle des paramètres régionaux du navigateur. Pour voir ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](media/service-report-subscribe/power-bi-settings-icon.png) > **Paramètres > Général > Langue**. 
+Vous pouvez vous abonner vous et vos collègues aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie un instantané dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous voulez recevoir les e-mails : une fois par jour, une fois par semaine ou après l’actualisation des données initiales.  Si vous choisissez quotidien ou hebdomadaire, vous pouvez choisir l’heure d’exécution de l’abonnement.  Vous pouvez définir jusqu’à 24 abonnements différents en tout par jour, pour chaque page de rapport et tableau de bord.
 
-![liste déroulante Langue](media/service-report-subscribe/power-bi-language.png)
+![capture instantanée d’un e-mail sur le tableau de bord](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
-Les abonnements peuvent être créés uniquement dans le service Power BI. L’e-mail que vous recevez inclut un lien « accéder au rapport ou tableau de bord ». Sur les appareils mobiles sur lesquels les applications Power BI sont installées, la sélection de ce lien lance l’application (par opposition à l’action par défaut qui ouvre le rapport ou le tableau de bord sur le site web Power BI).
-
+Vous pouvez uniquement créer des abonnements dans le service Power BI. Vous recevez un e-mail avec un instantané de la page de rapport ou du tableau de bord ainsi qu’un lien pour ouvrir le rapport ou le tableau de bord. Sur les appareils mobiles où des applications Power BI sont installées, la sélection de ce lien lance l’application Power BI au lieu d’ouvrir le rapport ou le tableau de bord sur le site web Power BI.
 
 ## <a name="requirements"></a>Configuration requise
-- La **création** d’un abonnement est une fonctionnalité Power BI Pro et vous devez avoir des autorisations de modification de contenu (tableau de bord ou rapport) pour créer cet abonnement. 
-- Comme les e-mails d’inscription sont envoyés uniquement quand un jeu de données sous-jacent est mis à jour ou actualisé, les abonnements ne fonctionnent pas sur les jeux de données qui ne se mettent pas à jour ni ne s’actualisent.
+- La **création** d’un abonnement est une fonctionnalité Power BI Pro.
+- Vous n’avez pas besoin de modifier les autorisations sur le contenu (tableau de bord ou rapport) pour créer un abonnement pour vous-même, mais vous devez avoir les autorisations de modification pour en créer un pour quelqu’un d’autre. 
+- À compter de janvier 2019, vous n’avez plus besoin de configurer l’actualisation du jeu de données pour exécuter un abonnement.  Il s’exécute indépendamment de toutes les actualisations planifiées que vous avez configurées.  
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>S’abonner à un tableau de bord ou une page de rapport
-Que vous vous abonniez à un tableau de bord ou un rapport, le processus est très similaire. Le même bouton permet de vous abonner (vous et d’autres) aux rapports et tableaux de bord du service Power BI.
+Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le même. Le même bouton vous permet de vous abonner aux rapports et aux tableaux de bord du service Power BI.
  
 ![sélectionner l’icône S’abonner](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -42,61 +41,63 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est tr�
    
    ![icône S’abonner](media/service-report-subscribe/power-bi-subscribe-icon.png)
 
-3. Utilisez le curseur jaune pour activer ou désactiver l’abonnement.  Lorsque vous définissez le curseur sur la position Désactivé, cela ne supprime pas l’abonnement. Pour supprimer l’abonnement, sélectionnez l’icône Corbeille.
+3. Utilisez le curseur jaune pour activer ou désactiver l’abonnement.  La définition du curseur sur **Désactivé** ne supprime pas l’abonnement. Pour supprimer l’abonnement, sélectionnez l’icône Corbeille.
 
-4. Renseignez les détails de l’e-mail. Votre e-mail est prérempli, mais vous pouvez en ajouter d’autres à l’abonnement. Vous pouvez ajouter uniquement des adresses e-mail du même domaine (consultez **Considérations et résolution de problèmes** ci-dessous pour plus d’informations). Si le rapport ou le tableau de bord est hébergé dans une [capacité Premium](service-premium.md), vous pouvez abonner d’autres utilisateurs en utilisant des adresses e-mail individuelles et des alias de groupe. Si le rapport ou le tableau de bord n’est pas hébergé dans une capacité Premium, vous pouvez toujours abonner d’autres utilisateurs en utilisant leurs adresses e-mail individuelles, mais ils doivent eux aussi avoir une licence Power BI Pro.
+4. Votre adresse e-mail se trouve déjà dans la zone **S’abonner**. Vous pouvez ajouter d’autres adresses e-mail à l’abonnement, mais uniquement dans le même domaine. Si le rapport ou le tableau de bord est hébergé dans une [capacité Premium](service-premium.md), vous pouvez abonner d’autres adresses e-mail individuelles et alias de groupe. Si le rapport ou le tableau de bord n’est pas hébergé dans une capacité Premium, vous pouvez abonner d’autres utilisateurs, mais ils doivent eux aussi avoir une licence Power BI Pro. Consultez [Considérations et résolution des problèmes](#considerations-and-troubleshooting) ci-dessous pour plus d’informations. 
 
-    Les captures d’écran ci-dessous montrent que, quand vous vous abonnez à un rapport, vous vous abonnez en fait à une *page* de rapport.  Pour vous abonner à plusieurs pages d’un rapport, sélectionnez **Ajouter un autre abonnement** et sélectionnez une autre page. 
+5. Renseignez les détails de l’e-mail : **Objet** et **Message**. 
+
+5. Sélectionnez une **Fréquence** pour votre abonnement : **Quotidien**, **Hebdomadaire** ou **Après l’actualisation des données (quotidien)**.  Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Hebdomadaire** et choisissez les jours auxquels vous voulez le recevoir.  Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez **Hebdomadaire** et décochez les cases **Sam** et **Dim**.  
+
+6. Si vous choisissez **Quotidien** ou **Hebdomadaire**, vous pouvez également choisir une **Heure planifiée** pour l’abonnement.  Vous pouvez choisir une exécution à une heure pile ou 15, 30 ou 45 minutes après.  Sélectionnez le matin (AM) ou l’après-midi/le soir (PM). Vous pouvez également spécifier le fuseau horaire.
+
+7. Par défaut, la date de début de votre abonnement est la date de sa création. Vous pouvez sélectionner une date de fin. Si vous ne définissez pas de date de fin, la date de fin est automatiquement un an après la date de début. Vous pouvez la remplacer par n’importe quelle date dans le futur (jusqu’à l’année 9999) à tout moment avant la fin de l’abonnement. Quand un abonnement atteint une date de fin, il s’arrête jusqu’à ce que vous le réactiviez. Vous recevez des notifications avant la date de fin planifiée pour savoir si vous voulez la prolonger.    
+
+    Dans la capture d’écran ci-dessous, vous voyez que quand vous vous abonnez à un rapport, vous vous abonnez en fait à une *page* de rapport.  Pour vous abonner à plusieurs pages d’un rapport, sélectionnez **Ajouter un autre abonnement** et sélectionnez une autre page. 
       
-   ![fenêtre S’abonner](media/service-report-subscribe/power-bi-emails-new.png)  
+   ![Volet S’abonner](media/service-report-subscribe/power-bi-subscribe-pane.png)  
 
-5. Sélectionnez **Enregistrer et fermer** pour enregistrer l’abonnement. Les abonnés reçoivent un e-mail avec un instantané du tableau de bord ou de la page de rapport chaque fois que les jeux de données sous-jacents changent. Si le tableau de bord ou le rapport s’actualise plusieurs fois par jour, l’e-mail est envoyé uniquement après la première actualisation.  
-   
-   ![capture instantanée d’un e-mail sur le tableau de bord](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
-   
+7. Sélectionnez **Enregistrer et fermer**. Les abonnés reçoivent un e-mail et un instantané du tableau de bord ou de la page de rapport à la fréquence et à l’heure que vous avez sélectionnées. Vous pouvez créer jusqu’à 24 abonnements en tout par rapport ou tableau de bord, et vous pouvez fournir des destinataires, des heures et des fréquences différents pour chaque abonnement.  Tous les abonnements définis sur **Après l’actualisation des données** pour votre tableau de bord ou rapport envoient un e-mail seulement après la première actualisation planifiée.   
+      
    > [!TIP]
-   > Vous voulez voir l’e-mail tout de suite ? Déclenchez l’envoi d’un e-mail en actualisant l’un des jeux de données associés au tableau de bord ou le jeu de données associé au rapport. (si vous n’êtes pas autorisé à modifier le jeu de données, vous devez demander à une personne disposant des autorisations nécessaires d’effectuer cette tâche pour vous). Pour identifier les jeux de données utilisés, sélectionnez l’icône **Voir les éléments associés** ![icône Voir les éléments associés](media/service-report-subscribe/power-bi-view-related.png) afin d’ouvrir le **Contenu associé**, puis sélectionnez l’icône d’actualisation![icône d’actualisation](media/service-report-subscribe/power-bi-refresh.png). 
+   > Vous voulez voir l’e-mail tout de suite ? Déclenchez l’envoi d’un e-mail en actualisant l’un des jeux de données associés au tableau de bord ou le jeu de données associé au rapport. Si vous n’avez pas d’autorisation de modification sur le jeu de données, demandez à un utilisateur qui l’a de l’actualiser pour vous. Pour voir les jeux de données associés, sélectionnez l’icône **Voir les éléments associés** ![icône Voir les éléments associés](media/service-report-subscribe/power-bi-view-related.png) afin d’ouvrir le **Contenu associé**, puis sélectionnez l’icône d’actualisation![icône d’actualisation](media/service-report-subscribe/power-bi-refresh.png). 
    > 
    > 
    
    ![Jeux de données associés](media/service-report-subscribe/power-bi-view-related-screen.png)
 
-## <a name="how-the-email-schedule-is-determined"></a>Détermination de la planification de l’envoi des e-mails
-Le tableau suivant décrit la fréquence à laquelle vous recevez un e-mail. Tout dépend de la méthode de connexion du jeu de données sur lequel le rapport ou tableau de bord est basé (DirectQuery, connexion active, importation dans Power BI ou fichier Excel dans OneDrive ou SharePoint Online) et des options d’abonnement disponibles et activées (quotidien, hebdomadaire ou aucun).
+## <a name="email-languages"></a>Langue des e-mails
 
-|  | **DirectQuery** | **Connexion active** | **Actualisation planifiée (importation)** | **Fichier Excel dans OneDrive/SharePoint Online** |
-| --- | --- | --- | --- | --- |
-| **À quelle fréquence le rapport/tableau de bord est-il actualisé ?** |Toutes les 15 minutes |Toutes les 15 minutes, Power BI vérifie si le jeu de données a changé : si c’est le cas, le rapport est actualisé. |L’utilisateur sélectionne Aucun, Quotidien ou Hebdomadaire. L’option Quotidien peut correspondre à une fréquence de 8 fois par jour. L’option Hebdomadaire correspond en fait à une planification hebdomadaire que l’utilisateur crée et pour laquelle il définit l’actualisation (de une fois par semaine à tous les jours). |Une fois par heure |
-| **Quel degré de contrôle a l’utilisateur sur la planification des e-mails d’abonnement ?** |Les options sont les suivantes : quotidienne ou hebdomadaire |Aucune option : l’utilisateur reçoit un e-mail si le rapport est actualisé, mais pas plus d’une fois par jour. |Si la planification de l’actualisation est quotidienne, les options sont Quotidienne ou Hebdomadaire.  Si la planification de l’actualisation est hebdomadaire, la seule option est Hebdomadaire. |Aucune option : l’utilisateur reçoit un e-mail dès que le jeu de données est mis à jour, mais pas plus d’une fois par jour. |
+L’e-mail et l’instantané utilisent la langue définie dans les paramètres de Power BI (voir [Langues et pays/régions pris en charge par Power BI](supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI sélectionnera celle des paramètres régionaux du navigateur. Pour voir ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](media/service-report-subscribe/power-bi-settings-icon.png) > **Paramètres > Général > Langue**. 
+
+![liste déroulante Langue](media/service-report-subscribe/power-bi-language.png)
 
 ## <a name="manage-your-subscriptions"></a>Gérer vos abonnements
 Seule la personne qui a créé l’abonnement peut le gérer.  L’écran de gestion des abonnements est accessible de 2 façons.  La première méthode consiste à sélectionner **Gérer tous les abonnements** dans la boîte de dialogue **S’abonner aux e-mails** (voir les captures d’écran ci-dessous et l’étape 4 ci-dessus). La deuxième consiste à sélectionner l’icône de roue dentée Power BI ![icône d’engrenage](media/service-report-subscribe/power-bi-settings-icon.png) dans la barre de menus supérieure et à choisir **Paramètres**.
 
 ![sélectionner Paramètres](media/service-report-subscribe/power-bi-subscribe-settings.png)
 
-Les abonnements particuliers affichés dépendent de l’espace de travail actuellement actif.  Pour afficher tous les abonnements à la fois pour tous les espaces de travail, vérifiez que **Mon espace de travail** est actif. Pour comprendre le fonctionnement des espaces de travail, consultez [Espaces de travail dans Power BI](service-create-distribute-apps.md).
+Les abonnements particuliers affichés dépendent de l’espace de travail actuellement actif.  Pour afficher tous les abonnements à la fois pour tous les espaces de travail, vérifiez que **Mon espace de travail** est actif. Pour comprendre le fonctionnement des espaces de travail, consultez [Espaces de travail dans Power BI](service-create-workspaces.md).
 
 ![afficher tous les abonnements dans Mon espace de travail](media/service-report-subscribe/power-bi-subscriptions.png)
 
-Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le rapport est supprimé par le propriétaire ou si le compte d’utilisateur qui a servi à créer l’abonnement est supprimé.
+Un abonnement se termine si la licence Pro expire, si le propriétaire supprime le tableau de bord ou le rapport, ou si le compte d’utilisateur utilisé pour créer l’abonnement est supprimé.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-* Pour les abonnements à l’e-mail du tableau de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, celles-ci ne s’affichent pas.  Pour les abonnements à l’e-mail des rapports, si le jeu de données utilise SNL, vous ne pouvez pas créer d’abonnement.
+* Pour les abonnements à l’e-mail de tableau de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, elles ne s’affichent pas.  Pour les abonnements à l’e-mail de rapport, si le jeu de données utilise SNL, vous ne pouvez pas créer d’abonnement.
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
-* Votre organisation peut configurer certains paramètres dans Azure Active Directory, pour limiter la possibilité d’utiliser des abonnements par messagerie électronique dans Power BI.  Cela inclut, sans s’y limiter, l’authentification multifacteur ou des restrictions de plage IP lors de l’accès aux ressources.
+* Votre organisation peut configurer certains paramètres dans Azure Active Directory, pour limiter la possibilité d’utiliser des abonnements par messagerie électronique dans Power BI.  Vous pouvez limiter, entre autres, l’authentification multifacteur ou les restrictions de plage IP pour l’accès aux ressources.
 * Actuellement, les abonnements aux e-mails des rapports/tableaux de bord utilisant des jeux de données à connexion active ne sont pas pris en charge quand vous abonnez des utilisateurs autres que vous-même.
-* Pour les abonnements aux e-mails sur les jeux de données de la connexion active, vous recevez uniquement des e-mails lorsque les données changent. Par conséquent, si une actualisation se produit, mais que les données ne sont pas modifiées, Power BI ne vous envoie pas d’e-mail.
-* Les abonnements aux courriers ne prennent pas en charge la plupart des [visuels personnalisés](power-bi-custom-visuals.md).  La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](power-bi-custom-visuals-certified.md).  
+* Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels personnalisés](power-bi-custom-visuals.md).  La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](power-bi-custom-visuals-certified.md).  
 * Actuellement, les abonnements aux e-mails ne prennent pas en charge les visuels personnalisés alimentés par R.  
-* Si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes du tableau de bord, celles-ci ne s’affichent pas.
+* Si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes de tableau de bord, elles ne s’affichent pas.
 * Vous ne pouvez pas abonner d’autres utilisateurs à un rapport auquel la sécurité au niveau des lignes (SNL) est appliquée.
-* Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Le changement des valeurs par défaut avant l’abonnement ne sont pas montrés dans l’e-mail.    
-* Les abonnements par courrier ne sont pas encore pris en charge sur les pages de rapport créées par la fonctionnalité de connexion active au service de Power BI Desktop.    
+* Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail.    
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge,  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     
-* Si vous partagez un tableau de bord avec un collègue extérieur à votre locataire, vous ne pouvez pas créer d’abonnement pour ce collègue. Par conséquent, si vous êtes aaron@xyz.com, vous pouvez partager avec anyone@ABC.com, mais vous ne pouvez pas encore vous abonner à anyone@ABC.com et il ne peut pas s’abonner au contenu partagé.      
+* Si vous partagez un tableau de bord avec un collègue extérieur à votre locataire, vous ne pouvez pas créer d’abonnement pour lui. Par conséquent, si vous êtes aaron@xyz.com, vous pouvez partager avec anyone@ABC.com, mais vous ne pouvez pas encore abonner anyone@ABC.com et il ne peut pas s’abonner au contenu partagé.      
 * S’il s’agit d’abonnements à des tableaux de bord ou rapports incluant de très grandes images, l’abonnement peut échouer en raison de la limite de taille de la messagerie.    
-* Power BI interrompt automatiquement l’actualisation des jeux de données associés aux tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un rapport ou un tableau de bord, il n’est pas interrompu même si le rapport ou tableau de bord n’est pas consulté.    
-* Si vous ne recevez pas les courriers d’abonnement, vérifiez que votre nom d’utilisateur principal (UPN) est en mesure d’en recevoir. [L’équipe Power BI travaille sur l’assouplissement de cette exigence](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163). Tenez-vous informé. 
+* Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un rapport ou tableau de bord, il n’est pas suspendu même si le rapport ou tableau de bord n’est pas consulté.    
+* Si vous ne recevez pas les e-mails d’abonnement, vérifiez que votre nom d’utilisateur principal (UPN) est en mesure d’en recevoir. [L’équipe Power BI travaille sur l’assouplissement de cette exigence](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163). Tenez-vous informé. 
 * Si votre tableau de bord ou rapport est dans une capacité Premium, vous pouvez utiliser des alias de messagerie de groupe pour les abonnements, au lieu d’abonner vos collègues à une seule adresse e-mail à la fois. Les alias sont basés sur l’annuaire Active Directory actuel. 
 
 ## <a name="next-steps"></a>Étapes suivantes

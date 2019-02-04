@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 01/18/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 085860fb9d8e9e01bf0694896a561f34a5627b53
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 7d76d874712f328344b60fc8b146f69e1aca55db
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394650"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234528"
 ---
 # <a name="add-comments-to-a-dashboard"></a>Ajouter des commentaires à un tableau de bord
 Ajoutez un commentaire personnel ou démarrez une conversation à propos d’un tableau de bord avec vos collègues. Les **commentaires** sont une fonctionnalité parmi d’autres qui permet à un *consommateur* de collaborer avec d’autres personnes. 
@@ -73,7 +73,7 @@ Vous pouvez ajouter des commentaires à un tableau de bord entier ou à un visue
 5. Sélectionnez **Fermer** pour revenir au tableau de bord ou au rapport.
 
 ### <a name="get-your-colleagues-attention-by-using-the--sign"></a>Attirer l’attention de vos collègues à l’aide du symbole @
-Que vous ajoutiez des commentaires à un tableau de bord ou à un visuel particulier, vous pouvez utiliser le symbole « @ » pour attirer l’attention de vos collègues.  Quand vous tapez le symbole « @ », Power BI ouvre une liste déroulante dans laquelle vous pouvez rechercher et sélectionner des personnes de votre organisation. Tout nom vérifié commençant par le symbole « @ » s’affiche en bleu. 
+Que vous ajoutiez des commentaires à un tableau de bord ou à un visuel particulier, vous pouvez utiliser le symbole « \@ » pour attirer l’attention de vos collègues.  Quand vous tapez le symbole « \@ », Power BI ouvre une liste déroulante dans laquelle vous pouvez rechercher des personnes de votre organisation et les sélectionner. Tout nom vérifié commençant par le symbole « \@ » s’affiche en bleu. 
 
 Voici une conversation avec le *concepteur* d’une visualisation. Il utilise le symbole @ pour que je voie le commentaire. Je sais que ce commentaire m’est destiné. Quand j’ouvre le tableau de bord de cette application dans Power BI, je sélectionne **Commentaires** dans l’en-tête. Le volet **Commentaires** affiche notre conversation.
 

@@ -1,5 +1,5 @@
 ---
-title: Utilisation des visualisations
+title: Utilisation des visualisations en tant que consommateur
 description: Concepts et terminologie de Power BI - visualisations, éléments visuels. Qu’est-ce qu’une visualisation, un élément visuel Power BI.
 author: mihart
 manager: kvivek
@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 875f5cef31ea61fffff29404b03af5bbbfc9f0c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5eadf12fc1b54e8f5ac657685826816f0fca318d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287629"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234344"
 ---
 # <a name="visualizations-for-power-bi-consumers"></a>Visualisations pour les **consommateurs** Power BI
 
@@ -53,4 +53,5 @@ Mais tout d’abord, parlons de Q&A. Q&A est l’outil de recherche en langage n
 
 ## <a name="next-steps"></a>Étapes suivantes
 Retour aux [Concepts de base pour les consommateurs](end-user-basic-concepts.md)    
-[Sélectionner une visualisation pour ouvrir un rapport](end-user-report-open.md)
+[Sélectionner une visualisation pour ouvrir un rapport](end-user-report-open.md)    
+[Types de visualisations disponibles dans Power BI](end-user-visual-type.md)
