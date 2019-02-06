@@ -2,21 +2,22 @@
 title: Obtenir un jeton d’accès d’authentification
 description: 'Procédure pas à pas pour transmettre des données : obtenir un jeton d’accès d’authentification'
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: 1381706801a1a817927c891fcc205950cef24cbb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 2d4e59badf394153dcb6877a270d2ecea63f5df6
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430852"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761958"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Étape 2 : Obtenir un jeton d’accès d’authentification
+
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
 À l’**étape 1** de la procédure de transmission des données à un jeu de données intitulée [Inscrire l’application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), vous avez inscrit une application cliente dans Azure AD. Pendant cette étape, vous obtenez un jeton d’accès d’authentification. Les applications Power BI sont intégrées à **Azure AD** afin d’offrir une connexion et une autorisation sécurisées pour votre application. Vous utilisez un jeton pour vous authentifier auprès d’ **Azure AD** et accéder aux ressources Power BI.
@@ -24,15 +25,16 @@ Cet article fait partie d’une procédure pas à pas pour [transmettre des donn
 Voici comment obtenir un jeton d’accès d’authentification.
 
 ## <a name="get-an-authentication-access-token"></a>Obtenir un jeton d’accès d’authentification
+
 > **REMARQUE** : Avant de commencer, veillez à suivre les étapes précédentes de la procédure pas à pas [Transmettre des données à un jeu de données](walkthrough-push-data.md).
 > 
 > 
 
 1. Dans Visual Studio 2015, créez un projet **Application console** .
 2. Installez le [package NuGet Bibliothèque d’authentification Azure AD pour .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). Pour obtenir un jeton de sécurité d’authentification dans une application .NET, vous utilisez ce package. Voici comment installer le package :
-   
+
      a. Dans Visual Studio 2015, choisissez **Outils** > **Gestionnaire de package NuGet** > **Console du Gestionnaire de package**.
-   
+
      b. Dans la **Console du Gestionnaire de package**, entrez Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 3. Ajoutez le code ci-dessous dans la classe Program {...}.
 4. Remplacez « {ClientID} » par l’ **ID client** que vous avez obtenu quand vous avez inscrit l’application. Consultez [Inscrire l’application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md).
@@ -113,6 +115,7 @@ Ci-après figure le [listing du code complet](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Listing du code complet
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
@@ -172,10 +175,10 @@ Ci-après figure le [listing du code complet](#code).
         }
     }
 
-
 [Étape suivante >](walkthrough-push-data-create-dataset.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)  
 [Inscrire une application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
 [Package NuGet Bibliothèque d’authentification Azure AD pour .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
@@ -183,4 +186,3 @@ Ci-après figure le [listing du code complet](#code).
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 [Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

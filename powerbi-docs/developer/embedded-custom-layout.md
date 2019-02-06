@@ -2,22 +2,21 @@
 title: Dispositions personnalisées avec le contenu incorporé Power BI
 description: En savoir plus sur les dispositions personnalisées lors de l’incorporation de contenu Power BI dans votre application.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
-ms.author: maghan
-ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e812fde896072762e113c81b1dd728091a8ff190
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288931"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762303"
 ---
 # <a name="custom-layouts"></a>Dispositions personnalisées
-
 
 Les dispositions personnalisées permettent d’incorporer un rapport avec une disposition différente de celle du rapport d’origine. La définition d’une nouvelle disposition varie entre la définition de la taille de page uniquement, le contrôle de la taille des visuels ou la position et la visibilité.
 
@@ -115,7 +114,6 @@ enum VisualContainerDisplayMode {
 - `width`, hauteur : Définit la nouvelle taille du visuel.
 - `displayState` : Définit la visibilité du visuel.
 
-
 ## <a name="update-layout"></a>Mettre à jour la disposition
 
 Vous pouvez utiliser la méthode updateSettings pour mettre à jour la disposition du rapport à tout moment pendant le chargement de celui-ci. Consultez [Mettre à jour les paramètres](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Update-Settings).
@@ -173,9 +171,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-
 ## <a name="see-also"></a>Voir aussi
 
 [Incorporer vos tableaux de bord, rapports et vignettes Power BI](embedding-content.md)   
 [Poser des questions à la communauté Power BI](https://community.powerbi.com/)
-

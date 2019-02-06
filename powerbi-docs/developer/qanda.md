@@ -2,21 +2,22 @@
 title: Questions et réponses dans Power BI Embedded
 description: Power BI Embedded vous permet d’incorporer Questions et réponses dans une application et permet aux utilisateurs de poser des questions en utilisant un langage naturel.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
-ms.author: maghan
-ms.openlocfilehash: 208c1e2a0e188622f989faa6ba391d9742dd7967
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 23e0f7a938116185e05e583f5c7f208efed3ca4d
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277981"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761912"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Questions et réponses dans Power BI Embedded
+
 Power BI Embedded vous permet d’incorporer Questions et réponses dans une application et permet aux utilisateurs de poser des questions en utilisant un langage naturel, ainsi que de recevoir des réponses immédiates sous forme de visuels, par exemple des graphiques.
 
 ![Question Interactive Questions et réponses dans une image incorporée](media/qanda/embedded-qanda.gif)
@@ -47,13 +48,14 @@ var qna = powerbi.embed(qnaContainer, config);
 ```
 
 ## <a name="set-question"></a>Question définie
+
 Si vous avez utilisé le **mode résultat** avec une question définie, vous pouvez injecter des questions supplémentaires dans l’image et recevoir immédiatement une réponse qui remplace le résultat précédent. Un nouveau visuel correspondant à la nouvelle question est affiché.
 
 Un exemple de cette utilisation est une liste de questions fréquentes. L’utilisateur peut parcourir les questions et obtenir des réponses au sein de la même partie incorporée.
 
 **Extrait de code pour l’utilisation du SDK JS :**  
 
-```        
+```
 // Get a reference to the embedded Q&A HTML element
 var qnaContainer = $('#qnaContainer')[0];
 
@@ -70,6 +72,7 @@ qna.setQuestion("This year sales")
 ```
 
 ## <a name="visual-rendered-event"></a>Événement rendu par un visuel
+
 Pour le mode **interactif**, l’application peut être avertie par un événement de modification des données chaque fois que le visuel affiché change de façon à refléter la requête d’entrée tapée.
 
 Écouter l’événement *visualRendered* vous permet d’enregistrer des questions pour une utilisation ultérieure. 
@@ -93,10 +96,11 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## <a name="embed-token"></a>Jeton d’incorporation
+
 Créez un jeton d’incorporation d’un jeu de données pour démarrer une partie Questions et réponses. Pour plus d’informations, consultez [Générer un jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 Pour essayer l’incorporation dans Questions et réponses, consultez l’[exemple d’incorporation JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-

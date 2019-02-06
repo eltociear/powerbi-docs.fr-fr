@@ -2,21 +2,22 @@
 title: Obtenir un jeu de données pour ajouter des lignes
 description: 'Procédure pas à pas pour transmettre des données : obtenir un jeu de données pour ajouter des lignes à une table Power BI'
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: cd7f1eabc104da7e310abbfbce2929f047f0e5d8
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: fbde44136f403e3aff0c32d8d4acef4d1970830a
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430829"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762487"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Étape 4 : Obtenir un jeu de données pour ajouter des lignes à une table Power BI
+
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
 À l’**étape 3** de la procédure Transmettre des données à un jeu de données intitulée [Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md), vous avez appelé l’opération [Créer un jeu de données](https://docs.microsoft.com/rest/api/power-bi/datasets) pour créer un jeu de données dans Power BI. Pendant cette étape, vous utilisez l’opération [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) et Newtonsoft.Json pour obtenir un ID de jeu de données. Vous utilisez l’ID de jeu de données à l’étape 4 pour ajouter des lignes à un jeu de données. 
@@ -26,14 +27,13 @@ Pour transmettre des données à un jeu de données Power BI, vous devez référ
 Voici comment obtenir un jeu de données.
 
 ## <a name="get-a-power-bi-dataset"></a>Obtenir un jeu de données Power BI
+
 > **REMARQUE** : Avant de commencer, veillez à suivre les étapes précédentes de la procédure pas à pas [Transmettre des données à un jeu de données](walkthrough-push-data.md).
-> 
-> 
 
 1. Dans le projet Application console que vous avez créé à l’étape 2 de la procédure pas à pas pour transmettre des données, [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md), installez le package NuGet Newtonsoft.Json. Voici comment installer le package :
-   
+
      a. Dans Visual Studio 2015, choisissez **Outils** > **Gestionnaire de package NuGet** > **Console du Gestionnaire de package**.
-   
+
      b. Dans la **Console du Gestionnaire de package**, entrez Install-Package Newtonsoft.Json.
 2. Une fois le package installé, ajoutez **using Newtonsoft.Json;** au fichier Program.cs.
 3. Dans le fichier Program.cs, ajoutez le code ci-dessous pour obtenir un **ID de jeu de données**.
@@ -110,6 +110,7 @@ Ci-après figure le [listing du code complet](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Listing du code complet
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -265,6 +266,7 @@ Ci-après figure le [listing du code complet](#code).
 [Étape suivante >](walkthrough-push-data-add-rows.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 [Ajouter des lignes à une table Power BI](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
 [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
@@ -273,4 +275,3 @@ Ci-après figure le [listing du code complet](#code).
 [Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

@@ -4,19 +4,20 @@ description: 'Procédure pas à pas pour transmettre des données : ajouter des
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/01/2018
-ms.openlocfilehash: 798bfbb5d1ebf127e7b958e02166dea5f1af81ef
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 52ee2dec11029f7c529362fdb44e2291846449c1
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430485"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761981"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Étape 5 : Ajouter des lignes à une table Power BI
+
 Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
 
 À l’**étape 4** de la transmission de données à un jeu de données, [Obtenir un jeu de données pour ajouter des lignes à une table Power BI](walkthrough-push-data-get-datasets.md), vous avez utilisé l’opération [Obtenir des jeux de données](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) et Newtonsoft.Json pour obtenir un ID de jeu de données. Pendant cette étape, utilisez l’ID de jeu de données avec l’opération [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) pour ajouter des lignes à un jeu de données **Power BI**. 
@@ -28,10 +29,9 @@ Quand vous appelez l’opération [PostRows](https://docs.microsoft.com/rest/api
 Voici comment ajouter des lignes à un jeu de données à l’aide de l’API Power BI.
 
 ## <a name="add-rows-to-a-power-bi-table"></a>Ajouter des lignes à une table Power BI
+
 > [!NOTE]
 > Avant de commencer, veillez à suivre les étapes précédentes de la procédure pas à pas [Transmettre des données à un jeu de données](walkthrough-push-data.md).
-> 
-> 
 
 1. Dans le projet d’application console que vous avez créé à l’étape 2 : Procédure pas à pas pour effectuer une transmission de données de type push, [Obtenir un jeton d’accès d’authentification](walkthrough-push-data-get-token.md), ajoutez le code ci-dessous.
 2. Exécutez l’application console, puis connectez-vous à votre compte Power BI. Les **lignes ajoutées** doivent apparaître dans la fenêtre de console. Vous pouvez également vous connecter à Power BI pour voir les lignes ajoutées au jeu de données.
@@ -57,7 +57,8 @@ Ajoutez ce code dans le fichier Program.cs.
   
        //Add rows to a Power BI table
        AddRows(datasetId, "Product");
-   }     
+   }
+
   ```
 * Ajoutez une méthode AddRows() :
 
