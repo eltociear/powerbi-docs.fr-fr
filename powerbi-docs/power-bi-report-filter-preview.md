@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 01/30/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: be6496f6445c78250c17c98ac4b343eb0b0a0c66
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 13ab7ccf690c834168da8f9c6dcb0932178651ca
+ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290012"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55482703"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>La nouvelle expérience de filtre dans les rapports Power BI (préversion)
 
@@ -108,7 +108,7 @@ Vous pouvez également mettre en forme ces éléments pour les cartes de filtre,
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Afficher les filtre pour un visuel en mode Lecture
 
-En mode Lecture, vous pouvez pointer sur un visuel et afficher une fenêtre contextuelle avec tous les filtres, les segments et ainsi de suite, qui affectent ce visuel. La mise en forme de la fenêtre contextuelle est identique à la mise en forme du volet de filtre. 
+En mode Lecture, pointez sur l’icône de filtre d’un visuel pour voir une fenêtre contextuelle avec tous les filtres, les segments et ainsi de suite, qui affectent ce visuel. La mise en forme de la fenêtre contextuelle est identique à la mise en forme du volet de filtre. 
 
 ![Filtres affectant un visuel](media/power-bi-report-filter-preview/power-bi-filter-per-visual.png)
 

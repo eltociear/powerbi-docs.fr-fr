@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/31/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 3f9195ecb4b8679ab65ad6535a85d4d271582d7d
+ms.sourcegitcommit: e05b3863c7758f639894d771193b98b12b93022a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234436"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55648694"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -40,6 +40,14 @@ URL?filter=***Tableau***/***Champ*** eq '***valeur***'
 
 * Les noms de **Table** et de **Champ** sont sensibles à la casse, mais pas la **valeur**.
 * Les champs masqués dans l’affichage Rapport peuvent également être filtrés.
+
+### <a name="reports-in-apps"></a>Rapports dans les applications
+
+Si vous souhaitez ajouter un filtre d’URL à un rapport d’une application, la mise en forme est un peu différente. Les liens vers les rapports d’une application ont un paramètre de requête (ctid) qui est ajouté à l’URL. Les paramètres de requête doivent être séparés par une esperluette (&). Donc, vous devez ajouter la requête avec « &filter= »(après le paramètre ctid) au lieu de « ?filter= ». 
+
+Comme dans cet exemple :
+
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
 
 ### <a name="field-types"></a>Types de champ
 
@@ -118,10 +126,10 @@ Un filtre d’URL Power BI peut inclure des nombres dans les formats suivants.
 |Type de nombre  |Example  |
 |---------|---------|
 |**integer**     |   5      |
-|**long**     |   5L ou 5l      |
+|**long**     |   5 L ou 5 l      |
 |**double**     |   5,5 ou 55e-1 ou 0,55e+1 ou 5D ou 5d ou 0,5e1D ou 0,5e1d ou 5,5D ou 5,5d ou 55e-1D ou 55e-1d     |
-|**decimal**     |   5M ou 5m ou 5,5M ou 5,5m      |
-|**float**     | 5F ou 5f ou 0,5e1F ou 0,5e-1d        |
+|**decimal**     |   5 M ou 5 m ou 5.5 M ou 5.5 m      |
+|**float**     | 5 F ou 5 f ou 0.5e1 F ou 0.5e-1 d        |
 
 ### <a name="date-data-types"></a>Types de données date
 
