@@ -2,21 +2,22 @@
 title: Installer Power BI Desktop optimisé pour Power BI Report Server
 description: Découvrez comment installer Power BI Desktop optimisé pour Power BI Report Server
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/24/2019
-ms.author: maggies
-ms.openlocfilehash: c118e3c2f8b30635982a37c47da9fb9e337aff05
-ms.sourcegitcommit: d12d84583e65ebecc8aa947b0cd5720cffdc7978
+ms.openlocfilehash: 63550950b21231909c32ac63f5f2930ebf93c0af
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54907515"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762211"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installer Power BI Desktop optimisé pour Power BI Report Server
+
 Découvrez comment installer Power BI Desktop optimisé pour Power BI Report Server.
 
 Afin de créer des rapports Power BI pour Power BI Report Server, vous devez télécharger et installer Power BI Desktop optimisé pour Power BI Report Server. Il s’agit d’une version différente de Power BI Desktop utilisée avec le service Power BI. Par exemple, la version de Power BI Desktop pour le service Power BI présente des fonctionnalités en préversion qui ne sont pas dans la version Power BI Report Server tant qu’elles ne sont pas publiées. Elle est nécessaire pour s’assurer que le serveur de rapports peut interagir avec une version connue des rapports et du modèle. 
@@ -44,7 +45,7 @@ Le moyen le plus simple d’avoir la version la plus récente de Power BI Deskto
 1. Après avoir téléchargé le programme d’installation, exécutez l’Assistant Installation de Power BI Desktop (janvier 2019).
 
 2. À l’issue de l’installation, cochez **Démarrer Power BI Desktop maintenant**.
-   
+
     Power BI Desktop démarre et vous pouvez l’utiliser.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Vérifier que vous utilisez la version correcte
@@ -64,9 +65,11 @@ Vous pouvez toujours commencer par ouvrir la version de Power BI Desktop que vou
 La modification d’un rapport Power BI à partir de Power BI Report Server, ou la création d’un rapport Power BI à partir du portail web, ont toujours pour effet d’ouvrir la version appropriée de Power BI Destop.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
+
 Les rapports Power BI dans Power BI Report Server, dans le service Power BI (http://app.powerbi.com) et dans les applications mobiles Power BI fonctionnent pratiquement de la même manière, mais certaines fonctionnalités diffèrent.
 
 ### <a name="in-a-browser"></a>Dans un navigateur
+
 Les rapports Power BI Report Server prennent en charge toutes les visualisations, à savoir :
 
 * Éléments visuels personnalisés
@@ -79,6 +82,7 @@ Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalit�
 * Fonctionnalités en préversion Power BI Desktop
 
 ### <a name="in-the-power-bi-mobile-apps"></a>Dans les applications mobiles Power BI
+
 Les rapports Power BI Report Server prennent en charge toutes les fonctionnalités de base des [applications mobiles Power BI](../consumer/mobile/mobile-apps-for-mobile-devices.md), à savoir :
 
 * [Disposition des rapports pour téléphone](../desktop-create-phone-report.md) : Vous pouvez optimiser un rapport pour les applications mobiles Power BI. Sur votre téléphone mobile, les rapports optimisés ont une icône ![icône de disposition de rapport sur téléphone](media/install-powerbi-desktop/power-bi-rs-mobile-optimized-icon.png) et une disposition spéciales.
@@ -100,10 +104,10 @@ Si votre serveur de rapports est d’une version antérieure, vous avez besoin d
 - Microsoft Power BI Desktop ([optimisé pour Power BI Report Server - août 2018](https://www.microsoft.com/download/details.aspx?id=57271))
 
 ## <a name="next-steps"></a>Étapes suivantes
+
 À présent que Power BI Desktop est installé, vous pouvez commencer à créer des rapports Power BI.
 
 [Créer un rapport Power BI pour Power BI Report Server](quickstart-create-powerbi-report.md)  
 [Présentation de Power BI Report Server](get-started.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-
