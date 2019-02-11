@@ -8,15 +8,15 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
-ms.openlocfilehash: 785461290493db59c534a58b548620b6d2f58cd7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: f50305eed647bfc94bc5c19ee1a298cb9ac9c782
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284170"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762694"
 ---
-# <a name="use-row-level-security-with-power-bi-embedded-content"></a>Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
+# <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
 La **sécurité au niveau des lignes** peut être utilisée pour restreindre l’accès aux données dans des tableaux de bord, vignettes, rapports et jeux de données. Différents utilisateurs peuvent travailler sur ces mêmes artefacts tout en voyant des données différentes. L’incorporation prend en charge la sécurité au niveau des lignes.
 
@@ -247,7 +247,7 @@ Les clients qui conservent leurs données dans **Azure SQL Database** bénéfici
 
 Lorsque vous générez le jeton d’incorporation, vous pouvez spécifier l’identité effective d’un utilisateur dans Azure SQL. Vous pouvez spécifier l’identité effective d’un utilisateur en passant le jeton d’accès AAD au serveur. Le jeton d’accès est utilisé pour extraire uniquement les données pertinentes pour cet utilisateur à partir d’Azure SQL pour cette session spécifique.
 
-Il peut être utilisé pour gérer l’affichage de chaque utilisateur dans Azure SQL ou se connecter à Azure SQL en tant que client spécifique dans une base de données multi-locataire. Il peut également être utilisé pour appliquer la sécurité au niveau des lignes sur cette session dans Azure SQL et récupérer uniquement les données pertinentes pour cette session, ce qui évite d’avoir à gérer la SNL dans Power BI.
+Il peut être utilisé pour gérer l’affichage de chaque utilisateur dans Azure SQL ou se connecter à Azure SQL en tant que client spécifique dans une base de données multi-locataire. Il peut également appliquer la sécurité au niveau des lignes sur cette session dans Azure SQL et récupérer uniquement les données pertinentes pour cette session, ce qui évite d’avoir à gérer la SNL dans Power BI.
 
 Ces problèmes d’identité effective s’appliquent à des règles SNL directement sur le serveur Azure SQL. Power BI Embedded utilise le jeton d’accès fourni lors de l’interrogation des données à partir du serveur Azure SQL. L’UPN de l’utilisateur (pour lequel le jeton d’accès a été fourni) est accessible suite à la fonction SQL USER_NAME().
 
@@ -307,6 +307,18 @@ La valeur fournie dans le blob d’identité doit être un jeton d’accès vali
    > Pour pouvoir créer un jeton d’accès pour Azure SQL, l’application doit avoir l’autorisation déléguée **Accéder à Azure SQL Database et Data Warehouse** à l’API **Azure SQL Database** sur la configuration de l’inscription d’application AAD dans le portail Azure.
 
    ![Inscriptions des applications](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+
+## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Passerelle de données locale avec principal de service (préversion)
+
+Les clients qui configurent la sécurité au niveau des lignes (SNL) à l’aide d’une source de données à connexion active locale SSAS (SQL Server Analysis Services) peuvent bénéficier de la nouvelle fonctionnalité du [principal de service](embed-service-principal.md) pour gérer les utilisateurs et leur accès aux données dans SSAS lors de l’intégration à **Power BI Embedded**.
+
+L’utilisation des [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/) vous permet de spécifier l’identité effective des connexions actives locales SSAS pour un jeton d’incorporation à l’aide d’un [objet de principal de service](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object).
+
+Jusqu’à présent, pour pouvoir spécifier l’identité effective d’une connexion active locale SSAS, l’utilisateur principal générant le jeton d’incorporation devait être administrateur de passerelle. Désormais, au lieu d’exiger que l’utilisateur soit administrateur de passerelle, ce dernier peut accorder à l’utilisateur une autorisation dédiée à cette source de données. L’utilisateur peut ainsi remplacer l’identité effective au moment de la génération du jeton d’incorporation. Cette nouvelle fonctionnalité permet l’incorporation de contenu avec un principal de service pour une connexion SSAS active.
+
+Pour activer ce scénario, l’administrateur de passerelle utilise l’[API REST d’ajout d’utilisateur à la source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/adddatasourceuser) afin de donner au principal de service l’autorisation *ReadOverrideEffectiveIdentity* pour Power BI Embedded.
+
+Vous ne pouvez pas définir cette autorisation à l’aide du portail d’administration. Cette autorisation est définie uniquement avec l’API. Dans le portail d’administration, vous voyez une indication pour les utilisateurs et les SPN disposant de telles autorisations.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

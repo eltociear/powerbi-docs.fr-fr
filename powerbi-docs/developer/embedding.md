@@ -1,6 +1,6 @@
 ---
 title: Analytique intégrée avec Power BI
-description: Power BI fournit des API pour utiliser l’analytique intégrée pour vos tableaux de bord et rapports dans des applications. En savoir plus sur l’incorporation avec Power BI à la fois dans un environnement PaaS et un environnement SaaS à l’aide de logiciels d’analytique intégrés, d’outils d’analytique intégrés ou d’outils d’analyse décisionnelle intégrés.
+description: Power BI offre des API pour utiliser l’analytique incorporée pour vos tableaux de bord et vos rapports dans des applications. En savoir plus sur l’incorporation avec Power BI à la fois dans un environnement PaaS et un environnement SaaS à l’aide de logiciels d’analytique intégrés, d’outils d’analytique intégrés ou d’outils d’analyse décisionnelle intégrés.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: overview
 ms.custom: seodec18
-ms.date: 12/10/2018
-ms.openlocfilehash: b333ed96fe14ed7bbc91869e507a8e76504b6a5f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: ca159fb8cea26f4c707aabc99d9fa2c308a32e1a
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288126"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762441"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Analytique intégrée avec Power BI
 
@@ -32,15 +32,15 @@ Choisissez la solution qui vous convient :
 
 ## <a name="using-apis"></a>Avec des API
 
-Les deux principaux scénarios d’incorporation de contenu Power BI sont les suivants :  Incorporation pour les utilisateurs de votre organisation (disposant de licences Power BI) et incorporation pour les utilisateurs et les clients sans que ceux-ci aient besoin de licences Power BI. L’API REST Power BI est adaptée aux deux scénarios.
+Les deux principaux scénarios d’incorporation de contenu Power BI sont les suivants : Incorporation pour les utilisateurs de votre organisation (disposant de licences Power BI), et incorporation pour les utilisateurs et les clients sans que ceux-ci aient besoin de licences Power BI. L’API REST Power BI est adaptée aux deux scénarios.
 
-Pour les clients et utilisateurs sans licence Power BI, vous pouvez incorporer des tableaux de bord et des rapports dans votre application personnalisée, en utilisant la même API pour votre organisation ou vos clients. Vos clients voient les données qui sont gérées par l’application. Les utilisateurs de Power BI de votre organisation, quant à eux, disposent des options supplémentaires pour afficher *leurs données* directement dans Power BI ou dans le contexte de l’application incorporée. Vous pouvez tirer pleinement parti des API JavaScript et REST pour vos besoins d’incorporation.
+Pour les clients et utilisateurs sans licence Power BI, vous pouvez incorporer des tableaux de bord et des rapports dans votre application personnalisée, en utilisant la même API pour votre organisation ou vos clients. Vos clients voient les données qui sont gérées par l’application. Les utilisateurs de Power BI de votre organisation disposent quant à eux d’options supplémentaires pour afficher *leurs données* directement dans Power BI ou dans le contexte de l’application incorporée. Vous pouvez tirer pleinement parti des API JavaScript et REST pour vos besoins d’incorporation.
 
 Reportez-vous à [Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo/) pour consulter un exemple d’incorporation.
 
 ## <a name="embedding-for-your-organization"></a>Incorporation pour votre organisation
 
-**L’incorporation pour votre organisation** vous permet d’étendre le service Power BI. L’incorporation pour votre organisation nécessite que les utilisateurs de votre application se connectent au service Power BI quand ils veulent voir leur contenu. Une fois qu’un utilisateur de votre organisation est connecté, il a uniquement accès aux tableaux de bord et rapports dont il est propriétaire ou qui ont été partagés avec lui dans le service Power BI.
+**L’incorporation pour votre organisation** vous permet d’étendre le service Power BI. L’incorporation pour votre organisation nécessite que les utilisateurs de votre application se connectent au service Power BI quand ils veulent voir le contenu. Une fois qu’un utilisateur de votre organisation est connecté, il a accès seulement aux tableaux de bord et aux rapports dont il est propriétaire, ou que quelqu’un a partagés avec lui dans le service Power BI.
 
 *Des applications internes comme [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [l’intégration de Microsoft Teams (vous devez disposer de droits d’administrateur)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) et [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) sont des exemples d’incorporation pour votre organisation.*
 
@@ -62,7 +62,11 @@ Vous pouvez accéder à [l’outil de configuration de l’incorporation](https:
 
 Power BI Embedded présente des avantages pour les éditeurs ISV, leurs développeurs et leurs clients. Par exemple, ils peuvent commencer à créer des visuels gratuitement avec Power BI Desktop. Les éditeurs ISV peuvent réaliser une mise sur le marché plus rapide en réduisant au minimum leurs efforts de développement analytique de visuels et se démarquer de la concurrence avec des expériences avec les données qui font la différence. Ils peuvent aussi choisir de facturer un supplément pour la valeur ajoutée créée avec l’analytique incorporée.
 
-Avec Power BI Embedded, vos clients n’ont pas à se soucier de Power BI. Vous avez seulement besoin d’un compte Power BI Pro pour créer une application incorporée. Ce compte sert de compte principal pour votre application (vous pouvez considérer qu’il s’agit d’un compte proxy). Ce compte Power BI Pro vous permet également de générer les jetons d’incorporation qui offrent un accès aux tableaux de bord et rapports au sein du service Power BI qui sont gérés ou possédés par votre application.
+Avec Power BI Embedded, vos clients n’ont pas à se soucier de Power BI. Vous pouvez utiliser deux méthodes différentes pour créer une application incorporée. Une option consiste à utiliser un compte Power BI Pro. Une autre option consiste à utiliser un principal du service. 
+
+Ce compte sert de compte principal pour votre application (vous pouvez considérer qu’il s’agit d’un compte proxy). Ce compte Power BI Pro vous permet de générer les jetons d’incorporation qui donnent accès aux tableaux de bord et aux rapports au sein du service Power BI, et qui sont la propriété de votre application et gérés par elle.
+
+Un [principal du service](embed-service-principal.md) peut incorporer du contenu Power BI dans une application en utilisant un jeton **application uniquement**. Un principal du service vous permet de générer des jetons d’incorporation qui donnent accès aux tableaux de bord et aux rapports au sein du service Power BI, et qui sont la propriété de votre application et gérés par elle.
 
 Les développeurs utilisant Power BI Embedded peuvent consacrer du temps à la fonction première de leur application, au lieu de le passer à développer des visuels et de l’analytique. Les développeurs peuvent rapidement répondre aux demandes de rapport et de tableau de bord des clients et incorporer facilement des kits SDK et des API entièrement documentés. En facilitant l’exploration de données dans les applications, les éditeurs indépendants de logiciels permettent aux clients de prendre des décisions rapides en fonction des données et du contexte, sur n’importe quel appareil.
 
@@ -71,7 +75,7 @@ Les développeurs utilisant Power BI Embedded peuvent consacrer du temps à la f
 
 Quand vous êtes prêt à passer en mode de production, vous devez affecter une capacité dédiée à votre espace de travail d’application. Power BI Embedded dans Microsoft Azure offre des [capacités dédiées](azure-pbie-create-capacity.md) à utiliser avec vos applications.
 
-Pour plus d’informations sur l’incorporation, consultez [Comment incorporer vos tableaux de bord, rapports et vignettes Power BI](embed-sample-for-customers.md).
+Pour plus d’informations sur l’incorporation, consultez [Guide pratique pour incorporer du contenu Power BI](embed-sample-for-customers.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

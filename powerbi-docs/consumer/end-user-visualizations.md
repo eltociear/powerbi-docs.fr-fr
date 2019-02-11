@@ -8,17 +8,17 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 01/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5eadf12fc1b54e8f5ac657685826816f0fca318d
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: f7e83c2d0cd2f1c3344bf61f9f90ca43f09f7189
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234344"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794297"
 ---
-# <a name="visualizations-for-power-bi-consumers"></a>Visualisations pour les **consommateurs** Power BI
+# <a name="interact-with-visualizations-in-reports-dashboards-and-apps"></a>Interagir avec les visualisations dans les rapports, les tableaux de bord et les applications
 
 Dans sa version la plus basique, une ***visualisation*** (ou *élément visuel*), est un type de graphique créé par les *concepteurs* Power BI à l’aide des données dans les *rapports* et les *jeux de données*. 
 
@@ -27,13 +27,14 @@ Dans sa version la plus basique, une ***visualisation*** (ou *élément visuel*)
 
 ## <a name="what-can-i-do-with-visualizations"></a>Que puis-je faire avec les visualisations ?
 
-Les visualisations sont créées par des *concepteurs* de rapport et de tableau de bord, et partagés avec les *consommateurs*. En tant que consommateur, vous disposez de nombreuses options pour interagir avec les visualisations pour découvrir des insights et prendre des décisions métier pilotées par les données. Toutes ces options sont répertoriées ci-dessous avec des liens vers des instructions pas à pas.
+Les visualisations sont créées par des *concepteurs* de rapport et de tableau de bord, et partagés avec les *consommateurs*. En tant que consommateur, vous disposez de nombreuses options pour interagir avec les visualisations pour découvrir des insights et prendre des décisions métier pilotées par les données. Toutes ces options sont listées dans le tableau ci-dessous avec des liens vers des instructions pas à pas.
 
-Mais tout d’abord, parlons de Q&A. Q&A est l’outil de recherche en langage naturel de Power BI. Vous tapez une question à l’aide du langage naturel et Q&A répond à la question sous la forme d’une visualisation. Q&A est un moyen pour les consommateurs de créer leurs propres visualisations. Toutefois, les visualisations que vous créez avec Q&A ne peut pas être enregistrées. Mais Q&A constitue une excellente option si vous voulez apprendre quelque chose de spécifique sur les données et que le concepteur n’a pas inclus cet élément dans un rapport ou un tableau de bord. Pour en savoir plus sur Q&A, consultez [Q&A pour les consommateurs](end-user-q-and-a.md).
+> [!IMPORTANT]
+> Mais tout d’abord, parlons de Q&A. Q&A est l’outil de recherche en langage naturel de Power BI. Vous tapez une question à l’aide du langage naturel et Q&A répond à la question sous la forme d’une visualisation. Q&A est un moyen pour les consommateurs de créer leurs propres visualisations. Toutefois, les visualisations que vous créez avec Q&A ne peut pas être enregistrées. Mais Q&A constitue une excellente option si vous voulez apprendre quelque chose de spécifique sur les données et que le concepteur n’a pas inclus cet élément dans un rapport ou un tableau de bord. Pour en savoir plus sur Q&A, consultez [Q&A pour les consommateurs](end-user-q-and-a.md).
 
 
 
-|Colonne1  |Sur un tableau de bord  |Dans un rapport  | Dans Q&A
+|Tâche  |Sur un tableau de bord  |Dans un rapport  | Dans Q&A
 |---------|---------|---------|--------|
 |[Ajouter des commentaires à une visualisation pour vous-même ou démarrer une conversation avec des collègues sur la visualisation](end-user-comment.md).     |  oui       |   Non      |  non  |
 |[Ouvrir et explorer le rapport où la visualisation a été créée](end-user-tiles.md).     |    oui     |   N/A      |  N/A |

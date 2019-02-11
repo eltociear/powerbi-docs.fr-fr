@@ -4,18 +4,17 @@ description: Découvrez comment déployer du contenu vers des centres de donnée
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/31/2018
-LocalizationGroup: Embedded
-ms.openlocfilehash: ab1b0f7ea7dbee13f39fbf47505a00e2ed6d41ea
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: 25627709af2faa78fd30b28cffba21d1442e0d3f
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280421"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762418"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Prise en charge de zones géographiques multiples pour Power BI Embedded (préversion)
 
@@ -56,7 +55,9 @@ Vous ne pouvez pas modifier un emplacement de ressource Power BI Embedded une fo
 Pour déplacer votre contenu Power BI vers une autre région, procédez comme suit :
 
 1. [Créez une nouvelle capacité](azure-pbie-create-capacity.md) dans une autre région.
+
 2. Affectez tous les espaces de travail de la capacité existante à la nouvelle capacité.
+
 3. Supprimez ou suspendez l’ancienne capacité.
 
 Il est important de noter que si vous décidez de supprimer une capacité sans réaffecter son contenu, tout le contenu de cette capacité se déplace vers une capacité partagée qui se trouve dans votre région d’origine.
@@ -66,7 +67,9 @@ Il est important de noter que si vous décidez de supprimer une capacité sans r
 Pour prendre en charge la gestion des capacités avec des zones géographiques multiples via l’API, nous avons apporté des modifications aux API existantes :
 
 1. **[Obtenir des capacités](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)**  : l’API retourne une liste des capacités accessibles à l’utilisateur. La réponse inclut désormais une propriété supplémentaire appelée « région », qui spécifie l’emplacement de la capacité.
-2. **[Affecter à la capacité](https://docs.microsoft.com/rest/api/power-bi/capacities)**  : l’API permet d’affecter un espace de travail donné à une capacité. Cette opération ne vous autorise pas à affecter des espaces de travail à une capacité en dehors de votre région d’origine, ni à déplacer des espaces de travail entre des capacités dans différentes régions. Pour effectuer cette opération, l’utilisateur a toujours besoin d’autorisations d’administration pour l’espace de travail, ainsi que d’autorisations d’administration ou d’affectation pour la capacité cible.
+
+2. **[Affecter à la capacité](https://docs.microsoft.com/rest/api/power-bi/capacities)**  : l’API permet d’affecter un espace de travail donné à une capacité. Cette opération ne vous autorise pas à affecter des espaces de travail à une capacité en dehors de votre région d’origine, ni à déplacer des espaces de travail entre des capacités dans différentes régions. Pour effectuer cette opération, l’utilisateur ou le [principal du service](embed-service-principal.md) a toujours besoin d’autorisations d’administration sur l’espace de travail, ainsi que d’autorisations d’administration ou d’affectation sur la capacité cible.
+
 3. **[API Azure Resource Manager](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)**  : toutes les opérations d’API Azure Resource Manager, y compris *Créer* et *Supprimer*, prennent en charge des zones géographiques multiples.
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations

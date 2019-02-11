@@ -9,15 +9,15 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 12/10/2018
-ms.openlocfilehash: 790c06dd84d7db3a382ef547c8fcc16237273951
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 69ce8088903cbdddef504dbf5e9b2ecc2a8ab9d4
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431151"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762671"
 ---
-# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Tutoriel : Incorporer un tableau de bord, une vignette ou un rapport Power BI dans votre application pour les clouds souverains
+# <a name="tutorial-embed-a-power-bi-content-into-your-application-for-sovereign-clouds"></a>Tutoriel : Incorporer du contenu Power BI dans votre application pour des clouds souverains
 
 Découvrez comment incorporer du contenu analytique dans vos applications de processus d’entreprise pour le cloud souverain. Vous pouvez utiliser le kit de développement logiciel (SDK) .NET Power BI avec l’API JavaScript Power BI pour incorporer un rapport, un tableau de bord ou une vignette dans vos applications web.
 
@@ -37,7 +37,7 @@ Les différents clouds souverains sont :
 
 ![Tableau de bord incorporé](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un **compte Power BI**. Si vous n’avez pas configuré de compte, alors selon le type de cloud souverain, vous pouvez vous inscrire pour un [compte Power BI pour le gouvernement américain](../service-govus-signup.md), un [compte cloud Power BI pour l’Allemagne](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) ou un [compte cloud Power BI pour la Chine](http://www.21vbluecloud.com/powerbi/).
+Pour vous familiariser avec cette procédure pas à pas, vous avez besoin d’un **compte Power BI**. Si vous n’avez pas configuré de compte, alors selon le type de gouvernement ou de pays, vous pouvez choisir le cloud souverain adapté à vos besoins. Vous pouvez vous inscrire pour obtenir un [compte Power BI pour l’État fédéral américain](../service-govus-signup.md), un [compte cloud Power BI pour l’Allemagne](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) ou un [compte cloud Power BI pour la Chine](http://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
 > Vous voulez plutôt incorporer un tableau de bord s’adressant à votre organisation ? Consultez [Intégrer un tableau de bord dans une application pour votre organisation](integrate-dashboard.md).
@@ -229,7 +229,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 ### <a name="create-the-embed-token"></a>Créer le jeton incorporé
 
-En utilisant l’API JavaScript, vous pouvez générer un jeton d’incorporation. Le jeton d’incorporation est propre à l’élément incorporé. Chaque fois que vous incorporez un élément de contenu Power BI, vous devez lui créer un jeton d’incorporation. Pour en savoir plus, notamment sur les niveaux d’accès (**accessLevel**) à utiliser, consultez [Incorporer un jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+En utilisant l’API JavaScript, vous pouvez générer un jeton d’incorporation. Le jeton d’incorporation est propre à l’élément incorporé. Chaque fois que vous incorporez un élément de contenu Power BI, vous devez créer un jeton d’incorporation associé à cet élément. Pour en savoir plus, notamment sur les niveaux d’accès (**accessLevel**) à utiliser, consultez [Incorporer un jeton](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
 > Étant donné que les jetons d’incorporation sont uniquement destinés aux tests de développeur, le nombre de jetons d’incorporation qu’un compte principal Power BI peut générer est limité. Vous [devez acheter une capacité](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) pour les scénarios d’incorporation de production. Une fois une capacité achetée, la génération de jetons incorporés n’est pas limitée.

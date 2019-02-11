@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 174886acf1d827497b48d660bb89e2b4057b09b9
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234586"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794846"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 Les visualisations apparaissent dans les rapports, les tableaux de bord, les applications et Questions et réponses. Certains types de visualisation sont inclus dans Power BI et d’autres sont des *visuels personnalisés*. Les visuels personnalisés sont créés en dehors de Power BI de façon à permettre aux *concepteurs de rapports* de les ajouter aux rapports, tableaux de bord et applications Power BI. 
@@ -26,7 +26,7 @@ Cet article est une vue d’ensemble des visualisations incluses dans Power BI. 
 > Pour en savoir plus sur les visuels personnalisés, recherchez-les dans la section **Visuels Power BI** de [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Pour chaque visuel, vous avez une description, des informations sur le créateur et des captures d’écran ou une vidéo. 
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste des visualisations disponibles dans Power BI
-Toutes ces visualisations sont disponibles dans les applications, tableaux de bord et rapports Power BI, et sont [spécifiées dans Questions et réponses](#gna).
+Toutes ces visualisations sont disponibles dans les applications, tableaux de bord et rapports Power BI, et sont [spécifiées dans Questions et réponses](#qna). Pour savoir comment interagir avec les visualisations, consultez [Interagir avec les visualisations dans les rapports, les tableaux de bord et les applications](end-user-visualizations.md).
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Graphiques en aires : De base (superposées) et empilées
 ![graphique en aires](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
@@ -232,5 +232,5 @@ Lorsque vous tapez des requêtes en langage naturel avec le service Questions et
 ![Session Questions et réponses](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Visualisations dans des rapports Power BI](end-user-visualizations.md)    
+[Interagir avec les visualisations dans les rapports, les tableaux de bord et les applications](end-user-visualizations.md)    
 [La bonne référence visuelle dans sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

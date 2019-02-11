@@ -3,22 +3,22 @@ title: Vous abonner à des rapports et tableaux de bord
 description: Découvrez comment vous abonner vous et vos collègues à un instantané de rapport ou de tableau de bord Power BI envoyé par e-mail.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a35067af531f6da29edef7638fc9a743c948b8ce
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: df167f8693708c08bc44e935cff184917d8aaf54
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430254"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794324"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>S’abonner à un rapport ou à un tableau de bord dans le service Power BI 
-Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir les e-mails : une fois par jour, une fois par semaine ou quand les données sont actualisées. Vous pouvez même définir une heure spécifique à laquelle Power BI envoie les e-mails.  
+Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir les e-mails : une fois par jour, une fois par semaine ou quand les données sont actualisées. Vous pouvez même définir une heure spécifique à laquelle Power BI envoie les e-mails ou exécuter cette tâche tout de suite.  
 
 L’e-mail et l’instantané utiliseront la langue définie dans les paramètres de Power BI (cf. [Langues et pays/régions pris en charge par Power BI](../supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI sélectionnera celle des paramètres régionaux du navigateur. Pour voir ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](./media/end-user-subscribe/power-bi-settings-icon.png) > **Paramètres > Général > Langue**. 
 
@@ -40,23 +40,23 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
    
    ![icône S’abonner](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![fenêtre S’abonner](./media/end-user-subscribe/power-bi-emails2.png)
+   ![fenêtre S’abonner](./media/end-user-subscribe/power-bi-emails-new.png)
     
     L’écran à gauche s’affiche quand vous êtes dans un tableau de bord et que vous sélectionnez **S’abonner**. L’écran à droite s’affiche quand vous êtes dans une page de rapport et que vous sélectionnez **S’abonner**. Pour vous abonner à plusieurs pages d’un rapport, sélectionnez **Ajouter un autre abonnement** et sélectionnez une autre page. 
 
-3. Utilisez le curseur jaune pour activer ou désactiver l’abonnement.  La définition du curseur sur Désactivé ne supprime pas l’abonnement. Pour supprimer l’abonnement, sélectionnez l’icône Corbeille.
+4. Utilisez le curseur jaune pour activer ou désactiver l’abonnement.  La définition du curseur sur Désactivé ne supprime pas l’abonnement. Pour supprimer l’abonnement, sélectionnez l’icône Corbeille.
 
 4. Facultativement, vous pouvez ajouter les détails du message. 
 
 5. Sélectionnez une **Fréquence** pour votre abonnement.  Vous pouvez choisir Quotidien, Hebdomadaire ou Après l’actualisation des données (quotidien).  Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Hebdomadaire** et choisissez les jours auxquels vous voulez le recevoir.  Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez la fréquence **Hebdomadaire** et décochez les cases Sam et Dim.   
 
-
 6. Planifiez l’heure d’envoi de l’e-mail en sélectionnant Quotidien ou Hebdomadaire comme fréquence et en entrant une **Heure** **planifiée** pour l’abonnement.   
 
 7. Planifiez les dates de début et de fin en entrant des dates dans les champs correspondants. Par défaut, la date de début de votre abonnement est sa date de création et la date de fin est un an plus tard. Quand un abonnement atteint une date de fin, il s’arrête jusqu’à ce que vous le réactiviez.  Vous recevez des notifications avant la date de fin planifiée pour savoir si vous voulez la prolonger.     
 
+8. Pour vérifier votre abonnement et le tester, sélectionnez **Exécuter maintenant**.  Un e-mail vous est envoyé immédiatement. 
 
-5. Sélectionnez **Enregistrer et fermer** pour enregistrer l’abonnement. Vous recevez un e-mail et un instantané du tableau de bord ou du rapport selon la planification que vous avez définie. Tous les abonnements dont la fréquence est définie sur **Après l’actualisation des données** envoient un e-mail seulement après la première actualisation planifiée ce jour-là.
+8. Si tout semble correct, sélectionnez **Enregistrer et fermer** pour enregistrer l’abonnement. Vous recevez un e-mail et un instantané du tableau de bord ou du rapport selon la planification que vous avez définie. Tous les abonnements ayant pour fréquence **Après l’actualisation des données** envoient un e-mail seulement après la première actualisation planifiée ce jour-là.
    
    ![capture instantanée d’un e-mail sur le tableau de bord](media/end-user-subscribe/power-bi-subscribe-email.png)
    
@@ -83,6 +83,5 @@ Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le r
 * Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un rapport ou un tableau de bord, il n’est pas interrompu même si le rapport ou tableau de bord n’est pas consulté.    
 
 ## <a name="next-steps"></a>Étapes suivantes
-* D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)    
-* [Lire le billet de blog](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)
 
+[Rechercher et trier du contenu](end-user-search-sort.md)
