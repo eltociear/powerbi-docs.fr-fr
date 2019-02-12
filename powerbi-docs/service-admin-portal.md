@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8cda803939ee9ae2f864496300fce25890770dac
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 1bc7539eba4f390c02417edd52ea3f792613abe6
+ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430370"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55888230"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -93,13 +93,13 @@ Les journaux d’audit Power BI sont gérés dans le Centre de sécurité et de 
 
 Pour utiliser les journaux d’audit, vérifiez que le paramètre [**Créer des journaux d’audit pour l’audit et la conformité des activités internes**](#create-audit-logs-for-internal-activity-auditing-and-compliance) est activé.
 
-## <a name="tenant-settings"></a>Paramètres du locataire
+## <a name="tenant-settings"></a>Paramètres du client
 
 L’onglet **Paramètres du client** permet un contrôle affiné sur les fonctionnalités mises à la disposition de votre organisation. Si vous avez des inquiétudes à propos de vos données sensibles, il se peut que certaines de nos fonctionnalités ne soient pas adaptées à votre organisation. Vous pouvez aussi choisir de mettre à disposition une fonctionnalité déterminée à un groupe précis.
 
 L’image suivante présente les deux premières sections de l’onglet **Paramètres du client**.
 
-![Paramètres du locataire](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+![Paramètres du client](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
 > Jusqu’à 10 minutes peuvent être nécessaires à la prise en compte de la modification d’un paramètre pour tous les utilisateurs de votre client.
@@ -226,7 +226,7 @@ Les utilisateurs de l’organisation peuvent utiliser Excel pour afficher et int
 > [!NOTE]
 > La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité **Analyser dans Excel**.
 
-### <a name="use-arcgis-maps-for-power-bi"></a>Utiliser ArcGIS Maps pour Power BI
+### <a name="use-arcgis-maps-for-power-bi"></a>Utiliser ArcGIS Maps for Power BI
 
 Les utilisateurs de l’organisation peuvent utiliser la visualisation ArcGIS Maps for Power BI fournie par Esri. [En savoir plus](visuals/power-bi-visualization-arcgis.md)
 
@@ -287,16 +287,6 @@ Les utilisateurs de l’organisation peuvent étiqueter les tableaux de bord ave
 ### <a name="embed-content-in-apps"></a>Incorporer du contenu dans les applications
 
 Les utilisateurs de l’organisation peuvent incorporer des tableaux de bord et des rapports Power BI dans des applications Saas (Software as a Service). La désactivation de ce paramètre empêche les utilisateurs d’utiliser les API REST pour incorporer du contenu Power BI dans leur application. [En savoir plus](developer/embedding.md)
-
-## <a name="workspaces-and-import-settings"></a>Espaces de travail et paramètres d’importation
-
-### <a name="author-content-in-workspaces"></a>Créer du contenu dans les espaces de travail
-
-Les utilisateurs de l’organisation peuvent accéder aux espaces de travail pour se connecter aux données et créer du contenu. [En savoir plus](service-create-the-new-workspaces.md)
-
-### <a name="import-data-into-power-bi"></a>Importer des données dans Power BI
-
-Les utilisateurs de l’organisation peuvent importer des données dans le service, par exemple, publier des rapports Power BI Desktop, charger des fichiers de rapport Power BI et se connecter aux données directement à partir du service. [En savoir plus](desktop-upload-desktop-files.md)
 
 ## <a name="dataflow-settings-preview"></a>Paramètres de dataflow (préversion)
 
