@@ -8,23 +8,25 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/18/2018
+ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 29e6fe1bfb5a85d2a5ea42db406d4a127a65ec25
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: d09ff277ed1c47b9ab11d6ffed4e5c8a57059465
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147447"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971714"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Fondamentaux pour les concepteurs dans le service Power BI
 
-Cet article part du principe que vous êtes déjà [inscrit au service Power BI](service-self-service-signup-for-power-bi.md) et que vous avez [ajouté des données](service-get-data.md). Si vous n’avez pas encore de données, essayez d’installer un [exemple de pack de contenu Power BI](sample-datasets.md#the-power-bi-samples-as-content-packs).
+L’objectif de cet article est de vous orienter vers le service Power BI : ses différents éléments, comment ils fonctionnent ensemble et comment vous pouvez les utiliser. Vous en tirerez plus profit si vous êtes déjà [inscrit au service Power BI](service-self-service-signup-for-power-bi.md) et que vous avez [ajouté des données](service-get-data.md). En tant que concepteur, votre workflow typique consiste à créer des rapports en premier lieu dans Power BI Desktop. Vous les publiez ensuite sur le service Power BI, où vous pouvez toujours les modifier. Vous créez aussi les tableaux de bord en fonction de vos rapports dans le service Power BI. 
+
+Pour cet article, si vous n’avez pas encore de données, essayez d’installer un [exemple de pack de contenu Power BI](sample-datasets.md#the-power-bi-samples-as-content-packs).
 
 ![Écran d’accueil du service Power BI dans un navigateur](media/service-basic-concepts/power-bi-home-screen.png)
 
-Voici les éléments que vous voyez lorsque vous ouvrez le service Power BI dans le navigateur :
+Lorsque vous ouvrez le service Power BI dans un navigateur, vous êtes amené à l’écran Accueil. Voici les éléments que vous pouvez voir :
 
 1. Volet de navigation (gauche)
 2. Lanceur d’applications Office 365
@@ -34,9 +36,9 @@ Voici les éléments que vous voyez lorsque vous ouvrez le service Power BI dans
 6. Vignettes d’un tableau de bord favori
 7. Rapports et tableaux de bord favoris et fréquents
 
-Nous étudierons ces fonctionnalités ultérieurement, mais passons tout d’abord en revue quelques concepts propres à Power BI.
+Les utilisateurs finaux de vos rapports et de vos tableaux de bord démarrent au même point que vous dans le service Power BI depuis un navigateur.
 
-Vous pouvez également regarder cette vidéo avant de lire le reste de cet article.  Dans cette vidéo, Will passe en revue les concepts de base et propose une visite guidée du service Power BI.
+Nous étudierons ces fonctionnalités ultérieurement, mais passons tout d’abord en revue quelques concepts propres à Power BI. Vous pouvez également visionner cette vidéo d’abord.  Dans cette vidéo, Will passe en revue les concepts de base et propose une visite guidée du service Power BI.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 
@@ -45,15 +47,14 @@ Vous pouvez également regarder cette vidéo avant de lire le reste de cet artic
 Les 4 principaux composants de Power BI sont les **_tableaux de bord_**, les **_rapports_**, les **_classeurs_** et les **_jeux de données_**. Ceux-ci sont tous organisés en **_espaces de travail_**. Il est important de bien comprendre les espaces de travail avant d’étudier les quatre principaux composants. Nous allons donc commencer par cela.
 
 ## <a name="workspaces"></a>Espaces de travail
-Les espaces de travail sont des conteneurs pour les tableaux de bord, rapports, classeurs et jeux de données dans Power BI. Il existe deux types d’espaces de travail : *Mon espace de travail* et les *espaces de travail d’application*. Qu’est-ce qu’une *application* ? Une *application* Power BI est une collection de tableaux de bord et de rapports destinés à fournir des mesures clés pour votre organisation. Les applications sont interactives, mais ne peuvent pas être modifiées.
+Les espaces de travail sont des conteneurs pour les tableaux de bord, rapports, classeurs et jeux de données dans Power BI. Il existe deux types d’espaces de travail : *Mon espace de travail* et les *espaces de travail d’application*. Qu’est-ce qu’une *application* ? Une *application* Power BI est une collection de tableaux de bord et de rapports destinés à fournir des mesures clés aux utilisateurs finaux de Power BI pour votre organisation. Les applications sont interactives mais les utilisateurs finaux ne peuvent les modifier.
 
 - *Mon espace de travail* est l’espace de travail personnel qui permet à un client Power BI de travailler avec son propre contenu. Vous êtes le seul utilisateur à avoir accès à Mon espace de travail. Vous pouvez partager des tableaux de bord et des rapports à partir de votre espace Mon espace de travail. Pour collaborer sur des tableaux de bord et des rapports ou créer une application, vous devez travailler dans un espace de travail d’application.      
 -  Les *espaces de travail d’application* permettent de collaborer et de partager du contenu avec vos collègues. C’est également l’endroit où vous créez, publiez et gérez des applications pour votre organisation. Considérez-les comme des zones intermédiaires et des conteneurs pour le contenu d’une application Power BI. Vous pouvez ajouter des collègues à vos espaces de travail d’application et collaborer sur des tableaux de bord, rapports, classeurs et jeux de données. Tous les membres de l’espace de travail d’application doivent avoir des licences Power BI Pro, mais les consommateurs de l’application (collègues qui ont accès aux applications) ne doivent pas nécessairement avoir des licences Pro.  
 
-Pour plus d’informations, consultez la section **Partager votre travail** de la Table des matières, en commençant par [Comment dois-je collaborer et partager des tableaux de bord et rapports](service-how-to-collaborate-distribute-dashboards-reports.md)
+Pour en savoir plus, commencez par [Méthodes pour partager votre travail via des tableaux de bord](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-
-Étudions maintenant les principaux composants de Power BI. Vous ne pouvez pas avoir de tableaux de bord ni de rapports sans données (vous pouvez avoir des tableaux de bord et des rapports vides, mais ils ne sont pas utiles tant qu’ils ne contiennent pas de données). Pour commencer, intéressons-nous aux **jeux de données**.
+Étudions maintenant les principaux composants de Power BI. Vous ne pouvez pas avoir de tableaux de bord ni de rapports sans données (vous pouvez avoir des tableaux de bord et des rapports vides, mais ils ne sont pas utiles tant qu’ils ne contiennent pas de données). Pour commencer, intéressons-nous aux **jeux de données**.
 
 ## <a name="datasets"></a>Jeux de données
 Un *jeu de données* est une collection de données que vous *importez* ou auxquelles vous *vous connectez*. Power BI vous permet de vous connecter à toutes sortes de jeux de données regroupés au même endroit et de les importer dans un même emplacement.  
@@ -72,7 +73,7 @@ Dans l’exemple ci-dessous, j’ai sélectionné l’espace de travail d’appl
 
   ![Diagramme du jeu de données](media/service-basic-concepts/drawing2.png)
 
-Pour vous [connecter à un jeu de données ou en importer un](service-get-data.md), sélectionnez **Obtenir des données** (au bas de la barre de navigation gauche) ou sélectionnez **+ Créer un jeux de données** (dans le coin supérieur droit). Suivez les instructions permettant de vous connecter à la source spécifique ou de l’importer et d’ajouter le jeu de données à l’espace de travail actif. Les nouveaux jeux de données sont signalés par un astérisque jaune. Le travail que vous effectuez dans Power BI ne modifie pas le jeu de données sous-jacent.
+Pour vous [connecter à un jeu de données ou en importer un](service-get-data.md), sélectionnez **Obtenir des données** au bas de la barre de navigation gauche. Suivez les instructions permettant de vous connecter à la source spécifique ou de l’importer et d’ajouter le jeu de données à l’espace de travail actif. Les nouveaux jeux de données sont signalés par un astérisque jaune. Le travail que vous effectuez dans Power BI ne modifie pas le jeu de données sous-jacent.
 
 Si vous faites [partie d’un **_espace de travail d’application_**](service-collaborate-power-bi-workspace.md), les jeux de données ajoutés par un membre de cet espace de travail sont accessibles par les autres membres de l’espace de travail.
 

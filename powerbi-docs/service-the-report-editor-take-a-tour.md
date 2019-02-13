@@ -8,21 +8,23 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/25/2019
+ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: 66e40462081ee2f1156840d137d4c67ad0eb7b45
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147401"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971691"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Visite guidée de l’éditeur de rapport de Power BI
 
-L’*éditeur de rapport* du service Power BI et l’éditeur de rapport de Power BI Desktop sont très similaires. La vidéo montre l’éditeur de rapport dans Power BI Desktop et cet article montre l’éditeur de rapport dans le service Power BI. 
+L’*éditeur de rapport* du service Power BI et l’éditeur de rapport de Power BI Desktop sont très similaires. Généralement, vous commencez par créer des rapports dans Power BI Desktop. Vous les publiez ensuite sur le service Power BI, où vous pouvez toujours les modifier. C’est également dans ce service que vous créez des tableaux de bord en fonction de vos rapports.
 
-En tant qu’auteur de rapport, vous créez et modifiez des tableaux de bord et des rapports. Ensuite, vous les distribuez à vos consommateurs. Ces derniers peuvent manipuler vos tableaux de bord et rapports en mode Lecture dans le service Power BI, mais ils ne peuvent pas les modifier. En savoir plus sur [ce que les consommateurs de rapports peuvent faire dans le service Power BI](consumer/end-user-reading-view.md) 
+Après avoir créé vos tableaux de bord et vos rapports, vous les distribuez à vos consommateurs de rapports. En fonction de la façon dont vous les partagez, vos utilisateurs finaux peuvent être en mesure d’interagir avec dans le mode Lecture du service Power BI, mais ils ne peuvent pas les modifier. En savoir plus sur [ce que les consommateurs de rapports peuvent faire dans le service Power BI](consumer/end-user-reading-view.md). 
+
+Cette vidéo montre l’éditeur de rapports dans Power BI Desktop. Cet article montre l’éditeur de rapport du service Power BI. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -90,6 +92,12 @@ Le volet Filtres a une autre fonctionnalité puissante : la possibilité de fil
 ![Volet Filtres](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
 Pour plus d’informations, consultez [Ajouter un filtre à un rapport](power-bi-report-add-filter.md).
+
+Une nouvelle expérience de filtre est actuellement en préversion. Dans les nouveaux filtres, vous pouvez les formater pour qu’ils ressemblent au rapport. Vous pouvez aussi verrouiller les filtres ou les masquer pour qu’ils ne puissent être vus par les consommateurs de rapports. 
+
+![Nouvelle expérience de filtre](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
+
+En savoir plus sur [la nouvelle expérience de filtre](power-bi-report-filter-preview.md).
 
 - - -
 ## <a name="the-fields-pane"></a>Le volet Champs

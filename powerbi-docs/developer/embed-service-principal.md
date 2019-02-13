@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: a0b1722a54f1e5ea5bf01d8e5bb5fb4753351a60
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763064"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971668"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Principal de service avec Power BI (préversion)
 
@@ -108,9 +108,6 @@ Il existe des différences selon que vous utilisez un principal de service ou un
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-    > [!Note]
-    > Seul un administrateur général AAD peut créer des groupes de sécurité AAD.
-
 3. En tant qu’administrateur Power BI, vous devez activer le principal de service dans les **Paramètres du développeur** du portail d’administration Power BI. Ajoutez le groupe de sécurité que vous avez créé dans Azure AD à la section **Groupe de sécurité spécifique** des **Paramètres du développeur**.
 
    > [!Important]
@@ -173,6 +170,7 @@ Voici un exemple de script pour récupérer l’ID objet du principal de service
 * Vous devez disposer de droits d’administrateur Power BI pour activer un principal de service dans les paramètres du développeur du portail d’administration Power BI.
 * Il est impossible d’installer ou de gérer une passerelle de données locale à l’aide d’un principal de service.
 * Les applications [incorporant du contenu pour votre organisation](embed-sample-for-your-organization.md) ne peuvent pas utiliser un principal de service.
+* La gestion de [flux de données](../service-dataflows-overview.md) n’est pas prise en charge.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
