@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 512b189575acd7651dea8747c36e8666875edae5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ef8146501969697b15a3d1ff3cae2c605cabaacc
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295744"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216812"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Passerelle de données locale (mode personnel)
 Vous pouvez utiliser des sources de données locales et créer des rapports et des tableaux de bord Power BI à l’aide d’une passerelle. Une **passerelle** est un logiciel qui facilite l’accès aux données stockées sur un réseau local privé, puis vous permet d’utiliser ces données dans les services en ligne comme le **service Power BI**. La **passerelle de données locale (mode personnel)** est une mise à jour récemment publiée de la passerelle Power BI qui permet aux utilisateurs d’installer une passerelle sur leur propre ordinateur et d’accéder aux données locales.
@@ -86,11 +86,11 @@ Si vous utilisiez **Fast Combine** avec la passerelle précédente, vous devez p
    ```
 2. En bas du fichier, ajoutez le texte suivant :
    
-       ```
-       <setting name="EnableFastCombine" serializeAs="String">```
+    ```xml
+       <setting name="EnableFastCombine" serializeAs="String">
        <value>true</value>
-       </setting>
-       ```
+    </setting>
+    ```
 3. Une fois que vous avez effectué cette opération, le paramètre est actif environ une minute plus tard. Pour vérifier s’il fonctionne correctement, essayez une actualisation à la demande dans le **service Power BI** pour vérifier si **Fast Combine** fonctionne.
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations

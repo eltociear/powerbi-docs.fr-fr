@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 495a33cbb8359a366008b7401988a5f2a24d09ee
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 3feed774025c82518126a0ca6e9d2e0ec68ac11e
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289015"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215687"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Utiliser Afficher les données et Afficher les enregistrements dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez explorer les détails d’une visualisation et consulter des représentations textuelles des données sous-jacentes ou enregistrements de données individuelles du visuel sélectionné. Ces fonctionnalités sont parfois appelées *interactif*, *extraction* ou *extraction jusqu’aux détails*.

@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: mahirdiab
-ms.openlocfilehash: 050628dfe179a39ca24d2df72f1296acf48aa261
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 79ab3731abfdf972de1ee9d40456ebb0c5ebfa62
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763076"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223510"
 ---
 # <a name="encrypt-credentials"></a>Chiffrer les informations d’identification
 Quand vous appelez [Créer une source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) ou [Mettre à jour la source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) sous une **passerelle locale d’entreprise** en utilisant l’[API Rest Power BI](https://docs.microsoft.com/rest/api/power-bi/), le valeur des informations d’identification doit être chiffrée à l’aide de la clé publique de la passerelle.
@@ -24,28 +24,28 @@ Consultez l’exemple de code ci-dessous, qui montre comment chiffrer les inform
 Les informations d’identification fournies à la méthode EncodeCredentials ci-dessous doivent être dans un des formats suivants, en fonction du type des informations d’identification :
 
 **Informations d’identification de base / Windows**
-```
+```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
 **Informations d’identification de clé**
-```
+```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
 ```
 
 **Informations d’identification OAuth2**
-```
+```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
 ```
 
 
 **Informations d’identification anonymes**
-```
+```csharp
 var credentials = "{\"credentialData\":\"\"}";
 ```
 
 **Chiffrer les informations d’identification**
-```
+```csharp
 public static class AsymmetricKeyEncryptionHelper
 {
 

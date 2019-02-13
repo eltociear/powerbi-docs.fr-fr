@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: b8f78821ccd6f32f9b943b55a45de20b720f3f3c
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: fd311466d244e3ca9297f107edfad7b2cc930bfb
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762096"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223832"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Résoudre les problèmes de votre application incorporée
 
@@ -161,7 +161,7 @@ Pour vérifier le motif de l’erreur, essayez les étapes ci-dessous.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094 : L’octroi nécessite une autorisation de l’administrateur
 
-**_Symptômes :_**</br>
+**_Symptômes :_**<br>
 Quand un utilisateur non-administrateur tente de se connecter à une application pour la première fois tout en octroyant un consentement, et obtient une des erreurs suivantes :
 
 * Le test de consentement nécessite une autorisation d’accès aux ressources de votre organisation que seul un administrateur peut accorder. Demandez à un administrateur de vous accorder une autorisation d’accès à cette application avant de l’utiliser.
@@ -171,7 +171,7 @@ Quand un utilisateur non-administrateur tente de se connecter à une application
 
 Un utilisateur administrateur peut se connecter et octroyer un consentement.
 
-**_Cause racine :_**</br>
+**_Cause racine :_**<br>
 Le consentement de l’utilisateur est désactivé pour le locataire.
 
 **_Plusieurs solutions sont possibles :_**

@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 51eb5c2947dc6d621e6c2ef6d3e2361a4542a0f1
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ee7b69bbf8857f12cabb6f7147f8e1d779b2a17e
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276926"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215064"
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Clusters à haute disponibilité pour la passerelle de données locale
 
@@ -59,13 +59,13 @@ Pour exécuter les commandes PowerShell indiquées dans le tableau, vous devez d
 1. Ouvrez une fenêtre de commande PowerShell en tant qu’administrateur.
 2. Exécutez ensuite la commande PowerShell suivante à usage unique (cela suppose que vous n’avez jamais exécuté de commandes PowerShell sur l’ordinateur actuel) :
 
-    ```
+    ```powershell
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
     ```
 
 3. Ensuite, accédez au dossier d’installation de la passerelle de données locale dans la fenêtre PowerShell, puis importez le module nécessaire à l’aide de la commande suivante :
 
-    ```
+    ```powershell
     Import-Module .\OnPremisesDataGatewayHAMgmt.psm1
     ```
 

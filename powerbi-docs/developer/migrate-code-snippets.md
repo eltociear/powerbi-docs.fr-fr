@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: f53549e0a046195c353362368e2e3682df152af9
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: c3357b89ef02d29c0518b12780339d8612c75387
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762510"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215087"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Extraits de code pour migrer du contenu à partir d’une collection d’espaces de travail Power BI
 
@@ -49,7 +49,7 @@ using System.Threading.Tasks;
 
 ## <a name="export-report-from-paas-workspace"></a>Exporter un rapport de l’espace de travail PaaS
 
-```
+```csharp
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
 
@@ -74,7 +74,7 @@ using System.Threading.Tasks;
 
 ## <a name="import-report-to-saas-workspace"></a>Importer un rapport dans l’espace de travail SaaS
 
-```
+```csharp
     AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.net/common/");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myClientId>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
     var credentials = new TokenCredentials(PBISaaSAuthResult.AccessToken);
@@ -90,7 +90,7 @@ using System.Threading.Tasks;
 
 Ceci sert à mettre à jour le PBIX après la migration vers SaaS.
 
-```
+```csharp
     // Extract connection string from PaaS - DirectQuery report
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
@@ -109,7 +109,7 @@ Ceci sert à mettre à jour le PBIX après la migration vers SaaS.
 
 ## <a name="update-directquery-connection-string-is-saas-workspace"></a>Mettre à jour la chaîne de connexion DirectQuery vers l’espace de travail SaaS
 
-```
+```csharp
     public class ConnectionString
     {
         [JsonProperty(PropertyName = "connectionString")]
@@ -130,7 +130,7 @@ Ceci sert à mettre à jour le PBIX après la migration vers SaaS.
 
 Dans cet extrait de code, nous utilisons des informations d’identification non chiffrées par souci de simplicité. Il est possible d’envoyer des informations d’identification chiffrées.
 
-```
+```csharp
     public class ConnectionString
     {
         [JsonProperty(PropertyName = "connectionString")]
@@ -169,14 +169,14 @@ Vous devez régénérer le rapport pour le jeu de données créé.
 
 Dans cet extrait de code, nous supposons que le jeu de données utilisant le service push est déjà dans un espace de travail d’application dans l’environnement SaaS. Pour plus d’informations sur l’API push, consultez [Transmission de données à un jeu de données Power BI](walkthrough-push-data.md).
 
-```
+```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");
 
     // Instantiate your Power BI client passing in the required credentials
     var client = new Microsoft.PowerBI.Api.V1.PowerBIClient(credentials);
     client.BaseUri = new Uri("https://api.powerbi.com");
 
-    // step 1 -> create dummy dataset at PaaS worksapce
+    // step 1 -> create dummy dataset at PaaS workspace
     var fileStream = File.OpenRead(<Path to your dummy dataset>);
     var import = client.Imports.PostImportWithFileAsync(<Your WSC NAME>, <Your workspace ID>, fileStream, "dummyDataset");
     while (import.Result.ImportState != "Succeeded" && import.Result.ImportState != "Failed")

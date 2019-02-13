@@ -9,12 +9,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
 ms.author: maggies
-ms.openlocfilehash: 9556a501832502a8d5653967408b9fac8d0704a5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 732b90a5d325665cbe82c87bd1247ff72af9e6e5
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295584"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215133"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Entrer des données directement dans un rapport paginé dans le Générateur de rapports (préversion) - Power BI
 
@@ -82,11 +82,11 @@ Les rapports paginés étant à présent pris en charge dans le service Power B
 
 Vous pouvez également charger votre rapport paginé sur un serveur de rapports Power BI Report Server ou SQL Server Reporting Services 2016 ou 2017. Avant de procéder, vous devez ajouter l’élément suivant à votre fichier RsReportServer.config comme extension de données supplémentaire. Sauvegardez votre fichier RsReportServer.config avant d’effectuer le changement, au cas où vous rencontriez des problèmes.
 
-```
-<Extension Name=”ENTERDATA” Type=”Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions”>
-<Configuration>
-<ConfigName>ENTERDATA</ConfigName>
-</Configuration>
+```xml
+<Extension Name="ENTERDATA" Type="Microsoft.ReportingServices.DataExtensions.XmlDPConnection,Microsoft.ReportingServices.DataExtensions">
+    <Configuration>
+        <ConfigName>ENTERDATA</ConfigName>
+    </Configuration>
 </Extension>
 ```
 
