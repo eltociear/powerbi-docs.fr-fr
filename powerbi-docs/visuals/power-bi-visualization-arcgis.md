@@ -6,24 +6,24 @@ manager: kvivek
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-visuals
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 279fea3f1b36a86e7606f3b6d69f19ab42763805
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 6b3f1c3780b60efc2ade444960a92234afecc71e
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234585"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086583"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Cartes ArcGIS dans le service Power BI et Power BI Desktop par ESRI
-Ce tutoriel est écrit du point de vue d’une personne qui crée une carte ArcGIS. Une fois que le créateur partage une carte ArcGIS avec un collègue, ce dernier peut afficher et exploiter la carte, mais pas enregistrer de modifications. Pour en savoir plus sur l’affichage d’une carte ArcGIS, consultez [Interaction avec des cartes ArcGIS](../consumer/power-bi-visualizations-arcgis.md).
+Ce tutoriel est écrit du point de vue d’une personne qui crée une carte ArcGIS. Une fois que le créateur partage une carte ArcGIS avec un collègue, ce dernier peut afficher et exploiter la carte, mais pas enregistrer de modifications. Pour en savoir plus sur l’affichage d’une carte ArcGIS, consultez [Interaction avec des cartes ArcGIS](power-bi-visualizations-arcgis.md).
 
 L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà de la simple présentation de points sur une carte, pour accéder à un nouveau niveau. Faites votre choix parmi des cartes de base, des types d’emplacement, des thèmes, des styles de symboles et des couches de référence pour créer des visualisations de cartes informatives exceptionnelles. L’association des couches de données faisant autorité sur une carte avec l’analyse spatiale permet une compréhension approfondie des données dans votre visualisation.
 
- Vous ne pouvez pas créer de cartes ArcGIS sur un appareil mobile, mais ce dernier vous permet de les afficher et les utiliser. Consultez [Interaction avec des cartes ArcGIS](../consumer/power-bi-visualizations-arcgis.md).
+ Vous ne pouvez pas créer de cartes ArcGIS sur un appareil mobile, mais ce dernier vous permet de les afficher et les utiliser. Consultez [Interaction avec des cartes ArcGIS](power-bi-visualizations-arcgis.md).
 
 > [!TIP]
 > SIG (ou GIS pour Geographic Information System en anglais) signifie système d’informations géographiques.
@@ -91,7 +91,7 @@ Regardez comment créer différentes visualisations de carte ArcGis, puis suivez
 ## <a name="settings-and-formatting-for-arcgis-maps"></a>Paramètres et mise en forme des cartes ArcGIS
 Pour accéder aux fonctionnalités de mise en forme d’**ArcGIS Maps pour Power BI**:
 
-1. Accédez à des fonctionnalités supplémentaires en sélectionnant les points de suspension (...) dans le coin supérieur droit de la visualisation, puis en sélectionnant **Modifier**.
+1. Accédez à des fonctionnalités supplémentaires en sélectionnant les points de suspension (...) en haut à droite de la visualisation, puis en sélectionnant **Modifier**.
    
    ![](media/power-bi-visualization-arcgis/power-bi-edit2.png)
    
@@ -175,7 +175,8 @@ Le volet Drive time (Temps de trajet) vous permet de sélectionner un emplacemen
     ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 1. Sélectionnez l’onglet **Drive time (Temps de trajet)** et choisissez l’outil de sélection unique ou multiple. Sélection unique de l’épingle pour Washington D.C.
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
+
+   ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
    > [!TIP]
    > Il est plus facile de sélectionner un emplacement si vous effectuez un zoom sur la carte (à l’aide de l’icône +).
@@ -340,7 +341,7 @@ Non, Power BI nécessite une connexion au réseau pour afficher les cartes.
 Pas encore. [Votez pour cette idée](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases) afin de recevoir un message électronique lorsque nous commencerons à travailler sur cette fonctionnalité.  
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Interaction avec une carte ArcGIS qui a été partagée avec vous](../consumer/power-bi-visualizations-arcgis.md)
+[Interaction avec une carte ArcGIS qui a été partagée avec vous](power-bi-visualizations-arcgis.md)
 
 [Billet de blog annonçant la disponibilité de ArcGIS Maps pour Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 

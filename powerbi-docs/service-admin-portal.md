@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 1bc7539eba4f390c02417edd52ea3f792613abe6
-ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
+ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55888230"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086468"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -236,12 +236,17 @@ Les utilisateurs de l’organisation peuvent utiliser les fonctionnalités de re
 
 ## <a name="custom-visuals-settings"></a>Paramètres des visuels personnalisés
 
-### <a name="enable-custom-visuals-for-the-entire-organization"></a>Activer les visuels personnalisés pour l’ensemble de l’organisation
+### <a name="add-and-use-custom-visuals"></a>Ajouter et utiliser des visuels personnalisés
 
 Les utilisateurs de l’organisation peuvent manipuler et partager des visuels personnalisés. [En savoir plus](power-bi-custom-visuals.md)
 
 > [!NOTE]
-> Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
+> Ce paramètre peut s’appliquer à toute l’organisation ou se limiter à des groupes particuliers.
+
+### <a name="allow-only-certified-visuals"></a>Autoriser uniquement les visuels certifiés
+
+Les utilisateurs de l’organisation qui disposent d’autorisations pour ajouter et utiliser des visuels personnalisés, définis par le paramètre « Ajouter et utiliser des visuels personnalisés », peuvent uniquement utiliser des [visuels personnalisés certifiés](https://go.microsoft.com/fwlink/?linkid=2002010) (les visuels non certifiés sont bloqués et affichent un message d’erreur lorsqu’ils sont utilisés). 
+
 
 ## <a name="r-visuals-settings"></a>Paramètres des visuels R
 

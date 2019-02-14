@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 96b6e1a8a92b19181463de404967625b37418582
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bcde69d25b6b73787a4b9d16e4ba2b39b183ffd7
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291944"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086422"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Configurer les paramètres de flux de données d’un espace de travail (préversion)
 
 Avec Power BI et les flux de données, vous pouvez stocker les fichiers de données et de définition de flux de données d’un espace de travail dans votre compte Azure Data Lake Storage Gen2. Les administrateurs d’espaces de travail peuvent pour cela configurer Power BI, suivant les étapes détaillées dans cet article. 
 
-Pour que vous puissiez configurer l’emplacement de stockage des flux de données d’un espace de travail, l’administrateur général de votre entreprise doit connecter le compte de stockage de votre organisation à Power BI et activer les autorisations d’affectation de stockage sur ce compte de stockage. * [Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md) 
+Pour que vous puissiez configurer l’emplacement de stockage des flux de données d’un espace de travail, l’administrateur général de votre entreprise doit connecter le compte de stockage de votre organisation à Power BI et activer les autorisations d’affectation de stockage sur ce compte de stockage. *[Connecter Azure Data Lake Storage Gen2 pour le stockage de dataflows (préversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)* 
 
 Il y a deux façons de configurer les paramètres de stockage de flux de données de l’espace de travail : 
 
