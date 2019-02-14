@@ -43,7 +43,7 @@ Voici la liste des noms de domaine complets utilisés par la passerelle.
 
 Vous pouvez forcer la passerelle à communiquer avec Azure Service Bus suivant le protocole HTTPS au lieu de Direct TCP. L’utilisation de HTTPS peut avoir un impact sur les performances. Pour ce faire, modifiez le fichier *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* en modifiant la valeur de `AutoDetect` à `Https`, comme indiqué dans l’extrait de code qui suit directement ce paragraphe. Par défaut, ce fichier se trouve dans le dossier *C:\Program Files\Passerelle de données locale*.
 
-```
+```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
     <value>Https</value>
 </setting>
