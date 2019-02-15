@@ -1,53 +1,43 @@
 ---
-title: Relations plusieurs à plusieurs dans Power BI Desktop (préversion)
-description: Utiliser des relations plusieurs à plusieurs dans Power BI Desktop
+title: Relations plusieurs à plusieurs dans Power BI Desktop
+description: Utiliser des relations avec une cardinalité plusieurs à plusieurs dans Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 8d32ad24fd41c33d0b1e1f37f11be39292e82742
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291070"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225957"
 ---
-# <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Relations plusieurs à plusieurs dans Power BI Desktop (préversion)
+# <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relations avec une cardinalité plusieurs à plusieurs dans Power BI Desktop
 
-Avec la fonctionnalité *Relations plusieurs à plusieurs* dans Power BI Desktop, vous pouvez joindre des tables qui utilisent une cardinalité *Plusieurs à plusieurs*. Vous pouvez créer plus facilement et intuitivement des modèles de données qui contiennent deux ou plusieurs sources de données. La fonctionnalité *Relations plusieurs à plusieurs* fait partie des capacités plus étendues des *modèles composites* dans Power BI Desktop.
+La fonctionnalité des *relations avec une cardinalité plusieurs à plusieurs* dans Power BI Desktop vous permet de joindre des tables qui utilisent une cardinalité *plusieurs à plusieurs*. Vous pouvez créer plus facilement et intuitivement des modèles de données qui contiennent deux ou plusieurs sources de données. Cette fonctionnalité des *relations avec une cardinalité plusieurs à plusieurs* fait partie des fonctionnalités plus larges des *modèles composites* dans Power BI Desktop.
 
 ![Relation plusieurs à plusieurs dans le volet « Modifier la relation »](media/desktop-many-to-many-relationships/many-to-many-relationships_01.png)
 
-La fonctionnalité *Relations plusieurs à plusieurs* dans Power BI Desktop est une des trois fonctionnalités connexes :
+La fonctionnalité des *relations avec une cardinalité plusieurs à plusieurs* dans Power BI Desktop fait partie d’un groupe de trois fonctionnalités connexes :
 
 * **Modèles composites** : Permet à un rapport d’avoir deux connexions de données ou plus, y compris des connexions provenant de DirectQuery ou d’une importation, dans toutes les combinaisons. Pour plus d’informations, consultez [Modèles composites dans Power BI Desktop (préversion)](desktop-composite-models.md).
 
-* **Relations plusieurs à plusieurs** : Avec les *modèles composites*, vous pouvez établir des *relations plusieurs à plusieurs* entre les tables. Cette approche supprime la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. La fonctionnalité est décrite en détail dans cet article.
+* **Relations avec une cardinalité plusieurs à plusieurs** : Avec les *modèles composites*, vous pouvez établir des *relations avec une cardinalité plusieurs à plusieurs* entre les tables. Cette approche supprime la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. La fonctionnalité est décrite en détail dans cet article.
 
 * **Mode de stockage** : Vous pouvez désormais spécifier les visuels qui nécessitent une requête sur les sources de données back-end. Les visuels qui ne nécessitent pas une requête sont importés même s’ils sont basés sur DirectQuery. Cette fonctionnalité permet d’améliorer les performances et de réduire la charge du back-end. Avant, même de simples visuels, comme les segments, démarraient des requêtes qui étaient envoyées à des sources back-end. Pour plus d’informations, consultez [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md).
 
-## <a name="enable-the-many-to-many-relationships-preview-feature"></a>Activer la fonctionnalité en préversion *Relations plusieurs à plusieurs*
+## <a name="what-relationships-with-a-many-many-cardinality-solves"></a>Ce que les *relations avec une cardinalité plusieurs à plusieurs* permettent de résoudre
 
-La fonctionnalité *Relations plusieurs à plusieurs* doit être activée dans Power BI Desktop. Pour activer les modèles composites, sélectionnez **Fichier** > **Options et paramètres** > **Options** > **Fonctionnalités en préversion**, puis cochez la case **Modèles composites**.
+Avant que n’existent la fonctionnalité des *relations avec une cardinalité plusieurs à plusieurs*, la relation entre deux tables était définie dans Power BI. Au moins une des colonnes de table impliquées dans la relation devait contenir des valeurs uniques. Souvent, cependant, aucune colonne ne contenait de valeurs uniques. 
 
-![Volet « Fonctionnalités en préversion »](media/desktop-composite-models/composite-models_02.png)
+Par exemple, deux tables pouvaient avoir une colonne étiquetée *pays*, mais les valeurs de *pays* n’étaient pas uniques dans les tables. Pour joindre ces tables, il était nécessaire de créer une solution de contournement. Celle-ci pouvait consister à introduire dans le modèle des tables supplémentaires contenant les valeurs uniques nécessaires. Avec la fonctionnalité des *relations avec une cardinalité plusieurs à plusieurs*, vous pouvez joindre ces tables directement à l’aide d’une relation avec une cardinalité **plusieurs à plusieurs**.  
 
-Pour activer la fonctionnalité, vous devez redémarrer Power BI Desktop.
-
-![Fenêtre « La fonctionnalité nécessite un redémarrage »](media/desktop-composite-models/composite-models_03.png)
-
-## <a name="what-many-to-many-relationships-solves"></a>Ce que résolvent les *relations plusieurs à plusieurs*
-
-Avant que la fonctionnalité *Relations plusieurs à plusieurs* ne soit disponible, la relation entre deux tables était définie dans Power BI. Au moins une des colonnes de table impliquées dans la relation devait contenir des valeurs uniques. Souvent, cependant, aucune colonne ne contenait de valeurs uniques. 
-
-Par exemple, deux tables pouvaient avoir une colonne étiquetée *pays*, mais les valeurs de *pays* n’étaient pas uniques dans les tables. Pour joindre ces tables, il était nécessaire de créer une solution de contournement. Celle-ci pouvait consister à introduire dans le modèle des tables supplémentaires contenant les valeurs uniques nécessaires. Avec la fonctionnalité *Relations plusieurs à plusieurs*, vous pouvez joindre ces tables directement à l’aide d’une relation avec une cardinalité **Plusieurs à plusieurs**.  
-
-## <a name="use-many-to-many-relationships"></a>Utiliser des *relations plusieurs à plusieurs*
+## <a name="use-relationships-with-a-many-many-cardinality"></a>Utiliser des *relations avec une cardinalité plusieurs à plusieurs*
 
 Quand vous définissez une relation entre deux tables dans Power BI, vous devez définir la cardinalité de la relation. Par exemple, la relation entre *ProductSales* et *Product*&mdash;à l’aide des colonnes *ProductSales[ProductCode]* et *Product[ProductCode]*&mdash;serait définie en tant que relation *Plusieurs à 1*. Nous définissons la relation de cette façon, car il existe de nombreuses ventes de chaque produit et la colonne de la table *Product* *(ProductCode)* est unique. Quand vous définissez une cardinalité de relation de type *Plusieurs à 1*, *1 à plusieurs*, ou *1 à 1*, Power BI la valide pour s’assurer qu’elle correspond aux données réelles.
 
@@ -117,14 +107,11 @@ Si nous définissons la nouvelle table *Sales* en tant que combinaison de tous l
 
 ![Visuel de la table](media/desktop-many-to-many-relationships/many-to-many-relationships_11.png)
 
-Comme vous pouvez le voir, *TX*&mdash;avec données *Sales*, mais données *Population* inconnues&mdash;et *New York*&mdash; avec données *Population* connues, mais aucune donnée *Sales* connue&mdash;seraient inclus. Cette solution de contournement n’est pas optimale et présente plusieurs problèmes. Avec la création de relations plusieurs à plusieurs, ces problèmes sont résolus, comme décrit dans la section suivante.
+Comme vous pouvez le voir, *TX*&mdash;avec données *Sales*, mais données *Population* inconnues&mdash;et *New York*&mdash; avec données *Population* connues, mais aucune donnée *Sales* connue&mdash;seraient inclus. Cette solution de contournement n’est pas optimale et présente plusieurs problèmes. Depuis la création des relations avec une cardinalité plusieurs à plusieurs, les problèmes liés sont traités comme décrit dans la section suivante.
 
-## <a name="use-many-to-many-relationships-instead-of-the-workaround"></a>Utiliser des *relations plusieurs à plusieurs* au lieu de la solution de contournement
+## <a name="use-relationships-with-a-many-many-cardinality-instead-of-the-workaround"></a>Utiliser les *relations avec une cardinalité plusieurs à plusieurs* au lieu de la solution de contournement
 
 À compter de la version de juillet 2018 de Power BI Desktop, vous pouvez lier des tables directement, telles que celles que nous avons décrites précédemment, sans devoir recourir à des solutions de contournement similaires. Il est désormais possible de définir la cardinalité de la relation sur *Plusieurs à plusieurs*. Ce paramètre indique qu’aucune table ne contient de valeurs uniques. Pour ce type de relation, vous pouvez toujours contrôler quelle table filtre l’autre table, ou appliquer un filtrage bidirectionnel où chaque table filtre l’autre.  
-
-> [!NOTE]
-> La possibilité de créer des *relations plusieurs à plusieurs* est disponible en préversion. Tant qu’il en est ainsi, il n’est pas possible de publier sur le service Power BI des modèles qui utilisent des *relations plusieurs à plusieurs*. 
 
 Dans Power BI Desktop, la cardinalité par défaut est *Plusieurs à plusieurs* quand elle est détermine qu’aucune table ne contient de valeurs uniques pour les colonnes de la relation. Dans ces cas-là, un avertissement s’affiche pour confirmer que le paramètre de la relation est votre comportement prévu, et non l’effet non intentionnel d’un problème de données. 
 
@@ -136,7 +123,7 @@ La vue **Relation** résultante montrerait alors la relation directe plusieurs �
 
 ![Visuel de la table](media/desktop-many-to-many-relationships/many-to-many-relationships_12.png)
 
-Les principales différences entre des *relations plusieurs à plusieurs* et les relations plus courantes *Plusieurs à 1* sont les suivantes :
+Les principales différences entre les *relations avec une cardinalité plusieurs à plusieurs* et les relations *plusieurs à une* plus courantes sont les suivantes :
 
 * Les valeurs indiquées n’incluent pas de ligne vide tenant compte des lignes qui ne correspondent pas dans l’autre table. Les valeurs ne tiennent pas non plus compte des lignes dans lesquelles la colonne utilisée dans la relation dans l’autre table est Null.
 * Il n’est pas possible d’utiliser la fonction `RELATED()`, car plusieurs lignes pourraient être liées.
@@ -153,7 +140,7 @@ En tenant compte des différences indiquées plus haut, assurez-vous que les cal
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 
-Il existe quelques limitations pour cette version de *relations plusieurs à plusieurs* et de modèles composites.
+Il existe quelques limitations pour cette version des *relations avec une cardinalité plusieurs à plusieurs* et des modèles composites.
 
 Les sources (multidimensionnelles) Live Connect suivantes ne peuvent pas être utilisées avec les modèles composites :
 
@@ -165,7 +152,7 @@ Les sources (multidimensionnelles) Live Connect suivantes ne peuvent pas être u
 
 Quand vous vous connectez à ces sources multidimensionnelles à l’aide de DirectQuery, vous ne pouvez pas vous connecter à une autre source DirectQuery ou la combiner avec des données importées.
 
-Les limitations existantes concernant l’utilisation de DirectQuery s’appliquent quand vous utilisez des *relations plusieurs à plusieurs*. Plusieurs de ces limitations sont désormais appliquées par table, selon le mode de stockage de la table. Par exemple, une colonne calculée d’une table importée peut faire référence à d’autres tables, mais une colonne calculée d’une table DirectQuery ne peut faire référence qu’à des colonnes de la même table. D’autres limitations s’appliquent au modèle dans son ensemble si aucune des tables du modèle n’est de type DirectQuery. Par exemple, les fonctionnalités QuickInsights et Questions et réponses ne sont pas disponibles sur un modèle si une des tables qu’il contient présente un mode de stockage de type DirectQuery. 
+Les limitations existantes sur l’utilisation de DirectQuery s’appliquent encore quand vous utilisez des *relations avec une cardinalité plusieurs à plusieurs*. Plusieurs de ces limitations sont désormais appliquées par table, selon le mode de stockage de la table. Par exemple, une colonne calculée d’une table importée peut faire référence à d’autres tables, mais une colonne calculée d’une table DirectQuery ne peut faire référence qu’à des colonnes de la même table. D’autres limitations s’appliquent au modèle dans son ensemble si aucune des tables du modèle n’est de type DirectQuery. Par exemple, les fonctionnalités QuickInsights et Questions et réponses ne sont pas disponibles sur un modèle si une des tables qu’il contient présente un mode de stockage de type DirectQuery. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 

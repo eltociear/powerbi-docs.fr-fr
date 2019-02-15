@@ -1,6 +1,6 @@
 ---
 title: Utiliser des insights pour trouver où la distribution est différente (préversion)
-description: Obtenez facilement des insights pour identifier les différences de répartition dans un graphique Power BI Desktop
+description: Obtenez facilement des insights pour identifier les différences de répartition dans un graphique Power BI Desktop.
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 416313f9271950c2f12a554107ab74933c5c31b7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 82844a1e928d30db12ba5659edcee7b07eaaf7b3
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277753"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215347"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Utiliser des insights dans Power BI Desktop pour identifier les différences de répartition (préversion)
 
@@ -131,7 +131,7 @@ La liste suivante répertorie les scénarios actuellement non pris en charge pou
 * Filtres de mesures
 * Mesures non numériques
 * Utilisation de « Afficher la valeur comme »
-* Mesures filtrées (les mesures filtrées sont des calculs effectués au niveau du visuel auxquels est appliqué un filtre spécifique (par exemple, *Total des ventes pour la France*) ; elles sont utilisées dans certains visuels créés par la fonctionnalité d’insights)
+* Mesures filtrées - les mesures filtrées sont des calculs effectués au niveau du visuel auxquels est appliqué un filtre spécifique (par exemple, *Total des ventes pour la France*) ; elles sont utilisées dans certains visuels créés par la fonctionnalité d’insights.
 
 De plus, les sources de données et les types de modèles suivants ne sont actuellement pas pris en charge pour la fonctionnalité d’affichage d’informations :
 

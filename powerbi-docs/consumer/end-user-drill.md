@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d935b044e5cbe1a2c84ce5749c3a0b58c528bab0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bc5033df204fafcc7316d6708d7b39429e8e9cba
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282353"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216582"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Mode Exploration pour une visualisation dans Power BI
 
@@ -112,7 +112,7 @@ Cette méthode utilise l’icône Descendre dans la hiérarchie qui apparaît en
 
 2. Sélectionnez la *feuille* pour **TN**. Votre tree map montre maintenant toutes les villes du Tennessee qui ont un magasin. 
 
-    ![tree map affichant les données pour le Tennessee uniquement](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![Tree map montrant les données pour le Tennessee uniquement](media/end-user-drill/power-bi-drill-down-one1.png)
 
 2. À ce stade, vous pouvez continuer à descendre dans la hiérarchie pour Tennessee ou pour une ville particulière du Tennessee, ou bien vous pouvez développer (consultez **Développer tous les champs à la fois** ci-dessous). Continuons à descendre dans la hiérarchie pour un champ à la fois.  Sélectionnez **Knoxville, TN**. Votre tree map montre maintenant le code postal pour votre magasin de Knoxville. 
 
@@ -127,9 +127,9 @@ Une tree map qui nous montre uniquement un code postal n’apporte pas beaucoup 
 
     ![Affichage du code postal et du nom du magasin](./media/end-user-drill/power-bi-expand1.png)
 
-2. Pour afficher l’ensemble des quatre niveaux de hiérarchie des données pour Tennessee, sélectionnez la flèche Monter dans la hiérarchie jusqu’à atteindre le deuxième niveau, **Total units this year by territory and city**, de votre treemap. 
+2. Pour voir l’ensemble des quatre niveaux de hiérarchie des données pour Tennessee, sélectionnez la flèche Monter dans la hiérarchie jusqu’à atteindre le deuxième niveau, **Total units this year by territory and city**, de votre treemap. 
 
-    ![tree map affichant toutes les données pour le Tennessee](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![Tree map montrant toutes les données pour le Tennessee](media/end-user-drill/power-bi-drill-down-one1.png)
 
 
 3. Vérifiez que la fonctionnalité Descendre dans la hiérarchie est toujours activée ![Fonctionnalité Descendre dans la hiérarchie activée](./media/end-user-drill/power-bi-drill-icon2.png), puis sélectionnez l’icône *Développer vers le bas* ![Icône Développer vers le bas](./media/end-user-drill/power-bi-drill-icon6.png). Votre tree map montre maintenant des détails supplémentaires : au lieu de montrer seulement la ville et l’état, elle montre maintenant aussi le code postal. 
@@ -138,7 +138,7 @@ Une tree map qui nous montre uniquement un code postal n’apporte pas beaucoup 
 
 4. Sélectionnez une fois de plus l’icône *Développer vers le bas* pour afficher l’ensemble des quatre niveaux de la hiérarchie des détails pour Tennessee sur votre tree map. Pointez sur une feuille pour voir davantage de détails.
 
-   ![Tree map montrant les données de Tennessee](./media/end-user-drill/power-bi-expand-all.png)
+   ![Tree map montrant les données du Tennessee](./media/end-user-drill/power-bi-expand-all.png)
 
 ## <a name="drilling-filters-other-visuals"></a>L'exploration filtre les autres visuels
 Quand vous travaillez en mode Exploration, vous devez décider comment les fonctionnalités Descendre dans la hiérarchie et Développer impactent les autres visualisations de la page. 
@@ -212,7 +212,7 @@ Vous devez accéder au niveau le plus bas de la hiérarchie, qui affiche les ré
 En plus de la visualisation, nous pouvons voir la hiérarchie reflétée dans les données affichées pour chaque rapport. Le tableau suivant montre les résultats de l’action **Afficher les données** dans un rapport qui descend dans la hiérarchie pour un seul secteur de vente ou pour tous les secteurs de vente. Quand vous descendez dans la hiérarchie, vous pouvez observer que le rapport pour un seul secteur de vente devient plus spécifique et que le rapport pour tous les secteurs de vente a plus de données.
 
 
-| Mode Développer|Territoire|City|Code postal|Nom|
+| Mode Développer|Territoire|Ville|Code postal|Nom|
 | ---|:---:|:---:|:---:|---|
 |À sens unique|![un territoire](./media/end-user-drill/power-bi-hierarchical-territory.png)|![une ville](media/end-user-drill/power-bi-hierarchical-one-territory-city.png)|![un code postal](./media/end-user-drill/power-bi-hierarchical-one-territory-city-postal.png)|![un nom](media/end-user-drill/power-bi-hierarchical-one-territory-city-postal-name.png)|
 |Tout|![tous les territoires](./media/end-user-drill/power-bi-hierarchical-territory.png)|![toutes les villes](media/end-user-drill/power-bi-hierarchical-all-territory-city.png)|![tous les codes postaux](./media/end-user-drill/power-bi-hierarchical-all-territory-city-postal.png)|![tous les noms](media/end-user-drill/power-bi-hierarchical-all-territory-city-postal-name.png)|

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f5fc52df86faa69683fa1e76f8893fb1d1a09ab9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281157"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225911"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
@@ -77,11 +77,14 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Amazon Redshift
 * Impala
 * Google BigQuery
+* Vertica
 * Snowflake
 * Essbase (bêta)
-* Connecteur BI
+* Dremio
 * Exasol
-* Dremio (bêta)
+* MarkLogic (bêta)
+* Cubes AtScale (bêta)
+* Connecteur BI
 * Jethro (bêta)
 * Kyligence Enterprise (bêta)
 
@@ -136,8 +139,6 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Google Analytics
 * Adobe Analytics
 * appFigures (bêta)
-* comScore Digital Analytix (bêta)
-* Dynamics 365 pour Customer Insights (bêta)
 * Data.World – Obtenir le jeu de données (bêta)
 * Facebook
 * GitHub (bêta)
@@ -157,6 +158,8 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * Webtrends (bêta)
 * Zendesk (bêta)
 * TeamDesk (bêta)
+* Emigo Data Source (Bêta)
+* Microsoft Graph Security (Bêta)
 
 L’illustration suivante montre la fenêtre **Obtenir les données** pour **Services en ligne**
 
@@ -164,7 +167,6 @@ L’illustration suivante montre la fenêtre **Obtenir les données** pour **Ser
 
 La catégorie **Autre** fournit les connexions de données suivantes :
 
-* Vertica
 * Web
 * Liste SharePoint
 * Flux OData
@@ -176,8 +178,12 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Script Python
 * ODBC
 * OLE DB
+* Workforce Dimensions (bêta)
 * Denado
 * Paxata (bêta)
+* SurveyMonkey (bêta)
+* QubolePresto (bêta)
+* Quick Base (bêta)
 * Requête vide
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Autre**.
@@ -190,7 +196,7 @@ L’image suivante montre la fenêtre **Obtenir les données** pour **Autre**.
 ## <a name="connecting-to-a-data-source"></a>Connexion à une source de données
 Pour vous connecter à une source de données, sélectionnez la source de données dans la fenêtre **Obtenir les données** et sélectionnez **Se connecter**. Dans l’image suivante, l’option **Web** est sélectionnée dans la catégorie de connexions de données **Autre**.
 
-![Se connecter au web](media/desktop-data-sources/data-sources_08a.png)
+![Se connecter au web](media/desktop-data-sources/data-sources_08.png)
 
 Une fenêtre de connexion s’affiche, spécifique au type de connexion de données. Si des informations d’identification sont requises, vous êtes invité à les fournir. L’image suivante montre la saisie d’une URL pour établir une connexion à une source de données web.
 

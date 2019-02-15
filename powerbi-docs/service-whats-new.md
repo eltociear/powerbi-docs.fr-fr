@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: d811ff6c68155d354df1785ae722829e1187543c
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 5a9fa6b5e854fc51487f0a0b4feaef8650b94057
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431082"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216858"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
@@ -31,10 +31,41 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="september-2018"></a>Septembre 2018
-* [Commenter les tableaux de bord](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) dans le service Power BI.
 
-## <a name="previous-months-2018"></a>Mois précédents (2018)
+## <a name="february-2019"></a>Février 2019
+* Charges de travail et métriques de taille de jeu de données actif dans l’[application de supervision de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Exportation au format PDF et abonnements e-mail à la demande (service-report-subscribe.md).
+* Opérations en bloc dans le portail d’administration.
+
+## <a name="previous-months-2019"></a>Mois précédents (2019)
+### <a name="january-2019"></a>Janvier 2019
+* [Incorporation des rapports Power BI sécurisés](service-embed-secure.md) dans les portails internes ou sites web.
+* Mises à jour de l’éditeur de [dataflows](service-dataflows-overview.md) avec de nouveaux connecteurs, prise en charge des requêtes SQL natives et transformations Power Query Online.
+* [Signets personnels](https://powerbi.microsoft.com/en-us/blog/announcing-personal-bookmarks-in-the-power-bi-service/) dans le service Power BI.
+* Planification horaire avec des abonnements e-mail.
+
+## <a name="2018"></a>2018
+### <a name="december-2018"></a>Décembre 2018
+* [Applications recommandées](https://powerbi.microsoft.com/en-us/blog/announcing-ai-powered-app-recommendations-getting-the-right-insights-to-the-right-people/) avec technologie d’intelligence artificielle dans Accueil Power BI.
+* [Gestion des espaces de travail](https://powerbi.microsoft.com/en-us/blog/workspace-management-in-the-admin-portal/) dans le portail d’administration.
+* Préversion des dataflows Power BI et intégration d’Azure Data Lake Storage Gen2 dans les [dataflows](service-dataflows-overview.md).
+* Les modèles de solution Power BI sont passés en open source.
+
+### <a name="november-2018"></a>Novembre 2018
+* Préparation des données Power BI disponible dans la préversion publique des [dataflows](service-dataflows-overview.md).
+* Préversion publique des [rapports paginés](paginated-reports-report-builder-power-bi.md) dans Power BI Premium.
+* Taille des données et nombre de jeux de données en mémoire dans l’[application de supervision de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
+### <a name="october-2018"></a>Octobre 2018
+* Agrégations [desktop-aggregations.md] dans le service Power BI.
+* Power BI développé dans trois nouvelles régions : Inde Centre, Australie Est et USA Centre (Iowa). 
+* Exportation vers PowerPoint en disponibilité générale.
+
+### <a name="september-2018"></a>Septembre 2018
+* [Commenter les tableaux de bord](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) dans le service Power BI.
+* Préversion publique de [Recherche globale et Accueil Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Possibilité de [superviser des requêtes](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) dans l’[application de supervision de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+
 ### <a name="august-2018"></a>Août 2018
 * [Application de supervision des capacités](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) pour Power BI Premium.
 * Améliorations du [filtre d’URL de rapport](service-url-filters.md) Power BI.
@@ -78,7 +109,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 *   Prise en charge de l’actualisation planifiée pour Azure Analysis Services (AAS).
 
 ## <a name="previous-months-2017"></a>Mois précédents (2017)
-## <a name="october-and-november-2017"></a>Octobre et novembre 2017
+### <a name="october-and-november-2017"></a>Octobre et novembre 2017
 *   Publication sélective du contenu avec les [applications Power BI](service-create-distribute-apps.md).
 *   Distribution des utilisateurs externes avec [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
 * Recommandations d’apps exploitant l’intelligence artificielle.
@@ -86,7 +117,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Prise en charge des abonnements par messagerie électronique pour les applications. 
 * Contrôle d’administration granulaire pour la [publication sur le web](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings).
 
-## <a name="september-2017"></a>Septembre 2017
+### <a name="september-2017"></a>Septembre 2017
 * Dans une capacité Premium, partagez de tableaux de bord avec des utilisateurs qui n’ont pas de licence Power BI Pro.
 * Allouez des capacités pour répondre aux besoins de votre entreprise avec un regroupement v-core.
 * Ajustez instantanément l’échelle des capacités d’un seul clic.

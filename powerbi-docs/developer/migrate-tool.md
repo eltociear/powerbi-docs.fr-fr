@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 41ab7f06da3038e48e2d1188edc8b91edeee8d4f
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 76e6ebec14d5feefd319213c05fddb0839a55ccd
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762349"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216375"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Outil de migration Power BI Embedded
 
@@ -207,7 +207,7 @@ Vous devez fermer l’outil de migration pour effectuer la modification, puis ro
 
 Dans l’exemple ci-dessus, un des rapports clonés a échoué, car un rapport portant le même nom existe. Dans le fichier XML du plan de migration, vous pouvez voir ceci.
 
-```
+```xml
 <ReportMigrationData>
     <PaaSWorkspaceCollectionName>SampleWorkspaceCollection</PaaSWorkspaceCollectionName>
     <PaaSWorkspaceId>4c04147b-d8fc-478b-8dcb-bcf687149823</PaaSWorkspaceId>
@@ -229,7 +229,7 @@ Dans l’exemple ci-dessus, un des rapports clonés a échoué, car un rapport p
 
 Pour l’élément ayant échoué, vous pouvez modifier le nom de SaaSTargetReportName.
 
-```
+```xml
 <SaaSTargetReportName>cloned2</SaaSTargetReportName>
 ```
 
@@ -245,7 +245,7 @@ Si vous revenez à Power BI, vous pouvez voir que les rapports et les jeux de d
 
 Vous pouvez charger une version locale d’un fichier Power BI Desktop. Pour cela, vous devez fermer l’outil, modifier le fichier XML et entrer le chemin d’accès complet de votre PBIX local dans la propriété **PbixPath**.
 
-```
+```xml
 <PbixPath>[Full Path to PBIX file]</PbixPath>
 ```
 
@@ -255,7 +255,7 @@ Une fois que vous avez modifié le fichier XML, rouvrez le plan dans l’outil d
 
 ### <a name="directquery-reports"></a>Rapports DirectQuery
 
-Vous devez mettre à jour la chaîne de connexion pour les rapports DirectQuery. Vous pouvez effectuer cette opération dans *powerbi.com* ou interroger la chaîne de connexion par programmation à partir de Power BI Embedded (Paas). Pour un exemple, consultez la page [Extraire la chaîne de connexion DirectQuery du rapport PaaS](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
+Vous devez mettre à jour la chaîne de connexion pour les rapports DirectQuery. Vous pouvez effectuer cette opération sur *powerbi.com* ou interroger la chaîne de connexion programmatiquement à partir de Power BI Embedded (Paas). Pour un exemple, consultez la page [Extraire la chaîne de connexion DirectQuery du rapport PaaS](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
 Vous pouvez ensuite mettre à jour la chaîne de connexion du jeu de données dans le service Power BI (Saas) et définir les informations d’identification de la source de données. Consultez les exemples suivants pour voir comment effectuer cette opération.
 

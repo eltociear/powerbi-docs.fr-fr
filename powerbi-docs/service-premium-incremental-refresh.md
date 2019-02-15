@@ -5,51 +5,45 @@ author: christianwade
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 01/24/2019
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: 92bd4043e4cfa37bd8f712491ccbc2990dc0b6a9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: caa350274b7af62078098d9ef7730046f6e14627
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794360"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225980"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Actualisation incrémentielle dans Power BI Premium
 
 L’actualisation incrémentielle permet d’utiliser des jeux de données très volumineux dans le service Power BI Premium, en offrant les avantages suivants :
 
-- **Les actualisations sont plus rapides.** Seules les données qui ont changé sont actualisées. Par exemple, vous pouvez actualiser uniquement les données des 5 derniers jours dans un jeu de données de 10 ans.
+- **Actualisations plus rapides** : Seules les données qui ont changé ont besoin d’être actualisées. Par exemple, vous pouvez actualiser uniquement les données des cinq derniers jours dans un jeu de données de dix ans.
 
-- **Les actualisations sont plus fiables.** Vous n’avez notamment pas besoin de conserver des connexions longues à des systèmes sources volatiles.
+- **Actualisations plus fiables** : Il n’est plus nécessaire de maintenir des connexions à long terme à des systèmes sources volatiles.
 
-- **La consommation des ressources est réduite.** Comme il y a moins de données à actualiser, la consommation globale de mémoire et d’autres ressources diminue.
+- **Consommation réduite des ressources** : Comme il y a moins de données à actualiser, la consommation globale de mémoire et d’autres ressources diminue.
 
-## <a name="how-to-use-incremental-refresh"></a>Comment utiliser l’actualisation incrémentielle
+## <a name="configure-incremental-refresh"></a>Configurer une actualisation incrémentielle
 
-Les stratégies d’actualisation incrémentielle sont définies dans Power BI Desktop et sont appliquées après avoir été publiées sur le service Power BI.
+Les stratégies d’actualisation incrémentielle sont définies dans Power BI Desktop et sont appliquées une fois publiées sur le service Power BI.
 
-Commencez par activer l’actualisation incrémentielle dans les fonctionnalités en préversion.
+Pour commencer, activez l’actualisation incrémentielle dans les **fonctionnalités d’évaluation**.
 
 ![Options - fonctionnalités en préversion](media/service-premium-incremental-refresh/preview-features.png)
 
 ### <a name="filter-large-datasets-in-power-bi-desktop"></a>Filtrer des jeux de données volumineux dans Power BI Desktop
 
-Les jeux de données volumineux, contenant potentiellement des milliards de lignes, ne peuvent parfois pas être ajoutés dans Power BI Desktop, généralement à cause de la limitation des ressources disponibles sur les PC de bureau des utilisateurs. Ces jeux de données sont par conséquent souvent filtrés avant d’être importés dans Power BI Desktop. C’est toujours le cas, même avec l’actualisation incrémentielle.
+Les jeux de données volumineux contenant potentiellement des milliards de lignes ne sont peut-être pas adaptés à un modèle Power BI Desktop, car le fichier PBIX est limité par les ressources en mémoire disponibles sur l’ordinateur. Ces jeux de données sont donc souvent filtrés lors de l’importation. Ce type de filtrage s’applique que l’actualisation incrémentielle soit utilisée ou non. Pour l’actualisation incrémentielle, vous filtrez à l’aide des paramètres de date/heure de Power Query.
 
 #### <a name="rangestart-and-rangeend-parameters"></a>Paramètres RangeStart et RangeEnd
 
-Pour utiliser l’actualisation incrémentielle dans le service Power BI, vous devez filtrer les données à l’aide de paramètres date/heure Power Query définis avec les noms réservés respectant la casse **RangeStart** et **RangeEnd**.
+Pour l’actualisation incrémentielle, les jeux de données sont filtrés à l’aide des paramètres de date/heure de Power Query avec les noms réservés qui respectent la casse **RangeStart** et **RangeEnd**. Ces paramètres servent à filtrer les données importées dans Power BI Desktop, mais aussi à répartir de manière dynamique les données dans des plages une fois publiées sur le service Power BI. Les valeurs de paramètre sont remplacées par le service pour filtrer chaque répartition. Une fois publiées, les valeurs des paramètres sont automatiquement remplacées par le service Power BI. Vous n’avez pas besoin de les définir dans les paramètres du jeu de données du service. Une fois publiées, les valeurs des paramètres sont automatiquement remplacées par le service Power BI. 
 
-Une fois publiées, les valeurs des paramètres sont automatiquement remplacées par le service Power BI. Vous n’avez pas besoin de les définir dans les paramètres du jeu de données du service.
-
-Il est important que le filtre soit poussé vers le système source lorsque des requêtes sont envoyées pour les opérations d’actualisation. Le filtre peut être rapproché des données seulement si la source de données prend en charge le « Query folding ». La plupart des sources de données qui prennent en charge les requêtes SQL prennent également en charge le « Query folding ». Ce n’est généralement pas le cas des sources de données telles que les fichiers plats, les objets blob, le web et les flux OData. Étant donné les différents niveaux de prise en charge du Query folding pour chaque source de données, nous vous recommandons de vérifier que la logique du filtre est incluse dans les requêtes sources. Dans les cas où le filtre n’est pas pris en charge par le back-end de source de données, il ne peut pas être rapproché des données. Dans ces cas, le moteur de mashup compense et applique le filtre localement, ce qui peut nécessiter la récupération du jeu de données complet à partir de la source de données. Cette opération peut ralentir sensiblement l’actualisation incrémentielle, et le processus peut manquer de ressources dans le service Power BI ou dans la passerelle de données locale éventuellement utilisée.
-
-Le filtre est utilisé pour partitionner les données en plages dans le service Power BI. Il n’est pas conçu pour prendre en charge la mise à jour de la colonne de date filtrée. Une mise à jour sera interprétée comme une insertion et une suppression (et non pas comme une mise à jour). Si la suppression se produit dans la plage historique et pas dans la plage incrémentielle, elle ne sera pas récupérée. Cela peut entraîner des échecs d’actualisation des données en raison de conflits de clé de partition.
-
-Dans l’éditeur Power Query, sélectionnez **Gérer les paramètres** pour définir les paramètres avec les valeurs par défaut.
+Pour définir les paramètres avec les valeurs par défaut, dans l’éditeur Power Query, sélectionnez **Gérer les paramètres**.
 
 ![Gérer les paramètres](media/service-premium-incremental-refresh/manage-parameters.png)
 
@@ -68,6 +62,18 @@ Vérifiez que les lignes sont filtrées quand la valeur de colonne *est postéri
 
 Sélectionnez **Fermer et appliquer** dans l’éditeur Power Query. Vous devez avoir un sous-ensemble du jeu de données dans Power BI Desktop.
 
+#### <a name="filter-date-column-updates"></a>Filtrer les mises à jour de la colonne de date
+
+Le filtre sur la colonne de date sert à répartir dynamiquement les données dans des plages dans le service Power BI. L’actualisation incrémentielle n’a pas vocation à prendre en charge les cas où la colonne de date filtrée est mise à jour dans le système source. Une mise à jour est interprétée comme une insertion et une suppression, et non pas comme une vraie mise à jour. Si la suppression se produit dans la plage historique et pas dans la plage incrémentielle, elle ne sera pas récupérée. Cela peut entraîner des échecs d’actualisation des données en raison de conflits de clé de partition.
+
+#### <a name="query-folding"></a>Pliage de requêtes
+
+Il est important que le filtre de partition soit poussé vers le système source lorsque des requêtes sont envoyées pour les opérations d’actualisation. Le filtre peut être rapproché des données seulement si la source de données prend en charge le pliage de requêtes. La plupart des sources de données qui prennent en charge les requêtes SQL prennent également en charge le « Query folding ». Toutefois, ce n’est généralement pas le cas des sources de données telles que les fichiers plats, les objets blob, le web et les flux OData. Dans les cas où le filtre n’est pas pris en charge par le back-end de source de données, il ne peut pas être rapproché des données. Dans ces cas, le moteur de mashup compense et applique le filtre localement, ce qui peut nécessiter la récupération du jeu de données complet à partir de la source de données. Cette opération peut ralentir sensiblement l’actualisation incrémentielle, et le processus peut manquer de ressources dans le service Power BI ou dans la passerelle de données locale éventuellement utilisée.
+
+Étant donné les différents niveaux de prise en charge du pliage de requêtes pour chaque source de données, il est recommandé de vérifier que la logique de filtre est incluse dans les requêtes sources. Pour faciliter l’opération, Power BI Desktop tente d’effectuer cette vérification pour vous. S’il est impossible de l’effectuer, un avertissement s’affiche dans la boîte de dialogue de l’actualisation incrémentielle lors de la définition de la stratégie d’actualisation incrémentielle. Les sources de données basées sur SQL, comme SQL, Oracle et Teradata, peuvent se fier à cet avertissement. Les autres sources de données peuvent ne pas être en mesure d’effectuer la vérification sans suivi des requêtes. Si Power BI Desktop ne peut pas confirmer, l’avertissement suivant s’affiche.
+
+ ![Pliage de requêtes](media/service-premium-incremental-refresh/query-folding.png)
+
 ### <a name="define-the-refresh-policy"></a>Définir la stratégie d’actualisation
 
 L’actualisation incrémentielle est disponible dans le menu contextuel des tables, à l’exception des modèles Connexion active.
@@ -85,17 +91,17 @@ La boîte de dialogue Actualisation incrémentielle s’affiche. Utilisez le bou
 
 Le texte d’en-tête décrit ce qui suit :
 
-- L’actualisation incrémentielle est prise en charge uniquement pour les espaces de travail sur une capacité Premium. Les stratégies d’actualisation sont définies dans Power BI Desktop. Elles sont appliquées par les opérations d’actualisation dans le service.
+- L’actualisation incrémentielle est prise en charge uniquement pour les espaces de travail sur des fonctionnalités Premium. Les stratégies d’actualisation sont définies dans Power BI Desktop. Elles sont appliquées par les opérations d’actualisation dans le service.
 
-- Si vous pouvez télécharger le fichier PBIX contenant une stratégie d’actualisation incrémentielle à partir du service Power BI, le fichier ne s’ouvre pas dans Power BI Desktop. Vous ne pourrez bientôt plus du tout le télécharger. Cela ne sera peut-être plus le cas dans une version future, mais sachez que la taille de ces jeux de données peut augmenter considérablement, au point qu’il ne soit plus possible de les télécharger ni de les ouvrir sur un PC de bureau classique.
+- Si vous pouvez télécharger le fichier PBIX contenant une stratégie d’actualisation incrémentielle à partir du service Power BI, le fichier ne s’ouvre pas dans Power BI Desktop. Cela ne sera peut-être plus le cas dans une version future, mais sachez que la taille de ces jeux de données peut augmenter considérablement, au point qu’il ne soit plus possible de les télécharger ni de les ouvrir sur un ordinateur de bureau classique.
 
 #### <a name="refresh-ranges"></a>Plages d’actualisation
 
-L’exemple suivant définit une stratégie d’actualisation pour stocker les données de cinq années calendaires complètes, ainsi que les données de l’année en cours jusqu’à la date actuelle et actualiser 10 jours de données de manière incrémentielle. La première opération d’actualisation charge les données historiques. Les actualisations suivantes sont incrémentielles et effectuent les opérations suivantes (si elles sont planifiées pour s’exécuter tous les jours).
+L’exemple suivant définit une stratégie d’actualisation pour stocker les données de cinq années calendaires complètes, ainsi que les données de l’année en cours jusqu’à la date actuelle et actualiser dix jours de données de manière incrémentielle. La première opération d’actualisation charge les données d’historique. Les actualisations suivantes sont incrémentielles et effectuent les opérations suivantes (si elles sont planifiées pour s’exécuter tous les jours) :
 
 - Ajout d’un nouveau jour de données.
 
-- Actualisation des données des dix derniers jours avant la date actuelle.
+- Actualisation de dix jours jusqu’à la date actuelle.
 
 - Suppression des années calendaires qui sont antérieures aux cinq années précédant la date actuelle. Par exemple, si la date actuelle est le 1er janvier 2019, l’année 2013 est supprimée.
 
@@ -103,13 +109,14 @@ La première actualisation effectuée dans le service Power BI peut être plus l
 
 ![Plages d’actualisation](media/service-premium-incremental-refresh/refresh-ranges.png)
 
-**Quand vous avez terminé la définition de ces plages, vous pouvez passer directement à l’étape de publication suivante. Les autres menus déroulants concernent des fonctionnalités avancées.**
+> [!NOTE]
+> Quand vous avez terminé la définition de ces plages, vous pouvez passer directement à l’étape de publication suivante. Les autres menus déroulants concernent des fonctionnalités avancées.
 
 ### <a name="advanced-policy-options"></a>Options de stratégie avancée
 
 #### <a name="detect-data-changes"></a>Détecter les changements de données
 
-L’actualisation incrémentielle des données des dix derniers jours est évidemment beaucoup plus rapide qu’une actualisation complète des données des cinq années. Toutefois, ce processus peut encore être amélioré. Si vous cochez la case **Détecter les changements de données**, vous pouvez sélectionner une colonne date/heure à utiliser pour identifier et actualiser uniquement les jours où les données ont changé. Cela suppose que cette colonne existe dans le système source, généralement à des fins d’audit. **Cela ne doit pas être la même colonne que celle utilisée pour partitionner les données avec les paramètres RangeStart/RangeEnd.** La valeur maximale de cette colonne est évaluée pour chacune des périodes définies dans la plage incrémentielle. Si cette valeur n’a pas changé depuis la dernière actualisation, la période n’a pas besoin d’être actualisée. Dans l’exemple, cela peut réduire les jours concernés par l’actualisation incrémentielle de dix à deux.
+L’actualisation incrémentielle de dix jours est plus efficace qu’une actualisation complète de cinq années. Toutefois, il est possible de faire mieux encore. Si vous cochez la case **Détecter les changements de données**, vous pouvez sélectionner une colonne date/heure à utiliser pour identifier et actualiser uniquement les jours où les données ont changé. Cela suppose que cette colonne existe dans le système source, généralement à des fins d’audit. **Cela ne doit pas être la même colonne que celle utilisée pour partitionner les données avec les paramètres RangeStart/RangeEnd.** La valeur maximale de cette colonne est évaluée pour chacune des périodes définies dans la plage incrémentielle. Si cette valeur n’a pas changé depuis la dernière actualisation, la période n’a pas besoin d’être actualisée. Dans l’exemple, cela peut réduire les jours concernés par l’actualisation incrémentielle de dix à deux environ.
 
 ![Détecter les changements](media/service-premium-incremental-refresh/detect-changes.png)
 
