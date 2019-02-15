@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c6395785c3d3e386aa2ac735439a265f5fe3fb02
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286999"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223303"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Personnaliser les propriétés des axes X et Y
 Dans ce didacticiel, vous allez découvrir de nombreuses façons de personnaliser les axes X et Y de vos visuels. Les visuels n’ont pas tous des axes et/ou ne sont pas toutes personnalisables. Par exemple, les graphiques en secteurs n’ont pas d’axes. Et les options de personnalisation varient d’un visuel à un autre, il y a trop d’options pour les couvrir dans un seul article. Par conséquent, nous allons examiner certaines des personnalisations d’axes les plus utilisées et vous aidez à vous familiariser avec l’utilisation de l’onglet de mise en forme visuelle dans le canevas de rapport Power BI.  
@@ -136,7 +136,7 @@ Si l’axe X est considéré par le propriétaire du rapport comme un type de d
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les [visualisations dans les rapports Power BI](power-bi-report-visualizations.md)
 
-[Personnaliser les t](power-bi-visualization-customize-title-background-and-legend.md)[itres, les arrière-plans et les légendes](power-bi-visualization-customize-title-background-and-legend.md)
+[Personnaliser les titres, les arrière-plans et les légendes](power-bi-visualization-customize-title-background-and-legend.md)
 
 [Personnaliser les couleurs et les propriétés des axes](service-getting-started-with-color-formatting-and-axis-properties.md)
 
