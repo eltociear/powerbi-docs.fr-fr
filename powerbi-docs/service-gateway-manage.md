@@ -11,18 +11,18 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: ff9f75b216ba64dfdb0b8244bb99016d0edd4ede
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276994"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324833"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Gérer une passerelle locale Power BI
 
-Après avoir [installé une passerelle de données Power BI](service-gateway-install.md), vous la gérez en fonction de vos besoins. Dans cette rubrique, vous apprendrez à : ajouter et supprimer des sources de données et des utilisateurs ; redémarrer une passerelle ; migrer, restaurer, reprendre et supprimer une passerelle. 
+Après avoir [installé une passerelle de données Power BI](service-gateway-install.md), vous la gérez en fonction de vos besoins. Dans cette rubrique, vous apprendrez à : ajouter et supprimer des sources de données et des utilisateurs ; redémarrer une passerelle ; migrer, restaurer, reprendre et supprimer une passerelle.
 
-Vous pouvez gérer une passerelle à l’aide de l’option **Gérer les passerelles** du service Power BI dans l’application de la passerelle sur votre ordinateur local, et avec des scripts PowerShell. Cet article se concentre sur le service Power BI. 
+Vous pouvez gérer une passerelle à l’aide de l’option **Gérer les passerelles** du service Power BI dans l’application de la passerelle sur votre ordinateur local, et avec des scripts PowerShell. Cet article se concentre sur le service Power BI.
 
 Si vous venez d’installer une passerelle, nous vous recommandons d’[ajouter une source de données](#add-a-data-source), puis d’[ajouter des utilisateurs](#add-users-to-a-data-source) afin d’accéder à la source de données.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: cef34e7be0767ce16b84b066663318b66bcbd2d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280550"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324918"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Se connecter à des sources de données pour les dataflows Power BI (préversion)
 
@@ -76,6 +76,7 @@ La catégorie **Base de données** comprend les connexions de données disponibl
 * Base de données SQL Server
 * Base de données Sybase
 * Base de données Teradata
+* Vertica
 
 La catégorie **Power BI** comprend les connexions de données disponibles suivantes pour les dataflows :
 
@@ -91,6 +92,7 @@ La catégorie **Azure** comprend les connexions de données disponibles suivante
 
 La catégorie **Services en ligne** comprend les connexions de données disponibles suivantes pour les dataflows :
 
+* Amazon Redshift
 * Common Data Service pour applications
 * Microsoft Exchange Online
 * Objets Salesforce
@@ -154,12 +156,8 @@ Votre script se connecte alors à la source de données que vous avez spécifié
 
 La liste suivante indique quels connecteurs vous pouvez actuellement utiliser en copiant et en collant la requête M dans une requête vide :
 
-* Amazon Redshift
 * SAP Business Warehouse 
-* SAP HANA
-* Analysis Services
 * Azure Analysis Services
-* Google Analytics
 * Adobe Analytics
 * ODBC
 * OLE DB
@@ -170,7 +168,6 @@ La liste suivante indique quels connecteurs vous pouvez actuellement utiliser en
 * Azure HDInsight (HDFS)
 * Fichier Hadoop (HDFS)
 * Informix (bêta)
-* Vertica
 
 C’est là tout ce qu’il faut savoir pour se connecter à des sources de données dans des dataflows Power BI !
 

@@ -1,20 +1,20 @@
 ---
 title: Créer un rapport Power BI pour Power BI Report Server
 description: Découvrez comment créer un rapport Power BI pour Power BI Report Server en quelques étapes simples.
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/19/2018
-ms.author: maggies
-ms.openlocfilehash: dd3da287d976b9fe84ab56b425a5f08fba31d224
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.author: maghan
+ms.openlocfilehash: 7d97e375f7743b381f222d64e230d71133060464
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288356"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324860"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Créer un rapport Power BI pour Power BI Report Server
 Vous pouvez stocker et gérer des rapports Power BI localement sur le portail web Power BI Report Server tout comme vous pouvez stocker des rapports Power BI dans le cloud, dans le service Power BI (https://powerbi.com)). Créez et modifiez des rapports dans Power BI Desktop, puis publiez-les sur le portail web. Les lecteurs au sein de votre organisation peuvent alors les consulter dans un navigateur ou dans une application mobile Power BI sur un appareil mobile.

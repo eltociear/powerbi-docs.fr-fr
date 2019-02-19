@@ -1,20 +1,20 @@
 ---
 title: 'Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)'
 description: Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Puis vous utilisez un assistant dans le Générateur de rapports pour créer un rapport paginé. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI.
-author: maggiesMSFT
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.author: maggies
-ms.openlocfilehash: 05805ea7b30f0ab0bd14265caecbb04a4e975300
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 15c7d9e922ef7041c6b0f021382cae8d2aca84e9
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296458"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325240"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)
 
@@ -107,7 +107,7 @@ Voici les conditions préalables pour le chargement de votre rapport paginé dan
 10. Dans la page **Créer une requête**, développez SalesLT, développez Tables, puis sélectionnez ces tables :
 
     - Adresse
-    - Customer
+    - Client
     - Produit
     - ProductCategory
     - SalesOrderDetail

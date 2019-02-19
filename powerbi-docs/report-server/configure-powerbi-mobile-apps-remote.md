@@ -1,20 +1,20 @@
 ---
 title: Configurer à distance l’accès d’une application mobile iOS à un serveur de rapports
 description: Découvrez comment configurer à distance les applications mobiles iOS pour votre serveur de rapports.
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/15/2018
-ms.author: maggies
-ms.openlocfilehash: 6a815d3b8042a53bd7196902e59019d3a6b61220
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.author: maghan
+ms.openlocfilehash: c50f9c482ba689fe81ee22b2b52564dec3cbf1d6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293577"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324366"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Configurer à distance l’accès d’une application mobile iOS Power BI à un serveur de rapports
 
@@ -35,10 +35,10 @@ Le tableau suivant détaille les paires.
 
 |Key  |Type  |Description  |
 |---------|---------|---------|
-| com.microsoft.powerbi.mobile.ServerURL | Chaîne | URL du serveur de rapports </br> Doit commencer par http/https |
-| com.microsoft.powerbi.mobile.ServerUsername | Chaîne | [facultatif] </br> Nom d’utilisateur à utiliser pour la connexion du serveur. </br> Si ce nom n’est pas renseigné, l’application demande à l’utilisateur de taper le nom d’utilisateur pour la connexion.| 
-| com.microsoft.powerbi.mobile.ServerDisplayName | Chaîne | [facultatif] </br> La valeur par défaut est « Report server » </br> Nom convivial utilisé dans l’application pour représenter le serveur | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Booléen | La valeur par défaut est True </br>Quand la valeur est « True », cela remplace toute définition de serveur de rapports déjà présente dans l’appareil mobile. Les serveurs existants qui sont déjà configurés sont supprimés. </br> Override défini sur True empêche également l’utilisateur de supprimer cette configuration. </br> La valeur « False » ajoute les valeurs envoyées (push), en conservant les paramètres existants. </br> Si la même URL de serveur est déjà configurée dans l’application mobile, l’application laisse la configuration en l’état. L’application ne demande pas à l’utilisateur de se réauthentifier pour le même serveur. |
+| com.microsoft.powerbi.mobile.ServerURL | Chaîne | URL du serveur de rapports <br> Doit commencer par http/https |
+| com.microsoft.powerbi.mobile.ServerUsername | Chaîne | [facultatif] <br> Nom d’utilisateur à utiliser pour la connexion du serveur. <br> Si ce nom n’est pas renseigné, l’application demande à l’utilisateur de taper le nom d’utilisateur pour la connexion.| 
+| com.microsoft.powerbi.mobile.ServerDisplayName | Chaîne | [facultatif] <br> La valeur par défaut est « Report server » <br> Nom convivial utilisé dans l’application pour représenter le serveur | 
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Booléen | La valeur par défaut est True <br>Quand la valeur est « True », cela remplace toute définition de serveur de rapports déjà présente dans l’appareil mobile. Les serveurs existants qui sont déjà configurés sont supprimés. <br> Override défini sur True empêche également l’utilisateur de supprimer cette configuration. <br> La valeur « False » ajoute les valeurs envoyées (push), en conservant les paramètres existants. <br> Si la même URL de serveur est déjà configurée dans l’application mobile, l’application laisse la configuration en l’état. L’application ne demande pas à l’utilisateur de se réauthentifier pour le même serveur. |
 
 Voici un exemple de définition de stratégie de configuration avec Intune.
 

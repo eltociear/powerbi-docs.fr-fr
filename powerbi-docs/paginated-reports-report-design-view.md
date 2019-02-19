@@ -1,20 +1,20 @@
 ---
 title: Découverte du mode Création de rapport pour les rapports paginés - Power BI (préversion)
 description: Le mode Création de rapport du Générateur de rapports est l’espace de conception pour la création de rapports paginés que vous pouvez publier dans le service Power BI.
-author: maggiesMSFT
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.author: maggies
-ms.openlocfilehash: 85950e2510147c3bed36d4911360f7c365c79da6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2ee381cae5bd0c0ed1e6a8cab1cd33361a05814f
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283526"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324810"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Découverte du mode Création de rapport pour les rapports paginés - Power BI (préversion)
 
@@ -22,12 +22,12 @@ Le mode Création de rapport du Générateur de rapports est l’espace de conce
 
 ![Mode Création du Générateur de rapports](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
-1.  [Volet des données de rapport](#report-data-pane) 
-2.  [Canevas de conception du rapport](#report-design-surface)  
-3.  [Volet des paramètres](#parameters-pane) 
-4.  [Volet des propriétés](#properties-pane) 
-5.  [Volet de regroupement](#grouping-pane) 
-6.  [Barre d’état du rapport actif](#current-report-status-bar)  
+1. [Volet des données de rapport](#report-data-pane) 
+2. [Canevas de conception du rapport](#report-design-surface)  
+3. [Volet des paramètres](#parameters-pane) 
+4. [Volet des propriétés](#properties-pane) 
+5. [Volet de regroupement](#grouping-pane) 
+6. [Barre d’état du rapport actif](#current-report-status-bar)  
   
 ## <a name="1-report-data-pane"></a>1 Volet des données de rapport  
  Dans le volet des données du rapport, vous définissez les données et les ressources du rapport dont vous avez besoin avant de concevoir la disposition de votre rapport. Par exemple, vous pouvez y ajouter des sources de données, des jeux de données, des champs calculés, des paramètres de rapport et des images.  

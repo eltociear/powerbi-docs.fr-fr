@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
-ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
+ms.openlocfilehash: c5915f4f2792496a1521a868180d4ffc2dca3557
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "55971668"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56248904"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Principal de service avec Power BI (préversion)
 
@@ -53,7 +53,7 @@ Vous ne pouvez utiliser le principal de service que si vos artefacts et ressourc
 
 Il existe des différences selon que vous utilisez un principal de service ou un compte principal standard (licence Power BI Pro) pour l’authentification. Les principales différences sont listées dans le tableau ci-dessous.
 
-| personnalisée | Compte d’utilisateur principal </br> (licence Power BI Pro) | Principal de service </br> (jeton d’application uniquement) |
+| personnalisée | Compte d’utilisateur principal <br> (licence Power BI Pro) | Principal de service <br> (jeton d’application uniquement) |
 |------------------------------------------------------|---------------------|-------------------|
 | Peut se connecter au service Power BI  | Oui | Non |
 | Activé dans le portail d’administration Power BI | Non | Oui |
@@ -146,7 +146,7 @@ Voici les étapes à suivre pour obtenir l’ID objet du principal de service à
 
 2. Ensuite, sous **Application managée dans l’annuaire local**, sélectionnez le nom de l’application que vous avez créée.
 
-   ![Application managée dans l’annuaire local](media/embed-service-principal/managed-application-in-local-directory.png)
+   ![Application managée dans le répertoire local](media/embed-service-principal/managed-application-in-local-directory.png)
 
     > [!Note]
     > L’ID objet dans l’image ci-dessus n’est pas celui utilisé avec le principal de service.

@@ -1,20 +1,20 @@
 ---
 title: Créer un rapport paginé pour Power BI Report Server
 description: Découvrez comment créer un rapport paginé pour Power BI Report Server en quelques étapes simples.
-author: maggiesMSFT
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.author: maggies
-ms.openlocfilehash: 9e3a45e7648fd38413c2d45582981bac5e91cd2a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.author: maghan
+ms.openlocfilehash: 135bd3c127135961016b78eb0156d49ec1c1967d
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284414"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324665"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Créer un rapport paginé pour Power BI Report Server
 Comme le suggère leur intitulé, les rapports paginés peuvent s’étendre sur plusieurs pages. Ils sont dans un format fixe et permettent une personnalisation précise. Les rapports paginés sont des fichiers .rdl.
@@ -44,7 +44,7 @@ Vous avez peut-être déjà installé le Générateur de rapports afin de créer
    * Vide
 4. Commençons par l’Assistant Graphique.
    
-    L’Assistant Graphique vous guide dans le processus de création d’un graphique de base dans un rapport. À partir de là, vous pouvez personnaliser votre rapport pratiquement sans limite.
+    L’Assistant Graphique vous guide dans le processus de création d’un graphique de base dans un rapport. À partir de là, vous pouvez personnaliser votre rapport pratiquement sans limité.
 
 ## <a name="step-2-go-through-the-chart-wizard"></a>Étape 2 : Exécuter l’Assistant Graphique
 L’Assistant Graphique vous guide dans les étapes de base de création d’une visualisation dans un rapport.

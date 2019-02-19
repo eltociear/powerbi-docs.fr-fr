@@ -1,22 +1,23 @@
 ---
 title: Présentation des rapports paginés dans Power BI Premium (Préversion)
 description: Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Ces rapports peuvent être imprimés ou partagés. Vous pouvez contrôler exactement la disposition des rapports. Ils affichent toutes les données dans une table, par exemple, même si la table s’étend sur plusieurs pages.
-author: maggiesMSFT
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 12/05/2018
-ms.author: maggies
-ms.openlocfilehash: 7ce0e90e3166ce6f84c5e53e05d56e9fcc4e790d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d3563b80813b0c08377e7ecaec89439197c2014f
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282837"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324612"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Présentation des rapports paginés dans Power BI Premium (Préversion)
+
 Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Ces rapports peuvent être imprimés ou partagés. Ils sont appelés « paginés », car ils sont mis en forme pour tenir sur une page. Ils affichent toutes les données dans une table, même si la table s’étend sur plusieurs pages. Ils sont parfois appelés « pixel parfait », car vous pouvez contrôler exactement leur mise en page. Les rapports paginés sont basés sur la technologie de rapport RDL dans SQL Server Reporting Services. Le Générateur de rapports est l’outil autonome pour la création de rapports paginés. 
 
 Les rapports paginés peuvent avoir de nombreuses pages. Par exemple, ce rapport compte 563 pages. Chaque page est mise en page exactement, avec une page par facture et des en-têtes et pieds de page récurrents.

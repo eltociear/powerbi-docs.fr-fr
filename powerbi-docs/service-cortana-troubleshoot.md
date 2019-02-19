@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d768956f26256bd06516981b2bae0ab17ef3ca90
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5aac4b32fc90720af4954dff2afa61243b1f1587
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296314"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249042"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Résoudre les problèmes de Cortana pour Power BI
 Cet article fait partie d’une série. Si cela n’est pas déjà le cas, nous vous recommandons de lire les trois articles suivants.
@@ -79,7 +79,7 @@ Vous rencontrez toujours des problèmes ?  Le moment est venu d’exécuter l�
 
    ![Carte de réponse](media/service-cortana-troubleshoot/power-bi-answer-card-new.png)
 
-   </br>
+   <br>
 
    ![Onglet Carte de réponse dans Power BI](media/service-cortana-troubleshoot/power-bi-answer-card2.png)
 4. Parfois, lorsque vous entrez quelque chose dans le champ **Énoncé**, pour la première fois, rien ne se produit. Cette opération revient à préparer le système. Vous indiquez à l’outil de résolution des problèmes qu’il doit s’activer. Coupez-collez ou retapez votre texte dans le champ **Énoncé**. Dans cet exemple, le nom de la carte de réponse est **Cortana stores** (Magasins Cortana). Le fait de coller ou de taper **Cortana Stores** dans l’outil génère un seul résultat qui s’affiche dans le champ **Interprétations**. Cliquez pour afficher la carte de réponse dans la fenêtre Cortana, en l’occurrence, **Cortana stores**.
