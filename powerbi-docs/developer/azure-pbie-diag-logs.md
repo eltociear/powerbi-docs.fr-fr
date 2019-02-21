@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: bdb9e2dcf5e8e22aaaa3bf35035b746777a387b9
-ms.sourcegitcommit: 1574ecba7530e6e0ee97235251a3138fb0e4789b
+ms.openlocfilehash: 93181a7ecaad0ec5bcd837f55ad7863fae53772c
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40126533"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249134"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Journalisation des diagnostics pour Power BI Embedded dans Azure
 
@@ -114,8 +114,8 @@ La catégorie de moteur indique à la ressource de journaliser les événements 
 |    Audit de déconnexion    |    Enregistre toutes les déconnexions des événements moteur depuis le démarrage de la trace.    |
 |    Error    |    Enregistrements tous les événements d’erreur moteur depuis le démarrage de la trace.    |
 
-</br>
-</br>
+<br>
+<br>
 
 | Nom de la propriété | Fin de la requête Vertipaq - Exemple | Description de la propriété |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -136,7 +136,7 @@ La catégorie de moteur indique à la ressource de journaliser les événements 
 | ProgressTotal | 0 | Total de progression. |
 | IntegerData | 0 | Données de type integer. |
 | Gravité | 0 | Niveau de gravité d'une exception. |
-| Opération réussie ! | 1 | 1 = réussite. 1 = échec (par exemple, 0 signifie le succès d'une vérification des autorisations, et 0 signifie l'échec de cette vérification). |
+| Succès | 1 | 1 = réussite. 1 = échec (par exemple, 0 signifie le succès d'une vérification des autorisations, et 0 signifie l'échec de cette vérification). |
 | Error | 0 | Numéro d'erreur d'un événement donné. |
 | TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Données texte associées à l'événement. |
 | ConnectionID | 3 | ID de connexion unique. |

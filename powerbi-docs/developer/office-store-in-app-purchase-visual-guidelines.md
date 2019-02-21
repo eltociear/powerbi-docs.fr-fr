@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 280f60d0ae60a445d94a640af974a2624c73bb83
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430001"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408066"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Marche à suivre pour les visuels Power BI avec des achats supplémentaires
 
@@ -22,6 +22,10 @@ Jusqu’à une date récente, la **Place de marché (AppSource)** acceptait uniq
 
 > [!Note]
 > Pour que le visuel soit certifié, il ne doit pas accéder à des services externes ni à des ressources externes.
+
+> [!Note]
+> Tous les visuels gratuits doivent conserver les mêmes fonctionnalités gratuites que celles proposées précédemment. Vous pouvez compléter les fonctionnalités gratuites existantes par des fonctionnalités avancées payantes facultatives. Nous vous recommandons de soumettre les visuels IAP avec les fonctionnalités avancées en tant que nouveaux visuels au lieu de mettre à jour les fonctionnalités gratuites existantes.
+
 
 ## <a name="whats-changing-in-the-submission-process"></a>Qu’est-ce qui change dans le processus de soumission ?
 

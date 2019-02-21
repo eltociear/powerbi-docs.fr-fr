@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 02/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 68d350035732d8335079bf76a859919d696e2721
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 5e1bd67ba14ed35a97d91e5ed76f7a3bd8de56ea
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223671"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324811"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Préparation des données en libre-service dans Power BI (préversion)
 
@@ -52,6 +52,9 @@ Voici quelques exemples de la manière dont les flux de données peuvent fonctio
 ## <a name="how-to-use-dataflows"></a>Comment utiliser des flux de données
 
 La section précédente décrivait quelques façons d'utiliser des flux de données pour créer rapidement des analyses puissantes dans Power BI. Dans cette section, vous pouvez voir à quelle vitesse vous pouvez créer des insights à l’aide de flux de données dans une organisation ainsi qu’avoir un aperçu rapide de la manière dont des professionnels du décisionnel peuvent créer leurs propres flux de données et personnaliser des insights de leur propre organisation.
+
+> [!NOTE]
+> Vous devez avoir un compte Power BI payant (par exemple, un compte Power BI Pro ou Power BI Premium) pour utiliser des flux de données, mais vous n’êtes pas facturé séparément pour l’utilisation des flux de données. 
 
 ### <a name="extend-the-common-data-model-for-your-business-needs"></a>Étendre le modèle de données commun pour les besoins de votre entreprise
 Dans les organisations qui veulent étendre le Common Data Model (CDM), les flux de données permettent aux professionnels du décisionnel de personnaliser les entités standards ou d’en créer de nouvelles. Cette approche libre-service de la personnalisation du modèle de données peut ensuite servir, avec des flux de données, à créer des applications et des tableaux de bord Power BI adaptés à une organisation.

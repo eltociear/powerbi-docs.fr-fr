@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0a2c1cb446a0a975a574f5d3f2684ddf80f4f273
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9c88a09eccd887007df8d2539be861b964c31b5f
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274717"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324481"
 ---
 # <a name="what-are-power-bi-gateways"></a>Présentation des passerelles Power BI
 
@@ -53,7 +53,7 @@ La passerelle installée s’exécute comme un service Windows, la **passerelle 
 Requêtes et flux de données :
 
 1. Une requête est créée par le service de cloud avec les informations d’identification chiffrées de la source de données locale. Elle est ensuite envoyée à une file d’attente pour être traitée par la passerelle.
-2. Le service cloud de passerelle analyse la requête et l’envoie (push) à Azure Service Bus.
+2. Le service cloud de passerelle analyse la requête et l’envoie (push) à Azure Service Bus. Power BI gère Service Bus pour vous. Vous n’avez donc pas de frais supplémentaires à payer, ni d’autres étapes de configuration à effectuer.
 3. La passerelle de données locale interroge Azure Service Bus pour savoir s’il existe des requêtes en attente.
 4. La passerelle récupère la requête, déchiffre les informations d’identification et les utilise pour se connecter aux sources de données.
 5. Elle envoie la requête à la source de données afin de l’exécuter.

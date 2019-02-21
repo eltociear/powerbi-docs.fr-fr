@@ -1,3 +1,16 @@
+---
+author: mgblythe
+ms.service: powerbi
+ms.topic: include
+ms.date: 02/15/2019
+ms.author: mblythe
+ms.openlocfilehash: 44ef0aa9d436f3a8a02f9a6b831847d5c996558a
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56333849"
+---
 ## <a name="limitations"></a>Limites
 
 Voici une liste des limites actuelles pour la sécurité au niveau des lignes sur les modèles cloud.
@@ -8,7 +21,7 @@ Voici une liste des limites actuelles pour la sécurité au niveau des lignes su
 
 * Seules les connexions ETL et DirectQuery sont prises en charge. Les connexions actives à Analysis Services sont gérées dans le modèle local.
 
-* Cortana et le moteur Questions et réponses ne sont pour l’instant pas pris en charge avec la sécurité au niveau des lignes. La zone d’entrée de Q&R n’est pas disponible pour les tableaux de bord si la sécurité au niveau des lignes est configurée sur tous les modèles. Cela est prévu, mais aucune date n’est disponible pour l’instant.
+* Cortana n’est pas actuellement pris en charge avec la sécurité au niveau des lignes (SNL).
 
 ## <a name="known-issues"></a>Problèmes connus
 
@@ -20,4 +33,4 @@ Il existe un problème connu : vous obtenez un message d’erreur quand vous te
 
 1. Anna reçoit une erreur.
 
-**Solution de contournement :** republiez le fichier Power BI Desktop à partir du service Power BI jusqu’à ce que ce problème soit résolu. Pour cela, sélectionnez **Obtenir des données** > **Fichiers**.
+**Solution de contournement** : republiez le fichier Power BI Desktop à partir du service Power BI jusqu’à ce que ce problème soit résolu. Pour cela, sélectionnez **Obtenir des données** > **Fichiers**.

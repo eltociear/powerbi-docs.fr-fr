@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: 868c1226b70bd12762c20c3af5b0ee1ff59857e5
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086468"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408181"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -46,7 +46,7 @@ Le portail compte sept onglets. Le reste de cet article fournit des informations
 * [Codes incorporés](#embed-codes)
 * [Visuels organisationnels](#organization-visuals)
 
-## <a name="usage-metrics"></a>Métriques d’utilisation
+## <a name="usage-metrics"></a>Mesures d’utilisation
 
 Les **Métriques d’utilisation** vous permettent de superviser l’utilisation de Power BI dans votre organisation. Il permet également de voir les utilisateurs et les groupes de votre organisation qui sont les plus actifs dans Power BI.
 
@@ -172,11 +172,11 @@ L’image suivante présente l’option d’exportation de données à partir d�
 > [!NOTE]
 > La désactivation du paramètre **Exporter des données** empêche également les utilisateurs d’utiliser la fonctionnalité **Analyser dans Excel** ainsi que la connexion active du service Power BI.
 
-### <a name="export-reports-as-powerpoint-presentations"></a>Exporter les rapports comme présentations PowerPoint
+### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Exporter les rapports comme présentations PowerPoint ou documents PDF
 
-Les utilisateurs de l’organisation peuvent exporter des rapports Power BI sous forme de fichiers PowerPoint. [En savoir plus](consumer/end-user-powerpoint.md)
+Les utilisateurs de l’organisation peuvent exporter des rapports Power BI sous forme de fichiers PowerPoint ou de documents PDF. [En savoir plus](consumer/end-user-powerpoint.md)
 
-L’image suivante présente le menu **Fichier** qui s’affiche pour un rapport quand le paramètre **Exporter les rapports comme présentations PowerPoint** est activé.
+L’image suivante présente le menu **Fichier** qui s’affiche pour un rapport quand le paramètre **Exporter les rapports comme présentations PowerPoint ou documents PDF** est activé.
 
 ![Exporter les rapports comme présentations PowerPoint](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
@@ -202,9 +202,9 @@ L’image suivante montre l’option **Toute mon organisation** lors de la créa
 
 ![Publier un pack de contenu vers l’organisation](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-organizational-content-packs-and-apps"></a>Créer des modèles de packs de contenu et d’applications d’organisation
+### <a name="create-template-apps"></a>Créer des applications modèles
 
-Les utilisateurs de l’organisation peuvent créer des packs de contenu modèles qui utilisent des jeux de données conçus dans Power BI Desktop. [En savoir plus](template-content-pack-authoring.md)
+Les utilisateurs de l’organisation peuvent créer des applications modèles qui utilisent des jeux de données conçus dans Power BI Desktop. En savoir plus sur les [applications modèles](template-content-pack-authoring.md)
 
 ### <a name="push-apps-to-end-users"></a>Effectuer une transmission de type push des applications pour les utilisateurs finaux
 
@@ -287,7 +287,7 @@ Les utilisateurs de l’organisation peuvent étiqueter les tableaux de bord ave
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
-## <a name="developer-settings"></a>Paramètres de développeur
+## <a name="developer-settings"></a>Paramètres de développement
 
 ### <a name="embed-content-in-apps"></a>Incorporer du contenu dans les applications
 
@@ -301,6 +301,18 @@ Les utilisateurs de l'organisation peuvent créer et utiliser des dataflows. Pou
 
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
+
+## <a name="template-apps-settings-preview"></a>Paramètres des applications modèles (préversion)
+
+Deux paramètres contrôlent les applications modèles. 
+
+![Paramètres des applications modèles dans le portail d’application Power BI](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+
+Le premier paramètre, **Créer des applications modèles**, contrôle quels utilisateurs dans votre organisation sont autorisés à créer des applications modèles. Les créateurs d’applications modèles peuvent ensuite distribuer leurs nouvelles applications à des clients extérieurs à votre organisation via AppSource ou une autre méthode de distribution.
+
+![Portail d’administration Power BI, paramètre Créer des applications modèles](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+
+Avec le second paramètre, **Installer des applications modèles**, vous contrôlez quels utilisateurs dans votre organisation sont autorisés à télécharger et installer des applications modèles provenant d’AppSource ou d’une autre source
 
 ## <a name="capacity-settings"></a>Paramètres de capacité
 

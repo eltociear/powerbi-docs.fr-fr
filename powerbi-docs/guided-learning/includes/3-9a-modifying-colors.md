@@ -14,7 +14,7 @@ Vous pouvez également modifier la couleur selon une valeur ou une mesure. Pour 
 
 ![](media/3-9a-modifying-colors/3-9a_4.png)
 
-En outre, vous pouvez modifier l’échelle et les couleurs qui sont utilisées pendant le remplissage des couleurs d’éléments de données. Vous pouvez également sélectionner une échelle divergente en positionnant le curseur Divergent sur Activé, et associer ainsi à la couleur une échelle reposant sur trois couleurs. Vous pouvez également définir les valeurs *Minimum*, *Centre* et *Maximum* affichées sur votre graphique.
+En outre, vous pouvez modifier l’échelle et les couleurs qui sont utilisées pendant le remplissage des couleurs d’éléments de données. Vous pouvez également sélectionner une échelle divergente en positionnant le curseur Divergent sur Activé, et associer ainsi à la couleur une échelle reposant sur trois couleurs. Vous pouvez aussi définir les valeurs *Minimum*, *Centre* et *Maximum* affichées sur votre graphique.
 
 ![](media/3-9a-modifying-colors/3-9a_5.png)
 

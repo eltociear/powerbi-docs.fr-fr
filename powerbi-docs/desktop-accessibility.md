@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18872e65154f70e882c4f6f60c04420b17038d32
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280053"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249111"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -141,6 +141,11 @@ Dans nos efforts constants pour améliorer l’accessibilité, les expériences 
 ### <a name="pane-navigation"></a>Navigation dans les volets
 | Pour           | Appuyer sur                |
 | :------------------- | :------------------- |
+| Sélection multiple | Ctrl + espace |
+| Réduire une seule table | Flèche gauche |
+| Développer une seule table | Flèche droite |
+| Réduire toutes les tables | Alt + Maj + 1 |
+| Développer toutes les tables | Alt + Maj + 9 |
 | Ouvrir un menu contextuel | <ul><li>Clavier Windows : Clé de contexte Windows + F10.  La touche de contexte Windows se trouve entre la touche Alt de gauche et la touche Flèche Gauche</li><li>Autre clavier : Maj + F10</li></ul> |
 
 ### <a name="slicer"></a>Segment

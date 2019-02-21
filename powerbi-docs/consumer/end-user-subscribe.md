@@ -8,14 +8,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 12/14/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: df167f8693708c08bc44e935cff184917d8aaf54
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 26ba6d0ea23451863d05b13a79e57d483b15881f
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794324"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298842"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>S’abonner à un rapport ou à un tableau de bord dans le service Power BI 
 Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir les e-mails : une fois par jour, une fois par semaine ou quand les données sont actualisées. Vous pouvez même définir une heure spécifique à laquelle Power BI envoie les e-mails ou exécuter cette tâche tout de suite.  
@@ -73,6 +73,7 @@ Vous êtes le seul à pouvoir gérer vos abonnements. Sélectionnez à nouveau *
 Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le rapport est supprimé par le propriétaire ou si le compte d’utilisateur qui a servi à créer l’abonnement est supprimé.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+* Les tableaux de bord comportant plus de 25 vignettes épinglées, ou quatre pages de rapport dynamique épinglées, risquent de ne pas s’afficher entièrement dans les e-mails d’abonnement envoyés aux utilisateurs. Nous vous conseillons de limiter le nombre de vignettes épinglées à moins de 25 et le nombre de pages de rapport dynamique épinglées à moins de quatre pour garantir un affichage correct dans les e-mails.  
 * Pour les abonnements à l’e-mail du tableau de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, celles-ci ne s’affichent pas.  Pour les abonnements à l’e-mail des rapports, si le jeu de données utilise SNL, vous ne pouvez pas créer d’abonnement.
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devrez recréer votre abonnement.
 * Si vous ne pouvez pas utiliser la fonctionnalité d’abonnement, contactez votre administrateur système. Votre organisation peut avoir désactivé cette fonctionnalité pour l’authentification ou d’autres raisons.  

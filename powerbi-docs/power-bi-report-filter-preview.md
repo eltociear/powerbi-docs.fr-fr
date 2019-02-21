@@ -7,21 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 02/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 13ab7ccf690c834168da8f9c6dcb0932178651ca
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
+ms.openlocfilehash: b130ccbe6b3fe6fa09b9a4c4efe388f79350c500
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482703"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298819"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>La nouvelle expérience de filtre dans les rapports Power BI (préversion)
 
 Cet article décrit la nouvelle expérience de filtre : Les filtres dans Power BI bénéficient de nouvelles fonctionnalités et d’une nouvelle conception. Lorsque vous concevez des rapports dans Power BI Desktop ou dans le service Power BI, vous pouvez faire en sorte que le volet Filtres ressemble à l’ensemble du rapport et interagisse avec celui-ci. Dans la nouvelle expérience, l’ancien volet Filtres agit en tant que volet d’édition de filtre et le nouveau volet Filtre est le seul que vos consommateurs de rapports peuvent afficher. 
  
 ![Affichage par défaut (aucune personnalisation supplémentaire appliquée)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
+
+> [!NOTE]
+> La nouvelle expérience de filtres est en préversion. Les nouvelles builds peuvent écraser la mise en forme que vous avez déjà définie.
 
 En tant que concepteur de rapports, voici ce que vous pouvez faire avec les nouveaux filtres :
 
@@ -83,6 +86,7 @@ Une grande partie de cette nouvelle expérience est que vous pouvez désormais m
 - Transparence d’arrière-plan
 - Bordure du volet de filtre activée ou désactivée
 - Couleur de bordure du volet de filtre
+- Titre du volet de filtre, et police, couleur et taille de texte de l’en-tête
 
 Vous pouvez également mettre en forme ces éléments pour les cartes de filtre, selon qu’elles sont appliquées (définies sur quelque chose) ou disponibles (désactivées) : 
 
@@ -90,6 +94,8 @@ Vous pouvez également mettre en forme ces éléments pour les cartes de filtre,
 - Transparence d’arrière-plan
 - Bordure : activée ou désactivée
 - Couleur de la bordure
+- Police, couleur et taille de texte
+- Couleur de la zone d’entrée
 
 ### <a name="set-the-format-for-the-filters-pane-and-cards"></a>Définir le format pour les cartes et le volet Filtres
 
@@ -100,13 +106,13 @@ Vous pouvez également mettre en forme ces éléments pour les cartes de filtre,
 
 1. Développez le **volet Filtre** pour définir la couleur de l’arrière-plan, l’icône et la bordure gauche de la page du rapport.
 
-    ![Développer le volet Filtre](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
+    ![Développer le volet Filtre](media/power-bi-report-filter-preview/power-bi-filter-format-pane-font.png)
 
 1. Développez **Cartes de filtre** pour définir la couleur et la bordure des options **Disponible** et **Appliqué**. Si les cartes disponibles et appliquées sont de différentes couleurs, les filtres appliqués deviennent évidents. 
   
-    ![Développer la carte de filtre](media/power-bi-report-filter-preview/power-bi-filter-format-card.png)
+    ![Développer la carte de filtre](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
-## <a name="view-filters-for-a-visual-in-reading-mode"></a>Afficher les filtre pour un visuel en mode Lecture
+## <a name="view-filters-for-a-visual-in-reading-mode"></a>Afficher les filtres pour un visuel en mode Lecture
 
 En mode Lecture, pointez sur l’icône de filtre d’un visuel pour voir une fenêtre contextuelle avec tous les filtres, les segments et ainsi de suite, qui affectent ce visuel. La mise en forme de la fenêtre contextuelle est identique à la mise en forme du volet de filtre. 
 

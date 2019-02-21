@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f8b9f775b43f2c1b26b7ef56c5bb0985fc3f7ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d4f1936f02edf4ece60b4761d4e541801384a5d2
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292044"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249341"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
 Quand vous importez plusieurs tables, vous êtes souvent amené à effectuer des analyses impliquant les données de ces tables. Les relations entre ces tables sont nécessaires pour obtenir des résultats précis et afficher les informations correctes dans vos rapports. Power BI Desktop facilite la création de ces relations. Dans la plupart des cas, vous n’avez rien à faire ; la fonctionnalité Détection automatique se charge de tout. Toutefois, dans certains cas, vous pouvez être amené à créer des relations vous-même ou à apporter des modifications à une relation. Dans les deux cas, il est important de comprendre le fonctionnement des relations dans Power BI Desktop et comment les créer et les modifier.
@@ -58,6 +58,8 @@ Quand vous créez ou modifiez une relation, vous pouvez configurer des options s
 **Plusieurs à un (\*:1)**  : il s’agit du type par défaut, le plus courant. La colonne d’une table peut avoir plusieurs instances d’une valeur, tandis que la table connexe, souvent appelée table de recherche, n’a qu’une seule instance d’une valeur donnée.
 
 **Un à un (1:1)** : la colonne d’une table n’a qu’une seule instance d’une valeur donnée et la table connexe n’a qu’une seule instance d’une valeur donnée.
+
+**Relations plusieurs à plusieurs** : Avec les modèles composites, vous pouvez établir des relations plusieurs à plusieurs entre les tables. Cette approche supprime la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations avec une cardinalité plusieurs à plusieurs](https://docs.microsoft.com/power-bi/desktop-many-to-many-relationships). 
 
 Pour plus d’informations sur la modification de la cardinalité, consultez la section Présentation des options supplémentaires plus loin dans cet article.
 

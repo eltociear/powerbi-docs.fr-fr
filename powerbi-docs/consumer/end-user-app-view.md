@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: b48feeaacc5ec0beff3b9b250f22b1aa605de9f7
-ms.sourcegitcommit: 6c75e38660b1ab4c1af355c85709859ffde09e25
+ms.openlocfilehash: f4e6f0204ed9832a3ed3c3ed8347a44300f606df
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068048"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249387"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer et utiliser des applications avec des tableaux de bord et des rapports dans Power BI
 Maintenant que vous avez des [connaissances de base sur les applications](end-user-apps.md), voyons comment ouvrir et utiliser celles-ci. 
@@ -25,7 +25,7 @@ Rappelez-vous qu’il existe plusieurs façons d’obtenir une nouvelle applicat
 
 Dans Power BI sur votre appareil mobile, vous pouvez uniquement installer une application à partir d’un lien direct, et non à partir d’AppSource. Si l’auteur de l’application installe l’application automatiquement, vous voyez celle-ci dans votre liste d’applications.
 
-### <a name="install-an-app-from-a-direct-link"></a>Installer une application à partir d’un lien direct
+## <a name="install-an-app-from-a-direct-link"></a>Installer une application à partir d’un lien direct
 Pour installer une nouvelle application, le moyen le plus simple consiste à recevoir un e-mail de l’auteur de l’application contenant un lien direct.  
 
 **Sur votre ordinateur** 
@@ -40,8 +40,8 @@ Quand vous sélectionnez le lien qui figure dans l’e-mail sur votre appareil m
 
 ![Liste de contenu d’application sur l’appareil mobile](./media/end-user-app-view/power-bi-app-index-it-spend-360.png)
 
-### <a name="get-the-app-from-microsoft-appsource"></a>Obtenir l’application à partir de Microsoft AppSource
-Vous pouvez également rechercher et installer des applications à partir de Microsoft AppSource. Seules les applications auxquelles vous avez accès sont présentées (l’auteur de l’application vous a donné son autorisation ou l’a donnée à tout le monde).
+## <a name="get-the-app-from-microsoft-appsource"></a>Obtenir l’application à partir de Microsoft AppSource
+Vous pouvez également rechercher et installer des applications à partir de Microsoft AppSource. Seules les applications auxquelles vous avez accès sont présentées (l’auteur des applications vous a donné son autorisation ou l’a donnée à tout le monde).
 
 1. Sélectionnez **Applications** ![Applications dans le volet de navigation de gauche](./media/end-user-apps/power-bi-apps-bar.png) > **Obtenir des applications**. 
    

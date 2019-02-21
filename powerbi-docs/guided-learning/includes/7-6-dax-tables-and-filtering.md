@@ -21,7 +21,7 @@ Vous pouvez combiner des fonctions de table dans votre expression, à condition 
 
 Cette expression place un filtre sur l’intégralité de la *table*, en ignorant tout contenu de filtre actuel.
 
-La fonction DISTINCT retourne les valeurs distinctes d’une colonne qui sont également visibles dans le contexte actuel. Ainsi, dans l’exemple d’expression DAX ci-dessus, si vous utilisez la fonction **ALL** dans l’expression, les filtres sont ignorés, et si vous remplacez la fonction **ALL** par la fonction **DISTINCT**, les filtres sont observés.
+La fonction DISTINCT retourne les valeurs distinctes d’une colonne qui sont également visibles dans le contexte actuel. Ainsi, dans l’exemple d’expression DAX ci-dessus, si vous utilisez la fonction **ALL** dans l’expression, les filtres sont ignorés, et si vous remplacez la fonction **ALL** par la fonction **DISTINCT**, les filtres sont appliqués.
 
 ## <a name="counting-values-with-dax"></a>Compter les valeurs avec DAX
 Une question courante à laquelle les générateurs de rapports Power BI veulent répondre est la suivante :

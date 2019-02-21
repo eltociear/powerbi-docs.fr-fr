@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4f9de49619a26e17fbdf2b0df47bc56ba23f4d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279317"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325011"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Informations approfondies sur la passerelle de données locale
 Les utilisateurs de votre organisation peuvent accéder aux données locales (auxquelles ils ont déjà accès), mais avant qu’ils puissent se connecter à votre source de données locale, vous devez installer et configurer une passerelle de données locale. La passerelle favorise une communication rapide et sécurisée en arrière-plan entre un utilisateur dans le cloud et votre source de données locale, dans les deux sens.
@@ -90,7 +90,7 @@ L’utilisation d’Azure AD Connect permet de vérifier que les UPN d’AAD et 
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>C’est là que la passerelle entre en scène.
-La passerelle fait office de pont entre le cloud et votre serveur local. Le transfert de données entre le cloud et la passerelle est sécurisé au moyen d’[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus crée un canal sécurisé entre le cloud et votre serveur local via une connexion sortante sur la passerelle.  Vous n’avez pas besoin d’ouvrir une connexion entrante sur votre pare-feu local.
+La passerelle fait office de pont entre le cloud et votre serveur local. Le transfert de données entre le cloud et la passerelle est sécurisé au moyen d’[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus crée un canal sécurisé entre le cloud et votre serveur local via une connexion sortante sur la passerelle.  Vous n’avez pas besoin d’ouvrir une connexion entrante sur votre pare-feu local. Power BI gère Service Bus pour vous. Vous n’avez donc pas de frais supplémentaires à payer, ni d’autres étapes de configuration à effectuer.
 
 Si vous avez une source de données Analysis Services, vous devez installer la passerelle sur un ordinateur associé à la même forêt ou au même domaine que votre serveur Analysis Services.
 

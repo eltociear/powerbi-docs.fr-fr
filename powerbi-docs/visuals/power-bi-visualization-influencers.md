@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a82bbc3e4b31dca0a304c1d3f64d4bc63e4e7fb3
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086767"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325148"
 ---
 # <a name="key-influencers-visualization"></a>Visualisation des influenceurs clés
 Le visuel d’influenceurs clés vous aide à comprendre les facteurs qui affectent une métrique qui vous intéresse. Il analyse vos données, classe les facteurs qui sont importants et les affiche sous forme d’influenceurs clés. Par exemple, imaginez que vous aimeriez savoir ce qui influence le renouvellement du personnel. L’un des facteurs peut être la longueur du contrat d’emploi et un autre peut être l’âge de l’employé. 
@@ -167,11 +167,11 @@ Dans ce groupe, 74,3 % ont donné une faible évaluation. Le client moyen donne
  
 Le visuel Influenceurs clés est actuellement en préversion publique et présente plusieurs limitations que les utilisateurs doivent connaître. Les fonctionnalités suivantes ne sont pas disponibles : 
 - Analyse des métriques qui sont des agrégats/mesures 
-- Utilisation du visuel de manière incorporée 
-- Utilisation du visuel sur Power BI Mobile 
+- Utilisation du visuel dans Power BI Embedded
+- Utilisation du visuel dans les applications mobiles Power BI
 - Prise en charge de la sécurité au niveau des lignes (SNL) 
 - Prise en charge de DirectQuery 
-- Prise en charge des requêtes actives 
+- Prise en charge des connexions actives 
  
 **Je reçois une erreur qui indique qu’aucun influenceur/segment n’a été trouvé. Pourquoi ?**  
 
@@ -247,15 +247,16 @@ Ceci est dû au fait que la visualisation prend aussi en considération le nombr
 
 **Comment les influenceurs clés sont calculés ?**
 
-En arrière-plan, la visualisation d’intelligence artificielle exécute une régression logistique pour calculer les influenceurs clés. Une régression logistique est un modèle statistique qui compare différents groupes. Si nous recherchions ce qui motive les faibles évaluations, la régression logistique examinerait en quoi les clients qui ont attribué un faible score diffèrent de ceux ayant attribué un score élevé. Si nous avions plusieurs catégories (score élevé, score neutre, score faible), nous examinerions en quoi les clients qui ont donné une faible évaluation diffèrent des autres (c’est-à-dire de ceux ayant donné une évaluation élevée ou neutre). 
+En arrière-plan, la visualisation d’intelligence artificielle utilise [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) pour exécuter une régression logistique qui calcule les influenceurs clés. Une régression logistique est un modèle statistique qui compare différents groupes. Si nous recherchions ce qui motive les faibles évaluations, la régression logistique examinerait en quoi les clients qui ont attribué un faible score diffèrent de ceux ayant attribué un score élevé. Si nous avions plusieurs catégories (score élevé, score neutre, score faible), nous examinerions en quoi les clients qui ont donné une faible évaluation diffèrent des autres (c’est-à-dire de ceux ayant donné une évaluation élevée ou neutre). 
  
 La régression logistique recherche des modèles dans les données, autrement dit des indices suggérant en quoi les clients qui ont donné une faible évaluation peuvent différer de ceux ayant donné une évaluation élevée. Elle pourrait par exemple détecter que les clients qui ont de nombreux tickets de support présentent un pourcentage beaucoup plus élevé de faibles évaluations que ceux qui en ont peu ou aucun.
  
 La régression logistique prend également en compte le nombre de points de données présents. Si, par exemple, les clients qui jouent un rôle d’administrateur attribuent des scores proportionnellement plus négatifs, mais qu’il n’y a que quelques administrateurs, cela ne sera pas considéré comme un facteur d’influence car il n’y aura pas assez de points de données disponibles pour déduire un modèle. Un test statistique (test de Wald) est utilisé pour déterminer si un facteur est considéré comme un influenceur. Le visuel utilise une valeur p de 0,05 pour déterminer le seuil. 
- 
+
+
 **Comment les segments sont calculés ?**
 
-En arrière-plan, la visualisation d’intelligence artificielle exécute un arbre de décision pour trouver des sous-groupes intéressants. L’objectif de l’arbre de décision est d’obtenir un sous-groupe de points de données qui est relativement élevé dans la métrique qui nous intéresse (par exemple, les clients ayant donné une faible évaluation). 
+En arrière-plan, la visualisation d’intelligence artificielle utilise [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) pour exécuter un arbre de décision afin de trouver des sous-groupes intéressants. L’objectif de l’arbre de décision est d’obtenir un sous-groupe de points de données qui est relativement élevé dans la métrique qui nous intéresse (par exemple, les clients ayant donné une faible évaluation). 
 
 L’arbre de décision prend chaque facteur explicatif et tente d’identifier quel facteur lui donnera la meilleure « division ». Par exemple, si nous filtrons les données pour inclure uniquement les grandes entreprises, cela permettra-il de séparer les clients qui nous ont donné une évaluation élevée de ceux qui nous en ont donné une faible ? Ou peut-être vaudrait-il mieux filtrer les données pour inclure uniquement les clients qui ont commenté sur la sécurité ? 
 

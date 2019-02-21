@@ -8,15 +8,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: c18257f1f4e4e3f325c8d4d895e3b6abf88e900c
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 1aaa57006b9a5aac2b077d3326ed6a39e6a4206d
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794991"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298865"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exporter des rapports Power BI au format PDF
 Power BI vous permet de publier votre rapport au format PDF et de créer facilement un document basé sur votre rapport. Quand vous **exportez au format PDF**, chaque page du rapport Power BI devient une page individuelle du document PDF.
@@ -28,6 +28,10 @@ Dans le service Power BI, sélectionnez un rapport pour l’afficher dans le ca
 
     ![Sélection de Fichier dans la barre de menus, flèche pointant vers Exporter au format PDF](media/end-user-pdf/power-bi-export-pdf.png)
 
+    Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Vue actuelle** ou **Vue par défaut**.  L’option **Vue actuelle** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre.  La plupart des utilisateurs choisissent cette option.  Vous pouvez aussi sélectionner l’option **Vue par défaut**, qui exporte le rapport dans son état initial (l’état au moment du partage par l’auteur), sans refléter les modifications que vous avez apportées à cet état initial.
+    
+    En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés.  Cochez cette case si vous souhaitez exporter uniquement les onglets du rapport qui sont visibles dans votre navigateur.  Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation.  Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués.  Une fois que vous avez effectué vos sélections, cliquez sur le bouton Exporter pour continuer.
+    
     Une barre de progression s’affiche en haut à droite. L’exportation peut prendre quelques minutes. Pendant ce temps, vous pouvez continuer à travailler dans Power BI.
 
     ![Messages de progression de l’exportation](media/end-user-pdf/power-bi-export-message.png)
@@ -43,8 +47,6 @@ C’est tout. Vous pouvez télécharger le fichier et l’ouvrir avec n’import
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Voici quelques considérations et limitations à prendre en compte quand vous utilisez la fonctionnalité **Exporter au format PDF**.
-
-- L’interactivité dans la session (mise en surbrillance, filtrage, exploration, etc.) n’est pas encore prise en charge lors de l’exportation au format PDF. Le fichier PDF exporté montre les visuels d’origine tels qu’ils ont été enregistrés dans le rapport. Si vous avez appliqué des filtres et des segments et que vous souhaitez les conserver dans l’exportation, enregistrez le rapport et procédez à l’exportation.
 
 * Les **éléments visuels R** ne sont actuellement pas pris en charge. Dans le fichier PDF, ces visuels sont vides et affichent un message d’erreur.  
 

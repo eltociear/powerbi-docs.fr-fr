@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 02/14/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 509eebfdf2d96a2cc77d5c9413c664a10309ab9c
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216423"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325037"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
 Les **signets** de Power BI permettent de capturer la vue actuellement configurée d’une page de rapport, filtrage et état des visuels compris, puis de revenir à cet état en sélectionnant simplement le signet enregistré. 
@@ -44,7 +44,7 @@ Lorsque vous créez un signet, les éléments suivants sont enregistrés :
 
 * Page actuelle
 * Filtres
-* Segments, y compris le type de segments (par exemple, liste déroulante ou liste) et l’état des segment
+* Segments, y compris le type de segments (par exemple, liste déroulante ou liste) et l’état des segments
 * État de sélection des visuels (par exemple, filtres de mise en surbrillance croisée)
 * Ordre de tri
 * Emplacement d’exploration
@@ -61,7 +61,7 @@ Configurez une page de rapport comme vous souhaitez qu’elle apparaisse dans le
 
 Une fois que vous avez un signet, vous pouvez l’afficher en cliquant simplement dessus dans le volet **Signets**. 
 
-Vous pouvez également choisir si chaque signet appliquera des propriétés de *données*, comme des filtres et des segments, des propriétés *d’affichage*, comme À la une et sa visibilité, et les modifications de la page représentant la page qui était visible lors de l’ajout du signet. Ces fonctionnalités sont utiles si vous utilisez les signets pour naviguer entre les types de visuels. Dans ce cas, vous devrez sans doute désactiver les propriétés de données, afin que les filtres ne soient pas réinitialisés lorsque les utilisateurs modifient les types de visuels. 
+Vous pouvez également choisir si chaque signet appliquera des propriétés de *données*, comme des filtres et des segments, des propriétés *d’affichage*, comme À la une et sa visibilité, et les modifications de la page représentant la page qui était visible lors de l’ajout du signet. Ces fonctionnalités sont utiles si vous utilisez des signets pour naviguer entre les vues de rapport ou les sélections de visuels. Dans ce cas, vous pouvez désactiver les propriétés de données afin d’empêcher la réinitialisation des filtres quand les utilisateurs changent de vues en sélectionnant un signet. 
 
 Pour effectuer ces modifications, sélectionnez les points de suspension en regard du nom du signet, comme illustré dans l’image précédente, puis sélectionnez ou désélectionnez les coches en regard de *Données*, *Affichage* et autres contrôles. 
 

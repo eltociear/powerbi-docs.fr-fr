@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8dd9af8b44e74aafb97e3265b9ee1c32a05edc64
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9e1ed67302b3fc4d7bf990040259e9e4615794a5
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281548"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298911"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exporter des rapports de Power BI vers PowerPoint
 Avec Power BI, vous pouvez publier votre rapport dans **Microsoft PowerPoint** et créer facilement un ensemble de diapositives en fonction de votre rapport Power BI. Lorsque vous **exportez vers PowerPoint**, les éléments suivants se produisent :
@@ -35,6 +35,10 @@ Dans le service Power BI, sélectionnez un rapport pour l’afficher dans le can
 Lorsque le rapport que vous souhaitez exporter vers PowerPoint est affiché sur le canevas, sélectionnez **Fichier > Exporter vers PowerPoint** à partir de la barre de menus dans le service Power BI.
 
 ![Gros plan sur la barre de navigation de gauche avec Mon espace de travail sélectionné, Liste déroulante Fichier sélectionnée](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
+   
+Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Vue actuelle** ou **Vue par défaut**.  L’option **Vue actuelle** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre.  La plupart des utilisateurs choisissent cette option.  Vous pouvez aussi sélectionner l’option **Vue par défaut**, qui exporte le rapport dans l’état initial (l’état au moment du partage par l’auteur), sans refléter les modifications que vous avez apportées à l’état initial.
+    
+En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés.  Cochez cette case si vous souhaitez exporter uniquement les onglets du rapport qui sont visibles dans votre navigateur.  Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation.  Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués.  Une fois que vous avez effectué vos sélections, cliquez sur **Exporter** pour continuer.
 
 Dans l’angle supérieur droit de la fenêtre du navigateur du service Power BI, une bannière de notification indique que le rapport est en cours d’exportation vers PowerPoint. Cette opération peut prendre quelques minutes. Pendant ce temps, vous pouvez continuer à travailler dans Power BI.
 
@@ -74,7 +78,6 @@ Lorsque vous accédez à une diapositive, vous remarquez que chaque page de rapp
 ## <a name="limitations"></a>Limites
 Voici quelques considérations et limitations à prendre en compte lorsque vous utilisez la fonctionnalité **Exporter vers PowerPoint**.
 
-* L’interactivité dans la session, comme la mise en évidence et le filtrage, l’exploration, etc. n’est pas encore pris en charge lors de l’exportation vers PowerPoint. Le PowerPoint exporté montre les visuels d’origine tels qu’ils ont été enregistrés dans le rapport. Si vous avez appliqué des filtres et des segments, et si vous souhaitez les conserver dans l’exportation, enregistrez le rapport et procédez à l’exportation.
 * Les **éléments visuels R** ne sont actuellement pas pris en charge. Tout élément visuel de ce type est exporté en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que l’élément visuel n’est pas pris en charge.
 * Les **éléments visuels personnalisés** qui ont été **certifiés** sont pris en charge. Pour plus d’informations sur les éléments visuels personnalisés certifiés, notamment concernant la manière de certifier un élément visuel personnalisé, voir [Obtention d’un visuel personnalisé certifié](../power-bi-custom-visuals-certified.md). Les éléments visuel personnalisés non certifiés ne sont pas pris en charge. Tout élément visuel de ce type est exporté en tant qu’image vide dans PowerPoint, avec un message d’erreur indiquant que l’élément visuel n’est pas pris en charge.
 * Les rapports contenant plus de 30 pages ne peuvent pas être exportés actuellement.

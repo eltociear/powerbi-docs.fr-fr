@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 02/14/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1ddcee1e39f8704eda7cc94cffb27c1a8b6b75f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c45900d98dfa25dd991ae0cee1f165a41964c51e
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290334"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324765"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Utilisation de SAP BW Connector dans Power BI Desktop
 Avec Power BI Desktop, vous pouvez accéder aux données **SAP BusinessWarehouse (BW)**.
@@ -218,6 +218,29 @@ Cette section décrit des scénarios de dépannage (et des solutions) lors de l�
    * BAPI_IOBJ_GETDETAIL
 
    Pour résoudre ce problème, vérifiez que l’utilisateur a accès aux différents modules *MDPROVIDER*, ainsi qu’à *BAPI_IOBJ_GETDETAIL*. Pour résoudre ce problème ou des problèmes similaires, sélectionnez *Activer le traçage* dans la fenêtre *Diagnostics* dans les *Options* de Power BI Desktop. Tentez de récupérer des données à partir de SAP BW pendant que le traçage est actif et examinez le fichier de traçage pour plus de détails.
+
+## <a name="sap-bw-connection-support"></a>Prise en charge des connexions SAP BW
+
+Le tableau suivant détaille la prise en charge actuelle de SAP BW.
+
+
+
+|Produit  |Mode  |Authentification  |Connecteur  |Bibliothèque SNC  |Pris en charge  |
+|---------|---------|---------|---------|---------|---------|
+|Power BI Desktop     |N'importe quel(le)         | Utilisateur / mot de passe  | Serveur d’applications | N/A  | Oui  |
+|Power BI Desktop     |N'importe quel(le)         | Windows          | Serveur d’applications | sapcrypto + gsskrb5/gx64krb5  | Oui  |
+|Power BI Desktop     |N'importe quel(le)         | Windows par le biais de l’emprunt d’identité | Serveur d’applications | sapcrypto + gsskrb5/gx64krb5  | Oui  |
+|Power BI Desktop     |N'importe quel(le)         | Utilisateur / mot de passe        | Serveur de messages | N/A  | Oui  |
+|Power BI Desktop     |N'importe quel(le)         | Windows        | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Oui  |
+|Power BI Desktop     |N'importe quel(le)         | Windows par le biais de l’emprunt d’identité | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Oui  |
+|Power BI Gateway     |Importer      | Identique à Power BI Desktop |         |   |   |
+|Power BI Gateway     |DirectQuery | Utilisateur / mot de passe        | Serveur d’applications | N/A  | Oui  |
+|Power BI Gateway     |DirectQuery | Windows par le biais de l’emprunt d’identité (utilisateur fixe, pas d’authentification SSO) | Serveur d’applications | sapcrypto + gsskrb5/gx64krb5  | Oui  |
+|Power BI Gateway     |DirectQuery | Utiliser SSO via Kerberos pour l’option des requêtes DirectQuery | Serveur d’applications | *uniquement avec* gsskrb5/gx64krb5   | Oui  |
+|Power BI Gateway     |DirectQuery | Utilisateur / mot de passe        | Serveur de messages | N/A  | Oui  |
+|Power BI Gateway     |DirectQuery | Windows par le biais de l’emprunt d’identité (utilisateur fixe, pas d’authentification SSO) | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Oui  |
+|Power BI Gateway     |DirectQuery | Utiliser SSO via Kerberos pour l’option des requêtes DirectQuery | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Non  |
+
 
 
 ## <a name="next-steps"></a>Étapes suivantes

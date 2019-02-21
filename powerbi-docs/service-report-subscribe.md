@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a7c9c72dfbb75958be3119db61fa3aa03ac89171
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 09539bfd26685ffdd9866810b566699e5cdb4a41
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430944"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408112"
 ---
 # <a name="subscribe-yourself-and-others-to-a-report-or-dashboard-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à un rapport ou tableau de bord dans le service Power BI
 
@@ -60,12 +60,10 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 7. Sélectionnez **Enregistrer et fermer**. Les abonnés reçoivent un e-mail et un instantané du tableau de bord ou de la page de rapport à la fréquence et à l’heure que vous avez sélectionnées. Vous pouvez créer jusqu’à 24 abonnements en tout par rapport ou tableau de bord, et vous pouvez fournir des destinataires, des heures et des fréquences différents pour chaque abonnement.  Tous les abonnements définis sur **Après l’actualisation des données** pour votre tableau de bord ou rapport envoient un e-mail seulement après la première actualisation planifiée.   
       
    > [!TIP]
-   > Vous voulez voir l’e-mail tout de suite ? Déclenchez l’envoi d’un e-mail en actualisant l’un des jeux de données associés au tableau de bord ou le jeu de données associé au rapport. Si vous n’avez pas d’autorisation de modification sur le jeu de données, demandez à un utilisateur qui l’a de l’actualiser pour vous. Pour voir les jeux de données associés, sélectionnez l’icône **Voir les éléments associés** ![icône Voir les éléments associés](media/service-report-subscribe/power-bi-view-related.png) afin d’ouvrir le **Contenu associé**, puis sélectionnez l’icône d’actualisation![icône d’actualisation](media/service-report-subscribe/power-bi-refresh.png). 
+   > Vous souhaitez envoyer l’e-mail d’un abonnement dès maintenant, ou ultérieurement à la demande ? Sélectionnez **Exécuter maintenant** pour les abonnements pour le tableau de bord ou le rapport que vous souhaitez envoyer. Vous voyez une notification indiquant qu’un e-mail est envoyé à tous les utilisateurs de cet abonnement.  Vous pouvez effectuer cette opération aussi souvent que vous le souhaitez. En effet, elle n’est pas comptabilisée dans la limite des 24 exécutions d’abonnement planifiées par jour et par rapport ou tableau de bord. Notez que cette opération ne déclenche PAS l’actualisation des données dans le jeu de données sous-jacent. 
    > 
    > 
    
-   ![Jeux de données associés](media/service-report-subscribe/power-bi-view-related-screen.png)
-
 ## <a name="email-languages"></a>Langue des e-mails
 
 L’e-mail et l’instantané utilisent la langue définie dans les paramètres de Power BI (voir [Langues et pays/régions pris en charge par Power BI](supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI sélectionnera celle des paramètres régionaux du navigateur. Pour voir ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](media/service-report-subscribe/power-bi-settings-icon.png) > **Paramètres > Général > Langue**. 
@@ -84,6 +82,7 @@ Les abonnements particuliers affichés dépendent de l’espace de travail actue
 Un abonnement se termine si la licence Pro expire, si le propriétaire supprime le tableau de bord ou le rapport, ou si le compte d’utilisateur utilisé pour créer l’abonnement est supprimé.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+* Les tableaux de bord comportant plus de 25 vignettes épinglées, ou 4 pages de rapport dynamique épinglées, risquent de ne pas s’afficher entièrement dans les e-mails d’abonnement envoyés aux utilisateurs.  Les abonnements aux tableaux de bord avec un nombre de vignettes supérieur ne sont pas bloqués, mais ils ne seront pas pris en charge si vous rencontrez des problèmes. Vous devez donc réduire leur nombre de vignettes dans la limite de prise en charge.
 * Pour les abonnements à l’e-mail de tableau de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, elles ne s’affichent pas.  Pour les abonnements à l’e-mail de rapport, si le jeu de données utilise SNL, vous ne pouvez pas créer d’abonnement.
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 * Votre organisation peut configurer certains paramètres dans Azure Active Directory, pour limiter la possibilité d’utiliser des abonnements par messagerie électronique dans Power BI.  Vous pouvez limiter, entre autres, l’authentification multifacteur ou les restrictions de plage IP pour l’accès aux ressources.

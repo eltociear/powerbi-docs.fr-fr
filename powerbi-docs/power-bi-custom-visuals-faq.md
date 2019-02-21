@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 0418016fd7a194ff2e37e979219b97e94520f9ae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9b4ff995b1cfaede1608e976bf2715feece0ade6
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282100"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408135"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Questions fréquentes sur les visuels personnalisés Power BI
 
@@ -45,7 +45,7 @@ Oui, si l’administrateur désactive les visuels personnalisés à partir du po
 
 * Il n’est plus nécessaire de partager des fichiers de visuels par e-mail ou par le biais de dossiers partagés ! Un seul endroit, visible par tous les membres qui sont connectés.
 
-* En termes de sécurité et de prise en charge, les nouvelles versions des visuels personnalisés d’organisation sont automatiquement mis à jour dans tous les rapports, comme les visuels de la Place de marché.
+* En termes de sécurité et de prise en charge, les nouvelles versions des visuels personnalisés d’organisation sont automatiquement mises à jour dans tous les rapports, comme les visuels de la Place de marché.
 
 * Les utilisateurs de l’organisation utilisant les visuels personnalisés d’organisation doivent être connectés pour voir et utiliser les visuels personnalisés d’organisation, qui constituent un élément de sécurité pour l’organisation.
 
@@ -98,6 +98,9 @@ Si vous travaillez sur un visuel IAP personnalisé ou que vous avez déjà un, a
 Si vous avez un logo dans le visuel personnalisé, assurez-vous qu’il soit conforme aux instructions relatives aux logos (couleur, emplacement, taille et déclenchement d’action).
 
 Vous trouverez également des notes de bonnes pratiques dans les instructions.  
+> [!Note]
+> Tous les visuels gratuits doivent conserver les mêmes fonctionnalités gratuites que celles proposées précédemment. Vous pouvez compléter les fonctionnalités gratuites existantes par des fonctionnalités avancées payantes facultatives. Nous vous recommandons de soumettre les visuels IAP avec les fonctionnalités avancées en tant que nouveaux visuels au lieu de mettre à jour les fonctionnalités gratuites existantes.
+
 
 ### <a name="can-i-get-my-iap-custom-visual-certified"></a>Puis-je certifier mes visuels IAP personnalisés ?
 
