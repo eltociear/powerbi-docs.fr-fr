@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 7446cb9db0f4ebbb20e316365263fa6f09de71bb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55448218"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426559"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI
 
@@ -29,7 +29,7 @@ Power BI est un logiciel en tant que service (SaaS) complètement managé.  Micr
 
 Power BI conserve plusieurs instances de chaque composant dans des centres de données Azure (aussi appelés régions) pour assurer la continuité de l’activité. En cas de panne ou de problème rendant Power BI inaccessible ou inutilisable dans une région, Power BI bascule tous ses composants dans cette région sur une instance de sauvegarde. Le basculement restaure la disponibilité et l’utilisabilité de l’instance de service Power BI dans une nouvelle région (généralement dans la même zone géographique, comme indiqué dans [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)).
 
-Une instance de service Power BI qui a basculé prend uniquement en charge les _opérations de lecture_, ce qui signifie que les opérations suivantes ne sont pas prises en charge pendant le basculement : actualisations, opérations de publication de rapport, modifications de tableau de bord ou de rapport et autres opérations qui nécessitent un changement des métadonnées de Power BI (par exemple, insertion d’un commentaire dans un rapport).  Les opérations de lecture, comme l’affichage des tableaux de bord et des rapports (qui ne reposent pas sur Direct Query ou Live Connect pour les sources de données locales) continuent à fonctionner normalement.
+Une instance de service Power BI qui a basculé prend uniquement en charge les _opérations de lecture_, ce qui signifie que les opérations suivantes ne sont pas prises en charge pendant le basculement : actualisations, opérations de publication de rapport, modifications de tableau de bord ou de rapport et autres opérations qui nécessitent un changement des métadonnées de Power BI (par exemple, insertion d’un commentaire dans un rapport).  Les opérations de lecture, comme l’affichage des tableaux de bord et des rapports (qui ne reposent pas sur DirectQuery ni Live Connect pour les sources de données locales) continuent à fonctionner normalement.
 
 ## <a name="how-are-backup-instances-kept-in-sync-with-my-data"></a>Comment les instances de sauvegarde restent-elles synchronisées avec mes données ?
 

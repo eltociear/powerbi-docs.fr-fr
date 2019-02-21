@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/07/2018
+ms.date: 02/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 48e1ddbc498e234c43bf755d3a23a2e10e4cc856
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1e997f5ac7e916f10c98756f142b9f563adea05a
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290207"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426605"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Création d’éléments visuels R dans le service Power BI
 Le service Power BI prend en charge l’affichage et l’utilisation des éléments visuels créés avec des scripts R. Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R*, peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R.
@@ -33,7 +33,7 @@ Les éléments visuels R sont créés dans un [rapport Power BI Desktop](../de
 
 ![](media/service-r-visuals/r-visuals-service_2a.png)
 
-Une fois que le rapport est créé dans **Power BI Desktop**, vous pouvez le publier avec un ou plusieurs visuels R dans le service Power BI. Pour l’instant, les visuels doivent être créés à l’aide de **Power BI Desktop** avant d’être publiés dans le service Power BI. Pour plus d’informations sur la création d’éléments visuels R, consultez [Créer des éléments visuels Power BI avec R (Power BI Desktop)](../desktop-r-visuals.md).
+Une fois que le rapport est créé dans **Power BI Desktop**, vous pouvez le publier avec un ou plusieurs visuels R dans le service Power BI. Pour l’instant, les visuels R peuvent uniquement être créés dans **Power BI Desktop**, puis publiés sur le service Power BI. Pour plus d’informations sur la création d’éléments visuels R, consultez [Créer des éléments visuels Power BI avec R (Power BI Desktop)](../desktop-r-visuals.md).
 
 Notez que dans le service, tous les packages R ne sont pas pris en charge. Pour obtenir la liste des packages actuellement pris en charge dans le service Power BI, consultez les packages pris en charge à la fin de cet article.
 
@@ -66,11 +66,19 @@ Voici un autre exemple : l’illustration suivante montre le message d’erreur
 ## <a name="licensing"></a>Gestion des licences
 Les éléments visuels R nécessitent une licence [Power BI Pro](../service-self-service-signup-for-power-bi.md) pour afficher des rapports, les actualisations, les filtres et les filtres croisés. Pour plus d’informations sur les licences Power BI Pro et pour savoir en quoi elles diffèrent des licences gratuites, consultez [Contenu Power BI Pro - De quoi s’agit-il ?](../service-premium.md)
 
-Les utilisateurs gratuits de Power BI peuvent uniquement utiliser les vignettes partagées avec eux. Pour plus d’informations, consultez [Achat de Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
+Les utilisateurs gratuits de Power BI peuvent uniquement utiliser les vignettes partagées avec eux dans les espaces de travail Premium. Pour plus d’informations, consultez [Achat de Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
 
 Le tableau suivant décrit les fonctionnalités des éléments visuels R en fonction de la licence.
 
-![](media/service-r-visuals/r-visuals-service_6a.png)
+
+|  |Créer des visuels R dans Power BI Desktop  | Créer des rapports de service PBI avec des visuels R |Afficher des visuels R dans les rapports  | Afficher des vignettes R dans les tableaux de bord |
+|---------|---------|---------|---------|--------|
+|**Invité**(Power BI Embedded)     |  Ne s’applique pas|  Ne s’applique pas       | Non pris en charge  | Ne s’applique pas |
+|**Locataire non géré** (domaine non vérifié) | Pris en charge | Non pris en charge |  Non pris en charge |Prise en charge (scénario B2B) |
+|**Locataire géré** avec licence gratuite    |  Pris en charge       |  Non pris en charge       |    Prise en charge dans la capacité Premium uniquement    | Pris en charge |
+**Locataire géré** avec licence Pro     |   Pris en charge      | Pris en charge      | Pris en charge    |Pris en charge|
+
+
 
 ## <a name="known-limitations"></a>Limites connues
 Les éléments visuels R du service Power BI ont quelques limitations :

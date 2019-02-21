@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 0118c9b7bb1d00daf1b6baeb7638916b49d8af49
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794846"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426766"
 ---
 # <a name="visualization-types-in-power-bi"></a>Types de visualisations dans Power BI
 Les visualisations apparaissent dans les rapports, les tableaux de bord, les applications et Questions et réponses. Certains types de visualisation sont inclus dans Power BI et d’autres sont des *visuels personnalisés*. Les visuels personnalisés sont créés en dehors de Power BI de façon à permettre aux *concepteurs de rapports* de les ajouter aux rapports, tableaux de bord et applications Power BI. 
@@ -98,10 +98,12 @@ Les graphiques en jauge radiale sont conseillés pour :
 - montrer l’intégrité d’une seule mesure
 - montrer des informations faciles à comprendre et à analyser
 
-<!-- ### Key influencers chart
-![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+ ### <a name="key-influencers-chart"></a>Graphique des influenceurs clés
+![influenceur clé](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png)
 
-A key influencer chart displays the major contributors to a selected result or value.  -->
+Un graphique d’influenceurs clés affiche les principaux contributeurs à une valeur ou un résultat sélectionné.
+
+Les influenceurs clés sont conseillés pour vous aider à comprendre les facteurs qui influencent une métrique clé, par exemple *ce qui influence les clients pour qu’ils passent une deuxième commande *ou* pourquoi les ventes ont été si élevées en juin dernier*. 
 
 ### <a name="kpis"></a>Indicateurs de performance clés
 ![indicateur de performance clé](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
