@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 4cbd17a08a8cb7c7253f60f29a19341598c9800f
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408066"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426536"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Marche à suivre pour les visuels Power BI avec des achats supplémentaires
 
@@ -33,7 +33,10 @@ Les développeurs chargent leurs visuels IAP sur AppSource par le biais du table
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Qu’est-ce qu’un visuel Power BI avec des fonctionnalités IAP ?
 
-Un visuel IAP est gratuit et offre des fonctionnalités gratuites, mais il propose aussi des fonctionnalités supplémentaires dont l’utilisation peut engendrer des frais supplémentaires. Les développeurs doivent signaler aux utilisateurs dans la description du visuel que certaines fonctionnalités nécessitent des achats supplémentaires. À l’heure actuelle, Microsoft ne fournit pas d’interfaces de programmation d’applications (API) natives pour prendre en charge les achats dans l’application et les compléments. Les développeurs peuvent utiliser n’importe quel système de paiement tiers pour ces achats. Reportez-vous à la [stratégie](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) de notre Store.
+Un visuel IAP est gratuit et offre des fonctionnalités gratuites, mais propose aussi des fonctionnalités avancées dont l’utilisation peut engendrer des frais supplémentaires. Les développeurs doivent signaler aux utilisateurs dans la description du visuel que certaines fonctionnalités nécessitent des achats supplémentaires. À l’heure actuelle, Microsoft ne fournit pas d’interfaces de programmation d’applications (API) natives pour prendre en charge les achats dans l’application et les compléments. Les développeurs peuvent utiliser n’importe quel système de paiement tiers pour ces achats. Reportez-vous à la [stratégie](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) de notre Store.
+
+> [!NOTE]
+> Les filigranes ne sont pas autorisés sur les fonctionnalités gratuites. Les développeurs peuvent afficher une fenêtre indépendante ou un filigrane si les fonctionnalités payantes avancées sont utilisées sans licence valide.  
 
 ## <a name="logo-guidelines"></a>Instructions relatives aux logos
 
