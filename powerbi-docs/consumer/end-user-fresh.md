@@ -5,22 +5,22 @@ author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.custom: ''
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: overview
 ms.date: 02/08/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5ab305777306d8ee12edf2756404efeffa52e44b
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: 4b4bc6398466b4c603126efed5b6591c9c3ad6c0
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086652"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662017"
 ---
 # <a name="your-content-is-up-to-date"></a>Votre contenu est à jour
 En tant que *consommateur*, vous interagissez avec du contenu qui a été créé par des *concepteurs* et partagé avec vous. Vous vous demandez peut-être parfois si ce contenu est à jour ou simplement quand il a été actualisé pour la dernière fois. Savoir que vous utilisez le contenu le plus récent vous rassure.  
  
-![Tableau de bord Power BI](media/end-user-consumer/power-bi-service.png)
+![tableau de bord Power BI](media/end-user-consumer/power-bi-service.png)
 
 
 La garantie d’utiliser les données les plus récentes est souvent un facteur essentiel pour prendre les bonnes décisions. Comment vous assurer que vous utilisez le contenu le plus récent ? Dans la plupart des cas, vous n’avez rien à faire en particulier. En effet, les applications qui ont été partagées avec vous sont automatiquement actualisées et mises à jour selon une planification établie par leur concepteur. Il en va de même pour les tableaux de bord et les rapports partagés avec vous : le concepteur garantit que leur contenu est mis à jour soit manuellement, soit automatiquement à l’aide d’une planification de l’actualisation.  
@@ -53,7 +53,7 @@ L’écran **Partagé avec moi** affiche le nom du propriétaire du contenu ains
 ## <a name="how-to-look-up-the-last-refresh-date"></a>Comment trouver la date de la dernière actualisation ?
 Si vous avez besoin de cette information, vous pouvez rechercher la date de la dernière actualisation pour la plupart du contenu. 
 
-### <a name="dashboard-tiles"></a>Vignettes de tableau de bord
+### <a name="dashboard-tiles"></a>Mise à jour des vignettes de tableau de bord
 Pour les vignettes de tableau de bord, affichez la vignette en mode Focus pour connaître la date et l’heure de sa dernière actualisation.
 
 1. Sur une vignette de tableau de bord, sélectionnez les points de suspension (...) et choisissez **Ouvrir en mode Focus**.
@@ -71,7 +71,7 @@ Une autre méthode pour voir la date de la dernière actualisation consiste à u
 
 Le volet **Contenu associé** affiche les informations sur la dernière actualisation du jeu de données sous-jacent dans le tableau de bord ou le rapport.
 
-![Tableau de bord Power BI](media/end-user-fresh/power-bi-last-refresh.png)
+![tableau de bord Power BI](media/end-user-fresh/power-bi-last-refresh.png)
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Que se passe-t-il si une application est supprimée par le concepteur ?
 
