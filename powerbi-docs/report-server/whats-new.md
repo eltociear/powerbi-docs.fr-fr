@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: ad3025b9649529566972f75e9c447bb7558132b8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325194"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662454"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -41,6 +41,10 @@ Prise en charge de ces fonctionnalités dans les rapports Power BI :
 [**Guides d’alignement intelligents**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) Comme dans PowerPoint, des guides d’alignement intelligents apparaissent quand vous déplacez des objets dans votre page de rapport pour vous aider à tout aligner. Ces guides s’affichent chaque fois que vous faites glisser ou redimensionnez un élément sur votre page. Quand vous déplacez un objet près d’un autre, il s’aligne avec celui-ci.
 
 **Fonctionnalités d’accessibilité** Elles sont trop nombreuses pour toutes les énumérer ici. Citons par exemple la [prise en charge de fonctionnalités d’accessibilité dans le volet de liste de champs](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Le volet de liste de champs est entièrement accessible. Vous pouvez naviguer dans le volet en utilisant simplement votre clavier et un lecteur d’écran, puis utiliser le menu contextuel pour ajouter des champs à votre page de rapport.
+
+#### <a name="custom-visuals"></a>Visuels personnalisés
+
+- La version de l’API livrée avec cette mise en production est 2.3.
 
 ### <a name="administrator-settings"></a>Paramètres administrateur
 

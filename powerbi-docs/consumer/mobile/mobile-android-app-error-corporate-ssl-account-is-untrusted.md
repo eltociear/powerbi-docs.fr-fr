@@ -10,12 +10,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: mshenhav
-ms.openlocfilehash: 2b296d465b312486a91e1407b5866e15b0b48b54
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: de103412e21e0d26d20058e2d4e1fb9a8a5449bf
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280789"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662316"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Correction de l’erreur « Votre certificat SSL d’entreprise n’est pas approuvé » - Power BI
 Lorsque vous vous connectez à une application mobile Android pour Microsoft Power BI, vous pouvez voir le message « Authentification impossible car votre certificat SSL d’entreprise n’est pas approuvé par cet appareil. Contactez l’administrateur informatique de votre entreprise. » 
@@ -41,9 +41,9 @@ Il se peut que les paramètres de fuseau horaire de votre appareil soient erron�
 Accédez à **Paramètres** > **Système** > **Date et heure** pour les vérifier.
 
 ## <a name="custom-authentication-server"></a>Serveur d’authentification personnalisé
-Si vous utilisez un serveur d’authentification personnalisé, il se peut que le certificat SSL du serveur d’authentification d’entreprise ne soit pas valide. Pour obtenir de l’aide, contactez l’administrateur de votre organisation.
+Si vous utilisez un serveur d’authentification personnalisé, il se peut que le certificat SSL du serveur d’authentification d’entreprise ne soit pas valide. Collaborez avec le service informatique de votre organisation pour tester la configuration du serveur d’authentification d’entreprise, en suivant les instructions données dans [cet article](https://support.microsoft.com/en-us/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Téléchargez l’application Android](http://go.microsoft.com/fwlink/?LinkID=544867) à partir du magasin d’applications Android.
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/) 
 
