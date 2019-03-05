@@ -1,6 +1,7 @@
 ---
 title: Journal des modifications pour Power BI Report Server
 description: Ce journal des modifications a trait à Power BI Report Server. Il répertorie les éléments nouveaux et les corrections de bogues introduits dans chaque version officielle publiée.
+ms.author: jtarquino
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -8,13 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.author: jtarquino
-ms.openlocfilehash: 346e1a3d096ba5e8ea8d16b49d49e02c0c65e54a
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 9589c2cf5277995459a9f43f573b6e19c4c8f748
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56224039"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327961"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -23,6 +23,7 @@ Ce journal des modifications a trait à Power BI Report Server. Il répertorie l
 Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés dans Power BI Report Server](whats-new.md). 
 
 ## <a name="january-2019"></a>Janvier 2019
+
 - **Power BI Report Server**            
     - *Version 1.4.6969.7395 (Build 15.0.1102.235), date de publication : 30 janvier 2019*
         - Résolutions de bogues
@@ -65,6 +66,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
         - Contient les changements nécessaires pour la connexion à Power BI Report Server (janvier 2019)  
 
 ## <a name="august-2018"></a>Août 2018
+
 - **Power BI Report Server**
     - *Version 1.3.6816.37243 (Build 15.0.2.557), publiée : 30 août 2018*
         - Corrections de bogues
@@ -86,6 +88,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
         - Contient les modifications nécessaires pour la connexion à Power BI Report Server (août 2018)         
         
 ## <a name="march-2018"></a>Mars 2018
+
 - **Power BI Report Server**
     - *Version 1.2.6690.34729 (Build 15.0.2.402), publiée : 27 avril 2018*
         - Corrections de bogues

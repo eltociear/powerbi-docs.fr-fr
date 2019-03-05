@@ -9,12 +9,12 @@ ms.author: owend
 ms.reviewer: owend
 author: minewiskan
 manager: kfile
-ms.openlocfilehash: e31f67d978471f4dcc6472860fc5f8315212e563
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: d7cebbd569d16192f4acfa1c96394130731efa17
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794872"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014573"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Gestion et optimisation des ressources de capacité de Microsoft Power BI Premium
 
@@ -55,7 +55,7 @@ Si une requête interactive est émise sur n’importe quel jeu de données dans
 
 ### <a name="workloads"></a>Charges de travail
 
-Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** prennent en charge uniquement la charge de travail associée aux requêtes Power BI exécutées dans le cloud. Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : les **rapports paginés** et les **flux de données**. Si elles sont utilisées, ces charges de travail peuvent avoir un impact sur l’utilisation de la mémoire de votre capacité. Pour plus d’informations, consultez [Configurer des charges de travail](service-admin-premium-manage.md#configure-workloads).
+Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** prennent en charge uniquement la charge de travail associée aux requêtes Power BI exécutées dans le cloud. Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : les **rapports paginés** et les **flux de données**. Si elles sont utilisées, ces charges de travail peuvent avoir un impact sur l’utilisation de la mémoire de votre capacité. 
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>Gestion des ressources du processeur dans la capacité Premium
 
@@ -72,7 +72,7 @@ Les requêtes de rapport consomment des ressources d’UC dans votre capacité. 
 
 La mémoire n’est pas la seule ressource qui peut contraindre l’actualisation des jeux de données. Le nombre de cœurs v-core sur un serveur peut également être un facteur. Étant donné que chaque opération d’actualisation nécessite un certain nombre de cœurs virtuels, il existe une limite du nombre d’actualisations qui peuvent s’exécuter en parallèle. La limite par référence SKU est détaillée dans le tableau suivant. Les actualisations supplémentaires qui vont au-delà de ces limites sont mises en attente.
 
- | SKU | V-cores du principal | Parallélisme de l’actualisation de modèle |
+ | Référence | V-cores du principal | Parallélisme de l’actualisation de modèle |
  | --- | --- | --- |
  | A1  | 0.5  | 1  |
  | A2  | 1  | 2  |
@@ -116,6 +116,3 @@ Utilisez la capacité Power BI Embedded dans Azure pour tester différentes réf
 
 Dans certains cas, le fait d’ouvrir un fichier Power BI Desktop (.pbix) du modèle sur votre ordinateur et de vérifier la consommation de la mémoire et du processeur offre beaucoup d’informations sur le problème. Cela n’est pas utile pour les modèles très volumineux, mais pour certains modèles plus petits, essayez d’ouvrir, d’actualiser et d’interroger le modèle à partir de votre ordinateur. Vérifiez la taille du modèle, la mémoire et le processeur consommés lorsque vous ouvrez le modèle. Essayez de réactualiser et d’interroger. Utilisez le Gestionnaire des tâches pour vérifier la consommation de mémoire et d’UC pour le fichier local. Parfois, les métriques sur votre ordinateur peuvent indiquer qu’une capacité Premium inférieure comme P1 / P2 ne fonctionnera pas pour votre solution.
 
-## <a name="next-steps"></a>Étapes suivantes
-
-[Gérer les capacités dans Power BI Premium et Power BI Embedded](service-admin-premium-manage.md)
