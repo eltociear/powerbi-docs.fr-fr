@@ -1,22 +1,23 @@
 ---
 title: Chiffrer les informations d’identification
-description: 'Procédure pas à pas : chiffrer les informations d’identification pour les sources de données d’une passerelle locale'
+description: 'Procédure pas à pas : Chiffrer les informations d’identification pour les sources de données d’une passerelle locale'
 author: mahirdiab
+ms.author: mahirdiab
 manager: eligr
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/02/2019
-ms.author: mahirdiab
-ms.openlocfilehash: 79ab3731abfdf972de1ee9d40456ebb0c5ebfa62
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.date: 02/04/2019
+ms.openlocfilehash: 6229d65e7ef28d0c9b6013166cb504cfb976f46d
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223510"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892226"
 ---
 # <a name="encrypt-credentials"></a>Chiffrer les informations d’identification
+
 Quand vous appelez [Créer une source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) ou [Mettre à jour la source de données](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) sous une **passerelle locale d’entreprise** en utilisant l’[API Rest Power BI](https://docs.microsoft.com/rest/api/power-bi/), le valeur des informations d’identification doit être chiffrée à l’aide de la clé publique de la passerelle.
 
 Consultez l’exemple de code ci-dessous, qui montre comment chiffrer les informations d’identification dans .NET.
@@ -24,27 +25,31 @@ Consultez l’exemple de code ci-dessous, qui montre comment chiffrer les inform
 Les informations d’identification fournies à la méthode EncodeCredentials ci-dessous doivent être dans un des formats suivants, en fonction du type des informations d’identification :
 
 **Informations d’identification de base / Windows**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
 **Informations d’identification de clé**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
 ```
 
 **Informations d’identification OAuth2**
+
 ```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
 ```
 
-
 **Informations d’identification anonymes**
+
 ```csharp
 var credentials = "{\"credentialData\":\"\"}";
 ```
 
 **Chiffrer les informations d’identification**
+
 ```csharp
 public static class AsymmetricKeyEncryptionHelper
 {

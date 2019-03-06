@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 9b4ff995b1cfaede1608e976bf2715feece0ade6
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408135"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892318"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Questions fréquentes sur les visuels personnalisés Power BI
 
@@ -45,7 +45,7 @@ Oui, si l’administrateur désactive les visuels personnalisés à partir du po
 
 * Il n’est plus nécessaire de partager des fichiers de visuels par e-mail ou par le biais de dossiers partagés ! Un seul endroit, visible par tous les membres qui sont connectés.
 
-* En termes de sécurité et de prise en charge, les nouvelles versions des visuels personnalisés d’organisation sont automatiquement mises à jour dans tous les rapports, comme les visuels de la Place de marché.
+* En termes de sécurité et de prise en charge, les nouvelles versions des visuels personnalisés d’organisation sont automatiquement mis à jour dans tous les rapports, comme les visuels de la Place de marché.
 
 * Les utilisateurs de l’organisation utilisant les visuels personnalisés d’organisation doivent être connectés pour voir et utiliser les visuels personnalisés d’organisation, qui constituent un élément de sécurité pour l’organisation.
 
@@ -57,8 +57,44 @@ Oui, si l’administrateur désactive les visuels personnalisés à partir du po
 
 ### <a name="what-are-certified-custom-visuals"></a>En quoi consistent les visuels personnalisés certifiés ?
 
-Les visuels personnalisés certifiés sont des visuels dans la [Place de marché](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) répondant à certaines exigences de code [spécifiées](power-bi-custom-visuals-certified.md) et aux tests de l’équipe Power BI.  Les tests effectués sont conçus pour vérifier que le visuel n’a pas accès à des services ni à des ressources externes. Cependant, Microsoft n’est pas l’auteur des visuels personnalisés tiers. Nous conseillons aux utilisateurs de contacter directement leur auteur pour vérifier leur fonctionnement.
+Les visuels personnalisés certifiés sont des visuels dans la [Place de marché](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) répondant à certaines exigences de code [spécifiées](power-bi-custom-visuals-certified.md) et aux tests de l’équipe Power BI.  Les tests effectués sont conçus pour vérifier que le visuel n’a pas accès à des services ni à des ressources externes. Toutefois, Microsoft n’étant pas l’auteur des visuels personnalisés tiers, nous conseillons aux utilisateurs de contacter directement leur auteur pour vérifier leur fonctionnement.
 
+### <a name="what-tests-are-done-during-the-certification-process"></a>Quels sont les tests effectués durant le processus de certification ?
+
+Le processus de certification comprend, entre autres, les tests suivants : révisions de code, analyse du code statique, fuite de données, test à données aléatoires (fuzzing), test de pénétration, test d’accès au moyen de scripts de site à site (XSS), injection de données malveillantes, validation de l’entrée et test fonctionnel.
+ 
+### <a name="do-you-certify-visuals-every-submission"></a>Certifiez-vous les visuels à chaque soumission ?
+
+Oui. Chaque fois qu’une nouvelle version d’un visuel certifié est soumise à la Place de marché, la mise à jour de la version du visuel fait l’objet des mêmes vérifications de certification.
+
+Remarque à l’attention des développeurs : Si vous soumettez une mise à jour de la version d’un visuel certifié, il est inutile d’envoyer un e-mail distinct de [demande de certification initiale](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified#process-for-submitting-a-custom-visual-for-certification). La certification d’une mise à jour de version se produit automatiquement, et toute violation provoquant un rejet génère l’envoi d’un e-mail qui explique ce qui doit être corrigé. 
+
+### <a name="is-it-possible-that-a-certified-visual-stops-being-certified-with-a-new-update"></a>Est-il possible qu’un visuel certifié ne soit plus certifié après une mise à jour ?
+
+Non, cela n’est pas possible. Un visuel certifié ne peut pas perdre sa certification après une mise à jour. La mise à jour est rejetée.
+ 
+### <a name="do-i-need-to-share-my-code-in-public-repository-if-i-am-submitting-to-the-certification-process"></a>Dois-je partager mon code dans un dépôt public si je le soumets au processus de certification ?
+
+Non, vous n’avez pas besoin de partager votre code publiquement. Toutefois, vous devez nous accorder des autorisations en lecture afin que nous puissions vérifier le code du visuel. par exemple dépôt privé dans GitHub.
+ 
+### <a name="do-we-have-to-publishhttpsdocsmicrosoftcompower-bideveloperoffice-store-the-visual-in-the-marketplacehttpsappsourcemicrosoftcommarketplaceappspage1productpower-bi-visuals-to-certify-it"></a>Est-il nécessaire de [publier](https://docs.microsoft.com/power-bi/developer/office-store) le visuel dans la [Place de marché](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) pour le certifier ?
+
+Oui. La publication du visuel dans la Place de marché est une condition obligatoire pour la certification.
+Pour certifier un visuel personnalisé, il doit être sur nos serveurs. Nous ne pouvons pas certifier les visuels privés.
+ 
+### <a name="how-long-does-it-take-to-certify-my-visual"></a>Combien de temps faut-il pour certifier un visuel ?
+
+Une version mise à jour peut prendre jusqu’à 2 semaines. Une nouvelle soumission (première certification) peut nécessiter jusqu’à 3 semaines. 
+
+### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Le processus de certification garantit-il l’absence de fuites de données ?
+
+Les tests effectués sont conçus pour vérifier que le visuel n’a pas accès à des services ni à des ressources externes. Toutefois, Microsoft n’étant pas l’auteur des visuels personnalisés tiers, nous conseillons aux utilisateurs de contacter directement leur auteur pour vérifier leur fonctionnement.
+ 
+### <a name="are-uncertified-custom-visuals-safe-to-use"></a>Les visuels personnalisés non certifiés présentent-ils des risques ?
+
+Un visuel personnalisé non certifié ne pose pas forcément de risques pour la sécurité.
+Certains visuels ne sont pas certifiés car ils ne sont pas conformes à un ou plusieurs [critères de certification](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Citons par exemple les visuels de carte qui se connectent à un service externe ou ceux qui utilisent des bibliothèques commerciales.
+ 
 ## <a name="visuals-with-additional-purchases"></a>Visuels avec achats supplémentaires
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Qu’est-ce qu’un visuel avec achats supplémentaires ?
@@ -100,7 +136,6 @@ Si vous avez un logo dans le visuel personnalisé, assurez-vous qu’il soit con
 Vous trouverez également des notes de bonnes pratiques dans les instructions.  
 > [!Note]
 > Tous les visuels gratuits doivent conserver les mêmes fonctionnalités gratuites que celles proposées précédemment. Vous pouvez compléter les fonctionnalités gratuites existantes par des fonctionnalités avancées payantes facultatives. Nous vous recommandons de soumettre les visuels IAP avec les fonctionnalités avancées en tant que nouveaux visuels au lieu de mettre à jour les fonctionnalités gratuites existantes.
-
 
 ### <a name="can-i-get-my-iap-custom-visual-certified"></a>Puis-je certifier mes visuels IAP personnalisés ?
 

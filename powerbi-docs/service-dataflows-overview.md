@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5e1bd67ba14ed35a97d91e5ed76f7a3bd8de56ea
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: d388812985ce30b5692a385fc44e3cf7fc49161f
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324811"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892341"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Préparation des données en libre-service dans Power BI (préversion)
 
@@ -69,7 +69,7 @@ Azure Data Lake Storage Gen2 est inclus dans chaque abonnement Power BI payant (
 
 Power BI peut être configuré pour stocker les données de flux de données dans le compte Azure Data Lake Storage Gen2 de votre organisation. Lorsque Power BI est connecté à votre abonnement Azure, les développeurs de données et les scientifiques des données peuvent tirer parti des produits Azure puissants tels qu’Azure Machine Learning, Azure Databricks et Azure Data Factory, entre autres.
 
-Power BI peut également se connecter à des dossiers avec des données schématisées au format Common Data Model stockées dans le compte Azure Data Lake Storage de votre organisation. Ces dossiers peuvent être créés par les services tels que les services de données Azure. En se connectant à ces dossiers, les analystes peuvent travailler de manière transparente sur ces données dans Power BI. 
+Power BI peut également se connecter à des dossiers avec des données schématisées au format Common Data Model stockées dans le compte Azure Data Lake Storage de votre organisation. Ces dossiers peuvent être créés par les services tels que les services de données Azure. En se connectant à ces dossiers, les analystes peuvent travailler de manière transparente sur ces données dans Power BI. 
 
 Pour plus d’informations sur Azure Data Lake Storage Gen2 et l’intégration de flux de données, y compris comment créer des flux de données qui résident dans l’Azure Data Lake de votre organisation, consultez [Flux de données et intégration d’Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md).
 

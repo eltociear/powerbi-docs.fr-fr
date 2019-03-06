@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 59d5ccd6a7179ca4c44210854fb66abb5371ac6c
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325037"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892410"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
 Les **signets** de Power BI permettent de capturer la vue actuellement configurée d’une page de rapport, filtrage et état des visuels compris, puis de revenir à cet état en sélectionnant simplement le signet enregistré. 
@@ -25,6 +25,9 @@ Vous pouvez également créer une collection de signets, les réorganiser dans l
 ![Signets dans Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
 Les signets ont de nombreuses utilisations. Vous pouvez les utiliser pour suivre la progression de la création de rapports (les signets sont faciles à ajouter, à supprimer et à renommer). Il est également possible de créer des signets pour concevoir une présentation de type PowerPoint qui parcourt les signets dans l’ordre, de façon à accompagner votre rapport d’un récit. Il existe peut-être d’autres utilisations en fonction de votre usage.
+
+> [!TIP]
+> Pour plus d’informations sur l’utilisation de signets personnels dans le service Power BI, lisez le [billet de blog](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) annonçant la fonctionnalité des signets personnels. 
 
 ### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Activer la préversion des signets (versions antérieures à mars 2018)
 Depuis la version de mars 2018 de Power BI Desktop, les signets sont en disponibilité générale. 
@@ -44,7 +47,7 @@ Lorsque vous créez un signet, les éléments suivants sont enregistrés :
 
 * Page actuelle
 * Filtres
-* Segments, y compris le type de segments (par exemple, liste déroulante ou liste) et l’état des segments
+* Segments, y compris le type de segments (par exemple, liste déroulante ou liste) et l’état des segment
 * État de sélection des visuels (par exemple, filtres de mise en surbrillance croisée)
 * Ordre de tri
 * Emplacement d’exploration

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8568013438f6be84b2d4a48efdeffd99db352ed8
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285619"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892364"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Obtenir des données de classeurs Excel
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -78,7 +78,7 @@ Lorsque vous choisissez **Connecter**, votre classeur apparaît dans Power BI c
 
 Vous ne pouvez pas modifier votre classeur dans Power BI. Toutefois, si vous devez apporter des modifications, vous pouvez cliquer sur Modifier, puis choisir de modifier votre classeur dans Excel Online ou l’ouvrir dans Excel sur votre ordinateur. Toutes les modifications apportées sont enregistrées dans le classeur sur OneDrive.
 
-Lorsque vous utilisez cette méthode, aucun jeu de données n’est créé dans Power BI. Votre classeur apparaît dans le volet de navigation de votre espace de travail Power BI sous Rapports. Les classeurs connectés ont une icône Excel spéciale.
+Quand vous procédez de cette manière, Power BI crée un jeu de données correspondant pour le classeur connecté. Vous pouvez utiliser ce jeu de données pour créer un rapport Power BI si nécessaire. Votre classeur apparaît également dans le volet de navigation de votre espace de travail Power BI sous Rapports. Les classeurs connectés ont une icône Excel spéciale.
 
 Choisissez cette option si vous avez uniquement des données dans des feuilles de calcul, ou si vous avez des plages, des tableaux croisés dynamiques et des graphiques que vous voulez épingler aux tableaux de bord.
 
