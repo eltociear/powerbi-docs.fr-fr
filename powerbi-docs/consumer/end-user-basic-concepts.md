@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 994645f2ca52c992b8d61590bc02d9f9f63891ce
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: db9f6218d0657946f04b7589a15be99270cf7030
+ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662249"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57196456"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Concepts de base pour les ***consommateurs*** du service Power BI
 
@@ -88,6 +88,10 @@ Quand un concepteur partage une application avec vous, vous pouvez voir quels je
 * peut comprendre différentes visualisations qui peuvent être affichées dans de nombreux tableaux de bord différents
   
   ![Relations P:1 d’un jeu de données](media/end-user-basic-concepts/drawing2.png)
+
+De plus, les jeux de données d’autres espaces de travail peuvent être utilisés pour créer du contenu (rapports et tableaux de bord) dans votre espace de travail. Ces jeux de données sont représentés par l’icône de jeu de données référencé ci-dessous : 
+
+![icône de base de données avec un lien](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 Le module suivant : les visualisations.
 __________________________________________________________

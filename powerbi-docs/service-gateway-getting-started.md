@@ -1,5 +1,5 @@
 ---
-title: Présentation des passerelles Power BI
+title: Que sont les passerelles de données locales ?
 description: Découvrez les principes de base des passerelles de données pour Power BI.
 author: mgblythe
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9c88a09eccd887007df8d2539be861b964c31b5f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: f1ae47dcb7c9281db018952d619691607d331003
+ms.sourcegitcommit: 87e81ba92f3d1d65c26f9fc007bf106f96f37bfd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324481"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461646"
 ---
-# <a name="what-are-power-bi-gateways"></a>Présentation des passerelles Power BI
+# <a name="what-are-on-premises-data-gateways"></a>Que sont les passerelles de données locales ?
 
 Une passerelle Power BI est un logiciel qui s’installe sur un réseau local et facilite l’accès aux données de ce réseau. Il s’agit d’une sorte d’opérateur de contrôle qui écoute les demandes de connexion des utilisateurs et n’y accède que lorsqu’elles remplissent certains critères. Cela permet aux organisations de conserver les bases de données et d’autres sources de données sur leurs réseaux locaux, tout en utilisant en toute sécurité ces données locales dans les tableaux de bord et rapports Power BI.
 

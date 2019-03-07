@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: f50305eed647bfc94bc5c19ee1a298cb9ac9c782
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: fdc4e90c65ef02f7416ffce9a41b0b2ed028abc8
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762694"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57328007"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
@@ -89,7 +89,7 @@ L’API accepte une liste des identités avec l’indication des jeux de donnée
 
 Vous pouvez créer le jeton d’incorporation à l’aide de la méthode **GenerateTokenInGroup** sur **PowerBIClient.Reports**.
 
-Par exemple, vous pouvez modifier l’exemple [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data). *Home\HomeController.cs line 76 and 77* peut être mis à jour de :
+Par exemple, vous pouvez modifier l’exemple [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data). Les *lignes 76 et 77 de Services\EmbedService.cs* peuvent être modifiées de :
 
 ```csharp
 // Generate Embed Token.
@@ -98,7 +98,7 @@ var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, report.Id, generateTokenRequestParameters);
 ```
 
-vers
+en
 
 ```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });

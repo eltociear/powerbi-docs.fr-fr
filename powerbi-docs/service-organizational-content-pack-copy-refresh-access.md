@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42e9f69c3cdab945c0f000a0cc2ae4654d9ec9b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6a1834c88fbd7077f49560bc56b545539917ed3e
+ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296112"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57196433"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Packs de contenu d’organisation : Copier, actualiser et obtenir l’accès
 
@@ -36,6 +36,12 @@ Créez votre propre copie du pack de contenu, non visible à d’autres personne
 2. Sélectionnez **Enregistrer**.  
 
 Vous disposez maintenant d’une copie que vous pouvez modifier. Personne d’autre ne peut voir les modifications que vous apportez.
+
+> [!NOTE]
+> Avant, à chaque installation d’un pack de contenu ou création d’une copie, un nouveau jeu de données s’affichait dans la liste de contenu de l’espace de travail. Une mise à jour récente a simplifié l’expérience afin d’afficher un seul élément avec la nouvelle icône de jeu de données référencé :
+>
+> ![icône de base de données avec un lien](media/service-organizational-content-pack-copy-refresh-access/power-bi-dataset-reference-icon.png)
+> 
 
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Au secours !  Je ne peux plus accéder au pack de contenu
 Cela peut se produire pour plusieurs raisons :

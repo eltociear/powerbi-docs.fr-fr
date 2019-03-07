@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: c5915f4f2792496a1521a868180d4ffc2dca3557
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 8d91b6cc03bb142d6d4aa101f87d8e3c1e6f3196
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248904"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014412"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Principal de service avec Power BI (préversion)
 
@@ -165,7 +165,7 @@ Voici un exemple de script pour récupérer l’ID objet du principal de service
 
 * Un principal de service ne fonctionne qu’avec de [nouveaux espaces de travail d’application](../service-create-the-new-workspaces.md).
 * **Mon espace de travail** n’est pas pris en charge lors de l’utilisation d’un principal de service.
-* Une [capacité dédiée](../service-admin-premium-manage.md) est nécessaire pour passer en production.
+* Une capacité Premium dédiée est nécessaire pour passer en production.
 * Vous ne pouvez pas vous connecter au portail Power BI avec un principal de service.
 * Vous devez disposer de droits d’administrateur Power BI pour activer un principal de service dans les paramètres du développeur du portail d’administration Power BI.
 * Il est impossible d’installer ou de gérer une passerelle de données locale à l’aide d’un principal de service.

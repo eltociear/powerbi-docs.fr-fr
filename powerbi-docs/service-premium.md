@@ -8,19 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 02/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: a048f589b19acd1a7c38a5b81cf781d1e76b7b5b
-ms.sourcegitcommit: 187d20180d9bae5a2ec53748cede9e7301e0343e
+ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56725337"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226132"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Présentation de Microsoft Power BI Premium
 
-Microsoft Power BI Premium fournit à votre organisation des ressources dédiées à l’exécution du service Power BI. Il vous offre des performances plus fiables et permet de traiter de gros volumes de données. Premium permet également une diffusion étendue du contenu sans qu’il soit nécessaire d’acquérir une licence Pro par utilisateur du contenu.  
+> [!NOTE]
+> Cet article est actuellement en cours de mise à jour pour décrire les nouvelles fonctionnalités, fournir plus de détails et faciliter la lecture. Pour obtenir les dernières informations, consultez [Déployer et gérer les capacités Power BI Premium](whitepaper-powerbi-premium-deployment.md).
+
+Power BI Premium fournit à votre organisation des ressources dédiées à l’exécution du service Power BI. Il vous offre des performances plus fiables et permet de traiter de gros volumes de données. Premium permet également une diffusion étendue du contenu sans qu’il soit nécessaire d’acquérir une licence Pro par utilisateur du contenu.  
 
 ## <a name="premium-capacity-and-shared-capacity"></a>Capacité Premium et capacité partagée
 
@@ -79,9 +82,7 @@ Power BI Premium est disponible dans des configurations de nœuds aux capacités
 
 ## <a name="workloads-in-premium-capacity"></a>Charges de travail dans une capacité Premium
 
-Considérez une charge de travail dans Power BI comme un des nombreux services que vous pouvez présenter aux utilisateurs. Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** prennent en charge uniquement la charge de travail associée aux requêtes Power BI exécutées dans le cloud.
-
-Nous offrons désormais la prise en charge de la préversion de deux charges de travail supplémentaires : les **rapports paginés** et les **flux de données**. Vous autorisez ces charges de travail dans le portail d’administration Power BI ou via l’API REST de Power BI. Vous définissez également la mémoire maximale que chaque charge de travail peut consommer pour pouvoir contrôler la façon dont les différentes charges de travail s’affectent mutuellement. Pour plus d’informations, consultez [Configurer des charges de travail](service-admin-premium-manage.md#configure-workloads).
+Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** prennent en charge uniquement la charge de travail associée aux requêtes Power BI exécutées dans le cloud. Premium prend également en charge les charges de travail supplémentaires pour l’**AI**, les **dataflows** et les **rapports paginés**. Vous autorisez ces charges de travail dans le portail d’administration Power BI ou via l’API REST de Power BI. Vous définissez également la mémoire maximale que chaque charge de travail peut consommer pour pouvoir contrôler la façon dont les différentes charges de travail s’affectent mutuellement. Pour en savoir plus, consultez [Configurer des charges de travail](service-admin-premium-workloads.md).
 
 ### <a name="default-memory-settings"></a>Paramètres de mémoire par défaut
 
@@ -114,10 +115,10 @@ Power BI Premium offre également la possibilité d’exécuter Power BI Report 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[FAQ Power BI Premium](service-premium-faq.md)
-[Guide pratique pour acheter Power BI Premium](service-admin-premium-purchase.md)
-[Gérer Power BI Premium](service-admin-premium-manage.md)
-[Livre blanc sur Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-[Livre blanc sur la planification d’un déploiement de Power BI dans une entreprise](https://aka.ms/pbienterprisedeploy)
+[Déployer et gérer les capacités Power BI Premium](whitepaper-powerbi-premium-deployment.md)   
+[Acheter Power BI Premium](service-admin-premium-purchase.md)   
+[Questions fréquentes Power BI Premium](service-premium-faq.md)   
+
+
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

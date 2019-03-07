@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: c33ec747af514611df0ef00832acb785f04c40f1
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892318"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014159"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Questions fréquentes sur les visuels personnalisés Power BI
 
@@ -99,7 +99,7 @@ Certains visuels ne sont pas certifiés car ils ne sont pas conformes à un ou p
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Qu’est-ce qu’un visuel avec achats supplémentaires ?
 
-Un visuel avec achats supplémentaires est similaire aux compléments d’achat dans l’application (IAP) sur la Place de marché. Ces compléments ont une étiquette de prix indiquant  **Un autre achat peut être requis**.
+Un visuel avec achats supplémentaires est similaire aux compléments d’achat dans l’application (IAP) sur la Place de marché. Ces compléments ont une étiquette de prix indiquant **Un autre achat peut être requis**.
 
 Les visuels IAP personnalisés sont gratuits et téléchargeables : les utilisateurs n’ont rien à payer pour télécharger ces visuels personnalisés à partir de la Place de marché. Les visuels IAP proposent des achats facultatifs dans l’application pour les fonctionnalités avancées.  
 

@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: f13074c2123808e7b26d40f9c5a7e20cbf0da6e4
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e1d8d240e4fd5bc05fc015f1c12971a8646370dd
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291792"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226109"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos basé sur les ressources pour l’authentification unique (SSO) de Power BI à des sources de données locales
 
@@ -39,7 +39,7 @@ Dans une installation standard, la passerelle s’exécute en tant que compte de
 
 ![Compte de domaine](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-Pour activer une **délégation Kerberos contrainte, la passerelle doit opérer en tant que compte de domaine, sauf si votre annuaire Azure AD est déjà synchronisé avec votre annuaire Active Directory local (à l’aide d’Active Directory DirSync/Connect). Si vous avez besoin de changer de compte au profit d’un compte de domaine, consultez [Basculement de la passerelle vers un compte de domaine](service-gateway-sso-kerberos.md#switching-the-gateway-to-a-domain-account) plus loin dans cet article.
+Pour activer une **délégation Kerberos contrainte, la passerelle doit opérer en tant que compte de domaine, sauf si votre annuaire Azure AD est déjà synchronisé avec votre annuaire Active Directory local (à l’aide d’Active Directory DirSync/Connect). Si vous devez changer de compte au profit d’un compte de domaine, consultez [Basculer la passerelle vers un compte de domaine](service-gateway-sso-kerberos.md).
 
 Si Azure AD DirSync / Connect est configuré et que les comptes d’utilisateur sont synchronisés, le service de passerelle n’a pas besoin d’effectuer des recherches Active Directory locales lors de l’exécution. Vous pouvez utiliser le SID de service local (au lieu d’exiger un compte de domaine) pour le service de passerelle. Les étapes de configuration de la délégation Kerberos contrainte décrites dans cet article sont les mêmes que celles de cette configuration (elles sont simplement appliquées à l’objet ordinateur de la passerelle dans Active Directory, au lieu du compte de domaine).
 

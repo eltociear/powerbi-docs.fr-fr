@@ -8,18 +8,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 02/28/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8922bb329e4b598745fd259c67e74b063368b7be
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: b4f2d58b9e33e603b6e2dbc97972bb54c66f065c
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892387"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014136"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Acheter Power BI Premium
 
-Cet article explique comment acheter une capacité Power BI Premium (P1-P3) pour votre organisation. Vous achetez de la capacité Power BI Premium dans le Centre d’administration Office 365 et vous [gérez vos capacités](service-admin-premium-manage.md) dans le portail d’administration Power BI. Pour connaître le tarif actuel et obtenir des informations sur la planification, consultez la [page des tarifs de Power BI](https://powerbi.microsoft.com/pricing/) et la [Calculatrice Power BI Premium](https://powerbi.microsoft.com/calculator/).
+> [!NOTE]
+> Cet article est actuellement en cours de mise à jour pour décrire les nouvelles fonctionnalités, fournir plus de détails et faciliter la lecture. 
+
+Cet article explique comment acheter une capacité Power BI Premium (P1-P3) pour votre organisation. Vous achetez une capacité Power BI Premium dans le Centre d’administration Office 365 et vous gérez vos capacités dans le portail d’administration Power BI. Pour connaître le tarif actuel et obtenir des informations sur la planification, consultez la [page des tarifs de Power BI](https://powerbi.microsoft.com/pricing/) et la [Calculatrice Power BI Premium](https://powerbi.microsoft.com/calculator/).
 
 Les créateurs de contenu ont toujours besoin d’une licence Power BI Pro, même si votre organisation utilise Power BI Premium. Veillez à acheter au moins une licence Power BI Pro pour votre organisation.
 

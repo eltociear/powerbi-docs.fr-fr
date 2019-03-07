@@ -8,18 +8,18 @@ featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 02/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 23e237428b86046cf75b02e2e98082da18d671cf
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5ae83079ae0dffca42498644f4de628bc626bb5e
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286679"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014458"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Trucs et astuces pour les visualisations de carte Power BI
-De par son intégration à Bing Cartes, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui vous permet de créer des cartes. Les deux solutions utilisent des algorithmes pour identifier l’emplacement correct, mais parfois elles présentent seulement une estimation. Si l’instance Power BI ne parvient pas à créer la visualisation de carte, elle demande l’aide de Bing Cartes. 
+De par son intégration à Bing Cartes, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui vous permet de créer des cartes. Les deux solutions utilisent des algorithmes pour identifier l’emplacement correct, mais parfois elles présentent seulement une estimation. Si l’instance Power BI échoue à créer la visualisation de carte, elle demande l’aide de Bing Cartes. 
 
 Vous ou votre administrateur devrez peut-être mettre à jour votre pare-feu pour autoriser l’accès aux URL que Bing utilise pour le géocodage.  Il s’agit des URL suivantes :
 * https://dev.virtualearth.net/REST/V1/Locations
@@ -31,8 +31,8 @@ Pour augmenter vos chances d’obtenir un géocodage correct, appliquez les cons
 ## <a name="what-is-sent-to-bing-maps"></a>Ce qui est envoyé à Bing Cartes
 Le service Power BI et Power BI Desktop envoient à Bing les données géographiques nécessaires pour créer la visualisation de carte. Il peut s’agir des données des compartiments d’**emplacement**, de **latitude** et de **longitude** et des champs de données géographiques dans un des compartiments de filtrage **Niveau rapport**, **Niveau page** ou **Niveau visuel**. Ce qui est envoyé exactement varie en fonction du type de carte. Pour en savoir plus, consultez [Bing Cartes](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Pour les cartes (cartes à bulles), si la latitude et la longitude sont fournies, aucune donnée n’est envoyée à Bing. Dans le cas contraire, toutes les données des compartiments d’emplacement (et de filtre) sont envoyées à Bing.     
-* Les cartes choroplèthes nécessitent un champ dans le compartiment Emplacement, même si la latitude et la longitude sont fournies. Les données figurant dans les compartiments Longitude, Latitude ou Emplacement sont envoyées à Bing.
+* Pour les cartes à bulles, si la latitude et la longitude sont fournies, aucune donnée n’est envoyée à Bing. Dans le cas contraire, toutes les données des compartiments **Emplacement** (et de filtre) sont envoyées à Bing.     
+* Les cartes choroplèthes nécessitent un champ dans le compartiment **Emplacement**, même si la latitude et la longitude sont fournies. Les données figurant dans les compartiments **Emplacement**, **Latitude** et **Longitude** sont envoyées à Bing.
   
     Dans l’exemple ci-dessous, le champ **Vendor** est utilisé pour le géocodage, donc toutes les données concernant le fournisseur sont envoyées à Bing. Les données des compartiments **Taille** et **Saturation de la couleur** ne sont pas envoyées à Bing.
   
