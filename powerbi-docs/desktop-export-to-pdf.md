@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7b835231356ad14ab434b86a2d1f99aa7212358d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 2f64973650edd951a9a780090426afba3e8471f5
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215627"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555587"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Exporter des rapports en PDF à partir de Power BI Desktop
-Dans **Power BI Desktop**, vous pouvez exporter des rapports vers un fichier PDF, et ainsi facilement partager ou imprimer vos rapports à partir de ce PDF.
+Dans **Power BI Desktop** ou le service Power BI, vous pouvez exporter des rapports vers un fichier PDF, et ainsi facilement partager ou imprimer vos rapports à partir de ce PDF.
 
-![Exporter en PDF](media/desktop-export-to-pdf/export-to-pdf_01.png)
+![Exporter au format PDF](media/desktop-export-to-pdf/export-to-pdf_01.png)
 
 Le processus d’exportation de votre rapport à partir de **Power BI Desktop** en PDF pour pouvoir l’imprimer ou le partager est simple. Sélectionnez simplement **Fichier > Exporter au format PDF** à partir de Power BI Desktop.
 
@@ -35,7 +35,6 @@ Une fois l’exportation terminée, le fichier PDF est chargé dans la visionneu
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 Vous devez prendre en considération quelques points pour la fonctionnalité **Exporter au format PDF** :
 
-* La fonctionnalité **Exporter au format PDF** est disponible seulement avec **Power BI Desktop** et n’est actuellement pas disponible dans le **service Power BI**.
 * La fonctionnalité exporte les visuels personnalisés, mais elle n’exporte *pas* les éventuels papiers peints que vous avez appliqués au rapport.
 
 Comme le papier peint n’est pas exporté vers le fichier PDF, vous devez prêter une attention particulière aux rapports qui utilisent un papier peint foncé. Si vous avez défini le texte de votre rapport en clair ou en blanc pour qu’il ressorte sur votre papier peint foncé, il sera difficile à lire ou même illisible dans le PDF résultant du processus d’exportation, car le papier peint n’est pas exporté avec le reste du rapport. 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5aaa50aff2302742d6845c9cb16b0fc36ea2677
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bf41700b367b7c3c2302eeec9c03b93fa294ed3f
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276779"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555683"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec **Power BI Desktop**, lorsque vous vous connectez à votre source de données, vous pouvez toujours importer une copie des données dans **Power BI Desktop**. Pour certaines sources de données, une autre approche consiste à se connecter directement à la source de données à l’aide de **DirectQuery**.
@@ -48,19 +48,19 @@ Il existe quelques avantages à l’utilisation de **DirectQuery** :
 ## <a name="limitations-of-directquery"></a>Limitations de DirectQuery
 Il existe actuellement quelques limitations à l’utilisation de **DirectQuery**:
 
-* Toutes les tables doivent provenir d’une seule base de données.
+* Toutes les tables doivent venir d’une seule base de données, à moins d’utiliser des [modèles composites](desktop-composite-models.md)
 * Si la requête de l’**Éditeur de requête** est trop complexe, une erreur se produit. Pour corriger cette erreur, vous devez soit supprimer l’étape problématique dans l’**Éditeur de requête**, soit *Importer* les données au lieu d’utiliser **DirectQuery**. Pour des sources multidimensionnelles telles que SAP Business Warehouse, aucun **Éditeur de requête** n’est disponible.
 * Le filtrage de la relation est limité à un seul sens, au lieu de s’étendre aux deux (bien qu’une fonctionnalité en version préliminaire permette d’activer un filtrage croisé dans les deux sens pour **DirectQuery**). Pour des sources multidimensionnelles telles que SAP Business Warehouse, aucune relation n’est définie dans le modèle.
-* **DirectQuery**n’intègre pas de fonctionnalités de Time Intelligence. Par exemple, le mode **DirectQuery**traitement spécial des colonnes de date (année, trimestre, mois, jour, etc.).
+* **DirectQuery**n’intègre pas de fonctionnalités de Time Intelligence. Par exemple, le mode **DirectQuery** ne prend pas en charge le traitement spécial des colonnes de date (année, trimestre, mois, jour, etc.).
 * Par défaut, les limitations sont placées sur des expressions DAX autorisées dans les mesures ; consultez le paragraphe suivant (situé après cette liste à puces) pour plus d’informations.
-* Le renvoi de données est limité à 1 million de lignes lors de l’utilisation de **DirectQuery**. Cela a une incidence sur les lignes renvoyées, et non sur les agrégations ou les calculs utilisés pour créer le jeu de données renvoyé à l’aide de **DirectQuery**. Par exemple, vous pouvez agréger 10 millions de lignes avec la requête qui s’exécute sur la source de données et renvoyer avec précision les résultats de cette agrégation à Power BI à l’aide de **DirectQuery** tant que les données renvoyées à Power BI représentent moins de 1 million de lignes. Si plus de 1 million de lignes est renvoyé par **DirectQuery**, Power BI renvoie une erreur.
+* Le retour de données est limité à un million de lignes lors de l’utilisation de **DirectQuery**. Cette limite a une incidence sur les lignes retournées, mais pas sur les agrégations ou les calculs utilisés pour créer le jeu de données retourné à l’aide de **DirectQuery**. Par exemple, vous pouvez agréger 10 millions de lignes avec la requête qui s’exécute sur la source de données et renvoyer avec précision les résultats de cette agrégation à Power BI à l’aide de **DirectQuery** tant que les données renvoyées à Power BI représentent moins de 1 million de lignes. Si plus de 1 million de lignes est renvoyé par **DirectQuery**, Power BI renvoie une erreur.
 
 Pour garantir des performances acceptables aux requêtes envoyées à la source de données sous-jacente, les limitations sont imposées aux mesures par défaut. Les utilisateurs avancés peuvent choisir de contourner cette limitation en sélectionnant successivement **Fichier > Options et paramètres > Options**, **DirectQuery**, puis l’option *Autoriser des mesures sans restriction en mode DirectQuery*. Quand cette option est sélectionnée, toute expression DAX valide pour une mesure est utilisable. Les utilisateurs doivent savoir, toutefois, que certaines expressions qui fonctionnent très bien quand les données sont importées peuvent générer des requêtes très lentes pour la source principale en mode DirectQuery.
 
 ## <a name="important-considerations-when-using-directquery"></a>Considérations importantes concernant l’utilisation de DirectQuery
 Lors de l’utilisation de **DirectQuery**, vous devez prendre en considération les trois points suivants :
 
-* **Charge et performances** : toutes les demandes **DirectQuery** étant envoyées à la base de données source, le temps nécessaire pour actualiser un élément visuel dépend du temps que cette source principale met à répondre avec les résultats de la requête (ou des requêtes). Le temps de réponse recommandé (avec le renvoi des données demandées) en cas d’utilisation de **DirectQuery** pour des éléments visuels est de cinq secondes ou moins, avec un temps de réponse maximal recommandé de 30 secondes pour le renvoi des résultats. Si le temps de réponse est plus long, l’expérience d’un utilisateur utilisant le rapport devient d’une médiocrité pratiquement inacceptable. En outre, une fois qu’un rapport est publié sur le service Power BI, toute requête prenant plus de quelques minutes expire, et l’utilisateur reçoit un message d’erreur.
+* **Charge et performances** : toutes les demandes **DirectQuery** étant envoyées à la base de données source, le temps nécessaire pour actualiser un élément visuel dépend du temps que cette source principale met à répondre avec les résultats de la requête (ou des requêtes). Le temps de réponse recommandé (avec le renvoi des données demandées) en cas d’utilisation de **DirectQuery** pour des éléments visuels est de cinq secondes ou moins, avec un temps de réponse maximal recommandé de 30 secondes pour le renvoi des résultats. Si le temps de réponse est plus long, l’expérience d’un utilisateur utilisant le rapport devient d’une médiocrité pratiquement inacceptable. De plus, une fois qu’un rapport est publié sur le service Power BI, toute requête prenant plus de quelques minutes expire, et l’utilisateur reçoit un message d’erreur.
   
   La charge sur la base de données source doit également être prise en considération, en fonction du nombre d’utilisateurs de Power BI qui utiliseront le rapport publié. L’utilisation de la *Sécurité au niveau des lignes* peut également avoir un impact significatif. En effet, une vignette de tableau de bord sans sécurité au niveau des lignes partagée par plusieurs d’utilisateurs a pour effet d’envoyer une requête unique à la base de données, alors que l’utilisation de la sécurité au niveau des lignes sur une vignette de tableau de bord signifie généralement que l’actualisation d’une vignette nécessite une requête *par utilisateur*, ce qui augmente considérablement la charge sur la base de données source, et peut avoir une incidence sur les performances.
   
