@@ -12,33 +12,33 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: db9f6218d0657946f04b7589a15be99270cf7030
-ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
+ms.openlocfilehash: 8172934357c24516a40a670c68e008521bd4d82d
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57196456"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580102"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Concepts de base pour les ***consommateurs*** du service Power BI
 
 ## <a name="power-bi-consumers-and-designers"></a>*Consommateurs* et *concepteurs* Power BI
-Cet article suppose que vous avez déjà lu la [Vue d’ensemble de Power BI](../power-bi-overview.md) et que vous vous êtes identifié comme ***consommateur*** Power BI. Les consommateurs reçoivent du contenu Power BI, comme des tableaux de bord et des rapports, de leurs collègues. Les consommateurs utilisent le service Power BI, qui est la version basée sur un site web de Power BI. 
+Cet article suppose que vous avez déjà lu la [Vue d’ensemble de Power BI](../power-bi-overview.md) et que vous vous êtes identifié comme ***consommateur*** Power BI. Les consommateurs reçoivent du contenu Power BI, comme des tableaux de bord et des rapports, de leurs collègues. Les consommateurs utilisent le service Power BI, qui est la version basée sur un site web de Power BI.
 
-Vous entendrez sans doute le terme « Power BI Desktop » ou simplement « Desktop ». Il s’agit d’un outil autonome utilisé par les *concepteurs* qui génèrent et partagent des tableaux de bord et des rapports avec vous. Il est important de savoir qu’il existe d’autres outils Power BI, mais tant que vous serez consommateur, vous utiliserez uniquement le service Power BI. Par ailleurs, cet article s’applique uniquement au service Power BI. 
+Vous entendrez sans doute le terme « Power BI Desktop » ou simplement « Desktop ». Il s’agit d’un outil autonome utilisé par les *concepteurs* qui génèrent et partagent des tableaux de bord et des rapports avec vous. Il est important de savoir qu’il existe d’autres outils Power BI, mais tant que vous serez consommateur, vous utiliserez uniquement le service Power BI. Par ailleurs, cet article s’applique uniquement au service Power BI.
 
 ## <a name="terminology-and-concepts"></a>Terminologie et concepts
 Cet article n’est pas une visite guidée visuelle de Power BI, ni un tutoriel pratique. Il s’agit plutôt d’une vue d’ensemble qui, nous l’espérons, vous aidera à vous familiariser avec la terminologie et les concepts de Power BI. C’est une façon de vous présenter le jargon et la configuration du terrain. Pour obtenir une visite guidée du service Power BI et de sa navigation, consultez la [Visite guidée](end-user-experience.md).
 
 ## <a name="open-power-bi-service-for-the-first-time"></a>Ouvrir le service Power BI pour la première fois
-La plupart des consommateurs de Power BI obtiennent le service Power BI car 1) leur entreprise achète des licences et 2) un administrateur affecte ces licences à des employés comme vous. 
+La plupart des consommateurs de Power BI obtiennent le service Power BI car 1) leur entreprise achète des licences et 2) un administrateur affecte ces licences à des employés comme vous.
 
 Pour commencer, ouvrez juste un navigateur et tapez **app.powerbi.com**. La première fois que vous ouvrez le service Power BI, vous voyez un contenu semblable à ceci.
 
 ![Écran d’accueil du service Power BI](media/end-user-basic-concepts/power-bi-open.png)
 
-Quand vous utiliserez Power BI, vous personnaliserez ce que vous voyez chaque fois que vous ouvrirez le site web.  Par exemple, certaines personnes aiment que Power BI s’ouvre sur la page d’accueil, tandis que d’autres ont un tableau de bord favori qu’ils veulent voir en premier. Ne vous inquiétez pas, nous allons vous apprendre comment procéder. 
+Quand vous utiliserez Power BI, vous personnaliserez ce que vous voyez chaque fois que vous ouvrirez le site web.  Par exemple, certaines personnes aiment que Power BI s’ouvre sur la page d’accueil, tandis que d’autres ont un tableau de bord favori qu’ils veulent voir en premier. Ne vous inquiétez pas, nous allons vous apprendre comment procéder.
 - [Accueil en préversion](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)    
-- [Définir du contenu comme étant **par défaut**](end-user-featured.md) 
+- [Définir du contenu comme étant **par défaut**](end-user-featured.md)
 
 ![affiche la vue de la page d’accueil et du tableau de bord](media/end-user-basic-concepts/power-bi-first.png)
 
@@ -46,12 +46,12 @@ Mais avant d’aller plus loin, revenons en arrière et parlons des modules qui 
 
 ## <a name="power-bi-content"></a>***Contenu*** Power BI
 ### <a name="introduction-to-building-blocks"></a>Introduction aux modules
-Pour un consommateur de Power BI, les 5 modules sont disponibles : ***visualisations***,  ***tableaux de bord***, ***rapports***, ***applications*** et  ***jeux de données***. Ces modules sont parfois appelés ***contenu*** *Power BI*. Et le *contenu* existe dans des ***espaces de travail***. Un workflow type implique tous ces blocs de construction :  un *concepteur* Power BI (en jaune dans le diagramme ci-dessous) collecte des données à partir de *jeux de données*, les apporte dans Power BI pour qu’elles soient analysées, crée des *rapports* remplis de *visualisations* qui mettent en évidence les faits et les insights intéressants, qui épinglent des visualisations des rapports dans un tableau de bord, et qui partagent les rapports et les tableaux de bord avec des *consommateurs* , comme vous (en noir dans le diagramme ci-dessous), sous la forme d’*applications* ou autres types de contenu partagé. 
+Pour un consommateur de Power BI, les 5 modules sont disponibles : ***visualisations***,  ***tableaux de bord***, ***rapports***, ***applications*** et  ***jeux de données***. Ces modules sont parfois appelés ***contenu*** *Power BI*. Et le *contenu* existe dans des ***espaces de travail***. Un workflow type implique tous ces blocs de construction :  un *concepteur* Power BI (en jaune dans le diagramme ci-dessous) collecte des données à partir de *jeux de données*, les apporte dans Power BI pour qu’elles soient analysées, crée des *rapports* remplis de *visualisations* qui mettent en évidence les faits et les insights intéressants, qui épinglent des visualisations des rapports dans un tableau de bord, et qui partagent les rapports et les tableaux de bord avec des *consommateurs* , comme vous (en noir dans le diagramme ci-dessous), sous la forme d’*applications* ou autres types de contenu partagé.
 
 ![diagramme de flux, de base](media/end-user-basic-concepts/power-bi-workflow.png)
 
-Dans sa version la plus basique. 
-* ![icône de visualisation](media/end-user-basic-concepts/visual.png) Une ***visualisation*** (ou un *visuel*) est un type de graphique créé par des *concepteurs* Power BI à l’aide de données présentes dans des *rapports* et des *jeux de données*. En général, les *concepteurs* génèrent les visuels dans Power BI Desktop. 
+Dans sa version la plus basique.
+* ![icône de visualisation](media/end-user-basic-concepts/visual.png) Une ***visualisation*** (ou un *visuel*) est un type de graphique créé par des *concepteurs* Power BI à l’aide de données présentes dans des *rapports* et des *jeux de données*. En général, les *concepteurs* génèrent les visuels dans Power BI Desktop.
 
     Pour plus d’informations, consultez [Visualisations pour les *consommateurs* Power BI](end-user-visualizations.md).
 
@@ -67,7 +67,7 @@ Dans sa version la plus basique.
 
 * ![icône d’application](media/end-user-basic-concepts/app.png) Une *application* est un moyen pour les *concepteurs* de regrouper et de partager des rapports et des tableaux de bord associés. Les *consommateurs* reçoivent automatiquement certaines applications, mais ils peuvent rechercher d’autres applications créées par des collègues ou par la communauté. Par exemple, des services externes que vous utilisez peut-être déjà, comme Google Analytics et Microsoft Dynamics CRM, offrent des applications Power BI.
 
-Autrement dit, si vous êtes un tout nouvel utilisateur et que vous vous êtes connecté à Power BI pour la première fois, vous n’avez pas encore de tableau de bord, d’application ou de rapport. 
+Autrement dit, si vous êtes un tout nouvel utilisateur et que vous vous êtes connecté à Power BI pour la première fois, vous n’avez pas encore de tableau de bord, d’application ou de rapport.
 _______________________________________________________
 
 
@@ -77,7 +77,7 @@ Un *jeu de données* est une collection de données que des *concepteurs* import
 
 Chaque jeu de données représente une source de données unique, par exemple un classeur Excel sur OneDrive, un jeu de données tabulaire SSAS local ou un jeu de données Salesforce. De nombreuses sources de données différentes sont prises en charge.
 
-Quand un concepteur partage une application avec vous, vous pouvez voir quels jeux de données s’y trouvent. 
+Quand un concepteur partage une application avec vous, vous pouvez voir quels jeux de données s’y trouvent.
 
 ![Applications sélectionnées et flèche pointant vers la section Jeux de données sur le canevas](media/end-user-basic-concepts/power-bi-dataset-list.png)
 
@@ -86,10 +86,10 @@ Quand un concepteur partage une application avec vous, vous pouvez voir quels je
 * peut être utilisé plusieurs fois
 * peut être utilisé dans de nombreux rapports différents
 * peut comprendre différentes visualisations qui peuvent être affichées dans de nombreux tableaux de bord différents
-  
+
   ![Relations P:1 d’un jeu de données](media/end-user-basic-concepts/drawing2.png)
 
-De plus, les jeux de données d’autres espaces de travail peuvent être utilisés pour créer du contenu (rapports et tableaux de bord) dans votre espace de travail. Ces jeux de données sont représentés par l’icône de jeu de données référencé ci-dessous : 
+De plus, les jeux de données d’autres espaces de travail peuvent être utilisés pour créer du contenu (rapports et tableaux de bord) dans votre espace de travail. Ces jeux de données sont représentés par l’icône de jeu de données référencé ci-dessous :
 
 ![icône de base de données avec un lien](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
@@ -121,19 +121,19 @@ Un rapport Power BI se compose d’une ou de plusieurs pages de visualisations,
 * peut être associé à plusieurs tableaux de bord (les vignettes épinglées à partir de ce rapport peuvent apparaître sur plusieurs tableaux de bord).
 * sont créés à l’aide de données provenant d’un seul jeu de données.  
 * peut faire partie de plusieurs applications.
-  
+
   ![dessin des relations d’un rapport](media/end-user-basic-concepts/drawing5.png)
 
 ________________________________________________
 
 ## <a name="dashboards"></a>Tableaux de bord
-Un tableau de bord représente une vue personnalisée d’une partie d’un ou de plusieurs jeux de données sous-jacents. Les *concepteurs* génèrent des tableaux de bord et les partagent avec des *consommateurs*, soit individuellement soit comme partie d’une application. Un tableau de bord est un canevas unique qui contient des *vignettes*, des graphiques et du texte. 
+Un tableau de bord représente une vue personnalisée d’une partie d’un ou de plusieurs jeux de données sous-jacents. Les *concepteurs* génèrent des tableaux de bord et les partagent avec des *consommateurs*, soit individuellement soit comme partie d’une application. Un tableau de bord est un canevas unique qui contient des *vignettes*, des graphiques et du texte.
 
   ![exemple de tableau de bord](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-Une vignette est un rendu d’un visuel qu’un *concepteur* *épingle*, par exemple d’un rapport sur un tableau de bord.  Chaque vignette épinglée affiche une [visualisation](end-user-visualizations.md) qui a été créée à partir d’un jeu de données et épinglée sur ce tableau de bord. Une vignette peut également contenir une page de rapport entière, ainsi que des données de streaming en direct ou une vidéo. Pour les *concepteurs*, il existe différentes façons d’ajouter des vignettes à des tableaux de bord, mais elles sont bien trop nombreuses pour être traitées dans cette vue d’ensemble. Pour plus d’informations, consultez [Vignettes de tableau de bord dans Power BI](end-user-tiles.md). 
+Une vignette est un rendu d’un visuel qu’un *concepteur* *épingle*, par exemple d’un rapport sur un tableau de bord.  Chaque vignette épinglée affiche une [visualisation](end-user-visualizations.md) qui a été créée à partir d’un jeu de données et épinglée sur ce tableau de bord. Une vignette peut également contenir une page de rapport entière, ainsi que des données de streaming en direct ou une vidéo. Pour les *concepteurs*, il existe différentes façons d’ajouter des vignettes à des tableaux de bord, mais elles sont bien trop nombreuses pour être traitées dans cette vue d’ensemble. Pour plus d’informations, consultez [Vignettes de tableau de bord dans Power BI](end-user-tiles.md).
 
-Les consommateurs ne peuvent pas modifier les tableaux de bord. Vous pouvez toutefois ajouter des commentaires, afficher des données associées, les mettre en favori, vous y abonner, et bien plus encore. 
+Les consommateurs ne peuvent pas modifier les tableaux de bord. Vous pouvez toutefois ajouter des commentaires, afficher des données associées, les mettre en favori, vous y abonner, et bien plus encore.
 
 Quels sont les objectifs des tableaux de bord ?  En voici juste quelques-uns :
 
@@ -148,17 +148,17 @@ Quels sont les objectifs des tableaux de bord ?  En voici juste quelques-uns :
 * peut afficher des visualisations à partir de nombreux jeux de données différents ;
 * peut afficher des visualisations à partir de nombreux rapports différents
 * peut afficher des visualisations épinglées à partir d’autres outils (par exemple Excel)
-  
+
   ![dessin des relations d’un tableau de bord](media/end-user-basic-concepts/drawing1.png)
 
 ________________________________________________
 
 ## <a name="apps"></a>Applications
-Ces collections de tableaux de bord et de rapports organisent du contenu associé dans un seul et même package. Les *concepteurs* Power BI les génèrent et les partagent avec des personnes, des groupes, toute une organisation ou tout le monde. En tant que consommateur, vous pouvez être certain que vous et vos collègues travaillez avec les mêmes données, car il existe une seule version approuvée. 
+Ces collections de tableaux de bord et de rapports organisent du contenu associé dans un seul et même package. Les *concepteurs* Power BI les génèrent et les partagent avec des personnes, des groupes, toute une organisation ou tout le monde. En tant que consommateur, vous pouvez être certain que vous et vos collègues travaillez avec les mêmes données, car il existe une seule version approuvée.
 
 ![Applications sélectionnées dans le volet de navigation gauche](media/end-user-basic-concepts/power-bi-app.png)
 
-Les applications sont faciles à trouver et à installer dans le service Power BI (https://powerbi.com)) et sur votre appareil mobile. Une fois que vous avez installé une application, vous n’êtes pas obligé de mémoriser les noms d’un grand nombre de tableaux de bord, car ces derniers sont rassemblés dans une même application, dans votre navigateur ou sur votre appareil mobile. 
+Les applications sont faciles à trouver et à installer dans le service Power BI (https://powerbi.com)) et sur votre appareil mobile. Une fois que vous avez installé une application, vous n’êtes pas obligé de mémoriser les noms d’un grand nombre de tableaux de bord, car ces derniers sont rassemblés dans une même application, dans votre navigateur ou sur votre appareil mobile.
 
 Cette application comprend trois tableaux de bord associés et trois rapports associés qui constituent une application unique.
 
@@ -170,7 +170,7 @@ Vous pouvez obtenir des applications de différentes manières. Le concepteur de
 
 Une fois l’application installée, sélectionnez-la simplement dans votre liste d’applications, puis sélectionnez le tableau de bord ou le rapport à ouvrir et à explorer en premier.   
 
-J’espère que cet article vous a donné une bonne connaissance des modules qui constituent le service Power BI pour les consommateurs. 
+J’espère que cet article vous a donné une bonne connaissance des modules qui constituent le service Power BI pour les consommateurs.
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Consulter le [glossaire](end-user-glossary.md) et l’ajouter aux favoris    

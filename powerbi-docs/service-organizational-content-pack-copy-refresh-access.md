@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6a1834c88fbd7077f49560bc56b545539917ed3e
-ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
+ms.openlocfilehash: f22cac734d98e98cd17a915c09d6705e2cad121a
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57196433"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580056"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Packs de contenu d’organisation : Copier, actualiser et obtenir l’accès
 
@@ -25,13 +25,13 @@ La création de packs de contenu est différente du partage de tableaux de bord 
 
 > [!NOTE]
 > Vous ne pouvez pas créer ou installer des packs de contenu d’organisation dans les expériences des nouveaux espaces de travail en préversion. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
-> 
+>
 
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Créer une copie d’un pack de contenu d’organisation
 Créez votre propre copie du pack de contenu, non visible à d’autres personnes.
 
 1. Sélectionnez les points de suspension (...) en regard du tableau de bord du pack de contenu > Faire une copie.
-   
+
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Sélectionnez **Enregistrer**.  
 
@@ -41,7 +41,7 @@ Vous disposez maintenant d’une copie que vous pouvez modifier. Personne d’au
 > Avant, à chaque installation d’un pack de contenu ou création d’une copie, un nouveau jeu de données s’affichait dans la liste de contenu de l’espace de travail. Une mise à jour récente a simplifié l’expérience afin d’afficher un seul élément avec la nouvelle icône de jeu de données référencé :
 >
 > ![icône de base de données avec un lien](media/service-organizational-content-pack-copy-refresh-access/power-bi-dataset-reference-icon.png)
-> 
+>
 
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Au secours !  Je ne peux plus accéder au pack de contenu
 Cela peut se produire pour plusieurs raisons :
@@ -51,7 +51,7 @@ Cela peut se produire pour plusieurs raisons :
 * **Modification des paramètres de sécurité** : Si le tableau de bord et les rapports sont connectés à des sources de données SSAS locales et si des modifications sont apportées aux paramètres de sécurité, vos autorisations concernant ce serveur peuvent être révoquées.
 
 ## <a name="how-are-organizational-content-packs-refreshed"></a>Comment les packs de contenu d’organisation sont-ils actualisés ?
-Quand un pack de contenu est créé, les paramètres d’actualisation sont hérités avec le jeu de données.  Quand vous créez une copie du pack de contenu, la nouvelle version conserve son lien au jeu de données d’origine et à la planification de l’actualisation. 
+Quand un pack de contenu est créé, les paramètres d’actualisation sont hérités avec le jeu de données.  Quand vous créez une copie du pack de contenu, la nouvelle version conserve son lien au jeu de données d’origine et à la planification de l’actualisation.
 
 Voir [Gérer, mettre à jour et supprimer des packs de contenu d’organisation](service-organizational-content-pack-manage-update-delete.md).
 
@@ -59,4 +59,3 @@ Voir [Gérer, mettre à jour et supprimer des packs de contenu d’organisation]
 * [Introduction aux packs de contenu d’organisation](service-organizational-content-pack-introduction.md)
 * [Créer un groupe dans Power BI](service-create-distribute-apps.md)
 * D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

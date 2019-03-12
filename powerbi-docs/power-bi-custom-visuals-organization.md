@@ -1,21 +1,21 @@
 ---
 title: Visuels personnalisés organisationnels dans Power BI
 description: Utiliser, gérer et créer des visuels personnalisés d’une organisation dans Power BI
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 49761008ca4f5c62d0f5b7745fb2971e5b9608d6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 157b20107a5be106ac97e0cb927b1e496e1ba115
+ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279286"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57695078"
 ---
 # <a name="organizational-custom-visuals-in-power-bi"></a>Visuels personnalisés organisationnels dans Power BI
 
