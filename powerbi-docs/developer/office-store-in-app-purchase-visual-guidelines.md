@@ -1,30 +1,34 @@
 ---
-title: 'Un achat supplémentaire peut être requis : marche à suivre pour les visuels Power BI'
+title: Instructions relatives aux visuels Power BI
 description: Découvrez comment publier votre visuel personnalisé sur AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser après l’avoir acheté.
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.openlocfilehash: 92d4320026164e523297cbe48ee87ce33d9ab2f7
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.date: 03/10/2019
+ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826580"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757297"
 ---
-# <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Marche à suivre pour les visuels Power BI avec des achats supplémentaires
+# <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
 
-Jusqu’à une date récente, la Place de marché (AppSource) acceptait uniquement les visuels Power BI gratuits. Cette stratégie a changé, si bien que vous pouvez également envoyer des visuels qui ont une balise de prix « un achat supplémentaire peut être requis » à AppSource. 
+## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Marche à suivre pour les visuels Power BI avec des achats supplémentaires
+
+Jusqu’à une date récente, la Place de marché (AppSource) acceptait uniquement les visuels Power BI gratuits. Cette stratégie a changé (décembre 2018), pour également vous permettre d’envoyer à AppSource des visuels ayant une étiquette de prix « Un autre achat peut être requis ». 
 
 Les visuels de type « Un achat supplémentaire peut être requis » sont similaires aux compléments d’achat dans l’application (IAP) de l’Office Store. Les développeurs peuvent également faire certifier ces visuels une fois ceux-ci approuvés par l’équipe AppSource et après avoir vérifié qu’ils répondent aux critères de certification. Pour plus d’informations sur la configuration requise, consultez [Visuels personnalisés certifiés](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
-> * Pour que le visuel soit certifié, il ne doit pas accéder à des services externes ni à des ressources externes.
-> * Tous les visuels gratuits doivent conserver les mêmes fonctionnalités gratuites que celles proposées précédemment. Vous pouvez compléter les fonctionnalités gratuites existantes par des fonctionnalités avancées payantes facultatives. Nous vous recommandons de soumettre les visuels IAP avec les fonctionnalités avancées en tant que nouveaux visuels au lieu de mettre à jour les fonctionnalités gratuites existantes.
+> Pour que le visuel soit certifié, il ne doit pas accéder à des services externes ni à des ressources externes.
+
+>[!IMPORTANT]  
+> Si vous mettez à jour votre visuel en le faisant passer de gratuit à « Un autre achat peut être requis », les utilisateurs doivent recevoir le même niveau de fonctionnalités gratuites qu’avant la mise à jour. Vous pouvez compléter les fonctionnalités gratuites existantes par des fonctionnalités avancées payantes facultatives. Nous vous recommandons de soumettre les visuels IAP avec les fonctionnalités avancées en tant que nouveaux visuels au lieu de mettre à jour les fonctionnalités gratuites existantes.
 
 
 ## <a name="what-changed-in-the-submission-process"></a>Qu’est-ce qui a changé dans le processus de soumission ?
@@ -33,19 +37,19 @@ Les développeurs chargent leurs visuels IAP sur AppSource par le biais du table
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Qu’est-ce qu’un visuel Power BI avec des fonctionnalités IAP ?
 
-Un visuel de produits est un élément visuel gratuit qui offre des fonctionnalités gratuites. Il a également des fonctionnalités avancées pour le fonctionnement desquelles des frais supplémentaires peuvent être facturés. Dans la description du visuel, les développeurs doivent attirer l’attention des utilisateurs sur les fonctionnalités dont le fonctionnement nécessite des achats supplémentaires. À l’heure actuelle, Microsoft ne fournit pas d’API natives pour prendre en charge l’achat d’applications et de compléments.
+Un visuel IAP est un visuel **gratuit** qui offre des **fonctionnalités gratuites**. Il a également des fonctionnalités avancées pour le fonctionnement desquelles des frais supplémentaires peuvent être facturés. Dans la description du visuel, les développeurs doivent attirer l’attention des utilisateurs sur les fonctionnalités dont le fonctionnement nécessite des achats supplémentaires. À l’heure actuelle, Microsoft ne fournit pas d’API natives pour prendre en charge l’achat d’applications et de compléments.
 
 Les développeurs peuvent utiliser n’importe quel système de paiement tiers pour ces achats. Pour plus d’informations, consultez notre [magasin de stratégies](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
 > [!NOTE]
-> Les filigranes ne sont pas autorisés sur les fonctionnalités gratuites. Les développeurs peuvent afficher une fenêtre indépendante ou un filigrane si les fonctionnalités payantes avancées sont utilisées sans licence valide.  
+> Les filigranes ne sont pas autorisés sur les fonctionnalités gratuites ou les visuels gratuits. Les filigranes peuvent être employés uniquement dans les fonctionnalités payantes qui sont utilisées sans licence valide. Nous vous recommandons d’afficher une fenêtre contextuelle avec toutes les informations relatives à la licence si les fonctionnalités payantes avancées sont utilisées sans licence valide.  
 
 ## <a name="logo-guidelines"></a>Instructions relatives aux logos
 
 Cette section décrit les spécifications relatives à l’ajout de logos et de logotypes dans les visuels.
 
-> [!NOTE]
-> Les logos sont autorisés en mode édition uniquement. Les logos ne peuvent pas être affichés en mode affichage.
+> [!IMPORTANT]
+> Les logos sont autorisés en **mode d’édition uniquement**. Les logos ne peuvent **pas** être affichés en mode Affichage.
 
 ![Définitions](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
 

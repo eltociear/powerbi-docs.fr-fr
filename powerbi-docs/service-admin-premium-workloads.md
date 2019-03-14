@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 03/11/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 5b9bec67fef672d219b11bf3b3750959e72410b6
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: 0baab138ee98d2ec96bc9f47e6e727525a57ed3e
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226063"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757243"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -23,7 +23,7 @@ Cet article décrit comment activer et configurer des charges de travail pour le
 
 ## <a name="configure-workloads"></a>Configurer des charges de travail
 
-Vous pouvez activer et configurer des charges de travail supplémentaires pour les [dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) et les [rapports paginés](paginated-reports-save-to-power-bi-service.md). Les valeurs de mémoire par défaut pour ces charges de travail dépendent des nœuds de capacité disponibles pour votre référence SKU. Les paramètres de mémoire maximale ne sont pas cumulés. La mémoire, à hauteur de la valeur maximale spécifiée, est allouée de façon dynamique pour les dataflows, mais allouée de façon statique pour les rapports paginés. 
+Vous pouvez activer et configurer des charges de travail supplémentaires pour AI, les [dataflows](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) et les [rapports paginés](paginated-reports-save-to-power-bi-service.md). Les valeurs de mémoire par défaut pour ces charges de travail dépendent des nœuds de capacité disponibles pour votre référence SKU. Les paramètres de mémoire maximale ne sont pas cumulés. La mémoire, à hauteur de la valeur maximale spécifiée, est allouée de façon dynamique pour l’IA et les dataflows, mais allouée de façon statique pour les rapports paginés. 
 
 ### <a name="to-configure-workloads-in-the-power-bi-admin-portal"></a>Pour configurer des charges de travail dans le portail d’administration Power BI
 

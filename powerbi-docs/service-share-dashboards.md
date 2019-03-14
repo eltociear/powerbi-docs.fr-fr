@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a4f10253619393ffd9807b1e33730a4dd37a47ff
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277385"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580240"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Partager des rapports et des tableaux de bord Power BI avec des collègues et d’autres utilisateurs
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Power BI propose également [d’autres façons de collaborer et de distribuer des tableaux de bord et des rapports](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -98,13 +98,15 @@ Quand vous partagez un tableau de bord ou un rapport avec des personnes extérie
 
 Une fois connectées, elles verront apparaître le tableau de bord ou le rapport partagé dans leur propre fenêtre de navigateur sans le volet de navigation gauche, et non sur leur portail Power BI habituel. Elles doivent ajouter le lien aux favoris pour pouvoir accéder de nouveau à ce tableau de bord ou à ce rapport.
 
-Elles ne peuvent modifier aucun contenu dans ce tableau de bord ou ce rapport. Elles peuvent interagir avec les graphiques et modifier les filtres et les segments du rapport, mais non enregistrer leurs modifications.
+Elles ne peuvent modifier aucun contenu dans ce tableau de bord ou ce rapport. Elles peuvent interagir avec les graphiques et modifier les filtres et les segments du rapport, mais non enregistrer leurs modifications. 
 
 Seuls les destinataires directs peuvent voir le tableau de bord ou le rapport partagé. Par exemple, si vous avez envoyé le courrier à Vicki@contoso.com, seule Vicki peut voir le tableau de bord. Personne d’autre ne peut voir ce tableau de bord, même si elles disposent du lien, et Vicki doit utiliser la même adresse de messagerie pour accéder à ce tableau de bord. Si elle se connecte avec une autre adresse de messagerie, elle ne pourra pas non plus accéder au tableau de bord.
 
 Les personnes extérieures à votre organisation ne peuvent pas du tout voir les données si la sécurité au niveau des rôles ou des lignes est établie selon les modèles tabulaires Analysis Services locaux.
 
 Si vous envoyez un lien à partir d’une application mobile Power BI à des personnes extérieures à votre organisation, lorsque celles-ci cliquent sur le lien, le tableau de bord s’ouvre dans un navigateur, et non dans l’application mobile Power BI.
+
+Si les utilisateurs invités sont activés à l’aide de l’option [Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation](service-admin-portal.md#export-and-sharing-settings), l’expérience par défaut de consommation uniquement ne s’applique pas à eux. [En savoir plus](service-admin-azure-ad-b2b.md)
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 Voici quelques éléments à prendre en compte avant de partager des tableaux de bord et des rapports :

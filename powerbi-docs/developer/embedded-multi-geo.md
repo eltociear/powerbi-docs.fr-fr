@@ -1,5 +1,5 @@
 ---
-title: Prise en charge de zones géographiques multiples pour Power BI Embedded (préversion)
+title: Prise en charge de plusieurs zones géographiques pour Power BI Embedded
 description: Découvrez comment déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI Embedded.
 author: markingmyname
 ms.author: maghan
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 25627709af2faa78fd30b28cffba21d1442e0d3f
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: d139f96b6aec2db23b2eabc54c3fa326e4762766
+ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762418"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57572022"
 ---
-# <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Prise en charge de zones géographiques multiples pour Power BI Embedded (préversion)
+# <a name="multi-geo-support-for-power-bi-embedded"></a>Prise en charge de plusieurs zones géographiques pour Power BI Embedded
 
-**Prise en charge de zones géographiques multiples pour Power BI Embedded (version préliminaire)** signifie que les éditeurs de logiciels indépendants et les organisations qui créent des applications à l’aide de Power BI Embedded pour incorporer analyses dans leurs applications peuvent désormais déployer leurs données dans différentes régions du monde.
+La **prise en charge de plusieurs zones géographiques pour Power BI Embedded** signifie que les éditeurs de logiciels indépendants et les organisations qui génèrent des applications à l’aide de Power BI Embedded pour incorporer des analytiques dans leurs applications peuvent désormais déployer leurs données dans différentes régions du monde.
 
 Maintenant, les clients utilisant **Power BI Embedded** peuvent configurer une **capacité A** à l’aide d’options de **zones géographiques multiples**, sur la base des mêmes fonctionnalités et limitations que celles [prises en charge par Power BI Premium à l’aide des zones géographiques multiples](../service-admin-premium-Multi-Geo.md).
 

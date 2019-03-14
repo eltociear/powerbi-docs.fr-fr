@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e71844110eb3452cbcb3b224bbca9db57475367e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 08536d412796b1516b689ed728af0126330edf93
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282169"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580132"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Où est situé mon client Power BI ?
 
@@ -29,7 +29,7 @@ Pour rechercher la région où se trouve votre client, procédez comme suit.
 
 1. Dans le service Power BI, menu supérieur, sélectionnez l’aide (**?**), puis **À propos de Power BI**.
 
-1. Recherchez la valeur suivante à côté de **Vos données sont stockées dans**. C’est la région où se trouve votre client.
+1. Recherchez la valeur suivante à côté de **Vos données sont stockées dans**. C’est la région où se trouve votre client. Il s’agit également de la région où sont stockées vos données, sauf si vous utilisez des capacités dédiées dans différentes régions pour vos espaces de travail.
 
     ![Région de données](media/service-admin-where-is-my-tenant-located/power-bi-data-region.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Prise en charge de zones géographiques multiples dans Power BI Premium (préversion)
+title: Prise en charge de plusieurs zones géographiques pour Power BI Premium
 description: Découvrez comment déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI.
 author: minewiskan
 ms.author: owend
@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: bdbcb949ffe29efc4170391774da0863568e97e8
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: dfa412e32c49e0b3de406f2665fcd9bd6d1a345e
+ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794662"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57571976"
 ---
-# <a name="multi-geo-support-for-power-bi-premium-preview"></a>Prise en charge de zones géographiques multiples dans Power BI Premium (préversion)
+# <a name="multi-geo-support-for-power-bi-premium"></a>Prise en charge de plusieurs zones géographiques pour Power BI Premium
 
 La fonctionnalité de zones géographiques multiples de Power BI Premium permet à des clients multinationaux de répondre à des exigences de résidence des données régionales, spécifiques à certains secteurs ou en fonction de l’organisation. En tant que client Power BI Premium vous pouvez déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI. Une zone géographique (géographie) peut contenir plusieurs régions. Par exemple, les États-Unis sont une zone géographique, et les USA Centre-Ouest et les USA Centre Sud sont des régions des États-Unis. Vous pouvez choisir de déployer du contenu vers l’une des zones géographiques suivantes :
 
@@ -33,7 +33,7 @@ La fonctionnalité de zones géographiques multiples de Power BI Premium permet 
 
 Les zones géographiques multiples ne sont pas disponibles pour Power BI Germany, Power BI Chine géré par 21Vianet, ou Power BI pour le gouvernement des États-Unis.
 
-Les zones géographiques multiples sont désormais également disponibles dans Power BI Embedded. En savoir plus dans [Prise en charge de zones géographiques multiples dans Power BI Embedded (préversion)](developer/embedded-multi-geo.md).
+Les zones géographiques multiples sont désormais également disponibles dans Power BI Embedded. Pour en savoir plus, lisez [Prise en charge de plusieurs zones géographiques dans Power BI Embedded](developer/embedded-multi-geo.md).
 
 ## <a name="using-multi-geo"></a>Utilisation des zones géographiques multiples
 

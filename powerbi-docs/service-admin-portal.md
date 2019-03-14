@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a4180f211a2b31a8610d410a74e0cca25dcdad15
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: ca9a2eff3d05ec10c83dde90eabb779370ca5e96
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014642"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757343"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -192,6 +192,13 @@ L’image suivante présente le menu **Fichier** qui s’affiche pour un rapport
 
 ![Imprimer le rapport](media/service-admin-portal/powerbi-admin-print-report.png)
 
+### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation
+Les utilisateurs invités Azure B2B peuvent modifier et gérer le contenu de l’organisation. [En savoir plus](service-admin-azure-ad-b2b.md)
+
+L’image suivante présente l’option permettant d’autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation.
+
+![Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
 ## <a name="content-pack-and-app-settings"></a>Paramètres des applications et des packs de contenu
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publier des packs de contenu et des applications pour toute l’organisation
@@ -243,10 +250,45 @@ Les utilisateurs de l’organisation peuvent manipuler et partager des visuels p
 > [!NOTE]
 > Ce paramètre peut s’appliquer à toute l’organisation ou se limiter à des groupes particuliers.
 
+
+Power BI Desktop (à compter de la version de mars 2019) prend en charge l’utilisation d’une **stratégie de groupe** pour désactiver l’utilisation de visuels personnalisés dans les ordinateurs déployés d’une organisation.
+
+<table>
+<tr><th>Attribut</th><th>Valeur</th>
+</tr>
+<td>key</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableCustomVisuals</td>
+</tr>
+</table>
+
+La valeur 1 (décimale) active l’utilisation de visuels personnalisés dans Power BI (il s’agit de la valeur par défaut).
+
+La valeur 0 (décimale) désactive l’utilisation de visuels personnalisés dans Power BI.
+
 ### <a name="allow-only-certified-visuals"></a>Autoriser uniquement les visuels certifiés
 
 Les utilisateurs de l’organisation qui disposent d’autorisations pour ajouter et utiliser des visuels personnalisés, définis par le paramètre « Ajouter et utiliser des visuels personnalisés », peuvent uniquement utiliser des [visuels personnalisés certifiés](https://go.microsoft.com/fwlink/?linkid=2002010) (les visuels non certifiés sont bloqués et affichent un message d’erreur lorsqu’ils sont utilisés). 
 
+
+Power BI Desktop (à compter de la version de mars 2019) prend en charge l’utilisation d’une **stratégie de groupe** pour désactiver l’utilisation de visuels personnalisés non certifiés dans les ordinateurs déployés d’une organisation.
+
+<table>
+<tr><th>Attribut</th><th>Valeur</th>
+</tr>
+<td>key</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableUncertifiedVisuals</td>
+</tr>
+</table>
+
+La valeur 1 (décimale) active l’utilisation de visuels personnalisés non certifiés dans Power BI (il s’agit de la valeur par défaut).
+
+La valeur 0 (décimale) désactive l’utilisation de visuels personnalisés non certifiés dans Power BI (cette option active uniquement l’utilisation de [visuels personnalisés certifiés](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## <a name="r-visuals-settings"></a>Paramètres des visuels R
 
