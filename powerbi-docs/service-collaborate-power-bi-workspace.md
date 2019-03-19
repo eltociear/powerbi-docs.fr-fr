@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 145ef2da33e0d596f03f75c76aaa99e90f58c4c2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288517"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174565"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Collaborer dans l’espace de travail de votre application Power BI
 Les espaces de travail d’application Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. La collaboration ne s’arrête pas aux espaces de travail dans Power BI. Office 365 offre d’autres services de groupe, comme le partage de fichiers sur OneDrive Entreprise, les conversations dans Exchange, le calendrier partagé, les tâches, etc. En savoir plus sur les[groupes dans Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)
@@ -49,7 +49,7 @@ La collaboration dans Office 365 débute dans l’espace de travail d’applicat
 2. Dans ce menu, vous pouvez collaborer avec votre groupe de plusieurs façons : 
    
    * Avoir une [conversation de groupe dans Office 365](service-collaborate-power-bi-workspace.md#have-a-group-conversation-in-office-365).
-   * [Planifier un événement](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-group-workspace-calendar) dans le calendrier de l’espace de travail de groupe de l’application.
+   * [Planifier un événement](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-apps-group-workspace-calendar) dans le calendrier de l’espace de travail de groupe de l’application.
    
    Quand vous accédez pour la première fois à l’espace de travail de groupe de votre application dans Office 365, la procédure peut prendre un certain temps. Patientez 15 à 30 minutes, puis actualisez votre navigateur.
 

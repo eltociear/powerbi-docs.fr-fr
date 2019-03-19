@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8808391d0794ec4a487526cc5bbe4216fe0f75a6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 760f469ff3b146671292efd70a3c6854aec98b5a
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275315"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174588"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-mobile-apps"></a>Créer des rapports optimisés pour les applications mobiles Power BI
-Vous pouvez améliorer l’expérience d’affichage de vos rapports pour les applications mobiles sur un téléphone ou une tablette. Créez une version portrait d’un rapport, en particulier pour les téléphones et les tablettes. Dans Power BI Desktop et dans le service Power BI, vous adaptez votre rapport en réorganisant et redimensionnant les visuels en mode portrait pour une expérience optimale. Vous n’êtes pas obligé d’inclure tous les visuels. Vous pouvez également créer des [*visuels* réactifs](#optimize-a-visual-for-any-size) et des [segments réactifs](#enhance-slicers-to-to-work-well-in-phone-reports) qui se redimensionnent pour l’affichage sur un téléphone. De plus, si vous ajoutez des filtres à votre rapport, ceux-ci apparaissent automatiquement dans le rapport optimisé. Les lecteurs de votre rapport peuvent les afficher et les utiliser pour filtrer le rapport.
+Vous pouvez améliorer l’expérience d’affichage de vos rapports pour les applications mobiles sur un téléphone ou une tablette. Créez une version portrait d’un rapport, en particulier pour les téléphones et les tablettes. Dans Power BI Desktop et dans le service Power BI, vous adaptez votre rapport en réorganisant et redimensionnant les visuels en mode portrait pour une expérience optimale. Vous n’êtes pas obligé d’inclure tous les visuels. Vous pouvez également créer des [*visuels* réactifs](#optimize-a-visual-for-any-size) et des [segments réactifs](#enhance-slicers-to-work-well-in-phone-reports) qui se redimensionnent pour l’affichage sur un téléphone. De plus, si vous ajoutez des filtres à votre rapport, ceux-ci apparaissent automatiquement dans le rapport optimisé. Les lecteurs de votre rapport peuvent les afficher et les utiliser pour filtrer le rapport.
 
 ![Rapport optimisé sur un téléphone](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 

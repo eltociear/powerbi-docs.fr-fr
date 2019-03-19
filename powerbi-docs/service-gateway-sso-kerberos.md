@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: e2183596a66526ced7cfa4a298420972b63a87ca
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: eb50d8096c448e1a01533a7d8570e9dcc716ef23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226247"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174979"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 
@@ -60,7 +60,7 @@ Dans une installation standard, la passerelle s’exécute en tant que compte de
 
 ![Capture d’écran d’un compte de service](media/service-gateway-sso-kerberos/service-account.png)
 
-Pour activer une délégation Kerberos contrainte, la passerelle doit s’exécuter en tant que compte de domaine, sauf si votre instance Azure Active Directory (Azure AD) est déjà synchronisée avec votre instance Active Directory locale (par le biais d’Azure AD DirSync/Connect). Pour basculer vers un compte de domaine, consultez [Basculer la passerelle vers un compte de domaine](#switching-the-gateway-to-a-domain-account), plus loin dans cet article.
+Pour activer une délégation Kerberos contrainte, la passerelle doit s’exécuter en tant que compte de domaine, sauf si votre instance Azure Active Directory (Azure AD) est déjà synchronisée avec votre instance Active Directory locale (par le biais d’Azure AD DirSync/Connect). Pour basculer vers un compte de domaine, consultez [Basculer la passerelle vers un compte de domaine](#switch-the-gateway-to-a-domain-account), plus loin dans cet article.
 
 > [!NOTE]
 > Si Azure AD Connect est configuré, et que les comptes d’utilisateur sont synchronisés, le service de passerelle n’a pas besoin d’effectuer des recherches Active AD locales au moment de l’exécution. Vous pouvez utiliser le SID de service local (au lieu d’exiger un compte de domaine) pour le service de passerelle. Les étapes de configuration de la délégation Kerberos contrainte décrites dans cet article sont les mêmes que celle de cette configuration. La différence est qu’elles s’appliquent à l’ordinateur de la passerelle dans Azure AD au lieu du compte de domaine.
@@ -188,7 +188,7 @@ Si nécessaire, vous pouvez basculer la passerelle d’un compte de service loca
 
 ## <a name="configure-sap-bw-for-sso"></a>Configurer SAP BW pour l’authentification unique
 
-Comme vous comprenez maintenant comment fonctionne Kerberos avec une passerelle, vous pouvez configurer l’authentification unique pour votre système SAP BW (SAP Business Warehouse). Les étapes suivantes supposent que vous avez déjà [préparé la délégation Kerberos contrainte](#preparing-for-kerberos-constrained-delegation), comme décrit précédemment dans cet article.
+Comme vous comprenez maintenant comment fonctionne Kerberos avec une passerelle, vous pouvez configurer l’authentification unique pour votre système SAP BW (SAP Business Warehouse). Les étapes suivantes supposent que vous avez déjà [préparé la délégation Kerberos contrainte](#prepare-for-kerberos-constrained-delegation), comme décrit précédemment dans cet article.
 
 Ce guide tente d’être aussi complet que possible. Si vous avez déjà effectué certaines étapes, vous pouvez les ignorer. Par exemple, vous avez peut-être déjà créé un utilisateur de service pour votre serveur SAP BW et mappé un nom de principal de service, ou bien vous avez peut-être déjà installé la bibliothèque `gsskrb5`.
 
@@ -356,7 +356,7 @@ Si vous n’avez pas configuré Azure AD Connect, suivez ces étapes pour chaque
 
 ### <a name="add-a-new-sap-bw-application-server-data-source-to-the-power-bi-service"></a>Ajouter une nouvelle source de données du serveur d’applications SAP BW au service Power BI
 
-Ajoutez la source de données SAP BW à votre passerelle en suivant les instructions indiquées plus haut dans cet article au sujet de la [génération d’un rapport](#running-a-power-bi-report).
+Ajoutez la source de données SAP BW à votre passerelle en suivant les instructions indiquées plus haut dans cet article au sujet de la [génération d’un rapport](#run-a-power-bi-report).
 
 1. Dans la fenêtre de configuration de la source de données, entrez le **Nom d’hôte**, le **Numéro système** et l’**ID client** du serveur d’applications que vous utilisez pour vous connecter à votre serveur SAP BW à partir de Power BI Desktop. Comme **Méthode d’authentification**, sélectionnez **Windows**.
 

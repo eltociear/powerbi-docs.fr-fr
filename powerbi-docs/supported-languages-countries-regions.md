@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 98c637692b3c31e598a11c3039b60be3dec61348
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a593a918c59452c922f6061189ad6c2885478aad
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281180"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174864"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Langues et pays/régions pris en charge pour Power BI
 
@@ -120,7 +120,7 @@ Vous disposez de deux façons d’obtenir Power BI Desktop : Vous pouvez le té
 
 * Lorsque vous [installez Power BI Desktop à partir du Windows Store](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), il installe toutes les langues et indique la langue qui correspond à la langue par défaut de Windows.
 * Lorsque vous [téléchargez Power BI Desktop](#choose-a-language-when-you-download-power-bi-desktop), vous choisissez la langue lors du téléchargement. 
-* Vous pouvez également [choisir des paramètres régionaux à utiliser lors de l’importation de données](#choose-the-locale-to-be-used-when-importing-data-into-power-bi-desktop) pour un rapport spécifique. 
+* Vous pouvez également [choisir des paramètres régionaux à utiliser lors de l’importation de données](#choose-the-locale-for-importing-data-into-power-bi-desktop) pour un rapport spécifique.
 
 ### <a name="choose-a-language-for-power-bi-desktop-installed-from-the-windows-store"></a>Choisir une langue pour Power BI Desktop quand ce dernier est installé à partir du Windows Store
 1. [Installez Power BI Desktop](http://aka.ms/pbidesktopstore) à partir du Windows Store.

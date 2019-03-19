@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2ee381cae5bd0c0ed1e6a8cab1cd33361a05814f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 7b84b967a9e6228258027302fc2e4ad4df5b0073
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324810"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174772"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Découverte du mode Création de rapport pour les rapports paginés - Power BI (préversion)
 
@@ -22,12 +22,12 @@ Le mode Création de rapport du Générateur de rapports est l’espace de conce
 
 ![Mode Création du Générateur de rapports](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
-1. [Volet des données de rapport](#report-data-pane) 
-2. [Canevas de conception du rapport](#report-design-surface)  
-3. [Volet des paramètres](#parameters-pane) 
-4. [Volet des propriétés](#properties-pane) 
-5. [Volet de regroupement](#grouping-pane) 
-6. [Barre d’état du rapport actif](#current-report-status-bar)  
+1. [Volet des données de rapport](#1-report-data-pane) 
+2. [Canevas de conception du rapport](#2-report-design-surface)  
+3. [Volet des paramètres](#3-parameters-pane) 
+4. [Volet des propriétés](#4-properties-pane) 
+5. [Volet de regroupement](#5-grouping-pane) 
+6. [Barre d’état du rapport actif](#6-current-report-status-bar)  
   
 ## <a name="1-report-data-pane"></a>1 Volet des données de rapport  
  Dans le volet des données du rapport, vous définissez les données et les ressources du rapport dont vous avez besoin avant de concevoir la disposition de votre rapport. Par exemple, vous pouvez y ajouter des sources de données, des jeux de données, des champs calculés, des paramètres de rapport et des images.  
