@@ -177,7 +177,7 @@ Maintenant que vous avez activé la collecte de données, dans **Journaux**, sé
 
 Dans **Type**, sélectionnez **AzureDiagnostics**, puis sélectionnez **Appliquer**. AzureDiagnostics inclut les événements du moteur. Notez qu'une requête Log Analytics est créée à la volée.
 
-![Azure Diagnostics](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-azure-diagnostics.png)
+![Diagnostics Azure](media/azure-pbie-diag-logs/azure-pbie-diag-logs-analytics-azure-diagnostics.png)
 
 Sélectionnez **EventClass\_s** ou un des noms d’événements et Log Analytics poursuit la création d’une requête. Veillez à enregistrer vos requêtes pour les réutiliser ultérieurement.
 
