@@ -10,18 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: a29d251c629437184ff31de275a17c1d152abff3
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 1605293474a7cbfefb448d74127639153e29325c
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757774"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964614"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Résolution des problèmes liés à la connexion dans Power BI
 
-Cet article explique comment générer du [contenu d’assistance](https://powerbi.microsoft.com/support/) qui décrit en détail la marche à suivre pour résoudre vos problèmes de connexion.
+Cet article décrit comment bénéficier d’un [support](https://powerbi.microsoft.com/support/) lorsque vous rencontrez des problèmes de connexion à Power BI.
 
-La première action que vous devez effectuer consiste à **contacter votre équipe de support interne** pour obtenir de l’aide. Toutefois, si vous êtes **administrateur de locataire** pour votre organisation et que vous ne pouvez toujours pas vous connecter à Power BI, continuez avec les informations ci-dessous.
+La première mesure à prendre est de **contacter l’équipe de support interne de votre organisation** pour obtenir de l’aide.
+
+Toutefois, si vous êtes **administrateur de locataire** pour votre organisation et que vous ne pouvez toujours pas vous connecter à Power BI, continuez avec les informations ci-dessous.
 
 ## <a name="engage-the-support-team"></a>Contacter l’équipe de support
 
@@ -30,11 +32,13 @@ Tout d’abord, essayez de créer un ticket de support par le biais de la [page 
 Si vous ne parvenez pas à accéder à la page de support de Power BI, essayez de créer un ticket par le biais de la [page de support d’Office 365 (O365)](https://support.office.com/home/contact).
 
 Si vous ne parvenez pas à créer un ticket par le biais de la page de support de Power BI ou d’O365, tentez de contacter le support par téléphone.
+
 * Pour les clients résidant aux États-Unis (US) et le reste de l’Amérique : +1-800-936-5800
 * Pour les clients résidant en Europe, au Moyen-Orient et en Asie (EMEA) : +44-844-800-2400
 * Pour les clients résidant en Inde : +1-800-419-5666
 
-Une autre option permettant de contacter le support Microsoft pour obtenir de l’aide consiste à acheter du [support Premier Microsoft](https://support.microsoft.com/premier). Si vous savez que votre organisation a acheté du support Premier Microsoft et que vous ne pouvez toujours pas créer un incident à partir d’un canal O365 ou Power BI, vous pouvez contacter le support Premier par téléphone.
+Une autre option permettant de contacter le support Microsoft pour obtenir de l’aide consiste à acheter du [support Premier Microsoft](https://support.microsoft.com/premier). Si vous savez que votre organisation a acheté du support Premier Microsoft et que vous ne pouvez toujours pas créer un incident à partir d’un canal Power BI ou O365, vous pouvez contacter le support Premier par téléphone.
+
 * Pour les clients résidant aux États-Unis (US) et le reste de l’Amérique : +1-800-936-3100
 * Pour les clients résidant en Europe, au Moyen-Orient et en Asie (EMEA) : +44-844-800-8338
 * Pour les clients résidant en Inde : +1-800-425-5666

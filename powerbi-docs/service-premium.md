@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: f327cb95c10756f079778d20e62cba4871b95c02
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226132"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964936"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Présentation de Microsoft Power BI Premium
 
@@ -66,15 +66,15 @@ Power BI Premium est disponible dans des configurations de nœuds aux capacités
 
 * Les nœuds EM sont réservés aux déploiements incorporés. Les nœuds EM n’ont pas accès aux fonctionnalités premium comme le partage d’applications avec des utilisateurs qui ne disposent pas d’une licence Power BI Pro.
 
-| Nœud de capacité | Total des v-cores<br/>*(Back-end+front-end)*  | Cœurs virtuels back-end <sup>[1](#fn1)</sup> | Cœurs virtuels front-end <sup>[2](#fn2)</sup> | Limites de connexions actives/DirectQuery | Actualisations simultanées max. |  Disponibilité
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| EM1 (de mois en mois) |1 v-core |0,5 cœur virtuel, 2,5 Go de RAM |0,5 cœur virtuel |3,75 par seconde |  1 | Disponible |
-| EM2 (de mois en mois) |2 cœurs virtuels |1 cœur virtuel, 5 Go de RAM |1 v-core |7,5 par seconde |  2 | Disponible |
-| EM3 (de mois en mois) |4 cœurs virtuels |2 cœurs virtuels, 10 Go de RAM |2 cœurs virtuels | | 3 |  Disponible |
-| P1 |8 cœurs virtuels |4 cœurs virtuels, 25 Go de RAM |4 cœurs virtuels |30 par seconde | 6 | Disponible (de mois en mois est également disponible) |
-| P2 |16 cœurs virtuels |8 cœurs virtuels, 50 Go de RAM |8 cœurs virtuels |60 par seconde | 12 | Disponible |
-| P3 |32 cœurs virtuels |16 cœurs virtuels, 100 Go de RAM |16 cœurs virtuels |120 par seconde | 24 | Disponible |
-| | | | | | | |
+| Nœud de capacité | Total des v-cores<br/>*(Back-end+front-end)*  | Cœurs virtuels back-end <sup>[1](#fn1)</sup> | Cœurs virtuels front-end <sup>[2](#fn2)</sup> | Limites de connexions actives/DirectQuery | Actualisations simultanées max. |
+| --- | --- | --- | --- | --- | --- |
+| EM1 (de mois en mois) |1 v-core |0,5 cœur virtuel, 2,5 Go de RAM |0,5 cœur virtuel |3,75 par seconde |  1 |
+| EM2 (de mois en mois) |2 cœurs virtuels |1 cœur virtuel, 5 Go de RAM |1 v-core |7,5 par seconde |  2 |
+| EM3 (de mois en mois) |4 cœurs virtuels |2 cœurs virtuels, 10 Go de RAM |2 cœurs virtuels | 15 | 3 |
+| P1 |8 cœurs virtuels |4 cœurs virtuels, 25 Go de RAM |4 cœurs virtuels |30 par seconde | 6 |
+| P2 |16 cœurs virtuels |8 cœurs virtuels, 50 Go de RAM |8 cœurs virtuels |60 par seconde | 12 |
+| P3 |32 cœurs virtuels |16 cœurs virtuels, 100 Go de RAM |16 cœurs virtuels |120 par seconde | 24 |
+| | | | | | |
 
 <a name="fn1">1</a> : Les cœurs virtuels front-end sont responsables du service web. Par exemple, des tableaux de bord et des rapports, des droits d’accès, de la planification, des API, des chargements et téléchargements et, plus généralement, de tout ce qui concerne l’expérience utilisateur. 
 
@@ -82,32 +82,7 @@ Power BI Premium est disponible dans des configurations de nœuds aux capacités
 
 ## <a name="workloads-in-premium-capacity"></a>Charges de travail dans une capacité Premium
 
-Par défaut, les capacités pour **Power BI Premium** et **Power BI Embedded** prennent en charge uniquement la charge de travail associée aux requêtes Power BI exécutées dans le cloud. Premium prend également en charge les charges de travail supplémentaires pour l’**AI**, les **dataflows** et les **rapports paginés**. Vous autorisez ces charges de travail dans le portail d’administration Power BI ou via l’API REST de Power BI. Vous définissez également la mémoire maximale que chaque charge de travail peut consommer pour pouvoir contrôler la façon dont les différentes charges de travail s’affectent mutuellement. Pour en savoir plus, consultez [Configurer des charges de travail](service-admin-premium-workloads.md).
-
-### <a name="default-memory-settings"></a>Paramètres de mémoire par défaut
-
-Les tableaux suivants présentent les valeurs de mémoire par défaut et minimales en fonction des différents [nœuds de capacité](#premium-capacity-nodes) disponibles. La mémoire est allouée dynamiquement aux flux de données, mais elle est allouée statiquement aux rapports paginés. Pour plus d’informations, consultez la section suivante, [Considérations pour les rapports paginés](#considerations-for-paginated-reports).
-
-#### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Références (SKU) Microsoft Office pour les scénarios SaaS (Software as a Service)
-
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Rapports paginés | N/A | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| Flux de données | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum  |
-| | | | | |
-
-#### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Références (SKU) Microsoft Azure pour les scénarios PaaS (Platform as a Service)
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Rapports paginés | N/A                      | N/A                      | N/A                     | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| Flux de données         | 27 % par défaut ; 27 % minimum | 20 % par défaut ; 16 % minimum | 20 % par défaut ; 8 % minimum | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum   |
-
-### <a name="considerations-for-paginated-reports"></a>Considérations pour les rapports paginés
-
-Si vous utilisez la charge de travail des rapports paginés, n’oubliez pas que les rapports paginés vous permettent d’exécuter votre propre code lors de la génération d’un rapport (par exemple, pour modifier dynamiquement la couleur du texte en fonction du contenu). De ce fait, nous sécurisons la capacité de Power BI Premium en exécutant des rapports paginés dans un espace contenu au sein de la capacité. Nous affectons la mémoire maximale que vous spécifiez à cet espace, que la charge de travail soit active ou non. Si vous utilisez des rapports Power BI ou des flux de données dans la même capacité, veillez à définir pour les rapports paginés une mémoire suffisamment faible qui n’affecte pas négativement les autres charges de travail.
-
-dans de rares cas, la charge de travail des rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
+Par défaut, les capacités Power BI Premium et Power BI Embedded ne prennent en charge que la charge de travail associée à l’exécution de requêtes Power BI dans le cloud. Premium prend également en charge les charges de travail supplémentaires pour l’**AI**, les **dataflows** et les **rapports paginés**. Avant de pouvoir utiliser les capacités de vos ressources, ces charges de travail doivent être activées dans le portail d’administration Power BI ou par le biais de l’API REST de Power BI. Chaque charge de travail a des paramètres par défaut pour la quantité maximale de mémoire qu’elle peut consommer. Toutefois, vous pouvez configurer différents paramètres de la consommation de mémoire pour déterminer comment les charges de travail s’affectent mutuellement et consomment vos ressources de capacité. Pour en savoir plus, consultez [Configurer des charges de travail](service-admin-premium-workloads.md).
 
 ## <a name="power-bi-report-server"></a>Power BI Report Server
 

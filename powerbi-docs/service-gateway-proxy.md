@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7264ef7b1057f64d6eb51ccc77cbec2a74be6d0e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2122ce9bd6eb850a51a06188ca1c10faf78f4bb1
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283986"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964660"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Configuration des paramètres de proxy de la passerelle de données locale
 Votre environnement de travail peut nécessiter que vous passiez par un proxy pour accéder à Internet. Cela pourrait empêcher la passerelle de données locale de se connecter au service.
@@ -46,24 +46,41 @@ La deuxième concerne le service Windows à proprement parler, qui interagit ave
 ## <a name="configuring-proxy-settings"></a>Configuration des paramètres de proxy
 La configuration de proxy par défaut est la suivante.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true" />
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true" />
+</system.net>
+```
+
 
 La configuration par défaut fonctionne avec l’authentification Windows. Si votre proxy utilise une autre forme d’authentification, vous devez modifier les paramètres. En cas de doute, vous devez contacter votre administrateur réseau. L’authentification de proxy de base n’est pas recommandée, et tenter de l’utiliser peut provoquer des erreurs d’authentification qui empêche la configuration correcte de la passerelle. Utiliser un mécanisme d’authentification de proxy plus fort pour corriger ce problème.
 
 En plus d’utiliser des informations d’identification par défaut, vous pouvez ajouter un élément <proxy> pour définir les paramètres du serveur proxy plus en détail. Par exemple, vous pouvez spécifier que votre passerelle de données locale doit toujours utiliser le proxy même pour des ressources locales, en définissant le paramètre bypassonlocal sur false. Ceci peut vous aider à résoudre les problèmes dans des situations où vous voulez effectuer le suivi de toutes les demandes HTTPS provenant d’une passerelle de données locale dans les fichiers journaux du proxy. L’exemple de configuration suivant spécifie que toutes les demandes doivent passer par un serveur proxy spécifique avec l’adresse IP 192.168.1.10.
 
-    <system.net>
-        <defaultProxy useDefaultCredentials="true">
-            <proxy  
-                autoDetect="false"  
-                proxyaddress="http://192.168.1.10:3128"  
-                bypassonlocal="false"  
-                usesystemdefault="true"
-            />  
-        </defaultProxy>
-    </system.net>
+```
+<system.net>
+    <defaultProxy useDefaultCredentials="true">
+        <proxy  
+            autoDetect="false"  
+            proxyaddress="http://192.168.1.10:3128"  
+            bypassonlocal="false"  
+            usesystemdefault="true"
+        />  
+    </defaultProxy>
+</system.net>
+```
+
+Par ailleurs, pour que la passerelle se connecte aux sources de données cloud par le biais d’un proxy, mettez à jour le fichier suivant : *C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe*. Dans le fichier, développez la section `<configurations>` afin d’inclure le contenu ci-dessous et mettez à jour l’attribut `proxyaddress` avec vos informations de proxy. L’exemple suivant achemine toutes les demandes de cloud via un serveur proxy spécifique avec l’adresse IP 192.168.1.10.
+
+```
+<configuration>
+<system.net>
+    <defaultProxy useDefaultCredentials="true" enabled="true">
+    <proxy proxyaddress=""http://192.168.1.10:3128" bypassonlocal="true" />
+    </defaultProxy>
+</system.net>
+</configuration>
+```
 
 Pour en savoir plus sur la configuration des éléments de proxy pour les fichiers de configuration .NET, consultez [defaultProxy, élément (paramètres réseau)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
 

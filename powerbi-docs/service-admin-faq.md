@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 9002b1871f5e7db4ef67d4f2f77b6b8769aa1de6
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430277"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980424"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -84,7 +84,7 @@ Trois scénarios peuvent s’appliquer aux utilisateurs de votre organisation :
 
 En tant qu’administrateur, vous disposez de plusieurs moyens pour empêcher les utilisateurs de s’associer à votre client Office 365 existant. Si vous bloquez l’accès, les tentatives d’inscription des utilisateurs échouent et ils sont priés de contacter l’administrateur de leur entreprise. Il est inutile de répéter ce processus si vous avez déjà désactivé la distribution automatique des licences (par exemple, via Office 365 Éducation pour les étudiants, les enseignants et le personnel).
 
-Utilisez le script PowerShell suivant pour empêcher les nouveaux utilisateurs de s’associer à un client géré. [En savoir plus sur PowerShell](#basic-powershell-information)
+Utilisez le script PowerShell suivant pour empêcher les nouveaux utilisateurs de s’associer à un client géré. ([En savoir plus sur PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -98,7 +98,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 ### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Comment puis-je permettre aux utilisateurs de s’associer à mon client Office 365 existant ?
 
-Utilisez le script PowerShell suivant pour permettre aux nouveaux utilisateurs de s’associer à un client géré. [En savoir plus sur PowerShell](#basic-powershell-information)
+Utilisez le script PowerShell suivant pour permettre aux nouveaux utilisateurs de s’associer à un client géré. ([En savoir plus sur PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -109,7 +109,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
 ### <a name="how-do-i-verify-if-i-have-the-block-on-in-the-tenant"></a>Comment vérifier que le blocage est activé dans le client ?
 
-Utilisez le script PowerShell suivant pour vérifier les paramètres. *AllowEmailVerifiedUsers* doit avoir la valeur False. [En savoir plus sur PowerShell](#basic-powershell-information)
+Utilisez le script PowerShell suivant pour vérifier les paramètres. *AllowEmailVerifiedUsers* doit avoir la valeur False. ([En savoir plus sur PowerShell][1].)
 
 ```powershell
 $msolcred = get-credential
@@ -122,7 +122,7 @@ Get-MsolCompanyInformation | fl allow*
 
 Le paramètre Azure AD qui contrôle cette option est **AllowAdHocSubscriptions**. Chez la plupart des clients, ce paramètre est configuré sur True. Cela signifie qu’il est activé. Si vous avez acquis Power BI via un partenaire, ce paramètre peut être configuré sur False, ce qui signifie qu’il est désactivé.
 
-Utilisez le script PowerShell suivant pour désactiver les abonnements ad hoc. [En savoir plus sur PowerShell](#basic-powershell-information)
+Utilisez le script PowerShell suivant pour désactiver les abonnements ad hoc. ([En savoir plus sur PowerShell][1].)
 
 1. Connectez-vous à Azure Active Directory avec vos informations d’identification Office 365. La première ligne du script PowerShell suivant vous invite à entrer vos informations d’identification. La deuxième ligne établit la connexion à Azure Active Directory.
 
@@ -270,3 +270,5 @@ Power BI repose sur les bases d’Office 365, qui lui-même repose sur des serv
 [Gestion des groupes Office 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+
+[1]: https://docs.microsoft.com/powershell/scripting/overview

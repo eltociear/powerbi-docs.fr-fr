@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: d17a5875569f29da41d62ca61efcbdae3b9242e9
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757320"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980355"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Questions fréquentes sur les visuels personnalisés Power BI
 
@@ -23,7 +23,7 @@ ms.locfileid: "57757320"
 
 ### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Comment l’administrateur peut-il gérer les visuels personnalisés d’une organisation ?
 
-Dans le portail d’administration, sous l’onglet « Visuels personnalisés de l’organisation » l’administrateur peut voir et [gérer tous les visuels personnalisés de l’organisation dans l’entreprise](https://docs.microsoft.com/power-bi/service-admin-portal#organization-visuals) : ajouter, désactiver, activer et supprimer.
+Dans le portail d’administration, sous l’onglet « Visuels personnalisés de l’organisation » l’administrateur peut voir et [gérer tous les visuels personnalisés de l’organisation dans l’entreprise](service-admin-portal.md#organizational-visuals) : ajouter, désactiver, activer et supprimer.
 Il n’est plus nécessaire de partager ces visuels par e-mails ou par le biais d’un dossier partagé ! Une fois ces visuels déployés dans le référentiel de l’organisation, les utilisateurs peuvent facilement les trouver et les importer dans leurs rapports, directement depuis Power BI Desktop ou Service. Les visuels personnalisés d’une organisation sont accessibles à partir du magasin intégré (dans Desktop et Service) sous l’onglet *MON ORGANISATION*. Une fois que l’administrateur charge la version d’un nouveau visuel personnalisé de l’organisation, tous les membres de l’organisation obtiennent la même version mise à jour. Les créateurs de rapports n’ont pas besoin de supprimer le visuel dans leurs rapports pour obtenir la nouvelle version de ces visuels, car tous les rapports utilisant ces visuels sont automatiquement actualisés ! Le mécanisme de mise à jour est similaire pour les visuels de la Place de marché.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Si un administrateur charge un visuel personnalisé à partir de la Place de marché publique dans le magasin de l’organisation, est-il automatiquement mis à jour une fois qu’un fournisseur met à jour le visuel dans la Place de marché publique ?

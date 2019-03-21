@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a8a7aa8ed33e5c1baa7319ea65a67b6338c41ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277799"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220951"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Utilisation d’entités calculées sur Power BI Premium (préversion)
 
@@ -79,7 +79,9 @@ Il est important de noter que si vous supprimez l’espace de travail à partir 
 
 Lorsque vous travaillez avec des flux de données spécifiquement créés dans le compte Azure Data Lake Storage Gen2 d’une organisation, les entités liées et les entités calculées ne fonctionnent correctement que lorsque les entités résident dans le même compte de stockage. Pour plus d’informations, consultez [Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 
-En outre, les entités liées ne sont pas disponibles pour les flux de données qui sont créés à partir de dossiers CDM. Consultez [Ajouter un dossier CDM à Power BI en tant que flux de données (préversion)](service-dataflows-add-cdm-folder.md).
+Les entités liées ne sont pas disponibles pour les dataflows qui sont créés à partir des dossiers CDM (Common Data Model). Pour plus d’informations, consultez [Ajouter un dossier CDM à Power BI en tant que dataflow (préversion)](service-dataflows-add-cdm-folder.md).
+
+En guise de bonne pratique, quand vous procédez à des calculs sur les données jointes par des données locales et cloud, créez une entité pour effectuer ces calculs. Ce sera mieux que d’utiliser une entité existante pour les calculs, comme par exemple une entité qui interroge également les données de ces deux sources et procède à des transformations in-lake.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

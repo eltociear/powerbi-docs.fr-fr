@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: fb2b169650360a7dc6a4afaee1c43abb733255c9
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 9fbd47dcefb2daf8d86c6932b5c70617b8bf7ac9
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430990"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964706"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -22,13 +22,19 @@ Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions en
 
 ## <a name="upcoming-webinars"></a>Webinaires à venir
 
-Aucun webinaire n’est planifié pour le moment. Revenez ultérieurement pour connaître les événements à venir.
+**Arriver à une situation où les fabricants et les revendeurs de biens de consommation trouvent leur compte**
+<br>par Liz McCreesh
+<br>[S’inscrire maintenant](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 >[Prochains webinaires de la Communauté Power BI](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Webinaires proposés
 
 Commencez avec ces webinaires populaires à la demande
+
+**Power BI et l’avenir du décisionnel d’entreprise moderne**
+<br>par Arun Ulag et Amir Netz
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
 
 **Prise en main de Power BI**
 <br>par Miguel Martinez
@@ -46,13 +52,9 @@ Commencez avec ces webinaires populaires à la demande
 <br>par Cory Hrncirik et Miguel Martinez
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
 
-**Power BI : des analyses dans les règles de l’art**
-<br>Gohul Shanmugalingam
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
-
-**Rendre vos données Power BI visuelles :  principaux types de graphiques et usage**
-<br>par Miranda Li
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+**Optimisez vos applications avec l’API JavaScript de Power BI**
+<br>par Nimrod Shalit
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
 
 **Power BI, Excel et Office 365 : optimisez vos données d’entreprise**
 <br>par Olaf Hubel et Miguel Martinez
@@ -62,10 +64,6 @@ Commencez avec ces webinaires populaires à la demande
 <br>par Miranda Li
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**L’impact économique global de Microsoft Flow et de PowerApps**
-<br>par Jonathan Lipsitz et Enrique Plaza Garcia
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
-
 >[Parcourir la bibliothèque de webinaires Power BI à la demande des experts de notre communauté](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
 ## <a name="on-demand-webinars"></a>Webinaires à la demande
@@ -74,9 +72,25 @@ Regardez les sessions enregistrées à tout moment
 
 ### <a name="getting-started"></a>Prise en main
 
+**Automatiser les tâches quotidiennes avec Power BI, PowerApps et Microsoft Flow**
+<br>par Wim Coorevits et Enrique Plaza Garcia
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
+
+**Power BI : des analyses dans les règles de l’art**
+<br>Gohul Shanmugalingam
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Rendre vos données Power BI visuelles :  principaux types de graphiques et usage**
+<br>par Miranda Li
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
 **Comment concevoir des rapports Power BI visuellement attrayants**
 <br>par Charles Sterling
 <br>[Regarder maintenant](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**L’impact économique global de Microsoft Flow et de PowerApps**
+<br>par Jonathan Lipsitz et Enrique Plaza Garcia
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 **Mieux ensemble : cinq avantages de Power BI pour les utilisateurs d’Excel**
 <br>par Carlos Otero et Miguel Martinez
@@ -100,6 +114,10 @@ Regardez les sessions enregistrées à tout moment
 
 ### <a name="partners"></a>Partenaires ###
 
+**Transformer les données client en ventes au détail réussies avec Power Bi**
+<br>par Angad Soni, Hitachi Solutions
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
+
 **Solutions de soins de santé éprouvées pour améliorer les résultats pour les patients et la rentabilité**
 <br>par Stephen Cracknell et Stuart Macanliss de US Medical IT
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
@@ -111,6 +129,10 @@ Regardez les sessions enregistrées à tout moment
 **Intelligence appliquée pour les ventes et les services**
 <br>par Ed Bobrin d’Avanade
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
+
+**5 habitudes qui font le succès d’un chasseur de tendances – Rohit Bhargava**
+<br>par Rohit Bhargava, Non-Obvious
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Fabricants : votre secteur est en phase de transition numérique – maintenez votre leadership en tirant parti des analyses pour optimiser votre rentabilité**
 <br>par Jon Thompson de Blue Margin et Jim Pastor d’Elgin Fastener Group

@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d467839582abb3c66c8bf5a57d1f3c5f7b83d354
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
+ms.openlocfilehash: ed61d865756748ccd4e60f54de4a4b1b9adcef8d
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695032"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980332"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Éléments visuels personnalisés dans Power BI
 
@@ -159,7 +159,7 @@ Vous avez deux options pour le téléchargement et l’importation de visuels pe
 
 6. Enregistrez le fichier « .pbiviz », puis ouvrez Power BI.
 
-7. Importez le fichier « .pbiviz » dans votre rapport (consultez la section [Importer un visuel personnalisé à partir d’un fichier ](#import-a-custom-visuals-from-a-file) ci-dessus)
+7. Importer le fichier « .pbiviz » dans votre rapport. (Consultez la section [Importer un visuel personnalisé à partir d’un fichier](#import-a-custom-visual-from-a-file) ci-dessus.)
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

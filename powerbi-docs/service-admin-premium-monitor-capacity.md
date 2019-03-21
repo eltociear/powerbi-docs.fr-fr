@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/25/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 032fae40a7e2328879ba01b6d94c3c532369b3ab
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: ac6559ccc9e6dbdf8c4be0550d8522765a4a8b23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826672"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174910"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Superviser les capacités Premium avec l’application
 
@@ -97,7 +97,7 @@ Le tableau de bord inclut les métriques suivantes :
 | Nombre élevé d’utilisations DirectQuery/actives| Nombre de fois où les connexions DirectQuery/actives ont dépassé 80 % des seuils au cours des sept derniers jours, divisé en intervalles de trois minutes. |
 | Nombre max. d’utilisations DirectQuery/actives| La plupart du temps, les connexions DirectQuery/actives ont dépassé 80 % au cours des sept derniers jours, divisées en intervalles d’une heure. |
 | Utilisation élevée max. DirectQuery/active | Nombre maximal de fois où les connexions DirectQuery/actives ont dépassé 80 % des seuils au cours des sept derniers jours, divisé en intervalles de trois minutes.|
-| Heure de survenue du max. de requêtes DirectQuery/actives | Heure locale à laquelle les connexions DirectQuery/actives ont dépassé 80 % plusieurs fois en une heure. |
+| Heure de survenue du max. de requêtes DirectQuery/actives | Heure UTC à laquelle les connexions DirectQuery/actives ont dépassé 80 % plusieurs fois en une heure. |
 | Total des actualisations | Nombre total d’actualisations au cours des sept derniers jours. |
 | Fiabilité des actualisations (%) | Nombre d’actualisations réussies divisé par le nombre total d’actualisations au cours des sept derniers jours. |
 | Durée moyenne des actualisations (minutes) | Durée moyenne de l’actualisation. |
@@ -162,8 +162,8 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 | Actualisations |  Nombre total : nombre total d’actualisations pour chaque jeu de données.<br>  Fiabilité : pourcentage des actualisations terminées pour chaque jeu de données.<br>  Temps d’attente moyen : délai moyen entre l’heure planifiée et le début d’une actualisation du jeu de données, en minutes.<br>  Temps d’attente maximal : délai d’attente maximal du jeu de données, en minutes.<br>  Durée moyenne : durée moyenne d’actualisation du jeu de données, en minutes.<br>  Durée maximale : durée de l’actualisation la plus longue en cours d’exécution pour le jeu de données, en minutes. |
 | 5 premiers jeux de données par durée moyenne (minutes) |  Les cinq jeux de données avec la durée d’actualisation moyenne la plus longue, en minutes. |
 | 5 premiers jeux de données par temps d’attente moyen (minutes) |  Les cinq jeux de données avec le temps d’attente moyen le plus long, en minutes. |
-| Nombre d’actualisations horaires et consommation de mémoire (Go) |  Réussites, échecs et consommation de mémoire, divisés en intervalles d’une heure et exprimés en heure locale. |
-| Temps d’attente moyen d’actualisation par heure (minutes) |  Temps d’attente moyen d’actualisation, divisé en intervalles d’une heure et exprimé en heure locale. Plusieurs pics élevés de temps d’attente d’actualisation indiquent une très forte sollicitation des capacités. |
+| Nombre d’actualisations horaires et consommation de mémoire (Go) |  Réussites, échecs et consommation de mémoire, divisés en intervalles d’une heure et exprimés en heure UTC. |
+| Temps d’attente moyen d’actualisation par heure (minutes) |  Temps d’attente moyen d’actualisation, divisé en intervalles d’une heure et exprimé en heure UTC. Plusieurs pics élevés de temps d’attente d’actualisation indiquent une très forte sollicitation des capacités. |
 |  |  |
 
 #### <a name="query-durations-area"></a>Zone Durées des requêtes
@@ -173,8 +173,8 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 | Durées des requêtes |  Les données de cette section sont segmentées par jeux de données, espaces de travail et intervalles d’une heure au cours des sept derniers jours.<br>  Total : Nombre total de requêtes exécutées pour le jeu de données.<br>  Moyenne : durée moyenne des requêtes pour le jeu de données, en millisecondes<br>  Max : Durée de la requête dont l’exécution est la plus longue dans le jeu de données, en millisecondes.|
 | Distribution des durées de requêtes |  L’histogramme des durées de requêtes est segmenté par durées des requêtes (en millisecondes) selon les catégories suivantes : intervalles <= 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 s, 1-3 s, 3-10 s, 10-30 s et > 30 s. Des durées de requêtes et des temps d’attente longs indiquent que la capacité est en surchauffe. Cela peut également signifier qu’un seul jeu de données est à l’origine de problèmes et que des recherches plus approfondies sont nécessaires. |
 | 5 premiers jeux de données par durée moyenne |  Les cinq jeux de données avec la durée de requête moyenne la plus longue, en millisecondes. |
-| Distributions des durées de requêtes par heure |  Nombre et durée moyenne (en millisecondes) des requêtes par rapport à la consommation de mémoire en Go, divisés en intervalles d’une heure et exprimé en heure locale. |
-| Connexions DirectQuery / actives (> 80 % d’utilisation) |  Nombre de fois où une connexion DirectQuery ou active directe a dépassé 80 % d’utilisation de l’UC, divisé en intervalles d’une heure et exprimé en heure locale. |
+| Distributions des durées de requêtes par heure |  Nombre et durée moyenne (en millisecondes) des requêtes par rapport à la consommation de mémoire en Go, divisés en intervalles d’une heure et exprimé en heure UTC. |
+| Connexions DirectQuery / actives (> 80 % d’utilisation) |  Nombre de fois où une connexion DirectQuery ou active directe a dépassé 80 % d’utilisation de l’UC, divisé en intervalles d’une heure et exprimé en heure UTC. |
 |  |  |
 
 #### <a name="query-waits-area"></a>Zone Attentes des requêtes
@@ -184,7 +184,7 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 | Temps d’attente des requêtes |  Les données de cette section sont segmentées par jeux de données, espaces de travail et intervalles d’une heure au cours des sept derniers jours.<br>  Total : Nombre total de requêtes exécutées pour le jeu de données.<br>  Nombre d’attentes : Nombre de requêtes dans le jeu de données en attente dans les ressources système avant le début de l’exécution.<br>  Moyenne : Temps d’attente moyen des requêtes pour le jeu de données, en millisecondes.<br>  Max : Durée de la requête à l’attente la plus longue dans le jeu de données, en millisecondes.|
 | 5 premiers jeux de données par délai d’attente moyen |  Les cinq jeux de données avec le temps d’attente moyen le plus long pour lancer l’exécution d’une requête, en millisecondes. |
 | Distributions des temps d’attente |  L’histogramme de durée de la requête est segmenté par durées des requêtes (en millisecondes) selon les catégories suivantes : intervalles <= 50 ms, 50 à 100 ms, 100 à 200 ms, 200 à 400 ms, 400 ms à 1 s, 1 à 5 s et > 5 s. |
-| Distributions horaires des temps d’attente des requêtes |  Nombre d’attentes et temps d’attente moyen (en millisecondes) des requêtes par rapport à la consommation de mémoire en Go, divisés en intervalles d’une heure et exprimés en heure locale. |
+| Distributions horaires des temps d’attente des requêtes |  Nombre d’attentes et temps d’attente moyen (en millisecondes) des requêtes par rapport à la consommation de mémoire en Go, divisés en intervalles d’une heure et exprimés en heure UTC. |
 |  |  |
 
 #### <a name="datasets-area"></a>Zone Jeux de données
@@ -193,8 +193,8 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 | --- | --- |
 | Tailles des jeu de données  |  Taille maximale : taille maximale du jeu de données, en Mo, pour la période affichée. |
 | Nombre d’éviction de jeux de données |  Total : nombre total d’*évictions* de jeux de données pour chaque capacité. Quand une capacité est confrontée à une sollicitation de la mémoire, le nœud supprime un ou plusieurs jeux de données de la mémoire. Les jeux de données qui sont inactifs (ceux pour lesquels aucune opération d’interrogation ou d’actualisation n’est en cours d’exécution) sont supprimés en premier. Ensuite, l’ordre d’éviction est basé sur une mesure dite « dernier récemment utilisé (LRU) ».|
-| Nombre de jeux de données chargés par heure |  Nombre de jeux de données chargés en mémoire et consommation de mémoire en Go, divisés en intervalles d’une heure et exprimé en heure locale. |
-| Évictions de jeux de données par heure et consommation de mémoire |  Évictions de jeux de données et consommation de mémoire en Go, divisées en intervalles d’une heure et exprimées en heure locale. |
+| Nombre de jeux de données chargés par heure |  Nombre de jeux de données chargés en mémoire et consommation de mémoire en Go, divisés en intervalles d’une heure et exprimé en heure UTC. |
+| Évictions de jeux de données par heure et consommation de mémoire |  Évictions de jeux de données et consommation de mémoire en Go, divisées en intervalles d’une heure et exprimées en heure UTC. |
 | Pourcentages de mémoire consommée |  Nombre total de jeux de données actifs en mémoire sous forme de pourcentage de la mémoire totale. Le delta entre Actifs et Tous définit les jeux de données qui peuvent être évincés. Affiché toutes les heures, pour les sept jours précédents. |
 |  |  |
 
@@ -205,8 +205,8 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 | Utilisation globale |  Nombre total de vues : nombre de fois où le rapport a été consulté par les utilisateurs.<br>  Nombre de lignes : nombre de lignes de données dans le rapport.<br>  Récupération (moyenne) : délai moyen nécessaire pour récupérer des données pour le rapport, en millisecondes. De longs délais peuvent indiquer des requêtes lentes ou d’autres problèmes au niveau de la source de données. <br>  Traitement (moyenne) : délai moyen nécessaire pour traiter les données pour un rapport, en millisecondes.<br> Rendu (moyenne) : délai moyen nécessaire pour afficher un rapport dans le navigateur, en millisecondes.<br>  Temps total : temps nécessaire pour exécuter toutes les phases du rapport, en millisecondes. |
 | 5 premiers rapports par délai moyen d’extraction de données |  Les cinq rapports avec le délai moyen d’extraction de données le plus long, en millisecondes. |
 | 5 premiers rapports par délai moyen de traitement |  Les cinq rapports avec le délai moyen de traitement le plus long, en millisecondes. |
-| Résultats par heure |  Réussites, échecs et consommation de mémoire, divisés en intervalles d’une heure et exprimés en heure locale. |
-| Durées par heure |  Délai d’extraction des données par rapport au délai de traitement et de rendu, divisé en intervalles d’une heure et exprimé en heure locale. |
+| Résultats par heure |  Réussites, échecs et consommation de mémoire, divisés en intervalles d’une heure et exprimés en heure UTC. |
+| Durées par heure |  Délai d’extraction des données par rapport au délai de traitement et de rendu, divisé en intervalles d’une heure et exprimé en heure UTC. |
 |  |  |
 
 ### <a name="dataflows"></a>Flux de données
@@ -216,8 +216,8 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 | Actualisations |  Total : total des actualisations pour chaque flux de données.<br>  Fiabilité : pourcentage des actualisations effectuées pour chaque flux de données.<br>  Temps d’attente moyen : délai moyen entre l’heure planifiée et le début d’une actualisation du flux de données, en minutes.<br>  Temps d’attente maximal : délai d’attente maximal du flux de données, en minutes.<br>  Durée moyenne : durée moyenne d’actualisation du flux de données, en minutes.<br>  Durée maximale : durée de l’actualisation la plus longue en cours d’exécution pour le flux de données, en minutes. |
 | 5 principaux flux de données par durée d’actualisation moyenne |  Les cinq flux de données avec la durée d’actualisation moyenne la plus longue, en minutes. |
 | 5 premiers flux de données par délai d’attente moyen. |  Les cinq flux de données avec le délai d’attente d’actualisation moyen le plus long, en minutes. |
-| Délais d’attente d’actualisation moyens par heure |  Temps d’attente moyen d’actualisation, divisé en intervalles d’une heure et exprimé en heure locale. Plusieurs pics élevés de temps d’attente d’actualisation indiquent une très forte sollicitation des capacités. |
-| Nombre d’actualisations par heure et consommation de mémoire |  Réussites, échecs et consommation de mémoire, divisés en intervalles d’une heure et exprimés en heure locale. |
+| Délais d’attente d’actualisation moyens par heure |  Temps d’attente moyen d’actualisation, divisé en intervalles d’une heure et exprimé en heure UTC. Plusieurs pics élevés de temps d’attente d’actualisation indiquent une très forte sollicitation des capacités. |
+| Nombre d’actualisations par heure et consommation de mémoire |  Réussites, échecs et consommation de mémoire, divisés en intervalles d’une heure et exprimés en heure UTC. |
 |  |  |
 
 ### <a name="resource-consumption"></a>Consommation des ressources

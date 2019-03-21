@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4331878aee591f9e3939c0bb1c239eca160ee61d
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 52876f05eba098466b3f0b8cebc614d10a3cd277
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223648"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220905"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Lier des entités entre des flux de données dans Power BI (préversion)
 
@@ -81,6 +81,7 @@ Il existe quelques limitations à prendre en compte lorsque vous travaillez avec
 * Il existe un maximum de cinq tronçons de référence
 * Les dépendances cycliques d’entités liées ne sont pas autorisées
 * Le flux de données doit résider dans un [nouvel espace de travail Power BI](service-create-the-new-workspaces.md)
+* Une entité liée ne peut pas être jointe à une entité standard qui obtient ses données à partir d’une source de données locale
 
 
 ## <a name="next-steps"></a>Étapes suivantes

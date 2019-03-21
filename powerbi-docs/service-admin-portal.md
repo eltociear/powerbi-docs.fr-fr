@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: ca9a2eff3d05ec10c83dde90eabb779370ca5e96
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: d592cca246b7d8bf348a9cdd889b6d8ba0e248c1
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757343"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980378"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -42,11 +42,11 @@ Le portail compte sept onglets. Le reste de cet article fournit des informations
 * [Utilisateurs](#users)
 * [Journaux d’audit](#audit-logs)
 * [Paramètres du locataire](#tenant-settings)
-* [Paramètres Premium](#premium-settings)
+* [Paramètres de capacité](#capacity-settings)
 * [Codes incorporés](#embed-codes)
-* [Visuels organisationnels](#organization-visuals)
+* [Visuels organisationnels](#organizational-visuals)
 
-## <a name="usage-metrics"></a>Mesures d’utilisation
+## <a name="usage-metrics"></a>Métriques d’utilisation
 
 Les **Métriques d’utilisation** vous permettent de superviser l’utilisation de Power BI dans votre organisation. Il permet également de voir les utilisateurs et les groupes de votre organisation qui sont les plus actifs dans Power BI.
 
@@ -81,7 +81,7 @@ La deuxième section affiche le même type d’informations, mais pour les group
 
 Ces informations vous procurent des insights tangibles sur la façon dont les employés de votre organisation utilisent Power BI et vous permettent d’identifier les utilisateurs et les groupes les plus actifs.
 
-## <a name="users"></a>Utilisateurs
+## <a name="users"></a>Users
 
 Les utilisateurs, les groupes et les administrateurs Power BI sont gérés dans le Centre d’administration Office 365. L’onglet **Utilisateurs** contient un lien qui donne accès au Centre d’administration pour votre client.
 

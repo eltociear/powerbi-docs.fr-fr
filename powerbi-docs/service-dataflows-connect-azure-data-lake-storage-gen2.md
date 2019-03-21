@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
+ms.openlocfilehash: 875f30a6e051561f20a7ca54bc48343dd7248e79
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426720"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174749"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)
 
@@ -65,7 +65,7 @@ Suivez les étapes de l’article [Créer un compte de stockage Azure Data Lake 
 
 Ensuite, vous devez accorder au service Power BI un rôle Lecteur dans votre compte de stockage créé. Il s’agit d’un rôle intégré, par conséquent, les étapes sont simples. 
 
-Suivez les étapes de l’article [Attribuer un rôle à un principal de sécurité](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-role-to-a-security-principal).
+Suivez les étapes indiquées dans [Affecter un rôle RBAC intégré](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
 Dans la fenêtre **Ajouter une attribution de rôle**, sélectionnez le rôle **Lecteur** à attribuer au service Power BI. Puis, utilisez Rechercher pour localiser **Service Power BI**. L’illustration suivante montre le rôle **Lecteur** attribué au service Power BI.
 
@@ -150,6 +150,9 @@ Vous connectez votre compte **Azure Data Lake Storage Gen2** en procédant comme
 6. Sélectionnez **Se connecter**.
 
 Une fois ces étapes terminées, votre compte Azure Data Lake Storage Gen2 est connecté à Power BI. 
+
+> [!NOTE]
+> Pour configurer une connexion à Azure Data Lake Storage Gen2 dans le portail d’administration Power BI, vous devez avoir les autorisations d’administrateur général. Toutefois, les administrateurs généraux ne peuvent pas connecter un stockage externe dans le portail d’administration.  
 
 Ensuite, vous devez permettre aux personnes de votre organisation de configurer leurs espaces de travail, ce qui leur permet d’utiliser ce compte de stockage pour le stockage des données et de la définition de flux de données. Nous allons le faire dans la section suivante. 
 

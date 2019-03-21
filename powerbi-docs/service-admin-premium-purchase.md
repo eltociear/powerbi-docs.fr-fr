@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b4f2d58b9e33e603b6e2dbc97972bb54c66f065c
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: 312e010bfa3ea635ef014a0b2dd913fa9e3911b6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014136"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964844"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Acheter Power BI Premium
 
@@ -95,13 +95,15 @@ Vous pouvez annuler votre abonnement à partir du centre d’administration Offi
 
 1. Lisez les informations et si vous souhaitez continuer, sélectionnez **Annuler l’abonnement**.
 
+### <a name="when-canceling-or-your-license-expires"></a>En cas d’annulation ou lorsque vos licence arrive à expiration
+
+Lorsque vous annulez votre abonnement Premium ou que votre licence de capacité arrive à expiration, vous pouvez continuer à accéder à vos capacités Premium pendant une période de 30 jours à partir de la date d’annulation ou d’expiration de la licence. Après 30 jours, vous ne pourrez plus accéder à vos capacités Premium ou aux espaces de travail qui s’y trouvent.
+
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Page des tarifs de Power BI ](https://powerbi.microsoft.com/pricing/)
-[Calculatrice Power BI Premium](https://powerbi.microsoft.com/calculator/)
-[Qu’est-ce que Power BI Premium ?](service-premium.md)
-[Questions fréquentes sur Power BI Premium](service-premium-faq.md)
-[Livre blanc sur Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-[Livre blanc sur la planification d’un déploiement de Power BI dans une entreprise](https://aka.ms/pbienterprisedeploy)
+[Page de tarification de Power BI](https://powerbi.microsoft.com/pricing/)   
+[Calculatrice Power BI Premium](https://powerbi.microsoft.com/calculator/)   
+[FAQ Power BI Premium](service-premium-faq.md)   
+[Livre blanc Planification d’un déploiement de Power BI en entreprise](https://aka.ms/pbienterprisedeploy)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
