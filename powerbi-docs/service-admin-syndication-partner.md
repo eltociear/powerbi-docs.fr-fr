@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: f1244535259de2a5b5726d295a64229a0f92f02b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 635a64c08056e82539d33904d4cce60d4cfc00cd
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296443"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58382935"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Impossible d’ajouter Power BI à l’abonnement du partenaire Office 365
 
@@ -33,9 +33,9 @@ Si vous voulez souscrire un abonnement à Power BI Pro ou Power BI Premium, d�
 
 ## <a name="purchase-from-microsoft-or-another-channel"></a>Acheter auprès de Microsoft ou par un autre canal
 
-En fonction de la relation que vous entretenez avec votre partenaire, vous pouvez acheter Power BI directement auprès de Microsoft ou d’un autre partenaire. Vous pouvez vérifier si vous pouvez ajouter des abonnements de Power BI dans le portail d’administration Office 365 (nécessite l’appartenance au rôle Administrateur général ou Administrateur de facturation).
+En fonction de la relation que vous entretenez avec votre partenaire, vous pouvez acheter Power BI directement auprès de Microsoft ou d’un autre partenaire. Vous pouvez vérifier si vous pouvez ajouter des abonnements de Power BI dans le centre d’administration Microsoft 365 (nécessite l’appartenance au rôle Administrateur général ou Administrateur de facturation).
 
-1. Accédez au [Portail d’administration de Microsoft Office 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Accédez au [Centre d’administration Microsoft 365](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. Dans le menu de gauche, ouvrez **Facturation** :
 
