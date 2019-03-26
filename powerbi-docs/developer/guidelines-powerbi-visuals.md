@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 03/10/2019
-ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58175468"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430297"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
 
@@ -29,7 +29,6 @@ Les visuels de type « Un achat supplémentaire peut être requis » sont simi
 
 >[!IMPORTANT]  
 > Si vous mettez à jour votre visuel en le faisant passer de gratuit à « Un autre achat peut être requis », les utilisateurs doivent recevoir le même niveau de fonctionnalités gratuites qu’avant la mise à jour. Vous pouvez compléter les fonctionnalités gratuites existantes par des fonctionnalités avancées payantes facultatives. Nous vous recommandons de soumettre les visuels IAP avec les fonctionnalités avancées en tant que nouveaux visuels au lieu de mettre à jour les fonctionnalités gratuites existantes.
-
 
 ## <a name="what-changed-in-the-submission-process"></a>Qu’est-ce qui a changé dans le processus de soumission ?
 
@@ -51,17 +50,17 @@ Cette section décrit les spécifications relatives à l’ajout de logos et de 
 > [!IMPORTANT]
 > Les logos sont autorisés en **mode d’édition uniquement**. Les logos ne peuvent **pas** être affichés en mode Affichage.
 
-![Définitions](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
+![Définitions](media/guidelines-powerbi-visuals/definitions.png)
 
-![Éléments à prendre en compte](media/office-store-in-app-purchase-visual-guidelines/things-to-keep-in-mind.png)
+![Éléments à prendre en compte](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
 
-![Pratiques à éviter](media/office-store-in-app-purchase-visual-guidelines/things-to-avoid.png)
+![Pratiques à éviter](media/guidelines-powerbi-visuals/things-to-avoid.png)
 
-![Taille et format](media/office-store-in-app-purchase-visual-guidelines/size-and-format.png)
+![Taille et format](media/guidelines-powerbi-visuals/size-and-format.png)
 
-![Marges et dimensionnement](media/office-store-in-app-purchase-visual-guidelines/margins-and-sizes.png)
+![Marges et dimensionnement](media/guidelines-powerbi-visuals/margins-and-sizes.png)
 
-![Mode d’édition](media/office-store-in-app-purchase-visual-guidelines/logos-in-edit-mode.png)
+![Mode d’édition](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Meilleures pratiques
 

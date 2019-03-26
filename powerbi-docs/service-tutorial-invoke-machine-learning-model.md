@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 54515259d0e258284cd5a2e86432a5ef6be89a9e
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
+ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57965483"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430320"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Tutoriel : Appeler un modèle Machine Learning Studio dans Power BI (préversion)
 
@@ -92,7 +92,7 @@ Dans l’écran suivant, vous êtes invité à vous connecter à une source de d
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
 
-!Connectez-vous aux données source](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
+![Se connecter à une source de données](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
 L’éditeur Power Query affiche un aperçu des données à partir du fichier CSV. Sélectionnez **Transformer une table** dans le ruban des commandes, puis sélectionnez **Utiliser les premières lignes comme en-têtes**.  Cette opération ajoute l’étape de requête _En-têtes promues_ au volet **Étapes appliquées** à droite. Vous pouvez également renommer la requête avec un nom plus convivial, tel que _Tarification automobile_ avec le volet de droite.
 
@@ -137,7 +137,7 @@ La sélection de l’icône **Modifier** ouvre l’éditeur Power Query pour les
 
 Sélectionnez le bouton **Insights d’intelligence artificielle** dans le ruban, puis le dossier _modèles Azure Machine Learning_ dans le menu de navigation de gauche.
 
-Sélectionnez le dossier **Modèles Azure Machine Learning**. Les modèles Azure ML auxquels vous avez accès sont répertoriés en tant que fonctions de Power Query avec un préfixe *AzureML.*  Lorsque vous cliquez sur la fonction correspondant au modèle _AutomobilePricePrediction_, les paramètres du service web du modèle sont répertoriés en tant que paramètres de fonction.
+Les modèles Azure ML auxquels vous avez accès sont répertoriés en tant que fonctions de Power Query avec un préfixe *AzureML.*  Lorsque vous cliquez sur la fonction correspondant au modèle _AutomobilePricePrediction_, les paramètres du service web du modèle sont répertoriés en tant que paramètres de fonction.
 
 Pour appeler un modèle Azure ML, vous pouvez définir une des colonnes de l’entité sélectionnée en tant qu’entrée dans la liste déroulante. Vous pouvez également spécifier une valeur constante à utiliser comme entrée en basculant l’icône de la colonne à gauche de la boîte de dialogue d’entrée. Lorsqu’un nom de colonne correspond à l’un des noms de paramètre de fonction, la colonne est automatiquement suggérée en tant qu’entrée.  Si le nom de colonne ne correspond pas, vous pouvez le sélectionner dans la liste déroulante.
 
