@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 35efd62e6f00edd9ce6b58774dd73925a721dec5
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: c268bd370f32d2089b3b80c7cf4317df33e67280
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661925"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306478"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exporter des rapports Power BI au format PDF
 Power BI vous permet de publier votre rapport au format PDF et de créer facilement un document basé sur votre rapport. Quand vous **exportez au format PDF**, chaque page du rapport Power BI devient une page individuelle du document PDF.
@@ -64,7 +64,7 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
 
 * Si vous partagez un tableau de bord avec une personne externe à votre organisation (et donc un utilisateur qui n’est pas dans votre locataire Power BI), cet utilisateur ne peut pas exporter es rapports associés du tableau de bord partagé au format PDF. Par exemple, si vous êtes aaron@contoso.com, vous pouvez partager avec cassie@cohowinery.com. Mais cassie@cohowinery.com ne peut pas exporter les rapports associés au format PDF.
 
-* Lorsque vous exportez au format PDF avec des rapports qui contiennent une image d’arrière-plan, vous pouvez voir une image déformée dans l’exportation si vous utilisez l’option « Ajustement » pour l’arrière-plan de la page.  Pour de meilleurs résultats, il est recommandé d’utiliser les options « Normal » ou « Remplissage » afin d’éviter des problèmes avec votre document exporté.
+* Quand vous exportez au format PDF avec des rapports qui contiennent une image d’arrière-plan, vous pouvez voir une image déformée dans l’exportation si vous utilisez les options « Normal » ou « Remplissage » pour l’arrière-plan de la page.  Pour de meilleurs résultats, il est recommandé d’utiliser l’option « Ajustement » afin d’éviter des problèmes avec votre document exporté.
 
 * Le service Power BI utilise votre paramètre de langue Power BI pour l’exportation au format PDF. Pour afficher ou définir vos préférences de langue, sélectionnez l’icône représentant une roue dentée > **Paramètres** >  **Général** > **Langue**.
 

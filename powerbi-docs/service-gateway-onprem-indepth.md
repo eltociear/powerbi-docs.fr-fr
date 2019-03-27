@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: fa7d10403ca6bd8dc94729b7b4fd631475a3671e
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325011"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383413"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Informations approfondies sur la passerelle de données locale
 Les utilisateurs de votre organisation peuvent accéder aux données locales (auxquelles ils ont déjà accès), mais avant qu’ils puissent se connecter à votre source de données locale, vous devez installer et configurer une passerelle de données locale. La passerelle favorise une communication rapide et sécurisée en arrière-plan entre un utilisateur dans le cloud et votre source de données locale, dans les deux sens.
@@ -77,7 +77,7 @@ Les services cloud reconnaissent uniquement les comptes dans Azure Active Direct
 
 1. Vous pouvez ajouter manuellement des comptes à Azure Active Directory.
    
-   Vous pouvez créer un compte sur le portail Azure ou dans le portail d’administration Office 365. Le nom du compte correspond alors au nom d’utilisateur principal du compte Active Directory local.
+   Vous pouvez créer un compte sur le portail Azure ou dans le centre d’administration Microsoft 365. Le nom du compte correspond alors au nom d’utilisateur principal du compte Active Directory local.
 2. Vous pouvez utiliser l’outil [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) pour synchroniser les comptes locaux avec votre locataire Azure Active Directory.
    
    L’outil Azure AD Connect offre des options de synchronisation des répertoires et de configuration de l’authentification, y compris la synchronisation du hachage de mot de passe, l’authentification directe et la fédération. Si vous n’êtes pas un administrateur de locataire ou un administrateur de domaine local, vous devez contacter votre administrateur pour qu’il se charge de la configuration.

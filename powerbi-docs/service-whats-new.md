@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a9fa6b5e854fc51487f0a0b4feaef8650b94057
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 96faaf87c2aa04bdc1175f1b7cb78229bbb87a24
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216858"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383712"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
@@ -346,7 +346,7 @@ Aujourd'hui, nous avons publié une longue liste des fonctionnalités les plus d
 
 ***Portail d’administration***
 
-* Gestion des utilisateurs simple avec un lien vers le centre d'administration O365
+* Gestion des utilisateurs simple avec un lien vers le centre d’administration Microsoft 365
 * Possibilité de désactiver la publication sur le web
 * Empêcher les utilisateurs de publier des packs de contenu pour l'organisation entière
 * Possibilité de désactiver le partage de contenu aux utilisateurs externes
@@ -508,7 +508,7 @@ Pour plus d’informations, consultez le [Blog Power BI](http://blogs.msdn.com/
 * Nouveau site pour la documentation relative à Power BI, localisé
 * Temps de chargement amélioré pour les rapports
 * Mise à jour des packs de contenu d’organisation avec des modifications spécifiques des rapports
-* État d’intégrité de Power BI dans le portail d’administration Office 365
+* État d’intégrité de Power BI dans le Centre d’administration Microsoft 365
 * Indicateurs de performance clés (KPI) et images dans les tableaux, matrices et cartes
 
 Pour plus d’informations, consultez le [Blog Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx).

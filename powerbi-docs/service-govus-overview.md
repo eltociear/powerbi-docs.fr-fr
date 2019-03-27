@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 4b017ae02ee88df47e426466c212ed6d87a2f92a
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: d846a50ab87fe7d9f20034892e25dedde043f9ee
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580033"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430251"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -39,7 +39,7 @@ Les fonctionnalités suivantes sont disponibles pour les clients de **Power BI U
 * Toutes les données sont chiffrées aussi bien dans Azure SQL que dans Stockage Blob pour Power BI
 * Se connecter à des services avec des [packs de contenu](service-connect-to-services.md)
 
-## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Connectivité entre les services cloud Azure Government et public 
+## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Connectivité entre les services cloud Azure Government et mondial 
 
 Azure est réparti entre plusieurs clouds. Par défaut, les locataires sont autorisés à ouvrir des règles de pare-feu vers une instance spécifique du cloud, mais la mise en réseau entre les clouds est différente et requiert l’ouverture de règles de pare-feu spécifiques pour la communication entre les services. Si vous êtes client Power BI et que vous disposez d’instances SQL actuelles dans le cloud public auxquelles vous souhaitez accéder, vous devez ouvrir des règles de pare-feu spécifiques dans SQL vers la plage d’IP du cloud Azure Government, pour les centres de données suivants :
 
@@ -93,7 +93,7 @@ Les questions (et réponses) suivantes sont fournies pour vous aider à obtenir 
 | --- | --- |
 | https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
 
-**Question :** Mon compte est provisionné dans plusieurs clouds souverains. Quand j’utilise **Power BI Desktop**, comment sélectionner le cloud auquel se connecter ?
+**Question :** Mon compte est provisionné dans plusieurs clouds nationaux. Quand j’utilise **Power BI Desktop**, comment sélectionner le cloud auquel se connecter ?
 
 **Réponse :** À partir de la version de juillet 2018 de **Power BI Desktop**, vous pouvez choisir le cloud que vous voulez utiliser quand vous vous connectez à **Power BI Desktop**.
 

@@ -2,20 +2,20 @@
 title: Livre blanc sur la sécurité dans Power BI
 description: Livre blanc qui décrit l’architecture et l’implémentation de la sécurité pour Power BI
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 957c6d5fe8797f1b03eaab3a54846e7110b302fb
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 8a86d17252bea3dbdb6ad30de35667cfbd844c8b
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580286"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430389"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -125,7 +125,7 @@ Actuellement, le service Power BI est disponible dans des régions spécifiques
 
 * [Centres de données Power BI](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
-Microsoft fournit également des centres de données pour des souverainetés. Pour plus d’informations sur la disponibilité du service Power BI pour les clouds souverains, consultez [Clouds souverains Power BI](https://powerbi.microsoft.com/clouds/).
+Microsoft fournit également des centres de données pour des souverainetés. Pour plus d’informations sur la disponibilité du service Power BI pour les clouds nationaux, consultez [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/).
 
 Pour plus d’informations sur l’emplacement où sont stockées vos données et sur la façon dont elles sont utilisées, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Les engagements concernant l’emplacement des données des clients au repos sont spécifiés dans les **modalités relatives au traitement des données** dans les [Conditions d’utilisation de Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
@@ -151,11 +151,9 @@ La séquence d’authentification utilisateur pour le service Power BI se dérou
 
 3. Le cluster WFE vérifie auprès du service **Azure Active Directory** (**AAD**) pour authentifier l’abonnement au service Power BI de l’utilisateur et pour obtenir un jeton de sécurité AAD. Quand AAD confirme que l’authentification de l’utilisateur a réussi et retourne un jeton de sécurité AAD, le cluster WFE consulte le **service mondial Power BI******, qui tient à jour une liste des locataires et des emplacements de leurs clusters back-end Power BI, et il détermine quel cluster de service Power BI contient le locataire de l’utilisateur. Le cluster WFE dirige ensuite l’utilisateur vers le cluster Power BI où son locataire se trouve, et retourne une collection d’éléments au navigateur de l’utilisateur :
 
-
       - Le **jeton de sécurité AAD**
       - Les **informations de session**
       - L’adresse web du cluster **back-end** avec lequel l’utilisateur peut communiquer et interagir
-
 
 1. Le navigateur de l’utilisateur contacte ensuite le CDN Azure spécifié, ou pour certains des fichiers le WFE, afin de télécharger la collection des fichiers communs spécifiés nécessaires pour permettre l’interaction entre le navigateur et le service Power BI. La page du navigateur inclut alors le jeton AAD, les informations de session, l’emplacement du cluster back-end associé et la collection de fichiers téléchargés à partir du cluster WFE et du CDN Azure, pour toute la durée de la session de navigateur du service Power BI.
 
@@ -176,14 +174,11 @@ Une requête d’importation de jeu de données se compose d’une collection de
 Le tableau suivant décrit les données Power BI en fonction du type de requête utilisé. Un **X** indique la présence de données Power BI quand vous utilisez le type de requête associé.
 
 
-|  |Import  |DirectQuery  |Live Connect  |
+|  |Importer  |DirectQuery  |Live Connect  |
 |---------|---------|---------|---------|
 |Schéma     |     X    |    X     |         |
 |Données de ligne     |    X     |         |         |
 |Mise en cache de données de visuels     |    X     |     X    |    X     |
-
-
-
 
 La distinction entre une DirectQuery et les autres requêtes détermine comment le service Power BI gère les données au repos, et si la requête proprement dite est chiffrée. Les sections suivantes décrivent les données au repos et en mouvement, et expliquent le processus de gestion des données, l’emplacement et le chiffrement.
 
@@ -210,9 +205,9 @@ Pour les sources de données basées sur le cloud, le rôle Déplacement de donn
 #### <a name="datasets"></a>Jeux de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
-      
+
     a. Pour Analysis Services local, rien n’est stocké dans le service à l’exception d’une référence à cette base de données stockée chiffrée dans Azure SQL.
- 
+
     b. Toutes les autres métadonnées pour ETL, DirectQuery et l’envoi de données (push) sont chiffrées et stockées dans Stockage Blob Azure.
 
 1. Informations d’identification pour les sources de données d’origine
@@ -230,7 +225,7 @@ Pour les sources de données basées sur le cloud, le rôle Déplacement de donn
         - Si le jeu de données est configuré pour l’actualisation, les informations d’identification sont stockées chiffrées dans la base de données Azure SQL Database du rôle Déplacement de données. La clé de chiffrement est stockée sur l’ordinateur exécutant la passerelle sur l’infrastructure du client.
         - Si le jeu de données n’est pas configuré pour l’actualisation, aucune information d’identification n’est stockée pour les sources de données.
 
-1. des données
+1. Données
 
     a. Analysis Services local et DirectQuery : rien n’est stocké dans le service Power BI.
 
@@ -255,7 +250,7 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
    a. Les rapports peuvent être au format Excel pour Office 365 ou au format Power BI. Ce qui suit s’applique aux métadonnées en fonction du type de rapport :
 
        a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-       
+
        b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Données statiques
@@ -302,7 +297,7 @@ La section suivante décrit les données qui sont stockées de manière transito
     c. Envoi de données (push) : aucune (non applicable)
 
     d. ETL : aucune (rien n’est stocké sur le nœud de calcul et rien ne diffère de ce qui est mentionné dans la section **Données au repos** ci-dessus)
-4. des données
+4. Données
 
     Certains artefacts de données peuvent être stockés sur le disque des nœuds de calcul pour une durée limitée.
 
@@ -358,7 +353,7 @@ Le tableau suivant indique la prise en charge de l’authentification basée sur
 | **Power BI** (connexion au service) | Pris en charge | Pris en charge | Non pris en charge |
 | **SSRS ADFS** (connexion au serveur SSRS) | Non pris en charge | Pris en charge | Non pris en charge |
 
-Les applications Power BI Mobile communiquent activement avec le service Power BI. La télémétrie est utilisée pour recueillir des statistiques d’utilisation des applications mobiles et des données similaires, qui sont transmises aux services responsables de la supervision de l’utilisation et de l’activité. Aucune information d’identification personnelle n’est envoyée avec les données de télémétrie.
+Les applications Power BI Mobile communiquent activement avec le service Power BI. La télémétrie est utilisée pour recueillir des statistiques d’utilisation des applications mobiles et des données similaires, qui sont transmises aux services responsables de la supervision de l’utilisation et de l’activité. Aucune donnée personnelle n’est envoyée avec les données de télémétrie.
 
 L’**application Power BI sur l’appareil** stocke des données sur l’appareil afin de faciliter l’utilisation de l’application :
 
@@ -414,7 +409,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **Comment fonctionnent les groupes Power BI ?**
 
-* Les groupes Power BI permettent aux utilisateurs de collaborer rapidement et facilement à la création de tableaux de bord, rapports et modèles de données au sein d’équipes établies. Par exemple, si vous avez un groupe Power BI qui inclut toute votre équipe, vous pouvez facilement collaborer avec tous les membres de votre équipe en sélectionnant le groupe à partir de Power BI. Les groupes Power BI équivalent aux groupes universels Office 365 (que vous pouvez [découvrir plus en détails](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), [créer](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) et [gérer](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)) et ils utilisent les mêmes mécanismes d’authentification que ceux utilisés dans Azure Active Directory pour sécuriser les données. Vous pouvez [créer des groupes dans Power BI](https://support.powerbi.com/knowledgebase/articles/654250) ou créer un groupe universel dans le centre d’administration Office 365 ; ces deux opérations ont le même résultat pour la création de groupe dans Power BI.
+* Les groupes Power BI permettent aux utilisateurs de collaborer rapidement et facilement à la création de tableaux de bord, rapports et modèles de données au sein d’équipes établies. Par exemple, si vous avez un groupe Power BI qui inclut toute votre équipe, vous pouvez facilement collaborer avec tous les membres de votre équipe en sélectionnant le groupe à partir de Power BI. Les groupes Power BI équivalent aux groupes universels Office 365 (que vous pouvez [découvrir plus en détails](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), [créer](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) et [gérer](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)) et ils utilisent les mêmes mécanismes d’authentification que ceux utilisés dans Azure Active Directory pour sécuriser les données. Vous pouvez [créer des groupes dans Power BI](https://support.powerbi.com/knowledgebase/articles/654250) ou créer un groupe universel dans le Centre d’administration Microsoft 365 ; ces deux opérations ont le même résultat pour la création de groupe dans Power BI.
 
   Notez que les données partagées avec des groupes Power BI respectent les mêmes principes de sécurité que toutes les données partagées dans Power BI. Pour les sources de données **ne prenant pas en charge la sécurité au niveau du rôle**, Power BI **ne ré-authentifie pas** les utilisateurs auprès de la source d’origine des données. Une fois les données chargées dans Power BI, l’utilisateur qui s’est authentifié auprès des données sources est responsable de la gestion des autres utilisateurs et groupes pouvant visualiser les données. Pour plus d’informations, consultez la section **Authentification des utilisateurs auprès des sources de données** plus haut dans ce document.
 
@@ -459,9 +454,9 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **Qu’en est-il de la souveraineté des données ? Pouvons-nous provisionner des locataires dans des centres de données situés dans des zones géographiques spécifiques, afin de nous assurer que les données ne quittent pas les frontières du pays ?**
 
-* Certains clients dans certaines zones géographiques ont une option pour créer un locataire dans un cloud souverain, où le stockage et le traitement des données sont maintenus distincts de tous les autres centres de données. Les clouds souverains ont un type de sécurité légèrement différent, car un tiers de confiance distinct pour les données exploite le service Power BI de cloud souverain pour le compte de Microsoft.
+* Certains clients dans certaines zones géographiques ont une option pour créer un locataire dans un cloud national, où le stockage et le traitement des données sont maintenus distincts de tous les autres centres de données. Les clouds nationaux ont un type de sécurité légèrement différent, car un tiers de confiance distinct pour les données exploite le service Power BI de cloud national pour le compte de Microsoft.
 
-  Les clients peuvent également configurer un locataire dans une région spécifique, mais ces locataires ne bénéficient pas d’un tiers de confiance distinct pour les données de la part de Microsoft. Les tarifs des clouds souverains sont différents du service Power BI commercial en disponibilité générale. Pour plus d’informations sur la disponibilité du service Power BI pour les clouds souverains, consultez [Clouds souverains Power BI](https://powerbi.microsoft.com/clouds/).
+  Les clients peuvent également configurer un locataire dans une région spécifique, mais ces locataires ne bénéficient pas d’un tiers de confiance distinct pour les données de la part de Microsoft. Les tarifs des clouds nationaux sont différents du service Power BI commercial en disponibilité générale. Pour plus d’informations sur la disponibilité du service Power BI pour les clouds nationaux, consultez [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/).
 
 **Comment Microsoft traite les connexions pour les clients disposant d’abonnements Power BI Premium ? Ces connexions sont-elles différentes de celles créées pour le service Power BI non-Premium ?**
 
@@ -488,6 +483,6 @@ Pour plus d’informations sur Power BI, consultez les ressources suivantes.
 - [Informations de référence sur l’API de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)
 - [Passerelle de données locale](service-gateway-manage.md)
 - [Power BI et ExpressRoute](service-admin-power-bi-expressroute.md)
-- [Clouds souverains Power BI](https://powerbi.microsoft.com/clouds/)
+- [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-overview.md)

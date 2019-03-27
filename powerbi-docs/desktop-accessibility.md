@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 18872e65154f70e882c4f6f60c04420b17038d32
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: e3dd7d9120b524dd09d6f0d60764385185210d83
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249111"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306294"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -137,6 +137,13 @@ Dans nos efforts constants pour améliorer l’accessibilité, les expériences 
 | :------------------- | :------------------- |
 | Déplacer le focus sur le menu du visuel | Alt + Maj + F10 |
 | Afficher les données | Alt + Maj + F11  |
+| Entrer un visuel | Ctrl + flèche droite |
+| Entrer un calque | Entrer |
+| Quitter un calque ou un visuel | Échap |
+| Sélectionner ou désélectionner un point de données | Entrée ou Espace |
+| Sélection multiple | Ctrl+Entrée ou Ctrl+Espace |
+| Cliquer avec le bouton droit | <ul><li>Clavier Windows : Clé de contexte Windows + F10.  La touche de contexte Windows se trouve entre la touche Alt de gauche et la touche Flèche Gauche</li><li>Autre clavier : Maj + F10</li></ul> |
+| Effacer la sélection | Ctrl+Maj+C |
 
 ### <a name="pane-navigation"></a>Navigation dans les volets
 | Pour           | Appuyer sur                |

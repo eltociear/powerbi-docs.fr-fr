@@ -11,12 +11,12 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 59916f904c2905a6858e0c20a67a2c0eae9e8cca
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 27776b251734d025e4dcde9f525f321008647455
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980401"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383482"
 ---
 # <a name="using-auditing-within-your-organization"></a>Utilisation de l’audit dans votre organisation
 
@@ -34,7 +34,7 @@ Vous devez respecter ces exigences suivantes pour accéder aux journaux d’audi
 
     Pour donner accès au journal d’audit à des comptes non administrateurs, vous devez ajouter l’utilisateur à la liste des membres de l’un de ces groupes de rôles. L’autre possibilité consiste à créer un groupe de rôles personnalisé dans le Centre d’administration Exchange, à affecter à ce groupe le rôle Journaux d’audit ou Journaux d’audit en affichage seul, puis à ajouter le compte non administrateur au nouveau groupe de rôles. Pour plus d’informations, voir [Gérer les groupes de rôles dans Exchange Online](/Exchange/permissions-exo/role-groups).
 
-    Si vous ne pouvez pas accéder au Centre d’administration Exchange à partir du Centre d’administration Office 365, accédez à https://outlook.office365.com/ecp et connectez-vous avec vos informations d’identification.
+    Si vous ne pouvez pas accéder au Centre d’administration Exchange à partir du centre d’administration Microsoft 365, accédez à https://outlook.office365.com/ecp et connectez-vous avec vos informations d’identification.
 
 * Si vous avez accès au journal d’audit, mais que vous n’êtes ni un administrateur général ni un administrateur de service Power BI, vous n’avez pas accès au portail d’administration de Power BI. Dans ce cas, vous devez utiliser un lien direct vers le [Centre de sécurité et conformité Office 365](https://sip.protection.office.com/#/unifiedauditlog).
 
@@ -50,9 +50,9 @@ Les journaux d’audit de Power BI sont disponibles directement dans le [Centre 
 
 1. Sélectionnez **Journaux d’audit**.
 
-1. Sélectionnez **Accéder au Centre d’administration O365**.
+1. Sélectionnez **Accéder au Centre d’administration Microsoft 365**.
 
-   ![Accéder au Centre d’administration O365](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Accéder au Centre d’administration Microsoft 365](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Rechercher des activités Power BI uniquement
 
@@ -214,7 +214,7 @@ Les activités suivantes sont auditées par Power BI.
 | Prise de contrôle d’une source de données Power BI                   | TakeOverDatasource                          |                                          |
 | Prise de contrôle d’un jeu de données Power BI                        | TakeOverDataset                             |                                          |
 | Application Power BI dépubliée                          | UnpublishApp                                |                                          |
-| Mettre à jour les paramètres de gouvernance des ressources de capacité      | UpdateCapacityResourceGovernanceSettings    | Actuellement pas présent dans le portail d’administration Office 365 |
+| Mettre à jour les paramètres de gouvernance des ressources de capacité      | UpdateCapacityResourceGovernanceSettings    | Absente du Centre d’administration Microsoft 365 |
 | Administrateur de capacité mis à jour                            | UpdateCapacityAdmins                        |                                          |
 | Nom d’affichage de capacité mis à jour                     | UpdateCapacityDisplayName                   |                                          |
 | Paramètres Power BI de l’organisation mis à jour          | UpdatedAdminFeatureSwitch                   |                                          |

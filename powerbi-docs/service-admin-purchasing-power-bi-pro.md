@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 10/21/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 76288ca77f184b27b5839377190a1708c69567af
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 15cd5e021969a050937b9d67eb7695f4fcde07c0
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430691"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383083"
 ---
 # <a name="purchase-and-assign-power-bi-pro-licenses"></a>Acheter et attribuer des licences Power BI Pro
 
@@ -33,7 +33,7 @@ Pour attribuer des licences dans Azure, vous devez être propriétaire de l’ab
 
 Suivez ces étapes pour acheter des licences Power BI Pro :
 
-1. Ouvrez le [Centre d’administration Office 365](https://portal.office.com/adminportal/home#/homepage).
+1. Ouvrez le [Centre d’administration Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
 
 2. Dans le volet de navigation de gauche, sélectionnez **Facturation** > **Abonnements**.
 
@@ -71,7 +71,7 @@ Suivez ces étapes pour acheter des licences Power BI Pro :
 
 Suivez ces étapes pour affecter des licences Power BI Pro à des comptes d’utilisateur individuels :
 
-1. Ouvrez le [Centre d’administration Office 365](https://portal.office.com/adminportal/home#/homepage).
+1. Ouvrez le [Centre d’administration Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
 
 2. Dans le volet de navigation gauche, développez **Utilisateurs**, puis sélectionnez **Utilisateurs actifs**.
 

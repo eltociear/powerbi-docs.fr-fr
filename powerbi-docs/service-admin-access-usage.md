@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: f685a900465cc0f1b635aad7609aaae4356da6b3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 26cf9b10d2a7bfffca151fe36cd45626487b6eef
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284630"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383643"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Trouver les utilisateurs Power BI qui se sont connectés
 
@@ -24,7 +24,7 @@ Si vous êtes administrateur de locataire et que vous voulez voir quels utilisat
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Ce rapport d’activité fournit des informations utiles, mais n’identifie pas le type de licence dont dispose chaque utilisateur. Utiliser le centre d’administration Office 365 pour afficher des licences.
+> Ce rapport d’activité fournit des informations utiles, mais n’identifie pas le type de licence dont dispose chaque utilisateur. Utilisez le Centre d’administration Microsoft 365 pour voir les licences.
 
 ## <a name="requirements"></a>Configuration requise
 
