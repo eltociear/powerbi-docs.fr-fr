@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 254b0c5c2e5a9b39f5d04f002a2791f1cd432c52
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: 5a39c976a9b9812754ade2e30eac13aa922fd7f9
+ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226201"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58489565"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sécurité au niveau des lignes (SNL) dans Power BI Report Server
 
@@ -28,11 +28,11 @@ Vous configurez SNL pour les rapports importés dans Power BI avec Power BI De
 
 Par défaut, le filtrage de la sécurité au niveau des lignes utilise des filtres unidirectionnels, et ce que les relations soient unidirectionnelles ou bidirectionnelles. Vous pouvez activer manuellement le filtrage croisé bidirectionnel avec la sécurité au niveau des lignes.
 
-- Sélectionnez la relation et cochez la case  **Appliquer le filtre de sécurité dans les deux directions** . 
+- Sélectionnez la relation et cochez la case **Appliquer le filtre de sécurité dans les deux directions**. 
 
     ![Appliquer un filtre de sécurité](media/row-level-security-report-server/rls-apply-security-filter.png)
 
-Cochez cette case en cas d’implémentation d’une  [sécurité dynamique au niveau des lignes](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters) basée sur le nom d’utilisateur ou l’ID de connexion. 
+Cochez cette case en cas d’implémentation d’une [sécurité dynamique au niveau des lignes](https://docs.microsoft.com/sql/analysis-services/supplemental-lesson-implement-dynamic-security-by-using-row-filters) basée sur le nom d’utilisateur ou l’ID de connexion. 
 
 Pour en savoir plus, consultez [Filtrage croisé bidirectionnel avec DirectQuery dans Power BI Desktop](../desktop-bidirectional-filtering.md) et le livre blanc technique[Sécurisation du modèle sémantique BI tabulaire](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
@@ -85,7 +85,7 @@ Voici les limites actuelles de la sécurité au niveau des lignes sur les modèl
 
 Les utilisateurs dont les rapports utilisaient la fonction DAX username() constatent désormais un nouveau comportement dans lequel le nom d’utilisateur principal (UPN) est retourné, SAUF en cas d’utilisation de DirectQuery avec sécurité intégrée.  Étant donné que SNL n’est pas respectée dans ce scénario, le comportement dans ce dernier est inchangé.
 
-Vous pouvez définir SNL uniquement sur les jeux de données créés avec Power BI Desktop. Pour activer SNL pour les jeux de données créés avec Excel, vous devez d’abord convertir vos fichiers au format PBIX (Power BI Desktop). Découvrez-en plus sur la [conversion des fichiers Excel](../desktop-import-excel-workbooks.md).
+Vous pouvez définir SNL uniquement sur les jeux de données créés avec Power BI Desktop. Pour activer SNL pour les jeux de données créés avec Excel, vous devez d’abord convertir vos fichiers au format PBIX (Power BI Desktop). Découvrez-en plus sur la [conversion des fichiers Excel](../desktop-import-excel-workbooks.md).
 
 Seules les connexions ETL (extraction, transformation et chargement) et DirectQuery utilisant des informations d’identification stockées sont prises en charge. Les connexions actives à Analysis Services et DirectQuery utilisant l’authentification intégrée sont gérées dans la source de données sous-jacente. 
 

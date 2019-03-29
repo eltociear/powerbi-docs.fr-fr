@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
-ms.openlocfilehash: eb5befbfc5e96867f0f4cf27eafd62829fb488f4
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: ec03ba86fdbf57a9898b127aae9b76990837b5ba
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762142"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473841"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Créer un locataire Azure Active Directory pour utiliser Power BI
 
@@ -28,7 +28,7 @@ Si votre organisation possède déjà un locataire Azure AD, vous pouvez l’uti
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Créer un client Azure Active Directory
 
-Pour intégrer Power BI à votre application personnalisée, vous devez définir une application dans Azure AD. Pour ce faire, il vous faut un répertoire Azure AD. Il s’agit de votre locataire. Si votre organisation n’a pas encore de locataire, parce qu’elle n’utilise pas Power BI ou Office 365, [vous devez en créer un](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Vous pouvez également créer un locataire si vous souhaitez que votre application soit indépendante du locataire de votre organisation. Cela vous permet de bien distinguer les choses.
+Pour intégrer Power BI à votre application personnalisée, vous devez définir une application dans Azure AD. Pour ce faire, il vous faut un répertoire Azure AD. Il s’agit de votre locataire. Si votre organisation n’a pas encore de locataire, car elle n’utilise pas Power BI ou Office 365, [vous devez en créer un](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Vous pouvez également créer un locataire si vous souhaitez que votre application soit indépendante du locataire de votre organisation. Cela vous permet de bien distinguer les choses.
 
 Si nécessaire, vous pouvez également créer un locataire à des fins de test.
 
