@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/31/2018
+ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 26cf9b10d2a7bfffca151fe36cd45626487b6eef
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 8186cebfce23ab5cb73862541213260a80182230
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383643"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872475"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Trouver les utilisateurs Power BI qui se sont connectés
 
@@ -68,5 +68,5 @@ Les données de connexion sont disponibles pendant une durée maximale de 30 jo
 
 [Utilisation de l’audit dans votre organisation](service-admin-auditing.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la Communauté Power BI](https://community.powerbi.com/)
 
