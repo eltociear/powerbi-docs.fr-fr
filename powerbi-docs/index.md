@@ -1,13 +1,19 @@
 ---
 layout: HubPage
 hide_bc: true
-title: "Documentation Power\_BI"
-description: "Documentation Power\_BI"
+title: Documentation Power BI
+description: Documentation Power BI
 ms.service: powerbi
 ms.author: maggies
 author: maggiesMSFT
 ms.topic: hub-page
-'ms:date': 10/26/2018
+ms:date: 10/26/2018
+ms.openlocfilehash: 6472102bbf666aceb1f7d1e7bcc8af91c2ccd7d6
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220928"
 ---
 <div id="main" class="v2">
     <div class="container">
