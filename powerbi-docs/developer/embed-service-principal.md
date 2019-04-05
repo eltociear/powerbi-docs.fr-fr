@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/05/2019
-ms.openlocfilehash: 8d91b6cc03bb142d6d4aa101f87d8e3c1e6f3196
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.date: 03/29/2019
+ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014412"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872544"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Principal de service avec Power BI (préversion)
 
@@ -111,13 +111,15 @@ Il existe des différences selon que vous utilisez un principal de service ou un
 3. En tant qu’administrateur Power BI, vous devez activer le principal de service dans les **Paramètres du développeur** du portail d’administration Power BI. Ajoutez le groupe de sécurité que vous avez créé dans Azure AD à la section **Groupe de sécurité spécifique** des **Paramètres du développeur**.
 
    > [!Important]
-   > Les principaux de service héritent des autorisations de leur groupe de sécurité pour tous les paramètres du locataire Power BI. Pour limiter les autorisations, créez un groupe de sécurité dédié pour les principaux de service et ajoutez-le à la liste « À l’exception des groupes de sécurité spécifiques » pour les paramètres Power BI pertinents et activés.
+   > Les principaux du service ont accès à tous les paramètres de locataire qui sont activés pour toute l’organisation ou pour les groupes de sécurité qui contiennent des principaux du service dans le cadre du groupe. Pour restreindre l’accès des principaux du service à des paramètres de locataire spécifiques, autorisez uniquement l’accès à certains groupes de sécurité ou créez un groupe de sécurité dédié pour les principaux du service et excluez-le.
 
     ![Portail d’administration](media/embed-service-principal/admin-portal.png)
 
 4. Configurez votre [environnement Power BI](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
-5. Ajoutez le principal de service comme **administrateur** de l’espace de travail que vous avez créé. Vous pouvez gérer cette tâche par le biais des [API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) ou à l’aide du service Power BI.
+5. Ajoutez le principal de service comme **administrateur** de l’espace de travail que vous avez créé. Vous pouvez gérer cette tâche via des [API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) ou avec le service Power BI.
+
+    ![Ajouter un principal du service à un espace de travail](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Choisissez à présent d’incorporer votre contenu dans un exemple d’application ou dans votre propre application.
 
@@ -171,6 +173,7 @@ Voici un exemple de script pour récupérer l’ID objet du principal de service
 * Il est impossible d’installer ou de gérer une passerelle de données locale à l’aide d’un principal de service.
 * Les applications [incorporant du contenu pour votre organisation](embed-sample-for-your-organization.md) ne peuvent pas utiliser un principal de service.
 * La gestion de [flux de données](../service-dataflows-overview.md) n’est pas prise en charge.
+* Le principal du service ne prend pas en charge les API d’administration.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

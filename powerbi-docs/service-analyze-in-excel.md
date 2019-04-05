@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 20faef99f710ebbc3eacebe15b5101726b895688
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da6ec79a821e7aa9659843d0461ca6ac0b11706d
+ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279276"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58914164"
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
-Vous pouvez utiliser Excel pour afficher et interagir avec un jeu de données Power BI. L’option qui permet cela se nomme **Analyser dans Excel**. Cette option permet également d’accéder aux fonctionnalités de segments, de graphiques et de tableaux croisés dynamiques d’Excel, selon le jeu de données qui se trouve dans Power BI.
+Vous pouvez utiliser Excel pour afficher un jeu de données Power BI et interagir avec celui-ci. L’option qui permet cela se nomme **Analyser dans Excel**. Cette option permet également d’accéder aux fonctionnalités de segments, de graphiques et de tableaux croisés dynamiques d’Excel, selon le jeu de données qui se trouve dans Power BI.
 
 ## <a name="requirements"></a>Configuration requise
 Il existe certaines conditions à l’utilisation de l’option **Analyser dans Excel** :
@@ -27,7 +27,8 @@ Il existe certaines conditions à l’utilisation de l’option **Analyser dans 
 * **Analyser dans Excel** est compatible avec Microsoft Excel 2010 SP1 et versions ultérieures.
 * Les tableaux croisés dynamiques d’Excel ne prennent pas en charge l’agrégation des champs numériques en mode glisser-déposer. Des *mesures doivent être prédéfinies* pour votre jeu de données dans Power BI.
 * Certaines organisations appliquent des règles de stratégie de groupe qui empêchent l’installation des mises à jour requises relatives à l’option **Analyser dans Excel**. Si vous ne parvenez pas à installer les mises à jour, contactez votre administrateur.
-* **Analyser dans Excel** requiert une licence Pro. Pour plus d’informations sur les différences de fonctionnalités entre les différents types de licences, consultez [Fonctionnalités Power BI par type de licence](service-features-license-type.md). 
+* **Analyser dans Excel** nécessite que le jeu de données soit dans Power BI Premium ou que l’utilisateur dispose d’une licence Power BI Pro. Pour plus d’informations sur les différences de fonctionnalités entre les différents types de licences, consultez [Fonctionnalités Power BI par type de licence](service-features-license-type.md). 
+* Les utilisateurs peuvent se connecter aux jeux de données via Analyser dans Excel s’ils disposent d’une autorisation d’accès en lecture sur le jeu de données sous-jacent.  Un utilisateur peut l’obtenir de plusieurs façons, par exemple en étant membre de l’espace de travail contenant le jeu de données, en bénéficiant du partage d’un rapport ou tableau de bord qui utilise le jeu de données ou en ayant l’autorisation d’accès à une application qui contient le jeu de données.
 
 ## <a name="how-does-it-work"></a>Comment ça marche ?
 Quand vous sélectionnez **Analyser dans Excel** à partir du bouton de sélection (...) associé à un groupe de données ou à un rapport dans **Power BI**, Power BI crée un fichier .ODC et le télécharge sur votre ordinateur à partir du navigateur.
@@ -100,4 +101,4 @@ Quand un utilisateur avec lequel vous avez partagé votre classeur ouvre celui-c
 Étant donné que les utilisateurs doivent actualiser le jeu de donnée et que l’actualisation n’est pas prise en charge dans Excel Online pour les connexions externes, il est recommandé d’ouvrir le classeur dans une version de bureau d’Excel.
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
-Il peut arriver que vous obteniez un résultat inattendu lors de l’utilisation de la fonctionnalité Analyser dans Excel, ou que la fonctionnalité ne fonctionne pas comme prévu. [Cette page offre des résolutions communes des problèmes associés à l’utilisation de Analyser dans Excel](desktop-troubleshooting-analyze-in-excel.md)
+Il peut arriver que vous obteniez un résultat inattendu lors de l’utilisation de la fonctionnalité Analyser dans Excel, ou que la fonctionnalité ne fonctionne pas comme prévu. [Cette page fournit des solutions pour les problèmes courants lors de l’utilisation de la fonctionnalité Analyser dans Excel](desktop-troubleshooting-analyze-in-excel.md)

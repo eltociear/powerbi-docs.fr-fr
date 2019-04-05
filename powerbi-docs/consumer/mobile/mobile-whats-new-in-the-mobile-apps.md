@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 7c17d41d4278c292e494fe6f7203a32d93f2714d
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826718"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872728"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,16 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="march-2019"></a>Mars 2019
+
+### <a name="supporting-external-guest-users-in-power-bi-apps-ios-android"></a>Prise en charge des utilisateurs invités externes dans les applications Power BI, (iOS, Android)
+
+Vous pouvez accéder au contenu Power BI partagé avec vous à partir d’une autre organisation directement à partir de l’application (également appelée B2B). Apprenez-en davantage sur les applications mobiles Power BI B2B [ici](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/).
+
+### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Amélioration du mode de présentation Windows avec diaporama (Windows)
+
+Avec un [diaporama](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/), vous pouvez utiliser les écrans publics de votre bureau pour exécuter les rapports Power BI en mode plein écran avec une rotation automatique entre les pages de rapport.  
 
 ## <a name="january---february-2019"></a>Janvier - février 2019
  
@@ -117,7 +127,7 @@ L’authentification unique (SSO) est l’une des fonctionnalités les plus dema
 
 Vous pouvez maintenant recevoir des rapports avec des filtres et des segments partagés.
 
-**Prise en charge des images d'arrière-plan**
+**Prise en charge des images d’arrière-plan**
 
 Quand vous voyez un rapport en mode paysage sur votre appareil mobile, vous voyez les mêmes images d'arrière-plan que dans Power BI sur le web.
 
@@ -316,7 +326,7 @@ Si vous scannez un code QR pour un tableau de bord auquel vous n’avez pas acc�
 Vous pouvez désormais faire défiler des graphiques à barres et à colonnes dans un rapport en touchant le graphique, au lieu de toucher la barre de défilement sur le côté.
 
 #### <a name="ios-devices"></a>Appareils iOS
-**Poser des questions sur vos données avec une version préliminaire de Questions/Réponses** 
+**Poser des questions sur vos données avec une préversion de Questions/Réponses** 
 
 Questions/Réponses vous permet de poser des questions concernant vos données avec vos propres mots. Power BI fournit les réponses. Questions/Réponses est déjà disponible dans le service Power BI sur http://powerbi.com. À présent, il est également [disponible dans l’application mobile sur votre iPhone ou iPad](mobile-apps-ios-qna.md).
 
@@ -352,7 +362,7 @@ Lisez le [résumé des fonctionnalités de janvier 2017 sur le blog dédié aux 
 Lisez le [résumé des fonctionnalités de décembre 2016 sur le blog dédié aux applications mobiles](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-december-2016).
 
 #### <a name="all-devices"></a>Tous les appareils
-**Actualisation hors connexion en arrière-plan**
+**Actualisation en arrière-plan hors connexion**
 
 Pour nous assurer que vous pouvez accéder à vos données les plus récentes en mode hors connexion, nous effectuons une actualisation en arrière-plan de l’application afin que les informations de votre entreprise soient à jour, même si vous n’y accédez pas pendant un certain temps. Pour vous assurer que certains tableaux de bord soient toujours à jour, marquez-les comme favoris. Accédez à des informations supplémentaires sur les [fonctionnalités hors connexion dans les applications mobiles Power BI](mobile-apps-offline-data.md).
 
@@ -377,7 +387,7 @@ Si une vignette d’image a une URL personnalisée définie par le propriétaire
 
 Vous pouvez maintenant actualiser les données de l’Apple Watch directement à partir de l’application Watch. Dans la page d’index du tableau de bord, appuyez longuement pour actualiser vos données. Pour que cela fonctionne, l’application mobile Power BI doit s’exécuter en arrière-plan sur un iPhone.
 
-#### <a name="android"></a>Android
+#### <a name="android"></a>Téléphone
 **URL personnalisée sur une vignette d’image**
 
 Si une vignette d’image a une URL personnalisée définie par le propriétaire du tableau de bord, lorsque vous appuyez sur la vignette, vous accédez directement à cette URL sans ouvrir la vignette en mode focus. En outre, les vignettes de tableau de bord contenant des URL personnalisées prédéfinies peuvent maintenant rediriger les lecteurs vers les rapports au sein de l’application.
