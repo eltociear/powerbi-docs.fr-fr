@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 7f919234f7635c76ce50d0bfffa393498f141da8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 340b4d26b8beed4dfda5f7af4dc949088f3857ae
+ms.sourcegitcommit: d2805894fd372c35e11d519f724de2be98407fda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324389"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59070019"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Créer une source de données incorporée pour rapports paginés dans le service Power BI (préversion)
 
@@ -22,7 +22,8 @@ Dans cet article, vous apprendrez à créer et à modifier une source de donnée
 
 - Azure SQL Database et Data Warehouse
 - SQL Server
-- SQL Server Analysis Services 
+- SQL Server Analysis Services
+- Azure Analysis Services
 
 Les rapports paginés se connecter aux sources de données locales par le biais d’une passerelle. Vous configurez la passerelle après avoir publié le rapport sur le service Power BI. En savoir plus sur les [passerelles Power BI](service-gateway-getting-started.md). 
 
@@ -61,4 +62,4 @@ Les rapports paginés se connecter aux sources de données locales par le biais 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Créer un jeu de données incorporé pour un rapport paginé dans le service Power BI](paginated-reports-create-embedded-dataset.md)
-- [Présentation des rapports paginés dans Power BI Premium (préversion)](paginated-reports-report-builder-power-bi.md)
+- [Présentation des rapports paginés dans Power BI Premium (Préversion)](paginated-reports-report-builder-power-bi.md)
