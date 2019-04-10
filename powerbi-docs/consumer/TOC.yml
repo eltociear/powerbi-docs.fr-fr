@@ -61,6 +61,8 @@ items:
         href: ../power-bi-visualizations-arcgis.md
     - name: Tâches communes
       items:
+      - name: Exporter des données vers Excel
+        href: end-user-export.md
       - name: Rechercher le propriétaire du contenu et la date de la dernière actualisation
         href: end-user-fresh.md
       - name: Différentes façons de zoomer sur du contenu à l’aide des modes focus et plein écran
@@ -81,7 +83,7 @@ items:
         href: end-user-search-sort.md
       - name: Afficher des insights automatiques pour les vignettes de tableau de bord
         href: end-user-insights.md
-    - name: Obtenir des données
+    - name: Obtenir les données
       items:
       - name: Applications dans Power BI
         href: end-user-apps.md
@@ -137,6 +139,8 @@ items:
         href: mobile/mobile-tiles-in-the-mobile-apps.md
       - name: Favoris dans les applications mobiles
         href: mobile/mobile-apps-favorites.md
+      - name: Configurer l’interaction avec les rapports dans les applications mobiles (téléphone uniquement)
+        href: mobile/mobile-app-single-tap.md
       - name: Définir des alertes de données dans les applications mobiles Power BI
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: Obtenir des notifications dans les applications mobiles Power BI
@@ -175,6 +179,8 @@ items:
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
       - name: Afficher les rapports optimisés pour votre téléphone
         href: mobile/mobile-apps-view-phone-report.md
+      - name: Accéder au contenu depuis une organisation externe
+        href: mobile/mobile-apps-b2b.md
       - name: Scanner un code QR Power BI à partir de votre téléphone
         href: mobile/mobile-apps-qr-code.md
       - name: Annoter et partager dans les applications mobiles
@@ -195,9 +201,9 @@ items:
     items:
     - name: Langues prises en charge dans les applications mobiles
       href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: e32baf6ff64b485b1be29dea76bcbe864d2cdc59
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 6f9f080de3711a6a1a28f49da0298a67932d87e5
+ms.sourcegitcommit: c0add3d749f7e714e23824a742e105e694e4c129
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248973"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59430279"
