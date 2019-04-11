@@ -240,6 +240,8 @@ items:
         href: desktop-what-if.md
       - name: Utiliser l’extraction
         href: desktop-drillthrough.md
+      - name: Utiliser l’extraction interrapport
+        href: desktop-cross-report-drill-through.md
       - name: Utiliser un segment et un filtre de date relative
         href: visuals/desktop-slicer-filter-date-range.md
       - name: Utiliser le regroupement et le compartimentage
@@ -278,6 +280,8 @@ items:
         href: power-bi-hyperlinks-in-tables.md
       - name: Mise en forme conditionnelle des tables
         href: desktop-conditional-table-formatting.md
+      - name: Mise en forme conditionnelle des titres basée sur des expressions
+        href: desktop-conditional-format-visual-titles.md
       - name: Trier par colonne dans Power BI Desktop
         href: desktop-sort-by-column.md
       - name: Créer des rapports optimisés pour les applications mobiles
@@ -1331,9 +1335,9 @@ items:
       href: service-admin-governance.md
     - name: Sécurité dans Power BI
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a804129b06b4eb92e67ae18251cbb9f950fe1beb
-ms.sourcegitcommit: ce59fa2b49658d67a2cbc77f81c53a8266a34e36
+ms.openlocfilehash: 5943c0bb07142be76241c2d4ed415920c99bc382
+ms.sourcegitcommit: 42892c281c7b1682a02efb3613fc1a75530c4830
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59053435"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59479285"
