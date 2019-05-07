@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: 5af870bfd3cb6f9c925dd3d6268d0a1cb54df09b
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: c0cc6b19e69ebe6400d25b77c15cf577d765c415
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "65201175"
 ---
 # <a name="whitepapers-for-power-bi"></a>Livres blancs pour Power BI
 
@@ -24,12 +24,12 @@ Les livres blancs vous permettent d’explorer Power BI de façon plus approfond
 | --- | --- | --- |
 | [Power BI et flux de données](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Ce livre blanc présente les détails techniques des flux de données et décrit les fonctionnalités et les initiatives qui soutiennent les fonctionnalités des flux de données. | Novembre 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Décrit Power BI Premium, tel qu’il existe à son lancement et tel qu’il évoluera. | Octobre 2017 |
-| [Planification et déploiement de Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment)| Ce document fournit des conseils et meilleures pratiques concernant la planification et le déploiement de la capacité Premium pour les charges de travail bien définies.| Novembre 2017 |
+| [Planification et déploiement de Power BI Premium](whitepaper-powerbi-premium-deployment.md)| Ce document fournit des conseils et meilleures pratiques concernant la planification et le déploiement de la capacité Premium pour les charges de travail bien définies.| Mars 2019 |
 | [Planifier la capacité pour l’analytique incorporée avec Power BI Premium](https://aka.ms/pbiewhitepaper) |Ce document fournit des conseils pour les développeurs d’applications ou les éditeurs de logiciels afin de déterminer la capacité plus appropriée pour l’entreprise. | Octobre 2017 |
 | [Planification d’un déploiement de Power BI en entreprise](https://go.microsoft.com/fwlink/?linkid=2057861) |Ce livre blanc technique met en avant les considérations relatives à un déploiement de Power BI performant et sécurisé au sein d’une organisation. | Juillet 2018 |
 | [Conseils sur la planification de la capacité de Power BI Report Server](report-server/capacity-planning.md) |Ce document propose des conseils sur la planification de la capacité de Power BI Report Server en partageant les résultats de plusieurs exécutions de test de charge de différentes charges de travail exécutées sur un serveur de rapports. | Mars 2018 |
 | [Sécurité](service-admin-power-bi-security.md) |Fournit une explication détaillée concernant la sécurité au sein de Power BI. | Mars 2019 |
-| [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](whitepaper-azure-b2b-power-bi.md)|Ce document décrit comment distribuer du contenu à des utilisateurs externes à l’organisation en utilisant l’intégration d’Azure Active Directory B2B (AAD B2B).| Mars 2018 |
+| [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](whitepaper-azure-b2b-power-bi.md)|Ce document décrit comment distribuer du contenu à des utilisateurs externes à l’organisation en utilisant l’intégration d’Azure Active Directory B2B (AAD B2B).| Mars 2019 |
 | [Analytique avancée avec Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Décrit les fonctionnalités analytiques avancées de Power BI, y compris l’analyse prédictive, les visualisations personnalisées, l’intégration de R et les expressions d’analyse de données. | Février 2017 |
 | [Meilleures pratiques en matière de conception de visuels et de rapports](visuals/power-bi-visualization-best-practices.md) |Présente le meilleures pratiques en matière de conception de rapports dans Power BI. | Juin 2018 |
 | [Filtrage bidirectionnel](desktop-bidirectional-filtering.md) |Décrit le filtrage croisé bidirectionnel dans Power BI Desktop (ce livre blanc aborde également SQL Server Analysis Services 2016, tous les deux ayant le même comportement). | Juillet 2018 |
