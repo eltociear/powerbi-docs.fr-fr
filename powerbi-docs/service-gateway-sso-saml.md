@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 91a4cf3ff4fef4530c7c45712a86419298da53f4
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: 3c9fd8877347ad0eebf7db059cc791583c89f353
+ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306501"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533701"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser SAML (Security Assertion Markup Language) pour l’authentification unique (SSO) de Power BI sur des sources de données locales
 
@@ -75,7 +75,7 @@ Le certificat de fournisseur d’identité obtenu est valide pendant un an (voir
 
     ![Configurer SAML](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Sélectionnez le fournisseur d’identité que vous avez créé à l’étape 2. Pour **External Identity** (Identité externe), entrez l’UPN de l’utilisateur Power BI, puis sélectionnez **Add** (Ajouter).
+1. Sélectionnez le fournisseur d’identité que vous avez créé à l’étape 2. Pour **identité externe**, entrez l’UPN de l’utilisateur de Power BI (en général, l’adresse de messagerie l’utilisateur se connecte à Power BI avec), puis sélectionnez **ajouter**. Notez que si vous avez configuré votre passerelle pour utiliser l’option de configuration ADUserNameReplacementProperty vous devez entrer la valeur qui remplacera l’UPN d’origine de l’utilisateur de Power BI. Par exemple, si vous définissez le ADUserNameReplacementProperty sur SAMAccountName vous devez entrer SAMAccountName de l’utilisateur.
 
     ![Sélectionner le fournisseur d’identité](media/service-gateway-sso-saml/select-identity-provider.png)
 
@@ -179,7 +179,7 @@ Les traces d’authentification fournissent des informations détaillées pour r
 
 Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, voir les ressources suivantes :
 
-* [Passerelle de données locale](service-gateway-onprem.md)
+* [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)
 * [DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery et SAP BW](desktop-directquery-sap-bw.md)
