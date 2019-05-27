@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
+ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
+ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225957"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65941439"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relations avec une cardinalité plusieurs à plusieurs dans Power BI Desktop
 
@@ -25,7 +25,7 @@ La fonctionnalité des *relations avec une cardinalité plusieurs à plusieurs* 
 
 La fonctionnalité des *relations avec une cardinalité plusieurs à plusieurs* dans Power BI Desktop fait partie d’un groupe de trois fonctionnalités connexes :
 
-* **Modèles composites** : Permet à un rapport d’avoir deux connexions de données ou plus, y compris des connexions provenant de DirectQuery ou d’une importation, dans toutes les combinaisons. Pour plus d’informations, consultez [Modèles composites dans Power BI Desktop (préversion)](desktop-composite-models.md).
+* **Modèles composites** : Permet à un rapport d’avoir deux connexions de données ou plus, y compris des connexions provenant de DirectQuery ou d’une importation, dans toutes les combinaisons. Pour plus d’informations, consultez [Modèles composites dans Power BI Desktop](desktop-composite-models.md).
 
 * **Relations avec une cardinalité plusieurs à plusieurs** : Avec les *modèles composites*, vous pouvez établir des *relations avec une cardinalité plusieurs à plusieurs* entre les tables. Cette approche supprime la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement précédentes, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. La fonctionnalité est décrite en détail dans cet article.
 
@@ -157,7 +157,7 @@ Les limitations existantes sur l’utilisation de DirectQuery s’appliquent enc
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur les modèles composites et DirectQuery, consultez les articles suivants :
-* [Modèles composites dans Power BI Desktop (préversion)](desktop-composite-models.md)
+* [Modèles composites dans Power BI Desktop](desktop-composite-models.md)
 * [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md)
 * [Utiliser DirectQuery dans Power BI Desktop](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery dans Power BI Desktop](desktop-directquery-data-sources.md)

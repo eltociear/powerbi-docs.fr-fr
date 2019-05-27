@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/14/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c45900d98dfa25dd991ae0cee1f165a41964c51e
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: af227d2bcbbba2a27804ec74f14003f54aa89dde
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324765"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65514670"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Utilisation de SAP BW Connector dans Power BI Desktop
 Avec Power BI Desktop, vous pouvez accéder aux données **SAP BusinessWarehouse (BW)**.
@@ -227,17 +227,17 @@ Le tableau suivant détaille la prise en charge actuelle de SAP BW.
 
 |Produit  |Mode  |Authentification  |Connecteur  |Bibliothèque SNC  |Pris en charge  |
 |---------|---------|---------|---------|---------|---------|
-|Power BI Desktop     |N'importe quel(le)         | Utilisateur / mot de passe  | Serveur d’applications | N/A  | Oui  |
+|Power BI Desktop     |N'importe quel(le)         | Utilisateur / mot de passe  | Serveur d’applications | Non applicable  | Oui  |
 |Power BI Desktop     |N'importe quel(le)         | Windows          | Serveur d’applications | sapcrypto + gsskrb5/gx64krb5  | Oui  |
 |Power BI Desktop     |N'importe quel(le)         | Windows par le biais de l’emprunt d’identité | Serveur d’applications | sapcrypto + gsskrb5/gx64krb5  | Oui  |
-|Power BI Desktop     |N'importe quel(le)         | Utilisateur / mot de passe        | Serveur de messages | N/A  | Oui  |
+|Power BI Desktop     |N'importe quel(le)         | Utilisateur / mot de passe        | Serveur de messages | Non applicable  | Oui  |
 |Power BI Desktop     |N'importe quel(le)         | Windows        | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Oui  |
 |Power BI Desktop     |N'importe quel(le)         | Windows par le biais de l’emprunt d’identité | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Oui  |
 |Power BI Gateway     |Importer      | Identique à Power BI Desktop |         |   |   |
-|Power BI Gateway     |DirectQuery | Utilisateur / mot de passe        | Serveur d’applications | N/A  | Oui  |
+|Power BI Gateway     |DirectQuery | Utilisateur / mot de passe        | Serveur d’applications | Non applicable  | Oui  |
 |Power BI Gateway     |DirectQuery | Windows par le biais de l’emprunt d’identité (utilisateur fixe, pas d’authentification SSO) | Serveur d’applications | sapcrypto + gsskrb5/gx64krb5  | Oui  |
 |Power BI Gateway     |DirectQuery | Utiliser SSO via Kerberos pour l’option des requêtes DirectQuery | Serveur d’applications | *uniquement avec* gsskrb5/gx64krb5   | Oui  |
-|Power BI Gateway     |DirectQuery | Utilisateur / mot de passe        | Serveur de messages | N/A  | Oui  |
+|Power BI Gateway     |DirectQuery | Utilisateur / mot de passe        | Serveur de messages | Non applicable  | Oui  |
 |Power BI Gateway     |DirectQuery | Windows par le biais de l’emprunt d’identité (utilisateur fixe, pas d’authentification SSO) | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Oui  |
 |Power BI Gateway     |DirectQuery | Utiliser SSO via Kerberos pour l’option des requêtes DirectQuery | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Non  |
 

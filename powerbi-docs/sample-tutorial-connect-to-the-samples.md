@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 63924dd4769b4ce452d2d8de4252228bb6d37d37
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 846f783e2a022504f192cf0c03179ce3f3c00e22
+ms.sourcegitcommit: 1dfabc8596ec2eb66ccccceb11419361f704b607
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275545"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65625074"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Se connecter aux exemples dans le service Power BI
 
@@ -78,7 +78,7 @@ Lorsque vous sélectionnez **Se connecter** en utilisant un exemple de pack de c
     ![page de rapport avec visuel correspondant mis en évidence](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Si la vignette est créée à l’aide de [Questions et réponses Power BI](consumer/end-user-q-and-a.md), c’est la page Questions et réponses qui s’ouvre. Si la vignette a été [épinglée à partir d’Excel](service-dashboard-pin-tile-from-excel.md), c’est Excel Online qui s’ouvre dans Power BI.
+   > Si la vignette est créée à l’aide de [Questions et réponses Power BI](power-bi-tutorial-q-and-a.md), c’est la page Questions et réponses qui s’ouvre. Si la vignette a été [épinglée à partir d’Excel](service-dashboard-pin-tile-from-excel.md), c’est Excel Online qui s’ouvre dans Power BI.
    > 
    > 
 1. Revenez à votre onglet **Jeux de données**. Vous disposez de plusieurs options pour l’exploration de votre jeu de données.  Vous ne pouvez pas l’ouvrir et afficher toutes ses lignes et colonnes (comme dans Power BI Desktop ou Excel).  Lorsqu’un utilisateur partage un pack de contenu avec des collègues, il souhaite généralement partager des insights, et non permettre à ses collègues d’accéder directement aux données. Mais vous pouvez tout de même explorer le jeu de données.  
@@ -129,11 +129,9 @@ Explorez à présent le jeu de données, les relations et le rapport par vous-m�
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Power BI - Concepts de base](consumer/end-user-basic-concepts.md)
 
-[Exemples pour le service Power BI](sample-datasets.md)
-
-[Sources de données pour Power BI](service-get-data.md)
+- [Power BI - Concepts de base](consumer/end-user-basic-concepts.md)
+- [Exemples pour le service Power BI](sample-datasets.md)
+- [Sources de données pour Power BI](service-get-data.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

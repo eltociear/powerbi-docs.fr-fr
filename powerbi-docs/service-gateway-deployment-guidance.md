@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
+ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279846"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66051160"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Conseils relatifs au déploiement d’une passerelle de données pour Power BI
 
@@ -42,7 +42,7 @@ Dans la mesure où **Power BI** n’autorise qu’*une* seule passerelle par *ra
 ### <a name="connection-type"></a>Type de connexion
 **Power BI** propose deux types de connexion : **DirectQuery** et **Importer**. Certaines sources de données ne prennent pas en charge ces deux types de connexion, et vous pouvez être amené à choisir l’un plutôt que l’autre pour différentes raisons (exigences de sécurité, performances, limites de données, taille des modèle de données, etc.). Pour en savoir plus sur le type de connexion et sur les sources de données prises en charge, consultez la section *Liste des types de sources de données disponibles* de l’article [Passerelle de données locale](service-gateway-onprem.md).
 
-Selon le type de connexion, l’utilisation de la passerelle peut être différente. Par exemple, dans la mesure du possible, vous devez tenter de séparer les sources de données **DirectQuery** des sources de données **Actualisation planifiée** (si elles se trouvent dans des rapports différents et qu’elles peuvent être séparées). Vous éviterez ainsi la mise en file d’attente de milliers de requêtes DirectQuery dans la passerelle au moment de l’actualisation matinale planifiée d’un modèle de données volumineux utilisé pour le tableau de bord principal de l’entreprise. Voici les éléments à prendre en compte pour les deux types de sources de données :
+Selon le type de connexion est utilisé, l’utilisation de la passerelle peut être différente. Par exemple, dans la mesure du possible, vous devez tenter de séparer les sources de données **DirectQuery** des sources de données **Actualisation planifiée** (si elles se trouvent dans des rapports différents et qu’elles peuvent être séparées). Cela évite que la passerelle d’avoir des milliers de **DirectQuery** demandes en file d’attente, en même temps que l’actualisation planifiée d’un modèle de données de grande taille qui est utilisé pour le tableau de bord principal de la société du matin. Voici les éléments à prendre en compte pour les deux types de sources de données :
 
 * Pour l’**Actualisation planifiée** : selon la taille de vos requêtes et le nombre d’actualisations quotidiennes, vous pouvez vous en tenir à la configuration matérielle minimale recommandée ou procéder à une mise à niveau vers un ordinateur plus performant. Si une requête donnée n’est pas traitée, des transformations interviennent sur l’ordinateur passerelle, d’où la nécessité de disposer d’une mémoire RAM suffisante sur celui-ci.
 * Pour **DirectQuery** : une requête est envoyée chaque fois qu’un utilisateur ouvre le rapport ou examine des données. Par conséquent, si vous savez que plus de 1 000 utilisateurs risquent d’accéder simultanément aux données, veillez à ce que les composants matériels de votre ordinateur soient suffisamment robustes et fiables. Dans le cadre d’une connexion **DirectQuery**, un nombre accru de cœurs d’UC offre un meilleur débit.
