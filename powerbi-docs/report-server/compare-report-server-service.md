@@ -2,20 +2,20 @@
 title: Comparer Power BI Report Server et le service Power BI
 description: Cet article compare les fonctionnalités de Power BI Report Server et du service Power BI.
 keywords: ''
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 02/06/2019
-ms.openlocfilehash: ba10e13062e4071e5afcc5d395836c96ed1401fd
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.date: 05/22/2019
+ms.openlocfilehash: c4254420ae949b1fae6a1407cd045589c23da3c8
+ms.sourcegitcommit: bccbfc278ae85615dcfb7791d89e071a43d1ae23
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327915"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66187685"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparer Power BI Report Server et le service Power BI
 
@@ -38,7 +38,7 @@ Power BI Report Server et le service Power BI ont de nombreuses similitudes et q
 | Distribuer un groupe de rapports à l’aide d’applications | Non | Oui | [Créer et publier des applications avec des tableaux de bord et des rapports](../service-create-distribute-apps.md) |
 | Packs de contenu | Non | Oui | [Packs de contenu d’organisation : Introduction](../service-organizational-content-pack-introduction.md) |
 | Se connecter à des services comme Salesforce | Oui | Oui | [Se connecter aux services que vous utilisez](../service-connect-to-services.md) avec des packs de contenu dans le service Power BI. Dans Power BI Report Server, utilisez des connecteurs certifiés pour vous connecter à des services. Pour plus d’informations, consultez [Sources de données de rapport Power BI dans Power BI Report Server](data-sources.md). |
-| Questions et réponses | Non | Oui | [Questions et réponses dans Power BI Desktop et le service Power BI](../consumer/end-user-q-and-a.md) 
+| Questions et réponses | Non | Oui | [Questions et réponses dans Power BI Desktop et le service Power BI](../power-bi-tutorial-q-and-a.md) 
 | Informations rapides | Non | Oui | [Générer automatiquement des informations sur les données avec Power BI](../consumer/end-user-insights.md) |
 | Analyser dans Excel | Non | Oui | [Analyser dans Excel](../service-analyze-in-excel.md) 
 | Rapports paginés | Oui | Oui | [Les rapports paginés sont disponibles dans le service Power BI](../paginated-reports-report-builder-power-bi.md) en préversion dans une capacité Premium |

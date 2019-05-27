@@ -12,23 +12,24 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 ms.author: mihart
-ms.openlocfilehash: 84ce069913b1c262ce4e91138f8496cf3f19dddd
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: babdcebcdbc45ce3f7f737785ca4becab50cb3be
+ms.sourcegitcommit: 187f306438d53ba8742db2c7a5532f1acc81fa36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280118"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65608266"
 ---
-<!-- once the sample aps are live, change this so consumers can follow along -->
+<!-- once the sample apps are live, change this so consumers can follow along -->
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Démarrage rapide : Découvrir les fonctionnalités de Power BI pour les ***consommateurs***
 Dans ce démarrage rapide, vous allez apprendre à interagir avec Power BI pour découvrir des insights d’entreprise pilotés par les données. Cet article n’est pas destiné à aller au fond des choses. Il brosse en revanche un tableau rapide de la plupart des actions accessibles aux **consommateurs** de Power BI.
 
 Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
 ## <a name="prerequisites"></a>Conditions préalables
-- Service Power BI (app.powerbi.com) <!-- app from AppSource -->
+- Service Power BI (app.powerbi.com)
+<!-- app from AppSource -->
 
 ## <a name="reading-view"></a>Mode Lecture
 Le Mode Lecture est accessible dans le service Power BI aux *utilisateurs* de rapports. Quand un collègue partage un rapport avec vous, le Mode Lecture vous permet d’explorer et d’interagir avec ce rapport. 
@@ -185,7 +186,7 @@ Une visualisation Power BI se construit à l’aide des données des jeux de do
 1. Dans le service Power BI, ouvrez un rapport, puis sélectionnez un visuel.  
 2. Pour afficher les données sous-jacentes du visuel, sélectionnez les points de suspension (…), puis choisissez **Afficher les données**.
    
-   ![sélectionner Afficher les données](./media/end-user-show-data/power-bi-show-data2.png)
+   ![sélectionner Afficher les données](./media/end-user-show-data/power-bi-explore-show-data.png)
 
 Nous vous avons présenté une vue d’ensemble rapide de certaines des fonctionnalités du service Power BI que peuvent utiliser les **consommateurs**.  
 

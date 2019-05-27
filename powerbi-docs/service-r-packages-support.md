@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e74b0399ffdf2b5ca79eecb6451ccd676c1095db
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 86432033359b24dbae81f9ff5ec1bceb3ea1a2e6
+ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296710"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65514850"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>Packages R dans le service Power BI
 Vous pouvez utiliser le puissant [langage de programmation R](https://www.r-project.org/) pour créer des visuels dans le service Power BI. De nombreux packages R sont pris en charge dans le service Power BI (et bien plus encore sont pris en charge tout le temps), mais certains packages ne le sont pas.
@@ -109,7 +109,7 @@ Le tableau suivant indique les packages **pris en charge** dans le service Power
 |blob| 1.1.0| https://cran.r-project.org/web/packages/blob/index.html |
 |BLR|1.4| https://cran.r-project.org/web/packages/BLR/index.html |
 |BMA| 3.18.7| https://cran.r-project.org/web/packages/BMA/index.html |
-|Bmix|0.6| https://cran.r-project.org/web/packages/Bmix/index.html |
+|Bmix|0,6| https://cran.r-project.org/web/packages/Bmix/index.html |
 |BMS| 0.3.4| https://cran.r-project.org/web/packages/BMS/index.html |
 |bnlearn|4.2| https://cran.r-project.org/web/packages/bnlearn/index.html |
 |boa| 1.1.8-2| https://cran.r-project.org/web/packages/boa/index.html |
@@ -374,7 +374,7 @@ Le tableau suivant indique les packages **pris en charge** dans le service Power
 |HH| 3.1-34| https://cran.r-project.org/web/packages/HH/index.html |
 |HI|0.4| https://cran.r-project.org/web/packages/HI/index.html |
 |highcharter| 0.5.0| https://cran.r-project.org/web/packages/highcharter/index.html |
-|highr|0.6| https://cran.r-project.org/web/packages/highr/index.html |
+|highr|0,6| https://cran.r-project.org/web/packages/highr/index.html |
 |HistData| 0.8-1| https://cran.r-project.org/web/packages/HistData/index.html |
 |Hmisc| 4.0-3| https://cran.r-project.org/web/packages/Hmisc/index.html |
 |hms|0.3| https://cran.r-project.org/web/packages/hms/index.html |
@@ -732,7 +732,7 @@ Le tableau suivant indique les packages **pris en charge** dans le service Power
 |Rsolnp|1.16| https://cran.r-project.org/web/packages/Rsolnp/index.html |
 |RSQLite|2| https://cran.r-project.org/web/packages/RSQLite/index.html |
 |rstan| 2.16.2| https://cran.r-project.org/web/packages/rstan/index.html |
-|rstudioapi|0.6| https://cran.r-project.org/web/packages/rstudioapi/index.html |
+|rstudioapi|0,6| https://cran.r-project.org/web/packages/rstudioapi/index.html |
 |RTextTools| 1.4.2| https://cran.r-project.org/web/packages/RTextTools/index.html |
 |RUnit| 0.4.26| https://cran.r-project.org/web/packages/RUnit/index.html |
 |RUnit| 0.4.31| https://cran.r-project.org/web/packages/RUnit/index.html |
@@ -830,7 +830,7 @@ Le tableau suivant indique les packages **pris en charge** dans le service Power
 |svglite| 1.2.1| https://cran.r-project.org/web/packages/svglite/index.html |
 |svmpath|0.955| https://cran.r-project.org/web/packages/svmpath/index.html |
 |svUnit| 0.7-12| https://cran.r-project.org/web/packages/svUnit/index.html |
-|sysfonts|0.6| https://cran.r-project.org/web/packages/sysfonts/index.html |
+|sysfonts|0,6| https://cran.r-project.org/web/packages/sysfonts/index.html |
 |tau| 0.0-19| https://cran.r-project.org/web/packages/tau/index.html |
 |tcltk| 3.4.1| N/A|
 |tcltk2| 1.2-11| https://cran.r-project.org/web/packages/tcltk2/index.html |
@@ -905,7 +905,7 @@ Le tableau suivant indique les packages **pris en charge** dans le service Power
 |viridis| 0.4.0| https://cran.r-project.org/web/packages/viridis/index.html |
 |viridisLite| 0.2.0| https://cran.r-project.org/web/packages/viridisLite/index.html |
 |visNetwork| 2.0.1| https://cran.r-project.org/web/packages/visNetwork/index.html |
-|webutils|0.6| https://cran.r-project.org/web/packages/webutils/index.html |
+|webutils|0,6| https://cran.r-project.org/web/packages/webutils/index.html |
 |weights|0.85| https://cran.r-project.org/web/packages/weights/index.html |
 |whisker| viridis| CRAN|
 |whisker| digest| rstudioapi (>= 0.2.0)|

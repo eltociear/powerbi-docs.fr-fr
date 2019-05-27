@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 58ed43768d563adfe3012e030d2c8bb795909380
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9d884df7fdfa6d0f16e7963c00a1100186d70546
+ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292427"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65239497"
 ---
 # <a name="using-buttons-in-power-bi"></a>Utilisation des boutons dans Power BI
 En utilisant les **boutons** de Power BI, vous pouvez créer des rapports et des tableaux de bord qui se comportent comme des applications et donc créer un environnement plus interactif dans lequel les utilisateurs peuvent se déplacer, cliquer et interagir davantage avec le contenu Power BI. Vous pouvez ajouter des boutons aux rapports de **Power BI Desktop**et partager ou publier ces rapports dans le service Power BI pour créer des tableaux de bord qui offrent un comportement semblable à celui des applications pour les utilisateurs.
