@@ -1,5 +1,5 @@
 ---
-title: Paramètres d’affichage des pages et de mode Page pour un rapport
+title: Paramètres d’affichage de page dans un rapport Power BI
 description: Paramètres d’affichage des pages et de mode Page pour un rapport
 author: maggiesMSFT
 manager: kfile
@@ -8,61 +8,62 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 01e37d34c5a4914206056d19d888cace782ba8f4
-ms.sourcegitcommit: 15d4d4ea18014c64de77b01a5d79207589ba51fc
-ms.translationtype: HT
+ms.openlocfilehash: 8a96371d6cb54d47d412165ef179df78a34b8e19
+ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64906545"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412931"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Paramètres d’affichage de page dans un rapport Power BI
-Nous sommes conscients qu’il est essentiel de préserver la qualité de présentation de vos rapports. Cela n’est pas toujours évident, car vous et vos collègues consultez ces rapports sur des écrans de taille et de proportions différentes. 
+Nous sommes conscients qu’il est essentiel de maintenir la qualité de présentation de votre rapport parfait. Parfois, il peut être difficile, parce que vous et vos collègues peuvent afficher ces rapports sur les écrans avec des tailles et proportions différentes. 
 
-L’affichage par défaut est **Ajuster à la page** et la taille d’affichage par défaut est **16:9**. Si vous voulez verrouiller des proportions différentes ou présenter votre rapport d’une autre façon, deux outils peuvent vous y aider : les paramètres du ***mode Page*** et les paramètres ***Taille de la page***.
+L’affichage par défaut est **Ajuster à la page** et la taille d’affichage par défaut est **16:9**. Si vous voulez verrouiller des proportions différentes ou présenter votre rapport d’une autre façon, deux outils peuvent vous y aider : ***Affichage de la page*** paramètres et ***taille de la Page*** paramètres.
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
 
 
-## <a name="where-to-find-page-view-settings-in-power-bi-service-and-power-bi-desktop"></a>Emplacement des paramètres de mode Page dans le service Power BI et Power BI Desktop
-Les paramètres de mode Page sont disponibles aussi bien dans le service Power BI que dans Power BI Desktop, mais l’interface est un peu différente. Les deux sections suivantes expliquent où vous pouvez trouver des paramètres d’affichage dans chaque outil Power BI.
+## <a name="where-to-find-page-view-settings-in-the-power-bi-service-and-power-bi-desktop"></a>Où trouver les paramètres de mode Page dans le service Power BI et Power BI Desktop
+Paramètres de mode page sont disponibles dans le service Power BI et Power BI Desktop, mais l’interface est un peu différente. Les sections suivantes expliquent où vous pouvez trouver les paramètres d’affichage dans chaque outil Power BI.
 
 ### <a name="in-power-bi-desktop"></a>Dans Power BI Desktop
 En mode Rapport, sélectionnez l’onglet **Affichage** pour ouvrir les paramètres de mode Page, ainsi que les paramètres du mode téléphone.
 
-  ![volet sélection](media/power-bi-report-display-settings/power-bi-desktop-view-settings.png)
+  ![Paramètres d’affichage de page du bureau](media/power-bi-report-display-settings/power-bi-desktop-view-settings.png)
 
-### <a name="in-power-bi-service-apppowerbicom"></a>Dans le service Power BI (app.powerbi.com)
-Dans le service Power BI, ouvrez un rapport, puis sélectionnez **Affichage** à partir de la barre de menus supérieure gauche.
+### <a name="in-the-power-bi-service-apppowerbicom"></a>Dans le service Power BI (app.powerbi.com)
+Dans le service Power BI, ouvrez un rapport, puis sélectionnez **vue** à partir de la barre de menus supérieure gauche.
 
-![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
+![paramètres de mode page Service](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Les paramètres du mode Page sont disponibles à la fois en [mode Lecture et en mode Édition](consumer/end-user-reading-view.md). En mode Édition, le propriétaire d’un rapport peut affecter un paramètre de mode Page à certaines pages d’un rapport. Ces paramètres sont alors enregistrés avec le rapport. Quand un collègue ouvre ce rapport en mode Lecture, il voit les pages du rapport s’afficher avec les paramètres du propriétaire.  En mode Lecture, les collègues peuvent modifier *certains* des paramètres de mode Page, mais les modifications ne sont pas enregistrées lorsqu’ils quittent le rapport.
+Paramètres du mode page sont disponibles dans les deux [mode lecture et le mode édition](consumer/end-user-reading-view.md). En mode édition, propriétaire d’un rapport peut affecter les paramètres d’affichage de page aux pages de rapport individuel, et ces paramètres sont enregistrés avec le rapport. Quand un collègue ouvre ce rapport en mode Lecture, il voit les pages du rapport s’afficher avec les paramètres du propriétaire. En mode lecture, les collègues peuvent modifier *certains* de la **mode Page** paramètres, mais les modifications ne sont pas sauvegardées lorsqu’ils quittent le rapport.
 
-##    <a name="page-view-settings"></a>Paramètres de mode Page
-Le premier ensemble de paramètres du *mode Page* contrôle l’affichage de votre page de rapport dans la fenêtre du navigateur.  Choisissez parmi les options suivantes :
+## <a name="page-view-settings"></a>Paramètres de mode Page
+Le premier ensemble de paramètres de mode Page contrôle l’affichage de votre page de rapport par rapport à la fenêtre du navigateur. Choisissez parmi les options suivantes :
 
-* **Ajuster à la page** (valeur par défaut) : le contenu est ajusté en fonction de la page
-* **Ajuster à la largeur**: le contenu est ajusté en fonction de la largeur de la page
-* **Taille réelle**: le contenu est affiché dans sa taille réelle
+* **Ajuster à la page** (valeur par défaut) : Contenu est mis à l’échelle pour répondre à la page
+* **Ajuster à la largeur**: Contenu est mis à l’échelle pour s’ajuster à la largeur de la page
+* **Taille réelle**: Contenu s’affiche en taille réelle
 
-Le deuxième ensemble de paramètres du *mode Page* contrôle le positionnement des objets sur le canevas de rapport
+Le deuxième ensemble de contrôles de paramètres d’affichage Page le positionnement des objets sur le canevas de rapport. Choisissez parmi les options suivantes :
 
-* **Afficher le quadrillage** : activez le quadrillage pour aider à positionner les objets sur le canevas de rapport
-* **Aligner sur la grille** : utilisez cette option avec **Afficher le quadrillage** pour positionner et aligner précisément les objets sur le canevas de rapport 
-* **Verrouiller les objets** : verrouillez tous les objets sur le canevas afin qu’ils ne puissent pas être déplacés ni redimensionnés
-* **Volet Sélection** : ce volet répertorie tous les objets sur le canevas et vous pouvez décider lesquels afficher et masquer
+* **Afficher le quadrillage**: Activez le quadrillage pour aider à positionner les objets sur le canevas de rapport.
+* **Aligner sur la grille**: Utiliser avec **afficher le quadrillage** précisément positionner et aligner les objets sur le canevas de rapport. 
+* **Verrouiller les objets**: Verrouiller tous les objets sur le canevas afin qu’ils ne peuvent pas être déplacés ou redimensionnés.
+* **Volet sélection**: Le **sélection** volet répertorie tous les objets sur le canevas. Vous pouvez décider lesquels afficher et masquer.
 
     ![volet sélection](media/power-bi-report-display-settings/power-bi-selection-pane.png)
 
 
 
-## <a name="page-size-settings"></a>Paramètres Taille de la page
-![](media/power-bi-report-display-settings/power-bi--page-size.png)
+## <a name="page-size-settings"></a>Paramètres de taille de page
+![modifier les paramètres de taille de page](media/power-bi-report-display-settings/power-bi-page-size.png)
 
-Les paramètres de *taille de page* sont uniquement disponibles pour les propriétaires de rapport. Dans le service Power BI (app.powerbi.com), vous devez donc ouvrir le rapport en [mode Édition](consumer/end-user-reading-view.md). Ces paramètres permettent de contrôler les proportions et la taille réelle (en pixels) d’affichage du canevas de rapport.   
+**Taille de la page** paramètres sont disponibles uniquement pour les propriétaires de rapports. Dans le service Power BI (app.powerbi.com), vous devez donc ouvrir le rapport en [mode édition](consumer/end-user-reading-view.md). **Taille de la page** paramètres se trouvent dans le **visualisations** volet et contrôle le taux d’affichage et la taille réelle (en pixels) du canevas du rapport :   
 
 * Proportions 4:3
 * Proportions 16:9 (par défaut)
@@ -71,11 +72,13 @@ Les paramètres de *taille de page* sont uniquement disponibles pour les propri�
 * Personnalisé (hauteur et largeur en pixels)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Découvrez comment utiliser les paramètres Mode Page et Taille de la page dans vos propres rapports Power BI](consumer/end-user-report-view.md).
+[Vue rapport dans Power BI Desktop](desktop-report-view.md)
+
+[Modifier l’affichage de Page et les paramètres de taille de Page dans vos propres rapports Power BI](consumer/end-user-report-view.md)
 
 En savoir plus sur les [rapports dans Power BI](consumer/end-user-reports.md)
 
-[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
+[Concepts de base pour les consommateurs du service Power BI](consumer/end-user-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 
