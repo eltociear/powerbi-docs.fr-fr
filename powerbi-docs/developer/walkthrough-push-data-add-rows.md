@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: a355f09984bc454f74dfab8ef137e29fd5aed110
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710416"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Étape 5 : Ajouter des lignes à une table Power BI
@@ -311,7 +311,7 @@ Ci-après figure le [listing du code complet](#code).
     }
 ```
 
-Même si nous spécifions que nous **_//obtenons le premier ID_** dans le code ci-dessus, la meilleure chose à faire est de rechercher dans le jeu de données par nom.
+Même si nous spécifions que nous ** _//obtenons le premier ID_** dans le code ci-dessus, la meilleure chose à faire est de rechercher dans le jeu de données par nom.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Transmettre des données à un tableau de bord Power BI](walkthrough-push-data.md)  
