@@ -1,20 +1,20 @@
 ---
 title: Sécurité au niveau des lignes (SNL) dans Power BI Report Server
 description: Apprenez à utiliser la sécurité au niveau des lignes (SNL) dans Power BI Report Server.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 5a39c976a9b9812754ade2e30eac13aa922fd7f9
-ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
-ms.translationtype: HT
+ms.openlocfilehash: b4a5d11697cff2cae8d137916636907967a7c276
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489565"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769803"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sécurité au niveau des lignes (SNL) dans Power BI Report Server
 
@@ -46,7 +46,7 @@ Après avoir enregistré votre rapport dans Power BI Report Server, vous pouvez
  Si le rapport n’a pas les rôles dont il a besoin, vous devez l’ouvrir dans Power BI Desktop, ajouter des rôles ou les modifier, puis le réenregistrer dans Power BI Report Server. 
 
 1. Dans Power BI Desktop, enregistrez le rapport dans Power BI Report Server. Vous devez utiliser la version de Power BI Desktop optimisée pour Power BI Report Server.
-2. Dans Power BI Report Server, sélectionnez les points de suspension (**...**) en regard du rapport. 
+2. Dans Power BI Report Server, sélectionnez les points de suspension ( **...** ) en regard du rapport. 
 
 3. Sélectionnez **Gérer** > **Sécurité au niveau des lignes**. 
 

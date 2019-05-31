@@ -1,65 +1,82 @@
 ---
 title: Se connecter à Smartsheet avec Power BI
 description: Smartsheet pour Power BI
-author: SarinaJoan
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: maggiesMSFT
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 04/26/2019
+ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 55d61e89b1fb01de472d967a312b25340d482951
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.openlocfilehash: 841201aa87139b9630d6fc076d57109fb2b09804
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008462"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578893"
 ---
 # <a name="connect-to-smartsheet-with-power-bi"></a>Se connecter à Smartsheet avec Power BI
-Smartsheet offre une plateforme simple de collaboration et de partage de fichiers. Le pack de contenu Smartsheet pour Power BI fournit un tableau de bord, des rapports, ainsi qu’un jeu de données offrant une vue d’ensemble de votre compte Smartsheet. Vous pouvez également utiliser [Power BI Desktop](desktop-connect-to-data.md) pour vous connecter directement à des feuilles individuelles dans votre compte. 
+Cet article vous guide tout au long de l’extraction de vos données à partir de votre compte Smartsheet avec une application de modèle Power BI. Smartsheet offre une plateforme simple de collaboration et de partage de fichiers. Le modèle d’application Smartsheet pour Power BI fournit un tableau de bord, rapports et jeu de données qui affiche une vue d’ensemble de votre compte Smartsheet. Vous pouvez également utiliser [Power BI Desktop](desktop-connect-to-data.md) pour vous connecter directement à des feuilles individuelles dans votre compte. 
 
-Connectez-vous au [pack de contenu Smartsheet](https://app.powerbi.com/groups/me/getdata/services/smartsheet) pour Power BI.
+Une fois que vous avez installé le modèle d’application, vous pouvez modifier le tableau de bord et rapports. Vous pouvez distribuer en tant qu’application à vos collègues dans votre organisation.
+
+Se connecter à la [Smartsheet d’application du modèle](https://app.powerbi.com/groups/me/getdata/services/smartsheet) pour Power BI.
 
 >[!NOTE]
->Pour charger le pack de contenu Power BI, il est recommandé de se connecter avec un compte d’administrateur Smartsheet, car celui-ci dispose de droits d’accès supplémentaires.
+>Un compte d’administrateur Smartsheet est préférable pour la connexion et le chargement de l’application de modèle Power BI qu’il dispose des droits d’accès supplémentaires.
 
 ## <a name="how-to-connect"></a>Comment se connecter
-1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.
-   
-   ![](media/service-connect-to-smartsheet/pbi_getdata.png)
-2. Dans la zone **Services** , sélectionnez **Obtenir**.
-   
-   ![](media/service-connect-to-smartsheet/pbi_getservices.png) 
-3. Sélectionnez **Smartsheet \> Obtenir**.
-   
-   ![](media/service-connect-to-smartsheet/smartsheet.png)
+
+[!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
+
+3. Sélectionnez **Smartsheet** \> **obtenez-le maintenant**.
+4. Dans **installer cette application Power BI ?** sélectionnez **installer**.
+4. Dans le **applications** volet, sélectionnez le **Smartsheet** vignette.
+
+    ![Vignette de l’application Power BI Smartsheet](media/service-connect-to-smartsheet/power-bi-smartsheet-tile.png)
+
+6. Dans **prise en main votre nouvelle application**, sélectionnez **se connecter aux données**.
+
+    ![Démarrer avec votre nouvelle application](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+
 4. Pour la Méthode d’authentification, sélectionnez **oAuth2 \> Se connecter**.
    
    Quand vous y êtes invité, entrez vos informations d’identification Smartsheet et suivez le processus d’authentification.
    
-   ![](media/service-connect-to-smartsheet/creds.png)
+   ![Informations d’identification Smartsheet](media/service-connect-to-smartsheet/creds.png)
    
-   ![](media/service-connect-to-smartsheet/creds2.png)
-5. Une fois les données importées dans Power BI, vous verrez un nouveau tableau de bord, un nouveau rapport et un nouveau jeu de données dans le volet de navigation gauche. Les nouveaux éléments sont signalés par un astérisque jaune \*. Sélectionnez l’entrée Smartsheet.
+   ![Connexion Smartsheet](media/service-connect-to-smartsheet/creds2.png)
+
+5. Une fois que Power BI importe les données, le tableau de bord Smartsheet s’ouvre.
    
-   ![](media/service-connect-to-smartsheet/dashboard.png)
+   ![Tableau de bord Smartsheet](media/service-connect-to-smartsheet/power-bi-smartsheet-dashboard.png)
 
-**Et maintenant ?**
+## <a name="modify-and-distribute-your-app"></a>Modifier et distribuer votre application
 
-* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
-* [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
-* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
-* Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
+Vous avez installé le modèle d’application Smartsheet. Cela signifie que vous avez également créé l’espace de travail Smartsheet. Dans l’espace de travail, vous pouvez modifier le rapport et un tableau de bord et distribuez-la comme un *application* à vos collègues de votre organisation. 
+
+1. Pour afficher tout le contenu de votre nouvel espace de travail Smartsheet, dans la barre de navigation gauche, sélectionnez **espaces de travail** > **Smartsheet**. 
+
+    ![Espace de travail Smartsheet dans le volet de navigation gauche](media/service-connect-to-smartsheet/power-bi-smartsheet-workspace.png)
+
+    Cette vue est la liste de contenu pour l’espace de travail. Dans le coin supérieur droit, vous voyez **mise à jour application**. Lorsque vous êtes prêt à distribuer votre application à vos collègues, c’est là que vous allez commencer. 
+
+    ![Liste de contenu Smartsheet](media/service-connect-to-smartsheet/power-bi-smartsheet-workspace-content.png)
+
+2. Sélectionnez **rapports** et **jeux de données** pour voir les autres éléments dans l’espace de travail.
+
+    En savoir plus sur [distribution d’applications](service-create-distribute-apps.md) à vos collègues.
 
 ## <a name="whats-included"></a>Ce qui est inclus
-Le pack de contenu Smartsheet pour Power BI comprend une vue d’ensemble de votre compte Smartsheet, comme le nombre d’espaces de travail, de rapports et de feuilles dont vous disposez, la date de leur mise à jour, etc. Les administrateurs ont également accès à des informations sur les utilisateurs dans leur système, comme les créateurs de feuilles principaux.  
+Le Smartsheet d’application du modèle pour Power BI comprend une vue d’ensemble de votre compte Smartsheet, comme le nombre d’espaces de travail, rapports et de feuilles vous avez, quand elles sont modifiées etc. Les utilisateurs administrateurs pour obtenir des informations sur les utilisateurs de leur système, telles que les créateurs de feuilles principaux.  
 
 Pour vous connecter directement à des feuilles individuelles dans votre compte, vous pouvez utiliser le connecteur Smartsheet dans [Power BI Desktop](desktop-connect-to-data.md).  
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
-[Qu’est-ce que Power BI ?](power-bi-overview.md)
-
-[Obtenir des données pour Power BI](service-get-data.md)
+* [Créer de nouveaux espaces de travail dans Power BI](service-create-the-new-workspaces.md)
+* [Installer et utiliser des applications dans Power BI](consumer/end-user-apps.md)
+* [Se connecter à des applications Power BI pour les services externes](service-connect-to-services.md)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

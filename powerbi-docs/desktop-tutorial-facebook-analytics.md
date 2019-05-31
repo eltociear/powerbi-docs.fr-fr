@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: f945c46d96bea4e0326c99f7fcb881f495ba560f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513688"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Tutoriel : Analyses Facebook avec Power BI Desktop
@@ -23,9 +23,9 @@ Dans ce didacticiel, vous apprenez à importer des données depuis Facebook et �
 
 ## <a name="connect-to-a-facebook-page"></a>Se connecter à une page Facebook
 
-Ce didacticiel utilise des données de la [page Facebook de Microsoft Power BI](https://www.facebook.com/microsoftbi) (*https://www.facebook.com/microsoftbi*). Vous n’avez pas besoin d’informations d’identification spécifiques pour vous connecter à cette page et importer des données, à l’exception d’un compte Facebook personnel.
+Ce didacticiel utilise des données de la [page Facebook de Microsoft Power BI](https://www.facebook.com/microsoftbi) ( *https://www.facebook.com/microsoftbi* ). Vous n’avez pas besoin d’informations d’identification spécifiques pour vous connecter à cette page et importer des données, à l’exception d’un compte Facebook personnel.
 
-1. Ouvrez Power BI Desktop, puis sélectionnez **Obtenir des données** dans la boîte de dialogue **Mise en route**, ou dans l’onglet du ruban **Accueil**, sélectionnez **Obtenir des données**, puis sélectionnez **Plus...**.
+1. Ouvrez Power BI Desktop, puis sélectionnez **Obtenir des données** dans la boîte de dialogue **Mise en route**, ou dans l’onglet du ruban **Accueil**, sélectionnez **Obtenir des données**, puis sélectionnez **Plus...** .
    
 2. Dans la boîte de dialogue **Obtenir des données**, sélectionnez **Facebook** à partir du groupe **Services en ligne**, puis sélectionnez **Se connecter**.
    
@@ -220,7 +220,7 @@ Vous décidez de donner au graphique un titre plus descriptif et plus intéressa
 1. Avec le graphique sélectionné, sélectionnez l’icône **Format**, puis sélectionnez la flèche vers le bas pour développer **Titre**.
 2. Remplacez le **texte du titre** par **Comments per post** (Commentaires par publication). 
 3. Sélectionnez la flèche vers le bas en regard de **Couleur de police**, puis sélectionnez une couleur verte en accord avec les barres vertes de la visualisation.
-4. Augmentez la **Taille du texte** sur **10** et modifiez la **Famille de polices** sur **Segoe (gras)**.
+4. Augmentez la **Taille du texte** sur **10** et modifiez la **Famille de polices** sur **Segoe (gras)** .
 
 ![Mettre en forme le titre du graphique](media/desktop-tutorial-facebook-analytics/formatting1.png)
 

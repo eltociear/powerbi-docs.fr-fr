@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: ecd58ca21e7fb6c5fb0bc2d3410788e2563efa9b
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454523"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Prise en main de Power BI Desktop
@@ -148,7 +148,7 @@ Il convient d’apporter encore quelques modifications pour obtenir la requête 
 
 * *Modifiez le nom de la table* : le nom **Table 0** n’est pas un descripteur utile, mais il est facile de le modifier.
 
-Toutes ces étapes sont illustrées dans **[Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)**. N’hésitez pas à consulter cette page, ou poursuivez la lecture de ce document pour voir ce que vous feriez ensuite. La section suivante intervient après l’application des modifications ci-dessus.
+Toutes ces étapes sont illustrées dans **[Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)** . N’hésitez pas à consulter cette page, ou poursuivez la lecture de ce document pour voir ce que vous feriez ensuite. La section suivante intervient après l’application des modifications ci-dessus.
 
 ## <a name="combine-data"></a>Combiner des données
 Les données relatives aux différents États sont intéressantes et peuvent être utiles pour la création de requêtes et d’efforts d’analyse supplémentaires. Toutefois, elles posent un problème : la plupart de ces données utilisent une abréviation à deux lettres pour les codes d’États, à la place du nom complet de l’État. Nous avons besoin d’un moyen d’associer les noms des États à leurs abréviations.
@@ -161,7 +161,7 @@ Dans le ruban **Accueil** de **l’Éditeur de requête**, sélectionnez **Obten
 
  ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
 
-Sélectionnez **Table[edit]** car elle inclut les données que nous souhaitons, mais un gros effort de mise en forme est nécessaire pour alléger les données de cette table. Toutes ces étapes sont également illustrées dans **[Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)**. Pour résumer ces étapes, la procédure est la suivante :
+Sélectionnez **Table[edit]** car elle inclut les données que nous souhaitons, mais un gros effort de mise en forme est nécessaire pour alléger les données de cette table. Toutes ces étapes sont également illustrées dans **[Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)** . Pour résumer ces étapes, la procédure est la suivante :
 
 Sélectionnez **Modifier**, puis :
 

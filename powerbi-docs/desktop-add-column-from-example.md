@@ -11,10 +11,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: c172ca90a849ca83a1faeed5dbab3bda96698c1a
-ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239792"
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Ajouter une colonne à partir d’un exemple dans Power BI Desktop
@@ -61,7 +61,7 @@ Ci-dessous figure le volet **Ajouter une colonne à partir d’exemples** qui co
 
 À mesure que vous tapez votre exemple dans la nouvelle colonne, Power BI montre un aperçu de la façon dont la colonne en cours de création s’affichera, en fonction des transformations qu’il détecte. Par exemple, si vous tapez *Alabama* dans la première ligne, cela correspond à la valeur *Alabama* dans la première colonne du tableau. Dès que nous appuyons sur *Entrée*, Power BI remplit la colonne sur la base de cette valeur.
 
-Supposons cependant que vous accédez à la ligne qui inclut *Massachusetts [E]* et que vous supprimez la dernière partie, *[E]*, car vous n’en voulez plus. Power BI détecte la modification et utilise l’exemple pour créer une transformation. Vous pouvez voir l’explication de la transformation dans le volet central supérieur.
+Supposons cependant que vous accédez à la ligne qui inclut *Massachusetts [E]* et que vous supprimez la dernière partie, *[E]* , car vous n’en voulez plus. Power BI détecte la modification et utilise l’exemple pour créer une transformation. Vous pouvez voir l’explication de la transformation dans le volet central supérieur.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_06.png)
 

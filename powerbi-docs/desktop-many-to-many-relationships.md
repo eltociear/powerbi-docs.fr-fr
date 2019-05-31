@@ -11,10 +11,10 @@ ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
-ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/20/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65941439"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relations avec une cardinalité plusieurs à plusieurs dans Power BI Desktop
@@ -39,7 +39,7 @@ Par exemple, deux tables pouvaient avoir une colonne étiquetée *pays*, mais le
 
 ## <a name="use-relationships-with-a-many-many-cardinality"></a>Utiliser des *relations avec une cardinalité plusieurs à plusieurs*
 
-Quand vous définissez une relation entre deux tables dans Power BI, vous devez définir la cardinalité de la relation. Par exemple, la relation entre *ProductSales* et *Product*&mdash;à l’aide des colonnes *ProductSales[ProductCode]* et *Product[ProductCode]*&mdash;serait définie en tant que relation *Plusieurs à 1*. Nous définissons la relation de cette façon, car il existe de nombreuses ventes de chaque produit et la colonne de la table *Product* *(ProductCode)* est unique. Quand vous définissez une cardinalité de relation de type *Plusieurs à 1*, *1 à plusieurs*, ou *1 à 1*, Power BI la valide pour s’assurer qu’elle correspond aux données réelles.
+Quand vous définissez une relation entre deux tables dans Power BI, vous devez définir la cardinalité de la relation. Par exemple, la relation entre *ProductSales* et *Product*&mdash;à l’aide des colonnes *ProductSales[ProductCode]* et *Product[ProductCode]* &mdash;serait définie en tant que relation *Plusieurs à 1*. Nous définissons la relation de cette façon, car il existe de nombreuses ventes de chaque produit et la colonne de la table *Product* *(ProductCode)* est unique. Quand vous définissez une cardinalité de relation de type *Plusieurs à 1*, *1 à plusieurs*, ou *1 à 1*, Power BI la valide pour s’assurer qu’elle correspond aux données réelles.
 
 Par exemple, examinons le modèle simple dans l’image suivante :
 

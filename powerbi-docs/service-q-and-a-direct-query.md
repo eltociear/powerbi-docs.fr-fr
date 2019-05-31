@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 1484d1dc646270de6f789dc102c6d75343dac832
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 9836cd88bef5066f61a8ae44eabe7685196e2bed
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292565"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65624941"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Activer la fonctionnalité Questions et réponses pour les connexions actives dans Power BI
-## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Qu’est-ce que la passerelle de données locale ?  Qu’est-ce qu’une connexion active ?
-Les jeux de données dans Power BI peuvent être importés dans Power BI ou vous pouvez établir une connexion active entre eux. La connexion active des jeux de données est souvent appelée « locale ». Les connexions actives sont gérées à l’aide d’une [passerelle](service-gateway-onprem.md), et les données et les requêtes sont envoyées dans les deux sens à l’aide de requêtes actives.
+## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Qu’est la passerelle de données en local ?  Qu’est-ce qu’une connexion active ?
+Les jeux de données dans Power BI peuvent être importés dans Power BI ou vous pouvez établir une connexion active entre eux. Connexion des groupes de données sont souvent appelées active en tant que « local ». Les connexions actives sont gérées à l’aide d’une [passerelle](service-gateway-onprem.md), et les données et les requêtes sont envoyées dans les deux sens à l’aide de requêtes actives.
 
 ## <a name="qa-for-on-premises-data-gateway-datasets"></a>Questions et réponses pour les jeux de données de la passerelle de données locale
 Si vous souhaitez utiliser les Q&R avec des jeux de données auxquels vous accédez par le biais d’une passerelle, vous devez d’abord les activer.
@@ -33,7 +33,7 @@ Comme les Q&R Power BI utilisent des valeurs de texte et le schéma à partir de
 Pour plus d’informations, consultez :
 
 * Qu’est-ce que la [passerelle de données locale](service-gateway-onprem.md) ?
-* [Présentation de Q&R de Power BI](consumer/end-user-q-and-a.md)
+* [Power BI Q & r pour les consommateurs](consumer/end-user-q-and-a.md)
 
 ## <a name="enable-qa"></a>Activer les Q&R
 Une fois que vous avez configuré la passerelle de données, connectez-vous à vos données à partir de Power BI.  Créez un tableau de bord à l’aide de vos données locales ou téléchargez un fichier .pbix qui utilise des données locales.  Vous pouvez également disposer déjà des données locales dans des tableaux de bord, des rapports et des jeux de données qui ont été partagés avec vous.
@@ -52,18 +52,19 @@ Une fois que vous avez configuré la passerelle de données, connectez-vous à v
 Lorsque vous activez les Q&R pour vos données locales, un sous-ensemble de données est mis en cache dans le service. Le but est d’assurer des performances de Q&R raisonnables. Power BI exclut les valeurs dépassant 24 caractères de la mise en cache. Le cache est supprimé après quelques heures une fois les Q&R désactivées en décochant la case permettant **d’activer les Q&R pour ce jeu de données**, ou lorsque vous supprimez votre jeu de données.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-La version préliminaire de cette fonctionnalité comprend plusieurs limitations :
+La fonctionnalité présente certaines limitations :
 
-* Initialement, la fonctionnalité n’est disponible que pour les sources de données tabulaires SQL Server 2016 Analysis Services. La fonctionnalité est optimisée pour travailler avec des données tabulaires. L’expérience de Questions et réponses n’est pas encore prise en charge pour les données multidimensionnelles. D’autres sources de données prises en charge par la passerelle de données locale seront déployées au fil du temps.
-* La prise en charge complète de la sécurité au niveau des lignes définie dans SQL Server Analysis Services n’est pas disponible initialement dans la préversion publique. Lorsque vous posez des questions dans les Q&R, la « saisie semi-automatique » des questions peut afficher de valeurs de chaînes auxquelles un utilisateur n’a pas accès. Toutefois, la sécurité au niveau des lignes définie dans le modèle est respectée pour les rapports et graphiques visuels. Aucune donnée numérique sous-jacente ne peut donc être exposée. Des options permettant de contrôler ce comportement seront disponibles dans des prochaines mises à jour.
-* La sécurité au niveau objet (OLS) n’est pas prise en charge. Q&A ne respecte pas la sécurité au niveau objet et peut révéler les noms de tables ou de colonnes aux utilisateurs qui n’y ont pas accès. Vous avez tout intérêt à activer la sécurité au niveau des lignes (RLS) de façon à sécuriser aussi les valeurs de données. 
-* Les connexions actives sont uniquement prises en charge avec la passerelle de données locale. Par conséquent, elles ne peuvent pas être utilisées avec la passerelle personnelle.
+* Initialement, la fonctionnalité n’est disponible que pour les sources de données tabulaires SQL Server 2016 Analysis Services. La fonctionnalité est optimisée pour travailler avec des données tabulaires. Expérience le Q & A ne n’est pas encore pris en charge pour multidimensionnel. D’autres sources de données prises en charge par la passerelle de données locale seront déployées au fil du temps.
+* Prise en charge complète pour la sécurité au niveau des lignes définie dans SQL Server Analysis Services n’est pas disponible initialement. Lorsque vous posez des questions dans Q & R, la « saisie semi-automatique » des questions peut afficher de valeurs de chaîne un utilisateur n’a pas accès. Toutefois, la sécurité au niveau des lignes définie dans le modèle est respectée pour les rapports et graphiques visuels. Aucune donnée numérique sous-jacente ne peut donc être exposée. Des options permettant de contrôler ce comportement seront disponibles dans des prochaines mises à jour.
+* Sécurité au niveau objet (OLS) n’est pas pris en charge. Questions et réponses ne respectent pas la sécurité au niveau des objets et peuvent révéler des noms de table ou une colonne pour les utilisateurs qui n’ont pas d’y accéder. Vous avez tout intérêt à activer la sécurité au niveau des lignes (RLS) de façon à sécuriser aussi les valeurs de données. 
+* Les connexions actives sont uniquement prises en charge avec la passerelle de données locale. Par conséquent, cela ne peut pas être utilisé avec la passerelle personnelle.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Passerelle de données locale](service-gateway-onprem.md)  
-[Gérer votre source de données - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)  
-[Présentation de Questions et réponses dans Power BI](consumer/end-user-q-and-a.md)  
+
+- [Passerelle de données locale](service-gateway-onprem.md)  
+- [Gérer votre source de données - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+- [Power BI : Concepts de base](consumer/end-user-basic-concepts.md)  
+- [Présentation de Questions et réponses dans Power BI](consumer/end-user-q-and-a.md)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 

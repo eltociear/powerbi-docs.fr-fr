@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4e3b465648d5b827d1ed53550207879f555c38f9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 8d690e8fd19ab988192c2aa36053416d2bb3d45c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284101"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61403435"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Comparaison de Power BI Desktop et du service Power BI
 
@@ -48,7 +48,7 @@ Cette vidéo montre l’éditeur de rapports dans Power BI Desktop.
 
 ## <a name="collaborating-in-the-power-bi-service"></a>Collaboration dans le service Power BI
 
-Une fois que vous avez créé vos rapports, vous pouvez les enregistrer dans un *espace de travail* dans le **service Power BI**, là où vos collègues et vous-même pouvez collaborer. Vous générez des *tableaux de bord* qui s’appuient sur ces rapports. Puis vous les partagez avec des consommateurs de rapports internes et externes à votre organisation. Les consommateurs de vos rapports les consultent dans le service Power BI en [mode Lecture](consumer/end-user-reading-view.md), et non en mode Édition. Ils n’ont pas accès à toutes les fonctionnalités disponibles pour les auteurs de rapports. 
+Une fois que vous avez créé vos rapports, vous pouvez les enregistrer dans un *espace de travail* dans le **service Power BI**, là où vos collègues et vous-même pouvez collaborer. Vous générez des *tableaux de bord* qui s’appuient sur ces rapports. Puis vous les partagez avec des consommateurs de rapports internes et externes à votre organisation. Les consommateurs de vos rapports les consultent dans le service Power BI en [mode Lecture](consumer/end-user-reading-view.md), et non en mode Édition. Ils n’ont pas accès à toutes les fonctionnalités disponibles aux créateurs de rapports. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 

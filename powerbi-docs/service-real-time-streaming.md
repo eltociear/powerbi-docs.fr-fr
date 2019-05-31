@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 034dc98b1e623bd0d509eb2d174cdc3e3b865067
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514317"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
@@ -138,7 +138,7 @@ Dans cette page, vous pouvez entrer le point de terminaison de votre jeu de donn
 
 ![](media/service-real-time-streaming/real-time-streaming_3.png)
 
-Lorsque vous cliquez sur l’icône **+**, vous voyez deux options :
+Lorsque vous cliquez sur l’icône **+** , vous voyez deux options :
 
 ![](media/service-real-time-streaming/real-time-streaming_4a.png)
 

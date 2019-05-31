@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8762be72353aa779281d721ac8038b6e3dd16aa2
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454208"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Utilisation des étiquettes de hiérarchie incluses dans Power BI Desktop
@@ -51,7 +51,7 @@ Regardons maintenant un graphique différent, avec des données ayant une hiéra
 
 ![Graphique avec une hiérarchie informelle](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
 
-Le fait de sélectionner **Développer au prochain niveau** affiche le prochain niveau avec l’affichage intégré d’étiquettes de hiérarchie. Par défaut, les hiérarchies intégrées sont triées par la valeur de mesure, dans ce cas, **Quantity**. Avec les étiquettes de hiérarchie intégrées activées, vous pouvez aussi choisir de trier ces données par hiérarchie, en sélectionnant le bouton de points de suspension en haut à droite (**...**), puis en sélectionnant **Trier par ProductName ShipCountry** comme indiqué dans l’image suivante.
+Le fait de sélectionner **Développer au prochain niveau** affiche le prochain niveau avec l’affichage intégré d’étiquettes de hiérarchie. Par défaut, les hiérarchies intégrées sont triées par la valeur de mesure, dans ce cas, **Quantity**. Avec les étiquettes de hiérarchie intégrées activées, vous pouvez aussi choisir de trier ces données par hiérarchie, en sélectionnant le bouton de points de suspension en haut à droite ( **...** ), puis en sélectionnant **Trier par ProductName ShipCountry** comme indiqué dans l’image suivante.
 
 ![Graphique avec une hiérarchie informelle triée par défaut](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png)
 

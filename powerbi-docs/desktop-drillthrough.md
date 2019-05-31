@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: dffcf8fb3daa7559abd4d3b999ea3a73392d0eb9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 7c9d400b196366609caebe9f79bb9a8130a4ad11
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283113"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375172"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Utiliser une extraction dans Power BI Desktop
 Une **extraction** dans **Power BI Desktop** vous permet de créer dans votre rapport une page qui se concentre sur une entité spécifique, par exemple, un fournisseur, un client ou un fabricant. Les utilisateurs peuvent cliquer avec le bouton droit sur un point de données dans d’autres pages du rapport. Ils peuvent ensuite extraire la page ciblée pour obtenir les détails filtrés en fonction de ce contexte.
@@ -81,5 +81,6 @@ C’est tout ce que vous avez à faire pour utiliser une **extraction** dans vos
 
 Les articles suivants pourraient également vous intéresser :
 
-* [Utilisation de segments Power BI Desktop](visuals/desktop-slicers.md)
+* [Utiliser l’extraction de cross-report dans Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Utilisation de segments Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 

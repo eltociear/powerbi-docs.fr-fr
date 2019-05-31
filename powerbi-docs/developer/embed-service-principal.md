@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 5c97eacbdbf89a9ef828dad3a5da01e794952f15
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65710510"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375101"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Principal de service avec Power BI (préversion)
 
@@ -120,7 +120,7 @@ Il existe des différences selon que vous utilisez un principal de service ou un
 
 5. Ajoutez le principal de service comme **administrateur** de l’espace de travail que vous avez créé. Vous pouvez gérer cette tâche via des [API](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) ou avec le service Power BI.
 
-    ![Ajouter un principal du service à un espace de travail](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Ajouter un principal de service en tant qu’administrateur à un espace de travail](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Choisissez à présent d’incorporer votre contenu dans un exemple d’application ou dans votre propre application.
 
@@ -174,10 +174,11 @@ Voici un exemple de script pour récupérer l’ID objet du principal de service
 * Il est impossible d’installer ou de gérer une passerelle de données locale à l’aide d’un principal de service.
 * Les applications [incorporant du contenu pour votre organisation](embed-sample-for-your-organization.md) ne peuvent pas utiliser un principal de service.
 * La gestion de [flux de données](../service-dataflows-overview.md) n’est pas prise en charge.
-* Le principal du service ne prend pas en charge les API d’administration.
+* Actuellement, principal du service ne prend pas en charge les API d’administration.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Inscrire une application](register-app.md)
 * [Power BI Embedded pour vos clients](embed-sample-for-customers.md)
 * [Objets d’application et de principal de service dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+* [Sécurité au niveau des lignes à l’aide de la passerelle de données locale avec le principal de service (version préliminaire)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

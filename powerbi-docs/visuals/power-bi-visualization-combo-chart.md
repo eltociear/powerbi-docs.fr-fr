@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 896c415028b99db8662e93b5d709b76520996fef
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e461480f53f4a97aeb4282e64a8a03eb8e1418d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275752"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187746"
 ---
 # <a name="combo-chart-in-power-bi"></a>Graphique combiné dans Power BI
 Dans Power BI, un graphique combiné est une visualisation qui combine un graphique en courbes et un histogramme. Combiner ces deux graphiques en un seul vous permet de comparer plus rapidement les données.
@@ -52,7 +52,7 @@ Regardez comment créer un graphique combiné à l’aide de l’exemple Vente e
 
     b.  Faites glisser **Sales** \> **Gross Margin This Year** (Ventes > Marge brute cette année) vers **Valeur**.
 
-    c.  Sélectionnez **Time** \> **FiscalMonth** (Période > Mois fiscal) pour l’ajouter à **Axe**.
+    c. Sélectionnez **Time** \> **FiscalMonth** (Période > Mois fiscal) pour l’ajouter à **Axe**.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Sélectionnez les points de suspension (...) dans le coin supérieur droit de la visualisation, puis sélectionnez **Trier par > MoisFiscal**. Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et choisissez **Tri croissant** ou **Tri décroissant**.
@@ -71,7 +71,7 @@ Regardez comment créer un graphique combiné à l’aide de l’exemple Vente e
 ## <a name="create-a-combo-chart-with-two-axes"></a>Créer un graphique combiné avec deux axes
 Dans cette tâche, nous allons comparer les ventes et la marge brute.
 
-1. Créez un graphique en courbes qui affiche le **pourcentage de marge brute de l’année précédente** par **mois**. Sélectionnez les points de suspension pour le trier par **mois** et dans l’ordre **croissant**.  
+1. Créer un graphique en courbes qui assure le suivi **dernière année % de marge brute** par **FiscalMonth**. Sélectionnez les points de suspension pour le trier par **mois** et dans l’ordre **croissant**.  
 En janvier, la marge brute était de 35 %. Elle a subi un pic à 45 % en avril, a baissé en juillet et a augmenté à nouveau en août. Verrons-nous un modèle similaire dans les ventes de l’année dernière et de cette année ?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
@@ -83,22 +83,22 @@ En janvier, la marge brute était de 35 %. Elle a subi un pic à 45 % en avril
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
 4. Faites glisser **Gross Margin Last Year %** (Pourcentage de marge brute de l’année précédente) de **Valeurs de colonne** vers **Valeurs de ligne**. Power BI crée deux axes, ce qui permet de définir des échelles différentes pour les jeux de données. L’axe de gauche mesure le montant des ventes et l’axe de droite mesure le pourcentage. Et nous voyons la réponse à notre question : oui, nous notons un modèle similaire.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
+   ![](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## <a name="add-titles-to-the-axes"></a>Ajouter des titres aux axes
 1. Ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau ![](media/power-bi-visualization-combo-chart/power-bi-paintroller.png).
 2. Sélectionnez la flèche déroulante pour développer les options de l’ **axe Y** .
-3. Pour l’**axe Y (colonne)**, définissez les valeurs suivantes : **Position** sur **Gauche**, **Titre** sur **Activé**, **Style** sur **Afficher le titre uniquement** et **Afficher** sur **Millions**.
+3. Pour **axe y (colonne)** , affectez la valeur **Position** à **gauche**, affectez la valeur **titre** à **sur**,  **Style** à **afficher le titre uniquement**, et **unités d’affichage** comme **Millions**.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-y-axis-column.png)
-4. Sous l’**axe Y (colonne)**, faites défiler et vérifiez également que **Afficher l’élément secondaire** a la valeur **Activé**. Cela affiche les options de mise en forme de la partie graphique en courbes du graphique combiné.
+   ![](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
+4. Sous **axe y (colonne)** , faites défiler vers le bas jusqu'à ce que vous voyiez **afficher l’élément secondaire**. Comme il existe autant d’options pour les axes des Y, vous devrez utiliser les deux barres de défilement. La section secondaire Show affiche les options de mise en forme de la partie graphique en courbes du graphique combiné.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-show-secondary.png)
-5. Pour l’**axe Y (ligne)**, laissez **Position** sur **Droite**, définissez **Titre** sur **Activé** et **Style** sur **Afficher le titre uniquement**.
+   ![](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
+5. Pour l’**axe Y (ligne)** , laissez **Position** sur **Droite**, définissez **Titre** sur **Activé** et **Style** sur **Afficher le titre uniquement**.
 
    Le graphique combiné affiche maintenant les deux axes, chacun avec un titre.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-2-titles.png)
 
 6. Si vous le souhaitez, modifiez la police, la taille et la couleur de texte et définissez d’autres options de mise en forme pour améliorer l’affichage et la lisibilité du graphique.
 

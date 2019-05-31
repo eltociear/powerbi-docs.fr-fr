@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/25/2018
+ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2c9daf54ec18b53655043cd4a472674ee5123be
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f5eed81a5750bebb4df968a09cd1fcfd2aa069d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295945"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710860"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 Vous souhaitez que vos lecteurs de rapports soient en mesure de rechercher des mesures de ventes globales, mais également de mettre en surbrillance des performances pour les responsables de région individuels et les différentes périodes. Vous pouvez créer des rapports distincts ou des graphiques de comparaison ou vous pouvez utiliser des segments. Un segment constitue un autre moyen de réduire la partie du jeu de données affichée dans les autres visualisations d’un rapport. 
@@ -42,7 +42,7 @@ Les segments Power BI présentent les limitations suivantes :
 
 ## <a name="create-slicers"></a>Créer des segments
 
-Pour créer un nouveau segment, vous pouvez sélectionner l’icône du segment et sélectionner le champ des données à partir duquel filtrer (ou faites-le glisser vers la boîte **Champs** dans le volet **Visualisations**) ou vous pouvez sélectionner ou faire glisser le champ de données en premier pour créer une visualisation, puis sélectionner l’icône du segment pour transformer la visualisation en segment. Différents types de données créent différents types de segments, avec des options et des effets différents. 
+Pour créer un nouveau segment, vous pouvez sélectionner l’icône de segment et puis sélectionnez le champ de données sur laquelle filtrer (ou faites-le glisser vers le **filtres** zone le **visualisations** volet), ou vous pouvez sélectionner ou faire glisser le champ de données tout d’abord vers créer une visualisation, puis sélectionnez l’icône de segment pour transformer la visualisation en segment. Différents types de données créent différents types de segments, avec des options et des effets différents. 
 
 La première fois que vous modifiez un rapport, le bouton pour **Rétablir les valeurs par défaut** est activé. Il s’agit d’un rappel indiquant que vous avez changé les paramètres du rapport d’origine. Si vous quittez le rapport, ces modifications sont enregistrées. Quand vous revenez au rapport, vous ne devez pas resegmenter le rapport.  Cependant, si vous voulez rétablir les paramètres par défaut de l’auteur du rapport, sélectionnez le bouton **Rétablir les valeurs par défaut** dans la barre de menus du haut.
 
@@ -51,26 +51,30 @@ La première fois que vous modifiez un rapport, le bouton pour **Rétablir les v
 > [!NOTE]
 > Si votre bouton **Rétablir les valeurs par défaut** reste désactivé, cela signifie que l’auteur du rapport a désactivé la fonctionnalité pour le rapport ou que le rapport contient un visuel personnalisé. Pointez simplement sur le bouton pour lire l’explication de l’info-bulle. 
 
-**Pour créer un nouveau segment pour filtrer les données par le Gestionnaire de districts**
+**Créer un nouveau segment pour filtrer les données par le Gestionnaire de districts**
 
-1. Ouvrez [Exemple Analyse de la vente au détail](../sample-retail-analysis.md) dans Power BI Desktop ou le service Power BI. (Dans le service Power BI, sélectionnez **Modifier le rapport** en haut à gauche.)
-2. Dans la page **Vue d’ensemble**, rien n’est sélectionné sur le canevas, sélectionnez l’icône **Segment** ![icône du segment](media/power-bi-visualization-slicers/slicer-icon.png) dans le volet **Visualisations** pour créer un nouveau segment. 
-3. Une fois le nouveau segment sélectionné, sélectionnez **Gestionnaire de districts** sous **District** dans le volet **Champs** pour remplir le segment. Le nouveau segment est une liste des boîtes de sélection avant les noms. 
+1. Dans Power BI Desktop ou le service Power BI, ouvrez le [Retail Analysis Sample](../sample-retail-analysis.md). (Dans le service Power BI, sélectionnez **Modifier le rapport** en haut à gauche.)
+2. Dans la page Vue d’ensemble, rien n’est sélectionné sur le canevas, sélectionnez le **segment** icône ![icône segment](media/power-bi-visualization-slicers/slicer-icon.png) dans le **visualisations** volet pour créer un nouveau segment. 
+3. Avec le nouveau segment sélectionné, dans le volet champs, sélectionnez **District** > **DM** pour remplir le segment. Le nouveau segment est une liste des boîtes de sélection avant les noms. 
     
-    ![nouveau segment](media/power-bi-visualization-slicers/2-slicer.png)
+    ![nouveau segment](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
 4. Redimensionnez et faites glisser le segment et autres éléments sur le canevas pour libérer de l’espace pour le segment. Notez que les éléments de segment sont tronqués si vous redimensionnez le segment trop petit. 
-5. Sélectionnez les noms sur le segment et notez les effets sur les autres visualisations de la page. Sélectionnez à nouveau les noms pour les désélectionner, maintenez la touche **Ctrl** enfoncée pour sélectionner plusieurs noms. La sélection de tous les noms a le même effet que la sélection d’aucun nom. 
+5. Sélectionnez les noms sur le segment et notez les effets sur les autres visualisations de la page. Sélectionnez à nouveau les noms pour les désélectionner, maintenez la touche **Ctrl** enfoncée pour sélectionner plusieurs noms. La sélection de tous les noms a le même effet que la sélection d’aucun nom. \
 
+6. Ou bien, sélectionnez l’icône rouleau de peinture à mettre en forme votre segment. Il existe simplement trop nombreuses options pour les décrire tous ici : donc faire des essais et créer un segment qui fonctionne pour vous. Dans les exemples ci-dessous, le premier segment a été converti en une liste déroulante pour économiser l’espace et l’option à « Tout sélectionner » a été ajoutée.  Le deuxième segment a été mis en forme des couleurs et tailles de polices et autorise uniquement une seule sélection.
+
+   ![nouveau segment](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
->Par défaut, les éléments de segment de liste sont triés par ordre alphanumérique croissant. Pour inverser l’ordre de tri et utiliser l’ordre décroissant, sélectionnez les points de suspension (**...**) en haut à droite du segment et choisissez **Trier par Gestionnaire de districts** dans la liste déroulante. 
+>Par défaut, les éléments de segment de liste sont triés par ordre alphanumérique croissant. Pour inverser l’ordre de tri et utiliser l’ordre décroissant, sélectionnez les points de suspension ( **...** ) en haut à droite du segment et choisissez **Trier par Gestionnaire de districts** dans la liste déroulante. 
 
 **Pour créer un nouveau segment pour filtrer les données par plage de dates**
 
-1. Sans aucun élément sélectionné dans le canevas, faites défiler la liste déroulante **Heure** dans le volet Champs et faites glisser **Mois** (ou **Date** dans le service Power BI) vers la boîte **Valeurs**zone dans le volet Visualisations pour créer une nouvelle visualisation.
+1. Rien n’est sélectionné sur le canevas, la liste déroulante **Date** dans le volet champs, faites glisser **Date** à la **valeurs** zone dans le volet visualisations pour créer une visualisation.
 2. Une fois la nouvelle visualisation sélectionnée, sélectionnez l’icône **Segment** pour convertir la nouvelle visualisation en segment. Ce segment est un segment de contrôle avec la plage de dates remplie.
     
-    ![nouveau segment de plages](media/power-bi-visualization-slicers/2a-date-slicer.png)
+    ![nouveau segment de plages](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
+
     
 4. Redimensionnez et faites glisser le segment et autres éléments sur le canevas pour libérer de l’espace pour le segment. Notez que le curseur est redimensionné selon la taille du segment, mais il disparaît et les dates sont tronquées si vous redimensionnez le segment trop petit. 
 4. Sélectionnez des plages de dates différentes avec le curseur ou sélectionnez un champ de date pour entrer une valeur ou afficher un calendrier pour une sélection plus précise. Notez les effets sur les autres visualisations de la page.
@@ -78,8 +82,11 @@ La première fois que vous modifiez un rapport, le bouton pour **Rétablir les v
     >[!NOTE]
     >Les types de données numériques et date/heure produisent des segments de curseur de plage par défaut. À compter de la mise à jour de Power BI de février 2018, les segments des types de données de nombres entiers s’alignent sur des valeurs de nombre entier plutôt que d’afficher des places décimales. 
 
->[!TIP]
->Bien que le champ de données **Mois** génère un type de segment de plage **Entre** par défaut, vous pouvez le modifier par d’autres types de segment et options de sélection. Pour modifier le type de segment, une fois le segment sélectionné, placez votre curseur sur la zone supérieure droite du segment, faites défiler vers le bas le carat qui s’affiche et choisissez une des autres options, telles que **Liste** ou **Avant**. Notez les changements d’apparence du segment et des options de sélection. 
+
+5. Maintenant modifier la valeur du champ à partir de **Date** à **MonthIndex**.  Cela génère un **entre** type de segment de plage par défaut, mais vous pouvez le modifier à d’autres types de segment et les options de sélection. Pour modifier le type de segment, une fois le segment sélectionné, placez votre curseur sur la zone supérieure droite du segment, faites défiler vers le bas le carat qui s’affiche et choisissez une des autres options, telles que **Liste** ou **Avant**. Notez les changements d’apparence du segment et des options de sélection. 
+ 
+    ![nouveau segment de plages](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
+
 
 Pour plus d’informations sur la création des segments de plages numériques et de dates, consultez [Utiliser le segment de plages numériques dans Power BI Desktop](../desktop-slicer-numeric-range.md) et regardez la vidéo suivante.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 

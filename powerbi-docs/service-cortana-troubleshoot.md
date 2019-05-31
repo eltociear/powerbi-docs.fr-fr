@@ -8,26 +8,23 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/20/2017
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5aac4b32fc90720af4954dff2afa61243b1f1587
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 449d47606829c8555e0b64e7f07d1b414b99fea7
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249042"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375230"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Résoudre les problèmes de Cortana pour Power BI
-Cet article fait partie d’une série. Si cela n’est pas déjà le cas, nous vous recommandons de lire les trois articles suivants.
+Cet article fait partie d’une série. 
 
-**Article 1** : [Comprendre comment Cortana et Power BI fonctionnent ensemble pour rechercher des rapports et tableaux de bord Power BI](service-cortana-intro.md)
+> [!IMPORTANT]
+> Intégration de Cortana est déconseillée dans Power BI. À compter du 11 juin, Cortana ne fonctionnera plus pour les tableaux de bord et les rapports.
 
-**Article 2** : [Pour rechercher dans des rapports : activer l’intégration de Cortana - Power BI - Windows](service-cortana-enable.md)
-
-**Article 3** : [Pour rechercher dans des rapports : créer des *cartes de réponse Cortana spéciales*](service-cortana-answer-cards.md)
-
-Si vous rencontrez des problèmes pour intégrer Cortana à Power BI, vous êtes sur la bonne page. Pour diagnostiquer et résoudre le problème que vous rencontrez, suivez les étapes ci-dessous.
+Si vous rencontrez des difficultés pour intégrer Cortana à Power BI, vous êtes au bon endroit. Pour diagnostiquer et résoudre le problème que vous rencontrez, suivez les étapes ci-dessous.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Pourquoi Cortana ne trouve pas de réponses dans mes jeux de données ou tableaux de bord Power BI ?
 1. Avez-vous un compte Power BI ?  Si vous n’en avez pas, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/get-started/).

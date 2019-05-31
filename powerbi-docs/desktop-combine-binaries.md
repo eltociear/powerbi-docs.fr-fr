@@ -11,10 +11,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: f43bb105f7e17ce453e96c6eff875349efd45cb2
-ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239644"
 ---
 # <a name="combine-files-binaries-in-power-bi-desktop"></a>Combiner des fichiers (binaires) dans Power BI Desktop
@@ -33,7 +33,7 @@ Avant la version de novembre 2016 de **Power BI Desktop**, cette fonctionnali
 Comme les clients demandaient un fonctionnement plus intuitif de l’opération **Combiner des binaires**, la transformation a été améliorée et renommée **Combiner des fichiers**.
 
 ## <a name="current-combine-files-behavior"></a>Comportement actuel de la combinaison de fichiers
-**Power BI Desktop** gère à présent plus efficacement l’opération **Combiner des fichiers (binaires)**. Pour commencer, sélectionnez **Combiner des fichiers** dans l’onglet de ruban **Accueil** de **l’Éditeur de requête**, ou dans la colonne elle-même.
+**Power BI Desktop** gère à présent plus efficacement l’opération **Combiner des fichiers (binaires)** . Pour commencer, sélectionnez **Combiner des fichiers** dans l’onglet de ruban **Accueil** de **l’Éditeur de requête**, ou dans la colonne elle-même.
 
 ![](media/desktop-combine-binaries/combine-binaries_2a.png)
 

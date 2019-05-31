@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4b45c6708f2f4c1ec0f8df2a330dcbb683210926
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292038"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66222256"
 ---
 # <a name="conditional-formatting-in-tables"></a>Mise en forme conditionnelle dans les tables 
 Avec la mise en forme conditionnelle des tables, vous pouvez spécifier des couleurs de cellule personnalisées en fonction des valeurs des cellules, ou en fonction d’autres valeurs ou champs, et notamment utiliser des couleurs de dégradé. Vous pouvez également afficher les valeurs des cellules avec des barres de données. 
@@ -129,6 +129,12 @@ Vous pouvez alors obtenir des résultats comme la matrice suivante.
 ![Visuel Matrice avec une couleur basée sur la valeur d’un indicateur de performance clé](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
 
 Vous pouvez créer de nombreuses autres variations, avec simplement votre imagination et un peu de code DAX.
+
+Vous pouvez utiliser une des valeurs répertoriées dans les spécifications de couleur CSS sur [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) à vos éléments visuels de couleur :
+* 3, 6 ou 8 hex digit codes, par exemple #3E4AFF. Veillez à qu'inclure le symbole # au début du code. « 3E4AFF » n’est pas accepté. 
+* Par exemple, RGBA (234, 234, 234, 0,5) les valeurs RVB ou RVBA
+* TSL ou HSLA valeurs, par exemple HSLA (123, 75 %, 75 %, 0,5)
+* Par exemple, vert, bleu ciel, PeachPuff des noms de couleur 
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations, consultez l’article suivant :  

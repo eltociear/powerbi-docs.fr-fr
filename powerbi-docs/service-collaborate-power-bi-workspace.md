@@ -11,11 +11,11 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174565"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61181617"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Collaborer dans l’espace de travail de votre application Power BI
 Les espaces de travail d’application Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. La collaboration ne s’arrête pas aux espaces de travail dans Power BI. Office 365 offre d’autres services de groupe, comme le partage de fichiers sur OneDrive Entreprise, les conversations dans Exchange, le calendrier partagé, les tâches, etc. En savoir plus sur les[groupes dans Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)
@@ -43,7 +43,7 @@ Après avoir créé un fichier Power BI Desktop, si vous publiez celui-ci dans v
 ## <a name="collaborate-in-office-365"></a>Collaborer dans Office 365
 La collaboration dans Office 365 débute dans l’espace de travail d’application dans Power BI.
 
-1. Dans le service Power BI, sélectionnez la flèche située en regard de Espaces de travail, puis sélectionnez les points de suspension (**…**) en regard du nom de votre espace de travail. 
+1. Dans le service Power BI, sélectionnez la flèche située en regard de Espaces de travail, puis sélectionnez les points de suspension ( **…** ) en regard du nom de votre espace de travail. 
    
    ![Menu Espaces de travail](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Dans ce menu, vous pouvez collaborer avec votre groupe de plusieurs façons : 
@@ -64,7 +64,7 @@ La collaboration dans Office 365 débute dans l’espace de travail d’applicat
 2. En savoir plus sur les [conversations de groupe dans Outlook pour Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-apps-group-workspace-calendar"></a>Planifier un événement dans le calendrier de l’espace de travail de groupe de l’application
-1. Sélectionnez les points de suspension (**…**) en regard du nom de l’espace de travail de votre application \> **Calendrier**. 
+1. Sélectionnez les points de suspension ( **…** ) en regard du nom de l’espace de travail de votre application \> **Calendrier**. 
    
    ![Onglet Calendrier](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    

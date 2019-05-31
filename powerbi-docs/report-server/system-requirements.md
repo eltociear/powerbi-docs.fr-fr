@@ -1,20 +1,20 @@
 ---
 title: Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
 description: Cet article mentionne les configurations matérielle et logicielle requises pour installer et exécuter Power BI Report Server.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/08/2018
-ms.openlocfilehash: 28ff098c0f9e228b485a7eb94830ba3736a1463f
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 063ab8083c3091a7a41ca30e9045ce3a791112d2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383505"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770010"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
 

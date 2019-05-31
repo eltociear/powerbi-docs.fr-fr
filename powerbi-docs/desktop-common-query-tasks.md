@@ -11,10 +11,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239450"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
@@ -48,7 +48,7 @@ Pour commencer, sélectionnez **Excel** , accédez au classeur, puis sélectionn
 
 Vous pouvez sélectionner **Modifier la requête** pour ajuster, ou *mettre en forme* , les données avant de les charger dans Power BI Desktop. Modifier une requête avant le chargement s’avère particulièrement utile pour alléger les jeux de données volumineux. Nous voulons le faire, et nous sélectionnons **Modifier**.
 
-Il est tout aussi facile de se connecter à différents types de données. Nous souhaitons également nous connecter à une ressource web. Sélectionnez **Obtenir des données \> Autres...**, puis **Autre \> Web**.
+Il est tout aussi facile de se connecter à différents types de données. Nous souhaitons également nous connecter à une ressource web. Sélectionnez **Obtenir des données \> Autres...** , puis **Autre \> Web**.
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata_other.png)
 
@@ -63,7 +63,7 @@ Les autres connexions de données sont similaires. Si l’authentification est n
 Pour obtenir une démonstration détaillée de la connexion à des données dans Power BI Desktop, consultez [Connect to Data in Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-to-data) (Se connecter à des données dans Power BI Desktop).
 
 ## <a name="shape-and-combine-data"></a>Mettre en forme et combiner des données
-Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour une démonstration plus complète de la mise en forme et de la combinaison de données, consultez la section **[Mettre en forme et combiner des données dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
+Vous pouvez facilement mettre en forme et combiner des données au moyen de l’Éditeur de requête. Cette section comprend quelques exemples de mise en forme des données. Pour une démonstration plus complète de la mise en forme et de la combinaison de données, consultez la section **[Mettre en forme et combiner des données dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)** .
 
 Dans la section précédente, nous avons connecté deux jeux de données : un classeur Excel et une ressource web. Une fois qu’ils sont chargés dans l’Éditeur de requête, on obtient le résultat suivant, la requête issue de la page web étant sélectionnée (parmi les requêtes disponibles listées dans le volet **Requêtes**, sur le côté gauche de la fenêtre Éditeur de requête).
 

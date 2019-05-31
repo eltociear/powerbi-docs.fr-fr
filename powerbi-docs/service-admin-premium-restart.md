@@ -1,8 +1,8 @@
 ---
 title: Redémarrer une capacité Power BI Premium
 description: Découvrez comment redémarrer une capacité Power BI Premium pour résoudre des problèmes de performance.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7fbd8bd9c7712dbd2476544fef900547310f35fa
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
-ms.translationtype: HT
+ms.openlocfilehash: 214b9fe48d5254e1bd2d436dd873b3c2d1d35f98
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564927"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Redémarrer une capacité Power BI Premium
 
@@ -31,7 +31,7 @@ Power BI s’améliore constamment dans la manière de protéger les utilisateur
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Le processus de redémarrage est-il sûr ? Vais-je perdre des données ?
 
-Tous les tableaux de bord, rapports, données, définitions qui sont enregistrés sur votre capacité sont totalement intacts après un redémarrage. Quand vous redémarrez une capacité, toutes les planifications en cours et actualisations ad-hoc sont arrêtées. Les actualisations redémarrent quand la capacité est disponible. Les utilisateurs qui interagissent avec la capacité perdent tout travail non enregistré. Il est donc préférable qu’ils actualisent leurs navigateurs une fois le redémarrage terminé.
+Tous les tableaux de bord, rapports, données, définitions qui sont enregistrés sur votre capacité sont totalement intacts après un redémarrage. Quand vous redémarrez une capacité, toutes les planifications en cours et actualisations ad-hoc sont arrêtées. Le service tente d’actualisations de nouvelle tentative lorsque la capacité est disponible. Les utilisateurs qui interagissent avec la capacité perdent tout travail non enregistré. Il est donc préférable qu’ils actualisent leurs navigateurs une fois le redémarrage terminé.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Comment redémarrer une capacité ?
 
@@ -57,6 +57,6 @@ Nous vous recommandons également de [superviser vos capacités](service-admin-p
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Qu’est-ce que Power BI Premium ?](service-premium.md)
+[Qu’est-ce que Power BI Premium ?](service-premium-what-is.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

@@ -9,13 +9,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/10/2019
-ms.openlocfilehash: a9f8c6248f9754192009e12bab34d3f1427269c2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.date: 05/9/2019
+ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174795"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454564"
 ---
 # <a name="certified-custom-visuals"></a>Visuels personnalisés certifiés
 
@@ -31,7 +31,7 @@ Le processus de certification est un processus facultatif, et il appartient aux 
 
 Un **visuel personnalisé non certifié** n’est pas forcément unsafe. Certains visuels ne sont pas certifiés car ils ne sont pas conformes à un ou plusieurs [critères de certification](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Citons par exemple les visuels de carte qui se connectent à un service externe ou ceux qui utilisent des bibliothèques commerciales.
 
-Vous êtes développeur web et souhaitez créer vos propres visualisations à ajouter à  **[Microsoft AppSource](https://appsource.microsoft.com)**  ? Pour la marche à suivre, consultez  **[Développer un visuel personnalisé Power BI](developer/custom-visual-develop-tutorial.md)**.
+Vous êtes développeur web et souhaitez créer vos propres visualisations à ajouter à  **[Microsoft AppSource](https://appsource.microsoft.com)**  ? Pour la marche à suivre, consultez  **[Développer un visuel personnalisé Power BI](developer/custom-visual-develop-tutorial.md)** .
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Suppression de visuels personnalisés certifiés Power BI
 
@@ -44,11 +44,34 @@ Microsoft peut supprimer un visuel de la [liste certifiée](#list-of-custom-visu
 Pour faire [certifier](#certified-custom-visuals) un visuel personnalisé, vérifiez qu’il respecte les critères ci-dessous :  
 
 * Approuvé par Microsoft AppSource. Votre visuel personnalisé doit figurer dans notre [Place de marché](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Le visuel personnalisé est écrit avec une API version 1.2 ou ultérieure.
-* Dépôt de code disponible pour revue par l’équipe Power BI (par exemple, code source en JavaScript ou TypeScript accessible dans un format lisible par le biais de GitHub).
+* Visuel personnalisé est écrit avec la version **API v2.5** ou une version ultérieure.
+* Référentiel de code est disponible pour être révisée par l’équipe Power BI (par instance, le code source (JavaScript ou TypeScript) dans un format lisible est accessible, via GitHub).
 
     >[!Note]
     > Vous n’êtes pas obligé de partager publiquement votre code dans Github.
+* Exigences de référentiel de code :
+   * Doit inclure l’ensemble minimal requis de fichiers :
+      * .gitignore
+      * capabilities.json
+      * pbiviz.json
+      * package.json
+      * package-lock.json
+      * tsconfig.json
+   * Ne doit pas inclure le dossier node_modules (ajouter node_modules .gitingore fichier)
+   * **Installez npm** commande ne doit pas retourner des erreurs.
+   * **audit de npm** commande ne doit pas retourner tous les avertissements avec un niveau élevé ou modéré.
+   * **package pbiviz** commande ne doit pas retourner des erreurs.
+   * Doit inclure [TSlint à partir de Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) sans aucune configuration substituée, et cette commande ne doit pas retourner des erreurs lint.
+   * Le package compilé de l’élément visuel personnalisé doit correspondre à package envoyé (le hachage md5 des deux fichiers doit être égale).
+* Exigences de Code source :
+   * L’élément visuel doit prendre en charge [API d’événements de rendu](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Vérifiez aucun code arbitraire/dynamique n’est exécutée (incorrecte : eval(), potentiellement dangereuse de settimeout(), requestAnimationFrame(), setinterval (il s’agit d’une fonction avec l’entrée d’utilisateur), entrée/données utilisateur en cours d’exécution).
+   * Vérifiez le DOM est manipulé en toute sécurité (incorrecte : innerHTML, D3.html (< certaines données/utilisateur entrée >), destiné à assainissement des données / d’entrée utilisateur avant de l’ajouter au DOM.
+   * N’Assurez-vous qu’aucun erreurs/exceptions javascript dans la console du navigateur pour toutes les données d’entrée. Les utilisateurs peuvent utiliser votre élément visuel avec une autre plage de données inattendues, donc l’élément visuel ne doit pas échouer. Vous pouvez utiliser [cet exemple de rapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) comme un jeu de données de test.
+
+* Si toutes les propriétés de capabilities.json sont modifiées, assurez-vous qu’ils n’interrompent pas les rapports de l’utilisateur existant.
+
+* Assurez-vous que l’élément visuel est conforme à la [instructions pour les éléments visuels Power BI](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Aucun filigrane n’est autorisées**.
 
 * Utilise uniquement des composants OSS publics consultables (bibliothèques JS ou code TypeScript publics. Le code source est disponible pour revue et ne présente pas de vulnérabilités connues). Nous ne pouvons pas vérifier un visuel personnalisé à l’aide d’un composant commercial.
 

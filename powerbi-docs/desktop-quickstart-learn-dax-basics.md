@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 64957fa71249c551b4f69b619a12baf03fae6b06
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513726"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Principes fondamentaux de DAX dans Power BI Desktop
@@ -47,9 +47,9 @@ Cette formule inclut les éléments syntaxiques suivants :
 
 **A.** Le nom de la mesure **Total Sales**.
 
-**B.** L’opérateur signe égal (**=**) indique le début de la formule. Après le calcul, un résultat est retourné.
+**B.** L’opérateur signe égal ( **=** ) indique le début de la formule. Après le calcul, un résultat est retourné.
 
-**C.** La fonction DAX **SUM** additionne tous les nombres figurant dans la colonne **Sales[SalesAmount]**. Vous en apprendrez davantage sur les fonctions ultérieurement.
+**C.** La fonction DAX **SUM** additionne tous les nombres figurant dans la colonne **Sales[SalesAmount]** . Vous en apprendrez davantage sur les fonctions ultérieurement.
 
 **D.** Des parenthèses **()** entourent une expression contenant un ou plusieurs arguments. Toutes les fonctions nécessitent au moins un argument. Un argument passe une valeur à une fonction.
 
@@ -91,19 +91,19 @@ Pour effectuer cette tâche, vous devez ouvrir le fichier Contoso Sales Sample P
 
    Vous utilisez la fonction CALCULATE pour filtrer les montants que vous souhaitez additionner par un argument que vous passez à la fonction CALCULATE. Ceci porte le nom d’imbrication de fonctions. La fonction CALCULATE possède au moins deux arguments. Le premier est l’expression à évaluer et le second est un filtre.
    
-4. Après la parenthèse ouvrante **(** de la fonction **CALCULATE**, tapez **SUM** suivi d’un autre parenthèse ouvrante **(**. Nous devons à présent passer un argument à la fonction SUM.
+4. Après la parenthèse ouvrante **(** de la fonction **CALCULATE**, tapez **SUM** suivi d’un autre parenthèse ouvrante **(** . Nous devons à présent passer un argument à la fonction SUM.
 
-5. Commencez à taper **Sal**, puis sélectionnez **Sales [SalesAmount]**, suivi d’une parenthèse fermante **)**. Il s’agit du premier argument de l’expression de votre fonction CALCULATE.
+5. Commencez à taper **Sal**, puis sélectionnez **Sales [SalesAmount]** , suivi d’une parenthèse fermante **)** . Il s’agit du premier argument de l’expression de votre fonction CALCULATE.
     
-6. Tapez une virgule (**,**) suivie d’un espace pour spécifier le premier filtre, puis tapez **PREVIOUSQUARTER**. Il s’agit de notre filtre.
+6. Tapez une virgule ( **,** ) suivie d’un espace pour spécifier le premier filtre, puis tapez **PREVIOUSQUARTER**. Il s’agit de notre filtre.
     
    La fonction temporelle PREVIOUSQUARTER sert à filtrer les résultats de SUM sur la base du trimestre précédent.
     
-7. Après la parenthèse ouvrante **(** de la fonction PREVIOUSQUARTER, tapez **Calendar[DateKey]**.
+7. Après la parenthèse ouvrante **(** de la fonction PREVIOUSQUARTER, tapez **Calendar[DateKey]** .
     
    La fonction PREVIOUSQUARTER possède un seul argument, une colonne contenant une plage de dates contiguë. Dans notre cas, il s’agit de la colonne DateKey de la table Calendar.
     
-8. Vérifiez que les deux arguments passés aux fonctions PREVIOUSQUARTER et CALCULATE sont fermés en tapant deux parenthèses fermantes **))**.
+8. Vérifiez que les deux arguments passés aux fonctions PREVIOUSQUARTER et CALCULATE sont fermés en tapant deux parenthèses fermantes **))** .
     
    La formule doit maintenant ressembler à ceci :
     
@@ -176,7 +176,7 @@ Cette formule inclut les éléments syntaxiques suivants :
 
 **A.** Le nom de la mesure **Store Sales**.
 
-**B.** L’opérateur signe égal (**=**) indique le début de la formule.
+**B.** L’opérateur signe égal ( **=** ) indique le début de la formule.
 
 **C.** La fonction **CALCULATE** évalue une expression, en tant qu’argument, dans un contexte modifié par les filtres spécifiés.
 
@@ -184,9 +184,9 @@ Cette formule inclut les éléments syntaxiques suivants :
 
 **E.** Une mesure **[Total Sales]** dans la même table en tant qu’expression. La mesure Total Sales possède la formule : =SUM(Sales[SalesAmount]).
 
-**F.** Une virgule (**,**) sépare le premier argument d’expression de l’argument de filtre.
+**F.** Une virgule ( **,** ) sépare le premier argument d’expression de l’argument de filtre.
 
-**G.** La colonne complètement référencée, **Channel[ChannelName]**. Il s’agit du contexte de ligne. Chaque ligne de cette colonne spécifie un canal : Store, Online, etc.
+**G.** La colonne complètement référencée, **Channel[ChannelName]** . Il s’agit du contexte de ligne. Chaque ligne de cette colonne spécifie un canal : Store, Online, etc.
 
 **H.** La valeur particulière, **Store** en tant que filtre. Il s’agit du contexte de filtre.
 
