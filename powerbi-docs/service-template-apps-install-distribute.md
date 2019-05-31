@@ -7,26 +7,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: cd3a1f94aa4c965327ea3e5bcb7271326aa3514d
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 2b7b2630e665fca9013920718ff58dd973f01392
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249673"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578566"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Installer et distribuer des applications modèles dans votre organisation - Power BI (préversion)
 
-Les nouvelles *applications modèles* Power BI permettent aux partenaires Power BI de créer des applications Power BI avec peu ou pas de codage et de les déployer ensuite vers n’importe quel client Power BI. Cet article est destiné aux analystes Power BI. Il explique comment installer, personnaliser et distribuer une application modèle qui a été créée par un partenaire Power BI. Si vous êtes intéressé par la création d’applications modèles à distribuer vous-même, consultez [Créer une application modèle dans Power BI](service-template-apps-create.md).
+Vous êtes un analyste de Power BI ? Si, par conséquent, cet article explique comment installer *modèle applications* pour vous connecter à de nombreux services que vous utilisez pour exécuter votre entreprise, tels que Salesforce, Microsoft Dynamics et Google Analytique. Vous pouvez modifier le tableau de bord et rapports pour répondre aux besoins de votre organisation et puis de les distribuer à vos collègues en tant qu’un *application*. 
 
 ![Applications Power BI installées](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Quand vous installez une application modèle qui a été créée par un partenaire Power BI, vous pouvez modifier l’application selon les besoins de votre organisation, puis la distribuer à vos collègues sous forme d’application.  
+Si vous êtes intéressé par la création d’applications modèles à distribuer vous-même, consultez [Créer une application modèle dans Power BI](service-template-apps-create.md). Partenaires Power BI peuvent créer des applications Power BI avec peu ou pas de codage et les déployer sur les clients de Power BI. 
 
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Conditions préalables  
 
-Les prérequis pour installer, personnaliser et distribuer une application modèle sont les suivants :  
+Les prérequis pour installer, personnaliser et distribuer une application modèle sont les suivants : 
 
 - Une [licence Power BI Pro](service-self-service-signup-for-power-bi.md)
 - Une bonne connaissance des [concepts de base de Power BI ](service-basic-concepts.md)
@@ -106,6 +106,6 @@ Une fois que vous avez mis à jour l’application pour votre organisation, vous
 
 
 
-  
+￼ 
 
  
