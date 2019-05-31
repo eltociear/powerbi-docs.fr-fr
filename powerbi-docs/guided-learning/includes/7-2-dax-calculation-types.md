@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 6ed1690ec77880467007200c30038d185c98d6c2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273384"
+---
 Vous pouvez créer deux calculs principaux à l’aide de DAX :
 
 * **Colonnes calculées**
@@ -32,7 +40,7 @@ Vous pouvez créer des colonnes calculées dans Power BI Desktop en sélection
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_2a.png)
 
-Une fois que vous appuyez sur le bouton **Nouvelle colonne**, la **barre de formule** est renseignée avec un nom de colonne de base (que vous modifiez en fonction de votre formule, bien sûr) et l’opérateur **=**, et la nouvelle colonne apparaît dans la grille de données, comme illustré dans l’image suivante.
+Une fois que vous appuyez sur le bouton **Nouvelle colonne**, la **barre de formule** est renseignée avec un nom de colonne de base (que vous modifiez en fonction de votre formule, bien sûr) et l’opérateur **=** , et la nouvelle colonne apparaît dans la grille de données, comme illustré dans l’image suivante.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_3.png)
 
