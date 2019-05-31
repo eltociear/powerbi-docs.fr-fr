@@ -11,11 +11,11 @@ ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 02d81a4ebb92ec199887109c7f2d9afcb6449eda
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276120"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61393190"
 ---
 # <a name="basic-area-chart"></a>Graphique en aires simple
 Le graphique en aires simple (également appelé graphique en aires empilées) est basé sur le graphique en courbes. La zone entre l’axe et la ligne est remplie avec des couleurs indiquant le volume. 
@@ -31,8 +31,8 @@ Les graphiques en aires simples sont conseillés pour :
 * des séries individuelles représentant un ensemble dénombrable physiquement.
 
 ### <a name="prerequisites"></a>Conditions préalables
- - service Power BI
- - Retail Analysis sample
+ - Service Power BI
+ - Exemple analyse de la vente au détail
 
 Pour effectuer la procédure, connectez-vous à Power BI et sélectionnez **Obtenir des données \> Exemples \> Exemple Analyse de la vente au détail > Se connecter**, puis choisissez **Accéder au tableau de bord**. 
 
@@ -44,7 +44,7 @@ Pour effectuer la procédure, connectez-vous à Power BI et sélectionnez **Obt
 3. Ajoutez une nouvelle page de rapport en sélectionnant l’icône représentant un signe « + » de couleur jaune au bas du rapport.
 4. Créez un graphique en aires qui affiche les ventes de l’année actuelle et celles de l’année dernière mois par mois.
    
-   a. Dans le volet Champs, sélectionnez **Sales (Ventes) \> Last Year Sales (Ventes de l’année dernière)** et **This Year Sales > Value (Ventes de cette année > Valeur)**.
+   a. Dans le volet Champs, sélectionnez **Sales (Ventes) \> Last Year Sales (Ventes de l’année dernière)** et **This Year Sales > Value (Ventes de cette année > Valeur)** .
 
    ![](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
 

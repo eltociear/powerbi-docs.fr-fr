@@ -11,11 +11,11 @@ ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
 ms.openlocfilehash: 94e40681d065591db008f8a9062d851e0bd83f61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285757"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61368565"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Combiner des données de vente à partir d’Excel et d’un flux OData
 
@@ -34,7 +34,7 @@ Tout d’abord, importez les données de produit à partir du classeur Excel Pro
    
 2. Sélectionnez la flèche déroulante en regard de **Obtenir des données** dans l’onglet **Accueil** du ruban Power BI Desktop, puis sélectionnez **Excel** dans la liste déroulante **Les plus courants**. 
    
-   ![Obtenir des données](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
+   ![Obtenir les données](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
    
    >[!NOTE]
    >Vous pouvez également sélectionner l’élément **Obtenir des données** lui-même, ou sélectionnez **Obtenir des données** dans la boîte de dialogue **Prise en main** de Power BI, puis sélectionnez **Excel** ou **Fichier** > **Excel** dans la boîte de dialogue **Obtenir des données**, puis sélectionnez **Se connecter**.
@@ -114,7 +114,7 @@ L’éditeur Power Query vous permet de créer des calculs et des champs personn
    
 2. Dans la boîte de dialogue **Colonne personnalisée**, tapez **LineTotal** dans le champ **nouveau nom de colonne**.
 
-3. Dans le champ **Formule de colonne personnalisé** après **=** , entrez **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]**. (Vous pouvez également sélectionner les noms des champs à partir de la case de défilement **Colonnes disponibles** et sélectionner **<< insérer**, au lieu de les taper.) 
+3. Dans le champ **Formule de colonne personnalisé** après **=** , entrez **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Vous pouvez également sélectionner les noms des champs à partir de la case de défilement **Colonnes disponibles** et sélectionner **<< insérer**, au lieu de les taper.) 
 3. Sélectionnez **OK**.
    
    ![Boîte de dialogue Colonne personnalisée](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
@@ -208,7 +208,7 @@ Commencez par créer un histogramme empilé qui utilise des champs des deux requ
    
 2. Sélectionnez **ProductName** sous **Produits** dans le volet **Champs**, ou faites-le glisser sur l’histogramme empilé pour afficher la quantité de chaque produit commandé. 
    
-3. Pour trier les produits du plus commandé au moins commandé, sélectionnez les points de suspension **Plus d’options** (**...** ) dans l’angle supérieur droit de la visualisation, puis sélectionnez **Trier par quantité**.
+3. Pour trier les produits du plus commandé au moins commandé, sélectionnez les points de suspension **Plus d’options** ( **...** ) dans l’angle supérieur droit de la visualisation, puis sélectionnez **Trier par quantité**.
    
 4. Utilisez les poignées dans les angles de l’histogramme empilé pour l’agrandir afin d’afficher davantage de noms de produits. 
    

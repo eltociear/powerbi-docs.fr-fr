@@ -12,11 +12,11 @@ ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 52c0211aea0462e0bf79d7a48808f1f826c09fb6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296084"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60978552"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Partie 1, Ajouter des visualisations à un rapport Power BI
 Cet article explique brièvement comment créer une visualisation dans un rapport à l’aide du service Power BI ou de Power BI Desktop.  Pour un contenu plus avancé, [consultez la partie 2](power-bi-report-add-visualizations-ii.md). Regardez Amanda montrer différentes manières de créer, modifier et mettre en forme les visuels sur un canevas de rapport. Essayez ensuite par vous-même d’utiliser l’[exemple Ventes et marketing](../sample-datasets.md) pour créer votre propre rapport.
@@ -42,7 +42,7 @@ Cet article explique brièvement comment créer une visualisation dans un rappor
    
    ![](media/power-bi-report-add-visualizations-i/pbi_agif_createchart3.gif)
    
-   **Ou, commencez avec un champ géographique **, tel que Geo > City (Ville). Power BI et Bing Cartes créent une visualisation de carte.
+   **Ou, commencez avec un champ géographique** , tel que Geo > City (Ville). Power BI et Bing Cartes créent une visualisation de carte.
    
    ![](media/power-bi-report-add-visualizations-i/power-bi-map.png)
 2. Créez une visualisation, puis modifiez son type. Sélectionnez **Product > Category** (Produit > Catégorie), puis **Product > Count of Product** (Produit > Quantité) pour ajouter ces éléments au puits **Valeurs**.

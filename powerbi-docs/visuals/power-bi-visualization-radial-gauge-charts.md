@@ -12,11 +12,11 @@ ms.date: 09/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 079494a47452ca0ca043032f78fa35c7d1755d11
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282560"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61068077"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Graphiques en jauge radiale dans Power BI
 Un graphique en jauge radiale est en forme d’arc de cercle. Il affiche une seule valeur qui mesure la progression vers un objectif/indicateur de performance clé.  L’objectif (valeur cible) est représenté par la ligne (aiguille). La progression vers l’objectif est représentée par l’ombrage.  La valeur représentant cette progression est indiquée en caractères gras à l’intérieur de l’arc. Toutes les valeurs possibles sont réparties uniformément le long de l’arc, de la valeur minimale (la plus à gauche) à la valeur maximale (la plus à droite).
@@ -69,7 +69,7 @@ Vous pouvez également écouter Will qui vous montre comment créer des élémen
 ### <a name="step-3-set-a-target-value"></a>Étape 3 : Sélectionner la valeur cible
 1. Faites glisser **COGS** vers **Valeur cible** .
 2. Changez l’agrégation en **Moyenne**.
-   Power BI ajoute une aiguille pour représenter la valeur cible **145 480 $**. Comme vous pouvez le remarquer, l’objectif a même été dépassé.
+   Power BI ajoute une aiguille pour représenter la valeur cible **145 480 $** . Comme vous pouvez le remarquer, l’objectif a même été dépassé.
    
    ![](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
    

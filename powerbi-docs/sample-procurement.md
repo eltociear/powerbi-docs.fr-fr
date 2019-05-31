@@ -11,11 +11,11 @@ ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287345"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61233614"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de l’approvisionnement pour Power BI : Visite guidée
 
@@ -74,7 +74,7 @@ Notez plusieurs choses :
 * Dans le graphique en courbes **Total Invoice by Month and Category** : Les dépenses relevant de la catégorie **Direct** sont assez homogènes, tandis que celles de la catégorie **Logistics** (Logistique) connaît un pic en décembre, et celles de la catégorie **Other** (Autre) connaît un pic en février.
 * Dans le plan **Total Invoice by Country/Region** : La plupart de nos dépenses se font aux États-Unis.
 * Dans l’histogramme **Total Invoice by Sub Category** : Les catégories **Hardware** (Matériel) et **Indirect Goods & Services** (Biens et services indirects) sont les principaux postes de dépense.
-* Dans le graphique à barres Total Invoice by Tier : Nous traitons essentiellement avec nos fournisseurs de niveau 1 (les 10 principaux). Cela permet de mieux gérer les relations avec les fournisseurs.
+* Dans le graphique à barres Total Invoice by Tier : La plupart de nos activités s’effectue avec nos fournisseurs de niveau 1 (les 10 principaux). Cela permet de mieux gérer les relations avec les fournisseurs.
 
 ## <a name="spending-in-mexico"></a>Dépenses au Mexique
 Explorons les postes de dépenses au Mexique.

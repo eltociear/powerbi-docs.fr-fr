@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: c8a96918049f2f1898ab80a9368a8d2f0a8fe53a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 567beb29ecdcaf8a07023c8c8c9b32995623534c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286134"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454456"
 ---
 # <a name="data-view-in-power-bi-desktop"></a>Vue Données dans Power BI Desktop
 La **vue Données** vous permet d’inspecter, d’explorer et de comprendre les données dans votre modèle **Power BI Desktop**. Elle diffère de la façon dont vous affichez les données, les colonnes et les tables dans **l’Éditeur de requête**. Avec la vue Données, vous examinez vos données *après* qu’elles sont été chargées dans le modèle.
@@ -28,7 +28,7 @@ Regardons de plus près certains des éléments trouvés dans la **vue Données*
 
 1. **Icône de la vue Données** : Sélectionnez cette icône pour accéder à la vue Données.
 
-2. **Grille de données** : Montre la table sélectionnée et toutes les colonnes et les lignes qu’elle contient. Les colonnes masquées dans la **vue Rapport** sont grisées. Vous pouvez cliquer avec le bouton droit sur une colonne pour afficher des options.
+2. **Grille de données** : Montre la table sélectionnée et toutes les colonnes et les lignes qu’elle contient. Les colonnes masquées dans la **vue Rapport** sont grisées. Vous pouvez avec le bouton droit sur une colonne pour les options.
 
 3. **Ruban de modélisation** : Ici, vous pouvez gérer les relations, créer des calculs, changer le type de données, le format ou la catégorie de données d’une colonne.
 

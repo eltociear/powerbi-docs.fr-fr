@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3fd97374836978a4902a878da141865c271df643
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396835"
+---
 En règle générale, les visualisations sont utilisées pour comparer deux ou plusieurs valeurs différentes. Cependant, parfois au moment de la création de rapports, vous pouvez souhaiter suivre l’évolution d’une métrique ou d’un indicateur de performance clé (KPI) spécifique dans le temps. La façon de procéder dans Power BI Desktop consiste à utiliser un élément visuel de **jauge** ou de **carte à numéro unique**. Pour créer un graphique vide d’un de ces types, sélectionnez l’icône correspondante dans le volet **Visualisations**.
 
 ![](media/3-9-create-gauges-cards/3-9_1.png)

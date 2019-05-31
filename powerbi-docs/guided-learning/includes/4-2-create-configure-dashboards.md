@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 94ff18339d2eb14faebf124786cab7f9ac66393e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263421"
+---
 Les **tableaux de bord** dans Power BI sont des collections sur une page de visualisations qui sont créées dans le service Power BI. Vous créez des tableaux de bord en **épinglant** des visualisations à partir de rapports que vous avez créés et publiés à l’aide de Power BI Desktop, ou des visualisations que vous avez créées dans le service Power BI lui-même. L’**épinglage** d’un élément visuel à un tableau de bord ressemble beaucoup à l’épinglage d’une photo à un tableau en liège sur un mur : il y colle l’élément visuel, dans une zone particulière, pour que d’autres puissent le voir. Pour épingler un élément visuel, ouvrez son rapport sur le service Power BI. Placez votre curseur sur l’élément visuel que vous voulez épingler, puis sélectionnez l’icône **Épingle**.
 
 ![](media/4-2-create-configure-dashboards/4-2_1.png)

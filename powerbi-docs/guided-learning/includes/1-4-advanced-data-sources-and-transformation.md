@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 9eff90168ea221a269a8b5ded712645cca01cd9f
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54083964"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264668"
 ---
 Dans cet article, nous examiner quelques techniques avancées d’importation et de nettoyage de données pour **Power BI Desktop**. Une fois que vous avez mis en forme vos données dans l’**Éditeur de requête** et que vous les avez importées dans **Power BI Desktop**, vous pouvez les examiner de différentes manières. Il existe trois vues dans Power BI Desktop : **Rapport**, **Données** et **Relations**. Vous activez chaque vue en sélectionnant l’icône correspondante dans le coin supérieur gauche du canevas. Dans l’image suivante, la vue **Rapport** est sélectionnée. La vue active porte une barre jaune à côté de son icône.
 

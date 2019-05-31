@@ -11,11 +11,11 @@ ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279984"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61370465"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Afficher les éléments sans données dans Power BI
 
@@ -36,7 +36,7 @@ Pour comprendre comment Power BI détermine quelles données il est pertinent d�
 |Blue     |Small         |
 |Red     |Large         |
 
-Dans cet exemple, Power BI affiche les combinaisons *[Color-Size]* qui existent dans la table *[Product]*. 
+Dans cet exemple, Power BI affiche les combinaisons *[Color-Size]* qui existent dans la table *[Product]* . 
 
 Examinons maintenant une autre combinaison :
 
@@ -59,9 +59,9 @@ Dans cet exemple, Power BI affiche seulement les combinaisons présentes. Par ex
 |Gloss     |Red         |
 |Matte     |Blue         |
 
-Dans la mesure où il n’existe aucune mesure explicite et où les deux tables sont directement liées, Power BI tente d’injecter une mesure de façon à limiter les combinaisons qui en résultent : dans ce cas, il s’agit d’une mesure *CALCULATE(COUNTROWS('Product'))*, qui ne doit pas être vide, puisque *Product* est la table commune aux deux tables.
+Dans la mesure où il n’existe aucune mesure explicite et où les deux tables sont directement liées, Power BI tente d’injecter une mesure de façon à limiter les combinaisons qui en résultent : dans ce cas, il s’agit d’une mesure *CALCULATE(COUNTROWS('Product'))* , qui ne doit pas être vide, puisque *Product* est la table commune aux deux tables.
 
-Par conséquent, Power BI affiche les combinaisons qui possèdent des entrées dans la table Product, ce qui exclut les combinaisons *(« None » + « Blue »)* et *(« Matte » + « Red »)*.
+Par conséquent, Power BI affiche les combinaisons qui possèdent des entrées dans la table Product, ce qui exclut les combinaisons *(« None » + « Blue »)* et *(« Matte » + « Red »)* .
 
 **4. Groupes issus de tables différentes et non liées**
 
@@ -130,12 +130,12 @@ Avec la fonctionnalité **Afficher les éléments sans données** :
 |Gloss     |Blue         |10         |
 |Gloss     |Red         |         |
 |Matte     |Blue         |15         |
-|Aucun     |         |         |
+|None     |         |         |
 
 Les combinaisons *(Gloss-Red)* et *(None, vide)* sont apparues. En voici la raison :
 * Power BI a d’abord considéré ProductStyle[Finish] et sélectionné toutes les valeurs à afficher, ce qui a donné Gloss, Matte, None.
 * À l’aide de chacune de ces valeurs, Power BI a sélectionné toutes les entrées *Product[Color]* correspondantes. 
-* Dans la mesure où *None* ne correspond à aucun *Product[Color]*, une valeur vide s’affiche pour cette valeur.
+* Dans la mesure où *None* ne correspond à aucun *Product[Color]* , une valeur vide s’affiche pour cette valeur.
 
 Il est important de savoir que le mécanisme de sélection de valeurs pour les colonnes est dépendant de l’ordre. On peut le voir comme une opération de *jointure externe gauche* entre les tables. Si l’ordre des colonnes est modifié, les résultats changent également.
 
@@ -181,7 +181,7 @@ Cette section montre l’exemple de modèle de données utilisé dans les exempl
 |---------|---------|---------|
 |1  |Gloss  |Oui |
 |2  |Matte  |Non |
-|3  |Aucun   |Non |
+|3  |None   |Non |
 
 
 |Sales[SaleId]| Sales[ProductId]|   Sales[Date]|    Sales[Quantity]|

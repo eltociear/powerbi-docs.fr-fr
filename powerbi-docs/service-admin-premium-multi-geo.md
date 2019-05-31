@@ -1,8 +1,8 @@
 ---
 title: Prise en charge de plusieurs zones géographiques pour Power BI Premium
 description: Découvrez comment déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: dfa412e32c49e0b3de406f2665fcd9bd6d1a345e
-ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
-ms.translationtype: HT
+ms.openlocfilehash: 7735ce3d6d28f51ca95efbe12394c2e0cb2cba29
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57571976"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564939"
 ---
-# <a name="multi-geo-support-for-power-bi-premium"></a>Prise en charge de plusieurs zones géographiques pour Power BI Premium
+# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Configurer la prise en charge de plusieurs zones géographiques pour Power BI Premium
 
 La fonctionnalité de zones géographiques multiples de Power BI Premium permet à des clients multinationaux de répondre à des exigences de résidence des données régionales, spécifiques à certains secteurs ou en fonction de l’organisation. En tant que client Power BI Premium vous pouvez déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI. Une zone géographique (géographie) peut contenir plusieurs régions. Par exemple, les États-Unis sont une zone géographique, et les USA Centre-Ouest et les USA Centre Sud sont des régions des États-Unis. Vous pouvez choisir de déployer du contenu vers l’une des zones géographiques suivantes :
 
@@ -35,7 +35,7 @@ Les zones géographiques multiples ne sont pas disponibles pour Power BI Germany
 
 Les zones géographiques multiples sont désormais également disponibles dans Power BI Embedded. Pour en savoir plus, lisez [Prise en charge de plusieurs zones géographiques dans Power BI Embedded](developer/embedded-multi-geo.md).
 
-## <a name="using-multi-geo"></a>Utilisation des zones géographiques multiples
+## <a name="enable-and-configure"></a>Activer et configurer
 
 Pour de nouvelles capacités, activez les zones géographiques multiples en sélectionnant une région autre que la région par défaut dans la liste déroulante.  Chaque capacité disponible indique la région où elle est actuellement située, par exemple, les **USA Centre-Ouest**.
 
@@ -68,7 +68,7 @@ Ces éléments restent dans la région d’origine pour le locataire :
 - Autorisations
 - Informations d'identification de jeux de données
 
-## <a name="view-capacity-regions"></a>Afficher les régions de la capacité
+## <a name="view-capacity-regions"></a>Voir les régions de capacité
 
 Dans le portail d’administration, vous pouvez afficher toutes les capacités de votre client Power BI et les régions où elles se trouvent actuellement.
 
@@ -98,7 +98,7 @@ Vous pouvez prendre des espaces de travail en dehors de la capacité Multi-Géo 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Power BI Premium : Qu’est-ce que c’est ?](service-premium.md)
+- [Qu’est-ce que Power BI Premium ?](service-premium-what-is.md)
 - [Zones géographiques multiples pour des capacités Power BI Embedded](developer/embedded-multi-geo.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

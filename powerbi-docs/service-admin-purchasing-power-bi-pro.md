@@ -11,11 +11,11 @@ ms.date: 10/21/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 15cd5e021969a050937b9d67eb7695f4fcde07c0
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383083"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61188433"
 ---
 # <a name="purchase-and-assign-power-bi-pro-licenses"></a>Acheter et attribuer des licences Power BI Pro
 
@@ -53,13 +53,13 @@ Suivez ces étapes pour acheter des licences Power BI Pro :
 
     ![Abonnement Power BI Pro](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-04.png)
 
-5. Placez le curseur sur les points de suspension (**. . .**) pour l’abonnement souhaité et sélectionnez **Acheter maintenant**.
+5. Placez le curseur sur les points de suspension ( **. . .** ) pour l’abonnement souhaité et sélectionnez **Acheter maintenant**.
 
     ![Acheter maintenant](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
 
 6. Choisissez **Paiement mensuel** ou **Paiement pour toute une année**, en fonction de vos préférences de facturation.
 
-7. Sous **Combien d’utilisateurs voulez-vous ?**, entrez le nombre de licences souhaité, puis sélectionnez **Commander maintenant** pour finaliser la transaction.
+7. Sous **Combien d’utilisateurs voulez-vous ?** , entrez le nombre de licences souhaité, puis sélectionnez **Commander maintenant** pour finaliser la transaction.
 
 8. Vérifiez que l’abonnement acquis apparaît maintenant sur la page **Abonnements**.
 

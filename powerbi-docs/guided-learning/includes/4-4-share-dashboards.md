@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6755233733c4500865615c28850793aae7972d9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263401"
+---
 Nous avons déjà vu comment Power BI vous aide à rechercher des données, à les collecter dans un modèle de données et à générer des rapports et des visualisations sur l’utilisation de ces données. Nous avons également vu comment vous pouvez publier ces rapports dans le service Power BI et créer des tableaux de bord qui vous permettent d’analyser vos informations au fil du temps. Toutes ces fonctionnalités sont encore plus puissantes quand vous partagez vos informations avec d’autres personnes de votre organisation. Heureusement, il est facile de partager vos tableaux de bord.
 
 Pour partager un tableau de bord, ouvrez-le dans le service Power BI, puis sélectionnez le lien **Partager** en haut à droite.

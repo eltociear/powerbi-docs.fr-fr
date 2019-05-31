@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 80905abfe271ebd5d0aeec73d1287428e281da99
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f67f73dd66da7f1d3e8d84a3373a15d20f81645e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276672"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65513797"
 ---
 # <a name="publish-from-power-bi-desktop"></a>Publier à partir de Power BI Desktop
 Lorsque vous publiez un fichier **Power BI Desktop** vers le **service Power BI**, les données du modèle et des rapports que vous avez créés dans la vue **Rapport** sont publiées dans votre espace de travail Power BI. Un nouveau jeu de données du même nom et tous les rapports seront visibles dans le navigateur de votre espace de travail.
@@ -28,7 +28,7 @@ La publication à partir de **Power BI Desktop** a le même effet que l’util
 > 
 
 ## <a name="to-publish-a-power-bi-desktop-dataset-and-reports"></a>Pour publier un jeu de données et des rapports Power BI Desktop
-1. Dans Power BI Desktop\>**Fichier**\>**Publier**\>**Publier sur Power BI** ou cliquez sur**Publier** dans le ruban.  
+1. Dans Power BI Desktop, sélectionnez **fichier** \> **publier** \> **publier sur Power BI** ou cliquez sur **publier** sur le ruban.  
 
    ![Bouton Publier](media/desktop-upload-desktop-files/pbid_publish_publishbutton.png)
 
@@ -44,7 +44,7 @@ Quand c’est terminé, vous recevez un lien vers votre rapport. Cliquez sur le 
 ## <a name="re-publish-or-replace-a-dataset-published-from-power-bi-desktop"></a>Republier ou remplacer un jeu de données publié à partir de Power BI Desktop
 Lorsque vous publiez un fichier **Power BI Desktop**, le jeu de données et les rapports que vous avez créés dans **Power BI Desktop** sont chargés sur votre site Power BI. Lorsque vous republiez votre fichier **Power BI Desktop**, le jeu de données de votre site Power BI est remplacé par le jeu de données mis à jour à partir du fichier **Power BI Desktop**.
 
-Tout cela est assez simple, mais vous devez savoir un certain nombre de choses :
+C’est tout simple, mais il existe quelques éléments à connaître :
 
 * Si vous avez déjà plusieurs jeux de données dans Power BI avec le même nom que le fichier **Power BI Desktop**, la publication peut échouer. Veillez à ce que chaque jeu de données dans Power BI porte un nom unique. Vous pouvez également renommer le fichier et le publier, créant ainsi un jeu de données du même nom que le fichier.
 * Si vous renommez ou supprimez une colonne ou une mesure, les visualisations que vous avez déjà dans Power BI avec ce champ peuvent être rompues. 

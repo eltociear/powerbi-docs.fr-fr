@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 86774df016627e8ebd7f20f9432025ebd5dfdebb
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61164465"
+---
 Une fois l’importation terminée, la nouvelle application apparaît sur la page Applications.
 
 1. Dans le volet de navigation de gauche, sélectionnez **Applications**, puis l’application.

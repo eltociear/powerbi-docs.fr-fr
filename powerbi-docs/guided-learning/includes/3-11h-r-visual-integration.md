@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 226fdd59b00dc2daa625f9b1941599d21cc35087
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396815"
+---
 Avec Power BI Desktop, vous pouvez effectuer une analyse analytique et statistique et créer des éléments visuels agréables grâce à l’intégration à R. Vous pouvez héberger ces visualisations R dans le rapport Power BI Desktop.
 
 Quand vous sélectionnez l’icône d’**élément visuel R** à partir du volet **Visualisations**, Power BI crée sur le canevas un espace réservé destiné à héberger votre élément visuel R, puis vous présente un éditeur de script R que vous pouvez utiliser directement sur le canevas. Quand vous ajoutez des champs à l’élément visuel R, Power BI Desktop les ajoute parallèlement au volet de l’éditeur de script R.

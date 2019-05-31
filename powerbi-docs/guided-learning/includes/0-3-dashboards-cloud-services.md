@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d600581b9d1df8c8436da45e9629fccb79873c21
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260255"
+---
 Comme nous l’avons vu, le flux de travail classique dans Power BI consiste à créer un rapport dans Power BI Desktop, à le publier dans le service Power BI, puis à le partager avec d’autres utilisateurs pour leur permettre de le consulter dans le service ou sur une application mobile.
 
 Mais comme tout le monde ne connaît pas le service Power BI, faisons un bref tour d’horizon de ce service et expliquons une méthode simple et courante pour créer rapidement des éléments visuels dans Power BI : les *packs de contenu*.

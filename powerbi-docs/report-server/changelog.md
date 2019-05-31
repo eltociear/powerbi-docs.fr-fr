@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 3897464cbc2a233f7b1aa6ee2f0fd70d39ff16aa
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: bb25bfb9b3278ef5eccfd54436a6de430d17677d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872498"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65990622"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -22,10 +22,34 @@ Ce journal des modifications a trait à Power BI Report Server. Il répertorie l
 
 Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés dans Power BI Report Server](whats-new.md). 
 
+## <a name="may-2019"></a>Mai 2019
+
+- **Power BI Report Server**          
+    - *Version 1.5.7074.36177 (Build 15.0.1102.371), publié le : 21 mai 2019*
+        - Résolutions de bogues
+            - Rapports paginés
+                - Correctif pour toujours activer l’incorporation de police pdf.
+                - Correctif pour définir des cookies envoyés via le protocole https comme sécurisé
+                - Résoudre les problèmes avec pop ups en raison d’erreurs de script
+                - Résoudre les problèmes d’affichage avec l’application Mobile sur les téléphones Android
+                - Correctif pour le navigateur de temps de rapport Mobile afficher les numéros de semaine correct, quel que soit le début de l’année fiscale
+                - Ajout 'RestrictedResourceMimeTypeForUpload' exclue de la propriété configurable pour les administrateurs de spécifier les types mime
+         - Fonctionnalités
+            - Ajout de prise en charge des visuels approuvé à PBIRS
+
+- **Power BI Desktop optimisé pour Power BI Report Server**
+    - *Version : 2.69.5467.1801 (mai 2019), publié le : 21 mai 2019*
+        - Corrections de bogues
+            - Correctif pour éviter la rentrée des informations d’identification lors du chargement PBIX à PBIRS
+            - Correctifs de l’ouverture de documents avec # dans le nom de fichier
+            - Ajout d’un lien de navigation arrière sur la fenêtre de sélection de PBIRS plus facile
+            - Corriger en mode de contraste élevé dans PBIRS pour afficher le bouton précédent, afficher visual messages d’avertissement.
+            - Zone de dessin des correctifs de l’interface utilisateur au volet de sélection, mise à l’échelle.
+
 ## <a name="january-2019"></a>Janvier 2019
 
 - **Power BI Report Server**          
-    - *Version 1.4.7024.16477 (Build 15.0.1102.299), date de publication : 28 mars 2019*
+    - *Version 1.4.7024.16477 (Build 15.0.1102.299), publié le : 28 mars 2019*
         - Résolutions de bogues
             - Rapports Power BI
                 - Résolution du problème des informations d’identification de base lors de l’utilisation d’une requête directe pour SAP Hana et SAP BW
@@ -43,7 +67,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - Rapports paginés
                 - Résolution du problème de mise à jour de l’utilisation d’une source de données partagée pour un rapport
 
-    - *Version 1.4.6960.38798 (Build 15.0.1102.222), date de publication : 22 janvier 2019*
+    - *Version 1.4.6960.38798 (Build 15.0.1102.222), date de publication : 22 janvier 2019*
         - Fonctionnalités
             - Rapports Power BI 
                 - Prise en charge de la sécurité au niveau des lignes
@@ -65,17 +89,17 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - Problèmes d’affichage des visuels dans l’application Power BI Mobile après une période d’inactivité
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
-    - *Version : 2.65.5313.1562 (janvier 2019), date de publication : 30 janvier 2019*
+    - *Version : 2.65.5313.1562 (janvier 2019), date de publication : 30 janvier 2019*
         - Les icônes de raccourci et épinglées restent après la désinstallation de Power BI Report Server
         - Correction de l’épinglage de Power BI Report Server dans le menu Démarrer qui donnait du texte noir sur une icône noire
 
-    - *Version : 2.65.5313.1421 (janvier 2019), date de publication : 22 janvier 2019*
+    - *Version : 2.65.5313.1421 (janvier 2019), date de publication : 22 janvier 2019*
         - Contient les changements nécessaires pour la connexion à Power BI Report Server (janvier 2019)  
 
 ## <a name="august-2018"></a>Août 2018
 
 - **Power BI Report Server**
-    - *Version 1.3.6816.37243 (Build 15.0.2.557), date de publication : 30 août 2018*
+    - *Version 1.3.6816.37243 (Build 15.0.2.557), publiée : 30 août 2018*
         - Corrections de bogues
             - Correction d’un problème qui survenait lorsque le serveur était mis à niveau depuis des versions antérieures de PBI Report Server où une redirection de liaison n’était pas mise à jour. Les clients voyaient ceci :      
             *`
@@ -84,27 +108,27 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
              
             - Le bogue de transparence de l’étiquette de données a été corrigé.
             
-    - *Version 1.3.6801.38816 (Build 15.0.2.540), date de publication : 15 août 2018*
+    - *Version 1.3.6801.38816 (Build 15.0.2.540), publiée : 15 août 2018*
         - Fonctionnalités
             - La prise en charge de DirectQuery avec authentification unique SAP HANA avec Kerberos est désormais disponible pour les rapports Power BI
             - API des visuels personnalisés livrée avec la version - version 1.13.0
             - Les visuels personnalisés utiliseront comme solution de repli une version antérieure compatible avec la version actuelle de l’API du serveur (si elle est disponible)
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
-    - *Version : 2.61.5192.641 (August 2018), publiée : 15 août 2018*
+    - *Version : 2.61.5192.641 (August 2018), publiée : 15 août 2018*
         - Contient les modifications nécessaires pour la connexion à Power BI Report Server (août 2018)         
         
 ## <a name="march-2018"></a>Mars 2018
 
 - **Power BI Report Server**
-    - *Version 1.2.6690.34729 (Build 15.0.2.402), date de publication : 27 avril 2018*
+    - *Version 1.2.6690.34729 (Build 15.0.2.402), publiée : 27 avril 2018*
         - Corrections de bogues
             - Activer la migration des catalogues SQL Server Reporting Services 2017
             - Pour les rapports Power BI (PBIX)
                 - Les rapports peuvent être actualisés lorsqu’un serveur est configuré pour utiliser l’authentification personnalisée
                 - La modification des propriétés d’un rapport ne réinitialise pas les informations d’identification de la source de données
             - Pour les rapports paginés (RDL)
-                - L’utilisation de `Lookup()` ou de fonctions dérivées telles que `LookupSet()` et `MultiLookup()` dans RDL Expressions ne génère plus de résultats dans `#Error`
+                - L’utilisation de `Lookup()` ou de fonctions dérivées telles que `LookupSet()` et `MultiLookup()` dans RDL Expresssions ne génère plus de résultats dans `#Error`
                 - Les rapports liés respectent le format de page du rapport cible lors de l’impression
                 - Des abonnements peuvent être créés pour les rapports liés qui utilisent des paramètres en cascade
                 - Les paramètres par défaut à valeurs multiples peuvent être modifiés lors de l’utilisation de IE11
@@ -115,13 +139,13 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
                 - Les courbes de tendance sont actualisées lors de la mise à jour des données
             - Améliorations de la stabilité globale
 
-    - *Version 1.2.6660.39920 (Build 15.0.2.389), date de publication : 28 mars 2018*
+    - *Version 1.2.6660.39920 (Build 15.0.2.389), publiée : 28 mars 2018*
         - Corrections de bogues
             - Pour les Rapports Power BI (PBIX), le correctif pour Exporter les données ne fonctionne pas à partir de Power BI Visuals
             - Pour les Rapports Power BI (PBIX), le correctif pour les filtres URL ne fonctionne pas
             - Pour les Rapports paginés (RDL), le correctif pour les images qui ne s’affichent pas correctement dans IE11 après la mise à niveau vers Power BI Report Server version publiée en mars
 
-    - *Version 1.2.6648.38132 (Build 15.0.2.378), date de publication : 19 mars 2018*
+    - *Version 1.2.6648.38132 (Build 15.0.2.378), publiée : 19 mars 2018*
         - Mises à jour de sécurité
         - Améliorations de l’accessibilité
         - Corrections de bogues
@@ -140,30 +164,30 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
 ## <a name="october-2017"></a>Octobre 2017
 
 - **Power BI Report Server**
-    - *Version 1.1.6582.41691 (Build 14.0.600.442), date de publication : 10 janvier 2018*
+    - *Version 1.1.6582.41691 (Build 14.0.600.442), publiée : 10 janvier 2018*
         - Mises à jour de sécurité
         - Résolutions de bogues
             - Correctif pour Model.GetParameters retournant 400
             - Correctif permettant d’affecter des rapports paginés (RDL) existants à un jeu de données partagé
             - Correctif pour ExecutionNotFoundException lors de l’exportation d’un rapport avec différentes valeurs de paramètre au format PDF
 
-    - *Version 1.1.6551.5155 (Build 14.0.600.438), date de publication : 11 décembre 2017*
+    - *Version 1.1.6551.5155 (Build 14.0.600.438), publiée : 11 décembre 2017*
         - Résolutions de bogues
             - Échec de l’enregistrement des données après actualisation pour certains rapports Power BI Desktop.
 
-    - *Version 1.1.6530.30789 (Build 14.0.600.437), date de publication : 17 novembre 2017*
+    - *Version 1.1.6530.30789 (Build 14.0.600.437), publiée : 17 novembre 2017*
         - Résolutions de bogues
             - Correctif pour les scénarios d’authentification de base 
             - Correctif servant à corriger le fait que les jours de la semaine n’étaient pas sélectionnables sur la page de planification pour Abonnements, Plans d’actualisation du cache et Captures instantanées d'historique sur le portail
             - Pour les rapports paginés (RDL), correctif corrigeant le problème suivant : quand des expressions de la zone de texte ont la propriété CanGrow définie sur false, aucune valeur ne s’affiche et les polices et couleurs sont erronées
             - Pour les rapports Power BI (PBIX), correctif corrigeant le problème suivant : l’ajout de légendes à un graphique en courbes restitue un visuel vide
 
-    - *Version 1.1.6514.9163 (Build 14.0.600.434), date de publication : 1er novembre 2017*
+    - *Version 1.1.6514.9163 (Build 14.0.600.434), publiée : 1er novembre 2017*
         - Résolutions de bogues
             - Correctif des problèmes de fiabilité de chargement pour les rapports PBIX de plus de 500 Mo
             - Résoudre le problème de chargement de données pour les rapports PBIX de plus de 1 Go
 
-    - *Version 1.1.6513.3500 (Build 14.0.600.433), date de publication : 31 octobre 2017*
+    - *Version 1.1.6513.3500 (Build 14.0.600.433), publiée : 31 octobre 2017*
         - Fonctionnalités
             - Prise en charge du modèle de données incorporée
             - Affichage de classeur Excel (avec l’intégration d’Office Online Server activée)
@@ -176,44 +200,44 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - Améliorations de l’accessibilité
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
-    - *Version : 2.51.4885.3981 (Octobre 2017), publiée : 10 avril 2018*
+    - *Version : 2.51.4885.3981 (Octobre 2017), publiée : 10 avril 2018*
         - Mises à jour de sécurité
 
-    - *Version : 2.51.4885.2501 (Octobre 2017), publiée : 10 janvier 2018*
+    - *Version : 2.51.4885.2501 (Octobre 2017), publiée : 10 janvier 2018*
         - Mises à jour de sécurité
 
-    - *Version : 2.51.4885.1423 (Octobre 2017), publiée : 17 novembre 2017*
+    - *Version : 2.51.4885.1423 (Octobre 2017), publiée : 17 novembre 2017*
         - Résolutions de bogues
             - Correctif du problème suivant : la version 32 bits de Power BI Desktop ne parvient pas à s’exécuter sur les systèmes d’exploitation x86
             - Pour les rapports Power BI (PBIX), correctif de l’affichage du quadrillage de l’axe x
             - Autres correctifs mineurs de bogues
 
-    - *Version : 2.51.4885.1041 (Octobre 2017), publiée : 31 octobre 2017*
+    - *Version : 2.51.4885.1041 (Octobre 2017), publiée : 31 octobre 2017*
         - Fonctionnalités
             - Contient les modifications requises pour la connexion avec Power BI Report Server (octobre 2017)
 
 ## <a name="june-2017"></a>Juin 2017
 
 - **Power BI Report Server**
-    - *Build 14.0.600.309, date de publication : 10 janvier 2018*
+    - *Build 14.0.600.309, publiée : 10 janvier 2018*
         - Mises à jour de sécurité
 
-    - *Build 14.0.600.305, date de publication : 19 septembre 2017*  
+    - *Build 14.0.600.305, publiée : 19 septembre 2017*  
         - Résolutions de bogues
             - Mise à jour vers la dernière version [du contrôle web Bing Cartes](https://msdn.microsoft.com/library/mt712542.aspx)
 
-    - *Build 14.0.600.301, date de publication : 11 juillet 2017*
+    - *Build 14.0.600.301, publiée : 11 juillet 2017*
         - Résolutions de bogues
             - La balise `{{UserId}}` est remplacée par des informations d’identification stockées plutôt que par l’utilisateur qui exécute le rapport dans Rapports Power BI
             - Échec du rendu de certaines images dans des rapports de Power BI Report Server
             - Impossibilité de modifier le nom d’un rapport Power BI dans Power BI Report Server
             - Impossibilité de charger des éléments visuels personnalisés dans l’application Power BI Mobile (nécessite la réinstallation de l’application mobile pour effacer le cache local)
 
-    - *Build 14.0.600.271, date de publication : 12 juin 2017*
+    - *Build 14.0.600.271, publiée : 12 juin 2017*
         - Publication initiale de Power BI Report Server
 
 - **Power BI Desktop optimisé pour Power BI Report Server**
-    - *Version : 2.47.4766.4901 (Juin 2017), publiée : 10 janvier 2018*
+    - *Version : 2.47.4766.4901 (Juin 2017), publiée : 10 janvier 2018*
         - Mises à jour de sécurité
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -224,4 +248,4 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
 [Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
 [Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
-D’autres questions ? [Essayez d’interroger la Communauté Power BI](https://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

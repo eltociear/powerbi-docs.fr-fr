@@ -1,20 +1,20 @@
 ---
 title: Bonnes pratiques relatives aux performances de Power BI Embedded
 description: Cet article fournit des conseils relatifs aux bonnes pratiques de l’analytique incorporée
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-embedded
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 50fbb175640e38431db62df34276417f1080e42a
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: ac8052b78e452f5da1f3db8988a180923c08e0b6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430347"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61343165"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI Embedded
 
@@ -26,7 +26,7 @@ La méthode Powerbi.embed() reçoit peu de paramètres pour incorporer un rappor
 
 ### <a name="embed-url"></a>URL incorporé
 
-Évitez de générer l’URL incorporé. Au lieu de cela, assurez-vous d’obtenir l’URL incorporé en appelant l’API [Obtenir des rapports](/rest/api/power-bi/reports/getreportsingroup), [Obtenir des tableaux de bord](/rest/api/power-bi/dashboards/getdashboardsingroup), ou [Obtenir des vignettes](/rest/api/power-bi/dashboards/gettilesingroup). Nous avons ajouté un nouveau paramètre à l’URL nommé **_config_**, utilisé pour l’amélioration des performances.
+Évitez de générer l’URL incorporé. Au lieu de cela, assurez-vous d’obtenir l’URL incorporé en appelant l’API [Obtenir des rapports](/rest/api/power-bi/reports/getreportsingroup), [Obtenir des tableaux de bord](/rest/api/power-bi/dashboards/getdashboardsingroup), ou [Obtenir des vignettes](/rest/api/power-bi/dashboards/gettilesingroup). Nous avons ajouté un nouveau paramètre à l’URL nommé **_config_** , utilisé pour l’amélioration des performances.
 
 ### <a name="permissions"></a>Autorisations
 

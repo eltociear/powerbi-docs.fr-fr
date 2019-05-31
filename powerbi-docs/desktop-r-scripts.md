@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 188669525a210afc516cc9740d5d7e7c5682ea93
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514734"
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>Exécuter des scripts R dans Power BI Desktop
@@ -41,7 +41,7 @@ Lors de la préparation et l’exécution d’un script R dans Power BI Desktop,
 * Lorsque vous définissez le répertoire de travail dans le script R, vous *devez* définir un chemin d’accès complet vers le répertoire de travail, au lieu d’un chemin d’accès relatif
 
 ### <a name="run-your-r-script-and-import-data"></a>Exécuter votre script R et importer des données
-1. Dans Power BI Desktop, le connecteur de données du script R se trouve dans **Obtenir des données**. Pour exécuter votre script R, sélectionnez **Obtenir des données &gt; Plus...**, puis sélectionnez **Autres &gt; Script R**, comme illustré dans l’image suivante :
+1. Dans Power BI Desktop, le connecteur de données du script R se trouve dans **Obtenir des données**. Pour exécuter votre script R, sélectionnez **Obtenir des données &gt; Plus...** , puis sélectionnez **Autres &gt; Script R**, comme illustré dans l’image suivante :
    
    ![](media/desktop-r-scripts/r-scripts-1.png)
 2. Si R est installé sur votre ordinateur local, la dernière version installée est sélectionnée comme votre moteur R. Copiez simplement votre script dans la fenêtre de script, puis cliquez sur **OK**.

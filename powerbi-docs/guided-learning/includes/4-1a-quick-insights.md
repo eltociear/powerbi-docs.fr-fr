@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6424f63d992eaa7c8a4a8a5f76765b6aeb6104d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263404"
+---
 Quand vous travaillez avec un tableau de bord, un rapport ou un jeu de données dans le service Power BI, vous pouvez demander à Power BI de rechercher des informations rapides sur les données. Dans Power BI, dans la section **Jeux de données** du volet gauche, sélectionnez les *points de suspension* (...) en regard du jeu de données qui vous intéresse. Un menu d’options s’affiche et vous verrez, à l’extrême droite, une option nommée **Informations rapides**.
 
 ![](media/4-1a-quick-insights/4-1a_1.png)

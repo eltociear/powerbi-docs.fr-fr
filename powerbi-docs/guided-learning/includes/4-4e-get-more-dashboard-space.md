@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 605ef74cc97843cc475a677f5fa2ebdbdaec909a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263394"
+---
 Vous constaterez peut-être que, parfois, quand vous créez vos tableaux de bord, vous avez plus de contenu que ce qui peut tenir sur le canevas. Il existe certaines solutions qui vous permettent de gérer la façon dont l’espace de votre tableau de bord s’affiche, afin de pouvoir obtenir une vue complète du contenu de votre tableau de bord.
 
 La méthode la plus simple d’afficher l’ensemble de votre tableau de bord dans un seul écran consiste à sélectionner le bouton **Mode plein écran** en haut à droite dans le tableau de bord.

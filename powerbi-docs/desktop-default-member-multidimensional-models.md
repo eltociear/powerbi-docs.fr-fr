@@ -11,11 +11,11 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 01b0cdf70c985169d474a130ed4ad846ad708963
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284745"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61308837"
 ---
 # <a name="default-member-in-multidimensional-models-in-power-bi"></a>Membre par défaut dans des modèles multidimensionnels dans Power BI
 
@@ -36,7 +36,7 @@ Supposons par exemple que nous ayons une colonne *Devise* dont le membre par dé
 * Dans cet exemple, si l’on a une carte qui indique *Total des ventes*, le membre par défaut est appliqué à la valeur et l’on voit les ventes correspondant à « USD ».
 * Si l’on fait glisser *Devise* dans le volet des cartes de filtrage, la valeur par défaut sélectionnée est *USD*. La valeur de *Total des ventes* reste la même, car le membre par défaut est appliqué.
 * Toutefois, si l’on désélectionne la valeur *USD* de la carte de filtrage, le membre par défaut de *Devise* est désactivé : *Total des ventes* reflète maintenant toutes les devises.
-* Par conséquent, lorsque l’on sélectionne une autre valeur dans la carte de filtrage (par exemple, *EUR*), en parallèle du membre par défaut, *Total des ventes* reflète le filtre *Devise {USD, EUR}*.
+* Par conséquent, lorsque l’on sélectionne une autre valeur dans la carte de filtrage (par exemple, *EUR*), en parallèle du membre par défaut, *Total des ventes* reflète le filtre *Devise {USD, EUR}* .
 
 ## <a name="grouping-behavior"></a>Comportement de regroupement
 

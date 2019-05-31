@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 7415008e3e1faf3aa2665c643523db2e861bfe85
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396800"
+---
 Outre des éléments visuels liés aux données, vous pouvez ajouter des éléments statiques tels que des zones de texte, des images et des formes pour améliorer la conception visuelle de vos rapports. Pour ajouter un élément visuel, sélectionnez **Zone de texte**, **Image** ou **Formes** sous l’onglet **Accueil**.
 
 ![](media/3-10-create-shapes-images/3-10_1.png)

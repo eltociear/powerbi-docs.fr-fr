@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 74d45bf5fcaf51c29d1f1818b3d14d85d73ff086
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396830"
+---
 Dans cet article, vous allez apprendre à créer des graphiques à barres, des graphiques à secteurs et des treemaps et à les personnaliser en fonction de vos rapports.
 
 Il existe deux façons de créer une visualisation dans Power BI Desktop :

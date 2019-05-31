@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3548f02e91c6ebc5a2ea985777cdaceda9661185
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256281"
+---
 Si vous voulez effectuer le suivi de vos données pendant que vous êtes en déplacement, vous pouvez utiliser une des applications mobiles de Power BI pour les appareils iOS, Android et Windows.
 
 Quand vous utilisez l’application Power BI, commencez par vous connecter à votre compte à l’aide des informations de votre compte de service Power BI. Sur un appareil mobile Windows (dans le cas présent, une tablette), la connexion se présente comme suit.

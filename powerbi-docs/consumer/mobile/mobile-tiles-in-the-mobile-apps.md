@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: aa0827c0be31d65db7bff2c6e2476e5db59b2895
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286401"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60977993"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Explorer les vignettes dans les applications mobiles Power BI
 S’applique à :
@@ -71,7 +71,7 @@ Ensuite, dans les applications mobiles Power BI, vous ouvrez des vignettes en mo
    * Appuyer sur le graphique pour déplacer la barre dans un graphique en courbes, à barres, à colonnes ou en bulles, pour afficher les valeurs d’un point spécifique dans la visualisation.  
    * Appuyez sur l’icône de partage de capture instantanée ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) pour [annoter et partager la vignette](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) avec d’autres utilisateurs.
    * Cliquez sur l’icône Ouvrir le rapport ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) pour [afficher le rapport](mobile-reports-in-the-mobile-apps.md) dans l’application mobile.
-3. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, lorsque vous appuyez sur le bouton de sélection vertical (**...**), vous pouvez afficher l’option **Ouvrir le lien** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) :
+3. Parfois, le créateur du tableau de bord ajoute un lien sur une vignette. Le cas échéant, lorsque vous appuyez sur le bouton de sélection vertical ( **...** ), vous pouvez afficher l’option **Ouvrir le lien** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png) :
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    

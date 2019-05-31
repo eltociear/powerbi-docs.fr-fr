@@ -1,21 +1,21 @@
 ---
 title: Analytique incorporée permettant d’incorporer du contenu Power BI dans une application pour son organisation
 description: Découvrez comment intégrer ou incorporer un rapport, un tableau de bord ou une vignette dans une application avec les API Power BI dans le cadre de l’analytique incorporée pour votre organisation. Découvrez comment intégrer Power BI dans votre application à l’aide de logiciels et d’outils d’analytique incorporée, ainsi que d’outils d’informatique décisionnelle incorporés.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 03/12/2019
-ms.openlocfilehash: 34d7ec423f3d4cb0f7487c78eff68c580ff0489e
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757458"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61355024"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -116,17 +116,17 @@ Pour récupérer la valeur **applicationId**, suivez ces étapes :
 
 2. Dans le volet de navigation de gauche, sélectionnez **Tous les services**, puis **Inscriptions d’applications**.
 
-    ![Recherche d’inscription d’application](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-
 3. Sélectionnez l’application ayant besoin de la valeur **applicationId**.
 
-    ![Choisir l’application](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Choisir l’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
 4. Un **ID d’application** est listé au format GUID. Utilisez cet **ID d’application** comme **applicationId** de l’application.
 
-    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
 ### <a name="application-secret"></a>Secret de l’application
+
+Cet attribut est uniquement nécessaire pour l’authentification au moyen d’un [principal de service](embed-service-principal.md).
 
 Renseignez les informations **ApplicationSecret** à partir de la section **Clés** de votre section **Inscriptions d’applications** dans **Azure**.  Cet attribut fonctionne quand vous utilisez un [principal de service](embed-service-principal.md).
 
@@ -136,23 +136,17 @@ Pour obtenir la valeur **ApplicationSecret**, effectuez les étapes suivantes :
 
 2. Dans le volet de navigation de gauche, sélectionnez **Tous les services**, puis **Inscriptions des applications**.
 
-    ![Recherche d’inscription d’application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
-
 3. Sélectionnez l’application qui doit utiliser la valeur **ApplicationSecret**.
 
-    ![Choisir une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Choisir une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
-4. Sélectionnez **Paramètres**.
+4. Sélectionnez **certificats et clés secrètes** sous **gérer**.
 
-    ![Sélectionner Paramètres](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Sélectionnez **Clés**.
-
-    ![Sélectionner Clés](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Sélectionnez **nouvelle clé secrète client**.
 
 6. Entrez un nom dans la zone **Description** et sélectionnez une durée. Puis sélectionnez **Enregistrer** afin d’obtenir la **valeur** pour votre application. Lorsque vous fermez le volet **Clés** après l’enregistrement de la valeur de la clé, le champ de valeur apparaît uniquement masqué. À ce stade, vous n’êtes pas en mesure de récupérer la valeur de la clé. Si vous perdez la valeur de la clé, créez-en une autre dans le portail Azure.
 
-    ![Valeur de la clé](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Valeur de la clé](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
 
 ### <a name="workspace-id"></a>ID de l’espace de travail
 
@@ -190,9 +184,9 @@ Get-PowerBIworkspace -name "User Owns Embed Test" | Get-PowerBIReport
 
 Remplissez les informations **AADAuthorityUrl** avec l’URL qui vous permet d’effectuer l’incorporation dans votre locataire organisationnel ou d’effectuer l’incorporation avec un utilisateur invité.
 
-Pour l’incorporation avec votre locataire organisationnel, utilisez l’URL *https://login.microsoftonline.com/common/oauth2/authorize*.
+Pour l’incorporation avec votre locataire organisationnel, utilisez l’URL *https://login.microsoftonline.com/common/oauth2/authorize* .
 
-Pour l’incorporation avec un invité, utilisez l’URL *https://login.microsoftonline.com/report-owner-tenant-id*, où vous ajoutez l’ID de locataire du propriétaire du rapport à la place de *report-owner-tenant-id*.
+Pour l’incorporation avec un invité, utilisez l’URL *https://login.microsoftonline.com/report-owner-tenant-id* , où vous ajoutez l’ID de locataire du propriétaire du rapport à la place de *report-owner-tenant-id*.
 
 ### <a name="run-the-application"></a>Exécuter l’application
 
@@ -226,7 +220,7 @@ Pour obtenir un rapport Power BI, utilisez l’opération [Obtenir des rapports]
 
 L’opération [Obtenir des rapports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) renvoie une liste de rapports. Vous ne pouvez récupérer qu’un seul rapport dans cette liste.
 
-Pour effectuer l’appel d’API REST, vous devez inclure un en-tête d’*autorisation* au format *Porteur {jeton d’accès}*.
+Pour effectuer l’appel d’API REST, vous devez inclure un en-tête d’*autorisation* au format *Porteur {jeton d’accès}* .
 
 #### <a name="get-reports-with-the-rest-api"></a>Obtenir des rapports avec l’API REST
 
@@ -400,7 +394,7 @@ Maintenant que votre application est développée, il est temps de sauvegarder l
 
 ### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
 
-En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail d’application. Vous pouvez créer une capacité dédiée avec [Power BI Premium](../service-premium.md).
+En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail d’application. Vous pouvez créer une capacité dédiée avec [Power BI Premium](../service-premium-what-is.md).
 
 Le tableau suivant liste les références SKU Power BI Premium disponibles dans [Microsoft Office 365](../service-admin-premium-purchase.md) :
 

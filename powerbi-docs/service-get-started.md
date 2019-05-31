@@ -12,11 +12,11 @@ ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: 06b60e5d493532efbdb49932ace48897e17961c1
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147493"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61238348"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service-apppowerbicom"></a>Tutoriel : Bien démarrer avec le service Power BI (app.powerbi.com)
 Ce tutoriel vous aide à bien démarrer avec le ***service Power BI***. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de commencer par lire [Qu’est-ce que Power BI ?](power-bi-overview.md).
@@ -59,7 +59,7 @@ Si vous avez des données importantes dans des fichiers Excel ou CSV, vous pouve
 
 En savoir plus sur toutes les autres façons d’[obtenir des données pour Power BI](service-get-data.md).
 
-## <a name="step-1-get-data"></a>Étape 1 : Obtenir des données
+## <a name="step-1-get-data"></a>Étape 1 : Obtenir les données
 Voici un exemple d’obtention de données à partir d’un fichier CSV. Vous souhaitez suivre ce didacticiel ? [Téléchargez cet exemple de fichier CSV](http://go.microsoft.com/fwlink/?LinkID=521962)
 
 1. [Connectez-vous à Power BI](http://www.powerbi.com/). Vous n’avez pas de compte ? Vous pouvez vous inscrire pour un essai gratuit.

@@ -1,18 +1,18 @@
 ---
 title: Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI
 description: Découvrez comment migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded, et comment tirer profit des nouvelles fonctionnalités d’incorporation dans les applications.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 23907633ec92a172a9cdd392ad62b43d367260b3
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223602"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61270452"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 
@@ -131,7 +131,7 @@ Les jeux de données en cache font référence aux fichiers PBIX comportant des 
 3. Enregistrez le fichier PBIX.
 4. Appelez l’API Import PBIX pour procéder à l’importation vers l’espace de travail SaaS.
 5. Mettre à jour la chaîne de connexion en appelant - POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Obtenir l’ID de GW et l’ID de la source de données en appelant - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+6. Obtenir les identificateurs de la passerelle et de la source de données en appelant - GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
 7. Mettre à jour les informations d’identification de l’utilisateur en appelant - PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Jeux de données et rapports obsolètes
@@ -200,7 +200,7 @@ Vous devez effectuer un peu de nettoyage dans Azure.
 [Outil de migration des collections d’espaces de travail Power BI](migrate-tool.md)  
 [Extraits de code pour migrer du contenu à partir d’une collection d’espaces de travail Power BI](migrate-code-snippets.md)  
 [Comment incorporer vos tableaux de bord, rapports et vignettes Power BI](embedding-content.md)  
-[Qu’est-ce que Power BI Premium ?](../service-premium.md)  
+[Qu’est-ce que Power BI Premium ?](../service-premium-what-is.md)  
 [Dépôt Git d’API JavaScript](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Dépôt Git de C# pour Power BI ](https://github.com/Microsoft/PowerBI-CSharp)  
 [Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo/)  

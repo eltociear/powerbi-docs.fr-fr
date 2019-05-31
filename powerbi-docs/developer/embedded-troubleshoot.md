@@ -1,20 +1,20 @@
 ---
 title: Résolution des problèmes de votre application incorporée
 description: Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’incorporation de contenu à partir de Power BI.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: ebe536aad292fbd780d937cd4b35812afaedbdda
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174818"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770472"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Résoudre les problèmes de votre application incorporée
 
@@ -109,7 +109,7 @@ Pour résoudre ce problème, vous devez supprimer « oauth2/authorize » à la
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Échec de l’authentification avec AADSTS70002 ou AADSTS50053
 
-**_(AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect)_**
+** _(AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect)_ **
 
 Si vous utilisez à la fois Power BI Embedded et l’authentification directe Azure AD et qu’au moment de vous connecter, vous recevez des messages tels que ***error:unauthorized_client, error_description:AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect***, cela est dû au fait que l’authentification directe n’est plus utilisée depuis le 14 juin 2018 par défaut.
 
@@ -161,7 +161,7 @@ Pour vérifier le motif de l’erreur, essayez les étapes ci-dessous.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094 : L’octroi nécessite une autorisation de l’administrateur
 
-**_Symptômes :_**<br>
+**_Symptômes :_ **<br>
 Quand un utilisateur non-administrateur tente de se connecter à une application pour la première fois tout en octroyant un consentement, et obtient une des erreurs suivantes :
 
 * Le test de consentement nécessite une autorisation d’accès aux ressources de votre organisation que seul un administrateur peut accorder. Demandez à un administrateur de vous accorder une autorisation d’accès à cette application avant de l’utiliser.
@@ -171,10 +171,10 @@ Quand un utilisateur non-administrateur tente de se connecter à une application
 
 Un utilisateur administrateur peut se connecter et octroyer un consentement.
 
-**_Cause racine :_**<br>
+**_Cause racine :_ **<br>
 Le consentement de l’utilisateur est désactivé pour le locataire.
 
-**_Plusieurs solutions sont possibles :_**
+**_Plusieurs solutions sont possibles :_ **
 
 *Activez le consentement de l’utilisateur pour l’ensemble du locataire (tous les utilisateurs, toutes les applications)*
 
@@ -184,6 +184,10 @@ Le consentement de l’utilisateur est désactivé pour le locataire.
     ![Correctif du test de consentement](media/embedded-troubleshoot/consent-test-02.png)
 
 *Octroi d’autorisations d’accès* à l’application par un administrateur (pour l’ensemble du locataire ou pour un utilisateur spécifique).
+
+### <a name="cs1061-error"></a>Erreur de CS1061
+
+Télécharger [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) si vous rencontrez une « 'AuthenticationContext' ne contient-elle pas d’une définition pour 'AcquireToken' et aucune AcquireToken accessible de « » d’acceptant un premier argument de type ' AuthenticationContext' est introuvable (vous manque-t-il une à l’aide de la directive ou une référence d’assembly ?) » erreur.
 
 ## <a name="data-sources"></a>Sources de données
 
@@ -203,12 +207,12 @@ Après l’acquisition de l’objet IError, vous devez examiner la table d’err
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
 | TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès | 403 | Jeton arrivé à expiration  |
 | PowerBIEntityNotFound | Réception d’une notification d’échec du rapport | 404 | <li> ID du rapport erroné <li> Le rapport n'existe pas  |
-| Paramètres non valides | Paramètre powerbiToken non spécifié | N/A | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
+| Paramètres non valides | Paramètre powerbiToken non spécifié | Non applicable | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
 | LoadReportFailed | Échec de l’initialisation : le cluster n’a pas pu être résolu | 403 | * Jeton d’accès incorrect * Le type d’incorporation ne correspond pas au type de jeton |
 | PowerBINotAuthorizedException | Réception d’une notification d’échec du rapport | 401 | <li> ID de groupe incorrect <li> Groupe non autorisé |
-| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
-| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | N/A | <li> Capacité suspendue <li> Capacité supprimée |
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | Non applicable | Jeton de requête de données arrivé à expiration |
+| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | Non applicable | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | Non applicable | <li> Capacité suspendue <li> Capacité supprimée |
 
 ### <a name="typical-errors-when-embedding-for-non-power-bi-users-using-an-embed-token"></a>Erreurs courantes lors de l’incorporation pour d’autres utilisateurs que ceux de Power BI (avec un jeton d’incorporation)
 
@@ -218,12 +222,12 @@ Après l’acquisition de l’objet IError, vous devez examiner la table d’err
 | LoadReportFailed | Réception d’une notification d’échec du rapport | 404 | <li> ID du rapport erroné <li> Le rapport n'existe pas  |
 | LoadReportFailed | Réception d’une notification d’échec du rapport | 403 | L’ID du rapport ne correspond pas au jeton |
 | LoadReportFailed | Réception d’une notification d’échec du rapport | 500 | Il ressort du rapport que l’ID n’est pas un guid |
-| Paramètres non valides | Paramètre powerbiToken non spécifié | N/A | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
+| Paramètres non valides | Paramètre powerbiToken non spécifié | Non applicable | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
 | LoadReportFailed | Échec de l’initialisation : le cluster n’a pas pu être résolu | 403 | Type de jeton incorrect, jeton incorrect |
 | PowerBINotAuthorizedException | Réception d’une notification d’échec du rapport | 401 | ID de groupe incorrect/non autorisé |
-| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
-| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | N/A | <li> Capacité suspendue <li> Capacité supprimée |
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | Non applicable | Jeton de requête de données arrivé à expiration |
+| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | Non applicable | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | Non applicable | <li> Capacité suspendue <li> Capacité supprimée |
 
 ## <a name="content-rendering"></a>Restitution du contenu
 

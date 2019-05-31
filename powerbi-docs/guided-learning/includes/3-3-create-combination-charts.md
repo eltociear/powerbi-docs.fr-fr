@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: c7af7eb4a75ebe22416dba74a40c2edcf00c1194
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396890"
+---
 Quand vous souhaitez visualiser deux mesures qui ont des échelles très différentes, telles que le chiffre d’affaires et les unités, un **graphique combiné** qui affiche une ligne et une barre avec différentes échelles d’axe est très utile. Par défaut, Power BI prend en charge différents types de graphiques combinés, dont les graphiques courants **Ligne** et **Histogramme empilé**.
 
 ![](media/3-3-create-combination-charts/3-3_1.png)

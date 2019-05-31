@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279225"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61139325"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -87,7 +87,7 @@ Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom av
    
    * Les étoiles jaunes ![Étoile Favori](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord favoris. 
    * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../service-data-classification.md).
-3. Vous pouvez partager un tableau de bord à partir de votre espace de travail. Appuyez sur les points de suspension (**...**) dans le coin inférieur droit de la vignette du tableau de bord, puis sur **Inviter d’autres personnes**.
+3. Vous pouvez partager un tableau de bord à partir de votre espace de travail. Appuyez sur les points de suspension ( **...** ) dans le coin inférieur droit de la vignette du tableau de bord, puis sur **Inviter d’autres personnes**.
    
    ![Icône Inviter](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
 4. Vous pouvez aussi appuyer sur un tableau de bord pour l’ouvrir et voir les vignettes associées. Quand vous êtes dans le tableau de bord, vous pouvez :

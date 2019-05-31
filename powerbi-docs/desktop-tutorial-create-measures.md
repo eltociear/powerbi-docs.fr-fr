@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513888"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Tutoriel : Créer ses propres mesures dans Power BI Desktop
@@ -97,7 +97,7 @@ Vous voulez analyser vos ventes nettes en soustrayant les remises les retours de
     
     
 5.  Pour soustraire les deux autres colonnes :
-    1. Après la parenthèse fermante de la première expression, tapez un espace, puis un opérateur moins (**-**), suivi d’un autre espace. 
+    1. Après la parenthèse fermante de la première expression, tapez un espace, puis un opérateur moins ( **-** ), suivi d’un autre espace. 
     2. Entrez une autre fonction SUM et commencez à taper « DiscountAmount » jusqu’à ce que vous puissiez choisir la colonne **Sales [DiscountAmount]** en tant qu’argument. Ajoutez une parenthèse fermante. 
     3. Tapez un espace, un autre opérateur moins, un espace, une autre fonction SUM avec **Sales [ReturnAmount]** comme argument et une parenthèse fermante.
     
@@ -160,15 +160,15 @@ Vous voulez savoir quels produits ont les ventes nettes les plus élevées par u
 
 1.  Créez une mesure nommée **Net Sales per Unit** dans la table Sales.
     
-2.  Dans la barre de formule, commencez à taper **Net Sales**. La liste de suggestions vous montre ce que vous pouvez ajouter. Sélectionnez **[Net Sales]**.
+2.  Dans la barre de formule, commencez à taper **Net Sales**. La liste de suggestions vous montre ce que vous pouvez ajouter. Sélectionnez **[Net Sales]** .
     
     ![Formule utilisant Net Sales](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
     
-    Vous pouvez également référencer des mesures en tapant simplement un crochet ouvrant (**[**). La liste de suggestions affiche uniquement les mesures à ajouter à votre formule.
+    Vous pouvez également référencer des mesures en tapant simplement un crochet ouvrant ( **[** ). La liste de suggestions affiche uniquement les mesures à ajouter à votre formule.
     
     ![Le crochet montre uniquement les mesures](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
     
-3.  Entrez un espace, un opérateur de division (**/**), un autre espace, une fonction SUM et tapez **Quantity** (Quantité). La liste de suggestions affiche toutes les colonnes dont le nom inclut Quantity. Sélectionnez **Sales[SalesQuantity]**, tapez la parenthèse fermante et appuyez sur ENTRÉE ou sélectionnez la coche pour valider votre formule. La formule doit ressembler à ceci :
+3.  Entrez un espace, un opérateur de division ( **/** ), un autre espace, une fonction SUM et tapez **Quantity** (Quantité). La liste de suggestions affiche toutes les colonnes dont le nom inclut Quantity. Sélectionnez **Sales[SalesQuantity]** , tapez la parenthèse fermante et appuyez sur ENTRÉE ou sélectionnez la coche pour valider votre formule. La formule doit ressembler à ceci :
     
     `Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])`
     

@@ -1,24 +1,24 @@
 ---
 title: API Power BI utilisant la stratégie de rétention automatique des données en temps réel
 description: En savoir plus sur la stratégie de rétention automatique dans le service Power BI
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: 246feb1cb15d1688cab044151b50ba62db45c453
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.openlocfilehash: 07726535246f8b115402373c315062151177d27c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762395"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61347302"
 ---
 # <a name="automatic-retention-policy-for-real-time-data"></a>Stratégie de rétention automatique des données en temps réel
 
-La stratégie de conservation automatique du service Power BI est un paramètre de chaîne de requête qui active une stratégie de conservation par défaut pour nettoyer automatiquement les anciennes données tout en conservant un flux constant de nouvelles données vers votre tableau de bord. La première stratégie de conservation est appelée *FIFO (First in, First out)*. Quand elle est activée, les données sont collectées dans une table jusqu’à atteindre 200 000 lignes. Quand les données dépassent 200 000 lignes, les lignes les plus anciennes sont supprimées du jeu de données. Ceci permet de conserver entre 200 000 et 210 000 lignes contenant seulement les données les plus récentes.  
+La stratégie de conservation automatique du service Power BI est un paramètre de chaîne de requête qui active une stratégie de conservation par défaut pour nettoyer automatiquement les anciennes données tout en conservant un flux constant de nouvelles données vers votre tableau de bord. La première stratégie de conservation est appelée *FIFO (First in, First out)* . Quand elle est activée, les données sont collectées dans une table jusqu’à atteindre 200 000 lignes. Quand les données dépassent 200 000 lignes, les lignes les plus anciennes sont supprimées du jeu de données. Ceci permet de conserver entre 200 000 et 210 000 lignes contenant seulement les données les plus récentes.  
   
 <center>
 

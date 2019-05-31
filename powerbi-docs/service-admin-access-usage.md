@@ -1,36 +1,36 @@
 ---
 title: Trouver les utilisateurs Power BI qui se sont connectés
-description: Si vous êtes administrateur de locataire et que vous voulez voir quels utilisateurs se sont connectés à Power BI, vous pouvez utiliser les rapports d’accès et d’utilisation Azure Active Directory pour une meilleure visibilité.
+description: Si vous êtes un administrateur client et que vous souhaitez voir qui s’est connecté à Power BI, vous pouvez utiliser les rapports d’accès et d’utilisation Azure Active Directory pour gagner en visibilité.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 12a15360efbff62c40f5bd1098886ee046661e4f
-ms.sourcegitcommit: 5222bc6a8336acc77c8e22db57ea6a7bf7daea57
-ms.translationtype: HT
+ms.openlocfilehash: e513607dd89aee15f10145cf62bd461621cc12c0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59290739"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64906751"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Trouver les utilisateurs Power BI qui se sont connectés
 
-Si vous êtes administrateur de locataire et que vous voulez voir quels utilisateurs se sont connectés à Power BI, utilisez les [rapports d’accès et d’utilisation Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins) pour une meilleure visibilité.
+Si vous êtes un administrateur client et que vous souhaitez voir qui a connecté à Power BI, utilisez le [rapports d’accès et d’utilisation Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins) de gagner en visibilité.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Ce rapport d’activité fournit des informations utiles, mais n’identifie pas le type de licence dont dispose chaque utilisateur. Utilisez le Centre d’administration Microsoft 365 pour voir les licences.
+> Le **connexions** rapport fournit des informations utiles, mais elle n’identifie pas le type de licence de chaque utilisateur possède. Utilisez le Centre d’administration Microsoft 365 pour voir les licences.
 
 ## <a name="requirements"></a>Configuration requise
 
 Tous les utilisateurs (y compris ceux qui ne sont pas administrateurs) peuvent voir un rapport de leurs propres connexions, mais pour voir un rapport concernant tous les utilisateurs, vous devez remplir les conditions suivantes.
 
-* Votre client doit avoir une licence Azure AD Premium associée.
+* Votre client doit avoir une licence Azure Active Directory Premium associée.
 
 * Vous devez avoir l’un des rôles suivants : Administrateur général, Administrateur de sécurité ou Lecteur sécurité.
 
@@ -42,31 +42,32 @@ Pour afficher l’activité de connexion, procédez comme suit.
 
 1. Sous **Surveillance**, sélectionnez **Connexions**.
    
-    ![Connexions Azure AD](media/service-admin-access-usage/azure-portal-sign-ins.png)
+    ![Capture d’écran de l’interface utilisateur d’Azure avec les options d’Azure Active Directory et des connexions mises en surbrillance.](media/service-admin-access-usage/azure-portal-sign-ins.png)
 
 1. Filtrez l’application par **Microsoft Power BI** ou **Power BI Gateway** et sélectionnez **Appliquer**.
 
-    **Microsoft Power BI** filtre l’activité de connexion liée au service, tandis que **Power BI Gateway** filtre l’activité de connexion spécifique à la passerelle de données locale.
+    **Microsoft Power BI** filtres à l’activité de connexion liées au service, tandis que **Power BI Gateway** filtres à l’activité de connexion spécifique à la passerelle de données sur site.
    
-    ![Filtrer les connexions](media/service-admin-access-usage/sign-in-filter.png)
+    ![Capture d’écran du filtre de connexions avec le champ d’Applications mis en surbrillance.](media/service-admin-access-usage/sign-in-filter.png)
 
 ## <a name="export-the-data"></a>Exporter les données
 
-Vous avez deux options pour exporter les données de connexion : télécharger un fichier csv ou utiliser PowerShell. En haut du rapport de connexion, sélectionnez l’une des options suivantes :
+Vous pouvez [télécharger un rapport de connexion](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) dans un des deux formats : un fichier CSV ou un fichier JSON.
 
-* **Télécharger** pour télécharger un fichier .csv pour les données actuellement filtrées.
+![Capture d’écran du bouton de téléchargement.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
-* **Script** pour télécharger un script PowerShell pour les données actuellement filtrées. Vous pouvez mettre à jour le filtre dans le script en fonction des besoins.
+En haut de la **connexions** rapport, sélectionnez **télécharger** puis sélectionnez une des options suivantes :
 
-![Télécharger un fichier .csv ou un script](media/service-admin-access-usage/download-sign-in-data-csv.png)
+* **CSV** pour télécharger un fichier CSV pour les données filtrées.
+
+* **JSON** pour télécharger un fichier JSON pour les données filtrées.
 
 ## <a name="data-retention"></a>Rétention de données
 
-Les données de connexion sont disponibles pendant une durée maximale de 30 jours. Pour plus d’informations, consultez [Stratégies de rétention de rapport Azure Active Directory](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+Les données de connexion sont disponibles pendant une durée maximale de 30 jours. Pour plus d’informations, consultez [stratégies de rétention de rapport Azure Active Directory](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Utilisation de l’audit dans votre organisation](service-admin-auditing.md)
 
-D’autres questions ? [Essayez d’interroger la Communauté Power BI](https://community.powerbi.com/)
-
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

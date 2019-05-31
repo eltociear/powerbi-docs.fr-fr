@@ -12,11 +12,11 @@ ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6b3f1c3780b60efc2ade444960a92234afecc71e
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086583"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61253035"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Cartes ArcGIS dans le service Power BI et Power BI Desktop par ESRI
 Ce tutoriel est écrit du point de vue d’une personne qui crée une carte ArcGIS. Une fois que le créateur partage une carte ArcGIS avec un collègue, ce dernier peut afficher et exploiter la carte, mais pas enregistrer de modifications. Pour en savoir plus sur l’affichage d’une carte ArcGIS, consultez [Interaction avec des cartes ArcGIS](power-bi-visualizations-arcgis.md).
@@ -75,7 +75,7 @@ Regardez comment créer différentes visualisations de carte ArcGis, puis suivez
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EKVvOZmxg9s" frameborder="0" allowfullscreen></iframe>
 
-1. À partir du volet **Champs**, faites glisser un champ de données vers les compartiments **Emplacement** et/ou **Latitude** et **Longitude**. Dans cet exemple, utilisez **Store > City (Magasin > Ville)**.
+1. À partir du volet **Champs**, faites glisser un champ de données vers les compartiments **Emplacement** et/ou **Latitude** et **Longitude**. Dans cet exemple, utilisez **Store > City (Magasin > Ville)** .
    
    > [!NOTE]
    > ArcGIS Maps pour Power BI détecte automatiquement si les champs que vous sélectionnez s’affichent mieux en tant que forme ou point sur une carte. Vous pouvez ajuster la valeur par défaut dans les paramètres (voir ci-dessous).
@@ -84,7 +84,7 @@ Regardez comment créer différentes visualisations de carte ArcGis, puis suivez
    
     ![](media/power-bi-visualization-arcgis/power-bi-fields-pane3new.png)
 2. Convertissez la visualisation en carte ArcGIS en sélectionnant le modèle dans le volet Visualisations ![](media/power-bi-visualization-arcgis/power-bi-arcgis-template.png).
-3. À partir du volet **Champs**, faites glisser une mesure vers le compartiment **Taille** pour ajuster le mode d’affichage des données. Dans l’exemple, utilisez **Sales > Last Year Sales (Ventes > Ventes de l’année dernière)**.
+3. À partir du volet **Champs**, faites glisser une mesure vers le compartiment **Taille** pour ajuster le mode d’affichage des données. Dans l’exemple, utilisez **Sales > Last Year Sales (Ventes > Ventes de l’année dernière)** .
    
     ![](media/power-bi-visualization-arcgis/power-bi-esri-point-map-size2new.png)
 

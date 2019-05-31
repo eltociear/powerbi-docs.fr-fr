@@ -1,5 +1,5 @@
 ---
-title: Créer une vue de tableau de bord Power BI pour les téléphones mobiles
+title: Optimiser un tableau de bord pour les téléphones mobiles - Power BI
 description: Apprenez à créer une vue personnalisée d’un tableau de bord dans le service Power BI, en particulier pour l’affichage sur les téléphones portables.
 author: maggiesMSFT
 manager: kfile
@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd7df8383ad22d273ebf396fc1cf8297f110dde5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288149"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61158200"
 ---
-# <a name="create-a-view-of-a-power-bi-dashboard-optimized-for-mobile-phones"></a>Créer une vue de tableau de bord Power BI optimisée pour les téléphones mobiles
-Quand vous affichez les tableaux de bord dans l’application mobile Power BI sur un téléphone, les vignettes associées sont disposées l’une après l’autre et ont toutes la même taille. Dans le service Power BI, vous pouvez créer une vue personnalisée d’un tableau de bord que vous possédez, en particulier pour l’affichage sur les téléphones.
+# <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimiser un tableau de bord pour les téléphones mobiles - Power BI 
+Lorsque vous affichez les tableaux de bord en mode portrait sur un téléphone, vous les vignettes de tableau de bord sont disposées une après l’autre, les mêmes taille. Dans le service Power BI, vous pouvez créer une vue personnalisée d’un tableau de bord, en particulier pour le mode portrait téléphones. Même si vous créez une vue téléphone, lorsque vous activez le téléphone sur le côté, vous voyez le tableau de bord est disposé dans le service.
 
-Quand vous tournez le téléphone sur le côté, le tableau de bord est affiché comme dans le service, et non comme vous l’avez conçu pour le téléphone.
+Vous recherchez des informations sur l’affichage des tableaux de bord sur un appareil mobile ? Essayez ce démarrage rapide [Explorer des tableaux de bord et rapports dans les applications mobiles Power BI](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) à la place.
 
 > [!NOTE]
 > Quand vous modifiez la vue téléphone, les personnes qui consultent le tableau de bord sur un téléphone peuvent voir les modifications apportées en temps réel. Par exemple, si vous détachez tous les vignettes sur la vue téléphone du tableau de bord, le tableau de bord affiché sur le téléphone se retrouve soudain sans vignette. 

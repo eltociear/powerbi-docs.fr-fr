@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7f7681529f9f1ab8883f6b38889e67b8ad5bb81e
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: 28b77cfeda1f84f3643216dba45bef40bd6441ff
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430056"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65513234"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Inscrire votre organisation US Government au service Power BI
-Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
+Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. Le **service Power BI** version abordée dans cet article est conçue pour les clients US Government et est distincte et différente de la version commerciale de la **service Power BI**.
 
 Pour plus d’informations sur le **service Power BI** US Government, y compris ses fonctionnalités et limitations, consultez la page [Power BI pour les clients US Government - Vue d’ensemble](service-govus-overview.md).
 
@@ -58,7 +58,7 @@ Si votre organisation est un client **Office Government Cloud** existant mais qu
 > 
 > 
 
-1. Connectez-vous à votre compte Office Government Cloud existant et accédez au portail d’administration.
+1. Connectez-vous à votre compte Office Government Cloud existant et accédez au portail d’administration
 2. Sélectionnez **Facturation**.
 3. Sélectionnez **Acheter des services**.
 4. Sélectionnez l’option Power BI Pro Government et choisissez **Essayer** ou **Acheter maintenant**.
@@ -66,7 +66,7 @@ Si votre organisation est un client **Office Government Cloud** existant mais qu
 6. Affectez des utilisateurs au compte.
    
    ![](media/service-govus-signup/service_govus_signup_5.png)
-7. Connectez-vous au **service Power BI** pour les clients du secteur public américain à l’adresse [https://app.powerbigov.us](https://app.powerbigov.us)
+7. Se connecter à la **service Power BI** pour les clients US Government [https://app.powerbigov.us](https://app.powerbigov.us)
 
 ## <a name="additional-signup-information"></a>Informations supplémentaires relatives à l’inscription
 Voici des informations supplémentaires sur l’inscription à **Power BI US Government** dans le cadre de différents types de migrations de licences.
@@ -75,7 +75,7 @@ Voici des informations supplémentaires sur l’inscription à **Power BI US Gov
 * Cliquez sur Billing > Purchase Service > PowerBI Pro Gov (Facturation > Acheter un service > PowerBI Pro Gov), puis sélectionnez Purchase (Acheter) et non Trial (Essai).
 * Renseignez les informations nécessaires pour obtenir les licences.
 * Supprimez l’essai Power BI Pro ou supprimez les anciennes licences, puis affectez les nouvelles aux utilisateurs.
-* Connexion à [https://app.powerbigov.us](https://app.powerbigov.us)
+* Se connecter à [https://app.powerbigov.us](https://app.powerbigov.us)
 
 ### <a name="reseller-power-bi-trial-to-pro-customer-onboarding"></a>Intégration via un revendeur des clients de l’essai Power BI vers la version Pro
 Accédez à **Facturation > Abonnements**, puis sélectionnez l’abonnement **Power BI Pro for Government** (Abonnement Power BI Pro pour le secteur public). Vous voyez les indications suivantes :
@@ -90,14 +90,14 @@ Accédez à **Facturation > Abonnements**, puis sélectionnez l’abonnement **P
 ### <a name="whitelisting-instructions"></a>Instructions pour la mise en liste verte
 La *mise en liste verte* est un processus que l’équipe d’ingénierie de Power BI utilise pour migrer des clients de l’environnement cloud commercial vers l’environnement cloud pour le secteur public sécurisé. Cela garantit que les fonctionnalités disponibles dans le cloud pour le secteur public américain cloud opèrent comme prévu. Tous les clients du secteur public des États-Unis existants (ou nouveaux) qui achètent des services **Power BI** pour le secteur public des États-Unis pour la première fois *doivent* initier le processus de mise en liste verte suivant. Le processus doit être accompli avant une configuration ou une migration vers les services **Power BI** pour le secteur public des États-Unis. 
 
-Pour inscrire votre client sur la *liste verte* du cloud US Government, contactez l’équipe des comptes Microsoft afin d’obtenir de l’aide. Notez que seuls des administrateurs peuvent effectuer cette demande. Le processus de *mise en liste verte* prend environ trois semaines, au cours desquelles l’équipe d’ingénierie de Power BI apporte les modifications appropriées pour s’assurer que votre client fonctionne correctement dans le cloud pour le secteur public américain.
+Pour que votre client *dans la liste verte* pour le cloud US Government, contactez l’équipe de compte Microsoft pour obtenir une assistance avec mise en liste verte. Seuls les administrateurs peuvent effectuer cette demande. Le processus de *mise en liste verte* prend environ trois semaines, au cours desquelles l’équipe d’ingénierie de Power BI apporte les modifications appropriées pour s’assurer que votre client fonctionne correctement dans le cloud pour le secteur public américain.
 
 Des clients migrant à partir de licences Power BI **gratuites** vers **Power BI US Government**, et par conséquent vers les fonctionnalités de la licence **Pro** décrites précédemment dans cet article, rencontreront les problèmes décrits dans la section suivante de cet article, jusqu’à ce que leur client soit *mis en liste verte* par l’équipe d’ingénierie de Power BI.
 
 ### <a name="mixed-free-and-pro-licenses-in-us-government-tenants"></a>Mélange de licences Gratuites et Pro dans les clients du secteur public américain
 Si vous disposez de licences Gratuites et de licences Pro pour le secteur public américain dans votre client, les deux types de licences resteront présents, mais l’un des deux ne fonctionnera pas correctement. Si votre client passe avec succès par le processus de *mise en liste verte*, il se produit ce qui suit :
 
-* Les utilisateurs de licence gratuite ne peuvent plus se connecter à Power BI à l’aide de **Power BI Desktop** et rencontrent certaines lacunes de fonctionnalités décrites dans la section suivante.
+* Les utilisateurs de la licence gratuite ne seront plus en mesure de se connecter à l’aide de Power BI **Power BI Desktop**et rencontrent certaines lacunes de fonctionnalités décrites dans la section suivante.
 * Tous les clients affectés aux licences Pro pour le secteur public américain fonctionnent comme prévu, y compris les passerelles, Power BI Desktop et les applications mobiles.
 
 En cas d’utilisation d’un mélange de licences Gratuites et Pro dans un client du secteur public américain et de passage par le processus de *mise en liste verte*, vous pouvez vous attendre à ce qui suit :

@@ -11,25 +11,25 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cce99c8a0e0908ef901408cbb19397fa098bac38
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d7a8c1600de65ba39b075d89f3c2d95e0b0c7cde
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289598"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051235"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Personnaliser le titre, la légende et l’arrière-plan d’une visualisation
 Ce didacticiel présente quelques façons de personnaliser vos visualisations.   Compte tenu du nombre important d’options de personnalisation pour les visualisations, la meilleure façon de les découvrir toutes consiste à explorer le volet Mise en forme (sélectionnez l’icône Rouleau à peindre).  Pour vous aider à commencer, cet article explique comment personnaliser le titre, la légende et l’arrière-plan d’une visualisation.  
 
 Les visualisations ne peuvent pas toutes être personnalisées. [Consultez la liste complète](#list).  
 
-Regardez Amanda personnaliser des visualisations dans son rapport (à la minute 4:50 dans la vidéo). Suivez ensuite les instructions sous la vidéo pour essayer par vous-même avec vos propres données.
+Avançons à 4:50 dans la vidéo pour une démonstration de la personnalisation des visualisations. Suivez ensuite les instructions sous la vidéo pour essayer par vous-même avec vos propres données.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
 ### <a name="prerequisites"></a>Conditions préalables
 - Service Power BI ou Power BI Desktop
-- Retail Analysis sample
+- Exemple analyse de la vente au détail
 
 ## <a name="customize-visualization-titles-in-reports"></a>Personnaliser les titres des visualisations dans les rapports
 Pour la suite, connectez-vous au service Power BI (app.powerbi.com), puis ouvrez le rapport [Exemple Analyse de la vente au détail](../sample-datasets.md) en [Mode Édition](../service-interact-with-a-report-in-editing-view.md).

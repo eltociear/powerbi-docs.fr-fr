@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 1db5f34ce7a08b32b665409322836eba483be927
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396845"
+---
 Power BI a des propriétés que vous pouvez affecter aux champs de votre modèle, et obtenir ainsi des rapports, des visualisations et des présentations des données qui gagnent en clarté. Par exemple, vous souhaitez parfois déterminer la moyenne d’une liste de nombres, mais Power BI totalise automatiquement la liste. Avec Power BI, vous pouvez ajuster la manière dont ces listes de nombres sont résumées.
 
 ## <a name="numeric-control-over-summarization"></a>Contrôle numérique du résumé

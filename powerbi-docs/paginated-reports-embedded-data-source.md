@@ -1,20 +1,20 @@
 ---
 title: Sources de données incorporées pour rapports paginés dans le service Power BI (préversion)
 description: Dans cet article, vous apprendrez à créer et à modifier une source de données incorporée dans un rapport paginé dans le service Power BI.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
-ms.openlocfilehash: 340b4d26b8beed4dfda5f7af4dc949088f3857ae
-ms.sourcegitcommit: d2805894fd372c35e11d519f724de2be98407fda
-ms.translationtype: HT
+ms.date: 05/16/2019
+ms.openlocfilehash: 4dd9ad935a9f7b286aa64d977a78364f2aed0e0f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59070019"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65853380"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Créer une source de données incorporée pour rapports paginés dans le service Power BI (préversion)
 
@@ -23,13 +23,19 @@ Dans cet article, vous apprendrez à créer et à modifier une source de donnée
 - Azure SQL Database et Data Warehouse
 - SQL Server
 - SQL Server Analysis Services
+- Oracle 
+- Teradata 
+
+Pour ces sources de données, utilisez le [connexion SQL Server Analysis Services](service-premium-connect-tools.md) option :
+
 - Azure Analysis Services
+- Jeux de données Power BI Premium
 
 Les rapports paginés se connecter aux sources de données locales par le biais d’une passerelle. Vous configurez la passerelle après avoir publié le rapport sur le service Power BI. En savoir plus sur les [passerelles Power BI](service-gateway-getting-started.md). 
 
 ## <a name="create-an-embedded-data-source"></a>Créer une source de données incorporée
   
-1. Ouvrez le Générateur de rapports.
+1. Ouvrez le Générateur de rapports Power BI.
 
 1. Dans la barre d’outils du volet des données du rapport, sélectionnez **Nouveau** > **Source de données**. La boîte de dialogue **Propriétés de la source de données** s’ouvre.
 
@@ -62,4 +68,4 @@ Les rapports paginés se connecter aux sources de données locales par le biais 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Créer un jeu de données incorporé pour un rapport paginé dans le service Power BI](paginated-reports-create-embedded-dataset.md)
-- [Présentation des rapports paginés dans Power BI Premium (Préversion)](paginated-reports-report-builder-power-bi.md)
+- [Présentation des rapports paginés dans Power BI Premium (préversion)](paginated-reports-report-builder-power-bi.md)

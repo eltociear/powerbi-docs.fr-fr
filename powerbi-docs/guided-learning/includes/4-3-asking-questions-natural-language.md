@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2a0ec80120e30d8d652eb2bd28461b9f88f7610a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263374"
+---
 Power BI est livré avec un moteur de reconnaissance du langage puissant qui vous permet de poser des questions sur vos données à l’aide d’expressions et de questions de qualité conversation. Par conséquent, tout en créant des rapports et des visualisations Power BI, vous pouvez créer des diagrammes et des graphiques en posant simplement des questions simples.
 
 Pour poser une question sur vos données, ouvrez un tableau de bord dans Power BI. Vous verrez alors en haut de l’écran une zone d’entrée dans laquelle vous pouvez poser des questions sur les données affichées. Cette fonctionnalité est parfois appelée *Questions et réponses*, ou plus souvent, elle est uniquement appelée **Q&R**.

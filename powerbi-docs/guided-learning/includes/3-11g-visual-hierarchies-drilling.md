@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9aac366f04d53da56b62c10fdb85229d0d412834
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396850"
+---
 Quand vous ajoutez un champ *date* à un élément visuel dans le compartiment de champ *Axe*, Power BI ajoute automatiquement une hiérarchie de temps qui inclut *Année*, *Trimestre*, *Mois* et *Jour*. Ainsi, grâce à Power BI, les utilisateurs qui affichent vos rapports peuvent interagir avec vos éléments visuels en explorant ces différents niveaux temporels.
 
 ![](media/3-11g-visual-hierarchies-drilling/3-11g_1.png)

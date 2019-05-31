@@ -1,30 +1,32 @@
 ---
 title: Installer Power BI Report Server
 description: Découvrez comment installer Power BI Report Server.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/07/2018
-ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014435"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187727"
 ---
 # <a name="install-power-bi-report-server"></a>Installer Power BI Report Server
 
 Découvrez comment installer Power BI Report Server.
 
- **Télécharger** ![télécharger](media/install-report-server/download.png "télécharger")
+## <a name="download-power-bi-report-server"></a>Télécharger Power BI Report Server
 
-Pour télécharger Power BI Report Server, accédez à [Rapports locaux avec Power BI Report Server](https://powerbi.microsoft.com/report-server/) et sélectionnez **Téléchargez la version d’évaluation gratuite**. 
+[Télécharger Power BI Report Server](https://www.microsoft.com/download/details.aspx?id=56722) à partir du centre de téléchargement Microsoft.
 
-## <a name="before-you-begin"></a>Avant de commencer
+Il est également une version d’évaluation gratuite. Sur le [rapports avec Power BI Report Server locaux](https://powerbi.microsoft.com/report-server/) page, sélectionnez **télécharger la version d’évaluation gratuite**.
+
+## <a name="before-you-install"></a>Avant d’installer
 
 Avant d’installer Power BI Report Server, il est recommandé de lire l’article [Configurations matérielle et logicielle requises pour installer Power BI Report Server](system-requirements.md).
 
@@ -32,6 +34,13 @@ Avant d’installer Power BI Report Server, il est recommandé de lire l’artic
  > Même si vous pouvez installer Power BI Report Server dans un environnement disposant d’un contrôleur de domaine en lecture seule (RODC), pour fonctionner correctement, Power BI Report Server doit avoir accès à un contrôleur de domaine en lecture-écriture. Si Power BI Report Server a accès uniquement à un RODC, il se peut que vous rencontriez des erreurs lors de la tentative d’administrer le service.
 
 ### <a name="power-bi-report-server-product-key"></a>Clé de produit Power BI Report Server
+
+Vous pouvez obtenir la clé de produit pour Power BI Report Server à partir de deux sources différentes :
+
+- Power BI Premium
+- SQL Server Entreprise Software Assurance (SA)
+
+Lisez la suite pour plus d’informations.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -66,8 +75,8 @@ Il n’est pas nécessaire de disposer d’un moteur de base de données Microso
 
     ![Édition 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    Ou entrez la clé de produit du serveur obtenue à partir du service Power BI ou du Centre de gestion des licences en volume. Pour plus d’informations sur l’obtention de votre clé de produit, consultez la section [Avant de commencer](#before-you-begin).
-4. Lisez et acceptez les termes du contrat de licence, puis sélectionnez **Suivant**.
+    Sinon, entrez la clé de produit que vous avez obtenu à partir du service Power BI ou le centre de gestion de licence de Volume. Pour plus d’informations sur comment obtenir votre clé de produit, consultez le [avant d’installer](#before-you-install) section ci-dessus.
+4. Lisez et acceptez les termes du contrat de licence, puis sélectionnez **suivant**.
 
     ![Termes du contrat de licence](media/install-report-server/pbireportserver-eula.png)
 5. Pour stocker la base de données du serveur de rapports, vous devez disposer d’un moteur de base de données. Sélectionnez **Suivant** pour installer uniquement le serveur de rapports.
@@ -83,7 +92,7 @@ Il n’est pas nécessaire de disposer d’un moteur de base de données Microso
 
     ![Configurer le serveur de rapports](media/install-report-server/pbireportserver-configure.png)
 
-## <a name="configuring-your-report-server"></a>Configuration de votre serveur de rapports
+## <a name="configure-your-report-server"></a>Configurer votre serveur de rapports
 
 Lorsque vous sélectionnez **Configurer Report Server** dans le programme d’installation, le Gestionnaire de configuration de Reporting Services s’affiche. Pour plus d’informations, voir [Gestionnaire de configuration de Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 

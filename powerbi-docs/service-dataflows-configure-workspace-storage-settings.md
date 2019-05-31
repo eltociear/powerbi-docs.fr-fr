@@ -1,21 +1,21 @@
 ---
 title: Configurer les paramètres de flux de données d’un espace de travail
-description: Configurez un espace de travail d’application dans Power BI pour stocker ses fichiers de données et de définition de flux de données dans Azure Data Lake Storage Gen2.
+description: Configurer un espace de travail d’application dans Power BI pour stocker sa définition de flux de données et les fichiers de données dans le stockage Azure Data Lake Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8c17a7b4ad455077d383eaff9b35a5d1004fce11
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 52ef3f57276e7f7560b9d7df7bc1be465d842eb3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223625"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61168549"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Configurer les paramètres de flux de données d’un espace de travail (préversion)
 
@@ -47,24 +47,21 @@ Dans la boîte de dialogue qui s’affiche, vous pouvez donner un nom unique à 
 
 ![Nommer le nouvel espace de travail](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Ensuite, développez la zone **Avancé** de la boîte de dialogue **Créer un espace de travail d’application** et activez le paramètre **Stockage de flux de données (préversion)**.
+Ensuite, développez la zone **Avancé** de la boîte de dialogue **Créer un espace de travail d’application** et activez le paramètre **Stockage de flux de données (préversion)** .
 
 ![Paramètres avancés du nouvel espace de travail](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
 Sélectionnez **Enregistrer** pour créer l’espace de travail. Tous les flux de données créés dans cet espace de travail stockeront leur fichier de définition (fichier model.json) et leurs données dans le compte Azure Data Lake Storage Gen2 de votre organisation. 
 
-> [!NOTE]
-> La fonctionnalité de flux de données étant en préversion, elle est susceptible de changer et d’être mise à jour avant la disponibilité générale.
-
 ## <a name="update-dataflow-storage-for-an-existing-workspace"></a>Mettre à jour le stockage de flux de données pour un espace de travail existant
 
 Nous avons vu comment créer un espace de travail. Vous pouvez également mettre à jour un espace de travail existant pour stocker le fichier de définition et les données dans le compte Azure Data Lake Storage Gen2 de votre organisation. Gardez à l’esprit que le paramètre de stockage de flux de données n’est modifiable que si l’espace de travail ne contient pas encore de flux de données.
 
-Pour modifier un espace de travail d’application, sélectionnez les points de suspension **(…)**, puis **Modifier l’espace de travail**. 
+Pour modifier un espace de travail d’application, sélectionnez les points de suspension **(…)** , puis **Modifier l’espace de travail**. 
 
 ![Modifier l’espace de travail](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
-Dans la fenêtre **Modifier l’espace de travail** qui s’affiche, développez **Avancé**, puis **activez** le paramètre **Stockage de flux de données (préversion)**. 
+Dans la fenêtre **Modifier l’espace de travail** qui s’affiche, développez **Avancé**, puis **activez** le paramètre **Stockage de flux de données (préversion)** . 
 
 ![Stockage de flux de données activé](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_06.jpg)
 

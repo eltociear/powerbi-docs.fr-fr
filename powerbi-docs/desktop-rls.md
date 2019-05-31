@@ -1,21 +1,22 @@
 ---
 title: Présentation de la sécurité au niveau des lignes avec Power BI Desktop
 description: Configuration de DirectQuery et de la sécurité au niveau des lignes pour les jeux de données importés dans Power BI Desktop.
-author: markingmyname
-ms.author: maghan
+author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
+ms.custom: ''
 ms.date: 05/03/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: a5f594f241fb4964775055a022b2f7c943dd05a1
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
-ms.translationtype: HT
+ms.openlocfilehash: e53805c8aa76fd2fe80246eb0974ec73bedd4d4f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488773"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769553"
 ---
 # <a name="row-level-security-rls-with-power-bi-desktop"></a>Sécurité au niveau des lignes avec Power BI Desktop
 

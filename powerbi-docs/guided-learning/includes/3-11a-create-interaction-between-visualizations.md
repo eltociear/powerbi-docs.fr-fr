@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 29a274bb847c6c0395d3cdba868024ded326290e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396825"
+---
 Quand une même page de rapport comporte plusieurs visualisations, cliquer sur un segment ou utiliser un segment affecte tous les éléments visuels de cette page. Dans certains cas, cependant, vous pouvez souhaiter segmenter uniquement certains éléments visuels. Cela est particulièrement vrai quand vous utilisez des éléments tels que des nuages de points, où limiter les données à un segment spécifique peut les vider de leur sens. Heureusement, Power BI Desktop vous permet de contrôler le flux des interactions entre les éléments visuels.
 
 Pour modifier l’interaction entre vos visualisations, sélectionnez **Modifier** à partir de la section Interactions visuelles du ruban **Accueil** pour activer le **mode d’édition**.

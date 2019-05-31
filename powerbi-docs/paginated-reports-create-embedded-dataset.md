@@ -1,30 +1,30 @@
 ---
 title: Créer un jeu de données incorporé pour un rapport Power BI paginé (préversion)
 description: Dans cet article, vous apprendrez à créer un jeu de données incorporé, basé sur une source de données incorporée, pour un rapport paginé dans le service Power BI.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
-ms.openlocfilehash: c625f394fd35c0b1c6b7ccf0fc617f5653533ea1
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 3e095da10e9f96c7ec0f10ffbb94995d44effab4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324550"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423740"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Créer un jeu de données incorporé pour un rapport paginé dans le service Power BI (préversion)
 
-Dans cet article, vous apprendrez à créer un jeu de données incorporé, basé sur une source de données incorporée, pour un rapport paginé dans le service Power BI. Les jeux de données incorporés sont contenus dans un seul rapport paginé, pour une utilisation dans ce rapport. Actuellement, les rapports paginés publiés sur le service Power BI requièrent des jeux de données incorporés et des sources de données incorporées. Vous créez la source de données et le jeu de données incorporés dans le Générateur de rapports, lorsque vous créez votre rapport. 
+Dans cet article, vous apprendrez à créer un jeu de données incorporé, basé sur une source de données incorporée, pour un rapport paginé dans le service Power BI. Les jeux de données incorporés sont contenus dans un seul rapport paginé, pour une utilisation dans ce rapport. Actuellement, les rapports paginés publiés sur le service Power BI requièrent des jeux de données incorporés et des sources de données incorporées. Vous créez la source de données incorporée et le jeu de données dans le Générateur de rapports Power BI, tandis que vous créez votre rapport. 
 
 Avant de pouvoir créer le jeu de données, vous devez créer une source de données. Pour cela, consultez [Sources de données pour rapports paginés](paginated-reports-embedded-data-source.md) dans le service Power BI.
   
 ## <a name="create-an-embedded-dataset"></a>Créer un jeu de données incorporé
   
-1. Dans le volet Données du rapport du Générateur de rapports, sélectionnez **Nouveau** > **Jeu de données**.
+1. Dans le volet données du rapport dans le Générateur de rapports Power BI, sélectionnez **New** > **Dataset**.
 
 1. Dans l’onglet **Requête** de la boîte de dialogue **propriétés du jeu de données**, nommez le jeu de données. La source de données incorporée figure déjà dans la boîte de dialogue **Source de données**, mais vous pouvez sélectionner **Nouveau** pour créer une autre source de données incorporée.
  
@@ -41,7 +41,7 @@ Avant de pouvoir créer le jeu de données, vous devez créer une source de donn
 
 5. Dans le Concepteur de requêtes, sélectionnez **Exécuter la requête** pour la tester, puis sélectionnez **OK**.
 
-1. Retournez dans la boîte de dialogue des propriétés du jeu de données, puis tapez le nombre de secondes avant l’expiration de la requête dans le champ **Délai d’expiration (en secondes)**. La valeur par défaut est 30 secondes. La valeur **Délai d’expiration** doit être vide ou supérieure à zéro. Si elle est vide, la requête n’expire pas.
+1. Retournez dans la boîte de dialogue des propriétés du jeu de données, puis tapez le nombre de secondes avant l’expiration de la requête dans le champ **Délai d’expiration (en secondes)** . La valeur par défaut est 30 secondes. La valeur **Délai d’expiration** doit être vide ou supérieure à zéro. Si elle est vide, la requête n’expire pas.
 
 7.  Vous pouvez définir d’autres propriétés pour le jeu de données dans les autres onglets :
     - Créez des champs calculés dans l’onglet **Champs**.

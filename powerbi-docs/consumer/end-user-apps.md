@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/21/2019
+ms.date: 05/11/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f5572d5b5a8a8d9d652eabce95edc16ea9a2d0c6
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 1b5891ce24c43b0a7416cd82cec3e9a10c1989bf
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662132"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608368"
 ---
 # <a name="apps-in-power-bi"></a>Applications dans Power BI
 ## <a name="what-is-a-power-bi-app"></a>Qu’est-ce qu’une application Power BI ?
@@ -30,10 +30,10 @@ Vos applications sont organisées dans la liste de contenu **Applications**.
 > L’utilisation de la fonctionnalité d’applications nécessite une licence Power BI Pro. <!-- add link to how to figure out your license -->
 
 ## <a name="app-designers-and-app-consumers"></a>***Concepteurs*** et ***consommateurs*** d’applications
-Selon votre rôle, vous pouvez être concepteur. Dans ce cas, vous créez des applications pour votre usage personnel ou pour les partager avec vos collègues. Vous pouvez également être consommateur, c’est-à-dire quelqu’un qui reçoit et télécharge des applications créées par d’autres personnes. Cet article s’adresse aux *consommateurs* d’applications.
+Selon votre rôle, vous pouvez être quelqu'un qui crée des applications (*concepteur*) pour votre usage personnel ou pour partager avec vos collègues. Ou, vous pouvez être quelqu'un qui reçoit et téléchargements d’applications (*consommateur*) créés par d’autres. Cet article s’adresse aux *consommateurs* d’applications.
 
 ## <a name="advantages-of-apps"></a>Avantages des applications
-Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et sur votre appareil mobile. Une fois que vous avez installé une application, vous n’êtes pas obligé de mémoriser les noms d’un grand nombre de tableaux de bord, car ces derniers sont rassemblés dans une même application, dans votre navigateur ou sur votre appareil mobile.
+Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)) et sur votre appareil mobile. Une fois que vous avez installé une application, vous n’êtes pas obligé de mémoriser les noms d’un grand nombre de tableaux de bord, car ces derniers sont rassemblés dans une même application, dans votre navigateur ou sur votre appareil mobile.
 
 Chaque fois que l’auteur de l’application publie des mises à jour, vous voyez automatiquement les modifications. L’auteur contrôle également la fréquence à laquelle l’actualisation des données est planifiée. Vous n’avez pas besoin de vous soucier de la mise à jour. 
 

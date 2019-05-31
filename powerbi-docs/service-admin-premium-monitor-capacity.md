@@ -1,29 +1,27 @@
 ---
 title: Superviser les capacités Power BI Premium avec l’application Métriques de capacité Premium.
 description: Utiliser le portail d’administration Power BI et l’application Power BI Premium Capacity Metrics
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/25/2019
+ms.date: 03/27/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: ac6559ccc9e6dbdf8c4be0550d8522765a4a8b23
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 5a8db746606e42b4e9b094dc6d17d6d2e0f08f67
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174910"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65565309"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Superviser les capacités Premium avec l’application
 
 La supervision de vos capacités est essentielle pour prendre des décisions avisées sur la meilleure utilisation de vos ressources de capacité Premium. Vous pouvez superviser les capacités dans le portail d’administration ou avec l’application **Métriques de capacité Power BI Premium**. Cet article décrit l’utilisation de l’application Métriques de capacité Premium. L’application fournit les informations les plus détaillées sur les performances de vos capacités. Pour une vue d’ensemble générale des métriques de l’utilisation moyenne sur les sept derniers jours, vous pouvez utiliser le portail d’administration. Pour plus d’informations sur la supervision dans le portail, consultez [Superviser les capacités Premium dans le portail d’administration](service-admin-premium-monitor-portal.md).
 
-L’application est mise à jour régulièrement avec de nouvelles fonctionnalités. Vérifiez que vous exécutez la version la plus récente.   
-**La dernière version de l’application est 1.10.1.2 (22 février 2019)**.   
-Si vous avez une version antérieure de l’application déjà installée, il est préférable de la supprimer de vos applications, puis d’appuyer sur Ctrl+F5 pour l’actualiser. 
+L’application est mise à jour régulièrement avec de nouvelles fonctionnalités. Vérifiez que vous utilisez la version la plus récente. Si vous avez une version antérieure de l’application déjà installée, il est préférable de la supprimer de vos applications, puis d’appuyer sur Ctrl+F5 pour l’actualiser. 
 
 ## <a name="install-the-app"></a>Installer l’application
 
@@ -39,7 +37,6 @@ Vous pouvez accéder directement à l’[application Métriques de capacité Pre
 
 Soyez patient. Quelques minutes sont nécessaires pour installer et actualiser les métriques. Si l’application affiche des métriques vides, appuyez sur F5 pour actualiser votre navigateur.
 
-
 ## <a name="get-app-refresh-history"></a>Obtenir l’historique d’actualisation de l’application
 
 Pour vérifier quand votre application Métriques de capacité Premium a été actualisée pour la dernière fois, cliquez sur **Paramètres** > **Jeux de données** > **Métriques de capacité Power BI Premium** > **Historique des actualisations**. 
@@ -52,7 +49,7 @@ La dernière actualisation est indiquée. Vous pouvez aussi cliquer sur **Histor
 
 ## <a name="monitor-capacities-with-the-app"></a>Superviser les capacités avec l’application
 
-Maintenant que vous avez installé l’application, vous pouvez voir des métriques pour les capacités de votre organisation. L’application fournit un [tableau de bord](#Dashboard) avec des résumés des métriques et des [rapports](#Reports) de métriques détaillés.
+Maintenant que vous avez installé l’application, vous pouvez voir des métriques pour les capacités de votre organisation. L’application fournit un tableau de bord avec des résumés des métriques et des rapports de métriques détaillées.
 
 ### <a name="dashboard"></a>Tableau de bord
 
@@ -136,6 +133,19 @@ Le tableau de bord inclut les métriques suivantes :
 | Mémoire : moyenne de rapports paginés (Go) | Consommation moyenne de mémoire par la charge de travail des rapports paginés au cours des sept derniers jours. |
 |||
 
+#### <a name="ai-summary"></a>Résumé de l’intelligence artificielle
+
+| Métrique | Description |
+| --- | --- |
+| Total des actualisations | Nombre total d’actualisations au cours des sept derniers jours. |
+| Fiabilité des actualisations (%) | Nombre d’actualisations réussies divisé par le nombre total d’actualisations au cours des sept derniers jours. |
+| CPU Max (%)| Consommation processeur maximale par la charge de travail d’intelligence artificielle au cours des sept derniers jours. |
+| Mémoire maximale (en Go) | Consommation de mémoire maximale par la charge de travail d’intelligence artificielle au cours des sept derniers jours.|
+| Actualise les temps d’attente maximal (MS) | Quantité maximale de temps avant de commencer l’actualisation. |
+| Actualisations de temps d’attente moyen (MS)| Temps moyen écoulé avant le début de l’actualisation. |
+| Actualise la durée maximale (MS) | Quantité maximale de temps à l’actualisation terminée. |
+| Actualisations, durée moyenne (MS)| Durée moyenne de l’actualisation. |
+| | |
 
 ### <a name="reports"></a>Rapports
 
@@ -143,10 +153,11 @@ Les rapports fournissent des métriques plus détaillées. Pour consulter les ra
 
 En bas du rapport il y a cinq *onglets* :
 
-[**Jeux de données**](#datasets) : fournit des détaillées sur l’intégrité des jeux de données Power BI dans vos capacités.   
-[**Rapports paginés**](#paginated-reports) : fournit des métriques détaillées sur l’intégrité des rapports paginés dans vos capacités.   
-[**Flux de données**](#dataflows) : fournit des métriques d’actualisation détaillées pour les flux de données dans vos capacités.   
-[**Consommation des ressources**](#resource-consumption) : fournit des métriques de ressources détaillées, notamment l’utilisation élevée de la mémoire et de l’UC.    
+[**Jeux de données**](#datasets) : fournit des détaillées sur l’intégrité des jeux de données Power BI dans vos capacités.
+[**Rapports paginés**](#paginated-reports) : fournit des métriques détaillées sur l’intégrité des rapports paginés dans vos capacités.
+[**Flux de données**](#dataflows) : fournit des métriques d’actualisation détaillées pour les flux de données dans vos capacités.
+[**Intelligence artificielle** ](#ai) -fournit des métriques détaillées sur l’intégrité de l’intelligence artificielle les fonctions utilisées dans vos capacités.
+[**Consommation des ressources**](#resource-consumption) : fournit des métriques de ressources détaillées, notamment l’utilisation élevée de la mémoire et de l’UC.
 [**ID et informations**](#ids-and-info) : noms, ID et propriétaires des capacités, des espaces de travail et des charges de travail.
 
 Chaque onglet ouvre une page où vous pouvez filtrer les métriques par capacité et par plage de dates. Si aucun filtre n’est sélectionné, le rapport indique par défaut les métriques de la semaine écoulée pour toutes les capacités qui signalent des métriques. 
@@ -159,7 +170,7 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 
 | Section du rapport | Métriques |
 | --- | --- |
-| Actualisations |  Nombre total : nombre total d’actualisations pour chaque jeu de données.<br>  Fiabilité : pourcentage des actualisations terminées pour chaque jeu de données.<br>  Temps d’attente moyen : délai moyen entre l’heure planifiée et le début d’une actualisation du jeu de données, en minutes.<br>  Temps d’attente maximal : délai d’attente maximal du jeu de données, en minutes.<br>  Durée moyenne : durée moyenne d’actualisation du jeu de données, en minutes.<br>  Durée maximale : durée de l’actualisation la plus longue en cours d’exécution pour le jeu de données, en minutes. |
+| Actualisations |  Nombre total : nombre total d’actualisations pour chaque jeu de données.<br>  Fiabilité : Le pourcentage des actualisations terminé pour chaque jeu de données.<br>  Temps d’attente moyen : délai moyen entre l’heure planifiée et le début d’une actualisation du jeu de données, en minutes.<br>  Temps d’attente maximal : délai d’attente maximal du jeu de données, en minutes.<br>  Durée moyenne : durée moyenne d’actualisation du jeu de données, en minutes.<br>  Durée maximale : durée de l’actualisation la plus longue en cours d’exécution pour le jeu de données, en minutes. |
 | 5 premiers jeux de données par durée moyenne (minutes) |  Les cinq jeux de données avec la durée d’actualisation moyenne la plus longue, en minutes. |
 | 5 premiers jeux de données par temps d’attente moyen (minutes) |  Les cinq jeux de données avec le temps d’attente moyen le plus long, en minutes. |
 | Nombre d’actualisations horaires et consommation de mémoire (Go) |  Réussites, échecs et consommation de mémoire, divisés en intervalles d’une heure et exprimés en heure UTC. |
@@ -213,12 +224,23 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 
 | **Section du rapport** | **Métriques** |
 | --- | --- |
-| Actualisations |  Total : total des actualisations pour chaque flux de données.<br>  Fiabilité : pourcentage des actualisations effectuées pour chaque flux de données.<br>  Temps d’attente moyen : délai moyen entre l’heure planifiée et le début d’une actualisation du flux de données, en minutes.<br>  Temps d’attente maximal : délai d’attente maximal du flux de données, en minutes.<br>  Durée moyenne : durée moyenne d’actualisation du flux de données, en minutes.<br>  Durée maximale : durée de l’actualisation la plus longue en cours d’exécution pour le flux de données, en minutes. |
+| Actualisations |  Total : total des actualisations pour chaque flux de données.<br>  Fiabilité : Le pourcentage des actualisations terminé pour chaque flux de données.<br>  Temps d’attente moyen : délai moyen entre l’heure planifiée et le début d’une actualisation du flux de données, en minutes.<br>  Temps d’attente maximal : délai d’attente maximal du flux de données, en minutes.<br>  Durée moyenne : durée moyenne d’actualisation du flux de données, en minutes.<br>  Durée maximale : durée de l’actualisation la plus longue en cours d’exécution pour le flux de données, en minutes. |
 | 5 principaux flux de données par durée d’actualisation moyenne |  Les cinq flux de données avec la durée d’actualisation moyenne la plus longue, en minutes. |
 | 5 premiers flux de données par délai d’attente moyen. |  Les cinq flux de données avec le délai d’attente d’actualisation moyen le plus long, en minutes. |
 | Délais d’attente d’actualisation moyens par heure |  Temps d’attente moyen d’actualisation, divisé en intervalles d’une heure et exprimé en heure UTC. Plusieurs pics élevés de temps d’attente d’actualisation indiquent une très forte sollicitation des capacités. |
 | Nombre d’actualisations par heure et consommation de mémoire |  Réussites, échecs et consommation de mémoire, divisés en intervalles d’une heure et exprimés en heure UTC. |
 |  |  |
+
+### <a name="ai"></a>AI
+
+| **Section du rapport** | **Métriques** |
+| --- | --- |
+| Utilisation globale | Nombre total : Nombre de fonctions d’intelligence artificielle dans un espace de travail ou un flux de données. <br> Fiabilité : Le pourcentage des actualisations terminée.<br> Avg. Délai d’attente : Le décalage moyenne entre l’heure planifiée et le début d’une actualisation, en millisecondes.<br> Temps d’attente maximal : Le délai d’attente maximal, en millisecondes.<br> Avg. Durée : La durée moyenne d’une actualisation, en millisecondes.<br> Durée maximale : La durée de l’actualisation de la plus longue-en cours d’exécution, en millisecondes.<br> Entrée de moyenne taille : La taille d’entrée moyenne, en octets, pour la fonction de l’intelligence artificielle exécutée par une actualisation de flux de données.<br> Taille de la sortie de la moyenne : Taille, en octets, pour la fonction de l’intelligence artificielle exécutée par une actualisation de flux de données de sortie de la moyenne. |
+| Fonctions d’intelligence artificielle 5 premiers par durée moyenne | Les cinq fonctions avec la moyenne la plus longue actualiser la durée, en millisecondes. |
+| 5 premiers AI fonctions par taille moyenne en entrée | Les cinq fonctions avec les moyenne des données plus grande taille d’entrée, en octets. |
+| Nombre d’actualisations par heure et consommation de mémoire | Réussites, échecs et consommation de mémoire, divisés en intervalles d’une heure et exprimés en heure UTC. |
+| Durée moyenne horaire | La durée moyenne d’une actualisation, divisé en compartiments d’une heure, indiqué en heure UTC. |
+| | |
 
 ### <a name="resource-consumption"></a>Consommation des ressources
 
@@ -274,7 +296,7 @@ Vous pouvez également utiliser l’application Métriques de capacité Power B
 
 1. Ouvrez votre capacité dans le portail Azure.
 
-1. Cliquez sur **Contrôle d’accès (IAM)** et ajoutez l’application **Power BI Premium** au rôle de lecteur. Si vous ne parvenez pas à trouver l’application par son nom, vous pouvez également l’ajouter via son ID client : `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
+1. Cliquez sur **Contrôle d’accès (IAM)** et ajoutez l’application **Power BI Premium** au rôle de lecteur. Si vous ne parvenez pas à trouver l’application par son nom, vous pouvez également l’ajouter par identificateur de client : `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
 
     ![Autorisations pour Power BI Embedded](media/service-admin-premium-monitor-capacity/embedded-permissions.png)
 
@@ -285,4 +307,4 @@ Vous pouvez également utiliser l’application Métriques de capacité Power B
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Gestion et optimisation des ressources de capacité de Power BI Premium](service-premium-understand-how-it-works.md)
+> [Optimisation des capacités Power BI Premium](service-premium-capacity-optimize.md)

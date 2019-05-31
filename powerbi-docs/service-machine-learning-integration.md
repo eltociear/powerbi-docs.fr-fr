@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 9a7afafaa14ed890e10e77507aafb637755cd87f
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
-ms.translationtype: HT
+ms.openlocfilehash: 6c09392566805f2857c50784f16c0e3f9d4b5697
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57965491"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61232397"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Intégration d’Azure Machine Learning dans Power BI (préversion)
 
@@ -51,7 +51,7 @@ Cet article décrit pas à pas comment autoriser un utilisateur de Power BI à a
 
     ![Sélectionnez votre abonnement](media/service-machine-learning-integration/machine-learning-integration_02.png)
 
-4. Sélectionnez **Access Control (IAM)**, puis sélectionnez le bouton **Ajouter**.
+4. Sélectionnez **Access Control (IAM)** , puis sélectionnez le bouton **Ajouter**.
 
     ![Contrôle d’accès IAM](media/service-machine-learning-integration/machine-learning-integration_03.png)
 
@@ -106,9 +106,9 @@ Cet article donne une vue d’ensemble de l’intégration de Machine Learning d
 
 Pour plus d’informations sur les flux de données, lisez les articles suivants :
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [Utilisation d’entités calculées sur Power BI Premium (préversion)](service-dataflows-computed-entities-premium.md)
-* [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
+* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 * [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 
 

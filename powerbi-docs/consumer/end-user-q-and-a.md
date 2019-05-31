@@ -1,5 +1,5 @@
 ---
-title: Présentation de Questions et réponses dans le service Power BI
+title: Questions et réponses pour les consommateurs de Power BI
 description: Rubrique de vue d’ensemble de la documentation pour les requêtes en langage naturel des questions et réponses Power BI.
 author: mihart
 manager: kvivek
@@ -8,19 +8,20 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/01/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: e6f95eedbd84ad5f512bbc1a1255cee7130a60d7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 35ff71d5956c1c48c304324c121f79addf04cb56
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661971"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65625114"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Questions et réponses pour les **consommateurs** Power BI
 ## <a name="what-is-qa"></a>Qu’est-ce que Q&R ?
-Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel. Par exemple, « quel était le total des ventes l’année dernière ».  
+Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel. Par exemple, « quel était le total des ventes l’année dernière ».
+
 Utilisez l’outil Q&R pour explorer vos données à l’aide des fonctionnalités intuitives du langage naturel et recevez des réponses sous la forme de graphiques et de diagrammes. Q&R diffère d’un moteur de recherche, car il ne fournit que des résultats sur les données de Power BI.
 
 **Questions et réponses de Power BI** prend uniquement en charge les réponses aux questions en langage naturel formulées en anglais. Votre administrateur Power BI peut activer une préversion disponible en espagnol.
@@ -35,7 +36,7 @@ Les questions ne sont qu’un début.  Amusez-vous à explorer vos données, aff
 Cet outil est réellement interactif et surtout très rapide ! Grâce à son stockage en mémoire, il fournit des réponses de manière quasi instantanée.
 
 ## <a name="where-can-i-use-qa"></a>Où puis-je utiliser Questions et réponses ?
-Vous trouverez Questions et réponses sur les tableaux de bord dans le service Power BI, en bas du tableau de bord dans Power BI Mobile et au-dessus de la visualisation dans Power BI Embedded. À moins que le concepteur vous ait donné des autorisations de modification, vous pouvez utiliser Questions et réponses pour explorer les données, mais vous ne pouvez pas enregistrer les visualisations créées avec cette fonctionnalité.
+Vous trouverez Q & r sur des tableaux de bord et rapports dans le service Power BI et en bas du tableau de bord dans Power BI mobile. À moins que le concepteur vous ait donné des autorisations de modification, vous pouvez utiliser Questions et réponses pour explorer les données, mais vous ne pouvez pas enregistrer les visualisations créées avec cette fonctionnalité.
 
 ![zone de question](media/end-user-q-and-a/powerbi-qna.png)
 
@@ -68,7 +69,7 @@ Vous pouvez également indiquer à Q&R quelle visualisation utiliser en l’ajou
 **Réponse 1** : Si vous ne voyez pas de zone de question, commencez par vérifier vos paramètres. Pour ce faire, sélectionnez l’icône d’engrenage en haut à droit de votre barre d’outils Power BI.   
 ![icône d’engrenage](media/end-user-q-and-a/power-bi-settings.png)
 
-Choisissez ensuite **Paramètres** > **Tableaux de bord**. Vérifiez qu’il y a une coche à côté de l’option **Afficher la zone de recherche de Questions et réponses dans ce tableau de bord**.
+Choisissez ensuite **Paramètres** > **Tableaux de bord**. Vérifiez qu’il y a une coche à côté de l’option **Afficher la zone de recherche de Questions et réponses dans ce tableau de bord**.    
 ![Paramètres Questions et réponses pour le tableau de bord](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 

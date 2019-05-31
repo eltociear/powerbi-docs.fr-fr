@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 82844a1e928d30db12ba5659edcee7b07eaaf7b3
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 99ad06b84b01ce94b3433952cdd031a81c336e04
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215347"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454143"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Utiliser des insights dans Power BI Desktop pour identifier les différences de répartition (préversion)
 
@@ -48,7 +48,7 @@ Pour utiliser les insights de façon à localiser les différences de répartiti
 
 Les valeurs auxquelles le filtre sélectionné est appliqué s’affichent dans la couleur par défaut normale. Les valeurs globales, telles qu’elles sont représentées dans le visuel initial, sont affichées en gris pour faciliter la comparaison. Il est possible d’appliquer jusqu’à trois filtres différents (en l’occurrence, *Touring Bikes* (Vélos de cyclotourisme), *Mountain Bikes* (VTT), *Road Bikes* (Vélos de route)). Pour choisir des filtres différents, il suffit de cliquer dessus (ou d’utiliser la combinaison ctrl-clic pour en sélectionner plusieurs).
 
-Pour les mesures additives simples, comme *Total Sales* (Total des ventes) dans cet exemple, la comparaison s’effectue à partir de valeurs relatives, et non absolues. Par conséquent, même si les ventes de vélos de cyclotourisme sont certaines plus faibles que les ventes globales qui concernent toutes les catégories, par défaut, le visuel utilise un axe double pour permettre à l’utilisateur de comparer la proportion des ventes dans les différents pays, pour la catégorie Touring Bikes par rapport à toutes les catégories de vélos.  En actionnant le bouton bascule situé au bas du visuel, vous pouvez afficher les deux valeurs sur le même axe, ce qui vous permet de comparer facilement les valeurs absolues (comme le montre l’image suivante).    
+Pour les mesures additives simples, comme *Total Sales* (Total des ventes) dans cet exemple, la comparaison s’effectue à partir de valeurs relatives, et non absolues. Par conséquent, tandis que les ventes de vélos sont inférieurs aux ventes globales pour toutes les catégories, l’élément visuel utilise par défaut un axe double pour permettre la comparaison entre la proportion des ventes dans des pays différents, pour les vélos de cyclotourisme par rapport à toutes les catégories de vélos.  En actionnant le bouton bascule situé au bas du visuel, vous pouvez afficher les deux valeurs sur le même axe, ce qui vous permet de comparer facilement les valeurs absolues (comme le montre l’image suivante).    
 
 ![visuels utilisant des insights](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -63,16 +63,16 @@ Vous pouvez utiliser cette fonctionnalité d’affichage d’informations lorsqu
 ## <a name="details-of-the-returned-results"></a>Détails des résultats retournés
 Voici comment fonctionne l’algorithme : après avoir pris toutes les autres colonnes du modèle, il applique toutes les valeurs de ces colonnes en guise de filtres au visuel d’origine et identifie les valeurs de filtre qui produisent le résultat le plus *différent* de l’original.
 
-Il va de soi que vous vous demandez probablement ce que l’on entend par *différent*. Par exemple, supposons que la répartition globale des ventes entre les États-Unis et le Canada était la suivante :
+Vous vous demandez probablement ce que *différents* signifie. Par exemple, supposons que la répartition globale des ventes entre les États-Unis et le Canada était la suivante :
 
-|Country  |Ventes (en millions de dollars)|
+|Pays  |Ventes (en millions de dollars)|
 |---------|----------|
 |USA      |15        |
 |Canada   |5         |
 
 Ensuite, pour une catégorie de produit déterminée (*Road Bikes*) (Vélos de route), les ventes pouvaient être réparties comme suit :
 
-|Country  |Ventes (en millions de dollars)|
+|Pays  |Ventes (en millions de dollars)|
 |---------|----------|
 |USA      |3        |
 |Canada   |1         |
@@ -81,14 +81,14 @@ Même si les chiffres sont différents dans chacun de ces tableaux, les valeurs 
 
 Maintenant, penchons-nous sur un autre type de mesure : la marge, qui est calculée en tant que Bénéfice/Coût. Supposons que les marges globales pour les États-Unis et le Canada étaient les suivantes :
 
-|Country  |Marge (%)|
+|Pays  |Marge (%)|
 |---------|----------|
 |USA      |15        |
 |Canada   |5         |
 
 Ensuite, pour une catégorie de produit déterminée (*Road Bikes*) (Vélos de route), les ventes pouvaient être réparties comme suit :
 
-|Country  |Marge (%)|
+|Pays  |Marge (%)|
 |---------|----------|
 |USA      |3        |
 |Canada   |1         |
@@ -97,7 +97,7 @@ Compte tenu de la nature de ces mesures, elles *sont* considérés comme étant 
 
 Les visuels affichés ont donc pour but de mettre en évidence les différences trouvées entre la répartition globale (telle que présentée dans le visuel d’origine) et la valeur après application du filtre spécifique.  
 
-Ainsi, pour les mesures additives, telles que les ventes (*Sales*) dans l’exemple précédent, un histogramme et un graphique en courbes sont utilisés, de même qu’un double axe et une mise à l’échelle appropriée pour faciliter la comparaison des valeurs relatives. Les colonnes présentent la valeur avec le filtre appliqué, tandis que la ligne présente la valeur globale (l’axe des colonnes étant situé à gauche et l’axe des lignes étant situé à droite, comme à l’habitude). La ligne est représentée en pointillés et remplie de gris avec un style *en escalier*. Pour l’exemple précédent, si la valeur maximale de l’axe des colonnes est 4 et que la valeur maximale de l’axe des lignes est 20, les valeurs relatives entre les États-Unis et le Canada sont faciles à comparer pour les valeurs filtrées et les valeurs globales. 
+Ainsi, pour les mesures additives, telles que les ventes (*Sales*) dans l’exemple précédent, un histogramme et un graphique en courbes sont utilisés, de même qu’un double axe et une mise à l’échelle appropriée pour faciliter la comparaison des valeurs relatives. Les colonnes présentent la valeur avec le filtre appliqué, tandis que la ligne présente la valeur globale (l’axe des colonnes étant situé à gauche et l’axe des lignes étant situé à droite, comme à l’habitude). La ligne est reprises en utilisant un *échelonnée* style, avec une ligne en pointillés, bourré de gris. Pour l’exemple précédent, si la valeur maximale de l’axe de colonne est 4, et la valeur maximale de l’axe de ligne est de 20, puis il permettrait faciliter la comparaison des valeurs relatives entre les États-Unis et Canada : pour les valeurs filtrées et globales. 
 
 De la même façon, pour les mesures non additives comme la marge (*Margin*) dans l’exemple précédent, un histogramme et un graphique en courbes sont utilisés, de même qu’un axe unique, ce qui signifie que les valeurs absolues peuvent être facilement comparées. Là encore, la ligne (remplie de gris) présente la valeur globale. Qu’il s’agisse de comparer des valeurs réelles ou des valeurs relatives, il ne suffit pas de calculer la différence entre les valeurs pour déterminer le degré de différence entre deux répartitions. Par exemple :
 
@@ -107,7 +107,7 @@ De la même façon, pour les mesures non additives comme la marge (*Margin*) dan
 
 * Plusieurs méthodes heuristiques sont utilisées pour sélectionner les résultats les plus significatifs, par exemple en prenant en considération d’autres relations entre les données.
      
-Après examen des différentes colonnes et des valeurs de chacune de ces colonnes, c’est l’ensemble de valeurs qui présentent les plus grandes différences qui est choisi. Pour faciliter la compréhension, ces valeurs sont regroupées par colonne, la colonne dont les valeurs présentent la plus grande différence étant répertoriée en premier. Chaque colonne contient au maximum trois valeurs, mais peut en présenter moins si le nombre de valeurs ayant un effet important est moindre ou si certaines valeurs ont beaucoup plus d’impact que d’autres. 
+Après examen des différentes colonnes et des valeurs de chacune de ces colonnes, c’est l’ensemble de valeurs qui présentent les plus grandes différences qui est choisi. Pour faciliter la compréhension, ces valeurs sont regroupées par colonne, la colonne dont les valeurs présentent la plus grande différence étant répertoriée en premier. Jusqu'à trois valeurs sont affichés par colonne, mais inférieure peut être affichée s’il y a moins de trois valeurs qui ont un impact important, ou si certaines valeurs sont beaucoup plus efficaces que d’autres. 
 
 Toutes les colonnes du modèle n’étant pas nécessairement examinées pendant la période disponible, il n’est pas garanti que les colonnes et les valeurs ayant le plus fort impact soient affichées. Cependant, diverses méthodes heuristiques sont utilisées pour faire en sorte que les meilleurs candidats parmi les colonnes soient examinés en premier. Par exemple, supposons qu’après examen de toutes les colonnes, il est établi que les colonnes/valeurs suivantes ont le plus fort impact sur la répartition (ordre décroissant) :
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8e5755f632a0cfab8b0b4bc79871c96ee9e2aeef
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263414"
+---
 Bienvenue dans la section **Exploration des données** du cours **Formation guidée** pour Power BI. Maintenant que vous êtes familiarisé avec Power BI Desktop et que vous savez comment obtenir et visualiser des données, vous êtes prêt à explorer des données dans le service Power BI.
 
 ![](media/4-0-intro-power-bi-service/4-0_2.png)

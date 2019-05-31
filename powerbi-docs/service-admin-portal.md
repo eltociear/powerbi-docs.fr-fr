@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 05/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 2b5e65ff8e9f603dad0e0537ba52e7da799bf177
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 6c9d59bbc2c6bf81242166bef4cd7584f52fb633
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383551"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941592"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -34,7 +34,7 @@ Pour obtenir l’accès au portail d’administration Power BI, votre compte do
 
     ![Paramètres du portail d’administration](media/service-admin-portal/powerbi-admin-settings.png)
 
-Le portail compte sept onglets. Le reste de cet article fournit des informations sur chacun de ces onglets.
+Il existe neuf onglets dans le portail. Le reste de cet article fournit des informations sur chacun de ces onglets.
 
 ![Navigation dans le portail d’administration](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -44,7 +44,9 @@ Le portail compte sept onglets. Le reste de cet article fournit des informations
 * [Paramètres du locataire](#tenant-settings)
 * [Paramètres de capacité](#capacity-settings)
 * [Codes incorporés](#embed-codes)
-* [Visuels organisationnels](#organizational-visuals)
+* [Visuels de l’organisation](#organization-visuals)
+* [Stockage de flux de données (version préliminaire)](#dataflowStorage)
+* [Espaces de travail](#workspaces)
 
 ## <a name="usage-metrics"></a>Métriques d’utilisation
 
@@ -126,15 +128,27 @@ Les paramètres peuvent avoir trois états :
 
 Les sections suivantes fournissent une vue d’ensemble des différents types de paramètres de locataire.
 
+## <a name="help-and-support-settings"></a>Aide et support de paramètres
+
+### <a name="publish-get-help-information"></a>Publier des informations de « Obtenir de l’aide »
+
+Les utilisateurs dans l’organisation peuvent accéder à l’aide d’interne et prend en charge des ressources dans le menu aide de Power BI. Plus précisément, ces paramètres changent le comportement des éléments de menu Aide en savoir plus, la Communauté et Get.
+
+Il est également possible de spécifier une URL pour diriger les utilisateurs vers une solution personnalisée pour les demandes de licences. Ce paramètre personnalise l’URL cible du bouton de mise à niveau de compte sur lequel un utilisateur sans licence Power BI Pro peut trouver dans la mise à jour de la boîte de dialogue Power BI Pro ainsi que dans la page Gérer le stockage personnel.
+
 ## <a name="workspace-settings"></a>Paramètres d’espace de travail
 
-### <a name="create-workspaces-preview"></a>Créer des espaces de travail (préversion)
+### <a name="create-workspaces"></a>Créer des espaces de travail
 
-Les utilisateurs de l’organisation peuvent créer des espaces de travail d’application pour collaborer sur des tableaux de bord, des rapports et autre contenu. [En savoir plus](service-create-the-new-workspaces.md)
+Les administrateurs utilisent la **créer des espaces de travail** paramètre pour indiquer les utilisateurs de l’organisation peuvent créer des espaces de travail d’application pour collaborer sur des tableaux de bord, rapports et d’autres contenus. En savoir plus sur [espaces de travail application](service-create-the-new-workspaces.md).
+
+Le portail d’administration a une autre section de paramètres sur les espaces de travail dans votre client. Dans cette section, vous pouvez trier et filtrer la liste des espaces de travail et afficher les détails pour chaque espace de travail. Consultez [espaces de travail](#workspaces) pour plus d’informations.
+
+Dans le portail d’administration, vous également contrôler les utilisateurs qui disposent des autorisations nécessaires pour distribuer des applications à l’organisation. Consultez [publier des packs de contenu et des applications dans toute l’organisation](#publish-content-packs-and-apps-to-the-entire-organization) dans cet article pour plus d’informations.
 
 ## <a name="export-and-sharing-settings"></a>Paramètres d’exportation et de partage
 
-### <a name="share-content-to-external-users"></a>Partager le contenu avec des utilisateurs externes
+### <a name="share-content-with-external-users"></a>Partager le contenu avec des utilisateurs externes
 
 Les utilisateurs de l’organisation peuvent partager des tableaux de bord avec des utilisateurs externes à l’organisation. [En savoir plus](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
 
@@ -142,7 +156,7 @@ Les utilisateurs de l’organisation peuvent partager des tableaux de bord avec 
 
 L’image suivante présente le message qui s’affiche quand vous faites un partage avec un utilisateur externe.
 
-![Partager avec un utilisateur externe](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Partager avec un utilisateur externe](media/service-admin-portal/powerbi-admin-sharing-external.png)  
 
 ### <a name="publish-to-web"></a>Publier sur le web
 
@@ -154,7 +168,7 @@ L’image suivante présente le menu **Fichier** qui s’affiche pour un rapport
 
 Les options présentées aux utilisateurs dans l’interface utilisateur varient en fonction de la nature du paramètre **Publier sur le web**.
 
-|Fonctionnalité |Activée pour toute l’organisation |Désactivée pour toute l’organisation |Groupes de sécurité spécifiques   |
+|Caractéristique |Activée pour toute l’organisation |Désactivée pour toute l’organisation |Groupes de sécurité spécifiques   |
 |---------|---------|---------|---------|
 |**Publier sur le web** sous le menu **Fichier** du rapport.|Activée pour tous|Non visible pour tous|Visible uniquement par les utilisateurs ou groupes autorisés.|
 |**Gérer les codes d’incorporation** sous **Paramètres**|Activée pour tous|Activée pour tous|Activée pour tous<br><br>Option * **Supprimer** uniquement pour les utilisateurs ou groupes autorisés.<br>* **Obtenir les codes** activé pour tous.|
@@ -203,19 +217,19 @@ L’image suivante présente l’option permettant d’autoriser les utilisateur
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publier des packs de contenu et des applications pour toute l’organisation
 
-Les utilisateurs de l’organisation peuvent publier des packs de contenu et des applications pour toute l’organisation, plutôt que pour des groupes spécifiques uniquement. [En savoir plus](service-organizational-content-pack-manage-update-delete.md)
+Administrateurs utilisent ce paramètre pour décider quels utilisateurs peuvent publier des packs de contenu et des applications sur l’ensemble de l’organisation, plutôt que des groupes spécifiques uniquement. En savoir plus sur [publication d’applications](service-create-distribute-apps.md).
 
 L’image suivante montre l’option **Toute mon organisation** lors de la création d’un pack de contenu.
 
 ![Publier un pack de contenu vers l’organisation](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-apps"></a>Créer des applications modèles
+### <a name="create-template-apps-and-organizational-content-packs"></a>Créer des applications de modèle et des packs de contenu organisationnels
 
-Les utilisateurs de l’organisation peuvent créer des applications modèles qui utilisent des jeux de données conçus dans Power BI Desktop. En savoir plus sur les [applications modèles](template-content-pack-authoring.md)
+Les utilisateurs de l’organisation peuvent créer des applications de modèle et des packs de contenu d’organisation qui utilisent des jeux de données basés sur une source de données dans Power BI Desktop. En savoir plus sur [modèle applications](template-content-pack-authoring.md).
 
 ### <a name="push-apps-to-end-users"></a>Effectuer une transmission de type push des applications pour les utilisateurs finaux
 
-Les utilisateurs peuvent partager directement des applications avec les utilisateurs finaux sans installation à partir d’AppSource. [En savoir plus](service-create-distribute-apps.md)
+Créateurs de rapports peuvent partager des applications directement avec les utilisateurs finaux sans avoir à installer à partir de [AppSource](https://appsource.microsoft.com). En savoir plus sur [installation automatique des applications pour les utilisateurs finaux](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
 ## <a name="integration-settings"></a>Paramètres d’intégration
 
@@ -335,11 +349,18 @@ Les utilisateurs de l’organisation peuvent étiqueter les tableaux de bord ave
 
 Les utilisateurs de l’organisation peuvent incorporer des tableaux de bord et des rapports Power BI dans des applications Saas (Software as a Service). La désactivation de ce paramètre empêche les utilisateurs d’utiliser les API REST pour incorporer du contenu Power BI dans leur application. [En savoir plus](developer/embedding.md)
 
-## <a name="dataflow-settings-preview"></a>Paramètres de dataflow (préversion)
+### <a name="allow-service-principals-to-use-power-bi-apis"></a>Autoriser les principaux de service à utiliser les API Power BI
 
-### <a name="create-and-use-dataflows-preview"></a>Créer et utiliser des dataflows (préversion)
+Les applications Web inscrites dans Azure Active Directory (Azure AD) utilise un principal du service affecté pour accéder aux API Power BI sans utilisateur connecté. Pour autoriser une application à utiliser l’authentification de principal du service son principal du service doit être inclus dans un groupe de sécurité autorisées. [En savoir plus](developer/embed-service-principal.md)
 
-Les utilisateurs de l'organisation peuvent créer et utiliser des dataflows. Pour une vue d’ensemble des dataflows, consultez [Préparation des données en libre-service dans Power BI (préversion)](service-dataflows-overview.md). Pour activer les dataflows dans une capacité Premium, consultez [Configurer des charges de travail](service-admin-premium-workloads.md).
+> [!NOTE]
+> Les principaux de service héritent des autorisations de leur groupe de sécurité pour tous les paramètres du locataire Power BI. Pour limiter les autorisations, créez un groupe de sécurité dédié pour les principaux de service et ajoutez-le à la liste « À l’exception des groupes de sécurité spécifiques » pour les paramètres Power BI pertinents activés.
+
+## <a name="dataflow-settings"></a>Paramètres de dataflow
+
+### <a name="create-and-use-dataflows"></a>Créer et utiliser des flux de données
+
+Les utilisateurs de l'organisation peuvent créer et utiliser des dataflows. Pour une vue d’ensemble de flux de données, consultez [de préparation des données en libre-service dans Power BI](service-dataflows-overview.md). Pour activer les dataflows dans une capacité Premium, consultez [Configurer des charges de travail](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
@@ -350,11 +371,18 @@ Deux paramètres contrôlent les applications modèles.
 
 ![Paramètres des applications modèles dans le portail d’application Power BI](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-Le premier paramètre, **Créer des applications modèles**, contrôle quels utilisateurs dans votre organisation sont autorisés à créer des applications modèles. Les créateurs d’applications modèles peuvent ensuite distribuer leurs nouvelles applications à des clients extérieurs à votre organisation via AppSource ou une autre méthode de distribution.
+### <a name="create-template-apps-preview"></a>Créer des applications modèles (préversion)
+
+Les utilisateurs de l’organisation peuvent créer des applications de modèle. Créateurs d’application de modèle peuvent puis les distribuer aux clients en dehors de votre organisation par l’intermédiaire de [AppSource](https://appsource.microsoft.com) ou d’autres méthodes de distribution.
 
 ![Portail d’administration Power BI, paramètre Créer des applications modèles](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-Avec le second paramètre, **Installer des applications modèles**, vous contrôlez quels utilisateurs dans votre organisation sont autorisés à télécharger et installer des applications modèles provenant d’AppSource ou d’une autre source
+### <a name="install-template-apps-preview"></a>Installer des applications de modèle (version préliminaire)
+
+Utilisateurs de l’organisation peuvent télécharger et installer des applications de modèle à partir de [AppSource](https://appsource.microsoft.com) ou une autre source.
+
+> [!NOTE]
+> Ce paramètre détermine quels utilisateurs peuvent installer des applications de modèle sur leurs comptes Power BI.
 
 ## <a name="capacity-settings"></a>Paramètres de capacité
 
@@ -366,7 +394,7 @@ L’onglet **Power BI Premium** vous permet de gérer les capacités Power BI P
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-L’onglet **Power BI Embedded** vous permet d’afficher les capacités de Power BI Embedded (référence SKU A) que vous avez achetées pour votre client. Dans la mesure où vous ne pouvez acheter des références SKU A qu’à partir d’Azure, vous [gérez les capacités incorporées dans Azure](developer/azure-pbie-create-capacity.md) depuis **le portail Azure**.
+L’onglet **Power BI Embedded** vous permet d’afficher les capacités de Power BI Embedded (référence SKU A) que vous avez achetées pour votre client. Dans la mesure où vous pouvez uniquement acheter des références SKU A à partir d’Azure, vous [gérer les capacités incorporées dans Azure](developer/azure-pbie-create-capacity.md) de **le portail Azure**.
 
 Pour plus d’informations sur la gestion des paramètres de Power BI Embedded (référence SKU A), consultez [Qu’est-ce que Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
@@ -376,9 +404,9 @@ En tant qu’administrateur, vous pouvez afficher les codes incorporés qui sont
 
 ![Codes incorporés au sein du portail d’administration Power BI](media/service-admin-portal/embed-codes.png)
 
-## <a name="organizational-visuals"></a>Visuels organisationnels
+## <a name="organizational-visuals">Visuels de l’organisation</a>
 
-L’onglet **Visuels organisationnels** vous permet de déployer et de gérer des visuels personnalisés au sein de votre organisation. Avec les visuels d’organisation, vous pouvez facilement déployer des visuels propriétaires dans votre organisation, que les auteurs de rapports peuvent ensuite détecter et importer dans leurs rapports à partir de Power BI Desktop. [En savoir plus](power-bi-custom-visuals-organization.md)
+L’onglet **Visuels de l’organisation** vous permet de déployer et de gérer des visuels personnalisés au sein de votre organisation. Avec les visuels d’organisation, vous pouvez facilement déployer des visuels propriétaires dans votre organisation, que les auteurs de rapports peuvent ensuite détecter et importer dans leurs rapports à partir de Power BI Desktop. [En savoir plus](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Un visuel personnalisé est susceptible de contenir du code présentant des risques pour la sécurité ou la confidentialité ; vérifiez que vous faites confiance à son auteur et à sa source avant de le déployer dans le référentiel de l’organisation.
@@ -436,19 +464,21 @@ Assurez-vous que l’ID du visuel reste inchangé. Le nouveau fichier remplace l
 
 Pour plus d’informations, consultez [Questions fréquentes sur les visuels personnalisés d’une organisation](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
 
-## <a name="dataflow-storage-preview"></a>Stockage de dataflows (préversion)
+## <a name="dataflowStorage">Stockage de flux de données (version préliminaire)</a>
 
 Par défaut, les données utilisées avec Power BI sont stockées dans le stockage interne offert par Power BI. Avec l’intégration entre les flux de données et Azure Data Lake Storage Gen2 (ADLS Gen2), vous pouvez stocker vos flux de données dans le compte Azure Data Lake Storage Gen2 de votre organisation. Pour plus d’informations, consultez [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md).
 
-## <a name="workspaces-preview"></a>Espaces de travail (préversion)
+## <a name="workspaces"></a>Espaces de travail
 
-En tant qu’administrateur, vous pouvez afficher les espaces de travail qui existent dans votre locataire. Vous pouvez trier et filtrer la liste des espaces de travail et afficher les détails de chaque espace de travail. Notez que les colonnes de la table correspondent aux propriétés retournées par l’[API REST administrateur Power BI](/rest/api/power-bi/admin) pour les espaces de travail. Les espaces de travail personnels sont de type **PersonalGroup**, les espaces de travail hérités sont de type **Group**, et les espaces de travail modernes sont de type **Workspace**. Pour plus d’informations, consultez [Créer les nouveaux espaces de travail (préversion) dans Power BI](service-create-the-new-workspaces.md).
+En tant qu’administrateur, vous pouvez afficher les espaces de travail qui existent dans votre locataire. Vous pouvez trier et filtrer la liste des espaces de travail et afficher les détails de chaque espace de travail. Les colonnes de table correspondent aux propriétés retournées par la [administrateur Power BI API Rest](/rest/api/power-bi/admin) pour les espaces de travail. Espaces de travail personnels sont de type **PersonalGroup**, sont des espaces de travail classiques de type **groupe**, et l’espace de travail expérience espaces de travail sont de type **espace de travail**. Pour plus d’informations, consultez [créer de nouveaux espaces de travail dans Power BI](service-create-the-new-workspaces.md).
 
 ![Liste des espaces de travail](media/service-admin-portal/workspaces-list.png)
 
+
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Administration de Power BI dans votre organisation](service-admin-administering-power-bi-in-your-organization.md)  [Présentation du rôle d’administrateur Power BI](service-admin-role.md)  
+[Administration de Power BI dans votre organisation](service-admin-administering-power-bi-in-your-organization.md)  
+[Présentation du rôle d’administrateur Power BI](service-admin-role.md)  
 [Audit de Power BI dans votre organisation](service-admin-auditing.md)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

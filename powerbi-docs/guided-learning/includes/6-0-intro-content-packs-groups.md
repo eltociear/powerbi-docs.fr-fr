@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f81300becc8a79b8a169aebe2ce3c56991c03262
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256253"
+---
 Bienvenue dans la section **Publication et partage** du cours **Formation guidée** pour Power BI.
 
 Maintenant que vous avez découvert comment Excel et Power BI fonctionnent ensemble et que vous avez tout appris sur les éléments visuels que vous pouvez créer dans des rapports et des tableaux de bord, vous voudrez probablement les partager avec vos collègues et amis. Avec Power BI, la **publication et le partage** sont des opérations faciles à effectuer.

@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: ccd8569650bd4f3da1a05c0999ad510029e5ab49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220951"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61137903"
 ---
-# <a name="using-computed-entities-on-power-bi-premium-preview"></a>Utilisation d’entités calculées sur Power BI Premium (préversion)
+# <a name="using-computed-entities-on-power-bi-premium"></a>Utilisation d’entités calculées sur Power BI Premium
 
 Vous pouvez effectuer des **calculs dans le stockage** lors de l’utilisation de **flux de données** avec un abonnement Power BI Premium. Ceci vous permet d’effectuer des calculs sur vos flux de données existants et de retourner des résultats qui vous permettent de vous concentrer sur la création et l’analyse de rapports. 
 
@@ -31,10 +31,6 @@ Il existe deux façons de connecter les données du flux de données à Power BI
 * Utilisation d’un flux de données externe
 
 Les sections suivantes décrivent comment créer des entités calculées sur vos données de flux de données.
-
-> [!NOTE]
-> La fonctionnalité de flux de données étant en préversion, elle est susceptible de changer et d’être mise à jour avant la disponibilité générale.
-
 
 ## <a name="how-to-create-computed-entities"></a>Comment créer des entités calculées 
 
@@ -89,9 +85,9 @@ Cet article décrit les entités calculées et les flux de données disponibles 
 
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
-* [Configurer les paramètres de flux de données d’espace de travail (préversion)](service-dataflows-configure-workspace-storage-settings.md)
+* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Configurer les paramètres de flux de données d’un espace de travail (préversion)](service-dataflows-configure-workspace-storage-settings.md)
 * [Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)](service-dataflows-add-cdm-folder.md)
 * [Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 

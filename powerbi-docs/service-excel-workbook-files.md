@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 54108b8d4fd02730cb1aa027d2fefbad2bbfd9fb
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513126"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Obtenir des données de classeurs Excel
@@ -119,7 +119,7 @@ L’utilisation de la fonctionnalité **Publier sur Power BI** dans Excel 2016
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Votre classeur est trop volumineux ? Consultez [Réduire la taille d’un classeur Excel pour l’afficher dans Power BI](reduce-the-size-of-an-excel-workbook.md).
 
-Actuellement, quand vous sélectionnez Importer, Power BI importe uniquement les données qui font partie d’une table nommée ou d’un modèle de données. Par conséquent, si le classeur ne contient ni table nommée, ni feuille Power View, ni modèle de données Excel, cette erreur risque de se produire : **« Impossible de trouver des données dans ce classeur Excel »**. [Cet article](service-admin-troubleshoot-excel-workbook-data.md) explique comment corriger votre classeur et l’importer à nouveau.
+Actuellement, quand vous sélectionnez Importer, Power BI importe uniquement les données qui font partie d’une table nommée ou d’un modèle de données. Par conséquent, si le classeur ne contient ni table nommée, ni feuille Power View, ni modèle de données Excel, cette erreur risque de se produire : **« Impossible de trouver des données dans ce classeur Excel »** . [Cet article](service-admin-troubleshoot-excel-workbook-data.md) explique comment corriger votre classeur et l’importer à nouveau.
 
 ## <a name="next-steps"></a>Étapes suivantes
 **Explorez vos données** : une fois vos données et rapports importés dans Power BI à partir de votre fichier, il est temps de les explorer. Cliquez simplement avec le bouton droit sur le nouveau jeu de données, puis cliquez sur Explorer. Si vous avez choisi de vous connecter à un classeur sur OneDrive à l’étape 4, votre classeur apparaît dans Rapports. Lorsque vous cliquez dessus, il s’ouvre dans Power BI, comme il le ferait dans Excel Online.

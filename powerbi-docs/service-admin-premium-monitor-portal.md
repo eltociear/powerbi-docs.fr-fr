@@ -1,51 +1,123 @@
 ---
 title: Superviser les capacités Power BI Premium avec le portail d’administration
 description: Utilisez le portail d’administration Power BI pour superviser vos capacités Premium.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 04/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 59097c07719e4bb8db188e8a86db377076aea7a9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
-ms.translationtype: HT
+ms.openlocfilehash: 36b03a67e7c02702a70b6486880cc8eabf93e823
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794125"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564890"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Superviser les capacités dans le portail d’administration
 
-Cet article décrit comment vous pouvez utiliser la zone de Paramètres de capacité dans le portail d’administration pour obtenir un aperçu rapide des performances de votre capacité.  Pour obtenir les métriques les plus détaillées sur votre capacité, il est préférable d’utiliser l’application [Métriques de capacité Power BI Premium](service-admin-premium-monitor-capacity.md).
+Le **intégrité** onglet dans le **les paramètres de capacité** zone dans le portail d’administration fournit un métriques récapitulatives sur vos charges de travail de la capacité et est activées.  
 
-## <a name="capacity-metrics"></a>Métriques de capacité
+![La capacité onglet intégrité dans le portail](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
-La zone **Paramètres de capacité** du portail d’administration fournit quatre jauges qui indiquent les charges placées et les ressources utilisées par votre capacité au cours des sept derniers jours. Ces quatre vignettes fonctionnent sur une fenêtre de temps horaire qui indique le nombre d’heures où la métrique correspondante a été supérieure à 80 % au cours des sept derniers jours. Cette métrique indique une dégradation potentielle de l’expérience de l’utilisateur final.
+Si vous avez besoin de mesures plus complètes, utilisez la [métriques de capacité Power BI Premium](service-admin-premium-monitor-capacity.md) application. L’application fournit le zoom et de filtrage, et les mesures plus détaillés pour presque tous les aspects qui affectent les performances de capacité. Pour plus d’informations, consultez [capacités Premium de moniteur avec l’application](service-admin-premium-monitor-capacity.md).
 
-![Utilisation en 7 jours](media/service-admin-premium-monitor-capacity/usage-in-days.png)
+## <a name="system-metrics"></a>Mesures système
+
+Sur le **intégrité** sous l’onglet du niveau le plus élevé, l’utilisation du processeur et utilisation de la mémoire fournissent un aperçu rapide des mesures plus importantes pour la capacité. Ces mesures sont cumulatifs, y compris tous les deux activés pour la capacité des charges de travail.
 
 | **Métrique** | **Description** |
 | --- | --- |
-| Processeur |Nombre de fois où l’utilisation du processeur a dépassé 80 %. |
-| Écroulement de la mémoire |Représente la sollicitation de la mémoire sur les cœurs du serveur principal. Plus précisément, cette métrique indique le nombre de fois où des jeux de données ont été supprimés de la mémoire en raison de la sollicitation de celle-ci résultant de l’utilisation de nombreux jeux de données. |
-| Utilisation de la mémoire |Utilisation moyenne de la mémoire, indiquée en gigaoctets (Go). |
-| Requêtes directes/s | Nombre de fois où le nombre de requêtes directes (DirectQuery) et de connexions actives ont dépassé 80 % de la limite. <br>  Le nombre total de requêtes DirectQuery et de connexions actives par seconde est limité. Les limites sont 30/s pour P1, 60/s pour P2 et 120/s pour P3.  En ce qui concerne la limitation ci-dessus, les requêtes DirectQuery et les connexions actives sont comptabilisées ensemble. Par exemple, si vous avez 15 requêtes DirectQuerys et 15 connexions actives par seconde, vous avez atteint votre limite.<br> Ceci s’applique tant aux connexions locales qu’aux connexions cloud. |
-|  |  |
+| UTILISATION DU PROCESSEUR | Utilisation moyenne du processeur, sous forme de pourcentage d’UC totale disponible. |
+| UTILISATION DE LA MÉMOIRE | Utilisation moyenne de mémoire en gigaoctets (Go).|
 
-Les métriques reflètent l’utilisation sur la dernière semaine.  Si vous souhaitez avoir une vue plus détaillée des métriques, cliquez sur les vignettes de résumé.  Des graphiques détaillés s’affichent pour chacune des métriques de votre capacité Premium. Le graphique suivant affiche les détails de la métrique de l’UC.
+## <a name="workload-metrics"></a>Métriques de charge de travail
 
-![Graphique d’utilisation détaillé - Processeur](media/service-admin-premium-monitor-capacity/premium-usage-detailed-chart-cpu.png)
+Pour chaque charge de travail est activé pour la capacité. Utilisation du processeur et utilisation de la mémoire sont affichées.
 
-Ces graphiques récapitulent les données de la dernière semaine par heure. Ils permettent d’isoler plus facilement les événements liés aux performances spécifiques dans votre capacité Premium.
+| **Métrique** | **Description** |
+| --- | --- |
+| UTILISATION DU PROCESSEUR | Utilisation moyenne du processeur, sous forme de pourcentage d’UC totale disponible. |
+| UTILISATION DE LA MÉMOIRE | Utilisation moyenne de mémoire en gigaoctets (Go).|
 
-Vous pouvez également exporter les données sous-jacentes de chacune des métriques dans un fichier csv.  Cette exportation fournit des informations détaillées par intervalle de trois minutes pour chaque jour de la dernière semaine.
+### <a name="detailed-workload-metrics"></a>Métriques de charge de travail détaillé
+
+Chaque charge de travail a des mesures supplémentaires. Le type des métriques affichées dépendent de la charge de travail. Pour afficher des mesures détaillées pour une charge de travail, cliquez sur Développer (bas).
+
+![Développez de contrôle d’intégrité de la charge de travail](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
+
+#### <a name="dataflows"></a>Flux de données
+
+##### <a name="dataflow-operations"></a>Opérations de flux de données
+
+| **Métrique** | **Description** |
+| --- | --- |
+| Nombre total | total des actualisations pour chaque flux de données. |
+| Nombre de succès | Actualisations de réussite total pour chaque flux de données.|
+| Durée moyenne (min) | durée moyenne d’actualisation du flux de données, en minutes |
+| Durée maximale (min) | durée de l’actualisation la plus longue en cours d’exécution pour le flux de données, en minutes. |
+| Temps d’attente moyen (min) | délai moyen entre l’heure planifiée et le début d’une actualisation du flux de données, en minutes. |
+| Temps d’attente maximal (min) | délai d’attente maximal du flux de données, en minutes.  |
+
+#### <a name="datasets"></a>Jeux de données
+
+##### <a name="refresh"></a>Actualiser
+
+| **Métrique** | **Description** |
+| --- | --- |
+| Nombre total | nombre total d’actualisations pour chaque jeu de données. |
+| Nombre de succès | Actualisations de réussite total pour chaque jeu de données. |
+| Nombre d’échecs | Nombre total échec des actualisations pour chaque jeu de données. |
+| Taux de réussite  | Nombre d’actualisations réussites divisé par les total actualisations pour mesurer. Fiabilité. |
+| Durée moyenne (min) | durée moyenne d’actualisation du jeu de données, en minutes.  |
+| Durée maximale (min) | durée de l’actualisation la plus longue en cours d’exécution pour le jeu de données, en minutes. |
+| Temps d’attente moyen (min) | délai moyen entre l’heure planifiée et le début d’une actualisation du jeu de données, en minutes. |
+| Temps d’attente maximal (min) | délai d’attente maximal du jeu de données, en minutes. |
+
+##### <a name="query"></a>Requête
+
+| **Métrique** | **Description** |
+| --- | --- |
+| Nombre total | Nombre total de requêtes exécutées pour le jeu de données. |
+| Durée moyenne (ms) |durée moyenne des requêtes pour le jeu de données, en millisecondes|
+| Durée maximale (ms) |Durée de la requête dont l’exécution est la plus longue dans le jeu de données, en millisecondes. |
+| Temps d'attente moyen (ms) |Temps d’attente moyen des requêtes pour le jeu de données, en millisecondes. |
+| Temps d’attente maximal (ms) |Durée de la requête à l’attente la plus longue dans le jeu de données, en millisecondes. |
+
+##### <a name="eviction"></a>Eviction
+
+| **Métrique** | **Description** |
+| --- | --- |
+| Nombre de modèle | Le nombre total de suppressions dans le jeu de données pour cette capacité. Quand une capacité est confrontée à une sollicitation de la mémoire, le nœud supprime un ou plusieurs jeux de données de la mémoire. Les jeux de données qui sont inactifs (ceux pour lesquels aucune opération d’interrogation ou d’actualisation n’est en cours d’exécution) sont supprimés en premier. Ensuite, l’ordre d’éviction est basé sur une mesure dite « dernier récemment utilisé (LRU) ». |
+
+#### <a name="paginated-reports"></a>Rapports paginés
+
+##### <a name="report-execution"></a>Exécution des rapports
+
+| **Métrique** | **Description** |
+| --- | --- |
+| Nombre d’exécutions  | Le nombre de fois où le rapport a été exécuté et affiché par les utilisateurs.|
+
+##### <a name="report-usage"></a>Utilisation des rapports
+
+| **Métrique** | **Description** |
+| --- | --- |
+| Nombre de succès | Le nombre de fois où que le rapport a été affiché par un utilisateur. |
+| Nombre d’échecs |Le nombre de fois où que le rapport a été affiché par un utilisateur.|
+| Nombre de lignes |nombre de lignes de données dans le rapport. |
+| Durée de récupération de données (ms) |délai moyen nécessaire pour récupérer des données pour le rapport, en millisecondes. De longs délais peuvent indiquer des requêtes lentes ou d’autres problèmes au niveau de la source de données.  |
+| Durée de traitement (ms) |délai moyen nécessaire pour traiter les données pour un rapport, en millisecondes. |
+| Durée de rendu (ms) |délai moyen nécessaire pour afficher un rapport dans le navigateur, en millisecondes. |
+
+> [!NOTE]
+> Détaillée des métriques pour le **AI** charge de travail ne sont pas encore disponibles.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Maintenant que vous avez compris comment surveiller les capacités de Power BI Premium, vous pouvez en savoir plus sur l’optimisation des capacités.
 
 > [!div class="nextstepaction"]
-> [Gestion et optimisation des ressources de capacité de Power BI Premium](service-premium-understand-how-it-works.md)
+> [Optimisation des capacités Power BI Premium](service-premium-capacity-optimize.md)

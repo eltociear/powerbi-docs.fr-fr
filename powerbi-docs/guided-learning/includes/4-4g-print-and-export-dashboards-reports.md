@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 87a55881a9b6551dc9c7814696aa8d8252482a09
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256237"
+---
 Vous pouvez parfois souhaiter apporter un rapport ou un tableau de bord imprimé à une réunion, ou par conséquent, pour pouvoir ainsi le partager avec d’autres personnes. Avec Power BI, vous pouvez effectuer des impressions de vos visuels de différentes manières.
 
 Dans le service Power BI, sélectionnez ... (points de suspension) en haut à droite du service, puis sélectionnez **Imprimer le tableau de bord**.

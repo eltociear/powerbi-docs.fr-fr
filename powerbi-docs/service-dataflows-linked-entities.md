@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 52876f05eba098466b3f0b8cebc614d10a3cd277
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: d766730185a9064241621d15efc9faf31334fe95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220905"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136441"
 ---
-# <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Lier des entités entre des flux de données dans Power BI (préversion)
+# <a name="link-entities-between-dataflows-in-power-bi"></a>Lier des entités entre des flux de données dans Power BI
 
 Grâce aux flux de données dans Power BI, vous disposez d’une source de stockage des données d’organisation dans laquelle les analystes peuvent préparer et gérer leurs données une fois, puis les réutiliser entre les différentes applications analytiques de l’organisation. 
 
@@ -29,7 +29,7 @@ Les entités liées sont **en lecture seule**. Si vous souhaitez créer des tran
 
 ## <a name="linked-entity-availability"></a>Disponibilité de l’entité liée
 
-Les entités liées nécessitent un abonnement [Power BI Premium](service-premium.md) à actualiser. Les entités liées sont disponibles dans n’importe quel flux de données sur un espace de travail hébergé sur la capacité Power BI Premium. Il n’existe aucune limitation concernant le flux de données source.
+Les entités liées nécessitent un abonnement [Power BI Premium](service-premium-what-is.md) à actualiser. Les entités liées sont disponibles dans n’importe quel flux de données sur un espace de travail hébergé sur la capacité Power BI Premium. Il n’existe aucune limitation concernant le flux de données source.
 
 Les entités liées fonctionnent uniquement correctement dans les nouveaux espaces de travail Power BI. Si vous le souhaitez, des [informations supplémentaires sur les nouveaux espaces de travail Power BI](service-create-the-new-workspaces.md) sont disponibles. Pour fonctionner correctement, tous les flux de données liés doivent se trouver dans les nouveaux espaces de travail.
 
@@ -88,11 +88,11 @@ Il existe quelques limitations à prendre en compte lorsque vous travaillez avec
 
 Les articles suivants peuvent être utiles lorsque vous créez ou utilisez des flux de données. 
 
-* [Préparation des données en libre-service dans Power BI (préversion)](service-dataflows-overview.md)
+* [Préparation des données en libre-service dans Power BI](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [Utilisation d’entités calculées sur Power BI Premium (préversion)](service-dataflows-computed-entities-premium.md)
-* [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
+* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 
 Pour plus d’informations sur Power Query et l’actualisation planifiée, vous pouvez consulter ces articles :
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)

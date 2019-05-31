@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 6974e0eccd8c16bdb06a050873e40f1a5be6f75f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514532"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Tutoriel : Créer des colonnes calculées dans Power BI Desktop
@@ -44,7 +44,7 @@ Dans votre rapport de ventes, vous souhaitez afficher des catégories et des sou
     
     ![Barre de formule](media/desktop-tutorial-create-calculated-columns/create3.png)
     
-2.  Par défaut, une nouvelle colonne calculée est nommée simplement Colonne. Si vous ne la renommez pas, les nouvelles colonnes supplémentaires seront nommées Colonne 2, Colonne 3 et ainsi de suite. Vous souhaitez que votre colonne soient plus identifiable, par conséquent, étant donné que le nom **Colonne** est déjà en surbrillance dans la barre de formules, renommez-la en saisissant **ProductFullCategory**, puis saisissez le signe égal (**=**).
+2.  Par défaut, une nouvelle colonne calculée est nommée simplement Colonne. Si vous ne la renommez pas, les nouvelles colonnes supplémentaires seront nommées Colonne 2, Colonne 3 et ainsi de suite. Vous souhaitez que votre colonne soient plus identifiable, par conséquent, étant donné que le nom **Colonne** est déjà en surbrillance dans la barre de formules, renommez-la en saisissant **ProductFullCategory**, puis saisissez le signe égal ( **=** ).
     
 3.  Vous souhaitez que les valeurs de votre nouvelle colonne commencent par le nom ProductCategory. Comme cette colonne figure dans une table différente, bien qu’associée, vous pouvez utiliser la fonction [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) pour l’obtenir.
     
@@ -56,19 +56,19 @@ Dans votre rapport de ventes, vous souhaitez afficher des catégories et des sou
     
     ![Choisir ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
     
-4.  Vous souhaitez la colonne **ProductCategory** de la table **ProductCategory**. Sélectionnez **ProductCategory[ProductCategory]**, appuyez sur **Entrée**, puis saisissez un type de parenthèse fermante.
+4.  Vous souhaitez la colonne **ProductCategory** de la table **ProductCategory**. Sélectionnez **ProductCategory[ProductCategory]** , appuyez sur **Entrée**, puis saisissez un type de parenthèse fermante.
     
     > [!TIP]
     > Les erreurs de syntaxe sont le plus souvent provoquées par une parenthèse fermante manquante ou mal placée, bien que parfois Power BI Desktop l’ajoute pour vous.
     
-4. Vous souhaitez des tirets et des espaces pour séparer les ProductCategories et ProductSubcategories dans les nouvelles valeurs, par conséquent, après la parenthèse fermante de la première expression, saisissez un espace, esperluette (**&**), guillemet double (**«**), espace, tiret (**-**), un autre espace, un autre guillemet double et une autre esperluette. La formule doit maintenant ressembler à ceci :
+4. Vous souhaitez des tirets et des espaces pour séparer les ProductCategories et ProductSubcategories dans les nouvelles valeurs, par conséquent, après la parenthèse fermante de la première expression, saisissez un espace, esperluette ( **&** ), guillemet double ( **«** ), espace, tiret ( **-** ), un autre espace, un autre guillemet double et une autre esperluette. La formule doit maintenant ressembler à ceci :
     
     `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
     
     > [!TIP]
     > S’il vous faut plus d’espace, sélectionnez le chevron vers le bas situé à droite de la barre de formules pour développer l’éditeur de formules. Dans l’éditeur, appuyez sur **Alt et Entrée** pour descendre d’une ligne et sur **Tab** pour déplacer les éléments.
     
-5.  Saisissez un crochet ouvrant (**[**), puis sélectionnez la colonne **[ProductSubcategory]** pour finir la formule. 
+5.  Saisissez un crochet ouvrant ( **[** ), puis sélectionnez la colonne **[ProductSubcategory]** pour finir la formule. 
     
     ![Choisir ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
     
@@ -102,23 +102,23 @@ Heureusement, la table Magasins possède une colonne nommée **État**, avec des
 
 1.  Créez une nouvelle colonne calculée dans la table **Magasins** et nommez-la **Active StoreName** dans la barre de formules.
     
-2.  Après le signe **=**, commencez à taper **IF**. La liste de suggestions vous montre ce que vous pouvez ajouter. Sélectionnez **IF**.
+2.  Après le signe **=** , commencez à taper **IF**. La liste de suggestions vous montre ce que vous pouvez ajouter. Sélectionnez **IF**.
     
     ![Sélectionner IF](media/desktop-tutorial-create-calculated-columns/if1.png)
     
-3.  Le premier argument pour IF est un test logique pour savoir si l’État du magasin est « Activé ». Saisissez un crochet ouvrant **[**, qui permet de répertorier des colonnes de la table Magasins et sélectionnez **[État]**.
+3.  Le premier argument pour IF est un test logique pour savoir si l’État du magasin est « Activé ». Saisissez un crochet ouvrant **[** , qui permet de répertorier des colonnes de la table Magasins et sélectionnez **[État]** .
     
     ![Sélectionnez État](media/desktop-tutorial-create-calculated-columns/if2.png)
     
-4.  Juste après **[État]**, saisissez **= « Activé »**, puis saisissez une virgule (**,**) à la fin de l’argument. L’info-bulle suggère que vous devez maintenant ajouter une valeur de retour lorsque le résultat est TRUE.
+4.  Juste après **[État]** , saisissez **= « Activé »** , puis saisissez une virgule ( **,** ) à la fin de l’argument. L’info-bulle suggère que vous devez maintenant ajouter une valeur de retour lorsque le résultat est TRUE.
     
     ![Ajouter la valeur TRUE](media/desktop-tutorial-create-calculated-columns/if3.png)
     
-5.  Si l’état du magasin est « Activé », vous souhaitez afficher le nom du magasin. Saisissez un crochet ouvrant (**[**) et sélectionnez la colonne **[StoreName]**, puis saisissez une autre virgule. L’info-bulle indique à présent que vous devez ajouter une valeur de retour lorsque le résultat est FALSE. 
+5.  Si l’état du magasin est « Activé », vous souhaitez afficher le nom du magasin. Saisissez un crochet ouvrant ( **[** ) et sélectionnez la colonne **[StoreName]** , puis saisissez une autre virgule. L’info-bulle indique à présent que vous devez ajouter une valeur de retour lorsque le résultat est FALSE. 
     
     ![Ajouter la valeur FALSE](media/desktop-tutorial-create-calculated-columns/if4.png)
     
-6.  Vous souhaitez que la valeur soit *inactif*, par conséquent, saisissez **« Inactif »**, puis complétez la formule en appuyant sur **Entrée** ou en sélectionnant la coche dans la barre de formules. La formule valide et le nouveau nom de la colonne s’affiche dans la table **Magasins** dans la liste Champs.
+6.  Vous souhaitez que la valeur soit *inactif*, par conséquent, saisissez **« Inactif »** , puis complétez la formule en appuyant sur **Entrée** ou en sélectionnant la coche dans la barre de formules. La formule valide et le nouveau nom de la colonne s’affiche dans la table **Magasins** dans la liste Champs.
     
     ![Colonne Active StoreName](media/desktop-tutorial-create-calculated-columns/if5.png)
     

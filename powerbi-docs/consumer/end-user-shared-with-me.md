@@ -12,21 +12,21 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6069368810fd89d8f8102b24fe220351e6e7e0ec
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 4a4cbc152784d7536a5aa179769cf753645c932b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661696"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61048718"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Afficher les tableaux de bord et les rapports qui ont été partagés avec moi
-## <a name="shared-with-me"></a>Partagé avec moi
+## <a name="shared-with-me"></a>Partagées avec moi
 
 Quand un collègue partage du contenu avec vous, à l’aide du bouton **Partager**, il s’affiche dans votre conteneur **Partagés avec moi**. Le tableau de bord ou le rapport est disponible uniquement à partir de **Partagés avec moi** et non depuis **Applications**.
 
 ![Icône de partage](./media/end-user-shared-with-me/power-bi-share-dash.png)
 
-Regardez Amanda expliquer la liste de contenu **Partagé avec moi** et montrer comment naviguer dans celle-ci ainsi que la filtrer. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même. Pour afficher les tableaux de bord partagés avec vous, vous devez posséder une licence Power BI Pro. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](../service-premium.md).
+Regardez Amanda expliquer la liste de contenu **Partagé avec moi** et montrer comment naviguer dans celle-ci ainsi que la filtrer. Suivez ensuite les instructions détaillées sous la vidéo pour essayer vous-même. Pour afficher les tableaux de bord partagés avec vous, vous devez posséder une licence Power BI Pro. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](../service-premium-what-is.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 

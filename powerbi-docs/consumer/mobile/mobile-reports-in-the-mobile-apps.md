@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/17/2018
+ms.date: 04/21/2019
 ms.author: mshenhav
-ms.openlocfilehash: 037cab2435abddc0988d076f6598ab8313b4dda6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bee60dd6f3254b049f2445e6e985c625933caf5b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65565567"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -32,89 +32,78 @@ Un rapport Power BI est une vue interactive de vos données, dont la découverte
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Ouvrir un rapport Power BI dans l’application mobile
 Les rapports Power BI sont stockés dans des emplacements différents dans l’application mobile, en fonction de leur provenance. Ils peuvent être situés dans Applications, Partagés avec moi, Espaces de travail (y compris Mon espace de travail) ou sur un serveur de rapports. Parfois, ils sont répertoriés dans un tableau de bord associé par lequel vous accédez à un rapport.
 
-* Dans un tableau de bord, appuyez sur les points de suspension (...) dans le coin supérieur droit d’une vignette > **Ouvrir un rapport**.
+Dans les listes et les menus, vous trouverez une icône en regard d’un nom de rapport, vous aider à comprendre que cet élément est un rapport. 
+
+![rapports dans mon espace de travail](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
+
+Il existe deux icônes pour les rapports dans les applications mobiles Power BI :
+
+* ![icône de rapport](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) Indique un rapport qui s’affiche en mode paysage dans l’application et ont le même aspect telle qu’elle apparaît dans le navigateur.
+
+* ![Icône de rapport sur téléphone](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) Indique un rapport possédant au moins une page de rapport optimisé de téléphone, qui s’affiche en mode portrait. 
+
+Remarque : Maintenez votre téléphone en mode paysage, vous obtiendrez toujours l’en mode paysage, le même si la page de rapport a le mode téléphone. 
+
+Pour accéder à un rapport à partir d’un tableau de bord, appuyez sur les points de suspension (...) dans le coin supérieur droit d’une vignette > **ouvrir rapport**.
   
   ![Ouvrir le rapport](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Les vignettes ne peuvent pas toutes s’ouvrir dans un rapport. Par exemple, les vignettes créées en posant une question dans la zone Questions et réponses n’ouvrent pas de rapports quand vous appuyez dessus. 
   
-  Sur un téléphone, le rapport s’ouvre en mode paysage, sauf s’il est [optimisé pour un affichage sur téléphone](mobile-reports-in-the-mobile-apps.md#view-reports-optimized-for-phones).
-  
-  ![Rapport sur téléphone en mode Paysage](./media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
+## <a name="interacting-with-reports"></a>Interaction avec les rapports
+Une fois que vous avez un rapport ouvert dans l’application, vous pouvez commencer à travailler avec lui. Il existe de nombreuses choses à que faire avec votre rapport et ses données. Dans le pied de page, vous trouverez des actions que vous pouvez effectuer sur le rapport et en appuyant sur et long appuyant sur les données affichées dans le rapport, vous pouvez également découper et manipulent les données.
 
-## <a name="view-reports-optimized-for-phones"></a>Afficher les rapports optimisés pour les téléphones
-Les auteurs de rapports Power BI peuvent créer une disposition de rapport spécialement optimisée pour les téléphones. Les pages de rapport optimisées pour les téléphones ont de nouvelles fonctionnalités : par exemple, vous pouvez effectuer une exploration vers le bas et un tri des visuels, et vous pouvez accéder aux [filtres que l’auteur du rapport a ajoutés à la page de rapport](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Le rapport s’ouvre sur votre téléphone. Il est filtré en fonction des valeurs filtrées dans le rapport sur le web, avec un message indiquant qu’il existe des filtres actifs sur la page. Vous pouvez modifier les filtres sur votre téléphone.
+### <a name="using-tap-and-long-tap"></a>À l’aide d’appuyez sur et long appuyez sur
+Equals tap à une souris, cliquez sur. Par conséquent, si vous souhaitez cross mettez en surbrillance le rapport basé sur un point de données, appuyez sur ce point de données.
+En appuyant sur une valeur de segment, rend cette valeur sélectionné et le reste du rapport de découpage par cette valeur. En appuyant sur un lien, bouton ou un signet activera en fonction de l’action définie par l’auteur.
 
-Dans la liste des rapports, un rapport optimisé possède une icône spéciale ![Icône de rapport sur téléphone](./media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Vous est probablement remarqué que lorsque vous appuyez sur un élément visuel, une bordure apparaît. Dans l’angle supérieur droit de la bordure, il existe de points de suspension (...). Tapant dessus, affiche un menu avec les actions que vous pouvez effectuer sur ce visuel.
 
-![Ouvrir le rapport sur téléphone](./media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
+![visuel de rapport et de menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
-Lorsque vous affichez un rapport sur un téléphone, il s’ouvre en mode portrait.
+### <a name="tooltip-and-drill-actions"></a>Info-bulle et l’extraction des actions
 
-![Rapport en mode Portrait](./media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
+Lorsque vous appuyez long (cliquez et maintenez) un point de données, une info-bulle s’affichera présentant les valeurs représente ce point de données. 
 
- Un rapport peut avoir une combinaison de pages optimisées et non optimisées pour les téléphones. Dans ce cas, lorsque vous parcourez le rapport, l’affichage bascule du mode portrait au mode paysage pour chaque page.
+![info-bulle de rapport](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-En savoir plus sur les [rapports optimisés pour l’affichage sur téléphone](mobile-apps-view-phone-report.md).
+Les auteurs de rapports peuvent définir des hiérarchies dans les données et les relations entre les pages de rapport. Hiérarchie permet des examens approfondis, exploration des et extraire une autre page de rapport à partir d’un élément visuel et une valeur. Par conséquent, lorsque vous appuyez longtemps sur une valeur, en plus de l’info-bulle, les options de simulation pertinentes s’affichent dans le pied de page. 
 
-## <a name="use-slicers-to-filter-a-report"></a>Utiliser des segments pour filtrer un rapport
-Quand vous concevez un rapport dans Power BI Desktop ou le service Power BI, vous pouvez [ajouter des segments à une page de rapport](../../visuals/power-bi-visualization-slicers.md). Vous et vos collègues pouvez les utiliser pour filtrer la page dans un navigateur et dans les applications mobiles. Lorsque vous affichez le rapport sur un téléphone, vous pouvez voir et interagir avec les segments en mode paysage et sur une page optimisée pour le mode portrait du téléphone. Si vous sélectionnez une valeur dans un segment ou un filtre dans le navigateur, la valeur est également sélectionnée lorsque vous affichez la page dans l’application mobile. Un message s’affiche indiquant qu’il existe des filtres actifs sur la page.  
+![actions d’extraction de rapport](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
-* Lorsque vous sélectionnez une valeur dans un segment de la page de rapport, celle-ci filtre les autres visuels sur la page.
-  
-  ![Segment Rapport](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-slicer.png)
-  
-  Dans cette illustration, le segment filtre l’histogramme pour afficher uniquement les valeurs de juillet.
-
-## <a name="cross-filter-and-highlight-a-report"></a>Effectuer un filtrage croisé et mettre en surbrillance un rapport
-Lorsque vous sélectionnez une valeur dans un visuel, elle ne filtre pas les autres visuels. Elle met en surbrillance les valeurs associées dans les autres visuels.
-
-* Appuyez sur une valeur dans un visuel.
-  
-  ![Filtrage croisé d’une page](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-highlight.png)
-  
-  Un appui sur la colonne Large (Grand) dans un visuel met en surbrillance les valeurs associées dans les autres visuels. 
-
-## <a name="sort-a-visual-on-an-ipad-or-a-tablet"></a>Trier un visuel sur un iPad ou une tablette
-* Appuyez sur le graphique, sur les points de suspension (**...**), puis sur le nom de champ.
-  
-   ![Trier un visuel](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
-* Pour inverser l’ordre de tri, rappuyez sur les points de suspension (**...**), puis appuyez sur le même nom de champ.
-
-## <a name="drill-down-and-up-in-a-visual"></a>Monter et descendre dans la hiérarchie d’un visuel
-Si l’auteur d’un rapport a ajouté cette fonctionnalité à un visuel, vous pouvez descendre dans la hiérarchie d’un visuel pour voir les valeurs qui composent une partie de celui-ci. [Ajoutez la descente dans la hiérarchie à un visuel](../end-user-drill.md) dans le service Power BI ou dans Power BI Desktop. 
-
-* Appuyez et maintenez l’appui sur une barre ou un point spécifique dans un visuel pour afficher son info-bulle. Si la fonctionnalité d’exploration est activée, l’info-bulle a des flèches en bas sur lesquelles vous pouvez appuyer. 
-  
-  ![Descendre dans la hiérarchie d’un visuel](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
-
-* Pour remonter dans la hiérarchie, appuyez sur la flèche vers le haut de l’info-bulle.
-  
-  ![Monter dans la hiérarchie](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
-
-* Vous pouvez aussi explorer tous les points de données d’un visuel. Ouvrez-le en mode Focus, appuyez sur l’icône Explorer, puis choisissez d’afficher tout le niveau suivant ou développez pour afficher le niveau actuel et le suivant.
-
-   ![Power BI, explorer tout](./media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
-
-## <a name="drill-through-from-one-page-to-another"></a>Extraction d’une page vers une autre
-
-Avec *l’extraction*, quand vous appuyez sur une partie spécifique d’un visuel, Power BI vous redirige sur une autre page du rapport, filtrée sur la valeur que vous avez choisie. L’auteur d’un rapport peut définir une ou plusieurs options d’extraction, chacune vous redirigeant sur une page différente. Dans ce cas, vous pouvez choisir celle que vous voulez extraire. Dans l’exemple suivant, quand vous appuyez sur la valeur de la jauge, vous pouvez choisir entre effectuer une extraction selon **spent by business area** ou **planning by business area**.
-
-![Rapport d’extraction Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
-
-Quand vous effectuez une extraction, le bouton de retour vous redirige sur la page de rapport précédente.
+Avec *l’extraction*, quand vous appuyez sur une partie spécifique d’un visuel, Power BI vous redirige sur une autre page du rapport, filtrée sur la valeur que vous avez choisie.  L’auteur d’un rapport peut définir une ou plusieurs options d’extraction, chacune vous redirigeant sur une page différente. Dans ce cas, vous pouvez choisir celle que vous voulez extraire. Le bouton précédent vous permet de revenir à la page de rapport précédente.
 
 Découvrez comment [ajouter l’extraction dans Power BI Desktop](../../desktop-drillthrough.md).
+   
+   > [!IMPORTANT]
+   > Dans l’application Power BI Mobile, exploration dans les visuels de matrice et de table est activée via une valeur uniquement et non par les en-têtes de colonne et ligne.
+   
+   
+   
+### <a name="using-the-actions-in-the-report-footer"></a>À l’aide des actions dans le pied de page
+Le pied de page a des actions à qu'effectuer sur la page de rapport actuel ou sur l’intégralité du rapport. Le pied de page a un accès rapide aux actions plus utiles, et toutes les actions sont accessibles à partir de points de suspension (...).
 
-## <a name="show-data-and-copy-values"></a>Afficher les données et copier les valeurs
+![pied de page](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
-En sélectionnant les points de suspension (**...** ) des options Menu dans l’angle supérieur droit d’une visualisation dans un rapport sur téléphone, puis en sélectionnant **Afficher les données**, vous pouvez voir les données sous-jacentes d’une visualisation.
+Les actions que vous pouvez effectuer dans le pied de page sont :
+1) Réinitialiser le filtre de rapport et croisée mettre en surbrillance les sélections à son état d’origine.
+2) Ouvrez le volet de conversation pour afficher ou ajouter des commentaires sur ce rapport.
+3) Ouvrez le volet de filtre pour afficher et modifier le filtre actuellement appliqué sur le rapport.
+4) Répertorier toutes les pages de ce rapport. Appuyant sur le nom de la page charge et présenter cette page.
+Déplacement entre les pages de rapport est possible en balayant depuis le bord de votre écran au centre.
+5) Afficher toutes les actions de rapport.
 
-![Power BI Mobile, option de menu Afficher les données](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+#### <a name="all-report-actions"></a>Toutes les actions de rapport
+En appuyant sur le... Affiche toutes les actions que vous pouvez effectuer sur un rapport, l’option dans le pied de page. 
 
-Le fait d’appuyer longuement sur une cellule dans le tableau présenté affiche le menu natif de sélection et de copie, donc vous serez en mesure de choisir de copier les données à partir du tableau (ou le tableau dans sa totalité).
+![toutes les actions du rapport](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
 
-![Rapport d’extraction Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
+Certaines des actions peuvent être désactivées, car elles sont dépendants sur les fonctionnalités de rapport spécifique.
+Par exemple :
+1) **Filtrer par emplacement actuel** est activé si les données dans votre rapport a été classées par l’auteur avec les données géographiques. [Découvrez comment identifier les données géographiques dans votre rapport](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+2) **Analyse pour filtrer le rapport par code-barres** est activée uniquement si le jeu de données dans votre rapport a été marqué comme le code-barres. [Comment vous identifiez les codes-barres dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
+3) **Inviter** est activée uniquement si vous êtes autorisé à partager ce rapport avec d’autres utilisateurs. Vous avez autorisation uniquement si vous êtes le propriétaire du rapport ou si vous avez eu l’autorisation de repartager par le propriétaire.
+4) **Annoter et partager** peut-être désactiver s’il existe un [stratégie de protection Intune](https://docs.microsoft.com/intune/app-protection-policies) dans votre organisation qui interdit le partage d’application Power BI Mobile. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Visualiser les rapports Power BI optimisés pour les téléphones et interagir avec eux](mobile-apps-view-phone-report.md)

@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
-ms.translationtype: HT
+ms.openlocfilehash: 31c1cd7a8455232fdaa3bb3d391fb93e87ad5062
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430320"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61404393"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Tutoriel : Appeler un modèle Machine Learning Studio dans Power BI (préversion)
 
@@ -48,7 +48,7 @@ Connectez-vous au [Portail Azure](https://portal.azure.com) et accédez à la pa
 
 ![Portail Azure](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
-Sélectionnez l’abonnement Azure que vous avez utilisé pour publier le modèle, puis **Access Control (IAM)**. Sélectionnez ensuite **Ajouter une attribution de rôle**, puis le rôle **Lecteur** et enfin, l’utilisateur de Power BI. Lorsque vous avez terminé, sélectionnez **Enregistrer**. L’image suivante montre ces sélections.
+Sélectionnez l’abonnement Azure que vous avez utilisé pour publier le modèle, puis **Access Control (IAM)** . Sélectionnez ensuite **Ajouter une attribution de rôle**, puis le rôle **Lecteur** et enfin, l’utilisateur de Power BI. Lorsque vous avez terminé, sélectionnez **Enregistrer**. L’image suivante montre ces sélections.
 
 ![Contrôle d'accès au portail Azure](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_02.png)
 
@@ -76,7 +76,7 @@ Une fois que l’espace de travail a été créé, vous pouvez sélectionner **I
 
 ![Ignorer](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_04.png)
 
-Sélectionnez l’onglet **Flux de données (préversion)**, puis sélectionnez le bouton **Créer** en haut à droit de l’espace de travail et **Flux de données**.
+Sélectionnez l’onglet **Flux de données (préversion)** , puis sélectionnez le bouton **Créer** en haut à droit de l’espace de travail et **Flux de données**.
 
 ![Dataflows (préversion)](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_05.png)
 
@@ -90,7 +90,7 @@ Sélectionnez **Texte/Fichier CSV** comme source de données.
 
 Dans l’écran suivant, vous êtes invité à vous connecter à une source de données. Collez le lien vers les données que vous avez utilisées pour créer votre modèle Azure ML. Si vous avez utilisé les données de _tarification automobile_, vous pouvez coller le lien suivant dans la zone **Chemin d’accès de fichier ou URL**, puis sélectionner **Suivant**.
 
-`https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
+`https://raw.githubusercontent.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/master/Module7/Automobile%20price%20data%20_Raw_.csv`
 
 ![Se connecter à une source de données](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 

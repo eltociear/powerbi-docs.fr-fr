@@ -12,11 +12,11 @@ ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223303"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61068590"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Personnaliser les propriétés des axes X et Y
 Dans ce didacticiel, vous allez découvrir de nombreuses façons de personnaliser les axes X et Y de vos visuels. Les visuels n’ont pas tous des axes et/ou ne sont pas toutes personnalisables. Par exemple, les graphiques en secteurs n’ont pas d’axes. Et les options de personnalisation varient d’un visuel à un autre, il y a trop d’options pour les couvrir dans un seul article. Par conséquent, nous allons examiner certaines des personnalisations d’axes les plus utilisées et vous aidez à vous familiariser avec l’utilisation de l’onglet de mise en forme visuelle dans le canevas de rapport Power BI.  
@@ -81,7 +81,7 @@ Pour annuler toutes les personnalisations de l’axe X que vous avez apportées
 Tout d’abord, vous allez créer un graphique combiné qui montre l’impact du nombre de magasins sur les ventes.  C’est le même graphique que celui créé dans le [didacticiel du graphique combiné](power-bi-visualization-combo-chart.md). Vous allez ensuite mettre en forme les deux axes Y.
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Créer un graphique avec deux axes Y
-1. Créez un graphique en courbes qui affiche les éléments suivants : **Sales > Gross Margin last year % (Ventes > Pourcentage de marge brute de l’année précédente)** par rapport à **Time > FiscalMonth (Temps > MoisFiscal)**.
+1. Créez un graphique en courbes qui affiche les éléments suivants : **Sales > Gross Margin last year % (Ventes > Pourcentage de marge brute de l’année précédente)** par rapport à **Time > FiscalMonth (Temps > MoisFiscal)** .
 2. Triez le visuel par mois en sélectionnant les points de suspension (...), puis **Trier par mois**
 
     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
@@ -120,7 +120,7 @@ Tout d’abord, vous allez créer un graphique combiné qui montre l’impact du
 ### <a name="add-titles-to-both-axes"></a>Ajouter des titres aux deux axes
 Dans une visualisation complexe, il peut être utile d’ajouter des titres pour les axes.  Les titres permettent à vos collègues de mieux comprendre le contenu de votre visualisation.
 
-1. Basculez **Titre** sur **Activé** pour **Axe Y (colonne)** et **Axe Y (ligne)**.
+1. Basculez **Titre** sur **Activé** pour **Axe Y (colonne)** et **Axe Y (ligne)** .
 2. Définissez **Style** sur **Afficher le titre uniquement**.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)    

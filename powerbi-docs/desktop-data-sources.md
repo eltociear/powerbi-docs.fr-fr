@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 05/15/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
-ms.translationtype: HT
+ms.openlocfilehash: f045e9076cdd8552d6e35e72b9c5f6e2319add68
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225911"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65853448"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
@@ -51,7 +51,7 @@ La catégorie **Fichier** fournit les connexions de données suivantes :
 * XML
 * JSON
 * Dossier
-* PDF (bêta)
+* PDF
 * Dossier SharePoint
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Fichier**.
@@ -79,14 +79,16 @@ La catégorie **Base de données** fournit les connexions de données suivantes�
 * Google BigQuery
 * Vertica
 * Snowflake
-* Essbase (bêta)
-* Dremio
-* Exasol
-* MarkLogic (bêta)
+* Essbase
 * Cubes AtScale (bêta)
 * Connecteur BI
+* Dremio
+* Exasol
+* Indexima (bêta)
+* InterSystems IRIS (bêta)
 * Jethro (bêta)
 * Kyligence Enterprise (bêta)
+* MarkLogic (bêta)
 
 > [!NOTE]
 > Certains connecteurs de base de données doivent être activés. Pour cela, sélectionnez **Fichier > Options et paramètres > Options**, puis sélectionnez **Fonctionnalités en version préliminaire** et activez le connecteur. Si vous ne voyez pas certains des connecteurs mentionnés ci-dessus et que vous souhaitez les utiliser, vérifiez les paramètres **Fonctions en version préliminaire**. Notez également qu’une source de données marquée de la mention *Bêta* ou *Préversion* a un support et des fonctionnalités limités et ne doit pas être utilisée dans les environnements de production.
@@ -98,7 +100,7 @@ L’image suivante montre la fenêtre **Obtenir les données** pour **Base de do
 La catégorie **Power BI** fournit les connexions de données suivantes :
 
 * Jeux de données Power BI
-* Dataflows Power BI (bêta)
+* Dataflows Power BI
 
 L’image suivante montre la fenêtre **Obtenir des données** pour **Power BI**.
 
@@ -112,11 +114,12 @@ La catégorie **Azure** fournit les connexions de données suivantes :
 * Stockage Blob Azure
 * Stockage Table Azure
 * Azure Cosmos DB (bêta)
-* Azure Data Lake Storage
+* Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * HDInsight Interactive Query
-* Azure Data Explorer (bêta)
+* Explorateur de données Azure (Kusto)
+* Gestion des coûts Azure (version bêta)
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Azure**.
 
@@ -157,9 +160,10 @@ La catégorie **Services en ligne** fournit les connexions de données suivantes
 * tyGraph (bêta)
 * Webtrends (bêta)
 * Zendesk (bêta)
-* TeamDesk (bêta)
 * Emigo Data Source (Bêta)
+* IndustrialAppStore (Beta)
 * Microsoft Graph Security (Bêta)
+* TeamDesk (bêta)
 
 L’illustration suivante montre la fenêtre **Obtenir les données** pour **Services en ligne**
 
@@ -178,12 +182,16 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Script Python
 * ODBC
 * OLE DB
-* Workforce Dimensions (bêta)
+* BI360 - budgétisation & Financial Reporting (bêta)
 * Denado
-* Paxata (bêta)
-* SurveyMonkey (bêta)
+* Grille d’informations (bêta)
+* Paxata 
 * QubolePresto (bêta)
 * Quick Base (bêta)
+* Roamler (bêta)
+* SurveyMonkey (bêta)
+* Tenforce (bêta)
+* Workforce Dimensions (bêta)
 * Requête vide
 
 L’image suivante montre la fenêtre **Obtenir les données** pour **Autre**.

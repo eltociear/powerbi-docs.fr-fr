@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: 282638c7c1c8a60ee93292602766d63fd0fe436e
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 83049a16ecd42b41375da57a5a99a374596a9846
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249677"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514868"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi-preview"></a>Conseils pour créer des applications modèles dans Power BI (préversion)
 
@@ -23,7 +23,8 @@ Quand [vous créez une application modèle](service-template-apps-create.md) dan
 * Avec les **requêtes**, vous [connectez](desktop-connect-to-data.md) et [transformez](desktop-query-overview.md) les données, et vous définissez les [paramètres](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
 * Dans le **modèle de données**, vous créez les [relations](desktop-create-and-manage-relationships.md), les [mesures](desktop-measures.md) et les améliorations des questions et réponses.  
 * Les **[pages de rapport](desktop-report-view.md)** comprennent des visuels et des filtres pour fournir des insights sur vos données.  
-* Les **[tableaux de bord](consumer/end-user-dashboards.md)** et les [vignettes](service-dashboard-create.md) offrent une vue d’ensemble des insights inclus.  
+* Les **[tableaux de bord](consumer/end-user-dashboards.md)** et les [vignettes](service-dashboard-create.md) offrent une vue d’ensemble des insights inclus.
+* Exemples de données rend celle-ci détectable immédiatement après l’installation.
 
 Vous connaissez peut-être chacun de ces éléments en tant que fonctionnalités Power BI existantes. Quand vous créez une application modèle, vous devez prendre d’autres points en considération pour chaque élément. Consultez les différentes sections ci-dessous pour plus de détails.
 
@@ -38,7 +39,7 @@ Tout d’abord, vous devez vous connecter à votre API à partir de Power BI Des
 Vous pouvez utiliser les connecteurs de données prêts à l’emploi disponibles dans Power BI Desktop pour vous connecter à votre API. Vous pouvez utiliser le connecteur de données web (Obtenir des données -> Web) pour vous connecter à votre API REST ou le connecteur OData (Obtenir des données -> Flux OData) pour vous connecter à votre flux OData. Ces connecteurs fonctionnent seulement si votre API prend en charge l’authentification De base.
 
 > [!NOTE]
-> Si votre API utilise d’autres types d’authentification, comme OAuth 2.0 ou Clé d’API web, vous devez développer votre propre connecteur de données pour que Power BI Desktop puisse se connecter et s’authentifier correctement auprès de votre API. Si vous souhaitez savoir comment développer votre propre connecteur de données pour votre application modèle, consultez la [documentation sur les connecteurs de données](https://aka.ms/DataConnectors). 
+> Si votre API utilise d’autres types d’authentification, comme OAuth 2.0 ou Clé d’API web, vous devez développer votre propre connecteur de données pour que Power BI Desktop puisse se connecter et s’authentifier correctement auprès de votre API. Votre connecteur personnalisé doit être ajouté au service PBI pour y accéder par le programme d’installation de modèle app. <br> Si vous souhaitez savoir comment développer votre propre connecteur de données pour votre application modèle, consultez la [documentation sur les connecteurs de données](https://aka.ms/DataConnectors). 
 >
 >
 
@@ -70,8 +71,6 @@ Un modèle de données bien conçu garantit que vos clients pourront facilement 
 
 > [!NOTE]
 > Effectuez la plus grande partie de la modélisation de base (saisie, noms de colonnes) dans les [requêtes](#queries).
->
-
 
 ### <a name="qa"></a>Questions et réponses
 La modélisation détermine également la façon dont les questions et réponses fournissent des résultats pour vos clients. Pensez à ajouter des synonymes pour les colonnes fréquemment utilisées. Assurez-vous aussi d’avoir saisi les noms de colonnes corrects dans les [requêtes](#queries).
@@ -79,8 +78,9 @@ La modélisation détermine également la façon dont les questions et réponses
 ### <a name="additional-data-model-tips"></a>Conseils supplémentaires pour les modèles de données
 
 Vérifiez les points suivants :
+
 * Vous avez appliqué une mise en forme à toutes les colonnes de valeur. Vous avez appliqué des types dans la requête.  
-* Vous avez appliqué une mise en forme à toutes les mesures. 
+* Vous avez appliqué une mise en forme à toutes les mesures.
 * Vous avez défini le résumé par défaut, en particulier « Ne pas résumer » quand cela s’applique (pour les valeurs uniques, par exemple).  
 * Vous avez défini la catégorie de données, le cas échéant.  
 * Vous avez défini les relations appropriées.  
@@ -88,10 +88,6 @@ Vérifiez les points suivants :
 ## <a name="reports"></a>Rapports
 Les pages de rapport fournissent des insights supplémentaires sur les données incluses dans votre application modèle. Utilisez ces pages pour répondre aux questions professionnelles essentielles auxquelles votre application modèle essaye de répondre. Créez le rapport à l’aide de Power BI Desktop.
 
-> [!NOTE]
-> Vous pouvez inclure un seul rapport dans une application modèle. Servez-vous des différentes pages du rapport pour appeler des sections particulières de votre scénario.
->
->
 
 ### <a name="additional-report-tips"></a>Conseils supplémentaires pour les rapports
 
@@ -110,10 +106,6 @@ Le tableau de bord est le principal point d’interaction avec votre application
 
 Pour créer un tableau de bord dans votre application modèle, chargez votre fichier PBIX via Obtenir des données > Fichiers, ou publiez directement à partir de Power BI Desktop.
 
-> [!NOTE]
-> Chaque application modèle nécessite un seul rapport et un seul jeu de données. N’épinglez pas le contenu de plusieurs rapports/jeux de données sur le tableau de bord utilisé dans l’application modèle.
->
->
 
 ### <a name="additional-dashboard-tips"></a>Conseils supplémentaires pour le tableau de bord
 
@@ -123,18 +115,38 @@ Pour créer un tableau de bord dans votre application modèle, chargez votre fic
 * Toutes les vignettes du tableau de bord doivent avoir des titres/sous-titres appropriés.  
 * Essayez de regrouper les éléments verticalement ou horizontalement dans le tableau de bord pour les différents scénarios.  
 
-## <a name="known-limitations"></a>Limitations connues
+## <a name="sample-data"></a>exemples de données
+Applications de modèle, dans le cadre de l’étape de la création d’application, encapsule les données du cache dans l’espace de travail dans le cadre de l’application :
 
-| Fonctionnalité | Limitation connue |
+* Permet le programme d’installation comprendre les fonctionnalités et l’objectif de l’application avant la connexion de données.
+* Crée une expérience qui dirige le programme d’installation pour explorer davantage les fonctionnalités de l’application, ce qui conduit à la connexion du jeu de données d’application.
+
+Nous vous recommandons d’avoir des exemples de données de qualité avant de créer l’application. Vérifiez l’état de l’application et les tableaux de bord est remplis avec des données.
+
+## <a name="publishing-on-appsource"></a>Publication sur AppSource
+Applications de modèle peut être publiée sur AppSource, suivez ces instructions avant de soumettre votre application sur AppSource :
+
+* Vérifiez que vous créez une application de modèle avec l’utilisation des exemples de données qui permettent le programme d’installation de comprendre ce que l’application peut faire (rapport vide & tableau de bord ne sont pas approuvées).
+Applications de modèle prend en charge des données exemples d’applications uniquement, vérifiez que la case à cocher application statique. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Avoir des instructions pour l’équipe de validation à suivre qui inclut des informations d’identification et les paramètres qui sont requis pour se connecter aux données.
+* Application doit inclure une icône d’application dans Power BI et sur votre offre CPP. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Page d’accueil configuré. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Veillez à suivre la documentation [offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+* Si un tableau de bord fait partie de votre application, assurez-vous qu’il n’est pas vide.
+* Installer l’application à l’aide de la liaison de l’application avant de les envoyer, assurez-vous que vous pouvez connecter le jeu de données et l’expérience de l’application est comme prévu.
+* Avant de charger bpix dans l’espace de travail modèle, veillez à décharger toutes les connexions inutiles.
+* Suivez Power BI [meilleures pratiques pour les rapports et les éléments visuels de conception](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) pour obtenir un impact maximal sur vos utilisateurs et obtenir l’approbation pour la distribution.
+
+## <a name="known-limitations"></a>Limites connues
+
+| Caractéristique | Limitation connue |
 |---------|---------|
 |Contenu :  Jeux de données   | Un seul et unique jeu de données doit être présent. Seuls les jeux de données créés dans Power BI Desktop (fichiers .pbix) sont autorisés. <br>Non pris en charge : jeux de données issus d’autres applications modèles, jeux de données de plusieurs espaces de travail, rapports paginés (fichiers .rdl), classeurs Excel |
-|Contenu : Rapports     | Un seul rapport    |
-| Contenu : Tableaux de bord | Un seul tableau de bord non vide <br>Non pris en charge : vignettes en temps réel (en d’autres termes, pas de prise en charge de PushDataset ni pubnub) |
-| Contenu : Flux de données | Non pris en charge : Flux de données |
-| Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |
-| Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <br>DirectQuery <br>Connexions actives (sans Azure AS) <br>Sources de données locales (pas de prise en charge des passerelles personnelles et d’entreprise) <br>Vignettes en temps réel (pas de prise en charge pour pushdataset) <br>Modèles composites |
+|Contenu : Tableaux de bord | Vignettes en temps réel ne sont pas autorisés (en d’autres termes, aucune prise en charge pour la transmission ou de jeux de données de streaming) |
+|Contenu : Flux de données | Non pris en charge : Flux de données |
+|Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |
+| Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <li> DirectQuery</li><li>Connexions actives (sans Azure AS)</li> <li>Sources de données (passerelles personnelles et d’entreprise ne sont pas pris en charge) sur site</li> <li>(Aucune prise en charge pour le jeu de données push) en temps réel</li> <li>Modèles composites</li></ul> |
 | Jeu de données : entre plusieurs espaces de travail | Les jeux de données entre plusieurs espaces de travail sont autorisés  |
-| Contenu : Tableaux de bord | Les vignettes en temps réel ne sont pas autorisées (en d’autres termes, pas de prise en charge de PushDataset ni pubnub) |
 | Paramètres de requête | Non pris en charge : paramètres de type « Any » ou « Binary », opération d’actualisation des types en bloc pour le jeu de données |
 | Visuels personnalisés | Seuls les visuels personnalisés disponibles publiquement sont pris en charge. Les [visuels personnalisés organisationnels](power-bi-custom-visuals-organization.md) ne sont pas pris en charge |
 

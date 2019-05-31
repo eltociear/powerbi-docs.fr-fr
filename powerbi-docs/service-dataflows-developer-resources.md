@@ -1,5 +1,5 @@
 ---
-title: Ressources du développeur pour les flux de données Power BI (préversion)
+title: Ressources du développeur pour les flux de données Power BI
 description: Rechercher des ressources pour le développement et les flux de données Power BI
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 20bd8cd06e2a183d284752dc378a8aa1440c3aef
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 9a4caed97881e176d075527c90ae8d5eff213676
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274694"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136758"
 ---
-# <a name="developer-resources-for-power-bi-dataflows-preview"></a>Ressources du développeur pour les flux de données Power BI (préversion)
+# <a name="developer-resources-for-power-bi-dataflows"></a>Ressources du développeur pour les flux de données Power BI
 
 Il y a plusieurs façons d’utiliser des flux de données sans code, en les créant ou en les connectant à des entités dans le service Power BI et en s’y connectant dans Power BI Desktop. De nombreuses organisations souhaitent avoir la souplesse nécessaire pour développer leurs propres solutions. Cet article fournit des informations sur l’API REST de Power BI et d’autres ressources de développeur.
 
@@ -38,8 +38,8 @@ Cet article fournit des informations sur les ressources de développeur pour les
 
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [Utilisation d’entités calculées sur Power BI Premium (préversion)](service-dataflows-computed-entities-premium.md)
-* [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
+* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
 
 Pour plus d’informations sur le développement CDM et le tutoriel, consultez les rubriques suivantes :
 * [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)

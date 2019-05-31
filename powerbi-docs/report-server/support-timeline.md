@@ -1,20 +1,20 @@
 ---
 title: Chronologie de prise en charge pour Power BI Report Server
 description: Liste des versions et de la disponibilité de Power BI Report Server.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 01/24/2019
-ms.openlocfilehash: 06946f4f838446113d244d4acec74b9f66a60a45
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 9eaef23963c369d9fa124124c616b20d4d8a4752
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324617"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187403"
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Chronologie de prise en charge pour Power BI Report Server
 
@@ -36,6 +36,7 @@ Cette stratégie de prise en charge vous permet d’offrir des innovations à vo
 | Mars 2018 | 19 mars 2018 | 19 mars 2019 |
 | Août 2018 | 15 août 2018 | 15 août 2019 |
 | Janvier 2019 | 23 janvier 2019 | 23 janvier 2020 |
+| Mai 2019 | 22 mai 2019 | 22 mai 2020 |
 
 Pour télécharger Power BI Report Server et Power BI Desktop optimisé pour Power BI Report Server, accédez à la page [Rapports locaux avec Power BI Report Server](https://powerbi.microsoft.com/report-server/).
 

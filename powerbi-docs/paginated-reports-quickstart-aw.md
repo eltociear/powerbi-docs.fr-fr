@@ -1,24 +1,24 @@
 ---
 title: 'Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)'
 description: Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Puis vous utilisez un assistant dans le Générateur de rapports pour créer un rapport paginé. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 15c7d9e922ef7041c6b0f021382cae8d2aca84e9
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325240"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989657"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)
 
-Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Vous utilisez un assistant dans le Générateur de rapports pour créer un rapport paginé avec un tableau réparti sur plusieurs pages. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI. Les rapports paginés disponibles dans le service Power BI sont actuellement en préversion.
+Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Ensuite, vous utilisez un Assistant dans le Générateur de rapports Power BI pour créer un rapport paginé avec un tableau répartie sur plusieurs pages. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI. Les rapports paginés disponibles dans le service Power BI sont actuellement en préversion.
 
 ![Rapport paginé dans le service Power BI](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ Voici les étapes effectuées dans le cadre de ce tutoriel :
 
 > [!div class="checklist"]
 > * Créer un exemple de base de données Azure.
-> * Créer une matrice dans le Générateur de rapports à l’aide d’un assistant.
+> * Créer une matrice dans le Générateur de rapports Power BI à l’aide d’un Assistant.
 > * Mettre en forme le rapport avec un titre, des numéros de page et des en-têtes de colonne sur chaque page.
 > * Mettre en forme la devise.
 > * Charger le rapport dans le service Power BI.
@@ -37,18 +37,18 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 Voici les conditions préalables pour la création du rapport paginé :
 
-- Installer le [Générateur de rapports à partir du centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/?LinkID=734968). 
+- Installer [Power BI Générateur de rapports à partir du centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Suivre le Guide de démarrage rapide [Créer un exemple de base de données SQL Azure dans le portail Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copier et enregistrer la valeur dans la zone **Nom du serveur** de l’onglet **Vue d’ensemble**. Mémorisez le nom d’utilisateur et le mot de passe créés dans Azure.
 
 Voici les conditions préalables pour le chargement de votre rapport paginé dans le service Power BI :
 
 - Vous avez besoin d’une [licence Power BI Pro](service-admin-power-bi-pro-in-your-organization.md).
-- Vous avez besoin d’un espace de travail d’application sur le service dans une [capacité Power BI Premium](service-premium.md). Il affiche une icône en forme de losange ![icône losange Premium](media/paginated-reports-quickstart-aw/premium-diamond.png) en regard du nom de l’espace de travail.
+- Vous avez besoin d’un espace de travail d’application sur le service dans une [capacité Power BI Premium](service-premium-what-is.md). Il affiche une icône en forme de losange ![icône losange Premium](media/paginated-reports-quickstart-aw/premium-diamond.png) en regard du nom de l’espace de travail.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Créer la matrice avec un assistant
   
-1.  Démarrez le Générateur de rapports sur votre ordinateur.  
+1.  Démarrez le Générateur de rapports Power BI à partir de votre ordinateur.  
   
      La boîte de dialogue **Mise en route** s’ouvre.  
   
@@ -177,7 +177,7 @@ Pour afficher les valeurs réelles, vous devez exécuter le rapport.
 
 1. Sélectionnez **Exécuter** dans la barre d’outils **Accueil**.
 
-   Vous voyez maintenant les valeurs. La matrice comporte plus de lignes que ce que vous avez vu en mode Création ! Notez que le Générateur de rapports indique qu’il s’agit de la page **1** de **2 ?**. Le Générateur de rapports charge le rapport aussi rapidement que possible afin de récupérer suffisamment de données pour quelques pages à la fois. Le point d’interrogation indique que le Générateur de rapports n’a pas encore chargé toutes les données.
+   Vous voyez maintenant les valeurs. La matrice comporte plus de lignes que ce que vous avez vu en mode Création ! Notez que le Générateur de rapports indique qu’il s’agit de la page **1** de **2 ?** . Le Générateur de rapports charge le rapport aussi rapidement que possible afin de récupérer suffisamment de données pour quelques pages à la fois. Le point d’interrogation indique que le Générateur de rapports n’a pas encore chargé toutes les données.
 
    ![Exécuter le rapport](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
@@ -249,7 +249,7 @@ Vous avez peut-être constaté, lors de l’exécution du rapport, que les monta
 
     ![Sélectionner les cellules avec des valeurs de devise](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
-2. Dans l’onglet **Accueil**, choisissez le symbole de devise dollar (**$**), puis sélectionnez la flèche en regard de **Styles des espaces réservés** > **Valeurs d’aperçu**.
+2. Dans l’onglet **Accueil**, choisissez le symbole de devise dollar ( **$** ), puis sélectionnez la flèche en regard de **Styles des espaces réservés** > **Valeurs d’aperçu**.
  
     ![Afficher les valeurs d'aperçu](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 

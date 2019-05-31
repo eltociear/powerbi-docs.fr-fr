@@ -11,11 +11,11 @@ ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: e426d781f7a2e663687f443c423e1fc326624289
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61146563"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Meilleures pratiques en matière de conception de visuels et de rapports
 <!-- Shared newnav Include -->

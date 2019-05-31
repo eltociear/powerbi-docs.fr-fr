@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa891e06c83a21ac8fea299f068e3b95ad019062
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264678"
+---
 Bienvenue dans la deuxième section de ce cours **Formation guidée** sur Power BI, appelée **Obtenir des données**. Cette section présente les nombreuses fonctionnalités et outils centrés sur les données de Power BI, en mettant l’accent sur Power BI Desktop. Comme beaucoup de ces outils s’appliquent également au service Power BI, vous faites d’une pierre deux coups en suivant cette section.
 
 Quand vous obtenez des données, elles ne sont parfois pas aussi correctement formées ou *propres* que vous le souhaiteriez. Dans cette section, vous découvrez comment obtenir des données et les nettoyer (opération parfois appelée *nettoyage* ou *transformation* de données), et apprenez quelques astuces avancées qui peuvent faciliter l’obtention des données.

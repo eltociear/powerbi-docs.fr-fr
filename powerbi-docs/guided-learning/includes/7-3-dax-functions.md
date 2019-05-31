@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 06ee6ad7ade46d811c6340d905150c6dd3810c55
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273387"
+---
 DAX offre de nombreuses fonctions pour mettre en forme, former ou analyser vos données. Ces fonctions peuvent être regroupées dans plusieurs catégories :
 
 * Fonctions d’**agrégation**
@@ -52,7 +60,7 @@ La collection de fonctions **logiques** de DAX comprend :
 
 Ces fonctions spéciales peuvent également être exprimées sous forme d’*opérateurs*. Par exemple, **AND** peut être tapé sous la forme (remplacé par) **&&** dans la formule DAX.
 
-Vous pouvez utiliser des opérateurs (tels que **&&**) quand vous avez besoin de plus de deux conditions dans votre formule. Sinon, il est recommandé d’utiliser le nom de la fonction (par exemple **AND**) pour faciliter la lecture du code DAX.
+Vous pouvez utiliser des opérateurs (tels que **&&** ) quand vous avez besoin de plus de deux conditions dans votre formule. Sinon, il est recommandé d’utiliser le nom de la fonction (par exemple **AND**) pour faciliter la lecture du code DAX.
 
 ## <a name="information-functions"></a>Fonctions d’information
 Les fonctions d’**information** de DAX incluent :

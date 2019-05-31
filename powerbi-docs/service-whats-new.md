@@ -7,16 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 2/9/2019
+ms.date: 05/28/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b65acda3ceb8d375cb34393828b74e191b2e5504
-ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
-ms.translationtype: HT
+ms.openlocfilehash: 06ba5835a568b7158a204ea6676e92844d40414d
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489588"
----
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375259"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -31,16 +30,32 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-
-## <a name="march-2019"></a>Mars 2019
-* Disponibilité générale de Multi-Geo pour Power BI Premium.
-* Modification et gestion de la prise en charge du contenu Power BI pour Azure B2B.
+## <a name="may-2019"></a>Mai 2019
+* [Navigation personnalisée](service-create-distribute-apps.md) pour les applications Power BI.
+* Les pièces jointes supplémentaires types (PPTX, XLSX, DOCX, CSV, XML) disponibles pour les abonnements de messagerie dans les rapports paginés.
 
 ## <a name="previous-months-2019"></a>Mois précédents (2019)
+### <a name="april-2019"></a>Avril 2019
+* Disponibilité générale de Power BI [flux de données](service-dataflows-overview.md).
+* Disponibilité générale de la nouvelle expérience d’espaces de travail.
+* Nouvelles régions Power BI en France et en Corée.
+* Mise à jour expérience Q & A des tableaux de bord.
+* Prise en charge pour Azure Analysis Services dans [paginés](paginated-reports-report-builder-power-bi.md).
+* Rapports paginés pris en charge dans les applications Power BI.
+* [Abonnements par courrier électronique](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) avec des pièces jointes PDF pour les rapports paginés.
+* Power BI Premium résumé et la charge de travail des mesures prises en charge dans le portail d’administration
+* [La mise en cache de requête](power-bi-query-caching.md) disponibles dans Power BI Premium.
+* Disponibilité générale de [Power BI accueil](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+
+### <a name="march-2019"></a>Mars 2019
+* Disponibilité générale de Multi-Geo pour Power BI Premium.
+* Modification et gestion de la prise en charge du contenu Power BI pour Azure B2B.
+* Version préliminaire publique en lecture seule [point de terminaison XMLA](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+
 ### <a name="february-2019"></a>Février 2019
 * Charges de travail et métriques de taille de jeu de données actif dans l’[application de supervision de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Exportez au format PDF pour les rapports Power BI.
-* [Abonnements aux e-mails à la demande](service-report-subscribe.md).
+* [Abonnements par messagerie électronique à la demande](service-report-subscribe.md).
 * Opérations en bloc dans le portail d’administration.
 * Exportation filtrée pour PPT et PDF.
 * [Paramètres d’aide et support](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) dans le portail d’administration.
@@ -72,8 +87,8 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 
 ### <a name="september-2018"></a>Septembre 2018
 * [Commenter les tableaux de bord](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) dans le service Power BI.
-* Préversion publique de [Recherche globale et Accueil Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
-* Possibilité de [superviser des requêtes](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) dans l’[application de supervision de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Version préliminaire publique de [Power BI accueil et recherche globale](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Possibilité de [surveillance des requêtes](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) dans le [nouvelle application de surveillance de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="august-2018"></a>Août 2018
 * [Application de supervision des capacités](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) pour Power BI Premium.
@@ -194,7 +209,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 * Explorez vos [données de gestion de projet Jira](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) avec ce pack de contenu Power BI
 * Explorez vos [données Insightcentr](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) avec ce pack de contenu Power BI
 * Créez des éléments d’infographie rapidement avec le [visuel personnalisé de concepteur d’infographie](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/)
-* Préversion privée : [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) génère des jeux de données de streaming Power BI permettant de créer des vignettes de streaming.
+* Préversion : [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) génère des jeux de données de streaming Power BI permettant de créer des vignettes de streaming.
 * Préversion : ajoutez des [Visualisations ArcGIS Maps ESRI](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) à vos rapports et tableaux de bord.
 
 ### <a name="october-2016"></a>Octobre 2016
@@ -222,7 +237,7 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 Pour tous les détails, voir le [blog de l’équipe Power BI](https://powerbi.microsoft.com/blog/power-bi-july-update-for-service-and-mobile/).
 
 ### <a name="june-2016"></a>Juin 2016
-***Informations rapides***
+***Quick Insights (Informations rapides)***
 
 * Quick Insights fonctionne avec des filtres complexes : nous avons le plaisir de vous annoncer que Quick Insights, limité à une seule vignette, comprend désormais les filtres complexes.
 
@@ -333,9 +348,9 @@ Ce mois-ci, nous avons apporté des modifications aux tableaux de bord, à Quick
 * Mode plein écran : développez vos vignettes pour remplir tout le canevas et supprimer l’espace excédentaire en sélectionnant **Ajuster à la largeur**
 * Utilisez Tile Flow pour aligner automatiquement vos vignettes dans le coin supérieur gauche du canevas.
 
-***Informations rapides***
+***Quick Insights (Informations rapides)***
 
-* Les analyses de tendances et corrélation proposent désormais des courbes de tendance afin d’identifier plus facilement les comportements dans les données.
+* Les analyses de tendances et corrélation ont désormais des courbes de tendance pour le rendre plus facile à voir les modèles dans les données.
 
 ***Q&R***
 
@@ -498,7 +513,7 @@ Pour plus d’informations, y compris une vidéo présentant un grand nombre de 
 * Chargement amélioré des rapports locaux
 * Partage de tableaux de bord directement dans l’espace de travail d’un autre utilisateur
 * Amélioration de l’expérience du connecteur Google Analytics
-* Fermeture de votre compte Power BI
+* Fermer votre compte Power BI
 
 Pour plus d’informations, consultez le [Blog Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx).
 
@@ -699,7 +714,7 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 **15 avril 2015**
 
-* Vous pouvez maintenant visualiser et explorer vos données **Google Analytics** à l’aide de notre nouveau pack de contenu ! Avec le pack de contenu Google Analytics, vous disposez d’un tableau de bord, d’un rapport et d’un jeu de données qui vous permettent d’obtenir des informations détaillées concernant l’utilisation de votre site au cours des six derniers mois. Pour en savoir plus, consultez notre [billet de blog](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx) et notre [documentation](service-connect-to-google-analytics.md).
+* Vous pouvez maintenant visualiser et explorer vos données **Google Analytics** à l’aide de notre nouveau pack de contenu ! Avec le pack de contenu Google Analytics, vous disposez d’un tableau de bord, d’un rapport et d’un jeu de données qui vous permettent d’obtenir des informations détaillées concernant l’utilisation de votre site au cours des six derniers mois. Vous pouvez lire [notre billet de blog](http://blogs.msdn.com/b/powerbi/archive/2015/04/15/visualize-and-explore-your-google-analytics-data-with-power-bi.aspx).
 * Vous pouvez maintenant **épingler toutes les cartes**, à l’exception de celles comportant des indicateurs de performance clés et des images, à partir de vos rapports et de Q&R.
 * Vous pouvez maintenant **utiliser des cartes dans Questions et réponses** en ajoutant l’expression « as card » (sous forme de carte) à la fin de votre requête.
 

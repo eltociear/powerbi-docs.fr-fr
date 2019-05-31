@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 87d530bdf966e549e67427f68fa8b23895120e48
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514000"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Utiliser des éléments visuels pour améliorer des rapports Power BI
@@ -51,8 +51,8 @@ La page **rapport** est toujours au premier plan (par rapport au papier peint), 
 
 Pour tous les nouveaux rapports, les paramètres par défaut sont les suivants :
 
-* La **page** de rapport a la valeur **blanc** et sa transparence est définie sur **100 %**.
-* Le **papier peint** a la valeur **blanc** et sa transparence est définie sur **0 %**.
+* La **page** de rapport a la valeur **blanc** et sa transparence est définie sur **100 %** .
+* Le **papier peint** a la valeur **blanc** et sa transparence est définie sur **0 %** .
 
 Lorsque vous définissez la transparence l’arrière-plan de votre page sur plus de 50 %, une bordure en pointillés apparaît lorsque vous créez ou modifiez votre rapport pour vous montrer la limite de la bordure du canevas du rapport. 
 

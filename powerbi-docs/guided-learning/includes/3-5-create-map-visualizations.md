@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 033436e7078723508d6b9481807ace424c3f109f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396885"
+---
 Power BI a deux types de visualisations de carte : une carte à bulles qui place une bulle sur un point géographique et une carte de forme qui affiche le contour de la zone à visualiser.
 
 ![](media/3-5-create-map-visualizations/3-5_1.png)

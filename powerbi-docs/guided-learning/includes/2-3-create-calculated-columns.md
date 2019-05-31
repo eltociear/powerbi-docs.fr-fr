@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fcf73962534ec8f1fda009304768fd43aaa0955a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255705"
+---
 Créer des colonnes calculées est un moyen simple d’enrichir et d’améliorer vos données. Une **colonne calculée** est une colonne que vous créez en définissant un calcul qui transforme ou combine deux ou plusieurs éléments de données existantes. Par exemple, vous pouvez créer une colonne en combinant deux colonnes en une seule.
 
 Cette approche est notamment appropriée pour établir une relation entre deux tables dépourvues de champs uniques qui auraient pu servir à cette fin. L’absence d’une relation devient évidente quand vous créez un élément visuel de table simple dans Power BI Desktop et que vous obtenez la même valeur pour toutes les entrées, alors que vous savez que les données sous-jacentes sont différentes.

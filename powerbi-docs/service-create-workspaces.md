@@ -1,36 +1,34 @@
 ---
-title: Créer des espaces de travail avec vos collègues dans Power BI
-description: Découvrez comment créer des espaces de travail, des collections de tableaux de bord et des rapports générés pour fournir des métriques clés sur votre organisation.
+title: Créer des espaces de travail classiques dans Power BI
+description: Apprenez à créer des espaces de travail, les collections de tableaux de bord, rapports et des rapports paginés destinés à fournir des mesures clés pour votre organisation.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 23c011eded113a0249f5e4a354f909a30bc97148
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: dcf9b8befabfec98fcae154e6276f8e698b3ddc2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277912"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61150831"
 ---
-# <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Créer des espaces de travail avec vos collègues dans Power BI
+# <a name="create-classic-workspaces-in-power-bi"></a>Créer des espaces de travail classiques dans Power BI
 
-Dans Power BI, vous pouvez créer des *espaces de travail*, qui sont endroits où collaborer avec des collègues pour créer et affiner des collections de tableaux de bord et des rapports. Vous les regroupez ensuite en *applications* que vous pouvez distribuer dans toute votre organisation, ou seulement à des personnes ou des groupes spécifiques. 
+Dans Power BI, vous pouvez créer *espaces de travail*, place pour collaborer avec des collègues pour créer et affiner les collections de tableaux de bord, rapports et des rapports paginés. Puis vous pouvez regrouper la collection dans *applications* que vous pouvez distribuer dans toute votre organisation ou à des personnes ou groupes spécifiques. 
 
-![Applications Power BI](media/service-create-workspaces/power-bi-apps-left-nav.png)
+**Le saviez-vous ?** Power BI propose une nouvelle expérience d’espace de travail, ce qui est maintenant la valeur par défaut. Lecture [organiser le travail dans les nouveaux espaces de travail](service-new-workspaces.md) pour plus d’informations sur les nouveaux espaces de travail. 
 
-Quand vous créez un espace de travail, vous créez un groupe Office 365 associé sous-jacent. Toute l’administration des espaces de travail se fait dans Office 365. Vous pouvez ajouter des collègues à ces espaces de travail en tant que membres ou administrateurs. Dans l’espace de travail, vous pouvez tous collaborer sur des tableaux de bord, des rapports et d’autres articles que vous prévoyez de publier pour un public plus large. Toutes les personnes que vous ajoutez à un espace de travail d’application doivent avoir une licence Power BI Pro. 
-
-**Le saviez-vous ?** Power BI propose une nouvelle expérience d’espace de travail en préversion. Consultez [Organiser le travail dans les nouveaux espaces de travail (préversion)](service-new-workspaces.md) pour plus d’informations sur les nouveaux espaces de travail. 
+Lorsque vous créez un espace de travail classique, vous créez un groupe Office 365 sous-jacent, associé. Toute l’administration des espaces de travail se fait dans Office 365. Vous pouvez ajouter des collègues à ces espaces de travail en tant que membres ou administrateurs. Dans l’espace de travail, vous pouvez tous collaborer sur des tableaux de bord, des rapports et d’autres articles que vous prévoyez de publier pour un public plus large. Toutes les personnes que vous ajoutez à un espace de travail d’application doivent avoir une licence Power BI Pro. 
 
 ## <a name="video-apps-and-app-workspaces"></a>Vidéo : Applications et espaces de travail d’application
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-an-app-workspace-based-on-an-office-365-group"></a>Créer un espace de travail d’application basé sur un groupe Office 365
+## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Créer un espace de travail classique d’application basée sur un groupe Office 365
 
 Quand vous créez un espace de travail d’application, il est basé sur un groupe Office 365.
 
@@ -52,6 +50,8 @@ Par défaut, Power BI crée un petit cercle de couleur pour votre application, c
 3. Sélectionnez de nouveau l’icône de crayon, puis cherchez l’image que vous souhaitez utiliser.
    
      ![Sélectionnez à nouveau le crayon](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+
+     Images peuvent être des fichiers .png, .jpg ou .bmp. Leur taille de fichier peut être volumineux, de 3 Mo. 
 
 4. Sélectionnez **Enregistrer**.
    
@@ -77,9 +77,16 @@ Dans les espaces de travail actuels, vous pouvez également vous connecter avec 
 
 ## <a name="distribute-an-app"></a>Distribuer une application
 
-Quand le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant *qu’application*. Vos collègues peuvent obtenir vos applications de différentes manières. Vous pouvez les installer automatiquement dans les comptes Power BI de vos collègues si l’administrateur Power BI vous y autorise. Sinon, ils peuvent rechercher et installer vos applications à partir de Microsoft AppSource ou d’un lien direct que vous leur envoyez. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour plus d’informations, consultez [Publier des applications avec des tableaux de bord et des rapports dans Power BI](service-create-distribute-apps.md).
+Si vous souhaitez distribuer du contenu officielle à un large public au sein de votre organisation, vous pouvez publier une application à partir de votre espace de travail.  Lorsque le contenu est prêt, vous choisissez les tableaux de bord et les rapports que vous souhaitez publier, puis publier en tant qu’un *application*. Vous pouvez créer une application à partir de chaque espace de travail.
 
-## <a name="power-bi-apps-faq"></a>Forum aux questions sur les applications Power BI
+La liste des applications dans le volet de navigation gauche montre toutes les applications que vous avez installé. Vos collègues peuvent obtenir votre application de différentes manières. 
+- Ils peuvent rechercher et installer votre application à partir de Microsoft AppSource
+- Vous pouvez leur envoyer un lien direct. 
+- Vous pouvez l’installer automatiquement dans les comptes Power BI de vos collègues si l’administrateur Power BI vous y autorise. 
+
+Les utilisateurs voient le contenu de l’application mis à jour automatiquement une fois que vous publiez une mise à jour à partir de votre espace de travail. Vous pouvez contrôler la fréquence à laquelle les données sont actualisées en définissant la planification d’actualisation dans les jeux de données utilisé par le contenu de l’application dans votre espace de travail. Consultez [publier une application à partir de nouveaux espaces de travail dans Power BI](service-create-distribute-apps.md) pour plus d’informations.
+
+## <a name="power-bi-classic-apps-faq"></a>Applications classiques de Power BI Forum aux questions
 
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>En quoi les applications diffèrent-elles des packs de contenu d’organisation ?
 Les applications sont l’évolution des packs de contenu d’organisation. Si vous avez déjà des packs de contenu d’organisation, ceux-ci continuent à fonctionner parallèlement aux applications. Les applications et les packs de contenu présentent quelques différences majeures. 

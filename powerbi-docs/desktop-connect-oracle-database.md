@@ -11,11 +11,11 @@ ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892272"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61314961"
 ---
 # <a name="connect-to-an-oracle-database"></a>Se connecter à une base de données Oracle
 Pour vous connecter à une base de données Oracle avec **Power BI Desktop**, le logiciel client Oracle approprié doit être installé sur l’ordinateur exécutant Power BI Desktop. Le logiciel client Oracle que vous devez utiliser dépend de la version de Power BI Desktop que vous avez installée (la version **32 bits** ou la version **64 bits**).
@@ -23,7 +23,7 @@ Pour vous connecter à une base de données Oracle avec **Power BI Desktop**, 
 **Versions prises en charge** : Oracle 9 et versions ultérieures, logiciels clients Oracle 8.1.7 et versions ultérieures.
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Identification de la version installée de Power BI Desktop
-Pour identifier la version installée de Power BI Desktop, sélectionnez **Fichier > Aide > À propos de**, puis vérifiez la ligne **Version :**. L’illustration suivante indique qu’une version 64 bits de Power BI Desktop est installée :
+Pour identifier la version installée de Power BI Desktop, sélectionnez **Fichier > Aide > À propos de**, puis vérifiez la ligne **Version :** . L’illustration suivante indique qu’une version 64 bits de Power BI Desktop est installée :
 
 ![](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
 

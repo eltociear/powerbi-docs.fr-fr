@@ -10,11 +10,11 @@ ms.topic: tutorial
 ms.date: 11/16/2018
 ms.author: mshenhav
 ms.openlocfilehash: 74949d2b71dbdca46bbda9623a962616a72af45e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282929"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61337405"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Tutoriel : poser des questions sur vos données avec l’analyste virtuel Questions et réponses dans des applications iOS pour Power BI
 
@@ -96,7 +96,7 @@ Voilà, vous êtes prêt à consulter l’exemple sur votre appareil iOS.
      L’analyste virtuel des questions et réponses de Power BI commence par proposer des suggestions.
 
      ![bouton Insights recommandés](./media/tutorial-mobile-apps-ios-qna/power-bi-ios-qna-suggest-insights.png)
-3. Appuyez sur **featured insights (Insights recommandés)**.
+3. Appuyez sur **featured insights (Insights recommandés)** .
 
      L’analyste virtuel des questions et réponses suggère certaines informations.
 4. Faites-les défiler vers la droite, puis appuyez sur **Insight 2**.

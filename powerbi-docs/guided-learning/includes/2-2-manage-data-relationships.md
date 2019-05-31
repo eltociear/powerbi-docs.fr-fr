@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b1658a9351c05a8673c6cc582a4e54ad982791fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255692"
+---
 Power BI vous permet de définir visuellement la relation entre des tables ou des éléments. Pour afficher une vue schématique de vos données, utilisez la vue **Relations**, située sur le côté gauche de l’écran en regard du canevas de rapport.
 
 ![](media/2-2-manage-data-relationships/2-2_1.png)
