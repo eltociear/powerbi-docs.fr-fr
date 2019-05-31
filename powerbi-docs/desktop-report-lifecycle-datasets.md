@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9a0e87eca537fc8c22dffaad6a725dc949b2b121
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 02beb69148c347847f346c170651ef31ddd1e786
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275568"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60987923"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop
 Vous pouvez établir une connexion active à un jeu de données partagé dans le service Power BI, et créer de nombreux rapports différents à partir du même jeu de données. Cela signifie que vous pouvez créer votre modèle de données idéal dans Power BI Desktop et le publier sur le service Power BI, après quoi vos collègues et vous pouvez créer plusieurs rapports (dans des fichiers .pbix distinct) à partir de ce modèle de données commun. Cette fonctionnalité est appelée **Connexion active du service Power BI**.
@@ -77,9 +77,8 @@ Une fois la publication terminée, **Power BI Desktop** vous indique la réussit
 Voyons à présent comment les autres coéquipiers ayant accès à l’espace de travail dans lequel le rapport (et le jeu de données) a été publié peuvent se connecter au jeu de données pour créer leurs propres rapports.
 
 ### <a name="establish-a-power-bi-service-live-connection-to-the-published-dataset"></a>Établir une Connexion active du service Power BI au jeu de données publié
-Pour établir une connexion au rapport publié et créer votre propre rapport basé sur le jeu de données publié, dans le ruban **Accueil** de **Power BI Desktop**, sélectionnez **Obtenir des données**, puis sélectionnez **Service Power BI**. Vous pouvez également sélectionner **Obtenir des données > Services en ligne > Service Power BI**.
+Pour établir une connexion pour le rapport publié et créer votre propre rapport basé sur le jeu de données publié, sélectionnez **obtenir des données** à partir de la **accueil** ruban **Power BI Desktop** , sélectionnez **Power BI** dans le volet gauche, puis sélectionnez **jeux de données Power BI**.
 
-![](media/desktop-report-lifecycle-datasets/report-lifecycle_08.png)
 
 Si vous n’êtes pas connecté à Power BI, vous êtes invité à le faire. Une fois connecté, vous voyez une fenêtre qui affiche les espaces de travail dont vous êtes membre, dans laquelle pouvez sélectionner celui qui contient le jeu de données avec lequel vous souhaitez établir une **Connexion active du service Power BI**.
 

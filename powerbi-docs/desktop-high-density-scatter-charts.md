@@ -1,21 +1,21 @@
 ---
-title: Nuages de points à haute densité dans Power BI
-description: Nuages de points à haute densité dans Power BI
+title: Graphiques à nuages de points à haute densité dans Power BI
+description: Graphiques à nuages de points à haute densité dans Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: ec8ce2596858bb63d965ef3ec8f7465024f60f72
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 928e93c724a47f48aff1f87ee51f9a8c907774d6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290201"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454276"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Échantillonnage à haute densité dans les nuages de points de Power BI
 À compter de la version de septembre 2017 de **Power BI Desktop** et des mises à jour apportées au **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore la façon dont les nuages de points représentent des données à haute densité.
@@ -32,7 +32,7 @@ Par exemple, vous pouvez créer un nuage de points à partir de l’activité de
 ## <a name="how-high-density-scatter-charts-work"></a>Fonctionnement des nuages de points à haute densité
 Auparavant, **Power BI** sélectionnait une collection de points de données échantillons dans la plage complète des données sous-jacentes de manière déterministe afin de créer un nuage de points. Plus précisément, Power BI sélectionnait les première et dernière lignes de données dans la série utilisée pour produire le nuage de points, puis divisait uniformément les lignes restantes de façon à ce que 3 500 points de données au total soient représentés sur le nuage de points. Par exemple, si l’échantillon comptait 35 000 lignes, les première et dernière lignes étaient sélectionnées pour le traçage, puis chaque dixième ligne était également tracée (35 000 / 10 = chaque dixième ligne = 3 500 points de données). Toujours auparavant, les valeurs ou points Null qui ne pouvaient pas être tracés (par exemple les valeurs de texte) dans une série de données n’étaient pas affichés et étaient donc ignorés lors de la génération du visuel. Avec ce type d’échantillonnage, la densité perçue du nuage de points était également basée sur les points de données représentatifs, de sorte que la densité du visuel obtenu dépendait des points échantillonnés, et non pas de la collection complète des données sous-jacentes.
 
-Lorsque vous activez l’option **Échantillonnage à haute densité**, Power BI implémente un algorithme qui élimine les points qui se chevauchent, garantissant ainsi que les points du visuel sont accessibles lors de l’interaction avec celui-ci. L’algorithme garantit également que tous les points du jeu de données sont représentés dans le visuel, ce qui fournit un contexte pour comprendre la signification des points sélectionnés, au lieu de tracer seulement un échantillon représentatif.
+Lorsque vous activez **échantillonnage à haute densité**, Power BI implémente un algorithme qui élimine les points qui se chevauchent et garantit que les points sur l’élément visuel peuvent être atteint lors de l’interaction avec l’élément visuel. L’algorithme garantit également que tous les points du jeu de données sont représentés dans le visuel, ce qui fournit un contexte pour comprendre la signification des points sélectionnés, au lieu de tracer seulement un échantillon représentatif.
 
 Par définition, les données à haute densité sont échantillonnées pour créer des visualisations d’une façon raisonnablement rapide, qui réagissent à l’interactivité. Trop de points de données sur un visuel peuvent le ralentir et nuire à la visibilité des tendances. Ainsi, la façon dont les données sont échantillonnées est ce qui gouverne la création de l’algorithme d’échantillonnage, pour offrir une expérience de visualisation optimale et garantir que toutes les données sont représentées. Dans Power BI, l’algorithme a été amélioré afin de fournir une combinaison optimale de réactivité, de représentation et de préservation claire des points importants de la totalité du jeu de données.
 
@@ -42,7 +42,7 @@ Par définition, les données à haute densité sont échantillonnées pour cré
 > 
 
 ## <a name="how-the-new-scatter-chart-sampling-algorithm-works"></a>Fonctionnement du nouvel algorithme d’échantillonnage de nuage de points
-Le nouvel algorithme **Échantillonnage à haute densité** utilisé pour la génération des nuages de points fait usage de méthodes qui capturent et représentent les données sous-jacentes plus efficacement, et élimine les points qui se chevauchent. Pour cela, il commence par un petit rayon pour chaque point de données (taille de cercle du visuel pour un point donné sur la visualisation). Il augmente ensuite le rayon de tous les points de données. En cas de chevauchement de points de données, un cercle unique (de la taille de rayon accrue) représente les points de données qui se chevauchent. L’algorithme continue d’augmenter le rayon des points de données, jusqu’à ce que la taille de celui-ci permette d’afficher à un nombre raisonnable de points de données (3 500) dans le nuage de points.
+Le nouvel algorithme **échantillonnage à haute densité** pour les nuages de points emploie des méthodes qui capturent et représentent les données sous-jacentes plus efficacement et élimine les points qui se chevauchent. Pour cela, il commence par un petit rayon pour chaque point de données (taille de cercle du visuel pour un point donné sur la visualisation). Il augmente ensuite le rayon de tous les points de données. En cas de chevauchement de points de données, un cercle unique (de la taille de rayon accrue) représente les points de données qui se chevauchent. L’algorithme continue d’augmenter le rayon des points de données, jusqu’à ce que la taille de celui-ci permette d’afficher à un nombre raisonnable de points de données (3 500) dans le nuage de points.
 
 Les méthodes utilisées dans cet algorithme veillent que les valeurs hors norme soient représentées dans le visuel final. L’algorithme respecte également l’échelle lors de la détermination du chevauchement. Par exemple, les échelles exponentielles reflètent fidèlement les points de données sous-jacents visualisés.
 
@@ -56,7 +56,7 @@ L’algorithme conserve également la forme globale du nuage de points.
 Par ailleurs, les points de données qui ne peuvent pas être tracés (par exemple, des valeurs Null ou des valeurs de texte) étant ignorés, une autre valeur traçable est sélectionnée, ce qui garantit la conservation de la forme réelle du nuage de points.
 
 ### <a name="when-the-standard-algorithm-for-scatter-charts-is-used"></a>Quand l’algorithme standard est utilisé pour les nuages de points
-Dans certaines circonstances, l’algorithme **Échantillonnage à haute densité** ne peut pas être appliqué à un nuage de points : l’algorithme d’origine est alors utilisé. Ces circonstances sont les suivantes :
+Il existe des circonstances dans lesquelles **échantillonnage à haute densité** ne peut pas être appliqué à un graphique à nuages de points et de la version d’origine algorithme est utilisé. Ces circonstances sont les suivantes :
 
 * Si vous cliquez sur une valeur sous **Détails** et que vous la définissez sur **Afficher les éléments sans données** dans le menu, le nuage de points revient à l’algorithme d’origine.
   
@@ -67,8 +67,8 @@ Dans certaines circonstances, l’algorithme **Échantillonnage à haute densit�
   
   ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
 
-## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Activer l’Échantillonnage à haute densité pour un nuage de points
-Pour activer **Échantillonnage à haute densité**, sélectionnez un nuages de points, accédez au volet **Mise en forme**, développez la carte **Général** et, près du bas de cette carte, faites glisser le curseur **Échantillonnage à haute densité** sur **Activé**.
+## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Activer l’échantillonnage à haute densité pour un nuage de points
+Pour allumer **échantillonnage à haute densité**, sélectionnez un graphique à nuages de points, accédez à la **mise en forme** volet, développez le **général** de carte et au bas de cette carte, faites glisser le **Échantillonnage à haute densité** activer/désactiver le curseur pour **sur**.
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
 
@@ -83,7 +83,7 @@ Pour activer **Échantillonnage à haute densité**, sélectionnez un nuages de 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 L’algorithme d’échantillonnage à haute densité constitue une amélioration importante apportée à Power BI, mais vous n’avez que peu de choses à savoir quand vous travaillez avec des valeurs à haute densité et des nuages de points.
 
-* L’algorithme d’**Échantillonnage à haute densité** fonctionne uniquement avec des connexions actives à des modèles basés sur le service Power BI, à des modèles importés ou à DirectQuery.
+* Le **échantillonnage à haute densité** algorithme fonctionne uniquement avec les connexions actives aux modèles de service Power BI, des modèles importés ou DirectQuery.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur l’échantillonnage à haute densité dans d’autres graphiques, consultez l’article suivant.

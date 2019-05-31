@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 6a194a4d56f4a940ad892ccd2f9097dd782f49d3
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008531"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61167710"
 ---
 # <a name="connect-to-stripe-with-power-bi"></a>Se connecter à Stripe avec Power BI
 Visualisez et explorez vos données Stripe dans Power BI avec le pack de contenu Power BI. Le pack de contenu Power BI Stripe extrait des données sur vos clients, frais, événements et factures. Les données incluent les dix mille événements et les cinq mille frais les plus récents au cours des 30 derniers jours. Le contenu est actualisé automatiquement une fois par jour selon un planning que vous contrôlez. 

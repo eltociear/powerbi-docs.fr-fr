@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 74be4112071aba3f629d6b44d322cf2caa522f18
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396870"
+---
 Bienvenue dans la section **Visualisations** du cours **Formation guidée** pour Power BI. Préparez-vous à une visite guidée amusante, intéressante et instructive des nombreuses visualisations que Power BI met à votre disposition. Et ce ne sont là qu’une partie d’entre elles : d’autres visualisations viennent régulièrement les compléter !
 
 ![](media/3-1-intro-visualizations/3-1_1.png)

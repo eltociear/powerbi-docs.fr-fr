@@ -9,20 +9,20 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 05/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 83ef4aa17de5edb18bc6b9cff1b50c29596704f7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d470a262bd8a5e6590746fb07889b1230f5cfc25
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292864"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375666"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualisations dans des rapports Power BI
 
 Les visualisations (également appelées visuels) affichent des insights qui ont été détectés dans les données. Un rapport Power BI peut avoir une seule page avec un visuel unique ou des pages contenant de nombreux visuels. Dans le service Power BI, les visuels peuvent être [épinglés des rapports aux tableaux de bord](../service-dashboard-pin-tile-from-report.md).
 
-Il est important de faire la distinction entre les *créateurs* et les *consommateurs* de rapports. Si vous êtes chargé de la création ou modification du rapport, vous êtes un créateur.  Les créateurs disposent d’autorisations de modification du rapport et de son jeu de données sous-jacent. Dans Power BI Desktop, cela signifie que vous pouvez ouvrir le jeu de données en mode Données et créer des visuels en mode rapport. Dans le service Power BI, cela signifie que vous pouvez ouvrir le jeu de données ou le rapport dans l’éditeur de rapport en [mode Édition](../consumer/end-user-reading-view.md). Si un rapport ou un tableau de bord a été [partagé avec vous](../consumer/end-user-shared-with-me.md), vous en êtes **consommateur**. Vous pouvez alors afficher et manipuler le rapport et ses visuels, mais vous ne pouvez pas enregistrer de modifications.
+Il est important de faire la distinction entre les rapports *concepteurs* et rapport *consommateurs* si vous êtes chargé de la création ou modification d’un rapport, vous êtes un concepteur.  Les concepteurs ont des autorisations de modification pour le rapport et son jeu de données sous-jacent. Dans Power BI Desktop, cela signifie que vous pouvez ouvrir le jeu de données en mode Données et créer des visuels en mode rapport. Dans le service Power BI, cela signifie que vous pouvez ouvrir le jeu de données ou le rapport dans l’éditeur de rapport dans [mode édition](../consumer/end-user-reading-view.md). Si un rapport ou un tableau de bord a été [partagé avec vous](../consumer/end-user-shared-with-me.md), vous en êtes **consommateur**. Vous serez en mesure d’afficher et interagir avec le rapport et ses visuels, mais vous ne pourrez pas enregistrer les modifications majeures.
 
 Il existe de nombreux types de visuels directement disponibles dans le volet Visualisations de Power BI.
 
@@ -50,6 +50,11 @@ Essayez de [changer de type de visualisation](power-bi-report-change-visualizati
 ## <a name="pin-the-visualization"></a>Épingler la visualisation
 
 Dans le service Power BI, quand vous avez trouvé la visualisation qui vous convient, vous pouvez [l’épingler au tableau de bord](../service-dashboard-pin-tile-from-report.md) sous forme de vignette. Si vous modifiez la visualisation utilisée dans le rapport après l’avoir épinglée, la vignette du tableau de bord ne change pas : s’il s’agit d’un graphique en courbes, celui-ci reste ainsi, même si vous l’avez changé en graphique en anneau dans le rapport.
+
+## <a name="limitations-and-considerations"></a>Considérations et limitations
+- En fonction de la source de données et le nombre de champs (mesures ou colonnes), un élément visuel peut se charger lentement.  Nous vous recommandons de limiter aux champs total de 10 à 20, les deux, pour des raisons de performances et une meilleure lisibilité des éléments visuels. 
+
+- La limite supérieure pour les éléments visuels est de 100 champs (mesures ou colonnes). Si votre élément visuel ne parvient pas à charger, de réduire le nombre de champs.   
 
 ## <a name="next-steps"></a>Étapes suivantes
 

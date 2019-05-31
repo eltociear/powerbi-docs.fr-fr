@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 48cdff67e613093c3ac473b0a505a6f0d57f4f2d
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008094"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61171286"
 ---
 # <a name="connect-to-sparkpost-with-power-bi"></a>Se connecter à SparkPost avec Power BI
 Le pack de contenu Power BI pour SparkPost permet d’extraire des jeux de données à partir de votre compte SparkPost dans un tableau de bord instructif. Le pack de contenu SparkPost vous permet de visualiser vos statistiques globales en matière de courrier électronique, dont les domaines, les campagnes et l’engagement par le fournisseur de services Internet.

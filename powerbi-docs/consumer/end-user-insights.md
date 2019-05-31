@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: fcfb16de53b4e6c67b7c46fec87ab614d07cb9b1
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661557"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61049106"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Afficher des insights sur les données sur les vignettes de tableaux de bord avec Power BI
 Chaque mosaïque de visualisation sur votre tableau de bord est une voie d’accès à l’exploration des données. Lorsque vous sélectionnez une mosaïque, un rapport dans lequel vous pouvez filtrer, trier et explorer le jeu de données derrière le rapport s’ouvre. Et lorsque vous exécutez un aperçu, Power BI effectue l’exploration de données pour vous.

@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 2835dd34ce5ba2d7bc6be8659b87eb1f550fdc28
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514588"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop
@@ -153,7 +153,7 @@ Dans le ruban **Accueil** de l’Éditeur de requête, sélectionnez **Nouvelle 
 
  ![](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
 
-Sélectionnez **Codes et abréviations...**, qui comprend les données que nous souhaitons ; un gros effort de mise en forme sera quand même nécessaire pour alléger les données de cette table en fonction de nos besoins.
+Sélectionnez **Codes et abréviations...** , qui comprend les données que nous souhaitons ; un gros effort de mise en forme sera quand même nécessaire pour alléger les données de cette table en fonction de nos besoins.
 
 > [!TIP]
 > Existe-t-il un moyen plus rapide ou plus facile d’effectuer les étapes suivantes ? Oui, il est possible de créer une *relation* entre les deux tables et de mettre en forme les données en fonction de cette relation. Les étapes suivantes restent importantes pour apprendre à travailler avec des tables. Sachez que les relations peuvent vous aider à rapidement utiliser les données provenant de plusieurs tables.

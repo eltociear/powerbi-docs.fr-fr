@@ -1,37 +1,37 @@
 ---
 title: Vous avez oublié votre mot de passe Power BI ?
-description: Vous avez oublié votre mot de passe Power BI ?
+description: Si vous avez oublié votre mot de passe, vous pouvez utiliser un lien pour demander un mot de passe réinitialisé.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 05/14/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 3a6f1228e46beb4d1a087f43799542ca8b511dbb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 855fae9f23527c47802eef6dac2ded5ffcc8b786
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289391"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710336"
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Vous avez oublié votre mot de passe Power BI ?
+
 Si vous avez oublié votre mot de passe, vous pouvez utiliser le lien suivant pour demander à le réinitialiser.
 
 <https://passwordreset.microsoftonline.com>
 
-Si un message signale que votre compte n’est pas activé pour la réinitialisation du mot de passe, vous devez contacter l’administrateur Office 365. Si vous utilisez la version d’évaluation gratuite, l’administrateur est la première personne de votre organisation qui s’est inscrite.
+Si vous êtes informé de votre compte n’est pas configuré pour le mot de passe réinitialisé, contactez votre administrateur Office 365. Si vous utilisez la version d’évaluation gratuite, l’administrateur est la première personne qui souscrit dans votre organisation.
 
-Si vous rencontrez toujours des problèmes lors de l’accès à votre compte, vous pouvez contacter l’équipe de support pour demander une réinitialisation du mot de passe. Il ne s’agit pas du numéro de support technique du service Power BI.
+Si vous rencontrez toujours des problèmes d’accès à votre compte, vous pouvez essayer de contacter l’équipe de support pour une réinitialisation de mot de passe.
 
 *1-800-642-7676*
 
+Il est important de noter que ce numéro de téléphone n’est pas le numéro de prise en charge du service Power BI.
+
 > [!NOTE]
-> Notez que le support est fourni aux horaires correspondant au fuseau horaire Est (États-Unis). Le support est fourni pendant les heures de bureau et uniquement en anglais pour l’instant.
-> 
-> 
+> Power BI prend en charge pendant les heures ouvrables habituelles dans le fuseau horaire heure d’hiver (EST). Prise en charge est actuellement fourni en anglais uniquement.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-

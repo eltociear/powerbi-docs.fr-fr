@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 867e528c43126ae9073c0113905d59a835c46a96
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396805"
+---
 Outre une multitude de graphiques, Power BI Desktop prend en charge davantage de visualisations tabulaires. De fait, quand vous saisissez un champ de catégorie ou de texte et que vous le faites glisser sur le canevas de rapport, vous obtenez une table de résultats par défaut. Vous pouvez faire défiler la table vers le bas et vers le haut, qui est initialement triée par ordre alphabétique.
 
 ![](media/3-6-create-tables-matrixes/3-6_1.png)

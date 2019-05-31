@@ -1,20 +1,20 @@
 ---
 title: Gérer la mutualisation avec l’analytique incorporée Power BI
 description: Concevez une application multi-locataire avec l’analytique incorporée.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 60441e950eb8ddea386e38731b794a58c2342620
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014251"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61374685"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gérer la mutualisation avec l’analytique incorporée Power BI
 
@@ -53,7 +53,7 @@ Cet article décrit les différentes approches et les analyse en fonction de plu
 
 **Utilisateur d’application AAD (principal du service)** : identité qui représente l’application SaaS dans Power BI et qui est utilisée par l’application SaaS lors de l’appel d’API Power BI. Il doit s’agir d’une application web AAD. Il peut remplacer l’utilisateur *maître* pour s’authentifier auprès de Power BI.
 
-**Capacité** : ensemble de ressources dédiées à l’exécution du service Power BI. Les [capacités Power BI Premium](../service-premium.md) sont destinées aux entreprises utilisant Power BI en interne, tandis que les [capacités Power BI Embedded](azure-pbie-create-capacity.md) sont conçues pour les développeurs d’applications développant des applications SaaS pour des tiers.
+**Capacité** : ensemble de ressources dédiées à l’exécution du service Power BI. Les [capacités Power BI Premium](../service-premium-what-is.md) sont destinées aux entreprises utilisant Power BI en interne, tandis que les [capacités Power BI Embedded](azure-pbie-create-capacity.md) sont conçues pour les développeurs d’applications développant des applications SaaS pour des tiers.
 
 **[Licence Power BI Pro](../service-admin-purchasing-power-bi-pro.md)** : licence basée sur l’utilisateur qui octroie des droits de publication de contenu sur les espaces de travail d’application, de consommation des applications sans la capacité Premium, de partage des tableaux de bord et d’abonnement aux rapports et tableaux de bord.
 
@@ -142,9 +142,9 @@ Pour ajouter une isolation supplémentaire, un développeur d’applications peu
 
 ### <a name="scalability"></a>Extensibilité
 
-Un avantage de ce modèle est tel que la séparation des données en plusieurs jeux de données pour chaque locataire permet de pallier les [limites de taille d’un jeu de données unique](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (de 10 Go actuellement dans une capacité). Lorsque la capacité est dépassée, [les jeux de données non utilisés peuvent être supprimés](../service-premium-understand-how-it-works.md) pour libérer de la mémoire pour les jeux de données actifs. Ceci n’est pas possible avec un jeu de données volumineux unique. Grâce à plusieurs jeux de données, il est également possible de séparer les locataires entre plusieurs capacités Power BI si nécessaire.
+Un avantage de ce modèle est tel que la séparation des données en plusieurs jeux de données pour chaque locataire permet de pallier les [limites de taille d’un jeu de données unique](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (de 10 Go actuellement dans une capacité). Lorsque la capacité est surchargée, il peut supprimer des jeux de données inutilisés pour libérer de la mémoire pour les jeux de données actives. Ceci n’est pas possible avec un jeu de données volumineux unique. Grâce à plusieurs jeux de données, il est également possible de séparer les locataires entre plusieurs capacités Power BI si nécessaire.
 
-Malgré ces avantages, vous devez prendre en compte l’échelle que l’application SaaS peut atteindre ultérieurement. Par exemple, une application peut atteindre les limitations du nombre d’artefacts qu’elle peut effectivement gérer. Pour plus de détails, consultez les [limitations](#summary-comparison-of-the-different-approaches) de déploiement plus loin dans cet article. La référence SKU de capacité utilisée présente une limite de taille de mémoire à laquelle les jeux de données doivent s’adapter, [de nombre d’actualisations pouvant être exécutées simultanément](../service-premium-understand-how-it-works.md) et de fréquence maximale d’actualisation des données. Il est recommandé de tester lorsque vous gérez des centaines, voire des milliers, de jeux de données. Il est également recommandé de prendre en compte le volume moyen et maximal d’utilisation, ainsi que les locataires spécifiques ayant des jeux de données volumineux ou des modèles d’utilisation différents, qui sont gérés différemment des autres locataires.
+Malgré ces avantages, vous devez prendre en compte l’échelle que l’application SaaS peut atteindre ultérieurement. Par exemple, une application peut atteindre les limitations du nombre d’artefacts qu’elle peut effectivement gérer. Pour plus de détails, consultez les [limitations](#summary-comparison-of-the-different-approaches) de déploiement plus loin dans cet article. La capacité utilisée de la référence (SKU) présente une limite de la taille de mémoire des jeux de données doivent tenir dans, les actualisations combien peuvent s’exécuter en même temps et la fréquence maximale des actualisations de données. Il est recommandé de tester lorsque vous gérez des centaines, voire des milliers, de jeux de données. Il est également recommandé de prendre en compte le volume moyen et maximal d’utilisation, ainsi que les locataires spécifiques ayant des jeux de données volumineux ou des modèles d’utilisation différents, qui sont gérés différemment des autres locataires.
 
 ### <a name="automation--operational-complexity"></a>Automatisation et complexité opérationnelle
 
@@ -194,7 +194,7 @@ Avec l’isolation basée sur la sécurité au niveau des lignes, la séparation
 
 ### <a name="scalability"></a>Extensibilité
 
-Avec l’isolation basée sur la sécurité au niveau des lignes, les données doivent tenir dans la limite de taille du jeu de données, qui est actuellement de 10 Go. Avec l’introduction de l’[actualisation incrémentielle](../service-premium-incremental-refresh.md) et la publication à venir d’un point de terminaison XMLA pour les jeux de données Power BI, la limite de taille du jeu de données devrait augmenter de manière significative. Les données doivent toutefois toujours tenir dans la mémoire de la capacité, avec suffisamment de mémoire restante pour l’exécution des actualisations de données. Les déploiements à grande échelle ont besoin d’une capacité importante pour éviter que les utilisateurs ne rencontrent des problèmes liés à une mémoire dépassant les limites de la capacité actuelle. D’autres méthodes de gestion de l’échelle incluent l’utilisation d’**[agrégations](../desktop-aggregations.md)** ou la connexion directe à la source de données à l’aide d’une connexion DirectQuery ou active, plutôt que la mise en cache de toutes les données dans la capacité Power BI.
+Avec l’isolation basée sur la sécurité au niveau des lignes, les données doivent tenir dans la limite de taille du jeu de données, qui est actuellement de 10 Go. Avec l’introduction de l’[actualisation incrémentielle](../service-premium-incremental-refresh.md) et la publication à venir d’un point de terminaison XMLA pour les jeux de données Power BI, la limite de taille du jeu de données devrait augmenter de manière significative. Les données doivent toutefois toujours tenir dans la mémoire de la capacité, avec suffisamment de mémoire restante pour l’exécution des actualisations de données. Les déploiements à grande échelle ont besoin d’une capacité importante pour éviter que les utilisateurs ne rencontrent des problèmes liés à une mémoire dépassant les limites de la capacité actuelle. D’autres méthodes de gestion de l’échelle incluent l’utilisation d’ **[agrégations](../desktop-aggregations.md)** ou la connexion directe à la source de données à l’aide d’une connexion DirectQuery ou active, plutôt que la mise en cache de toutes les données dans la capacité Power BI.
 
 ### <a name="automation--operational-complexity"></a>Automatisation et complexité opérationnelle
 
@@ -245,17 +245,17 @@ Lorsque les utilisateurs finaux modifient ou créent des rapports, ils peuvent u
 
 **Considérations et limitations relatives à la capacité Power BI :**
 
-* Chaque capacité ne peut utiliser que sa mémoire et ses V-cores alloués, selon la [référence SKU achetée](../service-premium.md).
-* Pour connaître la taille de jeu de données recommandée pour chaque référence SKU, consultez [Jeux de données volumineux Premium](../service-premium-large-datasets.md).
+* Chaque capacité ne peut utiliser que sa mémoire et ses V-cores alloués, selon la [référence SKU achetée](../service-premium-what-is.md).
+* Pour connaître la taille de jeu de données recommandée pour chaque référence SKU, consultez [Jeux de données volumineux Premium](../service-premium-what-is.md#large-datasets).
 * La taille maximale de jeu de données dans une capacité dédiée est de 10 Go.
 * Le nombre d’actualisations planifiées pour un jeu de données en *mode d’importation* par jour est de 48.
 * L’intervalle entre les actualisations planifiées pour un jeu de données en *mode d’importation* est de 30 minutes.
-* Pour le nombre d’actualisations pouvant être exécutées simultanément sur une capacité, consultez la [gestion et l’optimisation des ressources](../service-premium-understand-how-it-works.md).
+* Pour le nombre d’actualisations pouvant être exécutées simultanément sur une capacité, consultez la [gestion et l’optimisation des ressources](../service-premium-what-is.md#capacity-nodes).
 * La durée moyenne de mise à l’échelle d’une capacité est comprise entre 1 et 2 minutes. Pendant ce temps, la capacité n’est pas disponible. Nous vous recommandons d’utiliser une approche de montée en puissance parallèle pour [éviter les temps d’arrêt](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Analytique incorporée avec Power BI](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../service-premium.md)
+* [Power BI Premium](../service-premium-what-is.md)
 * [Sécurité au niveau des lignes](embedded-row-level-security.md)

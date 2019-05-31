@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e29076a33a17b6097fd3fbf1db411f97ff45818
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271375"
+---
 Bienvenue dans la section**Power BI et Excel** du cours **Formation guidée** pour Power BI.
 
 Vous avez très probablement déjà utilisé **Excel**. Vous avez peut-être utilisé Excel pour créer ou afficher des rapports, ou pour créer des graphiques en secteurs ou d’autres éléments visuels. Vous avez peut-être même utilisé **Power Pivot** ou **Power Query** pour créer des solutions qui étaient un peu plus techniques. Dans ce cas, vous serez tout à fait à l’aise dans Power BI et vos classeurs y seront également à leur place.

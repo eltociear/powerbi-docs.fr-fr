@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 68645069b22163ca7ae2a64310e43f1a801434f5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256252"
+---
 Vous pouvez mettre à jour des rapports et des jeux de données que vous avez déjà publiés à partir de Power BI Desktop dans le service Power BI. Pour ce faire, sélectionnez **Publier** sous l’onglet **Accueil** du ruban.
 
 ![](media/4-5-manually-republish-reports/4-5_0.png)

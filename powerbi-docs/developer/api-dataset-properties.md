@@ -1,20 +1,20 @@
 ---
 title: Propriétés du jeu de données Power BI
 description: En savoir plus sur les propriétés des API de jeu de données Power BI
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: d272914fc41c8bd4abc78ae36a46de9e53817c81
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 508f304e2f5033c301db683e3b7557856fb3731b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248927"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61386290"
 ---
 # <a name="dataset-properties"></a>Propriétés du jeu de données
 
@@ -31,7 +31,7 @@ id     |  Guid       | Identificateur unique à l’échelle du système pour le
 name     | String        | Nom de jeu de données défini par l’utilisateur.        | Faux        | Vrai        
 tables     | Table[]        | Collection de tables.        |  Faux       | Faux        
 relationships     | Relationship[]        | Collection de relations entre les tables.        | Faux        |  Faux  
-defaultMode     | String        | Détermine si le jeu de données est envoyé, diffusé en continu ou les deux, avec les valeurs « Push », « Streaming » et « PushStreaming ».         | Faux        |  Faux
+defaultMode     | Chaîne        | Détermine si le jeu de données est envoyé, diffusé en continu, ou les deux, avec les valeurs « Push » et « Diffusion ».         | False        |  Faux
 
 ## <a name="table"></a>Table
 

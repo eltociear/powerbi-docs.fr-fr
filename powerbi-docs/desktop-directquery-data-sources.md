@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 04/10/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 84e40e9fbce07716a2250a58bfcbd396a40d2842
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
-ms.translationtype: HT
+ms.openlocfilehash: 3bb7de9685a1e0fc9fa423328ad9e1e5faa53603
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826557"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61305452"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Sources de données prises en charge par DirectQuery dans Power BI
 
@@ -24,22 +24,25 @@ ms.locfileid: "56826557"
 Les sources de données suivantes prennent en charge DirectQuery dans Power BI :
 
 * Amazon Redshift
-* Azure HDInsight Spark (bêta)
+* AtScale (bêta)
+* Azure HDInsight Spark
 * Azure SQL Database
 * Azure SQL Data Warehouse
-* Google BigQuery (bêta)
+* Google BigQuery
+* HDInsight Interactive Query
 * Base de données IBM DB2
-* IBM Netezza (bêta)
+* IBM Netezza
 * Impala (version 2.x)
 * Oracle Database (version 12 et versions ultérieures)
+* Oracle Essbase
 * Serveur d’applications SAP Business Warehouse
-* Serveur de messages SAP Business Warehouse (bêta)
+* Serveur de messages SAP Business Warehouse
 * SAP HANA
 * Snowflake
-* Spark (bêta) (version 0.9 et versions ultérieures)
+* Spark (version 0.9 et versions ultérieures)
 * SQL Server
 * Base de données Teradata
-* Vertica (bêta)
+* Vertica
 
 Les sources de données dont le nom est suivi de **(bêta)** ou de **(préversion)** peuvent être modifiées et ne sont pas prises en charge pour une utilisation en production. Elles peuvent aussi ne pas être prises en charge après la publication d’un rapport dans le **service Power BI**, ce qui signifie que l’ouverture d’un rapport publié ou l’exploration du jeu de données peut entraîner une erreur.
 

@@ -10,11 +10,11 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
 ms.openlocfilehash: 56134143a752a094c339248c3eeeab57116d3501
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695147"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61380150"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Tutoriel : Ajouter des options de mise en forme à un visuel personnalisé Power BI
 
@@ -211,7 +211,7 @@ Entrez les valeurs des propriétés du projet de visuel personnalisé, mettez à
 
 6. Enregistrez le fichier **pbiviz.json**.
 
-7. Dans l’objet **assets**, le document définit un chemin d’accès à une icône. L’icône est l’image qui apparaît dans le volet **_Visualisations_**. Ce doit être un fichier **PNG** de *20 pixels par 20 pixels*.
+7. Dans l’objet **assets**, le document définit un chemin d’accès à une icône. L’icône est l’image qui apparaît dans le volet **_Visualisations_** . Ce doit être un fichier **PNG** de *20 pixels par 20 pixels*.
 
 8. Dans l’Explorateur Windows, copiez le fichier icon.png, puis collez-le pour remplacer le fichier par défaut situé dans le dossier assets.
 
@@ -239,7 +239,7 @@ Vous pouvez maintenant ouvrir le rapport Power BI Desktop et importer le visuel 
 
 1. Ouvrez **Power BI Desktop**, créez un rapport avec un *exemple de jeu de données*.
 
-2. Dans le volet **_Visualisations_**, sélectionnez les **points de suspension**, puis **Importer à partir d’un fichier**.
+2. Dans le volet **_Visualisations_** , sélectionnez les **points de suspension**, puis **Importer à partir d’un fichier**.
 
     ![Ajouter un visuel personnalisé au bureau](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
@@ -251,7 +251,7 @@ Vous pouvez maintenant ouvrir le rapport Power BI Desktop et importer le visuel 
 
 6. Une fois le visuel importé avec succès, sélectionnez **OK**.
 
-7. Vérifiez que le visuel a été ajouté au volet **_Visualisations_**.
+7. Vérifiez que le visuel a été ajouté au volet **_Visualisations_** .
 
     ![Affichage dans le volet Visualisations de Power BI Desktop](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 

@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: d6cdcf47b42be4a9b541aa355efb3dd5e9667204
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514632"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Tutoriel : Analyser des données d’une page web avec Power BI Desktop
@@ -127,7 +127,7 @@ La requête est chargée dans la **vue Rapport** de Power BI Desktop, où vous p
    ![Volet Champs](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage11.png)
 >[!TIP]
 >Vous pouvez toujours revenir dans **l’éditeur Power Query** pour modifier et affiner votre requête en procédant comme suit :
->- Sélectionnez les points de suspension **Plus d’options** (**...** ) à côté de **Euro Cup Winners** dans le volet **Champs** et sélectionnez **Modifier la requête** dans la liste déroulante, ou
+>- Sélectionnez les points de suspension **Plus d’options** ( **...** ) à côté de **Euro Cup Winners** dans le volet **Champs** et sélectionnez **Modifier la requête** dans la liste déroulante, ou
 >- Sélectionnez **Modifier les requêtes** > **Modifier les requêtes** dans le groupe **Données externes** de l’onglet du ruban **Accueil** dans la vue Rapport. 
 
 ## <a name="create-a-visualization"></a>Créer une visualisation
@@ -163,7 +163,7 @@ Vous pouvez modifier l’apparence d’une visualisation en la sélectionnant, p
    ![Modifier la couleur](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web16.png)
    
 3. Sélectionnez **Titre** pour développer les options de titre, et dans le champ **Texte de titre**, tapez **Euro Cup Winners** à la place du titre actuel. 
-4. Définissez la **Couleur de police** sur rouge, la **Taille du texte** sur **12** et la **Famille de polices** sur **Segoe (gras)**. 
+4. Définissez la **Couleur de police** sur rouge, la **Taille du texte** sur **12** et la **Famille de polices** sur **Segoe (gras)** . 
    
    ![Mettre en forme les couleurs des données](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web17.png)
    
@@ -181,7 +181,7 @@ Pour modifier la carte en graphique à secteurs, sélectionnez la carte, puis s�
 
 >[!TIP]
 >- Vous pouvez utiliser les options de mise en forme **Couleurs des données** pour donner la même couleur à « Germany » et « West Germany ». 
->- Pour regrouper les pays avec le plus de victoires sur le graphique à secteurs, sélectionnez les points de suspension (**...**) dans l’angle supérieur droit de la visualisation et sélectionnez **Trier par Count of Year** dans la liste déroulante. 
+>- Pour regrouper les pays avec le plus de victoires sur le graphique à secteurs, sélectionnez les points de suspension ( **...** ) dans l’angle supérieur droit de la visualisation et sélectionnez **Trier par Count of Year** dans la liste déroulante. 
 
 Power BI Desktop fournit une expérience de bout en bout transparente, allant de la récupération de données d’un large éventail de sources de données à la visualisation de ces données au moyen de méthodes interactives et enrichies, en passant par leur mise en forme en fonction des besoins d’analyse. Une fois que votre rapport est prêt, vous pouvez [le charger dans Power BI](desktop-upload-desktop-files.md) et créer des tableaux de bord basés sur celui-ci, que vous pouvez partager avec d’autres utilisateurs de Power BI.
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4c1a7bce8eb24534974fe6a06a8bada4ba9fb708
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264688"
+---
 Dans cette rubrique, nous allons examiner d’un peu plus près la façon dont les deux premières parties de Power BI s’articulent :
 
 * Créer un rapport dans **Power BI Desktop**
@@ -41,7 +49,7 @@ Vous êtes invité à vous connecter à Power BI.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_7.png)
 
-Une fois que vous êtes connecté et que le processus de publication est terminé, la boîte de dialogue suivante s’affiche. Vous pouvez sélectionner le lien (sous **Opération réussie !**) pour accéder au service Power BI et consulter le rapport que vous venez de publier.
+Une fois que vous êtes connecté et que le processus de publication est terminé, la boîte de dialogue suivante s’affiche. Vous pouvez sélectionner le lien (sous **Opération réussie !** ) pour accéder au service Power BI et consulter le rapport que vous venez de publier.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_8.png)
 

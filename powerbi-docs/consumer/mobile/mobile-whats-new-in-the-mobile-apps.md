@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: 967af5bc560d5312cd26964e5ca6b2b7eafd60d7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872728"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65991055"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,17 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="april-2019"></a>Avril 2019
+
+### <a name="key-influencers-visual"></a>Facteurs d’influence clés visual 
+Facteurs d’influence clés visual est désormais disponible sur votre application mobile. Cet élément visuel vous permet d’effectuer une analyse des pilotes clés sur vos données avec seulement quelques clics.
+
+### <a name="add-comments-to-report-content-android-and-ios"></a>Ajouter des commentaires au contenu de rapports (Android et iOS)
+Maintenant vous pouvez utiliser des commentaires pour collaborer et partager vos commentaires sur les pages de rapport et des éléments visuels. En savoir plus sur les rapports de commentaires dans le Service Power BI et Mobile [dans ce blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Optimiser l’affichage avec le mode plein écran (Android et iOS)
+Nous avons ajouté le nouveau bouton qui vous permettre de contrôler quand vous concentrer sur vos données en supprimant des en-têtes de rapport et des pieds de page et en vous donnant un espace maximal pour l’affichage de vos rapports.
 
 ## <a name="march-2019"></a>Mars 2019
 
@@ -31,7 +42,20 @@ Vous pouvez accéder au contenu Power BI partagé avec vous à partir d’une au
 
 ### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Amélioration du mode de présentation Windows avec diaporama (Windows)
 
-Avec un [diaporama](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/), vous pouvez utiliser les écrans publics de votre bureau pour exécuter les rapports Power BI en mode plein écran avec une rotation automatique entre les pages de rapport.  
+Avec [diaporama](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) vous pouvez utiliser les affichages publics situées dans votre bureau pour exécuter les rapports Power BI en mode plein écran qui est automatiquement rotation entre les pages de rapport.  
+
+### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>Prise en charge des rapports de PBI-r sur la configuration AD FS et WAP (iOS uniquement)
+
+Rapports Power BI (PBIX) hébergé dans PBI-r sur la configuration d’AD FS est désormais accessible à partir de l’application Power BI pour iOS.
+
+### <a name="enabling-single-tap-interaction-with-report-visuals"></a>L’activation de l’interaction d’appui unique avec les éléments visuels de rapport
+
+Nous avons modifié les interactions avec des rapports donc besoin qu’un seul clic sur un élément visuel, un bouton ou un segment pour interagir avec ses données tout de suite. Les utilisateurs ne sont plus doivent appuyer sur un élément visuel pour le sélectionner et cliquer à nouveau pour interagir avec lui, un simple clic effectuera les deux.
+
+![Interaction d’appui unique](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+
+> [!NOTE]
+> Les utilisateurs existants doivent activer ce comportement dans le paramètre d’application. Pour plus d’informations, consultez le [comment configurer l’interaction avec les rapports de simple clic](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) article.
 
 ## <a name="january---february-2019"></a>Janvier - février 2019
  
@@ -127,7 +151,7 @@ L’authentification unique (SSO) est l’une des fonctionnalités les plus dema
 
 Vous pouvez maintenant recevoir des rapports avec des filtres et des segments partagés.
 
-**Prise en charge des images d’arrière-plan**
+**Prise en charge des images d'arrière-plan**
 
 Quand vous voyez un rapport en mode paysage sur votre appareil mobile, vous voyez les mêmes images d'arrière-plan que dans Power BI sur le web.
 
@@ -326,7 +350,7 @@ Si vous scannez un code QR pour un tableau de bord auquel vous n’avez pas acc�
 Vous pouvez désormais faire défiler des graphiques à barres et à colonnes dans un rapport en touchant le graphique, au lieu de toucher la barre de défilement sur le côté.
 
 #### <a name="ios-devices"></a>Appareils iOS
-**Poser des questions sur vos données avec une préversion de Questions/Réponses** 
+**Poser des questions sur vos données avec une version préliminaire de Questions/Réponses** 
 
 Questions/Réponses vous permet de poser des questions concernant vos données avec vos propres mots. Power BI fournit les réponses. Questions/Réponses est déjà disponible dans le service Power BI sur http://powerbi.com. À présent, il est également [disponible dans l’application mobile sur votre iPhone ou iPad](mobile-apps-ios-qna.md).
 
@@ -362,7 +386,7 @@ Lisez le [résumé des fonctionnalités de janvier 2017 sur le blog dédié aux 
 Lisez le [résumé des fonctionnalités de décembre 2016 sur le blog dédié aux applications mobiles](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-december-2016).
 
 #### <a name="all-devices"></a>Tous les appareils
-**Actualisation en arrière-plan hors connexion**
+**Actualisation hors connexion en arrière-plan**
 
 Pour nous assurer que vous pouvez accéder à vos données les plus récentes en mode hors connexion, nous effectuons une actualisation en arrière-plan de l’application afin que les informations de votre entreprise soient à jour, même si vous n’y accédez pas pendant un certain temps. Pour vous assurer que certains tableaux de bord soient toujours à jour, marquez-les comme favoris. Accédez à des informations supplémentaires sur les [fonctionnalités hors connexion dans les applications mobiles Power BI](mobile-apps-offline-data.md).
 
@@ -387,7 +411,7 @@ Si une vignette d’image a une URL personnalisée définie par le propriétaire
 
 Vous pouvez maintenant actualiser les données de l’Apple Watch directement à partir de l’application Watch. Dans la page d’index du tableau de bord, appuyez longuement pour actualiser vos données. Pour que cela fonctionne, l’application mobile Power BI doit s’exécuter en arrière-plan sur un iPhone.
 
-#### <a name="android"></a>Téléphone
+#### <a name="android"></a>Android
 **URL personnalisée sur une vignette d’image**
 
 Si une vignette d’image a une URL personnalisée définie par le propriétaire du tableau de bord, lorsque vous appuyez sur la vignette, vous accédez directement à cette URL sans ouvrir la vignette en mode focus. En outre, les vignettes de tableau de bord contenant des URL personnalisées prédéfinies peuvent maintenant rediriger les lecteurs vers les rapports au sein de l’application.

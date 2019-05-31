@@ -1,20 +1,20 @@
 ---
 title: Comment configurer une actualisation planifiée de rapport Power BI
 description: Pour actualiser les données dans votre rapport Power BI, vous devez créer un plan d’actualisation planifiée.
-author: markingmyname
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
-ms.openlocfilehash: 4ca6d7c5ed47433614dc194db7d09162d5e96eae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.author: mblythe
+ms.openlocfilehash: f502ae89eb4c413dd900077272dbed5a4a9c4c6f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285711"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61219511"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Comment configurer une actualisation planifiée de rapport Power BI
 Pour actualiser les données dans votre rapport Power BI, vous devez créer un plan d’actualisation planifiée. Cela s’effectue à l’intérieur de la zone *Gérer* d’un rapport Power BI.

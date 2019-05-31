@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5da6b465adc544bf64fd4dfb090a2e1faabee59d
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 003d179902ad3eeb5dc6dea841936a217a292d0c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383235"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65099837"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Gestion des licences Power BI dans votre organisation
 
@@ -27,9 +27,15 @@ Cet article se concentre sur la gestion des licences par utilisateur du point de
 
 En tant qu’administrateur, vous pouvez acheter et affecter des licences Power BI Pro ; vous pouvez aussi vous inscrire pour une version d’essai de Power BI Pro pour votre organisation. Les personnes individuelles peuvent aussi s’inscrire pour un essai Power BI Pro.
 
-### <a name="purchasing-power-bi-pro"></a>Achat de Power BI Pro
+### <a name="purchase-power-bi-pro"></a>Acheter Power BI Pro
 
 Vous achetez des licences Power BI Pro via Microsoft Office 365 ou un partenaire Microsoft certifié. Une fois que vous avez acheté les licences, vous les attribuez à des utilisateurs individuels. Pour plus d’informations, consultez [Acheter et attribuer des licences Power BI Pro](service-admin-purchasing-power-bi-pro.md).
+
+### <a name="power-bi-pro-license-expiration"></a>Expiration de la licence Power BI Pro
+
+Il existe une période de grâce après l’expiration d’une licence Power BI Pro. Pour les licences qui font partie d’un achat de licences en volume, la période de grâce est de 90 jours. Si vous avez acheté la licence directement, la période de grâce est de 30 jours.
+
+L’abonnement Power BI Pro dispose du même cycle de vie qu’Office 365. Pour plus d’informations, consultez [que se passe-t-il pour mes données et l’accès quand mon Office 365 pour l’abonnement de l’entreprise se termine ?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ### <a name="power-bi-pro-trial-for-individuals"></a>Essai de Power BI Pro pour les personnes individuelles
 
@@ -57,7 +63,7 @@ Gardez les points suivants à l’esprit avant de suivre les étapes de l’insc
 
    ![Ajouter des abonnements](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-06.png)
 
-1. Sous **Autres plans**, pointez sur l’ellipse (**. . .**) pour Power BI Pro et sélectionnez **Démarrer la version d’évaluation gratuite**.
+1. Sous **Autres plans**, pointez sur l’ellipse ( **. . .** ) pour Power BI Pro et sélectionnez **Démarrer la version d’évaluation gratuite**.
 
    ![Démarrer l’essai gratuit](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-07.png) 
 
@@ -97,9 +103,9 @@ Si le bloc de licences Power BI (gratuites) illimité n’est pas disponible et 
 
 1. Dans le volet de navigation de gauche, sélectionnez **Facturation** > **Abonnements**.
 
-1. Sur le côté droit, sélectionnez **Ajouter des abonnements +**.
+1. Sur le côté droit, sélectionnez **Ajouter des abonnements +** .
 
-1. Sous **Autres plans**, pointez sur l’ellipse (**. . .**) pour Power BI (gratuit) et sélectionnez **Acheter maintenant**.
+1. Sous **Autres plans**, pointez sur l’ellipse ( **. . .** ) pour Power BI (gratuit) et sélectionnez **Acheter maintenant**.
 
     ![Acheter maintenant - Power BI (gratuit)](media/service-admin-licensing-organization/buy-powerbi-free.png)
 
@@ -128,12 +134,12 @@ Le paramètre AAD qui contrôle l’inscription est **AllowAdHocSubscriptions**.
      connect-msolservice -credential $msolcred
     ```
 
-   ![Connexion à Azure Active Directory](media/service-admin-licensing-organization/aad-signin.png)
+   ![Connexion à Azure Active Directory](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. Une fois connecté, exécutez la commande suivante pour voir comment votre locataire est actuellement configuré.
+1. Une fois connecté, exécutez la commande suivante pour voir comment votre locataire est actuellement configuré. (Notez que « fl » ci-dessous utilise la lettre « l », pas le numéro 1).
 
     ```powershell
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 
     ```
 1. Exécutez la commande suivante pour activer ($true) ou désactiver ($false) **AllowAdHocSubscriptions**.
 

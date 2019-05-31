@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b42efb2c9237baf85a71be12cfaf61da189601d4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255691"
+---
 Les données importées contiennent souvent des champs dont vous n’avez pas réellement besoin pour vos tâches de création de rapports et de visualisation, car ils constituent des informations en trop ou ces données sont déjà disponibles dans une autre colonne. Power BI Desktop dispose des outils nécessaires pour optimiser vos données en vue de la création des rapports et des éléments visuels et de l’affichage de vos rapports partagés.
 
 ## <a name="hiding-fields"></a>Masquage de champs

@@ -11,11 +11,11 @@ ms.date: 06/24/2018
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: e4cb314af1522c71de85e4576572acbb1d2e88b3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291461"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61239187"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Retail Analysis sample pour Power BI : Visite guidée
 
@@ -39,11 +39,11 @@ Cet exemple de tableau de bord et son rapport sous-jacent permettent d’analyse
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Sélectionnez **Exemple Analyse de la vente au détail**, puis choisissez **Se connecter**.  
   
-   ![Exemple d’analyse de la vente au détail](media/sample-retail-analysis/retail16.png)
+   ![Exemple Analyse de la vente au détail](media/sample-retail-analysis/retail16.png)
    
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail. Le nouveau contenu est signalé par un astérisque jaune. 
    
-   ![Retail Analysis Sample](media/sample-retail-analysis/retail17.png)
+   ![Exemple Analyse de la vente au détail](media/sample-retail-analysis/retail17.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 

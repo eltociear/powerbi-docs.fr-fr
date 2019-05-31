@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 04/22/2019
 ms.author: mshenhav
-ms.openlocfilehash: 99f40837f4b2c188120c4ca0311be3e9ded5fe95
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 79ca47f83bb39ab9d6df141b5a26dcb54e00c72c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276903"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65100986"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Afficher les rapports Power BI optimisés pour votre téléphone
 
@@ -24,9 +24,7 @@ S’applique à :
 |:--- |:--- |
 | iPhone |Téléphones Android |
 
-Quand vous créez un rapport Power BI dans Power BI Desktop ou dans le service Power BI, vous pouvez également créer une version [optimisée de ce rapport pour un affichage dans l’application Power BI pour téléphone](../../desktop-create-phone-report.md).
-
-Ensuite, quand vous ouvrez un rapport Power BI sur un téléphone, Power BI détecte si le rapport a été optimisé pour les téléphones, puis, si c’est le cas, l’ouvre automatiquement en mode portrait.
+Lorsque vous affichez un rapport Power BI sur votre téléphone, Power BI vérifie si le rapport a été optimisé pour les téléphones. S’il possède, Power BI s’ouvre automatiquement le rapport optimisé en mode portrait.
 
 ![Rapports en mode portrait](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -40,7 +38,7 @@ Toutes les autres fonctionnalités des rapports Power BI continuent de fonction
 * [Les rapports sur Android](mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="filter-the-report-page-on-a-phone"></a>Filtrer la page de rapport sur un téléphone
-Si des filtres ont été définis dans un rapport optimisé pour les téléphones, lorsque vous affichez le rapport sur un téléphone, vous pouvez utiliser ces filtres. Le rapport s’ouvre sur votre téléphone. Il est filtré en fonction des valeurs filtrées dans le rapport sur le web, avec un message indiquant qu’il existe des filtres actifs sur la page. Vous pouvez modifier les filtres sur votre téléphone.
+Si des filtres ont été définis dans un rapport optimisé pour les téléphones, lorsque vous affichez le rapport sur un téléphone, vous pouvez utiliser ces filtres. Le rapport s’ouvre sur votre téléphone, des valeurs en cours de filtrage dans le rapport sur le web. Un message s’affiche indiquant qu’il existe des filtres actifs sur la page. Vous pouvez modifier les filtres sur votre téléphone.
 
 1. Appuyez sur l’icône de filtre ![Icône de filtre de téléphone](./media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) en bas de la page. 
 2. Pour voir les résultats qui vous intéressent, utilisez le filtrage de base ou avancé.
@@ -48,7 +46,7 @@ Si des filtres ont été définis dans un rapport optimisé pour les téléphone
     ![Filtre avancé de rapport sur téléphone Power BI](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Sélection croisée de visuels
-La sélection croisée de visuels dans les rapports téléphoniques fonctionne de la même façon que dans le service Power BI et dans les rapports sur les téléphones en mode paysage : Lorsque vous sélectionnez des données dans un visuel, cela met en évidence les données associées dans les autres visuels sur cette page.
+Sélection croisée de visuels en mode portrait vue fonctionne comme il le fait dans le service Power BI et sur les téléphones en mode paysage : Lorsque vous sélectionnez des données dans un visuel, cela met en évidence les données associées dans les autres visuels sur cette page.
 
 En savoir plus sur le [filtrage et la mise en évidence dans Power BI](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -58,13 +56,13 @@ Quand vous sélectionnez un visuel dans des rapports sur téléphone, ces dernie
 Quand le visuel est sélectionné, vous pouvez effectuer différentes opérations, comme défiler au sein du visuel. Pour désélectionner un visuel, touchez n’importe où en dehors de la zone du visuel.
 
 ## <a name="open-visuals-in-focus-mode"></a>Ouvrir les visuels en mode Focus
-Vous pouvez également afficher les rapports sur téléphone en mode Focus, qui permet d’obtenir une vision élargie d’un visuel et d’explorer celui-ci ainsi que le rapport.
+Rapports sur téléphone offrent également un mode focus : Vous obtenez une vue plus large d’un seul visual et faciliter l’exploration.
 
-* Dans un rapport pour téléphone, cliquez sur les points de suspension (**...**) situés dans le coin supérieur droit d’un visuel, puis sur **Développer en mode focus**.
+* Dans un rapport pour téléphone, cliquez sur les points de suspension ( **...** ) situés dans le coin supérieur droit d’un visuel, puis sur **Développer en mode focus**.
   
-    ![Développer en mode focus](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
+    ![Développer en mode Focus](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
-Ce que vous effectuez en mode focus se reflète sur le canevas du rapport et inversement, ce qui vous offre une expérience transparente de l’exploration. Par exemple, si vous mettez en évidence la valeur d’un visuel, puis que vous revenez à l’ensemble du rapport, celui-ci est entièrement filtré sur la valeur que vous avez mise en évidence dans le visuel.
+Que faire en mode focus s’appliquent au canevas du rapport et vice versa. Par exemple, si vous mettez en surbrillance une valeur dans un élément visuel, puis revenez à l’ensemble du rapport, le rapport est filtré à la valeur que vous avez sélectionnée dans le visuel.
 
 Voici les actions qui ne sont possibles qu’en mode focus en raison des contraintes liées à la taille des écrans :
 
@@ -72,21 +70,33 @@ Voici les actions qui ne sont possibles qu’en mode focus en raison des contrai
 * **Trier** les valeurs du visuel.
 * **Rétablir** : Effacer les étapes d’exploration effectuées sur un visuel et revenir à la définition définie lors de la création du rapport.
   
-    Pour effacer toutes les explorations à partir d’un visuel, cliquez sur les points de suspension (**...**), puis sur **Rétablir**.
+    Pour effacer toutes les explorations à partir d’un visuel, cliquez sur les points de suspension ( **...** ), puis sur **Rétablir**.
   
     ![Rétablir](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
-    L’action Rétablir est disponible au niveau du rapport en effaçant toute l’exploration dans l’ensemble des visuels, ou au niveau du visuel en effaçant toute l’exploration du visuel spécifique sélectionné.   
+    Rétablir est disponible au niveau du rapport, en désactivant les explorations à partir de tous les éléments visuels, ou au niveau du visuel, effacement explorations à partir de l’élément visuel sélectionné.   
 
 ## <a name="drill-down-in-a-visual"></a>Descendre dans la hiérarchie d’un visuel
-Si des niveaux de la hiérarchie sont définis dans un visuel, vous pouvez descendre dans la hiérarchie des informations détaillées affichées, puis revenir en arrière. Vous pouvez [ajouter une descente dans la hiérarchie d’un visuel](../end-user-drill.md) soit dans le service Power BI, soit dans Power BI Desktop. La descente dans la hiérarchie fonctionne uniquement avec des rapports Power BI optimisés pour l’affichage sur téléphone. 
+Si des niveaux de la hiérarchie sont définis dans un visuel, vous pouvez descendre dans la hiérarchie des informations détaillées affichées, puis revenir en arrière. Vous pouvez [ajouter une descente dans la hiérarchie d’un visuel](../end-user-drill.md) soit dans le service Power BI, soit dans Power BI Desktop.
 
-1. Dans un rapport pour téléphone, cliquez sur les points de suspension (**...**) situés dans le coin supérieur droit, puis sur **Développer en mode focus**.
+Il existe plusieurs types de zoom :
+
+### <a name="drill-down-on-a-value"></a>Zoom avant sur une valeur
+1. Durée pendant laquelle appuyer (cliquez et maintenez) sur un point de données dans un élément visuel.
+2. Info-bulle s’affiche, et si la hiérarchie est définie, le pied de page d’info-bulle affichera exploration vers le bas et flèche vers le haut.
+3. Appuyez sur la flèche vers le bas pour descendre
+
+    ![Appuyez sur Descendre dans la hiérarchie](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    
+4. Appuyez sur la flèche vers le haut pour l’extraction vers le haut.
+
+### <a name="drill-to-next-level"></a>Accéder au prochain niveau
+1. Dans un rapport pour téléphone, cliquez sur les points de suspension ( **...** ) situés dans le coin supérieur droit, puis sur **Développer en mode focus**.
    
     ![Développer en mode focus](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
    
     Dans cet exemple, les barres indiquent des états.
-2. Appuyez sur l’icône Explorer ![Icône Explorer](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) dans l’angle inférieur gauche.
+2. Appuyez sur l’icône Explorer ![Icône Explorer](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-icon.png) dans le coin inférieur gauche.
    
     ![Mode Exploration](./media/mobile-apps-view-phone-report/power-bi-phone-report-explore-mode.png)
 3. Appuyez sur **Afficher le niveau suivant** ou **Développer au prochain niveau**.
@@ -99,9 +109,26 @@ Si des niveaux de la hiérarchie sont définis dans un visuel, vous pouvez desce
 4. Si vous appuyez sur la flèche dans le coin supérieur gauche, vous revenez au rapport pour téléphone contenant les valeurs toujours développées au niveau inférieur.
    
     ![Toujours développé au niveau inférieur](./media/mobile-apps-view-phone-report/power-bi-back-to-phone-report-expanded-levels.png)
-5. Pour remonter au niveau d’origine, appuyez de nouveau sur les points de suspension (**...**), puis sur **Rétablir**.
+5. Pour remonter au niveau d’origine, appuyez de nouveau sur les points de suspension ( **...** ), puis sur **Rétablir**.
    
     ![Rétablir](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
+
+## <a name="drill-through-from-a-value"></a>Explorer à partir d’une valeur
+Extraction connecte à des valeurs dans une page du rapport, avec d’autres pages de rapport. Lorsque vous permet d’accéder à partir d’un point de données vers une autre page de rapport, les valeurs de points de données sont utilisés pour filtrer le percé via la page, ou elle sera dans le contexte des données sélectionnées.
+Les auteurs de rapports peuvent [définir d’extraction](https://docs.microsoft.com/power-bi/desktop-drillthrough) lorsqu’ils créent le rapport.
+
+1. Durée pendant laquelle appuyer (cliquez et maintenez) sur un point de données dans un élément visuel.
+2. Info-bulle s’affiche, et si l’extraction est définie, le pied de page d’info-bulle affichera flèche d’extraction.
+3. Appuyez sur la flèche pour l’extraction
+
+    ![Appuyez sur l’extraction](././media/mobile-apps-view-phone-report/report-drill-through1.png)
+
+4. Choisir la page rapport d’extraction
+
+    ![Choisissez la page de rapport](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+
+5. Utilisez le bouton précédent, à l’en-tête de l’application pour revenir à la page que vous avez démarré depuis.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer des rapports optimisés pour les applications Power BI pour téléphone](../../desktop-create-phone-report.md)

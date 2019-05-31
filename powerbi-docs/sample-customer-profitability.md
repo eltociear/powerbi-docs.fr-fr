@@ -11,11 +11,11 @@ ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 9fb22a50d68e414e8d75fc004629eaa2633b066c
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216490"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61242455"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : Visite guidée
 
@@ -179,7 +179,7 @@ Penchons-nous sur le secteur *Distribution* .
 1. Ouvrez la page de rapport « Analyse de la marge sectorielle ».
 2. Sans sélectionner de visualisations sur la page de rapport, développez le volet Filtres à droite (si ce n’est déjà fait). Le volet Filtres doit afficher uniquement les filtres au niveau page.  
 
-   ![Filtres de niveau page](media/sample-customer-profitability/power-bi-filters.png)
+   ![Filtres au niveau de la page](media/sample-customer-profitability/power-bi-filters.png)
 3. Recherchez le filtre pour **Industry** ( secteur), puis cliquez sur la flèche pour développer la liste. Ajoutons un filtre de page pour le secteur Distribution. Tout d’abord, annulez toutes les sélections en désactivant la case à cocher **Sélectionner tout**. Ensuite, sélectionnez seulement **Distribution**.  
 
    ![filtre pour Distribution](media/sample-customer-profitability/customer7.png)

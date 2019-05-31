@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 81449d7a07bec3c142930573154ecd13a0ceff49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324918"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61141100"
 ---
-# <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Se connecter à des sources de données pour les dataflows Power BI (préversion)
+# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Se connecter aux sources de données pour les flux de données Power BI
 
 Avec les dataflows Power BI, vous pouvez vous connecter à différentes sources de données pour créer de nouveaux dataflows ou ajouter de nouvelles entités à un dataflow existant.
 
 Cet article liste les nombreuses sources de données disponibles pour créer ou compléter des dataflows, puis explique comment créer ces dataflows à l’aide de ces sources de données.
 
-Pour une vue d’ensemble de la création et de l’utilisation de dataflows, consultez [Création et utilisation de dataflows dans Power BI (préversion)](service-dataflows-create-use.md).
+Pour une vue d’ensemble montrant comment créer et utiliser des flux de données, consultez [création et utilisation des flux de données dans Power BI](service-dataflows-create-use.md).
 
 ## <a name="create-a-dataflow-from-a-data-source"></a>Créer un dataflow à partir d’une source de données
 
@@ -61,7 +61,7 @@ La catégorie **Toutes les catégories** contient toutes les sources de données
 
 La catégorie **Fichier** comprend les connexions de données disponibles suivantes pour les dataflows :
 
-* Accès
+* Accéder
 * Excel
 * JSON
 * Texte/CSV
@@ -93,7 +93,7 @@ La catégorie **Azure** comprend les connexions de données disponibles suivante
 La catégorie **Services en ligne** comprend les connexions de données disponibles suivantes pour les dataflows :
 
 * Amazon Redshift
-* Common Data Service pour applications
+* Common Data Service for Apps
 * Microsoft Exchange Online
 * Objets Salesforce
 * Rapports Salesforce
@@ -176,12 +176,12 @@ C’est là tout ce qu’il faut savoir pour se connecter à des sources de donn
 
 Cet article vous a montré à quelles sources de données vous pouvez vous connecter pour des dataflows. Les articles suivants définissent plus en détail les scénarios d’utilisation courants pour les flux de données. 
 
-* [Préparation des données en libre-service dans Power BI (préversion)](service-dataflows-overview.md)
+* [Préparation des données en libre-service dans Power BI](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [Utilisation d’entités calculées sur Power BI Premium (préversion)](service-dataflows-computed-entities-premium.md)
-* [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
-* [Flux de données et intégration d’Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
+* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 
 Pour plus d’informations sur Power Query et l’actualisation planifiée, vous pouvez consulter ces articles :
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)

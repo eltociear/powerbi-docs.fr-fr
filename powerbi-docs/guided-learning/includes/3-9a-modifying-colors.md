@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d2ba689be99955c649930c1ee4b203b67577619c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396880"
+---
 Les situations justifiant une modification des couleurs utilisées dans les graphiques ou les éléments visuels peuvent être fréquentes. Grâce à Power BI, vous pouvez contrôler l’affichage des couleurs. Pour commencer, sélectionnez un élément visuel puis, dans le volet **Visualisations**, cliquez sur l’icône **pinceau**.
 
 ![](media/3-9a-modifying-colors/3-9a_1.png)

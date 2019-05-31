@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a0510b9f9bc7303d7ed63a5a1c4c7ee9862d7c85
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61256238"
+---
 Vous avez réussi ! **Félicitations !** Vous avez terminé le cours **Formation guidée** pour Power BI. Vous avez découvert l’ensemble des éléments de base de Power BI, suivi une visite guidée de ses fonctionnalités et éléments logiciels, puis vous avez appris comment ils fonctionnent ensemble.
 
 ![](media/6-5-guided-learning-completion/c0a0_2.png)

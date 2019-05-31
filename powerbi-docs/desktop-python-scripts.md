@@ -11,11 +11,11 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: fcfbf4fb7be34739364fba176b28ea42934d5562
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216030"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61283896"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Exécuter des scripts Python dans Power BI Desktop
 Vous pouvez exécuter des scripts Python directement dans **Power BI Desktop** et importer les jeux de données obtenus dans un modèle de données Power BI Desktop.
@@ -48,7 +48,7 @@ Lors de la préparation et de l’exécution d’un script Python dans Power BI 
 * Actuellement, les tables imbriquées (table de tables) ne sont pas prises en charge. 
 
 ### <a name="run-your-python-script-and-import-data"></a>Exécuter votre script Python et importer des données
-1. Dans Power BI Desktop, le connecteur de données du script Python se trouve dans **Obtenir des données**. Pour exécuter votre script Python, sélectionnez **Obtenir des données &gt; Plus...**, puis sélectionnez **Autres &gt; Script Python**, comme illustré dans l’image suivante :
+1. Dans Power BI Desktop, le connecteur de données du script Python se trouve dans **Obtenir des données**. Pour exécuter votre script Python, sélectionnez **Obtenir des données &gt; Plus...** , puis sélectionnez **Autres &gt; Script Python**, comme illustré dans l’image suivante :
    
    ![](media/desktop-python-scripts/python-scripts-1.png)
 2. Si Python est installé sur votre ordinateur local, la dernière version installée est sélectionnée comme votre moteur Python. Copiez simplement votre script dans la fenêtre de script, puis cliquez sur **OK**.

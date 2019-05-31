@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa6296485897b983c3ca4044ffa2875de3326dec
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264685"
+---
 Bien que Power BI puisse importer vos données à partir de pratiquement toute source, ses outils de visualisation et de modélisation fonctionnent mieux avec des données en colonnes. Parfois, vos données ne sont pas mises en forme en colonnes simples, ce qui est souvent le cas avec les feuilles de calcul Excel, où une disposition en table convenable pour l’œil humain n’est pas forcément optimale pour les requêtes automatiques. Par exemple, la feuille de calcul suivante comporte des en-têtes qui s’étendent sur plusieurs colonnes.
 
 ![](media/1-5-cleaning-irregular-data/1-5_1.png)

@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/22/2019
+ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1dc085d822463ecf394d6257741d4af82d72b8c0
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661586"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608338"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Tableau de bord pour les consommateurs du service Power BI
 
@@ -24,7 +24,7 @@ Un ***tableau de bord*** Power BI est une page unique, souvent appelée canevas
 
 ![tableau de bord](media/end-user-dashboards/power-bi-dashboard2.png)
 
-Les visualisations que vous voyez dans le tableau de bord sont appelées *vignettes* et sont *épinglées* au tableau de bord par les concepteurs de rapports. La sélection d’une vignette ouvre la page de rapport où la visualisation a été créée. Si vous êtes novice dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Power BI – Concepts de base](end-user-basic-concepts.md).
+Les visualisations que vous voyez sur le tableau de bord sont appelées *vignettes* et sont *épinglé* au tableau de bord par rapport *concepteurs*. Dans la plupart des cas, en sélectionnant une vignette vous amène à la page de rapport où la visualisation a été créée. Si vous êtes novice dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Power BI – Concepts de base](end-user-basic-concepts.md).
 
 > [!NOTE]
 > Les tableaux de bord peuvent être [affichés et partagés sur des appareils mobiles](mobile/mobile-apps-view-dashboard.md).
@@ -39,7 +39,7 @@ Les visualisations sur un tableau de bord proviennent de rapports, et chaque rap
 ## <a name="advantages-of-dashboards"></a>Avantages des tableaux de bord
 Les tableaux de bord sont un moyen formidable pour surveiller votre activité, pour rechercher des réponses et pour afficher vos mesures les plus importantes en un coup d’œil. Les visualisations sur un tableau de bord peuvent provenir d’un ou plusieurs jeux de données sous-jacents et d’un ou plusieurs rapports sous-jacents. Un tableau de bord peut combiner des données locales et cloud, offrant ainsi une vue centralisée, quel que soit l’endroit où les données résident.
 
-Un tableau de bord n’est pas simplement une belle image ; il est extrêmement interactif et hautement personnalisable ; et les vignettes sont mises à jour au fur et à mesure que les données sous-jacentes changent.
+Un tableau de bord n’est pas simplement une belle image ; Il est interactif et mettre à jour des vignettes en tant que les données sous-jacentes changent.
 
 ## <a name="dashboards-versus-reports-for-power-bi-consumers"></a>Tableaux de bord et rapports pour les ***consommateurs*** Power BI
 Les rapports sont souvent confondus avec les tableaux de bord, car il s’agit également de canevas contenant des visualisations. Mais il existe quelques différences majeures pour les *consommateurs* Power BI.
@@ -48,11 +48,9 @@ Les rapports sont souvent confondus avec les tableaux de bord, car il s’agit �
 | --- | --- | --- |
 | Pages |Une seule page |Une ou plusieurs pages |
 | Sources de données |Un ou plusieurs rapports et un ou plusieurs jeux de données par tableau de bord |Un seul jeu de données par rapport |
-| S’abonner |Possibilité de s’abonner aux e-mails d’un tableau de bord |Possibilité de s’abonner aux e-mails de la page de rapport |
 | Filtrage |Impossible de filtrer ou découper |Différentes manières de filtrer, mettre en surbrillance et découper |
 | Définir des alertes |Possibilité de créer des alertes pour vous envoyer un e-mail lorsque certaines conditions sont remplies |Non |
 | Sélection |Possibilité de définir un tableau de bord comme votre tableau de bord « par défaut » |Impossible de créer un rapport par défaut |
-| Requêtes en langage naturel |Disponible à partir du tableau de bord |Non disponible à partir de rapports |
 | Possibilité d’afficher les tables et les champs sous-jacents d’un jeu de données |Non. Possibilité d’exporter les données, mais pas de voir les tables et les champs dans le tableau de bord. |Oui. Possibilité de voir les tables d’un jeu de données ainsi que les champs et les valeurs. |
 
 

@@ -2,20 +2,20 @@
 title: Mettre à l'échelle votre capacité Power BI Embedded | Microsoft Docs
 description: Cet article explique pas à pas comment mettre à l’échelle une capacité Power BI Embedded dans Microsoft Azure.
 services: power-bi-embedded
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 01/31/2019
-ms.openlocfilehash: 862e2dceb261e9f89480f50320bd0e1ce6a27931
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.openlocfilehash: b9a632fa39d320d14d1282cee5e59022a8ab0303
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762280"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61388434"
 ---
 # <a name="scale-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Mettre à l’échelle une capacité Power BI Embedded dans le Portail Microsoft Azure
 

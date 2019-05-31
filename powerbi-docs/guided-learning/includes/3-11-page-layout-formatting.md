@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e2745c211dbb9f855bcf90589f0fbbe65857b3a3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396840"
+---
 Power BI Desktop vous permet de contrôler la disposition et la mise en forme de vos pages de rapport, telles que la taille et l’orientation.
 
 Utilisez le menu **Mode Page** sous l’onglet Accueil pour modifier la mise à l’échelle des pages de votre rapport. Les options disponibles incluent **Ajuster à la page** (par défaut), **Ajuster à la largeur** et **Taille réelle**.

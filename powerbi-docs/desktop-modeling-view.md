@@ -1,5 +1,5 @@
 ---
-title: Utiliser l’affichage Modélisation dans Power BI Desktop (préversion)
+title: Utiliser le mode de modélisation dans Power BI Desktop
 description: Utilisez l’affichage Modélisation pour afficher des jeux de données complexes dans un format visuel dans Power BI Desktop.
 author: davidiseminger
 manager: kfile
@@ -7,30 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ccb78c8d22fdb7b9fecbb202dca488c44d36a15d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 1fdb6058a6306f63f53c770812f85ccd9f9113ea
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216306"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941344"
 ---
-# <a name="modeling-view-in-power-bi-desktop-preview"></a>Affichage Modélisation dans Power BI Desktop (préversion)
+# <a name="modeling-view-in-power-bi-desktop"></a>Vue de modélisation dans Power BI Desktop
 
-**L’affichage Modélisation** de **Power BI Desktop** permet d’afficher et d’utiliser des jeux de données complexes qui contiennent de nombreuses tables. Voici ses applications possibles :
+**L’affichage Modélisation** de **Power BI Desktop** permet d’afficher et d’utiliser des jeux de données complexes qui contiennent de nombreuses tables.
 
-
-## <a name="enabling-the-modeling-view-preview-feature"></a>Activer la fonctionnalité d’évaluation Affichage Modélisation
-
-La fonctionnalité Affichage Modélisation, en préversion, doit être activée dans **Power BI Desktop**. Pour cela, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités d’évaluation**, puis cochez la case **Affichage Modélisation** comme dans l’illustration suivante.
-
-![Activer la fonctionnalité d'évaluation Affichage Modélisation dans Power BI Desktop](media/desktop-modeling-view/modeling-view_01.png)
-
-Un message vous invitera à redémarrer **Power BI Desktop** pour activer la fonctionnalité d’évaluation. 
-
-![Redémarrer Power BI Desktop pour activer les fonctionnalités d'évaluation](media/desktop-modeling-view/modeling-view_01b.png)
 
 ## <a name="using-modeling-view"></a>Utiliser l’affichage Modélisation
 
@@ -66,9 +56,9 @@ Supposons que vous souhaitiez modifier le [mode de stockage](desktop-storage-mod
 Les articles suivants décrivent plus en détail les modèles de données ainsi que le mode DirectQuery.
 
 * [Agrégations dans Power BI Desktop (préversion)](desktop-aggregations.md)
-* [Modèles composites dans Power BI Desktop (préversion)](desktop-composite-models.md)
+* [Modèles composites dans Power BI Desktop](desktop-composite-models.md)
 * [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md)
-* [Relations plusieurs-à-plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md)
+* [Relations plusieurs à plusieurs dans Power BI Desktop](desktop-many-to-many-relationships.md)
 
 
 Articles DirectQuery :

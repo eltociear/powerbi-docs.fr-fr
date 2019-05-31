@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: mshenhav
 ms.openlocfilehash: 443615a64bee1f4723450c6c8cc3c49feb81989c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275131"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61373981"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Application Power BI pour la réalité mixte (Preview)
 Consultez vos tableaux de bord et vos rapports dans l’application Power BI pour la réalité mixte (préversion) pendant votre immersion dans le monde virtuel ou placez-les dans des emplacements spécifiques du contexte de votre environnement. 

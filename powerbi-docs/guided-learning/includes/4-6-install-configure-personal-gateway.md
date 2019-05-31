@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ea958349988cade1045e80b073254ab1f29bbe9e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263411"
+---
 Dans les rubriques précédentes, nous avons examiné comment vous pouvez utiliser Power BI pour vous connecter à des sources de données et comment actualiser manuellement vos jeux de données sur le service Power BI. Toutefois, vous n’allez pas vouloir actualiser manuellement les éléments chaque fois que vos données changent. Vous pouvez donc utiliser Power BI pour configurer une actualisation planifiée qui se connectera à vos sources de données et les publiera automatiquement dans le service Power BI. Vous pourrez ainsi vous connecter au service avec toutes les sources de données locales, notamment des fichiers Excel, des bases de données Access, des bases de données SQL, etc.
 
 Le système qui vous permet de connecter vos sources de données locales au service Power BI est appelé **Passerelle de données**. Il s’agit d’une petite application qui s’exécute sur votre ordinateur et utilise une planification préétablie pour se connecter à vos données, collecter toutes les mises à jour, puis les transmettre au Service Power BI. **Personal Gateway** est une version de la **passerelle de données** qui peut être utilisée sans aucune configuration de la part de l’administrateur.

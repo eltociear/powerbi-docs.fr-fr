@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: b3f0232fdf377ba75a31f5057f1e094bf9fac39d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 8d48f7c42ac88f5a3b659bf4aff2ece65a2010e5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54273590"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61342839"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Annoter et partager une vignette, un rapport ou un visuel dans les applications mobiles Power BI
 S’applique à :
@@ -29,7 +29,7 @@ Vous pouvez annoter et partager la capture instantanée d’une vignette, d’un
 
 *Un rapport avec des annotations*
 
-Le message contenant la capture instantanée de la vignette, du rapport ou du visuel contient également un lien vers l’objet en question sur le service Power BI ([https://powerbi.com](https://powerbi.com)). Vos destinataires peuvent cliquer sur le lien et accéder directement à cette vignette, à ce rapport ou à ce visuel si vous et eux possédez une licence Power BI Pro, ou si le contenu est dans une [capacité Premium](../../service-premium.md), et que vous avez déjà partagé l’élément avec eux. 
+Le message contenant la capture instantanée de la vignette, du rapport ou du visuel contient également un lien vers l’objet en question sur le service Power BI ([https://powerbi.com](https://powerbi.com)). Vos destinataires peuvent cliquer sur le lien et accéder directement à cette vignette, à ce rapport ou à ce visuel si vous et eux possédez une licence Power BI Pro, ou si le contenu est dans une [capacité Premium](../../service-premium-what-is.md), et que vous avez déjà partagé l’élément avec eux. 
 
 Vous pouvez [partager une vignette à partir de l’application Power BI pour les appareils Windows 10](mobile-windows-10-phone-app-get-started.md), mais pas l’annoter.
 

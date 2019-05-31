@@ -11,11 +11,11 @@ ms.date: 11/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: d2eeab8241de06f9a4d0e654696173d076e01ad2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292358"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61187051"
 ---
 # <a name="power-bi-archived-workspace"></a>Espace de travail archivé Power BI
 
@@ -29,9 +29,9 @@ Power BI ne supprimera pas de contenu de votre espace de travail archivé. Vous 
 
 * **OneDrive Entreprise** : Pour les jeux de données dans votre espace de travail archivé, vous ne pouvez plus obtenir de données ni les actualiser à partir de OneDrive Entreprise.  Si vous essayez de vous connecter à cette source, un avertissement s’affiche.
 
-* **Partage de tableaux de bord** : Vous ne pouvez pas partager de tableaux de bord avec d’autres utilisateurs à partir de votre espace de travail archivé.  Tous les utilisateurs qui y ont déjà accès continuent à pouvoir afficher les tableaux de bord partagés en accédant à leur espace de travail archivé.
+* **Partage de tableaux de bord** : Vous ne pouvez pas partager des tableaux de bord avec d’autres utilisateurs à partir de votre espace de travail archivé.  Tous les utilisateurs qui y ont déjà accès continuent à pouvoir afficher les tableaux de bord partagés en accédant à leur espace de travail archivé.
 
-* **Création de groupes** : Vous ne pouvez pas créer de groupes dans votre espace de travail archivé.
+* **Création de groupes** : Impossible de créer des groupes dans votre espace de travail archivé.
 
 * **Accès dans les applications mobiles Power BI** : Même si vous pouvez toujours afficher du contenu web dans votre espace de travail archivé, ce contenu n’apparaît plus dans les applications mobiles Power BI.
 

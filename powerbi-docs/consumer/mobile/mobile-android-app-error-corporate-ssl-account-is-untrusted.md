@@ -11,11 +11,11 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: mshenhav
 ms.openlocfilehash: de103412e21e0d26d20058e2d4e1fb9a8a5449bf
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662316"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61341348"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Correction de l’erreur « Votre certificat SSL d’entreprise n’est pas approuvé » - Power BI
 Lorsque vous vous connectez à une application mobile Android pour Microsoft Power BI, vous pouvez voir le message « Authentification impossible car votre certificat SSL d’entreprise n’est pas approuvé par cet appareil. Contactez l’administrateur informatique de votre entreprise. » 

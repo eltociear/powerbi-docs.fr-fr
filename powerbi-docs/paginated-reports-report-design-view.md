@@ -1,24 +1,24 @@
 ---
 title: Découverte du mode Création de rapport pour les rapports paginés - Power BI (préversion)
 description: Le mode Création de rapport du Générateur de rapports est l’espace de conception pour la création de rapports paginés que vous pouvez publier dans le service Power BI.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 7b84b967a9e6228258027302fc2e4ad4df5b0073
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174772"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423340"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Découverte du mode Création de rapport pour les rapports paginés - Power BI (préversion)
 
-Le mode Création de rapport du Générateur de rapports est l’espace de conception pour la création de rapports paginés que vous pouvez publier dans le service Power BI. Le canevas de conception se situe au centre du Générateur de rapports, entouré par le ruban et les volets. Le canevas de conception est l’endroit où vous ajoutez et organisez les éléments de votre rapport. Cet article présente les volets qui vous permettent d’ajouter et d’organiser vos ressources de rapport et de modifier les propriétés d’un élément du rapport.  
+Mode de création de rapport dans le Générateur de rapports Power BI est l’espace de conception pour la création de rapports paginés que vous pouvez publier sur le service Power BI. Le canevas de conception se situe au centre du Générateur de rapports, entouré par le ruban et les volets. Le canevas de conception est l’endroit où vous ajoutez et organisez les éléments de votre rapport. Cet article présente les volets qui vous permettent d’ajouter et d’organiser vos ressources de rapport et de modifier les propriétés d’un élément du rapport.  
 
 ![Mode Création du Générateur de rapports](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 

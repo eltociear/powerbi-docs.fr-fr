@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8d9388977c088c51094cf2835c8dab9e7d019a59
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260247"
+---
 Tout ce que vous faites dans Power BI repose sur quelques **blocs de construction** de base. Une fois que vous avez compris le fonctionnement de ces blocs de construction, vous pouvez vous les approprier et commencer à créer des rapports complexes et élaborées. Après tout, même les choses d’apparence complexe reposent sur des blocs de construction de base : les bâtiments sont construits avec du bois, de l’acier, du ciment et du verre. Les voitures sont fabriquées avec du métal, du tissu et du caoutchouc. Bien sûr, les bâtiments et les voitures peuvent être plus ou moins élaborés : tout dépend de la façon dont ces blocs de construction de base sont agencés.
 
 Nous allons nous intéresser à ces blocs de construction de base, voir les choses simples qu’ils permettent de construire, puis nous évoquerons brièvement les choses complexes qu’ils permettent aussi de créer.

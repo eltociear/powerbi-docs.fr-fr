@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2019
+ms.date: 04/24/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 3f9195ecb4b8679ab65ad6535a85d4d271582d7d
-ms.sourcegitcommit: e05b3863c7758f639894d771193b98b12b93022a
-ms.translationtype: HT
+ms.openlocfilehash: cf640be131e1bffb571ad3c2ae2713dee1c4c0ca
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55648694"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051284"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -43,11 +43,11 @@ URL?filter=***Tableau***/***Champ*** eq '***valeur***'
 
 ### <a name="reports-in-apps"></a>Rapports dans les applications
 
-Si vous souhaitez ajouter un filtre d’URL à un rapport d’une application, la mise en forme est un peu différente. Les liens vers les rapports d’une application ont un paramètre de requête (ctid) qui est ajouté à l’URL. Les paramètres de requête doivent être séparés par une esperluette (&). Donc, vous devez ajouter la requête avec « &filter= »(après le paramètre ctid) au lieu de « ?filter= ». 
+Si vous souhaitez ajouter un filtre d’URL à un rapport d’une application, la mise en forme est un peu différente. Les liens vers les rapports d’une application ont un paramètre de requête (ctid) qui est ajouté à l’URL. Séparez les paramètres de requête par une esperluette (&). Conservez « ? filtre = « et déplacer le paramètre ctid à la fin de l’URL, précédé par une esperluette (&). 
 
 Comme dans cet exemple :
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
 
 ### <a name="field-types"></a>Types de champ
 
@@ -83,7 +83,7 @@ Pour filtrer le rapport afin d’afficher uniquement les données des magasins s
 
 Notre rapport étant filtré sur la Caroline du Nord, les visualisations affichées sur la page du rapport présentent uniquement les données relatives à la Caroline du Nord.
 
-![](media/service-url-filters/power-bi-report4.png)
+![Rapport filtré pour Caroline du Nord](media/service-url-filters/power-bi-report4.png)
 
 ## <a name="filter-on-multiple-fields"></a>Filtrer sur plusieurs champs
 
@@ -133,19 +133,19 @@ Un filtre d’URL Power BI peut inclure des nombres dans les formats suivants.
 
 ### <a name="date-data-types"></a>Types de données date
 
-Power BI prend en charge OData V3 et V4 pour les types de données **Date** et **DateTimeOffset**.  Les dates sont représentées au format EDM (2019-02-12T00:00:00), donc lorsque vous spécifiez une date comme AAAA-MM-JJ, Power BI l'interprète comme AAAA-MM-JJJ00:00:00.
+Power BI prend en charge OData V3 et V4 pour les types de données **Date** et **DateTimeOffset**.  Dates sont représentés en utilisant le format de modèle EDM (2019-02-12T00:00:00), de sorte que lorsque vous spécifiez une date sous la forme de « AAAA-MM-JJ », Power BI l’interprète comme « AAAA-MM-DDT00:00:00 ».
 
-Pourquoi cette distinction est-elle importante ? Supposons que vous créez un paramètre de chaîne de requête **Table/Date gt 2018-08-03**.  Les résultats vont-ils inclure le 3 août 2018 ou commencer le 4 août 2018 ? Comme Power BI traduit votre requête en **Table/Date gt 2018-08-03T00:00:00**, vos résultats incluent toutes les dates qui ont une partie heure différente de zéro, ces dates étant supérieures à **2018-08-03T00:00:00**.
+Pourquoi cette distinction est-elle importante ? Supposons que vous créez un paramètre de chaîne de requête **Table/Date gt ' 2018-08-03 »** .  Les résultats vont-ils inclure le 3 août 2018 ou commencer le 4 août 2018 ? Étant donné que Power BI traduit votre requête à **Table/Date gt ' 2018-08-03T00:00:00'** , vos résultats incluent toutes les dates qui ont une partie différente de zéro heure dans la mesure où ces dates doit être supérieures à **' 2018-08-03T00:00:00'** .
 
 ## <a name="special-characters-in-url-filters"></a>Caractères spéciaux dans les filtres d’URL
 
-Les caractères spéciaux et les espaces nécessitent une mise en forme supplémentaire. Quand votre requête contient des espaces, des tirets ou d’autres caractères non-ASCII, faites précéder ces caractères spéciaux d’un *code d’échappement* commençant par un trait de soulignement et X (**_x**), suivi du code **Unicode** à quatre chiffres, puis par un autre trait de soulignement. Si le code Unicode a moins de quatre caractères, vous devez le compléter avec des zéros. Voici quelques exemples.
+Les caractères spéciaux et les espaces nécessitent une mise en forme supplémentaire. Quand votre requête contient des espaces, des tirets ou d’autres caractères non-ASCII, faites précéder ces caractères spéciaux d’un *code d’échappement* commençant par un trait de soulignement et X ( **_x**), suivi du code **Unicode** à quatre chiffres, puis par un autre trait de soulignement. Si le code Unicode a moins de quatre caractères, vous devez le compléter avec des zéros. Voici quelques exemples.
 
 |Identificateur  |Unicode  | Codage pour Power BI  |
 |---------|---------|---------|
 |**Nom du tableau**     | Le code Unicode pour l’espace est 0x20        |  Table_x0020_Name       |
 |**Column**@**Number**     |   Le code Unicode pour @ est 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  Le code Unicode pour [est 0x0058] est 0x0050       |  _x0058_Column_x0050       |
+|**[Column]**     |  Le code Unicode pour [est 0x0058] est 0x0050       |  _x0058_Column_x0050_       |
 |**Column+Plus**     | Le code Unicode pour + est 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![visuel de table affichant des caractères spéciaux](media/service-url-filters/power-bi-special-characters1.png)
@@ -177,7 +177,7 @@ Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder 
 
 * Quand vous utilisez l’opérateur *in*, les valeurs à droite de *in* doivent être sous forme de liste séparée par des virgules et placée entre des parenthèses.    
 * Dans Power BI Report Server, vous pouvez [passer des paramètres de rapport](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) en les ajoutant dans une URL de rapport. Ces paramètres d’URL ne sont pas préfixés parce qu’ils sont transmis directement dans le moteur de traitement de rapport.
-* Le filtrage de chaîne de requête ne fonctionne pas avec [Publier sur le web](service-publish-to-web.md).
+* Filtrage de chaîne de requête ne fonctionne pas avec [publier sur le web](service-publish-to-web.md) ou [exporter au format PDF](consumer/end-user-pdf.md).
 * [Incorporer avec le composant du rapport dans SharePoint Online](service-embed-report-spo.md) ne prend pas en charge les filtres d’URL.
 * Le type de données long est (2^53 - 1) en raison des limitations de JavaScript.
 * Les filtres d’URL de rapport sont limités à 10 expressions (10 filtres connectés par AND).

@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b2b928ea308f546c7cf023c6ef187aa7c516987c
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
-ms.translationtype: HT
+ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426628"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61143951"
 ---
-# <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Création et utilisation de flux de données dans Power BI (préversion)
+# <a name="creating-and-using-dataflows-in-power-bi"></a>Création et utilisation de flux de données dans Power BI
 
 Avec la préparation des données avancée disponible dans **Power BI**, vous pouvez créer une collection de données appelée flux de données, que vous pouvez ensuite utiliser pour vous connecter avec des données métier à partir de diverses sources, pour nettoyer les données, pour les transformer, puis pour les charger dans le stockage Power BI.
 
@@ -34,9 +34,6 @@ L’utilisation d’un flux de données comporte trois étapes principales :
 3. Créer le jeu de données à l’aide de votre flux de données, avec Power BI Desktop 
 
 Dans les sections suivantes, nous examinons chacune de ces étapes et nous familiarisons avec les outils fournis pour effectuer chaque étape. Nous pouvons commencer.
-
-> [!NOTE]
-> La fonctionnalité de flux de données étant en préversion, elle est susceptible de changer et d’être mise à jour avant la disponibilité générale.
 
 ## <a name="creating-a-dataflow"></a>Création d’un flux de données
 Pour créer un flux de données, lancez le service Power BI dans un navigateur, puis sélectionnez un **espace de travail de l’application** (les flux de données ne sont pas disponibles dans *my-workspace* dans le service Power BI) à partir du volet de navigation sur la gauche, comme le montre l’écran suivant. Vous pouvez également créer un espace de travail dans lequel créer votre nouveau flux de données. 
@@ -165,9 +162,9 @@ La connexion à des sources de données pour des flux de données peut poser des
 Cet article décrit comment vous pouvez créer votre propre **flux de données** et créer un rapport dans **Power BI Desktop** pour en tirer parti. Les articles suivants sont utiles pour accéder à des informations et à des scénarios supplémentaires lors de l’utilisation de flux de données :
 
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
-* [Utilisation d’entités calculées sur Power BI Premium (préversion)](service-dataflows-computed-entities-premium.md)
-* [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
+* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 * [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :

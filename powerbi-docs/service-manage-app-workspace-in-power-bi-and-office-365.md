@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: dda23e6b41613e76d5507d272e792f9f9130f982
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d900d8622f086ef28f39ee050e9e9f1639dfd53d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282238"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61231522"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Gérer l’espace de travail de votre application dans Power BI et Office 365
 En tant que créateur ou administrateur d’un [espace de travail d’application dans Power BI](service-create-distribute-apps.md) ou dans Office 365, vous gérez certains aspects de l’espace de travail dans Power BI. Vous en gérez d’autres dans Office 365. 
@@ -36,10 +36,10 @@ En tant que créateur ou administrateur d’un [espace de travail d’applicatio
 * afficher l’adresse de messagerie du groupe ;
 * supprimer le groupe.
 
-Pour être administrateur ou membre d’un espace de travail d’application, vous devez disposer d’une [licence Power BI Pro](service-features-license-type.md). Les utilisateurs de votre application doivent également posséder une licence Power BI Pro, sauf si votre espace de travail d’application se trouve dans une capacité Power BI Premium. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
+Pour être administrateur ou membre d’un espace de travail d’application, vous devez disposer d’une [licence Power BI Pro](service-features-license-type.md). Les utilisateurs de votre application doivent également posséder une licence Power BI Pro, sauf si votre espace de travail d’application se trouve dans une capacité Power BI Premium. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium-what-is.md).
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Modifier l’espace de travail de votre application dans Power BI
-1. Dans le service Power BI, sélectionnez la flèche située en regard de **Espaces de travail**, puis les points de suspension (**…**) en regard du nom de votre espace de travail, puis **Modifier l’espace de travail**. 
+1. Dans le service Power BI, sélectionnez la flèche située en regard de **Espaces de travail**, puis les points de suspension ( **…** ) en regard du nom de votre espace de travail, puis **Modifier l’espace de travail**. 
    
    ![Modifier les espaces de travail dans Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
@@ -53,14 +53,14 @@ Pour être administrateur ou membre d’un espace de travail d’application, vo
 3. Sélectionnez **Enregistrer** ou **Annuler**.
 
 ## <a name="edit-power-bi-app-workspace-properties-in-office-365"></a>Modifier les propriétés d’espace de travail d’application Power BI dans Office 365
-1. Dans le service Power BI, sélectionnez la flèche située en regard de **Espaces de travail**, puis les points de suspension (**…**) en regard du nom de votre espace de travail, puis **Membres**. 
+1. Dans le service Power BI, sélectionnez la flèche située en regard de **Espaces de travail**, puis les points de suspension ( **…** ) en regard du nom de votre espace de travail, puis **Membres**. 
    
    ![Modifier les espaces de travail dans Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
    Cela a pour effet d’ouvrir l’affichage de groupe Outlook pour Office 365 de l’espace de travail de votre application.
    
    Vous devrez peut-être vous connecter à votre compte d’entreprise.
-2. Cliquez sur les points de suspension (**…**) en regard du nom d’un membre pour faire de celui-ci un administrateur ou pour le supprimer de l’espace de travail d’application. 
+2. Cliquez sur les points de suspension ( **…** ) en regard du nom d’un membre pour faire de celui-ci un administrateur ou pour le supprimer de l’espace de travail d’application. 
    
    ![Modifier un groupe dans Office 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
 

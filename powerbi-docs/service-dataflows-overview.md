@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2019
+ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4c32f27a04b055eb67015d9c8308866b972c06a7
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
-ms.translationtype: HT
+ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226086"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136374"
 ---
-# <a name="self-service-data-prep-in-power-bi-preview"></a>Préparation des données en libre-service dans Power BI (préversion)
+# <a name="self-service-data-prep-in-power-bi"></a>Préparation des données en libre-service dans Power BI
 
 Au fur et à mesure que le volume de données continue d'augmenter, il devient de plus en plus difficile de transformer ces données en informations bien formées et exploitables. Nous voulons des données prêtes pour l'analyse, pour remplir des visuels, des rapports et des tableaux de bord, afin de pouvoir transformer rapidement nos volumes de données en informations exploitables. Avec **la préparation des données en libre-service** pour le Big Data dans Power BI, vous pouvez accéder à des insights de Power BI à partir de données en quelques clics seulement.
 
@@ -26,10 +26,6 @@ Au fur et à mesure que le volume de données continue d'augmenter, il devient d
 Power BI présente les **flux de données** pour aider les organisations à unifier des données provenant de sources disparates et à les préparer pour la modélisation. Les analystes peuvent facilement créer des flux de données à l’aide des outils familiers en libre-service. Les flux de données sont utilisés pour ingérer, transformer, intégrer et enrichir du Big Data en définissant des connexions de source de données, une logique ETL, des planifications d’actualisation et bien plus encore. De plus, le nouveau moteur de calcul basé sur des modèles qui fait partie des flux de données rend le processus de préparation des données plus facile à gérer, plus déterministe et moins lourd pour les analystes de données comme pour les créateurs de rapports. Tout comme les feuilles de calcul gèrent les nouveaux calculs pour toutes les formules concernées, les flux de données gèrent les modifications d'une entité ou d'un élément de données en votre nom, automatisant les mises à jour et allégeant des contrôles logiques auparavant fastidieux et chronophages, même pour une actualisation des données de base. Grâce aux flux de données, des tâches qui devaient auparavant être supervisées par des scientifiques des données (et prenaient plusieurs heures ou jours) peuvent désormais être traitées en quelques clics par des analystes et des créateurs de rapports. 
 
 Les données sont stockées en tant qu’entités dans le [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) dans Azure Data Lake Storage Gen2. Des flux de données sont créés et gérés dans des espaces de travail de l’application à l’aide du service Power BI.  
-
-> [!NOTE]
-> La fonctionnalité de flux de données étant en préversion, elle est susceptible de changer et d’être mise à jour avant la disponibilité générale.
-
  
 Les **flux de données** sont conçus pour utiliser le **Common Data Model**, une collection standardisée, modulaire et extensible de schémas de données publiés par Microsoft pour vous faciliter la création, l’utilisation et l’analyse des données. Avec ce modèle, vous pouvez accéder aux tableaux de bord Power BI à partir de sources de données sans pratiquement aucune friction.
 
@@ -112,10 +108,10 @@ En stockant des données d’entreprise au format standardisé du **Common Data 
 Cet article a fourni une vue d’ensemble de la préparation des données en libre-service pour le Big Data dans Power BI et les nombreuses manières dont vous pouvez l’utiliser. Les articles suivants définissent plus en détail les scénarios d’utilisation courants pour les flux de données. 
 
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [Utilisation d’entités calculées sur Power BI Premium (préversion)](service-dataflows-computed-entities-premium.md)
-* [Utilisation de flux de données avec des sources de données locales (préversion)](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
-* [Flux de données et intégration d’Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
+* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Intégration de flux de données et Azure Data Lake](service-dataflows-azure-data-lake-integration.md)
 
 Pour plus d’informations sur Power Query et l’actualisation planifiée, vous pouvez consulter ces articles :
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)

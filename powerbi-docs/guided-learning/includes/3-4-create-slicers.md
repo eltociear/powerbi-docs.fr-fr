@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e3f21c41bb0cf97db8b988a80d9792e1ba0b0b4f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396875"
+---
 Les segments sont un des types de visualisations les plus puissants, notamment dans le cadre d’un rapport de disponibilité. Un **segment** est un filtre visuel sur le canevas dans **Power BI Desktop**. Il permet à une personne qui consulte un rapport de segmenter les données en fonction d’une valeur particulière, comme une année ou un emplacement géographique.
 
 Pour ajouter un segment à votre rapport, sélectionnez **Segment** à partir du volet **Visualisations**.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e3dd7d9120b524dd09d6f0d60764385185210d83
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
-ms.translationtype: HT
+ms.openlocfilehash: 54c842a91684eec1cf60eca4442592500d1bcb11
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306294"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770414"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -144,6 +144,12 @@ Dans nos efforts constants pour améliorer l’accessibilité, les expériences 
 | Sélection multiple | Ctrl+Entrée ou Ctrl+Espace |
 | Cliquer avec le bouton droit | <ul><li>Clavier Windows : Clé de contexte Windows + F10.  La touche de contexte Windows se trouve entre la touche Alt de gauche et la touche Flèche Gauche</li><li>Autre clavier : Maj + F10</li></ul> |
 | Effacer la sélection | Ctrl+Maj+C |
+
+### <a name="table--matrix-navigation"></a>Table de & Navigation de matrice
+| Pour           | Appuyer sur                |
+| :------------------- | :------------------- |
+| Déplacer le focus haut / bas d’une cellule (parmi toutes les cellules de toutes les zones)  | Flèche haut clés / touche flèche bas |
+| Déplacer le focus de la gauche / droite d’une cellule (parmi toutes les cellules de toutes les zones)  | Touche de direction gauche / touche de direction droite |
 
 ### <a name="pane-navigation"></a>Navigation dans les volets
 | Pour           | Appuyer sur                |

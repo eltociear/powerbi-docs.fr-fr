@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4a9d873632853a69c835d7326653102107dd239f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263391"
+---
 Avec Power BI, vous pouvez ajouter vos propres suggestions de questions pour les autres utilisateurs qui utilisent la zone de requête en langage naturel d’un tableau de bord, souvent appelée zone **Q&R**. Ces suggestions de questions sont ce que les utilisateurs voient quand ils cliquent sur la zone d’entrée en haut d’un tableau de bord.
 
 ![](media/4-3a-suggested-questions/4-3a_1.png)

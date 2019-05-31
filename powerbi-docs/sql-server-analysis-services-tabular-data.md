@@ -1,48 +1,56 @@
 ---
 title: Données actives SQL Server Analysis Services dans Power BI
 description: Données actives SQL Server Analysis Services dans Power BI. Cela s’effectue grâce à une source de données configurée pour une passerelle d’entreprise.
-author: markingmyname
-manager: kfile
-ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
+author: Minewiskan
+ms.author: owend
+manager: kfile
+ms.reviewer: ''
+ms.custom: ''
 ms.date: 08/10/2017
-ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 2716696f4884b967735778db46a2300385a86988
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 51efec6c78dbb29b9c3dc760284c7bb3c8711bdc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215823"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769940"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Données actives SQL Server Analysis Services dans Power BI
+
 Dans Power BI, vous disposez de deux méthodes pour vous connecter à des données actives provenant d’un serveur SQL Server Analysis Services. Dans **Obtenir des données**, vous pouvez vous connecter à un serveur SQL Server Analysis Services ou vous connecter à un [fichier Power BI Desktop](service-desktop-files.md) ou à un [classeur Excel](service-excel-workbook-files.md) qui est déjà connecté à un serveur Analysis Services. Comme bonne pratique, Microsoft recommande vivement l’utilisation de Power BI Desktop en raison de la richesse de ses outils et de sa capacité à conserver localement une copie de sauvegarde du fichier Power BI Desktop.
 
- >[!IMPORTANT]
- >* Pour que vous puissiez vous connecter à un serveur Analysis Services en ligne, une passerelle de données locale doit être installée et configurée par un administrateur. Pour plus d’informations, consultez [Passerelle de données locale](service-gateway-onprem.md).
- >* Quand vous utilisez la passerelle, vos données restent locales.  Les rapports que vous créez à partir de ces données sont enregistrés dans le service Power BI. 
- >* [Les requêtes en langage naturel dans Q&R](service-q-and-a-direct-query.md) sont actuellement en version préliminaire pour les connexions actives Analysis Services.
+>[!IMPORTANT]
+> * Pour que vous puissiez vous connecter à un serveur Analysis Services en ligne, une passerelle de données locale doit être installée et configurée par un administrateur. Pour plus d’informations, consultez [Passerelle de données locale](service-gateway-onprem.md).
+> * Quand vous utilisez la passerelle, vos données restent locales.  Les rapports que vous créez à partir de ces données sont enregistrés dans le service Power BI. 
+> * [Les requêtes en langage naturel dans Q&R](service-q-and-a-direct-query.md) sont actuellement en version préliminaire pour les connexions actives Analysis Services.
 
 ## <a name="to-connect-to-a-model-from-get-data"></a>Pour se connecter à un modèle via Obtenir des données
+
 1. Dans **Mon espace de travail**, sélectionnez **Obtenir des données**. Vous pouvez également sélectionner un espace de travail de groupe, s’il y en a de disponible.
-   
-   ![](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
+
+   ![Se connecter pour le bouton get data](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
+
 2. Sélectionnez **Bases de données et plus**.
-   
-   ![](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
-3. Sélectionnez **SQL Server Analysis Services** > **Se connecter**. 
-   
-   ![](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
+
+   ![Se connecter pour obtenir des données 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
+
+3. Sélectionnez **SQL Server Analysis Services** > **Se connecter**.
+
+   ![Se connecter pour obtenir des données 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
+
 4. Sélectionnez un serveur. Si vous ne voyez aucun des serveurs répertoriés ici, cela signifie qu’une passerelle ou une source de données n’a pas été configurée, ou que votre compte n’est pas répertorié sous l’onglet **Utilisateurs** de la source de données, dans la passerelle. Vérifiez auprès de votre administrateur.
+
 5. Sélectionnez le modèle auquel vous voulez vous connecter. Il peut être tabulaire ou multidimensionnel.
 
 Une fois que vous êtes connectez au modèle, il apparaît dans votre site Power BI, dans **Mon espace de travail/Jeux de données**. Si vous êtes passé à un espace de travail de groupe, le jeu de données s’affiche dans le groupe.
 
-![](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
+![Se connecter à un jeu de données](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 
 ## <a name="dashboard-tiles"></a>Mise à jour des vignettes de tableau de bord
+
 Si vous épinglez des éléments visuels d’un rapport dans le tableau de bord, les vignettes épinglées sont automatiquement actualisées toutes les 10 minutes. Si les données de votre serveur local Analysis Services sont mises à jour, les vignettes sont mises à jour automatiquement après 10 minutes.
 
 ## <a name="common-issues"></a>Problèmes courants
@@ -50,7 +58,9 @@ Si vous épinglez des éléments visuels d’un rapport dans le tableau de bord,
 * Erreur due à l’impossibilité de charger le schéma du modèle : cette erreur se produit quand l’utilisateur qui se connecte à SSAS n’a pas accès à la base de données, au cube et au modèle SSAS.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Passerelle de données locale](service-gateway-onprem.md)  
-[Gérer les sources de données Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)  
+
+* [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)  
+* [Gérer les sources de données Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+* [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)  
+
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

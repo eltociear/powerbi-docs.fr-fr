@@ -1,20 +1,20 @@
 ---
 title: Actualisation planifiée de rapport Power BI dans Power BI Report Server
 description: Les rapports Power BI peuvent se connecter à différentes sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles.
-author: markingmyname
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
-ms.openlocfilehash: 81bd3dc166a92f7be6fe9081f4b88feedc7514d3
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
-ms.translationtype: HT
+ms.author: mblythe
+ms.openlocfilehash: ca2c37a93652bf0f622c7154fe8438faf4c70ac1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394753"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051018"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Actualisation planifiée de rapport Power BI dans Power BI Report Server
 L’actualisation planifiée des rapports Power BI permet de tenir à jour les données d’un rapport.
@@ -34,6 +34,7 @@ Plusieurs composants sont impliqués lors de l’utilisation de l’actualisatio
 * Le modèle de données est chargé dans une instance Analysis Services.
 * Pour certaines sources de données, le moteur mashup Power Query est utilisé pour se connecter aux sources de données et transformer les données. Une connexion à d’autres sources de données est possible directement à partir d’un service Analysis Services utilisé pour héberger les modèles de données pour Power BI Report Server.
 * Les nouvelles données sont chargées dans le modèle de données à l’intérieur d’Analysis Services.
+* Dans une configuration de montée en puissance, le modèle de données peut être répliqué entre les nœuds.
 * Analysis Services traite les données et exécute tous les calculs nécessaire.
 
 Power BI Report Server maintient une file d’attente des événements pour toutes les opérations planifiées. Il interroge la file d’attente à intervalles réguliers pour vérifier la présence de nouveaux événements. Par défaut, la file d’attente est analysée toutes les 10 secondes. Vous pouvez modifier l’intervalle en changeant les paramètres de configuration **PollingInterval**, **IsNotificationService** et **IsEventService** dans le fichier RSReportServer.config. **IsDataModelRefreshService** peut également être utilisé pour indiquer si un serveur de rapports traite les événements planifiés.

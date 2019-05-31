@@ -1,20 +1,20 @@
 ---
 title: Que peuvent faire les développeurs avec Power BI ?
 description: Power BI offre un vaste éventail d’options pour les développeurs. Cela va de l’incorporation dans des visuels personnalisés aux jeux de données en streaming.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: 63ee9ed96ed699d116b8d81b0cd612f76994a68d
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: d2e3ba69cde609638e54eaa1206714f0fb420d18
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61262666"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Que peuvent faire les développeurs avec Power BI ?
 
@@ -64,4 +64,4 @@ Pour savoir ce que vous pouvez faire avec les API Power BI, consultez [Comment l
 
 [Comment les développeurs peuvent-ils se servir de l’API Power BI ?](overview-of-power-bi-rest-api.md)
 
-[Centre de développement Power BI](https://powerbi.microsoft.com/developers/)
+[Centre développeurs Power BI](https://powerbi.microsoft.com/developers/)

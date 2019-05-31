@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e8b920763ea619fe74af2b71730164183f333a95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264695"
+---
 **Power BI Desktop** inclut l’**Éditeur de requête**, outil puissant grâce auquel vous pouvez mettre en forme et transformer des données en vue de les utiliser dans vos modèles et visualisations. Quand vous sélectionnez Modifier dans le navigateur, l’Éditeur de requête se lance et est rempli avec les tables ou autres entités que vous avez sélectionnées à partir de votre source de données.
 
 Vous pouvez également lancer l’**Éditeur de requête** directement à partir de **Power BI Desktop** à l’aide du bouton **Modifier les requêtes** du ruban **Accueil**.

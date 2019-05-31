@@ -1,66 +1,78 @@
 ---
-title: Bien démarrer avec Questions et réponses Power BI
-description: Bien démarrer avec les Questions et réponses dans le service Power BI avec l’exemple Analyse de la vente au détail
+title: Créer un élément visuel avec Power BI Q & r
+description: Apprenez à créer un élément visuel avec Q & r dans le service Power BI à l’aide de l’exemple analyse de vente au détail
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/21/2018
+ms.date: 05/13/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 87783b928fdec1cadf5318ae184858c37daa4acc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 580b387f8c763b0457bd32a71bfbccd90d4040a3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65625232"
 ---
-# <a name="get-started-with-power-bi-qa"></a>Bien démarrer avec Questions et réponses Power BI
+# <a name="create-a-visual-with-power-bi-qa"></a>Créer un élément visuel avec Power BI Q & r
 
-Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel.  Dans ce guide de démarrage rapide, nous allons étudier deux façons de créer la même visualisation : en la créant directement dans un rapport et en posant une question à l’aide de Questions et réponses. Nous allons utiliser le service Power BI, mais le processus est presque identique si vous utilisez Power BI Desktop.
+Il est parfois plus rapide d’obtenir des informations à partir de vos données en posant une question dans un langage naturel.  Dans cet article, nous allons examiner deux façons différentes de créer la même visualisation : tout d’abord, poser une question avec Q & r et en second lieu, de la création d’un rapport. Nous utilisons le service Power BI pour créer l’élément visuel dans le rapport, mais le processus est presque identique à l’aide de Power BI Desktop.
+
+![Power BI complété graphique](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna-create-visual.png)
 
 Pour effectuer la procédure, vous devez utiliser un rapport que vous pouvez modifier. Nous allons donc utiliser un des exemples disponibles avec Power BI.
 
+## <a name="create-a-visual-with-qa"></a>Créer un élément visuel avec Q & r
+
+Comment faire pour créer ce graphique en courbes avec Q & R ?
+
+1. Dans votre espace de travail Power BI, sélectionnez **Obtenir des données** \> **Exemples** \> **Retail Analysis Sample (Exemple Analyse de la vente au détail)**  > **Connexion**.
+
+1. Ouvrez le tableau de bord exemple analyse de la vente au détail et placez votre curseur dans la zone Q & R, **poser une question sur vos données**.
+
+    ![Placez le curseur dans la zone le Q & r](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna-cursor-in-qna-box.png)
+
+2. Dans la zone Q & R, tapez quelque chose comme cette question :
+   
+    **ventes de cette année et de ventes de l’année dernière par mois sous forme de graphique en aires**
+   
+    Quand vous tapez votre question, Q&R sélectionne la meilleure visualisation pour répondre à la question, et change la visualisation de manière dynamique à mesure que vous complétez la question. De plus, Q&R vous aide à formuler votre question en proposant des suggestions, des correspondances de saisie semi-automatique et des corrections orthographiques. Q & r recommande une modification du libellé small : « ventes de cette année et l’année dernière par *mois horaire* en tant que graphique en aires ».  
+
+    ![Q & r de formulation corrigé](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna-corrected-create-filled-chart.png)
+
+4. Sélectionnez la phrase pour accepter la suggestion. 
+   
+   Lorsque vous terminez de taper votre question, le résultat est le même graphique que vous voyez dans le tableau de bord.
+   
+   ![Q & A rempli le graphique en aires](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna-create-filled-chart.png)
+
+4. Pour épingler le graphique à votre tableau de bord, sélectionnez l’icône d’épingle. ![Icône Épingler](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png) dans le coin supérieur droit.
+
 ## <a name="create-a-visual-in-the-report-editor"></a>Créer un visuel dans l’éditeur de rapport
 
-1. Dans votre espace de travail Power BI, sélectionnez **Obtenir des données** \> **Exemples** \> **Retail Analysis Sample (Exemple Analyse de la vente au détail)** > **Connexion**.
+1. Revenez au tableau de bord Exemple Analyse de la vente au détail.
    
-2. Le tableau de bord comporte une vignette du graphique en aires « Last Year Sales and This Year Sales » (Ventes de l’année dernière et de cette année).  Sélectionnez cette vignette. Si cette vignette avait été créée avec Q&R, sa sélection entraînerait l’ouverture de Q&R. Cette vignette ayant été créée dans un rapport, le rapport s’ouvre et affiche la page qui contient cette visualisation.
+2. Le tableau de bord contient la vignette d’histogramme zone même pour « Last Year Sales et les ventes de cette année. »  Sélectionnez cette vignette. Ne sélectionnez pas la vignette que vous avez créé avec Q & r. Sélectionnant ouvre Q & r. La vignette d’histogramme zone d’origine a été créée dans un rapport, le rapport s’ouvre à la page qui contient cette visualisation.
 
     ![Tableau de bord Exemple Analyse de la vente au détail](media/power-bi-visualization-introduction-to-q-and-a/power-bi-dashboard.png)
 
 1. Ouvrez le rapport en Mode Edition en sélectionnant **Modifier le rapport**.  Si vous n’êtes pas propriétaire d’un rapport, vous ne pouvez pas ouvrir le rapport en mode Édition.
    
     ![Bouton Modifier le rapport](media/power-bi-visualization-introduction-to-q-and-a/power-bi-edit-report.png)
-4. Sélectionnez le graphique en aires et vérifiez les paramètres dans le volet **Champs** .  Pour générer ce graphique, le créateur du rapport a sélectionné ces trois valeurs (**Time > FiscalMonth**, **Sales > This Year Sales**, **Sales > Last Year Sales**), qu’il a placées dans **Axe** et **Valeurs**.
+4. Sélectionnez le graphique en aires et vérifiez les paramètres dans le volet **Champs** .  Le créateur du rapport générer ce graphique, en sélectionnant ces trois valeurs (**Last Year Sales** et **ventes de cette année > valeur** à partir de la **Sales** table, et  **FiscalMonth** à partir de la **temps** table) et les organiser dans le **axe** et **valeurs** wells.
    
     ![volet Visualisations](media/power-bi-visualization-introduction-to-q-and-a/gnatutorial_3-new.png)
 
-## <a name="create-the-same-visual-with-qa"></a>Créer le même visuel avec Q&R
-
-Comment faire pour générer le même graphique en courbes avec Q&R ?
-
-![Zone Poser une question](media/power-bi-visualization-introduction-to-q-and-a/power-bi-qna.png)
-
-1. Revenez au tableau de bord Exemple Analyse de la vente au détail.
-2. Tapez une question en langage naturel dans la zone de question. Par exemple :
-   
-   **quelles ont été les ventes mensuelles cette année et l’année dernière sous forme de graphique en aires**
-   
-   Quand vous tapez votre question, Q&R sélectionne la meilleure visualisation pour répondre à la question, et change la visualisation de manière dynamique à mesure que vous complétez la question. De plus, Q&R vous aide à formuler votre question en proposant des suggestions, des correspondances de saisie semi-automatique et des corrections orthographiques.
-   
-   Après avoir fini de taper votre question, vous obtenez exactement le même graphique que celui créé dans le rapport.  Mais ce mode de création a été beaucoup plus rapide !
-   
-   ![Exemple de question](media/power-bi-visualization-introduction-to-q-and-a/powerbi-qna-areachart.png)
-3. Comme pour l’utilisation des rapports, vous avez accès dans Q&R aux volets des visualisations, des filtres et des champs.  Ouvrez ces volets pour explorer et modifier votre élément visuel.
-4. Pour épingler le graphique à votre tableau de bord, sélectionnez l’icône d’épingle. ![Icône Épingler](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
+    Vous voyez qu’ils terminé avec le même élément visuel. Ce mode de création n’a pas été trop compliqué. Mais sa création avec Q & r a été plus facile !
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Q&R dans Power BI](consumer/end-user-q-and-a.md)
 
-[Optimiser vos données avec Q&R dans Power BI](service-prepare-data-for-q-and-a.md)
+- [Utiliser Q & r dans les tableaux de bord et rapports](power-bi-tutorial-q-and-a.md)  
+- [Questions et réponses pour les consommateurs](consumer/end-user-q-and-a.md)
+- [Optimiser vos données avec Q&R dans Power BI](service-prepare-data-for-q-and-a.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

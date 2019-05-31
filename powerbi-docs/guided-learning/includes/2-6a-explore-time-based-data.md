@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 48e553ebd81632cb0baa9a2c9c6a761860c3c9c6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255706"
+---
 Il est facile d’analyser les données temporelles avec Power BI. Les outils de modélisation dans Power BI Desktop incluent automatiquement les champs générés grâce auxquels vous pouvez explorer les années, trimestres, mois et jours d’un simple clic.  
 
 Quand vous créez une visualisation de la table dans votre rapport à l’aide d’un champ de date, Power BI Desktop inclut automatiquement les répartitions par période de temps. Par exemple, l’unique champ de date dans la table **Date** a été automatiquement fractionné en champs Année, Trimestre, Mois et Jour par Power BI, comme illustré dans l’image suivante.
@@ -23,7 +31,7 @@ Pour revenir à des dates spécifiques plutôt qu’à la hiérarchie de dates, 
 ![](media/2-6a-explore-time-based-data/2-6a_5.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-**Félicitations !** Vous avez terminé cette section du cours **Formation guidée** pour Power BI. La *modélisation* des données n’ayant plus de secret pour vous, vous pouvez vous pencher sur le contenu amusant de la section suivante : les **visualisations**.
+**Félicitations !** Vous avez terminé cette section du cours **Formation guidée** pour Power BI. Maintenant que vous savez sur *modélisation* données, vous êtes prêt à en savoir plus sur la partie amusante choses en attente dans la section suivante : **Visualisations**.
 
 Comme mentionné précédemment, la formation dispensée dans ce cours suit le flux de travail courant dans Power BI :
 

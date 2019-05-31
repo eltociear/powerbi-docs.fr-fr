@@ -11,11 +11,11 @@ ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8db6f106ecc2285cb66ff980bc72fa666456f81a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274786"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61225980"
 ---
 # <a name="edit-parameter-settings-in-the-power-bi-service"></a>Modifier les valeurs des paramètres dans le service Power BI
 Les créateurs de rapports ajoutent des paramètres de requête aux rapports dans Power BI Desktop. Ces paramètres leur permettent de rendre certaines parties des rapports dépendantes d’une ou plusieurs *valeurs* de paramètre. Par exemple, un créateur de rapports peut créer un paramètre qui limite les données à un seul pays/une seule région ou un paramètre qui définit les formats acceptables pour les champs de dates, d’heure, de texte ou autres.

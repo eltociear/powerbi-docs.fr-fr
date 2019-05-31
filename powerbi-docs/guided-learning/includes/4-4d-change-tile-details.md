@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8fc17759ea38cc96c69e7639ed25172e782a9d4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263384"
+---
 Une fois que vous avez créé un tableau de bord, vous pouvez modifier ses **vignettes* dans le service Power BI pour apporter des modifications à la mise en forme.
 
 Pour apporter des modifications sur une vignette, placez votre curseur sur la vignette, puis sélectionnez les points de suspension (...) pour afficher une collection d’icônes qui vous permettent d’apporter des modifications à la vignette.
