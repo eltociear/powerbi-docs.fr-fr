@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
+ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324833"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469795"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Gérer une passerelle locale Power BI
 
@@ -38,26 +38,26 @@ Power BI prend en charge de nombreuses sources de données locales, chacune ayan
 
     ![Gérer les passerelles](media/service-gateway-manage/manage-gateways.png)
 
-2. Sélectionnez une passerelle > **Ajouter une source de données**, ou accédez à Passerelles > **Ajouter une source de données**.
+1. Sélectionnez une passerelle > **Ajouter une source de données**, ou accédez à Passerelles > **Ajouter une source de données**.
 
     ![Ajouter une source de données](media/service-gateway-manage/add-data-source.png)
 
-3. Sélectionnez le **type de source de données**.
+1. Sélectionnez le **type de source de données**.
 
     ![Sélectionner SQL Server](media/service-gateway-manage/select-sql-server.png)
 
 
-4. Entrez les informations de la source de données. Pour cet exemple, indiquez le **serveur**, la **base de données** et d’autres informations.  
+1. Entrez les informations de la source de données. Pour cet exemple, indiquez le **serveur**, la **base de données** et d’autres informations.  
 
     ![Paramètres de la source de données](media/service-gateway-manage/data-source-settings.png)
 
-5. Pour SQL Server, vous choisissez la **méthode d’authentification** **Windows** ou **De base** (authentification SQL).  Si vous choisissez **De base**, entrez les informations d’identification de votre source de données.
+1. Pour SQL Server, vous choisissez la **méthode d’authentification** **Windows** ou **De base** (authentification SQL).  Si vous choisissez **De base**, entrez les informations d’identification de votre source de données.
 
-6. Sous **Paramètres avancés**, vous pouvez si vous le souhaitez configurer le [niveau de confidentialité](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) de votre source de données (ne s’applique pas à [DirectQuery](desktop-directquery-about.md)).
+1. Sous **Paramètres avancés**, vous pouvez éventuellement configurer le [niveau de confidentialité](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) de votre source de données (ne s’applique pas à [DirectQuery](desktop-directquery-about.md)).
 
     ![Paramètres avancés](media/service-gateway-manage/advanced-settings.png)
 
-7. Sélectionnez **Ajouter**. Le message *Connexion établie* apparaît si l’opération réussit.
+1. Sélectionnez **Ajouter**. Le message *Connexion établie* apparaît si l’opération réussit.
 
     ![Connexion établie](media/service-gateway-manage/connection-successful.png)
 
