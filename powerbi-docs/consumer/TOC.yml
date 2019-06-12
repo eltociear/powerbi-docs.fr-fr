@@ -1,209 +1,208 @@
-items:
 - name: Power BI pour les consommateurs
   href: power-bi-consumer-landing.md
 - name: Service Power BI pour les consommateurs
   items:
-  - name: Vue d’ensemble
-    items:
-    - name: Qu’est-ce qu’un consommateur Power BI ?
-      href: end-user-consumer.md
-    - name: Concepts de base et terminologie pour les consommateurs Power BI
-      href: end-user-basic-concepts.md
-  - name: Guides de démarrage rapide
-    items:
-    - name: Explorer Power BI
-      href: end-user-experience.md
-    - name: Qu’est-ce que Power BI me permet de faire ?
-      href: end-user-reading-view.md
-    - name: Se connecter pour la première fois
-      href: end-user-sign-in.md
-  - name: Tutoriels
-    items:
-    - name: Créer une alerte de tableau de bord
-      href: end-user-alerts.md
-  - name: Guides pratiques
-    items:
-    - name: Tableaux de bord
+    - name: Vue d’ensemble
       items:
-      - name: Tableaux de bord
-        href: end-user-dashboards.md
-      - name: Afficher un tableau de bord
-        href: end-user-dashboard-open.md
-      - name: Tableaux de bord par défaut
-        href: end-user-featured.md
-      - name: Mise à jour des vignettes de tableau de bord
-        href: end-user-tiles.md
-      - name: Ajouter un commentaire ou lancer une conversation
-        href: end-user-comment.md
-    - name: Rapports
+        - name: "Qu’est-ce qu’un consommateur Power BI\_?"
+          href: end-user-consumer.md
+        - name: Concepts de base et terminologie pour les consommateurs Power BI
+          href: end-user-basic-concepts.md
+    - name: Guides de démarrage rapide
       items:
-      - name: Rapports
-        href: end-user-reports.md
-      - name: Afficher un rapport
-        href: end-user-report-open.md
-      - name: Utiliser des filtres dans un rapport
-        href: end-user-report-filter.md
-      - name: Découvrir comment les visuels d’un rapport effectuent un filtrage croisé entre eux
-        href: end-user-interactions.md
-      - name: Exporter un rapport au format PDF
-        href: end-user-pdf.md
-    - name: Visualisations
+        - name: Explorer Power BI
+          href: end-user-experience.md
+        - name: "Qu’est-ce que Power\_BI me permet de faire\_?"
+          href: end-user-reading-view.md
+        - name: Se connecter pour la première fois
+          href: end-user-sign-in.md
+    - name: Tutoriels
       items:
-      - name: Que puis-je faire avec les visualisations ?
-        href: end-user-visualizations.md
-      - name: Types de visualisations
-        href: end-user-visual-type.md
-      - name: Afficher les données utilisées pour créer la visualisation
-        href: end-user-show-data.md
-      - name: Explorer une visualisation dans Power BI
-        href: end-user-drill.md
-      - name: Interagir avec des cartes ArcGIS
-        href: ../power-bi-visualizations-arcgis.md
-    - name: Tâches communes
+        - name: Créer une alerte de tableau de bord
+          href: end-user-alerts.md
+    - name: Guides pratiques
       items:
-      - name: Exporter des données vers Excel
-        href: end-user-export.md
-      - name: Rechercher le propriétaire du contenu et la date de la dernière actualisation
-        href: end-user-fresh.md
-      - name: Différentes façons de zoomer sur du contenu à l’aide des modes focus et plein écran
-        href: end-user-focus.md
-      - name: Tableaux de bord, rapports et applications favoris dans Power BI
-        href: end-user-favorite.md
-      - name: Imprimer un tableau de bord, imprimer une vignette de tableau de bord, imprimer une page de rapport
-        href: end-user-print.md
-      - name: Afficher le contenu associé
-        href: end-user-related.md
-      - name: Afficher le contenu récent
-        href: end-user-recent.md
-      - name: Afficher du contenu dans le conteneur Partagés avec moi
-        href: end-user-shared-with-me.md
-      - name: S’abonner à un rapport ou tableau de bord
-        href: end-user-subscribe.md
-      - name: Rechercher et trier du contenu dans Power BI
-        href: end-user-search-sort.md
-      - name: Afficher des insights automatiques pour les vignettes de tableau de bord
-        href: end-user-insights.md
-    - name: Obtenir les données
+        - name: Tableaux de bord
+          items:
+            - name: Tableaux de bord
+              href: end-user-dashboards.md
+            - name: Afficher un tableau de bord
+              href: end-user-dashboard-open.md
+            - name: Tableaux de bord par défaut
+              href: end-user-featured.md
+            - name: Mise à jour des vignettes de tableau de bord
+              href: end-user-tiles.md
+            - name: Ajouter un commentaire ou lancer une conversation
+              href: end-user-comment.md
+        - name: Rapports
+          items:
+            - name: Rapports
+              href: end-user-reports.md
+            - name: Afficher un rapport
+              href: end-user-report-open.md
+            - name: Modifier l’affichage d’un rapport
+              href: end-user-report-view.md
+            - name: Utiliser des filtres dans un rapport
+              href: end-user-report-filter.md
+            - name: Découvrir comment les visuels d’un rapport effectuent un filtrage croisé entre eux
+              href: end-user-interactions.md
+            - name: Exporter un rapport au format PDF
+              href: end-user-pdf.md
+            - name: Ajouter un signet à un rapport
+              href: end-user-bookmarks.md
+        - name: Visualisations
+          items:
+            - name: "Que puis-je faire avec les visualisations\_?"
+              href: end-user-visualizations.md
+            - name: Types de visualisations
+              href: end-user-visual-type.md
+            - name: Afficher les données utilisées pour créer la visualisation
+              href: end-user-show-data.md
+            - name: "Explorer une visualisation dans Power\_BI"
+              href: end-user-drill.md
+            - name: Interagir avec des cartes ArcGIS
+              href: ../power-bi-visualizations-arcgis.md
+        - name: Tâches communes
+          items:
+            - name: Exporter des données vers Excel
+              href: end-user-export.md
+            - name: Rechercher le propriétaire du contenu et la date de la dernière actualisation
+              href: end-user-fresh.md
+            - name: Différentes façons de zoomer sur du contenu à l’aide des modes focus et plein écran
+              href: end-user-focus.md
+            - name: 'Tableaux de bord, rapports et applications favoris dans Power BI'
+              href: end-user-favorite.md
+            - name: 'Imprimer un tableau de bord, imprimer une vignette de tableau de bord, imprimer une page de rapport'
+              href: end-user-print.md
+            - name: Afficher le contenu associé
+              href: end-user-related.md
+            - name: Afficher le contenu récent
+              href: end-user-recent.md
+            - name: Afficher du contenu dans le conteneur Partagés avec moi
+              href: end-user-shared-with-me.md
+            - name: S’abonner à un rapport ou tableau de bord
+              href: end-user-subscribe.md
+            - name: Rechercher et trier du contenu dans Power BI
+              href: end-user-search-sort.md
+            - name: Afficher des insights automatiques pour les vignettes de tableau de bord
+              href: end-user-insights.md
+            - name: Activer les fonctionnalités en préversion
+              href: end-user-preview-features.md
+        - name: Obtenir les données
+          items:
+            - name: "Applications dans Power\_BI"
+              href: end-user-apps.md
+            - name: Installer et utiliser des applications
+              href: end-user-app-view.md
+            - name: Se connecter aux services
+              href: end-user-connect-to-services.md
+        - name: Posez des questions sur vos données
+          items:
+            - name: "Q&R dans Power\_BI"
+              href: end-user-q-and-a.md
+            - name: "Conseils et astuces pour poser des questions avec Questions et réponses dans Power\_BI"
+              href: end-user-q-and-a-tips.md
+    - name: Ressources
       items:
-      - name: Applications dans Power BI
-        href: end-user-apps.md
-      - name: Installer et utiliser des applications
-        href: end-user-app-view.md
-      - name: Se connecter aux services
-        href: end-user-connect-to-services.md
-    - name: Posez des questions sur vos données
-      items:
-      - name: Q&R dans Power BI
-        href: end-user-q-and-a.md
-      - name: Conseils et astuces pour poser des questions avec Questions et réponses dans Power BI
-        href: end-user-q-and-a-tips.md
-  - name: Ressources
-    items:
-    - name: Glossaire et terminologie
-      href: end-user-glossary.md
-    - name: Navigateurs pris en charge
-      href: end-user-browsers.md
-    - name: Types d’informations rapides pris en charge par Power BI
-      href: end-user-insight-types.md
-- name: Applications mobiles Power BI
+        - name: Glossaire et terminologie
+          href: end-user-glossary.md
+        - name: Navigateurs pris en charge
+          href: end-user-browsers.md
+        - name: "Types d’informations rapides pris en charge par Power\_BI"
+          href: end-user-insight-types.md
+- name: "Applications mobiles Power\_BI"
   items:
-  - name: Vue d’ensemble
-    items:
-    - name: Présentation des applications mobiles
-      href: mobile/mobile-apps-for-mobile-devices.md
-  - name: Guides de démarrage rapide
-    items:
-    - name: Explorer des tableaux de bord et des rapports
-      href: mobile/mobile-apps-quickstart-view-dashboard-report.md
-  - name: Tutoriels
-    items:
-    - name: Poser des questions dans les applications mobiles iOS
-      href: mobile/tutorial-mobile-apps-ios-qna.md
-  - name: Concepts
-    items:
-    - name: Nouveautés des applications mobiles
-      href: mobile/mobile-whats-new-in-the-mobile-apps.md
-    - name: Obtenir des données réelles avec les applications mobiles
-      href: mobile/mobile-apps-data-in-real-world-context.md
-    - name: Voir vos données hors connexion dans les applications mobiles
-      href: mobile/mobile-apps-offline-data.md
-    - name: Application Power BI pour la réalité mixte (Preview)
-      href: mobile/mobile-mixed-reality-app.md
-  - name: Guides pratiques
-    items:
-    - name: Toutes les applications mobiles
+    - name: Vue d’ensemble
       items:
-      - name: Partager un tableau de bord à partir de l’application mobile Power BI
-        href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
-      - name: Interagir avec des vignettes dans les applications mobiles
-        href: mobile/mobile-tiles-in-the-mobile-apps.md
-      - name: Favoris dans les applications mobiles
-        href: mobile/mobile-apps-favorites.md
-      - name: Configurer l’interaction avec les rapports dans les applications mobiles (téléphone uniquement)
-        href: mobile/mobile-app-single-tap.md
-      - name: Définir des alertes de données dans les applications mobiles Power BI
-        href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
-      - name: Obtenir des notifications dans les applications mobiles Power BI
-        href: mobile/mobile-apps-notification-center.md
-      - name: Créer un lien ciblé qui pointe vers un emplacement spécifique
-        href: mobile/mobile-apps-deep-link-specific-location.md
-      - name: Filtrer un rapport en fonction de l’emplacement dans les applications mobiles Power BI
-        href: mobile/mobile-apps-geographic-filtering.md
-      - name: Tableaux de bord pour la version mobile de Power BI
-        href: mobile/mobile-apps-view-dashboard.md
-      - name: Rapports dans les applications mobiles
-        href: mobile/mobile-reports-in-the-mobile-apps.md
-      - name: Utilisation d’OAuth pour la connexion à Reporting Services
-        href: mobile/mobile-oauth-ssrs.md
-    - name: Appareils Android
+        - name: Présentation des applications mobiles
+          href: mobile/mobile-apps-for-mobile-devices.md
+    - name: Guides de démarrage rapide
       items:
-      - name: Prise en main de l’application Android
-        href: mobile/mobile-android-app-get-started.md
-      - name: Correction de l’erreur « Votre certificat SSL d’entreprise n’est pas approuvé »
-        href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
-      - name: Correction de l’erreur « Mise à jour requise de Android System Webview »
-        href: mobile/mobile-android-error-update-android-system-webview.md
-    - name: iOS
+        - name: Explorer des tableaux de bord et des rapports
+          href: mobile/mobile-apps-quickstart-view-dashboard-report.md
+    - name: Tutoriels
       items:
-      - name: Prise en main de l’application iOS
-        href: mobile/mobile-iphone-app-get-started.md
-      - name: Questions et réponses – Analyste virtuel dans des applications mobiles iOS
-        href: mobile/mobile-apps-ios-qna.md
-      - name: Application Power BI pour Apple Watch
-        href: mobile/mobile-apple-watch.md
-      - name: Scanner un code-barres avec l’application sur votre iPhone
-        href: mobile/mobile-apps-scan-barcode-iphone.md
-    - name: iOS et Android
+        - name: Poser des questions dans les applications mobiles iOS
+          href: mobile/tutorial-mobile-apps-ios-qna.md
+    - name: Concepts
       items:
-      - name: Afficher des rapports locaux dans les applications mobiles
-        href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-      - name: Afficher les rapports optimisés pour votre téléphone
-        href: mobile/mobile-apps-view-phone-report.md
-      - name: Accéder au contenu depuis une organisation externe
-        href: mobile/mobile-apps-b2b.md
-      - name: Scanner un code QR Power BI à partir de votre téléphone
-        href: mobile/mobile-apps-qr-code.md
-      - name: Annoter et partager dans les applications mobiles
-        href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-    - name: Application Power BI pour les appareils Windows 10
+        - name: Nouveautés des applications mobiles
+          href: mobile/mobile-whats-new-in-the-mobile-apps.md
+        - name: Obtenir des données réelles avec les applications mobiles
+          href: mobile/mobile-apps-data-in-real-world-context.md
+        - name: Voir vos données hors connexion dans les applications mobiles
+          href: mobile/mobile-apps-offline-data.md
+        - name: Application Power BI pour la réalité mixte (Preview)
+          href: mobile/mobile-mixed-reality-app.md
+    - name: Guides pratiques
       items:
-      - name: Démarrer avec l’application Windows 10
-        href: mobile/mobile-windows-10-phone-app-get-started.md
-      - name: Épingler un tableau de bord à l’écran d’accueil
-        href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-      - name: Afficher les rapports mobiles et les indicateurs de performance clés Reporting Services
-        href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-      - name: Afficher Power BI sur Surface Hub
-        href: mobile/mobile-windows-10-app-presentation-mode.md
-      - name: Authentification unique dans l’application Windows
-        href: mobile/mobile-windows-10-app-single-sign-on-sso.md
-  - name: Ressources
-    items:
-    - name: Langues prises en charge dans les applications mobiles
-      href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: 6f9f080de3711a6a1a28f49da0298a67932d87e5
-ms.sourcegitcommit: c0add3d749f7e714e23824a742e105e694e4c129
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59430279"
+        - name: Toutes les applications mobiles
+          items:
+            - name: "Tableaux de bord pour la version mobile de Power\_BI"
+              href: mobile/mobile-apps-view-dashboard.md
+            - name: Rapports dans les applications mobiles
+              href: mobile/mobile-reports-in-the-mobile-apps.md
+            - name: Interagir avec des vignettes dans les applications mobiles
+              href: mobile/mobile-tiles-in-the-mobile-apps.md
+            - name: Partager un tableau de bord à partir de l’application mobile Power BI
+              href: mobile/mobile-share-dashboard-from-the-mobile-apps.md
+            - name: Favoris dans les applications mobiles
+              href: mobile/mobile-apps-favorites.md
+            - name: Configurer l’interaction avec les rapports dans les applications mobiles (téléphone uniquement)
+              href: mobile/mobile-app-single-tap.md
+            - name: "Définir des alertes de données dans les applications mobiles Power\_BI"
+              href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
+            - name: "Obtenir des notifications dans les applications mobiles Power\_BI"
+              href: mobile/mobile-apps-notification-center.md
+            - name: Créer un lien ciblé qui pointe vers un emplacement spécifique
+              href: mobile/mobile-apps-deep-link-specific-location.md
+            - name: "Filtrer un rapport en fonction de l’emplacement dans les applications mobiles Power\_BI"
+              href: mobile/mobile-apps-geographic-filtering.md
+            - name: Utilisation d’OAuth pour la connexion à Reporting Services
+              href: mobile/mobile-oauth-ssrs.md
+        - name: iOS et Android
+          items:
+            - name: Afficher les rapports optimisés pour votre téléphone
+              href: mobile/mobile-apps-view-phone-report.md
+            - name: Afficher des rapports locaux dans les applications mobiles
+              href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
+            - name: Accéder au contenu depuis une organisation externe (B2B)
+              href: mobile/mobile-apps-b2b.md
+            - name: "Scanner un code QR Power\_BI à partir de votre téléphone"
+              href: mobile/mobile-apps-qr-code.md
+            - name: Annoter et partager dans les applications mobiles
+              href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
+        - name: iOS
+          items:
+            - name: Prise en main de l’application iOS
+              href: mobile/mobile-iphone-app-get-started.md
+            - name: Questions et réponses – Analyste virtuel dans des applications mobiles iOS
+              href: mobile/mobile-apps-ios-qna.md
+            - name: "Application Power\_BI pour Apple Watch"
+              href: mobile/mobile-apple-watch.md
+            - name: Scanner un code-barres avec l’application sur votre iPhone
+              href: mobile/mobile-apps-scan-barcode-iphone.md
+        - name: Appareils Android
+          items:
+            - name: Prise en main de l’application Android
+              href: mobile/mobile-android-app-get-started.md
+            - name: Correction de l’erreur « Votre certificat SSL d’entreprise n’est pas approuvé »
+              href: mobile/mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+            - name: Correction de l’erreur « Mise à jour requise de Android System Webview »
+              href: mobile/mobile-android-error-update-android-system-webview.md
+        - name: "Application Power\_BI pour les appareils Windows\_10"
+          items:
+            - name: "Démarrer avec l’application Windows\_10"
+              href: mobile/mobile-windows-10-phone-app-get-started.md
+            - name: Épingler un tableau de bord à l’écran d’accueil
+              href: mobile/mobile-pin-dashboard-start-screen-windows-10-phone-app.md
+            - name: Afficher les rapports mobiles et les indicateurs de performance clés Reporting Services
+              href: mobile/mobile-app-windows-10-ssrs-kpis-mobile-reports.md
+            - name: Afficher Power BI sur Surface Hub
+              href: mobile/mobile-windows-10-app-presentation-mode.md
+            - name: Authentification unique dans l’application Windows
+              href: mobile/mobile-windows-10-app-single-sign-on-sso.md
+    - name: Ressources
+      items:
+        - name: Langues prises en charge dans les applications mobiles
+          href: mobile/mobile-apps-supported-languages.md
