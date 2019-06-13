@@ -257,8 +257,6 @@
               href: desktop-add-column-from-example.md
             - name: Ajouter une colonne personnalisée
               href: desktop-add-custom-column.md
-            - name: "Créer des éléments visuels réactifs dans Power\_BI"
-              href: visuals/desktop-create-responsive-visuals.md
             - name: Utilisation des étiquettes de hiérarchie incluses dans Power BI Desktop
               href: desktop-inline-hierarchy-labels.md
             - name: Utiliser un sélecteur de plages numériques
@@ -681,32 +679,14 @@
               href: service-dataflows-configure-workspace-storage-settings.md
             - name: Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)
               href: service-dataflows-add-cdm-folder.md
-            - name: Intégrer le Machine Learning à Power BI (préversion)
+            - name: Intégrer Machine Learning à Power BI
               href: service-machine-learning-integration.md
-            - name: Utiliser Cognitive Services dans Power BI (préversion)
+            - name: Utiliser Cognitive Services dans Power BI
               href: service-cognitive-services.md
             - name: Machine Learning automatisé dans Power BI (préversion)
               href: service-machine-learning-automated.md
         - name: Rapports paginés dans Power BI
           items:
-            - name: "Que sont les rapports paginés\_? (Préversion)"
-              href: paginated-reports-report-builder-power-bi.md
-            - name: Forum aux questions sur les rapports paginés (préversion)
-              href: paginated-reports-faq.md
-            - name: Créer un rapport paginé et le charger (préversion)
-              href: paginated-reports-quickstart-aw.md
-            - name: Naviguer dans le Mode Création de rapport (préversion)
-              href: paginated-reports-report-design-view.md
-            - name: Entrer des données directement dans un rapport paginé (préversion)
-              href: paginated-reports-enter-data.md
-            - name: Créer une source de données incorporée (préversion)
-              href: paginated-reports-embedded-data-source.md
-            - name: Créer un jeu de données incorporé (préversion)
-              href: paginated-reports-create-embedded-dataset.md
-            - name: Créer des paramètres (préversion)
-              href: paginated-reports-parameters.md
-            - name: Publier un rapport paginé (préversion)
-              href: paginated-reports-save-to-power-bi-service.md
             - name: Afficher un rapport paginé (préversion)
               href: paginated-reports-view-power-bi-service.md
             - name: Interagir avec des paramètres (préversion)
@@ -745,8 +725,6 @@
               href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Résolution des problèmes liés aux valeurs imbriquées retournées sous forme de texte
-              href: service-troubleshooting-nested-values.md
             - name: Dépannage d’une actualisation planifiée pour Azure SQL Database
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: "Erreur\_: Impossible de trouver des données dans votre classeur Excel"
@@ -927,10 +905,58 @@
           href: service-premium-incremental-refresh.md
         - name: Configurer des zones géographiques multiples
           href: service-admin-premium-multi-geo.md
+        - name: Apporter vos propres clés de chiffrement
+          href: service-encryption-byok.md
         - name: Redémarrer une capacité Premium
           href: service-admin-premium-restart.md
         - name: Se connecter à des jeux de données avec des applications et des outils clients
           href: service-premium-connect-tools.md
+- name: Générateur de rapports paginés Power BI
+  items:
+    - name: Vue d’ensemble
+      items:
+        - name: "Que sont les rapports paginés\_?"
+          href: paginated-reports-report-builder-power-bi.md
+        - name: Générateur de rapports dans Power BI
+          href: report-builder-power-bi.md
+    - name: Tutoriels
+      items:
+        - name: Créer un rapport paginé et charger Interact
+          href: paginated-reports-quickstart-aw.md
+    - name: Concepts
+      items:
+        - name: Naviguer dans le Mode Création de rapport
+          href: paginated-reports-report-design-view.md
+        - name: Planification d’un rapport
+          href: report-builder-planning-report.md
+        - name: Données du Générateur de rapports
+          href: report-builder-data.md
+        - name: Conseils de conception
+          href: report-builder-design-tips.md
+        - name: 'Tableaux, matrices, listes'
+          href: report-builder-tables-matrices-lists.md
+        - name: Paramètres
+          href: report-builder-parameters.md
+        - name: Expressions
+          href: report-builder-expressions.md
+        - name: Exemples d’expressions
+          href: report-builder-expression-examples.md
+        - name: Aperçu des rapports
+          href: report-builder-previewing-reports.md
+        - name: Forum aux questions sur les rapports paginés
+          href: paginated-reports-faq.md
+    - name: Guides pratiques
+      items:
+        - name: Entrer des données directement dans un rapport paginé
+          href: paginated-reports-enter-data.md
+        - name: Créer une source de données incorporée
+          href: paginated-reports-embedded-data-source.md
+        - name: Créer un jeu de données incorporé
+          href: paginated-reports-create-embedded-dataset.md
+        - name: Créer des paramètres
+          href: paginated-reports-parameters.md
+        - name: Publier un rapport paginé
+          href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI pour les développeurs
   items:
     - name: "Ce que les développeurs peuvent faire avec Power\_BI"
