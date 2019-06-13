@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 6c09392566805f2857c50784f16c0e3f9d4b5697
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 86fab3a760eb8bb12ed1955fd5bf357790090e0e
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61232397"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448333"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Intégration d’Azure Machine Learning dans Power BI (préversion)
 
@@ -68,7 +68,14 @@ Cet article décrit pas à pas comment autoriser un utilisateur de Power BI à a
 
 Les scientifiques des données utilisent principalement Python pour développer, voire déployer, leurs modèles Machine Learning pour le service Machine Learning.  Contrairement à Machine Learning Studio, qui permet d’automatiser la tâche de création d’un fichier de schéma pour le modèle, dans le cas du service Machine Learning, le scientifique des données doit explicitement créer le fichier de schéma à l’aide de Python.
 
-Ce fichier de schéma doit être inclus dans le
+Ce fichier de schéma doit être inclus dans le service web déployé pour les modèles du service Machine Learning. Pour générer automatiquement le schéma pour le service web, vous devez fournir un exemple d’entrée/de sortie dans le script d’entrée pour le modèle déployé. Consultez la sous-section de la documentation du service Azure Machine Learning relative à la génération automatique (facultative) d’un schéma Swagger dans les modèles de déploiement. Le lien inclut l’exemple de script d’entrée avec les instructions pour la génération du schéma. 
+
+Plus précisément, les fonctions *@input_schema* et *@output_schema* dans le script d’entrée font référence aux formats des échantillons d’entrée et de sortie dans les variables *input_sample* et *output_sample*. Par ailleurs, elles utilisent ces échantillons pour générer une spécification OpenAPI (Swagger) pour le service web pendant le déploiement.
+
+Ces instructions relatives à la génération du schéma en mettant à jour le script d’entrée doivent également être appliquées aux modèles créés à l’aide d’expériences de Machine Learning automatisé avec le SDK Azure Machine Learning.
+
+> [!NOTE]
+> Les modèles créés à l’aide de l’interface visuelle du service Azure Machine Learning Services (préversion) ne prennent actuellement pas en charge la génération de schéma, mais ils les prendront en charge dans des versions ultérieures. 
 
 ## <a name="invoking-the-azure-ml-model-in-power-bi"></a>Appel du modèle Azure ML dans Power BI
 
@@ -106,9 +113,9 @@ Cet article donne une vue d’ensemble de l’intégration de Machine Learning d
 
 Pour plus d’informations sur les flux de données, lisez les articles suivants :
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Utilisation d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 * [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 
 

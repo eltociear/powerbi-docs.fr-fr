@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5162edf7035918289d0f45ec71a0e908fc444cbf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 73a469c1625d24c20deaa01237c10dd6459db65c
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61181778"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720517"
 ---
 # <a name="connect-to-alpine-metrics-sales-predictions-with-power-bi"></a>Se connecter à Alpine Metrics Sales Predictions avec Power BI
 Alpine Metrics offre une optimisation des processus de ventes prévisionnelles dans le cloud et à la demande pour les ventes des petites et grandes organisations. Le pack de contenu Alpine Metrics Sales Predictions pour Power BI contient des métriques, telles que les ventes et les risques potentiels et prévisionnels, qui vous permettent de mieux prévoir l’avenir de votre entreprise. 
@@ -68,5 +68,5 @@ Un compte Alpine Metrics avec des autorisations sur les tables ci-dessus est né
 ## <a name="next-steps"></a>Étapes suivantes
 [Qu’est-ce que Power BI ?](power-bi-overview.md)
 
-[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
+[Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
 

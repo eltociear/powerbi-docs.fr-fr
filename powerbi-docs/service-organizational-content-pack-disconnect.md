@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d4c9e6a925a783d810bc4d097ec18806c3d33d99
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 62bec222a3f948612db63c386e10c0afe9762bb4
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61226551"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721429"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Supprimer votre connexion à un pack de contenu d’organisation Power BI
 
@@ -36,6 +36,6 @@ La suppression du jeu de données supprime également tous les rapports et table
 ## <a name="next-steps"></a>Étapes suivantes
 * [Introduction aux packs de contenu d’organisation](service-organizational-content-pack-introduction.md) 
 * [Créer et distribuer une application dans Power BI](service-create-distribute-apps.md) 
-* [Power BI - Concepts de base](consumer/end-user-basic-concepts.md)  
+* [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)  
 * D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

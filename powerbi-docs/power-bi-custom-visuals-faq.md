@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0fcb3451249c121281790dca77bd6008c39deaef
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60977199"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66497927"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Questions fréquentes sur les visuels personnalisés Power BI
 
@@ -84,7 +84,7 @@ Pour certifier un visuel personnalisé, il doit être sur nos serveurs. Nous ne 
  
 ### <a name="how-long-does-it-take-to-certify-my-visual"></a>Combien de temps faut-il pour certifier un visuel ?
 
-Une version mise à jour peut prendre jusqu’à 2 semaines. Une nouvelle soumission (première certification) peut nécessiter jusqu’à 3 semaines. 
+Une version mise à jour peut prendre jusqu’à 3 semaines. Une nouvelle soumission (première certification) peut nécessiter jusqu’à 4 semaines. 
 
 ### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Le processus de certification garantit-il l’absence de fuites de données ?
 

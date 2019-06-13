@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: b0a6b3027e548becf56cc5f0d7036e35c9316cd4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a2db3f8c88231663ecb115c4609d3af177d96292
+ms.sourcegitcommit: 9da792d470dfe43dc6e15ddef5d471f3f6c50970
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187713"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66453778"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -78,7 +78,7 @@ Regardez les sessions enregistrées à tout moment
 <br>par Wim Coorevits et Enrique Plaza Garcia
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
-**Meilleures pratiques pour gérer Power BI Embedded Analytique pour les déploiements de l’architecture mutualisées**
+**Bonnes pratiques pour la gestion de l’analytique Power BI Embedded pour les déploiements multilocataires**
 <br>par Nimrod Shalit
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html?LCID=EN-US)
 
@@ -118,10 +118,11 @@ Regardez les sessions enregistrées à tout moment
 <br>par Reid Havens
 <br>[Regarder maintenant](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
-### <a name="partners"></a>Partenaires ###
+### <a name="partner-solutions-series"></a>Série de solutions partenaires ###
+[Visionner cette série](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
 
 **Arriver à une situation où les fabricants et les revendeurs de biens de consommation trouvent leur compte**
-<br>par Liz McCreesh de Thorogood
+<br>par Liz McCreesh de Thorogood
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 **Transformer les données client en ventes au détail réussies avec Power Bi**

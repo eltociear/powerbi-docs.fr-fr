@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ab0cbc7b4c882f08d20fdd00516fafcce96cb773
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c1b6f7434724540a9ad5b579030c3ed54b32abed
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61144621"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720575"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Modifier ou supprimer une vignette de tableau de bord
 
@@ -146,7 +146,7 @@ Par défaut, si vous sélectionnez une vignette, vous êtes normalement dirigé 
 
 [Tableaux de bord dans Power BI](consumer/end-user-dashboards.md)
 
-[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
+[Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

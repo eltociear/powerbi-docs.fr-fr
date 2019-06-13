@@ -11,34 +11,34 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c8789d47ed1b67f9fd6808865514120457a29dfe
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ec70f4c9d6f3e6f51210a32f7efac7f160f462cb
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051260"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66498021"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
 Avec le nouveau composant WebPart Rapport pour SharePoint Online, vous pouvez incorporer facilement des rapports Power BI interactifs dans les pages SharePoint Online.
 
-Lorsque vous utilisez la nouvelle **incorporer dans SharePoint Online** option, les rapports incorporés sont entièrement sécurisées, afin de créer facilement des portails internes sécurisés.
+Quand vous utilisez la nouvelle option **Incorporer dans SharePoint Online**, les rapports incorporés sont entièrement sécurisés. Vous pouvez ainsi créer facilement des portails internes sécurisés.
 
 ## <a name="requirements"></a>Configuration requise
 
-Pour **incorporer dans SharePoint Online** rapports fonctionnent, les éléments suivants sont requis :
+Pour que les rapports **Incorporer dans SharePoint Online** fonctionnent, vous devez respecter les exigences suivantes :
 
-* Une licence Power BI Pro ou un [capacité Power BI Premium (EM ou référence (SKU) P)](service-premium-what-is.md) avec une licence Power BI.
+* Une licence Power BI Pro ou une [capacité Power BI Premium (référence SKU EM ou P)](service-premium-what-is.md) avec une licence Power BI.
 * Le composant WebPart Power BI pour SharePoint Online nécessite des [pages modernes](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## <a name="embed-your-report"></a>Incorporer votre rapport
-Pour incorporer votre rapport dans SharePoint Online, vous devez obtenir l’URL de rapport et l’utiliser avec nouvelle partie web de Power BI SharePoint Online.
+Pour incorporer votre rapport dans SharePoint Online, vous devez obtenir l’URL de rapport et l’utiliser avec le composant WebPart Power BI de SharePoint Online.
 
 ### <a name="get-a-report-url"></a>Obtenir une URL de rapport
 
 1. Dans Power BI, affichez le rapport.
 
-2. Sélectionnez le **fichier** menu déroulant, puis sélectionnez **incorporer dans SharePoint Online**.
+2. Sélectionnez le menu déroulant **Fichier**, puis **Incorporer dans SharePoint Online**.
 
     ![menu Fichier](media/service-embed-report-spo/powerbi-file-menu.png)
 
@@ -48,15 +48,15 @@ Pour incorporer votre rapport dans SharePoint Online, vous devez obtenir l’URL
 
 ### <a name="add-the-power-bi-report-to-a-sharepoint-online-page"></a>Ajouter le rapport Power BI à une page SharePoint Online
 
-1. Ouvrez la page cible dans SharePoint Online et sélectionnez **modifier**.
+1. Ouvrez la page cible dans SharePoint Online et sélectionnez **Modifier**.
 
     ![Page de modifications SP](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
-    Ou, dans Sharepoint Online, sélectionnez **+ nouveau** pour créer une nouvelle page de site moderne.
+    Vous pouvez aussi dans SharePoint Online sélectionner **+ Nouveau** pour créer une page de site moderne.
 
     ![Nouvelle page SP](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
-2. Sélectionnez le **+** liste déroulante, puis sélectionnez le **Power BI**.
+2. Sélectionnez le menu déroulant **+** , puis le composant WebPart **Power BI**.
 
     ![Nouvelle partie web SP](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
 
@@ -64,7 +64,7 @@ Pour incorporer votre rapport dans SharePoint Online, vous devez obtenir l’URL
 
     ![Nouveau rapport SP](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
 
-4. Collez l’URL de rapport précédemment copiés dans le **lien du rapport Power BI** volet. Le rapport se charge automatiquement.
+4. Collez l’URL de rapport précédemment copiée dans le volet **Lien du rapport Power BI**. Le rapport se charge automatiquement.
 
     ![Propriétés de la nouvelle partie web SP](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -74,30 +74,30 @@ Pour incorporer votre rapport dans SharePoint Online, vous devez obtenir l’URL
 
 ## <a name="grant-access-to-reports"></a>Accorder l’accès aux rapports
 
-Incorporer un rapport dans SharePoint Online n’automatiquement autoriser les utilisateurs à afficher le rapport, vous devez définir des autorisations d’affichage dans Power BI.
+L’incorporation d’un rapport dans SharePoint Online n’accorde pas automatiquement aux utilisateurs l’autorisation d’afficher le rapport : vous devez définir des autorisations d’affichage dans Power BI.
 
 > [!IMPORTANT]
 > Veillez à passer en revue les utilisateurs qui peuvent afficher le rapport dans le service Power BI et à accorder l’accès à ceux qui ne sont pas répertoriés.
 
-Il existe deux moyens de fournir l’accès aux rapports dans Power BI. Le premier, si vous utilisez un groupe Office 365 pour développer votre site d’équipe SharePoint Online, consiste à répertorier l’utilisateur en tant que membre de la **espace de travail application au sein du service Power BI** et **page SharePoint**. Pour plus d’informations sur la gestion d’un espace de travail d’application, consultez [Gérer l’espace de travail de votre application](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Il existe deux moyens de fournir l’accès aux rapports dans Power BI. Le premier, si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, consiste à lister l’utilisateur comme membre de l’**espace de travail d’application dans le service Power BI** et la **page SharePoint**. Pour plus d’informations sur la gestion d’un espace de travail d’application, consultez [Gérer l’espace de travail de votre application](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-La deuxième consiste à incorporer un rapport dans une application et le partager directement avec les utilisateurs :  
+Le deuxième consiste à incorporer un rapport dans une application et à le partager directement avec les utilisateurs :  
 
-1. L’auteur (doit être un utilisateur Pro) crée un rapport dans un espace de travail d’application. Pour partager avec **utilisateurs gratuits de Power BI**, l’espace de travail doit être définie comme un **espace de travail Premium**.
+1. L’auteur, qui doit être un utilisateur Pro, crée un rapport dans un espace de travail d’application. Pour pouvoir être partagé avec des *utilisateurs de la version gratuite de Power BI*, l’espace de travail d’application doit être défini comme *espace de travail Premium*.
 
-2. L’auteur publie l’application et l’installe. Il faut que l’auteur, veillez à installer l’application pour accéder à l’URL de rapport qui sert à incorporer dans SharePoint Online.
+2. L’auteur publie l’application, puis l’installe. L’auteur doit installer l’application de façon à pouvoir accéder à l’URL de rapport qui est utilisée pour l’incorporation dans SharePoint Online.
 
-3. Maintenant, tous les utilisateurs finaux doivent aussi installer l’application. Vous pouvez également utiliser le **installer l’application automatiquement** fonctionnalité, vous pouvez activer dans le [portail d’administration Power BI](service-admin-portal.md), pour que l’application préinstallée, pour les utilisateurs finaux.
+3. Maintenant, tous les utilisateurs finaux doivent aussi installer l’application. Vous pouvez aussi utiliser la fonctionnalité **Installer l’application automatiquement**, qui peut être activée dans le [portail d’administration Power BI](service-admin-portal.md) afin que l’application soit préinstallée pour les utilisateurs finaux.
 
    ![Installer l’application automatiquement](media/service-embed-report-spo/install-app-automatically.png)
 
 4. L’auteur ouvre l’application et accède au rapport.
 
-5. L’auteur copie l’URL de rapport incorporé à partir de l’état de l’application est installée. **N’utilisez pas l’URL de rapport d’origine à partir de l’espace de travail d’application.**
+5. L’auteur copie l’URL du rapport incorporé à partir du rapport installé par l’application. N’utilisez pas l’URL du rapport d’origine figurant dans l’espace de travail d’application.
 
 6. Créez un nouveau site d’équipe dans SharePoint Online.
 
-7. Ajoutez l’URL de rapport précédemment copiés au composant WebPart Power BI.
+7. Ajoutez l’URL de rapport précédemment copiée au composant WebPart Power BI.
 
 8. Ajoutez tous les utilisateurs finaux et/ou groupes qui auront besoin des données dans la page SharePoint Online et dans l’application Power BI que vous avez créée.
 
@@ -108,10 +108,10 @@ Les utilisateurs finaux peuvent maintenant accéder au site d’équipe dans Sha
 
 ## <a name="multi-factor-authentication"></a>Multi-Factor Authentication
 
-Si votre environnement Power BI nécessite une connexion via l’authentification multifacteur, vous pouvez être invité à vous connecter avec un dispositif de sécurité pour vérifier votre identité. Cela se produit si vous l’avez fait pas vous connecter à SharePoint Online à l’aide de l’authentification multifacteur, mais votre environnement Power BI requiert un dispositif de sécurité pour valider un compte.
+Si votre environnement Power BI nécessite une connexion via l’authentification multifacteur, vous pouvez être invité à vous connecter avec un dispositif de sécurité pour vérifier votre identité. Ce cas de figure se produit si vous ne vous êtes pas connecté à SharePoint Online avec l’authentification multifacteur, mais que votre environnement Power BI nécessite un dispositif de sécurité pour valider un compte.
 
 > [!NOTE]
-> Azure Active Directory 2.0 ne prend pas en charge l’authentification multifacteur, les utilisateurs verront un message d’erreur. Si l’utilisateur se reconnecte à SharePoint Online en utilisant son dispositif de sécurité, il peut visualiser le rapport.
+> Power BI ne prend pas encore en charge l’authentification multifacteur avec Azure Active Directory 2.0 : les utilisateurs verront un message d’erreur. Si l’utilisateur se reconnecte à SharePoint Online en utilisant son dispositif de sécurité, il peut visualiser le rapport.
 
 ## <a name="web-part-settings"></a>Paramètres des composants WebPart
 
@@ -121,23 +121,23 @@ Voici les paramètres que vous pouvez ajuster pour le composant WebPart Power BI
 
 | Propriété | Description |
 | --- | --- |
-| Nom de la page |Définit la page de valeur par défaut du composant. Sélectionnez une valeur dans la liste déroulante. Si aucune page ne s’affiche, votre rapport ne contient qu’une seule page ou l’URL que vous avez collée contient un nom de page. Supprimez la section du rapport de l’URL pour sélectionner une page spécifique. |
-| Display |Ajuste la façon dont le rapport est adaptée à la page SharePoint Online. |
+| Nom de la page |Définit la page par défaut du composant WebPart. Sélectionnez une valeur dans la liste déroulante. Si aucune page ne s’affiche, votre rapport ne contient qu’une seule page ou l’URL que vous avez collée contient un nom de page. Supprimez la section du rapport de l’URL pour sélectionner une page spécifique. |
+| Display |Permet de définir la façon dont le rapport est ajusté à la page SharePoint Online. |
 | Afficher le volet de navigation |Affiche ou masque le volet de navigation Page. |
 | Afficher le volet Filtre |Affiche ou masque le volet Filtre. |
 
 ## <a name="reports-that-do-not-load"></a>Rapports qui ne sont pas chargés
 
-Si votre rapport ne se charge pas dans le composant WebPart Power BI, vous pouvez voir le message suivant :
+Si votre rapport ne se charge pas dans le composant WebPart Power BI, le message suivant peut s’afficher :
 
-![Ce contenu n’est pas de message](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
+![Ce contenu n’est pas disponible](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
 Il existe deux raisons habituelles pour ce message.
 
-1. Vous n’avez pas accès aux rapports.
+1. Vous n’avez pas accès au rapport.
 2. Le rapport a été supprimé.
 
-Contactez le propriétaire de page SharePoint Online pour aider à résoudre le problème.
+Contactez le propriétaire de la page SharePoint Online pour qu’il vous aide à résoudre le problème.
 
 ## <a name="licensing"></a>Licensing
 
@@ -151,7 +151,7 @@ Les utilisateurs affichant un rapport dans SharePoint ont besoin au choix d’un
   
   1. Déconnectez-vous de SharePoint, puis reconnectez-vous. Veillez à fermer toutes les fenêtres du navigateur avant de vous reconnecter.
 
-  2. Si votre compte d’utilisateur nécessite une authentification multifacteur (MFA), puis connectez-vous à SharePoint à l’aide de votre appareil de l’authentification Multifacteur (application de téléphone, carte à puce, etc.).
+  2. Si votre compte d’utilisateur nécessite l’authentification multifacteur, connectez-vous à SharePoint en utilisant votre dispositif d’authentification multifacteur (application sur un téléphone, carte à puce, etc.).
   
   3. Les comptes d’utilisateur invités Azure B2B ne sont pas pris en charge. Les utilisateurs voient le logo Power BI qui montre que le composant WebPart se chargement, mais le rapport ne s’affiche pas.
 

@@ -1,6 +1,6 @@
 ---
-title: S’abonner vous-même et autres rapports et tableaux de bord - Power BI
-description: Découvrez comment vous abonner vous-même et autres à un instantané d’une page de rapport Power BI, un tableau de bord ou un rapport paginé.
+title: Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord - Power BI
+description: Découvrez comment vous abonner vous et d’autres utilisateurs à un instantané d’une page de rapport Power BI, à un tableau de bord ou à un rapport paginé.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a344e3cdd93fbd237387b61fb4735b41f22625e3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65991130"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66498060"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
-Vous pouvez vous abonner vous-même et vos collègues pour les pages de rapport, les tableaux de bord et les rapports paginés qui vous intéressent. Power BI envoie par e-mail un instantané de votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous voulez recevoir les e-mails : une fois par jour, une fois par semaine ou après l’actualisation des données initiales.  Si vous choisissez quotidienne ou hebdomadaire, vous pouvez choisir le moment vous souhaitez disposer de l’abonnement s’exécutent.  Vous pouvez définir jusqu’à 24 abonnements différents en tout par jour, pour chaque page de rapport et tableau de bord.
+Vous pouvez vous abonner vous et vos collègues aux pages de rapport, tableaux de bord et rapports paginés qui vous intéressent le plus. Power BI envoie un instantané dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous voulez recevoir les e-mails : une fois par jour, une fois par semaine ou après l’actualisation des données initiales.  Si vous choisissez quotidien ou hebdomadaire, vous pouvez choisir l’heure d’exécution de l’abonnement.  Vous pouvez définir jusqu’à 24 abonnements différents en tout par jour, pour chaque page de rapport et tableau de bord.
 
 ![capture instantanée d’un e-mail sur le tableau de bord](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -30,13 +30,12 @@ Vous pouvez uniquement créer des abonnements dans le service Power BI. Vous rec
 
 - La **création** d’un abonnement est une fonctionnalité Power BI Pro.
 - Vous n’avez pas besoin de modifier les autorisations sur le contenu (tableau de bord ou rapport) pour créer un abonnement pour vous-même, mais vous devez avoir les autorisations de modification pour en créer un pour quelqu’un d’autre. 
-- À compter de janvier 2019, vous n’avez plus besoin de configurer l’actualisation du jeu de données pour exécuter un abonnement.  Il s’exécute indépendamment de toutes les actualisations planifiées que vous avez configurées.  
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>S’abonner à un tableau de bord, une page de rapport ou un rapport paginé
 
-Si vous vous abonnez à un tableau de bord, rapports, ou rapport paginé, le processus est similaire. Le même bouton vous permet de vous abonner aux rapports et aux tableaux de bord du service Power BI.
+Que vous vous abonniez à un tableau de bord, un rapport ou un rapport paginé, le processus est le même. Le même bouton vous permet de vous abonner aux rapports et aux tableaux de bord du service Power BI.
 
-Abonnement aux rapports paginés sont un peu différente. Consultez [vous abonner vous-même et autres à un rapport paginé dans le service Power BI](paginated-reports-subscriptions.md) pour plus d’informations.
+L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abonner vous et d’autres utilisateurs à un rapport paginé dans le service Power BI](paginated-reports-subscriptions.md) pour plus d’informations.
  
 ![sélectionner l’icône S’abonner](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -64,7 +63,7 @@ Abonnement aux rapports paginés sont un peu différente. Consultez [vous abonne
 7. Sélectionnez **Enregistrer et fermer**. Les abonnés reçoivent un e-mail et un instantané du tableau de bord ou de la page de rapport à la fréquence et à l’heure que vous avez sélectionnées. Vous pouvez créer jusqu’à 24 abonnements en tout par rapport ou tableau de bord, et vous pouvez fournir des destinataires, des heures et des fréquences différents pour chaque abonnement.  Tous les abonnements définis sur **Après l’actualisation des données** pour votre tableau de bord ou rapport envoient un e-mail seulement après la première actualisation planifiée.   
       
    > [!TIP]
-   > Vous souhaitez envoyer l’e-mail d’un abonnement dès maintenant, ou ultérieurement à la demande ? Sélectionnez **Exécuter maintenant** pour les abonnements pour le tableau de bord ou le rapport que vous souhaitez envoyer. Vous voyez une notification indiquant qu’un e-mail est envoyé à tous les utilisateurs de cet abonnement.  Vous pouvez faire aussi souvent que vous le souhaitez. En effet, elle n’est pas comptabilisée dans la limite des 24 exécutions d’abonnement planifiées par jour et par rapport ou tableau de bord. Elle ne déclenche pas une actualisation des données du jeu de données sous-jacent. 
+   > Vous souhaitez envoyer l’e-mail d’un abonnement dès maintenant, ou ultérieurement à la demande ? Sélectionnez **Exécuter maintenant** pour les abonnements pour le tableau de bord ou le rapport que vous souhaitez envoyer. Vous voyez une notification indiquant qu’un e-mail est envoyé à tous les utilisateurs de cet abonnement.  Vous pouvez effectuer cette opération aussi souvent que vous le souhaitez. En effet, elle n’est pas comptabilisée dans la limite des 24 exécutions d’abonnement planifiées par jour et par rapport ou tableau de bord. Cette opération ne déclenche PAS l’actualisation des données dans le jeu de données sous-jacent. 
    > 
    > 
    
@@ -87,10 +86,11 @@ Un abonnement se termine si la licence Pro expire, si le propriétaire supprime 
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 
-* Les tableaux de bord comportant plus de 25 vignettes épinglées, ou 4 pages de rapport dynamique épinglées, risquent de ne pas s’afficher entièrement dans les e-mails d’abonnement envoyés aux utilisateurs.  Abonnements aux tableaux de bord sur ces nombre de vignettes ne sont pas bloqués. Toutefois, ils sont considérés comme non pris en charge si vous rencontrez des problèmes. Envisagez de les modifier en conséquence pour être comprises dans une plage prise en charge.
-* Lorsque vous configurez vos abonnements par messagerie électronique, gardez à l’esprit, qu'il existe un décalage entre lorsque la tâche d’abonnement démarre et l’heure exacte, que le message électronique est envoyé.  Pour réduire le délai entre les deux, configurez une heure différente pour votre actualisation planifiée des données que lorsque votre abonnement par courrier électronique est planifiée pour s’exécuter.
-* Pour les abonnements par courrier électronique de tableau de bord, si les vignettes ont la sécurité au niveau des lignes (RLS) appliquée, ces vignettes n’affichent pas.  
-* Pour les abonnements par courrier électronique de rapport, si le jeu de données utilise des lignes, vous pouvez créer un abonnement par vous-même. Vous ne pouvez pas abonner d’autres à un rapport avec la sécurité au niveau des lignes (RLS) appliquée.
+* Les tableaux de bord comportant plus de 25 vignettes épinglées, ou 4 pages de rapport dynamique épinglées, risquent de ne pas s’afficher entièrement dans les e-mails d’abonnement envoyés aux utilisateurs.  Les abonnements aux tableaux de bord avec un nombre de vignettes supérieur ne sont pas bloqués. Toutefois, ils ne seront pas pris en charge si vous rencontrez des problèmes. Vous devez donc réduire leur nombre de vignettes dans la limite de prise en charge.
+* Cette heure correspond au moment où la tâche d’abonnement commence. Dans certains scénarios, la remise de l’e-mail dans votre boîte de réception peut prendre plusieurs minutes.
+* Dans de rares occasions, la remise des abonnements par e-mail à leurs destinataires peut prendre plus de quinze minutes. Si cela se produit, nous vous recommandons d’exécuter l’actualisation de vos données et votre abonnement par e-mail à des moments différents pour garantir une remise en temps voulu. Si le problème persiste, contactez le support Power BI.
+* Pour les abonnements par e-mail aux tableaux de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, elles ne s’affichent pas.  
+* Pour les abonnements par e-mail aux rapports, si le jeu de données utilise SNL, vous pouvez créer un abonnement pour vous-même. Vous ne pouvez pas abonner d’autres utilisateurs à un rapport auquel la sécurité au niveau des lignes (SNL) est appliquée.
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 * Votre organisation peut configurer certains paramètres dans Azure Active Directory, pour limiter la possibilité d’utiliser des abonnements par messagerie électronique dans Power BI.  Vous pouvez limiter, entre autres, l’authentification multifacteur ou les restrictions de plage IP pour l’accès aux ressources.
 * Actuellement, les abonnements aux e-mails des rapports/tableaux de bord utilisant des jeux de données à connexion active ne sont pas pris en charge quand vous abonnez des utilisateurs autres que vous-même.
@@ -105,6 +105,6 @@ Un abonnement se termine si la licence Pro expire, si le propriétaire supprime 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [S’abonner vous-même et autres à un rapport paginé dans le service Power BI](paginated-reports-subscriptions.md)
+- [Vous abonner vous et d’autres utilisateurs à un rapport paginé dans le service Power BI](paginated-reports-subscriptions.md)
 - D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)    
 - [Lire le billet de blog](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

@@ -1,6 +1,6 @@
 ---
 title: Ajouter des liens hypertexte à une table
-description: Utilisez Power BI Desktop pour créer des liens hypertexte. Ensuite utiliser Power BI Desktop ou le service Power BI pour ajouter des liens hypertexte à vos tables de rapport et les matrices.
+description: Utilisez Power BI Desktop pour créer des liens hypertexte. Ensuite, utilisez Power BI Desktop ou le service Power BI pour ajouter des liens hypertexte à vos matrices et tables de rapports.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9611d8cd45eba89854fd6cbb485c52097f77f4c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 386c52908d54833e350a7b1a6d846f78c7b88c6d
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61421576"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721378"
 ---
 # <a name="add-hyperlinks-to-a-table"></a>Ajouter des liens hypertexte à une table
 Cette rubrique explique comment utiliser Power BI Desktop pour créer des liens hypertexte. Puis, utilisez Desktop ou le service Power BI pour ajouter des liens hypertexte à vos matrices et tables de rapports. 
@@ -24,11 +24,11 @@ Cette rubrique explique comment utiliser Power BI Desktop pour créer des liens 
 ![Table avec des liens hypertexte](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> Vous pouvez créer des liens hypertexte dans [vignettes sur les tableaux de bord](service-dashboard-edit-tile.md) et [zones de texte dans des tableaux de bord](service-dashboard-add-widget.md) à la volée à l’aide du service Power BI. Vous pouvez créer des liens hypertexte dans [zones de texte dans les rapports](service-add-hyperlink-to-text-box.md) à la volée à l’aide du service Power BI et Power BI Desktop.
+> Vous pouvez créer facilement des liens hypertexte dans des [vignettes de tableaux de bord](service-dashboard-edit-tile.md) et dans des [zones de texte de tableaux de bord](service-dashboard-add-widget.md) à l’aide du service Power BI. Vous pouvez créer facilement des liens hypertexte dans des [zones de texte de rapport](service-add-hyperlink-to-text-box.md) à l’aide du service Power BI et de Power BI Desktop.
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Pour créer un lien hypertexte dans une table ou une matrice à l’aide de Power BI Desktop
-Vous pouvez créer des liens hypertexte dans les tables et matrices dans Power BI Desktop, mais pas dans le Service Power BI. Vous pouvez également créer des liens hypertexte dans PowerPivot pour Excel avant d’importer le classeur dans Power BI. Les deux méthodes sont décrites ci-dessous.
+Vous pouvez créer des liens hypertexte dans les tableaux et matrices avec Power BI Desktop, mais pas avec le service Power BI. Vous pouvez également créer des liens hypertexte dans PowerPivot pour Excel avant d’importer le classeur dans Power BI. Les deux méthodes sont décrites ci-dessous.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-power-bi-desktop"></a>Créer un lien hypertexte de tableau ou matrice dans Power BI Desktop
 La procédure d’ajout d’un lien hypertexte varie selon que vous avez importé les données ou que vous vous y êtes connecté à l’aide de DirectQuery. Les deux scénarios sont décrits ci-dessous.
@@ -99,7 +99,7 @@ R : Non. Il est possible d’utiliser une icône de lien. Si vous avez besoin d�
 ## <a name="next-steps"></a>Étapes suivantes
 [Visualisations dans des rapports Power BI](visuals/power-bi-report-visualizations.md)
 
-[Power BI – Concepts de base](consumer/end-user-basic-concepts.md)
+[Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

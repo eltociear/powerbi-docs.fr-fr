@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 05/31/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3bb7de9685a1e0fc9fa423328ad9e1e5faa53603
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a06a37e89f7984ab227d54ee5b06550a6ae3e4d6
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61305452"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448273"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Sources de données prises en charge par DirectQuery dans Power BI
 
@@ -26,8 +26,8 @@ Les sources de données suivantes prennent en charge DirectQuery dans Power BI�
 * Amazon Redshift
 * AtScale (bêta)
 * Azure HDInsight Spark
-* Azure SQL Database
-* Azure SQL Data Warehouse
+* [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
+* [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
 * Google BigQuery
 * HDInsight Interactive Query
 * Base de données IBM DB2
@@ -39,7 +39,7 @@ Les sources de données suivantes prennent en charge DirectQuery dans Power BI�
 * Serveur de messages SAP Business Warehouse
 * SAP HANA
 * Snowflake
-* Spark (version 0.9 et versions ultérieures)
+* Spark (version 0.9 et versions ultérieures)
 * SQL Server
 * Base de données Teradata
 * Vertica
@@ -57,22 +57,39 @@ Le tableau suivant indique si une **passerelle de données locale** est nécessa
 
 | Source | Passerelle obligatoire ? |
 | --- | --- |
-| SQL Server |Oui |
+| Amazon Redshift |Non |
+| Azure HDInsight Spark (bêta) |Non |
 | Azure SQL Database |Non |
 | Azure SQL Data Warehouse |Non |
-| SAP HANA |Oui |
-| Base de données Oracle |Oui |
-| Base de données Teradata |Oui |
-| Amazon Redshift |Non |
-| Impala (version 2.x) |Oui |
-| Snowflake |Oui |
-| Spark (bêta), version 0.9 et versions ultérieures |Oui |
-| Azure HDInsight Spark (bêta) |Non |
+| Google BigQuery |Non |
 | IBM Netezza |Oui |
+| Impala (version 2.x) |Oui |
+| Base de données Oracle |Oui |
 | Serveur d’applications SAP Business Warehouse |Oui |
 | Serveur de messages SAP Business Warehouse |Pas encore pris en charge dans le **service Power BI** |
-| Google BigQuery |Non |
+| SAP HANA |Oui |
+| Snowflake |Oui |
+| Spark (bêta), version 0.9 et versions ultérieures |Oui |
+| SQL Server |Oui |
+| Base de données Teradata |Oui |
 
+## <a name="single-sign-on-sso-for-directquery-sources"></a>Authentification unique (SSO) pour les sources DirectQuery
+
+Quand l’option d’authentification unique est activée et que vos utilisateurs accèdent aux rapports basés sur la source de données, Power BI envoie leurs informations d’identification Azure AD dans les requêtes à la source de données sous-jacente. Ainsi, Power BI est en mesure de respecter les paramètres de sécurité qui sont configurés au niveau de la source de données.
+
+L’option d’authentification unique prend effet sur tous les jeux de données qui utilisent cette source de données. Elle n’affecte pas la méthode d’authentification utilisée pour les scénarios d’importation. Les sources de données suivantes prennent en charge l’authentification unique pour les connexions via DirectQuery :
+
+- Azure SQL Database
+- Azure SQL Data Warehouse
+- Impala
+- SAP HANA
+- SAP BW
+- Spark
+- SQL Server
+- Teradata
+
+> [!Note]
+> L’authentification multifacteur Azure (MFA) n’est pas pris en charge. Les utilisateurs qui souhaitent utiliser l’authentification unique avec DirectQuery doivent être exemptés de l’authentification multifacteur (MFA).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur DirectQuery, consultez les ressources suivantes :

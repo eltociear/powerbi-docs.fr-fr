@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375101"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720340"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Principal de service avec Power BI (préversion)
 
@@ -168,17 +168,17 @@ Voici un exemple de script pour récupérer l’ID objet du principal de service
 
 * Un principal de service ne fonctionne qu’avec de [nouveaux espaces de travail d’application](../service-create-the-new-workspaces.md).
 * **Mon espace de travail** n’est pas pris en charge lors de l’utilisation d’un principal de service.
-* Une capacité Premium dédiée est nécessaire pour passer en production.
+* Une capacité dédiée est nécessaire pour passer en production.
 * Vous ne pouvez pas vous connecter au portail Power BI avec un principal de service.
 * Vous devez disposer de droits d’administrateur Power BI pour activer un principal de service dans les paramètres du développeur du portail d’administration Power BI.
 * Il est impossible d’installer ou de gérer une passerelle de données locale à l’aide d’un principal de service.
 * Les applications [incorporant du contenu pour votre organisation](embed-sample-for-your-organization.md) ne peuvent pas utiliser un principal de service.
 * La gestion de [flux de données](../service-dataflows-overview.md) n’est pas prise en charge.
-* Actuellement, principal du service ne prend pas en charge les API d’administration.
+* Le principal de service ne prend actuellement pas en charge aucune API administrateur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Inscrire une application](register-app.md)
 * [Power BI Embedded pour vos clients](embed-sample-for-customers.md)
 * [Objets d’application et de principal de service dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Sécurité au niveau des lignes à l’aide de la passerelle de données locale avec le principal de service (version préliminaire)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Sécurité au niveau des lignes à l’aide d’une passerelle de données locale avec principal de service (préversion)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

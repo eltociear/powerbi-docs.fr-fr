@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 383d28a9e24165b12cda73ee254541a32db4391c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4c2ef62dc3ea8aac9c4a0d30ba4dba58e2279490
+ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61325023"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469821"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analyser les données sur les coûts et l’utilisation d’Azure dans Power BI Desktop
 
@@ -24,15 +24,15 @@ Avec Power BI Desktop, vous pouvez vous connecter à Azure et obtenir des donné
 
 Power BI prend actuellement en charge la connexion aux comptes de facturation Contrat Entreprise et Contrat Client.
 
-* **Contrat entreprise** les utilisateurs doivent se connecter avec le **connecteur d’Azure Consumption Insights**.
+* Les utilisateurs ayant un compte **Contrat Entreprise** doivent se connecter à l’aide du **connecteur Azure Consumption Insights**.
 
-* **Contrat de client** les utilisateurs doivent se connecter avec le **connecteur de gestion des coûts Azure**.
+* Les utilisateurs ayant un compte **Contrat Client** doivent se connecter avec le **connecteur Azure Cost Management**.
 
 ## <a name="connect-with-azure-consumption-insights"></a>Se connecter à l’aide d’Azure Consumption Insights
 
 Azure Consumption Insights vous permet de vous connecter aux comptes de facturation Contrat Entreprise Azure.
 
-Cette section explique comment vous connecter et obtenir les données dont vous avez besoin, comment effectuer une migration à partir du connecteur Azure Enterprise. Elle présente également un mappage des *colonnes de détails d’utilisation* disponibles dans l’API **ACI** (Azure Consumption Insights).
+Cette section explique comment obtenir les données dont vous avez besoin et comment effectuer une migration à partir du connecteur Azure Enterprise. Elle présente également un mappage des *colonnes de détails d’utilisation* disponibles dans l’API **ACI** (Azure Consumption Insights).
 
 Pour pouvoir vous connecter à l’aide du connecteur **Azure Consumption Insights**, vous devez avoir accès aux fonctionnalités d’entreprise au sein du portail Azure.
 
@@ -45,9 +45,9 @@ Dans la boîte de dialogue qui s’affiche, entrez votre *Numéro d’inscriptio
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
 * Vous pouvez trouver celui-ci sur le portail [Azure Enterprise Portal](https://ea.azure.com), à l’emplacement montré dans l’image suivante :
-  
+
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
-  
+
   Cette version du connecteur prend en charge seulement les inscriptions d’entreprise depuis https://ea.azure.com. Les inscriptions en Chine ne sont pas prises en charge actuellement.
 
 Ensuite, entrez votre *Clé d’accès* pour établir la connexion.
@@ -55,11 +55,11 @@ Ensuite, entrez votre *Clé d’accès* pour établir la connexion.
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
 * Votre clé d’accès pour l’inscription est disponible sur le portail [Microsoft Azure Enterprise Portal](https://ea.azure.com).
-  
+
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Une fois que vous avez entré votre *Clé d’accès* et sélectionné **Se connecter**, une fenêtre **Navigateur** affiche les neuf tables à votre disposition : 
-* **Budgets** : informations budgétaires permettant de comparer les coûts et l’utilisation réels aux objectifs budgétaires. 
+Une fois que vous avez entré votre *Clé d’accès* et sélectionné **Se connecter**, une fenêtre **Navigateur** affiche les neuf tables à votre disposition :
+* **Budgets** : informations budgétaires permettant de comparer les coûts et l’utilisation réels aux objectifs budgétaires.
 * **Place de marché** : frais de la Place de marché Azure en fonction de l’utilisation.
 * **Grille tarifaire** : tarifs applicables par compteur pour une inscription.
 * **RICharges** : frais associés à vos instances réservées au cours des 24 derniers mois.
@@ -75,8 +75,8 @@ Vous pouvez activer une case à cocher en regard d’une table pour afficher un 
 
 > [!NOTE]
 > Les tableaux *Résumé* et *Grille tarifaire* sont disponibles seulement pour la clé d’API au niveau inscription. De plus, les données de ces tables sont, par défaut, celles du mois en cours pour l’*Utilisation* et la *Grille tarifaire*. Les tables *Résumé* et *Place de marché* ne sont pas limitées au mois en cours.
-> 
-> 
+>
+>
 
 Lorsque vous sélectionnez **Charger**, les données sont chargées dans **Power BI Desktop**.
 
@@ -141,7 +141,7 @@ Vous devez à présent déplacer les colonnes personnalisées ou les mesures que
 
 1. Ouvrez l’application Bloc-notes (ou un autre éditeur de texte).
 2. Sélectionnez la mesure à déplacer, puis copiez le texte du champ *Formule* et collez-le dans l’application Bloc-notes.
-   
+
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Remplacez *Query1* par le nom de la table des détails d’origine.
 4. Créez de nouvelles mesures et des colonnes personnalisées dans votre table en cliquant avec le bouton droit sur la table et en choisissant **Nouvelle mesure**, puis coupez et collez toutes les mesures et colonnes de votre magasin.
@@ -150,7 +150,7 @@ Vous devez à présent déplacer les colonnes personnalisées ou les mesures que
 De nombreux tableaux de bord comportent des tables supplémentaires qui sont utilisées pour la recherche ou le filtrage, telles que des tables de dates ou des tables destinées à des projets personnalisés. Le rétablissement de ces relations résout la plupart des problèmes restants. Voici comment procéder.
 
 - Sous l’onglet **Modélisation** de **Power BI Desktop**, sélectionnez **Gérer les relations** pour afficher une fenêtre permettant de gérer les relations au sein du modèle. Liez de nouveau vos tables, en fonction des besoins.
-   
+
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Étape 5 : Vérifier vos visuels et ajuster la mise en forme des champs au besoin
@@ -215,9 +215,9 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 Cette section explique comment vous connecter à votre compte de facturation Contrat Client.
 
 > [!NOTE]
-> Le connecteur Azure Cost Management prend actuellement en charge les clients sur le **contrat client**.  **Contrat entreprise** les clients doivent utiliser le connecteur Microsoft Azure Consumption Insights.
-> 
-> 
+> Le connecteur Azure Cost Management prend actuellement en charge les clients bénéficiant du **Contrat Client**.  Les clients ayant un compte **Contrat Entreprise** doivent utiliser le connecteur Microsoft Azure Consumption Insights.
+>
+>
 
 Pour vous connecter à l’aide du connecteur **Azure Cost Management**, dans le ruban **Accueil** de **Power BI Desktop**, sélectionnez **Obtenir des données**.  Sélectionnez **Azure** dans les catégories à gauche. Vous voyez normalement **Azure Cost Management (bêta)** . Sélectionnez **Se connecter**.
 
@@ -234,7 +234,7 @@ Vous pouvez obtenir votre ID de profil de facturation à partir du [portail Azur
 Vous êtes alors invité à vous connecter en utilisant votre adresse e-mail et votre mot de passe Azure.  Une fois que vous êtes authentifié, vous voyez une fenêtre **Navigateur** qui affiche les douze tables à votre disposition :
 
 * **Événements de facturation** : journal des événements liés aux nouvelles factures, aux achats de crédits, etc.
-* **Budgets** : informations budgétaires permettant de comparer les coûts et l’utilisation réels aux objectifs budgétaires. 
+* **Budgets** : informations budgétaires permettant de comparer les coûts et l’utilisation réels aux objectifs budgétaires.
 * **Frais** : récapitulatif mensuel de l’utilisation d’Azure, des frais de la Place de marché et des frais facturés séparément.
 * **Lots de crédits** : informations sur les achats de lots de crédits Azure pour le profil de facturation spécifié.
 * **Récapitulatif des crédits** : récapitulatif des crédits pour le profil de facturation spécifié.
@@ -257,6 +257,8 @@ Lorsque vous sélectionnez **Charger**, les données sont chargées dans **Power
 Une fois les données sélectionnées chargées, les tables et les champs que vous avez sélectionnés sont visibles dans le volet **Champs**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
+
+Visionnez la vidéo [How to analyze spending in Power BI with Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk) (Guide pratique pour analyser les dépenses dans Power BI avec Azure Consumption Insights) consacrée à la consultation de vos données de coût dans Power BI Desktop à l’aide du connecteur Azure Consumption Insights.
 
 ## <a name="writing-custom-queries"></a>Création de requêtes personnalisées
 
@@ -288,4 +290,3 @@ Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop.
 * [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Se connecter à des classeurs Excel dans Power BI Desktop](desktop-connect-excel.md)   
 * [Entrer des données directement dans Power BI Desktop](desktop-enter-data-directly-into-desktop.md)   
-

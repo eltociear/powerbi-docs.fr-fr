@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: e4cb314af1522c71de85e4576572acbb1d2e88b3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 04676ee789b90eb09cbed3bafb623e8e9b89e4e4
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61239187"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720880"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Retail Analysis sample pour Power BI : Visite guidée
 
@@ -165,5 +165,5 @@ Nous espérons que cette visite guidée vous a montré comment les tableaux de b
 * [Télécharger un fichier zip de tous les fichiers d’exemple](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Télécharger le classeur Excel pour cet exemple Power BI](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Obtenir des données (pour Power BI)](service-get-data.md)    
-* [Power BI – Concepts de base](consumer/end-user-basic-concepts.md)    
+* [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)    
 * D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

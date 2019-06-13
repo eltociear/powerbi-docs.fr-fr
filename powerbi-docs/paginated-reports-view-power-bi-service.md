@@ -1,5 +1,5 @@
 ---
-title: Afficher un rapport paginé dans le service Power BI (préversion)
+title: Afficher un rapport paginé dans le service Power BI
 description: Dans ce tutoriel, vous découvrez comment afficher des rapports paginés dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 8a87cb292da1a1fb3f4fc3e14d569ad8c97c60b6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f80b13ccd1393e98199acbcaabfbf80ad63707c8
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769676"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839582"
 ---
-# <a name="view-a-paginated-report-in-the-power-bi-service-preview"></a>Afficher un rapport paginé dans le service Power BI (préversion)
+# <a name="view-a-paginated-report-in-the-power-bi-service"></a>Afficher un rapport paginé dans le service Power BI
 
 Dans cet article, vous découvrez comment afficher des rapports paginés dans le service Power BI. Les rapports paginés sont des rapports créés dans le Générateur de rapports et chargé vers n’importe quel espace de travail dans une capacité Premium. Rechercher l’icône en forme de losange ![Icône en forme de losange pour la capacité Power BI Premium](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) en regard du nom de l'espace de travail. 
 
@@ -55,4 +55,4 @@ Vous pouvez également exporter des rapports paginés dans un certain nombre de 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Présentation des rapports paginés dans Power BI Premium (préversion)](paginated-reports-report-builder-power-bi.md)
+[Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)

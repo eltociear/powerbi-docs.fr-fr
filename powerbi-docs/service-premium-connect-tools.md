@@ -1,6 +1,6 @@
 ---
-title: Se connecter à Power BI Premium de jeux de données avec les applications clientes et des outils (version préliminaire)
-description: Explique comment se connecter aux jeux de données dans Power BI Premium à partir des outils et les applications clientes.
+title: Se connecter à des jeux de données Power BI Premium avec des applications et des outils clients (préversion)
+description: Explique comment se connecter à des jeux de données dans Power BI Premium à partir d’outils et d’applications clientes.
 author: minewiskan
 ms.author: owend
 manager: kfile
@@ -8,110 +8,108 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 05/31/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 063f43cb2345ccb3d1fec5c414100beb8ccde451
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b671d2f55135312fb529d4b4b30af3941c525a26
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65941509"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448325"
 ---
-# <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Se connecter à des jeux de données avec les applications clientes et des outils (version préliminaire)
+# <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Se connecter à des jeux de données avec des applications et des outils clients (préversion)
 
-Prise en charge les espaces de travail et des jeux de données Premium de BI Power *en lecture seule* connexions à partir de Microsoft et les applications clientes de tiers et les outils. 
+Les espaces de travail et les jeux de données Power BI Premium prennent en charge les connexions *en lecture seule* à partir d’applications et d’outils Microsoft et tiers. 
 
 > [!NOTE]
-> Cet article est destiné uniquement à vous présenter une connectivité en lecture seule aux espaces de travail Power BI Premium et jeux de données. Il *n’est pas* destiné à fournir des informations détaillées sur la programmabilité des outils spécifiques et applications, architecture et gestion de l’espace de travail et le jeu de données. Sujets décrites ici nécessitent une connaissance approfondie de l’architecture de base de données de modèle tabulaire Analysis Services et l’administration.
+> Cet article est uniquement destiné à présenter la connectivité en lecture seule à des espaces de travail et des jeux de données Power BI Premium. Il n’est *pas* destiné à fournir des informations détaillées sur la programmabilité, des outils et des applications spécifiques, l’architecture ainsi que la gestion des espaces de travail et des jeux de données. Les sujets décrits ici nécessitent une bonne connaissance de l’architecture et de l’administration des bases de données de modèles tabulaires Analysis Services.
 
 ## <a name="protocol"></a>Protocole
 
-Power BI Premium utilise le [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) protocole XMLA () pour les communications entre les applications clientes et le moteur qui gère vos espaces de travail et les jeux de données. Ces communications sont via ce que sont communément comme points de terminaison XMLA. XMLA est le même protocole de communication utilisé par le moteur de Microsoft Analysis Services, qui, sous le capot, exécute la gestion sémantique de modélisation, de gouvernance, de cycle de vie et de données de Power BI. 
+Power BI Premium utilise le protocole [XML for Analysis](https://docs.microsoft.com/bi-reference/xmla/xml-for-analysis-xmla-reference) (XMLA) pour les communications entre des applications clientes et le moteur qui gère vos espaces de travail et jeux de données. Ces communications s’effectuent via ce qui est communément appelé « points de terminaison XMLA ». XMLA est le même protocole de communication que celui utilisé par le moteur Microsoft Analysis Services, qui, sous le capot, exécute la modélisation sémantique, la gouvernance, le cycle de vie et la gestion des données de Power BI. 
 
-La grande majorité des applications clientes et les outils n’explicitement communiquent pas avec le moteur à l’aide de points de terminaison XMLA. Au lieu de cela, ils utilisent des bibliothèques clientes telles que MSOLAP, ADOMD et AMO comme intermédiaire entre l’application cliente et le moteur, qui communique exclusivement à l’aide de XMLA.
+La grande majorité des applications et des outils clients ne communiquent pas explicitement avec le moteur à l’aide de points de terminaison XMLA. Au lieu de cela, ils utilisent des bibliothèques clientes telles que MSOLAP, ADOMD et AMO comme intermédiaire entre l’application cliente et le moteur, qui communique exclusivement à l’aide de XMLA.
 
 
 ## <a name="supported-tools"></a>Outils pris en charge
 
-Ces outils prennent en charge l’accès en lecture seule pour les espaces de travail Power BI Premium et de jeux de données :
+Les outils suivants prennent en charge l’accès en lecture seule aux espaces de travail et jeux de données Power BI Premium :
 
-**SQL Server Management Studio (SSMS)** -requêtes prend en charge DAX, MDX, XMLA et TraceEvent. Requiert la version 18.0. Télécharger [ici](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
+**SQL Server Management Studio (SSMS)**  : prend en charge les requêtes DAX, MDX, XMLA et TraceEvent. Exige la version 18.0. Téléchargement disponible [ici](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms). 
 
-**SQL Server Profiler** -inclus avec SSMS 18.0 (version préliminaire), cet outil fournit le suivi et débogage d’événements du serveur. Vous pouvez capturer et enregistrer des données relatives à chaque événement dans un fichier ou d’une table pour analyse ultérieure. Bien qu’officiellement déconseillé pour SQL Server, Profiler continue à être inclus dans SSMS et est pris en charge pour Analysis Services et à présent, Power BI Premium. Pour plus d’informations, consultez [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler).
+**SQL Server Profiler** : inclus avec SSMS 18.0 (préversion), cet outil fournit le suivi et le débogage des événements serveur. Vous pouvez capturer et enregistrer des données relatives à chaque événement dans un fichier ou une table pour les analyser ultérieurement. Bien qu’officiellement déprécié pour SQL Server, Profiler continue à être inclus dans SSMS. Il reste pris en charge pour Analysis Services, et à présent Power BI Premium. Pour en savoir plus, consultez [SQL Server Profiler](https://docs.microsoft.com/sql/tools/sql-server-profiler/sql-server-profiler).
 
-**DAX Studio** - Open source, outil de la Communauté pour l’exécution et analyse DAX requêtes dans Analysis Services. Requiert la version 2.8.2 ou ultérieure. Pour plus d’informations, consultez [daxstudio.org](https://daxstudio.org/).
+**DAX Studio** : outil open source de la communauté pour l’exécution et l’analyse de requêtes DAX dans Analysis Services. Exige la version 2.8.2 ou une version ultérieure. Pour en savoir plus, consultez [daxstudio.org](https://daxstudio.org/).
 
-**Tableaux croisés dynamiques Excel** -version Démarrer en un clic d’Office 16.0.11326.10000 ou ultérieure est requise.
+**Tableaux croisés dynamiques Excel** : la version Démarrer en un clic d’Office 16.0.11326.10000 ou version ultérieure est nécessaire.
 
-**Tiers** : inclut les applications de visualisation de données clientes et des outils qui peuvent se connecter à, requête et consommer des jeux de données dans Power BI Premium. La plupart des outils nécessitent les dernières versions des bibliothèques clientes MSOLAP, mais certains peuvent utiliser ADOMD.
+**Tiers** : inclut des applications et des outils de visualisation de données clients qui peuvent se connecter aux jeux de données, les interroger et les consommer dans Power BI Premium. La plupart des outils nécessitent les dernières versions des bibliothèques clientes MSOLAP, mais certains peuvent utiliser ADOMD.
 
 ## <a name="client-libraries"></a>Bibliothèques clientes
 
-Bibliothèques clientes sont nécessaires pour les applications clientes et des outils pour vous connecter à des espaces de travail Power BI Premium. Les mêmes bibliothèques clientes utilisées pour se connecter à Analysis Services sont également pris en charge dans Power BI Premium. Applications clientes Microsoft tels que Excel, SQL Server Management Studio (SSMS) et SQL Server Data Tools (SSDT) installent tous les trois bibliothèques clientes et les mettre à jour en même temps que les mises à jour de l’application normale. Dans certains cas, en particulier avec les applications tierces et des outils, vous devrez peut-être installer des versions plus récentes des bibliothèques clientes. Bibliothèques clientes sont mis à jour tous les mois. Pour plus d’informations, consultez [les bibliothèques clientes pour la connexion à Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
+Les bibliothèques clientes sont nécessaires pour les applications et outils clients pour se connecter à des espaces de travail Power BI Premium. Les bibliothèques clientes utilisées pour se connecter à Analysis Services sont également prises en charge dans Power BI Premium. Les applications clientes Microsoft comme Excel, SQL Server Management Studio (SSMS) et SQL Server Data Tools (SSDT) installent tous les trois des bibliothèques clientes et les mettent à jour en même temps que les mises à jour standard de l’application. Dans certains cas, en particulier avec les applications et les outils tiers, vous devrez peut-être installer des versions plus récentes des bibliothèques clientes. Les bibliothèques clientes sont mises à jour tous les mois. Pour en savoir plus, consultez [Bibliothèques clientes pour la connexion à Analysis Services](https://docs.microsoft.com/azure/analysis-services/analysis-services-data-providers).
 
 ## <a name="connecting-to-a-premium-workspace"></a>Connexion à un espace de travail Premium
 
-Vous pouvez vous connecter à des espaces de travail affectés à des capacités Premium dédié. Espaces de travail affectés à une capacité dédiée ont une chaîne de connexion dans le format d’URL. 
+Vous pouvez vous connecter à des espaces de travail attribués à des capacités dédiées Premium. Les espaces de travail attribués à une capacité dédiée ont une chaîne de connexion au format d’URL. 
 
-Pour obtenir la chaîne de connexion d’espace de travail dans Power BI, dans **paramètres de l’espace de travail**, dans le **Premium** sous l’onglet **connexion de l’espace de travail**, cliquez sur **copier**.
+Pour obtenir la chaîne de connexion d’espace de travail dans Power BI, dans **Paramètres d’espace de travail**, sous l’onglet **Premium**, dans **Connexion d’espace de travail**, cliquez sur **Copier**.
 
 ![Chaîne de connexion d’espace de travail](media/service-premium-connect-tools/connect-tools-workspace-connection.png)
 
-Connexions de l’espace de travail utilisent le format d’URL suivant pour résoudre un espace de travail comme s’il s’agissait d’un nom de serveur Analysis Services :   
+Les connexions d’espace de travail utilisent le format d’URL suivant pour traiter un espace de travail comme s’il s’agissait d’un nom de serveur Analysis Services :   
 `powerbi://api.powerbi.com/v1.0/[tenant name]/[workspace name]` 
 
 Par exemple, `powerbi://api.powerbi.com/v1.0/contoso.com/Sales Workspace`
-> [!NOTE]
-> `[workspace name]` distingue la casse et peut contenir des espaces. 
 
-### <a name="to-connect-in-ssms"></a>Pour vous connecter dans SSMS
+### <a name="to-connect-in-ssms"></a>Pour se connecter dans SSMS
 
-Dans **se connecter au serveur** > **Type de serveur**, sélectionnez **Analysis Services**. Dans **nom du serveur**, entrez l’URL. Dans **authentification**, sélectionnez **Active Directory - authentification universelle avec prise en charge MFA**, puis dans **nom d’utilisateur**, entrez votre ID d’utilisateur d’organisation. 
+Dans **Se connecter au serveur** > **Type de serveur**, sélectionnez **Analysis Services**. Dans **Nom du serveur**, entrez l’URL. Dans **Authentification**, sélectionnez **Active Directory - Authentification universelle avec prise en charge de MFA**, puis dans **Nom d’utilisateur**, entrez votre ID d’utilisateur d’organisation. 
 
-Lorsque connecté, l’espace de travail est affiché comme un serveur Analysis Services et jeux de données dans l’espace de travail est affichés sous forme de bases de données.  
+Une fois que vous êtes connecté, l’espace de travail est affiché en tant que serveur Analysis Services, et les jeux de données de l’espace de travail sont affichés en tant que bases de données.  
 
 ![SSMS](media/service-premium-connect-tools/connect-tools-ssms.png)
 
 ### <a name="initial-catalog"></a>Catalogue initial
 
-Certains outils, tels que SQL Server Profiler, vous devrez peut-être spécifier un *Initial Catalog*. Spécifiez un jeu de données (base de données) dans votre espace de travail. Dans **se connecter au serveur**, cliquez sur **Options**. Dans le **se connecter au serveur** boîte de dialogue, dans le **propriétés de connexion** sous l’onglet **se connecter à la base de données**, entrez le nom du jeu de données.
+Pour certains outils, comme SQL Server Profiler, vous devrez peut-être spécifier un *catalogue initial*. Spécifiez un jeu de données (une base de données) dans votre espace de travail. Dans **Se connecter au serveur**, cliquez sur **Options**. Dans la boîte de dialogue **Se connecter au serveur**, sous l’onglet **Propriétés de connexion**, dans **Connexion à une base de données**, entrez le nom du jeu de données.
 
-### <a name="duplicate-workspace-name"></a>Nom de l’espace de travail en double
+### <a name="duplicate-workspace-name"></a>Nom d’espace de travail en double
 
-Lors de la connexion à un espace de travail avec le même nom qu’un autre espace de travail, vous pouvez recevoir l’erreur suivante : **Impossible de se connecter à powerbi://api.powerbi.com/v1.0/ [Nom_client] / [nom de l’espace de travail].**
+Quand vous vous connectez à un espace de travail portant le même nom qu’un autre espace de travail, l’erreur suivante peut s’afficher : **Impossible de se connecter à powerbi://api.powerbi.com/v1.0/[nom_locataire]/[nom_espace_de_travail].**
 
-Pour contourner cette erreur, en plus du nom de l’espace de travail, spécifiez le ObjectIDGuid, ce qui peut être copié à partir de l’objectID de l’espace de travail dans l’URL. Ajoutez l’ID d’objet à l’URL de connexion. Par exemple, « powerbi://api.powerbi.com/v1.0/myorg/Contoso ventes - 9d83d204-82a9-4b36-98f2-a40099093830 »
+Pour contourner cette erreur, spécifiez, en plus du nom de l’espace de travail, l’ObjectIDGuid, qui peut être copié à partir de l’objectID de l’espace de travail dans l’URL. Ajoutez l’ID d’objet (objectID) à l’URL de connexion. Par exemple, « powerbi://api.powerbi.com/v1.0/myorg/Contoso Sales - 9d83d204-82a9-4b36-98f2-a40099093830 »
 
-### <a name="duplicate-dataset-name"></a>Nom du jeu de données en double
+### <a name="duplicate-dataset-name"></a>Nom de jeu de données en double
 
-Lors de la connexion à un dataset avec le même nom qu’un autre jeu de données dans le même espace de travail, ajoutez le guid de jeu de données pour le nom du dataset. Vous pouvez obtenir le nom du jeu de données *et* guid en cas de connexion à l’espace de travail dans SSMS. 
+Quand vous vous connectez à un jeu de données portant le même nom qu’un autre jeu de données du même espace de travail, ajoutez le GUID du jeu de données à son nom. Vous pouvez obtenir le nom *et* le GUID du jeu de données quand vous vous connectez à l’espace de travail dans SSMS. 
 
-### <a name="delay-in-datasets-shown"></a>Retards dans les jeux de données indiqué
+### <a name="delay-in-datasets-shown"></a>Retards dans les jeux de données affichés
 
-Lors de la connexion à un espace de travail, les modifications à partir de jeux de données nouvelles, supprimées et renommées peuvent prendre jusqu'à 5 minutes pour apparaître. 
+Lors de la connexion à un espace de travail, les changements des jeux de données nouveaux, supprimés et renommés peuvent mettre jusqu’à 5 minutes à s’afficher. 
 
 ### <a name="unsupported-datasets"></a>Jeux de données non pris en charge
 
-Les jeux de données suivants n’est pas accessibles à l’aide de points de terminaison XMLA. Ces jeux de données *ne sera pas* apparaissent sous l’espace de travail dans SSMS ou dans d’autres outils : 
+Les jeux de données suivants ne sont pas accessibles à l’aide de points de terminaison XMLA. Ces jeux de données ne s’affichent*pas* sous l’espace de travail dans SSMS ou dans d’autres outils : 
 
 - Jeux de données avec une connexion active à des modèles Analysis Services. 
-- Jeux de données à transmettre des données à l’aide de l’API REST.
-- Jeux de données du classeur Excel. 
+- Jeux de données avec des données push à l’aide de l’API REST.
+- Jeux de données de classeur Excel. 
 
-Les jeux de données suivants n’est pas pris en charge dans le service Power BI :   
+Les jeux de données suivants ne sont pas pris en charge dans le service Power BI :   
 
-- Jeux de données avec une connexion active à un jeu de données Power BI.
+- Jeux de données avec une connexion active à un jeu de données Power BI.
 
 ## <a name="audit-logs"></a>Journaux d’audit 
 
-Les applications clientes et des outils de vous connecter à un espace de travail, l’accès via les points de terminaison XMLA sont enregistrées dans les journaux d’audit de Power BI sous la **GetWorkspaces** opération. Pour plus d’informations, consultez [audit de Power BI](service-admin-auditing.md).
+Quand des applications et outils clients se connectent à un espace de travail, l’accès via les points de terminaison XMLA est journalisé dans les journaux d’audit Power BI sous l’opération **GetWorkspaces**. Pour en savoir plus, consultez [Audit Power BI](service-admin-auditing.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Références de Analysis Services](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
+[Informations de référence sur Analysis Services](https://docs.microsoft.com/bi-reference/#pivot=home&panel=home-all)   
 [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/sql-server-management-studio-ssms)   
-[SQL Server Analysis Services tabulaire protocole](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
+[Protocole tabulaire SQL Server Analysis Services](https://docs.microsoft.com/openspecs/sql_server_protocols/ms-ssas-t/b98ed40e-c27a-4988-ab2d-c9c904fe13cf)   
 [Vues de gestion dynamique (DMV)](https://docs.microsoft.com/sql/analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services)   
 
 

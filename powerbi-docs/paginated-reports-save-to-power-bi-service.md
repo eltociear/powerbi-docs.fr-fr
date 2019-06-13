@@ -1,5 +1,5 @@
 ---
-title: Publier un rapport paginé dans le service Power BI (préversion)
+title: Publier un rapport paginé dans le service Power BI
 description: Dans ce tutoriel, vous apprendrez à publier un rapport paginé dans le service Power BI en le chargeant depuis votre ordinateur local.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 93b712d385b78ea806e57769da72bdf41fbaefc3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1e5f4a4fda8c6d11ead487ce2891e5c085463b75
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61424005"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839592"
 ---
-# <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publier un rapport paginé dans le service Power BI (préversion)
+# <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publier un rapport paginé dans le service Power BI
 
 Dans cet article, vous apprendrez à publier un rapport paginé dans le service Power BI en le chargeant depuis votre ordinateur local. Vous pouvez charger des rapports paginés vers Mon espace de travail ou d’autres espaces de travail, tant que l’espace de travail figure dans une capacité Premium. Recherchez l’icône en forme de losange ![Icône en forme de losange pour la capacité Power BI Premium](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) en regard du nom de l'espace de travail. 
 
@@ -89,5 +89,5 @@ Actuellement, les passerelles ne prennent pas en charge les paramètres à valeu
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Afficher un rapport paginé dans le service Power BI](paginated-reports-view-power-bi-service.md)
-- [Présentation des rapports paginés dans Power BI Premium (préversion)](paginated-reports-report-builder-power-bi.md)
+- [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)
 
