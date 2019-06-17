@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a06a37e89f7984ab227d54ee5b06550a6ae3e4d6
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: dae93a2555101a42f072158f8536319783b3f973
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448273"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809115"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Sources de données prises en charge par DirectQuery dans Power BI
 
@@ -25,6 +25,7 @@ Les sources de données suivantes prennent en charge DirectQuery dans Power BI�
 
 * Amazon Redshift
 * AtScale (bêta)
+* Azure Data Explorer
 * Azure HDInsight Spark
 * [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
 * [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
