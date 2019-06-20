@@ -88,7 +88,7 @@
               href: end-user-insights.md
             - name: Activer les fonctionnalités en préversion
               href: end-user-preview-features.md
-        - name: Obtenir les données
+        - name: Obtenir des données
           items:
             - name: "Applications dans Power\_BI"
               href: end-user-apps.md
@@ -106,6 +106,8 @@
       items:
         - name: Glossaire et terminologie
           href: end-user-glossary.md
+        - name: Forum Aux Questions
+          href: end-user-faq.md
         - name: Navigateurs pris en charge
           href: end-user-browsers.md
         - name: "Types d’informations rapides pris en charge par Power\_BI"
