@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769742"
@@ -57,7 +57,7 @@ Une fois que vous avez créé l’expression DAX pour le champ que vous créez d
 
 Pour sélectionner le champ et l’appliquer, accédez à la **visualisations** volet. Dans le **Format** zone, sélectionnez **titre** pour afficher les options de titre pour l’élément visuel. 
 
-Lorsque vous cliquez sur **texte du titre**, un menu contextuel s’affiche qui vous permet de sélectionner ***fx * mise en forme conditionnelle**. Lorsque vous sélectionnez cet élément de menu, un **texte du titre** boîte de dialogue s’affiche. 
+Lorsque vous cliquez sur **texte du titre**, un menu contextuel s’affiche qui vous permet de sélectionner ***fx* mise en forme conditionnelle**. Lorsque vous sélectionnez cet élément de menu, un **texte du titre** boîte de dialogue s’affiche. 
 
 ![Boîte de dialogue de capture d’écran de titre texte](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
