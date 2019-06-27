@@ -10,14 +10,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 083d78552c124c3a53d669357678fb473dfcd5f2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0a80a75765d6e25f42163953e28b544171e8fdb2
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514559"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408339"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Résolution des problèmes de la fonctionnalité Analyser dans Excel
+
 Il peut arriver que vous obteniez un résultat inattendu lors de l’utilisation de la fonctionnalité Analyser dans Excel, ou que la fonctionnalité ne fonctionne pas comme prévu. Cette page fournit des solutions pour les problèmes courants lors de l’utilisation de la fonctionnalité Analyser dans Excel.
 
 > [!NOTE]
@@ -57,8 +58,6 @@ Vous pouvez télécharger la version la plus récente des bibliothèques de four
 Si vos bibliothèques clientes de fournisseur OLE DB Excel sont à jour, vous verrez une boîte de dialogue qui ressemble à ceci :
 
 ![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
-
-C:\Users\davidi\Desktop\powerbi-content-pr\articles\media\powerbi-desktop-troubleshooting-analyze-in-excel
 
 Autrement, si la nouvelle version que vous installez est plus récente que la version sur votre ordinateur, la boîte de dialogue suivante s’affiche :
 

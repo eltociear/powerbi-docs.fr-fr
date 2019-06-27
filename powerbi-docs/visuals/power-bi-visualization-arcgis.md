@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.subservice: powerbi-visuals
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b3f1c3780b60efc2ade444960a92234afecc71e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 74c4468cbb764d8bd7720845939b3b7fbdf66b06
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61253035"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299471"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>Cartes ArcGIS dans le service Power BI et Power BI Desktop par ESRI
 Ce tutoriel est écrit du point de vue d’une personne qui crée une carte ArcGIS. Une fois que le créateur partage une carte ArcGIS avec un collègue, ce dernier peut afficher et exploiter la carte, mais pas enregistrer de modifications. Pour en savoir plus sur l’affichage d’une carte ArcGIS, consultez [Interaction avec des cartes ArcGIS](power-bi-visualizations-arcgis.md).
