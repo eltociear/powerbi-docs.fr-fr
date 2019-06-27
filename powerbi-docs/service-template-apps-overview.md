@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/26/2019
 ms.author: maggies
-ms.openlocfilehash: 0ea8f19fa36bf1f9ceb5f8f0b92bd53ebdfa2a01
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578528"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751108"
 ---
 # <a name="what-are-power-bi-template-apps-preview"></a>Que sont les applications modèles Power BI ? (préversion)
 
@@ -24,10 +24,10 @@ Les applications modèles remplacent les packs de contenu de service actuels. En
 
 Vous concevez des applications modèles qui permettent à vos clients de se connecter et d’instancier avec leurs propres comptes. En tant qu’experts dans leur domaine, les clients peuvent déverrouiller les données pour les rendre facilement consommables par leurs utilisateurs professionnels.  
 
-Vous envoyez à vos applications de modèle pour le portail Cloud Partner. Les applications sont ensuite mises à la disposition de tous dans la galerie d’applications Power BI (app.powerbi.com/getdata/services) et sur Microsoft AppSource (appsource.microsoft.com). Voici un aperçu général de l’expérience de création d’application modèle public.  
+Vous soumettez les applications modèles sur le portail Cloud Partner. Les applications sont ensuite mises à la disposition de tous dans la galerie d’applications Power BI (app.powerbi.com/getdata/services) et sur Microsoft AppSource (appsource.microsoft.com). Voici un aperçu général de la création d’applications modèles publiques.  
 
 ## <a name="process"></a>Processus
-Le processus général pour développer et soumettre une application de modèle implique plusieurs étapes. Certaines étapes peuvent inclure plusieurs activités en même temps.
+Le processus général de développement et de soumission d’une application modèle implique plusieurs étapes. Certaines étapes peuvent inclure plusieurs activités simultanées.
 
 
 | Phase | Power BI Desktop |  |Service Power BI  |  |Portail Cloud Partner  |

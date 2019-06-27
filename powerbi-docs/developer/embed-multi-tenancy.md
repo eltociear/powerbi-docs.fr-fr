@@ -6,15 +6,15 @@ ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
-ms.subservice: powerbi - developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 56b417cb60f7c149b926f4307be0a50b33c278d6
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374685"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751024"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gérer la mutualisation avec l’analytique incorporée Power BI
 
@@ -142,9 +142,9 @@ Pour ajouter une isolation supplémentaire, un développeur d’applications peu
 
 ### <a name="scalability"></a>Extensibilité
 
-Un avantage de ce modèle est tel que la séparation des données en plusieurs jeux de données pour chaque locataire permet de pallier les [limites de taille d’un jeu de données unique](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (de 10 Go actuellement dans une capacité). Lorsque la capacité est surchargée, il peut supprimer des jeux de données inutilisés pour libérer de la mémoire pour les jeux de données actives. Ceci n’est pas possible avec un jeu de données volumineux unique. Grâce à plusieurs jeux de données, il est également possible de séparer les locataires entre plusieurs capacités Power BI si nécessaire.
+Un avantage de ce modèle est tel que la séparation des données en plusieurs jeux de données pour chaque locataire permet de pallier les [limites de taille d’un jeu de données unique](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (de 10 Go actuellement dans une capacité). Lorsque la capacité est dépassée, les jeux de données non utilisés peuvent être supprimés afin de libérer de la mémoire pour les jeux de données actifs. Ceci n’est pas possible avec un jeu de données volumineux unique. Grâce à plusieurs jeux de données, il est également possible de séparer les locataires entre plusieurs capacités Power BI si nécessaire.
 
-Malgré ces avantages, vous devez prendre en compte l’échelle que l’application SaaS peut atteindre ultérieurement. Par exemple, une application peut atteindre les limitations du nombre d’artefacts qu’elle peut effectivement gérer. Pour plus de détails, consultez les [limitations](#summary-comparison-of-the-different-approaches) de déploiement plus loin dans cet article. La capacité utilisée de la référence (SKU) présente une limite de la taille de mémoire des jeux de données doivent tenir dans, les actualisations combien peuvent s’exécuter en même temps et la fréquence maximale des actualisations de données. Il est recommandé de tester lorsque vous gérez des centaines, voire des milliers, de jeux de données. Il est également recommandé de prendre en compte le volume moyen et maximal d’utilisation, ainsi que les locataires spécifiques ayant des jeux de données volumineux ou des modèles d’utilisation différents, qui sont gérés différemment des autres locataires.
+Malgré ces avantages, vous devez prendre en compte l’échelle que l’application SaaS peut atteindre ultérieurement. Par exemple, une application peut atteindre les limitations du nombre d’artefacts qu’elle peut effectivement gérer. Pour plus de détails, consultez les [limitations](#summary-comparison-of-the-different-approaches) de déploiement plus loin dans cet article. La référence SKU de capacité utilisée présente une limite concernant la taille de mémoire à laquelle les jeux de données doivent s’adapter, ainsi qu’une limite concernant le nombre d’actualisations pouvant être exécutées simultanément et la fréquence maximale des actualisations des données. Il est recommandé de tester lorsque vous gérez des centaines, voire des milliers, de jeux de données. Il est également recommandé de prendre en compte le volume moyen et maximal d’utilisation, ainsi que les locataires spécifiques ayant des jeux de données volumineux ou des modèles d’utilisation différents, qui sont gérés différemment des autres locataires.
 
 ### <a name="automation--operational-complexity"></a>Automatisation et complexité opérationnelle
 

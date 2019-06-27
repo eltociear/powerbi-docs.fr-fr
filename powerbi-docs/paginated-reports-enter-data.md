@@ -1,5 +1,5 @@
 ---
-title: Entrer des données directement dans un rapport paginé dans le Générateur de rapports (préversion)
+title: Entrer des données directement dans un rapport paginé dans le Générateur de rapports
 description: Dans cet article, vous allez apprendre à entrer des données directement dans un rapport paginé dans le Générateur de rapports.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/19/2018
-ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: fd000ffd0d47935f36e72f6d0000d548623edf0a
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61424471"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839108"
 ---
-# <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Entrer des données directement dans un rapport paginé dans le Générateur de rapports (préversion) - Power BI
+# <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Entrer des données directement dans un rapport paginé dans le Générateur de rapports - Power BI
 
 Cet article traite de la nouvelle version du Générateur de rapports SQL Server 2016, et plus particulièrement d’une fonctionnalité qui vous permet d’entrer des données directement dans un rapport RDL sous forme d’un jeu de données incorporé.  Cette fonctionnalité est similaire à Power BI Desktop. Vous pouvez taper des données directement dans un jeu de données dans votre rapport ou les coller dans un autre programme tel que Microsoft Excel. Si vous créez un jeu de données en entrant des données, vous pouvez l’utiliser comme n’importe quel autre jeu de données incorporé dont vous êtes l’auteur. Vous pouvez également ajouter plusieurs tables et en utiliser une comme filtre pour l’autre. Cette fonctionnalité est particulièrement utile pour les petits jeux de données statiques dont vous pouvez avoir besoin dans votre rapport, comme des paramètres de rapport.
  
@@ -76,7 +76,7 @@ Vous pouvez utiliser votre jeu de données comme base pour les visualisations de
 
 ## <a name="upload-the-paginated-report-to-the-power-bi-service"></a>Charger le rapport paginé sur le service Power BI
 
-Les rapports paginés étant à présent pris en charge dans le service Power BI en préversion, vous pouvez charger votre rapport paginé sur une capacité Premium. Pour plus d’informations, consultez [Charger un rapport paginé](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
+Les rapports paginés étant désormais pris en charge dans le service Power BI, vous pouvez charger votre rapport paginé sur une capacité Premium. Pour plus d’informations, consultez [Charger un rapport paginé](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
 
 ## <a name="upload-the-paginated-report-to-a-report-server"></a>Charger le rapport paginé sur un serveur de rapports
 
@@ -98,5 +98,5 @@ Voilà, vous pouvez désormais publier des rapports qui utilisent cette nouvelle
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Présentation des rapports paginés dans Power BI Premium (préversion)](paginated-reports-report-builder-power-bi.md)
+- [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)
 - [Présentation de Power BI Report Server](report-server/get-started.md)

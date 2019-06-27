@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: maggies
-ms.openlocfilehash: 653050fbe5c860ef1902a4700c3a70a8af2f7092
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2dc9ae7eb7ecd82cdd6c9ea7ddbc6aa1fc70ca8b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514906"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751194"
 ---
 # <a name="create-a-template-app-in-power-bi-preview"></a>Créer une application modèle dans Power BI (préversion)
 
 Les nouvelles *applications modèles* Power BI permettent aux partenaires Power BI de créer des applications Power BI avec peu ou pas de codage et de les déployer ensuite vers n’importe quel client Power BI.  Cet article contient des instructions pas à pas pour créer une application modèle Power BI.
 
-Si vous pouvez créer des tableaux de bord et rapports Power BI, vous pouvez devenir un *Générateur d’applications modèle* et génère et empaquète des analytique contenu dans un *application*. Vous pouvez déployer votre application à d’autres locataires Power BI via n’importe quelle plateforme disponible, telles que AppSource, ou à l’aide dans votre propre service web. Comme un générateur, vous avez la possibilité de créer un package protégé analytique pour la distribution.
+Si vous créez déjà des rapports et tableaux de bord Power BI, vous pouvez devenir *concepteur d’applications modèles* et créer vous-même du contenu analytique et l’intégrer dans une *application*. Vous pouvez déployer votre application sur d’autres locataires Power BI par le biais de n’importe quelle plateforme disponible, comme AppSource, ou en l’utilisant dans votre propre service web. En tant que concepteur, vous avez la possibilité de créer un package analytique protégé pour la distribution.
 
-Les administrateurs de locataires Power BI régissent et contrôlent les utilisateurs dans leur organisation qui sont autorisés à créer des applications modèles et/ou à les installer. Ces utilisateurs sont autorisés peuvent installer votre application du modèle, puis modifiez-le et distribuez-la aux consommateurs de Power BI dans leur organisation.
+Les administrateurs de locataires Power BI régissent et contrôlent les utilisateurs dans leur organisation qui sont autorisés à créer des applications modèles et/ou à les installer. Ces utilisateurs autorisés peuvent installer votre application modèle, puis la modifier et la distribuer aux consommateurs Power BI dans leur organisation.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -30,7 +30,7 @@ Les prérequis pour créer une application modèle sont les suivants :
 
 - Une [licence Power BI Pro](service-self-service-signup-for-power-bi.md)
 - Une [installation de Power BI Desktop](desktop-get-the-desktop.md) (facultatif)
-- Vous êtes familiarisé avec le [concepts de base de Power BI](service-basic-concepts.md)
+- Une bonne connaissance des [concepts de base de Power BI](service-basic-concepts.md)
 - Les autorisations de création d’application modèle. Pour plus d’informations, consultez [Paramètres des applications modèles dans le portail d’administration](service-admin-portal.md#template-apps-settings-preview) Power BI.
 
 ## <a name="enable-app-developer-mode"></a>Activer le mode développeur d’applications
@@ -66,7 +66,7 @@ Pour créer une application modèle que vous pourrez ensuite distribuer à d’a
 
 5. Sélectionnez **Enregistrer**.
 >[!NOTE]
->Vous avez besoin d’autorisations à partir de votre administrateur Power BI pour promouvoir des applications de modèle.
+>Vous avez besoin d’autorisations de votre administrateur Power BI pour promouvoir des applications modèles.
 
 ## <a name="create-the-content-in-your-template-app"></a>Créer le contenu dans votre application modèle
 
@@ -86,43 +86,43 @@ Maintenant que vous avez ajouté du contenu dans votre espace de travail, vous �
 
     ![Créer une application](media/service-template-apps-create/power-bi-create-app.png)
 
-    Ici, vous définissez les options de génération supplémentaires pour votre application de modèle, dans cinq catégories :
+    Ici, vous renseignez d’autres options de création pour votre application modèle, réparties en cinq catégories :
 
     **Personnalisation**
 
     ![Personnalisation](media/service-template-apps-create/power-bi-create-branding.png)
     - Nom de l’application
     - Description
-    - Site de support (lien est présenté sous les informations sur l’application après la redistribution d’application du modèle en tant qu’application de l’organisation)
-    - Logo de l’application (limite de taille de fichier 45 Ko, proportions de 1:1, .png .jpg .jpeg formats)
-    - Couleur de thème d’application
+    - Site de prise en charge (le lien est présenté sous les informations de l’application après avoir redistribué l’application modèle en tant qu’application de l’organisation)
+    - Logo de l’application (taille limite de fichier 45 Ko, proportions 1:1, formats .png .jpg .jpeg)
+    - Couleur de thème de l’application
 
     **Contenu**
 
-    **Page de lancement d’application :** Définir un rapport ou un tableau de bord à la page d’accueil de votre application, utilisez une page d’accueil qui vous donne l’impression de droite :
+    **Page d’accueil de l’application :** Définissez un rapport ou un tableau de bord comme page d’accueil de votre application, utilisez une page d’accueil qui donne une bonne impression :
 
     ![Contenu](media/service-template-apps-create/power-bi-create-content.png)
 
     **Contrôle**
 
-    Définir des limites et restrictions ayant des utilisateurs de votre application avec le contenu de votre application. Vous pouvez utiliser ce contrôle pour protéger les droits de propriété intellectuelle dans votre application.
+    Définissez les limitations et restrictions que devront respecter les utilisateurs avec le contenu de votre application. Ce contrôle vous permet de protéger la propriété intellectuelle de votre application.
 
     ![Contrôle](media/service-template-apps-create/power-bi-create-control.png)
 
     >[!NOTE]
-    >Exportation au format .pbix est toujours bloqué pour les utilisateurs de l’installation de l’application.
+    >L’exportation au format .pbix est toujours bloquée pour les utilisateurs qui installent l’application.
 
     **Paramètres**
 
-    Utilisez cette catégorie pour gérer le comportement du paramètre lors de la connexion aux sources de données. En savoir plus sur [création de paramètres de requête](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+    Utilisez cette catégorie pour gérer le comportement des paramètres lors de la connexion aux sources de données. Explorez davantage la [création de paramètres de requête](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
     ![Paramètres](media/service-template-apps-create/power-bi-create-parameters.png)
-    - **Valeur**: valeur de paramètre par défaut.
-    - **Requis**: utilisez cela pour exiger le programme d’installation pour un paramètre spécifique à l’utilisateur d’entrée.
-    - **Verrou**: Le verrouillage empêche le programme d’installation à partir d’un paramètre de mise à jour.
-    - **Statique**: Activer dans le cas où l’application contient *uniquement* échantillonner des données. Lorsque vous sélectionnez **statique**, l’Assistant d’installation ne demande aux utilisateurs de se connecter à une source de données.
+    - **Valeur** : valeur de paramètre par défaut.
+    - **Obligatoire** : à utiliser pour forcer le programme d’installation à entrer un paramètre spécifique à l’utilisateur.
+    - **Verrouiller** : le verrouillage empêche le programme d’installation de mettre à jour un paramètre.
+    - **Statique** : à activer si l’application contient *uniquement* des exemples de données. Lorsque vous sélectionnez **Statique**, l’Assistant d’installation ne demande pas aux utilisateurs de se connecter à une source de données.
 
-    **Accès** dans la phase de test, décidez quels autres utilisateurs de votre organisation peuvent installer et tester votre application. Ne vous inquiétez pas, vous pouvez toujours revenir et modifier ces paramètres ultérieurement (paramètre n’affecte pas l’accès de l’application de modèle distribuée).
+    **Accès** Dans la phase de test, déterminez quels utilisateurs de votre organisation peuvent installer et tester votre application. Ne vous inquiétez pas, vous pourrez toujours revenir et changer ces paramètres ultérieurement (le paramètre n’affecte pas l’accès de l’application modèle distribuée).
 
 2. Sélectionnez **Créer une application**.
 
@@ -141,9 +141,9 @@ Avant de mettre votre nouvelle application modèle à la disposition de tous, vo
 - Promouvoir le package de préproduction en production : version en production.
 - Supprimer un package, ou recommencer à partir d’une phase précédente.
 
-L’URL ne change pas lorsque vous déplacez entre les phases de mise en production. Promotion n’affecte pas l’URL proprement dite.
+L’URL ne change pas quand vous passez d’une phase de mise en production à une autre. La promotion n’affecte pas l’URL proprement dite.
 
-Passons en revue les étapes :
+Examinons chacune de ces phases :
 
 1. Dans l’espace de travail d’application modèle, sélectionnez **Gestion des mises en production**.
 
@@ -171,15 +171,15 @@ Passons en revue les étapes :
     ![Bien démarrer avec votre nouvelle application](media/service-template-apps-create/power-bi-template-app-get-started.png)
 8. Sélectionnez **Explorer l’application** pour passer en revue l’application de test avec les exemples de données.
 9. Pour effectuer des modifications, revenez à l’application dans l’espace de travail d’origine. Modifiez l’application de test jusqu’à ce que vous soyez satisfait.
-10. Lorsque vous êtes prêt à promouvoir votre application pour la préproduction pour d’autres tests en dehors de votre client, revenez à la **Release Management** volet et sélectionnez **promouvoir application**. 
+10. Quand vous êtes prêt à promouvoir votre application en préproduction pour la tester en dehors de votre locataire, revenez au volet **Gestion des mises en production** et sélectionnez **Promouvoir l’application**. 
 
     ![Promouvoir l’application en préproduction](media/service-template-apps-create/power-bi-template-app-promote.png)
 
     >[!NOTE]
-    > Quand l’application est promue rend disponible publiquement en dehors de votre organisation.
+    > Quand l’application est promue, elle devient accessible à toutes les personnes extérieures à votre organisation.
 
 11. Sélectionnez **Promouvoir** pour confirmer votre choix.
-12. Copiez cette nouvelle URL à partager en dehors de votre locataire pour les besoins du test. Ce lien est également celui que vous soumettez pour commencer le processus de distribution de votre application sur AppSource en créant un [nouvelle offre de portail Microsoft Cloud Partner](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Envoyer des liens de préproduction uniquement vers le portail Cloud Partner. Une fois que l’application est approuvée et vous obtenez notification qu’elle est publiée dans AppSource, vous pouvez promouvoir ce package en production dans Power BI.
+12. Copiez cette nouvelle URL à partager en dehors de votre locataire pour les besoins du test. Ce lien est le même que celui que vous soumettez pour commencer le processus de distribution de votre application sur AppSource en créant une [nouvelle offre du portail Cloud Partner](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Soumettez uniquement des liens de préproduction au portail Cloud Partner. Une fois que l’application est approuvée et que vous avez obtenu une notification disant qu’elle est publiée dans AppSource, vous pouvez promouvoir ce package en production dans Power BI.
 13. Quand votre application est prête à être mise en production ou partagée via AppSource, revenez au volet **Gestion des mises en production** et sélectionnez **Promouvoir l’application** à côté de **Préproduction**.
 14. Sélectionnez **Promouvoir** pour confirmer votre choix.
 
@@ -202,11 +202,11 @@ Une fois que votre application est en production, vous pouvez recommencer la pha
 
     ![Deux versions d’une application modèle](media/service-template-apps-create/power-bi-template-app-2-versions.png)
 
-5. Lorsque vous êtes prêt à promouvoir votre application pour la préproduction pour d’autres tests en dehors de votre client, revenez au volet Release Management et sélectionnez **promouvoir application** regard **test**.
-6. Votre lien est maintenant en direct, soumettre à nouveau vers le portail Cloud Partner en suivant les étapes indiquées dans [mise à jour d’application Power BI offre](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
+5. Quand vous êtes prêt à promouvoir votre application en préproduction pour la tester en dehors de votre locataire, revenez au volet Gestion des mises en production et sélectionnez **Promouvoir l’application** à côté de **Test**.
+6. Votre lien est maintenant publié, soumettez-le à nouveau dans le portail Cloud Partner en suivant les étapes indiquées dans [Mettre à jour une offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
 
 >[!NOTE]
->Promouvoir votre application à la phase de production une fois que votre application est approuvée par le portail Microsoft Cloud Partner et vous l’avez publié.
+>Promouvez votre application en phase de production une fois qu’elle est approuvée par le portail Cloud Partner et que vous l’avez publiée.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 9cf3eea99813d315c72f3210f3938deae94505b0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 554a5de238af650ab4009669d55a2fadedd4a29f
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61234484"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809147"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -41,7 +41,7 @@ Les fonctionnalités suivantes sont disponibles pour les clients de **Power BI U
 
 ## <a name="connectivity-between-government-and-global-azure-cloud-services"></a>Connectivité entre les services cloud Azure Government et mondial 
 
-Azure est réparti entre plusieurs clouds. Par défaut, les locataires sont autorisés à ouvrir des règles de pare-feu vers une instance spécifique du cloud, mais la mise en réseau entre les clouds est différente et requiert l’ouverture de règles de pare-feu spécifiques pour la communication entre les services. Si vous êtes client Power BI et que vous disposez d’instances SQL actuelles dans le cloud public auxquelles vous souhaitez accéder, vous devez ouvrir des règles de pare-feu spécifiques dans SQL vers la plage d’IP du cloud Azure Government, pour les centres de données suivants :
+Azure est réparti entre plusieurs clouds. Par défaut, les locataires sont autorisés à ouvrir des règles de pare-feu sur une instance cloud spécifique, mais le réseau entre les clouds est différent et nécessite l’ouverture de règles de pare-feu spécifiques pour la communication entre les services. Si vous êtes client Power BI et que vous disposez d’instances SQL actuelles dans le cloud public auxquelles vous souhaitez accéder, vous devez ouvrir des règles de pare-feu spécifiques dans SQL vers la plage d’IP du cloud Azure Government, pour les centres de données suivants :
 
 * USGov Iowa
 * USGov Virginia

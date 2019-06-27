@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e28af5a03fd799f088d428f16621358c2a4f7c5
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770472"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823321"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Résoudre les problèmes de votre application incorporée
 
@@ -80,6 +80,7 @@ Une capture Fiddler peut être nécessaire pour approfondir vos recherches. Plus
 * Le jeton d’authentification Azure AD a expiré.
 * L’utilisateur authentifié n’est pas membre du groupe (espace de travail d’application).
 * L’utilisateur authentifié n’est pas administrateur du groupe (espace de travail d’application).
+* L’utilisateur authentifié ne dispose pas des autorisations nécessaires. Les autorisations peuvent être mises à jour à l’aide de l’[API refreshUserPermissions](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions).
 * L’en-tête d’autorisation n’est peut-être pas répertorié correctement. Vérifiez l’absence de fautes de frappe.
 
 Le backend de l’application doit peut-être actualiser le jeton d’authentification avant d’appeler GenerateToken.
@@ -101,7 +102,7 @@ Le backend de l’application doit peut-être actualiser le jeton d’authentifi
 
 ### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>L’authentification a échoué avec AADSTS90002 : « authorize » introuvable pour le locataire
 
- Si vous recevez des messages pendant la connexion du type ***erreur : invalid_request, error_description : AADSTS90002 : « authorize » introuvable pour le locataire***, c’est parce que la bibliothèque ADAL 4.x ne prend pas en charge « https://login.microsoftonline.com/{Tenant}/oauth2/authorize/ » comme URL d’autorité.
+ Si vous recevez des messages pendant la connexion du type ***erreur : invalid_request, error_description : AADSTS90002 : « authorize » introuvable pour le locataire***, c’est parce que la bibliothèque ADAL 4.x ne prend pas en charge « https://login.microsoftonline.com/{Tenant}/oauth2/authorize/  » comme URL d’autorité.
  
 Pour résoudre ce problème, vous devez supprimer « oauth2/authorize » à la fin de votre URL d’autorité, consultez les [exemples des développeurs Power BI](https://github.com/Microsoft/PowerBI-Developer-Samples) pour référence.
 
@@ -185,9 +186,9 @@ Le consentement de l’utilisateur est désactivé pour le locataire.
 
 *Octroi d’autorisations d’accès* à l’application par un administrateur (pour l’ensemble du locataire ou pour un utilisateur spécifique).
 
-### <a name="cs1061-error"></a>Erreur de CS1061
+### <a name="cs1061-error"></a>Erreur CS1061
 
-Télécharger [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) si vous rencontrez une « 'AuthenticationContext' ne contient-elle pas d’une définition pour 'AcquireToken' et aucune AcquireToken accessible de « » d’acceptant un premier argument de type ' AuthenticationContext' est introuvable (vous manque-t-il une à l’aide de la directive ou une référence d’assembly ?) » erreur.
+Si l’erreur suivante s’affiche, téléchargez [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) : « AuthenticationContext' ne contient pas de définition pour 'AcquireToken', et aucun 'AcquireToken' accessible qui accepte un premier argument de type 'AuthenticationContext' n’a été trouvé (peut-être vous manque-t-il une directive using ou une référence d’assembly ?) ».
 
 ## <a name="data-sources"></a>Sources de données
 

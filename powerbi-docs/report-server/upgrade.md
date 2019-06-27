@@ -10,12 +10,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 8cee670028da828e052d8fe30c594882555c5d53
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 52863ea4bd666547a9c63b3add1d2d9c0626adc7
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770160"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839688"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Mettre à niveau Power BI Report Server
 
@@ -31,21 +31,21 @@ Avant de mettre à niveau un serveur de rapports, nous vous recommandons de suiv
 
 ### <a name="backing-up-the-encryption-keys"></a>Sauvegarder les clés de chiffrement
 
-Vous devez sauvegarder les clés de chiffrement lorsque vous configurez une installation de serveur de rapports pour la première fois. Vous devez également sauvegarder les clés à chaque fois que vous modifiez l’identité des comptes de service ou renommez l’ordinateur. Pour plus d’informations, consultez [Sauvegarder et restaurer des clés de chiffrement Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Lorsque vous configurez une installation de serveur de rapports pour la première fois, vous devez sauvegarder les clés de chiffrement. Vous devez également sauvegarder les clés chaque fois que vous changez l’identité des comptes de service ou renommez l’ordinateur. Pour plus d’informations, consultez [Sauvegarder et restaurer des clés de chiffrement Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### <a name="backing-up-the-report-server-databases"></a>Sauvegarder les bases de données de serveur de rapports
 
-Étant donné qu’un serveur de rapports est un serveur sans état, toutes les données d’application sont stockées dans les bases de données **reportserver** et **reportservertempdb** qui s’exécutent sur une instance du moteur de base de données SQL Server. Vous pouvez sauvegarder le **reportserver** et **reportservertempdb** bases de données à l’aide d’une des méthodes prises en charge pour la sauvegarde des bases de données SQL Server. Les recommandations propres aux bases de données de serveur de rapports sont les suivantes :
+Étant donné qu’un serveur de rapports est un serveur sans état, toutes les données d’application sont stockées dans les bases de données **reportserver** et **reportservertempdb** qui s’exécutent sur une instance du moteur de base de données SQL Server. Vous pouvez sauvegarder les bases de données **reportserver** et **reportservertempdb** en utilisant l’une des méthodes prises en charge pour la sauvegarde des bases de données SQL Server. Les recommandations propres aux bases de données de serveur de rapports sont les suivantes :
 
-* Utiliser le mode de récupération complète pour sauvegarder le **reportserver** base de données.
-* Utiliser le mode de récupération simple pour sauvegarder le **reportservertempdb** base de données.
-* Vous pouvez utiliser des planifications de sauvegarde différentes pour chaque base de données. La seule raison pour sauvegarder le **reportservertempdb** consiste à éviter d’avoir à recréer s’il existe une défaillance matérielle. En cas de défaillance matérielle, il n’est pas nécessaire de récupérer les données de **reportservertempdb**, mais vous avez besoin de la structure de la table. Si vous perdez la base de données **reportservertempdb**, le seul moyen de la récupérer est de recréer la base de données du serveur de rapports. Si vous recréez la base de données **reportservertempdb**, il est important de lui donner le même nom que la base de données de serveur de rapports primaire.
+* Utilisez le mode de récupération complète pour sauvegarder la base de données **reportserver**.
+* Utilisez le mode de récupération simple pour sauvegarder la base de données **reportservertempdb**.
+* Vous pouvez utiliser des planifications de sauvegarde différentes pour chaque base de données. La sauvegarde de la base de données **reportservertempdb** a pour seul but d’éviter d’avoir à la recréer en cas de défaillance matérielle. En cas de défaillance matérielle, il n’est pas nécessaire de récupérer les données de **reportservertempdb**, mais vous avez besoin de la structure de la table. Si vous perdez la base de données **reportservertempdb**, le seul moyen de la récupérer est de recréer la base de données du serveur de rapports. Si vous recréez la base de données **reportservertempdb**, il est important de lui donner le même nom que la base de données de serveur de rapports primaire.
 
 Pour plus d’informations sur la sauvegarde et la restauration des bases de données relationnelles SQL Server, consultez [Sauvegarde et restauration des bases de données SQL Server](https://docs.microsoft.com/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ### <a name="backing-up-the-configuration-files"></a>Sauvegarder des fichiers de configuration
 
-Power BI Report Server utilise des fichiers de configuration pour stocker les paramètres de l’application. Vous devez sauvegarder les fichiers lorsque vous configurez tout d’abord le serveur et une fois que vous déployez toutes les extensions personnalisées. Les fichiers à sauvegarder comprennent :
+Power BI Report Server utilise des fichiers de configuration pour stocker les paramètres de l’application. Vous devez sauvegarder les fichiers lorsque vous configurez le serveur pour la première fois et après avoir déployé des extensions personnalisées. Les fichiers à sauvegarder comprennent :
 
 * config.json
 * RSHostingService.exe.config
@@ -63,15 +63,15 @@ La mise à niveau de Power BI Report Server est très simple. Quelques étape
 
 2. Sélectionnez **Mettre à niveau Power BI Report Server**.
 
-    ![Mettre à niveau Power BI Report Server](media/upgrade/reportserver-upgrade1.png "mise à niveau Power BI Report Server")
+    ![Mettre à niveau Power BI Report Server](media/upgrade/reportserver-upgrade1.png "Mettre à niveau Power BI Report Server")
 
 3. Lisez et acceptez les conditions générales du contrat de licence, puis sélectionnez **Mettre à niveau**.
 
-    ![Contrat de licence](media/upgrade/reportserver-upgrade-eula.png "contrat de licence")
+    ![Contrat de licence](media/upgrade/reportserver-upgrade-eula.png "Contrat de licence")
 
 4. Une fois la mise à niveau effectuée, sélectionnez **Configurer Report Server** pour lancer le Gestionnaire de configuration de Reporting Services, ou sélectionnez **Fermer** pour quitter le programme d’installation.
 
-    ![Configuration de mise à niveau](media/upgrade/reportserver-upgrade-configure.png)
+    ![Configuration de la mise à niveau](media/upgrade/reportserver-upgrade-configure.png)
 
 ## <a name="upgrade-power-bi-desktop"></a>Mettre à niveau Power BI Desktop
 

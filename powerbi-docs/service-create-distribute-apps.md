@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 67678a150b4fce802bef2b287211cf438b832e82
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: eccda071b6c6abc92640024c3587bafa71038dee
+ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66459569"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66826610"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publier une application dans Power BI
 
@@ -61,9 +61,17 @@ Quand les tableaux de bord et rapports de votre espace de travail sont prêts, v
    
      ![Navigation dans l’application](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
-5. Sur **Autorisation**, déterminez qui a accès à l’application, et ce que leurs utilisateurs peuvent faire avec elle. 
+5. Sur **Autorisations**, déterminez qui a accès à l’application, et ce que leurs utilisateurs peuvent faire avec elle. 
     - Dans [Espaces de travail classiques](service-create-workspaces.md) : tout le monde dans votre organisation, des personnes spécifiques ou des groupes de sécurité Azure Active Directory (AAD).
-    - Dans les [espaces de travail de nouvelle expérience](service-create-the-new-workspaces.md) : des personnes spécifiques, des listes de distribution et des groupes de sécurité AAD, ainsi que des groupes Office 365.
+    - Dans les [espaces de travail de nouvelle expérience](service-create-the-new-workspaces.md) : des personnes spécifiques, des listes de distribution et des groupes de sécurité AAD, ainsi que des groupes Office 365. Tous les utilisateurs de l’espace de travail ont automatiquement accès à l’application pour cet espace de travail.
+    - Vous pouvez autoriser les utilisateurs d’applications à se connecter aux jeux de données sous-jacents de l’application à l’aide de l’autorisation de génération. Ces jeux de données figureront dans les expériences de recherche des jeux de données.
+    - Vous pouvez autoriser les utilisateurs d’applications à créer une copie des rapports de cette application dans leur espace Mon espace de travail. 
+    
+    >[!IMPORTANT]
+    >Si votre application repose sur des jeux de données provenant d’autres espaces de travail, il vous appartient de vérifier que tous les utilisateurs de l’application ont accès aux jeux de données sous-jacents.
+> 
+>     
+
 
 6. Vous pouvez installer l’application automatiquement pour les destinataires, si votre administrateur Power BI a activé ce paramètre pour vous dans le portail d’administration Power BI. D’autres informations sur l’[installation automatique d’une application](#automatically-install-apps-for-end-users) sont disponibles dans cet article.
 
@@ -151,6 +159,14 @@ Voici quelques points à garder à l’esprit quand vous envoyez (push) des appl
 * Évitez de surcharger les utilisateurs. Ne poussez pas trop d’applications pour laisser la possibilité aux utilisateurs de se rendre compte de l’utilité des applications préinstallées. Il est préférable de contrôler qui peut pousser des applications pour les utilisateurs finaux afin de coordonner la planification. Mettez en place dans votre organisation un point de contact pour obtenir les applications envoyées (par push) aux utilisateurs finaux.
 
 * Les applications ne sont pas installées automatiquement pour les utilisateurs invités qui n’ont pas accepté l’invitation.  
+
+## <a name="allowing-users-to-connect-to-the-apps-underlying-datasets"></a>Autoriser les utilisateurs à se connecter aux jeux de données sous-jacents de l’application
+En cochant l’option permettant à tous les utilisateurs de se connecter aux jeux de données sous-jacents de l’application, les utilisateurs de l’application reçoivent l’autorisation de génération sur le jeu de données sous-jacent. Cela permet aux utilisateurs d’[utiliser les jeux de données d’application dans les espaces de travail](service-datasets-across-workspaces.md) pour rechercher ces jeux de données dans Power BI Desktop et les expériences d’obtention de données du service, et de créer des rapports et des tableaux de bord utilisant ces jeux de données. 
+
+Quand vous décochez cette option, les nouveaux utilisateurs que vous ajoutez à l’application ne reçoivent plus l’autorisation de génération. Cependant, les autorisations existantes sur les jeux de données sous-jacents ne changent pas. Vous pouvez utiliser l’interface utilisateur fournie pour supprimer manuellement l’autorisation de génération des utilisateurs de l’application qui ne doivent plus en bénéficier. Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+
+## <a name="allowing-users-to-make-a-copy-of-the-reports-in-the-app"></a>Autoriser les utilisateurs à faire une copie des rapports dans l’application
+En cochant l’option **Autorisez les utilisateurs à effectuer une copie des rapports dans cette application**, vous autorisez les utilisateurs à enregistrer n’importe quel rapport de l’application dans leur espace Mon espace de travail. Ils peuvent ensuite personnaliser les rapports en fonction de leurs besoins spécifiques. Cette option nécessite l’activation de l’option **Autorisez tous les utilisateurs à se connecter aux jeux de données sous-jacents de l’application à l’aide de l’autorisation de génération**. Cette fonctionnalité se comporte comme la nouvelle fonctionnalité de [copie de rapports à partir d’autres espaces de travail](service-datasets-copy-reports.md).
 
 ## <a name="unpublish-an-app"></a>Annuler la publication d’une application
 Tout membre d’un espace de travail d’application peut annuler la publication de l’application.

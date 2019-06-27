@@ -10,14 +10,14 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 97903b4e6f906f2cb09f6285832ad6eb9a5a8dca
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720340"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823297"
 ---
-# <a name="service-principal-with-power-bi-preview"></a>Principal de service avec Power BI (préversion)
+# <a name="service-principal-with-power-bi"></a>Principal de service avec Power BI
 
 Un **principal de service** permet d’incorporer du contenu Power BI dans une application et d’utiliser Automation avec Power BI à l’aide d’un jeton d’**application uniquement**. Il est utile de recourir à un principal de service quand vous utilisez **Power BI Embedded** ou quand vous **automatisez des tâches et des processus Power BI**.
 
@@ -94,7 +94,7 @@ Il existe des différences selon que vous utilisez un principal de service ou un
    > [!Important]
    > Une fois que vous activez le principal de service à utiliser avec Power BI, les autorisations AD de l’application n’ont plus d’effet. Les autorisations de l’application sont ensuite gérées par le biais du portail d’administration Power BI.
 
-2. Créez un [groupe de sécurité dans Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) et ajoutez l’application que vous avez créée à ce groupe de sécurité. Vous pouvez créer un groupe de sécurité AAD avec [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Recommandé** Créez un [groupe de sécurité dans Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) et ajoutez l’application que vous avez créée à ce groupe de sécurité. Vous pouvez créer un groupe de sécurité AAD avec [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Voici un exemple de script qui crée un groupe de sécurité et ajoute une application à ce groupe.
 
@@ -109,7 +109,7 @@ Il existe des différences selon que vous utilisez un principal de service ou un
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-3. En tant qu’administrateur Power BI, vous devez activer le principal de service dans les **Paramètres du développeur** du portail d’administration Power BI. Ajoutez le groupe de sécurité que vous avez créé dans Azure AD à la section **Groupe de sécurité spécifique** des **Paramètres du développeur**.
+3. En tant qu’administrateur Power BI, vous devez activer le principal de service dans les **Paramètres du développeur** du portail d’administration Power BI. Ajoutez le groupe de sécurité que vous avez créé dans Azure AD sous la section des **paramètres du développeur** relative au groupe de sécurité. Vous pouvez également activer l’accès au service principal pour toute l’organisation. Dans ce cas, l’étape 2 n’est pas nécessaire.
 
    > [!Important]
    > Les principaux du service ont accès à tous les paramètres de locataire qui sont activés pour toute l’organisation ou pour les groupes de sécurité qui contiennent des principaux du service dans le cadre du groupe. Pour restreindre l’accès des principaux du service à des paramètres de locataire spécifiques, autorisez uniquement l’accès à certains groupes de sécurité ou créez un groupe de sécurité dédié pour les principaux du service et excluez-le.
@@ -181,4 +181,4 @@ Voici un exemple de script pour récupérer l’ID objet du principal de service
 * [Inscrire une application](register-app.md)
 * [Power BI Embedded pour vos clients](embed-sample-for-customers.md)
 * [Objets d’application et de principal de service dans Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Sécurité au niveau des lignes à l’aide d’une passerelle de données locale avec principal de service (préversion)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Sécurité au niveau des lignes à l’aide d’une passerelle de données locale avec principal de service](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

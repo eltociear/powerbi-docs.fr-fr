@@ -1,6 +1,6 @@
 ---
 title: S’abonner à des rapports paginés dans le service Power BI
-description: Dans cet article, vous découvrez les choses à prendre en compte sur l’abonnement aux rapports paginés dans le service Power BI.
+description: Dans cet article, vous allez découvrir certains points à prendre en compte concernant l’abonnement aux rapports paginés dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -9,37 +9,37 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 05/24/2019
-ms.openlocfilehash: ccec6658808d94728f2a4f14de67c36da0f51def
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222195"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839549"
 ---
-# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>S’abonner vous-même et autres rapports paginés dans le service Power BI 
+# <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports paginés dans le service Power BI 
 
-Vous pouvez maintenant configurer les abonnements par courrier électronique pour vous-même et d’autres pour les rapports paginés dans le service Power BI. En règle générale, le processus est identique à [abonnement aux rapports et tableaux de bord dans le service Power BI](service-report-subscribe.md). Cet article énonce les différences et considérations. 
+Vous pouvez maintenant configurer des abonnements par e-mail pour vous-même et d’autres personnes à des rapports paginés dans le service Power BI. En règle générale, le processus est le même que pour les [abonnements aux rapports et tableaux de bord dans le service Power BI](service-report-subscribe.md). Cet article énumère les différences et considérations. 
 
-Dans la configuration d’abonnements, vous choisissez la fréquence à laquelle vous souhaitez recevoir des e-mails : quotidienne, hebdomadaire ou toutes les heures. Si vous choisissez quotidienne ou hebdomadaire, vous pouvez choisir le moment vous souhaitez que l’exécution de l’abonnement. En tout, vous pouvez définir jusqu'à 24 différents abonnements par jour pour chaque rapport. 
+Lors de la configuration des abonnements, vous choisissez la fréquence à laquelle vous souhaitez recevoir des e-mails : quotidienne, hebdomadaire ou toutes les heures. Si vous choisissez une fréquence quotidienne ou hebdomadaire, vous pouvez choisir l’heure d’exécution de l’abonnement. Vous pouvez définir jusqu’à 24 abonnements différents par jour pour chaque rapport. 
 
-## <a name="considerations-for-paginated-report-subscriptions"></a>Considérations pour les abonnements de rapport paginé 
+## <a name="considerations-for-paginated-report-subscriptions"></a>Considérations sur les abonnements aux rapports paginés 
 
-- Contrairement aux abonnements pour les tableaux de bord ou rapports Power BI, votre abonnement contient une pièce jointe de la sortie de l’intégralité du rapport.  Les types suivants de la pièce jointe sont prises en charge : PDF, présentation PowerPoint (PPTX), classeur Excel (XLSX), Document Word (DOCX), un fichier CSV et XML.
+- Contrairement aux abonnements pour les tableaux de bord ou les rapports Power BI, votre abonnement contient une pièce jointe de l’intégralité de la sortie du rapport.  Les types de pièce jointe suivants sont pris en charge : PDF, présentation PowerPoint (PPTX), classeur Excel (XLSX), document Word (DOCX), fichier CSV et XML.
 
-- Il n’existe aucune image d’aperçu du rapport dans le corps du message.  Nous avons l’intention de l’image de la première page du rapport comme un élément facultatif. 
+- Il n’existe aucune image d’aperçu du rapport dans le corps du message.  Nous prévoyons de proposer l’image de la première page du rapport comme élément facultatif. 
 
-- La taille de pièce jointe maximale de rapport est de 25 Mo. 
+- La taille maximale d’une pièce jointe de rapport est de 25 Mo. 
 
-- Vous pouvez vous abonner d’autres utilisateurs pour les rapports paginés qui se connectent à toutes les sources de données actuellement pris en charge, y compris les jeux de données Azure Analysis Services ou Power BI. N’oubliez pas que la pièce jointe de rapport reflète les données selon vos autorisations, comme SQL Server Reporting Services dès aujourd'hui. 
+- Vous pouvez abonner d’autres utilisateurs à des rapports paginés qui se connectent à n’importe quelle source de données actuellement prise en charge, notamment les jeux de données Power BI ou Azure Analysis Services. N’oubliez pas que la pièce jointe du rapport reflète les données conformément à vos autorisations, comme c’est le cas aujourd’hui avec SQL Server Reporting Services. 
 
-- Les abonnements aux pages de rapport sont liés au nom du rapport.  
+- Les abonnements aux pages de rapports sont liés au nom du rapport.  
 
-- Abonnements par courrier électronique sont envoyées avec les valeurs de paramètre par défaut du rapport. 
+- Les abonnements aux e-mails sont envoyés avec les valeurs de paramètres par défaut du rapport. 
 
-- Il existe aucune **après l’actualisation des données** option pour la fréquence des rapports paginés. Vous obtenez toujours les valeurs les plus récentes de la source de données sous-jacente. 
+- Il n’y a aucune option **Après l’actualisation des données** pour la fréquence avec les rapports paginés. Vous obtenez toujours les valeurs les plus récentes à partir de la source de données sous-jacente. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[S’abonner vous-même et autres rapports et tableaux de bord dans le service Power BI](service-report-subscribe.md)
+[Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI](service-report-subscribe.md)
 
-[Présentation des rapports paginés dans Power BI Premium (préversion)](paginated-reports-report-builder-power-bi.md)
+[Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)

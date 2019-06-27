@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187727"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839440"
 ---
 # <a name="install-power-bi-report-server"></a>Installer Power BI Report Server
 
@@ -22,11 +22,11 @@ Découvrez comment installer Power BI Report Server.
 
 ## <a name="download-power-bi-report-server"></a>Télécharger Power BI Report Server
 
-[Télécharger Power BI Report Server](https://www.microsoft.com/download/details.aspx?id=56722) à partir du centre de téléchargement Microsoft.
+[Téléchargez Power BI Report Server](https://www.microsoft.com/download/details.aspx?id=56722) sur le Centre de téléchargement Microsoft.
 
-Il est également une version d’évaluation gratuite. Sur le [rapports avec Power BI Report Server locaux](https://powerbi.microsoft.com/report-server/) page, sélectionnez **télécharger la version d’évaluation gratuite**.
+Il existe également une version d’essai gratuite. Dans la page [Rapports locaux avec Power BI Report Server](https://powerbi.microsoft.com/report-server/), sélectionnez **Téléchargez une version d’évaluation gratuite**.
 
-## <a name="before-you-install"></a>Avant d’installer
+## <a name="before-you-install"></a>Avant l’installation
 
 Avant d’installer Power BI Report Server, il est recommandé de lire l’article [Configurations matérielle et logicielle requises pour installer Power BI Report Server](system-requirements.md).
 
@@ -35,12 +35,12 @@ Avant d’installer Power BI Report Server, il est recommandé de lire l’artic
 
 ### <a name="power-bi-report-server-product-key"></a>Clé de produit Power BI Report Server
 
-Vous pouvez obtenir la clé de produit pour Power BI Report Server à partir de deux sources différentes :
+Vous pouvez obtenir la clé de produit de Power BI Report Server à partir de deux sources différentes :
 
 - Power BI Premium
 - SQL Server Entreprise Software Assurance (SA)
 
-Lisez la suite pour plus d’informations.
+Lisez la suite pour plus de détails.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -75,8 +75,8 @@ Il n’est pas nécessaire de disposer d’un moteur de base de données Microso
 
     ![Édition 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    Sinon, entrez la clé de produit que vous avez obtenu à partir du service Power BI ou le centre de gestion de licence de Volume. Pour plus d’informations sur comment obtenir votre clé de produit, consultez le [avant d’installer](#before-you-install) section ci-dessus.
-4. Lisez et acceptez les termes du contrat de licence, puis sélectionnez **suivant**.
+    Sinon, entrez la clé de produit obtenue à partir du service Power BI ou du Centre MVLS. Pour plus d’informations sur l’obtention de votre clé de produit, consultez la section [Avant l’installation](#before-you-install) ci-dessus.
+4. Lisez et acceptez les termes du contrat de licence, puis sélectionnez **Suivant**.
 
     ![Termes du contrat de licence](media/install-report-server/pbireportserver-eula.png)
 5. Pour stocker la base de données du serveur de rapports, vous devez disposer d’un moteur de base de données. Sélectionnez **Suivant** pour installer uniquement le serveur de rapports.

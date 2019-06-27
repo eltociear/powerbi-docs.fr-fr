@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/20/2017
+ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 201e4e75c9a1ce0d05c85112457191a8d306c596
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c2ccbf8eaa272d6e5a57f88c76c79b5d06bb3892
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61248026"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839675"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Modifier le type de visualisation dans un rapport Power BI
 Essayez différents types de visualisation dans le service Power BI et Power BI Desktop pour déterminer celui qui illustre le mieux vos données. 
@@ -24,7 +24,7 @@ Essayez différents types de visualisation dans le service Power BI et Power B
 2. Sélectionnez une visualisation pour l’activer. Une visualisation active présente des poignées et une bordure.    
 3. Dans le volet Visualisations, sélectionnez le nouveau type de visualisation. 
    
-   ![](media/power-bi-report-change-visualization-type/changeviz.gif).
+   ![vidéo montrant comment changer un histogramme en graphique en courbes](media/power-bi-report-change-visualization-type/changeviz.gif).
 4. (Facultatif) [Épinglez votre visualisation](../service-dashboard-pin-tile-from-report.md) à votre tableau de bord sous forme de vignette. 
 
 Si vous changez le type de la visualisation dans le rapport après l’avoir épinglée à votre tableau de bord, la vignette du tableau de bord ne se met pas automatiquement à jour. Par conséquent, si vous avez épinglé la visualisation en tant que graphique en courbes et qu’ensuite, vous l’avez changée en graphique à barres dans le rapport, la version déjà épinglée de ces données reste un graphique en courbes. Épinglez le graphique à barres pour l’afficher aussi dans le tableau de bord.

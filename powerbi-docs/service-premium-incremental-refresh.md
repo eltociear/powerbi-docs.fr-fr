@@ -1,21 +1,21 @@
 ---
 title: Actualisation incrémentielle dans Power BI Premium
 description: Découvrez comment permettre l’utilisation de jeux de données très volumineux dans le service Power BI Premium.
-author: christianwade
+author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/10/2019
-ms.author: chwade
+ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: b338044433d1d87f07ab38d64c15974a1cfaa173
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ee5ec87e04517ce93589b371e97116acbcb02e87
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65536146"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408580"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Actualisation incrémentielle dans Power BI Premium
 
@@ -41,7 +41,7 @@ Les jeux de données volumineux contenant potentiellement des milliards de ligne
 
 #### <a name="rangestart-and-rangeend-parameters"></a>Paramètres RangeStart et RangeEnd
 
-Pour l’actualisation incrémentielle, les jeux de données sont filtrés à l’aide des paramètres de date/heure de Power Query avec les noms réservés qui respectent la casse **RangeStart** et **RangeEnd**. Ces paramètres servent à filtrer les données importées dans Power BI Desktop, mais aussi à répartir de manière dynamique les données dans des plages une fois publiées sur le service Power BI. Les valeurs de paramètre sont remplacées par le service pour filtrer chaque répartition. Une fois publiées, les valeurs des paramètres sont automatiquement remplacées par le service Power BI. Vous n’avez pas besoin de les définir dans les paramètres du jeu de données du service. Une fois publiées, les valeurs des paramètres sont automatiquement remplacées par le service Power BI. 
+Pour l’actualisation incrémentielle, les jeux de données sont filtrés à l’aide des paramètres de date/heure de Power Query avec les noms réservés qui respectent la casse **RangeStart** et **RangeEnd**. Ces paramètres servent à filtrer les données importées dans Power BI Desktop, mais aussi à répartir de manière dynamique les données dans des plages une fois publiées sur le service Power BI. Les valeurs de paramètre sont remplacées par le service pour filtrer chaque répartition. Vous n’avez pas besoin de les définir dans les paramètres du jeu de données du service. Une fois publiées, les valeurs des paramètres sont automatiquement remplacées par le service Power BI.
 
 Pour définir les paramètres avec les valeurs par défaut, dans l’éditeur Power Query, sélectionnez **Gérer les paramètres**.
 
@@ -163,4 +163,4 @@ in
 
 ## <a name="limitations"></a>Limites
 
-Actuellement, pour [modèles composites](desktop-composite-models.md), actualisation incrémentielle est prise en charge pour SQL, Oracle, et uniquement les sources de données Teradata.
+Pour les [modèles composites](desktop-composite-models.md), l’actualisation incrémentielle est prise en charge pour les sources de données SQL, Oracle et Teradata uniquement.

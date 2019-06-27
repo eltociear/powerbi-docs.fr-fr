@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/10/2019
+ms.openlocfilehash: 6aebc45f2341f098f0f54dad66652967077c2a08
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61353813"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823421"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
@@ -215,7 +215,7 @@ Voici les étapes pour commencer à configurer la fonctionnalité CustomData() a
 
 7. Utilisez les API Power BI pour utiliser la fonctionnalité CustomData dans votre application.  Lors de la génération d’un jeton avec la fonctionnalité Custom data, vous devez avoir un nom d’utilisateur. Le nom d’utilisateur doit être identique à l’UPN de l’utilisateur principal. L’utilisateur principal doit être un membre du ou des rôles que vous avez créés. Si aucun rôle n’est spécifié, tous les rôles dont l’utilisateur principal est membre sont utilisés pour l’évaluation de la fonction de sécurité au niveau des lignes.
 
-    Lorsque vous travaillez avec un [principal du service](embed-service-principal.md), vous devez également effectuer les étapes ci-dessus à la place à l’aide de compte principal. Lors de la génération du jeton incorporé, utilisez la [ID de l’objet principal de service](embed-service-principal.md#how-to-get-the-service-principal-object-id) en tant que le nom d’utilisateur.
+    Lorsque vous utilisez un [principal de service](embed-service-principal.md), vous devez également effectuer les étapes ci-dessus au lieu d’utiliser un compte principal. Lorsque vous générez un jeton incorporé, utilisez l’[ID d’objet du principal de service](embed-service-principal.md#how-to-get-the-service-principal-object-id) comme nom d’utilisateur.
 
     > [!Note]
     > Quand vous êtes prêt à déployer votre application en production, l’option ou le champ de compte d’utilisateur principal ne doit pas être visible par l’utilisateur final.
@@ -310,7 +310,7 @@ La valeur fournie dans le blob d’identité doit être un jeton d’accès vali
 
    ![Inscriptions des applications](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
-## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Passerelle de données locale avec principal de service (préversion)
+## <a name="on-premises-data-gateway-with-service-principal"></a>Passerelle de données locale avec principal de service
 
 Les clients qui configurent la sécurité au niveau des lignes (SNL) à l’aide d’une source de données à connexion active locale SSAS (SQL Server Analysis Services) peuvent bénéficier de la nouvelle fonctionnalité du [principal de service](embed-service-principal.md) pour gérer les utilisateurs et leur accès aux données dans SSAS lors de l’intégration à **Power BI Embedded**.
 

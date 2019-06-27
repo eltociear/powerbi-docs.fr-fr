@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: eb50d8096c448e1a01533a7d8570e9dcc716ef23
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174979"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809284"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 
@@ -146,7 +146,7 @@ Enfin, sur la machine exécutant le service de passerelle (**PBIEgwTestGW** dans
 
     Cliquez avec le bouton droit et ouvrez **Propriétés**. Vérifiez la liste des comptes. Elle doit inclure le compte de service de passerelle (**PBIEgwTest\GatewaySvc**).
 
-1. Sous **Attribution des droits utilisateur**, dans la liste des stratégies, sélectionnez **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)**. Assurez-vous que le compte de service de passerelle est également inclus dans la liste des comptes.
+1. Sous **Attribution des droits utilisateur**, dans la liste des stratégies, sélectionnez **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)** . Assurez-vous que le compte de service de passerelle est également inclus dans la liste des comptes.
 
 1. Redémarrez le processus de service **Passerelle de données locale**.
 
@@ -195,9 +195,7 @@ Ce guide tente d’être aussi complet que possible. Si vous avez déjà effectu
 ### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>Installer gsskrb5 sur les machines clientes et le serveur SAP BW
 
 > [!NOTE]
-> `gsskrb5` n’est plus activement pris en charge par SAP. Pour plus d’informations, consultez [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Notez également que `gsskrb5` n’autorise pas les connexions d’authentification unique de la passerelle de données aux serveurs de messages SAP BW. Seules les connexions aux serveurs d’applications SAP BW sont possibles.
-
-`gsskrb5` doit être utilisé par le client et par le serveur pour établir une connexion d’authentification unique par le biais de la passerelle. La bibliothèque Common Crypto Library (sapcrypto) n’est pas prise en charge.
+> `gsskrb5` n’est plus activement pris en charge par SAP. Pour plus d’informations, consultez [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Notez également que `gsskrb5` n’autorise pas les connexions d’authentification unique de la passerelle de données aux serveurs de messages SAP BW. Seules les connexions aux serveurs d’applications SAP BW sont possibles. `gsskrb5` doit être utilisé par le client et par le serveur pour établir une connexion d’authentification unique par le biais de la passerelle. Nous prenons désormais en charge la bibliothèque Common Crypto Library (sapcrypto) pour SAP BW.
 
 1. Téléchargez `gsskrb5` - `gx64krb5` à partir de la page [SAP Note 2115486](https://launchpad.support.sap.com/) (compte super utilisateur SAP requis). Assurez-vous d’avoir au moins la version 1.0.11.x de gsskrb5.dll et gx64krb5.dll.
 
@@ -398,7 +396,7 @@ Le résultat est que la passerelle ne peut pas emprunter l’identité de l’ut
 
 Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, voir les ressources suivantes :
 
-* [Passerelle de données locale](service-gateway-onprem.md)
+* [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)
 * [DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery et SAP BW](desktop-directquery-sap-bw.md)

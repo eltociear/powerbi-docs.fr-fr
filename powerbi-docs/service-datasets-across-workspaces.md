@@ -7,19 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/07/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a5e4b41b36dfbf6cca14a348268b96eaad21b00e
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461853"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816649"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Utiliser des jeux de données dans des espaces de travail (préversion)
 
 Le décisionnel est une activité de collaboration. Il est important de définir des jeux de données normalisés qui peuvent constituer la « source de vérité ». La découverte et la réutilisation de ces jeux de données normalisés sont un atout primordial. Quand les modélisateurs de données expérimentés de votre organisation créent et partagent des jeux de données optimisés, les créateurs de rapports peuvent démarrer avec ces jeux de données pour générer des rapports précis. Votre organisation dispose alors de données cohérentes pour prendre des décisions ainsi que d’une culture de données saine.
+
+![Sélectionner un jeu de données partagé](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
 Power BI permet aux créateurs de jeux de données de certifier ou promouvoir facilement des jeux de données afin que d’autres personnes puissent les découvrir. Les auteurs de rapports trouvent ensuite des jeux de données officiels de qualité qu’ils peuvent utiliser partout où ils se trouvent dans Power BI. Les propriétaires de jeux de données peuvent garder le contrôle des utilisateurs autorisés à accéder à leurs données à l’aide de l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Les administrateurs de locataires ont un nouveau paramètre de locataire pour [régir l’utilisation des jeux de données dans des espaces de travail](service-datasets-admin-across-workspaces.md).
 

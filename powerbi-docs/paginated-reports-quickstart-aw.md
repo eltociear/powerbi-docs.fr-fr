@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)'
+title: 'Tutoriel : Créer un rapport paginé et le charger dans le service Power BI'
 description: Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Puis vous utilisez un assistant dans le Générateur de rapports pour créer un rapport paginé. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989657"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839737"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI (préversion)
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI
 
-Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Ensuite, vous utilisez un Assistant dans le Générateur de rapports Power BI pour créer un rapport paginé avec un tableau répartie sur plusieurs pages. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI. Les rapports paginés disponibles dans le service Power BI sont actuellement en préversion.
+Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Vous utilisez un assistant dans le Générateur de rapports Power BI pour créer un rapport paginé avec un tableau réparti sur plusieurs pages. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI.
 
 ![Rapport paginé dans le service Power BI](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ Voici les étapes effectuées dans le cadre de ce tutoriel :
 
 > [!div class="checklist"]
 > * Créer un exemple de base de données Azure.
-> * Créer une matrice dans le Générateur de rapports Power BI à l’aide d’un Assistant.
+> * Créer une matrice dans le Générateur de rapports Power BI à l’aide d’un assistant.
 > * Mettre en forme le rapport avec un titre, des numéros de page et des en-têtes de colonne sur chaque page.
 > * Mettre en forme la devise.
 > * Charger le rapport dans le service Power BI.
@@ -37,7 +37,7 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 Voici les conditions préalables pour la création du rapport paginé :
 
-- Installer [Power BI Générateur de rapports à partir du centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513). 
+- Installer le [Générateur de rapports Power BI à partir du centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Suivre le Guide de démarrage rapide [Créer un exemple de base de données SQL Azure dans le portail Azure](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Copier et enregistrer la valeur dans la zone **Nom du serveur** de l’onglet **Vue d’ensemble**. Mémorisez le nom d’utilisateur et le mot de passe créés dans Azure.
 
@@ -48,7 +48,7 @@ Voici les conditions préalables pour le chargement de votre rapport paginé dan
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Créer la matrice avec un assistant
   
-1.  Démarrez le Générateur de rapports Power BI à partir de votre ordinateur.  
+1.  Démarrez le Générateur de rapports Power BI sur votre ordinateur.  
   
      La boîte de dialogue **Mise en route** s’ouvre.  
   
@@ -329,5 +329,5 @@ Maintenant que vous avez créé ce rapport paginé, il est temps de le charger d
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Présentation des rapports paginés dans Power BI Premium (préversion)](paginated-reports-report-builder-power-bi.md)
+[Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)
 

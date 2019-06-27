@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ef03a562351b8f4487e4822ef28b89009ee5cbb4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61145429"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839819"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Cartes choroplèthes dans Power BI
 Une carte choroplèthe utilise des ombrages, des teintes ou des motifs pour représenter proportionnellement les variations d’une valeur entre des zones géographiques ou des régions.  Visualisez rapidement les écarts relatifs grâce aux ombrages allant du clair (moins fréquent/plus bas) au foncé (plus fréquent/plus élevé).    
 
-![carte des États-Unis](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
+![carte des États-Unis](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>Ce qui est envoyé à Bing
 De par son intégration à Bing, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »). Lorsque vous créez une visualisation de carte dans le service Power BI ou Power BI Desktop, les données contenues dans les compartiments **Emplacement**, **Latitude** et **Longitude** (utilisées pour créer cette visualisation) sont envoyées à Bing.
@@ -55,10 +55,11 @@ Dans cette vidéo, Kim crée une carte de base et la convertit en carte choropl�
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 ### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Obtenir des données et ajouter une nouvelle page vierge au rapport
-1. Pour créer votre propre carte choroplèthe, [téléchargez l’exemple Vente et marketing](../sample-datasets.md) en vous connectant à Power BI et en sélectionnant  **Obtenir les données \> Exemples \> Ventes et marketing\> Se connecter**.
-2. Lorsque le message de réussite s’affiche, fermez-le et sélectionnez l’onglet **Rapports**. Choisissez ensuite **Exemple Vente et marketing** pour ouvrir le rapport.
+1. Pour créer votre propre carte choroplèthe, [téléchargez l’exemple Vente et marketing](../sample-datasets.md) en vous connectant à Power BI et en sélectionnant  **Obtenir les données \> Exemples \> Ventes et marketing\> Se connecter**. Ou obtenez l’application **Power BI Ventes et marketing** sur appsource.com. 
 
-   ![Liste de contenu Rapports](media/power-bi-visualization-filled-maps-choropleths/power-bi-content-reports2.png)
+2. Ouvrez le rapport Ventes et marketing.
+
+   ![Ouverture du rapport Ventes et marketing](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
 3. Power BI ouvre le rapport. Sélectionnez **Modifier le rapport** pour ouvrir le rapport en [Mode Édition](../service-interact-with-a-report-in-editing-view.md).
 
 4. Ajoutez une nouvelle page en sélectionnant le signe « + » jaune en bas du canevas de rapport.
@@ -89,7 +90,7 @@ Dans cette vidéo, Kim crée une carte de base et la convertit en carte choropl�
 9. [Enregistrez le rapport](../service-report-save.md).
 ##    <a name="adjust-the-color-formatting"></a>Ajuster la mise en forme des couleurs
 Power BI vous donne un large contrôle sur l’apparence de votre carte choroplèthe.
-1. Ouvrez le volet de mise en forme en sélectionnant l’icône représentant un rouleau à peinture.
+1. Ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau.
 
     ![Volet de mise en forme](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
 
@@ -123,13 +124,13 @@ La mise en surbrillance d’un emplacement sur une carte choroplèthe entraîne 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 Les données cartographiques peuvent être ambiguës.  Par exemple, il existe un Paris en France, mais aussi un Paris au Texas. Vos données géographiques sont probablement stockées dans des colonnes distinctes (une colonne pour les noms de ville, une colonne pour les noms d’État ou de région, etc.), ce qui peut empêcher Bing de distinguer les deux Paris. Si votre jeu de données contient déjà des données de latitude et de longitude, Power BI comporte des champs spéciaux permettant de lever toute ambiguïté dans les données cartographiques. Faites simplement glisser le champ qui contient vos données de latitude vers la zone Visualisations \> Latitude.  Faites la même chose pour vos données de longitude.    
 
-![volets Visualisations et Champs](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
+![volets Visualisations et Champs](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
 Si vous disposez des autorisations nécessaires pour modifier le jeu de données dans Power BI Desktop, regardez cette vidéo en cas de doute sur les cartes.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
 
-Si vous ne possédez pas de données de latitude et de longitude, [suivez ces instructions pour mettre à jour votre jeu de données](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
+Si vous n’avez pas accès aux données de latitude et de longitude, mais que vous avez accès en modification au jeu de données, [suivez ces instructions pour mettre à jour votre jeu de données](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
 Pour plus d’informations sur les visualisations de carte, consultez [Tips and tricks for map visualizations](../power-bi-map-tips-and-tricks.md) (Trucs et astuces pour les visualisations de carte).
 

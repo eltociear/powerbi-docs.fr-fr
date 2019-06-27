@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394682"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839198"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
 Créez un visuel **Carte de formes** pour comparer des régions sur une carte à l’aide de la couleur. À la différence du visuel **Carte**, le visuel **Carte de formes** ne permet pas d’afficher l’emplacement géographique précis de points de données sur une carte. Il a pour principal objectif de montrer des comparaisons relatives de régions sur une carte en leur appliquant une couleur différente.
@@ -27,15 +27,15 @@ Vous pouvez tester le contrôle **Carte de formes** avec les cartes fournies ave
 
 L’élément visuel **Carte de formes** est en version préliminaire et doit être activé dans Power BI Desktop. Pour activer l’élément visuel **Carte de formes**, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis cochez la case **Visuel Carte de formes**. Vous devez redémarrer Power BI Desktop après avoir effectué la sélection.
 
-![](media/desktop-shape-map/shape-map_1a.png)
+![activer la fonctionnalité d’évaluation Carte de formes](media/desktop-shape-map/power-bi-preview-features.png)
 
-Une fois l’élément visuel **Carte de formes** activé, cliquez sur le contrôle **Carte de formes** dans le volet **Visualisations**.
+Une fois le visuel **Carte de formes** activé, sélectionnez l’icône **Carte de formes** dans le volet **Visualisations**.
 
-![](media/desktop-shape-map/shape-map_2.png)
+![sélectionner le modèle pour la carte de formes](media/desktop-shape-map/power-bi-shape-map-template2.png)
 
 Power BI Desktop crée une zone de dessin d’élément visuel **Carte de formes** vide.
 
-![](media/desktop-shape-map/shape-map_3.png)
+![une carte de formes vide s’affiche sur votre canevas](media/desktop-shape-map/shape-map-3.png)
 
 Procédez comme suit pour créer un élément visuel **Carte de formes** :
 
@@ -46,26 +46,23 @@ Procédez comme suit pour créer un élément visuel **Carte de formes** :
    > 
    > 
 
-   ![](media/desktop-shape-map/shape-map_3a.png)
+   ![générer votre carte de formes](media/desktop-shape-map/shape-map-3a.png)
 2. Dans le volet de paramètres **Format**, développez **Forme**, puis sélectionnez la liste déroulante **Cartes standard** pour afficher vos données. À ce stade, le rendu s’affiche comme illustré dans l’image suivante.
 
-   ![](media/desktop-shape-map/shape-map_3b.png)
+   ![ouvrir le volet de mise en forme et sélectionner Forme](media/desktop-shape-map/shape-map-3b-new.png)
 
    > [!NOTE]
    > La section **Codes de région** à la fin de cet article présente une collection de tables qui répertorient des codes de région de carte que vous pouvez utiliser pour tester l’élément visuel **Carte de formes**.
    > 
    > 
-3. Vous pouvez ensuite modifier les paramètres de projection cartographique et de zoom, ainsi que les couleurs des points de données, dans le volet de paramètres **Format**. Vous pouvez également modifier les paramètres de zoom. Par exemple, vous pouvez modifier les couleurs, définir des valeurs maximales et minimales, etc.
-
-   ![](media/desktop-shape-map/shape-map_3d.png)
-4. Vous pouvez aussi ajouter une colonne de données de catégorie pour le compartiment **Légende** et classer les régions de la carte en fonction de catégories.
+3. Vous pouvez ensuite modifier la carte en utilisant les options de mise en forme comme **Couleur par défaut**, **Zoom**, etc. Vous pouvez aussi ajouter une colonne de données de catégorie pour le compartiment **Légende** et classer les régions de la carte en fonction de catégories.
 
 ## <a name="use-custom-maps"></a>Utiliser des cartes personnalisées
 Vous pouvez utiliser des cartes personnalisées avec **Carte de formes** tant qu’elles sont au format **TopoJSON**. Si votre carte est dans un autre format, vous pouvez utiliser les outils en ligne tels que le [**Modélisateur de carte**](http://mapshaper.org/) pour convertir vos cartes *shapefiles* ou *GeoJSON* au format **TopoJSON**.
 
 Pour utiliser votre fichier de carte **TopoJSON**, ajoutez un élément visuel ShapeMap à votre rapport et ajoutez des données aux compartiments *Emplacement* et *Saturation des couleurs*. Ensuite, dans le volet **Visualisations** avec la section **Format** sélectionnée (indiquée par (1) dans l’image suivante), développez la section **Forme** et sélectionnez **+ Ajouter une carte**.
 
-![](media/desktop-shape-map/shape-map_6.png)
+![ouvrir le volet de mise en forme et sélectionner Ajouter une carte](media/desktop-shape-map/shape-map-6-new.png)
 
 ## <a name="sample-custom-map"></a>Exemple de carte personnalisée
 Les *bureaux des avocats des États-Unis* publient un rapport fiscal annuel sur leurs données concernant les contentieux et le nombre de dossiers.  Tous leurs rapports sont accessibles via le lien ci-dessous,
@@ -74,11 +71,11 @@ https://www.justice.gov/usao/resources/annual-statistical-reports
 
 Comme les États peuvent être divisés en plusieurs districts, nous devons utiliser une carte de formes personnalisée.  En important la carte **TopoJSON** des districts judiciaires des États-Unis dans **Power BI Desktop**, nous pouvons visualiser les données des avocats des districts de l’année fiscale.  L’image ci-dessous montre un exemple de cette carte.
 
-![](media/desktop-shape-map/shape-map_7a.png)
+![carte de formes personnalisée](media/desktop-shape-map/shape-map-7a.png)
 
 Vous pouvez faire des choses intéressantes avec les cartes des états individuels et afficher plus de détails en fonction des districts qu’ils contiennent. 
 
-![](media/desktop-shape-map/shape-map_7b.png)
+![carte de formes (Texas)](media/desktop-shape-map/shape-map-7b.png)
 
 Si vous voulez faire des essais avec ce jeu de données et cette visualisation, vous pouvez télécharger le fichier PBIX d’origine qui a été utilisé pour générer ce rapport via le lien suivant.
 
@@ -87,11 +84,11 @@ Si vous voulez faire des essais avec ce jeu de données et cette visualisation, 
 ## <a name="getting-map-data"></a>Obtenir des données de carte
 Pour obtenir rapidement des données dans un modèle afin de tester l’élément visuel **Carte de formes**, copiez une des tables situées à la fin de cet article, puis sélectionnez **Entrer des données** dans le ruban **Accueil**.
 
-![](media/desktop-shape-map/shape-map_4.png)
+![Dans Desktop, sélectionner Entrer des données](media/desktop-shape-map/shape-map-4-new.png)
 
 Si vos données contiennent plusieurs colonnes, vous devrez utiliser un éditeur comme Excel pour coller les données, puis copiez chaque colonne de données séparément. Vous pouvez ensuite coller les données dans Power BI Desktop. La ligne supérieure est automatiquement identifiée comme en-tête.
 
-![](media/desktop-shape-map/shape-map_5.png)
+![Volet Créer une table](media/desktop-shape-map/shape-map-5.png)
 
 Vous pouvez entrer une nouvelle colonne tout simplement en tapant un nouveau nom de colonne (dans la colonne vide à droite), puis ajouter les valeurs dans chaque cellule, tout comme vous le feriez dans Excel. Une fois que vous avez terminé, sélectionnez **Charger** afin d’ajouter la table au modèle de données pour Power BI Desktop.
 

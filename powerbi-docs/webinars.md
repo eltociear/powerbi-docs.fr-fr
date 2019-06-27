@@ -1,20 +1,20 @@
 ---
 title: Webinaires Power BI
 description: Webinaires Power BI
-author: maikelson
+author: v-tatero
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.author: maikelson
-ms.openlocfilehash: a2db3f8c88231663ecb115c4609d3af177d96292
-ms.sourcegitcommit: 9da792d470dfe43dc6e15ddef5d471f3f6c50970
+ms.date: 06/01/2019
+ms.author: v-tatero
+ms.openlocfilehash: 1050cf5ee5060a19e4f38b98fb6766b6e5510451
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66453778"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66750993"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -22,7 +22,15 @@ Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions en
 
 ## <a name="upcoming-webinars"></a>Webinaires à venir
 
-Aucun webinaire n’est planifié pour le moment. Revenez ultérieurement pour connaître les événements à venir.
+Inscrivez-vous pour écouter des experts de Power BI et participer à des sessions de questions et réponses en direct.
+
+**Microsoft utilise la technologie Power BI : Utilisation de Power BI dans la trésorerie moderne**
+<br>par Pankaj Gudimella et Guru Kirthigavasan
+<br>[S’inscrire pour regarder le 25 juin, de 10h à 11h (heure de la côte Ouest des États-Unis)](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
+
+**Power BI : Comment obtenir des insights à partir de vos données de ressources humaines Workday**
+<br>par Iman Eftekhari, Julia Paton d’Agile Analytics et Shahram Karimi de QBE Insurance
+<br>[S’inscrire pour regarder le 27 juin, de 13h30 à 14h30 (heure de la côte Ouest des États-Unis)](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 >[Prochains webinaires de la Communauté Power BI](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 

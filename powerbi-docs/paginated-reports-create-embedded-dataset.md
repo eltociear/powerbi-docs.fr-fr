@@ -1,5 +1,5 @@
 ---
-title: Créer un jeu de données incorporé pour un rapport Power BI paginé (préversion)
+title: Créer un jeu de données incorporé pour un rapport Power BI paginé
 description: Dans cet article, vous apprendrez à créer un jeu de données incorporé, basé sur une source de données incorporée, pour un rapport paginé dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
-ms.openlocfilehash: 3e095da10e9f96c7ec0f10ffbb94995d44effab4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cf41b404385139561a97f1d5b081ae1c48ff2885
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423740"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839020"
 ---
-# <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Créer un jeu de données incorporé pour un rapport paginé dans le service Power BI (préversion)
+# <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service"></a>Créer un jeu de données incorporé pour un rapport paginé dans le service Power BI
 
-Dans cet article, vous apprendrez à créer un jeu de données incorporé, basé sur une source de données incorporée, pour un rapport paginé dans le service Power BI. Les jeux de données incorporés sont contenus dans un seul rapport paginé, pour une utilisation dans ce rapport. Actuellement, les rapports paginés publiés sur le service Power BI requièrent des jeux de données incorporés et des sources de données incorporées. Vous créez la source de données incorporée et le jeu de données dans le Générateur de rapports Power BI, tandis que vous créez votre rapport. 
+Dans cet article, vous apprendrez à créer un jeu de données incorporé, basé sur une source de données incorporée, pour un rapport paginé dans le service Power BI. Les jeux de données incorporés sont contenus dans un seul rapport paginé, pour une utilisation dans ce rapport. Actuellement, les rapports paginés publiés sur le service Power BI requièrent des jeux de données incorporés et des sources de données incorporées. Vous créez la source de données et le jeu de données incorporés dans le Générateur de rapports Power BI quand vous créez votre rapport. 
 
 Avant de pouvoir créer le jeu de données, vous devez créer une source de données. Pour cela, consultez [Sources de données pour rapports paginés](paginated-reports-embedded-data-source.md) dans le service Power BI.
   
 ## <a name="create-an-embedded-dataset"></a>Créer un jeu de données incorporé
   
-1. Dans le volet données du rapport dans le Générateur de rapports Power BI, sélectionnez **New** > **Dataset**.
+1. Dans le volet Données du rapport du Générateur de rapports Power BI, sélectionnez **Nouveau** > **Jeu de données**.
 
 1. Dans l’onglet **Requête** de la boîte de dialogue **propriétés du jeu de données**, nommez le jeu de données. La source de données incorporée figure déjà dans la boîte de dialogue **Source de données**, mais vous pouvez sélectionner **Nouveau** pour créer une autre source de données incorporée.
  
@@ -56,7 +56,7 @@ Avant de pouvoir créer le jeu de données, vous devez créer une source de donn
  
 ## <a name="next-steps"></a>Étapes suivantes 
 
-- [Présentation des rapports paginés dans Power BI Premium (préversion)](paginated-reports-report-builder-power-bi.md)  
+- [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)  
 - [Tutoriel : Créer un rapport paginé et le charger dans le service Power BI](paginated-reports-quickstart-aw.md)
 - [Publier un rapport paginé dans le service Power BI](paginated-reports-save-to-power-bi-service.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Présentation des rapports paginés dans Power BI Premium (Préversion)
+title: Présentation des rapports paginés dans Power BI Premium
 description: Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Ces rapports peuvent être imprimés ou partagés. Vous pouvez contrôler exactement la disposition des rapports. Ils affichent toutes les données dans une table, par exemple, même si la table s’étend sur plusieurs pages.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,41 +8,42 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 05/20/2019
-ms.openlocfilehash: 8da24bb8f7d3b8d507dbb6792556004083b673fe
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: f7cf5091c60a6a916b24d6170eae96b3c1ee64dc
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65991067"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839617"
 ---
-# <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Présentation des rapports paginés dans Power BI Premium (Préversion)
+# <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
 Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Ces rapports peuvent être imprimés ou partagés. Ils sont appelés « paginés », car ils sont mis en forme pour tenir sur une page. Ils affichent toutes les données dans une table, même si la table s’étend sur plusieurs pages. Ils sont parfois appelés « pixel parfait », car vous pouvez contrôler exactement leur mise en page. Les rapports paginés sont basés sur la technologie de rapport RDL dans SQL Server Reporting Services. Le Générateur de rapports est l’outil autonome pour la création de rapports paginés. 
 
 Les rapports paginés peuvent avoir de nombreuses pages. Par exemple, ce rapport compte 563 pages. Chaque page est mise en page exactement, avec une page par facture et des en-têtes et pieds de page récurrents.
 
-![Rapport paginé dans le service Power BI](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+![Paginé](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Vous pouvez prévisualiser votre rapport dans le Générateur de rapports, puis le publier sur le service Power BI, http://app.powerbi.com. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés sous Mon espace de travail ou dans les espaces de travail de l’application tant que l’espace de travail est dans une capacité Power BI Premium. Par ailleurs, un administrateur Power BI doit activer les rapports paginés dans le portail d’administration Power BI. 
+![Rapport paginé dans le service Power BI](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+
+Vous pouvez prévisualiser votre rapport dans le Générateur de rapports, puis le publier sur le service Power BI, http://app.powerbi.com. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés sous Mon espace de travail ou dans les espaces de travail de l’application tant que l’espace de travail est dans une capacité Power BI Premium. Par ailleurs, un administrateur Power BI doit activer les rapports paginés dans la [section Fonctionnalités Premium](service-admin-premium-workloads.md#paginated-reports-preview) du portail d’administration Power BI. 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Créer des rapports dans le Générateur de rapports Power BI
 
-Rapports paginés ont leur propre outil de conception, le Générateur de rapports Power BI. Il est un nouvel outil qui partage les mêmes fondements que les outils que vous avez précédemment utilisé pour créer des rapports paginés pour Power BI Report Server ou SQL Server Reporting Services (SSRS). En fait, les rapports paginés que vous créez pour SSRS 2016 et 2017 ou localement pour Power BI Report Server sont compatibles avec le service Power BI. Le service Power BI assure la compatibilité descendante, de sorte que vous pouvez avancer vos rapports et mettre à niveau tous les rapports paginés avec une version précédente. Les fonctionnalités relatives aux rapports ne sont pas toutes disponibles au lancement. Pour plus d’informations, consultez [Considérations et limitations](#limitations-and-considerations) dans cet article.
+Les rapports paginés ont leur propre outil de conception : le Générateur de rapports Power BI. Il s’agit d’un nouvel outil qui partage les mêmes concepts fondamentaux que les outils que vous avez utilisés précédemment pour créer des rapports paginés pour Power BI Report Server ou SQL Server Reporting Services (SSRS). En fait, les rapports paginés que vous créez pour SSRS 2016 et 2017 ou localement pour Power BI Report Server sont compatibles avec le service Power BI. Le service Power BI assure la compatibilité descendante, de sorte que vous pouvez avancer vos rapports et mettre à niveau tous les rapports paginés avec une version précédente. Les fonctionnalités relatives aux rapports ne sont pas toutes disponibles au lancement. Pour plus d’informations, consultez [Considérations et limitations](#limitations-and-considerations) dans cet article.
      
 ## <a name="report-from-a-variety-of-data-sources"></a>Rapport basé sur diverses sources de données
 
-Un seul rapport paginé peut avoir un certain nombre de sources de données différentes. Il n’a pas de modèle de données sous-jacent, contrairement aux rapports Power BI. Pour obtenir la version initiale de rapports paginés dans le service Power BI, vous créez des sources de données incorporées et des jeux de données dans le rapport proprement dit. Pour l’instant, vous ne pouvez pas utiliser de sources de données partagées ni de jeux de données partagés. Vous créez des rapports dans le Générateur de rapports sur votre ordinateur local. Si un rapport se connecte à des données locales, après avoir chargé le rapport sur le service Power BI, vous devez créer une passerelle et rediriger la connexion de données. Voici les sources de données que vous pouvez vous connecter à ce stade :
+Un seul rapport paginé peut avoir un certain nombre de sources de données différentes. Il n’a pas de modèle de données sous-jacent, contrairement aux rapports Power BI. Pour obtenir la version initiale de rapports paginés dans le service Power BI, vous créez des sources de données incorporées et des jeux de données dans le rapport proprement dit. Pour l’instant, vous ne pouvez pas utiliser de sources de données partagées ni de jeux de données partagés. Vous créez des rapports dans le Générateur de rapports sur votre ordinateur local. Si un rapport se connecte à des données locales, après avoir chargé le rapport sur le service Power BI, vous devez créer une passerelle et rediriger la connexion de données. Voici les sources de données auxquelles vous pouvez vous connecter pour le moment :
 
 - Azure SQL Database et Data Warehouse
-- Azure Analysis Services (via l’authentification unique)
+- Azure Analysis Services (via SSO)
 - SQL Server via une passerelle
 - SQL Server Analysis Services via une passerelle
 - Jeux de données Power BI Premium
 - Oracle
 - Teradata
- 
-Des sources de données supplémentaires seront disponibles pendant la période de préversion.
+- Autres sources au fil de leur ajout
 
 ## <a name="design-your-report"></a>Créer votre rapport  
 
@@ -69,9 +70,9 @@ Vous affichez votre rapport paginé dans le service Power BI dans un navigateur
 
 ## <a name="create-a-subscription-to-your-report"></a>Créer un abonnement à votre rapport
 
-Vous pouvez maintenant configurer les abonnements par courrier électronique pour vous-même et d’autres pour les rapports paginés dans le service Power BI. En règle générale, le processus est identique à l’abonnement aux rapports et tableaux de bord dans le service Power BI. Dans la configuration d’abonnements, vous choisissez la fréquence à laquelle vous souhaitez recevoir des e-mails : quotidienne, hebdomadaire ou toutes les heures. L’abonnement contient une pièce jointe PDF de la sortie de l’intégralité du rapport.
+Vous pouvez maintenant configurer des abonnements par e-mail pour vous-même et d’autres personnes pour des rapports paginés dans le service Power BI. En règle générale, le processus est le même que pour les abonnements aux rapports et tableaux de bord dans le service Power BI. Lors de la configuration des abonnements, vous choisissez la fréquence à laquelle vous souhaitez recevoir des e-mails : quotidienne, hebdomadaire ou toutes les heures. L’abonnement contient une pièce jointe PDF avec la sortie de l’intégralité du rapport.
 
-Pour plus d’informations, consultez l’article [vous abonner vous-même et autres rapports paginés dans le service Power BI](paginated-reports-subscriptions.md). 
+Pour plus d’informations, consultez l’article [Vous abonner vous-même et d’autres utilisateurs à des rapports paginés dans le service Power BI](paginated-reports-subscriptions.md). 
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 
@@ -85,7 +86,7 @@ Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la versi
  
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Installer le Générateur de rapports Power BI à partir du centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513)
+- [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
 - [Entrer des données directement dans un rapport paginé](paginated-reports-enter-data.md)
 

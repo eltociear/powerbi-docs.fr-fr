@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 02d81a4ebb92ec199887109c7f2d9afcb6449eda
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe1d2a6f086831a4ae6bd78d8669dce9459bffad
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61393190"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839858"
 ---
 # <a name="basic-area-chart"></a>Graphique en aires simple
 Le graphique en aires simple (également appelé graphique en aires empilées) est basé sur le graphique en courbes. La zone entre l’axe et la ligne est remplie avec des couleurs indiquant le volume. 
@@ -40,11 +40,11 @@ Pour effectuer la procédure, connectez-vous à Power BI et sélectionnez **Obt
  
 
 1. Dans le tableau de bord « Exemple Analyse de la vente au détail », sélectionnez la vignette **Total Stores** (Total magasins) pour ouvrir le rapport « Exemple Analyse de la vente au détail ».
-2. Sélectionnez **Modifier le rapport** pour ouvrir le rapport en Mode Edition.
+2. Sélectionnez **Modifier** pour ouvrir le rapport en mode Édition.
 3. Ajoutez une nouvelle page de rapport en sélectionnant l’icône représentant un signe « + » de couleur jaune au bas du rapport.
 4. Créez un graphique en aires qui affiche les ventes de l’année actuelle et celles de l’année dernière mois par mois.
    
-   a. Dans le volet Champs, sélectionnez **Sales (Ventes) \> Last Year Sales (Ventes de l’année dernière)** et **This Year Sales > Value (Ventes de cette année > Valeur)** .
+   a. Dans le volet Champs, sélectionnez **Sales (Ventes) \> Last Year Sales (Ventes de l’année dernière)** et **This Year Sales > Value (Ventes de cette année > Valeur)** .
 
    ![](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
 

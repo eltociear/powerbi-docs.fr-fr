@@ -6,15 +6,15 @@ ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: resource
+ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412906"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751010"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -142,7 +142,7 @@ Vous pouvez utiliser « environnement Power BI » (locataire) dans la documentat
 ## <a name="h"></a>H
 **high-density visuals (visuels à haute densité)** Visuels avec plus de points de données que ce que Power BI peut restituer. Power BI échantillonne les données pour montrer la forme et les valeurs hors norme.
 
-**Accueil** la valeur par défaut d’accueil d’âge pour les utilisateurs du service Power BI. Ne rien modifier. Peut être appelée Power BI leur domicile ou simplement l’accueil.
+**Accueil** Page d’accueil par défaut pour les utilisateurs du service Power BI. Ne modifie rien. Peut s’appeler Accueil Power BI ou simplement Accueil.
 
 ## <a name="i"></a>I
 

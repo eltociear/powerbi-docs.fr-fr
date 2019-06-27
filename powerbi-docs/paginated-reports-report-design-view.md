@@ -1,5 +1,5 @@
 ---
-title: Découverte du mode Création de rapport pour les rapports paginés - Power BI (préversion)
+title: Découverte du mode Création de rapport pour les rapports paginés - Power BI
 description: Le mode Création de rapport du Générateur de rapports est l’espace de conception pour la création de rapports paginés que vous pouvez publier dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 76c12cf411f49fda9f9fe042a6d1aafa457bf914
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423340"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839524"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Découverte du mode Création de rapport pour les rapports paginés - Power BI (préversion)
+# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Découverte du mode Création de rapport pour les rapports paginés - Power BI
 
-Mode de création de rapport dans le Générateur de rapports Power BI est l’espace de conception pour la création de rapports paginés que vous pouvez publier sur le service Power BI. Le canevas de conception se situe au centre du Générateur de rapports, entouré par le ruban et les volets. Le canevas de conception est l’endroit où vous ajoutez et organisez les éléments de votre rapport. Cet article présente les volets qui vous permettent d’ajouter et d’organiser vos ressources de rapport et de modifier les propriétés d’un élément du rapport.  
+Le mode Création de rapport du Générateur de rapports Power BI est l’espace de conception pour la création de rapports paginés que vous pouvez publier sur le service Power BI. Le canevas de conception se situe au centre du Générateur de rapports, entouré par le ruban et les volets. Le canevas de conception est l’endroit où vous ajoutez et organisez les éléments de votre rapport. Cet article présente les volets qui vous permettent d’ajouter et d’organiser vos ressources de rapport et de modifier les propriétés d’un élément du rapport.  
 
 ![Mode Création du Générateur de rapports](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
@@ -109,7 +109,7 @@ La barre d’état du rapport actif affiche le nom du serveur auquel le rapport 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Présentation des rapports paginés dans Power BI Premium (préversion)](paginated-reports-report-builder-power-bi.md) 
+[Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md) 
 
   
   

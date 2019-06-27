@@ -1,6 +1,6 @@
 ---
 title: Créer un locataire Azure Active Directory pour utiliser Power BI
-description: Découvrez comment créer un locataire Azure Active Directory (Azure AD) pour votre application personnalisée à l’aide des API REST Power BI.
+description: Découvrez comment créer un locataire Azure Active Directory (Azure AD) pour une application personnalisée qui appelle des API REST Power BI.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -8,35 +8,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2017
-ms.openlocfilehash: ae3d15cce7c0beb8122542e3768a0ec10ca0a1ae
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 05/28/2019
+ms.openlocfilehash: 73dddd00b6f811cd29c76c97b04136358d6e6b7a
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61381700"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809216"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Créer un locataire Azure Active Directory pour utiliser Power BI
 
-Découvrez comment créer un locataire Azure Active Directory (Azure AD) pour votre application personnalisée à l’aide des API REST Power BI.
+Découvrez comment créer un locataire Azure Active Directory (Azure AD) pour une application personnalisée qui appelle des [API REST Power BI](rest-api-reference.md).
 
-Dans Azure Active Directory, un locataire représente une organisation. Il s’agit d’une instance dédiée du service Azure AD qu’une organisation reçoit et détient lorsqu’elle s’inscrit à un service cloud Microsoft tel qu’Azure, Microsoft Intune ou Office 365. Chaque locataire Azure AD est distinct et indépendant des autres locataires Azure AD.
+Dans Azure Active Directory, un locataire représente une organisation. Il s’agit d’une instance dédiée du service Azure AD qu’une organisation reçoit et détient lorsqu’elle s’inscrit à un service cloud Microsoft comme Azure, Microsoft Intune ou Office 365. Chaque locataire Azure AD est distinct et indépendant des autres locataires Azure AD.
 
-Lorsque vous disposez d’un locataire Azure AD, vous pouvez définir une application et lui attribuer des autorisations pour lui permettre d’utiliser les API REST Power BI.
+Lorsque vous disposez d’un locataire Azure AD, vous pouvez définir une application et lui attribuer des autorisations pour lui permettre d’appeler des [API REST Power BI](rest-api-reference.md).
 
-Si votre organisation possède déjà un locataire Azure AD, vous pouvez l’utiliser pour votre application. En fonction des besoins de votre application, vous pouvez recourir à ce locataire ou en créer un. Cet article explique comment créer un locataire.
+Si votre organisation possède déjà un locataire Azure AD, vous pouvez l’utiliser pour votre application. Vous pouvez également créer un locataire spécifiquement pour votre application. Cet article explique comment créer un locataire.
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Créer un client Azure Active Directory
 
-Pour intégrer Power BI à votre application personnalisée, vous devez définir une application dans Azure AD. Pour ce faire, il vous faut un répertoire Azure AD. Il s’agit de votre locataire. Si votre organisation n’a pas encore de locataire, car elle n’utilise pas Power BI ou Office 365, [vous devez en créer un](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Vous pouvez également créer un locataire si vous souhaitez que votre application soit indépendante du locataire de votre organisation. Cela vous permet de bien distinguer les choses.
+Pour intégrer Power BI à votre application personnalisée, vous devez définir une application dans Azure AD, ce qui vous demande d’avoir un annuaire Azure AD. Cet annuaire est votre *locataire*. Si votre organisation n’a pas encore de locataire, car elle n’utilise pas Power BI ou Office 365, [vous devez configurer un environnement de développement](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Vous pouvez également créer un locataire si vous souhaitez que votre application soit indépendante du locataire de votre organisation. Si nécessaire, vous pouvez également créer un locataire à des fins de test.
 
-Si nécessaire, vous pouvez également créer un locataire à des fins de test.
-
-Pour créer un locataire Azure AD, procédez comme suit :
+Pour créer un locataire Azure AD :
 
 1. Accédez au [portail Azure](https://portal.azure.com) et connectez-vous à l’aide d’un compte associé à un abonnement Azure.
 
-2. Sélectionnez l’**icône Plus (+)** et recherchez *Azure Active Directory*.
+2. Sélectionnez l’**icône Plus (+)** et recherchez **Azure Active Directory**.
 
     ![Icône Plus (+)](media/create-an-azure-active-directory-tenant/new-directory.png)
 
@@ -46,53 +44,58 @@ Pour créer un locataire Azure AD, procédez comme suit :
 
 4. Sélectionnez **Créer**.
 
-5. Entrez le **nom de l’organisation** ainsi que le **nom de domaine initial**. Sélectionnez ensuite **Créer**. Votre répertoire est ainsi créé.
+5. Indiquez un **nom d’organisation** et un **nom de domaine initial**. Sélectionnez ensuite **Créer**. Votre annuaire est à présent créé.
 
     ![Org et domaine](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
 
    > [!NOTE]
-   > Votre domaine initial fait partie de onmicrosoft.com. Vous pourrez ultérieurement ajouter d’autres noms de domaine. Plusieurs domaines peuvent être attribués au répertoire d’un locataire.
+   > Votre domaine initial fait partie de onmicrosoft.com. Vous pourrez ultérieurement ajouter d’autres noms de domaine. Plusieurs domaines peuvent être attribués à l’annuaire d’un locataire.
 
-6. Une fois le répertoire créé, sélectionnez la zone d’informations pour le gérer.
+6. Une fois l’annuaire créé, sélectionnez la zone d’informations pour le gérer.
 
-Votre répertoire est maintenant créé. L’étape suivante consiste à ajouter un utilisateur au locataire.
+Maintenant, vous allez ajouter des utilisateurs au locataire.
 
-## <a name="create-some-users-in-your-azure-active-directory-tenant"></a>Créer des utilisateurs dans votre locataire Azure Active Directory
+## <a name="create-azure-active-directory-tenant-users"></a>Créer des utilisateurs dans un locataire Azure Active Directory
 
-Maintenant que vous disposez d’un répertoire, vous devez créer au moins deux utilisateurs. L’un d’eux est l’administrateur général du locataire, et l’autre votre utilisateur principal pour l’incorporation. Considérez celui-ci comme un compte de service.
+Maintenant que vous disposez d’un annuaire, vous devez créer au moins deux utilisateurs. L’un d’eux est l’administrateur général du locataire et l’autre est l’utilisateur maître chargé de l’incorporation. Cet utilisateur peut être vu comme un compte de service.
 
-1. Dans le portail Azure, vérifiez que vous vous trouvez sur la sortie Azure Active Directory.
+1. Dans le portail Azure, veillez à vous trouver sur la sortie Azure Active Directory.
 
     ![](media/create-an-azure-active-directory-tenant/aad-flyout.png)
 
-    Si ce n’est pas le cas, sélectionnez l’icône Azure Active Directory sur la barre de services de gauche.
+    Si ce n’est pas le cas, sélectionnez l’icône Azure Active Directory sur la barre de navigation des services située sur la gauche.
 
     ![](media/create-an-azure-active-directory-tenant/aad-service.png)
-2. Sous **Gérer**, sélectionnez **Utilisateurs et groupes**.
+
+2. Sous **Gérer**, sélectionnez **Utilisateurs**.
 
     ![](media/create-an-azure-active-directory-tenant/users-and-groups.png)
+
 3. Sélectionnez **Tous les utilisateurs**, puis **+ Nouvel utilisateur**.
-4. Attribuez un nom et un nom d’utilisateur à ce nouvel utilisateur. Celui-ci devient l’administrateur général du locataire. Vous devez également définir le **Rôle d’annuaire** sur *Administrateur général*. En outre, vous pouvez afficher le mot de passe temporaire. Lorsque vous avez terminé, sélectionnez **Créer**.
+
+4. Fournissez un **nom** et un **nom d’utilisateur** pour l’administrateur général de votre locataire. Définissez le **Rôle d’annuaire** sur **Administrateur général**. En outre, vous pouvez afficher le mot de passe temporaire. Lorsque vous avez terminé, sélectionnez **Créer**.
 
     ![](media/create-an-azure-active-directory-tenant/global-admin.png)
 
-5. La même procédure s’applique à la création d’un utilisateur ordinaire dans votre locataire. Elle peut également être utilisée pour votre compte d’incorporation principal. Dans ce cas, le paramètre **Rôle d’annuaire** doit être défini sur *Utilisateur*. Veillez à noter le mot de passe. Sélectionnez ensuite **Créer**.
+5. Faites la même chose pour les utilisateurs standard du locataire. Vous pouvez utiliser ce compte pour votre compte d’incorporation principal. Cette fois-ci, le paramètre **Rôle d’annuaire** doit conserver la valeur **Utilisateur**. Notez le mot de passe, puis sélectionnez **Créer**.
 
     ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
-6. Inscrivez-vous à Power BI à l’aide du compte d’utilisateur que vous avez créé à l’étape 5. Pour ce faire, accédez à [powerbi.com](https://powerbi.microsoft.com/get-started/) et sélectionnez **Essai gratuit** sous *Power BI - Partage et collaboration dans le cloud*.
+
+6. Inscrivez-vous à Power BI à l’aide du compte d’utilisateur que vous avez créé à l’étape 5. Accédez à [powerbi.com](https://powerbi.microsoft.com/get-started/) et sélectionnez **Essai gratuit** sous **Power BI - Partage et collaboration dans le cloud**.
 
     ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
-    Au moment de l’inscription, vous êtes invité à essayer Power BI Pro gratuitement pendant 60 jours. Vous pouvez opter pour cette solution pour devenir utilisateur professionnel. Si tel est votre objectif, vous pouvez également commencer à développer une solution incorporée.
+    Au moment de l’inscription, vous êtes invité à essayer Power BI Pro gratuitement pendant 60 jours. Vous pouvez accepter et devenir un utilisateur Pro, ce qui vous permettra de [commencer à développer une solution incorporée](embedding-content.md).
 
    > [!NOTE]
-   > Veillez à vous connecter avec l’adresse de courrier que vous avez spécifiée pour le compte d’utilisateur.
+   > Veillez à vous inscrire avec l’adresse e-mail de votre compte d’utilisateur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous disposez d’un locataire Azure AD, vous pouvez l’utiliser pour tester des éléments dans Power BI et/ou vous pouvez commencer à incorporer des rapports et des tableaux de bord Power BI dans votre application. Pour plus d’informations sur l’incorporation d’éléments, consultez [Incorporation de vos tableaux de bord, rapports et vignettes Power BI](embedding-content.md).
+Maintenant que vous avez un locataire Azure AD, vous pouvez l’utiliser pour tester des éléments dans Power BI. Vous pouvez également incorporer des rapports et des tableaux de bord Power BI dans votre application. Pour plus d’informations, consultez [Incorporation de vos tableaux de bord, rapports et vignettes Power BI](embedding-content.md).
 
-[Qu’est-ce qu’un annuaire Azure AD ?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)  
-[Obtention d’un locataire Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+[Qu’est-ce qu’un annuaire Azure Active ?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
+ 
+[Démarrage rapide : Configurer un environnement de développement](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

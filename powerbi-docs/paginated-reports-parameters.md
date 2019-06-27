@@ -1,5 +1,5 @@
 ---
-title: Créer les paramètres de rapports paginés dans le service Power BI (préversion)
+title: Créer des paramètres de rapports paginés dans le service Power BI
 description: Dans cet article, vous allez apprendre créer des paramètres de rapports paginés dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/05/2018
-ms.openlocfilehash: d58d1c84199c698089f4b3abccb26f9dbaea76d6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: adec7af0032772022a330e3ab25377205de9ace5
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60987680"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66838982"
 ---
-# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Créer les paramètres de rapports paginés dans le service Power BI (préversion)
+# <a name="create-parameters-for-paginated-reports-in-the-power-bi-service"></a>Créer des paramètres de rapports paginés dans le service Power BI
 
 Dans cet article, vous allez apprendre créer des paramètres de rapports paginés dans le service Power BI.  Un paramètre de rapport permet de choisir des données de rapport et de varier la présentation du rapport. Vous pouvez fournir une valeur par défaut et une liste de valeurs disponibles, et les lecteurs de votre rapport peuvent modifier la sélection.  
 
-L’illustration suivante montre le mode Design dans le Générateur de rapports Power BI pour un rapport avec les paramètres @BuyingGroup, @Customer, @FromDate, et @ToDate. 
+L’illustration suivante montre le mode Design dans le Générateur de rapports Power BI pour un rapport avec les paramètres @BuyingGroup, @Customer, @FromDate et @ToDate. 
   
 ![Paramètres dans le Générateur de rapports](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
   
@@ -67,4 +67,4 @@ L’illustration suivante montre le mode Design dans le Générateur de rapports
 
 Consultez [Afficher les paramètres des rapports paginés](paginated-reports-view-parameters.md) pour voir à quoi ressemblent les paramètres dans le service Power BI.
 
-Pour obtenir des informations détaillées sur les paramètres dans les rapports paginés, consultez l’article [Paramètres du rapport (Générateur de rapports et Concepteur de rapports)](https://docs.microsoft.com/sql/reporting-services/report-design/report-parameters-report-builder-and-report-designer) dans la documentation de SQL Server Reporting Services  
+Pour obtenir des informations détaillées sur les paramètres dans les rapports paginés, consultez [Paramètres de rapport dans le Générateur de rapports Power BI](report-builder-parameters.md).

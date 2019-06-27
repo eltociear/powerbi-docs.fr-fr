@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
-ms.translationtype: MT
+ms.openlocfilehash: f06632e80bad8796ded3e3616836832967435b24
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051160"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809252"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Conseils relatifs au déploiement d’une passerelle de données pour Power BI
 
@@ -42,7 +42,7 @@ Dans la mesure où **Power BI** n’autorise qu’*une* seule passerelle par *ra
 ### <a name="connection-type"></a>Type de connexion
 **Power BI** propose deux types de connexion : **DirectQuery** et **Importer**. Certaines sources de données ne prennent pas en charge ces deux types de connexion, et vous pouvez être amené à choisir l’un plutôt que l’autre pour différentes raisons (exigences de sécurité, performances, limites de données, taille des modèle de données, etc.). Pour en savoir plus sur le type de connexion et sur les sources de données prises en charge, consultez la section *Liste des types de sources de données disponibles* de l’article [Passerelle de données locale](service-gateway-onprem.md).
 
-Selon le type de connexion est utilisé, l’utilisation de la passerelle peut être différente. Par exemple, dans la mesure du possible, vous devez tenter de séparer les sources de données **DirectQuery** des sources de données **Actualisation planifiée** (si elles se trouvent dans des rapports différents et qu’elles peuvent être séparées). Cela évite que la passerelle d’avoir des milliers de **DirectQuery** demandes en file d’attente, en même temps que l’actualisation planifiée d’un modèle de données de grande taille qui est utilisé pour le tableau de bord principal de la société du matin. Voici les éléments à prendre en compte pour les deux types de sources de données :
+Selon le type de connexion, l’utilisation de la passerelle peut être différente. Par exemple, dans la mesure du possible, vous devez tenter de séparer les sources de données **DirectQuery** des sources de données **Actualisation planifiée** (si elles se trouvent dans des rapports différents et qu’elles peuvent être séparées). Vous éviterez ainsi la mise en file d’attente de milliers de requêtes **DirectQuery** dans la passerelle au moment de l’actualisation matinale planifiée d’un modèle de données volumineux utilisé pour le tableau de bord principal de l’entreprise. Voici les éléments à prendre en compte pour les deux types de sources de données :
 
 * Pour l’**Actualisation planifiée** : selon la taille de vos requêtes et le nombre d’actualisations quotidiennes, vous pouvez vous en tenir à la configuration matérielle minimale recommandée ou procéder à une mise à niveau vers un ordinateur plus performant. Si une requête donnée n’est pas traitée, des transformations interviennent sur l’ordinateur passerelle, d’où la nécessité de disposer d’une mémoire RAM suffisante sur celui-ci.
 * Pour **DirectQuery** : une requête est envoyée chaque fois qu’un utilisateur ouvre le rapport ou examine des données. Par conséquent, si vous savez que plus de 1 000 utilisateurs risquent d’accéder simultanément aux données, veillez à ce que les composants matériels de votre ordinateur soient suffisamment robustes et fiables. Dans le cadre d’une connexion **DirectQuery**, un nombre accru de cœurs d’UC offre un meilleur débit.
@@ -104,14 +104,34 @@ La passerelle crée une connexion sortante vers **Azure Service Bus**. La passer
 
 La passerelle ne nécessite *pas* de ports d’entrée. Tous les ports requis sont répertoriés dans la liste ci-dessus.
 
-Nous vous recommandons d’ajouter les adresses IP de votre région de données à la liste verte dans votre pare-feu. Vous pouvez télécharger la liste des adresses IP à partir de la [liste des adresses IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653). Cette liste est mise à jour toutes les semaines. La passerelle communique avec **Azure Service Bus** à l’aide de l’adresse IP spécifiée et du nom de domaine complet. Si vous forcez la passerelle à communiquer à l’aide du protocole HTTPS, elle utilise uniquement le nom de domaine complet, et aucune communication n’est établie au moyen des adresses IP.
+Nous vous recommandons d’ajouter les adresses IP de votre région de données à une liste verte dans votre pare-feu. Vous pouvez télécharger la liste des adresses IP à partir de la [liste des adresses IP du centre de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653). Cette liste est mise à jour toutes les semaines. La passerelle communique avec **Azure Service Bus** à l’aide de l’adresse IP spécifiée et du nom de domaine complet. Si vous forcez la passerelle à communiquer à l’aide du protocole HTTPS, elle utilise uniquement le nom de domaine complet, et aucune communication n’est établie au moyen des adresses IP.
 
 #### <a name="forcing-https-communication-with-azure-service-bus"></a>Forcer les communications HTTPS avec Azure Service Bus
-Vous pouvez forcer la passerelle à communiquer avec **Azure Service Bus** en utilisant HTTPS au lieu d’une connexion TCP directe. Mais cela réduit légèrement les performances. Vous pouvez également forcer la passerelle à communiquer avec **Azure Service Bus** en utilisant HTTPS à l’aide de l’interface utilisateur de la passerelle (à partir de la version de mars 2017 de la passerelle).
 
-Pour ce faire, dans la passerelle, sélectionnez **Réseau**, puis définissez le paramètre **Mode de connectivité Azure Service Bus** sur **Activé**.
+Vous pouvez forcer la passerelle à communiquer avec Azure Service Bus suivant le protocole HTTPS au lieu de Direct TCP.
 
-![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
+> [!NOTE]
+> À compter de la version de juin 2019, les nouvelles installations (pas les mises à jour) ont HTTPS comme valeur par défaut au lieu de TCP, conformément aux recommandations d’Azure Service Bus.
+
+Pour forcer la communication sur HTTPS, modifiez le fichier *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* en remplaçant la valeur `AutoDetect` par `Https`, comme indiqué dans l’extrait de code qui suit directement ce paragraphe. Par défaut, ce fichier se trouve dans le dossier *C:\Program Files\Passerelle de données locale*.
+
+```xml
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
+
+La valeur du paramètre *ServiceBusSystemConnectivityModeString* respecte la casse. Les valeurs valides sont *AutoDetect* et *Https*.
+
+Vous pouvez également forcer la passerelle à adopter ce comportement à l’aide de l’interface utilisateur associée. Dans l’interface utilisateur de la passerelle, sélectionnez **Réseau**, puis définissez le paramètre **Mode de connectivité Azure Service Bus** sur **Activé**.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
+
+Une fois les modifications effectuées, lorsque vous sélectionnez **Appliquer** (un bouton qui n’apparaît que lorsque vous apportez une modification), le *service Windows de passerelle* redémarre automatiquement afin que la modification puisse prendre effet.
+
+Pour référence future, vous pouvez redémarrer le *service Windows de passerelle* à partir de la boîte de dialogue d’interface utilisateur en sélectionnant **Paramètres de service**, puis *Redémarrer maintenant*.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ### <a name="additional-guidance"></a>Conseils supplémentaires
 Cette section fournit des conseils supplémentaires sur le déploiement et la gestion des passerelles.

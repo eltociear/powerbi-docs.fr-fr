@@ -8,27 +8,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: a38547807fbbcf3c76366f32caa46945e57ca8bc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/04/2019
+ms.openlocfilehash: f0e8a9931248860e11f783d04fead6172559afc1
+ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710323"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814267"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Obtenir un jeton accès Azure AD pour votre application Power BI
 
-Découvrez comment authentifier les utilisateurs dans votre application Power BI et récupérer un jeton d’accès à utiliser avec l’API REST.
+Cet article explique comment authentifier les utilisateurs dans votre application Power BI et récupérer un jeton d’accès à utiliser avec l’[API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/).
 
-Avant de pouvoir appeler l’API REST Power BI, vous devez obtenir un **jeton d’accès d’authentification** (jeton d’accès) Azure Active Directory (Azure AD). Un **jeton d’accès** est utilisé pour autoriser l’accès de votre application aux tableaux de bord, rapports et vignettes **Power BI**. Pour en savoir plus sur le flux **de jetons d’accès** dans Azure Active Directory, consultez [Flux d’octroi d’un code d’autorisation Azure AD](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
+Avant de pouvoir appeler l’API REST, vous devez obtenir un **jeton d’accès d’authentification** Azure Active Directory (Azure AD). Votre application utilise un jeton pour accéder aux tableaux de bord, rapports et vignettes Power BI. Pour plus d’informations, consultez [Autoriser l’accès aux applications web Azure Active Directory à l’aide du flux d’octroi de code OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
 
-La récupération du jeton d’accès varie selon la façon dont vous incorporez du contenu. Deux approches différentes sont utilisées dans cet article.
+La récupération du jeton d’accès varie selon la façon dont vous incorporez du contenu. Cet article montre deux approches différentes.
 
 ## <a name="access-token-for-power-bi-users-user-owns-data"></a>Pour un jeton d’accès pour les utilisateurs Power BI (l’utilisateur possède les données)
 
-Cet exemple illustre les situations où vos utilisateurs se connectent manuellement à Azure AD avec les informations de connexion de leur organisation. Cette tâche utilisée lors de l’incorporation de contenu pour les utilisateurs Power BI accédant à du contenu qui ont accès au service Power BI.
+Cet exemple illustre les situations où vos utilisateurs se connectent manuellement à Azure AD avec les informations de connexion de leur organisation. Cette tâche est utilisée lors de l’incorporation de contenu pour les utilisateurs qui ont accès au service Power BI.
 
-### <a name="get-an-authorization-code-from-azure-ad"></a>Obtenir un code d’autorisation à partir d’Azure AD
+### <a name="get-an-azure-ad-authorization-code"></a>Obtenir du code d’autorisation Azure AD
 
 La première étape pour obtenir un **jeton d’accès** est de vous procurer un code d’autorisation depuis **Azure AD**. Construisez une chaîne de requête avec les propriétés suivantes, et redirigez vers **Azure AD**.
 
@@ -54,7 +54,7 @@ var @params = new NameValueCollection
 };
 ```
 
-Après avoir créé une chaîne de requête, vous redirigez vers **Azure AD** pour obtenir un **code d’autorisation**.  Voici une méthode C# complète pour créer une chaîne de requête de **code d’autorisation** et rediriger vers **Azure AD**. Une fois que vous avez le code d’autorisation, vous obtenez un **jeton d’accès** à l’aide du **code d’autorisation**.
+Après avoir créé une chaîne de requête, vous redirigez vers **Azure AD** pour obtenir un **code d’autorisation**.  Voici une méthode C# complète pour créer une chaîne de requête de **code d’autorisation** et rediriger vers **Azure AD**. Vous utilisez ensuite le **code d’autorisation** pour obtenir un **jeton d’accès**.
 
 Dans redirect.aspx.cs, des appels de [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) pour générer le jeton.
 
@@ -98,9 +98,9 @@ protected void signInButton_Click(object sender, EventArgs e)
 
 ### <a name="get-an-access-token-from-authorization-code"></a>Obtenir un jeton accès à partir du code d’autorisation
 
-Vous devez maintenant avoir un code d’autorisation d’Azure AD. Une fois **qu’Azure AD** vous redirige vers votre application web avec un **code d’autorisation**, vous utilisez le **code d’autorisation** pour obtenir un jeton d’accès. Voici un exemple C# que vous pouvez utiliser dans votre page de redirection et l’événement Page_Load pour votre page default.aspx.
+Une fois qu’**Azure AD** vous a redirigé vers votre application web avec un **code d’autorisation**, vous devez utiliser celui-ci pour obtenir un jeton d’accès. Voici un exemple en C# que vous pouvez utiliser dans votre page de redirection et l’événement `Page_Load` de default.aspx.
 
-L’espace de noms **Microsoft.IdentityModel.Clients.ActiveDirectory** peut être récupéré à partir du package NuGet [ADAL (Active Directory Authentication Library)](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+Vous pouvez récupérer l’espace de noms **Microsoft.IdentityModel.Clients.ActiveDirectory** à partir du package NuGet [ADAL (Active Directory Authentication Library)](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 
 ```powershell
 Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
@@ -165,11 +165,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 ## <a name="access-token-for-non-power-bi-users-app-owns-data"></a>Jeton d’accès pour les utilisateurs non-Power BI (l’application possède les données)
 
-Cette approche est généralement utilisée pour les applications de type ISV où l’application est propriétaire de l’accès aux données. Les utilisateurs ne sont pas nécessairement des utilisateurs Power BI, et l’application contrôle l’authentification et l’accès pour les utilisateurs finaux.
+Cette approche est généralement utilisée pour les applications de type ISV où l’application est propriétaire de l’accès aux données. Les utilisateurs ne sont pas nécessairement des utilisateurs Power BI, et l’application contrôle leur authentification et leur accès.
 
 ### <a name="access-token-with-a-master-account"></a>Jeton d’accès avec un compte principal
 
-Dans cette approche, vous utilisez un seul compte *principal* qui est un utilisateur Power BI Pro. Les informations d’identification pour ce compte sont stockées avec l’application. L’application s’authentifie auprès d’Azure AD en utilisant ces informations d’identification stockées. L’exemple de code ci-dessous provient de l’exemple [L’application possède les données](https://github.com/guyinacube/PowerBI-Developer-Samples)
+Dans cette approche, vous utilisez un seul compte *principal* qui est un utilisateur Power BI Pro. Les informations d’identification de compte sont stockées avec l’application. L’application s’authentifie auprès d’Azure AD avec ces informations d’identification stockées. L’exemple de code ci-dessous provient de l’exemple [L’application possède les données](https://github.com/guyinacube/PowerBI-Developer-Samples)
 
 ### <a name="access-token-with-service-principal"></a>Jeton d’accès avec un principal du service
 
@@ -199,10 +199,12 @@ m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bea
 
 ## <a name="troubleshoot"></a>Résoudre des problèmes
 
-* Télécharger [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) si vous rencontrez une « 'AuthenticationContext' ne contient-elle pas d’une définition pour 'AcquireToken' et aucune AcquireToken accessible de « » d’acceptant un premier argument de type ' AuthenticationContext' est introuvable (vous manque-t-il une à l’aide de la directive ou une référence d’assembly ?) » erreur.
+Message d’erreur : « AuthenticationContext' ne contient pas de définition pour 'AcquireToken', et aucun 'AcquireToken' accessible qui accepte un premier argument de type 'AuthenticationContext' n’a été trouvé (peut-être vous manque-t-il une directive using ou une référence d’assembly ?) ».
+
+   Si vous voyez cette erreur, essayez de télécharger [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous avez le jeton d’accès, vous pouvez appeler l’API REST Power BI pour incorporer le contenu. Pour plus d’informations sur l’incorporation de votre contenu, consultez [Guide pratique pour incorporer votre contenu Power BI](embed-sample-for-customers.md#embed-content-within-your-application).
+Maintenant que vous avez le jeton d’accès, vous pouvez appeler l’API REST Power BI pour incorporer le contenu. Pour plus d’informations, consultez [Guide pratique pour incorporer votre contenu Power BI](embed-sample-for-customers.md#embed-content-within-your-application).
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

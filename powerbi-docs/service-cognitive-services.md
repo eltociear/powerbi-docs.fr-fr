@@ -1,5 +1,5 @@
 ---
-title: Cognitive Services dans Power BI (préversion)
+title: Cognitive Services dans Power BI
 description: Découvrez comment utiliser Cognitive Services avec Power BI
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 63de805b357fd5b4d15aeea2231dc952ec9e7077
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 267534198d40b91a5550321162b42ecd45500673
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61182009"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823496"
 ---
-# <a name="cognitive-services-in-power-bi-preview"></a>Cognitive Services dans Power BI (préversion)
+# <a name="cognitive-services-in-power-bi"></a>Cognitive Services dans Power BI 
 
 Avec Cognitive Services dans Power BI, vous pouvez appliquer différents algorithmes d’[Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) pour enrichir vos données dans la préparation des données de libre-service pour les flux de données.
 
@@ -25,7 +25,7 @@ Les services actuellement pris en charge sont l’[analyse des sentiments](https
 
 ## <a name="enabling-ai-features"></a>**Activation de fonctionnalités d’intelligence artificielle**
 
-Cognitives services est pris en charge pour les nœuds de capacité Premium EM2, A2 ou P1 et versions ultérieures. Une charge de travail d’intelligence artificielle distincte sur la capacité est utilisée pour exécuter les services cognitifs. Dans la préversion publique, cette charge de travail est désactivée par défaut. Avant d’utiliser les services cognitifs dans Power BI, la charge de travail d’intelligence artificielle doit être activée dans les paramètres de capacité du portail d’administration. Vous pouvez activer la charge de travail d’intelligence artificielle dans la section des charges de travail et définir la quantité maximale de mémoire que vous souhaitez que cette charge de travail utilise. La limite de mémoire recommandée est de 20 %. Le dépassement de cette limite ralentit la requête.
+Cognitives services est pris en charge pour les nœuds de capacité Premium EM2, A2 ou P1 et versions ultérieures. Une charge de travail d’intelligence artificielle distincte sur la capacité est utilisée pour exécuter les services cognitifs. Dans la préversion publique (avant juin 2019), cette charge de travail était désactivée par défaut. Avant d’utiliser les services cognitifs dans Power BI, la charge de travail d’intelligence artificielle doit être activée dans les paramètres de capacité du portail d’administration. Vous pouvez activer la charge de travail d’intelligence artificielle dans la section des charges de travail et définir la quantité maximale de mémoire que vous souhaitez que cette charge de travail utilise. La limite de mémoire recommandée est de 20 %. Le dépassement de cette limite ralentit la requête.
 
 ![Cognitive Services dans Power BI](media/service-cognitive-services/cognitive-services_01.png)
 
@@ -95,14 +95,14 @@ Cette fonction requiert une URL de l’image ou un champ de base de données 64 
 
 Cet article donne une vue d’ensemble de l’utilisation de Cognitive Services avec le service Power BI. Les articles suivants pourraient également être intéressants et utiles pour vous. 
 
-* [Tutoriel : Appeler un modèle Machine Learning Studio dans Power BI (préversion)](service-tutorial-invoke-machine-learning-model.md)
-* [Intégration d’Azure Machine Learning dans Power BI (préversion)](service-machine-learning-integration.md)
+* [Tutoriel : Appeler un modèle Machine Learning Studio dans Power BI](service-tutorial-invoke-machine-learning-model.md)
+* [Intégration d’Azure Machine Learning dans Power BI](service-machine-learning-integration.md)
 * [Tutoriel : Utilisation de Cognitive Services dans Power BI](service-tutorial-use-cognitive-services.md)
 
 
 Pour plus d’informations sur les flux de données, lisez les articles suivants :
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Utilisation d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 * [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)

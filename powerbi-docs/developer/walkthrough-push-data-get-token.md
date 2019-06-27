@@ -1,6 +1,6 @@
 ---
 title: Obtenir un jeton d’accès d’authentification
-description: 'Procédure pas à pas pour transmettre des données : obtenir un jeton d’accès d’authentification'
+description: Procédure pas à pas pour envoyer (push) des données - Obtenir un jeton d’accès d’authentification
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -8,42 +8,49 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 4a0b0f5e7d697c137da343576d05fbcc91b4a4f7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 05/29/2019
+ms.openlocfilehash: 5cb741d194d787014fec39f963e19d04de59a668
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710349"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809100"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Étape 2 : Obtenir un jeton d’accès d’authentification
 
-Cet article fait partie d’une procédure pas à pas pour [transmettre des données à un jeu de données](walkthrough-push-data.md).
+Cet article constitue la deuxième étape de la série [Envoyer (push) des données vers un jeu de données Power BI](walkthrough-push-data.md).
 
-À l’**étape 1** de la procédure de transmission des données à un jeu de données intitulée [Inscrire l’application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), vous avez inscrit une application cliente dans Azure AD. Pendant cette étape, vous obtenez un jeton d’accès d’authentification. Les applications Power BI sont intégrées à **Azure AD** afin d’offrir une connexion et une autorisation sécurisées pour votre application. Vous utilisez un jeton pour vous authentifier auprès d’ **Azure AD** et accéder aux ressources Power BI.
-
-Voici comment obtenir un jeton d’accès d’authentification.
+Dans l’étape 1, vous avez [inscrit une application cliente dans Azure AD](walkthrough-push-data-register-app-with-azure-ad.md). Pendant cette étape, vous obtenez un jeton d’accès d’authentification. Les applications Power BI sont intégrées à Azure Active Directory dans le but de fournir un système de connexion et d’autorisation sécurisé à votre application. Votre application utilise un jeton pour s’authentifier auprès d’Azure AD et accéder aux ressources Power BI.
 
 ## <a name="get-an-authentication-access-token"></a>Obtenir un jeton d’accès d’authentification
 
-> **REMARQUE** : Avant de commencer, veillez à suivre les étapes précédentes de la procédure pas à pas [Transmettre des données à un jeu de données](walkthrough-push-data.md).
+Avant de commencer, vérifiez que vous avez effectué l’[étape précédente](walkthrough-push-data-register-app-with-azure-ad.md) de la série [Envoyer (push) des données vers un jeu de données Power BI](walkthrough-push-data.md). 
 
-1. Dans Visual Studio (2015 ou version ultérieure), créez un **Application Console** projet.
-2. Installez le [package NuGet Bibliothèque d’authentification Azure AD pour .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Pour obtenir un jeton de sécurité d’authentification dans une application .NET, vous utilisez ce package. Voici comment installer le package :
+Cette procédure nécessite Visual Studio 2015 ou version ultérieure.
 
-     a. Dans Visual Studio (2015 ou version ultérieure), choisissez **outils** > **Gestionnaire de Package NuGet** > **Console du Gestionnaire de Package**.
+1. Dans Visual Studio, créez un projet **Application console** en C#.
 
-     b. Dans la **Console du Gestionnaire de package**, entrez Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
-3. Ajoutez le code ci-dessous dans la classe Program {...}.
-4. Remplacez « {ClientID} » par l’ **ID client** que vous avez obtenu quand vous avez inscrit l’application. Consultez [Inscrire l’application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md).
-5. Après avoir installé le package Microsoft.IdentityModel.Clients.ActiveDirectory, ajoutez **using Microsoft.IdentityModel.Clients.ActiveDirectory;** au fichier Program.cs.
-6. Exécutez l’application console, puis connectez-vous à votre compte Power BI. Une chaîne de jeton doit apparaître dans la fenêtre de console.
+2. Installez le [package NuGet Bibliothèque d’authentification Azure AD pour .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Votre application .NET a besoin de ce package pour obtenir un jeton de sécurité d’authentification. 
+
+     a. Sélectionnez **Outils** > **Gestionnaire de package NuGet** > **Console du Gestionnaire de package**.
+
+     b. Entrez **Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612**.
+
+     c. Dans Program.cs, ajoutez `using Microsoft.IdentityModel.Clients.ActiveDirectory;`.
+
+3. Dans le fichier Program.cs, ajoutez l’exemple de code figurant après ces étapes.
+
+4. Remplacez « {ClientID} » par l’**ID Client** que vous avez obtenu dans l’[article précédent de la série](walkthrough-push-data-register-app-with-azure-ad.md), lorsque vous avez inscrit votre application.
+
+5. Exécutez l’application console, puis connectez-vous à votre compte Power BI. 
+
+   Une chaîne de jeton doit s’afficher dans la fenêtre de console.
 
 **Exemple de code pour obtenir un jeton de sécurité d’authentification**
 
 Ajoutez ce code à Program {...}.
 
-* Une variable de jeton pour appeler des opérations :
+* Une variable de jeton pour appeler des opérations : 
   
   ```csharp
   private static string token = string.Empty;
@@ -104,13 +111,10 @@ Ajoutez ce code à Program {...}.
        #endregion
 ```
 
-Après avoir obtenu un jeton d’authentification, vous pouvez appeler une opération Power BI. L’étape suivante vous montre comment appeler l’opération [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) pour créer un jeu de données afin de pousser des données vers un tableau de bord.
+Après avoir obtenu un jeton d’authentification, vous pouvez appeler une opération Power BI.
 
-L’étape suivante vous montre comment [créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md).
+L’article suivant de cette série vous montre comment [créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md).
 
-Ci-après figure le [listing du code complet](#code).
-
-<a name="code"/>
 
 ## <a name="complete-code-listing"></a>Listing du code complet
 
@@ -175,14 +179,13 @@ namespace walkthrough_push_data
 }
 ```
 
-[Étape suivante >](walkthrough-push-data-create-dataset.md)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)  
-[Inscrire une application auprès d’Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
-[Package NuGet Bibliothèque d’authentification Azure AD pour .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
-[Transmettre des données à un jeu de données Power BI](walkthrough-push-data.md)  
+[Article suivant de cette série > Créer un jeu de données dans Power BI](walkthrough-push-data-create-dataset.md)
+
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
-[Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
+[API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
+
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
