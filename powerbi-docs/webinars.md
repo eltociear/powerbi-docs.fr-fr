@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 1050cf5ee5060a19e4f38b98fb6766b6e5510451
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750993"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389555"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -23,10 +23,6 @@ Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions en
 ## <a name="upcoming-webinars"></a>Webinaires à venir
 
 Inscrivez-vous pour écouter des experts de Power BI et participer à des sessions de questions et réponses en direct.
-
-**Microsoft utilise la technologie Power BI : Utilisation de Power BI dans la trésorerie moderne**
-<br>par Pankaj Gudimella et Guru Kirthigavasan
-<br>[S’inscrire pour regarder le 25 juin, de 10h à 11h (heure de la côte Ouest des États-Unis)](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Power BI : Comment obtenir des insights à partir de vos données de ressources humaines Workday**
 <br>par Iman Eftekhari, Julia Paton d’Agile Analytics et Shahram Karimi de QBE Insurance
@@ -61,6 +57,10 @@ Commencez avec ces webinaires populaires à la demande
 **Microsoft Runs on Power BI – Financial Planning & Analysis Made Easy**
 <br>par Cory Hrncirik et Miguel Martinez
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Microsoft utilise la technologie Power BI : Utilisation de Power BI dans la trésorerie moderne**
+<br>par Pankaj Gudimella et Guru Kirthigavasan
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Optimisez vos applications avec l’API JavaScript de Power BI**
 <br>par Nimrod Shalit
@@ -141,17 +141,9 @@ Regardez les sessions enregistrées à tout moment
 <br>par Stephen Cracknell et Stuart Macanliss de US Medical IT
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Boostez votre BI grâce à la gélocalisation intelligente**
-<br>par Scott Ball d’Esri et Enrique Plaza de Microsoft
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
-
 **Intelligence appliquée pour les ventes et les services**
 <br>par Ed Bobrin d’Avanade
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
-**5 habitudes qui font le succès d’un chasseur de tendances – Rohit Bhargava**
-<br>par Rohit Bhargava, Non-Obvious
-<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Fabricants : votre secteur est en phase de transition numérique – maintenez votre leadership en tirant parti des analyses pour optimiser votre rentabilité**
 <br>par Jon Thompson de Blue Margin et Jim Pastor d’Elgin Fastener Group
@@ -160,6 +152,14 @@ Regardez les sessions enregistrées à tout moment
 **Visualiser des jeux de données publics ou privés avec le nouveau connecteur Power BI et data.world**
 <br>par Patrick McGarry et Miguel Martinez
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
+**Boostez votre BI grâce à la gélocalisation intelligente**
+<br>par Scott Ball d’Esri et Enrique Plaza de Microsoft
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
+
+**5 habitudes qui font le succès d’un chasseur de tendances – Rohit Bhargava**
+<br>par Rohit Bhargava, Non-Obvious
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 ### <a name="community"></a>Communauté ###
 
