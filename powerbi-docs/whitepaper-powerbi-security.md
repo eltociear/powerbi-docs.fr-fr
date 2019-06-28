@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: e75810d18b39619d249c3acd9a9140b3d19d5f35
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051307"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418705"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -46,7 +46,7 @@ Chaque déploiement de Power BI est constitué de deux clusters : un cluster w
 
 ![Le WFE et le back-end](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI utilise Azure Active Directory (**AAD**) pour l’authentification et la gestion des comptes. Power BI utilise également **Azure Traffic Manager** (ATM) pour diriger le trafic utilisateur vers le centre de données le plus proche, déterminé en fonction de l’enregistrement DNS du client qui tente de se connecter, pour le processus d’authentification et le téléchargement des fichiers et du contenu statique. Power BI utilise le serveur Web frontal géographiquement le plus proche pour distribuer efficacement le contenu statique nécessaires et les fichiers des utilisateurs, à l’exception des éléments visuels personnalisés qui sont remis à l’aide de la **Azure Content Delivery Network (CDN)**.
+Power BI utilise Azure Active Directory (**AAD**) pour l’authentification et la gestion des comptes. Power BI utilise également **Azure Traffic Manager** (ATM) pour diriger le trafic utilisateur vers le centre de données le plus proche, déterminé en fonction de l’enregistrement DNS du client qui tente de se connecter, pour le processus d’authentification et le téléchargement des fichiers et du contenu statique. Power BI utilise le serveur Web frontal géographiquement le plus proche pour distribuer efficacement le contenu statique nécessaires et les fichiers des utilisateurs, à l’exception des éléments visuels personnalisés qui sont remis à l’aide de la **Azure Content Delivery Network (CDN)** .
 
 ### <a name="the-wfe-cluster"></a>Le cluster WFE
 
@@ -149,7 +149,7 @@ La séquence d’authentification utilisateur pour le service Power BI se dérou
 
 2. Le navigateur envoie à Microsoft Online Services un cookie qui a été obtenu à partir de la connexion, et ce cookie est inspecté par le **service ASP.NET** dans le **cluster WFE**.
 
-3. Le cluster WFE vérifie auprès du service **Azure Active Directory** (**AAD**) pour authentifier l’abonnement au service Power BI de l’utilisateur et pour obtenir un jeton de sécurité AAD. Quand AAD confirme que l’authentification de l’utilisateur a réussi et retourne un jeton de sécurité AAD, le cluster WFE consulte le **service mondial Power BI******, qui tient à jour une liste des locataires et des emplacements de leurs clusters back-end Power BI, et il détermine quel cluster de service Power BI contient le locataire de l’utilisateur. Le cluster WFE dirige ensuite l’utilisateur vers le cluster Power BI où son locataire se trouve, et retourne une collection d’éléments au navigateur de l’utilisateur :
+3. Le cluster WFE vérifie auprès du service **Azure Active Directory** (**AAD**) pour authentifier l’abonnement au service Power BI de l’utilisateur et pour obtenir un jeton de sécurité AAD. Quand AAD confirme que l’authentification de l’utilisateur a réussi et retourne un jeton de sécurité AAD, le cluster WFE consulte le **service mondial Power BI****** , qui tient à jour une liste des locataires et des emplacements de leurs clusters back-end Power BI, et il détermine quel cluster de service Power BI contient le locataire de l’utilisateur. Le cluster WFE dirige ensuite l’utilisateur vers le cluster Power BI où son locataire se trouve, et retourne une collection d’éléments au navigateur de l’utilisateur :
 
       - Le **jeton de sécurité AAD**
       - Les **informations de session**
@@ -320,7 +320,7 @@ Avec chaque source de données, un utilisateur établit une connexion en fonctio
 
 Quand un utilisateur partage des requêtes, des tableaux de bord, des rapports ou des visualisations, l’accès à ces données et à ces visualisations dépend de la prise en charge de la sécurité au niveau du rôle par les sources de données sous-jacentes.
 
-Si une source de données sous-jacente prend en charge la **sécurité au niveau du rôle de Power BI******, le service Power BI appliquera cette sécurité au niveau du rôle et les utilisateurs ne disposant pas d’informations d’identification suffisantes pour accéder aux données sous-jacentes (qui peut être une requête utilisée dans un tableau de bord, un rapport ou autre artefact de données) ne verront pas les données pour lesquelles ils ne disposent pas de privilèges suffisants. Si l’accès aux données sous-jacentes d’un utilisateur est différent de celui de l’utilisateur qui a créé le tableau de bord ou le rapport, les visualisations et autres artefacts afficheront uniquement les données correspondant au niveau d’accès dont dispose l’utilisateur sur ces données.
+Si une source de données sous-jacente prend en charge la **sécurité au niveau du rôle de Power BI****** , le service Power BI appliquera cette sécurité au niveau du rôle et les utilisateurs ne disposant pas d’informations d’identification suffisantes pour accéder aux données sous-jacentes (qui peut être une requête utilisée dans un tableau de bord, un rapport ou autre artefact de données) ne verront pas les données pour lesquelles ils ne disposent pas de privilèges suffisants. Si l’accès aux données sous-jacentes d’un utilisateur est différent de celui de l’utilisateur qui a créé le tableau de bord ou le rapport, les visualisations et autres artefacts afficheront uniquement les données correspondant au niveau d’accès dont dispose l’utilisateur sur ces données.
 
 Si une source de données n’applique **pas** la sécurité au niveau du rôle, les informations d’identification de connexion de Power BI sont appliquées à la source de données sous-jacente ou, si d’autres informations d’identification sont fournies lors de la connexion, ces informations d’identification fournies sont appliquées. Quand un utilisateur charge des données dans le service Power BI à partir de sources de données n’appliquant pas la sécurité au niveau du rôle, les données sont stockées dans Power BI comme décrit dans la section **Stockage et déplacement de données** de ce document. Pour les sources de données n’appliquant pas la sécurité au niveau du rôle, quand les données sont partagées avec d’autres utilisateurs (par exemple dans un tableau de bord ou un rapport) ou qu’une actualisation des données a lieu, les informations d’identification d’origine sont utilisées pour accéder aux données ou les afficher.
 
@@ -380,7 +380,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **Comment les utilisateurs se connectent et accèdent aux sources de données quand ils utilisent Power BI ?**
 
-* **Informations d’identification Power BI et informations d’identification de domaine :** Les utilisateurs se connectent à Power BI à l’aide d’une adresse e-mail. Quand un utilisateur tente de se connecter à une ressource de données, Power BI transmet l’adresse e-mail de connexion Power BI en guise d’informations d’identification. Pour les ressources connectées à un domaine (localement ou dans le cloud), l’adresse e-mail de connexion est mise en correspondance avec un _nom d’utilisateur principal_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) par le service d’annuaire afin de déterminer si les informations d’identification suffisent pour autoriser l’accès. Pour les organisations qui utilisent des adresses e-mail professionnelles pour se connecter à Power BI (les mêmes que pour se connecter aux ressources de travail, par exemple _david@contoso.com_), le mappage peut se produire sans interruption. Pour les organisations qui n’utilisaient pas des adresses e-mail professionnelles (par exemple, _david@contoso.onmicrosoft.com_), le mappage d’annuaire doit être établi afin d’autoriser l’accès aux ressources locales avec les informations d’identification de connexion Power BI.
+* **Informations d’identification Power BI et informations d’identification de domaine :** Les utilisateurs se connectent à Power BI à l’aide d’une adresse e-mail. Quand un utilisateur tente de se connecter à une ressource de données, Power BI transmet l’adresse e-mail de connexion Power BI en guise d’informations d’identification. Pour les ressources connectées à un domaine (localement ou dans le cloud), l’adresse e-mail de connexion est mise en correspondance avec un _nom d’utilisateur principal_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) par le service d’annuaire afin de déterminer si les informations d’identification suffisent pour autoriser l’accès. Pour les organisations qui utilisent des adresses e-mail professionnelles pour se connecter à Power BI (les mêmes que pour se connecter aux ressources de travail, par exemple _david@contoso.com_ ), le mappage peut se produire sans interruption. Pour les organisations qui n’utilisaient pas des adresses e-mail professionnelles (par exemple, _david@contoso.onmicrosoft.com_ ), le mappage d’annuaire doit être établi afin d’autoriser l’accès aux ressources locales avec les informations d’identification de connexion Power BI.
 
 * **SQL Server Analysis Services et Power BI :** Pour les organisations qui utilisent SQL Server Analysis Services local, Power BI offre la passerelle de données locale Power BI (qui est une **passerelle** au sens employé dans les sections précédentes).  La passerelle de données locale Power BI peut appliquer une sécurité au niveau du rôle sur les sources de données. Pour plus d’informations sur la sécurité au niveau du rôle, consultez **Authentification des utilisateurs auprès des sources de données** plus haut dans ce document. Vous pouvez également lire un article approfondi sur [Power BI Gateway](service-gateway-manage.md).
 
@@ -426,14 +426,11 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **En cas d’utilisation de la passerelle de données locale, comment les clés de récupération sont-elles utilisées et où sont-elles stockées ? Qu’en est-il de la gestion des informations d’identification sécurisées ?**
 
-* Pendant l’installation et la configuration de la passerelle, l’administrateur entre une **clé de récupération** de passerelle. Cette **clé de récupération** sert à générer deux jeux de clés beaucoup plus fortes :
+* Pendant l’installation et la configuration de la passerelle, l’administrateur entre une **clé de récupération** de passerelle. Que **clé de récupération** est utilisé pour générer un nom fort **AES** clé symétrique. Un **RSA** clé asymétrique est également créée en même temps.
 
-  - Une clé asymétrique **RSA**
-  - Une clé symétrique **AES**
+    Ces clés générées (**RSA** et **AES**) sont stockées dans un fichier se trouvant sur l’ordinateur local. Ce fichier est également chiffré. Le contenu du fichier peut être déchiffré uniquement par cet ordinateur Windows spécifique, et uniquement par ce compte de service de passerelle spécifique.
 
-  Ces clés générées (**RSA** et **AES**) sont stockées dans un fichier se trouvant sur l’ordinateur local. Ce fichier est également chiffré. Le contenu du fichier peut être déchiffré uniquement par cet ordinateur Windows spécifique, et uniquement par ce compte de service de passerelle spécifique.
-
-  Quand un utilisateur entre des informations d’identification de source de données dans l’interface utilisateur du service Power BI, les informations d’identification sont chiffrées avec la clé publique dans le navigateur. La passerelle rechiffre les informations d’identification (déjà chiffrées) avec une clé symétrique AES avant que les données soient stockées dans Power BI. Avec ce processus, le service Power BI n’a jamais accès aux données non chiffrées.
+    Quand un utilisateur entre des informations d’identification de source de données dans l’interface utilisateur du service Power BI, les informations d’identification sont chiffrées avec la clé publique dans le navigateur. La passerelle déchiffre les informations d’identification à l’aide de la clé privée RSA et rechiffre les avec une clé symétrique AES avant que les données sont stockées dans le service Power BI. Avec ce processus, le service Power BI n’a jamais accès aux données non chiffrées.
 
 **Quels sont les protocoles de communication utilisés par la passerelle de données locale, et comment sont-ils sécurisés ?**
 
