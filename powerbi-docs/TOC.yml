@@ -223,14 +223,16 @@
               href: desktop-qna-in-reports.md
             - name: Volet Analyse de Power BI Desktop
               href: desktop-analytics-pane.md
-            - name: Utilisation d’insights pour expliquer les hausses et les baisses
+            - name: Utiliser des insights pour expliquer les hausses et les baisses
               href: desktop-insights.md
-            - name: Utilisation d’insights pour trouver où la distribution est différente dans les graphiques
+            - name: Utiliser des insights pour trouver où la distribution est différente dans les graphiques
               href: desktop-insights-find-where-different.md
             - name: "Signets dans Power\_BI"
               href: desktop-bookmarks.md
             - name: Utiliser les thèmes de rapport
               href: desktop-report-themes.md
+            - name: Types de filtres
+              href: power-bi-report-filter-types.md
             - name: Essayer la nouvelle expérience de filtre
               href: power-bi-report-filter-preview.md
             - name: Utiliser les mesures rapides
@@ -417,50 +419,46 @@
           href: service-whats-new.md
         - name: Concepts de base
           items:
-            - name: Fondamentaux pour les concepteurs
+            - name: "Comprendre le service Power\_BI"
               href: service-basic-concepts.md
-            - name: "Types de données dans Power\_BI"
-              href: service-get-data.md
             - name: Visite guidée de l’éditeur de rapport
               href: service-the-report-editor-take-a-tour.md
-        - name: Workflow dans Power BI
-          items:
-            - name: Organisation de votre travail
-              href: service-new-workspaces.md
-            - name: Méthodes de partage du travail
-              href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Actualisation des données
+            - name: "Sources de données Power\_BI"
+              href: service-get-data.md
+            - name: "Actualisation des données dans Power\_BI"
               href: refresh-data.md
-            - name: Surveillance de l’utilisation
+        - name: "Collaborer dans Power\_BI"
+          items:
+            - name: Organiser votre travail
+              href: service-new-workspaces.md
+            - name: Partager votre travail
+              href: service-how-to-collaborate-distribute-dashboards-reports.md
+            - name: Surveiller l’utilisation de Power BI
               href: service-usage-metrics.md
         - name: Licensing
           items:
-            - name: Inscription libre-service
+            - name: "S’inscrire à Power\_BI"
               href: service-self-service-signup-for-power-bi.md
-            - name: Gestion des licences dans votre organisation
+            - name: Gérer des licences Power BI
               href: service-admin-licensing-organization.md
             - name: Fonctionnalités par type de licence
               href: service-features-license-type.md
-        - name: Autres concepts
+            - name: Power BI pour le gouvernement américain
+              href: service-govus-overview.md
+            - name: Questions fréquentes (FAQ) pour les clients du cloud allemand
+              href: service-govde-faq.md
+        - name: Obtenir de l’aide et un support
           items:
-            - name: "10\_conseils pour obtenir de l’aide"
-              href: service-tips-for-finding-help.md
             - name: "Options de support Power\_BI"
               href: service-support-options.md
-            - name: Gestion des licences des cas spéciaux
-              items:
-                - name: Activation de l’essai Pro prolongé
-                  href: service-extended-pro-trial.md
-                - name: Power BI pour le gouvernement américain
-                  href: service-govus-overview.md
-                - name: Questions fréquentes (FAQ) pour les clients du cloud allemand
-                  href: service-govde-faq.md
-            - name: Autre
-              items:
-                - name: "Microsoft Flow et Power\_BI"
-                  href: service-flow-integration.md
-                - name: Bien démarrer avec des applications tierces
-                  href: service-power-bi-get-started-third-party-apps.md
+            - name: "Dix\_conseils pour obtenir de l’aide"
+              href: service-tips-for-finding-help.md
+        - name: "Étendre Power\_BI"
+          items:
+            - name: "Microsoft Flow et Power\_BI"
+              href: service-flow-integration.md
+            - name: Utiliser des applications tierces
+              href: service-power-bi-get-started-third-party-apps.md
     - name: Guides pratiques
       items:
         - name: Obtenez des données de fichiers
@@ -525,10 +523,8 @@
               href: refresh-excel-file-onedrive.md
             - name: Actualiser un jeu de données à partir d’un fichier .csv sur OneDrive
               href: refresh-csv-file-onedrive.md
-            - name: Mise en cache des requêtes dans Power BI Premium
+            - name: "Mise en cache des requêtes dans Power\_BI Premium"
               href: power-bi-query-caching.md
-            - name: Scénarios de résolution de problèmes liés à l’actualisation
-              href: refresh-troubleshooting-refresh-scenarios.md
         - name: Tableaux de bord
           items:
             - name: Présentation des tableaux de bord
@@ -709,6 +705,8 @@
           items:
             - name: "Vous avez oublié votre mot de passe Power BI\_?"
               href: service-admin-forgot-your-password.md
+            - name: "Vous n’arrivez pas à vous connecter\_?"
+              href: power-bi-cannot-sign-in.md
             - name: Capture d’informations de diagnostic supplémentaires pour Power BI
               href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
             - name: "Autre adresse de messagerie pour Power\_BI"
@@ -717,26 +715,26 @@
               href: service-admin-how-to-use-the-same-account-as-azure.md
             - name: "Office\_365 dédié - problèmes connus"
               href: service-admin-office-365-dedicated-known-issues.md
-            - name: Résoudre les problèmes avec Cortana
-              href: service-cortana-troubleshoot.md
-            - name: Résolution des problèmes de la fonctionnalité Analyser dans Excel
-              href: desktop-troubleshooting-analyze-in-excel.md
-            - name: Résolution des problèmes de passerelle de données locale
-              href: service-gateway-onprem-tshoot.md
-            - name: "Résolution des problèmes de Power\_BI\_Gateway - Personal"
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
-            - name: Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
+            - name: Résoudre les problèmes des scénarios d’actualisation
+              href: refresh-troubleshooting-refresh-scenarios.md
+            - name: Résoudre les problèmes d’une source de données non prise en charge pour l’actualisation
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Dépannage d’une actualisation planifiée pour Azure SQL Database
+            - name: Résoudre les problèmes d’actualisation planifiée pour les bases de données Azure SQL
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+            - name: Résoudre les erreurs de vignette
+              href: refresh-troubleshooting-tile-errors.md
+            - name: Résoudre les problèmes de passerelle de données locale
+              href: service-gateway-onprem-tshoot.md
+            - name: "Résoudre les problèmes de Power\_BI Gateway - Personal"
+              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Résoudre les problèmes de la fonctionnalité Analyser dans Excel
+              href: desktop-troubleshooting-analyze-in-excel.md
             - name: "Erreur\_: Impossible de trouver des données dans votre classeur Excel"
               href: service-admin-troubleshoot-excel-workbook-data.md
-            - name: Résolution des erreurs de vignette
-              href: refresh-troubleshooting-tile-errors.md
+            - name: Résoudre les problèmes avec Cortana
+              href: service-cortana-troubleshoot.md
             - name: Comment actualiser vos identifiants du pack de contenu Xerox si l’actualisation a échoué
               href: service-refresh-xero-credentials.md
-            - name: Vous ne pouvez pas vous connecter
-              href: power-bi-cannot-sign-in.md
         - name: Autres tâches
           items:
             - name: Renommer du contenu dans Power BI
@@ -859,14 +857,12 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Supprimer une connexion à un pack de contenu
                   href: service-organizational-content-pack-disconnect.md
-    - name: Ressources
+    - name: Référence
       items:
-        - name: Vidéos
-          href: videos.md
-        - name: Webinaires
-          href: webinars.md
         - name: Langues et pays/régions pris en charge
           href: supported-languages-countries-regions.md
+    - name: Ressources
+      items:
         - name: Livres blancs
           items:
             - name: Vue d’ensemble des livres blancs
@@ -877,6 +873,10 @@
               href: whitepaper-powerbi-premium-deployment.md
             - name: "Distribuer Power BI en externe avec Azure Active Directory\_B2B"
               href: whitepaper-azure-b2b-power-bi.md
+        - name: Vidéos
+          href: videos.md
+        - name: Webinaires
+          href: webinars.md
 - name: Power BI Premium
   items:
     - name: Vue d’ensemble
@@ -1333,7 +1333,7 @@
           href: service-gateway-personal-mode.md
         - name: Connecteurs personnalisés
           href: service-gateway-custom-connectors.md
-        - name: Résolution des problèmes de passerelle de données locale
+        - name: Résoudre les problèmes de passerelle de données locale
           href: service-gateway-onprem-tshoot.md
     - name: Ressources
       items:

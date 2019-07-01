@@ -1,22 +1,22 @@
 ---
-title: Distribuer des applications modèles dans votre organisation - Power BI (préversion)
+title: Distribuer des applications modèles dans votre organisation - Power BI
 description: Découvrez comment installer, personnaliser et distribuer des applications modèles dans votre organisation à l’aide de Power BI.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 0671dfb324b3d66a9dee9585f94d3cb6825fb5eb
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/10/2019
+ms.author: tebercov
+ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751241"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264537"
 ---
-# <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Installer et distribuer des applications modèles dans votre organisation - Power BI (préversion)
+# <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installer et distribuer des applications modèles dans votre organisation - Power BI
 
 Vous êtes analyste Power BI ? Si oui, cet article explique comment installer des *applications modèles* à connecter aux nombreux services que vous utilisez pour gérer votre entreprise, tels que Salesforce, Microsoft Dynamics et Google Analytics. Vous pouvez modifier le tableau de bord et les rapports pour répondre aux besoins de votre organisation, puis les distribuer à vos collègues en tant qu’*application*. 
 
@@ -55,14 +55,13 @@ Dans un navigateur, sélectionnez ce lien pour ouvrir AppSource filtré sur les 
 
 3. Parcourez les applications ou recherchez l’application souhaitée, puis sélectionnez **Obtenir maintenant**.
 
-2. Dans la boîte de dialogue, sélectionnez **Installer**.
+4. Dans la boîte de dialogue, sélectionnez **Installer**.
 
-    Si vous avez une licence Power BI Pro, l’application est installée avec l’espace de travail d’application associé. Vous personnalisez l’application dans cet espace de travail.
+    ![Installer l’application](media/service-template-apps-install-distribute/power-install-dialog.png) Si vous avez une licence Power BI Pro, l’application est installée avec l’espace de travail d’application associé. Vous personnalisez l’application dans cet espace de travail.
 
-    Au terme de l’installation, vous voyez une notification indiquant que la nouvelle application est prête. 
-
-3. Sélectionnez **Accéder à l’application**.
-4. Dans **Bien démarrer avec votre nouvelle application**, sélectionnez l’une des trois options ci-dessous :
+    Au terme de l’installation, vous voyez une notification indiquant que la nouvelle application est prête.
+4. Sélectionnez **Accéder à l’application**.
+5. Dans **Bien démarrer avec votre nouvelle application**, sélectionnez l’une des trois options ci-dessous :
 
     ![Bien démarrer avec votre nouvelle application](media/service-template-apps-create/power-bi-template-app-get-started.png)
 
@@ -70,13 +69,22 @@ Dans un navigateur, sélectionnez ce lien pour ouvrir AppSource filtré sur les 
     - **Connecter des données** : changez la source de données de l’exemple de données par votre propre source de données. Vous pouvez redéfinir les paramètres du jeu de données et les informations d’identification de la source de données. Consultez la section [Limitations connues](service-template-apps-tips.md#known-limitations) dans l’article « Conseils pour créer des applications modèles ». 
     - **Accéder à l’espace de travail** (option la plus avancée) : vous pouvez apporter toute modification autorisée par le concepteur de l’application.
 
-    Ignorez cette boîte de dialogue si vous souhaitez accéder à l’espace de travail associé directement par le biais de l’onglet **Espaces de travail** dans le volet de navigation de gauche.   
+    Ignorez cette boîte de dialogue si vous souhaitez accéder à l’espace de travail associé directement par le biais de l’onglet **Espaces de travail** dans le volet de navigation de gauche.
+    >[!NOTE]
+    >L’installation d’une application de modèle a installé à la fois une *application d’organisation* et un *espace de travail d’application*. En savoir plus sur [la distribution d’applications dans Power BI](service-create-distribute-apps.md).
  
-5. Avant de partager l’application avec vos collègues, vous voudrez peut-être vous connecter à vos propres données. Vous pouvez également avoir besoin de modifier le rapport ou le tableau de bord en fonction des besoins de votre organisation. Vous pouvez aussi ajouter d’autres rapports ou tableaux de bord à ce stade.
+6. Avant de partager l’application avec vos collègues, vous voudrez peut-être vous connecter à vos propres données. Vous pouvez également avoir besoin de modifier le rapport ou le tableau de bord en fonction des besoins de votre organisation. Vous pouvez aussi ajouter d’autres rapports ou tableaux de bord à ce stade.
+
+   Si vous sélectionnez un lien d’installation pour une application qui n’est pas répertoriée sur AppSource, la boîte de dialogue de validation vous invitant à confirmer votre choix s’affiche.
+
+   ![Installer l’application](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+
+   >[!NOTE]
+   >Pour installer des applications de modèle qui ne sont pas répertoriées sur AppSource, vous devez effectuer la demande à partir de vos autorisations d’administrateur. Pour plus d’informations, consultez [Paramètres des applications modèles dans le portail d’administration](service-admin-portal.md#template-apps-settings) Power BI.
 
 ## <a name="update-and-distribute-the-app"></a>Mettre à jour et distribuer l’application
 
-Une fois que vous avez mis à jour l’application pour votre organisation, vous êtes prêt à la publier. Suivez les mêmes étapes de publication que pour une application standard. 
+Une fois que vous avez mis à jour l’application pour votre organisation, vous êtes prêt à la publier. Suivez les mêmes étapes de publication que pour une application standard.
 
 1. Lorsque vous avez fini le travail de personnalisation, dans la vue Liste de l’espace de travail, sélectionnez **Mettre à jour l’application** dans le coin supérieur droit.  
 
@@ -106,6 +114,6 @@ Une fois que vous avez mis à jour l’application pour votre organisation, vous
 
 
 
-￼ 
+  
 
  

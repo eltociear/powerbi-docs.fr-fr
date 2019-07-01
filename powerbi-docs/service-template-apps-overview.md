@@ -1,22 +1,22 @@
 ---
-title: Que sont les applications modèles Power BI ? (préversion)
+title: Que sont les applications modèles Power BI ?
 description: Cet article présente une vue d’ensemble du programme d’applications modèles Power BI. Découvrez comment créer des applications Power BI avec peu ou pas de codage et les déployer ensuite vers n’importe quel client Power BI.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/26/2019
-ms.author: maggies
-ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/24/2019
+ms.author: tebercov
+ms.openlocfilehash: c05b53a5fd61d348b6d304b17123d5f2497ab647
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751108"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408209"
 ---
-# <a name="what-are-power-bi-template-apps-preview"></a>Que sont les applications modèles Power BI ? (préversion)
+# <a name="what-are-power-bi-template-apps"></a>Que sont les applications modèles Power BI ?
 
 Les nouvelles *applications modèles* Power BI permettent aux partenaires Power BI de créer des applications Power BI avec peu ou pas de codage et de les déployer ensuite vers n’importe quel client Power BI.  Cet article présente une vue d’ensemble du programme d’applications modèles Power BI.
 
@@ -37,7 +37,7 @@ Le processus général de développement et de soumission d’une application mo
 | **Trois** | |  | Promouvoir le package de test en préproduction pour sa validation en dehors de votre locataire Power BI, et le soumettre sur AppSource  |  | Avec le package de préproduction, créer une offre d’application modèle Power BI et démarrer le processus de validation |
 | **Quatre** | |  | Promouvoir le package de préproduction en production |  | Mettre en ligne l’application modèle |
 
-## <a name="requirements"></a>Configuration requise
+## <a name="before-you-begin"></a>Avant de commencer
 
 Pour créer l’application modèle, vous devez avoir les autorisations de création appropriées. Pour plus d’informations, consultez Paramètres des applications modèles dans le portail d’administration Power BI. 
 
@@ -66,9 +66,11 @@ Voici les principales étapes à suivre.
 
 ## <a name="requirements"></a>Configuration requise
 
-Pour créer l’application modèle, vous devez avoir les autorisations de création appropriées. Pour plus d’informations, consultez [Paramètres des applications modèles dans le portail d’administration](service-admin-portal.md#template-apps-settings-preview) Power BI. 
+Pour créer l’application modèle, vous devez avoir les autorisations de création appropriées. Pour plus d’informations, consultez [Paramètres des applications modèles dans le portail d’administration](service-admin-portal.md#template-apps-settings) Power BI. 
 
 Pour publier une application modèle sur le service Power BI et AppSource, vous devez remplir les conditions requises pour [devenir un éditeur sur la Place de marché dans le cloud](https://docs.microsoft.com/azure/marketplace/become-publisher).
+ > [!NOTE] 
+ > Les envois d’applications modèles sont gérés dans [Portail Cloud Partner](https://cloudpartner.azure.com). Utilisez le même compte d’inscription du Centre pour développeurs Microsoft pour vous connecter. Vous devez avoir qu’un seul compte Microsoft pour vos offres AppSource. Les comptes ne doivent pas être spécifiques à des services ou offres individuels.
 
 ## <a name="tips"></a>Conseils 
 
@@ -78,9 +80,9 @@ Pour publier une application modèle sur le service Power BI et AppSource, vous 
 - Prévoyez de proposer plusieurs applications modèles pour répondre à différents scénarios particuliers. 
 - Autorisez la personnalisation des données. Par exemple, permettez la configuration de paramètres et de connexions personnalisés au moment de l’installation.
 
-Consultez [Conseils pour créer des applications modèles dans Power BI (préversion)](service-template-apps-tips.md) pour obtenir des conseils supplémentaires.
+Consultez [Conseils pour créer des applications modèles dans Power BI](service-template-apps-tips.md) pour obtenir des suggestions supplémentaires.
 
-## <a name="support"></a>Assistance
+## <a name="support"></a>Support technique
 Pour bénéficier d’un support durant le développement, utilisez [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Nous supervisons et gérons activement ce site. Les incidents utilisateur sont rapidement transmis à la bonne équipe.
 
 ## <a name="next-steps"></a>Étapes suivantes

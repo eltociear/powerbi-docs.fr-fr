@@ -7,27 +7,30 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/11/2019
+ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 2b89125cd2ad45bdad18bd198385e1117b5e3f16
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 70f47e4885b3abeb6ee17bea23dec35a230d57ec
+ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039442"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349414"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : Visite guidée
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Vue d’ensemble de l’exemple Rentabilité des clients
-Le pack de contenu Exemple Rentabilité des clients contient un tableau de bord, un rapport et un jeu de données qui concernent une société qui fabrique des supports marketing. Ce tableau de bord a été créé par une directrice financière désireuse d’afficher des métriques clés sur les cinq responsables de division (cadres), les produits, les clients et les marges brutes (GM). D’un coup d’œil, elle peut identifier les facteurs qui ont un impact sur la rentabilité.
+Le pack de contenu exemple Rentabilité des clients contient un tableau de bord, un rapport et un jeu de données qui concernent une société qui fabrique des supports marketing. Ce tableau de bord a été créé par une directrice financière désireuse d’afficher des métriques clés sur les cinq responsables de division (cadres), les produits, les clients et les marges brutes (GM). D’un coup d’œil, elle peut identifier les facteurs qui ont un impact sur la rentabilité.
 
-![tableau de bord Power BI](media/sample-customer-profitability/power-bi-dash.png)
+![Tableau de bord de l’exemple Rentabilité des clients](media/sample-customer-profitability/power-bi-dash.png)
 
-Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Cet exemple a été créé par obviEnce ([www.obvience.com](http://www.obvience.com/)) avec des données réelles qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : application/pack de contenu, classeur Excel ou fichier PBIX Power BI Desktop. Consultez [Exemples pour Power BI](sample-datasets.md).
+Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il a été créé avec des données réelles par [obviEnce](http://www.obvience.com/) qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : application/pack de contenu, fichier .pbix Power BI Desktop ou classeur Excel. Consultez [Exemples pour Power BI](sample-datasets.md). 
+
+Ce didacticiel utilise le service Power BI et le pack de contenu de l’exemple Rentabilité des clients. Les expériences d’utilisation des rapports étant similaires, vous pouvez également poursuivre avec Power BI Desktop et l’exemple de fichier .pbix. 
 
 ## <a name="prerequisites"></a>Conditions préalables
-Comment procéder ? Ce tutoriel utilise le service Power BI et le pack de contenu de l’exemple Rentabilité des clients. Les expériences d’utilisation des rapports étant similaires, vous pouvez également poursuivre avec Power BI Desktop et l’exemple de fichier .pbix. Ls instructions de connexion au pack de contenu et au fichier .pbix sont décrites dans la section suivante.
+
+Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [pack de contenu](#get-the-content-pack-for-this-sample), [fichier .pbix](#get-the-pbix-file-for-this-sample) ou [classeur Excel](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Se procurer le pack de contenu pour cet exemple
 
@@ -35,26 +38,23 @@ Comment procéder ? Ce tutoriel utilise le service Power BI et le pack de conte
 
 2. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
 
-    ![Obtenir les données](media/sample-datasets/power-bi-get-data.png)
+   ![Sélectionnez Obtenir les données](media/sample-datasets/power-bi-get-data.png)
 3. Dans la page **Obtenir des données** qui s’affiche, sélectionnez **Exemples**.
 
 4. Sélectionnez l’**exemple Rentabilité des clients**, puis choisissez **Se connecter**.  
 
-   ![Obtenir les données](media/sample-customer-profitability/get-supplier-sample.png)
+    ![Se connecter à un exemple](media/sample-customer-profitability/get-supplier-sample.png)
 5. Power BI importe le pack de contenu, puis ajoute un tableau de bord, un rapport et un jeu de données à votre espace de travail actuel.
 
-   ![Entrée de l’exemple Rentabilité des clients](media/sample-customer-profitability/customer-profitability-sample-entry.png)
+    ![Entrée de l’exemple Rentabilité des clients](media/sample-customer-profitability/customer-profitability-sample-entry.png)
 
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 
-Vous pouvez également télécharger l’[exemple Rentabilité des clients](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix) en tant que fichier .pbix, qui est conçu pour une utilisation avec Power BI Desktop.
-
+Vous pouvez également télécharger l’exemple Rentabilité des clients en tant que [fichier .pbix](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix), qui est conçu pour une utilisation avec Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529781). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez le complément Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
-
-
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529781). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
 
@@ -69,13 +69,13 @@ Dans l’espace de travail où vous avez enregistré l’exemple, recherchez le 
 
     ![Vignettes pour responsables](media/sample-customer-profitability/power-bi-manager.png)
 
-- La société a une marge brute de 42,5 %.
-- Elle compte 80 clients.
-- Elle vend cinq produits différents.
-- Elle a enregistré son plus faible écart de chiffre d’affaires par rapport aux prévisions en février, suivi du plus haut en mars.
-- Notre chiffre d’affaires est réalisé principalement dans les régions Est (« East ») et Nord (« North »). La marge brute n’a jamais dépassé les prévisions ; quelques recherches complémentaires devront être entreprises en ce qui concerne les divisions ER-0 et MA-0.
-- Le chiffre d’affaires total de l’année est proche des prévisions.
-
+   Notez les points suivants :
+   - La société a une marge brute de 42,5 %.
+   - Elle compte 80 clients.
+   - Elle vend cinq produits différents.
+   - Elle a enregistré son plus faible écart de chiffre d’affaires par rapport aux prévisions en février, suivi du plus haut en mars.
+   - Notre chiffre d’affaires est réalisé principalement dans les régions Est (« East ») et Nord (« North »). La marge brute n’a jamais dépassé les prévisions ; quelques recherches complémentaires devront être entreprises en ce qui concerne les divisions ER-0 et MA-0.
+   - Le chiffre d’affaires total de l’année est proche des prévisions.
 
 ### <a name="manager-specific-dashboard-tiles"></a>Vignettes de tableau de bord des responsables
 Les vignettes du côté droit du tableau de bord représentent la carte de performance de l’équipe. La directrice financière a besoin d’effectuer le suivi des responsables et ces vignettes lui offrent une vision globale des bénéfices, grâce à GM% (ratio de la marge brute). Si la tendance du ratio de marge brute est inattendue pour l’un des responsables, elle peut étudier la question de plus près.
@@ -100,8 +100,10 @@ Deux vignettes de ce tableau de bord, **Target vs Actual** (Objectif/Réel) et *
 1. Sélectionnez l’une des vignettes épinglées à partir d’Excel. Excel Online s’ouvre dans le service Power BI.
 2. Notez que le classeur comporte trois onglets de données. Ouvrez **Revenue** (Chiffre d’affaires).
 3. Examinons pourquoi Carlos n’a pas encore atteint son objectif :  
+
     a. Sur le curseur **Executive** (Cadre), sélectionnez **Carlos Grilo**.   
-    b. Le premier tableau croisé dynamique indique que la croissance du chiffre d’affaires de Carlos pour son produit phare, Primus, est en baisse de 152 % par rapport à l’année dernière. Le graphique de variance du chiffre d’affaires en glissement annuel montre qu’il est au-dessous du budget la plupart du temps.  
+
+    b. Le premier tableau croisé dynamique indique que la croissance du chiffre d’affaires de Carlos pour son produit phare, Primus, est en baisse de 152 % par rapport à l’année dernière. Le graphique **Variation des revenus d’une année à l’autre** montre qu’il est au-dessous du budget la plupart du temps.  
 
     ![Tableau croisé dynamique](media/sample-customer-profitability/power-bi-pivotchart.png)
 
@@ -129,38 +131,41 @@ La plupart des vignettes du tableau de bord de l’exemple Rentabilité des clie
 ### <a name="team-scorecard-page"></a>Page « Team Scorecard » (Carte de performance de l’équipe)
 ![Page de rapport Tableau de bord de l’équipe](media/sample-customer-profitability/customer2.png)
 
-Étudions le cas de deux membres de l’équipe et voyons les enseignements que l’on peut en tirer. Dans la zone **Executive** (Cadre) située à gauche, sélectionnez Andrew pour filtrer la page de rapport uniquement sur les données le concernant.
+Étudions en détail le cas de deux membres de l’équipe et voyons les enseignements que l’on peut en tirer : 
 
-* Pour un indicateur de performance clé rapide, regardez **l’état du chiffre d’affaires (année complète)** (Revenue Status [Total Year]) d’Andrew : il est vert, ce qui signifie qu’il obtient de bons résultats.
-* Le graphique en aires **Revenue % Variance to Budget by Month and Executive** (écart en % du chiffre d’affaires par rapport aux prévisions par mois et cadre) montre que si l’on fait abstraction d’une baisse en février, Andrew obtient dans l’ensemble de bons résultats. La région prédominante pour lui est la région Est (« East »). Il a un portefeuille de 49 clients et vend 5 produits sur 7. Son ratio de marge brute (« GM% ») n’est ni le plus élevé ni le plus faible.
-* Le graphique **RevenueTY and Revenue % Var to Budget by Month** (chiffre d’affaires annuel et écart en % du chiffre d’affaires par rapport aux prévisions par mois) fait état d’un bénéficie régulier. Toutefois, si vous filtrez en sélectionnant le carré de la région **Central** (Centre) dans le treemap des régions, vous constatez qu’Andrew n’a généré du chiffre d’affaires qu’en mars et seulement dans l’Indiana. Est-ce intentionnel ou y a-t-il une autre raison à découvrir ?
+1. Dans le segment **Executive** situé à gauche, sélectionnez le nom d’Andrew pour filtrer la page de rapport afin d’afficher uniquement les données concernant Andrew :
 
-Passons maintenant au cas de Valery. Dans la zone **Executive** (Cadre), sélectionnez Valery pour filtrer la page de rapport uniquement sur les données la concernant. 
+   * Pour un indicateur de performance clé rapide, regardez **l’état du chiffre d’affaires (année complète)** (Revenue Status [Total Year]) d’Andrew : il est vert, ce qui signifie qu’il obtient de bons résultats.
+   * Le graphique en aires **Revenue % Variance to Budget by Month and Executive** (écart en % du chiffre d’affaires par rapport aux prévisions par mois et cadre) montre que si l’on fait abstraction d’une baisse en février, Andrew obtient dans l’ensemble de bons résultats. La région prédominante pour lui est la région Est (« East »). Il a un portefeuille de 49 clients et vend 5 produits sur 7. Son ratio de marge brute (« GM% ») n’est ni le plus élevé ni le plus faible.
+   * Le graphique **RevenueTY and Revenue % Var to Budget by Month** (chiffre d’affaires annuel et écart en % du chiffre d’affaires par rapport aux prévisions par mois) fait état d’un bénéficie régulier. Toutefois, si vous filtrez en sélectionnant le carré de la région **Central** (Centre) dans le treemap des régions, vous constatez qu’Andrew n’a généré du chiffre d’affaires qu’en mars et seulement dans l’Indiana. Est-ce intentionnel ou y a-t-il une autre raison à découvrir ?
 
-![Données de Valery](media/sample-customer-profitability/customer3.png)
+2. Passons maintenant au cas de Valery. Dans le segment **Executive**, sélectionnez le nom de Valery pour filtrer la page de rapport afin d’afficher uniquement les données la concernant. 
 
-* Notez que l’indicateur de performance clé **Revenue Status (Total Year)** (État du chiffre d’affaires [année complète]) est au rouge. Cet élément nécessite une analyse plus fine.
-* De même, l’écart de son chiffre d’affaires dresse un tableau inquiétant. Elle n’a pas atteint ses objectifs de marge.
-* Valery a seulement neuf clients, vend seulement deux produits et travaille presque exclusivement avec des clients de la région Nord (« North »). Cette spécialisation peut expliquer les fluctuations importantes observées dans ses métriques.
-* Si vous sélectionnez le carré **North** (Nord) dans le treemap, vous pouvez constater que la marge brute de Valery pour cette région est en phase avec sa marge globale.
-* En sélectionnant les autres carrés **Total Revenue by Region** (chiffre d’affaires total par région), on découvre quelque chose d’intéressant : son ratio de marge brute (GM%) varie de 23 % à 79 %. Son chiffre d’affaires, dans toutes les régions à l’exception du Nord, est extrêmement saisonnier.
+   ![Données de Valery](media/sample-customer-profitability/customer3.png)
 
-Poursuivez l’exploration pour découvrir les raisons qui expliquent les mauvais résultats enregistrés dans la zone de Valery. Examinez les régions, les autres divisions et la page suivante du rapport : **Industry Margin Analysis** (Analyse de la marge sectorielle).
+   * Notez que l’indicateur de performance clé **Revenue Status (Total Year)** (État du chiffre d’affaires [année complète]) est au rouge. Cet élément nécessite une analyse plus fine.
+   * De même, l’écart de son chiffre d’affaires dresse un tableau inquiétant. Elle n’a pas atteint ses objectifs de marge.
+   * Valery a seulement neuf clients, vend seulement deux produits et travaille presque exclusivement avec des clients de la région Nord (« North »). Cette spécialisation peut expliquer les fluctuations importantes observées dans ses métriques.
+   * Si vous sélectionnez le carré **North** (Nord) dans le treemap, vous pouvez constater que la marge brute de Valery pour cette région est en phase avec sa marge globale.
+   * En sélectionnant chacun des autres carrés **Revenu total par région**, on découvre quelque chose d’intéressant : son ratio de marge brute (GM%) varie de 23 % à 79 %. Son chiffre d’affaires, dans toutes les régions à l’exception du Nord, est extrêmement saisonnier.
+
+3. Poursuivez l’exploration pour découvrir les raisons qui expliquent les mauvais résultats enregistrés dans la zone de Valery. Examinez les régions, les autres divisions et la page suivante du rapport : **Industry Margin Analysis** (Analyse de la marge sectorielle).
 
 ### <a name="industry-margin-analysis"></a>Industry Margin Analysis
-La page du rapport intitulée « Industry Margin Analysis » propose une autre découpe des données. Elle s’intéresse à la marge brute de l’ensemble des secteurs, ventilée par segment. La directrice financière se sert de cette page pour comparer les métriques de l’entreprise et des divisions à celles des secteurs d’activité afin d’analyser les tendances et la rentabilité. Vous vous demandez peut-être ce que fait le graphique en aires **Gross Margin % by Month and Executive** (% de marge brute par mois et par cadre) dans cette page, puisque celle-ci est censée concerner l’équipe. En fait, il permet de filtrer la page par responsable de division.  
+La page du rapport intitulée « Industry Margin Analysis » propose une autre découpe des données. Elle s’intéresse à la marge brute de l’ensemble des secteurs, ventilée par segment. La directrice financière se sert de cette page pour comparer les métriques de l’entreprise et des divisions à celles des secteurs d’activité afin d’analyser les tendances et la rentabilité. Vous vous demandez peut-être ce que fait le graphique **% de marge brute par mois et par cadre** dans cette page, puisque celle-ci est censée concerner l’équipe. En fait, il permet de filtrer la page par responsable de division.  
 
 ![Page de rapport Analyse de la marge sectorielle](media/sample-customer-profitability/customer6.png)
 
-Dans quelle mesure la rentabilité varie-t-elle en fonction du secteur d’activité ? Quelle est la répartition des produits et des clients par secteur d’activité ? Pour répondre à ces questions, sélectionnez un ou plusieurs secteurs d’activité dans la partie en haut à gauche (commencez par CPG, c’est-à-dire le secteur des biens emballés pour la vente au détail). Pour effacer le filtre, sélectionnez l’icône en forme de gomme.
+1. Dans quelle mesure la rentabilité varie-t-elle en fonction du secteur d’activité ? Quelle est la répartition des produits et des clients par secteur d’activité ? Pour répondre à ces questions, sélectionnez un ou plusieurs secteurs d’activité dans la partie en haut à gauche (commencez par CPG, c’est-à-dire le secteur des biens emballés pour la vente au détail). Pour effacer le filtre, sélectionnez l’icône en forme de gomme.
 
-Sur le graphique en bulles **Revenue Var % to Budget, GM%, and RevenueTY by Industry** (% de variation du chiffre d’affaires par rapport au budget, % de marge brute et chiffre d’affaires annuel par secteur), la directrice financière recherche les plus grosses bulles, celles-ci ayant le plus d’impact sur le chiffre d’affaires. Pour afficher facilement l’impact de chaque responsable par secteur, filtrez la page en cliquant sur le nom de chaque responsable dans le graphique en aires.
+2. Sur le graphique à bulles **% de variation des revenus par rapport au budget, % de marge brute et chiffre d’affaires annuel par secteur**, la directrice financière recherche les plus grosses bulles, celles-ci ayant le plus d’impact sur le chiffre d’affaires. Pour afficher facilement l’impact de chaque responsable par secteur, filtrez la page en cliquant sur le nom de chaque responsable dans le graphique en aires.
 
-* La zone d’influence d’Andrew s’étend sur plusieurs secteurs d’activité bien différents avec un ratio de marge brute (le plus souvent positif) et un pourcentage d’écart très variables.
-* Le graphique d’Annelie est assez similaire, sauf qu’elle se concentre uniquement sur quelques secteurs d’activités, avec une priorité donnée au secteur Federal et au produit Gladius.
-* Carlos met clairement l’accent sur le segment Services, ce qui lui réussit. Il a fortement amélioré son pourcentage d’écart (Var%) dans les secteurs High Tech (Hautes technologies) et Industrial (Industrie), qui est nouveau pour lui et où il a nettement dépassé les prévisions.
-* Tina se concentre sur quelques secteurs et c’est elle qui affiche le meilleur ratio de marge brute, mais la petite taille de ses bulles indique que sa contribution au résultat de l’entreprise est minime.
-* Valery, qui a un seul produit dans son portefeuille, travaille seulement dans cinq secteurs d’activité. Bien que son activité soit saisonnière, elle produit toujours une bulle de grande taille, ce qui est le signe qu’elle contribue de manière importante au résultat de l’entreprise. Est-ce que ses performances négatives sont liées aux secteurs ?
+3. Lorsque vous sélectionnez chaque responsable dans le graphique, notez les points suivants :
+   * La zone d’influence d’Andrew s’étend sur plusieurs secteurs d’activité bien différents avec un ratio de marge brute (le plus souvent positif) et un pourcentage d’écart très variables.
+   * Le graphique d’Annelie est assez similaire, sauf qu’elle se concentre uniquement sur quelques secteurs d’activités, avec une priorité donnée au secteur Federal et au produit Gladius.
+   * Carlos met clairement l’accent sur le segment Services, ce qui lui réussit. Il a fortement amélioré son pourcentage d’écart (Var%) dans les secteurs High Tech (Hautes technologies) et Industrial (Industrie), qui est nouveau pour lui et où il a nettement dépassé les prévisions.
+   * Tina se concentre sur quelques secteurs et c’est elle qui affiche le meilleur ratio de marge brute, mais la petite taille de ses bulles indique que sa contribution au résultat de l’entreprise est minime.
+   * Valery, qui a un seul produit dans son portefeuille, travaille seulement dans cinq secteurs d’activité. Bien que son activité soit saisonnière, elle produit toujours une bulle de grande taille, ce qui est le signe qu’elle contribue de manière importante au résultat de l’entreprise. Est-ce que ses performances négatives sont liées aux secteurs ?
 
 ### <a name="executive-scorecard"></a>Executive Scorecard
 Cette page est mise en forme comme une carte de réponse pour Cortana. Pour plus d’informations, consultez [Créer une page de réponse personnalisées pour Cortana](service-cortana-answer-cards.md).
@@ -168,15 +173,15 @@ Cette page est mise en forme comme une carte de réponse pour Cortana. Pour plus
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Explorer les données en posant des questions dans Q&R
 Pour notre analyse, il serait intéressant d’identifier le secteur d’activité qui profite le plus à Valery en termes de chiffre d’affaires. Utilisons Q&R.
 
-1. Ouvrez le rapport en Mode Édition en sélectionnant **Modifier le rapport**. Le mode Édition est uniquement disponible si vous êtes propriétaire du rapport. Ce mode est parfois appelé **créateur**. Si, à l’inverse, ce rapport a été partagé uniquement avec vous, vous ne pouvez pas l’ouvrir en mode Édition.
+1. Sélectionnez **Modifier le rapport** pour ouvrir le rapport en Mode Édition. Le mode Édition est uniquement disponible si vous êtes propriétaire du rapport. Ce mode est parfois appelé *créateur*. Si, à l’inverse, ce rapport a été partagé uniquement avec vous, vous ne pouvez pas l’ouvrir en mode Édition.
 
-2.  Dans la barre de menus supérieure, sélectionnez **Poser une question** pour ouvrir la zone Questions et réponses.
+2.  En haut du tableau de bord, sélectionnez **Poser une question** pour ouvrir la zone Questions et réponses.
 
     ![Poser une question sur vos données](media/sample-customer-profitability/power-bi-ask-question.png)
 
-3. Tapez *total revenue by industry for Valery* (chiffre d’affaires total par secteur pour Valery). Comme vous pouvez le constater, la visualisation se met à jour à mesure que vous tapez la question.
+3. Tapez *revenu total par secteur pour Valery*. Comme vous pouvez le constater, la visualisation se met à jour à mesure que vous tapez la question.
 
-    ![saisir une question dans la zone questions](media/sample-customer-profitability/power-bi-qna.png)
+    ![Saisir une question dans la zone de question](media/sample-customer-profitability/power-bi-qna.png)
 
    Comme vous pouvez le voir, le secteur le plus porteur pour Valery est celui de la distribution.
 
@@ -187,22 +192,20 @@ Penchons-nous sur le secteur de la distribution.
 2. Sans sélectionner de visualisations sur la page de rapport, développez le volet Filtres à droite (si ce n’est déjà fait). Le volet **Filtres** doit afficher uniquement **Filtres de niveau page**.  
 
    ![Filtres au niveau de la page](media/sample-customer-profitability/power-bi-filters.png)
-3. Recherchez le filtre pour **Industry** ( secteur), puis cliquez sur la flèche pour développer la liste. Ajoutons un filtre de page pour le secteur Distribution. Tout d’abord, annulez toutes les sélections en désactivant la case à cocher **Sélectionner tout**. Ensuite, sélectionnez seulement **Distribution**.  
+3. Recherchez le filtre pour **Industry** ( secteur), puis cliquez sur la flèche pour développer la liste. Ajoutons un filtre de page pour le secteur Distribution. Tout d’abord, annulez toutes les sélections en désactivant la case à cocher **Sélectionner tout**. Ensuite, sélectionnez **Distribution** seulement.  
 
    ![filtre pour Distribution](media/sample-customer-profitability/customer7.png)
 4. Le graphique **Gross Margin % by Month and Executive** (% de marge brute par mois et par cadre) nous apprend que seules Valery et Tina ont des clients dans ce secteur d’activité et que Valery ne travaille dans ce secteur que de juin à novembre.   
 5. Sélectionnez **Tina**, puis **Valery** dans la légende du graphique **Gross Margin % by Month and Executive** (% de marge brute par mois et par cadre) Remarquez que la contribution de Tina au chiffre d’affaires total par produit (**Total Revenue by Product**) est faible par rapport à celle de Valery.
-6. Pour afficher le chiffre d’affaires réel, utilisez la fonctionnalité Questions et réponses pour entrer *total revenue by executive for distribution by scenario* (chiffre d’affaires total par cadre pour la distribution par scénario).  
+6. Pour afficher les revenus réels, sélectionnez la zone Questions et réponses dans le tableau de bord et saisissez *revenu total par cadre pour la distribution par scénario*.  
 
-     ![saisir une question dans la zone questions pour afficher le graphique à barres](media/sample-customer-profitability/power-bi-qna2.png)
+     ![Saisir une question dans la zone Questions et réponses](media/sample-customer-profitability/power-bi-qna2.png)
 
     Nous pouvons procéder de la même manière pour explorer d’autres secteurs, voire ajouter des clients à nos éléments visuels pour comprendre les performances de Valery.
 
-Il s’agit d’un environnement sécurisé. Vous pouvez toujours choisir de ne pas enregistrer les modifications apportées. Mais si vous les enregistrez, vous pouvez toujours sélectionner **Obtenir des données** pour obtenir une nouvelle copie de cet exemple.
-
-Vous pouvez également [télécharger uniquement le jeu de données (classeur Excel) de cet exemple](http://go.microsoft.com/fwlink/?LinkId=529781).
+Cet environnement est sécurisé pour y jouer, étant donné que vous pouvez choisir ne pas enregistrer vos modifications. Mais si vous les enregistrez, vous pouvez toujours sélectionner **Obtenir des données** pour obtenir une nouvelle copie de cet exemple.
 
 ## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
-Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations des données client. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. Découvrez comment [bien démarrer avec Power BI](service-get-started.md).
+Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations des données client. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. Pour en savoir plus, consultez [Prise en main du service Power BI](service-get-started.md).
 
 [Exemples pour Power BI](sample-datasets.md)  

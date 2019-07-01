@@ -9,18 +9,20 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
+ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66838934"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67345503"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Créer une source de données incorporée pour rapports paginés dans le service Power BI
 
 Dans cet article, vous apprendrez à créer et à modifier une source de données incorporée dans un rapport paginé dans le service Power BI. Vous définissez une source de données incorporée dans un rapport unique et l’utilisez seulement dans ce rapport. Actuellement, les rapports paginés publiés sur le service Power BI requièrent des jeux de données incorporés et des sources de données incorporées, et peuvent se connecter à ces sources de données :
 
-- Azure SQL Database et Data Warehouse
+- Azure Analysis Services
+- dans Azure SQL Database et 
+- Azure SQL Data Warehouse
 - SQL Server
 - SQL Server Analysis Services
 - Oracle 
@@ -28,7 +30,6 @@ Dans cet article, vous apprendrez à créer et à modifier une source de donnée
 
 Pour les sources de données suivantes, utilisez l’option [Connexion SQL Server Analysis Services](service-premium-connect-tools.md) :
 
-- Azure Analysis Services
 - Jeux de données Power BI Premium
 
 Les rapports paginés se connectent aux sources de données locales par le biais d’une [passerelle Power BI](service-gateway-getting-started.md). Vous configurez la passerelle après avoir publié le rapport sur le service Power BI.
@@ -66,6 +67,30 @@ Pour obtenir des informations plus détaillées, consultez [Données de rapport 
 5.  Sélectionnez **OK**.  
   
      La source de données apparaît dans le volet des données de rapport.  
+     
+## <a name="limitations-and-considerations"></a>Considérations et limitations
+
+Les rapports paginés qui se connectent aux jeux de données Power BI suivent les règles pour les jeux de données partagés dans Power BI avec quelques changements mineurs.  Pour que les utilisateurs affichent correctement des rapports paginés à l’aide de jeux de données Power BI et pour garantir que la sécurité au niveau des lignes (RLS) soit activée et appliquée pour vos visionneuses, assurez-vous de suivre ces règles :
+
+### <a name="classic-apps-and-app-workspaces"></a>Applications et espaces de travail d’application classiques
+
+- .rdl dans le même espace de travail en tant que jeu de données (même propriétaire) : Pris en charge
+- .rdl dans un espace de travail différent en tant que jeu de données (même propriétaire) : Pris en charge
+- .rdl partagé : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- Application partagée : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- .rdl dans le même espace de travail en tant que jeu de données (utilisateur différent) : Pris en charge
+- .rdl dans différent espace de travail en tant que jeu de données (utilisateur différent). Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- Sécurité au niveau des rôles : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données pour qu’il soit appliqué.
+
+### <a name="new-experience-apps-and-app-workspaces"></a>Nouvelles applications et espaces de travail d’expérience
+
+- .rdl dans le même espace de travail en tant que jeu de données : Pris en charge
+- .rdl dans un espace de travail différent en tant que jeu de données (même propriétaire) : Pris en charge
+- .rdl partagé : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- Application partagée : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- .rdl dans le même espace de travail en tant que jeu de données (utilisateur différent) - Pris en charge
+- .rdl dans un espace de travail différent en tant que jeu de données (utilisateur différent) : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- Sécurité au niveau des rôles : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données pour qu’il soit appliqué
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,15 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839819"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299346"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Cartes choroplèthes dans Power BI
 Une carte choroplèthe utilise des ombrages, des teintes ou des motifs pour représenter proportionnellement les variations d’une valeur entre des zones géographiques ou des régions.  Visualisez rapidement les écarts relatifs grâce aux ombrages allant du clair (moins fréquent/plus bas) au foncé (plus fréquent/plus élevé).    
@@ -70,10 +70,10 @@ Dans cette vidéo, Kim crée une carte de base et la convertit en carte choropl�
 1. Dans le volet Champs, sélectionnez le champ **Géo** \> **État**.    
 
    ![coche jaune en regard de State (État)](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
-5. [Convertissez le graphique](power-bi-report-change-visualization-type.md) en carte choroplèthe. Notez que **État** figure maintenant dans **Emplacement**. Bing Cartes utilise le champ dans **Emplacement** pour créer la carte.  L’emplacement peut être n’importe quel emplacement valide : pays, État, région, ville, code postal ou autre code, etc. Bing Cartes fournit des formats de cartes choroplèthes pour de nombreux emplacements dans le monde. À défaut d’entrée valide pour l’emplacement, Power BI ne peut pas créer la carte choroplèthe.  
+2. [Convertissez le graphique](power-bi-report-change-visualization-type.md) en carte choroplèthe. Notez que **État** figure maintenant dans **Emplacement**. Bing Cartes utilise le champ dans **Emplacement** pour créer la carte.  L’emplacement peut être n’importe quel emplacement valide : pays, État, région, ville, code postal ou autre code, etc. Bing Cartes fournit des formats de cartes choroplèthes pour de nombreux emplacements dans le monde. À défaut d’entrée valide pour l’emplacement, Power BI ne peut pas créer la carte choroplèthe.  
 
    ![modèles avec l’icône de carte choroplèthe mis en évidence](media/power-bi-visualization-filled-maps-choropleths/img003.png)
-6. Filtrez la carte pour afficher uniquement la zone continentale des États-Unis.
+3. Filtrez la carte pour afficher uniquement la zone continentale des États-Unis.
 
    a.  En bas du volet Visualisations, recherchez la zone **Filtres** .
 
@@ -83,21 +83,24 @@ Dans cette vidéo, Kim crée une carte de base et la convertit en carte choropl�
    c.  Cochez la case **All** et décochez la case **AK**.
 
    ![liste déroulante State avec les options All et AK non sélectionnées](media/power-bi-visualization-filled-maps-choropleths/img005.png)
-7. Sélectionnez **SalesFact** \> **Sentiment** pour l’ajouter à **Saturation de la couleur**. Le champ dans **Saturation de la couleur** détermine l’ombrage de la carte.  
-   ![Sentiment dans le puits du champ Saturation de la couleur](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png)
-8. La carte choroplèthe est en rouge et vert. Le rouge représente les indices de sentiment bas et le vert représente les indices de sentiment élevés (sentiment plus positif).  Ici, j’ai mis en surbrillance l’État du Wyoming (WY) et je vois que l’indice de sentiment est très bon (74).  
-   ![boîte de dialogue noire indiquant l’état et le sentiment](media/power-bi-visualization-filled-maps-choropleths/power-bi-wy.png)
-9. [Enregistrez le rapport](../service-report-save.md).
-##    <a name="adjust-the-color-formatting"></a>Ajuster la mise en forme des couleurs
-Power BI vous donne un large contrôle sur l’apparence de votre carte choroplèthe.
-1. Ouvrez le volet de mise en forme en sélectionnant l’icône en forme de rouleau.
+4. Sélectionnez l’icône en forme de rouleau pour ouvrir le volet Mise en forme et choisissez **Couleurs des données**.
 
-    ![Volet de mise en forme](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
+    ![Volet Mise en forme affichant l’option Couleurs des données](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
 
-2. Sélectionnez **Couleurs des données** pour afficher les options de couleur.
-3. Définissez les couleurs Minimum et Maximum sur jaune et bleu. Ajoutez des valeurs Minimum et Maximum, en fonction de vos données. Amusez-vous avec ces contrôles jusqu'à ce que vous obteniez l’apparence souhaitée. 
+5. Sélectionnez les trois points verticaux et choisissez **Mise en forme conditionnelle**.
 
-    ![couleurs non divergentes](media/power-bi-visualization-filled-maps-choropleths/power-bi-color.png)
+    ![Bouton de mise en forme conditionnelle Couleurs des données](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+
+6. Utilisez l’écran **Couleur par défaut - Couleurs des données** pour déterminer comment votre carte choroplèthe sera ombrée. Les options à votre disposition incluent quel champ choisir pour la base de l’ombrage et comment appliquer l’ombrage. Dans cet exemple, nous utilisons le champ **SalesFact** > **Sentiment** et en définissant la valeur la plus basse du sentiment en rouge et la valeur la plus élevée en vert. Les valeurs comprises entre la valeur maximale et minimale seront des nuances de rouge et vert. L’illustration en bas de l’écran affiche la plage des couleurs qui seront utilisées. 
+
+    ![Volet des couleurs par défaut avec Sentiment sélectionné](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+
+7. La carte choroplèthe est en rouge et vert. Le rouge représente les indices de sentiment bas et le vert représente les indices de sentiment élevés (sentiment plus positif).  Pour afficher des détails supplémentaires, faites glisser un champ dans la zone Info-bulles.  Ici, j’ai ajouté **Intervalle de sentiment** et mis en surbrillance l’état d’Idaho (ID) et observé que l’intervalle de sentiment est faible, à 6.
+   ![carte choroplèthe affichant des info-bulles Idaho](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+
+10. [Enregistrez le rapport](../service-report-save.md).
+
+Power BI vous donne suffisamment de contrôle sur l’apparence de votre carte choroplèthe. Familiarisez-vous avec ces contrôles des couleurs des données jusqu'à ce que vous atteigniez l’aspect souhaité. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
 Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../power-bi-report-add-filter.md).
