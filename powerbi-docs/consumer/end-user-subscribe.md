@@ -1,6 +1,6 @@
 ---
-title: Vous abonner vous-même et d’autres personnes à des rapports et des tableaux de bord
-description: Découvrez comment vous abonner vous et vos collègues à un instantané de rapport ou de tableau de bord Power BI envoyé par e-mail.
+title: Vous abonner à des rapports et tableaux de bord
+description: Découvrez comment vous abonner à la capture instantanée envoyée par e-mail d’un rapport ou d’un tableau de bord Power BI.
 author: mihart
 ms.author: mihart
 manager: kvivek
@@ -9,16 +9,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 06/26/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d452b036c7890d59e27df328ae12ad7f5b3b8dbb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497947"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408524"
 ---
-# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>S’abonner à un rapport ou à un tableau de bord dans le service Power BI 
+# <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
 Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et aux tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir les e-mails : une fois par jour, une fois par semaine ou quand les données sont actualisées. Vous pouvez même définir une heure spécifique à laquelle Power BI envoie les e-mails ou exécuter cette tâche tout de suite.  
 
 L’e-mail et l’instantané utiliseront la langue définie dans les paramètres de Power BI (cf. [Langues et pays/régions pris en charge par Power BI](../supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI sélectionnera celle des paramètres régionaux du navigateur. Pour voir ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](./media/end-user-subscribe/power-bi-settings-icon.png) > **Paramètres > Général > Langue**. 
@@ -29,7 +29,7 @@ L’e-mail que vous recevez contient un lien « accéder au rapport ou tableau 
 
 
 ## <a name="requirements"></a>Configuration requise
-La **création** d’un abonnement est une fonctionnalité Power BI Pro.   
+La **création** d’un abonnement pour vous-même nécessite une licence Power BI Pro. Les utilisateurs qui consultent le contenu dans un espace de travail ou une application Premium peuvent également s’abonner au contenu qui s’y trouve, même sans licence Power BI Pro. L’**abonnement d’autres utilisateurs** est uniquement disponible pour le propriétaire du tableau de bord. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>S’abonner à un tableau de bord ou une page de rapport
 Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le même. Le même bouton vous permet de vous abonner aux rapports et aux tableaux de bord du service Power BI.
@@ -41,15 +41,13 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
    
    ![icône S’abonner](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![fenêtre S’abonner](./media/end-user-subscribe/power-bi-emails-newer.png)
+   ![fenêtre S’abonner](./media/end-user-subscribe/power-bi-emails-newest.png)
     
     L’écran à gauche s’affiche quand vous êtes dans un tableau de bord et que vous sélectionnez **S’abonner**. L’écran à droite s’affiche quand vous êtes dans une page de rapport et que vous sélectionnez **S’abonner**. Pour vous abonner à plusieurs pages d’un rapport, sélectionnez **Ajouter un autre abonnement** et sélectionnez une autre page. 
 
 4. Utilisez le curseur jaune pour activer ou désactiver l’abonnement.  La définition du curseur sur Désactivé ne supprime pas l’abonnement. Pour supprimer l’abonnement, sélectionnez l’icône Corbeille.
 
-4. Votre adresse e-mail est automatiquement ajoutée au champ **S’abonner**. Pour abonner d’autres personnes de votre organisation, ajoutez également ici leur adresse e-mail. 
-
-5. Facultativement, vous pouvez ajouter les détails du message. 
+5. Vous pouvez également ajouter l’objet et les détails du message. 
 
 5. Sélectionnez une **Fréquence** pour votre abonnement.  Vous pouvez choisir Quotidien, Hebdomadaire ou Après l’actualisation des données (quotidien).  Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Hebdomadaire** et choisissez les jours auxquels vous voulez le recevoir.  Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez la fréquence **Hebdomadaire** et décochez les cases Sam et Dim.   
 
@@ -59,7 +57,7 @@ Que vous vous abonniez à un tableau de bord ou un rapport, le processus est le 
 
 8. Pour vérifier votre abonnement et le tester, sélectionnez **Exécuter maintenant**.  Un e-mail vous est envoyé immédiatement. 
 
-8. Si tout semble correct, sélectionnez **Enregistrer et fermer** pour enregistrer l’abonnement. Vous et vos collègues abonnés recevez un e-mail et un instantané du tableau de bord ou du rapport selon la planification que vous avez définie. Tous les abonnements ayant pour fréquence **Après l’actualisation des données** envoient un e-mail seulement après la première actualisation planifiée ce jour-là.
+8. Si tout semble correct, sélectionnez **Enregistrer et fermer** pour enregistrer l’abonnement. Vous recevrez un e-mail et un instantané du tableau de bord ou du rapport selon la planification que vous avez définie. Tous les abonnements ayant pour fréquence **Après l’actualisation des données** envoient un e-mail seulement après la première actualisation planifiée ce jour-là.
    
    ![capture instantanée d’un e-mail sur le tableau de bord](media/end-user-subscribe/power-bi-subscribe-email.png)
    

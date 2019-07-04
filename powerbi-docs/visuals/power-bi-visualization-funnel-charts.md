@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 071b45a4ad9cbd9c753c44de5c55a352767bccbf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61067746"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161129"
 ---
 # <a name="funnel-charts"></a>Graphiques en entonnoir
 Un graphique en entonnoir vous permet de mieux visualiser un processus linéaire qui comporte des étapes séquentielles liées entre elles. Par exemple, un entonnoir de ventes qui effectue le suivi des clients à travers des étapes : Lead \> Qualified Lead \> Prospect \> Contract \> Close.  En regardant la forme de l’entonnoir, vous savez instantanément comment se déroule le processus dont vous effectuez le suivi.
@@ -61,7 +61,7 @@ Ces instructions s’appliquent à l’exemple Analyse d’opportunités. Pour e
 2. [Convertissez le graphique](power-bi-report-change-visualization-type.md) en Entonnoir. Notez que **Étape de vente** se trouve dans la zone **Groupe** . 
 3. Dans le volet **Champs**, sélectionnez **Fait** \> **Nombre d’opportunités**.
    
-    ![générer le graphique en entonnoir](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
+    ![générer le graphique en entonnoir](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Placez le curseur sur une barre pour afficher diverses informations :
    
    * Nom de l’étape

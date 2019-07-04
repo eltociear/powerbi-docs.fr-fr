@@ -1,74 +1,89 @@
 ---
-title: Graphiques en courbes dans Power BI
-description: Graphiques en courbes dans Power BI
+title: Graphiques en courbes dans Power BI
+description: Graphiques en courbes dans Power BI
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0654dccf55b1e13f26d8ecaabee0349f0e56afc6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4b2c7c237393fd0a8e76b7ca27987c479b5c411d
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65535787"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408621"
 ---
-# <a name="line-charts-in-power-bi"></a>Graphiques en courbes dans Power BI
-Un graphique en courbes est une série de points de données qui sont représentées par des points et connectés par des lignes droites. Un graphique en courbes peut avoir une ou plusieurs lignes. Graphiques en courbes ont un X et un axe des Y. 
+# <a name="line-charts-in-power-bi"></a>Graphiques en courbes dans Power BI
+Un graphique en courbes est une série de points de données représentés par des points et connectés par des lignes droites. Un graphique en courbes peut avoir une ou plusieurs lignes. Les graphiques en courbes comportent un axe X et un axe Y. 
 
-![graphique en courbes simples](media/power-bi-line-charts/power-bi-line.png)
+![graphique en courbes simple](media/power-bi-line-charts/power-bi-line.png)
 
 ## <a name="create-a-line-chart"></a>Créer un graphique en courbes
-Ces instructions, utilisez les ventes et le Marketing exemple d’application pour créer un graphique en courbes qui affiche les ventes de cette année par catégorie. Pour suivre la procédure, obtenir l’exemple d’application à partir de appsource.com.
+Ces instructions utilisent l’app Exemple Vente et marketing pour créer un graphique en courbes qui affiche les ventes de cette année par catégorie. Pour suivre la procédure, obtenez l’exemple d’application à partir de appsource.com.
 
 1. Démarrez sur une page de rapport vierge. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
 
-2. Dans le volet champs, sélectionnez **SalesFact** \> **nombre Total d’unités**, puis sélectionnez **Date** > **mois**.  Power BI crée un graphique à colonnes sur le canevas de rapport.
+2. Dans le volet Champs, sélectionnez **SalesFact** \> **Unités totales**, puis **Date** > **Mois**.  Power BI crée un histogramme sur votre canevas de rapport.
 
-    ![Sélectionnez dans le volet champs](media/power-bi-line-charts/power-bi-step1.png)
+    ![Sélection à partir du volet Champs](media/power-bi-line-charts/power-bi-step1.png)
 
-4. Convertir un graphique en courbes en sélectionnant le modèle de graphique de ligne dans le volet visualisations. 
+4. Convertissez le visuel en graphique en courbes en sélectionnant le modèle Graphique en courbes dans le volet Visualisations. 
 
     ![convertir en graphique en courbes](media/power-bi-line-charts/power-bi-convert-to-line.png)
    
 
-4. Filtrer votre graphique en courbes pour afficher les données pour les années 2012-2014. Si votre volet filtres est réduite, développez-la maintenant. Dans le volet champs, sélectionnez **Date** \> **année** et faites-le glisser vers le volet filtres. Déposez-le sous le titre **filtres sur ce visuel**. 
+4. Filtrez votre graphique en courbes pour afficher les données des années 2012-2014. Si votre volet Filtres est réduit, développez-le maintenant. Dans le volet Champs, sélectionnez **Date** \> **Année** et faites glisser l’élément vers le volet Filtres. Déposez-le sous le titre **Filtres sur ce visuel**. 
      
-    ![ligne en regard du volet champs](media/power-bi-line-charts/power-bi-year-filter.png)
+    ![ligne en regard du volet Champs](media/power-bi-line-charts/power-bi-year-filter.png)
 
-    Modification **filtres avancés** à **filtres de base** et sélectionnez **2012**, **2013** et **2014**.
+    Définissez **Filtres avancés** sur **Filtres de base**, puis sélectionnez **2012**, **2013** et **2014**.
 
-    ![Filtre pour l’année](media/power-bi-line-charts/power-bi-filter-year.png)
+    ![Filtre pour Année](media/power-bi-line-charts/power-bi-filter-year.png)
 
 6. Si vous le souhaitez, [ajustez la taille et la couleur du texte du graphique](power-bi-visualization-customize-title-background-and-legend.md). 
 
-    ![Augmenter la taille de police et modifier Y axisfont](media/power-bi-line-charts/power-bi-line-3years.png)
+    ![Augmenter la taille de la police et modifier la police de l’axe Y](media/power-bi-line-charts/power-bi-line-3years.png)
 
-## <a name="add-additional-lines-to-the-chart"></a>Ajoutez des lignes supplémentaires au graphique
-Graphiques en courbes peuvent avoir de nombreuses lignes différentes. Et, dans certains cas, les valeurs sur les lignes peuvent être donc divergentes qu’ils n’affichent pas bien ensemble. Penchons-nous sur l’ajout de lignes supplémentaires à notre actuel du graphique et découvrez ensuite comment mettre en forme notre graphique lorsque les valeurs représentées par les lignes sont très différentes. 
+## <a name="add-additional-lines-to-the-chart"></a>Ajouter des lignes supplémentaires au graphique
+Les graphiques en courbes peuvent avoir de nombreuses lignes différentes. Et, dans certains cas, les valeurs sur les lignes peuvent être si divergentes qu’elles ne s’affichent pas bien ensemble. Vous allez maintenant ajouter des lignes supplémentaires à notre graphique et découvrir comment mettre en forme notre graphique lorsque les valeurs représentées par les lignes sont très différentes. 
 
-### <a name="add-additional-lines"></a>Ajoutez des lignes supplémentaires
-Au lieu de regarder le nombre total d’unités pour toutes les régions comme une seule ligne sur le graphique, nous allons fractionner nombre total d’unités par région. Ajoutez des lignes supplémentaires en faisant glisser **géo** > **région** à la zone de légende.
+### <a name="add-additional-lines"></a>Ajouter des lignes supplémentaires
+Au lieu d’afficher le nombre total d’unités pour toutes les régions sur une seule ligne dans le graphique, nous allons fractionner le nombre total d’unités par région. Ajoutez des lignes supplémentaires en faisant glisser **Géo** > **Région** vers le puits Légende.
 
    ![Une ligne pour chaque région](media/power-bi-line-charts/power-bi-line-regions.png)
 
 
-### <a name="use-two-y-axes"></a>Utilisez les deux axes Y
-Que se passe-t-il si vous souhaitez rechercher au total des ventes et le nombre total d’unités sur le même graphique ? Chiffres de ventes sont donc beaucoup plus élevées que les numéros d’unité, ce qui rend le graphique en courbes inutilisable. En fait, la ligne rouge pour le nombre total d’unités semble être égal à zéro.
+### <a name="use-two-y-axes"></a>Utiliser deux axes Y
+Que se passe-t-il si vous souhaitez afficher le total des ventes et le nombre total d’unités sur le même graphique ? Comme les valeurs des ventes sont beaucoup plus élevées que celle du nombre d’unités, le graphique en courbes est inutilisable. En fait, la ligne rouge du nombre total d’unités semble être égale à zéro.
 
-   ![hautement divergence des valeurs](media/power-bi-line-charts/power-bi-diverging.png)
+   ![valeurs très divergentes](media/power-bi-line-charts/power-bi-diverging.png)
 
-Pour afficher les valeurs divergentes hautement sur un même graphique, utilisez un graphique combiné. Vous pouvez découvrir tous les graphiques combinés en lisant [graphiques combinés dans Power BI](power-bi-visualization-combo-chart.md). Dans notre exemple ci-dessous, nous pouvons afficher les unités de ventes et de totale ensemble sur un graphique en ajoutant un deuxième axe Y. 
+Pour afficher les valeurs très divergentes sur un même graphique, utilisez un graphique combiné. Pour en savoir plus sur les graphiques combinés, lisez [Graphiques combinés dans Power BI](power-bi-visualization-combo-chart.md). Dans notre exemple ci-dessous, nous pouvons afficher les ventes totales et le nombre total d’unités sur un même graphique en ajoutant un second axe Y. 
 
-   ![hautement divergence des valeurs](media/power-bi-line-charts/power-bi-dual-axes.png)
+   ![valeurs très divergentes](media/power-bi-line-charts/power-bi-dual-axes.png)
+
+## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
+Pour plus d’informations sur le volet Filtres, consultez [Ajouter un filtre à un rapport](../power-bi-report-add-filter.md).
+
+La sélection d’un point de données sur un graphique en courbes entraîne la mise en surbrillance et le filtrage croisé des autres visualisations sur la page du rapport, et vice versa. Pour suivre la procédure, ouvrez l’onglet **Parts de marché**.  
+
+Sur un graphique en courbes, un point de données représente l’intersection d’un point sur les axes X et Y. Lorsque vous sélectionnez un point de données, Power BI ajoute des marqueurs indiquant quel point (pour une seule ligne) ou quels points (s’il y a deux ou plusieurs lignes) constituent la source de la sélection croisée et du filtrage croisé des autres visuels sur la page du rapport. Si votre visuel est très dense, Power BI sélectionnera le point le plus proche de l’endroit où vous cliquez sur le visuel.
+
+Dans cet exemple, nous avons sélectionné un point de données qui comprend : July 2014, %Units Market Share R12 of 33.16 et %Units Market Share of 34.74.
+
+![sélectionner un point de données sur un graphique en courbes](media/power-bi-line-charts/power-bi-single-select.png)
+
+Notez comment l’histogramme est mis en surbrillance croisée et comment le filtrage croisé est appliqué à la jauge.
+
+Pour gérer la mise en surbrillance croisée et le filtrage croisé des tableaux entre eux, consultez [Interactions de visualisation dans un rapport Power BI](../service-reports-visual-interactions.md).
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-* Un graphique en courbes ne peut pas avoir deux axes Y.  Vous devez utiliser un graphique combiné à la place.
-* Dans les exemples ci-dessus, les graphiques ont été mis en forme pour augmenter la taille de police, modifier la couleur de police, ajouter des titres des axes, le titre du graphique et la légende du centre, démarrer les deux axes à zéro et bien plus encore. Le volet de mise en forme (icône rouleau de peinture) possède un ensemble apparemment interminable d’options pour rendre votre apparence de graphiques comme vous le souhaitez. La meilleure façon d’apprendre consiste à ouvrir le volet Mise en forme et Explorer.
+* Un graphique en courbes ne peut pas avoir deux axes Y.  Vous aurez besoin pour cela d’un graphique combiné.
+* Dans les exemples ci-dessus, les graphiques ont été mis en forme pour augmenter la taille de la police, modifier la couleur de police, ajouter des titres d’axe, centrer le titre du graphique et la légende, démarrer les deux axes à zéro et bien plus encore. Le volet Mise en forme (icône rouleau à peindre) possède un ensemble très complet d’options pour donner à vos graphiques l’apparence que vous souhaitez. La meilleure façon d’apprendre consiste à ouvrir et à explorer le volet Mise en forme.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/18/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: b671d2f55135312fb529d4b4b30af3941c525a26
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 48513ea163847ee3bf1df07151e9985c5bce9656
+ms.sourcegitcommit: 5f22dcda8885d840b7da344d38e89329d02b14fb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448325"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67235070"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Se connecter à des jeux de données avec des applications et des outils clients (préversion)
 
@@ -100,6 +100,10 @@ Les jeux de données suivants ne sont pas accessibles à l’aide de points de t
 Les jeux de données suivants ne sont pas pris en charge dans le service Power BI :   
 
 - Jeux de données avec une connexion active à un jeu de données Power BI.
+
+### <a name="roles-and-role-memberships"></a>Rôles et appartenances à des rôles
+
+Actuellement, les rôles de modèle et les appartenances aux rôles ne sont pas détectables ou affichées à l’aide de points de terminaison XMLA.
 
 ## <a name="audit-logs"></a>Journaux d’audit 
 

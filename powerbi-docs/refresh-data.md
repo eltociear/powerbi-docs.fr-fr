@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039206"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418789"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -272,7 +272,7 @@ Dans la section **Actualisation planifiée**, vous définissez la fréquence et 
 
 ![Configurer une actualisation planifiée](media/refresh-data/configure-scheduled-refresh.png)
 
-Une fois une planification d’actualisation configurée, la page des paramètres du jeu de données vous informe de la prochaine heure d’actualisation, comme dans la capture d’écran ci-dessus. Si vous souhaitez actualiser les données plus tôt, par exemple pour tester votre passerelle et la configuration de la source de données, effectuez une actualisation à la demande en utilisant l’option Actualiser maintenant dans le menu Jeu de données du volet de navigation gauche. Les actualisations à la demande n’affectent pas la prochaine heure d’actualisation planifiée, mais sont comptabilisées dans la limite des actualisations quotidiennes, comme expliqué précédemment dans cet article.
+Une fois une planification d’actualisation configurée, la page des paramètres du jeu de données vous informe de la prochaine heure d’actualisation, comme dans la capture d’écran ci-dessus. Si vous souhaitez actualiser les données plus tôt, par exemple pour tester votre passerelle et la configuration de la source de données, effectuez une actualisation à la demande en utilisant l’option **Actualiser maintenant** dans le menu Jeu de données du volet de navigation gauche. Les actualisations à la demande n’affectent pas la prochaine heure d’actualisation planifiée, mais sont comptabilisées dans la limite des actualisations quotidiennes, comme expliqué précédemment dans cet article.
 
 Notez également que l’heure d’actualisation configurée peut ne pas être l’heure exacte à laquelle Power BI démarre le prochain processus planifié. Power BI démarre les actualisations planifiées dans la mesure du possible. L’objectif est de lancer l’actualisation dans les 15 minutes qui suivent l’intervalle de temps prévu, mais un délai pouvant aller jusqu’à une heure peut survenir si le service ne peut pas allouer les ressources nécessaires plus tôt.
 
@@ -283,7 +283,7 @@ Notez également que l’heure d’actualisation configurée peut ne pas être l
 
 Par défaut, Power BI envoie des notifications d’échec d’actualisation par e-mail au propriétaire du jeu de données pour qu’il puisse agir rapidement. Power BI vous envoie également une notification quand le service désactive votre planification en raison d’échecs consécutifs. Microsoft vous recommande de laisser la case **M’envoyer des e-mails de notification d’échec d’actualisation** cochée.
 
-Notez que Power BI envoie non seulement des notifications sur les échecs d’actualisation, mais également quand le service met en pause une actualisation planifiée pour cause d’inactivité. Après deux mois, quand un utilisateur n’a visité aucun tableau de bord ou rapport créé sur le jeu de données, Power BI considère le jeu de données comme étant inactif. Dans ce cas, Power BI envoie un e-mail au propriétaire du jeu de données indiquant que le service a désactivé la planification de l’actualisation du jeu de données. Consultez la capture d’écran suivante pour obtenir un exemple de notification.
+Notez que Power BI envoie non seulement des notifications sur les échecs d’actualisation, mais également quand le service met en pause une actualisation planifiée pour cause d’inactivité. Après deux mois, quand un utilisateur n’a visité aucun tableau de bord ou rapport créé sur le jeu de données, Power BI considère le jeu de données comme étant inactif. Dans ce cas, Power BI envoie un e-mail au propriétaire du jeu de données indiquant que le service a interrompu la planification de l’actualisation du jeu de données. Consultez la capture d’écran suivante pour obtenir un exemple de notification.
 
 ![E-mail indiquant que l’actualisation est suspendue](media/refresh-data/email-paused-refresh.png)
 

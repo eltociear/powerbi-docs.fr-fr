@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 587cc5b5d81ca57e809a3973c700c71a214dc045
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0af278171a00c792e466bbd0e21a3efb5ffa8962
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61389502"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389721"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Création d’éléments visuels R dans le service Power BI
 Le service Power BI prend en charge l’affichage et l’utilisation des éléments visuels créés avec des scripts R. Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R*, peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R.
@@ -64,7 +64,7 @@ Voici un autre exemple : l’illustration suivante montre le message d’erreur
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## <a name="licensing"></a>Gestion des licences
-Les éléments visuels R nécessitent une licence [Power BI Pro](../service-self-service-signup-for-power-bi.md) pour afficher des rapports, les actualisations, les filtres et les filtres croisés. Pour plus d’informations sur les licences Power BI Pro et pour savoir en quoi elles diffèrent des licences gratuites, consultez [Contenu Power BI Pro - De quoi s’agit-il ?](../service-premium-what-is.md)
+Les éléments visuels R nécessitent une licence [Power BI Pro](../service-self-service-signup-for-power-bi.md) pour afficher des rapports, les actualisations, les filtres et les filtres croisés. Pour plus d’informations sur les licences Power BI Pro et pour savoir en quoi elles diffèrent des licences gratuites, consultez [Contenu Power BI Pro - De quoi s’agit-il ?](../service-admin-purchasing-power-bi-pro.md)
 
 Les utilisateurs gratuits de Power BI peuvent uniquement utiliser les vignettes partagées avec eux dans les espaces de travail Premium. Pour plus d’informations, consultez [Achat de Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
 
@@ -73,7 +73,7 @@ Le tableau suivant décrit les fonctionnalités des éléments visuels R en fon
 
 |  |Créer des visuels R dans Power BI Desktop  | Créer des rapports de service PBI avec des visuels R |Afficher des visuels R dans les rapports  | Afficher des vignettes R dans les tableaux de bord |
 |---------|---------|---------|---------|--------|
-|**Invité**(Power BI Embedded)     |  Ne s’applique pas|  Ne s’applique pas       | Non pris en charge  | Ne s’applique pas |
+|**Invité**(Power BI Embedded)     |  Pris en charge|  Non pris en charge      | Prise en charge dans la capacité Premium/Azure uniquement  | Prise en charge dans la capacité Premium/Azure uniquement |
 |**Locataire non géré** (domaine non vérifié) | Pris en charge | Non pris en charge |  Non pris en charge |Prise en charge (scénario B2B) |
 |**Locataire géré** avec licence gratuite    |  Pris en charge       |  Non pris en charge       |    Prise en charge dans la capacité Premium uniquement    | Pris en charge |
 **Locataire géré** avec licence Pro     |   Pris en charge      | Pris en charge      | Pris en charge    |Pris en charge|

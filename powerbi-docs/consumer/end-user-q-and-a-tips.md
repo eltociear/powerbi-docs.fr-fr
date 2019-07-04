@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 97beaa749855d29f0ac559776a99f4be851489fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61048131"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408193"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Conseils pour poser des questions dans le moteur Questions et réponses de Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Mots et terminologie reconnus par Questions et réponses
@@ -41,7 +41,7 @@ La liste ci-dessous utilise le présent, mais tous les temps sont identifiés da
 |     |         |         |
 |**Conjonctions**     |  and, or, each of, with, versus, &, and, but, nor, along with, in addition to       |         
 |          |         |
-|**Contractions**     |  Questions et réponses reconnaît presque toutes les contractions, faites le test.  Voici quelques exemples : didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, where’ll, who’s, won’t, wouldn’t          |
+|**Contractions**     |  Questions et réponses reconnaît presque toutes les contractions, faites le test.  Voici quelques exemples : didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, who’s, won’t, wouldn’t          |
 |        |         |
 |**Dates**     |       Power BI reconnaît la plupart des expressions de date ($$$jour, $$$semaine, $$$mois, $$$année, $$$trimestre, $$$dix dernières années, etc.) et les dates écrites dans différents formats (voir ci-dessous). Power BI reconnaît également les mots clés suivants : MonthName, Days 1-31, decade. Exemples : January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months         |
 |        |         |
@@ -62,27 +62,27 @@ La liste ci-dessous utilise le présent, mais tous les temps sont identifiés da
 |**Plage**     |      greater, more, larger, above, over, >, less, smaller, fewer, below, under, <,  at least, no less than, >=, at most, no more than, <=, in, between, in the range of, from, later, earlier, sooner, after, on, at, later than, after, since, starting with, starting from, ending with           |
 |        |         |
 **Heure**  |am, pm, o'clock, noon, midnight, hour, minute, second, hh:mm:ss  |
-|  |  Exemples : 10 pm, 10:35 pm, 10:35:15 pm, 10 oclock, noon, midnight, hour, minute, second.  |
+|  |  Exemples : 10 pm, 10:35 pm, 10:35:15 pm, 10 o'clock, noon, midnight, hour, minute, second.  |
 |  |  |
 |**N premiers**     |     (ordre, classement) : top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
 |        |         |
-|**Types d’éléments visuels**     |  tous les types d’éléments visuels natifs de Power BI.  Si l’option est présente dans le volet visualisations, vous pouvez l’ajouter à votre question.  La seule exception concerne les [éléments visuels personnalisés](../power-bi-custom-visuals.md) que vous avez ajoutés manuellement dans le volet de visualisation.  |
+|**Types d’éléments visuels**     |  tous les types d’éléments visuels natifs de Power BI.  Si l’option est présente dans le volet visualisations, vous pouvez l’ajouter à votre question.  La seule exception à cette règle concerne les [éléments visuels personnalisés](../power-bi-custom-visuals.md) que vous avez ajoutés manuellement dans le volet de visualisation.  |
 |  |  Exemple : show districts by month and sales total as bar chart               |
 |        |         |
 |**Relatifs (relation, qualification)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |
 
 ## <a name="qa-helps-you-phrase-the-question"></a>Le moteur Questions et réponses vous aide à formuler la question
-Questions et réponses fait de son mieux pour comprendre et répondre à la question posée. Il utilise pour cela plusieurs méthodes. Pour ces dernières, vous pouvez accepter l’action entièrement, partiellement ou pas du tout. Lorsque vous tapez votre question, Questions et réponses :
+Questions et réponses fait de son mieux pour comprendre et répondre à la question posée. Il essaie de la comprendre de plusieurs façons. Pour toutes ces formulations, vous pouvez accepter l’action entièrement, partiellement ou pas du tout. Lorsque vous tapez votre question, Questions et réponses :
 
-* complète automatiquement les mots et les questions. Diverses stratégies sont mises en œuvre, notamment la saisie semi-automatique de mots reconnaissables et les questions déjà posées ayant renvoyé des réponses correctes. Si plusieurs options de saisie semi-automatique sont disponibles, elles sont présentées dans une liste déroulante.
+* complète automatiquement les mots et les questions. Diverses stratégies sont mises en œuvre, notamment la saisie semi-automatique de mots reconnaissables, les questions stockées, et les questions déjà posées ayant renvoyé des réponses correctes. Si plusieurs options de saisie semi-automatique sont disponibles, elles sont présentées dans une liste déroulante.
 * Corrige l’orthographe.
-* Fournit un extrait de la réponse sous forme de visualisation. Celle-ci dernière se met à jour à mesure que vous tapez et modifiez la question (sans attendre que vous ayez appuyé sur Entrée).
+* Fournit un extrait de la réponse sous forme de visuel. Le visuel se met à jour à mesure que vous tapez et modifiez la question (sans attendre que vous ayez appuyé sur Entrée).
 * Utilise la suggestion automatique pour proposer des termes de remplacement provenant des classeurs sous-jacents lorsque vous replacez le curseur dans la zone Question.
 * Reformule la question en fonction des données du ou des jeux de données sous-jacents. Questions et réponses remplace les mots que vous utilisez par des synonymes provenant des jeux de données sous-jacents. En lisant la reformulation, vous savez si Questions et réponses a bien compris votre question ou pas. 
 * Estompe les mots incompris.
 
 ## <a name="dont-stop-now"></a>Continuez sur votre lancée
-Une fois que Questions et réponses a affiché vos résultats, poursuivez la conversation. Utilisez les fonctionnalités interactives de la visualisation et de Questions et réponses pour découvrir d’autres perspectives.
+Une fois que Questions et réponses a affiché vos résultats, poursuivez la conversation. Utilisez les fonctionnalités interactives du visuel et de Questions et réponses pour découvrir d’autres perspectives.
 
 ## <a name="next-steps"></a>Étapes suivantes
 Revenir à [Q&R dans Power BI](end-user-q-and-a.md)  
