@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3fc93f255d6645ffa6f15676b9a70f24326fcfdc
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: eea93888cf3a8ea5c7ca7b6eb9389cbabc79dc9c
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349212"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418722"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée
 
-## <a name="overview-of-the-it-spend-analysis-sample"></a>Présentation de l’exemple Analyse des dépenses informatiques
 Le pack de contenu de l’exemple Analyse des dépenses informatiques contient un tableau de bord, un rapport et un jeu de données permettant d’analyser les coûts prévus par rapport aux coûts réels d’un service informatique. Cette comparaison nous aide à évaluer la pertinence des prévisions de l’entreprise pour l’année et à analyser les secteurs qui présentent des écarts importants par rapport aux prévisions. L’entreprise décrite dans cet exemple suit un cycle de prévision annuel. Ensuite, tous les trimestres, elle produit ses toutes dernières estimations pour faciliter l’analyse des changements survenus en matière de dépenses informatiques pendant l’année fiscale.
 
 ![Tableau de bord pour l’exemple Analyse des dépenses informatiques](media/sample-it-spend/it1.png)
@@ -124,7 +123,7 @@ Sélectionnez **Modifier le rapport** en haut à gauche pour faire une explorati
 * Modifiez le type de visualisation pour chaque graphique.
 * Épinglez les graphiques présentant un intérêt sur votre tableau de bord.
 
+## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
 Cet environnement est sécurisé pour y jouer, étant donné que vous pouvez choisir ne pas enregistrer vos modifications. Mais si vous les enregistrez, vous pouvez toujours sélectionner **Obtenir des données** pour obtenir une nouvelle copie de cet exemple.
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
 Nous espérons que cette visite guidée vous a montré comment les tableaux de bord Power BI, Q&R et les rapports peuvent fournir des informations sur les données relatives aux dépenses informatiques. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. Pour en savoir plus, consultez [Prise en main du service Power BI](service-get-started.md).

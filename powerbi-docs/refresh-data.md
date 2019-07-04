@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
+ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418789"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67561831"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -177,6 +177,8 @@ Microsoft recommande d’utiliser une passerelle de données d’entreprise plut
 La connexion d’un jeu de données à une passerelle d’entreprise est relativement simple si vous êtes administrateur de passerelle. Avec des autorisations d’administrateur, vous pouvez rapidement mettre à jour la passerelle et ajouter des sources de données manquantes si nécessaire. En fait, vous pouvez ajouter une source de données manquante à votre passerelle directement à partir de la page de paramètres du jeu de données. Développez le bouton bascule pour afficher les sources de données et sélectionnez le lien **Ajouter à la passerelle**, comme dans la capture d’écran suivante. En revanche, si vous n’êtes pas administrateur de passerelle, utilisez les informations de contact affichées pour demander à un administrateur de passerelle d’ajouter la définition de source de données nécessaire.
 
 ![Ajouter à la passerelle](media/refresh-data/add-to-gateway.png)
+
+Veillez à mapper la bonne définition de source de données à votre source de données. Comme l’illustre la capture d’écran ci-dessus, les administrateurs de passerelle peuvent créer plusieurs définitions sur une seule passerelle connectée à la même source de données, chacune avec différentes informations d’identification. Dans l’exemple montré, le propriétaire d’un jeu de données du service des ventes choisirait la définition de source de données AdventureWorksProducts-Sales, tandis que le propriétaire d’un jeu de données du service de support mapperait le jeu de données à la définition de source de données AdventureWorksProducts-Support. Si les noms de la définition de source de données ne sont pas intuitifs, contactez votre administrateur de passerelle pour savoir quelle définition choisir.
 
 > [!NOTE]
 > Un jeu de données ne peut utiliser qu’une seule connexion de passerelle. En d’autres termes, il n’est pas possible d’accéder à des sources de données locales avec plusieurs connexions de passerelle. Vous devez donc ajouter toutes les définitions de source de données nécessaires à la même passerelle.
