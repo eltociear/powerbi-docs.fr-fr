@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 70f47e4885b3abeb6ee17bea23dec35a230d57ec
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349414"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418770"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : Visite guidée
 
-## <a name="overview-of-the-customer-profitability-sample"></a>Vue d’ensemble de l’exemple Rentabilité des clients
 Le pack de contenu exemple Rentabilité des clients contient un tableau de bord, un rapport et un jeu de données qui concernent une société qui fabrique des supports marketing. Ce tableau de bord a été créé par une directrice financière désireuse d’afficher des métriques clés sur les cinq responsables de division (cadres), les produits, les clients et les marges brutes (GM). D’un coup d’œil, elle peut identifier les facteurs qui ont un impact sur la rentabilité.
 
 ![Tableau de bord de l’exemple Rentabilité des clients](media/sample-customer-profitability/power-bi-dash.png)
@@ -203,9 +202,8 @@ Penchons-nous sur le secteur de la distribution.
 
     Nous pouvons procéder de la même manière pour explorer d’autres secteurs, voire ajouter des clients à nos éléments visuels pour comprendre les performances de Valery.
 
+## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
 Cet environnement est sécurisé pour y jouer, étant donné que vous pouvez choisir ne pas enregistrer vos modifications. Mais si vous les enregistrez, vous pouvez toujours sélectionner **Obtenir des données** pour obtenir une nouvelle copie de cet exemple.
 
-## <a name="next-steps-connect-to-your-data"></a>Étapes suivantes : Vous connecter à vos données
 Nous espérons qu’à travers cette visite guidée, vous aurez cerné tout l’intérêt des tableaux de bord Power BI, de Q&R et des rapports pour tirer des informations des données client. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. Pour en savoir plus, consultez [Prise en main du service Power BI](service-get-started.md).
 
-[Exemples pour Power BI](sample-datasets.md)  

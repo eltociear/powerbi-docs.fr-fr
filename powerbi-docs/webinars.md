@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: ec50369715efdd7bcb9ab764a3240acceb72508e
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389555"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418645"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -22,11 +22,7 @@ Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions en
 
 ## <a name="upcoming-webinars"></a>Webinaires à venir
 
-Inscrivez-vous pour écouter des experts de Power BI et participer à des sessions de questions et réponses en direct.
-
-**Power BI : Comment obtenir des insights à partir de vos données de ressources humaines Workday**
-<br>par Iman Eftekhari, Julia Paton d’Agile Analytics et Shahram Karimi de QBE Insurance
-<br>[S’inscrire pour regarder le 27 juin, de 13h30 à 14h30 (heure de la côte Ouest des États-Unis)](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+Aucun webinaire n’est planifié pour le moment. Revenez ultérieurement pour connaître les événements à venir.
 
 >[Prochains webinaires de la Communauté Power BI](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -128,6 +124,10 @@ Regardez les sessions enregistrées à tout moment
 
 ### <a name="partner-solutions-series"></a>Série de solutions partenaires ###
 [Visionner cette série](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
+
+**Power BI : Comment obtenir des insights à partir de vos données de ressources humaines Workday**
+<br>par Iman Eftekhari, Julia Paton d’Agile Analytics et Shahram Karimi de QBE Insurance
+<br>[S’inscrire et regarder maintenant](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 **Arriver à une situation où les fabricants et les revendeurs de biens de consommation trouvent leur compte**
 <br>par Liz McCreesh de Thorogood
