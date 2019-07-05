@@ -1,22 +1,22 @@
 ---
-title: Conseils pour créer des applications modèles dans Power BI (préversion)
+title: Conseils pour créer des applications modèles dans Power BI
 description: Conseils sur la création de requêtes, de modèles de données, de rapports et de tableaux de bord pour concevoir des applications modèles de qualité
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 83049a16ecd42b41375da57a5a99a374596a9846
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/26/2019
+ms.author: tebercov
+ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514868"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408353"
 ---
-# <a name="tips-for-authoring-template-apps-in-power-bi-preview"></a>Conseils pour créer des applications modèles dans Power BI (préversion)
+# <a name="tips-for-authoring-template-apps-in-power-bi"></a>Conseils pour créer des applications modèles dans Power BI
 
 Quand [vous créez une application modèle](service-template-apps-create.md) dans Power BI, une partie du travail consiste à créer l’espace de travail associé, à tester l’application et à mettre l’application finalisée en production. L’autre part importante du travail est bien sûr la création du rapport et du tableau de bord de l’application. Nous pouvons décomposer le processus de création en quatre composants principaux. Bien définir ces composants vous aide à créer une application modèle de qualité :
 
@@ -24,7 +24,7 @@ Quand [vous créez une application modèle](service-template-apps-create.md) dan
 * Dans le **modèle de données**, vous créez les [relations](desktop-create-and-manage-relationships.md), les [mesures](desktop-measures.md) et les améliorations des questions et réponses.  
 * Les **[pages de rapport](desktop-report-view.md)** comprennent des visuels et des filtres pour fournir des insights sur vos données.  
 * Les **[tableaux de bord](consumer/end-user-dashboards.md)** et les [vignettes](service-dashboard-create.md) offrent une vue d’ensemble des insights inclus.
-* Exemples de données rend celle-ci détectable immédiatement après l’installation.
+* Des exemples de données rendent votre application détectable immédiatement après l’installation.
 
 Vous connaissez peut-être chacun de ces éléments en tant que fonctionnalités Power BI existantes. Quand vous créez une application modèle, vous devez prendre d’autres points en considération pour chaque élément. Consultez les différentes sections ci-dessous pour plus de détails.
 
@@ -36,12 +36,10 @@ Pour les applications modèles, les requêtes développées dans Power BI Deskto
 ### <a name="connect-to-your-api"></a>Vous connecter à votre API
 Tout d’abord, vous devez vous connecter à votre API à partir de Power BI Desktop pour commencer à créer les requêtes.
 
-Vous pouvez utiliser les connecteurs de données prêts à l’emploi disponibles dans Power BI Desktop pour vous connecter à votre API. Vous pouvez utiliser le connecteur de données web (Obtenir des données -> Web) pour vous connecter à votre API REST ou le connecteur OData (Obtenir des données -> Flux OData) pour vous connecter à votre flux OData. Ces connecteurs fonctionnent seulement si votre API prend en charge l’authentification De base.
+Vous pouvez utiliser les connecteurs de données disponibles dans Power BI Desktop pour vous connecter à votre API. Vous pouvez utiliser le connecteur de données web (Obtenir des données -> Web) pour vous connecter à votre API REST ou le connecteur OData (Obtenir des données -> Flux OData) pour vous connecter à votre flux OData.
 
 > [!NOTE]
-> Si votre API utilise d’autres types d’authentification, comme OAuth 2.0 ou Clé d’API web, vous devez développer votre propre connecteur de données pour que Power BI Desktop puisse se connecter et s’authentifier correctement auprès de votre API. Votre connecteur personnalisé doit être ajouté au service PBI pour y accéder par le programme d’installation de modèle app. <br> Si vous souhaitez savoir comment développer votre propre connecteur de données pour votre application modèle, consultez la [documentation sur les connecteurs de données](https://aka.ms/DataConnectors). 
->
->
+> Les modèles d’applications ne prennent actuellement pas en charge les connecteurs personnalisés. Il est donc recommandé d’explorer à l’aide d’Odatafeed Auth 2.0 comme atténuation pour certains des cas d’utilisation de connexion ou d’envoyer votre connecteur pour certification. Si vous souhaitez savoir comment développer un connecteur de données et le certifier, consultez la [documentation sur les connecteurs de données](https://aka.ms/DataConnectors).
 
 ### <a name="consider-the-source"></a>Considérer la source
 Les requêtes définissent les données incluses dans le modèle de données. Selon la taille de votre système, ces requêtes doivent également inclure des filtres pour garantir que vos clients manipulent des données de taille gérable pour votre scénario d’application professionnelle.
@@ -115,41 +113,41 @@ Pour créer un tableau de bord dans votre application modèle, chargez votre fic
 * Toutes les vignettes du tableau de bord doivent avoir des titres/sous-titres appropriés.  
 * Essayez de regrouper les éléments verticalement ou horizontalement dans le tableau de bord pour les différents scénarios.  
 
-## <a name="sample-data"></a>exemples de données
-Applications de modèle, dans le cadre de l’étape de la création d’application, encapsule les données du cache dans l’espace de travail dans le cadre de l’application :
+## <a name="sample-data"></a>Exemple de données
+Pendant l’étape de création d’applications, les modèles d’applications encapsulent les données du cache dans l’espace de travail dans le cadre de l’application :
 
-* Permet le programme d’installation comprendre les fonctionnalités et l’objectif de l’application avant la connexion de données.
-* Crée une expérience qui dirige le programme d’installation pour explorer davantage les fonctionnalités de l’application, ce qui conduit à la connexion du jeu de données d’application.
+* Ceci permet au programme d’installation de comprendre la fonctionnalité et le but de l’application avant de connecter les données.
+* Ceci crée une expérience qui dirige le programme d’installation pour explorer davantage les fonctionnalités de l’application, ce qui entraîne la connexion du jeu de données de l’application.
 
-Nous vous recommandons d’avoir des exemples de données de qualité avant de créer l’application. Vérifiez l’état de l’application et les tableaux de bord est remplis avec des données.
+Nous vous recommandons d’avoir des exemples de données de qualité avant de créer l’application. vérifiez que le rapport et les tableaux de bord de l’application sont remplis avec des données.
 
 ## <a name="publishing-on-appsource"></a>Publication sur AppSource
-Applications de modèle peut être publiée sur AppSource, suivez ces instructions avant de soumettre votre application sur AppSource :
+Des applications modèles peuvent être publiées sur AppSource. Suivez ces instructions avant d’envoyer votre application à AppSource :
 
-* Vérifiez que vous créez une application de modèle avec l’utilisation des exemples de données qui permettent le programme d’installation de comprendre ce que l’application peut faire (rapport vide & tableau de bord ne sont pas approuvées).
-Applications de modèle prend en charge des données exemples d’applications uniquement, vérifiez que la case à cocher application statique. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Avoir des instructions pour l’équipe de validation à suivre qui inclut des informations d’identification et les paramètres qui sont requis pour se connecter aux données.
-* Application doit inclure une icône d’application dans Power BI et sur votre offre CPP. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Page d’accueil configuré. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* Veillez à suivre la documentation [offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
-* Si un tableau de bord fait partie de votre application, assurez-vous qu’il n’est pas vide.
-* Installer l’application à l’aide de la liaison de l’application avant de les envoyer, assurez-vous que vous pouvez connecter le jeu de données et l’expérience de l’application est comme prévu.
-* Avant de charger bpix dans l’espace de travail modèle, veillez à décharger toutes les connexions inutiles.
-* Suivez Power BI [meilleures pratiques pour les rapports et les éléments visuels de conception](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) pour obtenir un impact maximal sur vos utilisateurs et obtenir l’approbation pour la distribution.
+* Vérifiez que vous créez une application modèle avec des exemples de données qui permettent au programme d’installation de comprendre ce que l’application peut faire (un rapport vide et un tableau de bord ne sont pas approuvés).
+Les applications modèles prennent uniquement en charge les exemples de données, vérifiez que la case de l’application statique est cochée. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Instructions à suivre par l’équipe de validation, notamment les informations d'identification et les paramètres requis pour se connecter aux données.
+* L’application doit inclure une icône d’application dans Power BI et sur votre offre CPP. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Page d’accueil configurée. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Respectez bien les instructions données dans la documentation sous [Offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+* Si votre application comprend un tableau de bord, assurez-vous qu’il n’est pas vide.
+* Installez l’application à l’aide du lien fourni avant de l’envoyer, assurez-vous que vous pouvez connecter le jeu de données et que l’expérience de l’application est celle prévue.
+* Avant de charger bpix dans l’espace de travail de l’application modèle, veillez à décharger toutes les connexions inutiles.
+* Respectez les [Meilleures pratiques en matière de conception de visuels et de rapports](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) de Power BI pour avoir un impact maximal sur vos utilisateurs et obtenir l’approbation pour la distribution.
 
 ## <a name="known-limitations"></a>Limites connues
 
 | Caractéristique | Limitation connue |
 |---------|---------|
 |Contenu :  Jeux de données   | Un seul et unique jeu de données doit être présent. Seuls les jeux de données créés dans Power BI Desktop (fichiers .pbix) sont autorisés. <br>Non pris en charge : jeux de données issus d’autres applications modèles, jeux de données de plusieurs espaces de travail, rapports paginés (fichiers .rdl), classeurs Excel |
-|Contenu : Tableaux de bord | Vignettes en temps réel ne sont pas autorisés (en d’autres termes, aucune prise en charge pour la transmission ou de jeux de données de streaming) |
-|Contenu : Flux de données | Non pris en charge : Flux de données |
+|Contenu : Tableaux de bord | Les vignettes en temps réel ne sont pas autorisées (en d’autres termes, pas de prise en charge de la transmission de type push ou de la diffusion en continu de jeux de données) |
+|Contenu : Dataflows | Non pris en charge : Dataflows |
 |Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |
-| Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <li> DirectQuery</li><li>Connexions actives (sans Azure AS)</li> <li>Sources de données (passerelles personnelles et d’entreprise ne sont pas pris en charge) sur site</li> <li>(Aucune prise en charge pour le jeu de données push) en temps réel</li> <li>Modèles composites</li></ul> |
+| Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <li> DirectQuery</li><li>Connexions actives (sans Azure AS)</li> <li>Sources de données locales (pas de prise en charge des passerelles personnelles et d’entreprise)</li> <li>Vignettes en temps réel (pas de prise en charge de la transmission de type push de jeux de données)</li> <li>Modèles composites</li></ul> |
 | Jeu de données : entre plusieurs espaces de travail | Les jeux de données entre plusieurs espaces de travail sont autorisés  |
 | Paramètres de requête | Non pris en charge : paramètres de type « Any » ou « Binary », opération d’actualisation des types en bloc pour le jeu de données |
 | Visuels personnalisés | Seuls les visuels personnalisés disponibles publiquement sont pris en charge. Les [visuels personnalisés organisationnels](power-bi-custom-visuals-organization.md) ne sont pas pris en charge |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Que sont les applications modèles Power BI ? (préversion)](service-template-apps-overview.md)
+[Que sont les applications modèles Power BI ?](service-template-apps-overview.md)
