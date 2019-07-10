@@ -3,206 +3,205 @@ title: 'Tutoriel : Se connecter à des données locales dans SQL Server'
 description: Découvrez comment utiliser SQL Server comme une source de données de passerelle, y compris comment actualiser les données.
 author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 96ea117ff0ba28a158eb9f0eaf748d66b25f90d5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d73d2ea5e21196d4856d2906805e6dec1f7e60b7
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278926"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468241"
 ---
-# <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Tutoriel : Se connecter à des données locales dans SQL Server
+# <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Actualiser des données à partir d’une base de données SQL Server locale
 
-Une passerelle de données locale est un logiciel qui s’installe sur un réseau local et facilite l’accès aux données de ce réseau. Dans ce tutoriel, vous générez un rapport dans Power BI Desktop à partir des données importées depuis SQL Server. Vous publiez ensuite le rapport sur le service Power BI et configurez une passerelle afin que le service puisse accéder aux données locales. Cet accès signifie que le service peut actualiser les données pour maintenir le rapport à jour.
+Dans ce tutoriel, vous allez découvrir comment actualiser un jeu de données Power BI à partir d’une base de données relationnelle située sur votre réseau local. Plus précisément, ce tutoriel utilise un exemple de base de données SQL Server auquel Power BI doit accéder par le biais d’une passerelle de données locale.
 
-Dans ce tutoriel, vous allez découvrir comment :
+Ce tutoriel vous montre comment effectuer les étapes suivantes :
+
 > [!div class="checklist"]
-> * Créer un rapport à partir des données dans SQL Server
-> * Publier le rapport dans le service Power BI
-> * Ajouter SQL Server comme source de données de passerelle
-> * Actualiser les données dans le rapport
-
-Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
-
+> * Créer et publier un fichier Power BI Desktop (.pbix) qui importe des données à partir d’une base de données SQL Server locale
+> * Configurer les paramètres de la source de données et du jeu de données dans Power BI pour établir la connectivité à SQL Server par le biais d’une passerelle de données
+> * Configurer une planification d’actualisation pour vérifier que votre jeu de données Power BI dispose de données récentes
+> * Effectuer une actualisation à la demande de votre jeu de données
+> * Passer en revue l’historique des actualisations pour analyser les résultats des cycles d’actualisation précédents
+> * Nettoyer les ressources en supprimant les artefacts créés dans ce tutoriel
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-* [Installer Power BI Desktop](https://powerbi.microsoft.com/desktop/)
-* [Installer SQL Server](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server) sur un ordinateur local 
-* [Installer une passerelle de données locale](service-gateway-install.md) sur le même ordinateur local (en production, généralement un autre ordinateur)
+- Si ce n’est pas déjà fait, inscrivez-vous à un [essai gratuit de Power BI](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
+- [Installez Power BI Desktop](https://powerbi.microsoft.com/desktop/) sur un ordinateur local.
+- [Installez SQL Server](/sql/database-engine/install-windows/install-sql-server) sur un ordinateur local et restaurez l’[exemple de base de données à partir d’une sauvegarde]((https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak)). Pour plus d’informations sur AdventureWorks, consultez [Installation et configuration d’AdventureWorks](/sql/samples/adventureworks-install-configure).
+- [Installez une passerelle de données locale](service-gateway-install.md) sur le même ordinateur local que SQL Server (en production, il s’agit généralement d’un autre ordinateur).
 
+> [!NOTE]
+> Si vous n’êtes pas administrateur de passerelle et que vous ne souhaitez pas installer vous-même une passerelle, contactez un administrateur de passerelle de votre organisation. Il peut créer la définition de source de données nécessaire pour connecter votre jeu de données à votre base de données SQL Server.
 
-## <a name="set-up-sample-data"></a>Configurer les exemples de données
+## <a name="create-and-publish-a-power-bi-desktop-file"></a>Créer et publier un fichier Power BI Desktop
 
-Vous commencez par ajouter des exemples de données à SQL Server afin de les utiliser dans le reste de ce tutoriel.
+Utilisez la procédure suivante pour créer un rapport Power BI de base à l’aide de l’exemple de base de données AdventureWorksDW. Publiez le rapport sur le service Power BI pour obtenir un jeu de données dans Power BI que vous pourrez ensuite configurer et actualiser au cours des étapes suivantes.
 
-1. Dans SQL Server Management Studio (SSMS), connectez-vous à votre instance SQL Server et créez une base de données de test.
+1. Dans Power BI Desktop, sous l’onglet **Accueil**, sélectionnez **Obtenir des données** \> **SQL Server**.
 
-    ```sql
-    CREATE DATABASE TestGatewayDocs
-    ```
+2. Dans la boîte de dialogue **Base de données SQL Server**, renseignez les champs **Serveur** et **Base de données (facultatif)** , veillez à choisir **Importer** comme **Mode de connectivité des données**, puis sélectionnez **OK**.
 
-2. Dans la base de données que vous avez créée, ajoutez une table et insérez des données.
+    ![Base de données SQL Server](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
-    ```sql
-    USE TestGatewayDocs
+3. Vérifiez vos **informations d’identification**, puis sélectionnez **Se connecter**.
 
-    CREATE TABLE Product (
-        SalesDate DATE,
-        Category  VARCHAR(100),
-        Product VARCHAR(100),
-        Sales MONEY,
-        Quantity INT
-    )
+    > [!NOTE]
+    > Si vous ne parvenez pas à vous authentifier, veillez à sélectionner la méthode d’authentification appropriée et à utiliser un compte ayant accès à la base de données. Dans les environnements de test, vous pouvez utiliser l’authentification de base de données avec un nom d’utilisateur et un mot de passe explicites. Dans les environnements de production, vous utilisez généralement l’authentification Windows. Pour obtenir une assistance supplémentaire, consultez les [scénarios de résolution de problèmes liés à l’actualisation](refresh-troubleshooting-refresh-scenarios.md) et contactez votre administrateur de base de données.
 
-    INSERT INTO Product VALUES('2018-05-05','Accessories','Carrying Case',9924.60,68)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','Tripod',1350.00,18)
-    INSERT INTO Product VALUES('2018-05-11','Accessories','Lens Adapter',1147.50,17)
-    INSERT INTO Product VALUES('2018-05-05','Accessories','Mini Battery Charger',1056.00,44)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','Telephoto Conversion Lens',1380.00,18)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','USB Cable',780.00,26)
-    INSERT INTO Product VALUES('2018-05-08','Accessories','Budget Movie-Maker',3798.00,9)
-    INSERT INTO Product VALUES('2018-05-09','Digital video recorder','Business Videographer',10400.00,13)
-    INSERT INTO Product VALUES('2018-05-10','Digital video recorder','Social Videographer',3000.00,60)
-    INSERT INTO Product VALUES('2018-05-11','Digital','Advanced Digital',7234.50,39)
-    INSERT INTO Product VALUES('2018-05-07','Digital','Compact Digital',10836.00,84)
-    INSERT INTO Product VALUES('2018-05-08','Digital','Consumer Digital',2550.00,17)
-    INSERT INTO Product VALUES('2018-05-05','Digital','Slim Digital',8357.80,44)
-    INSERT INTO Product VALUES('2018-05-09','Digital SLR','SLR Camera 35mm',18530.00,34)
-    INSERT INTO Product VALUES('2018-05-07','Digital SLR','SLR Camera',26576.00,88)
-    ```
+1. Si une boîte de dialogue **Prise en charge du chiffrement** apparaît, sélectionnez **OK**.
 
-3. Sélectionnez les données de la table afin de les vérifier.
+2. Dans la boîte de dialogue **Navigateur**, sélectionnez la table **DimProduct**, puis **Charger**.
 
-    ```sql
-    SELECT * FROM Product
-    ```
+    ![Navigateur de sources de données](./media/service-gateway-sql-tutorial/data-source-navigator.png)
 
-    ![Résultats de la requête](media/service-gateway-sql-tutorial/query-results.png)
+3. Dans la vue **Rapport** de Power BI Desktop, dans le volet **Visualisations**, sélectionnez l’option **Histogramme empilé**.
 
+    ![Histogramme empilé](./media/service-gateway-sql-tutorial/stacked-column-chart.png)
 
-## <a name="build-and-publish-a-report"></a>Générer et publier un rapport
+4. Après avoir sélectionné l’histogramme dans le canevas du rapport, dans le volet **Champs**, sélectionnez les champs **EnglishProductName** et **ListPrice**.
 
-Maintenant que vous avez des exemples de données exploitables, vous vous connectez à SQL Server dans Power BI Desktop et générez un rapport basé sur ces données. Vous publiez ensuite ce rapport dans le service Power BI.
+    ![Volet Champs](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-1. Dans Power BI Desktop, sous l’onglet **Accueil**, sélectionnez **Obtenir les données** > **SQL Server**.
+5. Faites glisser **EndDate** sur **Filtres au niveau du rapport** puis, sous **Filtrage de base**, cochez seulement la case **(Vide)** .
 
-2. Sous **Serveur**, entrez le nom de votre serveur, puis sous **Base de données**, entrez « TestGatewayDocs ». Sélectionnez **OK**. 
-
-    ![Entrer le serveur et la base de données](media/service-gateway-sql-tutorial/server-database.png)
-
-3. Vérifiez vos informations d’identification, puis sélectionnez **Se connecter**.
-
-4. Sous **Navigator**, sélectionnez la table **Product**, puis **Charger**.
-
-    ![Sélectionner la table Product](media/service-gateway-sql-tutorial/select-product-table.png)
-
-5. Dans la vue **Rapport** de Power BI Desktop, dans le volet **Visualisations**, sélectionnez l’option **Histogramme empilé**.
-
-    ![Histogramme empilé](media/service-gateway-sql-tutorial/column-chart.png)    
-
-6. Avec l’histogramme sélectionné dans le canevas du rapport, dans le volet **Champs**, sélectionnez les champs **Product** (Produit) et **Sales** (Ventes).  
-
-    ![Sélectionner des champs](media/service-gateway-sql-tutorial/select-fields.png)
+    ![Filtres au niveau du rapport](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
     L’histogramme devrait maintenant ressembler à ce qui suit.
 
-    ![Sélectionner la table Product](media/service-gateway-sql-tutorial/finished-chart.png)
+    ![Histogramme terminé](./media/service-gateway-sql-tutorial/finished-column-chart.png)
 
-    Notez que **SLR Camera** représente actuellement les meilleures ventes. Cette valeur changera lorsque vous mettrez à jour les données et actualiserez le rapport ultérieurement dans ce tutoriel.
+    Notez que les cinq produits **Road-250** sont listés avec le prix catalogue le plus élevé. Cette valeur changera quand vous mettrez à jour les données et actualiserez le rapport ultérieurement dans ce tutoriel.
 
-7. Enregistrez le rapport sous le nom « TestGatewayDocs.pbix ».
+6. Enregistrez le rapport sous le nom « AdventureWorksProducts.pbix ».
 
-8. Sous l’onglet **Accueil**, sélectionnez **Publier** > **Mon espace de travail** > **Sélectionner**. Connectez-vous au service Power BI si vous êtes invité à le faire. 
+7. Sous l’onglet **Accueil**, sélectionnez **Publier** \> **Mon espace de travail** \> **Sélectionner**. Connectez-vous au service Power BI si vous êtes invité à le faire.
 
-    ![Publier un rapport](media/service-gateway-sql-tutorial/publish-report.png)
+8. Dans l’écran **Opération réussie**, sélectionnez **Ouvrir 'AdventureWorksProducts.pbix' dans Power BI**.
 
-9. Dans l’écran **Opération réussie**, sélectionnez **Ouvrir 'TestGatewayDocs.pbix' dans Power BI**.
+    [Publier sur Power BI](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
 
+## <a name="connect-a-dataset-to-a-sql-server-database"></a>Connecter un jeu de données à une base de données SQL Server
 
-## <a name="add-sql-server-as-a-gateway-data-source"></a>Ajouter SQL Server comme source de données de passerelle
+Dans Power BI Desktop, vous vous êtes connecté directement à votre base de données SQL Server locale, mais le service Power BI nécessite une passerelle de données pour servir de pont entre le cloud et votre réseau local. Suivez ces étapes pour ajouter votre base de données SQL Server locale en tant que source de données à une passerelle, puis connecter votre jeu de données à cette source de données.
 
-Dans Power BI Desktop, vous vous connectez directement à SQL Server, mais le service Power BI requiert une passerelle pour agir comme un pont. Vous ajoutez maintenant votre instance SQL Server en tant que source de données pour la passerelle que vous avez créée dans un article précédent (dans la section [Conditions préalables](#prerequisites)). 
+1. Connectez-vous à Power BI. En haut à droite, sélectionnez l’icône en forme d’engrenage, puis sélectionnez **Paramètres**.
 
-1. Dans l’angle supérieur droit du service Power BI, sélectionnez l’![icône d’engrenage Paramètres](media/service-gateway-sql-tutorial/icon-gear.png) > **Gérer les passerelles**.
+    ![Paramètres de Power BI](./media/service-gateway-sql-tutorial/power-bi-settings.png)
 
-    ![Gérer les passerelles](media/service-gateway-sql-tutorial/manage-gateways.png)
+2. Sous l’onglet **Jeux de données**, sélectionnez le jeu de données **AdventureWorksProducts** pour pouvoir vous connecter à votre base de données SQL Server locale par le biais d’une passerelle de données.
 
-2. Sélectionnez **Ajouter une source de données**, puis entrez « test-sql-source » dans le champ **Nom de la source de données**.
+3. Développez **Connexion à la passerelle** et vérifiez qu’au moins une passerelle est listée. Si vous n’avez pas de passerelle, consultez la section [Prérequis](#prerequisites) plus haut dans ce tutoriel pour obtenir un lien vers la documentation du produit sur l’installation et la configuration d’une passerelle.
 
-    ![Ajouter une source de données](media/service-gateway-sql-tutorial/add-data-source.png)
+    ![Connexion à la passerelle](./media/service-gateway-sql-tutorial/gateway-connection.png)
 
-3. Sélectionnez un **type de source de données** **SQL Server**, puis entrez les autres valeurs, comme indiqué.
+4. Sous **Actions**, développez le bouton bascule pour afficher les sources de données et sélectionnez le lien **Ajouter à la passerelle**.
 
-    ![Entrer les paramètres de la source de données](media/service-gateway-sql-tutorial/data-source-settings.png)
+    ![Ajouter une source de données à la passerelle](./media/service-gateway-sql-tutorial/add-data-source-gateway.png)
 
+    > [!NOTE]
+    > Si vous n’êtes pas administrateur de passerelle et que vous ne souhaitez pas installer vous-même une passerelle, contactez un administrateur de passerelle de votre organisation. Il peut créer la définition de source de données nécessaire pour connecter votre jeu de données à votre base de données SQL Server.
 
-   |          Option           |                                               Valeur                                                |
-   |---------------------------|----------------------------------------------------------------------------------------------------|
-   |   **Nom de la source de données**    |                                          test-sql-source                                           |
-   |   **Type de source de données**    |                                             SQL Server                                             |
-   |        **Serveur**         | Le nom de votre instance SQL Server (doit être identique à celui que vous avez spécifié dans Power BI Desktop) |
-   |       **Base de données**        |                                          TestGatewayDocs                                           |
-   | **Méthode d'authentification** |                                              Windows                                               |
-   |       **Nom d’utilisateur**        |             Le compte, par exemple michael@contoso.com, que vous utilisez pour vous connecter à SQL Server             |
-   |       **Mot de passe**        |                   Le mot de passe du compte que vous utilisez pour vous connecter à SQL Server                    |
+5. Dans la page de gestion **Passerelles**, sous l’onglet **Paramètres de la source de données**, entrez et vérifiez les informations suivantes, puis sélectionnez **Ajouter**.
 
+    | Option | Valeur |
+    | --- | --- |
+    | Nom de la source de données | AdventureWorksProducts |
+    | Type de source de données | SQL Server |
+    | Serveur | Nom de votre instance SQL Server, par exemple SQLServer01 (doit être identique au nom spécifié dans Power BI Desktop). |
+    | Base de données | Nom de votre base de données SQL Server, par exemple AdventureWorksDW (doit être identique au nom spécifié dans Power BI Desktop). |
+    | Méthode d’authentification | Windows ou De base (généralement Windows). |
+    | Nom d’utilisateur | Compte d’utilisateur utilisé pour vous connecter à SQL Server. |
+    | Mot de passe | Mot de passe du compte utilisé pour vous connecter à SQL Server |
 
-4. Sélectionnez **Ajouter**. Le message *Connexion établie* apparaît si l’opération réussit.
+    ![Paramètres de la source de données](./media/service-gateway-sql-tutorial/data-source-settings.png)
 
-    ![Connexion établie](media/service-gateway-sql-tutorial/connection-successful.png)
+6. Sous l’onglet **Jeux de données**, redéveloppez la section **Connexion à la passerelle**. Sélectionnez la passerelle de données que vous avez configurée (son **État** doit indiquer En cours d’exécution sur l’ordinateur où vous l’avez installée), puis sélectionnez **Appliquer**.
 
-    Vous pouvez maintenant utiliser cette source de données pour inclure des données provenant de SQL Server dans vos tableaux de bord Power BI et vos rapports.
+    ![Mettre à jour la connexion à la passerelle](./media/service-gateway-sql-tutorial/update-gateway-connection.png)
 
+## <a name="configure-a-refresh-schedule"></a>Configurer une planification d’actualisation
 
-## <a name="configure-and-use-data-refresh"></a>Configurer et utiliser l’actualisation des données
+Maintenant que vous avez connecté votre jeu de données dans Power BI à votre base de données SQL Server locale par le biais d’une passerelle de données, effectuez les étapes suivantes pour configurer une planification d’actualisation. L’actualisation de votre jeu de données selon une planification permet de garantir que vos rapports et tableaux de bord disposent des données les plus récentes.
 
-Vous avez publié un rapport sur le service Power BI et configuré la source de données SQL Server. Ces éléments en place, vous allez maintenant apporter une modification dans la table Product, et cette modification transitera via la passerelle jusqu’au rapport publié. Vous configurez également l’actualisation planifiée pour gérer toutes les modifications ultérieures.
+1. Dans le volet de navigation de gauche, ouvrez **Mon espace de travail** \> **Jeux de données**. Sélectionnez les points de suspension ( **. . .** ) pour le jeu de données **AdventureWorksProducts**, puis **Planifier l’actualisation**.
 
-1. Dans SSMS, mettez à jour les données de la table Product.
+    > [!NOTE]
+    > Veillez à sélectionner les points de suspension associés au jeu de données **AdventureWorksProducts**, et non ceux associés au rapport du même nom. Le menu contextuel du rapport **AdventureWorksProducts** n’inclut pas l’option **Planifier l’actualisation**.
 
-    ```sql
-    UPDATE Product
-    SET Sales = 32508, Quantity = 252
-    WHERE Product='Compact Digital'     
+2. Dans la section **Actualisation planifiée** sous **Tenir vos données à jour**, **activez** la planification.
 
-    ```
+3. Sélectionnez une **Fréquence d’actualisation** appropriée (**Tous les jours** dans cet exemple), puis sous **Heure**, sélectionnez **Ajouter un autre horaire** pour spécifier l’heure d’actualisation de votre choix (6:30 et 18:30 dans cet exemple).
 
-2. Dans le volet de navigation de gauche du service Power BI, sélectionnez **Mon espace de travail**.
+    ![Configurer une actualisation planifiée](./media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
 
-3. Sous **Jeux de données**, pour le jeu de données **TestGatewayDocs**, sélectionnez **plus** (**...** ) > **Actualiser maintenant**.
+    > [!NOTE]
+    > Vous pouvez configurer jusqu’à 8 créneaux horaires quotidiens si votre jeu de données est en capacité partagée ou 48 créneaux horaires dans Power BI Premium.
 
-    ![Actualiser maintenant](media/service-gateway-sql-tutorial/refresh-now.png)
+4. Laissez la case **M’envoyer des e-mails de notification d’échec d’actualisation** cochée et sélectionnez **Appliquer**.
 
-4. Sélectionnez **Mon espace de travail** > **Rapports** > **TestGatewayDocs**. Vous constatez que la mise à jour a été transmise et que la meilleure vente est désormais **Compact Digital**. 
+## <a name="perform-an-on-demand-refresh"></a>Effectuer une actualisation à la demande
 
-    ![Données mises à jour](media/service-gateway-sql-tutorial/updated-data.png)
+Maintenant que vous avez configuré une planification d’actualisation, Power BI actualise votre jeu de données à la prochaine heure d’actualisation planifiée avec une marge de 15 minutes. Si vous souhaitez actualiser les données plus tôt, par exemple pour tester votre passerelle et la configuration de la source de données, effectuez une actualisation à la demande en utilisant l’option **Actualiser maintenant** dans le menu Jeu de données du volet de navigation gauche. Les actualisations à la demande n’affectent pas la prochaine heure d’actualisation planifiée, mais sont comptabilisées dans la limite des actualisations quotidiennes, comme indiqué dans la section précédente.
 
-5. Sélectionnez **Mon espace de travail** > **Rapports** > **TestGatewayDocs**. Sélectionnez **plus** (**. . .**) > **Planifier l’actualisation**.
+À titre d’illustration, simulez un changement de l’exemple de données en mettant à jour la table DimProduct de la base de données AdventureWorksDW à l’aide de SSMS (SQL Server Management Studio).
 
-6. Sous **Planifier l’actualisation**, définissez la valeur Actualiser sur **On**, puis sélectionnez **Appliquer**. Le jeu de données est actualisé quotidiennement par défaut.
+```sql
 
-    ![Planifier l’actualisation](media/service-gateway-sql-tutorial/schedule-refresh.png)
+UPDATE [AdventureWorksDW].[dbo].[DimProduct]
+SET ListPrice = 5000
+WHERE EnglishProductName ='Road-250 Red, 58'
+
+```
+
+Suivez maintenant ces étapes pour que les données mises à jour puissent transiter par la connexion à la passerelle jusqu’au jeu de données et aux rapports dans Power BI.
+
+1. Dans le volet de navigation de gauche du service Power BI, sélectionnez et développez **Mon espace de travail**.
+
+2. Sous **Jeux de données**, pour le jeu de données **AdventureWorksProducts**, sélectionnez les points de suspension ( **. . .** ), puis **Actualiser maintenant**.
+
+    ![Actualiser maintenant](./media/service-gateway-sql-tutorial/refresh-now.png)
+
+    Notez en haut à droite que Power BI se prépare à effectuer à l’actualisation demandée.
+
+3. Sélectionnez **Mon espace de travail \> Rapports \> AdventureWorksProducts**. Examinez la façon dont les données mises à jour ont transité. Le produit avec le prix catalogue le plus élevé est maintenant **Road-250 Red, 58**.
+
+    ![Histogramme mis à jour](./media/service-gateway-sql-tutorial/updated-column-chart.png)
+
+## <a name="review-the-refresh-history"></a>Passer en revue l’historique des actualisations
+
+Il est judicieux de vérifier régulièrement les résultats des cycles d’actualisation précédents dans l’historique des actualisations. Les informations d’identification de la base de données peuvent arriver à expiration ou la passerelle sélectionnée peut être hors connexion au moment d’une actualisation prévue. Suivez ces étapes pour examiner l’historique des actualisations et rechercher les problèmes.
+
+1. En haut à droite de l’interface utilisateur de Power BI, sélectionnez l’icône en forme d’engrenage, puis sélectionnez **Paramètres**.
+
+2. Passez à **Jeux de données** et sélectionnez le jeu de données à examiner (par exemple, **AdventureWorksProducts**).
+
+3. Sélectionnez le lien **Historique des actualisations** pour ouvrir la boîte de dialogue **Historique des actualisations**.
+
+    ![Lien Historique des actualisations](./media/service-gateway-sql-tutorial/refresh-history-link.png)
+
+4. Sous l’onglet **Planifié**, notez les actualisations planifiées et à la demande précédemment effectuées avec leurs heures de **Début** et de **Fin** ainsi que leur **État** **Terminé** (indiquant que les actualisations ont réussi dans Power BI). Pour les actualisations ayant échoué, un message d’erreur s’affiche accompagné de détails sur l’erreur.
+
+    ![Actualiser les détails de l’historique](./media/service-gateway-sql-tutorial/refresh-history-details.png)
+
+    > [!NOTE]
+    > L’onglet OneDrive concerne uniquement les jeux de données connectés à des fichiers Power BI Desktop, à des classeurs Excel ou à des fichiers CSV sur OneDrive ou SharePoint Online, comme expliqué en détail dans [Actualisation des données dans Power BI](refresh-data.md).
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
-Si vous ne souhaitez plus utiliser les exemples de données, exécutez `DROP DATABASE TestGatewayDocs` dans SSMS. Si vous ne souhaitez pas utiliser la source de données SQL Server, [supprimez la source de données](service-gateway-manage.md#remove-a-data-source). 
 
+Si vous ne souhaitez plus utiliser l’exemple de données, supprimez la base de données dans SSMS (SQL Server Management Studio). Pour ne pas utiliser la source de données SQL Server, supprimez-la de votre passerelle de données. Pensez également à désinstaller la passerelle de données si vous l’avez installée uniquement dans le but de suivre ce tutoriel. Vous devez également supprimer le jeu de données AdventureWorksProducts et le rapport AdventureWorksProducts créés par Power BI lors du chargement du fichier AdventureWorksProducts.pbix.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Dans ce tutoriel, vous avez découvert comment :
-> [!div class="checklist"]
-> * Créer un rapport à partir des données dans SQL Server
-> * Publier le rapport dans le service Power BI
-> * Ajouter SQL Server comme source de données de passerelle
-> * Actualiser les données dans le rapport
 
-Passez à l’article suivant pour en savoir plus
-> [!div class="nextstepaction"]
-> [Gérer une passerelle Power BI](service-gateway-manage.md)
+Dans ce tutoriel, vous avez vu comment importer des données à partir d’une base de données SQL Server locale dans un jeu de données Power BI et comment actualiser ce jeu de données de manière planifiée et à la demande pour tenir à jour les rapports et tableaux de bord utilisant ce jeu de données dans Power BI. Vous pouvez désormais apprendre à gérer des passerelles de données et des sources de données dans Power BI. Nous vous recommandons également de consulter l’article conceptuel Actualisation des données dans Power BI.
 
+- [Gérer une passerelle locale Power BI](service-gateway-manage.md)
+- [Gérer votre source de données - Importation/actualisation planifiée](service-gateway-enterprise-manage-scheduled-refresh.md)
+- [Actualisation des données dans Power BI](refresh-data.md)

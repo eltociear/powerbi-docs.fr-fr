@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: f477cbd5f2d767333c16a43308b4793527665806
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 7e2e0e7a980c72f203f93baf552685dce6f43bbd
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430783"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418806"
 ---
 # <a name="on-premises-data-gateway"></a>Passerelle de données locale
 
@@ -79,7 +79,7 @@ Une fois l’installation terminée, vous devez accéder à vos jeux de données
 
 ## <a name="storing-encrypted-credentials-in-the-cloud"></a>Stockage d’informations d’identification chiffrées dans le cloud
 
-Lorsque vous ajoutez une source de données à la passerelle, vous devez fournir les informations d’identification associées. Toutes les requêtes à la source de données sont exécutées à l’aide de ces informations d’identification. Les informations d’identification sont chiffrées en toute sécurité, à l’aide d’un chiffrage asymétrique de sorte qu’elles ne soient pas déchiffrées dans le cloud, avant qu’elles soient stockées dans le cloud. Les informations d’identification sont envoyées à l’ordinateur exécutant la passerelle en local, où elles sont déchiffrées lorsque les sources de données sont consultées.
+Lorsque vous ajoutez une source de données à la passerelle, vous devez fournir les informations d’identification associées. Toutes les requêtes à la source de données sont exécutées à l’aide de ces informations d’identification. Les informations d’identification sont chiffrées de manière sécurisée au moyen d’un chiffrement asymétrique avant leur stockage dans le cloud, rendant impossible leur déchiffrement dans le cloud. Les informations d’identification sont envoyées à l’ordinateur exécutant la passerelle en local, où elles sont déchiffrées lorsque les sources de données sont consultées.
 
 <!-- Account and Port information -->
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]

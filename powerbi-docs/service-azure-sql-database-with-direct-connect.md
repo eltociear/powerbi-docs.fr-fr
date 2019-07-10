@@ -9,14 +9,14 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448395"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468086"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database avec DirectQuery
 
@@ -26,12 +26,12 @@ Avec DirectQuery, les requêtes sont renvoyées à Azure SQL Database pendant qu
 
 **Remarques :**
 
-* Spécifiez le nom de serveur complet lors de la connexion (voir ci-dessous pour plus de détails)
-* Vérifiez que les règles de pare-feu de la base de données sont définies sur [Autoriser l’accès aux services Azure](https://msdn.microsoft.com/library/azure/ee621782.aspx).
-* Chaque action, telle que la sélection d’une colonne ou l’ajout d’un filtre, renverra une requête à la base de données
-* Les vignettes sont actualisées chaque heure (il n’est pas nécessaire de planifier l’actualisation). Vous pouvez régler cet intervalle dans les paramètres avancés lorsque vous vous connectez.
-* Q&R n’est pas disponible pour les jeux de données DirectQuery.
-* Les modifications apportées aux schémas ne sont pas appliquées automatiquement
+* Spécifiez le nom de serveur complet lors de la connexion (voir ci-dessous pour plus de détails).
+* Vérifiez que les règles de pare-feu de la base de données sont configurées de manière à [autoriser l’accès aux services Azure](https://msdn.microsoft.com/library/azure/ee621782.aspx).
+* Chaque action, telle que la sélection d’une colonne ou l’ajout d’un filtre, retourne une requête à la base de données.
+* Les vignettes sont actualisées chaque heure (il n’est pas nécessaire de planifier l’actualisation). Vous pouvez ajuster la fréquence d’actualisation dans les paramètres avancés quand vous vous connectez.
+* Il n’y a pas de Q&R disponible pour les jeux de données DirectQuery.
+* Les modifications apportées aux schémas ne sont pas sélectionnées automatiquement.
 
 Ces points sont susceptibles de changer, car nous travaillons actuellement à améliorer le produit. Les étapes de connexion sont détaillées ci-dessous.
 
@@ -40,13 +40,13 @@ Ces points sont susceptibles de changer, car nous travaillons actuellement à am
 
 ## <a name="power-bi-desktop-and-directquery"></a>Power BI Desktop et DirectQuery
 
-Pour vous connecter à Azure SQL Database à l’aide de DirectQuery, vous devez utiliser Power BI Desktop. Cette approche offre des fonctionnalités supplémentaires et une flexibilité plus grande. Les rapports créés à l’aide de Power BI Desktop peuvent ensuite être publiés sur le service Power BI. Vous pouvez en savoir plus sur la connexion à [Azure SQL Database à l’aide de DirectQuery](desktop-use-directquery.md) dans Power BI Desktop.
+Pour vous connecter à Azure SQL Database à l’aide de DirectQuery, vous devez utiliser Power BI Desktop. Cette approche offre des fonctionnalités supplémentaires et une flexibilité plus grande. Les rapports créés à l’aide de Power BI Desktop peuvent ensuite être publiés sur le service Power BI. Vous pouvez en savoir plus sur la connexion à [Azure SQL Database à l’aide de DirectQuery](desktop-use-directquery.md) dans Power BI Desktop.
 
-## <a name="finding-parameter-values"></a>Recherche des valeurs de paramètres
+## <a name="find-parameter-values"></a>Rechercher des valeurs de paramètre
 
 Le nom complet de votre serveur et celui de votre base de données se trouvent dans le portail Azure.
 
-![Nouvelle mise à jour de port Azure](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
+![Nouvelle mise à jour du portail Azure](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
 ![Mise à jour du portail Azure](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
 
@@ -58,4 +58,4 @@ Le nom complet de votre serveur et celui de votre base de données se trouvent d
 * [Qu’est-ce que Power BI ?](power-bi-overview.md)  
 * [Obtenir des données pour Power BI](service-get-data.md)  
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)

@@ -1,5 +1,5 @@
 ---
-title: Organiser le travail dans les nouveaux espaces de travail - Power BI
+title: Organiser le travail dans les nouveaux espaces de travail dans Power BI
 description: Découvrez les nouveaux espaces de travail, qui sont des collections de tableaux de bord et de rapports créés pour fournir des métriques clés sur votre organisation.
 author: maggiesMSFT
 manager: kfile
@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 06/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 419cd2137b8924f153009843d6f60db594219059
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345544"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418671"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -135,7 +135,7 @@ Certaines fonctionnalités agissent différemment dans les nouveaux espaces de t
 - Les membres peuvent ou non repartager : remplacé par le rôle Contributeur
 - Espaces de travail en lecture seule : Au lieu d’accorder aux utilisateurs un accès en lecture seule à un espace de travail, attribuez aux utilisateurs le rôle Lecteur, qui permet un accès en lecture seule similaire au contenu dans un espace de travail.
 - Les utilisateurs avec une licence Pro peuvent accéder à l’espace de travail si celui-ci se trouve dans une capacité Power BI Premium, même si les utilisateurs n’ont que le rôle Lecteur.
-- Pour permettre aux utilisateurs avec le rôle Lecteur d’exporter des données, vérifiez qu’ils ont l’autorisation Générer sur les jeux de données dans l’espace de travail.
+- Pour permettre aux utilisateurs avec le rôle Lecteur d’exporter des données, vérifiez qu’ils ont l’autorisation Générer sur les jeux de données dans l’espace de travail. Découvrez plus en détail l’[autorisation de génération pour les jeux de données](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 - Pas de bouton **Quitter l’espace de travail**.
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions

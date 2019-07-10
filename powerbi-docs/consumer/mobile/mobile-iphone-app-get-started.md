@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: b0de20cc32c32360f4f37c70e673dba01740a860
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2de1b866a237a0193c33c552078ca70bd5e632ce
+ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137440"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67498989"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Bien démarrer avec l’application mobile Power BI sur les appareils iOS
 L’application Microsoft Power BI pour iOS sur iPhone, iPad ou iPod Touch permet de vivre l’expérience mobile de Power BI, Power BI Report Server et Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. Et tenez-vous au courant des données les plus à jour sur votre [Apple Watch](mobile-apple-watch.md).  
@@ -33,7 +33,7 @@ Découvrez les [nouveautés des applications mobiles Power BI](mobile-whats-new
 ## <a name="download-the-app"></a>Télécharger l’application
 [Téléchargez l’application iOS](http://go.microsoft.com/fwlink/?LinkId=522062 "Téléchargez l’application iPhone") à partir de l’Apple App Store sur votre iPhone, iPad ou iPod Touch.
 
-Vous pouvez exécuter l’application Power BI pour iOS sur un iPhone 5 (ou version ultérieure) équipé d’iOS 10 (ou version ultérieure), Vous pouvez aussi l’exécuter sur un iPad ou un iPod Touch avec iOS version 10 ou ultérieure. 
+Vous pouvez exécuter l’application Power BI pour iOS sur n’importe quel appareil exécutant iOS 11 ou ultérieur. 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>S’inscrire au service Power BI
 Si vous ne vous êtes pas déjà inscrit, accédez à [powerbi.com](https://powerbi.microsoft.com/get-started/) puis, sous **Power BI - Collaboration et partage cloud**, sélectionnez **Essai gratuit**.

@@ -1,5 +1,5 @@
 ---
-title: Scanner un code-barres depuis l’application Power BI sur un iPhone
+title: Scanner un code-barres à partir de l’application mobile Power BI
 description: Scannez des codes-barres dans le monde réel pour accéder directement à des informations décisionnelles filtrées dans l’application mobile Power BI.
 author: mshenhav
 manager: kfile
@@ -9,21 +9,28 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: mshenhav
-ms.openlocfilehash: 3fd2d4888f76490a01c0742e68e6820c7055326e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 432b65f8d7f461ac1942cf8996f9cc67e756fc7f
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61137237"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559008"
 ---
-# <a name="scan-a-barcode-with-your-iphone-from-the-power-bi-mobile-app"></a>Scanner un code-barres depuis l’application Power BI sur votre iPhone
+# <a name="scan-a-barcode-with-your-device-from-the-power-bi-mobile-app"></a>Scanner un code-barres avec votre appareil à partir de l’application mobile Power BI
 Scannez des codes-barres dans le monde réel pour accéder directement à des informations décisionnelles filtrées dans l’application mobile Power BI.
 
-![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+S’applique à :
+
+| ![iPhone](./media/mobile-apps-quickstart-view-dashboard-report/iphone-logo-30-px.png) | ![Téléphone](./media/mobile-apps-quickstart-view-dashboard-report/android-logo-30-px.png) | 
+|:--- |:--- |
+| iPhone | Android (téléphone, tablette) | 
 
 Supposons qu’un collègue ait [marqué un champ de code-barres dans un rapport Power BI Desktop](../../desktop-mobile-barcodes.md) et partagé le rapport avec vous. 
 
-Quand vous scannez un code-barres de produit avec le scanner de l’application Power BI de votre iPhone, vous voyez le rapport (ou une liste de rapports) avec ce code-barres. Vous pouvez ouvrir ce rapport, filtré selon ce code-barres, sur votre iPhone.
+![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-scanner.png)
+
+Quand vous scannez un code-barres de produit avec le scanner de l’application Power BI de votre appareil, vous voyez le rapport (ou une liste de rapports) avec ce code-barres. Vous pouvez ouvrir ce rapport filtré selon ce code-barres.
 
 ## <a name="scan-a-barcode-with-the-power-bi-scanner"></a>Scanner un code-barres avec le scanner de Power BI
 1. Dans l’application mobile Power BI, ouvrez le menu de navigation principal ![](media/mobile-apps-scan-barcode-iphone/pbi_iph_navmenu.png) dans le coin supérieur gauche. 
@@ -34,10 +41,10 @@ Quand vous scannez un code-barres de produit avec le scanner de l’application 
 4. Pointez le scanner sur un code-barres de produit. 
    
     Vous pouvez voir une liste des rapports associés à ce code-barres.
-5. Appuyez sur le nom du rapport pour l’ouvrir sur votre iPhone, automatiquement filtré selon ce code-barres.
+5. Appuyez sur le nom du rapport pour l’ouvrir sur votre appareil, automatiquement filtré selon ce code-barres.
 
 ## <a name="filter-by-other-barcodes-while-in-a-report"></a>Filtrer selon d’autres codes-barres dans un rapport
-Lors de la consultation sur votre iPhone d’un rapport filtré selon un code-barres, vous pouvez filtrer ce rapport en fonction d’un autre code-barres.
+Quand vous consultez un rapport filtré selon un code-barres sur votre appareil, vous pouvez filtrer ce rapport en fonction d’un autre code-barres.
 
 * Si l’icône de code-barres contient un filtre ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-filtered-icon-black.png), cela signifie que le filtre est actif et que le rapport est déjà filtré selon un code-barres. 
 * Si l’icône de code-barres ne contient pas de filtre ![](media/mobile-apps-scan-barcode-iphone/power-bi-barcode-unfiltered-icon.png), cela signifie que le filtre est inactif et que le rapport n’a pas été filtré selon un code-barres. 

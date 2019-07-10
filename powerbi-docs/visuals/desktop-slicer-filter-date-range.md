@@ -7,81 +7,102 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3d8057c4d35294dd5e83638b721169e4d54d2adf
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: c039b00ced1bf62c8be72d218177d04a9fd3accf
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374495"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532715"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Utiliser un filtre et segment de date relative dans Power BI
-Un **segment de date relative** ou un **filtre de date relative** permet d’appliquer des filtres basés sur le temps à n’importe quelle colonne de date dans votre modèle de données. Par exemple, vous pouvez utiliser le **segment de date relative** pour afficher uniquement les données de vente produites durant les trente derniers jours (ou mois, mois calendaires, etc.). Et lorsque vous actualisez les données, la période relative applique automatiquement la contrainte de date relative appropriée.
+# <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Utiliser un segment et un filtre de date relative dans Power BI Desktop
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
+Un **segment de date relative** ou un **filtre de date relative** permet d’appliquer des filtres basés sur le temps à n’importe quelle colonne de date dans votre modèle de données. Par exemple, vous pouvez utiliser le **segment de date relative** pour afficher uniquement les données de vente produites durant les 30 derniers jours (ou mois, mois calendaires, etc.). Quand vous actualisez les données, la période relative applique automatiquement la contrainte de date relative appropriée.
 
-## <a name="using-the-relative-date-range-slicer"></a>Utilisation du segment de plage de dates relatives
-Vous pouvez utiliser le segment de date relative comme tout autre segment. Créez simplement un visuel de **segment** pour votre rapport, puis sélectionnez une valeur de date pour **Champ**. Dans l’image suivante, le champ *OrderDate* est sélectionné.
+![Capture d’écran d’un rapport avec une flèche pointant vers un segment de date relative.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
+## <a name="use-the-relative-date-range-slicer"></a>Utiliser le segment de plage de dates relatives
 
-Sélectionnez le segment sur le canevas, puis sur le signe ^ dans le coin supérieur droit du segment visual. Si l’élément visuel contient des données de date, le menu affiche l’option pour **relatif**. 
+Vous pouvez utiliser le segment de date relative comme tout autre segment. Créez un visuel de **segment** pour votre rapport, puis sélectionnez une valeur de date pour **Champ**. Dans l’image suivante, nous avons sélectionné le champ *OrderDate*.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
+![Capture d’écran du volet Visualisations avec des flèches pointant vers l’icône du visuel de segment et vers la zone Champ.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
+
+Sélectionnez le segment sur votre canevas, puis sur le caret dans le coin supérieur droit du visuel de segment. Si le visuel a des données de date, le menu affiche l’option pour **Relatif**.
+
+![Capture d’écran du visuel de segment avec le caret mis en évidence et une flèche pointant vers Relatif.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
 
 Pour le segment de date relative, sélectionnez *Relatif*.
 
-Vous pouvez ensuite sélectionner les paramètres. Pour la première liste déroulante du *segment de date relative*, les choix suivants sont disponibles :
+Vous pouvez ensuite sélectionner les paramètres.
 
-* Dernier
+Pour le premier paramètre du *segment de date relative*, vos choix sont les suivants :
+
+![Capture d’écran des options de configuration Relatif avec le premier paramètre mis en évidence.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
+
+* Dernières
+
 * Suivant
-* Ce
 
-Ces sélections sont affichées dans l’image suivante.
+* This
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
+Le deuxième paramètre (milieu) du *segment de date relative* vous permet d’entrer un nombre pour définir la plage de dates relatives.
 
-Le paramètre suivant (au milieu) du *segment de date relative* vous permet de saisir un nombre, pour définir la plage de dates relatives.
+![Capture d’écran des options de configuration Relatif avec le deuxième paramètre mis en évidence.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04a.png)
 
 Le troisième paramètre vous permet de choisir la mesure de la date. Vos choix sont les suivants :
 
+![Capture d’écran des options de configuration Relatif avec le troisième paramètre mis en évidence.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
+
 * Jours
+
 * Semaines
+
 * Semaines (calendaires)
+
 * Mois
+
 * Mois (calendaires)
+
 * Années
-* Années (calendaires)
 
-Ces sélections sont affichées dans l’image suivante.
+* Années (civiles)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
+Si vous sélectionnez **Mois** dans cette liste et entrez *2* dans le paramètre du milieu, voilà ce qui se passe :
 
-Si vous sélectionnez *Mois* dans la liste, et entrez 2 dans le paramètre du milieu, voici ce qui se produit : en partant du principe que nous sommes le 20 juillet, les données incluses dans les visuels contraints par le segment affichent les données des deux mois précédents, à partir du 20 mai jusqu’au 20 juillet (date d’aujourd’hui).
+* Si nous sommes le 20 juillet,
 
-À présent, si vous sélectionnez *Mois (calendaires)* , les visuels limités affichent les données du 1er mai jusqu’au 30 juin (les deux derniers mois calendaires complets).
+* les données incluses dans les visuels limités par le segment affichent les données des deux mois précédents,
+
+* à partir du 20 mai jusqu’au 20 juillet (date d’aujourd’hui).
+
+En comparaison, si vous sélectionnez *Mois (calendaires)* , les visuels limités affichent les données du 1er mai jusqu’au 30 juin (les deux derniers mois calendaires complets).
 
 ## <a name="using-the-relative-date-range-filter"></a>Utilisation du filtre de plage de dates relatives
-Vous pouvez aussi créer un filtre de plage de dates relatives pour la page de votre rapport ou pour l’intégralité de votre rapport. Pour cela, il vous suffit de faire glisser un champ de date dans la zone **Filtres au niveau de la page** ou **Filtres au niveau du rapport** dans le volet **Champ**, comme indiqué dans l’image suivante.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
+Vous pouvez aussi créer un filtre de plage de dates relatives pour la page de votre rapport ou pour l’intégralité de votre rapport. Pour cela, faites glisser un champ de date dans la zone **Filtres au niveau de la page** ou **Filtres au niveau du rapport** dans le volet **Champ**.
 
-Après cela, vous pouvez modifier la plage de dates relatives de la même façon que vous personnalisez le **segment de date relative**. Sélectionnez **Filtrage de date relative** dans la liste déroulante **Type de filtre**.
+![Capture d’écran montrant le déplacement du champ OrderDate vers la zone Filtres au niveau de la page.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
+Une fois cette opération effectuée, vous pouvez changer la plage de dates relatives. Pour cela, effectuez les mêmes étapes que pour personnaliser le **segment de date relative**. Sélectionnez **Filtrage de date relative** dans la liste déroulante **Type de filtre**.
 
-Une fois **Filtrage de date relative** sélectionné, trois sections à modifier s’affichent, notamment une zone numérique intermédiaire, comme pour un segment.
+![Capture d’écran montrant la liste déroulante Type de filtre et le pointeur de la souris sur Filtrage de date relative.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
+Une fois **Filtrage de date relative** sélectionné, trois sections à modifier apparaissent, notamment une zone numérique intermédiaire, comme pour le segment.
 
-C’est tout ce dont vous avez besoin pour utiliser ces contraintes de date relative dans vos rapports.
+![Capture d’écran de Filtres au niveau du rapport avec des flèches pointant vers les options Afficher les éléments quand la valeur.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
+
 Les considérations et limitations suivantes s’appliquent actuellement à l’utilisation du **segment et du filtre de plage de dates relatives**.
 
-* Les modèles de données de **Power BI** n’incluent pas les informations de fuseau horaire. Ces modèles peuvent stocker des heures, mais sans indication de leur fuseau horaire.
-* Le filtre et segment sont basés par défaut sur le fuseau UTC, donc si vous configurez un filtre dans un rapport, puis que vous l’envoyez à un collègue situé sur le même fuseau horaire, les mêmes données sont affichées. Toutefois, si votre collègue n’est pas situé dans le fuseau horaire UTC, les données affichées ne sont pas les mêmes, en raison du décalage horaire.
-* Vous pouvez convertir au fuseau UTC les données saisies dans un fuseau horaire local en utilisant **l’éditeur de requête**.
+* Les modèles de données dans **Power BI** n’incluent pas les informations de fuseau horaire. Ces modèles peuvent stocker des heures, mais sans indication de leur fuseau horaire.
 
+* Le segment et le filtre sont toujours basés sur l’heure UTC (temps universel coordonné). Si vous définissez un filtre dans un rapport et que vous l’envoyez à un collègue dans un autre fuseau horaire, vous voyez tous les deux les mêmes données. Sauf si vous vous trouvez dans le fuseau horaire UTC, vous et votre collègue devez tenir compte du décalage de temps que vous allez rencontrer.
+
+* Vous pouvez convertir à l’heure UTC les données capturées dans un fuseau horaire local en utilisant l’**Éditeur de requête**.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Découvrez comment [utiliser le regroupement et le compartimentage dans Power BI Desktop](../desktop-grouping-and-binning.md).

@@ -1,6 +1,6 @@
 ---
-title: Configurer l’interaction avec les rapports à un simple clic
-description: Découvrez comment configurer l’interaction avec les rapports vers tap simple ou double.
+title: Configurer une interaction par appui simple avec les rapports
+description: Découvrez comment configurer une interaction par appui simple ou double avec les rapports.
 author: mshenhav
 manager: kfile
 ms.reviewer: ''
@@ -9,14 +9,14 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: c7f5476ed9d47cc42f275d51801a44c4ee3482ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c553b921ebeb30b8fb8ec7ba9f7bce74f6c31dee
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61340631"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558962"
 ---
-# <a name="configure-report-interaction-to-single-tap-or-double-tap-preview"></a>Configurer l’interaction avec les rapports à un simple clic ou appuyer deux fois (version préliminaire)
+# <a name="configure-report-interaction-to-single-tap-or-double-tap"></a>Configurer une interaction par appui simple ou double avec les rapports
 S’applique à :
 
 | ![iPhone](././media/mobile-reports-in-the-mobile-apps/ios-logo-40-px.png) | ![Téléphone Android](././media/mobile-reports-in-the-mobile-apps/android-logo-40-px.png) | 
@@ -25,24 +25,24 @@ S’applique à :
 
 Un rapport Power BI est une vue interactive de vos données, dont la découverte et l’analyse sont traduites par des insights.
 
-Vous pouvez configurer comment interagir avec vos données. Vous pouvez décider si vous souhaitez avoir d’interaction d’appui unique ou double cliquez interaction.
+Vous pouvez configurer la façon dont vous souhaitez interagir avec vos données. Vous avez le choix entre une interaction par appui simple et une interaction par appui double.
 
-* Avec interaction d’appui double, votre premier clic sur un élément visuel sélectionne et uniquement le drainage de second dans un visuel exécute l’action lui-même, telles que la sélection d’éléments de segment, mise en surbrillance croisée ou cliquez sur un lien, bouton et ainsi de suite.
+* Dans le cadre d’une interaction par appui double, vous appuyez une première fois sur un visuel pour le sélectionner, puis une deuxième fois pour exécuter l’action souhaitée (sélection des éléments d’un segment, mise en surbrillance croisée, clic sur un lien, bouton, etc.).
 
-* Avec l’interaction d’appui unique, d’un simple clic effectue ces deux tâches : sélectionne l’élément visuel et exécute l’action.
-![Simple clic de Power BI mobile](./media/mobile-app-single-tap/single-tap-2.gif)
+* Dans le cadre d’une interaction par appui simple, vous appuyez une seule fois sur un visuel pour le sélectionner et exécuter l’action.
+![Mode appui simple dans l’application mobile Power BI](./media/mobile-app-single-tap/single-tap-2.gif)
 
 
-Depuis la version de l’application 18.0 pour iOS et 112540 de Power BI pour Android, toutes les nouvelles installations seront configurées avec un simple clic comme un comportement par défaut.
-Sera offert aux utilisateurs déjà installé sur le téléphone de Power BI et met à niveau vers ces nouvelles versions, pour basculer vers un simple clic.
+À compter de l’application Power BI version 18.0 pour iOS et version 112540 pour Android, toutes les nouvelles installations sont configurées par défaut en mode appui simple.
+Les utilisateurs qui ont déjà installé Power BI sur leur téléphone et qui effectuent la mise à niveau vers ces nouvelles versions se voient proposer de passer en mode appui simple.
 
-## <a name="change-interaction-behavior"></a>Modifier le comportement d’interaction
+## <a name="change-interaction-behavior"></a>Changer le comportement d’interaction
 
-Pour modifier le comportement d’interaction, vous pouvez accéder aux paramètres d’application et activer/désactiver l’interaction d’appui unique.
+Pour changer le comportement d’interaction, vous pouvez accéder aux paramètres de l’application et activer/désactiver l’interaction par appui simple.
 
-![Power BI mobile modifier l’interaction avec les rapports](./media/mobile-app-single-tap/configure-single-tap.png)
+![Changement de l’interaction avec les rapports dans l’application mobile Power BI](./media/mobile-app-single-tap/configure-single-tap.png)
 
-Cet article s’applique pour les deux paysage et rapports sur téléphone.
+Cet article s’applique aux rapports en mode paysage et en mode téléphone.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Visualiser les rapports Power BI optimisés pour les téléphones et interagir avec eux](mobile-apps-view-phone-report.md)

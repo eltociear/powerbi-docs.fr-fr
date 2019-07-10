@@ -1,16 +1,37 @@
+---
+title: Créer un espace de travail - Power BI
+description: Comment créer un espace de travail - inclure
+services: powerbi
+author: maggiesMSFT
+ms.service: powerbi
+ms.topic: include
+ms.date: 04/04/2019
+ms.author: maggies
+ms.custom: include file
+ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67534630"
+---
 1. Commencez par créer l’espace de travail. Sélectionnez **Espaces de travail** > **Créer un espace de travail d’application**. 
    
      ![Créer un espace de travail d’application](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    
-    Il s’agit de l’emplacement où placer le contenu sur lequel vos collègues et vous collaborez.
+    C’est ici que vous allez placer le contenu sur lequel vous et vos collègues travaillez.
 
-2. Nommez l’espace de travail. Si l’**ID d’espace de travail** correspondant n’est pas disponible, modifiez-le de façon à obtenir un ID unique.
+2. Dans la bannière **Vous créez un espace de travail mis à niveau**, cliquez sur **Revenir à la version classique**. 
+
+    ![Option de l’espace de travail Revenir à la version classique](media/powerbi-service-create-app-workspace/power-bi-revert-classic-workspace.png)
+
+3. Nommez l’espace de travail. Si l’**ID d’espace de travail** correspondant n’est pas disponible, modifiez-le de façon à obtenir un ID unique.
    
-     Ce sera aussi le nom de l’application.
+     L’application aura le même nom.
    
      ![Nommer l’espace de travail](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
 
-3. Vous devez définir quelques options. Si vous choisissez **Public**, toute personne au sein de votre organisation peut voir le contenu de l’espace de travail. En revanche, **Privé** signifie que seuls les membres de l’espace de travail peuvent en voir le contenu.
+3. Vous devez définir quelques options. Si vous choisissez **Public**, toute personne au sein de votre organisation peut voir le contenu de l’espace de travail. **Privé** signifie que seuls les membres de l’espace de travail peuvent en voir le contenu.
    
      ![Définir comme public ou privé](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-private-public.png)
    
@@ -34,5 +55,5 @@
 
 Power BI crée l’espace de travail et l’ouvre. Celui-ci figure dans la liste des espaces de travail dont vous êtes membre. Étant donné que vous êtes administrateur, vous pouvez sélectionner les points de suspension (…) pour revenir en arrière afin d’apporter des modifications, d’ajouter des membres ou de modifier leurs autorisations.
 
-![Modifier l'espace de travail](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
+![Modifier l’espace de travail](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
 

@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
-ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
-ms.translationtype: MT
+ms.openlocfilehash: 8acc0e403c983de79657cd01a7aa7f458bfb01ad
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469795"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559065"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Gérer une passerelle locale Power BI
 
@@ -31,6 +31,8 @@ Si vous venez d’installer une passerelle, nous vous recommandons d’[ajouter 
 
 Power BI prend en charge de nombreuses sources de données locales, chacune ayant ses propres exigences. Une passerelle peut être utilisée pour une seule ou plusieurs sources de données. Pour cet exemple, nous allons vous montrer comment ajouter une source de données SQL Server, mais les étapes sont les mêmes pour d’autres sources de données.
 
+> [!NOTE]
+> Les administrateurs de passerelle peuvent désormais créer plusieurs sources de données se connectant à la même source, chacune avec des informations d’identification différentes, et ajouter des utilisateurs à chacune de ces sources de données en fonction de leur niveau d’accès.
 
 ### <a name="add-a-data-source"></a>Ajouter une source de données
 
@@ -53,7 +55,12 @@ Power BI prend en charge de nombreuses sources de données locales, chacune ayan
 
 1. Pour SQL Server, vous choisissez la **méthode d’authentification** **Windows** ou **De base** (authentification SQL).  Si vous choisissez **De base**, entrez les informations d’identification de votre source de données.
 
-1. Sous **Paramètres avancés**, vous pouvez éventuellement configurer le [niveau de confidentialité](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) de votre source de données (ne s’applique pas à [DirectQuery](desktop-directquery-about.md)).
+1. Si cette source de données est actuellement indisponible ou lente, sélectionnez **Ignorer le test de connexion**. Sinon, la création de la source de données peut échouer.
+
+    > [!NOTE]
+    > L’option consistant à ignorer le test de connexion n’est pas prise en charge pour Analysis Services.
+
+1. Sous **Paramètres avancés**, vous pouvez si vous le souhaitez configurer le [niveau de confidentialité](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) de votre source de données (ne s’applique pas à [DirectQuery](desktop-directquery-about.md)).
 
     ![Paramètres avancés](media/service-gateway-manage/advanced-settings.png)
 
@@ -74,7 +81,7 @@ Pour supprimer une source de données, accédez à la source de données puis s
 
 ## <a name="manage-users-and-administrators"></a>Gérer les rôles et les administrateurs
 
-Après avoir ajouté une source de données à une passerelle, vous donnez aux utilisateurs et aux groupes de sécurité l’accès à la source de données spécifique (et non à l’ensemble de la passerelle). La liste des utilisateurs de la source de données contrôle uniquement les personnes autorisées à publier des rapports incluant des données provenant de la source de données. Les propriétaires des rapports peuvent créer des tableaux de bord, des packs de contenu et des apps, puis les partager avec d’autres utilisateurs.
+Après avoir ajouté une source de données à une passerelle, vous donnez aux utilisateurs et aux groupes de sécurité activés par e-mail l’accès à la source de données spécifique (et non à l’ensemble de la passerelle). La liste des utilisateurs de la source de données contrôle uniquement les personnes autorisées à publier des rapports incluant des données provenant de la source de données. Les propriétaires des rapports peuvent créer des tableaux de bord, des packs de contenu et des apps, puis les partager avec d’autres utilisateurs.
 
 Vous pouvez également donner aux utilisateurs et groupes de sécurité un accès administratif à la passerelle.
 
@@ -98,14 +105,14 @@ C’est tout. N’oubliez pas que vous devez ajouter des utilisateurs à chaque 
 
 ### <a name="remove-users-from-a-data-source"></a>Supprimer des utilisateurs d’une source de données
 
-Sous l’onglet **Utilisateurs** de la source de données, vous pouvez supprimer des utilisateurs et des groupes de données qui peuvent utiliser cette source de données.
+Sous l’onglet **Utilisateurs** de la source de données, vous pouvez supprimer des utilisateurs et des groupes de données activés par e-mail qui utilisent cette source de données.
 
 ![Supprimer l’utilisateur](media/service-gateway-manage/remove-user.png)
 
 
 ### <a name="add-and-remove-administrators"></a>Ajouter et supprimer des administrateurs
 
-Sous l’onglet **Administrateurs** de la passerelle, ajoutez et supprimez des utilisateurs (ou des groupes de sécurité) qui peuvent administrer la passerelle.
+Sous l’onglet **Administrateurs** de la passerelle, ajoutez et supprimez des utilisateurs (ou des groupes de sécurité activés par e-mail) qui peuvent administrer la passerelle.
 
 ![Onglet Administrateurs](media/service-gateway-manage/administrators-tab.png)
 

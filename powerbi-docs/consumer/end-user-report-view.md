@@ -8,43 +8,52 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e2d3bec59078577e2b4d4595c0925753b2cbb53a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d740dd012c6041893a2fa5fc5f1a97a74dcf1566
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608192"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532377"
 ---
-# <a name="change-the-display-of-a-report-page"></a>Modifier l’affichage d’une page de rapport
-Rapports sont affichés sur différents appareils avec des tailles d’écran et les proportions peuvent varier.  Modifier la façon dont une page de rapport s’affiche pour répondre à vos besoins.    
+# <a name="change-the-display-of-a-report-page"></a>Changer l’affichage d’une page de rapport
 
-![rapport s’affiche dans la zone de dessin](media/end-user-report-view/power-bi-report.png)
+Vous pouvez afficher les rapports sur différents appareils dont les tailles d’écran et les proportions peuvent varier. Changez le mode d’affichage d’une page de rapport pour répondre à vos besoins.
 
-## <a name="explore-the-view-menu"></a>Explorez le menu Affichage
-Les options dans le menu Affichage vous donnent la possibilité pour afficher les pages de rapport à la taille et la largeur que vous choisissez.
+![Capture d’écran du mode d’affichage d’un rapport sur le canevas.](media/end-user-report-view/power-bi-report.png)
 
-- Supposons que vous affichez un rapport sur un appareil de petite taille, et il est difficile de voir les titres et légendes.  Sélectionnez **vue** > **taille réelle** pour augmenter la taille de page du rapport. Utilisez les barres de défilement pour vous déplacer dans le rapport. 
+## <a name="explore-the-view-menu"></a>Explorer le menu Affichage
 
-    ![rapport affiché dans le canevas, avec deux barres de défilement](media/end-user-report-view/power-bi-actual-size-new.png)
+![Capture d’écran des options du menu déroulant Affichage.](media/end-user-report-view/power-bi-view-menu.png)
 
 
-- Une autre option consiste à ajuster le rapport à la largeur de l’écran en sélectionnant **ajuster à la largeur**. Cela peut nécessiter toujours l’utilisation d’une barre de défilement verticale.
+Les options du menu **Affichage** vous permettent d’afficher les pages d’un rapport selon la taille et la largeur de votre choix :
 
-  ![rapport affiche à l’aide de la largeur du canevas complet](media/end-user-report-view/power-bi-fit-to-width-new.png)
+- Prenons un exemple : vous visualisez un rapport sur un petit appareil et vous avez du mal à voir les titres et les légendes.  Sélectionnez **Affichage** > **Taille réelle** pour augmenter la taille de la page du rapport. Utilisez les barres de défilement pour vous déplacer dans le rapport.
 
-- Si vous ne souhaitez pas que les barres de défilement, mais que vous souhaitez tirer le meilleur parti de la taille de votre écran.  Sélectionnez **ajuster à la Page**.
+    ![Capture d’écran d’un rapport en mode Taille réelle avec deux barres de défilement mises en évidence.](media/end-user-report-view/power-bi-actual-size-new.png)
 
-   ![rapport s’affiche sans barres de défilement](media/end-user-report-view/power-bi-fit-to-width.png)
+- Une autre option consiste à adapter le rapport à la largeur de votre écran en sélectionnant **Ajuster à la largeur**. Dans la mesure où il s’agit uniquement de la largeur et non de la hauteur, vous devrez peut-être utiliser la barre de défilement verticale.
 
-   
-- La dernière option, **plein écran**, affiche la page de rapport sans les barres de menus et des en-têtes. Mode plein écran peut être un bon choix pour les petits écrans où les détails sont difficiles à voir.  Mode plein écran peut également être un bon choix lors de la projection des pages de rapport sur les grands écrans pour les personnes à afficher, mais pas interagir.  
+  ![Capture d’écran d’un rapport en mode Ajuster à la largeur avec barre de défilement verticale mise en évidence.](media/end-user-report-view/power-bi-fit-to-width-new.png)
 
-    ![rapport affiche le mode plein écran](media/end-user-report-view/power-bi-full-screen.png)
+- Si vous ne souhaitez pas de barres de défilement, mais que vous voulez utiliser au mieux la taille de votre écran, sélectionnez **Ajuster à la page**.
 
-Lorsque vous quittez le rapport, vos paramètres d’affichage ne sont pas enregistrées, mais reviennent à la valeur par défaut. S’il est important de vous permet d’enregistrer ces paramètres, utilisez [signets](end-user-bookmarks.md). 
+   ![Capture d’écran d’un rapport en mode Ajuster à la page.](media/end-user-report-view/power-bi-fit-to-width.png)
+
+- Vous pouvez également choisir parmi quatre **Couleurs à contraste élevé** : Contraste élevé n°1, Contraste élevé n°2, Noir à contraste élevé et Blanc à contraste élevé. Vous pouvez utiliser cette fonctionnalité d’accessibilité pour que les personnes malvoyantes puissent mieux voir les rapports :
+
+    ![Capture d’écran d’un rapport en mode Contraste élevé n°1.](media/end-user-report-view/power-bi-high-contrast-1.png)![Capture d’écran d’un rapport en mode Contraste élevé n°2.](media/end-user-report-view/power-bi-high-contrast-2.png)
+    ![Capture d’écran d’un rapport en mode Noir à contraste élevé.](media/end-user-report-view/power-bi-high-contrast-black.png)![Capture d’écran d’un rapport en mode Blanc à contraste élevé.](media/end-user-report-view/power-bi-high-contrast-white.png)
+
+- La dernière option, **Plein écran**, affiche la page de votre rapport sans barres de menus ni en-têtes. Le mode Plein écran peut être un bon choix pour les appareils dotés de petits écrans où les détails sont difficiles à voir.  Il peut également s’avérer utile pour projeter les pages d’un rapport sur de grands écrans (à des fins de visualisation et non d’interaction).  
+
+    ![Rapport affiché en mode Plein écran](media/end-user-report-view/power-bi-full-screen.png)
+
+Quand vous quittez le rapport, les **paramètres d’affichage** ne sont pas enregistrés. Les valeurs par défaut sont rétablies. Si vous tenez à enregistrer ces paramètres, utilisez des [signets](end-user-bookmarks.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Créer des rapports pour Cortana](../service-cortana-answer-cards.md)
+
+* [Découvrir le volet Filtres du rapport](end-user-report-filter.md)

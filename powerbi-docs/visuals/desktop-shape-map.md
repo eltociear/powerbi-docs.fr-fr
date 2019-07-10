@@ -1,5 +1,5 @@
 ---
-title: Utiliser des cartes de formes dans Power BI Desktop (version préliminaire)
+title: Utiliser des cartes de formes dans Power BI Desktop (préversion)
 description: Créer des comparaisons relatives de régions à l’aide des cartes de formes dans Power BI Desktop
 author: mihart
 manager: kvivek
@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 2e0fc8ae6a6d2b01121ffb1c52c29652af21f21e
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839198"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67533064"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
 Créez un visuel **Carte de formes** pour comparer des régions sur une carte à l’aide de la couleur. À la différence du visuel **Carte**, le visuel **Carte de formes** ne permet pas d’afficher l’emplacement géographique précis de points de données sur une carte. Il a pour principal objectif de montrer des comparaisons relatives de régions sur une carte en leur appliquant une couleur différente.
 
-Les visuels **Carte de formes** reposent sur les cartes ESRI/TopoJSON, qui présentent l’avantage de pouvoir utiliser des cartes personnalisées que vous pouvez créer, comme des cartes géographiques, des plans de disposition des places, des plans et bien plus encore. Vous ne pouvez pas utiliser de cartes personnalisées dans cette préversion de **Carte de formes**.
+Les visuels **Carte de formes** reposent sur les cartes ESRI/TopoJSON, qui présentent l’avantage de pouvoir utiliser des cartes personnalisées que vous pouvez créer, comme des cartes géographiques, des plans de salle, des plans d’étage, etc. Vous ne pouvez pas utiliser de cartes personnalisées dans cette préversion de **Carte de formes**.
 
 ## <a name="creating-shape-maps"></a>Créer des cartes de formes
 Vous pouvez tester le contrôle **Carte de formes** avec les cartes fournies avec cette version préliminaire. Vous pouvez également utiliser votre propre carte personnalisée tant qu’elle répond aux exigences décrites dans la section suivante intitulée **Utiliser des cartes personnalisées**.
@@ -108,11 +108,12 @@ Cette version préliminaire de l’élément visuel **Carte de formes** est asso
 * Le visuel **Carte de formes** pourra tracer au maximum 1 000 points de données.
 
 ## <a name="region-keys"></a>Codes de région
-Utilisez les **codes de région** suivants dans cette version préliminaire pour tester l’élément visuel **Carte de formes**.
+
+Utilisez les **codes de région** suivants dans cette préversion pour tester **Carte de formes**.
 
 ### <a name="australia-states"></a>Australie : États
 
-| `id` | `abbr` | `iso` | `name` | `postal` |
+| id | abbr | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -125,7 +126,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="austria-states"></a>Austriche : États
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -139,7 +140,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="brazil-states"></a>Brésil : États
 
-| `id` |
+| id |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -175,7 +176,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="canada-provinces"></a>Canada : Provinces
 
-| `id` | `iso` | `name` | `postal` |
+| id | iso | name | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -193,7 +194,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="france-regions"></a>France : Régions
 
-| `id` | `name` | `name-en` |
+| id | name | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -220,7 +221,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="germany-states"></a>Allemagne : États
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -241,7 +242,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="ireland-counties"></a>Irlande : Pays
 
-| `id` |
+| id |
 | --- |
 | Wicklow |
 | Wexford |
@@ -272,7 +273,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="italy-regions"></a>Italie : Régions
 
-| `id` | `iso` | `name` | `name-en` | `postal` |
+| id | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -297,7 +298,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="mexico-states"></a>Mexique : États
 
-| `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
+| id | abreviatura | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -334,7 +335,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="netherlands-provinces"></a>Pays-Bas : Provinces
 
-| `id` | `iso` | `name` | `name-en` |
+| id | iso | name | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -351,7 +352,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="uk-countries"></a>Royaume-Uni : pays
 
-| `id` | `iso` | `name` |
+| id | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -360,7 +361,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 
 ### <a name="usa-states"></a>États-Unis : États
 
-| `id` | `name` | `postal` |
+| id | name | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
@@ -415,6 +416,7 @@ Utilisez les **codes de région** suivants dans cette version préliminaire pour
 | us-wa |Washington |WA |
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Visuel Matrice dans Power BI](desktop-matrix-visual.md)
 
-[Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+* [Visuel Matrice dans Power BI](desktop-matrix-visual.md)
+
+* [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

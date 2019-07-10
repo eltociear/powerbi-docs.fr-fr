@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: d491855a268c57d7958d52b7c1e9e9191c28601e
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: a6718ed8f582150ad8f13d638308700f9004a354
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038899"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558989"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,15 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="june-2019"></a>Juin 2019
+
+### <a name="barcode-scanning-is-now-available-in-android"></a>Lecture de code-barres maintenant disponible dans Android
+Vous pouvez utiliser votre application Power BI sur Android (téléphone et tablette) pour scanner les codes-barres imprimés sur les produits ou les rayons de votre magasin afin d’afficher les rapports Power BI connexes filtrés en fonction de la valeur scannée. En savoir plus sur le [filtrage des données avec des codes-barres](mobile-apps-scan-barcode-iphone.md).
+
+### <a name="supporting-pbix-reports-hosted-in-pbi-rs-over-adfs-configuration-ios-android"></a>Prise en charge des rapports PBIX hébergés dans PBI-RS sur la configuration ADFS (iOS, Android)
+
+Les rapports Power BI (PBIX) hébergés dans PBI-RS avec une configuration ADFS sont maintenant accessibles à partir des applications mobiles Power BI.
 
 ## <a name="may-2019"></a>Mai 2019
 
