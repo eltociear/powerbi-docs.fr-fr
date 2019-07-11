@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: d73d2ea5e21196d4856d2906805e6dec1f7e60b7
-ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
+ms.openlocfilehash: 1c77c272bf5c03ce7df0a5173d194a4c0583ccf2
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468241"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596632"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Actualiser des données à partir d’une base de données SQL Server locale
 
@@ -35,7 +35,7 @@ Ce tutoriel vous montre comment effectuer les étapes suivantes :
 
 - Si ce n’est pas déjà fait, inscrivez-vous à un [essai gratuit de Power BI](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 - [Installez Power BI Desktop](https://powerbi.microsoft.com/desktop/) sur un ordinateur local.
-- [Installez SQL Server](/sql/database-engine/install-windows/install-sql-server) sur un ordinateur local et restaurez l’[exemple de base de données à partir d’une sauvegarde]((https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak)). Pour plus d’informations sur AdventureWorks, consultez [Installation et configuration d’AdventureWorks](/sql/samples/adventureworks-install-configure).
+- [Installez SQL Server](/sql/database-engine/install-windows/install-sql-server) sur un ordinateur local et restaurez l’[exemple de base de données à partir d’une sauvegarde](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). Pour plus d’informations sur AdventureWorks, consultez [Installation et configuration d’AdventureWorks](/sql/samples/adventureworks-install-configure).
 - [Installez une passerelle de données locale](service-gateway-install.md) sur le même ordinateur local que SQL Server (en production, il s’agit généralement d’un autre ordinateur).
 
 > [!NOTE]

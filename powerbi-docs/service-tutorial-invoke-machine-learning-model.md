@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 31c1cd7a8455232fdaa3bb3d391fb93e87ad5062
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e0b2036192ace4404816f5ba64ad07569949452e
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61404393"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596586"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Tutoriel : Appeler un modèle Machine Learning Studio dans Power BI (préversion)
 
@@ -62,7 +62,7 @@ Connectez-vous au service Power BI avec les informations d’identification de l
 
 Cette étape suppose que les données que vous souhaitez évaluer avec votre modèle Azure ML soient au format CSV.  Si vous avez utilisé l’**expérience de tarification automobile** pour créer le modèle dans Machine Learning Studio, le jeu de données est partagé dans le lien suivant :
 
-* [Exemple de modèle Azure Learning Studio](https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv)
+* [Exemple de modèle Azure Learning Studio](https://github.com/santoshc1/PowerBI-AI-samples/blob/master/Tutorial_MLStudio_model_integration/Automobile%20price%20data%20_Raw_.csv)
 
 ### <a name="create-a-dataflow"></a>Créer un flux de données
 
