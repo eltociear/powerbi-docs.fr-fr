@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 9aa80c336fa7918632b71b25f8f57b2798fa52e5
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: dd656f81cb0fdb32f9637f969ef538e263e20053
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418705"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68272006"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -30,7 +30,7 @@ ms.locfileid: "67418705"
 > [!NOTE]
 > Vous pouvez enregistrer ou imprimer ce livre blanc en sélectionnant **Imprimer** dans votre navigateur, puis **Enregistrer au format PDF**.
 
-## <a name="introduction"></a>Introduction
+## <a name="introduction"></a>Présentation
 
 **Power BI** est une offre de service logiciel en ligne (_SaaS_, ou Software as a Service) de Microsoft qui vous permet de créer facilement et rapidement des tableaux de bord, des rapports, des jeux de données et des visualisations de décisionnel en libre-service. Avec Power BI, vous pouvez vous connecter à de nombreuses sources de données différentes, combiner et mettre en forme les données à partir de ces connexions, puis créer des rapports et des tableaux de bord partageables.
 
@@ -174,7 +174,7 @@ Une requête d’importation de jeu de données se compose d’une collection de
 Le tableau suivant décrit les données Power BI en fonction du type de requête utilisé. Un **X** indique la présence de données Power BI quand vous utilisez le type de requête associé.
 
 
-|  |Importer  |DirectQuery  |Live Connect  |
+|  |Import  |DirectQuery  |Live Connect  |
 |---------|---------|---------|---------|
 |Schéma     |     X    |    X     |         |
 |Données de ligne     |    X     |         |         |
@@ -202,7 +202,7 @@ Les clés de chiffrement de passerelle basées sur la clé de récupération ne 
 
 Pour les sources de données basées sur le cloud, le rôle Déplacement de données chiffre les clés de chiffrement à l’aide de méthodes [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx). Apprenez-en davantage sur la [fonctionnalité de base de données Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx).
 
-#### <a name="datasets"></a>Jeux de données
+#### <a name="datasets"></a>Groupes de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -249,7 +249,7 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
    a. Les rapports peuvent être au format Excel pour Office 365 ou au format Power BI. Ce qui suit s’applique aux métadonnées en fonction du type de rapport :
         
-    &ensp; &ensp; a. Rapport Excel métadonnées sont chiffrées dans SQL Azure. Métadonnées sont également stockées dans Office 365.
+    &ensp; &ensp; une barre d’outils. Rapport Excel métadonnées sont chiffrées dans SQL Azure. Métadonnées sont également stockées dans Office 365.
 
     &ensp; &ensp; b. Les rapports Power BI sont stockées dans la base de données SQL Azure.
 
@@ -257,13 +257,13 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
    Les données statiques comprennent des artefacts tels que des images d’arrière-plan et des visuels personnalisés.
 
-    &ensp; &ensp; a. Pour les rapports créés avec Excel pour Office 365, rien n’est stocké.
+    &ensp; &ensp; une barre d’outils. Pour les rapports créés avec Excel pour Office 365, rien n’est stocké.
 
     &ensp; &ensp; b. Pour les rapports Power BI, les données statiques sont stockées et chiffrées dans Stockage Blob Azure.
 
 3. Caches
 
-    &ensp; &ensp; a. Pour les rapports créés avec Excel pour Office 365, rien n’est mis en cache.
+    &ensp; &ensp; une barre d’outils. Pour les rapports créés avec Excel pour Office 365, rien n’est mis en cache.
 
     &ensp; &ensp; b. Pour les rapports Power BI, les données pour les visuels affichés sont mises en cache chiffrées dans Azure SQL Database.
  
@@ -284,7 +284,7 @@ Quelle que soit la méthode de chiffrement utilisée, Microsoft gère le chiffre
 
 Les périphériques non volatile sont avec une mémoire qui persiste sans puissance constante. La section suivante décrit les données qui sont stockées de manière transitoire sur des appareils non volatiles. 
 
-#### <a name="datasets"></a>Jeux de données
+#### <a name="datasets"></a>Groupes de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -382,7 +382,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 * **Informations d’identification Power BI et informations d’identification de domaine :** Les utilisateurs se connectent à Power BI à l’aide d’une adresse e-mail. Quand un utilisateur tente de se connecter à une ressource de données, Power BI transmet l’adresse e-mail de connexion Power BI en guise d’informations d’identification. Pour les ressources connectées à un domaine (localement ou dans le cloud), l’adresse e-mail de connexion est mise en correspondance avec un _nom d’utilisateur principal_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) par le service d’annuaire afin de déterminer si les informations d’identification suffisent pour autoriser l’accès. Pour les organisations qui utilisent des adresses e-mail professionnelles pour se connecter à Power BI (les mêmes que pour se connecter aux ressources de travail, par exemple _david@contoso.com_ ), le mappage peut se produire sans interruption. Pour les organisations qui n’utilisaient pas des adresses e-mail professionnelles (par exemple, _david@contoso.onmicrosoft.com_ ), le mappage d’annuaire doit être établi afin d’autoriser l’accès aux ressources locales avec les informations d’identification de connexion Power BI.
 
-* **SQL Server Analysis Services et Power BI :** Pour les organisations qui utilisent SQL Server Analysis Services local, Power BI offre la passerelle de données locale Power BI (qui est une **passerelle** au sens employé dans les sections précédentes).  La passerelle de données locale Power BI peut appliquer une sécurité au niveau du rôle sur les sources de données. Pour plus d’informations sur la sécurité au niveau du rôle, consultez **Authentification des utilisateurs auprès des sources de données** plus haut dans ce document. Vous pouvez également lire un article approfondi sur [Power BI Gateway](service-gateway-manage.md).
+* **SQL Server Analysis Services et Power BI :** Pour les organisations qui utilisent SQL Server Analysis Services local, Power BI offre la passerelle de données locale Power BI (qui est une **passerelle** au sens employé dans les sections précédentes).  La passerelle de données locale Power BI peut appliquer une sécurité au niveau du rôle sur les sources de données. Pour plus d’informations sur la sécurité au niveau du rôle, consultez **Authentification des utilisateurs auprès des sources de données** plus haut dans ce document. Pour plus d’informations sur les passerelles, consultez [passerelle de données locale](service-gateway-onprem.md).
 
   De plus, les organisations peuvent utiliser Kerberos pour l’**authentification unique** et se connecter de façon fluide de Power BI à des sources de données locales telles que SQL Server, SAP HANA et Teradata. Pour plus d’informations et pour connaître la configuration spécifique requise, consultez [**Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -422,7 +422,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **Quels sont les ports utilisés par la passerelle de données locale et la passerelle personnelle ? Y a-t-il des noms de domaine qui doivent être autorisés à des fins de connectivité ?**
 
-* Vous trouverez une réponse détaillée à cette question en suivant ce lien : [Power BI Gateway](service-gateway-manage.md)
+* Vous trouverez une réponse détaillée à cette question en suivant ce lien : [Ports de passerelle](/data-integration/gateway/service-gateway-communication#ports)
 
 **En cas d’utilisation de la passerelle de données locale, comment les clés de récupération sont-elles utilisées et où sont-elles stockées ? Qu’en est-il de la gestion des informations d’identification sécurisées ?**
 
@@ -438,7 +438,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
   - **AMQP 1.0 – TCP + TLS** : Ce protocole nécessite l’ouverture des ports 443, 5671, 5672 et 9350 à 9354 pour les communications sortantes. Il est recommandé, car il a une surcharge de communication plus faible.
 
-  - **HTTPS – WebSockets sur HTTPS + TLS** : Ce protocole utilise uniquement le port 443. Le WebSocket est lancé par un message HTTP CONNECT unique. Une fois le canal établi, la communication est essentiellement TCP + TLS. Vous pouvez forcer la passerelle à utiliser ce protocole en modifiant un paramètre décrit dans l’[article sur la passerelle locale](service-gateway-manage.md).
+  - **HTTPS – WebSockets sur HTTPS + TLS** : Ce protocole utilise uniquement le port 443. Le WebSocket est lancé par un message HTTP CONNECT unique. Une fois le canal établi, la communication est essentiellement TCP + TLS. Vous pouvez forcer la passerelle à utiliser ce protocole en modifiant un paramètre décrit dans le [article de passerelle locale](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **Quel est le rôle du CDN Azure dans Power BI ?**
 
@@ -486,10 +486,9 @@ Pour plus d’informations sur Power BI, consultez les ressources suivantes.
 
 - [Groupes dans Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Prise en main de Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](service-gateway-manage.md)
 - [API REST Power BI - Vue d’ensemble](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Informations de référence sur l’API de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Passerelle de données locale)](service-gateway-manage.md)
+- [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)
 - [Power BI et ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
