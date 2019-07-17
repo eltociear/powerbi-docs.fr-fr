@@ -723,10 +723,6 @@
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: Résoudre les erreurs de vignette
               href: refresh-troubleshooting-tile-errors.md
-            - name: Résoudre les problèmes de passerelle de données locale
-              href: service-gateway-onprem-tshoot.md
-            - name: "Résoudre les problèmes de Power\_BI Gateway - Personal"
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Résoudre les problèmes de la fonctionnalité Analyser dans Excel
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: "Erreur\_: Impossible de trouver des données dans votre classeur Excel"
@@ -1279,38 +1275,38 @@
   items:
     - name: Vue d’ensemble
       items:
-        - name: Présentation des passerelles Power BI
-          href: service-gateway-getting-started.md
-    - name: Tutoriels
-      items:
-        - name: Se connecter à des données SQL Server
-          href: service-gateway-sql-tutorial.md
+        - name: "Qu’est-ce qu’une passerelle de données locale\_?"
+          href: service-gateway-onprem.md
     - name: Concepts
       items:
         - name: Conseils de déploiement d’une passerelle de données
           href: service-gateway-deployment-guidance.md
         - name: FAQ Passerelle de données locale
-          href: service-gateway-onprem-faq.md
+          href: service-gateway-power-bi-faq.md
     - name: Guides pratiques
       items:
-        - name: Installer des passerelles
-          href: service-gateway-install.md
-        - name: Gérer les passerelles
-          href: service-gateway-manage.md
-        - name: Surveiller les performances de passerelle
-          href: service-gateway-performance-monitoring.md
-        - name: Gérer votre source de données d’entreprise - Analysis Services
-          href: service-gateway-enterprise-manage-ssas.md
-        - name: Gérer votre source de données d’entreprise - SAP HANA
-          href: service-gateway-enterprise-manage-sap.md
-        - name: Gérer votre source de données d’entreprise - SQL
-          href: service-gateway-enterprise-manage-sql.md
-        - name: Gérer votre source de données - Oracle
-          href: service-gateway-onprem-manage-oracle.md
-        - name: Gérer la source de données de votre entreprise - Importation/actualisation planifiée
-          href: service-gateway-enterprise-manage-scheduled-refresh.md
-        - name: Fusionner les sources de données locales et cloud
-          href: service-gateway-mashup-on-premises-cloud.md
+        - name: Informations approfondies sur la passerelle de données locale
+          href: service-gateway-onprem-indepth.md
+        - name: Passerelle de données locale (mode personnel)
+          href: service-gateway-personal-mode.md
+        - name: Gérer les utilisateurs et les administrateurs
+          href: service-gateway-manage-admins.md
+        - name: Gérer les sources de données
+          items:
+            - name: Gérer les sources de données
+              href: service-gateway-data-sources.md
+            - name: Gérer votre source de données d’entreprise - Analysis Services
+              href: service-gateway-enterprise-manage-ssas.md
+            - name: Gérer votre source de données d’entreprise - SAP HANA
+              href: service-gateway-enterprise-manage-sap.md
+            - name: Gérer votre source de données d’entreprise - SQL
+              href: service-gateway-enterprise-manage-sql.md
+            - name: Gérer votre source de données - Oracle
+              href: service-gateway-onprem-manage-oracle.md
+            - name: Gérer la source de données de votre entreprise - Importation/actualisation planifiée
+              href: service-gateway-enterprise-manage-scheduled-refresh.md
+            - name: Fusionner les sources de données locales et cloud
+              href: service-gateway-mashup-on-premises-cloud.md
         - name: Activer l’authentification unique (SSO)
           items:
             - name: Authentification unique (SSO) - vue d’ensemble
@@ -1321,24 +1317,16 @@
               href: service-gateway-sso-kerberos-resource.md
             - name: Authentification unique (SSO) - SAML
               href: service-gateway-sso-saml.md
-        - name: Configuration des paramètres de proxy
-          href: service-gateway-proxy.md
-        - name: Clusters à haute disponibilité pour la passerelle de données locale
-          href: service-gateway-high-availability-clusters.md
-        - name: Passerelle de données locale
-          href: service-gateway-onprem.md
-        - name: Informations approfondies sur la passerelle de données locale
-          href: service-gateway-onprem-indepth.md
-        - name: Passerelle de données locale (mode personnel)
-          href: service-gateway-personal-mode.md
-        - name: Connecteurs personnalisés
-          href: service-gateway-custom-connectors.md
-        - name: Résoudre les problèmes de passerelle de données locale
+        - name: Résoudre les problèmes de passerelle
           href: service-gateway-onprem-tshoot.md
+        - name: Résoudre les problèmes de passerelle (mode personnel)
+          href: service-admin-troubleshooting-power-bi-personal-gateway.md
+        - name: Utiliser des connecteurs personnalisés
+          href: service-gateway-custom-connectors.md
     - name: Ressources
       items:
         - name: Mises à jour mensuelles de la passerelle
-          href: service-gateway-monthly-updates.md
+          href: 'https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master'
 - name: Administration
   items:
     - name: Vue d’ensemble
