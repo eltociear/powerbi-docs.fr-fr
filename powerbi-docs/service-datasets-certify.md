@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e790afee5b57b73a756ca3c1afd564b00e778186
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 915fb9d10b69142621554f29a7fd77e7a41932e5
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461324"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567336"
 ---
 # <a name="certify-datasets-preview"></a>Certifier des jeux de données (préversion)
 
@@ -23,8 +23,8 @@ Votre organisation peut certifier des jeux de données qui sont la source d’au
 
 Les utilisateurs Power BI pouvant désormais avoir accès à de nombreux jeux de données différents, les entreprises doivent les guider vers les jeux de données fiables et de qualité. Power BI offre deux moyens de *recommander* des jeux de données :
 
-- **Promotion** : Les propriétaires de jeux de données peuvent promouvoir leurs propres jeux de données quand ils sont prêts pour une utilisation étendue. Pour plus d’informations, consultez [Promouvoir votre jeu de données](service-datasets-promote.md). 
-- **Certification** : Les propriétaires de jeux de données peuvent demander la certification d’un jeu de données promu. Un groupe sélectionné d’utilisateurs défini dans le paramètre d’administrateur de locataire **Certification de jeux de données** détermine quels jeux de données certifier.
+- **Promotion** : Les propriétaires de jeux de données et d’autres membres de l’espace de travail peuvent promouvoir leurs jeux de données quand ils sont prêts pour une utilisation étendue. Pour plus d’informations, consultez [Promouvoir votre jeu de données](service-datasets-promote.md). 
+- **Certification** : Les propriétaires de jeux de données peuvent demander la certification d’un jeu de données promu. Un groupe sélectionné d’utilisateurs défini dans le paramètre d’administrateur de locataire **Certification de jeux de données** détermine quels jeux de données certifier. Le nom de la personne qui a certifié un jeu de données s’affiche dans une info-bulle pendant l’expérience de découverte de jeu de données. Placez le curseur sur l’étiquette **Certifié** pour le voir.
 
 ## <a name="certify-a-dataset"></a>Certifier un jeu de données
 

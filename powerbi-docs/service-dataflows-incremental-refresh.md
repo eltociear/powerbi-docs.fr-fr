@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: mblythe
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1bc9e0d5de909c5d0859b6d31185cf0cb27bda23
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7e9d8779480eb7a00dacfc9fc52fc81987629e7b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136554"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791931"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Utilisation d’une actualisation incrémentielle avec des flux de données Power BI
 
@@ -33,7 +33,7 @@ L’actualisation incrémentielle pour des flux de données Power BI nécessite 
 
 Un flux de données peut contenir de nombreuses entités. L’actualisation incrémentielle est configurée au niveau entité, ce qui permet à un flux de données de stocker à la fois des entités entièrement actualisées et des entités actualisées de manière incrémentielle.
 
-Pour configurer une entité avec actualisation incrémentielle, commencez par configurer votre entité comme vous le feriez pour toute autre entité. Pour en savoir plus sur les flux de données de configuration, consultez [de préparation des données en libre-service dans Power BI](service-dataflows-overview.md).
+Pour configurer une entité avec actualisation incrémentielle, commencez par configurer votre entité comme vous le feriez pour toute autre entité. Pour plus d’informations sur la configuration des flux de données, consultez [Préparation des données en libre-service dans Power BI](service-dataflows-overview.md).
 
 Une fois le flux de données créé et enregistré, sélectionnez l’icône d’**actualisation incrémentielle** dans la vue de l’entité, comme indiqué dans l’image suivante :
 
@@ -156,8 +156,8 @@ Cet article décrit l’actualisation incrémentielle pour les flux de données.
 
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 
 Pour plus d’informations sur Power Query et l’actualisation planifiée, vous pouvez consulter ces articles :
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)

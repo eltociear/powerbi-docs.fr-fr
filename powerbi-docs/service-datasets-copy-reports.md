@@ -7,21 +7,19 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 507af4de9d57d2d54fe3e28bca8b1aff7da5cf30
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461462"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567428"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Copier des rapports à partir d’autres espaces de travail (préversion)
 
-Découvrez comment vous pouvez copier un rapport à partir d’un espace de travail et l’enregistrer dans un autre espace de travail. Vous pouvez ensuite modifier ce rapport, en ajoutant ou supprimant des visuels et d’autres éléments.
-
-Lorsque vous trouvez un rapport que vous aimez, dans un espace de travail ou une application, vous pouvez en effectuer une copie et le modifier selon vos besoins. Vous n’avez pas à vous soucier de la création du modèle de données. Il est déjà créé pour vous. En outre, il est beaucoup plus facile de modifier un rapport existant que de démarrer à partir de zéro.
+Quand vous trouvez un rapport que vous aimez dans un espace de travail ou une application, vous pouvez en faire une copie et l’enregistrer dans un autre espace de travail. Vous pouvez ensuite modifier ce rapport, en ajoutant ou supprimant des visuels et d’autres éléments. Vous n’avez pas à vous soucier de la création du modèle de données. Il est déjà créé pour vous. En outre, il est beaucoup plus facile de modifier un rapport existant que de démarrer à partir de zéro. Cependant, vous ne pouvez pas publier votre copie du rapport dans une application à partir du nouvel espace de travail. Consultez la liste des autres [considérations et limitations](service-datasets-across-workspaces.md#considerations-and-limitations) dans l’article « Utilisation des jeux de données entre des espaces de travail ».
 
 ## <a name="save-a-copy-of-a-report"></a>Enregistrer une copie d’un rapport
 
@@ -61,6 +59,21 @@ Lorsque vous avez un rapport dans votre espace de travail, vous devez peut-être
 1. La boîte de dialogue **Contenu associé** affiche tous les éléments associés. Dans cette liste, le jeu de données ressemble à n’importe quel autre. Vous ne pouvez pas savoir qu’il se trouve dans un autre espace de travail. Ce problème est connu.
  
     ![Boîte de dialogue Contenu associé](media/service-datasets-copy-reports/power-bi-dataset-related.png)
+
+## <a name="delete-a-report-and-its-shared-dataset"></a>Supprimer un rapport et son jeu de données partagé
+
+Vous pouvez décider que vous ne voulez plus du rapport et de son jeu de données partagé associé dans l’espace de travail.
+
+1. Supprimez le rapport. Dans la liste des rapports de l’espace de travail, sélectionnez l’icône **Supprimer**.
+
+    ![Icône Supprimer un rapport](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
+
+2. Dans la liste des jeux de données, vous voyez que les jeux de données partagés n’ont pas d’icône **Supprimer**. Actualisez la page, ou accédez à une autre page et revenez à la liste. Le jeu de données doit avoir disparu. Si ce n’est pas le cas, cochez **Afficher les éléments associés**. Il peut être lié à une autre table de votre espace de travail.
+
+    ![l’icône Afficher les travaux associés](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+
+    > [!NOTE]
+    > Supprimer le jeu de données partagé dans cet espace de travail ne supprime pas le jeu de données. Cette opération supprime simplement la référence à celui-ci.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

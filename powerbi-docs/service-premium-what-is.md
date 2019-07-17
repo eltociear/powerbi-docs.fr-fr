@@ -8,28 +8,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 07/06/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c2f867140c5a717c80d39db75b3a54e40bd1e34
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 21518d2c5160c8e5a696c193d3d6f4d352a02271
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721055"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596549"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
 Power BI Premium fournit à votre organisation des ressources dédiées et améliorées sur lesquelles exécuter le service Power BI. Par exemple :
 
-- Une mise à l’échelle et des performances améliorées
-- La possibilité d’accorder des licences selon la capacité
-- L’unification des fonctionnalités Business Intelligence à l’échelle de l’entreprise et en libre-service
-- L’extension du service BI local avec Power BI Report Server
-- La prise en charge de la résidence des données par région (multigéographique)
-- Le partage des données sans nécessiter de licence pour chaque utilisateur
+> [!div class="checklist"]
+> * Une mise à l’échelle et des performances améliorées
+> * La possibilité d’accorder des licences selon la capacité
+> * L’unification des fonctionnalités Business Intelligence à l’échelle de l’entreprise et en libre-service
+> * L’extension du service BI local avec Power BI Report Server
+> * La prise en charge de la résidence des données par région (multigéographique)
+> * Le partage des données sans nécessiter de licence pour chaque utilisateur
 
-Cet article est une vue d’ensemble et n’a pas pour objet de détailler toutes les fonctionnalités de Power BI Premium. Toutefois, lorsque cela se révèle pertinent, il fournit des liens vers des articles comprenant des informations plus détaillées.
+Cet article présente les fonctionnalités clés de Power BI Premium. Toutefois, lorsque cela se révèle pertinent, il fournit des liens vers des articles comprenant des informations plus détaillées.
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et gestion des licences
 
@@ -38,9 +39,9 @@ Power BI Premium est disponible via un abonnement Office 365 au niveau du loca
 - Les références SKU **EM** (EM1-EM3), pour l’incorporation. Nécessitent un engagement annuel, avec une facturation mensuelle. Les références SKU EM1 et EM2 sont disponibles uniquement par le biais d’un programme de licence en volume. Vous ne pouvez pas les acheter directement.
 - Les références SKU **P** (P1-P3), pour l’incorporation et les fonctionnalités et d’entreprise. Nécessitent un engagement mensuel ou annuel, une facturation mensuelle, et incluent une licence permettant d’installer localement Power BI Report Server.
 
-Une autre approche consiste à acheter un abonnement **Azure Power BI Embedded**, qui comprend une seule famille de références SKU **A** (A1-A6), pour l’incorporation et le test de la capacité uniquement. Toutes les références SKU fournissent des v-cores pour créer des capacités. Toutefois, les références SKU EM ne peuvent être utilisées que pour l’incorporation de petite échelle. Les références SKU EM1, EM2, A1 et A2 comprenant moins de quatre v-cores ne sont pas exécutées sur une infrastructure dédiée.
+Une autre approche consiste à acheter un abonnement **Azure Power BI Embedded**, qui comprend une seule famille de références SKU **A** (A1-A6), pour l’incorporation et le test de la capacité uniquement. Toutes les références SKU fournissent des v-cores pour créer des capacités. Toutefois, les références SKU EM ne peuvent être utilisées que pour l’incorporation de petite échelle. Les références SKU EM1, EM2, A1 et A2 comprenant moins de quatre v-cores ne s’exécutent pas sur une infrastructure dédiée.
 
-Bien que cet article porte principalement sur les références SKU P, une grande partie des instructions concernent également les références SKU A. Contrairement aux références SKU des abonnements Premium, les références SKU Azure n’impliquent aucune durée d’engagement et sont facturées à l’heure. Ils sont entièrement flexibles, vous permettant d’effectuer un scale-up, un scale-down, une suspension, une reprise et une suppression à tout moment. 
+Bien que cet article porte principalement sur les références SKU P, une grande partie des instructions concernent également les références SKU A. Contrairement aux références SKU des abonnements Premium, les références SKU Azure n’impliquent aucune durée d’engagement et sont facturées à l’heure. Elles sont entièrement flexibles, vous permettant d’effectuer un scale-up, un scale-down, une pause, une reprise et une suppression. 
 
 Azure Power BI Embedded ne rentre pas dans le cadre de cet article. Toutefois, il est décrit dans la section [Approches de test](service-premium-capacity-optimize.md#testing-approaches) de l’article « Optimisation des capacités Premium » comme étant une option pratique et économique pour tester et mesurer les charges de travail. Pour plus d’informations sur les références SKU Azure, consultez la [documentation Azure Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/).
 
@@ -52,7 +53,7 @@ Les abonnements Power BI Premium peuvent être achetés par les administrateurs
 
 Avec Power BI Premium, vous bénéficiez de *capacités dédiées*. Contrairement à une capacité partagée où les charges de travail sont exécutées sur des ressources de calcul partagées avec d’autres clients, la capacité dédiée est utilisée exclusivement par une même organisation. Celle-ci est isolée et comprend des ressources de calcul dédiées qui offrent des performances fiables et constantes pour le contenu hébergé. 
 
-Les espaces de travail résident sur des capacités. Chaque utilisateur Power BI dispose d’un espace de travail personnel nommé **Mon espace de travail**. Vous pouvez créer d’autres espaces de travail pour la collaboration et le déploiement. Ces espaces sont appelés **espaces de travail d’application**. Par défaut, les espaces de travail, qui incluent également les espaces de travail personnels, sont créés dans une capacité partagée. Si vous avez des capacités Premium, vous pouvez leur affecter aussi bien des espaces de travail personnels que des espaces de travail d’application.
+Les espaces de travail résident sur des capacités. Chaque utilisateur Power BI dispose d’un espace de travail personnel nommé **Mon espace de travail**. Vous pouvez créer d’autres espaces de travail appelés **espaces de travail d’application** pour permettre la collaboration. Par défaut, les espaces de travail, qui incluent également les espaces de travail personnels, sont créés dans une capacité partagée. Si vous avez des capacités Premium, vous pouvez leur affecter aussi bien des espaces de travail personnels que des espaces de travail d’application.
 
 ### <a name="capacity-nodes"></a>Nœuds de capacité
 
@@ -60,7 +61,7 @@ Comme nous l’avons vu dans la section [Abonnements et gestion des licences](#s
 
 Le traitement est effectué par un nombre défini de v-cores, répartis équitablement entre le back-end et le front-end.
 
-Les **v-cores back-end** gèrent l’essentiel des fonctionnalités Power BI : traitement des requêtes, gestion du cache, exécution des services R, actualisation des modèles, traitement en langage naturel (questions-réponses), et rendu côté serveur des rapports et des images. Les v-cores back-end reçoivent une quantité définie de mémoire, qui est principalement utilisée pour les modèles d’hôte, également appelés « jeux de données actifs ».
+Les **v-cores back-end** gèrent l’essentiel des fonctionnalités Power BI : traitement des requêtes, gestion du cache, exécution des services R, actualisation des modèles, traitement en langage naturel (questions-réponses), et rendu côté serveur des rapports et des images. Les v-cores back-end reçoivent une quantité fixe de mémoire, qui est principalement utilisée pour héberger les modèles, également appelés « jeux de données actifs ».
 
 Les **v-cores front-end** assurent la gestion des documents du service web, des tableaux de bord et des rapports, la gestion des droits d’accès, la planification, les API, les chargements et téléchargements et, plus généralement, tout ce qui concerne l’expérience utilisateur.
 
@@ -100,9 +101,9 @@ Pour être interrogés ou actualisés, les modèles d’importation doivent êtr
 
 Les modèles d’importation sont donc chargés et supprimés de la mémoire en fonction de l’utilisation. Un modèle d’importation est chargé lorsqu’il est interrogé (opération interactive) et pas encore en mémoire, ou lorsqu’il doit être actualisé (opération d’arrière-plan).
 
-Le processus qui consiste à supprimer un modèle de la mémoire est appelé *éviction*. C’est une opération que Power BI peut effectuer rapidement selon la taille des modèles. Si la capacité ne subit aucune pression liée à la mémoire, les modèles sont simplement chargés en mémoire et y restent. Toutefois, lorsque la mémoire n’est pas suffisante pour charger un modèle, le service Power BI doit d’abord libérer de la mémoire. Il libère de la mémoire en détectant les modèles qui sont devenus inactifs. Pour cela, il recherche ceux qui n’ont pas été utilisés au cours des trois dernières minutes \[[1](#endnote-1)\] en vue de les supprimer. S’il n’y a aucun modèle inactif à supprimer, le service Power BI cherche à supprimer les modèles qui ont été chargés pour des opérations d’arrière-plan. En dernier recours, après 30 secondes de tentatives infructueuses \[[1](#endnote-1)\], l’opération interactive est mise en échec. Dans ce cas, l’utilisateur du rapport est averti de l’échec et il est invité à réessayer ultérieurement. Dans certains cas, les modèles peuvent être déchargés de la mémoire à cause des opérations de service.
+Le processus qui consiste à supprimer un modèle de la mémoire est appelé *éviction*. C’est une opération que Power BI peut effectuer rapidement selon la taille des modèles. Si la capacité ne subit aucune pression liée à la mémoire, les modèles sont simplement chargés en mémoire et y restent. Toutefois, lorsque la mémoire n’est pas suffisante pour charger un modèle, le service Power BI doit d’abord libérer de la mémoire. Il libère de la mémoire en détectant les modèles qui sont devenus inactifs. Pour cela, il recherche ceux qui n’ont pas été utilisés au cours des trois dernières minutes \[[1](#endnote-1)\] et les supprime. S’il n’y a aucun modèle inactif à supprimer, le service Power BI cherche à supprimer les modèles qui ont été chargés pour des opérations d’arrière-plan. En dernier recours, après 30 secondes de tentatives infructueuses \[[1](#endnote-1)\], l’opération interactive est mise en échec. Dans ce cas, l’utilisateur du rapport est averti de l’échec et il est invité à réessayer ultérieurement. Dans certains cas, les modèles peuvent être déchargés de la mémoire à cause des opérations de service.
 
-Il est important de souligner que l’éviction des jeux de données est un comportement normal et même attendu. Il s’efforce d’optimiser l’utilisation de la mémoire en chargeant et en déchargeant des modèles dont les tailles combinées peuvent dépasser la quantité de mémoire disponible. Ce comportement est prévu et les utilisateurs du rapport en sont informés. Un taux élevé d’évictions ne signifie pas nécessairement que la capacité ne contient pas suffisamment de ressources. Cela peut toutefois constituer un problème si la réactivité des actualisations ou des requêtes souffre de ces évictions.
+Il est important de souligner que l’éviction des jeux de données est un comportement normal et même attendu. Il s’efforce d’optimiser l’utilisation de la mémoire en chargeant et en déchargeant des modèles dont les tailles combinées peuvent dépasser la quantité de mémoire disponible. Ce comportement est défini par conception et est transparent pour les utilisateurs du rapport. Un taux élevé d’évictions ne signifie pas nécessairement que la capacité ne contient pas suffisamment de ressources. Cela peut toutefois constituer un problème si la réactivité des actualisations ou des requêtes souffre de ces évictions.
 
 L’actualisation des modèles d’importation sollicite toujours beaucoup la mémoire, car les modèles doivent être chargés en mémoire. Une quantité supplémentaire de mémoire est nécessaire au traitement. Une actualisation complète peut utiliser environ le double de la mémoire nécessaire au modèle. Cela garantit que le modèle peut être interrogé même pendant le traitement, puisque les requêtes sont envoyées au modèle existant jusqu’à ce que l’actualisation soit terminée et que les données du nouveau modèle soient disponibles. L’actualisation incrémentielle nécessite moins de mémoire et peut se terminer plus rapidement. Elle peut donc réduire considérablement la pression exercée sur les ressources de la capacité. Les actualisations de modèles peuvent elles aussi solliciter le processeur de manière importante, en particulier pour les modèles qui contiennent des transformations Power Query complexes, ou des tables/colonnes calculées qui sont complexes ou basées sur des tables volumineuses.
 
@@ -175,7 +176,7 @@ Le tableau suivant décrit les références SKU recommandées pour différentes 
    |P2    | < 6 Go        |
    |P3, P4, P5    | jusqu’à 10 Go   |
 
-La référence (SKU) A4 Power BI Embedded est égale à la référence P1, A5 = P2 et A6 = P3. Notez que la publication de grands modèles pour des références SKU A et EM peut retourner des erreurs qui ne sont pas spécifiques à l’erreur de limitation de taille de modèle dans la capacité partagée. Les erreurs d’actualisation pour les grands modèles dans les références SKU A et EM sont susceptibles de pointer vers des expirations de délai. 
+La référence (SKU) A4 Power BI Embedded est égale à la référence P1, A5 = P2 et A6 = P3. La publication de grands modèles pour des références SKU A et EM peut retourner des erreurs qui ne sont pas spécifiques à l’erreur de limitation de taille du modèle dans la capacité partagée. Les erreurs d’actualisation pour les grands modèles dans les références SKU A et EM sont susceptibles de pointer vers des expirations de délai. 
 
 Vos fichiers .pbix contiennent des données dans un *format fortement compressé*. Les données seront probablement développées plusieurs fois lors de leur chargement en mémoire, et dès lors peuvent être encore développées plusieurs fois au moment de l’actualisation.
 

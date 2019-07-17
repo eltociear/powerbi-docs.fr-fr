@@ -7,29 +7,29 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 17a8e1c9e0d46a56d6b6ff3e46c0fda6da8ffe12
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816649"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567848"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Utiliser des jeux de données dans des espaces de travail (préversion)
 
-Le décisionnel est une activité de collaboration. Il est important de définir des jeux de données normalisés qui peuvent constituer la « source de vérité ». La découverte et la réutilisation de ces jeux de données normalisés sont un atout primordial. Quand les modélisateurs de données expérimentés de votre organisation créent et partagent des jeux de données optimisés, les créateurs de rapports peuvent démarrer avec ces jeux de données pour générer des rapports précis. Votre organisation dispose alors de données cohérentes pour prendre des décisions ainsi que d’une culture de données saine.
+Le décisionnel est une activité de collaboration. Il est important de définir des jeux de données normalisés qui peuvent constituer la « source de vérité ». La découverte et la réutilisation de ces jeux de données normalisés sont donc primordiales. Quand les modélisateurs de données expérimentés de votre organisation créent et partagent des jeux de données optimisés, les créateurs de rapports peuvent démarrer avec ces jeux de données pour générer des rapports précis. Votre organisation dispose alors de données cohérentes pour prendre des décisions ainsi que d’une culture de données saine.
 
 ![Sélectionner un jeu de données partagé](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Power BI permet aux créateurs de jeux de données de certifier ou promouvoir facilement des jeux de données afin que d’autres personnes puissent les découvrir. Les auteurs de rapports trouvent ensuite des jeux de données officiels de qualité qu’ils peuvent utiliser partout où ils se trouvent dans Power BI. Les propriétaires de jeux de données peuvent garder le contrôle des utilisateurs autorisés à accéder à leurs données à l’aide de l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Les administrateurs de locataires ont un nouveau paramètre de locataire pour [régir l’utilisation des jeux de données dans des espaces de travail](service-datasets-admin-across-workspaces.md).
+Dans Power BI, les créateurs de jeux de données peuvent *certifier* ou *promouvoir* des jeux de données afin que d’autres personnes puissent les découvrir. De cette façon, les auteurs de rapports savent quel jeu de données est officiel et de bonne qualité, et ils peuvent utiliser ces jeux de données partout où ils créent dans Power BI. Les propriétaires de jeux de données peuvent garder le contrôle des utilisateurs autorisés à accéder à leurs données à l’aide de l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Les administrateurs de locataires ont un nouveau paramètre de locataire pour [régir l’utilisation des jeux de données dans des espaces de travail](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Partage de jeux de données et nouvelle expérience d’espace de travail
 
 La génération de rapports basés sur des jeux de données dans divers espaces de travail ainsi que la copie des rapports dans différents espaces de travail sont étroitement liées à la [nouvelle expérience d’espace de travail](service-create-the-new-workspaces.md) :
 
-- Dans le service, lorsque vous ouvrez le catalogue de jeux de données à partir d’une nouvelle expérience d’espace de travail, le catalogue affiche les jeux de données qui sont dans votre espace de travail personnel et dans les espaces de travail de nouvelle expérience. 
+- Dans le service, quand vous ouvrez le catalogue de jeux de données à partir d’une nouvelle expérience d’espace de travail, le catalogue montre les jeux de données qui sont dans votre espace de travail personnel et dans d’autres espaces de travail de nouvelle expérience. 
 - Lorsque vous ouvrez le catalogue de jeux de données à partir d’un espace de travail classique, vous voyez uniquement les jeux de données dans cet espace de travail, et non ceux des autres espaces de travail.
 - Dans Power BI Desktop, vous pouvez publier des rapports Live Connect sur différents espaces de travail, tant que leurs jeux de données sont dans les espaces de travail de nouvelle expérience.
 - Lors de la copie de rapports dans des espaces de travail, l’espace de travail cible doit être un espace de travail de nouvelle expérience.
