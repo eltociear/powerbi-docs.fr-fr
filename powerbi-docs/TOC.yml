@@ -1289,8 +1289,6 @@
           href: service-gateway-onprem-indepth.md
         - name: Passerelle de données locale (mode personnel)
           href: service-gateway-personal-mode.md
-        - name: Gérer les utilisateurs et les administrateurs
-          href: service-gateway-manage-admins.md
         - name: Gérer les sources de données
           items:
             - name: Gérer les sources de données
