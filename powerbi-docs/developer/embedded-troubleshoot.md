@@ -110,7 +110,7 @@ Pour résoudre ce problème, vous devez supprimer « oauth2/authorize » à la
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Échec de l’authentification avec AADSTS70002 ou AADSTS50053
 
-** _(AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect)_ **
+** _(AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect)_**
 
 Si vous utilisez à la fois Power BI Embedded et l’authentification directe Azure AD et qu’au moment de vous connecter, vous recevez des messages tels que ***error:unauthorized_client, error_description:AADSTS70002 : Erreur de validation des informations d’identification. AADSTS50053 : Vous avez essayé de vous connecter un trop grand nombre de fois avec un ID d’utilisateur ou un mot de passe incorrect***, cela est dû au fait que l’authentification directe n’est plus utilisée depuis le 14 juin 2018 par défaut.
 
@@ -162,7 +162,7 @@ Pour vérifier le motif de l’erreur, essayez les étapes ci-dessous.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094 : L’octroi nécessite une autorisation de l’administrateur
 
-**_Symptômes :_ **<br>
+**_Symptômes :_**<br>
 Quand un utilisateur non-administrateur tente de se connecter à une application pour la première fois tout en octroyant un consentement, et obtient une des erreurs suivantes :
 
 * Le test de consentement nécessite une autorisation d’accès aux ressources de votre organisation que seul un administrateur peut accorder. Demandez à un administrateur de vous accorder une autorisation d’accès à cette application avant de l’utiliser.
@@ -172,10 +172,10 @@ Quand un utilisateur non-administrateur tente de se connecter à une application
 
 Un utilisateur administrateur peut se connecter et octroyer un consentement.
 
-**_Cause racine :_ **<br>
+**_Cause racine :_**<br>
 Le consentement de l’utilisateur est désactivé pour le locataire.
 
-**_Plusieurs solutions sont possibles :_ **
+**_Plusieurs solutions sont possibles :_**
 
 *Activez le consentement de l’utilisateur pour l’ensemble du locataire (tous les utilisateurs, toutes les applications)*
 

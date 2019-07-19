@@ -12,7 +12,7 @@ ms.custom: seodec18
 ms.date: 04/02/2019
 ms.openlocfilehash: e945e19505d7342cf3ba2236b4811e87a69730ab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710952"
@@ -365,7 +365,7 @@ Examinez le tableau ci-dessous pour déterminer la capacité Power BI Embedded q
 | A5 |16 v-core(s) |8 cœur(s), 50 Go de RAM |8 cœur(s) |60 par seconde |
 | A6 |32 v-core(s) |16 cœur(s), 100 Go de RAM |16 cœur(s) |120 par seconde |
 
-**_Les références SKU A ne vous permettent pas d’accéder à du contenu Power BI avec une licence Power BI GRATUITE._ **
+**_Les références SKU A ne vous permettent pas d’accéder à du contenu Power BI avec une licence Power BI GRATUITE._**
 
 L’utilisation de jetons d’incorporation avec des licences PRO étant destinée aux tests de développement, le nombre de jetons d’incorporation qu’un principal de service ou compte principal Power BI peut générer est limité. Une capacité dédiée nécessite l’incorporation dans un environnement de production. Avec une capacité dédiée, le nombre de jetons incorporés que vous pouvez générer n’est pas limité. Accédez à [Fonctionnalités disponibles](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) pour vérifier la valeur qui indique l’utilisation actuelle de jetons incorporés en pourcentage. Le volume d’utilisation varie en fonction du compte principal.
 
