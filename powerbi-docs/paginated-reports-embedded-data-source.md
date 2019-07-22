@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345503"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270847"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Créer une source de données incorporée pour rapports paginés dans le service Power BI
 
@@ -32,7 +32,7 @@ Pour les sources de données suivantes, utilisez l’option [Connexion SQL Serve
 
 - Jeux de données Power BI Premium
 
-Les rapports paginés se connectent aux sources de données locales par le biais d’une [passerelle Power BI](service-gateway-getting-started.md). Vous configurez la passerelle après avoir publié le rapport sur le service Power BI.
+Les rapports paginés se connectent aux sources de données locales par le biais d’une [passerelle Power BI](service-gateway-onprem.md). Vous configurez la passerelle après avoir publié le rapport sur le service Power BI.
 
 Pour obtenir des informations plus détaillées, consultez [Données de rapport dans le Générateur de rapports Power BI](report-builder-data.md).
 

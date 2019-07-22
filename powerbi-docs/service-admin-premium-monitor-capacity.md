@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 68e21e14227aff538c56951249edbddc249d68eb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
+ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497970"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "68362719"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Superviser les capacités Premium avec l’application
 
@@ -41,7 +41,7 @@ Soyez patient. Quelques minutes sont nécessaires pour installer et actualiser l
 
 Pour vérifier quand votre application Métriques de capacité Premium a été actualisée pour la dernière fois, cliquez sur **Paramètres** > **Jeux de données** > **Métriques de capacité Power BI Premium** > **Historique des actualisations**. 
 
-![Historique des actualisations dans Paramètres](media/settings-refresh-history.png)
+![Historique des actualisations dans Paramètres](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
 
 La dernière actualisation est indiquée. Vous pouvez aussi cliquer sur **Historique des actualisations** pour voir les actualisations planifiées et à la demande.
 
@@ -109,7 +109,7 @@ Le tableau de bord inclut les métriques suivantes :
 
 | Métrique | Description |
 | --- | --- |
-| Flux de données |  Nombre total de flux de données sur tous les espaces de travail de vos capacités.|
+| Dataflows |  Nombre total de flux de données sur tous les espaces de travail de vos capacités.|
 | Total des actualisations | Nombre total d’actualisations au cours des sept derniers jours.|  
 | Durée moyenne des actualisations (minutes) | Le temps nécessaire pour terminer l’actualisation. |
 | Actualise les temps t’attente moyens (minutes) | Le décalage entre l’heure planifiée et le démarrage effectif de l’actualisation.|
@@ -220,7 +220,7 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 | Durées par heure |  Délai d’extraction des données par rapport au délai de traitement et de rendu, divisé en intervalles d’une heure et exprimé en heure UTC. |
 |  |  |
 
-### <a name="dataflows"></a>Flux de données
+### <a name="dataflows"></a>Dataflows
 
 | **Section du rapport** | **Métriques** |
 | --- | --- |
@@ -285,7 +285,7 @@ L’onglet **ID et informations** contient les zones **Capacités**, **Espaces d
 
 | Section du rapport | Métriques |
 | --- | --- |
-| Flux de données | Noms de flux de données, noms d’espaces de travail et ID pour tous les flux de données. |
+| Dataflows | Noms de flux de données, noms d’espaces de travail et ID pour tous les flux de données. |
 |||
 
 ## <a name="monitor-power-bi-embedded-capacity"></a>Surveiller la capacité de Power BI Embedded

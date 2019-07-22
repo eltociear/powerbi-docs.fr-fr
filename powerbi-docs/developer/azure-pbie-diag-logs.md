@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 695d1f219b3438f07125447db04aad3ba971683a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385380"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289865"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Journalisation des diagnostics pour Power BI Embedded dans Azure
 
@@ -22,7 +22,6 @@ Avec les [journaux de diagnostic des ressources Azure](https://docs.microsoft.co
 L’utilisation des Diagnostics peut répondre à certains scénarios, tels que :
 
 * Détection des requêtes longues ou problématiques.
-* Détection des erreurs lorsque vous atteignez la limite de votre capacité.
 * Dérivation des [métriques de capacité](https://powerbi.microsoft.com/blog/power-bi-developer-community-april-update/).
 * Suivi de l’utilisation de jeux de données spécifiques.
 
@@ -127,9 +126,6 @@ La catégorie de moteur indique à la ressource de journaliser les événements 
 | JobID | 0 | ID de travail pour la progression. |
 | ObjectID | 464 | ID d'objet |
 | ObjectType | 802012 | ObjectType |
-| ObjectName | SalesLT Customer | ObjectName |
-| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT Customer | Chemin d’accès de l’objet. Liste de parents séparés par une virgule, commençant par le parent de l'objet. |
-| ObjectReference | <Object><Table>SalesLT Customer</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Référence de l’objet. Codé en XML pour tous les parents, en utilisant des balises pour décrire l'objet. |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Heure à laquelle l'événement s'est terminé. |
 | Durée | 0 | Temps (en millisecondes) pris par l'événement. |
 | SessionType | Utilisateur | Type de session (quelle entité a provoqué l'opération). |
@@ -138,7 +134,6 @@ La catégorie de moteur indique à la ressource de journaliser les événements 
 | Gravité | 0 | Niveau de gravité d'une exception. |
 | Succès | 1 | 1 = réussite. 1 = échec (par exemple, 0 signifie le succès d'une vérification des autorisations, et 0 signifie l'échec de cette vérification). |
 | Error | 0 | Numéro d'erreur d'un événement donné. |
-| TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Données texte associées à l'événement. |
 | ConnectionID | 3 | ID de connexion unique. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID du jeu de données dans lequel l'instruction de l'utilisateur s'exécute. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | GUID de session. |
@@ -146,8 +141,7 @@ La catégorie de moteur indique à la ressource de journaliser les événements 
 | ClientProcessID | null | ID de traitement de l'application cliente. |
 | ApplicationName | null | Nom de l’application cliente qui a créé la connexion au serveur. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | Nom de la ressource de la capacité Power BI Embedded. |
-| RequestParameters |  |  |
-| RequestProperties |  |  |
+
 
 ### <a name="allmetrics"></a>AllMetrics
 
