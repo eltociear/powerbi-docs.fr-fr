@@ -55,7 +55,7 @@
           href: desktop-latest-update.md
         - name: "Affichage Modélisation dans Power\_BI\_Desktop"
           href: desktop-modeling-view.md
-        - name: Agrégations dans Power BI Desktop (préversion)
+        - name: Agrégations dans Power BI Desktop
           href: desktop-aggregations.md
         - name: "Modèles composites dans Power\_BI\_Desktop"
           href: desktop-composite-models.md
@@ -234,7 +234,7 @@
             - name: Types de filtres
               href: power-bi-report-filter-types.md
             - name: Essayer la nouvelle expérience de filtre
-              href: power-bi-report-filter-preview.md
+              href: power-bi-report-filter.md
             - name: Utiliser les mesures rapides
               href: desktop-quick-measures.md
             - name: Utiliser les paramètres Scénarios
@@ -453,6 +453,8 @@
               href: service-support-options.md
             - name: "Dix\_conseils pour obtenir de l’aide"
               href: service-tips-for-finding-help.md
+            - name: Notifications d’interruption de service
+              href: service-interruption-notifications.md
         - name: "Étendre Power\_BI"
           items:
             - name: "Microsoft Flow et Power\_BI"
@@ -685,6 +687,8 @@
           items:
             - name: Afficher un rapport paginé
               href: paginated-reports-view-power-bi-service.md
+            - name: Sources de données prises en charge
+              href: paginated-reports-data-sources.md
             - name: Interagir avec des paramètres
               href: paginated-reports-view-parameters.md
             - name: Inscrire les autres ou vous-même
