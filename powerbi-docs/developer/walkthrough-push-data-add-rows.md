@@ -311,7 +311,7 @@ Ci-après figure le [listing du code complet](#code).
     }
 ```
 
-Même si nous spécifions que nous ** _//obtenons le premier ID_** dans le code ci-dessus, la meilleure chose à faire est de rechercher dans le jeu de données par nom.
+Même si nous spécifions que nous **_//obtenons le premier ID_** dans le code ci-dessus, la meilleure chose à faire est de rechercher dans le jeu de données par nom.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Transmettre des données à un tableau de bord Power BI](walkthrough-push-data.md)  
