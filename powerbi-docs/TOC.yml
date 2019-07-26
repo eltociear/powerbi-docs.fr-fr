@@ -933,6 +933,8 @@
           href: report-builder-planning-report.md
         - name: Données du Générateur de rapports
           href: report-builder-data.md
+        - name: Utiliser des jeux de données partagés Power BI
+          href: report-builder-shared-datasets.md
         - name: Conseils de conception
           href: report-builder-design-tips.md
         - name: 'Tableaux, matrices, listes'
