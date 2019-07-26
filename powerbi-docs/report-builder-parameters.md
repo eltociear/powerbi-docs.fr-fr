@@ -44,13 +44,13 @@ Lorsque vous affichez un rapport avec des paramètres, la barre d’outils de la
   
 1. **Volet des paramètres** La barre d’outils de la visionneuse de rapports affiche une invite et une valeur par défaut pour chaque paramètre. Vous pouvez personnaliser la disposition des paramètres dans le volet des paramètres.  
   
-2. Paramètre **@SalesDate**  Le paramètre @SalesDate est le type de données **DateTime**. L’invite Sélectionner la date apparaît à côté de la zone de texte. Pour modifier la date, tapez une nouvelle date dans la zone de texte ou utilisez le calendrier.  
+2. **@SalesDate paramètre** le paramètre @SalesDate est de type de données **DateTime**. L’invite Sélectionner la date apparaît à côté de la zone de texte. Pour modifier la date, tapez une nouvelle date dans la zone de texte ou utilisez le calendrier.  
   
-3. Paramètre **@ShowAll**  Le paramètre @ShowAll est le type de données **Boolean**. Utilisez les cases d’option pour spécifier **True** ou **False**.  
+3. **@ShowAll paramètre** le paramètre @ShowAll est de type de données **booléenne**. Utilisez les cases d’option pour spécifier **True** ou **False**.  
   
 4. **Poignée Afficher ou masquer la zone de paramètres** Dans la barre d’outils de la visionneuse de rapports, cliquez sur cette flèche pour afficher ou masquer le volet des paramètres.  
   
-5. Paramètre **@CategoryQuota**  Le paramètre @CategoryQuota est le type de données **Float**, donc il prend une valeur numérique.  @CategoryQuota est défini pour autoriser plusieurs valeurs.  
+5. **@CategoryQuota paramètre** le paramètre @CategoryQuota est de type de données **Float**, ce qui prend une valeur numérique.  @CategoryQuota est défini pour autoriser plusieurs valeurs.  
   
 6. **Afficher le rapport** Après avoir entré des valeurs de paramètre, cliquez sur **Afficher le rapport** pour exécuter le rapport. Si tous les paramètres ont des valeurs par défaut, le rapport s’exécute automatiquement au premier affichage.  
   
