@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7735ce3d6d28f51ca95efbe12394c2e0cb2cba29
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fcef4b7bc9feaee0912a8e0e9ea8098d52c66e3a
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564939"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289830"
 ---
-# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Configurer la prise en charge de plusieurs zones géographiques pour Power BI Premium
+# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Configurer la prise en charge multigéographique pour Power BI Premium
 
 La fonctionnalité de zones géographiques multiples de Power BI Premium permet à des clients multinationaux de répondre à des exigences de résidence des données régionales, spécifiques à certains secteurs ou en fonction de l’organisation. En tant que client Power BI Premium vous pouvez déployer du contenu vers des centres de données dans des régions autres que la région d’origine du locataire Power BI. Une zone géographique (géographie) peut contenir plusieurs régions. Par exemple, les États-Unis sont une zone géographique, et les USA Centre-Ouest et les USA Centre Sud sont des régions des États-Unis. Vous pouvez choisir de déployer du contenu vers l’une des zones géographiques suivantes :
 
@@ -68,7 +68,7 @@ Ces éléments restent dans la région d’origine pour le locataire :
 - Autorisations
 - Informations d'identification de jeux de données
 
-## <a name="view-capacity-regions"></a>Voir les régions de capacité
+## <a name="view-capacity-regions"></a>Voir les régions de la capacité
 
 Dans le portail d’administration, vous pouvez afficher toutes les capacités de votre client Power BI et les régions où elles se trouvent actuellement.
 
@@ -94,7 +94,7 @@ Vous pouvez prendre des espaces de travail en dehors de la capacité Multi-Géo 
 - Une requête de mise en cache stockée dans une région distante reste dans cette région au repos. Toutefois, les autres données en transit peuvent aller et venir entre des zones géographiques multiples.
 - Lors du déplacement de données d’une région à une autre dans un environnement de zones géographiques multiples, les données source peuvent rester dans la région à partir de laquelle les données ont été déplacées pendant 30 jours maximum. Pendant ce temps, les utilisateurs finaux n’y ont pas accès. Elles sont supprimées de cette région et détruites pendant la période de 30 jours.
 - Les zones géographiques multiples ne sont généralement pas à l’origine de performances meilleures. Le chargement de rapports et de tableaux de bord implique toujours des requêtes à la région d’origine pour les métadonnées.
-- La fonctionnalité des [dataflows](service-dataflows-overview.md) (en préversion) n’est pas prise en charge dans plusieurs zones géographiques pour l’instant.
+- La fonctionnalité des [dataflows](service-dataflows-overview.md) n’est pas prise en charge en mode multigéographique pour l’instant.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

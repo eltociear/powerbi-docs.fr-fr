@@ -1,143 +1,106 @@
 ---
-title: Passerelle de données locale (mode personnel)
-description: Passerelle de données pour Power BI que les utilisateurs peuvent utiliser pour se connecter aux données locales
+title: Utiliser des passerelles personnelles dans Power BI
+description: Fournit des informations sur la passerelle de données locale (mode personnel) pour Power BI que les utilisateurs peuvent utiliser pour se connecter à des données locales.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/14/2017
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef8146501969697b15a3d1ff3cae2c605cabaacc
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 93d2c4358b0f4b4090a2c8bea3daa8eec71c4982
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216812"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270930"
 ---
-# <a name="on-premises-data-gateway-personal-mode"></a>Passerelle de données locale (mode personnel)
-Vous pouvez utiliser des sources de données locales et créer des rapports et des tableaux de bord Power BI à l’aide d’une passerelle. Une **passerelle** est un logiciel qui facilite l’accès aux données stockées sur un réseau local privé, puis vous permet d’utiliser ces données dans les services en ligne comme le **service Power BI**. La **passerelle de données locale (mode personnel)** est une mise à jour récemment publiée de la passerelle Power BI qui permet aux utilisateurs d’installer une passerelle sur leur propre ordinateur et d’accéder aux données locales.
+# <a name="use-personal-gateways-in-power-bi"></a>Utiliser des passerelles personnelles dans Power BI
 
-![](media/service-gateway-personal-mode/gateway-personal-mode_00.png)
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-> [!NOTE]
-> La **passerelle de données locale (mode personnel)** remplace la version précédente de la passerelle personnelle, appelée **Power BI Gateway - Personal**. La passerelle personnelle précédente fonctionnera jusqu’au 31 juillet 2017. Consultez les sections ci-dessous pour plus d’informations sur la mise à jour vers la nouvelle version.
-> 
-> 
-
-## <a name="features-of-the-on-premises-data-gateway-personal-mode"></a>Caractéristiques de la passerelle de données locale (mode personnel)
-Avec la publication de la **passerelle de données locale (mode personnel)**, de nombreuses améliorations et fonctionnalités sont à présent disponibles. Dans la version précédente de la passerelle personnelle (appelée **Passerelle Power BI - Personal**), son implémentation imposait certaines limitations. Comme pour de nombreux produits Power BI, nous avons pris en compte les besoins et les demandes des clients et analysé l’utilisation qu’ils faisaient du produit. Par conséquent, la **passerelle de données locale (mode personnel)** a été totalement repensée et comprend les améliorations et les fonctionnalités suivantes :
-
-* **Amélioration de la fiabilité** : la nouvelle version de la passerelle personnelle gagne en fiabilité par rapport à la version antérieure, grâce à des améliorations dans le code et dans la structure.
-* **Amélioration de l’extensibilité** : dans le cadre des améliorations logicielles structurelles, des fonctionnalités supplémentaires peuvent facilement être ajoutées à la passerelle personnelle dès qu’elles sont disponibles.
-* **Supprimer la passerelle personnelle à partir du service Power BI** : avec la nouvelle version, vous pouvez maintenant supprimer votre passerelle personnelle depuis le **service Power BI**.
-* **Journaux de configuration et de service** : la nouvelle version vous permet d’exporter facilement les journaux de configuration et de service dans un fichier .zip, en un seul clic.
-
-## <a name="installing-on-premises-data-gateway-personal-mode"></a>Installation de la passerelle de données locale (mode personnel)
-Pour installer la **passerelle de données locale (mode personnel)** sans disposer de la version précédente de la passerelle, sélectionnez l’icône d’engrenage dans le **service Power BI** et sélectionnez **Passerelle de données**.
-
-![](media/service-gateway-personal-mode/gateway-personal-mode_02.png)
-
-Vous pouvez également télécharger la passerelle sur [cet emplacement](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409). Vous pouvez suivre les étapes d’installation, et étant donné que le processus d’installation vous permet d’installer n’importe quelle version de la passerelle (la passerelle standard, qui peut être partagée avec d’autres personnes, ou le mode personnel), sélectionnez bien **passerelle de données locale (mode personnel)** lorsque vous êtes invité à choisir la version de la passerelle que vous souhaitez installer.
-
-### <a name="updating-from-the-previous-personal-gateway"></a>Mise à jour à partir de la passerelle personnelle précédente
-Si la **Passerelle Power BI - Personal** est déjà installée, vous êtes invité à installer la nouvelle version de la passerelle personnelle lorsque vous affichez **Jeux de données** sous **Paramètres** dans le **service Power BI**.
-
-![](media/service-gateway-personal-mode/gateway-personal-mode_03.png)
-
-Lorsque vous sélectionnez un jeu de données, puis que vous sélectionnez **Connexion à la passerelle**, vous êtes averti qu’une nouvelle version de la passerelle personnelle est disponible. Sélectionnez **Installer maintenant**.
-
-![](media/service-gateway-personal-mode/gateway-personal-mode_04.png)
+La passerelle de données locale (mode personnel) est une version de la passerelle de données locale qui fonctionne seulement avec Power BI. Une passerelle personnelle permet aux utilisateurs d’installer une passerelle sur leur propre ordinateur et d’accéder ainsi à des données locales.
 
 > [!NOTE]
-> Si vous utilisez la version précédente de **Power BI Gateway - Personal**  comme processus avec élévation de privilèges, veillez à démarrer le processus d’installation de la nouvelle passerelle avec l’élévation de privilèges, afin que les informations d’identification de votre jeu de données puissent être automatiquement mises à jour. Sinon, vous devez mettre à jour manuellement les informations d’identification du jeu de données.
-> 
-> 
+> Vous ne pouvez avoir qu’une seule passerelle en mode personnel en cours d’exécution pour chaque utilisateur Power BI. Si vous installez une autre passerelle en mode personnel pour le même utilisateur, même sur un autre ordinateur, l’installation la plus récente remplace la précédente installation.
 
-Vous êtes alors guidé dans le processus de mise à jour, à la suite duquel vous voyez que l’installation a réussi. Ne fermez pas encore la passerelle, il reste une dernière étape.
+## <a name="on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode"></a>Passerelle de données locale et passerelle de données locale (mode personnel)
 
-![](media/service-gateway-personal-mode/gateway-personal-mode_05.png)
+Le tableau suivant décrit les différences entre une passerelle de données locale et une passerelle de données locale (mode personnel).
 
-La voici. Une fois la nouvelle passerelle personnelle installée (le dernier écran d’installation restant encore visible), connectez-vous au **service Power BI** et attendez de voir que la passerelle est en ligne, comme présenté dans l’image suivante.
+|   |Passerelle de données locale | Passerelle de données locale (mode personnel) |
+| ---- | ---- | ---- |
+|Services cloud pris en charge |Power BI, PowerApps, Azure Logic Apps, Microsoft Flow, Azure Analysis Services, Flux de données |Power BI |
+|S’exécute |Comme configuré par les utilisateurs qui ont accès à la passerelle |En tant que vous-même pour l’authentification Windows et comme configuré par vous d’autres types d’authentification |
+|Installation seulement en tant qu’administrateur de l’ordinateur |Oui |Non |
+|Gestion centralisée de la passerelle et de la source de données |Oui |Non |
+|Importer des données et planifier l’actualisation |Oui |Oui |
+|Prise en charge de DirectQuery |Oui |Non |
+|Prise en charge de LiveConnect pour Analysis Services |Oui |Non |
 
-![](media/service-gateway-personal-mode/gateway-personal-mode_06.png)
+## <a name="install-the-on-premises-data-gateway-personal-mode"></a>Installer la passerelle de données locale (mode personnel)
 
-Si vous avez mis à jour la passerelle personnelle sur l’ordinateur sur lequel la passerelle précédente est installée, vos informations d’identification sont automatiquement mises à jour et toutes les activités d’actualisation passent par la nouvelle passerelle. Si la passerelle précédente a été installée sur un autre ordinateur, vous êtes invité à mettre à jour vos informations d’identification sur certains jeux de données. Dans l’image précédente, notez la liste des jeux de données dans la fenêtre : cette liste contient les jeux de données qui nécessitent une mise à jour éventuelle des informations d’identification. Chaque jeu de données répertorié est un lien direct sur lequel vous cliquez pour mettre à jour vos informations d’identification.
+Pour installer la passerelle de données locale (mode personnel) :
 
-C’est tout - ou presque. Une fois la nouvelle passerelle installée, vous n’avez plus besoin de la version précédente sur votre ordinateur. Vous pouvez donc la désinstaller. Recherchez **Passerelle Power BI - Personal** sur votre ordinateur et désinstallez cette version.
+1. [Téléchargez la passerelle de données locale](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
 
-### <a name="determining-which-version-of-the-personal-gateway-you-have-installed"></a>Détermination de la version de la passerelle personnelle installée
-Pour déterminer la version de la passerelle personnelle actuellement installée, procédez comme suit :
+2. Dans le programme d’installation, sélectionnez la passerelle de données locale (mode personnel), puis sélectionnez le bouton **Suivant**.
 
-* La version précédente de la passerelle personnelle est appelée **Passerelle Power BI - Personal** et utilise l’icône Power BI dans sa boîte de dialogue d’installation.
-* La nouvelle version de la passerelle personnelle est appelée **passerelle de données locale (mode personnel)** et utilise l’icône de la passerelle (il s’agit d’un nuage avec une flèche vers le bas).
+   ![Sélectionner la passerelle de données locale (mode personnel)](media/service-gateway-personal-mode/personal-gateway-select.png)
 
-Vous pouvez ouvrir **Ajout/Suppression de programmes** et voir si **Passerelle Power BI - Personal** s’affiche dans la liste. Si c’est le cas, vous disposez de la version précédente de la passerelle personnelle.
+Une fois que l’installation est terminée et que vous vous êtes connecté, vous voyez l’écran suivant.
+
+![Installation réussie de la passerelle de données locale (mode personnel)](media/service-gateway-personal-mode/personal-gateway-complete.png)
 
 ## <a name="using-fast-combine-with-the-personal-gateway"></a>Utilisation de Fast Combine avec la passerelle personnelle
-Si vous utilisiez **Fast Combine** avec la passerelle précédente, vous devez procéder comme suit pour réactiver **Fast Combine** pour que ce composant fonctionne avec la **passerelle de données locale (mode personnel)**  :
+
+La fonctionnalité Combinaison rapide sur une passerelle personnelle vous permet d’ignorer les niveaux de confidentialité spécifiés lors de l’exécution des requêtes. Pour que Combinaison rapide fonctionne avec la passerelle de données locale (mode personnel) :
 
 1. À l’aide de l’Explorateur de fichiers, ouvrez le fichier suivant :
-   
-   ```
-   %localappdata%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
-   ```
+
+   `%localappdata%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config`
+
 2. En bas du fichier, ajoutez le texte suivant :
-   
+
     ```xml
-       <setting name="EnableFastCombine" serializeAs="String">
+    <setting name="EnableFastCombine" serializeAs="String">
        <value>true</value>
     </setting>
     ```
+
 3. Une fois que vous avez effectué cette opération, le paramètre est actif environ une minute plus tard. Pour vérifier s’il fonctionne correctement, essayez une actualisation à la demande dans le **service Power BI** pour vérifier si **Fast Combine** fonctionne.
 
-## <a name="limitations-and-considerations"></a>Considérations et limitations
-Il existe quelques points à prendre en compte lorsque vous utilisez la **passerelle de données locale (mode personnel)**, comme décrit dans la liste suivante.
-
-* Si vous utilisez **Windows Hello** ou un code confidentiel pour vous connecter à Windows, vous pouvez rencontrer l’erreur suivante : 
-  * *Le compte d’utilisateur que vous avez sélectionné ne correspond pas à la configuration requise de l’application. Veuillez utiliser un autre compte.*
-  * Pour corriger cette erreur, sélectionnez *Utiliser un autre compte* et connectez-vous à nouveau. 
-
-Les sources de données suivantes ne sont actuellement pas prises en charge par la **passerelle de données locale (mode personnel)**  :
-
-* ADO.NET 
-* CurrentWorkbook
-* FTP
-* HDFS
-* SAP BusinessObjects         
-* Spark
-
-La prise en charge de Spark est prévue pour la seconde moitié de l’année 2017.
-
 ## <a name="frequently-asked-questions-faq"></a>Forum Aux Questions
-* Puis-je exécuter la **passerelle de données locale (mode personnel)** côte à côte avec la **passerelle de données locale** (version Enterprise de la passerelle) ?
+
+**Question :** Puis-je exécuter la **passerelle de données locale (mode personnel)** côte à côte avec la **passerelle de données locale** (version Enterprise de la passerelle) ?
   
-  * **Réponse** : oui, avec la nouvelle version, ces deux versions peuvent fonctionner simultanément.
-* Est-il possible d’utiliser la **passerelle de données locale (mode personnel)** en tant que service ?
+**Réponse :** Oui, les deux peuvent s’exécuter simultanément.
+
+**Question :** Est-il possible d’utiliser la **passerelle de données locale (mode personnel)** en tant que service ?
   
-  * **Réponse** : Non. La **passerelle de données locale (mode personnel)** peut uniquement être exécutée en tant qu’application. Si vous devez utiliser la passerelle en tant que service et/ou en mode administrateur, utilisez la [**passerelle de données locale** ](service-gateway-onprem.md) (version Enterprise de la passerelle).
-* Quelle est la fréquence de mise à jour de la **passerelle de données locale (mode personnel)**  ?
+**Réponse :** Non. La **passerelle de données locale (mode personnel)** peut uniquement être exécutée en tant qu’application. Si vous devez utiliser la passerelle en tant que service et/ou en mode administrateur, utilisez la [**passerelle de données locale** ](/data-integration/gateway/service-gateway-onprem) (version Enterprise de la passerelle).
+
+**Question :** Quelle est la fréquence de mise à jour de la **passerelle de données locale (mode personnel)**  ?
   
-  * **Réponse** : nous prévoyons de mettre à jour la passerelle tous les mois.
-* Pourquoi suis-je invité à mettre à jour mes informations d’identification ?
+**Réponse :** nous prévoyons de mettre à jour la passerelle tous les mois.
+
+**Question :** Pourquoi suis-je invité à mettre à jour mes informations d’identification ?
   
-  * **Réponse** : plusieurs situations peuvent déclencher une demande d’informations d’identification. La plus courante est que vous avez réinstallé la **passerelle de données locale (mode personnel)** sur un ordinateur différent de celui sur lequel vous avez installé votre **Passerelle Power BI - Personal**. Il peut également s’agir d’un problème dans la source de données et Power BI n’a pas pu effectuer le test de connexion, le délai d’attente a été dépassé ou une erreur système s’est produite. Vous pouvez mettre à jour vos informations d’identification dans le **service Power BI** en accédant à l’**icône d’engrenage** et en sélectionnant **Paramètres**, puis **Jeux de données**. Recherchez ensuite le jeu de données en question et cliquez sur *Mettre à jour les informations d’identification*.
-* Pendant combien de temps ma passerelle personnelle est-elle hors connexion pendant la mise à niveau ?
+**Réponse :** plusieurs situations peuvent déclencher une demande d’informations d’identification. La plus courante est que vous avez réinstallé la **passerelle de données locale (mode personnel)** sur un ordinateur différent de celui sur lequel vous avez installé votre **Passerelle Power BI - Personal**. Il peut également s’agir d’un problème dans la source de données et Power BI n’a pas pu effectuer le test de connexion, le délai d’attente a été dépassé ou une erreur système s’est produite. Vous pouvez mettre à jour vos informations d’identification dans le **service Power BI** en accédant à l’**icône d’engrenage** et en sélectionnant **Paramètres**, puis **Jeux de données**. Recherchez ensuite le jeu de données en question, puis sélectionnez **Informations d’identification de la source de données**.
+
+**Question :** Pendant combien de temps ma passerelle personnelle est-elle hors connexion pendant la mise à niveau ?
   
-  * **Réponse** : la mise à niveau de la passerelle personnelle vers la nouvelle version ne doit prendre que quelques minutes. 
-* Que se passe-t-il si je ne migre pas vers la nouvelle passerelle personnelle avant le 31 juillet 2017 ?
+**Réponse :** la mise à niveau de la passerelle personnelle vers la nouvelle version ne doit prendre que quelques minutes.
+
+**Question :** J’utilise des scripts R et Python. Est-ce qu’ils sont pris en charge ?
   
-  * **Réponse** : si vous actualisez vos rapports avec la passerelle actuelle, vos actualisations s’arrêteront. La seule façon de créer une nouvelle planification d’actualisation sera d’installer et de configurer la nouvelle passerelle.
-* J’utilise des scripts R. Est-ce qu’ils sont pris en charge ?
-  
-  * **Réponse** : les scripts R sont pris en charge pour le mode personnel.
-* Pourquoi est-ce que je ne vois pas le message pour mettre à jour la passerelle dans le **service Power BI** ?
-  
-  * **Réponse** : ceci est vraisemblablement dû au fait que vous avez un ou plusieurs jeux de données qui incluent une source de données non prise en charge.
+**Réponse :** Les scripts R et Python sont pris en charge pour le mode personnel.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Configuration des paramètres de proxy pour les passerelles Power BI](service-gateway-proxy.md)  
+
+* [Configuration des paramètres de proxy de la passerelle de données locale](/data-integration/gateway/service-gateway-proxy)  
+
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

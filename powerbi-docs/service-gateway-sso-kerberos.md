@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 1a0ec90d3f6a1de5a542da7ee98f956dfcef67b1
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809284"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325159"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 
@@ -60,14 +60,14 @@ Dans une installation standard, la passerelle s’exécute en tant que compte de
 
 ![Capture d’écran d’un compte de service](media/service-gateway-sso-kerberos/service-account.png)
 
-Pour activer une délégation Kerberos contrainte, la passerelle doit s’exécuter en tant que compte de domaine, sauf si votre instance Azure Active Directory (Azure AD) est déjà synchronisée avec votre instance Active Directory locale (par le biais d’Azure AD DirSync/Connect). Pour basculer vers un compte de domaine, consultez [Basculer la passerelle vers un compte de domaine](#switch-the-gateway-to-a-domain-account), plus loin dans cet article.
+Pour activer une délégation Kerberos contrainte, la passerelle doit s’exécuter en tant que compte de domaine, sauf si votre instance Azure Active Directory (Azure AD) est déjà synchronisée avec votre instance Active Directory locale (par le biais d’Azure AD DirSync/Connect). Pour passer à un compte de domaine, consultez [Changer le compte de service de passerelle](/data-integration/gateway/service-gateway-service-account).
 
 > [!NOTE]
 > Si Azure AD Connect est configuré, et que les comptes d’utilisateur sont synchronisés, le service de passerelle n’a pas besoin d’effectuer des recherches Active AD locales au moment de l’exécution. Vous pouvez utiliser le SID de service local (au lieu d’exiger un compte de domaine) pour le service de passerelle. Les étapes de configuration de la délégation Kerberos contrainte décrites dans cet article sont les mêmes que celle de cette configuration. La différence est qu’elles s’appliquent à l’ordinateur de la passerelle dans Azure AD au lieu du compte de domaine.
 
 ### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>Prérequis 3 : Obtenir des droits d’administrateur de domaine pour configurer les noms de principal du service (SetSPN) et les paramètres de délégation Kerberos contrainte
 
-Un administrateur de domaine doit éviter d’accorder, de façon temporaire ou permanente, à d’autres utilisateurs qui n’ont pas de droits d’administrateur de domaine l’autorisation de configurer des noms de principal de service et une délégation Kerberos. La section suivante explique plus en détail les étapes de configuration recommandées.
+Nous ne recommandons pas qu’un administrateur de domaine accorde de façon temporaire ou permanente à d’autres utilisateurs qui n’ont pas de droits d’administrateur de domaine l’autorisation de configurer des noms de principal de service et une délégation Kerberos. La section suivante explique plus en détail les étapes de configuration recommandées.
 
 ## <a name="configure-kerberos-constrained-delegation-for-the-gateway-and-data-source"></a>Configurer la délégation Kerberos contrainte pour la passerelle et la source de données
 
@@ -99,7 +99,7 @@ La deuxième exigence de configuration a trait aux paramètres de délégation s
 
 Nous devons configurer une délégation Kerberos contrainte avec transit de protocole. Avec une délégation contrainte, vous devez être explicite concernant les services auxquels vous souhaitez déléguer. Par exemple, seul le serveur SQL Server ou votre serveur SAP HANA accepte les appels de délégation du compte de service de passerelle.
 
-Cette section suppose que vous avez déjà configuré les noms de principal du service pour vos sources de données sous-jacentes (par exemple, SQL Server, SAP HANA, Teradata et Spark). Pour savoir comment configurer ces noms de principal du service de serveur de source de données, reportez-vous à la documentation technique du serveur de base de données concerné. Vous pouvez également consulter le billet de blog qui explique [quel nom de principal de service est requis par votre application](https://blogs.msdn.microsoft.com/psssql/2010/06/23/my-kerberos-checklist/).
+Cette section suppose que vous avez déjà configuré les noms de principal du service pour vos sources de données sous-jacentes (par exemple, SQL Server, SAP HANA, Teradata et Spark). Pour savoir comment configurer ces noms de principal du service de serveur de source de données, reportez-vous à la documentation technique du serveur de base de données concerné. Vous pouvez également consulter la section *What SPN does your app require?* du billet de blog [My Kerberos Checklist](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160).
 
 Dans les étapes suivantes, nous supposons un environnement local comprenant deux machines : une machine de passerelle et un serveur de base de données exécutant SQL Server. Nous supposons également les paramètres et noms suivants :
 
@@ -118,21 +118,21 @@ Voici comment configurer les paramètres de délégation :
 
 4. Sélectionnez **N’approuver cet ordinateur que pour la délégation aux services spécifiés** > **Utiliser tout protocole d’authentification**.
 
-6. Sous **Ce compte peut présenter des informations d’identification déléguées à ces services**, sélectionnez **Ajouter**.
+5. Sous **Ce compte peut présenter des informations d’identification déléguées à ces services**, sélectionnez **Ajouter**.
 
-7. Dans la boîte de dialogue Nouveau, sélectionnez **Utilisateurs ou ordinateurs**.
+6. Dans la boîte de dialogue Nouveau, sélectionnez **Utilisateurs ou ordinateurs**.
 
-8. Entrez le compte de service pour la source de données SQL Server (**PBIEgwTest\SQLService**), puis sélectionnez **OK**.
+7. Entrez le compte de service pour la source de données ; par exemple, une source de données SQL Server peut avoir un compte de service comme **PBIEgwTest\SQLService**. Une fois le compte ajouté, sélectionnez **OK**.
 
-9. Sélectionnez le nom de principal du service que vous avez créé pour le serveur de base de données. Dans notre exemple, le nom de principal du service commence par **MSSQLSvc**. Si vous avez ajouté le nom de domaine complet (FQDN) et le nom de principal du service NetBIOS pour votre service de base de données, sélectionnez les deux. Vous pouvez n’en voir qu’un.
+8. Sélectionnez le nom de principal du service que vous avez créé pour le serveur de base de données. Dans notre exemple, le nom de principal du service commence par **MSSQLSvc**. Si vous avez ajouté le nom de domaine complet (FQDN) et le nom de principal du service NetBIOS pour votre service de base de données, sélectionnez les deux. Vous pouvez n’en voir qu’un.
 
-10. Sélectionnez **OK**. Le nom de principal du service devrait à présent figurer dans la liste.
+9. Sélectionnez **OK**. Le nom de principal du service devrait à présent figurer dans la liste.
 
     Vous pouvez également sélectionner **Développé** pour afficher à la fois le nom de domaine complet (FQDN) et le nom de principal du service NetBIOS. Si vous avez sélectionné **Développé**, la boîte de dialogue doit ressembler à ceci. Sélectionnez **OK**.
 
     ![Capture d’écran de la boîte de dialogue des propriétés de connecteur de passerelle](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
-Enfin, sur la machine exécutant le service de passerelle (**PBIEgwTestGW** dans notre exemple), vous devez attribuer la stratégie locale **Emprunter l’identité d’un client après l’authentification** au compte de service de passerelle. Vous pouvez effectuer et vérifier cette attribution dans l’Éditeur d’objets de stratégie de groupe (**gpedit**).
+Enfin, sur la machine exécutant le service de passerelle (**PBIEgwTestGW** dans notre exemple), vous devez attribuer la stratégie locale **Emprunter l’identité d’un client après l’authentification** et **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)** au compte de service de passerelle. Vous pouvez effectuer et vérifier cette configuration dans l’Éditeur de stratégie de groupe locale (**gpedit**).
 
 1. Sur la machine de passerelle, exécutez *gpedit.msc*.
 
@@ -170,40 +170,26 @@ Une fois que vous avez terminé toutes les étapes de configuration, vous pouvez
 
 Cette configuration est appropriée dans la plupart des cas. Toutefois, avec Kerberos, il peut y avoir différentes configurations en fonction de votre environnement. Si vous ne parvenez pas à charger le rapport, contactez votre administrateur de domaine pour résoudre le problème.
 
-## <a name="switch-the-gateway-to-a-domain-account"></a>Basculer la passerelle vers un compte de domaine
-
-Si nécessaire, vous pouvez basculer la passerelle d’un compte de service local vers une exécution en tant que compte de domaine, en utilisant l’interface utilisateur **Passerelle de données locale**. Voici comment procéder :
-
-1. Ouvrez l’outil de configuration **Passerelle de données locale**.
-
-   ![Capture d’écran de l’option pour démarrer l’application de bureau Passerelle](media/service-gateway-sso-kerberos/gateway-desktop-app.png)
-
-2. Sélectionnez le bouton **Connexion** sur la page principale, puis connectez-vous avec votre compte Power BI.
-
-3. Une fois la connexion établie, sélectionnez l’onglet **Paramètre de service**.
-
-4. Sélectionnez **Changer de compte** pour démarrer la procédure pas à pas.
-
-   ![Capture d’écran de l’application de bureau Passerelle de données locale, avec l’option Changer de compte en surbrillance](media/service-gateway-sso-kerberos/change-account.png)
-
 ## <a name="configure-sap-bw-for-sso"></a>Configurer SAP BW pour l’authentification unique
 
 Comme vous comprenez maintenant comment fonctionne Kerberos avec une passerelle, vous pouvez configurer l’authentification unique pour votre système SAP BW (SAP Business Warehouse). Les étapes suivantes supposent que vous avez déjà [préparé la délégation Kerberos contrainte](#prepare-for-kerberos-constrained-delegation), comme décrit précédemment dans cet article.
 
 Ce guide tente d’être aussi complet que possible. Si vous avez déjà effectué certaines étapes, vous pouvez les ignorer. Par exemple, vous avez peut-être déjà créé un utilisateur de service pour votre serveur SAP BW et mappé un nom de principal de service, ou bien vous avez peut-être déjà installé la bibliothèque `gsskrb5`.
 
-### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>Installer gsskrb5 sur les machines clientes et le serveur SAP BW
+### <a name="set-up-gsskrb5gx64krb5-on-client-machines-and-the-sap-bw-server"></a>Installer gsskrb5/gx64krb5 sur les machines clientes et le serveur SAP BW
 
 > [!NOTE]
-> `gsskrb5` n’est plus activement pris en charge par SAP. Pour plus d’informations, consultez [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Notez également que `gsskrb5` n’autorise pas les connexions d’authentification unique de la passerelle de données aux serveurs de messages SAP BW. Seules les connexions aux serveurs d’applications SAP BW sont possibles. `gsskrb5` doit être utilisé par le client et par le serveur pour établir une connexion d’authentification unique par le biais de la passerelle. Nous prenons désormais en charge la bibliothèque Common Crypto Library (sapcrypto) pour SAP BW.
+> `gsskrb5/gx64krb5` n’est plus activement pris en charge par SAP. Pour plus d’informations, consultez [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Notez également que `gsskrb5/gx64krb5` n’autorise pas les connexions d’authentification unique de la passerelle de données aux serveurs de messages SAP BW. Seules les connexions aux serveurs d’applications SAP BW sont possibles. Il est maintenant possible d’utiliser sapcrypto/CommonCryptoLib comme bibliothèque SNC qui simplifie le processus d’installation. 
 
-1. Téléchargez `gsskrb5` - `gx64krb5` à partir de la page [SAP Note 2115486](https://launchpad.support.sap.com/) (compte super utilisateur SAP requis). Assurez-vous d’avoir au moins la version 1.0.11.x de gsskrb5.dll et gx64krb5.dll.
+`gsskrb5` doit être utilisé par le client et par le serveur pour établir une connexion d’authentification unique par le biais de la passerelle.
+
+1. Téléchargez `gsskrb5` ou `gx64krb5` en fonction du nombre de bits souhaité à partir de [SAP Note 2115486](https://launchpad.support.sap.com/) (S-user SAP nécessaire). Veillez à disposer de la version 1.0.11.x au moins.
 
 1. Placez la bibliothèque sur votre machine de passerelle à un emplacement accessible par votre instance de passerelle (et également par l’interface graphique utilisateur SAP si vous souhaitez tester la connexion d’authentification unique à l’aide de SAP Logon).
 
 1. Placez une autre copie sur votre machine serveur SAP BW à un emplacement accessible par le serveur SAP BW.
 
-1. Sur les machines cliente et serveur, définissez les variables d’environnement `SNC\_LIB` et `SNC\_LIB\_64` afin qu’elles pointent vers les emplacements de gx64krb5.dll et gx64krb5.dll, respectivement.
+1. Sur les machines clientes et serveur, définissez les variables d’environnement `SNC_LIB` ou `SNC_LIB_64` afin qu’elles pointent vers les emplacements de gsskrb5.dll ou gx64krb5.dll, respectivement. Notez que vous avez besoin d’une seule de ces bibliothèques, et non pas des deux.
 
 ### <a name="create-a-sap-bw-service-user-and-enable-snc-communication"></a>Créer un utilisateur du service SAP BW et activer la communication SNC
 
@@ -262,7 +248,7 @@ Mappez un utilisateur Active Directory à un utilisateur du serveur d’applicat
 
     ![Capture de l’écran de gestion des utilisateurs SAP BW](media/service-gateway-sso-kerberos/user-maintenance.png)
 
-1. Sélectionnez l’onglet **SNC**. Dans la zone de texte « SNC name » (Nom SNC), entrez p:\<votre utilisateur Active Directory\>@\<votre domaine\>. Notez que « p: » doit absolument précéder l’UPN de l’utilisateur Active Directory. L’utilisateur Active Directory que vous indiquez doit appartenir à la personne ou à l’organisation pour laquelle vous souhaitez activer l’accès SSO au serveur d’applications SAP BW. Par exemple, si vous souhaitez activer l’accès SSO pour l’utilisateur [testuser@TESTDOMAIN.COM](mailto:testuser@TESTDOMAIN.COM), entrez p:testuser@TESTDOMAIN.COM.
+1. Sélectionnez l’onglet **SNC**. Dans la zone de texte « SNC name » (Nom SNC), entrez p:\<votre utilisateur Active Directory\>@\<votre domaine\>. Notez que « p: » doit absolument précéder l’UPN de l’utilisateur Active Directory. L’utilisateur Active Directory que vous indiquez doit appartenir à la personne ou à l’organisation pour laquelle vous souhaitez activer l’accès SSO au serveur d’applications SAP BW. Par exemple, si vous voulez activer l’accès SSO pour l’utilisateur testuser\@TESTDOMAIN.COM, entrez p:testuser@TESTDOMAIN.COM.
 
     ![Capture de l’écran Maintain users (Gérer les utilisateurs) de SAP BW](media/service-gateway-sso-kerberos/maintain-users.png)
 
@@ -290,17 +276,17 @@ Vérifiez que vous pouvez vous connecter au serveur. Utilisez SAP Logon via l’
 
 Si vous rencontrez des problèmes, suivez ces étapes pour corriger l’installation de gsskrb5 et les connexions SSO à partir de SAP Logon.
 
-- La consultation des journaux du serveur (...work\dev\_w0 sur la machine serveur) peut être utile pour résoudre les erreurs rencontrées au cours des étapes de configuration de gsskrb5. En particulier, cela est utile si le serveur SAP BW ne démarre pas après la modification des paramètres de profil.
+* La consultation des journaux du serveur (...work\dev\_w0 sur la machine serveur) peut être utile pour résoudre les erreurs rencontrées au cours des étapes de configuration de gsskrb5. En particulier, cela est utile si le serveur SAP BW ne démarre pas après la modification des paramètres de profil.
 
-- Si vous ne parvenez pas à démarrer le service SAP BW en raison d’un échec de connexion, il est possible que vous ayez indiqué un mauvais mot de passe durant la définition de l’utilisateur qui démarre le service SAP BW. Vérifiez le mot de passe en vous connectant à une machine dans votre environnement Active Directory en tant qu’utilisateur du service SAP BW.
+* Si vous ne parvenez pas à démarrer le service SAP BW en raison d’un échec de connexion, il est possible que vous ayez indiqué un mauvais mot de passe durant la définition de l’utilisateur qui démarre le service SAP BW. Vérifiez le mot de passe en vous connectant à une machine dans votre environnement Active Directory en tant qu’utilisateur du service SAP BW.
 
-- Si vous obtenez des erreurs indiquant que les informations d’identification SQL empêchent le démarrage du serveur, vérifiez que vous avez accordé à l’utilisateur du service l’accès à la base de données SAP BW.
+* Si vous obtenez des erreurs indiquant que les informations d’identification SQL empêchent le démarrage du serveur, vérifiez que vous avez accordé à l’utilisateur du service l’accès à la base de données SAP BW.
 
-- Vous pouvez obtenir le message suivant : « (GSS-API) La cible spécifiée est inconnue ou inaccessible. » Cela signifie généralement que vous avez spécifié un nom SNC incorrect. Veillez à utiliser « p: » uniquement, et pas « p:CN= » ou autre chose dans l’application cliente que l’UPN de l’utilisateur du service.
+* Vous pouvez obtenir le message suivant : « (GSS-API) La cible spécifiée est inconnue ou inaccessible. » Cela signifie généralement que vous avez spécifié un nom SNC incorrect. Veillez à utiliser « p: » uniquement, et pas « p:CN= » ou autre chose dans l’application cliente que l’UPN de l’utilisateur du service.
 
-- Vous pouvez obtenir le message suivant : « (GSS-API) Un nom non valide a été fourni. » Vérifiez que vous avez spécifié « p: » dans la valeur du paramètre de profil d’identité SNC du serveur.
+* Vous pouvez obtenir le message suivant : « (GSS-API) Un nom non valide a été fourni. » Vérifiez que vous avez spécifié « p: » dans la valeur du paramètre de profil d’identité SNC du serveur.
 
-- Vous pouvez obtenir le message suivant : « (Erreur SNC) Le module spécifié est introuvable. » Cette erreur se produit généralement quand vous placez `gsskrb5.dll/gx64krb5.dll` à un emplacement dont l’accès requiert des privilèges élevés (droits d’administrateur).
+* Vous pouvez obtenir le message suivant : « (Erreur SNC) Le module spécifié est introuvable. » Cette erreur se produit généralement quand vous placez `gsskrb5.dll/gx64krb5.dll` à un emplacement dont l’accès requiert des privilèges élevés (droits d’administrateur).
 
 ### <a name="add-registry-entries-to-the-gateway-machine"></a>Ajouter des entrées de Registre à la machine de passerelle
 
@@ -356,13 +342,13 @@ Si vous n’avez pas configuré Azure AD Connect, suivez ces étapes pour chaque
 
 Ajoutez la source de données SAP BW à votre passerelle en suivant les instructions indiquées plus haut dans cet article au sujet de la [génération d’un rapport](#run-a-power-bi-report).
 
-1. Dans la fenêtre de configuration de la source de données, entrez le **Nom d’hôte**, le **Numéro système** et l’**ID client** du serveur d’applications que vous utilisez pour vous connecter à votre serveur SAP BW à partir de Power BI Desktop. Comme **Méthode d’authentification**, sélectionnez **Windows**.
+1. Dans la fenêtre de configuration de la source de données, entrez le **Nom d’hôte**, le **Numéro système** et l’**ID client** du serveur d’applications que vous utilisez pour vous connecter à votre serveur SAP BW à partir de Power BI Desktop.
 
 1. Dans le champ **Nom du partenaire SNC**, entrez « p: \<SPN que vous avez mappé à votre utilisateur du service SAP BW\> ». Par exemple, si le SPN est SAP/BWServiceUser@MYDOMAIN.COM, vous devez entrer p:SAP/BWServiceUser@MYDOMAIN.COM dans le champ **Nom du partenaire SNC**.
 
-1. Comme bibliothèque SNC, sélectionnez **SNC\_LIB** ou **SNC\_LIB\_64**.
+1. Pour la bibliothèque SNC, sélectionnez **SNC_LIB** ou **SNC_LIB_64**. Utilisez **SNC_LIB** pour les scénarios 32 bits et **SNC_LIB_64** pour les scénarios 64 bits. Vérifiez que ces variables d’environnement pointent respectivement vers gsskrb5.dll ou gx64krb5.dll, selon le nombre de bits.
 
-1. Le **Nom d’utilisateur** et le **Mot de passe** doivent correspondre au nom d’utilisateur et au mot de passe d’un utilisateur Active Directory qui a l’autorisation de se connecter au serveur SAP BW à l’aide de l’authentification unique. Autrement dit, il doit s’agir du nom d’utilisateur et du mot de passe d’un utilisateur Active Directory ayant été mappé à un utilisateur SAP BW par le biais de la transaction SU01. Ces informations d’identification sont utilisées uniquement si la case **Utiliser SSO via Kerberos pour les requêtes DirectQuery** n’est pas cochée.
+1. Si vous avez sélectionné **Windows** comme **Méthode d’authentification**, le **Nom d’utilisateur** et le **Mot de passe** doivent correspondre au nom d’utilisateur et au mot de passe de l’utilisateur Active Directory qui a l’autorisation de se connecter au serveur SAP BW avec l’authentification unique. Autrement dit, il doit s’agir du nom d’utilisateur et du mot de passe d’un utilisateur Active Directory ayant été mappé à un utilisateur SAP BW par le biais de la transaction SU01. Si vous avez sélectionné **De base**, le **Nom d’utilisateur** et le **Mot de passe** doivent être définis respectivement sur le nom et le mot de passe d’un utilisateur de SAP BW. Ces informations d’identification sont utilisées uniquement si la case **Utiliser SSO via Kerberos pour les requêtes DirectQuery** n’est pas cochée.
 
 1. Cochez la case **Utiliser SSO via Kerberos pour les requêtes DirectQuery**, puis sélectionnez **Appliquer**. Si le test de la connexion échoue, vérifiez que vous avez correctement effectué les étapes d’installation et de configuration précédentes.
 
@@ -394,9 +380,9 @@ Le résultat est que la passerelle ne peut pas emprunter l’identité de l’ut
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, voir les ressources suivantes :
+Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, consultez les ressources suivantes :
 
-* [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)
+* [Qu’est-ce qu’une passerelle de données locale ?](/data-integration/gateway/service-gateway-getting-started)
 * [DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery et SAP BW](desktop-directquery-sap-bw.md)

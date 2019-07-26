@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 05/03/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1c77c272bf5c03ce7df0a5173d194a4c0583ccf2
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596632"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307401"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Actualiser des données à partir d’une base de données SQL Server locale
 
@@ -36,7 +36,7 @@ Ce tutoriel vous montre comment effectuer les étapes suivantes :
 - Si ce n’est pas déjà fait, inscrivez-vous à un [essai gratuit de Power BI](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 - [Installez Power BI Desktop](https://powerbi.microsoft.com/desktop/) sur un ordinateur local.
 - [Installez SQL Server](/sql/database-engine/install-windows/install-sql-server) sur un ordinateur local et restaurez l’[exemple de base de données à partir d’une sauvegarde](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). Pour plus d’informations sur AdventureWorks, consultez [Installation et configuration d’AdventureWorks](/sql/samples/adventureworks-install-configure).
-- [Installez une passerelle de données locale](service-gateway-install.md) sur le même ordinateur local que SQL Server (en production, il s’agit généralement d’un autre ordinateur).
+- [Installez une passerelle de données locale](service-gateway-onprem.md) sur le même ordinateur local que SQL Server (en production, il s’agit généralement d’un autre ordinateur).
 
 > [!NOTE]
 > Si vous n’êtes pas administrateur de passerelle et que vous ne souhaitez pas installer vous-même une passerelle, contactez un administrateur de passerelle de votre organisation. Il peut créer la définition de source de données nécessaire pour connecter votre jeu de données à votre base de données SQL Server.
@@ -202,6 +202,6 @@ Si vous ne souhaitez plus utiliser l’exemple de données, supprimez la base de
 
 Dans ce tutoriel, vous avez vu comment importer des données à partir d’une base de données SQL Server locale dans un jeu de données Power BI et comment actualiser ce jeu de données de manière planifiée et à la demande pour tenir à jour les rapports et tableaux de bord utilisant ce jeu de données dans Power BI. Vous pouvez désormais apprendre à gérer des passerelles de données et des sources de données dans Power BI. Nous vous recommandons également de consulter l’article conceptuel Actualisation des données dans Power BI.
 
-- [Gérer une passerelle locale Power BI](service-gateway-manage.md)
+- [Gérer une passerelle de données locale](/data-integration/gateway/service-gateway-manage)
 - [Gérer votre source de données - Importation/actualisation planifiée](service-gateway-enterprise-manage-scheduled-refresh.md)
 - [Actualisation des données dans Power BI](refresh-data.md)

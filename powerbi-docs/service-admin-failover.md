@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b3fa7fd07a4c7f1992623871ed408b959582a125
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61196908"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270601"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI
 
@@ -65,7 +65,7 @@ Les instances de service Power BI retournent dans leur région d’origine quand
 Si la solution Power BI utilisée dans votre organisation implique l’un des éléments suivants, vous devez prendre des mesures pour assurer la haute disponibilité de la solution :
 
 - Si votre organisation utilise Power BI Premium, vous devez vérifier que la capacité Premium est dimensionnée pour répondre aux demandes de charge de votre déploiement.  Le [livre blanc Planification et déploiement de Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment) et l’[application Métriques de capacité Power BI Premium](service-admin-premium-monitor-capacity.md) peuvent vous aider à planifier cette exigence et à y répondre. Nous ajoutons régulièrement de nouvelles fonctionnalités à l’application de métriques et au portail d’administration dans Power BI pour fournir de l’aide.
-- Si votre organisation accède à des sources de données locales à l’aide de la passerelle locale Power BI, vous devez configurer la passerelle [comme décrit dans cet article](service-gateway-high-availability-clusters.md) pour prendre en charge la haute disponibilité. Suivez ces instructions si vous actualisez des rapports en mode d’importation ou que vous accédez à des données ou des modèles de données à l’aide de DirectQuery ou de Live Connect.
+- Si votre organisation accède à des sources de données locales à l’aide de la passerelle de données locale, vous devez configurer la passerelle [comme décrit dans cet article](/data-integration/gateway/service-gateway-high-availability-clusters) pour prendre en charge la haute disponibilité. Suivez ces instructions si vous actualisez des rapports en mode d’importation ou que vous accédez à des données ou des modèles de données à l’aide de DirectQuery ou de Live Connect.
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Les passerelles fonctionnent-elles en mode de basculement ?
 

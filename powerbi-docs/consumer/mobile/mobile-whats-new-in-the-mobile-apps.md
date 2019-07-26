@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: a6718ed8f582150ad8f13d638308700f9004a354
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.openlocfilehash: 8600dce5012abb41c37b202dcc8eb204da11fa33
+ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558989"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230190"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,18 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="july-2019"></a>Juillet 2019
+
+### <a name="report-page-tooltips"></a>Info-bulles de page de rapport
+
+Les info-bulles de page de rapport sont maintenant prises en charge lors de l’affichage des rapports dans votre application mobile. Il vous suffit d’appuyer longuement sur un visuel associé à une info-bulle de rapport, et celle-ci apparaîtra.  
+
+![Info-bulle du canevas de rapport](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
+
+> [!NOTE]
+> Les info-bulles de rapport sont prises en charge pour les appareils dont la taille est supérieure à 640 pixels et la fenêtre d’affichage supérieure à 320. Les appareils plus petits utilisent les info-bulles par défaut.
+
 
 ## <a name="june-2019"></a>Juin 2019
 

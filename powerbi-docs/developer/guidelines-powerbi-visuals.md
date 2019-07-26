@@ -8,15 +8,41 @@ ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 03/10/2019
-ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/16/2019
+ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61342759"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271184"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
+Avant de [publier](https://docs.microsoft.com/power-bi/developer/office-store) votre visuel sur AppSource pour que d’autres utilisateurs puissent le découvrir et l’utiliser, veillez à suivre les instructions pour créer une expérience de qualité pour vos utilisateurs. 
+
+## <a name="context-menu"></a>Menu contextuel
+Le menu contextuel est le menu qui s’affiche quand l’utilisateur pointe sur un visuel et clique avec le bouton droit.
+Tous les visuels Power BI doivent activer le menu contextuel pour offrir une expérience unifiée. Consultez [cet article](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) pour découvrir comment ajouter un menu contextuel.
+
+
+## <a name="logo-guidelines"></a>Instructions relatives aux logos
+
+Cette section décrit les spécifications relatives à l’ajout de logos et de logotypes dans les visuels.
+
+> [!IMPORTANT]
+> Les logos sont autorisés en *mode d’édition uniquement*. Les logos ne peuvent *pas* être affichés en mode Affichage.
+
+![Définitions](media/guidelines-powerbi-visuals/definitions.png)
+
+![Éléments à prendre en compte](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
+
+![Pratiques à éviter](media/guidelines-powerbi-visuals/things-to-avoid.png)
+
+![Taille et format](media/guidelines-powerbi-visuals/size-and-format.png)
+
+![Marges et dimensionnement](media/guidelines-powerbi-visuals/margins-and-sizes.png)
+
+![Mode d’édition](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
+
 
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Marche à suivre pour les visuels Power BI avec des achats supplémentaires
 
@@ -36,31 +62,13 @@ Les développeurs chargent leurs visuels IAP sur AppSource par le biais du table
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Qu’est-ce qu’un visuel Power BI avec des fonctionnalités IAP ?
 
-Un visuel IAP est un visuel **gratuit** qui offre des **fonctionnalités gratuites**. Il a également des fonctionnalités avancées pour le fonctionnement desquelles des frais supplémentaires peuvent être facturés. Dans la description du visuel, les développeurs doivent attirer l’attention des utilisateurs sur les fonctionnalités dont le fonctionnement nécessite des achats supplémentaires. À l’heure actuelle, Microsoft ne fournit pas d’API natives pour prendre en charge l’achat d’applications et de compléments.
+Un visuel IAP est un visuel *gratuit* qui offre des *fonctionnalités gratuites*. Il a également des fonctionnalités avancées pour le fonctionnement desquelles des frais supplémentaires peuvent être facturés. Dans la description du visuel, les développeurs doivent attirer l’attention des utilisateurs sur les fonctionnalités dont le fonctionnement nécessite des achats supplémentaires. À l’heure actuelle, Microsoft ne fournit pas d’API natives pour prendre en charge l’achat d’applications et de compléments.
 
 Les développeurs peuvent utiliser n’importe quel système de paiement tiers pour ces achats. Pour plus d’informations, consultez notre [magasin de stratégies](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
 > [!NOTE]
 > Les filigranes ne sont pas autorisés sur les fonctionnalités gratuites ou les visuels gratuits. Les filigranes peuvent être employés uniquement dans les fonctionnalités payantes qui sont utilisées sans licence valide. Nous vous recommandons d’afficher une fenêtre contextuelle avec toutes les informations relatives à la licence si les fonctionnalités payantes avancées sont utilisées sans licence valide.  
 
-## <a name="logo-guidelines"></a>Instructions relatives aux logos
-
-Cette section décrit les spécifications relatives à l’ajout de logos et de logotypes dans les visuels.
-
-> [!IMPORTANT]
-> Les logos sont autorisés en **mode d’édition uniquement**. Les logos ne peuvent **pas** être affichés en mode Affichage.
-
-![Définitions](media/guidelines-powerbi-visuals/definitions.png)
-
-![Éléments à prendre en compte](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
-
-![Pratiques à éviter](media/guidelines-powerbi-visuals/things-to-avoid.png)
-
-![Taille et format](media/guidelines-powerbi-visuals/size-and-format.png)
-
-![Marges et dimensionnement](media/guidelines-powerbi-visuals/margins-and-sizes.png)
-
-![Mode d’édition](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Meilleures pratiques
 

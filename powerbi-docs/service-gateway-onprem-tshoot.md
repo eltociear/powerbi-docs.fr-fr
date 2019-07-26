@@ -1,6 +1,6 @@
 ---
-title: Dépannage de la passerelle de données locale
-description: Cet article présente des méthodes permettant de résoudre les problèmes rencontrés avec la passerelle de données locale. Il fournit des solutions de contournement aux problèmes connus, ainsi que des outils d’aide.
+title: Résoudre les problèmes liés aux passerelles - Power BI
+description: Cet article présente des méthodes permettant de résoudre les problèmes rencontrés avec la passerelle de données locale et Power BI. Il fournit des solutions de contournement aux problèmes connus, ainsi que des outils d’aide.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -8,116 +8,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: afc4df99b90d6c6d7016f34983ca3691fb500325
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: a013b42f1cd7cc9b2c5c24f9636683a52687ceb8
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223917"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271402"
 ---
-# <a name="troubleshooting-the-on-premises-data-gateway"></a>Dépannage de la passerelle de données locale
+# <a name="troubleshoot-gateways---power-bi"></a>Résoudre les problèmes liés aux passerelles - Power BI
 
-Cet article traite de certains problèmes courants rencontrés lors de l’utilisation de la **passerelle de données locale**.
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-<!-- Shared Community & support links Include -->
-[!INCLUDE [gateway-onprem-tshoot-support-links-include](./includes/gateway-onprem-tshoot-support-links-include.md)]
-
-<!-- Shared Troubleshooting Install Include -->
-[!INCLUDE [gateway-onprem-tshoot-install-include](./includes/gateway-onprem-tshoot-install-include.md)]
+Cet article traite de certains problèmes courants rencontrés lors de l’utilisation de la **passerelle de données locale** avec Power BI. Si vous rencontrez un problème qui n’est pas listé ci-dessous, vous pouvez utiliser le [site des communautés](http://community.powerbi.com) de Power BI ou créer un [ticket de support](http://powerbi.microsoft.com/support).
 
 ## <a name="configuration"></a>Configuration
 
-### <a name="how-to-restart-the-gateway"></a>Comment redémarrer la passerelle
-
-La passerelle s’exécute comme service Windows. Vous pouvez donc la démarrer et l’arrêter de plusieurs façons. Par exemple, vous pouvez ouvrir une invite de commandes avec des autorisations élevées sur l’ordinateur sur lequel la passerelle est exécutée, puis exécuter l’une des commandes suivantes :
-
-* Pour arrêter le service, exécutez la commande suivante :
-
-    ```
-    net stop PBIEgwService
-    ```
-
-* Pour démarrer le service, exécutez la commande suivante :
-
-    ```
-    net start PBIEgwService
-    ```
-
-### <a name="log-file-configuration"></a>Configuration du fichier journal
-
-Les journaux de service de passerelle sont classés en trois catégories : informations, erreur et de réseau. Cette catégorisation vous procure une meilleure expérience de dépannage, vous permettant de vous concentrer sur un domaine spécifique, en fonction de l’erreur ou du problème. Vous pouvez voir les trois catégories dans l’extrait de code suivant issu du fichier de configuration de passerelle : `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log`.
-
-```xml
-  <system.diagnostics>
-    <trace autoflush="true" indentsize="4">
-      <listeners>
-        <remove name="Default" />
-        <add name="ApplicationFileTraceListener"
-             type="Microsoft.PowerBI.DataMovement.Pipeline.Common.Diagnostics.RotatableFilesManagerTraceListener, Microsoft.PowerBI.DataMovement.Pipeline.Common"
-             initializeData="%LOCALAPPDATA%\Microsoft\On-premises data gateway\,GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50" />
-      </listeners>
-    </trace>
-  </system.diagnostics>
-```
-
-Ce fichier se trouve par défaut à l’emplacement *\Program Files\On-premises data gateway\Microsoft.PowerBI.EnterpriseGateway.exe.config*. Pour configurer le nombre de fichiers journaux à conserver, changez le premier nombre (20 dans cet exemple) : `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`.
-
-### <a name="error-failed-to-create-a-gateway-try-again"></a>Erreur : Échec de la création d’une passerelle. Réessayez
-
-Tous les détails sont disponibles, mais l’appel au service Power BI a renvoyé une erreur. L’erreur et un ID d’activité sont affichés. Cela peut se produire pour différentes raisons. Pour plus d’informations, vous pouvez collecter et examiner les journaux comme indiqué ci-dessous.
-
-Cela peut également être dû à des problèmes de configuration de proxy. L’interface utilisateur ne permet pas de configurer le proxy. Plus d’informations sur la façon d’apporter des [modifications à la configuration du proxy](service-gateway-proxy.md).
-
-### <a name="error-failed-to-update-gateway-details-please-try-again"></a>Erreur : Échec de la mise à jour des détails de la passerelle. Réessayez
-
-Les informations ont été reçues du service Power BI vers la passerelle. Elles ont été transmises au service Windows local, mais celui-ci n’a rien pu renvoyer. Il est également possible que la génération d’une clé symétrique ait échoué. L’exception interne apparaît sous **Afficher les détails**. Pour plus d’informations, vous pouvez collecter et examiner les journaux mentionnés ci-dessous.
-
 ### <a name="error-power-bi-service-reported-local-gateway-as-unreachable-restart-the-gateway-and-try-again"></a>Erreur : Le service Power BI a signalé que la passerelle locale est inaccessible. Redémarrez la passerelle et réessayez.
 
-À la fin de la configuration, le service Power BI est rappelé pour valider la passerelle. Le service Power BI ne signale pas la passerelle comme étant *active*. Le redémarrage du service Windows peut permettre à la communication d’aboutir. Pour plus d’informations, vous pouvez collecter et examiner les journaux comme indiqué ci-dessous.
-
-### <a name="script-error-during-sign-into-power-bi"></a>Erreur de script lors de la connexion à Power BI
-
-Vous pouvez recevoir une erreur de script lorsque vous vous connectez à Power BI dans le cadre de la configuration de la passerelle de données locale. L’installation de la mise à jour de sécurité suivante résout le problème. L’installation peut être effectuée via Windows Update.
-
-[MS16-051 : Mise à jour de sécurité pour Internet Explorer : 10 mai 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
-
-### <a name="gateway-configuration-failed-with-a-null-reference-exception"></a>La configuration de la passerelle a échoué avec une exception de référence null
-
-Vous pouvez rencontrer une erreur similaire à ce qui suit.
-
-        Failed to update gateway details.  Please try again.
-        Error updating gateway configuration.
-
-Ceci inclut une arborescence des appels de procédure, qui peut inclure le message suivant.
-
-        Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.CouldNotUpdateGatewayConfigurationException: Error updating gateway configuration. ----> System.ArgumentNullException: Value cannot be null.
-        Parameter name: serviceSection
-
-Si vous mettez à niveau à partir d’une ancienne passerelle, nous conservons le fichier de configuration. Il se peut qu’une section soit manquante. Quand la passerelle tente de la lire, nous pouvons obtenir l’exception de référence null ci-dessus.
-
-Pour corriger cela, effectuez les étapes suivantes.
-
-1. Désinstallez la passerelle.
-2. Supprimez le dossier suivant.
-
-        c:\Program Files\On-premises data gateway
-3. Réinstallez la passerelle.
-4. Vous pouvez éventuellement appliquer la clé de récupération pour restaurer une passerelle existante.
-
-## <a name="support-for-tls-12"></a>Prise en charge de TLS 1.2
-
-Par défaut, la passerelle de données locale utilise le protocole TLS (Transport Layer Security) 1.2 pour communiquer avec le service Power BI. Pour que tout le trafic de passerelle utilise bien le protocole TLS 1.2, il vous faudra peut-être ajouter ou modifier les clés de Registre suivantes sur l’ordinateur exécutant le service de passerelle :
-
-```
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-```
-
-> [!NOTE]
-> L’ajout ou la modification de ces clés de Registre s’appliquent à toutes les applications .NET. Pour plus d’informations sur les modifications du Registre qui affectent le protocole TLS pour d’autres applications, voir [Paramètres de Registre pour le protocole TLS](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
+À la fin de la configuration, le service Power BI est rappelé pour valider la passerelle. Le service Power BI ne signale pas la passerelle comme étant active. Le redémarrage du service Windows peut permettre à la communication d’aboutir. Pour obtenir plus de détails, vous pouvez collecter et passer en revue les journaux, comme décrit dans [Collecter les journaux de l’application de passerelle de données locale](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 ## <a name="data-sources"></a>Sources de données
 
@@ -145,7 +55,7 @@ Le code d’erreur **DM_GWPipeline_UnknownError**apparaît dans **Afficher les d
 
 Pour plus d’informations, vous pouvez également consulter les journaux d’événements > **Journaux des applications et des services** > **Service Passerelle de données locale**.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Erreur : Nous avons rencontré une erreur lors de la tentative de connexion à <server>. Détails : « Nous avons pu accéder à la passerelle de données, mais elle ne peut pas accéder à la source de données locale. »
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Erreur : Nous avons rencontré une erreur lors de la tentative de connexion au \<serveur\>. Détails : « Nous avons pu accéder à la passerelle de données, mais elle ne peut pas accéder à la source de données locale. »
 
 Nous n’avons pas pu nous connecter à la source de données spécifiée. Veillez à valider les informations fournies pour cette source de données.
 
@@ -188,7 +98,7 @@ Vérifiez que votre compte est répertorié sous l’onglet **Utilisateurs** de 
 
 ### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Erreur : Aucune passerelle n’est installée ou configurée pour les sources de données de ce jeu de données
 
-Vérifiez que vous avez ajouté une ou plusieurs sources de données à la passerelle, comme décrit dans [Ajouter une source de données](service-gateway-manage.md#add-a-data-source). Si la passerelle n’apparaît pas dans le portail d’administration sous **Gérer les passerelles**, essayez d’effacer le cache de votre navigateur, ou de vous déconnecter du service et de vous y reconnecter.
+Vérifiez que vous avez ajouté une ou plusieurs sources de données à la passerelle, comme décrit dans [Ajouter une source de données](service-gateway-data-sources.md#add-a-data-source). Si la passerelle n’apparaît pas dans le portail d’administration sous **Gérer les passerelles**, essayez d’effacer le cache de votre navigateur, ou de vous déconnecter du service et de vous y reconnecter.
 
 ## <a name="datasets"></a>Jeux de données
 
@@ -214,7 +124,7 @@ La limitation exacte est de 10 Go de données non compressées par table. Si vou
 
 ## <a name="reports"></a>Rapports
 
-### <a name="report-could-not-access-the-data-source-because-you-do-not-have-access-to-our-data-source-via-an-on-premises-data-gateway"></a>Le rapport n’a pas pu accéder à la source de données, car vous n’avez pas accès à notre source de données via une passerelle de données locale.
+### <a name="report-could-not-access-the-data-source-because-you-do-not-have-access-to-our-data-source-via-an-on-premises-data-gateway"></a>Le rapport n’a pas pu accéder à la source de données, car vous n’avez pas accès à notre source de données par le biais d’une passerelle de données locale
 
 Ceci est généralement dû à une des causes suivantes.
 
@@ -227,7 +137,7 @@ Si ce rapport utilise une connexion Analysis Services en direct, vous pouvez ren
 
 Pour confirmer cela, procédez comme suit.
 
-1. Recherchez le nom d’utilisateur en vigueur dans les [journaux de la passerelle](#logs).
+1. Recherchez le nom d’utilisateur en vigueur dans les [journaux de la passerelle](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 2. Une fois la valeur transmise, validez qu’elle est correcte. S’il s’agit de votre utilisateur, vous pouvez utiliser la commande suivante à partir d’une invite de commandes pour voir le nom d’utilisateur principal. Celui-ci se présente comme une adresse e-mail.
 
         whoami /upn
@@ -241,213 +151,11 @@ Si vous le souhaitez, vous pouvez voir ce que Power BI obtient d’Azure Active
         https://graph.windows.net/me?api-version=1.5
 4. Recherchez **userPrincipalName**.
 
-Si votre nom d’utilisateur principal Azure Active Directory ne correspond pas à votre nom d’utilisateur principal Active Directory local, vous pouvez utiliser la fonctionnalité [Mapper les noms d’utilisateur](service-gateway-enterprise-manage-ssas.md#map-user-names) pour le remplacer par une valeur valide. Vous pouvez également contacter l’administrateur de votre locataire ou l’administrateur Active Directory local pour qu’il modifie votre nom d’utilisateur principal.
-
-<!-- Shared Troubleshooting Firewall/Proxy Include -->
-[!INCLUDE [gateway-onprem-tshoot-firewall-include](./includes/gateway-onprem-tshoot-firewall-include.md)]
-
-Pour trouver la région dans laquelle est situé votre centre de données, procédez comme suit :
-
-1. Sélectionnez le signe **?** dans le coin supérieur droit du service Power BI.
-2. Sélectionnez **À propos de Power BI**.
-3. La région de vos données est affichée dans **Vos données sont stockées dans**.
-
-    ![Région de données](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
-
-Si vous n’obtenez pas les informations souhaitées, vous pouvez essayer d’obtenir une trace réseau à l’aide d’un outil tel que [fiddler](#fiddler) ou netsh. Sachez toutefois que ces méthodes de collecte nécessitent un niveau avancé et que vous aurez peut-être besoin d’aide pour analyser les données collectées. Vous pouvez contacter le [support](https://support.microsoft.com) pour obtenir de l’aide.
-
-## <a name="performance"></a>Performances
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_DJ30VNk4?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-### <a name="performance-counters"></a>Compteurs de performance
-
-Plusieurs compteurs de performance permettent d’évaluer les activités de la passerelle. Ils peuvent être utiles pour comprendre si la charge d’activité est conséquente, et s’il faut envisager de mettre en place une nouvelle passerelle. Ces compteurs ne reflètent pas la durée d’exécution d’une opération.
-
-Ils sont accessibles via l’outil Analyseur de performances Windows.
-
-![](media/service-gateway-onprem-tshoot/gateway-perfmon.png)
-
-Il existe des groupements généraux de ces compteurs.
-
-| Type de compteur | Description |
-| --- | --- |
-| ADO.NET |Utilisé pour toute connexion DirectQuery. |
-| ADOMD |Utilisé pour Analysis Services 2014 et versions antérieures. |
-| OLEDB |Certaines sources de données l’utilisent. Celles-ci incluent SAP HANA et Analysis Services 2016 ou version ultérieure. |
-| Mashup |Inclut toute source de données importées. Si vous prévoyez d’actualiser ou d’effectuer une actualisation à la demande, cette opération passe par le moteur Mashup. |
-
-Voici la liste des compteurs de performance disponibles.
-
-| Compteur | Description |
-| --- | --- |
-| Nombre d’ouvertures de connexion ADO.NET exécutées par seconde |Nombre d’actions d’ouverture de connexion ADO.NET exécutées par seconde (ayant réussi ou échoué). |
-| Nombre d’ouvertures de connexion ADO.NET ayant échoué par seconde |Nombre d’actions d’ouverture de connexion ADO.NET ayant échoué par seconde. |
-| Nombre de requêtes ADO.NET exécutées par seconde |Nombre de requêtes ADO.NET exécutées par seconde (ayant réussi ou échoué). |
-| Nombre de requêtes ADO.NET ayant échoué par seconde |Nombre de requêtes ADO.NET ayant échoué exécutées par seconde. |
-| Nombre d’ouvertures de connexion ADOMD exécutées par seconde |Nombre d’actions d’ouverture de connexion ADOMD exécutées par seconde (ayant réussi ou échoué). |
-| Nombre d’ouvertures de connexion ADOMD ayant échoué par seconde |Nombre d’actions d’ouverture de connexion ADOMD ayant échoué par seconde. |
-| Nombre de requêtes ADOMD exécutées par seconde |Nombre de requêtes ADOMD exécutées par seconde (ayant réussi ou échoué). |
-| Nombre de requêtes ADOMD ayant échoué par seconde |Nombre de requêtes ADOMD ayant échoué exécutées par seconde. |
-| Nombre d’ouvertures de connexion exécutées par seconde |Nombre d’actions d’ouverture de connexion exécutées par seconde (ayant réussi ou échoué). |
-| Nombre d’ouvertures de connexion ayant échoué par seconde |Nombre d’actions d’ouverture de connexion ayant échoué exécutées par seconde. |
-| Nombre de requêtes exécutées par seconde |Nombre de requêtes exécutées par seconde (ayant réussi ou échoué). |
-| Nombre d’éléments dans le pool de connexions ADO.NET |Nombre d’éléments dans le pool de connexions ADO.NET. |
-| Nombre d’éléments dans le pool de connexions OLEDB |Nombre d’éléments dans le pool de connexions OLEDB. |
-| Nombre d’éléments dans le pool Service Bus |Nombre d’éléments dans le pool Service Bus. |
-| Nombre d’ouvertures de connexion Mashup exécutées par seconde |Nombre d’actions d’ouverture de connexion Mashup exécutées par seconde (ayant réussi ou échoué). |
-| Nombre d’ouvertures de connexion Mashup ayant échoué par seconde |Nombre d’actions d’ouverture de connexion Mashup ayant échoué par seconde. |
-| Nombre de requêtes Mashup exécutées par seconde |Nombre de requêtes Mashup exécutées par seconde (ayant réussi ou échoué). |
-| Nombre de requêtes Mashup ayant échoué par seconde |Nombre de requêtes Mashup ayant échoué exécutées par seconde. |
-| Nombre de requêtes de jeux de résultats multiples OLEDB ayant échoué par seconde |Nombre de jeux de résultats multiples de requêtes OLEDB ayant échoué exécutées par seconde. |
-| Nombre de jeux de résultats multiples OLEDB de requêtes exécutées par seconde |Nombre de jeux de résultats multiples OLEDB de requêtes exécutées par seconde (ayant réussi ou échoué). |
-| Nombre d’ouvertures de connexion OLEDB exécutées par seconde |Nombre d’actions d’ouverture de connexion OLEDB exécutées par seconde (ayant réussi ou échoué). |
-| Nombre d’ouvertures de connexion OLEDB ayant échoué par seconde |Nombre d’actions d’ouverture de connexion OLEDB ayant échoué par seconde. |
-| Nombre de requêtes OLEDB exécutées par seconde |Nombre de jeux de résultats multiples OLEDB de requêtes exécutées par seconde (ayant réussi ou échoué). |
-| Nombre de requêtes OLEDB ayant échoué par seconde |Nombre de jeux de résultats multiples OLEDB de requêtes ayant échoué exécutées par seconde |
-| Nombre de requêtes de jeu de résultats unique OLEDB exécutées par seconde |Nombre de requêtes de jeu de résultats unique OLEDB exécutées par seconde (ayant réussi ou échoué). |
-| Nombre de requêtes ayant échoué par seconde |Nombre de requêtes ayant échoué exécutées par seconde. |
-| Nombre de requêtes OLEDB de jeu de résultats unique ayant échoué par seconde |Nombre de jeu de résultats unique de requêtes OLEDB ayant échoué exécutées par seconde. |
-
-## <a name="reviewing-slow-performing-queries"></a>Examen des requêtes lentes
-
-Il se peut que la réponse via la passerelle soit lente. Par exemple lors de requêtes DirectQuery ou lors de l’actualisation de votre jeu de données importé. Vous pouvez activer une journalisation supplémentaire des requêtes de sortie et de leur durée pour savoir lesquelles s’exécutent lentement. Quand vous trouvez une requête dont l’exécution est longue, d’autres modifications de votre source de données peuvent être nécessaires pour optimiser les performances de la requête. Par exemple le réglage des index pour une requête SQL Server.
-
-Pour déterminer la durée d’une requête, vous devez modifier deux fichiers de configuration.
-
-### <a name="microsoftpowerbidatamovementpipelinegatewaycoredllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
-
-Dans le fichier *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*, modifiez la valeur `EmitQueryTraces` de `False` en `True`. Ce fichier se trouve, par défaut, dans *C:\Program Files\On-premises data gateway*. L’activation de `EmitQueryTraces` entraîne la journalisation des requêtes envoyées depuis la passerelle vers une source de données.
-
-> [!IMPORTANT]
-> L’activation de EmitQueryTraces peut augmenter considérablement la taille du journal en fonction de l’utilisation de la passerelle. Quand vous avez terminé d’examiner les journaux, vous pouvez définir EmitQueryTraces sur False. Il n’est pas recommandé de laisser longtemps ce paramètre activé.
-
-```xml
-<setting name="EmitQueryTraces" serializeAs="String">
-    <value>True</value>
-</setting>
-```
-
-**Exemple d’entrée de requête**
-
-```
-DM.EnterpriseGateway Information: 0 : 2016-09-15T16:09:27.2664967Z DM.EnterpriseGateway    4af2c279-1f91-4c33-ae5e-b3c863946c41    d1c77e9e-3858-4b21-3e62-1b6eaf28b176    MGEQ    c32f15e3-699c-4360-9e61-2cc03e8c8f4c    FF59BC20 [DM.GatewayCore] Executing query (timeout=224) "<pi>
-SELECT
-TOP (1000001) [t0].[ProductCategoryName],[t0].[FiscalYear],SUM([t0].[Amount])
- AS [a0]
-FROM
-(
-(select [$Table].[ProductCategoryName] as [ProductCategoryName],
-    [$Table].[ProductSubcategory] as [ProductSubcategory],
-    [$Table].[Product] as [Product],
-    [$Table].[CustomerKey] as [CustomerKey],
-    [$Table].[Region] as [Region],
-    [$Table].[Age] as [Age],
-    [$Table].[IncomeGroup] as [IncomeGroup],
-    [$Table].[CalendarYear] as [CalendarYear],
-    [$Table].[FiscalYear] as [FiscalYear],
-    [$Table].[Month] as [Month],
-    [$Table].[OrderNumber] as [OrderNumber],
-    [$Table].[LineNumber] as [LineNumber],
-    [$Table].[Quantity] as [Quantity],
-    [$Table].[Amount] as [Amount]
-from [dbo].[V_CustomerOrders] as [$Table])
-)
- AS [t0]
-GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
-```
-
-### <a name="microsoftpowerbidatamovementpipelinediagnosticsdllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
-
-Dans le fichier *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config*, modifiez la valeur `TracingVerbosity` de `4` en `5`. Ce fichier se trouve, par défaut, dans *C:\Program Files\On-premises data gateway*. La modification de ce paramètre entraîne la journalisation d’entrées détaillées dans le journal de la passerelle. Celles-ci incluent les entrées indiquant une durée. Vous pouvez également obtenir des entrées détaillées en activant le bouton « Journalisation supplémentaire » dans l’application de passerelle locale.
-
-   ![journalisation supplémentaire](media/service-gateway-onprem-tshoot/additional-logging.png)
-
-> [!IMPORTANT]
-> L’activation de TracingVerbosity sur `5` peut augmenter considérablement la taille du journal en fonction de l’utilisation de la passerelle. Quand vous avez terminé d’examiner les journaux, vous devez définir TraceVerbosity sur `4`. Il n’est pas recommandé de laisser longtemps ce paramètre activé.
-
-```xml
-<setting name="TracingVerbosity" serializeAs="String">
-    <value>5</value>
-</setting>
-```
-
-<a name="activities"></a>
-
-### <a name="activity-types"></a>Types d’activités
-
-| Type d’activité | Description |
-| --- | --- |
-| MGEQ |Requêtes exécutées sur ADO.NET. Incluent les sources de données DirectQuery. |
-| MGEO |Requêtes exécutées sur OLEDB. Incluent SAP HANA et Analysis Services 2016. |
-| MGEM |Requêtes exécutées à partir du moteur Mashup. Sont utilisées avec des jeux de données importés qui utilisent une actualisation planifiée ou actualisent à la demande. |
-
-### <a name="determine-the-duration-of-a-query"></a>Déterminer la durée d’une requête
-Pour déterminer le temps nécessaire pour interroger la source de données, vous pouvez procédez comme suit.
-
-1. Ouvrez le journal de la passerelle.
-2. Recherchez un [Activity Type](#activities) (Type d’activité) pour trouver la requête. Un exemple serait MGEQ.
-3. Notez le second GUID, car il s’agit de l’ID de la demande.
-4. Continuez à rechercher MGEQ jusqu’à trouver l’entrée FireActivityCompletedSuccessfullyEvent indiquant la durée. Vous pouvez vérifier que l’entrée a le même ID de demande. La durée est donnée en millisecondes.
-
-        DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway    baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
-
-   > [!NOTE]
-   > FireActivityCompletedSuccessfullyEvent est une entrée détaillée. Cette entrée n’est journalisée que si TraceVerbosity est au niveau 5.
-
-## <a name="firewall-or-proxy"></a>Pare-feu ou proxy
-
-Pour plus d’informations sur la fourniture d’informations de proxy pour votre passerelle, consultez [Configuration des paramètres de proxy pour les passerelles Power BI](service-gateway-proxy.md).
-
-Vous pouvez effectuer un test pour voir si votre pare-feu ou proxy bloque les connexions en exécutant [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection) à partir d’une invite PowerShell. Ceci teste la connectivité à Azure Service Bus. Ceci teste seulement la connectivité réseau et ne concerne pas le service du serveur cloud ni la passerelle. Il permet de déterminer si votre ordinateur peut réellement atteindre Internet.
-
-    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
-
-> [!NOTE]
-> La commande Test-NetConnection est uniquement disponible sur Windows Server 2012 R2 et versions ultérieures. Elle est également disponible sur Windows 8.1 et versions ultérieures. Dans les versions antérieures du système d’exploitation, vous pouvez utiliser Telnet pour tester la connectivité des ports.
-
-Les résultats sont similaires à ceci. La différence est au niveau de TcpTestSucceeded. Si **TcpTestSucceeded** n’a pas la valeur *true*, vous pouvez être bloqué par un pare-feu.
-
-    ComputerName           : watchdog.servicebus.windows.net
-    RemoteAddress          : 70.37.104.240
-    RemotePort             : 5672
-    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
-    SourceAddress          : 10.120.60.105
-    PingSucceeded          : False
-    PingReplyDetails (RTT) : 0 ms
-    TcpTestSucceeded       : True
-
-Si vous voulez être exhaustif, remplacez les valeurs **ComputerName** et **Port** par celles répertoriées pour les [ports](https://docs.microsoft.com/power-bi/service-gateway-onprem#ports)
-
-Le pare-feu peut également bloquer les connexions effectuées par Azure Service Bus vers les centres de données Azure. Si tel est le cas, vous pouvez ajouter à la liste verte (débloquer) les adresses IP de votre région pour ces centres de données. Vous pouvez obtenir une liste des adresses IP Azure [ici](https://www.microsoft.com/download/details.aspx?id=41653).
-
-### <a name="network-ports-test"></a>Test des ports réseau
-
-Le test des ports réseau est un outil pour vérifier si votre passerelle peut accéder aux ports appropriés pour tous les serveurs distants nécessaires à votre passerelle pour transférer des données. Si le test des ports réseau ne parvient pas à se connecter à un des ports, votre passerelle peut rencontrer des problèmes réseau. Si vous rencontrez actuellement des problèmes réseau avec votre passerelle, exécutez un test des ports réseau pour vérifier que vous avez un environnement réseau optimal.  
-
-#### <a name="start-a-new-test"></a>Démarrer un nouveau test
-
-Pour exécuter un test des ports réseau dans l’interface utilisateur de la passerelle de données locale.
-
-![Démarrer le test des ports](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-starttest.png)
-
-Lors de l’exécution des tests des ports réseau, votre passerelle récupère la liste des ports et des serveurs auprès d’Azure Service Bus, puis elle tente de se connecter à tous les serveurs et à tous les ports. Quand le lien Démarrer un nouveau test réapparaît, cela signifie que l’exécution du test des ports réseau est terminée.  
-
-#### <a name="test-results"></a>Résultats du test
-
-Vous pouvez consulter un résumé du test dans Résultats de test récents sous le lien Démarrer un nouveau test. Les deux résultats possibles sont Terminé (réussite) et Terminé (échec, voir les derniers résultats des tests). Si le test a réussi, cela signifie que votre passerelle s’est connectée avec succès à tous les ports nécessaires. Si le test a échoué, cela signifie que votre environnement peut bloquer ces ports et ces serveurs nécessaires. 
-
-![Résultats du test des ports](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-result.png)
-
-Pour voir les résultats du dernier test terminé, sélectionnez le lien Ouvrir les derniers résultats des tests terminés, comme indiqué ci-dessous. Les résultats du test s’ouvrent dans l’éditeur de texte par défaut de Windows.  
-
-Les résultats du test listent tous les serveurs, ports et adresses IP qui sont nécessaires à votre passerelle. Si les résultats du test indiquent Fermé pour des ports (comme illustré ci-dessous), vérifiez que votre environnement réseau ne bloque pas la connexion. Il peut être nécessaire de contacter votre administrateur réseau pour ouvrir les ports requis.
-
-![Fichier des résultats du test des ports](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-result-file.png)
+Si votre nom d’utilisateur principal Azure Active Directory ne correspond pas à votre nom d’utilisateur principal Active Directory local, vous pouvez utiliser la fonctionnalité [Mapper les noms d’utilisateur](service-gateway-enterprise-manage-ssas.md#mapping-usernames-for-analysis-services-data-sources) pour la remplacer par une valeur valide. Vous pouvez également contacter l’administrateur de votre locataire ou l’administrateur Active Directory local pour qu’il modifie votre nom d’utilisateur principal.
 
 ## <a name="kerberos"></a>Kerberos
 
-Si le serveur de base de données sous-jacent et la passerelle de données locale ne sont pas configurés correctement pour la [Délégation Kerberos contrainte](service-gateway-sso-kerberos.md), activez la [journalisation détaillée](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) sur la passerelle et recherchez les erreurs/traces dans les fichiers journaux de la passerelle comme point de départ pour la résolution du problème.
+Si le serveur de base de données sous-jacent et la passerelle de données locale ne sont pas configurés correctement pour la [Délégation Kerberos contrainte](service-gateway-sso-kerberos.md), activez la [journalisation détaillée](/data-integration/gateway/service-gateway-performance#slow-performing-queries) sur la passerelle et recherchez les erreurs/traces dans les fichiers journaux de la passerelle comme point de départ pour la résolution du problème. Pour collecter et afficher les journaux de la passerelle, consultez [Collecter les journaux de l’application de passerelle de données locale](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 ### <a name="impersonationlevel"></a>ImpersonationLevel
 
@@ -460,21 +168,22 @@ ImpersonationLevel est lié à la configuration SPN ou au paramètre de stratég
 **Solution**
 
 Suivez ces étapes pour résoudre le problème :
-1. Configurer un SPN pour la passerelle locale
-2. Configurer la délégation contrainte dans votre Active Directory (AD)
+
+1. Configurez un SPN pour la passerelle locale.
+2. Configurez la délégation contrainte dans votre Active Directory (AD).
 
 ### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException : Impossible de créer l’identité Windows pour l’utilisateur userid
 
-Une exception FailedToImpersonateUserException se produit si vous n’êtes pas en mesure d’emprunter l’identité d’un autre utilisateur. Cela peut également se produire si le compte dont vous tentez d’emprunter l’identité provient d’un autre domaine que celui du domaine de service de la passerelle (il s’agit d’une limitation).
+Une exception FailedToImpersonateUserException se produit si vous ne pouvez pas emprunter l’identité d’un autre utilisateur. Cela peut également se produire si le compte dont vous tentez d’emprunter l’identité provient d’un autre domaine que celui du domaine de service de la passerelle (il s’agit d’une limitation).
 
 **Solution**
 
-* Vérifiez que la configuration est correcte conformément à la procédure de la section ImpersonationLevel ci-dessus
-* Vérifiez que l’ID utilisateur que vous tentez d’emprunter est un compte Active Directory valide
+* Vérifiez que la configuration est correcte conformément à la procédure de la section ImpersonationLevel ci-dessus.
+* Vérifiez que l’ID utilisateur que vous tentez d’emprunter est un compte Active Directory valide.
 
 ### <a name="general-error-1033-error-while-parsing-the-protocol"></a>Erreur générale ; erreur 1033 lors de l’analyse du protocole
 
-Vous recevez l’erreur 1033 quand votre ID externe qui est configuré dans SAP HANA ne correspond pas à la connexion si l’emprunt d’identité de l’utilisateur est fait avec l’UPN (alias@domain.com). Dans les journaux, « UPN d’origine ’alias@domain.com’ est remplacé par un nouvel UPN ’alias@domain.com’ en haut des journaux d’erreurs, comme indiqué ci-dessous. »
+Vous recevez l’erreur 1033 quand votre ID externe qui est configuré dans SAP HANA ne correspond pas à la connexion si l’emprunt d’identité de l’utilisateur est fait avec l’UPN (alias@domain.com). Dans les journaux, « UPN d’origine 'alias@domain.com' est remplacé par un nouvel UPN 'alias@domain.com' » en haut des journaux d’erreurs, comme indiqué ci-dessous.
 
 ```
 [DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com.'
@@ -486,7 +195,7 @@ Vous recevez l’erreur 1033 quand votre ID externe qui est configuré dans SAP 
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
 
-* Dans les journaux, vous voyez sAMAccountName (alias) et non pas l’UPN, qui est l’alias suivi du domaine (alias@doimain.com)
+* Dans les journaux, vous voyez sAMAccountName (alias) et non pas l’UPN, qui est l’alias suivi du domaine (alias@doimain.com).
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
@@ -510,34 +219,39 @@ Vous recevez le message d’erreur -10709 Échec de la connexion si votre délé
 
 **Solution**
 
-* Assurez-vous que le serveur SAP Hana est dans l’onglet Délégation dans AD pour le compte de service de la passerelle
+* Vérifiez que le serveur SAP Hana est dans l’onglet Délégation dans AD pour le compte de service de la passerelle.
 
    ![onglet Délégation](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
 
-<!-- Shared Troubleshooting tools Include -->
-[!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
+## <a name="refresh-history"></a>Historique des actualisations
 
-### <a name="refresh-history"></a>Historique des actualisations
-
-Lors de l’utilisation de la passerelle pour une actualisation planifiée, **l’historique des actualisations** peut vous aider à déterminer les erreurs qui se sont produites. Vous pouvez aussi y trouver des données utiles si vous devez créer une demande de support. Vous pouvez visualiser à la fois les actualisations planifiées et les actualisations à la demande. Voici comment accéder à l’**historique des actualisations**.
+Lors de l’utilisation de la passerelle pour une actualisation planifiée, **l’historique des actualisations** peut vous aider à déterminer les erreurs qui se sont produites. Vous pouvez aussi y trouver des données utiles si vous devez créer une demande de support. Vous pouvez visualiser à la fois les actualisations planifiées et les actualisations à la demande. Les étapes suivantes montrent comment accéder à l’**historique des actualisations**.
 
 1. Dans le volet de navigation Power BI, dans **Jeux de données**, sélectionnez un jeu de données &gt; Menu Ouvrir &gt; **Planifier l’actualisation**
 
-    ![](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
+    ![Comment sélectionner Planifier l’actualisation](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
+
 2. Dans **Paramètres pour...** &gt;**Planifier l’actualisation**, sélectionnez **Historique des actualisations**.
 
-    ![](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
+    ![Sélectionner Historique des actualisations](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
 
-    ![](media/service-gateway-onprem-tshoot/refresh-history.png)
+    ![Affichage de l’historique des actualisations](media/service-gateway-onprem-tshoot/refresh-history.png)
 
 Pour plus d’informations sur la résolution des problèmes d’actualisation, consultez [Scénarios de résolution de problèmes liés à l’actualisation](refresh-troubleshooting-refresh-scenarios.md).
 
+## <a name="fiddler-trace"></a>Trace Fiddler
+
+[Fiddler](http://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP. Vous pouvez voir les allers et retours au niveau du service Power BI à partir de l’ordinateur client. Vous pouvez ainsi repérer les erreurs et d’autres informations connexes.
+
+![Utilisation de la trace Fiddler](media/service-gateway-onprem-tshoot/fiddler.png)
+
 ## <a name="next-steps"></a>Étapes suivantes
-[Configuration des paramètres de proxy pour les passerelles Power BI](service-gateway-proxy.md)  
-[Passerelle de données locale](service-gateway-onprem.md)  
-[Informations approfondies sur la passerelle de données locale](service-gateway-onprem-indepth.md)  
-[Gérer votre source de données - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Gérer votre source de données - SAP HANA](service-gateway-enterprise-manage-sap.md)  
-[Gérer votre source de données - SQL Server](service-gateway-enterprise-manage-sql.md)  
-[Gérer votre source de données - Importation/actualisation planifiée](service-gateway-enterprise-manage-scheduled-refresh.md)  
+
+* [Résoudre les problèmes de passerelle de données locale](/data-integration/gateway/service-gateway-tshoot)
+* [Configuration des paramètres de proxy de la passerelle de données locale](/data-integration/gateway/service-gateway-proxy)  
+* [Gérer votre source de données - Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+* [Gérer votre source de données - SAP HANA](service-gateway-enterprise-manage-sap.md)  
+* [Gérer votre source de données - SQL Server](service-gateway-enterprise-manage-sql.md)  
+* [Gérer votre source de données - Importation/actualisation planifiée](service-gateway-enterprise-manage-scheduled-refresh.md)  
+
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

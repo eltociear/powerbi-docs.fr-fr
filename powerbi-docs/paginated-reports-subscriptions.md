@@ -1,6 +1,6 @@
 ---
 title: S’abonner à des rapports paginés dans le service Power BI
-description: Dans cet article, vous allez découvrir certains points à prendre en compte concernant l’abonnement aux rapports paginés dans le service Power BI.
+description: Dans cet article, vous allez découvrir des points à prendre en compte concernant l’abonnement à des rapports paginés dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/24/2019
-ms.openlocfilehash: 472606fcb3b823cdcb722c9d8d6421d0ec652d24
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.date: 07/15/2019
+ms.openlocfilehash: 2d48892450bbf6ab09a4bc88cd2be9a58bbdc863
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839549"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307085"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports paginés dans le service Power BI 
 
@@ -26,15 +26,15 @@ Lors de la configuration des abonnements, vous choisissez la fréquence à laque
 
 - Contrairement aux abonnements pour les tableaux de bord ou les rapports Power BI, votre abonnement contient une pièce jointe de l’intégralité de la sortie du rapport.  Les types de pièce jointe suivants sont pris en charge : PDF, présentation PowerPoint (PPTX), classeur Excel (XLSX), document Word (DOCX), fichier CSV et XML.
 
-- Il n’existe aucune image d’aperçu du rapport dans le corps du message.  Nous prévoyons de proposer l’image de la première page du rapport comme élément facultatif. 
+- Vous pouvez inclure une image d’aperçu du rapport dans le corps de l’e-mail.  Ceci est facultatif et l’image peut différer légèrement de la première page de votre document de rapport attaché, selon le format sélectionné pour la pièce jointe. 
 
 - La taille maximale d’une pièce jointe de rapport est de 25 Mo. 
 
 - Vous pouvez abonner d’autres utilisateurs à des rapports paginés qui se connectent à n’importe quelle source de données actuellement prise en charge, notamment les jeux de données Power BI ou Azure Analysis Services. N’oubliez pas que la pièce jointe du rapport reflète les données conformément à vos autorisations, comme c’est le cas aujourd’hui avec SQL Server Reporting Services. 
 
-- Les abonnements aux pages de rapports sont liés au nom du rapport.  
+- Les abonnements par e-mail peuvent être envoyés avec les paramètres actuellement sélectionnés ou avec les paramètres par défaut de votre rapport.  Vous pouvez définir des valeurs de paramètre différentes pour chaque abonnement que vous créez pour votre rapport. 
 
-- Les abonnements aux e-mails sont envoyés avec les valeurs de paramètres par défaut du rapport. 
+- Si le créateur de votre rapport a défini des paramètres basés sur une expression (par exemple, la valeur par défaut est toujours la date du jour), l’abonnement l’utilise comme valeur par défaut. Vous pouvez modifier d’autres valeurs de paramètre et choisir d’utiliser les valeurs actuelles ; cependant, sauf si vous changez explicitement cette valeur, l’abonnement utilise le paramètre basé sur une expression.
 
 - Il n’y a aucune option **Après l’actualisation des données** pour la fréquence avec les rapports paginés. Vous obtenez toujours les valeurs les plus récentes à partir de la source de données sous-jacente. 
 

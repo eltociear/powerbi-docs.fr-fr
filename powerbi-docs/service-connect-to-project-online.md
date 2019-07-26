@@ -10,42 +10,49 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: dd6698cab5b9fed407e6e8f45ceb160209a38fae
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6ada87813593fd0f06d7870fa1727bc35fe7d47
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61146697"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68324936"
 ---
-# <a name="connect-to-project-online-with-power-bi"></a>Se connecter à Project Online avec Power BI
-Microsoft Project Online est une solution en ligne flexible pour la gestion de portefeuille de projets (PPM) et les tâches quotidiennes. Project Online permet aux organisations de prendre en main et de hiérarchiser les investissements de portefeuille de projet, ainsi que de produire la valeur commerciale souhaitée. Le pack de contenu Project Online pour Power BI vous permet d’exploiter les insights de Project Online pour mieux gérer les projets, les portefeuilles et les ressources.
+# <a name="connect-to-project-web-app-with-power-bi"></a>Se connecter à Project Web App avec Power BI
+Microsoft Project Web App est une solution en ligne flexible pour la gestion de portefeuilles de projets et les tâches quotidiennes. Project Web App permet aux organisations de prendre en main et de hiérarchiser les investissements de portefeuilles de projets ainsi que de produire la valeur commerciale souhaitée. L’application modèle Project Web App pour Power BI vous permet d’exploiter les insights de Project Web App pour mieux gérer les projets, les portefeuilles et les ressources.
 
-Connectez-vous au [pack de contenu Project Online](https://app.powerbi.com/getdata/services/project-online) pour Power BI.
+Connectez-vous à l’[application modèle Project Web App](https://appsource.microsoft.com/product/power-bi/pbi_msprojectonline.pbi-microsoftprojectwebapp) pour Power BI.
 
 ## <a name="how-to-connect"></a>Comment se connecter
-1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.
+
+   ![](media/service-connect-to-project-online/GetApps.png)
+1. Sélectionnez **Applications** dans le volet de navigation de gauche, puis **Obtenir des applications** en haut à droite.
+2. Dans la zone **Services**, sélectionnez **Obtenir**.
    
-    ![](media/service-connect-to-project-online/getdata.png)
-2. Dans la zone **Services** , sélectionnez **Obtenir**.
+   ![](media/service-connect-to-project-online/AppSource.png)
+3. Dans AppSource, sélectionnez l’onglet **Applications**, puis recherchez/sélectionnez **Microsoft Project Web App**.
    
-   ![](media/service-connect-to-project-online/services.png)
-3. Sélectionnez **Microsoft Project Online** \> **Obtenir**.
+4. Vous recevrez un message indiquant **Installer cette application Power BI ?** . Sélectionnez **Installer**. 
+
+   ![](media/service-connect-to-project-online/ProjectTile.png)
+5. Dans le volet **Applications**, sélectionnez la vignette **Microsoft Project Web App**. 
+   
+   ![](media/service-connect-to-project-online/getstarted.png)
+6. Dans **Démarrer avec votre nouvelle application**, sélectionnez **Connecter des données**.
    
    ![](media/service-connect-to-project-online/mproject.png)
-4. Dans la zone de texte **URL Project Web App** , entrez l’URL du projet Web App (PWA) auquel vous souhaitez vous connecter, puis appuyez sur **Suivant**. Notez que cela peut différer de l’exemple si vous avez un domaine personnalisé. Dans la zone de texte **Langue du site PWA**, tapez le numéro qui correspond à la langue de votre site PWA. Tapez le chiffre « 1 » pour l’anglais, « 2 » pour le Français, « 3 » pour l’allemand, « 4 » pour le portugais (Brésil), « 5 » pour le portugais (Portugal) et « 6 » pour l’espagnol. 
+7. Dans la zone de texte **URL Project Web App**, entrez l’URL de l’application PWA (Project Web App) à laquelle vous souhaitez vous connecter.  Notez que cela peut différer de l’exemple si vous avez un domaine personnalisé. Dans la zone de texte **Langue du site PWA**, tapez le numéro qui correspond à la langue de votre site PWA. Tapez le chiffre « 1 » pour l’anglais, « 2 » pour le Français, « 3 » pour l’allemand, « 4 » pour le portugais (Brésil), « 5 » pour le portugais (Portugal) et « 6 » pour l’espagnol. 
    
-    ![](media/service-connect-to-project-online/params.png)
-5. Pour la méthode d’authentification, sélectionnez **oAuth2** \> **Se connecter**. Quand vous y êtes invité, entrez vos informations d’identification Project Online et suivez le processus d’authentification.
-   
-    ![](media/service-connect-to-project-online/creds.png)
+   ![](media/service-connect-to-project-online/params.png)
+8. Pour la méthode d’authentification, sélectionnez **oAuth2** \> **Se connecter**. Quand vous y êtes invité, entrez vos informations d’identification Project Web App et suivez le processus d’authentification.
+
     
 Notez que vous devez disposer de la Visionneuse de portefeuilles, du Gestionnaire de portefeuilles ou d’autorisations Administrateur pour l’application Project Web App à laquelle vous vous connectez.
 
-6. Une notification indiquant que vos données sont en cours de chargement s’affiche. Selon la taille de votre compte, cela peut prendre un certain temps. Une fois les données importées dans Power BI, le volet de navigation de gauche contient un nouveau tableau de bord, 13 rapports et un jeu de données. Il s’agit du tableau de bord par défaut créé par Power BI pour afficher vos données. Vous pouvez modifier ce tableau de bord pour afficher vos données comme vous le souhaitez.
+9. Une notification indiquant que vos données sont en cours de chargement s’affiche. Selon la taille de votre compte, cela peut prendre un certain temps. Une fois les données importées dans Power BI, le contenu de votre nouvel espace de travail s’affiche. Vous devrez peut-être actualiser le jeu de données pour récupérer les dernières mises à jour. 
 
-   ![](media/service-connect-to-project-online/dashboard2.png)
+Une fois les données importées dans Power BI, le rapport de 13 pages et le jeu de données apparaissent dans le volet de navigation de gauche. 
 
-7. Une fois que votre tableau de bord et que vos rapports sont prêts, vous pouvez commencer à explorer vos données Project Online. Le pack de contenu intègre 13 rapports riches et détaillés : 6 pages de rapport pour la vue d’ensemble du portefeuille, 5 pages de rapport pour la vue d’ensemble des ressources et 2 pages de rapport pour l’état du projet. 
+10. Une fois que vos rapports sont prêts, vous pouvez commencer à explorer vos données Project Web App. L’application modèle intègre 13 rapports riches et détaillés : 6 pages de rapport pour la vue d’ensemble du portefeuille, 5 pages de rapport pour la vue d’ensemble des ressources et 2 pages de rapport pour l’état du projet. 
 
    ![](media/service-connect-to-project-online/report1.png)
    
@@ -55,12 +62,9 @@ Notez que vous devez disposer de la Visionneuse de portefeuilles, du Gestionnair
 
 **Et maintenant ?**
 
-* Essayez de [poser une question dans la zone Q&R](consumer/end-user-q-and-a.md) en haut du tableau de bord.
-* [Modifiez les vignettes](service-dashboard-edit-tile.md) dans le tableau de bord.
-* [Sélectionnez une vignette](consumer/end-user-tiles.md) pour ouvrir le rapport sous-jacent.
 * Même si une actualisation quotidienne de votre jeu de données est planifiée, vous pouvez modifier la planification de l’actualisation ou essayer d’actualiser le jeu de données sur demande à l’aide de l’option **Actualiser maintenant**.
 
-**Développer le pack de contenu**
+**Développer l’application modèle**
 
 Téléchargez le [fichier PBIT GitHub](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) pour personnaliser et mettre à jour le Pack de contenu.
 

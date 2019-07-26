@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/02/2019
+ms.date: 06/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 68467894850248d6acb841dc2ed651f595f19b95
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fa1311f93cd6b543d552070b990f1bada551a699
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61363669"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306929"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Utiliser le Sélecteur de plages numériques dans Power BI Desktop
-Le **Sélecteur de plages numériques** vous permet d’appliquer toutes sortes de filtres à toute colonne numérique dans votre modèle de données. Vous pouvez choisir de filtrer les nombres compris **entre** des valeurs, des nombres **inférieurs ou égaux** à une valeur, ou des nombres **supérieurs ou égaux** à une valeur. Bien que cette fonction puisse sembler simple, elle est très utile pour filtrer vos données.
+Le sélecteur de plages numériques vous permet d’appliquer toutes sortes de filtres à toute colonne numérique dans votre modèle de données. Il existe trois options pour filtrer vos données numériques : entre des valeurs, inférieur ou égal à une valeur, ou supérieur ou égal à une valeur. Cela peut sembler simple, mais il s’agit d’un moyen puissant de filtrer vos données.
 
 ![Visuel avec sélecteur de plages numériques](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
-## <a name="using-the-numeric-range-slicer"></a>Utilisation du Sélecteur de plages numériques
-Vous pouvez utiliser le Sélecteur de plages numériques comme tout autre segment. Créez simplement un visuel de **segment** pour votre rapport, puis sélectionnez une valeur numérique pour **Champ**. Dans l’image suivante, le champ *LineTotal* est sélectionné.
+## <a name="use-the-numeric-range-slicer"></a>Utiliser un sélecteur de plages numériques
+Vous pouvez utiliser le sélecteur de plages numériques comme tout autre segment. Créez simplement un visuel de **segment** pour votre rapport, puis sélectionnez une valeur numérique pour **Champ**. Dans l’image suivante, nous avons sélectionné le champ **LineTotal**.
 
 ![Créer un sélecteur de plages numériques](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
 
@@ -31,42 +31,41 @@ Sélectionnez la flèche pointant vers le bas dans l’angle supérieur droit du
 
 ![Menu du sélecteur de plages numériques](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-2-between.png)
 
-Pour la plage numérique, vous avez le choix entre les trois sélections suivantes :
+Pour la plage numérique, vous avez le choix entre les trois options suivantes :
 
-* Entre
-* Inférieur ou égal à
-* Supérieur ou égal à
+* **Entre**
+* **Inférieur ou égal à**
+* **Supérieur ou égal à**
 
-Lorsque vous sélectionnez **Entre** dans le menu, un curseur s’affiche qui vous permet de filtrer les valeurs numériques comprises entre les nombres définis. En plus d’utiliser la barre du curseur, vous pouvez cliquer dans chaque zone pour y entrer des valeurs. C’est pratique quand vous souhaitez segmenter sur des nombres spécifiques, car la granularité du déplacement de la barre du curseur rend difficile la sélection précise d’un nombre.
+Quand vous sélectionnez **Entre** dans le menu, un curseur s’affiche. Vous pouvez utiliser ce curseur pour sélectionner des valeurs numériques comprises entre les nombres. Parfois, la précision du déplacement de la barre du segment rend difficile le choix exact de ce nombre. Vous pouvez également utiliser le curseur et sélectionner l’une des cases pour taper les valeurs souhaitées. Cette option est pratique quand vous souhaitez effectuer un découpage sur des nombres spécifiques. 
 
-Dans l’image suivante, la page de rapport est filtrée pour les valeurs *LineTotal* comprises entre 2500.00 et 6000.00.
+Dans l’image suivante, la page de rapport filtre les valeurs **LineTotal** comprises entre 2500.00 et 6000.00.
 
 ![Sélecteur de plages numériques avec Entre](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-3-between-range.png)
 
-Lorsque nous sélectionnons **Inférieur ou égal à**, la poignée de gauche (valeur inférieure) de la barre du curseur disparaît, et nous ne pouvons ajuster que la limite supérieure de la barre du curseur. Dans l’image suivante, nous avons positionné la valeur maximale de la barre du curseur sur 5928.19.
+Quand vous sélectionnez **Inférieur ou égal à**, la poignée de gauche (valeur inférieure) de la barre du curseur disparaît, et vous ne pouvez ajuster que la limite supérieure de la barre du curseur. Dans l’image suivante, nous avons positionné la valeur maximale de la barre du curseur sur 5928.19.
 
 ![Sélecteur de plages numériques avec Inférieur à](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-4-less-than.png)
 
-Enfin, si nous sélectionnons l’option **Supérieur ou égal à**, la poignée de droite (valeur supérieure) de la barre du curseur disparaît, et nous ne pouvons ajuster que la valeur inférieure, comme illustré dans l’image suivante. À présent, seuls les articles dont la valeur *LineTotal* est supérieure ou égale à 4902.99 s’affichent dans les visuels de la page de rapport.
+Pour finir, si vous sélectionnez **Supérieur ou égal à**, la poignée de droite (valeur supérieure) de la barre du curseur disparaît. Vous pouvez ensuite ajuster la valeur inférieure, comme illustré dans l’image suivante. À présent, seuls les articles dont la valeur **LineTotal** est supérieure ou égale à 4902.99 s’affichent dans les visuels de la page de rapport.
 
 ![Sélecteur de plages numériques avec Supérieur à](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-5-greater-than.png)
 
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Aligner sur des nombres entiers avec le sélecteur de plages numériques
 
-Un sélecteur de plages numériques s’aligne sur les nombres entiers si le type de données du champ sous-jacent est **Nombre entier**. avec précision sur des nombres entiers. Les champs de type **Nombre décimal** vous permettent d’entrer ou de sélectionner des fractions d’un nombre. La mise en forme appliquée dans la zone de texte correspond à la mise en forme définie dans le champ, même si vous pouvez entrer ou sélectionner des nombres plus précis.
+Un sélecteur de plages numériques s’aligne sur les nombres entiers si le type de données du champ sous-jacent est **Nombre entier**. Cette fonctionnalité permet à votre segment de s’aligner avec précision sur des nombres entiers. Les champs **Nombre décimal** vous permettent d’entrer ou de sélectionner des fractions d’un nombre. La mise en forme définie dans la zone de texte correspond à celle définie dans le champ, même si vous pouvez entrer ou sélectionner des nombres plus précis.
 
 ## <a name="display-formatting-with-the-date-range-slicer"></a>Format d’affichage du sélecteur de plages de dates
 
-Quand vous utilisez un sélecteur pour afficher ou définir une plage de dates, la date est toujours affichée au format **Date courte**, selon les paramètres régionaux du navigateur ou du système d’exploitation de l’utilisateur. Le format d’affichage ne tient pas compte des paramètres de type de données dans le modèle sous-jacent ou les données sous-jacentes. 
+Quand vous utilisez un segment pour afficher ou définir une plage de dates, les dates s’affichent au format **Date courte**. Les paramètres régionaux du navigateur ou du système d’exploitation de l’utilisateur déterminent le format de la date. Ainsi, il s’agira du format d’affichage, quels que soient les paramètres de type de données pour les données ou le modèle sous-jacents. 
 
-Par exemple, le type des données sous-jacentes peut être au format Date longue (comme *jjjj j MMMM aaaa*, qui permet d’afficher une date dans d’autres visuels ou circonstances au format *mercredi 14 mars 2001*), alors que, dans le sélecteur de plages de dates, les dates s’affichent selon le format *14/03/2001*.
+Vous pourriez, par exemple, avoir un format de date long pour le type de données sous-jacent. Dans ce cas, un format de date tel que *jjjj, MMMM J, aaaa* mettrait en forme une date dans d’autres visuels ou circonstances comme *Wednesday, March 14, 2001*. Mais dans le segment de plage de dates, cette date s’affiche dans le segment sous la forme *03/14/2001*.
 
 L’affichage au format **Date courte** dans le sélecteur garantit le maintien d’une longueur de chaîne cohérente et compacte dans le sélecteur. 
 
-
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
-Les considérations et limitations suivantes s’appliquent actuellement à l’utilisation du **sélecteur de plages numériques** :
+Les considérations et limitations suivantes s’appliquent à l’utilisation du **sélecteur de plages numériques** :
 
-* Le **Sélecteur de plages numériques** filtre actuellement chaque ligne sous-jacente dans les données, mais pas de valeur agrégée. Par exemple, en cas d’utilisation d’un champ *Montant des ventes*, chaque transaction basée sur un *Montant des ventes* est filtrée, mais pas la somme *Montant des ventes* pour chaque point de données d’un visuel.
-* Il ne fonctionne pas avec des mesures.
-* Vous pouvez taper n’importe quel nombre dans les zones de texte d’un sélecteur numérique, même s’il se trouve en dehors de la plage de valeurs de la colonne sous-jacente. Cela vous permet de configurer des filtres si vous savez que les données peuvent changer ultérieurement.
+* Le **Sélecteur de plages numériques** filtre chaque ligne sous-jacente dans les données, mais pas de valeur agrégée. Par exemple, supposez que vous utilisez un champ *Montant des ventes*. Le segment filtre alors chaque transaction en fonction du montant des ventes, et non de la somme du montant des ventes pour chaque point de données d’un visuel.
+* Cela ne fonctionne pas actuellement avec des mesures.
+* Vous pouvez taper n’importe quel nombre dans les zones de texte d’un sélecteur numérique, même s’il se trouve en dehors de la plage de valeurs de la colonne sous-jacente. Cette option vous permet de configurer des filtres si vous savez que les données peuvent changer ultérieurement.

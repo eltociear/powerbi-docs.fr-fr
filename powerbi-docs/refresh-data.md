@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
-ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
+ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67561831"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325032"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -55,7 +55,7 @@ Dans la mesure où Power BI met en cache les données, la taille des jeux de don
 | --- | --- |
 | Partagée, A1, A2 ou A3 | 1 Go |
 | A4 ou P1 | 3 Go |
-| A4 ou P2 | 6 Go |
+| A5 ou P2 | 6 Go |
 | A6 ou P3 | 10 Go |
 | | |
 
@@ -160,7 +160,7 @@ Quels que soient les modes de stockage, aucune actualisation des données ne peu
 
 ### <a name="connecting-to-on-premises-data-sources"></a>Connexion à des sources de données locales
 
-Si votre jeu de données utilise une source de données à laquelle Power BI ne peut pas accéder par le biais d’une connexion réseau directe, vous devez configurer une connexion de passerelle pour ce jeu de données avant d’activer une planification d’actualisation ou d’effectuer une actualisation des données à la demande. Pour plus d’informations sur les passerelles de données et leur fonctionnement, consultez [Que sont les passerelles de données locales ?](service-gateway-getting-started.md)
+Si votre jeu de données utilise une source de données à laquelle Power BI ne peut pas accéder par le biais d’une connexion réseau directe, vous devez configurer une connexion de passerelle pour ce jeu de données avant d’activer une planification d’actualisation ou d’effectuer une actualisation des données à la demande. Pour plus d’informations sur les passerelles de données et leur fonctionnement, consultez [Que sont les passerelles de données locales ?](service-gateway-onprem.md)
 
 Les options suivantes s’offrent à vous :
 
@@ -174,7 +174,10 @@ Les options suivantes s’offrent à vous :
 
 Microsoft recommande d’utiliser une passerelle de données d’entreprise plutôt qu’une passerelle personnelle pour connecter un jeu de données à une source de données locale. Vérifiez que la passerelle est correctement configurée, c’est-à-dire qu’elle doit disposer des dernières mises à jour et de toutes les définitions de source de données nécessaires. Une définition de source de données fournit à Power BI les informations de connexion pour une source donnée, notamment les points de terminaison de connexion, le mode d’authentification et les informations d’identification. Pour plus d’informations sur la gestion des sources de données sur une passerelle, consultez [Gérer votre source de données - Importation/actualisation planifiée](service-gateway-enterprise-manage-scheduled-refresh.md).
 
-La connexion d’un jeu de données à une passerelle d’entreprise est relativement simple si vous êtes administrateur de passerelle. Avec des autorisations d’administrateur, vous pouvez rapidement mettre à jour la passerelle et ajouter des sources de données manquantes si nécessaire. En fait, vous pouvez ajouter une source de données manquante à votre passerelle directement à partir de la page de paramètres du jeu de données. Développez le bouton bascule pour afficher les sources de données et sélectionnez le lien **Ajouter à la passerelle**, comme dans la capture d’écran suivante. En revanche, si vous n’êtes pas administrateur de passerelle, utilisez les informations de contact affichées pour demander à un administrateur de passerelle d’ajouter la définition de source de données nécessaire.
+La connexion d’un jeu de données à une passerelle d’entreprise est relativement simple si vous êtes administrateur de passerelle. Avec des autorisations d’administrateur, vous pouvez rapidement mettre à jour la passerelle et ajouter des sources de données manquantes si nécessaire. En fait, vous pouvez ajouter une source de données manquante à votre passerelle directement à partir de la page de paramètres du jeu de données. Développez le bouton bascule pour afficher les sources de données et sélectionnez le lien **Ajouter à la passerelle**, comme dans la capture d’écran suivante. En revanche, si vous n’êtes pas administrateur de passerelle, vous devez en contacter un pour ajouter la définition de source de données nécessaire.
+
+> [!NOTE]
+> Seuls les administrateurs de passerelle peuvent ajouter des sources de données à une passerelle. Vérifiez également que votre administrateur de passerelle ajoute votre compte d’utilisateur à la liste des utilisateurs autorisés à utiliser la source de données. La page Paramètres du jeu de données vous permet seulement de sélectionner une passerelle d’entreprise avec une source de données correspondante que vous avez l’autorisation d’utiliser.
 
 ![Ajouter à la passerelle](media/refresh-data/add-to-gateway.png)
 
@@ -284,6 +287,8 @@ Notez également que l’heure d’actualisation configurée peut ne pas être l
 ### <a name="getting-refresh-failure-notifications"></a>Obtention de notifications d’échec d’actualisation
 
 Par défaut, Power BI envoie des notifications d’échec d’actualisation par e-mail au propriétaire du jeu de données pour qu’il puisse agir rapidement. Power BI vous envoie également une notification quand le service désactive votre planification en raison d’échecs consécutifs. Microsoft vous recommande de laisser la case **M’envoyer des e-mails de notification d’échec d’actualisation** cochée.
+
+Il est également judicieux de spécifier des destinataires supplémentaires via la zone de texte **Envoyer un e-mail à ces utilisateurs en cas d’échec de l’actualisation**. En plus du propriétaire du jeu de données, les destinataires spécifiés reçoivent des notifications d’échec de l’actualisation. Il peut s’agir d’un collègue s’occupant de vos jeux de données quand vous êtes en vacances. Il peut également s’agir de l’alias d’e-mail de votre équipe de support qui prend en charge les problèmes d’actualisation pour votre service ou votre organisation. L’envoi de notifications d’échec d’actualisation à d’autres personnes en plus du propriétaire du jeu de données est pratique pour garantir que les problèmes sont remarqués et résolus en temps opportun.
 
 Notez que Power BI envoie non seulement des notifications sur les échecs d’actualisation, mais également quand le service met en pause une actualisation planifiée pour cause d’inactivité. Après deux mois, quand un utilisateur n’a visité aucun tableau de bord ou rapport créé sur le jeu de données, Power BI considère le jeu de données comme étant inactif. Dans ce cas, Power BI envoie un e-mail au propriétaire du jeu de données indiquant que le service a interrompu la planification de l’actualisation du jeu de données. Consultez la capture d’écran suivante pour obtenir un exemple de notification.
 

@@ -1,5 +1,5 @@
 ---
-title: Filtres et mise en évidence dans les rapports Power BI
+title: Filtres et mise en évidence dans les rapports Power BI
 description: À propos des filtres et de la mise en évidence dans les rapports Power BI
 author: maggiesMSFT
 manager: kfile
@@ -10,25 +10,25 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 8084b8dbbc27c856633d84c6628727dcd426964d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4584ad0f8c083a765b1a1a9943496b40a3ed4bdf
+ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187538"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68342161"
 ---
-# <a name="filters-and-highlighting-in-power-bi-reports"></a>Filtres et mise en évidence dans les rapports Power BI
- Cet article vous présente le filtrage et mise en évidence dans le service Power BI. L’expérience est presque la même dans Power BI Desktop. Les *filtres* masquent tout, sauf les données qui vous intéressent. *Mise en surbrillance* n’est pas le filtrage. Il ne supprime les données, mais au lieu de cela met en évidence un sous-ensemble des données visibles ; les données qui n’est pas mise en évidence restent visibles, mais sont estompées.
+# <a name="filters-and-highlighting-in-power-bi-reports"></a>Filtres et mise en évidence dans les rapports Power BI
+ Cet article vous présente le filtrage et la mise en évidence dans le service Power BI. L’expérience est presque la même dans Power BI Desktop. Les *filtres* masquent tout, sauf les données qui vous intéressent. La *mise en évidence* n’est pas du filtrage. Elle ne supprime pas des données, mais elle met en évidence une partie des données visibles ; les données qui ne sont pas mises en évidence restent visibles, mais elles sont estompées.
 
 Il existe de nombreuses façons de filtrer et de mettre en évidence des rapports dans Power BI. Expliquer ces méthodes dans un seul article serait déroutant. Nous les avons donc réparties comme suit :
 
-* Présentation des filtres et mise en surbrillance, de l’article vous lisez maintenant.
-* Comment [créer et utiliser des filtres en mode édition](power-bi-report-add-filter.md) dans les rapports dans Power BI Desktop et le service Power BI. Quand vous disposez d’autorisations de modification d’un rapport, vous pouvez créer, modifier et supprimer les filtres dans ces rapports.
-* Comment visuels [filtrer et mettre en surbrillance dans un rapport partagé avec vous](consumer/end-user-interactions.md), en mode lecture dans le service Power BI des rapports. Ce que vous pouvez faire est plus limité, mais vous disposez toujours d’un large éventail d’options de filtrage et de mise en surbrillance.  
-* Visite guidée détaillée de la [de filtre et de mise en évidence des contrôles disponibles en mode édition](power-bi-report-add-filter.md) dans Power BI Desktop et le service Power BI. L’article prend un examen approfondi des types de filtres tels que la date et l’heure, numérique et le texte. Il couvre également les différences entre les options de base et avancées.
+* Présentation des filtres et de la mise en évidence, l’article que vous lisez en ce moment.
+* Comment [créer et utiliser des filtres en mode Édition](power-bi-report-add-filter.md) dans des rapports dans Power BI Desktop et le service Power BI. Quand vous disposez d’autorisations de modification d’un rapport, vous pouvez créer, modifier et supprimer les filtres dans ces rapports.
+* Comment les visuels [filtrent et mettent en évidence dans un rapport partagé avec vous](consumer/end-user-interactions.md) en mode Lecture d’un rapport, dans le service Power BI. Ce que vous pouvez faire est plus limité, mais vous disposez toujours d’un large éventail d’options de filtrage et de mise en surbrillance.  
+* Présentation détaillée des [contrôles de filtre et de mise en évidence en mode Édition](power-bi-report-add-filter.md) dans Power BI Desktop et le service Power BI. L’article examine en détail les types de filtres, notamment date et heure, numérique et texte. Il couvre également les différences entre les options de base et les options avancées.
 * Après avoir découvert le fonctionnement par défaut des filtres et de la mise en surbrillance, découvrez comment [modifier l’affichage des visualisations sur un filtre au niveau de la page et effectuer une mise en surbrillance](service-reports-visual-interactions.md)
 
-**Le saviez-vous ?** Power BI a une nouvelle expérience de filtre, actuellement en préversion. En savoir plus sur [la nouvelle expérience de filtre dans les rapports Power BI](power-bi-report-filter-preview.md).
+**Le saviez-vous ?** Power BI a une nouvelle expérience de filtre, actuellement en préversion. En savoir plus sur [la nouvelle expérience de filtre dans les rapports Power BI](power-bi-report-filter.md).
 
 ![Nouvelle expérience de filtre](media/power-bi-reports-filters-and-highlighting/power-bi-filter-reading.png)
 
@@ -67,32 +67,32 @@ Par conséquent, cette page de rapport a 6 filtres au niveau de la page et 1 f
 
 Chaque visuel peut avoir des filtres pour tous les champs dans le visuel et un auteur de rapport peut en ajouter d’autres. Dans l’image ci-dessous, 6 filtres ont été appliqués au graphique en bulles.
 
-![Filtres au niveau du visuel](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
+![Filtre au niveau du visuel](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
 En mode Lecture, explorez les données en modifiant les filtres existants. Les modifications que vous avez apportées sont enregistrées avec le rapport, même si vous ouvrez le rapport dans une application mobile. Découvrez comment en [explorant le volet Filtres de rapport](consumer/end-user-report-filter.md)
 
 Quand vous quittez le rapport, vos filtres sont enregistrés. Pour annuler votre filtrage et revenir au filtrage, à la segmentation, à l’extraction et au tri définis par défaut par l’auteur du rapport, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus du haut.
 
-![Réinitialiser l’icône par défaut](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
+![Icône Rétablir les valeurs par défaut](media/power-bi-reports-filters-and-highlighting/power-bi-reset-to-default.png)
 
 ### <a name="filters-in-editing-view"></a>Filtres en mode Édition
 Quand vous disposez des autorisations de propriétaire sur un rapport et que vous ouvrez celui-ci en mode Édition, **Filtres** est l’un des volets d’édition disponibles.
 
-![Volet filtres en mode édition](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
+![Volet Filtres en mode Édition](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-editing-view.png)
 
 Comme en mode Lecture, cette page de rapport a 6 filtres au niveau de la page et 1 filtre au niveau du rapport. Quand vous sélectionnez le graphique en bulles, vous voyez que 6 filtres au niveau du visuel s’appliquent.
 
 Il est possible d’en faire plus avec les filtres et la mise en surbrillance en mode Édition. Principalement, nous pouvons ajouter de nouveaux filtres. Découvrez comment [ajouter un filtre à un rapport](power-bi-report-add-filter.md) et bien plus encore.
 
 ## <a name="ad-hoc-highlighting"></a>Mise en évidence ad hoc
-Sélectionner une étiquette de valeur ou un axe dans un visuel pour mettre en évidence les autres visuels sur la page. Pour supprimer la mise en surbrillance, sélectionnez à nouveau de la valeur, ou sélectionnez un espace vide dans le même visuel. Mise en surbrillance est un plaisir permet d’Explorer rapidement l’impact des données. Pour plus d’informations sur la mise en surbrillance croisée, consultez [Interactions entre les visuels](service-reports-visual-interactions.md).
+Sélectionnez une valeur ou une étiquette d’axe dans un visuel pour mettre en évidence les autres visuels de la page. Pour supprimer la mise en évidence, resélectionnez la valeur ou sélectionnez un endroit vide dans le même visuel. Ce type de mise en évidence est un moyen facile d’explorer rapidement l’impact des données. Pour plus d’informations sur la mise en surbrillance croisée, consultez [Interactions entre les visuels](service-reports-visual-interactions.md).
 
 ![Mise en surbrillance croisée](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[La nouvelle expérience de filtre dans les rapports Power BI](power-bi-report-filter-preview.md)
+[La nouvelle expérience des filtres dans les rapports Power BI](power-bi-report-filter.md)
 
 [Ajouter un filtre à un rapport (en mode Édition)](power-bi-report-add-filter.md)
 

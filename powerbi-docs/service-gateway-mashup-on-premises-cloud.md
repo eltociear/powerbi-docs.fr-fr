@@ -7,24 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 06/06/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7b863af882604be8c2c59fd21f26cd8441f9e170
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 39f5a01a396e45207777b1a5e58e73808ddf3f88
+ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54272647"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68352177"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Fusionner ou ajouter des sources de données locales et cloud
 
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
+
 La passerelle de données locale permet de fusionner ou d’ajouter des sources de données locales et cloud dans la même requête. C’est utile si vous souhaitez combiner des données provenant de plusieurs sources sans avoir à utiliser des requêtes distinctes.
+
+>[!NOTE]
+>Cet article s’applique uniquement aux jeux de données dont les sources de données cloud et locales ont été fusionnées ou ajoutées dans une seule requête. Pour les jeux de données qui incluent des requêtes distinctes (une qui se connecte à une source de données locale et l’autre à une source de données cloud), la requête qui utilise la source de données cloud n’est pas exécutée à l’aide de la passerelle.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-- Une [passerelle installée](service-gateway-install.md) sur un ordinateur local.
+- Une [passerelle installée](/data-integration/gateway/service-gateway-install) sur un ordinateur local.
 - Un fichier Power BI Desktop avec des requêtes qui combinent des sources de données locales et cloud.
+
+>[!NOTE]
+>Pour accéder à n’importe quelle source de données cloud, vous devez vérifier que la passerelle a accès à ces sources de données.
 
 1. Dans l’angle supérieur droit du service Power BI, sélectionnez l’![icône d’engrenage Paramètres](media/service-gateway-mashup-on-premises-cloud/icon-gear.png) > **Gérer les passerelles**.
 
@@ -46,10 +54,11 @@ La passerelle de données locale permet de fusionner ou d’ajouter des sources 
 
    - Sous **Informations d’identification de la source de données**, modifiez les informations d’identification des sources de données cloud selon vos besoins.
 
+    Vérifiez que les niveaux de confidentialité des sources de données cloud et locales sont définis de manière appropriée pour assurer le traitement sécurisé des jointures.
+
      ![Paramètres du jeu de données](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
 7. Avec le jeu d’informations d’identification cloud, vous pouvez maintenant actualiser le jeu de données à l’aide de l’option **Actualiser maintenant** ou le planifier pour l’actualiser régulièrement.
-
 
 ## <a name="next-steps"></a>Étapes suivantes
 

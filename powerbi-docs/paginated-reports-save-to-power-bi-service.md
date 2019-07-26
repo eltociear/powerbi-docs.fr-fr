@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 1e5f4a4fda8c6d11ead487ce2891e5c085463b75
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 81e079be6c8bec27c006c68eccb3ea1091b813df
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839592"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271215"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publier un rapport paginé dans le service Power BI
 
@@ -79,7 +79,7 @@ Comme tout autre rapport Power BI, si la source des données du rapport est loca
 
    ![Gérer le rapport paginé](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-manage.png)
 
-1. Consultez l’article du service Power BI [Installer une passerelle](service-gateway-install.md) pour plus d’informations et connaître les prochaines étapes.
+1. Consultez l’article du service Power BI [Qu’est-ce qu’une passerelle de données locale ?](service-gateway-onprem.md) pour plus d’informations et connaître les prochaines étapes.
 
 ### <a name="gateway-limitations"></a>Limitations de la passerelle
 

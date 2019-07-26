@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/18/2019
-ms.openlocfilehash: 10ac6ed9f49241103d03f2667ccc8db5d619db6c
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.date: 07/15/2019
+ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345527"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270799"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -119,10 +119,10 @@ Vous obtenez un message d’erreur si vous essayez de charger un fichier avec un
 
 Nous prenons en charge les sources de données suivantes : 
 
-- Jeux de données Power BI Premium
+- Jeux de données Power BI (via l’authentification unique)
 - Azure Analysis Services (via SSO et oAuth)
 - Azure SQL Data Warehouse
-- Azure SQL Database (nom d'utilisateur/mot de passe et oAuth)
+- Azure SQL Database (nom d’utilisateur/mot de passe, authentification unique et OAuth)
 - SQL Server*
 - Modèles tabulaires (DAX) et multidimensionnels (MDX) SQL Server Analysis Services (SSAS)** 
 - Oracle* 
@@ -134,11 +134,11 @@ Lorsque vous accédez à SSAS via la passerelle, l’utilisateur dont les inform
 
 ### <a name="what-authentication-methods-do-you-support"></a>Quelles méthodes d’authentification prenez-vous en charge ?
 
-Nous prenons en charge l’authentification unique (SSO) pour Azure Analysis Services et les sources de données Power BI Premium, tout comme oAuth et l’authentification unique (SSO) pour Azure SQL Database.  Pour les autres sources de données, vous devez stocker un nom d’utilisateur et un mot de passe avec la source de données dans le portail ou de la passerelle.  
+Nous prenons en charge l’authentification unique pour les sources de données Azure Analysis Services, Azure SQL Database et Power BI.  Nous prenons également en charge OAuth pour Azure SQL Database et Azure Analysis Services.  Pour les autres sources de données, vous devez stocker un nom d’utilisateur et un mot de passe avec la source de données dans le portail ou de la passerelle.  
 
 ### <a name="can-i-use-a-power-bi-dataset-as-a-data-source-for-my-paginated-report"></a>Puis-je utiliser un jeu de données Power BI comme source de données pour mon rapport paginé ?
 
-Oui, nous prenons en charge les jeux de données Power BI Premium comme sources de données pour vos rapports paginés.
+Oui, nous prenons en charge les jeux de données Power BI comme sources de données pour vos rapports paginés.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Puis-je utiliser des procédures stockées via la passerelle ?
 
@@ -179,10 +179,6 @@ Nous prévoyons que les rapports prennent autant que possible en charge les mêm
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Un outil de migration qui permettrait aux clients SSRS de déplacer leurs ressources et rapports existants vers Power BI est-il prévu ?
 
 Nous évaluons les options présentes ici pour autoriser le déplacement du contenu vers Power BI de manière automatisée, mais cette option ne sera pas disponible avant la disponibilité générale.
-
-### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>Pourrai-je un jour créer des rapports paginés et des rapports Power BI dans un seul outil de création ?
-
-Nous avons effectivement étudié ce scénario, mais cela n’est pas prévu dans nos plans pour le moment.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Y-a-t-il un contrôle de visionneuse de rapports pour les rapports paginés dans le service Power BI ?
 

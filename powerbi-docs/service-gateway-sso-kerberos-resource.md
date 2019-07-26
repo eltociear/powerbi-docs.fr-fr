@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/08/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6da5d89ae1ad3b98a879e4d99a10aa69224e1c46
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 6dc530305634b44415ddccb9c42952c0bfbe2e5f
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383357"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271924"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos basé sur les ressources pour l’authentification unique (SSO) de Power BI à des sources de données locales
 
@@ -23,7 +23,7 @@ Utilisez la [délégation contrainte Kerberos basée sur les ressources](/window
 
 ## <a name="preparing-for-resource-based-kerberos-constrained-delegation"></a>Préparation d’une délégation contrainte Kerberos basée sur les ressources
 
-Plusieurs éléments doivent être configurés pour qu’une délégation Kerberos contrainte fonctionne correctement, dont les _noms de principal du service_ (SPN) et les paramètres de délégation sur les comptes de service. 
+Plusieurs éléments doivent être configurés pour qu’une délégation Kerberos contrainte fonctionne correctement, dont les _noms de principal du service_ (SPN) et les paramètres de délégation sur les comptes de service.
 
 ### <a name="prerequisite-1-operating-system-requirements"></a>Prérequis 1 : Configuration du système d’exploitation requise
 
@@ -31,7 +31,7 @@ La délégation contrainte basée sur les ressources ne peut être configurée q
 
 ### <a name="prerequisite-2-install-and-configure-the-on-premises-data-gateway"></a>Prérequis 2 : Installer et configurer la passerelle de données locale
 
-Cette version de la passerelle de données locale prend en charge une mise à niveau sur place, ainsi qu’une _prise de contrôle des paramètres_ de passerelles existantes.
+La passerelle de données locale prend en charge la mise à niveau sur place et la _prise de contrôle des paramètres_ de passerelles existantes.
 
 ### <a name="prerequisite-3-run-the-gateway-windows-service-as-a-domain-account"></a>Prérequis 3 : Exécuter le service Windows de passerelle en tant que compte de domaine
 
@@ -39,7 +39,7 @@ Dans une installation standard, la passerelle s’exécute en tant que compte de
 
 ![Compte de domaine](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-Pour activer une **délégation Kerberos contrainte, la passerelle doit opérer en tant que compte de domaine, sauf si votre annuaire Azure AD est déjà synchronisé avec votre annuaire Active Directory local (à l’aide d’Active Directory DirSync/Connect). Si vous devez changer de compte au profit d’un compte de domaine, consultez [Basculer la passerelle vers un compte de domaine](service-gateway-sso-kerberos.md).
+Pour activer une **délégation Kerberos contrainte, la passerelle doit opérer en tant que compte de domaine, sauf si votre annuaire Azure AD est déjà synchronisé avec votre annuaire Active Directory local (à l’aide d’Active Directory DirSync/Connect). Si vous devez changer de compte au profit d’un compte de domaine, consultez [Changer le compte de service de passerelle](/data-integration/gateway/service-gateway-service-account).
 
 Si Azure AD DirSync / Connect est configuré et que les comptes d’utilisateur sont synchronisés, le service de passerelle n’a pas besoin d’effectuer des recherches Active Directory locales lors de l’exécution. Vous pouvez utiliser le SID de service local (au lieu d’exiger un compte de domaine) pour le service de passerelle. Les étapes de configuration de la délégation Kerberos contrainte décrites dans cet article sont les mêmes que celles de cette configuration (elles sont simplement appliquées à l’objet ordinateur de la passerelle dans Active Directory, au lieu du compte de domaine).
 
@@ -51,9 +51,9 @@ S’il est techniquement possible pour un administrateur de domaine ne disposant
 
 Pour configurer correctement le système, nous devons configurer ou valider les deux éléments suivants :
 
-1. Si nécessaire, configurez un nom de principal du service pour le compte de domaine du service de passerelle.
+* Si nécessaire, configurez un nom de principal du service pour le compte de domaine du service de passerelle.
 
-1. Configurez les paramètres de délégation sur le compte de domaine du service de passerelle.
+* Configurez les paramètres de délégation sur le compte de domaine du service de passerelle.
 
 Notez que, pour effectuer ces deux étapes de configuration, vous devez être administrateur de domaine.
 
@@ -61,15 +61,15 @@ Les sections suivantes décrivent ces étapes successivement.
 
 ### <a name="configure-an-spn-for-the-gateway-service-account"></a>Configurer un nom de principal du service pour le compte de service de passerelle
 
-Tout d’abord, déterminez si un nom de principal du service a déjà été créé pour le compte de domaine utilisé en tant que compte de service de passerelle, mais en procédant comme suit :
+Déterminez d’abord si un nom de principal du service a déjà été créé pour le compte de domaine utilisé comme compte de service de passerelle en suivant ces étapes :
 
 1. En tant qu’administrateur de domaine, lancez **Utilisateurs et ordinateurs Active Directory**.
 
-1. Cliquez avec le bouton droit sur le domaine, sélectionnez **Trouver**, puis tapez le nom du compte de service de passerelle.
+1. Cliquez avec le bouton droit sur le domaine, sélectionnez **Rechercher**, puis tapez le nom du compte de service de passerelle.
 
 1. Dans la zone de recherche, cliquez avec le bouton droit sur le compte de service de passerelle, puis sélectionnez **Propriétés**.
 
-1. Si l’onglet **Délégation** est visible dans la boîte de dialogue **Propriétés**, cela signifie qu’un nom de principal du service a déjà été créé et que vous pouvez passer directement à la sous-section suivante relative à la configuration des paramètres de délégation.
+1. Si l’onglet **Délégation** est visible dans la boîte de dialogue **Propriétés**, cela signifie qu’un nom de principal du service a déjà été créé et que vous pouvez passer directement à la sous-section suivante relative à la [configuration des paramètres de délégation](#configure-delegation-settings).
 
     Si aucun onglet **Délégation** ne figure dans la boîte de dialogue **Propriétés**, vous pouvez créer manuellement un nom de principal du service sur ce compte, ce qui a pour effet d’ajouter l’onglet **Délégation** (il s’agit de la façon la plus simple de configurer les paramètres de délégation). Il est possible de créer un nom de principal du service à l’aide de l’[outil setspn](https://technet.microsoft.com/library/cc731241.aspx) qui est fourni avec Windows (pour ce faire, vous avez besoin de droits d’administrateur de domaine).
 
@@ -83,10 +83,10 @@ Tout d’abord, déterminez si un nom de principal du service a déjà été cr�
 
 Dans les étapes suivantes, nous supposons un environnement local comprenant deux machines dans différents domaines : une machine de passerelle et un serveur de base de données exécutant SQL Server. Nous supposons également les paramètres et noms suivants :
 
-- Nom de la machine de la passerelle : **PBIEgwTestGW**
-- Compte de service de passerelle : **PBIEgwTestFrontEnd\GatewaySvc** (nom complet du compte : Gateway Connector)
-- Nom de la machine source de données SQL Server : **PBIEgwTestSQL**
-- Compte de service de source de données SQL Server : **PBIEgwTestBackEnd\SQLService**
+* Nom de la machine de la passerelle : **PBIEgwTestGW**
+* Compte de service de passerelle : **PBIEgwTestFrontEnd\GatewaySvc** (nom complet du compte : Gateway Connector)
+* Nom de la machine source de données SQL Server : **PBIEgwTestSQL**
+* Compte de service de source de données SQL Server : **PBIEgwTestBackEnd\SQLService**
 
 Étant donné ces exemples de noms et de paramètres, utilisez les étapes de configuration suivantes :
 
@@ -102,7 +102,7 @@ Dans les étapes suivantes, nous supposons un environnement local comprenant deu
 
     ![Propriétés du groupe](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
-1. Ouvrez l’invite de commandes et exécutez les commandes suivantes dans le contrôleur de domaine pour le domaine **PBIEgwTestBack-end** pour mettre à jour l’attribut msDS-AllowedToActOnBehalfOfOtherIdentity du compte de service back-end :
+1. Ouvrez une invite de commandes et exécutez les commandes suivantes dans le contrôleur de domaine pour le domaine **PBIEgwTestBack-end** pour mettre à jour l’attribut msDS-AllowedToActOnBehalfOfOtherIdentity du compte de service back-end :
 
     ```powershell
     $c = Get-ADGroup ResourceDelGroup
@@ -125,7 +125,7 @@ Enfin, sur la machine exécutant le service de passerelle (**PBIEgwTestGW** dans
 
 1. Cliquez avec le bouton droit et ouvrez **Propriétés** pour **Emprunter l’identité d’un client après l’authentification**, puis vérifiez la liste des comptes. Elle doit inclure le compte de service de passerelle ( **PBIEgwTestFront-end**  **\GatewaySvc** ).
 
-1. Dans la liste des stratégies sous **Attribution des droits utilisateur**, sélectionnez **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)**. Assurez-vous que le compte de service de passerelle est également inclus dans la liste des comptes.
+1. Dans la liste des stratégies sous **Attribution des droits utilisateur**, sélectionnez **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)** . Assurez-vous que le compte de service de passerelle est également inclus dans la liste des comptes.
 
 1. Redémarrez le processus de service **Passerelle de données locale**.
 
@@ -139,10 +139,10 @@ Cette configuration ne fonctionne pas dans la plupart des cas. Toutefois, avec K
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, voir les ressources suivantes :
+Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, consultez les ressources suivantes :
 
-- [Passerelle de données locale](service-gateway-onprem.md)
-- [DirectQuery dans Power BI](desktop-directquery-about.md)
-- [Sources de données prises en charge par DirectQuery](desktop-directquery-data-sources.md)
-- [DirectQuery et SAP BW](desktop-directquery-sap-bw.md)
-- [DirectQuery et SAP HANA](desktop-directquery-sap-hana.md)
+* [Qu’est-ce qu’une passerelle de données locale ?](/data-integration/gateway/service-gateway-onprem.md)
+* [DirectQuery dans Power BI](desktop-directquery-about.md)
+* [Sources de données prises en charge par DirectQuery](desktop-directquery-data-sources.md)
+* [DirectQuery et SAP BW](desktop-directquery-sap-bw.md)
+* [DirectQuery et SAP HANA](desktop-directquery-sap-hana.md)

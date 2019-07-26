@@ -1,5 +1,5 @@
 ---
-title: Utiliser des agrégations dans Power BI Desktop (préversion)
+title: Utiliser des agrégations dans Power BI Desktop
 description: Effectuer une analyse interactive de Big Data dans Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f14b6878d44510631822dd26458bdaa17c1fe3a0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239594"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325204"
 ---
-# <a name="aggregations-in-power-bi-desktop-preview"></a>Agrégations dans Power BI Desktop (préversion)
+# <a name="aggregations-in-power-bi-desktop"></a>Agrégations dans Power BI Desktop
 
 Les **agrégations** de Power BI permettent d’effectuer une analyse interactive du Big Data qui jusqu’ici était impossible. Les **agrégations** peuvent réduire considérablement le coût de déverrouillage des jeux de données volumineux pour la prise de décision.
 
@@ -36,16 +36,6 @@ Le stockage de niveau table est normalement utilisé avec la fonctionnalité d�
 Les agrégations sont utilisées avec des sources de données représentant des modèles dimensionnels, par exemple, des entrepôts de données, des mini-data warehouses et des sources de Big Data Hadoop. Cet article décrit les principales différences de modélisation dans Power BI pour chaque type de source de données.
 
 Toutes les sources (non-multidimensionnelles) DirectQuery et d’importation Power BI fonctionnent avec les agrégations.
-
-## <a name="enabling-the-aggregations-preview-feature"></a>Activation de la fonctionnalité d’évaluation d’agrégations
-
-La fonctionnalité d’**agrégations** est en préversion et doit être activée dans **Power BI Desktop**. Pour activer les **agrégations**, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en préversion**, puis cochez les cases **Modèles composites** et **Gérer les agrégations**. 
-
-![activation des fonctionnalités en préversion](media/desktop-aggregations/aggregations_01.jpg)
-
-Vous devrez redémarrer **Power BI Desktop** pour activer la fonctionnalité.
-
-![redémarrage requis pour appliquer les modifications](media/desktop-composite-models/composite-models_03.png)
 
 ## <a name="aggregations-based-on-relationships"></a>Agrégations basées sur des relations
 
@@ -103,8 +93,10 @@ Le seul cas où une relation *inter-sources* est considérée comme forte est ce
 
 Pour les correspondances d’agrégation *inter-sources* qui ne dépendent pas de relations, voir la section ci-dessous sur les agrégations en fonction des colonnes Grouper par.
 
-### <a name="aggregation-table-is-hidden"></a>La table d’agrégation est masquée
-La table **Sales Agg** est masquée. Les tables d’agrégation doivent toujours être masquées aux yeux des consommateurs du jeu de données. Les consommateurs et les requêtes font référence à la table de détail, et non à la table d’agrégation. Ils n’ont même pas besoin de savoir que la table d’agrégation existe.
+### <a name="aggregation-tables-are-not-addressable"></a>Les tables d’agrégation ne sont pas adressables
+Les utilisateurs disposant d’un accès en lecture seule au jeu de données ne peuvent pas interroger les tables d’agrégation. Cela évite les problèmes de sécurité en cas d’utilisation avec la sécurité au niveau des lignes. Les consommateurs et les requêtes font référence à la table de détail, et non à la table d’agrégation. Ils n’ont même pas besoin de savoir que la table d’agrégation existe.
+
+Pour cette raison, la table **Sales Agg** doit être masquée. Si elle ne l’est pas, la boîte de dialogue Gérer les agrégations la définit comme masquée quand vous cliquez sur le bouton Appliquer tout.
 
 ### <a name="manage-aggregations-dialog"></a>Boîte de dialogue Gérer les agrégations
 Maintenant, nous allons définir les agrégations. Sélectionnez le menu contextuel **Gérer les agrégations** pour la table **Sales Agg** en cliquant avec le bouton droit sur la table.
@@ -136,11 +128,7 @@ Les validations notables suivantes sont appliquées par la boîte de dialogue :
 * La colonne de détail sélectionnée doit avoir le même type de données que la colonne d’agrégation, sauf pour les fonctions de totalisation Nombre et Compter les lignes de la table. Les options Nombre et Compter les lignes de la table sont proposées uniquement pour les colonnes d’agrégation d’entiers et ne nécessitent pas de type de données correspondant.
 * Les agrégations chaînées couvrant trois tables ou plus ne sont pas autorisées. Par exemple, vous ne pouvez pas configurer des agrégations sur **Table A** faisant référence à **Table B** qui a des agrégations faisant référence à **Table C**.
 * Les agrégations en double, où deux entrées utilisent la même fonction de totalisation et font référence à la même table/colonne de détail, ne sont pas autorisées.
-
-Durant cette préversion publique de la fonctionnalité d’**agrégations**, les validations suivantes sont également appliquées. Nous prévoyons de supprimer ces validations lors de la publication en disponibilité générale.
-
-* Les agrégations ne peuvent pas être utilisées avec la sécurité au niveau des lignes (RLS). *Limitation de la préversion publique.*
-* La table de détail doit utiliser DirectQuery, et non Importer. *Limitation de la préversion publique.*
+* La table de détail doit utiliser DirectQuery, et non Importer.
 
 La plupart des ces validations sont appliquées en désactivant les valeurs de liste déroulante et en affichant un texte explicatif dans l’info-bulle, comme illustré dans l’image suivante.
 
@@ -149,6 +137,9 @@ La plupart des ces validations sont appliquées en désactivant les valeurs de l
 ### <a name="group-by-columns"></a>Grouper par colonnes
 
 Dans cet exemple, les trois entrées GroupBy sont facultatives ; elles n’affectent pas le comportement d’agrégation (sauf pour l’exemple de requête DISTINCTCOUNT, illustré dans l’image plus bas). Elles sont incluses principalement à des fins de lisibilité. Sans ces entrées GroupBy, les agrégations seront quand même atteintes en fonction des relations. Ce comportement est différent de l’utilisation des agrégations sans relations, qui est couvert par l’exemple de Big Data qui suit plus loin dans cet article.
+
+### <a name="inactive-relationships"></a>Relations inactives
+Le regroupement par une colonne de clé étrangère utilisée par une relation inactive et le recours à la fonction USERELATIONSHIP pour les résultats d’agrégation ne sont pas pris en charge.
 
 ### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Détecter si les agrégations sont atteintes ou manquées par les requêtes
 
@@ -191,6 +182,17 @@ Dans certains cas, la fonction DISTINCTCOUNT peut tirer parti des agrégations. 
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_07.jpg)
 
+### <a name="rls"></a>RLS
+Les expressions de sécurité au niveau des lignes (RLS) doivent filtrer la table d’agrégation et la table de détails pour fonctionner correctement. Si nous suivons notre exemple, une expression RLS sur la table **Geography** fonctionnera, car Geography se trouve du côté filtrage des relations avec les tables **Sales** et **Sales Agg**. La sécurité au niveau des lignes sera appliquée aux requêtes qui atteignent la table d’agrégation et à celles qui ne l’atteignent pas.
+
+![agrégations - gérer les rôles](media/desktop-aggregations/manage-roles.jpg)
+
+Une expression RLS sur la table **Product** filtrerait seulement la table **Sales**, et pas la table **Sales Agg**. Ce n’est pas recommandé. Les requêtes soumises par les utilisateurs qui accèdent au jeu de données à l’aide de ce rôle ne tireraient pas parti des résultats d’agrégation. La table d’agrégation étant une autre représentation des mêmes données dans la table de détails, il ne serait pas sûr de répondre aux requêtes à partir de la table d’agrégation, car le filtre RLS ne peut pas être appliqué.
+
+Une expression RLS sur la table **Sales Agg** proprement dite filtrerait seulement la table d’agrégation et pas la table de détails. Ce n’est pas autorisé.
+
+![agrégations - gérer les rôles](media/desktop-aggregations/filter-agg-error.jpg)
+
 ## <a name="aggregations-based-on-group-by-columns"></a>Agrégations basées sur des colonnes Grouper par 
 
 Les modèles de Big Data basés sur Hadoop ont des caractéristiques différentes des modèles dimensionnels. Pour éviter les jointures entre de grandes tables, ils évitent souvent de reposer sur des relations. Au lieu de cela, les attributs de dimension sont souvent dénormalisés en tables de faits. Ces modèles de Big Data peuvent être déverrouillés pour effectuer une analyse interactive à l’aide d’**agrégations** basées sur des colonnes Grouper par.
@@ -225,6 +227,10 @@ Il est préférable d’utiliser des agrégations Compter les lignes de la table
 
 ![boîte de dialogue de filtres](media/desktop-aggregations/aggregations_12.jpg)
 
+### <a name="rls"></a>RLS
+
+Les mêmes règles RLS que celles détaillées ci-dessus pour les agrégations basées sur les relations, qu’une expression RLS puisse filtrer ou non la table d’agrégation, la table de détails ou les deux, s’appliquent également aux agrégations basées sur les colonnes Group By. Dans l’exemple, une expression RLS appliquée à la table **Driver Activity** peut être utilisée pour filtrer la table **Driver Activity Agg**, car toutes les colonnes Group By de la table d’agrégation sont couvertes par la table de détails. En revanche, un filtre RLS sur la table **Driver Activity Agg** ne peut pas être appliqué à la table **Driver Activity** ; il n’est donc pas autorisé.
+
 ## <a name="aggregation-precedence"></a>Précédence d’agrégation
 
 La précédence d’agrégation permet à plusieurs tables d’agrégation d’être prises en compte par une sous-requête unique.
@@ -232,8 +238,11 @@ La précédence d’agrégation permet à plusieurs tables d’agrégation d’�
 Prenez l’exemple suivant. Il s’agit d’un [modèle composite](desktop-composite-models.md) contenant plusieurs sources DirectQuery.
 
 * La table d’importation **Driver Activity Agg2** est à un niveau de granularité élevé, car les attributs Grouper par sont peu nombreux et ont une faible cardinalité. Le nombre de lignes pourrait n’être que de quelques milliers, et donc tenir facilement dans un cache en mémoire. Ces attributs étant utilisés par le tableau de bord d’un cadre supérieur, les requêtes qui y font référence doivent être le plus rapides possible.
-* La table **Driver Activity Agg** est une table d’agrégation intermédiaire en mode DirectQuery. Elle contient plus d’un milliard de lignes et est optimisée à la source à l’aide d’index columnstore.
+* La table **Driver Activity Agg** est une table d’agrégation intermédiaire en mode DirectQuery. Elle contient plus d’un milliard de lignes dans Azure SQL DW et est optimisée à la source à l’aide d’index columnstore.
 * La table **Driver Activity** est en mode DirectQuery et contient plus d’un milliard de lignes de données IoT provenant d’un système de Big Data. Elle satisfait les requêtes d’extraction pour afficher des relevés IoT individuels dans des contextes de filtrage contrôlés.
+
+> [!NOTE]
+> Les tables d’agrégation DirectQuery qui utilisent une source de données différente pour la table de détails sont uniquement prises en charge si la table d’agrégation provient d’une source SQL Server, Azure SQL ou Azure SQL DW.
 
 L’encombrement mémoire de ce modèle est relativement faible, mais il déverrouille un jeu de données volumineux. Il représente une architecture équilibrée, car il répartit la charge de requête parmi les composants de l’architecture et les utilise en fonction de leurs points forts.
 
@@ -261,8 +270,6 @@ Le tableau suivant présente les entrées définies dans la boîte de dialogue *
 
 ![Table d’agrégations Sales Agg](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> Remarque : Ce modèle exige que la table **Date** soit en mode DirectQuery pour renseigner la boîte de dialogue Gérer les agrégations, car il s’agit d’une table de détail. Il s’agit d’une limitation de la préversion que nous avons l’intention de supprimer pour la disponibilité générale.
-
 ### <a name="query-examples"></a>Exemples de requêtes
 
 La requête suivante atteint l’agrégation car CalendarMonth est couvert par la table d’agrégation, et CategoryName est accessible par le biais de relations un-à-plusieurs. L’agrégation Sum pour **SalesAmount** est utilisée.
@@ -285,9 +292,9 @@ Les **agrégations** qui combinent les modes de stockage DirectQuery et Importer
 
 Les articles suivants décrivent en détail les modèles composites ainsi que le mode DirectQuery.
 
-* [Modèles composites dans Power BI Desktop (préversion)](desktop-composite-models.md)
-* [Relations plusieurs-à-plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md)
-* [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md)
+* [Modèles composites dans Power BI Desktop](desktop-composite-models.md)
+* [Relations plusieurs à plusieurs dans Power BI Desktop](desktop-many-to-many-relationships.md)
+* [Mode de stockage dans Power BI Desktop](desktop-storage-mode.md)
 
 Articles DirectQuery :
 
