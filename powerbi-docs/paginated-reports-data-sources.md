@@ -1,20 +1,20 @@
 ---
 title: Sources de données prises en charge pour les rapports paginés Power BI
 description: Dans cet article, vous allez découvrir les sources de données prises en charge pour les rapports paginés dans le service Power BI, et comment vous connecter à des sources de données Azure SQL Database.
-author: maggiesMSFT
-ms.author: maggies
+author: onegoodsausage
+ms.author: andremi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.openlocfilehash: 91ddcfca56ac7c08736c35c7232df04082e4e921
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: f055cd27f25af399b63336e66aaad526ed740de2
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352973"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462332"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Sources de données prises en charge pour les rapports paginés Power BI
 
