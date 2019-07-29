@@ -119,7 +119,7 @@ Collez ou saisissez n’importe quel contenu HTML.  Power BI l’ajoute à vot
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
-* Ce code incorpore un tweet et conserve, sous forme de liens séparés dans le tableau de bord, des liens pour les éléments suivants : podcast **AFK**, **\@page Twitter de @GuyInACube**, **Suivre**, **#analytics**, **répondre**, **retweeter** et **j’aime**.  Sélectionner la vignette elle-même ouvre le podcast sur Twitter.
+* Ce code incorpore un tweet et conserve, sous forme de liens séparés dans le tableau de bord, des liens pour les éléments suivants : podcast **AFK**, **\@page Twitter de \@GuyInACube**, **Suivre**, **#analytics**, **répondre**, **retweeter** et **j’aime**.  Sélectionner la vignette elle-même ouvre le podcast sur Twitter.
   
   ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
