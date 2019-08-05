@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8600dce5012abb41c37b202dcc8eb204da11fa33
-ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.openlocfilehash: a7e26fd96066ce35e7d61443a8d7c32c64011d5e
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230190"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665431"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -649,8 +649,6 @@ Lisez le [blog sur les applications mobiles Power BI de mars 2016](https://pow
 Affichez les tableaux de bord en [mode paysage sur les téléphones Android](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Application Power BI pour les appareils Windows 10
-Affichez les tableaux de bord en [mode paysage sur les téléphones Windows 10](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device).
-
 Affichez les [rapports sur votre téléphone Windows 10](mobile-reports-in-the-mobile-apps.md).
 
 Accès plus rapide aux [insights sur vos tableaux de bord Windows 10 Mobile](mobile-tiles-in-the-mobile-apps.md) : partagez une capture instantanée en vignette ou ouvrez un rapport directement à partir du tableau de bord.
