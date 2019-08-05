@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: amac
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7d9bdf0982ea7ad4f57225e5a1eaf8c9da90b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e687c72ae058f56ca4f528783c5e2326d82db6bb
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139602"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523150"
 ---
 # <a name="dashboard-data-classification"></a>Classification des données des tableaux de bord
 Chaque tableau de bord est différent et en fonction de la source de données à laquelle vous vous connectez, vous constaterez probablement que vous et les collègues avec qui vous les partagez devez prendre des précautions différentes en fonction de la sensibilité des données. Certains tableaux de bord ne doivent jamais être partagés avec des personnes extérieures à votre entreprise ou imprimés, tandis que d’autres peuvent l’être librement. À l’aide de la classification des données des tableaux de bord, vous pouvez sensibiliser les personnes qui accèdent à ces derniers sur le niveau de sécurité qui doit être utilisé. Vous pouvez baliser vos tableaux de bord avec des classifications définies par le service informatique de votre entreprise afin que toutes les personnes qui affichent le contenu aient le même niveau de compréhension de la sensibilité des données.
@@ -45,7 +45,7 @@ Les administrateurs peuvent également définir une URL de balise afin de fourni
 ## <a name="setting-a-dashboards-classification"></a>Définition de la classification d’un tableau de bord
 Si la classification des données est activée pour votre entreprise, tous les tableaux de bord ont un type de classification par défaut, mais en tant que propriétaire d’un tableau de bord, vous pouvez modifier la classification en fonction du niveau de sécurité requis.
 
-Pour modifier le type de classification, procédez comme suit.
+Pour modifier le type de classification, procédez comme suit :
 
 1. Pour accéder aux paramètres du tableau de bord, sélectionnez les **points de suspension** en regard du nom du tableau de bord, puis sélectionnez **Paramètres**.
    
@@ -58,7 +58,7 @@ Pour modifier le type de classification, procédez comme suit.
 Une fois que la modification a été appliquée, les utilisateurs avec qui vous avez partagé le tableau de bord voient la mise à jour dès qu’ils rechargent le tableau de bord.
 
 ## <a name="working-with-data-classification-tags-as-an-admin"></a>Utilisation des balises de classification des données en tant qu’administrateur
-La classification des données est définie par l’administrateur global de votre organisation. Pour activer la classification des données, procédez comme suit.
+La classification des données est définie par l’administrateur global de votre organisation. Pour activer la classification des données, procédez comme suit :
 
 1. Sélectionnez l’engrenage Paramètres, puis **Portail d’administration**.
    
@@ -79,7 +79,7 @@ Une fois que vous avez rempli le formulaire avec vos types de classification, s�
 
 ![](media/service-data-classification/filled_in_classification_form.png)
 
-À ce stade, tous les tableaux de bord ont une classification par défaut et leurs propriétaires peuvent désormais mettre à jour le type de classification en fonction du type de contenu. Vous pouvez revenir ici ultérieurement pour ajouter ou supprimer des types de classification ou modifier ceux définis par défaut.  
+À ce stade, la classification par défaut est affectée à tous les tableaux de bord. Les propriétaires des tableaux de bord peuvent désormais mettre à jour le type de classification en fonction de leur contenu. Vous pouvez revenir ici ultérieurement pour ajouter ou supprimer des types de classification ou modifier ceux définis par défaut.  
 
 > [!NOTE]
 > Il existe quelques points importants à retenir lorsque vous revenez apporter des modifications :

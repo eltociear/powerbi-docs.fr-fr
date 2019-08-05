@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 48513ea163847ee3bf1df07151e9985c5bce9656
-ms.sourcegitcommit: 5f22dcda8885d840b7da344d38e89329d02b14fb
+ms.openlocfilehash: 4c39cf5a60786f7cc1748155ce7004254d40ad00
+ms.sourcegitcommit: ebac79f8c2871d4a7e54c1e99ce6d2409345b060
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67235070"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68475630"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Se connecter à des jeux de données avec des applications et des outils clients (préversion)
 
-Les espaces de travail et les jeux de données Power BI Premium prennent en charge les connexions *en lecture seule* à partir d’applications et d’outils Microsoft et tiers. 
+Les espaces de travail et les jeux de données Power BI Premium prennent en charge les connexions *en lecture seule* à partir d’applications et d’outils Microsoft et tiers. Par défaut, les connexions sont activées
 
 > [!NOTE]
 > Cet article est uniquement destiné à présenter la connectivité en lecture seule à des espaces de travail et des jeux de données Power BI Premium. Il n’est *pas* destiné à fournir des informations détaillées sur la programmabilité, des outils et des applications spécifiques, l’architecture ainsi que la gestion des espaces de travail et des jeux de données. Les sujets décrits ici nécessitent une bonne connaissance de l’architecture et de l’administration des bases de données de modèles tabulaires Analysis Services.
@@ -104,6 +104,10 @@ Les jeux de données suivants ne sont pas pris en charge dans le service Power 
 ### <a name="roles-and-role-memberships"></a>Rôles et appartenances à des rôles
 
 Actuellement, les rôles de modèle et les appartenances aux rôles ne sont pas détectables ou affichées à l’aide de points de terminaison XMLA.
+
+## <a name="disable-connectivity"></a>Désactiver la connectivité
+
+Par défaut, la connectivité du point de terminaison XMLA est activée pour la charge de travail Jeux de données. Vous pouvez désactiver la connectivité dans les [paramètres de charge de travail](service-admin-premium-workloads.md#workload-settings).
 
 ## <a name="audit-logs"></a>Journaux d’audit 
 

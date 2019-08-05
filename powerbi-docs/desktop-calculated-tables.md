@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 7c7d3b04b8c954ae220fb8b157b183f615abd39c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 641d1ac2c1bbcb9d143afdc04652b4c12b6e775f
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239472"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522230"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Utilisation de tables calculées dans Power BI Desktop
 Avec les tables calculées, vous pouvez ajouter une nouvelle table au modèle. Toutefois, au lieu d’interroger et de charger les valeurs dans les colonnes de votre nouvelle table à partir d’une source de données, vous créez une formule DAX (Data Analysis Expressions) qui définit les valeurs de la table. Dans Power BI Desktop, vous pouvez créer des tables calculées à l’aide de la fonctionnalité Nouvelle table dans la vue Rapport ou Données.
@@ -39,7 +39,7 @@ Jeff, chef de projet chez Contoso, a une table avec les employés de la région 
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 
-Il est très facile de rassembler ces deux tables avec une table calculée. Jeff peut créer une table calculée dans la vue Rapport ou Données, mais c’est un peu plus facile dans la vue Données car il peut tout de suite voir sa nouvelle table calculée.
+Il est très facile de rassembler ces deux tables avec une table calculée. Jeff peut créer une table calculée dans la vue Rapport ou Données, mais c’est un peu plus facile dans la vue Données car il peut tout de suite voir la nouvelle table calculée.
 
 Dans la **Vue de données**, sous l’onglet **Modélisation** , Jeff clique sur **Nouvelle table**. Une barre de formule apparaît.
 
@@ -53,7 +53,7 @@ Une nouvelle table nommée Western Region Employees est créée.
 
  ![](media/desktop-calculated-tables/calctables_westregionempl.png)
 
-La nouvelle table « Western Region Employees » de Jeff apparaît comme toute autre table dans la liste Champs. Il peut créer des relations avec d’autres tables, ajouter des mesures et des colonnes calculées, et ajouter ses champs à des rapports comme avec toute autre table.
+La nouvelle table « Western Region Employees » de Jeff apparaît comme toute autre table dans la liste Champs. Jeff peut même créer des relations avec d’autres tables, ajouter des mesures et des colonnes calculées, et ajouter ses champs à des rapports comme avec toute autre table.
 
  ![](media/desktop-calculated-tables/calctables_fieldlist.png)
 

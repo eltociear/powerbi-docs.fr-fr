@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: cd75aebb09c7b6c54c1ff3f68635bfd5033c7f80
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d613085e47477500390ac6111887df89a802ea0b
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721462"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522873"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Générer des rapports exceptionnels en un clin d’œil à partir d’un classeur Excel
 Votre responsable attend de vous un rapport présentant vos chiffres de vente les plus récents et vos dernières impressions concernant la campagne avant la fin de la journée. Vos données les plus récentes sont stockées sur différents systèmes tiers et sur des fichiers de votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des éléments visuels et mettre en forme un rapport. Vous commencez à vous inquiéter.

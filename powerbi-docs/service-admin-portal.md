@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/27/2019
+ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 751bcb5ee3b383853f0087bab406d59a2271b588
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67568145"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501772"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -117,7 +117,7 @@ Lors de la désactivation des métriques d’utilisation pour leur organisation 
 
 Soyez prudent, car la suppression du contenu de métriques existantes d’utilisation et par utilisateur est irréversible.
 
-## <a name="users"></a>Users
+## <a name="users"></a>Utilisateurs
 
 Les utilisateurs, les groupes et les administrateurs Power BI sont gérés dans le Centre d’administration Microsoft 365. L’onglet **Utilisateurs** contient un lien qui donne accès au Centre d’administration pour votre client.
 
@@ -133,7 +133,7 @@ Pour utiliser les journaux d’audit, vérifiez que le paramètre [**Créer des 
 
 L’onglet **Paramètres du client** permet un contrôle affiné sur les fonctionnalités mises à la disposition de votre organisation. Si vous avez des inquiétudes à propos de vos données sensibles, il se peut que certaines de nos fonctionnalités ne soient pas adaptées à votre organisation. Vous pouvez aussi choisir de mettre à disposition une fonctionnalité déterminée à un groupe précis.
 
-L’image suivante présente les deux premières sections de l’onglet **Paramètres du client**.
+L’image suivante présente plusieurs paramètres de l’onglet **Paramètres du client**.
 
 ![Paramètres du client](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -169,6 +169,10 @@ Les sections suivantes fournissent une vue d’ensemble des différents types de
 Les utilisateurs dans l’organisation peuvent accéder à l’aide interne et aux ressources de support dans le menu d’aide de Power BI. Plus précisément, ces paramètres changent le comportement des éléments du menu Apprendre, Communauté et Obtenir de l’aide.
 
 Il est également possible de spécifier une URL pour diriger les utilisateurs vers une solution personnalisée dédiée aux demandes de licences. Ce paramètre personnalise l’URL cible du bouton Mettre à niveau le compte qu’un utilisateur sans licence Power BI Pro peut trouver dans la boîte de dialogue de mise à jour vers Power BI Pro ainsi que dans la page Gérer le stockage personnel.
+
+### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Recevoir des notifications par e-mail pour les pannes ou incidents du service
+
+Les groupes de sécurité à extension messagerie reçoivent des notifications par e-mail si ce locataire est affecté par une panne ou un incident du service. En savoir plus sur les [notifications d’interruption de service](service-interruption-notifications.md).
 
 ## <a name="workspace-settings"></a>Paramètres de l’espace de travail
 

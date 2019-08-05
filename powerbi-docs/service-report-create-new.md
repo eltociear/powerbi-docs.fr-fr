@@ -1,6 +1,6 @@
 ---
 title: Créer un rapport à partir d’un jeu de données
-description: Créer un rapport Power BI à partir d’un jeu de données.
+description: Créez un rapport Power BI à partir d’un jeu de données.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -10,29 +10,29 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 6b69c2b1fa811d395a26403de852c44af33491c7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f2d9046c907b78ce2c1bb2754007c34199877a08
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770227"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523083"
 ---
-# <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Créer un rapport dans le service Power BI en important un jeu de données
-Vous avez lu [apports dans Power BI](consumer/end-user-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe différentes façons de créer un rapport. Dans cet article, nous allons commencer en créant un rapport de base dans le service Power BI à partir d’un jeu de données Excel. Une fois que vous comprenez les principes fondamentaux de création d’un rapport, consultez le [étapes suivantes](#next-steps) à la fin pour en savoir plus avancée des rubriques de rapport.  
+# <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Créer un rapport du service Power BI en important un jeu de données
+Vous avez lu [apports dans Power BI](consumer/end-user-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe différentes façons de créer un rapport : Dans cet article, nous allons commencer par créer un rapport de base dans le service Power BI à partir d’un jeu de données Excel. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, examinez les [étapes suivantes](#next-steps) plus bas pour accéder à des rubriques plus avancées concernant les rapports.  
 
 ## <a name="prerequisites"></a>Conditions préalables
-- [S’inscrire pour le service Power BI](service-self-service-signup-for-power-bi.md). Pour créer des rapports à l’aide de Power BI Desktop, consultez [affichage rapport Desktop](desktop-report-view.md). 
-- [Télécharger le jeu de données Excel d’exemple Retail Analysis](http://go.microsoft.com/fwlink/?LinkId=529778) et l’enregistrer dans OneDrive entreprise ou localement.
+- [S’inscrire au service Power BI](service-self-service-signup-for-power-bi.md). Pour créer des rapports avec Power BI Desktop, consultez [Affichage du rapport Desktop](desktop-report-view.md). 
+- [Téléchargez l’exemple de jeu de données Excel Analyse de la vente au détail](http://go.microsoft.com/fwlink/?LinkId=529778) et enregistrez-le dans OneDrive Entreprise ou localement.
 
 ## <a name="import-the-dataset"></a>Importer le jeu de données
-Cette méthode de création d’un rapport démarre avec un jeu de données et un canevas de rapport vide. Vous pouvez suivre la procédure dans le jeu de données Excel d’exemple analyse de vente au détail.
+Cette méthode de création d’un rapport démarre avec un jeu de données et un canevas de rapport vide. Vous pouvez suivre l’exemple de jeu de données Excel Analyse de la vente au détail.
 
-1. Nous allons créer le rapport dans un espace de travail du service Power BI, par conséquent, sélectionnez un espace de travail existant ou créer un.
+1. Nous allons créer le rapport dans un espace de travail du service Power BI. Par conséquent, sélectionnez un espace de travail existant ou créez-en un.
    
    ![liste des espaces de travail d’application](media/service-report-create-new/power-bi-workspaces2.png)
-2. En bas du volet de navigation gauche, sélectionnez **obtenir des données**.
+2. En bas du volet de navigation de gauche, sélectionnez **Obtenir les données**.
    
-   ![Obtenir les données](media/service-report-create-new/power-bi-get-data3.png)
+   ![Obtenir des données](media/service-report-create-new/power-bi-get-data3.png)
 3. Sélectionnez **Fichiers**, puis accédez à l’emplacement dans lequel vous avez enregistré l’exemple Analyse de la vente au détail.
    
     ![sélectionner Fichiers](media/service-report-create-new/power-bi-select-files.png)
@@ -47,7 +47,7 @@ Cette méthode de création d’un rapport démarre avec un jeu de données et u
    ![éditeur de rapport](media/service-report-create-new/power-bi-blank-report.png)
 
 > [!TIP]
-> Si vous n’êtes pas familiarisé avec le canevas de modification de rapport ou que vous avez besoin d’un rappel, [visite guidée de l’éditeur de rapport](service-the-report-editor-take-a-tour.md) avant de continuer. > 
+> Si vous n’êtes pas familiarisé avec le canevas de modification de rapport ou si avez besoin de vous rafraîchir la mémoire, [suivez la visite guidée de l’éditeur de rapport](service-the-report-editor-take-a-tour.md) avant de continuer. 
 > 
 
 ## <a name="add-a-radial-gauge-to-the-report"></a>Ajouter une jauge radiale au rapport
@@ -62,7 +62,7 @@ Cette méthode de création d’un rapport démarre avec un jeu de données et u
 3. Faites glisser **Sales (Ventes)**  > **This Year Sales (Ventes de cette année)**  > **Goal (Objectif)** dans la zone **Target value (Valeur cible)** . Il semble que nous sommes très proches de notre objectif.
    
     ![visuel Jauge avec un objectif de Valeur cible](media/service-report-create-new/power-bi-report-step3.png)
-4. Maintenant serait un bon moment pour enregistrer votre rapport.
+4. Le moment est opportun pour enregistrer votre rapport.
    
    ![menu Fichier](media/service-report-create-new/powerbi-save.png)
 
@@ -78,7 +78,7 @@ Notre Directrice marketing a des questions supplémentaires à nous poser. Elle 
    
     ![éditeur de rapport avec un graphique en aires actif](media/service-report-create-new/power-bi-report-step5.png)
 5. Pour trier la visualisation par période, sélectionnez les points de suspension, puis choisissez **Trier par période**.
-6. Nous allons à présent ajouter le segment. Sélectionnez une zone vide sur le canevas et choisissez le modèle Segment ![icône de segment](media/service-report-create-new/power-bi-slicer-icon.png) . Nous disposons désormais d’un segment vide sur notre canevas.
+6. Nous allons à présent ajouter le segment. Sélectionnez une zone vide sur le canevas et choisissez le modèle Segment ![icône de segment](media/service-report-create-new/power-bi-slicer-icon.png) . Nous disposons à présent d’un segment vide sur notre canevas.
    
     ![canevas de rapport](media/service-report-create-new/power-bi-report-step6.png)    
 7. Dans le volet Champs, sélectionnez **District** > **District**. Déplacez et redimensionnez le segment.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 17a4a3770cb2c3e2adff2bcce64c3e101688e002
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: 9e27d09414167f9625e046204c14a5fb57112cd9
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791864"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462272"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de l’approvisionnement pour Power BI : Visite guidée
 
@@ -27,7 +27,7 @@ Le pack de contenu Exemple Analyse de l’approvisionnement contient un tableau 
 
 ![Tableau de bord pour l’Exemple Analyse de l’approvisionnement](media/sample-procurement/procurement1.png)
 
-Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il a été créé avec des données réelles par [obviEnce](http://www.obvience.com/) qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : pack de contenu, fichier .pbix Power BI Desktop ou classeur Excel. Consultez [Exemples pour Power BI](sample-datasets.md). 
+Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il a été créé par [obviEnce](http://www.obvience.com/) avec des données réelles qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : pack de contenu, fichier .pbix Power BI Desktop ou classeur Excel. Consultez [Exemples pour Power BI](sample-datasets.md). 
 
 Ce tutoriel explore le pack de contenu Exemple Analyse de l’approvisionnement dans le service Power BI. Les expériences d’utilisation des rapports étant similaires dans Power BI Desktop et dans le service, vous pouvez également poursuivre avec et l’exemple de fichier .pbix dans Power BI Desktop. 
 

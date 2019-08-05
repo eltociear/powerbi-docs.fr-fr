@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/24/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: cf640be131e1bffb571ad3c2ae2713dee1c4c0ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051284"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523315"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -43,7 +43,7 @@ URL?filter=***Tableau***/***Champ*** eq '***valeur***'
 
 ### <a name="reports-in-apps"></a>Rapports dans les applications
 
-Si vous souhaitez ajouter un filtre d’URL à un rapport d’une application, la mise en forme est un peu différente. Les liens vers les rapports d’une application ont un paramètre de requête (ctid) qui est ajouté à l’URL. Séparez les paramètres de requête par une esperluette (&). Conservez « ? filtre = « et déplacer le paramètre ctid à la fin de l’URL, précédé par une esperluette (&). 
+Si vous souhaitez ajouter un filtre d’URL à un rapport d’une application, la mise en forme est un peu différente. Les liens vers les rapports d’une application ont un paramètre de requête (ctid) qui est ajouté à l’URL. Séparez les paramètres de requête par une esperluette (&). Conservez « ?filter= » et déplacez le paramètre de requête à la fin de l’URL, précédé d’une esperluette (&). 
 
 Comme dans cet exemple :
 
@@ -133,9 +133,9 @@ Un filtre d’URL Power BI peut inclure des nombres dans les formats suivants.
 
 ### <a name="date-data-types"></a>Types de données date
 
-Power BI prend en charge OData V3 et V4 pour les types de données **Date** et **DateTimeOffset**.  Dates sont représentés en utilisant le format de modèle EDM (2019-02-12T00:00:00), de sorte que lorsque vous spécifiez une date sous la forme de « AAAA-MM-JJ », Power BI l’interprète comme « AAAA-MM-DDT00:00:00 ».
+Power BI prend en charge OData V3 et V4 pour les types de données **Date** et **DateTimeOffset**.  Les dates sont représentées au format EDM (2019-02-12T00:00:00), donc lorsque vous spécifiez une date comme AAAA-MM-JJ, Power BI l’interprète comme AAAA-MM-JJJ00:00:00.
 
-Pourquoi cette distinction est-elle importante ? Supposons que vous créez un paramètre de chaîne de requête **Table/Date gt ' 2018-08-03 »** .  Les résultats vont-ils inclure le 3 août 2018 ou commencer le 4 août 2018 ? Étant donné que Power BI traduit votre requête à **Table/Date gt ' 2018-08-03T00:00:00'** , vos résultats incluent toutes les dates qui ont une partie différente de zéro heure dans la mesure où ces dates doit être supérieures à **' 2018-08-03T00:00:00'** .
+Pourquoi cette distinction est-elle importante ? Supposons que vous créez un paramètre de chaîne de requête **Table/Date gt 2018-08-03**.  Les résultats vont-ils inclure le 3 août 2018 ou commencer le 4 août 2018 ? Comme Power BI traduit votre requête en **Table/Date gt 2018-08-03T00:00:00**, vos résultats incluent toutes les dates qui ont une partie heure différente de zéro, ces dates étant supérieures à **2018-08-03T00:00:00**.
 
 ## <a name="special-characters-in-url-filters"></a>Caractères spéciaux dans les filtres d’URL
 
@@ -177,7 +177,7 @@ Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder 
 
 * Quand vous utilisez l’opérateur *in*, les valeurs à droite de *in* doivent être sous forme de liste séparée par des virgules et placée entre des parenthèses.    
 * Dans Power BI Report Server, vous pouvez [passer des paramètres de rapport](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) en les ajoutant dans une URL de rapport. Ces paramètres d’URL ne sont pas préfixés parce qu’ils sont transmis directement dans le moteur de traitement de rapport.
-* Filtrage de chaîne de requête ne fonctionne pas avec [publier sur le web](service-publish-to-web.md) ou [exporter au format PDF](consumer/end-user-pdf.md).
+* Le filtrage de chaîne de requête ne fonctionne pas avec [Publier sur le web](service-publish-to-web.md) ou [Exporter au format PDF](consumer/end-user-pdf.md).
 * [Incorporer avec le composant du rapport dans SharePoint Online](service-embed-report-spo.md) ne prend pas en charge les filtres d’URL.
 * Le type de données long est (2^53 - 1) en raison des limitations de JavaScript.
 * Les filtres d’URL de rapport sont limités à 10 expressions (10 filtres connectés par AND).

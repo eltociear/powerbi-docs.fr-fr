@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d001c75d006838f46ce40a8f81bad0a9a058b148
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299436"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523356"
 ---
 # <a name="export-data-from-visualizations"></a>Exportez des données à partir de visualisations
 
@@ -150,9 +150,9 @@ Ces limitations et ces considérations s’appliquent à Power BI Desktop et au 
 
 - Pour exporter les données à partir d’un visuel, vous devez avoir [Autorisation de création pour le jeu de données sous-jacent](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
--  Le nombre maximal de lignes que **Power BI Desktop** et le **service Power BI** peuvent exporter au format *.csv* est de 30 000.
+-  Le nombre maximal de lignes que **Power BI Desktop** et le **service Power BI** peuvent exporter depuis un **rapport de mode d’importation** vers un fichier *.csv* est de 30 000.
 
-- Le nombre maximal de lignes que les applications peuvent exporter au format *.xlsx* est de 150 000.
+- Le nombre maximal de lignes que les applications peuvent exporter depuis un **rapport de mode d’importation** au format *.xlsx* est de 150 000.
 
 - L’exportation à l’aide de *Données sous-jacentes* ne fonctionne pas dans les cas suivants :
 
@@ -166,7 +166,7 @@ Ces limitations et ces considérations s’appliquent à Power BI Desktop et au 
 
 - L’exportation à l’aide de *données sous-jacentes* ne fonctionne pas si vous activez l’option *Afficher les éléments sans données* pour la visualisation que Power BI est en train d’exporter.
 
-- Lorsque vous utilisez DirectQuery, la quantité maximale de données que Power BI peut exporter est de 16 Mo. Un résultat inattendu peut être que vous exportez moins que le nombre maximal de lignes. C’est probable dans les cas suivants :
+- Lorsque vous utilisez DirectQuery, la quantité maximale de données que Power BI peut exporter est de 16 Mo de données non compressées. Un résultat inattendu peut être que vous exportez moins que le nombre maximal de lignes. C’est probable dans les cas suivants :
 
     - Il y a beaucoup de colonnes.
 

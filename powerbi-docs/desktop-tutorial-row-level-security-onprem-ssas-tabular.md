@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 28fe39788dab6f22845d3ffcb7115fb1da5cb268
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 6bfcb218f92c2b6e8a3349261e15e6b71b9512b2
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826662"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523237"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Sécurité dynamique au niveau des lignes avec le modèle tabulaire Analysis Services
 
@@ -154,7 +154,7 @@ Une fois que votre modèle tabulaire est déployé et prêt à être utilisé, v
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_dashboard.png)
 
-3. Quand Jon Doe se connecte au service **Power BI** et affiche le tableau de bord partagé créé par Sumit, il doit voir **uniquement** les ventes de sa région. 
+3. Quand Jon Doe se connecte au service **Power BI** et affiche le tableau de bord partagé créé par Sumit, **seules** les ventes de sa région doivent être visibles. 
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/dashboard_jon_doe.png)
 

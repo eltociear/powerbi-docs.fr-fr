@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 903883290def07ee6467dbebab1c7b31dec80b74
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: dcc273dd6bf356d9149086b38b9126e721fe63a2
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342182"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380270"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Ajouter un filtre à un rapport dans Power BI
 
@@ -76,6 +76,8 @@ D'ailleurs, cette procédure utilise l'exemple de l'analyse de la vente au déta
     L’élément visuel change en fonction du nouveau filtre. Si vous enregistrez votre rapport avec le filtre, les personnes qui le consultent voient le visuel filtré par lequel commencer et peuvent interagir avec le filtre en mode Lecture en sélectionnant ou en effaçant les valeurs.
      
     ![L’élément visuel filtré](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
+    
+    Lorsque vous utilisez le filtre sur un champ utilisé dans le visuel où le champ est agrégé (par exemple, une somme, une moyenne ou un nombre), vous filtrez sur la valeur *agrégée* dans chaque point de données. Par conséquent, demander à filtrer le visuel ci-dessus là où **Ventes de cette année > 500000** signifie que vous verrez uniquement le point de données **13 - Charleston Fashion Direct** dans le résultat. Les filtres sur les [mesures de modèle](desktop-measures.md) s’appliquent toujours à la valeur agrégée du point de données.
 
 ### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtrer avec un champ qui n’est pas dans le visuel
 
@@ -94,6 +96,8 @@ Ajoutons à présent un nouveau champ comme un filtre au niveau du visuel à not
     ![L’élément visuel filtré](media/power-bi-report-add-filter/power-bi-search-visual-filter-results-2.png)
 
     Si vous enregistrez votre rapport avec ce filtre, les personnes qui le consultent peuvent interagir avec le filtre **District Manager** (Responsable de district) en mode Lecture en sélectionnant ou en effaçant des valeurs.
+    
+    Si vous faites glisser une *colonne numérique* dans le volet filtre pour créer un filtre au niveau visuel, le filtre est appliqué aux *lignes de données sous-jacentes*. Par exemple, ajouter un filtre au champ **UnitCost** et le définir sur **UnitCost** > 20 affiche uniquement les données pour les lignes de produits dont le coût unitaire est supérieur à 20, quel que soit le coût unitaire total pour les points de données affichés dans le visuel.
 
 ## <a name="add-a-filter-to-an-entire-page"></a>Ajouter un filtre à une page entière
 
@@ -158,10 +162,6 @@ Voyons comment fonctionne le filtre d’extraction.
 1. Sélectionnez la flèche Précédent pour revenir à la page précédente du rapport.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-
-- Dans certaines situations, un filtre au niveau du visuel et un filtre au niveau de la page peuvent renvoyer des résultats différents.  Par exemple, quand vous ajoutez un filtre au niveau du visuel, Power BI filtre sur les résultats agrégés.  L’agrégation par défaut est Somme, mais vous pouvez en [modifier le type](service-aggregates.md).  
-
-    Ensuite, quand vous ajoutez un filtre au niveau de la page, Power BI filtre sans agréger.  Il n’y a pas d’agrégation, car une page peut avoir de nombreux visuels pouvant chacun utiliser différents types d’agrégation.  Par conséquent, le filtre est appliqué sur chaque ligne de données.
 
 - Si vous ne voyez pas le volet Champs, vérifiez que vous êtes en [mode Édition](service-interact-with-a-report-in-editing-view.md) de rapport.    
 - Si vous avez apporté un grand nombre de modifications aux filtres et que vous voulez rétablir les paramètres par défaut de l’auteur du rapport, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus du haut.

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 07/25/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1a0ec90d3f6a1de5a542da7ee98f956dfcef67b1
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: bea8b954cb1c0743745ef6d3bf9d48aa8513f2fe
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325159"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624043"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 
@@ -170,9 +170,96 @@ Une fois que vous avez terminé toutes les étapes de configuration, vous pouvez
 
 Cette configuration est appropriée dans la plupart des cas. Toutefois, avec Kerberos, il peut y avoir différentes configurations en fonction de votre environnement. Si vous ne parvenez pas à charger le rapport, contactez votre administrateur de domaine pour résoudre le problème.
 
-## <a name="configure-sap-bw-for-sso"></a>Configurer SAP BW pour l’authentification unique
+## <a name="configure-sap-bw-for-sso-using-commoncryptolib"></a>Configurer SAP BW pour l’authentification unique à l’aide de CommonCryptoLib
 
 Comme vous comprenez maintenant comment fonctionne Kerberos avec une passerelle, vous pouvez configurer l’authentification unique pour votre système SAP BW (SAP Business Warehouse). Les étapes suivantes supposent que vous avez déjà [préparé la délégation Kerberos contrainte](#prepare-for-kerberos-constrained-delegation), comme décrit précédemment dans cet article.
+
+> [!NOTE]
+> Ces instructions couvrent la configuration de l’authentification unique pour les serveurs d’**applications** SAP BW. Actuellement, Microsoft ne prend pas en charge les connexions SSO aux serveurs de **messages** SAP BW.
+
+1. Vérifiez que votre serveur BW est correctement configuré pour l’authentification unique Kerberos. Si c’est le cas, vous devez être en mesure d’utiliser l’authentification unique pour accéder à votre serveur BW à l’aide d’un outil SAP tel que SAP GUI. Pour plus d’informations sur les étapes de configuration, consultez [Authentification unique SAP : S’authentifier avec Kerberos/SPNEGO](https://blogs.sap.com/2017/07/27/sap-single-sign-on-authenticate-with-kerberosspnego/). Votre serveur BW doit utiliser CommonCryptoLib comme bibliothèque SNC et avoir un nom SNC commençant par « CN= », par exemple « CN=BW1 ». Pour plus d’informations sur les conditions requises pour les noms SNC, consultez [Paramètres SNC pour la configuration de Kerberos](https://help.sap.com/viewer/df185fd53bb645b1bd99284ee4e4a750/3.0/en-US/360534094511490d91b9589d20abb49a.html) (le paramètre snc/identity/as).
+
+1. Si vous ne l’avez pas déjà fait, suivez les étapes de la section [Préparer les éléments nécessaires à une délégation Kerberos contrainte](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos#prepare-for-kerberos-constrained-delegation). Vérifiez que votre utilisateur de service de passerelle est configuré pour présenter les informations d’identification déléguées à l’utilisateur de service qui représente votre serveur d’applications BW dans votre environnement Active Directory.
+
+1. Si vous ne l’avez pas déjà fait, installez la version 64 bits du [connecteur SAP .NET](https://support.sap.com/en/product/connectors/msnet.html) sur l’ordinateur sur lequel la passerelle a été installée. Vous pouvez vérifier si le composant a été installé en tentant de vous connecter à votre serveur BW dans Power BI Desktop. Si vous ne pouvez pas vous connecter à l’aide de l’implémentation 2.0, le connecteur .NET n’est pas installé.
+
+1. Assurez-vous que le client de connexion sécurisée SAP n’est pas en cours d’exécution sur l’ordinateur sur lequel la passerelle est installée. SLC met en cache les tickets Kerberos d’une façon pouvant interférer avec la capacité de la passerelle à utiliser Kerberos pour l’authentification unique. Si SLC est installé, désinstallez-le ou assurez-vous de quitter le client de connexion sécurisée SAP : faites un clic droit sur l’icône dans la barre d’état système et sélectionnez Se déconnecter et quitter avant de tenter une connexion SSO à l’aide de la passerelle. SLC n’est pas pris en charge pour une utilisation sur des machines Windows Server. Pour plus d’informations, consultez [SAP Note 2780475](https://launchpad.support.sap.com/#/notes/2780475) (utilisateur-s requis).
+
+    ![Client de connexion sécurisée SAP](media/service-gateway-sso-kerberos/sap-secure-login-client.png)
+
+    Si vous désinstallez SLC ou sélectionnez **Se déconnecter** et **Quitter**, ouvrez une fenêtre de commande et entrez `klist purge` pour effacer tous les tickets Kerberos mis en cache avant de tenter une connexion SSO via la passerelle.
+
+1. Téléchargez CommonCryptoLib (sapcrypto.dll) (version **8.5.25 ou ultérieure**) à partir de SAP Launchpad, puis copiez-le dans un dossier sur votre machine passerelle. Dans le même répertoire que celui où vous avez copié sapcrypto.dll, créez un fichier nommé sapcrypto.ini, avec le contenu suivant :
+
+    ```
+    ccl/snc/enable\_kerberos\_in\_client\_role = 1
+    ```
+
+    Le fichier .ini contient les informations de configuration requises par CommonCryptoLib pour activer l’authentification unique dans le scénario de passerelle.
+
+    > [!NOTE]
+    > Ces fichiers doivent être stockés au même emplacement. En d’autres termes, _/path/to/sapcrypto/_ doit contenir à la fois sapcrypto.ini et sapcrypto.dll.
+
+    L’utilisateur du service de passerelle et l’utilisateur Active Directory (AD) dont l’utilisateur du service emprunte l’identité ont besoin des autorisations de lecture et d’exécution pour les deux fichiers. Nous vous recommandons d’accorder des autorisations aux fichiers .ini et .dll au groupe des utilisateurs authentifiés. À des fins de test, vous pouvez également accorder explicitement ces autorisations à l’utilisateur du service de passerelle et à l’utilisateur impersonné. Dans la capture d’écran ci-dessous, nous avons accordé au groupe des utilisateurs authentifiés les autorisations **Lecture&amp; Exécuter** pour sapcrypto. dll:
+
+    ![Utilisateurs authentifiés](media/service-gateway-sso-kerberos/authenticated-users.png)
+
+1. Si vous n’avez pas de source de données SAP Business Warehouse Server, sur la page **Gérer les passerelles** dans le service Power BI, ajoutez une source de données. Si vous disposez déjà d’une source de données BW associée à la passerelle au sein de laquelle vous souhaitez que la connexion SSO circule, préparez-la pour la modifier.
+
+    Dans le cas d’une **bibliothèque SNC**, sélectionnez la variable d’environnement **SNC\_LIB ou SNC\_LIB\_64** ou **personnalisée**. Si vous sélectionnez l’option**SNC\_LIB**, vous devez définir la valeur de la variable d’environnement SNC\_LIB\_64 sur la machine passerelle sur le chemin d’accès absolu de la copie de sapcrypto.dll sur la machine passerelle, tel que C:\Users\Test\Desktop\sapcrypto.dll. Si vous choisissez **Personnalisé**, collez le chemin d’accès absolu au fichier sapcrypto.dll dans le champ Chemin d’accès personnalisé de la bibliothèque SNC qui s’affiche sur la page **Gérer les passerelles**.
+
+    Sous **Paramètres avancés**, vérifiez que la case à cocher **Utiliser l’authentification unique via Kerberos pour les requêtes DirectQuery** est activée. Le nom d’utilisateur que vous entrez doit avoir l’autorisation de se connecter au serveur BW et est principalement utilisé pour tester la connexion à la source de données une fois que vous l’avez créée. L’utilisateur est également utilisé pour actualiser les rapports créés à partir de jeux de données basés sur l’importation, le cas échéant. Si vous sélectionnez l’authentification **de base**, vous devez fournir un utilisateur BW. Si vous sélectionnez l’authentification **Windows**, vous devez spécifier un utilisateur Windows Active Directory mappé à un utilisateur BW par le biais de la transaction SU01 dans l’interface utilisateur graphique SAP. Les autres champs (**numéro du système **,** ID client **,** nom de partenaire SNC**, etc.) doivent correspondre aux informations que vous entrez dans Power BI Desktop pour vous connecter à votre serveur BW via SSO. Sélectionnez **Appliquer** et assurez-vous que le test de connexion a réussi.
+
+    ![Méthode d’authentification](media/service-gateway-sso-kerberos/authentication-method.png)
+
+1. Créez une variable d’environnement du système CCL\_PROFILE et pointez-la sur sapcrypto.ini :
+
+    ![Variable d’environnement du système CCL\_PROFILE](media/service-gateway-sso-kerberos/ccl-profile-variable.png)
+
+    N’oubliez pas que les fichiers sapcrypto.dll et .ini doivent se trouver au même emplacement. Dans l’exemple ci-dessus, où sapcrypto.ini se trouve sur le bureau, sapcrypto.dll doit également se trouver sur le bureau.
+
+1. Redémarrez le service de passerelle :
+
+    ![Redémarrez le service de passerelle](media/service-gateway-sso-kerberos/restart-gateway-service.png)
+
+1. Publiez un rapport BW **basé sur DirectQuery** à partir de Power BI Desktop. Ce rapport doit utiliser des données qui sont accessibles à l’utilisateur BW mappé à l’utilisateur Azure Active Directory (AAD) qui se connecte au service Power BI. Vous devez utiliser DirectQuery au lieu de l’importation, en raison du fonctionnement de l’actualisation. Lors de l’actualisation des rapports basés sur l’importation, la passerelle utilise les informations d’identification que vous avez entrées dans les champs **Nom d’utilisateur** et **Mot de passe** lors de la création de la source de données BW. En d’autres termes, l’authentification unique Kerberos n’est **pas** utilisée. En outre, lors de la publication, veillez à sélectionner la passerelle que vous avez configurée pour l’authentification unique (SSO) BW si vous avez plusieurs passerelles. Dans le service Power BI, vous devez maintenant être en mesure d’actualiser le rapport ou d’en créer un nouveau basé sur le jeu de données publié.
+
+### <a name="troubleshooting"></a>Résolution des problèmes
+
+Si vous ne parvenez pas à actualiser le rapport dans le service Power BI, vous pouvez utiliser le suivi de la passerelle, le traçage CPIC et le traçage CommonCryptoLib pour aider à diagnostiquer le problème. Le traçage CPIC et CommonCryptoLib étant des produits SAP, Microsoft ne peut pas fournir de support direct pour eux. Pour les utilisateurs Active Directory disposant d’un accès SSO à BW, certaines configurations Active Directory peuvent nécessiter que les utilisateurs soient membres du groupe Administrateurs sur la machine sur lequel la passerelle est installée.
+
+1. **Journaux de passerelle :** Il vous suffit de reproduire le problème, d’ouvrir [l’application de passerelle](https://docs.microsoft.com/data-integration/gateway/service-gateway-app), d’accéder à l’onglet **Diagnostics** et de sélectionner **Exporter les journaux** :
+
+    ![Exporter des journaux de passerelle](media/service-gateway-sso-kerberos/export-gateway-logs.png)
+
+1. **Traçage CPIC :** Pour activer le traçage CPIC, définissez deux variables d’environnement : CPIC\_TRACE et CPIC\_TRACE\_DIR. La première variable définit le niveau de suivi, et la deuxième variable définit le répertoire des fichiers de trace. Le répertoire doit être un emplacement dans lequel les membres du groupe des utilisateurs authentifiés peuvent écrire. Configurez CPIC\_TRACE à 3 et CPIC\_TRACE\_DIR au répertoire dans lequel vous souhaitez effectuer le suivi des fichiers écrits.
+
+    ![Traçage CPIC](media/service-gateway-sso-kerberos/cpic-tracing.png)
+
+    Reproduisez le problème et vérifiez que CPIC\_TRACE\_DIR contient des fichiers de trace.
+
+1. **Traçage CommonCryptoLib :** Activez le traçage CommonCryptoLib en ajoutant deux lignes au fichier sapcrypto.ini créé précédemment :
+
+    ```
+    ccl/trace/level=5
+    ccl/trace/directory=\\<drive\\>:\logs\sectrace
+    ```
+
+    Veillez à définir l’option _ccl/trace/directory_ sur un emplacement dans lequel les membres du groupe des utilisateurs authentifiés peuvent écrire. Vous pouvez également créer un nouveau fichier .ini pour modifier ce comportement. Dans le même répertoire que les fichiers sapcrypto.dll et sapcrypto.ini, créez un fichier nommé sectrace.ini, avec le contenu suivant.  Remplacez l’option DIRECTORY par un emplacement sur votre machine sur lequel l’utilisateur authentifié peut écrire :
+
+    ```
+    LEVEL = 5
+    
+    DIRECTORY = \\<drive\\>:\logs\sectrace
+    ```
+
+    À présent, reproduisez le problème et vérifiez que l’emplacement désigné par DIRECTORY contient des fichiers de trace. Lorsque vous avez terminé, veillez à désactiver CPIC et le traçage CCL.
+
+    Pour plus d’informations sur le traçage CommonCryptoLib, consultez [Note SAP 2491573](https://launchpad.support.sap.com/#/notes/2491573) (utilisateur-s requis).
+
+## <a name="configure-sap-bw-for-sso-using-gsskrb5gx64krb5"></a>Configurer SAP BW pour l’authentification unique à l’aide de gsskrb5/gx64krb5
+
+Si vous ne parvenez pas à utiliser CommonCryptoLib comme bibliothèque SNC, vous pouvez utiliser gsskrb5/gx64krb5 à la place. Toutefois, les étapes de configuration sont beaucoup plus complexes et SAP n’offre plus de prise en charge pour gsskrb5.
 
 Ce guide tente d’être aussi complet que possible. Si vous avez déjà effectué certaines étapes, vous pouvez les ignorer. Par exemple, vous avez peut-être déjà créé un utilisateur de service pour votre serveur SAP BW et mappé un nom de principal de service, ou bien vous avez peut-être déjà installé la bibliothèque `gsskrb5`.
 
@@ -382,7 +469,7 @@ Le résultat est que la passerelle ne peut pas emprunter l’identité de l’ut
 
 Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, consultez les ressources suivantes :
 
-* [Qu’est-ce qu’une passerelle de données locale ?](/data-integration/gateway/service-gateway-getting-started)
+* [Qu’est-ce qu’une passerelle de données locale ?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery et SAP BW](desktop-directquery-sap-bw.md)

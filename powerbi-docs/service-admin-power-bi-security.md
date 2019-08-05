@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/11/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: b70d23d7f4f5dfab9273319ad890a21c9b74ead2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: df2e31ea9c8030e00001081e5fbe280605188bc5
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61187355"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523305"
 ---
 # <a name="power-bi-security"></a>Sécurité dans Power BI
 
@@ -56,7 +56,7 @@ La sécurité de plateforme pour Power BI inclut également la sécurité d’en
 
 Pour en savoir plus, visitez le [Centre de gestion de la confidentialité de Microsoft](https://www.microsoft.com/trustcenter).
 
-Comme décrit plus haut dans cet article, la connexion Power BI d’un utilisateur est utilisée par les serveurs Active Directory locaux pour le mappage à un nom UPN pour obtenir les informations d’identification. Toutefois, il est **important** de noter que les utilisateurs sont responsables des données qu’ils partagent : si un utilisateur se connecte à des sources de données à l’aide de ses informations d’identification et qu’il partage ensuite un rapport (ou un tableau de bord ou un jeu de données) basé sur ces données, les utilisateurs avec lesquels le tableau de bord est partagé ne sont pas authentifiés par rapport à la source de données d’origine et ils auront accès au rapport.
+Comme décrit plus haut dans cet article, la connexion Power BI d’un utilisateur est utilisée par les serveurs Active Directory locaux pour le mappage à un nom UPN pour obtenir les informations d’identification. Toutefois, il est **important** de noter que les utilisateurs sont responsables des données qu’ils partagent : si un utilisateur se connecte à des sources de données à l’aide de ses informations d’identification et qu’il partage ensuite un rapport (ou un tableau de bord ou un jeu de données) basé sur ces données, les utilisateurs avec lesquels le tableau de bord est partagé ne sont pas authentifiés par rapport à la source de données d’origine et ils auront accès au rapport.
 
 Les connexions à **SQL Server Analysis Services** à l’aide de la **passerelle de données locale** constituent une exception. Les tableaux de bord sont mis en cache dans Power BI, mais l’accès aux rapports ou jeux de données sous-jacents initie l’authentification de l’utilisateur qui tente d’accéder au rapport (ou au jeu de données) et l’accès n’est accordé que si l’utilisateur dispose d’informations d’identification suffisantes pour accéder aux données. Pour plus d’informations, consultez [Présentation détaillée de la passerelle de données locale](service-gateway-onprem-indepth.md).
 

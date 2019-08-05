@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cf07318b5866d3f893d745fc8a8bba85cc9680d9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751252"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590599"
 ---
 # <a name="key-influencers-visualization"></a>Visualisation des influenceurs clés
 Le visuel d’influenceurs clés vous aide à comprendre les facteurs affectant une métrique qui vous intéresse. Il analyse vos données, classe les facteurs qui sont importants et les affiche sous forme d’influenceurs clés. Par exemple, supposons que vous souhaitez déterminer ce qui influence le renouvellement du personnel. L’un des facteurs peut être la longueur du contrat d’emploi et un autre l’âge de l’employé. 
@@ -132,8 +132,13 @@ La visualisation montre que chaque fois que l’ancienneté augmente de 13,44 m
  
 Le nuage de points dans le volet droit trace le pourcentage moyen d’évaluations faibles pour chaque valeur d’ancienneté. Il met en évidence la pente avec une courbe de tendance.
 
-
 ![Nuage de points pour Ancienneté](media/power-bi-visualization-influencers/power-bi-tenure.png)
+
+## <a name="binned-continuous-key-influencers"></a>Influenceurs clés continus compartimentés
+
+Dans certains cas, vous pouvez constater que vos facteurs continus ont été automatiquement convertis en catégories. Cela est dû au fait que nous avons découvert que la relation entre les variables n’est pas linéaire et que nous ne pouvons pas décrire la relation comme une simple augmentation ou une diminution (comme nous l’avons fait dans l’exemple ci-dessus).
+
+Nous exécutons des tests de corrélation pour déterminer la linéarité de l’influenceur par rapport à la cible. Si la cible est continue, nous exécutons la corrélation Perasons et, si la cible est catégorique, nous exécutons des tests de corrélation du point bisériel. Si nous détectons que la relation n’est pas suffisamment linéaire, nous traitons des compartimentages supervisés et générons un maximum de 5 emplacements. Pour déterminer les emplacements les plus significatifs, nous utilisons une méthode de compartimentage supervisée qui examine la relation entre le facteur explicatif et la cible analysée.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Interpréter les mesures et agrégats comme influenceurs clés 
  
@@ -209,15 +214,14 @@ Le top des segments pour les cibles numériques montre les groupes pour lesquels
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes 
  
-**Quelles sont les limitations de la préversion ?** 
+**Quelles sont les limitations du visuel ?** 
  
-Le visuel d’influenceurs clés est actuellement en préversion publique et présente des limitations. Les fonctionnalités suivantes ne sont pas disponibles : 
-- Analyse des métriques qui sont des agrégats ou des mesures
-- Utilisation du visuel dans Power BI Embedded
-- Utilisation du visuel dans les applications mobiles Power BI
-- Prise en charge de la sécurité au niveau des lignes (SNL)
-- Prise en charge de DirectQuery
-- Prise en charge des connexions actives
+Le visuel Influenceur clés présente certaines limitations :
+
+- La requête directe n’est pas prise en charge
+- La connexion active à Azure Analysis Services et à SQL Server Analysis Services n’est pas prise en charge
+- La publication sur le web n’est pas prise en charge
+- .NET Framework 4.6 ou une version ultérieure est requis
 
 ![Question numérique](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
@@ -263,7 +267,7 @@ Cette erreur s’affiche parce que l’appareil n’est pas défini au niveau cl
 - Vous pouvez changer la synthèse des appareils à compter. Par exemple, utilisez le décompte si le nombre d’appareils peut affecter le score attribué par un client. 
 - Vous pouvez faire pivoter la colonne de l’appareil pour voir si l’utilisation du service sur un appareil spécifique influence l’évaluation d’un client.
  
-Dans cet exemple, les données ont été pivotées pour créer des colonnes pour « navigateur », « mobile » et « tablette ». Vous pouvez désormais utiliser ces appareils spécifiques dans **Expliquer par**. Tous les appareils sont des influenceurs, le navigateur ayant le plus grand impact sur le score attribué par le client.
+Dans cet exemple, les données ont été croisées pour créer de nouvelles colonnes pour les navigateurs, les appareils mobiles et les tablettes (veillez à supprimer et à recréer vos relations dans la vue de modélisation après avoir croisé vos données). Vous pouvez désormais utiliser ces appareils spécifiques dans **Expliquer par**. Tous les appareils sont des influenceurs, le navigateur ayant le plus grand impact sur le score attribué par le client.
 
 Plus précisément, les clients qui n’utilisent pas le navigateur pour consommer le service sont 3,79 fois plus susceptibles d’attribuer un faible score que ceux qui en utilisent un. Plus bas dans la liste, pour « mobile », l’inverse est vrai. Les clients qui utilisent l’application mobile sont plus susceptibles d’attribuer un faible score que ceux qui ne l’utilisent pas. 
 

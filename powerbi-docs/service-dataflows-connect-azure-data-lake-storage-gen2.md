@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 79bba3b65d508716bc451c1c4876a8674242fcc2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dee2ff4376242883d30f606e687184c0dde43ffe
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61138677"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523485"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)
 
 Vous pouvez configurer des espaces de travail Power BI pour stocker des flux de données dans le compte Azure Data Lake Storage Gen2 de votre organisation. Cet article décrit les étapes générales nécessaires pour ce faire et fournit des conseils et meilleures pratiques tout au long du processus. Il existe quelques avantages à la configuration des espaces de travail pour stocker les définitions de flux de données et les fichiers de données dans votre Data Lake, notamment :
 
 * Azure Data Lake Storage Gen2 fournit un support de stockage des données extrêmement scalable
-* Fichiers de données et la définition de flux de données pouvant être exploitées par les développeurs de votre service informatique pour tirer parti des données d’Azure et des services d’intelligence artificielle (IA) comme illustré dans le [exemples GitHub à partir des Services de données Azure](https://aka.ms/cdmadstutorial)
-* Permet aux développeurs de votre organisation d’intégrer les données de flux de données dans les applications internes et line-of-business solutions, à l’aide des ressources du développeur pour les flux de données et Azure
+* Les fichiers de définition et les données de flux de données peuvent être exploités par les développeurs de votre service informatique pour tirer parti d’Azure Data et des services d’intelligence artificielle (AI) comme illustré dans les [exemples GitHub d’Azure Data Services](https://aka.ms/cdmadstutorial)
+* Permet aux développeurs de votre organisation d’intégrer les données de flux de données dans les applications internes et les solutions métier, à l’aide des ressources de développeur pour les flux de données et Azure
 
 Pour utiliser Azure Data Lake Storage Gen2 pour les flux de données, vous avez besoin des éléments suivants :
 
@@ -31,13 +31,13 @@ Pour utiliser Azure Data Lake Storage Gen2 pour les flux de données, vous avez 
 * **Un compte d’administrateur général** : ce compte est nécessaire pour la connexion et la configuration de Power BI afin de stocker la définition de flux de données, et les données, dans votre compte Azure Data Lake Storage Gen2
 * **Un abonnement Azure** : vous avez besoin d’un abonnement Azure pour utiliser Azure Data Lake Storage Gen2
 * **Groupe de ressources** : utilisez un groupe de ressources que vous possédez déjà ou créez-en un
-* **Un compte de stockage Azure avec la fonctionnalité de Data Lake Storage Gen2 est activée** 
+* **Un compte de stockage Azure avec la fonctionnalité Data Lake Storage Gen2 activée** 
 
 > [!TIP]
 > Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/) avant de commencer.
 
 > [!WARNING]
-> Une fois l’emplacement de stockage de flux de données configuré, il n’est pas modifiable. Consultez le [considérations et limitations](#considerations-and-limitations) section vers la fin de cet article pour les autres éléments importants à prendre en compte.
+> Une fois l’emplacement de stockage de flux de données configuré, il n’est pas modifiable. Consultez la section [considérations et limitations](#considerations-and-limitations) près de la fin de cet article pour connaître les autres éléments importants à prendre en compte.
 
 ## <a name="prepare-your-azure-data-lake-storage-gen2-for-power-bi"></a>Préparation de votre Azure Data Lake Storage Gen2 pour Power BI
 
@@ -72,7 +72,7 @@ Dans la fenêtre **Ajouter une attribution de rôle**, sélectionnez le rôle **
 
 
 > [!NOTE]
-> Accordez au moins 30 minutes pour que l’autorisation de se propager à Power BI à partir du portail. Chaque fois que vous modifiez les autorisations dans le portail, autoriser les 30 minutes pour que ces autorisations soient prises en compte dans Power BI. 
+> Accordez au moins 30 minutes pour que l’autorisation se propage à Power BI à partir du portail. Chaque fois que vous modifiez des autorisations dans le portail, prévoyez 30 minutes pour que ces autorisations soient reflétées dans Power BI. 
 
 
 ### <a name="create-a-file-system-for-power-bi"></a>Créer un système de fichiers pour Power BI
@@ -115,7 +115,7 @@ Pour rechercher des applications de votre locataire, procédez comme suit :
 
     ![Rechercher des applications Power](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Sélectionnez et copiez les ID d’objet pour le service Power BI et Power Query en ligne à partir des résultats de votre recherche. Soyez prêt à coller ces valeurs dans les étapes suivantes.
+5. Sélectionnez et copiez les ID d’objet du service Power BI et de Power Query en ligne à partir des résultats de votre recherche. Soyez prêt à coller ces valeurs dans les étapes suivantes.
 
 7. Ensuite, utilisez **Explorateur Stockage Azure** pour accéder au système de fichiers *powerbi* que vous avez créé dans la section précédente. Suivez les instructions de la section [Gestion de l’accès](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) de l’article [Définir des autorisations au niveau du fichier et du répertoire à l’aide de l’Explorateur Stockage Azure](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
 
@@ -133,15 +133,15 @@ Pour rechercher des applications de votre locataire, procédez comme suit :
 
 ## <a name="connect-your-azure-data-lake-storage-gen2-to-power-bi"></a>Connexion de votre Azure Data Lake Storage Gen2 à Power BI
 
-Une fois que vous avez configuré votre compte Azure Data Lake Storage Gen2 dans le portail Azure, vous le connectez à Power BI dans le **portail d’administration Power BI**. Vous gérez également le stockage de flux de données Power BI dans le **de flux de données stockage** section Paramètres de portail d’administration de Power BI. Pour obtenir des conseils sur le lancement et l’utilisation de base, consultez [Guide pratique pour accéder au portail d’administration](service-admin-portal.md).
+Une fois que vous avez configuré votre compte Azure Data Lake Storage Gen2 dans le portail Azure, vous le connectez à Power BI dans le **Portail d’administration Power BI**. Vous gérez également le stockage de flux de données Power BI dans la section des paramètres **Stockage de flux de données** du portail d’administration de Power BI. Pour obtenir des conseils sur le lancement et l’utilisation de base, consultez [Guide pratique pour accéder au portail d’administration](service-admin-portal.md).
 
 Vous connectez votre compte **Azure Data Lake Storage Gen2** en procédant comme suit :
 
-1. Accédez à la **les paramètres de flux de données** onglet de la **portail d’administration Power BI**
+1. Accédez à l’onglet **Paramètres du flux de données** du **Portail d’administration de Power BI**
 
     ![Portail d’administration Power BI](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-08b.png) 
 
-2. Sélectionnez le **connecter votre Azure Data Lake Storage Gen2** bouton. La fenêtre suivante s’affiche.
+2. Sélectionnez le bouton **Connecter votre Azure Data Lake Storage Gen2**. La fenêtre suivante s’affiche.
 
     ![Azure Data Lake Storage Gen2](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_09.jpg) 
 
@@ -162,7 +162,7 @@ Ensuite, vous devez permettre aux personnes de votre organisation de configurer 
 
 Par défaut, les fichiers de données et de la définition de flux de données sont stockés dans le stockage fourni par Power BI. Pour accéder aux fichiers de flux de données dans votre propre compte de stockage, les administrateurs de l’espace de travail doivent tout d’abord configurer l’espace de travail pour autoriser l’affectation et le stockage de flux de données dans le nouveau compte de stockage. Avant que l’administrateur d’un espace de travail puisse configurer les paramètres de stockage de flux de données, l’administrateur doit disposer d’autorisations d’attribution de stockage dans le **portail d’administration Power BI**.
 
-Pour accorder des autorisations d’attribution de stockage, accédez à la **les paramètres de flux de données** onglet dans le **portail d’administration Power BI**. Il existe un bouton radio pour *Autoriser les administrateurs d'espace de travail à attribuer des espaces de travail à ce compte de stockage* qui doit être défini sur **Autoriser**. Une fois ce curseur activé, sélectionnez le bouton **Appliquer** pour que la modification prenne effet. 
+Pour accorder des autorisations d’attribution de stockage, accédez à l’onglet **Paramètres de flux de données** dans le **portail d’administration Power BI**. Il existe un bouton radio pour *Autoriser les administrateurs d'espace de travail à attribuer des espaces de travail à ce compte de stockage* qui doit être défini sur **Autoriser**. Une fois ce curseur activé, sélectionnez le bouton **Appliquer** pour que la modification prenne effet. 
 
 ![Autoriser les administrateurs à attribuer des espaces de travail](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_10.jpg) 
 
@@ -184,7 +184,7 @@ Les clients de Power BI Desktop ne peuvent pas accéder aux flux de données sto
 
 1. Anna a créé un nouvel espace de travail d’application et l’a configuré pour stocker les flux de données dans Data Lake de l’organisation. 
 2. Ben, qui est également membre de l’espace de travail créé par Anna, aimerait tirer parti de Power BI Desktop et du connecteur de flux de données pour obtenir des données à partir du flux de données créé par Anna.
-3. Ben reçoit une erreur similaire, car il n’a pas été autorisé au dossier CDM du flux de données dans le lac.
+3. Ben reçoit une erreur similaire, car il n’a pas été autorisé à accéder au dossier CDM du flux de données dans le Data Lake.
 
 Questions et réponses courantes :
 
@@ -210,9 +210,9 @@ Pour plus d’informations sur les flux de données, le format CDM et Azure Data
 Pour plus d’informations générales sur les flux de données, consultez les articles suivants :
 
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Utilisation d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 
 Pour plus d’informations sur le stockage Azure, voir les articles suivants :
 * [Guide de sécurité sur le Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

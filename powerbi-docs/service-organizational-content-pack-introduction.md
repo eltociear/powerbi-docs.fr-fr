@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: da5a36454e52891df7906b444b29b4df2db44d7f
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: b9c308e0593ac207e323df5b78619f0279f95594
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721198"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523439"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Présentation des packs de contenu d’organisation dans Power BI
 > [!NOTE]
@@ -50,16 +50,16 @@ Le cycle de vie ressemble à ceci :
 1. Dans Power BI Pro, Nate crée un pack de contenu et le publie dans le groupe de distribution Marketing. Les paramètres d’actualisation sont hérités avec le jeu de données et peuvent être modifiés uniquement par Nate.
    
    > [!NOTE]
-   > Si Nate crée le pack de contenu au sein d’un [espace de travail Power BI](service-create-distribute-apps.md) auquel il appartient, même s’il quitte cet espace de travail, d’autres utilisateur de l’espace de travail Power BI peuvent en prendre possession.
+   > Si Nate crée le pack de contenu au sein d’un [espace de travail Power BI](service-create-distribute-apps.md) auquel il appartient, même s’il quitte cet espace de travail, d’autres utilisateurs de l’espace de travail Power BI peuvent en prendre possession.
    > 
    > 
 2. Nate envoie un message au groupe de distribution, en lui donnant des informations sur le nouveau pack de contenu.
-3. Dans Power BI Pro, Jane, un membre du groupe de distribution Marketing, recherche ce pack de contenu et s’y connecte dans AppSource. Elle en possède maintenant une copie en lecture seule.  Elle sait qu’il est en lecture seule, car dans le volet de navigation gauche, une icône de partage est affichée à gauche du nom du tableau de bord et du nom des rapports. Quand elle sélectionne le tableau de bord, une icône de verrou indique à Jane qu’elle consulte un tableau de bord de pack de contenu. 
+3. Dans Power BI Pro, Jane, un membre du groupe de distribution Marketing, recherche ce pack de contenu et s’y connecte dans AppSource. Jane en possède maintenant une copie en lecture seule. Elle sait qu’il est en lecture seule, car dans le volet de navigation gauche, une icône de partage est affichée à gauche du nom du tableau de bord et du nom des rapports. Quand elle sélectionne le tableau de bord, une icône de verrou indique à Jane qu’elle consulte un tableau de bord de pack de contenu. 
 4. Par exemple, elle décide de le personnaliser. Elle dispose maintenant de sa propre copie du tableau de bord et des rapports. Son travail n’affecte pas la source, le pack de contenu d’origine ou d’autres membres du groupe de distribution. Elle travaille maintenant sur sa propre copie du tableau de bord et des rapports.
 5. Nate apporte des mises à jour au tableau de bord, puis publie une nouvelle version du pack de contenu.
    
    * Julio, un autre membre du groupe de distribution, n’a pas personnalisé le pack de contenu d’origine. Les nouvelles modifications sont automatiquement appliquées à sa version du pack de contenu.  
-   * Jane a personnalisé le pack de contenu. Elle reçoit une notification indiquant qu’il existe une nouvelle version.  Elle peut accéder à AppSource et obtenir le pack de contenu mis à jour sans perdre sa version personnalisée. Elle a désormais 2 versions : sa version personnalisée et le pack de contenu mis à jour.
+   * Jane a personnalisé le pack de contenu. Elle reçoit une notification indiquant qu’il existe une nouvelle version.  Elle peut accéder à AppSource et obtenir le pack de contenu mis à jour sans perdre sa version personnalisée. Jane a alors deux versions : la version personnalisée et le pack de contenu mis à jour.
 6. Par exemple, Nate modifie les paramètres de sécurité. Julio et Jane n’ont plus accès au contenu. Supposons par exemple qu’ils sont supprimés du groupe de distribution Marketing.
    
    * Julio n’a pas personnalisé le pack de contenu d’origine : le contenu est donc automatiquement supprimé. 
