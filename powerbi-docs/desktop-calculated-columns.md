@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: c7a2b3580516c563d8a2a6d79fdc48d241e89849
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 805e052a2d5b493705c604d1817fc03c0a8b5376
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239898"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522197"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Utilisation de colonnes calculées dans Power BI Desktop
 Les colonnes calculées vous permettent d’ajouter de nouvelles données à une table déjà présente dans votre modèle. Toutefois, au lieu d’interroger et de charger les valeurs dans votre nouvelle colonne à partir d’une source de données, vous créez une formule DAX (Data Analysis Expressions) qui définit les valeurs de la colonne. Dans Power BI Desktop, vous créez les colonnes calculées à l’aide de la fonctionnalité Nouvelle colonne dans la vue Rapport.
@@ -31,23 +31,23 @@ Les colonnes calculées calculent les résultats en utilisant [DAX (Data Analysi
 Les formules DAX sont similaires aux formules Excel. En fait, DAX possède de nombreuses fonctions identiques à celles d’Excel. Les fonctions DAX, cependant, sont destinées à opérer sur des données segmentées ou filtrées de manière interactive dans un rapport, comme dans Power BI Desktop. Contrairement à Excel, où vous pouvez spécifier une formule différente pour chaque ligne d’un tableau, quand vous créez une formule DAX pour une nouvelle colonne, elle calcule un résultat pour chaque ligne de la table. Les valeurs de colonne sont recalculées si nécessaire, comme quand les données sous-jacentes sont actualisées et que les valeurs ont changé.
 
 ## <a name="lets-look-at-an-example"></a>Examinons un exemple.
-Jeff est responsable des expéditions chez Contoso. Il souhaite créer un rapport indiquant le nombre d’expéditions effectuées vers différentes villes. Il possède une table Geography avec des champs distincts pour la ville et l’État. Toutefois, Jeff souhaite que ses rapports indiquent la ville, l’État sous la forme d’une valeur unique sur la même ligne. À ce stade, la table géographique de Jeff ne contient pas le champ qu’il veut.
+Jeff est responsable des expéditions chez Contoso et souhaite créer un rapport indiquant le nombre d’expéditions effectuées vers différentes villes. Il possède une table Geography avec des champs distincts pour la ville et l’État. Toutefois, Jeff souhaite que ses rapports indiquent la ville, l’État sous la forme d’une valeur unique sur la même ligne. À ce stade, la table Geography de Jeff ne contient pas le champ qu’il souhaite.
 
 ![](media/desktop-calculated-columns/calccolinpbid_cityandstatefields.png)
 
-Cependant, avec une colonne calculée, Jeff peut simplement rassembler, ou concaténer, les villes de la colonne City avec les États de la colonne State.
+Cependant, avec une colonne calculée, Jeff peut rassembler ou concaténer les villes de la colonne City avec les États de la colonne State.
 
-Jeff clique avec le bouton droit sur la table Geography, puis clique sur Nouvelle colonne. Il entre ensuite la formule DAX suivante dans la barre de formule :
+Jeff clique avec le bouton droit sur la table Geography, puis clique sur Nouvelle colonne. Il entre ensuite la formule DAX suivante dans la barre de formule :
 
 ![](media/desktop-calculated-columns/calccolinpbid_formula.png)
 
 Cette formule crée simplement une nouvelle colonne nommée CityState et, pour chaque ligne de la table Geography, elle prend la valeur de la colonne City, ajoute une virgule et un espace puis concatène la valeur de la colonne State.
 
-À présent, Jeff dispose du champ qu’il veut.
+Jeff dispose désormais du champ souhaité.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatefield.png)
 
-Il peut l’ajouter au canevas de son rapport avec le nombre d’expéditions. Très rapidement et avec un minimum d’efforts, Jeff a maintenant un champ City,State qu’il peut ajouter à peu près à tout type de visualisation. Jeff voit que quand il crée une visualisation de carte, Power BI Desktop sait même lire les valeurs City, State dans sa nouvelle colonne.
+Il peut l’ajouter au canevas du rapport avec le nombre d’expéditions. Très rapidement et avec un minimum d’efforts, Jeff a maintenant un champ City, State qu’il peut ajouter à peu près à tout type de visualisation. Jeff constate que lorsqu’une visualisation de carte est créée, Power BI Desktop sait déjà lire les valeurs City, State dans la nouvelle colonne.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 

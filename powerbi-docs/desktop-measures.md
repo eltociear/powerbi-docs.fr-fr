@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 4395884dfbc7ef5ebfb0df34e416d69ee553ebd3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514160"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523212"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mesures dans Power BI Desktop
 
@@ -43,11 +43,11 @@ Les formules DAX sont similaires aux formules Excel. DAX a même de nombreuses f
 ## <a name="lets-look-at-an-example"></a>Examinons un exemple.
 Diane est responsable des ventes chez Contoso. Elle a été chargée de fournir les prévisions de ventes des revendeurs au cours du prochain exercice. Diane décide de baser ses estimations sur les montants des ventes de l’année précédente, en appliquant une augmentation annuelle de 6 % résultant des différentes promotions planifiées au cours des six prochains mois.
 
-Pour communiquer ces estimations, Diane importe les données des ventes de l’année précédente dans Power BI Desktop. Elle trouve le champ SalesAmount dans la table Reseller Sales (Ventes des revendeurs). Comme les données importées contiennent seulement les montants des ventes de l’année précédente, Diane renomme le champ SalesAmount (Ventes) en Last Years Sales (Ventes de l’année précédente). Diane fait ensuite glisser le champ Last Years Sales sur le canevas du rapport. Il apparaît dans une visualisation de graphique en tant que valeur unique correspondant à la somme de toutes les ventes des revendeurs réalisées l’année précédente.
+Pour communiquer ces estimations, Diane importe les données des ventes de l’année précédente dans Power BI Desktop. Elle trouve le champ SalesAmount dans la table Reseller Sales (Ventes des revendeurs). Comme les données importées contiennent seulement les montants des ventes de l’année précédente, Diane renomme le champ SalesAmount (Ventes) en Last Years Sales (Ventes de l’année précédente). Diane fait ensuite glisser le champ Last Years Sales (Ventes de l’année précédente) sur le canevas du rapport. Il apparaît dans une visualisation de graphique en tant que valeur unique correspondant à la somme de toutes les ventes des revendeurs réalisées l’année précédente.
 
-Diane remarque que même si elle n’a pas spécifié de calcul elle-même, un calcul a été fourni automatiquement. Power BI Desktop a créé sa propre mesure en cumulant toutes les valeurs du champ Last Years Sales.
+Diane remarque que même si elle n’a pas spécifié de calcul, un calcul a été fourni automatiquement. Power BI Desktop a créé sa propre mesure en cumulant toutes les valeurs du champ Last Years Sales.
 
-Toutefois, Diane a besoin d’une mesure pour calculer les prévisions de ventes pour l’année à venir, qui sont basées sur les ventes de l’année précédente multipliées par 1,06 pour tenir compte de la hausse de 6 % attendue de l’activité. Pour ce calcul, elle crée sa propre mesure. Elle utilise la fonctionnalité Nouvelle mesure pour créer une nouvelle mesure, puis entre la formule DAX suivante :
+Toutefois, Diane a besoin d’une mesure pour calculer les prévisions de ventes pour l’année à venir, qui sont basées sur les ventes de l’année précédente multipliées par 1,06 pour tenir compte de la hausse de 6 % attendue de l’activité. Pour ce calcul, elle doit créer sa propre mesure. Elle utilise la fonctionnalité Nouvelle mesure pour créer une mesure, puis entre la formule DAX suivante :
 
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 

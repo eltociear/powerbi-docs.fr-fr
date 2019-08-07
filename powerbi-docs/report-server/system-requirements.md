@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/08/2018
-ms.openlocfilehash: 063ab8083c3091a7a41ca30e9045ce3a791112d2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/23/2019
+ms.openlocfilehash: fea28cd1c6541ae9255acd4be14cc85c2c2c5bed
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770010"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415353"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Configurations matérielle et logicielle requises pour l’installation de Power BI Report Server
 
@@ -50,6 +50,7 @@ Lorsque vous créez la base de données du serveur de rapports sur un ordinateur
 
 Power BI Report Server installe les valeurs par défaut pour configurer les principaux paramètres requis pour rendre un serveur de rapports opérationnel. Les conditions requises sont les suivantes :
 
+* Les langues prises en charge pour Power BI Report Server sont l’anglais, l’allemand, l’espagnol, le japonais, l’italien, le français, le russe, le chinois simplifié, le chinois traditionnel, le portugais (Brésil) et le coréen.
 * Un moteur de base de données SQL Server doit être disponible après l’installation et avant de configurer la base de données pour le serveur de rapports. L’instance du moteur de base de données héberge la base de données du serveur de rapports que le Gestionnaire de configuration de Reporting Services doit créer. Le moteur de base de données n’est pas requis pour l’expérience d’installation réelle.
 * [Fonctionnalités des services de rapports prises en charge par les éditions de SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) met en avant les différences entre les éditions de SQL Server.
 * Le compte d’utilisateur qui exécute l’installation doit être membre du groupe d’administrateurs local.

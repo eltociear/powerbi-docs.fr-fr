@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
-ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.openlocfilehash: d1a057f56237a0609f3330d4728c7dfcded84a71
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67498973"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391117"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Apporter vos propres clés de chiffrement pour Power BI (préversion)
 
@@ -45,6 +45,9 @@ Les instructions dans cette section supposent une connaissance élémentaire d�
 
 1. Créez une clé RSA avec une longueur de 4 096 bits (ou utilisez une clé existante de ce type), avec des autorisations de chiffrement et de déchiffrement.
 
+    > [!IMPORTANT]
+    > Power BI BYOK prend uniquement en charge les clés RSA ayant une longueur de 4 096 bits.
+
 1. Configuration recommandée : Vérifiez que l’option _Suppression réversible_ est activée pour le coffre de clés.
 
 ### <a name="add-the-service-principal"></a>Ajouter le principal du service
@@ -52,6 +55,9 @@ Les instructions dans cette section supposent une connaissance élémentaire d�
 1. Dans le portail Azure, dans votre coffre de clés, sous **Stratégies d’accès**, sélectionnez **Ajouter nouveau**.
 
 1. Sous **Sélectionner le principal**, recherchez et sélectionnez Microsoft.Azure.AnalysisServices.
+
+    > [!NOTE]
+    > Si vous ne trouvez pas « Microsoft.Azure.AnalysisServices », il est probable que l’abonnement Azure associé à votre solution Azure Key Vault n’ait jamais eu de ressource Power BI associée. Essayez plutôt de rechercher la chaîne suivante : 00000009-0000-0000-c000-000000000000.
 
 1. Sous **Autorisations de clé**, sélectionnez **Ne pas inclure la clé** et **Inclure la clé**.
 

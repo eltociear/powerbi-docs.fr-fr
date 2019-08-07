@@ -11,20 +11,20 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 449d47606829c8555e0b64e7f07d1b414b99fea7
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: cb0870bf6f1cdca3cb1f95dc516f5f9124422327
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375230"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523366"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Résoudre les problèmes de Cortana pour Power BI
 Cet article fait partie d’une série. 
 
 > [!IMPORTANT]
-> Intégration de Cortana est déconseillée dans Power BI. À compter du 11 juin, Cortana ne fonctionnera plus pour les tableaux de bord et les rapports.
+> L’intégration de Cortana est déconseillée dans Power BI. Depuis le 11 juin, Cortana ne fonctionne plus pour les tableaux de bord ni les rapports.
 
-Si vous rencontrez des difficultés pour intégrer Cortana à Power BI, vous êtes au bon endroit. Pour diagnostiquer et résoudre le problème que vous rencontrez, suivez les étapes ci-dessous.
+Si vous rencontrez des problèmes pour intégrer Cortana à Power BI, vous êtes sur la bonne page. Pour diagnostiquer et résoudre le problème que vous rencontrez, suivez les étapes ci-dessous.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Pourquoi Cortana ne trouve pas de réponses dans mes jeux de données ou tableaux de bord Power BI ?
 1. Avez-vous un compte Power BI ?  Si vous n’en avez pas, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/get-started/).
@@ -54,7 +54,7 @@ Si vous rencontrez des difficultés pour intégrer Cortana à Power BI, vous êt
 1. Si vous recherchez des réponses dans des rapports, disposez-vous de rapports comportant des **cartes de réponse** Cortana ? Les cartes de réponse sont le seul moyen dont dispose Cortana pour trouver des réponses dans vos rapports Power BI.  Pour savoir comment créer une carte de réponse, consultez l’article [Créer des cartes de réponse Cortana dans le service Power BI et Power BI Desktop](service-cortana-answer-cards.md).
 2. Exécutez-vous Windows version 1511 ou ultérieure ?  Pour le savoir, ouvrez Paramètres Windows, puis sélectionnez **Système > À propos**. Si ce n’est pas le cas, mettez à jour votre version de Windows.
 3. Vos comptes Windows et Power BI sont-ils connectés ? Ceci peut prêter à confusion. Suivez les instructions de l’article [Activer Cortana pour Power BI](service-cortana-enable.md#add-your-power-bi-credentials-to-windows).
-4. Des jeux de données sous-jacents ont-ils été activés pour Cortana ? Peut-être qu’un de vos collègues a partagé un jeu de données activé pour Cortana. Dans le cas contraire, [découvrez comment activer des jeux de données pour Cortana](service-cortana-enable.md). Cela est facile et rapide.
+4. Des jeux de données sous-jacents ont-ils été activés pour Cortana ? Peut-être qu’un de vos collègues a partagé un jeu de données déjà activé pour Cortana. Dans le cas contraire, [découvrez comment activer des jeux de données pour Cortana](service-cortana-enable.md). Cela est facile et rapide.
 
 ## <a name="dashboards-only-why-doesnt-cortana-find-answers-from-my-power-bi-dashboards"></a>Tableaux de bord uniquement : pourquoi Cortana ne trouve-t-il pas de réponses dans mes tableaux de bord Power BI ?
 1. Vérifiez que vous êtes connecté à votre compte professionnel. Power BI a besoin de cette connexion pour pouvoir authentifier vos autorisations d’accès aux données. Pour déterminer si vous êtes connecté ou non, connectez-vous à votre compte professionnel, puis utilisez la zone de recherche de Windows pour accéder à « Se connecter à l’entreprise ou à l’établissement ».  

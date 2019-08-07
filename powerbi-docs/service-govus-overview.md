@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2019
+ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 554a5de238af650ab4009669d55a2fadedd4a29f
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 531cb34379c984a26e983db7acfc9b4deebf68b9
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809147"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590439"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -48,8 +48,7 @@ Azure est réparti entre plusieurs clouds. Par défaut, les locataires sont auto
 * USGov Texas
 * USGov Arizona
 
-Dans le cloud public, les plages d’IP sont disponibles, mais pour le cloud Azure Government, vous devez ouvrir un ticket de support Azure pour demander les plages d’IP des centres de données répertoriés ci-dessus. 
-
+Dans le cloud public, les espaces d’adressage IP sont disponibles. Pour le cloud pour le secteur public, reportez-vous à la [documentation téléchargeable du service Azure Government](https://www.microsoft.com/download/details.aspx?id=57063) pour obtenir les informations les plus récentes.
 
 ## <a name="limitations-of-power-bi-us-government"></a>Limitations de Power BI US Government
 Certaines des fonctionnalités disponibles dans la version commerciale du **service Power BI** ne sont *pas* disponibles dans le **service Power BI** US Government. L’équipe Power BI travaille activement à rendre ces fonctionnalités disponibles pour les clients US Government et mettra à jour cet article au moment opportun.

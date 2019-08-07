@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 41d35eb9e078a63e499bb65dead05fe7dbbc2985
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: 233b4c36b5e59b38c82f5c3ccc1f0b49b70c5ac8
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791875"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523454"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des opportunités pour Power BI : Visite guidée
 
@@ -33,7 +33,7 @@ Cet exemple s’appuie sur 2 mesures du chiffre d’affaires :
 
 ![Tableau de bord pour l’Exemple Analyse des opportunités](media/sample-opportunity-analysis/opportunity1.png)
 
-Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il a été créé avec des données réelles par [obviEnce](http://www.obvience.com/) qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : pack de contenu, fichier .pbix Power BI Desktop ou classeur Excel. Consultez [Exemples pour Power BI](sample-datasets.md). 
+Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il a été créé par [obviEnce](http://www.obvience.com/) avec des données réelles qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : pack de contenu, fichier .pbix Power BI Desktop ou classeur Excel. Consultez [Exemples pour Power BI](sample-datasets.md). 
 
 Ce tutoriel explore le pack de contenu Exemple Analyse des opportunités dans le service Power BI. Les expériences d’utilisation des rapports étant similaires dans Power BI Desktop et dans le service, vous pouvez également poursuivre avec et l’exemple de fichier .pbix dans Power BI Desktop. 
 
@@ -70,7 +70,7 @@ Vous pouvez aussi télécharger l’exemple Analyse des opportunités sous forme
 Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529782). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
-Notre responsable des ventes a créé un tableau de bord pour suivre les métriques qu’elle juge les plus importantes. Quand quelque chose l’interpelle, elle peut sélectionner une vignette pour explorer les données :
+Notre responsable des ventes a créé un tableau de bord pour suivre les métriques qu’elle juge les plus importantes. Quand quelque chose l’interpelle, elle peut sélectionner une vignette pour explorer les données :
 
 - La société réalise un chiffre d’affaires de 2 milliards de dollars et un chiffre d’affaires pondéré de 461 millions de dollars.
 - Le nombre d’opportunités et le chiffre d’affaires obéissent à une logique d’entonnoir bien connue où les totaux diminuent à chaque étape de la séquence.

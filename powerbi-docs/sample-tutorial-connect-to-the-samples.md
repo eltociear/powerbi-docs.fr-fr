@@ -8,130 +8,134 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: dfa8ff694a1f4a4ba4e5078fe93300e4bf26cc73
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 3577c19342d9f2dc5b0e3ab9908f47f82430e6db
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721393"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391501"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Se connecter aux exemples dans le service Power BI
 
-Ce tutoriel explique comment : 
+Ce didacticiel montre comment : 
 - Importer un pack de contenu d’exemple, l’ajouter au service Power BI et ouvrir son contenu. Un *pack de contenu* est un type d’exemple où le jeu de données est fourni avec un tableau de bord et un rapport. 
 - Ouvrir un fichier PBIX d’exemple dans Power BI Desktop.
 
-Si vous souhaitez d’abord obtenir plus d’informations, nous vous recommandons de commencer par lire l’article [Exemples de jeux de données Power BI](sample-datasets.md). Celui-ci présente ce qu’il vous faut savoir sur nos exemples : comment les obtenir, où les enregistrer, comment les utiliser, ainsi que certains récits que les exemples peuvent illustrer. Puis, lorsque vous avez saisi les notions de base, revenez ici.   
+Si vous souhaitez plus d’informations générales, consultez l’article [Exemples de jeux de données pour Power Bi](sample-datasets.md). Celui-ci présente ce qu’il vous faut savoir sur les exemples : comment les obtenir, où les enregistrer, comment les utiliser, ainsi que certains récits que les exemples peuvent illustrer. 
 
 ## <a name="prerequisites"></a>Conditions préalables
-Les exemples sont disponibles pour le service Power BI et pour Power BI Desktop. Pour la suite, nous allons utiliser l’exemple Analyse de la vente au détail.
+Les exemples sont disponibles pour le service Power BI et pour Power BI Desktop. Pour la suite, nous allons utiliser l’exemple Analyse de la vente au détail.
 
 Le pack de contenu de l’exemple *Analyse de la vente au détail* utilisé dans ce didacticiel comprend un tableau de bord, un rapport et un jeu de données.
-Pour vous familiariser avec ce pack de contenu et son scénario, nous vous recommandons de [découvrir l’exemple Analyse de la vente au détail](sample-retail-analysis.md) avant de commencer.
+Pour vous familiariser avec ce pack de contenu et son scénario, consultez l’article [Retail Analysis sample for Power BI: Take a tour](sample-retail-analysis.md) (Exemple Analyse de la vente au détail : visite guidée) avant de commencer.
 
-## <a name="samples-and-power-bi-service"></a>Exemples et service Power BI
+## <a name="samples-in-the-power-bi-service"></a>Exemples dans le service Power BI
 
-1. Ouvrez le service Power BI (app.powerbi.com) et connectez-vous.
-2. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche. Si l’option **Obtenir des données** n’est pas visible, développez le volet de navigation en sélectionnant l’![icône de hamburger](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
-   
-   ![icône Obtenir des données](media/sample-tutorial-connect-to-the-samples/pbi_getdata.png)
-5. Sélectionnez **Samples**(Exemples).  
-   
-   ![bouton Exemples](media/sample-tutorial-connect-to-the-samples/pbi_samplesdownload.png)
-6. Sélectionnez *Exemple Analyse de la vente au détail*, puis choisissez **Se connecter**.   
-   
-   ![bouton de connexion jaune](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+1. Ouvrez le service Power BI (app.powerbi.com), connectez-vous et ouvrez l’espace de travail où vous souhaitez enregistrer l’exemple. 
 
-## <a name="what-exactly-was-imported"></a>Quels sont les éléments importés ?
-Lorsque vous sélectionnez **Se connecter** en utilisant un exemple de pack de contenu, Power BI transfère pour vous une copie de ce pack de contenu sur le cloud, à des fins de stockage. Comme la personne qui a créé le pack de contenu y a inclus un jeu de données, un rapport et un tableau de bord, vous obtenez ces éléments lorsque vous cliquez sur **Se connecter**. 
+    Si vous n’avez pas de licence Power BI Pro, vous pouvez enregistrer l’exemple dans votre espace Mon espace de travail.
 
-1. Power BI crée le tableau de bord et le répertorie sous votre onglet **Tableaux de bord**. L’astérisque jaune indique qu’il s’agit d’un nouvel élément.
+2. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche. 
+
+   ![Sélectionner Obtenir les données](media/sample-datasets/power-bi-get-data.png)
+
+   Si vous ne voyez pas **Obtenir les données**, développez le volet de navigation en sélectionnant l’icône suivante en haut du volet : ![icône Hamburger](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+
+5. Dans la page **Obtenir des données** qui s’affiche, sélectionnez **Exemples**.
    
-   ![message de réussite](media/sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
-2. Ouvrez l’onglet **Rapports**.  Vous pouvez constater la présence d’un nouveau rapport nommé *Exemple Analyse de la vente au détail*.
+6. Sélectionnez **Exemple Analyse de la vente au détail**, puis choisissez **Se connecter**.   
    
-   ![zone rouge autour de l’Exemple Analyse de la vente au détail et étoile jaune](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
+   ![Bouton de connexion](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+
+## <a name="what-was-imported"></a>Qu’est-ce qui a été importé?
+Lorsque vous sélectionnez **Se connecter** en utilisant un exemple de pack de contenu, Power BI obtient une copie de ce pack de contenu et la stocke pour vous dans le cloud. Comme la personne qui a créé le pack de contenu y a inclus un jeu de données, un rapport et un tableau de bord, vous obtenez ces éléments lorsque vous sélectionnez **Se connecter**. 
+
+1. Lorsque vous sélectionnez **Se connecter**, Power BI crée le tableau de bord et le répertorie dans l’onglet **Tableaux de bord**. 
    
-   Puis consultez l’onglet **Jeux de données**.  Vous pouvez également constater la présence d’un nouveau jeu de données.
+   ![Entrée Exemple Analyse de la vente au détail](media/sample-retail-analysis/retail-entry.png)
+2. Ouvrez l’onglet **Rapports**. Vous pouvez constater la présence d’un nouveau rapport nommé *Exemple Analyse de la vente au détail*.
    
-   ![zone rouge autour de l’Exemple Analyse de la vente au détail](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+   ![Entrée de rapport Exemple Analyse de la vente au détail](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
+   
+   Découvrez le contenu de l’onglet **Jeux de données** ; il contient un nouveau jeu de données.
+   
+   ![Entrée de jeu de données Analyse de la vente au détail](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
 
 ## <a name="explore-your-new-content"></a>Explorer votre nouveau contenu
-À présent, vous pouvez explorer le tableau de bord, le jeu de données et le rapport. Il existe différentes manières d’accéder à vos tableaux de bord, rapports et jeux de données. Nous allons décrire l’une d’elles.  
+À présent, vous pouvez explorer le tableau de bord, le jeu de données et le rapport. Il existe différentes manières d’accéder à vos tableaux de bord, rapports et jeux de données. L’une de ces méthodes est décrite dans la procédure suivante.  
 
-> [!TIP]
-> Vous voulez d’abord quelques conseils ?  Commencez par [découvrir l’exemple Analyse de la vente au détail](sample-retail-analysis.md) en suivant une procédure pas à pas sur cet exemple.
-> 
-> 
+1. Revenez à l’onglet **Tableaux de bord**, puis sélectionnez le tableau de bord **Exemple Analyse de la vente au détail** pour l’ouvrir.       
 
-1. Revenez à l’onglet **Tableaux de bord**, puis sélectionnez le tableau de bord *Exemple Analyse de la vente au détail* pour l’ouvrir.    
+   Le tableau de bord s’ouvre ; il comporte différentes vignettes de visualisation.   
+ 
+1. Dans le tableau de bord, sélectionnez une vignette pour ouvrir le rapport sous-jacent. Dans cet exemple, nous allons sélectionner le graphique en aires **Ventes de cette année, ventes de l’année dernière par mois fiscal**.  
+
+   ![Tableau de bord de l’exemple Analyse de la vente au détail avec visuel mis en surbrillance](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
+
+   Le rapport s’ouvre sur la page qui contient le graphique en aires que vous avez sélectionné. Ici, il s’agit de la page **Ventes mensuelles du district** du rapport.
    
-   ![onglet Tableau de bord sélectionné](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards.png)
-2. Le tableau de bord s’ouvre.  Il possède de nombreuses vignettes de visualisation.
-   
-   ![tableau de bord avec visuel mis en évidence](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
-3. Sélectionnez une vignette pour ouvrir le rapport sous-jacent.  Dans cet exemple, sélectionnez le graphique en aires (encadré en rose dans l’image précédente). Le rapport s’ouvre à la page contenant ce graphique en aires.
-   
-    ![page de rapport avec visuel correspondant mis en évidence](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
+   ![Page du rapport Ventes mensuelles du district](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Si la vignette est créée à l’aide de [Questions et réponses Power BI](power-bi-tutorial-q-and-a.md), c’est la page Questions et réponses qui s’ouvre. Si la vignette a été [épinglée à partir d’Excel](service-dashboard-pin-tile-from-excel.md), c’est Excel Online qui s’ouvre dans Power BI.
+   > Si la vignette a été créée à l’aide de [Questions et réponses Power BI](power-bi-tutorial-q-and-a.md), c’est la page Questions et réponses qui s’ouvre. Si la vignette a été [épinglée à partir d’Excel](service-dashboard-pin-tile-from-excel.md), c’est Excel Online qui s’ouvre dans Power BI.
    > 
    > 
-1. Revenez à votre onglet **Jeux de données**. Vous disposez de plusieurs options pour l’exploration de votre jeu de données.  Vous ne pouvez pas l’ouvrir et afficher toutes ses lignes et colonnes (comme dans Power BI Desktop ou Excel).  Lorsqu’un utilisateur partage un pack de contenu avec des collègues, il souhaite généralement partager des insights, et non permettre à ses collègues d’accéder directement aux données. Mais vous pouvez tout de même explorer le jeu de données.  
+1. Lorsqu’un utilisateur partage un pack de contenu avec des collègues, il souhaite généralement partager uniquement les insights, et non permettre un accès direct aux données. Dans l’onglet **Jeux de données**, vous disposez de plusieurs options pour l’exploration de votre jeu de données. Toutefois, vous ne pouvez pas afficher les lignes et colonnes de vos données, comme vous pouvez le faire dans Power BI Desktop ou Excel. 
    
-   ![onglet Jeux de données](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
+   ![Entrée de jeu de données Analyse de la vente au détail](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
-   * L’une des méthodes employées pour l’exploration d’un jeu de données consiste à créer vos propres visualisations et rapports à partir de zéro.  Sélectionnez l’icône de graphique ![icône de rapport](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) pour ouvrir le jeu de données en mode Édition de rapports.
+1. L’une des méthodes employées pour l’exploration d’un jeu de données consiste à créer vos propres visualisations et rapports à partir de zéro. Sélectionnez l’icône de graphique ![Icône représentant un graphique](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) pour ouvrir le jeu de données en mode Édition de rapports.
      
-       ![nouveau rapport](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
-   * Une autre méthode d’exploration d’un jeu de données consiste à exécuter la fonctionnalité [Informations rapides](consumer/end-user-insights.md). Sélectionnez les points de suspension (...) et choisissez **Obtenir des informations**. Lorsque les informations sont prêtes, sélectionnez **Afficher les informations**.
+   ![Tout nouveau rapport](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+
+1. Une autre méthode d’exploration d’un jeu de données consiste à exécuter la fonctionnalité [Quick Insights](consumer/end-user-insights.md). Sélectionnez les points de suspension (...), puis choisissez **Obtenir Quick Insights**. Lorsque les informations sont prêtes, sélectionnez **Afficher les informations**.
      
-       ![rapport Insights](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
+    ![rapport Insights](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## <a name="samples-and-power-bi-desktop"></a>Exemples et Power BI Desktop 
-À la première ouverture, le fichier PBIX d’exemple apparaît dans l’affichage Rapport, qui permet d’explorer, de créer et de modifier les pages de rapport souhaitées avec des visualisations. L’affichage Rapport offre à peu près la même expérience de conception que le Mode Édition d’un rapport dans le service Power BI. Vous pouvez déplacer les visualisations et effectuer des opérations telles que le copier-coller ou la fusion.
+## <a name="samples-in-power-bi-desktop"></a>Exemples dans Power BI Desktop 
+À la première ouverture du fichier .pbix d’exemple dans Power BI Desktop, la vue Rapport s’affiche. Elle permet d’explorer, de créer et de modifier les pages de rapport souhaitées avec des visualisations. La vue Rapport offre pratiquement la même expérience de conception que le Mode Édition d’un rapport dans le service Power BI. Vous pouvez déplacer des visualisations et effectuer des opérations comme copier-coller, fusionner, etc. 
 
-La différence est qu’avec Power BI Desktop, vous pouvez utiliser vos requêtes et modéliser vos données pour obtenir les meilleures analyses possibles dans les rapports. Vous pouvez ensuite enregistrer votre fichier Power BI Desktop à l’emplacement de votre choix (lecteur local ou cloud).
+Contrairement à la modification d’un rapport dans le service Power BI, dans Power BI Desktop, vous pouvez également utiliser vos requêtes et modéliser vos données pour obtenir les meilleures analyses possibles dans les rapports. Vous pouvez ensuite enregistrer votre fichier Power BI Desktop à l’emplacement de votre choix (lecteur local ou cloud).
 
-1. Ouvrez le [fichier PBIX d’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) dans Power BI Desktop. 
+1. Téléchargez le [fichier .pbix de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) et ouvrez-le dans Power BI Desktop. 
 
-    ![Exemple ouvert dans la vue Rapport de Power BI](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
+    ![Exemple dans la vue Rapport de Power BI](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
-1. Le fichier s’ouvre dans l’affichage Rapport. Vous remarquerez les quatre onglets au bas de l’éditeur de rapport. Cela signifie qu’il y a quatre pages dans ce rapport et que la page « Nouveaux magasins » est actuellement sélectionnée. 
+1. Le fichier s’ouvre dans l’affichage Rapport. Notez les quatre onglets situés au bas de l’éditeur de rapport. Ces onglets représentent les quatre pages de ce rapport. Pour cet exemple, la page **Nouveaux magasins** est actuellement sélectionnée. 
 
-    ![gros plan des onglets du bas et New Stores mis en évidence](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
+    ![Onglet Nouveaux magasins mis en surbrillance](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
 
-3. Pour aller plus loin dans l’éditeur de rapport, consultez la section [Visite guidée de l’éditeur de rapport](service-the-report-editor-take-a-tour.md).
+1. Pour procéder à un examen plus approfondi de l’éditeur de rapport, consultez la section [Visite guidée de l’éditeur de rapport](service-the-report-editor-take-a-tour.md).
 
-## <a name="what-exactly-was-imported"></a>Quels sont les éléments importés ?
-Lorsque vous ouvrez le fichier PBIX d’exemple dans Desktop, Power BI présente en fait une copie de ces données et la stocke pour vous dans le cloud. Dans Desktop, vous avez accès au rapport ***et au jeu de données sous-jacent***. Quand les données sont chargées, Power BI Desktop tente de trouver et de créer automatiquement des relations.  
+## <a name="whats-in-your-report"></a>Contenu de votre rapport
+Lorsque vous téléchargez un exemple de fichier .pbix, vous téléchargez non seulement un rapport, mais aussi le *jeu de données sous-jacent*. Lorsque vous ouvrez le fichier, Power BI Desktop charge les données avec les requêtes et les relations qui leur sont associées. Vous pouvez afficher les données et les relations sous-jacentes, mais pas les requêtes sous-jacentes dans l’éditeur de requête.
 
-1. Basculez dans la [Vue Données](desktop-data-view.md) en sélectionnant l’icône de table ![icône de table](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png) .
+
+1. Basculez dans la [vue Données](desktop-data-view.md) en sélectionnant l’icône de table ![icône de table](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
  
     ![vue Données de Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
 
-    La vue Données vous permet d’inspecter, d’explorer et de comprendre les données dans votre modèle Power BI Desktop. Elle diffère de la façon dont vous affichez les données, les colonnes et les tables dans l’Éditeur de requête. La Vue de données permet d’examiner les données une fois qu’elles ont été chargées dans le modèle.
+    Dans la vue Données, vous pouvez inspecter, explorer et comprendre les données de votre modèle Power BI Desktop. Elle diffère de la façon dont vous affichez les données, les colonnes et les tables dans l’éditeur de requête. Les données de la vue Données sont déjà chargées dans le modèle.
 
-    Quand vous modélisez vos données, vous souhaitez parfois consulter le contenu réel d’une table ou d’une colonne sans créer d’élément visuel sur le canevas de rapport, bien souvent jusqu’au niveau de la ligne. Cela est particulièrement vrai lorsque vous créez des mesures et des colonnes calculées ou quand vous devez identifier un type de données ou une catégorie de données.
+    Quand vous modélisez vos données, il arrive que vous souhaitiez consulter le contenu réel des lignes et des colonnes d’une table sans créer de visuel sur le canevas de rapport. Cela est particulièrement vrai lorsque vous créez des mesures et des colonnes calculées ou quand vous devez identifier un type de données ou une catégorie de données.
 
-1. Basculez dans la [vue Relations](desktop-relationship-view.md) en sélectionnant l’icône ![icône qui ressemble à 3 cases reliées](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png) .
+1. Basculez vers la [vue Relation](desktop-relationship-view.md) en sélectionnant l’icône suivante : ![icône de la vue Relation](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
  
-    ![vue Relations dans Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
+    ![Vue Relation dans Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
     La Vue de relations présente toutes les tables, colonnes et relations du modèle. Elle permet d’afficher, de modifier et de créer des relations.
 
-## <a name="explore-your-new-content"></a>Explorer votre nouveau contenu
-Explorez à présent le jeu de données, les relations et le rapport par vous-même. Pour obtenir de l’aide, consultez le [Guide Bien démarrer avec Desktop](desktop-getting-started.md).    
-
-
 ## <a name="next-steps"></a>Étapes suivantes
+Cet environnement est sécurisé pour y jouer, étant donné que vous pouvez choisir ne pas enregistrer vos modifications. Mais si vous les enregistrez, vous pouvez toujours sélectionner **Obtenir des données** pour obtenir une nouvelle copie de cet exemple.
 
+Nous espérons que cette visite guidée vous a montré comment les tableaux de bord, jeux de données, relations et rapports Power BI peuvent fournir des insights sur des exemples de données. À présent, c’est votre tour : connectez-vous à vos propres données. Avec Power BI, vous pouvez vous connecter à une grande variété de sources de données. Pour en savoir plus, consultez les articles [Tutoriel : Bien démarrer avec le service Power BI](service-get-started.md) et [Prise en main de Power BI Desktop](desktop-getting-started.md).  
+
+Pour plus d’informations, consultez :  
 - [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
-- [Exemples pour le service Power BI](sample-datasets.md)
+- [Exemples pour Power BI](sample-datasets.md)
 - [Sources de données pour Power BI](service-get-data.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)

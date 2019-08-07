@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.topic: include
 ms.date: 07/15/2019
 ms.author: mblythe
-ms.openlocfilehash: 38993bd6ab28787acd13a9b544d37f9cb5fe2125
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4ec2c2c60a55dd4b7fd89f7fe7368c8b52f13baf
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270916"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462238"
 ---
 > [!NOTE]
-> Nous avons récemment modifié la documentation de la passerelle de données locale en la divisant en [contenu propre à Power BI](/power-bi/service-gateway-onprem) et en [contenu général qui s’applique à tous les services](/data-integration/gateway/service-gateway-onprem) que prend en charge la passerelle. Vous êtes actuellement dans le contenu Power BI. Pour fournir des commentaires sur cet article ou sur l’expérience générale avec la documentation de la passerelle, rendez-vous au bas de l’article.
+> Nous avons récemment modifié les documents de la passerelle de données locale. Nous les avons répartis en [contenu propre à Power BI](/power-bi/service-gateway-onprem) et en [contenu général s’appliquant à tous les services](/data-integration/gateway/service-gateway-onprem) pris en charge par la passerelle. Vous êtes actuellement dans le contenu Power BI. Pour fournir des commentaires sur cet article ou sur l’expérience générale avec la documentation de la passerelle, rendez-vous au bas de l’article.

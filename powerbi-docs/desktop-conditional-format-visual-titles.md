@@ -1,6 +1,6 @@
 ---
-title: Basé sur une expression de titres dans Power BI Desktop
-description: Création de titres dynamiques dans Power BI Desktop qui changent en fonction des expressions par programmation, à l’aide de la mise en forme conditionnelle par programmation
+title: Titres basés sur des expressions dans Power BI Desktop
+description: Créer des titres dynamiques dans Power BI Desktop qui changent en fonction d’expressions de programmation à l’aide de la mise en forme de programmation conditionnelle
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,32 +10,32 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769742"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522178"
 ---
-# <a name="expression-based-titles-in-power-bi-desktop"></a>Basé sur une expression de titres dans Power BI Desktop
+# <a name="expression-based-titles-in-power-bi-desktop"></a>Titres basés sur des expressions dans Power BI Desktop
 
-Vous pouvez créer dynamique, personnaliser les titres de vos éléments visuels Power BI. En créant des Expressions DAX (Data Analysis) basé sur les champs, les variables ou les autres éléments de programmation, les titres de vos visuels peuvent d’ajuster automatiquement en fonction des besoins. Ces modifications sont basées sur les filtres, les sélections, ou autres interactions de l’utilisateur et les configurations.
+Vous pouvez créer des titres dynamiques et personnalisés pour vos visuels Power BI. En créant des expressions DAX (Data Analysis Expressions) basées sur des champs, des variables ou d’autres éléments de programmation, les titres de vos visuels peuvent s’ajuster automatiquement si nécessaire. Ces modifications sont basées sur les filtres, les sélections ou d’autres configurations et interactions de l’utilisateur.
 
-![Option de mise en forme conditionnelle de capture d’écran de Power BI Desktop](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
+![Capture d’écran de l’option de mise en forme conditionnelle de Power BI Desktop](media/desktop-conditional-formatting-visual-titles/expression-based-title-01.png)
 
-Création de titres dynamiques, parfois appelé *basée sur une expression de titres*, est simple. 
+La création de titres dynamiques, parfois appelés *titres basés sur des expressions* est simple. 
 
 ## <a name="create-a-field-for-your-title"></a>Créer un champ pour votre titre
 
-La première étape de création d’un titre d’expression consiste à créer un champ dans votre modèle à utiliser pour le titre. 
+La première étape de la création d’un titre basé sur une expression consiste à créer un champ dans votre modèle à utiliser pour le titre. 
 
-Il existe toutes sortes de manières créatives pour que votre titre visual reflètent ce que vous voulez qu’il dise, ou ce que vous voulez express. Jetons un œil à quelques exemples.
+Il existe toutes sortes de méthodes créatives pour que le titre du visuel reflète ce que vous souhaitez qu’il indique ou ce que vous souhaitez exprimer. Examinons quelques exemples.
 
-Vous pouvez créer une expression qui modifie selon le contexte de filtre qui reçoit de l’élément visuel pour le nom de la marque du produit. L’illustration suivante montre la formule DAX pour ce champ.
+Vous pouvez créer une expression qui change en fonction du contexte de filtre que le visuel reçoit pour le nom de marque du produit. L’illustration suivante montre la formule DAX pour un champ de ce type.
 
-![Formule de la capture d’écran de DAX](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
+![Capture d’écran d’une formule DAX](media/desktop-conditional-formatting-visual-titles/expression-based-title-02.png)
 
-Un autre exemple est à l’aide d’un titre dynamique qui change en fonction de langage ou la culture de l’utilisateur. Vous pouvez créer des titres de spécifique à la langue dans une mesure DAX à l’aide de la `USERCULTURE()` (fonction). Cette fonction retourne le code de culture pour l’utilisateur, en fonction de leur système d’exploitation ou les paramètres du navigateur. Vous pouvez utiliser l’instruction switch DAX suivante pour sélectionner la valeur traduite correcte. 
+Un autre exemple consiste à utiliser un titre dynamique qui change en fonction de la langue ou de la culture de l’utilisateur. Vous pouvez créer des titres propres à une langue dans une mesure DAX à l’aide de la fonction `USERCULTURE()`. Cette fonction retourne le code de culture de l’utilisateur, en fonction des paramètres de son système d’exploitation ou de son navigateur. Vous pouvez utiliser l’instruction switch DAX suivante pour sélectionner la valeur traduite correcte. 
 
 ```
 SWITCH (
@@ -46,33 +46,35 @@ SWITCH (
 )
 ```
 
-Ou vous pouvez récupérer la chaîne à partir d’une table de recherche qui contient toutes les traductions. Vous placez cette table dans votre modèle. 
+Vous pouvez également récupérer la chaîne d’une table de choix contenant toutes les traductions. Vous pouvez placer cette table dans votre modèle. 
 
-Voici quelques exemples que vous pouvez utiliser pour créer des titres dynamiques et basé sur une expression pour vos éléments visuels dans Power BI Desktop. Ce que vous pouvez faire avec vos titres sont limitées uniquement par votre imagination et votre modèle.
+Voici quelques exemples que vous pouvez utiliser pour créer des titres dynamiques, basés sur des expressions pour vos visuels dans Power BI Desktop. Ce que vous pouvez faire avec vos titres est limité uniquement par votre imagination et votre modèle.
 
 
-## <a name="select-your-field-for-your-title"></a>Sélectionnez le champ de titre de votre
+## <a name="select-your-field-for-your-title"></a>Sélectionner votre champ pour votre titre
 
-Une fois que vous avez créé l’expression DAX pour le champ que vous créez dans votre modèle, vous devez l’appliquer au titre de votre élément visuel.
+Une fois que vous avez créé l’expression DAX pour le champ que vous créez dans votre modèle, vous devez l’appliquer au titre de votre visuel.
 
-Pour sélectionner le champ et l’appliquer, accédez à la **visualisations** volet. Dans le **Format** zone, sélectionnez **titre** pour afficher les options de titre pour l’élément visuel. 
+Pour sélectionner le champ et l’appliquer, accédez au volet **Visualisations**. Dans la zone **Format**, sélectionnez **Titre** pour afficher les options de titre du visuel. 
 
-Lorsque vous cliquez sur **texte du titre**, un menu contextuel s’affiche qui vous permet de sélectionner ***fx* mise en forme conditionnelle**. Lorsque vous sélectionnez cet élément de menu, un **texte du titre** boîte de dialogue s’affiche. 
+Lorsque vous cliquez avec le bouton droit sur **Texte du titre**, un menu contextuel s’affiche pour vous permettre de sélectionner ***Mise en forme conditionnelle fx*** . Lorsque vous sélectionnez cet élément de menu, une boîte de dialogue **Texte du titre** s’affiche. 
 
-![Boîte de dialogue de capture d’écran de titre texte](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
+![Capture d’écran de la boîte de dialogue Texte du titre](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
-Dans cette fenêtre, vous pouvez sélectionner le champ que vous avez créé pour l’utiliser pour votre titre.
+Dans cette fenêtre, vous pouvez sélectionner le champ que vous avez créé pour votre titre.
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 
-Il existe quelques limitations à l’implémentation actuelle de l’expression basée les titres des visuels :
+Il existe quelques restrictions à l’implémentation actuelle des titres basés sur des expressions pour les visuels :
 
-* Mise en forme basée sur l’expression n’est pas actuellement pris en charge Python visuels, les éléments visuels R ou le visuel de facteurs d’influence clés.
-* Le champ que vous créez pour le titre doit être un type de données de chaîne. Mesures qui retournent des nombres ou date/heure (ou tout autre type de données) ne sont pas actuellement pris en charge.
+* La mise en forme basée sur les expressions n’est pas prise en charge actuellement sur les visuels Python ou R, ni sur les visuels d’influenceurs clés.
+* Le champ que vous créez pour le titre doit correspondre à des données de type chaîne. Les mesures qui retournent des nombres ou une date/heure (ou tout autre type de données) ne sont pas prises en charge actuellement.
+* Les titres basés sur les expressions ne sont pas reportés lorsque vous épinglez un visuel à un tableau de bord.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Cet article décrit comment créer des expressions DAX qui convertissent les titres de vos éléments visuels dans des champs dynamiques peuvent changer quand les utilisateurs interagissent avec vos rapports. Que vous trouverez les articles suivants utiles également.
+Cet article décrit comment créer des expressions DAX qui transforment les titres de vos visuels en champs dynamiques pouvant changer lorsque des utilisateurs interagissent avec vos rapports. Vous trouverez également utiles les articles suivants.
 
-* [Utiliser l’extraction de cross-report dans Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Mise en forme conditionnelle dans les tables](desktop-conditional-table-formatting.md)
+* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md) (Utiliser une extraction interrapport dans Power BI Desktop)
 * [Utiliser une extraction dans Power BI Desktop](desktop-drillthrough.md)

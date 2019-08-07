@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 07/25/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523315"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623894"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -53,9 +53,9 @@ app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter
 
 Le type du champ peut être un nombre, une date/heure ou une chaîne, et le type utilisé doit correspondre au type défini dans le jeu de données.  Par exemple, la spécification d’une colonne de table de type « chaîne » ne fonctionne pas si vous recherchez une valeur numérique ou de date/heure dans une colonne du jeu de données définie en tant que date, telle que Table/StringColumn eq 1.
 
-* Les **chaînes** doivent être placées entre des guillemets simples : 'nom responsable'.
-* Les **nombres** ne nécessitent par de mise en forme spéciale.
-* Les **dates et heures** doivent être placées entre des guillemets simples. Dans OData v3, ils doivent être précédés du mot datetime, mais datetime n’est pas nécessaire dans OData v4.
+* Les **chaînes** doivent être placées entre des guillemets simples, comme dans 'nom responsable'.
+* Les **nombres** ne nécessitent par de mise en forme spéciale. Voir la section [Types de données numériques](#numeric-data-types) de cet article pour plus d’informations.
+* **Dates et heures** Voir la section [Types de données date](#date-data-types) dans cet article. 
 
 Si cela ne vous semble pas clair, poursuivez votre lecture. Nous allons décomposer la syntaxe.  
 
@@ -133,9 +133,17 @@ Un filtre d’URL Power BI peut inclure des nombres dans les formats suivants.
 
 ### <a name="date-data-types"></a>Types de données date
 
-Power BI prend en charge OData V3 et V4 pour les types de données **Date** et **DateTimeOffset**.  Les dates sont représentées au format EDM (2019-02-12T00:00:00), donc lorsque vous spécifiez une date comme AAAA-MM-JJ, Power BI l’interprète comme AAAA-MM-JJJ00:00:00.
+Power BI prend en charge OData V3 et V4 pour les types de données **Date** et **DateTimeOffset**. Pour OData V3, les dates doivent être entourées de guillemets simples et précédées du mot datetime. Les guillemets simples et le mot datetime ne sont pas nécessaires dans OData V4. 
+  
+Les dates sont représentées selon le format de modèle EDM (2019-02-12T00:00:00) : Quand vous spécifiez une date en 'AAAA-MM-JJ', Power BI l’interprète en 'AAAA-MM-JJT00:00:00'. Assurez-vous que le mois et le jour comportent deux chiffres, MM et JJ.
 
-Pourquoi cette distinction est-elle importante ? Supposons que vous créez un paramètre de chaîne de requête **Table/Date gt 2018-08-03**.  Les résultats vont-ils inclure le 3 août 2018 ou commencer le 4 août 2018 ? Comme Power BI traduit votre requête en **Table/Date gt 2018-08-03T00:00:00**, vos résultats incluent toutes les dates qui ont une partie heure différente de zéro, ces dates étant supérieures à **2018-08-03T00:00:00**.
+Pourquoi cette distinction est-elle importante ? Supposons que vous créez un paramètre de chaîne de requête **Table/Date gt 2018-08-03**.  Les résultats vont-ils inclure le 3 août 2018 ou commencer le 4 août 2018 ? Power BI traduit votre requête en **Table/Date gt '2018-08-03T00:00:00'** . Ainsi, vos résultats incluent toutes les dates qui ont une partie de temps différente de zéro, car ces dates seraient supérieures à **'2018-08-03T00:00:00'** .
+
+Il existe d'autres différences entre V3 et V4. OData V3 ne prend pas en charge Dates, seulement DateTime. Par conséquent, si vous utilisez le format V3, vous devez le qualifier avec la date et l'heure complètes. Les littéraux de date comme "datetime'2019-05-20'" ne sont pas pris en charge dans la notation V3. Mais vous pouvez simplement écrire "2019-05-20" en notation V4. Voici deux requêtes de filtre équivalentes dans V3 et V4 :
+
+- Format OData V4 : filter=Table/Date gt 2019-05-20
+- Format OData V3 : filter=Table/Date gt datetime'2019-05-20T00:00:00'
+
 
 ## <a name="special-characters-in-url-filters"></a>Caractères spéciaux dans les filtres d’URL
 

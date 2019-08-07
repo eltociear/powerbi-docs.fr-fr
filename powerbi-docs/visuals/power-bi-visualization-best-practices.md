@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7d716c79146a0d53d261dba514aacb8787ca2fa3
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 53a8847f96d6aa3143e91cab07029a8e0f6afc85
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299548"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523739"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Meilleures pratiques en matière de conception de visuels et de rapports
 
@@ -1007,7 +1007,7 @@ Pour plus d’informations sur les treemaps :
 
 Les graphiques en courbes, à barres et les histogrammes sont l’option idéale dans la plupart des cas. Il est évident que les graphiques en secteurs ou en anneau sont difficiles à interpréter correctement. En fait, ils peuvent souvent déformer les données. Évitez-les autant que possible. Stephen Few raconte très bien l’historique et les dangers dans son article [Save the Pies for Dessert](https://www.perceptualedge.com/articles/08-21-07.pdf).
 
-Il explique le seul cas de figure où les graphiques en secteurs peuvent être utiles : lors de la comparaison de relations entre les parties et un tout. Il est rarement préférable à un graphique à barres empilées à 100 %.
+Stephen explique le seul cas de figure où les graphiques en secteurs peuvent être utiles : lors de la comparaison de relations entre les parties et un tout. Il est rarement préférable à un graphique à barres empilées à 100 %.
 
 Un autre article (animation) intéressant(e) sur les graphiques en secteurs est disponible sur le [site de Darkhorse Analytics](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
 
@@ -1037,4 +1037,4 @@ D’autres questions ? [Essayez la communauté Power BI](http://community.powe
 
 ### <a name="book-recommendations"></a>Recommandations de livres
 
-Il existe plusieurs bons livres qui peuvent aider les équipes à rafraîchir leurs connaissances concernant les techniques de conception de visuels. Nous vous recommandons fortement de lire le livre *Information Dashboard Design* de Stephen Few. Il approfondit le sujet dans deux autres livres : *Show Me the Numbers* et *Now You See It*. Few et d’autres ont trouvé leur inspiration auprès de Edward R. Tufte, dont le livre *The Visual Display of Quantitative Information* est considéré comme un classique dans le secteur. Tufte a également écrit *Visual Explanations*, *Envisioning Information* et *Beautiful Evidence*. Nous vous recommandons également le nouvel ouvrage d’Andy Kirk, *Data Visualization: A Handbook for Data Driven Design*. Voici d’autres auteurs recommandés : Lachlan James, William McKnight et Boris Evelson (Forrester), Darkhorse Analytics.
+Il existe plusieurs bons livres qui peuvent aider les équipes à rafraîchir leurs connaissances concernant les techniques de conception de visuels. Nous vous recommandons fortement de lire le livre *Information Dashboard Design* de Stephen Few. Il approfondit le sujet dans deux autres livres : *Show Me the Numbers* et *Now You See It*. Few et d’autres ont trouvé leur inspiration auprès de Edward R. Tufte, dont le livre *The Visual Display of Quantitative Information* est considéré comme un classique dans le secteur. Tufte a également écrit *Visual Explanations*, *Envisioning Information* et *Beautiful Evidence*. Nous vous recommandons également le nouvel ouvrage d’Andy Kirk, *Data Visualization: A Handbook for Data Driven Design*. Voici d’autres auteurs recommandés : Lachlan James, William McKnight et Boris Evelson (Forrester), Darkhorse Analytics.

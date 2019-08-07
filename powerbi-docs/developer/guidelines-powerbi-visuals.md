@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271184"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380218"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
 Avant de [publier](https://docs.microsoft.com/power-bi/developer/office-store) votre visuel sur AppSource pour que d’autres utilisateurs puissent le découvrir et l’utiliser, veillez à suivre les instructions pour créer une expérience de qualité pour vos utilisateurs. 
@@ -26,7 +26,7 @@ Tous les visuels Power BI doivent activer le menu contextuel pour offrir une exp
 
 ## <a name="logo-guidelines"></a>Instructions relatives aux logos
 
-Cette section décrit les spécifications relatives à l’ajout de logos et de logotypes dans les visuels.
+Cette section décrit les spécifications relatives à l’ajout de logos et de logotypes dans les visuels. Les logos ne sont pas obligatoires. S’ils sont ajoutés, ils doivent suivre ces instructions. 
 
 > [!IMPORTANT]
 > Les logos sont autorisés en *mode d’édition uniquement*. Les logos ne peuvent *pas* être affichés en mode Affichage.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: ddda7d6aaacbcde2d71371b316d14a9cd411bd43
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67792005"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523428"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : Visite guidée
 
@@ -23,7 +23,7 @@ Le pack de contenu exemple Rentabilité des clients contient un tableau de bord,
 
 ![Tableau de bord de l’exemple Rentabilité des clients](media/sample-customer-profitability/power-bi-dash.png)
 
-Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il a été créé avec des données réelles par [obviEnce](http://www.obvience.com/) qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : pack de contenu, fichier .pbix Power BI Desktop ou classeur Excel. Consultez [Exemples pour Power BI](sample-datasets.md). 
+Cet exemple fait partie d’une série d’exemples qui illustre la façon dont vous pouvez utiliser Power BI avec des données, des rapports et des tableaux de bord orientés métier. Il a été créé par [obviEnce](http://www.obvience.com/) avec des données réelles qui sont présentées de façon anonyme. Les données sont disponibles dans plusieurs formats : pack de contenu, fichier .pbix Power BI Desktop ou classeur Excel. Consultez [Exemples pour Power BI](sample-datasets.md). 
 
 Ce tutoriel explore le pack de contenu de l’exemple Rentabilité des clients dans le service Power BI. Les expériences d’utilisation des rapports étant similaires dans Power BI Desktop et dans le service, vous pouvez également poursuivre avec et l’exemple de fichier .pbix dans Power BI Desktop. 
 
@@ -81,7 +81,7 @@ Dans l’espace de travail où vous avez enregistré l’exemple, recherchez le 
    - Le chiffre d’affaires total de l’année est proche des prévisions.
 
 ### <a name="manager-specific-dashboard-tiles"></a>Vignettes de tableau de bord des responsables
-Les vignettes du côté droit du tableau de bord représentent la carte de performance de l’équipe. La directrice financière a besoin d’effectuer le suivi des responsables et ces vignettes lui offrent une vision globale des bénéfices, grâce à GM% (ratio de la marge brute). Si la tendance du ratio de marge brute est inattendue pour l’un des responsables, elle peut étudier la question de plus près.
+Les vignettes du côté droit du tableau de bord représentent la carte de performance de l’équipe. La directrice financière a besoin d’effectuer le suivi des responsables, et ces vignettes lui offrent une vision globale des bénéfices, grâce à GM% (ratio de marge brute). Si la tendance du ratio de marge brute est inattendue pour l’un des responsables, il peut étudier la question de plus près.
 
 ![% de marge brute pour gestionnaires](media/sample-customer-profitability/power-bi-manager2.png)
 
@@ -106,7 +106,7 @@ Deux vignettes de ce tableau de bord, **Target vs Actual** (Objectif/Réel) et *
 
     a. Sur le curseur **Executive** (Cadre), sélectionnez **Carlos Grilo**.   
 
-    b. Le premier tableau croisé dynamique indique que la croissance du chiffre d’affaires de Carlos pour son produit phare, Primus, est en baisse de 152 % par rapport à l’année dernière. Le graphique **Variation des revenus d’une année à l’autre** montre qu’il est au-dessous du budget la plupart du temps.  
+    b. Le premier tableau croisé dynamique indique que la croissance du chiffre d’affaires de Carlos pour son produit phare, Primus, est en baisse de 152 % par rapport à l’année dernière. Le graphique **Variation des revenus d’une année à l’autre** montre que Carlos est au-dessous du budget la plupart du temps.  
 
     ![Tableau croisé dynamique](media/sample-customer-profitability/power-bi-pivotchart.png)
 
@@ -139,7 +139,7 @@ La plupart des vignettes du tableau de bord de l’exemple Rentabilité des clie
 1. Dans le segment **Executive** situé à gauche, sélectionnez le nom d’Andrew pour filtrer la page de rapport afin d’afficher uniquement les données concernant Andrew :
 
    * Pour un indicateur de performance clé rapide, regardez **l’état du chiffre d’affaires (année complète)** (Revenue Status [Total Year]) d’Andrew : il est vert, ce qui signifie qu’il obtient de bons résultats.
-   * Le graphique **Revenue % Variance to Budget by Month and Executive** montre que si l’on fait abstraction d’une baisse en février, Andrew obtient de bons résultats. La région prédominante pour lui est la région East. Il a un portefeuille de 49 clients et vend 5 produits sur 7. Son ratio de marge brute (« GM% ») n’est ni le plus élevé ni le plus faible.
+   * Le graphique **Revenue % Variance to Budget by Month and Executive** montre que si l’on fait abstraction d’une baisse en février, Andrew obtient de bons résultats. La région prédominante pour Andrew est la région Est, qui comprend 49 clients et cinq des sept produits. Le ratio de marge brute d’Andrew n’est ni le plus élevé ni le plus faible.
    * Le graphique **RevenueTY and Revenue % Var to Budget by Month** (chiffre d’affaires annuel et écart en % du chiffre d’affaires par rapport aux prévisions par mois) fait état d’un bénéficie régulier. Toutefois, si vous filtrez en sélectionnant le carré de la région **Central** (Centre) dans le treemap des régions, vous constatez qu’Andrew n’a généré du chiffre d’affaires qu’en mars et seulement dans l’Indiana. S’agit-il d’une tendance intentionnelle ou y a-t-il une autre raison à découvrir ?
 
 2. Passons maintenant au cas de Valery. Dans le segment **Executive**, sélectionnez le nom de Valery pour filtrer la page de rapport afin d’afficher uniquement les données la concernant. 
@@ -147,10 +147,10 @@ La plupart des vignettes du tableau de bord de l’exemple Rentabilité des clie
    ![Données de Valery](media/sample-customer-profitability/customer3.png)
 
    * Notez que l’indicateur de performance clé **Revenue Status (Total Year)** (État du chiffre d’affaires [année complète]) est au rouge. Cet élément nécessite une analyse plus fine.
-   * De même, l’écart de son chiffre d’affaires dresse un tableau inquiétant. Elle n’a pas atteint ses objectifs de marge.
-   * Valery a seulement neuf clients, vend seulement deux produits et travaille presque exclusivement avec des clients de la région Nord (« North »). Cette spécialisation peut expliquer les fluctuations importantes observées dans ses métriques.
-   * Si vous sélectionnez le carré **North** (Nord) dans le treemap, vous pouvez constater que la marge brute de Valery pour cette région est en phase avec sa marge globale.
-   * En sélectionnant chacun des autres carrés **Revenu total par région**, on découvre quelque chose d’intéressant : son ratio de marge brute (GM%) varie de 23 % à 79 %. Son chiffre d’affaires, dans toutes les régions à l’exception du Nord, est extrêmement saisonnier.
+   * De même, l’écart de son chiffre d’affaires dresse un tableau inquiétant. Valery n’a pas atteint les objectifs de marge définis.
+   * Valery a seulement neuf clients, vend seulement deux produits et travaille presque exclusivement avec des clients de la région Nord (« North »). Cette spécialisation peut expliquer les fluctuations importantes observées dans les métriques.
+   * Si vous sélectionnez le carré **North** (Nord) dans l’arborescence, vous pouvez constater que la marge brute de Valery pour cette région est en phase avec sa marge globale.
+   * En sélectionnant chacun des autres carrés **Revenu total par région**, on découvre quelque chose d’intéressant : son ratio de marge brute (GM%) varie de 23 % à 79 %. Le chiffre d’affaires de Valery, dans toutes les régions à l’exception du Nord, est extrêmement saisonnier.
 
 3. Poursuivez l’exploration pour découvrir les raisons qui expliquent les mauvais résultats enregistrés dans la zone de Valery. Examinez les régions, les autres divisions et la page suivante du rapport : **Industry Margin Analysis** (Analyse de la marge sectorielle).
 
@@ -165,10 +165,10 @@ La page du rapport intitulée « Industry Margin Analysis » propose une autre
 
 3. Lorsque vous sélectionnez chaque responsable dans le graphique, notez les points suivants :
    * La zone d’influence d’Andrew s’étend sur plusieurs secteurs d’activité bien différents avec un ratio de marge brute (le plus souvent positif) et un pourcentage d’écart très variables.
-   * Le graphique d’Annelie est assez similaire, sauf qu’elle se concentre uniquement sur quelques secteurs d’activités, avec une priorité donnée au secteur Federal et au produit Gladius.
-   * Carlos met clairement l’accent sur le segment Services, ce qui lui réussit. Il a fortement amélioré son pourcentage d’écart (Var%) dans les secteurs High Tech (Hautes technologies) et Industrial (Industrie), qui est nouveau pour lui et où il a nettement dépassé les prévisions.
-   * Tina se concentre sur quelques secteurs et c’est elle qui affiche le meilleur ratio de marge brute, mais la petite taille de ses bulles indique que sa contribution au résultat de l’entreprise est minime.
-   * Valery, qui a un seul produit dans son portefeuille, travaille seulement dans cinq secteurs d’activité. Bien que son activité soit saisonnière, elle produit toujours une bulle de grande taille, ce qui est le signe qu’elle contribue de manière importante au résultat de l’entreprise. Est-ce que ses performances négatives sont liées aux secteurs ?
+   * Le graphique d’Annelie est assez similaire, sauf qu’elle se concentre uniquement sur quelques secteurs d’activité, avec une priorité donnée au secteur Federal et au produit Gladius.
+   * Carlos met clairement l’accent sur le segment Services, ce qui lui réussit. Carlos a également fortement amélioré son pourcentage d’écart (Var%) dans les secteurs High Tech (Hautes technologies) et Industrial (Industrie), qui est nouveau et où il a nettement dépassé les prévisions.
+   * Tina se concentre sur quelques secteurs, et c’est elle qui affiche le meilleur ratio de marge brute, mais la petite taille des bulles indique que sa contribution au résultat de l’entreprise est minime.
+   * Valery, qui a un seul produit dans son portefeuille, travaille seulement dans cinq secteurs d’activité. Bien que son activité soit saisonnière, elle produit toujours une bulle de grande taille, ce qui est le signe qu’elle contribue de manière importante au résultat de l’entreprise. Est-ce que ses performances négatives sont liées aux secteurs ?
 
 ### <a name="executive-scorecard"></a>Executive Scorecard
 Cette page est mise en forme comme une carte de réponse pour Cortana. Pour plus d’informations, consultez [Créer une page de réponse personnalisées pour Cortana](service-cortana-answer-cards.md).
