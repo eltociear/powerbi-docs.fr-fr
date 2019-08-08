@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: d1a057f56237a0609f3330d4728c7dfcded84a71
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 1e836dd9fe4be1c0267a0ba4008c2455cf59e2e2
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391117"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665375"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Apporter vos propres clés de chiffrement pour Power BI (préversion)
 
@@ -64,6 +64,9 @@ Les instructions dans cette section supposent une connaissance élémentaire d�
     ![Composants de fichier PBIX](media/service-encryption-byok/service-principal.png)
 
 1. Sélectionnez **OK**, puis **Enregistrer**.
+
+> [!NOTE]
+> Pour que Power BI ne puisse plus accéder à vos données à l’avenir, supprimez les droits d’accès à ce principal de service à partir de votre coffre de clés Azure.
 
 ### <a name="create-an-rsa-key"></a>Créer une clé RSA
 

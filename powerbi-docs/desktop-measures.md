@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523212"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730093"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Mesures dans Power BI Desktop
 
 **Power BI Desktop** vous aide à créer des analyses de vos données en quelques clics seulement. Mais parfois, ces données n’incluent pas tout ce dont vous avez besoin pour répondre à certaines de vos questions les plus importantes. Les mesures peuvent vous y aider.
 
-Les mesures sont utilisées dans certaines des analyses de données les plus courantes. Par exemple, les sommes, les moyennes, les valeurs minimales ou maximales, les comptages ou des calculs plus avancés que vous créez vous-même avec une formule DAX. Les résultats calculés des mesures changent toujours en réponse à votre interaction avec vos rapports, favorisant ainsi l’exploration rapide et dynamique des données appropriées. Examinons cela de plus près.
+Les mesures sont utilisées dans certaines des analyses de données les plus courantes. Vous pouvez définir des résumés simples comme des sommes, des moyennes, des valeurs minimales et maximales ainsi que des décomptes par le biais du Fields Well, comme indiqué dans la vidéo sur les [options de résumé et de catégorie](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16). Vous pouvez créer vous-même des calculs plus avancés à l’aide d’une formule DAX. Les résultats calculés des mesures changent toujours en réponse à votre interaction avec vos rapports, favorisant ainsi l’exploration rapide et dynamique des données appropriées. Examinons cela de plus près.
 
 ## <a name="understanding-measures"></a>Présentation des mesures
 
-Dans **Power BI Desktop**, les mesures sont créées et utilisées dans la **vue Rapport** ou dans la **vue Données**. Les mesures que vous créez vous-même apparaissent dans la liste Champs avec une icône de calculatrice. Vous pouvez nommer les mesures comme vous le souhaitez et les ajouter à une visualisation nouvelle ou existante comme tout autre champ.
+Dans **Power BI Desktop**, les mesures sont créées et affichées dans la **vue Rapport** ou la **vue Données**. Les mesures que vous créez vous-même apparaissent dans la liste Champs avec une icône de calculatrice. Vous pouvez nommer les mesures comme vous le souhaitez et les ajouter à une visualisation nouvelle ou existante comme tout autre champ.
 
 ![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
@@ -64,6 +64,25 @@ Vous pouvez également choisir des catégories de données pour les mesures.
 Entre autres choses, cela vous permet d’utiliser des mesures pour créer dynamiquement des URL et de marquer la catégorie de données comme URL web. 
 
 Vous pouvez créer des tableaux qui affichent les mesures comme URL web, puis cliquer sur l’URL qui est créée en fonction de votre sélection. C’est particulièrement utile quand vous voulez créer un lien vers d’autres rapports Power BI avec [des paramètres de filtre d’URL](service-url-filters.md).
+
+
+## <a name="organizing-your-measures"></a>Organisation de vos mesures
+
+Les mesures ont une *table principale* qui définit leur emplacement dans la liste des champs. Vous pouvez choisir un autre emplacement dans les tables de votre modèle.
+
+![Sélectionner une table pour votre mesure](media/desktop-measures/measures-03.png)
+
+Vous pouvez également organiser les champs d’une table en *dossiers d’affichage*. Sélectionnez **Vue de modèle** dans la partie gauche de la fenêtre de Power BI Desktop, puis sélectionnez le champ à déplacer à partir de la liste des champs disponibles sur le canevas. Dans le volet de propriétés, une zone de texte apparaît sous **Dossier d’affichage**. Quand vous tapez un nom dans le champ **Dossier d’affichage**, le dossier est créé et le champ sélectionné est déplacé dans ce dossier.
+
+![Créer un champ pour les mesures](media/desktop-measures/measures-04.gif)
+
+Vous pouvez créer des sous-dossiers à l’aide d’une barre oblique inverse. Par exemple, *Finance\Currencies* crée un dossier *Finance* avec dans celui-ci un dossier *Currencies*.
+
+Vous pouvez faire apparaître un champ dans plusieurs dossiers en utilisant un point-virgule pour séparer les noms des dossiers. Par exemple, *Products\Names;Departments* fait apparaître le champ dans un dossier *Departments* et un dossier *Names* à l’intérieur d’un dossier *Products*.
+
+Enfin, vous pouvez créer une table spéciale qui contient uniquement les mesures qui apparaissent toujours en haut de la **Liste des champs**. Pour ce faire, créez une table avec une seule colonne. Vous pouvez utiliser **Entrer des données** pour créer cette table. Déplacez ensuite vos mesures vers cette table. Enfin, masquez la colonne (pas la table) que vous avez créée. Vous devez fermer et rouvrir la **Liste des champs** pour que Power BI Desktop l’affiche correctement. Pour cela, cliquez sur le chevron situé en haut de la **Liste des champs**.
+
+![Organiser les mesures et les conserver en haut de la Liste des champs](media/desktop-measures/measures-05.png)
 
 ## <a name="learn-more"></a>En savoir plus
 Nous vous avons présenté ici une brève introduction aux mesures, mais de nombreuses informations complémentaire pourront vous aider à apprendre à créer vos propres mesures. Veillez à consulter le [Tutoriel : Création de mesures personnalisées dans Power BI Desktop](desktop-tutorial-create-measures.md), où vous pourrez télécharger un exemple de fichier et bénéficier de leçons pas à pas sur la création de mesures supplémentaires.  
