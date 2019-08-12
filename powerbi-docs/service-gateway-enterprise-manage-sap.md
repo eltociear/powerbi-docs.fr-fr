@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b61d794701d18fd25ab9acb5d5208ae289376eb6
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: a09388e8b22131c9b82771385b69142b18e3cc84
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271740"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730004"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Gérer votre source de données - SAP HANA
 
@@ -32,7 +32,7 @@ Pour plus d’informations sur l’ajout d’une source de données, consultez [
 Après avoir sélectionné le type de source de données SAP HANA, vous renseignez les informations **Serveur**, **Nom d’utilisateur** et **Mot de passe** pour la source de données.
 
 > [!NOTE]
-> Toutes les requêtes à la source de données sont exécutées à l’aide de ces informations d’identification. Pour plus d’informations sur la façon dont les informations d’identification sont stockées, consultez [Stockage d’informations d’identification chiffrées dans le cloud](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
+> Toutes les requêtes à la source de données sont exécutées à l’aide de ces informations d’identification. Pour plus d’informations sur la façon dont les informations d’identification sont stockées, voir [Stocker des informations d’identification chiffrées dans le cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Spécification des paramètres de la source de données](media/service-gateway-enterprise-manage-sap/datasourcesettings3-sap.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7d9e670d2567181a0dc99c23997ac3bc2d35f3c9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2c21792f97445b336709038f7ec2ec39d041312b
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271599"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730053"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Gérer votre source de données - SQL Server
 
@@ -37,7 +37,7 @@ Vous devez ensuite renseigner les informations relatives à la source de donnée
 Vous devez également choisir une **méthode d’authentification**. Ce peut être **Windows** ou **De base**. Choisissez **De base** si vous comptez utiliser l’authentification SQL plutôt que l’authentification Windows. Entrez les informations d’identification qui seront utilisées pour cette source de données.
 
 > [!NOTE]
-> Toutes les requêtes adressées à la source de données utilisent ces informations d’identification, sauf si une authentification unique (SSO) Kerberos est configurée et activé pour la source de données. Avec l’authentification unique, les jeux de données d’importation utilisent les informations d’identification stockées, mais les jeux de données DirectQuery se servent de l’utilisateur Power BI actif pour exécuter les requêtes à l’aide de l’authentification unique. Pour en savoir plus sur la façon dont les informations d’identification sont stockées, consultez [Stockage d’informations d’identification chiffrées dans le cloud](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud) ou l’article décrivant comment [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-kerberos.md).
+> Toutes les requêtes adressées à la source de données utilisent ces informations d’identification, sauf si une authentification unique (SSO) Kerberos est configurée et activé pour la source de données. Avec l’authentification unique, les jeux de données d’importation utilisent les informations d’identification stockées, mais les jeux de données DirectQuery se servent de l’utilisateur Power BI actif pour exécuter les requêtes à l’aide de l’authentification unique. Pour en savoir plus sur la façon dont les informations d’identification sont stockées, voir [Stocker des informations d’identification chiffrées dans le cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud) ou l’article décrivant comment [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-kerberos.md).
 
 ![Spécification des paramètres de la source de données](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 
@@ -64,7 +64,7 @@ C’est le cas pour DirectQuery et pour l’actualisation planifiée.
 
 ### <a name="using-the-data-source-with-directquery-connections"></a>Utilisation de la source de données avec des connexions DirectQuery
 
-Vous devez vérifier que le nom du serveur et celui de la base de données correspondent entre **Power BI Desktop** et la source de données configurée pour la passerelle. Vous devez également vérifier que votre utilisateur est listé sous l’onglet **Utilisateurs** de la source de données afin de publier des jeux de données DirectQuery. Pour DirectQuery, la sélection se produit dans Power BI Desktop la première fois que vous importez des données. Pour plus d’informations sur l’utilisation de DirectQuery, consultez [Utilisation de DirectQuery dans Power BI Desktop](desktop-use-directquery.md).
+Vous devez vérifier que le nom du serveur et celui de la base de données correspondent entre **Power BI Desktop** et la source de données configurée pour la passerelle. Vous devez également vérifier que votre utilisateur est listé sous l’onglet **Utilisateurs** de la source de données afin de publier des jeux de données DirectQuery. Pour DirectQuery, la sélection se produit dans Power BI Desktop la première fois que vous importez des données. Pour plus d’informations sur l’utilisation de DirectQuery, consultez [Utiliser DirectQuery dans Power BI Desktop](desktop-use-directquery.md).
 
 Une fois la publication effectuée, que ce soit à partir de Power BI Desktop ou de l’option **Obtenir les données**, vos rapports doivent commencer à fonctionner. Après la création de la source de données dans la passerelle, plusieurs minutes peuvent être nécessaires pour que la connexion puisse être utilisée.
 

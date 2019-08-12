@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751113"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729813"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -45,6 +45,10 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
             - Ajout d’un lien de navigation arrière dans la fenêtre de sélection PBIRS
             - Correctif pour le mode Contraste élevé dans PBIRS pour l’affichage du bouton Précédent et des messages d’avertissement visuels.
             - Correctifs de l’interface utilisateur du volet Sélection et de la mise à l’échelle des canevas.
+
+    - *Version : 2.69.5467.5201 (mai 2019). Publication : 30 juillet 2019*
+        - Corrections de bogues
+            - Correction de journalisation de télémétrie incorrecte
 
 ## <a name="january-2019"></a>Janvier 2019
 
@@ -93,8 +97,11 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
         - Les icônes de raccourci et épinglées restent après la désinstallation de Power BI Report Server
         - Correction de l’épinglage de Power BI Report Server dans le menu Démarrer qui donnait du texte noir sur une icône noire
 
-    - *Version : 2.65.5313.1421 (janvier 2019), date de publication : 22 janvier 2019*
-        - Contient les changements nécessaires pour la connexion à Power BI Report Server (janvier 2019)  
+    - *Version : 2.65.5313.1421 (janvier 2019), date de publication : 22 janvier 2019* (nouvelle build et nouvelle version)
+        - Contient les changements nécessaires pour la connexion à Power BI Report Server (janvier 2019) 
+    - *Version : 2.65.5313.5141 (janvier 2019), date de publication : 31 juillet 2019* (nouvelle build et nouvelle version)
+        - Corrections de bogues
+            - Correction de journalisation de télémétrie incorrecte
 
 ## <a name="august-2018"></a>Août 2018
 

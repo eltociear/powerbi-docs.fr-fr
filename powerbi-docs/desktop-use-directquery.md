@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 775abf014f571b508832c5cb9a52a62aad455a7b
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324793"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757609"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec **Power BI Desktop**, lorsque vous vous connectez à votre source de données, vous pouvez toujours importer une copie des données dans **Power BI Desktop**. Pour certaines sources de données, une autre approche consiste à se connecter directement à la source de données à l’aide de **DirectQuery**.
@@ -62,10 +62,9 @@ Lors de l’utilisation de **DirectQuery**, vous devez prendre en considération
   
   La charge sur la base de données source doit également être prise en considération, en fonction du nombre d’utilisateurs de Power BI qui utiliseront le rapport publié. L’utilisation de la *Sécurité au niveau des lignes* peut également avoir un impact significatif. En effet, une vignette de tableau de bord sans sécurité au niveau des lignes partagée par plusieurs d’utilisateurs a pour effet d’envoyer une requête unique à la base de données, alors que l’utilisation de la sécurité au niveau des lignes sur une vignette de tableau de bord signifie généralement que l’actualisation d’une vignette nécessite une requête *par utilisateur*, ce qui augmente considérablement la charge sur la base de données source, et peut avoir une incidence sur les performances.
   
-  Power BI crée des requêtes aussi efficaces que possible. Toutefois, dans certaines situations, la requête générée peut ne pas être suffisamment efficace pour éviter une actualisation qui échoue. Un exemple de cette situation est quand une requête générée doit extraire un trop grand nombre de lignes (supérieur à 1 million) à partir de la source de données principale, auquel cas l’erreur suivante se produit :
+  Power BI crée des requêtes aussi efficaces que possible. Toutefois, dans certaines situations, la requête générée peut ne pas être suffisamment efficace pour éviter une actualisation qui échoue. Un exemple de cette situation est quand une requête générée doit extraire un trop grand nombre de lignes à partir de la source de données principale, auquel cas l’erreur suivante se produit :
   
       The resultset of a query to external data source has exceeded
-      the maximum allowed size of '1000000' rows.
   
   Cette situation peut se produire avec un simple graphique qui comprend une colonne de la cardinalité très élevée, avec l’option d’agrégation définie sur *ne pas résumer*. L’élément visuel doit avoir uniquement des colonnes avec une cardinalité inférieure à 1 million, ou des filtres appropriés doivent avoir appliqués.
 * **Sécurité** : tous les utilisateurs d’un rapport publié se connectent à la source de données principale en utilisant les informations d’identification entrées après la publication sur le service Power BI. C’est la même situation que quand des données sont importées : tous les utilisateurs voient les mêmes données, indépendamment des règles de sécurité définies dans la source principale. Les clients qui souhaitent une sécurité par utilisateur implémentée avec des sources DirectQuery doivent utiliser RLS (ou SNL, Sécurité au niveau des lignes). [En savoir plus sur RLS](service-admin-rls.md).

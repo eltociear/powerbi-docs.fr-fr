@@ -1,6 +1,6 @@
 ---
 title: Passerelle de données locale
-description: Voici une vue d’ensemble de la passerelle de données locale pour Power BI. Vous pouvez utiliser cette passerelle pour travailler avec les sources de données DirectQuery. Vous pouvez également utiliser cette passerelle pour actualiser les jeux de données cloud avec les données locales.
+description: Cet article présente une vue d’ensemble de la passerelle de données locale pour Power BI. Vous pouvez utiliser cette passerelle pour travailler avec les sources de données DirectQuery. Vous pouvez également utiliser cette passerelle pour actualiser les jeux de données cloud avec les données locales.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -10,24 +10,24 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: 57c4292913a2056ab285716de1e1b83e2313f723
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 883d5c83019df293628d096f5834c9b5c6d425b6
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307094"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730296"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Qu’est-ce qu’une passerelle de données locale ?
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-La passerelle de données locale agit comme un pont, assurant un transfert de données rapide et sûr entre les données locales (les données qui ne sont pas dans le cloud) et plusieurs services cloud Microsoft, notamment Power BI, PowerApps, Microsoft Flow, Azure Analysis Services et Logic Apps. En utilisant une passerelle, les organisations peuvent conserver les bases de données et d’autres sources de données sur leurs réseaux locaux, tout en utilisant de façon sécurisée ces données locales dans des services cloud.
+La passerelle de données locale agit comme un pont, en fournissant un transfert de données rapide et sécurisé entre des données locales (qui ne sont pas dans le cloud) et plusieurs services cloud Microsoft. Ces services cloud sont Power BI, PowerApps, Microsoft Flow, Azure Analysis Services et Azure Logic Apps. En utilisant une passerelle, les organisations peuvent conserver les bases de données et d’autres sources de données sur leurs réseaux locaux, tout en utilisant de façon sécurisée ces données locales dans des services cloud.
 
 ## <a name="how-the-gateway-works"></a>Fonctionnement de la passerelle
 
 ![Vue d’ensemble de la passerelle](media/service-gateway-onprem/on-premises-data-gateway.png)
 
-Pour plus d’informations sur le fonctionnement de la passerelle , consultez [Architecture de la passerelle de données locale](/data-integration/gateway/service-gateway-onprem-indepth).
+Pour plus d’informations sur le fonctionnement de la passerelle , voir [Architecture de la passerelle de données locale](/data-integration/gateway/service-gateway-onprem-indepth).
 
 ## <a name="types-of-gateways"></a>Types de passerelles
 
@@ -37,9 +37,9 @@ Il existe deux types de passerelles différents, chacun pour un scénario diffé
 
 * **Passerelle de données locale (mode personnel)**  : elle permet à un utilisateur de se connecter aux sources et ne peut pas être partagée avec d’autres utilisateurs. Une passerelle de données locale (mode personnel) peut être utilisée seulement avec Power BI. Cette passerelle est adaptée aux scénarios où vous êtes la seule personne qui crée des rapports et où vous n’avez pas besoin de partager les sources de données avec d’autres utilisateurs.
 
-## <a name="using-a-gateway"></a>Utiliser une passerelle
+## <a name="use-a-gateway"></a>Utiliser une passerelle
 
-L’utilisation d’une passerelle passe par quatre grandes étapes :
+L’utilisation d’une passerelle passe par quatre grandes étapes.
 
 1. [Télécharger et installer la passerelle](/data-integration/gateway/service-gateway-install) sur un ordinateur local.
 2. [Configurer](/data-integration/gateway/service-gateway-app) la passerelle en fonction de votre pare-feu et d’autres exigences réseau.

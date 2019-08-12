@@ -1,6 +1,6 @@
 ---
 title: Analytique incorporée permettant d’incorporer du contenu Power BI dans une application pour son organisation
-description: Découvrez comment intégrer ou incorporer un rapport, un tableau de bord ou une vignette dans une application avec les API Power BI dans le cadre de l’analytique incorporée pour votre organisation. Découvrez comment intégrer Power BI dans votre application à l’aide de logiciels et d’outils d’analytique incorporée, ainsi que d’outils d’informatique décisionnelle incorporés.
+description: Découvrez comment intégrer ou incorporer un rapport (Power BI ou Paginé), un tableau de bord ou une vignette dans une application avec les API Power BI dans le cadre de l’analytique incorporée pour votre organisation. Découvrez comment intégrer Power BI dans votre application à l’aide de logiciels et d’outils d’analytique incorporée, ainsi que d’outils d’informatique décisionnelle incorporés.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -9,24 +9,24 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/29/2019
+ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61355024"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665549"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
-Dans **Power BI**, vous pouvez incorporer des rapports, des tableaux de bord et des vignettes dans une application à l’aide de l’exemple User owns data (l’utilisateur est propriétaire des données). **User owns data** permet à votre application d’étendre le service Power BI afin qu’elle puisse utiliser l’analytique incorporée. Ce tutoriel montre comment intégrer un rapport dans une application. Vous utiliserez le kit de développement logiciel (SDK) .NET Power BI avec l’API JavaScript Power BI pour incorporer Power BI dans une application de votre organisation.
+Dans **Power BI**, vous pouvez incorporer des rapports (Power BI ou Paginés), des tableaux de bord et des vignettes dans une application à l’aide de l’exemple User owns data (l’utilisateur est propriétaire des données). **User owns data** permet à votre application d’étendre le service Power BI afin qu’elle puisse utiliser l’analytique incorporée. Ce didacticiel montre comment intégrer un rapport (Power BI ou Paginé) dans une application. Vous utiliserez le kit de développement logiciel (SDK) .NET Power BI avec l’API JavaScript Power BI pour incorporer Power BI dans une application de votre organisation.
 
 ![Rapport incorporé Power BI](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 Ce tutoriel vous montre comment effectuer les tâches suivantes :
 > [!div class="checklist"]
 > * inscrire une application dans Azure ;
-> * incorporer un rapport Power BI dans une application à l’aide de votre locataire Power BI.
+> * incorporer un rapport Power BI ou Paginé dans une application à l’aide de votre locataire Power BI.
 
 ## <a name="prerequisites"></a>Conditions préalables
 
@@ -35,6 +35,7 @@ Pour commencer, vous devez disposer des éléments suivants :
 * Un [compte Power BI Pro](../service-self-service-signup-for-power-bi.md).
 * Un abonnement [Microsoft Azure](https://azure.microsoft.com/).
 * Vous avez besoin de votre propre installation d’un [locataire Azure Active Directory](create-an-azure-active-directory-tenant.md).
+* Pour incorporer des rapports paginés, vous devez disposer au minimum d’une capacité A4/P1. Voir [De quelle taille de capacité Premium ai-je besoin pour des rapports paginés ?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Si vous n’avez pas d’abonnement à **Power BI Pro**, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/pricing/) avant de commencer.
 
@@ -44,9 +45,9 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 Avant de commencer à incorporer des rapports, des tableaux de bord ou des vignettes dans votre application, vérifiez que votre environnement autorise l’incorporation avec Power BI.
 
-Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup/UserOwnsData) pour démarrer rapidement et télécharger un exemple d’application qui vous guide tout au long de la création d’un environnement et de l’incorporation d’un rapport.
+Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup/UserOwnsData) pour démarrer rapidement et télécharger un exemple d’application qui vous guide tout au long de la création d’un environnement et de l’incorporation d’un rapport. Dans le cas de l’incorporation d’un rapport paginé, vous devez affecter au moins une capacité A4/P1 à l’espace de travail de l’application créée.
 
-Cependant, si vous choisissez de configurer l’environnement manuellement, vous pouvez continuer et suivre les instructions ci-dessous.
+Si vous choisissez de configurer l’environnement manuellement, vous pouvez continuer à suivre les instructions ci-dessous.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Inscrire une application dans Azure Active Directory
 
@@ -60,7 +61,7 @@ Vous devez procéder à l’inscription d’une **application web côté serveur
 
 Si vous incorporez des rapports, des tableaux de bord ou des vignettes pour vos clients, vous devez placer votre contenu au sein d’un espace de travail d’application. Les espaces de travail que vous pouvez configurer sont de deux types : les [espaces de travail traditionnels](../service-create-workspaces.md) et les [nouveaux espaces de travail](../service-create-the-new-workspaces.md).
 
-### <a name="create-and-publish-your-reports"></a>Créer et publier des rapports
+### <a name="create-and-publish-your-power-bi-reports"></a>Créer et publier vos rapports Power BI
 
 Vous pouvez créer vos rapports et vos jeux de données à l’aide de Power BI Desktop. Vous pouvez ensuite publier ces rapports sur l’espace de travail d’une application. Pour publier les rapports dans l’espace de travail d’une application, l’utilisateur final doit disposer d’une licence Power BI Pro.
 
@@ -79,7 +80,11 @@ Vous pouvez créer vos rapports et vos jeux de données à l’aide de Power BI 
     Vous pouvez à présent afficher le rapport dans le service Power BI en ligne.
 
    ![Afficher un rapport Power BI Desktop](media/embed-sample-for-your-organization/embed-sample-for-your-organization-029.png)
+   
+### <a name="create-and-publish-your-paginated-reports"></a>Créer et publier vos rapports paginés
 
+Vous pouvez créer vos rapports paginés à l’aide du [Générateur de rapports Power BI](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Vous pouvez ensuite [charger un rapport](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) dans un espace de travail d’application doté d’une capacité minimale A4/P1. L’utilisateur final qui charge le rapport doit avoir une licence Power BI Pro pour publier dans un espace de travail d’application.
+   
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Incorporer votre contenu en utilisant l’exemple d’application
 
 Cet exemple est intentionnellement simple pour faciliter la démonstration.
@@ -124,30 +129,6 @@ Pour récupérer la valeur **applicationId**, suivez ces étapes :
 
     ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
-### <a name="application-secret"></a>Secret de l’application
-
-Cet attribut est uniquement nécessaire pour l’authentification au moyen d’un [principal de service](embed-service-principal.md).
-
-Renseignez les informations **ApplicationSecret** à partir de la section **Clés** de votre section **Inscriptions d’applications** dans **Azure**.  Cet attribut fonctionne quand vous utilisez un [principal de service](embed-service-principal.md).
-
-Pour obtenir la valeur **ApplicationSecret**, effectuez les étapes suivantes :
-
-1. Connectez-vous au [portail Azure](https://portal.azure.com).
-
-2. Dans le volet de navigation de gauche, sélectionnez **Tous les services**, puis **Inscriptions des applications**.
-
-3. Sélectionnez l’application qui doit utiliser la valeur **ApplicationSecret**.
-
-    ![Choisir une application](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
-
-4. Sélectionnez **certificats et clés secrètes** sous **gérer**.
-
-5. Sélectionnez **nouvelle clé secrète client**.
-
-6. Entrez un nom dans la zone **Description** et sélectionnez une durée. Puis sélectionnez **Enregistrer** afin d’obtenir la **valeur** pour votre application. Lorsque vous fermez le volet **Clés** après l’enregistrement de la valeur de la clé, le champ de valeur apparaît uniquement masqué. À ce stade, vous n’êtes pas en mesure de récupérer la valeur de la clé. Si vous perdez la valeur de la clé, créez-en une autre dans le portail Azure.
-
-    ![Valeur de la clé](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
-
 ### <a name="workspace-id"></a>ID de l’espace de travail
 
 Dans **workspaceId**, indiquez le GUID d’espace de travail d’application (groupe) provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de Powershell.
@@ -168,9 +149,17 @@ Get-PowerBIworkspace -name "User Owns Embed Test"
 
 Dans **reportId**, indiquez le GUID de rapport provenant de Power BI. Vous pouvez obtenir ces informations à partir de l’URL quand vous êtes connecté au service Power BI ou à l’aide de Powershell.
 
-URL <br>
+URL de rapport Power BI <br>
 
-![reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+
+URL de rapport paginé <br>
+
+
+
+URL de rapport paginé<br>
+
+![reportId paginé](media/embed-sample-for-your-organization/paginated-reports-url.png)
 
 PowerShell <br>
 
@@ -214,7 +203,7 @@ Dans votre application, vous devez obtenir un jeton d’accès auprès d’Azure
 
 ### <a name="get-a-report"></a>Obtenir un rapport
 
-Pour obtenir un rapport Power BI, utilisez l’opération [Obtenir des rapports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) qui obtient une liste de rapports Power BI. Dans la liste des rapports, vous pouvez obtenir un ID de rapport.
+Pour obtenir un rapport Power BI ou paginé, utilisez l’opération [Obtenir des rapports](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) qui obtient une liste des rapports Power BI et paginés. Dans la liste des rapports, vous pouvez obtenir un ID de rapport.
 
 ### <a name="get-reports-by-using-an-access-token"></a>Obtenir des rapports à l’aide d’un jeton d’accès
 
@@ -275,6 +264,7 @@ public class PBIReports
 public class PBIReport
 {
     public string id { get; set; }
+    public string reportType { get; set }
     public string name { get; set; }
     public string webUrl { get; set; }
     public string embedUrl { get; set; }
@@ -394,7 +384,7 @@ Maintenant que votre application est développée, il est temps de sauvegarder l
 
 ### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
 
-En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail d’application. Vous pouvez créer une capacité dédiée avec [Power BI Premium](../service-premium-what-is.md).
+En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail d’application. Pour les rapports paginés, vous devez sauvegarder votre espace de travail d’application avec une capacité minimale A4/P1. Vous pouvez créer une capacité dédiée à l’ aide de [Power BI Premium](../service-premium-what-is.md).
 
 Le tableau suivant liste les références SKU Power BI Premium disponibles dans [Microsoft Office 365](../service-admin-premium-purchase.md) :
 
@@ -435,7 +425,7 @@ Les administrateurs généraux ou les administrateurs du service Power BI peuven
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce tutoriel, vous avez appris à incorporer du contenu Power BI dans une application à l’aide de votre compte d’organisation Power BI. Vous pouvez maintenant essayer d’incorporer du contenu Power BI dans une application à l’aide d’applications. Vous pouvez aussi essayer d’incorporer du contenu Power BI pour vos clients :
+Dans ce tutoriel, vous avez appris à incorporer du contenu Power BI dans une application à l’aide de votre compte d’organisation Power BI. Vous pouvez maintenant essayer d’incorporer du contenu Power BI dans une application à l’aide d’applications. Vous pouvez également essayer d’incorporer du contenu Power BI pour vos clients (pas encore pris en charge pour l’incorporation de rapports paginés) :
 
 > [!div class="nextstepaction"]
 > [Incorporer à partir d’applications](embed-from-apps.md)

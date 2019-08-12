@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4629b78379ba87d58c31f8102b855e1f62565abd
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139325"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665519"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 S’applique à :
 
-| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Téléphone Android](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Tablette Android](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Appareils Windows 10](./media/mobile-apps-view-dashboard/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Téléphone Android](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Tablette Android](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | 
 |:--- |:--- |:--- |:--- |:--- |
-| [iPhone](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPad](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Téléphones Android](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Tablettes Android](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |[Appareils Windows 10](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device) |
+| [iPhone](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPad](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Téléphones Android](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Tablettes Android](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |
 
 Un tableau de bord est un portail qui donne accès au cycle de vie et aux processus de votre entreprise. Il fournit une vue d’ensemble, un emplacement unique d’où surveiller l’état actuel des activités de l’entreprise.
 
@@ -145,45 +145,6 @@ Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom av
     ![Navigation](./media/mobile-apps-view-dashboard/power-bi-android-tablet-breadcrumb.png)
 
     Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou le mouvement panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
-
-## <a name="view-dashboards-on-your-windows-10-device"></a>Afficher des tableaux de bord sur votre appareil Windows 10
-1. Ouvrez l’application Power BI sur votre appareil Windows 10 et connectez-vous.
-   
-   Faut-il d’abord [télécharger l’application](http://go.microsoft.com/fwlink/?LinkID=526478) ?
-2. Appuyez sur un tableau de bord pour l’ouvrir.   
-   
-   ![Page d’accueil du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-windows-10-device-dashboard-home.png)
-   
-   * Les étoiles noires indiquent les tableaux de bord favoris. 
-   * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, **MBI**) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../service-data-classification.md).
-   
-   Les tableaux de bord Power BI ont une apparence un peu différente sur votre téléphone Windows 10. Toutes les vignettes ont la même largeur et elles sont disposées verticalement.
-   
-   ![Mode portrait du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-0928.png)
-   
-    Vous pouvez aussi simplement faire pivoter votre téléphone pour afficher les tableaux de bord en mode paysage.
-   
-   > [!TIP]
-   > Si vous êtes le propriétaire du tableau de bord, [dans le service Power BI](../../service-create-dashboard-mobile-phone-view.md), vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 
-   > 
-   > 
-3. Dans le tableau de bord, vous pouvez :
-   
-   * [Appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir et interagir avec elle.
-   * Appuyez sur l’icône **Plein écran** ![icône Plein écran](./media/mobile-apps-view-dashboard/power-bi-windows-10-full-screen-icon.png) pour afficher votre tableau de bord Power BI sans bordures ni menus, comme dans une vue **Diaporama** de PowerPoint.
-   * Appuyez sur l’icône **Invitation** ![icône Invitation](./media/mobile-apps-view-dashboard/pbi_andr_inviteicon.png) pour [partager votre tableau de bord](mobile-share-dashboard-from-the-mobile-apps.md) avec un collègue.
-   * Appuyez sur l’étoile ![étoile Favori](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) pour [ajouter le tableau de bord aux favoris](mobile-apps-favorites.md).
-   * Appuyer sur l’icône **Épingler à l’écran de démarrage** pour [épingler le tableau de bord sur l’écran de démarrage de Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md). 
-4. Pour revenir à la page d’accueil des tableaux de bord, appuyez sur le nom du tableau de bord pour ouvrir le cheminement de navigation, puis appuyez sur **Mon espace de travail** :
-   
-    ![Navigation](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
-
-### <a name="view-dashboards-in-landscape-mode-on-your-windows-10-phone"></a>Afficher les tableaux de bord en mode paysage sur votre téléphone Windows 10
-Vous pouvez également afficher les tableaux de bord en mode paysage en faisant simplement pivoter votre téléphone. La disposition du tableau de bord passe d’une série de vignettes à une vue du tableau de bord dans son ensemble. Vous voyez toutes les vignettes du tableau de bord disposées comme elles le sont dans le service Power BI.
-
-![Mode paysage du tableau de bord](./media/mobile-apps-view-dashboard/pbi_iph_landscape.png)
-
-Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom avant et arrière sur différentes zones de votre tableau de bord, ou le mouvement panoramique pour le parcourir. Et vous pouvez toujours [appuyer sur une vignette](mobile-tiles-in-the-mobile-apps.md) pour l’ouvrir en mode focus et interagir avec vos données.
 
 ## <a name="create-a-phone-view-of-a-dashboard-in-the-power-bi-service"></a>Créer une vue téléphone d’un tableau de bord dans le service Power BI
 Si vous êtes le propriétaire du tableau de bord, *dans le service Power BI*, vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 

@@ -1,22 +1,23 @@
 ---
 title: Planification d’un rapport dans le Générateur de rapports Power BI
 description: Le Générateur de rapports paginés Power BI vous permet de créer de nombreux types de rapports paginés. Pour créer un rapport facilement compréhensible utile, le planifier aide.
-ms.date: 06/06/2019
+ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: fd4a318d7a61f6f2298de6b9d5d23ad2ae063d28
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 33cdb53ab411e0d2f4686f7cc9a41bb3f0fe4cb6
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840507"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623870"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Planification d’un rapport dans le Générateur de rapports Power BI
-  Le Générateur de rapports paginés Power BI vous permet de créer de nombreux types de rapports paginés. Par exemple, vous pouvez créer des rapports qui montrent des données de ventes synthétiques ou détaillées, des tendances de vente et marketing, des rapports opérationnels ou des tableaux de bord. Vous pouvez aussi créer des rapports qui tirent parti de texte richement mis en forme, comme dans les commandes, les catalogues de produits ou les lettres types. Tous ces rapports sont créés en utilisant différentes combinaisons des mêmes modules de base dans le Générateur de rapports. Pour créer un rapport facilement compréhensible utile, le planifier aide. Avant de commencer, voici quelques points que vous voudrez probablement prendre en considération :  
+
+Le Générateur de rapports paginés Power BI vous permet de créer de nombreux types de rapports paginés. Par exemple, vous pouvez créer des rapports qui montrent des données de ventes synthétiques ou détaillées, des tendances de vente et marketing, des rapports opérationnels ou des tableaux de bord. Vous pouvez aussi créer des rapports qui tirent parti de texte richement mis en forme, comme dans les commandes, les catalogues de produits ou les lettres types. Tous ces rapports sont créés en utilisant différentes combinaisons des mêmes modules de base dans le Générateur de rapports. Pour créer un rapport facilement compréhensible utile, le planifier aide. Avant de commencer, voici quelques points que vous voudrez probablement prendre en considération :  
   
 ## <a name="in-what-format-do-you-want-the-report-to-appear"></a>Dans quel format souhaitez-vous créer le rapport ?
   
@@ -36,7 +37,7 @@ Vous souhaiterez peut-être limiter la portée du rapport à des utilisateurs ou
   
 ## <a name="do-you-need-to-create-calculations"></a>Avez-vous besoin de créer des calculs ? 
   
-     Sometimes, your data source and datasets do not contain the exact fields that you need for your report. In that situation, you might have to create your own calculated fields. For example, you might want to multiply the price per unit times the quantity to get a line item sales amount. Expressions are also used to provide conditional formatting and other advanced features. For more information, see [Expressions in Power BI Report Builder](report-builder-expressions.md).  
+Parfois, votre source de données et vos jeux de données ne contiennent pas les champs exacts dont vous avez besoin pour votre rapport. Dans ce cas, vous devrez peut-être créer vos propres champs calculés. Par exemple, vous pourriez vouloir multiplier le prix unitaire par la quantité pour obtenir un montant de vente d’articles. Les expressions sont également utilisées pour fournir une mise en forme conditionnelle et d’autres fonctionnalités avancées. Pour plus d’informations, voir [Expressions dans le Générateur de rapports Power BI](report-builder-expressions.md).  
   
 ## <a name="do-you-want-to-hide-report-items-initially"></a>Voulez-vous masquer des éléments de rapport au départ ?
   
@@ -44,7 +45,7 @@ Prenez en compte si vous souhaitez masquer des éléments de rapport,notamment d
   
 ## <a name="how-are-you-going-to-deliver-your-report"></a>Comment allez-vous distribuer votre rapport ?  
   
-     You can save your report to your local computer and continue to work on it, or run it locally for your own information. However, to share your report with others, you need to save the report to Power BI. Saving it to Power BI lets others run it whenever they want to. Alternatively, you can set up a subscription and e-mail delivery of the report to other individuals. You can have the report delivered in a specific export format if you prefer. 
+Vous pouvez enregistrer votre rapport sur votre ordinateur local et continuer à travailler dessus, ou l’exécuter localement pour vos propres informations. Toutefois, pour partager votre rapport avec d’autres personnes, vous devez enregistrer le rapport dans Power BI. Son enregistrement dans Power BI permet à d’autres utilisateurs de l’exécuter chaque fois qu’ils le souhaitent. Vous pouvez également configurer un abonnement et une remise par e-mail du rapport à d’autres personnes. Si vous préférez, vous pouvez faire en sorte que le rapport soit remis dans un format d’exportation spécifique. 
   
 ## <a name="next-steps"></a>Étapes suivantes
 

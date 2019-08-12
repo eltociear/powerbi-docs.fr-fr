@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 07/15/2019
-ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270799"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665373"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -162,7 +162,7 @@ Oui, nous prenons en charge la possibilité d’exécuter du code dans vos rappo
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Puis-je utiliser Power BI Embedded pour incorporer mes rapports paginés dans une application que j’héberge ?
 
-L’incorporation de SaaS sera prise en charge courant juin.  Nous prévoyons également de prendre en charge l’incorporation PaaS avec les API Power BI existantes, mais nous n’avons pas encore de calendrier pour savoir quand ce scénario sera disponible.
+L’incorporation de SaaS est déjà prise en charge. L’incorporation de SaaS n’est pas prise en charge actuellement.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Puis-je passer d'un rapport Power BI à un rapport paginé ?
 

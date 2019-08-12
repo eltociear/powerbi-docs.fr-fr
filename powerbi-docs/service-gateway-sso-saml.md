@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b1d84e9de9ae6d6fd8306fce4865977a8d273652
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: a240d84b20f63542c33bb7cbbb9a9c97af7db2f7
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289943"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757672"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser SAML (Security Assertion Markup Language) pour l’authentification unique (SSO) de Power BI sur des sources de données locales
 
@@ -33,7 +33,7 @@ Notez que pour HANA, il est **fortement** recommandé d’activer le chiffrement
 
 Pour utiliser SAML, vous devez établir une relation d’approbation entre le ou les serveurs HANA pour lesquels vous souhaitez activer l’authentification unique et la passerelle, qui sert de fournisseur d’identité SAML (IdP) dans ce scénario. Pour établir cette relation, vous pouvez, par exemple, importer le certificat x509 du fournisseur d’identité de la passerelle dans le magasin d’approbations du ou des serveurs HANA ou faire signer le certificat X509 de la passerelle par une autorité de certification racine approuvée par le ou les serveurs HANA. Nous décrivons cette dernière approche dans ce guide, mais vous pouvez utiliser une autre approche si elle est plus pratique.
 
-Notez également que bien que ce guide utilise OpenSSL comme fournisseur de chiffrement du serveur HANA, vous pouvez utiliser la bibliothèque de chiffrement SAP (également appelé CommonCryptoLib ou sapcrypto) au lieu d’OpenSSL pour effectuer les étapes de configuration correspondant à l’établissement de la relation d’approbation. Pour plus d’informations, reportez-vous à la documentation officielle de SAP.
+Notez également que bien que ce guide utilise OpenSSL comme fournisseur de chiffrement du serveur HANA, il est recommandé d’utiliser la bibliothèque de chiffrement SAP (également appelé CommonCryptoLib ou sapcrypto) au lieu d’OpenSSL pour effectuer les étapes de configuration correspondant à l’établissement de la relation d’approbation. Pour plus d’informations, reportez-vous à la documentation officielle de SAP.
 
 Les étapes suivantes décrivent comment établir une relation d’approbation entre un serveur HANA et le fournisseur d’identité de la passerelle en signant le certificat X509 du fournisseur d’identité de la passerelle à l’aide d’une autorité de certification racine approuvée par le serveur HANA.
 
@@ -180,7 +180,7 @@ Les traces d’authentification côté serveur fournissent des informations dét
 
 Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, consultez les ressources suivantes :
 
-* [Qu’est-ce qu’une passerelle de données locale ?](/data-integration/gateway/service-gateway-getting-started)
+* [Qu’est-ce qu’une passerelle de données locale ?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery et SAP BW](desktop-directquery-sap-bw.md)

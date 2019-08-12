@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cf9b3335b10b7a2cd3abcc3f02c651ed4416184e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269811"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623833"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publier des visuels personnalisés dans AppSource
 
@@ -22,7 +22,7 @@ Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource
 
 Une fois que vous avez créé votre visuel personnalisé, vous pouvez le publier sur AppSource pour que les utilisateurs puissent le trouver et l’utiliser. Avant cela, vous devez effectuer quelques étapes de préparation. Pour plus d’informations sur la création d’un visuel personnalisé, consultez [Développement d’un visuel personnalisé Power BI](custom-visual-develop-tutorial.md).
 
-   ![Office Store](media/office-store/AppSource_01.jpg)
+   ![Office Store](media/office-store/appsource-01.png)
 
 ## <a name="what-is-appsource"></a>Présentation d’AppSource
 
@@ -30,7 +30,7 @@ Une fois que vous avez créé votre visuel personnalisé, vous pouvez le publier
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Préparation de la soumission de votre visuel personnalisé
 
-Une fois que vous avez terminé lecture notre [recommandations d’éléments visuels Power BI](guidelines-powerbi-visuals.md), codage et [tester votre élément visuel personnalisé](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) et avez empaqueté dans un fichier pbiviz, vous devez également préparer les éléments suivants pour votre présentation.
+Une fois que vous avez terminé de lire nos [recommandations concernant les visuels Power BI](guidelines-powerbi-visuals.md), de coder et de [tester votre visuel personnalisé](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), et que vous avez empaqueté celui-ci dans un fichier pbiviz, vous devez également préparer ce qui suit pour l’envoyer.
 
 | Article | Obligatoire | Description |
 | --- | --- | --- |

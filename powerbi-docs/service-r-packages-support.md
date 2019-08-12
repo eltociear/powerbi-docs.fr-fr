@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 76361bba2690e0ab6ae8fa49008d7a6accae900e
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 60d97d8b2226e9a3f9aba2bf043bd9c6aade161a
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325066"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665310"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>Packages R dans le service Power BI
 Vous pouvez utiliser le puissant [langage de programmation R](https://www.r-project.org/) pour créer des visuels dans le service Power BI. De nombreux packages R sont pris en charge dans le service Power BI (et bien plus encore sont pris en charge tout le temps), mais certains packages ne le sont pas.
@@ -29,6 +29,7 @@ Les packages R pris en charge pour le **service Power BI** se trouvent dans la s
 ## <a name="requirements-and-limitations-of-r-packages"></a>Spécifications et limitations des packages R
 Il existe quelques spécifications et limitations concernant les packages R :
 
+* Runtime R actuel : Microsoft R 3.4.4
 * Le service Power BI, pour l’essentiel, prend en charge les packages R avec des licences logicielles gratuites et open source comme GPL-2, 3-GPL, MIT+, etc.
 * Le service Power BI prend en charge les packages publiés dans CRAN. Le service ne prend pas en charge les packages R privés ou personnalisés. Les utilisateurs doivent, si possible, mettre leurs packages privés à disposition sur le site CRAN avant de demander leur mise à disposition dans le service Power BI.
 * **Power BI Desktop** a deux variantes des packages R :
