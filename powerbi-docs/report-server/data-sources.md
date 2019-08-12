@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: 6e3bed0cf8dda765722c0076086f59a91f1f380d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe8ad0b951fedb17a97007e48808d2bfd7467e88
+ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770793"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808219"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
@@ -32,7 +32,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | **Source de données** | **Données mises en cache** | **Actualisation planifiée** | **Active/DirectQuery** |
 | --- | --- | --- | --- |
 | Base de données SQL Server |Oui |Oui |Oui |
-| SQL Server Analysis Services |Oui |Oui |Oui |
+| SQL Server Analysis Services |Oui |Oui |Oui |
 | Azure SQL Database |Oui |Oui |Oui |
 | Azure SQL Data Warehouse |Oui |Oui |Oui |
 | Excel |Oui |Oui |Non |
@@ -73,7 +73,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Base de données Sybase |Oui |Oui |Non |
 | Base de données Teradata |Oui |Oui |Oui |
 | Texte/CSV |Oui |Oui |Non |
-| Web |Oui |Oui |Non |
+| web |Oui |Oui |Non |
 | XML |Oui |Oui |Non |
 | appFigures (bêta) |Oui |Non |Non |
 | Base de données Azure Analysis Services |Oui |Non |Oui |
@@ -85,7 +85,7 @@ D’autres sources de données non répertoriées sur la liste peuvent égalemen
 | Dynamics 365 for Financials (bêta) |Oui |Non |Non |
 | GitHub (bêta) |Oui |Non |Non |
 | Google BigQuery (bêta) |Oui |Non |Non |
-| Base de données Informix IBM (bêta) |Oui |Non |Non |
+| Base de données IBM Informix (bêta) |Oui |Non |Non |
 | IBM Netezza (bêta) |Oui |Non |Non |
 | Kusto (bêta) |Oui |Non |Non |
 | MailChimp (bêta) |Oui |Non |Non |
@@ -120,8 +120,8 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** |
 | --- | --- | --- | --- | --- |
 | Base de données SQL Server |Non |Non |Oui |Oui |
-| SQL Server Analysis Services |Non |Non |Oui |Oui |
-| Web |Oui |Non |Oui |Oui |
+| SQL Server Analysis Services |Non |Non |Oui |Oui |
+| web |Oui |Non |Oui |Oui |
 | Azure SQL Database |Non |Non |Oui |Non |
 | Azure SQL Data Warehouse |Non |Non |Oui |Non |
 | Active Directory |Non |Non |Oui |Oui |
@@ -168,7 +168,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Dynamics 365 for Financials (bêta) |Non |Non |Non |Non |
 | GitHub (bêta) |Non |Non |Non |Non |
 | Google BigQuery (bêta) |Non |Non |Non |Non |
-| Base de données Informix IBM (bêta) |Non |Non |Non |Non |
+| Base de données IBM Informix (bêta) |Non |Non |Non |Non |
 | IBM Netezza (bêta) |Non |Non |Non |Non |
 | Kusto (bêta) |Non |Non |Non |Non |
 | MailChimp (bêta) |Non |Non |Non |Non |
@@ -198,11 +198,11 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour Di
 | **Source de données** | **Authentification anonyme** | **Authentification par clé** | **Nom d’utilisateur et mot de passe** | **Authentification Windows** | **Authentification Windows intégrée** |
 | --- | --- | --- | --- | --- | --- |
 | Base de données SQL Server |Non |Non |Oui |Oui |Oui |
-| SQL Server Analysis Services |Non |Non |Oui |Oui |Oui |
+| SQL Server Analysis Services |Non |Non |Oui |Oui |Oui |
 | Azure SQL Database |Non |Non |Oui |Non |Non |
 | Azure SQL Data Warehouse |Non |Non |Oui |Non |Non |
 | Base de données Oracle |Non |Non |Oui |Oui |Oui |
-| Serveur SAP Business Warehouse |Non |Non |Oui |Non |Oui |
+| Serveur SAP Business Warehouse |Non |Non |Oui |Non |Non |
 | Base de données SAP HANA |Non |Non |Oui |Oui |Non |
 | Base de données Teradata |Non |Non |Oui |Oui |Oui |
 
