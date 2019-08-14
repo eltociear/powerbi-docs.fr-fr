@@ -657,7 +657,7 @@
           items:
             - name: Préparation des données en libre-service avec des dataflows
               href: service-dataflows-overview.md
-            - name: Créer et utiliser des flux de données
+            - name: Créer et utiliser des dataflows
               href: service-dataflows-create-use.md
             - name: Entités calculées avec Power BI Premium
               href: service-dataflows-computed-entities-premium.md
@@ -883,7 +883,7 @@
           href: webinars.md
 - name: Power BI Premium
   items:
-    - name: Vue d’ensemble
+    - name: Vue d'ensemble
       items:
         - name: "Qu’est-ce que Power\_BI\_Premium\_?"
           href: service-premium-what-is.md
@@ -919,7 +919,7 @@
           href: service-premium-connect-tools.md
 - name: Générateur de rapports paginés Power BI
   items:
-    - name: Vue d’ensemble
+    - name: Vue d'ensemble
       items:
         - name: "Que sont les rapports paginés\_?"
           href: paginated-reports-report-builder-power-bi.md
@@ -1073,7 +1073,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848281'
     - name: Visuels personnalisés
       items:
-        - name: Vue d’ensemble
+        - name: Vue d'ensemble
           items:
             - name: "Visuels dans Power\_BI"
               href: power-bi-custom-visuals.md
@@ -1289,6 +1289,8 @@
               href: report-server/configure-kerberos-powerbi-reports.md
             - name: Configurer l’accès des applications mobiles à distance
               href: report-server/configure-powerbi-mobile-apps-remote.md
+            - name: Accès mobile à distance avec Azure AD
+              href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
             - name: Héberger des classeurs Excel
               href: report-server/excel-oos.md
     - name: Référence
@@ -1309,7 +1311,7 @@
           href: report-server/capacity-planning.md
 - name: Passerelles
   items:
-    - name: Vue d’ensemble
+    - name: Vue d'ensemble
       items:
         - name: "Qu’est-ce qu’une passerelle de données locale\_?"
           href: service-gateway-onprem.md
@@ -1424,3 +1426,7 @@
           href: service-admin-governance.md
         - name: Sécurité dans Power BI
           href: service-admin-power-bi-security.md
+- name: Instructions
+  items:
+    - name: "Qu’est-ce qu’un schéma en étoile\_?"
+      href: guidance/star-schema.md
