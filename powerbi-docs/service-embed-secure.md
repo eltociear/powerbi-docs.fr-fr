@@ -1,6 +1,6 @@
 ---
 title: Incorporer un rapport dans un site web ou portail sécurisé
-description: Power BI incorpore fonctionnalité permet aux utilisateurs de facilement et en toute sécurité incorporer des rapports dans les portails web interne.
+description: La fonctionnalité d’intégration de Power BI permet aux utilisateurs d’incorporer des rapports dans les portails web internes de manière simple et sécurisée.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -10,18 +10,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: bf9d7bcdf6ddaf7d0063843a5314233989b2dadd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3c6dc26ee1cf806ff85a9452c024e7ccbd210a25
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222236"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867108"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
-Avec la nouvelle **Embed** option pour Power BI les rapports, vous pouvez facilement et en toute sécurité incorporer des rapports dans les portails web interne. Ces portails peuvent être **nuage** ou **hébergées en local**, telles que SharePoint 2019. Rapports incorporés respectent toutes les autorisations et les données de sécurité des éléments de via [au niveau des lignes (RLS) de sécurité](service-admin-rls.md). Ils fournissent sans code incorporation dans n’importe quel portail qui accepte une URL ou un iFrame. 
+Avec la nouvelle option **Incorporer** pour les rapports Power BI, vous pouvez incorporer des rapports dans les portails web internes de manière simple et sécurisée. Ces portails peuvent être **basés sur le cloud** ou **hébergés localement**, à l’image de SharePoint 2019. Les rapports incorporés respectent toutes les autorisations d’élément et les données de sécurité via la [sécurité au niveau des lignes (RLS)](service-admin-rls.md). Ils fournissent l’intégration sans code dans n’importe quel portail qui accepte une URL ou un iFrame. 
 
-Le **Embed** option prend en charge [filtres URL](service-url-filters.md) et paramètres d’URL. Il vous permet d’intégrer les portails à l’aide d’une approche peu de code nécessitant uniquement HTML et JavaScript une connaissance élémentaire.
+L’option **Incorporer** prend en charge les [filtres URL](service-url-filters.md) et les paramètres d’URL. Elle vous permet d’effectuer une intégration aux portails à l’aide d’une approche avec peu de code qui nécessite uniquement une connaissance élémentaire de HTML et de JavaScript.
 
 ## <a name="how-to-embed-power-bi-reports-into-portals"></a>Comment **incorporer** des rapports Power BI dans des portails
 
@@ -29,46 +29,46 @@ Le **Embed** option prend en charge [filtres URL](service-url-filters.md) et par
 
     ![Option déroulante Incorporer sécurisée](media/service-embed-secure/secure-embed-drop-down-menu.png)
 
-2. Sélectionnez le **Embed** option pour ouvrir une boîte de dialogue qui fournit un lien et un iFrame, vous pouvez utiliser pour incorporer le rapport en toute sécurité.
+2. Sélectionnez l’option **Incorporer** pour ouvrir une boîte de dialogue qui fournit un lien et un iFrame que vous pouvez utiliser pour incorporer le rapport de manière sécurisée.
 
     ![Boîte de dialogue de l’option Incorporer](media/service-embed-secure/secure-embed-code-dialog.png)
 
-3. Si un utilisateur ouvre une URL de rapport directement, ou un incorporé dans un portail web, accès aux rapports requiert l’authentification. L’écran suivant s’affiche si un utilisateur a non signé dans Power BI dans sa session de navigateur. Lorsqu’ils sélectionnent **connexion**, une nouvelle fenêtre de navigateur ou un onglet peut ouvrir. Demandez-lui de vérifier bloqueurs de fenêtres publicitaires si elles n’invités à vous connecter.
+3. Qu’un utilisateur ouvre directement une URL de rapport ou une URL incorporée dans un portail web, l’accès aux rapports nécessite une authentification. L’écran suivant s’affiche si un utilisateur ne s’est pas connecté à Power BI dans sa session de navigateur. Quand il sélectionne **Connexion**, une nouvelle fenêtre de navigateur ou un nouvel onglet peut s’ouvrir. Faites en sorte qu’il vérifie les bloqueurs de fenêtres contextuelles s’il n’est pas invité à se connecter.
 
     ![Connectez-vous pour voir ce rapport](media/service-embed-secure/secure-embed-sign-in.png)
 
-4. Une fois que l’utilisateur connecté, le rapport s’ouvre, affichant les données et ce qui permet la navigation entre les pages et le paramètre de filtre. Seuls les utilisateurs qui ont l’autorisation view peuvent afficher le rapport sur Power BI. Tous les [au niveau des lignes (RLS) de sécurité](service-admin-rls.md) règles sont également appliquées. Enfin, l’utilisateur doit disposer d’une licence correcte. Il doit avoir une licence Power BI Pro, ou le rapport doit être dans un espace de travail qui se trouve dans une capacité Power BI Premium. L’utilisateur doit se connecter chaque fois qu’ils ouvrent une nouvelle fenêtre de navigateur. Toutefois, une fois connecté, autres rapports chargent automatiquement.
+4. Une fois que l’utilisateur s’est connecté, le rapport s’ouvre, affichant les données et permettant de naviguer entre les pages et de définir des filtres. Seuls les utilisateurs qui disposent de l’autorisation d’affichage peuvent voir le rapport dans Power BI. Toutes les [règles de sécurité au niveau des lignes (RLS)](service-admin-rls.md) sont également appliquées. Enfin, l’utilisateur doit disposer d’une licence correcte. Il doit avoir une licence Power BI Pro, ou le rapport doit être dans un espace de travail qui se trouve dans une capacité Power BI Premium. L’utilisateur doit se connecter chaque fois qu’il ouvre une nouvelle fenêtre de navigateur. Toutefois, une fois connecté, les autres rapports se chargent automatiquement.
 
     ![Incorporer un rapport](media/service-embed-secure/secure-embed-report.png)
 
-5. Lorsque vous utilisez un iFrame, vous devrez peut-être modifier le **hauteur** et **largeur** pour qu’il tient dans votre page de portail web.
+5. Quand vous utilisez un iFrame, vous pouvez être amené à modifier les **hauteur** et **largeur** afin qu’il contienne dans la page web de votre portail.
 
     ![Définir la hauteur et la largeur](media/service-embed-secure/secure-embed-size.png)
 
-## <a name="granting-report-access"></a>Octroi d’accès aux rapports
+## <a name="granting-report-access"></a>Octroi d’un accès au rapport
 
-Le **Embed** option automatiquement ne permet pas aux utilisateurs d’afficher le rapport. Afficher les autorisations sont définies dans le service Power BI.
+L’option **Incorporer** ne permet pas automatiquement aux utilisateurs de voir le rapport. Les autorisations de consultation sont définies dans le service Power BI.
 
-Dans le service Power BI, vous pouvez partager des rapports incorporés avec les utilisateurs qui requièrent un accès. Si vous utilisez un groupe Office 365, vous pouvez répertorier l’utilisateur comme membre d’un espace de travail d’application. Pour plus d’informations, consultez Comment [gérer votre espace de travail d’application dans Power BI et Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Dans le service Power BI, vous pouvez partager des rapports incorporés avec des utilisateurs qui ont besoin d’un accès. Si vous utilisez un groupe Office 365, vous pouvez lister l’utilisateur en tant que membre de l’espace de travail d’application. Pour plus d’informations, consultez [Gérer l’espace de travail de votre application dans Power BI et Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Licensing
 
-Pour afficher le rapport incorporé, les utilisateurs doivent soit une licence Power BI Pro ou le contenu doit se trouver dans un espace de travail qui se trouve dans un [capacité Power BI Premium (EM ou référence (SKU) P)](service-admin-premium-purchase.md).
+Pour que les utilisateurs puissent voir le rapport incorporé, ils ont besoin d’une licence Power BI Pro ou le contenu doit se trouver dans un espace de travail qui se trouve dans une [capacité Power BI Premium (référence SKU EM ou P)](service-admin-premium-purchase.md).
 
 ## <a name="customize-your-embed-experience-using-url-settings"></a>Personnaliser votre expérience d’incorporation à l’aide des paramètres d’URL
 
-Vous pouvez personnaliser l’expérience utilisateur à l’aide des paramètres d’entrée de l’URL d’incorporation. Dans l’iFrame fourni, vous pouvez mettre à jour l’URL **src** paramètres.
+Vous pouvez personnaliser l’expérience utilisateur à l’aide des paramètres d’entrée de l’URL d’incorporation. Dans l’iFrame fourni, vous pouvez mettre à jour les paramètres **src** de l’URL.
 
 | Propriété  | Description  |  |  |  |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| pageName  | Vous pouvez utiliser la **pageName** paramètre de chaîne pour définir quelle page de rapport pour ouvrir de requête. Vous pouvez trouver cette valeur à la fin de l’URL rapport lorsque vous affichez un rapport dans le service Power BI, comme indiqué ci-dessous. |  |  |  |
-| Filtres d’URL  | Vous pouvez utiliser [filtres URL](service-url-filters.md) dans l’URL d’incorporation que vous avez reçu à partir de l’interface utilisateur de Power BI pour filtrer le contenu incorporé. Ainsi, vous pouvez créer des intégrations avec peu de code et des connaissances de base de HTML et de JavaScript.  |  |  |  |
+| pageName  | Vous pouvez utiliser le paramètre de chaîne de requête **pageName** pour définir la page de rapport à ouvrir. Vous pouvez trouver cette valeur à la fin de l’URL du rapport quand vous affichez un rapport dans le service Power BI, comme indiqué ci-dessous. |  |  |  |
+| Filtres d’URL  | Vous pouvez utiliser des [filtres d’URL](service-url-filters.md) dans l’URL d’incorporation que vous avez reçue à partir de l’interface utilisateur de Power BI pour filtrer le contenu d’incorporation. Ainsi, vous pouvez créer des intégrations avec peu de code et des connaissances de base de HTML et de JavaScript.  |  |  |  |
 
-## <a name="set-which-page-opens-for-an-embedded-report"></a>Jeu de page qui s’ouvre pour un rapport incorporé 
+## <a name="set-which-page-opens-for-an-embedded-report"></a>Définir la page qui s’ouvre pour un rapport incorporé 
 
-Vous pouvez trouver la **pageName** valeur à la fin de l’URL rapport lorsque vous affichez un rapport dans le service Power BI.
+Vous pouvez trouver la valeur **pageName** à la fin de l’URL du rapport quand vous consultez un rapport dans le service Power BI.
 
-1. Ouvrir le rapport à partir du service Power BI dans votre navigateur web et copiez l’URL de barre d’adresse.
+1. Ouvrez le rapport à partir du service Power BI dans votre navigateur web et copiez l’URL de la barre d’adresses.
 
     ![Section du rapport](media/service-embed-secure/secure-embed-report-section.png)
 
@@ -78,17 +78,17 @@ Vous pouvez trouver la **pageName** valeur à la fin de l’URL rapport lorsque 
 
 ## <a name="filter-report-content-using-url-filters"></a>Filtrer le contenu du rapport à l’aide de filtres d’URL 
 
-Vous pouvez utiliser [filtres URL](service-url-filters.md) pour proposer des vues différentes de rapport. Par exemple, l’URL ci-dessous filtre le rapport pour afficher les données pour le secteur de l’énergie.
+Vous pouvez utiliser des [filtres d’URL](service-url-filters.md) pour fournir différentes vues du rapport. Par exemple, l’URL ci-dessous filtre le rapport pour afficher les données pour le secteur de l’énergie.
 
 L’utilisation de la combinaison de **pageName** et de [filtres d’URL](service-url-filters.md) peut être très puissante. Vous pouvez créer des expériences à l’aide de code HTML et JavaScript de base.
 
-Par exemple, Voici un bouton que vous pouvez ajouter à une page HTML :
+Par exemple, voici un bouton que vous pouvez ajouter à une page HTML :
 
 ```html
 <button class="textLarge" onclick='show("ReportSection", "Energy");' style="display: inline-block;">Show Energy</button>
 ```
 
-Lorsque sélectionné, le bouton appelle une fonction pour mettre à jour de l’iFrame avec une URL de mise à jour, ce qui inclut le filtre du secteur de l’énergie.
+Quand l’utilisateur le sélectionne, le bouton appelle une fonction pour mettre à jour l’iFrame avec une URL mise à jour, qui inclut le filtre pour le secteur de l’énergie.
 
 ```javascript
 function show(pageName, filterValue)
@@ -124,20 +124,22 @@ Vous pouvez ajouter autant de boutons que vous le souhaitez pour créer une exp�
 
 * L’incorporation sécurisée fonctionne pour les rapports publiés sur le service Power BI.
 
-* L’utilisateur doit se connecter pour afficher le rapport chaque fois qu’ils ouvrent une nouvelle fenêtre de navigateur.
+* L’utilisateur doit se connecter pour voir le rapport à chaque fois qu’il ouvre une nouvelle fenêtre de navigateur.
 
-* Certains navigateurs vous obligent à actualiser la page après la connexion, en particulier lorsque vous utilisez des modes InPrivate ou Incognito.
+* Certains navigateurs vous obligent à actualiser la page après la connexion, en particulier lorsque vous utilisez les modes InPrivate ou Incognito.
 
-* Pour obtenir une expérience d’authentification unique, utilisez l’objet incorporé dans l’option SharePoint Online ou générer une intégration personnalisée à l’aide de la [utilisateur possède les données](developer/embed-sample-for-your-organization.md) l’incorporation de méthode. 
+* Pour obtenir une expérience d’authentification unique, utilisez l’option Incorporer dans SharePoint Online, ou générez une incorporation personnalisée à l’aide de la méthode d’incorporation [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md). 
 
-* La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript de Power BI, utilisez le [utilisateur possède les données](developer/embed-sample-for-your-organization.md) l’incorporation de méthode. 
+* La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez la méthode d’incorporation [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md). 
+
+* La durée de vie du jeton d’authentification est contrôlée en fonction de vos paramètres AAD. Quand le jeton d’authentification expire, l’utilisateur doit actualiser son navigateur pour recevoir un jeton d’authentification mis à jour. La durée de vie par défaut est d’une heure, mais elle peut être plus courte ou plus longue dans votre organisation.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Moyens de partager votre travail dans Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 
-* [Filtrer un rapport à l’aide des paramètres de chaîne de requête dans l’URL](service-url-filters.md)
+* [Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL](service-url-filters.md)
 
-* [Incorporer avec le composant WebPart rapport dans SharePoint Online](service-embed-report-spo.md)
+* [Incorporer avec le composant WebPart Rapport dans SharePoint Online](service-embed-report-spo.md)
 
-* [Publier sur le Web à partir de Power BI](service-publish-to-web.md)
+* [Publier sur le web à partir de Power BI](service-publish-to-web.md)

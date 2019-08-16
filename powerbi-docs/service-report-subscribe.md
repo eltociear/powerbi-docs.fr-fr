@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e7b2f03d561faa7df582b4ad5a975d09d617f98f
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 92dd8d7221c9c60fa4ffcd3e3ceefeda319d8670
+ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264624"
+ms.lasthandoff: 08/10/2019
+ms.locfileid: "68940929"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
@@ -54,9 +54,9 @@ L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abon
 
 5. Renseignez les détails de l’e-mail : **Objet** et **Message**. 
 
-5. Sélectionnez une **Fréquence** pour votre abonnement : **Quotidien**, **Hebdomadaire** ou **Après l’actualisation des données (quotidien)** .  Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Hebdomadaire** et choisissez les jours auxquels vous voulez le recevoir.  Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez **Hebdomadaire** et décochez les cases **Sam** et **Dim**.  
+5. Sélectionnez une **Fréquence** pour votre abonnement : **Quotidien**, **Toutes les heures**, **Hebdomadaire** ou **Après l’actualisation des données (quotidien)** .  Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Toutes les heures** ou **Hebdomadaire** et choisissez les jours auxquels vous voulez le recevoir.  Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez **Hebdomadaire** et décochez les cases **Sam** et **Dim**.  
 
-6. Si vous choisissez **Quotidien** ou **Hebdomadaire**, vous pouvez également choisir une **Heure planifiée** pour l’abonnement.  Vous pouvez choisir une exécution à une heure pile ou 15, 30 ou 45 minutes après.  Sélectionnez le matin (AM) ou l’après-midi/le soir (PM). Vous pouvez également spécifier le fuseau horaire.
+6. Si vous choisissez **Quotidien** ou **Hebdomadaire**, vous pouvez également choisir une **Heure planifiée** pour l’abonnement.  Vous pouvez choisir une exécution à une heure pile ou 15, 30 ou 45 minutes après.  Sélectionnez le matin (AM) ou l’après-midi/le soir (PM). Vous pouvez également spécifier le fuseau horaire.  Si vous choisissez **Toutes les heures**, sélectionnez l’**Heure planifiée** à laquelle vous souhaitez que l’abonnement démarre ; la communication aura alors lieu toutes les heures.
 
 7. Par défaut, la date de début de votre abonnement est la date de sa création. Vous pouvez sélectionner une date de fin. Si vous ne définissez pas de date de fin, la date de fin est automatiquement un an après la date de début. Vous pouvez la remplacer par n’importe quelle date dans le futur (jusqu’à l’année 9999) à tout moment avant la fin de l’abonnement. Quand un abonnement atteint une date de fin, il s’arrête jusqu’à ce que vous le réactiviez. Vous recevez des notifications avant la date de fin planifiée pour savoir si vous voulez la prolonger.    
 
@@ -93,13 +93,13 @@ Un abonnement se termine si la licence Pro expire, si le propriétaire supprime 
 * Les tableaux de bord comportant plus de 25 vignettes épinglées, ou 4 pages de rapport dynamique épinglées, risquent de ne pas s’afficher entièrement dans les e-mails d’abonnement envoyés aux utilisateurs.  Les abonnements aux tableaux de bord avec un nombre de vignettes supérieur ne sont pas bloqués. Toutefois, ils ne seront pas pris en charge si vous rencontrez des problèmes. Vous devez donc réduire leur nombre de vignettes dans la limite de prise en charge.
 * Dans de rares occasions, la remise des abonnements par e-mail à leurs destinataires peut prendre plus de quinze minutes. Si cela se produit, nous vous recommandons d’exécuter l’actualisation de vos données et votre abonnement par e-mail à des moments différents pour garantir une remise en temps voulu. Si le problème persiste, contactez le support Power BI.
 * Pour les abonnements par e-mail aux tableaux de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, elles ne s’affichent pas.  
-* Pour les abonnements par e-mail aux rapports, si le jeu de données utilise SNL, vous pouvez créer un abonnement pour vous-même. Vous ne pouvez pas abonner d’autres utilisateurs à un rapport auquel la sécurité au niveau des lignes (SNL) est appliquée.
+* Pour les abonnements par e-mail aux rapports, si le jeu de données utilise SNL, vous pouvez créer un abonnement pour vous-même. Vous ne pouvez pas abonner d’autres personnes à un rapport auquel est appliquée la sécurité au niveau des lignes (RLS), à moins que vous utilisiez un rapport paginé, ce qui vous permet d’envoyer l’abonnement à d’autres personnes à l’aide de votre contexte de sécurité. 
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 * Votre organisation peut configurer certains paramètres dans Azure Active Directory, pour limiter la possibilité d’utiliser des abonnements par messagerie électronique dans Power BI.  Vous pouvez limiter, entre autres, l’authentification multifacteur ou les restrictions de plage IP pour l’accès aux ressources.
-* Actuellement, les abonnements aux e-mails des rapports/tableaux de bord utilisant des jeux de données à connexion active ne sont pas pris en charge quand vous abonnez des utilisateurs autres que vous-même.
+* Les abonnements par e-mail pour les rapports/tableaux de bord utilisant des jeux de données avec connexion active ne sont pas pris en charge lors de l’abonnement d’utilisateurs autres que vous-même, sauf si vous utilisez un rapport paginé, ce qui vous permet d’envoyer l’abonnement à d’autres personnes à l’aide de votre contexte de sécurité. 
 * Les abonnements aux e-mails ne prennent pas en charge la plupart des [visuels personnalisés](power-bi-custom-visuals.md).  La seule exception est celle des éléments visuels personnalisés qui ont été [certifiés](power-bi-custom-visuals-certified.md).  
 * Actuellement, les abonnements aux e-mails ne prennent pas en charge les visuels personnalisés alimentés par R.  
-* Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail.    
+* Les abonnements aux e-mails sont envoyés avec l’état par défaut des filtres et des segments du rapport. Si vous changez les valeurs par défaut après l’abonnement, les changements ne s’affichent pas dans l’e-mail.  Les rapports paginés prennent en charge cette fonctionnalité et vous permettent de définir les valeurs de paramètre spécifiques par abonnement.   
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge,  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     
 * Si vous partagez un tableau de bord avec un collègue extérieur à votre locataire, vous ne pouvez pas créer d’abonnement pour lui. Par conséquent, si vous êtes aaron@xyz.com, vous pouvez partager avec anyone@ABC.com, mais vous ne pouvez pas encore abonner anyone@ABC.com et il ne peut pas s’abonner au contenu partagé.      
 * Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un rapport ou tableau de bord, il n’est pas suspendu même si le rapport ou tableau de bord n’est pas consulté.    

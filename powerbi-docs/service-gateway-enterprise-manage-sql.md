@@ -10,65 +10,65 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2c21792f97445b336709038f7ec2ec39d041312b
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: ca8cf2e9c20f2efb4fe4b9f80a936ba887cccc93
+ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730053"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832396"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Gérer votre source de données - SQL Server
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Une fois que vous avez [installé la passerelle de données locale](/data-integration/gateway/service-gateway-install), vous pouvez [ajouter des sources de données](service-gateway-data-sources.md#add-a-data-source) utilisables avec la passerelle. Cet article examine comment travailler avec des passerelles et des sources de données SQL Server utilisées pour l’actualisation planifiée ou pour DirectQuery.
+Une fois que vous avez [installé la passerelle de données locale](/data-integration/gateway/service-gateway-install), vous pouvez [ajouter des sources de données](service-gateway-data-sources.md#add-a-data-source) qui peuvent être utilisées avec la passerelle. Cet article examine comment travailler avec des passerelles et des sources de données SQL Server utilisées pour l’actualisation planifiée ou pour DirectQuery.
 
 ## <a name="add-a-data-source"></a>Ajouter une source de données
 
-Pour plus d’informations sur la façon d’ajouter une source de données, consultez [Ajouter une source de données](service-gateway-data-sources.md#add-a-data-source).
+Pour plus d’informations sur la façon d’ajouter une source de données, voir [Ajouter une source de données](service-gateway-data-sources.md#add-a-data-source). Sous **Type de source de données**, sélectionnez **SQL Server**.
 
 ![Sélectionner la source de données SQL Server](media/service-gateway-enterprise-manage-sql/datasourcesettings2.png)
 
 > [!NOTE]
-> Lorsque vous utilisez DirectQuery, la passerelle prend en charge uniquement **SQL Server 2012 SP1** et versions ultérieures.
+> Quand vous utilisez DirectQuery, la passerelle prend en charge uniquement **SQL Server 2012 SP1** et ultérieur.
 
-Vous devez ensuite renseigner les informations relatives à la source de données, notamment le **serveur** et la **base de données**.  
+Renseignez ensuite les informations relatives à la source de données, notamment le **Serveur** et la **Base de données**. 
 
-Vous devez également choisir une **méthode d’authentification**. Ce peut être **Windows** ou **De base**. Choisissez **De base** si vous comptez utiliser l’authentification SQL plutôt que l’authentification Windows. Entrez les informations d’identification qui seront utilisées pour cette source de données.
+Sous **Méthode d’authentification**, choisissez **Windows** ou **De base**. Choisissez **De base** si vous envisagez d’utiliser l’authentification SQL plutôt que l’authentification Windows. Entrez les informations d’identification à utiliser pour cette source de données.
 
 > [!NOTE]
-> Toutes les requêtes adressées à la source de données utilisent ces informations d’identification, sauf si une authentification unique (SSO) Kerberos est configurée et activé pour la source de données. Avec l’authentification unique, les jeux de données d’importation utilisent les informations d’identification stockées, mais les jeux de données DirectQuery se servent de l’utilisateur Power BI actif pour exécuter les requêtes à l’aide de l’authentification unique. Pour en savoir plus sur la façon dont les informations d’identification sont stockées, voir [Stocker des informations d’identification chiffrées dans le cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud) ou l’article décrivant comment [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-kerberos.md).
+> Toutes les requêtes adressées à la source de données utilisent ces informations d’identification, sauf si une authentification unique (SSO) Kerberos est configurée et activée pour la source de données. Avec l’authentification unique, les jeux de données d’importation utilisent les informations d’identification stockées, mais les jeux de données DirectQuery se servent de l’utilisateur Power BI actif pour exécuter les requêtes à l’aide de l’authentification unique. Pour plus d’informations sur la façon dont les informations d’identification sont stockées, voir [Stocker des informations d’identification chiffrées dans le cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud). Ou consultez l’article qui explique comment [utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-kerberos.md).
 
 ![Spécification des paramètres de la source de données](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 
-Sélectionnez **Ajouter** après avoir renseigné toutes les informations. Vous pouvez à présent utiliser cette source de données pour l’actualisation planifiée ou DirectQuery sur un serveur SQL Server local. L’indication *Connexion réussie* apparaît une fois la connexion établie.
+Une fois que vous avez renseigné toutes les valeurs,sélectionnez **Ajouter**. Vous pouvez à présent utiliser cette source de données pour l’actualisation planifiée ou DirectQuery sur un serveur SQL Server local. L’indication *Connexion réussie* apparaît une fois la connexion établie.
 
 ![Affichage de l’état de la connexion](media/service-gateway-enterprise-manage-sql/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Paramètres avancés
 
-Vous pouvez aussi configurer le niveau de confidentialité de votre source de données. Ceci contrôle la façon dont les données peuvent être combinées. Cette option concerne uniquement l’actualisation planifiée ; elle ne s’applique pas à DirectQuery. Pour plus d’informations sur les niveaux de confidentialité de votre source de données, consultez [Niveaux de confidentialité (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+Vous pouvez aussi configurer le niveau de confidentialité de votre source de données. Ce paramètre contrôle la façon dont les données peuvent être combinées. Il concerne uniquement l’actualisation planifiée. Le paramètre de niveau de confidentialité ne s’applique pas à DirectQuery. Pour plus d’informations sur les niveaux de confidentialité de votre source de données, consultez [Niveaux de confidentialité (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
 ![Définition du niveau de confidentialité](media/service-gateway-enterprise-manage-sql/datasourcesettings9.png)
 
-## <a name="using-the-data-source"></a>Utilisation de la source de données
+## <a name="use-the-data-source"></a>Utiliser la source de données
 
 Une fois la source de données créée, elle peut être utilisée avec des connexions DirectQuery ou via une actualisation planifiée.
 
 > [!NOTE]
 > Le nom du serveur et celui de la base de données doivent correspondre entre Power BI Desktop et la source de données dans la passerelle de données locale.
 
-Le lien entre votre jeu de données et la source de données dans la passerelle est basé sur le nom de votre serveur et sur le nom de votre base de données. Ils doivent correspondre. Par exemple, si vous fournissez une adresse IP pour le nom du serveur, dans **Power BI Desktop**, vous devez utiliser l’adresse IP de la source de données dans la configuration de la passerelle. Si vous utilisez *SERVEUR\INSTANCE*, dans Power BI Desktop, vous devez utiliser la même valeur dans la source de données configurée pour la passerelle.
+Le lien entre votre jeu de données et la source de données dans la passerelle est basé sur le nom de votre serveur et sur le nom de votre base de données. Ces noms doivent correspondre. Par exemple, si vous fournissez une adresse IP pour le nom du serveur dans Power BI Desktop, vous devez utiliser l’adresse IP de la source de données dans la configuration de la passerelle. Si vous utilisez *SERVEUR\INSTANCE*, dans Power BI Desktop, vous devez utiliser la même valeur dans la source de données configurée pour la passerelle.
 
-C’est le cas pour DirectQuery et pour l’actualisation planifiée.
+Cette exigence concerne DirectQuery et l’actualisation planifiée.
 
-### <a name="using-the-data-source-with-directquery-connections"></a>Utilisation de la source de données avec des connexions DirectQuery
+### <a name="use-the-data-source-with-directquery-connections"></a>Utiliser la source de données avec des connexions DirectQuery
 
-Vous devez vérifier que le nom du serveur et celui de la base de données correspondent entre **Power BI Desktop** et la source de données configurée pour la passerelle. Vous devez également vérifier que votre utilisateur est listé sous l’onglet **Utilisateurs** de la source de données afin de publier des jeux de données DirectQuery. Pour DirectQuery, la sélection se produit dans Power BI Desktop la première fois que vous importez des données. Pour plus d’informations sur l’utilisation de DirectQuery, consultez [Utiliser DirectQuery dans Power BI Desktop](desktop-use-directquery.md).
+Vérifiez que le nom du serveur et celui de la base de données correspondent entre Power BI Desktop et la source de données configurée pour la passerelle. Vous devez également vérifier que votre utilisateur est listé sous l’onglet **Utilisateurs** de la source de données pour qu’il puisse publier des jeux de données DirectQuery. Pour DirectQuery, la sélection se produit dans Power BI Desktop la première fois que vous importez des données. Pour plus d’informations sur la façon d’utiliser DirectQuery, consultez [Utiliser DirectQuery dans Power BI Desktop](desktop-use-directquery.md).
 
-Une fois la publication effectuée, que ce soit à partir de Power BI Desktop ou de l’option **Obtenir les données**, vos rapports doivent commencer à fonctionner. Après la création de la source de données dans la passerelle, plusieurs minutes peuvent être nécessaires pour que la connexion puisse être utilisée.
+Une fois la publication effectuée, que ce soit à partir de Power BI Desktop ou de l’option **Obtenir les données**, vos rapports doivent commencer à fonctionner. Après la création de la source de données dans la passerelle, plusieurs minutes peuvent s’écouler avant que la connexion soit utilisable.
 
-### <a name="using-the-data-source-with-scheduled-refresh"></a>Utilisation de la source de données avec une actualisation planifiée
+### <a name="use-the-data-source-with-scheduled-refresh"></a>Utiliser la source de données avec une actualisation planifiée
 
 Si vous êtes listé sous l’onglet **Utilisateurs** de la source de données configurée dans la passerelle, et que le nom du serveur et celui de la base de données correspondent, la passerelle s’affiche comme option à utiliser avec l’actualisation planifiée.
 
@@ -81,5 +81,5 @@ Si vous êtes listé sous l’onglet **Utilisateurs** de la source de données c
 * [Résoudre les problèmes liés aux passerelles - Power BI](service-gateway-onprem-tshoot.md)
 * [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-kerberos.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? Essayez de d’interroger la [Communauté Power BI](http://community.powerbi.com/).
 

@@ -10,36 +10,36 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3e3e51bf13a904e46552529d9131dbbb4665cb7d
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: ac116cfb2e3f09ceab6c9f78dba33bc18e847784
+ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730231"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832455"
 ---
 # <a name="manage-your-data-source---oracle"></a>Gérer votre source de données - Oracle
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Une fois que vous avez [installé la passerelle de données locale](/data-integration/gateway/service-gateway-install), vous devez [ajouter des sources de données](service-gateway-data-sources.md#add-a-data-source) qui peuvent être utilisées avec la passerelle. Cet article examine comment travailler avec des passerelles et des sources de données Oracle pour l’actualisation planifiée ou pour DirectQuery.
+Une fois que vous avez [installé la passerelle de données locale](/data-integration/gateway/service-gateway-install), vous devez [ajouter des sources de données](service-gateway-data-sources.md#add-a-data-source) qui peuvent être utilisées avec la passerelle. Cet article examine comment utiliser des passerelles et des sources de données Oracle pour l’actualisation planifiée ou pour DirectQuery.
 
-## <a name="installing-the-oracle-client"></a>Installation du client Oracle
+## <a name="install-the-oracle-client"></a>Installer le client Oracle
 
-Pour que la passerelle se connecte à votre serveur Oracle, Oracle Data Provider for .NET (ODP.NET) doit être installé et configuré. Il fait parti des composants d’accès aux données Oracle (ODAC, Oracle Data Access Components).
+Pour connecter la passerelle à votre serveur Oracle, vous devez installer et configurer Oracle Data Provider for .NET (ODP.NET). ODP.NET fait parti des composants d’accès aux données Oracle (ODAC, Oracle Data Access Components).
 
-Pour les versions **32 bits** de Power BI Desktop, utilisez le lien suivant pour télécharger et installer le client Oracle **32 bits** :
+Pour les versions 32 bits de Power BI Desktop, utilisez le lien suivant pour télécharger et installer le client Oracle 32 bits :
 
 * [Oracle Data Access Components (ODAC) 32 bits avec Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
-Pour les versions **64 bits** de Power BI Desktop ou pour la passerelle de données locale, utilisez le lien suivant pour télécharger et installer le client Oracle **64 bits** :
+Pour les versions 64 bits de Power BI Desktop ou pour la passerelle de données locale, utilisez le lien suivant pour télécharger et installer le client Oracle 64 bits :
 
 * [ODAC 12.2c Release 1 64 bits (12.2.0.1.0) pour Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
-Une fois qu’il est installé, vous devez indiquer les informations de votre base de données dans votre fichier tnsnames.ora. Power BI Desktop et la passerelle se connectent au nom de service .NET (net_service_name) défini dans le fichier tnsnames.ora. Si le fichier n’est pas configuré, vous ne pouvez pas vous connecter. `[Oracle Home Directory]\Network\Admin\tnsnames.ora` est le chemin par défaut du fichier tnsnames.ora. Pour plus d’informations sur la configuration des fichiers tnsnames.ora, consultez [Oracle: Local Naming Parameters (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm) (Oracle : paramètres de dénomination locaux (tnsnames.ora)).
+Une fois le client installé, indiquez les informations de votre base de données dans votre fichier tnsnames.ora. Power BI Desktop et la passerelle se connectent au nom de service .NET (net_service_name) défini dans le fichier tnsnames.ora. Si le nom de service .NET (net_service_name) n’est pas configuré, vous ne pouvez pas vous connecter. `[Oracle Home Directory]\Network\Admin\tnsnames.ora` est le chemin par défaut du fichier tnsnames.ora. Pour plus d’informations sur la configuration des fichiers tnsnames.ora, consultez [Oracle: Local naming parameters (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
 ### <a name="example-tnsnamesora-file-entry"></a>Exemple d’entrée dans le fichier tnsnames.ora
 
-Le format de base d’une entrée dans tnsname.ora est le suivant.
+Voici le format de base d’une entrée dans tnsname.ora :
 
 ```
 net_service_name=
@@ -49,7 +49,7 @@ net_service_name=
      (SERVICE_NAME=service_name)))
 ```
 
-Voici un exemple qui montre de quelle manière les informations sur le serveur et le port sont indiquées.
+Voici un exemple qui montre de quelle manière les informations sur le serveur et le port sont indiquées :
 
 ```
 CONTOSO =
@@ -64,47 +64,47 @@ CONTOSO =
 
 ## <a name="add-a-data-source"></a>Ajouter une source de données
 
-Pour plus d’informations sur la façon d’ajouter une source de données, consultez [Ajouter une source de données](service-gateway-data-sources.md#add-a-data-source). Sélectionnez Oracle comme **type de source de données**.
+Pour plus d’informations sur la façon d’ajouter une source de données, voir [Ajouter une source de données](service-gateway-data-sources.md#add-a-data-source). Sous **Type de source de données**, sélectionnez **Oracle**.
 
 ![Ajouter la source de données Oracle](media/service-gateway-onprem-manage-oracle/data-source-oracle.png)
 
-Après avoir sélectionné le type de source de données Oracle, vous devez renseigner les informations relatives à la source de données, notamment le **serveur** et la **base de données**.  
+Après avoir sélectionné le type de source de données Oracle, renseignez les informations relatives à la source de données, notamment le **serveur** et la **base de données**. 
 
-Vous devez également choisir une **méthode d’authentification**.  Ce peut être **Windows** ou **De base**.  Choisissez **De base** si vous comptez utiliser un compte créé dans Oracle plutôt que l’authentification Windows. Entrez les informations d’identification qui seront utilisées pour cette source de données.
+Sous **Méthode d’authentification**, vous pouvez choisir **Windows** ou **De base**. Choisissez **De base** si vous envisagez d’utiliser un compte créé dans Oracle plutôt que l’authentification Windows. Entrez les informations d’identification à utiliser pour cette source de données.
 
 > [!NOTE]
 > Toutes les requêtes à la source de données sont exécutées à l’aide de ces informations d’identification. Pour plus d’informations sur la façon dont les informations d’identification sont stockées, voir [Stocker des informations d’identification chiffrées dans le cloud](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Spécification des paramètres de la source de données](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
 
-Sélectionnez **Ajouter** après avoir renseigné toutes les informations. Vous pouvez désormais utiliser cette source de données pour l’actualisation planifiée ou DirectQuery sur un serveur Oracle local. L’indication *Connexion réussie* apparaît une fois la connexion établie.
+Une fois que vous avez renseigné toutes les valeurs,sélectionnez **Ajouter**. Vous pouvez désormais utiliser cette source de données pour l’actualisation planifiée ou DirectQuery sur un serveur Oracle local. L’indication *Connexion réussie* apparaît une fois la connexion établie.
 
 ![Affichage de l’état de la connexion](media/service-gateway-onprem-manage-oracle/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Paramètres avancés
 
-Vous pouvez aussi configurer le niveau de confidentialité de votre source de données. Ceci contrôle la façon dont les données peuvent être combinées. Cette option concerne uniquement l’actualisation planifiée ; elle ne s’applique pas à DirectQuery. Pour plus d’informations sur les niveaux de confidentialité de votre source de données, consultez [Niveaux de confidentialité (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+Vous pouvez aussi configurer le niveau de confidentialité de votre source de données. Ce paramètre contrôle la façon dont les données peuvent être combinées. Il concerne uniquement l’actualisation planifiée. Le paramètre de niveau de confidentialité ne s’applique pas à DirectQuery. Pour plus d’informations sur les niveaux de confidentialité de votre source de données, consultez [Niveaux de confidentialité (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
 ![Définition du niveau de confidentialité](media/service-gateway-onprem-manage-oracle/datasourcesettings9.png)
 
-## <a name="using-the-data-source"></a>Utilisation de la source de données
+## <a name="use-the-data-source"></a>Utiliser la source de données
 
 Une fois la source de données créée, elle peut être utilisée avec des connexions DirectQuery ou via une actualisation planifiée.
 
 > [!WARNING]
 > Le nom du serveur et celui de la base de données doivent correspondre entre Power BI Desktop et la source de données dans la passerelle de données locale.
 
-Le lien entre votre jeu de données et la source de données dans la passerelle est basé sur le nom de votre serveur et sur le nom de votre base de données. Ils doivent correspondre. Par exemple, si vous fournissez une adresse IP pour le nom du serveur, dans Power BI Desktop, vous devez utiliser l’adresse IP de la source de données dans la configuration de la passerelle. Ce nom doit également correspondre à un alias défini dans le fichier tnsnames.ora. Pour plus d’informations sur le fichier tnsnames.ora, consultez [Installation du client Oracle](#installing-the-oracle-client).
+Le lien entre votre jeu de données et la source de données dans la passerelle est basé sur le nom de votre serveur et sur le nom de votre base de données. Ces noms doivent correspondre. Par exemple, si vous fournissez une adresse IP pour le nom du serveur dans Power BI Desktop, vous devez utiliser l’adresse IP de la source de données dans la configuration de la passerelle. Ce nom doit également correspondre à un alias défini dans le fichier tnsnames.ora. Pour plus d’informations sur le fichier tnsnames.ora, consultez [Installer le client Oracle](#install-the-oracle-client).
 
-C’est le cas pour DirectQuery et pour l’actualisation planifiée.
+Cette exigence concerne DirectQuery et l’actualisation planifiée.
 
-### <a name="using-the-data-source-with-directquery-connections"></a>Utilisation de la source de données avec des connexions DirectQuery
+### <a name="use-the-data-source-with-directquery-connections"></a>Utiliser la source de données avec des connexions DirectQuery
 
-Vous devez vérifier que le nom du serveur et celui de la base de données correspondent entre Power BI Desktop et la source de données configurée pour la passerelle. Vous devez également vérifier que votre utilisateur est listé sous l’onglet **Utilisateurs** de la source de données afin de publier des jeux de données DirectQuery. Pour DirectQuery, la sélection se produit dans Power BI Desktop la première fois que vous importez des données. Pour plus d’informations sur l’utilisation de DirectQuery, consultez [Utiliser DirectQuery dans Power BI Desktop](desktop-use-directquery.md).
+Vérifiez que le nom du serveur et celui de la base de données correspondent entre Power BI Desktop et la source de données configurée pour la passerelle. Vous devez également vérifier que votre utilisateur est listé sous l’onglet **Utilisateurs** de la source de données pour qu’il puisse publier des jeux de données DirectQuery. Pour DirectQuery, la sélection se produit dans Power BI Desktop la première fois que vous importez des données. Pour plus d’informations sur la façon d’utiliser DirectQuery, consultez [Utiliser DirectQuery dans Power BI Desktop](desktop-use-directquery.md).
 
-Une fois la publication effectuée, que ce soit à partir de Power BI Desktop ou de l’option **Obtenir les données**, vos rapports doivent commencer à fonctionner. Après la création de la source de données dans la passerelle, plusieurs minutes peuvent être nécessaires pour que la connexion puisse être utilisée.
+Une fois la publication effectuée, que ce soit à partir de Power BI Desktop ou de l’option **Obtenir les données**, vos rapports doivent commencer à fonctionner. Après la création de la source de données dans la passerelle, plusieurs minutes peuvent s’écouler avant que la connexion soit utilisable.
 
-### <a name="using-the-data-source-with-scheduled-refresh"></a>Utilisation de la source de données avec une actualisation planifiée
+### <a name="use-the-data-source-with-scheduled-refresh"></a>Utiliser la source de données avec une actualisation planifiée
 
 Si vous êtes listé sous l’onglet **Utilisateurs** de la source de données configurée dans la passerelle, et que le nom du serveur et celui de la base de données correspondent, la passerelle s’affiche comme option à utiliser avec l’actualisation planifiée.
 
@@ -112,18 +112,18 @@ Si vous êtes listé sous l’onglet **Utilisateurs** de la source de données c
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-Vous pouvez rencontrer plusieurs erreurs dans Oracle lorsque la syntaxe de dénomination est incorrecte ou n’est pas configurée correctement.
+Vous pouvez rencontrer plusieurs erreurs dans Oracle quand la syntaxe de dénomination est incorrecte ou n’est pas configurée correctement :
 
-* ORA-12154: TNS: could not resolve the connect identifier specified (ORA-12154 : TNS : l’identificateur de connexion indiqué n’a pas pu être résolu)  
-* ORA-12514: TNS listener does not currently know of service requested in connect descriptor (ORA-12514 : le processus d’écoute ne connaît pas actuellement le service demandé dans le descripteur de connexion)  
-* ORA-12541: TNS: no listener (ORA-12541 : TNS : pas de processus d’écoute)  
-* ORA-12170: TNS: Connect timeout occurred (ORA-12170 : TNS : une expiration de la connexion s’est produite)  
-* ORA-12504: TNS listener was not given the SERVICE_NAME in CONNECT_DATA (ORA-12504 : le processus d’écoute n’a pas reçu SERVICE_NAME dans CONNECT_DATA)  
+* ORA-12154: TNS:could not resolve the connect identifier specified. (ORA-12154 : TNS : l’identificateur de connexion indiqué n’a pas pu être résolu.)
+* ORA-12514: TNS:listener does not currently know of service requested in connect descriptor. (ORA-12514 : le processus d’écoute ne connaît pas actuellement le service demandé dans le descripteur de connexion.)
+* ORA-12541: TNS:no listener. (ORA-12541 : TNS : pas de processus d’écoute.)
+* ORA-12170: TNS:connect timeout occurred. (ORA-12170 : TNS : une expiration de la connexion s’est produite.)
+* ORA-12504: TNS:listener was not given the SERVICE_NAME in CONNECT_DATA. (ORA-12504 : le processus d’écoute n’a pas reçu SERVICE_NAME dans CONNECT_DATA.)
 
-Ces erreurs peuvent se produire si le client Oracle n’est pas installé ou s’il n’est pas configuré correctement. S’il est installé, vous pouvez vérifier que le fichier tnsnames.ora est correctement configuré et si vous utilisez le bon nom de service .NET (net_service_name). Vous devez également vérifier que le net_service_name est le même sur l’ordinateur utilisant Power BI Desktop et sur l’ordinateur qui exécute la passerelle. Pour plus d’informations, consultez [Installation du client Oracle](#installing-the-oracle-client).
+Ces erreurs peuvent se produire si le client Oracle n’est pas installé ou s’il n’est pas configuré correctement. S’il est installé, vérifiez que le fichier tnsnames.ora est correctement configuré et que vous utilisez le bon nom de service .NET (net_service_name). Vous devez également vérifier que le net_service_name est le même sur l’ordinateur utilisant Power BI Desktop et sur l’ordinateur qui exécute la passerelle. Pour plus d’informations, consultez [Installer le client Oracle](#install-the-oracle-client).
 
 > [!NOTE]
-> Vous pouvez également rencontrer un problème en raison de la compatibilité entre la version du serveur Oracle et la version du client Oracle. Vous voulez généralement que ces éléments correspondent.
+> Vous pouvez également rencontrer un problème de compatibilité entre la version du serveur Oracle et la version du client Oracle. En règle générale, vous souhaitez que ces versions correspondent.
 
 Pour plus d’informations sur le dépannage de la passerelle, consultez [Résolution des problèmes de passerelle de données locale](/data-integration/gateway/service-gateway-tshoot).
 
@@ -132,5 +132,5 @@ Pour plus d’informations sur le dépannage de la passerelle, consultez [Résol
 * [Résoudre les problèmes liés aux passerelles - Power BI](service-gateway-onprem-tshoot.md)
 * [Power BI Premium](service-premium.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? Essayez de d’interroger la [Communauté Power BI](http://community.powerbi.com/).
 

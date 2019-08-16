@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a5b6b89984064101b683532cbfb77ae5540c307
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: cd3afd0ed3ba1f5b734aab2106cbd70f65f29006
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730261"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867071"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Forum aux questions sur la passerelle de données locale - Power BI
 
@@ -23,9 +23,9 @@ ms.locfileid: "68730261"
 
 ## <a name="power-bi"></a>Power BI
 
-**Question :** Ai-je besoin de mettre à niveau la passerelle personnelle ? 
+**Question :** Ai-je besoin de mettre à niveau la passerelle de données locale (mode personnel) ?
 
-**Réponse :** Non. Vous pouvez continuer à utiliser la passerelle personnelle Power BI.
+**Réponse :** Non. Vous pouvez continuer à utiliser la passerelle (mode personnel) Power BI.
 
 **Question :** Des autorisations spéciales sont-elles nécessaires pour installer la passerelle et pour la gérer dans le service Power BI ?
 
@@ -41,7 +41,7 @@ ms.locfileid: "68730261"
 
 **Question :** Pourquoi ne puis-je pas me connecter à mon serveur Oracle ? 
 
-**Réponse :** Vous devez peut-être installer le client Oracle et configurer le fichier tnsnames.ora avec les informations appropriées pour vous connecter à votre serveur Oracle. Il s’agit d’une installation distincte en dehors de la passerelle. Pour plus d’informations, voir [Installation du client Oracle](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Réponse :** Vous devez peut-être installer le client Oracle et configurer le fichier tnsnames.ora avec les informations appropriées pour vous connecter à votre serveur Oracle. Il s’agit d’une installation distincte en dehors de la passerelle. Pour plus d’informations, consultez [Installer le client Oracle](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
 
 **Question :** La passerelle fonctionne-t-elle avec Azure ExpressRoute ? 
 

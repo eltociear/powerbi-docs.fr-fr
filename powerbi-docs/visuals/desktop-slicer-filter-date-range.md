@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: c039b00ced1bf62c8be72d218177d04a9fd3accf
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: e1dfda3c759d225019cc50d36cfe746976bd797a
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532715"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867085"
 ---
 # <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Utiliser un segment et un filtre de date relative dans Power BI Desktop
 
@@ -41,7 +41,7 @@ Pour le premier paramètre du *segment de date relative*, vos choix sont les sui
 
 ![Capture d’écran des options de configuration Relatif avec le premier paramètre mis en évidence.](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
-* Dernières
+* Dernier
 
 * Suivant
 
@@ -75,7 +75,7 @@ Si vous sélectionnez **Mois** dans cette liste et entrez *2* dans le paramètr
 
 * les données incluses dans les visuels limités par le segment affichent les données des deux mois précédents,
 
-* à partir du 20 mai jusqu’au 20 juillet (date d’aujourd’hui).
+* à partir du 21 mai jusqu’au 20 juillet (date d’aujourd’hui).
 
 En comparaison, si vous sélectionnez *Mois (calendaires)* , les visuels limités affichent les données du 1er mai jusqu’au 30 juin (les deux derniers mois calendaires complets).
 
