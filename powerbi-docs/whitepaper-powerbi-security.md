@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2019
+ms.date: 08/15/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: dd656f81cb0fdb32f9637f969ef538e263e20053
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 1ae51620a51c0dc76cd50bd85fc09aa2bfc8e026
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68272006"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561030"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -46,7 +46,7 @@ Chaque déploiement de Power BI est constitué de deux clusters : un cluster w
 
 ![Le WFE et le back-end](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI utilise Azure Active Directory (**AAD**) pour l’authentification et la gestion des comptes. Power BI utilise également **Azure Traffic Manager** (ATM) pour diriger le trafic utilisateur vers le centre de données le plus proche, déterminé en fonction de l’enregistrement DNS du client qui tente de se connecter, pour le processus d’authentification et le téléchargement des fichiers et du contenu statique. Power BI utilise le serveur Web frontal géographiquement le plus proche pour distribuer efficacement le contenu statique nécessaires et les fichiers des utilisateurs, à l’exception des éléments visuels personnalisés qui sont remis à l’aide de la **Azure Content Delivery Network (CDN)** .
+Power BI utilise Azure Active Directory (**AAD**) pour l’authentification et la gestion des comptes. Power BI utilise également **Azure Traffic Manager** (ATM) pour diriger le trafic utilisateur vers le centre de données le plus proche, déterminé en fonction de l’enregistrement DNS du client qui tente de se connecter, pour le processus d’authentification et le téléchargement des fichiers et du contenu statique. Power BI utilise le fichier WFE le plus proche de géographiquement pour distribuer efficacement les fichiers et le contenu statiques nécessaires aux utilisateurs, à l’exception des visuels personnalisés qui sont fournis à l’aide d' **Azure Content Delivery Network (CDN)** .
 
 ### <a name="the-wfe-cluster"></a>Le cluster WFE
 
@@ -100,17 +100,16 @@ Un locataire Power BI est créé dans le centre de données jugé le plus proche
 
 ### <a name="multiple-geographies-multi-geo"></a>Zones géographiques multiples (Multi-Geo)
 
-Certaines organisations ont besoin d’une présence Power BI dans plusieurs zones ou régions géographiques. Par exemple, une entreprise peut avoir son locataire Power BI aux États-Unis, mais peut également travailler dans d’autres zones géographiques telles que l’Australie et souhaiter que les services et les données Power BI restent dans cette région distante.  À compter du second semestre 2018, les organisations ayant leur locataire dans une zone géographique peuvent également accéder aux ressources Power BI dans une autre zone géographique quand cette fonctionnalité est correctement provisionnée. Cette fonctionnalité est appelée **Multi-Geo** par souci pratique tout au long de ce document.
+Certaines organisations ont besoin d’une présence Power BI dans plusieurs zones ou régions géographiques. Par exemple, une entreprise peut avoir son Power BI locataire dans le États-Unis mais peut également faire des affaires dans d’autres zones géographiques, telles que l’Australie, et nécessiter la conservation de certaines données Power BI au repos dans cette région distante pour se conformer aux réglementations locales. À partir de la seconde moitié de 2018, les organisations ayant leur propre locataire dans une zone géographique peuvent également approvisionner et accéder à Power BI ressources situées dans une autre zone géographique. Cette fonctionnalité est appelée **Multi-Geo** par souci pratique tout au long de ce document.
 
-Il existe quelques implications techniques à prendre en compte lors de l’exploitation dans différentes zones géographiques, qui sont clarifiées tout au long de ce document. Voici quelques considérations importantes :
+L’article le plus récent et le plus principal pour les informations sur les zones géographiques est l’article [configurer la prise en charge de plusieurs géo-géo pour Power bi Premium](service-admin-premium-multi-geo.md) . 
 
-- Une requête mise en cache stockée dans une région distante reste dans cette région au repos, mais d’autres données en transit sont susceptibles d’aller et venir entre plusieurs zones géographiques.
-- Les rapports dans des fichiers PBIX ou XLSX dans une région distante qui sont publiés sur Power BI ont parfois comme conséquence le stockage d’une copie ou d’un cliché instantané dans le stockage Blob Azure de Power BI, et quand cela se produit les données sont chiffrées à l’aide du chiffrement SSE (Storage Service Encryption) Azure.
-- Lors du déplacement des données d’une région à une autre dans un environnement Multi-Geo, le nettoyage de la mémoire dans la région à partir de laquelle les données ont été déplacées se produit dans les sept à dix jours, après quoi la copie des données déplacées à partir de la région d’origine est détruite.
+Il existe plusieurs détails techniques qui doivent être évalués dans le contexte des lois et réglementations locales lorsque vous travaillez dans différentes zones géographiques. Ces informations sont les suivantes:
 
-L’image suivante illustre comment les services Power BI fournis dans la région distante avec un environnement Multi-Geo sont routés par le biais du cluster **back-end Power BI**, où une connexion à la machine virtuelle distante de l’abonnement Power BI du client est établie.
-
-![Multi-Geo](media/whitepaper-powerbi-security/powerbi-security-whitepaper_07.png)
+- Une couche d’exécution de requête distante est hébergée dans la région de capacité à distance, afin de garantir que le modèle de données, les caches et le traitement de la plupart des données restent dans la région de capacité distante. Il existe quelques exceptions, comme indiqué dans l’article [multi-géo pour Power bi Premium](service-admin-premium-multi-geo.md) .
+- Un texte de requête mis en cache et le résultat correspondant stocké dans une région distante restent dans cette région au repos, mais d’autres données en transit peuvent passer d’une zone géographique à une autre.
+- Les fichiers PBIX ou XLSX qui sont publiés (téléchargés) vers une capacité multigéo du service Power BI peuvent entraîner le stockage temporaire d’une copie dans le stockage d’objets BLOB Azure dans la région du locataire de Power BI. Dans ce cas, les données sont chiffrées à l’aide d’Azure Storage Service Encryption (SSE), et la copie est planifiée pour garbage collection dès la fin du traitement et du transfert du contenu du fichier vers la région distante. 
+- Lorsque vous déplacez des données entre des régions dans un environnement multi-géographique, l’instance des données dans la région source est supprimée dans un délai de 7-30 jours. 
 
 ### <a name="datacenters-and-locales"></a>Centres de données et paramètres régionaux
 
@@ -231,7 +230,7 @@ Pour les sources de données basées sur le cloud, le rôle Déplacement de donn
 
     b. ETL : les données sont chiffrées dans Stockage Blob Azure, mais toutes les données actuellement dans Stockage Blob Azure pour le service Power BI utilisent [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), également connu sous le nom de chiffrement côté serveur. Multi-Geo utilise également SSE.
 
-    c. Envoi de données (push) v1 : les données sont chiffrées dans Stockage Blob Azure, mais toutes les données actuellement dans Stockage Blob Azure dans le service Power BI utilisent [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), également connu sous le nom de chiffrement côté serveur. Multi-Geo utilise également SSE. Push données v1 n’a été supprimée à compter de 2016. 
+    c. Envoi de données (push) v1 : les données sont chiffrées dans Stockage Blob Azure, mais toutes les données actuellement dans Stockage Blob Azure dans le service Power BI utilisent [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), également connu sous le nom de chiffrement côté serveur. Multi-Geo utilise également SSE. Les données push v1 ont été supprimées à partir du 2016. 
 
     d. Envoi de données (push) v2 : les données sont stockées chiffrées dans Azure SQL.
 
@@ -249,23 +248,23 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
    a. Les rapports peuvent être au format Excel pour Office 365 ou au format Power BI. Ce qui suit s’applique aux métadonnées en fonction du type de rapport :
         
-    &ensp; &ensp; une barre d’outils. Rapport Excel métadonnées sont chiffrées dans SQL Azure. Métadonnées sont également stockées dans Office 365.
+    &ensp;&ensp; . Les métadonnées de rapport Excel sont stockées sous forme chiffrée dans SQL Azure. Les métadonnées sont également stockées dans Office 365.
 
-    &ensp; &ensp; b. Les rapports Power BI sont stockées dans la base de données SQL Azure.
+    &ensp;&ensp; b. Les rapports de Power BI sont stockés sous forme chiffrée dans la base de données SQL Azure.
 
 2. Données statiques
 
    Les données statiques comprennent des artefacts tels que des images d’arrière-plan et des visuels personnalisés.
 
-    &ensp; &ensp; une barre d’outils. Pour les rapports créés avec Excel pour Office 365, rien n’est stocké.
+    &ensp;&ensp; . Pour les rapports créés avec Excel pour Office 365, rien n’est stocké.
 
-    &ensp; &ensp; b. Pour les rapports Power BI, les données statiques sont stockées et chiffrées dans Stockage Blob Azure.
+    &ensp;&ensp; b. Pour les rapports Power BI, les données statiques sont stockées et chiffrées dans Stockage Blob Azure.
 
 3. Caches
 
-    &ensp; &ensp; une barre d’outils. Pour les rapports créés avec Excel pour Office 365, rien n’est mis en cache.
+    &ensp;&ensp; . Pour les rapports créés avec Excel pour Office 365, rien n’est mis en cache.
 
-    &ensp; &ensp; b. Pour les rapports Power BI, les données pour les visuels affichés sont mises en cache chiffrées dans Azure SQL Database.
+    &ensp;&ensp; b. Pour les rapports Power BI, les données pour les visuels affichés sont mises en cache chiffrées dans Azure SQL Database.
  
 
 4. Fichiers Power BI Desktop (.pbix) ou Excel (.xlsx) d’origine publiés sur Power BI
@@ -282,7 +281,7 @@ Quelle que soit la méthode de chiffrement utilisée, Microsoft gère le chiffre
 
 ### <a name="data-transiently-stored-on-non-volatile-devices"></a>Données stockées de manière transitoire sur des appareils non volatiles
 
-Les périphériques non volatile sont avec une mémoire qui persiste sans puissance constante. La section suivante décrit les données qui sont stockées de manière transitoire sur des appareils non volatiles. 
+Les appareils non volatiles sont des appareils dont la mémoire persiste sans puissance constante. La section suivante décrit les données qui sont stockées de manière transitoire sur des appareils non volatiles. 
 
 #### <a name="datasets"></a>Groupes de données
 
@@ -297,7 +296,7 @@ Les périphériques non volatile sont avec une mémoire qui persiste sans puissa
     b. DirectQuery : cela dépend selon que le modèle est créé directement dans le service, auquel cas il est stocké dans la chaîne de connexion, dans un format chiffré avec la clé de chiffrement stockée en texte clair au même emplacement (avec les informations chiffrées), ou s’il est importé à partir de Power BI Desktop, auquel cas les informations d’identification ne sont pas stockées sur les appareils non volatiles.
 
     > [!NOTE]
-    > La fonctionnalité de création de modèle de service côté n’a été supprimée à compter de 2017.
+    > La fonctionnalité de création de modèle côté service a été interrompue à partir de 2017.
 
     c. Envoi de données (push) : aucune (non applicable)
 
@@ -316,7 +315,7 @@ Afin de superviser l’intégrité des données en cours de traitement, Power BI
 
 ## <a name="user-authentication-to-data-sources"></a>Authentification des utilisateurs auprès des sources de données
 
-Avec chaque source de données, un utilisateur établit une connexion en fonction de leur connexion et accède aux données avec ces informations d’identification. Les utilisateurs peuvent ensuite créer des requêtes, des tableaux de bord et des rapports basés sur les données sous-jacentes.
+Avec chaque source de données, un utilisateur établit une connexion en fonction de sa connexion, puis accède aux données avec ces informations d’identification. Les utilisateurs peuvent ensuite créer des requêtes, des tableaux de bord et des rapports basés sur les données sous-jacentes.
 
 Quand un utilisateur partage des requêtes, des tableaux de bord, des rapports ou des visualisations, l’accès à ces données et à ces visualisations dépend de la prise en charge de la sécurité au niveau du rôle par les sources de données sous-jacentes.
 
@@ -426,11 +425,11 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **En cas d’utilisation de la passerelle de données locale, comment les clés de récupération sont-elles utilisées et où sont-elles stockées ? Qu’en est-il de la gestion des informations d’identification sécurisées ?**
 
-* Pendant l’installation et la configuration de la passerelle, l’administrateur entre une **clé de récupération** de passerelle. Que **clé de récupération** est utilisé pour générer un nom fort **AES** clé symétrique. Un **RSA** clé asymétrique est également créée en même temps.
+* Pendant l’installation et la configuration de la passerelle, l’administrateur entre une **clé de récupération** de passerelle. Cette **clé de récupération** est utilisée pour générer une clé symétrique **AES** forte. Une clé asymétrique **RSA** est également créée en même temps.
 
     Ces clés générées (**RSA** et **AES**) sont stockées dans un fichier se trouvant sur l’ordinateur local. Ce fichier est également chiffré. Le contenu du fichier peut être déchiffré uniquement par cet ordinateur Windows spécifique, et uniquement par ce compte de service de passerelle spécifique.
 
-    Quand un utilisateur entre des informations d’identification de source de données dans l’interface utilisateur du service Power BI, les informations d’identification sont chiffrées avec la clé publique dans le navigateur. La passerelle déchiffre les informations d’identification à l’aide de la clé privée RSA et rechiffre les avec une clé symétrique AES avant que les données sont stockées dans le service Power BI. Avec ce processus, le service Power BI n’a jamais accès aux données non chiffrées.
+    Quand un utilisateur entre des informations d’identification de source de données dans l’interface utilisateur du service Power BI, les informations d’identification sont chiffrées avec la clé publique dans le navigateur. La passerelle déchiffre les informations d’identification à l’aide de la clé privée RSA et les chiffre à nouveau avec une clé symétrique AES avant que les données ne soient stockées dans le service Power BI. Avec ce processus, le service Power BI n’a jamais accès aux données non chiffrées.
 
 **Quels sont les protocoles de communication utilisés par la passerelle de données locale, et comment sont-ils sécurisés ?**
 
@@ -438,7 +437,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
   - **AMQP 1.0 – TCP + TLS** : Ce protocole nécessite l’ouverture des ports 443, 5671, 5672 et 9350 à 9354 pour les communications sortantes. Il est recommandé, car il a une surcharge de communication plus faible.
 
-  - **HTTPS – WebSockets sur HTTPS + TLS** : Ce protocole utilise uniquement le port 443. Le WebSocket est lancé par un message HTTP CONNECT unique. Une fois le canal établi, la communication est essentiellement TCP + TLS. Vous pouvez forcer la passerelle à utiliser ce protocole en modifiant un paramètre décrit dans le [article de passerelle locale](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
+  - **HTTPS – WebSockets sur HTTPS + TLS** : Ce protocole utilise uniquement le port 443. Le WebSocket est lancé par un message HTTP CONNECT unique. Une fois le canal établi, la communication est essentiellement TCP + TLS. Vous pouvez forcer la passerelle à utiliser ce protocole en modifiant un paramètre décrit dans l' [article passerelle locale](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **Quel est le rôle du CDN Azure dans Power BI ?**
 
@@ -454,11 +453,11 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 * Oui. Les visuels Bing Maps et ESRI transmettent des données en provenance du service Power BI pour les visuels qui utilisent ces services. Pour plus d’informations et pour obtenir une description détaillée du trafic de locataire en sortie de Power BI, consultez [**Power BI et ExpressRoute**](service-admin-power-bi-expressroute.md).
 
-**Pour les applications de modèle, Microsoft effectue toute sécurité ou l’évaluation de confidentialité de l’application du modèle avant de publier des éléments dans la galerie ?**
-* Non. L’éditeur de l’application est responsable du contenu lors de la responsabilité du client pour examiner et déterminer s’il faut faire confiance à l’éditeur de l’application modèle. 
+**Pour les applications de modèle, Microsoft effectue-t-il une évaluation de la sécurité ou de la confidentialité de l’application de modèle avant de publier des éléments dans la Galerie?**
+* Non. L’éditeur de l’application est responsable du contenu, tandis que le client est tenu d’examiner et de déterminer s’il faut approuver l’éditeur de l’application de modèle. 
 
-**Existe-t-il des applications de modèle qui peuvent envoyer des informations à l’extérieur du réseau du client ?**
-* Oui. Il est la responsabilité du client pour vérifier la stratégie de confidentialité de l’éditeur et de déterminer si vous souhaitez installer le modèle d’application sur le client. En outre, le serveur de publication est responsable à avertir de comportement et les fonctionnalités de l’application.
+**Existe-t-il des applications de modèle qui peuvent envoyer des informations à l’extérieur du réseau client?**
+* Oui. Il incombe au client de passer en revue la politique de confidentialité de l’éditeur et de déterminer s’il faut installer l’application de modèle sur le locataire. En outre, le serveur de publication est chargé de notifier le comportement et les fonctionnalités de l’application.
 
 **Qu’en est-il de la souveraineté des données ? Pouvons-nous provisionner des locataires dans des centres de données situés dans des zones géographiques spécifiques, afin de nous assurer que les données ne quittent pas les frontières du pays ?**
 
