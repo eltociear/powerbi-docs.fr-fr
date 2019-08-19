@@ -124,7 +124,7 @@ Nous prenons en charge les sources de données suivantes :
 - Azure SQL Data Warehouse
 - Azure SQL Database (nom d’utilisateur/mot de passe, authentification unique et OAuth)
 - SQL Server*
-- Modèles tabulaires (DAX) et multidimensionnels (MDX) SQL Server Analysis Services (SSAS)** 
+- Modèles tabulaires (DAX) et multidimensionnels (MDX) SQL Server Analysis Services (SSAS)* 
 - Oracle* 
 - Teradata* 
 
