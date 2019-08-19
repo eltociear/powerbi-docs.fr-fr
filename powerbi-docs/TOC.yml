@@ -55,6 +55,8 @@
           href: desktop-latest-update.md
         - name: "Regroupement de visuels dans Power\_BI\_Desktop"
           href: desktop-grouping-visuals.md
+        - name: "Utilisation de modèles dans Power\_BI\_Desktop"
+          href: desktop-templates.md
         - name: "Affichage Modélisation dans Power\_BI\_Desktop"
           href: desktop-modeling-view.md
         - name: Agrégations dans Power BI Desktop
@@ -491,7 +493,7 @@
           items:
             - name: Utiliser des jeux de données entre des espaces de travail
               href: service-datasets-across-workspaces.md
-            - name: Créer et partager des jeux de données (préversion)
+            - name: Partager des jeux de données (préversion)
               href: service-datasets-build-permissions.md
             - name: Créer des rapports basés sur des jeux de données
               href: service-datasets-discover-across-workspaces.md
@@ -1432,3 +1434,5 @@
   items:
     - name: "Qu’est-ce qu’un schéma en étoile\_?"
       href: guidance/star-schema.md
+    - name: Réduire la taille du modèle de données
+      href: guidance/import-modeling-data-reduction.md
