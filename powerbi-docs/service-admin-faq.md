@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d6961007c3f7185b954188fa7bd7866d80a7f85a
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 6d0c4a2dba1dee1c8c40da8fd3371767915729da
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523400"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490321"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -38,7 +38,6 @@ Cet article répond aux questions fréquemment posées concernant l’administra
 
 * [Quelles seront les conséquences sur ma méthode actuelle de gestion des identités pour les utilisateurs de mon organisation ?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Comment faire pour gérer Power BI ?](#how-do-we-manage-power-bi)
-* [Quelle est la procédure à suivre pour gérer un locataire créé par Microsoft pour mes utilisateurs ?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Si j’utilise plusieurs domaines, puis-je contrôler le locataire Office 365 auquel sont ajoutés les utilisateurs ?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Comment supprimer Power BI pour les utilisateurs déjà inscrits ?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Comment connaître la date à laquelle les nouveaux utilisateurs ont rejoint mon locataire ?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -173,18 +172,6 @@ Trois scénarios peuvent s’appliquer aux utilisateurs de votre organisation :
 Power BI fournit un portail d’administration qui permet d’afficher les statistiques d’utilisation. Il fournit également un lien vers le Centre d’administration Microsoft 365 qui permet de gérer les utilisateurs et les groupes et de contrôler les paramètres au niveau du locataire.
 
 Pour utiliser le portail d’administration Power BI, vous devez marquer votre compte en tant que compte **d’administrateur général** dans Office 365 ou Azure Active Directory, ou le rôle d’administrateur du service Power BI doit être attribué à votre compte d’utilisateur. Pour plus d’informations, consultez [Présentation du rôle d’administrateur Power BI](service-admin-role.md) et [Portail d’administration Power BI](service-admin-portal.md).
-
-### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Quel est la procédure à suivre pour gérer un client créé par Microsoft pour mes utilisateurs ?
-
-Lorsqu’un utilisateur libre-service s’inscrit à un service cloud qui utilise Azure AD, le service l’ajoute à un annuaire Azure AD non managé basé sur son domaine de courrier. Vous pouvez revendiquer et gérer le locataire qui a été créé à l’aide d’un processus appelé *prise de contrôle par l’administrateur*. Le type de prise de contrôle varie selon qu’il existe ou non un locataire managé associé à votre domaine :
-
-* Utilisez une *prise de contrôle interne* afin de créer un nouveau client managé pour le domaine.
-
-* Utilisez une *prise de contrôle externe* pour déplacer le domaine vers un locataire managé existant.
-
-Pour plus d’informations, consultez [Prise de contrôle d’un annuaire non managé en tant qu’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
-
-Lorsque vous effectuez une prise de contrôle externe, le service place le contenu Power BI qui a été créé avant la prise de contrôle dans un [espace de travail archivé Power BI](service-admin-power-bi-archived-workspace.md). Vous devez migrer manuellement le contenu que vous souhaitez utiliser dans le nouveau locataire.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Si j’utilise plusieurs domaines, puis-je contrôler le locataire Office 365 auquel sont ajoutés les utilisateurs ?
 
