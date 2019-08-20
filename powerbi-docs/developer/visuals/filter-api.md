@@ -189,7 +189,7 @@ declare type ITupleFilterTarget = IFilterTarget[];
 
   Le filtre peut traiter des colonnes de différentes tables.
 
-`$schema` est « http://powerbi.com/product/schema#tuple »
+`$schema` est "http://powerbi.com/product/schema#tuple"
 
 `filterType` est `FilterType.Tuple`
 
