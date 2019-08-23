@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: 1c110022c27cf0e213484619a750140a63a7d0dc
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808254"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490384"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -35,7 +35,7 @@ Pour commencer, vous devez disposer des éléments suivants :
 * Un [compte Power BI Pro](../service-self-service-signup-for-power-bi.md).
 * Un abonnement [Microsoft Azure](https://azure.microsoft.com/).
 * Vous avez besoin de votre propre installation d’un [locataire Azure Active Directory](create-an-azure-active-directory-tenant.md).
-* Pour incorporer des rapports paginés, vous devez disposer au minimum d’une capacité A4/P1. Voir [De quelle taille de capacité Premium ai-je besoin pour des rapports paginés ?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
+* Pour incorporer des rapports paginés, vous devez disposer au minimum d’une capacité P1. Voir [De quelle taille de capacité Premium ai-je besoin pour des rapports paginés ?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Si vous n’avez pas d’abonnement à **Power BI Pro**, [inscrivez-vous à un essai gratuit](https://powerbi.microsoft.com/pricing/) avant de commencer.
 
@@ -45,7 +45,7 @@ Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://az
 
 Avant de commencer à incorporer des rapports, des tableaux de bord ou des vignettes dans votre application, vérifiez que votre environnement autorise l’incorporation avec Power BI.
 
-Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup/UserOwnsData) pour démarrer rapidement et télécharger un exemple d’application qui vous guide tout au long de la création d’un environnement et de l’incorporation d’un rapport. Dans le cas de l’incorporation d’un rapport paginé, vous devez affecter au moins une capacité A4/P1 à l’espace de travail de l’application créée.
+Vous pouvez accéder à [l’outil de configuration de l’incorporation](https://aka.ms/embedsetup/UserOwnsData) pour démarrer rapidement et télécharger un exemple d’application qui vous guide tout au long de la création d’un environnement et de l’incorporation d’un rapport. Si vous incorporez un rapport paginé, vous devez affecter au moins une capacité P1 à l’espace de travail de l’application créé.
 
 Si vous choisissez de configurer l’environnement manuellement, vous pouvez continuer à suivre les instructions ci-dessous.
 
@@ -83,7 +83,7 @@ Vous pouvez créer vos rapports et vos jeux de données à l’aide de Power BI 
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Créer et publier vos rapports paginés
 
-Vous pouvez créer vos rapports paginés à l’aide du [Générateur de rapports Power BI](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Vous pouvez ensuite [charger un rapport](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) dans un espace de travail d’application doté d’une capacité minimale A4/P1. L’utilisateur final qui charge le rapport doit avoir une licence Power BI Pro pour publier dans un espace de travail d’application.
+Vous pouvez créer vos rapports paginés avec le [Générateur de rapports Power BI](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Ensuite, vous pouvez [charger le rapport](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) dans un espace de travail d’application auquel est affecté au minimum une capacité P1. L’utilisateur final qui charge le rapport doit avoir une licence Power BI Pro pour publier dans un espace de travail d’application.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Incorporer votre contenu en utilisant l’exemple d’application
 
@@ -152,9 +152,6 @@ Dans **reportId**, indiquez le GUID de rapport provenant de Power BI. Vous pouv
 URL de rapport Power BI <br>
 
 ![PBI reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
-
-URL de rapport paginé <br>
-
 
 
 URL de rapport paginé<br>
@@ -384,7 +381,7 @@ Maintenant que votre application est développée, il est temps de sauvegarder l
 
 ### <a name="create-a-dedicated-capacity"></a>Créer une capacité dédiée
 
-En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail d’application. Pour les rapports paginés, vous devez sauvegarder votre espace de travail d’application avec une capacité minimale A4/P1. Vous pouvez créer une capacité dédiée à l’ aide de [Power BI Premium](../service-premium-what-is.md).
+En créant une capacité dédiée, vous pouvez mettre à profit le fait que vous disposez d’une ressource dédiée pour le contenu de votre espace de travail d’application. Pour les rapports paginés, vous devez sauvegarder votre espace de travail d’application avec au minimum une capacité P1. Vous pouvez créer une capacité dédiée avec [Power BI Premium](../service-premium-what-is.md).
 
 Le tableau suivant liste les références SKU Power BI Premium disponibles dans [Microsoft Office 365](../service-admin-premium-purchase.md) :
 
@@ -425,7 +422,7 @@ Les administrateurs généraux ou les administrateurs du service Power BI peuven
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce tutoriel, vous avez appris à incorporer du contenu Power BI dans une application à l’aide de votre compte d’organisation Power BI. Vous pouvez maintenant essayer d’incorporer du contenu Power BI dans une application à l’aide d’applications. Vous pouvez également essayer d’incorporer du contenu Power BI pour vos clients (pas encore pris en charge pour l’incorporation de rapports paginés) :
+Dans ce tutoriel, vous avez appris à incorporer du contenu Power BI dans une application à l’aide de votre compte d’organisation Power BI. Vous pouvez maintenant essayer d’incorporer du contenu Power BI dans une application à l’aide d’applications. Vous pouvez également tenter d’incorporer du contenu Power BI pour vos clients (ceci n’est pas encore pris en charge pour l’incorporation de rapports paginés) :
 
 > [!div class="nextstepaction"]
 > [Incorporer à partir d’applications](embed-from-apps.md)

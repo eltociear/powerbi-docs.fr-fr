@@ -7,24 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989204"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023388"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
-Les **Thèmes de rapport** permettent d’appliquer un thème de couleur à l’intégralité d’un rapport. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières ou de tout autre thème de couleur. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné. Quelques exceptions s’appliquent. Elles sont décrites plus loin dans cet article.
+Les **Thèmes de rapport** permettent d’appliquer un thème de couleur à l’intégralité d’un rapport. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières, de jeux d’icônes ou de tout autre thème de couleur. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné. Quelques exceptions s’appliquent. Elles sont décrites plus loin dans cet article.
 
 ![Report themes](media/desktop-report-themes/report-themes_1.png)
 
 Lorsque vous appliquez un **thème de rapport**, vous avez besoin d’un fichier JSON qui utilise une structure de base. Vous pouvez ensuite importer ce fichier JSON dans Power BI Desktop et l’appliquer à votre rapport. La structure du fichier JSON et le processus d’importation, sont des opérations faciles et rapides (quelques clics suffisent).
 
-Vous pouvez également personnaliser et normaliser presque tous les éléments. Pour personnaliser, vous utilisez le fichier JSON, que vous ajustez manuellement dans le volet **Mise en forme**. L’objectif est de vous permettent de contrôler totalement l’apparence et le pensez, à un niveau granulaire de vos rapports.
+Vous pouvez également personnaliser et normaliser presque tous les éléments. Pour personnaliser, vous utilisez le fichier JSON, que vous ajustez manuellement dans le volet **Mise en forme**. L’objectif est de vous donner un contrôle complet sur l’apparence des rapports à un niveau granulaire.
 
 ## <a name="how-report-themes-work"></a>Fonctionnement des thèmes de rapport
 Pour appliquer un thème de rapport à un rapport Power BI Desktop, vous pouvez effectuer votre choix parmi les thèmes de rapport intégrés disponibles ou importer un thème personnalisé.
@@ -247,7 +247,7 @@ Le tableau suivant définit les valeurs de *cardName*. La première valeur dans 
 | categoryAxis : Axe X |
 | categoryLabels : Étiquettes des catégories |
 | columnFormatting : Mise en forme des champs |
-| columnHeaders : En-têtes de colonne |
+| columnHeaders : En-têtes de colonnes |
 | dataLabels : Étiquettes de données |
 | fill : Remplir |
 | fillPoint : Point de remplissage |

@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: a3e88d853f59a0e9a188d6d6796559ad2d9059a9
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590599"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995282"
 ---
 # <a name="key-influencers-visualization"></a>Visualisation des influenceurs clés
 Le visuel d’influenceurs clés vous aide à comprendre les facteurs affectant une métrique qui vous intéresse. Il analyse vos données, classe les facteurs qui sont importants et les affiche sous forme d’influenceurs clés. Par exemple, supposons que vous souhaitez déterminer ce qui influence le renouvellement du personnel. L’un des facteurs peut être la longueur du contrat d’emploi et un autre l’âge de l’employé. 
@@ -24,9 +24,6 @@ Le visuel d’influenceurs clés vous aide à comprendre les facteurs affectant 
 Le visuel d’influenceurs clés constitue un excellent choix quand vous souhaitez : 
 - Voir quels facteurs affectent la métrique en cours d’analyse.
 - Comparer l’importance relative de ces facteurs. Par exemple, les contrats à court terme ont-ils plus d’impact sur le renouvellement du personnel que les contrats à long terme ? 
-
-## <a name="key-influencer-requirements"></a>Exigences relatives aux influenceurs clés 
-La métrique que vous analysez doit être un champ de catégorie ou numérique (les agrégats et les mesures ne sont pas encore pris en charge).
 
 ## <a name="features-of-the-key-influencers-visual"></a>Fonctionnalités du visuel d’influenceurs clés
 
@@ -44,15 +41,13 @@ La métrique que vous analysez doit être un champ de catégorie ou numérique (
 
 6. **Volet droit** : le volet droit contient un visuel. Ici, l’histogramme affiche toutes les valeurs pour l’influenceur clé **Thème** qui est sélectionné dans le volet gauche. La valeur spécifique (**usage**) dans le volet gauche est indiquée en vert. Toutes les autres valeurs pour **Thème** sont en noir.
 
-7. **Ligne moyenne** : la moyenne est calculée pour toutes les autres valeurs possibles pour **Thème** sauf **usage**. Le calcul s’applique donc à toutes les valeurs en noir. Cela indique quel pourcentage des autres **Thèmes** a donné une évaluation faible. Autrement dit, quand une évaluation est donnée par un client, celui-ci décrit également la raison ou le thème de l’évaluation. Les thèmes possibles sont l’usage, la vitesse et la sécurité. 
+7. **Ligne moyenne** : La moyenne est calculée pour toutes les autres valeurs possibles pour **Thème** sauf **usability** (utilisabilité) (qui est l’influenceur sélectionné). Le calcul s’applique donc à toutes les valeurs en noir. Il vous indique quel pourcentage des autres **Thèmes** a donné une évaluation faible. Dans ce cas, 11,35 % avait une évaluation faible (indiquée par la ligne en pointillés).
 
-   **Thème est usage** est le deuxième influenceur clé le plus important pour une évaluation faible, d’après le visuel dans le volet gauche. Si vous faites la moyenne de tous les autres thèmes et de leur contribution à une évaluation **faible**, vous obtenez le résultat apparaissant en rouge. De tous les autres thèmes donnés, seuls 11,35 % sont supérieurs à **usage**.
+8. **Case à cocher** : Filtre le visuel dans le volet droit pour afficher uniquement les valeurs qui sont des influenceurs pour ce champ. Dans cet exemple, cela permet de filtrer le visuel sur l’utilisabilité, la sécurité et la navigation.
 
-8. **Case à cocher** : **Afficher uniquement les valeurs qui sont des influenceurs**.
-
-## <a name="create-a-key-influencers-visual"></a>Créer un visuel d’influenceurs clés 
+## <a name="analyze-a-metric-that-is-categorical"></a>Analyser une métrique de catégorie
  
-Regardez cette vidéo pour apprendre à créer un visuel d’influenceurs clés. Effectuez ensuite ces étapes pour en créer un. 
+Regardez cette vidéo pour découvrir comment créer un visuel d’influenceurs clés avec une métrique de catégorie. Effectuez ensuite ces étapes pour en créer un. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -65,20 +60,24 @@ Votre responsable produit vous demande d’identifier les facteurs qui poussent 
 
     ![Dans le volet Visualisations, sélectionnez le modèle Influenceurs clés.](media/power-bi-visualization-influencers/power-bi-template-new.png)
 
-2. Déplacez la métrique que vous voulez examiner dans le champ **Analyser**. Le champ **Analyser** prend uniquement en charge les variables catégorielles (ou discontinues). Pour voir les facteurs qui incitent les clients à laisser une évaluation faible, sélectionnez **Table des clients** > **Évaluation**. 
+2. Déplacez la métrique que vous voulez examiner dans le champ **Analyser**. Pour voir les facteurs qui incitent les clients à laisser une évaluation faible, sélectionnez **Table des clients** > **Évaluation**.
+
 3. Déplacez les champs qui selon vous pourraient influencer **Évaluation** dans le champ **Expliquer par**. Vous pouvez déplacer autant de champs que vous le souhaitez. Dans ce cas, démarrez avec :
     - Pays-Région 
     - Rôle dans l’org 
     - Type d’abonnement 
     - Taille de l’entreprise 
-    - Thème 
-1. Pour vous concentrer sur les évaluations négatives, sélectionnez **Faible** dans la zone de liste déroulante **Ce qui influence l’évaluation**.  
+    - Thème
+    
+4. Laissez vide le champ **Développer par**. Ce champ est utilisé seulement lors de l’analyse d’une mesure ou d’un champ synthétisé. 
+
+5. Pour vous concentrer sur les évaluations négatives, sélectionnez **Faible** dans la zone de liste déroulante **Ce qui influence l’évaluation**.  
 
     ![Sélectionner Faible dans la zone de liste déroulante](media/power-bi-visualization-influencers/power-bi-key-influencers.png)
 
 L’analyse s’exécute au niveau table du champ en cours d’analyse. Dans ce cas, il s’agit de la métrique **Évaluation**. Cette métrique est définie au niveau client. Chaque client a donné un score élevé ou un score faible. Tous les facteurs explicatifs doivent être définis au niveau client pour que le visuel puisse les utiliser. 
 
-Dans l’exemple précédent, tous les facteurs explicatifs ont une relation un-à-un ou plusieurs-à-un avec la métrique. Dans ce cas, chaque score est associé à un thème. Ce thème correspond au thème principal de l’évaluation du client. De même, les clients proviennent d’un pays, ont un type d’appartenance et jouent un rôle dans leur organisation. Les facteurs explicatifs sont déjà des attributs d’un client et aucune transformation n’est nécessaire. Le visuel peut les utiliser immédiatement. 
+Dans l’exemple précédent, tous les facteurs explicatifs ont une relation un-à-un ou plusieurs-à-un avec la métrique. Dans ce cas, chaque client a affecté un seul thème à son évaluation. De même, les clients proviennent d’un pays, ont un type d’appartenance et jouent un rôle dans leur organisation. Les facteurs explicatifs sont déjà des attributs d’un client et aucune transformation n’est nécessaire. Le visuel peut les utiliser immédiatement. 
 
 Plus loin dans le tutoriel, vous examinerez des exemples plus complexes avec des relations un-à-plusieurs. Dans ces cas-là, vous devrez d’abord agréger les colonnes au niveau client avant de pouvoir exécuter l’analyse. 
 
@@ -89,7 +88,7 @@ Jetons un œil aux influenceurs clés pour les évaluations faibles.
 
 ### <a name="top-single-factor-that-influences-the-likelihood-of-a-low-rating"></a>Principal facteur influençant la probabilité d’une évaluation faible
 
-Dans cet exemple, l’organisation a trois rôles : consommateur, administrateur et éditeur. Le fait d’être un consommateur est le principal facteur contribuant à une évaluation faible. 
+Dans cet exemple, le client peut avoir trois rôles : consommateur, administrateur et éditeur. Le fait d’être un consommateur est le principal facteur contribuant à une évaluation faible. 
 
 ![Sélectionner Rôle dans l’org est consommateur](media/power-bi-visualization-influencers/power-bi-role-consumer.png)
 
@@ -138,7 +137,7 @@ Le nuage de points dans le volet droit trace le pourcentage moyen d’évaluatio
 
 Dans certains cas, vous pouvez constater que vos facteurs continus ont été automatiquement convertis en catégories. Cela est dû au fait que nous avons découvert que la relation entre les variables n’est pas linéaire et que nous ne pouvons pas décrire la relation comme une simple augmentation ou une diminution (comme nous l’avons fait dans l’exemple ci-dessus).
 
-Nous exécutons des tests de corrélation pour déterminer la linéarité de l’influenceur par rapport à la cible. Si la cible est continue, nous exécutons la corrélation Perasons et, si la cible est catégorique, nous exécutons des tests de corrélation du point bisériel. Si nous détectons que la relation n’est pas suffisamment linéaire, nous traitons des compartimentages supervisés et générons un maximum de 5 emplacements. Pour déterminer les emplacements les plus significatifs, nous utilisons une méthode de compartimentage supervisée qui examine la relation entre le facteur explicatif et la cible analysée.
+Nous exécutons des tests de corrélation pour déterminer la linéarité de l’influenceur par rapport à la cible. Si la cible est continue, nous exécutons la corrélation de Pearsons et, si la cible est une catégorie, nous exécutons des tests de corrélation bisérielle de points. Si nous détectons que la relation n’est pas suffisamment linéaire, nous traitons des compartimentages supervisés et générons un maximum de 5 emplacements. Pour déterminer les emplacements les plus significatifs, nous utilisons une méthode de compartimentage supervisée qui examine la relation entre le facteur explicatif et la cible analysée.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Interpréter les mesures et agrégats comme influenceurs clés 
  
@@ -165,9 +164,29 @@ Dans ce groupe, 74,3 % des clients ont attribué une évaluation faible. Le cli
 
 ![Sélectionner le premier segment principal](media/power-bi-visualization-influencers/power-bi-top-segments2.png)
 
-## <a name="working-with-numerical-data"></a>Utilisation des données numériques
+## <a name="adding-counts"></a>Ajout de décomptes
 
-Si vous déplacez un champ numérique dans le champ **Analyser**, vous pouvez choisir comment gérer ce scénario. Pour changer le comportement du visuel, accédez au **volet de mise en forme** et basculez entre le type d’analyse **Catégorie** et le type d’analyse **Continu**.
+Parfois, un influenceur peut avoir un impact important, mais représenter très peu de données. Par exemple, **Thème** est **usability** (utilisabilité) est le deuxième plus grand influenceur pour les évaluations basses. Cependant, il n’y a qu’un petit nombre de clients qui se sont plaint de l’utilisabilité. Les décomptes peuvent vous aider à hiérarchiser les influenceurs sur lesquels vous voulez vous concentrer.
+
+Vous pouvez activer les décomptes via la **Carte d’analyse** du volet de mise en forme.
+
+![Ajouter des décomptes](media/power-bi-visualization-influencers/power-bi-ki-counts-toggle.png)
+
+Une fois les décomptes activés, vous verrez un anneau autour de la bulle de chaque influenceur, qui représente le pourcentage approximatif de données contenues dans l’influenceur. Plus la partie de la bulle encerclée par l’anneau est importante, plus il contient de données. Nous pouvons voir que **Thème** est **usability** (utilisabilité) contient une très petite proportion des données.
+
+![Montrer les décomptes](media/power-bi-visualization-influencers/power-bi-ki-counts-ring.png)
+
+Vous pouvez également utiliser la bascule Trier par dans le coin inférieur gauche du visuel pour trier les bulles d’abord par décompte au lieu de les trier par impact. **Type d’abonnement** est **Premier** est le premier influenceur en fonction du décompte.
+
+![Trier par décomptes](media/power-bi-visualization-influencers/power-bi-ki-counts-sort.png)
+
+Si vous avez un anneau complet autour du cercle, cela signifie que l’influenceur contient 100 % des données. Vous pouvez changer le type de décompte pour qu’il soit relatif à l’influenceur maximal en utilisant la liste déroulante **Type de décompte** dans la **Carte d’analyse** du volet de mise en forme. À présent, l’influenceur avec la plus grande quantité de données est représenté par un anneau complet, et tous les autres décomptes sont relatifs à cet influenceur.
+
+![Montrer des décomptes relatifs](media/power-bi-visualization-influencers/power-bi-ki-counts-type.png)
+
+## <a name="analyze-a-metric-that-is-numeric"></a>Analyser une métrique numérique
+
+Si vous déplacez un champ numérique non synthétisé dans le champ **Analyser**, vous pouvez choisir comment gérer ce scénario. Pour changer le comportement du visuel, accédez au **volet de mise en forme** et basculez entre le type d’analyse **Catégorie** et le type d’analyse **Continu**.
 
 ![Remplacer Catégorie par Continu](media/power-bi-visualization-influencers/power-bi-ki-formatting.png)
 
@@ -212,6 +231,30 @@ Le top des segments pour les cibles numériques montre les groupes pour lesquels
 
 ![Influenceurs de mesure pour des cibles numériques](media/power-bi-visualization-influencers/power-bi-ki-numeric-segments.png)
 
+## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analyser une métrique qui est une mesure ou une colonne synthétisée
+
+Dans le cas d’une mesure ou d’une colonne synthétisée, l’analyse est définie par défaut sur le **Type d’analyse continue** décrit [ci-dessus](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). Ceci ne peut pas être modifié. La plus grande différence entre l’analyse d’une mesure/colonne synthétisée et une colonne numérique non synthétisée est le niveau auquel l’analyse est effectuée.
+
+Dans le cas de colonnes non synthétisées, l’analyse est toujours effectuée au niveau de la table. Dans l’exemple du prix des maisons ci-dessus, nous avons analysé la métrique **House Price** (Prix de la maison) pour voir ce qui influence l’augmentation/diminution du prix d’une maison. L’analyse s’effectue automatiquement au niveau de la table. Notre table a un ID unique pour chaque maison, de sorte que l’analyse s’effectue au niveau de la maison.
+
+![Table de mesures](media/power-bi-visualization-influencers/power-bi-ki-measures-table.png)
+
+Pour les mesures et les colonnes synthétisées, nous ne savons pas immédiatement à quel niveau les analyser. Si **House Price** (Prix de la maison) était synthétisé sous forme de **Moyenne**, nous devrions déterminer à quel niveau nous voulons que le prix moyen d’une maison soit calculé. S’agit-il du prix moyen d’une maison au niveau du voisinage ? Ou peut-être au niveau régional ?
+
+Les mesures et les colonnes synthétisées sont automatiquement analysées au niveau des champs **Expliquer par** utilisés. Imaginez que nous avons trois champs dans **Expliquer par** qui nous intéressent : **Kitchen Quality** (Qualité de la cuisine), **Building Type** (Type de construction) et **Air Conditioning** (Air conditionné). **Average House Price** (Prix moyen d’une maison) est calculé pour chaque combinaison unique de ces trois champs. Il est souvent utile de passer à une vue tabulaire pour voir à quoi ressemblent les données évaluées.
+
+![Table de mesures](media/power-bi-visualization-influencers/power-bi-ki-measures-table2.png)
+
+Cette analyse est une synthèse très globale et il est donc difficile pour le modèle de régression de trouver des modèles dans les données à partir desquels il peut apprendre. Nous devons exécuter l’analyse à un niveau plus détaillé pour obtenir de meilleurs résultats. Si nous voulions analyser le prix des maisons au niveau des maisons, nous devrions ajouter explicitement le champ **ID** à l’analyse. Néanmoins, nous ne voulons pas que l’ID des maisons soit considéré comme un influenceur. Il n’est pas très utile d’apprendre que quand l’ID de la maison augmente, le prix d’une maison augmente. C’est là où l’option du champ **Développer par** se révèle pratique. Vous pouvez utiliser **Développer par** pour ajouter des champs que vous voulez utiliser pour définir le niveau de l’analyse sans rechercher de nouveaux influenceurs.
+
+Regardez à quoi ressemble la visualisation une fois que nous ajoutons **ID** à **Développer par**. Une fois que vous avez défini le niveau auquel vous voulez que votre mesure soit évaluée, l’interprétation des influenceurs est exactement la même que pour les [colonnes numériques non synthétisées](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+
+![Table de mesures](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
+
+Si vous voulez en savoir plus sur la façon dont vous pouvez analyser des mesures avec la visualisation des influenceurs clés, regardez le tutoriel suivant.
+
+<iframe width="1167" height="631" src="https://www.youtube.com/embed/2X1cW8oPtc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes 
  
 **Quelles sont les limitations du visuel ?** 
@@ -244,6 +287,12 @@ La visualisation examine les tendances des données d’un groupe par rapport à
 Nous recommandons au moins 100 observations pour l’état sélectionné. Dans ce cas, l’état correspond aux clients qui renouvellent leur contrat. Vous avez également besoin d’au moins 10 observations pour les états que vous utilisez à des fins de comparaison. Dans ce cas, l’état de la comparaison correspond aux clients qui ne renouvellent pas leur contrat.
 
 Si vous analysez un champ numérique, vous pouvez passer de l’**analyse par catégorie** à l’**analyse en continu** dans le **volet de mise en forme** sous la carte  **Analyse**.
+
+**Je reçois une erreur indiquant que quand l’analyse n’est pas synthétisée, elle s’effectue toujours au niveau des lignes de sa table parente. La modification de ce niveau via des champs « Développer par» n’est pas autorisée. Pourquoi ?**
+
+Lors de l’analyse d’une colonne numérique ou de catégorie, l’analyse s’effectue toujours au niveau de la table. Par exemple, si vous analysez des prix de maisons et que votre table contient une colonne ID, l’analyse s’effectue automatiquement au niveau de l’ID des maisons. 
+
+Quand vous analysez une mesure ou une colonne synthétisée, vous devez spécifier explicitement à quel niveau vous voulez que l’analyse soit effectuée. Vous pouvez utiliser **Développer par** pour changer le niveau de l’analyse pour les mesures et les colonnes synthétisées sans ajouter de nouveaux influenceurs. Si **House price** (Prix de la maison) était défini comme mesure, vous pourriez ajouter la colonne d’ID de maison à **Développer par** pour changer le niveau de l’analyse.
 
 **Je reçois une erreur indiquant qu’un champ dans *Expliquer par* n’est pas lié de manière unique à la table contenant la métrique que je suis en train d’analyser. Pourquoi ?**
  

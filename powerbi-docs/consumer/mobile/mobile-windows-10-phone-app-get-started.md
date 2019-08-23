@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: aa41e1e2869ad4d2f77224e3bec99dc00c59c536
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0a60fe526e83e5220e9b310097c8ba37682a396e
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61337347"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995219"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Prise en main de l’application mobile Power BI pour Windows 10
-L’application mobile Power BI pour Windows 10 permet de bénéficier des fonctionnalités de Power BI sur votre tablette ou votre téléphone, et vous offre un accès mobile, tactile et moderne aux informations de votre entreprise. Affichez et utilisez vos tableaux de bord d’entreprise où que vous soyez, directement sur l’[écran d’accueil de Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
+L’application mobile Power BI pour Windows 10 vous permet d’utiliser Power BI sur votre tablette ou votre smartphone. Vous bénéficiez d’un accès mobile, tactile et toujours à jour aux informations de votre entreprise. Affichez et utilisez vos tableaux de bord d’entreprise où que vous soyez, directement sur l’[écran d’accueil de Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
 
 ![Vignette dynamique Windows](./media/mobile-windows-10-phone-app-get-started/pbi_win10_livetile.gif)
 
@@ -28,12 +28,12 @@ Interagissez ensuite avec vos tableaux de bord et rapports, explorez les donnée
 ## <a name="first-things-first"></a>Avant tout
 * [**Obtenez l’application mobile Power BI pour Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) dans le Windows Store.
   
-  Votre appareil doit exécuter Windows 10. L’application peut fonctionner sur des appareils qui possèdent au moins 3 Go de RAM et 8 Go de stockage interne.
+  Votre appareil doit exécuter Windows 10. L’application peut fonctionner sur des appareils qui disposent d’au moins 3 Go de RAM et 8 Go de stockage interne.
    
-* Découvrez les [nouveautés des applications mobiles Power BI](mobile-whats-new-in-the-mobile-apps.md).
+* Découvrez les [nouveautés sur les applications mobiles Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>S’inscrire au service Power BI sur le web
-Si vous ne vous êtes pas encore inscrit, accédez au [service Power BI](http://powerbi.com/) pour le faire. Vous disposez alors d’un compte à l’aide duquel vous pouvez créer et stocker des tableaux de bord et des rapports, et regrouper vos données. Ensuite, connectez-vous à Power BI sur votre appareil Windows 10 pour consulter vos tableaux de bord où que vous soyez.
+Si vous ne vous êtes pas encore inscrit, accédez au [service Power BI](http://powerbi.com/). Inscrivez-vous pour obtenir votre propre compte en vue de créer et de stocker des tableaux de bord et des rapports, et de rassembler l’ensemble de vos données. Ensuite, connectez-vous à Power BI sur votre appareil Windows 10 pour consulter vos tableaux de bord où que vous soyez.
 
 1. Dans le service Power BI, appuyez sur [S’inscrire](http://go.microsoft.com/fwlink/?LinkID=513879) pour créer un compte Power BI.
 2. Commencez à [créer vos propres tableaux de bord et rapports](../../service-get-started.md).
@@ -52,8 +52,8 @@ Si vous ne vous êtes pas encore inscrit, accédez au [service Power BI](http:/
 ## <a name="try-the-power-bi-and-reporting-services-samples"></a>Essayer les exemples Power BI et Reporting Services
 Même sans inscription, vous pouvez vous servir des exemples Power BI et Reporting Services. Après avoir téléchargé l’application, vous pouvez afficher les exemples ou vous lancer. Revenez aux exemples quand vous le souhaitez à partir de la page d’accueil des tableaux de bord.
 
-### <a name="power-bi-samples"></a>Exemples de Power BI
-Vous pouvez afficher et utiliser les exemples de tableau de bord Power BI, mais vous ne pouvez pas effectuer certaines opérations avec eux. Vous ne pouvez pas ouvrir les rapports associés aux tableaux de bord, partager les exemples ou les définir comme favoris.
+### <a name="power-bi-samples"></a>Exemples Power BI
+Vous pouvez afficher et interagir avec les exemples de tableaux de bord Power BI. Toutefois, il y a certaines opérations que vous ne pourrez pas effectuer. Vous ne pouvez pas ouvrir les rapports associés aux tableaux de bord, partager les exemples ou les définir comme favoris.
 
 1. Appuyez sur le bouton de navigation globale ![Bouton de navigation globale](././media/mobile-windows-10-phone-app-get-started/power-bi-windows-10-navigation-icon.png) en haut à gauche.
 2. Appuyez sur l’icône **Paramètres**  ![icône Paramètres](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-settings-icon.png), sur votre nom, puis sur **Afficher des exemples**.
@@ -92,7 +92,7 @@ Dans les applications mobiles Power BI, vos tableaux de bord et rapports sont st
 ![Navigation gauche dans Power BI](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Afficher vos tableaux de bord, indicateurs de performances clés et rapports favoris
-Vous pouvez afficher l’ensemble de vos tableaux de bord Power BI favoris, ainsi que les rapports mobiles et indicateurs de performance clés Reporting Services dans la page Favoris des applications mobiles. Quand vous mettez un tableau de bord en *favoris* dans l’application mobile Power BI, vous pouvez y accéder à partir de tous les appareils, y compris dans le service Power BI dans votre navigateur. 
+Affichez l’ensemble de vos tableaux de bord Power BI favoris, ainsi que les rapports mobiles et indicateurs de performance clés Reporting Services dans la page Favoris des applications mobiles. Quand vous mettez un tableau de bord en *favoris* dans l’application mobile Power BI, vous pouvez y accéder à partir de tous les appareils, y compris dans le service Power BI dans votre navigateur. 
 
 * Appuyez sur **Favoris**.
   

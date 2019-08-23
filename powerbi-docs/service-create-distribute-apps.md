@@ -6,23 +6,23 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eccda071b6c6abc92640024c3587bafa71038dee
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: ed3a65e25694c23e1852a554742e0f8a6e6ff668
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826610"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530584"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publier une application dans Power BI
 
-Dans Power BI, vous pouvez créer du contenu empaqueté officiel, puis le distribuer à un large public sous forme d’*application*. Vous créez des applications dans des *espaces de travail d’application*, où vous pouvez collaborer sur du contenu Power BI avec vos collègues. Vous pouvez ensuite publier les applications terminées auprès de grands groupes de personnes dans votre organisation. 
+Dans Power BI, vous pouvez créer du contenu empaqueté officiel, puis le distribuer à un large public sous forme d’*application*. Vous créez des applications dans des *espaces de travail*, où vous pouvez collaborer sur du contenu Power BI avec vos collègues. Vous pouvez ensuite publier les applications terminées auprès de grands groupes de personnes dans votre organisation. 
 
 ![Applications Power BI](media/service-create-distribute-apps/power-bi-new-apps.png)
 
-Vos utilisateurs en entreprise ont souvent besoin de plusieurs tableaux de bord et rapports Power BI pour effectuer leur travail. Avec les applications Power BI, vous pouvez créer des collections de tableaux de bord et de rapports et publier ces applications pour toute votre organisation ou pour des personnes ou groupes spécifiques. Pour vous, en tant que créateur de rapports ou en tant qu’administrateur, les applications facilitent la gestion des autorisations sur ces collections.
+Vos utilisateurs en entreprise ont souvent besoin de plusieurs tableaux de bord et rapports Power BI pour effectuer leur travail. Avec les applications Power BI, vous pouvez créer des collections de tableaux de bord et de rapports et publier ces collections sous forme d’applications pour toute votre organisation ou pour des personnes ou groupes spécifiques. Pour vous, en tant que créateur de rapports ou en tant qu’administrateur, les applications facilitent la gestion des autorisations sur ces collections.
 
 Les utilisateurs en entreprise obtiennent vos applications de différentes manières :
 
@@ -30,13 +30,13 @@ Les utilisateurs en entreprise obtiennent vos applications de différentes mani�
 - Vous pouvez leur envoyer un lien direct.
 - Vous pouvez l’installer automatiquement dans les comptes Power BI de vos collègues si l’administrateur Power BI vous y autorise.
 
-Vous pouvez créer l’application avec sa propre navigation intégrée afin de permettre à vos utilisateurs d’explorer facilement votre contenu. Ils ne peuvent pas modifier le contenu de l’application. Ils peuvent interagir avec lui dans le service Power BI ou dans l’une des applications mobiles, en filtrant, en mettant en surbrillance et en triant eux-mêmes les données. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Pour en savoir plus, voir l’[expérience d’application pour les utilisateurs professionnels](consumer/end-user-apps.md).
+Vous pouvez créer l’application avec sa propre navigation intégrée afin de permettre à vos utilisateurs d’explorer facilement votre contenu. Ils ne peuvent pas modifier le contenu de l’application. Ils peuvent interagir avec lui dans le service Power BI ou dans l’une des applications mobiles, en filtrant, en mettant en surbrillance et en triant eux-mêmes les données. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Vous pouvez aussi leur attribuer des autorisations de génération pour se connecter aux jeux de données sous-jacents et créer des copies des rapports dans l’application. Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
 ## <a name="licenses-for-apps"></a>Licences pour des applications
 Pour créer ou mettre à jour une application, vous devez être titulaire d’une licence Power BI Pro. Pour les *consommateurs* d’une application, il existe deux options.
 
-* Option 1 : Tous les utilisateurs professionnels ont besoin de licences **Power BI Pro** pour consulter votre application. 
-* Option 2 : Si votre espace de travail d’application se trouve dans une capacité Power BI Premium, les utilisateurs gratuits de votre organisation peuvent consulter le contenu de l’application. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
+* **Option 1** L’espace de travail de cette application *ne se trouve pas* dans une capacité Power BI Premium : tous les utilisateurs professionnels ont besoin de licences Power BI Pro pour voir votre application. 
+* **Option 2** L’espace de travail de cette application *se trouve* dans une capacité Power BI Premium : les utilisateurs professionnels de votre organisation dépourvus d’une licence Power BI Pro peuvent consulter le contenu de l’application. En revanche, ils ne peuvent ni copier ni créer de rapports basés sur les jeux de données sous-jacents. Pour plus de détails, consultez [Qu’est-ce que Power BI Premium ?](service-premium.md).
 
 ## <a name="publish-your-app"></a>Publier votre application
 Quand les tableaux de bord et rapports de votre espace de travail sont prêts, vous choisissez les tableaux de bord et les rapports que vous voulez publier, puis vous les publiez en tant qu’application. 
@@ -51,27 +51,25 @@ Quand les tableaux de bord et rapports de votre espace de travail sont prêts, v
 
 2. En haut à droite, sélectionnez le bouton **Publier l’application** pour démarrer le processus de création et de publication d’une application à partir de cet espace de travail.
    
-     ![Publier l’application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
+     ![Publier l'application](media/service-create-distribute-apps/power-bi-apps-publish-button.png)
 
 3. Dans **Configurer**, remplissez le nom et la description pour aider les utilisateurs à trouver l’application. Vous pouvez définir une couleur de thème pour personnaliser cette dernière. Vous pouvez également ajouter un lien vers un site de support.
    
      ![Générer votre application](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
-4. Sur **Navigation**, vous sélectionnez le contenu à publier comme partie de l’application. Vous ajoutez ensuite la navigation d’application afin d’organiser le contenu dans des sections. Pour plus d’informations, consultez [Concevoir l’expérience de navigation pour votre application](#design-the-navigation-experience-for-your-app) dans cet article.
+4. Sur **Navigation**, vous sélectionnez le contenu à publier comme partie de l’application. Vous ajoutez ensuite la navigation d’application afin d’organiser le contenu dans des sections. Pour plus d’informations, consultez [Concevoir l’expérience de navigation pour votre application](#design-the-navigation-experience) dans cet article.
    
      ![Navigation dans l’application](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 5. Sur **Autorisations**, déterminez qui a accès à l’application, et ce que leurs utilisateurs peuvent faire avec elle. 
     - Dans [Espaces de travail classiques](service-create-workspaces.md) : tout le monde dans votre organisation, des personnes spécifiques ou des groupes de sécurité Azure Active Directory (AAD).
     - Dans les [espaces de travail de nouvelle expérience](service-create-the-new-workspaces.md) : des personnes spécifiques, des listes de distribution et des groupes de sécurité AAD, ainsi que des groupes Office 365. Tous les utilisateurs de l’espace de travail ont automatiquement accès à l’application pour cet espace de travail.
-    - Vous pouvez autoriser les utilisateurs d’applications à se connecter aux jeux de données sous-jacents de l’application à l’aide de l’autorisation de génération. Ces jeux de données figureront dans les expériences de recherche des jeux de données.
-    - Vous pouvez autoriser les utilisateurs d’applications à créer une copie des rapports de cette application dans leur espace Mon espace de travail. 
+    - Vous pouvez autoriser les utilisateurs de l’application à se connecter aux jeux de données sous-jacents de l’application en leur attribuant l’autorisation de génération. Ils pourront ainsi voir ces jeux de données quand ils rechercheront des jeux de données partagés. Vous trouverez dans cet article des informations supplémentaires sur la façon d’[autoriser les utilisateurs à se connecter aux jeux de données de l’application](#allow-users-to-connect-to-datasets).
+    - Les utilisateurs disposant d’une autorisation de génération peuvent aussi être autorisés à copier les rapports de cette application vers un autre espace de travail. Vous trouverez dans cet article des informations supplémentaires sur la façon d’[autoriser les utilisateurs à copier des rapports dans l’application](#allow-users-to-copy-reports).
     
     >[!IMPORTANT]
     >Si votre application repose sur des jeux de données provenant d’autres espaces de travail, il vous appartient de vérifier que tous les utilisateurs de l’application ont accès aux jeux de données sous-jacents.
-> 
->     
-
+    >
 
 6. Vous pouvez installer l’application automatiquement pour les destinataires, si votre administrateur Power BI a activé ce paramètre pour vous dans le portail d’administration Power BI. D’autres informations sur l’[installation automatique d’une application](#automatically-install-apps-for-end-users) sont disponibles dans cet article.
 
@@ -84,26 +82,26 @@ Quand les tableaux de bord et rapports de votre espace de travail sont prêts, v
 Vous pouvez envoyer ce lien direct aux personnes avec lesquelles vous avez partagé votre application, ou les destinataires de celles-ci peuvent la trouver sous l’onglet Applications en accédant à **Télécharger et explorer d’autres applications depuis AppSource**. Pour en savoir plus, voir l’[expérience d’application pour les utilisateurs professionnels](consumer/end-user-apps.md).
 
 ## <a name="change-your-published-app"></a>Modifier votre application publiée
-Une fois votre application publiée, il se peut que vous souhaitiez la modifier ou la mettre à jour. Il est facile de la mettre à jour si vous êtes administrateur ou membre du nouvel espace de travail d’application. 
+Une fois votre application publiée, il se peut que vous souhaitiez la modifier ou la mettre à jour. Il est facile de la mettre à jour si vous êtes administrateur ou membre du nouvel espace de travail. 
 
-1. Ouvrez l’espace de travail d’application correspondant à l’application. 
+1. Ouvrez l’espace de travail qui correspond à l’application. 
    
      ![Ouvrir l’espace de travail](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Apportez les changements souhaités aux tableaux de bord ou aux rapports.
  
-     L’espace de travail d’application étant votre zone intermédiaire, vos modifications ne sont pas visibles dans l’application tant que vous ne la republiez pas. Cela vous permet d’apporter des modifications sans affecter les applications publiées.  
+     L’espace de travail étant votre zone intermédiaire, vos modifications ne sont pas visibles dans l’application tant que vous ne la republiez pas. Cela vous permet d’apporter des modifications sans affecter les applications publiées.  
  
     > [!IMPORTANT]
     > Si vous supprimez un rapport et que vous mettez à jour l’application, même si vous rajoutez le rapport à l’application, les consommateurs de votre application perdent toutes les personnalisations comme les signets, les commentaires, etc.  
  
-3. Revenez à la liste de contenu de l’espace de travail de l’application, puis sélectionnez **Mettre à jour l’application** en haut à droite.
+3. Revenez à la liste de contenu de l’espace de travail, puis sélectionnez **Mettre à jour l’application** en haut à droite.
    
 1. Si nécessaire, mettez à jour **Configuration**, **Navigation** et **Autorisations**, puis sélectionnez **Mettre à jour l’application**.
    
 Les personnes pour lesquelles vous avez publié l’application voient automatiquement la version mise à jour de celle-ci. 
 
-## <a name="design-the-navigation-experience-for-your-app"></a>Concevoir l’expérience de navigation pour votre application
+## <a name="design-the-navigation-experience"></a>Concevoir l’expérience de navigation
 L’option **Nouveau générateur de navigation** vous permet de générer une navigation personnalisée pour votre application. La navigation personnalisée permet à vos utilisateurs de rechercher et d’utiliser plus facilement le contenu de l’application. Cette option est désactivée pour les applications existantes et elle est activée par défaut pour les nouvelles applications.
 
 Quand l’option est désactivée, vous pouvez sélectionner la **Page d’arrivée de l’application** pour qu’elle affiche du **Contenu spécifique**, par exemple un tableau de bord ou un rapport, ou sélectionner **Aucun** pour afficher la liste de contenu de base à l’utilisateur.
@@ -156,31 +154,36 @@ Voici quelques points à garder à l’esprit quand vous envoyez (push) des appl
 
 * Si les utilisateurs ne voient pas immédiatement l’application dans la liste Applications, ils doivent actualiser leur navigateur, ou le fermer et le rouvrir.
 
-* Évitez de surcharger les utilisateurs. Ne poussez pas trop d’applications pour laisser la possibilité aux utilisateurs de se rendre compte de l’utilité des applications préinstallées. Il est préférable de contrôler qui peut pousser des applications pour les utilisateurs finaux afin de coordonner la planification. Mettez en place dans votre organisation un point de contact pour obtenir les applications envoyées (par push) aux utilisateurs finaux.
+* Évitez de surcharger les utilisateurs. Ne poussez pas trop d’applications pour laisser la possibilité aux utilisateurs d’apprécier l’utilité des applications préinstallées. Il est préférable de contrôler qui peut pousser des applications pour les utilisateurs finaux afin de coordonner la planification. Mettez en place dans votre organisation un point de contact pour obtenir les applications envoyées (par push) aux utilisateurs finaux.
 
 * Les applications ne sont pas installées automatiquement pour les utilisateurs invités qui n’ont pas accepté l’invitation.  
 
-## <a name="allowing-users-to-connect-to-the-apps-underlying-datasets"></a>Autoriser les utilisateurs à se connecter aux jeux de données sous-jacents de l’application
-En cochant l’option permettant à tous les utilisateurs de se connecter aux jeux de données sous-jacents de l’application, les utilisateurs de l’application reçoivent l’autorisation de génération sur le jeu de données sous-jacent. Cela permet aux utilisateurs d’[utiliser les jeux de données d’application dans les espaces de travail](service-datasets-across-workspaces.md) pour rechercher ces jeux de données dans Power BI Desktop et les expériences d’obtention de données du service, et de créer des rapports et des tableaux de bord utilisant ces jeux de données. 
+## <a name="allow-users-to-connect-to-datasets"></a>Autoriser les utilisateurs à se connecter aux jeux de données
 
-Quand vous décochez cette option, les nouveaux utilisateurs que vous ajoutez à l’application ne reçoivent plus l’autorisation de génération. Cependant, les autorisations existantes sur les jeux de données sous-jacents ne changent pas. Vous pouvez utiliser l’interface utilisateur fournie pour supprimer manuellement l’autorisation de génération des utilisateurs de l’application qui ne doivent plus en bénéficier. Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Quand vous cochez l’option permettant d’**autoriser les utilisateurs à se connecter aux jeux de données sous-jacents de l'application**, vous accordez aux utilisateurs de l’application une *autorisation de génération* sur ces jeux de données. Avec cette autorisation, ils peuvent effectuer plusieurs actions clés :
 
-## <a name="allowing-users-to-make-a-copy-of-the-reports-in-the-app"></a>Autoriser les utilisateurs à faire une copie des rapports dans l’application
-En cochant l’option **Autorisez les utilisateurs à effectuer une copie des rapports dans cette application**, vous autorisez les utilisateurs à enregistrer n’importe quel rapport de l’application dans leur espace Mon espace de travail. Ils peuvent ensuite personnaliser les rapports en fonction de leurs besoins spécifiques. Cette option nécessite l’activation de l’option **Autorisez tous les utilisateurs à se connecter aux jeux de données sous-jacents de l’application à l’aide de l’autorisation de génération**. Cette fonctionnalité se comporte comme la nouvelle fonctionnalité de [copie de rapports à partir d’autres espaces de travail](service-datasets-copy-reports.md).
+- [Se servir des jeux de données de l’application](service-datasets-across-workspaces.md) de base de leurs rapports.
+- Rechercher ces jeux de données dans Power BI Desktop et dans l’expérience d’obtention de données du service Power BI.
+- Créer des rapports et des tableaux de bord basés sur ces jeux de données.
+
+Quand vous décochez cette option, les nouveaux utilisateurs que vous ajoutez à l’application n’obtiennent pas l’autorisation de génération. En revanche, pour les utilisateurs existants de l’application, les autorisations sur les jeux de données sous-jacents ne changent pas. Vous pouvez retirer manuellement l’autorisation de génération aux utilisateurs de l’application qui ne doivent plus en bénéficier. Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+
+## <a name="allow-users-to-copy-reports"></a>Autoriser les utilisateurs à copier des rapports
+
+Quand vous cochez l’option permettant d’**autoriser les utilisateurs à effectuer une copie des rapports dans cette application**, vos utilisateurs peuvent enregistrer n’importe quel rapport de l’application dans leur espace Mon espace de travail ou dans un autre espace de travail. Pour effectuer une copie, les utilisateurs ont besoin d’une licence Pro, même si le rapport d’origine se trouve dans un espace de travail relevant d’une capacité Premium. Ils peuvent ensuite personnaliser les rapports en fonction de leurs besoins spécifiques. Vous devez d’abord sélectionner l’option **Autorisez tous les utilisateurs à se connecter aux jeux de données sous-jacents de l’application à l’aide de l’autorisation de génération**. En sélectionnant ces options, vous activez la nouvelle fonctionnalité permettant de [copier des rapports à partir d’autres espaces de travail](service-datasets-copy-reports.md).
 
 ## <a name="unpublish-an-app"></a>Annuler la publication d’une application
-Tout membre d’un espace de travail d’application peut annuler la publication de l’application.
+Tout membre d’un espace de travail peut annuler la publication de l’application.
 
 >[!IMPORTANT]
 >Lorsque vous annulez la publication d’une application, les utilisateurs de l’application perdent leurs personnalisations. Ils perdent tous les signets personnels, commentaires ou abonnements associés au contenu de l’application. N’annulez la publication d’une application que si vous devez la supprimer.
 > 
-> 
 
-* Dans un espace de travail d’application, sélectionnez les points de suspension ( **...** ) dans l’angle supérieur droit > **Annuler la publication d’application**.
+* Dans un espace de travail, sélectionnez les points de suspension ( **...** ) dans l’angle supérieur droit > **Annuler la publication d’application**.
   
      ![Annuler la publication de l’application](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
-Cette action désinstalle l’application pour toutes les personnes pour lesquelles vous l’avez publiée, qui cessent d’y avoir accès. Elle ne supprime ni l’espace de travail d’application ni son contenu.
+Cette action désinstalle l’application pour toutes les personnes pour lesquelles vous l’avez publiée, qui cessent d’y avoir accès. Elle ne supprime ni l’espace de travail ni son contenu.
 
 ## <a name="view-your-published-app"></a>Afficher votre application publiée
 
@@ -189,7 +192,7 @@ Quand les consommateurs de votre application ouvrent cette dernière, ils voient
 ![Application avec navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Créer un espace de travail d’application](service-create-workspaces.md)
+* [Créer un espace de travail](service-create-workspaces.md)
 * [Installer et utiliser des applications dans Power BI](consumer/end-user-apps.md)
 * [Applications Power BI pour des services externes](service-connect-to-services.md)
 * [Portail d’administration Power BI](https://docs.microsoft.com/power-bi/service-admin-portal)

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222256"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561059"
 ---
 # <a name="conditional-formatting-in-tables"></a>Mise en forme conditionnelle dans les tables 
 Avec la mise en forme conditionnelle des tables, vous pouvez spécifier des couleurs de cellule personnalisées en fonction des valeurs des cellules, ou en fonction d’autres valeurs ou champs, et notamment utiliser des couleurs de dégradé. Vous pouvez également afficher les valeurs des cellules avec des barres de données. 
@@ -130,11 +130,17 @@ Vous pouvez alors obtenir des résultats comme la matrice suivante.
 
 Vous pouvez créer de nombreuses autres variations, avec simplement votre imagination et un peu de code DAX.
 
-Vous pouvez utiliser une des valeurs répertoriées dans les spécifications de couleur CSS sur [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) à vos éléments visuels de couleur :
-* 3, 6 ou 8 hex digit codes, par exemple #3E4AFF. Veillez à qu'inclure le symbole # au début du code. « 3E4AFF » n’est pas accepté. 
-* Par exemple, RGBA (234, 234, 234, 0,5) les valeurs RVB ou RVBA
-* TSL ou HSLA valeurs, par exemple HSLA (123, 75 %, 75 %, 0,5)
-* Par exemple, vert, bleu ciel, PeachPuff des noms de couleur 
+Vous pouvez utiliser n’importe quelle valeur listée dans les spécifications des couleurs de CSS [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) pour colorer vos visuels :
+* des codes hexadécimaux sur 3, 6 ou 8 chiffres, par exemple #3E4AFF. Veillez à inclure le symbole # au début du code. « 3E4AFF » n’est pas accepté. 
+* des valeurs RVB ou RVBA, par exemple RVBA(234, 234, 234, 0.5)
+* des valeurs HSL ou HSLA, par exemple HSLA(123, 75%, 75%, 0.5)
+* des noms de couleur, par exemple Green, SkyBlue, PeachPuff 
+
+## <a name="considerations-and-limitations"></a>Considérations et limitations
+Voici quelques éléments à prendre en considération quand vous utilisez la mis en forme conditionnelle de tableau :
+
+* La mise en forme conditionnelle est appliquée seulement aux valeurs d'un visuel **Matrice** et ne s’applique à aucun sous-total ni aucun total général. 
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations, consultez l’article suivant :  

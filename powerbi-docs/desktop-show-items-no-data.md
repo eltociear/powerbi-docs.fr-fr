@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 637a6476af6368fae2bcfed8d89aeb9f43276a6b
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61370465"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560834"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Afficher les éléments sans données dans Power BI
 
@@ -25,7 +25,7 @@ Power BI permet de visualiser toutes sortes de données provenant de diverses so
 
 ## <a name="determining-relevant-data"></a>Déterminer quelles données sont pertinentes
 
-Pour comprendre comment Power BI détermine quelles données il est pertinent d’afficher, prenons l’exemple simple d’une table. Suivant le modèle représenté dans la section des exemples, à la fin de cet article, créez une table avec les paramètres suivants :
+Pour comprendre comment Power BI détermine quelles données il est pertinent d’afficher, prenons l’exemple simple d’une table. En utilisant le modèle représenté dans la section [exemple de modèle de données](#example-data-model) qui se trouve à la fin de cet article, envisagez de créer une table avec les paramètres suivants :
 
 **1. Groupes issus de la même table :** *Product[Color] – Product[Size]*
 
@@ -130,7 +130,7 @@ Avec la fonctionnalité **Afficher les éléments sans données** :
 |Gloss     |Blue         |10         |
 |Gloss     |Red         |         |
 |Matte     |Blue         |15         |
-|None     |         |         |
+|Aucune     |         |         |
 
 Les combinaisons *(Gloss-Red)* et *(None, vide)* sont apparues. En voici la raison :
 * Power BI a d’abord considéré ProductStyle[Finish] et sélectionné toutes les valeurs à afficher, ce qui a donné Gloss, Matte, None.
@@ -152,6 +152,25 @@ Avec la fonctionnalité **Afficher les éléments sans données** :
 |Red     |Gloss         |         |
 
 Dans ce cas, *ProductStyle[Finish]=None* n’apparaît pas dans la table. En effet, Power BI a commencé par sélectionner toutes les valeurs *Color* de la table *Product*. Puis, pour chaque couleur, Power BI a sélectionné les valeurs *Finish* correspondantes qui contenaient des données. Comme *None* n’apparaît dans aucune combinaison de *Color*, il n’est pas sélectionné.
+
+
+## <a name="power-bi-visual-behavior"></a>Comportement visuel de Power BI
+
+Quand l’option **Afficher les éléments sans données** est activée sur un champ de visuel, la fonctionnalité est activée automatiquement pour tous les autres champs qui se trouvent dans le même *compartiment* ou la même hiérarchie du visuel. Le compartiment ou la hiérarchie peut être l’**Axe** , la **Légende** , la **Catégorie**, les **Lignes** ou les **Colonnes** d’un visuel.
+
+![Champs pour l’axe et la légende](media/desktop-show-items-no-data/show-items-no-data-04.png)
+
+Par exemple, sur un visuel Matrice ayant quatre champs dans le compartiment **Lignes**, si l’option **Afficher les éléments sans données** est activée pour un champ, elle l’est pour tous les éléments de la matrice. Dans l’image suivante, l’option **Afficher les éléments sans données** est activée pour le premier champ du compartiment **Lignes**, à savoir le champ*SupplierID*. Elle est aussi activée automatiquement pour les autres champs du compartiment **Lignes**.
+
+![L’option Afficher les éléments sans données est automatiquement activée pour les champs contenus dans le même visuel](media/desktop-show-items-no-data/show-items-no-data-05.png)
+
+En revanche, l’option **Afficher les éléments sans données** *n’est pas* activée automatiquement pour le champ *Continent* du compartiment **Colonnes**. 
+
+Ce comportement visuel est souvent observé quand un visuel est converti dans un type différent, par exemple, du type Matrice au type Table. À l’occasion de ces conversions, l’option **Afficher les éléments sans données** est automatiquement activée pour les champs qui sont déplacés dans un compartiment où la fonctionnalité est activée pour un de ses champs. Dans l’exemple précédent, si la fonctionnalité **Afficher les éléments sans données** est activée pour *SupplierID* et que le visuel est converti en table, le champ *Continent* du compartiment **Colonnes** est déplacé (avec les champs du compartiment **Lignes**) dans le seul compartiment utilisé dans un visuel de table – le compartiment **Valeurs**. De ce fait, **Afficher les éléments sans données** est activé pour tous les champs du compartiment **Valeurs**.
+
+### <a name="exporting-data"></a>Exportation de données
+
+Quand la fonctionnalité **Exporter des données récapitulatives** est utilisée, le comportement de la fonctionnalité **Afficher les éléments sans données** est le même que si l’exportation était convertie en visuel Table. Ainsi, quand un visuel de type Matrice graphique est exporté, une différence peut être notée entre les données exportées et le visuel affiché. Cela est dû au fait que la conversion en visuel Table active **Afficher les éléments sans données** pour tous les champs exportés pendant le processus d’exportation. 
 
 ## <a name="example-data-model"></a>Exemple de modèle de données
 
@@ -181,7 +200,7 @@ Cette section montre l’exemple de modèle de données utilisé dans les exempl
 |---------|---------|---------|
 |1  |Gloss  |Oui |
 |2  |Matte  |Non |
-|3  |None   |Non |
+|3  |Aucune   |Non |
 
 
 |Sales[SaleId]| Sales[ProductId]|   Sales[Date]|    Sales[Quantity]|

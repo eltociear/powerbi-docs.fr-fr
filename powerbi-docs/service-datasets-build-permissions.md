@@ -1,5 +1,5 @@
 ---
-title: Créer et partager des jeux de données (préversion) - Power BI
+title: Partager un jeu de données (préversion)
 description: En tant que propriétaire de jeu de données, vous pouvez créer et partager vos jeux de données afin que d’autres utilisateurs puissent les utiliser. Découvrez comment vous pouvez garder le contrôle de qui peut accéder aux données à l’aide de l’autorisation de génération.
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 22339b3d5062c01b3795086eede24ed6a8e7d7e7
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461761"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530515"
 ---
-# <a name="create-and-share-datasets-preview"></a>Créer et partager des jeux de données (préversion)
+# <a name="share-a-dataset-preview"></a>Partager un jeu de données (préversion)
 
 En tant que créateur de *modèles de données* dans Power BI Desktop, vous pouvez les partager en tant que *jeux de données* dans le service Power BI. Les créateurs de rapports peuvent alors facilement découvrir et réutiliser les jeux de données que vous avez partagés. Découvrez comment les partager et comment contrôler qui peut accéder aux données à l’aide de l’autorisation de génération.
 
@@ -31,7 +31,7 @@ En tant que créateur de *modèles de données* dans Power BI Desktop, vous pou
     
     Les autres membres de cet espace de travail peuvent déjà créer des rapports dans d’autres espaces de travail basés sur ce jeu de données.
 
-1. Maintenant, vous pouvez [créer une application](service-create-distribute-apps.md) à partir de cet espace de travail. Dans ce cas, dans la page **Autorisations**, vous spécifiez qui dispose d’autorisations et ce qu’ils peuvent faire.
+1. Vous pouvez également [publier une application](service-create-distribute-apps.md) à partir de cet espace de travail. Dans ce cas, dans la page **Autorisations**, vous spécifiez qui dispose d’autorisations et ce qu’ils peuvent faire.
 
     > [!NOTE]
     > Si vous sélectionnez **Organisation entière**, personne dans l’organisation ne disposera d’autorisations de génération. Ce problème est déjà connu. Au lieu de cela, spécifiez des adresses e-mail dans **Individus ou groupes spécifiques**.  Si vous voulez que l’ensemble de votre organisation dispose d’autorisations de génération, spécifiez un alias d’e-mail pour toute l’organisation.
@@ -46,6 +46,8 @@ Le type d’autorisation de génération concerne uniquement les jeux de donnée
 
 Les utilisateurs obtiennent l’autorisation de génération de différentes façons :
 
+- Si vous êtes membre d’un espace de travail et disposez au moins du rôle Contributeur, vous disposez automatiquement de l’autorisation de création d’un jeu de données, ainsi que de l’autorisation de copier un rapport.
+ 
 - Un membre de l’espace de travail où se trouve le jeu de données peut attribuer l’autorisation à des utilisateurs ou des groupes de sécurité spécifiques dans le Centre des autorisations. Sélectionnez les points de suspension (...) en regard d’un jeu de données > **Gérer les autorisations**.
 
     ![Sélectionner les points de suspension](media/service-datasets-build-permissions/power-bi-dataset-manage-permissions.png)
@@ -54,13 +56,13 @@ Les utilisateurs obtiennent l’autorisation de génération de différentes fa�
 
     ![Centre des autorisations](media/service-datasets-build-permissions/power-bi-dataset-permissions.png)
 
-- Un administrateur ou un membre de l’espace de travail où se trouve le jeu de données peut décider, pendant la publication de l’application, que les utilisateurs autorisés à accéder à l’application reçoivent également des autorisations de génération pour les jeux de données sous-jacents. Pour plus d’informations, consultez [Procédure à suivre pour partager votre jeu de données](#steps-to-sharing-your-dataset).
+- Un administrateur ou un membre de l’espace de travail où se trouve le jeu de données peut décider, pendant la publication de l’application, que les utilisateurs autorisés à accéder à l’application reçoivent également des autorisations de génération pour les jeux de données sous-jacents. Pour plus d’informations, consultez [Procédure à suivre pour partager votre jeu de données](#steps-to-sharing-your-dataset) dans cet article.
 
 - Imaginons que vous disposez d’autorisations de repartage et de génération sur un jeu de données. Quand vous partagez un rapport ou un tableau de bord reposant sur ce jeu de données, vous pouvez spécifier que les destinataires obtiennent également l’autorisation de génération pour le jeu de données sous-jacent.
 
     ![Autorisations de génération](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
 
-Vous pouvez supprimer les autorisations de génération des utilisateurs pour un jeu de données. Dans ce cas, ils peuvent toujours voir le rapport généré sur le jeu de données partagé, mais ils ne peuvent plus le modifier.
+Vous pouvez supprimer les autorisations de création dont disposent un utilisateur pour un jeu de données. Dans ce cas, ils peuvent toujours voir le rapport généré sur le jeu de données partagé, mais ils ne peuvent plus le modifier.
 
 ## <a name="more-granular-permissions"></a>Autorisations plus granulaires
 

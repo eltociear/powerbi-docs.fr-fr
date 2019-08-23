@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2019
+ms.date: 08/15/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 30552ee407460856fd1548073f0b3046ab508115
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567494"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530548"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Superviser les métriques d’utilisation de tableaux de bord et de rapports Power BI
 
@@ -41,20 +41,7 @@ Vous pouvez exécuter des rapports de métriques d’utilisation seulement dans 
 - Pour accéder à ces métriques d’utilisation pour un tableau de bord ou un rapport spécifique, vous devez disposer d’un accès en modification à ce tableau de bord ou à ce rapport.
 - Votre administrateur Power BI doit avoir activé les métriques d’utilisation pour les créateurs de contenu. Vous administrateur Power BI peut aussi avoir activé la collecte des données par utilisateur dans les métriques d’utilisation. Pour plus d’informations, consultez [Activer ces options dans le portail d’administration](service-admin-portal.md#control-usage-metrics). 
 
-## <a name="about-the-usage-metrics-report"></a>À propos du rapport Métriques d’utilisation
-
-Quand vous sélectionnez **Métriques d’utilisation** ou l’icône ![Icône de métriques d’utilisation](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) en regard d’un tableau de bord ou d’un rapport, Power BI génère un rapport prédéfini avec des métriques d’utilisation relatives à ce contenu pour les 90 derniers jours.  Ce rapport est très similaire aux rapports Power BI que vous connaissez déjà. Vous pouvez le segmenter en fonction de la façon dont vos utilisateurs finaux ont reçu leur accès, et s’ils ont accédé au service via le web ou via une application mobile, etc. À mesure que vos tableaux de bord et vos rapports évoluent, votre rapport de métriques d’utilisation évolue lui aussi et se met à jour quotidiennement avec de nouvelles données.  
-
-Les rapports de métriques d’utilisation ne s’affichent pas dans les listes **Récents**, **Espaces de travail**, **Favoris**, ni dans d’autres listes de contenu. Vous ne pouvez pas les ajouter à une application. Si vous épinglez une vignette du rapport sur les mesures d’utilisation à un tableau de bord, vous ne pouvez pas ajouter ce tableau de bord à une application.
-
-Pour explorer les données du rapport ou pour créer vos propres rapports sur le jeu de données sous-jacent, vous avez deux options : 
-
-- Faire une copie du rapport dans le service Power BI. Pour plus d’informations, consultez [Enregistrer une copie du rapport de métriques d’utilisation](#save-a-copy-of-the-usage-metrics-report) plus loin dans cet article.
-- Vous connecter au jeu de données depuis Power BI Desktop. Pour plus d’informations, consultez [Établir une connexion à un jeu de données publié](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
-
-    ![Se connecter à un jeu de données de rapport d’utilisation](media/service-usage-metrics/power-bi-usage-dataset.png)
-
-## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Ouvrir un rapport Métriques d’utilisation pour un tableau de bord ou un rapport
+## <a name="view-a-usage-metrics-report"></a>Afficher un rapport Métriques d’utilisation
 
 1. Commencez dans l’espace de travail contenant le tableau de bord ou le rapport.
 2. Dans la liste du contenu de l’espace de travail ou dans le tableau de bord ou le rapport, sélectionnez l’icône des **Métriques d’utilisation** ![icône des métriques d’utilisation](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png).
@@ -82,6 +69,18 @@ Pour explorer les données du rapport ou pour créer vos propres rapports sur le
 
 ![Rapport Métriques d’utilisation du rapport](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
+## <a name="about-the-usage-metrics-report"></a>À propos du rapport Métriques d’utilisation
+
+Quand vous sélectionnez **Métriques d’utilisation** ou l’icône ![Icône de métriques d’utilisation](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) en regard d’un tableau de bord ou d’un rapport, Power BI génère un rapport prédéfini avec des métriques d’utilisation relatives à ce contenu pour les 90 derniers jours.  Ce rapport est très similaire aux rapports Power BI que vous connaissez déjà. Vous pouvez le segmenter en fonction de la façon dont vos utilisateurs finaux ont reçu leur accès, et s’ils ont accédé au service via le web ou via une application mobile, etc. À mesure que vos tableaux de bord et vos rapports évoluent, votre rapport de métriques d’utilisation évolue lui aussi et se met à jour quotidiennement avec de nouvelles données.  
+
+Les rapports de métriques d’utilisation ne s’affichent pas dans les listes **Récents**, **Espaces de travail**, **Favoris**, ni dans d’autres listes de contenu. Vous ne pouvez pas les ajouter à une application. Si vous épinglez une vignette du rapport sur les mesures d’utilisation à un tableau de bord, vous ne pouvez pas ajouter ce tableau de bord à une application.
+
+Pour explorer les données du rapport ou pour créer vos propres rapports sur le jeu de données sous-jacent, vous avez deux options : 
+
+- Faire une copie du rapport dans le service Power BI. Pour plus d’informations, consultez [Enregistrer une copie du rapport de métriques d’utilisation](#save-a-copy-of-the-usage-metrics-report) plus loin dans cet article.
+- Vous connecter au jeu de données depuis Power BI Desktop. Pour chaque espace de travail, le jeu de données porte le nom de « Report Usage Metrics Model » (Modèle de métriques d’utilisation du rapport). Pour plus d’informations, consultez [Établir une connexion à un jeu de données publié](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
+
+    ![Se connecter à un jeu de données de rapport d’utilisation](media/service-usage-metrics/power-bi-usage-dataset.png)
 
 ## <a name="which-metrics-are-reported"></a>Métriques figurant dans le rapport
 
@@ -105,7 +104,7 @@ Pour explorer les données du rapport ou pour créer vos propres rapports sur le
 
 Utilisez **Enregistrer sous** pour convertir le rapport de métriques d’utilisation en rapport Power BI standard, que vous pouvez personnaliser pour répondre à vos besoins spécifiques. Vous pouvez aussi utiliser Power BI Desktop pour générer des rapports de métriques d’utilisation personnalisés basés sur le jeu de données sous-jacent. Pour plus d’informations, consultez [Établir une connexion à un jeu de données publié](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
 
-Mieux encore, le jeu de données sous-jacent comprend les détails d’utilisation de tous les tableaux de bord ou rapports dans l’espace de travail. Ceci ouvre plus de possibilités. Vous pouvez par exemple créer un rapport qui compare tous les tableaux de bord de votre espace de travail en fonction de leur utilisation. Vous pouvez aussi créer un tableau de bord des métriques d’utilisation pour votre application Power BI en agrégeant l’utilisation de tout le contenu distribué au sein de cette application.  Consultez [Supprimer le filtre de niveau page ](#remove-the-filter-to-see-all-workspace-usage-metrics) plus loin dans cet article.
+Mieux encore, le jeu de données sous-jacent comprend les détails d’utilisation de tous les tableaux de bord ou rapports dans l’espace de travail. Ceci ouvre plus de possibilités. Vous pouvez par exemple créer un rapport qui compare tous les tableaux de bord de votre espace de travail en fonction de leur utilisation. Vous pouvez aussi créer un tableau de bord des métriques d’utilisation pour votre application Power BI en agrégeant l’utilisation de tout le contenu distribué au sein de cette application.  Vous verrez comment supprimer le filtre et [afficher toutes les métriques d’utilisation de l’espace de travail](#see-all-workspace-usage-metrics) plus loin dans cet article.
 
 ### <a name="create-a-copy-of-the-usage-report"></a>Créer une copie du rapport d’utilisation
 
@@ -121,7 +120,7 @@ Quand vous créez une copie du rapport d’utilisation prédéfini en lecture se
 
     ![Onglet Rapports](media/service-usage-metrics/power-bi-new-report.png)
 
-## <a name="remove-the-filter-to-see-all-workspace-usage-metrics"></a>Supprimer le filtre pour voir *toutes* les métriques d’utilisation de l’espace de travail
+## <a name="see-all-workspace-usage-metrics"></a>Afficher *toutes* les métriques d’utilisation de l’espace de travail
 
 Pour voir les métriques pour tous les tableaux de bord ou tous les rapports de l’espace de travail, vous devez supprimer un filtre. Par défaut, le rapport est filtré pour afficher seulement les métriques du tableau de bord ou du rapport qui a été utilisé pour le créer.
 
@@ -169,7 +168,7 @@ Outre les différences potentielles entre les journaux d’audit et les métriqu
 
 **Q :**    Les métriques d’utilisation capturent-elles des vues de tableaux de bord et de rapports incorporés ?
 
-**R :**    Actuellement, les métriques d’utilisation ne prennent pas en charge la capture de l’utilisation des tableaux de bord et des rapports incorporés, ni du flux [Publier sur le web](service-publish-to-web.md).          Dans ce cas, nous vous recommandons d’utiliser des plateformes Web Analytics existantes pour effectuer le suivi de l’utilisation de l’application ou du portail d’hébergement.
+**R :**    Les métriques d’utilisation ne prennent pas en charge la capture de l’utilisation des tableaux de bord et des rapports incorporés, ni celle du flux [Publier sur le web](service-publish-to-web.md). Dans ce cas, nous vous recommandons d’utiliser des plateformes Web Analytics existantes pour effectuer le suivi de l’utilisation de l’application ou du portail d’hébergement.
 
 **Q :**    Je ne parviens à lancer les métriques d’utilisation sur aucun contenu.
 

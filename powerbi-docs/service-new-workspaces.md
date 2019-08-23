@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418671"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530506"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -36,7 +36,7 @@ Avec les nouveaux espaces de travail, vous pouvez :
 Quand vous créez un des nouveaux espaces de travail, vous ne créez pas de groupe Office 365 associé sous-jacent. Toute l’administration des espaces de travail se fait dans Power BI et non pas dans Office 365. Dans la nouvelle expérience d’espace de travail, vous pouvez ajouter un groupe Office 365 à la liste d’accès de l’espace de travail pour continuer à gérer l’accès des utilisateurs au contenu via des groupes Office 365.
 
 ## <a name="administering-new-workspace-experience-workspaces"></a>Gérer des espaces de travail (nouvelle expérience d’espace de travail)
-L’administration de la nouvelle expérience d’espace de travail se trouve à présent dans Power BI, les administrateurs Power BI choisissent quels membres de l’organisation peuvent créer des espaces de travail. Ils peuvent également gérer et restaurer les espaces de travail. Pour cela, qu'ils doivent utiliser le portail d’administration Power BI ou les cmdlets PowerShell. Pour les espaces de travail classiques basés sur les groupes Office 365, l’administration continue à se produire dans le portail d’administration Office 365 et Azure Active Directory.
+L’administration de la nouvelle expérience d’espace de travail se trouve à présent dans Power BI, les administrateurs Power BI choisissent quels membres de l’organisation peuvent créer des espaces de travail. Ils peuvent également gérer et récupérer des espaces de travail à l’aide du portail d’administration Power BI ou des applets de commande PowerShell. Pour les espaces de travail classiques basés sur les groupes Office 365, l’administration continue à se produire dans le portail d’administration Office 365 et Azure Active Directory.
 
 Dans **Paramètres de l’espace de travail** dans le portail d’administration, les administrateurs peuvent utiliser le paramètre Créer des espaces de travail (nouvelle expérience d’espace de travail) pour autoriser tout le monde ou personne au sein d’une organisation à créer des espaces de travail de la nouvelle expérience d’espace de travail. Il peuvent également limiter la création aux membres de groupes de sécurité spécifiques.
 
@@ -59,9 +59,9 @@ Pour accorder l’accès à un nouvel espace de travail, ajoutez des groupes d�
 
 Les rôles vous permettent de gérer qui peut faire quoi dans un espace de travail, ce qui permet aux équipes de collaborer. Les nouveaux espaces de travail vous permettent d’affecter des rôles à des personnes individuelles et à des groupes d’utilisateurs : groupes de sécurité, groupes Office 365 et listes de distribution. 
 
-Quand vous affectez des rôles à un groupe d’utilisateurs, les personnes individuelles du groupe ont accès au contenu. Si vous imbriquez des groupes d’utilisateurs, tous les utilisateurs qui en font partie ont les autorisations associées. Un utilisateur qui est dans plusieurs groupes d’utilisateurs ayant des rôles différents reçoit le niveau d’autorisation le plus élevé qui leur est accordé. 
+Quand vous affectez des rôles à un groupe d’utilisateurs, les personnes individuelles du groupe ont accès au contenu. Si vous imbriquez des groupes d’utilisateurs, tous les utilisateurs qui en font partie ont les autorisations associées.
 
-Les nouveaux espaces de travail offrent quatre rôles : administrateurs, membres, collaborateurs et lecteurs.
+Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs.
 
 |Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Lecteur |
 |---|---|---|---|---|
@@ -74,23 +74,26 @@ Les nouveaux espaces de travail offrent quatre rôles : administrateurs, membres
 | Créer, modifier et supprimer du contenu dans l’espace de travail.  |  X | X  | X  |   |
 | Publier des rapports sur l’espace de travail, supprimer du contenu.  |  X | X  | X  |   |
 | Afficher un élément. |  X | X  | X  | X  |
- 
+| Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail. |  X | X  | X  | X <sup>1</sup>  |
+| Copier un rapport. | X | X | X | X <sup>1</sup> |
+
+**1** Nécessite une licence Power BI Pro et une [autorisation de création pour les jeux de données](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  
 ## <a name="licensing"></a>Licensing
 Toutes les personnes que vous ajoutez à un espace de travail dans la capacité partagée doivent avoir une licence Power BI Pro. Dans l’espace de travail, ces utilisateurs peuvent collaborer sur des tableaux de bord et des rapports que vous prévoyez de publier pour un public plus large, ou même pour votre organisation tout entière. 
 
 Si vous voulez distribuer du contenu à d’autres utilisateurs au sein de votre organisation, vous pouvez leur attribuer des licences Power BI Pro ou placer l’espace de travail dans une capacité Power BI Premium.
 
-Lorsque l’espace de travail se trouve dans une capacité Power BI Premium, les utilisateurs avec le rôle Lecteur peuvent accéder l’espace de travail même s’ils n’ont pas de licence Power BI Pro. Toutefois, si vous attribuez à ces utilisateurs un rôle supérieur comme Administrateur, Membre ou Collaborateur, ils ne pourront pas accéder à l’espace de travail. Ils seront invités à démarrer une version d’évaluation Pro lorsqu’ils tenteront d’accéder à l’espace de travail. Pour tirer parti du rôle Lecteur pour les utilisateurs sans licences Pro, vérifiez que les utilisateurs avec le rôle Lecteur n’ont pas d’autres rôles dans l’espace de travail, individuellement ou via un groupe d’utilisateurs. 
+Lorsque l’espace de travail se trouve dans une capacité Power BI Premium, les utilisateurs avec le rôle Lecteur peuvent accéder l’espace de travail même s’ils n’ont pas de licence Power BI Pro. Toutefois, si vous attribuez à ces utilisateurs un rôle supérieur comme Administrateur, Membre ou Contributeur, ils seront invités à lancer la version d’essai de Power BI Pro pour accéder à l’espace de travail. Pour tirer parti du rôle Lecteur pour les utilisateurs sans licences Pro, vérifiez que les utilisateurs avec le rôle Lecteur n’ont pas d’autres rôles dans l’espace de travail, individuellement ou via un groupe d’utilisateurs. 
 
 > [!NOTE]
-> La publication de rapports dans la nouvelle expérience d’espace de travail est soumise à une application plus stricte des règles de gestion des licences existantes. Les utilisateurs qui tentent de publier à partir de Power BI Desktop ou d’autres outils clients sans licence Pro voient l’erreur « Seuls les utilisateurs avec des licences Power BI Pro peuvent publier sur cet espace de travail. »
+> La publication de rapports dans la nouvelle expérience d’espace de travail est soumise à une application plus stricte des règles de gestion des licences existantes. Les utilisateurs qui tentent de publier à partir de Power BI Desktop ou d’autres outils clients sans licence Pro voient l’erreur « Seuls les utilisateurs avec des licences Power BI Pro peuvent publier sur cet espace de travail ».
 
-## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>En quoi les nouveaux espaces de travail diffèrent-ils des espaces de travail actuels ?
+## <a name="how-the-new-workspaces-are-different"></a>Différences entre les anciens et les nouveaux espaces de travail
 
-Avec les nouveaux espaces de travail, nous proposons une nouvelle conception de certaines fonctionnalités. Voici les modifications que vous pouvez considérer comme définitives. 
+Dans les nouveaux espaces de travail, certaines fonctionnalités ont été repensées. Voici les modifications que vous pouvez considérer comme définitives. 
 
-* La création de ces espaces de travail ne crée pas de groupes Office 365 comme les espaces de travail classiques. Toutefois, vous pouvez maintenant utiliser un groupe Office 365 pour donner aux utilisateurs l’accès à votre espace de travail en lui attribuant un rôle. 
+* La création de ces espaces de travail ne crée pas de groupes Office 365 comme le font les espaces de travail classiques. Toutefois, vous pouvez maintenant utiliser un groupe Office 365 pour donner aux utilisateurs l’accès à votre espace de travail en lui attribuant un rôle. 
 * Dans les espaces de travail classiques, vous pouvez seulement ajouter des personnes individuelles aux listes de membres et d’administrateurs. Dans les nouveaux espaces de travail, vous pouvez ajouter plusieurs groupes de sécurité Active Directory, des listes de distribution ou des groupes Office 365 à ces listes, ce qui facilite la gestion des utilisateurs. 
 - Vous pouvez créer un pack de contenu d’organisation à partir d’un espace de travail classique. Vous ne pouvez pas en créer un à partir des nouveaux espaces de travail.
 - Vous pouvez consommer un pack de contenu d’organisation à partir d’un espace de travail classique. Vous ne pouvez pas en consommer un à partir des nouveaux espaces de travail.
