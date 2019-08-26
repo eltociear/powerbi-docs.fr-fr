@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757609"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654779"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec **Power BI Desktop**, lorsque vous vous connectez à votre source de données, vous pouvez toujours importer une copie des données dans **Power BI Desktop**. Pour certaines sources de données, une autre approche consiste à se connecter directement à la source de données à l’aide de **DirectQuery**.
@@ -49,10 +49,13 @@ Il existe quelques avantages à l’utilisation de **DirectQuery** :
 Il existe actuellement quelques limitations à l’utilisation de **DirectQuery**:
 
 * Toutes les tables doivent venir d’une seule base de données, à moins d’utiliser des [modèles composites](desktop-composite-models.md)
+
 * Si la requête de l’**Éditeur de requête** est trop complexe, une erreur se produit. Pour corriger cette erreur, vous devez soit supprimer l’étape problématique dans l’**Éditeur de requête**, soit *Importer* les données au lieu d’utiliser **DirectQuery**. Pour des sources multidimensionnelles telles que SAP Business Warehouse, aucun **Éditeur de requête** n’est disponible.
-* Le filtrage de la relation est limité à un seul sens, au lieu de s’étendre aux deux (bien qu’il soit possible d’activer un filtrage croisé dans les deux sens pour **DirectQuery**). Pour des sources multidimensionnelles telles que SAP Business Warehouse, aucune relation n’est définie dans le modèle.
+
 * **DirectQuery**n’intègre pas de fonctionnalités de Time Intelligence. Par exemple, le mode **DirectQuery** ne prend pas en charge le traitement spécial des colonnes de date (année, trimestre, mois, jour, etc.).
+
 * Des limitations sont imposées aux expressions DAX autorisées dans les mesures pour garantir des performances acceptables aux requêtes envoyées à la source de données sous-jacente.
+
 * Le retour de données est limité à un million de lignes lors de l’utilisation de **DirectQuery**. Cette limite a une incidence sur les lignes retournées, mais pas sur les agrégations ou les calculs utilisés pour créer le jeu de données retourné à l’aide de **DirectQuery**. Par exemple, vous pouvez agréger 10 millions de lignes avec la requête qui s’exécute sur la source de données et renvoyer avec précision les résultats de cette agrégation à Power BI à l’aide de **DirectQuery** tant que les données renvoyées à Power BI représentent moins de 1 million de lignes. Si plus de 1 million de lignes est renvoyé par **DirectQuery**, Power BI renvoie une erreur.
 
 ## <a name="important-considerations-when-using-directquery"></a>Considérations importantes concernant l’utilisation de DirectQuery

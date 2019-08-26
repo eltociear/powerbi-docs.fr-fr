@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/25/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bea8b954cb1c0743745ef6d3bf9d48aa8513f2fe
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 436040f11534ede9d2e42e4f939d24a19e3d1c24
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624043"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655165"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales
 
@@ -192,7 +192,7 @@ Comme vous comprenez maintenant comment fonctionne Kerberos avec une passerelle,
 1. Téléchargez CommonCryptoLib (sapcrypto.dll) (version **8.5.25 ou ultérieure**) à partir de SAP Launchpad, puis copiez-le dans un dossier sur votre machine passerelle. Dans le même répertoire que celui où vous avez copié sapcrypto.dll, créez un fichier nommé sapcrypto.ini, avec le contenu suivant :
 
     ```
-    ccl/snc/enable\_kerberos\_in\_client\_role = 1
+    ccl/snc/enable_kerberos_in_client_role = 1
     ```
 
     Le fichier .ini contient les informations de configuration requises par CommonCryptoLib pour activer l’authentification unique dans le scénario de passerelle.
@@ -242,7 +242,7 @@ Si vous ne parvenez pas à actualiser le rapport dans le service Power BI, vous 
 
     ```
     ccl/trace/level=5
-    ccl/trace/directory=\\<drive\\>:\logs\sectrace
+    ccl/trace/directory=<drive>:\logs\sectrace
     ```
 
     Veillez à définir l’option _ccl/trace/directory_ sur un emplacement dans lequel les membres du groupe des utilisateurs authentifiés peuvent écrire. Vous pouvez également créer un nouveau fichier .ini pour modifier ce comportement. Dans le même répertoire que les fichiers sapcrypto.dll et sapcrypto.ini, créez un fichier nommé sectrace.ini, avec le contenu suivant.  Remplacez l’option DIRECTORY par un emplacement sur votre machine sur lequel l’utilisateur authentifié peut écrire :
@@ -250,7 +250,7 @@ Si vous ne parvenez pas à actualiser le rapport dans le service Power BI, vous 
     ```
     LEVEL = 5
     
-    DIRECTORY = \\<drive\\>:\logs\sectrace
+    DIRECTORY = <drive>:\logs\sectrace
     ```
 
     À présent, reproduisez le problème et vérifiez que l’emplacement désigné par DIRECTORY contient des fichiers de trace. Lorsque vous avez terminé, veillez à désactiver CPIC et le traçage CCL.
