@@ -324,7 +324,7 @@ Les clients qui utilisent déjà la solution **Collection d’espaces de travail
 
 ### <a name="in-what-regions-can-i-create-a-pbi-workspace-collection"></a>Dans quelles régions peut-on créer des collections d’espaces de travail PBI ?
 
-Les régions disponibles sont les suivantes : Australie Sud-Est, Brésil Sud, Canada Centre, USA Ouest, USA Est 2, Europe Ouest, Europe Nord, Inde Ouest, Japon Est, USA Centre Nord, Royaume-Uni Sud, Brésil Sud, USA Centre Sud, Asie Sud-Est et Australie Sud-Est.
+Les régions disponibles sont les suivantes : Canada Centre, USA Ouest, USA Est 2, Europe Ouest, Europe Nord, Inde Ouest, Japon Est, USA Centre Nord, Royaume-Uni Sud, Brésil Sud, USA Centre Sud, Asie Sud-Est et Australie Sud-Est.
 
 ### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Pourquoi migrer d’une collection d’espaces de travail PBI vers Power BI Embedded ?
 
