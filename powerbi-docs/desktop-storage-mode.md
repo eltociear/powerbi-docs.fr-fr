@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f84e2f95c8ae209828eb1c21f34253015e07aefa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61363708"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654727"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Mode de stockage dans Power BI Desktop
 
@@ -62,6 +62,10 @@ Il existe trois valeurs pour le mode de stockage :
 * **Double** : Les tables doubles peuvent agir comme mises en cache ou non mises en cache, selon le contexte de la requête envoyée au jeu de données Power BI. Dans certains cas, vous répondez aux requêtes à partir des données mises en cache. Dans d’autres cas, vous répondez aux requêtes en exécutant une requête à la demande à la source de données.
 
 Le fait de modifier une table sur le paramètre **Importer** est une opération *irréversible*. Cette propriété ne peut pas être remodifiée en DirectQuery ou Double.
+
+> [!NOTE]
+> Vous pouvez utiliser le mode de stockage *Double* dans Power BI Desktop et dans le service Power BI.
+
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>Contraintes sur les tables DirectQuery et Double
 

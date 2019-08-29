@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7b3a59ae8926ce5e302cfcdecec617d1f3fd107b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f40ed1b3950ace0b3cb362a22670e98c3ef83112
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513874"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985681"
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>Utiliser SAP HANA dans Power BI Desktop
 Avec Power BI Desktop, vous pouvez désormais accéder aux bases de données **SAP HANA** . Pour utiliser **SAP HANA**, le pilote ODBC de HANA SAP doit être installé sur l’ordinateur client local pour que la connexion de données **SAP HANA** de Power BI Desktop fonctionne correctement. Vous pouvez télécharger le pilote ODBC de SAP HANA à partir du [centre de téléchargement des logiciels SAP](https://support.sap.com/swdc). À partir de là, recherchez SAP HANA CLIENT pour les ordinateurs Windows. Étant donné que le **Centre de téléchargement de logiciels SAP** modifie sa structure fréquemment, des informations plus spécifiques sur la navigation dans ce site ne sont pas disponibles.
@@ -36,10 +36,13 @@ Cette version comporte de nombreuses fonctionnalités pour **SAP HANA**, comme i
 
 * Le connecteur Power BI pour **SAP HANA** utilise le pilote ODBC de SAP pour offrir la meilleure expérience utilisateur.
 * **SAP HANA** prend en charge les options DirectQuery et Importer.
-* Power BI prend en charge les modèles d’informations HANA (comme les vues d’analyse et de calcul) et il a un mode de navigation optimisé.
+* Power BI prend en charge les modèles d’informations HANA (comme les vues analytiques et de calcul) et il a un mode de navigation optimisé
 * Avec **SAP HANA**, vous pouvez également utiliser la fonctionnalité SQL direct pour la connexion aux tables Row et Column.
 * Comprend la navigation améliorée pour les modèles HANA
 * Power BI prend en charge les variables et paramètres d’entrée **SAP HANA** .
+* Vues de calcul basées sur un conteneur HDI
+  * La prise en charge des vues de calcul basées sur un conteneur HDI est en préversion publique dans la version d’août 2019 de Power BI Desktop. Pour accéder à vos vues de calcul basées sur un conteneur HDI dans Power BI, assurez-vous que le ou les utilisateurs de base de données HANA que vous utilisez avec Power BI ont l’autorisation d’accéder au conteneur d’exécution HDI qui stocke les vues auxquelles vous souhaitez accéder. Pour accorder cet accès, vous devez créer un rôle qui autorise l’accès à votre conteneur HDI et attribuer le rôle à l’utilisateur de base de données HANA que vous allez utiliser avec Power BI (cet utilisateur doit également avoir l’autorisation de lire les tables système dans le schéma \_SYS\_BI, comme d’habitude). Pour obtenir des instructions détaillées sur la création et l’affectation des rôles de base de données, consultez la documentation SAP officielle. [Ce billet de blog SAP](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblogs.sap.com%2F2018%2F01%2F24%2Fthe-easy-way-to-make-your-hdi-container-accessible-to-a-classic-database-user%2F&data=02%7C01%7Cv-adbold%40microsoft.com%7Cf7e0a405fe334598ba0608d7096ef5b4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636988244476739316&sdata=PuRu61GPRYp34mLuGbQk6gdbRikdgbxfqo8q1RBQtm0%3D&reserved=0) peut être un bon point de départ.
+  * Notez qu’il existe actuellement des limitations pour les variables HANA associées à des vues de calcul basées sur HDI. Ces limitations sont dues à des erreurs du côté HANA et seront traitées dans les futures versions de SAP HANA. Premièrement, il n’est pas possible d’appliquer une variable HANA à une colonne partagée d’une vue de calcul basée sur un conteneur HDI. Cette limitation peut être corrigée en effectuant une mise à niveau vers HANA 2 versions 37.02 et ultérieures ou HANA 2 versions 42 et ultérieures. Deuxièmement, les valeurs par défaut à plusieurs entrées pour les variables et les paramètres ne sont pas affichées dans l’interface utilisateur Power BI. Cela est également dû à une erreur dans SAP HANA, mais SAP n’a pas encore annoncé de correctif.
 
 ## <a name="limitations-of-sap-hana"></a>Limitations de SAP HANA
 Il existe également quelques limitations à l’utilisation de **SAP HANA**, indiquées ci-dessous :
@@ -51,9 +54,11 @@ Il existe également quelques limitations à l’utilisation de **SAP HANA**, in
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations sur DirectQuery, consultez les ressources suivantes :
+Pour plus d’informations sur DirectQuery et SAP HANA, consultez les ressources suivantes :
 
 * [DirectQuery et SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery](desktop-directquery-data-sources.md)
+* [Activer le chiffrement pour SAP HANA](desktop-sap-hana-encryption.md)
+
 

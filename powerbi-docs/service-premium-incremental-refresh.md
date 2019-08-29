@@ -7,25 +7,24 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/21/2019
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: c743f56de101cb63db2357acf869aba80162c181
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.openlocfilehash: 4f3c709c0ea699c0c9ad7ebee61889e6c7bceef8
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559025"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985763"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Actualisation incrémentielle dans Power BI Premium
 
 L’actualisation incrémentielle permet d’utiliser des jeux de données très volumineux dans le service Power BI Premium, en offrant les avantages suivants :
 
-- **Actualisations plus rapides** : Seules les données qui ont changé ont besoin d’être actualisées. Par exemple, vous pouvez actualiser uniquement les données des cinq derniers jours dans un jeu de données de dix ans.
-
-- **Actualisations plus fiables** : Il n’est plus nécessaire de maintenir des connexions à long terme à des systèmes sources volatiles.
-
-- **Consommation réduite des ressources** : Comme il y a moins de données à actualiser, la consommation globale de mémoire et d’autres ressources diminue.
+> [!div class="checklist"]
+> * **Actualisations plus rapides** : Seules les données qui ont changé ont besoin d’être actualisées. Par exemple, vous pouvez actualiser uniquement les données des cinq derniers jours dans un jeu de données de dix ans.
+> * **Actualisations plus fiables** : Il n’est plus nécessaire de maintenir des connexions à long terme à des systèmes sources volatiles.
+> * **Consommation réduite des ressources** : Comme il y a moins de données à actualiser, la consommation globale de mémoire et d’autres ressources diminue.
 
 ## <a name="configure-incremental-refresh"></a>Configurer une actualisation incrémentielle
 
@@ -51,9 +50,13 @@ Une fois que vous avez défini les paramètres, vous pouvez appliquer le filtre 
 
 ![Filtre personnalisé](media/service-premium-incremental-refresh/custom-filter.png)
 
-Vérifiez que les lignes sont filtrées quand la valeur de colonne *est postérieure ou égale à* **RangeStart** et *antérieure* à **RangeEnd**.
+Vérifiez que les lignes sont filtrées quand la valeur de colonne *est postérieure ou égale à* **RangeStart** et *antérieure* à **RangeEnd**. D’autres combinaisons de filtres peuvent entraîner un double comptage des lignes.
 
 ![Filtrer les lignes](media/service-premium-incremental-refresh/filter-rows.png)
+
+> [!IMPORTANT]
+> Vérifiez que les requêtes présentent un signe égal (=) sur **RangeStart** ou **RangeEnd**, mais pas les deux. Si le signe égal (=) figure sur les deux paramètres, une ligne peut satisfaire aux conditions de deux partitions, ce qui peut entraîner des données en double dans le modèle. Par exemple :  
+> \#"Filtered Rows" = Table.SelectRows(dbo_Fact, each [OrderDate] **>= RangeStart** and [OrderDate] **<= RangeEnd**) peut entraîner des données en double.
 
 > [!TIP]
 > Les paramètres doivent avoir le type de données date/heure, mais ils peuvent être convertis pour répondre aux exigences de la source de données. Par exemple, la fonction Power Query suivante convertit une valeur date/heure en une valeur similaire à une clé de substitution de type entier au format *aaaammjj*, ce qui est courant pour les entrepôts de données. La fonction peut être appelée à l’étape du filtre.
@@ -152,7 +155,7 @@ Vous pouvez désormais actualiser le modèle. La première actualisation peut ê
 
 L’article sur la [résolution des problèmes d’actualisation](https://docs.microsoft.com/power-bi/refresh-troubleshooting-refresh-scenarios) explique que les opérations d’actualisation dans le service Power BI sont soumises à des délais d’expiration. Les requêtes peuvent également être limitées par le délai d’expiration par défaut pour la source de données. La plupart des sources relationnelles permettent d’ignorer les délais d’expiration dans l’expression M. Par exemple, l’expression ci-dessous utilise la [fonction d’accès aux données de SQL Server](https://msdn.microsoft.com/query-bi/m/sql-database) pour définir le délai à deux heures. Chaque période définie par les plages de la stratégie soumet une requête qui respecte le paramètre de délai d’expiration de la commande.
 
-```
+```powerquery-m
 let
     Source = Sql.Database("myserver.database.windows.net", "AdventureWorks", [CommandTimeout=#duration(0, 2, 0, 0)]),
     dbo_Fact = Source{[Schema="dbo",Item="FactInternetSales"]}[Data],
@@ -164,3 +167,4 @@ in
 ## <a name="limitations"></a>Limites
 
 Pour les [modèles composites](desktop-composite-models.md), l’actualisation incrémentielle est actuellement prise en charge pour les sources de données SQL Server, Azure SQL Database, SQL Data Warehouse, Oracle et Teradata uniquement.
+

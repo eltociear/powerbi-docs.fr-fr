@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 05/30/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d6c9eb47d5f88a2d835c1ba6835e871b0c64bf1c
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 0e12d110708c955e0c63e11f7578523222375448
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324765"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654990"
 ---
 # <a name="what-is-power-bi"></a>Qu’est-ce que Power BI ?
 **Power BI** est un ensemble de services logiciels, d’applications et de connecteurs qui œuvrent ensemble pour transformer des sources de données disparates en informations visuelles immersives et interactives. Vos données peuvent être sous forme de feuille de calcul Excel ou de collection d’entrepôts de données hybrides locaux ou sur le cloud. Power BI vous permet de vous connecter facilement à vos sources de données, de visualiser et de découvrir ce qui est important, et de partager ces informations avec qui vous voulez.
@@ -25,11 +25,11 @@ Power BI est simple et rapide, et peut créer rapidement des insights à partir
 
 ## <a name="the-parts-of-power-bi"></a>Composants de Power BI
 Power BI se compose des éléments suivants : 
-- Une application de poste de travail Windows appelée **Power BI Desktop**
-- Un service SaaS en ligne (*Software as a service*) appelé le **service Power BI** 
-- Des **applications mobiles** Power BI pour des appareils Windows, iOS et Android
+- Une application de bureau Windows appelée **Power BI Desktop**.
+- Un service SaaS (*Software as a Service*) en ligne appelé **service Power BI**. 
+- Des **applications mobiles** Power BI pour des appareils Windows, iOS et Android.
 
-![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-blocks.png)
+![Power BI Desktop, service, mobile](media/power-bi-overview/power-bi-overview-blocks.png)
 
 Ces trois éléments (Power BI Desktop, le service et les applications mobiles) ont été conçus pour permettre à leurs utilisateurs de créer, partager et consommer de façon optimale des insights métier, en fonction de leurs besoins ou de leur rôle.
 

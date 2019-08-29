@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 08/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 747ff7788ce30f5d4f61c48cc70a737bc74cd612
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565380"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654289"
 ---
 # <a name="power-bi-premium-faq"></a>FAQ Power BI Premium
 
@@ -76,9 +76,9 @@ Power BI Premium est disponible en tant que module complémentaire pour Power�
 
 **Qu’est-ce que Power BI Report Server ? Cela signifie-t-il que Power BI est disponible sur site ?**
 
-Power BI Report Server est un serveur local qui permet le déploiement et la distribution de rapports Power BI interactifs et de rapports paginés complètement dans les limites du pare-feu de l’organisation. Power BI Report Server est disponible via Power BI Premium ou en tant qu’avantage pour les clients ayant acquis SQL Server Édition Entreprise avec Software Assurance. Contactez votre fournisseur Microsoft pour plus de détails.
+Power BI Report Server est un serveur local qui permet le déploiement et la distribution de rapports Power BI interactifs et de rapports paginés complètement dans les limites du pare-feu de l’organisation. Power BI Report Server est disponible via Power BI Premium ou en tant qu’avantage pour les clients ayant acquis SQL Server Édition Entreprise avec Software Assurance. Pour plus d’informations sur les licences, consultez [Gestion des licences Power BI Report Server](report-server/get-started.md#licensing-power-bi-report-server). Contactez votre fournisseur Microsoft pour plus de détails.
 
-Avec Power BI Premium, il est possible de déployer localement autant de cœurs virtuels qu’une organisation en provisionne dans le cloud par le biais de Power BI Report Server. Il n’est pas nécessaire de diviser la capacité. Les organisations peuvent choisir Power BI dans le cloud ou conserver les rapports localement avec Power BI Report Server et migrer vers le cloud à leur rythme.
+Avec Power BI Premium, il est possible de déployer localement autant de cœurs virtuels qu’une organisation en provisionne dans le cloud par le biais de Power BI Report Server. Il n’est pas nécessaire de diviser la capacité. Les organisations peuvent choisir Power BI dans le cloud ou conserver les rapports localement avec Power BI Report Server et migrer vers le cloud à leur rythme.
 
 Pour plus d’informations, voir [Prise en main de Power BI Report Server](report-server/get-started.md).
 

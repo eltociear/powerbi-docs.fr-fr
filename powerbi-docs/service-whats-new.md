@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/28/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 06ba5835a568b7158a204ea6676e92844d40414d
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 7d45b63d3cd97185ce9be9e0592565a491cf195f
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375259"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655027"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nouveautés dans le service Power BI
 Consultez cette page pour obtenir des informations sur les problèmes connus et les nouvelles fonctionnalités du **service Power BI**. Pour plus d’informations sur les nouveautés, consultez :
@@ -32,30 +32,30 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 
 ## <a name="may-2019"></a>Mai 2019
 * [Navigation personnalisée](service-create-distribute-apps.md) pour les applications Power BI.
-* Les pièces jointes supplémentaires types (PPTX, XLSX, DOCX, CSV, XML) disponibles pour les abonnements de messagerie dans les rapports paginés.
+* Types de pièces jointes supplémentaires (PPTX, XLSX, DOCX, CSV, XML) disponibles pour les abonnements par e-mail dans les rapports paginés.
 
 ## <a name="previous-months-2019"></a>Mois précédents (2019)
 ### <a name="april-2019"></a>Avril 2019
-* Disponibilité générale de Power BI [flux de données](service-dataflows-overview.md).
-* Disponibilité générale de la nouvelle expérience d’espaces de travail.
-* Nouvelles régions Power BI en France et en Corée.
-* Mise à jour expérience Q & A des tableaux de bord.
-* Prise en charge pour Azure Analysis Services dans [paginés](paginated-reports-report-builder-power-bi.md).
-* Rapports paginés pris en charge dans les applications Power BI.
-* [Abonnements par courrier électronique](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) avec des pièces jointes PDF pour les rapports paginés.
-* Power BI Premium résumé et la charge de travail des mesures prises en charge dans le portail d’administration
-* [La mise en cache de requête](power-bi-query-caching.md) disponibles dans Power BI Premium.
-* Disponibilité générale de [Power BI accueil](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
+* Disponibilité générale des [dataflows](service-dataflows-overview.md) Power BI.
+* Disponibilité générale de la nouvelle expérience des espaces de travail.
+* Nouvelles régions Power BI en France et en Corée.
+* Expérience Questions et réponses mise à jour pour les tableaux de bord.
+* Prise en charge d’Azure Analysis Services dans les [rapports paginés](paginated-reports-report-builder-power-bi.md).
+* Rapports paginés pris en charge dans les applications Power BI.
+* [Abonnements par e-mail](https://powerbi.microsoft.com/en-us/blog/e-mail-subscriptions-for-paginated-reports-is-now-available/) avec des pièces jointes PDF pour les rapports paginés.
+* Métriques de charge de travail et récapitulatif Power BI Premium pris en charge dans le portail d’administration
+* [Mise en cache des requêtes](power-bi-query-caching.md) disponible dans Power BI Premium.
+* Disponibilité générale de l’[accueil Power BI](https://powerbi.microsoft.com/en-us/blog/announcing-power-bi-home-general-availability-ga-roadmap/).
 
 ### <a name="march-2019"></a>Mars 2019
 * Disponibilité générale de Multi-Geo pour Power BI Premium.
 * Modification et gestion de la prise en charge du contenu Power BI pour Azure B2B.
-* Version préliminaire publique en lecture seule [point de terminaison XMLA](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/).
+* Préversion publique du [point de terminaison XMLA](https://powerbi.microsoft.com/en-us/blog/power-bi-open-platform-connectivity-with-xmla-endpoints-public-preview/) en lecture seule.
 
 ### <a name="february-2019"></a>Février 2019
 * Charges de travail et métriques de taille de jeu de données actif dans l’[application de supervision de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 * Exportez au format PDF pour les rapports Power BI.
-* [Abonnements par messagerie électronique à la demande](service-report-subscribe.md).
+* [Abonnements par e-mail à la demande](service-report-subscribe.md).
 * Opérations en bloc dans le portail d’administration.
 * Exportation filtrée pour PPT et PDF.
 * [Paramètres d’aide et support](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) dans le portail d’administration.
@@ -87,8 +87,8 @@ Consultez aussi les chaînes YouTube pour plus d’informations sur les nouveaut
 
 ### <a name="september-2018"></a>Septembre 2018
 * [Commenter les tableaux de bord](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/) dans le service Power BI.
-* Version préliminaire publique de [Power BI accueil et recherche globale](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
-* Possibilité de [surveillance des requêtes](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) dans le [nouvelle application de surveillance de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Préversion publique de la [recherche globale et de l’accueil Power BI](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search/).
+* Possibilité de [superviser des requêtes](https://powerbi.microsoft.com/en-us/blog/query-metrics-available-in-power-bi-premium-capacity-metrics-app/) dans l’[application de supervision de la capacité](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
 
 ### <a name="august-2018"></a>Août 2018
 * [Application de supervision des capacités](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/) pour Power BI Premium.
@@ -257,7 +257,7 @@ Pour plus d’informations, [rendez-vous sur le blog de l’équipe Power BI](h
 
 ***Tableaux de bord***
 
-* Tableaux de bord favoris : pour rendre plus accessibles les tableaux de bord les plus souvent utilisés dans tous les espaces de travail, nous avons ajouté la possibilité de les mettre en favori.
+* Tableaux de bord favoris : Pour vous aider à atteindre les tableaux de bord que vous utilisez le plus souvent, nous avons ajouté la possibilité de mettre en favori ces tableaux de bord, afin de les rendre plus facilement accessibles à partir de tous vos espaces de travail.
 
 ***Analyser dans Excel***
 
@@ -346,11 +346,11 @@ Ce mois-ci, nous avons apporté des modifications aux tableaux de bord, à Quick
 
 * Mode plein écran : impression sans quitter le mode plein écran
 * Mode plein écran : développez vos vignettes pour remplir tout le canevas et supprimer l’espace excédentaire en sélectionnant **Ajuster à la largeur**
-* Utilisez Tile Flow pour aligner automatiquement vos vignettes dans le coin supérieur gauche du canevas.
+* Utilisez le flux de vignette pour aligner automatiquement vos vignettes dans le coin supérieur gauche de la zone de dessin.
 
 ***Quick Insights (Informations rapides)***
 
-* Les analyses de tendances et corrélation ont désormais des courbes de tendance pour le rendre plus facile à voir les modèles dans les données.
+* Les insights de tendances et corrélation proposent désormais des courbes de tendance afin d’identifier plus facilement les modèles dans les données.
 
 ***Q&R***
 
@@ -513,7 +513,7 @@ Pour plus d’informations, y compris une vidéo présentant un grand nombre de 
 * Chargement amélioré des rapports locaux
 * Partage de tableaux de bord directement dans l’espace de travail d’un autre utilisateur
 * Amélioration de l’expérience du connecteur Google Analytics
-* Fermer votre compte Power BI
+* Fermeture de votre compte Power BI
 
 Pour plus d’informations, consultez le [Blog Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/24/power-bi-weekly-service-update-1124.aspx).
 
@@ -623,10 +623,6 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 * La taille de canevas dynamique utilisée par défaut permet d’afficher tous les éléments de rapport dans les dimensions optimales pour la taille de la fenêtre du navigateur. Si vous voulez conserver les proportions ou présenter votre rapport d’une façon différente, vous disposez maintenant de trois nouvelles options : Ajuster à la page, Ajuster à la largeur et Taille actuelle.
 * Nous avons également augmenté la limite du nombre de jeux de données et de rapports autorisé. Vous pouvez maintenant utiliser jusqu’à 200 jeux de données et 200 rapports pour chaque jeu de données dans votre compte Power BI.
 
-**25 août 2015**
-
-* Vous pouvez maintenant utiliser Power BI pour analyser, explorer et [visualiser vos données analytiques Adobe](http://blogs.msdn.com/b/powerbi/archive/2015/08/25/exploring-your-adobe-analytics-data-in-power-bi.aspx). Avec le pack de contenu prêt à l’emploi, vous pouvez rapidement vous connecter à vos données et les exploiter pour obtenir de précieuses informations. Pour en savoir plus, consultez notre [rubrique d’aide sur le pack de contenu Adobe Analytics pour Power BI](service-connect-to-adobe-analytics.md).
-
 **18 août 2015**
 
 * Azure Engagement Mobile est un service d’analyse d’application qui permet aux développeurs de suivre les performances de leur application pour mieux gérer la rétention et l’utilisation de l’application. Avec le [pack de contenu Azure Mobile Engagement pour Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/08/17/monitor-and-analyze-your-azure-mobile-engagement-data-in-power-bi.aspx), vous pouvez rapidement vous connecter à un tableau de bord prêt à l’emploi, à un ensemble de rapports et à un jeu de données organisé pour obtenir de précieuses informations sur le fonctionnement de votre application. Pour en savoir plus, consultez notre [rubrique d’aide sur le pack de contenu Azure Mobile Engagement pour Power BI](service-connect-to-azure-mobile.md).
@@ -680,11 +676,7 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 **16 juin 2015**
 
-* SweetIQ vous permet d’effectuer rapidement le suivi de vos listes locales en fournissant des données d’emplacement et d’analyse issues de votre écosystème de recherche locale. Power BI vous permet de surveiller et d’analyser ces données, à l’aide du [contenu prêt à l’emploi](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) généré à partir de vos données SweetIQ. Pour plus d’informations sur la prise en main, consultez notre [rubrique d’aide](service-connect-to-sweetiq.md) sur le pack de contenu SweetIQ pour Power BI.
-
-**9 juin 2015**
-
-* Power BI vous permet de surveiller et d’explorer les données à l’aide des [API MailChimp](http://blogs.msdn.com/b/powerbi/archive/2015/06/09/user-power-bi-to-monitor-and-visualize-your-mailchimp-data.aspx), offrant ainsi un ensemble de contenus prêts à l’emploi pour votre analyse. Le tableau de bord, les rapports et le jeu de données organisé pour le scénario MailChimp vous permettent d’accéder facilement aux données telles que « Top Campaigns of Total Opens by Day of Week ». Pour plus d’informations sur la prise en main, consultez la [documentation](service-connect-to-mailchimp.md) sur le pack de contenu MailChimp pour Power BI.
+* SweetIQ vous permet d’effectuer facilement le suivi de vos listes locales en fournissant des données d’emplacement et d’analyse issues de votre écosystème de recherche locale. Power BI vous permet de surveiller et d’analyser ces données, à l’aide du [contenu prêt à l’emploi](http://blogs.msdn.com/b/powerbi/archive/2015/06/16/analyze-and-monitor-your-sweetiq-data-with-power-bi.aspx) généré à partir de vos données SweetIQ. Pour plus d’informations sur la prise en main, consultez notre [rubrique d’aide](service-connect-to-sweetiq.md) sur le pack de contenu SweetIQ pour Power BI.
 
 **2 juin 2015**
 
@@ -697,7 +689,6 @@ Pour plus d’informations, consultez notre [blog](http://blogs.msdn.com/b/power
 
 **13 mai 2015**
 
-* Avec la dernière mise à jour apportée à Power BI, vous pouvez maintenant vous connecter aux données enregistrées par l’ **audit SQL Database** , et utiliser un ensemble de rapports prêts à l’emploi et un tableau de bord personnalisé. Ce pack de contenu facilite la détection d’événements suspects, d’une activité inhabituelle et des tendances, à partir d’un jeu de données créé pour votre rapport. Pour en savoir plus, consultez notre [billet de blog](http://blogs.msdn.com/b/powerbi/archive/2015/05/14/monitor-your-azure-sql-database-auditing-activity-with-power-bi.aspx) et notre [documentation](service-connect-to-azure-sql-database-auditing.md).
 * Vous pouvez vous connecter directement aux données stockées dans **Azure SQL Database**. Nous générons les requêtes et les renvoyons à la source de manière dynamique, ce qui vous permet de créer des rapports interactifs directement dans votre base de données. Pour en savoir plus, consultez notre [billet de blog](http://blogs.msdn.com/b/powerbi/archive/2015/05/13/using-power-bi-to-visualize-and-explore-azure-sql-databases.aspx) et notre [documentation](service-azure-sql-database-with-direct-connect.md).
 
 **7 mai 2015**

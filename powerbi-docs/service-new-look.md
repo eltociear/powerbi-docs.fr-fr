@@ -1,5 +1,5 @@
 ---
-title: Parcourir la nouvelle présentation du service Power BI
+title: Nouvelle apparence du service Power BI
 description: Le service Power BI (app.powerbi.com) a une nouvelle présentation. Cet article explique comment parcourir les rapports dans la nouvelle présentation.
 author: maggiesMSFT
 manager: kfile
@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: aa7de324e77b8f2b1c58e558c0814df97d997631
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68471304"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654954"
 ---
-# <a name="navigate-the-new-look-of-the-power-bi-service"></a>Parcourir la nouvelle présentation du service Power BI
+# <a name="the-new-look-of-the-power-bi-service"></a>Nouvelle apparence du service Power BI
 
-La service Power BI a une nouvelle présentation. Nous avons facilité l’affichage des rapports. La nouvelle présentation est une expérience moderne qui est plus simple et qui s’appuie sur votre connaissance des autres produits Microsoft. Dans le service Power BI, nous avons fait du contenu de rapport le focus principal en optant pour un thème de couleur plus clair et en mettant à jour les icônes. Voici une vue d’ensemble des modifications apportées à la nouvelle présentation. Pour plus d’informations, reportez-vous aux sections numérotées :
+Le service Power BI (app.powerbi.com) a une nouvelle apparence qui facilite l’affichage et l’utilisation de vos rapports. La nouvelle présentation est une expérience moderne qui est plus simple et qui s’appuie sur votre connaissance des autres produits Microsoft. Dans le service Power BI, nous avons fait du contenu de rapport le focus principal en optant pour un thème de couleur plus clair et en mettant à jour les icônes. Voici une vue d’ensemble des modifications apportées à la nouvelle présentation. Pour plus d’informations, reportez-vous aux sections numérotées :
 
 ![Vue d’ensemble des modifications de la nouvelle présentation](media/service-new-look/power-bi-new-look-changes.png)
 
@@ -35,7 +35,7 @@ Tout utilisateur du service Power BI peut choisir d’accepter la nouvelle prés
 
 ![Acceptation de la nouvelle présentation](media/service-new-look/power-bi-new-look-off.png)
 
-Si vous devez revenir à l’ancienne présentation, sélectionnez le menu Points de suspension dans le coin supérieur droit.
+Si vous devez revenir à l’ancienne apparence, il vous suffit de le refaire glisser vers **désactivée** ![Nouvelle apparence activée](media/service-new-look/power-bi-new-look-toggle-on.png). Si vous ne voyez pas cette option, sélectionnez le menu des points de suspension dans le coin supérieur droit.
 
 ![Refus de la nouvelle présentation](media/service-new-look/power-bi-new-look-on.png)
 

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/21/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 49a1f02e5aa327c2704b6c2d789934a43b760ad0
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 2d2eb51c5aad44572f1b427248fd85ef19a6306f
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962034"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985693"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -47,43 +47,71 @@ Les charges de travail de requête sont optimisées pour, et limitées par, les 
 
 ### <a name="ai-preview"></a>IA (Préversion)
 
-Outre le paramètre **Mémoire maximale**, la charge de travail d’intelligence artificielle comprend un paramètre supplémentaire, **Autoriser l’utilisation depuis Power BI Desktop**. La valeur par défaut est **Désactivé**. Ce paramètre est réservé pour une utilisation ultérieure et peut ne pas apparaître dans tous les locataires.
+La charge de travail d’intelligence artificielle (IA) vous permet d’utiliser Cognitive Services et Machine Learning automatisé dans Power BI. Utilisez les paramètres suivants pour contrôler le comportement de la charge de travail.
 
-### <a name="datasets-preview"></a>Jeux de données (Préversion)
+| Nom du paramètre | Description |
+|---------------------------------|----------------------------------------|
+| **Mémoire maximale (%)** | Pourcentage maximal de mémoire disponible que les processus IA peuvent utiliser dans une capacité. |
+| **Autoriser l’utilisation depuis Power BI Desktop** | Ce paramètre est réservé pour une utilisation ultérieure et n’apparaît pas dans tous les locataires. |
+| **Autoriser la génération de modèles Machine Learning** | Spécifie si les analystes métier peuvent entraîner, valider et appeler des modèles Machine Learning directement dans Power BI. Pour plus d’informations, consultez [Machine Learning automatisé dans Power BI (préversion)](service-machine-learning-automated.md). |
+| **Activer le parallélisme pour les demandes IA** | Spécifie si les demandes IA peuvent s’exécuter en parallèle. |
+|  |  |
 
-Par défaut, la charge de travail Jeux de données est activée et ne peut pas être désactivée. Cette charge de travail contient un paramètre supplémentaire pour le _point de terminaison XMLA_ et un ensemble de paramètres liés aux performances. Ce paramètre **Point de terminaison XMLA** spécifie que les connexions à partir d’applications clientes respectent l’appartenance au groupe de sécurité définie au niveau de l’espace de travail et au niveau de l’application. Pour plus d’informations, consultez [Se connecter à des jeux de données avec des applications et des outils clients](service-premium-connect-tools.md).
+### <a name="datasets"></a>Jeux de données
 
-Les paramètres liés aux performances sont décrits dans le tableau suivant.
+La charge de travail des jeux de données est activée par défaut et ne peut pas être désactivée. Utilisez les paramètres suivants pour contrôler le comportement de la charge de travail.
 
-| Nom du paramètre | Description | Utilisation |
-|---------------------------------|----------------------------------------|----------------------------------------|
-| **Nombre maximal de lignes intermédiaires** | Nombre maximal de lignes intermédiaires retournées par DirectQuery. La valeur par défaut est définie sur 1 000 000 et la plage autorisée est comprise entre 1 00 000 et 2 147 483 647 | Contrôlez l’impact des rapports qui consomment beaucoup de ressources ou qui sont mal conçus. |
-| **Taille max. du jeu de données hors connexion (Go)** | Taille maximale du jeu de données hors connexion en mémoire. Il s’agit de la taille compressée sur le disque. La valeur par défaut est définie par la référence (SKU) et la plage autorisée est comprise entre 0,1 et 10 Go | Empêchez les créateurs de rapports de publier un jeu de données volumineux qui peut avoir un impact négatif sur la capacité. |
-| **Nombre maximal de lignes de résultat** | Définit le nombre maximal de lignes retournées dans une requête DAX. La valeur par défaut est définie sur -1 (aucune limite) et la plage autorisée est comprise entre 100000 et 2147483647 | Contrôlez l’impact des rapports qui consomment beaucoup de ressources ou qui sont mal conçus. |
-| **Limite de mémoire de requête (%)** | S’applique uniquement aux mesures et aux requêtes DAX. Spécifié en % et limite la quantité de mémoire pouvant être utilisée par des résultats temporaires au cours d’une requête. | Contrôlez l’impact des rapports qui consomment beaucoup de ressources ou qui sont mal conçus. |
-| **Délai d’expiration de la requête (secondes)** | Entier qui définit le délai d’expiration, en secondes, des requêtes. La valeur par défaut est 3 600 secondes (ou 60 minutes). Zéro (0) spécifie qu’aucune requête n’expirera. | Bénéficiez d’un meilleur contrôle des requêtes longues. |
+| Nom du paramètre | Description |
+|---------------------------------|----------------------------------------|
+| **Mémoire maximale (%)** | Pourcentage maximal de mémoire disponible que les jeux de données peuvent utiliser dans une capacité. |
+| **Point de terminaison XMLA** | Spécifie que les connexions à partir d’applications clientes respectent l’appartenance au groupe de sécurité définie au niveau de l’espace de travail et au niveau de l’application. Pour plus d’informations, consultez [Se connecter à des jeux de données avec des applications et des outils clients](service-premium-connect-tools.md). |
+| **Nombre maximal de lignes intermédiaires** | Nombre maximal de lignes intermédiaires retournées par DirectQuery. La valeur par défaut est 1000000 et la plage autorisée est comprise entre 100000 et 2147483647. Utilisez ce paramètre pour contrôler l’impact des rapports qui consomment beaucoup de ressources ou qui sont mal conçus. |
+| **Taille max. du jeu de données hors connexion (Go)** | Taille maximale du jeu de données hors connexion en mémoire. Il s’agit de la taille compressée sur le disque. La valeur par défaut est définie par la référence SKU et la plage autorisée est comprise entre 0,1 et 10 Go. Utilisez ce paramètre pour empêcher les créateurs de rapports de publier un jeu de données volumineux qui peut avoir un impact négatif sur la capacité. |
+| **Nombre maximal de lignes de résultat** | Nombre maximal de lignes retournées dans une requête DAX. La valeur par défaut est -1 (aucune limite) et la plage autorisée est comprise entre 100000 et 2147483647. Utilisez ce paramètre pour contrôler l’impact des rapports qui consomment beaucoup de ressources ou qui sont mal conçus. |
+| **Limite de mémoire de requête (%)** | Pourcentage maximal de mémoire disponible qui peut être utilisé pour des résultats temporaires dans une requête ou une mesure DAX. Utilisez ce paramètre pour contrôler l’impact des rapports qui consomment beaucoup de ressources ou qui sont mal conçus. |
+| **Délai d’expiration de la requête (secondes)** | Durée maximale avant l’expiration d’une requête. La valeur par défaut est 3600 secondes (1 heure). La valeur 0 indique que les requêtes n’expirent pas. Utilisez ce paramètre pour mieux contrôler les requêtes longues. |
 |  |  |  |
 
 ### <a name="dataflows"></a>Dataflows
 
-Outre le paramètre **Mémoire maximale**, la charge de travail Dataflows comprend un paramètre supplémentaire, **Taille du conteneur**. Ce paramètre vous permet d’optimiser les performances de charge de travail de dataflow pour le traitement des dataflows plus complexes et chargés en calcul.
+La charge de travail des dataflows vous permet d’utiliser la préparation des données en libre-service des dataflows pour ingérer, transformer, intégrer et enrichir les données. Utilisez les paramètres suivants pour contrôler le comportement de la charge de travail.
 
-Lors de l’actualisation d’un dataflow, la charge de travail du dataflow génère un conteneur pour chaque entité dans le dataflow. Chaque conteneur peut prendre de la mémoire jusqu’au volume spécifié dans le paramètre Taille du conteneur. La valeur par défaut pour toutes les références SKU est **700 Mo**. Vous pouvez souhaiter modifier ce paramètre si :
+| Nom du paramètre | Description |
+|---------------------------------|----------------------------------------|
+| **Mémoire maximale (%)** | Pourcentage maximal de mémoire disponible que les dataflows peuvent utiliser dans une capacité. |
+| **Moteur de calcul de dataflows avancé (préversion)** | Activez cette option pour un calcul jusqu’à 20 fois plus rapide d’entités calculées lors de l’utilisation de volumes de données à grande échelle. **Vous devez redémarrer la capacité pour activer le nouveau moteur.** Pour plus d’informations, consultez [Moteur de calcul de dataflows avancé](#enhanced-dataflows-compute-engine). |
+| **Taille du conteneur** | Taille maximale du conteneur que les dataflows utilisent pour chaque entité dans le dataflow. La valeur par défaut est 700 Mo. Pour plus d’informations, consultez [Taille du conteneur](#container-size). |
+|  |  |
+
+#### <a name="enhanced-dataflows-compute-engine"></a>Moteur de calcul de dataflows avancé
+
+Pour tirer parti du nouveau moteur de calcul, fractionnez l’ingestion des données en dataflows séparés et placez la logique de transformation dans des entités calculées de différents dataflows. Cette approche est recommandée, car le moteur de calcul fonctionne sur les dataflows qui référencent un dataflow existant. Il ne fonctionne pas sur les dataflows d’ingestion. Le fait de suivre ce guide garantit que le nouveau moteur de calcul gère les étapes de transformation, telles que les jointures et les fusions, pour des performances optimales.
+
+#### <a name="container-size"></a>Taille du conteneur
+
+Lors de l’actualisation d’un dataflow, la charge de travail du dataflow génère un conteneur pour chaque entité dans le dataflow. Chaque conteneur peut prendre de la mémoire jusqu’au volume spécifié dans le paramètre **Taille du conteneur. La valeur par défaut pour toutes les références SKU est 700 Mo. Vous pouvez souhaiter modifier ce paramètre si :
 
 - L’actualisation des dataflows prend trop de temps ou l’actualisation d’un dataflow échoue en cas d’expiration du délai.
 - Les entités de dataflow incluent des étapes de calcul ; par exemple, une jointure.  
 
-Il est recommandé d’utiliser l’application [Métriques de capacité Power BI Premium](service-admin-premium-monitor-capacity.md) pour analyser les performances de la charge de travail Dataflows. 
+Il est recommandé d’utiliser l’application [Métriques de capacité Power BI Premium](service-admin-premium-monitor-capacity.md) pour analyser les performances de la charge de travail Dataflows.
 
 Dans certains cas, l’augmentation de la taille du conteneur peut ne pas améliorer les performances. Par exemple, si le dataflow obtient des données uniquement à partir d’une source sans effectuer de calculs significatifs, il est probable que changer la taille du conteneur ne sera d’aucune utilité. Augmenter la taille du conteneur peut être utile si cela permet à la charge de travail Dataflows d’allouer davantage de mémoire pour les opérations d’actualisation d’entité. Le fait d’allouer davantage de mémoire permet de réduire le temps nécessaire à l’actualisation des entités comportant beaucoup de calculs.
 
 La valeur Taille du conteneur ne peut pas dépasser la mémoire maximale définie pour la charge de travail Dataflows. Par exemple, une capacité P1 dispose de 25 Go de mémoire. Si le paramètre Mémoire maximale (%) de la charge de travail Dataflows est défini sur 20 %, la valeur Taille du conteneur (Mo) ne peut pas dépasser 5 000. Dans tous les cas, la valeur Taille du conteneur ne peut pas dépasser la valeur Mémoire maximale, même si vous définissez une valeur supérieure.
 
-### <a name="paginated-reports-preview"></a>Rapports paginés (Préversion)
+### <a name="paginated-reports"></a>Rapports paginés
+
+La charge de travail des rapports paginés vous permet d’exécuter des rapports paginés, basés sur le format SQL Server Reporting Services standard, dans le service Power BI. Utilisez le paramètre suivant pour contrôler le comportement de la charge de travail.
+
+| Nom du paramètre | Description |
+|---------------------------------|----------------------------------------|
+| **Mémoire maximale (%)** | Pourcentage maximal de mémoire disponible que les rapports paginés peuvent utiliser dans une capacité. |
+|  |  |
 
 Les rapports paginés permettent d’exécuter du code personnalisé lors du rendu d’un rapport. C’est, par exemple, le cas lors du changement dynamique de la couleur du texte en fonction du contenu, ce qui peut prendre de la quantité supplémentaire de mémoire. Power BI Premium génère les rapports paginés dans un espace contenu au sein de la capacité. La valeur Mémoire maximale spécifiée est utilisée, que la charge de travail soit *ou non* active. Si vous changez la valeur par défaut du paramètre Mémoire maximale, veillez à définir une valeur suffisamment faible pour qu’elle n’affecte pas négativement les autres charges de travail.
 
-Dans certains cas, la charge de travail Rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
+Dans certains cas, la charge de travail des rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
 
 ## <a name="configure-workloads"></a>Configurer des charges de travail
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c5b880132255fbdf37996273dc6c70029e548df6
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530515"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654893"
 ---
 # <a name="share-a-dataset-preview"></a>Partager un jeu de données (préversion)
 
@@ -42,7 +42,7 @@ En tant que créateur de *modèles de données* dans Power BI Desktop, vous pou
 
 ## <a name="build-permissions-for-shared-datasets"></a>Autorisations de génération pour des jeux de données partagés
 
-Le type d’autorisation de génération concerne uniquement les jeux de données. Il permet aux utilisateurs de générer du nouveau contenu sur un jeu de données, comme des rapports, des tableaux de bord, des vignettes épinglées à partir de Q&R et Insights Discovery. Il leur permet également de générer du nouveau contenu sur le jeu de données hors de Power BI, comme des feuilles Excel par le biais de la fonctionnalité Analyser dans Excel, XMLA et Export.
+Le type d’autorisation de génération concerne uniquement les jeux de données. Il permet aux utilisateurs de générer du nouveau contenu sur un jeu de données, comme des rapports, des tableaux de bord, des vignettes épinglées à partir de Q&R et Insights Discovery. Elles peuvent également générer un nouveau contenu sur le jeu de données hors de Power BI, comme des feuilles Excel par le biais de la fonctionnalité Analyser dans Excel, XMLA, et exporter des données sous-jacentes.
 
 Les utilisateurs obtiennent l’autorisation de génération de différentes façons :
 
@@ -72,7 +72,7 @@ Avec cette autorisation de génération plus granulaire, vous pouvez choisir qui
 
 Si votre jeu de données est actuellement utilisé par un rapport hors de l’espace de travail du jeu de données, vous ne pouvez pas supprimer ce jeu de données. Au lieu de cela, un message d’erreur s’affiche.
 
-Vous pouvez supprimer des autorisations de génération. Si vous le faites, les personnes dont vous avez révoqué les autorisations peuvent toujours visualiser le rapport, mais elles ne peuvent plus le modifier.
+Vous pouvez supprimer des autorisations de génération. Si vous le faites, les personnes dont vous avez révoqué les autorisations peuvent toujours visualiser le rapport, mais elles ne peuvent plus le modifier ni exporter des données sous-jacentes. Les utilisateurs disposant de l’autorisation en lecture seule peuvent toujours exporter les données récapitulatives. 
 
 ## <a name="track-your-dataset-usage"></a>Effectuer le suivi de l’utilisation de votre jeu de données
 

@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/09/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f3d67d0b57f2f04a31d99fb36476871c164aad4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ae896fb737eda6f95efa1589f2b3384e7426cf30
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65533595"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654579"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Utiliser des modèles composites dans Power BI Desktop
 
-Précédemment dans Power BI Desktop, lorsque vous avez utilisé un DirectQuery dans un rapport, aucune autre connexion de données - que DirectQuery ou importer - étaient autorisés pour ce rapport. Avec les modèles composites, cette restriction est levée. Un rapport peut en toute transparence inclure des connexions de données provenant de plusieurs connexions de données DirectQuery ou d’importation, dans la combinaison de votre choix.
+Précédemment dans Power BI Desktop, lorsque vous utilisiez un DirectQuery dans un rapport, aucune autre connexion de données, de DirectQuery ou d’une importation, n’était autorisée pour ce rapport. Avec les modèles composites, cette restriction est levée. Un rapport peut en toute transparence inclure des connexions de données provenant de plusieurs connexions de données DirectQuery ou d’importation, dans la combinaison de votre choix.
 
 ![Modèles composites dans Power BI Desktop](media/desktop-composite-models/composite-models_01.png)
 
@@ -39,7 +39,7 @@ Avec les modèles composites, vous pouvez vous connecter à toutes sortes de sou
 * En important des données dans Power BI, ce qui est la méthode la plus courante pour obtenir des données.
 * En vous connectant directement aux données dans leur dépôt source d’origine à l’aide de DirectQuery. Pour en savoir plus sur DirectQuery, consultez [Utiliser DirectQuery dans Power BI](desktop-directquery-about.md).
 
-Lorsque vous utilisez DirectQuery, *modèles composites* permettent de créer un modèle Power BI (telles que d’un seul *.pbix* fichier Power BI Desktop) qui effectue une ou les deux des éléments suivants :
+Quand vous utilisez DirectQuery, les *modèles composites* permettent de créer un modèle Power BI (par exemple, un fichier Power BI Desktop *.pbix* unique) qui effectue l’une des opérations suivantes, ou les deux :
 
 * Combine les données d’une ou de plusieurs sources DirectQuery.
 * Combine les données de sources DirectQuery et d’importation.
@@ -100,7 +100,7 @@ Nous pouvons maintenant créer des visuels à l’aide de l’un des champs de l
 
 ![Le volet Champs](media/desktop-composite-models/composite-models_11.png)
 
-L’exemple suivant affiche un cas courant d’un *dimension* table - comme *produit* ou *client* -qui est étendue avec des données supplémentaires importées à partir d’un autre emplacement. Des tables peuvent également utiliser DirectQuery pour se connecter à différentes sources. Pour étendre notre exemple, imaginez que les tables *Sales Targets* (Cibles de ventes) par *Country* (Pays) et *Period* (Période) sont stockées dans une base de données distincte d’un service. Comme vous le faites habituellement, vous pouvez utiliser *GetData* pour vous connecter à ces données, comme illustré dans l’image suivante : 
+L’exemple suivant montre un cas courant de table *dimension* (comme *Product* ou *Customer*) étendue avec des données supplémentaires importées à partir d’un autre emplacement. Des tables peuvent également utiliser DirectQuery pour se connecter à différentes sources. Pour étendre notre exemple, imaginez que les tables *Sales Targets* (Cibles de ventes) par *Country* (Pays) et *Period* (Période) sont stockées dans une base de données distincte d’un service. Comme vous le faites habituellement, vous pouvez utiliser *GetData* pour vous connecter à ces données, comme illustré dans l’image suivante : 
 
 ![Fenêtre du navigateur](media/desktop-composite-models/composite-models_12.png)
 
@@ -125,6 +125,9 @@ Le mode de stockage peut également être consulté dans l’info-bulle de chaqu
 Pour tout fichier Power BI Desktop (fichier *.pbix*) contenant des tables provenant de DirectQuery et de certaines tables d’importation, la barre d’état affiche un mode de stockage appelé **Mixte**. Vous pouvez cliquer sur ce terme dans la barre d’état et basculer facilement toutes les tables sur Importer.
 
 Pour plus d’informations sur le mode de stockage, consultez [Mode de stockage dans Power BI Desktop (préversion)](desktop-storage-mode.md).  
+
+> [!NOTE]
+> Vous pouvez utiliser le mode de stockage *Mixte* dans Power BI Desktop et dans le service Power BI.
 
 ## <a name="calculated-tables"></a>Tables calculées
 
@@ -152,15 +155,15 @@ Pour des raisons similaires, vous devez faire attention quand vous ouvrez un fic
 
 Quand vous utilisez DirectQuery, tenez toujours compte des performances pour garantir avant tout que la source backend dispose de ressources suffisantes pour assurer une bonne expérience aux utilisateurs. Une bonne expérience signifie que les visuels doivent s’actualiser en cinq secondes ou moins. Vous devez également suivre les conseils de performances présentés dans l’article [Utiliser DirectQuery dans Power BI](desktop-directquery-about.md). 
 
-L’utilisation des modèles composites implique de nouvelles considérations sur les performances. Un seul visuel peut entraîner l’envoi de requêtes à plusieurs sources, qui souvent passent les résultats à partir d’une requête sur une deuxième source. Cette situation peut se produire dans les scénarios d’exécution suivants :
+L’utilisation des modèles composites implique de nouvelles considérations sur les performances. Un seul visuel peut entraîner l’envoi de requêtes vers plusieurs sources, souvent en passant les résultats d’une requête à une deuxième source. Cette situation peut se produire dans les scénarios d’exécution suivants :
 
 * **Une requête SQL incluant un grand nombre de valeurs littérales** : Par exemple, un visuel demandant le montant total des ventes (*Sales Amount*) pour un groupe spécifique de chefs de produit (*Product Managers*) doit d’abord identifier les produits *(Products)* gérés par ces chefs de produit. Cette séquence doit se produire avant que le visuel n’envoie une requête SQL qui contient tous les ID de produit dans une clause *WHERE*.
 
 * **Une requête SQL effectuée à un niveau inférieur de granularité avec les données agrégées localement** : Comme le nombre de produits (*Products*) qui correspondent aux critères de filtre Chef de produit (*Product Manager*) est de plus en plus important, il peut s’avérer inefficace ou impossible d’inclure tous les produits dans une clause *WHERE*. Au lieu de cela, vous pouvez interroger la source relationnelle au niveau inférieur *Product* (Produit), puis agréger les résultats localement. Si la cardinalité des *produits* dépasse une limite de 1 million, la requête échoue.
 
-* **Plusieurs requêtes SQL, une par groupe et par valeur** : Lorsque l’agrégation utilise **DistinctCount** et sont regroupées par une colonne d’une autre source, et si la source externe ne prend pas en charge la transmission efficace de nombreuses valeurs littérales qui définissent le regroupement, il est nécessaire envoyer une requête SQL par la valeur Grouper par. 
+* **Plusieurs requêtes SQL, une par groupe et par valeur** : Lorsque l’agrégation utilise des données **DistinctCount** regroupées par une colonne d’une autre source, si la source externe ne prend pas en charge la transmission efficace des nombreuses valeurs littérales qui définissent le regroupement, il est nécessaire d’envoyer une requête SQL par groupe et par valeur. 
 
-   Par exemple, un visuel demandant un décompte distinct de la valeur *CustomerAccountNumber* (de la table SQL Server) par *Product Manager* (table importée de la feuille de calcul) doit passer les détails de la table *Product Managers* dans la requête envoyée à SQL Server. Avec d’autres sources, par exemple Redshift, cette action n’est pas possible. Au lieu de cela, il y aurait une requête SQL envoyée par *responsable des ventes* - jusqu'à une limite pratique à quel point la requête échoue. 
+   Par exemple, un visuel demandant un décompte distinct de la valeur *CustomerAccountNumber* (de la table SQL Server) par *Product Manager* (table importée de la feuille de calcul) doit passer les détails de la table *Product Managers* dans la requête envoyée à SQL Server. Avec d’autres sources, par exemple Redshift, cette action n’est pas possible. Au lieu de cela, une requête SQL est envoyée pour chaque *responsable commercial* jusqu’à une limite pratique à laquelle la requête échoue. 
 
 Chacun de ces cas comporte ses propres implications en termes de performances, et les détails exacts varient pour chaque source de données. Même si la cardinalité des colonnes utilisées dans la relation qui unit les deux sources reste faible (quelques milliers), les performances ne devraient pas être affectées. À mesure que cette cardinalité augmente, vous devez examiner de plus près l’impact sur les performances. Appliquez ces recommandations comme règle d’or. 
 
@@ -170,7 +173,7 @@ Par ailleurs, avec les relations *plusieurs-à-plusieurs*, des requêtes distinc
 
 Cette version de modèles composites présente quelques limitations :
 
-Actuellement, [actualisation incrémentielle](service-premium-incremental-refresh.md) est pris en charge pour les modèles composites de connexion à SQL, Oracle et Teradata sources de données uniquement.
+Pour l’instant, l’[actualisation incrémentielle](service-premium-incremental-refresh.md) est prise en charge pour les modèles composites qui se connectent aux sources de données SQL, Oracle et Teradata uniquement.
 
 Les sources (multidimensionnelles) Live Connect suivantes ne peuvent pas être utilisées avec les modèles composites :
 
@@ -188,7 +191,7 @@ Les limitations existantes concernant DirectQuery s’appliquent toujours quand 
 
 Pour plus d’informations sur les modèles composites et DirectQuery, consultez les articles suivants :
 * [Relations plusieurs à plusieurs dans Power BI Desktop](desktop-many-to-many-relationships.md)
-* [Mode de stockage dans Power BI Desktop](desktop-storage-mode.md)
+* [Mode de stockage dans Power BI Desktop](desktop-storage-mode.md)
 * [Utiliser DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery dans Power BI](desktop-directquery-data-sources.md)
 

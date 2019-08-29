@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 6/17/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0e63025c4e8a07e9cd22c82ca7e605042fa65be0
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 5efdb98e0722add361f3b333f773fc03c6ea50a9
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264301"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654135"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 
@@ -29,7 +29,7 @@ Le service Power BI est un service cloud d’analytique métier qui permet à ch
 
 ## <a name="whats-the-difference-between-power-bi-pro-and-power-bi-premium"></a>Quelle est la différence entre Power BI Pro et Power BI Premium ?
 
-Power BI Pro est une licence individuelle qui permet d’accéder à l’ensemble du contenu et des fonctionnalités du service Power BI. Vous pouvez même partager du contenu et collaborer avec d’autres utilisateurs Pro. Seuls les utilisateurs Pro peuvent publier et consulter du contenu sur des espaces de travail d’application, partager des tableaux de bord et s’abonner à des rapports et à des tableaux de bord.
+Power BI Pro est une licence individuelle qui permet d’accéder à l’ensemble du contenu et des fonctionnalités du service Power BI. Vous pouvez même partager du contenu et collaborer avec d’autres utilisateurs Pro. Seuls les utilisateurs Pro peuvent publier du contenu sur des espaces de travail d’application, partager des tableaux de bord et s’abonner à des rapports et à des tableaux de bord.
 
 Power BI Premium offre une capacité dédiée pour fournir des performances plus cohérentes. Il prend également en charge de plus gros volumes de données dans Power BI. Pour les utilisateurs individuels, Premium permet une large distribution de contenu par les utilisateurs Pro et ne requiert pas de licences par utilisateur pour que les destinataires voient le contenu.
 

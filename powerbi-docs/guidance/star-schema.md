@@ -9,14 +9,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: df8a7b2f8564c8862a5c2db3177df42640ce295d
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: bb8c0582e08d8e1e05c78c30df0b59bd89aafbd0
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68996056"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985779"
 ---
-# <a name="understand-a-star-schema-and-the-importance-for-power-bi"></a>Découvrez le schéma en étoile et son importance pour Power BI
+# <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Découvrez le schéma en étoile et son importance pour Power BI
 
 Cet article s’adresse aux modélisateurs de données Power BI Desktop. Il décrit la conception d’un schéma en étoile et sa pertinence pour le développement de modèles de données Power BI qui sont optimisés du point de vue des performances et de la convivialité.
 
@@ -66,7 +66,7 @@ De nombreux concepts supplémentaires liés à la conception de schémas en éto
 
 Dans la conception d’un schéma en étoile, une **mesure** est une colonne de table de faits qui stocke les valeurs à totaliser.
 
-Dans un modèle Power BI, une **mesure** a une définition différente (mais similaire). Il s’agit d’une formule écrite en [Dax (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) qui réalise une totalisation. Les expressions de mesure exploitent souvent les fonctions d’agrégation DAX comme SUM, MIN, MAX ou AVERAGE pour produire un résultat de valeur scalaire au moment de la requête (les valeurs ne sont jamais stockées dans le modèle). Une expression de mesure peut aller de simples agrégations de colonnes à des formules plus sophistiquées qui remplacent les propagations de relation et/ou de contexte de filtre. Pour plus d’informations, consultez l’article [Principes fondamentaux de DAX dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics). Lien En savoir plus ?
+Dans un modèle Power BI, une **mesure** a une définition différente (mais similaire). Il s’agit d’une formule écrite en [Dax (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference) qui réalise une totalisation. Les expressions de mesure exploitent souvent les fonctions d’agrégation DAX comme SUM, MIN, MAX ou AVERAGE pour produire un résultat de valeur scalaire au moment de la requête (les valeurs ne sont jamais stockées dans le modèle). Une expression de mesure peut aller de simples agrégations de colonnes à des formules plus sophistiquées qui remplacent la propagation de relation et/ou de contexte de filtre. Pour plus d’informations, consultez l’article [Principes fondamentaux de DAX dans Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 
 Il est important de comprendre que les modèles Power BI prennent en charge une deuxième méthode pour effectuer une totalisation. Toute colonne (généralement les colonnes numériques) peut être totalisée par un visuel de rapport ou Questions et réponses. C’est une commodité pour le développeur de modèle, car, dans de nombreux cas, il n’a pas besoin de créer de mesures. Par exemple, la colonne **Sales Amount** de la table Reseller Sales d’Adventure Works peut être totalisée de nombreuses façons (somme, nombre, moyenne, valeur médiane, valeur minimale, valeur maximale, etc.), sans qu’il soit nécessaire de créer une mesure pour chaque type d’agrégation possible.
 

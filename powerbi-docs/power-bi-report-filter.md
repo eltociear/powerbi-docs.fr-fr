@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 148f4881f78b5bba9b6936f5688ba6aaea3a0145
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68346362"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654448"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Nouvelle expérience de filtre dans les rapports Power BI
 
@@ -48,6 +48,10 @@ La nouvelle expérience de filtre est activée par défaut pour les nouveaux rap
 3. Sous **Expérience de filtrage**, sélectionnez **Activer le volet de filtre mis à jour et afficher les filtres dans l'en-tête du visuel de ce rapport**.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Activer de nouveaux filtres pour un rapport existant dans le service
+
+Si vous avez activé **Nouvelle apparence** dans le service Power BI ![Nouvelle apparence activée](media/power-bi-report-filter/power-bi-new-look-on.png), la nouvelle expérience de filtre est activée automatiquement. Découvrez plus en détail la [nouvelle apparence dans le service Power BI](service-new-look.md).
+
+Si vous n’avez pas activé la nouvelle apparence, vous pouvez toujours voir la nouvelle expérience de filtre en procédant comme suit.
 
 1. Dans le service Power BI, sélectionnez l’onglet **Rapports** dans la liste de contenu pour un espace de travail.
 2. Recherchez le rapport que vous souhaitez activer, puis sélectionnez l’icône **Paramètres** ![icône des paramètres de rapport](media/power-bi-report-filter/power-bi-settings-icon.png) pour ce rapport.
@@ -101,7 +105,7 @@ Vous pouvez également configurer l’état de votre nouveau volet Filtres pour 
 
 Une grande partie de cette nouvelle expérience est que vous pouvez mettre en forme le volet Filtres pour qu’il corresponde à l’apparence de votre rapport. Vous pouvez mettre en forme le volet Filtres différemment pour chaque page du rapport. Voici les éléments que vous pouvez mettre en forme : 
 
-- Couleur d’arrière-plan
+- Couleur d'arrière-plan
 - Transparence d’arrière-plan
 - Bordure activée ou désactivée
 - Couleur de la bordure
@@ -109,7 +113,7 @@ Une grande partie de cette nouvelle expérience est que vous pouvez mettre en fo
 
 Vous pouvez également mettre en forme ces éléments pour les cartes de filtre, selon qu’elles sont appliquées (définies sur quelque chose) ou disponibles (désactivées) : 
 
-- Couleur d’arrière-plan
+- Couleur d'arrière-plan
 - Transparence d’arrière-plan
 - Bordure : activée ou désactivée
 - Couleur de la bordure
@@ -121,15 +125,13 @@ Vous pouvez également mettre en forme ces éléments pour les cartes de filtre,
 1. Dans le rapport, cliquez sur le rapport lui-même, ou l’arrière-plan (*papier peint*), puis dans le volet **Visualisations**, sélectionnez **Format**. 
     Les options de mise en forme de la page du rapport, du papier peint et également du volet Filtres et des cartes de filtre s’affichent.
 
-    ![Sélectionner l’icône Format](media/power-bi-report-filter/power-bi-filter-format.png)    
-
 1. Développez le **volet Filtre** pour définir la couleur de l’arrière-plan, l’icône et la bordure gauche de la page du rapport.
 
-    ![Développer le volet Filtre](media/power-bi-report-filter/power-bi-filter-format-pane-font.png)
+    ![Développer le volet Filtre](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Développez **Cartes de filtre** pour définir la couleur et la bordure des options **Disponible** et **Appliqué**. Si les cartes disponibles et appliquées sont de différentes couleurs, les filtres appliqués deviennent évidents. 
   
-    ![Développer la carte de filtre](media/power-bi-report-filter/power-bi-filter-format-card-font.png)
+    ![Développer la carte de filtre](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
 ## <a name="theming-for-filter-pane"></a>Choix des thèmes du volet Filtres
 Vous pouvez maintenant modifier les paramètres par défaut du volet Filtres avec le fichier de thèmes. Voici un exemple d’extrait de thème pour bien commencer :
@@ -224,7 +226,7 @@ Lorsque vous modifiez le volet Filtres, vous pouvez double-cliquer sur le titre 
 
 ## <a name="restrict-changes-to-filter-type"></a>Limiter les modifications au type de filtre
 
-Dans la section Expérience de filtrage des paramètres du rapport, vous avez la possibilité de contrôler si les utilisateurs peuvent modifier le type de filtre.
+Sous la section Expérience de filtrage des paramètres du rapport, vous avez la possibilité de contrôler si les utilisateurs peuvent modifier le type de filtre.
 
 ![Limiter les changements de type de filtre](media/power-bi-report-filter/power-bi-filter-restrict-change.png)
 

@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/16/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0af278171a00c792e466bbd0e21a3efb5ffa8962
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 93b3be374707b3e49f87d0875795d160f4530410
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389721"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655020"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Création d’éléments visuels R dans le service Power BI
 Le service Power BI prend en charge l’affichage et l’utilisation des éléments visuels créés avec des scripts R. Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R*, peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R.
 
 > [!NOTE]
-> Le [langage de programmation R](https://www.r-project.org/) est l’un des langages de programmation les plus largement utilisés par les statisticiens, les scientifiques et les analystes d’entreprise. Le langage R a une communauté open source qui offre plus de 7 000 packages de composants additionnels, ainsi que des groupes d’utilisateurs R utilisés à grande échelle. La version de R déployée dans le service Power BI est *Revolution R Open 3.2.2.*
+> Le [langage de programmation R](https://www.r-project.org/) est l’un des langages de programmation les plus largement utilisés par les statisticiens, les scientifiques et les analystes d’entreprise. Le langage R a une communauté open source qui offre plus de 7 000 packages de composants additionnels, ainsi que des groupes d’utilisateurs R utilisés à grande échelle. La version de R déployée dans le service Power BI est *Microsoft R 3.4.4.*
 > 
 > 
 

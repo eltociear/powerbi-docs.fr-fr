@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 75e5a6387574c6cc4a9620955a3e7c15479830c2
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391214"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621315"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la qualité des fournisseurs pour Power BI : Visite guidée
 
@@ -144,7 +144,7 @@ Le type d’article le mieux géré est celui qui connaît le moins de temps d�
     Il y a eu beaucoup plus de défauts de matières premières en 2014 qu’en 2013.  
 
     ![Questions et réponses : show material types, year and total defect qty](media/sample-supplier-quality/supplier12.png)  
-6. Ensuite, posons la question suivante : *show material types, year and total **downtime minutes*** (afficher types d’articles, année et total des temps d’arrêts en minutes).  
+6. Ensuite, posons la question suivante : _show material types, year, and total **downtime minutes**_ .  
 
    ![Questions et réponses : Show material types, year, and total downtime minutes](media/sample-supplier-quality/supplier13.png)
 

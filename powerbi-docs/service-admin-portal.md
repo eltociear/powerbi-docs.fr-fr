@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6a1ce47d7af41df51b7c439240f3e9db0dd28397
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757737"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655147"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -48,7 +48,7 @@ Le portail compte neuf onglets. Le reste de cet article fournit des informations
 * [Stockage de dataflows (préversion)](#dataflowStorage)
 * [Espaces de travail](#workspaces)
 
-## <a name="usage-metrics"></a>Métriques d’utilisation
+## <a name="usage-metrics"></a>Métriques d'utilisation
 
 Les **Métriques d’utilisation** vous permettent de superviser l’utilisation de Power BI dans votre organisation. Il permet également de voir les utilisateurs et les groupes de votre organisation qui sont les plus actifs dans Power BI. 
 
@@ -91,7 +91,7 @@ Les administrateurs peuvent aussi déterminer si les créateurs de contenu peuve
 
 Pour plus d’informations sur les rapports eux-mêmes, consultez [Superviser les métriques d’utilisation de tableaux de bord et de rapports Power BI](service-usage-metrics.md).
 
-### <a name="usage-metrics-for-content-creators"></a>Métriques d’utilisation pour les créateurs de contenu
+### <a name="usage-metrics-for-content-creators"></a>Métriques d'utilisation pour les créateurs de contenu
 
 1. Dans le portail d’administration, sélectionnez **Paramètres du client** > **Métriques d’utilisation pour les créateurs de contenu**.
 
@@ -184,11 +184,11 @@ Le portail d’administration comporte une autre section de paramètres sur les 
 
 Dans le portail d’administration, vous contrôlez également les utilisateurs qui disposent des autorisations nécessaires pour distribuer des applications à l’organisation. Consultez la section [Publier des packs de contenu et des applications pour toute l’organisation](#publish-content-packs-and-apps-to-the-entire-organization) de cet article pour plus de détails.
 
-## <a name="export-and-sharing-settings"></a>Paramètres d’exportation et de partage
+## <a name="export-and-sharing-settings"></a>Paramètres d'exportation et de partage
 
 ### <a name="share-content-with-external-users"></a>Partager le contenu avec des utilisateurs externes
 
-Les utilisateurs de l’organisation peuvent partager des tableaux de bord avec des utilisateurs externes à l’organisation. [En savoir plus](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
+Les utilisateurs de l’organisation peuvent partager des tableaux de bord avec des utilisateurs externes à l’organisation. Découvrez plus en détail le [partage externe](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![Paramètre Utilisateurs externes](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -356,9 +356,9 @@ Les utilisateurs de l’organisation peuvent manipuler et partager des visuels c
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
-## <a name="audit-and-usage-settings"></a>Paramètres d’audit et d’utilisation
+## <a name="audit-and-usage-settings"></a>Paramètres d'audit et d'utilisation
 
-### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Créer des journaux d’audit pour l’audit des activités internes et la vérification de la conformité
+### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Créer des journaux d'audit pour l'audit des activités internes et la vérification de la conformité
 
 Les utilisateurs de l’organisation peuvent utiliser l’audit pour surveiller les actions effectuées dans Power BI par d’autres utilisateurs de l’organisation. [En savoir plus](service-admin-auditing.md)
 
@@ -367,13 +367,13 @@ Ce paramètre doit être activé pour pouvoir enregistrer les entrées du journa
 > [!NOTE]
 > Ce paramètre s’applique à toute l’organisation et ne peut pas être limité à des groupes en particulier.
 
-### <a name="usage-metrics-for-content-creators"></a>Métriques d’utilisation pour les créateurs de contenu
+### <a name="usage-metrics-for-content-creators"></a>Métriques d'utilisation pour les créateurs de contenu
 
 Les utilisateurs de l’organisation peuvent voir les métriques d’utilisation des tableaux de bord et des rapports qu’ils créent. [En savoir plus](service-usage-metrics.md)
 
-### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Données par utilisateur dans les métriques d’utilisation pour les créateurs de contenu
+### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Données par utilisateur dans les métriques d'utilisation pour les créateurs de contenu
 
-Les métriques d’utilisation pour créateurs de contenu exposent les noms d’affichage et les adresses e-mail des utilisateurs qui accèdent à du contenu. [En savoir plus](service-usage-metrics.md)
+Les métriques d'utilisation pour créateurs de contenu exposent les noms d'affichage et les adresses e-mail des utilisateurs qui accèdent à du contenu. [En savoir plus](service-usage-metrics.md)
 
 Par défaut, les données par utilisateur sont activées pour les métriques d’utilisation et les informations des comptes de créateur de contenu sont incluses dans le rapport des métriques. Si vous ne souhaitez pas recueillir ces informations pour tous les utilisateurs, vous pouvez désactiver la fonctionnalité pour des groupes de sécurité spécifiés ou pour l’ensemble de l’organisation. Les informations de compte des utilisateurs exclus figurent alors dans le rapport sous l’intitulé *Sans nom*.
 
@@ -401,7 +401,7 @@ Les applications web inscrites dans Azure Active Directory (Azure AD) utiliseron
 
 ## <a name="dataflow-settings"></a>Paramètres de dataflow
 
-### <a name="create-and-use-dataflows"></a>Créer et utiliser des flux de données
+### <a name="create-and-use-dataflows"></a>Créer et utiliser des dataflows
 
 Les utilisateurs de l'organisation peuvent créer et utiliser des dataflows. Pour une vue d’ensemble des dataflows, consultez [Préparation des données en libre-service dans Power BI](service-dataflows-overview.md). Pour activer les dataflows dans une capacité Premium, consultez [Configurer des charges de travail](service-admin-premium-workloads.md).
 
