@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 152b8f3bffa25a66d08af4806f9c7f1fe9bc90f7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4e9efa729b9dc4ac645bc8d3ff7df92cafc929e4
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514332"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200973"
 ---
 # <a name="power-bi-publisher-for-excel"></a>Éditeur Power BI pour Excel
 Microsoft **Power BI Publisher pour Excel** vous permet de prendre des instantanés de vos informations clés dans Excel, comme des tableaux croisés dynamiques, des graphiques et des plages, puis de les épingler à des tableaux de bord dans Power BI.
@@ -32,7 +32,7 @@ Quand vous épinglez un élément à partir d’Excel, une nouvelle vignette est
 ## <a name="download-and-install"></a>Télécharger et installer
 L’éditeur Power BI pour Excel est un complément que vous pouvez télécharger et installer sur les versions de bureau de Microsoft Excel 2007 (et versions ultérieures).
 
-[Télécharger Power BI Publisher for Excel](http://go.microsoft.com/fwlink/?LinkId=715729)
+[Télécharger Power BI Publisher for Excel](https://www.microsoft.com/download/details.aspx?id=50729)
 
 Une fois l’éditeur installé, un nouveau ruban **Power BI** apparaît dans Excel. Celui-ci vous permet de vous connecter à Power BI (ou de vous en déconnecter), d’épingler des éléments à des tableaux de bord et de gérer les éléments que vous avez déjà épinglés.
 
