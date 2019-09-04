@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cccbfb6bbe43e70ebcea94322923f7600d58aca8
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 5477d7772681f0dd5ac4426335521f6ab1a7844e
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590505"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160342"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop
 Vous pouvez établir une connexion active à un jeu de données partagé dans le service Power BI, et créer de nombreux rapports différents à partir du même jeu de données. Cela signifie que vous pouvez créer votre modèle de données idéal dans Power BI Desktop et le publier sur le service Power BI. Ensuite, vos coéquipiers et vous-même pouvez créer plusieurs rapports différents (dans des fichiers .pbix distincts) à partir de ce modèle de données commun, et les enregistrer dans différents espaces de travail. Cette fonctionnalité est appelée **Connexion active du service Power BI**.
@@ -108,4 +108,5 @@ Lors de l’utilisation de la **connexion active du service Power BI**, vous dev
 * Pour les packs de contenu, vous devez commencer par créer une copie d’un pack de contenu afin de l’utiliser comme base pour partager un rapport et un jeu de données .pbix pour le **service Power BI**.
 * Pour les packs de contenu à partir de *Mon organisation*, une fois la copie effectuée, vous ne pouvez pas remplacer le rapport créé sur le service et/ou un rapport créé dans le cadre de la copie d’un pack de contenu avec une connexion active. Sinon, un avertissement vous invite à renommer le fichier et à le publier. Dans ce cas, vous pouvez uniquement remplacer des rapports publiés connectés en direct.
 * Quand vous supprimez un jeu de données partagé dans le **service Power BI**, personne ne peut plus y accéder à partir de **Power BI Desktop**.
+* Les rapports qui partagent un jeu de données sur le service Power BI ne prennent pas en charge les déploiements automatisés avec l’API REST de Power BI.
 

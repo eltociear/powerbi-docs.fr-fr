@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 757a2ca5a88e8ee98aa1c460c30e001f14bc6789
-ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66814340"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160378"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Combiner des données de vente à partir d’Excel et d’un flux OData
 
@@ -119,7 +119,7 @@ L’éditeur Power Query vous permet de créer des calculs et des champs personn
    
 2. Dans la boîte de dialogue **Colonne personnalisée**, tapez **LineTotal** dans le champ **nouveau nom de colonne**.
 
-3. Dans le champ **Formule de colonne personnalisée**, après **=, entrez **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Vous pouvez également sélectionner les noms des champs à partir de la case de défilement **Colonnes disponibles** et sélectionner **<< insérer**, au lieu de les taper.) 
+3. Dans le champ **Formule de colonne personnalisée**, après *=* , entrez **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . (Vous pouvez également sélectionner les noms des champs à partir de la case de défilement **Colonnes disponibles** et sélectionner **<< insérer**, au lieu de les taper.) 
 
 4. Sélectionnez **OK**.
    

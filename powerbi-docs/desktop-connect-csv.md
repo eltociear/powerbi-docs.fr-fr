@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1e02197f36da66a64fac95209fe8fabaa67b6c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8eecbfdaa948163ab6d0623a70f237d479fcdb88
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514177"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200934"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>Se connecter à des fichiers CSV dans Power BI Desktop
 La connexion à un fichier *CSV* à partir de Power BI Desktop est très semblable à la connexion à un classeur Excel. Ces deux types de connexion sont faciles et cet article décrit pas à pas comment se connecter à un fichier CSV auquel vous avez accès.
@@ -44,6 +44,10 @@ Une fois que vous chargez les données dans Power BI Desktop, vous voyez la tab
 Et c’est tout ce que vous avez à faire : les données de votre fichier CSV sont désormais dans Power BI Desktop.
 
 Vous pouvez utiliser ces données dans Power BI Desktop pour créer des éléments visuels et des rapports ou bien pour interagir avec toutes les autres données auxquelles vous souhaitez vous connecter et que vous voulez importer, par exemple des classeurs Excel, des bases de données ou toute autre source de données.
+
+> [!IMPORTANT]
+> Quand vous importez un fichier CSV, Power BI Desktop génère un compteur *colonnes=x* (où *x* est le nombre de colonnes dans le fichier CSV lors de l’importation initiale) comme étape dans l’éditeur Power Query. Si vous ajoutez par la suite des colonnes supplémentaires et que la source de données est définie pour s’actualiser, les colonnes au-delà du nombre initial de colonnes *x* ne sont pas actualisées. 
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Vous pouvez connecter toutes sortes de données à l’aide de Power BI Desktop. Pour plus d’informations sur les sources de données, consultez les ressources suivantes :

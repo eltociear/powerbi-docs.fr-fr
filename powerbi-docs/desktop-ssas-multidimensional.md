@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7a25a9cc220dcb9f4620b7fb77e6bac264a47256
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 848019a020e4a91e80caf342acb15c0d9b7e3121
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514744"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160233"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Se connecter aux modèles multidimensionnels SSAS dans Power BI Desktop
 Power BI Desktop vous permet d’accéder aux **modèles multidimensionnels SSAS**, communément appelés **SSAS MD**.
@@ -78,7 +78,8 @@ Les modèles multidimensionnels prennent en charge la sécurité au niveau des c
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 Il existe certaines limitations à l’utilisation de **SSAS MD**:
 
-* Les serveurs doivent exécuter SQL Server 2012 SP1 CU4 ou des versions ultérieures d’Analysis Services pour que le connecteur SSAS MD de Power BI Desktop fonctionne correctement
+* Les serveurs doivent exécuter Analysis Services dans sa version SQL Server 2012 SP1 CU4 ou ultérieure pour que le connecteur SSAS MD de Power BI Desktop fonctionne correctement.
+* Seules les éditions Enterprise et BI de SQL Server 2012 et de SQL Server 2014 prennent en charge les connexions actives. Pour la version standard de SQL Server, SQL Server 2016 ou ultérieure est nécessaire pour les connexions actives.
 * *Actions* et *jeux nommés* ne sont pas exposés à Power BI, mais vous pouvez toujours vous connecter à des cubes qui contiennent également les propriétés *actions* ou *jeux nommés* et créer des rapports et des éléments visuels.
 * Vous risquez de rencontrer un problème où Power BI affiche les métadonnées d’un modèle SSAS, mais vous n’arrivez pas à récupérer les données du modèle. Cela peut se produire si vous avez la version 32 bits du fournisseur MSOLAP installée sur votre système et pas la version 64 bits. L’installation de la version 64 bits peut résoudre le problème.
 * Vous ne pouvez pas créer des mesures « au niveau du rapport » lors de la création d’un rapport qui est connecté en direct à un modèle multidimensionnel SSAS. Les seules mesures disponibles sont celles définies dans le modèle MD.

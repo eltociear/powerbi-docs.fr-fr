@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 05/22/2019
-ms.openlocfilehash: c4254420ae949b1fae6a1407cd045589c23da3c8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 08/29/2019
+ms.openlocfilehash: 0755b41fbeef1f62d2722e3529007dc4f8773634
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187685"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186084"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparer Power BI Report Server et le service Power BI
 
@@ -44,10 +44,10 @@ Power BI Report Server et le service Power BI ont de nombreuses similitudes et q
 | Rapports paginés | Oui | Oui | [Les rapports paginés sont disponibles dans le service Power BI](../paginated-reports-report-builder-power-bi.md) en préversion dans une capacité Premium |
 | Applications mobiles Power BI | Oui | Oui | [Vue d’ensemble des applications mobiles Power BI](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | Cartes ArcGIS | Non | Oui | [Cartes ArcGIS dans le service Power BI et Power BI Desktop par ESRI](../visuals/power-bi-visualization-arcgis.md) |
-| Abonnements par courrier électronique pour les rapports Power BI | Non | Oui | [Vous abonner vous-même ou abonner d’autres utilisateurs](../service-report-subscribe.md) à un rapport ou à un tableau de bord dans le service Power BI |
-| Abonnements par courrier électronique pour les rapports paginés | Oui | Non | [Remise du courrier électronique dans Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
+| Abonnements par courrier électronique pour les rapports Power BI | Oui | Oui | [Vous abonner vous-même ou abonner d’autres utilisateurs](../service-report-subscribe.md) à un rapport ou à un tableau de bord dans le service Power BI |
+| Abonnements par courrier électronique pour les rapports paginés | Oui | Oui | [Vous abonner vous-même et d’autres utilisateurs à des rapports paginés dans le service Power BI](../paginated-reports-subscriptions.md)<br><br>[Distribution des e-mails dans Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
 | Alertes de données | Non | Oui | [Alertes de données](../service-set-data-alerts.md) dans le service Power BI
-| Sécurité au niveau des lignes (RLS) | Oui | Oui | Disponible dans DirectQuery (source de données) et en mode d’importation <br>Sécurité au niveau des lignes dans le [service Power BI](../service-admin-rls.md) <br>Sécurité au niveau des lignes dans [Power BI Report Server](row-level-security-report-server.md) |
+| Sécurité au niveau des lignes (RLS) | Oui | Oui | Disponible dans DirectQuery (source de données) et en mode d’importation <br><br>Sécurité au niveau des lignes dans le [service Power BI](../service-admin-rls.md) <br><br>Sécurité au niveau des lignes dans [Power BI Report Server](row-level-security-report-server.md) |
 | Mode plein écran | Non | Oui | [Mode plein écran](../consumer/end-user-focus.md) dans le service Power BI |
 | Collaboration Office 365 avancée | Non | Oui | [Collaborer dans un espace de travail d’application](../service-collaborate-power-bi-workspace.md) avec Office 365 |
 | Visuels R | Non | Oui | [Créer des visuels R](../desktop-r-visuals.md) dans Power BI Desktop et publiez-les sur le service Power BI. Vous ne pouvez pas enregistrer les rapports Power BI avec des visuels R dans Power BI Report Server.  |

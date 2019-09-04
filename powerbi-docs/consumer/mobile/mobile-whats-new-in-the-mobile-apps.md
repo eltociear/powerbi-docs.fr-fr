@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: a7e26fd96066ce35e7d61443a8d7c32c64011d5e
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 5b0921689a923b5c787a5e4208fe35a863372878
+ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665431"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70030156"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Nouveautés dans les applications mobiles pour Power BI
 Pour plus d’informations sur les nouveautés, consultez :
@@ -22,6 +22,12 @@ Pour plus d’informations sur les nouveautés, consultez :
 * [Blog de l’équipe Power BI pour les applications mobiles](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nouveautés dans Power BI Desktop](../../desktop-latest-update.md)  
 * [Nouveautés dans le service Power BI](../../service-whats-new.md)  
+
+## <a name="august-2019"></a>Août 2019
+
+### <a name="secured-access-with-azure-active-directory-ad-application-proxy"></a>Accès sécurisé avec le proxy d’application Azure Active Directory (AD)
+
+Nous avons travaillé en partenariat avec l’équipe Azure Active Directory pour intégrer les applications Power BI Mobile au proxy d’application Azure Active Directory (AAD). Avec cette configuration, vous pouvez vous connecter au serveur de rapports hébergé dans les limites de l’entreprise à partir de l’application Power BI Mobile, sans devoir effectuer une configuration locale complexe. Pour plus d’informations, consultez [Intégration de Power BI Mobile et du proxy d’application Azure AD](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Découvrez [comment configurer le proxy d’application Azure AD et Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juillet 2019
 

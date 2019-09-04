@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b57f444f11c9592d80ffccf7a80be5fa9c7dcf3b
-ms.sourcegitcommit: c2197c3ad1d747b4ad490ab75771a0d32d0ae208
+ms.openlocfilehash: 9f5e2715af5b3fd898d3c7f0486c8b75463a1c42
+ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70008118"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70030192"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Superviser les capacités Premium avec l’application
 
@@ -244,7 +244,7 @@ La page Jeux de données a différentes *zones*, parmi lesquelles **Actualisatio
 
 | **Section du rapport** | **Métriques** |
 | --- | --- |
-| Consommation de l’UC |  Consommation par charge de travail sous forme de pourcentage de la capacité totale de l’UC. Affiché toutes les heures, pour les sept jours précédents. |
+| Consommation de l’UC |  Consommation maximale du processeur au cours de l’heure par charge de travail, sous la forme d’un pourcentage de la capacité totale du processeur. Affiché toutes les heures, pour les sept jours précédents. |
 | Consommation de mémoire |  Consommation maximale de mémoire au cours de l’heure en Go par charge de travail (lignes pleines) au delà des limites des charges de travail (ligne en pointillés). Affiché toutes les heures, pour les sept jours précédents. |
 |  |  |
 

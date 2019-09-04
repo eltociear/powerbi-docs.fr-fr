@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3dce16287c9cdcb7882e332e338137f7598b4010
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61314961"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200914"
 ---
 # <a name="connect-to-an-oracle-database"></a>Se connecter à une base de données Oracle
 Pour vous connecter à une base de données Oracle avec **Power BI Desktop**, le logiciel client Oracle approprié doit être installé sur l’ordinateur exécutant Power BI Desktop. Le logiciel client Oracle que vous devez utiliser dépend de la version de Power BI Desktop que vous avez installée (la version **32 bits** ou la version **64 bits**).
@@ -64,3 +64,5 @@ Si vous avez téléchargé Power BI Desktop à partir du Microsoft Store, vous r
 * Téléchargez plutôt Power BI Desktop depuis https://powerbi.microsoft.com/desktop.
 
 * Si vous souhaitez utiliser la version du Microsoft Store : sur votre ordinateur local, copiez oraons.dll depuis _12.X.X\client_X_ vers _12.X.X\client_X\bin_. Le X représente les numéros de version et de répertoire.
+
+Si vous voyez le message d’erreur *Référence d’objet non définie* dans Power BI Gateway lors de la connexion à une base de données Oracle, vous pourrez peut-être résoudre le problème en suivant les instructions fournies dans l’article [Gérer votre source de données - Oracle](service-gateway-onprem-manage-oracle.md).

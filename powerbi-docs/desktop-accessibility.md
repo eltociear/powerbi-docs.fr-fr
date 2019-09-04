@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d67ca5a4c8014dc295f3ffc458eca3dc5496282a
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 14e57f5b19fe4dccea9aa47d21c959eaf93a45ae
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307325"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185697"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Accessibilité dans les rapports Power BI Desktop
 Power BI intègre des fonctionnalités qui permettent aux personnes présentant un handicap de lire et d’utiliser les rapports Power BI plus facilement, notamment la possibilité de lire un rapport à l’aide du clavier ou d’un lecteur d’écran et de mettre en évidence divers objets de la page à l’aide de la touche de tabulation, et l’utilisation judicieuse des marqueurs dans les visualisations.
@@ -75,6 +75,9 @@ Les conseils suivants peuvent vous aider à créer des rapports **Power BI Des
 * Pour chaque objet d’un rapport, fournissez un texte de remplacement. Cela vous permet de garantir que les lecteurs de votre rapport comprennent ce que vous essayez de communiquer avec un visuel. Cela peut même être utile s’ils ne peuvent pas voir le visuel, l’image, la forme ou la zone de texte. Pour fournir un texte de remplacement pour un objet d’un rapport **Power BI Desktop**, sélectionnez l’objet (par exemple un visuel, une forme, etc.) puis, dans le volet **Visualisations**, sélectionnez la section **Format**. Développez ensuite **Général**, faites défiler jusqu’en bas et renseignez la zone de texte **Texte de remplacement**.
   
   ![Il est possible d’ajouter un texte de remplacement à n’importe quel objet d’un rapport en sélectionnant Visualisations > Format > Général > zone de texte Texte de remplacement.](media/desktop-accessibility/accessibility-02.png)
+  
+  Le texte de remplacement peut également être modifié dynamiquement avec une expression, par exemple pour refléter des filtres qui ont été appliqués à un visuel. Vous définissez une expression de la même façon que pour le titre d’un visuel. [Mise en forme conditionnelle pour les titres des visuels](desktop-conditional-format-visual-titles.md)
+  
 * Veillez à ce qu’il y ait suffisamment de contraste entre le texte et les couleurs d’arrière-plan de vos rapports. Il existe plusieurs outils, comme [Color Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/), que vous pouvez utiliser pour vérifier les couleurs de votre rapport. 
 * Utilisez des tailles et polices de texte facilement lisibles. Les textes de petite taille ou les polices difficiles à lire ont un impact négatif sur l’accessibilité.
 * Incluez un titre, des étiquettes d’axe et des étiquettes de données dans tous les visuels.
@@ -149,7 +152,7 @@ Dans nos efforts constants pour améliorer l’accessibilité, les expériences 
 | Déplacer le focus vers le haut/bas d’une cellule (dans toutes les cellules de toutes les zones)  | **Flèche vers le haut** / **Flèche vers le bas** |
 | Déplacer le focus vers la gauche/droite d’une cellule (dans toutes les cellules de toutes les zones)  | **Flèche gauche** / **Flèche droite** |
 
-### <a name="pane-navigation"></a>Dans les volets
+### <a name="pane-navigation"></a>Navigation dans les volets
 | Pour effectuer cette action           | Appuyer sur                |
 | :------------------- | :------------------- |
 | Sélection multiple | **Ctrl+barre d’espace** |

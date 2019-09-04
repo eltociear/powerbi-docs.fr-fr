@@ -8,19 +8,19 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 92dd8d7221c9c60fa4ffcd3e3ceefeda319d8670
-ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
+ms.openlocfilehash: 38e393a07defcf572d06f00c14ff8e4efa3081cc
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68940929"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185715"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
-Vous pouvez vous abonner vous et vos collègues aux pages de rapport, tableaux de bord et rapports paginés qui vous intéressent le plus. Power BI envoie un instantané dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous voulez recevoir les e-mails : une fois par jour, une fois par semaine ou après l’actualisation des données initiales.  Si vous choisissez quotidien ou hebdomadaire, vous pouvez choisir l’heure d’exécution de l’abonnement.  Vous pouvez définir jusqu’à 24 abonnements différents en tout par jour, pour chaque page de rapport et tableau de bord.
+Vous pouvez vous abonner vous et vos collègues aux pages de rapport, tableaux de bord et rapports paginés qui vous intéressent le plus. Power BI envoie un instantané dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous voulez recevoir les e-mails : une fois par jour, une fois par semaine, une fois par heure, une fois par mois ou après l’actualisation des données initiales.  Si vous choisissez une fois par jour, une fois par semaine, une fois par heure ou une fois par mois, vous pouvez choisir l’heure d’exécution de l’abonnement.  Vous pouvez définir jusqu’à 24 abonnements différents en tout par jour, pour chaque page de rapport et tableau de bord.
 
 ![capture instantanée d’un e-mail sur le tableau de bord](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -54,9 +54,9 @@ L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abon
 
 5. Renseignez les détails de l’e-mail : **Objet** et **Message**. 
 
-5. Sélectionnez une **Fréquence** pour votre abonnement : **Quotidien**, **Toutes les heures**, **Hebdomadaire** ou **Après l’actualisation des données (quotidien)** .  Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Toutes les heures** ou **Hebdomadaire** et choisissez les jours auxquels vous voulez le recevoir.  Par exemple, si vous voulez recevoir l’e-mail d’abonnement seulement les jours ouvrés, sélectionnez **Hebdomadaire** et décochez les cases **Sam** et **Dim**.  
+5. Sélectionnez une **Fréquence** pour votre abonnement : **Quotidien**, **Toutes les heures**, **Hebdomadaire**, **Mensuel** ou **Après l’actualisation des données (quotidien)** .  Pour recevoir l’e-mail d’abonnement certains jours uniquement, sélectionnez **Toutes les heures** ou **Hebdomadaire** et choisissez les jours auxquels vous voulez le recevoir.  Par exemple, si vous voulez recevoir l’e-mail de l’abonnement seulement les jours ouvrés, sélectionnez **Hebdomadaire** et décochez les cases **Sam** et **Dim**.  Si vous sélectionnez **Mensuel**, entrez le ou les jours du mois auxquels vous souhaitez recevoir le courrier de l’abonnement.  
 
-6. Si vous choisissez **Quotidien** ou **Hebdomadaire**, vous pouvez également choisir une **Heure planifiée** pour l’abonnement.  Vous pouvez choisir une exécution à une heure pile ou 15, 30 ou 45 minutes après.  Sélectionnez le matin (AM) ou l’après-midi/le soir (PM). Vous pouvez également spécifier le fuseau horaire.  Si vous choisissez **Toutes les heures**, sélectionnez l’**Heure planifiée** à laquelle vous souhaitez que l’abonnement démarre ; la communication aura alors lieu toutes les heures.
+6. Si vous choisissez **Quotidien**, **Toutes les heures, **Mensuel** ou **Hebdomadaire**, vous pouvez également choisir une **Heure planifiée** pour l’abonnement.  Vous pouvez choisir une exécution à une heure pile ou 15, 30 ou 45 minutes après.  Sélectionnez le matin (AM) ou l’après-midi/le soir (PM). Vous pouvez également spécifier le fuseau horaire.  Si vous choisissez **Toutes les heures**, sélectionnez l’**Heure planifiée** à laquelle vous voulez que l’abonnement démarre : il sera alors exécuté toutes les heures après cela.
 
 7. Par défaut, la date de début de votre abonnement est la date de sa création. Vous pouvez sélectionner une date de fin. Si vous ne définissez pas de date de fin, la date de fin est automatiquement un an après la date de début. Vous pouvez la remplacer par n’importe quelle date dans le futur (jusqu’à l’année 9999) à tout moment avant la fin de l’abonnement. Quand un abonnement atteint une date de fin, il s’arrête jusqu’à ce que vous le réactiviez. Vous recevez des notifications avant la date de fin planifiée pour savoir si vous voulez la prolonger.    
 
@@ -67,7 +67,7 @@ L’abonnement aux rapports paginés est un peu différent. Consultez [Vous abon
 7. Sélectionnez **Enregistrer et fermer**. Les abonnés reçoivent un e-mail et un instantané du tableau de bord ou de la page de rapport à la fréquence et à l’heure que vous avez sélectionnées. Vous pouvez créer jusqu’à 24 abonnements en tout par rapport ou tableau de bord, et vous pouvez fournir des destinataires, des heures et des fréquences différents pour chaque abonnement.  Tous les abonnements définis sur **Après l’actualisation des données** pour votre tableau de bord ou rapport envoient un e-mail seulement après la première actualisation planifiée.   
       
    > [!TIP]
-   > Vous souhaitez envoyer l’e-mail d’un abonnement dès maintenant, ou ultérieurement à la demande ? Sélectionnez **Exécuter maintenant** pour les abonnements pour le tableau de bord ou le rapport que vous souhaitez envoyer. Vous voyez une notification indiquant qu’un e-mail est envoyé à tous les utilisateurs de cet abonnement.  Vous pouvez effectuer cette opération aussi souvent que vous le souhaitez. En effet, elle n’est pas comptabilisée dans la limite des 24 exécutions d’abonnement planifiées par jour et par rapport ou tableau de bord. Cette opération ne déclenche PAS l’actualisation des données dans le jeu de données sous-jacent. 
+   > Vous souhaitez envoyer l’e-mail d’un abonnement dès maintenant, ou ultérieurement à la demande ? Sélectionnez **Exécuter maintenant** pour les abonnements pour le tableau de bord ou le rapport que vous souhaitez envoyer. Vous voyez une notification indiquant qu’un e-mail est envoyé à tous les utilisateurs de cet abonnement.  Cette action n’est pas comptabilisée dans la limite des 24 exécutions d’abonnement planifiées par jour et par rapport ou tableau de bord. Cette opération ne déclenche PAS l’actualisation des données dans le jeu de données sous-jacent. 
    > 
    > 
    
@@ -103,7 +103,7 @@ Un abonnement se termine si la licence Pro expire, si le propriétaire supprime 
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge,  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     
 * Si vous partagez un tableau de bord avec un collègue extérieur à votre locataire, vous ne pouvez pas créer d’abonnement pour lui. Par conséquent, si vous êtes aaron@xyz.com, vous pouvez partager avec anyone@ABC.com, mais vous ne pouvez pas encore abonner anyone@ABC.com et il ne peut pas s’abonner au contenu partagé.      
 * Power BI suspend automatiquement l’actualisation des jeux de données associés à des tableaux de bord et rapports qui n’ont pas été consultés depuis plus de 2 mois.  Toutefois, si vous ajoutez un abonnement à un rapport ou tableau de bord, il n’est pas suspendu même si le rapport ou tableau de bord n’est pas consulté.    
-* Si vous ne recevez pas les e-mails d’abonnement, vérifiez que votre nom d’utilisateur principal (UPN) est en mesure d’en recevoir. [L’équipe Power BI travaille sur l’assouplissement de cette exigence](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163). Tenez-vous informé. 
+* Si vous ne recevez pas les e-mails d’abonnement, vérifiez que votre nom d’utilisateur principal (UPN) est en mesure d’en recevoir. 
 * Si votre tableau de bord ou rapport est dans une capacité Premium, vous pouvez utiliser des alias de messagerie de groupe pour les abonnements, au lieu d’abonner vos collègues à une seule adresse e-mail à la fois. Les alias sont basés sur l’annuaire Active Directory actuel. 
 
 ## <a name="next-steps"></a>Étapes suivantes

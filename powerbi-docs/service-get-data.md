@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d6d6ca0b9a1a2ec312a9168aad7a7cc93981e396
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816726"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200954"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Sources de données pour le service Power BI
 Les données sont au cœur de Power BI. Supposons que vous explorez des données. Vous pouvez le faire en créant des graphiques et des tableaux de bord ou en posant des questions avec **Questions et réponses**. Les visualisations et les réponses que vous voyez tirent leurs données sous-jacentes d’un jeu de données. Mais d’où provient ce jeu de données ? Il vient d’une source de données.
@@ -30,7 +30,7 @@ Une fois que vous avez sélectionné **Obtenir des données**, vous pouvez chois
 
 ![](media/service-get-data/pbi-getdata-startscreen.png)
 
-## <a name="discover-content"></a>Découvrir le contenu
+## <a name="discover-content"></a>Découvrir du contenu
 ![](media/service-get-data/pbi-getdata-discovercontent.png)
 
 La section **Découvrir le contenu** contient toutes les données et tous les rapports dont vous avez besoin, déjà prêts. Dans Power BI, il existe deux types de packs de contenu : Organisation et Services. 
@@ -46,7 +46,7 @@ La section **Créer du contenu** contient des options qui vous permettent de cr�
 ### <a name="files"></a>Fichiers
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** ( *.xlsx*, *.xlsm*) - Excel est unique. Dans Excel, un classeur peut contenir différents types de données. Par exemple, il peut contenir des données que vous avez entrées vous-même dans des feuilles de calcul. Il peut également contenir des données que vous avez interrogées et chargées à partir de sources de données externes à l’aide de Power Query. Power Query est disponible via **Obtenir et transformer** dans Excel 2016 ou Power Pivot. Vous pouvez importer des données à partir de tableaux dans des feuilles de calcul ou importer des données à partir d’un modèle de données. Pour en savoir plus, consultez [Obtenir des données à partir de fichiers pour Power BI](service-get-data-from-files.md).
+**Excel** ( *.xlsx*, *.xlsm*) : Dans Excel, un classeur peut contenir différents types de données. Par exemple, il peut contenir des données que vous avez entrées vous-même dans des feuilles de calcul. Il peut également contenir des données que vous avez interrogées et chargées à partir de sources de données externes à l’aide de Power Query. Power Query est disponible via **Obtenir et transformer** dans Excel 2016 ou Power Pivot. Vous pouvez importer des données à partir de tableaux dans des feuilles de calcul ou importer des données à partir d’un modèle de données. Pour en savoir plus, consultez [Obtenir des données à partir de fichiers pour Power BI](service-get-data-from-files.md).
 
 **Power BI Desktop** ( *.pbix*) : Vous pouvez utiliser Power BI Desktop pour interroger et charger des données à partir de sources de données externes et créer des rapports. Vous pouvez aussi étendre votre modèle de données avec des mesures et des relations, ou importer votre fichier Power BI Desktop dans votre site Power BI. Power BI Desktop convient parfaitement aux utilisateurs plus avancés. En général, ces utilisateurs ont une bonne compréhension de leurs sources de données. Ils maîtrisent aussi l’interrogation et la transformation des données et les concepts de modélisation des données. Pour en savoir plus, consultez [Se connecter à des données dans Power BI Desktop](desktop-connect-to-data.md).
 
@@ -102,9 +102,9 @@ Si vous enregistrez vos fichiers sur OneDrive Entreprise ou SharePoint - Sites d
 
 Les packs de contenu provenant des services sont automatiquement mis à jour. Dans la plupart des cas, ils sont mis à jour une fois par jour. Vous pouvez effectuer une actualisation manuellement. Toutefois, l’affichage des données mises à jour dépend du fournisseur de services. Les mises à jour des packs de contenu des utilisateurs de votre organisation dépendent des sources de données utilisées. Elles dépendent également de la personne qui a créé le pack de contenu et configuré l’actualisation.
 
-Azure SQL Database, Azure SQL Data Warehouse et Spark sur Azure HDInsight sont uniques parce qu’il s’agit de sources de données dans le cloud. Le service Power BI est également dans le cloud, donc Power BI peut se connecter à ces sources de données en direct avec **DirectQuery**. Ce que vous voyez dans Power BI est toujours synchronisé et il n’est pas nécessaire de configurer une actualisation planifiée.
+Azure SQL Database, Azure SQL Data Warehouse et Spark sur Azure HDInsight sont uniques sont des sources de données dans le cloud. Le service Power BI est également dans le cloud, donc Power BI peut se connecter à ces sources de données en direct avec **DirectQuery**. Ce que vous voyez dans Power BI est toujours synchronisé et il n’est pas nécessaire de configurer une actualisation planifiée.
 
-SQL Server Analysis Services est unique. Lorsque vous vous y connectez depuis Power BI, il s’agit d’une connexion active tout comme une base de données Azure dans le cloud. La différence est que la base de données elle-même se trouve sur un serveur de votre organisation. Ce type de connexion nécessite une passerelle Power BI, que configure le service informatique.
+Quand vous vous connectez à SQL Server Analysis Services depuis Power BI, il s’agit d’une connexion active, tout comme une base de données Azure dans le cloud. La différence est que la base de données elle-même se trouve sur un serveur de votre organisation. Ce type de connexion nécessite une passerelle Power BI, que configure le service informatique.
 
 L’actualisation des données est un élément essentiel de Power BI et beaucoup trop complexe pour pouvoir le détailler ici. Pour mieux comprendre ce processus, consultez [Actualisation des données dans Power BI](refresh-data.md).
 

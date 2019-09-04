@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 80eb366015de3822b9c8c455f1ee386a34e1f457
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: 0474bc4182f77e7084ca8cb78062ba0f2063e7ae
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560999"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160204"
 ---
 # <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analyser les données sur les coûts et l’utilisation d’Azure dans Power BI Desktop
 
@@ -27,6 +27,10 @@ Power BI prend actuellement en charge la connexion aux comptes de facturation Co
 * Les utilisateurs ayant un **Contrat Entreprise** doivent se connecter avec le **connecteur Azure Consumption Insights** (ci-dessous).
 
 * Les utilisateurs ayant un **Contrat Entreprise** doivent se connecter avec le [**connecteur Azure Cost Management**](#connect-with-azure-cost-management).
+
+> [!NOTE]
+> Si vous êtes un client Contrat Entreprise utilisant le connecteur Azure Cost Management et que vous ne voyez pas l’*ID du profil de facturation* dans votre panneau Gestion des coûts, cela signifie que vous n’êtes pas dans la plateforme de commerce moderne. Dans ce cas, utilisez le connecteur Azure Consumption Insights, qui demande le numéro d’inscription EA au lieu de l’*ID du profil de facturation*.
+
 
 ## <a name="connect-with-azure-consumption-insights"></a>Se connecter à l’aide d’Azure Consumption Insights
 

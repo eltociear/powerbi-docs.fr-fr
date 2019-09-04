@@ -1,29 +1,29 @@
 ---
 title: Se connecter à Office365Mon avec Power BI
 description: Office365Mon pour Power BI
-author: SarinaJoan
+author: teddybercovitz
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 8/29/2019
+ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cce886edbed00075efaa43bae9c8a712929e8b9a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 364220d5d900004252e51184fc9cbd7e03b45b2d
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61170168"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159906"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Se connecter à Office365Mon avec Power BI
-Grâce à Power BI et au pack de contenu Office365Mon, vous pouvez facilement analyser les pannes d’Office 365 et les données de performances d’intégrité. Power BI récupère vos données, notamment celles des pannes et des sondes d’intégrité, puis établit un tableau de bord prêt à l’emploi et des rapports basés sur ces données.
+Grâce à Power BI et à l’application modèle Office365Mon, vous pouvez facilement analyser les pannes d’Office 365 et les données de performances d’intégrité. Power BI récupère vos données, notamment celles des pannes et des sondes d’intégrité, puis établit un tableau de bord prêt à l’emploi et des rapports basés sur ces données.
 
-Connectez-vous au [pack de contenu Office365Mon](https://app.powerbi.com/groups/me/getdata/services/office365mon) pour Power BI.
+Connectez-vous à l’[application modèle Office365Mon](https://app.powerbi.com/groups/me/getdata/services/office365mon) pour Power BI.
 
 >[!NOTE]
->Vous devez disposer d’un compte d’administrateur Office365Mon pour vous connecter au pack de contenu Power BI et le charger.
+>Vous devez disposer d’un compte d’administrateur Office365Mon pour vous connecter à l’application modèle Power BI et la charger.
 
 ## <a name="how-to-connect"></a>Comment se connecter
 1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.

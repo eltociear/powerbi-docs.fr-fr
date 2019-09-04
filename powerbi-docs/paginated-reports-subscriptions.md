@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/15/2019
-ms.openlocfilehash: 2d48892450bbf6ab09a4bc88cd2be9a58bbdc863
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.date: 08/29/2019
+ms.openlocfilehash: 4b0ead5697dc94497609ac925a0a46142584f0ba
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307085"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185615"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports paginés dans le service Power BI 
 
 Vous pouvez maintenant configurer des abonnements par e-mail pour vous-même et d’autres personnes à des rapports paginés dans le service Power BI. En règle générale, le processus est le même que pour les [abonnements aux rapports et tableaux de bord dans le service Power BI](service-report-subscribe.md). Cet article énumère les différences et considérations. 
 
-Lors de la configuration des abonnements, vous choisissez la fréquence à laquelle vous souhaitez recevoir des e-mails : quotidienne, hebdomadaire ou toutes les heures. Si vous choisissez une fréquence quotidienne ou hebdomadaire, vous pouvez choisir l’heure d’exécution de l’abonnement. Vous pouvez définir jusqu’à 24 abonnements différents par jour pour chaque rapport. 
+Lors de la configuration des abonnements, vous choisissez la fréquence à laquelle vous voulez recevoir des e-mails : quotidienne, hebdomadaire, mensuelle ou toutes les heures. Vous pouvez également choisir la ou les heures auxquelles l’abonnement doit être exécuté. Vous pouvez définir en tout jusqu’à 24 abonnements différents pour chaque rapport. 
 
 ## <a name="considerations-for-paginated-report-subscriptions"></a>Considérations sur les abonnements aux rapports paginés 
 
