@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 1c110022c27cf0e213484619a750140a63a7d0dc
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: 15c16e2e065148666eee6c67a511c5e412bc334e
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490384"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237392"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
@@ -104,7 +104,6 @@ Suivez les étapes ci-dessous pour commencer l’incorporation de votre contenu 
     | Champ |
     |--------------------|
     | **[ApplicationID](#application-id)** |
-    | **[ApplicationSecret](#application-secret)** |
     | **[WorkspaceID](#workspace-id)** |
     | **[ReportID](#report-id)** |
     | **[AADAuthorityUrl](#aadauthorityurl)** |
