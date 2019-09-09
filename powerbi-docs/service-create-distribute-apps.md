@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ed3a65e25694c23e1852a554742e0f8a6e6ff668
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530584"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751577"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publier une application dans Power BI
 
@@ -127,7 +127,7 @@ Voici des informations générales à prendre en compte quand vous utilisez le n
 Quand vous ajoutez des liens à la navigation dans votre application et que vous sélectionnez l’option Zone de contenu :
 * Vérifiez que le lien peut être incorporé. Certains services bloquent l’incorporation de leur contenu dans des sites tiers comme Power BI.
 * L’incorporation du contenu d’un service Power BI comme des rapports ou des tableaux de bord dans d’autres espaces de travail n’est pas prise en charge. 
-* Incorporez du contenu Power BI Report Server par le biais du contenu de son URL incorporée native à partir d’un déploiement local. Utilisez les étapes décrites dans [Création de l’URL Power BI Report Server](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#creating-the-power-bi-report-server-report-url) pour obtenir l’URL. Sachez que les règles d’authentification standard s’appliquent. Par conséquent, l’affichage du contenu nécessite une connexion VPN au serveur local. 
+* Incorporez du contenu Power BI Report Server par le biais du contenu de son URL incorporée native à partir d’un déploiement local. Utilisez les étapes décrites dans [Création de l’URL Power BI Report Server](https://docs.microsoft.com/power-bi/report-server/quickstart-embed#create-the-power-bi-report-url) pour obtenir l’URL. Sachez que les règles d’authentification standard s’appliquent. Par conséquent, l’affichage du contenu nécessite une connexion VPN au serveur local. 
 * Un avertissement de sécurité s’affiche au-dessus du contenu incorporé pour indiquer que le contenu ne se trouve pas dans Power BI.
 
 
