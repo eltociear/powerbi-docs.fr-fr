@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 07/15/2019
-ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.date: 09/04/2019
+ms.openlocfilehash: 2be953c31ba3090e83e58f8e5626bb83e249556e
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665373"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302686"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -26,11 +26,11 @@ Cet article répond aux nombreuses questions courantes que l’on se pose concer
 
 ### <a name="what-size-premium-capacity-do-i-need-for-paginated-reports"></a>De quelle taille de capacité Premium ai-je besoin pour des rapports paginés ?
 
-La charge de travail des rapports paginés est disponible sur les références SKU P1 à P3.  Vous pouvez également l’utiliser avec des références SKU A4 à A6 pour les scénarios d’incorporation SaaS.
+La charge de travail des rapports paginés est disponible sur les références SKU P1 à P3.  Vous pouvez également l’utiliser avec les référence SKU A4 à A6 pour les scénarios de test/développement ou d’incorporation.
 
 ### <a name="what-is-the-maximum-memory-threshold-i-can-put-for-paginated-reports-in-my-capacity"></a>Quel seuil de mémoire maximal puis-je placer pour les rapports paginés dans ma capacité ?
 
-Vous pouvez utiliser jusqu'à 100 % de la mémoire pour cette charge de travail d'ici à la fin juin 2019. 
+Vous pouvez utiliser jusqu’à 100 % de la mémoire pour cette charge de travail.
 
 ### <a name="how-does-user-access-work-for-paginated-reports"></a>Comment fonctionne l’accès utilisateur aux rapports paginés ?
 
@@ -152,7 +152,7 @@ Vous pouvez exporter vers Microsoft Excel, Microsoft Word, Microsoft PowerPoint,
 
 Oui, l’impression est disponible pour les rapports paginés, comprenant un nouvel aperçu amélioré de l’impression. 
 
-### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Des abonnements par e-mail sont-ils disponibles pour des rapports paginés ?
+### <a name="are-e-mail-subscriptions-available-for-paginated-reports"></a>Des abonnements par e-mail sont-ils disponibles pour les rapports paginés ?
 
 Oui, les abonnements par e-mail sont entièrement pris en charge pour les rapports paginés, avec six différents formats de fichiers et valeurs de paramètre.
 
@@ -166,7 +166,7 @@ L’incorporation de SaaS est déjà prise en charge. L’incorporation de SaaS 
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Puis-je passer d'un rapport Power BI à un rapport paginé ?
 
-Pas encore, mais nous prévoyons absolument de prendre en charge ce scénario.
+Oui, en utilisant les paramètres d’URL avec vos rapports paginés.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Puis-je partager mon contenu de rapport paginé via une application Power BI ?
 
