@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530506"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70750902"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -61,7 +61,7 @@ Les rôles vous permettent de gérer qui peut faire quoi dans un espace de trava
 
 Quand vous affectez des rôles à un groupe d’utilisateurs, les personnes individuelles du groupe ont accès au contenu. Si vous imbriquez des groupes d’utilisateurs, tous les utilisateurs qui en font partie ont les autorisations associées.
 
-Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs.
+Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. Toutes ces fonctionnalités, à l’exception de la dernière, nécessitent une licence Power BI Pro.
 
 |Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Lecteur |
 |---|---|---|---|---|
@@ -73,9 +73,9 @@ Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs.
 | Permettre à d’autres utilisateurs de repartager des éléments. |  X | X  |   |   |
 | Créer, modifier et supprimer du contenu dans l’espace de travail.  |  X | X  | X  |   |
 | Publier des rapports sur l’espace de travail, supprimer du contenu.  |  X | X  | X  |   |
-| Afficher un élément. |  X | X  | X  | X  |
 | Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail. |  X | X  | X  | X <sup>1</sup>  |
 | Copier un rapport. | X | X | X | X <sup>1</sup> |
+| Voir et utiliser un élément. |  X | X  | X  | X  |
 
 **1** Nécessite une licence Power BI Pro et une [autorisation de création pour les jeux de données](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  
@@ -134,7 +134,7 @@ Limitations à connaître :
 
 Certaines fonctionnalités agissent différemment dans les nouveaux espaces de travail. Ces différences sont intentionnelles et basées sur le feedback que nous avons reçu des clients. Elles permettent une approche plus souple de la collaboration avec des espaces de travail :
 
-- Application de la gestion des licences : La publication de rapports dans la nouvelle expérience de l’espace de travail applique les règles de gestion des licences existantes qui nécessitent une licence Power BI Pro pour les utilisateurs collaborant dans les espaces de travail ou partageant du contenu avec d’autres personnes dans le service Power BI. Les utilisateurs sans licence Pro voient l’erreur « Seuls les utilisateurs avec des licences Powre BI Pro peuvent publier sur cet espace de travail. »
+- Application de la gestion des licences : La publication de rapports dans la nouvelle expérience de l’espace de travail applique les règles de gestion des licences existantes qui nécessitent une licence Power BI Pro pour les utilisateurs collaborant dans les espaces de travail ou partageant du contenu avec d’autres personnes dans le service Power BI. Les utilisateurs sans licence Pro voient l’erreur « Seuls les utilisateurs avec des licences Power BI Pro peuvent publier sur cet espace de travail ».
 - Les membres peuvent ou non repartager : remplacé par le rôle Contributeur
 - Espaces de travail en lecture seule : Au lieu d’accorder aux utilisateurs un accès en lecture seule à un espace de travail, attribuez aux utilisateurs le rôle Lecteur, qui permet un accès en lecture seule similaire au contenu dans un espace de travail.
 - Les utilisateurs avec une licence Pro peuvent accéder à l’espace de travail si celui-ci se trouve dans une capacité Power BI Premium, même si les utilisateurs n’ont que le rôle Lecteur.
