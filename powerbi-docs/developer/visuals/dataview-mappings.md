@@ -1,6 +1,6 @@
 ---
-title: Mappages de vues de données
-description: Comment Power BI transforme les données avant de les transmettre aux visuels
+title: Présentation du mappage des vues de données dans les visuels Power BI
+description: Cet article explique comment Power BI transforme les données avant de les transmettre dans des visuels.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,19 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ff70b2f12921694617a736164484df1326471eea
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425180"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237222"
 ---
-# <a name="data-view-mappings-in-power-bi-visuals"></a>Mappages de vues de données dans les visuels Power BI
+# <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Présentation du mappage des vues de données dans les visuels Power BI
 
-Un mappage `dataViewMappings` décrit comment les rôles de données sont liés les uns aux autres et vous permet de spécifier des exigences conditionnelles pour eux.
-Il existe une section pour chacun des `dataMappings`.
+Cet article traite du mappage des vues de données et décrit comment les rôles de données sont liés les uns aux autres et vous permettent de spécifier des conditions pour eux. L’article décrit également chaque type `dataMappings`.
 
-Chaque mappage valide doit produire une `DataView`, mais comme nous prenons uniquement en charge l’exécution d’une seule requête par visuel pour le moment, dans la plupart des cas, vous n’obtiendrez qu’une seule `DataView`. Toutefois, vous pouvez fournir plusieurs mappages de données avec des conditions différentes, ce qui permet :
+Chaque mappage valide produit une vue de données, mais nous prenons actuellement en charge l’exécution d’une seule requête par visuel. En général, vous n’avez qu’une seule vue de données. Toutefois, vous pouvez fournir plusieurs mappages de données dans certaines conditions, ce qui autorise :
 
 ```json
 "dataViewMappings": [
@@ -35,10 +34,10 @@ Chaque mappage valide doit produire une `DataView`, mais comme nous prenons uniq
 ]
 ```
 
-> [!NOTE]
-> Il est important de noter que Power BI crée un mappage à une vue DataView si et seulement si le mappage valide est renseigné dans `dataViewMappings`.
+Power BI crée un mappage à une vue de données si et seulement si le mappage valide est renseigné dans `dataViewMappings`.
 
-En d’autres termes, si `categorical` est défini dans `dataViewMappings`, mais que d’autres mappages, comme `table`, `single`, etc. ne le sont pas comme dans l’exemple suivant :
+En d’autres termes `categorical`, peut être défini dans `dataViewMappings`, mais d’autres mappages, tels que `table` ou `single`, peuvent ne pas l’être. Par exemple :
+
 ```json
 "dataViewMappings": [
     {
@@ -47,7 +46,8 @@ En d’autres termes, si `categorical` est défini dans `dataViewMappings`, mais
 ]
 ```
 
-Power BI produit une `DataView` avec un mappage `categorical` unique (`table` et d’autres mappages sont `undefined`) :
+Power BI produit une vue de données avec un mappage `categorical` unique, et `table` et d’autres mappages sont non définis :
+
 ```javascript
 {
     "categorical": {
@@ -60,16 +60,16 @@ Power BI produit une `DataView` avec un mappage `categorical` unique (`table` et
 
 ## <a name="conditions"></a>Conditions
 
-Décrit les conditions d’un mappage de données particulier. Vous pouvez fournir plusieurs ensembles de conditions et, si les données correspondent à l’un des ensembles de conditions décrits, le visuel accepte les données comme étant valides.
+Cette section décrit les conditions d’un mappage de données particulier. Vous pouvez fournir plusieurs ensembles de conditions et, si les données correspondent à l’un des ensembles de conditions décrits, le visuel accepte les données comme étant valides.
 
-Actuellement, pour chaque champ, vous pouvez spécifier une valeur minimale et une valeur maximale. Cela représente le nombre de champs qui peuvent être liés à ce rôle de données. 
+Actuellement, pour chaque champ, vous pouvez spécifier une valeur minimale et une valeur maximale. La valeur représente le nombre de champs qui peuvent être liés à ce rôle de données. 
 
 > [!NOTE]
 > Si un rôle de données est omis dans la condition, il peut contenir n’importe quel nombre de champs.
 
 ### <a name="example-1"></a>Exemple 1
 
-Vous pouvez faire glisser plusieurs champs dans chaque rôle de données. Dans cet exemple, nous limitons la catégorie à un champ de données et la mesure à deux champs de données.
+Vous pouvez faire glisser plusieurs champs dans chaque rôle de données. Dans cet exemple, vous limitez la catégorie à un champ de données et la mesure à deux champs de données.
 
 ```json
 "conditions": [
@@ -79,7 +79,9 @@ Vous pouvez faire glisser plusieurs champs dans chaque rôle de données. Dans c
 
 ### <a name="example-2"></a>Exemple 2
 
-Dans cet exemple, l’une des deux conditions est requise. Soit exactement un champ de données de catégorie et précisément deux mesures, soit exactement deux catégories et précisément une mesure.
+Dans cet exemple, l’une des deux conditions suivantes est requise :
+* Exactement un champ de données de catégorie et exactement deux mesures
+* Exactement deux catégories et exactement une mesure
 
 ```json
 "conditions": [
@@ -92,7 +94,7 @@ Dans cet exemple, l’une des deux conditions est requise. Soit exactement un ch
 
 Le mappage de données unique est la forme la plus simple du mappage de données. Il accepte un champ de mesure unique et vous donne le total. Si le champ est numérique, vous obtenez la somme. Dans le cas contraire, vous obtenez un nombre de valeurs uniques.
 
-Pour utiliser un mappage de données unique, vous devez définir le nom du rôle de données que vous souhaitez mapper. Ce mappage ne fonctionne qu’avec un seul champ de mesure. Si un deuxième champ est affecté, aucune vue de données n’est générée. C’est pourquoi, il est également recommandé d’inclure une condition qui limite les données à un seul champ.
+Pour utiliser un mappage de données unique, vous devez définir le nom du rôle de données que vous souhaitez mapper. Ce mappage ne fonctionne qu’avec un seul champ de mesure. Si un deuxième champ est affecté, aucune vue de données n’est générée. Il est donc recommandé d’inclure une condition qui limite les données à un seul champ.
 
 > [!NOTE]
 > Ce mappage de données ne peut pas être utilisé conjointement avec d’autres mappages de données. Il est destiné à réduire les données en une seule valeur numérique.
@@ -110,7 +112,7 @@ Pour utiliser un mappage de données unique, vous devez définir le nom du rôle
 }  
 ```
 
-La vue de données résultante contient toujours les autres types (table, catégorie, etc.), mais chaque mappage ne contient que la valeur unique. Il est recommandé d’accéder uniquement à la valeur unique.
+La vue de données résultante contient toujours les autres types (table, catégorie, et ainsi de suite), mais chaque mappage ne contient que la valeur unique. La bonne pratique consiste à accéder uniquement à la valeur unique.
 
 ```JSON
 {
@@ -135,7 +137,7 @@ Un mappage de données par catégorie permet de récupérer un ou deux regroupem
 
 ### <a name="example-4"></a>Exemple 4
 
-Voici la définition de notre exemple précédent de DataRoles.
+Voici la définition de notre exemple précédent pour les rôles de données :
 
 ```json
 "dataRole":[
@@ -152,7 +154,7 @@ Voici la définition de notre exemple précédent de DataRoles.
 ]
 ```
 
-À présent, pour le mappage :
+Voici le mappage :
 
 ```json
 "dataViewMappings": {
@@ -169,14 +171,14 @@ Voici la définition de notre exemple précédent de DataRoles.
 }
 ```
 
-Exemple simple exprimé clairement : « mapper mon DataRole `category` de façon à ce que pour chaque champ que je fais glisser dans `category`, ses données soient mappées à `categorical.categories`. Mapper également mon DataRole `measure` à `categorical.values`. »
+C’est un exemple simple. Il signifie : « Mapper mon rôle de données `category` de façon à ce que pour chaque champ que je fais glisser dans `category`, ses données soient mappées à `categorical.categories`. Mapper également mon rôle de données `measure` à `categorical.values`. »
 
-* **for...in** : inclut tous les éléments de ce rôle de données dans la requête de données.
-* **bind...to** : produit le même résultat que for...in, mais s’attend à ce que le DataRole ait une condition le limitant à un champ unique.
+* **for...in** : inclut tous les éléments de ce rôle de données dans la requête de données.
+* **bind...to** : produit le même résultat que *for...in*, mais s’attend à ce que le rôle de données ait une condition le limitant à un champ unique.
 
 ### <a name="example-5"></a>Exemple 5
 
-Dans cet exemple, nous allons utiliser les deux premiers DataRoles de l’exemple précédent, en définissant en plus `grouping` et `measure2`.
+Cet exemple utilise les deux premiers rôles de données de l’exemple précédent, et définit en plus `grouping` et `measure2`.
 
 ```json
 "dataRole":[
@@ -203,7 +205,7 @@ Dans cet exemple, nous allons utiliser les deux premiers DataRoles de l’exempl
 ]
 ```
 
-À présent, pour le mappage :
+Voici le mappage :
 
 ```json
 "dataViewMappings":{
@@ -224,11 +226,11 @@ Dans cet exemple, nous allons utiliser les deux premiers DataRoles de l’exempl
 }
 ```
 
-Ici, la différence tient à la façon dont nous mappons les valeurs par catégorie. Nous indiquons : « Mapper mes rôles de données `measure` et `measure2` à regrouper dans le rôle de données `grouping` ».
+Ici, la différence tient à la façon dont nous mappons les valeurs par catégorie. Nous indiquons : « Mapper mes rôles de données `measure` et `measure2` afin qu’ils soient regroupés d’après le rôle de données `grouping` ».
 
 ### <a name="example-6"></a>Exemple 6
 
-Voici les dataRoles.
+Voici les rôles de données :
 
 ```json
 "dataRoles": [
@@ -250,7 +252,7 @@ Voici les dataRoles.
 ]
 ```
 
-Voici le dataViewMapping.
+Voici le mappage des vues de données :
 
 ```json
 "dataViewMappings": [
@@ -277,7 +279,7 @@ Voici le dataViewMapping.
 ]
 ```
 
-La `dataview` par catégorie peut être visualisée ainsi :
+La vue de données par catégorie peut être visualisée ainsi :
 
 | Catégorie |  |  | | | |
 |-----|-----|------|------|------|------|
@@ -288,7 +290,7 @@ La `dataview` par catégorie peut être visualisée ainsi :
 | Mexico | | 300 | x | x | x |
 | Royaume-Uni | | x | x | 75 | x |
 
-Power BI génère une vue de données par catégorie. Il s’agit de l’ensemble des catégories.
+Power BI la produit comme vue de données par catégorie. Il s’agit de l’ensemble des catégories.
 
 ```JSON
 {
@@ -310,7 +312,7 @@ Power BI génère une vue de données par catégorie. Il s’agit de l’ensembl
 }
 ```
 
-Chaque catégorie est également mappée à un ensemble de valeurs. Chacune de ces valeurs est regroupée par série, c’est-à-dire des années.
+Chaque catégorie est également mappée à un ensemble de valeurs. Chacune de ces valeurs est regroupée par série, qui est exprimée sous forme d’années.
 
 Par exemple, les ventes du Canada en 2013 sont nulles, et elles se montent à 50 en 2014.
 
@@ -393,7 +395,7 @@ Avec les fonctionnalités données :
 ]
 ```
 
-La table `dataview` peut être visualisée ainsi :  
+Vous pouvez visualiser la vue des données de table comme suit :  
 
 | Pays| Année | Ventes |
 |-----|-----|------|
@@ -405,7 +407,7 @@ La table `dataview` peut être visualisée ainsi :
 | Royaume-Uni | 2014 | 150 |
 | USA | 2015 | 75 |
 
-Power BI génère une vue de données de table. Ne partez pas du principe qu’il y a un ordre.
+Power BI affiche vos données en tant que vue de données de table. Vous ne devez pas assumer que les données sont triées.
 
 ```JSON
 {
@@ -452,13 +454,13 @@ Power BI génère une vue de données de table. Ne partez pas du principe qu’i
 }
 ```
 
-Les données peuvent être agrégées en sélectionnant le champ souhaité et en cliquant sur Somme.  
+Vous pouvez agréger les données en sélectionnant le champ souhaité, puis en sélectionnant Sum.  
 
 ![Agrégation des données](./media/data-aggregation.png)
 
 ## <a name="matrix-data-mapping"></a>Mappage de données de matrice
 
-Le mappage de données de matrice est semblable au mappage de données de table, mais les lignes sont présentées de façon hiérarchique. Et l’une des valeurs `dataRole` peut être utilisée comme valeur d’en-tête de colonne.
+Le mappage de données de matrice est semblable au mappage de données de table, mais les lignes sont présentées de façon hiérarchique. Toutes les valeurs de rôle de données peuvent être utilisées comme valeur d’en-tête de colonne.
 
 ```json
 {
@@ -510,7 +512,7 @@ Le mappage de données de matrice est semblable au mappage de données de table,
 }
 ```
 
-Power BI crée une structure de données hiérarchique. La racine de l’arborescence comprend les données de la première colonne du rôle de données `Category` avec les enfants de la deuxième colonne du rôle de données.
+Power BI crée une structure de données hiérarchique. La racine de la hiérarchie d’arborescence contient les données de la colonne **Parents** du rôle de données `Category`, avec des enfants de la colonne **Children** de la table de rôles de données.
 
 Jeu de données :
 
@@ -533,11 +535,11 @@ Jeu de données :
 | Parent 2 | Enfant 3 | Petit-enfant 8 | Col 1 | 10 |
 | Parent 2 | Enfant 3 | Petit-enfant 8 | Col 2 | 13 |
 
-Le visuel Matrice principale de Power BI l’affiche sous forme d’une table.
+Le visuel de matrice principale de Power BI affiche les données sous forme de table.
 
 ![Visuel de tableau](./media/matrix-visual-smaple.png)
 
-Le visuel obtient la structure de données décrite ci-dessous (seules les deux premières lignes sont présentées) :
+Le visuel obtient sa structure de données comme décrit dans le code suivant (seules les deux premières lignes de la table sont présentées ici) :
 
 ```json
 {
@@ -614,9 +616,9 @@ Le visuel obtient la structure de données décrite ci-dessous (seules les deux 
 
 ## <a name="data-reduction-algorithm"></a>Algorithme de réduction des données
 
-Un `DataReductionAlgorithm` peut être appliqué si vous souhaitez contrôler la quantité de données reçues dans la DataView.
+Pour contrôler la quantité de données à recevoir dans la vue de données, vous pouvez appliquer un algorithme de réduction des données.
 
-Par défaut, tous les visuels personnalisés ont le paramètre DataReductionAlgorithm top appliqué avec la valeur « count » définie sur 1 000 dataPoints. Cela revient à définir les propriétés suivantes dans le fichier capabilities.json :
+Par défaut, tous les visuels personnalisés ont l’algorithme de réduction des données appliqué avec la valeur *count* définie sur 1 000 points de données. Cela revient à définir les propriétés suivantes dans le fichier *capabilities.json* :
 
 ```json
 "dataReductionAlgorithm": {
@@ -626,23 +628,23 @@ Par défaut, tous les visuels personnalisés ont le paramètre DataReductionAlgo
 }
 ```
 
-Vous pouvez modifier la valeur « count » en la définissant sur n’importe quelle valeur entière allant jusqu’à 30 000. Les visuels personnalisés basés sur R peuvent prendre en charge jusqu’à 150 000 lignes.
+Vous pouvez affecter à *count* n’importe quelle valeur entière allant jusqu’à 30 000. Les visuels personnalisés basés sur R peuvent prendre en charge jusqu’à 150 000 lignes.
 
 ## <a name="data-reduction-algorithm-types"></a>Types d’algorithmes de réduction des données
 
-Il existe quatre types de paramètres `DataReductionAlgorithm` :
+Il existe quatre types de paramètres d’algorithme de réduction des données :
 
-* `top` : si vous souhaitez limiter les données aux valeurs issues du haut du jeu de données. Les premières valeurs « count » sont extraites du jeu de données.
-* `bottom` : si vous souhaitez limiter les données aux valeurs issues du bas du jeu de données. Les dernières valeurs « count » sont extraites du jeu de données.
-* `sample` : réduit le jeu de données à l’aide d’un algorithme d’échantillonnage simple limité à un nombre « count » d’éléments. Cela signifie que les premier et dernier éléments sont inclus, avec un nombre « count » d’éléments dont les intervalles sont égaux.
-Par exemple, si vous avez un jeu de données [0, 1, 2, ... 100] et un `count: 9`, vous recevez les valeurs suivantes [0, 10, 20... 100]
-* `window` : charge une « fenêtre » de points de données à une heure contenant les éléments « count ». Actuellement, `top` et `window` sont équivalents. Un travail est en cours pour assurer la prise en charge totale d’un paramètre de fenêtrage.
+* `top` : si vous souhaitez limiter les données aux valeurs issues du haut du jeu de données. Les premières valeurs *count* sont extraites du jeu de données.
+* `bottom` : si vous souhaitez limiter les données aux valeurs issues du bas du jeu de données. Les dernières valeurs « count » sont extraites du jeu de données.
+* `sample` : réduit le jeu de données à l’aide d’un algorithme d’échantillonnage simple limité à un nombre *count* d’éléments. Cela signifie que les premier et dernier éléments sont inclus, avec un nombre *count* d’éléments dont les intervalles sont égaux.
+Par exemple, si vous avez un jeu de données [0, 1, 2 ... 100] et une valeur *count* de 9, vous obtiendrez les valeurs [0, 10, 20 ... 100].
+* `window` : charge une *fenêtre* de points de données à la fois contenant *count* éléments. Actuellement, `top` et `window` sont équivalents. Nous travaillons à la prise en charge complète d’un paramètre de fenêtrage.
 
 ## <a name="data-reduction-algorithm-usage"></a>Utilisation d’un algorithme de réduction des données
 
-Un `DataReductionAlgorithm` peut être utilisé dans les mappages `dataview` de catégorie, table ou matrice.
+Vous pouvez utiliser l’algorithme de réduction des données dans le mappage de vue de données de table, de matrice ou par catégorie.
 
-Il peut être défini en `categories` ou section de groupe de `values` pour le mappage de données de catégorie.
+Vous pouvez définir l’algorithme dans des `categories` et/ou une section de groupe de `values` pour le mappage de données par catégorie.
 
 ### <a name="example-8"></a>Exemple 8
 
@@ -677,7 +679,7 @@ Il peut être défini en `categories` ou section de groupe de `values` pour le m
 }
 ```
 
-L’algorithme de réduction des données peut être appliqué à la section `rows` du mappage `dataview` de table.
+Vous pouvez appliquer l’algorithme de réduction des données à la section `rows` de la table de mappage des vues de données.
 
 ### <a name="example-9"></a>Exemple 9
 
@@ -700,4 +702,4 @@ L’algorithme de réduction des données peut être appliqué à la section `ro
 ]
 ```
 
-L’algorithme de réduction des données peut être appliqué à la section `rows` ou `columns` du mappage `matrix` `dataview`.
+Vous pouvez appliquer l’algorithme de réduction des données aux sections `rows` et `columns` de la matrice de mappage des vues de données.

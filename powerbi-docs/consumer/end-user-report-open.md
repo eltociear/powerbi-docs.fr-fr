@@ -4,20 +4,19 @@ description: Cette rubrique montre comment les utilisateurs finaux et consommate
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 8/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
-ms.openlocfilehash: 0896d397c7cc78ce36109cf1c975b34d081169a1
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70184639"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391744"
 ---
-# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Afficher un rapport dans le service Power BI pour les *consommateurs*
+# <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Voir un rapport dans le service Power BI pour les *consommateurs*
 Un rapport est constitué d’une ou de plusieurs pages d’éléments visuels. Les rapports sont créés par des *concepteurs* Power BI et [partagés avec des *consommateurs* directement](end-user-shared-with-me.md) ou dans le cadre d’une [application](end-user-apps.md). 
 
 Il existe de nombreuses façons d’ouvrir un rapport et nous vous en montrerons deux : ouvrir à partir de la page d’accueil et ouvrir à partir d’un tableau de bord. 
@@ -31,7 +30,7 @@ Nous allons ouvrir un rapport qui a été partagé avec vous directement, puis u
    ![Page d'accueil](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Ouvrir un rapport qui a été partagé avec vous
-Les *concepteurs* Power BI peuvent partager un rapport directement avec vous. Le contenu qui est partagé de cette façon s’affiche dans le conteneur **Partagé avec moi** sur votre barre de navigation et dans la section **Partagé avec moi** de votre canevas Accueil.
+Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via un lien dans un e-mail ou en l’ajoutant à votre Accueil Power BI. Le contenu qui est partagé de cette façon s’affiche dans le conteneur **Partagé avec moi** sur votre barre de navigation et dans la section **Partagé avec moi** de votre canevas Accueil.
 
 1. Ouvrir dans le service Power BI (app.powerbi.com).
 
@@ -45,13 +44,13 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous. Le
 
 4. Sélectionnez simplement la *carte* du rapport pour ouvrir le rapport.
 
-   ![page de rapport](./media/end-user-report-open/power-bi-report-open.png)
+   ![page de rapport](./media/end-user-report-open/power-bi-open.png)
 
 5. Notez la présence d’onglets sur le côté gauche.  Chaque onglet représente une *page* du rapport. La page *Growth Opportunity* est actuellement ouverte. Sélectionnez l’onglet *YTD Category* pour ouvrir à la place cette page du rapport. 
 
    ![onglets des pages du rapport](./media/end-user-report-open/power-bi-ytd.png)
 
-6. Pour l’instant, nous voyons toute la page du rapport. Pour changer l’affichage (zoom) de la page, sélectionnez la liste déroulante Afficher dans le coin supérieur droit ( **>** ) et choisissez **Taille réelle**.
+6. Pour l’instant, nous voyons toute la page du rapport. Pour changer l’affichage (zoom) de la page, sélectionnez la liste déroulante Afficher en haut à droite et choisissez **Taille réelle**.
 
    ![modifier le zoom](./media/end-user-report-open/power-bi-fit-new.png)
 
@@ -66,7 +65,7 @@ Si vous avez reçu des applications de collègues ou d’AppSource, ces applicat
 
    ![Page d'accueil](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Sélectionnez une des applications pour l’ouvrir. Selon les options définies par le *concepteur* de l’application, celle-ci ouvrira un tableau de bord, un rapport ou une liste de contenu d’application. Si vous sélectionnez l’application :
+8. Sélectionnez une des applications pour l’ouvrir. Selon les options définies par le *concepteur* de l’application, celle-ci ouvrira un tableau de bord ou un rapport. Si vous sélectionnez l’application :
     - le rapport s’ouvre, c’est parti.
     - un tableau de bord s’ouvre, consultez ***Ouvrir un rapport à partir d’un tableau de bord*** ci-dessous.
 
@@ -95,5 +94,5 @@ Une fois que vous serez familiarisé avec la navigation dans le service Power BI
 - Et plus encore
 
 ## <a name="next-steps"></a>Étapes suivantes
-Il y a de [très nombreuses façons d’interagir avec un rapport](end-user-reading-view.md).  Commencez par les explorer en sélectionnant chaque onglet sur le côté du canevas de rapport.
+[Ouvrir et voir un tableau de bord](end-user-dashboard-open.md)
 

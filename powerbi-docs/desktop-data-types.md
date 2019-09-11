@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 04/10/2019
+ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 00ff6a901ef4056e15ccc0087f0783826b1a64b2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61309001"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391786"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -44,7 +44,7 @@ Power BI Desktop prend en charge trois types numériques :
 
 **Nombre décimal fixe** : possède un emplacement fixe pour le séparateur décimal. Le séparateur décimal a toujours quatre chiffres à sa droite et autorise 19 chiffres de précision.  La plus grande valeur, qu’il peut représenter est 922 337 203 685 477,5807 (positif ou négatif).  Le type Nombre décimal fixe est utile dans les cas où l’arrondi peut introduire des erreurs.  Si vous utilisez beaucoup de nombres ayant de petites valeurs fractionnelles, il y a un risque de cumul qui peut entraîner une légère imprécision.  Les valeurs situées après les quatre chiffres à droite du séparateur décimal étant tronquées, le type Nombre décimal fixe peut vous aider à éviter ces genres d’erreurs.   Si vous connaissez SQL Server, ce type de données correspond au format Décimal de SQL Server (19,4) ou au type de données Devise dans Power Pivot. 
 
-**Nombre entier** : représente un entier 64 bits (huit octets). S’agissant d’un entier, il ne comporte aucun chiffre à droite du séparateur décimal. Il autorise 19 chiffres ; les nombres entiers positifs ou négatifs compris entre -9 223 372 036 854 775 808 (-2^63) et 9 223 372 036 854 775 807 (2^63-1).  Il peut représenter le plus grand nombre possible parmi les divers types de données numériques.  Comme Nombre décimal fixe, le type Nombre entier peut être utile dans les cas où vous avez besoin de contrôler l’arrondi. 
+**Nombre entier** : représente un entier 64 bits (huit octets). S’agissant d’un entier, il ne comporte aucun chiffre à droite du séparateur décimal. Il autorise 19 chiffres ; les nombres entiers positifs ou négatifs compris entre -9 223 372 036 854 775 807 (-2^63+1) et 9 223 372 036 854 775 806 (2^63-2). Il peut représenter le plus grand nombre possible parmi les divers types de données numériques.  Comme Nombre décimal fixe, le type Nombre entier peut être utile dans les cas où vous avez besoin de contrôler l’arrondi. 
 
 > [!NOTE]
 >  Le modèle de données Power BI Desktop prend en charge les valeurs d’entier 64 bits, mais le plus grand nombre de visuels pouvant être exprimé de façon sûre est 9,007,199,254,740,991 (2^53-1) en raison des limitations de JavaScript. Si vous travaillez avec des chiffres supérieurs dans votre modèle de données, vous pouvez réduire la taille par le biais de calculs avant de les ajouter à un visuel. 

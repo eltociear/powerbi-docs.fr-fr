@@ -1,6 +1,6 @@
 ---
-title: Info-bulles de visuels
-description: Les visuels Power BI peuvent afficher des info-bulles
+title: Info-bulles dans les visuels Power BI
+description: Cet article explique comment afficher des info-bulles dans les visuels Power BI.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -9,32 +9,32 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 286c5eef2c341ad77c351008b321992597bef292
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5ad14c632955c42607206dd09a16a8fdb3670e92
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425640"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237374"
 ---
-# <a name="power-bi-visuals-tooltips"></a>Info-bulles de visuels Power BI
+# <a name="tooltips-in-power-bi-visuals"></a>Info-bulles dans les visuels Power BI
 
-Les visuels peuvent désormais utiliser la prise en charge de l’info-bulle de Power BI. Les info-bulles Power BI gèrent les interactions suivantes :
+Les visuels peuvent maintenant utiliser la prise en charge des info-bulles Power BI. Les info-bulles Power BI gèrent les interactions suivantes :
 
-Afficher une info-bulle.
-Masquer une info-bulle.
-Déplacer une info-bulle.
+* Afficher une info-bulle.
+* Masquer une info-bulle.
+* Déplacer une info-bulle.
 
-Les info-bulles peuvent afficher un élément textuel avec un titre, une valeur avec une couleur et une opacité données pour des coordonnées spécifiées. Ces données sont fournies à l’API. Et l’hôte Power BI l’affiche de la même façon qu’il affiche des info-bulles pour des visuels natifs.
+Les info-bulles peuvent afficher un élément textuel avec un titre, une valeur dans une couleur donnée et une opacité aux coordonnées spécifiées. Ces informations sont transmises à l’API, et l’hôte Power BI les affiche de la même façon qu’il affiche les info-bulles dans des visuels natifs.
 
-Exemple : info-bulles de l’exemple de BarChart.
+L’image suivante montre une info-bulle dans un exemple de graphique à barres :
 
-![Info-bulles de l’exemple de BarChart](./media/tooltips-in-samplebarchart.png)
+![Info-bulles dans un exemple de graphique à barres](./media/tooltips-in-samplebarchart.png)
 
-L’info-bulle ci-dessus illustre une catégorie et une valeur de barre uniques. Elle peut être étendue pour afficher plusieurs valeurs au sein d’une seule et même info-bulle.
+L’image d’info-bulle précédente illustre une catégorie et une valeur de barre uniques. Vous pouvez étendre une seule info-bulle pour qu’elle affiche plusieurs valeurs.
 
-## <a name="handling-tooltips"></a>Gestion des info-bulles
+## <a name="manage-tooltips"></a>Gérer les info-bulles
 
-« ITooltipService » est l’interface par le biais de laquelle vous gérez les info-bulles. Cette interface permet d’informer l’hôte qu’une info-bulle doit être affichée, supprimée ou déplacée.
+« ITooltipService » est l’interface par le biais de laquelle vous gérez les info-bulles. Elle informe l’hôte qu’une info-bulle doit être affichée, supprimée ou déplacée.
 
 ```typescript
     interface ITooltipService {
@@ -45,21 +45,23 @@ L’info-bulle ci-dessus illustre une catégorie et une valeur de barre uniques.
     }
 ```
 
-Votre visuel doit écouter les événements de souris intérieurs et appeler les délégués `show()`, `move()` et `hide()` si nécessaire avec le contenu approprié renseigné dans les objets `Tooltip****Options`.
+Votre visuel doit écouter les événements de souris qui s’y produisent et appeler les délégués `show()`, `move()` ou `hide()`, selon le cas, avec le contenu approprié rempli dans les objets `Tooltip****Options`.
 `TooltipShowOptions` et `TooltipHideOptions` définissent à leur tour les éléments à afficher et le comportement à adopter dans ces événements.
-Étant donné que l’appel de ces méthodes implique des événements utilisateur tels que des déplacements de souris ou des événements tactiles, il est judicieux de créer des écouteurs pour ces événements, qui, à leur tour, invoquent les membres `TooltipService`.
+
+L’appel de ces méthodes implique des événements utilisateur tels que des déplacements de souris et des événements tactiles. Il est donc judicieux de créer des écouteurs pour ces événements, qui, à leur tour, appellent les membres `TooltipService`.
 Notre exemple s’agrège dans une classe appelée `TooltipServiceWrapper`.
 
-### <a name="tooltipservicewrapper-class"></a>Classe TooltipServiceWrapper
+### <a name="the-tooltipservicewrapper-class"></a>La classe TooltipServiceWrapper
 
-L’idée de base de cette classe est de contenir l’instance du `TooltipService`, d’écouter les événements de souris D3 sur les éléments pertinents, puis d’appeler les délégués `show()` et `hide()` si nécessaire.
-La classe contient et gère l’état et la logique appropriés de ces événements, principalement adaptés à l’interfaçage avec le code D3 sous-jacent. L’interfaçage et la conversion D3 ne sont pas traités dans ce document.
+L’idée de base qui sous-tend cette classe est de stocker l’instance de `TooltipService`, d’écouter les événements de souris D3 sur les éléments pertinents, puis d’appeler les éléments `show()` et `hide()` si nécessaire.
 
-L’exemple de code complet se trouve dans le [référentiel visuel SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
+La classe stocke et gère l’état et la logique appropriés de ces événements, qui sont principalement destinés à l’interfaçage avec le code D3 sous-jacent. L’interfaçage et la conversion D3 ne sont pas traités dans cet article.
 
-### <a name="creating-tooltipservicewrapper"></a>Création d’une classe TooltipServiceWrapper
+L’exemple de code complet est disponible dans le [dépôt de visuels SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-Le constructeur BarChart possède maintenant un membre `tooltipServiceWrapper`, qui est instancié dans le constructeur avec l’instance `tooltipService` de l’hôte.
+### <a name="create-tooltipservicewrapper"></a>Créer TooltipServiceWrapper
+
+Le constructeur BarChart compte maintenant un membre `TooltipServiceWrapper`, qui est instancié dans le constructeur avec l’instance `tooltipService` de l’hôte.
 
 ```typescript
         private tooltipServiceWrapper: ITooltipServiceWrapper;
@@ -89,7 +91,7 @@ La classe `TooltipServiceWrapper` contient l’instance `tooltipService`, égale
 
 Le point d’entrée unique de cette classe pour enregistrer les écouteurs d’événements est la méthode `addTooltip`.
 
-### <a name="addtooltip-method"></a>Méthode addTooltip
+### <a name="the-addtooltip-method"></a>La méthode addTooltip
 
 ```typescript
         public addTooltip<T>(
@@ -106,20 +108,19 @@ Le point d’entrée unique de cette classe pour enregistrer les écouteurs d’
         }
 ```
 
-* **selection: d3.Selection<Element>**
-* Éléments D3 sur lesquels les info-bulles sont gérées
-* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]**
-* Délégué pour renseigner le contenu d’info-bulle (élément à afficher) par contexte
-* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId**
-* Délégué pour récupérer l’ID de point de données (inutilisé dans cet exemple) 
-* **reloadTooltipDataOnMouseMove?: boolean**
-* Valeur booléenne indiquant s’il convient d’actualiser les données d’info-bulle pendant un événement mouseMove (inutilisée dans cet exemple)
+* **selection: d3.Selection<Element>**  : éléments D3 sur lesquels les info-bulles sont gérées.
 
-Comme vous le voyez, la méthode `addTooltip` est fermée sans aucune action si l’instance `tooltipService` est désactivée ou en l’absence de véritable sélection.
+* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]**  : délégué pour remplir le contenu de l’info-bulle (élément à afficher) selon le contexte.
 
-### <a name="call-of-show-method-to-display-a-tooltip"></a>Appel de la méthode Show pour afficher une info-bulle
+* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId** : délégué pour récupérer l’ID de point de données (inutilisé dans cet exemple). 
 
-`addTooltip` écoute ensuite l’événement `mouseover` D3.
+* **reloadTooltipDataOnMouseMove? boolean** : valeur booléenne qui indique s’il faut actualiser les données de l’info-bulle pendant un événement MouseMove (inutilisée dans cet exemple).
+
+Comme vous le voyez, l’exécution de la méthode `addTooltip` s’arrête sans aucune action si l’instance `tooltipService` est désactivée ou en l’absence de véritable sélection.
+
+### <a name="call-the-show-method-to-display-a-tooltip"></a>Appeler la méthode show pour afficher une info-bulle
+
+La méthode `addTooltip` écoute ensuite l’événement D3 `mouseover`, comme dans le code suivant :
 
 ```typescript
         ...
@@ -148,22 +149,21 @@ Comme vous le voyez, la méthode `addTooltip` est fermée sans aucune action si 
         });
 ```
 
-* **makeTooltipEventArgs**
-* Extrait le contexte des éléments sélectionnés D3 dans un tooltipEventArgs. Calcule également les coordonnées.
-* **getTooltipInfoDelegate**
-* Génère ensuite le contenu de l’info-bulle à partir de tooltipEventArgs. En raison de la logique du visuel, il s’agit d’un rappel de la classe BarChart. Il s’agit du contenu du texte réel à afficher dans l’info-bulle.
-* **getDataPointIdentity**
-* Inutilisé dans cet exemple.
-* **this.visualHostTooltipService.show**
-* Appel destiné à afficher l’info-bulle.  
+* **makeTooltipEventArgs** : Extrait le contexte des éléments sélectionnés D3 dans un tooltipEventArgs. Calcule également les coordonnées.
+
+* **getTooltipInfoDelegate** : génère ensuite le contenu de l’info-bulle à partir de tooltipEventArgs. C’est un rappel de la classe BarChart, dicté par la logique du visuel. Il s’agit du contenu du texte réel à afficher dans l’info-bulle.
+
+* **getDataPointIdentity** : inutilisé dans cet exemple.
+
+* **this.visualHostTooltipService.show** : appel pour afficher l’info-bulle.  
 
 Une gestion supplémentaire est disponible dans l’exemple correspondant aux événements `mouseout` et `mousemove`.
 
 Pour plus d’informations, consultez [Référentiel visuel SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-### <a name="populating-the-tooltip-content-by-gettooltipdata-method"></a>Remplissage du contenu d’info-bulle à l’aide de la méthode getTooltipData
+### <a name="populate-the-tooltip-content-by-the-gettooltipdata-method"></a>Remplir le contenu de l’info-bulle à l’aide de la méthode getTooltipData
 
-Le `BarChart` a été ajouté avec un membre `getTooltipData` qui extrait simplement la catégorie, la valeur et la couleur du point de données dans un élément VisualTooltipDataItem[].
+La classe BarChart a été ajoutée avec un membre `getTooltipData`, qui extrait simplement les éléments `category`, `value`et `color` du point de données dans un élément VisualTooltipDataItem[].
 
 ```typescript
         private static getTooltipData(value: any): VisualTooltipDataItem[] {
@@ -176,11 +176,11 @@ Le `BarChart` a été ajouté avec un membre `getTooltipData` qui extrait simple
         }
 ```
 
-Dans l’implémentation ci-dessus, le membre `header` est constant, mais il peut être utilisé pour des implémentations plus complexes, qui requièrent des valeurs dynamiques. Vous pouvez renseigner le `VisualTooltipDataItem[]` avec plusieurs éléments, qui ajouteront plusieurs lignes à l’info-bulle. Il peut être utile dans les visuels, tels que les graphiques à barres empilées dans lesquels l’info-bulle peut afficher des données provenant de plusieurs points de données.
+Dans l’implémentation précédente, le membre `header` est constant, mais vous pouvez l’utiliser dans des implémentations plus complexes qui requièrent des valeurs dynamiques. Vous pouvez remplir `VisualTooltipDataItem[]` avec plusieurs éléments, et ajouter ainsi des lignes supplémentaires à l’info-bulle. Cela peut être utile dans les visuels tels que les graphiques à barres empilées, où l’info-bulle affiche parfois des données issues de plusieurs points de données.
 
-### <a name="calling-addtooltip-method"></a>Appel de la méthode addTooltip
+### <a name="call-the-addtooltip-method"></a>Appeler la méthode addTooltip
 
-La dernière étape consiste à appeler `addTooltip` lorsque les données réelles peuvent changer. Cet appel a eu lieu dans la méthode `BarChart.update()`. Un appel est donc effectué pour surveiller la sélection de tous les éléments « bar », en transmettant uniquement l’élément `BarChart.getTooltipData()` comme indiqué ci-dessus.
+La dernière étape consiste à appeler la méthode `addTooltip` en cas de changement des données existantes. Cet appel se produit dans la méthode `BarChart.update()`. Un appel est effectué pour surveiller la sélection de tous les éléments « bar », en passant uniquement l’élément `BarChart.getTooltipData()`, comme indiqué plus haut.
 
 ```typescript
         this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),
@@ -188,9 +188,9 @@ La dernière étape consiste à appeler `addTooltip` lorsque les données réell
             (tooltipEvent: TooltipEventArgs<number>) => null);
 ```
 
-## <a name="adding-report-page-tooltips"></a>Ajout d’info-bulles de page de rapport
+## <a name="add-report-page-tooltips"></a>Ajouter des info-bulles de page de rapport
 
-Pour ajouter la prise en charge des info-bulles de page de rapport, la plupart des modifications se trouvent dans capabilities.json.
+Pour ajouter la prise en charge des info-bulles de page de rapport, vous effectuez la plupart des modifications dans le fichier *capabilities.json*.
 
 Exemple de schéma :
 
@@ -208,19 +208,21 @@ Exemple de schéma :
 }
 ```
 
-La définition des info-bulles de page de rapport peut être effectuée dans le volet Format.
+Vous pouvez définir des info-bulles de page de rapport dans le volet **Format**.
 
 ![Info-bulle de page de rapport](media/report-page-tooltip.png)
 
-`supportedTypes` est la configuration des info-bulles prise en charge par le visuel et reflétée également dans les champs. `default` spécifie si la liaison « automatique » des info-bulles par le biais du champ de données est prise en charge. Un canevas spécifie si les info-bulles de page de rapport sont prises en charge.
+* `supportedTypes` : configuration des info-bulles qui est prise en charge par le visuel et reflétée également dans les champs. 
+   * `default` : spécifie si la liaison « automatique » des info-bulles par le biais du champ de données est prise en charge. 
+   * `canvas` : spécifie si les info-bulles de page de rapport sont prises en charge.
 
-Élément `roles` facultatif. Une fois défini, cet élément détermine les rôles de données qui doivent être liés à l’option d’info-bulle sélectionnée également dans des champs.
+* `roles` : (facultatif) quand cet élément est défini, il détermine les rôles de données qui sont liés à l’option d’info-bulle sélectionnée également dans les champs.
 
-Pour plus d’informations, consultez les instructions d’utilisation des info-bulles de page de rapport dans [Report Page Tooltips](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) (Info-bulles de page de rapport).
+Pour plus d’informations, consultez les [conseils d’utilisation des info-bulles de page de rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
 
-Pour afficher l’info-bulle de page de rapport, dès l’appel de `ITooltipService.Show(options: TooltipShowOptions)` ou `ITooltipService.Move(options: TooltipMoveOptions)`, l’hôte Power BI consomme l’ID selectionId (propriété `identities` de l’argument `options` ci-dessus). L’ID selectionId doit représenter les données sélectionnées (catégorie, série, etc.) de l’élément que vous avez pointé pour être récupéré par l’info-bulle.
+Pour afficher l’info-bulle de page de rapport, une fois que l’hôte Power BI a appelé `ITooltipService.Show(options: TooltipShowOptions)` ou `ITooltipService.Move(options: TooltipMoveOptions)`, il utilise selectionId (propriété `identities` de l’argument `options` précédent). Pour être récupéré par l’info-bulle, selectionId doit représenter les données sélectionnées (catégorie, série, etc.) de l’élément que vous avez pointé.
 
-Exemple d’envoi de l’ID selectionId aux appels d’affichage d’info-bulle :
+Le code suivant montre un exemple d’envoi de selectionId aux appels d’affichage de l’info-bulle :
 
 ```typescript
     this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),

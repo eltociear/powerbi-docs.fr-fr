@@ -1,21 +1,21 @@
 ---
 title: Analytique incorporée permettant d’incorporer du contenu Power BI dans une application pour les clients
 description: Découvrez comment intégrer ou incorporer un rapport, un tableau de bord ou une vignette dans une application avec les API Power BI dans le cadre de l’analytique incorporée pour vos clients. Découvrez comment intégrer Power BI dans votre application à l’aide de logiciels et d’outils d’analytique incorporée, ainsi que d’outils d’informatique décisionnelle incorporés.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
-ms.reviewer: nishalit
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
+ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: e945e19505d7342cf3ba2236b4811e87a69730ab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8fd87174a1f94ac8a6472238164298c47aa5691e
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710952"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391805"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour vos clients
 
@@ -198,9 +198,9 @@ Pour obtenir la valeur **ApplicationSecret**, effectuez les étapes suivantes :
 
     ![Choisir une application](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
 
-4. Sélectionnez **certificats et clés secrètes** sous **gérer**.
+4. Sélectionnez **Certificats et secrets** sous **Gérer**.
 
-5. Sélectionnez **nouvelles clés secrètes de client**.
+5. Sélectionnez **Nouvelle clé secrète client**.
 
 6. Entrez un nom dans la zone **Description** et sélectionnez une durée. Puis sélectionnez **Enregistrer** afin d’obtenir la **valeur** pour votre application. Lorsque vous fermez le volet **Clés** après l’enregistrement de la valeur de la clé, le champ de valeur apparaît uniquement masqué. À ce stade, vous n’êtes pas en mesure de récupérer la valeur de la clé. Si vous perdez la valeur de la clé, créez-en une autre dans le portail Azure.
 

@@ -1,6 +1,6 @@
 ---
-title: Trier
-description: Comportement de tri par défaut du visuel Power BI.
+title: Options de tri pour les visuels Power BI
+description: Cet article décrit le comportement de tri par défaut pour les visuels Power BI.
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f3d913e2bce34850dfae4c9486b2e43c78521a58
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: cecec80dc9fe8570535cbd1e0c1e7114363472d8
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424513"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236688"
 ---
-# <a name="sorting-options"></a>Options de tri
+# <a name="sorting-options-for-power-bi-visuals"></a>Options de tri pour les visuels Power BI
 
-`Sorting` spécifie le comportement de tri par défaut du visuel.
-La fonctionnalité requiert l’un des paramètres décrits ci-dessous :
+Cet article décrit comment les options de *tri* spécifient le comportement de tri pour les visuels Power BI. 
+
+La fonction de tri nécessite l’un des paramètres suivants.
 
 ## <a name="default-sorting"></a>Tri par défaut
 
-L’option `default` est la forme la plus simple. Elle permet de trier les données présentées dans la section « DataMappings ».
-Cette option permet à l’utilisateur de trier la section « DataMappings », et de spécifier le sens du tri.
+L’option `default` est la forme la plus simple. Elle permet de trier les données présentées dans la section « DataMappings ». Cette option permet à l’utilisateur de trier les mappages de données, et spécifie le sens du tri.
 
 ```json
     "sorting": {
@@ -36,14 +36,11 @@ Cette option permet à l’utilisateur de trier la section « DataMappings », e
 
 ## <a name="implicit-sorting"></a>Tri implicite
 
-`implicit` est un tri avec un paramètre de tableau, `clauses`, qui décrit le tri pour chaque rôle de données.
-`implicit` signifie que l’utilisateur du visuel ne peut pas modifier l’ordre de tri.
-Power BI n’affiche pas les options de tri dans le menu du visuel. Toutefois, Power BI trie les données en fonction des paramètres spécifiés.
+Le tri implicite est un tri avec le paramètre de tableau `clauses`, qui décrit le tri pour chaque rôle de données. `implicit` signifie que l’utilisateur du visuel ne peut pas changer l’ordre de tri. Power BI n’affiche pas les options de tri dans le menu du visuel. Toutefois, Power BI trie les données en fonction des paramètres spécifiés.
 
-Les paramètres `clauses` peuvent contenir plusieurs objets avec deux paramètres :
+Les paramètres `clauses` peuvent contenir plusieurs objets avec deux paramètres :
 
-- `role` : détermine un `DataMapping` pour le tri.
-
+- `role` : détermine `DataMapping` pour le tri.
 - `direction` : détermine le sens du tri (1 = croissant, 2 = décroissant).
 
 ```json
@@ -65,4 +62,4 @@ Les paramètres `clauses` peuvent contenir plusieurs objets avec deux paramètre
 
 ## <a name="custom-sorting"></a>Tri personnalisé
 
-`custom` signifie que le tri est géré par le développeur dans le code du visuel.
+Le tri personnalisé signifie que le tri est géré par le développeur dans le code du visuel.

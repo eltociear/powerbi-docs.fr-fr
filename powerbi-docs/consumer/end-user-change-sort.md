@@ -4,19 +4,18 @@ description: Modifier le mode tri d’un graphique dans un rapport Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: aa6193045ba1c399eaae1b48bf813738edba99f1
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 98a91b0651e7a357f0ba0462f6ba8734c64ab162
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750844"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302743"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Modifier le mode tri d’un graphique dans un rapport Power BI
 Dans un rapport Power BI, vous pouvez trier la plupart des visualisations par ordre alphabétique en fonction des noms de catégories du graphique ou des valeurs numériques de chaque catégorie. Par exemple, ce graphique est trié par la catégorie **nom de magasin**.
@@ -31,12 +30,12 @@ Il est facile de passer du tri par catégorie (nom de magasin) au tri par valeur
    ![vidéo montrant la sélection de Trier par, puis Croissant et Décroissant](media/end-user-change-sort/sort.gif)
 
 > [!NOTE]
-> Certains visuels ne peuvent pas être triés. Par exemple, les visuels suivants ne peuvent pas être triés : Arborescence, Carte géographique, Carte choroplèthe, Nuage de points, Jauge, Carte, Carte de plusieurs ligne, Cascade.
+> Certains visuels ne peuvent pas être triés. C’est le cas, par exemple, des visuels suivants : treemap, carte géographique, carte choroplèthe, nuage de points, jauge, carte, cascade.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Enregistrement de vos modifications de l’ordre de tri
-Les rapports Power BI conservent les filtres, les sélecteurs, le tri et les autres changements que vous apportez aux vues de données. Ainsi, si vous quittez un rapport et que vous y revenez plus tard, vos modifications sont enregistrées.  Si vous voulez annuler vos changements et revenir aux paramètres du concepteur du rapport, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus du haut. 
+Les rapports Power BI conservent les filtres, les sélecteurs, le tri et les autres changements que vous apportez aux vues de données. Ainsi, si vous quittez un rapport et que vous y revenez plus tard, vos modifications sont enregistrées.  Si vous voulez annuler vos changements et revenir aux paramètres du concepteur du rapport, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus plus haut. 
 
-![Tri persistant](media/end-user-change-sort/power-bi-reset-to-default.png)
+![Tri persistant](media/end-user-change-sort/power-bi-reset.png)
 
 Cependant, si le bouton **Rétablir les valeurs par défaut** est grisé, cela signifie que le concepteur du rapport a désactivé la possibilité d’enregistrer vos changements.
 

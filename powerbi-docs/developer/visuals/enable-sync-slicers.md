@@ -1,6 +1,6 @@
 ---
-title: Activer Synchroniser les segments
-description: Comment ajouter la fonctionnalité de synchronisation des segments pour des visuels Power BI
+title: Activer la fonctionnalité Synchroniser les segments dans les visuels Power BI
+description: Cet article explique comment ajouter la fonctionnalité Synchroniser les segments aux visuels Power BI.
 author: EugeneElkin
 ms.author: v-evelk
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 9966475e8bcaccad2090451b47ef09ef0a9af125
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 4d7b73a5d06f34fd197464d4444d0e19d6c1c026
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425019"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237214"
 ---
-# <a name="sync-slicers"></a>Synchroniser les segments
+# <a name="sync-slicers-in-power-bi-visuals"></a>Synchroniser les segments dans les visuels Power BI
 
-Pour prendre en charge la [synchronisation des segments](https://docs.microsoft.com/power-bi/desktop-slicers), votre visuel de segment personnalisé doit utiliser l’API 1.13 ou une version ultérieure.
+Pour prendre en charge la fonctionnalité [Synchroniser les segments](https://docs.microsoft.com/power-bi/desktop-slicers), votre visuel de segment personnalisé doit utiliser l’API version 1.13 ou ultérieure.
 
-Le deuxième aspect nécessaire est l’option activée dans `capabilities.json` (voir un exemple ci-dessous).
+De plus, vous devez activer l’option dans le fichier *capabilities.json*, comme illustré dans le code suivant :
 
 ```json
 {
@@ -34,11 +34,11 @@ Le deuxième aspect nécessaire est l’option activée dans `capabilities.json`
 }
 ```
 
-Après les modifications dans `capabilities.json`, vous pouvez voir le panneau des options de synchronisation des segments lorsque vous cliquez sur votre visuel de segment personnalisé.
+Une fois que vous avez mis à jour le fichier *capabilities.json*, vous voyez le volet d’options **Synchroniser les segments** quand vous sélectionnez votre visuel de segment personnalisé.
 
 > [!NOTE]
-> Si votre segment contient plus d’un champ (catégorie ou mesure), la fonctionnalité est désactivée, car la synchronisation des segments ne prend pas en charge plusieurs champs.
+> La fonctionnalité Synchroniser les segments peut s’utiliser pour un seul champ. Si votre segment comporte plusieurs champs (**Catégorie** ou **Mesure**), la fonctionnalité est désactivée.
 
-![Volet Synchroniser les segments](./media/sync-slicers-panel.png)
+![Le volet « Synchroniser les segments »](./media/sync-slicers-panel.png)
 
-Dans le panneau, vous pouvez voir que la visibilité de votre segment et son filtrage peuvent être appliqués à plusieurs pages de rapport.
+Dans le panneau **Synchroniser les segments**, vous pouvez voir que les options de visibilité et de filtrage de votre segment sont applicables à plusieurs pages de rapport.

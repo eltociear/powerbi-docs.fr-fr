@@ -1,6 +1,6 @@
 ---
-title: Interactions entre les visuels
-description: Comment vérifier qu’un visuel Power BI autorise les interactions visuelles
+title: Interactions entre les visuels dans les visuels Power BI
+description: Cet article explique comment vérifier si les visuels Power BI doivent autoriser les interactions entre les visuels.
 author: shaym83
 ms.author: shaym
 manager: rkarlin
@@ -9,26 +9,25 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 739e59c6da3c1e464e0462a928bc4f33ea0d01f8
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f2fb2d451deb63b5e9c08472654e28d0e1a469db
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424490"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236633"
 ---
-# <a name="visuals-interactions"></a>Interactions entre les visuels
+# <a name="visual-interactions-in-power-bi-visuals"></a>Interactions entre les visuels dans les visuels Power BI
 
-Les visuels peuvent interroger la valeur de l’indicateur « allowInteractions », indiquant si le visuel doit autoriser les interactions visuelles.
-Par exemple, les visuels sont interactifs lors de l’affichage ou de la modification d’un rapport, mais pas dans le cas d’un affichage au sein d’un tableau de bord.
-Ces interactions sont le clic, le panoramique, le zoom, la sélection et d’autres.
-Notez que les info-bulles doivent être activées dans tous les scénarios, quel que soit l’indicateur.
+Les visuels peuvent interroger la valeur de l’indicateur `allowInteractions`, qui spécifie si le visuel doit autoriser les interactions entre les visuels. Par exemple, les visuels sont interactifs pendant l’affichage ou la modification d’un rapport, mais pas quand ils sont affichés dans un tableau de bord. Les interactions possibles sont le *clic*, le *panoramique*, le *zoom* et la *sélection*, entre autres. 
 
-L’indicateur « allowInteractions » est passé en tant que valeur booléenne pendant l’initialisation du visuel, en tant que membre de l’interface IVisualHost.
+> [!NOTE]
+> Vous devez activer les info-bulles dans tous les scénarios, quel que soit l’indicateur utilisé.
 
-Dans tout scénario Power BI nécessitant que les visuels ne soient pas interactifs (par exemple, des vignettes de tableau de bord), l’indicateur « allowInteractions » est défini sur false.
-Dans le cas contraire (par exemple, un rapport), « allowInteractions » aura la valeur true.
+L’indicateur `allowInteractions` est passé en tant que valeur booléenne durant l’initialisation du visuel, comme membre de l’interface IVisualHost.
 
-Pour plus d’informations, consultez [Référentiel visuel SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001)
+Dans les scénarios Power BI où les visuels ne doivent pas être interactifs (par exemple, les vignettes de tableau de bord), l’indicateur `allowInteractions` est défini sur `false`. Dans tous les autres scénarios (par exemple, les rapports), `allowInteractions` est défini sur `true`.
+
+Pour plus d’informations, consultez [Référentiel visuel SampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/59a47935d8f5272ce145fe804193599ddb7e2001).
 
 ```typescript
    ...

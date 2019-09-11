@@ -1,6 +1,6 @@
 ---
-title: Fonctionnalités
-description: Fonctionnalités et propriétés des visuels Power BI
+title: Fonctionnalités et propriétés des visuels Power BI
+description: Cet article décrit les fonctionnalités et propriétés des visuels Power BI.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f6bb4293a44f98f2f8098fb197c7b406b618d211
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5c32a1679f09e05d134da7f27ffa0cee90d75fab
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425456"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237294"
 ---
-# <a name="power-bi-visual-capabilities"></a>Fonctionnalités visuelles Power BI
+# <a name="capabilities-and-properties-of-power-bi-visuals"></a>Fonctionnalités et propriétés des visuels Power BI 
 
-Les fonctionnalités fournissent des informations à l’hôte concernant votre visuel. Toutes les propriétés du modèle de fonctionnalités sont `optional`
+Vous utilisez des fonctionnalités pour transmettre à l’hôte des informations relatives à votre visuel. Toutes les propriétés du modèle de fonctionnalités sont `optional`.
 
-Les objets racine des fonctionnalités du visuel sont `dataRoles`, `dataViewMappings`, et ainsi de suite.
+Les objets racine des fonctionnalités d’un visuel sont `dataRoles`, `dataViewMappings`, etc.
 
 ```json
 {
@@ -34,29 +34,29 @@ Les objets racine des fonctionnalités du visuel sont `dataRoles`, `dataViewMapp
 
 ```
 
-## <a name="define-the-data-fields-your-visual-expects---dataroles"></a>Définir les champs de données attendus par votre visuel - `dataRoles`
+## <a name="define-the-data-fields-that-your-visual-expects-dataroles"></a>Définir les champs de données attendus par votre visuel : dataRoles
 
-Pour définir des champs pouvant être liés à des données, nous utilisons `dataRoles` qui prend un tableau d’objets `DataViewRole`, définissant toutes les propriétés nécessaires.
+Pour définir les champs qui peuvent être liés à des données, utilisez `dataRoles`. `dataRoles` prend un tableau d’objets `DataViewRole`, qui définit toutes les propriétés requises.
 
 ### <a name="properties"></a>Propriétés
 
-* **name** : nom interne de ce champ de données (doit être unique)
-* **kind** : type de champ :
-    * `Grouping` : valeurs discrètes utilisées pour le regroupement des champs de mesure
-    * `Measure` : Valeurs de données numériques
-    * `GroupingOrMeasure` : peut être utilisé comme un regroupement ou une mesure
-* **DisplayName** : nom affiché à l’utilisateur dans le volet des propriétés
-* **description** : brève description du champ (facultatif)
-* **requiredTypes** : type de données nécessaire pour ce rôle de données. Toutes les valeurs qui ne correspondent pas auront une valeur null (facultatif)
-* **preferredTypes** : type de données préféré pour ce rôle de données (facultatif)
+* **name** : nom interne de ce champ de données (doit être unique).
+* **kind** : type du champ :
+    * `Grouping` : valeurs discrètes utilisées pour regrouper les champs de mesure.
+    * `Measure` : valeurs de données numériques.
+    * `GroupingOrMeasure` : valeurs qui peuvent être utilisées comme un regroupement ou une mesure.
+* **displayName** : nom affiché à l’utilisateur dans le volet **Propriétés**.
+* **description** : brève description du champ (facultatif).
+* **requiredTypes** : type de données requis pour ce rôle de données. Les valeurs non valides sont définies sur Null (facultatif).
+* **preferredTypes** : type de données par défaut pour ce rôle de données (facultatif).
 
-### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>Types de données valides dans « requiredTypes » et « preferredTypes »
+### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>Types de données valides dans requiredTypes et preferredTypes
 
-* **bool** : une valeur booléenne
-* **integer** : une valeur entière (nombre entier)
-* **numeric** : une valeur numérique
-* **text** : une valeur de texte
-* **geography** : une donnée géographique
+* **bool** : valeur booléenne
+* **integer** : valeur entière (nombre entier)
+* **numeric** : valeur numérique
+* **text** : valeur de texte
+* **geography** : donnée géographique
 
 ### <a name="example"></a>Example
 
@@ -157,15 +157,15 @@ Pour définir des champs pouvant être liés à des données, nous utilisons `da
 ]
 ```
 
-Les rôles de données ci-dessus créent les champs suivants
+Les rôles de données précédents créent les champs affichés dans l’image suivante :
 
-![Affichage du rôle de données](./media/data-role-display.png)
+![Champs de rôles de données](./media/data-role-display.png)
 
-## <a name="define-how-you-want-the-data-mapped---dataviewmappings"></a>Définir la façon dont vous souhaitez mapper les données - `dataViewMappings`
+## <a name="define-how-you-want-the-data-mapped-dataviewmappings"></a>Définir le mappage des données : dataViewMappings
 
-Un mappage DataViewMapping décrit comment les rôles de données sont liés les uns aux autres et vous permet de spécifier des exigences conditionnelles pour eux.
+Une propriété dataViewMappings décrit de quelle manière les rôles de données sont liés les uns aux autres et vous permet de spécifier des exigences conditionnelles pour les rôles.
 
-La plupart des visuels fournissent un mappage unique, mais vous pouvez fournir plusieurs mappages dataViewMappings. Chaque mappage valide produira un DataView. 
+La plupart des visuels fournissent un mappage unique, mais vous pouvez fournir plusieurs mappages dataViewMappings. Chaque mappage valide génère une vue de données. 
 
 ```json
 "dataViewMappings": [
@@ -179,13 +179,11 @@ La plupart des visuels fournissent un mappage unique, mais vous pouvez fournir p
 ]
 ```
 
-[En savoir plus sur les mappages DataViewMappings](dataview-mappings.md)
+Pour plus d’informations, consultez [Présentation du mappage des vues de données dans les visuels Power BI](dataview-mappings.md).
 
-## <a name="define-property-pane-options---objects"></a>Définir les options du volet de propriétés - `objects`
+## <a name="define-property-pane-options-objects"></a>Définir les options du volet de propriétés : objects
 
-Les objets décrivent des propriétés personnalisables associées au visuel.
-Chaque objet peut avoir plusieurs propriétés et chaque propriété est associée à un type.
-Les types font référence à ce que sera la propriété. Pour plus d’informations sur les types, voir ci-dessous.
+Les objets décrivent les propriétés personnalisables qui sont associées au visuel. Chaque objet peut avoir plusieurs propriétés, et chaque propriété est associée à un type. Les types font référence à ce que sera la propriété. 
 
 ```json
 "objects": {
@@ -196,24 +194,22 @@ Les types font référence à ce que sera la propriété. Pour plus d’informat
 }
 ```
 
-[En savoir plus sur les objets](objects-properties.md)
+Pour plus d’informations, consultez [Objets et propriétés des visuels Power BI](objects-properties.md).
 
-## <a name="handle-partial-highlighting---supportshighlight"></a>Gérer une mise en surbrillance partielle- `supportsHighlight`
+## <a name="handle-partial-highlighting-supportshighlight"></a>Gérer la mise en surbrillance partielle : supportsHighlight
 
-Par défaut, cette valeur est définie sur false, ce qui signifie que vos « valeurs » seront automatiquement filtrées quand un élément de la page est sélectionné, mettant ainsi à jour votre visuel pour afficher uniquement la valeur sélectionnée. Si vous souhaitez afficher les données complètes, mettez seulement en surbrillance les éléments sélectionnés que vous souhaitez configurer sur `supportsHighlight` true dans votre capabilities.json.
+Par défaut, cette propriété est définie sur `false`, ce qui signifie que les valeurs sont filtrées automatiquement quand un élément est sélectionné dans la page. Ce filtrage automatique met à jour votre visuel pour y afficher uniquement l’élément sélectionné. Si vous souhaitez afficher toutes les données, mais mettre en surbrillance uniquement les éléments sélectionnés, définissez `supportsHighlight` sur `true` dans votre fichier *capabilities.json*.
 
-[En savoir plus sur la mise en surbrillance](highlight.md)
+Pour plus d’informations, consultez [Mettre en surbrillance des points de données dans les visuels Power BI](highlight.md).
 
-## <a name="handle-advanced-edit-mode---advancededitmodesupport"></a>Gérer le mode d’édition avancé - `advancedEditModeSupport`
+## <a name="handle-advanced-edit-mode-advancededitmodesupport"></a>Gérer le mode d’édition avancé : advancedEditModeSupport
 
-Un visuel peut déclarer sa prise en charge du mode d’édition avancé.
-Par défaut, un visuel ne prend pas en charge le mode d’édition avancé, sauf indication contraire dans capabilities.json.
+Un visuel peut déclarer sa prise en charge du mode d’édition avancé. Par défaut, un visuel ne prend pas en charge le mode d’édition avancé, mais vous pouvez ajouter cette prise en charge dans le fichier *capabilities.json*.
 
-[En savoir plus sur advancedEditModeSupport](advanced-edit-mode.md)
+Pour plus d’informations, consultez [Mode d’édition avancé dans les visuels Power BI](advanced-edit-mode.md).
 
-## <a name="data-sorting-options-for-visual---sorting"></a>Options de tri des données pour un visuel - `sorting`
+## <a name="data-sorting-options-for-visual-sorting"></a>Options de tri des données pour un visuel : sorting
 
-Un visuel peut définir son comportement de tri par le biais de ses fonctionnalités.
-Par défaut, un visuel ne prend pas en charge la modification de son ordre de tri, sauf indication contraire dans capabilities.json.
+Un visuel peut définir son comportement de tri par le biais de ses fonctionnalités. Par défaut, un visuel ne prend pas en charge la modification de son ordre de tri, mais vous pouvez ajouter cette prise en charge dans le fichier *capabilities.json*.
 
-[En savoir plus sur le tri](sort-options.md)
+Pour plus d’informations, consultez [Options de tri pour les visuels Power BI](sort-options.md).

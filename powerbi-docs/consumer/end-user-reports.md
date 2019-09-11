@@ -1,30 +1,29 @@
 ---
-title: Afficher un rapport dans Power BI
-description: Rapports dans Power BI
+title: Rapports dans le service Power BI
+description: Rapports dans le service Power BI pour les consommateurs
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 9a844ff813435328df63240aa46aff3430117f6e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532189"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391362"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
 
 Un rapport Power BI est un affichage sous plusieurs angles d’un jeu de données, avec des visuels représentant différents résultats et insights de ce jeu de données.  Un rapport peut avoir un seul visuel ou des pages entières de visuels. Selon votre fonction principale, vous pouvez soit *concevoir* des rapports, soit *consommer* (utiliser) des rapports.
 
-![Capture d’écran d’une page de rapport.](./media/end-user-reports/power-bi-report.png)
+![Capture d’écran d’une page de rapport.](./media/end-user-reports/power-bi-reports.png)
 
-Dans ce rapport de quatre pages (ou onglets), vous visualisez actuellement la page **Sentiment**. Cette page comprend cinq visuels et un titre de page.
+Dans ce rapport de six pages (ou onglets), vous visualisez actuellement la page **Sentiment**. Cette page comprend cinq visuels et un titre de page. Le volet *Filtres* nous montre un filtre appliqué à toutes les pages du rapport. Pour réduire le volet Filtres, sélectionnez la flèche ( **>** ).
 
 Si vous débutez dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Concepts de base pour les consommateurs du service Power BI](end-user-basic-concepts.md). Les rapports peuvent être visualisés, partagés et annotés sur des appareils mobiles. Pour plus d’informations, consultez [Explorer des rapports dans les applications mobiles Power BI](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -42,6 +41,8 @@ Quand vous explorez votre contenu et interagissez avec celui-ci (filtrage, déco
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Enregistrer vos changements ou rétablir les paramètres par défaut
 
 Cela ne veut pas dire que vous ne pouvez pas enregistrer vos changements. Vous pouvez le faire, mais ces changements affectent uniquement votre vue du contenu. Pour revenir à la vue par défaut du rapport, sélectionnez **Rétablir les valeurs par défaut**.
+
+![Capture d’écran de l’icône Rétablir les valeurs par défaut.](./media/end-user-reports/power-bi-reset.png)
 
 ## <a name="dashboards-versus-reports"></a>Tableaux de bord et rapports
 
@@ -76,6 +77,5 @@ Ou bien, vous pouvez être *consommateur*, c’est-à-dire quelqu’un qui reço
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Qu’est-ce que Power BI ?](../power-bi-overview.md)
-
-[Concepts de base pour les consommateurs du service Power BI](end-user-basic-concepts.md)
+[Ouvrir et voir un rapport](end-user-report-open.md)    
+[Tableaux de bord dans le service Power BI](end-user-dashboards.md)

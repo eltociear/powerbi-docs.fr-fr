@@ -1,9 +1,9 @@
 ---
 title: Qu’est-ce qu’Azure Power BI Embedded et l’analytique incorporée | Microsoft Docs
 description: Power BI Embedded est un outil d’analytique incorporée visant à simplifier la façon dont les éditeurs de logiciels indépendants (ISV) et les développeurs utilisent les fonctionnalités de Power BI, en leur permettant d’ajouter rapidement de superbes visuels, rapports et tableaux de bord à leurs applications. Découvrez comment utiliser des logiciels et des outils d’analytique incorporée ainsi que des outils d’informatique décisionnelle incorporés avec Power BI Embedded.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: power-bi-embedded
 ms.subservice: ''
@@ -11,16 +11,16 @@ ms.devlang: csharp, javascript
 ms.topic: overview
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 6e91b2e958a738961255f9ad9b6b0514fed759bb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c74bd97a3323f28ba6d66fad03307f28c1b0c270
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385014"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391485"
 ---
 # <a name="what-is-power-bi-embedded-in-azure"></a>Qu’est-ce que Power BI Embedded dans Azure ?
 
-Power BI Embedded vise à simplifier la façon dont les éditeurs de logiciels indépendants (ISV) et les développeurs utilisent les fonctionnalités de Power BI avec l’analytique incorporée. Power BI Embedded simplifie les fonctionnalités de Power BI en vous permettant d’ajouter rapidement à vos applications de superbes visuels, rapports et tableaux de bord. À l’instar des applications basées sur Microsoft Azure, il utilise des services tels que le Machine Learning et l’IoT. En facilitant l’exploration de données dans leurs applications, les éditeurs indépendants de logiciels permettent à leurs clients de prendre des décisions rapides et avisées en fonction du contexte.
+Power BI Embedded vise à simplifier la façon dont les éditeurs de logiciels indépendants (ISV) et les développeurs utilisent les fonctionnalités de Power BI avec l’analytique incorporée. Power BI Embedded simplifie les fonctionnalités de Power BI en vous permettant d’ajouter rapidement à vos applications de superbes visuels, rapports et tableaux de bord. À l’instar des applications basées sur Microsoft Azure, il utilise des services tels que le Machine Learning et IoT. En facilitant l’exploration de données dans leurs applications, les éditeurs indépendants de logiciels permettent à leurs clients de prendre des décisions rapides et avisées en fonction du contexte.
 
 > [!VIDEO https://www.youtube.com/embed/iEHfUuoZseo]
 

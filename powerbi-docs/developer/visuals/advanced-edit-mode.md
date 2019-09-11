@@ -1,6 +1,6 @@
 ---
-title: Mode d’édition avancé
-description: Visuels Power BI avec contrôles d’interface utilisateur avancés
+title: Mode d’édition avancé dans les visuels Power BI
+description: Cet article explique comment définir des contrôles d’interface utilisateur avancés dans les visuels Power BI.
 author: shaym83
 ms.author: shaym
 manager: rkarlin
@@ -9,51 +9,46 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 625105aed773bce5cf70932f092faf60ea001c2c
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 54cd9d106132979e5ace71a2617a9e2520363176
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425548"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237336"
 ---
-# <a name="advanced-edit-mode"></a>Mode Édition avancé
+# <a name="advanced-edit-mode-in-power-bi-visuals"></a>Mode d’édition avancé dans les visuels Power BI
 
-Les visuels qui requièrent des contrôles d’interface utilisateur avancés peuvent déclarer la prise en charge du mode Édition avancé.
-En cas de prise en charge, en mode de modification de rapport, un bouton `Edit` s’affiche dans le menu du visuel.
-Lorsque vous cliquez sur le bouton `Edit`, la valeur EditMode est définie sur `Advanced`.
-Le visuel peut utiliser l’indicateur EditMode pour déterminer s’il doit afficher de tels contrôles d’interface utilisateur.
+Si vous souhaitez inclure des contrôles d’interface utilisateur avancés dans votre visuel Power BI, vous pouvez utiliser le mode d’édition avancé. Quand vous êtes en mode d’édition de rapport, vous sélectionnez un bouton **Modifier** pour définir le mode d’édition sur **Avancé**. Le visuel peut utiliser l’indicateur `EditMode`pour déterminer s’il doit afficher ce contrôle d’interface utilisateur.
 
-Par défaut, le visuel ne prend pas en charge le mode Édition avancé.
-Si un comportement différent est requis, il doit être indiqué explicitement dans le fichier `capabilities.json` du visuel, en définissant la propriété `advancedEditModeSupport`.
+Par défaut, le visuel ne prend pas en charge le mode d’édition avancé. Si un comportement différent est requis, vous pouvez le spécifier explicitement dans le fichier *capabilities.json* du visuel, en définissant la propriété `advancedEditModeSupport`.
 
 Valeurs possibles :
 
-- 0 - NotSupported
+- `0` - NotSupported
 
-- 1 - SupportedNoAction
+- `1` - SupportedNoAction
 
-- 2 - SupportedInFocus
+- `2` - SupportedInFocus
 
-## <a name="entering-advanced-edit-mode"></a>Passage au mode Édition avancé
+## <a name="enter-advanced-edit-mode"></a>Entrer le mode d’édition avancé
 
-Le bouton `Edit` est visible dans les cas suivants :
+Un bouton **Modifier** s’affiche dans les cas suivants :
 
- 1 : propriété `advancedEditModeSupport` définie dans le fichier capabilities.json sur `SupportedNoAction` ou sur `SupportedInFocus`.
+* La propriété `advancedEditModeSupport` est définie dans le fichier *capabilities.json* sur `SupportedNoAction` ou `SupportedInFocus`.
 
- 2 : visuel affiché en mode de modification de rapport.
+* Le visuel est affiché en mode d’édition de rapport.
 
-Si la propriété `advancedEditModeSupport` est absente du fichier capabilities.json ou si elle est définie sur `NotSupported`, le bouton Modifier disparaît.
+Si la propriété `advancedEditModeSupport` n’est pas spécifiée dans le fichier *capabilities.json*, ou si elle y est définie sur `NotSupported`, le bouton **Modifier** n’est pas affiché.
 
 ![Passer au mode Édition](./media/edit-mode.png)
 
-Lorsque l’utilisateur clique sur `Edit`, le visuel reçoit un appel update() avec la valeur EditMode définie sur `Advanced`.
-Selon la valeur définie dans les fonctionnalités, les actions suivantes se produisent :
+Quand vous sélectionnez **Modifier**, le visuel obtient un appel update() où EditMode est défini sur `Advanced`. Selon la valeur qui est définie dans le fichier *capabilities.json*, les actions suivantes se produisent :
 
-* `SupportedNoAction` : aucune action supplémentaire de l’hôte.
+* `SupportedNoAction` : aucune action supplémentaire n’est requise par l’hôte.
 * `SupportedInFocus` : l’hôte affiche le visuel en mode Focus.
 
-## <a name="exiting-advanced-edit-mode"></a>Quitter le mode Édition avancé
+## <a name="exit-advanced-edit-mode"></a>Quitter le mode d’édition avancé
 
-Le bouton `Back to report` est visible dans les cas suivants :
+Le bouton **Retour au rapport** est affiché dans le cas suivant :
 
-1 : propriété `advancedEditModeSupport` définie dans le fichier capabilities.json sur `SupportedInFocus`.
+* La propriété `advancedEditModeSupport` est définie dans le fichier *capabilities.json* sur `SupportedInFocus`.

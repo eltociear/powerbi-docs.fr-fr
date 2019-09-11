@@ -1,6 +1,6 @@
 ---
-title: Volet Analytique
-description: Création de lignes de référence dynamiques dans les visuels Power BI
+title: Volet Analytique des visuels Power BI
+description: Cet article décrit comment créer des lignes de référence dynamiques dans les visuels Power BI.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -9,34 +9,36 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b3b50f8dbcf40a3923e86422e24f8ed020894445
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 208c6cbbd4cd8cdabde039c53aab536ee989bc7d
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425525"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237325"
 ---
-# <a name="analytics-pane-in-power-bi-visuals"></a>Volet Analytique des visuels Power BI
+# <a name="the-analytics-pane-in-power-bi-visuals"></a>Volet Analytique des visuels Power BI
 
-Le **volet Analytique** a été [introduit pour les visuels natifs](https://docs.microsoft.com/power-bi/desktop-analytics-pane) en novembre 2018.
-Les visuels personnalisés avec l’API v2.5.0 peuvent présenter et gérer leurs propriétés dans le **volet Analytique**.
+Le volet **Analytique** a été introduit pour les [visuels natifs](https://docs.microsoft.com/power-bi/desktop-analytics-pane) en novembre 2018.
+Cet article explique comment les visuels Power BI avec l’API v2.5.0 peuvent présenter et gérer leurs propriétés dans le volet **Analytique**.
 
-![Volet Analytique](./media/visualization-pane-analytics-tab.png)
+![Le volet Analytique](./media/visualization-pane-analytics-tab.png)
 
-Il est géré de la même façon que les [propriétés dans le volet Format](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), en définissant un objet dans le fichier capabilities.json du visuel. 
+## <a name="manage-the-analytics-pane"></a>Gérer le volet Analytique
 
-Les différences sont les suivantes :
+De la même façon que vous gérez les propriétés dans le [volet **Format**](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), vous gérez le volet **Analytique** en définissant un objet dans le fichier *capabilities.json* du visuel. 
 
-1. Dans la définition de `object`, ajoutez un champ `objectCategory` avec la valeur 2.
+Pour le volet **Analytique**, les différences sont les suivantes :
+
+* Dans la définition de l’objet, vous ajoutez un champ **objectCategory** avec la valeur 2.
 
     > [!NOTE]
-    > Le champ `objectCategory` est un champ facultatif introduit dans l’API 2.5.0. Il définit l’aspect du visuel que l’objet contrôle (1 = mise en forme, 2 = analytique). La « mise en forme » est utilisée pour l’apparence, les couleurs, les axes, les étiquettes, etc. « L’analytique » est utilisé pour les prévisions, les courbes de tendance, les lignes de référence, les formes, etc.
+    > Le champ `objectCategory` facultatif a été introduit dans l’API 2.5.0. Il définit l’aspect du visuel que l’objet contrôle (1 = mise en forme, 2 = analytique). `Formatting` est utilisé pour des éléments tels que l’apparence, les couleurs, les axes et les étiquettes. `Analytics` est utilisé pour des éléments tels que les prévisions, les courbes de tendance, les lignes de référence et les formes.
     >
-    > `objectCategory` est défini par défaut sur « mise en forme » s’il est omis.
+    > Si la valeur n’est pas spécifiée, `objectCategory` prend par défaut la valeur « Formatting ».
 
-2. L’objet doit avoir les deux propriétés suivantes :
-    1. `show` de type booléen avec false comme valeur par défaut.
-    2. `displayName` de type texte. La valeur par défaut que vous choisissez devient le nom d’affichage initial de l’instance.
+* L’objet doit avoir les deux propriétés suivantes :
+    * `show` de type `bool`, avec la valeur par défaut `false`.
+    * `displayName` de type `text`. La valeur par défaut que vous choisissez devient le nom d’affichage initial de l’instance.
 
 ```json
 {
@@ -63,13 +65,13 @@ Les différences sont les suivantes :
 }
 ```
 
-Toutes les autres propriétés peuvent être définies de la même façon que pour les objets format. L’énumération d’objets est effectuée de la même façon que dans le **volet Format**.
+Vous pouvez définir d’autres propriétés de la même façon que vous le feriez pour des objets **Format**. Et vous pouvez énumérer des objets comme vous le feriez dans le volet **Format**.
 
-***Limites et problèmes connus***
+## <a name="known-limitations-and-issues-of-the-analytics-pane"></a>Limitations et problèmes connus du volet Analytique
 
-  1. Pas de prise en charge multi-instance pour l’instant. Les objets ne peuvent pas avoir un [sélecteur](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) autre que statique (« sélecteur » : Null), et les visuels personnalisés ne peuvent pas avoir plusieurs instances d’une carte définies par l’utilisateur.
-  2. Les propriétés de type `integer` ne sont pas affichées correctement. Pour résoudre ce problème, il est conseillé d’utiliser plutôt le type `numeric`.
+* Le volet **Analytique** n’offre pas encore la prise en charge de plusieurs instances. Les objets ne peuvent pas avoir un [sélecteur](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/#selector) autre que statique (autrement dit, « sélecteur » : null), et les visuels Power BI ne peuvent pas avoir plusieurs instances d’une carte définies par l’utilisateur.
+* Les propriétés de type `integer` ne sont pas affichées correctement. Pour résoudre ce problème, il est conseillé d’utiliser plutôt le type `numeric`.
 
 > [!NOTE]
-> Utilisez le volet Analytique uniquement pour les objets qui ajoutent de nouvelles informations ou qui donnent un nouvel éclairage aux informations présentées. Exemple : des lignes de référence dynamiques illustrant des tendances importantes.
-> Les options qui contrôlent l’apparence du visuel, c’est-à-dire sa mise en forme, doivent être conservées dans le volet Mise en forme.
+> * Utilisez le volet **Analytique** uniquement pour les objets qui ajoutent de nouvelles informations ou qui donnent un nouvel éclairage aux informations présentées (par exemple, des lignes de référence dynamiques qui illustrent des tendances importantes).
+> * Les options qui contrôlent l’apparence du visuel (c’est-à-dire sa mise en forme) doivent être limitées au volet **Mise en forme**.

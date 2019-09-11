@@ -1,6 +1,6 @@
 ---
-title: Prise en charge du mode Contraste élevé
-description: Ajout de la prise en charge du mode Contraste élevé dans les visuels Power BI
+title: Prise en charge du mode Contraste élevé dans les visuels Power BI
+description: Cet article décrit comment ajouter la prise en charge du mode Contraste élevé dans les visuels Power BI.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,30 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: cb77ea012fdfdbd5be62c58c6f9b94a0355db1a9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f7f1a2277b3cdf38554039136010ab60c8f09bae
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424927"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237180"
 ---
-# <a name="high-contrast-mode-support"></a>Prise en charge du mode Contraste élevé
+# <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Prise en charge du mode Contraste élevé dans les visuels Power BI
 
-Le paramètre *Contraste élevé* de Windows permet d’augmenter la lisibilité du texte et des applications en utilisant des couleurs plus marquées.
-En savoir plus sur [la prise en charge du contraste élevé dans Power BI](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
+Le paramètre *Contraste élevé* de Windows permet d’augmenter la lisibilité du texte et des applications en affichant des couleurs plus marquées. Cet article décrit comment ajouter la prise en charge du mode Contraste élevé dans les visuels Power BI. Pour plus d’informations, consultez [high-contrast support in Power BI](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast) (Prise en charge du contraste élevé dans Power BI).
 
-L’ajout de la prise en charge du contraste élevé dans votre visuel requiert les actions suivantes :
+Pour afficher une implémentation de la prise en charge du contraste élevé, accédez au [référentiel de visuels PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
-1. À l’initialisation : détectez si Power BI est en mode Contraste élevé et, le cas échéant, obtenez les couleurs à contraste élevé actuelles.
-2. À chaque mise à jour : modifiez le mode d’affichage du visuel pour en augmenter la visibilité.
+## <a name="on-initialization"></a>Lors de l’initialisation
 
-Le visuel PowerBI-visuals-sampleBarChart présente une implémentation de la prise en charge du contraste élevé.
-
-Pour plus d’informations, consultez l’article [PowerBI-visuals-sampleBarChart visual repository](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6) (Référentiel visuel PowerBI-visuals-sampleBarChart).
-
-## <a name="on-init"></a>À l’initialisation
-
-Le membre colorPalette de `options.host` possède plusieurs propriétés pour le mode Contraste élevé. Utilisez ces propriétés pour déterminer si le mode Contraste élevé est actif et, le cas échéant, les couleurs à utiliser.
+Le membre colorPalette de `options.host` possède plusieurs propriétés pour le mode Contraste élevé. Utilisez ces propriétés pour déterminer si le mode Contraste élevé est actif et, si c’est le cas, les couleurs à utiliser.
 
 ### <a name="detect-that-power-bi-is-in-high-contrast-mode"></a>Détecter que Power BI est en mode Contraste élevé
 
@@ -40,7 +32,7 @@ Si `host.colorPalette.isHighContrast` est défini sur `true`, le mode Contraste 
 
 ### <a name="get-high-contrast-colors"></a>Obtenir des couleurs à contraste élevé
 
-En mode Contraste élevé, votre visuel doit se limiter aux couleurs suivantes :
+En mode Contraste élevé, votre visuel doit se limiter aux paramètres suivants :
 
 * La couleur de **premier plan** est utilisée pour dessiner des lignes, des icônes, du texte, du contour ou du remplissage de formes.
 * La couleur **d’arrière-plan** est utilisée pour l’arrière-plan et comme couleur de remplissage des formes avec contour.
@@ -50,7 +42,7 @@ En mode Contraste élevé, votre visuel doit se limiter aux couleurs suivantes :
 > [!NOTE]
 > Si une couleur secondaire est nécessaire, la couleur de premier plan peut être utilisée avec une certaine opacité (les visuels natifs Power BI utilisent une opacité de 40 %). Utilisez cette fonctionnalité avec modération pour faciliter la visualisation des détails visuels.
 
-Vous pouvez stocker ces valeurs pendant l’initialisation :
+Pendant l’initialisation, vous pouvez stocker les valeurs suivantes :
 
 ```typescript
 private isHighContrast: boolean;
@@ -78,24 +70,24 @@ Vous pouvez également stocker l’objet `host` pendant l’initialisation et ac
 
 ## <a name="on-update"></a>À la mise à jour
 
-Les implémentations spécifiques de la prise en charge du contraste élevé varient d’un visuel à l’autre et dépendent des détails de la conception graphique. En règle générale, le mode Contraste élevé requiert une conception légèrement différente de la conception par défaut afin de faciliter la distinction des détails importants avec les couleurs limitées.
+Les implémentations spécifiques de la prise en charge du contraste élevé varient d’un visuel à l’autre et dépendent des détails de la conception graphique. Pour faciliter la distinction des détails importants avec les couleurs limitées, le mode Contraste élevé nécessite habituellement une conception légèrement différente du mode par défaut.
 
-Voici quelques directives suivies par les visuels natifs Power BI :
+Les visuels Power BI natifs suivent ces instructions :
 
 * Tous les points de données utilisent la même couleur (premier plan).
-* Tout le texte et tous les axes, flèches, lignes, etc. utilisent la couleur de premier plan.
+* Tout le texte, les axes, les flèches, les lignes, et ainsi de suite, utilisent la couleur de premier plan.
 * Les formes épaisses sont dessinées comme des contours avec des traits épais (au moins deux pixels) et un remplissage de couleur d’arrière-plan.
-* Le cas échéant, les points de données se distinguent par différentes formes de marqueur, et les lignes de données se distinguent par des tirets différents.
+* Quand des points de données sont pertinents, ils se distinguent par différentes formes de marqueur, et les lignes de données se distinguent par des tirets différents.
 * Lorsqu’un élément de données est mis en surbrillance, tous les autres éléments définissent leur opacité sur 40 %.
 * Pour les segments, les éléments de filtre actifs utilisent la couleur sélectionnée de premier plan.
 
-Dans l’exemple de graphique à barres, par exemple, toutes les barres sont dessinées avec un remplissage d’arrière-plan et un contour de premier plan épais de deux pixels. Comparez son apparence avec les couleurs par défaut et quelques thèmes à contraste élevé :
+Dans l’exemple de graphique à barres suivant, toutes les barres sont dessinées avec un remplissage d’arrière-plan et un contour de premier plan épais de deux pixels. Comparez son apparence avec les couleurs par défaut et quelques thèmes à contraste élevé :
 
 ![Exemple de graphique à barres avec des couleurs standard](./media/hc-samplebarchart-standard.png)
 ![Exemple de graphique à barres utilisant le thème de couleur *Sombre 2*](./media/hc-samplebarchart-dark2.png)
 ![Exemple de graphique à barres utilisant le thème de couleur *Blanc*](./media/hc-samplebarchart-white.png)
 
-Voici un emplacement dans la fonction `visualTransform` qui a été modifié pour prendre en charge le contraste élevé. Il est appelé dans le cadre du rendu pendant `update` :
+La section suivante affiche un emplacement dans la fonction `visualTransform` qui a été changé pour prendre en charge le contraste élevé. Elle est appelée dans le cadre du rendu pendant la mise à jour.
 
 ### <a name="before"></a>Avant
 

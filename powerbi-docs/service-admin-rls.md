@@ -11,12 +11,12 @@ ms.author: mblythe
 ms.date: 01/02/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f26d1d394446653764b8b0f7371a44fc178b01e2
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: 94f1410af7e5838854c193186a038bcba690f41f
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490404"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70235151"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sécurité au niveau des lignes avec Power BI
 
@@ -26,7 +26,7 @@ Vous pouvez configurer la sécurité au niveau des lignes (SNL) pour les modèle
 
 [!INCLUDE [include-short-name](./includes/rls-desktop-define-roles.md)]
 
-Par défaut, le filtrage de la sécurité au niveau des lignes utilise des filtres unidirectionnels, même si les relations sont définies à sens unique ou bidirectionnel. Vous pouvez activer manuellement le filtrage croisé bidirectionnel avec une sécurité au niveau des lignes en sélectionnant la relation et en cochant la case **Appliquer le filtre de sécurité dans les deux directions**. Vous devez cocher cette case lors de l’implémentation de la [sécurité dynamique au niveau des lignes](https://docs.microsoft.com/sql/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters), où la sécurité au niveau des lignes est définie en fonction de l’ID de connexion ou du nom d’utilisateur.
+Par défaut, le filtrage de la sécurité au niveau des lignes utilise des filtres unidirectionnels, même si les relations sont définies à sens unique ou bidirectionnel. Vous pouvez activer manuellement le filtrage croisé bidirectionnel avec une sécurité au niveau des lignes en sélectionnant la relation et en cochant la case **Appliquer le filtre de sécurité dans les deux directions**. Il est préférable de cocher cette case quand vous avez également implémenté une sécurité dynamique au niveau des lignes au niveau du serveur, laquelle se base sur un nom d’utilisateur ou un ID de connexion.
 
 Pour plus d’informations, consultez [Filtrage croisé bidirectionnel avec DirectQuery dans Power BI Desktop](desktop-bidirectional-filtering.md) et [Sécurisation du modèle sémantique BI tabulaire](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 

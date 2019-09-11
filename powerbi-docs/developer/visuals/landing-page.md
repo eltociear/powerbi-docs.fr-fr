@@ -1,6 +1,6 @@
 ---
-title: Page d’accueil
-description: Comment ajouter une page d’accueil aux visuels Power BI
+title: Ajouter une page de destination aux visuels Power BI
+description: Cet article explique comment ajouter une page de destination aux visuels Power BI.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 44cc9314b31803c97d3203d4aab846685d8f88fa
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: d15c52134fe3c8638625e50a1374867a4abed3c1
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424881"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236694"
 ---
-# <a name="landing-page"></a>Page d’accueil
+# <a name="add-a-landing-page-to-your-power-bi-visuals"></a>Ajouter une page de destination aux visuels Power BI
 
-Avec l’API 2.3.0, vous pouvez ajouter une page d’accueil à votre visuel. Pour ce faire, ajoutez `supportsLandingPage` aux fonctionnalités et affectez-lui la valeur true. Cela vous permet d’initialiser et de mettre à jour votre visuel avant d’y ajouter des données (ce qui signifie qu’il n’affichera plus de filigrane) afin que vous puissiez concevoir votre propre page d’accueil à afficher dans le visuel tant qu’il n’a pas de données.
+Avec l’API 2.3.0, vous pouvez ajouter une page de destination à vos visuels Power BI. Pour cela, ajoutez `supportsLandingPage` aux fonctionnalités et affectez-lui la valeur true. Cette action initialise et met à jour votre visuel avant que vous y ajoutiez des données. Du fait que le visuel n’affiche plus de filigrane, vous pouvez concevoir votre propre page de destination à afficher dans le visuel quand celui-ci ne contient pas de données.
 
 ```typescript
 export class BarChart implements IVisual {
@@ -57,6 +57,6 @@ export class BarChart implements IVisual {
     }
 ```
 
-Exemple
+L’image suivante illustre un exemple de page de destination :
 
 ![capture d’écran de la page d’accueil](./media/landing-page.png)

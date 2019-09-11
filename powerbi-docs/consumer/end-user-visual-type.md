@@ -1,32 +1,32 @@
 ---
-title: Types d’éléments visuels dans Power BI pour les consommateurs
-description: Types d’éléments visuels dans le service Power BI
+title: Types de visuel dans Power BI pour les consommateurs
+description: Types de visuel dans le service Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: acee7e78a19986a0f83e13836ba6d77f7c35fdce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710991"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302500"
 ---
-# <a name="visual-types-in-power-bi"></a>Types d’éléments visuels dans Power BI
-Vous trouverez des éléments visuels dans les rapports, des tableaux de bord, les applications et Q & A. Certaines de ces types d’éléments visuels sont empaquetés avec Power BI, et certaines sont *visuels personnalisés*. Les visuels personnalisés sont créés en dehors de Power BI de façon à permettre aux *concepteurs de rapports* de les ajouter aux rapports, tableaux de bord et applications Power BI. 
+# <a name="visual-types-in-power-bi"></a>Types de visuel dans Power BI
+Vous pouvez trouver des visuels dans les rapports, les tableaux de bord et Questions et réponses. Certains types de visuel sont inclus dans Power BI et d’autres sont des *visuels personnalisés*. Les visuels personnalisés sont créés en dehors de Power BI de façon à permettre aux *concepteurs de rapports* de les ajouter aux rapports et aux tableaux de bord Power BI. 
 
-Cet article est une vue d’ensemble des visuels qui sont empaquetés avec Power BI.  Voici les éléments visuels que vous rencontrerez souvent. 
+Cet article est une vue d’ensemble des visuels inclus dans le service Power BI.  Voici les visuels que vous allez rencontrer plus souvent. Pour des informations détaillées sur l’un de ces visuels, consultez la documentation du [concepteur *de rapports Power BI* sur les types de visuel](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
 > Pour en savoir plus sur les visuels personnalisés, recherchez-les dans la section **Visuels Power BI** de [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Pour chaque visuel, vous avez une description, des informations sur le créateur et des captures d’écran ou une vidéo. 
 
-## <a name="list-of-visuals-available-in-power-bi"></a>Liste d’éléments visuels disponibles dans Power BI
-Tous ces visuels sont accessibles dans les applications Power BI, tableaux de bord, rapports, et [spécifié dans Q & r](end-user-q-and-a.md). Pour savoir comment interagir avec les éléments visuels, consultez [interagir avec les éléments visuels dans les applications, des tableaux de bord et rapports](end-user-visualizations.md)
+## <a name="list-of-visuals-available-in-power-bi"></a>Liste de visuels disponibles dans Power BI
+Tous ces visuels sont disponibles dans les tableaux de bord et les rapports Power BI, et sont [spécifiés dans Questions et réponses](end-user-q-and-a.md). Pour savoir comment interagir avec les visuels, consultez [Interagir avec les visuels dans les rapports, les tableaux de bord et les applications](end-user-visualizations.md).
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Graphiques en aires : De base (superposées) et empilées
 ![graphique en aires](media/end-user-visual-type/basic-area-map-small.png)
@@ -59,7 +59,7 @@ Un graphique combiné associe un histogramme et un graphique en courbes. Cette c
 Les graphiques combinés sont conseillés :
 - quand vous avez un graphique en courbes et un histogramme avec le même axe X ;
 - pour comparer plusieurs mesures avec des plages de valeurs différentes
-- Pour illustrer la corrélation entre deux mesures dans un élément visuel
+- pour illustrer la corrélation entre deux mesures dans le même visuel
 - pour vérifier si une mesure correspond à la cible qui est définie par une autre mesure ;
 - pour utiliser moins d’espace sur le canevas
 
@@ -76,14 +76,6 @@ Les entonnoirs permettent de visualiser un processus comprenant des étapes et d
 Par exemple, un entonnoir de ventes qui effectue le suivi des clients à travers des étapes : Client potentiel > Client potentiel qualifié > Prospect > Contrat > Signature. En regardant la forme de l’entonnoir, vous savez instantanément comment se déroule le processus dont vous effectuez le suivi.
 Chaque étape de l’entonnoir représente un pourcentage du total. C’est pourquoi un graphique en entonnoir a généralement la forme d’un entonnoir, où la première étape est la plus large et chaque étape suivante est plus étroite que l’étape précédente. Un entonnoir en forme de poire est également utile, car il peut indiquer un problème dans le processus. Mais le plus souvent, la première étape (l’étape de départ) est la plus large.
 
-Les graphiques en entonnoir sont conseillés :
-- quand les données sont séquentielles et portent sur au moins quatre étapes ;
-- quand le nombre « d’éléments » à la première étape doit normalement être supérieur au nombre à l’étape finale ;
-- pour calculer le potentiel (revenus/ventes/contrats/etc.) à chaque étape ;
-- pour calculer et suivre des taux de conversion et de rétention ;
-- pour révéler les goulots d’étranglement dans un processus linéaire ;
-- pour effectuer le suivi d’un parcours d’achat en ligne ;
-- pour suivre la progression et le résultat des campagnes de publicité/marketing (taux de clics).
 
 ### <a name="gauge-charts"></a>Graphiques en jauge
 ![graphique de jauge](media/end-user-visual-type/gauge-m.png)
@@ -127,7 +119,7 @@ Utilisez une carte simple pour associer des informations quantitatives et de cat
 ### <a name="maps-arcgis-maps"></a>Cartes : ArcGIS Maps
 ![carte ArcGis](media/end-user-visual-type/power-bi-esri-map-theme2.png)
 
-L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà de la simple présentation de points sur une carte, pour accéder à un nouveau niveau. Les options disponibles pour les cartes de base, les types d’emplacement, les thèmes, les styles de symbole et les couches de référence crée des visuels de cartes informatives exceptionnelles. L’association des couches de données faisant autorité (telles que les données de recensement) sur une carte avec l’analyse spatiale permet une compréhension approfondie des données dans votre élément visuel.
+L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà de la simple présentation de points sur une carte, pour accéder à un nouveau niveau. Les options disponibles pour les cartes de base, les types de lieu, les thèmes, les styles de symbole et les couches de référence créent de superbes visuels de carte d’information. L’association de couches de données officielles (comme les données de recensement) d’une carte avec une analyse spatiale permet une compréhension approfondie des données dans votre visuel.
 
 ### <a name="maps-filled-maps-choropleth"></a>Cartes : Cartes choroplèthes (thématiques)
 ![Carte choroplèthe](media/end-user-visual-type/pbi-nancy-viz-filledmap.png)
@@ -137,7 +129,7 @@ Une carte choroplèthe utilise des ombrages, des teintes ou des motifs pour repr
 ### <a name="maps-shape-maps"></a>Cartes : Cartes de formes
 ![carte de formes](media/end-user-visual-type/power-bi-shape-map2.png)
 
-Les carte de formes comparent des régions sur une carte à l’aide de la couleur. À la différence du visuel Carte, les cartes de formes ne montrent pas l’emplacement géographique précis des points de données sur une carte. Leur principal objectif est de montrer des comparaisons relatives de régions sur une carte en leur appliquant une couleur différente.
+Les carte de formes comparent des régions sur une carte à l’aide de la couleur. Une carte de formes ne peut pas montrer des lieux géographiques précis de points de données sur une carte. Leur principal objectif est de montrer des comparaisons relatives de régions sur une carte en leur appliquant une couleur différente.
 
 ### <a name="matrix"></a>Matrice
 ![matrice](media/end-user-visual-type/matrix.png)
@@ -163,12 +155,16 @@ Un nuage de points a toujours deux axes de valeur pour afficher un jeu de donné
 
 Un graphique en bulles remplace les points de données par des bulles, la taille de la bulle représentant une dimension supplémentaire des données.
 
-Un graphique à points est comme un graphique en bulles et un nuage de points sauf que vous pouvez tracer des données numériques ou de catégorie sur l’axe X.
+
+
+Un graphique à points est comme un graphique en bulles et un nuage de points sauf que vous pouvez tracer des données numériques ou de catégorie sur l’axe X. Cet exemple utilise des carrés à la place de cercles et trace les ventes sur l’axe X.
+
+![graphique à points](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### <a name="scatter-high-density"></a>Nuage de points à haute densité
 ![nuages de points à haute densité](media/end-user-visual-type/density-scatter.png)
 
-Par définition, les données à haute densité sont échantillonnées pour créer des visuels relativement rapidement interactives. L’échantillonnage à haute densité utilise un algorithme qui élimine les points qui se chevauchent et garantit que tous les points du jeu de données sont représentés dans le visuel. Il ne se contente pas de tracer un échantillon représentatif des données.  
+Par définition, les données à haute densité sont échantillonnées pour créer des visuels d’une façon raisonnablement rapide, qui réagissent à l’interactivité. L’échantillonnage à haute densité utilise un algorithme qui élimine les points qui se chevauchent et garantit que tous les points du jeu de données sont représentés dans le visuel. Il ne se contente pas de tracer un échantillon représentatif des données.  
 
 Il assure une combinaison optimale de réactivité, de représentation et de préservation claire des points importants dans la totalité du jeu de données.
 
@@ -220,14 +216,14 @@ Un graphique en cascade affiche un résultat cumulé à mesure que les valeurs s
 Grâce au codage par couleur des colonnes, vous repérez rapidement les hausses et les baisses. Les colonnes des valeurs initiales et finales démarrent généralement sur l’axe horizontal, alors que les valeurs intermédiaires sont représentées par des colonnes flottantes. Les graphiques en cascade sont également appelés graphiques « bridge » (pont) en raison de leur forme.
 
 Les graphiques en cascade sont conseillés pour :
-- représenter les variations de la mesure sur plusieurs séries chronologiques ou des catégories différentes ;
+- représenter les variations de la mesure sur une chronologie ou sur des catégories différentes ;
 - analyser les variations majeures qui ont un impact sur la valeur totale ;
 - tracer le bénéfice annuel de votre société en affichant les différentes sources de revenus et indiquer le résultat net (gains ou pertes).
 - illustrer l’évolution annuelle de l’effectif global de votre société ;
 - visualiser vos revenus et vos dépenses par mois, et le solde courant de votre compte.
 
-## <a name="qna"></a>Indiquer à Q & r quel visuel à utiliser
-Lorsque vous tapez des requêtes en langage naturel avec Power BI Q & R, vous pouvez spécifier le type d’élément visuel dans votre requête.  Par exemple :
+## <a name="qna"></a>Indiquer dans Questions et réponses le visuel à utiliser
+Lorsque vous tapez des requêtes en langage naturel avec le service Questions et réponses de Power BI, vous pouvez spécifier le type de visuel dans votre requête.  Par exemple :
 
 
 ***sales by state as a treemap*** (ventes par région sous forme de compartimentage
@@ -235,5 +231,5 @@ Lorsque vous tapez des requêtes en langage naturel avec Power BI Q & R, vous po
 ![Session Questions et réponses](media/end-user-visual-type/qa-treemap.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Interagir avec les éléments visuels dans les applications, des tableaux de bord et rapports](end-user-visualizations.md)    
+[Interagir avec les visuels dans les rapports, les tableaux de bord et les applications](end-user-visualizations.md)    
 [La bonne référence visuelle dans sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

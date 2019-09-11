@@ -1,6 +1,6 @@
 ---
-title: API Filtres visuels
-description: Comment les visuels Power BI peuvent filtrer d’autres visuels
+title: API Filtres de visuels dans les visuels Power BI
+description: Cet article explique comment les visuels Power BI peuvent filtrer d’autres visuels.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 50e9601faf497675ebc3f24609a856a600e3bcb1
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: fc0b21116888c8455d4d7b8efc5c476bfc592483
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425042"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237114"
 ---
-# <a name="power-bi-visual-filters-api"></a>API Filtres de visuels Power BI
+# <a name="the-visual-filters-api-in-power-bi-visuals"></a>API Filtres de visuels dans les visuels Power BI
 
-Filter-Visual permet de filtrer les données. La principale différence entre les sélections est que les autres visuels sont filtrés de quelque manière que ce soit, en mettant en évidence la prise en charge par un autre visuel.
+L’API Filtres de visuels vous permet de filtrer des données dans des visuels Power BI. La principale différence par rapport aux autres sélections est que les autres visuels seront filtrés de toute manière, malgré la prise en charge de la mise en évidence par un autre visuel.
 
-Pour activer le filtrage pour le visuel, le visuel doit contenir un objet `filter` dans la section `general` du contenu capabilities.json.
+Pour activer le filtrage pour le visuel, celui-ci doit contenir un objet `filter` dans la section `general` du code *capabilities.json*.
 
 ```json
 "objects": {
@@ -38,15 +38,15 @@ Pour activer le filtrage pour le visuel, le visuel doit contenir un objet `filte
     }
 ```
 
-Les interfaces d’API Filtre sont disponibles dans un package [`powerbi-models`](https://www.npmjs.com/package/powerbi-models). Le package contient également des classes pour créer des instances de filtre.
+Les interfaces de l’API Filtres de visuels sont disponibles dans le package [powerbi-models](https://www.npmjs.com/package/powerbi-models). Le package contient également des classes pour créer des instances de filtre.
 
 ```cmd
 npm install powerbi-models --save
 ```
 
-Si vous utilisez d’anciens outils de version (version antérieure à 3.x.x), vous devez inclure `powerbi-models` dans le package de visuels. [Guide succinct concernant l’inclusion du package](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md)
+Si vous utilisez une version plus ancienne (antérieure à 3.x.x) des outils, vous devez inclure `powerbi-models` dans le package de visuels. Pour plus d’informations, consultez le guide succinct intitulé [Add the Advanced Filter API to the custom visual](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md) (Ajouter l’API Filtre avancé au visuel personnalisé).
 
-Tous les filtres étendent l’interface `IFilter`.
+Tous les filtres étendent l’interface `IFilter`, comme illustré dans le code suivant :
 
 ```typescript
 export interface IFilter {
@@ -54,12 +54,12 @@ export interface IFilter {
     target: IFilterTarget;
 }
 ```
+Où :
+* `target` est la colonne de table sur la source de données.
 
-`target` - colonne de table sur la source de données.
+## <a name="the-basic-filter-api"></a>API Filtre de base
 
-## <a name="basic-filter-api"></a>API Filtre de base
-
-L’interface de filtre de base est
+L’interface de filtre de base est illustrée dans le code suivant :
 
 ```typescript
 export interface IBasicFilter extends IFilter {
@@ -68,11 +68,11 @@ export interface IBasicFilter extends IFilter {
 }
 ```
 
-`operator` - est une énumération avec les valeurs « in », « NotIn », « All »
+Où :
+* `operator` est une énumération avec les valeurs *In*, *NotIn* et *All*.
+* `values` sont des valeurs pour la condition.
 
-`values` - sont des valeurs de condition
-
-Exemple de filtre de base :
+Exemple de filtre de base :
 
 ```typescript
 let basicFilter = {
@@ -84,9 +84,9 @@ let basicFilter = {
 }
 ```
 
-Le filtre signifie « donnez-moi toutes les lignes où `col1` est égal à l’une des valeurs 1, 2 ou 3 ».
+Le filtre signifie « Donnez-moi toutes les lignes où `col1` est égal à la valeur 1, 2 ou 3 ».
 
-L’équivalent SQL est
+L’équivalent SQL est :
 
 ```sql
 SELECT * FROM table WHERE col1 IN ( 1 , 2 , 3 )
@@ -94,7 +94,7 @@ SELECT * FROM table WHERE col1 IN ( 1 , 2 , 3 )
 
 Pour créer un filtre, vous pouvez utiliser la classe BasicFilter dans `powerbi-models`.
 
-Si vous utilisez l’ancienne version des outils, vous devez récupérer une instance de modèles dans l’objet window par `window['powerbi-models']` :
+Si vous utilisez une version antérieure de l’outil, vous devez obtenir une instance de modèles dans l’objet de fenêtre à l’aide de `window['powerbi-models']`, comme illustré dans le code suivant :
 
 ```javascript
 let categories: DataViewCategoricalColumn = this.dataView.categorical.categories[0];
@@ -109,21 +109,21 @@ let values = [ 1, 2, 3 ];
 let filter: IBasicFilter = new window['powerbi-models'].BasicFilter(target, "In", values);
 ```
 
-Le visuel appelle le filtre à l’aide de la méthode applyJsonFilter() sur l’interface hôte IVisualHost fournie au visuel dans le constructeur.
+Le visuel appelle le filtre à l’aide de la méthode applyJsonFilter() sur l’interface hôte, IVisualHost, qui est fournie au visuel dans le constructeur.
 
 ```typescript
 visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
 ```
 
-## <a name="advanced-filter-api"></a>API Filtres avancés
+## <a name="the-advanced-filter-api"></a>API Filtre avancé
 
-L’[API Filtre avancé](https://github.com/Microsoft/powerbi-models) permet de sélectionner et de filtrer des requêtes de point de données visuelles complexes en fonction de plusieurs critères (tels que « LessThan », « Contains », « is », « IsBlank », etc.).
+L’[API Filtre avancé](https://github.com/Microsoft/powerbi-models) permet de sélectionner et de filtrer des requêtes de point de données visuelles complexes en fonction de plusieurs critères tels que *LessThan*, *Contains*, *Is*, *IsBlank*, et ainsi de suite.
 
 Le filtre a été introduit dans l’API Visuels 1.7.0.
 
-L’API Filtre avancé requiert également `target` avec le nom `table` et `column`. Toutefois, les opérateurs de l’API Filtre avancé sont `"And" | "Or"`. 
+L’API Filtre avancé nécessite également `target` avec un nom de `table` et de `column`. Toutefois, les opérateurs de l’API Filtre avancé sont *And* et *Or*. 
 
-En outre, le filtre utilise des conditions au lieu de valeurs avec l’interface :
+De plus, le filtre utilise des conditions au lieu de valeurs avec l’interface :
 
 ```typescript
 interface IAdvancedFilterCondition {
@@ -132,7 +132,7 @@ interface IAdvancedFilterCondition {
 }
 ```
 
-Les opérateurs de condition pour le paramètre `operator` sont `"None" | "LessThan" | "LessThanOrEqual" | "GreaterThan" | "GreaterThanOrEqual" | "Contains" | "DoesNotContain" | "StartsWith" | "DoesNotStartWith" | "Is" | "IsNot" | "IsBlank" | "IsNotBlank"`
+Les opérateurs de condition pour le paramètre `operator` sont *None*, *LessThan*, *LessThanOrEqual*, *GreaterThan*, *GreaterThanOrEqual*, *Contains*, *DoesNotContain*, *StartsWith*, *DoesNotStartWith*, *Is*, *IsNot*, *IsBlank* et « IsNotBlank ».
 
 ```javascript
 let categories: DataViewCategoricalColumn = this.dataView.categorical.categories[0];
@@ -155,21 +155,19 @@ let filter: IAdvancedFilter = new window['powerbi-models'].AdvancedFilter(target
 visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
 ```
 
-L’équivalent SQL est
+L’équivalent SQL est :
 
 ```sql
 SELECT * FROM table WHERE col1 < 0;
 ```
 
-L’exemple de code complet de l’utilisation de l’API Filtre avancé se trouve dans le [`Sampleslicer visual`référentiel](https://github.com/Microsoft/powerbi-visuals-sampleslicer).
+Pour obtenir l’exemple de code complet d’utilisation de l’API Filtre avancé, accédez au [dépôt de visuel Sampleslicer](https://github.com/Microsoft/powerbi-visuals-sampleslicer).
 
-## <a name="tuple-filter-api-multi-column-filter"></a>API Filtre de tuple (filtre à plusieurs colonnes)
+## <a name="the-tuple-filter-api-multi-column-filter"></a>API Filtre de tuple (filtre à plusieurs colonnes)
 
-L’API Filtre de tuple a été introduite dans l’API Visuels 2.3.0.
+L’API Filtre de tuple a été introduite dans l’API Visuels 2.3.0. Elle est semblable à l’API Filtre de base, mais elle permet de définir des conditions pour plusieurs colonnes et tables.
 
-L’API Filtre de tuple est similaire au filtre de base, mais elle permet de définir des conditions pour plusieurs colonnes et tables.
-
-Et un filtre possède l’interface suivante : 
+L’interface de filtre est illustrée dans le code suivant : 
 
 ```typescript
 interface ITupleFilter extends IFilter {
@@ -181,21 +179,22 @@ interface ITupleFilter extends IFilter {
 }
 ```
 
-`target` est un tableau de colonnes avec des noms de tables :
+Où :
+* `target` est un tableau de colonnes avec des noms de tables :
 
-```typescript
-declare type ITupleFilterTarget = IFilterTarget[];
-```
+    ```typescript
+    declare type ITupleFilterTarget = IFilterTarget[];
+    ```
 
   Le filtre peut traiter des colonnes de différentes tables.
 
-`$schema` est "http://powerbi.com/product/schema#tuple"
+* `$schema` est http://powerbi.com/product/schema#tuple.
 
-`filterType` est `FilterType.Tuple`
+* `filterType` est *FilterType.Tuple*.
 
-`operator` autorise uniquement l’utilisation de l’opérateur `"In"`
+* `operator` autorise l’utilisation uniquement dans l’opérateur *In*.
 
-`values` est un tableau de tuples de valeur, où chaque tuple représente une combinaison autorisée des valeurs de la colonne cible. 
+* `values` est un tableau de tuples de valeur, et chaque tuple représente une combinaison autorisée des valeurs de la colonne cible. 
 
 ```typescript
 declare type TupleValueType = ITupleElementValue[];
@@ -221,16 +220,16 @@ let target: ITupleFilterTarget = [
 
 let values = [
     [
-        // the 1st column combination value (aka column tuple/vector value) that the filter will pass through
+        // the first column combination value (or the column tuple/vector value) that the filter will pass through
         {
-            value: "Team1" // the value for `Team` column of `DataTable` table
+            value: "Team1" // the value for the `Team` column of the `DataTable` table
         },
         {
-            value: 5 // the value for `Value` column of `DataTable` table
+            value: 5 // the value for the `Value` column of the `DataTable` table
         }
     ],
     [
-        // the 2nd column combination value (aka column tuple/vector value) that the filter will pass through
+        // the second column combination value (or the column tuple/vector value) that the filter will pass through
         {
             value: "Team2" // the value for `Team` column of `DataTable` table
         },
@@ -252,17 +251,18 @@ let filter: ITupleFilter = {
 visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
 ```
 
-**L’ordre des noms de colonnes et des valeurs de condition est sensible.**
+> [!IMPORTANT]
+> L’ordre des noms de colonnes et des valeurs de condition est sensible.
 
-L’équivalent SQL est
+L’équivalent SQL est :
 
 ```sql
 SELECT * FROM DataTable WHERE ( Team = "Team1" AND Value = 5 ) OR ( Team = "Team2" AND Value = 6 );
 ```  
 
-## <a name="restoring-json-filter-from-dataview"></a>Restauration du filtre JSON à partir de DataView
+## <a name="restore-the-json-filter-from-the-data-view"></a>Restaurer le filtre JSON à partir de la vue des données
 
-À partir de l’API 2.2, les **filtres JSON** peuvent être restaurés à partir de **VisualUpdateOptions**
+À compter de la version 2.2 de l’API, vous pouvez restaurer le filtre JSON à partir de *VisualUpdateOptions*, comme indiqué dans le code suivant :
 
 ```typescript
 export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
@@ -276,16 +276,17 @@ export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
 }
 ```
 
-Power BI appelle la méthode `update` du visuel, lorsque l’utilisation des signets de commutateur et l’objet visuel correspond à l’objet `filter`.
-[En savoir plus sur la prise en charge des signets](bookmarks-support.md)
+Quand vous changez de signet, Power BI appelle la méthode `update` du visuel, et le visuel obtient un objet `filter` correspondant. Pour plus d’informations, consultez [Ajouter la prise en charge des signets pour les visuels Power BI](bookmarks-support.md).
 
 ### <a name="sample-json-filter"></a>Exemple de filtre JSON
 
-![Capture d’écran du filtre JSON](./media/json-filter.png)
+L’image suivante montre un exemple de code de filtre JSON :
 
-### <a name="clear-json-filter"></a>Effacer un filtre JSON
+![Code de filtre JSON](./media/json-filter.png)
 
-L’API Filtre accepte la valeur `null` du filtre comme réinitialiser ou effacement.
+### <a name="clear-the-json-filter"></a>Effacer le filtre JSON
+
+L’API Filtre accepte la valeur `null` du filtre comme signifiant *réinitialiser* ou *effacer*.
 
 ```typescript
 // invoke the filter

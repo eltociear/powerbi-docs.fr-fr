@@ -9,12 +9,12 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.date: 08/29/2019
-ms.openlocfilehash: 4dae849a18bbfc6e85eedc7ae9e338ad205cb436
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: bda35bfb4690d8109f7bd611e3d319278d235f33
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70189343"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302676"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>Paramètres d’URL dans les rapports paginés de Power BI
 
@@ -68,12 +68,12 @@ Vous pouvez utiliser les paramètres suivants dans une URL pour configurer l’a
 
 ### <a name="report-commands-rdl"></a>Commandes de rapport (`rdl:`) 
 
-**Export format** : Spécifie le format de rendu et d’exportation d’un rapport. Les valeurs incluent : 
-- PPTX 
+**Export format** : Spécifie le format de rendu et d’exportation d’un rapport. Les valeurs disponibles sont : 
+- PPTX (PowerPoint)
 - MHTML 
 - IMAGE 
-- EXCEL 
-- WORD 
+- EXCELOPENXML (EXCEL) 
+- WORDOPENXML (WORD) 
 - CSV 
 - PDF 
 - XML 

@@ -1,6 +1,6 @@
 ---
-title: Événements de rendu
-description: Les visuels Power BI peuvent notifier Power BI qu’ils sont prêts à être exportés vers Power point/PDF
+title: Afficher des événements dans des visuels Power BI
+description: Les visuels Power BI peuvent notifier Power BI qu’ils sont prêts à être exportés vers PowerPoint ou PDF.
 author: Yarovinsky
 ms.author: alexyar
 manager: rkarlin
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 46166b3503a770e033b98474fcf9240235296cc2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: b481ce94e5025045466a05d71e30a00f02be7ead
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425088"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237170"
 ---
-# <a name="event-service"></a>Service d’événements
+# <a name="render-events-in-power-bi-visuals"></a>Afficher des événements dans des visuels Power BI
 
-La nouvelle API est constituée de trois méthodes (démarrée, terminée ou en échec) qui doivent être appelées pendant le rendu.
+La nouvelle API est constituée de trois méthodes (`started`, `finished` ou `failed`) qui doivent être appelées pendant le rendu.
 
-Lorsque le rendu démarre, le code visuel personnalisé appelle la méthode renderingStarted pour indiquer le démarrage du processus de rendu.
+Quand le rendu démarre, le code de visuel Power BI appelle la méthode `renderingStarted` pour signaler que le processus de rendu a démarré.
 
-Si le rendu s’est terminé avec succès, le code visuel personnalisé appellera immédiatement la méthode `renderingFinished` pour notifier les écouteurs **(principalement « Exporter au format PDF » et « Exporter vers PowerPoint** ») que l’image du visuel est prête.
+Si le rendu s’est terminé avec succès, le code de visuel Power BI appelle immédiatement la méthode `renderingFinished` pour signaler aux écouteurs (principalement *Exporter au format PDF* et *Exporter vers PowerPoint*) que l’image du visuel est prête à être exportée.
 
-Dans le cas où un problème se produit pendant le processus de rendu, le visuel personnalisé ne se termine pas correctement. Le code visuel personnalisé doit appeler la méthode `renderingFailed` pour signaler à l’écouteur que le processus de rendu n’a pas été terminé. Cette méthode fournit également une chaîne facultative pour la cause de l’échec.
+Si un problème se produit au cours du processus, le rendu du visuel Power BI échoue. Pour signaler aux écouteurs que le processus de rendu n’a pas été terminé, le code de visuel Power BI doit appeler la méthode `renderingFailed`. Cette méthode fournit également une chaîne facultative pour fournir la raison de l’échec.
 
 ## <a name="usage"></a>Utilisation
 
@@ -38,31 +38,31 @@ export interface IVisualHost extends extensibility.IVisualHost {
  */
 export interface IVisualEventService {
     /**
-     * Should be called just before the actual rendering was started. 
-     * Usually at the very start of the update method.
+     * Should be called just before the actual rendering starts, 
+     * usually at the start of the update method
      *
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingStarted(options: VisualUpdateOptions): void;
 
     /**
-     * Shoudl be called immediately after finishing successfull rendering.
+     * Should be called immediately after rendering finishes successfully
      * 
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingFinished(options: VisualUpdateOptions): void;
 
     /**
-     * Called when rendering failed with optional reason string
+     * Called when rendering fails, with an optional reason string
      * 
-     * @param options - the visual update options received as update parameter
-     * @param reason - the option failure reason string
+     * @param options - the visual update options received as an update parameter
+     * @param reason - the optional failure reason string
      */
     renderingFailed(options: VisualUpdateOptions, reason?: string): void;
 }
 ```
 
-### <a name="simple-sample-the-visual-hasnt-any-animations-on-rendering"></a>Exemple simple. Le visuel n’a pas d’animation sur le rendu
+### <a name="sample-the-visual-displays-no-animations"></a>Exemple : Le visuel n’affiche aucune animation
 
 ```typescript
     export class Visual implements IVisual {
@@ -83,9 +83,9 @@ export interface IVisualEventService {
         }
 ```
 
-### <a name="sample-the-visual-with-animation"></a>Échantillon. Le visuel avec animation
+### <a name="sample-the-visual-displays-animations"></a>Exemple : Le visuel affiche les animations
 
-Si le visuel possède des animations ou des fonctions asynchrones pour le rendu, la méthode `renderingFinished` doit être appelée après l’animation ou au sein de la fonction asynchrone.
+Si le visuel a des animations ou des fonctions asynchrones pour le rendu, la méthode `renderingFinished` doit être appelée après l’animation ou au sein de la fonction asynchrone.
 
 ```typescript
     export class Visual implements IVisual {
@@ -104,7 +104,7 @@ Si le visuel possède des animations ou des fonctions asynchrones pour le rendu,
         public update(options: VisualUpdateOptions) {
             this.events.renderingStarted(options);
             ...
-            // read more https://github.com/d3/d3-transition/blob/master/README.md#transition_end
+            // Learn more at https://github.com/d3/d3-transition/blob/master/README.md#transition_end
             d3.select(this.element).transition().duration(100).style("opacity","0").end().then(() => {
                 // renderingFinished called after transition end
                 this.events.renderingFinished(options);
@@ -114,4 +114,4 @@ Si le visuel possède des animations ou des fonctions asynchrones pour le rendu,
 
 ## <a name="rendering-events-for-visual-certification"></a>Rendu des événements pour la certification visuelle
 
-La prise en charge du rendu des événements par le visuel est l’une des exigences de la certification des visuels. En savoir plus sur [Critères de certification](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements)
+L’une des exigences de la certification des visuels est la prise en charge du rendu des événements par le visuel. Pour plus d’informations, consultez les [critères de certification](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements).

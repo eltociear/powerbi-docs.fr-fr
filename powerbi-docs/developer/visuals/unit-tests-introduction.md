@@ -1,6 +1,6 @@
 ---
-title: Présentation des tests unitaires
-description: Comment écrire des tests unitaires pour un projet de visuel Power BI
+title: Introduction aux tests unitaires pour les projets de visuels Power BI
+description: Cet article explique comment écrire des tests unitaires pour des projets de visuels Power BI.
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,31 +9,29 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 4b16eaad9b541bf6e5d8df49ffda99d9bbd5bbf2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424536"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236715"
 ---
-# <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Didacticiel : ajouter des tests unitaires pour un projet de visuel Power BI
+# <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutoriel : Ajouter des tests unitaires pour des projets de visuels Power BI
 
-Ce didacticiel décrit les principes fondamentaux de l’écriture de tests unitaires pour vos visuels Power BI.
+Cet article décrit les principes fondamentaux de l’écriture de tests unitaires pour vos visuels Power BI, notamment comment :
 
-Dans ce didacticiel, nous allons aborder les sujets suivants :
+* Configurer le framework d’exécuteur de test Karma JavaScript, Jasmine.
+* Utiliser le package powerbi-visuals-utils-testutils.
+* Utiliser des simulacres et des substituts pour aider à simplifier les tests unitaires des visuels Power BI.
 
-* comment utiliser l’exécuteur de test karma.js, l’infrastructure de test - Jasmine.js
-* comment utiliser le package powerbi-visuals-utils-testutils
-* la façon dont les simulacres et les substituts permettent de simplifier les tests unitaires pour les visuels Power BI.
+## <a name="prerequisites"></a>Prérequis
 
-## <a name="prerequisites"></a>Conditions préalables
+* Un projet de visuels Power BI installé
+* Un environnement Node.js configuré
 
-* Vous avez un projet de visuel Power BI
-* Environnement Node.JS configuré
+## <a name="install-and-configure-the-karma-javascript-test-runner-and-jasmine"></a>Installer et configurer l’exécuteur de test Karma JavaScript et Jasmine
 
-## <a name="install-and-configure-karmajs-and-jasmine"></a>Installer et configurer karma.js et jasmine
-
-Ajoutez les bibliothèques requises dans package.json à la section `devDependencies` :
+Ajoutez les bibliothèques requises au fichier *package.json* dans la section `devDependencies` :
 
 ```json
 "@babel/polyfill": "^7.2.5",
@@ -67,19 +65,19 @@ Ajoutez les bibliothèques requises dans package.json à la section `devDependen
 "webpack": "4.26.0"
 ```
 
-Pour en savoir plus sur le package, consultez la description ci-dessous.
+Pour en savoir plus sur le package, consultez la description à l’adresse.
 
-Enregistrer `package.json` et exécuter sur la ligne de commande à l’emplacement `package.json` :
+Enregistrez le fichier *package.json* et, à l’emplacement `package.json`, exécutez la commande suivante :
 
 ```cmd
 npm install
 ```
 
-Le gestionnaire de package installe tous les nouveaux packages ajoutés à `package.json`
+Le gestionnaire de package installe tous les nouveaux packages qui sont ajoutés à *package.json*.
 
-Pour l’exécution de tests unitaires, nous devons configurer l’exécuteur d’essai et la configuration `webpack`. L’exemple de configuration que vous trouverez ici :
+Pour exécuter des tests unitaires, configurez l’exécuteur de test et `webpack` config.
 
-Exemple de `test.webpack.config.js` :
+Le code suivant est un exemple de fichier *test.webpack.config.js* :
 
 ```typescript
 const path = require('path');
@@ -147,7 +145,7 @@ module.exports = {
 };
 ```
 
-Exemple de `karma.conf.ts`
+Le code suivant est un exemple de fichier *karma.conf.ts* :
 
 ```typescript
 "use strict";
@@ -250,33 +248,31 @@ module.exports = (config: Config) => {
 };
 ```
 
-Vous pouvez modifier cette configuration si nécessaire.
+Si nécessaire, vous pouvez modifier cette configuration.
 
-Certains paramètres de `karma.conf.js` :
+Le code dans *karma.conf.js* contient la variable suivante :
 
-* La variable `recursivePathToTests` localise l’emplacement du code des tests.
+* `recursivePathToTests` : localise le code de test
 
-* La variable `srcRecursivePath` localise le code JS de sortie après la compilation.
+* `srcRecursivePath` : localise le code JavaScript de sortie après la compilation
 
-* La variable `srcCssRecursivePath` localise le CSS de sortie après la compilation d’un fichier avec des styles.
+* `srcCssRecursivePath` : localise le CSS de sortie après la compilation d’un fichier avec des styles
 
-* La variable `srcOriginalRecursivePath` localise le code source de votre visuel.
+* `srcOriginalRecursivePath` : localise le code source de votre visuel
 
-* `coverageFolder` : la variable détermine l’emplacement où le rapport de couverture sera créé.
+* `coverageFolder` : détermine l’emplacement de création du rapport de couverture
 
-Certaines propriétés de configuration :
+Le fichier de configuration comprend les propriétés suivantes :
 
-* `singleRun: true` : les tests s’exécutent sur le système d’intégration continue. Et c’est suffisant pour une seule fois.
-Vous pouvez basculer vers `false` pour déboguer vos tests. Karma continuera d’exécuter le navigateur et vous permettra d’utiliser la console pour le débogage.
+* `singleRun: true` : les tests sont exécutés sur un système d’intégration continue (CI), ou peuvent être exécutés une seule fois. Vous pouvez remplacer la valeur du paramètre par *false* pour déboguer vos tests. Karma maintient le navigateur en cours d’exécution afin que vous puissiez utiliser la console pour le débogage.
 
-* `files: [...]` : dans ce tableau, vous pouvez définir des fichiers pour le chargement dans le navigateur.
-En règle générale, il existe des fichiers sources, des cas de test, des bibliothèques (Jasmine, utilitaires d’essai). Vous pouvez ajouter à la liste d’autres fichiers si nécessaire.
+* `files: [...]` : dans ce tableau, vous pouvez spécifier les fichiers à charger dans le navigateur. En règle générale, il existe des fichiers sources, des cas de test, des bibliothèques (Jasmine, utilitaires de test). Vous pouvez ajouter des fichiers supplémentaires à la liste, si nécessaire.
 
-* `preprocessors` : cette section de configuration vous permet de configurer les actions qui s’exécutent avant l’exécution des tests unitaires. Il existe une précompilation du code TypeScript vers JS et une préparation des fichiers de mappage source et la génération du rapport de couverture du code. Vous pouvez désactiver `coverage` pour déboguer vos tests. La couverture génère du code supplémentaire pour vérifier le code pour la couverture de test et complique le débogage des tests.
+* `preprocessors` : dans cette section, vous configurez les actions qui s’exécutent avant l’exécution des tests unitaires. Elles précompilent le code TypeScript vers JavaScript, préparent les fichiers de mappage sources et génèrent le rapport de couverture du code. Vous pouvez désactiver `coverage` quand vous déboguez vos tests. La couverture génère du code supplémentaire pour vérifier le code pour la couverture de test, ce qui complique le débogage des tests.
 
-**Description de toutes les configurations que vous pouvez trouver dans la [documentation](https://karma-runner.github.io/1.0/config/configuration-file.html) de karma.js**
+Pour obtenir une description de toutes les configurations Karma, accédez à la page sur le [fichier de configuration Karma](https://karma-runner.github.io/1.0/config/configuration-file.html).
 
-Pour une utilisation pratique, vous pouvez ajouter une commande de test dans `scripts` :
+Par souci pratique, vous pouvez ajouter une commande de test dans `scripts` :
 
 ```json
 {
@@ -292,15 +288,15 @@ Pour une utilisation pratique, vous pouvez ajouter une commande de test dans `sc
 }
 ```
 
-Vous êtes donc prêt à commencer l’écriture de vos tests unitaires.
+Vous êtes maintenant prêt à commencer l’écriture de vos tests unitaires.
 
-## <a name="simple-unit-test-for-check-dom-element-of-the-visual"></a>Test unitaire simple pour vérifier l’élément DOM du visuel
+## <a name="check-the-dom-element-of-the-visual"></a>Vérifier l’élément DOM du visuel
 
-Pour tester un visuel, nous devons créer une instance de visuel.
+Pour tester le visuel, commencez par créer une instance de visuel.
 
-### <a name="creating-visual-instance-builder"></a>Création du générateur d’instances visuelles
+### <a name="create-a-visual-instance-builder"></a>Créer un générateur d’instances de visuels
 
-Ajoutez un fichier `visualBuilder.ts` dans le dossier `test` avec le code suivant :
+Ajoutez un fichier *visualBuilder.ts* au dossier *test* à l’aide du code suivant :
 
 ```typescript
 import {
@@ -329,13 +325,13 @@ export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
 }
 ```
 
-Il existe une méthode `build` pour créer une instance de votre visuel. `mainElement` est une méthode GET, qui retourne une instance de l’élément DOM « racine » dans votre visuel. L’accesseur Get est facultatif, mais il facilite l’écriture de tests unitaires.
+Il existe une méthode `build` pour créer une instance de votre visuel. `mainElement` est une méthode GET, qui retourne une instance de l’élément DOM (Document Object Model) « racine » dans votre visuel. L’accesseur Get est facultatif, mais facilite l’écriture des tests unitaires.
 
-Nous avons donc le générateur d’une instance de visuel. Écrivons le cas de test. Il s’agit d’un cas de test pour vérifier ces éléments SVG créés lors de l’affichage de votre visuel.
+Vous disposez maintenant d’une build d’une instance de votre visuel. Écrivons le cas de test. Le cas de test vérifie les éléments SVG qui sont créés lors de l’affichage de votre visuel.
 
-### <a name="creating-typescript-file-to-write-test-cases"></a>Création d’un fichier TypeScript pour écrire des cas de test
+### <a name="create-a-typescript-file-to-write-test-cases"></a>Créer un fichier TypeScript pour écrire des cas de test
 
-Ajoutez un fichier `visualTest.ts` pour les cas de test avec les codes suivants :
+Ajoutez un fichier *visualTest.ts* pour les cas de test à l’aide du code suivant :
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -362,40 +358,36 @@ describe("BarChart", () => {
 });
 ```
 
-Plusieurs méthodes sont appelées.
+Plusieurs méthodes sont appelées :
 
-* La méthode [`describe`](https://jasmine.github.io/api/2.6/global.html#describe) décrit un cas de test. Dans un contexte de l’infrastructure Jasmine, souvent appelée suite ou groupe de spécifications.
+* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe) : décrit un cas de test. Dans le contexte du framework Jasmine, cela décrit souvent une suite ou un groupe de spécifications.
 
-* La méthode `beforeEach` est appelée avant chaque appel de la méthode `it`, qui est défini à l’intérieur de la méthode [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach).
+* `beforeEach` : est appelée avant chaque appel de la méthode `it`, qui est définie dans la méthode [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach).
 
-* `it` définit une spécification unique. La méthode [`it`](https://jasmine.github.io/api/2.6/global.html#it) doit contenir un ou plusieurs `expectations`.
+* [`it`](https://jasmine.github.io/api/2.6/global.html#it) : définit une spécification unique. La méthode `it` doit contenir un ou plusieurs `expectations`.
 
-* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect) : la méthode crée une attente de spécification. Une spécification réussit si toutes les attentes réussissent sans aucun échec.
+* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect) : crée une attente pour une spécification. Une spécification réussit si toutes les attentes réussissent sans aucun échec.
 
-* `toBeInDOM` : l’une des méthodes de correspondance. Vous pouvez lire la [documentation](https://jasmine.github.io/api/2.6/matchers.html) de l’infrastructure Jasmine concernant les correspondances existantes.
+* `toBeInDOM` : l’une des méthodes *matchers*. Pour plus d’informations sur les matchers, consultez [Jasmine Namespace: matchers](https://jasmine.github.io/api/2.6/matchers.html).
 
-**Pour en savoir plus sur l’infrastructure Jasmine dans la [documentation](https://jasmine.github.io/) officielle.**
-
-Après cela, vous pouvez exécuter votre test unitaire en tapant une commande dans l’outil en ligne de commande.
-
-Ce test vérifie que l’élément SVG racine des visuels est créé.
+Pour plus d’informations sur Jasmine, consultez la page de [documentation du framework Jasmine](https://jasmine.github.io/).
 
 ### <a name="launch-unit-tests"></a>Lancer des tests unitaires
 
-Pour exécuter le test unitaire, vous pouvez taper cette commande dans l’outil en ligne de commande.
+Ce test vérifie que l’élément SVG racine des visuels est créé. Pour exécuter le test unitaire, entrez la commande suivante dans l’outil en ligne de commande :
 
 ```cmd
 npm run test
 ```
 
-`karma.js` exécute le navigateur Chrome et exécute le cas de test.
+`karma.js` exécute le cas de test dans le navigateur Chrome.
 
-![KarmaJS lancé dans Chrome](./media/karmajs-chrome.png)
+![Karma JavaScript ouvert dans Chrome](./media/karmajs-chrome.png)
 
 > [!NOTE]
-> Google Chrome doit être installé en local.
+> Vous devez installer Google Chrome localement.
 
-Dans la ligne de commande, vous obtenez la sortie suivante :
+Dans la fenêtre de ligne de commande, vous obtenez la sortie suivante :
 
 ```cmd
 > karma start
@@ -418,7 +410,7 @@ Lines        : 20.85% ( 44/211 )
 
 ### <a name="how-to-add-static-data-for-unit-tests"></a>Comment ajouter des données statiques pour les tests unitaires
 
-Créez un fichier `visualData.ts` dans le dossier `test`. Avec les codes suivants :
+Créez le fichier *visualData.ts* dans le dossier *test* à l’aide du code suivant :
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -458,19 +450,19 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 }
 ```
 
-La classe `SampleBarChartDataBuilder` étend `TestDataViewBuilder` et implémente une méthode abstraite `getDataView`.
+La classe `SampleBarChartDataBuilder` étend `TestDataViewBuilder` et implémente la méthode abstraite `getDataView`.
 
-Lorsque vous placez des données dans des compartiments de champs de données, Power BI produit un objet `dataview` catégorique basé sur vos données.
+Quand vous placez des données dans des compartiments de champs de données, Power BI produit un objet `dataview` catégorique basé sur vos données.
 
-![Compartiments classés](./media/fields-buckets.png)
+![Compartiments de champs de données](./media/fields-buckets.png)
 
-Dans les tests unitaires, vous n’avez pas de fonctions principales Power BI pour les reproduire. Toutefois, vous devez mapper vos données statiques à un `dataview` catégorique. Et la classe `TestDataViewBuilder` vous aidera à le faire.
+Dans les tests unitaires, vous n’avez pas de fonctions principales Power BI pour reproduire les données. Toutefois, vous devez mapper vos données statiques au `dataview` catégorique. La classe `TestDataViewBuilder` peut vous aider à les mapper.
 
-[En savoir plus sur DataViewMapping](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md)
+Pour plus d’informations sur le mappage des vues de données, consultez [DataViewMappings](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
 
-Dans la méthode `getDataView`, vous appelez simplement la méthode `createCategoricalDataViewBuilder` avec vos données.
+Dans la méthode `getDataView`, vous appelez la méthode `createCategoricalDataViewBuilder` avec vos données.
 
-Dans [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2) du visuel `sampleBarChart`, nous disposons des objets dataRoles et dataViewMapping :
+Dans le fichier [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2) du visuel `sampleBarChart`, nous avons des objets dataRoles et dataViewMapping :
 
 ```json
 "dataRoles": [
@@ -549,13 +541,13 @@ Pour générer le même mappage, vous devez définir les paramètres suivants su
 ], columnNames)
 ```
 
-Où le groupe de catégories `this.valuesCategory`.
+Où `this.valuesCategory` est un tableau de catégories :
 
 ```ts
 public valuesCategory: string[] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 ```
 
-et un tableau de mesures `this.valuesMeasure` pour chaque catégorie. Exemple :
+Et `this.valuesMeasure` est un tableau de mesures pour chaque catégorie :
 
 ```ts
 public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 376074.57, 814724.34, 570921.34];
@@ -563,7 +555,7 @@ public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 37
 
 À présent, vous pouvez utiliser la classe `SampleBarChartDataBuilder` dans votre test unitaire.
 
-Classe `ValueType` définie dans un package `powerbi-visuals-utils-testutils`. La méthode `createCategoricalDataViewBuilder` exige la bibliothèque `lodash`.
+La classe `ValueType` est définie dans le package powerbi-visuals-utils-testutils. Et la méthode `createCategoricalDataViewBuilder` nécessite la bibliothèque `lodash`.
 
 Ajoutez ces packages aux dépendances.
 
@@ -582,7 +574,7 @@ npm install
 
 pour installer la bibliothèque `lodash-es`.
 
-À présent, vous pouvez réexécuter le test unitaire. Vous devez recevoir cette sortie
+À présent, vous pouvez réexécuter le test unitaire. Vous devez obtenir la sortie suivante :
 
 ```cmd
 > karma start
@@ -603,27 +595,25 @@ Lines        : 52.83% ( 112/212 )
 ================================================================================
 ```
 
-Et vous devez voir le navigateur Chrome démarré avec votre visuel.
+Votre visuel s’ouvre dans le navigateur Chrome, comme indiqué ci-dessous :
 
 ![Lancements d’UT dans Chrome](./media/karmajs-chrome-ut-runned.png)
 
-Le résumé de la couverture a augmenté. Ouvrez `coverage\index.html` pour en savoir plus sur la couverture du code en cours
+Le résumé indique que la couverture a augmenté. Pour en savoir plus sur la couverture du code actuelle, ouvrez `coverage\index.html`.
 
 ![Index de couverture d’UT](./media/code-coverage-index.png)
 
-Ou dans l’étendue du dossier `src`
+Ou examinez l’étendue du dossier `src` :
 
 ![Couverture du dossier src](./media/code-coverage-src-folder.png)
 
-Dans l’étendue du fichier, vous pouvez consulter le code source. L’utilitaire `Coverage` marque l’arrière-plan de la ligne en rouge si un code n’a pas été exécuté pendant l’exécution des tests unitaires.
+Dans l’étendue du fichier, vous pouvez voir le code source. Les utilitaires `Coverage` mettent en surbrillance la ligne en rouge si du code n’a pas été exécuté pendant les tests unitaires.
 
 ![Couverture du code du fichier visual.ts](./media/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
-> Mais la couverture du code ne signifie pas que vous avez une bonne couverture des fonctionnalités du visuel. Un simple test unitaire fourni plus de 96 % de couverture dans `src\visual.ts`.
+> La couverture du code ne signifie pas que vous avez une bonne couverture des fonctionnalités du visuel. Un simple test unitaire fourni plus de 96 pour cent de couverture dans `src\visual.ts`.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Lorsque votre visuel est prêt, vous pouvez soumettre votre visuel pour publication.
-
-[En savoir plus sur la publication de visuels dans AppSource](../office-store.md)
+Quand votre visuel est prêt, vous pouvez le soumettre pour publication. Pour plus d’informations, consultez [Publier des visuels personnalisés dans AppSource](../office-store.md).
