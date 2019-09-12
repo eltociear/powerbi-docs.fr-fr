@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Liens hypertexte dans les tables
               href: power-bi-hyperlinks-in-tables.md
+            - name: Chaînes de format personnalisées
+              href: desktop-custom-format-strings.md
             - name: Mise en forme conditionnelle des tables
               href: desktop-conditional-table-formatting.md
             - name: Mise en forme conditionnelle des titres basée sur des expressions
@@ -669,12 +671,14 @@
               href: service-dataflows-computed-entities-premium.md
             - name: Se connecter à des sources de données avec des dataflows
               href: service-dataflows-data-sources.md
-            - name: Utilisation de flux de données avec des sources de données locales
+            - name: Utiliser des dataflows avec des sources de données locales
               href: service-dataflows-on-premises-gateways.md
             - name: Lier des entités entre dataflows
               href: service-dataflows-linked-entities.md
-            - name: Utilisation d’une actualisation incrémentielle avec des dataflows
+            - name: Utiliser une actualisation incrémentielle avec des dataflows
               href: service-dataflows-incremental-refresh.md
+            - name: Bonnes pratiques pour les dataflows
+              href: service-dataflows-best-practices.md
             - name: Ressources du développeur pour les flux de données
               href: service-dataflows-developer-resources.md
             - name: Se connecter à des flux de données dans Power BI Desktop
@@ -715,6 +719,8 @@
               href: service-template-apps-install-distribute.md
             - name: 'Mettre à jour, supprimer et extraire une application modèle Power BI'
               href: service-template-update-delete-extract.md
+            - name: Exemples d’applications modèles
+              href: service-template-apps-samples.md
         - name: Résoudre des problèmes
           items:
             - name: "Vous avez oublié votre mot de passe Power BI\_?"
