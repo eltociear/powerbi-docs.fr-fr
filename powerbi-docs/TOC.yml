@@ -677,8 +677,6 @@
               href: service-dataflows-linked-entities.md
             - name: Utiliser une actualisation incrémentielle avec des dataflows
               href: service-dataflows-incremental-refresh.md
-            - name: Bonnes pratiques pour les dataflows
-              href: service-dataflows-best-practices.md
             - name: Ressources du développeur pour les flux de données
               href: service-dataflows-developer-resources.md
             - name: Se connecter à des flux de données dans Power BI Desktop
@@ -1432,6 +1430,8 @@
           href: service-admin-power-bi-security.md
 - name: Instructions
   items:
+    - name: Bonnes pratiques pour les dataflows
+      href: service-dataflows-best-practices.md
     - name: "Qu’est-ce qu’un schéma en étoile\_?"
       href: guidance/star-schema.md
     - name: Réduire la taille du modèle de données
