@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: d18e61343496eef63dee29afae0a9e95fb382848
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 86fc2f8d13cdcd006c01dfff0114c13cc78f5e65
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498002"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987017"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -137,7 +137,7 @@ La fonctionnalité **Publier sur le web** est prise en charge pour la majeure pa
 - Rapports contenant des mesures DAX au niveau du rapport.
 - Modèles de requêtes de données à authentification unique.
 - [Informations confidentielles ou propriétaires sécurisées](#publish-to-web-from-power-bi).
-- La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez l’approche [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md) pour l’incorporation. En savoir plus sur [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md).
+- La fonctionnalité d’authentification automatique fournie avec l’option **Incorporer** ne fonctionne pas avec l’API JavaScript Power BI. Pour l’API JavaScript Power BI, utilisez l’approche [les données appartiennent à l’utilisateur](developer/embed-sample-for-your-organization.md) pour l’incorporation.
 
 ## <a name="tenant-setting"></a>Paramètres de locataire
 

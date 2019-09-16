@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 54108b8d4fd02730cb1aa027d2fefbad2bbfd9fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a98ccf3477a6e8e996efb0b8cb1ccf2c6728c594
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513126"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70840971"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Obtenir des données de classeurs Excel
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -77,8 +77,6 @@ Dans Excel 2016, vous pouvez également utiliser Publier > Exporter. Cela revie
 Lorsque vous choisissez **Connecter**, votre classeur apparaît dans Power BI comme il le ferait dans Excel Online. Mais contrairement à Excel Online, Power BI offre des fonctionnalités utiles pour épingler des éléments directement de vos classeurs sur vos tableaux de bord.
 
 Vous ne pouvez pas modifier votre classeur dans Power BI. Toutefois, si vous devez apporter des modifications, vous pouvez cliquer sur Modifier, puis choisir de modifier votre classeur dans Excel Online ou l’ouvrir dans Excel sur votre ordinateur. Toutes les modifications apportées sont enregistrées dans le classeur sur OneDrive.
-
-Quand vous procédez de cette manière, Power BI crée un jeu de données correspondant pour le classeur connecté. Vous pouvez utiliser ce jeu de données pour créer un rapport Power BI si nécessaire. Votre classeur apparaît également dans le volet de navigation de votre espace de travail Power BI sous Rapports. Les classeurs connectés ont une icône Excel spéciale.
 
 Choisissez cette option si vous avez uniquement des données dans des feuilles de calcul, ou si vous avez des plages, des tableaux croisés dynamiques et des graphiques que vous voulez épingler aux tableaux de bord.
 

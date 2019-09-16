@@ -1,20 +1,20 @@
 ---
-title: Qu’est-ce que le schéma en étoile et pourquoi en ai-je besoin d’un pour Power BI ?
+title: Découvrez le schéma en étoile et son importance pour Power BI
 description: Découvrez le schéma en étoile et sa pertinence pour le développement de modèles de données Power BI qui sont optimisés du point de vue des performances et de la convivialité.
-author: guyinacube
+author: peter-myers
 manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/05/2019
+ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: bb8c0582e08d8e1e05c78c30df0b59bd89aafbd0
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.openlocfilehash: f44c83613f874aec84a389ac5034ebde193467c2
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985779"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70840609"
 ---
 # <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Découvrez le schéma en étoile et son importance pour Power BI
 
