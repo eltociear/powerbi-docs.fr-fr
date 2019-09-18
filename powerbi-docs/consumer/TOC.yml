@@ -2,12 +2,14 @@
   href: power-bi-consumer-landing.md
 - name: Service Power BI pour les consommateurs
   items:
-    - name: Vue d’ensemble
+    - name: Vue d'ensemble
       items:
         - name: "Qu’est-ce qu’un consommateur Power BI\_?"
           href: end-user-consumer.md
         - name: Concepts de base et terminologie pour les consommateurs Power BI
           href: end-user-basic-concepts.md
+        - name: Rechercher du contenu en utilisant votre page d'accueil
+          href: end-user-home.md
         - name: Accéder à la nouvelle apparence
           href: ../service-new-look.md
     - name: Guides de démarrage rapide
@@ -90,7 +92,7 @@
               href: end-user-insights.md
             - name: Activer les fonctionnalités en préversion
               href: end-user-preview-features.md
-        - name: Obtenir des données
+        - name: Obtenir les données
           items:
             - name: "Applications dans Power\_BI"
               href: end-user-apps.md
@@ -116,7 +118,7 @@
           href: end-user-insight-types.md
 - name: "Applications mobiles Power\_BI"
   items:
-    - name: Vue d’ensemble
+    - name: Vue d'ensemble
       items:
         - name: Présentation des applications mobiles
           href: mobile/mobile-apps-for-mobile-devices.md
