@@ -13,10 +13,10 @@ ms.date: 6/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 29823a2f1ca7f1448df54282e0ce081310974eb3
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "67265272"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Mode Exploration pour une visualisation dans Power BI
@@ -49,7 +49,7 @@ Les dates sont un type unique de hiérarchie. Quand vous ajoutez un champ de dat
     | Zone | Champ |
     | ---- | ----- |
     | Valeur |Ventes<br>\|\_ Nombre total d’unités cette année |
-    | Grouper | Store<br>\|\_ Territoire<br>\|\_ Ville<br>\|\_ Code postal<br>\|\_ Nom
+    | Groupe | Store<br>\|\_ Territoire<br>\|\_ Ville<br>\|\_ Code postal<br>\|\_ Nom
 
     La treemap a une hiérarchie constituée de secteurs, de villes, de codes postaux et de noms de ville. Chaque secteur a une ou plusieurs villes, chaque ville a un ou plusieurs codes postaux, etc. Par défaut, la visualisation montre uniquement les données relatives au secteur, car le *secteur* (Territory) apparaît en premier dans la liste.
 

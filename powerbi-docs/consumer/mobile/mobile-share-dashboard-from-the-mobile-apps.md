@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
 ms.openlocfilehash: 75d315463601110dee61d293a7a41abbf30aaa2d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61274437"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Partager un tableau de bord ou un rapport à partir des applications mobiles Power BI
@@ -39,7 +39,7 @@ Avec une [licence Power BI Pro](../../service-features-license-type.md), vous po
    
    Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord ou le rapport. L’invitation expire après un mois. Lorsqu’il est ouvert, dans un navigateur ou dans l’application mobile Power BI, il est ajouté à la section **Partagé avec moi** du compte Power BI de l’utilisateur.
    
-   ![Partagées avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
    Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
 
@@ -69,7 +69,7 @@ Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
    
    Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord ou le rapport. L’invitation expire après un mois. Lorsqu’il est ouvert, dans un navigateur ou dans l’application mobile Power BI, il est ajouté à la section **Partagé avec moi** du compte Power BI de l’utilisateur.
    
-   ![Partagées avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
    Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
 
@@ -105,7 +105,7 @@ Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
    
    Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord. L’invitation expire après un mois. Lorsqu’il est ouvert, dans un navigateur ou dans l’application mobile Power BI, il est ajouté à la section **Partagé avec moi** du compte Power BI de l’utilisateur.
    
-   ![Partagées avec moi](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-shared-with-me-left-nav.png)
+   ![Partagé avec moi](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-shared-with-me-left-nav.png)
    
    Découvrez d’autres [remarques sur le partage de tableaux de bord avec vos collègues](../../service-share-dashboards.md).
 
@@ -140,7 +140,7 @@ Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
    
    Les destinataires reçoivent une invitation par e-mail avec un lien direct vers le tableau de bord ou le rapport. L’invitation expire après un mois. Lorsqu’il est ouvert, dans un navigateur ou dans l’application mobile Power BI, il est ajouté à la section **Partagé avec moi** du compte Power BI de l’utilisateur.
    
-   ![Partagées avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
+   ![Partagé avec moi](./././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-shared-with-me-left-nav.png)
    
    Découvrez d’autres [remarques sur le partage avec des collègues](../../service-share-dashboards.md).
 

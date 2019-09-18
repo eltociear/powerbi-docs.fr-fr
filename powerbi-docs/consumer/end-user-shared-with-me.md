@@ -13,14 +13,14 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 4a4cbc152784d7536a5aa179769cf753645c932b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61048718"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Afficher les tableaux de bord et les rapports qui ont été partagés avec moi
-## <a name="shared-with-me"></a>Partagées avec moi
+## <a name="shared-with-me"></a>Partagé avec moi
 
 Quand un collègue partage du contenu avec vous, à l’aide du bouton **Partager**, il s’affiche dans votre conteneur **Partagés avec moi**. Le tableau de bord ou le rapport est disponible uniquement à partir de **Partagés avec moi** et non depuis **Applications**.
 
