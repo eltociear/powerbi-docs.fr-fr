@@ -6,17 +6,17 @@ manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 05/29/2019
+ms.date: 09/11/2019
 ms.author: mihart
 layout: HubPage
 ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 7dae9f7a2768a8e9f51d5454019cff740304fe2f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d43d1072c9eafa71d336f71e22ac2d6d68144558
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66270615"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073395"
 ---
 <div id="main" class="v2">
       <div class="container">
@@ -26,7 +26,7 @@ ms.locfileid: "66270615"
             <p>Pour voir toute la documentation Power BI pour les consommateurs, ouvrez la <a href="end-user-consumer.md">table des matières</a>.</p>
             <ul class="pivots">
             <li>
-                <a href="#get-started" data-linktype="self-bookmark">Bien démarrer</a>
+                <a href="#get-started" data-linktype="self-bookmark">Prise en main</a>
                 <ul id="get-started" class="cardsF">
                     <li>
                         <a data-default="true" href="#getstarted" data-linktype="self-bookmark"></a>
@@ -41,8 +41,8 @@ ms.locfileid: "66270615"
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3>Commencer</h3>
-                                                <p><a href="/power-bi/service-get-started" data-linktype="absolute-path">Visite guidée du service Power BI</a></p>
+                                                <h3>Prise en main</h3>
+                                                <p><a href="/power-bi/consumer/end-user-reading-view" data-linktype="absolute-path">Visite guidée du service Power BI</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-consumer" data-linktype="absolute-path">Qu’est-ce qu’un <b><i>consommateur</i></b> Power BI ?</a></p>
                                                 <p><b>Quelles sont les différences entre les</b> <a href="/power-bi/consumer/end-user-reports" data-linktype="absolute-path">rapports</a>, les <a href="/power-bi/consumer/end-user-dashboards" data-linktype="absolute-path">tableaux de bord</a> et les <a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">applications</a> ?</p>
                                                 <p><a href="/power-bi/consumer/end-user-sign-in" data-linktype="absolute-path">Connexion et déconnexion</a></p>
@@ -122,7 +122,7 @@ ms.locfileid: "66270615"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Obtenir de l’aide</h3>
-                                            <p><a href="https://docs.microsoft.com/en-us/learn/paths/consume-data-with-power-bi/" data-linktype="absolute-path">Autoformation Microsoft LEARN</a></p>
+                                            <p><a href="https://docs.microsoft.com/en-us/learn/paths/consume-data-with-power-bi/" data-linktype="absolute-path">Formation à votre rythme Microsoft LEARN</a></p>
                                                 <p><a href="https://powerbi.microsoft.com/blog/" data-linktype="absolute-path">Lire le blog Power BI</a></p>
                                                 <p><a href="http://community.powerbi.com/" data-linktype="absolute-path">Poser des questions dans les forums Power BI</a></p>
                                             </div>
@@ -152,10 +152,10 @@ ms.locfileid: "66270615"
                 </ul>
             </li>
             <li>
-                <a href="#concepts-terminology" data-linktype="self-bookmark"> Concepts et terminologie</a>
+                <a href="#concepts-terminology" data-linktype="self-bookmark">Concepts &amp; terminologie</a>
                 <ul id="concepts-terminology">
                     <li>
-                        <a href="#conceptsterminology" data-linktype="self-bookmark"> Concepts et terminologie</a>
+                        <a href="#conceptsterminology" data-linktype="self-bookmark">Concepts &amp; terminologie</a>
                         <ul id="conceptsterminology" class="cardsC">
                             <br>
                             <li>
@@ -314,25 +314,6 @@ ms.locfileid: "66270615"
                                                 <div class="cardText">
                                                     <h3>Accessibilité</h3>
                                                     <p>Découvrez comment Microsoft permet aux personnes présentant un handicap de lire et d’utiliser plus facilement les rapports Power BI. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                            
-                            <li>
-                                <a href="/power-bi/consumer/end-user-browsers" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/browser-info.svg" alt="Browsers Info" data-linktype="relative-path">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Informations sur les navigateurs</h3>
-                                                    <p>Consultez la liste des navigateurs qui fonctionnent le mieux avec Power BI. </p>
                                                 </div>
                                             </div>
                                         </div>
