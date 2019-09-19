@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
 ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "70903675"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI

@@ -9,23 +9,25 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567796"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903638"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Utilisation d’OAuth pour se connecter à Power BI Report Server et SSRS
 
-Découvrez comment configurer votre environnement pour prendre en charge l’authentification OAuth avec l’application mobile Power BI afin de vous connecter à Power BI Report Server et SQL Server Reporting Services 2016 ou ultérieur.
+Vous pouvez utiliser OAuth pour vous connecter à Power BI Report Server et Reporting Services afin d’afficher des rapports mobiles ou des indicateurs de performance clés. Découvrez comment configurer votre environnement pour prendre en charge l’authentification OAuth avec l’application mobile Power BI afin de vous connecter à Power BI Report Server et SQL Server Reporting Services 2016 ou ultérieur.
 
-![Se connecter à un serveur](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+Regardez Adam se connecter de Power BI Mobile à SSRS avec OAuth :
 
-Vous pouvez utiliser OAuth pour vous connecter à Power BI Report Server et Reporting Services afin d’afficher des rapports mobiles ou des indicateurs de performance clés. Windows Server 2016 fournit quelques améliorations au rôle Proxy d’application web (WAP) qui autorisent ce type d’authentification.
 
-   > [!NOTE]
-   > L’affichage des rapports Power BI hébergés dans Power BI Report Server à l’aide de WAP pour l’authentification est maintenant pris en charge pour les applications iOS et Android.
+<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> L’affichage des rapports Power BI hébergés dans Power BI Report Server à l’aide de WAP pour l’authentification est maintenant pris en charge pour les applications iOS et Android.
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -33,19 +35,19 @@ Windows Server 2016 est requis pour les serveurs Proxy d’application web (WAP)
 
 ## <a name="domain-name-services-dns-configuration"></a>Configuration DNS (Domain Name Services)
 
-Vous devez déterminer l’URL publique à laquelle l’application mobile Power BI se connecte. L’URL peut par exemple ressembler à ce qui suit.
+L’URL publique est celle à laquelle l’application Power BI Mobile se connecte. L’URL peut par exemple ressembler à ce qui suit.
 
 ```https
 https://reports.contoso.com
 ```
 
-Vous devez pointer votre enregistrement DNS correspondant aux **rapports** sur l’adresse IP publique du serveur Proxy d’application web (WAP). Vous devez également configurer un enregistrement DNS public pour votre serveur AD FS. Par exemple, vous pouvez configurer le serveur ADFS avec l’URL suivante.
+Pointez votre enregistrement DNS correspondant aux **rapports** sur l’adresse IP publique du serveur Proxy d’application web (WAP). Vous devez également configurer un enregistrement DNS public pour votre serveur AD FS. Par exemple, vous pouvez configurer le serveur ADFS avec l’URL suivante.
 
 ```https
 https://fs.contoso.com
 ```
 
-Vous devez pointer votre enregistrement DNS correspondant à **fs** sur l’adresse IP publique du serveur Proxy d’application web (WAP), car il sera publié en tant que composant de l’application WAP.
+Pointez votre enregistrement DNS correspondant à **fs** sur l’adresse IP publique du serveur Proxy d’application web (WAP), car il sera publié en tant que composant de l’application WAP.
 
 ## <a name="certificates"></a>Certificats
 
@@ -77,7 +79,7 @@ Pour plus d’informations, consultez [Modifier un fichier de configuration Repo
 
 ## <a name="active-directory-federation-services-adfs-configuration"></a>Configuration d’Active Directory Federation Services (ADFS)
 
-Vous devez configurer AD FS sur un serveur Windows 2016 au sein de votre environnement. Pour cela, dans le Gestionnaire de serveur, sélectionnez Ajouter des rôles et fonctionnalités sous Gérer. Pour plus d’informations, consultez [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
+Vous devez configurer AD FS sur un serveur Windows 2016 au sein de votre environnement. Vous pouvez effectuer cette configuration dans le Gestionnaire de serveur en sélectionnant Ajouter des rôles et fonctionnalités sous Gérer. Pour plus d’informations, consultez [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
 
 ### <a name="create-an-application-group"></a>Créer un groupe d’applications
 
@@ -107,7 +109,7 @@ Pour créer le groupe d’applications, procédez comme suit.
    mspbi-adal://com.microsoft.powerbimobile  
    mspbi-adalms://com.microsoft.powerbimobilems
 
-   **Les applications Android ont seulement besoin de l’entrée suivante :**  
+   **Les applications Android ont seulement besoin des étapes suivantes :**  
    urn:ietf:wg:oauth:2.0:oob
 
    ![ADFS - Assistant Groupe d’applications 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
@@ -149,7 +151,7 @@ Pour passer de l’authentification OAuth à l’authentification Windows, nous 
 
 Nous devons configurer la délégation contrainte sur le compte du serveur WAP dans Active Directory. Vous devrez peut-être faire appel à un administrateur de domaine si vous n’avez pas de droits d’accès à Active Directory.
 
-Pour configurer la délégation contrainte, vous devez effectuer les opérations suivantes.
+Pour configurer la délégation contrainte, vous devez effectuer les étapes suivantes.
 
 1. Sur un ordinateur sur lequel les outils Active Directory sont installés, lancez **Utilisateurs et ordinateurs Active Directory**.
 
@@ -197,13 +199,13 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 | Paramètre | Commentaires |
 | --- | --- |
 | **ADFSRelyingPartyName** |Il s’agit du nom de l’API web que vous avez créée dans le groupe d’applications au sein d’ADFS. |
-| **ExternalCertificateThumbprint** |Il s’agit du certificat à utiliser pour les utilisateurs externes. Il est important que ce certificat soit valide sur les appareils mobiles et provienne d’une autorité de certification approuvée. |
+| **ExternalCertificateThumbprint** |Il s’agit du certificat à utiliser pour les utilisateurs externes. Il est important que le certificat soit valide sur les appareils mobiles et provienne d’une autorité de certification approuvée. |
 | **BackendServerUrl** |Il s’agit de l’URL permettant d’accéder au serveur de rapports à partir du serveur WAP. Si le serveur WAP est situé dans un réseau de périmètre, vous devrez peut-être utiliser un nom de domaine complet. Vérifiez que vous pouvez atteindre cette URL à partir du navigateur web sur le serveur WAP. |
 | **BackendServerAuthenticationSPN** |Il s’agit du nom de principal du service que vous avez créé lors de la configuration de Reporting Services. |
 
 ### <a name="setting-integrated-authentication-for-the-wap-application"></a>Définition de l’authentification intégrée pour l’application de proxy d’application web
 
-Une fois que vous avez ajouté l’application de proxy d’application web, vous devez définir BackendServerAuthenticationMode sur IntegratedWindowsAuthentication. Pour cela, vous avez besoin de l’ID de l’application de proxy d’application web.
+Une fois que vous avez ajouté l’application de proxy d’application web, vous devez définir BackendServerAuthenticationMode sur IntegratedWindowsAuthentication. Vous avez besoin de l’ID de l’application de proxy d’application web pour cela.
 
 ```powershell
 Get-WebApplicationProxyApplication “Contoso Reports” | fl

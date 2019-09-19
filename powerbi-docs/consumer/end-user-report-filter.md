@@ -12,10 +12,10 @@ ms.date: 09/04/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: a1dee67279e6f43c0ff8008338f7b8a9f5a2d41a
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "70841195"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport

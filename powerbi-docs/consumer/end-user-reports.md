@@ -11,10 +11,10 @@ ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "70903731"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI

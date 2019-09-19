@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
 ms.openlocfilehash: 1f7911007d9629c8990fc15ddf7453bafe0e78f5
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "70841456"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Annoter et partager une vignette, un rapport ou un visuel dans les applications mobiles Power BI
