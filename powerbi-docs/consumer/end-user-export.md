@@ -1,6 +1,6 @@
 ---
 title: Exporter des données à partir d’un visuel Power BI
-description: Exporter des données à partir d’un visuel de rapport et d’un visuel de tableau de bord et l’afficher dans Excel.
+description: Exportez des données à partir d’un élément visuel de rapport et d’un élément visuel de tableau de bord et affichez-les dans Excel.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,73 +8,76 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 4/9/2019
+ms.date: 09/11/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: d4384db8e05a69b138e76377e7c7b845867fa881
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3ab3b7a96fb629b303263b1ccf5c2f31603300b4
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61063727"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073150"
 ---
-# <a name="export-data-from-visual"></a>Exporter des données à partir de visual
-Si vous souhaitez afficher les données qui sont utilisées pour créer un élément visuel, [vous pouvez afficher ces données dans Power BI](end-user-show-data.md) ou exporter ces données vers Excel. La possibilité d’exporter les données nécessite un type ou une licence et modifier les autorisations pour le contenu. Si vous ne pouvez pas exporter, contactez votre administrateur Power BI. 
+# <a name="export-data-from-a-visual"></a>Exporter des données à partir d’un élément visuel
+Si vous souhaitez afficher les données qui sont utilisées pour créer un élément visuel, vous pouvez [le faire dans Power BI](end-user-show-data.md) ou exporter ces données vers Excel. L’option permettant d’exporter les données requiert un certain type de licence et les autorisations de modification sur le contenu. Si vous ne pouvez pas exporter, contactez votre administrateur Power BI. 
 
-## <a name="from-a-visual-on-a-power-bi-dashboard"></a>À partir d’un élément visuel sur un tableau de bord Power BI
+## <a name="from-a-visual-on-a-power-bi-dashboard"></a>À partir d’un élément visuel dans un tableau de bord Power BI
 
-1. Démarrer sur un tableau de bord Power BI. Ici, nous utilisons le tableau de bord à partir de la ***exemple vente et Marketing*** application. Vous pouvez [télécharger cette application à partir de AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
+1. Démarrer un tableau de bord Power BI. Ici, nous utilisons le tableau de bord de l’application ***Exemple Marketing et ventes***. Vous pouvez [télécharger cette application sur AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
 
-    ![](media/end-user-export/power-bi-dashboard.png)
+    ![Tableau de bord de l’application](media/end-user-export/power-bi-dashboards.png)
 
-2. Placez le curseur sur un élément visuel pour afficher les points de suspension (...) et cliquez pour afficher le menu action.
+2. Placez le curseur sur un élément visuel pour afficher les points de suspension (...), et cliquez pour afficher le menu Action.
 
-    ![](media/end-user-export/power-bi-dashboard-export-visual.png)
+    ![Le menu qui s’affiche lorsque vous sélectionnez les points de suspension](media/end-user-export/power-bi-action-menu.png)
 
-3. Sélectionnez **exporter vers Excel**.
+3. Sélectionnez **Exporter vers Excel**.
 
-4. Que se passe-t-il ensuite varie sur navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou vous pouvez voir un lien vers le fichier exporté en bas du navigateur. 
+4. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou vous pouvez voir un lien vers le fichier exporté en bas du navigateur. 
 
-    ![](media/end-user-export/power-bi-export-browser.png)
+    ![Navigateur Chrome avec lien du fichier exporté](media/end-user-export/power-bi-dashboard-exports.png)
 
 5. Ouvrez le fichier dans Excel.  
 
-    ![](media/end-user-export/power-bi-excel.png)
+    ![Chiffre d’affaires total des unités dans Excel](media/end-user-export/power-bi-excel.png)
 
 
-## <a name="from-a-visual-in-a-report"></a>À partir d’un visuel dans un rapport
-Vous pouvez exporter des données à partir d’un visuel dans un rapport en tant que .csv ou .xlsx (Excel) format. 
+## <a name="from-a-visual-in-a-report"></a>À partir d’un élément visuel dans un rapport
+Vous pouvez exporter des données à partir d’un élément visuel dans un rapport au format. csv ou. xlsx (Excel). 
 
-1. Dans un tableau de bord, sélectionnez une vignette pour ouvrir le rapport sous-jacent.  Dans cet exemple, nous sélectionnons le même visuel comme ci-dessus, *Total unités YTD Var %* . 
+1. Dans un tableau de bord, sélectionnez une vignette pour ouvrir le rapport sous-jacent.  Dans cet exemple, nous sélectionnons le même élément visuel que ci-dessus, *Total Units YTD Var %* . 
 
-    ![](media/end-user-export/power-bi-export-report.png)
+    ![Vignette du tableau de bord en surbrillance](media/end-user-export/power-bi-export-reports.png)
 
-    Dans la mesure où cette vignette a été créée à partir de la *exemple vente et Marketing* rapport, qui est le rapport s’ouvre. Et bien, il s’ouvre à la page qui contient l’élément visuel mosaïque sélectionnée. 
+    Étant donné que cette vignette a été créée à partir de *l’exemple de rapport Marketing et ventes*, c’est ce rapport qui s’ouvre. Il s’ouvre sur la page qui contient l’élément visuel de la vignette sélectionnée. 
 
-2. Sélectionnez la vignette dans le rapport. Notez que le **filtres** volet à droite. Cet élément visuel a des filtres appliqués. Pour en savoir plus sur les filtres, consultez [utiliser des filtres dans un rapport](end-user-report-filter.md).
+2. Sélectionnez la vignette dans le rapport. Remarquez le volet **Filtres** à droite. Des filtres sont appliqués à cet élément visuel. Pour en savoir plus sur les filtres, consultez [Utiliser les filtres dans un rapport](end-user-report-filter.md).
 
-    ![](media/end-user-export/power-bi-export-filters.png)
+    ![Volet de filtre sélectionné](media/end-user-export/power-bi-export-filter.png)
 
 
-3. Sélectionnez les ellipses, dans le coin supérieur droit de la visualisation. Choisissez **exporter des données**.
+3. Sélectionnez les ellipses, dans le coin supérieur droit de la visualisation. Choisissez **Exporter des données**.
 
-    ![](media/end-user-export/power-bi-export-report2.png)
+    ![Exporter les données sélectionnées à partir de la liste déroulante](media/end-user-export/power-bi-export-report.png)
 
-4. Vous verrez des options d’exportation des données de synthèse ou sous-jacent. Si vous utilisez le *exemple vente et marketing* app, **données sous-jacentes** va être désactivé. Mais vous pouvez rencontrer des rapports où les deux options sont activées. Voici une explication de la différence.
+4. Vous verrez des options pour exporter les données résumées ou les données sous-jacentes. Si vous utilisez *l’exemple d’application Marketing et ventes*, les **Données sous-jacentes** sont désactivées. Toutefois, vous pouvez rencontrer des rapports où les deux options sont activées. Voici une explication de la différence.
 
-    **Données résumées**: sélectionnez cette option si vous voulez exporter les données de ce que vous voyez dans le visuel.  Ce type d’exportation vous montre uniquement les données qui a été utilisées pour créer le visuel. Si l’élément visuel a des filtres appliqués, les données que vous exportez seront également être filtrées. Par exemple, pour cet élément visuel, l’exportation inclut uniquement les données pour 2014 et la région centrale et seules les données de quatre des fabricants : VanArsdel Natura, Aliqui et Prirum.
+    **Données résumées** : sélectionnez cette option si vous voulez exporter les données correspondant à l’élément visuel.  Ce type d’exportation contient uniquement les données utilisées pour créer l’élément visuel. Si des filtres sont appliqués à l’élément visuel, les données que vous exportez sont également filtrées. Par exemple, pour cet élément visuel, votre exportation inclura uniquement les données pour 2014 et la région centrale, et uniquement les données pour quatre des fabricants : VanArsdel, Natura, Aliqui et Pirum.
   
 
-    **Données sous-jacentes**: sélectionnez cette option si vous voulez exporter les données de ce que vous voyez dans le visuel **plus** des données supplémentaires à partir du jeu de données sous-jacent.  Cela peut inclure des données contenues dans le jeu de données, mais pas utilisées dans le visuel. 
+    **Données sous-jacentes** : sélectionnez cette option si vous souhaitez exporter les données de ce que vous voyez dans l’élément visuel **plus** les données supplémentaires du jeu de données sous-jacent.  Cela peut inclure des données contenues dans le jeu de données, mais qui ne sont pas utilisées dans l’élément visuel. 
 
-    ![](media/end-user-export/power-bi-export-report3.png)
+    ![Menu dans lequel vous choisissez sous-jacent ou résumé](media/end-user-export/power-bi-export-option.png)
 
-5. Que se passe-t-il ensuite varie sur navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou vous pouvez voir un lien vers le fichier exporté en bas du navigateur. 
+5. Ce qui se passe ensuite dépend du navigateur que vous utilisez. Vous pouvez être invité à enregistrer le fichier ou vous pouvez voir un lien vers le fichier exporté en bas du navigateur. 
 
-    ![](media/end-user-export/power-bi-export-edge.png)
+    ![Affichage des fichiers exportés dans le navigateur Microsoft Edge](media/end-user-export/power-bi-export-edge-browser.png)
 
 
-7. Ouvrez le fichier dans Excel. Comparer la quantité de données exportées vers les données que nous avons exportée à partir du même élément visuel sur le tableau de bord. La différence est que cette exportation inclut **données sous-jacentes**. 
+6. Ouvrez le fichier dans Excel. Comparez la quantité de données exportées aux données que nous avons exportées à partir du même élément visuel sur le tableau de bord. La différence est que cette exportation comprend les **Données sous-jacentes**. 
 
-    ![](media/end-user-export/power-bi-underlying.png)
+    ![Exemple Excel](media/end-user-export/power-bi-underlying.png)
 
+## <a name="next-steps"></a>Étapes suivantes
+
+[Afficher les données utilisées pour créer un visuel](end-user-show-data.md)

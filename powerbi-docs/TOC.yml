@@ -1347,13 +1347,21 @@
               href: service-gateway-mashup-on-premises-cloud.md
         - name: Activer l’authentification unique (SSO)
           items:
-            - name: Authentification unique (SSO) - vue d’ensemble
+            - name: Vue d’ensemble de l’authentification unique
               href: service-gateway-sso-overview.md
-            - name: Authentification unique (SSO) - Kerberos
-              href: service-gateway-sso-kerberos.md
-            - name: Authentification unique (SSO) - Kerberos - basé sur les ressources
-              href: service-gateway-sso-kerberos-resource.md
-            - name: Authentification unique (SSO) - SAML
+            - name: Authentification unique basée sur Kerberos
+              items:
+                - name: Configurer l’authentification unique basée sur Kerberos
+                  href: service-gateway-sso-kerberos.md
+                - name: Configuration spécifique à la source de données
+                  items:
+                    - name: SAP HANA
+                      href: service-gateway-sso-kerberos-sap-hana.md
+                    - name: SAP BW - sapcrypto.dll (Common Crypto Library)
+                      href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+                    - name: SAP BW - gx64krb5.dll et gsskrb5.dll
+                      href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: Authentification unique basée sur SAML
               href: service-gateway-sso-saml.md
         - name: Résoudre les problèmes de passerelle
           href: service-gateway-onprem-tshoot.md
