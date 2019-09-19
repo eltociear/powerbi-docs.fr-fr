@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 6d0c4a2dba1dee1c8c40da8fd3371767915729da
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490321"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877807"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -119,7 +119,7 @@ Get-MsolCompanyInformation | fl allow*
 
 ### <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Comment empêcher les utilisateurs existants d’utiliser Power BI ?
 
-Le paramètre Azure AD qui contrôle cette option est **AllowAdHocSubscriptions**. La plupart des locataires ont ce paramètre défini sur True, ce qui signifie qu’il est activé. Si vous avez acquis Power BI via un partenaire, ce paramètre peut être défini sur False, ce qui signifie qu’il est désactivé.
+Le paramètre Azure AD qui contrôle cette option est **AllowAdHocSubscriptions**. La plupart des locataires ont ce paramètre défini sur *true*, ce qui signifie qu’il est activé. Si vous avez acquis Power BI via un partenaire, ce paramètre peut être défini sur *false*, ce qui signifie qu’il est désactivé.
 
 Utilisez le script PowerShell suivant pour désactiver les abonnements ad hoc. ([En savoir plus sur PowerShell][1].)
 
@@ -145,7 +145,7 @@ Utilisez le script PowerShell suivant pour désactiver les abonnements ad hoc. (
     ```
 
 > [!NOTE]
-> L’indicateur **AllowAdHocSubscriptions** permet de contrôler plusieurs fonctionnalités d’utilisateur dans votre organisation, notamment la possibilité pour les utilisateurs de s’inscrire au service Azure Rights Management. La modification de cet indicateur affecte toutes ces fonctionnalités.
+> L’indicateur **AllowAdHocSubscriptions** permet de contrôler plusieurs fonctionnalités d’utilisateur dans votre organisation, notamment la possibilité pour les utilisateurs de s’inscrire au service Azure Rights Management. La modification de cet indicateur affecte toutes ces fonctionnalités. Avec la valeur *false*, les utilisateurs peuvent toujours s’inscrire pour un essai de la version Pro.
 
 ### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Comment puis-je autoriser mes utilisateurs existants à s’inscrire à Power BI ?
 

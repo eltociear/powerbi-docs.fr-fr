@@ -7,17 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d9b171052bd095afc918a312ecbadba89a2471cd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f9659ad657c4466ad58eb40d4a07916b46f9536a
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61187161"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877784"
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Utilisation du même compte pour Power BI et Azure
+
 Si vous utilisez à la fois Power BI et Azure, vous souhaiterez peut-être utiliser la même connexion pour les deux services afin de ne pas avoir à entrer votre mot de passe à deux reprises.
 
 Power BI vous connecte avec votre compte professionnel, associé à votre adresse de messagerie professionnelle ou scolaire.  Azure vous connecte avec un compte Microsoft ou avec votre compte professionnel.
@@ -26,14 +27,16 @@ Si vous souhaitez utiliser la même connexion pour Azure et Power BI, veillez à
 
 **Que se passe-t-il si je me connecte déjà à Azure avec mon compte Microsoft ?**
 
-Vous pouvez ajouter votre compte professionnel en tant que coadministrateur dans Azure.  Voici comment procéder :
+Vous pouvez ajouter votre compte professionnel en tant que coadministrateur dans Azure en suivant ces étapes :
 
-1. Connectez-vous au [portail de gestion Azure](http://manage.windowsazure.com/). Si vous êtes un utilisateur dans plusieurs annuaires Azure, cliquez sur **Abonnements** , puis filtrez pour afficher uniquement l’annuaire et les abonnements que vous souhaitez modifier.
-2. Dans le volet de navigation, cliquez sur **Paramètres**, sur **Administrateurs**, puis sur **Ajouter**.
-3. Entrez l’adresse de messagerie associée à votre compte professionnel.
-4. Sélectionnez les abonnements auxquels vous voulez accéder avec votre compte professionnel, puis cliquez sur la coche.
+1. Connectez-vous au [portail Azure](http://portal.azure.com/). Si vous êtes un utilisateur dans plusieurs annuaires Azure, sélectionnez **Abonnements** , puis filtrez pour afficher uniquement l’annuaire et les abonnements que vous souhaitez modifier.
 
-La prochaine fois que vous vous connectez au portail de gestion Azure, utilisez votre adresse de messagerie professionnelle.
+1. Dans le volet de navigation, sélectionnez **Contrôle d’accès (IAM)** , puis sélectionnez **Ajouter** \> **Ajouter un coadministrateur**.
+
+    ![Ajouter un coadministrateur dans le portail Azure](media/service-admin-how-to-use-the-same-account-as-azure/add-co-administrator.png)
+
+1. Entrez l’adresse de messagerie associée à votre compte professionnel, puis sélectionnez **Ajouter**.
+
+1. La prochaine fois que vous vous connectez au portail Azure, utilisez votre adresse de messagerie professionnelle.
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
-

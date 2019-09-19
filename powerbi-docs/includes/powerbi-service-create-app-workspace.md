@@ -5,19 +5,19 @@ services: powerbi
 author: maggiesMSFT
 ms.service: powerbi
 ms.topic: include
-ms.date: 04/04/2019
+ms.date: 09/10/2019
 ms.author: maggies
 ms.custom: include file
-ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: 1e64237490e45cfcf9a9a0102f3e03ecab138ce2
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67534630"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903978"
 ---
-1. Commencez par créer l’espace de travail. Sélectionnez **Espaces de travail** > **Créer un espace de travail d’application**. 
+1. Commencez par créer l’espace de travail. Sélectionnez **Espaces de travail** > **Créer un espace de travail**. 
    
-     ![Créer un espace de travail d’application](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
+     ![Créer un espace de travail](media/powerbi-service-create-app-workspace/power-bi-workspace-create.png)
    
     C’est ici que vous allez placer le contenu sur lequel vous et vos collègues travaillez.
 
@@ -41,7 +41,7 @@ ms.locfileid: "67534630"
    
      ![Définir la modification ou l’affichage uniquement](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-members-edit.png)
    
-     Ajoutez des utilisateurs à l’espace de travail d’application uniquement pour qu’ils puissent modifier le contenu. S’il consulte uniquement le contenu, ne l’ajoutez pas à l’espace de travail. Vous pouvez l’inclure lorsque vous publiez l’application.
+     Ajoutez des utilisateurs à l’espace de travail pour qu’ils puissent modifier le contenu. S’il consulte uniquement le contenu, ne l’ajoutez pas à l’espace de travail. Vous pouvez l’inclure lorsque vous publiez l’application.
 
 5. Ajouter les adresses e-mail des personnes qui doivent avoir accès à l’espace de travail, puis sélectionnez **Ajouter**. Vous ne pouvez ajouter d’alias de groupe, uniquement des individus.
 
@@ -55,5 +55,5 @@ ms.locfileid: "67534630"
 
 Power BI crée l’espace de travail et l’ouvre. Celui-ci figure dans la liste des espaces de travail dont vous êtes membre. Étant donné que vous êtes administrateur, vous pouvez sélectionner les points de suspension (…) pour revenir en arrière afin d’apporter des modifications, d’ajouter des membres ou de modifier leurs autorisations.
 
-![Modifier l’espace de travail](media/powerbi-service-create-app-workspace/power-bi-apps-edit-workspace-ellipsis.png)
+![Modifier l’espace de travail](media/powerbi-service-create-app-workspace/power-bi-workspace-old-settings.png)
 

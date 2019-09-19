@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654727"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841314"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Mode de stockage dans Power BI Desktop
 
@@ -42,6 +42,9 @@ Le paramètre de mode de stockage dans Power BI Desktop est une des trois foncti
 * **Relations plusieurs à plusieurs** : Avec les *modèles composites*, vous pouvez établir des *relations plusieurs à plusieurs* entre les tables. Les *relations plusieurs à plusieurs* suppriment la nécessité d’avoir des valeurs uniques dans les tables. Les solutions de contournement préalables, comme la présentation de nouvelles tables uniquement pour établir des relations, sont également supprimées. Pour plus d’informations, consultez [Relations plusieurs à plusieurs dans Power BI Desktop](desktop-many-to-many-relationships.md).
 
 * **Mode de stockage** : Vous pouvez désormais spécifier les visuels qui nécessitent une requête sur les sources de données back-end. Les visuels qui ne nécessitent pas une requête sont importés même s’ils sont basés sur DirectQuery. Cette fonctionnalité permet d’améliorer les performances et de réduire la charge du serveur principal. Auparavant, même de simples visuels, comme les segments, initiaient des requêtes qui étaient envoyées à des sources back-end. Le mode de stockage est décrit en détail dans cet article.
+
+> [!NOTE]
+> Vous pouvez voir le mode de stockage actuel en sélectionnant la vue **Modèle**, en sélectionnant la table d’intérêt, puis, dans la section **Avancé** du volet **Propriétés**, en affichant la valeur **Mode de stockage**.
 
 ## <a name="use-the-storage-mode-property"></a>Utiliser la propriété du mode de stockage
 

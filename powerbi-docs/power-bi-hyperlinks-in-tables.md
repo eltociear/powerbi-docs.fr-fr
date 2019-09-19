@@ -1,6 +1,6 @@
 ---
-title: Ajouter des liens hypertexte à une table
-description: Utilisez Power BI Desktop pour créer des liens hypertexte. Ensuite, utilisez Power BI Desktop ou le service Power BI pour ajouter des liens hypertexte à vos matrices et tables de rapports.
+title: Ajouter des liens hypertexte (URL) à une table
+description: Cette rubrique explique comment ajouter des liens hypertexte (URL) à une table. Vous utilisez Power BI Desktop pour ajouter des liens hypertexte (URL) à une table ou matrice. Ensuite, vous pouvez utiliser Power BI Desktop ou le service Power BI pour ajouter des liens hypertexte à vos matrices et tables de rapports.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,23 +8,23 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/09/2019
+ms.date: 08/30/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 386c52908d54833e350a7b1a6d846f78c7b88c6d
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 58cb009e29c05ce318c5931fb418617e1ef63f4f
+ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721378"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937061"
 ---
-# <a name="add-hyperlinks-to-a-table"></a>Ajouter des liens hypertexte à une table
-Cette rubrique explique comment utiliser Power BI Desktop pour créer des liens hypertexte. Puis, utilisez Desktop ou le service Power BI pour ajouter des liens hypertexte à vos matrices et tables de rapports. 
+# <a name="add-hyperlinks-urls-to-a-table"></a>Ajouter des liens hypertexte (URL) à une table
+Cette rubrique explique comment ajouter des liens hypertexte (URL) à une table. Vous utilisez Power BI Desktop pour ajouter des liens hypertexte (URL) à une table ou matrice. Ensuite, vous pouvez utiliser Power BI Desktop ou le service Power BI pour ajouter des liens hypertexte à vos matrices et tables de rapports. 
 
 ![Table avec des liens hypertexte](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> Vous pouvez créer facilement des liens hypertexte dans des [vignettes de tableaux de bord](service-dashboard-edit-tile.md) et dans des [zones de texte de tableaux de bord](service-dashboard-add-widget.md) à l’aide du service Power BI. Vous pouvez créer facilement des liens hypertexte dans des [zones de texte de rapport](service-add-hyperlink-to-text-box.md) à l’aide du service Power BI et de Power BI Desktop.
+> Vous pouvez créer facilement des liens hypertexte dans des [vignettes de tableaux de bord](service-dashboard-edit-tile.md) et dans des [zones de texte de tableaux de bord](service-dashboard-add-widget.md) à l’aide du service Power BI. Vous pouvez créer facilement des liens hypertexte dans des [zones de texte de rapport](service-add-hyperlink-to-text-box.md) dans le service Power BI et Power BI Desktop.
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Pour créer un lien hypertexte dans une table ou une matrice à l’aide de Power BI Desktop
@@ -34,7 +34,7 @@ Vous pouvez créer des liens hypertexte dans les tableaux et matrices avec Power
 La procédure d’ajout d’un lien hypertexte varie selon que vous avez importé les données ou que vous vous y êtes connecté à l’aide de DirectQuery. Les deux scénarios sont décrits ci-dessous.
 
 ### <a name="for-data-imported-into-power-bi"></a>Pour les données importées dans Power BI
-1. Si le lien hypertexte n’existe pas déjà en tant que champ dans votre jeu de données, utilisez Desktop pour l’ajouter en tant que [colonne personnalisée](desktop-common-query-tasks.md).
+1. Si le lien hypertexte n’existe pas déjà en tant que champ dans votre jeu de données, utilisez Power BI Desktop pour l’ajouter en tant que [colonne personnalisée](desktop-common-query-tasks.md).
 2. Dans la Vue de données, sélectionnez la colonne, puis, sous l’onglet **Modélisation**, choisissez la liste déroulante **Catégorie de données**.
    
     ![Liste déroulante des catégories de données](media/power-bi-hyperlinks-in-tables/pbi_data_category.png)

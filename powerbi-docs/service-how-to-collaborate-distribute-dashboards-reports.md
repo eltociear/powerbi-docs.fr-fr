@@ -8,14 +8,14 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 09/06/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 00574228fbfa8954b8cfb9cb026a9230eb1bd73e
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 31310900b91924e639ce10a13aef3da996598502
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816550"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841774"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Moyens de partager votre travail dans Power BI
 
@@ -31,7 +31,7 @@ Vous avez créé des tableaux de bord et des rapports. Vous avez peut-être coll
 
 Quelle que soit l’option choisie, pour partager du contenu, vous avez besoin d’une [licence Power BI Pro](service-features-license-type.md). Sinon, le contenu doit se trouver dans une [capacité Premium](service-premium-what-is.md). Les besoins en licence varient pour les collègues qui consultent votre contenu, et dépendent de l’option que vous choisissez. Les sections suivantes offrent des informations détaillées. 
 
-![Applications dans le service Power BI](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
+![Applications dans le service Power BI](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-new-look.png)
 
 *Applications dans le service Power BI*
 
@@ -41,7 +41,7 @@ Quand des équipes travaillent ensemble, elles ont besoin d’accéder aux même
 
 Les espaces de travail fournissent des rôles qui déterminent les autorisations de vos collègues. Vous pouvez utiliser ces rôles pour déterminer qui peut gérer tout l’espace de travail, ou modifier son contenu et le distribuer.
 
-![Espaces de travail](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
+![Espaces de travail](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-workspace.png)
 
 Vous pouvez placer du contenu dans votre espace Mon espace de travail en vue de le partager. Toutefois, les espaces de travail conviennent mieux à la collaboration que Mon espace de travail, car ils permettent la copropriété du contenu. Vous et toute votre équipe pouvez facilement mettre à jour ou donner un accès à d’autres personnes. Mon espace de travail convient mieux à une utilisation par des personnes individuelles pour du contenu ponctuel ou personnel.
 
@@ -57,9 +57,9 @@ Power BI propose une nouvelle expérience d’espace de travail. Pour connaîtr
 
 Supposons que vous souhaitiez distribuer votre tableau de bord à un large public au sein de votre organisation. Vos collègues et vous avez créé un *espace de travail*, puis créé et affiné des tableaux de bord, des rapports et des jeux de données dans cet espace. Désormais, vous sélectionnez les tableaux de bord et les rapports de votre choix, et vous les publiez en tant qu’application pour un groupe ou pour toute votre organisation.
 
-![Icône Publier l’application](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
+![Icône Publier l’application](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-publish-app.png)
 
-Les applications sont faciles à trouver et à installer dans le service Power BI ([https://powerbi.com](https://powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Si votre administrateur Power BI vous y autorise, vous pouvez installer une application automatiquement dans les comptes Power BI de vos collègues. Apprenez-en davantage sur la [publication de vos applications](service-create-distribute-apps.md).
+Les applications sont faciles à trouver et à installer dans le service Power BI ([https://app.powerbi.com](https://app.powerbi.com)). Vous pouvez envoyer à vos utilisateurs professionnels un lien direct vers l’application, ou ceux-ci peuvent rechercher cette dernière dans AppSource. Si votre administrateur Power BI vous y autorise, vous pouvez installer une application automatiquement dans les comptes Power BI de vos collègues. Apprenez-en davantage sur la [publication de vos applications](service-create-distribute-apps.md).
 
 Après avoir installé une application, ils peuvent l’afficher dans leur navigateur ou sur leur appareil mobile.
 
@@ -71,15 +71,17 @@ Vous pouvez également publier des applications pour des personnes extérieures 
 
 Admettons-le, certaines personnes sont meilleures que d’autres pour créer des modèles de données bien conçus et de haute qualité dans leurs rapports. Vous êtes peut-être l’une de ces personnes. L’utilisation de ces modèles de données par l’ensemble des utilisateurs de l’organisation peut se révéler bénéfique. Les *jeux de données partagés* remplissent ce rôle. Lorsque vous créez un rapport avec un modèle de données que tout le monde doit utiliser, vous pouvez enregistrer ce rapport dans le service Power BI et autoriser les bonnes personnes à l’utiliser. Ensuite, elles peuvent créer leurs rapports à partir de votre jeu de données. De cette façon, tout le monde base ses rapports sur les mêmes données et voit la même version des choses.
 
+![Trouver un dataset partagé](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-shared-datasets.png)
+
 En savoir plus sur la [création et l’utilisation des jeux de données partagés](service-datasets-across-workspaces.md).
 
 ## <a name="share-dashboards-and-reports"></a>Partager des tableaux de bord et rapports
 
 Supposons que vous avez finalisé un tableau de bord et un rapport dans votre espace de travail personnel ou dans un espace de travail, et que vous voulez que quelques autres utilisateurs y aient accès. Une des options est de le *partager* avec eux. 
 
-![Icône de partage](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
+![Partager un rapport](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-report.png)
 
-Vous-même et les utilisateurs avec qui vous partagez votre contenu avez besoin d’une licence Power BI Pro, ou bien le contenu doit être dans un espace de travail qui se trouve dans une [capacité Premium](service-premium-what-is.md). Quand vous partagez un tableau de bord ou un rapport, les destinataires peuvent le consulter et interagir avec celui-ci, mais ils ne peuvent pas le modifier. Ils voient les mêmes données que vous dans le tableau de bord et les rapports, sauf si la sécurité au niveau des lignes est appliquée au jeu de données sous-jacent. Les collègues avec qui vous partagez le tableau de bord ou rapport peuvent le partager avec leurs collègues si vous les y autorisez. 
+Vous-même et les personnes avec qui vous partagez votre contenu avez besoin d’une licence Power BI Pro, ou bien le contenu doit être dans un espace de travail qui se trouve dans une [capacité Premium](service-premium-what-is.md). Quand vous partagez un tableau de bord ou un rapport, les destinataires peuvent le consulter et interagir avec celui-ci, mais ils ne peuvent pas le modifier. Ils voient les mêmes données que vous dans le tableau de bord et les rapports, sauf si la sécurité au niveau des lignes est appliquée au jeu de données sous-jacent. Les collègues avec qui vous partagez le tableau de bord ou rapport peuvent le partager avec leurs collègues si vous les y autorisez. 
 
 Vous pouvez également partager le tableau de bord avec des personnes extérieures à votre organisation. Celles-ci peuvent également consulter le tableau de bord ou le rapport, et interagir avec celui-ci, mais elles ne peuvent pas le partager. 
 

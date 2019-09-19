@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 05/08/2019
+ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c522a9e6c40f4164ee82675c40c3110b174d017
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d3405a434c8b3add7bb39f20d5aa65e066e4b73d
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513940"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841327"
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Niveaux de confidentialité Power BI Desktop
 Dans **Power BI Desktop**, les niveaux de confidentialité spécifient un niveau d’isolement qui définit le degré d’isolement d’une source de données par rapport aux autres sources de données. Bien qu'un niveau d'isolement restrictif empêche l’échange d’informations entre les sources de données, cela peut réduire les fonctionnalités et affecter les performances.
@@ -52,7 +52,7 @@ Le paramètre **Niveaux de confidentialité** est défini par défaut sur **Comb
 | **Regrouper les données en fonction de vos paramètres Niveau de confidentialité pour chaque source** (paramètre par défaut et activé) |Les paramètres de niveau de confidentialité permettent de déterminer le niveau d'isolation entre les sources de données lors de la combinaison de données. |
 | **Ignorer les niveaux de confidentialité et potentiellement améliorer les performances** (désactivé) |Les niveaux de confidentialité ne sont pas pris en compte lors de la combinaison des données. Cependant, les performances et les fonctionnalités des données peuvent augmenter. |
 
-> **Note de sécurité :** le fait d’activer le paramètre **Niveaux de confidentialité** en sélectionnant **Ignorer les niveaux de confidentialité et potentiellement améliorer les performances** dans la boîte de dialogue **Niveaux de confidentialité** risque d’exposer des données sensibles ou confidentielles à une personne non autorisée. N’activez pas le paramètre **Niveaux de confidentialité** à moins d’être certain que la source de données ne contient pas de données sensibles ou confidentielles.
+> **Note de sécurité :** Sélectionner **Ignorer les niveaux de confidentialité et potentiellement améliorer les performances** dans la boîte de dialogue **Niveaux de confidentialité** risque d’exposer des données sensibles ou confidentielles à une personne non autorisée. Ne *désactivez pas* ce paramètre à moins d’être certain que la source de données ne contient pas de données sensibles ou confidentielles.
 > 
 > 
 

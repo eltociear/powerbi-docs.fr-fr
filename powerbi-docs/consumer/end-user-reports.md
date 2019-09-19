@@ -7,23 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391362"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903731"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
 
-Un rapport Power BI est un affichage sous plusieurs angles d’un jeu de données, avec des visuels représentant différents résultats et insights de ce jeu de données.  Un rapport peut avoir un seul visuel ou des pages entières de visuels. Selon votre fonction principale, vous pouvez soit *concevoir* des rapports, soit *consommer* (utiliser) des rapports.
+Un rapport Power BI est un affichage sous plusieurs angles d’un jeu de données, avec des visuels représentant différents résultats et insights de ce jeu de données.  Un rapport peut avoir un seul visuel ou des pages entières de visuels. Selon votre fonction principale, vous pouvez soit *concevoir* des rapports, soit *consommer* (utiliser) des rapports. Cet article s’adresse aux *consommateurs*.
 
-![Capture d’écran d’une page de rapport.](./media/end-user-reports/power-bi-reports.png)
+![Capture d’écran d’une page de rapport.](./media/end-user-reports/power-bi-report.png)
 
-Dans ce rapport de six pages (ou onglets), vous visualisez actuellement la page **Sentiment**. Cette page comprend cinq visuels et un titre de page. Le volet *Filtres* nous montre un filtre appliqué à toutes les pages du rapport. Pour réduire le volet Filtres, sélectionnez la flèche ( **>** ).
+A. Dans ce rapport de six pages (ou onglets), vous visualisez actuellement la page **Sentiment**.    
+B. Cette page comprend cinq visuels et un titre de page.    
+C. Le volet *Filtres* nous montre un filtre appliqué à toutes les pages du rapport. Pour réduire le volet Filtres, sélectionnez la flèche ( **>** ).    
+D. La bannière Power BI affiche le nom du rapport et la date de la dernière mise à jour. Sélectionnez la flèche pour ouvrir un menu qui affiche également le nom du propriétaire du rapport.    
+E. La barre d’action contient les actions que vous pouvez effectuer sur ce rapport.  Par exemple, vous pouvez ajouter un commentaire, afficher un signet ou exporter des données à partir du rapport.  Sélectionnez les points de suspension (...) pour afficher une liste de fonctionnalités de rapport supplémentaires.    
 
 Si vous débutez dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Concepts de base pour les consommateurs du service Power BI](end-user-basic-concepts.md). Les rapports peuvent être visualisés, partagés et annotés sur des appareils mobiles. Pour plus d’informations, consultez [Explorer des rapports dans les applications mobiles Power BI](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -68,9 +72,9 @@ Selon votre rôle, vous pouvez être *concepteur*. Dans ce cas, vous créez des 
 Ou bien, vous pouvez être *consommateur*, c’est-à-dire quelqu’un qui reçoit des rapports d’autres personnes. Vous devez donc apprendre à comprendre les rapports et à interagir avec ceux-ci. Si vous êtes *consommateur* de rapports, ces liens vous concernent :
 
 * Commencez par une [présentation du service Power BI](end-user-basic-concepts.md) pour savoir où trouver les rapports et les outils de rapport.
-* Découvrez comment [ouvrir un rapport](end-user-report-open.md) et toutes les interactions disponibles en [Mode Lecture](end-user-reading-view.md).
+* Découvrez comment [ouvrir un rapport](end-user-report-open.md) et toutes les [interactions disponibles pour les consommateurs](end-user-reading-view.md).
 * Familiarisez-vous avec les rapports en suivant la présentation de l’un de nos [exemples](../sample-tutorial-connect-to-the-samples.md).  
-* Pour voir le jeu de données que le rapport utilise et les tableaux de bord ayant des vignettes épinglées à partir du rapport, consultez [Afficher le contenu associé dans le service Power BI](end-user-related.md).
+* Pour voir le jeu de données que le rapport utilise et les tableaux de bord affichant des visuels (*épingles*) à partir du rapport, consultez [Afficher le contenu associé dans le service Power BI](end-user-related.md).
 
 > [!TIP]
 > Si vous n’avez pas trouvé ici ce que vous cherchiez, utilisez la Table des matières à gauche pour parcourir tous les articles relatifs aux *rapports*.

@@ -1,8 +1,8 @@
 ---
 title: Bonnes pratiques relatives aux performances de Power BI
 description: Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI
-author: MarkMcGeeAtAquent
-ms.author: kfile
+author: Bhavik-MSFT
+ms.author: bhmerc
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: bddd653b5ac8b49a38a69ae79baf2f96824444ed
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665335"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841479"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI
 
 Cet article fournit des conseils relatifs à la création de rapports fiables et rapides dans Power BI.  
+
+## <a name="choose-an-appropriate-storage-mode-import-directquery"></a>Choisissez un mode de stockage approprié : Import, DirectQuery
+
+Dans la plupart des cas, le mode Import est le meilleur choix, car il offre la vitesse la plus élevée en tirant parti des données en mémoire cache localement compressées avec le stockage en colonnes. Le mode Import permet également des fonctionnalités DAX complètes. Envisagez DirectQuery (et les modèles composites) quand le volume de données source est trop grand pour votre capacité Power BI. DirectQuery est également utile lorsque vous devez récupérer les données les plus récentes à partir de la source chaque fois qu’un rapport est chargé. Si vous ne répondez pas à ces exigences et que les utilisateurs doivent uniquement voir les données qui sont mises à jour un petit nombre de fois par jour (par exemple, à partir d’un entrepôt de données d’entreprise), Import est fortement recommandé. En mode DirectQuery, les utilisateurs pourraient essayer d’actualiser le rapport sans se rendre compte qu’ils récupèrent exactement les mêmes données à partir de la source.      
 
 ## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Utiliser des filtres pour limiter l’affichage des éléments visuels de rapport au strict nécessaire 
 
@@ -57,7 +61,7 @@ Lors du déploiement de rapports Power BI créés à partir de connexions active
 ## <a name="directquery-best-practices"></a>Bonnes pratiques relatives à DirectQuery
 
 La section suivante décrit les bonnes pratiques générales relatives à la connexion via DirectQuery.
-  
+
 ### <a name="db-design-guidance"></a>Aide à la conception d’une base de données
 
 - Envoyez les colonnes calculées et les mesures à la source quand c’est possible. Plus la source est proche, plus la probabilité de bonnes performances est élevée.

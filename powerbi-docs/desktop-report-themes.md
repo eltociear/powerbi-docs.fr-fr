@@ -7,42 +7,53 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 37304f9d23c514c7223b3eca481bf3b7b2258ac4
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023388"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70904423"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
-Les **Thèmes de rapport** permettent d’appliquer un thème de couleur à l’intégralité d’un rapport. Il peut s’agir des couleurs de votre organisation, de teintes saisonnières, de jeux d’icônes ou de tout autre thème de couleur. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs du thème sélectionné. Quelques exceptions s’appliquent. Elles sont décrites plus loin dans cet article.
+Avec les **Thèmes de rapport**, vous pouvez appliquer des modifications de conception à l’ensemble de votre rapport, par exemple en utilisant les couleurs de votre entreprise, en modifiant des jeux d’icônes ou en appliquant une nouvelle mise en forme visuelle par défaut. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs et la mise en forme du thème sélectionné. Quelques exceptions s’appliquent. Elles sont décrites plus loin dans cet article.
 
-![Report themes](media/desktop-report-themes/report-themes_1.png)
+![Report themes](media/desktop-report-themes/report-themes-1a.png)
 
-Lorsque vous appliquez un **thème de rapport**, vous avez besoin d’un fichier JSON qui utilise une structure de base. Vous pouvez ensuite importer ce fichier JSON dans Power BI Desktop et l’appliquer à votre rapport. La structure du fichier JSON et le processus d’importation, sont des opérations faciles et rapides (quelques clics suffisent).
+Lorsque vous appliquez un **thème de rapport** personnalisé, vous avez besoin d’un fichier JSON qui utilise une structure de base. Vous pouvez ensuite importer ce fichier JSON dans Power BI Desktop et l’appliquer à votre rapport.
 
-Vous pouvez également personnaliser et normaliser presque tous les éléments. Pour personnaliser, vous utilisez le fichier JSON, que vous ajustez manuellement dans le volet **Mise en forme**. L’objectif est de vous donner un contrôle complet sur l’apparence des rapports à un niveau granulaire.
+Vous pouvez également personnaliser et normaliser presque tous les éléments affichés dans le volet **Mise en forme** par le biais du fichier JSON du thème. L’objectif est de vous donner un contrôle complet sur l’apparence des rapports à un niveau granulaire.
 
 ## <a name="how-report-themes-work"></a>Fonctionnement des thèmes de rapport
 Pour appliquer un thème de rapport à un rapport Power BI Desktop, vous pouvez effectuer votre choix parmi les thèmes de rapport intégrés disponibles ou importer un thème personnalisé.
 
 | Thème de rapport intégré | Séquence de couleurs par défaut    |
 |------ |---------- |
-| Par défaut   | ![#01B8AA](https://placehold.it/20/01B8AA/000000?text=+) ![#374649](https://placehold.it/20/374649/000000?text=+) ![#FD625E](https://placehold.it/20/FD625E/000000?text=+) ![#F2C80F](https://placehold.it/20/F2C80F/000000?text=+) ![#5F6B6D](https://placehold.it/20/5F6B6D/000000?text=+) ![#8AD4EB](https://placehold.it/20/8AD4EB/000000?text=+) ![#FE9666](https://placehold.it/20/FE9666/000000?text=+) ![#A66999](https://placehold.it/20/A66999/000000?text=+)|
-| Jardin public     | ![#73B761](https://placehold.it/20/73B761/000000?text=+) ![#4A588A](https://placehold.it/20/4A588A/000000?text=+) ![#ECC846](https://placehold.it/20/ECC846/000000?text=+) ![#CD4C46](https://placehold.it/20/CD4C46/000000?text=+) ![#71AFE2](https://placehold.it/20/71AFE2/000000?text=+) ![#8D6FD1](https://placehold.it/20/8D6FD1/000000?text=+) ![#EE9E64](https://placehold.it/20/EE9E64/000000?text=+) ![#95DABB](https://placehold.it/20/95DABB/000000?text=+)|
-| Classe     | ![#4A8DDC](https://placehold.it/20/4A8DDC/000000?text=+) ![#4C5D8A](https://placehold.it/20/4C5D8A/000000?text=+) ![#F3C911](https://placehold.it/20/F3C911/000000?text=+) ![#DC5B57](https://placehold.it/20/DC5B57/000000?text=+) ![#33AE81](https://placehold.it/20/33AE81/000000?text=+) ![#95C8F0](https://placehold.it/20/95C8F0/000000?text=+) ![#DD915F](https://placehold.it/20/DD915F/000000?text=+) ![#9A64A0](https://placehold.it/20/9A64A0/000000?text=+)|
-| Adapté aux daltoniens   | ![#074650](https://placehold.it/20/074650/000000?text=+) ![#009292](https://placehold.it/20/009292/000000?text=+) ![#FE6DB6](https://placehold.it/20/FE6DB6/000000?text=+) ![#FEB5DA](https://placehold.it/20/FEB5DA/000000?text=+) ![#480091](https://placehold.it/20/480091/000000?text=+) ![#B66DFF](https://placehold.it/20/B66DFF/000000?text=+) ![#B5DAFE](https://placehold.it/20/B5DAFE/000000?text=+) ![#6DB6FF](https://placehold.it/20/6DB6FF/000000?text=+)|
-| Électrique  | ![#118DFF](https://placehold.it/20/118DFF/000000?text=+) ![#750985](https://placehold.it/20/750985/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FF985E](https://placehold.it/20/FF985E/000000?text=+) ![#1DD5EE](https://placehold.it/20/1DD5EE/000000?text=+) ![#42F7C0](https://placehold.it/20/42F7C0/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#F64F5C](https://placehold.it/20/F64F5C/000000?text=+)|
-| Contraste élevé     | ![#107C10](https://placehold.it/20/107C10/000000?text=+) ![#002050](https://placehold.it/20/002050/000000?text=+) ![#A80000](https://placehold.it/20/A80000/000000?text=+) ![#5C2D91](https://placehold.it/20/5C2D91/000000?text=+) ![#004B50](https://placehold.it/20/004B50/000000?text=+) ![#0078D7](https://placehold.it/20/0078D7/000000?text=+) ![#D83B01](https://placehold.it/20/D83B01/000000?text=+) ![#B4009E](https://placehold.it/20/B4009E/000000?text=+)|
-| Coucher de soleil    | ![#B6B0FF](https://placehold.it/20/B6B0FF/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#FF994E](https://placehold.it/20/FF994E/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FFBBED](https://placehold.it/20/FFBBED/000000?text=+) ![#42F9F9](https://placehold.it/20/42F9F9/000000?text=+) ![#00B2D9](https://placehold.it/20/00B2D9/000000?text=+) ![#FFD86C](https://placehold.it/20/FFD86C/000000?text=+)|
-| Crépuscule  | ![#F17925](https://placehold.it/20/F17925/000000?text=+) ![#004753](https://placehold.it/20/004753/000000?text=+) ![#CCAA14](https://placehold.it/20/CCAA14/000000?text=+) ![#4B4C4E](https://placehold.it/20/4B4C4E/000000?text=+) ![#D82C20](https://placehold.it/20/D82C20/000000?text=+) ![#A3D0D4](https://placehold.it/20/A3D0D4/000000?text=+) ![#536F18](https://placehold.it/20/536F18/000000?text=+) ![#46ABB0](https://placehold.it/20/46ABB0/000000?text=+)|
+| Par défaut   | ![par défaut](media/desktop-report-themes/report-themes-color-scheme-default.png)|
+| Tour  | ![tour](media/desktop-report-themes/report-themes-color-scheme-highrise.png)|
+| Executive     | ![cadre](media/desktop-report-themes/report-themes-color-scheme-executive.png)|
+| Frontière  | ![frontière](media/desktop-report-themes/report-themes-color-scheme-frontier.png)|
+| Innovant    | ![innovant](media/desktop-report-themes/report-themes-color-scheme-innovative.png)|
+| Bourgeon     | ![bourgeon](media/desktop-report-themes/report-themes-color-scheme-bloom.png)|
+| Marée | ![marée](media/desktop-report-themes/report-themes-color-scheme-tidal.png)|
+| Température   | ![température](media/desktop-report-themes/report-themes-color-scheme-temperature.png)|
+| Solaire | ![solaire](media/desktop-report-themes/report-themes-color-scheme-solar.png)|
+| Divergent     | ![divergent](media/desktop-report-themes/report-themes-color-scheme-divergent.png)|
+| Orage     | ![orage](media/desktop-report-themes/report-themes-color-scheme-storm.png)|
+| Classique   | ![classique](media/desktop-report-themes/report-themes-color-scheme-classic.png)|
+| Jardin public     | ![jardin public](media/desktop-report-themes/report-themes-color-scheme-city-park.png)|
+| Classe     | ![classe](media/desktop-report-themes/report-themes-color-scheme-classroom.png)|
+| Adapté aux daltoniens   | ![adapté aux daltoniens](media/desktop-report-themes/report-themes-color-scheme-colorblind-safe.png)|
+| Électrique  | ![électrique](media/desktop-report-themes/report-themes-color-scheme-electric.png)|
+| Contraste élevé     | ![contraste élevé](media/desktop-report-themes/report-themes-color-scheme-high-contrast.png)|
+| Coucher de soleil    | ![coucher de soleil](media/desktop-report-themes/report-themes-color-scheme-sunset.png)|
+| Crépuscule  | ![crépuscule](media/desktop-report-themes/report-themes-color-scheme-twilight.png)|
 
 Pour choisir parmi les thèmes de rapport intégrés, sélectionnez le bouton **Changer de thème** dans le ruban **Accueil**, puis sélectionnez l’un des thèmes inclus dans le menu déroulant.
 
-![Sélectionner un thème de rapport](media/desktop-report-themes/report-themes_2a.png)
+![Sélectionner un thème de rapport](media/desktop-report-themes/report-themes-2a.png)
 
 Votre thème de rapport est appliqué au rapport, tout est prêt.
 
@@ -50,7 +61,7 @@ Votre thème de rapport est appliqué au rapport, tout est prêt.
 
 Pour importer un thème de rapport personnalisé, sélectionnez le bouton **Changer de thème** dans le ruban **Accueil**. Puis sélectionnez **Importer un thème** dans le menu déroulant.
 
-![Importer un thème](media/desktop-report-themes/report-themes_3.png)
+![Importer un thème](media/desktop-report-themes/report-themes-3a.png)
 
 Une fenêtre s’affiche dans laquelle vous pouvez naviguer pour accéder à l’emplacement du fichier de thème JSON. Power BI Desktop recherche des fichiers JSON, c’est-à-dire le type de fichier de thème rapport Power BI. Dans l’image suivante, quelques fichiers de thème des vacances sont disponibles. Pour mars, nous allons choisir un thème basé sur les vacances.
 
@@ -60,7 +71,7 @@ Une fois le fichier de thème correctement chargé, Power BI Desktop vous en inf
 
 ![Thème importé correctement](media/desktop-report-themes/report-themes_5.png)
 
-À présent que nous avons importé un fichier de thème, examinons la structure simple et claire du fichier JSON.
+À présent que nous avons importé un fichier de thème, examinons la structure du fichier JSON.
 
 ## <a name="structure-of-a-report-theme-json-file"></a>Structure d’un fichier JSON de thème de rapport
  Ouvert dans un éditeur, le fichier JSON de base sélectionné dans la section précédente (fichier *St Patrick's Day.json*) ressemble à la capture d’écran suivante :
@@ -73,17 +84,7 @@ Ce fichier JSON doit contenir les lignes suivantes :
 
 * **dataColors** : La liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir le nombre de couleurs que vous voulez.
 
-* **background**, **foreground**, et **tableAccent** : Les couleurs qui doivent être appliquées dans différents types de visuels. 
-  - **foreground** s’applique au texte de zone de texte, au texte d’objectif KPI, au texte de carte multiligne, au texte de valeur de carte, au texte de légende de jauge, au texte d’élément de segment vertical, ainsi qu’au texte de valeurs et de totaux de **table** et de **matrice**. 
-  - **background** s’applique au remplissage de bouton et à l’arrière-plan des étiquettes de graphique combiné. La manière dont ces couleurs sont utilisées varie selon le style de visuel appliqué. 
-  - Les visuels de **table** et de **matrice** appliquent ces styles par défaut.
-
-Pour appliquer un style à un visuel de **table** ou de **matrice**, procédez comme suit : 
-1. Sélectionnez le visuel. 
-2. Puis, dans le volet **Visualisations**, sélectionnez la section **Format**.
-3. Développez **Style de matrice**, puis sélectionnez un style dans la liste déroulante **Style**.
-
-![Liste déroulante Style](media/desktop-report-themes/report-themes_7.png)
+* **background**, **foreground**, et **tableAccent** : Plusieurs classes de couleurs. Nous étudierons les détails des classes de couleurs plus loin dans cet article, mais vous savez que les classes de couleurs vous permettent de définir simultanément de nombreuses couleurs dans votre rapport.
 
 Ensuite vient le texte du fichier *St Patrick's Day.json* que vous pouvez utiliser pour créer votre propre fichier JSON :
 
@@ -97,7 +98,7 @@ Ensuite vient le texte du fichier *St Patrick's Day.json* que vous pouvez utilis
     }
 ```
 
-Vous pouvez entrer ici votre propre code hexadécimal pour les couleurs sélectionnées.
+Si tout ce que vous voulez faire est d’ajuster les couleurs de base de votre rapport, vous pouvez simplement modifier le nom et les codes hexadécimaux de ce fichier pour préparer votre fichier JSON personnel à l’importation.
 
 Dans le fichier JSON, vous définissez uniquement la mise en forme que vous souhaitez régler, et tout ce qui n’est *pas* spécifié dans votre fichier JSON prend simplement les paramètres par défaut de Power BI.
 
@@ -116,10 +117,12 @@ La section **Couleurs des données** du volet **Format** reflète votre thème d
 
 Vous voyez tout ce vert ? C’est parce que ces couleurs faisaient partie du **thème de rapport** que nous avons importé et appliqué.
 
-### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situations où les couleurs de thème de rapport ne restent pas associées à vos rapports
-Supposons que vous appliquez un jeu de couleurs personnalisé (ou une couleur individuelle) à un point de données spécifique dans un visuel. Lorsque vous appliquez un thème de rapport, il ne remplace *pas* la couleur personnalisée du point de données.
+Les couleurs de la palette de couleurs sont également relatives au thème actuel. Par conséquent, si vous sélectionnez la troisième couleur de la ligne du haut pour un point de données, par exemple, et que vous modifiez ultérieurement le thème, la couleur de ce point de données est automatiquement mise à jour vers la troisième couleur de la ligne du haut dans le nouveau thème, comme lorsque vous modifiez des thèmes dans Microsoft Office.
 
-Vous souhaitez peut-être également définir manuellement la couleur d’un point de données à l’aide de la section Couleurs du thème. Les couleurs ne sont *pas* mises à jour lorsque vous appliquez un nouveau thème de rapport. Pour rétablir vos couleurs par défaut (de façon à ce qu’elles soient mises à jour quand vous appliquez un nouveau thème de rapport), sélectionnez **Rétablir les valeurs par défaut** dans la palette **Couleurs du thème**.
+### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situations où les couleurs de thème de rapport ne restent pas associées à vos rapports
+Supposons que vous appliquez un jeu de couleurs personnalisé (ou une couleur individuelle) à un point de données spécifique dans un élément visuel avec l’option Couleur personnalisée du sélecteur de couleur. Lorsque vous appliquez un thème de rapport, il ne remplace *pas* la couleur personnalisée du point de données.
+
+Vous souhaitez peut-être également définir manuellement la couleur d’un point de données à l’aide de la section Couleurs du thème. Les couleurs ne sont *pas* mises à jour lorsque vous appliquez un nouveau thème de rapport. Pour rétablir vos couleurs par défaut (de façon à ce qu’elles soient mises à jour quand vous appliquez un nouveau thème de rapport), sélectionnez **Rétablir les valeurs par défaut** ou sélectionnez une couleur dans la palette **Couleurs du thème** du sélecteur de couleurs.
 
 ![Rétablir les valeurs par défaut](media/desktop-report-themes/report-themes_9.png)
 
@@ -166,13 +169,139 @@ Voici quelques thèmes de rapport supplémentaires que vous pouvez utiliser comm
 * [Contraste élevé](https://community.powerbi.com/t5/Themes-Gallery/Color-Blind-Friendly/m-p/140597)
 
 ## <a name="report-theme-json-file-format"></a>Format de fichier de JSON de thèmes de rapport
-Le fichier JSON de base comprend cinq lignes obligatoires :
+Au niveau le plus basique, le fichier JSON du thème n’a qu’une seule ligne obligatoire : le **nom**. 
 
-* **name** : Le nom du thème, qui est le seul champ obligatoire.
-* **dataColors** : La liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir le nombre de couleurs que vous voulez.
-* **background**, **foreground**, et **tableAccent** : Les couleurs qui doivent être appliquées dans différents types de visuels. **foreground** s’applique au texte de zone de texte, au texte d’objectif KPI, au texte de carte multiligne, au texte de valeur de carte, au texte de légende de jauge, au texte d’élément de segment vertical, ainsi qu’au texte de valeurs et de totaux de **table** et de **matrice**. **background** s’applique au remplissage de bouton et à l’arrière-plan des étiquettes de graphique combiné. La manière dont ces couleurs sont utilisées varie selon le style de visuel appliqué. Les visuels de **table** et de **matrice** appliquent ces styles par défaut.
+```json
+    {
+        "name": "Custom Theme",
+    }
+```
 
-Pour créer un fichier JSON de format étendu, avec un contrôle plus précis et détaillé de la mise en forme, vous devez ajouter au fichier JSON une section **visualStyles**. Vous incorporez les spécificités de la mise en forme dans la section **visualStyles**. La section **visualStyles** est similaire au format suivant :
+En dehors du *nom*, tout le reste est facultatif, ce qui signifie que vous pouvez simplement ajouter les propriétés que vous souhaitez mettre en forme au fichier de thème, et continuer à utiliser les valeurs par défaut de Power BI pour le reste. 
+
+Sous le nom, vous pouvez ajouter des propriétés de base relatives aux couleurs des données. 
+
+
+* **dataColors** : La liste des codes hexadécimaux des couleurs à utiliser pour les données dans les visuels Power BI Desktop. Cette liste peut contenir le nombre de couleurs que vous voulez. Une fois que toutes les couleurs de cette liste ont été utilisées, si l’élément visuel a encore besoin d’autres couleurs, il revient à l’utilisation de la palette de couleurs par défaut de Power BI. 
+* **bon, neutre, mauvais** : Ces valeurs définissent les couleurs d’état utilisées par le graphique en cascade et l’élément visuel d’indicateur de performance clé.
+* **maximum, centre, minimum, null** : Ces couleurs définissent les différentes couleurs de dégradé dans la boîte de dialogue de mise en forme conditionnelle.  
+
+Un thème de base qui définit ces couleurs devrait ressembler à ce qui suit :
+
+```json
+    {
+        "name": "Custom Theme",
+          "dataColors": [
+                "#118DFF",
+                "#12239E", 
+                "#E66C37", 
+                "#6B007B", 
+                "#E044A7",
+                "#744EC2", 
+                "#D9B300", 
+                "#D64550",
+                "#197278", 
+                "#1AAB40"
+    ],
+        "good": "#1AAB40",
+        "neutral": "#D9B300",
+        "bad": "#D64554",
+        "maximum": "#118DFF",
+        "center": "#D9B300",
+        "minimum": "#DEEFFF",
+        "null": "#FF7F48"
+    }
+```
+
+Vous pouvez ensuite ajouter différentes classes de couleurs. Les classes de couleurs vous permettent de définir de nombreuses couleurs dans le rapport en une seule ligne, en regroupant les propriétés visuelles similaires qui ont généralement la même couleur. 
+
+Vous pouvez voir les six classes de couleurs que vous pouvez mettre en forme dans le tableau suivant.
+
+
+|Classe de couleur  |Ce qui est mis en forme  |
+|---------|---------|
+|premier plan | Couleur d’arrière-plan des étiquettes (en dehors des points de données) <br> Couleur de la courbe de tendance <br>  Couleur par défaut de la zone de texte <br> Valeurs de tableau et de matrice et couleurs de police des totaux, couleur de l’axe des barres de données <br> Étiquettes de données de carte <br> Couleur de valeur de légende de jauge <br> Couleur d’objectif de l’indicateur de performance clé <br>  Couleur du texte d’indicateur de performance clé <br> Couleur de l’élément de segment (en mode Focus)  <br> Couleur de police de l’élément déroulant du segment <br> Couleur de police d’entrée numérique du segment <br> Couleur de police d’en-tête du segment <br> Couleur de ligne du ratio du graphique à nuages de points <br> Couleur de ligne de prévision de graphique en courbes <br> Couleur de ligne d’en-tête de la carte <br> Couleur du volet de filtre et du texte de la carte|
+|foregroundNeutralSecondary |Couleurs d’étiquette  <br> Couleu de l’étiquette de légende <br> Couleur des étiquettes de l’axe <br> Couleur de police d’en-tête de tableau et de matrice <br> Couleur de ligne d’en-tête de jauge cible <br>  Couleur de l’axe de tendance de l’indicateur de performance clé <br> Couleur du curseur du segment <br> Couleur de police d’élément de segment <br> Couleur de contour de segment <br> Couleur de pointage de graphique en courbes <br> Couleur de titre de carte à plusieurs lignes <br> Couleur de trait de graphique de ruban <br> Couleur de bordure de carte de formes <br> Couleur de police de texte de bouton <br> Couleur de ligne d’icône de bouton <br> Couleur de contour de bouton |
+| foregroundNeutralTertiary | Couleur estompée de légende <br> Couleur d’étiquette de catégorie de carte <br> Couleur des étiquettes de catégorie des cartes à plusieurs lignes <br> Couleur de barre de carte à plusieurs lignes <br> Couleur de trait du taux de conversion de graphique en entonnoir 
+| backgroundLight | Couleur du quadrillage de l’axe <br> Couleur de grille de table et de matrice <br> Couleur d’arrière-plan d’en-tête de segment (en mode Focus)  <br> Couleur de contour de carte à plusieurs lignes  <br> Couleur de remplissage de forme <br> Couleur d’arrière-plan d’arc de jauge <br> Couleur d’arrière-plan de la carte de filtre appliquée <br> |
+backgroundNeutral | Couleur de contour de la grille de table et de matrice <br> Couleur par défaut de la carte de formes <br> Couleur de remplissage du ruban du graphique de ruban (lorsque l’option Faire correspondre la couleur de la série est désactivée) |
+arrière-plan | Couleur d’arrière-plan des étiquettes (au sein des points de données) <br> Couleur d’arrière-plan des éléments déroulants du segment  <br> Couleur de trait de graphique en anneau <br> Couleur de trait de treemap <br> Couleur d’arrière-plan de graphique combiné <br> Couleur de remplissage de bouton <br> Couleur d’arrière-plan de carte de filtre disponible et de volet de filtre |
+tableAccent | Remplace la couleur de contour de la grille des tableaux et matrices quand elle est présente |
+
+
+Voici un exemple de thème qui définit les classes de couleurs :
+
+```json
+    {
+        "name": "Custom Theme",
+        "foreground": "#252423",
+          "foregroundNeutralSecondary": "#605E5C",
+          "foregroundNeutralTertiary": "#B3B0AD",
+        "background": "#FFFFFF",
+          "backgroundLight": "#F3F2F1",
+          "backgroundNeutral": "#C8C6C4",
+        "tableAccent": "#118DFF"
+    }
+```
+
+Ensuite, vous pouvez ajouter des classes de texte à votre fichier JSON, qui sont similaires aux classes de couleurs, mais qui sont conçues pour vous permettre de mettre à jour la taille de police, la couleur et la famille pour des groupes de texte dans votre rapport. Il existe 12 classes de texte, mais vous n’avez besoin de définir que quatre classes, appelées *classes principales*, pour modifier l’ensemble de la mise en forme du texte dans votre rapport. Les autres classes de texte, considérées comme des *classes secondaires*, héritent automatiquement ou dérivent leurs propriétés de leurs classes principales associées. Il arrive souvent qu’une classe secondaire dérive une nuance plus claire de couleur de texte, ou un pourcentage de taille de texte plus grand ou plus petit par rapport à la classe principale. 
+
+Prenez la classe *label* à titre d’exemple. La mise en forme par défaut de la classe label est Segoe UI, #252423 (couleur gris foncé) et 12 points, et cette classe est utilisée pour mettre en forme les valeurs des tableaux et matrices. En règle générale, les totaux d’une table ou d’une matrice ont une mise en forme similaire, mais sont mis en gras pour qu’ils soient plus visibles ; ils utilisent donc la classe bold label. Toutefois, vous n’avez jamais à spécifier cela vous-même dans le thème JSON. Power BI détermine cela automatiquement pour vous. Si vous décidez par la suite que vous souhaitez que vos étiquettes aient une police de 14 points et que vous spécifiez cela dans votre thème, vous n’avez pas besoin de mettre à jour la classe bold label, car elle hérite de la mise en forme du texte de la classe label et met simplement en gras la famille de polices en plus. 
+
+La liste des tableaux affiche les informations suivantes :
+* Les quatre classes de texte principales, leur format et leurs paramètres par défaut
+* Chaque classe secondaire, ce qu’elle met en forme et son paramètre par défaut, unique par rapport à la classe principale
+
+
+|Classe principale  |Classes secondaires  |Nom de la classe en JSON  |Paramètres  |Objets visuels associés  |
+|---------|---------|---------|---------|---------|
+| Légende   | N/A   | légende | DIN <br> #252423 <br> 45pt |Étiquettes de données de carte <br> Indicateurs de performance clés|
+|En-tête|N/A|en-tête|Segoe UI Semibold <br> #252423 <br> 12pt |En-têtes d’influenceurs clés |
+| Titre || title    |DIN <br> #252423 <br> 12pt |Titre de l'axe de catégorie <br> Titre de l'axe des ordonnées <br> Titre de carte à plusieurs lignes * <br> En-tête de segment|
+|-| Grand titre | largeTitle    |14pt   |Titre visuel |
+|Étiquette ||label |Segoe UI<br>#252423<br>10pt |En-têtes de colonnes de tableau et de matrice <br> En-têtes de lignes de matrice<br>Grille de tableau et de matrice<br>Valeurs de table et de matrice |
+|-|Demi-gras |semiboldLabel| Segoe UI Semibold   | Texte du profil des influenceurs clés
+|-|Large    |largeLabel |12pt   | Étiquettes de données de carte à plusieurs lignes |
+|-|Small    |smallLabel |9pt    |Étiquettes de ligne de référence * <br>Étiquettes de la plage de dates du segment<br> Style de texte d’entrée numérique du segment<br>Zone de recherche de segment<br>Texte d’influenceur pour les influenceurs clés|
+|-|Clair    |lightLabel |#605E5C    |Texte de légende<br>Texte du bouton<br>Étiquettes de l’axe des catégories<br>Étiquettes de données de graphique en entonnoir<br>Étiquettes de taux de conversion de graphique en entonnoir<br>Cible de la jauge<br>Étiquette de catégorie de graphique à nuages de points<br>Éléments de segment|
+|-|Gras |boldLabel  |Segoe UI Bold  |Sous-totaux de la matrice<br>Totaux généraux de la matrice<br>Totaux de tableau |
+|-|Grand et clair  |largeLightLabel    |#605E5C<br>12pt    |Étiquettes des catégories de carte<br>Étiquettes de jauge<br>Étiquettes de catégorie de carte à plusieurs lignes |
+|-|Petit et clair  |smallLightLabel    |#605E5C<br>9pt |Étiquettes de données<br>Étiquettes de l’axe des valeurs|
+
+
+Même si vous n’avez pas besoin de définir les classes secondaires dans votre fichier de thème, car elles héritent des classes principales, si vous n’aimez pas les règles d’héritage (par exemple, si vous ne souhaitez pas que vos totaux soient une version en gras des valeurs dans un tableau) , vous pouvez formater explicitement les classes secondaires dans le fichier de thème, comme vous mettriez en forme les classes principales.
+
+Voici un exemple de thème qui définit uniquement les classes de texte principales : 
+
+```json
+    {
+            "name": "Custom Theme",
+          "textClasses": {
+                "callout": {
+                    "fontSize": 45,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "title": {
+                    "fontSize": 12,
+                    "fontFace": "wf_standard-font",
+                    "color": "#252423"
+                },
+                "header": {
+                    "fontSize": 12,
+                    "fontFace": "Segoe UI Semibold",
+                    "color": "#252423"
+                },
+                "label": {
+                    "fontSize": 10,
+                    "fontFace": "Segoe UI",
+                    "color": "#252423"
+                }
+        }    
+    }
+```
+
+Enfin, pour créer un fichier JSON de format étendu, avec un contrôle plus précis et détaillé de la mise en forme entière, vous pouvez ajouter au fichier JSON une section **visualStyles**. Vous incorporez les spécificités de la mise en forme dans la section **visualStyles**. La section **visualStyles** est similaire au format suivant :
 
     visualStyles: {
         visualName: {
@@ -184,7 +313,52 @@ Pour créer un fichier JSON de format étendu, avec un contrôle plus précis et
         }
     }
 
-Pour les sections **visualName** et **cardName**, utilisez des spécifiques. Utilisez un astérisque (« \* ») si vous souhaitez appliquer ce paramètre à tous les visuels ou toutes les cartes présentant une propriété pour un visuel spécifique. Vous pouvez aussi utiliser l’astérisque (« \* ») si vous souhaitez appliquer un paramètre de manière globale dans votre rapport, tel qu’une taille de police ou une famille de polices spécifique pour les visuels.
+Pour les sections **visualName** et **cardName**, utilisez des valeurs de nom spécifiques. Actuellement, le **styleName** est toujours un astérisque (« * »), mais dans une version ultérieure, vous serez en mesure de créer différents styles pour vos éléments visuels et de leur attribuer des noms (comme pour la fonctionnalité de style de tableau et de matrice). **PropertyName** est le nom de l’option de mise en forme spécifique et **PropertyValue** est l’endroit où vous placez l’option de mise en forme souhaitée.  
+
+Pour **visualName** et **cardName**, vous pouvez utiliser un astérisque (« \* ») à la place d’un nom d’élément visuel ou de carte spécifique si vous souhaitez que ce paramètre s’applique à tous les éléments visuels ou cartes qui ont une propriété. Si vous utilisez l’astérisque (« \* ») pour à la fois pour le nom de l’élément visuel et de la carte, vous appliquerez un paramètre à l’échelle globale dans votre rapport, par exemple une taille de police ou une famille de polices spécifique pour tout le texte dans tous les éléments visuels.
+
+Voici un exemple de définition de quelques propriétés via les styles visuels. 
+
+```json
+{  
+   "name":"Custom Theme",
+   "visualStyles":{  
+      "*":{  
+         "*":{  
+            "*":[{  
+                  "wordWrap":true
+            }],
+            "categoryAxis":[{
+                  "gridlineStyle":"dotted"
+            }],
+            "filterCard":[{  
+                  "$id":"Applied",
+                  "foregroundColor":{"solid":{"color":"#252423"}}
+               },
+               {  
+                  "$id":"Available",
+                  "border":true
+            }]
+         }
+      },
+      "scatterChart":{  
+         "*":{  
+            "bubbles":[{  
+                  "bubbleSize":-10
+            }]
+         }
+      }
+   }
+}
+```
+
+Cet exemple illustre les éléments suivants :
+
+* Activation du retour automatique à la ligne partout
+* Définition du style de quadrillage sur pointillés pour tous les éléments visuels avec un axe des abscisses
+* Définition de la mise en forme des cartes de filtre disponibles et appliquées (notez le format utilisant « $id » pour définir différentes versions des cartes de filtre)
+* Définition de la taille de la bulle pour les nuages de points sur -10.
+
 
 > [!NOTE]
 > Vous devez uniquement spécifier les éléments de mise en forme que vous souhaitez ajuster. Tous les éléments de mise en forme non inclus dans le fichier JSON reprennent simplement leurs valeurs et paramètres par défaut.
@@ -193,12 +367,6 @@ Pour les sections **visualName** et **cardName**, utilisez des spécifiques. Uti
 
 ### <a name="json-file-element-definitions"></a>Définitions d’élément de fichier JSON
 Les tableaux de cette section définissent les noms de visuel (*visualName*), les noms de carte (*cardName*) et les énumérations nécessaires à la création de votre fichier JSON.
-
-Lorsque vous utilisez *dateTime*, la date doit être une date ISO entre apostrophes, avec la valeur de date/heure au début. Voici un exemple :
-
-    “datetime’2011-10-05T14:48:00.000Z’”
-
-Les valeurs booléennes sont *true* (vrai) ou *false* (faux). Les chaînes doivent être entre guillemets, comme dans "ceci est une chaînes".
 
 | **visualName** |
 | --- |
@@ -291,7 +459,20 @@ Le tableau suivant définit les valeurs de *cardName*. La première valeur dans 
 | zoom : Zoom |
 
 ### <a name="properties-within-each-card"></a>Propriétés au sein de chaque carte
-La section suivante définit les propriétés de chaque carte :
+La section suivante définit les propriétés de chaque carte. Le nom de la carte est suivi de chaque nom de propriété. Pour chaque propriété, vous avez le nom que vous voyez si le volet de mise en forme s’affiche, une description de ce que fait l’option de mise en forme et le type d’option de mise en forme. Cette approche vous permet de connaître le type de valeur que vous pouvez utiliser dans votre fichier de thème. 
+
+Lorsque vous utilisez **dateTime**, la date doit être une date ISO entre apostrophes, avec la valeur de date/heure au début. Voici un exemple :
+
+    “datetime’2011-10-05T14:48:00.000Z’”
+
+Les valeurs booléennes sont true (vrai) ou false (faux). Les chaînes doivent être entre guillemets, comme dans "ceci est une chaînes". Les nombres sont simplement la valeur elle-même, sans guillemets.
+
+Les couleurs doivent utiliser le format suivant, où vous placerez votre code hexadécimal personnalisé au lieu de « FFFFFF » dans l’exemple suivant.  
+
+    { "solid": { "color": "#FFFFFF" } }
+
+Une énumération, généralement utilisée pour les options de mise en forme de liste déroulante, signifie qu’elle peut être définie sur n’importe laquelle des options affichées dans le volet, par exemple « RightCenter » pour la position de la légende ou « Valeur de données, pourcentage du total » pour l’étiquette de données de secteur. Les options d’énumération sont affichées sous la liste des propriétés.
+
 
 ```json
       "general":

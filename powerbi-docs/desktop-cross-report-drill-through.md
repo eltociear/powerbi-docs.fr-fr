@@ -1,119 +1,124 @@
 ---
-title: Utiliser l’extraction de cross-report dans Power BI Desktop
-description: Découvrez comment extraire à partir d’un rapport vers un autre dans Power BI Desktop
+title: Utiliser une extraction interrapport dans Power BI Desktop
+description: En savoir plus sur l’extraction d’un rapport à l’autre dans Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/08/2019
+ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 45a7cdd3c7b5324f3d618eaba4bdb3968a9549a5
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: e735d45a7a49c4a0365e35d5bb95957c6145f934
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375190"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903750"
 ---
-# <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Utiliser l’extraction de cross-report dans Power BI Desktop
+# <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Utiliser une extraction interrapport dans Power BI Desktop
 
-Avec la fonctionnalité de cross-rapport d’extraction dans Power BI Desktop, vous pouvez passer en fonction du contexte d’un rapport vers un autre rapport. Cela est vrai, que les rapports sont dans le même espace de travail ou la même application dans le service Microsoft Power BI. Utiliser l’extraction de cross-rapports pour se connecter à deux ou plusieurs rapports qui ont contenu associé et passe le contexte de filtre, ainsi que la connexion croisée-report. Dans cet article, vous découvrez comment configurer une extraction cross-report pour les rapports Power BI, et ce que les utilisateurs rencontrent lorsqu’ils utilisent le cross-rapport d’extraction pour eux-mêmes.
+Avec la fonctionnalité d’extraction interrapport de Power BI Desktop, vous pouvez passer contextuellement d’un rapport à un autre. Cela est vrai tant que les rapports se trouvent dans le même espace de travail ou dans la même application dans le service Power BI. Utilisez l’extraction interrapport pour connecter deux rapports ou plus qui ont un contenu associé et transmettre le contexte de filtre avec la connexion interrapport. Dans cet article, vous allez apprendre à configurer une extraction interrapport pour les rapports Power BI, et ce que les utilisateurs observent lorsqu’ils utilisent l’extraction interrapport eux-mêmes.
 
-![Option d’extraction de capture d’écran de Power BI Desktop](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+![Capture d’écran de l’option d’extraction de Power BI Desktop](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
 
-Les définitions suivantes sont importantes pour comprendre, avant de commencer la configuration et à l’aide de cross-rapport d’extraction :
+Il est important de comprendre les définitions suivantes avant de commencer à configurer et utiliser l’extraction interrapport :
 
-* **Visuel de la source :** L’élément visuel qui appelle l’action d’extraction à l’aide du menu contextuel visual.
-* **Rapport de la source :** Le rapport qui contient l’élément visuel source cross-rapport d’extraction.
-* **Page cible :** La page un utilisateur accède à après le lancement d’une action d’extraction.
-* **Rapport cible :** Le rapport qui contient la page cible de cross-rapport d’extraction.
+* **Élément visuel source :** L’élément visuel qui appelle l’action d’extraction à l’aide du menu contextuel de l’élément visuel.
+* **Rapport source :** Le rapport qui contient l’élément visuel source pour l’extraction interrapport.
+* **Page cible :** Page sur laquelle l’utilisateur arrive après l’initialisation d’une action d’extraction.
+* **Rapport cible :** Le rapport qui contient la page cible pour l’extraction interrapport.
 
-## <a name="enable-cross-report-drillthrough"></a>Activer l’extraction de cross-report
-
-Pour activer un rapport à la cible d’un cross-rapport d’extraction, vous devez activer la fonctionnalité pour ce rapport dans le **Options** fenêtre. Accédez à **fichier** > **Options et paramètres** > **Options**, puis accédez à **paramètres de rapport** près de la en bas de la page sur la gauche.
-
-Sélectionnez le **autoriser des éléments visuels dans ce rapport pour utiliser des cibles d’extraction à partir d’autres rapports** case à cocher, comme indiqué dans l’image suivante.
-
-![Fenêtre de capture d’écran des Options, avec les paramètres de rapport mis en surbrillance](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
-
-Cross-rapport d’extraction est maintenant activé.
-
-## <a name="set-up-cross-report-drillthrough"></a>Configurer l’extraction de cross-report
-
-Configuration des cross-rapport d’extraction est similaire à la configuration d’une extraction dans un rapport. L’extraction est activée dans la page cible, ce qui permet d’autres éléments visuels cibler la page est activée pour l’extraction. Pour les étapes de création d’extraction dans un rapport unique, consultez [utiliser l’extraction dans Power BI Desktop](desktop-drillthrough.md).
-
-Pour démarrer le processus d’installation, vous devez effectuer quelques étapes initiales :
-
-* Configurer une page de cible d’extraction, qui est ensuite accessible à partir d’autres rapports dans l’espace de travail ou une application.
-* Autoriser un rapport pour voir les pages d’extraction à partir en dehors de son propre rapport.
-
-Trouver les options d’extraction dans le **champs** section de la **visualisations** volet, comme indiqué dans l’image suivante.
-
-![Volet de la capture d’écran de visualisations, avec les options d’extraction mis en surbrillance](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
-
-Activation de l’extraction d’une page de la première étape consiste à valider les modèles de données pour les rapports source et cible. Assurez-vous que : 
-
-* Vous souhaitez transmettre des champs existent dans les modèles de données.
-* Les noms des champs et les noms des tables à laquelle ils appartiennent, sont identiques (les chaînes doivent également correspondre et respectent la casse).
-
-Par exemple, si vous souhaitez passer d’un filtre sur le champ *pays* au sein de la table *Geography*, les deux modèles doivent avoir un *Geography* table et un *pays* champ au sein de cette table. Si ce n’est pas le cas, vous devez mettre à jour le nom du champ ou le nom de la table dans le modèle sous-jacent. Mettre à jour le nom d’affichage des champs ne fonctionnera pas correctement pour cross-rapport d’extraction. (Notez que les schémas dans chaque rapport ne doivent être identiques).
-
-Pour vous familiariser avec le programme d’installation, vous devez préparer la page cible. Dans Power BI Desktop, accédez à la page et vérifiez que le **Cross-report** activer/désactiver l’extraction est définie sur **sur**. 
-
-![Capture d’écran de Cross-report bouton bascule sur](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
-
-Ensuite, faites glisser les champs que vous souhaitez utiliser comme cible d’extraction sur le canevas. Indiquez si vous souhaitez le champ à utiliser en tant que catégorie, ou résumées comme une mesure. À ce stade, vous pouvez sélectionner si vous souhaitez désactiver la **conserver tous les filtres** bascule pour l’élément visuel. Si vous ne souhaitez pas passer autres filtres appliqués à partir de la source visual à votre d’extraction cible visual, sélectionnez **hors**.
 
 > [!NOTE]
-> Si vous utilisez la page pour l’extraction de cross-report uniquement, vous devez supprimer le **retour** bouton est ajouté automatiquement. Le **retour** bouton fonctionne uniquement pour les nagivation dans un rapport unique. 
+> Les rapports partagés individuellement dans *Mon espace de travail*, qui sont des rapports qui s'affichent comme *[Partagés avec moi](service-share-dashboards.md#share-a-dashboard-or-report)* , sont accessibles uniquement dans l’espace de travail à partir duquel ils ont été initialement partagés. 
 
-Une fois que vous avez configuré l’élément visuel, assurez-vous que vous enregistrez le rapport si vous êtes dans le service Power BI, ou enregistrez et publiez le rapport si vous utilisez Power BI Desktop.
 
-La section précédente a décrit comment activer l’extraction de cross-report pour Power BI Desktop (dans le **Options** fenêtre). Si vous utilisez le service Power BI pour créer une cible de cross-rapport d’extraction, pour activer l’extraction de cross-report vous devez : 
+## <a name="enable-cross-report-drillthrough"></a>Activer l’extraction interrapport
 
-1. Sélectionnez l’espace de travail dans lequel votre rapport source et le rapport cible résident.
-2. Sélectionnez **rapports**.
-3. Sélectionnez le **paramètres** icône pour le rapport source.
-4. Assurez-vous que le bouton bascule entre-rapport d’extraction est **sur**.
-5. Enregistrer votre rapport.
+Pour permettre à un rapport d’être la cible d’une extraction interrapport, vous devez activer la fonctionnalité pour ce rapport dans la fenêtre **Options**. Accédez à **Fichier** > **Options et paramètres** > **Options**, puis allez dans **Paramètres du rapport** vers le bas de la page sur la gauche.
 
-Voilà. Votre rapport est prêt pour l’expérience de cross-rapport d’extraction. 
+Activez la case à cocher **Autoriser les visuels de ce rapport à utiliser des cibles d'extraction d'autres rapports**, comme indiqué dans l’image suivante.
 
-Dans la section suivante, nous examinons l’expérience de l’utilisateur.
+![Capture d’écran de la fenêtre Options, avec les paramètres de rapport mis en surbrillance](media/desktop-cross-report-drill-through/cross-report-drill-through-02.png)
 
-## <a name="cross-report-drillthrough-experience"></a>Expérience de cross-rapport d’extraction
+L’extraction interrapport est maintenant activée.
 
-Lorsque vous configurez l’expérience de cross-rapport d’extraction pour un rapport, vous pouvez placer la fonctionnalité à utiliser.
+## <a name="set-up-cross-report-drillthrough"></a>Configurer l’extraction interrapport
 
-Sélectionnez le rapport source dans le service Power BI, puis sélectionnez un élément visuel qui utilise les champs de la façon que vous avez spécifié lorsque vous configurez la page cible. Ensuite, cliquez sur un point de données pour ouvrir le menu contextuel visual et sélectionnez **extraction**.
+La configuration de l’extraction interrapport est similaire à la configuration de l’extraction dans un rapport. L’extraction est activée sur la page cible, ce qui permet à d’autres visuels de cibler la page activée pour l’extraction. Pour plus d’instructions sur la création d’une extraction dans un rapport unique, consultez [Utiliser une extraction dans Power BI Desktop](desktop-drillthrough.md).
 
-![Capture d’écran du rapport source dans le service Power BI, avec l’extraction de la mise en surbrillance](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+Pour démarrer le processus de configuration, vous devez effectuer deux étapes initiales :
 
-Vous verrez ensuite les résultats dans la page de cross-rapport d’extraction cible, tout comme vous les définir lors de la création de la cible. Les résultats sont filtrés en fonction des paramètres d’extraction.
+* Configurez une page cible d’extraction, qui sera ensuite accessible à partir d’autres rapports dans l’espace de travail ou l’application.
+* Autorisez un rapport à voir les pages d’extraction en dehors de son propre rapport.
+
+Recherchez les options d’extraction dans la section **Champs** du volet **Visualisations**, comme illustré dans l’image suivante.
+
+![Capture d’écran du volet Visualisations, avec les options d’extraction mises en surbrillance](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+
+La première étape de l’activation de l’extraction d’une page consiste à valider les modèles de données pour les rapports source et cible. Assurez-vous que : 
+
+* Les champs que vous souhaitez passer existent dans les deux modèles de données.
+* Les noms des champs, ainsi que les noms des tables auxquelles ils appartiennent, sont identiques (les chaînes doivent également correspondre et respecter la casse).
+
+Par exemple, si vous souhaitez transmettre un filtre sur le champ *Pays* dans la table *Géographie*, les deux modèles doivent avoir une table *Géographie* et un champ *Pays* dans cette table. Si ce n’est pas le cas, vous devez mettre à jour le nom du champ ou le nom de la table dans le modèle sous-jacent. Le simple fait de mettre à jour le nom d’affichage des champs ne fonctionne pas pour l’extraction interrapport. (Notez que les schémas de chaque rapport n’ont pas besoin d’être exactement identiques.)
+
+Pour commencer la configuration, vous devez préparer la page cible. Dans Power BI Desktop, accédez à la page et assurez-vous que le bouton bascule d’extraction **Interrapport** est défini sur **Activé**. 
+
+![Capture d’écran du bouton bascule Interrapport activé](media/desktop-cross-report-drill-through/cross-report-drill-through-03.png)
+
+Ensuite, faites glisser les champs que vous souhaitez utiliser comme cible d’extraction sur le canevas. Indiquez si vous souhaitez que le champ soit utilisé comme catégorie, ou résumé comme une mesure. À ce stade, vous pouvez choisir de désactiver le bouton **Conserver tous les filtres** pour le visuel. Si vous ne souhaitez pas transmettre d’autres filtres appliqués du visuel source à votre visuel d’extraction cible, sélectionnez **Désactivé**.
+
+> [!NOTE]
+> Si vous utilisez la page pour l’extraction interrapport uniquement, vous devez supprimer le bouton **Retour** qui est automatiquement ajouté. Le bouton **Retour** ne fonctionne que pour la nagivation dans un rapport unique. 
+
+Une fois que vous avez configuré le visuel, veillez à enregistrer le rapport si vous êtes dans le service Power BI, ou à enregistrer et publier le rapport si vous utilisez Power BI Desktop.
+
+La section précédente a décrit comment activer l’extraction interrapport pour Power BI Desktop (dans la fenêtre **Options**). Si vous utilisez la service Power BI pour créer une cible d’extraction interrapport, pour activer cette dernière, vous devez faire ce qui suit : 
+
+1. Sélectionnez l’espace de travail dans lequel votre rapport cible et votre rapport source résident.
+2. Sélectionnez **Rapports**.
+3. Sélectionnez l'icône **Paramètres** pour le rapport source.
+4. Assurez-vous que le bouton bascule d’extraction interrapport est **activé**.
+5. Enregistrez votre rapport.
+
+Voilà. Votre rapport est prêt à utiliser l’extraction interrapport. 
+
+Dans la section suivante, nous examinons l’expérience du point de vue de l’utilisateur.
+
+## <a name="cross-report-drillthrough-experience"></a>Expérience d’extraction interrapport
+
+Quand vous configurez l’expérience d’extraction interrapport pour un rapport, vous pouvez exploiter la fonctionnalité.
+
+Sélectionnez le rapport source dans le service Power BI, puis sélectionnez un visuel qui utilise le ou les champs de la façon que vous avez spécifiée lors de la configuration de la page cible. Ensuite, cliquez avec le bouton droit sur un point de données pour ouvrir le menu contextuel du visuel, puis sélectionnez **Extraction**.
+
+![Capture d’écran du rapport source dans le service Power BI, avec Extraction en surbrillance](media/desktop-cross-report-drill-through/cross-report-drill-through-01.png)
+
+Vous verrez ensuite les résultats dans la page d’extraction interrapport cible, comme vous l’avez configuré lorsque vous avez créé la cible. Les résultats sont filtrés en fonction des paramètres d’extraction.
 
 > [!IMPORTANT]
-> Power BI met en cache les cibles de cross-rapport d’extraction. Si vous apportez des modifications, veillez à ce que vous actualisez votre navigateur si vous ne voyez pas les cibles d’extraction comme prévu. 
+> Power BI met en cache les cibles d’extraction interrapport. Si vous apportez des modifications, veillez à actualiser votre navigateur si vous ne voyez pas les cibles d’extraction comme attendu. 
 
-Cross-report cibles sont mis en forme de la manière suivante : 
+Les cibles interrapport sont mises en forme de la manière suivante : 
 
 `Target Page Name [Target Report Name]`
 
-Après avoir sélectionné la page cible à laquelle vous souhaitez extraire, Power BI accède à cette page. Il transmet le contexte de filtre en fonction des paramètres de la page cible. 
+Une fois que vous avez sélectionné la page cible dans laquelle vous souhaitez effectuer une extraction, Power BI accède à cette page. Il passe le contexte de filtre en fonction des paramètres de la page cible. 
 
-Contexte de filtre de la source visual peut être les suivants : 
+Le contexte de filtre du visuel source peut inclure les éléments suivants : 
 
-* Rapport, page et des filtres de niveau visuel qui affectent l’élément visuel source. 
-* Filtrage croisé et la sélection croisée qui affectent l’élément visuel source. 
-* Segments dans la page et les synchroniser les segments.
+* Filtres de niveau rapport, page et visuel affectant le visuel source. 
+* Filtrage et mise en surbrillance croisés qui affectent le visuel source. 
+* Segments sur la page et segments synchronisés.
 * Paramètres d’URL.
 
-Lorsque vous arrivez sur le rapport cible pour l’extraction, Power BI s’applique uniquement les filtres pour les champs pour lesquels il trouve la chaîne exacte correspond à pour nom de champ et le nom de la table. Power BI ne s’applique pas rémanentes filtres du rapport cible. Il est le cas, toutefois, appliquer votre signet personnel par défaut s’il en existe. Par exemple, si votre signet personnel par défaut inclut un filtre de rapport pour *Country = US*, Power BI s’applique ce filtre tout d’abord, avant d’appliquer le contexte de filtre du visuel de la source. 
+Lorsque vous accédez au rapport cible pour l’extraction, Power BI applique uniquement les filtres pour les champs pour lesquels il trouve des correspondances de chaîne exactes pour le nom de champ et le nom de table. Power BI n’applique pas les filtres permanents du rapport cible. Toutefois, il applique votre signet personnel par défaut s’il en existe un. Par exemple, si votre signet personnel par défaut comprend un filtre au niveau du rapport pour *Country = US*, Power BI applique d’abord ce filtre avant d’appliquer le contexte de filtre à partir du visuel source. 
 
-Pour l’extraction de cross-report, Power BI transmet le contexte de filtre à toutes les pages standards dans le rapport cible. Contexte de filtre pour les pages d’info-bulle, ne remplit pas Power BI, car les pages d’info-bulle sont filtrées selon le visuel source qui appelle l’info-bulle.
+Pour l’extraction interrapport, Power BI passe le contexte de filtre à toutes les pages standard du rapport cible. Power BI ne passe pas le contexte de filtre pour les pages d’info-bulle, car les pages d’info-bulle sont filtrées en fonction de l’objet visuel source qui appelle l’info-bulle.
 
-Si vous souhaitez revenir au rapport source après l’action cross-rapport d’extraction, utilisez le navigateur **retour** bouton. 
+Si vous souhaitez revenir au rapport source après l’action d’extraction interrapport, utilisez le bouton **Retour** du navigateur. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391744"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903813"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Voir un rapport dans le service Power BI pour les *consommateurs*
 Un rapport est constitué d’une ou de plusieurs pages d’éléments visuels. Les rapports sont créés par des *concepteurs* Power BI et [partagés avec des *consommateurs* directement](end-user-shared-with-me.md) ou dans le cadre d’une [application](end-user-apps.md). 
@@ -30,7 +30,7 @@ Nous allons ouvrir un rapport qui a été partagé avec vous directement, puis u
    ![Page d'accueil](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Ouvrir un rapport qui a été partagé avec vous
-Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via un lien dans un e-mail ou en l’ajoutant à votre Accueil Power BI. Le contenu qui est partagé de cette façon s’affiche dans le conteneur **Partagé avec moi** sur votre barre de navigation et dans la section **Partagé avec moi** de votre canevas Accueil.
+Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via un lien dans un e-mail ou en l’ajoutant automatiquement. Le contenu qui est partagé de cette façon s’affiche dans le conteneur **Partagé avec moi** sur votre barre de navigation et dans la section **Partagé avec moi** de votre canevas Accueil.
 
 1. Ouvrir dans le service Power BI (app.powerbi.com).
 
@@ -50,6 +50,12 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via
 
    ![onglets des pages du rapport](./media/end-user-report-open/power-bi-ytd.png)
 
+6. Notez le volet **Filtres** sur le côté droit. Les filtres qui ont été appliqués à cette page de rapport ou à l’ensemble du rapport s’affichent ici.
+
+7. Le fait de pointer sur un visuel de rapport révèle plusieurs icônes et des points de suspension (...). Pour afficher les filtres appliqués à un visuel spécifique, sélectionnez l’icône de filtre. Ici, nous avons sélectionné l’icône de filtre pour le graphique en courbes *Total Units by Rolling Period and Region*.
+
+   ![onglets des pages du rapport](./media/end-user-report-open/power-bi-visual-filters.png)
+
 6. Pour l’instant, nous voyons toute la page du rapport. Pour changer l’affichage (zoom) de la page, sélectionnez la liste déroulante Afficher en haut à droite et choisissez **Taille réelle**.
 
    ![modifier le zoom](./media/end-user-report-open/power-bi-fit-new.png)
@@ -59,21 +65,26 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Ouvrez un rapport qui fait partie d’une application
 Si vous avez reçu des applications de collègues ou d’AppSource, ces applications sont disponibles à partir de votre page d’accueil et du conteneur **Applications** sur votre barre de navigation. Une [application](end-user-apps.md) est un ensemble de tableaux de bord et de rapports.
 
+### <a name="prerequisites"></a>Conditions préalables
+Pour suivre la procédure, téléchargez l’application Marketing et ventes.
+1. Dans votre navigateur, accédez à appsource.microsoft.com.
+1. Recherchez « Marketing et ventes » et sélectionnez **Microsoft Sample - Sales & Marketing**.
+1. Sélectionnez **Télécharger maintenant** > **Continuer** > **Installer** pour installer l’application dans votre conteneur d’applications. 
+
+Vous pouvez ouvrir l’application à partir de votre conteneur d’applications ou de votre page d’accueil.
 1. Revenez à l’accueil en sélectionnant **Accueil** à partir de la barre de navigation.
 
 7. Faites défiler vers le bas jusqu'à ce que vous voyiez **Mes applications**.
 
-   ![Page d'accueil](./media/end-user-report-open/power-bi-my-apps.png)
+   ![Page d’accueil](./media/end-user-report-open/power-bi-app.png)
 
-8. Sélectionnez une des applications pour l’ouvrir. Selon les options définies par le *concepteur* de l’application, celle-ci ouvrira un tableau de bord ou un rapport. Si vous sélectionnez l’application :
-    - le rapport s’ouvre, c’est parti.
-    - un tableau de bord s’ouvre, consultez ***Ouvrir un rapport à partir d’un tableau de bord*** ci-dessous.
+8. Sélectionnez votre nouvelle application de marketing et de ventes pour l’ouvrir. Selon les options définies par le *concepteur* de l’application, celle-ci ouvrira un tableau de bord ou un rapport. Cette application s’ouvre sur un tableau de bord.  
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Ouvrir un rapport à partir d’un tableau de bord
 Les rapports peuvent être ouverts à partir d’un tableau de bord. La plupart des [vignettes](end-user-tiles.md) de tableau de bord sont *épinglées* à partir de rapports. Si une vignette est sélectionnée, le rapport utilisé pour la créer s’ouvre. 
 
-1. À partir d’un tableau de bord, sélectionnez une vignette. Dans cet exemple, nous avons sélectionné la vignette d’histogramme « Total Units YTD... ».
+1. À partir du tableau de bord, sélectionnez une vignette. Dans cet exemple, nous avons sélectionné la vignette d’histogramme « Total Units YTD... ».
 
     ![tableau de bord avec la vignette sélectionnée](./media/end-user-report-open/power-bi-dashboard.png)
 
@@ -94,5 +105,6 @@ Une fois que vous serez familiarisé avec la navigation dans le service Power BI
 - Et plus encore
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Ouvrir et voir un tableau de bord](end-user-dashboard-open.md)
+[Ouvrir et voir un tableau de bord](end-user-dashboard-open.md)    
+[Filtres de rapport](end-user-report-filter.md)
 
