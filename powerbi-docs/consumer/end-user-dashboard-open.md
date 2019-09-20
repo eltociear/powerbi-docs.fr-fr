@@ -12,14 +12,14 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: cd0b680265d526ecf7adbf4db8c54b77535eadf8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608476"
 ---
 # <a name="view-a-dashboard"></a>Afficher un tableau de bord
-Power BI *consommateurs* passent beaucoup de temps d’affichage des tableaux de bord. Les tableaux de bord sont conçus pour mettre en évidence des informations spécifiques des rapports et jeux de données sous-jacents. Et les consommateurs de Power BI utilisent ces informations pour le suivi, la surveillance, les réponses aux questions, les tests et bien plus encore, afin de prendre des décisions commerciales pilotées par les données.
+Les *utilisateurs* de Power BI consacrent beaucoup de temps à la consultation des tableaux de bord. Les tableaux de bord sont conçus pour mettre en évidence des informations spécifiques des rapports et jeux de données sous-jacents. Et les consommateurs de Power BI utilisent ces informations pour le suivi, la surveillance, les réponses aux questions, les tests et bien plus encore, afin de prendre des décisions commerciales pilotées par les données.
 
 ![tableau de bord](media/end-user-dashboard-open/power-bi-new-dash-new.png)
 
@@ -32,7 +32,7 @@ Power BI Pro est nécessaire pour partager un tableau de bord et afficher un ta
 
 |              |         |
 |------------|--------------------------------|
-|![icône de tableau de bord](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Tableaux de bord peut être ouvert à partir de nombreux emplacements dans le service Power BI. <br> Recherchez simplement cette icône de tableau de bord. Une fois que vous avez identifié un <br>tableau de bord, il est simple de l’ouvrir : il suffit de le sélectionner pour que le tableau de bord remplisse <br>votre canevas Power BI. |
+|![icône de tableau de bord](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Les tableaux de bord peuvent être ouverts à partir de nombreux emplacements dans le service Power BI. <br> Recherchez simplement cette icône de tableau de bord. Une fois que vous avez identifié un <br>tableau de bord, il est simple de l’ouvrir : il suffit de le sélectionner pour que le tableau de bord remplisse <br>votre canevas Power BI. |
 |                    |          |
 
 
@@ -41,7 +41,7 @@ Vous pouvez trouver des tableaux de bord dans tous les conteneurs de la barre de
 
 ![icône de tableau de bord](media/end-user-dashboard-open/opendash.gif)
 
-- **accueil** 
+- **Accueil** 
 - **Favoris** : Si vous avez [défini un tableau de bord comme favori](end-user-favorite.md)
 - **Récente** : Si vous avez récemment visité un tableau de bord
 - **Applications** : la plupart des applications contiennent des tableaux de bord et des rapports

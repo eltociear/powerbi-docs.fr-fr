@@ -9,15 +9,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 2796b29ee553ece77846f5edc8af4b2523fd48c6
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d09ada0d3309a9cb2b93a8cd4fa3d6740e69ba77
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522793"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073548"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Ajouter des commentaires à un tableau de bord ou à un rapport
 Ajoutez un commentaire personnel ou démarrez une conversation à propos d’un tableau de bord ou d’un rapport avec vos collègues. Les **commentaires** sont une fonctionnalité parmi d’autres qui permet à un *consommateur* de collaborer avec d’autres personnes. 
@@ -25,16 +25,18 @@ Ajoutez un commentaire personnel ou démarrez une conversation à propos d’un 
 ![commentaires vidéo](media/end-user-comment/comment.gif)
 
 ## <a name="how-to-use-the-comments-feature"></a>Comment utiliser la fonctionnalité Commentaires
-Les commentaires peuvent être ajoutés à un tableau de bord entier, à des visuels individuels d’un tableau de bord, à une page de rapport et aux visuels individuels d’une page de rapport. Le commentaire que vous ajoutez peut être général ou cibler certains collègues.  
+Les commentaires peuvent être ajoutés à l’ensemble d’un tableau de bord, à chacun des visuels d’un tableau de bord, à une page de rapport, à un rapport paginé et à chacun des visuels d’une page de rapport. Le commentaire que vous ajoutez peut être général ou cibler certains collègues.  
 
 Lorsque vous ajoutez un commentaire à un rapport, Power BI capture le filtre et les valeurs de segment actuels. Cela signifie que lorsque vous sélectionnez un commentaire ou y répondez, la page de rapport ou le visuel du rapport peut changer pour vous montrer les sélections de filtre et de segment qui étaient actives lorsque le commentaire a été ajouté pour la première fois.  
 
 ![Vidéo présentant un rapport avec des filtres](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
 
-Pourquoi est-ce important ? Prenons l’exemple d’un collègue ayant appliqué un filtre qui a révélé une information intéressante qu’il souhaite partager avec l’équipe. Si ce filtre n’était pas sélectionné, le commentaire serait probablement moins pertinent. 
+Pourquoi est-ce important ? Prenons l’exemple d’un collègue ayant appliqué un filtre qui a révélé une information intéressante qu’il souhaite partager avec l’équipe. Si ce filtre n’était pas sélectionné, le commentaire serait probablement moins pertinent.
+
+Si vous utilisez un rapport paginé, vous ne pouvez écrire que des commentaires d’ordre général sur votre rapport.  Il n’est pas possible d’écrire des commentaires pour un visuel de rapport.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Ajouter un commentaire général à un tableau de bord ou à un rapport
-Les processus d’ajout de commentaires à un tableau de bord ou à un rapport sont similaires. Dans cet exemple, nous utilisons un tableau de bord. 
+Les processus d’ajout de commentaires à un tableau de bord ou à un rapport sont similaires.  Dans cet exemple, nous utilisons un tableau de bord. 
 
 1. Ouvrez un tableau de bord ou un rapport Power BI et sélectionnez l’icône **Commentaires**. La boîte de dialogue Commentaires s’ouvre.
 
