@@ -10,22 +10,19 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 82c8bbb5361730b306cacd14dc9598ca12035027
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 81dfc6961ff0c00b609f98e50da3532a230cf26d
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61136164"
 ---
-# <a name="using-dataflows-with-on-premises-data-sources-preview"></a>Utilisation de flux de données avec des sources de données locales (préversion)
+# <a name="using-dataflows-with-on-premises-data-sources"></a>Utilisation de flux de données avec des sources de données locales
 
 Les **flux de données** vous permettent de créer une collection de données à partir de diverses sources, de nettoyer les données, de les transformer, puis de les charger dans le stockage Power BI. Lors de la création de flux de données, vous pouvez utiliser des sources de données locales. Cet article expose la condition associée à la création de flux de données et la façon dont votre **passerelle d’entreprise** doit être configurée pour activer ces connexions.
 
 ![Flux de données et passerelles](media/service-dataflows-onpremises-gateways/onpremises-gateways_01.png)
 
-> [!NOTE]
-> La fonctionnalité de flux de données étant en préversion, elle est susceptible de changer et d’être mise à jour avant la disponibilité générale.
- 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Configuration d’une passerelle d’entreprise pour une utilisation avec des flux de données
 
 Pour utiliser une source de données locale dans un flux de données, l’utilisateur qui crée le flux de données doit avoir installé et configuré une **passerelle d’entreprise**. L’utilisateur qui crée le flux de données doit également être administrateur de la passerelle d’entreprise afin de pouvoir utiliser cette passerelle pour un flux de données.
@@ -80,8 +77,8 @@ Cet article fournit des informations sur l’utilisation d’une source de donn�
 
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [Utilisation d’entités calculées sur Power BI Premium (préversion)](service-dataflows-computed-entities-premium.md)
-* [Ressources du développeur pour les flux de données Power BI (préversion)](service-dataflows-developer-resources.md)
+* [Utilisation d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 
 Pour plus d’informations sur Power Query et l’actualisation planifiée, vous pouvez consulter ces articles :
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)

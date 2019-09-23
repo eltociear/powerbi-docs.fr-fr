@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 9d884df7fdfa6d0f16e7963c00a1100186d70546
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239497"
@@ -41,7 +41,7 @@ Les cartes suivantes du volet **Visualisations** vous permettent d’ajuster la 
 
 * Texte du bouton
 * Icône
-* Plan
+* Contour
 * Remplir
 
 Pour sélectionner la manière dont le bouton doit apparaître pour chaque état, développez l’une de ces cartes et sélectionnez la liste déroulante qui apparaît en haut. Dans l’image suivante, vous voyez la carte **Plan** développée, avec la liste déroulante sélectionnée pour montrer les trois états :

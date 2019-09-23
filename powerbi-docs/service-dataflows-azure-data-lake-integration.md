@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 7532b0b381e43c6e413d27fa141c22e58dfba84e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61150456"
@@ -84,9 +84,9 @@ Pour plus d’informations sur les flux de données, le format CDM et Azure Data
 Pour plus d’informations sur les flux de données en général, voir les articles suivants :
 
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Utilisation d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 
 Pour plus d’informations sur le stockage Azure, voir les articles suivants :
 * [Guide de sécurité sur le Stockage Azure](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

@@ -11,12 +11,12 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: c46a5c419c242ae25ecca74428362ec27f234afd
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 254c0033dfc64b3a0f44bcda2289fedccf2e9eda
+ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730220"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71164537"
 ---
 # <a name="manage-data-sources"></a>Gérer les sources de données
 
@@ -123,9 +123,9 @@ La passerelle de données locale prend en charge les sources de données suivant
 | **Source de données** | **Active/DirectQuery** | **Actualisation manuelle ou planifiée (configurée par l’utilisateur)** |
 | --- | --- | --- |
 | Amazon Redshift |Oui |Oui |
+| Analysis Services |Oui |Oui |
 | Cubes AtScale |Oui |Oui |
 | Azure Active Directory |Non |Oui |
-| Azure Analysis Services |Oui |Oui |
 | Stockage Blob Azure |Non |Oui |
 | Azure DevOps Server |Non |Oui |
 | Stockage Table Azure |Non |Oui |

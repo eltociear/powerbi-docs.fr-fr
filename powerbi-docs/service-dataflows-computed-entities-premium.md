@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ccd8569650bd4f3da1a05c0999ad510029e5ab49
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61137903"
@@ -85,8 +85,8 @@ Cet article décrit les entités calculées et les flux de données disponibles 
 
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 * [Configurer les paramètres de flux de données d’un espace de travail (préversion)](service-dataflows-configure-workspace-storage-settings.md)
 * [Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)](service-dataflows-add-cdm-folder.md)
 * [Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)

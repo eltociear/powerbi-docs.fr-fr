@@ -11,7 +11,7 @@ ms.date: 3/5/2018
 ms.author: pashah
 ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "60976746"
@@ -134,7 +134,7 @@ Différentes configurations de processeur et de mémoire ont été utilisées po
 ### <a name="2-run-the-loadtest-tool"></a>2 Exécuter l’outil LoadTest
 Si vous souhaitez exécuter l’outil LoadTest de Reporting Services sur votre déploiement ou un déploiement Microsoft Azure de Power BI Report Server, procédez comme suit.
 
-1. Clonez le projet Reporting Services LoadTest à partir de GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest)).
+1. Clonez le projet Reporting Services LoadTest à partir de GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest) ).
 2. Dans le répertoire du projet se trouve un fichier de solution appelé RSLoadTests.sln. Ouvrez ce fichier dans Visual Studio 2015 ou version ultérieure.
 3. Déterminez si vous souhaitez exécuter cet outil sur votre déploiement Power BI Report Server ou sur un déploiement Power BI Report Server dans Microsoft Azure. Si vous choisissez de l’exécuter sur votre propre déploiement, passez à l’étape 5.
 4. Suivez les instructions figurant sur le site https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure pour créer un environnement Power BI Report Server dans Azure.

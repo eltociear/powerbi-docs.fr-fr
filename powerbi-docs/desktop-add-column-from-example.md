@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: c172ca90a849ca83a1faeed5dbab3bda96698c1a
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239792"
@@ -115,7 +115,7 @@ De nombreuses transformations sont disponibles lorsque vous utilisez la fonction
   * Semaine du mois
   * Semaine de l’année
   * Année
-  * Age
+  * Âge
   * Début de l’année
   * Fin de l’année
   * Début du mois

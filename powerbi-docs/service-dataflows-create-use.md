@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61143951"
@@ -162,9 +162,9 @@ La connexion à des sources de données pour des flux de données peut poser des
 Cet article décrit comment vous pouvez créer votre propre **flux de données** et créer un rapport dans **Power BI Desktop** pour en tirer parti. Les articles suivants sont utiles pour accéder à des informations et à des scénarios supplémentaires lors de l’utilisation de flux de données :
 
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
-* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Utilisation d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 * [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 
 Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire son article de présentation :

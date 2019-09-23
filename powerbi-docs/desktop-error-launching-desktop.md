@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 19dc98b4f402176b2ae511236015ea25d7e4178b
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454422"
@@ -44,7 +44,7 @@ Après le lancement en tant qu’administrateur et l’établissement de la conn
 ## <a name="help-with-other-issues-when-launching-power-bi-desktop"></a>Aide à la résolution des problèmes de lancement de Power BI Desktop
 Nous nous efforçons autant que possible de résoudre les problèmes qui se produisent avec **Power BI Desktop**. Nous examinons régulièrement les problèmes qui peuvent affecter de nombreux clients afin de les inclure dans nos articles.
 
-Si le problème avec le lancement de **Power BI Desktop** n’est pas associé à la passerelle de données locale, ou lorsque les solutions précédentes ne fonctionnent pas, vous pouvez soumettre un incident au [support Power BI](https://support.powerbi.com) (https://support.powerbi.com)) pour aider à identifier et résoudre votre problème.
+Si le problème avec le lancement de **Power BI Desktop** n’est pas associé à la passerelle de données locale, ou lorsque les solutions précédentes ne fonctionnent pas, vous pouvez soumettre un incident au [support Power BI](https://support.powerbi.com) (https://support.powerbi.com) ) pour aider à identifier et résoudre votre problème.
 
 Si, à l’avenir, vous rencontrez d’autres problèmes avec **Power BI Desktop** (nous espérons qu’ils seront peu nombreux voire inexistants), il est utile d’activer le suivi et de collecter des fichiers journaux, pour mieux isoler et identifier le problème. Pour activer le suivi, sélectionnez **Fichier > Options et paramètres > Options**, sélectionnez **Diagnostics**, puis activez **Activer le suivi** sous *Options de diagnostic*. Nous sommes conscients que **Power BI Desktop** doit être en cours d’exécution pour définir cette option, qui est plus utile pour les problèmes futurs associés au lancement de **Power BI Desktop**.
 

@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: ec70f4c9d6f3e6f51210a32f7efac7f160f462cb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: c5d35c1e7fef15c72314738c1d67f81656dc3101
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498021"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073612"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -122,7 +122,7 @@ Voici les paramètres que vous pouvez ajuster pour le composant WebPart Power BI
 | Propriété | Description |
 | --- | --- |
 | Nom de la page |Définit la page par défaut du composant WebPart. Sélectionnez une valeur dans la liste déroulante. Si aucune page ne s’affiche, votre rapport ne contient qu’une seule page ou l’URL que vous avez collée contient un nom de page. Supprimez la section du rapport de l’URL pour sélectionner une page spécifique. |
-| Display |Permet de définir la façon dont le rapport est ajusté à la page SharePoint Online. |
+| Affichage |Permet de définir la façon dont le rapport est ajusté à la page SharePoint Online. |
 | Afficher le volet de navigation |Affiche ou masque le volet de navigation Page. |
 | Afficher le volet Filtre |Affiche ou masque le volet Filtre. |
 
@@ -157,7 +157,7 @@ Les utilisateurs affichant un rapport dans SharePoint ont besoin au choix d’un
 
 * Power BI ne prend pas en charge les mêmes langues localisées que SharePoint Online. Par conséquent, vous risquez de ne pas voir la localisation appropriée dans le rapport incorporé.
 
-* Vous pouvez rencontrer des problèmes si vous utilisez Internet Explorer 10. Vous pouvez passer en revue les [navigateurs pris en charge par Power BI](consumer/end-user-browsers.md) et [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
+* Vous pouvez rencontrer des problèmes si vous utilisez Internet Explorer 10. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 
 * Le composant WebPart Power BI n’est pas disponible pour les [clouds nationaux](https://powerbi.microsoft.com/clouds/).
 

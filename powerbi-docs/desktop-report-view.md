@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 153a77cdc7d4749ac450378723d04c82ef938de6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514600"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142160"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Vue Rapport dans Power BI Desktop
 Si vous avez déjà utilisé Power BI, vous savez combien il est facile de créer des rapports fournissant des perspectives et des informations dynamiques sur vos données. En outre, Power BI met à votre disposition d’autres fonctions avancées dans Power BI Desktop. Grâce  à Power BI Desktop, vous pouvez créer des requêtes avancées, combiner des données de plusieurs sources, créer des relations entre des tables et bien plus encore.
@@ -61,9 +61,11 @@ Vous pouvez facilement prendre un visuel d’un rapport Power BI Desktop pour le
 
 La possibilité de copier-coller des visuels est utile pour les personnes qui créent et mettent fréquemment à jour plusieurs rapports. En cas de copie entre différents fichiers, les paramètres et la mise en forme qui ont été définis explicitement dans le volet Mise en forme sont reportés, tandis que les visuels qui s’appuient sur un thème ou sur les paramètres par défaut sont automatiquement mis à jour en fonction du thème du rapport de destination. Par conséquent, une fois votre visuel mis en forme à votre guise, vous pouvez le copier et le coller dans de nouveaux rapports en préservant ce travail de mise en forme.
 
-![Erreur de copier/coller du visuel – Aucun champ de données](media/desktop-report-view/report-view_05.png)
+Si les champs de votre modèle sont différents, le visuel présentera une erreur et un avertissement sur les champs qui n’existent pas. L’erreur est similaire à celle qui apparaît en cas de suppression d’un champ du modèle utilisé par un visuel. 
 
-Si les champs de votre modèle sont différents, le visuel présentera une erreur et un avertissement sur les champs qui n’existent pas. L’erreur est similaire à celle qui apparaît en cas de suppression d’un champ du modèle utilisé par un visuel. Pour corriger l’erreur, remplacez simplement les champs rompus par ceux que vous souhaitez utiliser dans le modèle où le visuel a été collé. Si vous utilisez un visuel personnalisé, il doit lui aussi être importé dans le rapport de destination.
+![Erreur de copier/coller du visuel – Aucun champ de données](media/desktop-report-view/report-view_07.png)
+
+Pour corriger l’erreur, remplacez simplement les champs rompus par ceux que vous souhaitez utiliser dans le modèle où le visuel a été collé. Si vous utilisez un visuel personnalisé, il doit lui aussi être importé dans le rapport de destination.
 
 
 
