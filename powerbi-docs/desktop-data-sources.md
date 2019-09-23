@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5004b55fa48cdf98aedd019749b738352d68c4cd
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: ead5c8f45e102aaeebeed492ecf4646342747fe1
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560868"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142279"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Sources de données dans Power BI Desktop
 Power BI Desktop vous permet de vous connecter aux données de nombreuses sources différentes. La liste complète des sources de données disponibles figure au bas de cette page.
@@ -191,8 +191,8 @@ La catégorie **Autre** fournit les connexions de données suivantes :
 * Script Python
 * ODBC
 * OLE DB
-* BI360 - Budgeting & Financial Reporting (bêta)
-* Denado
+* BI360 - Budgets & Rapports financiers (bêta)
+* Denodo
 * Information Grid (bêta)
 * Paxata 
 * QubolePresto (bêta)
