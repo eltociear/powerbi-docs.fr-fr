@@ -92,6 +92,8 @@
               href: end-user-insights.md
             - name: Activer les fonctionnalités en préversion
               href: end-user-preview-features.md
+            - name: "Obtenir des notifications dans le service Power\_BI"
+              href: end-user-notification-center.md
         - name: Obtenir les données
           items:
             - name: "Applications dans Power\_BI"
