@@ -1,16 +1,18 @@
-- name: Prise en main
-  href: 'gettingstarted.yml#step-0'
-- name: Obtention de données
-  href: 'gettingdata.yml#step-0'
-- name: Modélisation
-  href: 'modeling.yml#step-0'
-- name: Visualisations
-  href: 'visualizations.yml#step-0'
-- name: Exploration des données
-  href: 'exploringdata.yml#step-0'
-- name: "Power\_BI et Excel"
-  href: 'powerbiandexcel.yml#step-0'
-- name: Publication et partage
-  href: 'publishingandsharing.yml#step-0'
+- name: Explorer Power BI (consommateur)
+  href: 'https://docs.microsoft.com/learn/modules/explore-power-bi-service'
+- name: Analyser des données dans Power BI (consommateur)
+  href: 'https://docs.microsoft.com/learn/modules/analyze-data-power-bi'
+- name: "Prise en main de la création avec Power\_BI"
+  href: 'https://docs.microsoft.com/learn/modules/get-started-with-power-bi'
+- name: Obtenir les données
+  href: 'https://docs.microsoft.com/learn/modules/get-data-power-bi'
+- name: Modéliser des données
+  href: 'https://docs.microsoft.com/learn/modules/model-data-power-bi'
+- name: Utiliser des visuels
+  href: 'https://docs.microsoft.com/learn/modules/visuals-in-power-bi'
+- name: Explorer les données
+  href: 'https://docs.microsoft.com/learn/modules/explore-data-power-bi'
+- name: Publiez et partagez
+  href: 'https://docs.microsoft.com/learn/modules/publish-share-power-bi'
 - name: Présentation de DAX
-  href: 'introductiontodax.yml#step-0'
+  href: introductiontodax.yml?tutorial-step=1
