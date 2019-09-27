@@ -8,39 +8,39 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: e15cb6e09ff493512bb1b87939004c851b31fa10
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 66ac187d002c1606f96694bb45a5d44ba2ad2279
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61047994"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141310"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exporter des rapports Power BI au format PDF
 Power BI vous permet de publier votre rapport au format PDF et de créer facilement un document basé sur votre rapport. Quand vous **exportez au format PDF**, chaque page du rapport Power BI devient une page individuelle du document PDF.
 
 ## <a name="how-to-export-your-power-bi-report-to-pdf"></a>Comment exporter votre rapport Power BI au format PDF
-Dans le service Power BI, sélectionnez un rapport pour l’afficher dans le canevas. Vous pouvez également sélectionner un rapport dans votre page d’accueil, vos applications ou toute autre section du volet de navigation de gauche.
+Dans le service Power BI, sélectionnez un rapport pour l’afficher dans le canevas. Vous pouvez également sélectionner un rapport dans votre page d’accueil, vos applications ou toute autre section de votre barre de navigation de gauche.
 
-1. Sélectionnez **Fichier** > **Exporter au format PDF** dans la barre de menus.
+1. Dans la barre de menus, sélectionnez **Exporter** > **PDF**.
 
-    ![Sélection de Fichier dans la barre de menus, flèche pointant vers Exporter au format PDF](media/end-user-pdf/power-bi-export-pdf.png)
+    ![Sélection d’Exporter dans la barre de menus, flèche pointant vers Exporter au format PDF](media/end-user-pdf/power-bi-export.png)
 
-    Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Vue actuelle** ou **Vue par défaut**.  L’option **Vue actuelle** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre.  La plupart des utilisateurs choisissent cette option.  Vous pouvez aussi sélectionner l’option **Vue par défaut**, qui exporte le rapport dans son état initial (l’état au moment du partage par l’auteur), sans refléter les modifications que vous avez apportées à cet état initial.
+    Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Vue actuelle** ou **Vue par défaut**.  L’option **Valeurs actuelles** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre.  La plupart des utilisateurs choisissent cette option.  Vous pouvez aussi sélectionner l’option **Valeurs par défaut**, qui exporte le rapport dans son état initial (l’état au moment du partage par le *concepteur*), sans refléter les modifications que vous avez apportées à cet état initial.
     
-    En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés.  Cochez cette case si vous souhaitez exporter uniquement les onglets du rapport qui sont visibles dans votre navigateur.  Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation.  Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués.  Une fois que vous avez effectué vos sélections, cliquez sur le bouton Exporter pour continuer.
+    En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés.  Cochez cette case si vous souhaitez exporter uniquement les onglets du rapport qui sont visibles dans votre navigateur.  Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation.  Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués.  Une fois que vous avez effectué vos sélections, sélectionnez le bouton Exporter pour continuer.
     
     Une barre de progression s’affiche en haut à droite. L’exportation peut prendre quelques minutes. Pendant ce temps, vous pouvez continuer à travailler dans Power BI.
 
-    ![Messages de progression de l’exportation](media/end-user-pdf/power-bi-export-message.png)
+    ![Messages de progression de l’exportation](media/end-user-pdf/power-bi-export-progress.png)
 
     Une fois que vous avez terminé, la bannière de notification change pour vous informer que le service Power BI a terminé le processus d’exportation.
 
 2. Votre fichier est ensuite disponible à l’endroit où votre navigateur affiche les fichiers téléchargés. Dans l’image suivante, il est affiché sous forme de bannière de téléchargement au bas de la fenêtre du navigateur.
 
-    ![Emplacement du fichier téléchargé](media/end-user-pdf/power-bi-save-file.png)
+    ![Emplacement du fichier téléchargé](media/end-user-pdf/power-bi-export-done.png)
 
 C’est tout. Vous pouvez télécharger le fichier et l’ouvrir avec n’importe quelle visionneuse PDF, comme celle disponible dans Microsoft Edge.
 

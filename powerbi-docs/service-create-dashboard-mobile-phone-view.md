@@ -12,15 +12,15 @@ ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61158200"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimiser un tableau de bord pour les téléphones mobiles - Power BI 
-Lorsque vous affichez les tableaux de bord en mode portrait sur un téléphone, vous les vignettes de tableau de bord sont disposées une après l’autre, les mêmes taille. Dans le service Power BI, vous pouvez créer une vue personnalisée d’un tableau de bord, en particulier pour le mode portrait téléphones. Même si vous créez une vue téléphone, lorsque vous activez le téléphone sur le côté, vous voyez le tableau de bord est disposé dans le service.
+Quand vous affichez les tableaux de bord en mode portrait sur un téléphone, les vignettes associées sont disposées l’une après l’autre et ont toutes la même taille. Dans le service Power BI, vous pouvez créer une vue personnalisée d’un tableau de bord, en particulier pour l’affichage en mode portrait sur les téléphones. Même si vous créez une vue téléphone, lorsque vous tournez le téléphone sur le côté, vous voyez le tableau de bord tel qu’il est disposé dans le service.
 
-Vous recherchez des informations sur l’affichage des tableaux de bord sur un appareil mobile ? Essayez ce démarrage rapide [Explorer des tableaux de bord et rapports dans les applications mobiles Power BI](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) à la place.
+Vous recherchez des informations sur l’affichage des tableaux de bord sur un appareil mobile ? Essayez le démarrage rapide [Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) à la place.
 
 > [!NOTE]
 > Quand vous modifiez la vue téléphone, les personnes qui consultent le tableau de bord sur un téléphone peuvent voir les modifications apportées en temps réel. Par exemple, si vous détachez tous les vignettes sur la vue téléphone du tableau de bord, le tableau de bord affiché sur le téléphone se retrouve soudain sans vignette. 

@@ -208,12 +208,12 @@ Après l’acquisition de l’objet IError, vous devez examiner la table d’err
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
 | TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès | 403 | Jeton arrivé à expiration  |
 | PowerBIEntityNotFound | Réception d’une notification d’échec du rapport | 404 | <li> ID du rapport erroné <li> Le rapport n'existe pas  |
-| Paramètres non valides | Paramètre powerbiToken non spécifié | Non applicable | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
+| Paramètres non valides | Paramètre powerbiToken non spécifié | N/A | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
 | LoadReportFailed | Échec de l’initialisation : le cluster n’a pas pu être résolu | 403 | * Jeton d’accès incorrect * Le type d’incorporation ne correspond pas au type de jeton |
 | PowerBINotAuthorizedException | Réception d’une notification d’échec du rapport | 401 | <li> ID de groupe incorrect <li> Groupe non autorisé |
-| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | Non applicable | Jeton de requête de données arrivé à expiration |
-| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | Non applicable | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | Non applicable | <li> Capacité suspendue <li> Capacité supprimée |
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
+| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | N/A | <li> Capacité suspendue <li> Capacité supprimée |
 
 ### <a name="typical-errors-when-embedding-for-non-power-bi-users-using-an-embed-token"></a>Erreurs courantes lors de l’incorporation pour d’autres utilisateurs que ceux de Power BI (avec un jeton d’incorporation)
 
@@ -223,12 +223,12 @@ Après l’acquisition de l’objet IError, vous devez examiner la table d’err
 | LoadReportFailed | Réception d’une notification d’échec du rapport | 404 | <li> ID du rapport erroné <li> Le rapport n'existe pas  |
 | LoadReportFailed | Réception d’une notification d’échec du rapport | 403 | L’ID du rapport ne correspond pas au jeton |
 | LoadReportFailed | Réception d’une notification d’échec du rapport | 500 | Il ressort du rapport que l’ID n’est pas un guid |
-| Paramètres non valides | Paramètre powerbiToken non spécifié | Non applicable | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
+| Paramètres non valides | Paramètre powerbiToken non spécifié | N/A | <li> Aucun jeton d’accès fourni <li> Aucun ID de rapport fourni |
 | LoadReportFailed | Échec de l’initialisation : le cluster n’a pas pu être résolu | 403 | Type de jeton incorrect, jeton incorrect |
 | PowerBINotAuthorizedException | Réception d’une notification d’échec du rapport | 401 | ID de groupe incorrect/non autorisé |
-| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | Non applicable | Jeton de requête de données arrivé à expiration |
-| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | Non applicable | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
-| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | Non applicable | <li> Capacité suspendue <li> Capacité supprimée |
+| TokenExpired | Le jeton d’accès a expiré, soumettez à nouveau avec un nouveau jeton d’accès. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Jeton de requête de données arrivé à expiration |
+| OpenConnectionError | Impossible d'afficher l'élément visuel. Impossible de rendre un visuel de rapport intitulé : <visual title> | N/A | Capacité suspendue ou supprimée tant qu’un rapport sur la capacité était ouvert dans une session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Impossible de charger le schéma de modèle associé à ce rapport. Assurez-vous que vous disposez d’une connexion au serveur et réessayez. | N/A | <li> Capacité suspendue <li> Capacité supprimée |
 
 ## <a name="content-rendering"></a>Restitution du contenu
 

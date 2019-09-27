@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e735d45a7a49c4a0365e35d5bb95957c6145f934
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 6424180dde3dac0d6d2b66c8a9303810b6aa0dc6
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903750"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100095"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Utiliser une extraction interrapport dans Power BI Desktop
 
@@ -32,7 +32,7 @@ Il est important de comprendre les définitions suivantes avant de commencer à 
 
 
 > [!NOTE]
-> Les rapports partagés individuellement dans *Mon espace de travail*, qui sont des rapports qui s'affichent comme *[Partagés avec moi](service-share-dashboards.md#share-a-dashboard-or-report)* , sont accessibles uniquement dans l’espace de travail à partir duquel ils ont été initialement partagés. 
+> Avec la fonctionnalité d’extraction interrapport de Power BI Desktop, vous pouvez passer contextuellement d’un rapport à un autre. Cela est vrai tant que les rapports se trouvent dans le même espace de travail ou dans la même application dans le service Power BI. Cela ne s’applique pas lors de l’accès à des rapports partagés individuellement dans *Mon espace de travail* ([Rapports partagés avec moi](service-share-dashboards.md#share-a-dashboard-or-report)) ; à la place, vous devez accéder au rapport dans l’espace de travail à partir duquel il a été initialement partagé.
 
 
 ## <a name="enable-cross-report-drillthrough"></a>Activer l’extraction interrapport

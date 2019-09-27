@@ -9,16 +9,16 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.date: 08/29/2019
-ms.openlocfilehash: add2f82594d83d1e1f177bfad5045c2e0a34ba84
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: f7f1b777e7c4e54dbdcfb1757fe4df274624a580
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70189366"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71076000"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Passer un paramètre de rapport dans une URL pour un rapport paginé dans Power BI 
 
-Vous pouvez passer des paramètres de rapport à un rapport en les incluant dans l’URL d’un rapport paginé. Tous les paramètres de requête peuvent avoir des paramètres de rapport correspondants. Ainsi, vous passez un paramètre de requête à un rapport en passant le paramètre de rapport correspondant. Vous devez préfixer le nom du paramètre avec  `rp:` pour que Power BI le reconnaisse dans l’URL. 
+Vous pouvez passer des paramètres de rapport à un rapport en les incluant dans l’URL d’un rapport paginé. Tous les paramètres de requête peuvent avoir des paramètres de rapport correspondants. Ainsi, vous passez un paramètre de requête à un rapport en passant le paramètre de rapport correspondant. Vous devez préfixer le nom du paramètre avec `rp:` pour que Power BI le reconnaisse dans l’URL. 
 
 Les paramètres de rapport sont sensibles à la casse et utilisent les caractères spéciaux suivants : 
 
@@ -63,7 +63,7 @@ rp:SalesOrderNumber:isnull=true
 Pour passer une valeur booléenne, utilisez 0 pour « false » et 1 pour « true ». Pour passer une valeur en virgule flottante, incluez le séparateur décimal des paramètres régionaux du serveur.
 
 > [!NOTE]
-> Si votre rapport contient un paramètre de rapport qui a une valeur par défaut et que la valeur de la propriété  **Prompt**  (Demander) est  **false** (autrement dit, si la propriété **Demander à l’utilisateur** n’est pas sélectionnée dans le Gestionnaire de rapports), vous ne pouvez pas passer une valeur pour ce paramètre de rapport dans une URL. Ceci permet aux administrateurs d’empêcher les utilisateurs finaux d’ajouter ou de modifier les valeurs de certains paramètres de rapport.
+> Si votre rapport contient un paramètre de rapport qui a une valeur par défaut et que la valeur de la propriété **Prompt** (Demander) est **false** (autrement dit, si la propriété **Demander à l’utilisateur** n’est pas sélectionnée dans le Gestionnaire de rapports), vous ne pouvez pas passer une valeur pour ce paramètre de rapport dans une URL. Ceci permet aux administrateurs d’empêcher les utilisateurs finaux d’ajouter ou de modifier les valeurs de certains paramètres de rapport.
 
 ## <a name="additional-examples"></a>Exemples supplémentaires 
 

@@ -1,6 +1,6 @@
 ---
-title: Échantillonnage de ligne à haute densité dans Power BI
-description: Échantillonnage de ligne à haute densité dans Power BI
+title: Échantillonnage de lignes à haute densité dans Power BI
+description: Échantillonnage de lignes à haute densité dans Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -12,21 +12,21 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 357611d36fd59be1b674f06ce72c5aba8d020822
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454329"
 ---
-# <a name="high-density-line-sampling-in-power-bi"></a>Échantillonnage de ligne à haute densité dans Power BI
-À compter de la version de juin 2017 de **Power BI Desktop** et des mises à jour du **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore les visuels qui échantillonnent des données à haute densité. Par exemple, vous pouvez créer un graphique en courbes à partir des résultats des ventes de magasins, chacun d’eux enregistrant plus de dix mille reçus d’achat chaque année. Un graphique en courbes de telles informations serait échantillonner des données (sélectionnez une représentation explicite de ces données, pour illustrer la façon dont les ventes varient au fil du temps) à partir des données pour chaque magasin et créer un graphique en courbes de plusieurs séries, représentant ainsi les données sous-jacentes. Il s’agit d’une pratique courante pour la visualisation de données à haute densité. Cet article décrit en détail comment Power BI Desktop a amélioré son échantillonnage des données à haute densité.
+# <a name="high-density-line-sampling-in-power-bi"></a>Échantillonnage de lignes à haute densité dans Power BI
+À compter de la version de juin 2017 de **Power BI Desktop** et des mises à jour du **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore les visuels qui échantillonnent des données à haute densité. Par exemple, vous pouvez créer un graphique en courbes à partir des résultats des ventes de magasins, chacun d’eux enregistrant plus de dix mille reçus d’achat chaque année. Un graphique en courbes de telles informations échantillonne des données (sélectionnez une représentation explicite de ces données pour illustrer les variations des ventes au fil du temps) à partir des données de chaque magasin, et montre plusieurs séries, représentant ainsi les données sous-jacentes. Il s’agit d’une pratique courante pour la visualisation de données à haute densité. Cet article décrit en détail comment Power BI Desktop a amélioré son échantillonnage des données à haute densité.
 
 ![](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
 > [!NOTE]
 > L’algorithme **Échantillonnage à haute densité** décrit dans cet article est disponible dans **Power BI Desktop** et dans le **service Power BI**.
 
-## <a name="how-high-density-line-sampling-works"></a>Ligne à haute densité comment fonctionne l’échantillonnage
-Auparavant, **Power BI** sélectionnait une collection de points de données échantillons dans la plage complète des données sous-jacentes de manière déterministe. Par exemple, pour des données à haute densité sur un visuel s’étendant sur une année civile, il pouvait y avoir 350 échantillons de points de données affichés dans le visuel, chacun d’eux étant sélectionné de façon que la plage complète des données (la série globale de données sous-jacentes) était représentée dans le visuel. Pour aider à comprendre comment cela fonctionne, imaginez le traçage d’une cotation sur une période d’un an et en sélectionnant 365 points de données pour créer un graphique en courbes visuel (c'est-à-dire d’un point de données pour chaque jour).
+## <a name="how-high-density-line-sampling-works"></a>Fonctionnement de l’échantillonnage de ligne à haute densité
+Auparavant, **Power BI** sélectionnait une collection de points de données échantillons dans la plage complète des données sous-jacentes de manière déterministe. Par exemple, pour des données à haute densité sur un visuel s’étendant sur une année civile, il pouvait y avoir 350 échantillons de points de données affichés dans le visuel, chacun d’eux étant sélectionné de façon que la plage complète des données (la série globale de données sous-jacentes) était représentée dans le visuel. Pour comprendre comment cela fonctionne, imaginons que nous traçons une cotation sur une période d’un an, et que nous avons sélectionné 365 points de données pour créer un visuel de graphique en courbes (soit un point de données pour chaque jour).
 
 Dans ce cas, il existe un grand nombre de valeurs pour une cotation chaque jour. Bien entendu, il existe un plus haut et un plus bas chaque jour, mais ils peuvent se produire à tout moment de la journée quand la bourse est ouverte. Pour un échantillonnage de ligne à haute densité, si l’échantillon de données sous-jacentes a été pris à 10h30 et à 12h00 quotidiennement, vous obtenez un instantané représentatif des données sous-jacentes (le prix à 10h30 et à 12h00), mais il peut ne pas capturer le plus haut et le plus bas réels de la cotation pour ce point de données représentatif (ce jour-là). Dans ce cas (et dans d’autres), l’échantillonnage est représentatif des données sous-jacentes, mais il ne capture pas toujours certains points importants, qui sont dans ce cas le plus haut et le plus bas de la cotation du jour.
 
@@ -35,7 +35,7 @@ Par définition, les données à haute densité sont échantillonnées pour cré
 ## <a name="how-the-new-line-sampling-algorithm-works"></a>Fonctionnement du nouvel algorithme d’échantillonnage de ligne
 Le nouvel algorithme d’échantillonnage de ligne à haute densité est disponible pour générer des visuels de graphique en courbes et en aires avec un axe X continu.
 
-Pour un élément visuel à haute densité, **Power BI** découpe intelligemment vos données en segments haute résolution, puis sélectionne les points importants pour représenter chaque segment. Que le processus de segmentation de données haute résolution est spécialement réglé pour vous assurer que le graphique ainsi obtenu est visuellement indiscernable du rendu de tous les points de données sous-jacente, mais beaucoup plus rapide et plus interactives.
+Pour un visuel à haute densité, **Power BI** découpe vos données de façon appropriée en segments de haute résolution, puis sélectionne les points importants pour représenter chaque segment. Ce processus de segmentation de données haute résolution est spécialement réglé pour s’assurer que le graphique obtenu soit visuellement indiscernable du rendu de tous les points de données sous-jacents, mais qu’il soit généré beaucoup plus rapidement et soit plus interactif.
 
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Valeurs minimales et maximales pour les visuels de ligne à haute densité
 Pour chaque visualisation, les limitations visuelles suivantes s’appliquent :
@@ -53,7 +53,7 @@ Le nombre maximal de limites de données est plus élevé pour les types de visu
 
 Ces paramètres garantissent que les visuels dans Power BI Desktop s’affichent très rapidement et réagissent aux interactions des utilisateurs, et qu’ils n’entraînent pas une surcharge de calcul excessive sur l’ordinateur affichant le visuel.
 
-### <a name="evaluating-representative-data-points-for-high-density-line-visuals"></a>L’évaluation des points de données représentatifs pour les visuels de ligne à haute densité
+### <a name="evaluating-representative-data-points-for-high-density-line-visuals"></a>Évaluation des points de données représentatifs pour les visuels de ligne à haute densité
 Quand le nombre de points de données sous-jacents dépasse le nombre maximal de points de données pouvant être représentés dans le visuel, un processus appelé *compartimentage* démarre et découpe les données sous-jacentes en blocs nommés *compartiments*, qu’il affine ensuite de manière itérative.
 
 L’algorithme crée le plus grand nombre possible d’emplacements afin d’offrir une granularité maximale pour le visuel. Dans chaque emplacement, l’algorithme détecte les valeurs de données minimale et maximale pour s’assurer que les valeurs importantes et significatives (par exemple, des valeurs hors norme) sont capturées et affichées dans le visuel. Selon les résultats du compartimentage et de l’évaluation des données qui s’en suit par Power BI, la résolution minimale de l’axe X du visuel est déterminée de façon à garantir une granularité maximale de celui-ci.
@@ -67,7 +67,7 @@ Si vous trouvez que cela ressemble beaucoup à une analyse visant à vérifier q
 ## <a name="tooltips-and-high-density-line-sampling"></a>Info-bulles et échantillonnage de ligne à haute densité
 Il est important de noter que ce processus de compartimentage, qui entraîne la capture des valeurs minimale et maximale d’un compartiment donné et leur affichage, peut affecter la manière dont les info-bulles affichent les données quand vous placez le curseur sur les points de données. Pour expliquer comment et pourquoi cela se produit, revenons à notre exemple des cotations.
 
-Supposons que vous créez un visuel basé sur une cotation et que vous comparez deux cotations différentes, qui sont à l’aide de **échantillonnage à haute densité**. Les données sous-jacentes de chaque série comprennent un grand nombre de points de données (vous capturez peut-être la cotation à chaque seconde de la journée). L’algorithme d’échantillonnage de ligne à haute densité effectue un compartimentage pour chaque série indépendamment de l’autre.
+Supposons que vous créez un visuel basé sur une cotation et que vous comparez deux cotations différentes, toutes deux utilisant un **échantillonnage à haute densité**. Les données sous-jacentes de chaque série comprennent un grand nombre de points de données (vous capturez peut-être la cotation à chaque seconde de la journée). L’algorithme d’échantillonnage de ligne à haute densité effectue un compartimentage pour chaque série indépendamment de l’autre.
 
 À présent, supposons que la première cotation augmente fortement à 12h02, puis redescende rapidement dix secondes plus tard. Il s’agit là d’un point de données important. Lors du compartimentage pour cette cotation, la valeur haute enregistrée à 12 h 02 constitue un point de données représentatif pour cet emplacement.
 
@@ -76,14 +76,14 @@ Cependant, pour la deuxième cotation, 12h02 n’était ni un plus haut ni un pl
 Cette situation se produit souvent avec les info-bulles. Les valeurs haute et basse d’un emplacement donné peuvent ne pas correspondre parfaitement avec les points de valeur d’axe X échelonnés de façon uniforme, de sorte que l’info-bulle n’affiche pas la valeur.  
 
 ## <a name="how-to-turn-on-high-density-line-sampling"></a>Comment activer un échantillonnage de ligne à haute densité
-Par défaut, le nouvel algorithme est **activé**. Pour modifier ce paramètre, accédez à la **mise en forme** volet, dans le **général** carte et dans la partie inférieure, vous consultez un curseur bascule nommé **échantillonnage à haute densité**. Pour désactiver celui-ci, faites-le glisser en position **Désactivé**.
+Par défaut, le nouvel algorithme est **activé**. Pour modifier ce paramètre, accédez au volet **Mise en forme**, dans la carte **Général**. Dans la partie inférieure, vous pouvez voir un curseur bascule nommé **Échantillonnage à haute densité**. Pour désactiver celui-ci, faites-le glisser en position **Désactivé**.
 
 ![](media/desktop-high-density-sampling/high-density-sampling_02.png)
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 Le nouvel algorithme d’échantillonnage de ligne à haute densité constitue une amélioration importante apportée à Power BI. Vous devez cependant considérer certains points quand vous travaillez avec des valeurs et des données à haute densité.
 
-* En raison de la granularité accrue et du processus de compartimentage, les **info-bulles** ne peuvent afficher une valeur que si les données représentatives sont alignées sur votre curseur. Consultez le *info-bulles et échantillonnage de ligne à haute densité* dans cet article pour plus d’informations.
+* En raison de la granularité accrue et du processus de compartimentage, les **info-bulles** ne peuvent afficher une valeur que si les données représentatives sont alignées sur votre curseur. Pour plus d’informations, consultez la section *Info-bulles et échantillonnage de ligne à haute densité* de cet article.
 * Lorsque la taille d’une source de données globale est trop volumineuse, le nouvel algorithme élimine des séries (éléments de légende) pour respecter la contrainte d’importation maximale de données.
   
   * Dans ce cas, le nouvel algorithme trie les séries de légende par ordre alphabétique, commence au bas de la liste des éléments de légende dans l’ordre alphabétique jusqu’à ce que le maximum de données importées soit atteint, et n’importe alors plus d’autres séries.

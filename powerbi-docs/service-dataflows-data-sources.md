@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 09/20/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 81449d7a07bec3c142930573154ecd13a0ceff49
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d2ba4809ce5c6664350ec81b57b6fc717a13879f
+ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61141100"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71164545"
 ---
-# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Se connecter aux sources de données pour les flux de données Power BI
+# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Se connecter à des sources de données pour les dataflows Power BI
 
 Avec les dataflows Power BI, vous pouvez vous connecter à différentes sources de données pour créer de nouveaux dataflows ou ajouter de nouvelles entités à un dataflow existant.
 
 Cet article liste les nombreuses sources de données disponibles pour créer ou compléter des dataflows, puis explique comment créer ces dataflows à l’aide de ces sources de données.
 
-Pour une vue d’ensemble montrant comment créer et utiliser des flux de données, consultez [création et utilisation des flux de données dans Power BI](service-dataflows-create-use.md).
+Pour une vue d’ensemble de la création et de l’utilisation de dataflows, consultez [Création et utilisation de dataflows dans Power BI](service-dataflows-create-use.md).
 
 ## <a name="create-a-dataflow-from-a-data-source"></a>Créer un dataflow à partir d’une source de données
 
@@ -156,7 +156,6 @@ Votre script se connecte alors à la source de données que vous avez spécifié
 
 La liste suivante indique quels connecteurs vous pouvez actuellement utiliser en copiant et en collant la requête M dans une requête vide :
 
-* SAP Business Warehouse 
 * Azure Analysis Services
 * Adobe Analytics
 * ODBC
@@ -178,9 +177,9 @@ Cet article vous a montré à quelles sources de données vous pouvez vous conne
 
 * [Préparation des données en libre-service dans Power BI](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Utilisation d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 * [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 
 Pour plus d’informations sur Power Query et l’actualisation planifiée, vous pouvez consulter ces articles :

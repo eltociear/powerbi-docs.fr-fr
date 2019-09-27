@@ -12,16 +12,16 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 948ead2cfa551d6342f9bab87b281d9b6d1e15bc
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514127"
 ---
 # <a name="multi-select-data-elements-in-visuals-using-power-bi-desktop"></a>Multisélection d’éléments de données dans des visuels à l’aide de Power BI Desktop
 
-Dans Power BI Desktop, vous pouvez mettre en surbrillance un point de données dans un visuel spécifique en cliquant simplement sur le point de données dans le visuel. Par exemple, si votre diagramme à barres ou graphique comporte un élément important et que vous souhaitez que d’autres visuels de la page du rapport mettent en surbrillance des données en fonction de votre sélection, vous pouvez cliquer sur l’élément de données dans un visuel et afficher les résultats dans d’autres visuels sur la page. Il s’agit d’une mise en surbrillance de base ou à sélection unique. L’image suivante montre une mise en surbrillance de base. 
+Dans Power BI Desktop, vous pouvez mettre en surbrillance un point de données dans un visuel spécifique en cliquant simplement sur ce point de données dans le visuel. Par exemple, si votre diagramme à barres ou graphique comporte un élément important et que vous souhaitez que d’autres visuels de la page du rapport mettent en surbrillance des données en fonction de votre sélection, vous pouvez cliquer sur l’élément de données dans un visuel et afficher les résultats dans d’autres visuels sur la page. Il s’agit d’une mise en surbrillance de base ou à sélection unique. L’image suivante montre une mise en surbrillance de base. 
 
-![Point de données sélectionné](media/desktop-multi-select/multi-select_01.png)
+![Point de données unique sélectionné](media/desktop-multi-select/multi-select_01.png)
 
 La multisélection vous permet désormais de choisir plusieurs points de données dans votre page de rapport **Power BI Desktop** et de mettre en surbrillance les résultats dans l’ensemble des visuels de la page. Cela équivaut à exécuter une instruction **and** ou une fonctionnalité comme « mettre en surbrillance les résultats pour l’Idaho **et** la Virginie ». Pour sélectionner plusieurs points de données dans des visuels, utilisez la combinaison **CTRL + clic** pour choisir plusieurs points de données. L’illustration suivante montre **plusieurs points de données** sélectionnés (multisélection).
 

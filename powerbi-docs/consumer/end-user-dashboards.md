@@ -3,20 +3,19 @@ title: Qu’est un tableau de bord et comment l’ouvrir ?
 description: Les tableaux de bord sont une fonctionnalité clé du service Power BI.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cad6aeeb156534052241d5183a575b222736230a
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608338"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141924"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Tableau de bord pour les consommateurs du service Power BI
 
@@ -54,8 +53,8 @@ Les rapports sont souvent confondus avec les tableaux de bord, car il s’agit �
 | Possibilité d’afficher les tables et les champs sous-jacents d’un jeu de données |Non. Possibilité d’exporter les données, mais pas de voir les tables et les champs dans le tableau de bord. |Oui. Possibilité de voir les tables d’un jeu de données ainsi que les champs et les valeurs. |
 
 
-## <a name="dashboard-creators-and-dashboard-consumers"></a>Créateurs et utilisateurs de tableaux de bord
-En tant que ***consommateur*** Power BI, vous recevez des tableaux de bord de la part de *créateurs*. Continuez à découvrir les tableaux de bord avec les rubriques suivantes :
+## <a name="dashboard-designers-and-dashboard-consumers"></a>Concepteurs et utilisateurs de tableaux de bord
+En tant que ***consommateur*** Power BI, vous recevez des tableaux de bord de la part de *concepteurs*. Continuez à découvrir les tableaux de bord avec les rubriques suivantes :
 
 * [Afficher un tableau de bord](end-user-dashboard-open.md)
 * Apprenez-en plus sur les [vignettes du tableau de bord](end-user-tiles.md) et ce qui se produit lorsque vous sélectionnez une.

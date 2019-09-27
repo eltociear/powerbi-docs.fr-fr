@@ -4,24 +4,23 @@ description: Toutes les informations dont vous avez besoin sur les vignettes de 
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3a341dda238996db4953fa7c68d7053034ca40b8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 7e6d10a7a06c94c6bc00b06d38194dde461720be
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61050134"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142123"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Vignettes d’un tableau de bord dans Power BI
-Une vignette est une capture instantanée de vos données, épinglée au tableau de bord par un *concepteur*. Une vignette peut être créée à partir d’un rapport, d’un jeu de données, d’un tableau de bord, de la zone Questions et réponses, d’Excel et de SSRS (SQL Server Reporting Services), et plus encore.  Cette capture d’écran montre différentes vignettes épinglées à un tableau de bord.
+Une vignette est une capture instantanée de vos données, épinglée au tableau de bord par un *concepteur*. Les *concepteurs* peuvent créer des vignettes à partir d’un rapport, d’un jeu de données, d’un tableau de bord, de la zone Questions et réponses, d’Excel et de SSRS (SQL Server Reporting Services), et plus encore.  Cette capture d’écran montre différentes vignettes épinglées à un tableau de bord.
 
-![tableau de bord Power BI](./media/end-user-tiles/power-bi-dashboard.png)
+![tableau de bord Power BI](./media/end-user-tiles/power-bi-dash.png)
 
 
 En plus des vignettes épinglées à partir de rapports, les *concepteurs* peuvent ajouter des vignettes autonomes directement sur le tableau de bord à l’aide de l’option **Ajouter une vignette**. Les vignettes autonomes incluent des zones de texte, des images, des vidéos, des données de streaming et du contenu web.
@@ -38,15 +37,15 @@ Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consul
 
     - vignette créée à l’aide de Questions et réponses
    
-        ![icône des points de suspension](./media/end-user-tiles/power-bi-menu1.png)
+        ![icône des points de suspension](./media/end-user-tiles/power-bi-options-1.png)
 
     - vignette créée à partir d’un classeur
    
-        ![icône des points de suspension](./media/end-user-tiles/power-bi-menu2.png)
+        ![icône des points de suspension](./media/end-user-tiles/power-bi-options-2.png)
 
     - vignette créée à partir d’un rapport
    
-        ![icône des points de suspension](./media/end-user-tiles/power-bi-menu3.png)
+        ![icône des points de suspension](./media/end-user-tiles/power-bi-options-3.png)
    
     Vous pouvez ici :
    
@@ -56,9 +55,12 @@ Vous avez du mal à comprendre les éléments qui composent Power BI ?  Consul
    
 
    * [Ouvrir le classeur utilisé pour créer cette vignette ](end-user-reports.md) ![icône de classeur](./media/end-user-tiles/power-bi-open-worksheet.png)  
-    * [Afficher la vignette en mode focus](end-user-focus.md) ![icône de focus](./media/end-user-tiles/fullscreen-icon.jpg)  
-     * [Exécuter Insights ](end-user-insights.md) ![icône insights](./media/end-user-tiles/power-bi-insights.png)
-    * [Ajouter un commentaire et démarrer une discussion](end-user-comment.md) ![icône de commentaire](./media/end-user-tiles/comment-icons.png)
+   * [Afficher la vignette en mode focus](end-user-focus.md) ![icône de focus](./media/end-user-tiles/fullscreen-icon.jpg)  
+   * [Voir insights ](end-user-insights.md) ![icône insights](./media/end-user-tiles/power-bi-insights.png)
+   * [Ajouter un commentaire et démarrer une discussion](end-user-comment.md) ![icône de commentaire](./media/end-user-tiles/comment-icons.png)
+   * [Gérer les alertes définies sur une vignette de tableau de bord](end-user-alerts.md)  ![icône d’alerte](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [Ouvrir les données dans Excel](end-user-export.md)  ![icône d’exportation](./media/end-user-tiles/power-bi-export-icon.png)
+
 
 3. Pour fermer le menu d’actions, sélectionnez une zone vide dans la zone de dessin.
 

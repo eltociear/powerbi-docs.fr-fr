@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: e30a79796fd4d5538406a85a3297a23b2c09a61a
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d21199d8960df4db5027115704533bd3d5d8097c
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751406"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142258"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Résolution des problèmes liés aux valeurs imbriquées retournées sous forme de texte dans le service Power BI
 
 ## <a name="cause"></a>Cause
 
-Avant, il pouvait arriver qu’un rapport Power BI s’actualise correctement dans Desktop, mais échoue dans le service Power BI avec une erreur telle que « Nous ne pouvons pas convertir la valeur « [Tableau] » en type Tableau ». Une des causes de cette erreur : quand le pare-feu de confidentialité des données (lien ici ?) met en mémoire tampon une source de données, des valeurs non scalaires imbriquées (comme des tableaux, des enregistrements, des listes et des fonctions) sont automatiquement converties en valeurs texte (comme « [Tableau] » ou « [Enregistrement] »).
+Avant, il pouvait arriver qu’un rapport Power BI s’actualise correctement dans Desktop, mais échoue dans le service Power BI avec une erreur telle que « Nous ne pouvons pas convertir la valeur « [Tableau] » en type Tableau ». Une des causes de cette erreur : quand le pare-feu de confidentialité des données met en mémoire tampon une source de données, des valeurs non scalaires imbriquées (comme des tableaux, des enregistrements, des listes et des fonctions) sont automatiquement converties en valeurs texte (comme « [Tableau] » ou « [Enregistrement] »).
 
 Maintenant que le service Power BI prend en charge la définition des niveaux de confidentialité (ou la désactivation totale du pare-feu), ces erreurs peuvent être évitées en [configurant les paramètres de confidentialité de la source de données](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) dans le service Power BI pour qu’ils soient non privés.
 

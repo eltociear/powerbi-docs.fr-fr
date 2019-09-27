@@ -1,6 +1,6 @@
 ---
-title: 'Erreur : Nous n’avons pas pu trouver des données dans votre classeur Excel'
-description: 'Erreur : Nous n’avons pas pu trouver des données dans votre classeur Excel'
+title: 'Erreur : Impossible de trouver des données dans votre classeur Excel'
+description: 'Erreur : Impossible de trouver des données dans votre classeur Excel'
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -13,19 +13,19 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65101466"
 ---
-# <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Erreur : Nous n’avons pas pu trouver des données dans votre classeur Excel
+# <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Erreur : Impossible de trouver des données dans votre classeur Excel
 
 >[!NOTE]  
 >Cet article s’applique à Excel 2007 et versions ultérieures.
 
 Quand vous importez un classeur Excel dans Power BI, l’erreur suivante peut s’afficher :
 
-*Erreur : Nous n’avons pas pu trouver des données sous formatées de tableau. Pour importer à partir d’Excel dans le service Power BI, vous devez mettre en forme les données sous forme de table. Sélectionnez toutes les données que vous voulez dans le tableau et appuyez sur Ctrl + T.*
+*Erreur : Nous n’avons trouvé aucune donnée sous forme de tableau. Pour importer à partir d’Excel dans le service Power BI, vous devez mettre en forme les données en tant que tableau. Sélectionnez toutes les données souhaitées dans la table et appuyez sur Ctrl + T.*
 
 ![Impossible de trouver des données dans le classeur](media/service-admin-troubleshoot-excel-workbook-data/power-bi-we-couldnt-find-any-data.png)
 

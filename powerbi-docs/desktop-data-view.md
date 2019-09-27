@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 567beb29ecdcaf8a07023c8c8c9b32995623534c
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454456"
@@ -28,7 +28,7 @@ Regardons de plus près certains des éléments trouvés dans la **vue Données*
 
 1. **Icône de la vue Données** : Sélectionnez cette icône pour accéder à la vue Données.
 
-2. **Grille de données** : Montre la table sélectionnée et toutes les colonnes et les lignes qu’elle contient. Les colonnes masquées dans la **vue Rapport** sont grisées. Vous pouvez avec le bouton droit sur une colonne pour les options.
+2. **Grille de données** : Montre la table sélectionnée et toutes les colonnes et les lignes qu’elle contient. Les colonnes masquées dans la **vue Rapport** sont grisées. Vous pouvez cliquer avec le bouton droit sur une colonne pour afficher des options.
 
 3. **Ruban de modélisation** : Ici, vous pouvez gérer les relations, créer des calculs, changer le type de données, le format ou la catégorie de données d’une colonne.
 

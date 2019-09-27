@@ -1,6 +1,6 @@
 ---
 title: Machine Learning automatisé dans Power BI (préversion)
-description: Découvrez comment utiliser l’apprentissage automatique (AutoML) dans Power BI
+description: Découvrez comment utiliser le Machine Learning automatisé (AutoML) dans Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -12,271 +12,271 @@ ms.author: davidi
 LocalizationGroup: conceptual
 ms.openlocfilehash: 894e92687a6283ce71b253bd4dc635aca0c4673f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61236447"
 ---
 # <a name="automated-machine-learning-in-power-bi-preview"></a>Machine Learning automatisé dans Power BI (préversion)
 
-Automatisés apprentissage automatique (AutoML) pour les flux de données permet des analystes d’entreprise former, valider et appeler des modèles de Machine Learning directement dans Power BI. Il inclut une expérience simple pour la création d’un modèle ML où les analystes peuvent utiliser leurs flux de données pour spécifier les données d’apprentissage du modèle d’entrée. Le service extrait automatiquement les fonctionnalités les plus pertinents, sélectionne un algorithme approprié et ajuste et valide le modèle ML. Une fois un modèle est formé, Power BI génère automatiquement un rapport qui inclut les résultats de validation qui explique les performances et résultats pour les analystes. Le modèle peut ensuite être appelé sur n’importe quel nouveau ou mis à jour les données dans le flux de données.
+Le Machine Learning automatisé (AutoML) pour les dataflows permet aux analystes d’entreprise de former, valider et appeler des modèles Machine Learning directement dans Power BI. Il offre une expérience simple pour la création d’un nouveau modèle Machine Learning dans lequel les analystes peuvent utiliser leurs dataflows pour spécifier les données d’entrée pour effectuer l’apprentissage du modèle. Le service extrait automatiquement les fonctionnalités les plus pertinentes, sélectionne un algorithme approprié et règle et valide le modèle Machine Learning. Après l’apprentissage d’un modèle, Power BI génère automatiquement un rapport qui comprend les résultats de la validation et explique les performances et résultats aux analystes. Le modèle peut ensuite être appelé sur toutes les données nouvelles ou mises à jour dans le dataflow.
 
-![Écran machine learning](media/service-machine-learning-automated/automated-machine-learning-power-bi-01.png)
+![Écran de Machine Learning](media/service-machine-learning-automated/automated-machine-learning-power-bi-01.png)
 
-Apprentissage automatique est disponible pour les flux de données qui sont hébergés sur les capacités Power BI Premium et incorporé uniquement. Dans cette version préliminaire, AutoML vous permet de former des modèles d’apprentissage automatique pour les modèles de régression, la Classification et prédiction binaire.
+Le Machine Learning automatisé est disponible pour les dataflows hébergés sur les capacités Power BI Premium et Embedded uniquement. Dans cette préversion, AutoML vous permet d’effectuer l’apprentissage des modèles Machine Learning pour les modèles de prédiction binaire, de classification et de régression.
 
-## <a name="working-with-automl"></a>Utilisation de AutoML
+## <a name="working-with-automl"></a>Utilisation d’AutoML
 
-[Power BI de flux de données](service-dataflows-overview.md) offrent la préparation des données en libre-service pour les données volumineuses. AutoML vous permet de tirer parti de votre effort de préparation des données pour la création de modèles d’apprentissage automatique, directement dans Power BI.
+Les [dataflows de Power BI](service-dataflows-overview.md) offrent une préparation des données en libre-service pour le Big Data. AutoML vous permet de tirer parti de votre effort de préparation des données pour créer des modèles Machine Learning directement dans Power BI.
 
-AutoML dans Power BI permet à des analystes de données à utiliser des flux de données pour créer des modèles d’apprentissage automatique avec une expérience simplifiée, en utilisant simplement les compétences de Power BI. La majeure partie de la science des données derrière la création des modèles ML est automatisé par Power BI, avec guardrails pour vous assurer que le modèle généré a bonne qualité et la visibilité de vous fournir un aperçu complet du processus utilisé pour créer votre modèle ML.
+AutoML dans Power BI permet aux analystes de données d’utiliser les dataflows pour créer des modèles Machine Learning avec une expérience simplifiée, en utilisant uniquement des compétences Power BI. La majeure partie de la science des données derrière la création des modèles Machine Learning est automatisée par Power BI, avec des contrôles pour s’assurer que le modèle produit présente une bonne qualité et une visibilité suffisante pour vous fournir une vue d’ensemble du processus utilisé pour créer votre modèle Machine Learning.
 
-AutoML prend en charge la création de **prédiction binaire**, **Classification**, et **régression** modèles de flux de données. Il s’agit des types de modèles d’apprentissage automatique supervisé, ce qui signifie qu’ils apprennent à partir des résultats connus d’observations passées pour prévoir les résultats d’autres observations. Le jeu de données d’entrée pour l’apprentissage d’un modèle AutoML est un jeu d’enregistrements qui sont **intitulé** avec les résultats connus.
+AutoML prend en charge la création de modèles de **Prédiction binaire**, de **Classification** et de **Régression** pour les dataflows. Il s’agit de types de modèles Machine Learning supervisés, ce qui signifie qu’ils apprennent des résultats connus à partir d’observations passées pour prédire les résultats d’autres observations. Le jeu de données d’entrée pour effectuer l'apprentissage d’un modèle AutoML est un ensemble d’enregistrements **étiquetés** avec les résultats connus.
 
-AutoML dans Power BI s’intègre [automatisée ML](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) à partir de la [service Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) pour créer vos modèles ML. Toutefois, vous n’avez pas besoin d’abonnement Azure à utiliser AutoML dans Power BI. Le processus de formation et les modèles ML d’hébergement est géré entièrement par le service Power BI.
+AutoML dans Power BI intègre le [Machine Learning automatisé](https://docs.microsoft.com/azure/machine-learning/service/concept-automated-ml) du [service Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/overview-what-is-azure-ml) pour créer vos modèles Machine Learning. Toutefois, vous n’avez pas besoin d’un abonnement Azure pour utiliser AutoML dans Power BI. Le processus de formation et d’hébergement des modèles Machine Learning est géré entièrement par le service Power BI.
 
-Une fois un modèle ML est formé, AutoML génère automatiquement un rapport Power BI qui explique la performance probable de votre modèle ML. AutoML met l’accent sur explainability, mettez en surbrillance les facteurs d’influence clés parmi vos entrées qui influencent les prédictions retournées par votre modèle. Le rapport inclut également des mesures clés pour le modèle, en fonction du type de modèle ML.
+Après l’apprentissage d’un modèle Machine Learning, AutoML génère automatiquement un rapport Power BI qui explique les performances probables de votre modèle Machine Learning. AutoML met l’accent sur la facilité d’explication, en mettant en évidence les facteurs d’influence clés parmi les entrées qui influencent les prédictions renvoyées par votre modèle. Le rapport comprend également des métriques clés pour le modèle, en fonction du type de modèle Machine Learning.
 
-Autres pages du rapport généré affichent le résumé statistique du modèle et les détails de la formation. Le résumé statistique présente un intérêt pour les utilisateurs qui souhaitent voir les mesures de science des données standard des performances pour le modèle. Les détails de la formation synthétiser toutes les itérations qui ont été exécutées pour créer votre modèle, avec les paramètres de modélisation associé. Elle décrit également comment chaque entrée a été utilisée pour créer le modèle ML.
+D’autres pages du rapport généré affichent le résumé statistique du modèle et les détails de la formation. Le résumé statistique présente un intérêt pour les utilisateurs qui souhaitent voir les mesures de performance de la science des données standard pour le modèle. Les détails de la formation résument toutes les itérations exécutées pour créer votre modèle, avec les paramètres de modélisation associés. Ils décrivent également comment chaque entrée a été utilisée pour créer le modèle Machine Learning.
 
-Vous pouvez ensuite appliquer votre modèle ML à vos données pour calculer les scores. Lorsque le flux de données est actualisée, les prédictions à partir de votre modèle ML sont automatiquement appliquées à vos données. Power BI inclut également une explication individualisée pour chaque score de prédiction spécifique qui génère le modèle ML.
+Vous pouvez ensuite appliquer votre modèle Machine Learning à vos données pour scoring. Lorsque le dataflow est actualisé, les prédictions de votre modèle Machine Learning sont automatiquement appliquées à vos données. Power BI comprend également une explication individualisée pour chaque score de prédiction spécifique produit par le modèle Machine Learning.
 
-## <a name="creating-a-machine-learning-model"></a>Création d’un modèle d’apprentissage automatique
+## <a name="creating-a-machine-learning-model"></a>Créer un modèle Machine Learning
 
-Cette section décrit comment créer un modèle d’apprentissage automatique AutoML. 
+Cette section décrit comment créer un modèle d’apprentissage AutoML. 
 
-### <a name="data-prep-for-creating-an-ml-model"></a>Préparation des données pour la création d’un modèle ML
+### <a name="data-prep-for-creating-an-ml-model"></a>Préparation des données pour la création d’un modèle Machine Learning
 
-Pour créer un modèle d’apprentissage automatique dans Power BI, vous devez d’abord créer un flux de données pour les données avec les informations d’historique de résultat, qui sont utilisées pour l’apprentissage du modèle ML. Pour plus d’informations sur la configuration de votre flux de données, consultez [de préparation des données en libre-service dans Power BI](service-dataflows-overview.md).
+Pour créer un modèle Machine Learning dans Power BI, vous devez d’abord créer un dataflow pour les données avec les informations d’historique des résultats, qui sont utilisées pour effectuer l'apprentissage du modèle ML. Pour plus d’informations sur la configuration de vos dataflows, consultez [Préparation des données en libre-service dans Power BI](service-dataflows-overview.md).
 
-Dans la version actuelle, Power BI utilise des données à partir d’une seule entité pour former le modèle ML. Par conséquent, si vos données d’historique se composent de plusieurs entités, vous devez joindre manuellement les données dans une entité de flux de données unique. Vous devez également ajouter des colonnes calculées pour les métriques d’entreprise qui peuvent être PRÉDICTEURS forts pour le résultat que vous tentez de prédire.
+Dans la version actuelle, Power BI utilise les données d’une seule entité pour effectuer l'apprentissage du modèle ML. Par conséquent, si vos données d’historique se composent de plusieurs entités, vous devez joindre manuellement les données dans une entité de dataflow unique. Vous devez également ajouter des colonnes calculées pour toutes les métriques commerciales qui peuvent être des éléments de prédiction forts pour les résultats que vous essayez de prédire.
 
-AutoML a des exigences de données spécifiques pour l’apprentissage d’un modèle d’apprentissage. Ces exigences sont décrites dans les sections ci-dessous, selon les types de modèle en question.
+AutoML a des exigences spécifiques en matière de données pour la formation d’un modèle Machine Learning. Ces exigences sont décrites dans les sections ci-dessous, en fonction des types de modèle respectifs.
 
-### <a name="configuring-the-ml-model-inputs"></a>Configurer les entrées de modèle ML
+### <a name="configuring-the-ml-model-inputs"></a>Configuration des entrées du modèle Machine Learning
 
-Pour créer un modèle AutoML, sélectionnez l’icône de ML dans le **Actions** colonne de l’entité de flux de données avec les données d’historique, puis sélectionnez **ajouter un modèle machine learning**.
+Pour créer un modèle AutoML, sélectionnez l’icône ML dans la colonne **Actions** de l’entité de dataflow avec les données historiques, puis sélectionnez **Ajouter un modèle Machine Learning**.
 
-![Ajouter un modèle d’apprentissage automatique](media/service-machine-learning-automated/automated-machine-learning-power-bi-02.png)
+![Ajouter un modèle Machine Learning](media/service-machine-learning-automated/automated-machine-learning-power-bi-02.png)
 
-Une expérience simplifiée est lancée, consistant en un Assistant qui vous guide à travers le processus de création du modèle ML. L’Assistant inclut les étapes suivantes.
+Une expérience simplifiée est lancée, composée d’un assistant qui vous guide tout au long du processus de création du modèle Machine Learning. L’assistant comprend les étapes simples suivantes.
 
-1. Sélectionnez l’entité avec les données d’historique de résultat et le champ pour lequel vous souhaitez une prédiction
-2. Choisissez un type de modèle en fonction du type de prédiction que vous aimeriez voir
-3. Sélectionnez les entrées que vous souhaitez que le modèle à utiliser comme signaux prédictives
-4. Nommez votre modèle et enregistrer votre configuration
+1. Sélectionnez l’entité avec les données de résultat historiques et le champ pour lequel vous souhaitez une prédiction
+2. Choisissez un type de modèle en fonction du type de prédiction que vous souhaitez afficher
+3. Sélectionnez les entrées que vous souhaitez que le modèle utilise comme signaux prédictifs
+4. Nommez votre modèle et enregistrez votre configuration
 
-Le champ de résultat historiques identifie l’attribut label d’apprentissage du modèle ML, illustré dans l’image suivante.
+Le champ de résultats historiques identifie l’attribut d’étiquette pour la formation du modèle Machine Learning, comme illustré dans l’image suivante.
 
-![Sélectionnez les données d’historique de résultat](media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png)
+![Sélectionner les données de résultat historiques](media/service-machine-learning-automated/automated-machine-learning-power-bi-03.png)
 
-Lorsque vous spécifiez le champ de résultat historiques, AutoML analyse les données d’étiquette pour identifier les types de modèles ML qui peuvent être formés pour ces données et suggère le type de modèle ML probablement qui permettre être formé. 
+Lorsque vous spécifiez le champ de résultats historiques, AutoML analyse les données d’étiquette pour identifier les types de modèles Machine Learning qui peuvent être formés pour ces données, et suggère le type de modèle Machine Learning le plus probable qui peut être formé. 
 
 > [!NOTE]
-> Certains types de modèle ne peuvent pas pris en charge pour les données que vous avez sélectionné.
+> Certains types de modèles peuvent ne pas être pris en charge pour les données que vous avez sélectionnées.
 
-AutoML analyse également tous les champs dans l’entité sélectionnée pour suggérer des entrées qui peuvent être utilisées pour l’apprentissage du modèle ML. Ce processus est approximatif et repose sur l’analyse statistique, donc vous devez examiner les entrées utilisées. Toutes les entrées qui sont dépendantes sur le champ Historique de résultat (ou le champ d’étiquette) ne doivent pas servir pour l’apprentissage du modèle ML, dans la mesure où ils affectent les performances.
+AutoML analyse également tous les champs de l’entité sélectionnée pour suggérer les entrées qui peuvent être utilisées pour effectuer l'apprentissage du modèle Machine Learning. Ce processus est approximatif et repose sur une analyse statistique. Vous devez donc passer en revue les entrées utilisées. Toutes les entrées dépendantes du champ de résultats historiques (ou du champ d’étiquette) ne doivent pas être utilisées pour effectuer l'apprentissage du modèle Machine Learning, car elles affectent les performances.
 
 ![Personnaliser les champs d’entrée](media/service-machine-learning-automated/automated-machine-learning-power-bi-04.png)
 
 Dans la dernière étape, vous pouvez nommer le modèle et enregistrer ses paramètres.
 
-À ce stade, vous êtes invité à actualiser le flux de données, qui commence le processus d’apprentissage pour le modèle ML.
+À ce stade, vous êtes invité à actualiser le dataflow, qui commence le processus d’apprentissage pour le modèle ML.
 
-### <a name="ml-model-training"></a>Apprentissage du modèle ML
+### <a name="ml-model-training"></a>Formation du modèle Machine Learning
 
-Apprentissage des modèles de AutoML fait partie de l’actualisation de flux de données. AutoML commence par préparer vos données pour l’apprentissage.
+La formation des modèles AutoML fait partie de l’actualisation du dataflow. AutoML prépare tout d’abord vos données pour l’apprentissage.
 
-AutoML fractionne les données historiques que vous fournissez en une formation et de jeux de données de test. Le jeu de données de test est un jeu d’exclusion qui est utilisé pour valider les performances du modèle après la formation. Ceux-ci sont réalisés en tant que **apprentissage et de test** entités dans le flux de données. AutoML utilise la validation croisée pour la validation du modèle.
+AutoML fractionne les données historiques que vous fournissez dans les jeux de données d’apprentissage et de test. Le jeu de données de test est un ensemble de données d’exclusion utilisé pour valider les performances du modèle après l’apprentissage. Il se présente sous la forme d’entités **Apprentissage et test** dans le dataflow. AutoML utilise la validation croisée pour la validation du modèle.
 
-Ensuite, chaque champ d’entrée est analysé et imputation est appliquée, ce qui remplace des valeurs manquantes par des valeurs substituées. Deux stratégies d’imputation différentes sont utilisées par AutoML. Ensuite, n’importe quel échantillonnage requis et la normalisation sont appliquées à vos données.
+Ensuite, chaque champ d’entrée est analysé et l’imputation est appliquée, ce qui remplace toutes les valeurs manquantes par des valeurs substituées. Plusieurs stratégies d’imputation sont utilisées par AutoML. Ensuite, l’échantillonnage et la normalisation requis sont appliqués à vos données.
 
-AutoML s’applique à plusieurs transformations sont chaque champ d’entrée sélectionné en fonction de son type de données et ses propriétés de statistiques. AutoML utilise ces transformations pour extraire des fonctionnalités pour une utilisation dans l’apprentissage votre modèle ML.
+AutoML applique plusieurs transformations. Chaque champ d’entrée est sélectionné en fonction de son type de données et de ses propriétés statistiques. AutoML utilise ces transformations pour extraire les fonctionnalités à utiliser lors de la formation de votre modèle Machine Learning.
 
-Le processus d’apprentissage pour les modèles AutoML se compose d’itérations jusqu'à 50 avec modélisation différents algorithmes et les paramètres d’hyperparamètres pour découvrir le modèle avec les meilleures performances. Les performances de chacun de ces modèles sont évalué par la validation avec le jeu de données de test d’exclusion. Pendant cette étape de la formation, AutoML crée plusieurs pipelines pour l’apprentissage et de validation de ces itérations. Le processus consistant à évaluer les performances des modèles peut prendre le temps, en tout lieu de plusieurs minutes à quelques heures, selon la taille de votre jeu de données et les ressources de capacité dédiée disponibles.
+Le processus d’apprentissage pour les modèles AutoML se compose de jusqu’à 50 itérations avec différents algorithmes de modélisation et des paramètres d’hyperparamètre pour trouver le modèle avec les meilleures performances. Les performances de chacun de ces modèles sont évaluées par la validation avec le jeu de données d’exclusion de test. Au cours de cette étape de formation, AutoML crée plusieurs pipelines pour effectuer l'apprentissage et la validation de ces itérations. Le processus d’évaluation des performances des modèles peut prendre du temps, entre quelques minutes et quelques heures, en fonction de la taille de votre jeu de données et des ressources de capacité dédiées disponibles.
 
-Dans certains cas, le modèle final généré peut utiliser ensemble d’apprentissage, où plusieurs modèles sont utilisés pour fournir des performances de prédiction mieux.
+Dans certains cas, le modèle final généré peut utiliser l’apprentissage conjoint, où plusieurs modèles sont utilisés pour fournir de meilleures performances prédictives.
 
-### <a name="automl-model-explainability"></a>Explainability de modèle AutoML
+### <a name="automl-model-explainability"></a>Facilité d’explication du modèle AutoML
 
-Une fois que le modèle a été formé, AutoML analyse la relation entre les fonctionnalités d’entrée et la sortie du modèle. Il évalue la magnitude et le sens de modification à la sortie de modèle pour le jeu de données de test d’exclusion pour chaque fonctionnalité d’entrée. Il s’agit du *feature importance*.
+Une fois le modèle formé, AutoML analyse la relation entre les fonctionnalités d’entrée et la sortie du modèle. Elle évalue l’amplitude et la direction de la modification apportée à la sortie du modèle pour le jeu de données d’exclusion de test pour chaque fonctionnalité d’entrée. C’est ce que l’on appelle *l’Importance de la fonctionnalité*.
 
-![Importance de fonctionnalité](media/service-machine-learning-automated/automated-machine-learning-power-bi-05.png)
+![Importance de la fonctionnalité](media/service-machine-learning-automated/automated-machine-learning-power-bi-05.png)
 
-### <a name="automl-model-report"></a>Rapport de modèle AutoML
+### <a name="automl-model-report"></a>Rapport sur le modèle AutoML
 
-AutoML génère un rapport Power BI qui résume les performances du modèle pendant la validation, ainsi que l’importance de fonctionnalité globale. Le rapport récapitule les résultats à partir d’appliquer le modèle ML pour les données de test d’exclusion et en comparant les prédictions avec les valeurs de résultat connus.
+AutoML génère un rapport Power BI qui résume les performances du modèle pendant la validation, ainsi que l’importance globale des fonctionnalités. Le rapport résume les résultats de l’application du modèle Machine Learning aux données d’exclusion de test et de la comparaison des prédictions avec les valeurs de résultat connues.
 
-Vous pouvez consulter le rapport de modèle pour comprendre ses performances. Vous pouvez également valider que les facteurs d’influence clés du modèle s’aligner avec les informations d’entreprise sur les résultats connus.
+Vous pouvez consulter le rapport de modèle pour comprendre ses performances. Vous pouvez également vérifier que les influenceurs clés du modèle s’alignent sur les insights métier sur les résultats connus.
 
-Les graphiques et les mesures utilisées pour décrire les performances du modèle dans le rapport dépendent du type de modèle. Ces graphiques de performances et les mesures sont décrits dans les sections suivantes.
+Les graphiques et mesures utilisés pour décrire les performances du modèle dans le rapport varient selon le type de modèle. Ces graphiques et mesures de performance sont décrits dans les sections suivantes.
 
-Les pages supplémentaires dans le rapport peuvent décrire des mesures statistiques relatives au modèle à partir d’une perspective de science des données. Par exemple, le **prédiction binaire** rapport inclut un graphique de gain et de la courbe ROC pour le modèle.
+Des pages supplémentaires dans le rapport peuvent décrire des mesures statistiques sur le modèle du point de vue de la science des données. Par exemple, le rapport **Prédiction binaire** comprend un graphique de gain et la courbe ROC pour le modèle.
 
-Ces rapports incluent également un **détails de la formation** page qui inclut une description de la façon dont le modèle a été formé et inclut un graphique décrivant les performances du modèle sur chacune des itérations s’exécute.
+Les rapports incluent également une page **Détails de l’entraînement** qui inclut une description de la façon dont le modèle a été formé et inclut un graphique décrivant les performances du modèle sur chacune des itérations exécutées.
 
 ![Détails de l’entraînement](media/service-machine-learning-automated/automated-machine-learning-power-bi-06.png)
 
-Une autre section de cette page décrit comment la méthode d’imputation utilisé pour remplir les valeurs manquantes pour les champs d’entrée, ainsi que la manière dont chaque champ d’entrée a été transformé pour extraire les fonctionnalités utilisées dans le modèle. Il inclut également les paramètres utilisés par le modèle final.
+Une autre section de cette page décrit comment la méthode d’imputation a été utilisée pour remplir les valeurs manquantes pour les champs d’entrée, ainsi que la façon dont chaque champ d’entrée a été transformé pour extraire les fonctionnalités utilisées dans le modèle. Elle comprend également les paramètres utilisés par le modèle final.
 
-![Plus d’informations pour le modèle](media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png)
+![Plus d’informations sur le modèle](media/service-machine-learning-automated/automated-machine-learning-power-bi-07.png)
 
-Si le modèle de produit utilise l’apprentissage d’ensemble, puis le **détails de la formation** page inclut également une section décrivant le poids de chaque modèle constitutif dans l’ensemble, ainsi que ses paramètres.
+Si le modèle produit utilise l’apprentissage conjoint, la page **Détails de formation** comprend également une section décrivant le poids de chaque modèle constitutif dans l’ensemble, ainsi que ses paramètres.
 
-![Dans l’ensemble de poids](media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png)
+![Poids dans l’ensemble](media/service-machine-learning-automated/automated-machine-learning-power-bi-08.png)
 
-## <a name="applying-the-automl-model"></a>Appliquer le modèle AutoML
+## <a name="applying-the-automl-model"></a>Application du modèle AutoML
 
-Si vous êtes satisfait des performances du modèle ML créé, vous pouvez l’appliquer aux données nouvelle ou mise à jour lorsque votre flux de données est actualisé. Faire cela dans le rapport de modèle, en sélectionnant le **appliquer** bouton dans l’angle supérieur droit.
+Si vous êtes satisfait des performances du modèle Machine Learning créé, vous pouvez l’appliquer à des données nouvelles ou mises à jour lorsque votre dataflow est actualisé. Vous pouvez le faire à partir du rapport de modèle, en sélectionnant le bouton **Appliquer** dans le coin supérieur droit.
 
-Pour appliquer le modèle ML, vous devez spécifier le nom de l’entité à laquelle il doit être appliqué et un préfixe pour les colonnes qui seront ajoutés à cette entité pour la sortie du modèle. Le préfixe par défaut pour les noms de colonne est le nom du modèle. Le *appliquer* fonction peut inclure des paramètres supplémentaires spécifiques au type de modèle.
+Pour appliquer le modèle Machine Learning, vous devez spécifier le nom de l’entité à laquelle il doit être appliqué et un préfixe pour les colonnes qui seront ajoutées à cette entité pour la sortie du modèle. Le préfixe par défaut des noms de colonne est le nom du modèle. La fonction *Appliquer* peut inclure des paramètres supplémentaires spécifiques au type de modèle.
 
-Appliquer le modèle ML crée une nouvelle entité de flux de données avec le suffixe **enrichi < model_name >** . Par exemple, si vous appliquez le _PurchaseIntent_ modèle pour le _OnlineShoppers_ entité, génère la sortie le **OnlineShoppers enrichi PurchaseIntent**.
+L’application du modèle Machine Learning crée une entité de dataflow avec le suffixe **enriched <nom_modèle>** . Par exemple, si vous appliquez le modèle _PurchaseIntent_ à l’entité _OnlineShoppers_, la sortie génère **PurchaseIntent enriched OnlineShoppers**.
 
-Actuellement, l’entité de sortie ne peut pas être utilisée pour afficher un aperçu les résultats du modèle ML dans l’éditeur Power Query. Les colonnes de sortie affichent toujours null comme résultat. Pour afficher les résultats, une seconde sortie entité avec le suffixe **enrichi < model_name > Aperçu** est créé lorsque le modèle est appliqué.
+Actuellement, l’entité de sortie ne peut pas être utilisée pour afficher un aperçu des résultats du modèle Machine Learning dans l’éditeur Power Query. Les colonnes de sortie affichent toujours la valeur null comme résultat. Pour afficher les résultats, une deuxième entité de sortie avec le suffixe **<nom_modèle> Preview** est créée lorsque le modèle est appliqué.
 
-Vous devez actualiser le flux de données, pour afficher un aperçu des résultats dans l’éditeur de requête.
+Vous devez actualiser le dataflow pour afficher un aperçu des résultats dans l’éditeur de requête.
 
 ![Éditeur de requête](media/service-machine-learning-automated/automated-machine-learning-power-bi-09.png)
 
-Lorsque vous appliquez le modèle, AutoML conserve toujours les prévisions à jour lorsque le flux de données est actualisé.
+Lorsque vous appliquez le modèle, AutoML garde toujours vos prédictions à jour lorsque le dataflow est actualisé.
 
-AutoML inclut également une explication individualisée pour chaque ligne qui il évalue dans l’entité de sortie.
+AutoML comprend également une explication individualisée pour chaque ligne qu’il note dans l’entité de sortie.
 
-Pour utiliser les informations et les prédictions du modèle ML dans un rapport Power BI, vous pouvez vous connecter à l’entité de sortie à partir de Power BI Desktop à l’aide de la **flux de données** connecteur.
+Pour utiliser les insights et prédictions du modèle Machine Learning dans un rapport Power BI, vous pouvez vous connecter à l’entité de sortie à partir de Power BI Desktop avec le connecteur de **dataflows**.
 
 ## <a name="binary-prediction-models"></a>Modèles de prédiction binaire
 
-Modèles de prédiction binaire, plus communément appelé **modèles de classification binaire**, sont utilisés pour classer un jeu de données en deux groupes. Elles sont utilisées pour prédire les événements qui peuvent avoir un résultat binaire, tels que si une opportunité de vente convertira, si un compte sera d’activité, si une facture sur la durée ; Indique si une transaction est frauduleux et ainsi de suite.
+Les modèles de prédiction binaire, plus connus sous le nom de **modèles de classification binaire**, sont utilisés pour classer un jeu de données en deux groupes. Ils sont utilisés pour prédire les événements qui peuvent avoir un résultat binaire, par exemple si une opportunité de vente sera convertie, si un client ne renouvellera pas, si une facture sera payée à temps, si une transaction sera frauduleuse, et ainsi de suite.
 
-Étant donné que le résultat est binaire, Power BI attend l’étiquette pour un modèle de prédiction binaire soit un booléen, avec les résultats connus en cours intitulé **true** ou **false**. Par exemple, dans un modèle de conversion opportunité de vente, les opportunités de ventes conclues sont étiquetées trues, ceux qui ont été perdus sont false, et les opportunités de ventes ouvertes sont étiquetées null.
+Étant donné que le résultat est binaire, Power BI s’attend à ce que l’étiquette d’un modèle de prédiction binaire soit une valeur booléenne, avec des résultats connus étiquetés **true** ou **false**. Par exemple, dans un modèle de conversion d’opportunité de vente, les opportunités de vente qui ont été remportées sont étiquetées true, celles qui ont été perdues false, et celles qui sont encore ouvertes null.
 
-La sortie d’un modèle de prédiction binaire est un score de probabilité, qui identifie la probabilité que le résultat correspondant à la valeur d’étiquette ayant pour valeur true sera obtenu.
+La sortie d’un modèle de prédiction binaire est un score de probabilité, qui identifie la probabilité que le résultat correspondant à la valeur de l’étiquette soit vrai.
 
 ### <a name="training-a-binary-prediction-model"></a>Apprentissage d’un modèle de prédiction binaire
 
-Pour créer un modèle de prédiction binaire, l’entité d’entrée qui contient vos données d’apprentissage doit avoir un champ booléen en tant que le champ de résultat historiques pour identifier les derniers résultats connus.
+Pour créer un modèle de prédiction binaire, l’entité d’entrée contenant vos données d’apprentissage doit avoir un champ booléen comme champ de résultat historique pour identifier les résultats connus passés.
 
 Conditions préalables :
 
-* Un champ booléen doit être utilisé en tant que le champ de résultat historiques
-* Un minimum de 50 lignes de données historiques sont nécessaires pour chaque classe de résultats
+* Un champ booléen doit être utilisé comme champ de résultat historique
+* Au moins 50 lignes de données d’historique sont requises pour chaque classe de résultats
 
-En règle générale, si les derniers résultats sont identifiés par les champs d’un type de données différent, vous pouvez ajouter une colonne calculée pour la transformer en une valeur booléenne à l’aide de Power Query.
+En général, si les résultats passés sont identifiés par des champs d’un type de données différent, vous pouvez ajouter une colonne calculée pour les transformer en valeur booléenne à l’aide de Power Query.
 
-Le processus de création pour un modèle de prédiction binaire suit les mêmes étapes que les autres modèles AutoML, décrits dans la section **configurer les entrées de modèle ML** ci-dessus.
+Le processus de création d’un modèle de prédiction binaire suit les mêmes étapes que les autres modèles AutoML, décrits dans la section **Configuration des entrées du modèle Machine Learning** ci-dessus.
 
 ### <a name="binary-prediction-model-report"></a>Rapport de modèle de prédiction binaire
 
-Le modèle de prédiction binaire produit en tant que sortie une probabilité qu’un enregistrement permettent d’obtenir le résultat défini par la valeur d’étiquette booléenne comme True. Le rapport inclut un segment pour le seuil de probabilité, ce qui influence la façon dont les scores au-dessus et au-dessous du seuil de probabilité sont interprétés.
+Le modèle de prédiction binaire produit comme résultat une probabilité qu’un enregistrement atteigne le résultat défini par la valeur de l’étiquette booléenne true. Le rapport comprend un segment pour le seuil de probabilité, qui détermine la façon dont les scores au-dessus et en dessous du seuil de probabilité sont interprétés.
 
-Le rapport décrit les performances du modèle en termes de *vrais positifs*, *faux positifs*, *vrais négatifs* et *faux négatifs*. True positifs et négatifs True sont des résultats prédits correctement pour les deux classes dans les données de résultat. Faux positifs sont les résultats qui avaient l’étiquette booléenne réelle de la valeur False, mais ont été prédite en tant que la valeur True. À l’inverse, faux négatifs sont des résultats où la valeur réelle de l’étiquette Boolean a la valeur True, mais qui ont été prédit comme False.
+Le rapport décrit les performances du modèle en termes de *Vrais positifs*, *Faux positifs*, *Vrais négatifs* et *Faux négatifs*. Les vrais positifs et vrais négatifs sont des résultats prédits correctement pour les deux classes dans les données de résultat. Les faux positifs sont des résultats qui ont reçu l’étiquette booléenne false, mais qui avaient été prédits comme true. À l’inverse, les faux négatifs sont des résultats où la valeur réelle d’étiquette booléenne était true, mais qui avaient été prédits comme false.
 
-Mesures, telles que la précision et le rappel, décrivent l’effet du seuil de probabilité sur les résultats prédits. Vous pouvez utiliser le segment de seuil de probabilité pour sélectionner un seuil qui permet d’obtenir un bon compromis entre précision et le rappel.
+Les mesures, telles que la précision et le rappel, décrivent l’effet du seuil de probabilité sur les résultats prédits. Vous pouvez utiliser le segment de seuil de probabilité pour sélectionner un seuil qui atteint un compromis équilibré entre précision et rappel.
 
-![Aperçu de l’analyse de précision](media/service-machine-learning-automated/automated-machine-learning-power-bi-10.png)
+![Aperçu de la précision](media/service-machine-learning-automated/automated-machine-learning-power-bi-10.png)
 
-Le **rapport d’analyse de précision** page du rapport du modèle inclut la *Gains cumulés* graphique et la valeur ROC de courbe pour le modèle. Il s’agit de mesures statistiques des performances du modèle. Ces rapports incluent des descriptions des tableaux de caractères indiqué.
+La page **Rapport de précision** du rapport de modèle comprend le graphique *Gains cumulés* et la courbe ROC pour le modèle. Il s’agit des mesures statistiques des performances du modèle. Les rapports incluent des descriptions des graphiques affichés.
 
-![Écran de rapport d’analyse de précision](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
+![Écran de rapport de précision](media/service-machine-learning-automated/automated-machine-learning-power-bi-11.png)
 
-### <a name="applying-a-binary-prediction-model"></a>Appliquer un modèle de prédiction binaire
+### <a name="applying-a-binary-prediction-model"></a>Application d’un modèle de prédiction binaire
 
-Pour appliquer un modèle de prédiction binaire, vous devez spécifier l’entité avec les données à laquelle vous souhaitez appliquer les prédictions à partir du modèle ML. Autres paramètres incluent le préfixe de nom de colonne de sortie et le seuil de probabilité pour classer le résultat prédit.
+Pour appliquer un modèle de prédiction binaire, vous devez spécifier l’entité avec les données auxquelles vous souhaitez appliquer les prédictions à partir du modèle Machine Learning. Les autres paramètres incluent le préfixe du nom de la colonne de sortie et le seuil de probabilité pour la classification des résultats prédits.
 
 ![Entrées de prédiction](media/service-machine-learning-automated/automated-machine-learning-power-bi-12.png)
 
-Lorsqu’un modèle de prédiction binaire est appliqué, il ajoute trois colonnes de sortie à l’entité de sortie enrichie. Il s’agit de la **PredictionScore**, **PredictionOutcome** et **PredictionExplanation**. Les noms de colonnes dans l’entité ont le préfixe spécifié lorsque le modèle est appliqué.
+Lorsqu’un modèle de prédiction binaire est appliqué, il ajoute trois colonnes de sortie à l’entité de sortie enrichie. Ce sont les colonnes **PredictionScore**, **PredictionOutcome** et **PredictionExplanation**. Le préfixe est spécifié pour les noms de colonnes de l’entité lorsque le modèle est appliqué.
 
-Le **PredictionOutcome** colonne contient l’étiquette de résultat prédit. Enregistrements avec des probabilités de dépassement du seuil prédits comme susceptible d’obtenir le résultat, et celles ci-dessous sont a prédit que peu de chances d’obtenir le résultat.
+La colonne **PredictionOutcome** contient l’étiquette de résultat prédite. Les enregistrements avec des probabilités dépassant le seuil sont prédits comme susceptibles d’obtenir le résultat, et ceux en dessous du seuil sont prédits comme peu susceptibles d’obtenir le résultat.
 
-Le **PredictionExplanation** colonne contient une explication avec l’influence spécifique présentant les fonctionnalités d’entrée sur le **PredictionScore**. Il s’agit d’une collection au format JSON de poids des fonctionnalités d’entrée pour la prédiction.
+La colonne **PredictionExplanation** contient une explication de l’influence spécifique que les fonctionnalités d’entrée avaient sur le **PredictionScore**. Il s’agit d’une collection au format JSON de poids des fonctionnalités d’entrée pour la prédiction.
 
 ## <a name="classification-models"></a>Modèles de classification
 
-Modèles de classification sont utilisés pour classer un jeu de données en plusieurs groupes ou classes.  Elles sont utilisées pour prédire les événements qui peuvent avoir un ou plusieurs résultats possibles, par exemple si un client est susceptible d’avoir une très haute, haute, moyenne ou faible valeur de durée de vie ; Si le risque pour la valeur par défaut est élevé, modéré, faible ou très faible ; et ainsi de suite.
+Les modèles de classification sont utilisés pour classer un jeu de données en plusieurs groupes ou classes.  Ils sont utilisés pour prédire des événements qui peuvent avoir plusieurs résultats possibles, par exemple si un client est susceptible d’avoir une valeur de durée de vie très élevée, élevée, moyenne ou faible, ou si le risque de défaut est élevé, modéré, faible ou très faible, et ainsi de suite.
 
-La sortie d’un modèle de Classification est un score de probabilité, qui identifie la probabilité qu’un enregistrement sera atteindre les critères pour une classe donnée.
+La sortie d’un modèle de classification est un score de probabilité qui identifie la probabilité qu’un enregistrement atteigne les critères d’une classe donnée.
 
-### <a name="training-a-classification-model"></a>Apprentissage d’un modèle de Classification
+### <a name="training-a-classification-model"></a>Formation d’un modèle de classification
 
-L’entité d’entrée qui contient vos données d’apprentissage pour un modèle de Classification doit avoir une chaîne ou un champ numérique en tant que le champ Historique de résultat, qui identifie les derniers résultats connus.
+L’entité d’entrée contenant les données d’apprentissage d’un modèle de classification doit avoir un champ chaîne ou numérique comme champ de résultat historique, qui identifie les résultats passés connus.
 
 Conditions préalables :
 
-* Un minimum de 50 lignes de données historiques sont nécessaires pour chaque classe de résultats
+* Au moins 50 lignes de données d’historique sont requises pour chaque classe de résultats
 
-Le processus de création pour un modèle de Classification suit les mêmes étapes que les autres modèles AutoML, décrits dans la section **configurer les entrées de modèle ML** ci-dessus.
+Le processus de création d’un modèle de classification suit les mêmes étapes que les autres modèles AutoML, décrits dans la section **Configuration des entrées du modèle Machine Learning** ci-dessus.
 
 ### <a name="classification-model-report"></a>Rapport de modèle de classification
 
-La Classification des rapports de modèle sont généré en appliquant le modèle ML à l’exclusion de test de données et de comparaison de la classe prévue pour un enregistrement avec la classe réelle connue.
+Le rapport de modèle de classification est généré en appliquant le modèle Machine Learning aux données d’exclusion de test et en comparant la classe prédite pour un enregistrement à la classe connue réelle.
 
-Le rapport de modèle comprend un graphique qui inclut la répartition des enregistrements pour chaque classe connu classifications correctes et incorrectes.
+Le rapport de modèle contient un graphique qui comprend la répartition des enregistrements correctement et incorrectement classés pour chaque classe connue.
 
 ![Rapport de modèle](media/service-machine-learning-automated/automated-machine-learning-power-bi-13.png)
 
-Une exploration spécifique à la classe supplémentaire permet une analyse de la façon dont les prédictions pour une classe connue sont distribuées. Cela inclut les autres classes dans laquelle les enregistrements de connues de classe sont susceptibles d’être mal classées.
+Un autre détail spécifique à la classe permet d’analyser la manière dont les prédictions d’une classe connue sont distribuées. Cela comprend les autres classes dans lesquelles les enregistrements de cette classe connue sont susceptibles d’être mal classés.
 
 ![Rapport d’analyse](media/service-machine-learning-automated/automated-machine-learning-power-bi-14.png)
 
-L’explication de modèle dans le rapport inclut également les PRÉDICTEURS supérieurs pour chaque classe.
+L’explication du modèle dans le rapport comprend également les meilleures prédictions de chaque classe.
 
-Le rapport de modèle de Classification inclut également une page de détails de la formation similaire aux pages pour les autres types de modèles, comme décrit dans la section **rapport de modèle AutoML** plus haut dans cet article.
+Le rapport de modèle de classification comprend également une page de détails de l’entraînement similaire aux pages pour les autres types de modèles, comme décrit dans la section **Rapport sur le modèle AutoML** plus haut dans cet article.
 
-### <a name="applying-a-classification-model"></a>Appliquer un modèle de classification
+### <a name="applying-a-classification-model"></a>Application d’un modèle de classification
 
-Pour appliquer un modèle de Classification ML, vous devez spécifier l’entité avec les données d’entrée et le préfixe de nom de colonne de sortie.
+Pour appliquer un modèle de classification Machine Learning, vous devez spécifier l’entité avec les données d’entrée et le préfixe du nom de la colonne de sortie.
 
-Lorsqu’un modèle de Classification est appliqué, il ajoute que trois colonnes à l’entité de sortie enrichie de sortie. Il s’agit de la **PredictionScore**, **PredictionClass** et **PredictionExplanation**. Les noms de colonnes dans l’entité ont le préfixe spécifié lorsque le modèle est appliqué.
+Lorsqu’un modèle de classification est appliqué, il ajoute trois colonnes de sortie à l’entité de sortie enrichie. Ce sont les colonnes **PredictionScore**, **PredictionClass** et **PredictionExplanation**. Le préfixe est spécifié pour les noms de colonnes de l’entité lorsque le modèle est appliqué.
 
-Le **PredictionClass** colonne contient la classe très probablement prévue pour l’enregistrement. Le **PredictionScore** colonne contient la liste des scores de probabilité pour l’enregistrement pour chaque classe possible.
+La colonne **PredictionClass** contient la classe prédite la plus probable pour l’enregistrement. La colonne **PredictionScore** contient la liste des scores de probabilité pour l’enregistrement pour chaque classe possible.
 
-Le **PredictionExplanation** colonne contient une explication avec l’influence spécifique présentant les fonctionnalités d’entrée sur le **PredictionScore**. Il s’agit d’une collection au format JSON de poids des fonctionnalités d’entrée pour la prédiction.
+La colonne **PredictionExplanation** contient une explication de l’influence spécifique que les fonctionnalités d’entrée avaient sur le **PredictionScore**. Il s’agit d’une collection au format JSON de poids des fonctionnalités d’entrée pour la prédiction.
 
 ## <a name="regression-models"></a>Modèles de régression
 
-Les modèles de régression sont utilisés pour prédire une valeur, comme le chiffre d’affaires susceptible d’être réalisés à partir d’une quantité de ventes, la valeur de durée de vie d’un compte, le montant d’une facture client est susceptible d’être payé, la date à laquelle une facture peut être payée , et ainsi de suite.
+Les modèles de régression sont utilisés pour prédire une valeur, par exemple le chiffre d’affaires susceptible d’être réalisé pour un contrat de vente, la valeur de durée de vie d’un client, le montant d’une facture client susceptible d’être payé, la date à laquelle une facture peut être payée, et ainsi de suite.
 
 La sortie d’un modèle de régression est la valeur prédite.
 
-### <a name="training-a-regression-model"></a>Apprentissage d’un modèle de régression
+### <a name="training-a-regression-model"></a>Formation d’un modèle de régression
 
-L’entité d’entrée contenant les données d’apprentissage d’un modèle de régression doit avoir un champ numérique que le champ Historique de résultat, qui identifie les dernières valeurs de résultat connus.
+L’entité d’entrée contenant les données d’apprentissage d’un modèle de régression doit avoir un champ numérique comme champ de résultat historique, qui identifie les valeurs des résultats passés connus.
 
 Conditions préalables :
 
-* Un minimum de 100 lignes de données historiques sont nécessaires pour un modèle de régression
+* Un modèle de régression nécessite au minimum 100 lignes de données historiques
 
-Le processus de création pour un modèle de régression suit les mêmes étapes que les autres modèles AutoML, décrits dans la section **configurer les entrées de modèle ML** ci-dessus.
+Le processus de création d’un modèle de régression suit les mêmes étapes que les autres modèles AutoML, décrits dans la section **Configuration des entrées du modèle Machine Learning** ci-dessus.
 
-### <a name="regression-model-report"></a>Rapport de modèle de régression
+### <a name="regression-model-report"></a>Rapport sur le modèle de régression
 
-Comme les autres rapports de modèle AutoML, le rapport de régression est basé sur les résultats de l’application du modèle aux données de test d’exclusion.
+Comme les autres rapports de modèle AutoML, le rapport de régression est basé sur les résultats de l’application du modèle aux données d’exclusion de test.
 
-Le rapport de modèle comprend un graphique qui compare les valeurs prédites à la valeur réelle. Dans ce graphique, la distance à partir de la diagonale indique l’erreur dans la prédiction.
+Le rapport de modèle comprend un graphique qui compare les valeurs prédites à la valeur réelle. Dans ce graphique, la distance par rapport à la diagonale indique l’erreur dans la prédiction.
 
-Le graphique de l’erreur qui sont restées montre la distribution du pourcentage de l’erreur moyenne pour des valeurs différentes dans le jeu de données de test d’exclusion. L’axe horizontal représente la moyenne de la valeur réelle pour le groupe, avec la taille de la bulle indiquant la fréquence ou le nombre de valeurs dans cette plage. L’axe vertical est l’erreur résiduelle moyenne.
+Le tableau d’erreurs résiduelles affiche la répartition du pourcentage moyen d’erreur pour les différentes valeurs dans le jeu de données d’exclusion de test. L’axe horizontal représente la moyenne de la valeur réelle pour le groupe, la taille de la bulle indiquant la fréquence ou le nombre de valeurs de cette plage. L’axe vertical est l’erreur résiduelle moyenne.
 
-![Graphique de l’erreur résiduel](media/service-machine-learning-automated/automated-machine-learning-power-bi-15.png)
+![Graphique des erreurs résiduelles](media/service-machine-learning-automated/automated-machine-learning-power-bi-15.png)
 
-Le rapport de modèle de régression inclut également une page de détails de la formation comme les rapports pour les autres types de modèles, comme décrit dans la section **rapport de modèle AutoML** ci-dessus.
+Le rapport de modèle de régression comprend également une page de détails de l’entraînement, comme les rapports pour les autres types de modèles, comme décrit dans la section **Rapport sur le modèle AutoML** ci-dessus.
 
-### <a name="applying-a-regression-model"></a>Appliquer un modèle de régression
+### <a name="applying-a-regression-model"></a>Application d’un modèle de régression
 
-Pour appliquer un modèle de régression ML, vous devez spécifier l’entité avec les données d’entrée et le préfixe de nom de colonne de sortie.
+Pour appliquer un modèle de régression Machine Learning, vous devez spécifier l’entité avec les données d’entrée et le préfixe du nom de la colonne de sortie.
 
 ![Appliquer une régression](media/service-machine-learning-automated/automated-machine-learning-power-bi-16.png)
 
-Lorsqu’un modèle de régression est appliqué, il ajoute deux colonnes de sortie à l’entité de sortie enrichie. Il s’agit de la **PredictionValue**, et **PredictionExplanation**. Les noms de colonnes dans l’entité ont le préfixe spécifié lorsque le modèle est appliqué.
+Lorsqu’un modèle de régression est appliqué, il ajoute deux colonnes de sortie à l’entité de sortie enrichie. Ce sont les colonnes **PredictionValue** et **PredictionExplanation**. Le préfixe est spécifié pour les noms de colonnes de l’entité lorsque le modèle est appliqué.
 
-Le **PredictionValue** colonne contient la valeur prévue pour l’enregistrement basé sur les champs d’entrée. Le **PredictionExplanation** colonne contient une explication avec l’influence spécifique présentant les fonctionnalités d’entrée sur le **PredictionValue**. Il s’agit d’une collection au format JSON de poids des fonctionnalités d’entrée.
+La colonne **PredictionValue** contient la valeur prédite de l’enregistrement en fonction des champs d’entrée. La colonne **PredictionExplanation** contient une explication de l’influence spécifique que les fonctionnalités d’entrée avaient sur le **PredictionValue**. Il s’agit d’une collection au format JSON de poids des fonctionnalités d’entrée.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Cet article fourni une vue d’ensemble de l’apprentissage d’automatisée pour les flux de données dans le service Power BI. Les articles suivants peuvent également être utiles.
+Cet article donne une vue d’ensemble du Machine Learning automatisé pour les dataflows dans le service Power BI. Les articles suivants peuvent également vous être utiles.
 
-* [Tutoriel : Générer un modèle de Machine Learning dans Power BI (version préliminaire)](service-tutorial-build-machine-learning-model.md)
+* [Tutoriel : Créer un modèle Machine Learning dans Power BI (préversion)](service-tutorial-build-machine-learning-model.md)
 * [Tutoriel : Utilisation de Cognitive Services dans Power BI](service-tutorial-use-cognitive-services.md)
 * [Tutoriel : Appeler un modèle Machine Learning Studio dans Power BI (préversion)](service-tutorial-invoke-machine-learning-model.md)
 * [Cognitive Services dans Power BI (préversion)](service-cognitive-services.md)
@@ -284,9 +284,9 @@ Cet article fourni une vue d’ensemble de l’apprentissage d’automatisée po
 
 Pour plus d’informations sur les flux de données, lisez les articles suivants :
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
-* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
+* [Utilisation d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Ressources du développeur pour les flux de données Power BI](service-dataflows-developer-resources.md)
 * [Flux de données et intégration à Azure Data Lake (préversion)](service-dataflows-azure-data-lake-integration.md)
 
 

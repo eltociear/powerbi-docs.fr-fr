@@ -5,21 +5,20 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7222f13d5ee4f25d7d55655bb5a7e5f2f28c77d4
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 5251bf34d7467c2727cdac83c6f6f9faf59aa888
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608669"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141270"
 ---
-# <a name="featured-dashboards-in-power-bi-service"></a>Tableaux de bord par défaut dans le service Power BI
+# <a name="featured-dashboards-in-the-power-bi-service"></a>Tableaux de bord par défaut dans le service Power BI
 ## <a name="create-a-featured-dashboard"></a>Créer un tableau de bord par défaut
 La plupart d’entre nous ont un tableau de bord que nous consultons plus souvent que tous les autres.  Cela peut être le tableau de bord que nous utilisons pour gérer votre entreprise, ou un tableau de bord contenant un groupement de vignettes de différents tableaux de bord et rapports.
 
@@ -52,7 +51,7 @@ Bien sûr, si vous changez d’avis par la suite, vous pouvez définir un nouvea
 1. Suivez les étapes 1 et 2 ci-dessus.
    
     ![fenêtre Changer le tableau de bord par défaut](./media/end-user-featured/power-bi-change-feature.png)
-2. Sélectionnez **Définir comme tableau de bord par défaut**. Désactiver un tableau de bord par défaut ne le supprime pas de votre espace de travail.  
+2. Sélectionnez **Définir comme tableau de bord par défaut**. Désactiver un tableau de bord par défaut ne le supprime pas de Power BI.  
    
     ![message de réussite](./media/end-user-featured/power-bi-unfeature-new.png)
 

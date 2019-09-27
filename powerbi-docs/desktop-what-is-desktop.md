@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 711e0252cddcc78437e03a82d91c67441cfc3a55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 575d66ad6bb10a4e7faa90f5f658e86115402400
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513513"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141976"
 ---
 # <a name="what-is-power-bi-desktop"></a>Qu’est-ce que Power BI Desktop ?
 
@@ -32,6 +32,16 @@ Voici les utilisations les plus courantes de **Power BI Desktop** :
 * Partager des rapports avec d’autres utilisateurs à l’aide du **service Power BI**
 
 Les personnes responsables de ces tâches sont souvent considérées comme des *analystes de données* (parfois nommés simplement *analystes*) ou des professionnels de l’informatique décisionnelle (souvent appelés *créateurs de rapports*). Toutefois, nombreux sont ceux qui ne se considèrent pas comme des analystes ou des créateurs de rapports et utilisent **Power BI Desktop** pour créer des rapports attrayants, ou pour extraire des données provenant de différentes sources, générer des modèles de données et les partager avec leurs collègues et leur organisation.
+
+Il y a trois vues dans Power BI Desktop, affichées sur le côté gauche de la zone de dessin. Les vues, affichées dans l’ordre où elles apparaissent, sont les suivantes :
+* **Vue Rapport** : vous pouvez créer des rapports et des visuels, et c’est là que vous passerez la majeure partie de votre temps de création.
+* **Vue Données** : ici, vous pouvez voir les tables, les mesures et les autres données utilisées dans le modèle de données associé à votre rapport, et transformer les données pour une utilisation optimale dans le modèle du rapport.
+* **Vue Modèle** : dans cette vue, vous pouvez afficher et gérer les relations entre les tables de votre modèle de données.
+
+L’illustration suivante montre les trois vues, telles qu’elles apparaissent sur le côté gauche du canevas :
+
+![vues différentes](media/desktop-what-is-desktop/what-is-desktop-07.png)
+
 
 Avec **Power BI Desktop**, vous pouvez créer des rapports complexes et riches visuellement à partir de données provenant de plusieurs sources, pour ensuite les partager avec d’autres personnes de votre organisation. 
 

@@ -1,20 +1,20 @@
 ---
 title: Utiliser la sécurité au niveau des lignes avec le contenu incorporé Power BI
 description: Découvrez les étapes à suivre pour incorporer du contenu Power BI dans votre application.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 7c58d4a5ce94a8659c85606dc2cbce1b4fc615f5
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596565"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073344"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
@@ -26,7 +26,7 @@ Si vous incorporez des rapports pour des utilisateurs Power BI (l’utilisateur 
 
 ![Éléments impliqués dans la sécurité au niveau des lignes.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
-Pour tirer parti de la sécurité au niveau des lignes, il est important de comprendre trois principaux concepts : les utilisateurs, les rôles et les règles. Examinons plus en détail chacun d’entre eux :
+Pour tirer parti de la sécurité au niveau des lignes, il est important de comprendre trois principaux concepts : les utilisateurs, les rôles et les règles. Examinons plus en détail ces concepts :
 
 **Utilisateurs** : utilisateurs finaux qui voient l’artefact (tableau de bord, vignette, rapport ou jeu de données). Dans Power BI Embedded, les utilisateurs sont identifiés par la propriété de nom d’utilisateur dans un jeton d’incorporation.
 

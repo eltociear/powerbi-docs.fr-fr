@@ -11,7 +11,7 @@ ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65240121"
@@ -37,7 +37,7 @@ Pour ce tutoriel, vous avez besoin d’un abonnement Azure. Si ce n’est déjà
 
 Heureusement, l’équipe Power BI a créé une machine virtuelle fournie avec Power BI Report Server déjà installé.
 
-1. Dans la place de marché Azure, sélectionnez Power BI Report Server. Ce lien ouvre directement : [Power BI Report Server](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+1. Dans Azure Marketplace, sélectionnez Power BI Report Server. Ce lien l’ouvre directement : [Power BI Report Server](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Sélectionnez **Obtenir maintenant**.
 3. Pour accepter les conditions d'utilisation et la politique de confidentialité du fournisseur, sélectionnez **Continuer**.
@@ -46,13 +46,13 @@ Heureusement, l’équipe Power BI a créé une machine virtuelle fournie avec P
 
     ![Créer une machine virtuelle Power BI Report Server](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
 
-5. Dans **étape 1 fonctions de base**, pour **nom de machine virtuelle**, appelez-le **reportservervm**.
+5. Dans **Étape 1 - Principes de base** : pour **nom de machine virtuelle**, choisissez **reportservervm**.
 
-    Le nom de la machine virtuelle de Power BI Report Server ne peut pas contenir de tirets.
+    Le nom de la machine virtuelle Power BI Report Server ne peut pas contenir de tirets.
 
 5. Créez un nom d'utilisateur et un mot de passe.
 
-6. Pour **groupe de ressources**, sélectionnez **créer**et appelez-le **reportserverresourcegroup** > **OK**.
+6. Pour **Groupe de ressources**, sélectionnez **Créer** et attribuez le nom **reportserverresourcegroup** > **OK**.
 
     Si vous effectuez plusieurs fois le tutoriel, vous devez renommer le groupe de ressources après la première fois. Vous ne pouvez pas utiliser deux fois le même nom de groupe de ressources dans un même abonnement. 
 
@@ -60,15 +60,15 @@ Heureusement, l’équipe Power BI a créé une machine virtuelle fournie avec P
 
 7. Conservez les autres valeurs par défaut > **OK**.
 
-8. Dans **étape 2 paramètres**, conservez les valeurs par défaut > **OK**.
+8. À **l’Étape 2 - Paramètres**, conservez les valeurs par défaut > **OK**.
  
-    Le **compte de stockage SQL** et **compte de stockage de Diagnostics** valeurs doivent également être uniques. Si vous utilisez plusieurs fois le didacticiel, vous devez leur donner des noms différents.
+    Les valeurs **Compte de stockage SQL** et **Compte de stockage des diagnostics** doivent aussi être uniques. Si vous effectuez plusieurs fois le tutoriel, vous devez leur donner des noms différents.
 
-9. Dans **résumé de l’étape 3**, passez en revue vos sélections > **OK**.
+9. À **l’Étape 3 - Résumé**, passez en revue vos sélections > **OK**.
 
-10. Dans **étape 4 acheter**, passez en revue les termes du contrat de stratégie utilisateur et de confidentialité > **créer**.
+10. À **l’Étape 4 - Acheter** : passez en revue les termes de la politique de confidentialité > **Créer**.
 
-    Le **envoi du déploiement pour Power BI Report Server** processus peut prendre plusieurs minutes.
+    Le processus de **soumission du déploiement pour Power BI Report Server** peut prendre plusieurs minutes.
 
 ## <a name="connect-to-your-virtual-machine"></a>Se connecter à votre machine virtuelle
 
@@ -84,13 +84,13 @@ Heureusement, l’équipe Power BI a créé une machine virtuelle fournie avec P
 
     ![Se connecter à la machine virtuelle](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. Dans le **se connecter à la machine virtuelle** volet, conservez les valeurs par défaut et sélectionnez **télécharger le fichier RDP**.
+5. Dans le volet **Se connecter à la machine virtuelle**, conservez les valeurs par défaut et sélectionnez **Télécharger le fichier RDP**.
 
-1. Dans le **connexion Bureau à distance** boîte de dialogue, sélectionnez **Connect**.
+1. Dans la boîte de dialogue **Connexion au Bureau à distance**, sélectionnez **Se connecter**.
 
 6. Entrez le nom et le mot de passe que vous avez créés pour la machine virtuelle > **OK**.
 
-7. Indique que la boîte de dialogue suivante **l’identité de l’ordinateur distant ne peut pas être identifiée**. Sélectionnez **Oui**.
+7. La boîte de dialogue suivante indique que **L’ordinateur distant ne peut pas être identifié**. Sélectionnez **Oui**.
 
    Voilà ! Votre nouvelle machine virtuelle s’ouvre.
 
@@ -100,11 +100,11 @@ Lorsque votre machine virtuelle s’ouvre, voici les éléments qui apparaissent
 
 ![La machine virtuelle Power BI Report Server démarre](media/tutorial-explore-report-server-web-portal/power-bi-report-server-vm-5-numbers.png)
 
-|Numéro  |Ce que cela représente  |
+|Nombre  |Ce que cela représente  |
 |---------|---------|
 |![Numéro 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Exemples de rapports Power BI (.PBIX) |
 |![Numéro 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Liens vers la documentation Power BI Report Server |
-|![Numéro 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Démarrage de Power BI Desktop optimisé pour Power BI Report Server (janvier 2019) |
+|![Numéro 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Démarre Power BI Desktop optimisé pour Power BI Report Server (janvier 2019) |
 |![Numéro 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Ouvre le portail web Power BI Report Server dans le navigateur |
 |![Numéro 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Démarre SQL Server Data Tools pour créer des rapports paginés (.RDL) |
 
@@ -112,7 +112,7 @@ Double-cliquez sur l’icône **Portail web Report Server**. Le navigateur ouvre
 
 ![Portail web de Power BI Report Server web](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 
-|Numéro  |Ce que cela représente  |
+|Nombre  |Ce que cela représente  |
 |---------|---------|
 |![Numéro 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Indicateurs de performance clés créés dans le portail web |
 |![Numéro 2](media/tutorial-explore-report-server-web-portal/number-2.png) |  Rapports Power BI (.PBIX)  |

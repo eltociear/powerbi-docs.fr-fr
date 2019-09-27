@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 4ec7a67b861a747f9f8f654ab9fb3fa5c2951af3
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877807"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175189"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration de Power BI - Forum Aux Questions (FAQ)
 
@@ -38,6 +38,7 @@ Cet article répond aux questions fréquemment posées concernant l’administra
 
 * [Quelles seront les conséquences sur ma méthode actuelle de gestion des identités pour les utilisateurs de mon organisation ?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Comment faire pour gérer Power BI ?](#how-do-we-manage-power-bi)
+* [Quelle est la procédure à suivre pour gérer un locataire créé par Microsoft pour mes utilisateurs ?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Si j’utilise plusieurs domaines, puis-je contrôler le locataire Office 365 auquel sont ajoutés les utilisateurs ?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Comment supprimer Power BI pour les utilisateurs déjà inscrits ?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Comment connaître la date à laquelle les nouveaux utilisateurs ont rejoint mon locataire ?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -172,6 +173,14 @@ Trois scénarios peuvent s’appliquer aux utilisateurs de votre organisation :
 Power BI fournit un portail d’administration qui permet d’afficher les statistiques d’utilisation. Il fournit également un lien vers le Centre d’administration Microsoft 365 qui permet de gérer les utilisateurs et les groupes et de contrôler les paramètres au niveau du locataire.
 
 Pour utiliser le portail d’administration Power BI, vous devez marquer votre compte en tant que compte **d’administrateur général** dans Office 365 ou Azure Active Directory, ou le rôle d’administrateur du service Power BI doit être attribué à votre compte d’utilisateur. Pour plus d’informations, consultez [Présentation du rôle d’administrateur Power BI](service-admin-role.md) et [Portail d’administration Power BI](service-admin-portal.md).
+
+### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Quel est la procédure à suivre pour gérer un client créé par Microsoft pour mes utilisateurs ?
+
+Lorsqu’un utilisateur libre-service s’inscrit à un service cloud qui utilise Azure AD, le service l’ajoute à un annuaire Azure AD non managé basé sur son domaine de courrier. Vous pouvez revendiquer et gérer le locataire qui a été créé à l’aide d’un processus appelé *prise de contrôle par l’administrateur*. Pour plus d’informations, consultez [Prise de contrôle d’un annuaire non managé en tant qu’administrateur dans Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). Le type de prise de contrôle varie selon qu’il existe ou non un locataire managé associé à votre domaine :
+
+* Power BI prend en charge la prise de contrôle par l’administrateur interne. Lorsque vous effectuez une prise de contrôle par l’administrateur _interne_ d’un annuaire Azure non géré, vous êtes ajouté en tant qu’administrateur général de l’annuaire non géré. Aucun utilisateur, domaine ou plan de service n’est migré vers un autre annuaire que vous administrez.
+
+* Power BI ne prend plus en charge la prise de contrôle par un administrateur externe. Lorsque vous effectuez une prise de contrôle par un administrateur _externe_ d’un annuaire Azure non géré, vous ajoutez le nom de domaine DNS de l’annuaire non géré à votre annuaire Azure géré. Lorsque vous ajoutez le nom de domaine, un mappage des utilisateurs aux ressources est créé dans votre annuaire Azure géré afin que les utilisateurs puissent continuer à accéder aux services sans interruption.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Si j’utilise plusieurs domaines, puis-je contrôler le locataire Office 365 auquel sont ajoutés les utilisateurs ?
 

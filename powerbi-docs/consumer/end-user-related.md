@@ -9,85 +9,60 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/09/2018
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: abf6052d7cb912f9a8ff33f064b5dc1d44f5ba3e
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b52a858d10bb7f508d39e2d4e9678e48e01394f5
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61050343"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100346"
 ---
-# <a name="view-related-content-in-power-bi-service"></a>Afficher un contenu associé dans le service Power BI
-Le volet **Contenu associé** montre les interconnexions entre les éléments de contenu du service Power BI (tableaux de bord, rapports et jeux de données). Le volet Contenu associé est également une plate-forme de lancement pour prendre des mesures. À ce stade, vous pouvez actualiser, renommer, obtenir des insights, et faire bien plus encore. Sélectionnez un rapport ou un tableau de bord pour l’ouvrir dans votre espace de travail Power BI.   
+# <a name="view-related-content-in-the-power-bi-service"></a>Afficher un contenu associé dans le service Power BI
+Le volet **Contenu associé** montre les interconnexions entre les éléments de contenu du service Power BI (tableaux de bord, rapports et jeux de données). Le volet **Contenu associé** est également une plateforme de lancement pour prendre des mesures. À partir de là, vous pouvez effectuer des opérations telles que l’ouverture d’un tableau de bord, l’ouverture d’un rapport, la génération d’insights, l’analyse des données dans Excel et bien plus encore.  
 
 Dans Power BI, les rapports sont générés à partir de jeux de données, leurs visuels sont ensuite épinglés aux tableaux de bord, puis les visuels des tableaux de bord sont reliés aux rapports. Mais comment savoir quels tableaux de bord hébergent les visuels de votre rapport Marketing ? Et comment localiser ces tableaux de bord ? Votre tableau de bord d’approvisionnement utilise-t-il des visuels de plusieurs jeux de données ? Si tel est le cas, quels sont leur noms et comment les ouvrir et les modifier ? Votre jeu de données HR est-il utilisé dans des rapports ou des tableaux de bord ? Ou peut-il être déplacé sans provoquer des liens rompus ? Le volet **Contenu associé** répond à toutes ces questions.  En plus d’afficher le contenu associé, ce volet permet d’agir sur celui-ci et de naviguer aisément entre ses éléments.
 
-![contenu associé](./media/end-user-related/power-bi-view-related-dashboard-new.png)
+![contenu associé](./media/end-user-related/power-bi-list.png)
 
 > [!NOTE]
 > La fonctionnalité Contenu associé ne fonctionne pas pour les jeux de données de streaming.
 > 
 > 
 
-## <a name="view-related-content-for-a-dashboard"></a>Afficher le contenu associé d’un tableau de bord
+## <a name="view-related-content-for-a-dashboard-or-report"></a>Afficher le contenu associé d’un tableau de bord ou rapport
 Regardez Will pendant qu’il affiche le contenu associé d’un tableau de bord. Suivez ensuite les instructions détaillées sous la vidéo pour essayer par vous-même en utilisant l’exemple de jeu de données Analyse de l’approvisionnement.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
+Une fois le tableau de bord ou le rapport ouvert, sélectionnez les points de suspension (...) dans la barre de menus, puis choisissez **Afficher les éléments associés** dans la liste déroulante.
 
-Pour pouvoir ouvrir le volet **Contenu associé**, vous devez disposer au minimum de l’autorisation d’*Affichage* sur le tableau de bord concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../sample-procurement.md).
+![Liste déroulante d’ellipses](./media/end-user-related/power-bi-dropdown.png)
 
-**Méthode 1**
+Le volet **Contenu associé** s’ouvre. Pour un tableau de bord, il affiche tous les rapports dont des visualisations sont épinglées au tableau de bord ainsi que les jeux de données associés. Pour ce tableau de bord, il existe des visualisations épinglées à partir d’un seul rapport, et ce rapport est basé sur un seul jeu de données. 
 
-Dans un espace de travail, sélectionnez l’onglet **Tableaux de bord**, puis l’icône **Afficher les éléments associés** ![icône Afficher les éléments associés](./media/end-user-related/power-bi-view-related-icon-new.png).
+![Volet Contenu associé](./media/end-user-related/power-bi-view-related-dashboard.png)
 
-![Onglet Tableau de bord](./media/end-user-related/power-bi-view-related-dash-newer.png)
+À ce stade, vous pouvez agir directement sur le contenu associé.  Par exemple, sélectionnez un nom de rapport ou tableau de bord pour ouvrir celui-ci.  Pour un rapport répertorié, sélectionnez une icône pour [analyser dans Excel](../service-analyze-in-excel.md) ou [obtenir des insights](end-user-insights.md). Pour un jeu de données, vous pouvez voir la date et l’heure de la dernière actualisation, [analyser dans Excel](../service-analyze-in-excel.md) et [obtenir des insights](end-user-insights.md).  
 
-<br>
 
-**Méthode 2**
-
-Ouvrez un tableau de bord et sélectionnez   ![l’icône Afficher les travaux associés](./media/end-user-related/power-bi-view-related-new.png) dans la barre de menus supérieure.
-
-Le volet **Contenu associé** s’ouvre. Il affiche tous les rapports dont des visualisations sont épinglées au tableau de bord ainsi que les jeux de données associés. Pour ce tableau de bord, les visualisations de trois rapports différents sont épinglées, et ces rapports sont basés sur trois jeux de données différents.
-
-![Volet Contenu associé](./media/end-user-related/power-bi-view-related-dashboard-new.png)
-
-À ce stade, vous pouvez agir directement sur le contenu associé.  Par exemple, sélectionnez un nom de rapport pour ouvrir celui-ci.  Pour un rapport répertorié, sélectionnez une icône pour [analyser dans Excel](../service-analyze-in-excel.md), [renommer](../service-rename.md) ou [obtenir des informations](end-user-insights.md). Pour un jeu de données, sélectionnez une icône pour [créer un rapport](../service-report-create-new.md), [actualiser](../refresh-data.md), renommer, [analyser dans Excel](../service-analyze-in-excel.md), [obtenir des informations](end-user-insights.md) ou ouvrir la fenêtre **Paramètres** du jeu de données.  
-
-## <a name="view-related-content-for-a-report"></a>Afficher le contenu associé d’un rapport
-Pour pouvoir ouvrir le volet **Contenu associé**, vous devez disposer au minimum de l’autorisation d’*Affichage* sur le rapport concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../sample-procurement.md).
-
-**Méthode 1**
-
-Dans un espace de travail, sélectionnez l’onglet **Rapports**, puis l’icône **Afficher les éléments associés** ![icône Afficher les éléments associés](./media/end-user-related/power-bi-view-related-icon-new.png).
-
-![Onglet Rapports](./media/end-user-related/power-bi-view-related-report-newer.png)
-
-<br>
-
-**Méthode 2**
-
-Ouvrez le rapport en [Mode Lecture](end-user-reading-view.md), puis sélectionnez ![l’icône Afficher les éléments associés](./media/end-user-related/power-bi-view-related-new.png) dans la barre de menus supérieure.
-
-Le volet **Contenu associé** s’ouvre. Il affiche le jeu de données associé et tous les tableaux de bord qui ont au moins une vignette épinglée du rapport. Pour ce rapport, des visualisations sont épinglées à 2 tableaux de bord.
-
-![Volet Contenu associé](./media/end-user-related/power-bi-view-related-report.png)
-
-À ce stade, vous pouvez agir directement sur le contenu associé.  Par exemple, sélectionnez un nom de tableau de bord pour ouvrir celui-ci.  Pour un tableau de bord quelconque répertorié dans la liste, sélectionnez une icône pour [partager le tableau de bord](../service-share-dashboards.md) ou ouvrir la fenêtre **Paramètres** du tableau de bord. Pour le jeu de données, sélectionnez une icône pour [créer un rapport](../service-report-create-new.md), [actualiser](../refresh-data.md), renommer, [analyser dans Excel](../service-analyze-in-excel.md), [obtenir des informations](end-user-insights.md) ou ouvrir la fenêtre **Paramètres** du jeu de données.  
 
 ## <a name="view-related-content-for-a-dataset"></a>Afficher le contenu associé d’un jeu de données
 Pour pouvoir ouvrir le volet **Contenu associé**, vous devez disposer au minimum de l’autorisation d’*Affichage* sur le jeu de données concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../sample-procurement.md).
 
+À partir de la barre de navigation, recherchez le titre **Espaces de travail** et sélectionnez un espace de travail dans la liste. Si vous disposez d’un contenu dans un espace de travail, il s’affiche dans le canevas à droite. 
+
+![espaces de travail dans la barre de navigation gauche](./media/end-user-related/power-bi-workspace.png)
+
+
 Dans un espace de travail, sélectionnez l’onglet **Jeux de données**, puis recherchez l’icône **Afficher les éléments associés** ![icône Afficher les éléments associés](./media/end-user-related/power-bi-view-related-icon-new.png).
 
-![onglet Jeux de données](./media/end-user-related/power-bi-view-related-dataset-newer.png)
+![onglet Jeux de données](./media/end-user-related/power-bi-related-dataset.png)
 
 Sélectionnez l’icône pour ouvrir le volet **Contenu associé**.
 
-![Le volet Contenu associé s’ouvre au-dessus de la vue du contenu Power BI](media/end-user-related/power-bi-datasets.png)
+![Le volet Contenu associé s’ouvre au-dessus de la vue du contenu Power BI](media/end-user-related/power-bi-dataset.png)
 
 À ce stade, vous pouvez agir directement sur le contenu associé. Par exemple, sélectionnez un nom de tableau de bord ou de rapport à ouvrir.  Pour un tableau de bord quelconque répertorié dans la liste, sélectionnez une icône pour [partager le tableau de bord](../service-share-dashboards.md) ou ouvrir la fenêtre **Paramètres** du tableau de bord. Pour un rapport, sélectionnez une icône pour [analyser dans Excel](../service-analyze-in-excel.md), [renommer](../service-rename.md) ou [obtenir des informations](end-user-insights.md).  
 

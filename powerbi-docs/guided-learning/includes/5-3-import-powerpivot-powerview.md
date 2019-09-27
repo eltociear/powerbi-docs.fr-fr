@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: e87ea8470464e458c1da2037f25adfcee857361e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61271389"
@@ -16,5 +16,5 @@ Si votre classeur contient des **feuilles Power View**, aucun problème. Power�
 
 ![](media/5-3-import-powerpivot-powerview/5-3_2.png)
 
-Et Voici une des fonctionnalités de Power BI : Si vous utilisez Power Query ou Power Pivot pour vous connecter, interroger et charger des données à partir de la source de données externe, une fois que vous avez importé votre classeur dans Power BI, vous pouvez configurer **actualisation planifiée**. En utilisant l’actualisation planifiée, Power BI utilise les informations de connexion de votre classeur pour se connecter directement à la source de données, interroger des données qui ont été modifiées et les charger. Toutes les visualisations figurant dans les rapports sont aussi automatiquement actualisées.
+Et voici l’une des fonctionnalités intéressantes de Power BI : Si vous utilisez Power Query ou Power Pivot pour vous connecter, interroger et charger des données à partir d’une source de données externe, une fois que vous avez importé votre classeur dans Power BI, vous pouvez configurer une **actualisation planifiée**. En utilisant l’actualisation planifiée, Power BI utilise les informations de connexion de votre classeur pour se connecter directement à la source de données, interroger des données qui ont été modifiées et les charger. Toutes les visualisations figurant dans les rapports sont aussi automatiquement actualisées.
 

@@ -3,20 +3,19 @@ title: Exporter des rapports de Power BI vers PowerPoint
 description: Découvrez comment exporter un rapport Power BI vers PowerPoint.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f06b67dc0072c125d9430079fa756d963fd99f23
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9a798afead16174f66fadba87c795d5377747e93
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61063910"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141474"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exporter des rapports de Power BI vers PowerPoint
 Avec Power BI, vous pouvez publier votre rapport dans **Microsoft PowerPoint** et créer facilement un ensemble de diapositives en fonction de votre rapport Power BI. Lorsque vous **exportez vers PowerPoint**, les éléments suivants se produisent :
@@ -29,27 +28,24 @@ Avec Power BI, vous pouvez publier votre rapport dans **Microsoft PowerPoint** 
 L’exportation d’un **rapport Power BI** dans **PowerPoint** est rapide. Suivez les étapes décrites dans la section suivante.
 
 ## <a name="how-to-export-your-power-bi-report-to-powerpoint"></a>Exporter un rapport Power BI vers PowerPoint
-Dans le service Power BI, sélectionnez un rapport pour l’afficher dans le canevas. Vous pouvez également sélectionner un rapport dans votre page **Accueil**, vos **applications** ou toute autre section dans votre volet de navigation de gauche.
+Dans le service Power BI, sélectionnez un rapport pour l’afficher dans le canevas. Vous pouvez également sélectionner un rapport dans votre **page d’accueil**, **vos applications** ou toute autre section de la barre de navigation de gauche.
 
-![Sélection du fichier dans la barre de menus, flèche pointant vers Exporter vers PowerPoint](media/end-user-powerpoint/power-bi-publish.png)
+Lorsque le rapport que vous souhaitez exporter vers PowerPoint est affiché sur le canevas, sélectionnez **Exporter > PowerPoint** à partir de la barre de menus.
 
-Lorsque le rapport que vous souhaitez exporter vers PowerPoint est affiché sur le canevas, sélectionnez **Fichier > Exporter vers PowerPoint** à partir de la barre de menus dans le service Power BI.
+![Sélectionner Exporter dans la barre de menus](media/end-user-powerpoint/power-bi-export.png)
 
-![Gros plan sur la barre de navigation de gauche avec Mon espace de travail sélectionné, Liste déroulante Fichier sélectionnée](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
    
-Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Vue actuelle** ou **Vue par défaut**.  L’option **Vue actuelle** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre.  La plupart des utilisateurs choisissent cette option.  Vous pouvez aussi sélectionner l’option **Vue par défaut**, qui exporte le rapport dans l’état initial (l’état au moment du partage par l’auteur), sans refléter les modifications que vous avez apportées à l’état initial.
+Une fenêtre contextuelle s’affiche, dans laquelle vous pouvez sélectionner l’option **Valeurs actuelles** ou **Valeurs par défaut**.  L’option **Valeurs actuelles** exporte le rapport dans l’état actuel, qui inclut les modifications actives apportées aux valeurs de segment et de filtre.  La plupart des utilisateurs choisissent cette option.  Vous pouvez aussi sélectionner l’option **Valeurs par défaut**, qui exporte le rapport dans l’état initial (l’état au moment du partage par l’auteur), sans refléter les modifications que vous avez apportées à l’état initial.
+
+![Sélectionner les éléments à exporter](media/end-user-powerpoint/power-bi-current-values.png)
     
-En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés.  Cochez cette case si vous souhaitez exporter uniquement les onglets du rapport qui sont visibles dans votre navigateur.  Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation.  Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués.  Une fois que vous avez effectué vos sélections, cliquez sur **Exporter** pour continuer.
+En outre, la fenêtre contient une case à cocher qui vous permet de spécifier si les onglets masqués d’un rapport doivent ou non être exportés.  Cochez cette case si vous souhaitez exporter uniquement les onglets du rapport qui sont visibles dans votre navigateur.  Laissez-la décochée si vous préférez inclure tous les onglets masqués dans l’exportation.  Si la case à cocher est grisée, cela indique que le rapport ne contient pas d’onglets masqués.  Une fois que vous avez effectué vos sélections, sélectionnez **Exporter** pour continuer.
 
 Dans l’angle supérieur droit de la fenêtre du navigateur du service Power BI, une bannière de notification indique que le rapport est en cours d’exportation vers PowerPoint. Cette opération peut prendre quelques minutes. Pendant ce temps, vous pouvez continuer à travailler dans Power BI.
 
-![notification d’exportation vers PowerPoint en cours](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
+![notification d’exportation vers PowerPoint en cours](media/end-user-powerpoint/power-bi-export-progress.png)
 
-Une fois que vous avez terminé, la bannière de notification change pour vous informer que le service Power BI a terminé le processus d’exportation.
-
-![Affichage du message de réussite](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
-
-Votre fichier est ensuite disponible à l’endroit où votre navigateur affiche les fichiers téléchargés. Dans l’image suivante, il est affiché sous forme de bannière de téléchargement au bas de la fenêtre du navigateur.
+Une fois que vous avez terminé, la bannière de notification change pour vous informer que le service Power BI a terminé le processus d’exportation. Votre fichier est ensuite disponible à l’endroit où votre navigateur affiche les fichiers téléchargés. Dans l’image suivante, il est affiché sous forme de bannière de téléchargement au bas de la fenêtre du navigateur.
 
 ![flèche pointant vers la notification du navigateur en bas de l’écran](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
 

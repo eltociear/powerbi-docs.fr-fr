@@ -11,7 +11,7 @@ ms.date: 04/15/2019
 ms.author: davidi
 ms.openlocfilehash: 5c31277b640b16882bef5c5f2cd9c56b441ede82
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61329873"
@@ -27,7 +27,7 @@ Les administrateurs utilisent la clé de Registre suivante pour désactiver le f
 Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop
 valueName: ShowLeadGenDialog
 ```
-Vous pouvez également essayer la clé suivante, qui s’est déroulée correctement pour certains clients selon leurs configurations :
+Vous pouvez également essayer la clé suivante, qui a réussi pour certains clients en fonction de leurs configurations :
 
 ```
 Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft Power BI Desktop

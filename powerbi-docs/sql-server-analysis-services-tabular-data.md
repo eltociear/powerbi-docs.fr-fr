@@ -13,7 +13,7 @@ ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 51efec6c78dbb29b9c3dc760284c7bb3c8711bdc
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769940"
@@ -31,15 +31,15 @@ Dans Power BI, vous disposez de deux méthodes pour vous connecter à des donn�
 
 1. Dans **Mon espace de travail**, sélectionnez **Obtenir des données**. Vous pouvez également sélectionner un espace de travail de groupe, s’il y en a de disponible.
 
-   ![Se connecter pour le bouton get data](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
+   ![Bouton Se connecter pour obtenir les données](media/sql-server-analysis-services-tabular-data/connecttoas_getdatabutton.png)
 
 2. Sélectionnez **Bases de données et plus**.
 
-   ![Se connecter pour obtenir des données 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
+   ![Se connecter pour obtenir les données 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
 
 3. Sélectionnez **SQL Server Analysis Services** > **Se connecter**.
 
-   ![Se connecter pour obtenir des données 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
+   ![Se connecter pour obtenir les données 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
 
 4. Sélectionnez un serveur. Si vous ne voyez aucun des serveurs répertoriés ici, cela signifie qu’une passerelle ou une source de données n’a pas été configurée, ou que votre compte n’est pas répertorié sous l’onglet **Utilisateurs** de la source de données, dans la passerelle. Vérifiez auprès de votre administrateur.
 
@@ -47,7 +47,7 @@ Dans Power BI, vous disposez de deux méthodes pour vous connecter à des donn�
 
 Une fois que vous êtes connectez au modèle, il apparaît dans votre site Power BI, dans **Mon espace de travail/Jeux de données**. Si vous êtes passé à un espace de travail de groupe, le jeu de données s’affiche dans le groupe.
 
-![Se connecter à un jeu de données](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
+![Se connecter au jeu de données](media/sql-server-analysis-services-tabular-data/connecttoas_dataset_5.png)
 
 ## <a name="dashboard-tiles"></a>Mise à jour des vignettes de tableau de bord
 

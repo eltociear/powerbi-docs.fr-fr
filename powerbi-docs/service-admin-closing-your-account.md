@@ -1,5 +1,5 @@
 ---
-title: Fermer votre compte Power BI
+title: Fermeture de votre compte Power BI
 description: Si vous ne souhaitez plus utiliser Power BI, vous pouvez fermer votre compte Power BI.
 author: mgblythe
 manager: kfile
@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/26/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a285c6188e8b9298702645e28ad686e33147c3a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 227b4e837e75959dc838556ab0215db32131ec07
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65101127"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075656"
 ---
-# <a name="close-your-power-bi-account"></a>Fermer votre compte Power BI
+# <a name="close-your-power-bi-account"></a>Fermeture de votre compte Power BI
 
-Si vous ne souhaitez plus utiliser Power BI, vous pouvez fermer votre compte Power BI.  Une fois que vous fermez votre compte, vous ne peut pas se connecter à Power BI. En outre, comme indiqué dans la stratégie de rétention de données dans les termes du contrat de Service Power BI, Power BI supprime toutes les données client vous avez chargé ou créé. Elle n’est pas conservée.
+Si vous ne souhaitez plus utiliser Power BI, vous pouvez fermer votre compte Power BI.  Une fois votre compte fermé, vous ne pouvez pas vous connecter à Power BI. Toutes les données client que vous avez chargées ou créées dans Power BI sont supprimées, conformément à la stratégie de rétention des données qui figure dans les conditions d’utilisation de Power BI. Elles ne sont pas conservées.
 
 ## <a name="individual-power-bi-users"></a>Utilisateurs Power BI individuels
 
@@ -27,23 +27,23 @@ Si vous vous êtes inscrit à Power BI en tant que particulier, vous pouvez ferm
 
 1. Dans Power BI, sélectionnez l’engrenage en haut à droite, puis **Paramètres**.
 
-    ![Capture d’écran de l’angle supérieur droit de l’interface utilisateur avec l’icône d’engrenage et de l’option de paramètres appelé.](media/service-admin-closing-your-account/close-account-settings.png)
+    ![Capture d’écran du coin supérieur droit de l’interface utilisateur avec l’icône d’engrenage et l’option de paramètres en évidence.](media/service-admin-closing-your-account/close-account-settings.png)
 
 1. Dans l’onglet **Général**, sélectionnez **Fermer le compte**.
 
-    ![Capture d’écran de l’angle supérieur gauche de la page de paramètres avec l’option de fermer le compte exigées.](media/service-admin-closing-your-account/close-account-settings-2.png)
+    ![Capture d’écran du coin supérieur gauche de la page de paramètres avec l’option Fermer le compte en évidence.](media/service-admin-closing-your-account/close-account-settings-2.png)
 
 1. Sélectionnez un motif pour la fermeture du compte (1). Vous pouvez éventuellement fournir des informations supplémentaires (2). Sélectionnez ensuite **Fermer le compte**.
 
-    ![Capture d’écran de la boîte de dialogue Fermer le compte avec l’option de fermer le compte exigées.](media/service-admin-closing-your-account/close-account-settings-3.png)
+    ![Capture d’écran de la boîte de dialogue Fermer le compte avec l’option Fermer le compte en évidence.](media/service-admin-closing-your-account/close-account-settings-3.png)
 
 1. Confirmez que vous voulez fermer votre compte.
 
-    ![Capture d’écran de la boîte de dialogue de confirmation de fermer le compte avec l’option Oui exigées.](media/service-admin-closing-your-account/close-account-settings-4.png)
+    ![Capture d’écran de la boîte de dialogue de confirmation de fermeture du compte avec l’option Oui en évidence.](media/service-admin-closing-your-account/close-account-settings-4.png)
 
-    Vous devez voir une confirmation que votre compte est clôturé par Power BI. Vous pouvez rouvrir votre compte à partir d’ici si nécessaire.
+    Une confirmation de la fermeture de Power BI devrait s’afficher. Vous pouvez rouvrir votre compte à partir d’ici si nécessaire.
 
-    ![Capture d’écran de la fermeture de votre compte de boîte de dialogue.](media/service-admin-closing-your-account/close-account-settings-5.png)
+    ![Capture d’écran de la boîte de dialogue Votre compte est fermé.](media/service-admin-closing-your-account/close-account-settings-5.png)
 
 ## <a name="managed-tenant-users"></a>Utilisateurs de client gérés
 

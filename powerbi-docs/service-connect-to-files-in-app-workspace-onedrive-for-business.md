@@ -11,16 +11,16 @@ ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: 52b7748b6b634caf87de01ddc965576339a04b8b
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61174987"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Se connecter à des fichiers stockés dans OneDrive pour votre espace de travail d’application Power BI
-Après avoir [créé un espace de travail d’application dans Power BI](service-create-distribute-apps.md), vous pouvez stocker vos fichiers Excel, CSV et Power BI Desktop sur le OneDrive Entreprise de l’espace de travail de votre application Power BI. Vous pouvez continuer la mise à jour les fichiers que vous stockez dans OneDrive. Ces mises à jour sont automatiquement répercutées dans les rapports Power BI et tableaux de bord basés sur les fichiers. 
+Après avoir [créé un espace de travail d’application dans Power BI](service-create-distribute-apps.md), vous pouvez stocker vos fichiers Excel, CSV et Power BI Desktop sur le OneDrive Entreprise de l’espace de travail de votre application Power BI. Vous pouvez continuer à mettre à jour les fichiers que vous stockez dans OneDrive. Ces mises à jour sont alors répercutées automatiquement dans les rapports et tableaux de bord Power BI basés sur les fichiers. 
 
 > [!NOTE]
-> La nouvelle expérience de l’espace de travail modifie la relation entre les espaces de travail Power BI et les groupes Office 365. Vous ne créez pas un groupe Office 365 automatiquement chaque fois que vous créez un des nouveaux espaces de travail. En savoir plus sur [création de nouveaux espaces de travail](service-create-the-new-workspaces.md)
+> L’expérience des nouveaux espaces de travail change la relation entre les espaces de travail Power BI et les groupes Office 365. Vous ne créez plus automatiquement un groupe Office 365 chaque fois que vous créez un nouvel espace de travail. Pour plus d’informations, consultez [Création des nouveaux espaces de travail](service-create-the-new-workspaces.md)
 
 L’ajout de fichiers à l’espace de travail de votre application est un processus en deux étapes : 
 
@@ -48,7 +48,7 @@ L’ajout de fichiers à l’espace de travail de votre application est un proce
 ## <a name="2-import-excel-files-as-datasets-or-as-excel-online-workbooks"></a>2 Importer des classeurs Excel en que jeux de données ou classeurs Excel Online
 À présent que vos fichiers se trouvent sur le OneDrive Entreprise pour l’espace de travail de votre application, vous avez le choix. Vous pouvez soit : 
 
-* [Importer les données du classeur Excel comme un jeu de données](service-get-data-from-files.md). Utilisez ensuite les données pour générer des rapports et tableaux de bord que vous pouvez afficher dans un navigateur web et sur les appareils mobiles.
+* [Importer les données du classeur Excel en tant que jeu de données](service-get-data-from-files.md). Puis vous en servir pour générer des rapports et des tableaux de bord, que vous pouvez ensuite afficher dans un navigateur web et sur des appareils mobiles.
 * [Vous connecter à des classeurs Excel complets dans Power BI](service-excel-workbook-files.md) et les afficher exactement tels qu’ils apparaissent dans Excel Online.
 
 ### <a name="import-or-connect-to-the-files-in-your-app-workspace"></a>Importer ou se connecter aux fichiers dans l’espace de travail de votre application
@@ -64,7 +64,7 @@ L’ajout de fichiers à l’espace de travail de votre application est un proce
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_grp_one_drive_shrpt.png)
 5. Sélectionnez le fichier souhaité > **Se connecter**.
    
-    À ce stade, vous décidez s’il faut [importer les données du classeur Excel](service-get-data-from-files.md), ou [se connecter à des classeurs Excel tout entiers](service-excel-workbook-files.md).
+    À ce stade, vous décidez s’il faut [importer les données du classeur Excel](service-get-data-from-files.md) ou [se connecter aux classeurs Excel tout entiers](service-excel-workbook-files.md).
 6. Sélectionnez **Importer** ou **Se connecter**.
    
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/pbi_importexceldataorwholecrop.png)

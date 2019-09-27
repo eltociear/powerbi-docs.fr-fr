@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 09/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655147"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175272"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -47,6 +47,7 @@ Le portail compte neuf onglets. Le reste de cet article fournit des informations
 * [Visuels de l’organisation](#organizational-visuals)
 * [Stockage de dataflows (préversion)](#dataflowStorage)
 * [Espaces de travail](#workspaces)
+* [Marque personnalisée](#custom-branding)
 
 ## <a name="usage-metrics"></a>Métriques d'utilisation
 
@@ -522,7 +523,22 @@ En tant qu’administrateur, vous pouvez afficher les espaces de travail qui exi
 
 ![Liste des espaces de travail](media/service-admin-portal/workspaces-list.png)
 
+## <a name="custom-branding"></a>Marque personnalisée
 
+En tant qu’administrateur, vous pouvez personnaliser l’apparence de Power BI pour l’ensemble de votre organisation. Actuellement, il existe trois options principales :
+
+![Options de marque personnalisée](media/service-admin-portal/power-bi-custom-branding.png)
+
+* **Télécharger le logo** : Pour de meilleurs résultats, téléchargez un logo enregistré au format .png de 10 ko ou moins et d’au moins 200 x 30 pixels.
+
+* **Télécharger l’image de couverture** : Pour de meilleurs résultats, téléchargez une image de couverture enregistrée au format .jpg ou .png de 1 Mo ou moins, et d’au moins 1920 x 160 pixels.
+
+* **Sélectionner la couleur du thème** : Vous pouvez sélectionner votre thème en fonction d’une valeur hexadécimale # RVB ou de la palette fournie.
+
+
+Pour plus d’informations, consultez [Marque personnalisée pour votre organisation](http://aka.ms/orgBranding).
+
+![Liste des espaces de travail](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Administration de Power BI dans votre organisation](service-admin-administering-power-bi-in-your-organization.md)  

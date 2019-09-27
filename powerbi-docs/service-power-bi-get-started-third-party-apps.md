@@ -9,18 +9,18 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.cunstom: ''
-ms.date: 08/10/2017
+ms.date: 09/16/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 11afe27ffbca295eec67fd07731cc646bcca56dc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3de0b5473c6d00013bdf109f262dc0577c3bf290
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769707"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073517"
 ---
 # <a name="get-started-with-third-party-apps"></a>Bien démarrer avec des applications tierces
 
-Avec Power BI, vous pouvez utiliser une application créée par une société ou une personne autres que Microsoft. Par exemple, vous pouvez utiliser une application tierce qui intègre les vignettes de Power BI dans une application web personnalisée. Lorsque vous utilisez une application tierce, vous devrez accorder à cette application certaines autorisations à votre compte Power BI et les ressources. Il est important que seules les applications que vous connaissez et qui sont dignes de confiance bénéficient d’autorisations. Vous pouvez révoquer à tout moment les autorisations accordées à une application. Consultez la page [Révoquez les autorisations accordées à une application tierce](#revoke).
+Avec Power BI, vous pouvez utiliser une application créée par une société ou une personne autres que Microsoft. Par exemple, vous pouvez utiliser une application tierce qui intègre les vignettes de Power BI dans une application web personnalisée. Lorsque vous utilisez une application tierce, vous êtes invité à accorder à cette application certaines autorisations d’accès à votre compte Power BI et à vos ressources. Il est important que seules les applications que vous connaissez et qui sont dignes de confiance bénéficient d’autorisations. Vous pouvez révoquer à tout moment les autorisations accordées à une application. Consultez la page [Révoquez les autorisations accordées à une application tierce](#revoke).
 
 Voici les différents types d’accès dont peut bénéficier une application.
 
@@ -47,15 +47,15 @@ Voici les différents types d’accès dont peut bénéficier une application.
 
 <a name="revoke"/>
 
-## <a name="revoke-third-party-app-permissions"></a>Révoquer des autorisations de l’application tierce
+## <a name="revoke-third-party-app-permissions"></a>Révoquez les autorisations accordées à une application tierce
 
-Vous révoquez des autorisations pour une application tierce en accédant au site mes applications Office 365.
+Pour révoquer des autorisations accordées à une application tierce, accédez au site Mes applications Office 365.
 
-Sur le **mes applications Office 365** site, voici comment révoquer des autorisations de tiers :
+Sur le site **Mes applications Office 365**, procédez comme suit pour révoquer des autorisations de tiers :
 
 1. Accédez au [site Mes applications Office 365](https://portal.office.com/myapps)
 
-2. Sur le **mes applications** , recherchez l’application par des tiers.
+2. Sur la page **Mes applications**, recherchez l’application tierce.
 
 3. Pointez sur la vignette de l’application, cliquez sur le bouton **(…)** , puis cliquez sur **Supprimer**.
 

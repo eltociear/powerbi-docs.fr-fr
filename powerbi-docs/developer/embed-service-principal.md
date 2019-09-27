@@ -1,21 +1,21 @@
 ---
 title: Principal de service avec Power BI
 description: Découvrez comment inscrire une application dans Azure Active Directory à l’aide d’un principal de service et l’utiliser pour l’incorporation de contenu Power BI.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 97903b4e6f906f2cb09f6285832ad6eb9a5a8dca
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: c77d206dbd7fa0604bc60fb4054c09f73cbe442e
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823297"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073100"
 ---
 # <a name="service-principal-with-power-bi"></a>Principal de service avec Power BI
 
@@ -67,7 +67,7 @@ Il existe des différences selon que vous utilisez un principal de service ou un
 
 ## <a name="get-started-with-a-service-principal"></a>Bien démarrer avec un principal de service
 
-À la différence d’un compte principal traditionnel, un principal de service (jeton d’application uniquement) nécessite la configuration de quelques éléments. Pour commencer, vous devez configurer un environnement adapté.
+Contrairement à un compte principal traditionnel, un principal de service (jeton d’application uniquement) nécessite la configuration de quelques éléments. Pour commencer, vous devez configurer un environnement adapté.
 
 1. [Inscrivez une application web côté serveur](register-app.md) dans Azure Active Directory (AAD) à utiliser avec Power BI. Après avoir inscrit une application, vous pouvez capturer un ID d’application, un secret d’application et l’ID objet du principal de service pour accéder à votre contenu Power BI. Vous pouvez créer un principal de service avec [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 

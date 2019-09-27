@@ -1,5 +1,5 @@
 ---
-title: Optimisez les rapports pour les applications mobiles - Power BI
+title: Optimiser les rapports pour les applications mobiles - Power BI
 description: Découvrez comment optimiser les pages de rapport pour les applications mobiles Power BI en créant une version portrait du rapport spécialement pour les téléphones et les tablettes.
 author: maggiesMSFT
 manager: kfile
@@ -12,19 +12,19 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61310692"
 ---
-# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimisez les rapports pour les applications mobiles Power BI
-Vous pouvez améliorer l’expérience d’affichage de rapports dans les applications mobiles en créant une disposition portrait. Dans Power BI Desktop et le service Power BI, vous réorganiser et redimensionnez des éléments visuels de rapport pour une expérience optimale en mode portrait.  
+# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimiser les rapports pour les applications mobiles Power BI
+Vous pouvez améliorer l’expérience d’affichage des rapports dans les applications mobiles en créant une disposition en mode portrait. Dans Power BI Desktop et le service Power BI, vous réorganisez et redimensionnez les visuels de rapport pour une expérience optimale en mode portrait.  
 
-Recherchez des informations sur l’affichage des rapports sur un appareil mobile à la place ? Essayez ce démarrage rapide [Explorer des tableaux de bord et rapports dans les applications mobiles Power BI](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
+Vous cherchez plutôt des informations sur l’affichage des rapports sur un appareil mobile ? Essayez le démarrage rapide [Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 ![Rapport optimisé sur un téléphone](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-Plus vous pouvez créer [ *réactive* visuels](#optimize-a-visual-for-any-size) et [segments réactifs](#enhance-slicers-to-work-well-in-phone-reports) qui se redimensionnent également n’importe où. Si vous ajoutez des filtres à votre rapport, ils apparaissent automatiquement dans le rapport optimisé.
+Vous pouvez également créer des [*visuels* réactifs](#optimize-a-visual-for-any-size) et des [segments réactifs](#enhance-slicers-to-work-well-in-phone-reports) qui se redimensionnent bien n’importe où. Si vous ajoutez des filtres à votre rapport, ceux-ci apparaissent automatiquement dans le rapport optimisé.
 
 ## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Afficher une version portrait d’une page de rapport
 
@@ -44,7 +44,7 @@ Après avoir créé un rapport, vous pouvez l’optimiser pour les téléphones 
    
     ![Glisser-déplacer un visuel](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
-    Vous pouvez ajouter tout ou partie des visuels de la page de rapport principale à la page de rapport pour téléphone. Vous ne pouvez ajouter chaque visuel qu’une seule fois. Vous n’êtes pas obligé d’inclure tous les éléments visuels.
+    Vous pouvez ajouter tout ou partie des visuels de la page de rapport principale à la page de rapport pour téléphone. Vous ne pouvez ajouter chaque visuel qu’une seule fois. Vous n’êtes pas obligé d’inclure tous les visuels.
 
 4. Vous pouvez redimensionner vos visuels sur la grille, comme vous le feriez pour les vignettes des tableaux de bord et tableaux de bord mobiles.
    

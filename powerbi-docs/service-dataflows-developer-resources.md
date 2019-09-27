@@ -1,5 +1,5 @@
 ---
-title: Ressources du développeur pour les flux de données Power BI
+title: Ressources du développeur pour les dataflows Power BI
 description: Rechercher des ressources pour le développement et les flux de données Power BI
 author: davidiseminger
 manager: kfile
@@ -12,12 +12,12 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 9a4caed97881e176d075527c90ae8d5eff213676
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61136758"
 ---
-# <a name="developer-resources-for-power-bi-dataflows"></a>Ressources du développeur pour les flux de données Power BI
+# <a name="developer-resources-for-power-bi-dataflows"></a>Ressources du développeur pour les dataflows Power BI
 
 Il y a plusieurs façons d’utiliser des flux de données sans code, en les créant ou en les connectant à des entités dans le service Power BI et en s’y connectant dans Power BI Desktop. De nombreuses organisations souhaitent avoir la souplesse nécessaire pour développer leurs propres solutions. Cet article fournit des informations sur l’API REST de Power BI et d’autres ressources de développeur.
 
@@ -38,8 +38,8 @@ Cet article fournit des informations sur les ressources de développeur pour les
 
 * [Préparation des données en libre-service avec des flux de données](service-dataflows-overview.md)
 * [Créer et utiliser des flux de données dans Power BI](service-dataflows-create-use.md)
-* [À l’aide d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [À l’aide de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
+* [Utilisation d’entités calculées sur Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Utilisation de flux de données avec des sources de données locales](service-dataflows-on-premises-gateways.md)
 
 Pour plus d’informations sur le développement CDM et le tutoriel, consultez les rubriques suivantes :
 * [Vue d’ensemble du modèle CMD (Common Data Model) ](https://docs.microsoft.com/powerapps/common-data-model/overview)

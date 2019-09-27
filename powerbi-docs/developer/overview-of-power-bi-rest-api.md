@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 03/25/2019
 ms.openlocfilehash: fd49c69a14d3dac6b1a045f6aba407ec7aac0deb
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61269444"
@@ -24,12 +24,12 @@ Avec l’API REST Power BI, il est possible d’effectuer des tâches de gestion
 
 Voici quelques opérations possibles avec les API Power BI.
 
-| **Pour en savoir plus** | **Ces informations de référence** |
+| **Pour en savoir plus** | **Référencer ces informations** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Incorporer des rapports, des tableaux de bord et des vignettes pour les utilisateurs de Power BI et ceux qui n’utilisent pas Power BI. | [Comment incorporer vos tableaux de bord, rapports et vignettes Power BI ](embedding-content.md) |
+| Incorporer des rapports, des tableaux de bord et des vignettes pour les utilisateurs de Power BI et ceux qui n’utilisent pas Power BI. | [Guide pratique pour incorporer vos tableaux de bord, rapports et vignettes Power BI](embedding-content.md) |
 | Effectuez des tâches de gestion sur des objets Power BI. | [Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/) |
 | Étendre un workflow d’entreprise existant pour transmettre des données clés à un tableau de bord Power BI. | [Transmettre des données à un tableau de bord ](walkthrough-push-data.md) |
-| Authentifiez-vous sur Power BI. | [Authentifiez-vous sur Power BI ](get-azuread-access-token.md) |
+| Authentifiez-vous sur Power BI. | [S’authentifier sur Power BI ](get-azuread-access-token.md) |
 
 > [!NOTE]
 > Les API Power BI font encore référence aux espaces de travail d’application en tant que groupes. Toutes les références à des groupes indiquent que vous travaillez avec des espaces de travail d’applications.
@@ -38,8 +38,8 @@ Voici quelques opérations possibles avec les API Power BI.
 
 | Outil(s) | Description |  |  |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-| [Outil d’interface](https://microsoft.github.io/PowerBI-JavaScript/demo) | Découvrez un exemple complet de l’utilisation des API JavaScript Power BI. Cet outil représente aussi un moyen rapide de jouer avec différents types d’exemples Power BI Embedded. |  |  |
-| [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | Pour obtenir plus d’informations sur les API JavaScript Power BI. |  |  |
+| [Outil Playground](https://microsoft.github.io/PowerBI-JavaScript/demo) | Découvrez un exemple complet de l’utilisation des API JavaScript Power BI. Cet outil représente aussi un moyen rapide de jouer avec différents types d’exemples Power BI Embedded. |  |  |
+| [Wiki JavaScript Power BI](https://github.com/Microsoft/powerbi-javascript/wiki) | Pour obtenir plus d’informations sur les API JavaScript Power BI. |  |  |
 | [Postman](https://www.getpostman.com/) | Exécutez des requêtes, testez, déboguez, supervisez, exécutez des tests automatisés et bien plus encore. |
 
 ## <a name="push-data-into-power-bi"></a>Transmettre des données à Power BI
@@ -58,7 +58,7 @@ Vous pouvez utiliser l’API Power BI pour [envoyer (push) des données dans un 
 
 * [Transmission de données à un jeu de données](walkthrough-push-data.md)
 * [Développement d’un visuel personnalisé Power BI](custom-visual-develop-tutorial.md)
-* [Référence de l’API REST Power BI](rest-api-reference.md)
+* [Informations de référence sur l’API REST de Power BI](rest-api-reference.md)
 * [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

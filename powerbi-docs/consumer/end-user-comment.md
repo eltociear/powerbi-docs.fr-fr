@@ -5,19 +5,18 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: d09ada0d3309a9cb2b93a8cd4fa3d6740e69ba77
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: f9979a852028e929b626e76534fef073feca3fd8
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073548"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100725"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Ajouter des commentaires à un tableau de bord ou à un rapport
 Ajoutez un commentaire personnel ou démarrez une conversation à propos d’un tableau de bord ou d’un rapport avec vos collègues. Les **commentaires** sont une fonctionnalité parmi d’autres qui permet à un *consommateur* de collaborer avec d’autres personnes. 
@@ -29,7 +28,7 @@ Les commentaires peuvent être ajoutés à l’ensemble d’un tableau de bord, 
 
 Lorsque vous ajoutez un commentaire à un rapport, Power BI capture le filtre et les valeurs de segment actuels. Cela signifie que lorsque vous sélectionnez un commentaire ou y répondez, la page de rapport ou le visuel du rapport peut changer pour vous montrer les sélections de filtre et de segment qui étaient actives lorsque le commentaire a été ajouté pour la première fois.  
 
-![Vidéo présentant un rapport avec des filtres](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
+![Vidéo présentant un rapport avec des filtres](media/end-user-comment/power-bi-comment.gif)
 
 Pourquoi est-ce important ? Prenons l’exemple d’un collègue ayant appliqué un filtre qui a révélé une information intéressante qu’il souhaite partager avec l’équipe. Si ce filtre n’était pas sélectionné, le commentaire serait probablement moins pertinent.
 
@@ -40,49 +39,50 @@ Les processus d’ajout de commentaires à un tableau de bord ou à un rapport s
 
 1. Ouvrez un tableau de bord ou un rapport Power BI et sélectionnez l’icône **Commentaires**. La boîte de dialogue Commentaires s’ouvre.
 
-    ![icône de commentaires](media/end-user-comment/power-bi-comment-icon.png)
+    ![icône de commentaires](media/end-user-comment/power-bi-comment-menu.png)
 
     Vous pouvez constater ici que le créateur du tableau de bord a déjà ajouté un commentaire général.  Toute personne ayant accès à ce tableau de bord peut voir ce commentaire.
 
-    ![icône de commentaires](media/end-user-comment/power-bi-dash-comment.png)
+    ![icône de commentaires](media/end-user-comment/power-bi-first-comments.png)
 
 2. Pour répondre, sélectionnez **Répondre**, tapez votre réponse, puis sélectionnez **Poster**.  
 
     ![Commentaires, icône Répondre](media/end-user-comment/power-bi-comment-reply.png)
 
-    Par défaut, Power BI envoie votre réponse au collègue à l’origine du thread de commentaires (dans ce cas, Aaron F). 
+    Par défaut, Power BI envoie votre réponse au collègue à l’origine du thread de commentaires, dans ce cas, Aaron. 
 
-    ![Commentaire avec réponse](media/end-user-comment/power-bi-response.png)
+    ![Commentaire avec réponse](media/end-user-comment/power-bi-respond.png)
 
  3. Si vous souhaitez ajouter un commentaire qui ne fait pas partie d’un thread existant, entrez votre commentaire dans le champ de texte situé dans la partie supérieure.
 
-    ![Commentaires, icône Répondre](media/end-user-comment/power-bi-new-comment.png)
+    ![Commentaires, icône Répondre](media/end-user-comment/power-bi-new-comments.png)
 
     Les commentaires pour ce tableau de bord ressemblent maintenant à ceci.
 
-    ![Commentaires, conversations](media/end-user-comment/power-bi-comment-conversation.png)
+    ![Commentaires, conversations](media/end-user-comment/power-bi-conversation.png)
 
 ### <a name="add-a-comment-to-a-specific-dashboard-or-report-visual"></a>Ajouter un commentaire à un visuel de tableau de bord ou de rapport spécifique
 Vous pouvez également ajouter des commentaires à des vignettes de tableau de bord individuelles et à des visuels de rapport individuels. Les processus sont similaires et, dans cet exemple, nous utilisons un rapport.
 
 1. Pointez sur le visuel, puis sélectionnez les points de suspension (...).    
-2. Dans la liste déroulante, sélectionnez **Ajouter un commentaire**.
+2. Dans la liste déroulante, sélectionnez **Ouvrir les commentaires**.
 
-    ![Ajouter un commentaire est le premier choix](media/end-user-comment/power-bi-comment-report.png)  
+    ![Ajouter un commentaire est le premier choix](media/end-user-comment/power-bi-report-comment.png)  
 
 3.  La boîte de dialogue **Commentaires** s’ouvre, et les autres visuels de la page sont grisés. Ce visuel n’a pas encore de commentaires. 
 
-    ![Ajouter un commentaire pour soi-même](media/end-user-comment/power-bi-comment-bar.png)  
+    ![Ajouter un commentaire pour soi-même](media/end-user-comment/power-bi-comment-column.png)  
 
 4. Tapez votre commentaire, puis sélectionnez **Poster**.
 
-    ![Ajouter un commentaire pour soi-même](media/end-user-comment/power-bi-comment-june.png)  
+    ![Ajouter un commentaire pour soi-même](media/end-user-comment/power-bi-comment-logistics.png)  
 
     - Dans une page de rapport, la sélection d’un commentaire effectué sur un visuel met en surbrillance ce visuel (voir ci-dessus).
 
     - Dans un tableau de bord, l’icône représentant un graphique ![commentaire avec icône représentant un graphique](media/end-user-comment/power-bi-comment-chart-icon.png) indique qu’un commentaire est lié à un visuel spécifique. Les commentaires qui s’appliquent à l’intégralité du tableau de bord n’ont pas d’icône spéciale. La sélection de l’icône représentant un graphique permet de mettre en surbrillance le visuel associé dans le tableau de bord.
+    
 
-        ![visuel correspondant mis en surbrillance](media/end-user-comment/power-bi-comment-highlight2.png)
+    ![visuel correspondant mis en surbrillance](media/end-user-comment/power-bi-highlight.png)
 
 5. Sélectionnez **Fermer** pour revenir au tableau de bord ou au rapport.
 

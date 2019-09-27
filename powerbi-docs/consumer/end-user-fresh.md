@@ -7,47 +7,54 @@ ms.service: powerbi
 ms.custom: ''
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/08/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: dbad2927b64966a459086531fbfbf3e3e5de2eab
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 46f9d40b5e556c0d306aa77243a49835fca9d812
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70751653"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141742"
 ---
 # <a name="your-content-is-up-to-date"></a>Votre contenu est à jour
 En tant que *consommateur*, vous interagissez avec du contenu qui a été créé par des *concepteurs* et partagé avec vous. Vous vous demandez peut-être parfois si ce contenu est à jour ou simplement quand il a été actualisé pour la dernière fois. Savoir que vous utilisez le contenu le plus récent vous rassure.  
  
-![tableau de bord Power BI](media/end-user-consumer/power-bi-service.png)
+![tableau de bord Power BI](media/end-user-fresh/power-bi-dashboards.png)
 
 
 La garantie d’utiliser les données les plus récentes est souvent un facteur essentiel pour prendre les bonnes décisions. Comment vous assurer que vous utilisez le contenu le plus récent ? Dans la plupart des cas, vous n’avez rien à faire en particulier. En effet, les applications qui ont été partagées avec vous sont automatiquement actualisées et mises à jour selon une planification établie par leur concepteur. Il en va de même pour les tableaux de bord et les rapports partagés avec vous : le concepteur garantit que leur contenu est mis à jour soit manuellement, soit automatiquement à l’aide d’une planification de l’actualisation.  
 
 Si vous avez des questions sur l’actualisation des données, contactez le concepteur.
 
-## <a name="how-to-locate-the-name-of-the-designer"></a>Comment trouver le nom du concepteur ?
+## <a name="how-to-locate-the-name-of-the-designer-or-owner"></a>Comment trouver le nom du concepteur ou propriétaire ?
+
+### <a name="dashboard-or-report"></a>Tableau de bord ou rapport
+
+Le nom du propriétaire est disponible à partir de la barre de titre des tableaux de bord et des rapports. Sélectionnez le nom du rapport ou du tableau de bord pour afficher des détails supplémentaires, dont le **Propriétaire**.
+
+![Propriétaire de tableau de bord Power BI](media/end-user-fresh/power-bi-owner.png)
+
 
 ### <a name="apps"></a>Applications
 
-L’écran de l’application affiche le nom du concepteur ainsi que la date de création de l’application.  
+L’écran de l’application affiche le nom du concepteur ainsi que la date de dernière mise à jour de l’application.  
 
 1. Dans le volet de navigation de gauche, sélectionnez **Applications**.
 
-    ![volet de navigation de gauche](media/end-user-fresh/power-bi-nav-apps.png)
+    ![volet de navigation de gauche](media/end-user-fresh/power-bi-nav-app.png)
 
-    Pour chaque application, vous voyez son titre et la date de sa création. 
 
-2. Pointez sur l’application pour voir également le nom du concepteur. 
+
+2. Pointez sur l’application pour afficher le titre, la date d’actualisation et le nom du concepteur. 
 
     ![2 applications dont une est sélectionnée](media/end-user-fresh/power-bi-app.png)
 
 
 ### <a name="shared-with-me"></a>Partagé avec moi
-L’écran **Partagé avec moi** affiche le nom du propriétaire du contenu ainsi que la date à laquelle le contenu a été partagé avec vous.
+L’écran **Partagé avec moi** affiche le nom du propriétaire du contenu ainsi que la date à laquelle le contenu a été partagé avec vous pour la dernière fois.
 
-![écran Partagé avec moi montrant la date de modification et le propriétaire](media/end-user-fresh/power-bi-shared-new.png) 
+![écran Partagé avec moi montrant la date de modification et le propriétaire](media/end-user-fresh/power-bi-share.png) 
 
 
 ## <a name="how-to-look-up-the-last-refresh-date"></a>Comment trouver la date de la dernière actualisation ?
@@ -58,24 +65,24 @@ Pour les vignettes de tableau de bord, affichez la vignette en mode Focus pour c
 
 1. Sur une vignette de tableau de bord, sélectionnez les points de suspension (...) et choisissez **Ouvrir en mode Focus**.
 
-    ![menu affiché après la sélection des points de suspension](media/end-user-fresh/power-bi-focus.png)
+    ![menu affiché après la sélection des points de suspension](media/end-user-fresh/power-bi-focus-mode.png)
 
 2. La date de la dernière actualisation est affichée en haut à droite. Si vous ne la voyez pas, développez votre navigateur pour l’agrandir. 
 
     ![navigateur agrandi montrant la dernière actualisation](media/end-user-fresh/power-bi-last-refresh2.png)
 
-### <a name="from-dashboards-and-reports"></a>À partir des tableaux de bord et des rapports
-Une autre méthode pour voir la date de la dernière actualisation consiste à utiliser **Afficher les éléments associés**.  L’option **Afficher les éléments associés** se trouve dans la barre de menus supérieure de Power BI.
+### <a name="dashboards-and-reports"></a>Tableaux de bord et rapports
+Une autre méthode pour voir la date de la dernière actualisation consiste à utiliser **Afficher les éléments associés**.  L’option **Afficher les éléments associés** est disponible en sélectionnant les points de suspension (...) dans la barre de menus supérieure de Power BI.
 
-![Sélectionner Afficher les éléments associés dans le menu](media/end-user-fresh/power-bi-view-related.png)
+![Sélectionner Afficher les éléments associés dans le menu](media/end-user-fresh/power-bi-view-related-dropdown.png)
 
 Le volet **Contenu associé** affiche les informations sur la dernière actualisation du jeu de données sous-jacent dans le tableau de bord ou le rapport.
 
-![tableau de bord Power BI](media/end-user-fresh/power-bi-last-refresh.png)
+![tableau de bord Power BI](media/end-user-fresh/power-bi-refresh.png)
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Que se passe-t-il si une application est supprimée par le concepteur ?
 
-Quand un concepteur supprime une application, les tableaux de bord et rapports associés à cette application sont aussi automatiquement supprimés de votre espace de travail Power BI. Ces ressources ne sont plus disponibles et l’application ne figure plus dans le volet de navigation.
+Quand un concepteur supprime une application, les tableaux de bord et rapports associés à cette application sont aussi automatiquement supprimés de votre espace de travail Power BI. Ces ressources ne sont plus disponibles et l’application ne figure plus dans le conteneur Applications ou ailleurs dans la barre de navigation.
 
 
 ## <a name="subscribe-to-see-changes"></a>S’abonner pour voir les modifications

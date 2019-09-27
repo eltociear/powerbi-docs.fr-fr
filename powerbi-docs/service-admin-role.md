@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: aad02103903837afbb7bbce48ab9607b5dbf62c3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2185d7a9c91ed014cf0bed29d6393be0e40556a8
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65099640"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71074510"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Présentation du rôle d’administrateur de service Power BI
 
@@ -39,9 +39,9 @@ Le rôle d’administrateur de service Power BI n’offre pas les fonctionnalit�
 
 Pour affecter des utilisateurs au rôle d’administrateur Power BI dans le Centre d’administration Microsoft 365, effectuez les étapes suivantes.
 
-1. Dans le [centre d’administration Microsoft 365](https://portal.office.com/adminportal/home#/homepage), sélectionnez **utilisateurs** > **utilisateurs actifs**.
+1. Dans le [Centre d’administration Microsoft 365](https://portal.office.com/adminportal/home#/homepage), sélectionnez **Utilisateurs** > **Utilisateurs actifs**.
 
-    ![Centre d’administration Microsoft 365](media/service-admin-role/powerbi-admin-users.png)
+    ![Centre d'administration Microsoft 365](media/service-admin-role/powerbi-admin-users.png)
 
 1. Sélectionnez l’utilisateur que vous souhaitez assigner au rôle.
 
@@ -68,7 +68,7 @@ Vous pouvez également affecter des rôles à des utilisateurs à l’aide de Po
    PS C:\Windows\system32> Connect-AzureAD
    ```
 
-1. Ensuite, obtenez le **ObjectId** pour le **administrateur de Service Power BI** rôle. Pour obtenir l’**ObjectId**, vous pouvez exécuter l’applet de commande [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole).
+1. Vous devez ensuite obtenir **l’ObjectId** pour le rôle **Administrateur de service Power BI**. Pour obtenir l’**ObjectId**, vous pouvez exécuter l’applet de commande [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole).
 
     ```
     PS C:\Windows\system32> Get-AzureADDirectoryRole

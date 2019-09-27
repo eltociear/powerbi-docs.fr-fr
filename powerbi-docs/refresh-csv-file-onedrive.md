@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 09/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 80182ae0898ab5c88acb85ce24a55fe615cf2a0b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 589f34db5009a9203ee33c13dc4931e42d68ddcb
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61415624"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71076108"
 ---
 # <a name="refresh-a-dataset-created-from-a-csv-file-on-onedrive-or-sharepoint-online"></a>Actualiser un jeu de données créé à partir d’un fichier CSV sur OneDrive ou SharePoint Online
 ## <a name="what-are-the-advantages"></a>Quels sont les avantages ?
@@ -36,7 +36,7 @@ La connexion à OneDrive Entreprise dans Power BI est généralement transpare
 
 Lorsque vous vous connectez à votre compte Microsoft, veillez à activer l’option Maintenir la connexion. Power BI peut ensuite synchroniser les mises à jour avec des jeux de données dans Power BI
 
-![](media/refresh-csv-file-onedrive/refresh_signin_keepmesignedin.png)
+![Exemple de connexion](media/refresh-csv-file-onedrive/refresh_signin_keepmesignedin.png)
 
 Si vous apportez à votre fichier .csv des modifications qui ne peuvent pas être synchronisées avec le jeu de données dans Power BI parce que les informations d’identification de votre compte Microsoft pourraient avoir changé, vous devez vous connecter au fichier et l’importer à nouveau à partir de votre OneDrive personnel.
 

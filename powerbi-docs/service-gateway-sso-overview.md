@@ -10,16 +10,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4991117cfa8b34d9adbbd2dc29082d1e75b6852d
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271868"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100380"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Vue d’ensemble de l’authentification unique (SSO) pour les passerelles dans Power BI
 
-Vous pouvez vous connecter de façon fluide avec une authentification unique, qui permet la mise à jour des rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec la délégation contrainte de Kerberos ou SAML (Security Assertion Markup Language). La passerelle de données locale facilite l’authentification unique avec DirectQuery, qu’elle utilise pour se connecter à des sources de données locales.
+Vous pouvez vous connecter de façon fluide avec une authentification unique, qui permet la mise à jour en temps réel des rapports et tableaux de bord Power BI à partir de données locales, en configurant votre passerelle de données locale avec la délégation contrainte de Kerberos ou SAML (Security Assertion Markup Language). La passerelle de données locale prend en charge l’authentification unique avec DirectQuery, qu’elle utilise pour se connecter à des sources de données locales.
 
 Nous prenons en charge les sources de données suivantes :
 
@@ -52,8 +52,7 @@ Des détails supplémentaires concernant ces étapes figurent ci-dessous :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Les principes fondamentaux de l’authentification unique n’ayant plus de secret pour vous, vous pouvez approfondir vos connaissances sur Kerberos et SAML :
+Les principes fondamentaux de l’authentification unique via la passerelle n’ayant plus de secret pour vous, vous pouvez approfondir vos connaissances sur Kerberos et SAML :
 
 * [Authentification unique (SSO) - Kerberos](service-gateway-sso-kerberos.md)
-* [Authentification unique (SSO) - Kerberos - basée sur les ressources](service-gateway-sso-kerberos-resource.md)
 * [Authentification unique (SSO) - SAML](service-gateway-sso-saml.md)
