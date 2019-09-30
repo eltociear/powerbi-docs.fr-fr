@@ -1,20 +1,20 @@
 ---
 title: Introduction aux tests unitaires pour les projets de visuels Power BI
 description: Cet article explique comment écrire des tests unitaires pour des projets de visuels Power BI.
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: bb9835ceba302716c2c4b1e28eda33c6e4b1db42
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236715"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192458"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Tutoriel : Ajouter des tests unitaires pour des projets de visuels Power BI
 
@@ -24,7 +24,7 @@ Cet article décrit les principes fondamentaux de l’écriture de tests unitair
 * Utiliser le package powerbi-visuals-utils-testutils.
 * Utiliser des simulacres et des substituts pour aider à simplifier les tests unitaires des visuels Power BI.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
 * Un projet de visuels Power BI installé
 * Un environnement Node.js configuré
@@ -616,4 +616,4 @@ Dans l’étendue du fichier, vous pouvez voir le code source. Les utilitaires `
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Quand votre visuel est prêt, vous pouvez le soumettre pour publication. Pour plus d’informations, consultez [Publier des visuels personnalisés dans AppSource](../office-store.md).
+Quand votre visuel est prêt, vous pouvez le soumettre pour publication. Pour plus d’informations, consultez [Publier des visuels Power BI dans AppSource](../office-store.md).

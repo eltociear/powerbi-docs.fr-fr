@@ -1,20 +1,20 @@
 ---
 title: Présentation du mappage des vues de données dans les visuels Power BI
 description: Cet article explique comment Power BI transforme les données avant de les transmettre dans des visuels.
-author: asander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 77d5d6423c8246712d12dcc041d32ae73f68b72e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237222"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193554"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Présentation du mappage des vues de données dans les visuels Power BI
 
@@ -397,7 +397,7 @@ Avec les fonctionnalités données :
 
 Vous pouvez visualiser la vue des données de table comme suit :  
 
-| Pays| Année | Ventes |
+| Pays| Année | Sales |
 |-----|-----|------|
 | USA | 2016 | 100 |
 | USA | 2015 | 50 |
@@ -618,7 +618,7 @@ Le visuel obtient sa structure de données comme décrit dans le code suivant (s
 
 Pour contrôler la quantité de données à recevoir dans la vue de données, vous pouvez appliquer un algorithme de réduction des données.
 
-Par défaut, tous les visuels personnalisés ont l’algorithme de réduction des données appliqué avec la valeur *count* définie sur 1 000 points de données. Cela revient à définir les propriétés suivantes dans le fichier *capabilities.json* :
+Par défaut, tous les visuels Power BI ont l’algorithme de réduction des données appliqué avec la valeur *count* définie sur 1000 points de données. Cela revient à définir les propriétés suivantes dans le fichier *capabilities.json* :
 
 ```json
 "dataReductionAlgorithm": {
@@ -628,7 +628,7 @@ Par défaut, tous les visuels personnalisés ont l’algorithme de réduction de
 }
 ```
 
-Vous pouvez affecter à *count* n’importe quelle valeur entière allant jusqu’à 30 000. Les visuels personnalisés basés sur R peuvent prendre en charge jusqu’à 150 000 lignes.
+Vous pouvez affecter à *count* n’importe quelle valeur entière allant jusqu’à 30 000. Les visuels Power BI basés sur R peuvent prendre en charge jusqu’à 150000 lignes.
 
 ## <a name="data-reduction-algorithm-types"></a>Types d’algorithmes de réduction des données
 

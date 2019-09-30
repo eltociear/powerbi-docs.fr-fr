@@ -1,26 +1,26 @@
 ---
 title: Développement d’un visuel Power BI
 description: Un tutoriel sur la façon de développer un visuel personnalisé Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5d9ed20435069fa31707d9532141558351ec63ba
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415441"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194500"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Tutoriel : Développement d’un visuel Power BI
 
-Nous permettons aux développeurs d’ajouter facilement des visuels personnalisées à Power BI utilisables dans les tableaux de bord et les rapports. Pour vous aider à démarrer, nous avons publié le code de toutes nos visualisations sur GitHub.
+Nous permettons aux développeurs d’ajouter facilement des visuels Power BI à Power BI utilisables dans les tableaux de bord et les rapports. Pour vous aider à démarrer, nous avons publié le code de toutes nos visualisations sur GitHub.
 
-En plus de l’infrastructure de la visualisation, nous fournissons notre suite et nos outils de test afin d’aider la communauté à créer des visuels personnalisés de qualité pour Power BI.
+En plus de l’infrastructure de la visualisation, nous fournissons notre suite et nos outils de test afin d’aider la communauté à créer des visuels Power BI de qualité pour Power BI.
 
 Ce didacticiel vous montre comment développer un visuel personnalisé Power BI nommé carte circulaire pour afficher une valeur de mesure mise en forme à l’intérieur d’un cercle. La carte visuelle prend en charge la personnalisation de la couleur de remplissage et de l’épaisseur de son contour.
 

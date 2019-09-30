@@ -1,22 +1,22 @@
 ---
-title: Publier des visuels personnalisés dans AppSource
+title: Publier des visuels Power BI dans AppSource
 description: Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 3cbc2c6fcb70d6298c9d2ade3e3f2cd10cd8a834
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623833"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194506"
 ---
-# <a name="publish-custom-visuals-to-appsource"></a>Publier des visuels personnalisés dans AppSource
+# <a name="publish-power-bi-visuals-to-appsource"></a>Publier des visuels Power BI dans AppSource
 
 Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser.
 
@@ -40,13 +40,13 @@ Une fois que vous avez terminé de lire nos [recommandations concernant les visu
 | Captures d’écran |Oui |Vous devez fournir au moins une capture d’écran. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Le format doit faire exactement 1366 px (largeur) x 768 px (hauteur). La taille de fichier ne peut pas être supérieure à 1 024 Ko. *Pour une utilisation optimale, ajoutez des bulles de texte pour expliquer la proposition de valeur des principales fonctionnalités affichées dans chaque capture d’écran.* |
 | Lien vers le support |Oui |Fournissez l’URL à laquelle les clients peuvent se connecter s’ils rencontrent des problèmes avec votre visuel. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre URL doit inclure https:// ou http://. |
 | Lien vers le document sur la confidentialité |Oui |Indiquez un lien vers la politique de confidentialité pour les clients qui utilisent votre visuel. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre lien doit inclure https:// ou http://. |
-| Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels personnalisés Power BI. Pour utiliser le contrat CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de chargement du fichier « Contrat de licence utilisateur final » du tableau de bord vendeur : [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels Power BI. Pour utiliser le contrat CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de chargement du fichier « Contrat de licence utilisateur final » du tableau de bord vendeur : [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
 | Lien vers la vidéo |Non |Pour augmenter l’intérêt porté par les utilisateurs à votre visuel personnalisé, nous vous conseillons de fournir un lien vers une vidéo de présentation de votre visuel. Le format de votre URL doit inclure https:// ou http://. |
 | Dépôt GitHub |Non |Il est préférable d’avoir un lien valide et public vers un dépôt [GitHub](https://www.github.com) avec les sources de votre visuel et des exemples de données pour permettre aux autres développeurs de fournir des commentaires et de proposer des améliorations pour votre code. |
 
 ## <a name="submitting-to-power-bi"></a>Soumission à Power BI
 
-La soumission commence par l’envoi d’un e-mail à l’équipe de soumission des visuels personnalisés Power BI. Envoyez un e-mail à l’adresse [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
+La soumission commence par l’envoi d’un e-mail à l’équipe de soumission des visuels Power BI. Envoyez un e-mail à l’adresse [pbivizsubmit@microsoft.com](mailto:pbivizsubmit@microsoft.com).
 
 > [!IMPORTANT]
 > Vous devez renseigner les champs suivants dans le fichier pbiviz.json avant de créer le package .pbiviz : « description », « supportUrl », « author », « name » et « email ».
@@ -89,13 +89,13 @@ Suivez les étapes ci-dessous pour terminer la soumission.
    * *Titre de la soumission :* indiquez le nom qui sera donné à votre soumission dans le centre de développement.
    * *Version :* votre numéro de version est rempli automatiquement à partir du package de l’application complémentaire.
    * *Date de sortie (UTC) :* sélectionnez la date de publication de votre application dans le Store. Si vous choisissez une date ultérieure, votre application n’est pas disponible dans le Store jusqu’à cette date.
-   * *Catégorie :* la première catégorie est automatiquement remplie comme suit : « Visualisation des données + BI ». C’est la façon dont tous les visuels Power BI personnalisés sont marqués. Vous pouvez fournir jusqu’à 2 catégories supplémentaires pour que les utilisateurs puissent facilement rechercher votre visuel
+   * *Catégorie :* la première catégorie est automatiquement remplie comme suit : « Visualisation des données + BI ». C’est la façon dont tous les visuels Power BI sont marqués. Vous pouvez fournir jusqu’à 2 catégories supplémentaires pour que les utilisateurs puissent facilement rechercher votre visuel
    * *Remarques relatives au test (facultatives) :* cette option est utile si vous souhaitez fournir des instructions pour les testeurs Microsoft
    * *Mon application fait appel à des solutions de chiffrement, prend en charge, contient ou utilise ce type de technologie :* gardez cette option désélectionnée.
    * *Ajouter ce complément au catalogue des compléments Office sur iPad :* gardez cette option désélectionnée.
 6. Chargez le logo de votre visuel en sélectionnant le signe **+** sous **Logo de l’application**. Sélectionnez ensuite le fichier d’icône dans la boîte de dialogue Ouvrir un fichier. .png, .jpg, .jpeg et .gif sont les formats autorisés. Le fichier doit avoir une taille de 300 px (largeur) sur 300 px (hauteur) et ne doit pas dépasser 512 Ko.
 
-    ![Logo de l’application](media/office-store/powerbi-custom-visual-app-logo.png)
+    ![Logo de l'application](media/office-store/powerbi-custom-visual-app-logo.png)
 
 7. Indiquez les informations requises dans **Documents de support**.
 
@@ -104,7 +104,7 @@ Suivez les étapes ci-dessous pour terminer la soumission.
    * Lien vers la vidéo
    * Contrat de Licence Utilisateur Final (CLUF)
 
-       Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels personnalisés Power BI. Pour utiliser le contrat CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de chargement du fichier « Contrat de licence utilisateur final » du tableau de bord vendeur : [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
+       Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels Power BI. Pour utiliser le contrat CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de chargement du fichier « Contrat de licence utilisateur final » du tableau de bord vendeur : [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
 
 8. Sélectionnez **Suivant** pour accéder à la page **Détails**.
 

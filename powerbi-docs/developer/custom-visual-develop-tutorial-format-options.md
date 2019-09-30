@@ -1,22 +1,22 @@
 ---
 title: Ajouter des options de mise en forme à un visuel personnalisé Power BI
 description: Tutoriel de développement d’options de mise en forme de visuels personnalisés Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: 56134143a752a094c339248c3eeeab57116d3501
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5fa14e3aa8a303206d52359d04db05850e096d81
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61380150"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194584"
 ---
-# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Tutoriel : Ajouter des options de mise en forme à un visuel personnalisé Power BI
+# <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Tutoriel : Ajouter des options de mise en forme à un visuel Power BI
 
 Dans ce tutoriel, nous allons étudier comment ajouter des propriétés communes au visuel.
 
@@ -263,4 +263,4 @@ Pour obtenir des conseils sur le débogage de votre élément visuel personnalis
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez lister le visuel que vous venez de développer pour que d’autres puissent s’en servir en l’envoyant à **AppSource**. Pour plus d’informations sur ce processus, reportez-vous à [Publier des visuels personnalisés dans AppSource](office-store.md).
+Vous pouvez lister le visuel que vous venez de développer pour que d’autres puissent s’en servir en l’envoyant à **AppSource**. Pour plus d’informations sur ce processus, reportez-vous à [Publier des visuels Power BI dans AppSource](office-store.md).

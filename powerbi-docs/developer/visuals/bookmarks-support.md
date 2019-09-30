@@ -1,24 +1,24 @@
 ---
 title: Ajouter la prise en charge des signets pour les visuels Power BI
 description: Les visuels Power BI peuvent gérer le changement de signets
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c7fb8fa6fcf8c07f0d8f466892fff8d03a492a79
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: c19b67a59d0ecb4cbfbcf5ad8dd18886f440e164
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237279"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194442"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Ajouter la prise en charge des signets pour les visuels Power BI
 
-Avec les signets de rapport Power BI, vous pouvez capturer une vue configurée d’une page de rapport, l’état de sélection et l’état de filtrage du visuel. Toutefois, la prise en charge des signets et la réaction correcte aux modifications nécessitent des actions supplémentaires du côté des visuels personnalisés.
+Avec les signets de rapport Power BI, vous pouvez capturer une vue configurée d’une page de rapport, l’état de sélection et l’état de filtrage du visuel. Toutefois, la prise en charge des signets et la réaction correcte aux modifications nécessitent des actions supplémentaires du côté des visuels Power BI.
 
 Pour plus d'informations sur les signets, consultez [Utiliser des signets pour partager des insights et créer des récits dans Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
@@ -32,7 +32,7 @@ Si votre visuel interagit avec d’autres visuels, sélectionne des points de do
 
 2. Mettez à jour l’API des visuels vers la version 1.11.0 pour utiliser `registerOnSelectCallback` dans une instance de `SelectionManager`. Cette API est requise pour les visuels autres que les visuels de filtre qui utilisent le `SelectionManager` standard plutôt que `InteractivityService`.
 
-### <a name="how-custom-visuals-interact-with-power-bi-in-report-bookmarks"></a>Interaction des visuels personnalisés avec Power BI dans les signets de rapport
+### <a name="how-power-bi-visuals-interact-with-power-bi-in-report-bookmarks"></a>Interaction des visuels Power BI avec Power BI dans les signets de rapport
 
 Prenons le scénario suivant : vous souhaitez créer plusieurs signets sur la page de rapport, avec un état de sélection différent dans chaque signet.
 

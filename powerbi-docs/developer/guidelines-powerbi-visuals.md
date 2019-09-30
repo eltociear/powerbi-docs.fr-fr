@@ -1,20 +1,20 @@
 ---
 title: Instructions relatives aux visuels Power BI
 description: Découvrez comment publier votre visuel personnalisé sur AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser après l’avoir acheté.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
-ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
+ms.openlocfilehash: 71752a635c69e6712befbb00e942189fa4dacc36
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68380218"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327729"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
 Avant de [publier](https://docs.microsoft.com/power-bi/developer/office-store) votre visuel sur AppSource pour que d’autres utilisateurs puissent le découvrir et l’utiliser, veillez à suivre les instructions pour créer une expérience de qualité pour vos utilisateurs. 
@@ -25,11 +25,14 @@ Tous les visuels Power BI doivent activer le menu contextuel pour offrir une exp
 
 
 ## <a name="logo-guidelines"></a>Instructions relatives aux logos
+> [!NOTE]
+> Dans cet article, le mot logo se réfère à n'importe quelle icône de marque commerciale, comme décrit dans les images ci-dessous. 
 
-Cette section décrit les spécifications relatives à l’ajout de logos et de logotypes dans les visuels. Les logos ne sont pas obligatoires. S’ils sont ajoutés, ils doivent suivre ces instructions. 
+Cette section décrit les spécifications relatives à l’ajout de logos dans les visuels Power BI. Les logos ne sont pas obligatoires. S’ils sont ajoutés, ils doivent suivre ces instructions. 
 
 > [!IMPORTANT]
 > Les logos sont autorisés en *mode d’édition uniquement*. Les logos ne peuvent *pas* être affichés en mode Affichage.
+
 
 ![Définitions](media/guidelines-powerbi-visuals/definitions.png)
 
@@ -44,11 +47,13 @@ Cette section décrit les spécifications relatives à l’ajout de logos et de 
 ![Mode d’édition](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 
+Le cas échéant, les icônes d'information en mode lecture doivent être conformes à la couleur, à la taille et à l'emplacement des logos ci-dessus.
+
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Marche à suivre pour les visuels Power BI avec des achats supplémentaires
 
 Jusqu’à une date récente, la Place de marché (AppSource) acceptait uniquement les visuels Power BI gratuits. Cette stratégie a changé (décembre 2018), pour également vous permettre d’envoyer à AppSource des visuels ayant une étiquette de prix « Un autre achat peut être requis ». 
 
-Les visuels de type « Un achat supplémentaire peut être requis » sont similaires aux compléments d’achat dans l’application (IAP) de l’Office Store. Les développeurs peuvent également faire certifier ces visuels une fois ceux-ci approuvés par l’équipe AppSource et après avoir vérifié qu’ils répondent aux critères de certification. Pour plus d’informations sur la configuration requise, consultez [Visuels personnalisés certifiés](../power-bi-custom-visuals-certified.md).
+Les visuels de type « Un achat supplémentaire peut être requis » sont similaires aux compléments d’achat dans l’application (IAP) de l’Office Store. Les développeurs peuvent également faire certifier ces visuels une fois ceux-ci approuvés par l’équipe AppSource et après avoir vérifié qu’ils répondent aux critères de certification. Pour plus d’informations sur la configuration requise, consultez [Visuels Power BI certifiés](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > Pour que le visuel soit certifié, il ne doit pas accéder à des services externes ni à des ressources externes.
