@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: fae3af81540e22b961fcb1d2a79de425fdc1cd8c
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791827"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194789"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Conseils pour créer des applications modèles dans Power BI
 
@@ -126,7 +126,6 @@ Des applications modèles peuvent être publiées sur AppSource. Suivez ces inst
 
 * Vérifiez que vous créez une application modèle avec des exemples de données qui permettent au programme d’installation de comprendre ce que l’application peut faire (un rapport vide et un tableau de bord ne sont pas approuvés).
 Les applications modèles prennent uniquement en charge les exemples de données, vérifiez que la case de l’application statique est cochée. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
-* En règle générale, seule une application avec des fonctionnalités présentant une valeur ajoutée peut être approuvée pour une utilisation générale sur AppSource. Une application avec un exemple de contenu de données doit avoir seulement une valeur statistique ou à titre de conseil.
 * Instructions à suivre par l’équipe de validation, notamment les informations d'identification et les paramètres requis pour se connecter aux données.
 * L’application doit inclure une icône d’application dans Power BI et sur votre offre CPP. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Page d’accueil configurée. [En savoir plus](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
@@ -135,6 +134,7 @@ Les applications modèles prennent uniquement en charge les exemples de données
 * Installez l’application à l’aide du lien fourni avant de l’envoyer, assurez-vous que vous pouvez connecter le jeu de données et que l’expérience de l’application est celle prévue.
 * Avant de charger bpix dans l’espace de travail de l’application modèle, veillez à décharger toutes les connexions inutiles.
 * Respectez les [Meilleures pratiques en matière de conception de visuels et de rapports](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) de Power BI pour avoir un impact maximal sur vos utilisateurs et obtenir l’approbation pour la distribution.
+<!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
 ## <a name="known-limitations"></a>Limites connues
 
@@ -142,7 +142,7 @@ Les applications modèles prennent uniquement en charge les exemples de données
 |---------|---------|
 |Contenu :  Jeux de données   | Un seul et unique jeu de données doit être présent. Seuls les jeux de données créés dans Power BI Desktop (fichiers .pbix) sont autorisés. <br>Non pris en charge : jeux de données issus d’autres applications modèles, jeux de données de plusieurs espaces de travail, rapports paginés (fichiers .rdl), classeurs Excel |
 |Contenu : Tableaux de bord | Les vignettes en temps réel ne sont pas autorisées (en d’autres termes, pas de prise en charge de la transmission de type push ou de la diffusion en continu de jeux de données) |
-|Contenu : Dataflows | Non pris en charge : Dataflows |
+|Contenu : Flux de données | Non pris en charge : Flux de données |
 |Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |
 | Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <li> DirectQuery</li><li>Connexions actives (sans Azure AS)</li> <li>Sources de données locales (pas de prise en charge des passerelles personnelles et d’entreprise)</li> <li>Vignettes en temps réel (pas de prise en charge de la transmission de type push de jeux de données)</li> <li>Modèles composites</li></ul> |
 | Jeu de données : entre plusieurs espaces de travail | Les jeux de données entre plusieurs espaces de travail sont autorisés  |

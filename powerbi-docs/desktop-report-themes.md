@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 37304f9d23c514c7223b3eca481bf3b7b2258ac4
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 64be68398ffa2ab8323307b45b5bff09ec511090
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904423"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327852"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
 Avec les **Thèmes de rapport**, vous pouvez appliquer des modifications de conception à l’ensemble de votre rapport, par exemple en utilisant les couleurs de votre entreprise, en modifiant des jeux d’icônes ou en appliquant une nouvelle mise en forme visuelle par défaut. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs et la mise en forme du thème sélectionné. Quelques exceptions s’appliquent. Elles sont décrites plus loin dans cet article.
@@ -389,7 +389,7 @@ Les tableaux de cette section définissent les noms de visuel (*visualName*), le
 | lineChart |
 | lineClusteredColumnComboChart |
 | lineStackedColumnComboChart |
-| map |
+| carte |
 | multiRowCard |
 | graphique à secteurs |
 | tableau croisé dynamique |
@@ -475,7 +475,8 @@ Une énumération, généralement utilisée pour les options de mise en forme de
 
 
 ```json
-      "general":
+{
+      "general":{ 
         "responsive": {
           "type": [
             "bool"
@@ -486,7 +487,7 @@ Une énumération, généralement utilisée pour les options de mise en forme de
           "description": [
             "The visual will adapt to size changes"
           ]
-        }
+        },
         "legend": {
         "show": {
           "type": [
@@ -4378,4 +4379,6 @@ La section suivante définit les énumérations que vous pouvez utiliser dans le
          ]
        }
     }
+  }
+}
 ```
