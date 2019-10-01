@@ -477,7 +477,7 @@
               href: service-power-bi-get-started-third-party-apps.md
     - name: Guides pratiques
       items:
-        - name: Obtenez des données de fichiers
+        - name: Obtenir des données de fichiers
           items:
             - name: Obtention de données à partir de fichiers
               href: service-get-data-from-files.md
@@ -1442,11 +1442,13 @@
           href: service-admin-power-bi-security.md
 - name: Instructions
   items:
-    - name: Bonnes pratiques pour les dataflows
-      href: service-dataflows-best-practices.md
+    - name: Vue d'ensemble
+      href: guidance/overview.md
     - name: "Qu’est-ce qu’un schéma en étoile\_?"
       href: guidance/star-schema.md
     - name: Réduire la taille du modèle de données
       href: guidance/import-modeling-data-reduction.md
     - name: Fonction DIVIDE ou opérateur de division (/)
       href: guidance/dax-divide-function-operator.md
+    - name: Bonnes pratiques pour les dataflows
+      href: service-dataflows-best-practices.md
