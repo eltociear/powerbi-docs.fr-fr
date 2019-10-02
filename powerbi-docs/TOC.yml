@@ -697,6 +697,8 @@
               href: service-cognitive-services.md
             - name: Machine Learning automatisé dans Power BI (préversion)
               href: service-machine-learning-automated.md
+        - name: Traçabilité des données
+          href: service-data-lineage.md
         - name: Rapports paginés dans Power BI
           items:
             - name: Afficher un rapport paginé
@@ -867,6 +869,8 @@
       items:
         - name: Langues et pays/régions pris en charge
           href: supported-languages-countries-regions.md
+        - name: Navigateurs pris en charge
+          href: power-bi-browsers.md
     - name: Ressources
       items:
         - name: Livres blancs
