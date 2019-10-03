@@ -873,16 +873,6 @@
           href: power-bi-browsers.md
     - name: Ressources
       items:
-        - name: Livres blancs
-          items:
-            - name: Vue d’ensemble des livres blancs
-              href: whitepapers.md
-            - name: Livre blanc sur la sécurité dans Power BI
-              href: whitepaper-powerbi-security.md
-            - name: "Déploiement de Power\_BI Premium"
-              href: whitepaper-powerbi-premium-deployment.md
-            - name: "Distribuer Power BI en externe avec Azure Active Directory\_B2B"
-              href: whitepaper-azure-b2b-power-bi.md
         - name: Vidéos
           href: videos.md
         - name: Webinaires
@@ -1456,3 +1446,13 @@
       href: guidance/dax-divide-function-operator.md
     - name: Bonnes pratiques pour les dataflows
       href: service-dataflows-best-practices.md
+    - name: Livres blancs
+      items:
+        - name: Vue d’ensemble des livres blancs
+          href: whitepapers.md
+        - name: Livre blanc sur la sécurité dans Power BI
+          href: whitepaper-powerbi-security.md
+        - name: "Déploiement de Power\_BI Premium"
+          href: whitepaper-powerbi-premium-deployment.md
+        - name: "Distribuer Power BI en externe avec Azure Active Directory\_B2B"
+          href: whitepaper-azure-b2b-power-bi.md
