@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264537"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195221"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installer et distribuer des applications modèles dans votre organisation - Power BI
 
@@ -82,7 +82,7 @@ Dans un navigateur, sélectionnez ce lien pour ouvrir AppSource filtré sur les 
    >[!NOTE]
    >Pour installer des applications de modèle qui ne sont pas répertoriées sur AppSource, vous devez effectuer la demande à partir de vos autorisations d’administrateur. Pour plus d’informations, consultez [Paramètres des applications modèles dans le portail d’administration](service-admin-portal.md#template-apps-settings) Power BI.
 
-## <a name="update-and-distribute-the-app"></a>Mettre à jour et distribuer l’application
+## <a name="customize-and-publish-the-app"></a>Personnaliser et publier l’application
 
 Une fois que vous avez mis à jour l’application pour votre organisation, vous êtes prêt à la publier. Suivez les mêmes étapes de publication que pour une application standard.
 
@@ -94,7 +94,7 @@ Une fois que vous avez mis à jour l’application pour votre organisation, vous
 
    ![Définir la description et la couleur de l’application](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
 
-3. Dans **Contenu**, vous pouvez sélectionner une page d’accueil (le tableau de bord ou le rapport).
+3. Dans **Navigation**, vous pouvez utiliser le nouveau concepteur de navigation pour votre application, ou sélectionner le tableau de bord ou le rapport pour la page d’accueil. Pour plus d’informations, consultez [Concevoir l’expérience de navigation](service-create-distribute-apps.md#design-the-navigation-experience).
 
    ![Définir la page d’accueil de l’application](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
 
@@ -106,14 +106,31 @@ Une fois que vous avez mis à jour l’application pour votre organisation, vous
 
 6. Une fois que l’application a été publiée avec succès, vous pouvez copier le lien associé et le partager avec les utilisateurs à qui vous avez accordé l’accès. Si vous avez partagé le lien avec ces utilisateurs, ces derniers le voient également dans l’onglet **Mon organisation** dans AppSource.
 
-## <a name="next-steps"></a>Étapes suivantes 
+## <a name="update-a-template-app"></a>Mettre à jour une application modèle
+
+Les créateurs d’applications modèles peuvent publier de nouvelles versions de leurs applications modèles via AppSource ou via un lien direct. Dans ce cas, vous pouvez mettre à jour l’application modèle lors de la réinstallation de l’application avec la même version ou avec la version plus récente.
+
+  >[!NOTE]
+  >L’installation d’une nouvelle version remplace toutes les modifications que vous avez apportées aux rapports et aux tableaux de bord. Pour conserver vos rapports et tableaux de bord mis à jour, vous pouvez les enregistrer sous un autre nom ou à un autre emplacement avant d’effectuer l’installation.
+
+- **Remplacer une version existante :** Remplace l’espace de travail existant par la version mise à jour de l’application modèle.
+
+   ![Mettre à jour une application modèle](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Installer dans un nouvel espace de travail :** Installe une nouvelle version de l’espace de travail et de l’application que vous devez reconfigurer.
+
+### <a name="overwrite-behavior"></a>Comportement du remplacement
+
+* Le remplacement met à jour les rapports, les tableaux de bord et le jeu de données à l’intérieur de l’*espace de travail*, mais pas l’application. Le remplacement ne modifie pas la navigation, la configuration et les autorisations de l’application.
+* Après avoir mis à jour l’espace de travail, vous devez *mettre à jour l’application* pour appliquer les modifications de l’espace de travail à l’application d’organisation.
+* Le remplacement conserve l’authentification et les paramètres configurés. Après la mise à jour, une actualisation automatique du jeu de données démarre. Pendant ce temps, l’application d’organisation, les rapports et les tableaux de bord présentent l’expérience d’*exemple de données*.
+  ![Exemple de données](media/service-template-apps-install-distribute/power-bi-sample-data.png)
+* Le remplacement présente toujours l’exemple de données jusqu’à ce que l’actualisation soit terminée. Si l’auteur de l’application modèle a apporté des modifications au jeu de données ou aux paramètres, les utilisateurs de l’espace de travail et de l’application continuent de voir l’expérience d’*exemple de données*.
+* Le remplacement ne supprime jamais les *nouveaux* rapports ou tableaux de bord que vous avez ajoutés à l’espace de travail. Il remplace les rapports et les tableaux de bord d’origine par les modifications de l’auteur d’origine.
+
+>[!IMPORTANT]
+>N’oubliez pas de [mettre à jour l’application](#customize-and-publish-the-app) après le remplacement afin d’appliquer les modifications apportées aux rapports et aux tableaux de bord pour les utilisateurs de votre application d’organisation.
+
+## <a name="next-steps"></a>Étapes suivantes
 
 [Créer des espaces de travail avec vos collègues dans Power BI](service-create-workspaces.md)
-
-
-
-
-
-￼ 
-
- 

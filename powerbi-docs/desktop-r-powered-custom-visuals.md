@@ -1,37 +1,37 @@
 ---
-title: Utiliser des visuels personnalisés optimisés pour R dans Power BI
-description: Utiliser des visuels personnalisés optimisés pour R dans Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+title: Utiliser des visuels Power BI basés sur R dans Power BI
+description: Utiliser des visuels Power BI basés sur R dans Power BI
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: d79164ea5b66fe003f913742436a817d76d798e0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b5f8677b3207122831e3d2cae6c07aa5bbcb9983
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61278542"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194595"
 ---
-# <a name="use-r-powered-custom-visuals-in-power-bi"></a>Utiliser des visuels personnalisés optimisés pour R dans Power BI
+# <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Utiliser des visuels Power BI basés sur R dans Power BI
 
-Dans **Power BI Desktop** et dans le **service Power BI**, vous pouvez utiliser des visuels personnalisés optimisés pour R sans connaître R ni utiliser de script R. Cela vous permet d’exploiter la puissance d’analyse et visuelle des visuels R et des scripts R sans connaître R ni effectuer de programmation.
+Dans **Power BI Desktop** et dans le **service Power BI**, vous pouvez utiliser des visuels Power BI basés sur R sans connaître R ni utiliser de scripts R. Cela vous permet d’exploiter la puissance d’analyse et visuelle des visuels R et des scripts R sans connaître R ni effectuer de programmation.
 
-Pour utiliser les visuels personnalisés optimisés pour R, il suffit de sélectionner préalablement le visuel personnalisé R qui vous intéresse à partir de la galerie [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) de **visuels personnalisés** pour Power BI.
+Pour utiliser les visuels Power BI basés sur R, vous commencez par sélectionner et télécharger le visuel personnalisé R qui vous intéresse à partir de la galerie [**AppSource**](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) de **visuels Power BI** pour Power BI.
 
 ![Visuel R 1a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_1a.png)
 
 Les sections suivantes expliquent comment sélectionner, charger et utiliser les visuels optimisés pour R dans **Power BI Desktop**.
 
-## <a name="use-r-custom-visuals"></a>Utiliser des visuels personnalisés R
+## <a name="use-r-power-bi-visuals"></a>Utiliser des visuels Power BI R
 
-Pour utiliser les visuels optimisés pour R, téléchargez chaque visuel depuis la bibliothèque de **visuels personnalisés**, puis utilisez le visuel comme n’importe quel autre type de visuel dans **Power BI Desktop**. Il existe deux façons d’obtenir des visuels personnalisés : vous pouvez les télécharger à partir du site en ligne **AppSource** ou les parcourir et les obtenir à partir de **Power BI Desktop**. 
+Pour utiliser des visuels Power BI basés sur R, téléchargez chaque visuel depuis la bibliothèque de **visuels Power BI**, puis utilisez le visuel comme n’importe quel autre type de visuel dans **Power BI Desktop**. Il existe deux façons d’obtenir des visuels Power BI : vous pouvez les télécharger à partir du site **AppSource** en ligne, ou les parcourir et les obtenir à partir de **Power BI Desktop**. 
 
-### <a name="get-custom-visuals-from-appsource"></a>Se procurer des visuels personnalisés à partir d’AppSource
+### <a name="get-power-bi-visuals-from-appsource"></a>Obtenir des visuels Power BI auprès d’AppSource
 
 Voici les étapes pour parcourir et sélectionner des visuels à partir du site en ligne **AppSource** :
 
@@ -50,7 +50,7 @@ Voici les étapes pour parcourir et sélectionner des visuels à partir du site 
 
    ![Visuel R 3a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_3a.png)
 
-   Vous n’avez pas besoin d’installer R pour utiliser des visuels personnalisés optimisés pour R dans le **service Power BI**. Toutefois, si vous souhaitez utiliser des visuels personnalisés optimisés pour R dans **Power BI Desktop**, vous *devez* installer R sur l’ordinateur local. Vous pouvez télécharger R à partir des emplacements suivants :
+   Vous n’avez pas besoin d’installer R pour utiliser des visuels Power BI basés sur R dans le **service Power BI**. Cependant, si vous voulez utiliser des visuels Power BI basés sur R dans **Power BI Desktop**, vous *devez* installer R sur la machine locale. Vous pouvez télécharger R à partir des emplacements suivants :
 
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
@@ -79,25 +79,25 @@ Voici les étapes pour parcourir et sélectionner des visuels à partir du site 
 
     Visitez souvent la bibliothèque, car elle est continuellement mise à jour avec de nouveaux visuels.
 
-### <a name="get-custom-visuals-from-within-power-bi-desktop"></a>Obtenir des visuels personnalisés à partir de **Power BI Desktop**
+### <a name="get-power-bi-visuals-from-within-power-bi-desktop"></a>Obtenir des visuels Power BI à partir de **Power BI Desktop**
 
-1. Vous pouvez également obtenir des visuels personnalisés à partir de **Power BI Desktop**. Dans **Power BI Desktop**, cliquez sur les points de suspension (...) dans le volet **Visualisations** et sélectionnez **Importer de la Place de marché**.
+1. Vous pouvez également obtenir des visuels Power BI à partir de **Power BI Desktop**. Dans **Power BI Desktop**, cliquez sur les points de suspension (...) dans le volet **Visualisations** et sélectionnez **Importer de la Place de marché**.
 
    ![Visuel R 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 
-2. Lorsque vous procédez ainsi, la boîte de dialogue **Visuels Power BI** apparaît. Vous pouvez y faire défiler les visuels personnalisés disponibles et sélectionner ceux qui vous intéressent. Vous pouvez effectuer une recherche par nom, sélectionner une catégorie ou simplement parcourir les visuels disponibles. Lorsque vous êtes prêt, sélectionnez simplement **ajouter** pour ajouter le visuel personnalisé à **Power BI Desktop**.
+2. Quand vous procédez ainsi, la boîte de dialogue **Visuels Power BI** apparaît. Vous pouvez y faire défiler les visuels Power BI disponibles et sélectionner ceux qui vous intéressent. Vous pouvez effectuer une recherche par nom, sélectionner une catégorie ou simplement parcourir les visuels disponibles. Lorsque vous êtes prêt, sélectionnez simplement **ajouter** pour ajouter le visuel personnalisé à **Power BI Desktop**.
 
    ![Visuel R 12](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
 
-## <a name="contribute-r-powered-custom-visuals"></a>Contribuer aux visuels personnalisés optimisés pour R
+## <a name="contribute-r-powered-power-bi-visuals"></a>Contribuer aux visuels Power BI basés sur R
 
-Si vous créez vos propres visuels R pour les utiliser dans vos rapports, vous pouvez les partager de façon publique en les ajoutant à la **galerie de visuels personnalisés**. Le processus de contribution réalisé par le biais de GitHub est décrit ici :
+Si vous créez vos propres visuels R pour les utiliser dans vos rapports, vous pouvez les partager publiquement en les ajoutant à la **galerie de visuels Power BI**. Le processus de contribution réalisé par le biais de GitHub est décrit ici :
 
-* [Contribution à la galerie des visuels optimisés pour R](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
+* [Contribution à la galerie des visuels Power BI basés sur R](https://github.com/Microsoft/PowerBI-visuals#building-r-powered-custom-visual-corrplot)
 
-## <a name="troubleshoot-r-powered-custom-visuals"></a>Résoudre les problèmes liés aux visuels personnalisés optimisés pour R
+## <a name="troubleshoot-r-powered-power-bi-visuals"></a>Résoudre les problèmes des visuels Power BI basés sur R
 
-Pour qu’ils fonctionnent correctement, les visuels personnalisés optimisés pour R doivent avoir certaines dépendances. Quand les visuels personnalisés optimisés pour R ne s’exécutent pas ou ne se chargent pas correctement, le problème est généralement l’un des suivants :
+Les visuels Power BI basés sur R ont certaines dépendances qui doivent être satisfaites pour qu’ils fonctionnent correctement. Quand les visuels Power BI basés sur R ne s’exécutent pas ou ne se chargent pas correctement, le problème est généralement un des suivants :
 
 * Le moteur R est manquant.
 * Il existe des erreurs dans les scripts R sur lesquels repose le visuel.
@@ -150,7 +150,7 @@ L’équipe Power BI travaille activement pour atténuer ces problèmes en amon
 
 Consultez les informations supplémentaires suivantes sur R dans Power BI.
 
-* [Galerie de visuels personnalisés Power BI](https://app.powerbi.com/visuals/)
+* [Galerie de visuels Power BI](https://app.powerbi.com/visuals/)
 * [Exécution de scripts R dans Power BI Desktop](desktop-r-scripts.md)
 * [Créer des visuels Power BI Desktop avec R](desktop-r-visuals.md)
 * [Utiliser un IDE R externe avec Power BI](desktop-r-ide.md)

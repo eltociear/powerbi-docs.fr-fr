@@ -9,18 +9,43 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
-ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
+ms.openlocfilehash: 71c2135092b0b9bb2b02f4559d40c0b10814a51f
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68940895"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325721"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
 Ce journal des modifications a trait à Power BI Report Server. Il répertorie les éléments nouveaux et les corrections de bogues introduits dans chaque version officielle publiée.
 
 Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés dans Power BI Report Server](whats-new.md). 
+
+## <a name="september-2019"></a>Septembre 2019
+
+- **Power BI Report Server**          
+    - *Version 1.6.7206.38019 (Build 15.0.1102.597), Publication : 26 septembre 2019*
+        - Mises à jour de sécurité
+        - Résolutions de bogues
+           - Rapports paginés
+             - Correctif pour les problèmes d’accessibilité rencontrés lors de l’utilisation de IE et Edge.
+             - Correctif pour les problèmes de SAP HANA lors du test de la connexion.
+             - Correctif pour les problèmes rencontrés lors de la spécification d’une liste d’adresses e-mail.
+             - Correctif pour les rapports Power BI qui utilisent une source de données DirectQuery et l’authentification intégrée.
+             - Correctif pour les rapports paginés à afficher avec des paramètres de filtre quand l’instantané est activé.
+             - Correctif pour l’exécution en double des procédures stockées pendant l’exécution des rapports.
+             - Correctif pour le compte de service par défaut auquel des autorisations de connexion à SQL Server sont accordées, quand le compte de service personnalisé est configuré pour exécuter Power BI Report Server.
+             - Correctif pour l’accès aux modèles pendant l’actualisation dans le fuseau horaire japonais.
+             - Correctif pour les modèles obsolètes quand une nouvelle version du rapport est chargée lors de l’actualisation.
+             - Correctif pour les valeurs de paramètre qui contiennent le caractère « & ».
+         - Programmabilité
+             - API web mise à jour : /PowerBIReports({Id})/DataSources (PATCH) pour autoriser les mises à jour de la chaîne de connexion.
+         
+- **Power BI Desktop optimisé pour Power BI Report Server**
+    - *Version : 2.73.5586.821 (Septembre 2019), Publication : 26 septembre 2019* (nouvelle build et nouvelle version)
+    - Contient les changements nécessaires pour la connexion à Power BI Report Server (septembre 2019)
+
 
 ## <a name="may-2019"></a>Mai 2019
 

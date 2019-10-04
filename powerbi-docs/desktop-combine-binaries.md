@@ -7,37 +7,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f43bb105f7e17ce453e96c6eff875349efd45cb2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8a5b4c7cb484b296ccab395e18eb2b0089ffd5c7
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239644"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327818"
 ---
 # <a name="combine-files-binaries-in-power-bi-desktop"></a>Combiner des fichiers (binaires) dans Power BI Desktop
-Une approche intéressante pour l’importation de données dans **Power BI Desktop** est de combiner plusieurs fichiers ayant le même schéma dans une seule table logique. Avec la version de novembre 2016 de **Power BI Desktop** (et les versions ultérieures), cette approche populaire et pratique a été étendue comme décrit dans cet article.
+Une approche intéressante pour l’importation de données dans **Power BI Desktop** est de combiner plusieurs fichiers ayant le même schéma dans une seule table logique. Cette approche pratique et répandue a été rendue encore plus pratique et complète, comme décrit dans cet article.
 
 Pour lancer le processus de combinaison de fichiers à partir du même dossier, sélectionnez **Obtenir des données > Fichier > Dossier**.
 
 ![](media/desktop-combine-binaries/combine-binaries_1.png)
 
-## <a name="previous-combine-files-binaries-behavior"></a>Ancien comportement de la combinaison de fichiers (binaires)
-Avant la version de novembre 2016 de **Power BI Desktop**, cette fonctionnalité s’appelait **Combiner des binaires** ; elle permettait de combiner certains types de fichiers à l’aide de la transformation **Combiner des binaires**, avec quelques limitations toutefois :
 
-* Les transformations n’étaient pas considérées pour chaque fichier tant que les fichiers n’étaient pas combinés dans une seule table. Par conséquent, vous deviez souvent combiner des fichiers, puis filtrer les *valeurs d’en-tête* en filtrant les lignes dans le cadre du processus de modification.
-* La transformation **Combiner les fichiers binaires** fonctionnait pour les fichiers *texte* ou *CSV*, mais pas pour les autres formats de fichiers pris en charge tels que les classeurs Excel, les fichiers JSON, etc.
-
-Comme les clients demandaient un fonctionnement plus intuitif de l’opération **Combiner des binaires**, la transformation a été améliorée et renommée **Combiner des fichiers**.
-
-## <a name="current-combine-files-behavior"></a>Comportement actuel de la combinaison de fichiers
-**Power BI Desktop** gère à présent plus efficacement l’opération **Combiner des fichiers (binaires)** . Pour commencer, sélectionnez **Combiner des fichiers** dans l’onglet de ruban **Accueil** de **l’Éditeur de requête**, ou dans la colonne elle-même.
+## <a name="combine-files-behavior"></a>Comportement de la combinaison de fichiers
+Vous pouvez **combiner des fichiers (binaires)** en sélectionnant **Combiner les fichiers** dans l’onglet du ruban **Accueil** de l’**Éditeur de requête** ou dans la colonne elle-même.
 
 ![](media/desktop-combine-binaries/combine-binaries_2a.png)
 
-La transformation **Combiner des fichiers** se comporte maintenant ainsi :
+La transformation **Combiner les fichiers** se comporte comme suit :
 
 * La transformation **Combiner des fichiers** analyse chaque fichier d’entrée et détermine le format de fichier à utiliser, par exemple, *texte*, *classeur Excel* ou *JSON*.
 * La transformation vous permet de sélectionner un objet spécifique dans le premier fichier, par exemple un *classeur Excel*, à extraire.
@@ -51,7 +44,11 @@ La transformation **Combiner des fichiers** se comporte maintenant ainsi :
     
     ![](media/desktop-combine-binaries/combine-binaries_4.png)
 
-Avec le nouveau comportement **Combiner des fichiers**, il est facile de combiner tous les fichiers dans un dossier donné à condition qu’ils aient le même type et la même structure (par exemple, les mêmes colonnes).
+> [!NOTE]
+> L’étendue de votre sélection dans un classeur Excel affecte le comportement de la combinaison de fichiers binaires. Par exemple, vous pouvez sélectionner une feuille de calcul spécifique pour combiner cette feuille de calcul ou sélectionner la racine pour combiner le fichier complet. La sélection d’un dossier combine les fichiers figurant dans ce dossier. 
+
+
+Avec le comportement de **Combiner des fichiers**, il est facile de combiner tous les fichiers d’un dossier donné, à condition qu’ils aient le même type et la même structure de fichier (par exemple les mêmes colonnes).
 
 En outre, vous pouvez appliquer des étapes de transformation ou d’extraction supplémentaires en modifiant *l’exemple de requête* créé automatiquement sans avoir à modifier ou à créer d’autres étapes de *requête de fonction*. Les modifications apportées à *l’exemple de requête* sont automatiquement générées dans la *requête de fonction* liée.
 

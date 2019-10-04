@@ -7,25 +7,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 273734493c761739f9780e6a7fe6e781900723f9
-ms.sourcegitcommit: 7d52401f50944feaaa112c84113ee47f606dbf68
+ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
+ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67125875"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71207634"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Mettre à jour, supprimer et extraire une application modèle
 
 Une fois que votre application est en production, vous pouvez recommencer la phase de test, tout en maintenant la continuité de l’application en production.
 ## <a name="update-your-app"></a>Mettre à jour votre application
 
+Si vous avez effectué les modifications dans Power BI Desktop, démarrez à l’étape (1). Si vous n’avez pas effectué les modifications dans Power BI Desktop, démarrez à l’étape (4).
+
+1. Chargez le jeu de données mis à jour et remplacez le jeu de données existant. **Veillez à utiliser exactement le même nom de jeu de données**. Si vous utilisez un nom différent, un nouveau jeu de données est créé pour les utilisateurs qui mettent à jour l’application.
+![remplacer le jeu de données](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset.png)
+1. Importez le fichier pbix depuis votre ordinateur.
+![remplacer le jeu de données](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset2.png)
+1. Confirmez le remplacement.
+![remplacer le jeu de données](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset3.png)
 
 1. Dans le volet **Gestion des mises en production**, sélectionnez **Créer une application**.
-2. Revenez en arrière dans le processus de création de l’application.
-3. Après avoir défini les paramètres **Personnalisation**, **Contenu**, **Contrôle** et **Accès**, sélectionnez de nouveau **Créer une application**.
-4. Sélectionnez **Fermer** et revenez au volet **Gestion des mises en production**.
+1. Revenez en arrière dans le processus de création de l’application.
+1. Après avoir défini les paramètres **Personnalisation**, **Contenu**, **Contrôle** et **Accès**, resélectionnez **Créer une application**.
+1. Sélectionnez **Fermer** et revenez au volet **Gestion des mises en production**.
 
    Vous avez maintenant deux versions de l’application : la version en production, et une nouvelle version en phase de test.
 
@@ -33,10 +41,18 @@ Une fois que votre application est en production, vous pouvez recommencer la pha
 
 5. Quand vous êtes prêt à promouvoir votre application en préproduction pour la tester en dehors de votre locataire, revenez au volet Gestion des mises en production et sélectionnez **Promouvoir l’application** à côté de **Test**.
 6. Votre lien est désormais en ligne. Envoyez-le à nouveau dans le portail Cloud Partner (CPP) en suivant les étapes indiquées dans [Mettre à jour une offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
-7. Dans le CPP, vous devez **publier** à nouveau votre offre, qui devra également être à nouveau validée.
+7. Dans le portail Cloud Partner, vous devez **publier** à nouveau votre offre, qui doit également être revalidée.
 
->[!NOTE]
->Promouvez votre application en phase de production une fois qu’elle est approuvée par le portail Cloud Partner et que vous la publiez.
+   >[!NOTE]
+   >Promouvez votre application en phase de production une fois qu’elle est approuvée par le portail Cloud Partner et que vous la publiez.
+
+### <a name="update-behavior"></a>Comportement de la mise à jour
+
+1. La mise à jour de l’application permet au programme d’installation de l’application modèle de [mettre à jour une application modèle](service-template-apps-install-distribute.md#update-a-template-app) dans l’espace de travail déjà installé sans perdre la configuration de la connexion.
+1. Pour découvrir comment les modifications apportées au jeu de données affectent l’application modèle installée, consultez [comportement du remplacement](service-template-apps-install-distribute.md#overwrite-behavior).
+1. Lors de la mise à jour (remplacement) d’une application modèle, elle rétablit d’abord les exemples de données et se reconnecte automatiquement avec la configuration de l’utilisateur (paramètres et authentification). Tant que l’actualisation n’est pas terminée, les rapports, les tableaux de bord et l’application d’organisation présentent la bannière de l’exemple de données.
+1. Si vous avez ajouté un nouveau paramètre de requête au jeu de données mis à jour qui nécessite une entrée des utilisateurs, vous devez cocher la case *obligatoire*. Ceci demande la chaîne de connexion au programme d’installation après la mise à jour de l’application.
+ ![paramètres obligatoires](media/service-template-apps-update-extract-delete/power-bi-template-app-upload-dataset4.png)
 
 ## <a name="extract-workspace"></a>Extraire l’espace de travail
 La restauration de la version précédente d’une application modèle est désormais plus facile que jamais grâce à la fonctionnalité d’extraction. Les étapes suivantes traitent de l’extraction d’une version spécifique de l’application vers un nouvel espace de travail à partir de différentes phases de lancement :

@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/06/2019
-ms.openlocfilehash: 9e4d5285b48739e9f16fbe503736c20cb5524e5d
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.date: 09/24/2019
+ms.openlocfilehash: ca090f7251349c9ed4768b49f1372c14e68f0068
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985719"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305676"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
@@ -36,14 +36,13 @@ Les rapports paginés ont leur propre outil de conception : le Générateur de 
 
 Un seul rapport paginé peut avoir un certain nombre de sources de données différentes. Il n’a pas de modèle de données sous-jacent, contrairement aux rapports Power BI. Pour obtenir la version initiale de rapports paginés dans le service Power BI, vous créez des sources de données incorporées et des jeux de données dans le rapport proprement dit. Pour l’instant, vous ne pouvez pas utiliser de sources de données partagées ni de jeux de données partagés. Vous créez des rapports dans le Générateur de rapports sur votre ordinateur local. Si un rapport se connecte à des données locales, après avoir chargé le rapport sur le service Power BI, vous devez créer une passerelle et rediriger la connexion de données. Voici les sources de données auxquelles vous pouvez vous connecter pour le moment :
 
-- Azure SQL Database et Data Warehouse
+- Azure SQL Database et Data Warehouse (via De base et OAuth)
 - Azure Analysis Services (via SSO)
 - SQL Server via une passerelle
 - SQL Server Analysis Services via une passerelle
-- Jeux de données Power BI Premium
+- Jeux de données Power BI
 - Oracle
 - Teradata
-- Autres sources au fil de leur ajout
 
 ## <a name="design-your-report"></a>Créer votre rapport  
 
@@ -79,10 +78,10 @@ Pour plus d’informations, consultez l’article [Vous abonner vous-même et d�
 Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la version initiale :
 
 - Épinglage des pages de rapport ou des visuels sur des tableaux de bord Power BI. Vous pouvez toujours épingler des visualisations à un tableau de bord Power BI à partir d’un rapport paginé local sur un serveur Power BI Report Server ou un serveur de rapports Reporting Services. Pour plus d’informations, consultez [Épingler les éléments Reporting Services aux tableaux de bord Power BI](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
-- Fonctionnalités interactives telles que des cartes de documents et des boutons Afficher/Masquer.
-- Sous-rapports et rapports d’extraction.
+- Explorateurs de documents.
+- Sous-rapports et rapports d’extraction.  Vous pouvez cependant envisager d’utiliser des paramètres d’URL avec des rapports paginés pour réaliser des scénarios d’extraction.
 - Sources de données et jeux de données partagés.
-- Visuels issus de rapports Power BI.
+
  
 ## <a name="next-steps"></a>Étapes suivantes
 

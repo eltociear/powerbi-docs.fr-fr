@@ -1,65 +1,65 @@
 ---
 title: Questions fréquentes sur les visuels Power BI
-description: Parcourir une liste de questions fréquentes et de réponses sur les visuels personnalisés Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+description: Parcourir une liste de questions fréquentes et de réponses sur les visuels Power BI
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 58fa65abfa2d2cff5e02b34fe8db8aa10b36ee14
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5c4c13d021891ad591b2411a1f0b3219b750478d
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415389"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195457"
 ---
 # <a name="frequently-asked-questions-about-power-bi-visuals"></a>Questions fréquentes sur les visuels Power BI
 
-## <a name="organizational-custom-visuals"></a>Visuels personnalisés d’une organisation
+## <a name="organizational-visuals"></a>Visuels organisationnels
 
 Le portail d’administration vous permet de gérer un visuel Power BI pour votre organisation.
 
-### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Comment l’administrateur peut-il gérer les visuels personnalisés d’une organisation ?
+### <a name="how-can-the-admin-manage-the-organizational-power-bi-visuals"></a>Comment l’administrateur peut-il gérer les visuels Power BI d’organisation ?
 
-Dans le portail d’administration, sous l’onglet « Visuels personnalisés de l’organisation » l’administrateur peut voir et [gérer tous les visuels personnalisés de l’organisation dans l’entreprise](service-admin-portal.md#organizational-visuals) : ajouter, désactiver, activer et supprimer.
-Il n’est plus nécessaire de partager ces visuels par e-mails ou par le biais d’un dossier partagé ! Une fois ces visuels déployés dans le référentiel de l’organisation, les utilisateurs peuvent facilement les trouver et les importer dans leurs rapports, directement depuis Power BI Desktop ou Service. Les visuels personnalisés d’une organisation sont accessibles à partir du magasin intégré (dans Desktop et Service) sous l’onglet *MON ORGANISATION*. Une fois que l’administrateur charge la version d’un nouveau visuel personnalisé de l’organisation, tous les membres de l’organisation obtiennent la même version mise à jour. Les créateurs de rapports n’ont pas besoin de supprimer le visuel dans leurs rapports pour obtenir la nouvelle version de ces visuels, car tous les rapports utilisant ces visuels sont automatiquement actualisés ! Le mécanisme de mise à jour est similaire pour les visuels de la Place de marché.
+Dans le portail d’administration, sous l’onglet « Visuels d’organisation », l’administrateur peut voir et [gérer tous les visuels Power BI d’organisation dans l’entreprise](service-admin-portal.md#organizational-visuals) : ajouter, désactiver, activer et supprimer.
+Il n’est plus nécessaire de partager ces visuels par e-mails ou par le biais d’un dossier partagé ! Une fois ces visuels déployés dans le référentiel de l’organisation, les utilisateurs peuvent facilement les trouver et les importer dans leurs rapports, directement depuis Power BI Desktop ou depuis le service Power BI. Les visuels d’organisation sont accessibles à partir du magasin intégré (dans Power BI Desktop et le service Power BI) sous l’onglet *MON ORGANISATION*. Une fois que l’administrateur charge la version d’un nouveau visuel personnalisé de l’organisation, tous les membres de l’organisation obtiennent la même version mise à jour. Les créateurs de rapports n’ont pas besoin de supprimer le visuel dans leurs rapports pour obtenir la nouvelle version de ces visuels, car tous les rapports utilisant ces visuels sont automatiquement actualisés ! Le mécanisme de mise à jour est similaire pour les visuels de la Place de marché.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Si un administrateur charge un visuel personnalisé à partir de la Place de marché publique dans le magasin de l’organisation, est-il automatiquement mis à jour une fois qu’un fournisseur met à jour le visuel dans la Place de marché publique ?
 
 Non, il n’y a pas de mise à jour automatique à partir de la Place de marché publique.
-L’administrateur doit mettre à jour la version des visuels personnalisés de l’organisation.
+L’administrateur a la responsabilité de la mise à jour de la version des visuels d’organisation.
 
 ### <a name="is-there-a-way-to-disable-the-organizational-store"></a>Est-il possible de désactiver le magasin de l’organisation ?
 
-Non, les utilisateurs voient toujours l’onglet « MON ORGANISATION » à partir de Power BI Desktop et Service. L’administrateur peut désactiver ou supprimer tous les visuels personnalisés de l’organisation dans le portail d’administration. Le magasin de l’organisation est alors vide.
+Non, les utilisateurs voient toujours l’onglet « MON ORGANISATION » à partir de Power BI Desktop et Service. L’administrateur peut désactiver ou supprimer tous les visuels d’organisation dans le portail d’administration. Le magasin d’organisation est alors vide.
   
-### <a name="if-the-administrator-disables-custom-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-custom-visuals"></a>Si l’administrateur désactive les visuels personnalisés à partir du portail d’administration (paramètres du locataire), les utilisateurs ont-ils toujours accès aux visuels personnalisés de l’organisation ?
+### <a name="if-the-administrator-disables-power-bi-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-visuals"></a>Si l’administrateur désactive les visuels Power BI à partir du portail d’administration (Paramètres du client), les utilisateurs ont-ils toujours accès aux visuels d’organisation ?
 
-Oui, si l’administrateur désactive les visuels personnalisés à partir du portail d’administration, cela n’affecte pas le magasin de l’organisation. Certaines organisations désactivent les visuels personnalisés et activent uniquement des visuels sélectionnés manuellement qui ont été importés et chargés par l’administrateur Power BI dans le magasin de l’organisation. La désactivation des visuels personnalisés à partir du portail d’administration n’est pas appliquée dans Power BI Desktop. Les utilisateurs de Desktop peuvent toujours ajouter et utiliser des visuels personnalisés à partir de la Place de marché publique dans leurs rapports. Toutefois, le rendu de ces visuels personnalisés publiques ne s’exécute plus une fois qu’ils sont publiés sur le service Power BI et ils émettent une erreur appropriée. Lorsque vous utilisez le service Power BI, vous ne pouvez pas importer des visuels personnalisés à partir de la Place de marché publique. Seuls les visuels à partir du magasin de l’organisation peuvent être importés, car le paramètre des visuels personnalisés dans le portail d’administration est appliqué dans le service Power BI.
+Oui, si l’administrateur désactive les visuels Power BI à partir du portail d’administration, cela n’affecte pas le magasin d’organisation. Certaines organisations désactivent les visuels Power BI et activent seulement des visuels sélectionnés manuellement qui ont été importés et chargés par l’administrateur Power BI dans le magasin d’organisation. La désactivation des visuels Power BI à partir du portail d’administration n’est pas appliquée dans Power BI Desktop. Les utilisateurs de Power BI Desktop peuvent toujours ajouter et utiliser des visuels Power BI à partir de la Place de marché publique dans leurs rapports. Cependant, ces visuels Power BI publics cessent d’être affichés une fois qu’ils sont publiés sur le service Power BI et ils émettent une erreur appropriée. Quand vous utilisez le service Power BI, vous ne pouvez pas importer des visuels Power BI à partir de la Place de marché publique. Seuls les visuels provenant du magasin d’organisation peuvent être importés, car le paramètre des visuels Power BI dans le portail d’administration est appliqué dans le service Power BI.
 
-### <a name="why-does-the-organizational-store-and-organizational-custom-visuals-make-a-great-enterprise-solution"></a>En quoi le magasin d’organisation et les visuels personnalisés d’organisation constituent-ils une excellente solution pour l’entreprise ?
+### <a name="why-does-the-organizational-store-and-organizational-visuals-make-a-great-enterprise-solution"></a>En quoi le magasin d’organisation et les visuels d’organisation constituent-ils une excellente solution pour l’entreprise ?
 
 * Tout le monde reçoit la même version du visuel, qui est contrôlée par l’administrateur Power BI. Une fois que l’administrateur met à jour la version du visuel dans le portail d’administration, tous les utilisateurs dans l’organisation obtiennent automatiquement la version mise à jour.
 
 * Il n’est plus nécessaire de partager des fichiers de visuels par e-mail ou par le biais de dossiers partagés ! Un seul endroit, visible par tous les membres qui sont connectés.
 
-* En termes de sécurité et de prise en charge, les nouvelles versions des visuels personnalisés d’organisation sont automatiquement mis à jour dans tous les rapports, comme les visuels de la Place de marché.
+* En termes de sécurité et de prise en charge, les nouvelles versions des visuels d’organisation sont automatiquement mises à jour dans tous les rapports, comme les visuels de la Place de marché.
 
-* Les utilisateurs de l’organisation utilisant les visuels personnalisés d’organisation doivent être connectés pour voir et utiliser les visuels personnalisés d’organisation, qui constituent un élément de sécurité pour l’organisation.
+* Les utilisateurs de l’organisation utilisant les visuels d’organisation doivent être connectés pour voir et utiliser les visuels d’organisation, qui constituent un élément de sécurité pour l’organisation.
 
-* Les administrateurs peuvent contrôler les visuels personnalisés disponibles dans l’organisation.
+* Les administrateurs peuvent contrôler quels visuels Power BI sont disponibles dans l’organisation.
 
 * Les administrateurs peuvent activer/désactiver les visuels à des fins de test à partir du portail d’administration. Meilleure mise en œuvre de la sécurité : ces visuels seront autorisés aux seuls membres de l’organisation.
 
-## <a name="certified-custom-visuals"></a>Visuels personnalisés certifiés
+## <a name="certified-power-bi-visuals"></a>Visuels Power BI certifiés
 
-### <a name="what-are-certified-custom-visuals"></a>En quoi consistent les visuels personnalisés certifiés ?
+### <a name="what-are-certified-power-bi-visuals"></a>Qu’est-ce que les visuels Power BI certifiés ?
 
-Les visuels personnalisés certifiés sont des visuels dans la [Place de marché](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) répondant à certaines exigences de code [spécifiées](power-bi-custom-visuals-certified.md) et aux tests de l’équipe Power BI.  Les tests effectués sont conçus pour vérifier que le visuel n’a pas accès à des services ni à des ressources externes. Toutefois, Microsoft n’étant pas l’auteur des visuels personnalisés tiers, nous conseillons aux utilisateurs de contacter directement leur auteur pour vérifier leur fonctionnement.
+Les visuels Power BI certifiés sont des visuels de la [Place de marché](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) répondant à certaines exigences de code [spécifiées](power-bi-custom-visuals-certified.md) et aux tests de l’équipe Power BI.  Les tests effectués sont conçus pour vérifier que le visuel n’a pas accès à des services ni à des ressources externes. Cependant, Microsoft n’étant pas l’auteur des visuels Power BI de tiers, nous conseillons aux clients de contacter directement leur auteur pour vérifier leur fonctionnement.
 
 ### <a name="what-tests-are-done-during-the-certification-process"></a>Quels sont les tests effectués durant le processus de certification ?
 
@@ -90,11 +90,11 @@ Une version mise à jour peut prendre jusqu’à 3 semaines. Une nouvelle soumi
 
 ### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Le processus de certification garantit-il l’absence de fuites de données ?
 
-Les tests effectués sont conçus pour vérifier que le visuel n’a pas accès à des services ni à des ressources externes. Toutefois, Microsoft n’étant pas l’auteur des visuels personnalisés tiers, nous conseillons aux utilisateurs de contacter directement leur auteur pour vérifier leur fonctionnement.
+Les tests effectués sont conçus pour vérifier que le visuel n’a pas accès à des services ni à des ressources externes. Cependant, Microsoft n’étant pas l’auteur des visuels Power BI de tiers, nous conseillons aux clients de contacter directement leur auteur pour vérifier leur fonctionnement.
  
-### <a name="are-uncertified-custom-visuals-safe-to-use"></a>Les visuels personnalisés non certifiés présentent-ils des risques ?
+### <a name="are-uncertified-power-bi-visuals-safe-to-use"></a>Les visuels Power BI non certifiés présentent-ils des risques ?
 
-Un visuel personnalisé non certifié ne pose pas forcément de risques pour la sécurité.
+Un visuel Power BI non certifié ne présente pas nécessairement des risques pour la sécurité.
 Certains visuels ne sont pas certifiés car ils ne sont pas conformes à un ou plusieurs [critères de certification](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Citons par exemple les visuels de carte qui se connectent à un service externe ou ceux qui utilisent des bibliothèques commerciales.
  
 ## <a name="visuals-with-additional-purchases"></a>Visuels avec achats supplémentaires
@@ -103,11 +103,11 @@ Certains visuels ne sont pas certifiés car ils ne sont pas conformes à un ou p
 
 Un visuel avec achats supplémentaires est similaire aux compléments d’achat dans l’application (IAP) sur la Place de marché. Ces compléments ont une étiquette de prix indiquant **Un autre achat peut être requis**.
 
-Les visuels IAP personnalisés sont gratuits et téléchargeables : les utilisateurs n’ont rien à payer pour télécharger ces visuels personnalisés à partir de la Place de marché. Les visuels IAP proposent des achats facultatifs dans l’application pour les fonctionnalités avancées.  
+Les visuels Power BI IAP sont gratuits et téléchargeables : les utilisateurs n’ont rien à payer pour télécharger ces visuels Power BI à partir de la Place de marché. Les visuels IAP proposent des achats facultatifs dans l’application pour les fonctionnalités avancées.  
 
 ### <a name="whats-the-benefit-to-developers"></a>Quel en est l’avantage pour les développeurs ?
 
-Les visuels IAP personnalisés dans AppSource seront découvrables par les nombreux visiteurs quotidiens, entraînant un trafic important et une sensibilisation accrue pour vos visuels IAP personnalisés et vous en tant que développeur.
+Les visuels Power BI IAP dans AppSource sont découvrables par les nombreux visiteurs quotidiens, entraînant un trafic important et une sensibilisation accrue pour vos visuels Power BI IAP et pour vous-même en tant que développeur.
 
 Si jusqu’à récemment vous gériez ces visuels depuis votre site Web, vous pouvez désormais les soumettre à AppSource. Cela permet d’augmenter le niveau de découverte et de visibilité des visuels IAP au sein de la Communauté Power BI.
 
@@ -115,15 +115,15 @@ Les visuels dans AppSource profitent d’un canal de retour direct de vos client
 
 Une fois le visuel IAP approuvé par l’équipe de validation AppSource, vous pouvez également soumettre ces visuels pour certification. Il s’agit d’un processus facultatif.  
 
-Une fois le visuel certifié, les visuels IAP personnalisés peuvent être exportés vers PowerPoint et apparaissent dans les e-mails reçus lorsqu’un utilisateur s’inscrit aux pages du rapport. Ainsi, les visuels IAP personnalisés peuvent également être certifiés et prendre en charge un jeu de fonctionnalités supplémentaires en les soumettant à la Place de marché.  
+Une fois le visuel certifié, les visuels Power BI IAP peuvent être exportés vers PowerPoint et affichés dans les e-mails reçus quand un utilisateur s’abonne à des pages de rapport. Ainsi, les visuels Power BI IAP peuvent également être certifiés et prendre en charge un jeu de fonctionnalités supplémentaires quand vous les soumettez à la Place de marché.  
 
 ### <a name="do-iap-visuals-need-to-be-certified"></a>Les visuels IAP doivent-ils être certifiés ?
 
-Le processus de certification est facultatif. Il incombe au développeur de décider de certifier ses visuels IAP personnalisés ou non, ainsi que ses visuels gratuits.
+Le processus de certification est facultatif. Il incombe au développeur de décider de certifier ou non ses visuels Power BI IAP , comme pour les visuels gratuits.
 
 ### <a name="what-is-changing-in-the-submission-process"></a>Qu’est-ce qui change dans le processus de soumission ?
 
-Le processus de soumission des visuels IAP personnalisés à la Place de marché est identique à celui des visuels gratuits. Il s’effectue par le biais du tableau de bord vendeur.  La seule différence dans le processus de soumission est que les développeurs devront indiquer, dans les notes de développeur du tableau de bord vendeur : « Visuels avec achat dans l’application ». Vous devrez également fournir une clé/un jeton de licence, si nécessaire, pour valider les fonctionnalités payantes/avancées.  
+Le processus de soumission des visuels Power BI IAP à la Place de marché est identique à celui des visuels gratuits. Il s’effectue par le biais du tableau de bord vendeur.  La seule différence dans le processus de soumission est que les développeurs devront indiquer, dans les notes de développeur du tableau de bord vendeur : « Visuels avec achat dans l’application ». Vous devrez également fournir une clé/un jeton de licence, si nécessaire, pour valider les fonctionnalités payantes/avancées.  
 
 Il n’y aura aucune option *Gratuit avec achat dans l’application* dans le tableau de bord vendeur. Vous devez soumettre vos visuels IAP comme étant *gratuits*.
 
@@ -151,8 +151,8 @@ Souvenez-vous que la certification est un processus facultatif. C’est à vous 
 
 ### <a name="how-to-get-support"></a>Comment obtenir de l’aide ?
 
-N’hésitez pas à contacter le support technique des visuels personnalisés : *pbicvsupport@microsoft.com*  si vous avez des questions, des commentaires ou des problèmes.  
+N’hésitez pas à contacter le support technique des visuels Power BI : *pbicvsupport@microsoft.com*   si vous avez des questions, des commentaires ou des problèmes.  
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations, consultez [Résolution des problèmes de vos visuels personnalisés Power BI](power-bi-custom-visuals-troubleshoot.md).
+Pour plus d’informations, consultez [Résolution des problèmes de vos visuels Power BI de Power BI](power-bi-custom-visuals-troubleshoot.md).

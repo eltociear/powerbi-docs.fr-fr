@@ -1,46 +1,57 @@
 ---
-title: Afficher le contenu de récemment visité dans le service Power BI
+title: Afficher le contenu récemment visité dans le service Power BI
 description: documentation pour Récents dans Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 09/24/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4bb69c8ead92bf69671107fdd5bfa0eef0ae5c0d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: bae340f89b10253920f8e22d02b4b78c23fa2dd9
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61054865"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256253"
 ---
-# <a name="recent-content-in-power-bi-service"></a>Contenu **récent** dans le service Power BI
-Le contenu récent regroupe les derniers éléments que vous avez consultés dans le service Power BI (maximum 20).  Il peut s’agir de tableaux de bord, de rapports, d’applications et de classeurs dans l’ensemble de vos espaces de travail.
+# <a name="recent-content-in-the-power-bi-service"></a>Contenus **récents** dans le service Power BI
+Les contenus récents sont les derniers éléments que vous avez consultés dans le service Power BI, jusqu’à un maximum de 20.  Ceci inclut les tableaux de bord, les rapports, les applications et les classeurs.
 
-![fenêtre Contenu récent](./media/end-user-recent/power-bi-recent-screen.png)
+![fenêtre Contenu récent](./media/end-user-recent/power-bi-recent.png)
 
 Regardez Amanda montrer comment les listes de contenu **Récent** du service Power BI sont remplies, puis suivez les instructions détaillées sous la vidéo pour essayer vous-même.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
+> [!NOTE]
+> Cette vidéo utilise une version plus ancienne du service Power BI.
+
 ## <a name="display-recent-content"></a>Afficher le contenu récent
-Pour voir vos cinq éléments visités le plus récemment, dans le volet de navigation de gauche, sélectionnez la flèche à droite de **Récents**.  À partir de là, vous pouvez sélectionner un contenu récent pour l’ouvrir. Seuls les cinq éléments les plus récents sont répertoriés.
+Pour voir vos cinq éléments récemment consultés, dans le volet de navigation de gauche, sélectionnez la flèche à droite de **Récents**.  À partir de là, vous pouvez sélectionner un contenu récent pour l’ouvrir. Seuls les cinq éléments les plus récents sont répertoriés.
 
-![menu volant Contenu récent](./media/end-user-recent/power-bi-recent-flyout-new.png)
+![menu volant Contenu récent](./media/end-user-recent/power-bi-recent-flyout.png)
 
-Si vous avez plus de cinq éléments récemment visités, sélectionnez **Afficher tout** pour ouvrir l’écran Récents (voir ci-dessous). Vous pouvez également sélectionner **Récents** ou l’icône Récents ![icône Récents](./media/end-user-recent/power-bi-recent-icon.png) dans le volet de navigation de gauche.
+Si vous avez plus de cinq éléments récemment visités, sélectionnez **Afficher tout** pour ouvrir l’écran Récents. Vous pouvez également sélectionner **Récents** ou l’icône Récents ![icône Récents](./media/end-user-recent/power-bi-icon.png) dans le volet de navigation.
 
-![afficher tout le contenu récent](./media/end-user-recent/power-bi-recent-list.png)
+![afficher tout le contenu récent](./media/end-user-recent/power-bi-recent.png)
 
-À partir de là, vous pouvez interagir avec le contenu comme vous le feriez sous les onglets [**Tableaux de bord**](end-user-dashboards.md), [**Rapports**](end-user-reports.md) et **Classeurs**, ainsi que sur l’écran des applications <!--[**Apps**](end-user-apps.md)--> .
+## <a name="actions-available-from-the-recent-content-list"></a>Actions disponibles dans la liste des contenus **Récents**
+Les actions disponibles dépendent des paramètres affectés par le *concepteur* du contenu. Certaines de vos options peuvent inclure :
+* Sélectionnez l’icône représentant une étoile pour [ajouter un tableau de bord, un rapport ou une application dans les Favoris](end-user-favorite.md) ![icône d’étoile](./media/end-user-shared-with-me/power-bi-star-icon.png).
+* Certains tableaux de bord et rapports peuvent être repartagés  ![Icône de partage](./media/end-user-shared-with-me/power-bi-share-icon-new.png).
+* [Ouvrir l’icône rapport dans Excel](end-user-export.md) ![icône Exporter vers Excel](./media/end-user-shared-with-me/power-bi-excel.png) 
+* [Voir les insights](end-user-insights.md) que Power BI trouve dans les données ![icône Insights](./media/end-user-shared-with-me/power-bi-insights.png).
+* De plus, si vos listes s’allongent, [utilisez le champ de recherche et le tri pour trouver ce que vous cherchez](end-user-search-sort.md). Pour déterminer si une colonne peut être triée, pointez sur celle-ci pour voir si une flèche apparaît. Dans cet exemple, pointer sur **Dernier accès** fait apparaître une flèche : vos contenus récents peuvent être triés par date d’accès. 
+
+    ![Trier tous les contenus récents](./media/end-user-recent/power-bi-recent-sort.png)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
-<!--[Power BI service Apps](end-user-apps.md)-->
+[Applications du service Power BI](end-user-apps.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 1c4a16d0dbe22a154dacfd296bfedab8acb97e81
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 6e89fa21617add5c3c11ada990f7055d305cebf5
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867129"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256445"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Langues et pays/régions pris en charge pour Power BI
 
@@ -116,14 +116,14 @@ Power BI détermine la langue utilisée en fonction des préférences linguisti
    Vous devrez peut-être fermer et rouvrir votre navigateur pour appliquer la modification.
 
 ## <a name="choose-the-language-or-locale-of-power-bi-desktop"></a>Choisir la langue ou les paramètres régionaux de Power BI Desktop
-Vous disposez de deux façons d’obtenir Power BI Desktop : Vous pouvez le télécharger, ou l’installer à partir du Windows Store.
+Vous disposez de deux façons d’obtenir Power BI Desktop : Vous pouvez le télécharger comme programme d’installation autonome ou l’installer à partir du Windows Store.
 
-* Lorsque vous [installez Power BI Desktop à partir du Windows Store](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), il installe toutes les langues et indique la langue qui correspond à la langue par défaut de Windows.
-* Lorsque vous [téléchargez Power BI Desktop](#choose-a-language-when-you-download-power-bi-desktop), vous choisissez la langue lors du téléchargement. 
+* Quand vous installez Power BI Desktop à partir du Windows Store, il installe toutes les langues et affiche par défaut la langue qui correspond à la langue par défaut de Windows.
+* Quand vous téléchargez Power BI Desktop en tant que programme d’installation autonome, vous choisissez la langue par défaut quand vous exécutez le programme d’installation, et vous pouvez la changer ultérieurement.
 * Vous pouvez également [choisir des paramètres régionaux à utiliser lors de l’importation de données](#choose-the-locale-for-importing-data-into-power-bi-desktop) pour un rapport spécifique.
 
-### <a name="choose-a-language-for-power-bi-desktop-installed-from-the-windows-store"></a>Choisir une langue pour Power BI Desktop quand ce dernier est installé à partir du Windows Store
-1. [Installez Power BI Desktop](http://aka.ms/pbidesktopstore) à partir du Windows Store.
+### <a name="choose-a-language-for-power-bi-desktop"></a>Choisir une langue pour Power BI Desktop 
+1. Installez Power BI Desktop [à partir du Windows Store](http://aka.ms/pbidesktopstore) ou en tant que [programme d’installation autonome](http://aka.ms/pbiSingleInstaller).
 2. Pour modifier la langue, sur votre ordinateur, recherchez **Paramètres Windows**. 
 3. Sélectionnez **Heure et langue**.
    
@@ -140,11 +140,6 @@ Pour remplacer la valeur par défaut afin d’utiliser Power BI Desktop dans une
 3. Dans la zone **Langue de l’application**, sélectionnez d’autres paramètres régionaux. 
 
 La prise en charge linguistique dans Power BI Desktop est limitée aux langues affichées dans la liste déroulante Langue de l’application.
-
-### <a name="choose-a-language-when-you-download-power-bi-desktop"></a>Choisir une langue quand vous téléchargez Power BI Desktop
-Si vous utilisez la version .msi du programme d’installation de Power BI Desktop, la langue est définie au moment où vous téléchargez ce dernier. Vous choisissez la langue dans la page [Télécharger Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=45331). 
-
-Pour changer la langue de Power BI Desktop quand ce dernier est installé ainsi, revenez à la page de téléchargement et téléchargez-le dans une autre langue.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Choisir les paramètres régionaux à utiliser lors de l’importation de données dans Power BI Desktop
 Si vous téléchargez Power BI Desktop ou l’installez à partir du Windows Store, vous pouvez choisir des paramètres régionaux pour un rapport spécifique autres que ceux de votre version de Power BI Desktop. Les paramètres régionaux changent la façon dont les données sont interprétées quand elles sont importées à partir de votre source de données, par exemple si « 3/4/2017 » est interprété comme faisant référence au 3 avril ou au 4 mars. 

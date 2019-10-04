@@ -11,18 +11,20 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 857db3240385e9bf1b4e0416cc1200d1a029d73e
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 65410dc15600307ba11a2c48db1689be5a458383
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867205"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193128"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tableaux dans les rapports et les tableaux de bord Power BI
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Un tableau est une grille qui contient les données connexes dans une série logique de lignes et colonnes. Il peut également contenir des en-têtes et une ligne de totaux. Les tableaux fonctionnent correctement avec des comparaisons quantitatives où vous examinez de nombreuses valeurs pour une même catégorie. Par exemple, ce tableau montre cinq mesures différentes pour la **Catégorie**.
 
-![Capture d’un tableau qui montre cinq mesures différentes pour la Catégorie.](media/power-bi-visualization-tables/table.png)
+![Capture d’un tableau qui montre cinq mesures différentes pour la Catégorie.](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 
 Créez des tables dans les rapports et mettez les éléments en surbrillance croisée dans la table avec d’autres visuels sur la même page de rapport. Vous pouvez également sélectionner des lignes, colonnes et cellules pour les mettre en évidence croisée. Vous pouvez aussi copier et coller des sélections de cellules individuelles et de plusieurs cellules dans d’autres applications.
 
@@ -36,25 +38,23 @@ Les tableaux sont recommandés :
 
 * pour afficher des données numériques par catégories.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisite"></a>Prérequis
 
-* Service Power BI ou Power BI Desktop
+Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Exemple de rapport Analyse de la vente au détail
+1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
+   
+2. Rechercher votre copie du **fichier PBIX de l’exemple Analyse de la vente au détail**
 
-## <a name="get-the-retail-analysis-sample-report"></a>Obtenir l’exemple de rapport Retail Analysis (Analyse de la vente au détail)
+1. Ouvrez le **fichier PBIX de l’exemple Analyse de la vente au détail** dans la vue Rapport ![Capture d’écran de l’icône de la vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-Ces instructions s’appliquent à l’exemple Analyse de la vente au détail. La création d’une visualisation nécessite des autorisations de modification du jeu de données et du rapport. Par chance, les exemples Power BI sont tous modifiables. Si quelqu’un partage un rapport avec vous, vous ne pourrez pas créer de visualisations dans les rapports. Pour suivre la procédure, obtenez l’[exemple de rapport Retail Analysis Sample (Analyse de la vente au détail)](../sample-datasets.md).
+1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
 
-Une fois que vous obtenez le jeu de données **Retail Analysis Sample (Analyse de la vente au détail)** , vous pouvez commencer.
 
 ## <a name="create-a-table"></a>Créer un tableau
 
 Vous allez créer le tableau illustré au début de cet article pour afficher les valeurs de ventes par catégorie d’article.
 
-1. À partir de **Mon espace de travail**, sélectionnez l’onglet **Jeux de données** > **Créer un rapport**.
-
-    ![Capture d’écran du menu Jeux de données > Créer un rapport.](media/power-bi-visualization-tables/power-bi-create-a-report.png)
 
 1. Dans le volet **Champs**, sélectionnez **Élément** > **Catégorie**.
 
@@ -66,11 +66,10 @@ Vous allez créer le tableau illustré au début de cet article pour afficher le
 
 1. Puis sélectionnez **Ventes > Ventes de l’année** et choisissez les trois options : **Valeur**, **Objectif**, et **Statut**.
 
-1. Dans le volet **Visualisations**, localisez la zone **Valeurs** et faites glisser les valeurs jusqu’à ce que l’ordre des colonnes de graphique corresponde à la première image de cette page. La zone **Valeurs** doit ressembler à ceci :
+1. Dans le volet **Visualisations**, localisez la zone **Valeurs**, puis sélectionnez les valeurs jusqu’à ce que l’ordre des colonnes du graphique corresponde à la première image de cette page. Faites glisser les valeurs dans la zone si nécessaire. La zone **Valeurs** doit ressembler à ceci :
 
     ![zone Valeurs](media/power-bi-visualization-tables/power-bi-table2.png)
 
-1. Épinglez le tableau au tableau de bord en sélectionnant l’icône d’épingle. ![punaise](media/power-bi-visualization-tables/pbi_pintile.png) dans le coin supérieur droit du visuel.
 
 ## <a name="format-the-table"></a>Mettre en forme le tableau
 
@@ -170,10 +169,6 @@ Pour copier plusieurs cellules :
 1. Sélectionnez **Copier** > **Copier la sélection**.
 
     ![options de copie](media/power-bi-visualization-tables/power-bi-copy-selection.png)
-
-    La copie inclut les en-têtes de colonne et de ligne.
-
-    ![coller dans Excel](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Ajustez la largeur de colonne d’un tableau
 

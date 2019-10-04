@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 02a81aa47fb7945b2fd76d03a6bdde7712304bdc
-ms.sourcegitcommit: 7eb74b060de080152c190ac7eb6b64767f8d6626
+ms.openlocfilehash: fffb0479865439759167635efcae1799452c4c6f
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70919620"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305732"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Utiliser des chaînes de format personnalisées dans Power BI Desktop
 
@@ -148,13 +148,14 @@ Le tableau suivant identifie les caractères que vous pouvez utiliser pour crée
 | (**E- E+ e- e+** ) | Format scientifique. Si l’expression de format contient au moins un espace réservé de chiffre (**0** ou **#** ) à droite de E-, E+, e- ou e+, le nombre est affiché au format scientifique et E ou e est inséré entre le nombre et son exposant. Le nombre d’espaces réservés de chiffre à droite détermine le nombre de chiffres dans l’exposant. Utilisez E- ou e- pour placer un signe moins à côté des exposants négatifs. Utilisez E+ ou e+ pour insérer un signe moins à côté des exposants négatifs et un signe plus à côté des exposants positifs. |
 | **- + $**  ( ) | Affiche un caractère littéral. Pour afficher un caractère autre que ceux répertoriés, faites-le précéder d’une barre oblique inverse (\) ou placez-le entre guillemets doubles (&quot; &quot;). |
 | (* *\** ) | Affiche le caractère suivant dans la chaîne de format. Pour afficher un caractère ayant une signification spéciale sous forme de caractère littéral, faites-le précéder d’une barre oblique inverse (\). La barre oblique inverse elle-même n’est pas affichée. L’utilisation d’une barre oblique inverse revient à mettre le caractère suivant entre guillemets doubles. Pour afficher une barre oblique inverse, utilisez deux barres obliques inverses (\\). Exemples de caractères pouvant être affichés comme caractères littéraux : caractères de mise en forme de date et d’heure (a, c, d, h, m, n, p, q, s, t, w, y, / et :), caractères de format numérique (#, 0, %, E, e, virgule et point), et caractères de format de chaîne (@, &amp;, \&lt;, \&gt; et !). |
-| (&quot;ABC&quot;) | Affiche la chaîne à l’intérieur des guillemets doubles (&quot; &quot;). Pour inclure une chaîne au **format** dans le code, vous devez utiliser **Chr(34)** pour encadrer le texte (34 est le code de caractère pour un guillemet (&quot;)). |
+| (&quot;ABC&quot;) | Affiche la chaîne à l’intérieur des guillemets doubles (&quot; &quot;). |
 
 
 ## <a name="next-steps"></a>Étapes suivantes
 Les articles suivants pourraient également vous intéresser :
 
 * [Chaînes de format VBA](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [Mesures dans Power BI Desktop](desktop-measures.md)
+* [Types de données dans Power BI Desktop](desktop-data-types.md)
 * [Mise en forme conditionnelle dans les tables](desktop-conditional-table-formatting.md)
-* [Titres basés sur des expressions dans Power BI Desktop](desktop-conditional-format-visual-titles.md)
 

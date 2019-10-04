@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 214b9fe48d5254e1bd2d436dd873b3c2d1d35f98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1622e06cd7aa394d384954b393d1e547e87df10a
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564927"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305672"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Redémarrer une capacité Power BI Premium
 
@@ -31,7 +31,7 @@ Power BI s’améliore constamment dans la manière de protéger les utilisateur
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Le processus de redémarrage est-il sûr ? Vais-je perdre des données ?
 
-Tous les tableaux de bord, rapports, données, définitions qui sont enregistrés sur votre capacité sont totalement intacts après un redémarrage. Quand vous redémarrez une capacité, toutes les planifications en cours et actualisations ad-hoc sont arrêtées. Le service tente d’actualisations de nouvelle tentative lorsque la capacité est disponible. Les utilisateurs qui interagissent avec la capacité perdent tout travail non enregistré. Il est donc préférable qu’ils actualisent leurs navigateurs une fois le redémarrage terminé.
+Tous les tableaux de bord, rapports, données, définitions qui sont enregistrés sur votre capacité sont totalement intacts après un redémarrage. Quand vous redémarrez une capacité, toutes les planifications en cours et actualisations ad-hoc sont arrêtées. Le service tente une nouvelle actualisation quand la capacité est disponible. Les utilisateurs qui interagissent avec la capacité perdent tout travail non enregistré. Il est donc préférable qu’ils actualisent leurs navigateurs une fois le redémarrage terminé.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Comment redémarrer une capacité ?
 

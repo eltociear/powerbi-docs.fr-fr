@@ -3,20 +3,18 @@ title: Présentation des signets dans les rapports du service Power BI
 description: Rubrique de vue d’ensemble de la documentation pour les requêtes en langage naturel des questions et réponses Power BI.
 author: mihart
 manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2019
+ms.date: 09/22/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 55fafb00135908dc4f82151b96ed04d2cf2568da
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 0b4da978687afbafcc7f0d48b6df220b240a507f
+ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608304"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71207613"
 ---
 # <a name="what-are-bookmarks"></a>Qu’est-ce qu’un signet ?
 Les signets capturent la vue actuellement configurée d’une page de rapport, notamment les filtres, les segments et l’état des visuels. Lorsque vous sélectionnez un signet, Power BI vous ramène à cette vue. Il existe deux types de signets : ceux que vous créez et ceux qui sont créés par les *concepteurs* de rapports.
@@ -26,15 +24,15 @@ Les signets ont de nombreuses utilisations. Imaginons que vous ayez découvert u
 
 Vous pouvez également créer une collection de signets, les réorganiser dans l’ordre de votre choix, puis parcourir chaque signet dans le cadre d’une présentation, afin de mettre en avant une série d’insights.  
 
-![Affichez le volet Signets en le sélectionnant dans le ruban.](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
+![Affichez le volet Signets en le sélectionnant dans le ruban.](media/end-user-bookmarks/power-bi-select-bookmark.png)
 
-## <a name="using-bookmarks"></a>Utilisation des signets
-Pour ouvrir le volet Signets, sélectionnez **Signets** dans la barre de menus. Pour revenir à la vue d’origine du rapport, sélectionnez **Rétablir les valeurs par défaut**.
+## <a name="open-bookmarks"></a>Ouvrir des signets
+Pour ouvrir le volet Signets, sélectionnez **Signets** > **Afficher d’autres signets** dans la barre de menus. Pour revenir à la vue d’origine du rapport, sélectionnez **Rétablir les valeurs par défaut**.
 
 ### <a name="report-bookmarks"></a>Signets du rapport
-Si le *concepteur* de rapports a créé des signets, vous les trouverez sous **Signets du rapport**. 
+Si le *concepteur* de rapports a créé des signets, vous les trouverez sous **Signets du rapport**. Cette page de rapport a deux signets, B1 et B2. 
 
-![Affichage des signets du rapport](media/end-user-bookmarks/power-bi-report-bookmark.png)
+![Affichage des signets du rapport](media/end-user-bookmarks/power-bi-report.png)
 
 Sélectionnez un signet pour changer de vue de rapport. 
 
@@ -55,13 +53,13 @@ Lorsque vous créez un signet, les éléments suivants sont enregistrés :
 
 Configurez une page de rapport comme vous souhaitez qu’elle apparaisse dans le signet. Une fois que votre page de rapport et les visuels sont organisés comment vous le souhaitez, sélectionnez **Ajouter** dans le volet **Signets** pour ajouter un signet. Dans cet exemple, nous avons ajouté des filtres pour la région et la date. 
 
-![Ajout de signets personnels](media/end-user-bookmarks/power-bi-add-personal.png)
+![Ajout de signets personnels](media/end-user-bookmarks/power-bi-bookmark-personal.png)
 
-**Power BI** crée un signet, puis lui donne un nom générique ou celui que vous avez spécifié. Vous pouvez *renommer*, *supprimer* ou *mettre à jour* un signet en sélectionnant les points de suspension en regard de son nom, puis en sélectionnant une action dans le menu qui s’affiche.
+**Power BI** crée un signet personnel, puis lui donne un nom générique ou celui que vous spécifiez. Vous pouvez *renommer*, *supprimer* ou *mettre à jour* votre signet en sélectionnant les points de suspension en regard de son nom, puis en sélectionnant une action dans le menu qui apparaît.
 
 Une fois le signet créé, vous pouvez l’afficher en le sélectionnant dans le volet **Signets**. 
 
-![Ajout de signets personnels](media/end-user-bookmarks/power-bi-personal-bookmark.png)
+![Ajout de signets personnels](media/end-user-bookmarks/power-bi-bookmark-west.png)
 
 
 <!--
@@ -81,11 +79,11 @@ Pour voir les signets dans l’ordre, sélectionnez **Afficher** dans le volet *
 
 Le mode **Vue** offre quelques fonctionnalités utiles :
 
-1. Le nom du signet apparaît dans la barre de titre de celui-ci, qui apparaît au bas du canevas.
-2. La barre de titre des signets comporte des flèches permettant de passer au signet suivant ou précédent.
-3. Vous pouvez quitter le mode **Vue** en sélectionnant **Quitter** dans le volet **Signets** ou la croix (**X**) dans la barre de titre des signets. 
+- Le nom du signet apparaît dans la barre de titre de celui-ci, qui apparaît au bas du canevas.
+- La barre de titre des signets comporte des flèches permettant de passer au signet suivant ou précédent.
+- Vous pouvez quitter le mode **Vue** en sélectionnant **Quitter** dans le volet **Signets** ou la croix (**X**) dans la barre de titre des signets.
 
-![Diaporama des signets](media/end-user-bookmarks/power-bi-bookmark-slideshow.png)
+![Diaporama des signets](media/end-user-bookmarks/power-bi-slideshow.png)
 
 Lorsque vous êtes en mode **Vue**, vous pouvez fermer le volet **Signets** (en cliquant sur le signe X sur ce volet) pour fournir davantage d’espace pour votre présentation. De plus, en mode **Vue**, tous les visuels sont interactifs et compatibles avec la sélection croisée, comme dans toute autre interaction. 
 
@@ -154,7 +152,6 @@ Pour cette préversion des **signets**, vous devez garder à l’esprit les cons
 
 * La plupart des visuels personnalisés doivent fonctionner correctement avec l’attribution de signets. Si vous rencontrez des problèmes avec l’attribution de signets et un visuel personnalisé, contactez le créateur de ce dernier et demandez-lui d’ajouter la prise en charge des signets pour son visuel. 
 * Si vous ajoutez un visuel sur une page de rapport après la création d’un signet, le visuel s’affiche dans son état par défaut. Cela signifie également que si vous introduisez un segment dans une page où vous avez précédemment créé des signets, le segment se comporte avec son état par défaut.
-* Le déplacement parmi les visuels après la création d’un signet est reflété dans le signet. 
 * En règle générale, vos signets ne sont pas affectés lorsque le *concepteur* met à jour ou republie un rapport. Toutefois, si le concepteur apporte des modifications majeures au rapport, par exemple, s’il supprime des champs utilisés par un signet, vous recevrez un message d’erreur la prochaine fois que vous tenterez d’ouvrir ce signet. 
 
 <!--

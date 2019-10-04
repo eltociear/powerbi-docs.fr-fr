@@ -8,17 +8,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: 364795a25aaffb92afc4a7148c9bf6b3f88d2ac8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 09/26/2019
+ms.openlocfilehash: 26dde078ce0b237779660c44b2843a645e4d1a47
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187324"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325567"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
-Découvrez les nouveautés dans Power BI Report Server et Power BI Desktop optimisé pour Power BI Report Server. Cet article aborde les principaux domaines de fonctionnalités et est mis à jour à mesure que de nouveaux éléments sont publiés.
+Découvrez les nouveautés de Power BI Report Server et Power BI Desktop optimisé pour Power BI Report Server. Cet article aborde les principaux domaines de fonctionnalités et est mis à jour avec chaque nouvelle version.
 
 Pour des informations connexes sur les nouveautés de Power BI, voir :
 
@@ -26,31 +26,86 @@ Pour des informations connexes sur les nouveautés de Power BI, voir :
 * [Nouveautés dans Power BI Desktop](../desktop-latest-update.md)
 * [Nouveautés dans les applications mobiles pour Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
 
-## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Mai 2019 : Power BI Desktop pour Power BI Report Server
+## <a name="september-2019"></a>Septembre 2019
 
-Consultez le [Power BI Report Server mai 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/) billet de blog pour plus d’informations sur les nouvelles fonctionnalités.
+Pour plus d’informations sur toutes les nouvelles fonctionnalités, consultez le billet de blog [Power BI Report Server September 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-september-2019-feature-summary/).
 
-Voici quelques-unes des caractéristiques de la version :
+La mise à jour de septembre 2019 de Power BI Report Server inclut un grand nombre de fonctionnalités pour les rapports Power BI. En voici les principales :
+
+- **Filtres au niveau du visuel pour les sélecteurs** : Vous pouvez ajouter aux sélecteurs un filtre au niveau du visuel. Il fonctionne comme n’importe quel autre filtre au niveau du visuel, en filtrant simplement le sélecteur lui-même et aucun autre visuel. Ce filtre est utile pour éliminer les éléments vides ou si vous voulez utiliser des filtres de mesure.
+- **Jeux d’icônes pour les tables et les matrices** : Avec les icônes d’indicateur de performance clé, vous pouvez configurer des règles pour montrer différents jeux d’icônes dans votre tableau et votre matrice, de façon similaire aux jeux d’icônes dans Excel.
+- **Regroupement de visuels** : Vous pouvez désormais regrouper des visuels, des formes, des zones de texte, des images et des boutons sur une page de rapport, tout comme dans PowerPoint. Quand vous regroupez des objets, vous pouvez les déplacer et les redimensionner tous ensemble. Le regroupement facilite le travail dans les rapports avec un grand nombre d’objets superposés sur chaque page.
+- **Nouveaux thèmes par défaut** : Pour poursuivre avec les nouvelles options JSON des thèmes, nous mettons à jour les thèmes disponibles pour les rapports et nous changeons le thème par défaut pour les nouveaux rapports. Le nouveau thème par défaut est mieux adapté au langage de conception de Microsoft et suit les bonnes pratiques de conception pour les visuels. 
+- **Conception des volets mise à jour** : Nous avons rafraîchi une grande partie de notre interface. Nous avons mis à jour tous les volets, le pied de page et le sélecteur de vue avec une couleur plus claire et un espacement mis à jour, et nous avons introduit de nouvelles icônes. La nouvelle conception est la première étape du rafraîchissement de l’intégralité de l’interface.
+
+Voici la liste complète des fonctionnalités. 
+
+### <a name="reporting"></a>Création de rapports
+
+- Conception des volets mise à jour
+- Filtres au niveau du visuel pour les sélecteurs
+- Tri pour le volet Analyseur de performances
+- Info-bulles d’en-tête de visuel
+- Personnalisation de l’étiquette du total des tableaux et des matrices
+- Prise en charge de la synchronisation des sélecteurs pour le sélecteur de hiérarchie
+- Tailles de police cohérentes entre les visuels
+- Jeux d’icônes pour les tableaux et les matrices
+- Prise en charge des pourcentages pour la mise en forme conditionnelle par des règles
+- Nouveau volet Filtrer désormais en disponibilité générale
+- Prise en charge des couleurs de données lors de l’utilisation d’un axe de lecture sur des graphiques à nuages de points
+- Améliorations des performances lors de l’utilisation des dates relatives et des sélecteurs déroulants
+- Regroupement de visuels
+- Classes de couleurs et de texte dans les thèmes
+- Nouveaux thèmes par défaut
+
+### <a name="analytics"></a>Analytique
+
+- Chaînes de format personnalisées
+- Mises à jour de la mise en forme conditionnelle pour les options de mise en forme
+
+    - Couleurs d’arrière-plan et de titre pour les visuels
+    - Couleurs des cartes
+    - Remplissage et couleurs des jauges
+    - Texte de remplacement
+    - Couleur de la bordure
+
+- Avertissements concernant la mise en forme conditionnelle
+- Amélioration de la découvrabilité de l’extraction
+- Nouvelles expressions DAX : REMOVEFILTERS et CONVERT
+- Nouvel opérateur de comparaison DAX : ==
+
+### <a name="data-preparation"></a>Préparation des données
+
+- Améliorations apportées à M Intellisense
+- Nouvelle transformation : Fractionnement des colonnes par positions
+- Copie dans le Presse-papiers à partir d’un profilage de données
+
+
+## <a name="may-2019-power-bi-desktop-for-power-bi-report-server"></a>Mai 2019 : Power BI Desktop optimisé pour Power BI Report Server
+
+Pour plus d’informations sur toutes les nouvelles fonctionnalités, consultez le billet de blog [Power BI Report Server May 2019](https://powerbi.microsoft.com/blog/power-bi-report-server-update-may-2019/).
+
+Voici les principales nouveautés de la version :
 
 ### <a name="performance-analyzer"></a>Analyseur de performances 
 
-Si votre rapport s’exécute plus lentement que prévu, essayez de l’Analyseur de performances dans Power BI Desktop. Lorsque vous le démarrez, il crée un fichier journal avec des informations sur chaque action que vous prenez dans le rapport. En savoir plus sur la [Performance Analyzer](../desktop-performance-analyzer.md).
+Si votre rapport s’exécute plus lentement que prévu, essayez l’Analyseur de performances dans Power BI Desktop. Quand vous le démarrez, il crée un fichier journal avec des informations sur chaque action que vous effectuez dans le rapport. Découvrez plus d’informations sur l’[Analyseur de performances](../desktop-performance-analyzer.md).
 
-### <a name="new-modeling-view"></a>Nouvelle vue de modélisation
+### <a name="new-modeling-view"></a>Nouvelle vue Modélisation
 
-Dans la nouvelle vue de modélisation dans Power BI Desktop, vous pouvez afficher et travailler avec des jeux de données complexes qui contiennent de nombreuses tables. Points importants incluent plusieurs dispositions de diagramme et modification des colonnes, des mesures et des tables en bloc. En savoir plus sur [modélisation vue](../desktop-modeling-view.md).
+Dans la nouvelle vue Modélisation de Power BI Desktop, vous pouvez afficher et utiliser des jeux de données complexes qui contiennent de nombreuses tables. Les principales nouveautés sont plusieurs dispositions de diagramme et la modification en bloc de colonnes, de mesures et de tables. Découvrez plus d’informations sur la [vue Modélisation](../desktop-modeling-view.md).
 
 ### <a name="accessible-visual-interaction"></a>Interaction visuelle accessible
 
-Vous pouvez désormais accès aux points de données sur la plupart des visuels intégrés à l’aide de la navigation au clavier. En savoir plus sur [accessibilité dans les rapports Power BI](../desktop-accessibility.md).
+Vous pouvez maintenant accéder aux points de données sur de nombreux visuels intégrés en utilisant la navigation au clavier. Découvrez plus d’informations sur l’[accessibilité dans les rapports Power BI](../desktop-accessibility.md).
 
-### <a name="conditional-formatting-titles-and-web-url-actions"></a>Mise en forme des titres et les actions d’URL web conditionnelle
+### <a name="conditional-formatting-titles-and-web-url-actions"></a>Mise en forme conditionnelle des titres et des actions d’URL web
 
-Les rapports Power BI sont interactifs. Il est judicieux que titres dans un rapport serait dynamiques, afin de refléter l’état actuel du rapport. Vous pouvez utiliser la même limite de l’expression mise en forme pour rendre les URL des boutons, des formes et des images dynamique. En savoir plus sur [basée sur une expression de titres](../desktop-conditional-format-visual-titles.md).
+Les rapports Power BI sont interactifs. Il est logique que les titres d’un rapport soient dynamiques, de façon à refléter l’état actuel du rapport. Vous pouvez utiliser la même mise en forme liée à une expression pour rendre dynamiques les URL de vos boutons, de vos formes et de vos images. Découvrez plus d’informations sur les [titres basés sur une expression](../desktop-conditional-format-visual-titles.md).
 
-### <a name="cross-highlight-by-axis-labels"></a>Sélection croisée par étiquettes d’axe
+### <a name="cross-highlight-by-axis-labels"></a>Sélection par étiquettes d’axe
 
-Sélectionnez les étiquettes de catégorie axe dans un visuel à croisée les autres éléments sur une page, tout comme vous sélectionnez les points de données dans un élément visuel. En savoir plus sur [croisée](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
+Sélectionnez les étiquettes de catégorie d’axe dans un visuel pour sélectionner les autres éléments d’une page, tout comme vous sélectionnez les points de données dans un visuel. Découvrez plus d’informations sur la [sélection](../power-bi-reports-filters-and-highlighting.md#ad-hoc-highlighting).
 
 ### <a name="all-the-new-features"></a>Toutes les nouvelles fonctionnalités
 
@@ -58,45 +113,45 @@ Voici la liste de toutes les nouvelles fonctionnalités :
 
 ### <a name="reporting"></a>Création de rapports
 
-- Croisée sur un point unique dans les graphiques en courbes 
-- Le retour automatique à sur titres 
-- Mettre à jour d’interaction visuelle par défaut pour le filtrage croisé ¬
-- Angles arrondis est utilisée pour les bordures visual 
-- Segment sélectionnez unique  
-- Prise en charge de la carte thermique pour Bing maps  
-- Sélection croisée par étiquettes d’axe  
-- Info-bulle par défaut de mise en forme  
-- URL web statique prend en charge pour les boutons, des formes et des images  
-- Options d’alignement de page   
-- Améliorations du volet sélection  
+- Sélection d’un point unique dans les graphiques en courbes 
+- Retour automatique à la ligne dans les titres 
+- Mise à jour de l’interaction avec le visuel par défaut pour le filtrage croisé
+- Coins arrondis pour les bordures des visuels 
+- Sélecteur avec une seule sélection  
+- Prise en charge des cartes thermiques pour Bing Maps  
+- Sélection par étiquettes d’axe  
+- Mise en forme d’info-bulles par défaut  
+- Prise en charge des URL web statiques pour les boutons, les formes et les images  
+- Options d’alignement des pages   
+- Améliorations du volet de sélection  
 - Interaction visuelle accessible  
-- Mise en forme pour les titres de visuel conditionnelle  
-- Mise en forme pour les actions d’URL web pour les boutons, des formes et des images conditionnelle
-- Volet d’analyseur de performances
-- Table et matrice de navigation au clavier
-- Contrôle de position de ligne données label
-- Contrôle de taille de texte indicateur KPI visual
+- Mise en forme conditionnelle pour les titres des visuels  
+- Mise en forme conditionnelle pour les actions d’URL web pour les boutons, les formes et les images
+- Volet Analyseur de performances
+- Navigation avec le clavier dans les tableaux et les matrices
+- Contrôle de la position des étiquettes de données sur les lignes
+- Contrôle de la taille du texte des indicateurs visuels des KPI
 
 ### <a name="analytics"></a>Analytique
 
-- Afficher les dates sous forme de hiérarchie maintenant à la disposition générale  
+- Affichage des dates sous forme de hiérarchie désormais en disponibilité générale  
 
 ### <a name="modeling"></a>Modélisation
 
-- Nouveau modélisation maintenant à la disposition générale
+- Nouvelle vue Modélisation maintenant en disponibilité générale
 - Nouvelles fonctions DAX
-- Mettre à jour vers la fonction ALLSELECTED DAX
-- Désactiver les tables d’auto-date pour de nouveaux rapports
+- Mise à jour de la fonction DAX ALLSELECTED
+- Désactivation des tableaux de dates automatiques pour les nouveaux rapports
 
-## <a name="may-2019-power-bi-report-server"></a>Mai 2019 : Power BI Report Server
+## <a name="may-2019-power-bi-report-server"></a>Mai 2019 : Power BI Report Server
 
-### <a name="support-for-trusted-visuals"></a>Prise en charge des éléments visuels approuvés
+### <a name="support-for-trusted-visuals"></a>Prise en charge des visuels approuvés
 
-Nous avons ajouté la prise en charge pour les visuels approuvé à Power BI Report Server. Nous prenons en charge les visuels Mapbox et mettre en marche. ESRI, Visio et PowerApps ne sont pas pris en charge pour cette version.)
+Nous avons ajouté la prise en charge des visuels approuvés pour Power BI Report Server. Actuellement, nous prenons en charge les visuels Mapbox et PowerOn. ESRI, Visio et PowerApps ne sont pas pris en charge pour cette version.)
 
 ### <a name="improved-security-features"></a>Fonctionnalités de sécurité améliorées
 
-**RestrictedResourceMimeTypeForUpload**, les administrateurs peuvent utiliser pour spécifier une liste séparée par des virgules des types mime interdit, par exemple texte/html.
+**RestrictedResourceMimeTypeForUpload**, que les administrateurs peuvent utiliser pour spécifier une liste séparée par des virgules des types MIME interdits, par exemple text/html.
 
 ## <a name="january-2019"></a>Janvier 2019
 

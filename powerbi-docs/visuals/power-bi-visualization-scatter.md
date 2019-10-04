@@ -11,26 +11,31 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8222194359077cb0d88286a33d1c9b2a05f6bd80
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: d776425d4c19070c00658cbd588c5421d22a0057
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390798"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192759"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Nuages de points, graphiques en bulles et graphiques à points dans Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Un nuage de points a toujours deux axes de valeur pour afficher un jeu de données numériques sur l’axe horizontal et un autre jeu de valeurs numériques sur l’axe vertical. Le graphique affiche les points à l’intersection d’une valeur numérique x et y, en associant ces valeurs en points de données uniques. Power BI peut distribuer ces points de données uniformément ou non sur l’axe horizontal. Tout dépend des données que le graphique représente.
 
 Regardez cette vidéo dans laquelle Will crée un graphique à nuages de points, puis suivez les étapes ci-dessous pour en créer un vous-même.
-
+   > [!NOTE]
+   > Cette vidéo utilise une version antérieure de Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 Vous pouvez définir le nombre de points de donnée, dans la limite maximale de 10 000.  
 
 ## <a name="when-to-use-a-scatter-chart-bubble-chart-or-a-dot-plot-chart"></a>Choix de l’utilisation d’un nuage de points, d’un graphique en bulles ou d’un graphique à points
 
-### <a name="scatter-and-bubble-charts"></a>Graphiques en nuages de points et graphiques à bulles
+### <a name="scatter-and-bubble-charts"></a>Graphiques en nuages de points et graphiques en bulles
 
 Un nuage de points montre la relation entre deux valeurs numériques. Un graphique en bulles remplace les points de données par des bulles, la *taille* de la bulle représentant une troisième dimension supplémentaire des données.
 
@@ -55,7 +60,7 @@ Les nuages de points sont conseillés dans les cas suivants :
 
 * Pour comparer un grand nombre de points de données sans distinction de temps.  Plus vous incluez de données dans un nuage de points, meilleures sont les comparaisons possibles.
 
-En plus de ce que les nuages de points peuvent faire pour vous, les graphiques en bulles sont très utiles dans les cas suivants :
+En plus de ce que les graphiques à nuages de points peuvent faire pour vous, les graphiques à bulles sont très utiles dans les cas suivants :
 
 * Si vos données comportent trois séries de données contenant chacune un jeu de valeurs.
 
@@ -65,7 +70,7 @@ En plus de ce que les nuages de points peuvent faire pour vous, les graphiques e
 
 ### <a name="dot-plot-charts"></a>Graphiques à points
 
-Un graphique à points est similaire à un graphique en bulles et à un nuage de points, mais vous pouvez également tracer des données numériques ou de catégorie sur l’axe X.
+Un graphique à points est similaire à un graphique en bulles et à un graphique à nuage de points, mais il est également utilisé pour tracer des données de catégories sur l’axe X.
 
 ![Capture d’écran d’un graphique à points.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
@@ -73,17 +78,20 @@ Ces graphiques sont très utiles si vous voulez inclure des données de catégor
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-* Le service Power BI
+Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Exemple de rapport Analyse de la vente au détail
+1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
+   
+2. Rechercher votre copie du **fichier PBIX de l’exemple Analyse de la vente au détail**
+
+1. Ouvrez le **fichier PBIX de l’exemple Analyse de la vente au détail** dans la vue Rapport ![Capture d’écran de l’icône de la vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
+
 
 ## <a name="create-a-scatter-chart"></a>Créer un nuage de points
 
-Pour suivre la procédure, connectez-vous au [service Power BI](https://app.powerbi.com), puis ouvrez le rapport [Exemple Analyse de la vente au détail](../sample-datasets.md) dans la vie [Modifier le rapport](../service-interact-with-a-report-in-editing-view.md).
-
-1. Sélectionnez le bouton ![Capture d’écran du bouton plus jaune.](media/power-bi-visualization-scatter/power-bi-yellow-plus-icon.png) pour créer une page de rapport vierge.
-
-1. Dans le volet **Champs**, sélectionnez les champs suivants :
+1. Démarrez sur une page de rapport vide et, dans le volet **Champs**, sélectionnez ces champs :
 
     * **Ventes** > **Ventes par mètre carré**
 
@@ -113,11 +121,11 @@ Ajoutons à présent une troisième dimension.
 
 1. Pointez sur une bulle. La taille de la bulle reflète la valeur de la zone **Ventes de cette année**.
 
-    ![affichage d’info-bulles](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
+    ![affichage d’info-bulles](media/power-bi-visualization-scatter/pbi-scatter-chart-hover.png)
 
 1. Pour définir le nombre de points de données à afficher dans votre graphique à bulles, dans la section **Format** du volet **Visualisations**, développez **Général** et ajustez le **Volume de données**.
 
-    ![Capture d’écran du volet Visualisations avec l’icône Mise en forme, le menu déroulant Général et l’option Volume de données.](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png)
+    ![Capture d’écran du volet Visualisations avec l’icône Mise en forme, le menu déroulant Général et l’option Volume de données.](media/power-bi-visualization-scatter/pbi-scatter-data-volume.png)
 
     Vous pouvez définir le volume maximal de données sur n’importe quel nombre jusqu’à 10 000. Quand vous atteignez des nombres très élevés, nous vous suggérons de commencer par tester pour vérifier que vous conservez de bonnes performances.
 
@@ -128,7 +136,7 @@ Ajoutons à présent une troisième dimension.
 
     Pour [améliorer l’accessibilité](../desktop-accessibility.md), ajoutez des formes de marqueur à chaque ligne. Pour sélectionner la forme de marqueur, développez **Formes**, sélectionnez **Forme de marqueur**, puis choisissez une forme.
 
-    ![Capture d’écran du menu déroulant Formes avec les options Forme de marqueur.](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+    ![Capture d’écran du menu déroulant Formes avec les options Forme de marqueur.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
     Vous pouvez modifier la forme de marqueur et la définir sur un losange, triangle ou carré. L’utilisation d’une forme de marqueur différente pour chaque ligne permet aux lecteurs du rapport de différencier plus facilement les lignes (ou aires) les unes des autres.
 
@@ -146,15 +154,15 @@ Dans le volet **Axe X**, supprimez **Sales per sq ft** et remplacez-le par **Dis
 
 Votre nuage de points a-t-il uniquement un point de données qui regroupe toutes les valeurs sur les axes X et Y ?  Ou regroupe-t-il toutes les valeurs le long d’une unique ligne horizontale ou verticale ?
 
-![Capture d’écran d’un nuage de points avec un seul point de données.](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
+![Capture d’écran d’un nuage de points avec un seul point de données.](media/power-bi-visualization-scatter/pbi-scatter-tshoot1.png)
 
 Ajoutez un champ au puits **Détails** pour indiquer à Power BI comment regrouper les valeurs. Le champ doit être unique pour chaque point à tracer. Un simple numéro de ligne ou un champ ID suffit.
 
-![Capture d’écran d’un nuage de points avec RowNum ajouté au puits Détails.](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
+![Capture d’écran d’un nuage de points avec RowNum ajouté au puits Détails.](media/power-bi-visualization-scatter/pbi-scatter-tshoot.png)
 
 Si vous n’en avez pas dans vos données, créez un champ qui concatène les valeurs X et Y pour les convertir en élément unique par point :
 
-![Capture d’écran d’un graphique à nuages de points avec TempTime ajouté au puits Détails.](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
+![Capture d’écran d’un graphique à nuages de points avec TempTime ajouté au puits Détails.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
 Pour créer un champ, [utilisez l’éditeur de requête Power BI Desktop pour ajouter une colonne d’index](../desktop-add-custom-column.md) à votre jeu de données. Ajoutez ensuite cette colonne au puits **Détails** de la visualisation.
 

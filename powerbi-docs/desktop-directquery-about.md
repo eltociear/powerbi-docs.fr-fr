@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 11de32b8119e8b6922dcc1a971750e4256812932
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: d303e20e524ad7ac67882812b6e4f5a1d9b06c33
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654769"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305797"
 ---
 # <a name="using-directquery-in-power-bi"></a>Utilisation de DirectQuery dans Power BI
 Lorsque vous utilisez **Power BI Desktop** ou le **service Power BI**, vous pouvez vous connecter à toutes sortes de sources de données et établir ces connexions aux données de différentes façons. Vous pouvez *importer* des données dans Power BI, ce qui est la méthode la plus courante pour obtenir des données ou vous connecter directement aux données dans leur dépôt source d’origine, ce qu’on appelle une requête **DirectQuery**. Cet article décrit **DirectQuery** et ses fonctionnalités :
@@ -137,6 +137,7 @@ Le terme *modélisation* dans ce contexte signifie affiner et enrichir les donn�
 Lorsque vous utilisez **DirectQuery**, bon nombre de ces enrichissements de modèle peuvent être apportés, et le principe subsiste certainement que les données brutes sont enrichies afin d’améliorer leur utilisation ultérieure. Or, certaines fonctionnalités de modélisation ne sont pas disponibles ou sont limitées lors de l’utilisation de DirectQuery. Les limitations sont généralement appliquées pour éviter des problèmes de performances. Les limitations communes à toutes les sources DirectQuery sont répertoriées dans la liste à puces ci-dessous. Des limitations supplémentaires peuvent s’appliquer à certaines sources, comme décrit dans la section *Détails spécifiques de source de données* vers la fin de cet article.
 
 * **Aucune hiérarchie de dates intégrée :** par défaut, quand vous importez des données, une hiérarchie de dates intégrée est disponible pour chaque colonne de date/heure présente. Par exemple, lors de l’importation d’une table de commandes client incluant une colonne OrderDate, en cas d’utilisation d’OrderDate dans un visuel, il est possible de choisir le niveau approprié (Année, Mois, Jour) à utiliser. Cette hiérarchie de dates intégrée n’est pas disponible en cas d’utilisation du mode DirectQuery. Notez cependant que, si une table de dates est disponible dans la source sous-jacente (comme c’est le cas dans de nombreux entrepôts de données), les fonctions Time Intelligence de DAX peuvent être utilisées normalement.
+* **Prise en charge de la date/heure seulement avec une précision à la seconde :** Quand vous utilisez des colonnes de type heure dans votre jeu de données, Power BI émet des requêtes vers la source sous-jacente seulement à un niveau de détail de l’ordre de la seconde. Les requêtes ne sont pas envoyées à la source DirectQuery pour les millisecondes : vous devez donc supprimer cette partie des heures dans vos colonnes sources.
 * **Limitations dans les colonnes calculées :** les colonnes calculées doivent figurer à l’intérieur d’une ligne, car elles peuvent uniquement faire référence à des valeurs d’autres colonnes de la même table, sans possibilité d’utiliser des fonctions d’agrégation. De plus, les fonctions scalaires DAX (telles que LEFT()) autorisées se limitent à celles qui peuvent simplement être envoyées (push) à la source sous-jacente, de sorte qu’elles varient selon les capacités de la source. Les fonctions non prises en charge ne sont pas proposées dans la saisie semi-automatique lors de la création du DAX pour une colonne calculée, et leur utilisation entraînerait une erreur.
 * **Aucune prise en charge pour les fonctions DAX parent-enfant :** le modèle DirectQuery ne permet pas d’utiliser la famille de fonctions DAX PATH(), qui servent généralement à gérer des structures parent-enfant (par exemple, un graphique de comptes ou des hiérarchies d’employés).
 * **Les tables calculées ne sont pas prises en charge :** la possibilité de définir une table calculée à l’aide d’une expression DAX n’est pas prise en charge en mode DirectQuery.

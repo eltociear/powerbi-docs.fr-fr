@@ -4,25 +4,26 @@ description: Ce document explique comment les consommateurs de Power BI peuvent
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5b36ded0863685726f9af3104b43c507b9a3c4d0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d35cdc6e2c6d2c2632fe8a9776ddc366436cff94
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65607990"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251501"
 ---
-# <a name="show-the-data-that-was-used-to-create-the-visual"></a>Afficher les données utilisées pour créer le visuel
+# <a name="show-data-with-power-bi-reports"></a>Montrer des données avec des rapports Power BI
 
-Un visuel Power BI se construit à l’aide des jeux de données sous-jacents. Si vous voulez voir les calculs sous-jacents, Power BI vous permet d’*afficher* les données utilisées pour créer le visuel. Lorsque vous sélectionnez **Afficher les données**, Power BI affiche les données sous ou à côté du visuel.
+Un visuel Power BI se construit à l’aide des jeux de données sous-jacents. Si vous voulez voir ce qui est sous-jacent, le service Power BI vous permet d’*afficher* les données utilisées pour créer un visuel dans un rapport. Lorsque vous sélectionnez **Afficher les données**, Power BI affiche les données sous ou à côté du visuel.
 
+Dans un tableau de bord, pour voir les données sous-jacentes, utilisez [Export vers Excel](end-user-export.md)
 
+## <a name="show-the-data-being-used-to-create-a-report-visual"></a>Montrer les données utilisées pour créer le visuel d’un rapport
 1. Dans le service Power BI, [ouvrez un rapport](end-user-report-open.md), puis sélectionnez un visuel.  
 2. Pour afficher les données sous-jacentes du visuel, sélectionnez les points de suspension (…), puis choisissez **Afficher les données**.
    

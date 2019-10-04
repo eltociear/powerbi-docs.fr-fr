@@ -1,6 +1,6 @@
 ---
 title: Présentation du rôle d’administrateur Power BI
-description: Configuration de DirectQuery et de la sécurité au niveau des lignes pour les jeux de données importés dans le service Power BI
+description: Cet article décrit le rôle d’administrateur du service Power BI et comment l’utiliser dans votre organisation.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,18 +10,16 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2185d7a9c91ed014cf0bed29d6393be0e40556a8
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 8b4d2382f89c48f20767cf72bc0468589c366cfe
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074510"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256438"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Présentation du rôle d’administrateur de service Power BI
 
 Découvrez comment vous pouvez utiliser le rôle d’administrateur de service Power BI au sein de votre organisation. Les utilisateurs avec ce rôle ont un contrôle total sur un locataire Power BI et ses fonctionnalités d’administration, à l’exception des licences.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/PQRbdJgEm3k?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Le rôle d’administrateur de service Power BI peut être affecté à des utilisateurs qui doivent pouvoir accéder au portail d’administration de Power BI, sans leur accorder un accès administratif complet à Office 365.
 

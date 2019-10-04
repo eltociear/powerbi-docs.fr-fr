@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 240045c05a35a6583b537b785c6639a39c6aa9d4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e48713315b23cf322b635f1650374251b639e4f
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61193829"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409360"
 ---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Définir des rôles et des règles dans Power BI Desktop
 Vous pouvez définir des rôles et des règles dans Power BI Desktop. Quand vous publiez sur Power BI, les définitions de rôles sont aussi publiées.
@@ -35,8 +35,14 @@ Pour définir des rôles de sécurité, effectuez les étapes suivantes.
    
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 8. Après avoir créé l’expression DAX, vous pouvez activer la case à cocher au-dessus de la zone d’expression pour valider l’expression.
-   
+      
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
+   
+   > [!NOTE]
+   > Dans cette zone d’expression, vous utilisez des virgules pour séparer les arguments des fonctions DAX, même si vous utilisez des paramètres régionaux qui utilisent normalement des points-virgules comme séparateurs (par exemple le français ou l’allemand). 
+   >
+   >
+   
 9. Sélectionnez **Enregistrer**.
 
 Vous ne pouvez pas attribuer d’utilisateurs à un rôle dans Power BI Desktop. Vous devez le faire dans le service Power BI. Dans Power BI Desktop, vous pouvez activer la sécurité dynamique en utilisant les fonctions DAX *username()* ou *userprincipalname()* et en configurant les relations appropriées. 

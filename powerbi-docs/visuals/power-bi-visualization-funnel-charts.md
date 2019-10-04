@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: ac9ffa4d1186a8ca6d4e2d55da4311bbce55903e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161129"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194670"
 ---
 # <a name="funnel-charts"></a>Graphiques en entonnoir
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Un graphique en entonnoir vous permet de mieux visualiser un processus linéaire qui comporte des étapes séquentielles liées entre elles. Par exemple, un entonnoir de ventes qui effectue le suivi des clients à travers des étapes : Lead \> Qualified Lead \> Prospect \> Contract \> Close.  En regardant la forme de l’entonnoir, vous savez instantanément comment se déroule le processus dont vous effectuez le suivi.
 
 Chaque étape de l’entonnoir représente un pourcentage du total. C’est pourquoi un graphique en entonnoir a généralement la forme d’un entonnoir, où la première étape est la plus large et chaque étape suivante est plus étroite que l’étape précédente.  Un entonnoir en forme de poire est également utile, car il peut indiquer un problème dans le processus.  Mais le plus souvent, la première étape (l’étape de départ) est la plus large.
@@ -39,27 +42,43 @@ Les graphiques en entonnoir sont conseillés :
 ## <a name="working-with-funnel-charts"></a>Utilisation des graphiques en entonnoir
 Graphiques en entonnoir :
 
-* peuvent être épinglés à partir des rapports et de Q&R ;
 * peuvent être triés ;
 * prennent en charge les multiples ;
 * prennent en charge la mise en surbrillance et le filtrage croisé par d’autres visualisations sur la même page de rapport ;
 * peuvent être utilisés pour la mise en surbrillance et le filtrage croisé d’autres visualisations sur la même page de rapport.
+   > [!NOTE]
+   > Regardez cette vidéo pour voir comment créer un graphique en entonnoir avec l’exemple Vente et marketing. Ensuite, suivez les étapes sous la vidéo pour essayer par vous-même avec le fichier PBIX de l’exemple Analyse des opportunités.
+   > 
+   > 
+## <a name="prerequisite"></a>Prérequis
+
+Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse des opportunités](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix
+).
+
+1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
+   
+2. Rechercher votre copie du **fichier PBIX de l’exemple Analyse des opportunités**
+
+1. Ouvrez le **fichier PBIX de l’exemple Analyse des opportunités** dans la vue Rapport ![Capture d’écran de l’icône de la vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
+
 
 ## <a name="create-a-basic-funnel-chart"></a>Créer un graphique en entonnoir simple
-Regardez cette vidéo pour voir comment créer un graphique en entonnoir à l’aide de l’exemple Vente et marketing.
+Regardez cette vidéo pour voir comment créer un graphique en entonnoir avec l’exemple Vente et marketing.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qKRZPBnaUXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 À présent, créez votre propre graphique en entonnoir qui montre le nombre d’opportunités identifiées à chaque étape de vente.
 
-Ces instructions s’appliquent à l’exemple Analyse d’opportunités. Pour effectuer la procédure, [téléchargez l’exemple](../sample-datasets.md) pour le service Power BI (app.powerbi.com) ou Power BI Desktop.   
-
-1. Démarrez sur une page de rapport vierge, puis sélectionnez le champ **SalesStage** \> **Étape de vente**. Si vous utilisez le service Power BI, veillez à ouvrir le rapport en [mode Édition](../service-interact-with-a-report-in-editing-view.md).
+1. Démarrez sur une page de rapport vierge, puis sélectionnez le champ **SalesStage** \> **Étape de vente**.
    
-    ![sélectionner Étape de vente](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
-2. [Convertissez le graphique](power-bi-report-change-visualization-type.md) en Entonnoir. Notez que **Étape de vente** se trouve dans la zone **Groupe** . 
-3. Dans le volet **Champs**, sélectionnez **Fait** \> **Nombre d’opportunités**.
+    ![sélectionner Étape de vente](media/power-bi-visualization-funnel-charts/funnelselectfield-new.png)
+
+1. Sélectionnez l’icône Entonnoir ![Icône Graphique en entonnoir](media/power-bi-visualization-funnel-charts/power-bi-funnel-icon.png) pour convertir l’histogramme en graphique en entonnoir.
+
+2. Dans le volet **Champs**, sélectionnez **Fait** \> **Nombre d’opportunités**.
    
     ![générer le graphique en entonnoir](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Placez le curseur sur une barre pour afficher diverses informations :
@@ -67,10 +86,10 @@ Ces instructions s’appliquent à l’exemple Analyse d’opportunités. Pour e
    * Nom de l’étape
    * Nombre d’opportunités actuellement identifiées à cette étape
    * Taux de conversion global (% de prospect) 
-   * Taux d’abandon, qui est le pourcentage de l’étape précédente (dans ce cas, étape Proposal/étape Solution).
+   * Stage-to-stage (Taux d’abandon), qui est le pourcentage de l’étape précédente (dans ce cas, Proposal Stage/Solution Stage - Étape Proposition/Étape Solution).
      
-     ![détails de la barre Proposal](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Ajoutez l’entonnoir en vignette de tableau de bord](../service-dashboard-tiles.md). 
+     ![détails de la barre Proposal](media/power-bi-visualization-funnel-charts/funnelhover-new.png)
+
 6. [Enregistrez le rapport](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Mise en surbrillance et filtrage croisé
@@ -82,15 +101,6 @@ La mise en surbrillance d’une barre dans un graphique en entonnoir entraîne l
    
    ![courte vidéo montrant les interactions des visuels](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
 2. Pour définir les préférences pour la mise en surbrillance croisée et le filtrage croisé des visuels entre eux, consultez [Interaction des éléments visuels dans Power BI](../service-reports-visual-interactions.md).
-
-## <a name="create-a-funnel-chart-using-qa"></a>Créer un graphique en entonnoir à l’aide de Questions et réponses
-Ouvrez le tableau de bord Exemple Analyse des opportunités ou un autre tableau de bord auquel au moins une visualisation a été épinglée à partir du jeu de données Exemple Analyse des opportunités.  Quand vous tapez une question dans Q&R, Power BI recherche des réponses dans tous les jeux de données associés au tableau de bord sélectionné (ceux ayant des vignettes épinglées à ce tableau de bord). Pour plus d’informations, consultez [Power BI – Concepts de base](../service-basic-concepts.md).
-
-1. Dans le tableau de bord Exemple Analyse des opportunités, commencez à taper votre question dans la zone Questions et réponses.
-   
-   ![zone de question et graphique en entonnoir](media/power-bi-visualization-funnel-charts/power-bi-qna.png)
-   
-2. N’oubliez pas d’inclure « as funnel » (en entonnoir) pour indiquer à Power BI le type de visualisation souhaité.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

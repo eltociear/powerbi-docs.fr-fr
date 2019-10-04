@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: 54713c9c978554521d68aeb7b4c25d681ddb3d69
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 09/26/2019
+ms.openlocfilehash: bbd9a3884b3b6b0cd235471b0746f605e3872aff
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187463"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325748"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installer Power BI Desktop optimisé pour Power BI Report Server
 
@@ -30,28 +30,27 @@ Le moyen le plus simple d’avoir la version la plus récente de Power BI Deskto
 
     ![Télécharger Power BI Desktop à partir du portail web](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Ou accédez directement à [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimisé pour Power BI Report Server - mai 2019) dans du Microsoft Download Center.
+    Vous pouvez accéder à la page d’accueil de [Power BI Report Server](https://powerbi.microsoft.com/report-server/) et sélectionner les **options de téléchargement avancées**.
 
 2. Dans la page du Centre de téléchargement, sélectionnez **Télécharger**.
 
 3. En fonction de votre ordinateur, sélectionnez : 
 
     - **PBIDesktopRS.msi** (version 32 bits) ou
-
     - **PBIDesktopRS_x64.msi** (version 64 bits).
 
-1. Après avoir téléchargé le programme d’installation, exécutez l’Assistant Installation de Power BI Desktop (mai 2019).
+1. Après avoir téléchargé le programme d’installation, exécutez l’Assistant Installation de Power BI Desktop (septembre 2019).
 
-2. À la fin de l’installation, sélectionnez **lancer Power BI Desktop**.
+2. À la fin de l’installation, sélectionnez **Lancer Power BI Desktop**.
 
     Power BI Desktop démarre et vous pouvez l’utiliser.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Vérifier que vous utilisez la version correcte
-Il est facile de vérifier que vous utilisez la bonne version de Power BI Desktop : Regardez la barre de titre ou l’écran de démarrage dans Power BI Desktop. La barre de titre indique le mois et l’année de publication. De plus, les couleurs du logo Power BI sont inversées, jaune sur fond noir au lieu de noir sur fond jaune.
+Il est facile de vérifier que vous utilisez la bonne version de Power BI Desktop : Regardez la barre de titre ou l’écran de démarrage dans Power BI Desktop. Vous pouvez voir que vous disposez de la version adéquate, car **Power BI Desktop (septembre 2019)** apparaît dans la barre de titre. De plus, les couleurs du logo Power BI sont inversées, jaune sur fond noir au lieu de noir sur fond jaune.
 
-![Barre de titre pour Power BI Desktop optimisé pour Power BI Report Server](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2019.png)
+![Power BI Desktop Septembre 2019](media/install-powerbi-desktop/power-bi-report-server-desktop-sept-2019.png)
 
-La barre de titre de la version Power BI Desktop du service Power BI n’affiche pas le mois et l’année.
+La barre de titre de la version de Power BI Desktop pour le service Power BI n’indique pas le mois et l’année.
 
 ## <a name="file-extension-association"></a>Association d’extension de fichier
 Si vous installez Power BI Desktop et Power BI Desktop optimisé pour Power BI Report Server sur le même ordinateur, l’installation la plus récente de Power BI Desktop présente une association avec les fichiers .pbix. Par conséquent, quand vous double-cliquez sur un fichier .pbix, la version de Power BI Desktop que vous avez installée en dernier démarre.
@@ -60,7 +59,7 @@ Si vous avez Power BI Desktop, puis que vous installez Power BI Desktop optimis�
 
 Vous pouvez toujours commencer par ouvrir la version de Power BI Desktop que vous souhaitez utiliser, puis ouvrir le fichier à partir de Power BI Desktop.
 
-Modification d’un rapport Power BI à partir de Power BI Report Server ou la création d’un nouveau rapport Power BI à partir du portail web, s’ouvre toujours la version appropriée de Power BI Desktop.
+La modification d’un rapport Power BI à partir de Power BI Report Server, ou la création d’un rapport Power BI à partir du portail web, ouvre toujours la version correcte de Power BI Desktop.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
@@ -68,7 +67,7 @@ Les rapports Power BI dans Power BI Report Server, dans le service Power BI (htt
 
 ### <a name="in-a-browser"></a>Dans un navigateur
 
-Rapports Power BI Report Server prennent en charge presque toutes les visualisations, y compris des éléments visuels personnalisés. Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalités suivantes :
+Les rapports Power BI Report Server prennent en charge presque toutes les visualisations, notamment les visuels personnalisés. Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalités suivantes :
 
 * Visuels R
 * ArcGIS Maps
@@ -89,13 +88,13 @@ Les rapports Power BI Report Server ne prennent pas en charge les fonctionnalit�
 * ArcGIS Maps
 * Éléments visuels personnalisés
 * Fil d’Ariane
-* Geo filtrage ou codes barres
+* Filtrage basé sur la géolocalisation ou codes barres
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop pour les versions antérieures de Power BI Report Server
 
-Si votre serveur de rapports est d’une version antérieure, vous avez besoin de la version correspondante de Power BI Desktop. Voici le lien pour télécharger la version précédente.
+Si votre serveur de rapports est d’une version antérieure, vous avez besoin de la version correspondante de Power BI Desktop. Voici le lien permettant de télécharger la version précédente.
 
-- Microsoft Power BI Desktop ([optimisé pour Power BI Report Server - janvier 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
+- Microsoft Power BI Desktop ([optimisé pour Power BI Report Server - janvier 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
 
 ## <a name="next-steps"></a>Étapes suivantes
 

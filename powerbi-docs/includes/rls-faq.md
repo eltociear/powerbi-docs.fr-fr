@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0592cb7ef076f8094aca565d955cc238b2181068
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: cd0696b44e285119193059304c89cfa04c755771
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560956"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409361"
 ---
 ## <a name="faq"></a>FORUM AUX QUESTIONS
 **Question :** Que se passe-t-il si j’avais déjà créé des rôles et des règles pour un jeu de données dans le service Power BI ? Continuent-ils de fonctionner si je ne fais rien ?  
@@ -19,3 +19,5 @@ ms.locfileid: "69560956"
 **Question :** Avec SNL, puis-je masquer les données détaillées tout en donnant accès aux données résumées dans les visuels ?  
 **Réponse :** Non, vous sécurisez des lignes de données individuelles, mais les utilisateurs peuvent toujours voir les détails ou les données résumées.
 
+**Question :** Ma source de données a déjà des rôles de sécurité définis (par exemple des rôles SQL Server ou des rôles SAP BW). Quelle est la relation entre ces éléments et SNL ?  
+**Réponse :** La réponse varie selon que vous importez des données ou que vous utilisez DirectQuery. Si vous importez des données dans votre jeu de données Power BI, les rôles de sécurité de votre source de données ne sont pas utilisés. Dans ce cas, vous devez définir la sécurité au niveau des lignes pour appliquer des règles de sécurité aux utilisateurs qui se connectent dans Power BI. Si vous utilisez DirectQuery, les rôles de sécurité de votre source de données sont utilisés. Quand un utilisateur ouvre un rapport, Power BI envoie une requête à la source de données sous-jacente, qui applique des règles de sécurité aux données en fonction des informations d’identification de l’utilisateur.

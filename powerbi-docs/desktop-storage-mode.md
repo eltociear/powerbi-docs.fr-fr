@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/06/2019
+ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: bf69b2e4c25597eba980137e5ef8b2feb2f4d103
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841314"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327718"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Mode de stockage dans Power BI Desktop
 
 Dans Microsoft Power BI Desktop, vous pouvez spécifier le *mode de stockage* des tables. Le *mode de stockage* vous permet de contrôler si Power BI Desktop place en cache des données de table en mémoire pour les rapports. 
 
-![Mode de stockage dans Power BI Desktop](media/desktop-storage-mode/storage-mode_01.png)
+![Mode de stockage dans Power BI Desktop](media/desktop-storage-mode/storage-mode-01.png)
 
 La définition du mode de stockage offre de nombreux avantages. Vous pouvez définir le mode de stockage pour chaque table individuellement dans votre modèle. Cette action permet d’avoir un seul jeu de données, ce qui offre les avantages suivants :
 
@@ -48,13 +48,10 @@ Le paramètre de mode de stockage dans Power BI Desktop est une des trois foncti
 
 ## <a name="use-the-storage-mode-property"></a>Utiliser la propriété du mode de stockage
 
-Vous pouvez définir la propriété Mode de stockage sur chaque table dans votre modèle. Pour définir le mode de stockage, dans le volet **Champs**, cliquez avec le bouton droit sur la table dont vous voulez définir les propriétés et sélectionnez **Propriétés**.
+Vous pouvez définir la propriété Mode de stockage sur chaque table dans votre modèle. Pour définir le mode de stockage ou voir son paramétrage actuel, dans la vue **Modèle**, sélectionnez la table dont vous voulez voir ou définir les propriétés, sélectionnez le volet **Propriétés**, développez la section **Avancé**, puis développez la liste déroulante **Mode de stockage**.
 
-![Commande Propriétés dans le menu contextuel](media/desktop-storage-mode/storage-mode_02.png)
+![Commande Propriétés dans le menu contextuel](media/desktop-storage-mode/storage-mode-02.png)
 
-La propriété active s’affiche dans la liste déroulante **Mode de stockage** dans le volet **Propriétés du champ** de la table. Vous pouvez afficher le mode de stockage actif ou le modifier à cet emplacement.
-
-![Définir le mode de stockage pour une table](media/desktop-storage-mode/storage-mode_03.png)
 
 Il existe trois valeurs pour le mode de stockage :
 
@@ -77,11 +74,11 @@ Les tables doubles ont les mêmes contraintes fonctionnelles que les tables Dire
 ## <a name="propagation-of-dual"></a>Propagation de double
 Considérez le modèle simple suivant, où toutes les tables sont d’une source unique qui prend en charge l’importation et DirectQuery.
 
-![Exemple d’affichage de relation pour le mode de stockage](media/desktop-storage-mode/storage-mode_04.png)
+![Exemple d’affichage de relation pour le mode de stockage](media/desktop-storage-mode/storage-mode-04.png)
 
 Supposons que toutes les tables dans ce modèle sont en mode DirectQuery pour commencer. Si nous modifions ensuite le **mode de stockage** de la table *SurveyResponse* sur Importer, la fenêtre d’avertissement suivante s’affiche :
 
-![Fenêtre d’avertissement sur le mode de stockage](media/desktop-storage-mode/storage-mode_05.png)
+![Fenêtre d’avertissement sur le mode de stockage](media/desktop-storage-mode/storage-mode-05.png)
 
 Les tables de dimension (*Customer* (Client), *Geography* (Géographie) et *Date*) peuvent être définies sur **Dual** (Double) afin de réduire le nombre de relations faibles dans le jeu de données et améliorer les performances. Les relations faibles impliquent en général au moins une table DirectQuery où la logique de jonction ne peut pas être envoyée aux systèmes sources. Le fait que les tables **Double** peuvent agir en tant que DirectQuery ou Importer permet d’éviter ce problème.
 
@@ -123,15 +120,15 @@ Les requêtes qui font référence à des tables en mode **Double** renvoient de
 
 Si l’on continue avec l’exemple précédent, la requête suivante fait référence uniquement à une colonne de la table *Date*, qui est en mode **Double**. Par conséquent, la requête devrait atteindre le cache.
 
-![Script pour les diagnostics de mode de stockage](media/desktop-storage-mode/storage-mode_06.png)
+![Script pour les diagnostics de mode de stockage](media/desktop-storage-mode/storage-mode-06.png)
 
 La requête suivante fait référence uniquement à une colonne de la table *Sales*, qui se trouve en mode **DirectQuery**. Par conséquent, elle ne devrait *pas* atteindre le cache.
 
-![Script pour les diagnostics de mode de stockage](media/desktop-storage-mode/storage-mode_07.png)
+![Script pour les diagnostics de mode de stockage](media/desktop-storage-mode/storage-mode-07.png)
 
 La requête suivante est intéressante, car elle combine les deux colonnes. Cette requête n’atteint pas le cache. Initialement, vous pouvez prévoir de récupérer des valeurs *CalendarYear* dans le cache et des valeurs *SalesAmount* dans la source, puis combiner les résultats, mais cette approche est moins efficace que d’envoyer l’opération SUM/GROUP BY au système source. Si l’opération a été repoussée vers la source, le nombre de lignes retournées sera probablement bien moindre. 
 
-![Script pour les diagnostics de mode de stockage](media/desktop-storage-mode/storage-mode_08.png)
+![Script pour les diagnostics de mode de stockage](media/desktop-storage-mode/storage-mode-08.png)
 
 > [!NOTE]
 > Ce comportement est différent des [relations plusieurs à plusieurs dans Power BI Desktop](desktop-many-to-many-relationships.md) lors de la combinaison des tables mises en cache et non mises en cache.
@@ -145,7 +142,7 @@ Le mode de stockage *Double* est une optimisation des performances. Il doit êtr
 ## <a name="data-view"></a>Affichage des donnés
 Si au moins une table dans le jeu de données a son mode de stockage défini sur **Importer** ou **Double**, l’onglet **Affichage des données** s’affiche.
 
-![Vue Données dans Power BI Desktop](media/desktop-storage-mode/storage-mode_09.png)
+![Vue Données dans Power BI Desktop](media/desktop-storage-mode/storage-mode-03.png)
 
 Lorsqu’elles sont sélectionnées dans **Affichage des données**, les tables **Doubles** et **Importer** affichent des données mises en cache. Les tables DirectQuery n’affichent pas les données, et un message s’affiche indiquant que les tables DirectQuery ne peuvent pas être affichées.
 

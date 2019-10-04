@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: 8e08557c475f06c8a32cebb0b7ca0fe1054cf266
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264551"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195380"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Créer une application modèle dans Power BI
 
@@ -47,7 +47,7 @@ Pour créer une application modèle que vous pourrez ensuite distribuer à d’a
 
 3. Entrez un nom, une description (facultative) et un logo (facultatif) pour votre espace de travail d’application.
 
-4. Sélectionnez **Développer une application modèle**.
+4. Développez la section **Avancé**, puis sélectionnez **Développer une application modèle**.
 
     ![Développer une application modèle](media/service-template-apps-create/power-bi-template-app-develop.png)
 
@@ -78,17 +78,19 @@ Maintenant que vous avez ajouté du contenu dans votre espace de travail, vous �
     **Personnalisation**
 
     ![Personnalisation](media/service-template-apps-create/power-bi-create-branding.png)
-    - Nom de l’application
+    - Nom de l'application
     - Description
     - Site de prise en charge (le lien est présenté sous les informations de l’application après avoir redistribué l’application modèle en tant qu’application de l’organisation)
     - Logo de l’application (taille limite de fichier 45 Ko, proportions 1:1, formats .png .jpg .jpeg)
-    - Couleur de thème de l’application
+    - Couleur du thème de l'application
 
-    **Contenu**
+    **Navigation**
 
-    **Page d’accueil de l’application :** Définissez un rapport ou un tableau de bord comme page d’accueil de votre application, utilisez une page d’accueil qui donne une bonne impression :
+    Activez le **Nouveau générateur de navigation**, où vous pouvez définir le volet de navigation gauche de l’application (pour plus d’informations, consultez [Concevoir l’expérience de navigation](service-create-distribute-apps.md#design-the-navigation-experience) dans cet article).
 
-    ![Contenu](media/service-template-apps-create/power-bi-create-content.png)
+   ![Définir la page d’accueil de l’application](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
+    
+    **Page d’accueil de l’application :** Si vous décidez de ne pas utiliser le générateur de navigation, vous avez la possibilité de sélectionner la page d’accueil de l’application. définissez le rapport ou le tableau de bord à utiliser comme page d’accueil de votre application. Utilisez une page d’accueil qui donne l’impression appropriée.
 
     **Contrôle**
 
@@ -107,7 +109,6 @@ Maintenant que vous avez ajouté du contenu dans votre espace de travail, vous �
     - **Valeur** : valeur de paramètre par défaut.
     - **Obligatoire** : à utiliser pour forcer le programme d’installation à entrer un paramètre spécifique à l’utilisateur.
     - **Verrouiller** : le verrouillage empêche le programme d’installation de mettre à jour un paramètre.
-    - **Statique** : à activer si l’application contient *uniquement* des exemples de données. Lorsque vous sélectionnez **Statique**, l’Assistant d’installation ne demande pas aux utilisateurs de se connecter à une source de données.
 
     **Accès** Dans la phase de test, déterminez quels utilisateurs de votre organisation peuvent installer et tester votre application. Ne vous inquiétez pas, vous pourrez toujours revenir et changer ces paramètres ultérieurement (le paramètre n’affecte pas l’accès de l’application modèle distribuée).
 

@@ -11,23 +11,28 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8b0db9aebe72d54aa464ec012e614ae0ec5bc723
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 020d7edcf6bc499623df93a9def30285a37cffc6
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390523"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194165"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Graphiques en jauge radiale dans Power BI
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Un graphique en jauge radiale est en forme d’arc de cercle. Il affiche une seule valeur qui mesure la progression vers un objectif/indicateur de performance clé (KPI). La ligne (ou *aiguille*) représente l’objectif ou la valeur cible. L’ombrage représente la progression vers cet objectif. La valeur à l’intérieur de l’arc représente la valeur de la progression. Power BI répartit toutes les valeurs possibles uniformément le long de l’arc, de la valeur minimale (la plus à gauche) à la valeur maximale (la plus à droite).
 
-![Capture d’écran de la jauge radiale.](media/power-bi-visualization-radial-gauge-charts/gauge_m.png)
+![Capture d’écran de la jauge radiale.](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 
 Dans cet exemple, vous êtes un concessionnaire automobile et effectuez le suivi de la moyenne des ventes mensuelles réalisées par votre équipe de vente. L’aiguille correspond à un objectif de ventes de 140 véhicules. La moyenne minimale de ventes mensuelles possible est 0 et la moyenne maximale a été définie à 200.  L’ombrage bleu indique que l’équipe a atteint une moyenne de 120 ventes ce mois-ci. Heureusement, il reste encore une semaine pour atteindre l’objectif fixé.
 
 Vous pouvez écouter Will qui vous montre comment créer des éléments visuels de métrique uniques : jauges, cartes et indicateurs de performance clés.
-
+   > [!NOTE]
+   > Cette vidéo utilise une version antérieure de Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-radial-gauge"></a>Quand faut-il utiliser un graphique en jauge radiale ?
@@ -44,43 +49,39 @@ Les graphiques en jauge radiale sont conseillés pour :
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-* Service Power BI ou Power BI Desktop
+Ce tutoriel utilise le [fichier Excel d’exemple financier](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Classeur Excel d’exemples financiers : [télécharger directement l’exemple](http://go.microsoft.com/fwlink/?LinkID=521962).
+1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Obtenir les données** > **Excel**.
+   
+2. Trouver votre copie de l’**du fichier Excel d’exemple financier**
+
+1. Ouvrez le **fichier Excel d’exemple financier** dans la vue Rapport ![Capture d’écran de l’icône Vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Sélectionnez **financials** (données financières) et **Feuil1**
+
+1. Cliquez sur **Charger**
+
+1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
+
+
 
 ## <a name="create-a-basic-radial-gauge"></a>Créer une jauge radiale simple
 
-Ces instructions utilisent le service Power BI. Pour suivre la procédure, connectez-vous à Power BI et ouvrez le fichier Excel d’exemple financier.
+### <a name="step-1-create-a-gauge-to-track-gross-sales"></a>Étape 1 : Créer une jauge pour effectuer le suivi du chiffre d’affaires brut
 
-### <a name="step-1-open-the-financial-sample-excel-file"></a>Étape 1 : Ouvrir le fichier Excel d’exemple financier
-
-1. Si ce n’est déjà fait, téléchargez le [fichier Excel d’exemple financier](../sample-financial-download.md). Notez l’endroit où vous l’enregistrez.
-
-1. Dans le service Power BI, sélectionnez **Obtenir les données** > **Fichiers**.
-
-1. Sélectionnez **Fichier local**, puis accédez à l’emplacement du fichier d’exemple.
-
-1. Sélectionnez **Importer**. Power BI ajoute l’exemple financier à votre espace de travail en tant que jeu de données.
-
-1. Dans la liste de contenu **Jeu de données**, sélectionnez l’icône **Créer un rapport** pour **Financial Sample** (exemple financier).
-
-    ![Capture d’écran de la liste des jeux de données avec une flèche pointant vers l’icône Créer un rapport pour l’exemple financier.](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
-
-### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Étape 2 : Créer une jauge pour effectuer le suivi du chiffre d’affaires brut
-
-Dans la dernière section, lorsque vous avez sélectionné l’icône **Créer un rapport**, Power BI a créé un rapport vide en mode Édition.
+1. Démarrer sur une page de rapport vide
 
 1. Dans le volet **Champs** , sélectionnez **Gross Sales** (Chiffre d’affaires brut).
 
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
 
 1. Changez l’agrégation en **Moyenne**.
 
-   ![Capture d’écran du volet Champs avec le chiffre d’affaires brut et la valeur moyenne globale.](media/power-bi-visualization-radial-gauge-charts/changetoaverage_new.png)
+   ![Capture d’écran du volet Champs avec le chiffre d’affaires brut et la valeur moyenne globale.](media/power-bi-visualization-radial-gauge-charts/changetoaverage-new.png)
 
-1. Sélectionnez l’icône jauge ![Capture d’écran de l’icône jauge.](media/power-bi-visualization-radial-gauge-charts/gaugeicon_new.png) pour convertir l’histogramme en un graphique en jauge.
+1. Sélectionnez l’icône jauge ![Capture d’écran de l’icône jauge.](media/power-bi-visualization-radial-gauge-charts/gaugeicon-new.png) pour convertir l’histogramme en un graphique en jauge.
 
-    ![Capture d’écran du graphique en jauge.](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
+    ![Capture d’écran du graphique en jauge.](media/power-bi-visualization-radial-gauge-charts/gauge-no-target.png)
 
     Selon le moment où vous téléchargez le fichier **Financial Sample** (exemple financier), les valeurs affichées peuvent ne pas correspondre à ces chiffres.
 
@@ -95,7 +96,7 @@ Dans la dernière section, lorsque vous avez sélectionné l’icône **Créer u
 
    Power BI ajoute une aiguille pour représenter la valeur cible **145 480 $** .
 
-   ![Capture d’écran du graphique en jauge avec la moyenne du coût des produits vendus ajoutée.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
+   ![Capture d’écran du graphique en jauge avec la moyenne du coût des produits vendus ajoutée.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress-new.png)
 
     Comme vous pouvez le remarquer, l’objectif a même été dépassé.
 
@@ -110,7 +111,7 @@ Dans l’étape 2, Power BI a utilisé le champ **Valeur** pour définir autom
 
 1. Changez l’agrégation en **Maximum**.
 
-   ![Capture d’écran du volet Champs avec le chiffre d’affaires brut et la valeur maximale globale.](media/power-bi-visualization-radial-gauge-charts/setmaximum_new.png)
+   ![Capture d’écran du volet Champs avec le chiffre d’affaires brut et la valeur maximale globale.](media/power-bi-visualization-radial-gauge-charts/setmaximum-new.png)
 
    La jauge est redessinée avec une nouvelle valeur de fin (1,21 million de chiffre d’affaires brut).
 
@@ -119,8 +120,6 @@ Dans l’étape 2, Power BI a utilisé le champ **Valeur** pour définir autom
 ### <a name="step-5-save-your-report"></a>Étape 5 : Enregistrer votre rapport
 
 1. [Enregistrez le rapport](../service-report-save.md).
-
-1. [Ajoutez le graphique en jauge sous forme de vignette de tableau de bord](../service-dashboard-pin-tile-from-report.md). 
 
 ## <a name="use-manual-format-options-to-set-minimum-maximum-and-target-values"></a>Utiliser les options de mise en forme pour définir manuellement les valeurs Minimum, Maximum et Cible
 
@@ -136,7 +135,7 @@ Dans l’étape 2, Power BI a utilisé le champ **Valeur** pour définir autom
 
 1. Effacez l’option **COGS** dans le volet **champs** pour supprimer la valeur cible.
 
-    ![Capture d’écran de l’option COGS effacée.](media/power-bi-visualization-radial-gauge-charts/pbi_remove_target.png)
+    ![Capture d’écran de l’option COGS effacée.](media/power-bi-visualization-radial-gauge-charts/pbi-remove-target.png)
 
 1. Lorsque le champ **Cible** apparaît sous **Axe de la jauge**, entrez une valeur.
 
