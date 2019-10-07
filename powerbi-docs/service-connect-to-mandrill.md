@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 7440fb6dfcd181b6b1164260626cd0bfa7cda991
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: aa685ae9b51e1f5044dab883d8de871dcc7ed5da
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185416"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71945847"
 ---
 # <a name="connect-to-mandrill-with-power-bi"></a>Se connecter à Mandrill avec Power BI
 Le pack de contenu Power BI extrait des données de votre compte Mandrill et génère un tableau de bord, un ensemble de rapports et un jeu de données qui vous permettent d’explorer vos données. Utilisez les analyses de Mandrill pour obtenir rapidement une vue d’ensemble de votre bulletin d’informations ou campagne marketing. Les données sont actualisées tous les jours. Ainsi, vous êtes sûr que les données que vous utilisez sont à jour.
@@ -39,7 +39,7 @@ Connectez-vous au [pack de contenu Mandrill pour Power BI](http://app.powerbi.c
     ![](media/service-connect-to-mandrill/auth.png)
 5. Une fois les données importées dans Power BI, vous verrez un nouveau tableau de bord, un nouveau rapport et un nouveau jeu de données dans le volet de navigation gauche. Il s’agit du tableau de bord par défaut créé par Power BI pour afficher vos données.
    
-    ![](media/service-connect-to-mandrill/mandrill-dashboard1.jpg)
+    ![](media/service-connect-to-mandrill/mandrill-dashboard1.png)
 
 **Et maintenant ?**
 

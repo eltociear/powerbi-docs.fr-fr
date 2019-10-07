@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 61fc821e63889951aefd0ef815f885ffa8a880cf
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 2c17378c14ef084ad6632e52df2a801832b311d9
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994828"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715186"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Télécharger un rapport du service Power BI dans Power BI Desktop (préversion)
 Dans Power BI Desktop, vous pouvez publier un rapport (un *fichier .pbix*) dans le service Power BI, à partir de votre ordinateur local. Les rapports Power BI peuvent également aller dans l’autre sens : Vous pouvez télécharger un rapport du service Power BI dans Power BI Desktop. Dans les deux cas, l’extension d’un rapport Power BI, est .pbix.
@@ -26,7 +26,7 @@ Il existe quelques limites et considérations à prendre en compte (voir plus lo
 
 ## <a name="download-the-report-as-a-pbix-file"></a>Télécharger le rapport dans un fichier .pbix
 
-Vous pouvez uniquement télécharger les rapports [créés avec Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) après le 23 novembre 2016 ou mis à jour depuis. Si le rapport a été créé avant cette date, l’option de menu **Télécharger le rapport** dans le service Power BI apparaît grisée.
+Vous pouvez uniquement télécharger les rapports [créés avec Power BI Desktop](/learn/modules/publish-share-power-bi/2-publish-reports) après le 23 novembre 2016 ou mis à jour depuis. Si le rapport a été créé avant cette date, l’option de menu **Télécharger le rapport** dans le service Power BI apparaît grisée.
 
 Pour télécharger le fichier .pbix, procédez comme suit :
 

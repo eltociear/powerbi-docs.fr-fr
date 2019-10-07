@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: edda72ab1c9c9901bf71b360d3773b5e8da0a095
-ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
+ms.openlocfilehash: 9b7f3adfc7702dee36c43308b227baf72328935a
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71401827"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71945830"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Sources de données de rapport Power BI dans Power BI Report Server
 Les rapports Power BI peuvent se connecter à plusieurs sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles. Des données peuvent être importées ou interrogées directement à l’aide de DirectQuery ou d’une connexion active à SQL Server Analysis Services.
@@ -157,7 +157,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour l�
 | Liste SharePoint Online |Non |Non |Non |Non |
 | Snowflake |Non |Non |Non |Non |
 | Base de données Sybase |Non |Non |Oui |Oui |
-| Base de données Teradata |Non |Non |Oui |Oui |
+| Teradata |Non |Non |Oui |Oui |
 | appFigures (bêta) |Non |Non |Non |Non |
 | Base de données Azure Analysis Services (bêta) |Non |Non |Non |Non |
 | Azure Cosmos DB (bêta) |Non |Non |Non |Non |
@@ -204,7 +204,7 @@ Power BI Report Server ne prend pas en charge l’authentification OAuth pour Di
 | Base de données Oracle |Non |Non |Oui |Oui |Oui |
 | Serveur SAP Business Warehouse |Non |Non |Oui |Non |Non |
 | Base de données SAP HANA |Non |Non |Oui |Oui |Non |
-| Base de données Teradata |Non |Non |Oui |Oui |Oui |
+| Teradata |Non |Non |Oui |Oui |Oui |
 
 
 ## <a name="next-steps"></a>Étapes suivantes

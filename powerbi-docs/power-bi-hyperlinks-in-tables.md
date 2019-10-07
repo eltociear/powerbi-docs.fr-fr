@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/30/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 58cb009e29c05ce318c5931fb418617e1ef63f4f
-ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
+ms.openlocfilehash: b158e968d0fd35859cfd293177a7273e8311d5b2
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937061"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715294"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Ajouter des liens hypertexte (URL) à une table
 Cette rubrique explique comment ajouter des liens hypertexte (URL) à une table. Vous utilisez Power BI Desktop pour ajouter des liens hypertexte (URL) à une table ou matrice. Ensuite, vous pouvez utiliser Power BI Desktop ou le service Power BI pour ajouter des liens hypertexte à vos matrices et tables de rapports. 
@@ -57,7 +57,7 @@ La procédure d’ajout d’un lien hypertexte varie selon que vous avez import�
 
     ![Activer sur l’icône d’URL](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
-1. (Facultatif) [Publiez le rapport de Power BI Desktop vers le service Power BI](guided-learning/publishingandsharing.yml?tutorial-step=2) et ouvrez-le dans le service Power BI. Les liens hypertexte fonctionnent ici également.
+1. (Facultatif) [Publiez le rapport de Power BI Desktop vers le service Power BI](/learn/modules/publish-share-power-bi/2-publish-reports) et ouvrez-le dans le service Power BI. Les liens hypertexte fonctionnent ici également.
 
 ### <a name="for-data-connected-with-directquery"></a>Pour les données connectées avec DirectQuery
 Vous ne pouvez pas créer de colonne en mode DirectQuery.  Mais si vos données contiennent déjà des URL, vous pouvez les convertir en liens hypertexte.
@@ -65,7 +65,7 @@ Vous ne pouvez pas créer de colonne en mode DirectQuery.  Mais si vos données 
 1. En mode Rapport, créez un tableau à l’aide d’un champ qui contient des URL.
 2. Sélectionnez la colonne puis, sous l’onglet **Modélisation**, choisissez la liste déroulante **Catégorie de données**.
 3. Sélectionnez **URL web**. Les liens hypertexte sont en bleu et soulignés.
-4. (Facultatif) [Publiez le rapport de Power BI Desktop vers le service Power BI](guided-learning/publishingandsharing.yml?tutorial-step=2) et ouvrez-le dans le service Power BI. Les liens hypertexte fonctionnent ici également.
+4. (Facultatif) [Publiez le rapport de Power BI Desktop vers le service Power BI](/learn/modules/publish-share-power-bi/2-publish-reports) et ouvrez-le dans le service Power BI. Les liens hypertexte fonctionnent ici également.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-excel-power-pivot"></a>Créer un lien hypertexte de tableau ou matrice dans Excel PowerPivot
 Une autre méthode pour ajouter des liens hypertexte à vos tableaux et matrices Power BI consiste à créer des liens hypertexte dans le jeu de données avant d’importer ce dernier ou de vous y connecter à partir de Power BI. Cet exemple utilise un classeur Excel.
