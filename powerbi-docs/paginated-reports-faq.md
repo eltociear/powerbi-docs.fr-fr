@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 09/04/2019
-ms.openlocfilehash: 6ab7338029118ab6478ad345776e2b9f13c34123
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.date: 10/04/2019
+ms.openlocfilehash: 97b9d68a8fa17a3ce1758eeaa16d2503a38a4743
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751527"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968495"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -117,12 +117,13 @@ Vous obtenez un message d’erreur si vous essayez de charger un fichier avec un
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Quelles sources de données prenez-vous actuellement en charge pour les rapports paginés ?
 
-Nous prenons en charge les sources de données suivantes : 
+Nous prenons en charge les sources de données suivantes - 
 
 - Jeux de données Power BI (via l’authentification unique)
 - Azure Analysis Services (via SSO et oAuth)
 - Azure SQL Data Warehouse
 - Azure SQL Database (nom d’utilisateur/mot de passe, authentification unique et OAuth)
+- Azure SQL Managed Instance via un point de terminaison public (nom d’utilisateur/mot de passe)
 - SQL Server*
 - Modèles tabulaires (DAX) et multidimensionnels (MDX) SQL Server Analysis Services (SSAS)* 
 - Oracle* 

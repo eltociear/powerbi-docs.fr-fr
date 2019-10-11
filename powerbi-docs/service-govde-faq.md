@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 16114793b190996b3ef9e800e562dd0caf62089c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 805856082b3bef0f92674415eb16da1cc108cdf2
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514825"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715370"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Forum aux questions (FAQ) sur Power BI pour les clients du cloud allemand
 Une version du **service Power BI**, souvent appelée Microsoft Cloud Deutschland (MCD), est disponible pour les clients de l’UE et de l’AELE. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients de l’UE/AELE. Elle est distincte et différente de la version commerciale du **service Power BI** ou des services Power BI destinés aux administrations.
@@ -32,10 +32,10 @@ Les questions et réponses suivantes fournissent des informations importantes su
    Le service Power BI pour les clients de l’UE et de l’AELE, également appelé Microsoft Cloud Deutschland (MCD), est un cloud conforme aux directives de l’UE/AELE fourni par les centres de données allemands. L’ensemble des données client du service Power BI pour le cloud UE/AELE sont stockées au repos en Allemagne : T-Systems agit en qualité de tiers de confiance allemand indépendant pour les données et dispose en tant que tel d’un accès physique et logique aux données régies par le droit allemand. Le service Power BI pour le cloud UE/AELE requiert un compte distinct et indépendant de la version commerciale du service Power BI. Apprenez-en davantage sur Microsoft Cloud Deutschland [ici](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud).
 2. **Où puis-je trouver des informations sur la tarification et l’inscription au cloud allemand Power BI ?**
    
-   Vous trouverez de nombreuses informations, notamment concernant la tarification, sur la [page d’accueil du cloud allemand Power BI](https://powerbi.microsoft.com/power-bi-germany/). Dans cette page, vous trouverez également un lien pour vous inscrire pour **service Power BI Pro** version d’évaluation de 30 jours avec 25 licences utilisateur. Dans le cadre de l’inscription de la version d’évaluation, vous pouvez acheter ou ajouter des licences supplémentaires en fonction des besoins. Nous proposons également une tarification pour les Contrats Entreprise, les administrations et les associations. Pour plus d’informations, contactez votre commercial Microsoft.
+   Vous trouverez de nombreuses informations, notamment concernant la tarification, sur la [page d’accueil du cloud allemand Power BI](https://powerbi.microsoft.com/power-bi-germany/). Sur cette page, vous trouverez également un lien d’inscription à un essai de 30 jours du **service Power BI Pro**, avec 25 licences utilisateur. Au moment de l’inscription à l’essai, vous pouvez choisir d’acheter ou d’ajouter des licences supplémentaires en fonction de vos besoins. Nous proposons également une tarification pour les Contrats Entreprise, les administrations et les associations. Contactez votre représentant du service clientèle Microsoft pour avoir plus de détails.
 3. **J’ai un locataire du cloud allemand au sein d’abonnements Azure Allemagne et/ou Office 365 Allemagne. Puis-je utiliser le locataire existant pour m’inscrire à Power BI Allemagne ?**
    
-   Oui. Dans le cadre de la procédure d’inscription, vous avez la possibilité de vous connecter avec un compte d’administrateur de locataire de cloud allemand existant et d’ajouter les licences de service Power BI Pro à votre locataire existant dans le cloud allemand. Notez que les locataires du Cloud allemand et comptes d’utilisateur sont différents à partir du service Power BI pour le cloud allemand.
+   Oui. Dans le cadre de la procédure d’inscription, vous avez la possibilité de vous connecter avec un compte d’administrateur de locataire de cloud allemand existant et d’ajouter les licences de service Power BI Pro à votre locataire existant dans le cloud allemand. Notez que les locataires du cloud allemand et les comptes d’utilisateur sont différents de ceux du service Power BI pour le cloud allemand.
 4. **Une version gratuite du service Power BI pour le cloud allemand existe-t-elle ?**
    
    Non. Nous n’offrons pas de version gratuite du service Power BI pour le cloud allemand. Toutefois, nous vous encourageons à vous inscrire à [l’offre gratuite Power BI dans notre cloud public](https://powerbi.microsoft.com/get-started/) si celle-ci correspond aux besoins de votre entreprise.
@@ -56,7 +56,7 @@ Les questions et réponses suivantes fournissent des informations importantes su
    * Power BI Embedded (des licences ISV distinctes seront bientôt proposées via [Microsoft Azure Allemagne](https://azure.microsoft.com/overview/clouds/germany/))
 7. **Où puis-je trouver des informations sur la configuration propres au service Power BI pour le cloud allemand à des fins d’utilisation et d’intégration dans mes applications ?**
    
-   Nous avons mis à jour nos [exemples pour développeurs SaaS Embedded](https://github.com/Microsoft/PowerBI-Developer-Samples) avec des informations propres au cloud allemand et à d’autres cloud Power BI spécifiques. Examinez le **configurations Cloud** dossier dans les exemples pour les points de terminaison de configuration cloud spécifique. Le tableau suivant répertorie les différents points de terminaison de configuration du service Power BI pour le cloud allemand (et le cloud public pour référence).
+   Nous avons mis à jour nos [exemples pour développeurs SaaS Embedded](https://github.com/Microsoft/PowerBI-Developer-Samples) avec des informations propres au cloud allemand et à d’autres cloud Power BI spécifiques. Consultez le dossier **Configurations cloud** disponible dans les exemples pour connaître les points de terminaison de configuration propres au cloud. Le tableau suivant répertorie les différents points de terminaison de configuration du service Power BI pour le cloud allemand (et le cloud public pour référence).
 
 | **Nom et/ou utilisation du point de terminaison** | **URL du service Power BI pour le cloud allemand** | **URL équivalente dans le cloud public (pour référence)** |
 | --- | --- | --- |
@@ -68,13 +68,13 @@ Les questions et réponses suivantes fournissent des informations importantes su
 | URI de ressource du service Power BI |[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api) |[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api) |
 | Bibliothèque de visuels personnalisés |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
 | Inscrire une application à Power BI (version Embedded) |[https://app.powerbi.de/apps](https://app.powerbi.de/apps) |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) |
-| Portail Azure (For Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
+| Portail Azure (version Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Communauté |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
 ## <a name="next-steps"></a>Étapes suivantes
 Power BI vous permet d’effectuer des tâches très diverses. Pour obtenir plus d’informations et accéder à des formations, dont un article qui vous montre comment vous inscrire au service, consultez les ressources suivantes :
 
-* [Formation guidée sur Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
+* [Formation guidée sur Power BI](guided-learning/index.md)
 * [Prise en main du service Power BI](service-get-started.md)
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
 

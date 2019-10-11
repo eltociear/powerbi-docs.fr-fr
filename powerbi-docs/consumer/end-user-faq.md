@@ -3,20 +3,19 @@ title: Questions fréquentes des utilisateurs finaux dans Power BI
 description: Parcourez la liste des questions fréquemment posées et des réponses concernant le service Power BI et les applications mobiles Power BI.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 6/17/2019
+ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5efdb98e0722add361f3b333f773fc03c6ea50a9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: bf3e7b790788c8ce21b222a083a853b06185acc0
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654135"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943321"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Forum Aux Questions sur Power BI
 
@@ -33,27 +32,17 @@ Power BI Pro est une licence individuelle qui permet d’accéder à l’ensembl
 
 Power BI Premium offre une capacité dédiée pour fournir des performances plus cohérentes. Il prend également en charge de plus gros volumes de données dans Power BI. Pour les utilisateurs individuels, Premium permet une large distribution de contenu par les utilisateurs Pro et ne requiert pas de licences par utilisateur pour que les destinataires voient le contenu.
 
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Que se passe-t-il si ma licence Power BI Pro arrive à expiration ?
-
-Il y a une période de grâce après l’expiration d’une licence Power BI Pro. Pour les licences qui font partie d’un achat de licences en volume, la période de grâce est de 90 jours. Si vous avez acheté la licence directement, la période de grâce est de 30 jours.
-
-L’abonnement Power BI Pro dispose du même cycle de vie qu’Office 365. Pour plus d’informations, consultez [Qu’arrive-t-il à mes données et à mon accès à la fin de mon abonnement Office 365 pour les entreprises ?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
-
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Où trouver des réponses à mes questions sur Power BI Premium ?
 
 Pour les questions relatives à Power BI Premium, consultez [Questions fréquentes Power BI Premium](../service-premium-faq.md).
 
-## <a name="how-do-i-find-out-who-in-my-organization-has-a-power-bi-account"></a>Comment identifier les détenteurs d’un compte Power BI dans mon organisation ?
-
-Vous pouvez consulter le rapport Applications intégrées Azure Active Directory pour Power BI afin d’identifier les utilisateurs actifs au sein de votre organisation. Le rapport Azure AD n’indique pas le type de licence dont dispose chaque utilisateur. Il recense uniquement les utilisateurs qui se sont connectés à Power BI et à quel moment. Pour plus d’informations, consultez la page [Trouver les utilisateurs Power BI qui se sont connectés](../service-admin-access-usage.md).
-
 ## <a name="what-is-power-bi-desktop"></a>Qu’est-ce que Power BI Desktop ?
 
-Power BI Desktop est une application gratuite que vous pouvez installer directement sur votre propre ordinateur. Power BI Desktop fonctionne en cohésion avec le service Power BI.  Les scientifiques des données, administrateurs et développeurs utilisent Power BI Desktop pour produire des rapports et les mettre à la disposition des utilisateurs du service Power BI, comme vous. Pour en savoir plus, consultez [Qu’est-ce que Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop est une application gratuite que vous pouvez installer directement sur votre propre ordinateur. Power BI Desktop fonctionne en cohésion avec le service Power BI.  Les scientifiques des données, les administrateurs et les développeurs utilisent Power BI Desktop pour produire des rapports et les mettre à la disposition des *consommateurs* du service Power BI, comme vous. Pour en savoir plus, consultez [Qu’est-ce que Power BI Desktop](../desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-the-power-bi-service"></a>De quoi ai-je besoin pour utiliser le service Power BI ?
 
-Uniquement d’un navigateur web et d’une adresse de messagerie professionnelle. Vous pouvez vous inscrire avec une adresse e-mail *.gov* et *.mil*. Consultez [Inscrire votre organisation État fédéral américain au service Power BI](../service-govus-signup.md) pour plus d’informations.
+Uniquement d’un navigateur web et d’une adresse de messagerie professionnelle. Vous pouvez aussi vous inscrire avec une adresse e-mail *.gov* et *.mil*. Consultez [Inscrire votre organisation État fédéral américain au service Power BI](../service-govus-signup.md) pour plus d’informations.
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Pourquoi dois-je me connecter avec mon adresse de messagerie professionnelle ?
 
@@ -88,7 +77,7 @@ Les ressources suivantes sont disponibles pour aider lors de votre prise en main
 * [Blog Power BI](http://blogs.msdn.com/b/powerbi/)
 * [Webinaires](../webinars.md)
 * Vidéos de prise en main sur notre [chaîne YouTube](https://www.youtube.com/user/mspowerbi)
-* Article [Prise en main de Power BI](../service-get-started.md)
+* Article [Bien démarrer avec Power BI en tant que *consommateur*](power-bi-consumer-landing.md)
 * [Rejoindre notre communauté](https://community.powerbi.com/) et poser des questions
 * Consultez [10 conseils pour obtenir de l’aide](../service-tips-for-finding-help.md) pour plus de suggestions.
 
@@ -126,6 +115,7 @@ Comme de nombreux autres services et logiciels Microsoft, Power BI permet d’a
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Qu’est-ce que Power BI ?](../power-bi-overview.md)
+* [Qu’est-ce qu’un consommateur Power BI ?](end-user-consumer.md)
+* [Comment un consommateur utilise-t-il Power BI ?](end-user-reading-view.md)
 * D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
 * Le problème persiste ? Visitez la [page de support Power BI](https://powerbi.microsoft.com/support/)

@@ -10,16 +10,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9958059fcf0d86323fc95f44f6fcfcb08fe7b52b
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 0fb52262790c6c1935d8152f043f726a9471817d
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100428"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968961"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Configurer l’authentification unique basée sur Kerberos du service Power BI vers des sources de données locales
 
-Utilisez la [délégation Kerberos contrainte](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) pour activer la connectivité d’authentification unique sans interruption. L’activation de SSO permet aux rapports et tableaux de bord Power BI d’actualiser les données à partir des sources locales plus facilement.
+Utilisez la [délégation Kerberos contrainte](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) pour activer la connectivité d’authentification unique sans interruption. Quand l’authentification unique est activée, les rapports et les tableaux de bord Power BI actualisent facilement les données à partir des sources locales, tout en respectant les autorisations de niveau utilisateur qui sont configurées sur ces sources.
 
 Plusieurs éléments doivent être configurés pour qu’une délégation Kerberos contrainte fonctionne correctement, dont les _noms de principal du service_ (SPN) et les paramètres de délégation sur les comptes de service.
 
@@ -60,7 +60,7 @@ Tout d’abord, déterminez si un nom de principal du service a déjà été cr�
 
     S’il n’y a pas d’onglet **Délégation** dans la boîte de dialogue **Propriétés**, vous pouvez créer manuellement un nom de principal du service sur le compte pour l’activer. Utilisez l’[outil setspn](https://technet.microsoft.com/library/cc731241.aspx) qui est fourni avec Windows (vous devez avoir des droits d’administrateur de domaine pour créer le nom de principal du service).
 
-    Par exemple, imaginez que le compte de service de passerelle est **Contoso\GatewaySvc**, et que le nom de la machine sur lequel s’exécute le service de passerelle est **MyGatewayMachine**. Pour définir le nom de principal du service pour le compte de service de passerelle, vous exécuteriez la commande suivante :
+    Par exemple, imaginez que le compte de service de passerelle est **Contoso\GatewaySvc** et que la machine sur laquelle s’exécute le service de passerelle s’appelle **MyGatewayMachine**. Pour définir le nom de principal du service pour le compte de service de passerelle, vous exécuteriez la commande suivante :
 
     ![Image de la commande pour définir le nom de principal du service](media/service-gateway-sso-kerberos/set-spn.png)
 
@@ -83,9 +83,9 @@ Nous devons configurer une délégation Kerberos contrainte avec transit de prot
 
 Cette section suppose que vous avez déjà configuré les noms de principal du service pour vos sources de données sous-jacentes (par exemple, SQL Server, SAP HANA, SAP BW, Teradata ou Spark). Pour savoir comment configurer ces noms de principal du service de serveur de source de données, reportez-vous à la documentation technique du serveur de base de données concerné. Vous pouvez également consulter la section *What SPN does your app require?* du billet de blog [My Kerberos Checklist](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160).
 
-Dans les étapes suivantes, nous supposons un environnement local comprenant deux machines : une machine de passerelle et un serveur de base de données exécutant SQL Server déjà configuré pour l’authentification unique basée sur Kerberos. Les étapes peuvent être adoptées pour une des autres sources de données prises en charge, tant que la source de données a déjà été configurée pour l’authentification unique basée sur Kerberos. Nous supposons également les paramètres et noms suivants :
+Dans les étapes suivantes, nous supposons un environnement local comprenant deux machines dans le même domaine : une machine de passerelle et un serveur de base de données exécutant SQL Server déjà configuré pour l’authentification unique basée sur Kerberos. Les étapes peuvent être adoptées pour une des autres sources de données prises en charge, tant que la source de données a déjà été configurée pour l’authentification unique basée sur Kerberos. Nous supposons également les paramètres et noms suivants :
 
-* Domaine Active Directory (NetBIOS) : Contoso
+* Domaine Active Directory (NetBIOS) : **Contoso**
 * Nom de la machine de la passerelle : **MyGatewayMachine**
 * Compte de service de passerelle : **Contoso\GatewaySvc**
 * Nom de la machine source de données SQL Server : **TestSQLServer**
@@ -105,11 +105,11 @@ Voici comment configurer les paramètres de délégation :
 
 6. Dans la boîte de dialogue Nouveau, sélectionnez **Utilisateurs ou ordinateurs**.
 
-7. Entrez le compte de service pour la source de données ; par exemple, une source de données SQL Server peut avoir un compte de service comme **Contoso\SQLService**. Une fois le compte ajouté, sélectionnez **OK**.
+7. Entrez le compte de service pour la source de données ; par exemple, une source de données SQL Server peut avoir un compte de service comme **Contoso\SQLService**. Un nom de principal de service (SPN) approprié pour la source de données doit déjà avoir été défini sur ce compte. Une fois le compte ajouté, sélectionnez **OK**.
 
 8. Sélectionnez le nom de principal du service que vous avez créé pour le serveur de base de données. Dans notre exemple, le nom de principal du service commence par **MSSQLSvc**. Si vous avez ajouté le nom de domaine complet (FQDN) et le nom de principal du service NetBIOS pour votre service de base de données, sélectionnez les deux. Vous pouvez n’en voir qu’un.
 
-9. Sélectionnez **OK**. Le nom de principal du service devrait à présent figurer dans la liste.
+9. Sélectionnez **OK**. Vous devez maintenant voir le SPN dans la liste des services auxquels le compte de service de passerelle peut présenter des informations d’identification déléguées.
 
     ![Capture d’écran de la boîte de dialogue des propriétés de connecteur de passerelle](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
@@ -124,6 +124,8 @@ Utilisez la [délégation contrainte Kerberos basée sur les ressources](/window
 
 Dans les étapes suivantes, nous supposons un environnement local comprenant deux machines dans différents domaines : une machine de passerelle et un serveur de base de données exécutant SQL Server déjà configuré pour l’authentification unique basée sur Kerberos. Les étapes peuvent être adoptées pour une des autres sources de données prises en charge, tant que la source de données a déjà été configurée pour l’authentification unique basée sur Kerberos. Nous supposons également les paramètres et noms suivants :
 
+* Domaine du front-end Active Directory (NetBIOS) : **ContosoFrontEnd**
+* Domaine du back-end Active Directory (NetBIOS) : **ContosoBackEnd**
 * Nom de la machine de la passerelle : **MyGatewayMachine**
 * Compte de service de passerelle : **ContosoFrontEnd\GatewaySvc**
 * Nom de la machine source de données SQL Server : **TestSQLServer**
@@ -135,22 +137,26 @@ Dans les étapes suivantes, nous supposons un environnement local comprenant deu
 
     ![Propriétés de connecteur de passerelle](media/service-gateway-sso-kerberos-resource/gateway-connector-properties.png)
 
-2. À l’aide de **Active Directory Users and Computers**, sur le contrôleur de domaine pour le domaine **ContosoBackEnd**, assurez-vous qu’aucun paramètre de délégation n’est appliqué pour le compte de service back-end. En outre, assurez-vous que l’attribut **msDS-AllowedToActOnBehalfOfOtherIdentity** pour ce compte n’est pas non plus défini. Vous pouvez trouver cet attribut dans **Éditeur d’attributs**, comme illustré dans l’image suivante :
+2. À l’aide de **Active Directory Users and Computers**, sur le contrôleur de domaine pour le domaine **ContosoBackEnd**, assurez-vous qu’aucun paramètre de délégation n’est appliqué pour le compte de service back-end.
 
     ![Propriétés du service SQL](media/service-gateway-sso-kerberos-resource/sql-service-properties.png)
 
-3. Créez un groupe dans **Active Directory Users and Computers**, sur le contrôleur de domaine pour le domaine **ContosoBackEnd**. Ajoutez le compte de service de passerelle à ce groupe comme indiqué dans l’image suivante. L’image montre un nouveau groupe appelé _ResourceDelGroup_ et le compte de service de passerelle **GatewaySvc** ajouté à ce groupe.
+3. En outre, assurez-vous que l’attribut **msDS-AllowedToActOnBehalfOfOtherIdentity** pour ce compte n’est pas non plus défini. Vous pouvez trouver cet attribut dans **Éditeur d’attributs**, comme illustré dans l’image suivante :
+
+    ![Attributs du service SQL](media/service-gateway-sso-kerberos-resource/sql-service-attributes.png)
+
+4. Créez un groupe dans **Active Directory Users and Computers**, sur le contrôleur de domaine pour le domaine **ContosoBackEnd**. Ajoutez le compte de service de passerelle à ce groupe comme indiqué dans l’image suivante. L’image montre un nouveau groupe appelé _ResourceDelGroup_ et le compte de service de passerelle **GatewaySvc** ajouté à ce groupe.
 
     ![Propriétés du groupe](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
-4. Ouvrez une invite de commandes et exécutez les commandes suivantes dans le contrôleur de domaine pour le domaine **ContosoBackEnd** pour mettre à jour l’attribut **msDS-AllowedToActOnBehalfOfOtherIdentity** du compte de service principal :
+5. Ouvrez une invite de commandes et exécutez les commandes suivantes dans le contrôleur de domaine pour le domaine **ContosoBackEnd** pour mettre à jour l’attribut **msDS-AllowedToActOnBehalfOfOtherIdentity** du compte de service principal :
 
     ```powershell
     $c = Get-ADGroup ResourceDelGroup
     Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
 
-5. Vous pouvez vérifier que la mise à jour est répercutée dans l’onglet « Éditeur d’attributs » dans les propriétés du compte de service back-end dans **Active Directory Users and Computers.**
+6. Vous pouvez vérifier que la mise à jour est répercutée dans l’onglet « Éditeur d’attributs » dans les propriétés du compte de service back-end dans **Active Directory Users and Computers.** L’**entité msDS-AllowedToActOnBehalfOfOtherId** doit maintenant être définie.
 
 ## <a name="grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine"></a>Accorder au compte du service de passerelle les droits de stratégie locaux sur la machine de passerelle
 
@@ -158,7 +164,7 @@ Enfin, sur la machine exécutant le service de passerelle (**MyGatewayMachine** 
 
 1. Sur la machine de passerelle, exécutez *gpedit.msc*.
 
-2. Accédez à **Stratégie de l’ordinateur local** > **Configuration ordinateur** > **Paramètres Windows** > **Paramètres de sécurité** > **Stratégies locales** > **Attribution des droits utilisateur**.
+2. Accédez à **Stratégie de l’ordinateur local** &gt; **Configuration ordinateur** &gt; **Paramètres Windows** &gt; **Paramètres de sécurité** &gt; **Stratégies locales** &gt; **Attribution des droits utilisateur**.
 
     ![Capture d’écran de la structure du dossier Stratégie de l’ordinateur local](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
@@ -166,7 +172,7 @@ Enfin, sur la machine exécutant le service de passerelle (**MyGatewayMachine** 
 
     ![Capture d’écran de la stratégie Emprunter l’identité d’un client](media/service-gateway-sso-kerberos/impersonate-client.png)
 
-    Cliquez avec le bouton droit et ouvrez **Propriétés**. Vérifiez la liste des comptes. Elle doit inclure le compte de service de passerelle (**Contoso\GatewaySvc**).
+    Cliquez avec le bouton droit et ouvrez **Propriétés**. Vérifiez la liste des comptes. Cette liste doit inclure le compte de service de passerelle (**Contoso\GatewaySvc** ou **ContosoFrontEnd\GatewaySvc** en fonction du type de la délégation contrainte).
 
 4. Sous **Attribution des droits utilisateur**, dans la liste des stratégies, sélectionnez **Agir en tant que partie du système d’exploitation (SeTcbPrivilege)** . Assurez-vous que le compte de service de passerelle est également inclus dans la liste des comptes.
 
@@ -184,23 +190,23 @@ Si vous n’avez pas Azure AD Connect configuré, procédez comme suit pour mapp
 
     ![Capture d’écran de l’onglet Services du Gestionnaire des tâches](media/service-gateway-sso-kerberos/restart-gateway.png)
 
-1. Pour chaque service utilisateur du service Power BI pour lequel vous souhaitez activer l’authentification unique Kerberos, définissez la propriété `msDS-cloudExtensionAttribute1` d’un utilisateur Active Directory local (avec l’autorisation d’authentification unique sur votre source de données) sur le nom d’utilisateur complet de l’utilisateur du service Power BI. Par exemple, si vous vous connectez à service Power BI en tant que `test@contoso.com` et que vous souhaitez mapper cet utilisateur à un utilisateur Active Directory local avec des l’authentification unique, par exemple `test@LOCALDOMAIN.COM`, définissez l’attribut `msDS-cloudExtensionAttribute1` de `test@LOCALDOMAIN.COM` sur `test@contoso.com`.
+1. Pour chaque service utilisateur du service Power BI pour lequel vous souhaitez activer l’authentification unique Kerberos, définissez la propriété `msDS-cloudExtensionAttribute1` d’un utilisateur Active Directory local (avec l’autorisation d’authentification unique sur votre source de données) sur le nom d’utilisateur complet (l’UPN) de l’utilisateur du service Power BI. Par exemple, si vous vous connectez à service Power BI en tant que `test@contoso.com` et que vous souhaitez mapper cet utilisateur à un utilisateur Active Directory local avec des l’authentification unique, par exemple `test@LOCALDOMAIN.COM`, définissez l’attribut `msDS-cloudExtensionAttribute1` de `test@LOCALDOMAIN.COM` sur `test@contoso.com`.
 
-Vous pouvez définir la propriété `msDS-cloudExtensionAttribute1` à l’aide du composant logiciel enfichable MMC (Microsoft Management Console) Utilisateurs et ordinateurs Active Directory.
-
-1. En tant qu’administrateur de domaine, lancez Utilisateurs et ordinateurs Active Directory, un logiciel enfichable MMC.
-
-1. Cliquez avec le bouton droit sur le domaine, sélectionnez Rechercher, puis tapez le nom de compte de l’utilisateur local Active Directory que vous souhaitez mapper.
-
-1. Sélectionnez l’onglet **Éditeur d’attributs**.
-
-    Recherchez la propriété `msDS-cloudExtensionAttribute1`, puis double-cliquez dessus. Définissez la valeur sur le nom complet de l’utilisateur dont vous vous servez pour vous connecter au service Power BI.
-
-1. Sélectionnez **OK**.
-
-    ![Capture d’écran de la boîte de dialogue Éditeur d’attribut de chaîne](media/service-gateway-sso-kerberos/edit-attribute.png)
-
-1. Sélectionnez **Appliquer**. Vérifiez que la valeur correcte a été définie dans la colonne **Valeur**.
+    Vous pouvez définir la propriété `msDS-cloudExtensionAttribute1` à l’aide du composant MMC (Microsoft Management Console) Utilisateurs et ordinateurs Active Directory :
+    
+    1. En tant qu’administrateur de domaine, lancez Utilisateurs et ordinateurs Active Directory.
+    
+    1. Cliquez avec le bouton droit sur le domaine, sélectionnez Rechercher, puis tapez le nom de compte de l’utilisateur local Active Directory que vous souhaitez mapper.
+    
+    1. Sélectionnez l’onglet **Éditeur d’attributs**.
+    
+        Recherchez la propriété `msDS-cloudExtensionAttribute1`, puis double-cliquez dessus. Définissez la valeur sur le nom complet de l’utilisateur (l’UPN) dont vous vous servez pour vous connecter au service Power BI.
+    
+    1. Sélectionnez **OK**.
+    
+        ![Capture d’écran de la boîte de dialogue Éditeur d’attribut de chaîne](media/service-gateway-sso-kerberos/edit-attribute.png)
+    
+    1. Sélectionnez **Appliquer**. Vérifiez que la valeur correcte a été définie dans la colonne **Valeur**.
 
 ## <a name="complete-data-source-specific-configuration-steps"></a>Effectuer les étapes de configuration spécifiques à la source de données
 
@@ -211,19 +217,19 @@ SAP HANA et SAP BW ont des exigences de configuration supplémentaires spécifiq
 
 ## <a name="run-a-power-bi-report"></a>Générer un rapport Power BI
 
-Une fois que vous avez terminé toutes les étapes de configuration, vous pouvez utiliser la page **Gérer la passerelle** dans Power BI pour configurer la source de données que vous utiliserez pour l’authentification unique. Si vous avez plusieurs passerelles, assurez-vous de sélectionner la passerelle que vous avez configurée pour l’authentification unique Kerberos. Ensuite, sous **Paramètres avancés** pour la source de données, vérifiez que l’option « Utiliser SSO via Kerberos pour les requêtes DirectQuery » est cochée.
+Une fois que vous avez terminé toutes les étapes de configuration, vous pouvez utiliser la page **Gérer la passerelle** dans Power BI pour configurer la source de données que vous utiliserez pour l’authentification unique. Si vous avez plusieurs passerelles, assurez-vous de sélectionner la passerelle que vous avez configurée pour l’authentification unique Kerberos. Ensuite, sous **Paramètres avancés** pour la source de données, vérifiez que l’option **Utiliser SSO via Kerberos pour les requêtes DirectQuery** est cochée.
 
 ![Capture d’écran de l’option Paramètres avancés](media/service-gateway-sso-kerberos/advanced-settings.png)
 
  Publiez un rapport **basé sur DirectQuery** à partir de Power BI Desktop. Ce rapport doit utiliser des données qui sont accessibles à l’utilisateur mappé à l’utilisateur (Azure) Active Directory qui se connecte au service Power BI. Vous devez utiliser DirectQuery au lieu de l’importation, en raison du fonctionnement de l’actualisation. Lors de l’actualisation des rapports basés sur l’importation, la passerelle utilise les informations d’identification que vous avez entrées dans les champs **Nom d’utilisateur** et **Mot de passe** lors de la création de la source de données. En d’autres termes, l’authentification unique Kerberos n’est **pas** utilisée. En outre, lors de la publication, veillez à sélectionner la passerelle que vous avez configurée pour l’authentification unique (SSO) si vous avez plusieurs passerelles. Dans le service Power BI, vous devez maintenant être en mesure d’actualiser le rapport ou d’en créer un nouveau basé sur le jeu de données publié.
 
-Cette configuration est appropriée dans la plupart des cas. Toutefois, avec Kerberos, il peut y avoir différentes configurations en fonction de votre environnement. Si vous ne parvenez pas à charger le rapport, contactez votre administrateur de domaine pour résoudre le problème. Si votre source de données est SAP BW, vous pouvez également consulter les sections de résolution des problèmes des pages de configuration spécifiques à la source de données pour [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) et [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting).
+Cette configuration est appropriée dans la plupart des cas. Toutefois, avec Kerberos, il peut y avoir différentes configurations en fonction de votre environnement. Si vous ne parvenez pas à charger le rapport, contactez votre administrateur de domaine pour résoudre le problème. Si votre source de données est SAP BW, vous pouvez également consulter les sections de résolution des problèmes des pages de configuration spécifiques à la source de données pour [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) et [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting), en fonction de la bibliothèque SNC que vous avez choisie.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur la **Passerelle de données locale** et **DirectQuery**, consultez les ressources suivantes :
 
-* [Qu’est-ce qu’une passerelle de données locale ?](/data-integration/gateway/service-gateway-getting-started)
+* [Qu’est-ce qu’une passerelle de données locale ?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery dans Power BI](desktop-directquery-about.md)
 * [Sources de données prises en charge par DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery et SAP BW](desktop-directquery-sap-bw.md)

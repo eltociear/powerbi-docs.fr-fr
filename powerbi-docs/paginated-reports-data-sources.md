@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.openlocfilehash: f055cd27f25af399b63336e66aaad526ed740de2
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: f0cc7563fc59a6c1ceeceefcf4b65b0cc1a3aa80
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462332"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968653"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Sources de données prises en charge pour les rapports paginés Power BI
 
@@ -27,10 +27,11 @@ Les rapports paginés prennent en charge en mode natif la liste suivante de sour
 | Source de données | Authentification | Notes |
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | De base, authentification unique (SSO), OAuth2 |   |
+| Azure SQL Managed Instance | De base | via un point de terminaison public à l’aide de l’extension Azure SQL Database  |
 | Azure Analysis Services | SSO, OAuth2 |   |
 | Jeu de données Power BI | SSO | Jeux de données Power BI Premium et non-Premium |
 | Jeu de données Premium Power BI (XMLA) | SSO |   |
-| Entrer des données | Non applicable | Les données sont incorporées dans le rapport. |
+| Entrer des données | N/A | Les données sont incorporées dans le rapport. |
 
 À l’exception d’Azure SQL Database, toutes les sources de données sont prêtes à être utilisées après le chargement du rapport dans le service Power BI. Par défaut, les sources de données utilisent l’authentification unique, le cas échéant. Pour Azure Analysis Services, vous pouvez changer le type d’authentification et choisir OAuth2.
 

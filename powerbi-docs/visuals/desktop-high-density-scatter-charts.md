@@ -10,24 +10,22 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 385cae5511d89ec86e52232066227687673f9523
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d627b74d4c681e409424b18a117743e0488dc34c
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394065"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715471"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Échantillonnage à haute densité dans les nuages de points Power BI
-À compter de la version de septembre 2017 de **Power BI Desktop** et des mises à jour apportées au **service Power BI**, un nouvel algorithme d’échantillonnage est disponible, qui améliore la façon dont les nuages de points représentent des données à haute densité.
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+À compter de la version de septembre 2017 de **Power BI Desktop**, un nouvel algorithme d’échantillonnage est disponible, qui améliore la façon dont les nuages de points représentent des données à haute densité.
 
 Par exemple, vous pouvez créer un nuage de points à partir de l’activité de ventes de votre organisation, chaque magasin ayant des dizaines de milliers de points de données chaque année. Un nuage de points formé à partir de ces informations échantillonne les données (sélectionnez une représentation explicite de ces données pour illustrer la manière dont les ventes ont évolué au fil du temps) à partir des données disponibles ; un nuage de points représentant les données sous-jacentes est alors créé. Il s’agit d’une pratique courante pour les nuages de points à haute densité. Cet article décrit en détail comment Power BI a amélioré son échantillonnage des données à haute densité.
 
-![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_01.png)
-
-> [!NOTE]
-> L’algorithme **Échantillonnage à haute densité** décrit dans cet article est disponible dans les nuages de points pour **Power BI Desktop** et pour le **service Power BI**.
-> 
-> 
+![exemple de nuage de points](media/desktop-high-density-scatter-charts/high-density-scatter-charts-01.png)
 
 ## <a name="how-high-density-scatter-charts-work"></a>Fonctionnement des nuages de points à haute densité
 Auparavant, **Power BI** sélectionnait une collection de points de données échantillons dans la plage complète des données sous-jacentes de manière déterministe afin de créer un nuage de points. Plus précisément, Power BI sélectionnait les première et dernière lignes de données dans la série utilisée pour produire le nuage de points, puis divisait uniformément les lignes restantes de façon à ce que 3 500 points de données au total soient représentés sur le nuage de points. Par exemple, si l’échantillon comptait 35 000 lignes, les première et dernière lignes étaient sélectionnées pour le traçage, puis chaque dixième ligne était également tracée (35 000 / 10 = chaque dixième ligne = 3 500 points de données). Toujours auparavant, les valeurs ou points Null qui ne pouvaient pas être tracés (par exemple les valeurs de texte) dans une série de données n’étaient pas affichés et étaient donc ignorés lors de la génération du visuel. Avec ce type d’échantillonnage, la densité perçue du nuage de points était également basée sur les points de données représentatifs, de sorte que la densité du visuel obtenu dépendait des points échantillonnés, et non pas de la collection complète des données sous-jacentes.
@@ -60,20 +58,22 @@ Dans certaines circonstances, l’algorithme **Échantillonnage à haute densit�
 
 * Si vous cliquez sur une valeur sous **Détails** et que vous la définissez sur **Afficher les éléments sans données** dans le menu, le nuage de points revient à l’algorithme d’origine.
   
-  ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_02.png)
+  ![exemple d’affichage d’éléments sans données](media/desktop-high-density-scatter-charts/high-density-scatter-charts-02.png)
 * Toute valeur sur l’axe de **lecture** a pour effet que le nuage de points revient à l’algorithme d’origine.
 * Si les deux axes, X et Y, sont manquants sur un nuage de points, le graphique revient à l’algorithme d’origine.
 * L’utilisation de l’option **Ligne du ratio** dans le volet **Analytique** a pour effet que le graphique revient à l’algorithme d’origine.
   
-  ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
+  ![exemple d’utilisation de la ligne du ratio](media/desktop-high-density-scatter-charts/high-density-scatter-charts-03.png)
 
 ## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Activer l’échantillonnage à haute densité pour un nuage de points
 Pour activer **Échantillonnage à haute densité**, sélectionnez un nuages de points, accédez au volet **Mise en forme**, développez la carte **Général** et, près du bas de cette carte, faites glisser le curseur **Échantillonnage à haute densité** sur **Activé**.
 
-![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
+![exemple d’échantillonnage à haute densité](media/desktop-high-density-scatter-charts/high-density-scatter-charts-04.png)
 
 > [!NOTE]
 > Une fois le curseur activé, Power BI essaie d’utiliser l’algorithme **Échantillonnage à haute densité** chaque fois que c’est possible. Quand l’algorithme est inutilisable (par exemple, vous si placez une valeur sur l’axe de *Lecture*), le curseur reste en position **Activé**, même si le graphique a été rétabli sur l’algorithme standard. Si vous supprimez ensuite une valeur de l’axe de *Lecture* (ou si les conditions changent pour permettre l’utilisation de l’algorithme d’échantillonnage à haute densité), le graphique utilise automatiquement l’échantillonnage à haute densité pour ce graphique, car la fonctionnalité est activée.
+> 
+
 > 
 > [!NOTE]
 > Les points de données sont groupés ou sélectionnés selon l’index. La présence d’une légende n’affecte pas l’échantillonnage pour l’algorithme, mais uniquement l’ordre du visuel.

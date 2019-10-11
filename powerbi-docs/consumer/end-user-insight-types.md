@@ -4,23 +4,25 @@ description: Informations rapides et Afficher les informations avec Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/2/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 991dd7bb94e79a21c8e4ec877093b81d2ed9b285
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 507d49ba6cdb894667bf66f8f35c5c325b9ff25e
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327779"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943920"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Types d’informations pris en charge par Power BI
+
+La service Power BI peut automatiquement rechercher des insights dans vos tableaux de bord ou rapports.
+
 ## <a name="how-does-insights-work"></a>Comment fonctionnent les informations ?
-Power BI effectue des recherches rapides dans différents sous-ensembles de votre jeu de données tout en appliquant un jeu d’algorithmes sophistiqués pour détecter les informations potentiellement intéressantes. Power BI analyse autant que possible le jeu de données dans le délai imparti.
+Power BI recherche rapidement différents sous-ensembles de votre jeu de données. Au fil de la recherche, Power BI applique un ensemble d’algorithmes sophistiqués pour découvrir des insights potentiellement intéressants. Power BI analyse autant que possible le jeu de données dans le délai imparti.
 
 Vous pouvez exécuter des informations sur un jeu de données ou une vignette de tableau de bord.   
 
@@ -43,7 +45,7 @@ Détecte les cas où plusieurs mesures montrent une corrélation les unes avec l
 ![Exemple de corrélation](./media/end-user-insight-types/pbi_auto_insight_types_correlation.png)
 
 ## <a name="low-variance"></a>Écart faible
-Détecte les cas où des points de données ne sont pas éloigné de la moyenne.
+Détecte les cas où des points de données ne sont pas éloignés de la moyenne.
 
 ![Exemple d’écart faible](./media/end-user-insight-types/power-bi-low-variance.png)
 
@@ -74,8 +76,6 @@ Pour les données d’une série chronologique, détecte les cas où il existe d
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Informations Power BI](end-user-insights.md)
-
-Si vous possédez un jeu de données, [optimisez-le pour la fonction Informations](../service-insights-optimize.md).
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
 

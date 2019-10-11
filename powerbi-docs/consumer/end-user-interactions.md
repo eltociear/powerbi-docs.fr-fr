@@ -7,36 +7,40 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/24/2019
+ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: b95df5c32d9058e4480d7af5e226a971ba581144
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 3a73656d8de462dfc7d1d9e7ac742d588cc8c810
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256292"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943859"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Comment les visuels s’entrefiltrent dans un rapport Power BI
 Une des grandes fonctionnalités de Power BI est la façon dont tous les éléments visuels sur une page de rapport sont interconnectés. Si vous sélectionnez un point de données sur l’un des éléments visuels, tous les autres éléments visuels de la page qui contiennent ces données changent en fonction de cette sélection. 
 
 ![vidéo sur l’interaction des éléments visuels](media/end-user-interactions/interactions.gif)
 
-Par défaut, vous pouvez sélectionner un point de données dans une visualisation d’une page de rapport afin de filtrer, effectuer une sélection croisée et explorer les autres visualisations de la page. 
+## <a name="how-visuals-interact-with-each-other"></a>Interactions entre les visuels
 
-Cela peut être utile pour savoir comment une valeur de vos données contribue à une autre valeur. Par exemple, la sélection du segment Modération dans le graphique en anneau permet de montrer la contribution de ce segment à chaque colonne du graphique Nombre total d’unités par mois et de filtrer le graphique en courbes à droite.
+Par défaut, quand vous sélectionnez un point de données dans un visuel d’une page de rapport, cela entraîne un filtrage croisé ou une sélection croisée dans les autres visuels de la page. L’interaction exacte des éléments visuels sur une page est définie par le *concepteur* du rapport. Les *concepteurs* disposent d’options qui permettent d’activer et de désactiver les interactions visuelles, et de modifier le comportement par défaut du filtrage croisé, de la sélection croisée et de l’[exploration](end-user-drill.md). 
+
+Si vous débutez avec les hiérarchies ou l’exploration, vous pouvez consulter des informations complètes à ce sujet dans cet article sur l’[exploration dans Power BI](end-user-drill.md). 
+
+Le filtrage croisé et la sélection croisée peuvent être utiles pour savoir comment une valeur dans vos données impacte une autre valeur. Par exemple, la sélection du segment Moderation (Modération) dans le graphique en anneau permet de montrer l’impact de ce segment sur chaque colonne du graphique « Total units by Month » (Nombre total d’unités par mois) et de filtrer le graphique en courbes.
 
 ![image montrant l’interaction des visuels](media/end-user-interactions/power-bi-interactions.png)
 
-Consultez [À propos du filtrage et de la mise en évidence](../power-bi-reports-filters-and-highlighting.md). 
+Consultez [À propos du filtrage et de la mise en évidence](end-user-report-filter.md). 
 
-L’interaction exacte des éléments visuels sur une page est définie par le *concepteur* du rapport. Les concepteurs disposent d’options qui permettent d’activer et de désactiver les interactions visuelles et de modifier le comportement par défaut du filtrage croisé, de la sélection croisée et de l’exploration. 
+
   
 > [!NOTE]
-> Les termes *filtrage croisé* et *sélection croisée* permettent de distinguer le comportement décrit ici de celui qui résulte de l’utilisation du volet **Filtres** pour filtrer et mettre en évidence des visualisations.  
+> Les termes *filtrage croisé* et *sélection croisée* permettent de distinguer le comportement décrit ici de celui qui résulte de l’utilisation du volet **Filtres** pour filtrer et mettre en évidence des visuels.  
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-- Si votre rapport comprend une visualisation qui prend en charge l’[exploration](../power-bi-visualization-drill-down.md), par défaut, le fait d’explorer une visualisation n’aura aucun impact sur les autres visualisations de la page du rapport.     
+- Si votre rapport comprend un visuel qui prend en charge l’[exploration](end-user-drill.md), par défaut, le fait d’explorer un visuel n’a aucun effet sur les autres visuels de la page du rapport.     
 - Si vous utilisez le visuel A pour interagir avec le visuel B, les filtres appliqués au niveau du visuel A seront appliqués au visuel B.
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a2de6d79971e59879e65d2e3cf652caf156d80cf
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904096"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715529"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Créer les nouveaux espaces de travail dans Power BI
 
@@ -28,7 +28,7 @@ Voici ce qui est différent. Dans les nouveaux espaces de travail, vous pouvez 
 - Utiliser des rôles d’espace de travail plus granulaires, pour une gestion plus flexible des autorisations dans un espace de travail.
 
 > [!NOTE]
-> Pour appliquer la sécurité au niveau des lignes (RLS) pour les utilisateurs Power BI Pro qui parcourent du contenu dans un espace de travail, continuez à utiliser les [espaces de travail classiques](service-create-workspaces.md). Sélectionnez l'option **Les membres peuvent uniquement voir le contenu Power BI**. Vous pouvez également publier une application Power BI pour ces utilisateurs, ou utiliser le partage pour distribuer du contenu. Le rôle Lecteur à venir permettra ce scénario dans les nouveaux espaces de travail.
+> Pour appliquer la sécurité au niveau des lignes (RLS) aux utilisateurs de Power BI Pro qui parcourent du contenu dans un espace de travail, attribuez le rôle Lecteur à ces utilisateurs.
 
 Pour plus d’informations, consultez l’article sur les [nouveaux espaces de travail](service-new-workspaces.md).
 
@@ -42,7 +42,7 @@ Pour plus d’informations, consultez l’article sur les [nouveaux espaces de t
    
      ![Nouvelle expérience d'espace de travail](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Si vous sélectionnez **Revenir au type classique**, vous créez un espace de travail basé sur un groupe Office 365. Utilisez cette option si vous avez besoin l’option **Les membres peuvent uniquement voir le contenu Power BI** applique la sécurité au niveau des lignes (RLS) pour les membres de l’espace de travail.
+     Si vous sélectionnez **Revenir au type classique**, vous créez un [espace de travail basé sur un groupe Office 365](service-create-workspaces.md). 
 
 2. Nommez l’espace de travail. Si le nom n’est pas disponible, modifiez-le de façon à obtenir un nom unique.
    

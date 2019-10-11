@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750902"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715209"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -24,7 +24,7 @@ ms.locfileid: "70750902"
 La nouvelle expérience d’espace de travail est désormais en disponibilité générale (GA) et constitue désormais l’espace de travail par défaut. Vous pouvez toujours créer et utiliser des [espaces de travail classiques](service-create-workspaces.md) basés sur des groupes Office 365. 
 
 > [!NOTE]
-> Pour appliquer la sécurité au niveau des lignes (RLS) pour les utilisateurs qui parcourent le contenu dans un espace de travail, utilisez le rôle Lecteur. Si le rôle Lecteur n’est pas encore disponible dans votre locataire, continuez à utiliser des [espaces de travail classiques](service-create-workspaces.md) et sélectionnez l’option **Les membres peuvent uniquement voir le contenu Power BI**. Vous pouvez également publier une application Power BI pour ces utilisateurs, ou utiliser le partage pour distribuer du contenu.
+> Pour appliquer la sécurité au niveau des lignes (RLS) pour les utilisateurs qui parcourent le contenu dans un espace de travail, utilisez le rôle Lecteur. Pour appliquer la sécurité au niveau des lignes sans donner accès à l’espace de travail, publiez une application Power BI pour ces utilisateurs ou utilisez le partage pour distribuer le contenu.
 
 Avec les nouveaux espaces de travail, vous pouvez :
 
@@ -73,11 +73,14 @@ Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. 
 | Permettre à d’autres utilisateurs de repartager des éléments. |  X | X  |   |   |
 | Créer, modifier et supprimer du contenu dans l’espace de travail.  |  X | X  | X  |   |
 | Publier des rapports sur l’espace de travail, supprimer du contenu.  |  X | X  | X  |   |
-| Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail. |  X | X  | X  | X <sup>1</sup>  |
-| Copier un rapport. | X | X | X | X <sup>1</sup> |
+| Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail. |  X | X  | X  |   |
+| Copier un rapport. | X | X | X |  |
 | Voir et utiliser un élément. |  X | X  | X  | X  |
 
-**1** Nécessite une licence Power BI Pro et une [autorisation de création pour les jeux de données](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
+> [!NOTE]
+>Pour copier un rapport, et créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail, les utilisateurs doivent remplir quelques exigences supplémentaires :
+>- Ils doivent avoir une licence Power BI Pro. 
+>- Ils doivent avoir l’autorisation Générer pour le jeu de données. Pour les jeux de données de cet espace de travail, les utilisateurs ayant un rôle d’administrateur, de membre ou de contributeur héritent l’autorisation Générer de leur rôle dans l’espace de travail.
  
 ## <a name="licensing"></a>Licensing
 Toutes les personnes que vous ajoutez à un espace de travail dans la capacité partagée doivent avoir une licence Power BI Pro. Dans l’espace de travail, ces utilisateurs peuvent collaborer sur des tableaux de bord et des rapports que vous prévoyez de publier pour un public plus large, ou même pour votre organisation tout entière. 

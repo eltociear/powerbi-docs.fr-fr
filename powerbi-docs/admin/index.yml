@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Power BI pour les administrateurs
+summary: La documentation Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+metadata:
+  title: Power BI pour les administrateurs
+  description: La documentation Power BI fournit des informations d’experts et des réponses à vos besoins, quelle que soit la façon dont vous utilisez Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-service
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 10/04/2019
+  ms.openlocfilehash: 8209cc755b33887c533e9f90b9b1cd7a5021490e
+  ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 10/10/2019
+  ms.locfileid: "72245647"
+landingContent:
+- title: À propos de Power BI pour les administrateurs
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Présentation de l’administration de Power BI
+      url: ../service-admin-administering-power-bi-in-your-organization.md
+  - linkListType: concept
+    links:
+    - text: Rôle d’administration dans Office 365
+      url: ../service-admin-role.md
+- title: Prise en main
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Licences pour votre organisation
+      url: ../service-admin-licensing-organization.md
+    - text: Utilisation du portail d’administration
+      url: ../service-admin-portal.md
+  - linkListType: how-to-guide
+    links:
+    - text: Acheter Power BI Pro
+      url: ../service-admin-purchasing-power-bi-pro.md
+    - text: S’inscrire avec une version d’évaluation d’Office 365
+      url: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
+    - text: Ajouter Power BI avec un partenaire Office 365
+      url: ../service-admin-syndication-partner.md
+- title: Locataires
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Où se trouve mon locataire ?
+      url: ../service-admin-where-is-my-tenant-located.md
+    - text: Trouver les utilisateurs qui se sont connectés
+      url: ../service-admin-access-usage.md
+    - text: Audit Power BI
+      url: ../service-admin-auditing.md
+    - text: Suivre l’intégrité du service
+      url: ../service-admin-health.md
+    - text: Fermeture de votre compte Power BI
+      url: ../service-admin-closing-your-account.md

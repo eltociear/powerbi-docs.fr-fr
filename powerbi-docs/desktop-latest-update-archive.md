@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 0dcc5e3aac4b43a6975a9faa5dd23faa2888b324
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 1ccf5dd3a84bbbaca7019f8943cf0ab974e4bd06
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142214"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71944890"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -2290,8 +2290,8 @@ Nous prenons de l’avance et vous proposons encore plus de mises à jour de ce 
 
 ### <a name="data-connectivity"></a>Connexion de données :
 
--   Prise en charge de **DirectQuery** pour les bases de données Oracle et Teradata
--   **DirectQuery** : prise en charge de la création de colonnes calculées
+-   Prise en charge de **DirectQuery** pour Oracle et Teradata
+-   Prise en charge de **DirectQuery** pour la création de colonnes calculées
 -   Prise en charge de la publication de rapports actifs Analysis Services
 -   Connecteur de fichier JSON
 -   Connecteur SQL Sentry
