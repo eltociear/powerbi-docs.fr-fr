@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 508da47272313d9781fdd66c2ca367dcf9e433e5
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 8ecec706c281b2a36c342ea852eebb4a8559a6fd
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715220"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239924"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>Visuels d’indicateur de performance clé (KPI)
 
@@ -50,12 +50,12 @@ Un jeu de données d’indicateurs de performances clés doit contenir des valeu
 Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
-   
-2. Rechercher votre copie du **fichier PBIX de l’exemple Analyse de la vente au détail**
 
-1. Ouvrez le **fichier PBIX de l’exemple Analyse de la vente au détail** dans la vue Rapport ![Capture d’écran de l’icône de la vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Rechercher votre copie du **fichier PBIX de l’exemple Analyse de la vente au détail**
 
-1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
+1. Ouvrez le **fichier .PBIX de l’exemple Analyse de la vente au détail** dans la vue de rapport. ![Capture d’écran de l’icône de la vue de rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png)
+
+1. Sélectionnez **+** pour ajouter une nouvelle page. ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
 
 ## <a name="how-to-create-a-kpi"></a>Création d’un indicateur de performance clé
 
