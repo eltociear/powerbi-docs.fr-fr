@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 09/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: cfae856cf80027a92fb7d19c27b990aa659d992d
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 1d4a48f9116f76136b40f3f22df7ffa68f75a74b
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968746"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020547"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filtres et mise en évidence dans les rapports Power BI
  Cet article vous présente le filtrage et la mise en évidence dans le service Power BI. L’expérience est presque la même dans Power BI Desktop. Les *filtres* masquent tout, sauf les données qui vous intéressent. La *mise en évidence* n’est pas du filtrage. Elle ne supprime pas des données, mais elle met en évidence une partie des données visibles ; les données qui ne sont pas mises en évidence restent visibles, mais elles sont estompées.

@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fc2f8d13cdcd006c01dfff0114c13cc78f5e65
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9824b3340da694c00784f34b0c6245cafbf69383
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987017"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239922"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publication sur le web à partir de Power BI
 
@@ -113,7 +113,7 @@ Une fois que vous avez créé un code incorporé **Publier sur le web**, vous po
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Mises à jour des rapports et actualisation des données
 
-Après avoir créé et partagé votre code incorporé **Publier sur le web**, le rapport est mis à jour avec les modifications que vous apportez et le lien du code incorporé est immédiatement actif. Toute personne qui ouvre le lien peut l’afficher. Toutefois, après cette première action, environ une heure peut être nécessaire pour que les utilisateurs puissent voir les mises à jour des rapports ou des visuels. Si vous avez besoin que vos mises à jour soient disponibles immédiatement, vous pouvez supprimer le code incorporé et en créer un nouveau. Pour en savoir plus, consultez la section [**Fonctionnement**](#howitworks) plus loin dans cet article. 
+Après avoir créé et partagé votre code incorporé **Publier sur le web**, le rapport est mis à jour avec les modifications que vous apportez et le lien du code incorporé est immédiatement actif. Toute personne qui ouvre le lien peut l’afficher. Toutefois, après cette première action, environ une heure peut être nécessaire pour que les utilisateurs puissent voir les mises à jour des rapports ou des visuels. Pour en savoir plus, consultez la section [**Fonctionnement**](#howitworks) plus loin dans cet article. 
 
 ## <a name="data-refresh"></a>Actualisation des données
 

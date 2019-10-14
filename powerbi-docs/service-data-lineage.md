@@ -1,20 +1,20 @@
 ---
 title: Traçabilité des données (préversion)
 description: Dans les projets Business Intelligence (BI) modernes, avoir une bonne compréhension du flux de données entre la source de données et la destination constitue un défi majeur pour bon nombre de clients.
-author: maggiesMSFT
+author: paulinbar
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 10/03/2019
-ms.author: maggies
+ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: 87f0fe20a88077d58ee5d44c748d86264b2be536
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: e91f1d5084957ee7266161b9a34f916e2902d1f4
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968871"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019570"
 ---
 # <a name="data-lineage-preview"></a>Traçabilité des données (préversion)
 Dans les projets Business Intelligence (BI) modernes, il peut être difficile d’avoir une bonne compréhension du flux de données entre la source de données et la destination. C’est encore plus compliqué si vous avez créé des projets d’analytique avancée qui impliquent de multiples sources de données, artefacts et dépendances.  Il peut alors être difficile de répondre à des questions telles que « Que se passe-t-il si je modifie ces données ? » ou « Pourquoi ce rapport n’est-il pas à jour ? ». Pour trouver les réponses, il faut parfois demander l’aide d’experts ou faire des recherches approfondies. Nous avons conçu une vue de traçabilité des données qui pourra vous aider à répondre à ce genre de questions.
