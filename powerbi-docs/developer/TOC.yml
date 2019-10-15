@@ -1,6 +1,6 @@
 - name: Power BI pour les développeurs
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       expanded: true
       items:
         - name: "Ce que les développeurs peuvent faire avec Power\_BI"
@@ -8,16 +8,16 @@
     - name: Visuels Power BI
       expanded: true
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           items:
             - name: "Visuels dans Power\_BI"
               href: ../power-bi-custom-visuals.md
         - name: Tutoriels
           items:
             - name: Développer un visuel Power BI
-              href: custom-visual-develop-tutorial.md
+              href: visuals/custom-visual-develop-tutorial.md
             - name: Ajouter des options de mise en forme
-              href: custom-visual-develop-tutorial-format-options.md
+              href: visuals/custom-visual-develop-tutorial-format-options.md
             - name: Ajouter des tests unitaires pour un projet de visuel
               href: visuals/unit-tests-introduction.md
         - name: Concepts
@@ -87,7 +87,7 @@
     - name: Analytiques incorporées
       expanded: true
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           items:
             - name: "Qu’est-ce que l’incorporation avec Power\_BI"
               href: embedding.md
@@ -185,7 +185,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848280'
             - name: Stack Overflow
               href: 'https://go.microsoft.com/fwlink/?linkid=848281'
-    - name: Automation
+    - name: Automatisation
       expanded: true
       items:
         - name: Vue d’ensemble
