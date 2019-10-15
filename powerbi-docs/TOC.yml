@@ -111,7 +111,7 @@
           href: visuals/power-bi-visualization-customize-title-background-and-legend.md
         - name: Afficher les éléments sans données dans Power BI
           href: desktop-show-items-no-data.md
-        - name: Se connecter aux données
+        - name: Connectez-vous à vos données
           items:
             - name: "Sources de données dans Power\_BI\_Desktop"
               href: desktop-data-sources.md
@@ -165,6 +165,8 @@
               href: desktop-connect-to-web.md
             - name: "Se connecter à un entrepôt Snowflake Computing dans Power\_BI Desktop"
               href: desktop-connect-snowflake.md
+            - name: Se connecter aux données Azure Cost Management
+              href: desktop-connect-azure-cost-management.md
             - name: Se connecter aux données Azure Consumption Insights
               href: desktop-connect-azure-consumption-insights.md
             - name: Utiliser SAP HANA dans Power BI Desktop
@@ -177,11 +179,11 @@
               href: desktop-use-directquery.md
             - name: DirectQuery pour Oracle et Teradata
               href: desktop-directquery-for-oracle-teradata.md
-            - name: "DirectQuery et SAP\_Business\_Warehouse (BW)"
+            - name: DirectQuery et SAP Business Warehouse (BW)
               href: desktop-directquery-sap-bw.md
             - name: DirectQuery et SAP HANA
               href: desktop-directquery-sap-hana.md
-            - name: "Paramètre Intégrité référentielle supposée dans Power\_BI Desktop"
+            - name: "Paramètre d’intégrité référentielle supposée dans Power\_BI\_Desktop"
               href: desktop-assume-referential-integrity.md
             - name: "Utilisation du connecteur SAP BW dans Power\_BI\_Desktop"
               href: desktop-sap-bw-connector.md
@@ -217,6 +219,8 @@
               href: desktop-import-and-display-kpis.md
         - name: Créer des rapports
           items:
+            - name: Actualisation automatique des pages dans Power BI Desktop (préversion)
+              href: desktop-automatic-page-refresh.md
             - name: Utiliser l’analyseur de performances dans Power BI Desktop
               href: desktop-performance-analyzer.md
             - name: Éléments visuels pour les rapports
@@ -227,7 +231,7 @@
               href: desktop-export-to-pdf.md
             - name: "Questions et réponses dans Power\_BI\_Desktop"
               href: desktop-qna-in-reports.md
-            - name: Volet Analyse de Power BI Desktop
+            - name: "Volet d’analyse dans Power\_Bi Desktop"
               href: desktop-analytics-pane.md
             - name: Utiliser des insights pour expliquer les hausses et les baisses
               href: desktop-insights.md
@@ -351,7 +355,7 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Visuel de tableau
               href: visuals/desktop-matrix-visual.md
-            - name: "Créer des analyses et des visualisations avancées à l’aide de scripts\_R dans Power\_BI"
+            - name: "Créer des analyses et des visualisations avancées grâce aux scripts R dans Power\_BI"
               href: visuals/service-r-visuals.md
             - name: "Graphiques en jauge radiale dans Power\_BI"
               href: visuals/power-bi-visualization-radial-gauge-charts.md
@@ -361,7 +365,7 @@
               href: visuals/power-bi-visualization-scatter.md
             - name: Graphiques en nuages de points haute densité
               href: visuals/desktop-high-density-scatter-charts.md
-            - name: "Utiliser des cartes de formes dans Power\_BI\_Desktop (version préliminaire)"
+            - name: "Utiliser Shape\_Maps dans Power\_BI\_Desktop (Version d’évaluation)"
               href: visuals/desktop-shape-map.md
             - name: "Segments dans Power\_BI"
               href: visuals/power-bi-visualization-slicers.md
@@ -407,7 +411,7 @@
   items:
     - name: Vue d’ensemble
       items:
-        - name: "Qu’est-ce que Power\_BI\_?"
+        - name: Qu’est-ce que Power BI ?
           href: power-bi-overview.md
         - name: "Qu’est-ce que le service Power BI\_?"
           href: power-bi-service-overview.md
@@ -477,7 +481,7 @@
               href: service-power-bi-get-started-third-party-apps.md
     - name: Guides pratiques
       items:
-        - name: Obtenir des données de fichiers
+        - name: Obtenez des données de fichiers
           items:
             - name: Obtention de données à partir de fichiers
               href: service-get-data-from-files.md
@@ -563,7 +567,7 @@
               href: service-dashboard-pin-tile-from-q-and-a.md
             - name: Épingler une page de rapport entière à un tableau de bord
               href: service-dashboard-pin-live-tile-from-report.md
-            - name: Alertes de données dans le service Power BI
+            - name: "Alertes de données dans le service Power\_BI"
               href: service-set-data-alerts.md
             - name: 'Ajouter une image, une zone de texte, une vidéo ou du code à un tableau de bord'
               href: service-dashboard-add-widget.md
@@ -575,7 +579,7 @@
               href: service-create-dashboard-mobile-phone-view.md
             - name: Créer un code QR pour une vignette
               href: service-create-qr-code-for-tile.md
-            - name: Classification des données des tableaux de bord
+            - name: Classement des données du tableau de bord
               href: service-data-classification.md
             - name: Thèmes du tableau de bord
               href: service-dashboard-themes.md
@@ -627,7 +631,7 @@
               href: service-cortana-intro.md
             - name: "Activer Cortana pour Power\_BI"
               href: service-cortana-enable.md
-            - name: "Informations rapides dans Power\_BI"
+            - name: "Aperçus rapides dans Power\_BI."
               href: service-insights.md
             - name: Optimiser les données pour Quick Insights
               href: service-insights-optimize.md
@@ -663,7 +667,7 @@
               href: service-publish-to-web.md
             - name: Partager un tableau de bord lié à un classeur Excel sur OneDrive
               href: service-share-dashboard-that-links-to-excel-onedrive.md
-            - name: "Power\_BI Publisher pour Excel"
+            - name: "Éditeur Power\_BI pour Excel"
               href: publisher-for-excel.md
         - name: Préparation des données en libre-service
           items:
@@ -813,7 +817,7 @@
                   href: service-connect-to-prevedere.md
                 - name: Project Online
                   href: service-connect-to-project-online.md
-                - name: QuickBooks Online
+                - name: QuickBooks en ligne
                   href: service-connect-to-quickbooks-online.md
                 - name: Salesforce
                   href: service-connect-to-salesforce.md
@@ -873,7 +877,7 @@
           href: webinars.md
 - name: Power BI Premium
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       items:
         - name: "Qu’est-ce que Power\_BI\_Premium\_?"
           href: service-premium-what-is.md
@@ -911,7 +915,7 @@
           href: service-premium-connect-tools.md
 - name: Générateur de rapports paginés Power BI
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       items:
         - name: "Que sont les rapports paginés\_?"
           href: paginated-reports-report-builder-power-bi.md
@@ -1071,7 +1075,7 @@
           href: report-server/capacity-planning.md
 - name: Passerelles
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       items:
         - name: "Qu’est-ce qu’une passerelle de données locale\_?"
           href: service-gateway-onprem.md
@@ -1133,7 +1137,7 @@
           href: /data-integration/gateway/service-gateway-monthly-updates
 - name: Instructions
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       href: guidance/overview.md
     - name: "Qu’est-ce qu’un schéma en étoile\_?"
       href: guidance/star-schema.md
