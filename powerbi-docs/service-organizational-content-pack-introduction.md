@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b9c308e0593ac207e323df5b78619f0279f95594
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: e54750d928918fd77c2bf93577cf1d3d0634ca97
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523439"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020621"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Présentation des packs de contenu d’organisation dans Power BI
 > [!NOTE]
-> Vous ne pouvez pas créer des packs de contenu d’organisation ou les installer dans les expériences des nouveaux espaces de travail en préversion. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
+> Vous ne pouvez pas créer des packs de contenu d’organisation ou les installer dans les expériences des nouveaux espaces de travail. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
 > 
 
 Vous distribuez régulièrement des rapports par courrier électronique à votre équipe ? Essayez plutôt de procéder ainsi : faites des packages de vos tableaux de bord, rapports, classeurs Excel et jeux de données, et partagez-les avec votre équipe sous forme de *pack de contenu professionnel*. Les packs de contenu que vous créez sont faciles à trouver par votre équipe, car ils sont regroupés dans AppSource. Dans la mesure où ils font partie de Power BI, ils bénéficient de toutes les fonctionnalités de Power BI, notamment l’exploration interactive des données, de nouveaux éléments visuels, les Questions et réponses, l’intégration à d’autres sources de données, l’actualisation des données, et bien plus encore.

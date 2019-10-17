@@ -10,49 +10,46 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: b50d247f54cfe2af4cefbd14b9528b1dfa263acf
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624225"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020371"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Créer un tableau de bord à partir d’un rapport
 Vous avez lu [Présentation des tableaux de bord dans Power BI](service-dashboards.md) et souhaitez maintenant créer les vôtres. Il existe différentes façons de créer un tableau de bord. Par exemple, vous pouvez créer un tableau de bord à partir d’un rapport, à partir de rien, à partir d’un jeu de données, en dupliquant un tableau de bord existant.  
 
-Parce que la tâche peut sembler difficile au début, nous allons commencer par créer un tableau de bord simple et rapide affichant des visualisations d’un rapport déjà généré. 
+Nous allons commencer par créer un tableau de bord simple et rapide affichant des visualisations d’un rapport déjà généré. 
 
-Après avoir suivi ce guide de démarrage rapide, vous aurez une bonne compréhension des aspects suivants :
+Après avoir lu cet article, vous aurez une bonne compréhension des aspects suivants :
 - Relation entre les tableaux de bord et les rapports
 - Comment ouvrir le Mode Édition dans l’éditeur de rapport
 - Comment épingler des vignettes 
 - Comment naviguer entre un tableau de bord et un rapport 
-
-## <a name="who-can-create-a-dashboard"></a>Qui peut créer un tableau de bord ?
-La capacité de créer un tableau de bord est une fonctionnalité de *créateur* qui nécessite des autorisations de modification du rapport. Ces autorisations sont réservées aux créateurs de rapports et aux collègues à qui les premiers ont accordé l’accès. Par exemple, si David crée un rapport dans workspaceABC et vous ajoute comme membre de cet espace de travail, David et vous aurez tous deux des autorisations de modification. Si, à l’inverse, le rapport a été partagé avec vous directement ou dans le cadre d’une [application Power BI](service-create-distribute-apps.md) (vous êtes *consommateur* du rapport), vous ne pourrez pas épingler de vignettes au tableau de bord.
  
 ![Tableau de bord](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
-> Les tableaux de bord sont une fonctionnalité du service Power BI et non de Power BI Desktop. S’il n’est pas possible de créer des tableaux de bord dans l’application mobile Power BI, il est possible de les y [afficher et partager](consumer/mobile/mobile-apps-view-dashboard.md).
+> Les tableaux de bord sont une fonctionnalité du service Power BI et non de Power BI Desktop. Vous ne créez pas de tableaux de bord dans les apps mobiles Power BI, mais vous pouvez [les afficher et les partager](consumer/mobile/mobile-apps-view-dashboard.md) à cet endroit.
 >
 > 
 
 ## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Vidéo : Créer un tableau de bord en épinglant des éléments visuels et des images provenant d’un rapport
-Regardez Amanda créer un tableau de bord en épinglant des visualisations et des images provenant d’un rapport. Ensuite, suivez les étapes décrites dans [Importer un jeu de données avec une rapport](#import-a-dataset-with-a-report) pour essayer par vous-même avec l’exemple Analyse de l’approvisionnement.
+Regardez Amanda créer un tableau de bord en épinglant des visualisations et des images provenant d’un rapport. Ensuite, suivez les étapes décrites dans la section suivant [Importer un jeu de données avec un rapport](#import-a-dataset-with-a-report) pour essayer par vous-même avec l’exemple Analyse de l’approvisionnement.
     
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="import-a-dataset-with-a-report"></a>Importer un jeu de données avec un rapport
-Nous allons importer l’un des exemples de jeu de données Power BI et l’utiliser pour créer notre tableau de bord. L’exemple que nous allons utiliser est un classeur Excel avec deux feuilles PowerView. Lorsque Power BI importe le classeur, il ajoute un jeu de données et un rapport à votre espace de travail. Le rapport est automatiquement créé à partir des feuilles PowerView.
+Dans cette procédure étape par étape, nous allons importer l’un des exemples de jeu de données Power BI et l’utiliser pour créer notre tableau de bord. L’exemple que nous allons utiliser est un classeur Excel avec deux feuilles PowerView. Lorsque Power BI importe le classeur, il ajoute un jeu de données et un rapport à votre espace de travail. Le rapport est automatiquement créé à partir des feuilles PowerView.
 
 1. Téléchargez le [fichier Excel](http://go.microsoft.com/fwlink/?LinkId=529784) exemple Analyse de l’approvisionnement. Nous vous recommandons de l’enregistrer dans votre OneDrive Entreprise.
 2. Ouvrez le service Power BI dans votre navigateur (app.powerbi.com).
 3. Dans le volet de navigation gauche, sélectionnez **Mon espace de travail**, puis **Obtenir les données**.
 
-    ![Volet de navigation gauche](media/service-dashboard-create/power-bi-get-data3.png)
-5. Sélectionnez **Fichiers**.
+    ![Volet de navigation gauche](media/service-dashboard-create/power-bi-get-data-new-look.png)
+5. Sous **Fichiers**, sélectionnez **Obtenir**.
 
    ![Obtenir les fichiers](media/service-dashboard-create/power-bi-select-files.png)
 6. Naviguez jusqu'à l’emplacement où vous avez enregistré le fichier Excel de l’exemple Analyse de l’approvisionnement. Sélectionnez-le et choisissez **Connecter**.
@@ -64,6 +61,9 @@ Nous allons importer l’un des exemples de jeu de données Power BI et l’uti
 8. Lorsque le message de réussite s’affiche, sélectionnez **x** pour l’ignorer.
 
    ![Message de réussite](media/service-dashboard-create/power-bi-view-datasetnew.png)
+
+> [!TIP]
+> Le saviez-vous ? Vous pouvez réduire la barre de navigation de gauche en sélectionnant l'icône à trois lignes en haut ![Icône pour afficher ou masquer le volet de navigation](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Vous disposez ainsi de plus d’espace pour le rapport lui-même.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Ouvrir le rapport et épingler des vignettes à votre tableau de bord
 1. Dans le même espace de travail, sélectionnez l’onglet **Rapports**, puis l’**Exemple Analyse de l’approvisionnement** pour ouvrir le rapport.

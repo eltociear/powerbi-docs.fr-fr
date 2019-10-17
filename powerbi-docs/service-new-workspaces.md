@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 09/30/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 15f0ce3910261ed2902603ab7fb3f07f8b695d4c
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715209"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020687"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -79,7 +79,7 @@ Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. 
 
 > [!NOTE]
 >Pour copier un rapport, et créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail, les utilisateurs doivent remplir quelques exigences supplémentaires :
->- Ils doivent avoir une licence Power BI Pro. 
+>- Ils doivent avoir une licence Power BI Pro. Voir la section suivante, [Gestion des licences](#licensing), pour plus de détails.
 >- Ils doivent avoir l’autorisation Générer pour le jeu de données. Pour les jeux de données de cet espace de travail, les utilisateurs ayant un rôle d’administrateur, de membre ou de contributeur héritent l’autorisation Générer de leur rôle dans l’espace de travail.
  
 ## <a name="licensing"></a>Licensing
@@ -141,7 +141,7 @@ Certaines fonctionnalités agissent différemment dans les nouveaux espaces de t
 - Les membres peuvent ou non repartager : remplacé par le rôle Contributeur
 - Espaces de travail en lecture seule : Au lieu d’accorder aux utilisateurs un accès en lecture seule à un espace de travail, attribuez aux utilisateurs le rôle Lecteur, qui permet un accès en lecture seule similaire au contenu dans un espace de travail.
 - Les utilisateurs avec une licence Pro peuvent accéder à l’espace de travail si celui-ci se trouve dans une capacité Power BI Premium, même si les utilisateurs n’ont que le rôle Lecteur.
-- Pour permettre aux utilisateurs avec le rôle Lecteur d’exporter des données, vérifiez qu’ils ont l’autorisation Générer sur les jeux de données dans l’espace de travail. Découvrez plus en détail l’[autorisation de génération pour les jeux de données](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- Pour permettre aux utilisateurs avec le rôle Lecteur d’exporter des données, vérifiez qu’ils ont l’autorisation Générer sur les jeux de données dans l’espace de travail. Découvrez plus en détail l’[autorisation de génération pour les jeux de données](service-datasets-build-permissions.md).
 - Pas de bouton **Quitter l’espace de travail**.
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions

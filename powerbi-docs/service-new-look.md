@@ -7,21 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654954"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239963"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Nouvelle apparence du service Power BI
 
-Le service Power BI (app.powerbi.com) a une nouvelle apparence qui facilite l’affichage et l’utilisation de vos rapports. La nouvelle présentation est une expérience moderne qui est plus simple et qui s’appuie sur votre connaissance des autres produits Microsoft. Dans le service Power BI, nous avons fait du contenu de rapport le focus principal en optant pour un thème de couleur plus clair et en mettant à jour les icônes. Voici une vue d’ensemble des modifications apportées à la nouvelle présentation. Pour plus d’informations, reportez-vous aux sections numérotées :
+Le service Power BI (app.powerbi.com) a une nouvelle apparence qui facilite l’affichage et l’utilisation de vos rapports. La nouvelle présentation est plus simple et s’appuie sur votre connaissance des autres produits Microsoft. Dans le service Power BI, nous avons fait du contenu de rapport le focus principal en optant pour un thème de couleur plus clair et en mettant à jour les icônes. Voici une vue d’ensemble des modifications apportées à la nouvelle présentation. Pour plus d’informations, reportez-vous aux sections numérotées :
 
 ![Vue d’ensemble des modifications de la nouvelle présentation](media/service-new-look/power-bi-new-look-changes.png)
+
+Vous recherchez une action spécifique ? Voir [Nouvelle apparence : où sont passées les actions ?](service-new-look-where-actions.md)
 
 ## <a name="quick-tour-of-the-changes"></a>Présentation rapide des modifications
 
@@ -70,7 +72,7 @@ Vous recherchez les actions du menu **Fichier** ? À présent, les actions qui s
 
 ## <a name="6-new-filter-experience"></a>6. Nouvelle expérience de filtre
 
-Les mises à jour récentes telles que l’affichage des filtres appliqués et le nouveau volet des filtres sont disponibles par défaut avec la nouvelle présentation. Même si les concepteurs de rapports n’ont pas procédé à la mise à niveau vers la nouvelle expérience de filtres, le nouveau volet des filtres s’affiche.
+Les mises à jour récentes telles que l’affichage des filtres appliqués et le nouveau volet des filtres sont disponibles par défaut avec la nouvelle présentation. Même si votre concepteur de rapports n’a pas procédé à la mise à niveau vers la nouvelle expérience de filtres, le nouveau volet des filtres s’affiche.
 
 ![Répétition du filtre](media/service-new-look/power-bi-new-look-filters.png)
 

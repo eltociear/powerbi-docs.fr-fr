@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ace40fed472dc516cce5a761544cc5365566f3cd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074129"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020771"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)
 
@@ -23,7 +23,7 @@ Le décisionnel est une activité de collaboration. Il est important de définir
 
 ![Sélectionner un jeu de données partagé](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Dans Power BI, les créateurs de jeux de données peuvent décider des utilisateurs qui sont autorisés à accéder à leurs données à l’aide de l’[autorisation de création](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Les créateurs de jeux de données peuvent également *certifier* ou *promouvoir* des jeux de données afin que d’autres personnes puissent les découvrir. De cette façon, les auteurs de rapports savent quels jeux de données sont officiels et de bonne qualité, et ils peuvent utiliser ces jeux de données partout où ils créent dans Power BI. Les administrateurs de locataires ont un nouveau paramètre de locataire pour [régir l’utilisation des jeux de données dans des espaces de travail](service-datasets-admin-across-workspaces.md).
+Dans Power BI, les créateurs de jeux de données peuvent décider des utilisateurs qui sont autorisés à accéder à leurs données à l’aide de l’[autorisation de création](service-datasets-build-permissions.md). Les créateurs de jeux de données peuvent également *certifier* ou *promouvoir* des jeux de données afin que d’autres personnes puissent les découvrir. De cette façon, les auteurs de rapports savent quels jeux de données sont officiels et de bonne qualité, et ils peuvent utiliser ces jeux de données partout où ils créent dans Power BI. Les administrateurs de locataires ont un nouveau paramètre de locataire pour [régir l’utilisation des jeux de données dans des espaces de travail](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Partage de jeux de données et nouvelle expérience d’espace de travail
 
@@ -44,7 +44,7 @@ Lorsque vous trouvez un rapport que vous aimez, dans un espace de travail ou une
 
 ## <a name="build-permission-for-datasets"></a>Autorisation de génération pour les jeux de données
 
-Si vous êtes un créateur de jeux de données, l’autorisation de création vous permet de décider des utilisateurs de votre organisation qui sont autorisés à créer du contenu à partir de vos jeux de données. Les personnes qui disposent de cette autorisation peuvent également créer du contenu à partir du jeu de données en dehors de Power BI (par exemple, dans des feuilles Excel par le biais de la fonctionnalité Analyser dans Excel, XMLA et Export). Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Si vous êtes un créateur de jeux de données, l’autorisation de création vous permet de décider des utilisateurs de votre organisation qui sont autorisés à créer du contenu à partir de vos jeux de données. Les personnes qui disposent de cette autorisation peuvent également créer du contenu à partir du jeu de données en dehors de Power BI (par exemple, dans des feuilles Excel par le biais de la fonctionnalité Analyser dans Excel, XMLA et Export). Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md).
 
 ## <a name="promotion-and-certification"></a>Promotion et certification
 
@@ -54,19 +54,17 @@ Si vous créez des jeux de données dont les autres peuvent bénéficier, vous p
 
 Les expériences et fonctionnalités spécifiques basées sur les capacités des jeux de données partagés sont concédées sous licence selon les scénarios existants. Par exemple :
 
-- En règle générale, la découverte des jeux de données partagés et la connexion à ceux-ci sont à la portée de tout le monde. Toutefois, les utilisateurs sans licence Pro peuvent uniquement se connecter aux jeux de données qui se trouvent dans leur espace de travail personnel.
-- Les utilisateurs sans licence Pro peuvent uniquement utiliser des rapports et des tableaux de bord générés sur un jeu de données partagé si les deux espaces de travail (celui contenant le contenu et celui contenant le jeu de données) sont hébergés dans une capacité Premium.
-- Dans Power BI Desktop, les utilisateurs ne disposant pas d’une licence Pro peuvent uniquement voir les jeux de données de leur espace de travail.
+- En règle générale, la découverte des jeux de données partagés et la connexion à ceux-ci sont à la portée de tout le monde : il ne s’agit pas d’une fonctionnalité réservée à la licence Premium.
+- Les utilisateurs sans licence Pro peuvent utiliser des jeux de données sur plusieurs espaces de travail pour créer des rapports uniquement si ces jeux de données se trouvent dans leur espace de travail personnel (Mon espace de travail) ou dans un espace de travail sous licence Premium. La même restriction de licence s'applique, qu'ils créent des rapports dans Power BI Desktop ou dans le service Power BI.
 - Vous avez besoin d’une licence Pro pour copier des rapports d’un espace de travail à un autre.
 - La copie de rapports à partir d’une application requiert une licence Pro, comme pour les packs de contenu d’organisation.
 - La promotion et la certification des jeux de données nécessitent également une licence Pro.
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
+- En tant qu'éditeur d'applications, vous devez vous assurer que votre public a accès à des jeux de données en dehors de l'espace de travail de l'application. Sinon, les utilisateurs rencontreront des problèmes lors de l'interaction avec votre application : les rapports ne s'ouvriront pas sans accès aux jeux de données, et les vignettes du tableau de bord apparaîtront comme verrouillées. Par ailleurs, les utilisateurs ne pourront pas ouvrir l'application si le premier élément de la navigation est un rapport sans accès au jeu de données.
 - La génération d’un rapport à partir d’un jeu de données dans un autre espace de travail nécessite la nouvelle expérience d’espace de travail aux deux extrémités : Le rapport ainsi que le jeu de données doivent se trouver dans une nouvelle expérience d’espace de travail.
-- Supposons que vous deviez créer un rapport dans l’espace de travail A qui soit basé sur un jeu de données de l’espace de travail B. Quand vous créez une application pour l’espace de travail A, vous ne pouvez inclure ce rapport dans l’application de l’espace de travail A que si vous êtes également membre de l’espace de travail B.
 - Dans un espace de travail classique, l’expérience de découverte de jeux de données affiche uniquement les jeux de données dans cet espace de travail.
-- Si vous souhaitez ajouter un rapport basé sur un jeu de données partagé à une application, vous devez être membre de l’espace de travail du jeu de données. Il s’agit d’un problème connu.
 - Par défaut, « Publier sur le web » ne fonctionne pas pour un rapport basé sur un jeu de données partagé.
 - Si deux personnes sont membres d’un espace de travail qui accède à un jeu de données partagé, il est possible que seule l’une d’entre elles puisse voir le jeu de données connexe dans l’espace de travail. Seuls les utilisateurs possédant au moins un accès en lecture au jeu de données peuvent voir le jeu de données partagé. 
 

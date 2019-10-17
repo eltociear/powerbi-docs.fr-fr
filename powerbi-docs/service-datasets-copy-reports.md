@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: af0ffa5a879a2249c34ac73895103dfdf63e4d27
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c60c3c29bbf87d7a5e18838dac0baa6157de6437
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530616"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020826"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Copier des rapports à partir d’autres espaces de travail (préversion)
 
@@ -32,7 +32,7 @@ Quand vous trouvez un rapport qui vous intéresse dans un espace de travail ou u
 
     ![Enregistrer une copie d’un rapport](media/service-datasets-copy-reports/power-bi-dataset-save-report-copy.png)
 
-    Vous voyez uniquement l’icône **Enregistrer une copie** si le rapport se trouve dans un espace de travail de nouvelle expérience et que vous avez des [autorisations de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Même si vous avez accès à l’espace de travail, vous devez disposer des autorisations de génération pour le jeu de données.
+    Vous voyez uniquement l’icône **Enregistrer une copie** si le rapport se trouve dans un espace de travail de nouvelle expérience et que vous avez de l’[autorisation de génération](service-datasets-build-permissions.md). Même si vous avez accès à l’espace de travail, vous devez disposer de l’autorisation de génération pour le jeu de données.
 
 3. Dans **Enregistrer une copie de ce rapport**, nommez le rapport, puis sélectionnez l’espace de travail de destination.
 

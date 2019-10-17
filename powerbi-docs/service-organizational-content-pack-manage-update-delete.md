@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cbca162348092d9d03bef03199c63113ec487165
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 86b7a5e93183c06d6cac1445cb1702edde5d4bc9
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61226273"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020595"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Gérer, mettre à jour et supprimer des packs de contenu d’organisation
 > [!NOTE]
-> Vous ne pouvez pas créer des packs de contenu d’organisation ou les installer dans les expériences des nouveaux espaces de travail en préversion. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
+> Vous ne pouvez pas créer des packs de contenu d’organisation ou les installer dans les expériences des nouveaux espaces de travail. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
 > 
 
 Vous pouvez faire des packages de vos tableaux de bord, rapports, classeurs Excel et jeux de données, et les partager avec vos collègues dans des [packs de contenu d’organisation](service-organizational-content-pack-introduction.md). Vos collègues peuvent les utiliser en tant que tels, ou ils peuvent créer leurs propres copies.

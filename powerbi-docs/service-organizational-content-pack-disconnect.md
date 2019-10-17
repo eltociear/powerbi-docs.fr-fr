@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62bec222a3f948612db63c386e10c0afe9762bb4
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d83a57b2b1f8e2ca0887f2432f2de43647900b81
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721429"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020644"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Supprimer votre connexion à un pack de contenu d’organisation Power BI
 
 > [!NOTE]
-> Vous ne pouvez pas créer des packs de contenu d’organisation ou les installer dans les expériences des nouveaux espaces de travail en préversion. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
+> Vous ne pouvez pas créer des packs de contenu d’organisation ou les installer dans les expériences des nouveaux espaces de travail. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
 > 
 
 Un collaborateur créé un pack de contenu. Vous l’avez découvert dans AppSource et ajouté à votre espace de travail Power BI. À présent, vous n’en avez plus besoin.  Comment le supprimer ?

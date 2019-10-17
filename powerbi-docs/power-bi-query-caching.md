@@ -2,20 +2,20 @@
 title: Mise en cache des requêtes dans Power BI Premium
 description: Mise en cache des requêtes dans Power BI Premium
 author: KesemSharabi
-ms.author: maggies
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/16/2019
+ms.date: 10/04/2019
 LocalizationGroup: ''
-ms.openlocfilehash: 489069df43d2c09f6f5551987a61353e095aff7a
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6e68f515581d62b544f1c6b17144e73ea709a62d
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71076174"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020520"
 ---
 # <a name="query-caching-in-power-bi-premiumembedded"></a>Mise en cache des requêtes dans Power BI Premium/Embedded
 
@@ -26,13 +26,13 @@ Les organisations avec Power BI Premium ou Power BI Embedded peuvent tirer part
 
 Les résultats des requêtes mis en cache sont spécifiques au contexte de l’utilisateur et du jeu de données, et respectent toujours les règles de sécurité. Pour l’instant, le service effectue uniquement la mise en cache des requêtes pour la page initiale à laquelle vous accédez. En d’autres termes, les requêtes ne sont pas mises en cache quand vous interagissez avec le rapport. Le cache de requêtes respecte les [signets personnels](consumer/end-user-bookmarks.md#personal-bookmarks) et les [filtres persistants](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) de sorte que les requêtes générées par un rapport personnalisé seront mises en cache. Les [vignettes de tableau de bord](service-dashboard-tiles.md) qui reposent sur les mêmes requêtes tirent également des avantages une fois que la requête est mise en cache. Les performances sont en particulier optimisées quand un jeu de données est fréquemment sollicité et n’a pas besoin d’être souvent actualisé. La mise en cache des requêtes peut également diminuer la charge sur votre capacité Premium/Embedded en réduisant le nombre total de requêtes.
 
-Vous contrôlez le comportement de la mise en cache des requêtes dans la page **Paramètres** pour le jeu de données dans le service Power BI. Deux paramètres sont possibles :
+Vous contrôlez le comportement de la mise en cache des requêtes dans la page **Paramètres** pour le jeu de données dans le service Power BI. Trois paramètres sont possibles :
 
+- **Capacité par défaut** : Mise en cache des requêtes désactivée
 - **Off** (Désactivée) : N’utilisez pas la mise en cache des requêtes pour ce jeu de données.
-
 - **On** (Activée) : Utilisez la mise en cache des requêtes pour ce jeu de données.
 
-![Boîte de dialogue Mise en cache des requêtes](media/power-bi-query-caching/power-bi-query-caching.png)
+    ![Boîte de dialogue Mise en cache des requêtes](media/power-bi-query-caching/power-bi-query-3-options.png)
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 

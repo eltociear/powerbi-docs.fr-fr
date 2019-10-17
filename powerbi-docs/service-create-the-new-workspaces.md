@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715529"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020172"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Créer les nouveaux espaces de travail dans Power BI
 
@@ -68,7 +68,7 @@ Pour plus d’informations, consultez l’article sur les [nouveaux espaces de t
 
 ## <a name="workspace-contact-list"></a>Liste de contacts de l’espace de travail
 
-La nouvelle liste de contacts de l’espace de travail vous permet de spécifier les utilisateurs qui reçoivent une notification concernant les problèmes qui se produisent dans l’espace de travail. Par défaut, tout utilisateur ou groupe spécifié comme administrateur de l’espace de travail est averti, mais vous pouvez personnaliser la liste. Les utilisateurs ou groupes répertoriés dans la liste de contacts seront affichés dans l’interface utilisateur (IU) pour aider les utilisateurs à obtenir de l’aide concernant l’espace de travail.
+Vous pouvez spécifier les utilisateurs qui reçoivent une notification concernant les problèmes qui se produisent dans l’espace de travail. Par défaut, tout utilisateur ou groupe spécifié comme administrateur de l’espace de travail est averti, mais vous pouvez personnaliser la liste en ajouter ces personnes à la *liste des contacts*. Les utilisateurs ou groupes de la liste des contacts apparaissent dans l’interface utilisateur (IU) pour aider les utilisateurs à obtenir de l’aide concernant l’espace de travail.
 
 1. Accédez au nouveau paramètre **Liste de contacts** de l’une des deux manières suivantes :
 
@@ -79,6 +79,9 @@ La nouvelle liste de contacts de l’espace de travail vous permet de spécifier
     ![Paramètres de l’espace de travail](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Sous **Avancé** > **Liste de contacts**, acceptez les **Administrateurs de l'espace de travail** ou ajoutez votre propre liste **Utilisateurs ou groupes spécifiques**. 
+
+    ![Contacts de l’espace de travail](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+
 3. Sélectionnez **Enregistrer**.
 
 ## <a name="workspace-onedrive"></a>OneDrive de l’espace de travail
@@ -103,34 +106,15 @@ Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qu
 
 ### <a name="access-the-workspace-onedrive-location"></a>Accéder à l’emplacement OneDrive de l’espace de travail
 
-Une fois que vous avez configuré l’emplacement OneDrive, vous pouvez y accéder à partir de différents emplacements dans l’espace de travail :
+Après avoir configuré l'emplacement OneDrive, vous y accédez de la même manière que vous accédez aux autres sources de données du service Power BI.
 
-- Sélectionnez **Espaces de travail** > *Nom de l’espace de travail* > Points de suspension( **...** ) > **Fichiers**. 
+1. Dans le volet de navigation de gauche, sélectionnez **Obtenir des données**, puis dans la zone **Fichiers**, choisissez **Obtenir**.
 
-    ![Emplacement des fichiers de l’espace de travail](media/service-new-workspaces/power-bi-new-workspace-files.png)
+    ![Obtenir des données, obtenir des fichiers](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-- Sélectionnez les points de suspension ( **...** ) dans le coin supérieur droit de l’espace de travail > **Fichiers**.
-
-    ![Emplacement des fichiers de l’espace de travail](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-    
-- Dans l’expérience **Obtenir des données** > **Fichiers**. L'entrée **OneDrive - Entreprise** est votre propre OneDrive Entreprise. Le deuxième OneDrive est celui que vous avez ajouté.
+1.  L'entrée **OneDrive - Entreprise** est votre propre OneDrive Entreprise. Le deuxième OneDrive est celui que vous avez ajouté.
 
     ![Emplacement des fichiers de l’espace de travail - Récupérer des données](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
-
-## <a name="add-content-to-your-workspace"></a>Ajouter du contenu à votre espace de travail
-
-Une fois que vous avez créé un espace de travail pour la nouvelle expérience, il est temps d’y ajouter du contenu. L’ajout de contenu est similaire dans les espaces de travail nouveaux et classiques. Utilisez le bouton Créer ou utilisez l’option Obtenir des données pour ajouter du contenu à votre espace de travail.
-
-1. Dans l’écran **Bienvenue** pour votre nouvel espace de travail, vous pouvez ajouter du contenu. 
-
-    ![Écran Bienvenue du nouvel espace de travail](media/service-create-the-new-workspaces/power-bi-workspace-get-data.png)
-
-1. Par exemple, sélectionnez **Exemples** > **Exemple Rentabilité des clients**.
-
-> [!NOTE]
-> Vous ne pouvez pas ajouter de packs de contenu d’organisation ou de packs de contenu tiers aux nouveaux espaces de travail. Des applications sont disponibles pour de nombreux packs de contenu tiers que vous avez utilisés précédemment. Utilisez les espaces de travail classiques si vous devez continuer à utiliser mes packs de contenu. Les packs de contenu sont déconseillés, c’est pourquoi il est recommandé d’utiliser des applications à la place.
-
-Quand vous visualisez du contenu de la liste de contenu dans un espace de travail, le nom de l’espace de travail apparaît en tant que propriétaire.
 
 ### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Connexion à des services tiers dans les nouveaux espaces de travail
 
@@ -142,9 +126,7 @@ Dans la nouvelle expérience d’espace de travail, vous ne pouvez pas créer ni
 
 1. Dans la liste de contenu de l’espace de travail, dans la mesure où vous êtes un administrateur, vous voyez une nouvelle action, **Accéder**.
 
-    ![Liste de contenu des espaces de travail](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-
-1. Sélectionnez **Accéder**.
+    ![Liste de contenu des espaces de travail](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
 1. Ajoutez des groupes de sécurité, des listes de distribution, des groupes Office 365 ou des personnes individuelles à ces espaces de travail en tant que membres, contributeurs ou administrateurs. Consultez [Rôles dans les nouveaux espaces de travail](service-new-workspaces.md#roles-in-the-new-workspaces) pour une explication des différents rôles.
 

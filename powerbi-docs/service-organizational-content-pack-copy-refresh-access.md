@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c369d8f0d342aebcb3625b289472089412ef7cee
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 86fa7a7845686fd46e9d58ea138bdddd47a0a097
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61227733"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019625"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Packs de contenu d’organisation : Copier, actualiser et obtenir l’accès
 
@@ -24,7 +24,7 @@ Quand un pack de contenu d’organisation est publié, tous les destinataires vo
 La création de packs de contenu est différente du partage de tableaux de bord ou de la collaboration sur ces derniers dans un groupe. Pour déterminer l’option la plus adaptée à votre situation, consultez [Comment partager des tableaux de bord, rapports et vignettes ?](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 > [!NOTE]
-> Vous ne pouvez pas créer ou installer des packs de contenu d’organisation dans les expériences des nouveaux espaces de travail en préversion. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
+> Vous ne pouvez pas créer ou installer des packs de contenu d’organisation dans les expériences des nouveaux espaces de travail. C’est donc le bon moment pour mettre à niveau vos packs de contenu vers des applications, si vous n’avez pas encore commencé à le faire. Découvrez plus d’informations sur [l’expérience des nouveaux espaces de travail](service-create-the-new-workspaces.md).
 >
 
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Créer une copie d’un pack de contenu d’organisation

@@ -1,25 +1,25 @@
 ---
 title: Power BI pour les concepteurs de rapports
-description: Vous vous connectez à des données, concevez des requêtes et créez des rapports et des tableaux de bord dans Power BI ? Vous êtes développeur et créez vos propres applications, ou vous êtes administrateur Power BI ?
+description: Vous vous connectez à des données, concevez des requêtes et créez des rapports et des tableaux de bord dans Power BI ? Vous êtes administrateur Power BI ?
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page
-ms.date: 03/20/2019
+ms.date: 10/07/2019
 ms.author: maggies
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 2ec8f0813807e2b92983398a74a02d46e6d4f280
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4defed78228805a3f61447def82b3c3d406103d3
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271786"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239900"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI pour les concepteurs de rapports
 
-Vous vous connectez à des données, concevez des requêtes et créez des rapports et des tableaux de bord dans Power BI ? Vous êtes développeur et créez vos propres applications ? Vous administrez Power BI ? Ces ressources vont vous aider à devenir opérationnel. Bienvenue !
+Vous vous connectez à des données, concevez des requêtes et créez des rapports et des tableaux de bord dans Power BI ? Vous administrez Power BI ? Ces ressources vont vous aider à devenir opérationnel. Bienvenue !
 
 Vous êtes plus consommateur de Power BI ? Bienvenue à vous aussi. Nous vous suggérons de commencer par [Power BI pour les consommateurs](consumer/power-bi-consumer-landing.md).
 
@@ -157,46 +157,6 @@ Vous êtes plus consommateur de Power BI ? Bienvenue à vous aussi. Nous vous s
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">Comment collaborer et partager ?</a><br/>
                                                 <a href="service-create-workspaces.md">Espaces de travail d’application dans le service Power BI</a> 
-                                    </div> 
-                              </div> 
-                        </div> 
-                  </div> 
-            </li>
-            <li> 
-                  <div class="cardSize"> 
-                        <div class="cardPadding"> 
-                              <div class="card"> 
-                                    <div class="cardImageOuter">
-                                          <div class="cardImage">
-                                                <img alt="Develop for Power BI" src="media/power-bi-creator-landing/power-bi-designer-develop-power-bi.svg" data-linktype="relative-path">
-                                          </div>
-                                    </div>
-                                    <div class="cardText"> 
-                                          <h3>Développer pour Power BI</h3> 
-                                          <p></p>
-                                                <a href="developer/embedding.md">Incorporation avec Power BI</a><br/> 
-                                                <a href="developer/custom-visual-develop-tutorial.md">Développer des visuels personnalisés</a><br/> 
-                                                <a href="https://docs.microsoft.com/rest/api/power-bi">API REST Power BI</a>
-                                    </div> 
-                              </div> 
-                        </div> 
-                  </div> 
-            </li>
-            <li> 
-                  <div class="cardSize"> 
-                        <div class="cardPadding"> 
-                              <div class="card"> 
-                                    <div class="cardImageOuter">
-                                          <div class="cardImage">
-                                                <img alt="Administer Power BI" src="media/power-bi-creator-landing/power-bi-designer-administer-power-bi.svg" data-linktype="relative-path">
-                                          </div>
-                                    </div>
-                                    <div class="cardText"> 
-                                          <h3>Administrer Power BI</h3> 
-                                          <p></p>
-                                                <a href="service-admin-administering-power-bi-in-your-organization.md">Présentation de l’administration de Power BI</a><br/> 
-                                                <a href="service-admin-purchasing-power-bi-pro.md">Acheter des licences Power BI Pro</a><br/>
-                                                <a href="service-admin-reference.md">Applets de commande PowerShell, API REST et kit SDK .NET</a>
                                     </div> 
                               </div> 
                         </div> 

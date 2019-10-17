@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 32b9adc92222e2122aff41d7ef7ef351c3158951
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903848"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020249"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Créer des espaces de travail classiques dans Power BI
 
@@ -90,11 +90,11 @@ Les applications sont l’évolution des packs de contenu d’organisation. Si v
 * Quand des utilisateurs professionnels installent un pack de contenu, celui-ci perd son identité groupée : il s’agit simplement d’une liste de tableaux de bord et de rapports entremêlés avec d’autres tableaux de bord et rapports. En revanche, les applications conservent leur regroupement et leur identité même après installation. Les utilisateurs peuvent ainsi continuer à y accéder facilement au fil du temps.
 * Vous pouvez créer plusieurs packs de contenu à partir de tout espace de travail, mais une application a une relation un-à-un avec son espace de travail. 
 * Étant donné que nous prévoyons de déconseiller progressivement les packs de contenu d’organisation, nous vous recommandons de commencer à créer des applications dès à présent.  
-* Avec la préversion de la nouvelle expérience des espaces de travail, nous effectuons les premières étapes vers la dépréciation des packs de contenu d’organisation. Vous ne pouvez pas les consommer ou les créer dans les espaces de travail en préversion.
+* Avec la nouvelle expérience des espaces de travail, nous effectuons les premières étapes vers la dépréciation des packs de contenu d’organisation. Vous ne pouvez pas les consommer ou les créer dans les espaces de travail.
 
 Consultez [Quelles sont les différences entre les espaces de travail nouveaux et existants ?](service-new-workspaces.md#how-the-new-workspaces-are-different) pour comparer les deux. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Installer et utiliser des applications dans Power BI](service-create-distribute-apps.md)
-- [Créer de nouveaux espaces de travail (préversion)](service-create-the-new-workspaces.md)
+- [Créer de nouveaux espaces de travail](service-create-the-new-workspaces.md)
 * Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)

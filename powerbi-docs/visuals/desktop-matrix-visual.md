@@ -10,17 +10,20 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2f50a6fc9fccc35333257caaf3efeb8185c8caff
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 0015921990bb35a7ac5e6652b018ef16485e5b9c
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390363"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164619"
 ---
 # <a name="use-the-matrix-visual-in-power-bi"></a>Utiliser le visuel de matrice dans Power BI
-Le visuel **matrice** est similaire à une **table**.  Une table prend en charge deux dimensions et les données sont plates, ce qui signifie que les valeurs dupliquées sont affichées et non agrégées. Une matrice facilite l’affichage des données de manière claire entre plusieurs dimensions : elle prend en charge une disposition échelonnée. La matrice agrège automatiquement les données et permet de descendre dans la hiérarchie. 
 
-Vous pouvez créer des visuels de matrice dans des rapports **Power BI Desktop** et **de service Power BI** ainsi que de mettre en évidence des éléments au sein de la matrice en les croisant avec d’autres visuels sur cette page de rapports. Par exemple, vous pouvez sélectionner des lignes, des colonnes, et même des cellules individuelles pour les mettre en évidence croisée. De même, les sélections de cellules individuelles et de plusieurs cellules peuvent être copiées et collées dans d’autres applications. 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+Le visuel Matrice est similaire à une table.  Une table prend en charge deux dimensions et les données sont plates, ce qui signifie que les valeurs dupliquées sont affichées et non agrégées. Une matrice facilite l’affichage des données de manière claire entre plusieurs dimensions : elle prend en charge une disposition échelonnée. La matrice agrège automatiquement les données et permet de descendre dans la hiérarchie. 
+
+Vous pouvez créer des visuels de matrice dans des rapports **Power BI Desktop** et mettre en évidence des éléments au sein de la matrice en les croisant avec d’autres visuels sur cette page de rapports. Par exemple, vous pouvez sélectionner des lignes, des colonnes, et même des cellules individuelles pour les mettre en évidence croisée. De même, les sélections de cellules individuelles et de plusieurs cellules peuvent être copiées et collées dans d’autres applications. 
 
 ![matrice croisée mise en surbrillance et graphique en anneau](media/desktop-matrix-visual/matrix-visual_2a.png)
 
@@ -29,7 +32,7 @@ De nombreuses fonctionnalités sont associées à la matrice, que nous allons pa
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Comprendre comment Power BI calcule les totaux
 
-Avant de passer à l’utilisation du visuel **Matrice**, il est important d’apprendre comment Power BI calcule les valeurs des totaux et des sous-totaux dans les tables et les matrices. Pour les lignes des totaux et des sous-totaux, Power BI évalue la mesure sur toutes les lignes dans les données sous-jacentes : il ne s’agit pas d’une simple addition des valeurs des lignes visibles ou affichées. Les valeurs obtenues dans la ligne du total peuvent donc être différentes de ce à quoi on pourrait s’attendre.
+Avant de passer à l’utilisation du visuel Matrice, il est important d’apprendre comment Power BI calcule les valeurs des totaux et des sous-totaux dans les tables et les matrices. Pour les lignes des totaux et des sous-totaux, Power BI évalue la mesure sur toutes les lignes dans les données sous-jacentes : il ne s’agit pas d’une simple addition des valeurs des lignes visibles ou affichées. Les valeurs obtenues dans la ligne du total peuvent donc être différentes de ce à quoi on pourrait s’attendre.
 
 Regardez les visuels de matrice suivants. 
 
@@ -83,7 +86,7 @@ Outre l’utilisation de ces icônes, vous pouvez sélectionner une de ces en-t�
 
 Notez que ce menu affiche quelques options qui produisent des résultats différents :
 
-La sélection de l’option **Descendre dans la hiérarchie** a pour effet de développe la matrice pour *ce* niveau de ligne *en excluant* tous les autres en-têtes de ligne à l’exception de celui qui était sélectionné. Dans l’image suivante, **Proposition** > **Descendre dans la hiérarchie** a été sélectionné. Vous pouvez constater que d’autres lignes de niveau supérieur n’apparaissent plus dans la matrice. Cette manière d’explorer est utile et s’avèrera particulièrement appréciable lorsque nous aborderons la section **Sélection croisée**.
+La sélection de l’option **Descendre dans la hiérarchie** a pour effet de développe la matrice pour *ce* niveau de ligne *en excluant* tous les autres en-têtes de ligne à l’exception de celui qui était sélectionné. Dans l’image suivante, **Proposition** > **Descendre dans la hiérarchie** a été sélectionné. Vous pouvez constater que d’autres lignes de niveau supérieur n’apparaissent plus dans la matrice. Cette manière d’explorer est utile et s’avèrera particulièrement appréciable lorsque nous aborderons la section Sélection croisée.
 
 ![la matrice de descente d’un niveau dans la hiérarchie](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
@@ -100,7 +103,7 @@ Vous pouvez également utiliser l’élément de menu **Développer** pour contr
 ![Matrice après avoir appliqué Développer à la proposition](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### <a name="drill-down-on-column-headers"></a>Descendre dans la hiérarchie sur des en-têtes de colonne
-Tout comme sur des lignes, nous pouvons descendre dans la hiérarchie sur des **colonnes**. Dans l’image suivante, la zone du champ **Colonnes** comprend deux champs, ce qui crée une hiérarchie similaire à celle que nous avons utilisée pour les lignes plus haut dans cet article. Dans le puits du champ **colonnes**, nous avons *Région* et *Segment*. Dès que le deuxième champ a été ajouté à **Colonnes**, un nouveau menu déroulant affiché sur le visuel, il affiche actuellement **Lignes**.
+Tout comme sur des lignes, nous pouvons descendre dans la hiérarchie sur des colonnes. Dans l’image suivante, la zone du champ **Colonnes** comprend deux champs, ce qui crée une hiérarchie similaire à celle que nous avons utilisée pour les lignes plus haut dans cet article. Dans le puits du champ **colonnes**, nous avons *Région* et *Segment*. Dès que le deuxième champ a été ajouté à **Colonnes**, un nouveau menu déroulant affiché sur le visuel, il affiche actuellement **Lignes**.
 
 ![Matrice après l’ajout de la deuxième valeur de colonne](media/desktop-matrix-visual/power-bi-matrix-row.png)
 
@@ -108,7 +111,7 @@ Pour Explorer sur les colonnes, sélectionnez **Colonnes** à partir du menu *Ex
 
 ![menu pour descendre dans la hiérarchie des colonnes](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
-Lorsque vous sélectionnez **Descendre dans la hiérarchie**, le niveau suivant de la hiérarchie de colonne pour *Région > Est* s’affiche, en l’occurrence *Nombre d’opportunités*. L’autre région s’affiche, mais est grisée.
+Lorsque vous sélectionnez **Descendre dans la hiérarchie**, le niveau suivant de la hiérarchie de colonne pour *Région > Est* s’affiche, en l’occurrence *Nombre d’opportunités*. L'autre région est masquée.
 
 ![matrice avec colonne Descendre d’un niveau dans la hiérarchie](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
@@ -119,21 +122,21 @@ Les autres éléments du menu opèrent sur les colonnes de la même manière que
 
 ## <a name="stepped-layout-with-matrix-visuals"></a>Disposition échelonnée avec des visuels de matrice
 
-Le visuel **Matrice** met automatiquement en retrait les sous-catégories dans une hiérarchie sous chaque parent. C’est ce qu’on appelle une **Disposition échelonnée**.
+Le visuel Matrice met automatiquement en retrait les sous-catégories dans une hiérarchie sous chaque parent. C’est ce qu’on appelle une disposition échelonnée.
 
-Dans la version d’origine du visuel de matrice, les sous-catégories s’affichaient dans une colonne tout à fait distincte, occupant beaucoup plus d’espace que le visuel. L’image suivante présente le tableau dans le visuel **Matrice** d’origine. Vous pouvez constater que les sous-catégories apparaissent dans une colonne distincte.
+Dans la version d’origine du visuel de matrice, les sous-catégories s’affichaient dans une colonne tout à fait distincte, occupant beaucoup plus d’espace que le visuel. L’image suivante présente le tableau dans le visuel Matrice d’origine. Vous pouvez constater que les sous-catégories apparaissent dans une colonne distincte.
 
 ![Capture d’écran de l’ancien visuel de matrice montrant les sous-catégories dans une colonne distincte.](media/desktop-matrix-visual/matrix-visual_14.png)
 
-Dans l’image suivante, vous voyez un visuel **Matrice** avec une **Disposition échelonnée** en action. Notez que les sous-catégories (Accessoires d’ordinateur, Ordinateurs de bureau, ordinateurs portables, Moniteurs, etc.) de la catégorie *Ordinateurs* apparaissent légèrement en retrait, produisant un visuel plus clair et plus concentré.
+Dans l’image suivante, vous voyez un visuel Matrice avec une disposition échelonnée en action. Notez que les sous-catégories (Accessoires d’ordinateur, Ordinateurs de bureau, ordinateurs portables, Moniteurs, etc.) de la catégorie *Ordinateurs* apparaissent légèrement en retrait, produisant un visuel plus clair et plus concentré.
 
 ![mode de formatage actuel des données par la matrice](media/desktop-matrix-visual/matrix-visual_13.png)
 
-Vous pouvez aisément ajuster les paramètres de la disposition échelonnée. Le visuel **Matrice** étant sélectionné, dans la section **Format** (icône de rouleau à peinture) du volet **Visualisations**, développez la section **En-têtes de ligne**. Vous avez deux options : la bascule **Disposition échelonnée** (qui active ou désactive cette option) et le **retrait de la disposition échelonnée** (qui spécifie l’importance du retrait en pixels).
+Vous pouvez aisément ajuster les paramètres de la disposition échelonnée. Le visuel Matrice étant sélectionné, dans la section **Format** (icône de rouleau à peinture) du volet **Visualisations**, développez la section En-têtes de ligne. Vous avez deux options : le commutateur de disposition échelonnée (qui active ou désactive cette option) et le retrait de la disposition échelonnée (qui spécifie l’importance du retrait en pixels).
 
 ![Carte d’en-têtes de lignes affichant le contrôle de disposition échelonnée](media/desktop-matrix-visual/power-bi-stepped-matrix.png)
 
-Si vous désactivez l’option **Disposition échelonnée**, Power BI affiche les sous-catégories dans une autre colonne au lieu de s’afficher en retrait sous la catégorie parente.
+Si vous désactivez la disposition échelonnée, Power BI affiche les sous-catégories dans une autre colonne au lieu de s’afficher en retrait sous la catégorie parente.
 
 ## <a name="subtotals-with-matrix-visuals"></a>Sous-totaux avec les visuels Matrice
 
@@ -141,7 +144,7 @@ Vous pouvez activer ou désactiver des sous-totaux dans les visuels Matrice, aus
 
 ![matrice montrant les totaux et les sous-totaux](media/desktop-matrix-visual/matrix-visual_20.png)
 
-Dans la section **Format** du volet **Visualisations**, développez la carte **Sous-totaux** et définissez le curseur **Sous-totaux des lignes** sur **Off (Désactivé)** . Lorsque vous procédez ainsi, les sous-totaux ne sont pas affichés.
+Dans la section Format du volet Visualisations, développez la carte **Sous-totaux** et définissez le curseur des sous-totaux des lignes sur **Off (Désactivé)** . Lorsque vous procédez ainsi, les sous-totaux ne sont pas affichés.
 
 ![matrice avec sous-totaux désactivés](media/desktop-matrix-visual/matrix-visual_21.png)
 
@@ -149,16 +152,15 @@ Le même processus s’applique pour les sous-totaux des colonnes.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Sélection croisée avec des visuels de matrice
 
-Avec le visuel **Matrice**, tous les éléments de la matrice peuvent être sélectionnés comme base pour une sélection croisée. Lorsque vous sélectionnez une colonne dans une **Matrice**, Power BI met cette colonne en surbrillance, comme tous les autres visuels sur la page de rapport. Ce type de sélection croisée est une fonctionnalité courante d’autres visuels et sélections de point de données et est à présent également disponible pour le visuel **Matrice**.
+Avec le visuel Matrice, tous les éléments de la matrice peuvent être sélectionnés comme base pour une sélection croisée. Lorsque vous sélectionnez une colonne dans une Matrice, Power BI met cette colonne en surbrillance, comme tous les autres visuels sur la page de rapport. Ce type de sélection croisée est une fonctionnalité courante d’autres visuels et sélections de points de données et est à présent également disponible pour le visuel Matrice.
 
-De plus, la combinaison Ctrl+Clic fonctionne également pour la sélection croisée. Par exemple, dans l’image suivante, une collection de sous-catégories a été sélectionnée dans le visuel **Matrice**. Notez comment les éléments non sélectionnés dans le visuel sont grisés, et comment les autres visuels de la page reflètent les sélections opérées dans le visuel **Matrice**.
+De plus, la combinaison Ctrl+Clic fonctionne également pour la sélection croisée. Par exemple, dans l’image suivante, une collection de sous-catégories a été sélectionnée dans le visuel Matrice. Notez comment les éléments non sélectionnés dans le visuel sont grisés, et comment les autres visuels de la page reflètent les sélections opérées dans le visuel Matrice.
 
-![Capture d’écran du visuel de matrice, ainsi que deux autres visuels illustrant la fonction Ctrl + clic pour la sélection croisée.](media/desktop-matrix-visual/matrix-visual_16.png)
+![Capture d’écran du visuel Matrice, ainsi que deux autres visuels illustrant la fonction Ctrl + clic pour la sélection croisée.](media/desktop-matrix-visual/matrix-visual_16.png)
 
 ## <a name="copying-values-from-power-bi-for-use-in-other-applications"></a>Copie des valeurs à partir de Power BI pour une utilisation dans d’autres applications
 
 Votre matrice ou votre table peuvent avoir du contenu que vous souhaitez utiliser dans d’autres applications : Dynamics CRM, Excel et autres rapports de Power BI. Avec le clic droit Power BI, vous pouvez copier une cellule unique ou une sélection de cellules dans votre Presse-papiers. Ensuite, collez-les dans l’autre application.
-
 
 
 * Pour copier la valeur d’une cellule unique, sélectionnez la cellule, cliquez avec le bouton droit, puis choisissez **Copier la valeur**. Avec la valeur de cellule non mise en forme dans votre Presse-papiers, vous pouvez maintenant la coller dans une autre application.
@@ -175,8 +177,16 @@ Votre matrice ou votre table peuvent avoir du contenu que vous souhaitez utilise
 
     ![Capture d’écran montrant des lignes et des colonnes d’Excel avec les valeurs collés dedans.](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
+* Pour créer une copie du visuel lui-même ne contenant que les cellules sélectionnées, sélectionnez une ou plusieurs cellules à l’aide de la touche CTRL, cliquez avec le bouton droit de la souris, puis choisissez **Copier le visuel**
+
+    ![Capture d'écran montrant l'option de copie du visuel](media/desktop-matrix-visual/power-bi-copy-visual.png)
+
+* La copie sera une autre visualisation matricielle, mais ne contiendra que vos données copiées.
+
+    ![Capture d'écran montrant un exemple visuel de la copie](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Couleurs d’ombrage et de police avec les visuels Matrice
-Avec le visuel de matrice, vous pouvez appliquer la **Mise en forme conditionnelle** (couleurs et ombrage ainsi que barres de données) à l’arrière-plan des cellules de la matrice et une mise en forme conditionnelle au texte et aux valeurs elles-mêmes.
+Avec le visuel de matrice, vous pouvez appliquer la mise en forme conditionnelle (couleurs et ombrage ainsi que barres de données) à l’arrière-plan des cellules de la matrice et une mise en forme conditionnelle au texte et aux valeurs elles-mêmes.
 
 Pour appliquer la mise en forme conditionnelle, sélectionnez le visuel de matrice et ouvrez le volet **Mise en forme**. Développez la carte **Mise en forme conditionnelle** et, pour **Couleur d’arrière-plan**, **Couleur de police** ou **Barres de données**, mettez le curseur sur **Activé**. Activer l’une de ces options a pour effet d’afficher un lien pour *Contrôles avancés*, qui vous permet de personnaliser les couleurs et les valeurs de la mise en forme des couleurs.
   

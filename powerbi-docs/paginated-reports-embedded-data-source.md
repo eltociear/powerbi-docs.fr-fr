@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270847"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020808"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Créer une source de données incorporée pour rapports paginés dans le service Power BI
 
@@ -76,21 +76,21 @@ Les rapports paginés qui se connectent aux jeux de données Power BI suivent le
 
 - .rdl dans le même espace de travail en tant que jeu de données (même propriétaire) : Pris en charge
 - .rdl dans un espace de travail différent en tant que jeu de données (même propriétaire) : Pris en charge
-- .rdl partagé : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
-- Application partagée : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- .rdl partagé : Vous devez affecter une autorisation de génération pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- Application partagée : Vous devez affecter une autorisation de génération pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
 - .rdl dans le même espace de travail en tant que jeu de données (utilisateur différent) : Pris en charge
-- .rdl dans différent espace de travail en tant que jeu de données (utilisateur différent). Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
-- Sécurité au niveau des rôles : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données pour qu’il soit appliqué.
+- .rdl dans différent espace de travail en tant que jeu de données (utilisateur différent). Vous devez affecter une autorisation de génération à chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- Sécurité au niveau des rôles : Vous devez affecter une autorisation de génération à chaque utilisateur qui affiche le rapport au niveau du jeu de données pour qu’il soit appliqué.
 
 ### <a name="new-experience-apps-and-app-workspaces"></a>Nouvelles applications et espaces de travail d’expérience
 
 - .rdl dans le même espace de travail en tant que jeu de données : Pris en charge
 - .rdl dans un espace de travail différent en tant que jeu de données (même propriétaire) : Pris en charge
-- .rdl partagé : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
-- Application partagée : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- .rdl partagé : Vous devez affecter une autorisation de génération pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- Application partagée : Vous devez affecter une autorisation de génération pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
 - .rdl dans le même espace de travail en tant que jeu de données (utilisateur différent) - Pris en charge
-- .rdl dans un espace de travail différent en tant que jeu de données (utilisateur différent) : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
-- Sécurité au niveau des rôles : Vous devez créer des autorisations affectées pour chaque utilisateur qui affiche le rapport au niveau du jeu de données pour qu’il soit appliqué
+- .rdl dans un espace de travail différent en tant que jeu de données (utilisateur différent) : Vous devez affecter une autorisation de génération pour chaque utilisateur qui affiche le rapport au niveau du jeu de données
+- Sécurité au niveau des rôles : Vous devez affecter une autorisation de génération à chaque utilisateur qui affiche le rapport au niveau du jeu de données pour qu’il soit appliqué
 
 ## <a name="next-steps"></a>Étapes suivantes
 

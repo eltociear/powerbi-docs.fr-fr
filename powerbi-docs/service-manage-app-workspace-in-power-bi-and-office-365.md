@@ -7,22 +7,22 @@ ms.reviewer: lukasz
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 09/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 218124542570d313c3d5893a6f1d69c75594f33c
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 77be33787599cfbb50916093d0445cf586511d90
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903775"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020756"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Gérer l’espace de travail de votre application dans Power BI et Office 365
 
 En tant que créateur ou administrateur d’un [espace de travail d’application dans Power BI](service-create-distribute-apps.md) ou dans Office 365, vous gérez certains aspects de l’espace de travail dans Power BI. Vous en gérez d’autres dans Office 365.
 
 > [!NOTE]
-> L’expérience des nouveaux espaces de travail en préversion change la relation entre les espaces de travail Power BI et les groupes Office 365. Vous ne créez plus automatiquement un groupe Office 365 chaque fois que vous créez un nouvel espace de travail. Pour plus d’informations, consultez [Création des nouveaux espaces de travail](service-create-the-new-workspaces.md).
+> L’expérience des nouveaux espaces de travail change la relation entre les espaces de travail Power BI et les groupes Office 365. Vous ne créez plus automatiquement un groupe Office 365 chaque fois que vous créez un nouvel espace de travail. Pour plus d’informations, consultez [Création des nouveaux espaces de travail](service-create-the-new-workspaces.md).
 
 Dans **Power BI**, vous pouvez :
 

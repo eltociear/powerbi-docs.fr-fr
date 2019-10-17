@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/17/2019
+ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7ee083de9800b55c4f7d998a113c1a63df112b7b
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 269b495a41f193c6a2ba02fa75f171c3b5789689
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624020"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019615"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduction aux tableaux de bord pour les concepteurs Power BI
 
@@ -29,9 +29,6 @@ Les tableaux de bord sont une fonctionnalité du service Power BI. Ils ne sont 
 
 Les visualisations que vous voyez sur le tableau de bord sont appelées des *vignettes*. Vous *épinglez* les vignettes provenant de rapports à un tableau de bord. Si vous débutez dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Concepts de base pour les concepteurs dans le service Power BI](service-basic-concepts.md).
 
-> [!IMPORTANT]
-> Vous devez être titulaire d’une licence [Power BI Pro](service-free-vs-pro.md) pour créer des tableaux de bord.
-
 Les visualisations sur un tableau de bord proviennent de rapports, et chaque rapport est basé sur un jeu de données. Un tableau de bord est en quelque sorte une porte d’accès aux rapports et aux jeux de données sous-jacents. La sélection d’une visualisation vous amène au rapport et au jeu de données sur lesquels elle est basée.
 
 ![Diagramme montrant la relation entre les tableaux de bord, les rapports, les jeux de données](media/service-dashboards/power-bi-diagram.png)
@@ -41,6 +38,13 @@ Les tableaux de bord constituent un moyen formidable de superviser votre activit
 
 Un tableau de bord n’est pas qu’une jolie image. Il est extrêmement interactif, les vignettes se mettent à jour dès que changent les données sous-jacentes.
 
+## <a name="who-can-create-a-dashboard"></a>Qui peut créer un tableau de bord ?
+La capacité de créer un tableau de bord est une fonctionnalité de *créateur* qui nécessite des autorisations de modification du rapport. Ces autorisations sont réservées aux créateurs de rapports et aux collègues à qui les premiers ont accordé l’accès. Par exemple, si David crée un rapport dans workspaceABC et vous ajoute comme membre de cet espace de travail, David et vous aurez tous deux des autorisations de modification. Si, à l’inverse, le rapport a été partagé avec vous directement ou dans le cadre d’une [application Power BI](service-create-distribute-apps.md), vous êtes *consommateur* du rapport. Vous ne pourrez pas épingler de vignettes à un tableau de bord. 
+
+> [!IMPORTANT]
+> Vous devez être titulaire d’une licence [Power BI Pro](service-free-vs-pro.md) pour créer des tableaux de bord dans des espaces de travail. Vous pouvez créer des tableaux de bord dans votre propre espace de travail sans licence Power BI Pro.
+
+
 ## <a name="dashboards-versus-reports"></a>Tableaux de bord et rapports
 Les [rapports](service-reports.md) et les tableaux de bord semblent similaires, car ils sont tous les deux des canevas composés de visualisations. Mais il existe des différences majeures, comme vous pouvez le voir dans le tableau suivant.
 
@@ -49,7 +53,7 @@ Les [rapports](service-reports.md) et les tableaux de bord semblent similaires, 
 | Pages |Une seule page |Une ou plusieurs pages |
 | Sources de données |Un ou plusieurs rapports et un ou plusieurs jeux de données par tableau de bord |Un seul jeu de données par rapport |
 | Disponible dans Power BI Desktop |Non | Oui. Possibilité de créer et d’afficher des rapports dans Power BI Desktop |
-| S’abonner |Oui. Possibilité de s’abonner à un tableau de bord |Oui. Possibilité de s’abonner à une page de rapport |
+| S'abonner |Oui. Possibilité de s’abonner à un tableau de bord |Oui. Possibilité de s’abonner à une page de rapport |
 | Filtrage |Non. Impossible de filtrer ou découper |Oui. Différentes manières de filtrer, mettre en surbrillance et découper |
 | Sélection |Oui. Possibilité de définir un tableau de bord comme tableau de bord *par défaut* |Non |
 | Favori | Oui. Possibilité de définir plusieurs tableaux de bord comme *Favoris* | Oui. Possibilité de définir plusieurs rapports comme *Favoris*

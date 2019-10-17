@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305764"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020220"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publier une application dans Power BI
 
@@ -30,7 +30,7 @@ Les utilisateurs en entreprise obtiennent vos applications de différentes mani�
 - Vous pouvez leur envoyer un lien direct.
 - Vous pouvez l’installer automatiquement dans les comptes Power BI de vos collègues si l’administrateur Power BI vous y autorise.
 
-Vous pouvez créer l’application avec sa propre navigation intégrée afin de permettre à vos utilisateurs d’explorer facilement votre contenu. Ils ne peuvent pas modifier le contenu de l’application. Ils peuvent interagir avec lui dans le service Power BI ou dans l’une des applications mobiles, en filtrant, en mettant en surbrillance et en triant eux-mêmes les données. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Vous pouvez aussi leur attribuer des autorisations de génération pour se connecter aux jeux de données sous-jacents et créer des copies des rapports dans l’application. Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Vous pouvez créer l’application avec sa propre navigation intégrée afin de permettre à vos utilisateurs d’explorer facilement votre contenu. Ils ne peuvent pas modifier le contenu de l’application. Ils peuvent interagir avec lui dans le service Power BI ou dans l’une des applications mobiles, en filtrant, en mettant en surbrillance et en triant eux-mêmes les données. Ils obtiennent les mises à jour automatiquement, et vous pouvez contrôler la fréquence à laquelle les données sont actualisées. Vous pouvez aussi leur attribuer une autorisation de génération pour se connecter aux jeux de données sous-jacents et créer des copies des rapports dans l’application. Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md).
 
 ## <a name="licenses-for-apps"></a>Licences pour des applications
 Pour créer ou mettre à jour une application, vous devez être titulaire d’une licence Power BI Pro. Pour les *consommateurs* d’une application, il existe deux options.
@@ -166,7 +166,7 @@ Quand vous cochez l’option permettant d’**autoriser les utilisateurs à se c
 - Rechercher ces jeux de données dans Power BI Desktop et dans l’expérience d’obtention de données du service Power BI.
 - Créer des rapports et des tableaux de bord basés sur ces jeux de données.
 
-Quand vous décochez cette option, les nouveaux utilisateurs que vous ajoutez à l’application n’obtiennent pas l’autorisation de génération. En revanche, pour les utilisateurs existants de l’application, les autorisations sur les jeux de données sous-jacents ne changent pas. Vous pouvez retirer manuellement l’autorisation de génération aux utilisateurs de l’application qui ne doivent plus en bénéficier. Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Quand vous décochez cette option, les nouveaux utilisateurs que vous ajoutez à l’application n’obtiennent pas l’autorisation de génération. En revanche, pour les utilisateurs existants de l’application, les autorisations sur les jeux de données sous-jacents ne changent pas. Vous pouvez retirer manuellement l’autorisation de génération aux utilisateurs de l’application qui ne doivent plus en bénéficier. Découvrez plus en détail l’[autorisation de génération](service-datasets-build-permissions.md).
 
 ## <a name="allow-users-to-copy-reports"></a>Autoriser les utilisateurs à copier des rapports
 

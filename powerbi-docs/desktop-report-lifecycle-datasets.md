@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f3c72de197203adcad1020bc244ff0bc215e10bd
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: e213bad8e7267abe0b49d1f460717dd817e9832a
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164476"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020481"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop
 Vous pouvez établir une connexion active à un jeu de données partagé dans le service Power BI, et créer de nombreux rapports différents à partir du même jeu de données. Cela signifie que vous pouvez créer votre modèle de données idéal dans Power BI Desktop et le publier sur le service Power BI. Ensuite, vos coéquipiers et vous-même pouvez créer plusieurs rapports différents (dans des fichiers .pbix distincts) à partir de ce modèle de données commun, et les enregistrer dans différents espaces de travail. Cette fonctionnalité est appelée **Connexion active du service Power BI**.
@@ -35,7 +35,7 @@ Supposons qu’Anna (analyste d’entreprise) fait partie de votre équipe et qu
 Tout le monde apprécie son rapport et son jeu de données, et cela peut occasionner un problème. En effet, tous les membres de son équipe peuvent tenter de créer *leur propre version* de ce jeu de données, puis partager leur propre rapport avec l’équipe. Soudainement, il y a une multitude de rapports (basés sur des jeux de données différents) au sein de l’espace de travail de votre équipe dans le **service Power BI**. Quel est le plus récent ? Les jeux de données utilisés sont-ils identiques, ou seulement presque identiques ? Quelles sont les différences ? La fonctionnalité **Connexion active du service Power BI** peut changer tout cela pour mieux. La section suivante explique comment d’autres personnes peuvent utiliser le jeu de données d’Annette pour créer leurs propres rapports, dans leurs propres espaces de travail, et permettre à chacun d’utiliser le même jeu de données solide, vérifié et publié pour générer leurs rapports uniques.
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Se connecter à un jeu de données du service Power BI à l’aide d’une connexion active
-Après avoir créé un rapport (et le jeu de données sur lequel il est basé), Anna publie celui-ci sur le **service Power BI**. Le rapport s’affiche alors dans l’espace de travail de son équipe sur le service Power BI. Si elle l’enregistre dans un *espace de travail de nouvelle expérience*, elle peut définir l’autorisation Générer pour le rendre accessible en lecture et à l’utilisation à tout le monde dans et en dehors de son espace de travail.
+Après avoir créé un rapport (et le jeu de données sur lequel il est basé), Anna publie celui-ci sur le **service Power BI**. Le rapport s’affiche alors dans l’espace de travail de son équipe sur le service Power BI. Si elle l’enregistre dans un *espace de travail de nouvelle expérience*, elle peut définir l’autorisation de génération pour le rendre accessible en lecture et à l’utilisation à tout le monde dans et en dehors de son espace de travail.
 
 Pour en savoir plus sur les espaces de travail de nouvelle expérience, consultez [Espaces de travail d’application](service-new-workspaces.md).
 
@@ -76,7 +76,7 @@ Une fois la publication terminée, **Power BI Desktop** vous indique la réussit
 
 Maintenant que votre rapport avec son jeu de données se trouve dans le service Power BI, vous pouvez également le *promouvoir* afin d’attester de sa qualité et de sa fiabilité. Vous pouvez même demander qu’il soit *certifié* par une autorité centrale dans votre locataire Power BI. Avec l’une de ces approbations, votre jeu de données apparaît toujours en haut de la liste quand des utilisateurs recherchent des jeux de données. Si vous le souhaitez, vous pouvez en savoir plus sur le processus de [promotion de votre jeu de données](service-datasets-promote.md). 
 
-La dernière étape consiste à définir l’*autorisation Générer* pour le jeu de données sur lequel le rapport est basé. L’autorisation Générer détermine qui peut voir et utiliser votre jeu de données. Vous pouvez la définir dans l’espace de travail proprement dit, ou quand vous partagez une application à partir de l’espace de travail. Apprenez-en davantage sur la configuration de l’[autorisation Générer](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+La dernière étape consiste à définir l’*autorisation Générer* pour le jeu de données sur lequel le rapport est basé. L’autorisation Générer détermine qui peut voir et utiliser votre jeu de données. Vous pouvez la définir dans l’espace de travail proprement dit, ou quand vous partagez une application à partir de l’espace de travail. Apprenez-en davantage sur la configuration de l’[autorisation Générer](service-datasets-build-permissions.md).
 
 Voyons à présent comment les autres coéquipiers ayant accès à l’espace de travail dans lequel le rapport (et le jeu de données) a été publié peuvent se connecter au jeu de données pour créer leurs propres rapports.
 

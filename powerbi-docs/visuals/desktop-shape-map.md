@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1d07c678b02f77689d24d067ca58a4e28ac70cb0
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623913"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164081"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Créez un visuel **Carte de formes** pour comparer des régions sur une carte à l’aide de la couleur. À la différence du visuel **Carte**, le visuel **Carte de formes** ne permet pas d’afficher l’emplacement géographique précis de points de données sur une carte. Il a pour principal objectif de montrer des comparaisons relatives de régions sur une carte en leur appliquant une couleur différente.
 
 Les visuels **Carte de formes** reposent sur les cartes ESRI/TopoJSON, qui présentent l’avantage de pouvoir utiliser des cartes personnalisées que vous pouvez créer, comme des cartes géographiques, des plans de salle, des plans d’étage, etc. Vous ne pouvez pas utiliser de cartes personnalisées dans cette préversion de **Carte de formes**.
@@ -113,7 +116,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="australia-states"></a>Australie : États
 
-| id | abbr | iso | name | postal |
+| ID | abbr | iso | name | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -126,7 +129,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="austria-states"></a>Austriche : États
 
-| id | iso | name | name-en | postal |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -140,7 +143,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="brazil-states"></a>Brésil : États
 
-| id |
+| ID |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -176,7 +179,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="canada-provinces"></a>Canada : Provinces
 
-| id | iso | name | postal |
+| ID | iso | name | postal |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -194,7 +197,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="france-regions"></a>France : Régions
 
-| id | name | name-en |
+| ID | nom | name-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -221,7 +224,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="germany-states"></a>Allemagne : États
 
-| id | iso | name | name-en | postal |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -242,7 +245,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="ireland-counties"></a>Irlande : Pays
 
-| id |
+| ID |
 | --- |
 | Wicklow |
 | Wexford |
@@ -273,7 +276,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="italy-regions"></a>Italie : Régions
 
-| id | iso | name | name-en | postal |
+| ID | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -298,7 +301,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="mexico-states"></a>Mexique : États
 
-| id | abreviatura | iso | name | name-en | postal |
+| ID | abreviatura | iso | name | name-en | postal |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -335,7 +338,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="netherlands-provinces"></a>Pays-Bas : Provinces
 
-| id | iso | name | name-en |
+| ID | iso | name | name-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -352,7 +355,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="uk-countries"></a>Royaume-Uni : pays
 
-| id | iso | name |
+| ID | iso | name |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Scotland |
@@ -361,7 +364,7 @@ Utilisez les **codes de région** suivants dans cette préversion pour tester **
 
 ### <a name="usa-states"></a>États-Unis : États
 
-| id | name | postal |
+| ID | nom | postal |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |
