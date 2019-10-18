@@ -111,7 +111,7 @@
           href: visuals/power-bi-visualization-customize-title-background-and-legend.md
         - name: Afficher les éléments sans données dans Power BI
           href: desktop-show-items-no-data.md
-        - name: Connectez-vous à vos données
+        - name: Se connecter aux données
           items:
             - name: "Sources de données dans Power\_BI\_Desktop"
               href: desktop-data-sources.md
@@ -177,13 +177,11 @@
               href: desktop-analysis-services-tabular-data.md
             - name: "Utilisation de DirectQuery dans Power\_BI\_Desktop"
               href: desktop-use-directquery.md
-            - name: DirectQuery pour Oracle et Teradata
-              href: desktop-directquery-for-oracle-teradata.md
-            - name: DirectQuery et SAP Business Warehouse (BW)
+            - name: "DirectQuery et SAP\_Business\_Warehouse (BW)"
               href: desktop-directquery-sap-bw.md
             - name: DirectQuery et SAP HANA
               href: desktop-directquery-sap-hana.md
-            - name: "Paramètre d’intégrité référentielle supposée dans Power\_BI\_Desktop"
+            - name: "Paramètre Intégrité référentielle supposée dans Power\_BI Desktop"
               href: desktop-assume-referential-integrity.md
             - name: "Utilisation du connecteur SAP BW dans Power\_BI\_Desktop"
               href: desktop-sap-bw-connector.md
@@ -231,7 +229,7 @@
               href: desktop-export-to-pdf.md
             - name: "Questions et réponses dans Power\_BI\_Desktop"
               href: desktop-qna-in-reports.md
-            - name: "Volet d’analyse dans Power\_Bi Desktop"
+            - name: Volet Analyse de Power BI Desktop
               href: desktop-analytics-pane.md
             - name: Utiliser des insights pour expliquer les hausses et les baisses
               href: desktop-insights.md
@@ -355,7 +353,7 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Visuel de tableau
               href: visuals/desktop-matrix-visual.md
-            - name: "Créer des analyses et des visualisations avancées grâce aux scripts R dans Power\_BI"
+            - name: "Créer des analyses et des visualisations avancées à l’aide de scripts\_R dans Power\_BI"
               href: visuals/service-r-visuals.md
             - name: "Graphiques en jauge radiale dans Power\_BI"
               href: visuals/power-bi-visualization-radial-gauge-charts.md
@@ -365,7 +363,7 @@
               href: visuals/power-bi-visualization-scatter.md
             - name: Graphiques en nuages de points haute densité
               href: visuals/desktop-high-density-scatter-charts.md
-            - name: "Utiliser Shape\_Maps dans Power\_BI\_Desktop (Version d’évaluation)"
+            - name: "Utiliser des cartes de formes dans Power\_BI\_Desktop (version préliminaire)"
               href: visuals/desktop-shape-map.md
             - name: "Segments dans Power\_BI"
               href: visuals/power-bi-visualization-slicers.md
@@ -411,7 +409,7 @@
   items:
     - name: Vue d’ensemble
       items:
-        - name: Qu’est-ce que Power BI ?
+        - name: "Qu’est-ce que Power\_BI\_?"
           href: power-bi-overview.md
         - name: "Qu’est-ce que le service Power BI\_?"
           href: power-bi-service-overview.md
@@ -481,7 +479,7 @@
               href: service-power-bi-get-started-third-party-apps.md
     - name: Guides pratiques
       items:
-        - name: Obtenez des données de fichiers
+        - name: Obtenir des données de fichiers
           items:
             - name: Obtention de données à partir de fichiers
               href: service-get-data-from-files.md
@@ -567,7 +565,7 @@
               href: service-dashboard-pin-tile-from-q-and-a.md
             - name: Épingler une page de rapport entière à un tableau de bord
               href: service-dashboard-pin-live-tile-from-report.md
-            - name: "Alertes de données dans le service Power\_BI"
+            - name: Alertes de données dans le service Power BI
               href: service-set-data-alerts.md
             - name: 'Ajouter une image, une zone de texte, une vidéo ou du code à un tableau de bord'
               href: service-dashboard-add-widget.md
@@ -579,7 +577,7 @@
               href: service-create-dashboard-mobile-phone-view.md
             - name: Créer un code QR pour une vignette
               href: service-create-qr-code-for-tile.md
-            - name: Classement des données du tableau de bord
+            - name: Classification des données des tableaux de bord
               href: service-data-classification.md
             - name: Thèmes du tableau de bord
               href: service-dashboard-themes.md
@@ -631,7 +629,7 @@
               href: service-cortana-intro.md
             - name: "Activer Cortana pour Power\_BI"
               href: service-cortana-enable.md
-            - name: "Aperçus rapides dans Power\_BI."
+            - name: "Informations rapides dans Power\_BI"
               href: service-insights.md
             - name: Optimiser les données pour Quick Insights
               href: service-insights-optimize.md
@@ -667,7 +665,7 @@
               href: service-publish-to-web.md
             - name: Partager un tableau de bord lié à un classeur Excel sur OneDrive
               href: service-share-dashboard-that-links-to-excel-onedrive.md
-            - name: "Éditeur Power\_BI pour Excel"
+            - name: "Power\_BI Publisher pour Excel"
               href: publisher-for-excel.md
         - name: Préparation des données en libre-service
           items:
@@ -817,7 +815,7 @@
                   href: service-connect-to-prevedere.md
                 - name: Project Online
                   href: service-connect-to-project-online.md
-                - name: QuickBooks en ligne
+                - name: QuickBooks Online
                   href: service-connect-to-quickbooks-online.md
                 - name: Salesforce
                   href: service-connect-to-salesforce.md
