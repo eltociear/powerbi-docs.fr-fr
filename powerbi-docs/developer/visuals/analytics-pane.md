@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 06/18/2019
-ms.openlocfilehash: 67f9bc793b78d2019875b8165ea71fa712fd9d23
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 0782ea63a9833c220e4d96886d79d42af643e111
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193683"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307594"
 ---
 # <a name="the-analytics-pane-in-power-bi-visuals"></a>Volet Analytique des visuels Power BI
 
@@ -26,7 +26,7 @@ Cet article explique comment les visuels Power BI avec l’API v2.5.0 peuvent pr
 
 ## <a name="manage-the-analytics-pane"></a>Gérer le volet Analytique
 
-De la même façon que vous gérez les propriétés dans le [volet **Format**](https://docs.microsoft.com/power-bi/developer/custom-visual-develop-tutorial-format-options), vous gérez le volet **Analytique** en définissant un objet dans le fichier *capabilities.json* du visuel. 
+De la même façon que vous gérez les propriétés dans le [volet **Format**](https://docs.microsoft.com/power-bi/developer/visuals/custom-visual-develop-tutorial-format-options), vous gérez le volet **Analytique** en définissant un objet dans le fichier *capabilities.json* du visuel.
 
 Pour le volet **Analytique**, les différences sont les suivantes :
 

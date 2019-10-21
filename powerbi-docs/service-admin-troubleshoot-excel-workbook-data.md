@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 04/30/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: c32133a7958c1239337a5f77a92dde098652514e
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65101466"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72542857"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Erreur : Impossible de trouver des données dans votre classeur Excel
 
@@ -63,7 +63,7 @@ Quand vous importez un classeur Excel, Power BI recherche ces tables et les imp
 6. Enregistrez le classeur.
 7. Revenez à Power BI. Sélectionnez Obtenir des données en bas du volet de navigation gauche.
    
-    ![Obtenir les données](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
+    ![Obtenir des données](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
 8. Dans la zone **Fichiers** , sélectionnez **Obtenir**.
    
     ![Obtenir les fichiers](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-files.png)
