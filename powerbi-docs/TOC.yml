@@ -353,6 +353,8 @@
               href: visuals/power-bi-visualization-kpi.md
             - name: Visuel de tableau
               href: visuals/desktop-matrix-visual.md
+            - name: Visuel de Questions et réponses
+              href: visuals/power-bi-visualization-q-and-a.md
             - name: "Créer des analyses et des visualisations avancées à l’aide de scripts\_R dans Power\_BI"
               href: visuals/service-r-visuals.md
             - name: "Graphiques en jauge radiale dans Power\_BI"
@@ -375,6 +377,22 @@
               href: visuals/power-bi-visualization-waterfall-charts.md
             - name: Créer des lignes de référence dynamiques
               href: service-analytics-pane.md
+        - name: Langage naturel
+          items:
+            - name: Introduction à Questions et réponses
+              href: natural-language/q-and-a-intro.md
+            - name: Visuel de Questions et réponses
+              href: visuals/power-bi-visualization-q-and-a.md
+            - name: Introduction aux outils de Questions et réponses
+              href: natural-language/q-and-a-tooling-intro.md
+            - name: Apprendre à utiliser les outils de Questions et réponses
+              href: natural-language/q-and-a-tooling-teach-q-and-a.md
+            - name: Outils avancés de Questions et réponses
+              href: natural-language/q-and-a-tooling-advanced.md
+            - name: Bonnes pratiques relatives à Questions et réponses
+              href: natural-language/q-and-a-best-practices.md
+            - name: Limitations de Questions et réponses
+              href: natural-language/q-and-a-limitations.md
         - name: Résoudre des problèmes
           items:
             - name: "Résoudre des problèmes d’importation de bases de données Access et de feuilles de calcul Excel dans Power\_BI\_Desktop et Power\_Query"
