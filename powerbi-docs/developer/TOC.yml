@@ -129,6 +129,8 @@
               href: register-app.md
             - name: "Obtenir un jeton d’accès Azure\_AD"
               href: get-azuread-access-token.md
+            - name: Liaison dynamique
+              href: embed-dynamic-binding.md
             - name: Questions et réponses sur l’incorporation
               href: qanda.md
             - name: Résoudre les problèmes de votre application incorporée
@@ -185,7 +187,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848280'
             - name: Stack Overflow
               href: 'https://go.microsoft.com/fwlink/?linkid=848281'
-    - name: Automatisation
+    - name: Automation
       expanded: true
       items:
         - name: Vue d’ensemble
