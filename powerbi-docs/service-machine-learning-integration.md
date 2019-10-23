@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 10ee974b73372fb2243febdcb4431b5decebdf4b
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: 9593296b0e09340fe4f62fff7a2e7722912a4216
+ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823473"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72259946"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Intégration d’Azure Machine Learning dans Power BI
 
@@ -70,7 +70,7 @@ Les scientifiques des données utilisent principalement Python pour développer,
 
 Ce fichier de schéma doit être inclus dans le service web déployé pour les modèles du service Machine Learning. Pour générer automatiquement le schéma pour le service web, vous devez fournir un exemple d’entrée/de sortie dans le script d’entrée pour le modèle déployé. Consultez la sous-section de la documentation du service Azure Machine Learning relative à la génération automatique (facultative) d’un schéma Swagger dans les modèles de déploiement. Le lien inclut l’exemple de script d’entrée avec les instructions pour la génération du schéma. 
 
-Plus précisément, les fonctions *@input_schema* et *@output_schema* dans le script d’entrée font référence aux formats des échantillons d’entrée et de sortie dans les variables *input_sample* et *output_sample*. Par ailleurs, elles utilisent ces échantillons pour générer une spécification OpenAPI (Swagger) pour le service web pendant le déploiement.
+Plus précisément, les fonctions *\@input_schema* et *\@output_schema* dans le script d’entrée font référence aux formats des échantillons d’entrée et de sortie dans les variables *input_sample* et *output_sample*. Par ailleurs, elles utilisent ces échantillons pour générer une spécification OpenAPI (Swagger) pour le service web pendant le déploiement.
 
 Ces instructions relatives à la génération du schéma en mettant à jour le script d’entrée doivent également être appliquées aux modèles créés à l’aide d’expériences de Machine Learning automatisé avec le SDK Azure Machine Learning.
 

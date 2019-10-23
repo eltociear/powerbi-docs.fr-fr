@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020371"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543340"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Créer un tableau de bord à partir d’un rapport
 Vous avez lu [Présentation des tableaux de bord dans Power BI](service-dashboards.md) et souhaitez maintenant créer les vôtres. Il existe différentes façons de créer un tableau de bord. Par exemple, vous pouvez créer un tableau de bord à partir d’un rapport, à partir de rien, à partir d’un jeu de données, en dupliquant un tableau de bord existant.  
@@ -68,9 +68,9 @@ Dans cette procédure étape par étape, nous allons importer l’un des exemple
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Ouvrir le rapport et épingler des vignettes à votre tableau de bord
 1. Dans le même espace de travail, sélectionnez l’onglet **Rapports**, puis l’**Exemple Analyse de l’approvisionnement** pour ouvrir le rapport.
 
-    ![Onglet Rapports](media/service-dashboard-create/power-bi-reports.png) Le rapport s’ouvre en mode Lecture. Il comporte deux onglets en bas : **Discount Analysis** (Analyse des remises) et **Spend Overview** (Vue d’ensemble des dépenses). Chaque onglet représente une page du rapport.
+    ![Onglet Rapports](media/service-dashboard-create/power-bi-reports.png) Le rapport s’ouvre en mode Lecture. Notez qu’il comporte deux onglets sur la gauche : **Discount Analysis** (Analyse des remises) et **Spend Overview** (Vue d’ensemble des dépenses). Chaque onglet représente une page du rapport.
 
-2. Sélectionnez **Modifier le rapport** pour ouvrir le rapport en Mode Édition.
+2. Sélectionnez **Plus d’options (...)**  > **Modifier le rapport** pour ouvrir le rapport en Mode Édition.
 
     ![Rapport en mode Lecture](media/service-dashboard-create/power-bi-reading-view.png)
 3. Pointez sur une visualisation pour afficher les options disponibles. Pour ajouter une visualisation à un tableau de bord, sélectionnez l’icône d’épingle ![Icône Épingler](media/service-dashboard-create/power-bi-pin-icon.png).

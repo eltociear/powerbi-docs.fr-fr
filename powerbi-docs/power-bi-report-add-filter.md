@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: da7652556bc11e47cf238dd969ae1b27e6387299
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: be2304e655adadf20f5d33f46840c5a0cb82aa9f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968816"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544805"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Ajouter un filtre à un rapport dans Power BI
 
@@ -51,11 +51,12 @@ Vous pouvez ajouter un filtre au niveau du visuel à un visuel spécifique de de
 * Filtrez un champ qui est déjà utilisé par la visualisation.
 * Identifiez un champ qui n’est pas encore utilisé par la visualisation et ajoutez ce champ directement au compartiment **Filtres au niveau du visuel**.
 
-D'ailleurs, cette procédure utilise l'exemple de l'analyse de la vente au détail, si vous souhaitez la télécharger et la suivre. Téléchargez l’[exemple d’analyse de la vente au détail](sample-retail-analysis.md).
+
+D'ailleurs, cette procédure utilise l'exemple de l'analyse de la vente au détail, si vous souhaitez la télécharger et la suivre. Téléchargez [l’exemple de pack de contenu Analyse de la vente au détail](sample-retail-analysis.md#get-the-content-pack-for-this-sample).
 
 ### <a name="filter-the-fields-in-the-visual"></a>Filtrer les champs dans le visuel
 
-1. Sélectionnez **Modifier le rapport** pour ouvrir votre rapport en mode Édition.
+1. Sélectionnez **Plus d’options (...)**  > **Modifier le rapport** pour ouvrir votre rapport en mode Édition.
    
    ![Bouton Modifier le rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
@@ -85,7 +86,7 @@ D'ailleurs, cette procédure utilise l'exemple de l'analyse de la vente au déta
 
 Ajoutons à présent un nouveau champ comme un filtre au niveau du visuel à notre visualisation.
    
-1. Dans le volet Champs, sélectionnez le champ que vous voulez ajouter en tant que nouveau filtre au niveau du visuel, puis faites-le glisser vers la zone **Filtres au niveau du visuel**.  Dans cet exemple, nous allons faire glisser **District Manager** (Responsable de district) vers le compartiment **Filtres au niveau du visuel**, rechercher **an**, puis sélectionner ces trois responsables. 
+1. Dans le volet Champs, sélectionnez le champ que vous voulez ajouter en tant que nouveau filtre au niveau du visuel, puis faites-le glisser vers la zone **Filtres au niveau du visuel**.  Dans cet exemple, nous allons faire glisser **District Manager** (Responsable de district) vers le compartiment **Filtres au niveau du visuel**, rechercher **an**, puis sélectionner ces trois responsables.
      
     ![Ajouter un champ au volet Filtres](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -105,7 +106,9 @@ Ajoutons à présent un nouveau champ comme un filtre au niveau du visuel à not
 
 Vous pouvez également ajouter un filtre au niveau de la page à une page entière.
 
-1. Sélectionnez **Modifier le rapport** pour ouvrir votre rapport en mode Édition.
+1. Dans le service Power BI, ouvrez le rapport d’analyse de la vente au détail, puis accédez à la page **District Monthly Sales**. 
+
+2. Sélectionnez **...**  > **Modifier le rapport** pour ouvrir votre rapport en mode Édition.
    
    ![Bouton Modifier le rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Ouvrez le volet Visualisations et filtres et le volet Champs (si ce n’est pas déjà fait).
@@ -122,19 +125,21 @@ Vous pouvez également ajouter un filtre au niveau de la page à une page entiè
 Une extraction dans le service Power BI et Power BI Desktop vous permet de créer une page de rapport de *destination*, qui se concentre sur une entité spécifique, telle qu’un fournisseur, un client ou un fabricant. Maintenant, dans les autres pages de rapport, les utilisateurs peuvent cliquer avec le bouton droit sur un point de données pour cette l’entité, et extraire vers la page sur laquelle le focus est positionné.
 
 ### <a name="create-a-drillthrough-filter"></a>Créer un filtre d’extraction
-Pour effectuer la procédure, téléchargez l’[exemple Rentabilité des clients](sample-customer-profitability.md). Supposons que vous souhaitiez une page qui se concentre sur les secteurs d’activité Executive (Exécutif).
+Pour effectuer la procédure, téléchargez l’[exemple Rentabilité des clients](sample-customer-profitability.md#get-the-content-pack-for-this-sample). Supposons que vous souhaitiez une page qui se concentre sur les secteurs d’activité Executive (Exécutif).
 
-1. Sélectionnez **Modifier le rapport** pour ouvrir le rapport en Mode Édition.
+1. Dans le service Power BI, ouvrez le rapport d’analyse de la vente au détail, puis accédez à la page **District Monthly Sales**.
+
+2. Sélectionnez **Plus d’options (...)**  > **Modifier le rapport** pour ouvrir votre rapport en mode Édition.
    
    ![Bouton Modifier le rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 1. Ajoutez une nouvelle page au rapport et nommez-la **Team Executive** (Équipe exécutive). Il s’agira de la page de *destination* de l’extraction.
 2. Ajoutez des visualisations qui suivent des mesures clés pour les secteurs d’activité des équipes exécutives.    
-3. Ajoutez **Executive > Executive Name** (Exécutif > Nom de l’exécutif) au puits Filtres d’extraction.    
+3. À partir de la table **Executives**, faites glisser **Executive** vers les filtres d’extraction.    
    
     ![Ajouter une valeur à des filtres d’extraction](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
-    Notez que Power BI ajoute une flèche Précédent à la page de rapport.  La sélection de la flèche Précédent a pour effet de renvoyer les utilisateurs à la page de rapport *d’origine*, où ils étaient lorsqu’ils ont choisi d’opérer l’extraction. La flèche Précédent fonctionne uniquement en mode lecture.
+    Notez que Power BI ajoute une flèche Précédent à la page de rapport.  La sélection de la flèche Précédent a pour effet de renvoyer les utilisateurs à la page de rapport *d’origine*, où ils étaient lorsqu’ils ont choisi d’opérer l’extraction. En mode Édition, maintenez la touche CTRL enfoncée pour sélectionner la flèche Précédent
    
      ![La flèche Précédent](media/power-bi-report-add-filter/power-bi-back-arrow.png)
 
@@ -145,7 +150,7 @@ Voyons comment fonctionne le filtre d’extraction.
 2. Supposons que vous soyez Andrew Ma et que vous souhaitiez afficher la page de rapport Team Executive (Équipe exécutive) filtrée uniquement sur vos données.  À partir du graphique en aires en haut à gauche, cliquez avec le bouton droit sur n’importe quel point de données de couleur verte pour ouvrir l’option de menu Extraction.
    
     ![Lancer l’action d’extraction](media/power-bi-report-add-filter/power-bi-drillthrough.png)
-3. Sélectionnez **Extraction > Team Executive** pour extraire vers la page de rapport nommée **Team Executive** (Équipe exécutive). La page est filtrée pour afficher les informations relatives au point de données sur lequel vous avez cliqué avec le bouton droit, en l’occurrence Andrew Ma. Seul le champ figurant dans le puits Filtres d’extraction est transmis à la page du rapport d’extraction.  
+3. Sélectionnez **Extraction > Team Executive** pour extraire vers la page de rapport nommée **Team Executive** (Équipe exécutive). La page est filtrée pour afficher les informations relatives au point de données sur lequel vous avez cliqué avec le bouton droit, en l’occurrence Andrew Ma. Tous les filtres de la page d’origine sont appliqués à la page du rapport d’extraction.  
    
     ![Sélectionner l’action d’extraction](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 

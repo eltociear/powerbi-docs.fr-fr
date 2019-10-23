@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/19/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 1ccf5dd3a84bbbaca7019f8943cf0ab974e4bd06
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: b43408ef91e79d9489480d795329f2e80d0bb1be
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71944890"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307728"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Précédentes mises à jour mensuelles de Power BI Desktop
 
@@ -33,6 +33,83 @@ Les liens en regard de chaque mise à jour signifient ce qui suit :
 Vous pouvez également regarder la vidéo sur les **dernières mises à jour** dès le début, directement dans cet article, en cliquant sur l’icône de **lecture** sur l’image vidéo située sous la liste des mises à jour.
 
 Les sections suivantes décrivent les mises à jour **Power BI Desktop** des mois précédents.
+
+## <a name="september-2019-update-2735586561"></a>Mise à jour de septembre 2019 (2.73.5586.561)
+
+Nos mises à jour de septembre sont similaires à la rentrée des classes, avec de nouvelles choses à apprendre, des mises à jour pour les amis qui nous manquaient au cours de l’été et l’utilisation ce que nous savons pour produire de meilleurs rapports à l’avenir. 
+
+Vous pouvez [télécharger la dernière version de Power BI Desktop](https://powerbi.microsoft.com/desktop), qui est désormais fourni sous la forme d’un fichier .exe contenant toutes les langues prises en charge. Si vous exécutez Windows 10, vous pouvez également obtenir **Power BI Desktop** à partir du Windows Store. Les versions mensuelles sont identiques, même si la numérotation de version peut différer d’une version à l’autre, quelle que soit la façon dont vous installez **Power BI Desktop**. Pour plus d’informations, voir [cet article](desktop-get-the-desktop.md). 
+
+> [!IMPORTANT]
+> À compter de la version de septembre 2019, Power BI Desktop est fourni sous forme d’un fichier .exe unique qui contient toutes les langues prises en charge. La version .msi n’est plus publiée.
+
+
+Les liens en regard de chaque mise à jour signifient ce qui suit :
+
+* Des extraits **[vidéo]** présentant la fonctionnalité sont disponibles dans un nouvel onglet de navigateur.
+* Certaines fonctionnalités ont un **[article]** qui fournit plus de détails.
+* La plupart des fonctionnalités sont expliquées dans le billet de **[blog]** sur la mise à jour mensuelle.
+* Enfin, certaines fonctionnalités sont explicites et ne disposent d’aucun article ou vidéo.
+
+Vous pouvez également regarder la vidéo sur les **dernières mises à jour** dès le début, directement dans cet article, en cliquant sur l’icône de **lecture** sur l’image vidéo située sous la liste des mises à jour.
+
+Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci sont les suivantes :
+
+### <a name="reporting"></a>Création de rapports
+* Classes de couleurs et de texte dans les thèmes [[vidéo]](https://youtu.be/neq0THnRJzo?t=11)  [[article]](desktop-report-themes.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#themeJSON) 
+* Nouveaux thèmes par défaut [[vidéo]](https://youtu.be/neq0THnRJzo?t=334)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#newThemes)
+* Améliorations du volet de visualisation personnalisé (préversion) [[vidéo]](https://youtu.be/neq0THnRJzo?t=601)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#vizPane)
+
+
+### <a name="analytics"></a>Analytique
+* Chaînes de format personnalisées [[vidéo]](https://youtu.be/neq0THnRJzo?t=731)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#customFormatStrings) 
+* Mise en forme conditionnelle pour plus d’options de mise en forme [[vidéo]](https://youtu.be/neq0THnRJzo?t=813)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#conditionalFormatting) 
+* Amélioration du niveau de découverte de l’extraction [[vidéo]](https://youtu.be/neq0THnRJzo?t=959)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#drillThrough) 
+* Nouvelles expressions DAX : REMOVEFILTERS et CONVERT [[vidéo]](https://youtu.be/neq0THnRJzo?t=1048)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#dax) 
+
+
+### <a name="visuals"></a>Visuels
+* Visuels PowerApps maintenant en disponibilité générale [[vidéo]](https://youtu.be/neq0THnRJzo?t=1063)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#powerApps) 
+
+
+### <a name="data-connectivity"></a>Connectivité aux données
+* Améliorations du connecteur PostgreSQL [[vidéo]](https://youtu.be/neq0THnRJzo?t=1112)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#postgreSQL) 
+
+### <a name="data-preparation"></a>Préparation des données
+* Copier dans le Presse-papiers à partir d’un profilage de données [[vidéo]](https://youtu.be/neq0THnRJzo?t=1146)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#copyProfiling) 
+
+
+### <a name="template-apps"></a>Applications modèles
+* Rapport Google Analytics [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#googleAnalytics) 
+
+### <a name="other"></a>Autre
+* Améliorations en matière de performances pour les modèles à plusieurs dimensions [[vidéo]](https://youtu.be/neq0THnRJzo?t=1208)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfMultiDiminsional) 
+* Améliorations en matière de performances de requête pour les modèles DirectQuery [[vidéo]](https://youtu.be/neq0THnRJzo?t=1272)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/#perfDirectQuery) https://youtu.be/neq0THnRJzo?t=1208
+
+> [!NOTE]
+> Cous pouvez aussi [consulter la liste des sources de données accessibles à Power BI Desktop](desktop-data-sources.md). Cette liste étant en constante évolution, consultez-la régulièrement.
+
+Vous souhaitez plus d’informations sur ces mises à jour ? Consultez le [billet de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2019-feature-summary/) pour obtenir des informations plus détaillées sur chacune de ces nouvelles fonctionnalités (voir le billet de blog référencé dans la liste ci-dessus).
+
+La vidéo suivante décrit et montre chacune de ces mises à jour. Vous pouvez également afficher la vidéo à partir du billet de blog.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/neq0THnRJzo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Les rubriques [Nouveautés du service Power BI](service-whats-new.md) et [Nouveautés dans les applications mobiles pour Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md) sont également susceptibles de vous intéresser.
+
+Vous pouvez également télécharger des versions précédentes de Power BI Desktop si votre organisation en a besoin. Nous recommandons toujours d’utiliser la version la plus récente de Power BI Desktop plutôt qu’une version précédente. Toutes les versions précédentes présentent les limitations suivantes :
+
+* Les versions précédentes de Power BI Desktop ne font l’objet d’aucune maintenance. Vous devez toujours utiliser la version la plus récente pour bénéficier des dernières fonctionnalités et mises à jour.
+* Il ne sera peut-être pas possible d’ouvrir des fichiers créés ou enregistrés dans de nouvelles versions de Power BI Desktop avec des versions précédentes de Power BI Desktop. 
+* Si vous recevez un avertissement lors du chargement d’un rapport enregistré dans une version plus récente de Power BI Desktop et que vous enregistrez ce rapport dans la version précédente, vous perdrez toutes les informations relatives aux nouvelles fonctionnalités.
+* Nous archivons uniquement les versions anglaises de Power BI Desktop.
+
+Sélectionnez les liens suivants pour télécharger cette version antérieure : 
+
+* [Version de septembre 2019 de Power BI Desktop – 32 bits](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-09.msi)
+* [Version de septembre 2019 de Power BI Desktop – 64 bits](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-09_x64.msi)
+
 
 ## <a name="august-2019-update-2725556801"></a>Mise à jour d’août 2019 (2.72.5556.801)
 
@@ -62,7 +139,7 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci étai
 * Améliorations des visuels des influenceurs clés, disponibilité générale [[vidéo]](https://youtu.be/sf4n7VXoQHY?t=801)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#keyInfluencers) 
 
 
-### <a name="visuals"></a>Éléments visuels
+### <a name="visuals"></a>Visuels
 * Nouveaux visuels personnalisés et mises à jour [[vidéo]](https://youtu.be/sf4n7VXoQHY?t=956)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#xviz) 
 
 
@@ -133,7 +210,7 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci étai
 * Améliorations des agrégations [[vidéo]](https://youtu.be/l7OMRUF9UYg?t=870)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#aggregations) 
 
 
-### <a name="visuals"></a>Éléments visuels
+### <a name="visuals"></a>Visuels
 * Le visuel PowerApps est désormais certifié [[vidéo]](https://youtu.be/l7OMRUF9UYg?t=894)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#powerapps) 
 * Trois nouveaux visuels personnalisés et des mises à jour [[vidéo]](https://youtu.be/l7OMRUF9UYg?t=932)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#infocard) 
 
@@ -213,7 +290,7 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci étai
 * Nouvel opérateur de comparaison DAX == [[vidéo]](https://youtu.be/7k-nP38uHyQ?t=1267)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
 
 
-### <a name="visuals"></a>Éléments visuels
+### <a name="visuals"></a>Visuels
 * Volet de visualisation personnalisé (préversion) [[vidéo]](https://youtu.be/7k-nP38uHyQ?t=1349)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
 * Trois nouveaux visuels personnalisés et des mises à jour [[vidéo]](https://youtu.be/7k-nP38uHyQ?t=1391)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
 
@@ -294,7 +371,7 @@ Les nouvelles mises à jour apportées à **Power BI Desktop** ce mois-ci étai
 * Mise à jour de la fonction DAX ALLSELECTED [[vidéo]](https://youtu.be/O8GlHDz8xUQ?t=1080)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#dax) 
 
 
-### <a name="visuals"></a>Éléments visuels
+### <a name="visuals"></a>Visuels
 * Mises à jour d’ArcGIS Maps for Power BI  [[vidéo]](https://youtu.be/O8GlHDz8xUQ?t=1093)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#esri) 
 * Six nouveaux visuels personnalisés et des mises à jour [[vidéo]](https://youtu.be/O8GlHDz8xUQ?t=1199)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#mapbox) 
 
@@ -485,18 +562,6 @@ Le canal vidéo suivant décrit et montre chacune de ces mises à jour. Vous pou
 > [!NOTE]
 > Les rubriques [Nouveautés du service Power BI](service-whats-new.md) et [Nouveautés dans les applications mobiles pour Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md) sont également susceptibles de vous intéresser.
 
-
-Vous pouvez également télécharger des versions précédentes de Power BI Desktop si votre organisation en a besoin. Nous recommandons toujours d’utiliser la version la plus récente de Power BI Desktop plutôt qu’une version précédente. Toutes les versions précédentes présentent les limitations suivantes :
-
-* Les versions précédentes de Power BI Desktop ne font l’objet d’aucune maintenance. Vous devez toujours utiliser la version la plus récente pour bénéficier des dernières fonctionnalités et mises à jour.
-* Il ne sera peut-être pas possible d’ouvrir des fichiers créés ou enregistrés dans de nouvelles versions de Power BI Desktop avec des versions précédentes de Power BI Desktop. 
-* Si vous recevez un avertissement lors du chargement d’un rapport enregistré dans une version plus récente de Power BI Desktop et que vous enregistrez ce rapport dans la version précédente, vous perdrez toutes les informations relatives aux nouvelles fonctionnalités.
-* Nous archivons uniquement les versions anglaises de Power BI Desktop.
-
-Sélectionnez les liens suivants pour télécharger cette version antérieure : 
-
-* [Version de mars 2019 de Power BI Desktop – 32 bits](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03.msi)
-* [Version de mars 2019 de Power BI Desktop – 64 bits](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-03_x64.msi)
 
 
 ## <a name="february-2019-update-26653761681"></a>Mise à jour de février 2019 (2.66.5376.1681)

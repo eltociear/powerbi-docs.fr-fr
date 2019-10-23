@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2b05ad31612d1960e131028d13552843834a98bd
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968899"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307374"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -30,7 +30,7 @@ Les charges de travail de requête sont optimisées pour, et limitées par, les 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
 | Intelligence artificielle | N/A | N/A | 20 % par défaut ; 20 % minimum | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum |
-| Flux de données | N/A |20 % par défaut ; 12 % minimum  | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum | 20 % par défaut ; 2 % minimum  |
+| Dataflows | N/A |20 % par défaut ; 12 % minimum  | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum | 20 % par défaut ; 2 % minimum  |
 | Rapports paginés | N/A |N/A | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
 | | | | | | |
 
@@ -39,7 +39,7 @@ Les charges de travail de requête sont optimisées pour, et limitées par, les 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
 | Intelligence artificielle | N/A                      | 20 % par défaut ; 100 % minimum                     | 20 % par défaut ; 50 % minimum                     | 20 % par défaut ; 20 % minimum | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum |
-| Flux de données         | 40 % par défaut ; 40 % minimum | 24 % par défaut ; 24 % minimum | 20 % par défaut ; 12 % minimum | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum | 20 % par défaut ; 2 % minimum   |
+| Dataflows         | 40 % par défaut ; 40 % minimum | 24 % par défaut ; 24 % minimum | 20 % par défaut ; 12 % minimum | 20 % par défaut ; 5 % minimum  | 20 % par défaut ; 3 % minimum | 20 % par défaut ; 2 % minimum   |
 | Rapports paginés | N/A                      | N/A                      | N/A                     | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
 | | | | | | |
 
@@ -70,6 +70,8 @@ La charge de travail des jeux de données est activée par défaut et ne peut pa
 | **Nombre maximal de lignes de résultat** | Nombre maximal de lignes retournées dans une requête DAX. La valeur par défaut est -1 (aucune limite) et la plage autorisée est comprise entre 100000 et 2147483647. |
 | **Limite de mémoire de requête (%)** | Pourcentage maximal de mémoire disponible qui peut être utilisé pour des résultats temporaires dans une requête ou une mesure DAX. |
 | **Délai d’expiration de la requête (secondes)** | Durée maximale avant l’expiration d’une requête. La valeur par défaut est 3600 secondes (1 heure). La valeur 0 indique que les requêtes n’expirent pas. |
+| **Actualisation automatique des pages (préversion)** | Commutateur pour autoriser les espaces de travail Premium à avoir des rapports avec l’actualisation automatique des pages. |
+| **Intervalle minimal d'actualisation** | Si l’actualisation automatique de la page est activée, il s’agit de l’intervalle minimal autorisé pour l’intervalle d’actualisation de la page. La valeur par défaut est de cinq minutes, et la valeur minimale autorisée est d’une seconde. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Nombre maximal de lignes intermédiaires
@@ -113,7 +115,20 @@ La durée totale d’exécution de toutes les requêtes est de 75 minutes, mais
 
 Notez que les rapports Power BI ignorent cette valeur par défaut et appliquent un délai d’expiration très inférieur pour chaque requête sur la capacité. Le délai d’expiration par requête est généralement de trois minutes environ.
 
-### <a name="dataflows"></a>Flux de données
+#### <a name="automatic-page-refresh-preview"></a>Actualisation automatique des pages (préversion)
+
+Lorsqu’elle est activée, l’actualisation automatique des pages permet aux utilisateurs de votre capacité Premium d’actualiser les pages de leur rapport à un intervalle défini, pour les sources DirectQuery. En tant qu’administrateur de capacité, vous pouvez effectuer les opérations suivantes :
+
+1.  Activer et désactiver l’actualisation automatique des pages
+2.  Définir un intervalle minimal d'actualisation
+
+L’illustration suivante montre l’emplacement du paramètre d’intervalle d’actualisation automatique :
+
+![paramètre administrateur pour l’intervalle d’actualisation automatique](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+
+Les requêtes créées par l’actualisation automatique de la page vont directement à la source de données. Il est donc important de tenir compte de la fiabilité et de la charge sur ces sources lorsque vous autorisez l’actualisation automatique de la page dans votre organisation. 
+
+### <a name="dataflows"></a>Dataflows
 
 La charge de travail des dataflows vous permet d’utiliser la préparation des données en libre-service des dataflows pour ingérer, transformer, intégrer et enrichir les données. Utilisez les paramètres suivants pour contrôler le comportement de la charge de travail.
 
@@ -181,5 +196,6 @@ L’[application Métriques de capacité Power BI Premium](service-admin-premium
 [Optimisation des capacités Power BI Premium](service-premium-capacity-optimize.md)     
 [Préparation des données en libre-service dans Power BI avec des dataflows](service-dataflows-overview.md)   
 [Présentation des rapports paginés dans Power BI Premium](paginated-reports-report-builder-power-bi.md)   
+[Actualisation automatique des pages dans Power BI Desktop (préversion)](desktop-automatic-page-refresh.md)
 
 D’autres questions ? [Poser des questions à la communauté Power BI](http://community.powerbi.com/)

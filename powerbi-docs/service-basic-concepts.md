@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ff962335b573c6dd2a03ae5ab4633c1042a77059
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770777"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72542989"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Fondamentaux pour les concepteurs dans le service Power BI
 
@@ -33,10 +33,11 @@ Lorsque vous ouvrez le service Power BI dans un navigateur, vous êtes amené à
 3. bouton Accueil de Power BI
 4. Boutons d’icône, notamment paramètres, aide et commentaires
 5. Zone de recherche
-6. Vignettes d’un tableau de bord favori
-7. Rapports et tableaux de bord favoris et fréquents
+6. Tableaux de bord, rapports et espaces de travail favoris et fréquents
+7. Tableaux de bord, rapports et espaces de travail récents
+8. Vos espaces de travail
 
-Les utilisateurs finaux de vos rapports et de vos tableaux de bord démarrent au même point que vous dans le service Power BI depuis un navigateur.
+Vous et les utilisateurs finaux de vos rapports et de vos tableaux de bord démarrez au même point dans le service Power BI depuis un navigateur.
 
 Nous étudierons ces fonctionnalités ultérieurement, mais passons tout d’abord en revue quelques concepts propres à Power BI. Vous pouvez également visionner cette vidéo d’abord.  Dans cette vidéo, Will passe en revue les concepts de base et propose une visite guidée du service Power BI.
 
@@ -195,8 +196,8 @@ La fonctionnalité Questions et réponses recherche une réponse dans le ou les 
 
 Dès que vous commencez à taper votre question, Q&R vous conduit à la page Q&R. Au fur et à mesure que vous tapez du texte, la fonctionnalité Questions et réponses vous aide à poser la bonne question et à trouver la meilleure réponse via des reformulations, la saisie semi-automatique, des suggestions, etc. Quand vous obtenez une visualisation (réponse) qui vous satisfait, épinglez-la à votre tableau de bord. Pour plus d’informations, consultez [Q&R dans Power BI](power-bi-q-and-a.md).
 
-### <a name="4-icon-buttons"></a>4. **Boutons d’icônes**
-Les icônes figurant dans l’angle supérieur droit sont des ressources vous permettant de définir des configurations, des notifications, d’effectuer des téléchargements, d’obtenir de l’aide et de fournir des commentaires à l’équipe Power BI. Cliquez sur la flèche double pour ouvrir le tableau de bord en mode **Plein écran**.  
+### <a name="4-icons-in-the-black-header-bar"></a>4. **Icônes dans la barre d’en-tête noire**
+Les icônes figurant dans l’angle supérieur droit sont des ressources vous permettant de définir des configurations, des notifications, d’effectuer des téléchargements, d’obtenir de l’aide, d’activer ou de désactiver la **Nouvelle apparence** et de fournir des commentaires à l’équipe Power BI.  
 
 ![boutons d’icônes](media/service-basic-concepts/power-bi-icons.png)
 
@@ -217,8 +218,8 @@ Sélectionnez **Power BI** pour revenir à la page d’accueil de Power BI.
 
    ![Power BI dans le service](media/service-basic-concepts/version-new.png)
 
-### <a name="8-labeled-icon-buttons"></a>8. **Boutons d’icônes étiquetés**
-Cette zone de l’écran contient des options supplémentaires pour interagir avec le contenu (dans ce cas, avec le tableau de bord).  En plus des icônes étiquetées que vos pouvez voir, sélectionner le bouton de sélection (points de suspension) pour afficher les options de duplication, d’impression et d’actualisation du tableau de bord et bien plus encore.
+### <a name="8-labeled-icons-in-the-gray-menu-bar"></a>8. **Icônes étiquetées dans la barre de menus grise**
+Cette zone de l’écran contient des options supplémentaires pour interagir avec le contenu (dans ce cas, avec le tableau de bord).  En plus des icônes étiquetées que vous pouvez voir, sélectionner **Plus d’options (...)** affiche les options de duplication, d’impression et d’actualisation du tableau de bord et bien plus encore.
 
    ![Boutons d’icônes étiquetés](media/service-basic-concepts/power-bi-labeled-icons.png)
 

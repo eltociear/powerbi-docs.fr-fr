@@ -10,14 +10,17 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a3e88d853f59a0e9a188d6d6796559ad2d9059a9
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 056457d5a90585fd30a0a85f95d28d1097c720b0
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995282"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544063"
 ---
 # <a name="key-influencers-visualization"></a>Visualisation des influenceurs clés
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Le visuel d’influenceurs clés vous aide à comprendre les facteurs affectant une métrique qui vous intéresse. Il analyse vos données, classe les facteurs qui sont importants et les affiche sous forme d’influenceurs clés. Par exemple, supposons que vous souhaitez déterminer ce qui influence le renouvellement du personnel. L’un des facteurs peut être la longueur du contrat d’emploi et un autre l’âge de l’employé. 
  
 ## <a name="when-to-use-key-influencers"></a>Quand utiliser des influenceurs clés 
@@ -49,6 +52,10 @@ Le visuel d’influenceurs clés constitue un excellent choix quand vous souhait
  
 Regardez cette vidéo pour découvrir comment créer un visuel d’influenceurs clés avec une métrique de catégorie. Effectuez ensuite ces étapes pour en créer un. 
 
+   > [!NOTE]
+   > Cette vidéo utilise une version antérieure de Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Votre responsable produit vous demande d’identifier les facteurs qui poussent les clients à laisser des avis négatifs sur votre service cloud. Pour suivre la procédure, ouvrez le [fichier PBIX de commentaires client](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) dans Power BI Desktop. Vous pouvez également télécharger le [fichier Excel de commentaires client pour le service Power BI ou Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
@@ -137,7 +144,7 @@ Le nuage de points dans le volet droit trace le pourcentage moyen d’évaluatio
 
 Dans certains cas, vous pouvez constater que vos facteurs continus ont été automatiquement convertis en catégories. Cela est dû au fait que nous avons découvert que la relation entre les variables n’est pas linéaire et que nous ne pouvons pas décrire la relation comme une simple augmentation ou une diminution (comme nous l’avons fait dans l’exemple ci-dessus).
 
-Nous exécutons des tests de corrélation pour déterminer la linéarité de l’influenceur par rapport à la cible. Si la cible est continue, nous exécutons la corrélation de Pearsons et, si la cible est une catégorie, nous exécutons des tests de corrélation bisérielle de points. Si nous détectons que la relation n’est pas suffisamment linéaire, nous traitons des compartimentages supervisés et générons un maximum de 5 emplacements. Pour déterminer les emplacements les plus significatifs, nous utilisons une méthode de compartimentage supervisée qui examine la relation entre le facteur explicatif et la cible analysée.
+Nous exécutons des tests de corrélation pour déterminer la linéarité de l’influenceur par rapport à la cible. Si la cible est continue, nous exécutons la corrélation de Pearson et, si la cible est une catégorie, nous exécutons des tests de corrélation bisérielle de points. Si nous détectons que la relation n’est pas suffisamment linéaire, nous traitons des compartimentages supervisés et générons un maximum de 5 emplacements. Pour déterminer les emplacements les plus significatifs, nous utilisons une méthode de compartimentage supervisée qui examine la relation entre le facteur explicatif et la cible analysée.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Interpréter les mesures et agrégats comme influenceurs clés 
  

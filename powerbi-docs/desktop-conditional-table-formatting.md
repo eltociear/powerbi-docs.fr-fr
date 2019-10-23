@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: bd14437b0833d4c24c37ebeca6524948465bdb1f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69561059"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543995"
 ---
 # <a name="conditional-formatting-in-tables"></a>Mise en forme conditionnelle dans les tables 
 Avec la mise en forme conditionnelle des tables, vous pouvez spécifier des couleurs de cellule personnalisées en fonction des valeurs des cellules, ou en fonction d’autres valeurs ou champs, et notamment utiliser des couleurs de dégradé. Vous pouvez également afficher les valeurs des cellules avec des barres de données. 
@@ -140,6 +140,9 @@ Vous pouvez utiliser n’importe quelle valeur listée dans les spécifications 
 Voici quelques éléments à prendre en considération quand vous utilisez la mis en forme conditionnelle de tableau :
 
 * La mise en forme conditionnelle est appliquée seulement aux valeurs d'un visuel **Matrice** et ne s’applique à aucun sous-total ni aucun total général. 
+* La mise en forme conditionnelle n’est pas appliquée à la ligne **Total**
+* Toute table qui n’a pas de regroupement s’affiche sous la forme d’une ligne unique qui ne prend pas en charge la mise en forme conditionnelle.
+* Si vous utilisez le format de dégradé automatique basé sur les valeurs maximales/minimales ou une mise en forme basée sur des règles de pourcentage, la mise en forme conditionnelle ne peut pas être appliquée lorsque vos données contiennent des valeurs NaN. NaN signifie « n’est pas un nombre », le plus souvent à cause d’une erreur de division par zéro. Vous pouvez utiliser la [fonction DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax) pour éviter ces erreurs.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

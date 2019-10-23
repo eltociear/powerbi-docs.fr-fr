@@ -1,5 +1,5 @@
 ---
-title: Analyser les données sur les coûts et l’utilisation d’Azure dans Power BI Desktop
+title: Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop
 description: Se connecter aisément à Azure pour obtenir des informations sur la consommation et l’utilisation à l’aide de Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -8,29 +8,22 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0474bc4182f77e7084ca8cb78062ba0f2063e7ae
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 44a9e361a1f5031963ba5ce33ee44c7b21f5459b
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160204"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307553"
 ---
-# <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analyser les données sur les coûts et l’utilisation d’Azure dans Power BI Desktop
+# <a name="connect-to-azure-consumption-insights-data-in-power-bi-desktop"></a>Se connecter aux données d’Azure Consumption Insights dans Power BI Desktop
 
 Vous pouvez utiliser Power BI Desktop pour vous connecter à Azure et obtenir des données détaillées sur l’utilisation des services Azure dans votre organisation. Avec ces données, vous pouvez créer des mesures et des rapports personnalisés qui vous aident à mieux comprendre et analyser vos dépenses Azure.
 
-Power BI prend actuellement en charge la connexion aux comptes de facturation Contrat Entreprise et Contrat Client.
-
-* Les utilisateurs ayant un **Contrat Entreprise** doivent se connecter avec le **connecteur Azure Consumption Insights** (ci-dessous).
-
-* Les utilisateurs ayant un **Contrat Entreprise** doivent se connecter avec le [**connecteur Azure Cost Management**](#connect-with-azure-cost-management).
-
 > [!NOTE]
-> Si vous êtes un client Contrat Entreprise utilisant le connecteur Azure Cost Management et que vous ne voyez pas l’*ID du profil de facturation* dans votre panneau Gestion des coûts, cela signifie que vous n’êtes pas dans la plateforme de commerce moderne. Dans ce cas, utilisez le connecteur Azure Consumption Insights, qui demande le numéro d’inscription EA au lieu de l’*ID du profil de facturation*.
-
+> La prise en charge de Microsoft Azure Consumption Insights (bêta) est limitée. Pour les nouvelles fonctionnalités, utilisez le [connecteur Azure Cost Management pour Power BI](desktop-connect-azure-cost-management.md).
 
 ## <a name="connect-with-azure-consumption-insights"></a>Se connecter à l’aide d’Azure Consumption Insights
 
@@ -236,112 +229,12 @@ Les colonnes et les noms des détails sur le portail Azure sont similaires dans 
 | SubscriptionId |subscriptionId |SubscriptionId |Oui |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |Non |
 
-## <a name="connect-with-azure-cost-management"></a>Se connecter à l’aide d’Azure Cost Management
-
-Cette section explique comment vous connecter à votre compte de facturation Contrat Client.
-
-> [!NOTE]
-> Le connecteur Azure Cost Management prend actuellement en charge les clients bénéficiant du **Contrat Client**.  Les clients ayant un compte **Contrat Entreprise** doivent utiliser le connecteur Microsoft Azure Consumption Insights.
->
->
-
-Pour utiliser le connecteur **Azure Cost Management** dans **Power BI Desktop** :
-
-1. Dans le ruban **Accueil**, sélectionnez **Obtenir des données**.
-
-1. Dans les catégories à gauche, sélectionnez **Azure**.
-
-1. Sélectionnez **Azure Cost Management (Bêta)** à droite.
-
-1. Sélectionnez **Se connecter**.
-
-
-   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
-
-   Dans la boîte de dialogue qui s’affiche, entrez votre **ID de profil de facturation**.
-
-   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
-
-Vous pouvez obtenir votre ID de profil de facturation auprès du [portail Azure](https://portal.azure.com) :
-
-1. Accédez à **Gestion des coûts + facturation**.
-
-1. Sélectionnez votre compte de facturation.
-
-1. Sélectionnez **Profils de facturation** dans la barre latérale.
-
-1. Sélectionnez votre profil de facturation.
-
-1. Sélectionnez **Propriétés** dans la barre latérale.
-
-1. Copiez l’ID de votre profil de facturation.
-
-   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
-
-   Vous êtes alors invité à vous connecter en utilisant votre adresse e-mail et votre mot de passe Azure.  Une fois que vous êtes authentifié, vous voyez une fenêtre **Navigateur** avec 12 tables disponibles :
-
-| Table        | Description |
-|-------------------- | -------------------------------------------------------------|
-| **Événements de facturation** | Journal des événements liés aux nouvelles factures, achats de crédits, etc. |
-| **Budgets** | Informations budgétaires permettant de comparer les coûts et l’utilisation réels aux objectifs budgétaires. |
-| **Coûts** | Un récapitulatif mensuel de l’utilisation d’Azure, des coûts de la Place de marché et des coûts facturés séparément. |
-| **Lots de crédits** | Informations sur les achats de lots de crédits Azure pour le profil de facturation spécifié. |
-| **Récapitulatif des crédits** | Récapitulatif des crédits pour le profil de facturation spécifié. |
-| **Place de marché** | Coûts de la Place de marché Azure en fonction de l’utilisation. |
-| **Grilles tarifaires** | Tarifs applicables par compteur pour le profil de facturation spécifié. |
-| **Coûts des instances réservées** | Coûts associés à vos instances réservées au cours des 24 derniers mois. |
-| **Recommandations d’instances réservées (uniques)** | Recommandations d’achat d’instances réservées en fonction des tendances de votre utilisation sur un seul abonnement au cours des 7, 30 ou 60 derniers jours. |
-| **Recommandations d’instances réservées (partagées)** | Recommandations d’achat d’instances réservées en fonction des tendances de votre utilisation sur tous vos abonnements au cours des 7, 30 ou 60 derniers jours. |
-| **Utilisation des instances réservées** | Informations sur la consommation de vos instances réservées existantes au cours du mois dernier. |
-| **Détails de l’utilisation** | Une répartition des quantités consommées et des coûts estimés pour l’ID de profil de facturation indiqué. |
-
-Vous pouvez cocher une case en regard d’une table pour en afficher un aperçu.  Vous pouvez sélectionner une ou plusieurs tables en cochant la case en regard de leur nom et en sélectionnant **Charger**.
-
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-03.png)
-
-Quand vous sélectionnez **Charger**, les données sont chargées dans **Power BI Desktop**.
-
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
-
-Une fois les données sélectionnées chargées, les tables et les champs que vous avez sélectionnés sont visibles dans le volet **Champs**.
-
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
-
-Regardez [comment analyser les dépenses dans Power BI avec Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk). Cette vidéo explique comment examiner vos données de coût dans Power BI Desktop en utilisant le connecteur Azure Consumption Insights.
-
-## <a name="writing-custom-queries"></a>Création de requêtes personnalisées
-
-Vous pouvez créer une [requête M](/powerquery-m/power-query-m-reference) personnalisée pour personnaliser le nombre de mois, changer de version d’API ou appliquer une logique plus avancée sur les données retournées.
-
-Dans **Power BI Desktop** :
-
-1. Sélectionnez le ruban **Accueil**
-2. Sélectionnez **Obtenir des données** > **Requête vide**
-
-Ou bien, dans l'**Éditeur de requêtes** :
-
-1. Cliquez avec le bouton droit dans le volet gauche **Requêtes**
-2. Sélectionnez **Nouvelle requête > Requête vide** dans le menu qui s’affiche
-
-Dans la **barre de formule**, tapez ce qui suit, en remplaçant `billingProfileId` par votre ID réel et "charges" par le nom d’une table valide (voir la liste ci-dessus).
-
-```
-let
-    Source = AzureCostManagement.Tables(billingProfileId, [ numberOfMonths = 3 ]),
-    charges = Source{[Key="charges"]}[Data]
-in
-    charges
-```
-
-En plus de remplacer `numberOfMonths` par une autre valeur comprise entre 1 et 36, vous pouvez aussi spécifier :
-
-* `apiVersion` pour personnaliser la version d’API appelée par la requête.
-* `lookbackWindow`, afin de changer la période pour laquelle des recommandations d’instances réservées (uniques ou partagées) sont générées (options possibles : 7, 30 ou 60 jours).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 Vous pouvez vous connecter à de nombreuses sources de données différentes à l’aide de Power BI Desktop. Pour plus d’informations, consultez les articles suivants :
 
+* [Se connecter aux données d’Azure Cost Management dans Power BI Desktop](desktop-connect-azure-cost-management.md)
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
 * [Sources de données dans Power BI Desktop](desktop-data-sources.md)
 * [Mettre en forme et combiner des données dans Power BI Desktop](desktop-shape-and-combine-data.md)

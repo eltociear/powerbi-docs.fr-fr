@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2e41a3f5b1d1bd945e1ab4566abed1589b20c148
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 2b9fd3fc971d2cf73aabb2033d3a64565333bc67
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67264911"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543737"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Concepts de base pour les consommateurs du service Power BI
 
-Cet article suppose que vous avez déjà lu la [Vue d’ensemble de Power BI](../power-bi-overview.md) et que vous vous êtes identifié comme ***consommateur*** Power BI. Les consommateurs reçoivent du contenu Power BI, comme des tableaux de bord et des rapports, de leurs collègues. Les consommateurs utilisent le service Power BI, qui est la version basée sur un site web de Power BI.
+Cet article suppose que vous avez déjà lu la [Vue d’ensemble de Power BI](../power-bi-overview.md) et que vous vous êtes identifié comme [consommateur ***Power BI***](end-user-consumer.md). Les consommateurs reçoivent du contenu Power BI, comme des tableaux de bord et des rapports, de leurs collègues. Les consommateurs utilisent le service Power BI, qui est la version basée sur un site web de Power BI.
 
 Vous entendrez sans aucun doute le terme « Power BI Desktop » ou simplement « Desktop ». Il s’agit de l’outil autonome utilisé par les *concepteurs* qui créent et partagent des tableaux de bord et des rapports avec vous. Il est important de savoir qu’il existe d’autres outils Power BI. Tant que vous êtes consommateur, vous travaillez uniquement avec le service Power BI. Cet article s’applique uniquement au service Power BI.
 
@@ -35,7 +35,7 @@ La plupart des consommateurs de Power BI obtiennent le service Power BI car 1)
 
 Pour commencer, ouvrez un navigateur et saisissez **app.powerbi.com**. La première fois que vous ouvrez le service Power BI, vous voyez un contenu semblable à ce qui suit :
 
-![Une capture d’écran de l’écran d’accueil pour le service Power BI.](media/end-user-basic-concepts/power-bi-open.png)
+![Une capture d’écran de l’écran d’accueil pour le service Power BI.](media/end-user-basic-concepts/power-bi-home.png)
 
 Quand vous utiliserez Power BI, vous personnaliserez ce que vous voyez chaque fois que vous ouvrirez le site web. Par exemple, certaines personnes aiment que Power BI s’ouvre sur la **page d’accueil**, tandis que d’autres ont un tableau de bord favori qu’ils veulent voir en premier. Ne vous inquiétez pas, cet article va vous apprendre à personnaliser votre expérience.
 
@@ -87,9 +87,9 @@ Chaque jeu de données représente une source de données unique. Par exemple, l
 
 Quand un concepteur partage une application avec vous, vous pouvez voir quels jeux de données il y a inclus.
 
-![La capture d’écran de l’interface utilisateur de Power BI montre les applications sélectionnées et la flèche pointant vers la section jeux de données sur le canevas.](media/end-user-basic-concepts/power-bi-dataset-list.png)
+![La capture d’écran de l’interface utilisateur de Power BI et la flèche pointant vers la section jeux de données sur le canevas.](media/end-user-basic-concepts/power-bi-dataset-lists.png)
 
-Sur le jeu de données...
+Un jeu de données...
 
 - Peut être utilisé encore et encore par un concepteur de rapports pour créer des tableaux de bord et des rapports
 
@@ -98,10 +98,6 @@ Sur le jeu de données...
 - Des visuels de ce jeu de données peuvent apparaître sur de nombreux tableaux de bord différents
 
   ![Un graphique montrant un jeu de données avec des relations plusieurs à un](media/end-user-basic-concepts/drawing2.png)
-
-De plus, les concepteurs peuvent utiliser les jeux de données d’autres espaces de travail pour créer du contenu (rapports et tableaux de bord) dans votre espace de travail. Power BI montre ces jeux de données à l’aide de l’icône de jeux de données référencée ci-dessous :
-
-![Une capture d’écran d’une base de données avec l’icône du lien.](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 Le module suivant : les visualisations.
 
@@ -131,11 +127,11 @@ _______________________________________________________
 
 Un rapport Power BI se compose d’une ou de plusieurs pages de visualisations, de graphiques et de texte. Toutes les visualisations dans un rapport proviennent d’un seul jeu de données. Les *concepteurs* partagent des rapports avec des *consommateurs* qui [interagissent avec les rapports en *mode Lecture*](end-user-reading-view.md).
 
-![Capture d’écran d’un rapport avec onglets.](media/end-user-basic-concepts/power-bi-report2.png)
+![Capture d’écran d’un rapport avec onglets.](media/end-user-basic-concepts/power-bi-report.png)
 
 Un rapport…
 
-- Peut être associé à plusieurs tableaux de bord (les vignettes épinglées à partir de ce rapport peuvent apparaître sur plusieurs tableaux de bord).
+- peut être associé à plusieurs tableaux de bord (les vignettes épinglées à partir de ce rapport peuvent apparaître sur plusieurs tableaux de bord).
 
 - Peut être créé à l’aide de données provenant d’un seul jeu de données.  
 
@@ -151,7 +147,7 @@ Un tableau de bord représente une vue personnalisée d’une partie d’un ou d
 
   ![Capture d’écran d’un exemple de tableau de bord](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-Une vignette est un rendu d’un visuel qu’un *concepteur* *épingle*, par exemple d’un rapport sur un tableau de bord. Chaque vignette épinglée montre une [visualisation](end-user-visualizations.md) que Power BI a créée à partir d’un jeu de données et épinglée sur ce tableau de bord. Une vignette peut également contenir une page de rapport entière, ainsi que des données de streaming en direct ou une vidéo. Les *concepteurs* ont de nombreuses possibilités d’ajouter des vignettes aux tableaux de bord. Il y en a trop pour les évoquer toutes dans cet article de présentation. Pour plus d’informations, consultez [Vignettes de tableau de bord dans Power BI](end-user-tiles.md).
+Une vignette est un rendu d’un visuel qu’un *concepteur* *épingle*, par exemple d’un rapport sur un tableau de bord. Chaque vignette épinglée montre une [visualisation](end-user-visualizations.md) que le concepteur a créée à partir d’un jeu de données et épinglée sur ce tableau de bord. Une vignette peut également contenir une page de rapport entière, ainsi que des données de streaming en direct ou une vidéo. Les *concepteurs* ont de nombreuses possibilités d’ajouter des vignettes aux tableaux de bord. Il y en a trop pour les évoquer toutes dans cet article de présentation. Pour plus d’informations, consultez [Vignettes de tableau de bord dans Power BI](end-user-tiles.md).
 
 Les consommateurs ne peuvent pas modifier des tableaux de bord. Vous pouvez toutefois ajouter des commentaires, afficher des données associées, les mettre en favori, vous y abonner, et bien plus encore.
 
@@ -183,7 +179,7 @@ _______________________________________________________
 
 Ces collections de tableaux de bord et de rapports organisent du contenu associé dans un seul et même package. Les *concepteurs* Power BI les génèrent et les partagent avec des personnes, des groupes, toute une organisation ou tout le monde. En tant que consommateur, vous pouvez être certain que vous et vos collègues travaillez avec les mêmes données, car il existe une seule version approuvée.
 
-![Capture d’écran des applications sélectionnées dans le volet gauche de Power BI.](media/end-user-basic-concepts/power-bi-app.png)
+![Capture d’écran des applications sélectionnées dans le volet gauche de Power BI.](media/end-user-basic-concepts/power-bi-apps.png)
 
 Les applications sont faciles à trouver et à installer dans le [service Power BI](https://powerbi.com) et sur votre appareil mobile. Après avoir installé une application, vous n’avez pas à mémoriser les noms d’un grand nombre de tableaux de bord. Ils sont tous dans une même application, dans votre navigateur ou sur votre appareil mobile.
 

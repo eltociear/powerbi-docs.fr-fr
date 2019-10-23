@@ -7,16 +7,16 @@ ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c1df7e6293db703922f37c3f28546bb296d1a46a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66050990"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544287"
 ---
 # <a name="troubleshooting-tile-errors"></a>Résolution des erreurs de vignette
 Voici les erreurs courantes que vous pouvez rencontrer avec des vignettes, ainsi qu’une explication à ce sujet.
@@ -65,16 +65,16 @@ Le champ a probablement été supprimé ou renommé. Vous pouvez supprimer le ch
 
 Il s’agit généralement d’un problème temporaire. Si vous réessayez plus tard et que ce message continue à s’afficher, contactez le support technique.
 
-**Vignettes continuent d’afficher des données non filtrées après l’activation de l’authentification unique (SSO).**
+**Les vignettes continuent à afficher les données non filtrées après l’activation de l’authentification unique (SSO).**
 
-Cela peut se produire si le jeu de données sous-jacent est configuré pour utiliser le mode DirectQuery ou une connexion active à Analysis Services via une passerelle de données sur site. Dans ce cas, les vignettes continuent afficher les données non filtrées après l’activation de l’authentification unique pour la source de données jusqu'à ce que la prochaine actualisation de la vignette est échéance. À la prochaine actualisation de la vignette, Power BI utilise l’authentification unique configurée et les vignettes affichent les données filtrées en fonction de l’identité de l’utilisateur. 
+Cela peut se produire si le jeu de données sous-jacent est configuré pour utiliser le mode DirectQuery ou une connexion active à Analysis Services par le biais d’une passerelle de données locale. Dans ce cas, les vignettes continuent d’afficher les données non filtrées après l’activation de l’authentification unique pour la source de données, jusqu’à l’actualisation de vignette suivante. À l’actualisation de vignette suivante, Power BI utilise l’authentification unique telle qu’elle est configurée, et les vignettes affichent les données filtrées en fonction de l’identité de l’utilisateur. 
 
-Si vous souhaitez voir les données filtrées immédiatement, vous pouvez forcer une actualisation des vignettes en sélectionnant les points de suspension (...) dans le coin supérieur droit d’un tableau de bord, **actualiser les vignettes du tableau de bord**.
+Si vous voulez voir les données filtrées immédiatement, vous pouvez forcer une actualisation des vignettes en sélectionnant les points de suspension (...) dans l’angle supérieur droit d’un tableau de bord, puis l’option **Actualiser les vignettes du tableau de bord**.
 
-En tant que propriétaire d’un jeu de données, vous pouvez également modifier la fréquence d’actualisation de vignette et affectez-lui la valeur 15 minutes afin d’accélérer l’actualisation de la vignette. Sélectionnez l’icône d’engrenage dans le coin supérieur droit du service Power BI, puis sélectionnez **paramètres**. Sur le **paramètres** page, sélectionnez le **jeux de données** onglet. Développez **actualisation du cache planifiée** et modifiez **fréquence d’actualisation**. Veillez à que réinitialiser la configuration à la fréquence d’actualisation d’origine une fois que Power BI effectue la prochaine actualisation de la vignette.
+En tant que propriétaire du jeu de données, vous pouvez également modifier la fréquence d’actualisation des vignettes et la définir sur 15 minutes pour accélérer l’actualisation des vignettes. Sélectionnez l’icône d’engrenage dans l’angle supérieur droit du Service Power BI, puis sélectionnez **Paramètres**. Dans la page **Paramètres**, sélectionnez l’onglet **Jeux de données**. Développez **Actualisation du cache planifiée** et modifiez la **Fréquence d'actualisation**. Veillez à réinitialiser la configuration à la fréquence d’actualisation d’origine une fois que Power BI effectué l’actualisation suivante de la vignette.
 
 > [!NOTE]
-> Le **actualisation du cache planifiée** section est uniquement disponible pour les jeux de données en mode de DirectQuery/LiveConnection. Jeux de données en mode d’importation ne nécessite pas une actualisation des vignettes distinct, car les vignettes sont actualisées automatiquement lors de la prochaine actualisation planifiée des données.
+> La section **Actualisation du cache planifiée** est disponible uniquement pour les jeux de données en mode DirectQuery/Connexion active. Les jeux de données en mode Importation ne nécessitent pas d’actualisation de vignette distincte, car les vignettes sont actualisées automatiquement lors de l’actualisation planifiée des données suivante.
 
 ## <a name="contact-support"></a>Contact support
 Si vous rencontrez toujours le même problème, [contactez le support technique](https://support.powerbi.com) pour approfondir les recherches.

@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: 44534f2adbc4f1f39a0c65e11d646fd8fd67be71
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71944823"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307659"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Publier des visuels Power BI dans AppSource
 
 Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser.
 
-Une fois que vous avez créé votre visuel personnalisé, vous pouvez le publier sur AppSource pour que les utilisateurs puissent le trouver et l’utiliser. Avant cela, vous devez effectuer quelques étapes de préparation. Pour plus d’informations sur la création d’un visuel personnalisé, consultez [Développement d’un visuel personnalisé Power BI](custom-visual-develop-tutorial.md).
+Une fois que vous avez créé votre visuel personnalisé, vous pouvez le publier sur AppSource pour que les utilisateurs puissent le trouver et l’utiliser. Avant cela, vous devez effectuer quelques étapes de préparation. Pour plus d’informations sur la création d’un visuel personnalisé, consultez [Développement d’un visuel personnalisé Power BI](visuals/custom-visual-develop-tutorial.md).
 
    ![Office Store](media/office-store/appsource-01.png)
 
@@ -147,7 +147,7 @@ Une fois votre visuel créé, vous pouvez éventuellement le faire certifier. Ce
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Développement d’un visuel personnalisé Power BI](custom-visual-develop-tutorial.md)  
+[Développement d’un visuel personnalisé Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualisations dans Power BI](../visuals/power-bi-report-visualizations.md)  
 [Visualisations personnalisées dans Power BI](../power-bi-custom-visuals.md)  
 [*Certification* d’un visuel personnalisé](../power-bi-custom-visuals-certified.md)

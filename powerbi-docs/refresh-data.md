@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325032"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307949"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -309,6 +309,13 @@ L’icône d’avertissement permet d’indiquer les problèmes actuels liés au
 > [!NOTE]
 > Vous trouverez un lien pour afficher l’historique des actualisations dans les paramètres du jeu de données. Vous pouvez également récupérer l’historique des actualisations par programmation à l’aide de l’[API REST Power BI](/rest/api/power-bi/datasets/getrefreshhistoryingroup). En utilisant une solution personnalisée, vous pouvez superviser l’historique des actualisations de plusieurs jeux de données de manière centralisée.
 
+## <a name="automatic-page-refresh"></a>Actualisation automatique de la page
+
+L’actualisation automatique de la page fonctionne au niveau de la page de rapport et permet aux créateurs de rapports de définir un intervalle d’actualisation pour les visuels dans une page qui est uniquement active lorsque la page est consommée. L’actualisation automatique de la page est uniquement disponible pour les sources de données DirectQuery. L’intervalle d’actualisation minimal dépend du type d’espace de travail dans lequel le rapport est publié et des paramètres d’administration de capacité pour les espaces de travail Premium.
+
+Pour plus d’informations sur l’actualisation automatique de la, consultez l’article [Actualisation automatique de la page](desktop-automatic-page-refresh.md).
+
+
 ## <a name="best-practices"></a>Meilleures pratiques
 
 La vérification régulière de l’historique des actualisations de vos jeux de données est l’une des pratiques les plus importantes que vous puissiez adopter pour vous assurer que vos rapports et tableaux de bord utilisent les données actuelles. Si vous découvrez des problèmes, résolvez-les rapidement et, si nécessaire, contactez les propriétaires de sources de données et les administrateurs de passerelle.
@@ -324,6 +331,7 @@ Par ailleurs, tenez compte des recommandations suivantes pour établir et gérer
 - Utilisez un déploiement de passerelle de données d’entreprise fiable pour connecter vos jeux de données à des sources de données locales. Si vous constatez des échecs d’actualisation liés à la passerelle, notamment une passerelle non disponible ou surchargée, contactez les administrateurs de la passerelle pour ajouter des passerelles à un cluster existant ou déployer un nouveau cluster (scale-up/scale-out).
 - Utilisez des passerelles de données distinctes pour les jeux de données Importation et les jeux de données DirectQuery/LiveConnect de manière à ce que les importations de données durant l’actualisation planifiée n’impactent pas les performances des rapports et des tableaux de bord sur les jeux de données DirectQuery/LiveConnect, ceux-ci interrogeant les sources de données à chaque interaction.
 - Vérifiez que Power BI peut envoyer des notifications d’échec d’actualisation à votre boîte aux lettres. Les filtres anti-courrier indésirable peuvent bloquer les e-mails ou les déplacer dans un dossier séparé où vous ne les remarquerez peut-être pas immédiatement.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 

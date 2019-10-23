@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 034dc98b1e623bd0d509eb2d174cdc3e3b865067
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f88d1e0458e6a1b3abe20c0b4dd889c037ede612
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514317"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307343"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout élément visuel ou tableau de bord qui peut être créé dans Power BI peut également l’être pour afficher et mettre à jour des données et des éléments visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des mesures d’utilisation de service, ou tout autre dispositif permettant de collecter ou transmettre des données.
@@ -235,6 +235,13 @@ Voici une liste de vérification pour résoudre le problème :
 4. Est-ce que la requête Azure Stream Analytics effectue une sortie explicite vers la sortie Power BI ? (en utilisant le mot clé INTO)
 5. Le travail Azure Stream Analytics a-t-il des données transitant par son intermédiaire ? Le jeu de données est créé uniquement lorsqu’il existe des données transmises.
 6. Pouvez-vous consulter les journaux Azure Stream Analytics pour voir s’il y a des avertissements ou erreurs ?
+
+## <a name="automatic-page-refresh"></a>Actualisation automatique de la page
+
+L’actualisation automatique de la page fonctionne au niveau de la page de rapport et permet aux créateurs de rapports de définir un intervalle d’actualisation pour les visuels dans une page qui est uniquement active lorsque la page est consommée. L’actualisation automatique de la page est uniquement disponible pour les sources de données DirectQuery. L’intervalle d’actualisation minimal dépend du type d’espace de travail dans lequel le rapport est publié et des paramètres d’administration de capacité pour les espaces de travail Premium.
+
+Pour plus d’informations sur l’actualisation automatique de la, consultez l’article [Actualisation automatique de la page](desktop-automatic-page-refresh.md).
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 Voici quelques liens qui peuvent vous être utiles lorsque vous travaillez avec le streaming en temps réel dans Power BI :

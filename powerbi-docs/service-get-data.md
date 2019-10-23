@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e6b0d7db9f82d8bc68f230858799f6afbcad1c82
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200954"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511665"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Sources de données pour le service Power BI
 Les données sont au cœur de Power BI. Supposons que vous explorez des données. Vous pouvez le faire en créant des graphiques et des tableaux de bord ou en posant des questions avec **Questions et réponses**. Les visualisations et les réponses que vous voyez tirent leurs données sous-jacentes d’un jeu de données. Mais d’où provient ce jeu de données ? Il vient d’une source de données.
@@ -111,7 +111,11 @@ L’actualisation des données est un élément essentiel de Power BI et beaucou
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 Pour toutes les sources de données utilisées dans le service Power BI, prenez en considération les limitations suivantes. D’autres limitations s’appliquent à des fonctionnalités spécifiques, mais la liste suivante s’applique à l’ensemble du service Power BI :
 
-* **Limite de taille du jeu de données** - Il existe une limite de 1 Go pour chaque jeu de données dans le service Power BI.
-* **Limite du nombre de lignes** - Le nombre maximal de lignes dans votre jeu de données quand vous n’utilisez pas **DirectQuery** est de 2 milliards. Trois de ces lignes sont réservées, donc cela donne un maximum de 1 999 999 997 lignes utilisables. Le nombre maximal de lignes quand vous utilisez **DirectQuery** est de 1 million.
-* **Limite du nombre de colonnes** - Le nombre maximal de colonnes autorisées dans l’ensemble des tableaux d’un jeu de données est de 16 000 colonnes. Cette limite s’applique au service Power BI et aux jeux de données utilisés dans Power BI Desktop. Power BI utilise une colonne de numéros de ligne interne par tableau dans le jeu de données, ce qui signifie que le nombre maximal de colonnes est de 16 000 moins une pour chaque tableau du jeu de données.
+* **Limite de la taille du jeu de données**  : Il existe une limite de 1 Go pour les jeux de données stockés dans les capacités partagées du service Power BI. Si vous avez besoin de jeux de données plus volumineux, vous pouvez utiliser [Power BI Premium](service-premium-what-is.md).
+
+* **Valeurs distinctes dans une colonne**  : Lors de la mise en cache des données dans un jeu de données Power BI (ce qui est parfois appelé mode « Importation »), il existe une limite de 1 999 999 997 sur le nombre de valeurs distinctes qui peuvent être stockées dans une colonne.
+
+* **Limite de lignes**  : Lors de l’utilisation de **DirectQuery**, Power BI impose une limite aux résultats de requête qui sont envoyés à votre source de données sous-jacente. Si la requête envoyée à la source de données renvoie plus de 1 million de lignes, une erreur s’affiche et la requête échoue. Vos données sous-jacentes peuvent toujours contenir plus de 1 million de lignes. Il est peu probable que vous rencontriez cette limite, car la plupart des rapports regroupent les données en ensembles plus petits de résultats.
+
+* **Limite du nombre de colonnes** - Le nombre maximal de colonnes autorisées dans l’ensemble des tableaux d’un jeu de données est de 16 000 colonnes. Cette limite s’applique au service Power BI et aux jeux de données utilisés dans Power BI Desktop. Power BI effectue le suivi du nombre de colonnes et de tables dans le jeu de données de cette façon, ce qui signifie que le nombre maximal de colonnes est de 16 000 moins une pour chaque table dans le jeu de données.
 

@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 2befce7914fc295ff4a6124be10183d5ff20106d
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299346"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544326"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Cartes choroplèthes dans Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Une carte choroplèthe utilise des ombrages, des teintes ou des motifs pour représenter proportionnellement les variations d’une valeur entre des zones géographiques ou des régions.  Visualisez rapidement les écarts relatifs grâce aux ombrages allant du clair (moins fréquent/plus bas) au foncé (plus fréquent/plus élevé).    
 
 ![carte des États-Unis](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
@@ -44,27 +47,24 @@ Les cartes choroplèthes sont conseillées :
 * pour obtenir une vue d’ensemble de la répartition entre les zones géographiques.
 
 ### <a name="prerequisites"></a>Conditions préalables
-- Service Power BI ou Power BI Desktop
-- Exemple Vente et marketing
+Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**
+   
+2. Rechercher votre copie du **fichier PBIX de l’exemple Analyse de la vente au détail**
 
-Pour la suite, le didacticiel utilise le service Power BI, et non Power BI Desktop.
+1. Ouvrez le **fichier PBIX de l’exemple Analyse de la vente au détail** dans la vue Rapport ![Capture d’écran de l’icône de la vue Rapport.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Sélectionner ![Capture d’écran de l’onglet jaune.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) pour ajouter une nouvelle page.
+
 
 ## <a name="create-a-basic-filled-map"></a>Créer une carte choroplèthe simple
 Dans cette vidéo, Kim crée une carte de base et la convertit en carte choroplèthe.
+   > [!NOTE]
+   > Cette vidéo utilise une version antérieure de Power BI Desktop.
+   > 
+   > 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
-
-### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Obtenir des données et ajouter une nouvelle page vierge au rapport
-1. Pour créer votre propre carte choroplèthe, [téléchargez l’exemple Vente et marketing](../sample-datasets.md) en vous connectant à Power BI et en sélectionnant  **Obtenir les données \> Exemples \> Ventes et marketing\> Se connecter**. Ou obtenez l’application **Power BI Ventes et marketing** sur appsource.com. 
-
-2. Ouvrez le rapport Ventes et marketing.
-
-   ![Ouverture du rapport Ventes et marketing](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
-3. Power BI ouvre le rapport. Sélectionnez **Modifier le rapport** pour ouvrir le rapport en [Mode Édition](../service-interact-with-a-report-in-editing-view.md).
-
-4. Ajoutez une nouvelle page en sélectionnant le signe « + » jaune en bas du canevas de rapport.
-
-    ![Onglets Rapport](media/power-bi-visualization-filled-maps-choropleths/power-bi-new-page.png)
 
 ### <a name="create-a-filled-map"></a>Créer une carte choroplèthe
 1. Dans le volet Champs, sélectionnez le champ **Géo** \> **État**.    
@@ -75,9 +75,9 @@ Dans cette vidéo, Kim crée une carte de base et la convertit en carte choropl�
    ![modèles avec l’icône de carte choroplèthe mis en évidence](media/power-bi-visualization-filled-maps-choropleths/img003.png)
 3. Filtrez la carte pour afficher uniquement la zone continentale des États-Unis.
 
-   a.  En bas du volet Visualisations, recherchez la zone **Filtres** .
+   a.  À gauche du volet Visualisations, recherchez le volet **Filtres** . Développez-le s’il est réduit
 
-   b.  Pointez sur **State** (État) et cliquez sur la flèche de développement  
+   b.  Pointez sur **State** (État) et sélectionnez la flèche de développement  
    ![filtres de niveau visuel indiquant State(All) ](media/power-bi-visualization-filled-maps-choropleths/img004.png)
 
    c.  Cochez la case **All** et décochez la case **AK**.
@@ -115,11 +115,11 @@ La mise en surbrillance d’un emplacement sur une carte choroplèthe entraîne 
 
     ![Onglet Sentiment sélectionné](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. Déplacez et redimensionnez les visualisations dans la page afin de libérer de la place, puis collez (Ctrl+V) la carte choroplèthe du rapport précédent.
+4. Déplacez et redimensionnez les visualisations dans la page afin de libérer de la place, puis collez (Ctrl+V) la carte choroplèthe du rapport précédent. (Voir les images suivantes)
 
    ![Carte choroplèthe ajoutée à la page Sentiments](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Sur la carte choroplèthe, sélectionnez un État.  Cela met en surbrillance les autres visualisations sur la page. La sélection de **Texas**, par exemple, montre que le sentiment est de 74 ; Texas se trouve dans la région centrale \#23.   
+5. Sur la carte choroplèthe, sélectionnez un État.  Cela met en surbrillance croisée et applique un filtrage croisé aux autres visualisations sur la page. La sélection de **Texas**, par exemple, montre que le sentiment est de 75 ; Texas se trouve dans la région centrale #23.   
    ![Texas sélectionné](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
 2. Sélectionnez un point de données sur le graphique en courbes VanArsdel - Sentiment par mois. Cela permet de filtrer la carte choroplèthe pour afficher l’indice de sentiment pour VanArsdel et pas pour la concurrence de VanArsdel.  
    ![nouvelles couleurs](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)
