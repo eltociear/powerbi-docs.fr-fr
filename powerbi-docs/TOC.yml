@@ -211,8 +211,6 @@
               href: desktop-calculated-tables.md
             - name: "Mesures dans Power\_BI\_Desktop"
               href: desktop-measures.md
-            - name: Modifier un schéma linguistique pour Questions et réponses
-              href: power-bi-q-and-a-linguistic-schema.md
             - name: Importation et affichage d’indicateurs de performance clés (KPI) (version préliminaire)
               href: desktop-import-and-display-kpis.md
         - name: Créer des rapports
@@ -227,8 +225,6 @@
               href: desktop-tooltips.md
             - name: Exporter au format PDF et imprimer des rapports
               href: desktop-export-to-pdf.md
-            - name: "Questions et réponses dans Power\_BI\_Desktop"
-              href: desktop-qna-in-reports.md
             - name: Volet Analyse de Power BI Desktop
               href: desktop-analytics-pane.md
             - name: Utiliser des insights pour expliquer les hausses et les baisses
@@ -443,7 +439,7 @@
           href: service-tutorial-use-cognitive-services.md
         - name: Intégration de Machine Learning
           href: service-tutorial-invoke-machine-learning-model.md
-        - name: Créer un modèle Machine Learning (préversion)
+        - name: Créer un modèle Machine Learning
           href: service-tutorial-build-machine-learning-model.md
         - name: Actualiser les données à partir de SQL Server
           href: service-gateway-sql-tutorial.md
@@ -717,7 +713,7 @@
               href: service-machine-learning-integration.md
             - name: Utiliser Cognitive Services dans Power BI
               href: service-cognitive-services.md
-            - name: Machine Learning automatisé dans Power BI (préversion)
+            - name: Machine Learning automatisé dans Power BI
               href: service-machine-learning-automated.md
         - name: Traçabilité des données
           href: service-data-lineage.md
@@ -1161,6 +1157,8 @@
       href: guidance/import-modeling-data-reduction.md
     - name: Fonction DIVIDE ou opérateur de division (/)
       href: guidance/dax-divide-function-operator.md
+    - name: L’importance du Query Folding
+      href: guidance/power-query-folding.md
     - name: Utilisation appropriée des fonctions d’erreur
       href: guidance/dax-error-functions.md
     - name: Bonnes pratiques pour les dataflows
