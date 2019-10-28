@@ -1,6 +1,8 @@
-- name: Administration Power BI
+- name: "Documentation pour les administrateurs Power\_BI"
+  href: index.yml
+  expanded: true
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       expanded: true
       items:
         - name: Présentation de l’administration de Power BI
@@ -8,7 +10,7 @@
     - name: Concepts
       expanded: true
       items:
-        - name: "Rôle d’administration dans Office\_365"
+        - name: "Rôle d’administration dans Microsoft\_365"
           href: ../service-admin-role.md
         - name: Foire aux questions (FAQ)
           href: ../service-admin-faq.md
@@ -22,9 +24,9 @@
               href: ../service-admin-licensing-organization.md
             - name: "Acheter Power\_BI Pro"
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: "S’inscrire avec une version d’évaluation d’Office\_365"
+            - name: "S’inscrire à une version d’essai Microsoft\_365"
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-            - name: "Ajouter Power BI avec un partenaire Office\_365"
+            - name: "Ajouter Power BI avec un partenaire Microsoft\_365"
               href: ../service-admin-syndication-partner.md
         - name: Utilisation du portail d’administration
           href: ../service-admin-portal.md
@@ -32,19 +34,19 @@
           href: ../service-admin-where-is-my-tenant-located.md
         - name: Trouver les utilisateurs qui se sont connectés
           href: ../service-admin-access-usage.md
-        - name: "Audit Power\_BI"
+        - name: Audit
           href: ../service-admin-auditing.md
         - name: Suivre l’intégrité du service
           href: ../service-admin-health.md
-        - name: "Fermeture de votre compte Power\_BI"
+        - name: Fermeture de votre compte
           href: ../service-admin-closing-your-account.md
-        - name: "Power\_BI et ExpressRoute"
+        - name: ExpressRoute
           href: ../service-admin-power-bi-expressroute.md
         - name: Utilisation d’Azure AD B2B
           href: ../service-admin-azure-ad-b2b.md
-        - name: "Sécurité au niveau des lignes avec Power\_BI"
+        - name: Sécurité au niveau des lignes
           href: ../service-admin-rls.md
-        - name: "Espace de travail archivé Power\_BI"
+        - name: Espace de travail archivé
           href: ../service-admin-power-bi-archived-workspace.md
         - name: Configurer des applications mobiles avec Intune
           href: ../service-admin-mobile-intune.md

@@ -1047,6 +1047,8 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=849021'
             - name: Accès à des Jeux de données partagés en tant que flux OData
               href: report-server/access-dataset-odata.md
+            - name: Changer les chaînes de connexion de source de données avec PowerShell
+              href: report-server/connect-data-source-apis.md
             - name: Configurer une actualisation planifiée
               href: report-server/configure-scheduled-refresh.md
             - name: Ajouter des commentaires à un rapport
