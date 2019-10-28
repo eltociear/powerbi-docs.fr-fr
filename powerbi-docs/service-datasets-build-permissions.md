@@ -54,7 +54,7 @@ Vous pouvez supprimer l’autorisation de création dont dispose un utilisateur 
 
     ![Gérer les autorisations](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Sélectionnez les points de suspension (...) en regard d'un nom > **	Supprimer l'autorisation de génération**.
+1. Sélectionnez les points de suspension (...) en regard d'un nom > **Supprimer l'autorisation de génération**.
 
     ![Supprimer l'autorisation de génération](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
