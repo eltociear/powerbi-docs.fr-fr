@@ -2,7 +2,7 @@
   href: power-bi-consumer-landing.md
 - name: Service Power BI pour les consommateurs
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       items:
         - name: "Qu’est-ce qu’un consommateur Power BI\_?"
           href: end-user-consumer.md
@@ -48,6 +48,8 @@
               href: end-user-report-open.md
             - name: Modifier l’affichage d’un rapport
               href: end-user-report-view.md
+            - name: Changer l’ordre de tri dans un visuel
+              href: end-user-change-sort.md
             - name: Utiliser des filtres dans un rapport
               href: end-user-report-filter.md
             - name: Découvrir comment les visuels d’un rapport effectuent un filtrage croisé entre eux
@@ -96,7 +98,7 @@
               href: end-user-preview-features.md
             - name: "Obtenir des notifications dans le service Power\_BI"
               href: end-user-notification-center.md
-        - name: Obtenir les données
+        - name: Obtenir des données
           items:
             - name: "Applications dans Power\_BI"
               href: end-user-apps.md
@@ -124,7 +126,7 @@
           href: end-user-insight-types.md
 - name: "Applications mobiles Power\_BI"
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       items:
         - name: Présentation des applications mobiles
           href: mobile/mobile-apps-for-mobile-devices.md
