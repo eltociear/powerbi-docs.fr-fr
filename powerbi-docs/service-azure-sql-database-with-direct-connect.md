@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 09/16/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: a80c549ab3aa61e377b657ad426d240a6a485fdd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: f2d175896876bd6ea6f76b58b0eda0e5100dcfe1
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074248"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060903"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database avec DirectQuery
 
@@ -55,7 +55,7 @@ Le nom complet de votre serveur et celui de votre base de données se trouvent d
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Utiliser DirectQuery dans Power BI Desktop](desktop-use-directquery.md)  
-* [Qu’est-ce que Power BI ?](power-bi-overview.md)  
+* [Qu’est-ce que Power BI ?](fundamentals/power-bi-overview.md)  
 * [Obtenir des données pour Power BI](service-get-data.md)  
 
 D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)

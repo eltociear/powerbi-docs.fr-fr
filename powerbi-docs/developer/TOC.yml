@@ -71,6 +71,8 @@
               href: visuals/landing-page.md
             - name: URL de lancement
               href: visuals/launch-url.md
+            - name: API de stockage local
+              href: visuals/local-storage.md
             - name: Événements de rendu
               href: visuals/event-service.md
             - name: Tri

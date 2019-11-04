@@ -11,15 +11,16 @@ ms.topic: conceptual
 ms.date: 09/25/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d50ed2c06c81514fa6fb129ca3691ec56b8116b9
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 0f7926e536ba80549e8a6e1cdce5a7cf609efaba
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256211"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72716710"
 ---
 # <a name="display-the-dashboards-and-reports-that-have-been-shared-with-me"></a>Afficher les tableaux de bord et les rapports qui ont été partagés avec moi
 
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Quand un collègue partage du contenu avec vous, à l’aide du bouton **Partager**, il s’affiche dans votre conteneur **Partagés avec moi**. Le tableau de bord ou le rapport est disponible uniquement à partir de **Partagés avec moi** et non depuis **Applications**.
 

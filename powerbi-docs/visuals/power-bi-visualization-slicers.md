@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/14/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9b6bab357a206184f07da96d3b516107628a851d
-ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
+ms.openlocfilehash: d400e2013d8f2cb8dda627cda790191fce52503b
+ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72164417"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72775888"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 
@@ -40,7 +40,7 @@ Les segments Power BI présentent les limitations suivantes :
 
 - Les segments ne prennent pas en charge les champs d’entrée.
 - L’exploration n’est pas prise en charge pour les segments.
-- Les segments ne prennent pas en charge les filtres au niveau des visuels.
+
 
 ## <a name="create-slicers"></a>Créer des segments
 

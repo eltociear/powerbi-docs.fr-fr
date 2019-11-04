@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 84afdf7072241533bf1e70d6a2a49d18c3da1d8f
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: d0372af2727861a4af0f4ebb983cb447b020b821
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307823"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021355"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Obtenir un visuel Power BI certifié
 
@@ -71,7 +71,7 @@ Pour faire [certifier](#get-a-power-bi-visual-certified) un visuel personnalisé
 
 * Si des propriétés dans capabilities.json sont modifiées, assurez-vous qu’elles n’interrompent pas les rapports de l’utilisateur existant.
 
-* Assurez-vous que le visuel est conforme à la [Marche à suivre pour les visuels Power BI](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Aucun filigrane n’est autorisé**.
+* Assurez-vous que le visuel est conforme à la [Marche à suivre pour les visuels Power BI](./developer/guidelines-powerbi-visuals.md#guidelines-for-power-bi-visuals-with-additional-purchases). **Aucun filigrane n’est autorisé**.
 
 * Utilise uniquement des composants OSS publics consultables (bibliothèques JS ou code TypeScript publics. Le code source est disponible pour revue et ne présente pas de vulnérabilités connues). Nous ne pouvons pas vérifier un visuel personnalisé à l’aide d’un composant commercial.
 
@@ -192,7 +192,7 @@ Pour soumettre un visuel personnalisé en vue de sa certification :
 
 ## <a name="faq"></a>FORUM AUX QUESTIONS
 
-Pour plus d’informations sur les visuels, consultez [Questions fréquentes sur les visuels certifiés](#get-a-power-bi-visual-certified).
+Pour plus d’informations sur les visuels, consultez [Questions fréquentes sur les visuels certifiés](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
