@@ -7,17 +7,17 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: overview
-ms.date: 08/21/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 7c96b8a21cceb571b1dcf3cfe9567760915c5740
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 8b1876d0990cc21d854ac96329e5ab4a5632f22d
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70200831"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430267"
 ---
-# <a name="power-bi-for-consumers"></a>Power BI pour les consommateurs
+# <a name="the-power-bi-service-for-consumers"></a>Service Power BI pour les consommateurs
 
 Vous vivez dans une culture de la donnée, où les décisions métier sont basées sur des faits, et non pas sur des opinions. Vous avez besoin de données pour prendre ces décisions et vos collègues vous y aident.     
  

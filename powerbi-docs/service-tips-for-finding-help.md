@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9a7baa8284d90242584aa529fb66bc6446402924
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 668df24e8e4df2257a78a5f7a843abc65df3ef8f
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715432"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060302"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 conseils pour obtenir de l’aide avec vos questions Power BI
 Vous sentez-vous parfois frustré en utilisant Power BI ou rencontrez-vous parfois des difficultés à obtenir des réponses à vos questions relatives à Power BI au moment où vous en avez besoin ? 
@@ -69,6 +69,6 @@ Si tout le reste échoue, le mieux est d’observer le système. Souvent, les pe
 Par exemple, vous vous demandez si vous pouvez partager des tableaux de bord avec un groupe de sécurité. Pour répondre à cette question, accédez à la boîte de dialogue Partager et essayez d’ajouter un groupe de sécurité. Dans les deux cas, vous aurez votre réponse après ce test.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Qu’est-ce que Power BI ?](power-bi-overview.md)
+* [Qu’est-ce que Power BI ?](fundamentals/power-bi-overview.md)
 * Posez vos questions à la [Communauté Power BI](http://community.powerbi.com/)
 * Le problème persiste ? Visitez la [page de support Power BI](https://powerbi.microsoft.com/support/).
