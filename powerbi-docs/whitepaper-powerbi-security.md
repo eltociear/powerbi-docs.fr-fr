@@ -8,33 +8,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 1ae51620a51c0dc76cd50bd85fc09aa2bfc8e026
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: 4cb2ae69044b156d5f8a4bd554f8386808fb6b9e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69561030"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430501"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
-**Résumé :** Power BI est une offre de service logiciel en ligne (*SaaS*, Software as a Service) de Microsoft qui vous permet de créer facilement et rapidement des tableaux de bord, des rapports, des jeux de données et des visualisations de décisionnel en libre-service. Avec Power BI, vous pouvez vous connecter à de nombreuses sources de données différentes, combiner et mettre en forme les données à partir de ces connexions, puis créer des rapports et des tableaux de bord partageables.
+**Résumé :** Power BI est une offre de service logiciel en ligne (*Saas*ou Software as a service) de Microsoft qui vous permet de créer facilement et rapidement des tableaux de bord, des rapports, des jeux de données et des visualisations en libre-service. Avec Power BI, vous pouvez vous connecter à de nombreuses sources de données différentes, combiner et mettre en forme les données à partir de ces connexions, puis créer des rapports et des tableaux de bord partageables.
 
-**Rédacteur :** David Iseminger
+**Enregistreur :** David Iseminger
 
-**Réviseurs techniques :** Pedram Rezaei, Cristian Petculescu, Siva Harinath, Tod Manning, Haydn Richardson, Adam Wilson, Ben Childs, Robert Bruckner, Sergei Gundorov, Kasper de Jonge
+**Réviseurs techniques :** Pedram Rezaei, Cristian Petculescu, Siva Harinath, Tod équipage, Haydn Richardson, Adam Wilson, Ben Childs, Robert Bruckner, Sergei Gundorov, Kasper de Jonge
 
 **S’applique à :** Power BI SaaS, Power BI Desktop, Power BI Embedded, Power BI Premium
 
 > [!NOTE]
 > Vous pouvez enregistrer ou imprimer ce livre blanc en sélectionnant **Imprimer** dans votre navigateur, puis **Enregistrer au format PDF**.
 
-## <a name="introduction"></a>Présentation
+## <a name="introduction"></a>Introduction
 
 **Power BI** est une offre de service logiciel en ligne (_SaaS_, ou Software as a Service) de Microsoft qui vous permet de créer facilement et rapidement des tableaux de bord, des rapports, des jeux de données et des visualisations de décisionnel en libre-service. Avec Power BI, vous pouvez vous connecter à de nombreuses sources de données différentes, combiner et mettre en forme les données à partir de ces connexions, puis créer des rapports et des tableaux de bord partageables.
 
-Le service Power BI est régi par les [Conditions d’utilisation de Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) et la [Déclaration de confidentialité de Microsoft Enterprise](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Pour l’emplacement du traitement des données, consultez les modalités relatives à l’emplacement de traitement des données dans les Conditions d’utilisation de Microsoft Online Services. Pour les informations sur la conformité, le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter) est la ressource principale pour Power BI. L’équipe Power BI travaille sans relâche pour proposer à ses clients les dernières innovations et une meilleure productivité. Power BI est actuellement au niveau D du [Framework de conformité Office 365](http://go.microsoft.com/fwlink/p/?LinkID=618494).
+Le service Power BI est régi par les [Conditions d’utilisation de Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) et la [Déclaration de confidentialité de Microsoft Enterprise](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Pour l’emplacement du traitement des données, consultez les modalités relatives à l’emplacement de traitement des données dans les Conditions d’utilisation de Microsoft Online Services. Pour les informations sur la conformité, le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter) est la ressource principale pour Power BI. L’équipe Power BI travaille sans relâche pour proposer à ses clients les dernières innovations et une meilleure productivité. Power BI se trouve actuellement dans le niveau D de l' [infrastructure de conformité Office 365](http://go.microsoft.com/fwlink/p/?LinkID=618494).
 
 Cet article décrit la sécurité Power BI en fournissant une explication de l’architecture de Power BI, en expliquant comment les utilisateurs s’authentifient auprès de Power BI et comment sont établies les connexions de données, puis en décrivant comment Power BI stocke et déplace les données dans le service. La dernière section est consacrée aux questions liées à la sécurité.
 
@@ -66,7 +66,7 @@ C’est par le biais du cluster **principal** que les clients authentifiés inte
 
 Le **rôle Passerelle** sert de passerelle entre les demandes des utilisateurs et le service Power BI. Les utilisateurs n’interagissent directement avec aucun rôle autre que le rôle Passerelle.
 
-**Important :** Il est important de noter que _seuls_ les rôles Gestion des API Azure (**APIM**) et Passerelle (**GW**) sont accessibles par le biais de l’Internet public. Ils fournissent entre autres des fonctionnalités d’authentification, d’autorisation, de protection DDoS, de limitation, d’équilibrage de charge et de routage.
+**Important :** Il est impératif de noter que _seuls_ les rôles Gestion des API Azure (**APIM**) et passerelle (**GW**) sont accessibles par le biais de l’Internet public. Ils fournissent entre autres des fonctionnalités d’authentification, d’autorisation, de protection DDoS, de limitation, d’équilibrage de charge et de routage.
 
 La ligne en pointillés dans l’image de cluster **back-end**, ci-dessus, clarifie la limite entre les deux seuls rôles qui sont accessibles aux utilisateurs (à gauche de la ligne en pointillés) et les rôles qui sont accessibles uniquement au système. Quand un utilisateur authentifié se connecte au service Power BI, la connexion et toute requête du client sont acceptées et gérées par le **rôle Passerelle** et par le rôle **Gestion des API Azure**, qui interagit ensuite pour le compte de l’utilisateur avec le reste du service Power BI. Par exemple, quand un client tente d’afficher un tableau de bord, le **rôle Passerelle** accepte cette demande, puis envoie séparément une demande au **rôle Présentation** pour récupérer les données nécessaires au navigateur pour afficher le tableau de bord.
 
@@ -104,7 +104,7 @@ Certaines organisations ont besoin d’une présence Power BI dans plusieurs zon
 
 L’article le plus récent et le plus principal pour les informations sur les zones géographiques est l’article [configurer la prise en charge de plusieurs géo-géo pour Power bi Premium](service-admin-premium-multi-geo.md) . 
 
-Il existe plusieurs détails techniques qui doivent être évalués dans le contexte des lois et réglementations locales lorsque vous travaillez dans différentes zones géographiques. Ces informations sont les suivantes:
+Il existe plusieurs détails techniques qui doivent être évalués dans le contexte des lois et réglementations locales lorsque vous travaillez dans différentes zones géographiques. Ces informations sont les suivantes :
 
 - Une couche d’exécution de requête distante est hébergée dans la région de capacité à distance, afin de garantir que le modèle de données, les caches et le traitement de la plupart des données restent dans la région de capacité distante. Il existe quelques exceptions, comme indiqué dans l’article [multi-géo pour Power bi Premium](service-admin-premium-multi-geo.md) .
 - Un texte de requête mis en cache et le résultat correspondant stocké dans une région distante restent dans cette région au repos, mais d’autres données en transit peuvent passer d’une zone géographique à une autre.
@@ -120,7 +120,7 @@ Les liens suivants fournissent des informations supplémentaires sur les centres
 - [Régions Azure](http://azure.microsoft.com/regions/) : informations sur les emplacements et la présence mondiale d’Azure
 - [Services Azure par région](http://azure.microsoft.com/regions/#services) : liste complète des services Azure (services d’infrastructure et services de plateforme) disponibles auprès de Microsoft dans chaque région.
 
-Actuellement, le service Power BI est disponible dans des régions spécifiques, prises en charge par des centres de données, comme décrit dans le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). Le lien suivant affiche une carte des centres de données Power BI. Vous pouvez pointer sur une région pour voir les centres de données qui s’y trouvent :
+Actuellement, les service Power BI sont disponibles dans des régions spécifiques, servies par les centres de donnés, comme décrit dans le centre de gestion de la [confidentialité Microsoft](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). Le lien suivant affiche une carte des centres de données Power BI. Vous pouvez pointer sur une région pour voir les centres de données qui s’y trouvent :
 
 * [Centres de données Power BI](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
@@ -148,7 +148,7 @@ La séquence d’authentification utilisateur pour le service Power BI se dérou
 
 2. Le navigateur envoie à Microsoft Online Services un cookie qui a été obtenu à partir de la connexion, et ce cookie est inspecté par le **service ASP.NET** dans le **cluster WFE**.
 
-3. Le cluster WFE vérifie auprès du service **Azure Active Directory** (**AAD**) pour authentifier l’abonnement au service Power BI de l’utilisateur et pour obtenir un jeton de sécurité AAD. Quand AAD confirme que l’authentification de l’utilisateur a réussi et retourne un jeton de sécurité AAD, le cluster WFE consulte le **service mondial Power BI**, qui tient à jour une liste des locataires et des emplacements de leurs clusters back-end Power BI, et il détermine quel cluster de service Power BI contient le locataire de l’utilisateur. Le cluster WFE dirige ensuite l’utilisateur vers le cluster Power BI où son locataire se trouve, et retourne une collection d’éléments au navigateur de l’utilisateur :
+3. Le cluster WFE vérifie auprès du service **Azure Active Directory** (**AAD**) pour authentifier l’abonnement au service Power BI de l’utilisateur et pour obtenir un jeton de sécurité AAD. Quand AAD confirme que l’authentification de l’utilisateur a réussi et retourne un jeton de sécurité AAD, le cluster WFE consulte le **service mondial Power BI****** , qui tient à jour une liste des locataires et des emplacements de leurs clusters back-end Power BI, et il détermine quel cluster de service Power BI contient le locataire de l’utilisateur. Le cluster WFE dirige ensuite l’utilisateur vers le cluster Power BI où son locataire se trouve, et retourne une collection d’éléments au navigateur de l’utilisateur :
 
       - Le **jeton de sécurité AAD**
       - Les **informations de session**
@@ -173,7 +173,7 @@ Une requête d’importation de jeu de données se compose d’une collection de
 Le tableau suivant décrit les données Power BI en fonction du type de requête utilisé. Un **X** indique la présence de données Power BI quand vous utilisez le type de requête associé.
 
 
-|  |Import  |DirectQuery  |Live Connect  |
+|  |Importer  |DirectQuery  |Live Connect  |
 |---------|---------|---------|---------|
 |Schéma     |     X    |    X     |         |
 |Données de ligne     |    X     |         |         |
@@ -201,7 +201,7 @@ Les clés de chiffrement de passerelle basées sur la clé de récupération ne 
 
 Pour les sources de données basées sur le cloud, le rôle Déplacement de données chiffre les clés de chiffrement à l’aide de méthodes [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx). Apprenez-en davantage sur la [fonctionnalité de base de données Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx).
 
-#### <a name="datasets"></a>Groupes de données
+#### <a name="datasets"></a>Jeux de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -248,23 +248,23 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
    a. Les rapports peuvent être au format Excel pour Office 365 ou au format Power BI. Ce qui suit s’applique aux métadonnées en fonction du type de rapport :
         
-    &ensp;&ensp; . Les métadonnées de rapport Excel sont stockées sous forme chiffrée dans SQL Azure. Les métadonnées sont également stockées dans Office 365.
+    &ensp; &ensp; un. Les métadonnées de rapport Excel sont stockées sous forme chiffrée dans SQL Azure. Les métadonnées sont également stockées dans Office 365.
 
-    &ensp;&ensp; b. Les rapports de Power BI sont stockés sous forme chiffrée dans la base de données SQL Azure.
+    &ensp; &ensp; b. Les rapports de Power BI sont stockés sous forme chiffrée dans la base de données SQL Azure.
 
 2. Données statiques
 
    Les données statiques comprennent des artefacts tels que des images d’arrière-plan et des visuels personnalisés.
 
-    &ensp;&ensp; . Pour les rapports créés avec Excel pour Office 365, rien n’est stocké.
+    &ensp; &ensp; un. Pour les rapports créés avec Excel pour Office 365, rien n’est stocké.
 
-    &ensp;&ensp; b. Pour les rapports Power BI, les données statiques sont stockées et chiffrées dans Stockage Blob Azure.
+    &ensp; &ensp; b. Pour les rapports Power BI, les données statiques sont stockées et chiffrées dans Stockage Blob Azure.
 
 3. Caches
 
-    &ensp;&ensp; . Pour les rapports créés avec Excel pour Office 365, rien n’est mis en cache.
+    &ensp; &ensp; un. Pour les rapports créés avec Excel pour Office 365, rien n’est mis en cache.
 
-    &ensp;&ensp; b. Pour les rapports Power BI, les données pour les visuels affichés sont mises en cache chiffrées dans Azure SQL Database.
+    &ensp; &ensp; b. Pour les rapports Power BI, les données pour les visuels affichés sont mises en cache chiffrées dans Azure SQL Database.
  
 
 4. Fichiers Power BI Desktop (.pbix) ou Excel (.xlsx) d’origine publiés sur Power BI
@@ -283,7 +283,7 @@ Quelle que soit la méthode de chiffrement utilisée, Microsoft gère le chiffre
 
 Les appareils non volatiles sont des appareils dont la mémoire persiste sans puissance constante. La section suivante décrit les données qui sont stockées de manière transitoire sur des appareils non volatiles. 
 
-#### <a name="datasets"></a>Groupes de données
+#### <a name="datasets"></a>Jeux de données
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -343,7 +343,7 @@ ExpressRoute est un service Azure qui vous permet de créer des connexions priv�
 
 ## <a name="power-bi-mobile"></a>Power BI Mobile
 
-Power BI Mobile est une collection d’applications conçues pour les trois principales plateformes mobiles : Android, iOS et Windows Mobile. Les considérations de sécurité pour les applications Power BI Mobile se répartissent en deux catégories :
+Power BI Mobile est un ensemble d’applications conçu pour les trois principales plateformes mobiles : Android, iOS et Windows Mobile. Les considérations de sécurité pour les applications Power BI Mobile se répartissent en deux catégories :
 
 * Communication de l’appareil
 * L’application et les données sur l’appareil
@@ -379,13 +379,13 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **Comment les utilisateurs se connectent et accèdent aux sources de données quand ils utilisent Power BI ?**
 
-* **Informations d’identification Power BI et informations d’identification de domaine :** Les utilisateurs se connectent à Power BI à l’aide d’une adresse e-mail. Quand un utilisateur tente de se connecter à une ressource de données, Power BI transmet l’adresse e-mail de connexion Power BI en guise d’informations d’identification. Pour les ressources connectées à un domaine (localement ou dans le cloud), l’adresse e-mail de connexion est mise en correspondance avec un _nom d’utilisateur principal_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) par le service d’annuaire afin de déterminer si les informations d’identification suffisent pour autoriser l’accès. Pour les organisations qui utilisent des adresses e-mail professionnelles pour se connecter à Power BI (les mêmes que pour se connecter aux ressources de travail, par exemple _david@contoso.com_ ), le mappage peut se produire sans interruption. Pour les organisations qui n’utilisaient pas des adresses e-mail professionnelles (par exemple, _david@contoso.onmicrosoft.com_ ), le mappage d’annuaire doit être établi afin d’autoriser l’accès aux ressources locales avec les informations d’identification de connexion Power BI.
+* **Power bi les informations d’identification et les informations d’identification de domaine :** Les utilisateurs se connectent à Power BI à l’aide d’une adresse de messagerie ; Lorsqu’un utilisateur tente de se connecter à une ressource de données, Power BI transmet l’adresse de messagerie de connexion Power BIen tant qu’informations d’identification. Pour les ressources connectées à un domaine (localement ou dans le cloud), l’adresse e-mail de connexion est mise en correspondance avec un _nom d’utilisateur principal_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx)) par le service d’annuaire afin de déterminer si les informations d’identification suffisent pour autoriser l’accès. Pour les organisations qui utilisent des adresses e-mail professionnelles pour se connecter à Power BI (les mêmes que pour se connecter aux ressources de travail, par exemple _david@contoso.com_ ), le mappage peut se produire sans interruption. Pour les organisations qui n’utilisaient pas des adresses e-mail professionnelles (par exemple, _david@contoso.onmicrosoft.com_ ), le mappage d’annuaire doit être établi afin d’autoriser l’accès aux ressources locales avec les informations d’identification de connexion Power BI.
 
-* **SQL Server Analysis Services et Power BI :** Pour les organisations qui utilisent SQL Server Analysis Services local, Power BI offre la passerelle de données locale Power BI (qui est une **passerelle** au sens employé dans les sections précédentes).  La passerelle de données locale Power BI peut appliquer une sécurité au niveau du rôle sur les sources de données. Pour plus d’informations sur la sécurité au niveau du rôle, consultez **Authentification des utilisateurs auprès des sources de données** plus haut dans ce document. Pour plus d’informations sur les passerelles, consultez [passerelle de données locale](service-gateway-onprem.md).
+* **SQL Server Analysis Services et Power bi :** Pour les organisations qui utilisent des SQL Server Analysis Services locaux, Power BI offre la Power BI passerelle de données locale (qui est une **passerelle**, comme mentionné dans les sections précédentes).  La passerelle de données locale Power BI peut appliquer une sécurité au niveau du rôle sur les sources de données. Pour plus d’informations sur la sécurité au niveau du rôle, consultez **Authentification des utilisateurs auprès des sources de données** plus haut dans ce document. Pour plus d’informations sur les passerelles, consultez [passerelle de données locale](service-gateway-onprem.md).
 
   De plus, les organisations peuvent utiliser Kerberos pour l’**authentification unique** et se connecter de façon fluide de Power BI à des sources de données locales telles que SQL Server, SAP HANA et Teradata. Pour plus d’informations et pour connaître la configuration spécifique requise, consultez [**Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
-* **Connexions non jointes à un domaine** : Pour les connexions de données qui ne sont pas jointes à un domaine et ne prenant pas en charge la sécurité au niveau du rôle, l’utilisateur doit fournir des informations d’identification pendant la séquence de connexion, que Power BI transmet ensuite à la source de données pour établir la connexion. Si les autorisations sont suffisantes, les données sont chargées à partir de la source de données dans le service Power BI.
+* **Connexions non-domaine**: pour les connexions de données qui ne sont pas jointes à un domaine et qui ne sont pas associées à la sécurité au niveau du rôle, l’utilisateur doit fournir des informations d’identification lors de la séquence de connexion, qui Power bi ensuite transmises à la source de données pour établir la égard. Si les autorisations sont suffisantes, les données sont chargées à partir de la source de données dans le service Power BI.
 
 **Comment les données sont transférées à Power BI ?**
 
@@ -399,7 +399,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 * Quand les navigateurs clients accèdent à Power BI, les serveurs web Power BI affectent la valeur _no-store_ à la directive _Cache-Control_. La directive _no-store_ indique aux navigateurs qu’ils ne doivent pas mettre en cache la page web affichée par l’utilisateur et qu’ils ne doivent pas la stocker dans le dossier de cache du client.
 
-**Qu’en est-il de la sécurité en fonction du rôle, du partage de rapports ou de tableaux de bords et des connexions de données ? Quel est le principe de fonctionnement en termes d’accès aux données, d’affichage de tableau de bord, d’accès aux rapports ou d’actualisation ?**
+**Qu’en est-il de la sécurité basée sur les rôles, du partage des rapports ou des tableaux de bord et des connexions de données ? Comment cela fonctionne-t-il en termes d’accès aux données, d’affichage du tableau de bord, d’accès aux rapports ou d’actualisation ?**
 
 * Pour les sources de données pour lesquelles la **sécurité au niveau du rôle n’est pas activée**, si un tableau de bord, un rapport ou un modèle de données est partagé avec d’autres utilisateurs par le biais de Power BI, les données sont alors accessibles aux utilisateurs avec lesquels l’affichage et l’interaction sont partagés. Power BI ne *ré-authentifie pas* les utilisateurs auprès de la source d’origine des données. Une fois les données chargées dans Power BI, l’utilisateur qui s’est authentifié auprès des données sources est responsable de la gestion des autres utilisateurs et groupes pouvant visualiser les données.
 
@@ -407,7 +407,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
   Pour plus d’informations, consultez la section **Authentification des utilisateurs auprès des sources de données** plus haut dans ce document.
 
-**Nos utilisateurs se connectent toujours aux mêmes sources de données, dont certaines nécessitent des informations d’identification qui diffèrent de leurs informations d’identification de domaine. Comment éviter qu’ils ne doivent entrer ces informations d’identification chaque fois qu’ils établissent une connexion de données ?**
+**Nos utilisateurs se connectent à la même source de données tout le temps, dont certains requièrent des informations d’identification qui diffèrent de leurs informations d’identification de domaine. Comment peut-il éviter d’avoir à entrer ces informations d’identification chaque fois qu’elles effectuent une connexion de données ?**
 
 * Power BI propose [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846), une fonctionnalité qui permet aux utilisateurs de créer des informations d’identification pour plusieurs sources de données différentes, puis d’utiliser automatiquement ces informations d’identification quand ils accèdent par la suite à chacune de ces sources de données. Pour plus d’informations, consultez [Power BI Personal Gateway](https://support.powerbi.com/knowledgebase/articles/649846).
 
@@ -419,11 +419,11 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
   Pour plus d’informations sur les groupes dans Power BI, consultez [cet article](https://support.powerbi.com/knowledgebase/articles/654247).
 
-**Quels sont les ports utilisés par la passerelle de données locale et la passerelle personnelle ? Y a-t-il des noms de domaine qui doivent être autorisés à des fins de connectivité ?**
+**Quels sont les ports utilisés par la passerelle de données locale et la passerelle personnelle ? Existe-t-il des noms de domaine qui doivent être autorisés à des fins de connectivité ?**
 
-* Vous trouverez une réponse détaillée à cette question en suivant ce lien : [Ports de passerelle](/data-integration/gateway/service-gateway-communication#ports)
+* La réponse détaillée à cette question est disponible sur le lien suivant : [ports de passerelle](/data-integration/gateway/service-gateway-communication#ports)
 
-**En cas d’utilisation de la passerelle de données locale, comment les clés de récupération sont-elles utilisées et où sont-elles stockées ? Qu’en est-il de la gestion des informations d’identification sécurisées ?**
+**Quand vous utilisez la passerelle de données locale, comment les clés de récupération sont-elles utilisées et où sont-elles stockées ? Qu’est-ce que la gestion sécurisée des informations d’identification ?**
 
 * Pendant l’installation et la configuration de la passerelle, l’administrateur entre une **clé de récupération** de passerelle. Cette **clé de récupération** est utilisée pour générer une clé symétrique **AES** forte. Une clé asymétrique **RSA** est également créée en même temps.
 
@@ -435,9 +435,9 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 * La passerelle prend en charge les deux protocoles de communication suivants :
 
-  - **AMQP 1.0 – TCP + TLS** : Ce protocole nécessite l’ouverture des ports 443, 5671, 5672 et 9350 à 9354 pour les communications sortantes. Il est recommandé, car il a une surcharge de communication plus faible.
+  - **AMQP 1,0 – TCP + TLS**: ce protocole requiert l’ouverture des ports 443, 5671-5672 et 9350-9354 pour la communication sortante. Il est recommandé, car il a une surcharge de communication plus faible.
 
-  - **HTTPS – WebSockets sur HTTPS + TLS** : Ce protocole utilise uniquement le port 443. Le WebSocket est lancé par un message HTTP CONNECT unique. Une fois le canal établi, la communication est essentiellement TCP + TLS. Vous pouvez forcer la passerelle à utiliser ce protocole en modifiant un paramètre décrit dans l' [article passerelle locale](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
+  - **Https-WebSockets sur https + TLS**: ce protocole utilise uniquement le port 443. Le WebSocket est lancé par un message HTTP CONNECT unique. Une fois le canal établi, la communication est essentiellement TCP + TLS. Vous pouvez forcer la passerelle à utiliser ce protocole en modifiant un paramètre décrit dans l' [article passerelle locale](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **Quel est le rôle du CDN Azure dans Power BI ?**
 
@@ -453,19 +453,19 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 * Oui. Les visuels Bing Maps et ESRI transmettent des données en provenance du service Power BI pour les visuels qui utilisent ces services. Pour plus d’informations et pour obtenir une description détaillée du trafic de locataire en sortie de Power BI, consultez [**Power BI et ExpressRoute**](service-admin-power-bi-expressroute.md).
 
-**Pour les applications de modèle, Microsoft effectue-t-il une évaluation de la sécurité ou de la confidentialité de l’application de modèle avant de publier des éléments dans la Galerie?**
+**Pour les applications de modèle, Microsoft effectue-t-il une évaluation de la sécurité ou de la confidentialité de l’application de modèle avant de publier des éléments dans la Galerie ?**
 * Non. L’éditeur de l’application est responsable du contenu, tandis que le client est tenu d’examiner et de déterminer s’il faut approuver l’éditeur de l’application de modèle. 
 
-**Existe-t-il des applications de modèle qui peuvent envoyer des informations à l’extérieur du réseau client?**
+**Existe-t-il des applications de modèle qui peuvent envoyer des informations à l’extérieur du réseau client ?**
 * Oui. Il incombe au client de passer en revue la politique de confidentialité de l’éditeur et de déterminer s’il faut installer l’application de modèle sur le locataire. En outre, le serveur de publication est chargé de notifier le comportement et les fonctionnalités de l’application.
 
-**Qu’en est-il de la souveraineté des données ? Pouvons-nous provisionner des locataires dans des centres de données situés dans des zones géographiques spécifiques, afin de nous assurer que les données ne quittent pas les frontières du pays ?**
+**Qu’en est-il de la souveraineté des données ? Pouvons-nous approvisionner des locataires dans des centres de données situés dans des zones géographiques spécifiques pour s’assurer que les données ne sont pas laissées dans les limites du pays ?**
 
 * Certains clients dans certaines zones géographiques ont une option pour créer un locataire dans un cloud national, où le stockage et le traitement des données sont maintenus distincts de tous les autres centres de données. Les clouds nationaux ont un type de sécurité légèrement différent, car un tiers de confiance distinct pour les données exploite le service Power BI de cloud national pour le compte de Microsoft.
 
   Les clients peuvent également configurer un locataire dans une région spécifique, mais ces locataires ne bénéficient pas d’un tiers de confiance distinct pour les données de la part de Microsoft. Les tarifs des clouds nationaux sont différents du service Power BI commercial en disponibilité générale. Pour plus d’informations sur la disponibilité du service Power BI pour les clouds nationaux, consultez [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/).
 
-**Comment Microsoft traite les connexions pour les clients disposant d’abonnements Power BI Premium ? Ces connexions sont-elles différentes de celles créées pour le service Power BI non-Premium ?**
+**Comment Microsoft traite-t-il les connexions pour les clients qui ont des abonnements Power BI Premium ? Les connexions sont-elles différentes de celles établies pour la service Power BI non-Premium ?**
 
 * Les connexions établies pour les clients ayant un abonnement Power BI Premium implémentent un processus d’autorisation [Azure Business-to-Business (B2B)](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b), en utilisant Azure Active Directory (AD) pour activer le contrôle d’accès et l’autorisation. Power BI gère les connexions à partir des abonnés Power BI Premium aux ressources Power BI Premium exactement comme il le ferait pour tout autre utilisateur Azure AD.
 
@@ -487,7 +487,7 @@ Pour plus d’informations sur Power BI, consultez les ressources suivantes.
 - [Prise en main de Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [API REST Power BI - Vue d’ensemble](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Informations de référence sur l’API de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)
-- [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)
+- [Passerelle de données locale](service-gateway-onprem.md)
 - [Power BI et ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
