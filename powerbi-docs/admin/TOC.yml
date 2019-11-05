@@ -44,6 +44,14 @@
           href: ../service-admin-power-bi-expressroute.md
         - name: Utilisation d’Azure AD B2B
           href: ../service-admin-azure-ad-b2b.md
+        - name: Protection des données
+          items:
+            - name: Vue d’ensemble de la protection des données
+              href: service-security-data-protection-overview.md
+            - name: Activer l’étiquetage de la sensibilité des données
+              href: service-security-enable-data-sensitivity-labels.md
+            - name: Utiliser Microsoft Cloud App Security avec Power BI
+              href: service-security-using-microsoft-cloud-app-security-controls.md
         - name: Sécurité au niveau des lignes
           href: ../service-admin-rls.md
         - name: Espace de travail archivé

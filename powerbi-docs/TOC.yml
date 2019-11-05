@@ -327,7 +327,9 @@
               href: visuals/power-bi-map-tips-and-tricks.md
             - name: "Personnaliser les propriétés des axes\_X et\_Y"
               href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-            - name: ArcGIS Maps
+            - name: Créer un visuel ArcGIS Maps for Power BI
+              href: visuals/power-bi-visualizations-arcgis.md
+            - name: Interagir avec un visuel ArcGIS Maps for Power BI
               href: visuals/power-bi-visualization-arcgis.md
             - name: Graphique en aires simple
               href: visuals/power-bi-visualization-basic-area-chart.md
@@ -727,6 +729,12 @@
               href: service-cognitive-services.md
             - name: Machine Learning automatisé dans Power BI
               href: service-machine-learning-automated.md
+        - name: Protéger vos données
+          items:
+            - name: Vue d’ensemble de la protection des données
+              href: admin/service-security-data-protection-overview.md
+            - name: Appliquer des étiquette de sensibilité
+              href: designer/service-security-apply-data-sensitivity-labels.md
         - name: Traçabilité des données
           href: service-data-lineage.md
         - name: Rapports paginés dans Power BI
@@ -929,6 +937,8 @@
           href: service-admin-premium-monitor-portal.md
         - name: Configurer une actualisation incrémentielle
           href: service-premium-incremental-refresh.md
+        - name: Configurer des grands modèles (préversion)
+          href: service-premium-large-models.md
         - name: Configurer des zones géographiques multiples
           href: service-admin-premium-multi-geo.md
         - name: Apporter vos propres clés de chiffrement
