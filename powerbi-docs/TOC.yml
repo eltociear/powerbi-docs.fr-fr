@@ -1109,6 +1109,8 @@
       items:
         - name: Livre blanc sur la planification de capacité
           href: report-server/capacity-planning.md
+        - name: Conformité de l’extension de rendu PDF
+          href: report-server/rendering-extension-support.md
 - name: Passerelles
   items:
     - name: Vue d’ensemble
