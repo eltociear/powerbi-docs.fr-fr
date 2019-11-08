@@ -3,19 +3,19 @@ title: Déploiement et gestion des capacités de Power BI Premium
 description: Comprenez le potentiel de Power BI Premium et apprenez à concevoir, déployer, surveiller et dépanner des solutions évolutives.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: eecbc43f26cebc12884ae6c5143a815f6e310ce5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f9269b52b1721cd7c6801cd0337911159c0b2494
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432371"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73786348"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Déploiement et gestion des capacités de Power BI Premium
 
@@ -60,13 +60,13 @@ Tout le contenu Power BI est stocké et géré dans les espaces de travail qui s
 
 Le contenu de Power BI suivant est stocké dans les espaces de travail :
 
-- Dataflows
-- Jeux de données
+- Flux de données
+- jeux de données ;
 - Classeurs
-- Rapports
+- Reports
 - Tableaux de bord
 
-#### <a name="dataflows"></a>Dataflows
+#### <a name="dataflows"></a>Flux de données
 
 Power BI flux aide les organisations à unifier les données à partir de sources disparates. Ils peuvent être considérés comme des données préparées et prédéfinies pour une utilisation dans les modèles, mais ils ne peuvent pas être utilisés directement comme source pour la création de rapports. Ils tirent parti de la collection complète de connecteurs de données Microsoft, ce qui permet l’ingestion de données à partir de sources de données locales et basées sur le Cloud.
 
@@ -74,7 +74,7 @@ Les flux peuvent être créés et gérés uniquement dans des espaces de travail
 
 Pour plus d’informations, reportez-vous au document de [préparation des données en libre-service dans Power bi (version préliminaire)](service-dataflows-overview.md) .
 
-#### <a name="datasets"></a>Jeux de données
+#### <a name="datasets"></a>jeux de données ;
 
 Les jeux de données Power BI représentent une source de données prête pour la création de rapports et la visualisation. Il existe de nombreux types de datasets, créés par :
 
@@ -131,7 +131,7 @@ Il est important de comprendre que ce type de contenu n’est pas disponible en 
 
 Pour plus d’informations, reportez-vous au document [obtenir des données à partir des fichiers de classeur Excel](service-excel-workbook-files.md) .
 
-#### <a name="reports"></a>Rapports
+#### <a name="reports"></a>Reports
 
 Il existe deux types de rapports : les rapports de Power BI et les rapports paginés.
 
@@ -249,7 +249,7 @@ En général, les avantages et les inconvénients associés à chaque mode de mo
 
 Pour plus d’informations, reportez-vous à la rubrique [utiliser des modèles composites dans Power bi Desktop](desktop-composite-models.md) document.
 
-### <a name="licensing"></a>Gestion des licences
+### <a name="licensing"></a>Licensing
 
 Power BI a trois licences :
 
@@ -407,9 +407,9 @@ La mémoire est allouée dynamiquement aux flux de données, mais elle est allou
 
 |                     | EM3                      | P1                       | P2                      | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| rapports paginés ; | N/A | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
-| Dataflows | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum  |
-| Intelligence artificielle | N/A | 20 % par défaut ; 20 % minimum  | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum  |
+| rapports paginés ; | Non applicable | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum | 20 % par défaut ; 2,5 % minimum |
+| Flux de données | 20 % par défaut ; 8 % minimum  | 20 % par défaut ; 4 % minimum  | 20 % par défaut ; 2 % minimum | 20 % par défaut ; 1 % minimum  |
+| Intelligence artificielle | Non applicable | 20 % par défaut ; 20 % minimum  | 20 % par défaut ; 10 % minimum | 20 % par défaut ; 5 % minimum  |
 | | | | | |
 
 La suppression d’une capacité Premium est possible et n’entraîne pas la suppression de ses espaces de travail et de son contenu. Au lieu de cela, les espaces de travail affectés sont déplacés vers une capacité partagée. Lorsque la capacité Premium a été créée dans une autre région, l’espace de travail est déplacé vers la capacité partagée de la région d’hébergement.

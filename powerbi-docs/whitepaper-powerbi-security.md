@@ -3,19 +3,19 @@ title: Livre blanc sur la sécurité dans Power BI
 description: Livre blanc qui décrit l’architecture et l’implémentation de la sécurité pour Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 4cb2ae69044b156d5f8a4bd554f8386808fb6b9e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 8cbb1c4b25cacae5cb025f85790be6a1657b0482
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430501"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73787760"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -34,13 +34,13 @@ ms.locfileid: "73430501"
 
 **Power BI** est une offre de service logiciel en ligne (_SaaS_, ou Software as a Service) de Microsoft qui vous permet de créer facilement et rapidement des tableaux de bord, des rapports, des jeux de données et des visualisations de décisionnel en libre-service. Avec Power BI, vous pouvez vous connecter à de nombreuses sources de données différentes, combiner et mettre en forme les données à partir de ces connexions, puis créer des rapports et des tableaux de bord partageables.
 
-Le service Power BI est régi par les [Conditions d’utilisation de Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) et la [Déclaration de confidentialité de Microsoft Enterprise](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Pour l’emplacement du traitement des données, consultez les modalités relatives à l’emplacement de traitement des données dans les Conditions d’utilisation de Microsoft Online Services. Pour les informations sur la conformité, le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter) est la ressource principale pour Power BI. L’équipe Power BI travaille sans relâche pour proposer à ses clients les dernières innovations et une meilleure productivité. Power BI se trouve actuellement dans le niveau D de l' [infrastructure de conformité Office 365](http://go.microsoft.com/fwlink/p/?LinkID=618494).
+Le service Power BI est régi par les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) et la [Déclaration de confidentialité de Microsoft Enterprise](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Pour l’emplacement du traitement des données, consultez les modalités relatives à l’emplacement de traitement des données dans les Conditions d’utilisation de Microsoft Online Services. Pour les informations sur la conformité, le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/trustcenter) est la ressource principale pour Power BI. L’équipe Power BI travaille sans relâche pour proposer à ses clients les dernières innovations et une meilleure productivité. Power BI se trouve actuellement dans le niveau D de l' [infrastructure de conformité Office 365](https://go.microsoft.com/fwlink/p/?LinkID=618494).
 
 Cet article décrit la sécurité Power BI en fournissant une explication de l’architecture de Power BI, en expliquant comment les utilisateurs s’authentifient auprès de Power BI et comment sont établies les connexions de données, puis en décrivant comment Power BI stocke et déplace les données dans le service. La dernière section est consacrée aux questions liées à la sécurité.
 
 ## <a name="power-bi-architecture"></a>Architecture de Power BI
 
-Le service **Power BI** repose sur **Azure**, qui est la [plateforme de cloud computing](http://azure.microsoft.com/overview/what-is-azure/) de Microsoft. Power BI est actuellement déployé dans un grand nombre de centres de données du monde entier. De nombreux déploiements actifs sont mis à la disposition des clients dans les régions prises en charge par ces centres de données, tandis qu’un nombre égal de déploiements passifs font office de sauvegarde pour chaque déploiement actif.
+Le service **Power BI** repose sur **Azure**, qui est la [plateforme de cloud computing](https://azure.microsoft.com/overview/what-is-azure/) de Microsoft. Power BI est actuellement déployé dans un grand nombre de centres de données du monde entier. De nombreux déploiements actifs sont mis à la disposition des clients dans les régions prises en charge par ces centres de données, tandis qu’un nombre égal de déploiements passifs font office de sauvegarde pour chaque déploiement actif.
 
 Chaque déploiement de Power BI est constitué de deux clusters : un cluster web frontal (**WFE**) et un cluster **principal**. Ces deux clusters sont présentés dans l’image suivante et constituent la toile de fond pour le reste de cet article. 
 
@@ -117,8 +117,8 @@ Power BI est disponible dans certaines régions, en fonction de l’endroit où 
 
 Les liens suivants fournissent des informations supplémentaires sur les centres de données Azure.
 
-- [Régions Azure](http://azure.microsoft.com/regions/) : informations sur les emplacements et la présence mondiale d’Azure
-- [Services Azure par région](http://azure.microsoft.com/regions/#services) : liste complète des services Azure (services d’infrastructure et services de plateforme) disponibles auprès de Microsoft dans chaque région.
+- [Régions Azure](https://azure.microsoft.com/regions/) : informations sur les emplacements et la présence mondiale d’Azure
+- [Services Azure par région](https://azure.microsoft.com/regions/#services) : liste complète des services Azure (services d’infrastructure et services de plateforme) disponibles auprès de Microsoft dans chaque région.
 
 Actuellement, les service Power BI sont disponibles dans des régions spécifiques, servies par les centres de donnés, comme décrit dans le centre de gestion de la [confidentialité Microsoft](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). Le lien suivant affiche une carte des centres de données Power BI. Vous pouvez pointer sur une région pour voir les centres de données qui s’y trouvent :
 
@@ -126,7 +126,7 @@ Actuellement, les service Power BI sont disponibles dans des régions spécifiqu
 
 Microsoft fournit également des centres de données pour des souverainetés. Pour plus d’informations sur la disponibilité du service Power BI pour les clouds nationaux, consultez [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/).
 
-Pour plus d’informations sur l’emplacement où sont stockées vos données et sur la façon dont elles sont utilisées, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Les engagements concernant l’emplacement des données des clients au repos sont spécifiés dans les **modalités relatives au traitement des données** dans les [Conditions d’utilisation de Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
+Pour plus d’informations sur l’emplacement où sont stockées vos données et sur la façon dont elles sont utilisées, consultez le [Centre de gestion de la confidentialité Microsoft](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Les engagements concernant l’emplacement des données des clients au repos sont spécifiés dans les **modalités relatives au traitement des données** dans les [Conditions d’utilisation de Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
 ## <a name="user-authentication"></a>Authentification utilisateur
 
@@ -201,7 +201,7 @@ Les clés de chiffrement de passerelle basées sur la clé de récupération ne 
 
 Pour les sources de données basées sur le cloud, le rôle Déplacement de données chiffre les clés de chiffrement à l’aide de méthodes [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx). Apprenez-en davantage sur la [fonctionnalité de base de données Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx).
 
-#### <a name="datasets"></a>Jeux de données
+#### <a name="datasets"></a>jeux de données ;
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -224,7 +224,7 @@ Pour les sources de données basées sur le cloud, le rôle Déplacement de donn
         - Si le jeu de données est configuré pour l’actualisation, les informations d’identification sont stockées chiffrées dans la base de données Azure SQL Database du rôle Déplacement de données. La clé de chiffrement est stockée sur l’ordinateur exécutant la passerelle sur l’infrastructure du client.
         - Si le jeu de données n’est pas configuré pour l’actualisation, aucune information d’identification n’est stockée pour les sources de données.
 
-1. Données
+1. Data
 
     a. Analysis Services local et DirectQuery : rien n’est stocké dans le service Power BI.
 
@@ -242,7 +242,7 @@ Power BI fournit une supervision de l’intégrité des données de plusieurs ma
 
 * Pour les données au repos dans Stockage Blob Azure, Power BI utilise le chiffrement côté client et HTTPS pour transférer les données vers le stockage, avec des vérifications d’intégrité pendant la récupération des données. Apprenez-en davantage sur la [sécurité de Stockage Blob Azure](https://azure.microsoft.com/documentation/articles/storage-security-guide/).
 
-#### <a name="reports"></a>Rapports
+#### <a name="reports"></a>Reports
 
 1. Métadonnées (définition de rapport)
 
@@ -283,7 +283,7 @@ Quelle que soit la méthode de chiffrement utilisée, Microsoft gère le chiffre
 
 Les appareils non volatiles sont des appareils dont la mémoire persiste sans puissance constante. La section suivante décrit les données qui sont stockées de manière transitoire sur des appareils non volatiles. 
 
-#### <a name="datasets"></a>Jeux de données
+#### <a name="datasets"></a>jeux de données ;
 
 1. Métadonnées (tables, colonnes, mesures, calculs, chaînes de connexion, etc.)
 
@@ -301,7 +301,7 @@ Les appareils non volatiles sont des appareils dont la mémoire persiste sans pu
     c. Envoi de données (push) : aucune (non applicable)
 
     d. ETL : aucune (rien n’est stocké sur le nœud de calcul et rien ne diffère de ce qui est mentionné dans la section **Données au repos** ci-dessus)
-4. Données
+4. Data
 
     Certains artefacts de données peuvent être stockés sur le disque des nœuds de calcul pour une durée limitée.
 
@@ -371,7 +371,7 @@ Le cache de données de Power BI Mobile reste sur l’appareil pendant deux sema
 
 Les applications Power BI Mobile n’examinent pas les dossiers sur l’appareil. 
 
-Les trois plateformes pour lesquelles Power BI Mobile est disponible prennent en charge Microsoft Intune, un service logiciel qui assure la gestion des applications et des appareils mobiles. Quand Intune est activé et configuré, les données sur l’appareil mobile sont chiffrées, et l’application Power BI elle-même ne peut pas être installée sur une carte SD. [En savoir plus sur Microsoft Intune.](http://www.microsoft.com/cloud-platform/microsoft-intune)
+Les trois plateformes pour lesquelles Power BI Mobile est disponible prennent en charge Microsoft Intune, un service logiciel qui assure la gestion des applications et des appareils mobiles. Quand Intune est activé et configuré, les données sur l’appareil mobile sont chiffrées, et l’application Power BI elle-même ne peut pas être installée sur une carte SD. [En savoir plus sur Microsoft Intune.](https://www.microsoft.com/cloud-platform/microsoft-intune)
 
 ## <a name="power-bi-security-questions-and-answers"></a>Questions et réponses sur la sécurité dans Power BI
 
@@ -447,14 +447,14 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **Pour les visuels personnalisés, est-ce que Microsoft effectue une évaluation de sécurité ou de confidentialité du code des visuels personnalisés avant de publier des éléments dans la galerie ?**
 
-* Non. Il incombe au client d’examiner le code de visuel personnalisé et de déterminer s’il est fiable. Tout le code des visuels personnalisés est exploité dans un environnement de bac à sable, afin que tout code errant dans un visuel personnalisé n’affecte pas le reste du service Power BI.
+* No. Il incombe au client d’examiner le code de visuel personnalisé et de déterminer s’il est fiable. Tout le code des visuels personnalisés est exploité dans un environnement de bac à sable, afin que tout code errant dans un visuel personnalisé n’affecte pas le reste du service Power BI.
 
 **Y a-t-il d’autres visuels Power BI qui envoient des informations à l’extérieur du réseau client ?**
 
 * Oui. Les visuels Bing Maps et ESRI transmettent des données en provenance du service Power BI pour les visuels qui utilisent ces services. Pour plus d’informations et pour obtenir une description détaillée du trafic de locataire en sortie de Power BI, consultez [**Power BI et ExpressRoute**](service-admin-power-bi-expressroute.md).
 
 **Pour les applications de modèle, Microsoft effectue-t-il une évaluation de la sécurité ou de la confidentialité de l’application de modèle avant de publier des éléments dans la Galerie ?**
-* Non. L’éditeur de l’application est responsable du contenu, tandis que le client est tenu d’examiner et de déterminer s’il faut approuver l’éditeur de l’application de modèle. 
+* No. L’éditeur de l’application est responsable du contenu, tandis que le client est tenu d’examiner et de déterminer s’il faut approuver l’éditeur de l’application de modèle. 
 
 **Existe-t-il des applications de modèle qui peuvent envoyer des informations à l’extérieur du réseau client ?**
 * Oui. Il incombe au client de passer en revue la politique de confidentialité de l’éditeur et de déterminer s’il faut installer l’application de modèle sur le locataire. En outre, le serveur de publication est chargé de notifier le comportement et les fonctionnalités de l’application.
@@ -487,7 +487,7 @@ Pour plus d’informations sur Power BI, consultez les ressources suivantes.
 - [Prise en main de Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [API REST Power BI - Vue d’ensemble](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Informations de référence sur l’API de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Passerelle de données locale](service-gateway-onprem.md)
+- [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)
 - [Power BI et ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)

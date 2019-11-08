@@ -2,19 +2,19 @@
 title: Livres blancs pour Power BI
 description: Les livres blancs vous permettent d’explorer Power BI de façon plus approfondie.
 author: maggiesMSFT
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: b7fe09857d7f9d61745dd263353d3467c9cf6fb4
-ms.sourcegitcommit: e4b28c237c6e0dc16239b161a41a4c30a4b534dd
+ms.openlocfilehash: e88e6753df091fb7f046d475df59fa4344da5d98
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 11/07/2019
-ms.locfileid: "73710783"
+ms.locfileid: "73787295"
 ---
 # <a name="whitepapers-for-power-bi"></a>Livres blancs pour Power BI
 
@@ -34,9 +34,9 @@ Les livres blancs vous permettent d’explorer Power BI de façon plus approfond
 | [Filtrage bidirectionnel](desktop-bidirectional-filtering.md) |Décrit le filtrage croisé bidirectionnel dans Power BI Desktop (ce livre blanc aborde également SQL Server Analysis Services 2016, tous les deux ayant le même comportement). | Juillet 2018 |
 | [DirectQuery dans SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |Pour SQL Server 2016, DirectQuery a été repensé de façon à fournir des performances et une vitesse véritablement supérieures. Toutefois, la fonctionnalité est également maintenant plus complexe à comprendre et à implémenter. | Janvier 2017 |
 | [Power BI et SAP BW](https://aka.ms/powerbiandsapbw)| Ce document décrit comment les clients SAP peuvent tirer profit de la connexion de Power BI à leurs systèmes SAP Business Warehouse (BW) existants.| Février 2018 |
-| [Sécurisation du modèle sémantique décisionnel au format tabulaire](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Ce document présente le modèle de sécurité relatif à la sémantique décisionnelle tabulaire et à Power BI. Il montre comment créer des rôles, implémenter la sécurité dynamique, configurer les paramètres d’emprunt d’identité, gérer des rôles et choisir une méthode de connexion aux modèles qui fonctionne dans le contexte de la sécurité réseau. | Avril 2016 |
+| [Sécurisation du modèle sémantique décisionnel au format tabulaire](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |Ce document présente le modèle de sécurité relatif à la sémantique décisionnelle tabulaire et à Power BI. Il montre comment créer des rôles, implémenter la sécurité dynamique, configurer les paramètres d’emprunt d’identité, gérer des rôles et choisir une méthode de connexion aux modèles qui fonctionne dans le contexte de la sécurité réseau. | Avril 2016 |
 | [Power BI et RGPD](https://aka.ms/power-bi-gdpr-whitepaper)| Ce lien vous permet d’accéder à la liste des livres blancs sur le Portail d’approbation de services, ainsi qu’au livre blanc Microsoft Power BI consacré au RGPD. | Avril 2018 |
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-hybrid-note.md)]
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

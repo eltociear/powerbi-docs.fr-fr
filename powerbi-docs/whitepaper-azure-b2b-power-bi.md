@@ -2,7 +2,7 @@
 title: Distribuer du contenu Power BI à des utilisateurs invités externes à l’aide d’Azure Active Directory B2B
 description: Livre blanc décrivant comment utiliser Azure Active Directory B2B pour distribuer des Power BI à des utilisateurs invités externes
 author: davidiseminger
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 0227072818b7c09463b47ba896c782ded1e7f248
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: b8e6d046509dd9e2d3cf35a3d46e0812b2774587
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432398"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73787359"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes à l’aide d’Azure Active Directory B2B
 
@@ -332,7 +332,7 @@ L’intégration de Power BI avec Azure AD B2B fonctionne avec toutes les adress
 
 Il est important de reconnaître que le compte de Azure AD est utilisé ou créé dans le Azure AD du tiers externe, ce qui permet à Lucy d’utiliser leurs propres nom d’utilisateur et mot de passe et leurs informations d’identification cessent de fonctionner dans d’autres locataires quand Lucy quitte l’entreprise quand son organisation utilise également Azure AD.
 
-## <a name="licensing"></a>Gestion des licences
+## <a name="licensing"></a>Licensing
 
 Contoso peut choisir l’une des trois approches suivantes : les utilisateurs invités titulaires d’une licence de leurs fournisseurs et organisations partenaires ont accès au contenu Power BI.
 
