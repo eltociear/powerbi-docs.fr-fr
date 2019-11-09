@@ -2,7 +2,6 @@
 title: Distribuer du contenu Power BI à des utilisateurs invités externes à l’aide d’Azure Active Directory B2B
 description: Livre blanc décrivant comment utiliser Azure Active Directory B2B pour distribuer des Power BI à des utilisateurs invités externes
 author: davidiseminger
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: b8e6d046509dd9e2d3cf35a3d46e0812b2774587
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 538c533a1b951fd2dff1b481adb94e2b1d0cf87b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73787359"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870888"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes à l’aide d’Azure Active Directory B2B
 
