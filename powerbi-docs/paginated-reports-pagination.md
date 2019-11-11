@@ -3,18 +3,17 @@ title: Pagination des rapports Power BI
 description: Dans cet article, vous allez découvrir les sources de données prises en charge pour les rapports paginés dans le service Power BI, et comment vous connecter à des sources de données Azure SQL Database.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/22/2019
-ms.openlocfilehash: e91d3801cc2293ad22028a95a331d473f41288c0
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: d0f0abe15348d54f24143d69fcd6c0c2b71e9a34
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624837"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874783"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Pagination des rapports Power BI
 
@@ -90,4 +89,4 @@ ms.locfileid: "68624837"
 
 [Afficher un rapport paginé dans le service Power BI](paginated-reports-view-power-bi-service.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

@@ -4,18 +4,17 @@ description: Cet article explique pas à pas comment mettre à l’échelle une 
 services: power-bi-embedded
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 editor: ''
 tags: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 01/31/2019
-ms.openlocfilehash: b9a632fa39d320d14d1282cee5e59022a8ab0303
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5a30c8cb6af80e74cbf2513c24aee55483338fb4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61388434"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875909"
 ---
 # <a name="scale-your-power-bi-embedded-capacity-in-the-azure-portal"></a>Mettre à l’échelle une capacité Power BI Embedded dans le Portail Microsoft Azure
 
@@ -62,4 +61,4 @@ Pour suspendre ou démarrer votre capacité, consultez [Suspendre et démarrer u
 
 Pour commencer à incorporer du contenu Power BI dans votre application, consultez [Guide pratique pour incorporer vos tableaux de bord, rapports et vignettes Power BI](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

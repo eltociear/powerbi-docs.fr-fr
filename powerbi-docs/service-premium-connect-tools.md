@@ -3,7 +3,6 @@ title: Se connecter à des jeux de données Power BI Premium avec des applicati
 description: Explique comment se connecter à des jeux de données dans Power BI Premium à partir d’outils et d’applications clientes.
 author: minewiskan
 ms.author: owend
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 4c39cf5a60786f7cc1748155ce7004254d40ad00
-ms.sourcegitcommit: ebac79f8c2871d4a7e54c1e99ce6d2409345b060
+ms.openlocfilehash: 0364fae1648e6155cc5e5a92850861c3bedbabdc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68475630"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871902"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Se connecter à des jeux de données avec des applications et des outils clients (préversion)
 
@@ -109,7 +108,7 @@ Actuellement, les rôles de modèle et les appartenances aux rôles ne sont pas 
 
 Par défaut, la connectivité du point de terminaison XMLA est activée pour la charge de travail Jeux de données. Vous pouvez désactiver la connectivité dans les [paramètres de charge de travail](service-admin-premium-workloads.md#workload-settings).
 
-## <a name="audit-logs"></a>Journaux d’audit 
+## <a name="audit-logs"></a>Journaux d'audit 
 
 Quand des applications et outils clients se connectent à un espace de travail, l’accès via les points de terminaison XMLA est journalisé dans les journaux d’audit Power BI sous l’opération **GetWorkspaces**. Pour en savoir plus, consultez [Audit Power BI](service-admin-auditing.md).
 

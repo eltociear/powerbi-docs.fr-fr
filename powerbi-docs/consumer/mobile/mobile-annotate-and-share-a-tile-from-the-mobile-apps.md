@@ -2,19 +2,18 @@
 title: Annoter et partager dans des applications mobiles Power BI
 description: 'Découvrez comment annoter et partager des vignettes, des rapports et des visuels à partir de l’application mobile Microsoft Power BI pour iOS et Android. '
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 1f7911007d9629c8990fc15ddf7453bafe0e78f5
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 013cbc58a8404fa803a14c73b1668be1215cf642
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841456"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879498"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Annoter et partager une vignette, un rapport ou un visuel dans les applications mobiles Power BI
 S’applique à :
@@ -74,5 +73,5 @@ Vous pouvez [partager une vignette à partir de l’application Power BI pour l
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager un tableau de bord à partir des applications mobiles Power BI](mobile-share-dashboard-from-the-mobile-apps.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 
