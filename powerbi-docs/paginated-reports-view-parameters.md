@@ -3,18 +3,17 @@ title: Afficher les paramètres de rapports paginés dans le service Power BI
 description: Dans cet article, vous allez apprendre à interagir avec les paramètres de rapports paginés dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 100d8b5d25f7d844ea4f44d63a4d2cb9737f57a9
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 938fed4f1f616dff19faa85b48576898ca6727a5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839511"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875290"
 ---
 # <a name="view-parameters-for-paginated-reports-in-the-power-bi-service"></a>Afficher les paramètres de rapports paginés dans le service Power BI
 

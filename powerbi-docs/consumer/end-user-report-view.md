@@ -2,7 +2,6 @@
 title: Modifier la taille d’affichage et le rapport d’une page de rapport
 description: Changer les paramètres d’affichage d’une page dans un rapport Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: b92060847dbdd100f33ca590cbedc7866fbe252d
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 6e64ab2730b73339d6d22ba356cce6e644af52c5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716696"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861843"
 ---
 # <a name="change-the-display-of-a-report-page"></a>Changer l’affichage d’une page de rapport
 

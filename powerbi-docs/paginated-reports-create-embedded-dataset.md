@@ -3,18 +3,17 @@ title: Créer un jeu de données incorporé pour un rapport Power BI paginé
 description: Dans cet article, vous apprendrez à créer un jeu de données incorporé, basé sur une source de données incorporée, pour un rapport paginé dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
-ms.openlocfilehash: cf41b404385139561a97f1d5b081ae1c48ff2885
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3ca950f5562998a1591d94ee690b76fee4f3d98f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839020"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874886"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service"></a>Créer un jeu de données incorporé pour un rapport paginé dans le service Power BI
 

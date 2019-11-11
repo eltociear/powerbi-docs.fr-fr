@@ -2,7 +2,6 @@
 title: Se connecter à un entrepôt Snowflake Computing dans Power BI Desktop
 description: Se connecter facilement à un entrepôt Snowflake Computing pour l’utiliser dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,18 +9,18 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c02eda44ec81fe31972055548996ae357bc4c4b9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2bb44498b6123eadffe86c7eb9bfb93bb0db5e14
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513818"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876423"
 ---
 # <a name="connect-to-snowflake-in-power-bi-desktop"></a>Se connecter à Snowflake dans Power BI Desktop
 Dans Power BI Desktop, vous pouvez vous connecter à un entrepôt **Snowflake Computing** et utiliser les données sous-jacentes comme n’importe quelle autre source de données dans Power BI Desktop. 
 
 > [!NOTE]
-> Vous *devez* également installer le **pilote ODBC Snowflake** sur les ordinateurs qui utilisent le connecteur **Snowflake** à l’aide de l’architecture qui correspond à l’installation de **Power BI Desktop** (32 bits ou 64 bits). Cliquez sur le lien suivant et [téléchargez le pilote ODBC Snowflake approprié](http://go.microsoft.com/fwlink/?LinkID=823762).
+> Vous *devez* également installer le **pilote ODBC Snowflake** sur les ordinateurs qui utilisent le connecteur **Snowflake** à l’aide de l’architecture qui correspond à l’installation de **Power BI Desktop** (32 bits ou 64 bits). Cliquez sur le lien suivant et [téléchargez le pilote ODBC Snowflake approprié](https://go.microsoft.com/fwlink/?LinkID=823762).
 > 
 > 
 

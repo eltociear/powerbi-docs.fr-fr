@@ -3,18 +3,17 @@ title: Prise en charge du mode Contraste élevé dans les visuels Power BI
 description: Cet article décrit comment ajouter la prise en charge du mode Contraste élevé dans les visuels Power BI.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f5e6d205a26648f8e157663ed7afd58e33b4b328
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 021040706ff34f43c6a7772849f2e27181041bc9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194010"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880046"
 ---
 # <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Prise en charge du mode Contraste élevé dans les visuels Power BI
 

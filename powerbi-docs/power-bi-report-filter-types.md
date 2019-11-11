@@ -2,7 +2,6 @@
 title: Types de filtres dans les rapports Power BI
 description: Ajouter un filtre de page, un filtre de visualisation ou un filtre de rapport à un rapport dans Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 499a4f3be9f153a1994802e9707f855b71d2a506
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: c96b4ebae574a3b6a6fa54c5f5dc99b5bc948a90
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409842"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874418"
 ---
 # <a name="types-of-filters-in-power-bi-reports"></a>Types de filtres dans les rapports Power BI
 
@@ -53,7 +52,7 @@ Les filtres Descendre dans la hiérarchie sont automatiquement ajoutés au volet
 
 Les filtres Exploration croisée sont automatiquement ajoutés au nouveau volet lorsqu’un filtre Descendre dans la hiérarchie est passé à un autre visuel sur la page de rapport via la fonctionnalité Filtrage croisé ou Sélection croisée. Les utilisateurs avec l’autorisation d’édition sur le rapport ne peuvent pas supprimer, effacer, masquer, verrouiller, renommer ou trier ce filtre, car il est associé à la fonctionnalité Descendre dans la hiérarchie des visuels. Ils ne peuvent pas non plus modifier ce filtre, car il provient de la fonctionnalité Descendre dans la hiérarchie dans un autre visuel. Pour supprimer le filtre Descendre dans la hiérarchie, vous cliquez sur le bouton Monter dans la hiérarchie dans le visuel qui transmet le filtre.
 
-## <a name="drillthrough-filters"></a>Filtres d’extraction
+## <a name="drillthrough-filters"></a>Filtres d'extraction
 
 Les filtres d’extraction sont transmis d’une page à l’autre par le biais de la fonctionnalité d’extraction. Ils s’affichent dans le volet d’extraction. Il existe deux types de filtres d’extraction. Le premier type est celui qui appelle l’extraction. Les éditeurs de rapport peuvent modifier, supprimer, effacer, masquer ou verrouiller ce type de filtre. Le deuxième type est le filtre d’extraction qui est passé à la cible, en fonction des filtres au niveau de la page de la page source. Les éditeurs de rapport peuvent modifier, supprimer ou effacer ce type de filtre d’extraction temporaire. Ils ne peuvent pas verrouiller ou masquer ce filtre pour les utilisateurs finaux.
 
@@ -99,5 +98,5 @@ Le tableau ci-dessous compare ce que les auteurs peuvent faire avec les différe
 
 [Filtres et mise en évidence dans les rapports](power-bi-reports-filters-and-highlighting.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

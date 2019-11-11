@@ -2,7 +2,6 @@
 title: 'Nouvelle apparence : où sont passées les actions ?'
 description: Le service Power BI (app.powerbi.com) affiche une nouvelle présentation, et de nombreuses actions ont été déplacées. Cet article présente des tableaux montrant la correspondance entre les anciens et les nouveaux emplacements.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e10c2757bf843d504e5caafb949e742261c6209d
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 2216fb2b18fd0f35fe9ece25ae2bfeea26672a66
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72245443"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872018"
 ---
 # <a name="the-new-look-where-did-the-actions-go"></a>Nouvelle apparence : où sont passées les actions ?
 
@@ -44,7 +43,7 @@ Le service Power BI (app.powerbi.com) a une nouvelle apparence qui facilite l’
 | Commentaires | Commentaires | Commentaires |
 | Afficher les éléments associés | Afficher les éléments associés | Barre de menus Plus d’options (...) > Afficher les éléments associés |
 | Favori | Favori | Favori |
-| S'abonner | S'abonner |S'abonner |
+| S’abonner | S’abonner |S’abonner |
 | Partager | Partager | Partager |
 | Générer le code QR | Barre de menus Plus d’options (...) > Générer le code QR | Barre de menus Plus d’options (...) > Générer le code QR |
 | Analyser dans Excel | Barre de menus Plus d’options (...) > Analyser dans Excel | Barre de menus Plus d’options (...) > Analyser dans Excel |
@@ -59,7 +58,7 @@ Le service Power BI (app.powerbi.com) a une nouvelle apparence qui facilite l’
 | Afficher les éléments associés | Afficher les éléments associés | Barre de menus Plus d’options (...) > Afficher les éléments associés |
 | Définir comme tableau de bord par défaut | Définir comme tableau de bord par défaut| Barre de menus Plus d’options (...) > Définir comme tableau de bord par défaut|
 | Favori | Favori | Favori |
-| S'abonner | S'abonner |S'abonner |
+| S’abonner | S’abonner |S’abonner |
 | Partager | Partager | Partager |
 | Phone view | Affichage Web > Vue téléphone | Barre de menus Plus d’options (...) > Vue Mobile |
 | Thème du tableau de bord | Barre de menus Plus d’options (...) > Thème du tableau de bord | Barre de menus Plus d’options (...) > Thème du tableau de bord |

@@ -2,7 +2,6 @@
 title: Tâches courantes relatives aux requêtes dans Power BI Desktop
 description: Tâches courantes relatives aux requêtes dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239450"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878675"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Tâches courantes relatives aux requêtes dans Power BI Desktop
 Quand vous travaillez dans la fenêtre **Éditeur de requête** de Power BI Desktop, vous avez accès à un certain nombre de tâches courantes. Ce document décrit ces tâches courantes et fournit des liens pour plus d’informations. 
@@ -31,9 +30,9 @@ Les tâches courantes relatives aux requêtes illustrées ici sont les suivantes
 
 Nous allons utiliser plusieurs connexions de données pour effectuer ces tâches. Vous pouvez télécharger ces données ou vous y connecter, au cas où vous souhaiteriez parcourir ces tâches vous-même.
 
-La première connexion de données est un classeur Excel que vous pouvez télécharger à partir de [ce lien](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). L’autre est une ressource web (également utilisée dans d’autres contenus d’aide de Power BI Desktop), accessible à partir d’ici :
+La première connexion de données est un classeur Excel que vous pouvez télécharger à partir de [ce lien](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). L’autre est une ressource web (également utilisée dans d’autres contenus d’aide de Power BI Desktop), accessible à partir d’ici :
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Les étapes nécessaires pour se connecter à ces deux sources de données marquent le début des tâches courantes relatives aux requêtes.
 
@@ -142,7 +141,7 @@ L’Éditeur de requête conserve toutes les étapes appliquées pour chaque req
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Voici un aperçu de l’**Éditeur avancé**, où figurent les étapes associées à la requête **USA\_StudentEnrollment** affichée. Ces étapes sont créées dans le langage de formule Power Query, souvent appelé **M**. Pour plus d’informations, consultez [En savoir plus sur les formules Power Query](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Pour afficher la spécification du langage proprement dite, consultez la page [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633) (Spécification du langage de formule Microsoft Power Query pour Excel).
+Voici un aperçu de l’**Éditeur avancé**, où figurent les étapes associées à la requête **USA\_StudentEnrollment** affichée. Ces étapes sont créées dans le langage de formule Power Query, souvent appelé **M**. Pour plus d’informations, consultez [En savoir plus sur les formules Power Query](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Pour afficher la spécification du langage proprement dite, consultez la page [Microsoft Power Query for Excel Formula Language Specification](/powerquery-m/excel-workbook) (Spécification du langage de formule Microsoft Power Query pour Excel).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

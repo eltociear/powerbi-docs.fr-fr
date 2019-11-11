@@ -2,7 +2,6 @@
 title: 'Project Online : se connecter à des données au moyen de Power BI Desktop'
 description: 'Project Online : se connecter à des données au moyen de Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b0dc84d7b2d8da0df8a9e61a43f35898d197c188
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e3bb5f3527da11f781892fae23ae369edfe4676b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513750"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878003"
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online : se connecter à des données au moyen de Power BI Desktop
 Vous pouvez vous connecter à des données dans Project Online au moyen de Power BI Desktop.
 
 ## <a name="step-1-download-power-bi-desktop"></a>Étape 1 : Télécharger Power BI Desktop
-1. [Téléchargez Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521662), puis exécutez le programme d’installation pour installer **Power BI Desktop** sur votre ordinateur.
+1. [Téléchargez Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521662), puis exécutez le programme d’installation pour installer **Power BI Desktop** sur votre ordinateur.
 
 ## <a name="step-2-connect-to-project-online-with-odata"></a>Étape 2 : Se connecter à Project Online avec OData
 1. Ouvrez **Power BI Desktop**.
@@ -41,5 +40,5 @@ Le compte que vous utilisez pour vous connecter au flux OData doit disposer d’
 
 À ce stade, vous pouvez choisir les tables auxquelles vous souhaitez vous connecter et créer une requête.  Vous ignorez par où commencer ?  Le billet de blog suivant montre comment créer un burn down chart pour vos données Project Online.  Il décrit comment se connecter à Project Online avec Power Query, mais la procédure s’applique également à Power BI Desktop.
 
-[Création de burn down charts pour Project à l’aide de Power Pivot et Power Query](http://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
+[Création de burn down charts pour Project à l’aide de Power Pivot et Power Query](https://blogs.office.com/2014/03/24/creating-burndown-charts-for-project-using-power-pivot-and-power-query/)
 

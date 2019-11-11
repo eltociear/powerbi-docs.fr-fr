@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 629c53358f757002f2b3dcda468641bbaaa2f4d4
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 5bc0d3bbfb2c2b67b56e6406646f6131a360b97d
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70166708"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799836"
 ---
 Il existe une différence significative entre les langages de formule **DAX** et Excel : DAX vous permet de faire passer des *tables entières* entre expressions, plutôt que d’avoir à utiliser une seule valeur. Un effet très positif de cette différence est que DAX vous permet de filtrer les tables de ses expressions, puis de travailler avec l’ensemble filtré de valeurs.
 
@@ -42,7 +42,7 @@ Par exemple, Power BI et DAX incluent des valeurs dont les index croisés sont 
 
 Vous pouvez également créer des tables calculées entières à l’aide de fonctions DAX. Les tables calculées créées à l’aide de DAX requièrent un **NOM** et une fonction **TABLE**. Les tables calculées peuvent être utilisées comme n’importe quelle autre table, notamment en établissant des relations.
 
-> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
+> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

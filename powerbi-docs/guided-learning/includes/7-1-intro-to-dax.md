@@ -1,17 +1,17 @@
 ---
-ms.openlocfilehash: 6366dbe4d7c58b49b4085d80aa690fd6c64fee59
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 3966521d158c244487638be4117f98ea570e1f28
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70847682"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799834"
 ---
 Bienvenue dans la partie **Formation guidée** de Power BI conçue pour vous présenter **DAX**.
 
 **DAX** signifie **Data Analysis Expressions**. Il s’agit du langage de formule utilisé dans Power BI (ce langage est également utilisé par Power BI en arrière-plan). DAX se retrouve également dans d’autres produits Microsoft, notamment Power Pivot et le modèle tabulaire SSAS, mais ces sujets de formation guidée se concentrent sur la manière dont DAX est utilisé, et peut être utilisé par vous, dans Power BI.
 
 ## <a name="dax-and-this-guided-learning-video-series"></a>DAX et cette série de vidéos de formation guidée
-L’objectif de cette **formation guidée** est de vous apprendre les concepts de base et notions fondamentales de DAX : comment envisager DAX, comment il fonctionne et les fonctionnalités les plus utiles, comme vous l’explique (et l’a appris avec beaucoup d’expérience) [Alberto Ferrari](http://www.sqlbi.com/learning-dax), un expert réputé de DAX.
+L’objectif de cette **formation guidée** est de vous apprendre les concepts de base et notions fondamentales de DAX : comment envisager DAX, comment il fonctionne et les fonctionnalités les plus utiles, comme vous l’explique (et l’a appris avec beaucoup d’expérience) [Alberto Ferrari](https://www.sqlbi.com/learning-dax), un expert réputé de DAX.
 
 ![Portrait d’Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
@@ -30,7 +30,7 @@ DAX utilise la surcharge d’opérateur, ce qui signifie que vous pouvez combine
 
 Il existe un type de données en particulier avec lequel vous allez probablement beaucoup travailler dans Power BI : **DateTime**. **DateTime** est stocké en tant que valeur à virgule flottante avec la partie entière et la partie décimale. DateTime peut être utilisé précisément pour les calculs d’une période ultérieure au 1er mars 1900.
 
-> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
 > 
 > 
 

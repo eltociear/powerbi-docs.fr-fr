@@ -2,7 +2,6 @@
 title: Présentation de l’administration de Power BI
 description: Découvrez la configuration des règles de gouvernance de Power BI, le monitoring de l’utilisation et le provisionnement des licences, de la capacité et des ressources de l’organisation.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 779dba9262752a4030eb263002822d0186f3e470
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: d33aad1d52a7074873e4b2bb7f5e2f93e2b8ab0e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075809"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873735"
 ---
 # <a name="what-is-power-bi-administration"></a>Présentation de l’administration de Power BI
 
@@ -87,4 +86,4 @@ Nous espérons que cet article vous aura donné un rapide éclairage sur le trav
 
 [FAQ sur l’administration de Power BI](service-admin-faq.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Utiliser des passerelles personnelles dans Power BI
 description: Fournit des informations sur la passerelle de données locale (mode personnel) pour Power BI que les utilisateurs peuvent utiliser pour se connecter à des données locales.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b910f20935c76f8723d8ca876cb57d811976772b
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 5138536fca255638e2cef802b885be1f5dfcbef9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729937"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881518"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Utiliser des passerelles personnelles dans Power BI
 
@@ -56,7 +55,7 @@ Les fichiers de la passerelle sont installés dans _"%localappdata%\Microsoft\On
 
 ## <a name="use-fast-combine-with-the-personal-gateway"></a>Utiliser le Regroupement rapide avec la passerelle personnelle
 
-La fonctionnalité Regroupement rapide sur une passerelle personnelle vous permet d’ignorer les niveaux de confidentialité spécifiés lors de l’exécution des requêtes. Pour que Regroupement rapide fonctionne avec la passerelle de données locale (mode personnel) :
+La fonctionnalité Combinaison rapide sur une passerelle personnelle vous permet d’ignorer les niveaux de confidentialité spécifiés lors de l’exécution des requêtes. Pour que Combinaison rapide fonctionne avec la passerelle de données locale (mode personnel) :
 
 1. À l’aide de l’Explorateur de fichiers, ouvrez le fichier suivant :
 
@@ -88,7 +87,7 @@ La fonctionnalité Regroupement rapide sur une passerelle personnelle vous perme
 
 **Question :** Pourquoi suis-je invité à mettre à jour mes informations d’identification ?
   
-**Réponse :** Plusieurs situations peuvent déclencher une demande d’informations d’identification. La plus courante est que vous avez réinstallé la passerelle de données locale (mode personnel) sur un ordinateur différent de celui sur lequel vous avez installé votre Passerelle Power BI – Personal. Il peut également s’agir d’un problème dans la source de données et Power BI n’a pas pu effectuer le test de connexion, le délai d’attente a été dépassé ou une erreur système s’est produite. Pour mettre à jour vos informations d’identification dans le service Power bi, sélectionnez l’icône d’engrenage, puis **Paramètres** > **Jeux de données**. Recherchez le jeu de données en question, puis sélectionnez **Informations d’identification de la source de données**.
+**Réponse :** plusieurs situations peuvent déclencher une demande d’informations d’identification. La plus courante est que vous avez réinstallé la passerelle de données locale (mode personnel) sur un ordinateur différent de celui sur lequel vous avez installé votre Passerelle Power BI – Personal. Il peut également s’agir d’un problème dans la source de données et Power BI n’a pas pu effectuer le test de connexion, le délai d’attente a été dépassé ou une erreur système s’est produite. Pour mettre à jour vos informations d’identification dans le service Power bi, sélectionnez l’icône d’engrenage, puis **Paramètres** > **Jeux de données**. Recherchez le jeu de données en question, puis sélectionnez **Informations d’identification de la source de données**.
 
 **Question :** Pendant combien de temps ma passerelle personnelle est-elle hors connexion pendant la mise à niveau ?
   
@@ -102,4 +101,4 @@ La fonctionnalité Regroupement rapide sur une passerelle personnelle vous perme
 
 * [Configuration des paramètres de proxy de la passerelle de données locale](/data-integration/gateway/service-gateway-proxy)  
 
-D’autres questions ? Essayez la [communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? Essayez la [communauté Power BI](https://community.powerbi.com/).

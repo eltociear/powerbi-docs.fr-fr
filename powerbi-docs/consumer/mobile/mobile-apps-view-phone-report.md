@@ -2,19 +2,18 @@
 title: Afficher les rapports Power BI optimisés pour votre téléphone
 description: En savoir plus sur l’interaction avec les pages de rapport optimisées pour l’affichage dans les applications Power BI pour téléphone.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: mshenhav
-ms.openlocfilehash: 79ca47f83bb39ab9d6df141b5a26dcb54e00c72c
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: f8dba41a15390e4b52227c7daaa603daf7c08939
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65100986"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870530"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Afficher les rapports Power BI optimisés pour votre téléphone
 
@@ -134,5 +133,5 @@ Les auteurs de rapports peuvent [définir l’extraction](https://docs.microsoft
 * [Créer des rapports optimisés pour les applications Power BI pour téléphone](../../desktop-create-phone-report.md)
 * [Créer une vue téléphone d’un tableau de bord dans Power BI](../../service-create-dashboard-mobile-phone-view.md)
 * [Créer des visuels réactifs optimisés pour toute taille](../../visuals/desktop-create-responsive-visuals.md)
-* D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

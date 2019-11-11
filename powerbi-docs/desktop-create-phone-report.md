@@ -2,7 +2,6 @@
 title: Optimiser les rapports pour les applications mobiles - Power BI
 description: Découvrez comment optimiser les pages de rapport pour les applications mobiles Power BI en créant une version portrait du rapport spécialement pour les téléphones et les tablettes.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 006d0e02f3b0aa7860cade4d8e035ddc299e8ba8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61310692"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878388"
 ---
 # <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimiser les rapports pour les applications mobiles Power BI
 Vous pouvez améliorer l’expérience d’affichage des rapports dans les applications mobiles en créant une disposition en mode portrait. Dans Power BI Desktop et le service Power BI, vous réorganisez et redimensionnez les visuels de rapport pour une expérience optimale en mode portrait.  
@@ -110,5 +109,5 @@ Les lecteurs du rapport peuvent tourner leur téléphone ou leur tablette sur le
 * [Créer une vue téléphone d’un tableau de bord dans Power BI](service-create-dashboard-mobile-phone-view.md)
 * [Afficher les rapports Power BI optimisés pour votre téléphone](consumer/mobile/mobile-apps-view-phone-report.md)
 * [Créer des visuels réactifs optimisés pour toute taille](visuals/desktop-create-responsive-visuals.md)
-* D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

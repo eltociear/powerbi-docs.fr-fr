@@ -2,7 +2,6 @@
 title: Vidéos Power BI
 description: Vidéos Power BI et lien vers la chaîne YouTube.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
-ms.openlocfilehash: 9068c522d2aedf95fc65e9bc4bece04531db478d
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: a33efaf4e0ecd871170873df072f24bf8f824cdc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060328"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871177"
 ---
 # <a name="power-bi-videos"></a>Vidéos Power BI
 Nous disposons d’une chaîne YouTube pour Power BI ! Vous pouvez visiter [notre canal](https://www.youtube.com/user/mspowerbi/videos) et, si vous ne maîtrisez pas encore Power BI, commencez par les vidéos de la [playlist « Analyze and Visualize data with Power BI »](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
@@ -49,5 +48,5 @@ Découvrez la collection suivante de sources et de contenu pour voir d’autres 
 ## <a name="next-steps"></a>Étapes suivantes
 [Qu’est-ce que Power BI ?](fundamentals/power-bi-overview.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

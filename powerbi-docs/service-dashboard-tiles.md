@@ -2,7 +2,6 @@
 title: Introduction aux vignettes de tableau de bord pour les concepteurs Power BI
 description: Cet article décrit les vignettes du tableau de bord dans Power BI, notamment celles créées à partir de rapports SQL Server Reporting Services (SSRS).
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4577ca5d12002e18406b66036244d895fa7ee5fd
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 801af5e9c4d5306a3e77d4e82c787cc90e9cac37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994876"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872784"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduction aux vignettes de tableau de bord pour les concepteurs Power BI
 
@@ -99,8 +98,8 @@ Quand vous sélectionnez une vignette, ce qui se passe ensuite dépend de la fa�
 - [Introduction aux tableaux de bord pour les concepteurs Power BI](service-dashboards.md)  
 - [Actualisation des données dans Power BI](refresh-data.md)
 - [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
-- [Intégration de vignettes Power BI dans les documents Office](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+- [Intégration de vignettes Power BI dans les documents Office](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Épingler des éléments Reporting Services à des tableaux de bord Power BI](https://msdn.microsoft.com/library/mt604784.aspx)
 
-D’autres questions ? [Posez vos questions à la Communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? [Posez vos questions à la Communauté Power BI](https://community.powerbi.com/).
 

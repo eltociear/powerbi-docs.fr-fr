@@ -2,7 +2,6 @@
 title: Vous avez oublié votre mot de passe Power BI ?
 description: Si vous avez oublié votre mot de passe, vous pouvez utiliser un lien pour demander à le réinitialiser.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 6b3e75b9674a8b22948bdee1b8f8b9086eb2b691
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: c4e13871e7ebf432e1478eb8d524f466bed9f0bc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075183"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873615"
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Vous avez oublié votre mot de passe Power BI ?
 
@@ -34,4 +33,4 @@ Il est important de noter que ce numéro de téléphone n’est pas le numéro d
 > [!NOTE]
 > Power BI offre un support pendant les heures de bureau habituelles dans le fuseau horaire EST. Le support est actuellement fourni uniquement en anglais.
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

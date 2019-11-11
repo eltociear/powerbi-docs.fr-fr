@@ -2,19 +2,18 @@
 title: Scanner un code QR Power BI à partir de votre appareil mobile
 description: Les codes QR dans Power BI peuvent connecter n’importe quel élément du monde réel directement à des informations décisionnelles connexes dans l’application mobile Power BI pour appareils iPhones et Android.
 author: KesemSharabi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: mshenhav
-ms.openlocfilehash: 69c0e5279389c186471aa0a6068d88917cf6fc65
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ba810bf416a913ddb41ab02c0afe7373e5c107f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70236749"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879210"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scanner un code QR Power BI à partir de votre appareil mobile
 S’applique à :
@@ -50,7 +49,7 @@ Si votre collègue n’a pas partagé le rapport ou le tableau de bord avec vous
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-iphone"></a>Scanner un code QR avec un scanner externe sur votre iPhone
 1. Avec un scanner installé sur votre téléphone, pointez vers le code QR Power BI approprié pour un accès immédiat à la vignette ou au rapport. 
-2. Si l’application Power BI n’est pas installée, vous êtes redirigé vers l’[Apple Store pour la télécharger](http://go.microsoft.com/fwlink/?LinkId=522062) sur votre iPhone.
+2. Si l’application Power BI n’est pas installée, vous êtes redirigé vers l’[Apple Store pour la télécharger](https://go.microsoft.com/fwlink/?LinkId=522062) sur votre iPhone.
 
 ## <a name="scan-a-power-bi-qr-code-on-your-android-device-with-the-power-bi-scanner"></a>Scanner un code QR Power BI sur votre appareil Android avec le scanner de Power BI
 1. Dans l’application mobile Power BI, ouvrez le bouton de navigation globale ![](media/mobile-apps-qr-code/power-bi-android-global-nav-icon.png) dans le coin supérieur gauche. 
@@ -67,12 +66,12 @@ Si votre collègue n’a pas partagé le rapport ou le tableau de bord avec vous
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-android-device"></a>Scanner un code QR avec un scanner externe sur votre appareil Android
 1. Avec le scanner installé sur votre appareil Android, pointez vers le code QR Power BI approprié pour un accès immédiat à la vignette ou au rapport. 
-2. Si l’application Power BI n’est pas installée, vous êtes redirigé vers [Google Play pour la télécharger](http://go.microsoft.com/fwlink/?LinkID=544867). 
+2. Si l’application Power BI n’est pas installée, vous êtes redirigé vers [Google Play pour la télécharger](https://go.microsoft.com/fwlink/?LinkID=544867). 
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Se connecter aux données Power BI réelles](mobile-apps-data-in-real-world-context.md) avec les applications mobiles
 * [Créer un code QR pour une vignette dans le service Power BI](../../service-create-qr-code-for-tile.md)
 * [Créer un code QR pour un rapport dans le service Power BI](../../service-create-qr-code-for-report.md)
 * Vous pouvez aussi [scanner un code QR avec l’application Power BI for Mixed Reality](mobile-mixed-reality-app.md).
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

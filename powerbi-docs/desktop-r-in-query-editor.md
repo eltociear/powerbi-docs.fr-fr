@@ -2,7 +2,6 @@
 title: Utiliser le langage R dans l’Éditeur Power Query
 description: Utilisation du langage R dans l’Éditeur de requête Power BI Desktop pour les analyses avancées
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b64b4b736291ce1c3bde02010b7e583a0c3dc406
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: d2ba33e18701ad147cb38072461804b4528101ea
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841515"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877944"
 ---
 # <a name="use-r-in-query-editor"></a>Utiliser le langage R dans l’Éditeur de requête
 
@@ -50,7 +49,7 @@ Pour installer **mice** :
 
 Pour illustrer l’utilisation de **R** dans l’**Éditeur de requête**, nous allons utiliser un exemple de jeu de données boursières contenues dans un fichier .csv et suivre les étapes suivantes :
 
-1. [Téléchargez le fichier **EuStockMarkets_NA.csv**](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Notez l’endroit où vous l’enregistrez.
+1. [Téléchargez le fichier **EuStockMarkets_NA.csv**](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Notez l’endroit où vous l’enregistrez.
 
 1. Chargez le fichier dans **Power BI Desktop** : dans le ruban **Accueil**, sélectionnez **Obtenir des données > Texte/CSV**.
 
@@ -108,7 +107,7 @@ Maintenant, nous pouvons créer un visuel pour voir comment le script R a compl
 Vous pouvez enregistrer tous les visuels terminés dans un fichier .pbix **Power BI Desktop**, et utiliser le modèle de données et ses scripts R dans le service Power BI.
 
 > [!NOTE]
-> Vous pouvez [télécharger un fichier .pbix](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix) une fois toutes ces étapes terminées.
+> Vous pouvez [télécharger un fichier .pbix](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix) une fois toutes ces étapes terminées.
 
 Une fois que vous avez téléchargé le fichier .pbix vers le service Power BI, vous devez effectuer des étapes supplémentaires pour activer l’actualisation des données du service et les visuels mis à jour :  
 

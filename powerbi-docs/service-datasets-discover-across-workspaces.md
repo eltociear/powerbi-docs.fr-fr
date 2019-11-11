@@ -2,7 +2,6 @@
 title: Créer des rapports basés sur des jeux de données à partir de différents espaces de travail (préversion) - Power BI
 description: Découvrez comment vous pouvez partager un jeu de données avec des utilisateurs dans toute l’organisation. Ils peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8229c74a233d8bc44370380bf635527506194f0
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 371507eb86e1b68225e9d66ee3a1363b0e163d4f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567459"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877169"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Créer des rapports basés sur des jeux de données à partir de différents espaces de travail (préversion)
 
@@ -63,4 +62,4 @@ Il existe deux types de jeux de données approuvés différents. Les propriétai
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Utiliser des jeux de données dans des espaces de travail (préversion)](service-datasets-across-workspaces.md)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

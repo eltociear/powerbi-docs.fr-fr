@@ -2,7 +2,6 @@
 title: Types de données dans Power BI Desktop
 description: Types de données dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: reference
 ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: a3ca4b8ffe709fec7953eb5d4081bdf296504eb1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391786"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868518"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Types de données dans Power BI Desktop
 Cet article décrit les types de données pris en charge dans Power BI Desktop et Data Analysis Expressions (DAX). 
@@ -71,7 +70,7 @@ Power BI Desktop prend en charge cinq types de données Date/Heure dans la vue R
 **Vrai/Faux** : valeur booléenne Vrai ou Faux.
 
 ### <a name="blanksnulls-type"></a>Type Vide/Null
-**Vide** : type de données dans DAX qui représente et remplace les valeurs null SQL. Vous pouvez créer une valeur vide à l’aide de la fonction [VIDE](http://msdn.microsoft.com/library/ee634820.aspx) et vérifier la présence de valeurs vides à l’aide de la fonction logique [ESTVIDE](https://msdn.microsoft.com/library/ee634204.aspx).
+**Vide** : type de données dans DAX qui représente et remplace les valeurs null SQL. Vous pouvez créer une valeur vide à l’aide de la fonction [VIDE](https://msdn.microsoft.com/library/ee634820.aspx) et vérifier la présence de valeurs vides à l’aide de la fonction logique [ESTVIDE](https://msdn.microsoft.com/library/ee634204.aspx).
 
 ### <a name="table-data-type"></a>Type de données de table
 DAX utilise un type de données de table dans de nombreuses fonctions, telles que les agrégations et les calculs Time Intelligence. Certaines fonctions nécessitent une référence à une table ; d’autres retournent une table qui peut ensuite servir d’entrée pour d’autres fonctions. Dans certaines fonctions qui nécessitent une table comme entrée, vous pouvez spécifier une expression qui correspond à une table. Pour certaines fonctions, une référence à une table de base est obligatoire. Pour plus d’informations sur les exigences relatives à des fonctions spécifiques, consultez [Référence des fonctions DAX](https://msdn.microsoft.com/library/ee634396.aspx).

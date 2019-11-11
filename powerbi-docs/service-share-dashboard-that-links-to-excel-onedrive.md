@@ -2,7 +2,6 @@
 title: Partager un tableau de bord lié à un fichier Excel dans OneDrive - Power BI
 description: Consultez les informations relatives au partage de tableaux de bord connectés à un classeur Excel sur OneDrive Entreprise, avec des vignettes épinglées de ce classeur.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7157ddd66c651519f59eb964f5fcf95eb127943c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: ee32d10ffeb22160b054661ca91c46890a877fa3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721435"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871460"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Partager un tableau de bord Power BI avec des liens vers un fichier Excel dans OneDrive
 Dans Power BI, vous pouvez vous [connecter à des classeurs Excel sur OneDrive Entreprise](service-excel-workbook-files.md) et épingler des vignettes sur un tableau de bord à partir de ce classeur. Quand vous partagez ce tableau de bord, ou créez un pack de contenu qui l’inclut :
@@ -57,5 +56,5 @@ Le partage d’un tableau de bord à partir d’un espace de travail Power BI es
 ## <a name="next-steps"></a>Étapes suivantes
 * [Épingler une vignette à un tableau de bord Power BI à partir d’Excel](service-dashboard-pin-tile-from-excel.md)
 * [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

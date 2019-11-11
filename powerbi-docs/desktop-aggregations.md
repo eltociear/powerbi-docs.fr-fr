@@ -2,7 +2,6 @@
 title: Utiliser des agrégations dans Power BI Desktop
 description: Effectuer une analyse interactive de Big Data dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325204"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876742"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Agrégations dans Power BI Desktop
 
@@ -60,7 +59,7 @@ L’image suivante illustre ce modèle.
 ![table d’agrégation dans un modèle](media/desktop-aggregations/aggregations_03.jpg)
 
 > [!NOTE]
-> La table **Sales Agg** étant simplement une autre table, elle offre la flexibilité de pouvoir être chargée de différentes manières. Par exemple, l’agrégation peut être effectuée dans la base de données source à l’aide de processus ETL/ELT, ou par l’[expression M](https://msdn.microsoft.com/query-bi/m/power-query-m-reference) pour la table. Elle peut utiliser le mode de stockage Importer avec ou sans [actualisation incrémentielle dans Power BI Premium](service-premium-incremental-refresh.md), ou peut utiliser DirectQuery et être optimisée pour les requêtes rapides à l’aide d’[index columnstore](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). Cette flexibilité permet d’obtenir des architectures équilibrées qui répartissent la charge de requête afin d’éviter les goulots d’étranglement.
+> La table **Sales Agg** étant simplement une autre table, elle offre la flexibilité de pouvoir être chargée de différentes manières. Par exemple, l’agrégation peut être effectuée dans la base de données source à l’aide de processus ETL/ELT, ou par l’[expression M](/powerquery-m/power-query-m-function-reference) pour la table. Elle peut utiliser le mode de stockage Importer avec ou sans [actualisation incrémentielle dans Power BI Premium](service-premium-incremental-refresh.md), ou peut utiliser DirectQuery et être optimisée pour les requêtes rapides à l’aide d’[index columnstore](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). Cette flexibilité permet d’obtenir des architectures équilibrées qui répartissent la charge de requête afin d’éviter les goulots d’étranglement.
 
 ### <a name="storage-mode"></a>Mode de stockage 
 Poursuivons avec notre exemple. Nous affectons **Importer** comme mode de stockage de **Sales Agg** afin d’accélérer les requêtes.

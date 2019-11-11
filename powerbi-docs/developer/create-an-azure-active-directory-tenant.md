@@ -3,18 +3,17 @@ title: Créer un locataire Azure Active Directory pour utiliser Power BI
 description: Découvrez comment créer un locataire Azure Active Directory (Azure AD) pour une application personnalisée qui appelle des API REST Power BI.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/28/2019
-ms.openlocfilehash: 73dddd00b6f811cd29c76c97b04136358d6e6b7a
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 1297341014154267a7e99cbb8b1e85e36e6194b9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809216"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864692"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Créer un locataire Azure Active Directory pour utiliser Power BI
 
@@ -98,4 +97,4 @@ Maintenant que vous avez un locataire Azure AD, vous pouvez l’utiliser pour t
  
 [Démarrage rapide : Configurer un environnement de développement](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

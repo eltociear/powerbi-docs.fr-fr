@@ -3,19 +3,18 @@ title: Moyens de partager votre travail dans Power BI
 description: Dans Power BI, vous pouvez collaborer sur des tableaux de bord, des rapports, des vignettes et des apps, et les distribuer de plusieurs façons. Chaque moyen a ses propres avantages.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/06/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 31310900b91924e639ce10a13aef3da996598502
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841774"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881342"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Moyens de partager votre travail dans Power BI
 
@@ -135,4 +134,4 @@ Les *applications modèles* sont conçues pour être distribuées publiquement, 
 
 Vous voulez donner votre avis ? Accédez au [site de la communauté Power BI](https://community.powerbi.com/) pour effectuer des suggestions.
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

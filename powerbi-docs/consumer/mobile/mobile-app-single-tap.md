@@ -2,19 +2,18 @@
 title: Configurer une interaction par appui simple avec les rapports
 description: Découvrez comment configurer une interaction par appui simple ou double avec les rapports.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: c553b921ebeb30b8fb8ec7ba9f7bce74f6c31dee
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 4288178f702ff3fbfaa05c943adb0fd7ec12f530
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67558962"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879411"
 ---
 # <a name="configure-report-interaction-to-single-tap-or-double-tap"></a>Configurer une interaction par appui simple ou double avec les rapports
 S’applique à :
@@ -46,5 +45,5 @@ Cet article s’applique aux rapports en mode paysage et en mode téléphone.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Visualiser les rapports Power BI optimisés pour les téléphones et interagir avec eux](mobile-apps-view-phone-report.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

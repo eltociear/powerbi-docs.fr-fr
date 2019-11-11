@@ -2,7 +2,6 @@
 title: Graphiques de compartimentage dans Power BI
 description: Graphiques de compartimentage dans Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1de5869bc5b422dc98a13316022f653f62675829
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: b70e9611b22f1df20d39cdbd338fd5b6bfe1b43d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71192588"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880743"
 ---
 # <a name="treemaps-in-power-bi"></a>Graphiques de compartimentage dans Power BI
 
@@ -67,7 +66,7 @@ Les treemaps sont conseillés :
 
 ## <a name="prerequisite"></a>Prérequis
 
-Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
    

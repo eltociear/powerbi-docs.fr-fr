@@ -2,19 +2,18 @@
 title: Langues prises en charge dans les applications mobiles Power BI
 description: Consultez la liste des langues prises en charge dans les applications mobiles Power BI.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 97fa91dda195d6976d92b027a0f96fca8e2ccea1
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ac3ed868f23ff15441a30dd2425820d2cda0c920
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841424"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879147"
 ---
 # <a name="supported-languages-in-the-power-bi-mobile-apps"></a>Langues prises en charge dans les applications mobiles Power BI
 Actuellement, les applications mobiles Power BI prennent en charge les langues suivantes :
@@ -60,6 +59,6 @@ Actuellement, les applications mobiles Power BI prennent en charge les langues s
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Langues et pays/régions pris en charge pour Power BI](../../supported-languages-countries-regions.md)
-* Vous avez des questions ? Essayez de d’interroger la [Communauté Power BI](http://community.powerbi.com/).
+* Vous avez des questions ? Essayez de d’interroger la [Communauté Power BI](https://community.powerbi.com/).
 * Le problème persiste ? Visitez la [page de support Power BI](https://powerbi.microsoft.com/support/).
 

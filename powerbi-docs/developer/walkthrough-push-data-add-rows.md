@@ -3,18 +3,17 @@ title: Ajouter des lignes à une table
 description: 'Procédure pas à pas pour transmettre des données : ajouter des lignes à une table Power BI'
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: a355f09984bc454f74dfab8ef137e29fd5aed110
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 39bf8ec92fba25c6097cf663bdb6572705938a42
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710416"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879854"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Étape 5 : Ajouter des lignes à une table Power BI
 
@@ -317,4 +316,4 @@ Même si nous spécifions que nous **_//obtenons le premier ID_** dans le code c
 [Transmettre des données à un tableau de bord Power BI](walkthrough-push-data.md)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 [Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

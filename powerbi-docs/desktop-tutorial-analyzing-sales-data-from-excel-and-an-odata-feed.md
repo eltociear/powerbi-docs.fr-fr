@@ -2,7 +2,6 @@
 title: 'Tutoriel : Combiner des données à partir d’Excel et d’un flux OData dans Power BI Desktop'
 description: 'Tutoriel : Combiner des données à partir d’Excel et d’un flux OData'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 8d1b253d5e84bb15dea4612978ee970faccb7a1a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160378"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866088"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Tutoriel : Combiner des données de vente à partir d’Excel et d’un flux OData
 
@@ -35,11 +34,11 @@ Vous allez importer chaque jeu de données et effectuer des opérations de trans
 
 Tout d’abord, importez les données de produit à partir du classeur Excel Products.xlsx dans Power BI Desktop.
 
-1. [Téléchargez le classeur Excel Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) et enregistrez-le sous **Products.xlsx**.
+1. [Téléchargez le classeur Excel Products.xlsx](https://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx) et enregistrez-le sous **Products.xlsx**.
    
 2. Sélectionnez la flèche déroulante en regard de **Obtenir des données**, sous l’onglet **Accueil** du ruban Power BI Desktop, puis sélectionnez **Excel** dans la liste déroulante **Les plus courantes**. 
    
-   ![Obtenir les données](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
+   ![Obtenir des données](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_1.png)
    
    >[!NOTE]
    >Vous pouvez également sélectionner l’élément **Obtenir des données** lui-même, ou sélectionnez **Obtenir des données** dans la boîte de dialogue **Prise en main** de Power BI, puis sélectionnez **Excel** ou **Fichier** > **Excel** dans la boîte de dialogue **Obtenir des données**, puis sélectionnez **Se connecter**.
@@ -76,7 +75,7 @@ Ensuite, importez les données de commandes à partir du flux OData sur l’exem
    
    ![Obtenir OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata.png)
    
-2. Dans la boîte de dialogue **Flux OData**, collez l’URL du flux OData de Northwind (`http://services.odata.org/V3/Northwind/Northwind.svc/`). Sélectionnez **OK**.
+2. Dans la boîte de dialogue **Flux OData**, collez l’URL du flux OData de Northwind (`https://services.odata.org/V3/Northwind/Northwind.svc/`). Sélectionnez **OK**.
    
    ![Boîte de dialogue Flux OData](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/get_odata2.png)
    
@@ -271,7 +270,7 @@ Sélectionnez un produit dans le graphique **Quantity by ProductName** (Quantit�
 Votre rapport terminé combine les données du fichier Excel Products.xlsx et du flux OData Northwind dans des visuels qui vous aident à analyser les informations sur les commandes pour différents pays, dates et produits. Lorsque votre rapport est prêt, vous pouvez [le charger dans le service Power BI](desktop-upload-desktop-files.md) afin de le partager avec d’autres utilisateurs de Power BI.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Autres didacticiels Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Vidéos relatives à Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Forum Power BI](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Blog Power BI](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Autres didacticiels Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Vidéos relatives à Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Forum Power BI](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Blog Power BI](https://go.microsoft.com/fwlink/?LinkID=519327)

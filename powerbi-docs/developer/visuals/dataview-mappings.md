@@ -3,18 +3,17 @@ title: Présentation du mappage des vues de données dans les visuels Power BI
 description: Cet article explique comment Power BI transforme les données avant de les transmettre dans des visuels.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 77d5d6423c8246712d12dcc041d32ae73f68b72e
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 07cc0517fb27649bb3cc47b8ba8f51b4268d9a7c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193554"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880154"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Présentation du mappage des vues de données dans les visuels Power BI
 
@@ -397,7 +396,7 @@ Avec les fonctionnalités données :
 
 Vous pouvez visualiser la vue des données de table comme suit :  
 
-| Pays| Année | Sales |
+| Pays| Année | Ventes |
 |-----|-----|------|
 | USA | 2016 | 100 |
 | USA | 2015 | 50 |

@@ -2,7 +2,6 @@
 title: Afficher des images dans un tableau ou une matrice dans un rapport
 description: Dans Power BI Desktop, vous créez une colonne avec des liens hypertexte vers des images. Ensuite, dans Power BI Desktop ou le service Power BI, vous pouvez ajouter ces liens hypertexte à une table, une matrice, un segment ou une carte à plusieurs lignes pour afficher l’image.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cbb04057c8065e998068dd6520539c830a659f72
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 95b1dc1be3421f19fa8220629ca2003469658480
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715549"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874481"
 ---
 # <a name="display-images-in-a-table-matrix-or-slicer-in-a-report"></a>Afficher des images dans un tableau, une matrice ou un segment dans un rapport
 
@@ -48,5 +47,5 @@ Un bon moyen d’améliorer vos rapports consiste à y ajouter des images. Les i
 
 [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

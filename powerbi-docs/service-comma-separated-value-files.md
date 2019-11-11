@@ -2,7 +2,6 @@
 title: Obtenir des données de fichiers de valeurs séparées par des virgules (.csv)
 description: Découvrez comment obtenir des données à partir de fichiers CSV dans Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1a150c2cb4eb819b78b2b08a492087eb98bf6363
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a33c8a45f4f32efb0a47df82b8af23d42c281ae9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513332"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855523"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Obtenir des données de fichiers de valeurs séparées par des virgules (.csv)
 ![](media/service-comma-separated-value-files/csv_icon.png)
 
-Les fichiers de valeurs séparées par des virgules, communément appelés fichiers .csv, sont des fichiers texte simples contenant des lignes de données où les valeurs sont séparées les unes des autres par une virgule. Ces types de fichier peuvent contenir de grandes quantités de données dans un fichier de taille relativement petite, ce qui en fait une source de données idéale pour Power BI. Vous pouvez télécharger un exemple de fichier CSV [ici](http://go.microsoft.com/fwlink/?LinkID=619356).
+Les fichiers de valeurs séparées par des virgules, communément appelés fichiers .csv, sont des fichiers texte simples contenant des lignes de données où les valeurs sont séparées les unes des autres par une virgule. Ces types de fichier peuvent contenir de grandes quantités de données dans un fichier de taille relativement petite, ce qui en fait une source de données idéale pour Power BI. Vous pouvez télécharger un exemple de fichier CSV [ici](https://go.microsoft.com/fwlink/?LinkID=619356).
 
 Si vous disposez d’un fichier CSV, associez-le à votre site Power BI en tant que jeu de données où vous pouvez commencer à explorer vos données, créer des tableaux de bord et partager vos informations avec d’autres utilisateurs.
 

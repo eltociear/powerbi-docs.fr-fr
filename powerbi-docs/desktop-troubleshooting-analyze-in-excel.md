@@ -2,7 +2,6 @@
 title: Résoudre les problèmes d’analyse dans Excel dans Power BI Desktop
 description: Solutions aux problèmes courants de la fonctionnalité Analyser dans Excel
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: a2116f2146072590c4cbcc7f41d941950d9692f0
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 987078ae33af10e9c33b4d8a00f8e2e688be12a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543990"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865759"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Résolution des problèmes de la fonctionnalité Analyser dans Excel
 
@@ -24,7 +23,7 @@ Il peut arriver que vous obteniez un résultat inattendu lors de l’utilisation
 > [!NOTE]
 > Il existe une page distincte dédiée à la description et l’activation de la fonctionnalité [Analyser dans Excel](service-analyze-in-excel.md).
 > 
-> Si vous rencontrez un scénario ne figurant pas dans la liste ci-dessous, et que cela vous pose des problèmes, vous pouvez demander de l’aide sur le [site de la communauté](http://community.powerbi.com/), ou créer un [ticket de support](https://powerbi.microsoft.com/support/).
+> Si vous rencontrez un scénario ne figurant pas dans la liste ci-dessous, et que cela vous pose des problèmes, vous pouvez demander de l’aide sur le [site de la communauté](https://community.powerbi.com/), ou créer un [ticket de support](https://powerbi.microsoft.com/support/).
 > 
 > 
 
@@ -40,7 +39,7 @@ Cet article contient les sections suivantes qui traitent de la résolution des p
 * Impossible de faire glisser quelque chose dans la zone des valeurs de tableau croisé dynamique (aucune mesure)
 
 ## <a name="update-excel-libraries-for-the-ole-db-provider"></a>Mise à jour des bibliothèques Excel pour le fournisseur OLE DB
-Pour utiliser **Analyser dans Excel**, votre ordinateur doit avoir un fournisseur AS OLE DB actuel installé. Ce [billet de communauté](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) constitue une source précieuse pour vérifier votre installation du fournisseur OLE DB, ou pour télécharger une version récente.
+Pour utiliser **Analyser dans Excel**, votre ordinateur doit avoir un fournisseur AS OLE DB actuel installé. Ce [billet de communauté](https://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) constitue une source précieuse pour vérifier votre installation du fournisseur OLE DB, ou pour télécharger une version récente.
 
 Le niveau de bits des bibliothèques Excel doit correspondre à celui de la version de Windows. Si vous avez installé Windows 64 bits, vous devez installer le fournisseur OLE DB 64 bits.
 

@@ -2,7 +2,6 @@
 title: Actualiser un jeu de données créé à partir d’un fichier Power BI Desktop - local
 description: Actualiser un jeu de données créé à partir d’un fichier Power BI Desktop sur un lecteur local
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/04/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 58727627656a3cb22ad7fce626d0c7e6ce746440
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: b96163b433998ad92860ad6c234aac4126cf5486
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816489"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874377"
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Actualiser un jeu de données créé à partir d’un fichier Power BI Desktop sur un lecteur local
 
@@ -68,5 +67,5 @@ Parfois, l’actualisation des données peut ne pas fonctionner comme prévu. C�
 - [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)
 - [Résolution des problèmes liés à Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

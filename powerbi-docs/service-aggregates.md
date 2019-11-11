@@ -2,7 +2,6 @@
 title: Utiliser des agrégats (somme, moyenne, etc.) dans le service Power BI
 description: Découvrez comment changer l’agrégation dans un graphique (somme, moyenne, maximum, etc.) dans le service Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 05/03/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 7cee05df6a7d13e18bc31bc1a1f34a5f89711c0d
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 595b5743450aeb8ae6f6e60157742e3563a28fdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "65710646"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873310"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Utiliser des agrégats (somme, moyenne, etc.) dans le service Power BI
 
@@ -50,7 +49,7 @@ L’utilisation d’agrégats dans le service Power BI peut prêter à confusion
 
 En général, le problème sous-jacent est lié à la définition du champ dans le jeu de données. Peut-être que le propriétaire du jeu de données a défini le champ en tant que texte, ce qui explique pourquoi Power BI ne peut pas en calculer la somme ou la moyenne. Malheureusement, [seul le propriétaire du jeu de données peut modifier la façon dont un champ est classé](desktop-measures.md). Donc, si vous avez des autorisations de propriétaire sur le jeu de données, soit dans Desktop, soit dans le programme utilisé pour créer ce jeu de données (par exemple, Excel), vous pouvez résoudre ce problème. Dans le cas contraire, vous devez contacter le propriétaire du jeu de données pour lui demander de l’aide.  
 
-Il existe une section spéciale à la fin de cet article, appelée [**Considérations et résolution des problèmes**](#considerations-and-troubleshooting). Elle propose des astuces et des conseils. Si vous n’y trouvez pas votre réponse, postez votre question sur le [forum de la communauté Power BI](http://community.powerbi.com). Vous obtiendrez ainsi une réponse rapide directement de l’équipe Power BI.
+Il existe une section spéciale à la fin de cet article, appelée [**Considérations et résolution des problèmes**](#considerations-and-troubleshooting). Elle propose des astuces et des conseils. Si vous n’y trouvez pas votre réponse, postez votre question sur le [forum de la communauté Power BI](https://community.powerbi.com). Vous obtiendrez ainsi une réponse rapide directement de l’équipe Power BI.
 
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Modifier le mode d’agrégation d’un champ numérique
 
@@ -188,4 +187,4 @@ Q :  Je ne vois pas l’option **Ne pas synthétiser** dans ma liste déroulant
 
 R :  Essayez de supprimer le champ puis de le rajouter.
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

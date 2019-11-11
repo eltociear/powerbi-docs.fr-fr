@@ -2,7 +2,6 @@
 title: 'Tutoriel : Segments dans Power BI'
 description: Segments dans Power BI
 author: v-thepet
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d400e2013d8f2cb8dda627cda790191fce52503b
-ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
+ms.openlocfilehash: 808f27b94e53d5acf351772ef304f9cc69215007
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72775888"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880808"
 ---
 # <a name="slicers-in-power-bi"></a>Segments dans Power BI
 
@@ -46,7 +45,7 @@ Les segments Power BI présentent les limitations suivantes :
 
 **Créer un nouveau segment pour filtrer les données par le Gestionnaire de districts**
 
-Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
    

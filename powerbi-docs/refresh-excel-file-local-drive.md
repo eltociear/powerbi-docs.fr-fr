@@ -2,7 +2,6 @@
 title: Actualiser un jeu de données créé à partir d’un classeur Excel - local
 description: Actualiser un jeu de données créé à partir d’un classeur Excel sur un lecteur local
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: a71631c0ac8e45c7e268eb11a0539fa8305dfcd7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b69e908e378605facbdaea79618aaf5167ff7739
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61414751"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874382"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Actualiser un jeu de données créé à partir d’un classeur Excel sur un lecteur local
 ## <a name="whats-supported"></a>Qu’est-ce qui est pris en charge ?
@@ -80,5 +79,5 @@ Parfois, l’actualisation des données peut ne pas fonctionner comme prévu. Ce
 [Résolution des problèmes liés à Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

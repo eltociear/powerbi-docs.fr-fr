@@ -2,7 +2,6 @@
 title: Visuels d’indicateur de performance clé (KPI)
 description: Créer des visuels d’indicateur de performance clé (KPI) dans Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8ecec706c281b2a36c342ea852eebb4a8559a6fd
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 42a9f2c641a0cdac9b7a129ffc5ecc6f7fb8cf8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239924"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870862"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>Visuels d’indicateur de performance clé (KPI)
 
@@ -47,7 +46,7 @@ Un jeu de données d’indicateurs de performances clés doit contenir des valeu
 
 ## <a name="prerequisites"></a>Conditions préalables
 
-Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
 
@@ -106,4 +105,4 @@ Si votre indicateur de performance clé ne ressemble pas à celui ci-dessus, peu
 
 * [Types de visualisation dans Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

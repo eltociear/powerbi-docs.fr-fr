@@ -2,7 +2,6 @@
 title: Prise en main de Power BI Desktop
 description: Prise en main de Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70201015"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868015"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Prise en main de Power BI Desktop
 Bienvenue dans le **Guide de prise en main de Power BI Desktop**. Cette courte présentation de Power BI Desktop vous permettra de vous familiariser avec son fonctionnement. Elle vous montrera ce que l’application peut faire et vous permettra d’être plus vite apte à créer des modèles de données fiables, ainsi que des rapports de haute qualité, qui amplifieront vos efforts décisionnels. 
 
-Vous préférez regarder une démonstration au lieu de lire de la documentation ? N’hésitez pas à [visionner notre vidéo de prise en main](desktop-videos.md). En outre, si vous souhaitez suivre la présentation en examinant les exemples de données correspondants, vous pouvez [télécharger cet exemple de classeur Excel](http://go.microsoft.com/fwlink/?LinkID=521962).
+Vous préférez regarder une démonstration au lieu de lire de la documentation ? N’hésitez pas à [visionner notre vidéo de prise en main](desktop-videos.md). En outre, si vous souhaitez suivre la présentation en examinant les exemples de données correspondants, vous pouvez [télécharger cet exemple de classeur Excel](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 ![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
@@ -88,7 +87,7 @@ Imaginez que vous soyez à la retraite, vous voulez vivre quelque part où il fa
 
 Dans les deux cas, la ressource web suivante contient des données intéressantes sur ces thèmes, et sur d’autres :
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Sélectionnez **Obtenir des données \> Web** et collez cette adresse.
 
@@ -158,7 +157,7 @@ Les données relatives aux différents États sont intéressantes et peuvent êt
 
 Par chance, il existe une autre source de données publiques qui a précisément cette fonction, mais un effort important de mise en forme sera nécessaire pour la connecter à la table relative à la retraite. Voici la ressource web dédiée aux abréviations des États :
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
 Dans le ruban **Accueil** de **l’Éditeur de requête**, sélectionnez **Obtenir des données \>Web** et tapez l’adresse, puis sélectionnez **OK**. La fenêtre **Navigateur** affiche ce qu’elle a trouvé dans cette page web.
 

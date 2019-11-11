@@ -2,7 +2,6 @@
 title: Copier des rapports à partir d’autres espaces de travail (préversion) - Power BI
 description: Découvrez comment vous pouvez partager un jeu de données avec des utilisateurs au sein de l’organisation. Ils peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c60c3c29bbf87d7a5e18838dac0baa6157de6437
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 2fc33c8adcaed35dab8fc9d81ab28fa314f42e3b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020826"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881937"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Copier des rapports à partir d’autres espaces de travail (préversion)
 
@@ -82,4 +81,4 @@ Vous pouvez décider que vous ne voulez plus du rapport et de son jeu de donnée
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Utiliser des jeux de données dans des espaces de travail (préversion)](service-datasets-across-workspaces.md)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

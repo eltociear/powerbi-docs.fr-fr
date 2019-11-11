@@ -2,7 +2,6 @@
 title: Conseils pour la conception d’un tableau de bord Power BI
 description: Conseils pour la conception d’un tableau de bord Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2083fa0d197010ca770422f11c7f1e4b83d0184b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 95170ec36c5b4da0314c858ae415c3bbcb2ab556
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023746"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877406"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Conseils pour la conception d’un tableau de bord Power BI
 Maintenant que vous avez créé un tableau de bord et ajouté des vignettes, pensez comment vous pourriez rendre votre tableau de bord aussi élégant que fonctionnel. En général, cela consiste à mettre en évidence les informations les plus importantes et à faire en sorte que votre tableau de bord soit clair et non encombré.
@@ -24,8 +23,6 @@ Maintenant que vous avez créé un tableau de bord et ajouté des vignettes, pen
 
 > [!TIP]
 > Vous aimez ce tableau de bord ? Vous pouvez le télécharger ainsi que les rapports associés à partir d’AppSource. Accédez à **Obtenir des données** > **Services**. Recherchez **Exemple Microsoft - Ventes et marketing** > **Obtenir maintenant**.
-
-De nombreux principes de conception de rapports s’appliquent aussi aux tableaux de bord. Pour plus d’informations, lisez notre livre blanc [Bonnes pratiques en matière de conception de rapports et de visualisations](visuals/power-bi-visualization-best-practices.md).
 
 Voici quelques conseils concernant les tableaux de bord.
 
@@ -85,4 +82,4 @@ Pour maîtriser l’art de la conception des tableaux de bord, découvrez les pr
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer un tableau de bord à partir d’un rapport](service-dashboard-create.md)  
 [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)  
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

@@ -2,19 +2,18 @@
 title: Accès à des jeux de données et flux OData partagés dans Power BI Report Server
 description: Les rapports Power BI peuvent se connecter à différentes sources de données. Selon la façon dont les données sont utilisées, différentes sources de données sont disponibles.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/05/2018
 ms.author: maggies
-ms.openlocfilehash: 7505860f7eedf62fe4384fea051a2731a932fce9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 49fe816e4920443ca101fc2f463fa23eae1ce765
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769880"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860535"
 ---
 # <a name="accessing-shared-datasets-as-odata-feeds-in-power-bi-report-server"></a>Accès à des jeux de données et flux OData partagés dans Power BI Report Server
 Vous pouvez accéder à des jeux de données partagés à partir de Power BI Desktop avec un flux OData.

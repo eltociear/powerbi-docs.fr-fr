@@ -3,18 +3,17 @@ title: Objets et propriétés des visuels Power BI
 description: Cet article décrit les propriétés personnalisables des visuels Power BI.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: b2043c6727e4cf8c5c46c4e277b01a9ea04a969b
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: ae548abd0d579414a69b0d970213ff9d69ff2f08
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193525"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879858"
 ---
 # <a name="objects-and-properties-of-power-bi-visuals"></a>Objets et propriétés des visuels Power BI
 

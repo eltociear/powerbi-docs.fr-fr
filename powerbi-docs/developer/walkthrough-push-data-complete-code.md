@@ -3,18 +3,17 @@ title: Listing du code complet
 description: 'Procédure pas à pas pour transmettre des données : listing du code complet'
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: cdf6bf157a3d8fe1f865c610238e3cd1f829ef9b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ac534946b5f7e6fb5bb0164a1144523fa8f2aa94
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710286"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875495"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Listing du code complet de la transmission de données à un jeu de données
 
@@ -235,4 +234,4 @@ Après avoir suivi les étapes 2 à 5 de **Transmettre des données à un jeu de
 [Référence de l’API REST de Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

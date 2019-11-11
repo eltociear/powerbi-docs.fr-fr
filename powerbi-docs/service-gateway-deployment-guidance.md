@@ -2,7 +2,6 @@
 title: Conseils relatifs au déploiement d’une passerelle de données pour Power BI
 description: Familiarisez-vous avec les meilleures pratiques et considérations relatives au déploiement d’une passerelle pour Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5a0c29f04e7329373eec5f60af840e503ec22b3c
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d4a02ccc759f78a4243f34fb59115fb9084ea90d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729991"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881692"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Conseils relatifs au déploiement d’une passerelle de données pour Power BI
 
@@ -69,5 +68,5 @@ Si vous envisagez d’utiliser la passerelle Power BI avec Azure Analysis Servic
 * [Résoudre les problèmes liés aux passerelles - Power BI](service-gateway-onprem-tshoot.md)  
 * [Questions fréquentes (FAQ) sur la passerelle de données locale - Power BI](service-gateway-power-bi-faq.md)  
 
-D’autres questions ? Essayez la [communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? Essayez la [communauté Power BI](https://community.powerbi.com/).
 

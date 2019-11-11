@@ -2,7 +2,6 @@
 title: Utiliser des thèmes de rapport dans Power BI Desktop
 description: Découvrez comment utiliser une palette de couleurs personnalisée et l’appliquer à un rapport entier dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 64be68398ffa2ab8323307b45b5bff09ec511090
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327852"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880009"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Utiliser des thèmes de rapport dans Power BI Desktop
 Avec les **Thèmes de rapport**, vous pouvez appliquer des modifications de conception à l’ensemble de votre rapport, par exemple en utilisant les couleurs de votre entreprise, en modifiant des jeux d’icônes ou en appliquant une nouvelle mise en forme visuelle par défaut. Lorsque vous appliquez un **thème de rapport**, tous les visuels du rapport utilisent les couleurs et la mise en forme du thème sélectionné. Quelques exceptions s’appliquent. Elles sont décrites plus loin dans cet article.
@@ -257,7 +256,7 @@ La liste des tableaux affiche les informations suivantes :
 |---------|---------|---------|---------|---------|
 | Légende   | N/A   | légende | DIN <br> #252423 <br> 45pt |Étiquettes de données de carte <br> Indicateurs de performance clés|
 |En-tête|N/A|en-tête|Segoe UI Semibold <br> #252423 <br> 12pt |En-têtes d’influenceurs clés |
-| Titre || title    |DIN <br> #252423 <br> 12pt |Titre de l'axe de catégorie <br> Titre de l'axe des ordonnées <br> Titre de carte à plusieurs lignes * <br> En-tête de segment|
+| Fonction || title    |DIN <br> #252423 <br> 12pt |Titre de l'axe de catégorie <br> Titre de l'axe des ordonnées <br> Titre de carte à plusieurs lignes * <br> En-tête de segment|
 |-| Grand titre | largeTitle    |14pt   |Titre visuel |
 |Étiquette ||label |Segoe UI<br>#252423<br>10pt |En-têtes de colonnes de tableau et de matrice <br> En-têtes de lignes de matrice<br>Grille de tableau et de matrice<br>Valeurs de table et de matrice |
 |-|Demi-gras |semiboldLabel| Segoe UI Semibold   | Texte du profil des influenceurs clés

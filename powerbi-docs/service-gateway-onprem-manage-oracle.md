@@ -2,7 +2,6 @@
 title: Gérer votre source de données - Oracle
 description: Gestion de la passerelle de données locale et des sources de données associées.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ac116cfb2e3f09ceab6c9f78dba33bc18e847784
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: cb7856b0b5ac84684e8d0648b91e45805218cead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832455"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872456"
 ---
 # <a name="manage-your-data-source---oracle"></a>Gérer votre source de données - Oracle
 
@@ -29,11 +28,11 @@ Pour connecter la passerelle à votre serveur Oracle, vous devez installer et co
 
 Pour les versions 32 bits de Power BI Desktop, utilisez le lien suivant pour télécharger et installer le client Oracle 32 bits :
 
-* [Oracle Data Access Components (ODAC) 32 bits avec Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+* [Oracle Data Access Components (ODAC) 32 bits avec Oracle Developer Tools for Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
 Pour les versions 64 bits de Power BI Desktop ou pour la passerelle de données locale, utilisez le lien suivant pour télécharger et installer le client Oracle 64 bits :
 
-* [ODAC 12.2c Release 1 64 bits (12.2.0.1.0) pour Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+* [ODAC 12.2c Release 1 64 bits (12.2.0.1.0) pour Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 Une fois le client installé, indiquez les informations de votre base de données dans votre fichier tnsnames.ora. Power BI Desktop et la passerelle se connectent au nom de service .NET (net_service_name) défini dans le fichier tnsnames.ora. Si le nom de service .NET (net_service_name) n’est pas configuré, vous ne pouvez pas vous connecter. `[Oracle Home Directory]\Network\Admin\tnsnames.ora` est le chemin par défaut du fichier tnsnames.ora. Pour plus d’informations sur la configuration des fichiers tnsnames.ora, consultez [Oracle: Local naming parameters (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
@@ -132,5 +131,5 @@ Pour plus d’informations sur le dépannage de la passerelle, consultez [Résol
 * [Résoudre les problèmes liés aux passerelles - Power BI](service-gateway-onprem-tshoot.md)
 * [Power BI Premium](service-premium.md)
 
-D’autres questions ? Essayez de d’interroger la [Communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? Essayez de d’interroger la [Communauté Power BI](https://community.powerbi.com/).
 

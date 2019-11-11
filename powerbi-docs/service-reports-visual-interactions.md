@@ -2,7 +2,6 @@
 title: Modifier l’interaction des éléments visuels dans un rapport
 description: Documentation pour savoir comment définir des interactions entre visuels dans un rapport de service Microsoft Power BI et un rapport Power BI Desktop.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: N_xYsCbyHPw
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/11/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6f739992ed282ada92b1049df09a8b5d4b3938a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1b05acc111ce582c84706e5b63ba564f606576f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61405992"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871571"
 ---
 # <a name="change-how-visuals-interact-in-a-power-bi-report"></a>Modifier l’interaction des visuels dans un rapport Power BI
 Si vous avez des autorisations de modification sur un rapport, vous pouvez utiliser des **interactions entre visuels** pour changer l’impact entre les visualisations d’une page de rapport. 

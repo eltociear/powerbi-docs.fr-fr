@@ -3,19 +3,18 @@ title: Sécurité dans Power BI
 description: Sécurité dans Power BI Cette rubrique décrit comment Power BI s’associe à Azure Active Directory et aux autres services Azure. Elle inclut également un lien vers un livre blanc qui aborde le sujet en profondeur.
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: a5dac73fd2555b0ae53b0618dbc10f831db1149b
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e856c3afca0578c906a54f636dd58cd9208607a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074711"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873490"
 ---
 # <a name="power-bi-security"></a>Sécurité dans Power BI
 
@@ -46,7 +45,7 @@ La ligne en pointillés dans l’image de cluster **principal**, ci-dessus, clar
 
 ## <a name="user-authentication"></a>Authentification utilisateur
 
-Power BI utilise Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) pour authentifier les utilisateurs qui se connectent au service Power BI et, à son tour, utilise les informations d’identification de connexion Power BI chaque fois qu’un utilisateur essaie d’accéder à des ressources qui nécessitent une authentification. Les utilisateurs se connectent au service Power BI à l’aide de l’adresse e-mail utilisée pour créer leur compte Power BI. Power BI utilise cette adresse e-mail de connexion comme *nom d’utilisateur effectif*, qui est transmis aux ressources chaque fois qu’un utilisateur essaie de se connecter aux données. Le *nom d’utilisateur effectif* est ensuite mappé à un *nom d’utilisateur principal* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) et mis en correspondance avec le compte de domaine Windows associé, auquel l’authentification est appliquée.
+Power BI utilise Azure Active Directory ([AAD](https://azure.microsoft.com/services/active-directory/)) pour authentifier les utilisateurs qui se connectent au service Power BI et, à son tour, utilise les informations d’identification de connexion Power BI chaque fois qu’un utilisateur essaie d’accéder à des ressources qui nécessitent une authentification. Les utilisateurs se connectent au service Power BI à l’aide de l’adresse e-mail utilisée pour créer leur compte Power BI. Power BI utilise cette adresse e-mail de connexion comme *nom d’utilisateur effectif*, qui est transmis aux ressources chaque fois qu’un utilisateur essaie de se connecter aux données. Le *nom d’utilisateur effectif* est ensuite mappé à un *nom d’utilisateur principal* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) et mis en correspondance avec le compte de domaine Windows associé, auquel l’authentification est appliquée.
 
 Pour les organisations qui utilisaient des adresses de messagerie professionnelles pour la connexion à Power BI (telles que <em>david@contoso.com</em>), le mappage entre le *nom d’utilisateur effectif* et le nom UPN est simple. Pour les organisations qui n’utilisaient pas d’adresses de messagerie professionnelles pour la connexion à Power BI (telles que <em>david@contoso.onmicrosoft.com</em>), le mappage entre les informations d’identification AAD et locales nécessite une [synchronisation d’annuaire](https://technet.microsoft.com/library/jj573653.aspx) pour fonctionner correctement.
 

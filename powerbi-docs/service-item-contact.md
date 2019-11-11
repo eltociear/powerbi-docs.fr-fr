@@ -2,7 +2,6 @@
 title: Définir les informations de contact pour les rapports et les tableaux de bord
 description: Découvrez comment définir les informations de contact pour les rapports et les tableaux de bord.
 author: LukaszPawlowski-MS
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2010
 ms.author: lukaszp
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b64bc2566be8787ad4bb4916ed8b8c8731a87ed7
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: bb98f7bbb92b72512f880513ec94ccb55d64fc67
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72245489"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872144"
 ---
 # <a name="set-contact-information-for-reports-and-dashboards-in-the-power-bi-service"></a>Définir les informations de contact pour les rapports et les tableaux de bord dans le service Power BI
 Cet article vous explique comment définir les informations de contact d'un tableau de bord ou d'un rapport dans le service Power BI.
@@ -65,4 +64,4 @@ Les informations de la liste de contacts sont également utilisées à d'autres 
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

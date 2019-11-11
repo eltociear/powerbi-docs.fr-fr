@@ -2,7 +2,6 @@
 title: Optimiser un tableau de bord pour les téléphones mobiles - Power BI
 description: Apprenez à créer une vue personnalisée d’un tableau de bord dans le service Power BI, en particulier pour l’affichage sur les téléphones portables.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 75152d546bc2dc622210d5b9e5933ee44fbdc0b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61158200"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872855"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimiser un tableau de bord pour les téléphones mobiles - Power BI 
 Quand vous affichez les tableaux de bord en mode portrait sur un téléphone, les vignettes associées sont disposées l’une après l’autre et ont toutes la même taille. Dans le service Power BI, vous pouvez créer une vue personnalisée d’un tableau de bord, en particulier pour l’affichage en mode portrait sur les téléphones. Même si vous créez une vue téléphone, lorsque vous tournez le téléphone sur le côté, vous voyez le tableau de bord tel qu’il est disposé dans le service.
@@ -59,5 +58,5 @@ Vous recherchez des informations sur l’affichage des tableaux de bord sur un a
 ## <a name="next-steps"></a>Étapes suivantes
 * [Créer des rapports optimisés pour les applications Power BI pour téléphone](desktop-create-phone-report.md)
 * [Créer des visuels réactifs optimisés pour toute taille](visuals/desktop-create-responsive-visuals.md)
-* D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

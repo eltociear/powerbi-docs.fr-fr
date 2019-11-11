@@ -2,7 +2,6 @@
 title: Créer un segment réactif que vous pouvez redimensionner dans Power BI
 description: Découvrez comment créer un segment réactif que vous pouvez redimensionner pour l’ajuster à votre rapport
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/04/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: fed4119946cb762fb4d9aee3b5300be225a6e379
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: aa7dc612d7a1b16fdc02fb1b40c98257cda3183d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61419835"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877580"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Créer un segment réactif que vous pouvez redimensionner dans Power BI
 
@@ -81,4 +80,4 @@ Vous pouvez suivre la même procédure pour rendre un segment d’heure ou de pl
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Segments dans le service Power BI](visuals/power-bi-visualization-slicers.md)
-- D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+- D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

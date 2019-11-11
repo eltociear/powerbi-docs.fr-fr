@@ -3,19 +3,18 @@ title: Correction de l’erreur « Votre certificat SSL d’entreprise n’est p
 description: Lorsque vous vous connectez à une application Android pour Power BI, vous pouvez voir le message « Authentification impossible car votre certificat SSL d’entreprise n’est pas approuvé
 .": ''
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/28/2019
 ms.author: mshenhav
-ms.openlocfilehash: 19bcdf08d4eacff5e080bf1a2f987ea848e4bfb9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cde8a4bbaed9ef10940b7a102d40a8bc6009e9b9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70840904"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879479"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Correction de l’erreur « Votre certificat SSL d’entreprise n’est pas approuvé » - Power BI
 Lorsque vous vous connectez à une application mobile Android pour Microsoft Power BI, vous pouvez voir le message « Authentification impossible car votre certificat SSL d’entreprise n’est pas approuvé par cet appareil. Contactez l’administrateur informatique de votre entreprise. » 
@@ -41,9 +40,9 @@ Il se peut que les paramètres de fuseau horaire de votre appareil soient erron�
 Accédez à **Paramètres** > **Système** > **Date et heure** pour les vérifier.
 
 ## <a name="custom-authentication-server"></a>Serveur d’authentification personnalisé
-Si vous utilisez un serveur d’authentification personnalisé, il se peut que le certificat SSL du serveur d’authentification d’entreprise ne soit pas valide. Collaborez avec le service informatique de votre organisation pour tester la configuration du serveur d’authentification d’entreprise, en suivant les instructions données dans [cet article](https://support.microsoft.com/en-us/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
+Si vous utilisez un serveur d’authentification personnalisé, il se peut que le certificat SSL du serveur d’authentification d’entreprise ne soit pas valide. Collaborez avec le service informatique de votre organisation pour tester la configuration du serveur d’authentification d’entreprise, en suivant les instructions données dans [cet article](https://support.microsoft.com/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Téléchargez l’application Android](http://go.microsoft.com/fwlink/?LinkID=544867) à partir du magasin d’applications Android.
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/) 
+* [Téléchargez l’application Android](https://go.microsoft.com/fwlink/?LinkID=544867) à partir du magasin d’applications Android.
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/) 
 

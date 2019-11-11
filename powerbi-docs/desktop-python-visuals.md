@@ -2,7 +2,6 @@
 title: Créer des visuels Power BI avec Python
 description: Créer des visuels Power BI avec Python
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: b41a50ae7c4aaf8f70c9d7745ea4767b7644a62f
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 567b775cb7323dbd343f2a26d4abc0d60885ab7a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70303155"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877978"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Créer des visuels Power BI avec Python
 **Power BI Desktop** vous permet d’utiliser **Python** pour visualiser vos données.
@@ -158,7 +157,7 @@ Ce tutoriel est conçu pour vous aider à commencer à créer des visuels avec P
 * Documentation du site web [Matplotlib](https://matplotlib.org/). 
 * [Tutoriel Matplotlib : Guide de base pour utiliser Matplotlib avec Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
 * [Tutoriel Matplotlib : Bibliothèque Matplotlib Python avec des exemples](https://www.edureka.co/blog/python-matplotlib-tutorial/) 
-* [Informations de référence sur l’API Pandas](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Informations de référence sur l’API Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
 * [Visualisations Python dans le service Power BI](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
 * [Utilisation de visuels Python dans Power BI](https://www.absentdata.com/how-to-user-python-and-power-bi/)
 

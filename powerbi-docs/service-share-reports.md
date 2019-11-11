@@ -2,7 +2,6 @@
 title: Deux façons de partager un rapport Power BI filtré
 description: Découvrez deux façons de filtrer un rapport Power BI et le partager avec les collègues de votre organisation.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c5bc8b32ae61870b794875c1d1720cd07dcf97f8
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 79f09b5018efcdae88d74ae26f099ff095fb161a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877718"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871446"
 ---
 # <a name="two-ways-to-share-a-filtered-power-bi-report"></a>Deux façons de partager un rapport Power BI filtré
 Le *partage* est une façon d’autoriser quelques utilisateurs à accéder à vos tableaux de bord et rapports. Est-il possible de partager une version filtrée d’un rapport ? Par exemple un rapport qui affiche uniquement les données relatives à une ville, un fournisseur ou un commercial spécifique. Essayez de filtrer un rapport et de le partager, ou de créer une URL personnalisée. Le rapport est filtré quand les destinataires l’ouvrent pour la première fois. Ils peuvent supprimer le filtre en modifiant l’URL. 
@@ -74,6 +73,6 @@ Consultez l’article [Filtrer un rapport à l’aide de paramètres de chaîne 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Moyens de partager votre travail dans Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Partager un tableau de bord](service-share-dashboards.md)
-* D’autres questions ? [Posez vos questions à la Communauté Power BI](http://community.powerbi.com/).
+* D’autres questions ? [Posez vos questions à la Communauté Power BI](https://community.powerbi.com/).
 * Vous voulez donner votre avis ? Accédez au [site de la communauté Power BI](https://community.powerbi.com/) pour effectuer des suggestions.
 

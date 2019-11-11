@@ -3,18 +3,17 @@ title: API Power BI utilisant la stratégie de rétention automatique des donné
 description: En savoir plus sur la stratégie de rétention automatique dans le service Power BI
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: 07726535246f8b115402373c315062151177d27c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e2d81ac67ea5c070f31315a381b42e3a1379a49b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61347302"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865072"
 ---
 # <a name="automatic-retention-policy-for-real-time-data"></a>Stratégie de rétention automatique des données en temps réel
 

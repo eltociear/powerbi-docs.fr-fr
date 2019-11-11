@@ -2,19 +2,18 @@
 title: Affichage de vos données hors connexion dans les applications mobiles Power BI
 description: 'Découvrez un avantage de l’affichage de Power BI dans une application mobile plutôt qu’un navigateur mobile : la possibilité de visualiser vos données même quand vous n’êtes connecté à aucun réseau.'
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: d0d9b10c24d3d9da60ecf1afde7347f53d20f224
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 09a4595b461f69cfa02b4cc0ca3c96b1eb917ef8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059436"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870614"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Affichage de vos données hors connexion dans les applications mobiles Power BI
 S’applique à :
@@ -64,6 +63,6 @@ Vos commentaires nous aident à développer les futurs processus d’implémenta
 
 * [Applications Power BI pour appareils mobiles](mobile-apps-for-mobile-devices.md)
 * Suivez @MSPowerBI sur Twitter
-* Rejoindre la conversation de la [Communauté Power BI](http://community.powerbi.com/)
+* Rejoindre la conversation de la [Communauté Power BI](https://community.powerbi.com/)
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
 

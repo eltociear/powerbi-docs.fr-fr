@@ -2,7 +2,6 @@
 title: Utiliser une autre adresse e-mail
 description: Utiliser une autre adresse e-mail
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 88432f55fc8cfeefa07b66ea68437bbb23f12531
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 6549ec04d8ec47381b4639d15242e909929b52de
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64906652"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858088"
 ---
 # <a name="use-an-alternate-email-address"></a>Utiliser une autre adresse e-mail
 
@@ -70,4 +69,4 @@ Power BI sélectionne l’e-mail à utiliser en fonction de la séquence suivant
 
 1. Si aucune des conditions ci-dessus n’est remplie, Power BI utilise l’adresse UPN.
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

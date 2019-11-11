@@ -2,7 +2,6 @@
 title: Qu’est un tableau de bord et comment l’ouvrir ?
 description: Les tableaux de bord sont une fonctionnalité clé du service Power BI.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5cfabd836f836e5e155930d966a63f0b7b125392
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: a4fbf56a796a30c2d8a718411e3363238a9c2bb2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716891"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851842"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Tableau de bord pour les consommateurs du service Power BI
 

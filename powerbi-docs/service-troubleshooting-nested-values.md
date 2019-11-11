@@ -2,7 +2,6 @@
 title: Résolution des problèmes liés aux valeurs imbriquées retournées sous forme de texte dans le service Power BI
 description: Découvrir comment corriger des valeurs imbriquées converties en chaîne quand des paramètres de confidentialité de source de données incorrects sont utilisés
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: 61181f9317718b6a4fb1cd73a767e4002b5b27f5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: ab40ca9c415dacf52f4d82eb2c157d57aef92f93
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544267"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871282"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Résolution des problèmes liés aux valeurs imbriquées retournées sous forme de texte dans le service Power BI
 
@@ -24,7 +23,7 @@ ms.locfileid: "72544267"
 
 Avant, il pouvait arriver qu’un rapport Power BI s’actualise correctement dans Desktop, mais échoue dans le service Power BI avec une erreur telle que « Nous ne pouvons pas convertir la valeur « [Tableau] » en type Tableau ». Une des causes de cette erreur : quand le pare-feu de confidentialité des données met en mémoire tampon une source de données, des valeurs non scalaires imbriquées (comme des tableaux, des enregistrements, des listes et des fonctions) sont automatiquement converties en valeurs texte (comme « [Tableau] » ou « [Enregistrement] »).
 
-Maintenant que le service Power BI prend en charge la définition des niveaux de confidentialité (ou la désactivation totale du pare-feu), ces erreurs peuvent être évitées en [configurant les paramètres de confidentialité de la source de données](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) dans le service Power BI pour qu’ils soient non privés.
+Maintenant que le service Power BI prend en charge la définition des niveaux de confidentialité (ou la désactivation totale du pare-feu), ces erreurs peuvent être évitées en [configurant les paramètres de confidentialité de la source de données](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) dans le service Power BI pour qu’ils soient non privés.
 
 À partir de juin, quand le pare-feu met en mémoire tampon un tableau/un enregistrement/une liste/etc. imbriqué(e), au lieu de convertir automatiquement ces valeurs en texte, Power BI génère l’erreur suivante : 
 
@@ -57,4 +56,4 @@ Si vous ne pouvez pas supprimer la colonne, vous devriez pouvoir répliquer l’
 `if [MyColumn] is table then "[Table]" else if [MyColumn] is record then "[Record]" else if [MyColumn] is list then "[List]" else if [MyColumn] is function then "[Function]" else [MyColumn]`
 
 Le problème se reproduit-il dans Power BI Desktop si vous définissez tous vos paramètres de confidentialité de source de données sur Privé ?
-Si oui, vous devriez pouvoir résoudre l’erreur en [configurant vos paramètres de confidentialité de source de données](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) dans le service Power BI pour qu’ils soient Non privés.
+Si oui, vous devriez pouvoir résoudre l’erreur en [configurant vos paramètres de confidentialité de source de données](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) dans le service Power BI pour qu’ils soient Non privés.

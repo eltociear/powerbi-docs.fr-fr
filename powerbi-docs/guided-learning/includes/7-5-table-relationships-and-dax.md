@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd6ea6fd52f929e2cd254214cf0e8c96e858f6c2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 679c3e8c3d94c93899e9dcfae1e57f4b678fb218
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273397"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799833"
 ---
 Power BI vous permet de créer des relations entre plusieurs tables, notamment des tables provenant de sources de données complètement différentes. Vous pouvez voir ces relations pour n’importe quel modèle de données dans la vue **Relations** de Power BI Desktop.
 
@@ -23,7 +23,7 @@ La fonction **RELATED** fonctionne sur les relations *plusieurs-à-un*, tandis q
 
 Vous pouvez utiliser des fonctions relationnelles pour créer des expressions incluant des valeurs de plusieurs tables. DAX retourne un résultat avec ces fonctions, quelle que soit la longueur de la chaîne de la relation.
 
-> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
+> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

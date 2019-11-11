@@ -3,18 +3,17 @@ title: Afficher un rapport paginé dans le service Power BI
 description: Dans ce tutoriel, vous découvrez comment afficher des rapports paginés dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: f80b13ccd1393e98199acbcaabfbf80ad63707c8
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 670637b59a79691e72b6093451894cc516952a6d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839582"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874672"
 ---
 # <a name="view-a-paginated-report-in-the-power-bi-service"></a>Afficher un rapport paginé dans le service Power BI
 

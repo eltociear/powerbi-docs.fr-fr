@@ -2,7 +2,6 @@
 title: Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
 description: Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 12/06/2017
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 32c42f21eafa7118ed3977340517aeebe8c4219b
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b44dbc06c15a576174277695583f3afebb0f298a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72542903"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856259"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
 Une erreur peut s’afficher lorsque vous tentez de configurer un jeu de données pour une actualisation planifiée.
@@ -45,5 +44,5 @@ Si vous ne savez pas quelle source de données a été utilisée, effectuez les 
 [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)  
 [Résolution des problèmes liés à Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

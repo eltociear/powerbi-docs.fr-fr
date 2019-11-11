@@ -3,18 +3,17 @@ title: Héberger des classeurs Excel à l’aide d’Office Online Server (OOS) 
 description: Outre l’affichage de rapports Power BI sur le portail web, Power BI Report Server peut héberger des classeurs Excel à l’aide d’Office Online Server (OOS).
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 5585750fcd5e6237f3cb00591cf5841f91393b84
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 907e65635424b709ec2c0850e4d0d759f4ba6dd3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769591"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874087"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Configurer votre serveur de rapports pour héberger des classeurs Excel à l’aide d’Office Online Server (OOS)
 
@@ -54,7 +53,7 @@ Effectuez les procédures suivants sur le serveur qui doit exécuter Office Onli
 
 Si vous envisagez d’exploiter des fonctionnalités d’Excel Online qui utilisent un accès à des données externes (par exemple, Power Pivot), notez qu’Office Online Server doit résider dans la même forêt Active Directory que ses utilisateurs, tout comme toutes les sources de données externes auxquelles vous prévoyez d’accéder à l’aide d’une authentification basée sur Windows.
 
-1. Téléchargez Office Online Server à partir du [Centre de gestion des licences en volume (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Le téléchargement est accessible sous ces produits Office sur le portail VLSC. À des fins de développement, vous pouvez télécharger OOS à partir de MSDN Subscriber Downloads.
+1. Téléchargez Office Online Server à partir du [Centre de gestion des licences en volume (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=256561). Le téléchargement est accessible sous ces produits Office sur le portail VLSC. À des fins de développement, vous pouvez télécharger OOS à partir de MSDN Subscriber Downloads.
 2. Exécutez Setup.exe.
 3. Dans la page **Lire les termes du contrat de licence logiciel Microsoft**, sélectionnez **J’accepte les termes de ce contrat**, puis **Continuer**.
 4. Dans la page **Choisir un emplacement de fichier**, sélectionnez le dossier où installer les fichiers Office Online Server (par exemple, C:\Program Files\Microsoft Office Web Apps\*) et sélectionnez **Installer maintenant**. Si le dossier spécifié n’existe pas, le programme d’installation le crée pour vous.
@@ -69,7 +68,7 @@ Les modules linguistiques pour Office Online Server permettent aux utilisateurs 
 
 Pour installer les modules linguistiques, procédez comme suit.
 
-1. Téléchargez les modules linguistiques pour Office Online Server à partir du [Centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/p/?LinkId=798136).
+1. Téléchargez les modules linguistiques pour Office Online Server à partir du [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=798136).
 2. Exécutez **wacserverlanguagepack.exe**.
 3. Dans l’Assistant d’installation de module linguistique pour Office Online Server, dans la page **Lire les termes du contrat de licence logiciel Microsoft**, sélectionnez **J’accepte les termes de ce contrat**, puis **Continuer**.
 4. Lorsque le programme d’installation a terminé l’installation d’Office Online Server, sélectionnez **Fermer**.
@@ -86,7 +85,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Paramètres**
 
-* **– InternalURL** est le nom de domaine complet (FQDN) du serveur exécutant Office Online Server, tel que `http://servername.contoso.com`.
+* **– InternalURL** est le nom de domaine complet (FQDN) du serveur exécutant Office Online Server, tel que `https://servername.contoso.com`.
 * **– ExternalURL** est le nom de domaine complet (FQDN) accessible sur Internet.
 * **–CertificateName** est le nom convivial du certificat.
 
@@ -95,12 +94,12 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 Utilisez la commande New-OfficeWebAppsFarm pour créer une batterie de serveurs Office Online Server composée d’un serveur unique, comme illustré dans l’exemple suivant.
 
 ```powershell
-New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
+New-OfficeWebAppsFarm -InternalURL "https://servername" -AllowHttp
 ```
 
 **Paramètres**
 
-* **–InternalURL** est le nom du serveur exécutant Office Online Server, tel que `http://servername`.
+* **–InternalURL** est le nom du serveur exécutant Office Online Server, tel que `https://servername`.
 * **– AllowHttp** configure la batterie de serveurs pour utiliser le protocole HTTP.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Vérifier que la batterie de serveurs Office Online Server a été correctement créée
@@ -168,7 +167,7 @@ Pour éviter d’éventuels problèmes de pare-feu, il se peut que vous deviez o
 
 ## <a name="configure-power-bi-report-server-to-use-the-oos-server"></a>Configurer Power BI Report Server pour utiliser le serveur OOS
 
-Dans la page **Général** des **Paramètres du site**, entrez l’URL de découverte d’OOS. L’URL de découverte d’OOS est la valeur du paramètre *InternalUrl* utilisée lors du déploiement du serveur OOS, suivie de */hosting/discovery*. Par exemple, `http://servername/hosting/discovery` pour le protocole HTTP. Et `https://server.contoso.com/hosting/discovery` pour le protocole HTTPS.
+Dans la page **Général** des **Paramètres du site**, entrez l’URL de découverte d’OOS. L’URL de découverte d’OOS est la valeur du paramètre *InternalUrl* utilisée lors du déploiement du serveur OOS, suivie de */hosting/discovery*. Par exemple, `https://servername/hosting/discovery` pour le protocole HTTP. Et `https://server.contoso.com/hosting/discovery` pour le protocole HTTPS.
 
 Pour accéder aux **Paramètres du site**, sélectionnez l’**icône d’engrenage** en haut à droite, puis choisissez **Paramètres du site**.
 
@@ -187,6 +186,6 @@ Après que vous avez entré l’URL de découverte, puis sélectionné **Appliqu
 [Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
 [Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Télécharger SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI
 description: Découvrez comment le service Power BI offre la haute disponibilité et assure la continuité de l’activité et la reprise d’activité à ses utilisateurs.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b8f98541b70c3573d9f31b5e59196cd37d322bb3
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: dd2c94b490cdf31bd383c7100b9a1bc372f8e75f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075230"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873680"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>FAQ sur la haute disponibilité, le basculement et la reprise d’activité avec Power BI
 
@@ -23,7 +22,7 @@ Cet article explique comment le service Power BI offre la haute disponibilité e
 
 ## <a name="what-does-high-availability-mean-for-power-bi"></a>Que signifie « haute disponibilité » pour Power BI ?
 
-Power BI est un logiciel en tant que service (SaaS) complètement managé.  Microsoft le conçoit et le gère pour qu’il résiste aux pannes d’infrastructure afin que les utilisateurs puissent toujours accéder à leurs rapports.  Le service est pris en charge par un [contrat SLA à 99,9 %](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+Power BI est un logiciel en tant que service (SaaS) complètement managé.  Microsoft le conçoit et le gère pour qu’il résiste aux pannes d’infrastructure afin que les utilisateurs puissent toujours accéder à leurs rapports.  Le service est pris en charge par un [contrat SLA à 99,9 %](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 ## <a name="what-is-a-power-bi-failover"></a>Qu’est-ce qu’un basculement Power BI ?
 
@@ -50,7 +49,7 @@ Dans les deux cas, ce sont les membres de la direction Power BI qui prennent la 
 
 ## <a name="how-do-i-know-power-bi-is-now-in-failover-mode"></a>Comment savoir si Power BI est actuellement en mode de basculement ?
 
-Une notification est publiée sur la page de support de Power BI ([https://powerbi.microsoft.com/en-us/support/](https://powerbi.microsoft.com/en-us/support/)). La notification indique les opérations principales qui ne sont pas disponibles pendant le basculement, notamment la publication, l’actualisation, la création de tableau de bord, la duplication de tableau de bord et les changements d’autorisation.
+Une notification est publiée sur la page de support de Power BI ([https://powerbi.microsoft.com/support/](https://powerbi.microsoft.com/support/)). La notification indique les opérations principales qui ne sont pas disponibles pendant le basculement, notamment la publication, l’actualisation, la création de tableau de bord, la duplication de tableau de bord et les changements d’autorisation.
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Combien de temps faut-il à Power BI pour effectuer le basculement ?
 

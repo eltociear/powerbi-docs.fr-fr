@@ -2,7 +2,6 @@
 title: Utiliser Power BI Publisher pour Excel
 description: Découvrez comment utiliser l’éditeur Power BI pour Excel.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4e9efa729b9dc4ac645bc8d3ff7df92cafc929e4
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: b646d7da5862e20a15f62ce3dc5f49f93ccd01ff
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200973"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877631"
 ---
 # <a name="power-bi-publisher-for-excel"></a>Éditeur Power BI pour Excel
 Microsoft **Power BI Publisher pour Excel** vous permet de prendre des instantanés de vos informations clés dans Excel, comme des tableaux croisés dynamiques, des graphiques et des plages, puis de les épingler à des tableaux de bord dans Power BI.

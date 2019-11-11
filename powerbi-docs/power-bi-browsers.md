@@ -2,7 +2,6 @@
 title: Navigateurs pris en charge pour Power BI
 description: Afficher la liste des navigateurs qui prennent en charge Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/27/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e27fdf6c57eeaebe554011517d6bea79b7270055
-ms.sourcegitcommit: 35f7ee9280022c76033502b344e8ebc52d3ec1d1
+ms.openlocfilehash: d81e9e7142a05ac49969e98dbada0e0edf2fe3ba
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705460"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875235"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Navigateurs pris en charge pour Power BI
 Power BI s’exécute dans les navigateurs suivants :
@@ -30,6 +29,6 @@ Ces navigateurs sont pris en charge sur toutes les plateformes où ils sont disp
 
 ### <a name="next-steps"></a>Étapes suivantes
 * [Qu’est-ce que Power BI ?](power-bi-overview.md)
-* Posez vos questions à la [Communauté Power BI](http://community.powerbi.com/)
+* Posez vos questions à la [Communauté Power BI](https://community.powerbi.com/)
 * Le problème persiste ? Visitez la [page de support Power BI](https://powerbi.microsoft.com/support/)
 

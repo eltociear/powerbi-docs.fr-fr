@@ -8,13 +8,12 @@ ms.topic: conceptual
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.custom: mvc
-manager: kfile
-ms.openlocfilehash: e1787863d2b5db50cdb9a8d09907fbee6623972f
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 195be0766e135dcccc2124a998fb5a32e8703d5b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995002"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875015"
 ---
 # <a name="embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Intégrer un rapport Power BI Report Server à l’aide d’un iFrame dans SharePoint Server
 
@@ -51,7 +50,7 @@ Une fois que vous avez votre URL, vous pouvez créer un iFrame dans une page Sha
 
    Par exemple :
     ``` 
-    http://myserver/reports/powerbi/Sales?rs:embed=true
+    https://myserver/reports/powerbi/Sales?rs:embed=true
     ```
 ## <a name="embed-the-report-in-a-sharepoint-iframe"></a>Incorporer le rapport dans un iFrame SharePoint
 
@@ -85,7 +84,7 @@ Une fois que vous avez votre URL, vous pouvez créer un iFrame dans une page Sha
 
      Par exemple :
      ```html
-     <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
+     <iframe width="800" height="600" src="https://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
      ```
 
 9. Dans le menu supérieur, sélectionnez **Page**, puis sélectionnez **Arrêter la modification**.

@@ -3,19 +3,18 @@ title: Utiliser des connecteurs de données personnalisés avec la passerelle de
 description: Vous pouvez utiliser des connecteurs de données personnalisés avec la passerelle de données locale.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3c0ef172115dba05deb02d724b663742a2e71c13
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: c76c8fdb635db7724ffeb1a5140e9095c9b2eff5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832526"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881741"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Utiliser des connecteurs de données personnalisés avec la passerelle de données locale
 
@@ -23,7 +22,7 @@ ms.locfileid: "68832526"
 
 Avec les connecteurs de données pour Power BI, vous pouvez vous connecter et accéder à des données provenant d’une application, d’un service ou d’une source de données. Vous pouvez développer des connecteurs de données personnalisés et les utiliser dans Power BI Desktop.
 
-Pour plus d’informations sur le développement de connecteurs de données personnalisés pour Power BI, consultez la [page Data Connector SDK de GitHub](http://aka.ms/dataconnectors). Ce site comprend des informations pour démarrer et des exemples pour Power BI et Power Query.
+Pour plus d’informations sur le développement de connecteurs de données personnalisés pour Power BI, consultez la [page Data Connector SDK de GitHub](https://aka.ms/dataconnectors). Ce site comprend des informations pour démarrer et des exemples pour Power BI et Power Query.
 
 Quand vous créez des rapports dans Power BI Desktop qui utilisent des connecteurs de données personnalisés, vous pouvez utiliser la passerelle de données locale pour actualiser ces rapports à partir du service Power BI.
 
@@ -58,4 +57,4 @@ Quand cette option est activée, vous voyez vos connecteurs personnalisés en ta
 * [Configurer les paramètres de proxy de la passerelle de données locale](/data-integration/gateway/service-gateway-proxy)
 * [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-kerberos.md)  
 
-D’autres questions ? Essayez de d’interroger la [Communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? Essayez de d’interroger la [Communauté Power BI](https://community.powerbi.com/).

@@ -3,19 +3,18 @@ title: Azure et Power BI
 description: Azure et Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 9d48054e4b41c097d51522ad7596b750bd067e6d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: db988dfd360aae00fed1f6d917376a6ba54f9089
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513327"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873215"
 ---
 # <a name="azure-and-power-bi"></a>Azure et Power BI
 
@@ -31,7 +30,7 @@ Vous pouvez démarrer avec une connexion directe à Azure SQL Database et créer
 
 ![SQL vers PBI](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 
-Il existe de nombreuses informations qui vous permettront d’en savoir plus sur [Azure SQL Database](http://azure.microsoft.com/services/sql-database/).
+Il existe de nombreuses informations qui vous permettront d’en savoir plus sur [Azure SQL Database](https://azure.microsoft.com/services/sql-database/).
 
 ## <a name="transform-shape-and-merge-your-cloud-data"></a>Transformez, modelez et fusionnez vos données cloud
 
@@ -43,13 +42,13 @@ Vous pouvez également créer différents rapports pour différents publics, en 
 
 Pour plus d’informations, examinez les ressources suivantes :
 
-* [Azure SQL Database](http://azure.microsoft.com/services/sql-database/)
-* [Azure HDInsight](http://azure.microsoft.com/services/hdinsight/)
-* [Stockage Azure](http://azure.microsoft.com/services/storage/) (Stockage Blob et Stockage Table)
+* [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)
+* [Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)
+* [Stockage Azure](https://azure.microsoft.com/services/storage/) (Stockage Blob et Stockage Table)
 
 ## <a name="get-complex-and-ahead-using-azure-services-and-power-bi"></a>Avancez avec Azure Services et Power BI sans craindre la complexité
 
-Vous pouvez vous développer autant que nécessaire avec Azure et Power BI. Maîtrisez le traitement des données de plusieurs sources, employez des systèmes en temps réel massifs, utilisez [Stream Analytics](http://azure.microsoft.com/services/stream-analytics/) et [Event Hubs](http://azure.microsoft.com/services/event-hubs/), et fusionnez vos différents services SaaS dans des rapports d’aide à la décision qui donnent un avantage certain à votre entreprise.
+Vous pouvez vous développer autant que nécessaire avec Azure et Power BI. Maîtrisez le traitement des données de plusieurs sources, employez des systèmes en temps réel massifs, utilisez [Stream Analytics](https://azure.microsoft.com/services/stream-analytics/) et [Event Hubs](https://azure.microsoft.com/services/event-hubs/), et fusionnez vos différents services SaaS dans des rapports d’aide à la décision qui donnent un avantage certain à votre entreprise.
 
 ![Azure Complex](media/service-azure-and-power-bi/azure_4_complex.png)
 
@@ -57,7 +56,7 @@ Vous pouvez vous développer autant que nécessaire avec Azure et Power BI. Ma�
 
 Incorporez des visualisations de données interactives impressionnantes dans des applications, sites web et portails, entre autres, afin de tirer parti de vos données métier. Avec [Power BI Embedded en tant que ressource dans Azure](https://azure.microsoft.com/services/power-bi-embedded/), vous pouvez incorporer facilement des rapports et tableaux de bord interactifs afin d’offrir à vos utilisateurs des expériences cohérentes et haute fidélité sur leurs divers appareils.  Utilisé avec l’incorporation d’analytique, Power BI vous aide à parcourir le processus Données ->Connaissances -> Insights -> Actions.  Vous pouvez également augmenter la valeur de Power BI Pro et d’Azure en incorporant une analytique visuelle dans des [applications et portails internes de votre organisation](https://powerbi.microsoft.com/developers/embedded-analytics/organization/).
 
-Vous trouverez des informations très complètes sur les API Power BI dans le [portail des développeurs Power BI](http://dev.powerbi.com).
+Vous trouverez des informations très complètes sur les API Power BI dans le [portail des développeurs Power BI](https://dev.powerbi.com).
 
 Pour plus d’informations, consultez [Que peuvent faire les développeurs avec Power BI ?](developer/what-can-you-do.md).
 

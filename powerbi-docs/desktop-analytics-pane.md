@@ -2,7 +2,6 @@
 title: Utilisation du volet Analytique dans Power BI Desktop
 description: Créer des lignes de référence dynamiques pour des objets visuels dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 861a1d43f023e3ceba17fba90bcbc703e3195c84
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: a3ba6f8faf22d3854ecfcbc40e7931ca887de0f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160190"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876657"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Utilisation du volet Analytique dans Power BI Desktop
 Avec le volet **Analyse** de **Power BI Desktop**, vous pouvez ajouter des *lignes de référence* dynamiques aux visuels et mettre en relief les analyses ou les tendances importantes. Le volet **Analyse** se trouve dans la partie **Visualisations** de Power BI Desktop.

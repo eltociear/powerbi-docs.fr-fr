@@ -2,7 +2,6 @@
 title: Filtres et mise en évidence dans les rapports Power BI
 description: À propos des filtres et de la mise en évidence dans les rapports Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 53bca7d1c0fd4d8592ec694d67148a7e3ccd46ff
-ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
+ms.openlocfilehash: f1722690ff974a9d4fac6e94243e1024bfbfc12e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72891878"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877616"
 ---
 # <a name="filters-and-highlighting-in-power-bi-reports"></a>Filtres et mise en évidence dans les rapports Power BI
  Cet article vous présente le filtrage et la mise en évidence dans le service Power BI. L’expérience est presque la même dans Power BI Desktop. Les *filtres* masquent tout, sauf les données qui vous intéressent. La *mise en évidence* n’est pas du filtrage. Elle ne supprime pas des données, mais elle met en évidence une partie des données visibles ; les données qui ne sont pas mises en évidence restent visibles, mais elles sont estompées.
@@ -100,5 +99,5 @@ Sélectionnez une valeur ou une étiquette d’axe dans un visuel pour mettre en
 
 [Modifier la façon dont le filtrage croisé et la mise en évidence croisée affectent les visuels d’un rapport](consumer/end-user-interactions.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

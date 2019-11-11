@@ -2,7 +2,6 @@
 title: Utilisation de DirectQuery dans Power BI
 description: Comprendre l’utilisation de DirectQuery avec Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d303e20e524ad7ac67882812b6e4f5a1d9b06c33
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 13ca0b53bb1aed2d4323afdc99a97f8b9cfa5567
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305797"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868336"
 ---
 # <a name="using-directquery-in-power-bi"></a>Utilisation de DirectQuery dans Power BI
 Lorsque vous utilisez **Power BI Desktop** ou le **service Power BI**, vous pouvez vous connecter à toutes sortes de sources de données et établir ces connexions aux données de différentes façons. Vous pouvez *importer* des données dans Power BI, ce qui est la méthode la plus courante pour obtenir des données ou vous connecter directement aux données dans leur dépôt source d’origine, ce qu’on appelle une requête **DirectQuery**. Cet article décrit **DirectQuery** et ses fonctionnalités :
@@ -32,7 +31,7 @@ En bref, la meilleure pratique pour l’utilisation d’une importation plutôt 
 
 L’ensemble des fonctionnalités offertes par Power BI pour les deux modes de connectivité (importation et DirectQuery) évoluera au fil du temps. Il inclura une plus grande flexibilité lors de l’utilisation de données importées, de sorte que l’importation pourra être utilisée dans davantage de cas, tout en éliminant certains des inconvénients liés à l’utilisation de DirectQuery. Quelles que soient les améliorations, en cas d’utilisation de DirectQuery, les performances de la source de données sous-jacente resteront toujours une considération majeure. Si cette source de données sous-jacente est lente, l’utilisation de DirectQuery demeure impossible.
 
-Cet article a trait à DirectQuery avec Power BI, non à SQL Server Analysis Services. DirectQuery est aussi une fonctionnalité de **SQL Server Analysis Services**, et bon nombre des détails décrits ci-dessous s’appliquent à son utilisation. Cependant, il existe aussi des différences importantes. Pour plus d’informations sur l’utilisation de DirectQuery avec SQL Server Analysis Services, consultez le [livre blanc détaillant l’utilisation de DirectQuery dans SQL Server Analysis Services 2016](http://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).  
+Cet article a trait à DirectQuery avec Power BI, non à SQL Server Analysis Services. DirectQuery est aussi une fonctionnalité de **SQL Server Analysis Services**, et bon nombre des détails décrits ci-dessous s’appliquent à son utilisation. Cependant, il existe aussi des différences importantes. Pour plus d’informations sur l’utilisation de DirectQuery avec SQL Server Analysis Services, consultez le [livre blanc détaillant l’utilisation de DirectQuery dans SQL Server Analysis Services 2016](https://download.microsoft.com/download/F/6/F/F6FBC1FC-F956-49A1-80CD-2941C3B6E417/DirectQuery%20in%20Analysis%20Services%20-%20Whitepaper.pdf).  
 
 Si cet article se concentre sur le flux de travail recommandé pour DirectQuery, où le rapport est créé dans **Power BI Desktop**, il traite également de la connexion directe au **service Power BI**.
 
@@ -141,7 +140,7 @@ Lorsque vous utilisez **DirectQuery**, bon nombre de ces enrichissements de mod�
 * **Limitations dans les colonnes calculées :** les colonnes calculées doivent figurer à l’intérieur d’une ligne, car elles peuvent uniquement faire référence à des valeurs d’autres colonnes de la même table, sans possibilité d’utiliser des fonctions d’agrégation. De plus, les fonctions scalaires DAX (telles que LEFT()) autorisées se limitent à celles qui peuvent simplement être envoyées (push) à la source sous-jacente, de sorte qu’elles varient selon les capacités de la source. Les fonctions non prises en charge ne sont pas proposées dans la saisie semi-automatique lors de la création du DAX pour une colonne calculée, et leur utilisation entraînerait une erreur.
 * **Aucune prise en charge pour les fonctions DAX parent-enfant :** le modèle DirectQuery ne permet pas d’utiliser la famille de fonctions DAX PATH(), qui servent généralement à gérer des structures parent-enfant (par exemple, un graphique de comptes ou des hiérarchies d’employés).
 * **Les tables calculées ne sont pas prises en charge :** la possibilité de définir une table calculée à l’aide d’une expression DAX n’est pas prise en charge en mode DirectQuery.
-* **Filtrage des relations :** L’utilisation du filtrage bidirectionnel est décrite dans ce [livre blanc détaillé](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (le document présente des exemples dans le contexte de SQL Server Analysis Services, mais les points principaux s’appliquent également à Power BI).
+* **Filtrage des relations :** L’utilisation du filtrage bidirectionnel est décrite dans ce [livre blanc détaillé](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (le document présente des exemples dans le contexte de SQL Server Analysis Services, mais les points principaux s’appliquent également à Power BI).
 
 * **Absence de clustering :** DirectQuery ne permet pas d’utiliser la fonctionnalité de clustering pour rechercher automatiquement les groupes
 
