@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f4043a5a8deac0596b58519183988f6ae574458e
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 4ea1b2141cf9a072f11a3a62789c7c0ec5b500a4
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70847681"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799832"
 ---
 Vous pouvez créer deux calculs principaux à l’aide de DAX :
 
@@ -65,7 +65,7 @@ Les éléments requis pour une mesure calculée sont identiques à ceux d’une 
 * un nouveau nom de mesure ;
 * au moins une fonction ou une expression.
 
-> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
+> Contenu vidéo fourni par [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax)
 > 
 > 
 
