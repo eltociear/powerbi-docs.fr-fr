@@ -1,19 +1,19 @@
 ---
 title: Exemples d’expressions dans le Générateur de rapports Power BI
 description: Les expressions sont fréquemment utilisées dans les rapports paginés du Générateur de rapports Power BI pour contrôler le contenu et l’apparence du rapport.
-ms.date: 06/06/2019
+ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
+ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624157"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728561"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Exemples d’expressions dans le Générateur de rapports Power BI
 Les expressions sont fréquemment utilisées dans les rapports paginés du Générateur de rapports Power BI pour contrôler le contenu et l’apparence du rapport. Les expressions sont écrites en Microsoft Visual Basic et elles peuvent utiliser des fonctions intégrées, du code personnalisé, des variables de rapport et de groupe, et des variables définies par l’utilisateur. Les expressions commencent par un signe égal (=).   
@@ -35,7 +35,7 @@ Cette rubrique fournit des exemples d’expressions qui peuvent être utilisées
 Pour plus d’informations sur les expressions simples et complexes, où vous pouvez utiliser des expressions et les types de références que vous pouvez inclure dans une expression, consultez les rubriques sous [Expressions dans le Générateur de rapports Power BI](report-builder-expressions.md). 
   
 ## <a name="functions"></a>Fonctions  
- Beaucoup d’expressions d’un rapport contiennent des fonctions. Vous pouvez mettre en forme des données, appliquer une logique et accéder aux métadonnées des rapports en utilisant ces fonctions. Vous pouvez écrire des expressions qui utilisent des fonctions de la bibliothèque de runtime Microsoft Visual Basic et des espaces de noms `xref:System.Convert` et `xref:System.Math`. Vous pouvez ajouter des références à des fonctions provenant d’autres assemblys ou de code personnalisé. Vous pouvez également utiliser des classes de Microsoft .NET Framework, notamment `xref:System.Text.RegularExpressions`.  
+ Beaucoup d’expressions d’un rapport contiennent des fonctions. Vous pouvez mettre en forme des données, appliquer une logique et accéder aux métadonnées des rapports en utilisant ces fonctions. Vous pouvez écrire des expressions qui utilisent des fonctions de la bibliothèque de runtime Microsoft Visual Basic et des espaces de noms `xref:System.Convert` et `xref:System.Math`. Vous pouvez ajouter des références à des fonctions dans du code personnalisé. Vous pouvez également utiliser des classes de Microsoft .NET Framework, notamment `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Fonctions Visual Basic  
  Vous pouvez utiliser des fonctions Visual Basic pour manipuler les données qui sont affichées dans les zones de texte ou qui sont utilisées pour les paramètres, les propriétés ou d’autres zones du rapport. Cette section fournit des exemples montrant certaines de ces fonctions. Pour plus d’informations, consultez [Membres de la bibliothèque runtime Visual Basic](https://go.microsoft.com/fwlink/?LinkId=198941) sur MSDN.  
@@ -476,7 +476,7 @@ Pour plus d’informations sur les expressions simples et complexes, où vous po
     ```  
   
 ##  <a name="CustomCode"></a> Code personnalisé  
- Vous pouvez utiliser du code personnalisé dans un rapport. Le code personnalisé est incorporé dans un rapport ou stocké dans un assembly personnalisé qui est utilisé dans le rapport.  
+ Vous pouvez utiliser du code personnalisé intégré dans un rapport. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Utilisation de variables de groupe pour une agrégation personnalisée  
  Vous pouvez initialiser la valeur d’une variable de groupe qui est locale à l’étendue d’un groupe particulier, puis inclure une référence à cette variable dans des expressions. Une des façons d’utiliser une variable de groupe avec du code personnalisé consiste à implémenter un agrégat personnalisé. 
