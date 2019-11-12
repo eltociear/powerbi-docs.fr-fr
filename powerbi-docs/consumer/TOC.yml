@@ -188,6 +188,8 @@
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
             - name: Scanner un code-barres avec l’application sur votre iPhone
               href: mobile/mobile-apps-scan-barcode-iphone.md
+            - name: Configurer avec la gestion des appareils mobiles
+              href: mobile/mobile-app-configuration.md
         - name: iOS
           items:
             - name: Prise en main de l’application iOS
@@ -202,8 +204,6 @@
               href: mobile/mobile-apps-iOS-search-integration.md
             - name: "Application Power\_BI pour Apple Watch"
               href: mobile/mobile-apple-watch.md
-            - name: Configurer avec la gestion des appareils mobiles
-              href: mobile/mobile-app-configuration.md
         - name: Appareils Android
           items:
             - name: Prise en main de l’application Android
