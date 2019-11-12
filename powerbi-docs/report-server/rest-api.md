@@ -3,18 +3,17 @@ title: Développer avec les API REST pour Power BI Report Server
 description: L’API REST fournit un accès par programme aux objets dans un catalogue Power BI Report Server.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.openlocfilehash: 8f35b7a3c19751b4537a49fa8cb30f4347f080ed
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770749"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874080"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Développer avec les API REST pour Power BI Report Server
 
@@ -41,7 +40,7 @@ Une paire requête-réponse (ou demande/réponse) d’API REST peut être divis�
 * Champs de **corps de message de requête** HTTP facultatifs, pour prendre en charge l’URI et l’opération HTTP. Par exemple, les opérations POST contiennent des objets encodés MIME qui sont transmis en tant que paramètres complexes. Pour les opérations POST ou PUT, le type d’encodage MIME pour le corps doit être spécifié également dans l’en-tête de demande `Content-type`. Certains services requièrent que vous utilisiez un type MIME spécifique, tel que `application/json`.
 * Champs d’**en-tête de message de réponse** HTTP :
   
-  * [Code d’état HTTP](http://www.w3.org/Protocols/HTTP/HTRESP.html), dans la plage des codes de réussite 2xx aux codes d’erreur 4xx ou 5xx. Un code d’état défini par le service peut également être retourné, comme indiqué dans la documentation de l’API.
+  * [Code d’état HTTP](https://www.w3.org/Protocols/HTTP/HTRESP.html), dans la plage des codes de réussite 2xx aux codes d’erreur 4xx ou 5xx. Un code d’état défini par le service peut également être retourné, comme indiqué dans la documentation de l’API.
   * Champs d’en-tête supplémentaires facultatifs, comme requis pour prendre en charge de réponse de la demande, tel un en-tête de réponse `Content-type`.
 * Champs de **corps du message de réponse** HTTP facultatifs :
   
@@ -53,7 +52,7 @@ Une API REST moderne appelle une documentation moderne sur l’API. L’API REST
 
 ## <a name="testing-api-calls"></a>Test des appels d’API
 
-Un outil pour tester les messages de requête-réponse HTTP est [Fiddler](http://www.telerik.com/fiddler). Fiddler est un site proxy de débogage web gratuit capable d’intercepter vos demandes REST, ce qui facilite le diagnostic des messages de requête-réponse HTTP.
+Un outil pour tester les messages de requête-réponse HTTP est [Fiddler](https://www.telerik.com/fiddler). Fiddler est un site proxy de débogage web gratuit capable d’intercepter vos demandes REST, ce qui facilite le diagnostic des messages de requête-réponse HTTP.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -2,7 +2,6 @@
 title: Gérer les sources de données
 description: Découvrez comment gérer les sources de données dans Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -11,12 +10,12 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 254c0033dfc64b3a0f44bcda2289fedccf2e9eda
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: 1966a9ea38f8ff9d1517b4df5ed0db1254ddf80d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164537"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881779"
 ---
 # <a name="manage-data-sources"></a>Gérer les sources de données
 
@@ -178,4 +177,4 @@ La passerelle de données locale prend en charge les sources de données suivant
 * [Gérer votre source de données – Importation/actualisation planifiée](service-gateway-enterprise-manage-scheduled-refresh.md)
 * [Conseils de déploiement d’une passerelle de données](service-gateway-deployment-guidance.md)
 
-D’autres questions ? Essayez la [communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? Essayez la [communauté Power BI](https://community.powerbi.com/).

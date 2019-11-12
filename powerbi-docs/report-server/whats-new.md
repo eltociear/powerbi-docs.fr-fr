@@ -3,18 +3,17 @@ title: Nouveautés dans Power BI Report Server
 description: Découvrez les nouveautés dans Power BI Report Server. Cet article aborde les principaux domaines de fonctionnalités et est mis à jour à mesure que de nouveaux éléments sont publiés.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/26/2019
-ms.openlocfilehash: 26dde078ce0b237779660c44b2843a645e4d1a47
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 526a971817c50599bf77ae085f3d5ff07294b25b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325567"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858737"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nouveautés dans Power BI Report Server
 
@@ -167,7 +166,7 @@ Prise en charge de ces fonctionnalités dans les rapports Power BI :
 
 **Fonctionnalités d’accessibilité** Elles sont trop nombreuses pour toutes les énumérer ici. Citons par exemple la [prise en charge de fonctionnalités d’accessibilité dans le volet de liste de champs](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Le volet de liste de champs est entièrement accessible. Vous pouvez naviguer dans le volet en utilisant simplement votre clavier et un lecteur d’écran, puis utiliser le menu contextuel pour ajouter des champs à votre page de rapport.
 
-#### <a name="custom-visuals"></a>Visuels personnalisés
+#### <a name="custom-visuals"></a>Visualisations personnalisées
 
 - La version de l’API livrée avec cette mise en production est 2.3.
 
@@ -231,7 +230,7 @@ La prise en charge de DirectQuery avec authentification unique SAP HANA avec Ker
 >[!Note]
 >Ce scénario est pris en charge seulement quand SAP HANA est traité comme source de données relationnelle avec les rapports que vous avez créés dans Power BI Desktop.  Pour activer cette possibilité dans Power BI Desktop, dans le menu DirectQuery sous Options, cochez « Traiter SAP HANA comme source relationnelle », puis cliquez sur OK.
 
-#### <a name="custom-visuals"></a>Visuels personnalisés
+#### <a name="custom-visuals"></a>Visualisations personnalisées
 
 - La version de l’API livrée avec cette version est 1.13.0.
 
@@ -361,7 +360,7 @@ Quand vous descendez dans la hiérarchie d’une catégorie dans un visuel, vous
 - [Filtres d’exploration d’autres visuels](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 - [Mise en forme au niveau de la cellule pour les modèles AS multidimensionnels pour carte à plusieurs lignes](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting)
 
-### <a name="performance"></a>Performance
+### <a name="performance"></a>Performances
 
 - [Améliorations des performances du filtrage](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering)
 - [Améliorations des performances de DirectQuery](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf)
