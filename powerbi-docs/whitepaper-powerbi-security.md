@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 075d4ea0c243f77ebf0d29020f25bbca6567c6c0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fa9c07be31f5110f44c2f200bbde249c95abe9ed
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870777"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009831"
 ---
 # <a name="power-bi-security-whitepaper"></a>Livre blanc sur la sécurité dans Power BI
 
@@ -334,12 +334,6 @@ En guise d’exemple rapide illustrant les différences entre les sources de don
 
 Si Ralph tentait d’accéder au tableau de bord ou au rapport partagé, la même séquence aurait lieu en fonction de son niveau de rôle.
 
-## <a name="power-bi-and-expressroute"></a>Power BI et ExpressRoute
-
-Avec Power BI et ExpressRoute, vous pouvez créer une connexion réseau privée de votre organisation à Power BI (ou en utilisant l’installation en colocation d’un fournisseur de services Internet), et contourner ainsi Internet pour mieux sécuriser vos données et connexions Power BI sensibles.
-
-ExpressRoute est un service Azure qui vous permet de créer des connexions privées entre des centres de données Azure (où réside Power BI) et votre infrastructure locale, ou de créer des connexions privées entre des centres de données Azure et votre environnement de colocation. Pour plus d’informations, consultez l’article [Power BI et ExpressRoute](service-admin-power-bi-expressroute.md).
-
 ## <a name="power-bi-mobile"></a>Power BI Mobile
 
 Power BI Mobile est un ensemble d’applications conçu pour les trois principales plateformes mobiles : Android, iOS et Windows Mobile. Les considérations de sécurité pour les applications Power BI Mobile se répartissent en deux catégories :
@@ -450,7 +444,7 @@ Voici quelques questions et réponses courantes relatives à la sécurité dans 
 
 **Y a-t-il d’autres visuels Power BI qui envoient des informations à l’extérieur du réseau client ?**
 
-* Oui. Les visuels Bing Maps et ESRI transmettent des données en provenance du service Power BI pour les visuels qui utilisent ces services. Pour plus d’informations et pour obtenir une description détaillée du trafic de locataire en sortie de Power BI, consultez [**Power BI et ExpressRoute**](service-admin-power-bi-expressroute.md).
+* Oui. Les visuels Bing Maps et ESRI transmettent des données en provenance du service Power BI pour les visuels qui utilisent ces services.
 
 **Pour les applications de modèle, Microsoft effectue-t-il une évaluation de la sécurité ou de la confidentialité de l’application de modèle avant de publier des éléments dans la Galerie ?**
 * No. L’éditeur de l’application est responsable du contenu, tandis que le client est tenu d’examiner et de déterminer s’il faut approuver l’éditeur de l’application de modèle. 
@@ -487,7 +481,6 @@ Pour plus d’informations sur Power BI, consultez les ressources suivantes.
 - [API REST Power BI - Vue d’ensemble](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Informations de référence sur l’API de Power BI](https://msdn.microsoft.com/library/mt147898.aspx)
 - [On-premises data gateway (Passerelle de données locale)](service-gateway-onprem.md)
-- [Power BI et ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Clouds nationaux Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Utiliser Kerberos pour l’authentification unique (SSO) de Power BI à des sources de données locales](service-gateway-sso-overview.md)
