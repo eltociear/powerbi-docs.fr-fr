@@ -119,6 +119,8 @@
           items:
             - name: "Sources de données dans Power\_BI\_Desktop"
               href: desktop-data-sources.md
+            - name: Se connecter à LinkedIn Sales Navigator (préversion)
+              href: desktop-connect-linkedin-sales-navigator.md
             - name: Se connecter à une page Web par exemple (préversion)
               href: desktop-connect-to-web-by-example.md
             - name: "Se connecter aux jeux de données dans le service Power\_BI"
@@ -201,6 +203,8 @@
           items:
             - name: Combiner des fichiers binaires
               href: desktop-combine-binaries.md
+            - name: "Utiliser Insights IA dans Power\_BI\_Desktop (préversion)"
+              href: desktop-ai-insights.md
         - name: Modéliser vos données
           items:
             - name: "Catégorisation des données dans Power\_BI\_Desktop"
@@ -339,6 +343,8 @@
               href: visuals/power-bi-visualization-card.md
             - name: "Graphique combiné dans Power\_BI"
               href: visuals/power-bi-visualization-combo-chart.md
+            - name: Arborescence de décomposition dans Power BI (préversion)
+              href: visuals/power-bi-visualization-decomposition-tree.md
             - name: "Graphiques en anneau dans Power\_BI"
               href: visuals/power-bi-visualization-doughnut-charts.md
             - name: "Cartes choroplèthes dans Power\_BI"
@@ -405,6 +411,8 @@
       items:
         - name: "Types de données dans Power\_BI\_Desktop"
           href: desktop-data-types.md
+        - name: Utiliser le ruban mis à jour dans Power BI Desktop (préversion)
+          href: desktop-ribbon.md
         - name: Raccourcis de l’éditeur de formule pour Power BI Desktop
           href: desktop-formula-editor.md
         - name: "Niveaux de confidentialité Power\_BI\_Desktop"
