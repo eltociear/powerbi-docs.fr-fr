@@ -12,7 +12,7 @@
         - name: Vue d’ensemble
           items:
             - name: "Visuels dans Power\_BI"
-              href: ../power-bi-custom-visuals.md
+              href: power-bi-custom-visuals.md
         - name: Tutoriels
           items:
             - name: Développer un visuel Power BI
@@ -24,11 +24,11 @@
         - name: Concepts
           items:
             - name: Visuels pour les organisations dans Power BI
-              href: ../power-bi-custom-visuals-organization.md
+              href: power-bi-custom-visuals-organization.md
             - name: Marche à suivre pour les visuels Power BI
               href: guidelines-powerbi-visuals.md
             - name: Questions fréquentes (FAQ) sur les visuels
-              href: ../power-bi-custom-visuals-faq.md
+              href: power-bi-custom-visuals-faq.md
             - name: Utilisation des fonctionnalités
               href: visuals/capabilities.md
             - name: Mappages de vues de données
@@ -40,12 +40,12 @@
         - name: Guides pratiques
           items:
             - name: Obtenir un visuel certifié
-              href: ../power-bi-custom-visuals-certified.md
+              href: power-bi-custom-visuals-certified.md
             - name: Publier des visuels personnalisés dans AppSource
               href: office-store.md
             - name: "Utiliser des visuels personnalisés optimisés pour R dans Power\_BI"
-              href: ../desktop-r-powered-custom-visuals.md
-            - name: Autoriser des interactions de visuels
+              href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
+            - name: Interactions entre les visuels
               href: visuals/visuals-interactions.md
             - name: Ajouter des sélections
               href: visuals/selection-api.md
@@ -68,9 +68,7 @@
             - name: Activer les segments de synchronisation
               href: visuals/enable-sync-slicers.md
             - name: Résoudre les problèmes de visuels Power BI
-              href: ../power-bi-custom-visuals-troubleshoot.md
-            - name: "Migrer vers les nouveaux outils de visuels Power\_BI"
-              href: visuals/migrate-to-new-tools.md
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Référence
           items:
             - name: Page d’accueil
