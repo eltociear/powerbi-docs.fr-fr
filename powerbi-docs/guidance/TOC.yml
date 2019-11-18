@@ -1,0 +1,36 @@
+- name: Documentation d’assistance sur Power BI
+  href: index.yml
+  expanded: true
+  items:
+    - name: Vue d’ensemble
+      expanded: true
+      items:
+        - name: Vue d’ensemble
+          href: overview.md
+    - name: Concepts
+      expanded: true
+      items:
+        - name: "Qu’est-ce qu’un schéma en étoile\_?"
+          href: star-schema.md
+        - name: Réduire la taille du modèle de données
+          href: import-modeling-data-reduction.md
+        - name: Fonction DIVIDE ou opérateur de division (/)
+          href: dax-divide-function-operator.md
+        - name: L’importance du Query Folding
+          href: power-query-folding.md
+        - name: Utilisation appropriée des fonctions d’erreur
+          href: dax-error-functions.md
+        - name: Bonnes pratiques pour les dataflows
+          href: ../service-dataflows-best-practices.md
+        - name: Guide du modèle DirectQuery dans Power BI Desktop
+          href: directquery-model-guidance.md
+    - name: Livres blancs
+      items:
+        - name: Vue d’ensemble des livres blancs
+          href: ../whitepapers.md
+        - name: Livre blanc sur la sécurité dans Power BI
+          href: ../whitepaper-powerbi-security.md
+        - name: "Déploiement de Power\_BI Premium"
+          href: ../whitepaper-powerbi-premium-deployment.md
+        - name: "Distribuer Power BI en externe avec Azure Active Directory\_B2B"
+          href: ../whitepaper-azure-b2b-power-bi.md

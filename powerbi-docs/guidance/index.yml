@@ -1,0 +1,53 @@
+### YamlMime:Landing
+title: Documentation d’assistance sur Power BI
+summary: La documentation d’assistance sur Power BI fournit des bonnes pratiques de l’équipe qui développe Power BI et des personnes qui travaillent avec nos clients en entreprise. Vous y trouverez des informations pour améliorer les performances et la réussite de Power BI. Nous allons les mettre à jour et en ajouter de nouvelles au fur et à mesure qu’elles seront disponibles.
+metadata:
+  title: Documentation d’assistance sur Power BI
+  description: La documentation d’assistance sur Power BI fournit des bonnes pratiques de l’équipe qui développe Power BI et des personnes qui travaillent avec nos clients en entreprise. Vous y trouverez des informations pour améliorer les performances et la réussite de Power BI. Nous allons les mettre à jour et en ajouter de nouvelles au fur et à mesure qu’elles seront disponibles.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 11/14/2019
+  ms.openlocfilehash: de1ea8bbc35bc1d2ecc42a8deffc54fd9ac01bc1
+  ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/16/2019
+  ms.locfileid: "74133839"
+landingContent:
+- title: Assistance sur Power BI
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Conseils relatifs à Power BI
+      url: overview.md
+    - text: Vue d’ensemble des livres blancs
+      url: ../whitepapers.md
+- title: Modélisation des données
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Qu’est-ce qu’un schéma en étoile ?
+      url: star-schema.md
+    - text: Techniques de réduction des données
+      url: import-modeling-data-reduction.md
+    - text: L’importance du Query Folding
+      url: power-query-folding.md
+- title: DAX
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Fonction DIVIDE ou opérateur de division
+      url: dax-divide-function-operator.md
+    - text: Utilisation appropriée des fonctions d’erreur
+      url: dax-error-functions.md
+- title: Dataflows
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Bonnes pratiques pour les dataflows
+      url: ../service-dataflows-best-practices.md
