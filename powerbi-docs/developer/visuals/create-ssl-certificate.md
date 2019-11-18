@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: d24135cc55ebc8cdfd2a1279cb2a2a46f8f0bc3e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 224b6db8fa04a471a1ce7d1fff2b34a838d6fb9d
+ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880185"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060352"
 ---
 # <a name="create-an-ssl-certificate"></a>Créer un certificat SSL
 
@@ -22,20 +22,19 @@ Cet article explique comment créer un certificat SSL.
 Pour générer le certificat à l’aide de l’applet de commande PowerShell `New-SelfSignedCertificate` sur Windows 8 ou version ultérieure, exécutez la commande suivante :
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 L’outil nécessite l’installation d’OpenSSL pour Windows 7. L’utilitaire OpenSSL doit être disponible à partir de la ligne de commande.
 
 Pour installer OpenSSL, accédez au site [OpenSSL](https://www.openssl.org) ou [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries).
 
-
-
 ## <a name="create-a-certificate-mac-os-x"></a>Créer un certificat (Mac OS X)
 
 En règle générale, l’utilitaire OpenSSL est disponible dans le système d’exploitation Linux ou Mac OS X.
 
 Vous pouvez également l’installer en exécutant l’une des commandes suivantes :
+
 * À partir du gestionnaire de package *Brew* :
 
     ```cmd
@@ -52,7 +51,7 @@ Vous pouvez également l’installer en exécutant l’une des commandes suivant
 Après avoir installé l’utilitaire OpenSSL pour la génération d’un nouveau certificat, exécutez la commande suivante :
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 ## <a name="create-a-certificate-linux"></a>Créer un certificat (Linux)
@@ -80,7 +79,7 @@ Si l’utilitaire OpenSSL n’est pas disponible dans votre système d’exploit
 Si l’utilitaire OpenSSL est déjà disponible dans votre système d’exploitation, générez un nouveau certificat en exécutant la commande suivante :
 
 ```cmd
-pbiviz --create-cert
+pbiviz --install-cert
 ```
 
 Vous pouvez aussi vous procurer l’utilitaire OpenSSL en accédant au site [OpenSSL](https://www.openssl.org) ou [OpenSSL Binaries](https://wiki.openssl.org/index.php/Binaries).

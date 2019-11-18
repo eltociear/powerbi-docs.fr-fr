@@ -5,15 +5,15 @@ author: KesemSharabi
 ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 84c873c925c7e733c70b309d5cc2476dff2e553b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e650b1eb8fd05db54b9d0bf9021eaa881d28832e
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73863952"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128185"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
 Avant de [publier](https://docs.microsoft.com/power-bi/developer/office-store) votre visuel sur AppSource pour que d’autres utilisateurs puissent le découvrir et l’utiliser, veillez à suivre les instructions pour créer une expérience de qualité pour vos utilisateurs. 
@@ -52,7 +52,7 @@ Le cas échéant, les icônes d'information en mode lecture doivent être confor
 
 Jusqu’à une date récente, la Place de marché (AppSource) acceptait uniquement les visuels Power BI gratuits. Cette stratégie a changé (décembre 2018), pour également vous permettre d’envoyer à AppSource des visuels ayant une étiquette de prix « Un autre achat peut être requis ». 
 
-Les visuels de type « Un achat supplémentaire peut être requis » sont similaires aux compléments d’achat dans l’application (IAP) de l’Office Store. Les développeurs peuvent également faire certifier ces visuels une fois ceux-ci approuvés par l’équipe AppSource et après avoir vérifié qu’ils répondent aux critères de certification. Pour plus d’informations sur la configuration requise, consultez [Visuels Power BI certifiés](../power-bi-custom-visuals-certified.md).
+Les visuels de type « Un achat supplémentaire peut être requis » sont similaires aux compléments d’achat dans l’application (IAP) de l’Office Store. Les développeurs peuvent également faire certifier ces visuels une fois ceux-ci approuvés par l’équipe AppSource et après avoir vérifié qu’ils répondent aux critères de certification. Pour plus d’informations sur la configuration requise, consultez [Visuels Power BI certifiés](../developer/power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > Pour que le visuel soit certifié, il ne doit pas accéder à des services externes ni à des ressources externes.

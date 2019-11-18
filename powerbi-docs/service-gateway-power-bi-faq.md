@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 45a645227a5d7a18fd05738559ed0bccc0e1f7c9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4aa3d46741044498846865278db51859980a19b9
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872404"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010838"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Forum aux questions sur la passerelle de données locale - Power BI
 
@@ -41,10 +41,6 @@ ms.locfileid: "73872404"
 **Question :** Pourquoi ne puis-je pas me connecter à mon serveur Oracle ? 
 
 **Réponse :** Vous devez peut-être installer le client Oracle et configurer le fichier tnsnames.ora avec les informations appropriées pour vous connecter à votre serveur Oracle. Il s’agit d’une installation distincte en dehors de la passerelle. Pour plus d’informations, consultez [Installer le client Oracle](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
-
-**Question :** La passerelle fonctionne-t-elle avec Azure ExpressRoute ? 
-
-**Réponse :** Oui. Pour plus d’informations sur ExpressRoute et Power BI, consultez [Power BI et ExpressRoute](service-admin-power-bi-expressroute.md).
 
 **Question :** J’utilise des scripts R. Est-ce qu’ils sont pris en charge ?
 
