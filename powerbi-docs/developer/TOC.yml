@@ -142,7 +142,7 @@
               href: register-app.md
             - name: "Obtenir un jeton d’accès Azure\_AD"
               href: get-azuread-access-token.md
-            - name: Liaison dynamique
+            - name: Connecter un rapport avec la liaison dynamique
               href: embed-dynamic-binding.md
             - name: Questions et réponses sur l’incorporation
               href: qanda.md
