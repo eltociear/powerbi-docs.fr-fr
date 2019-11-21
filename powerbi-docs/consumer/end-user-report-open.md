@@ -2,21 +2,23 @@
 title: Afficher un rapport
 description: Cette rubrique montre comment les utilisateurs finaux et consommateurs de Power BI peuvent ouvrir et afficher un rapport Power BI.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: b22da2df92c0cc7130c7a5ebf69e2284c12ffef4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903813"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861972"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Voir un rapport dans le service Power BI pour les *consommateurs*
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Un rapport est constitué d’une ou de plusieurs pages d’éléments visuels. Les rapports sont créés par des *concepteurs* Power BI et [partagés avec des *consommateurs* directement](end-user-shared-with-me.md) ou dans le cadre d’une [application](end-user-apps.md). 
 
 Il existe de nombreuses façons d’ouvrir un rapport et nous vous en montrerons deux : ouvrir à partir de la page d’accueil et ouvrir à partir d’un tableau de bord. 
@@ -30,11 +32,11 @@ Nous allons ouvrir un rapport qui a été partagé avec vous directement, puis u
    ![Page d'accueil](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Ouvrir un rapport qui a été partagé avec vous
-Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via un lien dans un e-mail ou en l’ajoutant automatiquement. Le contenu qui est partagé de cette façon s’affiche dans le conteneur **Partagé avec moi** sur votre barre de navigation et dans la section **Partagé avec moi** de votre canevas Accueil.
+Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via un lien dans un e-mail ou en l’ajoutant automatiquement. Le contenu qui est partagé de cette façon s’affiche dans le conteneur **Partagé avec moi** sur votre volet de navigation et dans la section **Partagé avec moi** de votre canevas Accueil.
 
 1. Ouvrir dans le service Power BI (app.powerbi.com).
 
-2. Dans la barre de navigation, sélectionnez **Accueil** pour afficher votre canevas Accueil.  
+2. Dans le volet de navigation, sélectionnez **Accueil** pour afficher votre canevas Accueil.  
 
    ![Canevas Accueil](./media/end-user-report-open/power-bi-select-home-new.png)
    
@@ -52,7 +54,7 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via
 
 6. Notez le volet **Filtres** sur le côté droit. Les filtres qui ont été appliqués à cette page de rapport ou à l’ensemble du rapport s’affichent ici.
 
-7. Le fait de pointer sur un visuel de rapport révèle plusieurs icônes et des points de suspension (...). Pour afficher les filtres appliqués à un visuel spécifique, sélectionnez l’icône de filtre. Ici, nous avons sélectionné l’icône de filtre pour le graphique en courbes *Total Units by Rolling Period and Region*.
+7. Le fait de pointer sur un visuel de rapport révèle plusieurs icônes et le bouton **Plus d’options** (...). Pour afficher les filtres appliqués à un visuel spécifique, sélectionnez l’icône de filtre. Ici, nous avons sélectionné l’icône de filtre pour le graphique en courbes *Total Units by Rolling Period and Region*.
 
    ![onglets des pages du rapport](./media/end-user-report-open/power-bi-visual-filters.png)
 
@@ -63,7 +65,7 @@ Les *concepteurs* Power BI peuvent partager un rapport directement avec vous via
    ![ajuster à la page](./media/end-user-report-open/power-bi-actual.png)
 
 ### <a name="open-a-report-that-is-part-of-an-app"></a>Ouvrez un rapport qui fait partie d’une application
-Si vous avez reçu des applications de collègues ou d’AppSource, ces applications sont disponibles à partir de votre page d’accueil et du conteneur **Applications** sur votre barre de navigation. Une [application](end-user-apps.md) est un ensemble de tableaux de bord et de rapports.
+Si vous avez reçu des applications de collègues ou d’AppSource, ces applications sont disponibles à partir de votre page d’accueil et du conteneur **Applications** sur votre volet de navigation. Une [application](end-user-apps.md) est un ensemble de tableaux de bord et de rapports.
 
 ### <a name="prerequisites"></a>Conditions préalables
 Pour suivre la procédure, téléchargez l’application Marketing et ventes.
@@ -72,7 +74,7 @@ Pour suivre la procédure, téléchargez l’application Marketing et ventes.
 1. Sélectionnez **Télécharger maintenant** > **Continuer** > **Installer** pour installer l’application dans votre conteneur d’applications. 
 
 Vous pouvez ouvrir l’application à partir de votre conteneur d’applications ou de votre page d’accueil.
-1. Revenez à l’accueil en sélectionnant **Accueil** à partir de la barre de navigation.
+1. Revenez à l’accueil en sélectionnant **Accueil** à partir du volet de navigation.
 
 7. Faites défiler vers le bas jusqu'à ce que vous voyiez **Mes applications**.
 
@@ -98,10 +100,11 @@ Les rapports peuvent être ouverts à partir d’un tableau de bord. La plupart 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Autres moyens pour ouvrir un rapport
 Une fois que vous serez familiarisé avec la navigation dans le service Power BI, vous pourrez déterminer le workflow qui vous convient le mieux. Voici d’autres façons d’accéder aux rapports :
-- À partir de la barre de navigation, en utilisant **Favoris** et **Récent**    
+- À partir du volet de navigation, en utilisant **Favoris** et **Récent**    
 - À l’aide de [Afficher les éléments associés](end-user-related.md)    
 - Dans un e-mail quand un utilisateur [partage avec vous](../service-share-reports.md) ou que vous [définissez une alerte](end-user-alerts.md)    
 - À partir du [Centre de notifications](end-user-notification-center.md)    
+- À partir d’un espace de travail
 - Et plus encore
 
 ## <a name="next-steps"></a>Étapes suivantes

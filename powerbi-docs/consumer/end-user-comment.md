@@ -2,7 +2,6 @@
 title: Ajouter des commentaires à des tableaux de bord et des rapports
 description: Ce document montre comment ajouter des commentaires à un tableau de bord, un rapport ou un visuel et comment les utiliser pour converser avec des collaborateurs.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: f9979a852028e929b626e76534fef073feca3fd8
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: da941de8b44f3833a5f80bba648f4a185f35b36e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100725"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852029"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Ajouter des commentaires à un tableau de bord ou à un rapport
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Ajoutez un commentaire personnel ou démarrez une conversation à propos d’un tableau de bord ou d’un rapport avec vos collègues. Les **commentaires** sont une fonctionnalité parmi d’autres qui permet à un *consommateur* de collaborer avec d’autres personnes. 
 
 ![commentaires vidéo](media/end-user-comment/comment.gif)
@@ -64,7 +66,7 @@ Les processus d’ajout de commentaires à un tableau de bord ou à un rapport s
 ### <a name="add-a-comment-to-a-specific-dashboard-or-report-visual"></a>Ajouter un commentaire à un visuel de tableau de bord ou de rapport spécifique
 Vous pouvez également ajouter des commentaires à des vignettes de tableau de bord individuelles et à des visuels de rapport individuels. Les processus sont similaires et, dans cet exemple, nous utilisons un rapport.
 
-1. Pointez sur le visuel, puis sélectionnez les points de suspension (...).    
+1. Pointez sur le visuel, puis sélectionnez **Plus d’options** (...).    
 2. Dans la liste déroulante, sélectionnez **Ouvrir les commentaires**.
 
     ![Ajouter un commentaire est le premier choix](media/end-user-comment/power-bi-report-comment.png)  

@@ -3,24 +3,23 @@ title: 'Rapports paginés dans Power BI : FORUM AUX QUESTIONS'
 description: Cet article répond aux questions fréquemment posées sur les rapports paginés. Ces rapports sont mis en forme, optimisés au pixel près pour la sortie par impression ou la génération de fichiers PDF.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 10/04/2019
-ms.openlocfilehash: 97b9d68a8fa17a3ce1758eeaa16d2503a38a4743
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: d8fd8490bda3be4217440a984e8b6da6fca7c5cf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968495"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874799"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
 Cet article répond aux questions fréquemment posées sur les rapports paginés. Ces rapports sont mis en forme, optimisés au pixel près pour la sortie par impression ou la génération de fichiers PDF. Ils sont appelés « paginés », car ils sont mis en forme pour tenir sur plusieurs pages. Les rapports paginés sont basés sur la technologie de rapport RDL dans SQL Server Reporting Services. 
 
-Cet article répond aux nombreuses questions courantes que l’on se pose concernant les rapports paginés dans Power BI Premium, d’une part, et le Générateur de rapports, l’outil autonome de création de rapports paginés, d’autre part. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés sous Mon espace de travail ou dans les espaces de travail de l’application tant que l’espace de travail est dans une capacité Power BI Premium. 
+Cet article répond aux nombreuses questions courantes que l’on se pose concernant les rapports paginés dans Power BI Premium, d’une part, et le Générateur de rapports, l’outil autonome de création de rapports paginés, d’autre part. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés dans Mon espace de travail ou dans les espaces de travail, tant que l’espace de travail est dans une capacité Power BI Premium. 
 
 ## <a name="administration"></a>Administration
 
@@ -163,7 +162,7 @@ Oui, nous prenons en charge la possibilité d’exécuter du code dans vos rappo
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Puis-je utiliser Power BI Embedded pour incorporer mes rapports paginés dans une application que j’héberge ?
 
-L’incorporation de SaaS est déjà prise en charge. L’incorporation de SaaS n’est pas prise en charge actuellement.
+L’incorporation SaaS, ce qui inclut la prise en charge de l’incorporation sécurisée, est déjà disponible.  La prise en charge de l’incorporation PaaS est prévue pour le courant de l’année.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Puis-je passer d'un rapport Power BI à un rapport paginé ?
 
@@ -179,7 +178,7 @@ Nous prévoyons que les rapports prennent autant que possible en charge les mêm
 
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Un outil de migration qui permettrait aux clients SSRS de déplacer leurs ressources et rapports existants vers Power BI est-il prévu ?
 
-Nous évaluons les options présentes ici pour autoriser le déplacement du contenu vers Power BI de manière automatisée, mais cette option ne sera pas disponible avant la disponibilité générale.
+Un projet sur GitHub prend désormais en charge la migration de contenu de SQL Server Reporting Services vers Power BI.  Vous pouvez obtenir des détails et télécharger l’outil ici : [https://github.com/microsoft/RdlMigration](https://github.com/microsoft/RdlMigration)
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Y-a-t-il un contrôle de visionneuse de rapports pour les rapports paginés dans le service Power BI ?
 

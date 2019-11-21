@@ -2,7 +2,6 @@
 title: 'Packs de contenu d’organisation : Accès et copie'
 description: Consultez les informations relatives à la création de copies de packs de contenu d’organisation et à la résolution des problèmes d’accès à ces derniers dans Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp, kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fa7a7845686fd46e9d58ea138bdddd47a0a097
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 905e461c69a898b41b45e48405c3aaaa6e09cfec
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019625"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881306"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Packs de contenu d’organisation : Copier, actualiser et obtenir l’accès
 
@@ -30,7 +29,7 @@ La création de packs de contenu est différente du partage de tableaux de bord 
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Créer une copie d’un pack de contenu d’organisation
 Créez votre propre copie du pack de contenu, non visible à d’autres personnes.
 
-1. Sélectionnez les points de suspension (...) en regard du tableau de bord du pack de contenu > Faire une copie.
+1. Sélectionnez **Plus d’options** (...) en regard du tableau de bord du pack de contenu > Faire une copie.
 
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Sélectionnez **Enregistrer**.  
@@ -58,4 +57,4 @@ Voir [Gérer, mettre à jour et supprimer des packs de contenu d’organisation]
 ## <a name="next-steps"></a>Étapes suivantes
 * [Introduction aux packs de contenu d’organisation](service-organizational-content-pack-introduction.md)
 * [Créer un groupe dans Power BI](service-create-distribute-apps.md)
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

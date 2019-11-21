@@ -2,7 +2,6 @@
 title: Création et utilisation de flux de données dans Power BI
 description: Apprendre à créer et à utiliser des flux de données dans Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,18 +9,18 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 704e073299f89859c507b3ddc6ccba0b4be03d76
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143951"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877371"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Création et utilisation de flux de données dans Power BI
 
 Avec la préparation des données avancée disponible dans **Power BI**, vous pouvez créer une collection de données appelée flux de données, que vous pouvez ensuite utiliser pour vous connecter avec des données métier à partir de diverses sources, pour nettoyer les données, pour les transformer, puis pour les charger dans le stockage Power BI.
 
-Un **flux de données** est une collection d’*entités* (les entités sont similaires aux tables) créées et gérées dans des espaces de travail des applications dans le service Power BI. Vous pouvez ajouter et modifier des entités dans votre flux de données, ainsi que gérer des planifications d’actualisation des données, directement à partir de l’espace de travail dans lequel votre flux de données a été créé.
+Un **dataflow** est une collection d’*entités* (les entités sont similaires aux tables) créées et gérées dans des espaces de travail du service Power BI. Vous pouvez ajouter et modifier des entités dans votre flux de données, ainsi que gérer des planifications d’actualisation des données, directement à partir de l’espace de travail dans lequel votre flux de données a été créé.
 
 Une fois que vous avez créé un flux de données, vous pouvez utiliser **Power BI Desktop** et le **service Power BI** pour créer des jeux de données, des rapports, des tableaux de bord et des applications basés sur les données entrées dans les flux de données Power BI Desktop, ce qui vous permet d’avoir des informations sur vos activités métier.
 
@@ -36,13 +35,13 @@ L’utilisation d’un flux de données comporte trois étapes principales :
 Dans les sections suivantes, nous examinons chacune de ces étapes et nous familiarisons avec les outils fournis pour effectuer chaque étape. Nous pouvons commencer.
 
 ## <a name="creating-a-dataflow"></a>Création d’un flux de données
-Pour créer un flux de données, lancez le service Power BI dans un navigateur, puis sélectionnez un **espace de travail de l’application** (les flux de données ne sont pas disponibles dans *my-workspace* dans le service Power BI) à partir du volet de navigation sur la gauche, comme le montre l’écran suivant. Vous pouvez également créer un espace de travail dans lequel créer votre nouveau flux de données. 
+Pour créer un dataflow, lancez le service Power BI dans un navigateur, puis sélectionnez un **espace de travail** (les dataflows ne sont pas disponibles dans la section *Mon espace de travail* du service Power BI) à partir du volet de navigation sur la gauche, comme le montre l’écran suivant. Vous pouvez également créer un espace de travail dans lequel créer votre nouveau flux de données. 
 
 ![Créer un flux de données dans Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
-Une fois que vous êtes dans une zone d’**espace de travail de l’application** où vous pouvez créer un flux de données, le bouton **+ Créer** s’affiche dans le coin supérieur droit du canevas. Sélectionnez le bouton **+ Créer**, puis sélectionnez **Flux de données** dans la liste déroulante. 
+Une fois que vous êtes dans une zone d’**espace de travail** où vous pouvez créer un dataflow, le bouton **+ Créer** s’affiche dans le coin supérieur droit du canevas. Sélectionnez le bouton **+ Créer**, puis sélectionnez **Flux de données** dans la liste déroulante. 
 
-Il est important de savoir que chaque flux de données n’a qu’*un seul propriétaire*, à savoir la personne qui le crée. Seul le propriétaire peut modifier le flux de données. Tous les membres de l’**espace de travail de l’application** qui ont des autorisations de lecture ou d’écriture pour l’espace de travail de l’application où le flux de données est créé peuvent se connecter au flux de travail depuis **Power BI Desktop**, comme cela est décrit plus loin dans cette article.
+Il est important de savoir que chaque flux de données n’a qu’*un seul propriétaire*, à savoir la personne qui le crée. Seul le propriétaire peut modifier le flux de données. Tous les membres de l’**espace de travail** qui ont des autorisations de lecture ou d’écriture pour l’espace de travail où le dataflow a été créé peuvent se connecter au dataflow à partir de **Power BI Desktop**, comme cela est décrit plus loin dans cette article.
 
 ![Le bouton + Créer dans le service Power BI pour créer un flux de données](media/service-dataflows-create-use/dataflows-create-use_03a.png)
 
@@ -111,7 +110,7 @@ Génial, vous êtes maintenant prêt pour l’étape suivante, qui planifie la f
 
 Une fois que votre flux de données a été enregistré, vous souhaitez planifier la fréquence d’actualisation pour chacune de vos sources de données connectées.
 
-Le processus d’actualisation des données permet aux flux de données Power BI de maintenir vos données à jour. Dans le **service Power BI**, dans la section **espace de travail de l’application**, il y a une collection de zones où vos informations, notamment les flux de données, peuvent être répertoriées, comme le montre l’illustration suivante.
+Le processus d’actualisation des données permet aux flux de données Power BI de maintenir vos données à jour. Dans le **service Power BI**, dans la section **espace de travail**, il y a une collection de zones où vos informations, notamment les dataflows, peuvent être listées, comme le montre l’illustration suivante.
 
 ![Gérer des flux de données dans le service Power BI](media/service-dataflows-create-use/dataflows-create-use_12.png)
 
@@ -134,7 +133,7 @@ Pour vous connecter aux flux de données, dans Power BI Desktop, sélectionnez *
 
 ![Se connecter à des flux de données à partir de Power BI Desktop](media/service-dataflows-create-use/dataflows-create-use_15.png)
 
-À partir de là, accédez à l’**espace de travail de l’application** où vous avez enregistré votre flux de données, sélectionnez le flux de données, puis sélectionnez les entités que vous avez créées à partir de la liste.
+À partir de là, accédez à l’**espace de travail** où vous avez enregistré votre dataflow, sélectionnez le dataflow, puis sélectionnez les entités que vous avez créées à partir de la liste.
 
 Vous pouvez également utiliser la **barre de recherche** près du haut de la fenêtre pour trouver rapidement le nom de votre flux de données ou de vos entités parmi de nombreuses entités de flux de données.
 

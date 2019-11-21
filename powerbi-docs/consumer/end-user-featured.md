@@ -2,7 +2,6 @@
 title: Sélectionner le tableau de bord à afficher à l’ouverture du service Power BI
 description: Documentation sur la création d’un tableau de bord par défaut dans le service Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7f7f488891ddbdac1f377d25cf32c2eb0468c291
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 412bcf397d550e002957e7379bf41381e8e3eea8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256308"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852526"
 ---
 # <a name="featured-dashboards-in-the-power-bi-service"></a>Tableaux de bord par défaut dans le service Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 La plupart d’entre nous ont un tableau de bord que nous consultons plus souvent que tous les autres. C’est peut-être le tableau de bord que nous utilisons pour piloter notre activité. Il peut aussi s’agir d’un tableau de bord contenant un groupement de vignettes de différents tableaux de bord et rapports.
 
 ## <a name="create-a-featured-dashboard"></a>Créer un tableau de bord par défaut
@@ -37,7 +39,7 @@ Regardez Amanda créer un tableau de bord par défaut dans la vidéo. Ensuite, e
 
 
 1. Ouvrez le tableau de bord que vous voulez définir comme tableau de bord par défaut. 
-2. Dans la barre de menus du haut, sélectionnez les points de suspension (...), puis sélectionnez **Définir comme tableau de bord par défaut**. 
+2. Dans la barre de menus du haut, sélectionnez **Plus d’options** (...), puis sélectionnez **Définir comme tableau de bord par défaut**. 
    
     ![icône Définir comme tableau de bord par défaut](./media/end-user-featured/power-bi-dropdown.png)
 3. Confirmez votre sélection.
@@ -58,11 +60,11 @@ Si vous changez d’avis par la suite, vous pouvez définir un nouveau tableau d
 Si vous ne voulez pas qu’un tableau de bord s’affiche par défaut, voici comment annuler la sélection d’un tableau de bord par défaut.
 
 1. Ouvrez le tableau de bord qui est actuellement le tableau de bord par défaut.
-2. Dans la barre de menus du haut, sélectionnez les points de suspension (...), puis sélectionnez **Désactiver le tableau de bord par défaut**.
+2. Dans la barre de menus du haut, sélectionnez **Plus d’options** (...), puis sélectionnez **Désactiver le tableau de bord par défaut**.
 
     ![Désactiver le tableau de bord par défaut](./media/end-user-featured/power-bi-unfeature-newer.png)
    
 ## <a name="next-steps"></a>Étapes suivantes
 - [Ajouter un tableau de bord aux favoris](end-user-favorite.md)
-- D’autres questions ? Essayez la [communauté Power BI](http://community.powerbi.com/).
+- D’autres questions ? Essayez la [communauté Power BI](https://community.powerbi.com/).
 

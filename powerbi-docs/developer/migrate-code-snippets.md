@@ -3,18 +3,17 @@ title: Extraits de code pour migrer du contenu à partir de Power BI Embedded
 description: Voici quelques extraits de code pour les opérations de base nécessaires à la migration de contenu
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: abf45f5213a10379535d4c6ada3b54ffa625ddc5
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 95c249fe2326d9075d920a415c707811d19e5387
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269226"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880511"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Extraits de code pour migrer du contenu à partir d’une collection d’espaces de travail Power BI
 
@@ -167,7 +166,7 @@ Dans cet extrait de code, nous utilisons des informations d’identification non
 
 Vous devez régénérer le rapport pour le jeu de données créé.
 
-Dans cet extrait de code, nous supposons que le jeu de données utilisant le service push est déjà dans un espace de travail d’application dans l’environnement SaaS. Pour plus d’informations sur l’API push, consultez [Transmission de données à un jeu de données Power BI](walkthrough-push-data.md).
+Dans cet extrait de code, nous supposons que le jeu de données utilisant le service push est déjà dans un espace de travail dans l’environnement SaaS. Pour plus d’informations sur l’API push, consultez [Transmission de données à un jeu de données Power BI](walkthrough-push-data.md).
 
 ```csharp
     var credentials = new TokenCredentials(<Your WSC access key>, "AppKey");
@@ -240,4 +239,4 @@ Dans cet extrait de code, nous supposons que le jeu de données utilisant le ser
 [Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Livre blanc sur Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

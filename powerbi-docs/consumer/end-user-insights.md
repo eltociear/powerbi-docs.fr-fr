@@ -2,7 +2,6 @@
 title: Exécuter et afficher des insights sur les vignettes de tableaux de bord
 description: En tant qu’utilisateur final de Power BI, découvrez comment obtenir des insights sur vos vignettes de tableaux de bord.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 9/22/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c157a486b66180de1299144e670210559a53258a
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: ab37c806aaf3cd666c71dc22ee1f3d4d457647e0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207581"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863404"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Afficher des insights sur les données sur les vignettes de tableaux de bord avec Power BI
 Chaque [vignette](end-user-tiles.md) de visuel sur votre tableau de bord est une voie d’accès à l’exploration des données. Quand vous sélectionnez une vignette, elle ouvre un rapport ou [Questions et réponses](end-user-q-and-a.md), où vous pouvez filtrer, trier et explorer le jeu de données sous-jacent du rapport. Et lorsque vous exécutez un aperçu, Power BI effectue l’exploration de données pour vous.
@@ -31,7 +30,7 @@ La fonctionnalité d’aperçu repose sur un [ensemble croissant d’algorithmes
 Lorsque vous exécutez un aperçu sur une mosaïque de tableau de bord, Power BI recherche simplement les données utilisées pour créer cette mosaïque de tableau de bord unique. 
 
 1. [Ouvrir un tableau de bord](end-user-dashboards.md).
-2. Pointez sur une vignette, Sélectionnez les points de suspension (...) et choisissez **Afficher des informations**. 
+2. Pointez sur une vignette, Sélectionnez **Plus d’options** (...) et choisissez **Afficher des informations**. 
 
     ![Mode de menu Points de suspension](./media/end-user-insights/power-bi-hovers.png)
 

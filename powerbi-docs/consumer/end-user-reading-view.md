@@ -4,7 +4,6 @@ description: Dans ce guide de démarrage rapide, les **consommateurs** découvri
 services: powerbi
 documentationcenter: ''
 author: mihart
-manager: kvivek
 editor: ''
 tags: ''
 ms.service: powerbi
@@ -13,12 +12,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: ef955f672bc7266979b1e0b9ddbab6e9b6ae1ff7
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 09b9bf10c3328ecc4eb9ca9d16460b1bcfab0da5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70236947"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862688"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Démarrage rapide : Découvrir les fonctionnalités de Power BI pour les *consommateurs*
 Dans ce démarrage rapide, vous allez apprendre à interagir avec Power BI pour découvrir des insights d’entreprise pilotés par les données. Cet article n’est pas destiné à aller au fond des choses. Il brosse en revanche un tableau rapide de la plupart des actions accessibles aux **consommateurs** de Power BI.
@@ -50,7 +49,7 @@ Lorsque nous utilisons le terme « contenu » dans Power BI, nous faisons réf
 
 Une *application* est un type de contenu Power BI qui regroupe dans un même endroit des tableaux de bord et des rapports connexes. Une application peut ainsi rassembler un ou plusieurs tableaux de bord et un ou plusieurs rapports. Les applications sont créées par des *concepteurs* Power BI qui distribuent et partagent leurs applications avec des *consommateurs* comme vous. 
 
-Pour voir vos applications, vous pouvez notamment sélectionner **Applications** dans la barre de navigation et choisir une application à ouvrir.
+Pour voir vos applications, vous pouvez notamment sélectionner **Applications** dans le volet de navigation et choisir une application à ouvrir.
 
 ![Icône Obtenir des applications](./media/end-user-reading-view/power-bi-apps.png)
 
@@ -116,9 +115,9 @@ Les visuels sont constitués de points de données et en plaçant votre curseur 
 ![passer la souris pour afficher les détails](media/end-user-reading-view/power-bi-hover.gif)
 
 ### <a name="favorite-a-dashboard"></a>Ajouter un tableau de bord aux favoris
-Quand vous définissez un contenu comme *favori*, vous pouvez y accéder avec la barre de navigation. La barre de navigation est visible de presque partout dans Power BI. Les favoris sont généralement les tableaux de bord, les pages de rapport et les applications que vous consultez le plus souvent.
+Quand vous définissez un contenu comme *favori*, vous pouvez y accéder avec le volet de navigation. Le volet de navigation est visible de presque partout dans Power BI. Les favoris sont généralement les tableaux de bord, les pages de rapport et les applications que vous consultez le plus souvent.
 
-En haut à droite du service Power BI, sélectionnez **Favori** ou, si vous ne le voyez pas, sélectionnez les points de suspension (...) et sélectionnez **Favori** dans la liste déroulante. 
+En haut à droite du service Power BI, sélectionnez **Favori** ou, si vous ne le voyez pas, sélectionnez **Plus d’options** (...) et sélectionnez **Favori** dans la liste déroulante. 
    
 ![Icône Favori](./media/end-user-reading-view/power-bi-favorites.png)
 
@@ -168,7 +167,7 @@ En savoir plus sur le [mode Focus et le mode Plein écran](end-user-focus.md)
 ### <a name="sort-a-visualization"></a>Trier une visualisation
 Il est possible de trier les éléments visuels d’une page de rapport et de les enregistrer une fois les modifications appliquées. 
 
-Pointez sur un visuel pour l’activer, puis sélectionnez les points de suspension (...) pour ouvrir les options de tri.
+Pointez sur un visuel pour l’activer, puis sélectionnez **Plus d’options** (...) pour ouvrir les options de tri.
 
 ![trier un graphique](media/end-user-reading-view/sort.gif) 
 
@@ -177,7 +176,7 @@ En savoir plus sur le [tri des visuels](end-user-search-sort.md)
 ### <a name="show-the-data-used-to-create-a-visualization"></a>Afficher les données utilisées pour créer une visualisation
 Une visualisation Power BI se construit à l’aide des données des jeux de données sous-jacents. Si vous voulez voir les calculs sous-jacents, Power BI vous permet d’*afficher* les données utilisées pour créer le visuel. Lorsque vous sélectionnez **Afficher les données**, Power BI affiche les données sous (ou à côté de) la visualisation.
 
-Avec un visuel actif, sélectionnez les points de suspension (...) et choisissez **Afficher les données**.
+Avec un visuel actif, sélectionnez **Plus d’options** (...) et choisissez **Afficher les données**.
    
    ![sélectionner Afficher les données](./media/end-user-show-data/power-bi-explore-show-data.png)
 
@@ -194,9 +193,9 @@ En plus d’afficher les données utilisées pour créer un visuel, vous pouvez 
 Cet article est juste un petit aperçu de ce que les *consommateurs* peuvent réaliser avec le service Power BI.  
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
-- Si vous avez établi une connexion avec une application, sélectionnez **Applications** dans la barre de navigation de gauche pour ouvrir la liste de contenu des applications. Placez le curseur sur l’application à supprimer, puis sélectionnez l’icône de la corbeille.
+- Si vous avez établi une connexion avec une application, sélectionnez **Applications** dans le volet de navigation pour ouvrir la liste de contenu des applications. Placez le curseur sur l’application à supprimer, puis sélectionnez l’icône de la corbeille.
 
-- Si vous avez établi une connexion ou importé un exemple de rapport Power BI, ouvrez **Mon espace de travail** dans la barre de navigation de gauche. Avec les onglets situés en haut, recherchez le tableau de bord, le rapport et le jeu de données, puis sélectionnez pour chacun l’icône de la corbeille.
+- Si vous avez établi une connexion ou importé un exemple de rapport Power BI, ouvrez **Mon espace de travail** dans le volet de navigation. Avec les onglets situés en haut, recherchez le tableau de bord, le rapport et le jeu de données, puis sélectionnez pour chacun l’icône de la corbeille.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Power BI pour les consommateurs](end-user-consumer.md)

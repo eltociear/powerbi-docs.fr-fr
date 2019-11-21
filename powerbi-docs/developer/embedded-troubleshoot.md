@@ -3,18 +3,17 @@ title: Résolution des problèmes de votre application incorporée
 description: Cet article décrit certains problèmes courants que vous pouvez rencontrer lors de l’incorporation de contenu à partir de Power BI.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 08d66df2456917c09b6b0c1d9c40e2de47f53fa5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 4038ffdb9a3218c0b2f04dd524463235fa91b6b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543902"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864103"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Résoudre les problèmes de votre application incorporée
 
@@ -24,7 +23,7 @@ Cet article décrit certains problèmes courants que vous pouvez rencontrer lors
 
 ### <a name="fiddler-trace"></a>Trace Fiddler
 
-[Fiddler](http://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP.  Vous pouvez voir le trafic au niveau des API Power BI depuis l’ordinateur client. Cet outil peut indiquer des erreurs et d’autres informations connexes.
+[Fiddler](https://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP.  Vous pouvez voir le trafic au niveau des API Power BI depuis l’ordinateur client. Cet outil peut indiquer des erreurs et d’autres informations connexes.
 
 ![Trace Fiddler](media/embedded-troubleshoot/fiddler.png)
 
@@ -78,9 +77,9 @@ Une capture Fiddler peut être nécessaire pour approfondir vos recherches. Plus
 
 * L’utilisateur a dépassé la quantité de jetons incorporés pouvant être générés sur une capacité partagée. Achetez des capacités Azure pour générer des jetons incorporés et attribuer l’espace de travail à cette capacité. Consultez [Créer une capacité Power BI Embedded dans le portail Azure](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Le jeton d’authentification Azure AD a expiré.
-* L’utilisateur authentifié n’est pas membre du groupe (espace de travail d’application).
-* L’utilisateur authentifié n’est pas administrateur du groupe (espace de travail d’application).
-* L’utilisateur authentifié ne dispose pas des autorisations nécessaires. Les autorisations peuvent être mises à jour à l’aide de l’[API refreshUserPermissions](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions).
+* L’utilisateur authentifié n’est pas membre du groupe (espace de travail).
+* L’utilisateur authentifié n’est pas administrateur du groupe (espace de travail).
+* L’utilisateur authentifié ne dispose pas des autorisations nécessaires. Les autorisations peuvent être mises à jour à l’aide de l’[API refreshUserPermissions](https://docs.microsoft.com/rest/api/power-bi/users/refreshuserpermissions).
 * L’en-tête d’autorisation n’est peut-être pas répertorié correctement. Vérifiez l’absence de fautes de frappe.
 
 Le backend de l’application doit peut-être actualiser le jeton d’authentification avant d’appeler GenerateToken.
@@ -293,7 +292,7 @@ Quand vous exécutez l’exemple d’application **Embed for your organization**
 
     AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
-La raison de cette erreur est que l’URL de redirection spécifiée pour l’application de serveur web est différente de l’URL de l’exemple. Si vous voulez inscrire l’exemple d’application, utilisez `http://localhost:13526/` comme URL de redirection.
+La raison de cette erreur est que l’URL de redirection spécifiée pour l’application de serveur web est différente de l’URL de l’exemple. Si vous voulez inscrire l’exemple d’application, utilisez `https://localhost:13526/` comme URL de redirection.
 
 Si vous voulez modifier l’application inscrite, découvrez comment [mettre à jour l’application inscrite auprès d’Azure AD](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app) pour qu’elle permettre l’accès aux API web.
 
@@ -305,7 +304,7 @@ Si vous obtenez l’erreur AADSTS50079 : L’utilisateur doit utiliser l’authe
 
 Pour plus d’informations, consultez le [FAQ sur Power BI Embedded](embedded-faq.md).
 
-D’autres questions ? [Essayez la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez la communauté Power BI](https://community.powerbi.com/)
 
 Si vous avez besoin d’aide, [contactez le support ](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) ou [créez un ticket de support via le portail Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest), et fournissez les messages d’erreur que vous recevez.
 
@@ -313,4 +312,4 @@ Si vous avez besoin d’aide, [contactez le support ](https://powerbi.microsoft.
 
 Pour plus d’informations, consultez les [questions fréquentes (FAQ)](embedded-faq.md).
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Astuces pour créer des rapports attrayants
 description: Conseils et astuces pour créer des rapports dans le service Power BI et Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4d686a807d9413c15b19ff382e5ac54fb696b10b
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d7f2c83cf1d0f29f2c0d0c6e621a253acdd3ce41
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721363"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860882"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop et le service Power BI
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des conseils et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop, le service Power BI *et* dans les éditions Microsoft Excel 2016 ou Excel 2013 Pro-Plus avec l’activation du complément Power Pivot et l’activation et l’installation de Power Query.
@@ -119,7 +118,7 @@ Si nous chargeons un jeu de données à partir des requêtes de service client e
 >
 >
 
-Quand nous souhaitons suivre tous les incidents et éléments de travail liés à un CustomerName spécifique, nous ne pouvons pas simplement créer une relation entre ces deux jeux de données.  Certains WorkItems ne sont peut-être pas liés à un CustomerName et nous nous retrouvons avec un champ vide ou NULL.  Il peut y avoir plusieurs enregistrements dans WorkItems et CustomerIncidents pour un CustomerName donné.  
+Quand nous voulons suivre tous les incidents et éléments de travail liés à un CustomerName spécifique, nous ne pouvons pas simplement créer une relation entre ces deux jeux de données.  Certains WorkItems ne sont peut-être pas liés à un CustomerName et nous nous retrouvons avec un champ vide ou NULL.  Il peut y avoir plusieurs enregistrements dans WorkItems et CustomerIncidents pour un CustomerName donné.  
 
 #### <a name="creating-relationships-in-power-bi-desktop-when-the-data-has-null-or-blank-values"></a>Création de relations dans Power BI Desktop, lorsque les données comprennent des valeurs null ou vides
 Il arrive que des jeux de données contiennent des colonnes avec des valeurs null ou vides.  Cela peut poser des problèmes lors de la création de relations.  Pour résoudre le problème, deux options s’offrent à vous.  Vous pouvez supprimer les lignes qui contiennent des valeurs null ou vides.  Pour cela, utilisez la fonctionnalité de filtre sous l’onglet requête ou, si vous fusionnez des requêtes, sélectionnez l’option « Conserver uniquement les lignes correspondantes ». Vous pouvez aussi remplacer les valeurs null ou vides par des valeurs qui fonctionnent dans les relations, en général des chaînes comme « NULL » et « (Vide) ».   Il n’y a pas une approche meilleure que l’autre. Le filtrage de lignes dans l’étape de requête supprime les lignes et peut affecter les calculs et les statistiques récapitulatives.  Cette dernière approche conserve les lignes de données. Le problème, c’est que des lignes sans relation peuvent apparaître comme liées dans le modèle, ce qui peut engendrer des erreurs de calcul.  Si vous adoptez cette solution, veillez, le cas échéant, à utiliser des filtres au niveau de la vue ou du graphique pour obtenir des résultats précis.  Plus important encore, déterminez les lignes qui sont conservées/supprimés et mesurez l’impact global sur l’analyse.  
@@ -163,12 +162,9 @@ DAX est le langage des formules de calcul dans Power BI Desktop.  Il est optim
 
 [Informations de référence sur DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[Centre de ressources DAX](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[Centre de ressources DAX](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Service Power BI *et* Power BI Desktop
-
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Lisez le livre blanc : [Principes de conception des rapports Power BI](visuals/power-bi-visualization-best-practices.md)
-Ce document fournit les meilleures pratiques en matière de conception de rapports dans Power BI. En commençant par la planification, il présente les principes de conception que vous pouvez appliquer à vos rapports et aux pages et visuels qui composent ces derniers. Bon nombre de ces meilleures pratiques s’appliquent également à la conception de tableaux de bord.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Lisez et/ou regardez « How to design visually stunning reports (and dashboards) in Power BI » (Comment concevoir des rapports et tableaux de bord attrayants dans Power BI).
 Miguel Myers, membre de la communauté, est spécialiste en données et concepteur graphique.
@@ -226,4 +222,4 @@ Voici quelques-uns de nos livres préférés :
 
 [Rapports dans Power BI](consumer/end-user-reports.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

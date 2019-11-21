@@ -2,7 +2,6 @@
 title: 'Tutoriel : Appeler un modèle Machine Learning Studio dans Power BI (préversion)'
 description: Dans ce tutoriel, vous appelez un modèle Machine Learning Studio dans Power BI.
 author: davidiseminger
-manager: kfile
 ms.reviewer: SarinaJoan
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e0b2036192ace4404816f5ba64ad07569949452e
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 3cbe715bc3cff9d2afeefe7c82847f104f4d0835
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596586"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876964"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Tutoriel : Appeler un modèle Machine Learning Studio dans Power BI (préversion)
 
@@ -44,7 +43,7 @@ Pour accéder à un modèle Azure ML à partir de Power BI, vous devez avoir un 
 
 Les étapes suivantes supposent que vous êtes le coadministrateur de l’abonnement Azure et du groupe de ressources dans lequel le modèle a été publié.
 
-Connectez-vous au [Portail Azure](https://portal.azure.com) et accédez à la page **Abonnements**, que vous trouverez dans la liste **Tous les services** du menu de navigation gauche.
+Connectez-vous au [portail Azure](https://portal.azure.com) et accédez à la page **Abonnements**, que vous trouverez dans la liste **Tous les services** du volet de navigation.
 
 ![Portail Azure](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
@@ -68,7 +67,7 @@ Cette étape suppose que les données que vous souhaitez évaluer avec votre mod
 
 Pour créer les entités dans votre flux de données, connectez-vous au service Power BI et accédez à un espace de travail sur votre capacité dédiée où la préversion IA est activée.
 
-Si vous ne disposez pas déjà d’un espace de travail, vous pouvez en créer un en sélectionnant **Espaces de travail** dans le menu de gauche, puis **Créer un espace de travail d’application** dans le volet du bas.  Cette opération ouvre un panneau pour entrer les détails de l’espace de travail. Entrer le nom de l'espace de travail, puis sélectionnez **Enregistrer**.
+Si vous ne disposez pas déjà d’un espace de travail, vous pouvez en créer un en sélectionnant **Espaces de travail** dans le menu de gauche, puis **Créer un espace de travail** dans le volet du bas.  Cette opération ouvre un panneau pour entrer les détails de l’espace de travail. Entrer le nom de l'espace de travail, puis sélectionnez **Enregistrer**.
 
 ![Créer un espace de travail](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_03.png)
 
@@ -135,7 +134,7 @@ La sélection de l’icône **Modifier** ouvre l’éditeur Power Query pour les
 
 ![Modifier](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_16.png)
 
-Sélectionnez le bouton **Insights d’intelligence artificielle** dans le ruban, puis le dossier _modèles Azure Machine Learning_ dans le menu de navigation de gauche.
+Sélectionnez le bouton **Insights IA** dans le ruban, puis sélectionnez le dossier _Modèles Azure Machine Learning_ dans le menu du volet de navigation.
 
 Les modèles Azure ML auxquels vous avez accès sont répertoriés en tant que fonctions de Power Query avec un préfixe *AzureML.*  Lorsque vous cliquez sur la fonction correspondant au modèle _AutomobilePricePrediction_, les paramètres du service web du modèle sont répertoriés en tant que paramètres de fonction.
 

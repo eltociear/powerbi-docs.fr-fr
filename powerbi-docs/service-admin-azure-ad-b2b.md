@@ -2,7 +2,6 @@
 title: Distribuer du contenu à des utilisateurs invités externes avec Azure AD B2B
 description: Power BI s’intègre avec Azure Active Directory B2B (Azure AD B2B) pour permettre une distribution sécurisée de contenu Power BI à des utilisateurs invités extérieurs à l’organisation.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b7327a7b32aacd222efc422263187f29285bd73
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: bcde2bc456ee48e8dc66d6c0ba6b17d79fbe43a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075768"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858005"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B
 
@@ -81,7 +80,7 @@ Quand vous utilisez la fonctionnalité [Autoriser les utilisateurs invités exte
 
 ### <a name="use-power-bi-premium"></a>Utiliser Power BI Premium
 
-L’affectation de l’espace de travail de l’application à la [capacité Power BI Premium](service-premium-what-is.md) permet à l’utilisateur invité d’utiliser l’application sans disposer d’une licence Power BI Pro. Power BI Premium permet également à des applications de tirer parti d’autres capacités, comme des fréquences de rafraîchissement accrues, une capacité dédiée et des modèles de grande taille.
+L’affectation de l’espace de travail à la [capacité Power BI Premium](service-premium-what-is.md) permet à l’utilisateur invité d’utiliser l’application sans disposer d’une licence Power BI Pro. Power BI Premium permet également à des applications de tirer parti d’autres capacités, comme des fréquences de rafraîchissement accrues, une capacité dédiée et des modèles de grande taille.
 
 ![Diagramme de l’expérience d’un utilisateur invité avec Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
@@ -113,6 +112,8 @@ Pour aider ces utilisateurs à se connecter à Power BI, fournissez-leur l’UR
 
 * Par défaut, Azure AD B2B limite les invités externes à la seule consommation du contenu. Les invités Azure AD B2B externes peuvent consulter les applications, les tableaux de bord et les rapports, exporter des données, et créer des abonnements par courrier pour les tableaux de bord et les rapports. Ils ne peuvent pas accéder aux espaces de travail ou publier leur propre contenu. Cependant, ces restrictions ne s’appliquent pas aux utilisateurs invités qui ont obtenu l’accès via la fonctionnalité [Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation ](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization).
 
+* Pour inviter des utilisateurs, une licence Power BI Pro est nécessaire. Les utilisateurs de la version Pro d’essai ne peuvent pas inviter d’utilisateurs dans Power BI.
+
 * Pour les utilisateurs invités autorisés via la fonctionnalité [Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization), certaines expériences ne sont pas accessibles. Pour mettre à jour ou publier des rapports, ils doivent utiliser l’interface utilisateur web du service Power BI, notamment l’option Obtenir les données pour charger des fichiers Power BI Desktop.  Les expériences suivantes ne sont pas prises en charge :
     * Diriger la publication de Power BI Desktop vers le service Power BI
     * Les utilisateurs invités ne peuvent pas utiliser Power BI Desktop pour se connecter à des jeux de données du service dans le service Power BI
@@ -127,7 +128,12 @@ Pour aider ces utilisateurs à se connecter à Power BI, fournissez-leur l’UR
     * Les utilisateurs invités ne peuvent pas utiliser la fonctionnalité Analyser dans Excel
     * Les utilisateurs invités ne peuvent pas être @mentioned dans les commentaires
     * Les utilisateurs invités ne peuvent pas utiliser des abonnements
-    * Les utilisateurs invités qui utilisent cette fonctionnalité doivent disposer d’un compte professionnel ou scolaire. Les utilisateurs invités utilisant des comptes personnels seront confrontés à plus de limitations en raison de restrictions de connexion.
+    * Les utilisateurs invités qui utilisent cette fonctionnalité doivent disposer d’un compte professionnel ou scolaire. 
+    
+* Les utilisateurs invités utilisant des comptes personnels seront confrontés à plus de limitations en raison de restrictions de connexion.
+    * Ils peuvent utiliser les expériences de consommation dans le service Power BI par le biais d’un navigateur web.
+    * Ils ne peuvent pas utiliser d’applications Power BI Mobile.
+    * Ils ne peuvent pas se connecter et spécifier des informations d’identification quand un compte professionnel ou scolaire est nécessaire.
 
 * Pour l’instant, cette fonctionnalité n’est pas disponible avec le composant WebPart de rapport Power BI SharePoint Online.
 

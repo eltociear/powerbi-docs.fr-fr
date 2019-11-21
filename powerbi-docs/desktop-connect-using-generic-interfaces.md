@@ -2,7 +2,6 @@
 title: Se connecter à des données à l’aide d’interfaces génériques dans Power BI Desktop
 description: Découvrez comment connecter différentes sources de données avec des interfaces génériques dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ac121ee5154a9d343a912904b20d3244ebee59c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b553d9341723c9b44abce57a384d4c7ba76e00a2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513760"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868976"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Se connecter à des données à l’aide d’interfaces génériques dans Power BI Desktop
 Vous pouvez vous connecter à un large éventail de sources de données différentes dans **Power BI Desktop**, à l’aide de connecteurs de données intégrés (des **bases de données Access** aux ressources **Zendesk**), comme indiqué dans la fenêtre **Obtenir des données**. Vous pouvez également vous connecter à toutes sortes d’*autres* sources de données, pour avoir encore davantage d’options de connectivité, en utilisant les interfaces génériques (telles que **ODBC** ou l’**API REST**) intégrées dans **Power BI Desktop**.
@@ -48,16 +47,16 @@ La liste suivante décrit quelques exemples de sources de données auxquelles **
 
 | Connecteur générique Power BI Desktop | Source de données externe | Lien vers plus d’informations |
 | --- | --- | --- |
-| ODBC |Cassandra |[Pilote ODBC Cassandra](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
+| ODBC |Cassandra |[Pilote ODBC Cassandra](https://www.simba.com/drivers/cassandra-odbc-jdbc/) |
 | ODBC |Couchbase DB |[Couchbase et Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
-| ODBC |DynamoDB |[Pilote ODBC DynamoDB](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
-| ODBC |Google BigQuery |[Pilote ODBC BigQuery](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
-| ODBC |HBase |[Pilote ODBC HBase](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
-| ODBC |Hive |[Pilote ODBC Hive](http://www.simba.com/drivers/hive-odbc-jdbc/) |
+| ODBC |DynamoDB |[Pilote ODBC DynamoDB](https://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
+| ODBC |Google BigQuery |[Pilote ODBC BigQuery](https://www.simba.com/drivers/bigquery-odbc-jdbc/) |
+| ODBC |Hbase |[Pilote ODBC Hbase](https://www.simba.com/drivers/hbase-odbc-jdbc/) |
+| ODBC |Hive |[Pilote ODBC Hive](https://www.simba.com/drivers/hive-odbc-jdbc/) |
 | ODBC |IBM Netezza |[Informations IBM Netezza](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
-| ODBC |Presto |[Pilote ODBC Presto](http://www.simba.com/drivers/presto-odbc-jdbc/) |
+| ODBC |Presto |[Pilote ODBC Presto](https://www.simba.com/drivers/presto-odbc-jdbc/) |
 | ODBC |Project Online |[Article Project Online](desktop-project-online-connect-to-data.md) |
-| ODBC |Progress OpenEdge |[Billet de blog sur le pilote Progress OpenEdge ODBC](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.progress.com%2Fblogs%2Fconnect-microsoft-power-bi-to-openedge-via-odbc-driver&data=02%7C01%7CMatt.Masson%40microsoft.com%7C5e63742e6c454308b58a08d4034b5923%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636137069555329811&sdata=gSu2Rq3vZ0uBVOgjaXxd8Y3uBf%2B8DidX6PG33jwAduY%3D&reserved=0) |
+| ODBC |Progress OpenEdge |[Billet de blog sur le pilote Progress OpenEdge ODBC](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
 
 ## <a name="data-sources-accessible-through-ole-db"></a>Sources de données accessibles via OLE DB
 Le connecteur **OLE DB** dans **Power BI Desktop** vous permet d’importer des données à partir de n’importe quel pilote OLE DB en spécifiant simplement une *chaîne de connexion*. En option, vous pouvez également spécifier une instruction SQL à exécuter sur le pilote OLE DB.

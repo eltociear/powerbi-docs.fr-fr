@@ -2,19 +2,18 @@
 title: Afficher des rapports et des indicateurs de performance clés locaux dans des applications mobiles Power BI
 description: Les applications mobiles Power BI pour iOS vous offrent un accès mobile en direct à vos informations métier locales via une interface tactile dans SQL Server Reporting Services et Power BI Report Server.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/13/2018
 ms.author: mshenhav
-ms.openlocfilehash: 01ee3cf9be3a0d6b4350925d4ecb9e57b668457a
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 50d44b99d8efea848588ab4c460a469ef6dc780b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060236"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879451"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Afficher des indicateurs de performance clés et des rapports Report Server locaux dans des applications mobiles Power BI
 
@@ -67,7 +66,7 @@ Vous pouvez afficher des rapports Power BI locaux, des rapports mobiles Reportin
 
 1. Renseignez l’adresse du serveur, ainsi que votre nom d’utilisateur et votre mot de passe. Utilisez ce format pour l’adresse du serveur :
    
-     `http://<servername>/reports`
+     `https://<servername>/reports`
    
      OR
    
@@ -77,9 +76,9 @@ Vous pouvez afficher des rapports Power BI locaux, des rapports mobiles Reportin
    
     ![Boîte de dialogue Se connecter au serveur](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
 5. (Facultatif) Sous **Options avancées**, vous pouvez affecter un nom convivial au serveur, si vous le souhaitez.
-6. À présent, le serveur est visible dans la barre de navigation à gauche. Dans cet exemple, il est nommé « Power BI Report Server ».
+6. À présent, le serveur est visible dans le volet de navigation. Dans cet exemple, il est nommé « Power BI Report Server ».
    
-   ![Serveur de rapports dans le volet de navigation gauche](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
+   ![Serveur de rapports dans le volet de navigation](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-left-nav-report-server.png)
 
 ## <a name="connect-to-an-on-premises-report-server-in-ios"></a>Se connecter à un serveur de rapports local dans iOS
 
@@ -120,18 +119,18 @@ Vous pouvez marquer des indicateurs de performance clés et des rapports en tant
 
 * Appuyez sur **Favoris**.
   
-   ![Favoris dans le volet de navigation gauche](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
+   ![Favoris dans le volet de navigation](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
    Vos indicateurs de performance clés et rapports favoris du portail web figurent tous sur cette page, ainsi que les tableaux de bord Power BI du service Power BI :
   
    ![Rapports et tableau de bord Power BI dans la page Favoris](./media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-favorites.png)
 
 ## <a name="remove-a-connection-to-a-report-server"></a>Supprimez une connexion à un serveur de rapports
-1. Appuyez sur **Paramètres**en bas de la barre de navigation de gauche.
+1. En bas du volet de navigation, appuyez sur **Paramètres**.
 2. Appuyez sur le nom du serveur duquel vous souhaitez vous déconnecter.
 3. Appuyez sur **Supprimer le serveur**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)  
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

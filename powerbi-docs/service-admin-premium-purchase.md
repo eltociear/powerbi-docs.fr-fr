@@ -3,19 +3,18 @@ title: Acheter Power BI Premium
 description: Découvrez comment acheter Power BI Premium et permettre à l’ensemble de votre organisation d’accéder au contenu.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: b9681b15b0eef4415849b59e903440f9d904b1f6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175246"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856879"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Acheter Power BI Premium
 
@@ -30,17 +29,17 @@ Si un abonnement Premium expire, vous avez un accès total à votre capacité pe
 
 ## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Créer un locataire avec Power BI Premium P1
 
-Si vous ne disposez pas déjà d’un locataire et que vous voulez en créer un, vous pouvez acheter Power BI Premium en même temps. Le lien suivant vous guide lors du processus de création d’un locataire et vous permet d’acheter Power BI Premium : [Offre Power BI Premium P1](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Quand vous créez votre locataire, le rôle Administrateur général Office 365 vous est automatiquement attribué pour ce locataire.
+Si vous ne disposez pas déjà d’un locataire et que vous voulez en créer un, vous pouvez acheter Power BI Premium en même temps. Le lien suivant vous guide lors du processus de création d’un locataire et vous permet d’acheter Power BI Premium : [Offre Power BI Premium P1](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Quand vous créez votre locataire, le rôle Administrateur général Microsoft 365 vous est automatiquement attribué pour ce locataire.
 
 ## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Acheter une capacité Power BI Premium pour votre organisation
 
-Si vous avez une organisation existante (locataire), vous devez avoir le rôle Administrateur général ou Administrateur de facturation Office 365 pour acheter des abonnements et des licences. Pour plus d’informations, consultez [À propos des rôles d’administrateur Office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+Si vous avez une organisation existante (locataire), vous devez avoir le rôle Administrateur général ou Administrateur de facturation Microsoft 365 pour acheter des abonnements et des licences. Pour plus d’informations, consultez [À propos des rôles d’administrateur Microsoft 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 Pour acheter la capacité Premium, effectuez les étapes suivantes.
 
-1. Dans le service Power BI, choisissez le sélecteur d’application Office 365, puis sélectionnez **Administrateur**.
+1. Dans le service Power BI, choisissez le sélecteur d’application Microsoft 365, puis sélectionnez **Administrateur**.
 
-    ![sélecteur d’application Office 365](media/service-admin-premium-purchase/o365-app-picker.png)
+    ![Sélecteur d’application Microsoft 365](media/service-admin-premium-purchase/o365-app-picker.png)
 
     Vous pouvez également accéder au Centre d’administration Microsoft 365. Pour ce faire, ouvrez la page https://portal.office.com et sélectionnez **Admin**.
 
@@ -66,7 +65,7 @@ Maintenant que vous avez une capacité, vous pouvez en ajouter plus à mesure qu
 
 1. Recherchez l’élément Power BI Premium que vous souhaitez acheter en plus grand nombre sous **Autres offres**.
 
-1. Positionnez le curseur sur les **points de suspension (...)** , puis sélectionnez **Modifier la quantité de licences**.
+1. Positionnez le curseur sur **Plus d’options** (...), puis sélectionnez **Modifier la quantité de licences**.
 
     ![Modifier le nombre de licences](media/service-admin-premium-purchase/premium-purchase-more.png)
 
@@ -107,4 +106,4 @@ Lorsque vous annulez votre abonnement Premium ou que votre licence de capacité 
 [FAQ Power BI Premium](service-premium-faq.md)\
 [Livre blanc Planification d’un déploiement de Power BI en entreprise](https://aka.ms/pbienterprisedeploy)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

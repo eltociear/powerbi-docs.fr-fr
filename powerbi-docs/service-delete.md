@@ -2,7 +2,6 @@
 title: Supprimer un tableau de bord, un rapport, un classeur, un jeu de données ou un espace de travail
 description: Découvrir comment supprimer pratiquement tout élément de Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 087fe859c7b1a8ca732619866d492f143ff413c9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 0ccc32a18098673034e7f37b92f8edb5636ef21d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61157669"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872545"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Supprimer pratiquement tout élément dans le service Power BI
 Cet article explique comment supprimer un tableau de bord, un rapport, un classeur, un jeu de données, une application, une visualisation ou un espace de travail dans le service Power BI.
@@ -71,7 +70,7 @@ Si un jeu de données fait partie d’un ou plusieurs [packs de contenu d’orga
 
 ### <a name="to-delete-a-dataset"></a>Pour supprimer un jeu de données
 1. Dans votre espace de travail, sélectionnez l’onglet **Jeux de données**.
-2. Localisez le jeu de données à supprimer, puis sélectionnez les points de suspension (…).  
+2. Localisez le jeu de données à supprimer, puis sélectionnez **Plus d’options** (…).  
 
     ![onglet Jeux de données](media/service-delete/power-bi-delete-datasetnew.png)
 3. Dans la liste déroulante, sélectionnez **Supprimer**.
@@ -81,40 +80,41 @@ Si un jeu de données fait partie d’un ou plusieurs [packs de contenu d’orga
 
    ![boîte de dialogue Supprimer le tableau de bord](media/service-delete/power-bi-delete-dataset-confirm.png)
 
-## <a name="delete-an-app-workspace"></a>Supprimer un espace de travail d’application
+## <a name="delete-a-workspace"></a>Supprimer un espace de travail
 > [!WARNING]
-> Lorsque vous créez un espace de travail d’application, vous créez un groupe Office 365. Et lorsque vous supprimez un espace de travail d’application, vous supprimez un groupe Office 365. Cela signifie que le groupe est également supprimé des autres produits Office 365 comme SharePoint et Microsoft Teams.
+> Quand vous créez un espace de travail, vous créez un groupe Office 365. Quand vous supprimez un espace de travail, vous supprimez ce groupe Office 365. Cela signifie que le groupe est également supprimé des autres produits Office 365 comme SharePoint et Microsoft Teams.
 >
 >
 
-En tant qu’auteur de l’espace de travail de l’application, vous pouvez supprimer celui-ci. Lorsque vous le supprimez, l’application associée est également supprimée pour tous les membres du groupe et supprimée de votre AppSource si vous l’aviez publiée pour toute l’organisation. Supprimer un espace de travail d’application diffère de quitter un espace de travail d’application.
+En tant que créateur de l’espace de travail, vous pouvez le supprimer. Lorsque vous le supprimez, l’application associée est également supprimée pour tous les membres du groupe et supprimée de votre AppSource si vous l’aviez publiée pour toute l’organisation. Supprimer un espace de travail n’est pas quitter un espace de travail.
 
-### <a name="to-delete-an-app-workspace---if-you-are-an-admin"></a>Pour supprimer un espace de travail d’application, si vous êtes un administrateur
-1. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail**.
+### <a name="to-delete-a-workspace---if-you-are-an-admin"></a>Pour supprimer un espace de travail - si vous êtes administrateur
+1. Dans le volet de navigation, sélectionnez **Espaces de travail**.
 
-    ![Espaces de travail d’application](media/service-delete/power-bi-delete-workspace.png)
-2. Sélectionnez les points de suspension (…) à droite de l’espace de travail à supprimer, puis choisissez **Modifier l’espace de travail**.
+2. Sélectionnez **Plus d’options** (...) à droite de l’espace de travail à supprimer, puis choisissez **Modifier l’espace de travail**.
 
-   ![menu de points de suspension > Modifier l’espace de travail](media/service-delete/power-bi-edit-workspace.png)
+    ![espaces de travail](media/service-delete/power-bi-delete-workspace.png)
+
 3. Dans la fenêtre **Modifier l’espace de travail**, sélectionnez **Supprimer l’espace de travail** > **Supprimer**.
 
     ![supprimer l’espace de travail](media/service-delete/power-bi-delete-workspace2.png)
 
-### <a name="to-remove-an-app-workspace-from-your-list"></a>Pour supprimer un espace de travail d’application de votre liste
-Si vous ne souhaitez plus être un membre d’un espace de travail d’application, vous pouvez le ***quitter***. Il est alors supprimé de votre liste. Lorsque vous quittez un espace de travail, celui-ci reste en place pour tous ses autres membres.  
+### <a name="to-remove-a-workspace-from-your-list"></a>Pour supprimer un espace de travail de votre liste
+Si vous ne voulez plus être membre d’un espace de travail, vous pouvez le ***quitter*** : il est alors supprimé de votre liste. Lorsque vous quittez un espace de travail, celui-ci reste en place pour tous ses autres membres.  
 
 > [!IMPORTANT]
-> Si vous êtes l’unique administrateur de l’espace de travail d’application, Power BI ne vous autorise pas à quitter celui-ci.
+> Si vous êtes l’unique administrateur de l’espace de travail, Power BI ne vous autorise pas à quitter celui-ci.
 >
 >
 
-1. Démarrez dans l’espace de travail d’application que vous souhaitez supprimer.
-2. Dans l’angle supérieur droit, sélectionnez les points de suspension (…), puis choisissez **Quitter l’espace de travail** > **Quitter**.
+1. Démarrez dans l’espace de travail que vous voulez supprimer.
+
+2. Dans le coin supérieur droit, sélectionnez **Plus d’options** (…), puis choisissez **Quitter l’espace de travail** > **Quitter**.
 
       ![quitter l’espace de travail](media/service-delete/power-bi-leave-workspace.png)
 
    > [!NOTE]
-   > Les options qui apparaissent dans la liste déroulante varient selon que vous êtes un administrateur ou un membre de cet espace de travail d’application.
+   > Les options qui apparaissent dans la liste déroulante varient selon que vous êtes administrateur ou membre de cet espace de travail.
    >
    >
 
@@ -124,7 +124,7 @@ Vous pouvez facilement supprimer des applications de la page de votre liste d’
 ### <a name="remove-an-app-from-your-app-list-page"></a>Supprimer une application de la page de votre liste d’applications
 La suppression d’une application de la page de votre liste d’applications n’a pas pour effet de supprimer l’application pour les autres membres.
 
-1. Dans la volet de navigation de gauche, sélectionnez **Applications** pour ouvrir la page de la liste d’applications.
+1. Dans le volet de navigation, sélectionnez **Applications** pour ouvrir la page de la liste d’applications.
 2. Pointez sur l’application à supprimer, puis sélectionnez l’icône Supprimer ![](media/service-delete/power-bi-delete-report2.png).
 
    ![sélectionner Applications](media/service-delete/power-bi-delete-app.png)
@@ -140,4 +140,4 @@ Cet article a expliqué comment supprimer les principaux blocs de construction p
 * [Supprimer une vignette de tableau de bord](service-dashboard-edit-tile.md)
 * [Supprimer une visualisation de rapport](service-delete.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

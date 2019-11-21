@@ -3,18 +3,17 @@ title: Quelles sont les possibilités offertes par l’API Power BI ?
 description: Quelles sont les possibilités offertes par l’API Power BI ?
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: cc180c2e9d5275172ad9da75c502ef53d9d7ee66
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 8a231a426823d40be34e900a32d06e5d5f77108b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307629"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880486"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Comment les développeurs peuvent-ils se servir de l’API Power BI ?
 
@@ -32,7 +31,7 @@ Voici quelques opérations possibles avec les API Power BI.
 | Authentifiez-vous sur Power BI. | [S’authentifier sur Power BI ](get-azuread-access-token.md) |
 
 > [!NOTE]
-> Les API Power BI font encore référence aux espaces de travail d’application en tant que groupes. Toutes les références à des groupes indiquent que vous travaillez avec des espaces de travail d’applications.
+> Les API Power BI font encore référence aux espaces de travail en tant que groupes. Toutes les références à des groupes indiquent que vous utilisez des espaces de travail.
 
 ## <a name="api-developer-tools"></a>Outils développeurs d’API
 
@@ -61,4 +60,4 @@ Vous pouvez utiliser l’API Power BI pour [envoyer (push) des données dans un 
 * [Informations de référence sur l’API REST de Power BI](rest-api-reference.md)
 * [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

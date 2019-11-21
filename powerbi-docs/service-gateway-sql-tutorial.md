@@ -2,7 +2,6 @@
 title: 'Tutoriel : Se connecter à des données locales dans SQL Server'
 description: Découvrez comment utiliser SQL Server comme une source de données de passerelle, y compris comment actualiser les données.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 91b6ee8971004a014b188f94142e90914ae3a3b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307401"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881549"
 ---
 # <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Actualiser des données à partir d’une base de données SQL Server locale
 
@@ -131,7 +130,7 @@ Dans Power BI Desktop, vous vous êtes connecté directement à votre base de do
 
 Maintenant que vous avez connecté votre jeu de données dans Power BI à votre base de données SQL Server locale par le biais d’une passerelle de données, effectuez les étapes suivantes pour configurer une planification d’actualisation. L’actualisation de votre jeu de données selon une planification permet de garantir que vos rapports et tableaux de bord disposent des données les plus récentes.
 
-1. Dans le volet de navigation de gauche, ouvrez **Mon espace de travail** \> **Jeux de données**. Sélectionnez les points de suspension ( **. . .** ) pour le jeu de données **AdventureWorksProducts**, puis **Planifier l’actualisation**.
+1. Dans le volet de navigation, ouvrez **Mon espace de travail** \> **Jeux de données**. Sélectionnez les points de suspension ( **. . .** ) pour le jeu de données **AdventureWorksProducts**, puis **Planifier l’actualisation**.
 
     > [!NOTE]
     > Veillez à sélectionner les points de suspension associés au jeu de données **AdventureWorksProducts**, et non ceux associés au rapport du même nom. Le menu contextuel du rapport **AdventureWorksProducts** n’inclut pas l’option **Planifier l’actualisation**.
@@ -149,7 +148,7 @@ Maintenant que vous avez connecté votre jeu de données dans Power BI à votre 
 
 ## <a name="perform-an-on-demand-refresh"></a>Effectuer une actualisation à la demande
 
-Maintenant que vous avez configuré une planification d’actualisation, Power BI actualise votre jeu de données à la prochaine heure d’actualisation planifiée avec une marge de 15 minutes. Si vous souhaitez actualiser les données plus tôt, par exemple pour tester votre passerelle et la configuration de la source de données, effectuez une actualisation à la demande en utilisant l’option **Actualiser maintenant** dans le menu Jeu de données du volet de navigation gauche. Les actualisations à la demande n’affectent pas la prochaine heure d’actualisation planifiée, mais sont comptabilisées dans la limite des actualisations quotidiennes, comme indiqué dans la section précédente.
+Maintenant que vous avez configuré une planification d’actualisation, Power BI actualise votre jeu de données à la prochaine heure d’actualisation planifiée avec une marge de 15 minutes. Si vous souhaitez actualiser les données plus tôt, par exemple pour tester votre passerelle et la configuration de la source de données, effectuez une actualisation à la demande en utilisant l’option **Actualiser maintenant** dans le menu Jeu de données du volet de navigation. Les actualisations à la demande n’affectent pas la prochaine heure d’actualisation planifiée, mais sont comptabilisées dans la limite des actualisations quotidiennes, comme indiqué dans la section précédente.
 
 À titre d’illustration, simulez un changement de l’exemple de données en mettant à jour la table DimProduct de la base de données AdventureWorksDW à l’aide de SSMS (SQL Server Management Studio).
 
@@ -163,7 +162,7 @@ WHERE EnglishProductName ='Road-250 Red, 58'
 
 Suivez maintenant ces étapes pour que les données mises à jour puissent transiter par la connexion à la passerelle jusqu’au jeu de données et aux rapports dans Power BI.
 
-1. Dans le volet de navigation de gauche du service Power BI, sélectionnez et développez **Mon espace de travail**.
+1. Dans le volet de navigation du service Power BI, sélectionnez et développez **Mon espace de travail**.
 
 2. Sous **Jeux de données**, pour le jeu de données **AdventureWorksProducts**, sélectionnez les points de suspension ( **. . .** ), puis **Actualiser maintenant**.
 

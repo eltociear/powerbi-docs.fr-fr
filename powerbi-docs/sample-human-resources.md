@@ -2,7 +2,6 @@
 title: 'Exemple Ressources humaines : Visite guidée'
 description: 'Exemple Ressources humaines pour Power BI : Visite guidée'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5670a8077b4de03f6eb866f6177f17cdec7d7f7
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 3f0c95673bd6a9a5af2a828869f38d32440b617a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462349"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858860"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Exemple Ressources humaines pour Power BI : Visite guidée
 
@@ -58,11 +57,11 @@ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 
-Vous pouvez également télécharger l’exemple Ressources humaines en tant que [fichier .pbix](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), qui est conçu pour une utilisation avec Power BI Desktop.
+Vous pouvez également télécharger l’exemple Ressources humaines en tant que [fichier .pbix](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), qui est conçu pour une utilisation avec Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529780). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529780). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="new-hires"></a>Nouvelles recrues
 Intéressons-nous d’abord aux nouvelles recrues.
@@ -87,7 +86,7 @@ Intéressons-nous d’abord aux nouvelles recrues.
 
 4. Sélectionnez, dans les graphiques, les différentes tranches d’âge et les sexes pour explorer les rapports entre l’âge, le sexe, la région et l’origine ethnique.
 
-5. Sélectionnez **Exemple Ressources humaines** dans la barre de navigation supérieure pour revenir au tableau de bord.
+5. Sélectionnez **Human Resource Sample** (Exemple Ressources humaines) dans la barre de navigation supérieure pour revenir au tableau de bord.
 
    ![Retourner au tableau de bord](media/sample-human-resources/power-bi-breadcrumbs.png)
 
@@ -133,7 +132,7 @@ Examinons le rapport en mode Edition. Vous pouvez modifier les graphiques en sec
 
 8. Vous pouvez également suivre les mêmes étapes pour le graphique en secteurs **Active Employee Count by Gender** (Nombre d’employés actifs par sexe) en remplaçant les employés actifs par les personnes ayant quitté l’entreprise. Examinez les données sur les départs volontaires par sexe pour voir si vous trouvez d’autres indications.
 
-9. Sélectionnez **Exemple Ressources humaines** dans la barre de navigation supérieure pour revenir au tableau de bord. Vous pouvez enregistrer les modifications que vous avez apportées au rapport.
+9. Sélectionnez **Human Resource Sample** (Exemple Ressources humaines) dans la barre de navigation supérieure pour revenir au tableau de bord. Vous pouvez enregistrer les modifications que vous avez apportées au rapport.
 
 ## <a name="bad-hires"></a>Erreurs de recrutement
 Le dernier domaine à explorer est celui des erreurs de recrutement. Les erreurs de recrutement représentent les employés qui ne sont pas restés plus de 60 jours en poste. Nos recrutements s’accélèrent, mais recrutons-nous les bons candidats ?
@@ -147,7 +146,7 @@ Le dernier domaine à explorer est celui des erreurs de recrutement. Les erreurs
 
 3. En examinant le graphique en anneau **Bad Hires by Gender** (Erreurs de recrutement par sexe) et en sélectionnant différentes régions dans le segment **Region** (Région), nous constatons que la région est (« East ») est la seule où les erreurs de recrutement concernent plus les femmes que les hommes.  
 
-4. Sélectionnez le nom du tableau de bord dans la barre de navigation supérieure pour revenir au tableau de bord.
+4. Sélectionnez le nom du tableau de bord dans le volet de navigation du haut pour revenir au tableau de bord.
 
 ## <a name="ask-a-question-in-the-dashboard-qa-box"></a>Poser une question dans la zone Q&R du tableau de bord
 Dans la [zone Q&R](power-bi-tutorial-q-and-a.md) du tableau de bord, vous pouvez poser une question concernant vos données en utilisant un langage naturel. Q&R reconnaît les mots que vous tapez et cherche l’emplacement dans le jeu de données où se trouve la réponse.

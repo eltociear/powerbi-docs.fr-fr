@@ -2,7 +2,6 @@
 title: Créer une copie d’un tableau de bord Power BI
 description: 'Dupliquer un tableau de bord Power BI '
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5507356e42c58574a2d7c6787074fb987ddfeaec
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: ab629c15f1e1e998c3870b95993cdf7348cb15ff
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523186"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872842"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Créer une copie d’un tableau de bord dans Power BI
 ![tableau de bord](media/service-dashboard-copy/power-bi-dashboard.png)
@@ -28,7 +27,7 @@ Les tableaux de bord sont créés (et copiés) à l’aide du service Power BI e
 Pour effectuer une copie d’un tableau de bord, vous devez être le *créateur* du tableau de bord. Les tableaux de bord qui ont été partagés avec vous en tant qu’application ne peuvent pas être dupliqués.
 
 1. Ouvrez le tableau de bord.
-2. Dans l’angle supérieur droit, sélectionnez les points de suspension (…), puis choisissez **Dupliquer le tableau de bord**.
+2. Dans l’angle supérieur droit, sélectionnez **Plus d’options** (…) et choisissez **Dupliquer le tableau de bord**.
    
    ![menu des points de suspension](media/service-dashboard-copy/power-bi-dulicate.png)
 3. Nommez le tableau de bord, puis sélectionnez **Dupliquer**. 
@@ -40,15 +39,15 @@ Pour effectuer une copie d’un tableau de bord, vous devez être le *créateur*
 
 5.    Ouvrez le nouveau tableau de bord et modifiez-le, le cas échéant. Voici quelques éléments que vous pouvez faire ensuite :    
     a. [Déplacer, renommer, redimensionner ou supprimer des vignettes](service-dashboard-edit-tile.md).  
-    b. Modifier les détails des vignettes et les liens hypertexte en sélectionnant les points de suspension (...) de vignette, puis en choisissant **Modifier les détails**.  
+    b. Modifier les détails des vignettes et les liens hypertexte en sélectionnant la vignette **Plus d’options** (...) et en choisissant **Modifier les détails**.  
     c. [Ajouter des vignettes à partir de la barre de menus du tableau de bord](service-dashboard-add-widget.md) (**Ajouter une vignette**)  
     d. Épingler des vignettes [à partir de Questions et réponses](service-dashboard-pin-tile-from-q-and-a.md) ou [à partir de rapports](service-dashboard-pin-tile-from-report.md).  
-    e. Renommer le tableau de bord, activer ou désactiver Questions et réponses et définir le flux de vignettes à partir du volet de paramètres du tableau de bord.  (Sélectionnez les points de suspension (...) du tableau de bord, puis choisissez **Paramètres**)  
+    e. Renommer le tableau de bord, activer ou désactiver Questions et réponses et définir le flux de vignettes à partir du volet de paramètres du tableau de bord.  (Sélectionnez la liste déroulante **Plus d’options** (...) du tableau de bord et choisissez **Paramètres**)  
     f. Partager votre tableau de bord directement avec vos collègues ou dans le cadre d’une application Power BI. 
 
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Conseils pour la conception d’un tableau de bord réussi](service-dashboards-design-tips.md) 
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

@@ -1,8 +1,7 @@
 ---
-title: Approuvé par des tiers des connecteurs dans Power BI
+title: Connecteurs tiers approuvés dans Power BI
 description: Comment approuver un connecteur tiers signé dans Power BI
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,41 +9,41 @@ ms.topic: conceptual
 ms.date: 04/3/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 30b7457c6149320c43f24b967a842382821b01b1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ac3f795d6a80d5f143daf68436f41f5771b3c2bb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65607776"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876156"
 ---
-# <a name="trusting-third-party-connectors"></a>Connecteurs de tiers autorisé à approuver
+# <a name="trusting-third-party-connectors"></a>Approbation de connecteurs tiers
 
-## <a name="why-do-you-need-trusted-third-party-connectors"></a>Pourquoi devez-vous confiance les connecteurs tiers ?
+## <a name="why-do-you-need-trusted-third-party-connectors"></a>Pourquoi avez-vous besoin de connecteurs tiers approuvés ?
 
-Dans Power BI, nous vous recommandons généralement de conservation « extension sécurité de vos données » au niveau au niveau supérieur, ce qui empêche le chargement de code non certifié par Microsoft. Toutefois, il peut arriver nombreuses dans lequel vous souhaitez charger des connecteurs spécifiques--ceux que vous avez écrit, ou celles qui sont fournies pour vous par un consultant ou un fournisseur en dehors du chemin d’accès de certification Microsoft.
+Dans Power BI, nous recommandons généralement de conserver le paramètre « Sécurité des extensions de données » au niveau le plus élevé, ce qui empêche le chargement de code non certifié par Microsoft. Toutefois, il peut y avoir de nombreux cas où vous souhaitez charger des connecteurs spécifiques, ceux que vous avez écrits ou ceux qui vous sont fournis par un consultant ou un fournisseur en dehors de la voie de certification Microsoft.
 
-Le développeur d’un connecteur donné peut se connecter avec un certificat et vous fournir les informations nécessaires pour la charger en toute sécurité sans en réduisant vos paramètres de sécurité.
+Le développeur d’un connecteur donné peut le signer à l’aide d’un certificat et vous fournir les informations dont vous avez besoin pour le charger de façon sécurisée sans alléger vos paramètres de sécurité.
 
-Si vous souhaitez en savoir plus sur les paramètres de sécurité, vous pouvez découvrir les [ici](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
+Si vous souhaitez en savoir plus sur les paramètres de sécurité, cliquez [ici](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
 
-## <a name="using-the-registry-to-trust-third-party-connectors"></a>À l’aide du Registre pour les connecteurs de tiers de confiance
+## <a name="using-the-registry-to-trust-third-party-connectors"></a>Utilisation du Registre pour approuver des connecteurs tiers
 
-Approbation de connecteurs de tiers dans Power BI est effectuée en répertoriant l’empreinte numérique du certificat que vous souhaitez approuver dans une valeur de Registre spécifiée. Si cette empreinte numérique correspond à l’empreinte numérique du certificat sur le connecteur que vous souhaitez charger, vous serez en mesure de le charger dans le niveau de sécurité « Recommandées » de Power BI. 
+L’approbation de connecteurs tiers dans Power BI s’effectue en listant l’empreinte numérique du certificat que vous souhaitez approuver dans une valeur de Registre spécifiée. Si cette empreinte numérique correspond à l’empreinte numérique du certificat sur le connecteur à charger, vous pourrez le charger dans le niveau de sécurité « recommandé » de Power BI. 
 
-Le chemin d’accès du Registre est HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop. Assurez-vous que le chemin d’accès existe ou créez-le. Nous avons choisi de cet emplacement en raison de sa principalement contrôlé par la stratégie informatique, mais aussi nécessitant un accès administration ordinateur local à modifier. 
+Le chemin du Registre est HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop. Vérifiez que le chemin existe, ou créez-le. Nous avons choisi cet emplacement parce qu’il est principalement contrôlé par la stratégie informatique et nécessite un accès administrateur sur l’ordinateur local pour toute modification. 
 
-![Définir de Power BI Desktop Registre sans clés tiers approuvé](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
+![Registre Power BI Desktop sans clés tierces approuvées définies](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
 
-Ajouter une nouvelle valeur sous le chemin d’accès spécifié ci-dessus. Le type doit être « Valeur de chaînes multiples » (REG_MULTI_SZ), et elle doit être appelée « TrustedCertificateThumbprints » 
+Ajoutez une nouvelle valeur sous le chemin spécifié ci-dessus. Le type doit être « Valeur de chaînes multiples » (REG_MULTI_SZ) et le nom doit être « TrustedCertificateThumbprints ». 
 
-![Power BI Desktop Registre avec une entrée pour les connecteurs de tiers approuvés, mais aucune clé](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
+![Registre Power BI Desktop avec une entrée pour les connecteurs tiers approuvés, mais sans clés](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
 
-Ajoutez les empreintes numériques des certificats que vous souhaitez approuver. Vous pouvez ajouter plusieurs certificats à l’aide de « \0 » comme un délimiteur, ou dans l’Éditeur du Registre, droit, cliquez sur -> modifient et placer chaque empreinte sur une nouvelle ligne. Exemple d’empreinte provient d’un certificat auto-signé. 
+Ajoutez les empreintes numériques des certificats à approuver. Vous pouvez ajouter plusieurs certificats en utilisant « \0 » comme délimiteur, ou cliquer avec le bouton droit dans l’Éditeur du Registre sur > modifier et placer chaque empreinte numérique sur une nouvelle ligne. Un exemple d’empreinte numérique est extrait d’un certificat auto-signé. 
 
- ![Power BI Desktop Registre avec un jeu de clés approuvé par des tiers](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
+ ![Registre Power BI Desktop avec une clé tierce approuvée définie](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
 
-Si vous avez suivi les instructions correctement et disposent de l’empreinte numérique approprié par votre développeur, vous devez maintenant pouvoir en toute sécurité les connecteurs de confiance signés avec le certificat associé.
+Si vous avez correctement suivi les instructions et que le développeur vous a fourni l’empreinte numérique appropriée, vous devez maintenant pouvoir approuver sans problème les connecteurs signés avec le certificat associé.
 
 ## <a name="how-to-sign-connectors"></a>Comment signer des connecteurs
 
-Si vous avez un connecteur vous ou un développeur obligé de vous connecter, vous trouverez plus d’informations dans la documentation de Power Query [ici](https://docs.microsoft.com/power-query/handlingconnectorsigning).
+Si vous avez un connecteur que vous ou un développeur devez signer, vous pouvez consulter la documentation Power Query [ici](https://docs.microsoft.com/power-query/handlingconnectorsigning).

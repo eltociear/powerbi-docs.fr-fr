@@ -3,18 +3,17 @@ title: Installer Power BI Report Server
 description: Découvrez comment installer Power BI Report Server.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839440"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874134"
 ---
 # <a name="install-power-bi-report-server"></a>Installer Power BI Report Server
 
@@ -127,14 +126,14 @@ Les réservations d’URL se composent d’un préfixe, d’un nom d’hôte, d�
 | Partie | Description |
 | --- | --- |
 | Préfixe |Le préfixe par défaut est HTTP. Si vous avez installé précédemment un certificat SSL (Secure Sockets Layer), le programme d’installation tente de créer des réservations d’URL utilisant le préfixe HTTPS. |
-| Nom d’hôte |Le nom d’hôte par défaut est un caractère générique fort (+). Il indique que le serveur de rapports accepte toute demande HTTP sur le port désigné pour tout nom d’hôte correspondant à l’ordinateur, dont `http://<computername>/reportserver`, `http://localhost/reportserver` ou`http://<IPAddress>/reportserver.` |
+| Nom d’hôte |Le nom d’hôte par défaut est un caractère générique fort (+). Il indique que le serveur de rapports accepte toute demande HTTP sur le port désigné pour tout nom d’hôte correspondant à l’ordinateur, dont `https://<computername>/reportserver`, `https://localhost/reportserver` ou`https://<IPAddress>/reportserver.` |
 | Port |Le port par défaut est 80. Si vous utilisez un port autre que le port 80, vous devez ajouter celui-ci explicitement à l’URL lorsque vous ouvrez le portail web dans une fenêtre de navigateur. |
 | Répertoire virtuel |Par défaut, les répertoires virtuels créés sont ReportServer pour le service Web Report Server et Reports pour le portail web. Pour le service Web Report Server, le répertoire virtuel par défaut est **reportserver**. Pour le portail web, le répertoire virtuel par défaut est **reports**. |
 
 Voici un exemple de chaîne URL complète :
 
-* `http://+:80/reportserver`, donne accès au serveur de rapports.
-* `http://+:80/reports`, donne accès au portail web.
+* `https://+:80/reportserver`, donne accès au serveur de rapports.
+* `https://+:80/reports`, donne accès au portail web.
 
 ## <a name="firewall"></a>Pare-feu
 

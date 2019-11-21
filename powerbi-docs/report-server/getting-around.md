@@ -2,19 +2,18 @@
 title: Gérer le contenu dans le portail web Power BI Report Server
 description: En savoir plus sur la gestion du contenu dans le portail web Power BI Report Server.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: e7a9b4da760f02672f51aa7ace0f3bb19c501834
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: ecc33c6176214cb8178e55d716294bf9446a7b1d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770131"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859477"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Gérer le contenu dans le portail web 
 Le portail web Power BI Report Server est un emplacement local destiné à l’affichage, au stockage et à la gestion de vos rapports mobiles et paginés, ainsi que de vos indicateurs de performance clés Power BI.
@@ -38,9 +37,9 @@ L’application du portail web s’exécute dans un navigateur. Lorsque vous dé
     Consultez la liste des [navigateurs web et des versions pris en charge](browser-support.md).
 2. Dans la barre d’adresse, tapez l’URL du portail web.
    
-    Par défaut, l’URL est <em>http://[NomOrdinateur]/reports</em>.
+    Par défaut, l’URL est <em>[NomOrdinateur]/reports</em>.
    
-    Le serveur de rapports peut être configuré pour utiliser un port spécifique. Par exemple, <em>http://[NomOrdinateur]:80/reports</em> ou <em>http://[NomOrdinateur]:8080/reports</em>.
+    Le serveur de rapports peut être configuré pour utiliser un port spécifique. Par exemple, <em>https://[NomOrdinateur]:80/reports</em> ou <em>https://[NomOrdinateur]:8080/reports</em>
    
     Vous voyez les éléments des groupes du portail web dans les catégories suivantes :
    
@@ -56,7 +55,7 @@ L’application du portail web s’exécute dans un navigateur. Lorsque vous dé
 ## <a name="manage-items-in-the-web-portal"></a>Gérer les éléments dans le portail web
 Power BI Report Server vous permet de contrôler avec précision sur les éléments que vous stockez sur le portail web. Par exemple, vous pouvez configurer les abonnements, la mise en cache, les instantanés et la sécurité de chaque rapport paginé.
 
-1. Sélectionnez les points de suspension (...) dans l’angle supérieur droit d’un élément, puis choisissez **Gérer**.
+1. Sélectionnez **Plus d’options** (...) dans l’angle supérieur droit d’un élément, puis sélectionnez **Gérer**.
    
     ![Sélectionner Gérer](media/getting-around/report-server-web-portal-manage-ellipsis.png)
 2. Choisissez la propriété ou une fonctionnalité à définir.

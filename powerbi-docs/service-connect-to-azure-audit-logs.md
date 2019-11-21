@@ -2,7 +2,6 @@
 title: Se connecter aux journaux d’audit Azure avec Power BI
 description: Journaux d’Audit Azure pour Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 42b56cbad4c47b8cc8133a1f35511ea48ac24055
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: d0bd4e90dac6e71d95c38bed83f1c9507acc4fd3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060608"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855388"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Se connecter aux journaux d’audit Azure avec Power BI
 Avec le pack de contenu Journaux d’audit Azure, vous pouvez analyser et visualiser les informations stockées dans les journaux d’audit. Power BI récupère vos données, génère un tableau de bord par défaut et crée des rapports basés sur ces données.
@@ -25,10 +24,10 @@ Avec le pack de contenu Journaux d’audit Azure, vous pouvez analyser et visual
 [Connectez-vous au pack de contenu des journaux d’audit Azure](https://app.powerbi.com/getdata/services/azure-audit-logs) ou obtenez davantage d’informations sur l’[intégration des journaux d’audit Azure](https://powerbi.microsoft.com/integrations/azure-audit-logs) avec Power BI.
 
 ## <a name="how-to-connect"></a>Comment se connecter
-1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.  
+1. Sélectionnez **Obtenir des données** en bas du volet de navigation.  
    
     ![](media/service-connect-to-azure-audit-logs/getdata.png)
-2. Dans la zone **Services** , sélectionnez **Obtenir**.  
+2. Dans la zone **Services**, sélectionnez **Obtenir**.  
    
     ![](media/service-connect-to-azure-audit-logs/services.png) 
 3. Sélectionnez **Journaux d’audit Azure** > **Obtenir**.  

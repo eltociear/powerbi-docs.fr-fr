@@ -2,7 +2,6 @@
 title: Collaborer dans un espace de travail classique
 description: Consultez les informations relatives à la collaboration sur des fichiers Power BI Desktop dans votre espace de travail et avec des services Office 365 tels que le partage de fichiers sur OneDrive Entreprise, les conversations dans Exchange, le calendrier et les tâches.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 41aaf33602fc8a895d54666736d775ac53d5aaef
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: cddb55ab85cfd6d8d6a5e49d81b83a80df2f81da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832437"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873172"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Collaborer dans un espace de travail classique
 Les espaces de travail Power BI sont d’excellents environnements pour collaborer avec vos collègues sur des tableaux de bord, des rapports et des jeux de données afin de créer des *applications*. Cet article concerne les espaces de travail *classiques* originaux.  
@@ -45,7 +44,7 @@ Après avoir créé un fichier Power BI Desktop, vous pouvez le publier dans un 
 ## <a name="collaborate-in-office-365"></a>Collaborer dans Office 365
 La collaboration dans Office 365 débute dans l’espace de travail classique dans Power BI.
 
-1. Dans le service Power BI, sélectionnez la flèche à côté d’**Espaces de travail**, puis sélectionnez les points de suspension (…) en regard du nom de votre espace de travail. 
+1. Dans le service Power BI, sélectionnez la flèche à côté d’**Espaces de travail**, puis **Plus d’options** (...) en regard du nom de votre espace de travail. 
    
    ![Menu Espaces de travail](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. Dans ce menu, vous pouvez collaborer avec votre groupe de plusieurs façons : 
@@ -56,7 +55,7 @@ La collaboration dans Office 365 débute dans l’espace de travail classique d
    Quand vous accédez pour la première fois à votre espace de travail de groupe dans Office 365, la procédure peut prendre un certain temps. Patientez 15 à 30 minutes, puis actualisez votre navigateur.
 
 ## <a name="have-a-group-conversation-in-office-365"></a>Avoir une conversation de groupe dans Office 365
-1. Sélectionnez les points de suspension (…) à côté du nom de votre espace de travail \> **Conversations**. 
+1. Sélectionnez **Plus d’options** (...) en regard du nom de votre espace de travail \> **Conversations**. 
    
     ![Onglet Conversations](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -66,7 +65,7 @@ La collaboration dans Office 365 débute dans l’espace de travail classique d
 2. En savoir plus sur les [conversations de groupe dans Outlook pour Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>Planifier un événement dans le calendrier de l’espace de travail de groupe
-1. Sélectionnez les points de suspension (...) en regard du nom de l’espace de travail \> **Calendrier**. 
+1. Sélectionnez **Plus d’options** (...) en regard du nom de votre espace de travail \> **Calendrier**. 
    
    ![Onglet Calendrier](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -80,6 +79,6 @@ Si vous êtes propriétaire ou administrateur d’un espace de travail, vous pou
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Publier des applications dans Power BI](service-create-distribute-apps.md).
-* D’autres questions ? [Posez vos questions à la Communauté Power BI](http://community.powerbi.com/).
+* D’autres questions ? [Posez vos questions à la Communauté Power BI](https://community.powerbi.com/).
 * Vous souhaitez formuler des commentaires ? Consultez la page des [suggestions concernant Power BI](https://ideas.powerbi.com/forums/265200-power-bi).
 

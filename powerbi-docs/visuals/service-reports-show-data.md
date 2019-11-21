@@ -2,20 +2,19 @@
 title: Afficher les données utilisées pour créer la visualisation Power BI
 description: Ce document explique comment afficher les données utilisées pour créer un visuel dans Power BI et les exporter dans un fichier .csv.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/26/2018
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0ffb0a2e7bee17d71ca2037c8a233c2443ff1120
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5417511b12c85cb467c3613671a1e101541c9609
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61389503"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880620"
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Afficher les données utilisées pour créer la visualisation
 ## <a name="show-data"></a>Afficher les données
@@ -28,17 +27,20 @@ Vous pouvez également exporter les données utilisées pour créer la visualisa
 > 
 > 
 
-## <a name="using-show-data-in-power-bi-service"></a>Utiliser *Afficher les données* dans le service Power BI
-1. Dans le service Power BI, ouvrez un rapport en [mode Lecture ou en mode Édition](../service-interact-with-a-report-in-editing-view.md) et sélectionnez un visuel.  Dans Power BI Desktop, ouvrez la vue Rapport.
-2. Pour afficher les données sous-jacentes de l’élément visuel, sélectionnez **Explorer** > **Afficher les données**.
-   
-   ![sélectionner Afficher les données](media/service-reports-show-data/power-bi-show-data.png)
+## <a name="using-show-data"></a>Utiliser *Afficher les données* 
+1. Dans Power BI Desktop, sélectionnez une visualisation pour l’activer.
+
+2. Sélectionnez **Autres actions** (...) et choisissez **Afficher les données**. 
+    ![option d’affichage pour Afficher les données](media/service-reports-show-data/power-bi-more-action.png)
+
+
 3. Par défaut, les données s’affichent sous l’élément visuel.
    
-   ![affichage vertical du visuel et des données](media/service-reports-show-data/power-bi-explore-show-data.png)
-4. Pour modifier l’orientation, sélectionnez la disposition verticale ![](media/service-reports-show-data/power-bi-vertical-icon-new.png) dans l’angle supérieur droit de la visualisation.
+   ![affichage vertical du visuel et des données](media/service-reports-show-data/power-bi-show-data-below.png)
+
+4. Pour modifier l’orientation, sélectionnez la disposition verticale ![petite capture d’écran de l’icône utilisée pour passer à une disposition verticale](media/service-reports-show-data/power-bi-vertical-icon-new.png) dans l’angle supérieur droit de la visualisation.
    
-   ![affichage horizontal du visuel et des données](media/service-reports-show-data/power-bi-explore-show-data2.png)
+   ![affichage horizontal du visuel et des données](media/service-reports-show-data/power-bi-show-data-side.png)
 5. Pour exporter les données vers un fichier .csv, sélectionnez les points de suspension, puis choisissez **Exporter des données**.
    
     ![sélectionner Exporter des données](media/service-reports-show-data/power-bi-export-data-new.png)
@@ -46,9 +48,30 @@ Vous pouvez également exporter les données utilisées pour créer la visualisa
     Pour plus d’informations sur l’exportation des données vers Excel, voir [Exporter les données de visualisations Power BI](power-bi-visualization-export-data.md).
 6. Pour masquer les données, désélectionnez **Explorer** > **Afficher les données**.
 
+## <a name="using-show-records"></a>Utiliser Afficher les enregistrements
+Vous pouvez également vous concentrer sur un enregistrement de données et explorer les données qui se trouvent derrière. 
+
+1. Pour utiliser **Afficher les enregistrements**, sélectionnez une visualisation pour l’activer. 
+
+2. Dans le ruban Desktop, sélectionnez l’onglet **Outils pour les visuels** > **Données/Explorer** > **Afficher les enregistrements**. 
+
+    ![Capture d’écran avec l’option Afficher les enregistrements sélectionnée.](media/service-reports-show-data/power-bi-see-record.png)
+
+3. Sélectionnez un point de données ou une ligne dans la visualisation. Dans cet exemple, nous avons sélectionné la quatrième colonne à partir de la gauche. Power BI montre l’enregistrement du jeu de données correspondant à ce point de données.
+
+    ![Capture d’écran d’un enregistrement d’un jeu de données.](media/service-reports-show-data/power-bi-row.png)
+
+4. Sélectionnez **Retour au rapport** pour revenir au canevas de rapport Desktop. 
+
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
+
+- Si le bouton **Afficher les enregistrements** du ruban est désactivé et grisé, cela signifie que la visualisation sélectionnée ne prend pas en charge l’affichage des enregistrements.
+- Vous ne pouvez pas modifier les données dans la vue Afficher les enregistrements et les enregistrer dans le rapport.
+- Vous ne pouvez pas utiliser l’option Afficher les enregistrements si votre visuel utilise une mesure calculée.
+- Vous ne pouvez pas utiliser l’option Afficher les enregistrements quand vous êtes connecté à un modèle multidimensionnel (MD) actif.  
+
 ## <a name="next-steps"></a>Étapes suivantes
 [Exporter des données à partir des visualisations Power BI](power-bi-visualization-export-data.md)    
-[Visualisations dans des rapports Power BI](power-bi-report-visualizations.md)    
-[Rapports Power BI](../consumer/end-user-reports.md)    
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

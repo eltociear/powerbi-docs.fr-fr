@@ -2,7 +2,6 @@
 title: Graphiques en cascade dans Power BI
 description: Graphiques en cascade dans Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3ab200194d89eb15892dc4f452079eb56df8a608
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: fedaa811c94a9e955d6ca10646bc546f60dc9b98
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71191308"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881965"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Graphiques en cascade dans Power BI
 
@@ -24,7 +23,7 @@ ms.locfileid: "71191308"
 
 Les graphiques en cascade affichent un résultat cumulé à mesure que Power BI ajoute et soustrait des valeurs. Ces graphiques sont utiles pour comprendre de quelle façon une valeur initiale (par exemple, un revenu net) est affectée par une série de variations positives et négatives.
 
-Grâce au codage par couleur des colonnes, vous repérez rapidement les hausses et les baisses. Les colonnes des valeurs initiales et finales [démarrer sur l’axe horizontal](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "démarrent généralement sur l’axe horizontal"), alors que les valeurs intermédiaires sont représentées par des colonnes flottantes. Les graphiques en cascade sont également appelés graphiques « bridge » (pont) en raison de leur forme.
+Grâce au codage par couleur des colonnes, vous repérez rapidement les hausses et les baisses. Les colonnes des valeurs initiales et finales [commencent généralement sur l’axe horizontal](https://support.office.com/article/Create-a-waterfall-chart-in-Office-2016-for-Windows-8de1ece4-ff21-4d37-acd7-546f5527f185#BKMK_Float "commencer sur l’axe horizontal"), alors que les valeurs intermédiaires sont représentées par des colonnes flottantes. Les graphiques en cascade sont également appelés graphiques « bridge » (pont) en raison de leur forme.
 
    > [!NOTE]
    > Cette vidéo utilise une version antérieure de Power BI Desktop.
@@ -49,7 +48,7 @@ Les graphiques en cascade sont conseillés pour :
 
 ## <a name="prerequisite"></a>Prérequis
 
-Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
    
@@ -76,7 +75,7 @@ Vous allez créer un graphique en cascade qui affiche un écart sur les ventes (
 
     ![cascade](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 
-1. Vérifiez que Power BI a trié le graphique en cascade dans l’ordre chronologique. Dans l’angle supérieur droit du graphique, sélectionnez les points de suspension (...).
+1. Vérifiez que Power BI a trié le graphique en cascade dans l’ordre chronologique. En haut à droite du graphique, sélectionnez **Autres options** (...).
 
     Pour cet exemple, nous allons sélectionner **Tri croissant**.
 

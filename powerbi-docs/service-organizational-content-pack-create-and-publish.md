@@ -2,7 +2,6 @@
 title: Créer et publier un pack de contenu d’organisation - Power BI
 description: Dans ce tutoriel, vous allez créer un pack de contenu d’organisation, en restreindre l’accès à un groupe spécifique et le publier dans la bibliothèque de packs de contenu de votre organisation sur Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 25b63db2d77e84fb3fc1a3e844ceb46ef1a9bd82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020651"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872010"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Tutoriel : Créer et publier un pack de contenu d’organisation Power BI
 
@@ -34,9 +33,9 @@ Supposons que vous êtes responsable de la mise en production chez Contoso et qu
 
 Comment procéder ? Dans le [service Power BI](https://powerbi.com), accédez à votre espace **Mon espace de travail**. Accédez ensuite à **Obtenir des données** > **Exemples** > **Exemple Analyse des opportunités** > **Se connecter** pour obtenir votre propre copie.
 
-1. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail** > **Mes espaces de travail**.
+1. Dans le volet de navigation, sélectionnez **Espaces de travail** > **Mon espace de travail**.
 
-1. Dans la barre de navigation supérieure, sélectionnez l’icône d’engrenage ![Capture d’écran de l’icône d’engrenage](media/service-organizational-content-pack-create-and-publish/cog.png). > **Créer un pack de contenu**.
+1. Dans le volet de navigation du haut, sélectionnez l’icône d’engrenage ![Capture d’écran de l’icône d’engrenage](media/service-organizational-content-pack-create-and-publish/cog.png). > **Créer un pack de contenu**.
 
    ![Capture d’écran de l’interface utilisateur avec le focus placé sur l’icône d’engrenage et l’option Créer un pack de contenu.](media/service-organizational-content-pack-create-and-publish/pbi_create_contpk.png)
 
@@ -100,4 +99,4 @@ Comment procéder ? Dans le [service Power BI](https://powerbi.com), accédez �
 
 * [Qu’est-ce que OneDrive Entreprise ?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

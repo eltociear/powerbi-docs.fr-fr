@@ -2,19 +2,18 @@
 title: Distribuer des applications modèles dans votre organisation - Power BI
 description: Découvrez comment installer, personnaliser et distribuer des applications modèles dans votre organisation à l’aide de Power BI.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: dcb037fdf064611947719a57316f31d901e3b81d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195221"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871425"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installer et distribuer des applications modèles dans votre organisation - Power BI
 
@@ -45,7 +44,7 @@ Dans un navigateur, sélectionnez ce lien pour ouvrir AppSource filtré sur les 
 
 ### <a name="search-appsource-from-the-power-bi-service"></a>Rechercher dans AppSource à partir du service Power BI
 
-1. Dans le volet de navigation de gauche du service Power BI, sélectionnez **Applications** > **Obtenir des applications**.
+1. Dans le volet de navigation du service Power BI, sélectionnez **Applications** > **Obtenir des applications**.
 
     ![Obtenir des applications](media/service-template-apps-install-distribute/power-bi-get-apps-arrow.png)
 
@@ -57,7 +56,7 @@ Dans un navigateur, sélectionnez ce lien pour ouvrir AppSource filtré sur les 
 
 4. Dans la boîte de dialogue, sélectionnez **Installer**.
 
-    ![Installer l’application](media/service-template-apps-install-distribute/power-install-dialog.png) Si vous avez une licence Power BI Pro, l’application est installée avec l’espace de travail d’application associé. Vous personnalisez l’application dans cet espace de travail.
+    ![Installer l’application](media/service-template-apps-install-distribute/power-install-dialog.png) Si vous avez une licence Power BI Pro, l’application est installée avec l’espace de travail associé. Vous personnalisez l’application dans cet espace de travail.
 
     Au terme de l’installation, vous voyez une notification indiquant que la nouvelle application est prête.
 4. Sélectionnez **Accéder à l’application**.
@@ -69,9 +68,9 @@ Dans un navigateur, sélectionnez ce lien pour ouvrir AppSource filtré sur les 
     - **Connecter des données** : changez la source de données de l’exemple de données par votre propre source de données. Vous pouvez redéfinir les paramètres du jeu de données et les informations d’identification de la source de données. Consultez la section [Limitations connues](service-template-apps-tips.md#known-limitations) dans l’article « Conseils pour créer des applications modèles ». 
     - **Accéder à l’espace de travail** (option la plus avancée) : vous pouvez apporter toute modification autorisée par le concepteur de l’application.
 
-    Ignorez cette boîte de dialogue si vous souhaitez accéder à l’espace de travail associé directement par le biais de l’onglet **Espaces de travail** dans le volet de navigation de gauche.
+    Ignorez cette boîte de dialogue si vous souhaitez accéder à l’espace de travail associé directement par le biais de l’onglet **Espaces de travail** dans le volet de navigation.
     >[!NOTE]
-    >L’installation d’une application de modèle a installé à la fois une *application d’organisation* et un *espace de travail d’application*. En savoir plus sur [la distribution d’applications dans Power BI](service-create-distribute-apps.md).
+    >L’installation d’une application de modèle a installé à la fois une *application d’organisation* et un *espace de travail*. En savoir plus sur [la distribution d’applications dans Power BI](service-create-distribute-apps.md).
  
 6. Avant de partager l’application avec vos collègues, vous voudrez peut-être vous connecter à vos propres données. Vous pouvez également avoir besoin de modifier le rapport ou le tableau de bord en fonction des besoins de votre organisation. Vous pouvez aussi ajouter d’autres rapports ou tableaux de bord à ce stade.
 

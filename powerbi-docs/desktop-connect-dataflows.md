@@ -2,7 +2,6 @@
 title: Se connecter à des données créées par des dataflows Power BI dans Power BI Desktop (version bêta)
 description: Se connecter et utiliser facilement des dataflows dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 63c10a0507b5e484ac4c104a5a1e83f5dd411d9d
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: f1d782aa7409dce43d960956406e996cc7951a57
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523283"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876472"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Se connecter à des données créées par des dataflows Power BI dans Power BI Desktop (version bêta)
 Dans **Power BI Desktop**, vous pouvez vous connecter à des données créées par des **dataflows Power BI** comme toute autre source de données dans Power BI Desktop.
@@ -40,7 +39,7 @@ Vous pouvez améliorer les performances d’ingestion des données des flux de d
 
 La plupart des flux de données se trouvent dans le locataire du service Power BI. Toutefois, les utilisateurs de **Power BI Desktop** n’ont pas accès aux flux de données stockés dans un compte Azure Data Lake Storage Gen2, sauf s’ils sont propriétaires du flux de données ou explicitement autorisés à accéder au dossier CDM du flux de données. Prenons la situation suivante :
 
-1.  Anna crée un espace de travail d’application et le configure de façon à stocker les flux de données dans le Data Lake de l’organisation.
+1.  Anna crée un espace de travail et le configure de façon à stocker les dataflows dans le lac de données de l’organisation.
 2.  Ben, qui est également membre de l’espace de travail créé par Anna, veut utiliser Power BI Desktop et le connecteur de flux de données pour obtenir des données à partir du flux de données créé par Anna.
 3.  Ben reçoit une erreur, car il n’a pas été autorisé à accéder au dossier CDM du dataflow dans le lac de données.
 

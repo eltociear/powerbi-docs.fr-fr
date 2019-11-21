@@ -2,19 +2,18 @@
 title: Bien démarrer avec l’application mobile Power BI pour iOS
 description: Découvrez comment l’application mobile Microsoft Power BI pour iOS parvient à mettre Power BI dans votre poche, avec un accès mobile aux informations métier en local et dans le cloud.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: 2de1b866a237a0193c33c552078ca70bd5e632ce
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: dd43df2a01175657b39c1e3dcebe5ae6a9433e42
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67498989"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870178"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-ios-devices"></a>Bien démarrer avec l’application mobile Power BI sur les appareils iOS
 L’application Microsoft Power BI pour iOS sur iPhone, iPad ou iPod Touch permet de vivre l’expérience mobile de Power BI, Power BI Report Server et Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. Et tenez-vous au courant des données les plus à jour sur votre [Apple Watch](mobile-apple-watch.md).  
@@ -31,7 +30,7 @@ Ensuite, dans l’application mobile Power BI pour iOS, vous pouvez manipuler vo
 Découvrez les [nouveautés des applications mobiles Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="download-the-app"></a>Télécharger l’application
-[Téléchargez l’application iOS](http://go.microsoft.com/fwlink/?LinkId=522062 "Téléchargez l’application iPhone") à partir de l’Apple App Store sur votre iPhone, iPad ou iPod Touch.
+[Téléchargez l’application iOS](https://go.microsoft.com/fwlink/?LinkId=522062 "Télécharger l’application iOS") à partir de l’Apple App Store sur votre iPhone, iPad, or iPod touch.
 
 Vous pouvez exécuter l’application Power BI pour iOS sur n’importe quel appareil exécutant iOS 11 ou ultérieur. 
 
@@ -75,7 +74,7 @@ Vous pouvez afficher et utiliser les exemples de tableau de bord Power BI, mais
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Trouver votre contenu dans les applications mobiles Power BI
 Dans les applications mobiles Power BI, vos tableaux de bord et rapports sont stockés dans des emplacements différents en fonction de leur provenance. En savoir plus sur la [recherche de votre contenu dans les applications mobiles](mobile-apps-quickstart-view-dashboard-report.md). Par ailleurs, vous pouvez toujours effectuer une recherche dans tout votre contenu dans les applications mobiles Power BI. 
 
-![Volet de navigation gauche](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
+![Volet de navigation](./media/mobile-iphone-app-get-started/power-bi-iphone-left-nav.png)
 
 En savoir plus sur la [recherche de votre contenu dans les applications mobiles](mobile-apps-quickstart-view-dashboard-report.md).
 
@@ -84,7 +83,7 @@ Sur la page Favoris dans les applications mobiles, vous pouvez voir vos tableaux
 
 * Appuyez sur **Favoris**.
   
-   ![Favoris dans le volet de navigation gauche](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
+   ![Favoris dans le volet de navigation](./media/mobile-iphone-app-get-started/power-bi-iphone-favorites-nav.png)
   
    Vous pouvez voir tous vos favoris regroupés sur cette page :
   
@@ -109,7 +108,7 @@ En savoir plus sur la [configuration des applications mobiles Power BI avec Mic
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Qu’est-ce que Power BI ?](../../power-bi-overview.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 
 

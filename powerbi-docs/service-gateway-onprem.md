@@ -3,19 +3,18 @@ title: Passerelle de données locale
 description: Cet article présente une vue d’ensemble de la passerelle de données locale pour Power BI. Vous pouvez utiliser cette passerelle pour travailler avec les sources de données DirectQuery. Vous pouvez également utiliser cette passerelle pour actualiser les jeux de données cloud avec les données locales.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: 883d5c83019df293628d096f5834c9b5c6d425b6
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: b01a3ef5832541822aa9311df14289285f601b2b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730296"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872440"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Qu’est-ce qu’une passerelle de données locale ?
 
@@ -42,13 +41,13 @@ Il existe deux types de passerelles différents, chacun pour un scénario diffé
 L’utilisation d’une passerelle passe par quatre grandes étapes.
 
 1. [Télécharger et installer la passerelle](/data-integration/gateway/service-gateway-install) sur un ordinateur local.
-2. [Configurer](/data-integration/gateway/service-gateway-app) la passerelle en fonction de votre pare-feu et d’autres exigences réseau.
-3. [Ajouter des administrateurs de passerelle](/data-integration/gateway/service-gateway-manage) qui peuvent également gérer et administrer d’autres exigences réseau.
-4. [Résoudre les problèmes](service-gateway-onprem-tshoot.md) de la passerelle en cas d’erreur.
+1. [Configurer](/data-integration/gateway/service-gateway-app) la passerelle en fonction de votre pare-feu et d’autres exigences réseau.
+1. [Ajouter des administrateurs de passerelle](/data-integration/gateway/service-gateway-manage) qui peuvent également gérer et administrer d’autres exigences réseau.
+1. [Utilisez la passerelle](service-gateway-sql-tutorial.md) pour actualiser une source de données locale.
+1. [Résoudre les problèmes](service-gateway-onprem-tshoot.md) de la passerelle en cas d’erreur.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [Installer la passerelle de données locale](/data-integration/gateway/service-gateway-install)
 
-
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

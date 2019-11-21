@@ -2,7 +2,6 @@
 title: Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)
 description: Découvrez comment vous pouvez partager un jeu de données avec des utilisateurs dans toute l’organisation. Ils peuvent ensuite générer des rapports basés sur votre jeu de données dans leurs propres espaces de travail.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020771"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877198"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Présentation du partage de jeux de données entre plusieurs espaces de travail (préversion)
 
@@ -62,7 +61,7 @@ Les expériences et fonctionnalités spécifiques basées sur les capacités des
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-- En tant qu'éditeur d'applications, vous devez vous assurer que votre public a accès à des jeux de données en dehors de l'espace de travail de l'application. Sinon, les utilisateurs rencontreront des problèmes lors de l'interaction avec votre application : les rapports ne s'ouvriront pas sans accès aux jeux de données, et les vignettes du tableau de bord apparaîtront comme verrouillées. Par ailleurs, les utilisateurs ne pourront pas ouvrir l'application si le premier élément de la navigation est un rapport sans accès au jeu de données.
+- En tant qu’éditeur d’applications, vous devez vous assurer que votre public a accès à des jeux de données en dehors de l’espace de travail. Sinon, les utilisateurs rencontreront des problèmes lors de l'interaction avec votre application : les rapports ne s'ouvriront pas sans accès aux jeux de données, et les vignettes du tableau de bord apparaîtront comme verrouillées. Par ailleurs, les utilisateurs ne pourront pas ouvrir l'application si le premier élément de la navigation est un rapport sans accès au jeu de données.
 - La génération d’un rapport à partir d’un jeu de données dans un autre espace de travail nécessite la nouvelle expérience d’espace de travail aux deux extrémités : Le rapport ainsi que le jeu de données doivent se trouver dans une nouvelle expérience d’espace de travail.
 - Dans un espace de travail classique, l’expérience de découverte de jeux de données affiche uniquement les jeux de données dans cet espace de travail.
 - Par défaut, « Publier sur le web » ne fonctionne pas pour un rapport basé sur un jeu de données partagé.
@@ -73,4 +72,4 @@ Les expériences et fonctionnalités spécifiques basées sur les capacités des
 - [Promouvoir les jeux de données](service-datasets-promote.md)
 - [Certifier des jeux de données](service-datasets-certify.md)
 - [Régir l’utilisation des jeux de données dans des espaces de travail](service-datasets-admin-across-workspaces.md)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

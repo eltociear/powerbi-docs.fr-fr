@@ -2,7 +2,6 @@
 title: 'Exemple Analyse de la qualité des fournisseurs pour Power BI : Visite guidée'
 description: 'Exemple Analyse de la qualité des fournisseurs pour Power BI : Visite guidée'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621315"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858397"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de la qualité des fournisseurs pour Power BI : Visite guidée
 
@@ -59,11 +58,11 @@ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 
-Vous pouvez aussi télécharger l’exemple Analyse de la qualité des fournisseurs sous forme de [fichier .pbix](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), qui est conçu pour être utilisé avec Power BI Desktop.
+Vous pouvez aussi télécharger l’exemple Analyse de la qualité des fournisseurs sous forme de [fichier .pbix](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), qui est conçu pour être utilisé avec Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529779). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529779). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="downtime-caused-by-defective-materials"></a>Temps d’arrêt causés par des articles défectueux
 Analysons les temps d’arrêt causés par des articles défectueux et voyons quels fournisseurs en sont responsable.  
@@ -94,7 +93,7 @@ Analysons les temps d’arrêt causés par des articles défectueux et voyons qu
     ![Downtime (min) by Vendor](media/sample-supplier-quality/supplier5.png)  
 
    Dans ce treemap, nous constatons que les huit principaux fournisseurs sont les huit blocs situés à gauche du treemap. Nous pouvons aussi constater qu’ils représentent environ 50 % des temps d’arrêt en minutes.  
-3. Sélectionnez **Exemple Analyse de la qualité des fournisseurs** dans la barre de navigation supérieure pour revenir au tableau de bord.
+3. Sélectionnez **Supplier Quality Analysis Sample** (Exemple Analyse de la qualité des fournisseurs) dans le volet de navigation du haut pour revenir au tableau de bord.
 
 ### <a name="comparing-plants"></a>Comparaison au niveau des usines
 À présent, voyons quelle usine gère le mieux les articles défectueux et qui subit de ce fait le moins de temps d’arrêt.  
@@ -113,7 +112,7 @@ Analysons les temps d’arrêt causés par des articles défectueux et voyons qu
 3. Sélectionnez la bulle **Logistics** (Logistique) dans le graphique en bulles et observez les usines de Springfield et Naperville dans l’Illinois. Visiblement, l’usine de Naperville parvient beaucoup mieux à gérer les approvisionnements défectueux. Elle compte un grand nombre de rejets et peu de répercussions par rapport à l’usine de Springfield qui en connaît beaucoup.  
 
    ![Sélectionner Logistics](media/sample-supplier-quality/supplier8.png)  
-4. Sélectionnez **Exemple Analyse de la qualité des fournisseurs** dans la barre de navigation supérieure pour revenir au tableau de bord.
+4. Sélectionnez **Supplier Quality Analysis Sample** (Exemple Analyse de la qualité des fournisseurs) dans le volet de navigation du haut pour revenir au tableau de bord.
 
 ## <a name="which-material-type-is-best-managed"></a>Quel type d’article est le mieux géré ?
 Le type d’article le mieux géré est celui qui connaît le moins de temps d’arrêt ou qui ne subit aucune répercussion (« impact »), indépendamment du nombre de défauts.
@@ -138,7 +137,7 @@ Le type d’article le mieux géré est celui qui connaît le moins de temps d�
 
     ![Graphique Total Defect Qty by Month and Year](media/sample-supplier-quality/supplier11.png)  
 3. Y a-t-il une corrélation entre le nombre de défauts et les temps d’arrêt ? Posez des questions dans la zone Q&R pour le découvrir.  
-4. Sélectionnez **Exemple Analyse de la qualité des fournisseurs** dans la barre de navigation supérieure pour revenir au tableau de bord.  
+4. Sélectionnez **Supplier Quality Analysis Sample** (Exemple Analyse de la qualité des fournisseurs) dans le volet de navigation du haut pour revenir au tableau de bord.  
 5. Bien que nous sachions que les matières premières comptent le plus de défauts, dans la zone de question, tapez *show material types, year and total defect qty* (afficher types d’articles, année et nombre total de défauts).  
 
     Il y a eu beaucoup plus de défauts de matières premières en 2014 qu’en 2013.  

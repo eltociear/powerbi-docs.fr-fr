@@ -2,7 +2,6 @@
 title: Se déconnecter d’un pack de contenu d’organisation - Power BI
 description: Découvrez comment supprimer votre connexion à un pack de contenu d’organisation en supprimant le jeu de données associé dans Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d83a57b2b1f8e2ca0887f2432f2de43647900b81
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 3936ebfedb1e4e51fe93b948a49de0b9fb133c52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020644"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881289"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Supprimer votre connexion à un pack de contenu d’organisation Power BI
 
@@ -27,7 +26,7 @@ Un collaborateur créé un pack de contenu. Vous l’avez découvert dans AppSou
 
 Pour supprimer un pack de contenu, supprimez son jeu de données.  
 
-* Dans le volet de navigation de gauche, sélectionnez les points de suspension à droite du jeu de données, puis sélectionnez **Supprimer \> Oui**.  
+* Dans le volet de navigation, sélectionnez les points de suspension à droite du jeu de données, puis sélectionnez **Supprimer \> Oui**.  
   
   ![Supprimer le pack de contenu](media/service-organizational-content-pack-disconnect/power-bi-remove-organizational-content-pack-dataset.png)
 
@@ -37,5 +36,5 @@ La suppression du jeu de données supprime également tous les rapports et table
 * [Introduction aux packs de contenu d’organisation](service-organizational-content-pack-introduction.md) 
 * [Créer et distribuer une application dans Power BI](service-create-distribute-apps.md) 
 * [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)  
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

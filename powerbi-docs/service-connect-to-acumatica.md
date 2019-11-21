@@ -2,7 +2,6 @@
 title: Se connecter à Acumatica avec Power BI
 description: Acumatica pour Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d2ee7a338f34e4c29fdbefae6518bede9e94badb
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 09e55aef3a1167143694c8e26a342cb1b8f0875c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70186145"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873201"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Se connecter à Acumatica avec Power BI
 Le pack de contenu Acumatica pour Power BI vous permet d’obtenir rapidement une vue d’ensemble de vos données d’opportunité. Power BI récupère vos données, y compris celles relatives aux opportunités, aux comptes et aux clients, puis génère un tableau de bord par défaut et des rapports associés à partir de ces données.
@@ -28,10 +27,10 @@ Connectez-vous au [pack de contenu Acumatica](https://app.powerbi.com/getdata/se
 >Ce pack de contenu nécessite Acumatica version 5.2 ou ultérieure.
 
 ## <a name="how-to-connect"></a>Comment se connecter
-1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.
+1. Sélectionnez **Obtenir des données** en bas du volet de navigation.
    
    ![](media/service-connect-to-acumatica/getdata3.png)
-2. Dans la zone **Services** , sélectionnez **Obtenir**.
+2. Dans la zone **Services**, sélectionnez **Obtenir**.
    
    ![](media/service-connect-to-acumatica/getdata2.png)
 3. Sélectionnez **Acumatica** \> **Obtenir**.
@@ -47,7 +46,7 @@ Connectez-vous au [pack de contenu Acumatica](https://app.powerbi.com/getdata/se
 5. Pour la méthode d’authentification, sélectionnez **De base**. Entrez vos nom d’utilisateur et mot de passe de votre compte Acumatica, puis cliquez sur **Se connecter**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. Une fois les données importées dans Power BI, vous verrez un nouveau tableau de bord, un nouveau rapport et un nouveau jeu de données dans le volet de navigation gauche. Les nouveaux éléments sont signalés par un astérisque jaune \* qui disparaît quand ils sont sélectionnés. Si vous sélectionnez le tableau de bord, sa disposition est semblable à celle présentée ci -dessous :
+6. Une fois les données importées dans Power BI, vous voyez un nouveau tableau de bord, un nouveau rapport et un nouveau jeu de données dans le volet de navigation. Les nouveaux éléments sont signalés par un astérisque jaune \* qui disparaît quand ils sont sélectionnés. Si vous sélectionnez le tableau de bord, sa disposition est semblable à celle présentée ci -dessous :
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 

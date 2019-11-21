@@ -2,7 +2,6 @@
 title: 'Packs de contenu d’organisation : Gérer et mettre à jour'
 description: Consultez les informations relatives à la gestion, à la mise à jour et à la suppression des packs de contenu d’organisation dans Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86b7a5e93183c06d6cac1445cb1702edde5d4bc9
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 975c219a98f3d03f59df4d1c2a0551718bf213f0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020595"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881272"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Gérer, mettre à jour et supprimer des packs de contenu d’organisation
 > [!NOTE]
@@ -64,21 +63,21 @@ Les créateurs de packs de contenu peuvent désormais développer ou restreindre
    
    Pour tout collègue ne faisant pas partie du nouvel alias :
    
-   * Pour les membres du groupe qui n’ont pas personnalisé le pack de contenu, le tableau de bord et les rapports associés à ce pack de contenu ne sont plus disponibles et le pack de contenu n’apparaît pas dans le volet de navigation.
+   * Pour les membres du groupe qui n’ont pas personnalisé le pack de contenu, le tableau de bord et les rapports associés à ce pack de contenu ne sont plus disponibles, et le pack de contenu n’apparaît pas dans le volet de navigation.
    * Pour les membres du groupe qui ont personnalisé le pack de contenu, à la prochaine ouverture du tableau de bord personnalisé, toutes les vignettes du pack de contenu d’origine auront disparu.  Toutefois, les vignettes épinglées provenant d’autres rapports seront toujours affichées. Les rapports et le jeu de données associés au pack de contenu d’origine ne sont plus disponibles et le pack de contenu n’apparaît pas dans le volet de navigation.   
 
 ## <a name="refresh-an-organizational-content-pack"></a>Actualiser un pack de contenu d’organisation
 En tant que créateur de packs de contenu, vous pouvez [planifier l’actualisation des jeux de données](refresh-data.md).  Quand vous créez et chargez le pack de contenu, la planification d’actualisation est chargée avec les jeux de données. Si vous modifiez la planification de l’actualisation, vous devez republier le pack de contenu (voir ci-dessus).
 
 ## <a name="delete-an-organizational-content-pack-from-appsource"></a>Supprimer un pack de contenu d’organisation d’AppSource
-Vous pouvez uniquement supprimer un pack de contenu à partir d’AppSource si vous l’avez créé. Si vous avez créé un pack de contenu d’organisation dans un espace de travail d’application et que vous décidez ensuite de supprimer cet espace de travail, veillez à supprimer d’abord le pack de contenu. Si vous supprimez l’espace de travail sans supprimer d’abord le pack de contenu, vous perdez tout accès à ces packs de contenu et vous devrez contacter le support technique de Microsoft pour obtenir de l’aide. 
+Vous pouvez uniquement supprimer un pack de contenu à partir d’AppSource si vous l’avez créé. Si vous avez créé un pack de contenu d’organisation dans un espace de travail et si vous décidez ensuite de supprimer cet espace de travail, veillez à supprimer d’abord le pack de contenu. Si vous supprimez l’espace de travail sans supprimer d’abord le pack de contenu, vous perdez tout accès à ces packs de contenu et vous devrez contacter le support technique de Microsoft pour obtenir de l’aide. 
 
 > [!TIP]
 > Vous pouvez [supprimer votre connexion à un pack de contenu](service-organizational-content-pack-disconnect.md) que vous n’avez pas créé. Cela n’a pas pour effet de supprimer le pack de contenu d’AppSource.
 > 
 > 
 
-1. Pour supprimer un pack de contenu d’AppSource, accédez à l’espace de travail d’application où vous avez créé le pack de contenu, sélectionnez l’icône représentant une roue dentée ![](media/service-organizational-content-pack-manage-update-delete/cog.png), puis **Afficher les packs de contenu**.
+1. Pour supprimer un pack de contenu d’AppSource, accédez à l’espace de travail où vous avez créé le pack de contenu, sélectionnez l’icône représentant une roue dentée ![](media/service-organizational-content-pack-manage-update-delete/cog.png), puis choisissez **Afficher les packs de contenu**.
 2. Sélectionnez **Supprimer \> Supprimer**. 
    
    * Pour les membres du groupe qui n’ont pas personnalisé le pack de contenu, le tableau de bord et les rapports associés à ce pack de contenu sont automatiquement supprimés. Ils ne sont plus disponibles et le pack de contenu n’apparaît pas dans le volet de navigation.
@@ -87,5 +86,5 @@ Vous pouvez uniquement supprimer un pack de contenu à partir d’AppSource si v
 ## <a name="next-steps"></a>Étapes suivantes
 * [Introduction aux packs de contenu d’organisation](service-organizational-content-pack-introduction.md)
 * [Créer et distribuer une application dans Power BI](service-create-distribute-apps.md) 
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

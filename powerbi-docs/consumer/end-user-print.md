@@ -2,7 +2,6 @@
 title: Imprimer à partir du service Power BI
 description: Impression d’un tableau de bord, d’une vignette ou d’une page de rapport à partir du service Power BI.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4e211677026d66b89631063cf07e38ce1e46ee10
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: ec633b5e41936363663736807979dc08f50820b1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100190"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862762"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Impression à partir du service Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Vous pouvez imprimer un tableau de bord entier, une vignette de tableau de bord, une page de rapport ou un visuel de rapport à partir du service Power BI. Les rapports ne peuvent être imprimés qu’une page à la fois. Vous ne pouvez peut pas imprimer l’intégralité du rapport en une fois.
 
    > [!NOTE]
@@ -37,7 +39,7 @@ Vous pouvez imprimer un tableau de bord entier, une vignette de tableau de bord,
 
 ## <a name="print-a-dashboard-tile"></a>Imprimez une vignette de tableau de bord
 1. Ouvrez le tableau de bord en [mode Plein écran](end-user-focus.md) en sélectionnant l’icône Plein écran ![icône Plein écran](./media/end-user-print/power-bi-full-screen-icon.png) dans la barre de menus supérieure.
-3. Pour [ouvrir la vignette en mode Focus](end-user-focus.md), passez le pointeur sur le tableau de bord pour afficher les points de suspension (...), sélectionnez les points de suspension pour afficher le menu, puis choisissez l’option **Ouvrir en mode Focus** ou l’icône Focus ![icône Focus](./media/end-user-print/power-bi-focus-icon.png).
+3. Pour [ouvrir la vignette en mode Focus](end-user-focus.md), passez le pointeur sur le tableau de bord pour afficher **Plus d’options** (...), sélectionnez ce bouton, puis choisissez l’option **Ouvrir en mode Focus** ou l’icône Focus ![icône Focus](./media/end-user-print/power-bi-focus-icon.png).
    
     ![menu des points de suspension](./media/end-user-print/power-bi-menu-options.png)
 4. Pointez sur la vignette pour afficher le menu Options
@@ -79,5 +81,5 @@ Vous pouvez imprimer les rapport une seule page à la fois.
 ## <a name="next-steps"></a>Étapes suivantes
 [Partager des tableaux de bord et des rapports avec des collègues et d’autres utilisateurs](../service-share-dashboards.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

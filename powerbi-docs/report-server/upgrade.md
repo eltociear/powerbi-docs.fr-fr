@@ -3,19 +3,18 @@ title: Mettre à niveau Power BI Report Server
 description: Découvrez comment mettre à niveau Power BI Report Server.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 52863ea4bd666547a9c63b3add1d2d9c0626adc7
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eac019bc31396359b7520e057f2384adce386a96
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839688"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873960"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Mettre à niveau Power BI Report Server
 
@@ -63,7 +62,7 @@ La mise à niveau de Power BI Report Server est très simple. Quelques étape
 
 2. Sélectionnez **Mettre à niveau Power BI Report Server**.
 
-    ![Mettre à niveau Power BI Report Server](media/upgrade/reportserver-upgrade1.png "Mettre à niveau Power BI Report Server")
+    ![Mettre à niveau Power BI Report Server](media/upgrade/reportserver-upgrade1.png "Mettre à niveau Power BI Report Server")
 
 3. Lisez et acceptez les conditions générales du contrat de licence, puis sélectionnez **Mettre à niveau**.
 

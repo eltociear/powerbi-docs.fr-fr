@@ -2,7 +2,6 @@
 title: Se connecter à Office365Mon avec Power BI
 description: Office365Mon pour Power BI
 author: teddybercovitz
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 8/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5d31eccd52164bb4d1ff37532d89dc7e147693d3
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 64e8365a6d4e0c01911de9e69998af4d58d59202
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060832"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854722"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Se connecter à Office365Mon avec Power BI
 Grâce à Power BI et à l’application modèle Office365Mon, vous pouvez facilement analyser les pannes d’Office 365 et les données de performances d’intégrité. Power BI récupère vos données, notamment celles des pannes et des sondes d’intégrité, puis établit un tableau de bord prêt à l’emploi et des rapports basés sur ces données.
@@ -26,10 +25,10 @@ Connectez-vous à l’[application modèle Office365Mon](https://app.powerbi.com
 >Vous devez disposer d’un compte d’administrateur Office365Mon pour vous connecter à l’application modèle Power BI et la charger.
 
 ## <a name="how-to-connect"></a>Comment se connecter
-1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.
+1. Sélectionnez **Obtenir des données** dans le bas du volet de navigation.
    
    ![](media/service-connect-to-office365mon/pbi_getdata.png)
-2. Dans la zone **Services** , sélectionnez **Obtenir**.
+2. Dans la zone **Services**, sélectionnez **Obtenir**.
    
    ![](media/service-connect-to-office365mon/pbi_getservices.png) 
 3. Sélectionnez **Office365Mon** \> **Obtenir**.
@@ -42,7 +41,7 @@ Connectez-vous à l’[application modèle Office365Mon](https://app.powerbi.com
    ![](media/service-connect-to-office365mon/creds.png)
    
    ![](media/service-connect-to-office365mon/creds2.png)
-5. Une fois les données importées dans Power BI, vous verrez un nouveau tableau de bord, un nouveau rapport et un nouveau jeu de données dans le volet de navigation gauche. Les nouveaux éléments sont signalés par un astérisque jaune (\*). Sélectionnez l’entrée Office365Mon.
+5. Une fois les données importées dans Power BI, vous voyez un nouveau tableau de bord, un nouveau rapport et un nouveau jeu de données dans le volet de navigation. Les nouveaux éléments sont signalés par un astérisque jaune (\*). Sélectionnez l’entrée Office365Mon.
    
    ![](media/service-connect-to-office365mon/dashboard4.png)
 

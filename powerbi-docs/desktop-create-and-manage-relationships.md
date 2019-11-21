@@ -2,7 +2,6 @@
 title: Créer et gérer des relations dans Power BI Desktop
 description: Créer et gérer des relations dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f2102ad654a056832f7890dc506acc99eb5ef26f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61312493"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869131"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Créer et gérer des relations dans Power BI Desktop
 Quand vous importez plusieurs tables, vous êtes souvent amené à effectuer des analyses impliquant les données de ces tables. Les relations entre ces tables sont nécessaires pour obtenir des résultats précis et afficher les informations correctes dans vos rapports. Power BI Desktop facilite la création de ces relations. Dans la plupart des cas, vous n’avez rien à faire ; la fonctionnalité Détection automatique se charge de tout. Toutefois, dans certains cas, vous pouvez être amené à créer des relations vous-même ou à apporter des modifications à une relation. Dans les deux cas, il est important de comprendre le fonctionnement des relations dans Power BI Desktop et comment les créer et les modifier.
@@ -64,9 +63,9 @@ Quand vous créez ou modifiez une relation, vous pouvez configurer des options s
 Pour plus d’informations sur la modification de la cardinalité, consultez la section Présentation des options supplémentaires plus loin dans cet article.
 
 ## <a name="cross-filter-direction"></a>Direction du filtrage croisé
-**Les deux** -La direction par défaut, la plus courante, qui signifie que pendant les opérations de filtrage, les deux tables sont traitées comme s’il s’agissait d’une table unique. **Les deux** fonctionnent bien avec une table unique entourée de plusieurs tables de choix. Une table de valeurs de ventes réelles avec une table de choix pour le service constitue un bon exemple. On parle souvent de configuration de schéma en étoile (une table centrale avec plusieurs tables de choix.) Toutefois, si vous avez plusieurs tables qui possèdent aussi des tables de choix (certaines en commun), vous ne devez pas utiliser le paramètre À double sens. Pour continuer avec l’exemple précédent, vous avez également une table de ventes budgétées qui enregistre le budget cible pour chaque service. Et la table des services est connectée à la fois à la table des ventes et à la table du budget. Évitez le paramètre À double sens pour ce type de configuration.
+**À double sens** : à des fins de filtrage, les deux tables sont traitées comme s’il s’agissait d’une table unique. **Les deux** fonctionnent bien avec une table unique entourée de plusieurs tables de choix. Une table de valeurs de ventes réelles avec une table de choix pour le service constitue un bon exemple. On parle souvent de configuration de schéma en étoile (une table centrale avec plusieurs tables de choix.) Toutefois, si vous avez plusieurs tables qui possèdent aussi des tables de choix (certaines en commun), vous ne devez pas utiliser le paramètre À double sens. Pour continuer avec l’exemple précédent, vous avez également une table de ventes budgétées qui enregistre le budget cible pour chaque service. Et la table des services est connectée à la fois à la table des ventes et à la table du budget. Évitez le paramètre À double sens pour ce type de configuration.
 
-**À sens unique** : le filtrage dans les tables connectées agit sur la table dans laquelle les valeurs sont agrégées. Si vous importez un modèle de données Power Pivot dans Excel 2013 ou version antérieure, toutes les relations ont une seule direction. 
+**À sens unique** : il s’agit de la direction par défaut, la plus courante, qui signifie que les choix de filtrage dans les tables connectées agissent sur la table dans laquelle les valeurs sont agrégées. Si vous importez un modèle de données Power Pivot dans Excel 2013 ou version antérieure, toutes les relations ont une seule direction. 
 
 Pour plus d’informations sur le changement de direction du filtrage croisé, consultez la section Présentation des options supplémentaires plus loin dans cet article.
 

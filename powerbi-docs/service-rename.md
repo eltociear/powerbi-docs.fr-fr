@@ -2,7 +2,6 @@
 title: Renommer des tableaux de bord, rapports, espaces de travail, pages de rapport, jeu de données
 description: Renommez pratiquement tout élément dans le service Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 905ef263084cf531e6b38fb4640286e4d78697ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: de842b95c8f6e023a5207c07abb2525c5fe45878
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273593"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871718"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Renommer pratiquement tout élément dans le service Power BI
 Cet article explique comment renommer un tableau de bord, un rapport, une page de rapport, un classeur, un jeu de données, une application et un espace de travail dans le service Power BI.
@@ -28,9 +27,9 @@ Cet article explique comment renommer un tableau de bord, un rapport, une page d
 | Rapport dans un espace de travail |Oui |Non |
 | Classeur dans un espace de travail |Oui |Non |
 | Jeu de données dans un espace de travail |Oui |Non |
-| Espace de travail d’application |Oui, si vous êtes le propriétaire ou disposez d’autorisations d’administrateur |Non |
-| Applications publiées |Pas dans l’écran de l’application, mais vous pouvez modifier le nom de l’application dans l’espace de travail de l’application, puis republier celle-ci sous le nouveau nom si vous disposez d’autorisations d’administrateur |Non |
-| Contenu d’application (tableau de bord, rapport, classeur, jeu de données) |Pas dans l’écran de l’application, mais vous pouvez modifier le contenu de l’application dans l’espace de travail de l’application, puis republier celle-ci sous le nouveau nom si vous disposez d’autorisations d’administrateur |Non |
+| Espace de travail |Oui, si vous êtes le propriétaire ou disposez d’autorisations d’administrateur |Non |
+| Applications publiées |Pas dans l’écran de l’application, mais vous pouvez renommer l’application dans l’espace de travail, puis republier l’application sous son nouveau nom si vous disposez d’autorisations d’administrateur |Non |
+| Contenu d’application (tableau de bord, rapport, classeur, jeu de données) |Pas dans l’écran de l’application, mais vous pouvez renommer le contenu de l’application dans l’espace de travail, puis republier le contenu sous son nouveau nom si vous disposez d’autorisations d’administrateur |Non |
 | Contenu de **Partagé avec moi** |Non |Non |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Renommer un tableau de bord, un rapport ou un classeur
@@ -45,7 +44,7 @@ Cet article explique comment renommer un tableau de bord, un rapport, une page d
 1. Démarrer dans un espace de travail, puis sélectionnez l’onglet **Jeux de données**.
    
    ![Onglet Jeux de données de l’espace de travail](media/service-rename/power-bi-ellipses.png)
-2. Pointez sur l’élément à renommer, sélectionnez les points de suspension (…), puis choisissez **Renommer**.  
+2. Pointez sur l’élément à renommer, sélectionnez **Autres options** (...), puis choisissez **Renommer**.  
    
       ![sélectionner Renommer](media/service-rename/power-bi-rename-datasets.png)
    
@@ -57,11 +56,11 @@ Cet article explique comment renommer un tableau de bord, un rapport, une page d
    
      ![volet Renommer](media/service-rename/power-bi-rename.png)
 
-## <a name="rename-an-app-workspace"></a>Renommer un espace de travail d’application
-Toute personne disposant d’autorisations d’administrateur peut renommer un espace de travail d’application.
+## <a name="rename-a-workspace"></a>Renommer un espace de travail
+Toute personne disposant d’autorisations d’administrateur peut renommer un espace de travail.
 
 1. Démarrez dans l’espace de travail que vous souhaitez renommer.
-2. Dans l’angle supérieur droit, sélectionnez les points de suspension (…), puis choisissez **Modifier l’espace de travail**. Si vous ne voyez pas cette option, vous n’avez pas l’autorisation de renommer cet espace de travail. 
+2. En haut à droite, sélectionnez **Autres options** (...), puis choisissez **Modifier l’espace de travail**. Si vous ne voyez pas cette option, vous n’avez pas l’autorisation de renommer cet espace de travail. 
    
     ![sélectionner Modifier l’espace de travail](media/service-rename/power-bi-edit-workspace.png)
 3. Tapez un nouveau nom d’espace de travail, puis sélectionnez **Enregistrer**.
@@ -85,7 +84,7 @@ Vous n’aimez pas le nom d’une page dans votre rapport Power BI ?  Un simple
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 * Si l’élément à renommer a été partagé avec vous ou fait partie d’un pack de contenu, vous ne voyez pas l’icône Engrenage et n’avez pas accès aux paramètres.
-* Sous l’onglet **Jeux de données**, si vous ne voyez pas les points de suspension (…), développez la fenêtre de votre navigateur.
+* Sous l’onglet **Jeux de données**, si vous ne voyez pas **Autres options (...)** , développez la fenêtre de votre navigateur.
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

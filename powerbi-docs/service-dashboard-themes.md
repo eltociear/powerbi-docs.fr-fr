@@ -2,7 +2,6 @@
 title: Utiliser des thèmes de tableau de bord dans le service Power BI
 description: Découvrez comment utiliser une palette de couleurs personnalisée et comment l’appliquer à tout un tableau de bord dans le service Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8e444c78c1f6f9f3f0be1375f96f7381489cc069
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e2793fe56df462fd5f1bd1c266b75ad14fd9b375
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143224"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877448"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Utiliser des thèmes de tableau de bord dans le service Power BI
 Les **thèmes de tableau de bord** vous permettent d’appliquer un thème de couleur à l’intégralité d’un tableau de bord. Il peut s’agir des couleurs de votre organisation, de teintes liées à la saison ou de tout autre thème de votre choix. Quand vous appliquez un **thème de tableau de bord**, tous les visuels du tableau de bord utilisent les couleurs du thème sélectionné (à quelques exceptions près, décrites plus loin dans cet article).
@@ -30,7 +29,7 @@ Le changement des couleurs des visuels du rapport sur le tableau de bord n’aff
 
 
 ## <a name="how-dashboard-themes-work"></a>Fonctionnement des thèmes de tableau de bord
-Pour commencer, ouvrez un tableau de bord que vous avez créé (ou que vous avez l’autorisation de modifier) et que vous voulez personnaliser. Sélectionnez les points de suspension (...), puis choisissez **Thème du tableau de bord**. 
+Pour commencer, ouvrez un tableau de bord que vous avez créé (ou que vous avez l’autorisation de modifier) et que vous voulez personnaliser. Sélectionnez **Plus d’options** (...) et choisissez **Thème du tableau de bord**. 
 
 ![Option Thème du tableau de bord](media/service-dashboard-themes/power-bi-dashboard-theme.png)
 

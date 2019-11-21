@@ -3,19 +3,18 @@ title: Configurer et gérer les capacités dans Power BI Premium
 description: Découvrez comment gérer Power BI Premium et permettre à l’ensemble de votre organisation d’accéder au contenu.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: e9214fbb78b501b49e8c2115423ec1c6f55e65d7
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 04f5b1f639b7abdbbe789a23e5d7a54790ad50a5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175644"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857102"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Configurer et gérer les capacités dans Power BI Premium
 
@@ -98,7 +97,7 @@ Les administrateurs Power BI et les administrateurs généraux Office 365 peuve
 
 ### <a name="manage-user-permissions"></a>Gérer les autorisations de l’utilisateur
 
-Vous pouvez désigner des administrateurs de capacité supplémentaires et des utilisateurs titulaires d’autorisations d’*affectation de capacité*. Les utilisateurs disposant d’autorisations d’affectation peuvent affecter un espace de travail d’application à une capacité s’ils sont administrateur de cet espace de travail. Ils peuvent également affecter leur espace de travail personnel (*Mon espace de travail*) à la capacité. Les utilisateurs disposant d’autorisations d’affectation n’ont pas accès au portail d’administration.
+Vous pouvez désigner des administrateurs de capacité supplémentaires et des utilisateurs titulaires d’autorisations d’*affectation de capacité*. Les utilisateurs qui ont des autorisations d’affectation peuvent affecter un espace de travail à une capacité s’ils sont administrateurs de cet espace de travail. Ils peuvent également affecter leur espace de travail personnel (*Mon espace de travail*) à la capacité. Les utilisateurs disposant d’autorisations d’affectation n’ont pas accès au portail d’administration.
 
 > [!NOTE]
 > Pour Power BI Embedded, les administrateurs de la capacité sont définis dans le portail Microsoft Azure.
@@ -109,7 +108,7 @@ Sous **Autorisations de l’utilisateur**, développez **Utilisateurs avec autor
 
 ## <a name="assign-a-workspace-to-a-capacity"></a>Affecter un espace de travail à une capacité
 
-Il existe deux façons d’affecter un espace de travail à une capacité : dans le portail d’administration et à partir d’un espace de travail d’application.
+Il existe deux façons d’affecter un espace de travail à une capacité : dans le portail d’administration et à partir d’un espace de travail.
 
 ### <a name="assign-from-the-admin-portal"></a>Affecter à partir du portail d’administration
 
@@ -127,22 +126,22 @@ Les administrateurs de capacité, ainsi que les administrateurs Power BI et les 
    | --- | --- |
    | **Espaces de travail par utilisateurs** | Lorsque vous affectez des espaces de travail par utilisateur ou par groupe, tous les espaces de travail appartenant à ces utilisateurs, y compris leurs espaces de travail personnels, sont affectés à la capacité Premium. Ces utilisateurs sont automatiquement autorisés à assigner leurs espaces de travail.<br>Cela inclut les espaces de travail déjà affectés à une autre capacité. |
    | **Espaces de travail spécifiques** | Entrez le nom d’un espace de travail spécifique à affecter à la capacité sélectionnée. |
-   | **Les espaces de travail de toute l’organisation** | L’affectation des espaces de travail de toute l’organisation à une capacité Premium a pour effet d’affecter la totalité des espaces de travail d’application ainsi que des espaces Mon espace de travail dont dispose votre organisation à cette capacité Premium. Et elle a également pour effet d’autoriser tous les utilisateurs présents et futurs à réaffecter des espaces de travail spécifiques à cette capacité. |
+   | **Les espaces de travail de toute l’organisation** | L’affectation des espaces de travail de toute l’organisation à une capacité Premium a pour effet d’affecter la totalité des espaces de travail ainsi que des espaces Mon espace de travail dont dispose votre organisation à cette capacité Premium. Et elle a également pour effet d’autoriser tous les utilisateurs présents et futurs à réaffecter des espaces de travail spécifiques à cette capacité. |
    | | |
 
 1. Sélectionnez **Appliquer**.
 
-### <a name="assign-from-app-workspace-settings"></a>Affecter à partir des paramètres d’espace de travail d’application
+### <a name="assign-from-workspace-settings"></a>Affecter à partir des paramètres d’espace de travail
 
-Vous pouvez également affecter un espace de travail d’application à une capacité Premium à partir des paramètres de cet espace de travail. Pour pouvoir déplacer un espace de travail vers une capacité, vous devez disposer d’autorisations d’administration sur cet espace de travail, ainsi que d’autorisations d’affectation de capacité sur cette capacité. Notez que les administrateurs d’un espace de travail peuvent toujours supprimer celui-ci d’une capacité Premium.
+Vous pouvez également affecter un espace de travail à une capacité Premium à partir des paramètres de cet espace de travail. Pour pouvoir déplacer un espace de travail vers une capacité, vous devez disposer d’autorisations d’administration sur cet espace de travail, ainsi que d’autorisations d’affectation de capacité sur cette capacité. Notez que les administrateurs d’un espace de travail peuvent toujours supprimer celui-ci d’une capacité Premium.
 
-1. Modifiez un espace de travail d’application en sélectionnant les points de suspension **(. . .)** , puis **Modifier l’espace de travail**.
+1. Modifiez un espace de travail en sélectionnant les points de suspension **(...)** , puis **Modifier l’espace de travail**.
 
     ![Modifier l’espace de travail à partir du menu contextuel (points de suspension...)](media/service-admin-premium-manage/edit-app-workspace.png)
 
 1. Sous **Modifier l’espace de travail**, développez **Avancé**.
 
-1. Sélectionnez la capacité à laquelle vous souhaitez assigner cet espace de travail d’application.
+1. Sélectionnez la capacité à laquelle vous souhaitez affecter cet espace de travail.
 
     ![Liste déroulante de sélection de la capacité](media/service-admin-premium-manage/app-workspace-advanced.png)
 
@@ -166,4 +165,4 @@ Pour plus d’informations, consultez [Installer Power BI Report Server](report-
 
 [Gérer les capacités Premium](service-premium-capacity-manage.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Utilisation de SAP BW Connector dans Power BI Desktop
 description: Utilisation de SAP BW Connector dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: af227d2bcbbba2a27804ec74f14003f54aa89dde
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f55245fc037f48622bb636e961f59c796f267646
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514670"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879777"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Utilisation de SAP BW Connector dans Power BI Desktop
 Avec Power BI Desktop, vous pouvez accéder aux données **SAP BusinessWarehouse (BW)** .
@@ -236,10 +235,11 @@ Le tableau suivant détaille la prise en charge actuelle de SAP BW.
 |Power BI Gateway     |Importer      | Identique à Power BI Desktop |         |   |   |
 |Power BI Gateway     |DirectQuery | Utilisateur / mot de passe        | Serveur d’applications | N/A  | Oui  |
 |Power BI Gateway     |DirectQuery | Windows par le biais de l’emprunt d’identité (utilisateur fixe, pas d’authentification SSO) | Serveur d’applications | sapcrypto + gsskrb5/gx64krb5  | Oui  |
-|Power BI Gateway     |DirectQuery | Utiliser SSO via Kerberos pour l’option des requêtes DirectQuery | Serveur d’applications | *uniquement avec* gsskrb5/gx64krb5   | Oui  |
+|Power BI Gateway     |DirectQuery | Utiliser SSO via Kerberos pour l’option des requêtes DirectQuery | Serveur d’applications | sapcrypto + gsskrb5/gx64krb5   | Oui  |
 |Power BI Gateway     |DirectQuery | Utilisateur / mot de passe        | Serveur de messages | N/A  | Oui  |
 |Power BI Gateway     |DirectQuery | Windows par le biais de l’emprunt d’identité (utilisateur fixe, pas d’authentification SSO) | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Oui  |
-|Power BI Gateway     |DirectQuery | Utiliser SSO via Kerberos pour l’option des requêtes DirectQuery | Serveur de messages | sapcrypto + gsskrb5/gx64krb5  | Non  |
+|Power BI Gateway     |DirectQuery | Utiliser SSO via Kerberos pour l’option des requêtes DirectQuery | Serveur de messages | gsskrb5/gx64krb5  | Non  |
+|Power BI Gateway     |DirectQuery | Utiliser SSO via Kerberos pour l’option des requêtes DirectQuery | Serveur de messages | sapcrypto  | Oui  |
 
 
 

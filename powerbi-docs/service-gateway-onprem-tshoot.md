@@ -3,25 +3,24 @@ title: Résoudre les problèmes liés aux passerelles - Power BI
 description: Cet article présente des méthodes permettant de résoudre les problèmes rencontrés avec la passerelle de données locale et Power BI. Il fournit des solutions de contournement aux problèmes connus, ainsi que des outils d’aide.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfb0546771331e13f3703de0afdbcad6c3219f9c
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b420c827df3c18796d0d46514f81170f202eafbd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543822"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881579"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Résoudre les problèmes liés aux passerelles - Power BI
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Cet article traite de certains problèmes courants rencontrés lors de l’utilisation de la passerelle de données locale avec Power BI. Si vous rencontrez un problème non répertorié ici, vous pouvez utiliser le site de la [Communauté Power BI](http://community.powerbi.com). Vous pouvez également créer un [ticket de support](http://powerbi.microsoft.com/support).
+Cet article traite de certains problèmes courants rencontrés lors de l’utilisation de la passerelle de données locale avec Power BI. Si vous rencontrez un problème non répertorié ici, vous pouvez utiliser le site de la [Communauté Power BI](https://community.powerbi.com). Vous pouvez également créer un [ticket de support](https://powerbi.microsoft.com/support).
 
 ## <a name="configuration"></a>Configuration
 
@@ -227,7 +226,7 @@ Vous recevez le message d’erreur « -10709 Échec de la connexion » si votr
 
 Lorsque vous utilisez la passerelle pour une actualisation planifiée, l’**Historique des actualisations** peut vous aider à identifier les erreurs qui se sont produites. Il peut également contenir des données utiles si vous avez besoin de créer une demande de support. Vous pouvez visualiser les actualisations planifiées et les actualisations à la demande. Les étapes suivantes montrent comment accéder à l’historique des actualisations.
 
-1. Dans le volet de navigation Power de BI, dans **Jeux de données**, sélectionnez un jeu de données. Ouvrez le menu, puis sélectionnez **Planifier l’actualisation**.
+1. Dans le volet de navigation de Power BI, dans **Jeux de données**, sélectionnez un jeu de données. Ouvrez le menu, puis sélectionnez **Planifier l’actualisation**.
 
     ![Comment sélectionner Planifier l’actualisation](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
@@ -241,7 +240,7 @@ Pour plus d’informations sur les scénarios de résolution de problèmes d’a
 
 ## <a name="fiddler-trace"></a>Trace Fiddler
 
-[Fiddler](http://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP. Vous pouvez voir les allers et retours au niveau du service Power BI à partir de l’ordinateur client. Cette liste de trafic peut indiquer des erreurs et des informations connexes.
+[Fiddler](https://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP. Vous pouvez voir les allers et retours au niveau du service Power BI à partir de l’ordinateur client. Cette liste de trafic peut indiquer des erreurs et des informations connexes.
 
 ![Utilisation de la trace Fiddler](media/service-gateway-onprem-tshoot/fiddler.png)
 
@@ -254,4 +253,4 @@ Pour plus d’informations sur les scénarios de résolution de problèmes d’a
 * [Gérer votre source de données - SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Gérer votre source de données – Importation/actualisation planifiée](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
-D’autres questions ? Essayez la [communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? Essayez la [communauté Power BI](https://community.powerbi.com/).

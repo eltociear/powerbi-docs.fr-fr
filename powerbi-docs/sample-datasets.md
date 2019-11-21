@@ -2,7 +2,6 @@
 title: Visite guidée des exemples disponibles avec Power BI
 description: Exemples de packs de contenu, fichiers PBIX et jeux de données Excel pour Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 49c16e083b2119e94f23a78b10ea014efcd70c3c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d5fcc6866d564367d2a29dc00493a959409ea2ed
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721479"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858988"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Quels exemples de données pouvez-vous utiliser avec Power BI ?
 Vous n’avez pas de données sous la main pour essayer Power BI ?  Ou peut-être que vous disposez déjà d’un jeu de données, mais comme vous ne savez pas encore comment fonctionne Power BI, vous avez peur d’endommager votre jeu de données ?
@@ -63,7 +62,7 @@ Cet exemple de secteur d’activité se focalise sur la stratégie de recrutemen
 
 Dans cet exemple, nous analysons les coûts prévus par rapport aux coûts réels du service informatique d’une entreprise. Cette comparaison nous aide à évaluer la pertinence des prévisions de l’entreprise pour l’année et à analyser les secteurs qui présentent des écarts importants par rapport aux prévisions. L’entreprise décrite dans cet exemple suit un cycle de prévision annuel. Ensuite, tous les trimestres, elle produit ses toutes dernières estimations pour faciliter l’analyse des changements survenus en matière de dépenses informatiques pendant l’année fiscale.
 
-### <a name="opportunity-analysis-sample--opportunity-analysis-samplemediasample-datasetspower-bi-oapng"></a>Opportunity Analysis sample  ![Opportunity Analysis sample](media/sample-datasets/power-bi-oa.png)
+### <a name="opportunity-analysis-sample--opportunity-analysis-samplemediasample-datasetspower-bi-oapng"></a>Exemple Analyse des opportunités  ![Exemple Analyse des opportunités](media/sample-datasets/power-bi-oa.png)
 [Découvrez l’exemple Analyse des opportunités](sample-opportunity-analysis.md)
 
 Cet exemple de secteur d’activité explore le canal de vente d’une société. Les responsables des ventes surveillent les ventes de leurs canaux de vente directs et des partenaires en suivant les opportunités et les chiffres d’affaires par région, par volume de transactions et par canal.
@@ -73,12 +72,12 @@ Cet exemple de secteur d’activité explore le canal de vente d’une société
 
 Cet exemple de secteur d’activité analyse les principales métriques des cadres, produits et clients d’une directrice financière. Vous pouvez examiner quels facteurs ont un impact sur la rentabilité de l’entreprise.
 
-### <a name="retail-analysis-sample--retail-analysis-samplemediasample-datasetspower-bi-rspng"></a>Exemple analyse de la vente au détail  ![Exemple analyse de la vente au détail](media/sample-datasets/power-bi-rs.png)
+### <a name="retail-analysis-sample--retail-analysis-samplemediasample-datasetspower-bi-rspng"></a>Exemple Analyse de la vente au détail  ![Exemple Analyse de la vente au détail](media/sample-datasets/power-bi-rs.png)
 [Découvrez l’exemple Analyse de la vente au détail](sample-retail-analysis.md)
 
 Cet exemple de secteur d’activité analyse les données de vente au détail d’articles vendus dans plusieurs magasins et régions. Les métriques comparent les performances de l’année à celles de l’année précédente dans les domaines suivants : ventes, unités, marge brute, écart et analyse des nouveaux magasins.
 
-### <a name="sales-and-marketing-sample--sales-and-marketing-samplemediasample-datasetspower-bi-smpng"></a>Exemple Vente et marketing  ![Exemple Vente et marketing](media/sample-datasets/power-bi-sm.png)
+### <a name="sales-and-marketing-sample--sales-and-marketing-samplemediasample-datasetspower-bi-smpng"></a>Exemple Ventes et marketing  ![Exemple Ventes et marketing](media/sample-datasets/power-bi-sm.png)
 [Découvrez l’exemple Vente et marketing](sample-sales-and-marketing.md)
 
 Cet exemple de secteur d’activité analyse une entreprise de fabrication, VanArsdel Ltd. Il permet au directeur marketing d’observer l’évolution de l’industrie et la part de marché de VanArsdel.  En explorant cet exemple, vous pouvez découvrir la part de marché de l’entreprise, son volume de produits et ses ventes, ainsi que le climat des affaires.
@@ -116,16 +115,16 @@ Maintenant que vous avez des données, vous êtes sur la bonne voie.  Suivez cer
 ## <a name="the-power-bi-samples-as-excel-files"></a>Exemples Power BI sous forme de fichiers Excel
 Chacun des exemples de packs de contenu est également disponible en tant que classeur Excel. Les classeurs Excel sont conçus pour être utilisés avec le service Power BI.  
 
-1. Téléchargez les fichiers individuels à l’aide des liens ci-dessous ou [téléchargez un fichier zip contenant tous les exemples de fichiers](http://go.microsoft.com/fwlink/?LinkId=535020). Si vous êtes un utilisateur expérimenté, nous vous recommandons de télécharger les classeurs Excel pour explorer ou modifier les modèles de données.
+1. Téléchargez les fichiers individuels à l’aide des liens ci-dessous ou [téléchargez un fichier zip contenant tous les exemples de fichiers](https://go.microsoft.com/fwlink/?LinkId=535020). Si vous êtes un utilisateur expérimenté, nous vous recommandons de télécharger les classeurs Excel pour explorer ou modifier les modèles de données.
 
-   * [Exemple Analyse de la vente au détail](http://go.microsoft.com/fwlink/?LinkId=529778)
-   * [Exemple Analyse de la qualité des fournisseurs](http://go.microsoft.com/fwlink/?LinkId=529779)
-   * [Exemple Ressources humaines](http://go.microsoft.com/fwlink/?LinkId=529780)
-   * [Exemple Rentabilité des clients](http://go.microsoft.com/fwlink/?LinkId=529781)
-   * [Exemple Suivi d’opportunités](http://go.microsoft.com/fwlink/?LinkId=529782)
-   * [Exemple Analyse des dépenses informatiques](http://go.microsoft.com/fwlink/?LinkId=529783)
-   * [Exemple Analyse de l’approvisionnement](http://go.microsoft.com/fwlink/?LinkId=529784)
-   * [Exemple Vente et marketing](http://go.microsoft.com/fwlink/?LinkId=529785)
+   * [Exemple Analyse de la vente au détail](https://go.microsoft.com/fwlink/?LinkId=529778)
+   * [Exemple Analyse de la qualité des fournisseurs](https://go.microsoft.com/fwlink/?LinkId=529779)
+   * [Exemple Ressources humaines](https://go.microsoft.com/fwlink/?LinkId=529780)
+   * [Exemple Rentabilité des clients](https://go.microsoft.com/fwlink/?LinkId=529781)
+   * [Exemple Suivi d’opportunités](https://go.microsoft.com/fwlink/?LinkId=529782)
+   * [Exemple Analyse des dépenses informatiques](https://go.microsoft.com/fwlink/?LinkId=529783)
+   * [Exemple Analyse de l’approvisionnement](https://go.microsoft.com/fwlink/?LinkId=529784)
+   * [Exemple Vente et marketing](https://go.microsoft.com/fwlink/?LinkId=529785)
 2. Enregistrez le fichier téléchargé. L’emplacement d’enregistrement de votre fichier change tout.
 
    * ![Local](media/sample-datasets/power-bi-local-file2.png) **Local** : si votre fichier est enregistré sur un disque local de votre ordinateur ou à un autre emplacement de votre organisation, vous pouvez importer votre fichier dans Power BI. Votre fichier est en fait conservé sur votre disque local. Il n’est donc pas entièrement importé dans Power BI. En réalité, un nouveau jeu de données est créé dans votre site Power BI, et les données (et parfois, le modèle de données) sont chargées dans ce jeu de données. Si votre fichier contient des rapports, ceux-ci s’affichent dans votre site Power BI sous Rapports.
@@ -154,7 +153,7 @@ Chacun des exemples de packs de contenu est également disponible en tant que cl
 
     ![Importer ou Se connecter](media/sample-datasets/power-bi-import.png)
 9. Si vous sélectionnez **Importer**, Power BI importe l’exemple de classeur et l’ajoute en tant que nouveau jeu de données nommé **Exemple Analyse de l’approvisionnement**.  Si le classeur contient des feuilles, tableaux ou plages Power View, ou un modèle de données, Power BI crée également un rapport (portant le même nom). Et si vous n’avez pas déjà ouvert de tableau de bord, Power BI en crée un. Dans le cas contraire, une fois que vous avez cliqué sur **Obtenir des données**, une vignette vide s’affiche sur votre tableau de bord.  En cliquant sur celle-ci, vous accédez au rapport du jeu de données que vous venez d’ajouter. Le nouveau contenu est nommé d’après l’exemple et il est signalé par un astérisque jaune.
-10. Lorsque l’écran **Votre jeu de données est prêt !** s’affiche, sélectionnez **Afficher le jeu de données** ou **Obtenir Quick Insights**. Vous pouvez également utiliser la barre de navigation gauche de Power BI pour localiser et ouvrir le rapport ou le tableau de bord associé.  
+10. Lorsque l’écran **Votre jeu de données est prêt !** s’affiche, sélectionnez **Afficher le jeu de données** ou **Obtenir Quick Insights**. Vous pouvez également utiliser le volet de navigation gauche de Power BI pour localiser et ouvrir le rapport ou le tableau de bord associé.  
 
      ![Afficher le jeu de données](media/sample-datasets/power-bi-ready.png)
 
@@ -176,15 +175,15 @@ Chacun des exemples de packs de contenu est également disponible en tant que fi
 
 1. Téléchargez les fichiers individuellement en utilisant les liens ci-dessous. Quand vous sélectionnez ces liens, le fichier est enregistré automatiquement dans votre dossier Téléchargements. 
 
-   * [PBIX Exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX Exemple Analyse de la qualité des fournisseurs](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
+   * [PBIX Exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX Exemple Analyse de la qualité des fournisseurs](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
    <!-- Previous link doesn't work -->
-   * [PBIX Exemple Ressources humaines](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
-   * [PBIX Exemple Rentabilité des clients](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
-   * [PBIX Exemple Suivi d’opportunités](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX Exemple Analyse des dépenses informatiques](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX Exemple Analyse de l’approvisionnement](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
-   * [PBIX Exemple Vente et marketing](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
+   * [PBIX Exemple Ressources humaines](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix)
+   * [PBIX Exemple Rentabilité des clients](https://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix)
+   * [PBIX Exemple Suivi d’opportunités](https://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX Exemple Analyse des dépenses informatiques](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX Exemple Analyse de l’approvisionnement](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+   * [PBIX Exemple Vente et marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix)
 
 1. À partir de Power BI Desktop, sélectionnez **Fichier > Ouvrir**, puis accédez à l’emplacement où vous avez enregistré l’exemple de fichier .pbix.
 
@@ -198,4 +197,4 @@ Chacun des exemples de packs de contenu est également disponible en tant que fi
 
 [Sources de données pour Power BI](service-get-data.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

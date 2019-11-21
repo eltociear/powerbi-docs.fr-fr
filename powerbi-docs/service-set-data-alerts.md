@@ -2,21 +2,20 @@
 title: Définir des alertes de données dans le service Power BI
 description: Découvrez comment utiliser le service Microsoft Power BI afin de définir des alertes pour vous avertir quand des données de vos tableaux de bord changent au-delà des limites que vous définissez.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 10/21/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c87a54a0e991af3faa53b9ac4ac6c92893b2ed0a
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: e26b50d571cfffeae1c93f37e715eca24ff4f12e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962689"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871562"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Alertes de données dans le service Power BI
 
@@ -24,7 +23,7 @@ Définissez des alertes pour vous avertir quand des données de vos tableaux de 
 
 Vous pouvez définir des alertes sur les vignettes si vous disposez d’une licence Power BI Pro. Vous pouvez également définir des alertes si quelqu’un partage un tableau de bord qui se trouve dans une [capacité Premium](service-premium-what-is.md). Des alertes ne peuvent être définies que sur des vignettes épinglées à partir de visuels de rapport, et uniquement sur des jauges, des indicateurs de performance clés et des cartes. Des alertes peuvent être définies sur des visuels créés à partir de jeux de données de streaming que vous épinglez d’un rapport vers un tableau de bord. Vous ne pouvez pas définir d’alertes sur des vignettes de streaming créées directement sur le tableau de bord à l’aide de **Ajouter une vignette** > **Données de streaming personnalisées**.
 
-Vous seul pouvez voir les alertes que vous définissez, même si vous partagez votre tableau de bord. Les alertes de données sont entièrement synchronisées entre plateformes. Définissez et affichez les alertes de données [dans les applications mobiles Power BI](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) et dans le service Power BI. Elles ne sont pas disponibles dans Power BI Desktop. Vous pouvez même automatiser et intégrer des alertes avec Microsoft Flow. Vous pouvez essayer vous-même dans cet article [Microsoft Flow et Power BI](service-flow-integration.md).
+Vous seul pouvez voir les alertes que vous définissez, même si vous partagez votre tableau de bord. Même le propriétaire du tableau de bord ne peut pas voir les alertes que vous définissez sur votre vue de son tableau de bord. Les alertes de données sont entièrement synchronisées entre plateformes. Définissez et affichez les alertes de données [dans les applications mobiles Power BI](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) et dans le service Power BI. Elles ne sont pas disponibles dans Power BI Desktop. Vous pouvez même automatiser et intégrer des alertes avec Microsoft Flow. Vous pouvez essayer vous-même dans cet article [Microsoft Flow et Power BI](service-flow-integration.md).
 
 ![vignettes](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -116,15 +115,13 @@ Il existe de nombreuses façons de gérer vos alertes :
 
 1. À ce stade, vous pouvez activer et désactiver les alertes, ouvrir la fenêtre **Gérer les alertes** pour apporter des modifications ou supprimer l’alerte.
 
-## <a name="tips-and-troubleshooting"></a>Conseils et résolution des problèmes
+## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 
 * Les alertes ne sont pas prises en charge pour les vignettes de carte avec des mesures au format date/heure.
-
 * Les alertes fonctionnent uniquement avec des données numériques.
-
 * Les alertes fonctionnent uniquement sur des données actualisées. (pas sur les données statiques).
-
 * Les alertes fonctionnent uniquement sur des jeux de données de streaming si vous générez un visuel de rapport de type KPI, carte ou jauge, puis que vous épinglez ce visuel au tableau de bord.
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -132,6 +129,6 @@ Il existe de nombreuses façons de gérer vos alertes :
 
 * [Définir des alertes de données sur votre appareil mobile](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
-* [Qu’est-ce que Power BI ?](power-bi-overview.md)
+* [Qu’est-ce que Power BI ?](fundamentals/power-bi-overview.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

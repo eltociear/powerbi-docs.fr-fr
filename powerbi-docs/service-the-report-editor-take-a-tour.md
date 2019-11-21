@@ -2,7 +2,6 @@
 title: Visite guidée de l’éditeur de rapport
 description: Dans Power BI Desktop et dans le service Power BI, l’éditeur de rapport vous permet de concevoir les rapports que vos utilisateurs finaux voient. Il s’agit quasiment du même éditeur dans les deux environnements.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c3a5454032a4138ce3d93c490fa6b3d5a7fecec5
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 800079f20d0c16964b0e5dd5fbac5919e94317f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023736"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871361"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Visite guidée de l’éditeur de rapport de Power BI
 
@@ -34,14 +33,14 @@ Dans le service Power BI, l’éditeur de rapport est uniquement disponible en m
 
 L’éditeur de rapport Power BI est divisé en plusieurs sections principales :  
 
-1. Barre de navigation supérieure
+1. Volet de navigation du haut
 1. Canevas du rapport
 1. Volet Filtres
 1. volet Visualisations
 1. Volet Champs
 
-## <a name="1-the-top-navigation-bar"></a>1. Barre de navigation supérieure
-Les actions disponibles dans la barre de navigation supérieure sont nombreuses, et de nouvelles actions sont constamment ajoutées. Pour plus d’informations sur une action en particulier, utilisez la zone de recherche ou la table des matières de la documentation Power BI.
+## <a name="1-the-top-nav-pane"></a>1. Volet de navigation du haut
+Les actions disponibles dans le volet de navigation du haut sont nombreuses, et de nouvelles actions sont constamment ajoutées. Pour plus d’informations sur une action en particulier, utilisez la zone de recherche ou la table des matières de la documentation Power BI.
 
 
 ## <a name="2-the-report-canvas"></a>2. Canevas de rapport
@@ -147,7 +146,7 @@ Power BI utilise différentes icônes pour désigner les types de champs d’un
 |![Données géographiques](media/service-the-report-editor-take-a-tour/power-bi-field-list-geo-data.png)     | Données géographiques : Ces champs d’emplacement peuvent être utilisés pour créer des visualisations de cartes. |
 | ![Champ Identité](media/service-the-report-editor-take-a-tour/power-bi-field-list-identity.png)     | Champ Identité : Les champs portant cette icône sont des *champs uniques* qui sont configurés pour afficher toutes les valeurs, y compris les doublons. Par exemple, vos données peuvent comprendre des enregistrements pour deux personnes nommées « Robin Smith », et chaque enregistrement sera traité comme étant unique. Ils ne seront pas additionnés.   |
 |![Paramètre](media/service-the-report-editor-take-a-tour/power-bi-field-list-parameter.png)   | Paramètre : Configurez les paramètres pour que certaines parties de vos rapports et modèles de données (filtre de requête, référence à une source de données, définition de mesure, etc.) dépendent d’une ou de plusieurs valeurs de paramètres. Pour plus d’informations, consultez ce billet de blog Power BI sur les [paramètres de requête](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). |
-| ![Calendar](media/service-the-report-editor-take-a-tour/power-bi-field-list-calendar.png) | Champ de date du calendrier avec une table de dates intégrée |
+| ![Calendrier](media/service-the-report-editor-take-a-tour/power-bi-field-list-calendar.png) | Champ de date du calendrier avec une table de dates intégrée |
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Créer un rapport](service-report-create-new.md)
@@ -156,5 +155,5 @@ Découvrez plus en détail les rapports dans le [service Power BI](service-repor
 
 [Fondamentaux pour les concepteurs Power BI](service-basic-concepts.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

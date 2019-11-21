@@ -3,7 +3,6 @@ title: Gérer les capacités Microsoft Power BI Premium
 description: Décrit les tâches de gestion pour les capacités Power BI Premium.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1e8218e19ca3949a96a9c701e4a18f9fb088e2a1
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 5e8becd877165f456793d99951544156a9314290
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175207"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881189"
 ---
 # <a name="managing-premium-capacities"></a>Gérer les capacités Premium
 
@@ -42,7 +41,7 @@ Au moins un administrateur de capacité doit être affecté. Les utilisateurs af
 
 Les administrateurs de capacité ne peuvent pas accéder au contenu de l’espace de travail sauf autorisation explicite dans l’espace de travail. Ils n’ont pas non plus accès à l’ensemble des zones d’administration Power BI (sauf en cas d’attribution explicite), notamment les métriques d’utilisation, les journaux d’audit et les paramètres du locataire. Il est important de noter que les administrateurs de capacité ne sont pas autorisés à créer de nouvelles capacités ou à mettre à l’échelle des capacités existantes. Les administrateurs sont affectés sur la base de la capacité, ce qui garantit qu’ils ne peuvent afficher et gérer que les capacités auxquelles ils sont affectés.
 
-La taille de la capacité est sélectionnée à partir d’une liste de références SKU disponibles, restreinte par le nombre de cœurs disponibles dans le pool. Il est possible de créer plusieurs capacités à partir du pool, qui peuvent provenir d’une ou plusieurs références SKU achetées. Par exemple, une référence SKU P3 (32 v-cores) peut être utilisée pour créer trois capacités : un P2 (16 v-cores) et deux P1 (2 x 8 v-cores). Il est possible d’améliorer les performances et la mise à l’échelle en créant des capacités de taille inférieure, comme décrit dans l’article [Optimiser les capacités Premium](service-premium-capacity-optimize.md). L’illustration suivante montre un exemple de configuration de l’organisation fictive Contoso comportant cinq capacités Premium (3 x P1 et 2 x P3), chacune contenant des espaces de travail d’application, ainsi que plusieurs espaces de travail dans une capacité partagée.
+La taille de la capacité est sélectionnée à partir d’une liste de références SKU disponibles, restreinte par le nombre de cœurs disponibles dans le pool. Il est possible de créer plusieurs capacités à partir du pool, qui peuvent provenir d’une ou plusieurs références SKU achetées. Par exemple, une référence SKU P3 (32 v-cores) peut être utilisée pour créer trois capacités : un P2 (16 v-cores) et deux P1 (2 x 8 v-cores). Il est possible d’améliorer les performances et la mise à l’échelle en créant des capacités de taille inférieure, comme décrit dans l’article [Optimiser les capacités Premium](service-premium-capacity-optimize.md). L’illustration suivante montre un exemple de configuration de l’organisation fictive Contoso comportant cinq capacités Premium (3 x P1 et 2 x P3) dont chacune contient des espaces de travail ainsi que plusieurs espaces de travail dans une capacité partagée.
 
 ![Exemple de configuration pour l’organisation fictive Contoso](media/service-premium-capacity-manage/contoso-organization-example.png)
 
@@ -66,7 +65,7 @@ La suppression d’une capacité Premium est possible et n’entraîne pas la su
 
 ### <a name="assigning-workspaces-to-capacities"></a>Affectation d’espaces de travail à des capacités
 
-Les espaces de travail peuvent être affectés à une capacité Premium dans le portail d’administration Power BI ou, pour un espace de travail d’application, dans le volet **Espace de travail**.
+Les espaces de travail peuvent être affectés à une capacité Premium dans le portail d’administration Power BI ou, pour un espace de travail, dans le volet **Espace de travail**.
 
 Les administrateurs de capacité, ainsi que les administrateurs généraux d’Office 365 ou administrateurs de service Power BI peuvent attribuer en bloc des espaces de travail dans le portail d’administration de Power BI. L’attribution en bloc peut s’appliquer à :
 

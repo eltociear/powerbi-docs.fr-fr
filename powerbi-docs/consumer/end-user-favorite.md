@@ -2,7 +2,6 @@
 title: Favoris dans le service Power BI (tableaux de bord, rapports, applications)
 description: Documentation sur la manière de définir des tableaux de bord, rapports et applications en tant que favoris dans le service Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 165f958cabf3eb6f3cc5c0e61b62667f891d1d48
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 48322b554a7b600bc5cadc7c40fe366c64cd8549
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256383"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852651"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Tableaux de bord, rapports et applications favoris dans le service Power BI
 Quand vous ajoutez du contenu à vos *Favoris*, vous pouvez y accéder rapidement à partir de la liste de contenus des **Favoris** ainsi qu’en accédant à **Accueil Power BI** > **Favoris + fréquents**. Les favoris sont généralement le contenu que vous consultez le plus souvent et qui est signalé par une étoile.
@@ -62,7 +61,7 @@ Dans le service Power BI, vous pouvez également sélectionner un tableau de bo
 ## <a name="unfavorite-content"></a>Retirer du contenu des favoris
 Si vous n’utilisez plus un rapport aussi souvent qu’avant, vous pouvez le retirer des favoris. Quand vous retirez du contenu des favoris, il est retiré de votre liste Favoris, mais pas de Power BI.
 
-1. Dans le volet de navigation de gauche, sélectionnez **Favoris** pour ouvrir l’écran **Favoris**.
+1. Dans le volet de navigation, sélectionnez **Favoris** pour ouvrir l’écran **Favoris**.
    
    ![écran Favoris](./media/end-user-favorite/power-bi-un-favorite.png)
 2. Sélectionnez l’étoile jaune en regard du contenu que vous voulez retirer des favoris.
@@ -76,5 +75,5 @@ Si vous n’utilisez plus un rapport aussi souvent qu’avant, vous pouvez le re
 
 ## <a name="next-steps"></a>Étapes suivantes
 - [Power BI : Concepts de base](end-user-basic-concepts.md)
-- D’autres questions ? Essayez la [communauté Power BI](http://community.powerbi.com/).
+- D’autres questions ? Essayez la [communauté Power BI](https://community.powerbi.com/).
 

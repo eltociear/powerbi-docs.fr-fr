@@ -2,7 +2,6 @@
 title: Créer les nouveaux espaces de travail - Power BI
 description: Découvrez comment créer les nouveaux espaces de travail, collections de tableaux de bord, rapports et rapports paginés conçus pour fournir des métriques clés sur votre organisation.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: bbb5eeee7422670c771f7bbfb4b051de0538a10a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020172"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877513"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Créer les nouveaux espaces de travail dans Power BI
 
@@ -74,7 +73,7 @@ Vous pouvez spécifier les utilisateurs qui reçoivent une notification concerna
 
     Dans le volet **Créer un espace de travail**, lors de sa création.
 
-    Dans le volet de navigation gauche, sélectionnez la flèche en regard **d’Espaces de travail**, sélectionnez les points de suspension (...) en regard du nom de l’espace de travail > **Paramètres de l’espace de travail**. Le volet **Paramètres** s’ouvre.
+    Dans le volet de navigation, sélectionnez la flèche à côté de **Espaces de travail**, sélectionnez **Plus d’options** (...) en regard du nom de l’espace de travail > **Paramètres de l’espace de travail**. Le volet **Paramètres** s’ouvre.
 
     ![Paramètres de l’espace de travail](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -94,7 +93,7 @@ Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qu
 
     Dans le volet **Créer un espace de travail**, lors de sa création.
 
-    Dans le volet de navigation gauche, sélectionnez la flèche en regard **d’Espaces de travail**, sélectionnez les points de suspension (...) en regard du nom de l’espace de travail > **Paramètres de l’espace de travail**. Le volet **Paramètres** s’ouvre.
+    Dans le volet de navigation, sélectionnez la flèche à côté de **Espaces de travail**, sélectionnez **Plus d’options** (...) en regard du nom de l’espace de travail > **Paramètres de l’espace de travail**. Le volet **Paramètres** s’ouvre.
 
     ![Paramètres de l’espace de travail](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
@@ -108,7 +107,7 @@ Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qu
 
 Après avoir configuré l'emplacement OneDrive, vous y accédez de la même manière que vous accédez aux autres sources de données du service Power BI.
 
-1. Dans le volet de navigation de gauche, sélectionnez **Obtenir des données**, puis dans la zone **Fichiers**, choisissez **Obtenir**.
+1. Dans le volet de navigation, sélectionnez **Obtenir des données** puis, dans la zone **Fichiers**, sélectionnez **Obtenir**.
 
     ![Obtenir des données, obtenir des fichiers](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
@@ -145,4 +144,4 @@ Découvrir comment [Publier une application à partir des nouveaux espaces de tr
 * Découvrir l’[organisation du travail dans la nouvelle expérience d’espace de travail dans Power BI](service-new-workspaces.md)
 * [Créer des espaces de travail classiques](service-create-workspaces.md)
 * [Publier une application à partir des nouveaux espaces de travail dans Power BI](service-create-distribute-apps.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

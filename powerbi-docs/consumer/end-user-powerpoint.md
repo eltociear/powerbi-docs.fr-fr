@@ -2,7 +2,6 @@
 title: Exporter des rapports de Power BI vers PowerPoint
 description: Découvrez comment exporter un rapport Power BI vers PowerPoint.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3215dfab54d1537ec5f7ca32ee4bd39b9ef997e5
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 840f2462ea9fc6b2d748b3803445c5ee4b155bdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716999"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862894"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Exporter des rapports de Power BI vers PowerPoint
 
@@ -31,7 +30,7 @@ Avec Power BI, vous pouvez publier votre rapport dans Microsoft PowerPoint et c
 L’exportation d’un **rapport Power BI** dans **PowerPoint** est rapide. Suivez les étapes décrites dans la section suivante.
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Exporter votre rapport Power BI vers PowerPoint
-Dans le service Power BI, sélectionnez un rapport pour l’afficher dans le canevas. Vous pouvez également sélectionner un rapport dans votre page **Accueil**, dans vos **Applications** ou dans n’importe quelle autre section du volet de navigation de gauche.
+Dans le service Power BI, sélectionnez un rapport pour l’afficher dans le canevas. Vous pouvez également sélectionner un rapport dans votre **page d’accueil**, **vos applications** ou tout autre conteneur du volet de navigation.
 
 Quand le rapport que vous voulez exporter vers PowerPoint est affiché sur le canevas, sélectionnez **Exporter** > **PowerPoint** dans la barre de menus.
 
@@ -60,7 +59,7 @@ Lorsque vous ouvrez le fichier PowerPoint que Power BI a exporté, quelques él
 
 1. La première page du diaporama inclut le nom de votre rapport et un lien qui vous permet d’**afficher dans Power BI** le rapport sur lequel le diaporama est basé.
 2. Vous pouvez également obtenir des informations utiles sur le rapport. **Dernière actualisation des données** indique la date et l’heure sur lesquelles le rapport exporté est basé. **Téléchargé à** montre la date et l’heure d’exportation du rapport Power BI dans un fichier PowerPoint.
-3. Chaque page du rapport est une diapositive distincte, comme indiqué dans le volet de navigation gauche. 
+3. Chaque page du rapport est une diapositive distincte, comme indiqué dans le volet de navigation. 
 4. Votre rapport publié s’affiche dans la langue définie dans vos paramètres Power BI, ou selon les paramètres régionaux de votre navigateur. Pour afficher ou définir vos préférences de langue, sélectionnez l’icône représentant une roue dentée ![Icône de roue dentée](media/end-user-powerpoint/power-bi-settings-icon.png) > **Paramètres** > **Général** > **Langue**. Pour obtenir des informations sur les paramètres régionaux, consultez [Langues et pays/régions pris en charge pour Power BI](../supported-languages-countries-regions.md).
 5. La présentation PowerPoint inclut une diapositive de couverture indiquant l’heure d’exportation dans le fuseau horaire correct.
 

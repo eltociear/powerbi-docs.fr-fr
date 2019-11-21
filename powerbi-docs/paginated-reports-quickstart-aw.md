@@ -3,18 +3,17 @@ title: 'Tutoriel : Créer un rapport paginé et le charger dans le service Power
 description: Dans ce tutoriel, vous vous connectez à un exemple de base de données SQL Azure. Puis vous utilisez un assistant dans le Générateur de rapports pour créer un rapport paginé. Vous chargez ensuite le rapport paginé dans un espace de travail d’une capacité Premium dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: ab4cb14936ceff52a78f713877064d525de4b104
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839737"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875427"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Tutoriel : Créer un rapport paginé et le charger dans le service Power BI
 
@@ -44,7 +43,7 @@ Voici les conditions préalables pour la création du rapport paginé :
 Voici les conditions préalables pour le chargement de votre rapport paginé dans le service Power BI :
 
 - Vous avez besoin d’une [licence Power BI Pro](service-admin-power-bi-pro-in-your-organization.md).
-- Vous avez besoin d’un espace de travail d’application sur le service dans une [capacité Power BI Premium](service-premium-what-is.md). Il affiche une icône en forme de losange ![icône losange Premium](media/paginated-reports-quickstart-aw/premium-diamond.png) en regard du nom de l’espace de travail.
+- Vous avez besoin d’un espace de travail sur le service dans une [capacité Power BI Premium](service-premium-what-is.md). Il affiche une icône en forme de losange ![icône losange Premium](media/paginated-reports-quickstart-aw/premium-diamond.png) en regard du nom de l’espace de travail.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Créer la matrice avec un assistant
   
@@ -287,7 +286,7 @@ Nous pouvons apporter une amélioration supplémentaire à la mise en forme avan
 
 Maintenant que vous avez créé ce rapport paginé, il est temps de le charger dans le service Power BI.
 
-1. Dans le service Power BI (http://app.powerbi.com) dans le volet de navigation de gauche, sélectionnez **Espaces de travail** > **Créer un espace de travail d’application**.
+1. Dans le service Power BI (https://app.powerbi.com) dans le volet de navigation, sélectionnez **Espaces de travail** > **Créer un espace de travail**.
 
 2. Nommez votre espace de travail **Azure AW**, ou choisissez un autre nom unique. Vous êtes le seul membre pour l’instant. 
 

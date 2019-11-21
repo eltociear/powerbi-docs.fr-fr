@@ -2,7 +2,6 @@
 title: 'Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée'
 description: 'Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: bc6b35b6401f4424a3a5120cb7c28437da9a2a48
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6f39f8b5c288c1dbff3cd87c7beee27683cfeae2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462248"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873902"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse des dépenses informatiques pour Power BI : Visite guidée
 
@@ -54,11 +53,11 @@ Vous n’avez pas besoin d’une licence Power BI pour explorer les exemples dan
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 
-Vous pouvez également télécharger l’exemple Analyse des dépenses informatiques en tant que [fichier .pbix](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), est conçu pour une utilisation avec Power BI Desktop.
+Vous pouvez également télécharger l’exemple Analyse des dépenses informatiques en tant que [fichier .pbix](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), est conçu pour une utilisation avec Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529783). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529783). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="it-spend-analysis-sample-dashboard"></a>Exemple de tableau de bord Analyse des dépenses informatiques
 Les deux vignettes représentant des nombres sur la partie gauche du tableau de bord, **Var Plan %** (% de prévisions d’écart) et **Variance Latest Estimate % Quarter 3**(% des dernières estimations de l’écart du trimestre 3), nous donnent une vue d’ensemble de nos résultats par rapport aux prévisions et par rapport aux estimations du dernier trimestre (LE3 = Latest Estimate Quarter 3, dernières estimations Trimestre 3). Globalement, nous sommes à environ 6 % des prévisions. Examinons la cause de cet écart : quand, où et dans quelle catégorie ?
@@ -78,7 +77,7 @@ Mais le simple examen de ce graphique et le fait d’en tirer des conclusions pe
     Explorons maintenant quelle catégorie aux États-Unis est à l’origine de l’écart.
 
 ## <a name="ask-questions-of-the-data"></a>Poser des questions sur les données
-1. Sélectionnez **Exemple Analyse des dépenses informatiques** dans la barre de navigation supérieure pour revenir à l’exemple de tableau de bord.
+1. Sélectionnez **Exemple Analyse des dépenses informatiques** dans le volet de navigation supérieur pour revenir à l’exemple de tableau de bord.
 2. Sélectionnez **Poser une question sur vos données**.
 3. À partir de la liste **Questions pour vous aider à démarrer** affichée à gauche, sélectionnez **what is the plan by IT area** (quelles sont les prévisions par domaine informatique).
 

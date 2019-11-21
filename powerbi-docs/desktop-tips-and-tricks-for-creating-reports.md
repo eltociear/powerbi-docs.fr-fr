@@ -2,7 +2,6 @@
 title: Conseils et astuces pour créer des rapports dans Power BI
 description: Découvrez les meilleures pratiques pour la création de rapports dans le service Power BI et Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
-ms.openlocfilehash: 41e5ff75e9b6fd48e3101d30999e8d570f34a270
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513986"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865841"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Conseils et astuces pour créer des rapports dans Power BI Desktop
 Que diriez-vous d’un petit coup de pouce pour vous aider à tirer le meilleur parti de vos données ? Cette page recense des trucs et astuces qui pourront vous être utiles lors de la création de rapports dans Microsoft Power BI Desktop *et* dans Microsoft Excel 2016 ou 2013 Professionnel Plus (après activation du complément Power Pivot et installation et activation de Power Query). 
@@ -28,19 +27,19 @@ Vous pouvez obtenir des informations supplémentaires à partir du [Centre de re
 Vous pouvez également afficher la [référence de formule](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## <a name="data-types-in-query-editor"></a>Types de données dans l’Éditeur de requête
-Quand vous utilisez l’Éditeur de requête dans Power BI Desktop pour charger des données, celui-ci détecte le type de données sur la base de la meilleure hypothèse. Si vous utilisez des formules, les paramètres de type de données affectés aux colonnes ne sont parfois pas conservés. Vérifiez que le type de données des colonnes sont correctes après avoir effectué les opérations suivantes :  Charger des données (chargement initial dans l’onglet Requête), Utiliser la première ligne comme en-tête, Ajouter une colonne, Regrouper par, Fusionner et Ajouter, mais aussi avant d’appuyer sur le bouton de chargement des données pour la première fois.
+Quand vous utilisez l’Éditeur de requête dans Power BI Desktop pour charger des données, celui-ci détecte le type de données sur la base de la meilleure hypothèse. Si vous utilisez des formules, les paramètres de type de données affectés aux colonnes ne sont parfois pas conservés. Vérifiez que le type de données des colonnes est correct après avoir effectué les opérations suivantes :  Charger des données (chargement initial dans l’onglet Requête), Utiliser la première ligne comme en-tête, Ajouter une colonne, Regrouper par, Fusionner et Ajouter, mais aussi avant d’appuyer sur le bouton de chargement des données pour la première fois.
 
 Souvenez-vous de ce point important : le texte en italique dans la grille de données ne signifie pas que le type de données est correctement défini. Cela veut simplement dire que les données ne sont pas considérées comme du texte.
 
 ## <a name="reference-queries-in-the-query-editor"></a>Requêtes de référence dans l’Éditeur de requête
-Dans le navigateur de l’éditeur de requête dans Power BI Desktop, lorsque vous cliquez sur une des requêtes, une option « Référence » est disponible. Cela est utile pour la raison suivante :
+Dans le navigateur de l’Éditeur de requête de Power BI Desktop, quand vous cliquez avec le bouton droit sur une des requêtes, une option « Référence » est disponible. Cela est utile pour la raison suivante :
 
 * Quand vous utilisez des fichiers comme source de données d’une requête, le chemin d’accès absolu au fichier est stocké dans la requête. Cela vous permet de gagner du temps lors du partage ou du déplacement d’un fichier Power BI Desktop ou d’un classeur Excel, car il vous suffit de mettre à jour le chemin d’accès une seule fois.
 
-Par défaut, toutes les requêtes chargent une feuille de calcul Excel ou le modèle de données (ou les deux). Certaines requêtes sont des étapes intermédiaires et pas destinée aux utilisateurs finaux. Quand vous référencez des requêtes comme indiqué ci-dessus, cela arrive fréquemment. Vous pouvez contrôler le comportement du chargement en double-cliquant sur la requête dans le navigateur et d’activation/désactivation de l’option « Activer le chargement ». Lorsque *activer le chargement* n’a pas d’une coche en regard de celle-ci, la requête est toujours disponible dans l’onglet requête et vous pouvez l’utiliser avec d’autres requêtes. Cela est particulièrement utile si vous utilisez conjointement des transformations Fusionner, Ajouter et Référence. Toutefois, étant donné que les résultats de la requête ne sont pas chargés dans le modèle de données, la requête n’encombre pas la liste des champs de vos rapports ni votre modèle de données. 
+Par défaut, toutes les requêtes chargent une feuille de calcul Excel ou le modèle de données (ou les deux). Certaines requêtes sont des étapes intermédiaires qui ne sont pas destinées aux utilisateurs. Quand vous référencez des requêtes comme indiqué ci-dessus, cela arrive fréquemment. Vous pouvez contrôler le comportement du chargement en cliquant avec le bouton droit sur la requête dans le navigateur et en activant ou en désactivant l’option « Activer le chargement ». Si l’option *Activer le chargement* n’est pas cochée, la requête est toujours disponible sous l’onglet Requête et vous pouvez l’utiliser avec d’autres requêtes. Cela est particulièrement utile si vous utilisez conjointement des transformations Fusionner, Ajouter et Référence. Toutefois, étant donné que les résultats de la requête ne sont pas chargés dans le modèle de données, la requête n’encombre pas la liste des champs de vos rapports ni votre modèle de données. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>Nécessité d’un identificateur de point dans les nuages de points
-Prenons un exemple simple d’une table contenant des températures et les heures de mesure. Si vous tracez ces données directement sur un nuage de points, Power BI regroupe toutes les valeurs en un seul point. Pour afficher les points de données individuels, vous devez ajouter un champ dans le compartiment détails dans le champ également. Pour ce faire dans Power BI Desktop, un moyen simple consiste à utiliser l’option « Ajouter une colonne d’index » sous l’onglet Requête dans le ruban « Ajouter une colonne ». 
+Prenons un exemple simple d’une table contenant des températures et les heures de mesure. Si vous tracez ces données directement sur un nuage de points, Power BI regroupe toutes les valeurs en un seul point. Pour afficher les points de données individuels, vous devez ajouter un champ dans le compartiment Détails de la zone des champs. Pour ce faire dans Power BI Desktop, un moyen simple consiste à utiliser l’option « Ajouter une colonne d’index » sous l’onglet Requête dans le ruban « Ajouter une colonne ». 
 
 ## <a name="reference-lines-in-your-report"></a>Lignes de référence dans votre rapport
 Vous pouvez utiliser une colonne calculée dans Power BI Desktop pour définir une ligne de référence. Identifiez la table et la colonne à utiliser pour créer une ligne de référence. Sélectionnez « Nouvelle colonne » dans le ruban, puis tapez la formule suivante dans la barre de formule :
@@ -50,7 +49,7 @@ Vous pouvez utiliser une colonne calculée dans Power BI Desktop pour définir u
 Cette colonne calculée retourne la valeur 100, quel que soit l’emplacement où elle est utilisée. Votre nouvelle colonne s’affiche dans la liste des champs. Ajoutez la colonne calculée Valeur cible à un graphique en courbes pour afficher le lien entre une série quelconque et cette ligne de référence spécifique. 
 
 ## <a name="sort-by-another-column"></a>Tri par une autre colonne
-Quand vous utilisez une valeur catégorique (chaîne) dans Power BI pour les axes du graphique ou dans un segment ou un filtre, l’ordre par défaut est l’ordre alphabétique. Si vous avez besoin modifier cet ordre, par exemple pour les éléments comme des jours de la semaine ou du mois, puis vous pouvez indiquer Power BI Desktop de trier par une autre colonne. Pour plus d’informations, consultez [trier par colonne dans Power BI Desktop](desktop-sort-by-column.md).
+Quand vous utilisez une valeur catégorique (chaîne) dans Power BI pour les axes du graphique ou dans un segment ou un filtre, l’ordre par défaut est l’ordre alphabétique. Pour modifier cet ordre, par exemple si vous avez affaire à des éléments comme des jours de la semaine ou des mois, vous pouvez indiquer à Power BI Desktop de trier les valeurs selon une autre colonne. Pour en savoir plus, consultez [Trier par colonne dans Power BI Desktop](desktop-sort-by-column.md).
 
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Création simplifiée de cartes grâce aux indications fournies à Bing
 De par son intégration à Bing, Power BI fournit des coordonnées cartographiques par défaut (processus appelé « géocodage »), ce qui facilite la création de cartes. Bing utilise des algorithmes et des indications pour essayer d’obtenir le bon emplacement, mais il ne s’agit que d’une hypothèse. Pour augmenter vos chances d’obtenir un géocodage correct, vous pouvez utiliser les conseils suivants :
@@ -62,7 +61,7 @@ Certaines désignations sont ambiguës lorsqu’elles sont envisagées dans le c
 Vous pouvez toujours fournir des emplacements spécifiques basés sur la latitude et la longitude dans le service Power BI ou Desktop. Si vous procédez de la sorte, vous devez également passer un champ Emplacement ; sinon, les données sont agrégées par défaut, et l’emplacement défini par la latitude et la longitude peut ne pas correspondre à celui que vous attendiez.
 
 ## <a name="categorizing-geographic-fields-to-hint-bings-geocoding"></a>Catégorisation des champs géographiques pour fournir des indications à Bing dans le cadre du géocodage
-Vous pouvez également vous assurer que les champs sont correctement géocodés en définissant la Catégorie de données sur les champs de données. Dans Power BI Desktop, sélectionnez la table souhaitée, accédez au ruban d’options avancées, puis définissez la catégorie de données à l’adresse, ville, Continent, pays/région, pays, Code Postal, état ou Province. Ces catégories de données aident Bing à encoder correctement les données. Pour plus d’informations, consultez [Catégorisation des données dans Power BI Desktop](desktop-data-categorization.md).
+Vous pouvez également vous assurer que les champs sont correctement géocodés en définissant la Catégorie de données sur les champs de données. Dans Power BI Desktop, sélectionnez la table souhaitée, accédez au ruban d’options avancées, puis spécifiez Adresse, Ville, Continent, Région, Pays, Code Postal, État ou Province comme Catégorie de données. Ces catégories de données aident Bing à encoder correctement les données. Pour plus d’informations, consultez [Catégorisation des données dans Power BI Desktop](desktop-data-categorization.md).
 
 ## <a name="better-geocoding-with-more-specific-locations"></a>Amélioration du géocodage grâce à des emplacements plus spécifiques
 Parfois, même la définition des catégories de données pour le mappage ne suffit pas. Générez un emplacement plus spécifique, une rue par exemple, à l’aide de l’Éditeur de requête dans Power BI Desktop. Utilisez la fonctionnalité Ajouter une colonne pour créer une colonne personnalisée. Puis créez l’emplacement souhaité comme suit : 
@@ -86,7 +85,7 @@ Définition de compartiments pour créer un histogramme : identifiez la requêt
 
 Vérifiez que le type de données de la colonne d’agrégation résultante est un nombre. Vous pouvez maintenant utiliser le groupe à l’aide de la technique décrite dans « Histogramme simple » pour générer l’histogramme. Cette option permet de traiter plus de points de données, mais elle ne prend toujours pas en charge le balayage.
 
-Définition d’un histogramme prenant en charge le balayage : balayage lorsque des éléments visuels sont liés entre eux afin que lorsqu’un utilisateur sélectionne un point de données dans un élément visuel, les autres éléments visuels sur la page de rapport mettez en surbrillance ou filtrent les points de données liés au point de données sélectionné. Étant donné que nous manipulons les données au moment de la requête, nous devons créer une relation entre les tables et déterminer l’élément de détail qui est lié au compartiment dans l’histogramme et vice-versa.
+Définition d’un histogramme prenant en charge le balayage : si des visuels sont liés entre eux et qu’un utilisateur sélectionne un point de données dans un visuel, les autres visuels de la page de rapport mettent en surbrillance ou filtrent les points de données liés à celui sélectionné. C’est ce que l’on entend par « balayage ». Étant donné que nous manipulons les données au moment de la requête, nous devons créer une relation entre les tables et déterminer l’élément de détail qui est lié au compartiment dans l’histogramme et vice-versa.
 
 Pour démarrer le processus, identifiez la requête contenant le champ à utiliser pour créer un histogramme, puis sélectionnez l’option « Référence ». Nommez la nouvelle requête « Buckets ». Dans cet exemple, nous allons appeler la requête d’origine « Details ». Ensuite, supprimez toutes les colonnes à l’exception de celle que vous allez utiliser comme compartiment pour l’histogramme. Maintenant, cliquez avec le bouton droit sur la colonne et sélectionnez « Supprimer les doublons » pour faire en sorte que les valeurs restantes soient uniques dans la colonne. Si vos données comportent des nombres décimaux, vous pouvez tout d’abord suivre la procédure « Définition de compartiments pour créer un histogramme » afin d’obtenir un ensemble gérable de compartiments. Examinez à présent les données affichées dans l’aperçu de la requête. Si vous voyez des valeurs vides ou null, vous devez les corriger avant de créer une relation. Consultez la section « Création de relations si les données comprennent des valeurs null ou vides ». Cette approche peut être problématique, car elle nécessite que les données soient triées. Pour que les compartiments trient correctement les données, consultez « Ordre de tri : faire apparaître les catégories dans l’ordre souhaité ». 
 
@@ -161,4 +160,4 @@ DAX est le langage des formules de calcul dans Power BI Desktop. Il est optimi
 
 [Informations de référence sur DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[Centre de ressources DAX](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[Centre de ressources DAX](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)

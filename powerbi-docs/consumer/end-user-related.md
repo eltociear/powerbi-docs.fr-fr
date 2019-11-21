@@ -2,7 +2,6 @@
 title: Voir le contenu associé des tableaux de bord, rapports et jeux de données
 description: Navigation facilitée, affichage de contenu associé dans les tableaux de bord, rapports et jeux de données
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.custom: seodec18
@@ -12,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b52a858d10bb7f508d39e2d4e9678e48e01394f5
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 9e202d22c2ff42a29eb28a8ee154b09f18097d04
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100346"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862276"
 ---
 # <a name="view-related-content-in-the-power-bi-service"></a>Afficher un contenu associé dans le service Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Le volet **Contenu associé** montre les interconnexions entre les éléments de contenu du service Power BI (tableaux de bord, rapports et jeux de données). Le volet **Contenu associé** est également une plateforme de lancement pour prendre des mesures. À partir de là, vous pouvez effectuer des opérations telles que l’ouverture d’un tableau de bord, l’ouverture d’un rapport, la génération d’insights, l’analyse des données dans Excel et bien plus encore.  
 
 Dans Power BI, les rapports sont générés à partir de jeux de données, leurs visuels sont ensuite épinglés aux tableaux de bord, puis les visuels des tableaux de bord sont reliés aux rapports. Mais comment savoir quels tableaux de bord hébergent les visuels de votre rapport Marketing ? Et comment localiser ces tableaux de bord ? Votre tableau de bord d’approvisionnement utilise-t-il des visuels de plusieurs jeux de données ? Si tel est le cas, quels sont leur noms et comment les ouvrir et les modifier ? Votre jeu de données HR est-il utilisé dans des rapports ou des tableaux de bord ? Ou peut-il être déplacé sans provoquer des liens rompus ? Le volet **Contenu associé** répond à toutes ces questions.  En plus d’afficher le contenu associé, ce volet permet d’agir sur celui-ci et de naviguer aisément entre ses éléments.
@@ -36,7 +38,7 @@ Regardez Will pendant qu’il affiche le contenu associé d’un tableau de bord
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M#t=3m05s" frameborder="0" allowfullscreen></iframe>
 
-Une fois le tableau de bord ou le rapport ouvert, sélectionnez les points de suspension (...) dans la barre de menus, puis choisissez **Afficher les éléments associés** dans la liste déroulante.
+Une fois le tableau de bord ou le rapport ouvert, sélectionnez **Plus d’options** (...) dans la barre de menus, puis choisissez **Afficher les éléments associés** dans la liste déroulante.
 
 ![Liste déroulante d’ellipses](./media/end-user-related/power-bi-dropdown.png)
 
@@ -51,9 +53,9 @@ Le volet **Contenu associé** s’ouvre. Pour un tableau de bord, il affiche tou
 ## <a name="view-related-content-for-a-dataset"></a>Afficher le contenu associé d’un jeu de données
 Pour pouvoir ouvrir le volet **Contenu associé**, vous devez disposer au minimum de l’autorisation d’*Affichage* sur le jeu de données concerné. Pour illustrer notre propos, nous utilisons l’[exemple Analyse de l’approvisionnement](../sample-procurement.md).
 
-À partir de la barre de navigation, recherchez le titre **Espaces de travail** et sélectionnez un espace de travail dans la liste. Si vous disposez d’un contenu dans un espace de travail, il s’affiche dans le canevas à droite. 
+À partir du volet de navigation, recherchez le titre **Espaces de travail** et sélectionnez un espace de travail dans la liste. Si vous disposez d’un contenu dans un espace de travail, il s’affiche dans le canevas à droite. 
 
-![espaces de travail dans la barre de navigation gauche](./media/end-user-related/power-bi-workspace.png)
+![espaces de travail dans le volet de navigation](./media/end-user-related/power-bi-workspace.png)
 
 
 Dans un espace de travail, sélectionnez l’onglet **Jeux de données**, puis recherchez l’icône **Afficher les éléments associés** ![icône Afficher les éléments associés](./media/end-user-related/power-bi-view-related-icon-new.png).
@@ -73,5 +75,5 @@ Sélectionnez l’icône pour ouvrir le volet **Contenu associé**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Prise en main du service Power BI](../service-get-started.md)
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

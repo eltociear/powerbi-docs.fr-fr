@@ -2,7 +2,6 @@
 title: Créer un tableau de bord à partir d’un rapport
 description: Créer un tableau de bord à partir d’un rapport
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: d67e7acf4309595e8bccac86119ea38f1a97797f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543340"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853409"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Créer un tableau de bord à partir d’un rapport
 Vous avez lu [Présentation des tableaux de bord dans Power BI](service-dashboards.md) et souhaitez maintenant créer les vôtres. Il existe différentes façons de créer un tableau de bord. Par exemple, vous pouvez créer un tableau de bord à partir d’un rapport, à partir de rien, à partir d’un jeu de données, en dupliquant un tableau de bord existant.  
@@ -44,11 +43,11 @@ Regardez Amanda créer un tableau de bord en épinglant des visualisations et de
 ## <a name="import-a-dataset-with-a-report"></a>Importer un jeu de données avec un rapport
 Dans cette procédure étape par étape, nous allons importer l’un des exemples de jeu de données Power BI et l’utiliser pour créer notre tableau de bord. L’exemple que nous allons utiliser est un classeur Excel avec deux feuilles PowerView. Lorsque Power BI importe le classeur, il ajoute un jeu de données et un rapport à votre espace de travail. Le rapport est automatiquement créé à partir des feuilles PowerView.
 
-1. Téléchargez le [fichier Excel](http://go.microsoft.com/fwlink/?LinkId=529784) exemple Analyse de l’approvisionnement. Nous vous recommandons de l’enregistrer dans votre OneDrive Entreprise.
+1. Téléchargez le [fichier Excel](https://go.microsoft.com/fwlink/?LinkId=529784) exemple Analyse de l’approvisionnement. Nous vous recommandons de l’enregistrer dans votre OneDrive Entreprise.
 2. Ouvrez le service Power BI dans votre navigateur (app.powerbi.com).
-3. Dans le volet de navigation gauche, sélectionnez **Mon espace de travail**, puis **Obtenir les données**.
+3. Dans le volet de navigation, sélectionnez **Mon espace de travail**, puis **Obtenir les données**.
 
-    ![Volet de navigation gauche](media/service-dashboard-create/power-bi-get-data-new-look.png)
+    ![volet de navigation](media/service-dashboard-create/power-bi-get-data-new-look.png)
 5. Sous **Fichiers**, sélectionnez **Obtenir**.
 
    ![Obtenir les fichiers](media/service-dashboard-create/power-bi-select-files.png)
@@ -63,7 +62,7 @@ Dans cette procédure étape par étape, nous allons importer l’un des exemple
    ![Message de réussite](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
 > [!TIP]
-> Le saviez-vous ? Vous pouvez réduire la barre de navigation de gauche en sélectionnant l'icône à trois lignes en haut ![Icône pour afficher ou masquer le volet de navigation](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Vous disposez ainsi de plus d’espace pour le rapport lui-même.
+> Le saviez-vous ? Vous pouvez réduire le volet de navigation en sélectionnant l’icône avec trois lignes en haut ![Icône pour afficher ou masquer le volet de navigation](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Vous disposez ainsi de plus d’espace pour le rapport lui-même.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Ouvrir le rapport et épingler des vignettes à votre tableau de bord
 1. Dans le même espace de travail, sélectionnez l’onglet **Rapports**, puis l’**Exemple Analyse de l’approvisionnement** pour ouvrir le rapport.
@@ -118,4 +117,4 @@ Félicitations pour la création de votre premier tableau de bord ! Maintenant 
 * [Power BI – Concepts de base](service-basic-concepts.md)
 * [Conseils pour la conception d’un tableau de bord réussi](service-dashboards-design-tips.md)
 
-D’autres questions ? [Posez vos questions à la Communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? [Posez vos questions à la Communauté Power BI](https://community.powerbi.com/).

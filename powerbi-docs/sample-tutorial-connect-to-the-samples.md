@@ -2,7 +2,6 @@
 title: Se connecter aux exemples dans le service Power BI
 description: Apprenez à installer et à explorer les exemples dans le service Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3577c19342d9f2dc5b0e3ab9908f47f82430e6db
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 90136f39d9f2a8e330748b56d6302bb75d2a31fe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391501"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873844"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Se connecter aux exemples dans le service Power BI
 
@@ -38,11 +37,11 @@ Pour vous familiariser avec ce pack de contenu et son scénario, consultez l’a
 
     Si vous n’avez pas de licence Power BI Pro, vous pouvez enregistrer l’exemple dans votre espace Mon espace de travail.
 
-2. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche. 
+2. Sélectionnez **Obtenir des données** dans le bas du volet de navigation. 
 
    ![Sélectionner Obtenir les données](media/sample-datasets/power-bi-get-data.png)
 
-   Si vous ne voyez pas **Obtenir les données**, développez le volet de navigation en sélectionnant l’icône suivante en haut du volet : ![icône Hamburger](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+   Si vous ne voyez pas **Obtenir des données**, développez le volet de navigation en sélectionnant l’icône suivante en haut du volet : ![icône Hamburger](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
 
 5. Dans la page **Obtenir des données** qui s’affiche, sélectionnez **Exemples**.
    
@@ -91,7 +90,7 @@ Lorsque vous sélectionnez **Se connecter** en utilisant un exemple de pack de c
      
    ![Tout nouveau rapport](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
 
-1. Une autre méthode d’exploration d’un jeu de données consiste à exécuter la fonctionnalité [Quick Insights](consumer/end-user-insights.md). Sélectionnez les points de suspension (...), puis choisissez **Obtenir Quick Insights**. Lorsque les informations sont prêtes, sélectionnez **Afficher les informations**.
+1. Une autre méthode d’exploration d’un jeu de données consiste à exécuter la fonctionnalité [Quick Insights](consumer/end-user-insights.md). Sélectionnez **Plus d’options** (...), puis choisissez **Obtenir des insights rapides**. Lorsque les informations sont prêtes, sélectionnez **Afficher les informations**.
      
     ![rapport Insights](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
@@ -100,7 +99,7 @@ Lorsque vous sélectionnez **Se connecter** en utilisant un exemple de pack de c
 
 Contrairement à la modification d’un rapport dans le service Power BI, dans Power BI Desktop, vous pouvez également utiliser vos requêtes et modéliser vos données pour obtenir les meilleures analyses possibles dans les rapports. Vous pouvez ensuite enregistrer votre fichier Power BI Desktop à l’emplacement de votre choix (lecteur local ou cloud).
 
-1. Téléchargez le [fichier .pbix de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) et ouvrez-le dans Power BI Desktop. 
+1. Téléchargez le [fichier .pbix de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) et ouvrez-le dans Power BI Desktop. 
 
     ![Exemple dans la vue Rapport de Power BI](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
@@ -138,4 +137,4 @@ Pour plus d’informations, consultez :
 - [Exemples pour Power BI](sample-datasets.md)
 - [Sources de données pour Power BI](service-get-data.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

@@ -1,26 +1,25 @@
 ---
-title: Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord - Power BI
+title: Vous abonner vous-même et d’autres personnes à des rapports et des tableaux de bord
 description: Découvrez comment vous abonner vous et d’autres utilisateurs à un instantané d’une page de rapport Power BI, à un tableau de bord ou à un rapport paginé.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 2c08736e23568675af87e7de63092fff3a6a86c5
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: f0adb8defff5ad7c62006848a5163e4bf26e2b96
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073412"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871598"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Vous abonner vous et d’autres utilisateurs à des rapports et tableaux de bord dans le service Power BI
 
-Vous pouvez vous abonner vous et vos collègues aux pages de rapport, tableaux de bord et rapports paginés qui vous intéressent le plus. Power BI envoie un instantané dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous voulez recevoir les e-mails : une fois par jour, une fois par semaine, une fois par heure, une fois par mois ou après l’actualisation des données initiales.  Si vous choisissez une fois par jour, une fois par semaine, une fois par heure ou une fois par mois, vous pouvez choisir l’heure d’exécution de l’abonnement.  Vous pouvez définir jusqu’à 24 abonnements différents en tout par jour, pour chaque page de rapport et tableau de bord.
+Vous pouvez vous abonner vous et vos collègues aux pages de rapport, tableaux de bord et rapports paginés qui vous intéressent le plus. Power BI envoie un instantané dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous voulez recevoir les e-mails : une fois par jour, une fois par semaine, une fois par heure, une fois par mois ou après l’actualisation des données initiales.  Si vous choisissez une fois par jour, une fois par semaine, une fois par heure ou une fois par mois, vous pouvez choisir l’heure d’exécution de l’abonnement.  Vous pouvez définir jusqu’à 24 abonnements différents par rapport ou par tableau de bord.
 
 ![capture instantanée d’un e-mail sur le tableau de bord](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -109,5 +108,5 @@ Un abonnement se termine si la licence Pro expire, si le propriétaire supprime 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Vous abonner vous et d’autres utilisateurs à un rapport paginé dans le service Power BI](paginated-reports-subscriptions.md)
-- D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)    
+- D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)    
 - [Lire le billet de blog](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

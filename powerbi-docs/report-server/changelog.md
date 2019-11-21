@@ -3,18 +3,17 @@ title: Journal des modifications pour Power BI Report Server
 description: Ce journal des modifications a trait à Power BI Report Server. Il répertorie les éléments nouveaux et les corrections de bogues introduits dans chaque version officielle publiée.
 ms.author: jaimeta
 author: jtarquino
-manager: kfile
 ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/09/2019
-ms.openlocfilehash: a3f7e1676c864ff1f5dbf081dd2e7818f30caba6
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.date: 10/25/2019
+ms.openlocfilehash: ef85aea957ec470b348676b553248f30d3bf8532
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259966"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874269"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Journal des modifications pour Power BI Report Server
 
@@ -23,15 +22,22 @@ Ce journal des modifications a trait à Power BI Report Server. Il répertorie l
 Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés dans Power BI Report Server](whats-new.md). 
 
 ## <a name="september-2019"></a>Septembre 2019
-
 - **Power BI Report Server**
-    - *Version : 1.6.7221.30698 (Build 15.0.1102.620), date de publication : 9 octobre 2019*
+    - *Version : 1.6.7236.4246 (Build 15.0.1102.646), date de publication : 25 octobre 2019*
+        - Mises à jour de sécurité
+        - Corrections de bogues
+            - Correctif pour .NET Framework 4.7 non installé.
+            - Correctif pour les rapports paginés pour Teradata avec des paramètres à valeurs multiples avec l’erreur 110083.
+            - Le correctif pour la valeur URLRoot ne fonctionne pas s’il existe plusieurs liaisons d’URL de service web et que l’une d’elles est https://+80/reportserver.
+          - Correctif pour les valeurs de paramètre à valeurs multiples des rapports paginés apparaissant hors de la zone de rapport.
+          
+    - *Version : 1.6.7221.30698 (Build 15.0.1102.620), date de publication : 9 octobre 2019*
         - Corrections de bogues
             - Correction pour le visuel personnalisé de filtre de texte.
             - Correction des performances des segments de liste déroulante.
             - Correction de suppression des informations d’identification personnelle de la télémétrie.
           - Correction pour que les URL ne respectent pas la casse.
-             
+          
     - *Version 1.6.7206.38019 (Build 15.0.1102.597), Publication : 26 septembre 2019*
         - Mises à jour de sécurité
         - Corrections de bogues
@@ -50,8 +56,11 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
              - API web mise à jour : /PowerBIReports({Id})/DataSources (PATCH) pour autoriser les mises à jour de la chaîne de connexion.
          
 - **Power BI Desktop optimisé pour Power BI Report Server**
-
-    - *Version : 2.73.5586.1241 (Septembre 2019), date de publication : 9 octobre 2019*
+    - *Version : 2.73.5586.1501 (septembre 2019), date de publication : 25 octobre 2019*
+        - Corrections de bogues
+            - Correctif pour les données de télémétrie.
+            
+    - *Version : 2.73.5586.1241 (Septembre 2019), date de publication : 9 octobre 2019*
         - Corrections de bogues
             - Correction pour le visuel personnalisé de filtre de texte.
             - Correction des performances des segments de liste déroulante.
@@ -295,6 +304,6 @@ Pour plus d’informations sur les nouvelles fonctionnalités, voir [Nouveautés
 [Vue d’ensemble de l’administrateur](admin-handbook-overview.md)  
 [Installer Power BI Report Server](install-report-server.md)  
 [Télécharger le Générateur de rapports](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Télécharger SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Télécharger SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

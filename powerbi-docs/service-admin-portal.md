@@ -2,21 +2,20 @@
 title: Portail d’administration Power BI
 description: Le portail d’administration permet de gérer les clients Power BI de votre organisation. Il comprend notamment des métriques d’utilisation, un accès au Centre d’administration Microsoft 365 et des paramètres.
 author: mgblythe
-ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
+ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f472ee821d0ccf3bbe8e47697f934b91668cd16d
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 9970d676019bb253471da48ce3e9019e211ba6c5
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305892"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128389"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -124,7 +123,7 @@ Les utilisateurs, les groupes et les administrateurs Power BI sont gérés dans 
 
 ![Accéder au Centre d’administration Microsoft 365](media/service-admin-portal/powerbi-admin-manage-users.png)
 
-## <a name="audit-logs"></a>Journaux d’audit
+## <a name="audit-logs"></a>Journaux d'audit
 
 Les journaux d’audit Power BI sont gérés dans le Centre de sécurité et de conformité Office 365. L’onglet **Journaux d’audit** contient un lien qui donne accès au Centre de sécurité et de conformité pour votre client. [En savoir plus](service-admin-auditing.md)
 
@@ -169,7 +168,9 @@ Les sections suivantes fournissent une vue d’ensemble des différents types de
 
 Les utilisateurs dans l’organisation peuvent accéder à l’aide interne et aux ressources de support dans le menu d’aide de Power BI. Plus précisément, ces paramètres changent le comportement des éléments du menu Apprendre, Communauté et Obtenir de l’aide.
 
-Il est également possible de spécifier une URL pour diriger les utilisateurs vers une solution personnalisée dédiée aux demandes de licences. Ce paramètre personnalise l’URL cible du bouton Mettre à niveau le compte qu’un utilisateur sans licence Power BI Pro peut trouver dans la boîte de dialogue de mise à jour vers Power BI Pro ainsi que dans la page Gérer le stockage personnel.
+    ![Enable except setting](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+
+En spécifiant une URL pour les demandes de licences, vous personnalisez l’URL cible du bouton **Mettre à niveau le compte** qu’un utilisateur sans licence Power BI Pro peut trouver dans la boîte de dialogue **Mettre à niveau vers Power BI Pro**, ainsi que dans la page **Gérer le stockage personnel**. De plus, Power BI ne propose plus le bouton **Essayez gratuitement la version Pro** dans cette boîte de dialogue ni dans la page de stockage. Ceci est fait pour garantir que Power BI guidera vos utilisateurs de manière fiable tout au long des processus définis au sein de votre organisation via votre solution de gestion des licences.
 
 ### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Recevoir des notifications par e-mail pour les pannes ou incidents du service
 
@@ -179,7 +180,7 @@ Les groupes de sécurité à extension messagerie reçoivent des notifications p
 
 ### <a name="create-workspaces"></a>Créer des espaces de travail
 
-Les administrateurs utilisent le paramètre **Créer des espaces de travail** pour indiquer aux utilisateurs de l’organisation qu’ils peuvent créer des espaces de travail d’application afin de collaborer sur des tableaux de bord, des rapports et autre contenu. En savoir [plus sur les espaces de travail d’application](service-create-the-new-workspaces.md).
+Les administrateurs utilisent le paramètre **Créer des espaces de travail** pour indiquer aux utilisateurs de l’organisation qu’ils peuvent créer des espaces de travail afin de collaborer sur des tableaux de bord, des rapports et autre contenu. En savoir plus sur les [espaces de travail](service-create-the-new-workspaces.md)
 
 Le portail d’administration comporte une autre section de paramètres sur les espaces de travail dans votre locataire. Dans cette section, vous pouvez trier et filtrer la liste des espaces de travail et afficher les détails de chaque espace de travail. Consultez [Espaces de travail](#workspaces) pour plus d’informations.
 
@@ -303,7 +304,7 @@ Les utilisateurs de l’organisation peuvent utiliser les fonctionnalités de re
 
 ### <a name="add-and-use-custom-visuals"></a>Ajouter et utiliser des visuels personnalisés
 
-Les utilisateurs de l’organisation peuvent manipuler et partager des visuels personnalisés. [En savoir plus](power-bi-custom-visuals.md)
+Les utilisateurs de l’organisation peuvent manipuler et partager des visuels personnalisés. [En savoir plus](developer/power-bi-custom-visuals.md)
 
 > [!NOTE]
 > Ce paramètre peut s’appliquer à toute l’organisation ou se limiter à des groupes particuliers.
@@ -455,7 +456,7 @@ En tant qu’administrateur, vous pouvez afficher les codes incorporés qui sont
 
  ## <a name="organizational-visuals">Visuels de l’organisation</a> 
 
-L’onglet **Visuels de l’organisation** vous permet de déployer et de gérer des visuels personnalisés au sein de votre organisation. Avec les visuels d’organisation, vous pouvez facilement déployer des visuels propriétaires dans votre organisation, que les auteurs de rapports peuvent ensuite détecter et importer dans leurs rapports à partir de Power BI Desktop. [En savoir plus](power-bi-custom-visuals-organization.md)
+L’onglet **Visuels de l’organisation** vous permet de déployer et de gérer des visuels personnalisés au sein de votre organisation. Avec les visuels d’organisation, vous pouvez facilement déployer des visuels propriétaires dans votre organisation, que les auteurs de rapports peuvent ensuite détecter et importer dans leurs rapports à partir de Power BI Desktop. [En savoir plus](developer/power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
 > Un visuel personnalisé est susceptible de contenir du code présentant des risques pour la sécurité ou la confidentialité ; vérifiez que vous faites confiance à son auteur et à sa source avant de le déployer dans le référentiel de l’organisation.
@@ -511,7 +512,7 @@ Pour mettre à jour le visuel à partir du magasin de l’organisation, sélecti
 
 Assurez-vous que l’ID du visuel reste inchangé. Le nouveau fichier remplace le fichier précédent pour tous les rapports au sein de l’organisation. Toutefois, si la nouvelle version du visuel est susceptible de rompre l’utilisation ou la structure de données de la version précédente du visuel, alors ne remplacez pas la version précédente. Au lieu de cela, vous devez créer une nouvelle liste pour la nouvelle version du visuel. Par exemple, ajoutez un nouveau numéro de version (version X.X) au titre du nouveau visuel répertorié. Ainsi, il est clair qu’il s’agit du même visuel, avec un numéro de version mis à jour, ce qui permet de ne pas rompre les fonctionnalités des rapports existants. Encore une fois, assurez-vous que l’ID du visuel reste inchangé. Puis, la prochaine fois que les utilisateurs entrent dans le référentiel de l’organisation à partir de Power BI Desktop, ils peuvent importer la nouvelle version et sont alors invités à remplacer la version déjà présente dans leur rapport.
 
-Pour plus d’informations, consultez [Questions fréquentes sur les visuels personnalisés d’une organisation](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
+Pour plus d’informations, consultez [Questions fréquentes sur les visuels personnalisés d’une organisation](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-visuals)
 
 ## <a name="dataflowStorage">Stockage de dataflows (préversion)</a>
 
@@ -545,7 +546,7 @@ En tant qu’administrateur, vous pouvez personnaliser l’apparence de Power BI
 * **Sélectionner la couleur du thème** : Vous pouvez sélectionner votre thème en fonction d’une valeur hexadécimale # RVB ou de la palette fournie.
 
 
-Pour plus d’informations, consultez [Marque personnalisée pour votre organisation](http://aka.ms/orgBranding).
+Pour plus d’informations, consultez [Marque personnalisée pour votre organisation](https://aka.ms/orgBranding).
 
 ![Liste des espaces de travail](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Étapes suivantes

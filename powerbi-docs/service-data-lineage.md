@@ -2,19 +2,18 @@
 title: Traçabilité des données (préversion)
 description: Dans les projets Business Intelligence (BI) modernes, avoir une bonne compréhension du flux de données entre la source de données et la destination constitue un défi majeur pour bon nombre de clients.
 author: paulinbar
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: e91f1d5084957ee7266161b9a34f916e2902d1f4
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 774b8b19f8b199e1d98b2bd5e079b35f1a9a6935
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019570"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877363"
 ---
 # <a name="data-lineage-preview"></a>Traçabilité des données (préversion)
 Dans les projets Business Intelligence (BI) modernes, il peut être difficile d’avoir une bonne compréhension du flux de données entre la source de données et la destination. C’est encore plus compliqué si vous avez créé des projets d’analytique avancée qui impliquent de multiples sources de données, artefacts et dépendances.  Il peut alors être difficile de répondre à des questions telles que « Que se passe-t-il si je modifie ces données ? » ou « Pourquoi ce rapport n’est-il pas à jour ? ». Pour trouver les réponses, il faut parfois demander l’aide d’experts ou faire des recherches approfondies. Nous avons conçu une vue de traçabilité des données qui pourra vous aider à répondre à ce genre de questions.
@@ -55,7 +54,7 @@ Sur les jeux de données, vous voyez l’heure de la dernière actualisation ain
  
 Si un rapport dans l’espace de travail est basé sur un jeu de données d’un autre espace de travail, le nom de l’espace de travail source est indiqué sur la carte du jeu de données. Sélectionnez le nom de l’espace de travail source pour accéder à cet espace de travail.
  
-- Pour tous les artefacts, sélectionnez les points de suspension (...) afin d’afficher le menu d’options. Ce menu comprend les mêmes actions que celles disponibles en mode Liste.
+- Pour tous les artefacts, sélectionnez **Plus d’options** (...) afin d’afficher le menu des options. Ce menu comprend les mêmes actions que celles disponibles en mode Liste.
   
 Pour afficher davantage de métadonnées sur un jeu de données, sélectionnez la carte du jeu de données. Des informations supplémentaires sur le jeu de données s’affichent dans un volet latéral.
 
@@ -89,7 +88,8 @@ La vue de traçabilité est un canevas interactif. Vous pouvez utiliser la souri
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-La vue de traçabilité n’est pas disponible sur Internet Explorer. Pour plus d’informations, consultez [Navigateurs pris en charge pour Power BI](power-bi-browsers.md).
+- La vue de traçabilité n’est pas disponible sur Internet Explorer. Pour plus d’informations, consultez [Navigateurs pris en charge pour Power BI](power-bi-browsers.md).
+- La vue de traçabilité n’est pas disponible dans Mon espace de travail.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -3,19 +3,18 @@ title: Apporter vos propres clés de chiffrement pour Power BI (préversion)
 description: Découvrez comment utiliser vos propres clés de chiffrement dans Power BI Premium.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 10/24/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 39c6dc8a60be67f8f9e99e01ae1c7249166c5ddb
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 7ab5b09aa6341acf86e039c5951e4752e260876e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877728"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881863"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Apporter vos propres clés de chiffrement pour Power BI (préversion)
 
@@ -32,6 +31,7 @@ Pour utiliser BYOK, vous devez charger les données sur le service Power BI à p
 - Connexions actives Analysis Services
 - Classeurs Excel (sauf si les données sont d’abord importées dans Power BI Desktop)
 - Transmettre des jeux de données
+- [Grands modèles](service-premium-large-models.md)
 
 BYOK s’applique uniquement au jeu de données associé au fichier PBIX, pas aux caches de résultats de requête pour les mosaïques et visuels.
 

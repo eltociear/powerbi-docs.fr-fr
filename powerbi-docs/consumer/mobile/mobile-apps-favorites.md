@@ -2,19 +2,18 @@
 title: Favoris dans les applications mobiles Power BI
 description: Découvrez comment définir et afficher vos tableaux de bord, rapports et applications Power BI favoris, vos rapports Power BI Report Server et Reporting Services, ainsi que vos indicateurs de performance clés favoris dans les applications mobiles.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 433bfc6298632eb9b999a23fe4b54417add507a3
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c4fcf7bea8bf458231533efbc88e307d8d9ba2ab
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61339352"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870673"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Définir et afficher des favoris dans les applications mobiles Power BI
 S’applique à :
@@ -44,7 +43,7 @@ Vous pouvez marquer des indicateurs de performance clés et rapports en tant que
   ![Page Favoris](./media/mobile-apps-favorites/power-bi-ipad-favorites.png)
 
 ## <a name="make-an-app-a-favorite"></a>Marquer une application en tant que favorite
-1. Dans la liste des applications dans l’application mobile, cliquez sur les points de suspension (...) en regard de l’application > **Favoris**.
+1. Dans la liste des applications dans l’application mobile, cliquez sur **Plus d’options** (...) en regard de l’application > **Favoris**.
    
     ![Menu des favoris d’application](./media/mobile-apps-favorites/power-bi-android-favorite-app-ellipsis.png)
    
@@ -65,7 +64,7 @@ Vous pouvez définir un tableau de bord ou un rapport application Power BI comme
 ## <a name="make-a-dashboard-or-report-a-favorite-in-the-android-mobile-apps"></a>Marquer un tableau de bord ou un rapport comme favori dans les applications mobiles Android
 Vous pouvez définir un tableau de bord ou un rapport application comme favori à partir de la liste des tableaux de bord ou des rapports, ou du tableau de bord ou rapport proprement dit.
 
-* Dans la liste des tableaux de bord ou des rapports dans l’application mobile, appuyez sur les trois points verticaux (...) en regard du nom, puis appuyez sur **Favoris**. Vous voyez une étoile jaune en regard du nom ![icône Favori](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
+* Dans la liste des tableaux de bord ou des rapports dans l’application mobile, appuyez sur le bouton **Plus d’options** (...) vertical en regard du nom, puis appuyez sur **Favoris**. Vous voyez une étoile jaune en regard du nom ![icône Favori](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
   
     ![Menu des favoris Android](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
 * Sur le tableau de bord ou le rapport, appuyez sur l’étoile vide dans le ruban ![Icône Non favori](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). L’étoile devient gris foncé ![Icône Favori](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
@@ -77,5 +76,5 @@ Vous pouvez afficher vos rapports et indicateurs de performance clés Power BI R
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Tableaux de bord favoris dans le service Power BI](../end-user-favorite.md) 
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

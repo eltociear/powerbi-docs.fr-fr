@@ -2,7 +2,6 @@
 title: Interaction avec une carte ArcGIS partagée avec vous
 description: Utilisation d’une carte ArcGis en mode lecture comme consommateur de rapport Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,15 +9,15 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
-ms.openlocfilehash: 7fef2c96afadad6fe39d731038f74249a4ccbf6d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 85a5f50bbccd22041bb035d14b16e4f8b76a3f7b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432307"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880728"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaction avec des cartes ArcGIS dans Power BI
-Cette rubrique est écrite du point de vue d’une personne qui *utilise* une carte ArcGIS dans le service Power BI, dans Power BI Desktop ou dans la version mobile de Power BI. Une fois qu’un créateur a partagé une carte ArcGIS avec vous, il existe de nombreuses façons d’interagir avec celle-ci.  Pour en savoir plus sur la création d’une carte ArcGIS, consultez le [tutoriel sur les cartes ArcGIS par ESRI](../visuals/power-bi-visualization-arcgis.md).
+Cette rubrique est écrite du point de vue d’une personne qui utilise une carte ArcGIS dans le service Power BI, dans Power BI Desktop ou dans la version mobile de Power BI. Une fois qu’un créateur a partagé une carte ArcGIS avec vous, il existe de nombreuses façons d’interagir avec celle-ci.  Pour en savoir plus sur la création d’une carte ArcGIS, consultez le [tutoriel sur les cartes ArcGIS par ESRI](../visuals/power-bi-visualization-arcgis.md).
 
 L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà de la simple présentation de points sur une carte, pour accéder à un nouveau niveau. Les options disponibles pour les cartes de base, les types d’emplacement, les thèmes, les styles de symbole et les couches de référence créent des visualisations de cartes informatives exceptionnelles. L’association des couches de données faisant autorité (comme des données de recensement) sur une carte avec l’analyse spatiale permet une compréhension approfondie des données dans votre visualisation.
 
@@ -28,7 +27,7 @@ L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà 
 
 L’exemple utilisé examine les ventes de l’année précédente par ville, et utilise une carte classique avec des bulles pour représenter la taille ainsi qu’une couche de référence pour les revenus moyens des ménages. La carte contient 3 épingles et un rayon indiquant le temps de transport (en violet).
 
-![](media/power-bi-visualizations-arcgis/power-bi-arcgis-esri-new.png)
+![Carte ArcGIS des États-Unis montrant des bulles, des épingles et le temps de trajet](media/power-bi-visualizations-arcgis/power-bi-arcgis-esri-new.png)
 
 > [!TIP]
 > Visitez la page d’[ESRI sur Power BI](https://www.esri.com/powerbi) pour découvrir de nombreux exemples et consulter des témoignages. Puis consultez la [page de prise en main d’ArcGIS Maps d’ESRI pour Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
@@ -38,23 +37,23 @@ L’exemple utilisé examine les ventes de l’année précédente par ville, et
 <br/>
 
 ## <a name="user-consent"></a>Consentement de l’utilisateur
-La première fois qu’un collègue partage une carte ArcGIS avec vous, Power BI affiche une invite. ArcGIS Maps for Power BI est fourni par Esri (www.esri.com) et son utilisation est soumise aux conditions générales et à la politique de confidentialité d’Esri. Les utilisateurs Power BI désireux d’utiliser les visuels ArcGIS Maps pour Power BI doivent valider la boîte de dialogue de consentement.
+La première fois qu’un collègue partage une carte ArcGIS avec vous, Power BI affiche une invite. ArcGIS Maps for Power BI est fourni par Esri(https://www.esri.com)  ; son utilisation est soumise aux conditions générales et à la politique de confidentialité d’Esri. Les utilisateurs Power BI désireux d’utiliser les visuels ArcGIS Maps pour Power BI doivent valider la boîte de dialogue de consentement.
 
 ## <a name="selection-tools"></a>Outils de sélection
 ArcGIS Maps pour Power BI offre trois modes de sélection. Il n’est pas possible de sélectionner plus de 250 points de données à la fois.
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-tools2.png)
+![Capture d’écran des trois outils de sélection](media/power-bi-visualizations-arcgis/power-bi-esri-selection-tools2.png)
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-single2.png) Sélectionne des points de données individuels.
+![capture d’écran de l’outil de sélection simple](media/power-bi-visualizations-arcgis/power-bi-esri-selection-single2.png) Sélectionne des points de données individuels.
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-marquee2.png) Dessine un rectangle sur la carte et sélectionne les points de données qu’il contient. Utilisez la touche Ctrl pour sélectionner plusieurs zones rectangulaires.
+![outil de sélection multiple](media/power-bi-visualizations-arcgis/power-bi-esri-selection-marquee2.png) Dessine un rectangle sur la carte, et sélectionne les points de données qu’il contient. Utilisez la touche Ctrl pour sélectionner plusieurs zones rectangulaires.
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-reference-layer2.png) Autorise l’utilisation de limites ou de polygones dans les couches de référence pour sélectionner des points de données.
+![outil de sélection avec des limites](media/power-bi-visualizations-arcgis/power-bi-esri-selection-reference-layer2.png) Autorise l’utilisation de limites ou de polygones dans les couches de référence pour sélectionner des points de données.
 
 <br/>
 
 ## <a name="interacting-with-an-arcgis-map"></a>Interaction avec une carte ArcGIS
-Les fonctionnalités disponibles varient selon que vous êtes le *créateur* (la personne qui a créé la carte) ou l’*utilisateur* (celui qui a partagé la carte ArcGIS avec vous). Si vous interagissez avec une carte ArcGIS en tant qu’utilisateur (en [mode Lecture](../consumer/end-user-reading-view.md)), voici les actions disponibles.
+Les fonctionnalités disponibles varient selon que vous êtes le *créateur* (la personne qui a créé la carte) ou l’*utilisateur* (celui qui a partagé la carte ArcGIS avec vous). Si vous interagissez avec une carte ArcGIS en tant que consommateur (en [mode Lecture](../consumer/end-user-reading-view.md)), voici les actions disponibles.
 
 * Si vous êtes consommateur Premium avec des autorisations d’*affichage*, vous pouvez [afficher les données qui ont servi à créer la visualisation](../consumer/end-user-show-data.md), vous [abonner](../consumer/end-user-subscribe.md), afficher la carte en [mode Focus ou Plein écran](../consumer/end-user-focus.md), [afficher le contenu associé](../consumer/end-user-related.md), [interagir avec les filtres](../consumer/end-user-report-filter.md) définis par le *créateur du rapport*, [partager le rapport](../service-share-reports.md), etc.
 
@@ -62,28 +61,28 @@ Les fonctionnalités disponibles varient selon que vous êtes le *créateur* (la
 
     
 * Développez le volet **Filtres** pour explorer la carte à l’aide de filtres.   
-    ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
+    ![Volet Filtres](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Si la carte a une couche de référence, sélectionnez des emplacements pour afficher les détails dans une info-bulle. Dans l’image ci-dessous, Adams County a été sélectionné pour afficher des données de la couche de référence sur les revenus moyens des ménages que le créateur a ajoutée à la carte.
   
-    ![](media/power-bi-visualizations-arcgis/power-bi-reference-layer.png)  
+    ![Info-bulle Adams County](media/power-bi-visualizations-arcgis/power-bi-reference-layer.png)  
   
     Un graphique est également affiché. Sélectionnez une barre du graphique pour explorer les données. Vous voyez ici que 79 ménages d’Adams County gagnent plus de 200 000 $.
   
-    ![](media/power-bi-visualizations-arcgis/power-bi-tooltip-chart.png)
+    ![Info-bulle pour une barre dans le graphique d’info-bulle d’origine](media/power-bi-visualizations-arcgis/power-bi-tooltip-chart.png)
   
     Sélectionnez la flèche pour afficher des graphiques supplémentaires.
 * Pointez sur les symboles d’emplacement sur la carte pour afficher les détails dans une info-bulle.     
-  ![](media/power-bi-visualizations-arcgis/power-bi-arcgis-hover.png)
+  ![info-bulle de l’emplacement](media/power-bi-visualizations-arcgis/power-bi-arcgis-hover.png)
   
   > [!TIP]
   > Vous devrez peut-être effectuer un zoom avant pour sélectionner un emplacement spécifique.  Sinon, si des emplacements se chevauchent, Power BI peut présenter plusieurs info-bulles. Sélectionnez les flèches pour vous déplacer entre les info-bulles.
   > 
-  > ![](media/power-bi-visualizations-arcgis/power-bi-3-screens.png)
+  > ![Info-bulle présentant trois pages](media/power-bi-visualizations-arcgis/power-bi-3-screens.png)
   > 
   > 
 * Si le créateur a ajouté une couche Infographie à la carte ArcGIS, des données supplémentaires s’affichent dans le coin supérieur droit de la carte.  Par exemple, ici, le créateur de la carte a ajouté Children under 14 (Enfants de moins de 14).
   
-    ![](media/power-bi-visualizations-arcgis/power-bi-demographics.png)
+    ![carte avec une couche Infographie](media/power-bi-visualizations-arcgis/power-bi-demographics.png)
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 ArcGIS Maps pour Power BI est disponible dans les applications et services suivants :
@@ -117,7 +116,7 @@ ArcGIS Maps pour Power BI est disponible dans les applications et services suiva
 </table>
 
 **Comment fonctionne ArcGIS Maps for Power BI ?**
-ArcGIS Maps for Power BI est fourni par Esri (www.esri.com). L’utilisation d’ArcGIS Maps for Power BI est soumise aux [conditions générales](https://go.microsoft.com/fwlink/?LinkID=8263222) et à la [politique de confidentialité](https://go.microsoft.com/fwlink/?LinkID=826323) d’Esri. Les utilisateurs Power BI désireux d’utiliser les visuels d’ArcGIS Maps for Power BI doivent confirmer leur acceptation dans la boîte de dialogue de consentement (voir Consentement de l’utilisateur pour plus de détails).  L’utilisation d’ArcGIS Maps for Power BI est soumise aux conditions générales et à la politique de confidentialité d’Esri, auxquelles vous pouvez accéder à partir des liens dans la boîte de dialogue de consentement. Chaque utilisateur doit donner son consentement avant d’utiliser ArcGIS Maps for Power BI pour la première fois. Une fois que l’utilisateur accepte le consentement, les données liées au visuel sont envoyées aux services d’Esri au moins pour le géocodage, c’est-à-dire la transformation des informations de localisation en latitude et longitude qui peuvent être représentées sur une carte. Prenez en compte que toutes les données liées à la visualisation des données peuvent être envoyées aux services d’Esri. Esri fournit des services comme les cartes de base, l’analytique spatiale, le géocodage, etc. Le visuel ArcGIS Maps for Power BI interagit avec ces services à l’aide d’une connexion SSL protégée par un certificat fourni et géré par Esri. Des informations supplémentaires sur ArcGIS Maps for Power BI peuvent être obtenues dans la [page de produit ArcGIS Maps for Power BI](https://www.esri.com/powerbi) d’Esri.
+ArcGIS Maps for Power BI est fourni par Esri (https://www.esri.com). L’utilisation d’ArcGIS Maps for Power BI est soumise aux [conditions générales](https://go.microsoft.com/fwlink/?LinkID=8263222) et à la [politique de confidentialité](https://go.microsoft.com/fwlink/?LinkID=826323) d’Esri. Les utilisateurs Power BI désireux d’utiliser les visuels d’ArcGIS Maps for Power BI doivent confirmer leur acceptation dans la boîte de dialogue de consentement (voir Consentement de l’utilisateur pour plus de détails).  L’utilisation d’ArcGIS Maps for Power BI est soumise aux conditions générales et à la politique de confidentialité d’Esri, auxquelles vous pouvez accéder à partir des liens dans la boîte de dialogue de consentement. Chaque utilisateur doit donner son consentement avant d’utiliser ArcGIS Maps for Power BI pour la première fois. Une fois que l’utilisateur accepte le consentement, les données liées au visuel sont envoyées aux services d’Esri au moins pour le géocodage, c’est-à-dire la transformation des informations de localisation en latitude et longitude qui peuvent être représentées sur une carte. Prenez en compte que toutes les données liées à la visualisation des données peuvent être envoyées aux services d’Esri. Esri fournit des services comme les cartes de base, l’analytique spatiale, le géocodage, etc. Le visuel ArcGIS Maps for Power BI interagit avec ces services à l’aide d’une connexion SSL protégée par un certificat fourni et géré par Esri. Des informations supplémentaires sur ArcGIS Maps for Power BI peuvent être obtenues dans la [page de produit ArcGIS Maps for Power BI](https://www.esri.com/powerbi) d’Esri.
 
 **Power BI Plus**    
 ![Sélectionnez l’icône Plus pour vous inscrire ou vous connecter](media/power-bi-visualizations-arcgis/power-bi-plus.png)

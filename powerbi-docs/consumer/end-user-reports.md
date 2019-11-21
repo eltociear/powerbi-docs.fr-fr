@@ -2,7 +2,6 @@
 title: Rapports dans le service Power BI
 description: Rapports dans le service Power BI pour les consommateurs
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,14 +9,16 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 3f6f534b71ba6d8e8798418275c4758a95fc6fb5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903731"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851222"
 ---
 # <a name="reports-in-power-bi"></a>Rapports dans Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Un rapport Power BI est un affichage sous plusieurs angles d’un jeu de données, avec des visuels représentant différents résultats et insights de ce jeu de données.  Un rapport peut avoir un seul visuel ou des pages entières de visuels. Selon votre fonction principale, vous pouvez soit *concevoir* des rapports, soit *consommer* (utiliser) des rapports. Cet article s’adresse aux *consommateurs*.
 
@@ -27,7 +28,7 @@ A. Dans ce rapport de six pages (ou onglets), vous visualisez actuellement la pa
 B. Cette page comprend cinq visuels et un titre de page.    
 C. Le volet *Filtres* nous montre un filtre appliqué à toutes les pages du rapport. Pour réduire le volet Filtres, sélectionnez la flèche ( **>** ).    
 D. La bannière Power BI affiche le nom du rapport et la date de la dernière mise à jour. Sélectionnez la flèche pour ouvrir un menu qui affiche également le nom du propriétaire du rapport.    
-E. La barre d’action contient les actions que vous pouvez effectuer sur ce rapport.  Par exemple, vous pouvez ajouter un commentaire, afficher un signet ou exporter des données à partir du rapport.  Sélectionnez les points de suspension (...) pour afficher une liste de fonctionnalités de rapport supplémentaires.    
+E. La barre d’action contient les actions que vous pouvez effectuer sur ce rapport.  Par exemple, vous pouvez ajouter un commentaire, afficher un signet ou exporter des données à partir du rapport.  Sélectionnez **Plus d’options** (...) pour afficher une liste de fonctionnalités de rapport supplémentaires.    
 
 Si vous débutez dans Power BI, vous pouvez acquérir de bonnes bases en lisant [Concepts de base pour les consommateurs du service Power BI](end-user-basic-concepts.md). Les rapports peuvent être visualisés, partagés et annotés sur des appareils mobiles. Pour plus d’informations, consultez [Explorer des rapports dans les applications mobiles Power BI](mobile/mobile-reports-in-the-mobile-apps.md).
 

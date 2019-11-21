@@ -2,19 +2,18 @@
 title: Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 description: Le service Power BI vous permet de créer des tableaux de bord et des rapports ou de vous y connecter. Affichez-les ensuite dans les applications mobiles Power BI.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: e5e8df2be443b215a02f196c4f676af1cbff6275
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654620"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870666"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Afficher des tableaux de bord et des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -40,7 +39,7 @@ Voici un tableau de bord Power BI dans le service Power BI :
 ## <a name="view-dashboards-on-your-iphone"></a>Afficher des tableaux de bord sur votre iPhone
 1. Ouvrez l’application Power BI sur votre iPhone et connectez-vous.
    
-   Vous avez besoin de [télécharger l’application iPhone](http://go.microsoft.com/fwlink/?LinkId=522062) depuis l’Apple App Store ?
+   Vous avez besoin de [télécharger l’application iPhone](https://go.microsoft.com/fwlink/?LinkId=522062) depuis l’Apple App Store ?
 2. Appuyez sur un tableau de bord pour l’ouvrir.  
    
     ![Appuyez sur le tableau de bord](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
@@ -80,7 +79,7 @@ Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom av
 ## <a name="view-dashboards-on-your-ipad"></a>Afficher des tableaux de bord sur votre iPad
 1. Ouvrez l’application Power BI.
    
-   Vous devez d’abord [télécharger l’application iPad](http://go.microsoft.com/fwlink/?LinkId=522062) à partir de l’Apple App Store ?
+   Vous devez d’abord [télécharger l’application iPad](https://go.microsoft.com/fwlink/?LinkId=522062) à partir de l’Apple App Store ?
 2. Cliquez sur **Tableaux de bord** en haut de l’application.  
    
    ![Page d’accueil du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
@@ -103,7 +102,7 @@ Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom av
 ## <a name="view-dashboards-on-your-android-phone"></a>Afficher des tableaux de bord sur votre téléphone Android
 1. Ouvrez l’application Power BI sur votre téléphone Android et connectez-vous.
    
-   Faut-il d’abord [télécharger l’application Android](http://go.microsoft.com/fwlink/?LinkID=544867) ?
+   Faut-il d’abord [télécharger l’application Android](https://go.microsoft.com/fwlink/?LinkID=544867) ?
 2. Appuyez sur un tableau de bord pour l’ouvrir.   
    
    ![Page d’accueil du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
@@ -118,7 +117,7 @@ Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom av
 
     Si vous êtes le propriétaire du tableau de bord, [dans le service Power BI](../../service-create-dashboard-mobile-phone-view.md), vous pouvez créer une vue du tableau de bord spécifiquement pour les téléphones en mode portrait. 
 
-1. Dans le tableau de bord, vous pouvez appuyer sur les points de suspension (...) verticaux en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
+1. Dans le tableau de bord, vous pouvez appuyer sur le bouton **Plus d’options** (...) vertical en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
    
    ![Menu Points de suspension](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Balayez vers le haut ou vers le bas pour voir toutes les [vignettes du tableau de bord](mobile-tiles-in-the-mobile-apps.md). 
@@ -127,14 +126,14 @@ Vous pouvez utiliser le mouvement du « pincement » pour effectuer un zoom av
 ## <a name="view-dashboards-on-your-android-tablet"></a>Afficher des tableaux de bord sur votre tablette Android
 1. Ouvrez l’application Power BI sur votre tablette Android et connectez-vous.
    
-   Faut-il d’abord [télécharger l’application Android](http://go.microsoft.com/fwlink/?LinkID=544867) ?
+   Faut-il d’abord [télécharger l’application Android](https://go.microsoft.com/fwlink/?LinkID=544867) ?
 2. Appuyez sur un tableau de bord pour l’ouvrir.   
    
    ![Page d’accueil du tableau de bord](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
    * Les étoiles jaunes ![Étoile Favori](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) indiquent les tableaux de bord favoris. 
    * La notation au-dessous de chaque nom de tableau de bord (dans cet exemple, MBI) ![Classification des données](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) montre comment les données de chaque tableau de bord sont classées. En savoir plus sur la [classification des données dans Power BI](../../service-data-classification.md).
-3. Dans le tableau de bord, vous pouvez appuyer sur les points de suspension (...) verticaux en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
+3. Dans le tableau de bord, vous pouvez appuyer sur le bouton **Plus d’options** (...) vertical en regard du nom pour inviter un collègue, actualiser ou obtenir des informations sur le tableau de bord :
    
    ![Menu Points de suspension](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Balayez vers le haut ou vers le bas pour voir toutes les [vignettes du tableau de bord](mobile-tiles-in-the-mobile-apps.md). 
@@ -154,8 +153,8 @@ Si vous êtes le propriétaire du tableau de bord, *dans le service Power BI*, 
 Pour en savoir plus sur la création d’une vue téléphone d’un tableau de bord, [cliquez ici](../../service-create-dashboard-mobile-phone-view.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Télécharger l’application Android](http://go.microsoft.com/fwlink/?LinkID=544867) à partir de Google Play  
+* [Télécharger l’application Android](https://go.microsoft.com/fwlink/?LinkID=544867) à partir de Google Play  
 * [Prise en main de l’application Android pour Power BI](mobile-android-app-get-started.md)  
-* [Qu’est-ce que Power BI ?](../../power-bi-overview.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

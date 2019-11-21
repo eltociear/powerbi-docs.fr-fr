@@ -2,7 +2,6 @@
 title: Sécurité au niveau des lignes avec Power BI
 description: Configuration de DirectQuery et de la sécurité au niveau des lignes pour les jeux de données importés dans le service Power BI
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.author: mblythe
 ms.date: 09/09/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 04a8c8a08d885427e9de43b719674fce4ac2ebbd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6ce3a65489c60cabb1dd705ce3243c4cec6abe40
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074853"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873514"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sécurité au niveau des lignes avec Power BI
 
@@ -28,7 +27,7 @@ Vous pouvez configurer la sécurité au niveau des lignes (SNL) pour les modèle
 
 Par défaut, le filtrage de la sécurité au niveau des lignes utilise des filtres unidirectionnels, même si les relations sont définies à sens unique ou bidirectionnel. Vous pouvez activer manuellement le filtrage croisé bidirectionnel avec une sécurité au niveau des lignes en sélectionnant la relation et en cochant la case **Appliquer le filtre de sécurité dans les deux directions**. Il est préférable de cocher cette case quand vous avez également implémenté une sécurité dynamique au niveau des lignes au niveau du serveur, laquelle se base sur un nom d’utilisateur ou un ID de connexion.
 
-Pour plus d’informations, consultez [Filtrage croisé bidirectionnel avec DirectQuery dans Power BI Desktop](desktop-bidirectional-filtering.md) et [Sécurisation du modèle sémantique BI tabulaire](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
+Pour plus d’informations, consultez [Filtrage croisé bidirectionnel avec DirectQuery dans Power BI Desktop](desktop-bidirectional-filtering.md) et [Sécurisation du modèle sémantique BI tabulaire](https://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx).
 
 ![Appliquer un filtre de sécurité](media/service-admin-rls/rls-apply-security-filter.png)
 
@@ -70,7 +69,7 @@ Vous pouvez supprimer des membres en cliquant sur la croix correspondant à leur
 
 Vous pouvez vérifier que le rôle que vous avez défini fonctionne correctement en le testant. 
 
-1. Sélectionnez les **points de suspension (...)** situés en regard du rôle.
+1. Sélectionnez **Plus d’options** (...) en regard du rôle.
 2. Sélectionnez **Tester les données comme rôle**
 
 ![Tester comme rôle](media/service-admin-rls/rls-test-role.png)
@@ -89,12 +88,12 @@ Pour revenir à l’affichage normal, sélectionnez **Retour à la sécurité au
 
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
-## <a name="using-rls-with-app-workspaces-in-power-bi"></a>Utilisation de la sécurité au niveau des lignes (SNL) avec des espaces de travail d’applications dans Power BI
+## <a name="using-rls-with-workspaces-in-power-bi"></a>Utilisation de la sécurité au niveau des lignes (SNL) avec des espaces de travail dans Power BI
 
-Si vous publiez votre rapport Power BI Desktop dans un espace de travail d’applications du service Power BI, les rôles sont appliqués aux membres en lecture seule. Vous devez alors indiquer dans les paramètres de l’espace de travail d’applications que les membres peuvent uniquement afficher du contenu Power BI.
+Si vous publiez votre rapport Power BI Desktop dans un espace de travail du service Power BI, les rôles sont appliqués aux membres en lecture seule. Vous devez alors indiquer dans les paramètres de l’espace de travail que les membres peuvent uniquement afficher du contenu Power BI.
 
 > [!WARNING]
-> Si vous avez configuré l’espace de travail d’applications afin que les membres disposent d’autorisations de modification, les rôles SNL ne s’appliquent pas à eux. Les utilisateurs sont en mesure de voir toutes les données.
+> Si vous avez configuré l’espace de travail pour que les membres disposent d’autorisations de modification, les rôles SNL ne leur sont pas appliqués. Les utilisateurs sont en mesure de voir toutes les données.
 
 ![Paramètres de groupe](media/service-admin-rls/rls-group-settings.png)
 
@@ -105,4 +104,4 @@ Si vous publiez votre rapport Power BI Desktop dans un espace de travail d’app
 ## <a name="next-steps"></a>Étapes suivantes
 [Sécurité au niveau des lignes avec Power BI Desktop](desktop-rls.md)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

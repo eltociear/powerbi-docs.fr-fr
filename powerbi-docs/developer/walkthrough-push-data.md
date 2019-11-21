@@ -3,18 +3,17 @@ title: Transmission de données à un jeu de données
 description: Transmission de données à un jeu de données Power BI
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222157"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875450"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Transmission de données à un jeu de données Power BI
 
@@ -43,7 +42,7 @@ Voici les opérations permettant de transmettre des données à un jeu de donné
 * [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
 * [Obtenir des groupes](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
-Vous créez un jeu de données dans Power BI en passant une chaîne JSON (JavaScript Objet Notation) au service Power BI. Pour en savoir plus sur JSON, consultez [Présentation de JSON](http://json.org/).
+Vous créez un jeu de données dans Power BI en passant une chaîne JSON (JavaScript Objet Notation) au service Power BI. Pour en savoir plus sur JSON, consultez [Présentation de JSON](https://json.org/).
 
 La chaîne JSON d’un jeu de données est au format suivant :
 
@@ -112,13 +111,13 @@ Pour un schéma de table Power BI, vous pouvez utiliser les types de données su
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>En savoir plus sur la transmission de données à Power BI
 
-Pour commencer à transmettre des données à un jeu de données, consultez [Étape 1 : Inscrire une application avec Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) dans le volet de navigation gauche.
+Pour commencer à transmettre des données à un jeu de données, consultez [Étape 1 : Inscrire une application avec Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) dans le volet de navigation.
 
 [Étape suivante >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [S’inscrire à Power BI](create-an-azure-active-directory-tenant.md)  
-[Présentation de JSON](http://json.org/)  
+[Présentation de JSON](https://json.org/)  
 [Vue d’ensemble de l’API REST Power BI](overview-of-power-bi-rest-api.md)  
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

@@ -2,19 +2,18 @@
 title: 'Tutoriel : poser des questions à l’aide de l’analyste virtuel Questions et réponses dans des applications iOS'
 description: Dans ce tutoriel, posez des questions concernant l’exemple de données en utilisant vos propres mots avec l’analyste virtuel des questions et réponses dans l’application mobile Power BI sur votre appareil iOS.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 74949d2b71dbdca46bbda9623a962616a72af45e
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c7fd216d50f918d96392532ccb82f80d619ce8a3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61337405"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869655"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Tutoriel : poser des questions sur vos données avec l’analyste virtuel Questions et réponses dans des applications iOS pour Power BI
 
@@ -42,7 +41,7 @@ Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](
 ## <a name="prerequisites"></a>Conditions préalables
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Installer l’application Power BI pour iOS
-[Téléchargez l’application iOS](http://go.microsoft.com/fwlink/?LinkId=522062 "Téléchargez l’application iPhone") à partir de l’Apple App Store sur votre iPad, iPhone ou iPod touch.
+[Téléchargez l’application iOS](https://go.microsoft.com/fwlink/?LinkId=522062 "Télécharger l’application iPhone") à partir de l’Apple App Store sur votre iPad, iPhone ou iPod touch.
 
 Les versions suivantes prennent en charge l’application Power BI pour iOS :
 - iPad sous iOS 10 (et versions ultérieures) ;
@@ -54,11 +53,11 @@ La première étape du tutoriel consiste à télécharger l’exemple Analyse de
 
 1. Ouvrez le service Power BI dans votre navigateur (app.powerbi.com) et connectez-vous.
 
-1. Sélectionnez l’icône de navigation globale pour ouvrir le volet de navigation de gauche.
+1. Sélectionnez l’icône de navigation globale pour ouvrir le volet de navigation.
 
     ![icône de navigation globale](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-global-nav-icon.png)
 
-2. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail** > **Mon espace de travail**.
+2. Dans le volet de navigation, sélectionnez **Espaces de travail** > **Mon espace de travail**.
 
     ![Mon espace de travail](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-my-workspace.png)
 
@@ -117,7 +116,7 @@ Une fois que vous avez terminé le tutoriel, vous pouvez supprimer le tableau de
 
 1. Ouvrez le service Power BI (app.powerbi.com) et connectez-vous.
 
-2. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail** > **Mon espace de travail**.
+2. Dans le volet de navigation, sélectionnez **Espaces de travail** > **Mon espace de travail**.
 
 3. Dans l’onglet **Tableaux de bord**, sélectionnez l’icône **Supprimer** de la corbeille en regard du tableau de bord Opportunity Analysis (Analyse des opportunités).
 

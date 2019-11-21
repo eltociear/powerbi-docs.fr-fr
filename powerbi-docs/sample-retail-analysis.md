@@ -2,7 +2,6 @@
 title: 'Retail Analysis sample pour Power BI : Visite guidée'
 description: 'Retail Analysis sample pour Power BI : Visite guidée'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 42e3a95e344e17d1ceba11911fc8aa349ebafd0c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962232"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858567"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Retail Analysis sample pour Power BI : Visite guidée
 
@@ -54,11 +53,11 @@ Vous n’avez pas besoin d’une licence Power BI pour explorer les exemples dan
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 
-Vous pouvez aussi télécharger l’Exemple Analyse de la vente au détails en tant que [fichier .pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), qui est conçu pour être utilisé avec Power BI Desktop. 
+Vous pouvez aussi télécharger l’Exemple Analyse de la vente au détails en tant que [fichier .pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), qui est conçu pour être utilisé avec Power BI Desktop. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529778). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529778). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>Démarrer sur le tableau de bord et ouvrir le rapport
 
@@ -78,7 +77,7 @@ Si vous souhaitez afficher la source de données de cet exemple, elle est égale
 
    La région **FD-01** a la moyenne la plus élevée pour **Sales per Square Foot**, et FD-02 a **Total Sales Variance** le plus faible par rapport à l’année dernière. FD-03 et FD-04 sont au global les régions les moins performantes.
 4. Sélectionnez des bulles individuelles ou d’autres graphiques pour mettre en évidence des informations croisées, reflétant l’impact de vos sélections.
-5. Pour revenir au tableau de bord, sélectionnez **Retail Analysis Sample** dans la barre de navigation du haut.
+5. Pour revenir au tableau de bord, sélectionnez **Exemple Analyse de la vente au détail** dans le volet de navigation du haut.
 
    ![Barre de navigation](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 6. Dans le tableau de bord, sélectionnez la vignette **This Year’s Sales New & Existing Stores**, ce qui équivaut à taper *This year sales* dans la zone Questions et réponses.

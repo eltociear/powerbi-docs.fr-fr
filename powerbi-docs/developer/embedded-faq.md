@@ -3,22 +3,21 @@ title: Questions fréquentes sur Power BI Embedded
 description: Parcourir une liste de questions fréquentes et de réponses sur Power BI Embedded.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 62b5498558b2c89a23e2ed2caf3dacdf343d3a79
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: 9e641b70c9fd6c6d378628d34413b14c59eaea23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490351"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864229"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Questions fréquentes sur Power BI Embedded
 
-* Si vous avez des questions, [essayez d’interroger la communauté Power BI](http://community.powerbi.com/).
+* Si vous avez des questions, [essayez d’interroger la communauté Power BI](https://community.powerbi.com/).
 * Le problème persiste ? Visitez la [page de support Power BI](https://powerbi.microsoft.com/support/).
 
 ## <a name="general"></a>Général
@@ -67,7 +66,7 @@ Voici une liste non exhaustive des différences de fonctionnalités qui existent
 | Caractéristique | Power BI Embedded | Capacité Power BI Premium | Capacité Power BI Premium |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | Capacité Azure SKU A | Capacité O365 SKU EM | Capacité O365 SKU P |
-| Incorporer des artefacts provenant d’un espace de travail d’application Power BI | Oui | Oui | Oui |
+| Incorporer des artefacts provenant d’un espace de travail Power BI | Oui | Oui | Oui |
 | Utiliser des rapports Power BI dans une application incorporée - SaaS | Non | Oui | Oui |
 | Utiliser des rapports Power BI dans une application incorporée - PaaS | Oui | Oui | Oui |
 | Utiliser des rapports Power BI dans SharePoint | Non | Oui | Oui |
@@ -146,7 +145,7 @@ Oui, les applets de commande PowerShell et les API REST Azure Resource Manager v
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Quel est le rôle d’une capacité dédiée PBI Embedded dans une solution PBI Embedded ?
 
-Pour [promouvoir votre solution en production](embed-sample-for-customers.md#move-to-production), vous devez affecter le contenu Power BI (espace de travail d’application) que votre application utilise à une capacité Power BI Embedded (référence SKU A).
+Pour [promouvoir votre solution en production](embed-sample-for-customers.md#move-to-production), vous devez affecter le contenu Power BI (espace de travail) que votre application utilise à une capacité Power BI Embedded (référence SKU A).
 
 ### <a name="in-what-azure-regions-is-pbi-embedded-available"></a>Dans quelles régions Azure PBI Embedded est-il disponible ?
 
@@ -362,4 +361,4 @@ Vous pouvez découvrir comment modifier vos données Power BI [ici](https://docs
 
 Pour plus d’informations, consultez [Résolution des problèmes de votre application incorporée](embedded-troubleshoot.md).
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

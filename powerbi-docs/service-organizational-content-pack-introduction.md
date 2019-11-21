@@ -2,20 +2,19 @@
 title: Présentation des packs de contenu d’organisation dans Power BI
 description: Consultez les informations relatives à la réalisation de packages de vos propres tableaux de bord, rapports, classeurs Excel et jeux de données, que vous pouvez partager avec vos collègues dans des packs de contenu d’organisation.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e54750d928918fd77c2bf93577cf1d3d0634ca97
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: b766cc4eae71b94a28e12ba989f85542fec2ab83
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020621"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871994"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Présentation des packs de contenu d’organisation dans Power BI
 > [!NOTE]
@@ -26,7 +25,7 @@ Vous distribuez régulièrement des rapports par courrier électronique à votre
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
-La création de packs de contenu est différente du partage de tableaux de bord ou de la collaboration sur ces derniers dans un espace de travail d’application. Pour déterminer l’option la plus adaptée à votre situation, consultez [Comment partager des tableaux de bord, rapports et vignettes ?](service-how-to-collaborate-distribute-dashboards-reports.md). 
+La création de packs de contenu est différente du partage de tableaux de bord ou de la collaboration sur ces derniers dans un espace de travail. Pour déterminer l’option la plus adaptée à votre situation, consultez [Comment partager des tableaux de bord, rapports et vignettes ?](service-how-to-collaborate-distribute-dashboards-reports.md). 
 
 Dans AppSource, vous pouvez parcourir ou rechercher les packs de contenu publiés à l’ensemble de l’organisation, à des groupes de distribution ou de sécurité, ainsi qu’à des [groupes Office 365 auxquels vous appartenez](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Si vous n’êtes pas membre d’un groupe spécifique, vous ne voyez pas les packs de contenu partagés avec ce groupe. Tous les membres du groupe ont le même accès en lecture seule aux données des packs de contenu, rapports, classeurs et tableaux de bord (sauf s’il s’agit d’une source de données SQL Server Analysis Services (SSAS), auquel cas vos privilèges sont hérités avec la source de données).
 
@@ -54,7 +53,7 @@ Le cycle de vie ressemble à ceci :
    > 
    > 
 2. Nate envoie un message au groupe de distribution, en lui donnant des informations sur le nouveau pack de contenu.
-3. Dans Power BI Pro, Jane, un membre du groupe de distribution Marketing, recherche ce pack de contenu et s’y connecte dans AppSource. Jane en possède maintenant une copie en lecture seule. Elle sait qu’il est en lecture seule, car dans le volet de navigation gauche, une icône de partage est affichée à gauche du nom du tableau de bord et du nom des rapports. Quand elle sélectionne le tableau de bord, une icône de verrou indique à Jane qu’elle consulte un tableau de bord de pack de contenu. 
+3. Dans Power BI Pro, Jane, un membre du groupe de distribution Marketing, recherche ce pack de contenu et s’y connecte dans AppSource. Jane en possède maintenant une copie en lecture seule. Elle sait qu’il est en lecture seule, car dans le volet de navigation, une icône de partage est affichée à gauche du nom du tableau de bord et du nom des rapports. Quand elle sélectionne le tableau de bord, une icône de verrou indique à Jane qu’elle consulte un tableau de bord de pack de contenu. 
 4. Par exemple, elle décide de le personnaliser. Elle dispose maintenant de sa propre copie du tableau de bord et des rapports. Son travail n’affecte pas la source, le pack de contenu d’origine ou d’autres membres du groupe de distribution. Elle travaille maintenant sur sa propre copie du tableau de bord et des rapports.
 5. Nate apporte des mises à jour au tableau de bord, puis publie une nouvelle version du pack de contenu.
    
@@ -63,11 +62,11 @@ Le cycle de vie ressemble à ceci :
 6. Par exemple, Nate modifie les paramètres de sécurité. Julio et Jane n’ont plus accès au contenu. Supposons par exemple qu’ils sont supprimés du groupe de distribution Marketing.
    
    * Julio n’a pas personnalisé le pack de contenu d’origine : le contenu est donc automatiquement supprimé. 
-   * Jane a personnalisé le pack de contenu. La prochaine fois qu’elle ouvre le tableau de bord, toutes les vignettes provenant du pack de contenu d’origine ont disparu, mais les vignettes qu’elle a épinglées à partir d’autres rapports (qu’elle a toujours l’autorisation d’utiliser) sont toujours présentes. Les rapports et le jeu de données associés ne sont plus disponibles (et n’apparaissent pas dans son volet de navigation gauche).
+   * Jane a personnalisé le pack de contenu. La prochaine fois qu’elle ouvre le tableau de bord, toutes les vignettes provenant du pack de contenu d’origine ont disparu, mais les vignettes qu’elle a épinglées à partir d’autres rapports (qu’elle a toujours l’autorisation d’utiliser) sont toujours présentes. Les rapports et le jeu de données associés ne sont plus disponibles (et n’apparaissent pas dans son volet de navigation).
 7. Ou bien, Nate supprime le pack de contenu.
    
    * Julio n’a pas personnalisé le pack de contenu d’origine : le contenu est donc automatiquement supprimé. 
-   * Jane a personnalisé le pack de contenu. La prochaine fois qu’elle ouvre le tableau de bord, toutes les vignettes provenant du pack de contenu d’origine ont disparu, mais les vignettes qu’elle a épinglées à partir d’autres rapports sont toujours présentes. Les rapports et le jeu de données associés ne sont plus disponibles (et n’apparaissent pas dans son volet de navigation gauche).
+   * Jane a personnalisé le pack de contenu. La prochaine fois qu’elle ouvre le tableau de bord, toutes les vignettes provenant du pack de contenu d’origine ont disparu, mais les vignettes qu’elle a épinglées à partir d’autres rapports sont toujours présentes. Les rapports et le jeu de données associés ne sont plus disponibles (et n’apparaissent pas dans son volet de navigation).
 
 ## <a name="data-security"></a>Sécurité des données
 Tous les membres d’un groupe de distribution ont les mêmes autorisations sur les données que le créateur du pack de contenu. Les jeux de données tabulaires locaux SSAS (SQL Server Analysis Services) sont la seule exception. Étant donné que les rapports et les tableaux de bord se connectent en direct au modèle SSAS local, les informations d’identification de chaque membre du groupe de distribution sont utilisées pour déterminer les données auxquelles celui-ci peut accéder.
@@ -76,5 +75,5 @@ Tous les membres d’un groupe de distribution ont les mêmes autorisations sur 
 * [Créer et publier un pack de contenu d’organisation](service-organizational-content-pack-create-and-publish.md)
 * [Créer et distribuer une application dans Power BI](service-create-distribute-apps.md) 
 * [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

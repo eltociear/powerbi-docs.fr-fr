@@ -2,20 +2,19 @@
 title: Power BI pour les clients US Government - Vue d’ensemble
 description: Si vous êtes un client US Government, découvrez les fonctionnalités et limitations du service Power BI US Government
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/09/2019
+ms.date: 10/24/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 748594dcf9f71677057b8641e44f1408bebd1b89
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 225c21693c9f100d9abbfc310b957bee7a909061
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715351"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881357"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -60,6 +59,7 @@ Certaines des fonctionnalités disponibles dans la version commerciale du **serv
 * **Partage avec des utilisateurs externes** : le partage est autorisé au sein d’un même locataire Power BI et, depuis juin 2018, il est également autorisé avec des utilisateurs extérieurs à votre locataire Power BI. Consultez [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Métriques d’utilisation des tableaux de bord et des rapports** : les métriques d’utilisation ne sont pas disponibles pour les rapports et les tableaux de bord. Les clients peuvent utiliser les données du journal d’audit pour obtenir des informations sur l’utilisation du contenu dans leur organisation.
 * **Dataflows** - Les dataflows ne sont pas disponibles.
+* **Rapports paginés** - Des rapports paginés sont actuellement disponibles dans USGov Virginia uniquement.  La prise en charge de USGov Texas est planifiée, mais pas encore disponible.
 
 Si vous avez des licences gratuites **Power BI** attribuées à votre compte, ces comptes s’exécutent dans une version commerciale du service **Power BI** et ne font pas partie de l’offre **Power BI US Government**. Pour ces comptes Gratuits, vous pouvez rencontrer les problèmes suivants :
 

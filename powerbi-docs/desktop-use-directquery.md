@@ -2,7 +2,6 @@
 title: Utilisation de DirectQuery dans Power BI Desktop
 description: Utiliser DirectQuery (connexion active) dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 08b739c5be01efed5abf8258540b5ab66b3b390b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654779"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876071"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Utilisation de DirectQuery dans Power BI Desktop
 Avec **Power BI Desktop**, lorsque vous vous connectez à votre source de données, vous pouvez toujours importer une copie des données dans **Power BI Desktop**. Pour certaines sources de données, une autre approche consiste à se connecter directement à la source de données à l’aide de **DirectQuery**.
@@ -70,7 +69,7 @@ Lors de l’utilisation de **DirectQuery**, vous devez prendre en considération
       The resultset of a query to external data source has exceeded
   
   Cette situation peut se produire avec un simple graphique qui comprend une colonne de la cardinalité très élevée, avec l’option d’agrégation définie sur *ne pas résumer*. L’élément visuel doit avoir uniquement des colonnes avec une cardinalité inférieure à 1 million, ou des filtres appropriés doivent avoir appliqués.
-* **Sécurité** : tous les utilisateurs d’un rapport publié se connectent à la source de données principale en utilisant les informations d’identification entrées après la publication sur le service Power BI. C’est la même situation que quand des données sont importées : tous les utilisateurs voient les mêmes données, indépendamment des règles de sécurité définies dans la source principale. Les clients qui souhaitent une sécurité par utilisateur implémentée avec des sources DirectQuery doivent utiliser RLS (ou SNL, Sécurité au niveau des lignes). [En savoir plus sur RLS](service-admin-rls.md).
+* **Sécurité** : par défaut, tous les utilisateurs qui consomment un rapport publié se connectent à la source de données back-end en utilisant les informations d’identification entrées après la publication sur le service Power BI. C’est la même situation que quand des données sont importées : tous les utilisateurs voient les mêmes données, indépendamment des règles de sécurité définies dans la source principale. Les clients qui souhaitent une sécurité par utilisateur implémentée avec des sources DirectQuery doivent utiliser la sécurité au niveau des lignes ou configurer l’authentification Kerberos contrainte par rapport à la source. Kerberos n’est pas disponible pour toutes les sources. [En savoir plus sur RLS](service-admin-rls.md). [Découvrez plus d’informations sur Kerberos dans DirectQuery](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos). 
 * **Fonctionnalités prises en charge** : les fonctionnalités de **Power BI Desktop** ne sont pas toutes prises en charge en mode **DirectQuery**, ou leur prise en charge est limitée. De plus, certaines fonctionnalités du service Power BI (telles que *Informations rapides*) qui ne sont pas disponibles pour les jeux de données utilisent **DirectQuery**. Ainsi, la limitation de telles fonctionnalités lors de l’utilisation de **DirectQuery** doit être prise en considération pour déterminer l’opportunité d’utiliser **DirectQuery**.   
 
 ## <a name="publish-to-the-power-bi-service"></a>Publication sur le service Power BI
@@ -88,7 +87,7 @@ Power BI affiche la fenêtre **Paramètres** . À partir de là, sélectionnez 
 
 Tant que les informations d’identification n’ont pas été fournies, l’ouverture d’un rapport publié ou l’exploration d’un jeu de données créé avec une connexion **DirectQuery** à de telles sources de données génère une erreur.
 
-Pour des sources de données autres que **Azure SQL Database**, **Azure SQL Data Warehouse** et **Redshift** qui utilisent DirectQuery, une **passerelle de données locale** doit être installée et la source de données doit être inscrite pour permettre la connexion aux données. Si vous le souhaitez, vous pouvez [en apprendre davantage sur la passerelle de données locale](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+Pour des sources de données autres que **Azure SQL Database**, **Azure SQL Data Warehouse** et **Redshift** qui utilisent DirectQuery, une **passerelle de données locale** doit être installée et la source de données doit être inscrite pour permettre la connexion aux données. Si vous le souhaitez, vous pouvez [en apprendre davantage sur la passerelle de données locale](https://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour plus d’informations sur **DirectQuery**, consultez les ressources suivantes :

@@ -3,7 +3,6 @@ title: Optimiser les capacités Microsoft Power BI Premium
 description: Décrit les stratégies d’optimisation pour les capacités de Power BI Premium.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1fb775bd203fc1e0f6342a0d5cd4d9e382b8342a
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: d2e8ede356ed015c4c35b311ca58d35366324b9a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750913"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871913"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimiser les capacités Premium
 
@@ -33,7 +32,7 @@ Enfin, les approches de test et le dimensionnement de la capacité Premium concl
 
 Lorsque vous essayez d’obtenir des performances et une utilisation optimales, il existe des pratiques recommandées, notamment :
 
-- l’utilisation d’espaces de travail d’application au lieu d’espaces de travail personnels.
+- l’utilisation d’espaces de travail au lieu d’espaces de travail personnels
 - la séparation des informations décisionnelles libre-service (SSBI) et critiques pour l’entreprise en différentes capacités.
 
   ![Séparation des informations décisionnelles libre-service et critiques pour l’entreprise en différentes capacités](media/service-premium-capacity-optimize/separate-capacities.png)
@@ -257,7 +256,7 @@ Il est important que les tests soient reproductibles. Les tests doivent être ex
 
 Si vous disposez déjà d’une capacité et des rapports pour lesquels vous souhaitez charger un test, utilisez l’[outil de génération de charge PowerShell](https://aka.ms/PowerBILoadTestingTool) pour générer rapidement un test de charge. L’outil vous permet d’estimer le nombre d’instances de chaque rapport que votre capacité peut exécuter en une heure. Vous pouvez utiliser l’outil pour évaluer l’aptitude de votre capacité à effectuer un rendu de rapport individuel ou à afficher plusieurs rapports en parallèle. Pour plus d’informations, consultez la vidéo [Microsoft Power BI: Capacité Premium](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
-Pour générer un test plus complexe, envisagez de développer une application de test de charge simulant une charge de travail réaliste. Pour plus d’informations, consultez le webinaire [Applications Power BI de test de charge avec le test de charge Visual Studio](https://powerbi.microsoft.com/en-us/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
+Pour générer un test plus complexe, envisagez de développer une application de test de charge simulant une charge de travail réaliste. Pour plus d’informations, consultez le webinaire [Applications Power BI de test de charge avec le test de charge Visual Studio](https://powerbi.microsoft.com/blog/week-4-11-webinars-load-testing-power-bi-applications-with-visual-studio-load-test-and-getting-started-with-cds-for-apps-based-model-driven-apps/).
 
 ## <a name="acknowledgements"></a>Accusés de réception
 

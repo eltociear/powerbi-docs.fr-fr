@@ -2,7 +2,6 @@
 title: Se connecter à Recherche Azure avec Power BI
 description: Recherche Azure pour Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8b7560570af4f1b459cdde8589c0afdb9194e154
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 511fb6674d84cc0d206fdb1807fcb9ebf9e41d30
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060931"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873099"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Se connecter à Recherche Azure avec Power BI
 Azure Search Traffic Analytics vous permet de surveiller et de comprendre le trafic vers votre service Recherche Azure. Le pack de contenu Recherche Azure pour Power BI fournit des informations détaillées sur vos données de recherche, notamment les recherches, indexations, statistiques du service et latences des 30 derniers jours. Pour plus de détails, consultez ce [billet de blog Azure](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
@@ -25,10 +24,10 @@ Azure Search Traffic Analytics vous permet de surveiller et de comprendre le tra
 Connectez-vous au [pack de contenu Recherche Azure](https://app.powerbi.com/getdata/services/azure-search) pour Power BI.
 
 ## <a name="how-to-connect"></a>Comment se connecter
-1. Sélectionnez **Obtenir des données** en bas du volet de navigation gauche.
+1. Sélectionnez **Obtenir des données** en bas du volet de navigation.
    
    ![](media/service-connect-to-azure-search/pbi_getdata.png) 
-2. Dans la zone **Services** , sélectionnez **Obtenir**.
+2. Dans la zone **Services**, sélectionnez **Obtenir**.
    
    ![](media/service-connect-to-azure-search/pbi_getservices.png) 
 3. Sélectionnez **Recherche Azure**\>**Obtenir**.

@@ -2,23 +2,24 @@
 title: Découvrir le volet Filtres de rapport
 description: Guide pratique pour ajouter un filtre à un rapport dans le service Power BI pour les consommateurs
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a1dee67279e6f43c0ff8008338f7b8a9f5a2d41a
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: af784c772ddbdd895f7e6c576d91d4e2fec8ffeb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841195"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862042"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Découvrir le volet Filtres de rapport
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Cet article présente le volet **Filtres** de rapport du service Power BI. Utilisez les filtres pour découvrir de nouveaux insights dans vos données.
 
@@ -34,11 +35,14 @@ Quand un collègue partage un rapport avec vous, recherchez le volet **Filtres**
 
 Le volet **Filtres** contient les filtres qui ont été ajoutés au rapport par son *concepteur*. Les *consommateurs* comme vous peuvent interagir avec les filtres existants et enregistrer les changements, mais ils ne peuvent pas ajouter de nouveaux filtres au rapport. Par exemple, dans la capture d’écran ci-dessus, le concepteur a ajouté trois filtres au niveau de la page : **Le segment est Tout**, **l’année est 2014** et **la région est Central**. Vous pouvez interagir avec ces filtres et les changer, mais vous ne pouvez pas ajouter de quatrième filtre au niveau de la page.
 
-Dans le service Power BI, les rapports conservent tous les changements que vous apportez dans le volet **Filtres**. Le service transmet ces changements à la version mobile du rapport.
+Dans le service Power BI, les rapports conservent tous les changements que vous apportez dans le volet **Filtres**. Le service transmet ces changements à la version mobile du rapport. 
 
 Pour réinitialiser le volet **Filtres** aux valeurs par défaut du concepteur, sélectionnez **Rétablir les valeurs par défaut** dans la barre de menus du haut.
 
 ![Capture d’écran de l’icône Rétablir les valeurs par défaut.](media/end-user-report-filter/power-bi-reset-icon.png) 
+
+> [!NOTE]
+> Si vous ne voyez pas l’option **Rétablir les valeurs par défaut**, elle a peut-être été désactivée par le *concepteur* de rapports. Le *concepteur* peut également verrouiller des filtres spécifiques afin que vous ne puissiez pas les changer.
 
 ## <a name="view-all-the-filters-for-a-report-page"></a>Afficher tous les filtres d’une page de rapport
 

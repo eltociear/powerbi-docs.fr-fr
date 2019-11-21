@@ -2,21 +2,19 @@
 title: Conseils et astuces pour poser des questions avec Questions et réponses
 description: Conseils et astuces pour poser des questions avec Questions et réponses dans Power BI
 author: mihart
-manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
+ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 10/23/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a6b489c11087e43ed8b10ce9bdf8088b97f48e8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67408193"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862400"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Conseils pour poser des questions dans le moteur Questions et réponses de Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Mots et terminologie reconnus par Questions et réponses
@@ -79,7 +77,9 @@ Questions et réponses fait de son mieux pour comprendre et répondre à la ques
 * Fournit un extrait de la réponse sous forme de visuel. Le visuel se met à jour à mesure que vous tapez et modifiez la question (sans attendre que vous ayez appuyé sur Entrée).
 * Utilise la suggestion automatique pour proposer des termes de remplacement provenant des classeurs sous-jacents lorsque vous replacez le curseur dans la zone Question.
 * Reformule la question en fonction des données du ou des jeux de données sous-jacents. Questions et réponses remplace les mots que vous utilisez par des synonymes provenant des jeux de données sous-jacents. En lisant la reformulation, vous savez si Questions et réponses a bien compris votre question ou pas. 
-* Estompe les mots incompris.
+* Ajoute un double souligné aux mots qu’il ne comprend pas.
+* Ajoute un simple souligné aux mots qu’il comprend.
+* Vous permet de contacter le propriétaire du rapport ou du tableau de bord quand votre terme est introuvable ou que votre question n’obtient pas de résultats.
 
 ## <a name="dont-stop-now"></a>Continuez sur votre lancée
 Une fois que Questions et réponses a affiché vos résultats, poursuivez la conversation. Utilisez les fonctionnalités interactives du visuel et de Questions et réponses pour découvrir d’autres perspectives.
@@ -89,5 +89,5 @@ Revenir à [Q&R dans Power BI](end-user-q-and-a.md)
 
 [Power BI – Concepts de base](end-user-basic-concepts.md)  
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

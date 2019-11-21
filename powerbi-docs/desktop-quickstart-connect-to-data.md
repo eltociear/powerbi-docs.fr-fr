@@ -2,7 +2,6 @@
 title: 'Démarrage rapide : Se connecter aux données'
 description: Se connecter à une source de données dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: quickstart
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 253ecbad775a2f4aa7dd1974c534fdcaa222676c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1366a5281a36293a484f08c12ab9f8891e29123d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514450"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876209"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Démarrage rapide : Se connecter à des données dans Power BI Desktop
 
@@ -28,12 +27,12 @@ Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](
 ## <a name="prerequisites"></a>Conditions préalables
 
 Pour effectuer les étapes décrites dans cet article, les opérations suivantes sont nécessaires :
-* Téléchargez et installez **Power BI Desktop**, une application gratuite qui s’exécute sur votre ordinateur local. Vous pouvez [télécharger **Power BI Desktop**](https://powerbi.microsoft.com/desktop) directement, ou l’obtenir à partir [du **Microsoft Store**](http://aka.ms/pbidesktopstore).
-* [Téléchargez cet exemple de classeur Excel](http://go.microsoft.com/fwlink/?LinkID=521962), puis créez un dossier appelé *C:\PBID-qs* dans lequel vous pouvez stocker le fichier Excel. Les étapes suivantes de ce démarrage rapide utilisent cet emplacement pour le stockage du classeur Excel téléchargé.
+* Téléchargez et installez **Power BI Desktop**, une application gratuite qui s’exécute sur votre ordinateur local. Vous pouvez [télécharger **Power BI Desktop**](https://powerbi.microsoft.com/desktop) directement, ou l’obtenir à partir [du **Microsoft Store**](https://aka.ms/pbidesktopstore).
+* [Téléchargez cet exemple de classeur Excel](https://go.microsoft.com/fwlink/?LinkID=521962), puis créez un dossier appelé *C:\PBID-qs* dans lequel vous pouvez stocker le fichier Excel. Les étapes suivantes de ce démarrage rapide utilisent cet emplacement pour le stockage du classeur Excel téléchargé.
 
 ## <a name="launch-power-bi-desktop"></a>Démarrer Power BI Desktop
 
-Après avoir installé **Power BI Desktop**, lancez l’application pour l’exécuter sur votre ordinateur local. Un canevas vierge apparaît, dans lequel vous pouvez créer des éléments visuels et des rapports à partir des données auxquelles vous vous connectez. 
+Après avoir installé **Power BI Desktop**, lancez l’application pour l’exécuter sur votre ordinateur local. Vous voyez un tutoriel Power BI. Suivez le tutoriel, ou cliquez sur ceci et démarrez avec un canevas vierge, où vous pouvez créer des visuels et des rapports à partir des données auxquelles vous vous connectez. 
 
 ![Power BI Desktop - canevas vierge](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 

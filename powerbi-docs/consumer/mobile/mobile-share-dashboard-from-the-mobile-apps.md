@@ -2,19 +2,18 @@
 title: Partager un tableau de bord ou un rapport à partir des applications mobiles Power BI
 description: Invitez d’autres utilisateurs à consulter vos tableaux de bord et vos rapports en partageant des liens à partir des applications mobiles Power BI. Découvrez comment.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 75d315463601110dee61d293a7a41abbf30aaa2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61274437"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879076"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Partager un tableau de bord ou un rapport à partir des applications mobiles Power BI
 S’applique à :
@@ -86,7 +85,7 @@ Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
 3. Pour annuler le partage, appuyez sur le cercle rouge en regard du nom et appuyez sur **Supprimer**.
 
 ## <a name="share-from-your-android-device"></a>Partager à partir de votre appareil Android
-1. Dans la page d’accueil des tableaux de bord ou rapports, appuyez sur les points de suspension (...) et sur **Inviter un collègue**.
+1. Dans la page d’accueil des tableaux de bord ou rapports, appuyez sur **Plus d’options** (...) et sur **Inviter un collègue**.
    
    ![Inviter un collègue](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
 2. Ou, dans un tableau de bord ou un rapport, appuyez sur l’icône Inviter ![Icône Inviter](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
@@ -147,5 +146,5 @@ Vous pouvez uniquement annuler un partage dont vous êtes propriétaire.
 ## <a name="next-steps"></a>Étapes suivantes
 * [Annoter et partager la capture instantanée d’une vignette, d’un rapport ou d’un visuel dans les applications mobiles](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Partager un tableau de bord ou un rapport dans Power BI](../../service-share-dashboards.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

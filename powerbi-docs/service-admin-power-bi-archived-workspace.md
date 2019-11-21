@@ -2,7 +2,6 @@
 title: Espace de travail archivé Power BI
 description: Espace de travail archivé Power BI après la gestion de votre client Office 365
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 891ffffd885e2b5d59cba64e6e99ce7fe3cf811b
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 66bf203cad577df0c985fbd73bcab3c6d79f6a95
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175655"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873563"
 ---
 # <a name="power-bi-archived-workspace"></a>Espace de travail archivé Power BI
 
@@ -24,7 +23,7 @@ ms.locfileid: "71175655"
 
 Avec Power BI, tout le monde peut s’inscrire et commencer à utiliser le service en quelques minutes.  Par la suite, le service informatique de votre organisation peut choisir d’assurer la gestion de Power BI pour les utilisateurs de votre organisation.  Dans ce cas, vous bénéficiez de la gestion centralisée des utilisateurs et des autorisations dans votre organisation. Vous pouvez également profiter d’une connexion rationalisée avec les mêmes nom d’utilisateur et mot de passe utilisés pour d’autres services dans votre organisation.
 
-Tout contenu que vous avez créé avant que le service informatique n’assume la gestion de Power BI est placé dans un espace de travail archivé Power BI, accessible à partir de la navigation de gauche dans [Power BI](https://app.powerbi.com). Vous devez commencer à créer du contenu Power BI dans Mon espace de travail, qui est un emplacement sécurisé et géré par le service informatique de votre organisation.  Votre espace de travail archivé continue à exister, mais il existe des restrictions quant aux actions que vous pouvez effectuer sur le contenu dans cet espace de travail.  Pour supprimer ces restrictions, vous devez migrer le contenu de votre espace de travail archivé vers Mon espace de travail, qui est géré par votre service informatique.
+Tout contenu que vous avez créé avant que le service informatique n’assume la gestion de Power BI est placé dans un espace de travail archivé Power BI, accessible à partir du volet de navigation de [Power BI](https://app.powerbi.com). Vous devez commencer à créer du contenu Power BI dans Mon espace de travail, qui est un emplacement sécurisé et géré par le service informatique de votre organisation.  Votre espace de travail archivé continue à exister, mais il existe des restrictions quant aux actions que vous pouvez effectuer sur le contenu dans cet espace de travail.  Pour supprimer ces restrictions, vous devez migrer le contenu de votre espace de travail archivé vers Mon espace de travail, qui est géré par votre service informatique.
 
 ## <a name="restrictions-in-your-archived-workspace"></a>Restrictions applicables à votre espace de travail archivé
 
@@ -50,5 +49,5 @@ Pour continuer à utiliser Power BI, vous devez créer du contenu dans Mon espac
 
 * **Tableaux de bord** : Les tableaux de bord installés dans le cadre de packs de contenu sont recréés automatiquement lorsque vous vous reconnectez au pack de contenu dans Mon espace de travail. Si vous avez créé vos propres tableaux de bord par l’intermédiaire du service Power BI, recréez-les dans Mon espace de travail.
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

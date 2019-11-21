@@ -2,7 +2,6 @@
 title: Se connecter à Salesforce avec Power BI
 description: Salesforce pour Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b351ba2151937b62002dc0cfca849cff58985581
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 6fedd3994a9e6a14ea89637a0c12aa8dd47928a9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060809"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854639"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Se connecter à Salesforce avec Power BI
 Avec Power BI, vous pouvez facilement vous connecter à votre compte Salesforce.com. Avec cette connexion, vous pouvez récupérer vos données Salesforce et bénéficier automatiquement d’un tableau de bord et d’un rapport.
@@ -23,7 +22,7 @@ Avec Power BI, vous pouvez facilement vous connecter à votre compte Salesforce
 En savoir plus sur l’[intégration Salesforce](https://powerbi.microsoft.com/integrations/salesforce) à Power BI.
 
 ## <a name="how-to-connect"></a>Comment se connecter
-1. Dans Power BI, sélectionnez **Obtenir des données** en bas du volet de navigation gauche.
+1. Dans Power BI, sélectionnez **Obtenir des données** en bas du volet de navigation.
    
    ![](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. Dans la zone **Services**, sélectionnez **Obtenir**.
@@ -53,7 +52,7 @@ En savoir plus sur l’[intégration Salesforce](https://powerbi.microsoft.com/i
      
      Si vous ne voyez aucun rapport, ajoutez-en ou créez-en dans votre compte Salesforce, puis reconnectez-vous.
 
-7. Sélectionnez **Se connecter** pour commencer le processus d’importation. Pendant l’importation, une notification vous indique que l’importation est en cours. Une fois l’importation terminée, un tableau de bord, un rapport et un jeu de données pour vos données Salesforce sont listés dans le volet de navigation de gauche.
+7. Sélectionnez **Se connecter** pour commencer le processus d’importation. Pendant l’importation, une notification vous indique que l’importation est en cours. Une fois l’importation terminée, un tableau de bord, un rapport et un jeu de données pour vos données Salesforce sont listés dans le volet de navigation.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 

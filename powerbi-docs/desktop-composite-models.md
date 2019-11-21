@@ -2,7 +2,6 @@
 title: Utiliser des modèles composites dans Power BI Desktop
 description: Créer des modèles de données avec plusieurs connexions de données et des relations plusieurs-à-plusieurs dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ae896fb737eda6f95efa1589f2b3384e7426cf30
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: c79994f2144dfe019c3ac10a51230d17b75b542e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654579"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876577"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Utiliser des modèles composites dans Power BI Desktop
 
@@ -53,7 +52,7 @@ Par exemple, avec des modèles composites, il est possible de générer un modè
 Un modèle combinant les données de plusieurs sources DirectQuery ou DirectQuery avec des données d’importation est appelé *modèle composite*.
 
 
-Vous pouvez créer des relations entre les tables comme vous l’avez toujours fait, même quand ces tables proviennent de différentes sources, en tenant compte de la restriction suivante : toutes les relations entre sources doivent être définies comme ayant une cardinalité *plusieurs-à-plusieurs*, quelle que soit leur cardinalité réelle. Le comportement de ces relations est alors le même que d’habitude pour les relations *plusieurs-à-plusieurs*, comme décrit dans [Relations plusieurs-à-plusieurs dans Power BI Desktop (préversion)](desktop-many-to-many-relationships.md). 
+Vous pouvez créer des relations entre les tables comme vous le faites habituellement, même si ces tables proviennent de différentes sources. Toutes les relations entre les sources sont créées avec une cardinalité *plusieurs-à-plusieurs*, indépendamment de leur cardinalité réelle. Vous pouvez changer la cardinalité initiale à un-à-plusieurs, plusieurs-à-un ou un-à-un. Quelle que soit la cardinalité choisie, les relations entre les sources présentent un comportement différent en ce sens que vous ne pouvez pas utiliser de fonctions DAX pour récupérer des valeurs du côté « un » à partir du côté « plusieurs ». Vous pouvez également constater un impact sur les performances par rapport aux relations plusieurs-à-plusieurs au sein de la même source.
 
 > [!NOTE]
 > Dans le contexte des modèles composites, toutes les tables importées sont en fait une source unique, indépendamment de la source de données sous-jacente réelle à partir de laquelle elles sont importées.   
@@ -88,7 +87,7 @@ De même, dans le champ **Relationship view** (Vue de la relation) dans Power BI
 
 ![Vue de la relation des tables](media/desktop-composite-models/composite-models_08.png)
 
-Nous devons maintenant associer ces tables aux autres tables du modèle. Comme toujours, nous créons une relation entre la table **Bike** à partir de SQL Server et la table **ProductManagers** importée. Autrement dit, la relation est établie entre *Bike[ProductName]* et *ProductManagers[ProductName]* . Comme indiqué précédemment, toutes les relations dans la source doivent avoir la cardinalité *plusieurs-à-plusieurs* par défaut. 
+Nous devons maintenant associer ces tables aux autres tables du modèle. Comme toujours, nous créons une relation entre la table **Bike** à partir de SQL Server et la table **ProductManagers** importée. Autrement dit, la relation est établie entre *Bike[ProductName]* et *ProductManagers[ProductName]* . Comme nous l’avons vu précédemment, toutes les relations entre sources ont la cardinalité *plusieurs-à-plusieurs* par défaut. 
 
 ![Fenêtre Créer une relation](media/desktop-composite-models/composite-models_09.png)
 

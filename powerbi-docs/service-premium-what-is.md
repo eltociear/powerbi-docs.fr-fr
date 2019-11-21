@@ -3,20 +3,19 @@ title: Présentation de Microsoft Power BI Premium
 description: Power BI Premium fournit à votre organisation une capacité dédiée, ce qui lui permet de bénéficier de performances plus fiables et d’utiliser de plus gros volumes de données, sans qu’il soit nécessaire d’acquérir une licence pour chaque utilisateur.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/17/2019
+ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: c46b58369c334ff5364cee00bb5c3f8cd025adf0
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: f62387feebca089b2afbb919419365fd7e09c2d3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305839"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871821"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -53,7 +52,7 @@ Les abonnements Power BI Premium peuvent être achetés par les administrateurs
 
 Avec Power BI Premium, vous bénéficiez de *capacités dédiées*. Contrairement à une capacité partagée où les charges de travail sont exécutées sur des ressources de calcul partagées avec d’autres clients, la capacité dédiée est utilisée exclusivement par une même organisation. Celle-ci est isolée et comprend des ressources de calcul dédiées qui offrent des performances fiables et constantes pour le contenu hébergé. 
 
-Les espaces de travail résident sur des capacités. Chaque utilisateur Power BI dispose d’un espace de travail personnel nommé **Mon espace de travail**. Vous pouvez créer d’autres espaces de travail appelés **espaces de travail d’application** pour permettre la collaboration. Par défaut, les espaces de travail, qui incluent également les espaces de travail personnels, sont créés dans une capacité partagée. Si vous avez des capacités Premium, vous pouvez leur affecter aussi bien des espaces de travail personnels que des espaces de travail d’application.
+Les espaces de travail résident sur des capacités. Chaque utilisateur Power BI dispose d’un espace de travail personnel nommé **Mon espace de travail**. Vous pouvez créer d’autres espaces de travail appelés **espaces de travail** pour permettre la collaboration. Par défaut, les espaces de travail, qui incluent également les espaces de travail personnels, sont créés dans une capacité partagée. Si vous avez des capacités Premium, vous pouvez leur affecter aussi bien des espaces de travail personnels que des espaces de travail classiques.
 
 ### <a name="capacity-nodes"></a>Nœuds de capacité
 
@@ -71,7 +70,7 @@ Les ressources et les limites de chaque référence SKU Premium (et des référ
 
 | Nœuds de capacité | Total des v-cores | Cœurs virtuels backend | RAM (Go) | Cœurs virtuels frontend | DirectQuery/Connexions actives (par seconde) | Parallélisme des actualisations de modèles |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0.5 | 2.5 | 0.5 | 3,75 | 1 |
+| EM1/A1 | 1 | 0.5 | 3 | 0.5 | 3,75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -124,11 +123,11 @@ Les administrateurs généraux Office 365 et les administrateurs du service Pow
 
 Lors de la création de capacités, la plupart des tâches d’administration peuvent être effectuées dans le [portail d’administration](service-admin-portal.md).
 
-![Portail d’administration](media/service-premium-what-is/premium-admin-portal.png)
+![Portail d'administration](media/service-premium-what-is/premium-admin-portal.png)
 
 Les administrateurs des capacités peuvent affecter des espaces de travail aux capacités, gérer les autorisations utilisateur et leur affecter d’autres administrateurs. Les administrateurs des capacités peuvent également configurer des charges de travail, ajuster les allocations de mémoire et si nécessaire, redémarrer une capacité en réinitialisant les opérations en cas de surcharge de la capacité.
 
-![Portail d’administration](media/service-premium-what-is/premium-admin-portal-mgmt.png)
+![Portail d'administration](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
 Les administrateurs des capacités peuvent également vérifier qu’une capacité s’exécute correctement. Ils peuvent superviser l’intégrité des capacités dans le portail d’administration ou à l’aide de l’application Métriques de capacité Power BI Premium.
 
@@ -140,7 +139,7 @@ La supervision des capacités Premium permet aux administrateurs de connaître l
 
 Dans le portail, la supervision fournit un aperçu rapide des métriques, où sont indiquées les charges appliquées et les ressources utilisées par votre capacité en moyenne au cours des sept derniers jours. 
 
-![Portail d’administration](media/service-premium-what-is/premium-admin-portal-health.png)
+![Portail d'administration](media/service-premium-what-is/premium-admin-portal-health.png)
 
 L’application **Métriques de capacité Power BI Premium** fournit des informations plus détaillées sur les performances de vos capacités. L’application fournit un tableau de bord d’aperçu, ainsi que des rapports plus détaillés.
 
@@ -166,19 +165,21 @@ Selon la référence SKU, vous pouvez charger jusqu’à **10 Go** de fichiers
 
 ### <a name="size-considerations"></a>Considérations relatives à la taille
 
-Les modèles volumineux peuvent consommer beaucoup de ressources. Pour les modèles supérieurs à 1 Go, vous devez disposer au moins d’une référence SKU P1. Même si vous pouvez publier des modèles volumineux dans des espaces de travail comprenant des références SKU allant de A à A3, vous ne pourrez pas les actualiser.
+Les jeux de données volumineux peuvent consommer beaucoup de ressources. Pour les jeux de données supérieurs à 1 Go, vous devez disposer au moins d’une référence SKU P1. Même si vous pouvez publier des jeux de données volumineux dans des espaces de travail comprenant des références SKU allant de A à A3, vous ne pourrez pas les actualiser.
 
-Le tableau suivant décrit les références SKU recommandées pour différentes tailles de fichiers .pbix :
+Le tableau suivant présente les références SKU recommandées pour le chargement ou la publication de fichiers .pbix sur le service Power BI :
 
-   |Référence SKU  |Taille de fichier .pbix   |
+   |Référence  |Taille de fichier .pbix   |
    |---------|---------|
    |P1    | < 3 Go        |
    |P2    | < 6 Go        |
    |P3, P4, P5    | jusqu’à 10 Go   |
 
-La référence (SKU) A4 Power BI Embedded est égale à la référence P1, A5 = P2 et A6 = P3. La publication de grands modèles pour des références SKU A et EM peut retourner des erreurs qui ne sont pas spécifiques à l’erreur de limitation de taille du modèle dans la capacité partagée. Les erreurs d’actualisation pour les grands modèles dans les références SKU A et EM sont susceptibles de pointer vers des expirations de délai. 
+La référence (SKU) A4 Power BI Embedded est égale à la référence P1, A5 = P2 et A6 = P3. La publication de jeux de données pour des références SKU A et EM peut retourner des erreurs qui ne sont pas spécifiques à l’erreur de limitation de taille du modèle dans la capacité partagée. Les erreurs d’actualisation pour les jeux de données dans les références SKU A et EM sont susceptibles de pointer vers des expirations de délai.
 
-Vos fichiers .pbix contiennent des données dans un *format fortement compressé*. Les données seront probablement développées plusieurs fois lors de leur chargement en mémoire, et dès lors peuvent être encore développées plusieurs fois au moment de l’actualisation.
+Si vous autorisez les [modèles volumineux](service-premium-large-models.md) sur un jeu de données, les limitations de taille des fichiers .pbix s’appliquent toujours au chargement ou à la publication des fichiers. Toutefois, quand une actualisation incrémentielle est associée à des modèles volumineux, la taille des jeux de données peut largement dépasser ces limites. Avec des modèles volumineux, la limitation de taille des jeux de données dépend uniquement de la taille de la capacité Power BI Premium.
+
+Vos fichiers .pbix contiennent des données dans un *format fortement compressé*. Les données seront probablement développées lors de leur chargement en mémoire et, dès lors, peuvent être encore développées plusieurs fois au moment de l’actualisation.
 
 L’actualisation planifiée de jeux de données volumineux peut nécessiter beaucoup de temps et de ressources. Il est donc important de ne pas planifier un trop grand nombre d’actualisations en même temps. Nous recommandons de configurer l’[actualisation incrémentielle](service-premium-incremental-refresh.md), car elle est plus rapide, plus fiable et consomme moins de ressources.
 

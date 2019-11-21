@@ -2,7 +2,6 @@
 title: Vue Rapport dans Power BI Desktop
 description: Vue Rapport dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 06b8c9d0be2ec8bc5b350767263bfc5e0ab4ec81
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142160"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877866"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Vue Rapport dans Power BI Desktop
 Si vous avez déjà utilisé Power BI, vous savez combien il est facile de créer des rapports fournissant des perspectives et des informations dynamiques sur vos données. En outre, Power BI met à votre disposition d’autres fonctions avancées dans Power BI Desktop. Grâce  à Power BI Desktop, vous pouvez créer des requêtes avancées, combiner des données de plusieurs sources, créer des relations entre des tables et bien plus encore.
@@ -29,7 +28,7 @@ Quand vous chargez pour la première fois des données dans Power BI Desktop, 
 
 ![Power BI Desktop](media/desktop-report-view/pbi_reportviewinpbidesigner_reportview.png)
 
-Vous pouvez basculer entre la **vue Rapport**, la **vue Données** et la **vue Relations** en sélectionnant les icônes dans la barre de navigation gauche :
+Vous pouvez basculer entre la **vue Rapport**, la **vue Données** et la **vue Relations** en sélectionnant les icônes dans le volet de navigation gauche :
 
 ![Icône affichage Rapport](media/desktop-report-view/pbi_reportviewinpbidesigner_changeview.png)
 

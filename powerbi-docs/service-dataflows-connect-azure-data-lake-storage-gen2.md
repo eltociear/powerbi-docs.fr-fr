@@ -2,7 +2,6 @@
 title: Découvrez comment connecter Azure Data Lake Storage Gen 2 à Power BI pour le stockage de flux de données
 description: Utilisez vos propres données pour les flux de données à l’aide d’Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: c48ae0913d0096546c23d22d3e4596fdb21aef82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160365"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872710"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)
 
@@ -105,7 +104,7 @@ Pour accorder des autorisations sur le système de fichiers, vous appliquez des 
 
 Pour rechercher des applications de votre locataire, procédez comme suit :
 
-1. Dans le [portail Azure](https://portal.azure.com/), sélectionnez **Azure Active Directory** dans le volet de navigation de gauche.
+1. Dans le [portail Azure](https://portal.azure.com/), sélectionnez **Azure Active Directory** dans le volet de navigation.
 2. Dans le panneau Azure **Active Directory**, sélectionnez **Applications d’entreprise**.
 3. Dans le menu déroulant **Type d’application**, sélectionnez **Toutes les applications** , puis sélectionnez **Appliquer**. Un échantillon des applications de votre locataire s’affiche, similaire à l’image suivante.
 
@@ -183,7 +182,7 @@ Il existe également quelques problèmes connus, comme décrit dans cette sectio
 
 Les clients de Power BI Desktop ne peuvent pas accéder aux flux de données stockés dans un **compte de stockage Azure Data Lake Storage** , sauf s’ils propriétaires du flux de données ou ont été autorisés dans le dossier CDM dans le Data Lake. Le scénario est le suivant :
 
-1. Anna a créé un nouvel espace de travail d’application et l’a configuré pour stocker les flux de données dans Data Lake de l’organisation. 
+1. Anna a créé un espace de travail et l’a configuré pour stocker les dataflows dans le lac de données de l’organisation. 
 2. Ben, qui est également membre de l’espace de travail créé par Anna, aimerait tirer parti de Power BI Desktop et du connecteur de flux de données pour obtenir des données à partir du flux de données créé par Anna.
 3. Ben reçoit une erreur similaire, car il n’a pas été autorisé à accéder au dossier CDM du flux de données dans le Data Lake.
 
@@ -223,4 +222,4 @@ Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire so
 * [Dossiers CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [Définition du fichier model CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Vous pouvez aussi [poser des questions à la Communauté Power BI](http://community.powerbi.com/).
+Vous pouvez aussi [poser des questions à la Communauté Power BI](https://community.powerbi.com/).

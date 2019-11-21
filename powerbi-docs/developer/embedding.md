@@ -3,7 +3,6 @@ title: Analytique intégrée avec Power BI
 description: Power BI offre des API pour utiliser l’analytique incorporée pour vos tableaux de bord et vos rapports dans des applications. Découvrez plus en détail l’incorporation avec Power BI à la fois dans un environnement PaaS et un environnement SaaS à l’aide de logiciels d’analytique intégrés, d’outils d’analytique intégrés ou d’outils d’analyse décisionnelle intégrés.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: d2e52ff986bb2bba0caf5168c5038bb55011144a
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: ccd5917b91d9dd0576f0f4607f84f849f6df145d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391526"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875773"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Analytique intégrée avec Power BI
 
-Le service Power BI (SaaS) et le service Power BI Embedded dans Azure (PaaS) comportent des API permettant d’incorporer des tableaux de bord et des rapports. Lors de l’incorporation de contenu, vous pouvez ainsi accéder aux dernières fonctionnalités Power BI, comme des tableaux de bord, des passerelles et des espaces de travail d’application.
+Le service Power BI (SaaS) et le service Power BI Embedded dans Azure (PaaS) comportent des API permettant d’incorporer des tableaux de bord et des rapports. Lors de l’incorporation de contenu, vous pouvez ainsi accéder aux dernières fonctionnalités Power BI, comme des tableaux de bord, des passerelles et des espaces de travail.
 
 Vous pouvez passer par l’[outil de configuration de l’incorporation](https://aka.ms/embedsetup) pour démarrer et télécharger rapidement un exemple d’application.
 
@@ -85,7 +84,7 @@ Les développeurs utilisant Power BI Embedded peuvent consacrer du temps à la 
 > [!IMPORTANT]
 > Même si l’incorporation nécessite le service Power BI, vos clients n’ont pas besoin de disposer d’un compte Power BI pour afficher le contenu incorporé de votre application. 
 
-Quand vous êtes prêt à passer en mode de production, vous devez affecter une capacité dédiée à votre espace de travail d’application. Power BI Embedded dans Microsoft Azure offre des [capacités dédiées](azure-pbie-create-capacity.md) à utiliser avec vos applications.
+Quand vous êtes prêt à passer en mode de production, vous devez affecter une capacité dédiée à votre espace de travail. Power BI Embedded dans Microsoft Azure offre des [capacités dédiées](azure-pbie-create-capacity.md) à utiliser avec vos applications.
 
 Pour obtenir des informations sur l’incorporation, consultez le [Guide pratique pour incorporer du contenu Power BI](embed-sample-for-customers.md).
 
@@ -102,4 +101,4 @@ Vous pouvez maintenant essayer incorporer du contenu de Power BI dans une applic
 > [!div class="nextstepaction"]
 >[Incorporer pour vos clients](embed-sample-for-customers.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: 'Mode Focus et mode plein écran : comment zoomer pour afficher plus de détails'
 description: Documentation pour l’affichage d’un tableau de bord Power BI, d’une vignette de tableau de bord, d’un rapport, ou d’un visuel de rapport en mode focus ou plein écran
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
@@ -11,14 +10,16 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a52fdbefabf84df22c89b0e933d56352fedf5da1
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 633aaf4bd06634f0b1cc7eb2dd38b56eec0cfaf0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327802"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852750"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Afficher du contenu plus en détail : mode Focus et plein écran
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
@@ -36,7 +37,7 @@ Le mode Focus et le mode plein écran sont deux façons de voir plus de détails
 
 ![tableau de bord en mode normal et en mode plein écran](media/end-user-focus/power-bi-dashboards-focus.png)
 
-Affichez le contenu de votre service Power BI (tableaux de bord, pages de rapport, vignettes et visuels) sans vous laisser distraire par les menus et barres de navigation.  Vous disposez en permanence d’une vue instantanée complète, et sans fioritures, de votre contenu. Elle est parfois appelée mode TV.   
+Affichez le contenu de votre service Power BI (tableaux de bord, pages de rapport, vignettes et visuels) sans vous laisser distraire par les menus et volets de navigation.  Vous disposez en permanence d’une vue instantanée complète, et sans fioritures, de votre contenu. Elle est parfois appelée mode TV.   
 
 Pour ouvrir le mode plein écran, sélectionnez l’icône **plein écran** ![icône plein écran ](media/end-user-focus/power-bi-full-screen-icon.png) dans la barre de menus du service Power BI au-dessus de votre tableau de bord, rapport, mosaïque en mode Focus ou visuel en mode Focus.  Votre contenu sélectionné occupe tout l’écran.
 Si vous utilisez Power BI mobile, [le plein écran est disponible pour les applications mobiles Windows 10](./mobile/mobile-windows-10-app-presentation-mode.md). 
@@ -58,7 +59,7 @@ En mode Focus, un *consommateur* Power BI peut interagir avec tous les filtres q
 
 ## <a name="working-in-full-screen-mode"></a>Utilisation en mode plein écran
 
-Pour ouvrir un tableau de bord ou une page de rapport en mode plein écran, sélectionnez l’icône plein écran ![Icône Plein écran](media/end-user-focus/power-bi-full-screen-icon.png) dans la barre de navigation supérieure. En mode plein écran, un menu contextuel s’affiche lorsque vous déplacez votre souris ou votre curseur. Étant donné que le mode plein écran est disponible pour un large éventail de contenu, les options du menu contextuel sont chacune un peu différentes, mais assez explicites.  Pointez simplement sur une icône pour avoir une définition.
+Pour ouvrir un tableau de bord ou une page de rapport en mode plein écran, sélectionnez l’icône plein écran ![Icône Plein écran](media/end-user-focus/power-bi-full-screen-icon.png) dans le volet de navigation supérieur. En mode plein écran, un menu contextuel s’affiche lorsque vous déplacez votre souris ou votre curseur. Étant donné que le mode plein écran est disponible pour un large éventail de contenu, les options du menu contextuel sont chacune un peu différentes, mais assez explicites.  Pointez simplement sur une icône pour avoir une définition.
 
 Menu pour les tableaux de bord    
 ![Menu pour les tableaux de bord](media/end-user-focus/power-bi-full-screen-dash.png)    
@@ -97,11 +98,11 @@ Il y deux façons d’ouvrir le mode focus : une pour les vignettes de tableau 
 
 1. Ouvrez un tableau de bord dans le service Power BI.
 
-2. Pointez sur une vignette de tableau de bord ou un visuel de rapport, sélectionnez les points de suspension (...) et choisissez **Ouvrir en mode Focus**.
+2. Pointez sur une vignette de tableau de bord ou un visuel de rapport, sélectionnez **Plus d’options** (...) et choisissez **Ouvrir en mode Focus**.
 
     ![menu des points de suspension pour la mosaïque](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. La vignette s’ouvre et remplit la totalité du canevas de rapport. Notez que vous disposez toujours d’un volet **Filtres** que vous pouvez utiliser pour interagir avec le visuel. Le volet **Filtres** peut être réduit. 
+2. La vignette s’ouvre et remplit la totalité du canevas de rapport. Notez que vous disposez toujours d’un volet **Filtres** que vous pouvez utiliser pour interagir avec le visuel. Le volet **Filtres** peut être réduit.
 
    ![la vignette remplit le canevas de rapport](media/end-user-focus/power-bi-focus-filter.png)
 

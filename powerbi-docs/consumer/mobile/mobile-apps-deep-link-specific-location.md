@@ -2,19 +2,18 @@
 title: Créer un lien vers un emplacement spécifique dans les applications mobiles Power BI
 description: Apprenez à créer un lien ciblé qui pointe vers un rapport, une vignette ou un tableau de bord spécifique dans l’application mobile Power BI à l’aide d’un URI (Uniform Resource Identifier).
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
-ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 427019d831aa02723f17efd3de78081c368717c2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "64906527"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879296"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Créer un lien vers un emplacement spécifique dans les applications mobiles Power BI
 Vous pouvez utiliser des liens pour accéder directement à certains éléments dans Power BI : Rapport, Tableau de bord et Vignette.
@@ -69,7 +68,7 @@ Les paramètres de requête (**QUERY PARAMS**) sont les suivants :
 
 #### <a name="links-of-apps-and-items-in-app"></a>Liens d’applications et d’éléments dans l’application
 
-Pour les **applications, rapports et tableaux de bord faisant partie d’une application**, le moyen le plus simple d’obtenir le lien est d’accéder à l’espace de travail de l’application et de choisir « Mettre à jour l’application ». Cela va entraîner l’ouverture de l’expérience « Publier l’application » et vous permettra de trouver la section **Liens** sous l’onglet Accès. En développant cette section, vous verrez l’application et tous les liens de contenu qui peuvent être utilisés pour y accéder directement.
+Pour les **applications, rapports et tableaux de bord faisant partie d’une application**, le moyen le plus simple d’obtenir le lien est d’accéder à l’espace de travail et de choisir « Mettre à jour l’application ». Cela va entraîner l’ouverture de l’expérience « Publier l’application » et vous permettra de trouver la section **Liens** sous l’onglet Accès. En développant cette section, vous verrez l’application et tous les liens de contenu qui peuvent être utilisés pour y accéder directement.
 
 ![Liens de publication des applications Power BI ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
@@ -117,6 +116,6 @@ Vos commentaires nous aident à développer les futurs processus d’implémenta
 
 * [Applications Power BI pour appareils mobiles](mobile-apps-for-mobile-devices.md)
 * Suivez @MSPowerBI sur Twitter
-* Rejoindre la conversation de la [Communauté Power BI](http://community.powerbi.com/)
-* [Qu’est-ce que Power BI ?](../../power-bi-overview.md)
+* Rejoindre la conversation de la [Communauté Power BI](https://community.powerbi.com/)
+* [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
 

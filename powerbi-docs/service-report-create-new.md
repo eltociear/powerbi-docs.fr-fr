@@ -2,7 +2,6 @@
 title: Créer un rapport à partir d’un jeu de données
 description: Créez un rapport Power BI à partir d’un jeu de données.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,27 +9,27 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f2d9046c907b78ce2c1bb2754007c34199877a08
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: c3f30206a01dce9cf9fd3ce0600b46b401df2b1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523083"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871770"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Créer un rapport du service Power BI en important un jeu de données
 Vous avez lu [apports dans Power BI](consumer/end-user-reports.md) et vous souhaitez maintenant créer vos propres rapports. Il existe différentes façons de créer un rapport : Dans cet article, nous allons commencer par créer un rapport de base dans le service Power BI à partir d’un jeu de données Excel. Lorsque vous aurez compris les principes fondamentaux de la création d’un rapport, examinez les [étapes suivantes](#next-steps) plus bas pour accéder à des rubriques plus avancées concernant les rapports.  
 
 ## <a name="prerequisites"></a>Conditions préalables
 - [S’inscrire au service Power BI](service-self-service-signup-for-power-bi.md). Pour créer des rapports avec Power BI Desktop, consultez [Affichage du rapport Desktop](desktop-report-view.md). 
-- [Téléchargez l’exemple de jeu de données Excel Analyse de la vente au détail](http://go.microsoft.com/fwlink/?LinkId=529778) et enregistrez-le dans OneDrive Entreprise ou localement.
+- [Téléchargez l’exemple de jeu de données Excel Analyse de la vente au détail](https://go.microsoft.com/fwlink/?LinkId=529778) et enregistrez-le dans OneDrive Entreprise ou localement.
 
 ## <a name="import-the-dataset"></a>Importer le jeu de données
 Cette méthode de création d’un rapport démarre avec un jeu de données et un canevas de rapport vide. Vous pouvez suivre l’exemple de jeu de données Excel Analyse de la vente au détail.
 
 1. Nous allons créer le rapport dans un espace de travail du service Power BI. Par conséquent, sélectionnez un espace de travail existant ou créez-en un.
    
-   ![liste des espaces de travail d’application](media/service-report-create-new/power-bi-workspaces2.png)
-2. En bas du volet de navigation de gauche, sélectionnez **Obtenir les données**.
+   ![liste des espaces de travail](media/service-report-create-new/power-bi-workspaces2.png)
+2. Sélectionnez **Obtenir des données** en bas du volet de navigation.
    
    ![Obtenir des données](media/service-report-create-new/power-bi-get-data3.png)
 3. Sélectionnez **Fichiers**, puis accédez à l’emplacement dans lequel vous avez enregistré l’exemple Analyse de la vente au détail.
@@ -93,5 +92,5 @@ Continuer d’explorer vos données et d’ajouter des visualisations. Lorsque v
 ## <a name="next-steps"></a>Étapes suivantes
 
 * Découvrez comment [épingler des visualisations à un tableau de bord](service-dashboard-pin-tile-from-report.md).   
-* D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+* D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

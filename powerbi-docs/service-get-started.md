@@ -2,7 +2,6 @@
 title: Bien démarrer avec le service Power BI
 description: Bien démarrer avec le service en ligne Power BI (app.powerbi.com)
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,15 +9,15 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 49504343b076d7e2371c45005da24e35831bf506
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 3a9b2a5e7de0a5072b266c7b146488e5d546f616
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751092"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872324"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Tutoriel : Bien démarrer avec le service Power BI
-Ce tutoriel présente certaines des fonctionnalités du *service Power BI*. Il vous montre comment vous connecter aux données, créer un rapport et un tableau de bord, et poser des questions sur vos données. Le service Power BI propose bien d’autres fonctionnalités, mais ce tutoriel ne vous en montre qu’un échantillon. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de lire [Qu’est-ce que Power BI](power-bi-overview.md).
+Ce tutoriel présente certaines des fonctionnalités du *service Power BI*. Il vous montre comment vous connecter aux données, créer un rapport et un tableau de bord, et poser des questions sur vos données. Le service Power BI propose bien d’autres fonctionnalités, mais ce tutoriel ne vous en montre qu’un échantillon. Pour comprendre comment le service Power BI s’intègre aux autres offres de Power BI, nous vous recommandons de lire [Qu’est-ce que Power BI](fundamentals/power-bi-overview.md).
 
 ![Accueil du service Power BI](media/service-get-started/power-bi-service-get-started-home.png)
 
@@ -35,21 +34,21 @@ Ce tutoriel vous montre comment effectuer les étapes suivantes :
 > * Nettoyer les ressources en supprimant le jeu de données, le rapport et le tableau de bord
 
 > [!TIP]
-> Vous préférez un cours gratuit à votre rythme à la place ? [Inscrivez-vous à notre cours sur l’analyse et la visualisation des données sur EdX](http://aka.ms/edxpbi).
+> Vous préférez un cours gratuit à votre rythme à la place ? [Inscrivez-vous à notre cours sur l’analyse et la visualisation des données sur EdX](https://aka.ms/edxpbi).
 
 ## <a name="sign-up-for-the-power-bi-service"></a>S’inscrire au service Power BI
 Si vous n’avez pas de compte Power BI, [inscrivez-vous pour un essai gratuit de Power BI Pro](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
 Une fois que vous avez un compte, entrez *app.powerbi.com* dans votre navigateur pour ouvrir le service Power BI. 
 
-## <a name="step-1-get-data"></a>Étape 1 : Obtenir les données
+## <a name="step-1-get-data"></a>Étape 1 : Obtenir des données
 
 Souvent, quand vous voulez créer un rapport Power BI, vous utilisez Power BI Desktop. Cette fois, nous allons utiliser le service Power BI pour créer un rapport.
 
-Dans ce tutoriel, nous obtenons des données à partir d’un fichier CSV. Comment procéder ? [Téléchargez le fichier CSV Financial Sample](http://go.microsoft.com/fwlink/?LinkID=521962).
+Dans ce tutoriel, nous obtenons des données à partir d’un fichier CSV. Comment procéder ? [Téléchargez le fichier CSV Financial Sample](https://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Connectez-vous à Power BI](http://www.powerbi.com/). Vous n’avez pas de compte ? Vous pouvez vous inscrire pour un essai gratuit.
-2. Power BI s’ouvre dans votre navigateur. Sélectionnez **Obtenir des données** au bas de la barre de navigation gauche.
+1. [Connectez-vous à Power BI](https://www.powerbi.com/). Vous n’avez pas de compte ? Vous pouvez vous inscrire pour un essai gratuit.
+2. Power BI s’ouvre dans votre navigateur. Sélectionnez **Obtenir des données** en bas du volet de navigation.
 
     La page **Obtenir des données** s’ouvre.   
 
@@ -73,7 +72,7 @@ Dans ce tutoriel, nous obtenons des données à partir d’un fichier CSV. Comme
 
     ![Canevas de rapport vide](media/service-get-started/power-bi-service-blank-report.png)
 
-7. Notez qu’il existe une option **Mode Lecture** dans la barre de navigation supérieure. Si vous avez cette option, cela signifie que vous êtes actuellement en mode Edition. Un excellent moyen de vous familiariser avec l’éditeur de rapport consiste à [suivre une visite guidée](service-the-report-editor-take-a-tour.md).
+7. Notez qu’il existe une option **Mode Lecture** dans le volet de navigation supérieur. Si vous avez cette option, cela signifie que vous êtes actuellement en mode Edition. Un excellent moyen de vous familiariser avec l’éditeur de rapport consiste à [suivre une visite guidée](service-the-report-editor-take-a-tour.md).
 
     ![option Mode Lecture](media/service-get-started/power-bi-service-reading-view.png)
 
@@ -115,13 +114,13 @@ Maintenant que vous êtes connecté aux données, vous pouvez les explorer.  Une
    
 8. Sélectionnez la nouvelle vignette dans votre tableau de bord pour revenir au rapport. Power BI vous renvoie sur le rapport en mode Lecture. 
 
-1. Pour revenir au mode Edition, sélectionnez les points de suspension (...) dans la barre de navigation supérieure > **Modifier**. Une fois en mode Edition, vous pouvez continuer à explorer et à épingler des vignettes.
+1. Pour revenir en mode Edition, sélectionnez **Plus d’options** (...) dans le volet de navigation supérieur > **Modifier**. Une fois en mode Edition, vous pouvez continuer à explorer et à épingler des vignettes.
 
     ![Sélectionner Modifier pour modifier le rapport](media/service-get-started/power-bi-service-edit-report.png)
 
 ## <a name="step-3-explore-with-qa"></a>Étape 3 : Explorer avec Questions et réponses
 
-Pour une exploration rapide de vos données, essayez de poser une question dans la zone de Questions et réponses. Questions et réponses crée des requêtes en langage naturel sur vos données. Dans un tableau de bord, la zone Questions et réponses est en haut (**Poser une question sur vos données**). Dans un rapport, elle se trouve dans la barre de navigation supérieure (**Poser une question**).
+Pour une exploration rapide de vos données, essayez de poser une question dans la zone de Questions et réponses. Questions et réponses crée des requêtes en langage naturel sur vos données. Dans un tableau de bord, la zone Questions et réponses est en haut (**Poser une question sur vos données**). Dans un rapport, elle se trouve dans le volet de navigation supérieur (**Poser une question**).
 
 1. Pour revenir au tableau de bord, sélectionnez **Mon espace de travail** dans la barre noire de **Power BI**.
 
@@ -152,7 +151,7 @@ Pour une exploration rapide de vos données, essayez de poser une question dans 
 
 1. Épinglez aussi l’histogramme au tableau de bord **Financial Sample for tutorial**.
 
-1. Placez le curseur après *by month* dans la zone Questions et réponses et tapez *en courbes*. Sélectionnez **en courbes (Type de visualisation)**. 
+1. Placez le curseur après *by month* dans la zone Questions et réponses et tapez *en courbes*. Sélectionnez **en courbes (Type de visualisation)** . 
 
     ![Visualisation de graphique en courbes](media/service-get-started/power-bi-service-qanda-as-line.png)
 
@@ -198,9 +197,9 @@ Voici une dernière interaction à observer, avant de commencer à créer vos pr
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 Maintenant que vous avez terminé le tutoriel, vous pouvez supprimer le jeu de données, le rapport et le tableau de bord. 
 
-1. Dans la barre de navigation de gauche, vérifiez que vous êtes sous **Mon espace de travail**.
+1. Dans le volet de navigation, vérifiez que vous êtes dans **Mon espace de travail**.
 2. Sélectionnez l’onglet **Jeux de données** et recherchez le jeu de données que vous avez importé pour ce tutoriel.  
-3. Sélectionnez les points de suspension (...) > **Supprimer**.
+3. Sélectionnez **Plus d’options** (...) > **Supprimer**.
 
     ![Supprimer le jeu de données](media/service-get-started/power-bi-service-delete-dataset.png)
 

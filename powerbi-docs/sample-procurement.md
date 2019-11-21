@@ -2,7 +2,6 @@
 title: 'Exemple Analyse de l’approvisionnement : Visite guidée'
 description: 'Exemple Analyse de l’approvisionnement pour Power BI : Visite guidée'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 9e27d09414167f9625e046204c14a5fb57112cd9
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 0998ebec15a4e02262ab54a3b08593a65f37af4e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462272"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873858"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Exemple Analyse de l’approvisionnement pour Power BI : Visite guidée
 
@@ -58,11 +57,11 @@ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 
-Vous pouvez aussi télécharger l’exemple Analyse de l’approvisionnement sous forme de [fichier .pbix](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), qui est conçu pour être utilisé avec Power BI Desktop. 
+Vous pouvez aussi télécharger l’exemple Analyse de l’approvisionnement sous forme de [fichier .pbix](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), qui est conçu pour être utilisé avec Power BI Desktop. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529784). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529784). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 
 ## <a name="spending-trends"></a>Tendances en matière de dépenses
@@ -99,7 +98,7 @@ Explorons les postes de dépenses au Mexique.
       ![Exploration de Indirect Goods & Services pour Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Sélectionnez la flèche vers le haut dans le coin supérieur gauche du graphique pour remonter d’un niveau.
 4. Sélectionnez à nouveau la flèche pour désactiver l’exploration.  
-5. Dans la barre de navigation du haut, sélectionnez **Exemple Analyse de l’approvisionnement** pour revenir au tableau de bord.
+5. Dans le volet de navigation du haut, sélectionnez **Exemple Analyse de l’approvisionnement** pour revenir au tableau de bord.
 
 ## <a name="evaluate-different-cities"></a>Évaluer différentes villes
 Nous pouvons utiliser la mise en évidence pour évaluer différentes villes.

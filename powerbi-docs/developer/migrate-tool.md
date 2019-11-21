@@ -3,18 +3,17 @@ title: Outil de migration Power BI Embedded
 description: Vous pouvez utiliser cet outil de migration pour copier vos rapports du service Azure Power BI Embedded (PaaS) vers le service Power BI (SaaS).
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 9344a1a3dc4f682925da900cde8accfead783f88
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2970744f89bf8fdc115be018d00c8f5b73d9ddfc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61272029"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880573"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Outil de migration Power BI Embedded
 
@@ -132,7 +131,7 @@ Un chemin d’accès est automatiquement créé pour vous. Vous pouvez le modifi
 
 #### <a name="upload-plan"></a>Charger le plan
 
-Ici, vous pouvez spécifier un préfixe à utiliser pour les espaces de travail d’application qui seront créés dans le service Power BI. Le préfixe sera suivi du GUID de l’espace de travail qui existait dans Azure.
+Ici, vous pouvez spécifier un préfixe à utiliser pour les espaces de travail qui seront créés dans le service Power BI. Le préfixe sera suivi du GUID de l’espace de travail qui existait dans Azure.
 
 ![Charger un plan](media/migrate-tool/migrate-tool-upload-plan.png)
 
@@ -167,21 +166,21 @@ Une fois le téléchargement terminé, sélectionnez l’onglet **Créer des gro
 
 ## <a name="step-3-create-groups"></a>Étape 3 : Créer des groupes
 
-Une fois que vous avez téléchargé les rapports disponibles, vous pouvez accéder à l’onglet **Créer des groupes**. Cet onglet va créer les espaces de travail d’application dans le service Power BI en fonction du plan de migration que vous avez créé. Il crée l’espace de travail d’application avec le nom que vous avez indiqué sous l’ongler **Charger** dans **Analyser et planifier la migration**.
+Une fois que vous avez téléchargé les rapports disponibles, vous pouvez accéder à l’onglet **Créer des groupes**. Cet onglet va créer les espaces de travail dans le service Power BI en fonction du plan de migration que vous avez créé. Il crée l’espace de travail avec le nom que vous avez indiqué sous l’onglet **Charger** dans **Analyser et planifier la migration**.
 
 ![Créer des groupes](media/migrate-tool/migrate-tool-create-groups.png)
 
-Pour créer les espaces de travail d’application, sélectionnez **Create All Missing Groups** (Créer les groupes sélectionnés) ou **Create All Missing Groups** (Créer tous les groupes manquants).
+Pour créer les espaces de travail, sélectionnez **Créer les groupes sélectionnés** ou **Créer tous les groupes manquants**.
 
-Lorsque vous sélectionnez une de ces options, vous êtes invité à vous connecter. *Vous devez utiliser les informations d’identification du service Power BI sur lequel vous souhaitez créer les espaces de travail d’application.*
+Lorsque vous sélectionnez une de ces options, vous êtes invité à vous connecter. *Vous devez utiliser les informations d’identification du service Power BI sur lequel vous souhaitez créer les espaces de travail.*
 
 ![Se connecter pour créer un groupe](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
-Cela permet de créer l’espace de travail d’application dans le service Power BI. Cela ne charge pas les rapports dans l’espace de travail d’application.
+Cela permet de créer l’espace de travail dans le service Power BI. Cela ne charge pas les rapports dans l’espace de travail.
 
-Vous pouvez vérifier que l’espace de travail d’application a bien été créé en vous connectant à Power BI et en confirmant que l’espace de travail existe. Vous remarquez que l’espace de travail est vide.
+Vous pouvez vérifier que l’espace de travail a bien été créé en vous connectant à Power BI et en confirmant que l’espace de travail existe. Vous remarquez que l’espace de travail est vide.
 
-![Espace de travail d’application](media/migrate-tool/migrate-tool-app-workspace.png)
+![espace de travail](media/migrate-tool/migrate-tool-app-workspace.png)
 
 Une fois l’espace de travail créé, vous pouvez passer à l’onglet **Charger**.
 
@@ -235,9 +234,9 @@ Pour l’élément ayant échoué, vous pouvez modifier le nom de SaaSTargetRepo
 
 Vous pouvez ensuite rouvrir le plan dans l’outil de migration, puis charger le rapport qui a échoué.
 
-Si vous revenez à Power BI, vous pouvez voir que les rapports et les jeux de données ont été chargés dans l’espace de travail d’application.
+Si vous revenez à Power BI, vous pouvez voir que les rapports et les jeux de données ont été chargés dans l’espace de travail.
 
-![Charger un espace de travail d’application](media/migrate-tool/migrate-tool-upload-app-workspace.png)
+![Charger l’espace de travail](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
@@ -264,7 +263,7 @@ Vous pouvez ensuite mettre à jour la chaîne de connexion du jeu de données da
 
 ## <a name="embedding"></a>Incorporation
 
-Maintenant que vos rapports ont été migrés du service Azure Power BI Embedded vers le service Power BI, vous pouvez mettre à jour votre application et commencer à incorporer les rapports dans cet espace de travail d’application.
+Maintenant que vos rapports ont été migrés du service Azure Power BI Embedded vers le service Power BI, vous pouvez mettre à jour votre application et commencer à incorporer les rapports dans cet espace de travail.
 
 Pour plus d’informations, consultez [Comment migrer le contenu d’une collection d’espaces de travail Power BI Embedded vers Power BI](migrate-from-powerbi-embedded.md).
 
@@ -278,4 +277,4 @@ Pour plus d’informations, consultez [Comment migrer le contenu d’une collect
 [Exemple de JavaScript incorporé](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Livre blanc sur Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

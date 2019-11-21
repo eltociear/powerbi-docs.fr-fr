@@ -2,20 +2,19 @@
 title: Tutoriel sur les visualisations d’influenceurs clés
 description: 'Tutoriel : Créer une visualisation d’influenceurs clés dans Power BI'
 author: mihart
-manager: kvivek
 ms.reviewer: juluczni
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: tutorial
-ms.date: 05/22/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 056457d5a90585fd30a0a85f95d28d1097c720b0
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 80ed285a22c0272f3bd268397e0e019396b941d7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544063"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871017"
 ---
 # <a name="key-influencers-visualization"></a>Visualisation des influenceurs clés
 
@@ -58,7 +57,7 @@ Regardez cette vidéo pour découvrir comment créer un visuel d’influenceurs 
    > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fDb5zZ3xmxU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Votre responsable produit vous demande d’identifier les facteurs qui poussent les clients à laisser des avis négatifs sur votre service cloud. Pour suivre la procédure, ouvrez le [fichier PBIX de commentaires client](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) dans Power BI Desktop. Vous pouvez également télécharger le [fichier Excel de commentaires client pour le service Power BI ou Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). 
+Votre responsable produit vous demande d’identifier les facteurs qui poussent les clients à laisser des avis négatifs sur votre service cloud. Pour suivre la procédure, ouvrez le [fichier PBIX de commentaires client](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.pbix) dans Power BI Desktop. Vous pouvez également télécharger le [fichier Excel de commentaires client pour le service Power BI ou Power BI Desktop](https://github.com/Microsoft/powerbi-desktop-samples/blob/master/2019/customerfeedback.xlsx). Sélectionnez l’un des liens, puis sélectionnez **Télécharger** dans la page GitHub qui s’ouvre.
 
 > [!NOTE]
 > Le jeu de données de commentaires clients est basé sur [Moro et al., 2014] S. Moro, P. Cortez et P. Rita. « A Data-Driven Approach to Predict the Success of Bank Telemarketing. » *Decision Support Systems*, Elsevier, 62:22-31, juin 2014. 
@@ -240,7 +239,7 @@ Le top des segments pour les cibles numériques montre les groupes pour lesquels
 
 ## <a name="analyze-a-metric-that-is-a-measure-or-a-summarized-column"></a>Analyser une métrique qui est une mesure ou une colonne synthétisée
 
-Dans le cas d’une mesure ou d’une colonne synthétisée, l’analyse est définie par défaut sur le **Type d’analyse continue** décrit [ci-dessus](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). Ceci ne peut pas être modifié. La plus grande différence entre l’analyse d’une mesure/colonne synthétisée et une colonne numérique non synthétisée est le niveau auquel l’analyse est effectuée.
+Dans le cas d’une mesure ou d’une colonne synthétisée, l’analyse est définie par défaut sur le **Type d’analyse continue** décrit [ci-dessus](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric). Ceci ne peut pas être modifié. La plus grande différence entre l’analyse d’une mesure/colonne synthétisée et une colonne numérique non synthétisée est le niveau auquel l’analyse est effectuée.
 
 Dans le cas de colonnes non synthétisées, l’analyse est toujours effectuée au niveau de la table. Dans l’exemple du prix des maisons ci-dessus, nous avons analysé la métrique **House Price** (Prix de la maison) pour voir ce qui influence l’augmentation/diminution du prix d’une maison. L’analyse s’effectue automatiquement au niveau de la table. Notre table a un ID unique pour chaque maison, de sorte que l’analyse s’effectue au niveau de la maison.
 
@@ -254,7 +253,7 @@ Les mesures et les colonnes synthétisées sont automatiquement analysées au ni
 
 Cette analyse est une synthèse très globale et il est donc difficile pour le modèle de régression de trouver des modèles dans les données à partir desquels il peut apprendre. Nous devons exécuter l’analyse à un niveau plus détaillé pour obtenir de meilleurs résultats. Si nous voulions analyser le prix des maisons au niveau des maisons, nous devrions ajouter explicitement le champ **ID** à l’analyse. Néanmoins, nous ne voulons pas que l’ID des maisons soit considéré comme un influenceur. Il n’est pas très utile d’apprendre que quand l’ID de la maison augmente, le prix d’une maison augmente. C’est là où l’option du champ **Développer par** se révèle pratique. Vous pouvez utiliser **Développer par** pour ajouter des champs que vous voulez utiliser pour définir le niveau de l’analyse sans rechercher de nouveaux influenceurs.
 
-Regardez à quoi ressemble la visualisation une fois que nous ajoutons **ID** à **Développer par**. Une fois que vous avez défini le niveau auquel vous voulez que votre mesure soit évaluée, l’interprétation des influenceurs est exactement la même que pour les [colonnes numériques non synthétisées](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
+Regardez à quoi ressemble la visualisation une fois que nous ajoutons **ID** à **Développer par**. Une fois que vous avez défini le niveau auquel vous voulez que votre mesure soit évaluée, l’interprétation des influenceurs est exactement la même que pour les [colonnes numériques non synthétisées](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-influencers#analyze-a-metric-that-is-numeric).
 
 ![Table de mesures](media/power-bi-visualization-influencers/power-bi-ki-measures-analysis.png)
 

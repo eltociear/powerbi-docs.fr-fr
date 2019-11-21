@@ -2,7 +2,6 @@
 title: Afficher les données et les enregistrements dans les visuels Power BI Desktop
 description: Fonctionnalités Afficher les données et Afficher les enregistrements de Power BI Desktop pour une exploration approfondie
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 6e425f146228d0139b9eec914a44ed5dc732fe98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 66fe4a9eb109565108cd150369b2260a9d3e1d06
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514761"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877768"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Utiliser Afficher les données et Afficher les enregistrements dans Power BI Desktop
 Dans **Power BI Desktop**, vous pouvez explorer les détails d’une visualisation et consulter des représentations textuelles des données sous-jacentes ou enregistrements de données individuelles du visuel sélectionné. Ces fonctionnalités sont parfois appelées *interactif*, *extraction* ou *extraction jusqu’aux détails*.
@@ -41,7 +40,7 @@ Vous pouvez utiliser **Consulter les données** pour afficher une version textue
 
 ![Consulter les données dans le ruban](media/desktop-see-data-see-records/see-data1.png)
 
-Vous pouvez également consulter les données en cliquant avec le bouton de droite sur une visualisation, puis en sélectionnant **Afficher les données** dans le menu qui s’affiche ; ou en sélectionnant les points de suspension (...) **Plus d’options** dans le coin supérieur droit d’une visualisation, puis en sélectionnant **Afficher les données**.
+Vous pouvez également consulter les données en cliquant avec le bouton droit sur une visualisation, puis en sélectionnant **Afficher les données** dans le menu qui s’affiche ; ou en sélectionnant **Plus d’options** (...) dans le coin supérieur droit d’une visualisation, puis en sélectionnant **Afficher les données**.
 
 ![Cliquez avec le bouton de droite sur Afficher les données](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Afficher des données Plus d’options](media/desktop-see-data-see-records/see-data3.png)
 

@@ -3,20 +3,19 @@ title: Superviser les métriques d’utilisation de tableaux de bord et de rappo
 description: Guide pratique pour voir, enregistrer, et utiliser des métriques d’utilisation pour des rapports et tableaux de bord Power BI.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530548"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871202"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Superviser les métriques d’utilisation de tableaux de bord et de rapports Power BI
 
@@ -86,7 +85,7 @@ Pour explorer les données du rapport ou pour créer vos propres rapports sur le
 
 | Métrique | Tableau de bord | Rapport | Description |
 | --- | --- | --- | --- |
-| Segment Méthode de distribution |oui |oui |Manière dont les utilisateurs ont eu accès au contenu. Il existe 3 méthodes possibles : les utilisateurs peuvent accéder au tableau de bord ou au rapport s’ils sont membres d’un [espace de travail d’application](consumer/end-user-experience.md), quand du contenu est [partagé avec eux](service-share-dashboards.md) ou en installant un pack ou une application de contenu.  Notez que les vues dans une application sont comptées comme « packs de contenu ». |
+| Segment Méthode de distribution |oui |oui |Manière dont les utilisateurs ont eu accès au contenu. Il existe trois méthodes possibles : les utilisateurs peuvent accéder au tableau de bord ou au rapport s’ils sont membres d’un [espace de travail](consumer/end-user-experience.md), quand du contenu est [partagé avec eux](service-share-dashboards.md) ou en installant une application ou un pack de contenu.  Notez que les vues dans une application sont comptées comme « packs de contenu ». |
 | Segment Plateformes |oui |oui |L’accès au tableau de bord ou au rapport a-t-il eu lieu via le service Power BI (powerbi.com) ou un appareil mobile ? L’accès mobile inclut toutes nos applications iOS, Android et Windows. |
 | Segment Page de rapport |non |oui |Si le rapport comporte plus d’une page, segmentez-le par page(s) visitées(s). Si vous voyez une option de liste « Vide », cela signifie qu’une page de rapport a été ajoutée récemment (dans les 24 heures, le nom réel de la nouvelle page s’affiche dans la liste des segments) et/ou que des pages de rapport ont été supprimées. « Vide » capture ces types de situations. |
 | Visites par jour |oui |oui |Nombre total de visites par jour : une visite correspond à un chargement de page de rapport ou de tableau de bord par un utilisateur. |
@@ -152,11 +151,18 @@ Power BI est disponible dans des cloud nationaux distincts. Ces clouds offrent 
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-Il est important de savoir que la comparaison entre les journaux d’audit et les métriques d’utilisation peut produire des différences, et de comprendre pourquoi. Les *journaux d’audit* sont collectés à l’aide de données issues du service Power BI ; les *métriques d’utilisation*, elles, sont collectées sur le client. Les compteurs d’activités agrégés dans les journaux d’audit ne correspondent pas toujours aux métriques d’utilisation pour les raisons suivantes :
+### <a name="discrepancies-between-audit-logs-and-usage-metrics"></a>Différences entre les journaux d’audit et les métriques d’utilisation
+
+Il est important de savoir que la comparaison entre les journaux d’audit et les métriques d’utilisation peut produire des différences, et de comprendre pourquoi. Les *journaux d’audit* sont collectés à l’aide de données issues du service Power BI alors que les *métriques d’utilisation* sont collectées sur le client. Les compteurs d’activités agrégés dans les journaux d’audit ne correspondent pas toujours aux métriques d’utilisation pour les raisons suivantes :
 
 * Il arrive que les métriques d’utilisation sous-estiment les activités en raison de connexions réseau incohérentes, de bloqueurs de publicité ou d’autres problèmes susceptibles de perturber l’envoi d’événements à partir du client.
 * Certains types de vues ne sont pas inclus dans les métriques d’utilisation, comme décrit précédemment dans cet article.
 * Les métriques d’utilisation surestiment parfois les activités, dans les situations où le client actualise la page sans qu’il soit nécessaire de renvoyer une requête au service Power BI.
+
+### <a name="other-considerations"></a>Autres éléments à prendre en compte
+
+Vous devez voir au moins une fois le contenu de votre espace de travail directement dans cet espace de travail. Si vous ne le faites pas, les données ne sont pas corrélées à partir des vues de l’application dans le rapport des métriques d’utilisation. Pour débloquer le traitement des données pour ce rapport, il vous suffit de voir le contenu dans votre espace de travail au moins une fois.
+
 
 ## <a name="frequently-asked-questions"></a>Forum Aux Questions
 
@@ -188,4 +194,4 @@ Outre les différences potentielles entre les journaux d’audit et les métriqu
 
 [Administration de Power BI dans le portail d’administration](service-admin-portal.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

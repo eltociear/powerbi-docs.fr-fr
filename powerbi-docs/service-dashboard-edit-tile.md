@@ -2,7 +2,6 @@
 title: Modifier une vignette de tableau de bord
 description: 'Ce didacticiel vous guide de la création d’une vignette à son épinglage à un tableau de bord. Découvrez comment modifier cette vignette de tableau de bord : redimensionner, déplacer, renommer, épingler, supprimer, ajouter un lien hypertexte.'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c1b6f7434724540a9ad5b579030c3ed54b32abed
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: bdd2ec136ae741e15e0cb60d141c651cd5fb6749
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720575"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877469"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Modifier ou supprimer une vignette de tableau de bord
 
@@ -83,9 +82,9 @@ Vous pouvez donner différentes tailles aux vignettes (de 1 x 1 unités de vig
 ![vidéo](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
 - - -
-## <a name="the-ellipses--menu"></a>Menu de points de suspension (...)
+## <a name="more-options--menu"></a>Menu **Plus d’options** (...)
 
-1. Sélectionnez les points de suspension (...) en haut à droite de la vignette. 
+1. Sélectionnez **Plus d’options** (...) en haut à droite de la vignette. 
    
    ![points de suspension de la vignette](media/service-dashboard-edit-tile/power-bi-tile.png)
 
@@ -148,5 +147,5 @@ Par défaut, si vous sélectionnez une vignette, vous êtes normalement dirigé 
 
 [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

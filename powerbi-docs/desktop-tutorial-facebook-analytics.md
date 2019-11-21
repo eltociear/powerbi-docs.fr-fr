@@ -2,7 +2,6 @@
 title: 'Tutoriel : Analyses Facebook avec Power BI Desktop'
 description: 'Tutoriel : Analyses Facebook avec Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 73f5d629806826eed0da51f5b7158d884d1c8725
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 96811a2cfd7d08a210c4efd177e989abce16d25d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841398"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876272"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Tutoriel : Analyses Facebook avec Power BI Desktop
 
@@ -33,7 +32,7 @@ Ce didacticiel utilise des données de la [page Facebook de Microsoft Power BI](
    
 2. Dans la boîte de dialogue **Obtenir des données**, sélectionnez **Facebook** à partir du groupe **Services en ligne**, puis sélectionnez **Se connecter**.
    
-   ![Obtenir les données](media/desktop-tutorial-facebook-analytics/t_fb_getdataother.png)
+   ![Obtenir des données](media/desktop-tutorial-facebook-analytics/t_fb_getdataother.png)
    
    Une boîte de dialogue s’affiche pour vous avertir des risques liés à l’utilisation d’un service tiers.
    
@@ -147,7 +146,7 @@ Les données étant importées de la page Facebook, vous pouvez rapidement et fa
    
    ![Graphique à barres](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
-4. Sélectionnez les points de suspension (...) dans le coin supérieur droit de la visualisation, puis sélectionnez **Sort by Number of comments** (Trier par Nombre de commentaires) pour trier la table par nombre décroissant de commentaires. 
+4. Sélectionnez **Autres options** (...) dans le coin supérieur droit de la visualisation, puis sélectionnez **Sort by Number of comments** (Trier par Nombre de commentaires) pour trier la table par nombre décroissant de commentaires. 
    
    ![Trier par nombre de commentaires](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
@@ -184,7 +183,7 @@ L’axe X (nombre de commentaires) du graphique n’affiche pas des valeurs exac
 
 C’est mieux, mais toutes les étiquettes de données ont une décimale **.0**, ce qui est perturbant et trompeur, car **Number of posts** (Nombre de publications) doit être un nombre entier. Vous devez modifier le type de données de la colonne **Number of posts** (Nombre de publications) sur Whole Number (Nombre entier).
 
-1. Pour modifier le type de données, cliquez avec le bouton droit sur **Query1** dans la liste Fields (Champs), ou pointez dessus et sélectionnez les points de suspension (...) **Plus d’options**, puis sélectionnez **Modifier la requête**. Vous pouvez également sélectionner **Modifier les requêtes** à partir de la zone **Données externes** de l’onglet Accueil du ruban, puis sélectionnez **Modifier les requêtes** dans la liste déroulante. **Power Query Editor** de Power BI Desktop s’ouvre dans une fenêtre distincte.
+1. Pour changer le type de données, cliquez avec le bouton droit sur **Query1** dans la liste Fields (Champs), ou pointez dessus et sélectionnez **Autres options** (...), puis sélectionnez **Modifier la requête**. Vous pouvez également sélectionner **Modifier les requêtes** à partir de la zone **Données externes** de l’onglet Accueil du ruban, puis sélectionnez **Modifier les requêtes** dans la liste déroulante. **Power Query Editor** de Power BI Desktop s’ouvre dans une fenêtre distincte.
    
    ![Modifier la requête à partir de la liste Champs](media/desktop-tutorial-facebook-analytics/editquery1.png)     ![Modifier les requêtes à partir du ruban](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
    
@@ -241,8 +240,8 @@ Comme vous pouvez le voir, vous pouvez facilement personnaliser les visualisatio
 Power BI Desktop fournit une expérience de bout en bout transparente, allant de la récupération de données d’un large éventail de sources de données à la visualisation de ces données au moyen de méthodes interactives et enrichies, en passant par leur mise en forme en fonction des besoins d’analyse. Une fois que votre rapport est prêt, vous pouvez [le charger dans le service Power BI](desktop-upload-desktop-files.md) et créer des tables de bord basés sur celui-ci, que vous pouvez partager avec d’autres utilisateurs de Power BI.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Autres didacticiels Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Vidéos relatives à Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Forum Power BI](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Blog Power BI](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Autres didacticiels Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Vidéos relatives à Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Forum Power BI](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Blog Power BI](https://go.microsoft.com/fwlink/?LinkID=519327)
 

@@ -2,7 +2,6 @@
 title: Actualisation automatique des pages dans Power BI Desktop (préversion)
 description: Découvrez comment actualiser automatiquement des pages pour les sources DirectQuery dans Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 546dffe20d6840544eca1360945482630a686069
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 4c2217495ee8b735bc600c9b803897a408495472
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307981"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878766"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Actualisation automatique des pages dans Power BI Desktop (préversion)
 
@@ -112,7 +111,7 @@ Les **Capacités**  sont un concept fondamental de Power BI ; elles représenten
 
 Dans une capacité partagée, les charges de travail s’exécutent sur des ressources de calcul partagées avec d’autres clients. Étant donné que la capacité doit partager des ressources, des restrictions sont imposées pour s’assurer d’une *utilisation juste*, par exemple avec la définition d’une taille de modèle maximale (1 Go) et d’une fréquence d’actualisation quotidienne maximale (huit fois par jour).
 
-Les **espaces de travail** Power BI résident dans des capacités et représentent des conteneurs de sécurité, de collaboration et de déploiement. Chaque utilisateur Power BI dispose d’un espace de travail personnel nommé **Mon espace de travail**. Vous pouvez créer d’autres espaces de travail pour la collaboration et le déploiement. Ces espaces sont appelés **espaces de travail d’application**. Par défaut, les espaces de travail, qui incluent également les espaces de travail personnels, sont créés dans une **capacité partagée**.
+Les **espaces de travail** Power BI résident dans des capacités et représentent des conteneurs de sécurité, de collaboration et de déploiement. Chaque utilisateur Power BI dispose d’un espace de travail personnel nommé **Mon espace de travail**. Des espaces de travail supplémentaires peuvent être créés pour activer la collaboration et le déploiement, et ceux-ci sont appelés **espaces de travail**. Par défaut, les espaces de travail, qui incluent également les espaces de travail personnels, sont créés dans une **capacité partagée**.
 
 Voici quelques détails sur les deux scénarios d’espace de travail :
 

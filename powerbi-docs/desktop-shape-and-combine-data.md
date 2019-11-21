@@ -1,241 +1,307 @@
 ---
-title: Mettre en forme et combiner des données provenant de plusieurs sources
+title: 'Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop'
 description: Ce tutoriel explique comment mettre en forme et combiner des données dans Power BI Desktop.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/08/2019
+ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2835dd34ce5ba2d7bc6be8659b87eb1f550fdc28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d6a36f8ef3ef5d668fe8d6021758b651cdbf7fd5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514588"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877819"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Tutoriel : Mettre en forme et combiner des données dans Power BI Desktop
 
-Avec **Power BI Desktop**, vous pouvez vous connecter à différents types de sources de données, puis mettre en forme les données en fonction de vos besoins, de façon à créer des rapports visuels partageables avec d’autres. *Mettre en forme* des données consiste à transformer les données, par exemple à renommer des colonnes ou des tables, à remplacer du texte par des nombres, à supprimer des lignes, à définir la première ligne comme en-têtes, etc. *Combiner* des données consiste à se connecter à plusieurs sources de données, à les mettre en forme en fonction des besoins, puis à les consolider dans une seule requête utile.
+Avec Power BI Desktop, vous pouvez vous connecter à différents types de sources de données, puis mettre en forme les données en fonction de vos besoins, de façon à créer des rapports visuels à partager avec d’autres. *Mettre en forme* des données consiste à transformer les données, c’est-à-dire à renommer des colonnes ou des tables, à changer du texte en nombres, à supprimer des lignes, à définir la première ligne comme en-têtes, etc. *Combiner* des données consiste à se connecter à plusieurs sources de données, à les mettre en forme en fonction des besoins, puis à les regrouper dans une requête utile.
 
-Dans ce tutoriel, vous allez découvrir comment :
+Dans ce tutoriel, vous allez découvrir comment :
 
-* mettre forme les données avec **l’Éditeur de requête** ;
-* vous connecter à une source de données ;
-* vous connecter à une autre source de données ;
-* combiner ces sources de données et créer un modèle de données utilisable dans des rapports.
+* Mettre forme des données avec l’Éditeur de requête.
+* Se connecter à différentes sources de données.
+* Combiner ces sources de données et créer un modèle de données utilisable dans des rapports.
 
-Ce tutoriel montre comment mettre en forme une requête avec Power BI Desktop, et présente les tâches les plus courantes. Pour plus d’informations sur la requête utilisée ici, notamment sur sa création de toutes pièces, consultez [Prise en main de Power BI Desktop](desktop-getting-started.md).
+Ce tutoriel montre comment mettre en forme une requête avec Power BI Desktop et présente les tâches les plus courantes. Pour plus d’informations sur la requête utilisée ici, notamment sur sa création de toutes pièces, consultez [Prise en main de Power BI Desktop](desktop-getting-started.md).
 
-Il est utile de savoir que l’ **Éditeur de requête** dans Power BI Desktop propose un grand nombre de menus contextuels, en plus du ruban. La plupart des éléments que vous pouvez sélectionner dans la section **Transformer** du ruban est également disponible en cliquant avec le bouton droit sur un élément (par exemple, sur une colonne) et en choisissant une option dans le menu qui s’affiche.
+L’Éditeur de requête de Power BI Desktop fait largement appel aux menus contextuels (clic droit) ainsi qu’au ruban **Transformer**. La plupart des éléments que vous pouvez sélectionner dans le ruban sont aussi accessibles en cliquant avec le bouton droit sur un élément, par exemple une colonne, puis en choisissant une option dans le menu qui s’affiche.
 
 ## <a name="shape-data"></a>Mettre en forme les données
-Quand vous mettez en forme des données dans l’Éditeur de requête, vous fournissez des instructions pas à pas (l’Éditeur de requête effectue cela pour vous) pour ajuster les données au fur et à mesure qu’elles sont chargées et présentées. La source de données d’origine n’est pas affectée. Seule cette vue particulière des données est ajustée ou *mise en forme*.
+Quand vous mettez en forme des données dans l’Éditeur de requête, vous donnez à l’Éditeur de requête des instructions pas à pas pour ajuster les données à votre place à mesure qu’elles sont chargées et présentées. La source de données d’origine n’est pas affectée : seule cette vue particulière des données est ajustée, c’est-à-dire *mise en forme*.
 
-Les étapes que vous spécifiez (par exemple, renommer une table, transformer un type de données ou supprimer des colonnes) sont enregistrées par l’Éditeur de requête. Chaque fois que cette requête se connecte à la source de données, ces mêmes opérations sont effectuées afin que les données soient toujours mises en forme de la manière que vous spécifiez. Ce processus se produit chaque fois que vous utilisez la fonctionnalité Éditeur de requête dans Power BI Desktop ou pour toute personne qui utilise votre requête partagée, comme dans le service **Power BI**. Ces étapes sont capturées, de manière séquentielle, dans le volet **Paramètres des requêtes**, sous **Étapes appliquées**.
+Les étapes que vous spécifiez (par exemple, renommage d’une table, transformation d’un type de données ou suppression d’une colonne) sont enregistrées par l’Éditeur de requête. Chaque fois que cette requête se connecte à la source de données, l’Éditeur de requête effectue ces étapes, si bien que les données sont toujours mises en forme comme vous le spécifiez. Ce processus se produit chaque fois que vous utilisez l’Éditeur de requête ou qu’une personne utilise votre requête partagée, par exemple dans le service Power BI. Ces étapes sont capturées, de manière séquentielle, dans le volet **Paramètres des requêtes**, sous **Étapes appliquées**. Nous allons passer en revue chacune de ces étapes dans les paragraphes suivants.
 
-L’illustration suivante montre le volet **Paramètres d’une requête** pour une requête qui a été mise en forme. Nous passerons en revue chacune de ces étapes dans les paragraphes suivants.
+![Étapes appliquées dans les paramètres de requête](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
+Dans [Prise en main de Power BI Desktop](desktop-getting-started.md), nous allons utiliser les données sur la retraite que nous avons récupérées en nous connectant à une source de données web, puis nous les mettrons en forme selon nos besoins. Nous ajouterons une colonne personnalisée pour calculer le classement en fonction de toutes les données qui représentent des facteurs d’égalité, puis nous comparerons cette colonne à la colonne existante, **Rank** (Classement).  
 
-Dans [Prise en main de Power BI Desktop](desktop-getting-started.md), nous avons récupéré des données sur la retraite en nous connectant à une source de données web ; nous allons à présent mettre en forme ces données en fonction de nos besoins.
+1. Dans le ruban **Ajouter une colonne**, sélectionnez **Colonne personnalisée** pour ajouter une colonne personnalisée.
 
-Pour commencer, ajoutons une colonne personnalisée pour calculer le classement en fonction de facteurs d’égalité de toutes les données, et comparons-la à la colonne _Classement_ existante.  Voici le ruban **Ajouter une colonne**, avec une flèche pointant sur le bouton **Colonne personnalisée** permettant d’ajouter une colonne personnalisée.
+    ![Sélectionner Colonne personnalisée](media/desktop-shape-and-combine-data/shapecombine_customcolumn.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_customcolumn.png)
+1. Dans la fenêtre **Colonne personnalisée**, dans **Nouveau nom de colonne**, entrez _New Rank_ (Nouveau classement). Dans **Formule de colonne personnalisée**, entrez les données suivantes :
 
-Dans la boîte de dialogue **Colonne personnalisée**, entrez _Nouveau classement_ dans **Nouveau nom de colonne** et les informations suivantes dans **Formule de colonne personnalisée** :
-
+    ```
     ([Cost of living] + [Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 8
+    ```
+ 
+1. Vérifiez que le message d’état indique *Aucune erreur de syntaxe n’a été détectée*, puis sélectionnez **OK**.
 
-Vérifiez que le message d’état indique _« Aucune erreur de syntaxe n’a été détectée »_ et cliquez sur **OK**.
+    ![Page Colonne personnalisée sans erreurs de syntaxe](media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png)
+1. Pour maintenir la cohérence des données de la colonne, transformez les nouvelles valeurs de la colonne en nombres entiers. Pour les modifier, cliquez avec le bouton droit sur l’en-tête de la colonne, puis sélectionnez **Modifier le type \> Nombre entier**. 
 
-Pour maintenir la cohérence des données de la colonne, transformons ses nouvelles valeurs en nombres entiers. Il suffit pour cela de cliquer avec le bouton droit sur l’en-tête de la colonne et de sélectionner **Modifier le type \> Nombre entier**. 
+    Si vous avez besoin de sélectionner plusieurs colonnes, sélectionnez une colonne, maintenez la touche **Maj** enfoncée, sélectionnez les colonnes adjacentes supplémentaires, puis cliquez avec le bouton droit sur un en-tête de colonne. Vous pouvez également utiliser la touche **Ctrl** pour sélectionner des colonnes non adjacentes.
 
-Si vous devez sélectionner plusieurs colonnes, commencez par en sélectionner une, maintenez la touche **Maj** enfoncée pour sélectionner des colonnes adjacentes supplémentaires, puis cliquez avec le bouton droit sur un en-tête de colonne pour modifier toutes les colonnes sélectionnées. Vous pouvez également utiliser la touche **Ctrl** pour sélectionner des colonnes non adjacentes.
+    ![Sélectionner les données de colonne Nombre entier](media/desktop-shape-and-combine-data/shapecombine_changetype2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_changetype2.png)
+1. Pour *transformer* des types de données de colonne, ce qui consiste à transformer le type de données actuel en un autre, sélectionnez **Texte de données : Texte** dans le ruban **Transformer**. 
 
-Vous pouvez également *transformer* les types de données de la colonne dans le ruban **Transformer**. Voici le ruban **Transformer** , avec une flèche pointant vers le bouton **Type de données** qui vous permet de modifier le type de données actuel.
+   ![Sélectionner Type de données : Texte](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
 
-![](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
+1. Dans **Paramètres de requête**, la liste **Étapes appliquées** reflète les étapes de mise en forme appliquées aux données. Pour supprimer une étape du processus de mise en forme, sélectionnez le **X** à gauche de l’étape. 
 
-Notez que dans **Paramètres d’une requête**, la section **Étapes appliquées** reflète toutes les étapes de mise en forme appliquées aux données. Pour supprimer une étape quelconque du processus de mise en forme, il suffit de sélectionner le **X** à gauche de l’étape. Dans l’image suivante, la section **Étapes appliquées** reflète les étapes effectuées jusqu’à présent : connexion au site web (**Source**) ; sélection de la table (**Navigation**) ; et, pendant le chargement de la table, conversion automatique, par l’Éditeur de requête, des colonnes de nombres du type de données *Texte* au type de données *Nombre entier* (**Type modifié**). Les deux dernières étapes indiquent nos actions précédentes avec **Added Custom** (Ajout de colonne personnalisée) et **Changed Type1** (Modification de Type1). 
+    Dans l’image suivante, la liste **Étapes appliquées** reflète les étapes ajoutées jusqu’à présent : 
+     - **Source** : connexion au site web.
+     - **Navigation** : sélection de la table. 
+     - **Type modifié** : modification du type de colonne de *Texte* à *Nombre entier*. 
+     - **Personnalisée ajoutée** : ajout d’une colonne personnalisée.
+     - **Type modifié1** : dernière étape appliquée.
 
-![](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png)
+       ![Liste des étapes appliquées](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png)
 
-Avant d’utiliser cette requête, nous devons apporter quelques modifications pour réorganiser ses données :
+## <a name="adjust-data"></a>Ajuster les données
 
-* *Ajuster les classements en supprimant une colonne* : nous avons identifié que le **Cost of living** (Coût de la vie) n’est pas un facteur déterminant pour nos résultats. Après avoir supprimé cette colonne, nous constatons un problème : les données restent inchangées, quoique ce soit facile à corriger avec Power BI Desktop, ce qui illustre une fonction pratique des **Étapes appliquées** dans la requête.
-* *Corriger certaines erreurs* : puisque nous avons supprimé une colonne, il nous faut réajuster nos calculs dans la colonne **Nouveau classement**, ce qui implique de modifier une formule.
-* *Trier les données* : selon les colonnes **Nouveau classement** et **Classement**. 
-* *Remplacer les données* : nous montrerons comment remplacer une valeur en particulier et préciserons qu’il est nécessaire d’insérer une **Étape appliquée**.
-* *Modifier le nom de la table* : le nom **Table 0** n’est pas un descripteur utile, mais il est facile de le modifier.
+Avant d’utiliser cette requête, nous devons apporter quelques modifications pour ajuster ses données :
 
-Pour supprimer la colonne **Cost of living** (Coût de la vie), sélectionnez-la et cliquez sur l’onglet **Accueil** du ruban, puis sur **Supprimer les colonnes**, comme dans l’illustration suivante.
+   - Ajuster les classements en supprimant une colonne.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
+       Nous avons décidé que la colonne **Cost of living** (Coût de la vie) n’était pas un facteur déterminant pour nos résultats. Après avoir supprimé cette colonne, nous constatons que les données sont inchangées. 
 
-Vous remarquerez que les valeurs _Nouveau classement_ n’ont pas changé, à cause de l’ordre des étapes. Étant donné que l’Éditeur de requête enregistre les étapes de manière séquentielle, mais indépendamment les unes des autres, vous pouvez déplacer chaque **étape appliquée** vers le haut ou vers le bas dans la séquence. Cliquez avec le bouton droit sur n’importe quelle étape et l’Éditeur de requête fournit un menu qui vous permet d’effectuer les opérations suivantes : **Renommer**, **Supprimer**, **Supprimer** **jusqu’à la fin** (supprimer l’étape actuelle, ainsi que toutes les étapes suivantes), **Déplacer vers le haut** ou **Déplacer vers le bas**. Poursuivez et déplacez la dernière étape _Removed Columns_ (Suppression de colonnes) juste au-dessus de l’étape _Added Custom_ (Ajout de colonne personnalisée).
+   - Corriger quelques erreurs.
 
-![](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
+       Comme nous avons supprimé une colonne, nous devons réajuster nos calculs dans la colonne **New Rank** en modifiant notamment une formule.
 
-Ensuite, sélectionnez l’étape _Added Custom_ (Ajout de colonne personnalisée). Vous remarquerez que les données affichent maintenant _Error_ (Erreur), ce que nous devrons résoudre. 
+   - Trier les données.
 
-![](media/desktop-shape-and-combine-data/shapecombine_error2.png)
+       Trions les données en fonction des colonnes **New Rank** et **Rank**.
+ 
+   - Remplacer les données.
 
-Il existe plusieurs façons d’obtenir des informations sur chaque erreur. Vous pouvez sélectionner la cellule (sans cliquer sur le mot **Erreur**) ou cliquer sur le mot **Erreur** directement. Si vous sélectionnez la cellule *sans* cliquer directement sur le mot **Erreur**, l’Éditeur de requête affiche les informations sur l’erreur en bas de la fenêtre.
+       Nous allons voir comment remplacer une valeur spécifique et souligner la nécessité d’insérer une **Étape appliquée**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
+   - Changer le nom de la table. 
 
-Si vous cliquez sur le mot *Erreur* directement, l’Éditeur de requête crée une **étape appliquée** dans le volet **Paramètres d’une requête** et affiche des informations sur l’erreur. Comme nous ne souhaitons pas procéder ainsi, sélectionnez **Annuler**.
+       Sachant que **Table 0** n’est pas un descripteur utile pour la table, nous allons changer son nom.
 
-Pour résoudre les erreurs, sélectionnez la colonne _Nouveau classement_, puis affichez la formule de données de la colonne en ouvrant le ruban **Vue** et en cochant la case **Barre de formule**. 
+1. Pour supprimer la colonne **Cost of living** (Coût de la vie), sélectionnez-la, choisissez l’onglet **Accueil** dans le ruban, puis sélectionnez **Supprimer les colonnes**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_formulabar.png)
+    ![Sélectionner Supprimer les colonnes](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-Vous pouvez maintenant supprimer le paramètre _Cost of living_ (Coût de la vie) et décrémenter le diviseur en modifiant la formule ainsi : 
+   Vous remarquerez que les valeurs de **New Rank** n’ont pas changé du fait de l’ordre des étapes. Sachant que l’Éditeur de requête enregistre les étapes de manière séquentielle, mais indépendamment les unes des autres, vous pouvez faire monter ou descendre chaque **étape appliquée** dans la séquence. 
 
+1. Cliquez avec le bouton droit sur une étape. L’Éditeur de requête propose un menu qui vous permet d’effectuer les tâches suivantes : 
+   - **Renommer** : renommez l’étape.
+   - **Supprimer** : supprimez l’étape.
+   - **Supprimer** **jusqu’à la fin** : supprimez l’étape active et toutes celles qui suivent.
+   - **Déplacer vers le haut** : faites monter l’étape dans la liste.
+   - **Déplacer vers le bas** : faites descendre l’étape dans la liste.
+
+1. Déplacez la dernière étape, **Colonnes supprimées**, juste au-dessus de l’étape **Personnalisée ajoutée**.
+
+   ![Monter l’étape dans Étapes appliquées](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
+
+1. Sélectionnez l’étape **Personnalisée ajoutée**. 
+
+   Notez que les données indiquent à présent _Error_ (Erreur), ce que nous devrons examiner.
+
+   ![Résultat en erreur dans les données de la colonne](media/desktop-shape-and-combine-data/shapecombine_error2.png)
+
+   Il existe plusieurs façons d’obtenir des informations sur chaque erreur. Si vous sélectionnez la cellule sans cliquer directement sur le mot *Erreur*, l’Éditeur de requête affiche les informations sur l’erreur au bas de la fenêtre.
+
+   ![Informations sur l’erreur dans l’Éditeur de requête](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
+
+   Si vous sélectionnez le mot *Erreur* directement, l’Éditeur de requête crée une **étape appliquée** dans le volet **Paramètres de requête** et affiche des informations sur l’erreur. 
+
+1. Comme nous n’avons pas besoin d’afficher d’informations sur les erreurs, sélectionnez **Annuler**.
+
+1. Pour corriger les erreurs, sélectionnez la colonne **New Rank**, puis affichez la formule de données de la colonne en cochant la case **Barre de formule** à partir de l’onglet **Affichage**. 
+
+   ![Sélectionner Barre de formule](media/desktop-shape-and-combine-data/shapecombine_formulabar.png)
+
+1. Supprimez le paramètre _Cost of living_ et décrémentez le diviseur en modifiant la formule comme suit : 
+   ```
     Table.AddColumn(#"Removed Columns", "New Rank", each ([Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 7)
+   ```
 
-Cochez la case verte à gauche de la zone de formule ou appuyez sur **Entrée** ; les données sont alors remplacées par les valeurs révisées, et l’étape **Added Custom** (Ajout de colonne personnalisée) devrait maintenant s’effectuer *sans erreurs*.
+1. Sélectionnez la coche verte à gauche de la zone de formule ou appuyez sur **Entrée**.
 
-> [!NOTE]
-> Vous pouvez également utiliser la commande **Supprimer les erreurs** (depuis le ruban ou le menu contextuel), qui supprime toutes les lignes contenant des erreurs. Dans notre cas, elle aurait supprimé toutes les lignes dans nos données ; or, nous souhaitons les conserver dans la table.
+  L’Éditeur de requête remplace les données par les valeurs modifiées et l’étape **Personnalisée ajoutée** se termine sans erreur.
 
-Trions maintenant les données selon la colonne **Nouveau classement**. Sélectionnez d’abord la dernière étape appliquée, **Changed Type1** (Modification de Type1) pour récupérer les dernières données. Ensuite, sélectionnez la liste déroulante à côté de l’en-tête de colonne **Nouveau classement** et cliquez sur **Tri croissant**.
+   > [!NOTE]
+   > Vous pouvez aussi sélectionner **Supprimer les erreurs** via le ruban ou le menu contextuel pour supprimer les lignes qui présentent des erreurs. Ceci dit, comme nous voulons garder les données dans la table pour ce tutoriel, nous n’allons pas le faire.
 
-![](media/desktop-shape-and-combine-data/shapecombine_sort.png)
+1. Triez les données en fonction de la colonne **New Rank**. Sélectionnez d’abord la dernière étape appliquée, **Type modifié1** pour afficher les données les plus récentes. Ensuite, sélectionnez la liste déroulante située en regard de l’en-tête de colonne **New Rank**, puis choisissez **Tri croissant**.
 
-Les données sont maintenant triées en fonction du **Nouveau classement**.  Dans la colonne **Classement** en revanche, on remarque que les données ne sont pas triées correctement dans le cas où la valeur **Nouveau classement** est égale. Pour résoudre ce problème, sélectionnez la colonne **Nouveau classement** et modifiez ainsi la formule dans la **Barre de formule** :
+   ![Trier les données dans la colonne New Rank](media/desktop-shape-and-combine-data/shapecombine_sort.png)
 
+   Les données sont maintenant triées en fonction de la colonne **New Rank**. Cependant, si vous examinez la colonne **Rank**, vous remarquerez que les données ne sont pas triées correctement quand la valeur de **New Rank** est égale. Nous corrigerons cela à l’étape suivante.
+
+1. Pour corriger le problème de tri des données, sélectionnez la colonne **New Rank** et remplacez la formule figurant dans la **Barre de formule** par la formule suivante :
+
+   ```
     = Table.Sort(#"Changed Type1",{{"New Rank", Order.Ascending},{"Rank", Order.Ascending}})
+   ```
 
-Cochez la case verte à gauche de la zone de formule ou appuyez sur **Entrée** ; les lignes sont maintenant triées à la fois par _Nouveau classement_ et par _Classement_.
+1. Sélectionnez la coche verte à gauche de la zone de formule ou appuyez sur **Entrée**. 
 
-En outre, vous pouvez sélectionner n’importe quelle **étape appliquée** dans la liste et poursuivre la mise en forme des données à ce stade de la séquence. L’Éditeur de requête insère automatiquement une nouvelle étape après l’ **tape appliquée**actuellement sélectionnée. Faisons un essai.
+   Les lignes sont à présent classées en fonction des colonnes **New Rank** et **Rank**. En outre, vous pouvez sélectionner n’importe quelle **étape appliquée** dans la liste et poursuivre la mise en forme des données à ce stade de la séquence. L’Éditeur de requête insère automatiquement une nouvelle étape de suite après l’**étape appliquée** actuellement sélectionnée. 
 
-Tout d’abord, sélectionnez **l’Étape appliquée** (soit _Removed Columns_ (Suppression de colonnes)) avant d’ajouter la colonne personnalisée. Nous remplacerons ici la valeur de classement _Weather_ (Météo) en Arizona. Cliquez avec le bouton droit sur la cellule contenant le classement _Weather_ (Météo) de l’Arizona et sélectionnez *Remplacer les valeurs* dans le menu qui s’affiche. Identifiez **l’Étape appliquée** sélectionnée (l’étape qui précède _Added Custom_ (Ajout de colonne personnalisée)).
+1. Dans **Étape appliquée**, sélectionnez l’étape qui précède la colonne personnalisée, à savoir l’étape **Colonnes supprimées**. Nous allons remplacer ici la valeur de classement **Weather** (Météo) en Arizona. Cliquez avec le bouton droit sur la cellule contenant le classement **Weather** (Météo) de l’Arizona, puis sélectionnez **Remplacer les valeurs**. Faites attention à l’**étape appliquée** qui est actuellement sélectionnée.
 
-![](media/desktop-shape-and-combine-data/shapecombine_replacevalues2.png)
+   ![Sélectionner Remplacer les valeurs pour la colonne](media/desktop-shape-and-combine-data/shapecombine_replacevalues2.png)
 
-Étant donné que nous allons insérer une étape, l’Éditeur de requête nous avertit que cette opération risque de provoquer une rupture de la requête. Nous devons être prudents et attentifs ! Dans la mesure où nous suivons un didacticiel qui montre comment créer, supprimer, insérer et réorganiser des étapes de façon conviviale grâce à l’Éditeur de requête, nous sélectionnons naturellement **Insérer**.
+1. Sélectionnez **Insérer**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
+    Comme nous insérons une étape, l’Éditeur de requête nous avertit du risque encouru ; l’ajout d’étapes peut occasionner la rupture de la requête. 
 
-Remplacez la valeur par _51_ ; les données de l’Arizona sont modifiées. Quand vous créez une étape appliquée, l’Éditeur de requête lui attribue un nom basé sur l’action effectuée, en l’occurrence **Valeur remplacée**. Quand plusieurs étapes portent le même nom dans votre requête, l’Éditeur de requête ajoute un numéro séquentiel à chaque **étape appliquée** pour les différencier.
+    ![Vérification Insérer une étape](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
 
-Sélectionnez maintenant la dernière **Étape appliquée**, _Tri de lignes_ ; vous remarquerez que les données ont changé en ce qui concerne le nouveau classement de l’Arizona.  La raison en est que nous avons inséré l’étape _Replaced Value_ (Remplacement de valeur) au bon endroit, avant l’étape _Added Custom_ (Ajout de colonne personnalisée).
+1. Remplacez la valeur de données par _51_. 
 
-Cet exemple est certes un peu complexe, mais il illustre bien la puissance et la polyvalence de l’Éditeur de requête.
+   L’Éditeur de requête remplace les données pour l’Arizona. Quand vous créez une **étape appliquée**, l’Éditeur de requête lui attribue un nom basé sur l’action effectuée, en l’occurrence **Valeur remplacée**. Si plusieurs étapes portent le même nom dans votre requête, l’Éditeur de requête ajoute un numéro séquentiel à chaque **étape appliquée** pour les différencier.
 
-Enfin, nous voulons modifier le nom de cette table par quelque chose de plus explicite. Au moment de créer des rapports, il est particulièrement utile d’avoir des noms de table descriptifs, notamment si nous nous connectons à plusieurs sources de données qui sont toutes répertoriées dans le volet **Champs** de la vue **Rapport** .
+1. Sélectionnez la dernière **étape appliquée**, **Lignes triées**. 
 
-Il est facile de modifier le nom d’une table : dans le volet **Paramètres d’une requête** , sous **Propriétés**, tapez simplement le nouveau nom de la table, comme l’illustre l’image suivante, et appuyez sur **Entrée**. Appelons cette table *RetirementStats*.
+   Notez que les données ont changé en ce qui concerne le nouveau classement de l’Arizona. La raison de ce changement est que nous avons inséré l’étape **Valeur remplacée** au bon endroit, avant l’étape **Personnalisée ajoutée**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_renametable2.png)
+1. Enfin, nous voulons modifier le nom de cette table par quelque chose de plus explicite. Dans le volet **Paramètres de requête**, sous **Propriétés**, entrez le nouveau nom de la table, puis sélectionnez **Entrer**. Nommez cette table *RetirementStats*.
 
-Bien, nous avons mis en forme ces données comme nous le souhaitions. À présent, connectons-nous à une autre source de données et combinons des données.
+   ![Renommer la table dans Paramètres de requête](media/desktop-shape-and-combine-data/shapecombine_renametable2.png)
+
+   Au moment de créer des rapports, il est particulièrement utile d’avoir des noms de table descriptifs, notamment quand il s’agit de se connecter à plusieurs sources de données qui figurent toutes dans le volet **Champs** de la vue **Rapport**.
+
+   Les données sont maintenant mises en forme comme nous le souhaitions. À présent, connectons-nous à une autre source de données et combinons des données.
 
 ## <a name="combine-data"></a>Combiner des données
-Les données relatives aux différents États sont intéressantes et peuvent être utiles pour la création de requêtes et d’efforts d’analyse supplémentaires. Toutefois, elles posent un problème : la plupart de ces données utilisent une abréviation à deux lettres pour les codes d’États, à la place du nom complet de l’État. Nous avons besoin d’un moyen d’associer les noms des États à leurs abréviations.
+Les données sur les différents États sont intéressantes et pourront servir à des analyses complémentaire ou à créer d’autres requêtes. Toutefois, elles posent un problème : la plupart de ces données utilisent une abréviation à deux lettres pour les codes d’États, à la place du nom complet de l’État. Nous devons pouvoir associer les noms des États à leurs abréviations.
 
-Par chance, il existe une autre source de données publiques qui a précisément cette fonction, mais un effort important de mise en forme sera nécessaire pour la connecter à la table relative à la retraite. Voici la ressource web dédiée aux abréviations des États :
+Par chance, il existe une autre source de données publique qui remplit précisément cette fonction, mais un effort important de mise en forme sera nécessaire pour la connecter à la table relative à la retraite. Pour mettre en forme les données, effectuez ces étapes :
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+1. Dans le ruban **Accueil** de l’Éditeur de requête, sélectionnez **Nouvelle source \> Web**. 
 
-Dans le ruban **Accueil** de l’Éditeur de requête, sélectionnez **Nouvelle source \> Web**, tapez l’adresse, puis sélectionnez **Se connecter**. Le navigateur affiche alors ce qu’il a trouvé sur cette page web.
+2. Entrez l’adresse du site web pour les abréviations des États, *https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations* , puis sélectionnez **Se connecter**.
 
- ![](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
+   Le navigateur affiche le contenu du site web.
 
-Sélectionnez **Codes et abréviations...** , qui comprend les données que nous souhaitons ; un gros effort de mise en forme sera quand même nécessaire pour alléger les données de cette table en fonction de nos besoins.
+    ![Page du navigateur](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
 
-> [!TIP]
-> Existe-t-il un moyen plus rapide ou plus facile d’effectuer les étapes suivantes ? Oui, il est possible de créer une *relation* entre les deux tables et de mettre en forme les données en fonction de cette relation. Les étapes suivantes restent importantes pour apprendre à travailler avec des tables. Sachez que les relations peuvent vous aider à rapidement utiliser les données provenant de plusieurs tables.
+1. Sélectionnez **Codes and abbreviations**. 
+
+   > [!TIP]
+   > Quelques efforts de mise en forme sont nécessaires pour réduire les données de ce tableau à ce que nous voulons. Existe-t-il un moyen plus rapide ou plus facile d’effectuer les étapes suivantes ? Oui, il est possible de créer une *relation* entre les deux tables et de mettre en forme les données en fonction de cette relation. Les étapes suivantes restent utiles pour apprendre à travailler avec des tables. Cependant, les relations peuvent vous aider à utiliser rapidement les données de plusieurs tables.
 > 
 > 
 
-Pour mettre ces données en forme, procédez comme suit :
+Pour mettre en forme les données, effectuez ces étapes :
 
-* Supprimez la ligne du haut : elle est liée à la façon dont la table de cette page web a été créée, et nous n’en avons pas besoin. Sous l’onglet **Accueil** du ruban, sélectionnez **Réduire les lignes \>Supprimer les lignes \>Supprimer les lignes du haut**.
+1. Supprimez la ligne du haut. Comme elle est le résultat de la façon dont la table de cette page web a été créée, nous n’en avons pas besoin. Sous l’onglet **Accueil** du ruban, sélectionnez **Réduire les lignes \>Supprimer les lignes \>Supprimer les lignes du haut**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
+    ![Sélectionner Supprimer les lignes du haut](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
 
-La fenêtre **Supprimer les lignes du haut** s’affiche, dans laquelle vous pouvez spécifier le nombre de lignes à supprimer.
+    La fenêtre **Supprimer les lignes du haut** s’affiche, dans laquelle vous pouvez spécifier le nombre de lignes à supprimer.
 
->[!NOTE]
->Si Power BI importe accidentellement les en-têtes sous la forme d’une ligne dans votre table de données, vous pouvez sélectionner **Utiliser la première ligne comme en-tête** dans l’onglet **Accueil** ou dans l’onglet **Transformer** du ruban pour corriger votre table.
+    > [!NOTE]
+    > Si Power BI importe accidentellement les en-têtes sous la forme d’une ligne dans votre table de données, vous pouvez sélectionner **Utiliser la première ligne comme en-tête** dans l’onglet **Accueil** ou dans l’onglet **Transformer** du ruban pour corriger votre table.
 
-* Supprimez les 26 lignes du bas : elles concernent les territoires, que nous n’avons pas besoin d’inclure. Sous l’onglet **Accueil**du ruban, sélectionnez **Réduire les lignes \> Supprimer les lignes \> Supprimer les lignes du bas**.
+1. Supprimez les 26 lignes du bas. Ces lignes correspondent à des territoires américains, que nous n’avons pas besoin d’inclure. Sous l’onglet **Accueil**du ruban, sélectionnez **Réduire les lignes \> Supprimer les lignes \> Supprimer les lignes du bas**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
+    ![Sélectionner Supprimer les lignes du bas](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
 
-* La table RetirementStats ne contenant pas d’informations pour Washington DC, nous devons la filtrer de notre liste. Sélectionnez la flèche déroulante en regard de la colonne Region Status (État de la région), puis désactivez la case à cocher en regard de **Federal district**(District fédéral).
+1. Comme la table RetirementStats ne contient pas d’informations pour Washington DC, nous devons la filtrer hors de la liste. Sélectionnez la flèche déroulante **Region Status** (Statut de la région), puis décochez la case en regard de **Federal district** (District fédéral).
 
-![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
+    ![Décocher la case Federal district](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Supprimez quelques colonnes inutiles : nous avons besoin uniquement du mappage des États avec leurs abréviations à deux lettres officielles, si bien que vous pouvez supprimer les colonnes suivantes : **Colonne1**, **Colonne3**, **Colonne4**, puis **Colonne6** à **Colonne11**. Tout d’abord, sélectionnez **Column1**, puis maintenez la touche **CTRL** enfoncée pour sélectionner les autres colonnes à supprimer (vous pouvez ainsi sélectionner plusieurs colonnes non contiguës). Sous l’onglet Accueil du ruban, sélectionnez **Supprimer les colonnes \> Supprimer les colonnes**.
+1. Supprimez quelques colonnes inutiles. Comme nous n’avons besoin que du mappage de chaque État avec leur abréviation à deux lettres officielle, nous pouvons supprimer les colonnes suivantes : **Colonne1**, **Colonne3**, **Colonne4**, puis **Colonne6** à **Colonne11**. Commencez par sélectionner la **Colonne1**, enfoncez la touche **Ctrl**, puis sélectionnez les autres colonnes à supprimer. À partir de l’onglet **Accueil** du ruban, sélectionnez **Supprimer les colonnes \> Supprimer les colonnes**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
+   ![Supprimer une colonne](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 
->[!NOTE]
->Il est maintenant judicieux de souligner que la *séquence* des étapes appliquées dans l’Éditeur de requête est importante et peut affecter la manière dont les données sont mises en forme. Il est également important de savoir comment une étape peut avoir un impact sur une étape ultérieure. Si vous supprimez une étape de la section Étapes appliquées, les étapes suivantes peuvent ne pas se comporter comme prévu initialement, en raison de l’impact de la séquence des étapes de la requête.
+   > [!NOTE]
+   > Il est maintenant judicieux de souligner que la *séquence* des étapes appliquées dans l’Éditeur de requête est importante et peut affecter la manière dont les données sont mises en forme. Il est également important de savoir comment une étape peut avoir un impact sur une étape ultérieure. Si vous supprimez une étape de la section Étapes appliquées, les étapes suivantes peuvent ne pas se comporter comme prévu initialement, en raison de l’impact de la séquence des étapes de la requête.
 
->[!NOTE]
->Quand vous redimensionnez la fenêtre Éditeur de requête pour réduire sa largeur, certains éléments du ruban sont condensés pour tirer le meilleur parti de l’espace visible. Quand vous augmentez la largeur de la fenêtre Éditeur de requête, les éléments de ruban sont développés pour exploiter pleinement la zone agrandie du ruban.
+   > [!NOTE]
+   > Quand vous redimensionnez la fenêtre Éditeur de requête pour réduire sa largeur, certains éléments du ruban sont condensés pour tirer le meilleur parti de l’espace visible. Quand vous augmentez la largeur de la fenêtre Éditeur de requête, les éléments de ruban sont développés pour exploiter pleinement la zone agrandie du ruban.
 
-* Renommez les colonnes, ainsi que la table ; comme d’habitude, il existe plusieurs façons de renommer une colonne : sélectionnez la colonne, puis cliquez sur **Rename** (Renommer) sous l’onglet **Transform** (Transformer) du ruban, ou cliquez avec le bouton droit, puis choisissez **Rename...** (Renommer...) dans le menu qui s’affiche. Dans l’image suivante, les flèches indiquent les deux options ; vous ne devez en choisir qu’une seule.
+1. Renommez les colonnes et la table. Vous pouvez renommer une colonne de plusieurs façons : Tout d’abord, sélectionnez la colonne, puis choisissez **Renommer** à partir de l’onglet **Transformer** du ruban, ou cliquez avec le bouton droit et sélectionnez **Renommer**. Dans l’image suivante, les flèches indiquent les deux options ; vous ne devez en choisir qu’une seule.
 
-![](media/desktop-shape-and-combine-data/shapecombine_rename.png)
+   ![Renommer la colonne dans l’Éditeur de requête](media/desktop-shape-and-combine-data/shapecombine_rename.png)
 
-Nous allons les renommer *State Name* et *State Code*. Pour renommer la table, tapez simplement le nom dans la zone **Nom** du volet **Paramètres d’une requête** . Appelons cette table *StateCodes*.
+1. Renommez les colonnes *State Name* (Nom de l’état) et *State Code* (Code de l’état). Pour renommer la table, entrez le **Nom** dans le volet **Paramètres de requête**. Nommez cette table *StateCodes*.
 
-Comme la table StateCodes présente désormais la forme qui nous convient, nous pouvons combiner ces deux tables ou requêtes en une seule. Étant donné que les tables dont nous disposons maintenant sont le résultat des requêtes que vous avez appliquées aux données, elles sont souvent appelées *requêtes*.
+## <a name="combine-queries"></a>Combiner les requêtes
+
+Maintenant que nous avons mis en forme la table StateCodes comme nous le voulions, combinons ces deux tables (ou requêtes) en une seule. Les tables dont nous disposons à présent étant le résultat des requêtes que nous avons appliquées aux données, elles sont souvent appelées *requêtes*.
 
 Il existe deux façons principales de combiner des requêtes : par *fusion* et par *ajout*.
 
-Pour ajouter une ou plusieurs colonnes à une autre requête, vous **fusionnez** les requêtes. Pour ajouter des lignes de données à une requête existante, vous **ajoutez** la requête.
+- Pour ajouter une ou plusieurs colonnes à une autre requête, vous *fusionnez* les requêtes. 
+- Pour ajouter des lignes de données à une requête existante, vous *ajoutez* la requête.
 
-Dans le cas présent, nous souhaitons fusionner les requêtes. Pour commencer, dans le volet gauche de l’Éditeur de requête, sélectionnez la requête *dans laquelle* nous voulons que l’autre requête fusionne, dans ce cas *RetirementStats*. Ensuite, sélectionnez **Combine\>Merge Queries**(Combiner > Fusionner les requêtes) sous l’onglet **Home**(Accueil) du ruban.
+Dans le cas présent, nous souhaitons fusionner les requêtes. Pour ce faire, procédez comme suit :
+ 
+1. Dans le volet gauche de l’Éditeur de requête, sélectionnez la requête *dans laquelle* vous voulez fusionner l’autre requête. Dans ce cas, il s’agit de **RetirementStats**. 
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
+1. Sélectionnez **Combiner \> Fusionner des requêtes** à partir de l’onglet **Accueil** du ruban.
 
-Vous êtes invité à définir les niveaux de confidentialité pour vous assurer que les données sont combinées sans inclure ou transférer des données que vous ne voulez pas transférer.
+   ![Sélectionner Fusionner des requêtes](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
 
-La fenêtre **Fusionner** apparaît ensuite. Celle-ci vous invite à sélectionner la table à fusionner dans la table déjà sélectionnée, puis les colonnes correspondantes à utiliser pour la fusion. Sélectionnez State dans la table (requête) *RetirementStats* , puis sélectionnez la requête *StateCodes* (opération simple ici, car il existe une seule autre requête, alors que quand vous vous connectez à de nombreuses sources de données, vous avez le choix entre de nombreuses requêtes). Quand vous sélectionnez les colonnes correspondantes appropriées ( **State** dans *RetirementStats* et **State Name** dans *StateCodes* ), la fenêtre **Fusionner** ressemble à l’illustration ci-dessous et le bouton **OK** est activé.
+   Vous serez peut-être invité à définir les niveaux de confidentialité pour faire en sorte que les données soient combinées sans inclure ni transférer des données que vous ne voulez pas transférer.
 
-![](media/desktop-shape-and-combine-data/shapecombine_merge2.png)
+   La fenêtre **Fusionner** s’affiche. Elle vous invite à sélectionner la table à fusionner dans la table déjà sélectionnée, puis les colonnes correspondantes à utiliser pour la fusion. 
 
-Une colonne ( **NewColumn** ) est créée à la fin de la requête, qui correspond au contenu de la table (requête) qui a été fusionnée avec la requête existante. Toutes les colonnes de la requête fusionnée sont condensées dans la colonne **NewColumn**, mais vous pouvez choisir de **développer** la table et d’inclure les colonnes de votre choix.
+1. Sélectionnez **State** (État) dans la table RetirementStats, puis sélectionnez la requête **StateCodes**. 
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
+   Quand vous sélectionnez les colonnes correspondantes, le bouton **OK** est activé.
 
-Pour développer la table fusionnée et sélectionner les colonnes à inclure, sélectionnez l’icône de développement (![Développer](media/desktop-shape-and-combine-data/icon.png)). La fenêtre **Développer** apparaît.
+   ![Fenêtre Fusionner](media/desktop-shape-and-combine-data/shapecombine_merge2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergeexpand.png)
+1. Sélectionnez **OK**.
 
-Dans le cas présent, comme nous voulons uniquement la colonne **State Code**, sélectionnez cette colonne, puis cliquez sur **OK**. Décochez la case Utiliser le nom de la colonne d’origine comme préfixe, car cette opération ne présente ici aucun intérêt. Si vous conservez cette option, la colonne fusionnée sera nommée **NewColumn.State Code** (nom de la colonne d’origine, ou **NewColumn**, suivi d’un point et du nom de la colonne insérée dans la requête).
+   L’Éditeur de requête crée une colonne **NewColumn** à la fin de la requête, qui comporte le contenu de la table (requête) qui a été fusionnée avec la requête existante. Toutes les colonnes de la requête fusionnée sont condensées dans la colonne **NewColumn**, mais vous pouvez **développer** la table et inclure les colonnes de votre choix.
 
->[!NOTE]
->Vous souhaitez explorer d’autres manières d’insérer la table **NewColumn** ? Vous pouvez faire des essais et si les résultats ne vous satisfont pas, supprimez simplement cette étape de la liste **Étapes appliquées** dans le volet **Paramètres d’une requête**. Votre requête retourne à l’état précédant l’application de l’étape **Développer**. Vous pouvez ainsi faire autant d’expérimentation que vous le souhaitez, jusqu’à ce que le processus de développement vous satisfasse.
+   ![Colonne NewColumn](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
 
-Vous disposez à présent d’une requête (table) unique associant deux sources de données, dont chacune a été mise en forme pour répondre à nos besoins. Cette requête peut servir de base pour un grand nombre d’autres connexions de données intéressantes, telles que des statistiques de coût du logement, des données démographiques ou des opportunités de travail dans un État.
+1. Pour développer la table fusionnée et sélectionner les colonnes à inclure, sélectionnez l’icône de développement (![icône Développer](media/desktop-shape-and-combine-data/icon.png)). 
 
-Pour appliquer les modifications et fermer l’Éditeur de requête, sélectionnez **Fermer et Appliquer** sous l’onglet de ruban **Accueil**. Le jeu de données transformé s’affiche dans Power BI Desktop, prêt à l’usage pour la création de rapports.
+   La fenêtre **Développer** apparaît.
 
-![](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
+   ![NewColumn dans la requête](media/desktop-shape-and-combine-data/shapecombine_mergeexpand.png)
+
+1. Dans ce cas, seule la colonne **State Code** nous intéresse. Sélectionnez cette colonne, décochez **Utiliser le nom de la colonne d’origine comme préfixe**, puis sélectionnez **OK**.
+
+   Si nous avions laissé la case **Utiliser le nom de colonne d’origine comme préfixe** cochée, la colonne fusionnée aurait été nommée **NewColumn.State Code**.
+
+   > [!NOTE]
+   > Vous voulez savoir comment afficher la table NewColumn ? Vous pouvez faire des essais et si les résultats ne vous satisfont pas, supprimez simplement cette étape de la liste **Étapes appliquées** dans le volet **Paramètres d’une requête**. Votre requête retourne à l’état précédant l’application de l’étape **Développer**. Vous pouvez faire cela autant de fois que vous le voulez jusqu’à ce que le processus de développement vous convienne.
+
+   Nous disposons à présent d’une requête (table) unique qui combine deux sources de données, chacune ayant été mise en forme selon nos besoins. Cette requête peut servir de base pour de nombreuses autres connexions de données intéressantes, comme des statistiques sur le coût du logement, des données démographiques ou des opportunités de travail dans un État.
+
+1. Pour appliquer vos modifications et fermer l’Éditeur de requête, sélectionnez **Fermer et appliquer** à partir de l’onglet **Accueil** du ruban. 
+
+   Le jeu de données transformé s’affiche dans Power BI Desktop, prêt à l’usage pour la création de rapports.
+
+   ![Sélectionner Fermer et appliquer](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Power BI Desktop vous permet d’effectuer des tâches très diverses. Pour plus d’informations sur ses fonctionnalités, passez en revue les ressources suivantes :
+Pour plus d’informations sur Power BI Desktop et ses fonctionnalités, consultez les ressources suivantes :
 
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
 * [Présentation des requêtes dans Power BI Desktop](desktop-query-overview.md)
 * [Sources de données dans Power BI Desktop](desktop-data-sources.md)
 * [Se connecter aux données dans Power BI Desktop](desktop-connect-to-data.md)
-* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
+* [Tâches courantes relatives aux requêtes dans Power BI Desktop](desktop-common-query-tasks.md)   
 

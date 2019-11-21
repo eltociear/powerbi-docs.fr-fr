@@ -2,7 +2,6 @@
 title: Se connecter à Project Online avec Power BI
 description: Project Online pour Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0978e87167f96b40082819764d7e3ae35e930a4b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 941981e1f84cf3d7a74a156e4f1c88f57e061ad2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023783"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854654"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Se connecter à Project Web App avec Power BI
 Microsoft Project Web App est une solution en ligne flexible pour la gestion de portefeuilles de projets et les tâches quotidiennes. Project Web App permet aux organisations de prendre en main et de hiérarchiser les investissements de portefeuilles de projets ainsi que de produire la valeur commerciale souhaitée. L’application modèle Project Web App pour Power BI vous permet d’exploiter les insights de Project Web App pour mieux gérer les projets, les portefeuilles et les ressources.
@@ -24,7 +23,7 @@ Connectez-vous à l’[application modèle Project Web App](https://appsource.mi
 
 ## <a name="how-to-connect"></a>Comment se connecter
 
-1. Sélectionnez **Applications** dans le volet de navigation de gauche, puis **Obtenir des applications** en haut à droite.
+1. Sélectionnez **Applications** dans le volet de navigation, puis **Obtenir des applications** en haut à droite.
 
     ![Obtenir des applications](media/service-connect-to-project-online/GetApps.png)
 
@@ -52,7 +51,7 @@ Connectez-vous à l’[application modèle Project Web App](https://appsource.mi
 
 9. Une notification indiquant que vos données sont en cours de chargement s’affiche. Selon la taille de votre compte, cela peut prendre un certain temps. Une fois les données importées dans Power BI, le contenu de votre nouvel espace de travail s’affiche. Vous devrez peut-être actualiser le jeu de données pour récupérer les dernières mises à jour. 
 
-    Une fois les données importées dans Power BI, le rapport de 13 pages et le jeu de données apparaissent dans le volet de navigation de gauche. 
+    Une fois les données importées dans Power BI, le rapport de 13 pages et le jeu de données apparaissent dans le volet de navigation. 
 
 10. Une fois que vos rapports sont prêts, vous pouvez commencer à explorer vos données Project Web App. L’application modèle intègre 13 rapports riches et détaillés : 6 pages de rapport pour la vue d’ensemble du portefeuille, 5 pages de rapport pour la vue d’ensemble des ressources et 2 pages de rapport pour l’état du projet. 
 

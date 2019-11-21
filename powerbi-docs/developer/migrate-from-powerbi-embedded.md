@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f55a9f1bfc9454c7d5a4ee3755a10f7cde1b0fd6
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61270452"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73780946"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Guide pratique pour migrer le contenu d’une collection d’espaces de travail Power BI vers Power BI Embedded
 
@@ -20,7 +20,7 @@ Découvrez comment migrer le contenu d’une collection d’espaces de travail P
 
 Microsoft [a récemment annoncé Power BI Embedded](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), un nouveau modèle de gestion des licences basé sur la capacité, qui apporte aux utilisateurs plus de flexibilité dans la consultation, le partage et la distribution de leur contenu. L’offre améliore également la scalabilité et les performances.
 
-Avec Power BI Embedded, vous disposez d’une surface d’API, d’un ensemble cohérent de fonctionnalités et de l’accès aux dernières fonctionnalités de Power BI, telles que les tableaux de bord, les passerelles et les espaces de travail d’application, lors de l’incorporation de votre contenu. Plus tard, vous pourrez commencer à utiliser Power BI Desktop et passer au déploiement avec Power BI Embedded.
+Avec Power BI Embedded, vous disposez d’une surface d’API, d’un ensemble cohérent de fonctionnalités et de l’accès aux dernières fonctionnalités de Power BI, telles que les tableaux de bord, les passerelles et les espaces de travail, lors de l’incorporation de votre contenu. Plus tard, vous pourrez commencer à utiliser Power BI Desktop et passer au déploiement avec Power BI Embedded.
 
 La collection d’espaces de travail Power BI actuelle reste encore disponible pendant une durée limitée. Les clients avec un contrat Entreprise gardent l’accès jusqu’à l’expiration de leur contrat. Les clients qui ont acquis la collection d’espaces de travail Power BI par le biais de canaux directs ou CSP conservent l’accès pendant un an à partir de la version en disponibilité générale de Power BI Embedded.  Cet article fournit des conseils pour la migration de la collection d’espaces de travail Power BI vers la nouvelle version de Power BI Embedded, et explique les changements que cette migration entraîne dans votre application.
 
@@ -56,19 +56,19 @@ Pour préparer la migration d’une collection d’espaces de travail Power BI v
 Les comptes suivants doivent exister au sein de votre client.
 
 > [!NOTE]
-> Ces comptes doivent disposer de licences Power BI Pro pour utiliser les espaces de travail d’applications.
+> Ces comptes doivent disposer de licences Power BI Pro pour utiliser les espaces de travail.
 
 1. Un utilisateur administrateur du client.
 
-    Il est recommandé que cet utilisateur soit membre de tous les espaces de travail d’application créés à des fins d’incorporation.
+    Il est recommandé que cet utilisateur soit membre de tous les espaces de travail créés à des fins d’incorporation.
 
 2. Des comptes pour les analystes devant créer du contenu.
 
-    Ces utilisateurs doivent être affectés aux espaces de travail d’application en fonction des besoins.
+    Ces utilisateurs doivent être affectés aux espaces de travail en fonction des besoins.
 
 3. Un compte d’utilisateur *principal* d’applications, ou compte incorporé.
 
-    Le serveur principal d’applications stocke les informations d’identification de ce compte et les utilise pour se procurer le jeton Azure AD à utiliser avec les API REST Power BI. Ce compte est utilisé pour générer le jeton incorporé pour l’application. Ce compte doit également être l’administrateur des espaces de travail d’applications créés pour l’incorporation.
+    Le serveur principal d’applications stocke les informations d’identification de ce compte et les utilise pour se procurer le jeton Azure AD à utiliser avec les API REST Power BI. Ce compte est utilisé pour générer le jeton incorporé pour l’application. Ce compte doit également être administrateur des espaces de travail créés pour l’incorporation.
 
 > [!NOTE]
 > Il s’agit simplement d’un compte d’utilisateur ordinaire de votre organisation qui sera utilisé à des fins d’incorporation.
@@ -83,14 +83,14 @@ Vous devez inscrire votre application avec Azure AD afin d’effectuer des appel
 
 Vous devez inscrire l’application à l’aide du compte **principal** d’application.
 
-## <a name="create-app-workspaces-required"></a>Créer des espaces de travail d’application (facultatif)
+## <a name="create-workspaces-required"></a>Créer des espaces de travail (obligatoire)
 
-Vous pouvez tirer parti des espaces de travail de l’application pour mettre en place une meilleure isolation si votre application sert plusieurs clients. Les tableaux de bord et rapports sont ainsi isolés entre vos clients. Vous pouvez ensuite utiliser un compte Power BI par espace de travail d’application afin d’isoler davantage les expériences d’application entre vos clients.
+Vous pouvez tirer parti des espaces de travail pour offrir une meilleure isolation si votre application sert plusieurs clients. Les tableaux de bord et rapports sont ainsi isolés entre vos clients. Vous pouvez ensuite utiliser un compte Power BI par espace de travail afin d’isoler davantage les expériences d’application entre vos clients.
 
 > [!IMPORTANT]
 > Vous ne pouvez pas utiliser un espace de travail personnel pour tirer parti de l’incorporation à des utilisateurs non-Power BI.
 
-Pour créer un espace de travail d’applications dans Power BI, un utilisateur détenteur d’une licence Pro est requis. Par défaut, l’utilisateur de Power BI qui crée l’espace de travail de l’application est un administrateur de cet espace de travail.
+Pour créer un espace de travail dans Power BI, un utilisateur détenteur d’une licence Pro est nécessaire. Par défaut, l’utilisateur Power BI qui crée l’espace de travail est un administrateur de cet espace de travail.
 
 > [!NOTE]
 > Le compte *principal* d’application doit être un administrateur de l’espace de travail.
@@ -163,7 +163,7 @@ Vous pouvez migrer le rapport de l’API d’envoi (push) de PaaS vers SaaS en e
 
 ## <a name="create-and-upload-new-reports"></a>Créer et charger de nouveaux rapports
 
-En plus du contenu que vous avez migré à partir de la collection d’espaces de travail Power BI, vous pouvez créer vos rapports et jeux de données à l’aide de Power BI Desktop, puis publier ces rapports dans un espace de travail d’applications. Pour publier les rapports dans un espace de travail d’applications, l’utilisateur final doit disposer d’une licence Power BI Pro.
+En plus du contenu que vous avez migré à partir de la collection d’espaces de travail Power BI, vous pouvez créer vos rapports et jeux de données à l’aide de Power BI Desktop, puis publier ces rapports dans un espace de travail. Pour publier les rapports dans un espace de travail, l’utilisateur final doit disposer d’une licence Power BI Pro.
 
 ## <a name="rebuild-your-application"></a>Régénérer votre application
 
@@ -179,9 +179,9 @@ Dans votre application, vous devez mapper les utilisateurs que vous gérez au se
 
 Lorsque vous êtes prêt à passer à la production, vous devez procéder comme suit.
 
-* Si vous utilisez un locataire distinct pour le développement, veillez à ce que vos espaces de travail d’applications ainsi que vos tableaux de bord et rapports soient disponibles dans votre environnement de production. Vérifiez également que vous avez créé l’application dans Azure AD pour votre locataire de production et attribué les autorisations d’application appropriées comme indiqué à l’étape 1.
+* Si vous utilisez un locataire distinct pour le développement, veillez à ce que vos espaces de travail ainsi que vos tableaux de bord et rapports soient disponibles dans votre environnement de production. Vérifiez également que vous avez créé l’application dans Azure AD pour votre locataire de production et attribué les autorisations d’application appropriées comme indiqué à l’étape 1.
 * Achetez une capacité adaptée à vos besoins. Pour mieux comprendre de quelle quantité et de quel type de capacité vous avez besoin, consultez le [Livre blanc sur la planification de la capacité d’analytique pour Power BI Embedded](https://aka.ms/pbiewhitepaper). Vous pouvez [acheter de la capacité](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) dans Azure.
-* Modifiez l’espace de travail d’applications et attribuez-le à une capacité Premium sous Avancé.
+* Modifiez l’espace de travail et attribuez-le à une capacité Premium sous Avancé.
 
     ![Capacité Premium](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
 
@@ -207,4 +207,4 @@ Vous devez effectuer un peu de nettoyage dans Azure.
 [Livre blanc sur la planification de la capacité d’analytique des collections d’espaces de travail](https://aka.ms/pbiewhitepaper)  
 [Livre blanc sur Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

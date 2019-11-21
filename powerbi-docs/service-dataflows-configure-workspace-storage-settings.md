@@ -1,8 +1,7 @@
 ---
 title: Configurer les paramètres de flux de données d’un espace de travail
-description: Configurer un espace de travail d’application dans Power BI pour stocker ses fichiers de données et de définition de flux de données dans Azure Data Lake Storage Gen2
+description: Configurer un espace de travail dans Power BI pour stocker ses fichiers de données et de définition de dataflow dans Azure Data Lake Storage Gen2
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12f4f24be9189041d5906844ebe71d6ffb023ec5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: fa448dac3e7788639377ce2d73d9c0ed68952fb3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523517"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877346"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Configurer les paramètres de flux de données d’un espace de travail (préversion)
 
@@ -35,11 +34,11 @@ Nous allons examiner ces deux possibilités dans les sections suivantes.
 
 ## <a name="create-a-new-workspace-configure-its-dataflow-storage"></a>Créer un espace de travail et configurer son stockage de flux de données
 
-Pour créer un espace de travail d’application dans le service Power BI, sélectionnez **Espaces de travail > Créer un espace de travail d’application**.
+Pour créer un espace de travail dans le service Power BI, sélectionnez **Espaces de travail > Créer un espace de travail**.
 
 ![Ajouter un nouvel espace de travail](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 
-Dans la boîte de dialogue Créer un espace de travail d’application, une zone jaune intitulée **Afficher un aperçu des espaces de travail améliorés** peut apparaître. Dans cette zone, sélectionnez **Essayer maintenant**.
+Dans la boîte de dialogue Créer un espace de travail, une zone jaune intitulée **Afficher un aperçu des espaces de travail améliorés** peut apparaître. Dans cette zone, sélectionnez **Essayer maintenant**.
 
 ![Afficher un aperçu des espaces de travail améliorés](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_02.jpg)
 
@@ -47,7 +46,7 @@ Dans la boîte de dialogue qui s’affiche, vous pouvez donner un nom unique à 
 
 ![Nommer le nouvel espace de travail](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Ensuite, développez la zone **Avancé** de la boîte de dialogue **Créer un espace de travail d’application** et activez le paramètre **Stockage de flux de données (préversion)** .
+Ensuite, développez la zone **Avancé** de la boîte de dialogue **Créer un espace de travail** et activez le paramètre **Stockage de dataflows (préversion)** .
 
 ![Paramètres avancés du nouvel espace de travail](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
@@ -57,7 +56,7 @@ Sélectionnez **Enregistrer** pour créer l’espace de travail. Tous les flux d
 
 Nous avons vu comment créer un espace de travail. Vous pouvez également mettre à jour un espace de travail existant pour stocker le fichier de définition et les données dans le compte Azure Data Lake Storage Gen2 de votre organisation. Gardez à l’esprit que le paramètre de stockage de flux de données n’est modifiable que si l’espace de travail ne contient pas encore de flux de données.
 
-Pour modifier un espace de travail d’application, sélectionnez les points de suspension **(…)** , puis **Modifier l’espace de travail**. 
+Pour modifier un espace de travail, sélectionnez les points de suspension **(…)** , puis **Modifier l’espace de travail**. 
 
 ![Modifier l’espace de travail](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
@@ -103,7 +102,7 @@ Autres considérations à prendre en compte :
 
 Les clients **Power BI Desktop** n’ont pas accès aux flux de données stockés dans un compte Azure Data Lake Storage Gen2, sauf s’ils sont propriétaires du flux de données. Prenons la situation suivante :
 
-1.  Anna crée un espace de travail d’application et le configure de façon à stocker les flux de données dans le Data Lake de l’organisation.
+1.  Anna crée un espace de travail et le configure de façon à stocker les dataflows dans le lac de données de l’organisation.
 2.  Ben, qui est également membre de l’espace de travail créé par Anna, veut utiliser Power BI Desktop et le connecteur de flux de données pour obtenir des données à partir du flux de données créé par Anna.
 3.  Ben reçoit une erreur, car il n’a pas été autorisé à accéder au dossier CDM du flux de données dans le Data Lake.
 
@@ -138,4 +137,4 @@ Pour plus d’informations sur le modèle Common Data Model, vous pouvez lire so
 * [Dossiers CDM](https://go.microsoft.com/fwlink/?linkid=2045304)
 * [Définition du fichier model CDM](https://go.microsoft.com/fwlink/?linkid=2045521)
 
-Vous pouvez aussi [poser des questions à la Communauté Power BI](http://community.powerbi.com/).
+Vous pouvez aussi [poser des questions à la Communauté Power BI](https://community.powerbi.com/).

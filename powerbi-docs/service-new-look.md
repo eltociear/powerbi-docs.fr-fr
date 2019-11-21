@@ -2,7 +2,6 @@
 title: Nouvelle apparence du service Power BI
 description: Le service Power BI (app.powerbi.com) a une nouvelle présentation. Cet article explique comment parcourir les rapports dans la nouvelle présentation.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: c69e0247ecde7d6bd1cf158761a2ff9efd31d2d3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239963"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881383"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Nouvelle apparence du service Power BI
 
@@ -66,7 +65,7 @@ Nous n’avons pas supprimé les fonctionnalités de l’ancienne présentation.
 
 ### <a name="where-are-file-menu-actions"></a>Où se trouvent les actions du menu Fichier ?
 
-Vous recherchez les actions du menu **Fichier** ? À présent, les actions qui se trouvaient dans le menu **Fichier** figurent également dans le menu Points de suspension (...). 
+Vous recherchez les actions du menu **Fichier** ? Les actions qui se trouvaient dans le menu **Fichier** figurent également dans le menu **Plus d’options** (...). 
 
 ![Menu Fichier dans la nouvelle présentation](media/service-new-look/power-bi-file-menu-new-look.gif)
 

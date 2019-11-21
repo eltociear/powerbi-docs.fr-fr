@@ -2,7 +2,6 @@
 title: Promouvoir votre jeu de données (préversion) - Power BI
 description: Découvrez comment promouvoir votre jeu de données afin de guider les utilisateurs en entreprise vers des jeux de données fiables et de qualité.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 379249ac50f61df07c4adaffe53e0df29a311086
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567360"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877133"
 ---
 # <a name="promote-your-dataset-preview"></a>Promouvoir votre jeu de données (préversion)
 
@@ -30,7 +29,7 @@ Votre jeu de données doit se trouver dans un espace de travail de nouvelle exp�
 
 1. Accédez à la liste des jeux de données dans l’espace de travail.
  
-1. Sélectionnez les points de suspension (...), puis **Paramètres**.
+1. Sélectionnez **Autres options** (...), puis sélectionnez **Paramètres**.
 
     ![Sélectionner les points de suspension en fonction du jeu de données](media/service-datasets-certify-promote/power-bi-dataset-settings.png)
 
@@ -55,4 +54,4 @@ Votre administrateur de locataire a identifié des personnes de votre organisati
 ## <a name="next-steps"></a>Étapes suivantes
 
 * En savoir plus sur l’[utilisation de jeux de données dans des espaces de travail](service-datasets-across-workspaces.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

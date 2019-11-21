@@ -3,20 +3,19 @@ title: Filtrer un rapport à l’aide de paramètres de chaîne de requête dans
 description: Filtrez un rapport à l’aide de paramètres de chaîne de requête URL et filtrez même sur plusieurs champs.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 10/23/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: be45941e67417cbed15433405953cf728fe0aa8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623894"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876922"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer un rapport à l’aide de paramètres de chaîne de requête dans l’URL
 
@@ -107,7 +106,7 @@ Power BI prend en charge de nombreux opérateurs en plus de '**and**'. Le tablea
 
 |Opérateur  | Définition | chaîne  | nombre | Date |  Example|
 |---------|---------|---------|---------|---------|---------|
-|**and**     | and |  oui      | oui |  oui|  product/price le 200 and price gt 3,5 |
+|**and**     | et |  oui      | oui |  oui|  product/price le 200 and price gt 3,5 |
 |**eq**     | est égal à |  oui      | oui   |  oui       | Address/City eq 'Redmond' |
 |**ne**     | différent de |   oui      | oui  | oui        |  Address/City ne 'London' |
 |**ge**     |  supérieur ou égal à       | non | oui |oui |  product/price ge 10
@@ -153,7 +152,7 @@ Les caractères spéciaux et les espaces nécessitent une mise en forme supplém
 |---------|---------|---------|
 |**Nom du tableau**     | Le code Unicode pour l’espace est 0x20        |  Table_x0020_Name       |
 |**Column**@**Number**     |   Le code Unicode pour @ est 0x40     |  Column_x0040_Number       |
-|**[Column]**     |  Le code Unicode pour [est 0x0058] est 0x0050       |  _x0058_Column_x0050_       |
+|**[Column]**     |  [ is 0x005B ] is 0x005D       |  _x005B_Column_x005D_       |
 |**Column+Plus**     | Le code Unicode pour + est 0x2B        |  Column_x002B_Plus       |
 
 Table_x0020_Name/Column_x002B_Plus eq 3 ![visuel de table affichant des caractères spéciaux](media/service-url-filters/power-bi-special-characters1.png)
@@ -195,4 +194,4 @@ Lorsque vous utilisez les paramètres de chaîne de requête, vous devez garder 
 [Épingler une visualisation à un tableau de bord](service-dashboard-pin-tile-from-report.md)  
 [S’inscrire à un essai gratuit](https://powerbi.microsoft.com/get-started/)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

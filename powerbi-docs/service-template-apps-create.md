@@ -2,19 +2,18 @@
 title: Créer des applications modèles dans Power BI
 description: Découvrez comment créer des applications modèles dans Power BI que vous pourrez ensuite distribuer à vos clients Power BI.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 4b3158cbe26efe05e3d35c1c6c93027738cc817a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195380"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871489"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Créer une application modèle dans Power BI
 
@@ -33,19 +32,19 @@ Les prérequis pour créer une application modèle sont les suivants :
 - Une bonne connaissance des [concepts de base de Power BI](service-basic-concepts.md)
 - Autorisations pour partager une application modèle publiquement. Pour plus d’informations, consultez [Paramètres des applications modèles dans le portail d’administration](service-admin-portal.md#template-apps-settings) Power BI.
 
-## <a name="create-the-template-app-workspace"></a>Créer l’espace de travail de l’application modèle
+## <a name="create-the-template-workspace"></a>Créer l’espace de travail de modèle
 
-Pour créer une application modèle que vous pourrez ensuite distribuer à d’autres locataires Power BI, vous devez la créer dans l’un des nouveaux espaces de travail d’application.
+Pour créer une application modèle que vous pouvez ensuite distribuer à d’autres locataires Power BI, vous devez la créer dans un des nouveaux espaces de travail.
 
-1. Dans le service Power BI, sélectionnez **Espaces de travail** > **Créer un espace de travail d’application**.
+1. Dans le service Power BI, sélectionnez **Espaces de travail** > **Créer un espace de travail**.
 
-    ![Créer un espace de travail d’application](media/service-template-apps-create/power-bi-new-workspace.png)
+    ![Créer un espace de travail](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. Dans **Créer un espace de travail de l’application**, sélectionnez **Mettre à niveau vers le nouveau**.
+2. Dans **Créer un espace de travail**, sélectionnez **Mettre à niveau vers le nouveau**.
 
     ![Essayer les nouveaux espaces de travail](media/service-template-apps-create/power-bi-upgrade-new.png)
 
-3. Entrez un nom, une description (facultative) et un logo (facultatif) pour votre espace de travail d’application.
+3. Entrez un nom, une description (facultative) et une image de logo (facultatif) pour votre espace de travail.
 
 4. Développez la section **Avancé**, puis sélectionnez **Développer une application modèle**.
 
@@ -57,9 +56,9 @@ Pour créer une application modèle que vous pourrez ensuite distribuer à d’a
 
 ## <a name="create-the-content-in-your-template-app"></a>Créer le contenu dans votre application modèle
 
-Comme avec tout espace de travail d’application Power BI standard, l’étape suivante consiste à créer le contenu dans l’espace de travail.  
+Comme avec tout espace de travail Power BI standard, l’étape suivante consiste à créer le contenu dans l’espace de travail.  
 
-- [Créez votre contenu Power BI](power-bi-creator-landing.md) dans votre espace de travail d’application.
+- [Créez votre contenu Power BI](power-bi-creator-landing.md) dans votre espace de travail.
 
 Si vous définissez des paramètres dans Power Query, assurez-vous d’utiliser des types de paramètre pris en charge (par exemple, Text). Les types Any et Binary ne sont pas pris en charge.
 
@@ -69,7 +68,7 @@ Si vous définissez des paramètres dans Power Query, assurez-vous d’utiliser 
 
 Maintenant que vous avez ajouté du contenu dans votre espace de travail, vous êtes prêt à l’intégrer dans une application modèle. La première étape consiste à créer une application modèle de test, accessible uniquement au sein de votre organisation sur votre locataire.
 
-1. Dans l’espace de travail d’application modèle, sélectionnez **Créer une application**.
+1. Dans l’espace de travail modèle, sélectionnez **Créer une application**.
 
     ![Créer une application](media/service-template-apps-create/power-bi-create-app.png)
 
@@ -86,7 +85,7 @@ Maintenant que vous avez ajouté du contenu dans votre espace de travail, vous �
 
     **Navigation**
 
-    Activez le **Nouveau générateur de navigation**, où vous pouvez définir le volet de navigation gauche de l’application (pour plus d’informations, consultez [Concevoir l’expérience de navigation](service-create-distribute-apps.md#design-the-navigation-experience) dans cet article).
+    Activez le **Nouveau générateur de navigation**, où vous pouvez définir le volet de navigation de l’application (pour plus d’informations, consultez [Concevoir l’expérience de navigation](service-create-distribute-apps.md#design-the-navigation-experience) dans cet article).
 
    ![Définir la page d’accueil de l’application](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
     
@@ -133,7 +132,7 @@ L’URL ne change pas quand vous passez d’une phase de mise en production à u
 
 Examinons chacune de ces phases :
 
-1. Dans l’espace de travail d’application modèle, sélectionnez **Gestion des mises en production**.
+1. Dans l’espace de travail modèle, sélectionnez **Gestion des mises en production**.
 
     ![Icône Gestion des mises en production](media/service-template-apps-create/power-bi-release-management-icon.png)
 

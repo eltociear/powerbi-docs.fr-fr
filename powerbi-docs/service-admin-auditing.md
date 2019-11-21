@@ -2,7 +2,6 @@
 title: Utiliser l’audit dans votre organisation
 description: Apprenez à utiliser l’audit avec Power BI pour analyser et examiner les actions effectuées. Vous pouvez utiliser le centre Sécurité et conformité ou utiliser PowerShell.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.date: 09/09/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: aef5a8861a42e566086198c924c99d0b73406f60
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 76de629f1579289ea3b702013583911d05f08408
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325457"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873762"
 ---
 # <a name="use-auditing-within-your-organization"></a>Utiliser l’audit dans votre organisation
 
@@ -162,7 +161,9 @@ Les activités suivantes sont auditées par Power BI :
 | Compte de stockage de dataflow attaché au locataire par l’administrateur | AdminAttachedDataflowStorageAccountToTenant | Non utilisée actuellement                       |
 | Jeu de données Power BI analysé                         | AnalyzedByExternalApplication               |                                          |
 | Rapport Power BI analysé                          | AnalyzeInExcel                              |                                          |
+| Compte de stockage de dataflow attaché                 | AttachedDataflowStorageAccount              |                                          |
 | Jeu de données Power BI lié à la passerelle                | BindToGateway                               |                                          |
+| Actualisation de dataflow annulée                        | CancelDataflowRefresh                       |                                          |
 | État de la capacité modifié                            | ChangeCapacityState                         |                                          |
 | Affectation d’utilisateurs de capacité modifiée                  | UpdateCapacityUsersAssignment               |                                          |
 | Connexions de jeu de données Power BI modifiées              | SetAllConnections                           |                                          |
@@ -194,6 +195,7 @@ Les activités suivantes sont auditées par Power BI :
 | Rapport Power BI supprimé                           | DeleteReport                                |                                          |
 | Sources de données de jeu de données Power BI détectées          | GetDatasources                              |                                          |
 | Rapport Power BI téléchargé                        | DownloadReport                              |                                          |
+| Propriétés de dataflow modifiées                        | EditDataflowProperties                      |                                          |
 | Autorisation de certification Power BI modifiée          | EditCertificationPermission                 | Non utilisée actuellement                       |
 | Tableau de bord Power BI modifié                         | EditDashboard                               | Non utilisée actuellement                       |
 | Jeu de données Power BI modifié                           | EditDataset                                 |                                          |
@@ -213,7 +215,7 @@ Les activités suivantes sont auditées par Power BI :
 | Tableau de bord Power BI imprimé                        | PrintDashboard                              |                                          |
 | Page de rapport Power BI imprimée                      | PrintReport                                 |                                          |
 | Rapport Power BI publié sur le web                  | PublishToWebReport                          |                                          |
-| Secret de dataflow Power BI reçu du coffre de clés  | ReceiveDataflowSecretFromKeyVault           | Non utilisée actuellement                       |
+| Secret de dataflow Power BI reçu du coffre de clés  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Source de données supprimée de la passerelle Power BI         | RemoveDatasourceFromGateway                 |                                          |
 | Membres supprimés du groupe Power BI                    | DeleteGroupMembers                          |                                          |
 | Espace de travail supprimé d’une capacité                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -221,6 +223,7 @@ Les activités suivantes sont auditées par Power BI :
 | Actualisation demandée du dataflow Power BI               | RequestDataflowRefresh                      | Non utilisée actuellement                       |
 | Actualisation demandée du jeu de données Power BI                | RefreshDataset                              |                                          |
 | Espaces de travail Power BI récupérés                     | GetWorkspaces                               |                                          |
+| Emplacement de stockage de dataflow défini pour un espace de travail     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Actualisation planifiée sur le dataflow Power BI définie        | SetScheduledRefreshOnDataflow               |                                          |
 | Actualisation planifiée sur le jeu de données Power BI définie         | SetScheduledRefresh                         |                                          |
 | Tableau de bord Power BI partagé                         | ShareDashboard                              |                                          |
@@ -229,10 +232,12 @@ Les activités suivantes sont auditées par Power BI :
 | Essai Power BI démarré                            | OptInForProTrial                            |                                          |
 | Prise de contrôle d’une source de données Power BI                   | TakeOverDatasource                          |                                          |
 | Prise de contrôle d’un jeu de données Power BI                        | TakeOverDataset                             |                                          |
+| Prise de contrôle d’un dataflow Power BI                     | TookOverDataflow                             |                                          |
 | Application Power BI dépubliée                          | UnpublishApp                                |                                          |
 | Mettre à jour les paramètres de gouvernance des ressources de capacité      | UpdateCapacityResourceGovernanceSettings    | Absente du Centre d’administration Microsoft 365 |
 | Administrateur de capacité mis à jour                            | UpdateCapacityAdmins                        |                                          |
 | Nom d’affichage de capacité mis à jour                     | UpdateCapacityDisplayName                   |                                          |
+| Autorisations d’affectation de stockage de dataflow mises à jour   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Paramètres Power BI de l’organisation mis à jour          | UpdatedAdminFeatureSwitch                   |                                          |
 | Application Power BI mise à jour                              | UpdateApp                                   |                                          |
 | Dataflow Power BI mis à jour                         | UpdateDataflow                              |                                          |
@@ -255,4 +260,4 @@ Les activités suivantes sont auditées par Power BI :
 
 [Portail d’administration Power BI](service-admin-portal.md)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

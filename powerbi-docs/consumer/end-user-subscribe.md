@@ -3,23 +3,25 @@ title: Vous abonner à des rapports et tableaux de bord
 description: Découvrez comment vous abonner à la capture instantanée envoyée par e-mail d’un rapport ou d’un tableau de bord Power BI.
 author: mihart
 ms.author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/12/2019
-LocalizationGroup: Common tasks
-ms.openlocfilehash: 2b0554729824b170fecbe6493141c6f3a8354002
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.date: 10/21/2019
+rLocalizationGroup: Common tasks
+ms.openlocfilehash: add49c43e16b2070b054f4228d1faf0075b736f8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68961683"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861381"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
-Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et aux tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir les e-mails : une fois par jour, une fois par semaine ou quand les données sont actualisées. Vous pouvez même définir une heure spécifique à laquelle Power BI envoie les e-mails ou exécuter cette tâche tout de suite.  
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+Vous pouvez à présent connaître encore plus facilement l’état de vos rapports et tableaux de bord les plus importants. Abonnez-vous aux pages de rapport et aux tableaux de bord qui vous intéressent le plus pour que Power BI envoie une capture instantanée dans votre boîte de réception. Vous indiquez à Power BI la fréquence à laquelle vous souhaitez recevoir les e-mails : une fois par jour, une fois par semaine ou quand les données sont actualisées. Vous pouvez même définir une heure spécifique à laquelle Power BI envoie les e-mails ou exécuter cette tâche tout de suite.  Vous pouvez définir jusqu’à 24 abonnements différents par rapport ou par tableau de bord.  
 
 L’e-mail et l’instantané utiliseront la langue définie dans les paramètres de Power BI (cf. [Langues et pays/régions pris en charge par Power BI](../supported-languages-countries-regions.md)). Si aucune langue n’est définie, Power BI sélectionnera celle des paramètres régionaux du navigateur. Pour voir ou définir vos préférences de langue, sélectionnez l’icône de roue dentée ![icône d’engrenage](./media/end-user-subscribe/power-bi-settings-icon.png) > **Paramètres > Général > Langue**. 
 
@@ -78,7 +80,7 @@ Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le r
 * Pour les abonnements à l’e-mail du tableau de bord, si la sécurité au niveau des lignes (SNL) est appliquée à des vignettes, celles-ci ne s’affichent pas.  Pour les abonnements à l’e-mail des rapports, si le jeu de données utilise SNL, vous ne pouvez pas créer d’abonnement.
 * Si les liens qui sont fournis dans l’e-mail (et qui mènent au contenu) cessent de fonctionner, il est possible que le contenu ait été supprimé. Dans l’e-mail, sous la capture d’écran, vous pouvez voir si vous vous êtes abonné vous-même ou si quelqu’un d’autre s’est chargé de vous abonner. Si c’est quelqu’un d’autre, demandez-lui d’annuler les e-mails ou de vous réabonner.
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
-* Si vous ne pouvez pas utiliser la fonctionnalité d’abonnement, contactez votre administrateur système. Votre organisation peut avoir désactivé cette fonctionnalité pour l’authentification ou d’autres raisons.  
+* Si vous ne pouvez pas utiliser la fonctionnalité d’abonnement, contactez votre administrateur système. Votre organisation a peut-être désactivé cette fonctionnalité.  
 * Les abonnements aux courriers ne prennent pas en charge la plupart des [visuels personnalisés](../power-bi-custom-visuals.md).  Sauf s’il s’agit de visuels personnalisés [certifiés](../power-bi-custom-visuals-certified.md).  
 * Actuellement, les abonnements aux e-mails ne prennent pas en charge les visuels personnalisés alimentés par R.  
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge.  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     

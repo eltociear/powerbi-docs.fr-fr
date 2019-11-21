@@ -2,19 +2,18 @@
 title: 'Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles'
 description: Dans ce guide de démarrage rapide, vous allez explorer un exemple de tableau de bord et de rapport dans les applications mobiles Power BI.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 04/18/2019
 ms.author: mshenhav
-ms.openlocfilehash: 173142d9aaf2b445504028e1f7987abe21806c37
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9af245b51fa2520dca1ccca535ec44f14360a54c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60975865"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879273"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Démarrage rapide : Explorer des tableaux de bord et des rapports dans les applications mobiles Power BI
 Dans ce guide de démarrage rapide, vous allez explorer des tableaux de bord et des rapports dans les applications mobiles Power BI sur un téléphone Android. Vous pouvez également le suivre sur les autres applications mobiles. 
@@ -35,7 +34,7 @@ Un tableau de bord est un portail qui donne accès au cycle de vie et aux proces
 Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
 ### <a name="install-the-power-bi-for-android-app"></a>Installer l’application Power BI pour Android
-[Téléchargez l’application Power BI pour Android](http://go.microsoft.com/fwlink/?LinkID=544867) sur Google Play.
+[Téléchargez l’application Power BI pour Android](https://go.microsoft.com/fwlink/?LinkID=544867) sur Google Play.
 
 Power BI fonctionne sur les appareils Android équipés du système d’exploitation Android 5.0 ou d’une version ultérieure. Pour le vérifier sur votre appareil, accédez à **Paramètres** > **À propos de l’appareil** > **Version d’Android**.
 
@@ -44,11 +43,11 @@ La première étape de ce guide de démarrage rapide consiste à télécharger l
 
 1. Ouvrez le service Power BI dans votre navigateur (app.powerbi.com) et connectez-vous.
 
-1. Sélectionnez l’icône de navigation globale pour ouvrir le volet de navigation de gauche.
+1. Sélectionnez l’icône de navigation globale pour ouvrir le volet de navigation.
 
     ![icône de navigation globale](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
 
-2. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail** > **Mon espace de travail**.
+2. Dans le volet de navigation, sélectionnez **Espaces de travail** > **Mon espace de travail**.
 
     ![Mon espace de travail](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
 
@@ -135,7 +134,7 @@ Maintenant que vous avez suivi ce guide de démarrage rapide, vous pouvez si vou
 
 1. Ouvrez le service Power BI (app.powerbi.com) et connectez-vous.
 
-2. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail** > **Mon espace de travail**.
+2. Dans le volet de navigation, sélectionnez **Espaces de travail** > **Mon espace de travail**.
 
     Remarquez l’étoile jaune indiquant que c’est un favori.
 

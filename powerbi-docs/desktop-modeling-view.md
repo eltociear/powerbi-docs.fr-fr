@@ -1,8 +1,7 @@
 ---
-title: Utiliser le mode de modélisation dans Power BI Desktop
+title: Utiliser la vue de modélisation dans Power BI Desktop
 description: Utilisez l’affichage Modélisation pour afficher des jeux de données complexes dans un format visuel dans Power BI Desktop.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1fdb6058a6306f63f53c770812f85ccd9f9113ea
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6869430e3fece78210d538c9886234c7728b667a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65941344"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866541"
 ---
-# <a name="modeling-view-in-power-bi-desktop"></a>Vue de modélisation dans Power BI Desktop
+# <a name="modeling-view-in-power-bi-desktop"></a>Affichage Modélisation dans Power BI Desktop
 
 **L’affichage Modélisation** de **Power BI Desktop** permet d’afficher et d’utiliser des jeux de données complexes qui contiennent de nombreuses tables.
 

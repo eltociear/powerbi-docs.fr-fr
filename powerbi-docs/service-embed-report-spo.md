@@ -3,7 +3,6 @@ title: Incorporer avec le composant WebPart Rapport dans SharePoint Online
 description: Avec le nouveau composant WebPart Rapport pour SharePoint Online, vous pouvez incorporer facilement des rapports Power BI interactifs dans les pages SharePoint Online.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c5d35c1e7fef15c72314738c1d67f81656dc3101
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e44ea4174545715a689b4f4370516cbbab4a593b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073612"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881880"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Incorporer avec le composant WebPart Rapport dans SharePoint Online
 
@@ -79,11 +78,11 @@ L’incorporation d’un rapport dans SharePoint Online n’accorde pas automati
 > [!IMPORTANT]
 > Veillez à passer en revue les utilisateurs qui peuvent afficher le rapport dans le service Power BI et à accorder l’accès à ceux qui ne sont pas répertoriés.
 
-Il existe deux moyens de fournir l’accès aux rapports dans Power BI. Le premier, si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, consiste à lister l’utilisateur comme membre de l’**espace de travail d’application dans le service Power BI** et la **page SharePoint**. Pour plus d’informations sur la gestion d’un espace de travail d’application, consultez [Gérer l’espace de travail de votre application](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Il existe deux moyens de fournir l’accès aux rapports dans Power BI. Le premier, si vous utilisez un groupe Office 365 pour créer votre site d’équipe SharePoint Online, consiste à lister l’utilisateur comme membre de l’**espace de travail dans le service Power BI** et la **page SharePoint**. Pour plus d’informations, consultez [Gérer un espace de travail](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 Le deuxième consiste à incorporer un rapport dans une application et à le partager directement avec les utilisateurs :  
 
-1. L’auteur, qui doit être un utilisateur Pro, crée un rapport dans un espace de travail d’application. Pour pouvoir être partagé avec des *utilisateurs de la version gratuite de Power BI*, l’espace de travail d’application doit être défini comme *espace de travail Premium*.
+1. L’auteur, qui doit être un utilisateur Pro, crée un rapport dans un espace de travail. Pour pouvoir être partagé avec des *utilisateurs de la version gratuite de Power BI*, l’espace de travail doit être défini comme *espace de travail Premium*.
 
 2. L’auteur publie l’application, puis l’installe. L’auteur doit installer l’application de façon à pouvoir accéder à l’URL de rapport qui est utilisée pour l’incorporation dans SharePoint Online.
 
@@ -93,7 +92,7 @@ Le deuxième consiste à incorporer un rapport dans une application et à le par
 
 4. L’auteur ouvre l’application et accède au rapport.
 
-5. L’auteur copie l’URL du rapport incorporé à partir du rapport installé par l’application. N’utilisez pas l’URL du rapport d’origine figurant dans l’espace de travail d’application.
+5. L’auteur copie l’URL du rapport incorporé à partir du rapport installé par l’application. N’utilisez pas l’URL du rapport d’origine figurant dans l’espace de travail.
 
 6. Créez un nouveau site d’équipe dans SharePoint Online.
 
@@ -123,8 +122,8 @@ Voici les paramètres que vous pouvez ajuster pour le composant WebPart Power BI
 | --- | --- |
 | Nom de la page |Définit la page par défaut du composant WebPart. Sélectionnez une valeur dans la liste déroulante. Si aucune page ne s’affiche, votre rapport ne contient qu’une seule page ou l’URL que vous avez collée contient un nom de page. Supprimez la section du rapport de l’URL pour sélectionner une page spécifique. |
 | Affichage |Permet de définir la façon dont le rapport est ajusté à la page SharePoint Online. |
-| Afficher le volet de navigation |Affiche ou masque le volet de navigation Page. |
-| Afficher le volet Filtre |Affiche ou masque le volet Filtre. |
+| Afficher le volet de navigation |Affiche ou masque le volet de navigation de la page. |
+| Afficher le volet de filtre |Affiche ou masque le volet Filtre. |
 
 ## <a name="reports-that-do-not-load"></a>Rapports qui ne sont pas chargés
 
@@ -173,4 +172,4 @@ Les utilisateurs affichant un rapport dans SharePoint ont besoin au choix d’un
 * [Qu’est-ce que Power BI Premium ?](service-premium-what-is.md)
 * [Incorporer un rapport dans un site web ou portail sécurisé](service-embed-secure.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

@@ -3,18 +3,17 @@ title: Utiliser la sécurité au niveau des lignes avec le contenu incorporé Po
 description: Découvrez les étapes à suivre pour incorporer du contenu Power BI dans votre application.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073344"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875816"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sécurité au niveau des lignes avec Power BI Embedded
 
@@ -33,7 +32,7 @@ Pour tirer parti de la sécurité au niveau des lignes, il est important de comp
 **Rôles** : les utilisateurs appartiennent à des rôles. Un rôle est un conteneur de règles et peut être nommé en *Directeur des ventes* ou *Commercial*. Vous créez des rôles dans Power BI Desktop. Pour plus d’informations, consultez [Sécurité au niveau des lignes avec Power BI Desktop](../desktop-rls.md).
 
 **Règles** : les rôles ont des règles et ces dernières sont les filtres réels qui vont être appliqués aux données. Les règles peuvent être aussi simples que « Pays = États-Unis » ou quelque chose de beaucoup plus dynamique.
-Dans le reste de cet article, vous verrez un exemple de création de sécurité au niveau des lignes et de consommation au sein d’une application incorporée. Cet exemple utilise le fichier PBIX [Exemple Analyse de la vente au détail](http://go.microsoft.com/fwlink/?LinkID=780547).
+Dans le reste de cet article, vous verrez un exemple de création de sécurité au niveau des lignes et de consommation au sein d’une application incorporée. Cet exemple utilise le fichier PBIX [Exemple Analyse de la vente au détail](https://go.microsoft.com/fwlink/?LinkID=780547).
 
 ![Exemple de rapport](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
@@ -73,7 +72,7 @@ Voici comment procéder :
 
     Les rapports affichent les données comme si vous étiez connecté sous le nom d’**AndrewMa**.
 
-En appliquant le filtre comme vous l’avez fait ici, tous les enregistrements des tables **District** (Secteur), **Store** (Magasin) et **Sales** (Ventes) sont filtrés. Toutefois, en raison de la direction du filtrage sur les relations entre **Sales** et **Time**, **Sales** et **Item**, et **Item** et **Time**, les tables ne sont pas filtrées. Pour en savoir plus sur le filtrage croisé bidirectionnel, téléchargez le livre blanc [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
+En appliquant le filtre comme vous l’avez fait ici, tous les enregistrements des tables **District** (Secteur), **Store** (Magasin) et **Sales** (Ventes) sont filtrés. Toutefois, en raison de la direction du filtrage sur les relations entre **Sales** et **Time**, **Sales** et **Item**, et **Item** et **Time**, les tables ne sont pas filtrées. Pour en savoir plus sur le filtrage croisé bidirectionnel, téléchargez le livre blanc [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Application de l’utilisateur et du rôle à un jeton d’incorporation
 
@@ -241,7 +240,7 @@ La [sécurité au niveau des lignes](../service-admin-rls.md) est une fonctionna
 
 Les [filtres de JavaScript](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) servent à autoriser l’utilisateur à consommer une vue des données filtrée, réduite ou à portée spécifique. Toutefois, l’utilisateur a quand même accès aux tables, colonnes et mesures du schéma de modèle, et il peut potentiellement accéder à toutes les données qui s’y trouvent. L’accès restreint aux données peut uniquement être appliqué avec la sécurité au niveau des lignes, et non par le biais des API de filtrage côté client.
 
-## <a name="token-based-identity-with-azure-sql-database-preview"></a>Identité basée sur les jetons avec Azure SQL Database (préversion)
+## <a name="token-based-identity-with-azure-sql-database"></a>Identité basée sur les jetons avec Azure SQL Database
 
 **L’identité basée sur les jetons** vous permet de spécifier l’identité effective pour un jeton incorporé à l’aide d’un jeton d’accès **Azure Active Directory (AAD)** pour une base de données **Azure SQL Database**.
 
@@ -332,7 +331,7 @@ Vous ne pouvez pas définir cette autorisation à l’aide du portail d’admini
 * Si le jeu de données sous-jacent est un modèle cloud (modèle mis en cache ou DirectQuery), l’identité effective doit inclure au moins un rôle. Sinon, l’attribution de rôle n’a pas lieu.
 * Une liste d’identités active plusieurs jetons d’identité pour l’incorporation de tableau de bord. Pour tous les autres artefacts, la liste contient une identité unique.
 
-### <a name="token-based-identity-limitations-preview"></a>Limitations de l’identité basée sur les jetons (préversion)
+### <a name="token-based-identity-limitations"></a>Limitations de l’identité basée sur les jetons
 
 * Cette fonctionnalité restreint l’utilisation avec Power BI Premium uniquement.
 * Cette fonctionnalité ne fonctionne pas avec SQL Server en local.

@@ -2,19 +2,18 @@
 title: Bien démarrer avec l’application mobile Power BI sur appareils Android
 description: Découvrez comment l’application mobile Android pour Microsoft Power BI apporte Power BI dans votre poche, avec un accès mobile aux informations métier locales et dans le cloud.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 5734c62485340417b6327f07df4abd7af3f2f185
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 9a0d15c73ed19990a44ff888b73d9c569d0dfc5f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060288"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876778"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Bien démarrer avec l’application mobile Power BI sur appareils Android
 L’application Android pour Microsoft Power BI permet de vivre l’expérience mobile de Power BI, de Power BI Report Server et de Reporting Services. Consultez les tableaux de bord de votre organisation et interagissez avec eux, localement et dans le cloud, en tout lieu, grâce à un accès mobile en direct via une interface tactile. Explorez les données des tableaux de bord et partagez-les avec vos collègues par e-mail ou SMS. 
@@ -34,7 +33,7 @@ Découvrez les [nouveautés des applications mobiles Power BI](../../mobile-wha
 
 ### <a name="get-the-app"></a>Obtenir l’application
 
-[Téléchargez l’application Power BI pour Android](http://go.microsoft.com/fwlink/?LinkID=544867) sur Google Play.
+[Téléchargez l’application Power BI pour Android](https://go.microsoft.com/fwlink/?LinkID=544867) sur Google Play.
   
 Power BI peut s’exécuter sur différents appareils Android équipés du système d’exploitation Android 5.0 ou d’une version ultérieure. Pour le vérifier sur votre appareil, accédez à **Paramètres** > **À propos de l’appareil** > **Version d’Android**. 
 
@@ -44,9 +43,9 @@ Sans même vous inscrire ni vous connecter, vous pouvez parcourir les pages de c
 Découvrez les [nouveautés des applications mobiles Power BI](../../mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>S’inscrire au service Power BI sur le web
-Si vous n’avez pas encore créé de compte, accédez au [service Power BI (http://powerbi.com/)](http://powerbi.com/) pour vous inscrire. Ce compte vous permettra de créer et de stocker des tableaux de bord et des rapports, et de regrouper vos données. Ensuite, connectez-vous à Power BI sur votre appareil Android pour consulter vos tableaux de bord où que vous soyez.
+Si vous n’avez pas encore créé de compte, accédez au [service Power BI (https://powerbi.com/)](https://powerbi.com/) pour vous inscrire. Ce compte vous permettra de créer et de stocker des tableaux de bord et des rapports, et de regrouper vos données. Ensuite, connectez-vous à Power BI sur votre appareil Android pour consulter vos tableaux de bord où que vous soyez.
 
-1. Dans le service Power BI, appuyez sur [S’inscrire](http://go.microsoft.com/fwlink/?LinkID=513879) pour créer un compte Power BI.
+1. Dans le service Power BI, appuyez sur [S’inscrire](https://go.microsoft.com/fwlink/?LinkID=513879) pour créer un compte Power BI.
 2. Commencez à [créer vos propres tableaux de bord et rapports](../../service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Bien démarrer avec l’application Power BI sur l’appareil
@@ -88,14 +87,14 @@ Vous pouvez afficher et utiliser les exemples de tableau de bord Power BI, mais
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Trouver votre contenu dans les applications mobiles Power BI
 Dans les applications mobiles Power BI, vos tableaux de bord et rapports sont stockés dans des emplacements différents en fonction de leur provenance. En savoir plus sur la [recherche de votre contenu dans les applications mobiles](../../mobile-apps-quickstart-view-dashboard-report.md). Par ailleurs, vous pouvez toujours effectuer une recherche dans tout votre contenu dans les applications mobiles Power BI. 
 
-![Volet de navigation gauche](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
+![Volet de navigation](./media/mobile-android-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Afficher vos tableaux de bord, indicateurs de performances clés et rapports favoris
 Sur la page Favoris dans les applications mobiles, vous pouvez voir vos tableaux de bord Power BI favoris, ainsi que les indicateurs de performance clés et rapports Power BI Report Server et Reporting Services. Quand vous mettez un tableau de bord en *favoris* dans l’application mobile Power BI, vous pouvez y accéder à partir de tous les appareils, y compris dans le service Power BI dans votre navigateur. 
 
 * Appuyez sur **Favoris**.
   
-   ![Favoris dans le volet de navigation gauche](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
+   ![Favoris dans le volet de navigation](./media/mobile-android-app-get-started/power-bi-android-favorite-left-nav.png)
   
    Vos favoris Power BI et ceux des portails web Power BI Report Server et Reporting Services figurent tous sur cette page.
   
@@ -135,8 +134,8 @@ Découvrez ce que vous pouvez faire d’autre dans l’application Power BI pou
 * Créez des [rapports dans Power BI Desktop et publiez-les sur le portail web Power BI Report Server](../../report-server/quickstart-create-powerbi-report.md).
 
 ### <a name="see-also"></a>Voir aussi
-* [Téléchargez l’application Android](http://go.microsoft.com/fwlink/?LinkID=544867) à partir du magasin d’applications Android.
+* [Téléchargez l’application Android](https://go.microsoft.com/fwlink/?LinkID=544867) à partir du magasin d’applications Android.
 * [Qu’est-ce que Power BI ?](../../fundamentals/power-bi-overview.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 
 

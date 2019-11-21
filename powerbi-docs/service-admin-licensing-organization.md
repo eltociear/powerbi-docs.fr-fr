@@ -1,8 +1,7 @@
 ---
 title: Gestion des licences Power BI dans votre organisation
-description: 'Découvrez les différents types de licences qui sont disponibles dans Power BI : licences gratuites, Power BI Pro et Power BI Premium.'
+description: 'Découvrez les différents types de licences disponibles dans Power BI : licences gratuites, Power BI Pro et Power BI Premium.'
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 24cc798814e0c19de4f1dd4d0d6907fc7a0074a6
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 2cbf2498740d26a59ced5652368cf99b8fa5eec1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075422"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857706"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Gestion des licences Power BI dans votre organisation
 
@@ -27,9 +26,9 @@ Cet article se concentre sur la gestion des licences par utilisateur du point de
 
 En tant qu’administrateur, vous pouvez acheter et affecter des licences Power BI Pro ; vous pouvez aussi vous inscrire pour une version d’essai de Power BI Pro pour votre organisation. Les personnes individuelles peuvent aussi s’inscrire pour un essai Power BI Pro.
 
-### <a name="purchase-power-bi-pro"></a>Acheter Power BI Pro
+### <a name="purchase-power-bi-pro-licenses"></a>Acheter des licences Power BI Pro
 
-Vous achetez des licences Power BI Pro via Microsoft Office 365 ou un partenaire Microsoft certifié. Une fois que vous avez acheté les licences, vous les attribuez à des utilisateurs individuels. Pour plus d’informations, consultez [Acheter et attribuer des licences Power BI Pro](service-admin-purchasing-power-bi-pro.md).
+En tant qu’administrateur, vous achetez des licences Power BI Pro par le biais de Microsoft 365 ou d’un partenaire Microsoft certifié. Une fois que vous avez acheté les licences, vous les attribuez à des utilisateurs individuels. Pour plus d’informations, consultez [Acheter et attribuer des licences Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 
 ### <a name="power-bi-pro-license-expiration"></a>Expiration de la licence Power BI Pro
 
@@ -41,7 +40,7 @@ L’abonnement Power BI Pro dispose du même cycle de vie qu’Office 365. Pour 
 
 Des personnes individuelles de votre organisation peuvent s’inscrire pour une version d’essai de Power BI Pro. Pour plus d’informations, consultez [Inscription individuelle à Power BI](service-self-service-signup-for-power-bi.md).
 
-Les utilisateurs bénéficiant de la version d’essai de Power BI Pro intégrée au produit n’apparaissent pas dans le Centre d’administration Microsoft 365 en tant qu’utilisateurs d’une version d’essai de Power BI Pro (ils apparaissent en tant qu’utilisateurs gratuits de Power BI). Ils apparaissent cependant en tant qu’utilisateurs de la version d’essai de Power BI Pro dans la page Gérer le stockage de Power BI.
+Les utilisateurs bénéficiant de la version d’essai (intégrée au produit) de Power BI Pro pour utilisateur individuel n’apparaissent pas dans le Centre d’administration Microsoft 365 comme utilisateurs d’une version d’essai de Power BI Pro (ils apparaissent comme utilisateurs gratuits de Power BI). Ils apparaissent cependant en tant qu’utilisateurs de la version d’essai de Power BI Pro dans la page Gérer le stockage de Power BI.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>Essai de Power BI Pro pour les organisations
 
@@ -49,13 +48,13 @@ Si vous voulez acquérir et déployer des licences d’essai Power BI pour plusi
 
 Gardez les points suivants à l’esprit avant de suivre les étapes de l’inscription :
 
-* Pour vous inscrire, vous devez être membre du rôle [**Administrateur général** ou **Administrateur de facturation**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) dans Office 365.
+* Pour vous inscrire, vous devez être membre du rôle [**Administrateur général** ou **Administrateur de facturation**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) dans Microsoft 365.
 
 * Il existe une limite d’une version d’évaluation pour organisation par client. Cela signifie que, si une personne a déjà appliqué la version d’évaluation de Power BI Pro à votre client, vous ne pouvez plus le faire. Si vous avez besoin d’aide à ce sujet, contactez le [Support de facturation d’Office 365](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
 1. Accédez au [Centre d’administration Microsoft 365](https://portal.office.com/adminportal/home#/homepage).
 
-1. Dans le volet de navigation gauche, sélectionnez **Facturation**, puis **Abonnements**.
+1. Dans le volet de navigation, sélectionnez **Facturation**, puis **Abonnements**.
 
    ![Facturation et abonnements](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-05.png)
 
@@ -79,11 +78,11 @@ Les utilisateurs au sein de votre organisation peuvent accéder aux licences gra
 
 * Vous pouvez leur affecter une licence Power BI au sein du Centre d’administration Microsoft 365.
 
-* Si un utilisateur [s’inscrit à un essai de Power BI Pro](service-self-service-signup-for-power-bi.md) et que l’essai arrive à expiration, il se voit attribuer une licence gratuite.
+* Si un utilisateur [s’inscrit à un compte Power BI Pro](service-self-service-signup-for-power-bi.md), une licence gratuite lui est attribuée.
 
 ### <a name="requesting-and-assigning-free-licenses"></a>Demande et attribution de licences gratuites
 
-Si vous envisagez de gérer de façon centralisée les demandes et les attributions de licences, vérifiez d’abord si vous disposez déjà du bloc de licences (gratuites) de Power BI illimité.
+Si vous envisagez de gérer de façon centralisée les demandes et les attributions de licences, vérifiez d’abord si vous disposez déjà du bloc de licences Power BI (gratuit) illimité sur votre locataire.
 
 Ce bloc de licences est disponible une fois que quelqu’un s’inscrit pour la première fois à Power BI en tant que personne individuelle. Pendant ce processus, ce bloc de licences est rattaché à votre organisation, et une licence est attribuée à l’utilisateur qui s’inscrit.
 
@@ -101,7 +100,7 @@ Si le bloc de licences Power BI (gratuites) illimité n’est pas disponible et 
 
 1. Accédez au [Centre d’administration Microsoft 365](https://portal.office.com/admin/default.aspx).
 
-1. Dans le volet de navigation de gauche, sélectionnez **Facturation** > **Abonnements**.
+1. Dans le volet de navigation, sélectionnez **Facturation** > **Abonnements**.
 
 1. Sur le côté droit, sélectionnez **Ajouter des abonnements +** .
 
@@ -125,9 +124,9 @@ Si le bloc de licences Power BI (gratuites) illimité n’est pas disponible et 
 
 En tant qu’administrateur, vous pouvez choisir d’activer ou de désactiver l’inscription des utilisateurs individuels via Azure Active Directory. Cette section de l’article vous montre comment gérer les inscriptions avec des commandes PowerShell. Pour plus d’informations sur Azure PowerShell, consultez [Vue d’ensemble d’Azure PowerShell](/powershell/azure/overview).
 
-Le paramètre Azure AD qui contrôle l’inscription est **AllowAdHocSubscriptions**. Dans la plupart des locataires, ce paramètre est défini sur *true*, qui signifie qu’il est activé. Si vous avez acquis Power BI via un partenaire, ce paramètre peut être configuré sur *false*, ce qui signifie qu’il est désactivé. Si vous changez le paramètre de *true* en *false*, l’inscription individuelle de nouveaux utilisateurs de votre organisation est bloquée. Les utilisateurs inscrits pour Power BI avant la modification du paramètre conservent leurs licences. Notez que si le paramètre a la valeur *false*, les utilisateurs peuvent toujours s’inscrire pour un essai de la version Pro.
+Le paramètre Azure Active Directory qui contrôle l’inscription est **AllowAdHocSubscriptions**. Dans la plupart des locataires, ce paramètre est défini sur *true*, qui signifie qu’il est activé. Si vous avez acquis Power BI via un partenaire, ce paramètre peut être configuré sur *false*, ce qui signifie qu’il est désactivé. Si vous changez le paramètre de *true* en *false*, l’inscription individuelle de nouveaux utilisateurs de votre organisation est bloquée. Les utilisateurs inscrits pour Power BI avant la modification du paramètre conservent leurs licences. Notez que si le paramètre a la valeur *false*, les utilisateurs disposant d’une licence Power BI (gratuit) peuvent toujours s’inscrire pour un essai de la version Pro pour utilisateur individuel.
 
-1. Connectez-vous à Azure Active Directory avec vos informations d’identification Office 365. La première ligne du script PowerShell suivant vous invite à entrer vos informations d’identification. La deuxième ligne établit la connexion à Azure Active Directory.
+1. Connectez-vous à Azure Active Directory avec vos informations d’identification Microsoft 365. La première ligne du script PowerShell suivant vous invite à entrer vos informations d’identification. La deuxième ligne établit la connexion à Azure Active Directory.
 
     ```powershell
      $msolcred = get-credential
@@ -156,4 +155,4 @@ Le paramètre Azure AD qui contrôle l’inscription est **AllowAdHocSubscriptio
 
 [Acheter et attribuer des licences Power BI Pro](service-admin-purchasing-power-bi-pro.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

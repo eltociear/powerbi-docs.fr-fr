@@ -2,19 +2,18 @@
 title: 'Tutoriel : Explorer Power BI Report Server dans une machine virtuelle'
 description: Dans ce tutoriel, vous créez une machine virtuelle avec Power BI Report Server déjà installé, puis explorez le portail web.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
-ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 312b86f9e0c0dda0c9c943520c74286e0458acef
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65240121"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73859257"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Tutoriel : Explorer le portail web Power BI Report Server dans une machine virtuelle
 Dans ce tutoriel, vous créez une machine virtuelle Azure avec Power BI Report Server déjà installé, pour pouvoir afficher, modifier et gérer des exemples de rapports Power BI Report Server et paginés ainsi que des indicateurs de performance clés.
@@ -72,7 +71,7 @@ Heureusement, l’équipe Power BI a créé une machine virtuelle fournie avec P
 
 ## <a name="connect-to-your-virtual-machine"></a>Se connecter à votre machine virtuelle
 
-1. Dans le volet de navigation gauche Azure, sélectionnez **Machines virtuelles**. 
+1. Dans le volet de navigation Azure, sélectionnez **Machines virtuelles**. 
 
 2. Dans le champ **Filtrer par nom**, tapez « report » (rapport). 
 
@@ -108,7 +107,7 @@ Lorsque votre machine virtuelle s’ouvre, voici les éléments qui apparaissent
 |![Numéro 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Ouvre le portail web Power BI Report Server dans le navigateur |
 |![Numéro 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Démarre SQL Server Data Tools pour créer des rapports paginés (.RDL) |
 
-Double-cliquez sur l’icône **Portail web Report Server**. Le navigateur ouvre `http://localhost/reports/browse`. Le portail web affiche divers fichiers regroupés par type. 
+Double-cliquez sur l’icône **Portail web Report Server**. Le navigateur ouvre `https://localhost/reports/browse`. Le portail web affiche divers fichiers regroupés par type. 
 
 ![Portail web de Power BI Report Server web](media/tutorial-explore-report-server-web-portal/power-bi-report-server-browser-in-vm.png)
 
@@ -189,7 +188,7 @@ Vous pouvez afficher et gérer des rapports paginés et lancer le Générateur d
 
 ### <a name="manage-a-paginated-report"></a>Gérer un rapport paginé
 
-1. Dans le portail web, sous **Rapports paginés**, sélectionnez les points de suspension (...) en regard de **Commande client** > **Gérer**.
+1. Dans le portail web, sous **Rapports paginés**, sélectionnez **Plus d’options** (...) en regard de **Commande client** > **Gérer**.
 
 1. Sélectionnez **Paramètres**, remplacez la valeur par défaut **SalesOrderNumber** par **SO50689** > **Appliquer**.
 
@@ -219,7 +218,7 @@ Vous pouvez afficher et gérer des rapports paginés et lancer le Générateur d
 
 Vous pouvez modifier des rapports paginés dans le Générateur de rapports, et démarrer le Générateur de rapports directement à partir du navigateur.
 
-1. Dans le portail web, sélectionnez les points de suspension (...) en regard de **Commande client** > **Modifier dans le Générateur de rapports**.
+1. Dans le portail web, sélectionnez **Plus d’options** (...) en regard de **Commande client** > **Modifier dans le Générateur de rapports**.
 
 1. Sélectionnez **Autoriser** pour autoriser ce site web ouvrir un programme sur votre ordinateur.
 

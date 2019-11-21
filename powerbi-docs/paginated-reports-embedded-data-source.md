@@ -3,18 +3,17 @@ title: Sources de données incorporées pour rapports paginés dans le service P
 description: Dans cet article, vous apprendrez à créer et à modifier une source de données incorporée dans un rapport paginé dans le service Power BI.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d7a170cad376c3ec9fd3ca8ca7d2c8d2d8ac0223
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020808"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875304"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Créer une source de données incorporée pour rapports paginés dans le service Power BI
 
@@ -72,7 +71,7 @@ Pour obtenir des informations plus détaillées, consultez [Données de rapport 
 
 Les rapports paginés qui se connectent aux jeux de données Power BI suivent les règles pour les jeux de données partagés dans Power BI avec quelques changements mineurs.  Pour que les utilisateurs affichent correctement des rapports paginés à l’aide de jeux de données Power BI et pour garantir que la sécurité au niveau des lignes (RLS) soit activée et appliquée pour vos visionneuses, assurez-vous de suivre ces règles :
 
-### <a name="classic-apps-and-app-workspaces"></a>Applications et espaces de travail d’application classiques
+### <a name="classic-apps-and-workspaces"></a>Applications et espaces de travail classiques
 
 - .rdl dans le même espace de travail en tant que jeu de données (même propriétaire) : Pris en charge
 - .rdl dans un espace de travail différent en tant que jeu de données (même propriétaire) : Pris en charge
@@ -82,7 +81,7 @@ Les rapports paginés qui se connectent aux jeux de données Power BI suivent le
 - .rdl dans différent espace de travail en tant que jeu de données (utilisateur différent). Vous devez affecter une autorisation de génération à chaque utilisateur qui affiche le rapport au niveau du jeu de données
 - Sécurité au niveau des rôles : Vous devez affecter une autorisation de génération à chaque utilisateur qui affiche le rapport au niveau du jeu de données pour qu’il soit appliqué.
 
-### <a name="new-experience-apps-and-app-workspaces"></a>Nouvelles applications et espaces de travail d’expérience
+### <a name="new-experience-apps-and-workspaces"></a>Nouveaux espaces de travail et applications d’expérience
 
 - .rdl dans le même espace de travail en tant que jeu de données : Pris en charge
 - .rdl dans un espace de travail différent en tant que jeu de données (même propriétaire) : Pris en charge

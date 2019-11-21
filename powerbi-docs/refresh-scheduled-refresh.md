@@ -2,7 +2,6 @@
 title: Configurer une actualisation planifiée
 description: Cette rubrique décrit la procédure à suivre pour sélectionner une passerelle et configurer une actualisation planifiée.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 46f61d2fcce21e3f8e6dae83c32457414928faee
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 89f8b3d609b9433cc85d8af709eec828f924ad8e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816605"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860691"
 ---
 # <a name="configure-scheduled-refresh"></a>Configurer une actualisation planifiée
 
@@ -30,7 +29,7 @@ Cette description a trait aux options disponibles tant pour la [passerelle de do
 
 Pour accéder à l’écran **Actualisation planifiée**, vous pouvez faire ce qui suit.
 
-1. Sélectionnez les **points de suspension (...)** en regard d’un jeu de données figurant sous **Jeux de données**.
+1. Sélectionnez **Plus d’options** (...) en regard d’un jeu de données figurant sous **Jeux de données**.
 2. Sélectionnez **Planifier l’actualisation**.
 
     ![Planifier l’actualisation](media/refresh-scheduled-refresh/dataset-menu.png)
@@ -127,5 +126,5 @@ Parfois, l’actualisation des données peut ne pas fonctionner comme prévu. Ce
 - [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md)  
 - [Résolution des problèmes liés à Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

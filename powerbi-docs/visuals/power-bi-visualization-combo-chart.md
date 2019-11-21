@@ -2,7 +2,6 @@
 title: Graphique combiné dans Power BI
 description: Ce didacticiel sur les graphiques combinés explique quand les utiliser et comment les créer dans le service Power BI et dans Power BI Desktop.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97c01966750d888f3420d265eb3f252b3a8f57d3
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 03a426947787cbd2720661267cac4601a4b9b13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195067"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880937"
 ---
 # <a name="combo-chart-in-power-bi"></a>Graphique combiné dans Power BI
 
@@ -36,7 +35,7 @@ Les graphiques combinés sont conseillés :
 * pour utiliser moins d’espace sur le canevas.
 
 ### <a name="prerequisites"></a>Conditions préalables
-Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au détail](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Dans la section supérieure gauche de la barre de menus, sélectionnez **Fichier** > **Ouvrir**.
    
@@ -67,7 +66,7 @@ Regardez comment créer un graphique combiné à l’aide de l’exemple Vente e
     c. Sélectionnez **Time** \> **FiscalMonth** (Période > Mois fiscal) pour l’ajouter à **Axe**.
 
     ![Tutoriel sur les graphiques combinés - Exemple](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Sélectionnez les points de suspension (...) dans le coin supérieur droit de la visualisation, puis sélectionnez **Trier par > MoisFiscal**. Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et choisissez **Tri croissant** ou **Tri décroissant**. Pour cet exemple, nous allons utiliser **Tri croissant**.
+5. Sélectionnez **Autres options** (...) en haut à droite de la visualisation, puis sélectionnez **Trier par > FiscalMonth** (MoisFiscal). Pour modifier l’ordre de tri, sélectionnez les points de suspension à nouveau et choisissez **Tri croissant** ou **Tri décroissant**. Pour cet exemple, nous allons utiliser **Tri croissant**.
 
 6. Convertissez l’histogramme en graphique combiné. Deux graphiques combinés sont disponibles : **Graphique en courbes et histogramme empilé** et **Graphique en courbes et histogramme groupé**. Après avoir sélectionné l’histogramme, ouvrez le volet **Visualisations** et sélectionnez **Graphique en courbes et histogramme groupé**.
 

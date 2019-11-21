@@ -2,22 +2,21 @@
 title: Découverte du service Power BI
 description: Vue d’ensemble de l’expérience de navigation Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 10/18/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 14c7f88e0bfb822a73a72958f556443260f6ed76
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: e6be58971b265414440041f4667a0b0cc455cdd4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589456"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851525"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Démarrage rapide - Découverte du service Power BI
 
@@ -57,7 +56,7 @@ Dans Mon espace de travail, votre contenu est organisé en 4 onglets : Tableaux
 
 ![écran Mon espace de travail](./media/end-user-experience/power-bi-my-workspace.png)
 
-Sélectionnez un espace de travail dans le volet de navigation de gauche. Les onglets correspondant au contenu associé (tableaux de bord, rapports, classeurs, jeu de données) occupent la zone de dessin de Power BI à droite.
+Sélectionnez un espace de travail dans le volet de navigation. Les onglets correspondant au contenu associé (tableaux de bord, rapports, classeurs, jeu de données) s’affichent à droite du canevas Power BI.
 
 Si vous êtes un nouvel utilisateur, vous voyez seulement **Mon espace de travail**.
 
@@ -82,7 +81,7 @@ Les**Favoris** vous permettent d’accéder rapidement au contenu dont vous avez
    
    ![supprimer le favori](./media/end-user-experience/power-bi-unfavorite2.png)
 
-2. Pour afficher la liste de tous les contenus que vous avez ajoutés aux Favoris, dans le volet de navigation de gauche, sélectionnez la flèche à droite de **Favoris**. Étant donné que le volet de navigation de gauche est une fonctionnalité permanente du service Power BI, vous avez accès à cette liste quel que soit l’endroit où vous vous trouvez dans ce service.
+2. Pour afficher la liste de tous les contenus que vous avez ajoutés aux Favoris, dans le volet de navigation, sélectionnez la flèche à droite de **Favoris**. Étant donné que le volet de navigation est une fonctionnalité permanente du service Power BI, vous avez accès à cette liste quel que soit l’endroit où vous vous trouvez dans ce service.
    
     ![menu volant Favoris](./media/end-user-experience/power-bi-favorite.png)
    
@@ -92,7 +91,7 @@ Les**Favoris** vous permettent d’accéder rapidement au contenu dont vous avez
    
    ![marquer comme favori](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Ouvrez le **volet** *Favoris* en sélectionnant **Favoris** dans le volet de navigation de gauche ou en sélectionnant l’icône étoile ![](media/end-user-experience/powerbi-star-icon.png).
+3. Ouvrez le **volet** *Favoris* en sélectionnant **Favoris** dans le volet de navigation ou en sélectionnant l’icône étoile ![capture d’écran montrant une icône en forme d’étoile jaune](media/end-user-experience/powerbi-star-icon.png).
    
    ![ouvrir l’écran Favoris](./media/end-user-experience/power-bi-favorite-pane.png)
    
@@ -107,13 +106,13 @@ Pour en savoir plus, consultez [Favoris](end-user-favorite.md).
 
 ## <a name="locate-your-most-recent-content"></a>Rechercher votre contenu le plus récent
 
-1. Comme avec les favoris, affichez rapidement le contenu utilisé le plus récent depuis n’importe où dans le service Power BI en sélectionnant la flèche à côté de **Récent** dans le volet de navigation de gauche.
+1. Comme avec les favoris, affichez rapidement le contenu utilisé le plus récent depuis n’importe où dans le service Power BI en sélectionnant la flèche à côté de **Récent** dans le volet de navigation.
 
    ![menu volant Récents](./media/end-user-experience/power-bi-recent-flyout.png)
 
     Dans le menu volant, sélectionnez le contenu à ouvrir.
 
-2. Parfois, vous ne voulez pas juste ouvrir du contenu récent, mais afficher des informations ou effectuer une autre action, comme afficher des insights ou exporter du contenu dans Excel. Pour effectuer ces actions, ouvrez le volet **Récents** en sélectionnant **Récent** ou son icône dans le volet de navigation de gauche. Si vous aviez plusieurs espaces de travail, cette liste inclurait le contenu de l’ensemble de vos espaces de travail.
+2. Parfois, vous ne voulez pas juste ouvrir du contenu récent, mais afficher des informations ou effectuer une autre action, comme afficher des insights ou exporter du contenu dans Excel. Pour effectuer ces actions, ouvrez le volet **Récents** en sélectionnant **Récent** ou son icône dans le volet de navigation. Si vous aviez plusieurs espaces de travail, cette liste inclurait le contenu de l’ensemble de vos espaces de travail.
 
    ![volet Récents](./media/end-user-experience/power-bi-recent.png)
 
@@ -138,8 +137,8 @@ Pour en savoir plus, consultez [Navigation dans Power BI : rechercher et trier]
 Maintenant que vous avez suivi ce guide de démarrage rapide, vous pouvez si vous le souhaitez supprimer le rapport, le jeu de données et le tableau de bord de l’exemple Retail Analysis (Analyse des ventes au détail).
 
 1. Ouvrez le service Power BI (app.powerbi.com) et connectez-vous.    
-2. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail > Mon espace de travail**.  
-    Vous avez noté l’étoile jaune indiquant que c’est un favori ?    
+2. Dans le volet de navigation, sélectionnez **Espaces de travail > Mon espace de travail**.  
+    Remarquez l’étoile jaune indiquant que c’est un favori.    
 3. Sous l’onglet **Tableaux de bord**, sélectionnez l’icône **Supprimer** de la corbeille à côté du tableau de bord Analyse des ventes au détail.    
 
     ![supprimer le tableau de bord](./media/end-user-experience/power-bi-cleanup.png)

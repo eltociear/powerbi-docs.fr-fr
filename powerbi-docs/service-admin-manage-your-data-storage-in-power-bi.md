@@ -1,8 +1,7 @@
 ---
 title: Gérer le stockage de données dans vos espaces de travail
-description: Découvrez comment gérer le stockage de données dans votre espace de travail ou celui de l’application et ainsi veiller à pouvoir continuer à publier des rapports et des jeux de données.
+description: Découvrez comment gérer le stockage de données dans votre espace de travail pour être sûr de pouvoir continuer à publier des rapports et des jeux de données.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,24 +10,24 @@ ms.topic: conceptual
 ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: a46fbb0679de30e554003d858e01756b9b242b1b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f8e7240b34e20a3d18443cadb5265c5d0d870790
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61190219"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873660"
 ---
 # <a name="manage-data-storage-in-power-bi-workspaces"></a>Gérer le stockage de données dans les espaces de travail Power BI
 
-Découvrez comment gérer le stockage de données dans votre espace de travail ou celui de l’application et ainsi veiller à pouvoir continuer à publier des rapports et des jeux de données.
+Découvrez comment gérer le stockage de données dans votre espace de travail pour être sûr de pouvoir continuer à publier des rapports et des jeux de données.
 
-Les utilisateurs et les espaces de travail d’application ont leurs propres capacités en matière de données :
+Les utilisateurs et les espaces de travail ont leurs propres capacités de données :
 
 * Tous les utilisateurs disposent d’un espace de stockage de données maximal de 10 Go.
-* Les utilisateurs disposant d’une licence Power BI Pro peuvent créer des espaces de travail d’application avec pour chacun une capacité de stockage de données maximal de 10 Go.
-* Un espace de travail d’application inclus dans une fonctionnalité Premium n’est pas comptabilisé dans l’espace de stockage d’un utilisateur Power BI Pro.
+* Les utilisateurs disposant d’une licence Power BI Pro peuvent créer des espaces de travail avec pour chacun une capacité de stockage de données maximale de 10 Go.
+* Les espaces de travail inclus dans une fonctionnalité Premium ne sont pas comptabilisés dans l’espace de stockage d’un utilisateur Power BI Pro.
 
-Au niveau du locataire, l’utilisation totale ne peut pas dépasser 10 Go par utilisateur Pro parmi tous les utilisateurs et espaces de travail d’application Pro sur le locataire.
+Au niveau du locataire, l’utilisation totale ne peut pas dépasser 10 Go par utilisateur Pro parmi tous les utilisateurs et espaces de travail Pro du locataire.
 
 Découvrez plus en détail les autres fonctionnalités du [modèle de tarification de Power BI](https://powerbi.microsoft.com/pricing).
 
@@ -46,7 +45,7 @@ La taille d’un tableau de bord que vous partagez varie en fonction de ce qui e
 
 Consultez l’espace de stockage des données que vous utilisez dans votre compte Power BI et gérez votre compte.
 
-1. Pour gérer votre propre stockage, accédez à **Mon espace de travail** dans le volet de navigation gauche.
+1. Pour gérer votre propre stockage, accédez à **Mon espace de travail** dans le volet de navigation.
    
     ![Mon espace de travail](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
 2. Sélectionnez l’icône représentant un engrenage ![Engrenage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) située en haut à droite \> **Gérer le stockage personnel**.
@@ -63,15 +62,15 @@ Consultez l’espace de stockage des données que vous utilisez dans votre compt
 
 N’oubliez pas que vous-même ou une autre personne pouvez avoir des rapports et des tableaux de bord basés sur un jeu de données. Si vous supprimez le jeu de données, les rapports et les tableaux de bord ne fonctionneront plus.
 
-## <a name="manage-your-app-workspace"></a>Gérer votre espace de travail d’application
-1. Sélectionnez la flèche en regard de **Espaces de travail** \>, puis sélectionnez le nom de l’espace de travail d’application.
+## <a name="manage-your-workspace"></a>Gérer votre espace de travail
+1. Sélectionnez la flèche en regard de **Espaces de travail** \>, puis sélectionnez le nom de l’espace de travail.
    
-    ![Sélectionner un espace de travail d’application](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+    ![Sélectionner un espace de travail](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
 2. Sélectionnez l’icône représentant un engrenage ![Engrenage](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) située en haut à droite \> **Gérer le stockage de groupe**.
    
     La barre supérieure montre la part de la limite de stockage du groupe qui est utilisée.
    
-    ![Gérer le stockage de l’espace de travail d’application](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Gérer le stockage de l’espace de travail](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     Les jeux de données et rapports sont répartis sous deux onglets :
    
@@ -80,7 +79,7 @@ N’oubliez pas que vous-même ou une autre personne pouvez avoir des rapports e
 3. Pour supprimer un jeu de données ou un rapport, sélectionnez l’icône représentant une corbeille ![Corbeille](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
-   > Tous les membres dotés d’autorisations de modification d’un espace de travail d’application sont autorisés à supprimer des jeux de données et des rapports de l’espace de travail d’application.
+   > Tous les membres dotés d’autorisations de modification pour un espace de travail sont autorisés à supprimer les jeux de données et les rapports qu’il contient.
    > 
    > 
 
@@ -104,5 +103,5 @@ Cette limite est également indiquée dans **Gérer le stockage personnel**.
 
  ![Limite de stockage dépassée](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+ D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

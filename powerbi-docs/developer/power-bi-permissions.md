@@ -3,18 +3,17 @@ title: Autorisations Power BI
 description: Autorisations Power BI
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
-ms.openlocfilehash: 8a48ec007f2d8c9c07de5cc0d51049e3dbf19662
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 14327f09ede41c23fd4fe7cc65fc4f8d3a91b926
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269349"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880432"
 ---
 # <a name="power-bi-permissions"></a>Autorisations Power BI
 
@@ -42,11 +41,11 @@ Les autorisations Power BI donnent à une application la possibilité d’effec
 Une application peut demander des autorisations lorsqu’elle tente de se connecter pour la première fois à la page d’un utilisateur en transmettant les autorisations requises dans le paramètre d’étendue de l’appel. Si les autorisations sont accordées, un jeton d’accès est retourné à l’application et peut être utilisé lors des appels d’API ultérieurs. Seule une application particulière peut bénéficier de l’accès.
 
 > [!NOTE]
-> Les API Power BI font toujours référence aux espaces de travail d’application en tant que groupes. Toutes les références aux groupes indiquent que vous travaillez avec des espaces de travail d’application.
+> Les API Power BI font encore référence aux espaces de travail en tant que groupes. Toutes les références à des groupes indiquent que vous travaillez avec des espaces de travail.
 
 ## <a name="requesting-permissions"></a>Demande d’autorisations
 
-Même si vous pouvez appeler l’API pour vous authentifier à l’aide d’un nom d’utilisateur et d’un mot de passe, pour effectuer des actions au nom d’un autre utilisateur, vous devrez demander des autorisations que l’utilisateur doit approuver, puis envoyer le jeton d’accès obtenu lors de tous les appels ultérieurs. Pour ce processus, nous allons suivre le protocole [OAuth 2.0 standard](http://oauth.net/2/). Bien que l’implémentation réelle puisse varier, le flux OAuth pour Power BI comporte les éléments suivants :
+Même si vous pouvez appeler l’API pour vous authentifier à l’aide d’un nom d’utilisateur et d’un mot de passe, pour effectuer des actions au nom d’un autre utilisateur, vous devrez demander des autorisations que l’utilisateur doit approuver, puis envoyer le jeton d’accès obtenu lors de tous les appels ultérieurs. Pour ce processus, nous allons suivre le protocole [OAuth 2.0 standard](https://oauth.net/2/). Bien que l’implémentation réelle puisse varier, le flux OAuth pour Power BI comporte les éléments suivants :
 
 * **Interface utilisateur de connexion** : il s’agit d’une interface utilisateur que le développeur peut appeler pour demander des autorisations. L’utilisateur doit se connecter si ce n’est pas déjà fait. L’utilisateur doit également approuver les autorisations demandées par l’application. La fenêtre de connexion renvoie un code d’accès ou un message d’erreur à une URL de redirection fournie.
   * Une URL de redirection standard doit être fournie par Power BI à l’usage des applications natives.
@@ -54,4 +53,4 @@ Même si vous pouvez appeler l’API pour vous authentifier à l’aide d’un n
 * **Jetons d’autorisation** : ils permettent d’authentifier les appels d’API effectués pour le compte d’un autre utilisateur. Ils sont limités à une application particulière. Les jetons ont une durée de vie définie et doivent être actualisés au moment de leur expiration.
 * **Actualiser le jeton** : quand un jeton expire, un processus est lancé pour les actualiser.
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

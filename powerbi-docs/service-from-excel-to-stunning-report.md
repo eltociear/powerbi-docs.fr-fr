@@ -2,7 +2,6 @@
 title: Générer des rapports exceptionnels à partir d’un classeur Excel dans le service Power BI
 description: Cet article explique comment créer rapidement un rapport exceptionnel à partir d’un classeur Excel.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ed4bc9d10e3e1512aba559d77ba8729a39cb8a84
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: c2a4719a03e37569e40d4247939a9f2c73379e52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995074"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872512"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Générer des rapports exceptionnels à partir d’un classeur Excel dans le service Power BI
 Votre responsable attend de vous un rapport présentant vos chiffres de vente les plus récents et vos dernières impressions concernant la campagne avant la fin de la journée. Vos données les plus récentes sont stockées sur différents systèmes tiers et sur des fichiers de votre ordinateur portable. Auparavant, plusieurs heures étaient nécessaires pour créer des visuels et mettre en forme un rapport. Vous êtes donc inquiet.
@@ -57,11 +56,11 @@ Le service Power BI se connecte à de nombreuses sources de données, y compris
 
    ![Liste déroulante Créer](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
 
-4. Au bas du volet de navigation de gauche, sélectionnez **Obtenir des données**. 
+4. Sélectionnez **Obtenir des données** en bas du volet de navigation. 
 
 5. Dans la page **Obtenir des données**, dans la zone **Fichiers** située sous **Créer du contenu**, sélectionnez **Récupérer**.
 
-   ![Obtenez des données de fichiers](media/service-from-excel-to-stunning-report/pbi_get_files.png)
+   ![Obtenir des données de fichiers](media/service-from-excel-to-stunning-report/pbi_get_files.png)
 
 6. Dans la page **Fichiers**, sélectionnez **Fichier local**. Accédez au classeur Excel sur votre ordinateur, puis sélectionnez **Ouvrir** pour le charger dans le service Power BI. 
 
@@ -111,7 +110,7 @@ Vous voulez afficher un élément visuel montrant les ventes par produit et segm
 
 2. Modifiez le type de graphique en choisissant une icône du menu **Visualisations**. Par exemple, remplacez-le par un **histogramme empilé**. 
 
-3. Pour trier le graphique, sélectionnez les points de suspension (...) > **Trier par**.
+3. Pour trier le graphique, sélectionnez **Plus d’options** (...) > **Trier par**.
 
    ![Histogramme empilé dans l’éditeur de rapport](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 
@@ -140,5 +139,5 @@ Supposons que vous vouliez partager votre tableau de bord avec votre responsable
 * [Prise en main de Power BI Desktop](desktop-getting-started.md)
 * [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
 
-D’autres questions ? [Posez vos questions à la Communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? [Posez vos questions à la Communauté Power BI](https://community.powerbi.com/).
 

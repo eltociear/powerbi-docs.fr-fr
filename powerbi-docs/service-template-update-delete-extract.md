@@ -2,19 +2,18 @@
 title: Mettre à jour, supprimer et extraire une application modèle Power BI
 description: Comment mettre à jour, supprimer et extraire une application modèle.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: a15a27255f15bdce39ddb14a6cda798d170ba3ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207634"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871381"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Mettre à jour, supprimer et extraire une application modèle
 
@@ -65,7 +64,7 @@ La restauration de la version précédente d’une application modèle est déso
 Le contrôle de version de votre nouvel espace de travail est réinitialisé et vous pouvez continuer à développer et à distribuer l’application modèle à partir de l’espace de travail qui vient d’être extrait.
 
 ## <a name="delete-template-app-version"></a>Supprimer une version d’application modèle
-Un espace de travail d’application modèle est la source d’une application modèle distribuée active. Pour protéger les utilisateurs d’applications modèles, il n’est pas possible de supprimer un espace de travail sans supprimer au préalable toutes les versions de l’application créées dans l’espace de travail.
+Un espace de travail modèle est la source d’une application modèle distribuée active. Pour protéger les utilisateurs d’applications modèles, il n’est pas possible de supprimer un espace de travail sans supprimer au préalable toutes les versions de l’application créées dans l’espace de travail.
 La suppression d’une version de l’application supprime également l’URL de l’application, qui ne fonctionnera plus.
 
 1. Dans le volet de gestion de version, appuyez sur les points de suspension **(...)** , puis sur **Supprimer**.

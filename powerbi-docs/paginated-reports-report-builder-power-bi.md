@@ -3,18 +3,17 @@ title: Présentation des rapports paginés dans Power BI Premium
 description: Les rapports paginés, depuis longtemps le format standard pour les rapports dans SQL Server Reporting Services, sont désormais disponibles dans le service Power BI. Ces rapports peuvent être imprimés ou partagés. Vous pouvez contrôler exactement la disposition des rapports. Ils affichent toutes les données dans une table, par exemple, même si la table s’étend sur plusieurs pages.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 09/24/2019
-ms.openlocfilehash: ca090f7251349c9ed4768b49f1372c14e68f0068
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305676"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874703"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
@@ -26,7 +25,7 @@ Les rapports paginés peuvent avoir de nombreuses pages. Par exemple, ce rapport
 
 ![Rapport paginé dans le service Power BI](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
-Vous pouvez prévisualiser votre rapport dans le Générateur de rapports, puis le publier sur le service Power BI, http://app.powerbi.com. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés sous Mon espace de travail ou dans les espaces de travail de l’application tant que l’espace de travail est dans une capacité Power BI Premium. Par ailleurs, un administrateur Power BI doit activer les rapports paginés dans la [section Fonctionnalités Premium](service-admin-premium-workloads.md#paginated-reports) du portail d’administration Power BI. 
+Vous pouvez prévisualiser votre rapport dans le Générateur de rapports, puis le publier sur le service Power BI, https://app.powerbi.com. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés dans Mon espace de travail ou dans les espaces de travail, tant que l’espace de travail est dans une capacité Power BI Premium. Par ailleurs, un administrateur Power BI doit activer les rapports paginés dans la [section Fonctionnalités Premium](service-admin-premium-workloads.md#paginated-reports) du portail d’administration Power BI. 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Créer des rapports dans le Générateur de rapports Power BI
 
@@ -62,7 +61,7 @@ Tous les éléments d’un rapport paginé, du rapport proprement dit à chaque 
 
 ## <a name="creating-a-report-definition"></a>Création d’une définition de rapport
 
-Lorsque vous concevez un rapport paginé, vous créez vraiment une *définition de rapport*. Il ne contient pas les données. Il spécifie où obtenir les données, les données à obtenir et comment les afficher. Lorsque vous exécutez le rapport, le processeur de rapports prend la définition de rapport que vous avez spécifiée, récupère les données et les combine avec la disposition du rapport pour le générer. Vous chargez la définition de rapport sur le service Power BI, http://app.powerbi.com, sous Mon espace de travail ou dans un espace de travail partagé avec vos collègues. Si la source de données du rapport est locale, après avoir chargé le rapport, vous redirigez la connexion de la source de données à travers une passerelle. 
+Lorsque vous concevez un rapport paginé, vous créez vraiment une *définition de rapport*. Il ne contient pas les données. Il spécifie où obtenir les données, les données à obtenir et comment les afficher. Lorsque vous exécutez le rapport, le processeur de rapports prend la définition de rapport que vous avez spécifiée, récupère les données et les combine avec la disposition du rapport pour le générer. Vous chargez la définition de rapport sur le service Power BI, https://app.powerbi.com, sous Mon espace de travail ou dans un espace de travail partagé avec vos collègues. Si la source de données du rapport est locale, après avoir chargé le rapport, vous redirigez la connexion de la source de données à travers une passerelle. 
 
 ## <a name="view-your-paginated-report"></a>Créer votre rapport paginé
 Vous affichez votre rapport paginé dans le service Power BI dans un navigateur ainsi que dans les applications mobiles Power BI. À partir du service Power BI, vous pouvez exporter le rapport dans plusieurs formats, dont HTML, MHTML, PDF, XML, CSV, TIFF, Word et Excel. Vous pouvez également le partager avec d’autres utilisateurs.  

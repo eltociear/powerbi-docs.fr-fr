@@ -2,19 +2,18 @@
 title: Analyste virtuel des questions et réponses dans les applications iOS – Power BI
 description: Posez des questions concernant l’exemple de données en utilisant vos propres mots avec l’analyste virtuel des questions et réponses dans l’application mobile Power BI sur votre appareil iOS.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 0517299240137bf63ace8aca6a1da577a4443d2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 34fe1af53a62c5198cc30625d840321c414be8f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60977227"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879381"
 ---
 # <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Analyste virtuel des questions et réponses dans les applications iOS – Power BI
 
@@ -35,7 +34,7 @@ Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](
 ## <a name="prerequisites"></a>Conditions préalables
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Installer l’application Power BI pour iOS
-[Téléchargez l’application iOS](http://go.microsoft.com/fwlink/?LinkId=522062 "Téléchargez l’application iPhone") à partir de l’Apple App Store sur votre iPad, iPhone ou iPod touch.
+[Téléchargez l’application iOS](https://go.microsoft.com/fwlink/?LinkId=522062 "Télécharger l’application iPhone") à partir de l’Apple App Store sur votre iPad, iPhone ou iPod touch.
 
 Les versions suivantes prennent en charge l’application Power BI pour iOS :
 - iPad sous iOS 10 (et versions ultérieures) ;
@@ -49,7 +48,7 @@ La première étape consiste à télécharger les exemples Retail Analysis (Anal
 
 1. Ouvrez le service Power BI (app.powerbi.com) et connectez-vous.
 
-2. Dans le volet de navigation de gauche, sélectionnez **Espaces de travail**, **Mon espace de travail**.
+2. Dans le volet de navigation, sélectionnez **Espaces de travail**, **Mon espace de travail**.
 
 3. Dans le coin inférieur gauche, sélectionnez **Obtenir des données**.
    

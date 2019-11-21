@@ -2,21 +2,20 @@
 title: Ajouter des liens hypertexte (URL) à une table
 description: Cette rubrique explique comment ajouter des liens hypertexte (URL) à une table. Vous utilisez Power BI Desktop pour ajouter des liens hypertexte (URL) à une table ou matrice. Ensuite, vous pouvez utiliser Power BI Desktop ou le service Power BI pour ajouter des liens hypertexte à vos matrices et tables de rapports.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/30/2019
+ms.date: 10/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b158e968d0fd35859cfd293177a7273e8311d5b2
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: e8cad7035e752e5e344d78a22ad5fd8ea0a072ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715294"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874518"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Ajouter des liens hypertexte (URL) à une table
 Cette rubrique explique comment ajouter des liens hypertexte (URL) à une table. Vous utilisez Power BI Desktop pour ajouter des liens hypertexte (URL) à une table ou matrice. Ensuite, vous pouvez utiliser Power BI Desktop ou le service Power BI pour ajouter des liens hypertexte à vos matrices et tables de rapports. 
@@ -44,7 +43,7 @@ La procédure d’ajout d’un lien hypertexte varie selon que vous avez import�
     ![Liens bleus et soulignés](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
 
     > [!NOTE]
-    > Les URL doivent commencer par **http:// , https://** ou **www**.
+    > Les URL doivent commencer par certains préfixes. Consultez [Considérations et résolution des problèmes](#considerations-and-troubleshooting) pour obtenir la liste complète.
     >
    
 1. Si vous ne souhaitez pas afficher une URL longue dans une table, vous pouvez afficher une icône de lien hypertexte  ![Icône de lien hypertexte](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) à la place. Notez que vous ne pouvez pas afficher d’icônes dans une matrice.
@@ -80,8 +79,9 @@ Une autre méthode pour ajouter des liens hypertexte à vos tableaux et matrices
 4. Placez votre curseur dans la colonne qui contient les URL que vous voulez transformer en liens hypertexte dans les tables Power BI.
    
    > [!NOTE]
-   > Les URL doivent commencer par **http:// , https://** ou **www**.
+   > Les URL doivent commencer par certains préfixes. Consultez [Considérations et résolution des problèmes](#considerations-and-troubleshooting) pour obtenir la liste complète.
    > 
+   
 5. Dans le groupe **Propriétés de rapport**, sélectionnez la liste déroulante **Catégorie des données**, puis choisissez **URL web**. 
    
    ![Liste déroulante des catégories de données dans Excel](media/power-bi-hyperlinks-in-tables/createhyperlinksnew.png)
@@ -92,7 +92,17 @@ Une autre méthode pour ajouter des liens hypertexte à vos tableaux et matrices
    ![Créer une table dans Power BI avec le champ d’URL](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
-Q : Peut-on utiliser une URL personnalisée comme lien hypertexte dans un tableau ou dans une matrice ?    
+
+Les URL doivent commencer l’un des préfixes suivants :
+- http
+- https
+- -mailto
+- file
+- ftp
+- news
+- telnet
+
+Q : Peut-on utiliser une URL personnalisée comme lien hypertexte dans un tableau ou dans une matrice ?    
 R : Non. Il est possible d’utiliser une icône de lien. Si vous avez besoin d’un texte personnalisé pour vos liens hypertextes et que votre liste d’URL est courte, vous pouvez utiliser une zone de texte à la place.
 
 
@@ -101,5 +111,5 @@ R : Non. Il est possible d’utiliser une icône de lien. Si vous avez besoin d�
 
 [Fondamentaux pour les concepteurs dans le service Power BI](service-basic-concepts.md)
 
-D’autres questions ? [Posez vos questions à la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)
 

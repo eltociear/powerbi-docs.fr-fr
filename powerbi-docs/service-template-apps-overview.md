@@ -2,19 +2,18 @@
 title: Que sont les applications modèles Power BI ?
 description: Cet article présente une vue d’ensemble du programme d’applications modèles Power BI. Découvrez comment créer des applications Power BI avec peu ou pas de codage et les déployer ensuite vers n’importe quel client Power BI.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: tebercov
-ms.openlocfilehash: c05b53a5fd61d348b6d304b17123d5f2497ab647
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 4b4e32f787d2d262d604ff0745f8c028e9fff949
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408209"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871336"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Que sont les applications modèles Power BI ?
 
@@ -61,7 +60,7 @@ Voici les principales étapes à suivre.
 
 1. Soumettez le contenu sur la plateforme Cloud Partner en vue de sa publication. 
 
-1. Mettez votre offre « en ligne » dans AppSource et promouvez votre application en production dans Power BI.
+1. Mettez votre offre « En ligne » dans AppSource et placez votre application en production dans Power BI.
 2. Vous pouvez maintenant commencer à développer la prochaine version de l’application dans le même espace de travail, en préproduction. 
 
 ## <a name="requirements"></a>Configuration requise
@@ -78,11 +77,11 @@ Pour publier une application modèle sur le service Power BI et AppSource, vous 
 - Examinez soigneusement votre application en l’installant dans votre locataire et dans un locataire secondaire. Assurez-vous que les clients voient uniquement ce que vous souhaitez leur montrer. 
 - Utilisez AppSource comme magasin en ligne pour y héberger votre application. De cette manière, tout le monde pourra facilement trouver votre application à l’aide de Power BI. 
 - Prévoyez de proposer plusieurs applications modèles pour répondre à différents scénarios particuliers. 
-- Autorisez la personnalisation des données. Par exemple, permettez la configuration de paramètres et de connexions personnalisés au moment de l’installation.
+- Autorisez la personnalisation des données. Par exemple, autorisez la configuration de paramètres et de connexions personnalisés par le programme d’installation.
 
 Consultez [Conseils pour créer des applications modèles dans Power BI](service-template-apps-tips.md) pour obtenir des suggestions supplémentaires.
 
-## <a name="support"></a>Support technique
+## <a name="support"></a>Support
 Pour bénéficier d’un support durant le développement, utilisez [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Nous supervisons et gérons activement ce site. Les incidents utilisateur sont rapidement transmis à la bonne équipe.
 
 ## <a name="next-steps"></a>Étapes suivantes

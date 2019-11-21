@@ -3,19 +3,18 @@ title: Principal de service avec Power BI
 description: Découvrez comment inscrire une application dans Azure Active Directory à l’aide d’un principal de service et l’utiliser pour l’incorporation de contenu Power BI.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: c77d206dbd7fa0604bc60fb4054c09f73cbe442e
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 9bbba47456d9c5bed5c8cd77858b6dbaeefce5a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073100"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877656"
 ---
 # <a name="service-principal-with-power-bi"></a>Principal de service avec Power BI
 
@@ -58,8 +57,8 @@ Il existe des différences selon que vous utilisez un principal de service ou un
 |------------------------------------------------------|---------------------|-------------------|
 | Peut se connecter au service Power BI  | Oui | Non |
 | Activé dans le portail d’administration Power BI | Non | Oui |
-| [Fonctionne avec les espaces de travail d’application (v1)](../service-create-workspaces.md) | Oui | Non |
-| [Fonctionne avec les nouveaux espaces de travail d’application (v2)](../service-create-the-new-workspaces.md) | Oui | Oui |
+| [Fonctionne avec les espaces de travail (v1)](../service-create-workspaces.md) | Oui | Non |
+| [Fonctionne avec les nouveaux espaces de travail (v2)](../service-create-the-new-workspaces.md) | Oui | Oui |
 | Doit être administrateur de l’espace de travail s’il est utilisé avec Power BI Embedded | Oui | Oui |
 | Peut utiliser les API REST Power BI | Oui | Oui |
 | Nécessite un administrateur général pour créer | Oui | Non |
@@ -114,7 +113,7 @@ Contrairement à un compte principal traditionnel, un principal de service (jeto
    > [!Important]
    > Les principaux du service ont accès à tous les paramètres de locataire qui sont activés pour toute l’organisation ou pour les groupes de sécurité qui contiennent des principaux du service dans le cadre du groupe. Pour restreindre l’accès des principaux du service à des paramètres de locataire spécifiques, autorisez uniquement l’accès à certains groupes de sécurité ou créez un groupe de sécurité dédié pour les principaux du service et excluez-le.
 
-    ![Portail d’administration](media/embed-service-principal/admin-portal.png)
+    ![Portail d'administration](media/embed-service-principal/admin-portal.png)
 
 4. Configurez votre [environnement Power BI](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
@@ -139,9 +138,9 @@ Si vous utilisez déjà les [nouveaux espaces de travail](../service-create-the-
 
 Étant donné que l’interface utilisateur ne propose aucune fonctionnalité pour déplacer les artefacts et ressources Power BI d’un espace de travail vers un autre, vous devez utiliser les [API](https://powerbi.microsoft.com/pt-br/blog/duplicate-workspaces-using-the-power-bi-rest-apis-a-step-by-step-tutorial/) pour accomplir cette tâche. Quand vous utilisez les API avec un principal de service, vous avez besoin de l’ID objet du principal de service.
 
-### <a name="how-to-get-the-service-principal-object-id"></a>Comment obtenir l’ID objet du principal de service
+### <a name="how-to-get-the-service-principal-object-id"></a>Comment obtenir l’ID d’objet de principal du service
 
-Pour affecter un principal de service à un nouvel espace de travail d’application, utilisez les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). Pour référencer un principal de service pour des opérations ou pour faire des changements, par exemple pour appliquer un principal de service comme administrateur à un espace de travail, utilisez l’**ID objet du principal de service**.
+Pour affecter un principal de service à un nouvel espace de travail, vous utilisez les [API REST Power BI](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). Pour référencer un principal de service pour des opérations ou pour faire des changements, par exemple pour appliquer un principal de service comme administrateur à un espace de travail, utilisez l’**ID objet du principal de service**.
 
 Voici les étapes à suivre pour obtenir l’ID objet du principal de service à partir du portail Azure.
 
@@ -166,7 +165,7 @@ Voici un exemple de script pour récupérer l’ID objet du principal de service
 
 ## <a name="considerations-and-limitations"></a>Considérations et limitations
 
-* Un principal de service ne fonctionne qu’avec de [nouveaux espaces de travail d’application](../service-create-the-new-workspaces.md).
+* Un principal de service ne fonctionne qu’avec les [nouveaux espaces de travail](../service-create-the-new-workspaces.md).
 * **Mon espace de travail** n’est pas pris en charge lors de l’utilisation d’un principal de service.
 * Une capacité dédiée est nécessaire pour passer en production.
 * Vous ne pouvez pas vous connecter au portail Power BI avec un principal de service.

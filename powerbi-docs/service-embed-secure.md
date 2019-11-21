@@ -3,19 +3,18 @@ title: Incorporer un rapport dans un site web ou portail sécurisé
 description: La fonctionnalité d’intégration de Power BI permet aux utilisateurs d’incorporer des rapports dans les portails web internes de manière simple et sécurisée.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3c6dc26ee1cf806ff85a9452c024e7ccbd210a25
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 59841cdcfae3bc08e0b6dcacf4bcb6664dfe209c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867108"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877081"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Incorporer un rapport dans un site web ou portail sécurisé
 
@@ -49,7 +48,7 @@ L’option **Incorporer** prend en charge les [filtres URL](service-url-filters.
 
 L’option **Incorporer** ne permet pas automatiquement aux utilisateurs de voir le rapport. Les autorisations de consultation sont définies dans le service Power BI.
 
-Dans le service Power BI, vous pouvez partager des rapports incorporés avec des utilisateurs qui ont besoin d’un accès. Si vous utilisez un groupe Office 365, vous pouvez lister l’utilisateur en tant que membre de l’espace de travail d’application. Pour plus d’informations, consultez [Gérer l’espace de travail de votre application dans Power BI et Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Dans le service Power BI, vous pouvez partager des rapports incorporés avec des utilisateurs qui ont besoin d’un accès. Si vous utilisez un groupe Office 365, vous pouvez lister l’utilisateur comme membre de l’espace de travail. Pour plus d’informations, consultez [Gérer l’espace de travail dans Power BI et Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Licensing
 
@@ -114,7 +113,7 @@ report.src = newUrl;
 }
 ```
 
-![Filtrer](media/service-embed-secure/secure-embed-filter.png)
+![Filtre](media/service-embed-secure/secure-embed-filter.png)
 
 Vous pouvez ajouter autant de boutons que vous le souhaitez pour créer une expérience personnalisée avec peu de code. 
 

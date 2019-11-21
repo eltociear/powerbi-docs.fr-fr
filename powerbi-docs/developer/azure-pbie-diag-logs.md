@@ -3,17 +3,16 @@ title: Journalisation des diagnostics pour le service Power BI Embedded dans Azu
 description: En savoir plus sur la configuration de la journalisation des diagnostics pour le service Power BI Embedded dans Azure.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: 9065feef76050c6a04e1ecf8ec7907b74be4b0ce
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289865"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875980"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Journalisation des diagnostics pour Power BI Embedded dans Azure
 
@@ -29,7 +28,7 @@ L’utilisation des Diagnostics peut répondre à certains scénarios, tels que�
 
 ### <a name="azure-portal"></a>Portail Azure
 
-1. Dans le [portail Azure](https://portal.azure.com) > ressource Power BI Embedded, sélectionnez **Journaux de diagnostic** dans le volet de navigation gauche, puis sélectionnez **Activer les diagnostics**.
+1. Dans le [portail Azure](https://portal.azure.com) > Ressource Power BI Embedded, sélectionnez **Journaux de diagnostic** dans le volet de navigation, puis sélectionnez **Activer les diagnostics**.
 
     ![Activer la journalisation des diagnostics pour Power BI Embedded dans le portail Azure](media/azure-pbie-diag-logs/azure-pbie-diag-logs-01.png)
 

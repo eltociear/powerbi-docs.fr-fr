@@ -2,7 +2,6 @@
 title: Rechercher du contenu dans le service Power BI
 description: Démarrez sur le canevas d’accueil pour rechercher et ouvrir des rapports, des tableaux de bord et des applications.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d97b5a93060869d65de6652af869b472baf8cd10
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: b905b738dc9fa38e390a94fb1b893aba8e45a0db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71077781"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863694"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Rechercher des tableaux de bord, des rapports et des applications
 Dans Power BI, le terme *contenu* fait référence aux applications, aux tableaux de bord et aux rapports. Le contenu est créé par les *concepteurs* Power BI, qui le partagent avec leurs collègues. Votre contenu est accessible et consultable dans le service Power BI, et le meilleur emplacement pour commencer à utiliser Power BI est votre page d’accueil.
@@ -28,7 +27,7 @@ Quand vous vous connectez, Power BI s’ouvre et affiche votre canevas d’accu
 La page Accueil Power BI propose trois options pour rechercher et voir votre contenu. Seule la méthode diffère, puisque ces trois options permettent d’accéder au même pool de contenu. Dans certains cas, la recherche est la méthode la plus simple et la plus rapide pour trouver un élément. Dans d’autres cas, la sélection d’une *carte* dans le canevas d’accueil peut constituer la meilleure solution.
 
 - Le canevas d’accueil affiche et organise votre contenu préféré, votre contenu le plus récent, ainsi que le contenu et les ressources de formation qui vous sont recommandés. Chaque élément de contenu s’affiche sous la forme d’une *carte* associée à un titre et à une icône. Lorsque vous sélectionnez une carte, vous ouvrez son contenu.
-- Sur la gauche se trouve un volet de navigation appelé « barre de navigation ». Dans ce volet, le contenu est organisé de façon légèrement différente, selon les options suivantes : Favoris, Récents, Applications et Partagés avec moi. Vous pouvez voir des listes de contenu et en sélectionner une pour l’ouvrir.
+- Sur la gauche se trouve le volet de navigation. Dans ce volet, le contenu est organisé de façon légèrement différente, selon les options suivantes : Favoris, Récents, Applications et Partagés avec moi. Vous pouvez voir des listes de contenu et en sélectionner une pour l’ouvrir.
 - En haut à droite, la zone de recherche globale vous permet de rechercher du contenu par titre, par nom ou par mot clé.
 
 Les rubriques suivantes expliquent chaque option de recherche et de consultation du contenu.
@@ -65,23 +64,23 @@ Power BI affiche un ensemble d’applications recommandées en se basant sur vo
 ### <a name="learning-resources"></a>Ressources de formation
 Au bas du canevas d’accueil se trouve un ensemble de ressources de formation. Les ressources qui s’affichent dépendent de votre activité et de vos paramètres, ainsi que des choix de l’administrateur Power BI. 
  
-## <a name="explore-the-navigation-pane-nav-bar"></a>Explorer le volet de navigation (barre de navigation)
+## <a name="explore-the-nav-pane"></a>Explorer le volet de navigation
 
-![Capture d’écran de la barre de navigation du service Power BI.](media/end-user-home/power-bi-nav-bar.png)
+![Capture d’écran du volet de navigation du service Power BI.](media/end-user-home/power-bi-nav-bar.png)
 
 
-Utilisez le volet de navigation gauche (la barre de navigation) pour localiser des tableaux de bord, des rapports et des applications, et passer des uns aux autres. Parfois, l’utilisation de la barre de navigation est ce qui permet d’accéder le plus rapidement au contenu.
-La barre de navigation s’affiche lorsque vous ouvrez la page d’accueil et reste statique lorsque vous ouvrez d’autres sections du service Power BI.
+Utilisez le volet de navigation pour localiser des tableaux de bord, des rapports et des applications, et passer des uns aux autres. Parfois, l’utilisation du volet de navigation est ce qui permet d’accéder le plus rapidement au contenu.
+Le volet de navigation s’affiche quand vous ouvrez la page d’accueil et reste statique quand vous ouvrez d’autres sections du service Power BI.
   
-La barre de navigation organise votre contenu dans des conteneurs similaires à ceux que vous avez déjà vus dans le canevas d’accueil : Favoris, Récents, Applications et Partagé avec moi. À l’aide de menus volants, vous pouvez voir uniquement le contenu le plus récent dans chacun de ces conteneurs. Vous pouvez également accéder aux listes de contenu pour voir tout le contenu de chaque catégorie de conteneur.
+Le volet de navigation organise votre contenu dans des conteneurs similaires à ceux que vous avez déjà vus dans le canevas d’accueil : Favoris, Récents, Applications et Partagé avec moi. À l’aide de menus volants, vous pouvez voir uniquement le contenu le plus récent dans chacun de ces conteneurs. Vous pouvez également accéder aux listes de contenu pour voir tout le contenu de chaque catégorie de conteneur.
  
 - Pour ouvrir l’une de ces sections de contenu et afficher la liste de tous les éléments, sélectionnez son titre.
 - Pour voir le contenu le plus récent de chaque conteneur, sélectionnez le menu volant ( **>** ).
 
-    ![Vidéo montrant l’utilisation de la barre de navigation pour le conteneur Récents](media/end-user-home/power-bi-nav-bar.gif)
+    ![Vidéo montrant l’utilisation du volet de navigation pour le conteneur Récents](media/end-user-home/power-bi-nav-bar.gif)
 
  
-La barre de navigation vous permet elle aussi de trouver rapidement le contenu dont vous avez besoin. L’organisation du contenu est similaire à celle du canevas Accueil. Toutefois, il s’affiche sous la forme de listes plutôt que de cartes. 
+Le volet de navigation vous permet lui aussi de trouver rapidement le contenu dont vous avez besoin. L’organisation du contenu est similaire à celle du canevas Accueil. Toutefois, il s’affiche sous la forme de listes plutôt que de cartes. 
 
 ## <a name="search-all-of-your-content"></a>Effectuer des recherches dans l’ensemble de votre contenu
 Parfois, le moyen le plus rapide de trouver votre contenu est d’utiliser la fonctionnalité Recherche. Par exemple, vous vous êtes peut-être rendu compte que les tableaux de bord que vous n’avez pas utilisés depuis un certain temps ne s’affichent plus dans votre canevas d’accueil. Il est possible aussi que vous sachiez que votre collègue a partagé une ressource avec vous, mais que vous ne vous souveniez pas du nom qu’il lui a donné ou du type de ressource dont il s’agit (tableau de bord ou rapport, par exemple).

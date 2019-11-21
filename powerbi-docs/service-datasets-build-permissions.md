@@ -2,7 +2,6 @@
 title: Autorisation de génération pour les jeux de données partagés (préversion)
 description: Découvrez comment vous pouvez garder le contrôle de qui peut accéder aux données à l’aide de l’autorisation de génération.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 069ec5e0c767bcfcb0a4a41c2180ae78146800f2
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020918"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872563"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Autorisation de génération pour les jeux de données partagés (préversion)
 
@@ -29,7 +28,7 @@ Vous accordez l'autorisation de génération pour un jeu de données de différe
 
 - Les membres d’un espace de travail avec au moins le rôle Contributeur disposent automatiquement de l’autorisation de génération de jeux de données dans cet espace de travail, ainsi que de l’autorisation de copier un rapport.
  
-- Les membres de l’espace de travail où se trouve le jeu de données peuvent attribuer l’autorisation à des utilisateurs ou des groupes de sécurité spécifiques dans le Centre des autorisations. Si vous êtes membre de l’espace de travail, sélectionnez les points de suspension (...) en regard d’un jeu de données > **Gérer les autorisations**.
+- Les membres de l’espace de travail où se trouve le jeu de données peuvent attribuer l’autorisation à des utilisateurs ou des groupes de sécurité spécifiques dans le Centre des autorisations. Si vous êtes membre de l’espace de travail, sélectionnez **Plus d’options** (...) à côté d’un jeu de données > **Gérer les autorisations**.
 
     ![Sélectionner les points de suspension](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -50,11 +49,11 @@ Vous pouvez supprimer l’autorisation de création dont dispose un utilisateur 
 À un moment donné, vous devrez peut-être supprimer l'autorisation de génération pour certains utilisateurs d'un jeu de données partagé. 
 
 1. Dans un espace de travail, allez à la page de la liste des **jeux de données**. 
-1. Sélectionnez les points de suspension (...) en regard du jeu de données > **Gérer les autorisations**.
+1. Sélectionnez **Plus d’options** (...) en regard du jeu de données > **Gérer les autorisations**.
 
     ![Gérer les autorisations](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Sélectionnez les points de suspension (...) en regard d'un nom > **Supprimer l'autorisation de génération**.
+1. Sélectionnez **Plus d’options** (...) à côté d’un nom > **Supprimer l’autorisation de génération**.
 
     ![Supprimer l'autorisation de génération](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -80,11 +79,11 @@ Supposons que vous ayez distribué une application d'un espace de travail à un 
 1. Sélectionnez **Mettre à jour**.
 
 1. Dans l'espace de travail, allez à la page de la liste des **jeux de données**. 
-1. Sélectionnez les points de suspension (...) en regard du jeu de données > **Gérer les autorisations**.
+1. Sélectionnez **Plus d’options** (...) à côté du jeu de données > **Gérer les autorisations**.
 
     ![Gérer les autorisations](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Sélectionnez les points de suspension (...) en regard du nom > **Supprimer l'autorisation de génération**.
+1. Sélectionnez **Plus d’options** (...) à côté des noms correspondants > **Supprimer l’autorisation de génération**.
 
     ![Supprimer l'autorisation de génération](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -103,4 +102,4 @@ Vous pouvez supprimer l’autorisation de génération. Si vous le faites, les p
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Utiliser des jeux de données dans des espaces de travail (préversion)](service-datasets-across-workspaces.md)
-- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

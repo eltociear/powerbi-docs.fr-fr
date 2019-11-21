@@ -2,20 +2,19 @@
 title: Utiliser des cartes de formes dans Power BI Desktop (préversion)
 description: Créer des comparaisons relatives de régions à l’aide des cartes de formes dans Power BI Desktop
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amanda
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
-ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
+ms.openlocfilehash: 800f7d3cd7f930f2c3411c21e94cadb7cda94c8c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72164081"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871115"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Cartes de formes dans Power BI Desktop (version préliminaire)
 
@@ -61,7 +60,7 @@ Procédez comme suit pour créer un élément visuel **Carte de formes** :
 3. Vous pouvez ensuite modifier la carte en utilisant les options de mise en forme comme **Couleur par défaut**, **Zoom**, etc. Vous pouvez aussi ajouter une colonne de données de catégorie pour le compartiment **Légende** et classer les régions de la carte en fonction de catégories.
 
 ## <a name="use-custom-maps"></a>Utiliser des cartes personnalisées
-Vous pouvez utiliser des cartes personnalisées avec **Carte de formes** tant qu’elles sont au format **TopoJSON**. Si votre carte est dans un autre format, vous pouvez utiliser les outils en ligne tels que le [**Modélisateur de carte**](http://mapshaper.org/) pour convertir vos cartes *shapefiles* ou *GeoJSON* au format **TopoJSON**.
+Vous pouvez utiliser des cartes personnalisées avec **Carte de formes** tant qu’elles sont au format **TopoJSON**. Si votre carte est dans un autre format, vous pouvez utiliser les outils en ligne tels que le [**Modélisateur de carte**](https://mapshaper.org/) pour convertir vos cartes *shapefiles* ou *GeoJSON* au format **TopoJSON**.
 
 Pour utiliser votre fichier de carte **TopoJSON**, ajoutez un élément visuel ShapeMap à votre rapport et ajoutez des données aux compartiments *Emplacement* et *Saturation des couleurs*. Ensuite, dans le volet **Visualisations** avec la section **Format** sélectionnée (indiquée par (1) dans l’image suivante), développez la section **Forme** et sélectionnez **+ Ajouter une carte**.
 
@@ -82,7 +81,7 @@ Vous pouvez faire des choses intéressantes avec les cartes des états individue
 
 Si vous voulez faire des essais avec ce jeu de données et cette visualisation, vous pouvez télécharger le fichier PBIX d’origine qui a été utilisé pour générer ce rapport via le lien suivant.
 
-* [Fichier .PBIX de démonstration de carte de formes personnalisée](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+* [Fichier .PBIX de démonstration de carte de formes personnalisée](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## <a name="getting-map-data"></a>Obtenir des données de carte
 Pour obtenir rapidement des données dans un modèle afin de tester l’élément visuel **Carte de formes**, copiez une des tables situées à la fin de cet article, puis sélectionnez **Entrer des données** dans le ruban **Accueil**.
@@ -108,7 +107,7 @@ Cette version préliminaire de l’élément visuel **Carte de formes** est asso
 * L’élément visuel **Carte de formes** est en version préliminaire et doit être activé dans Power BI Desktop. Pour activer l’élément visuel **Carte de formes**, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en version préliminaire**, puis cochez la case **Visuel Carte de formes**.
 * Actuellement, le compartiment **Saturation des couleurs** doit également être défini pour que la classification **Légende** puisse fonctionner correctement.
 * L’interface utilisateur de la version commerciale finale de l’élément visuel **Carte de formes** indiquera les codes cartographiques de la carte actuellement sélectionnée (il n’existe aucune date définie pour la version finale, et **Carte de formes** est encore en préversion). Dans cette préversion, vous pouvez référencer les codes cartographiques de région des tables que vous trouverez dans la section **Codes de région** de cet article.
-* Le visuel **Carte de formes** pourra tracer au maximum 1 000 points de données.
+* Le visuel **Carte de formes** peut tracer au maximum 1 500 points de données.
 
 ## <a name="region-keys"></a>Codes de région
 

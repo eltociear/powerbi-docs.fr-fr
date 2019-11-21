@@ -2,19 +2,18 @@
 title: Publier une application dans Power BI
 description: Découvrez comment publier les nouvelles applications, qui sont des collections de tableaux de bord et de rapports avec navigation intégrée.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020220"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853644"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publier une application dans Power BI
 
@@ -115,7 +114,7 @@ Vous pouvez personnaliser davantage la navigation dans l’application en effect
 * Renommage des éléments dans les **Détails du rapport** , les **Détails du tableau de bord** et les **Détails du classeur**.
 * Masquage des certains éléments dans le volet de navigation.
 * Utilisation de l’option **Nouveau** pour ajouter des **sections** afin de regrouper du contenu associé.
-* Utilisation de l’option **Nouveau** pour ajouter un **lien** vers une ressource externe au volet de navigation gauche. 
+* Utilisation de l’option **Nouveau** pour ajouter un **lien** vers une ressource externe au volet de navigation. 
 
 Quand vous ajoutez un **lien**, dans **Détails du lien**, vous pouvez choisir l’emplacement d’ouverture du lien. Par défaut, les liens s’ouvrent sous l’**Onglet actif**, mais vous pouvez sélectionner **Nouvel onglet** ou **Zone de contenu**. 
 
@@ -187,7 +186,7 @@ Cette action désinstalle l’application pour toutes les personnes pour lesquel
 
 ## <a name="view-your-published-app"></a>Afficher votre application publiée
 
-Quand les consommateurs de votre application ouvrent cette dernière, ils voient la navigation que vous avez créée, au lieu du volet de navigation de gauche standard de Power BI. La navigation dans l’application liste les rapports et les tableaux de bord dans les sections que vous avez définies. Elle liste également les pages individuelles de chaque rapport, plutôt que simplement le nom du rapport.
+Quand les consommateurs de votre application ouvrent cette dernière, ils voient la navigation que vous avez créée au lieu du volet de navigation standard de Power BI. La navigation dans l’application liste les rapports et les tableaux de bord dans les sections que vous avez définies. Elle liste également les pages individuelles de chaque rapport, plutôt que simplement le nom du rapport.
 
 ![Application avec navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
@@ -203,4 +202,4 @@ Voici quelques éléments à garder à l’esprit lors de la publication d’app
 * [Installer et utiliser des applications dans Power BI](consumer/end-user-apps.md)
 * [Applications Power BI pour des services externes](service-connect-to-services.md)
 * [Portail d’administration Power BI](https://docs.microsoft.com/power-bi/service-admin-portal)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

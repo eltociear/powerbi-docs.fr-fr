@@ -2,7 +2,6 @@
 title: 'Tutoriel : Créer ses propres mesures dans Power BI Desktop'
 description: 'Tutoriel : Créer ses propres mesures dans Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ade9c163c017b13b0524c66f67f7a27378dc4b80
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513888"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865935"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Tutoriel : Créer ses propres mesures dans Power BI Desktop
 Vous pouvez créer certaines solutions d’analyse de données parmi les plus puissantes dans Power BI Desktop à l’aide de mesures. Les mesures vous aident en effectuant des calculs sur vos données quand vous interagissez avec vos rapports. Ce didacticiel vous aidera à comprendre les mesures et à créer vos propres mesures élémentaires dans Power BI Desktop.
@@ -23,7 +22,7 @@ Vous pouvez créer certaines solutions d’analyse de données parmi les plus pu
 ### <a name="prerequisites"></a>Conditions préalables
 - Ce didacticiel s’adresse aux utilisateurs de Power BI déjà familiarisés avec l’utilisation de Power BI Desktop pour créer des modèles plus avancés. Vous devez déjà bien connaître l’utilisation de la fonctionnalité Obtenir des données et de l’Éditeur de requête pour importer des données, l’utilisation de plusieurs tables connexes et l’ajout de champs dans le Canevas de rapport. Si vous découvrez seulement Power BI Desktop, veillez à consulter [Prise en main de Power BI Desktop](desktop-getting-started.md).
   
-- Téléchargez le fichier [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), qui inclut des données de vente en ligne de la société fictive Contoso, Inc. Ces données ont été importées à partir d’une base de données, donc vous ne pourrez pas vous connecter à la source de données ni l’afficher dans l’éditeur de requête. Extrayez le fichier sur votre ordinateur et ouvrez-le dans Power BI Desktop.
+- Téléchargez le fichier [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), qui inclut des données de vente en ligne de la société fictive Contoso, Inc. Ces données ont été importées à partir d’une base de données, donc vous ne pourrez pas vous connecter à la source de données ni l’afficher dans l’éditeur de requête. Extrayez le fichier sur votre ordinateur et ouvrez-le dans Power BI Desktop.
 
 ## <a name="understand-measures"></a>Comprendre les mesures
 
@@ -60,7 +59,7 @@ Lorsque vous créez vos propres mesures, elles sont ajoutées à la liste Fields
 
 Vous voulez analyser vos ventes nettes en soustrayant les remises les retours des montants des ventes totales. Pour le contexte qui existe dans votre visualisation, vous avez besoin d’une mesure qui soustrait la somme de DiscountAmount et de ReturnAmount de la somme de SalesAmount. Il n’existe aucun champ Net Sales dans la liste Fields (Champs), mais vous disposez des blocs de construction pour créer votre propre mesure afin de calculer les ventes nettes. 
 
-1.  Cliquez avec le bouton droit sur la table **Sales** dans la zone Fields (Champs), ou placez le curseur sur la table et sélectionnez les points de suspension (...) **Plus d’options**, puis sélectionnez **Nouvelle mesure**. Cela garantit l’enregistrement de votre nouvelle mesure dans la table Sales, où elle est plus facile à trouver.
+1.  Cliquez avec le bouton droit sur la table **Sales** dans la zone Champs ou placez le curseur sur la table, sélectionnez **Plus d’options** (...), puis sélectionnez **Nouvelle mesure**. Cela garantit l’enregistrement de votre nouvelle mesure dans la table Sales, où elle est plus facile à trouver.
     
     ![Nouvelle mesure](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     

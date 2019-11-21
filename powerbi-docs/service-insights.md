@@ -2,7 +2,6 @@
 title: Générer automatiquement des insights sur les données avec Power BI
 description: Découvrez comment obtenir des informations sur vos jeux de données et vignettes de tableaux de bord.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
 ms.custom: seodec18
@@ -12,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0492b797d75e29145c14a70d8a8058bad295ef18
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 5f571cabcc413947713cd232863b3ecad910436d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994917"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872244"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Générer automatiquement des insights sur les données avec Power BI
 Vous disposez d’un nouveau jeu de données et vous ne savez pas trop par quoi commencer ?  Vous voulez créer rapidement un tableau de bord ?  Vous souhaitez rechercher des informations que vous auriez manquées ?
@@ -38,7 +37,7 @@ Regardez Amanda exécuter un aperçu rapide sur un jeu de données, ouvrir une i
 
 Maintenant, à vous de jouer. Explorez les insights en vous appuyant sur l’[exemple Analyse de la qualité des fournisseurs](sample-supplier-quality.md).
 
-1. Sous l’onglet **Jeux de données**, sélectionnez les points de suspension (…), puis choisissez **Obtenir des insights rapides**.
+1. Sous l’onglet **Jeux de données**, sélectionnez **Autres options** (...), puis choisissez **Obtenir des insights rapides**.
    
     ![onglet Jeux de données](media/service-insights/power-bi-ellipses.png)
    
@@ -62,7 +61,7 @@ Maintenant, à vous de jouer. Explorez les insights en vous appuyant sur l’[ex
 
 1. Pointez le curseur sur une carte, puis sélectionnez l’icône en forme d’épingle pour ajouter la visualisation à un tableau de bord.
 
-2. Pointez sur une carte, sélectionnez les points de suspension (...), puis choisissez **Voir les insights**. 
+2. Pointez sur une carte, sélectionnez **Autres options** (...), puis choisissez **Voir les insights**. 
 
     L’écran Insight s’ouvre en mode Focus.
    
@@ -86,7 +85,7 @@ Maintenant, à vous de jouer. Explorez les insights en vous appuyant sur l’[ex
 Au lieu de rechercher des insights dans un jeu de données entier, limitez votre recherche pour obtenir des insights avec étendue sur les données ayant servi à créer une vignette de tableau de bord. 
 
 1. Ouvrez un tableau de bord.
-2. Pointez sur une vignette, sélectionnez les points de suspension (...), puis choisissez **Voir les insights**. La vignette s’ouvre en [mode Focus](service-focus-mode.md), qui présente les cartes d’informations à droite.    
+2. Pointez sur une vignette, Sélectionnez **Autres options** (...), puis choisissez **Voir les insights**. La vignette s’ouvre en [mode Focus](service-focus-mode.md), qui présente les cartes d’informations à droite.    
    
     ![Mode focus](media/service-insights/pbi-insights-tile.png)    
 3. Une information suscite votre intérêt ? Sélectionnez la carte d’informations pour en savoir plus. L’information sélectionnée s’affiche à gauche et les nouvelles cartes d’informations, basées uniquement sur les données de cette information, s’affichent à droite.    
@@ -96,5 +95,5 @@ Au lieu de rechercher des insights dans un jeu de données entier, limitez votre
 - Si vous possédez un jeu de données, [optimisez-le pour Quick Insights](service-insights-optimize.md).
 - En savoir plus sur les [types d’insights rapides disponibles](service-insight-types.md).
 
-D’autres questions ? [Posez vos questions à la Communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? [Posez vos questions à la Communauté Power BI](https://community.powerbi.com/).
 

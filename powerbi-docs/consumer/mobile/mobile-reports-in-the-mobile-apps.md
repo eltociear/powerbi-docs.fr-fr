@@ -2,19 +2,18 @@
 title: Explorer des rapports dans les applications mobiles Power BI
 description: Découvrez comment afficher des rapports et interagir avec eux dans les applications mobiles Power BI sur votre téléphone ou tablette. Vous créez des rapports dans le service Power BI ou Power BI Desktop, puis interagissez avec ces rapports dans les applications mobiles.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 166b7d88e6ab55481ec56b0cf4f91628cd141bef
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69985733"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869759"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Explorer des rapports dans les applications mobiles Power BI
 S’applique à :
@@ -45,7 +44,7 @@ Il existe deux icônes pour les rapports dans les applications mobiles Power BI�
 > [!NOTE]
 > Quand vous tenez votre téléphone en mode paysage, vous obtenez toujours la disposition paysage, même si la page de rapport est en mode téléphone.
 
-Pour accéder à un rapport à partir d’un tableau de bord, appuyez sur les points de suspension (...) dans le coin supérieur droit d’une vignette, puis sur **Ouvrir un rapport** :
+Pour accéder à un rapport à partir d’un tableau de bord, appuyez sur **Plus d’options** (...) dans le coin supérieur droit d’une vignette, puis sur **Ouvrir un rapport** :
   
   ![Ouvrir le rapport](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
@@ -59,7 +58,7 @@ Un appui équivaut à un clic de souris. Par conséquent, si vous souhaitez effe
 Si vous appuyez sur une valeur de segment, elle est sélectionnée et le reste du rapport est découpé en fonction de cette valeur.
 Si vous appuyez sur un lien, un bouton ou un signet, l’action définie par l’auteur du rapport se produit.
 
-Vous avez probablement remarqué que, si vous appuyez sur un visuel, une bordure apparaît. Dans le coin supérieur droit de la bordure, vous verrez des points de suspension (...). Si vous appuyez sur les points de suspension, vous verrez un menu d’actions que vous pouvez effectuer sur ce visuel :
+Vous avez probablement remarqué que, si vous appuyez sur un visuel, une bordure apparaît. Dans le coin supérieur droit de la bordure, vous verrez **Plus d’options** (...). Si vous appuyez sur les points de suspension, vous verrez un menu d’actions que vous pouvez effectuer sur ce visuel :
 
 ![Visuel et menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -92,7 +91,7 @@ Pour plus d’informations, découvrez comment [ajouter l’extraction à Power 
    
    
 ### <a name="using-the-actions-in-the-report-footer"></a>Utilisation des actions dans le pied de page du rapport
-À partir du pied de page du rapport, vous pouvez effectuer plusieurs actions dans la page de rapport active ou le rapport entier. Le pied de page offre un accès rapide aux actions les plus couramment utilisées. Vous pouvez accéder à d’autres actions en appuyant sur le bouton avec des points de suspension (...) :
+À partir du pied de page du rapport, vous pouvez effectuer plusieurs actions dans la page de rapport active ou le rapport entier. Le pied de page offre un accès rapide aux actions les plus couramment utilisées. Vous pouvez accéder à d’autres actions en appuyant sur le bouton **Plus d’options** (...) :
 
 ![Pied de page du rapport](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
@@ -105,7 +104,7 @@ Vous pouvez passer d’une page de rapport à une autre, en effectuant un balaya
 - Voir toutes les actions du rapport
 
 #### <a name="all-report-actions"></a>Toutes les actions du rapport
-Lorsque vous appuyez sur le bouton avec des points de suspension (...) dans le pied de page du rapport, vous voyez toutes les actions que vous pouvez effectuer sur un rapport :
+Quand vous appuyez sur le bouton **Plus d’options** (...) dans le pied de page du rapport, vous voyez toutes les actions que vous pouvez effectuer sur un rapport :
 
 
 ![Toutes les actions du rapport](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
@@ -124,5 +123,5 @@ L’option **Annoter et partager** peut être désactivée si une [stratégie de
 ## <a name="next-steps"></a>Étapes suivantes
 * [Visualiser les rapports Power BI optimisés pour les téléphones et interagir avec eux](mobile-apps-view-phone-report.md)
 * [Créer une version de rapport optimisée pour les téléphones](../../desktop-create-phone-report.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

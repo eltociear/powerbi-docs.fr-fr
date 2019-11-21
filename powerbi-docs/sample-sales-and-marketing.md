@@ -2,7 +2,6 @@
 title: 'Exemple Vente et marketing pour Power BI : Visite guidée'
 description: 'Exemple Vente et marketing pour Power BI : Visite guidée'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 31f42d7f53b3322717677d586266668fb2c0f26b
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 8085a6c8f5d0e7a2797ef6c5961b6083eb98f346
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391349"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873816"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Exemple Vente et marketing pour Power BI : Visite guidée
 
@@ -56,11 +55,11 @@ Avant de pouvoir utiliser l’exemple, vous devez le télécharger en tant que [
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Se procurer le fichier .pbix pour cet exemple
 
-Vous pouvez également télécharger l’exemple Vente et marketing en tant que [fichier .pbix](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), qui est conçu pour une utilisation avec Power BI Desktop.
+Vous pouvez également télécharger l’exemple Vente et marketing en tant que [fichier .pbix](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), qui est conçu pour une utilisation avec Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Se procurer le classeur Excel pour cet exemple
 
-Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](http://go.microsoft.com/fwlink/?LinkId=529785). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Si vous souhaitez afficher la source de données de cet exemple, elle est également disponible en tant que [classeur Excel](https://go.microsoft.com/fwlink/?LinkId=529785). Le classeur contient des feuilles Power View que vous pouvez consulter et modifier. Pour afficher les données brutes, activez les compléments Analyse de données, puis sélectionnez **Power Pivot > Gérer**. Pour plus d’informations sur l’activation des compléments Power View et Power Pivot, consultez [Affichage des exemples Excel directement dans Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Que nous révèle ce tableau de bord ?
 Commençons notre tour d’horizon sur le tableau de bord et examinons les vignettes que le directeur marketing a choisi d’épingler. On y trouve des informations sur la part de marché, les ventes et l’opinion. Les données sont ventilées par région, période et concurrence.
@@ -82,7 +81,7 @@ En utilisant le Q&R, vous pouvez découvrir des détails supplémentaires dans l
 
    ![Questions et réponses : Total units by segment for VanArsdel](media/sample-sales-and-marketing/sales2.png)
 3. Sa part dans les catégories **Moderation** et **Convenience** est très importante ; ce sont les segments sur lesquels l’entreprise est compétitive.
-4. Revenez au tableau de bord en sélectionnant **l’exemple Vente et marketing** dans la barre de navigation supérieure.
+4. Revenez au tableau de bord en sélectionnant l’**exemple Vente et marketing** dans le volet de navigation supérieur.
 
 ### <a name="what-does-total-unit-market-share-look-like-for-category-versus-region"></a>Quelle est la part de marché en nombre total d’unités par catégorie (comparée à la région) ?
 1. Notez le titre **Total Units YTD by Manufacturer, Region** (Nombre total d’unités de l’année en cours par fabricant, par région). Qu’est-ce que la part de marché par catégorie ?

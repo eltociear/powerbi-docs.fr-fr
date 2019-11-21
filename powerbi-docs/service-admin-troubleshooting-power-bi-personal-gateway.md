@@ -2,7 +2,6 @@
 title: Résolution des problèmes de la passerelle Power BI (mode personnel)
 description: Résolution des problèmes de la passerelle Power BI (mode personnel)
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 5/06/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 8916d92eef86be601ceb21112209ab7daa736c11
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 32413c8ae860f5c9e376f8be46290047f67231fc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543526"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873375"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Résolution des problèmes de la passerelle Power BI (mode personnel)
 
@@ -128,7 +127,7 @@ Les journaux **Passerelle de gestion des données** et **PowerBIGateway** se sit
 ![Journaux Passerelle de gestion des données et PowerBIGateway](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### <a name="fiddler-trace"></a>Trace Fiddler
-[Fiddler](http://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP. Vous pouvez voir les communications avec le service Power BI à partir de l’ordinateur client. Ces communications peuvent indiquer des erreurs et d’autres informations connexes.
+[Fiddler](https://www.telerik.com/fiddler) est un outil gratuit de Telerik qui surveille le trafic HTTP. Vous pouvez voir les communications avec le service Power BI à partir de l’ordinateur client. Ces communications peuvent indiquer des erreurs et d’autres informations connexes.
 
 ![Trace Fiddler](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
@@ -154,5 +153,5 @@ Vous pouvez aussi accéder à votre dossier temporaire (%temp%) et y rechercher 
 - [Résolution des erreurs de vignette](refresh-troubleshooting-tile-errors.md)  
 - [Résolution des problèmes de passerelle de données locale](service-gateway-onprem-tshoot.md) 
  
-D’autres questions ? Essayez de d’interroger la [Communauté Power BI](http://community.powerbi.com/).
+D’autres questions ? Essayez de d’interroger la [Communauté Power BI](https://community.powerbi.com/).
 
