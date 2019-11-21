@@ -2,7 +2,6 @@
 title: Afficher un tableau de bord Power BI
 description: Les tableaux de bord sont une fonctionnalité clé du service Power BI ; découvrez comment ouvrir et afficher un tableau de bord.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 629db8e4706bfb42f3f1b3ad65b8a57577d7ee21
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: f250d380fc8938f7b5d7723b5b8becb65f27d79d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716387"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852604"
 ---
 # <a name="view-a-dashboard"></a>Afficher un tableau de bord
 
@@ -39,7 +38,7 @@ Power BI Pro est nécessaire pour partager un tableau de bord et afficher un ta
 
 
 
-Vous pouvez trouver des tableaux de bord dans tous les conteneurs de la barre de navigation gauche. 
+Vous pouvez trouver des tableaux de bord dans tous les conteneurs du volet de navigation. 
 
 ![icône de tableau de bord](media/end-user-dashboard-open/power-bi-open-dashboards.gif)
 

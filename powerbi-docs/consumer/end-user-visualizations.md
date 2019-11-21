@@ -2,7 +2,6 @@
 title: Utilisation des visualisations (visuels) en tant que consommateur
 description: Concepts et terminologie de Power BI - visualisations, éléments visuels. Qu’est-ce qu’une visualisation, un élément visuel Power BI.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7f72e53fe9f017f5f12893711858cc9179b883dd
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379976"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860987"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interagir avec les visuels dans les rapports, les tableaux de bord et les applications
 
@@ -52,7 +51,7 @@ Pour la plupart de ces options, votre administrateur ou le *concepteur* peut dé
 |[Demander à Power BI de rechercher pour vous des faits intéressants ou des tendances](end-user-insights.md) dans les données du visuel.  Ces visuels générés automatiquement sont appelés *insights*.     |    oui     |  pour le rapport entier, pas par visuel       | non   |
 |[Afficher un seule visuel à la fois avec le mode *Focus*](end-user-focus.md).     | oui        |   oui      | N/A  |
 |[Rechercher la dernière actualisation du visuel](end-user-fresh.md).     |  oui       |    oui     | N/A  |
-|[Afficher un seul visuel à la fois, sans bordures ni barres de navigation, à l’aide du mode *plein écran* ou *focus*](end-user-focus.md).     |   oui      |  oui       | par défaut  |
+|[Afficher un seul visuel à la fois, sans bordures ni volets de navigation, à l’aide du mode *plein écran* ou *focus*](end-user-focus.md).     |   oui      |  oui       | par défaut  |
 |[Imprimer](end-user-print.md).     |  oui       |   oui      | non  |
 |[Explorer le visuel en ajoutant et en modifiant les filtres du visuel.](end-user-report-filter.md)     |    non     |   oui      | non  |
 |Pointer sur un visuel pour afficher des info-bulles et des détails supplémentaires.     |    oui     |   oui      | oui  |

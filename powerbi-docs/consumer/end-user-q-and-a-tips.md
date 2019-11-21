@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: a6b489c11087e43ed8b10ce9bdf8088b97f48e8d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9fd5375684466eca49582ff9d153fd2533ad7e92
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73862400"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099027"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Conseils pour poser des questions dans le moteur Questions et réponses de Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Mots et terminologie reconnus par Questions et réponses
@@ -64,7 +64,7 @@ La liste ci-dessous utilise le présent, mais tous les temps sont identifiés da
 |  |  |
 |**N premiers**     |     (ordre, classement) : top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next            |
 |        |         |
-|**Types d’éléments visuels**     |  tous les types d’éléments visuels natifs de Power BI.  Si l’option est présente dans le volet visualisations, vous pouvez l’ajouter à votre question.  La seule exception à cette règle concerne les [éléments visuels personnalisés](../power-bi-custom-visuals.md) que vous avez ajoutés manuellement dans le volet de visualisation.  |
+|**Types d’éléments visuels**     |  tous les types d’éléments visuels natifs de Power BI.  Si l’option est présente dans le volet visualisations, vous pouvez l’ajouter à votre question.  La seule exception à cette règle concerne les [éléments visuels personnalisés](../developer/power-bi-custom-visuals.md) que vous avez ajoutés manuellement dans le volet de visualisation.  |
 |  |  Exemple : show districts by month and sales total as bar chart               |
 |        |         |
 |**Relatifs (relation, qualification)**  | when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what                |

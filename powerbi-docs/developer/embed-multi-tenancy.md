@@ -3,18 +3,17 @@ title: Gérer la mutualisation avec l’analytique incorporée Power BI
 description: Concevez une application multi-locataire avec l’analytique incorporée.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 3940f677cadc5844cfac9c32781a5586bde0607a
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 0456e1e56db3e291f359f266b1ac12073fb747da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621292"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864427"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Gérer la mutualisation avec l’analytique incorporée Power BI
 
@@ -37,7 +36,7 @@ Cet article décrit les différentes approches et les analyse en fonction de plu
 
 **Locataire** : client (organisation) qui utilise l’application SaaS et les ressources ou données fournies par le client à l’application SaaS.
 
-**[Power BI](../power-bi-overview.md)** : service cloud Power BI qui sert de plateforme pour Power BI Embedded.
+**[Power BI](../fundamentals/power-bi-overview.md)** : service cloud Power BI qui sert de plateforme pour Power BI Embedded.
 
 **Locataire Power BI** : ensemble de ressources Power BI associées à un locataire AAD.
 
@@ -55,7 +54,7 @@ Cet article décrit les différentes approches et les analyse en fonction de plu
 
 **Capacité** : ensemble de ressources dédiées à l’exécution du service Power BI. Les [capacités Power BI Premium](../service-premium-what-is.md) sont destinées aux entreprises utilisant Power BI en interne, tandis que les [capacités Power BI Embedded](azure-pbie-create-capacity.md) sont conçues pour les développeurs d’applications développant des applications SaaS pour des tiers.
 
-**[Licence Power BI Pro](../service-admin-purchasing-power-bi-pro.md)** : licence basée sur l’utilisateur qui octroie des droits de publication de contenu sur les espaces de travail d’application, de consommation des applications sans la capacité Premium, de partage des tableaux de bord et d’abonnement aux rapports et tableaux de bord.
+**[Licence Power BI Pro](../service-admin-purchasing-power-bi-pro.md)**  : licence basée sur l’utilisateur qui octroie des droits de publication de contenu sur les espaces de travail, de consommation des applications sans la capacité Premium, de partage des tableaux de bord et d’abonnement aux rapports et tableaux de bord.
 
 **[Modes de connectivité de données](../desktop-directquery-about.md)** : connexion de sources de données à Power BI qui peut être effectuée dans différents modes :
 

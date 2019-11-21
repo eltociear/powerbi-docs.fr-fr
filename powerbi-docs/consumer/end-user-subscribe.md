@@ -10,12 +10,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 10/21/2019
 rLocalizationGroup: Common tasks
-ms.openlocfilehash: add49c43e16b2070b054f4228d1faf0075b736f8
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a9339cc9f61a3a191e8783935c9ec38e119894e9
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73861381"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099203"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>S’abonner à un rapport ou un tableau de bord dans le service Power BI 
 
@@ -81,7 +81,7 @@ Un abonnement se termine si la licence Pro expire, si le tableau de bord ou le r
 * Si les liens qui sont fournis dans l’e-mail (et qui mènent au contenu) cessent de fonctionner, il est possible que le contenu ait été supprimé. Dans l’e-mail, sous la capture d’écran, vous pouvez voir si vous vous êtes abonné vous-même ou si quelqu’un d’autre s’est chargé de vous abonner. Si c’est quelqu’un d’autre, demandez-lui d’annuler les e-mails ou de vous réabonner.
 * Les abonnements aux pages de rapports sont liés au nom de la page de rapport. Si vous vous abonnez à une page de rapport et que vous la renommez, vous devez recréer votre abonnement.
 * Si vous ne pouvez pas utiliser la fonctionnalité d’abonnement, contactez votre administrateur système. Votre organisation a peut-être désactivé cette fonctionnalité.  
-* Les abonnements aux courriers ne prennent pas en charge la plupart des [visuels personnalisés](../power-bi-custom-visuals.md).  Sauf s’il s’agit de visuels personnalisés [certifiés](../power-bi-custom-visuals-certified.md).  
+* Les abonnements aux courriers ne prennent pas en charge la plupart des [visuels personnalisés](../developer/power-bi-custom-visuals.md).  Sauf s’il s’agit de visuels personnalisés [certifiés](../developer/power-bi-custom-visuals-certified.md).  
 * Actuellement, les abonnements aux e-mails ne prennent pas en charge les visuels personnalisés alimentés par R.  
 * Pour les abonnements aux tableaux de bord en particulier, certains types de vignettes ne sont pas encore pris en charge.  notamment les vignettes de streaming, vidéo, de contenu web personnalisé.     
 * S’il s’agit d’abonnements à des tableaux de bord ou rapports incluant de très grandes images, l’abonnement peut échouer en raison de la limite de taille de la messagerie.    

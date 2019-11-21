@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 32a93a881a801ec5dd335f167e69a5b76f53d694
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903675"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73764732"
 ---
 # <a name="glossary-for-power-bi-service"></a>Glossaire pour le service Power BI
 Le service Power BI peut introduire une terminologie qui est peu courante ou qui peut induire des confusions. Le glossaire est l’endroit idéal pour rechercher la terminologie : y appliquer un signet peut être une bonne idée. [Concepts de base](end-user-basic-concepts.md) est une autre ressource intéressante pour trouver des informations sur la création des composants qui constituent le service Power BI. « Concepts de base » fournit une présentation générale des *composants* de Power BI et comment ils sont connectés.
@@ -37,10 +37,8 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 **answer card, answer page (carte de réponse, page de réponse)** Voir « carte de réponse Cortana ».
 
-**app, apps (application, applications)**
+**app, apps (application, applications)** 
 
- 
-**app workspace (espace de travail d’application)** Tous les espaces de travail de Power BI, à l’exception de Mon espace de travail, sont désormais des espaces de travail d’application. Le contenu peut être regroupé dans une application Power BI. Ceux qui sont stockés dans une capacité Premium peuvent être partagés avec les utilisateurs gratuits. Les espaces de travail personnels (sous Mon espace de travail) peuvent être hébergés dans une capacité Premium.  
 
 **AppSource** Référentiel en ligne centralisé où vous pouvez parcourir et découvrir des tableaux de bord, rapports, jeux de données et applications à télécharger.
 
@@ -54,7 +52,7 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 **bookmark (signet)** Vue des données capturées dans le volet Signets d’un rapport dans Power BI Desktop ou dans le service Power BI. Dans Desktop, les signets sont enregistrés dans le fichier de rapport .pbix pour le partage sur le service Power BI
   
-**breadcrumbs (barre de navigation)** Élément de navigation en haut à gauche permettant de naviguer rapidement entre les espaces de travail d’application.
+**breadcrumbs (barre de navigation)** Élément de navigation en haut à gauche permettant de naviguer rapidement entre les espaces de travail.
 
 ## <a name="c"></a>C
 
@@ -70,7 +68,7 @@ Ce glossaire a été créé par la communauté.  Vous ne voyez pas ici un mot qu
 
 **connect live (se connecter directement)** Méthode de connexion à des modèles de données SQL Server Analysis Services. Également appelée « connexion directe ».
 
-**container (conteneur)** Les zones de la barre de navigation sont des *conteneurs*. Dans la barre de navigation, vous trouverez des conteneurs pour : Favoris, Récents, Applications, Partagé avec moi et Accueil. 
+**container (conteneur)** Les zones du volet de navigation sont des *conteneurs*. Dans le volet de navigation, vous trouverez des conteneurs pour : Favoris, Récents, Applications, Partagé avec moi et Accueil. 
 
 **content (contenu)** Le contenu pour le service Power BI est généralement composé de tableaux de bord, de rapports et d’applications. Il peut également inclure des classeurs et des jeux de données.
 
@@ -164,12 +162,12 @@ Vous pouvez utiliser « environnement Power BI » (locataire) dans la documentat
 
 ## <a name="l"></a>L
 
-**left navigation (navigation gauche)** Remplacée par la **barre de navigation**, mais peut toujours apparaître dans une documentation.    
+**left navigation (navigation gauche)** Remplacée par le **volet de navigation**, mais peut toujours apparaître dans une documentation.    
 Contrôles le long du bord gauche du service Power BI.
 
-Première occurrence : volet de navigation gauche. Occurrences suivantes : volet de navigation gauche
+Première occurrence : volet de navigation. Occurrences suivantes ou espaces étroits : volet de navigation
 
-**list page (page de liste)** ou **content list (liste de contenu)** Une des pages de section pour les éléments dans le volet de navigation gauche. Par exemple, Favoris, Récents, Mon espace de travail, etc.
+**list page (page de liste)** ou **content list (liste de contenu)** Une des pages de section pour les éléments dans le volet de navigation. Par exemple, Favoris, Récents, Mon espace de travail, etc.
 
 ## <a name="m"></a>M
 
@@ -177,17 +175,17 @@ Première occurrence : volet de navigation gauche. Occurrences suivantes : volet
 
 **modeling (modélisation)** [Power BI Desktop] Obtention des données auxquelles vous êtes connecté, prêtes pour une utilisation dans Power BI. Ceci inclut la création de relations entre des tables dans plusieurs sources de données, la création de mesures et l’affectation de métriques.
 
-**My workspace (Mon espace de travail)** Espace de travail permettant à chaque client Power BI de créer du contenu. S’il veut regrouper des éléments créés ici dans une application et qu’il dispose des autorisations de *concepteur*, il les charge dans l’espace de travail d’application approprié ou il en crée un.
+**My workspace (Mon espace de travail)** Espace de travail permettant à chaque client Power BI de créer du contenu. S’il veut regrouper des éléments créés ici dans une application et qu’il dispose des autorisations de *concepteur*, il les charge dans l’espace de travail approprié ou il en crée un.
 
 ## <a name="n"></a>N
 
 **native (natif)** Inclus avec le produit. Par exemple, Power BI est fourni avec un ensemble de types de visualisation *native (natifs)* . Vous pouvez cependant aussi importer d’autres types, comme des visuels personnalisés.
 
-**navigation bar (barre de navigation)** ou **nav bar** Contrôles le long du bord gauche du service Power BI.
+**nav pane (volet de navigation)** Contrôle le long du bord gauche du service Power BI.
 
-Première occurrence : barre de navigation. Occurrences suivantes : barre de navigation
+Première occurrence : volet de navigation. Occurrences suivantes ou espaces étroits : volet de navigation
 
-**volet de navigation** Voir **barre de navigation**
+**volet de navigation** Voir **volet de navigation**
 
 **notification** Messages envoyés par et au Centre de notifications Power BI.  
 
@@ -222,7 +220,7 @@ Première occurrence : barre de navigation. Occurrences suivantes : barre de nav
 
 **Power BI**, **Power BI service (service Power BI)** , **Power BI Desktop**, **Power BI Mobile** Certaines des offres Power BI. *Power BI* est le terme général. Il est souvent utilisé à la place d’un nom de produit complet, comme *Power BI service (service Power BI)* et *Power BI Mobile*, après la première mention du nom complet du produit.
 
-**Power BI Desktop** Également appelé *Desktop*. L’application Windows gratuite de Power BI est une application gratuite qui s’installe sur un ordinateur local et permet de se connecter à des données, de les transformer et de les visualiser. Utilisée par les administrateurs et les concepteurs de rapports. Pour plus d’informations, consultez [Qu’est-ce que Power BI ?](../power-bi-overview.md).
+**Power BI Desktop** Également appelé *Desktop*. L’application Windows gratuite de Power BI est une application gratuite qui s’installe sur un ordinateur local et permet de se connecter à des données, de les transformer et de les visualiser. Utilisée par les administrateurs et les concepteurs de rapports. Pour plus d’informations, consultez [Qu’est-ce que Power BI ?](../fundamentals/power-bi-overview.md).
 
 **Power BI Embedded** Produit utilisé par les développeurs pour incorporer des tableaux de bord et des rapports Power BI dans leurs propres applications, sites et outils.
 
@@ -232,7 +230,7 @@ Première occurrence : barre de navigation. Occurrences suivantes : barre de nav
 
 **Power BI Report Server** Nouvelle offre personnalisée de SSRS lancée avec Power BI Premium, pour permettre aux organisations de créer des systèmes décisionnels hybrides et distribués (une combinaison de déploiements locaux et cloud). Embedded offre un moyen localisé pour stocker et gérer des rapports Power BI.
 
-**Power BI service (Service Power BI)** Service SaaS (logiciel en tant que service) en ligne. Pour plus d’informations, consultez [Qu’est-ce que Power BI ?](../power-bi-overview.md).
+**Power BI service (Service Power BI)** Service SaaS (logiciel en tant que service) en ligne. Pour plus d’informations, consultez [Qu’est-ce que Power BI ?](../fundamentals/power-bi-overview.md).
 
 **Power BI service connector (connecteur du service Power BI)** Ce connecteur permet aux utilisateurs de Power BI Desktop de se connecter à des jeux de données dans le service Power BI à partir de la version Desktop. Ils peuvent créer un modèle une seule fois, puis le réutiliser dans de nombreux rapports et tableaux de bord.
 
@@ -262,7 +260,7 @@ Ajouté à une URL pour préfiltrer les résultats affichés dans un rapport Pow
 
 **real-time streaming (streaming en temps réel)** Possibilité de diffuser des données en continu et de mettre à jour les tableaux de bord en temps réel à partir de sources comme des capteurs, des médias sociaux, des métriques d’utilisation, et de toute autre source à partir de laquelle des données temporelles peuvent être collectées ou transmises.  
 
-**Recent (Récent)** Conteneur du volet de navigation gauche qui contient tous les artefacts individuels auxquels vous avez accédé dernièrement.
+**Recent (Récent)** Conteneur du volet de navigation qui contient tous les artefacts individuels auxquels vous avez accédé dernièrement.
 
 **related content (contenu associé)** Montre les éléments individuels de contenu qui contribuent au contenu actuel. Par exemple, pour un tableau de bord, vous pouvez voir les rapports et les jeux de données qui fournissent les données et les visualisations présentes sur le tableau de bord.   
 
@@ -290,7 +288,7 @@ Une vue sous plusieurs angles d’un même jeu de données, avec des visualisati
 **share, sharing (partager, partage)** Dans Power BI, « partage » signifie en général le partage direct d’un artefact individuel (un tableau de bord ou un rapport) avec une ou plusieurs personnes via leur adresse e-mail. Nécessite une licence Power BI Pro pour l’expéditeur et le destinataire.
 Sur les appareils mobiles, « partager » peut faire référence à la fonctionnalité de partage native du système d’exploitation, comme « annoter et partager ».  
 
-**Shared with me (Partagé avec moi)** Conteneur du volet de navigation gauche contenant tous les artefacts individuels qui ont été partagés directement par un autre utilisateur Power BI.
+**Shared with me (Partagé avec moi)** Conteneur du volet de navigation contenant tous les artefacts individuels qui ont été partagés directement par un autre utilisateur Power BI.
 
 **snapshot (capture instantanée)**
 
@@ -325,7 +323,7 @@ Les tableaux de bord Power BI contiennent des vignettes de rapport.
 
 **workbook (classeur)** Classeur Excel à utiliser comme source de données. Les classeurs peuvent contenir un modèle de données avec une ou deux tables de données chargées en utilisant des tables liées, Power Query ou Power Pivot.
 
-**workspace (espace de travail)** Conteneur pour des tableaux de bord, des rapports et des jeux de données dans Power BI. Consultez « espace de travail d’application » dans cette collection de termes.
+**workspace (espace de travail)** Conteneur pour des tableaux de bord, des rapports et des jeux de données dans Power BI. Les utilisateurs peuvent collaborer sur le contenu de n’importe quel espace de travail, à l’exception de Mon espace de travail. Le contenu peut être regroupé dans une application Power BI. Ceux qui sont stockés dans une capacité Premium peuvent être partagés avec les utilisateurs gratuits. Les espaces de travail personnels (sous Mon espace de travail) peuvent être hébergés dans une capacité Premium.
 
 ## <a name="x"></a>X
 **x-axis (axe X)**  
