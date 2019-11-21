@@ -3,18 +3,17 @@ title: Publier des visuels Power BI dans AppSource
 description: Découvrez comment vous pouvez publier votre visuel personnalisé dans AppSource pour que d’autres utilisateurs puissent le trouver et l’utiliser.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
-ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 8d320b5fa1387ebf21ecd8c3c1db70b9892154e7
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307659"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128068"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Publier des visuels Power BI dans AppSource
 
@@ -38,10 +37,10 @@ Une fois que vous avez terminé de lire nos [recommandations concernant les visu
 | Exemple de fichier de rapport .pbix |Oui |Pour présenter votre visuel, vous devez en démontrer son utilité aux utilisateurs. Vous devez insister sur la valeur que le visuel apporte à l’utilisateur et donner des exemples d’utilisation, des options de mise en forme, etc. Vous pouvez également ajouter une page de *conseils* à la fin. Dans cette page, donnez quelques conseils et astuces, expliquez ce qu’il faut éviter de faire et donnez d’autres indications.<br>L’exemple de fichier de rapport .pbix doit pouvoir être utilisé hors connexion, sans connexion externe |
 | Icône |Oui |Vous devez inclure le logo du visuel personnalisé qui s’affiche sur la page principale de l’Office Store. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Le format doit faire exactement 300 px (largeur) x 300 px (hauteur). **Important :** Lisez attentivement le [petit guide](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) avant de soumettre l’icône. |
 | Captures d’écran |Oui |Vous devez fournir au moins une capture d’écran. Les formats .png, .jpg, .jpeg et .gif sont disponibles. Le format doit faire exactement 1366 px (largeur) x 768 px (hauteur). La taille de fichier ne peut pas être supérieure à 1 024 Ko. *Pour une utilisation optimale, ajoutez des bulles de texte pour expliquer la proposition de valeur des principales fonctionnalités affichées dans chaque capture d’écran.* |
-| Lien vers le support |Oui |Fournissez l’URL à laquelle les clients peuvent se connecter s’ils rencontrent des problèmes avec votre visuel. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre URL doit inclure https:// ou http://. |
-| Lien vers le document sur la confidentialité |Oui |Indiquez un lien vers la politique de confidentialité pour les clients qui utilisent votre visuel. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre lien doit inclure https:// ou http://. |
+| Lien vers le support |Oui |Fournissez l’URL à laquelle les clients peuvent se connecter s’ils rencontrent des problèmes avec votre visuel. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre URL doit inclure https:// ou https://. |
+| Lien vers le document sur la confidentialité |Oui |Indiquez un lien vers la politique de confidentialité pour les clients qui utilisent votre visuel. Ce lien est entré dans le cadre de votre description du tableau de bord vendeur. Les utilisateurs le voient lorsqu’ils accèdent à la description de votre visuel sur AppSource. Le format de votre lien doit inclure https:// ou https://. |
 | Contrat de Licence Utilisateur Final (CLUF) |Oui |Vous devez charger un fichier CLUF. Il peut s’agir de votre propre fichier CLUF ou du fichier CLUF par défaut de l’Office Store pour les visuels Power BI. Pour utiliser le contrat CLUF par défaut, collez l’URL suivante dans la boîte de dialogue de chargement du fichier « Contrat de licence utilisateur final » du tableau de bord vendeur : [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
-| Lien vers la vidéo |Non |Pour augmenter l’intérêt porté par les utilisateurs à votre visuel personnalisé, nous vous conseillons de fournir un lien vers une vidéo de présentation de votre visuel. Le format de votre URL doit inclure https:// ou http://. |
+| Lien vers la vidéo |Non |Pour augmenter l’intérêt porté par les utilisateurs à votre visuel personnalisé, nous vous conseillons de fournir un lien vers une vidéo de présentation de votre visuel. Le format de votre URL doit inclure https:// ou https://. |
 | Dépôt GitHub |Non |Il est préférable d’avoir un lien valide et public vers un dépôt [GitHub](https://www.github.com) avec les sources de votre visuel et des exemples de données pour permettre aux autres développeurs de fournir des commentaires et de proposer des améliorations pour votre code. |
 
 ## <a name="submitting-to-power-bi"></a>Soumission à Power BI
@@ -143,13 +142,13 @@ Après l’envoi de la soumission, vous pouvez afficher son état dans le [table
 
 ## <a name="certify-your-visual"></a>Certifier votre visuel
 
-Une fois votre visuel créé, vous pouvez éventuellement le faire certifier. Cela signifie qu’il peut s’exécuter dans le service Power BI et être utilisé avec d’autres fonctionnalités du service telles que l’export vers PowerPoint. Pour plus d’informations, consultez la page [*Certification* d’un visuel personnalisé](../power-bi-custom-visuals-certified.md).
+Une fois votre visuel créé, vous pouvez éventuellement le faire certifier. Cela signifie qu’il peut s’exécuter dans le service Power BI et être utilisé avec d’autres fonctionnalités du service telles que l’export vers PowerPoint. Pour plus d’informations, consultez la page [*Certification* d’un visuel personnalisé](../developer/power-bi-custom-visuals-certified.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 [Développement d’un visuel personnalisé Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualisations dans Power BI](../visuals/power-bi-report-visualizations.md)  
-[Visualisations personnalisées dans Power BI](../power-bi-custom-visuals.md)  
-[*Certification* d’un visuel personnalisé](../power-bi-custom-visuals-certified.md)
+[Visualisations personnalisées dans Power BI](../developer/power-bi-custom-visuals.md)  
+[*Certification* d’un visuel personnalisé](../developer/power-bi-custom-visuals-certified.md)
 
-D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

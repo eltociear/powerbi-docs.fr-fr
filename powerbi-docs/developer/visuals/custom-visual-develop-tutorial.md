@@ -3,18 +3,17 @@ title: Développement d’un visuel Power BI
 description: Un tutoriel sur la façon de développer un visuel personnalisé Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
+ms.subservice: powerbi-custom-visuals
 ms.date: 03/15/2019
-ms.openlocfilehash: 1aa269bc738b873ac36498e2ecf52f2cf06c209d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 5bf3fee0f3df7b5be04b99e16a8a4043e8fcf30e
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72308694"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128012"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Tutoriel : Développement d’un visuel Power BI
 
@@ -238,7 +237,7 @@ Dans cette section, nous allons tester le visuel personnalisé CircleCard en té
 
     ![Obtenir des données](media/custom-visual-develop-tutorial/get-data.png) ![Fichier local](media/custom-visual-develop-tutorial/local-file.png)
 
-    Pour afficher le rapport, sélectionnez à présent **US_Sales_Analysis** dans la section **Rapport** du volet de navigation gauche.
+    Pour voir le rapport, sélectionnez à présent **US_Sales_Analysis** dans la section **Rapport** du volet de navigation de gauche.
 
     ![Exemple de bureau Visual personnalisé](media/custom-visual-develop-tutorial/custom-visual-sample.png)
 

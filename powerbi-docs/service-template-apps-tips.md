@@ -2,19 +2,18 @@
 title: Conseils pour créer des applications modèles dans Power BI
 description: Conseils sur la création de requêtes, de modèles de données, de rapports et de tableaux de bord pour concevoir des applications modèles de qualité
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: fae3af81540e22b961fcb1d2a79de425fdc1cd8c
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 04b50882c28bf561e628e9f02dff6c147233d260
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194789"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099755"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Conseils pour créer des applications modèles dans Power BI
 
@@ -132,7 +131,7 @@ Les applications modèles prennent uniquement en charge les exemples de données
 * Respectez bien les instructions données dans la documentation sous [Offre d’application Power BI](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
 * Si votre application comprend un tableau de bord, assurez-vous qu’il n’est pas vide.
 * Installez l’application à l’aide du lien fourni avant de l’envoyer, assurez-vous que vous pouvez connecter le jeu de données et que l’expérience de l’application est celle prévue.
-* Avant de charger bpix dans l’espace de travail de l’application modèle, veillez à décharger toutes les connexions inutiles.
+* Avant de charger bpix dans l’espace de travail modèle, veillez à décharger toutes les connexions inutiles.
 * Respectez les [Meilleures pratiques en matière de conception de visuels et de rapports](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) de Power BI pour avoir un impact maximal sur vos utilisateurs et obtenir l’approbation pour la distribution.
 <!--- * In general, only application with valuable functionality can be approved for general use on AppSource. Application with sample data content only must have either a guidance or statistical value.) -->
 
@@ -142,12 +141,12 @@ Les applications modèles prennent uniquement en charge les exemples de données
 |---------|---------|
 |Contenu :  Jeux de données   | Un seul et unique jeu de données doit être présent. Seuls les jeux de données créés dans Power BI Desktop (fichiers .pbix) sont autorisés. <br>Non pris en charge : jeux de données issus d’autres applications modèles, jeux de données de plusieurs espaces de travail, rapports paginés (fichiers .rdl), classeurs Excel |
 |Contenu : Tableaux de bord | Les vignettes en temps réel ne sont pas autorisées (en d’autres termes, pas de prise en charge de la transmission de type push ou de la diffusion en continu de jeux de données) |
-|Contenu : Flux de données | Non pris en charge : Flux de données |
+|Contenu : Dataflows | Non pris en charge : Dataflows |
 |Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |
 | Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <li> DirectQuery</li><li>Connexions actives (sans Azure AS)</li> <li>Sources de données locales (pas de prise en charge des passerelles personnelles et d’entreprise)</li> <li>Vignettes en temps réel (pas de prise en charge de la transmission de type push de jeux de données)</li> <li>Modèles composites</li></ul> |
 | Jeu de données : entre plusieurs espaces de travail | Les jeux de données entre plusieurs espaces de travail sont autorisés  |
 | Paramètres de requête | Non pris en charge : paramètres de type « Any » ou « Binary », opération d’actualisation des types en bloc pour le jeu de données |
-| Visuels personnalisés | Seuls les visuels personnalisés disponibles publiquement sont pris en charge. Les [visuels personnalisés organisationnels](power-bi-custom-visuals-organization.md) ne sont pas pris en charge |
+| Visuels personnalisés | Seuls les visuels personnalisés disponibles publiquement sont pris en charge. Les [visuels personnalisés organisationnels](developer/power-bi-custom-visuals-organization.md) ne sont pas pris en charge |
 
 ## <a name="next-steps"></a>Étapes suivantes
 

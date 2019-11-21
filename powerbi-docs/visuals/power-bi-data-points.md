@@ -2,20 +2,19 @@
 title: Jeux de données volumineux, limites de point de données et stratégies de données
 description: Limites des données pour les visuels et stratégies de réduction des données
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 11/07/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1ae0fc339d3837c8fc28cc604b3ddb840807dcd5
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61276419"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74011297"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Limites et stratégies par type de visuel du point de données
 
@@ -64,7 +63,7 @@ Consultez [Fonctionnement de l’échantillonnage de ligne](../desktop-high-dens
 - En mode par catégorie
     - Catégories : Virtualisation à l’aide d’une fenêtre de 500 lignes à la fois
     - Séries : 60 premières
-    - En mode scalaire (qui peut utiliser les limites dynamiques)
+    - En mode scalaire (possibilité d’utiliser les limites dynamiques)
         - Points max. : 10 000
         - Catégories : Exemple de 500 valeurs
         - Séries : 20 premières valeurs
@@ -113,8 +112,8 @@ Selon la configuration, une carte peut avoir :
 - Latitude, longitude : consultez [Nuages de points à haute densité](desktop-high-density-scatter-charts.md)
 - Latitude, longitude, taille : 3 500 premiers
 - Légende, latitude, longitude : consultez [Nuages de points à haute densité](desktop-high-density-scatter-charts.md)
-- Légende, latitude, longitude, taille : 233 premières légendes, 15 premières latitudes et longitudes (possibilité d’utiliser les statistiques ou les limites dynamiques)
-- Emplacement, légende, latitude, longitude en tant qu’agrégats (+/- taille) : 233 premiers emplacements, 15 premières légendes (possibilité d’utiliser les statistiques ou les limites dynamiques)
+- Légende, latitude, longitude, taille : 233 premières légendes, 15 premières latitudes et longitudes (possibilité d’utiliser les statistiques ou les limites dynamiques)
+- Emplacement, légende, latitude et longitude en tant qu’agrégats (+/- taille) : 233 premiers emplacements, 15 premières légendes (possibilité d’utiliser les statistiques ou les limites dynamiques)
 
 ### <a name="matrix"></a>Matrice
 - Lignes : Virtualisation à l’aide d’une fenêtre de 500 lignes à la fois
@@ -142,21 +141,20 @@ Limite de 150 000 lignes. Si plus de 150 000 lignes sont sélectionnées, seules
 - En mode par catégorie
     - Catégories : Virtualisation (fenêtrage de données) à l’aide d’une fenêtre de 500 lignes à la fois
     - Séries : 60 premières
-    - En mode scalaire (qui peut utiliser les limites dynamiques)
+    - En mode scalaire (possibilité d’utiliser les limites dynamiques)
         - Points max. : 10 000
         - Catégories : Exemple de 500 valeurs
         - Séries : 20 premières valeurs
 
-### <a name="shape-map"></a>Carte de formes
-La carte choroplèthe peut utiliser les statistiques ou les limites dynamiques. 
-- Points max. : 10 000
+### <a name="shape-map-preview"></a>Carte de formes (préversion)
+La carte de formes peut utiliser les statistiques ou les limites dynamiques. 
+- Points max. : 1,500
 - Catégories : 500 premiers
-- Séries (lorsque X et Y sont présents) : 20 premiers
 
 ### <a name="table"></a>Table
 - Valeurs : Virtualisation (fenêtrage de données) à l’aide d’une fenêtre de 500 lignes à la fois
 
-### <a name="tree-map-this-could-use-statistics-or-dynamic-limits"></a>Arborescence (possibilité d’utiliser les statistiques ou les limites dynamiques)
+### <a name="tree-map-could-use-statistics-or-dynamic-limits"></a>Arborescence (possibilité d’utiliser les statistiques ou les limites dynamiques)
 - Points max. : 3,500
 - Groupe : 500 premiers
 - Détails : 20 premiers
