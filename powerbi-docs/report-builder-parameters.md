@@ -3,18 +3,18 @@ title: Paramètres de rapport dans le Générateur de rapports Power BI
 description: Cette rubrique décrit les utilisations courantes des paramètres de rapport du Générateur de rapports paginés Power BI, les propriétés que vous pouvez définir et plus encore.
 ms.service: powerbi
 ms.subservice: report-builder
-ms.custom: ''
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: ''
+ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: 21fe08c2cba004a6aff77eae12303d0181ab56ec
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: d31036676a5960f7f6eb0f346c2c02ab979ff9bc
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840530"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128425"
 ---
 # <a name="report-parameters-in-power-bi-report-builder"></a>Paramètres de rapport dans le Générateur de rapports Power BI
 
@@ -65,7 +65,7 @@ Vous pouvez créer des paramètres de rapport de différentes manières.
   
  Ajoutez une requête de jeu de données qui contient des variables, ou une procédure stockée de jeu de données qui contient des paramètres d’entrée. Un paramètre de jeu de données est créé pour chaque variable ou paramètre d’entrée, tandis qu’un paramètre de rapport est créé pour chaque paramètre de jeu de données.  
   
-![Propriétés du jeu de données dans les paramètres du Générateur de rapports](media/report-builder-parameters/report-builder-parameter-dataset.png "Propriétés du jeu de données dans les paramètres du Générateur de rapports")
+![Propriétés du jeu de données du Générateur de rapports](media/report-builder-parameters/report-builder-parameter-dataset.png "Propriétés du jeu de données du Générateur de rapports")
 
   
  Cette image du Générateur de rapports montre :  
@@ -111,7 +111,7 @@ Créez un paramètre manuellement à partir du volet Données de rapport. Vous p
 |Autoriser plusieurs valeurs|Fournissez les valeurs disponibles pour créer une liste déroulante dans laquelle vos utilisateurs peuvent choisir. C’est un bon moyen de vous assurer que seules les valeurs valides sont soumises dans la requête de jeu de données.<br /><br /> Sélectionnez cette option si la valeur du paramètre peut être plusieurs valeurs affichées dans une liste déroulante. Les valeurs null ne sont pas autorisées. Lorsque cette option est sélectionnée, les cases à cocher sont ajoutées à la liste des valeurs disponibles dans une liste déroulante de paramètres. En haut de la liste se trouve une case à cocher pour **Tout sélectionner**. Les utilisateurs peuvent cocher les valeurs qu’ils souhaitent.<br /><br /> Si les données qui fournissent les valeurs changent rapidement, la liste que voit l’utilisateur risque de ne pas être la plus récente.|  
 |Visible|Sélectionnez cette option pour afficher le paramètre de rapport en haut du rapport quand celui-ci est exécuté. Cette option permet aux utilisateurs de sélectionner des valeurs de paramètre lors de l’exécution.|  
 |Masqué|Sélectionnez cette option pour masquer le paramètre de rapport dans le rapport publié. Les valeurs de paramètre de rapport peuvent quand même être définies sur une URL de rapport, dans une définition d’abonnement ou sur le serveur de rapports.|  
-|Interne|Sélectionnez cette option pour masquer le paramètre de rapport. Dans le rapport publié, le paramètre de rapport peut uniquement s’afficher dans la définition de rapport.|  
+|Internal|Sélectionnez cette option pour masquer le paramètre de rapport. Dans le rapport publié, le paramètre de rapport peut uniquement s’afficher dans la définition de rapport.|  
 |Valeurs disponibles|Si vous avez spécifié des valeurs disponibles pour un paramètre, les valeurs valides apparaissent toujours sous forme de liste déroulante. Par exemple, si vous fournissez les valeurs disponibles pour un paramètre **DateTime**, une liste déroulante de dates s’affiche dans le volet de paramètres au lieu d’un calendrier.<br /><br /> Pour vous assurer qu’une liste de valeurs est cohérente dans un rapport et ses sous-rapports, vous pouvez définir une option dans la source de données afin d’utiliser une seule transaction pour toutes les requêtes des jeux de données qui sont associés à une source de données.<br /><br /> **Note de sécurité** Dans un rapport qui contient un paramètre de type de données **Text**, veillez à utiliser une liste de valeurs disponibles (également appelée liste de valeurs valides) et vérifiez que l’utilisateur qui exécute le rapport dispose uniquement des autorisations nécessaires pour voir les données dans le rapport.|  
 |Valeurs par défaut|Définissez les valeurs par défaut à partir d’une requête ou d’une liste statique.<br /><br /> Quand chaque paramètre a une valeur par défaut, le rapport s’exécute automatiquement au premier affichage.|  
 |Avancé|Définissez l’attribut de définition de rapport **UsedInQuery**, valeur qui indique si ce paramètre affecte directement ou indirectement les données d’un rapport.<br /><br /> **Déterminer automatiquement le moment de l’actualisation**<br /> Choisissez cette option lorsque vous souhaitez que le processeur de rapports détermine un paramètre pour cette valeur. La valeur est **True** si le processeur de rapports détecte une requête de jeu de données avec une référence directe ou indirecte à ce paramètre, ou si le rapport présente des sous-rapports.<br /><br /> **Toujours actualiser**<br /> Choisissez cette option quand le paramètre de rapport est utilisé directement ou indirectement dans une requête de jeu de données ou une expression de paramètre. Cette option définit **UsedInQuery** sur True.<br /><br /> **Ne jamais actualiser**<br /> Choisissez cette option quand le paramètre de rapport n’est pas utilisé directement ou indirectement dans une requête de jeu de données ou une expression de paramètre. Cette option définit **UsedInQuery** sur False.<br /><br /> **Attention** Utilisez **Ne jamais actualiser** avec précaution. Sur le serveur de rapports, **UsedInQuery** est utilisé pour permettre de contrôler les options de cache pour les données de rapport et les rapports rendus, ainsi que les options de paramètre pour les rapports d’instantané. Si vous ne définissez pas **Ne jamais actualiser** correctement, vous pouvez entraîner la mise en cache de rapports ou de données de rapport incorrects, ou la présence de données incohérentes dans les rapports d’instantané. |  

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 2fd0a3d878641264e84a14579901a9685b0f6e8b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 52beebb839907a6b4141cec089184fcb693fe817
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875110"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010683"
 ---
 # <a name="power-bi-performance-best-practices"></a>Bonnes pratiques relatives aux performances de Power BI
 
@@ -152,8 +152,6 @@ La passerelle de données locale est un excellent outil pour connecter le servic
 La latence du réseau peut affecter les performances du rapport en augmentant le temps nécessaire aux demandes pour atteindre le service Power BI et aux réponses pour être envoyées. Les clients dans Power BI sont affectés à une région spécifique. Pour connaître la région « accueil » de votre client, accédez à powerbi.com et sélectionnez **?** dans l’angle supérieur droit, puis **À propos de Power BI**. Lorsque les utilisateurs d’un client accèdent au service Power BI, leurs requêtes sont acheminées vers cette région. Lorsque les requêtes atteignent le service Power BI, celui-ci peut ensuite envoyer des requêtes supplémentaires (par exemple, à la source de données sous-jacente ou à la passerelle) qui sont également soumises à la latence du réseau.
 
 Des outils tels que [Azure Speed Test](https://azurespeedtest.azurewebsites.net/) donnent une indication de la latence du réseau entre le client et la région Azure. De manière générale, pour minimiser l’impact de la latence du réseau, essayez de rapprocher le plus possible les sources de données, les passerelles et votre cluster Power BI. Si la latence du réseau pose problème, essayez de rapprocher les passerelles et les sources de données de votre cluster Power BI en les plaçant sur des machines virtuelles.
-
-Pour améliorer la latence du réseau, envisagez d’utiliser [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), qui est capable de créer des connexions réseau plus rapides et plus fiables entre vos clients et les centres de données Azure.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
