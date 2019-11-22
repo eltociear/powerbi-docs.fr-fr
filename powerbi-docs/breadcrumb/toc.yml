@@ -9,14 +9,14 @@
         - name: Consommateurs
           tocHref: /power-bi/consumer/
           topicHref: /power-bi/consumer/power-bi-consumer-landing
-        - name: Développeur
+        - name: Développeurs
           tocHref: /power-bi/developer/
           topicHref: /power-bi/developer/index
           items:
             - name: "Utiliser des visuels Power\_BI basés sur R dans Power\_BI"
-              tocHref: /power-bi/desktop-r-powered-custom-visuals/
-              topicHref: /power-bi/developer/index
-        - name: Apprentissage guidé
+              tocHref: /power-bi/developer/
+              topicHref: /power-bi/desktop-r-powered-custom-visuals/
+        - name: Formation guidée
           tocHref: /power-bi/guided-learning/
           topicHref: /power-bi/guided-learning/
         - name: Report Server
