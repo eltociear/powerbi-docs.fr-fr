@@ -115,7 +115,7 @@
           href: desktop-show-items-no-data.md
         - name: Date/heure automatique dans Power BI Desktop
           href: desktop-auto-date-time.md
-        - name: Se connecter aux données
+        - name: Connectez-vous à vos données
           items:
             - name: "Sources de données dans Power\_BI\_Desktop"
               href: desktop-data-sources.md
@@ -183,11 +183,11 @@
               href: desktop-analysis-services-tabular-data.md
             - name: "Utilisation de DirectQuery dans Power\_BI\_Desktop"
               href: desktop-use-directquery.md
-            - name: "DirectQuery et SAP\_Business\_Warehouse (BW)"
+            - name: DirectQuery et SAP Business Warehouse (BW)
               href: desktop-directquery-sap-bw.md
             - name: DirectQuery et SAP HANA
               href: desktop-directquery-sap-hana.md
-            - name: "Paramètre Intégrité référentielle supposée dans Power\_BI Desktop"
+            - name: "Paramètre d’intégrité référentielle supposée dans Power\_BI\_Desktop"
               href: desktop-assume-referential-integrity.md
             - name: "Utilisation du connecteur SAP BW dans Power\_BI\_Desktop"
               href: desktop-sap-bw-connector.md
@@ -205,7 +205,7 @@
               href: desktop-combine-binaries.md
             - name: "Utiliser Insights IA dans Power\_BI\_Desktop (préversion)"
               href: desktop-ai-insights.md
-        - name: Modéliser vos données
+        - name: Modélisez vos données
           items:
             - name: "Catégorisation des données dans Power\_BI\_Desktop"
               href: desktop-data-categorization.md
@@ -233,7 +233,7 @@
               href: desktop-tooltips.md
             - name: Exporter au format PDF et imprimer des rapports
               href: desktop-export-to-pdf.md
-            - name: Volet Analyse de Power BI Desktop
+            - name: "Volet d’analyse dans Power\_Bi Desktop"
               href: desktop-analytics-pane.md
             - name: Utiliser des insights pour expliquer les hausses et les baisses
               href: desktop-insights.md
@@ -359,7 +359,7 @@
               href: visuals/desktop-matrix-visual.md
             - name: Visuel de Questions et réponses
               href: visuals/power-bi-visualization-q-and-a.md
-            - name: "Créer des analyses et des visualisations avancées à l’aide de scripts\_R dans Power\_BI"
+            - name: "Créer des analyses et des visualisations avancées grâce aux scripts R dans Power\_BI"
               href: visuals/service-r-visuals.md
             - name: "Graphiques en jauge radiale dans Power\_BI"
               href: visuals/power-bi-visualization-radial-gauge-charts.md
@@ -369,7 +369,7 @@
               href: visuals/power-bi-visualization-scatter.md
             - name: Graphiques en nuages de points haute densité
               href: visuals/desktop-high-density-scatter-charts.md
-            - name: "Utiliser des cartes de formes dans Power\_BI\_Desktop (version préliminaire)"
+            - name: "Utiliser Shape\_Maps dans Power\_BI\_Desktop (Version d’évaluation)"
               href: visuals/desktop-shape-map.md
             - name: "Segments dans Power\_BI"
               href: visuals/power-bi-visualization-slicers.md
@@ -407,6 +407,8 @@
       items:
         - name: "Types de données dans Power\_BI\_Desktop"
           href: desktop-data-types.md
+        - name: "Sources de données Power\_BI"
+          href: power-bi-data-sources.md
         - name: Utiliser le ruban mis à jour dans Power BI Desktop (préversion)
           href: desktop-ribbon.md
         - name: Raccourcis de l’éditeur de formule pour Power BI Desktop
@@ -443,7 +445,7 @@
   items:
     - name: Vue d’ensemble
       items:
-        - name: "Qu’est-ce que Power\_BI\_?"
+        - name: Qu’est-ce que Power BI ?
           href: fundamentals/power-bi-overview.md
         - name: "Qu’est-ce que le service Power BI\_?"
           href: power-bi-service-overview.md
@@ -517,7 +519,7 @@
               href: service-power-bi-get-started-third-party-apps.md
     - name: Guides pratiques
       items:
-        - name: Obtenir des données de fichiers
+        - name: Obtenez des données de fichiers
           items:
             - name: Obtention de données à partir de fichiers
               href: service-get-data-from-files.md
@@ -603,7 +605,7 @@
               href: service-dashboard-pin-tile-from-q-and-a.md
             - name: Épingler une page de rapport entière à un tableau de bord
               href: service-dashboard-pin-live-tile-from-report.md
-            - name: Alertes de données dans le service Power BI
+            - name: "Alertes de données dans le service Power\_BI"
               href: service-set-data-alerts.md
             - name: 'Ajouter une image, une zone de texte, une vidéo ou du code à un tableau de bord'
               href: service-dashboard-add-widget.md
@@ -615,7 +617,7 @@
               href: service-create-dashboard-mobile-phone-view.md
             - name: Créer un code QR pour une vignette
               href: service-create-qr-code-for-tile.md
-            - name: Classification des données des tableaux de bord
+            - name: Classement des données du tableau de bord
               href: service-data-classification.md
             - name: Thèmes du tableau de bord
               href: service-dashboard-themes.md
@@ -663,7 +665,7 @@
               href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
             - name: Utiliser Questions et réponses avec des connexions actives
               href: service-q-and-a-direct-query.md
-            - name: "Informations rapides dans Power\_BI"
+            - name: "Aperçus rapides dans Power\_BI."
               href: service-insights.md
             - name: Optimiser les données pour Quick Insights
               href: service-insights-optimize.md
@@ -701,7 +703,7 @@
               href: service-publish-to-web.md
             - name: Partager un tableau de bord lié à un classeur Excel sur OneDrive
               href: service-share-dashboard-that-links-to-excel-onedrive.md
-            - name: "Power\_BI Publisher pour Excel"
+            - name: "Éditeur Power\_BI pour Excel"
               href: publisher-for-excel.md
         - name: Préparation des données en libre-service
           items:
@@ -793,7 +795,7 @@
               href: refresh-troubleshooting-tile-errors.md
             - name: Résoudre les problèmes de la fonctionnalité Analyser dans Excel
               href: desktop-troubleshooting-analyze-in-excel.md
-            - name: "Erreur\_: Impossible de trouver des données dans votre classeur Excel"
+            - name: "Erreur\_: Impossible de trouver des données dans ce classeur Excel"
               href: service-admin-troubleshoot-excel-workbook-data.md
             - name: Comment actualiser vos identifiants du pack de contenu Xerox si l’actualisation a échoué
               href: service-refresh-xero-credentials.md
@@ -821,7 +823,7 @@
                   href: service-connect-to-office365mon.md
                 - name: Project Online
                   href: service-connect-to-project-online.md
-                - name: QuickBooks Online
+                - name: QuickBooks en ligne
                   href: service-connect-to-quickbooks-online.md
                 - name: Salesforce
                   href: service-connect-to-salesforce.md
