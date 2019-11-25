@@ -1,29 +1,28 @@
 ---
-title: Modifier les variables SAP dans le service Power BI (préversion)
+title: Modifier des variables SAP dans le service Power BI
 description: Azure et Power BI
 author: Sujata994
 ms.author: sunaraya
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 11/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: db1d4a8a9734c910514b4952b664bf7ebce324c1
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: cec8d598713000ec1d2b5a1fb72ebaa7d8932faf
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654872"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74010886"
 ---
-# <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>Modifier les variables SAP dans le service Power BI (préversion)
+# <a name="edit-sap-variables-in-the-power-bi-service"></a>Modifier des variables SAP dans le service Power BI
 
-Quand SAP Business Warehouse ou SAP HANA est utilisé avec DirectQuery, les auteurs de rapports peuvent désormais autoriser les utilisateurs finaux à modifier les variables SAP dans le **service Power BI** pour les espaces de travail Premium.
+Quand SAP Business Warehouse ou SAP HANA est utilisé avec DirectQuery, les auteurs de rapports peuvent désormais autoriser les utilisateurs finaux à modifier les variables SAP dans le **service Power BI** pour les espaces de travail Premium et partagés. Notez que cette fonctionnalité ne fonctionne PAS pour les rapports sous l’onglet Partagé avec moi de mon espace de travail. 
 
 ![Boîte de dialogue Modifier les variables](media/service-edit-sap-variables/sap-edit-variables-dialog.png)
 
-Ce document décrit les conditions requises pour modifier les variables dans Power BI, explique comment activer cette fonctionnalité de préversion et où modifier les variables dans le service Power BI.
+Ce document décrit les conditions requises pour modifier les variables dans Power BI, explique comment activer cette fonctionnalité et où modifier des variables dans le service Power BI.
 
 ## <a name="requirements-for-sap-edit-variables"></a>Conditions requises pour modifier les variables SAP
 
@@ -31,12 +30,10 @@ Il convient de respecter quelques conditions pour pouvoir utiliser la fonctionna
 
 **Nouvelle expérience de filtre obligatoire** – Vous devez activer la [nouvelle expérience de filtre](power-bi-report-filter.md) pour votre rapport. Voici comment l’activer pour votre rapport dans Power BI Desktop :
 - Dans Power BI Desktop, sélectionnez **Fichier** > **Options et paramètres** > **Options**.
-- Dans la barre de navigation de gauche, sous **Fichier actuel**, sélectionnez **Paramètres du rapport**.
+- Dans le volet de navigation, sous **Fichier actuel**, sélectionnez **Paramètres du rapport**.
 - Sous **Expérience de filtrage**, sélectionnez **Activer le volet de filtre mis à jour**.
 
 **Connexions DirectQuery obligatoires** – Vous devez vous connecter à la source de données SAP à l’aide de DirectQuery. Les connexions d’importation ne sont pas prises en charge.
-
-**Abonnement Power BI Premium obligatoire** – La fonctionnalité de modification de variables SAP n’est actuellement opérationnelle que dans les abonnements Power BI Premium.
 
 **Configuration de l’authentification unique obligatoire** – Pour que cette fonctionnalité soit opérationnelle, l’authentification unique (SSO) doit être configurée. Pour plus d’informations, consultez [Vue d’ensemble de l’authentification unique (SSO)](service-gateway-sso-overview.md).
 
@@ -48,7 +45,7 @@ Il convient de respecter quelques conditions pour pouvoir utiliser la fonctionna
 
 ## <a name="how-to-enable-the-feature"></a>Comment activer la fonctionnalité
 
-Pour activer la fonctionnalité de **modification de variables SAP**, dans Power BI Desktop, connectez-vous à une source de données SAP HANA ou SAP BW. Accédez ensuite à **Fichier > Options et paramètres > Options** puis, dans la section Fichier actif du volet gauche, sélectionnez **DirectQuery**. Quand vous sélectionnez cette option, vous voyez dans le volet droit des options DirectQuery et une case à cocher vous permettant d’**autoriser les utilisateurs finaux à changer les variables SAP dans le rapport (préversion)** , comme illustré dans l’image suivante.
+Pour activer la fonctionnalité de **modification de variables SAP**, dans Power BI Desktop, connectez-vous à une source de données SAP HANA ou SAP BW. Accédez ensuite à **Fichier > Options et paramètres > Options** puis, dans la section Fichier actif du volet gauche, sélectionnez **DirectQuery**. Quand vous sélectionnez cette option, vous voyez dans le volet droit des options DirectQuery et une case à cocher pour **Autoriser les utilisateurs finaux à changer des variables SAP dans le rapport**, comme illustré dans l’image suivante.
 
 ![Options DirectQuery](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 
@@ -78,10 +75,6 @@ Voici comment faire :
     ![Rétablir les valeurs par défaut](media/service-edit-sap-variables/reset-to-default.png)
 
 Quand le propriétaire d’un rapport publié dans le service Power BI travaille sur ce rapport avec SAP HANA ou SAP BW et en ayant la fonctionnalité **Modifier les variables** activée, il peut modifier ces valeurs par défaut. Le propriétaire du rapport peut modifier les variables en mode d’édition et enregistrer le rapport pour que ces paramètres deviennent les *nouveaux paramètres par défaut* de ce rapport. Les autres utilisateurs qui accèdent au rapport après que le propriétaire du rapport a apporté ces modifications voient ces nouveaux paramètres comme valeurs par défaut.
-
-## <a name="issues-and-considerations"></a>Problèmes et éléments à prendre en considération
-
-Pour l’heure, la fonctionnalité de modification de variables SAP n’est pas prise en charge dans les applications.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

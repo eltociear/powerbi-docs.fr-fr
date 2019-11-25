@@ -2,25 +2,24 @@
 title: Se connecter aux services que vous utilisez avec Power BI
 description: Connectez-vous à de nombreux services que vous utilisez pour conduire votre activité, comme Salesforce, Microsoft Dynamics CRM et Google Analytics.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: abecc9b0c5e450d24f29230ad75417b1494e6ce9
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 91740d16a91aa8dc1936e8ae1a2812653c45e6a1
+ms.sourcegitcommit: 50c4bebd3432ef9c09eacb1ac30f028ee4e66d61
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160000"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925831"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Se connecter aux services que vous utilisez avec Power BI
 Avec Power BI, vous pouvez vous connecter à de nombreux services que vous utilisez pour conduire votre activité, comme Salesforce, Microsoft Dynamics et Google Analytics. Power BI commence par utiliser vos informations d’identification pour se connecter au service. Il crée un *espace de travail* Power BI comprenant un tableau de bord et un ensemble de rapports Power BI qui montrent automatiquement vos données et fournissent des insights visuels sur votre activité.
 
 >[!IMPORTANT]
->Nous allons déprécier plusieurs packs de contenu le 25 septembre 2019. Les packs de contenu installés avant cette date continueront de fonctionner, mais vous ne pourrez pas en installer un nouveau après cela. Les [applications modèles](https://docs.microsoft.com/power-bi/service-template-apps-overview) remplacent les packs de contenu de service.
+>Les packs de contenu de service sont remplacés par des [Applications de modèle](https://docs.microsoft.com/power-bi/service-template-apps-overview). Depuis le 25 septembre 2019, plusieurs packs de contenu ont déjà été déconseillés. Tous les packs de contenu déconseillés que vous avez installés restent sur votre compte, mais aucune documentation ni support n’est fourni et il est impossible de l’installer à nouveau.
 
 Connectez-vous à Power BI pour voir tous les [services auxquels vous pouvez vous connecter](https://app.powerbi.com/getdata/services). 
 
@@ -30,13 +29,13 @@ Une fois l’application installée, vous pouvez voir le tableau de bord et les 
 
 ![Application Google Analytics dans l’application mobile Power BI](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Commencer
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
 ## <a name="edit-the-dashboard-and-reports"></a>Modifier le tableau de bord et les rapports
 Une fois l’importation terminée, la nouvelle application s’affiche sur la page Applications.
 
-1. Dans le volet de navigation de gauche, sélectionnez **Applications**, puis l’application.
+1. Sélectionnez **Applications** dans le volet de navigation, puis sélectionnez l’application.
    
      ![Page Applications](media/service-connect-to-services/power-bi-service-apps-open-app.png)
 2. Vous pouvez poser une question en tapant dans la zone Q&R, ou cliquer sur une vignette pour ouvrir le rapport sous-jacent. 
@@ -71,6 +70,6 @@ Si vous êtes intéressé par la création d’applications modèles à distribu
 ## <a name="next-steps"></a>Étapes suivantes
 * [Distribuer des applications à vos collègues](service-create-distribute-apps.md)
 * [Créer les nouveaux espaces de travail dans Power BI](service-create-the-new-workspaces.md)
-* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
-* D’autres questions ? [Essayez d’interroger la communauté Power BI](http://community.powerbi.com/)
+* Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
+* D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
 

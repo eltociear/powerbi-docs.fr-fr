@@ -1,23 +1,25 @@
 ---
 title: Créer des analyses et des visualisations avancées à l’aide de scripts R
-description: Utiliser des scripts R dans Power BI pour créer des analyses et visualisations avancées
+description: Utiliser des scripts R dans Power BI Desktop pour créer des analyses et visualisations avancées
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 93b3be374707b3e49f87d0875795d160f4530410
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: b947fe3f2faf423a7b2ced4d0032578ded015f7a
+ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655020"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099784"
 ---
-# <a name="creating-r-visuals-in-the-power-bi-service"></a>Création d’éléments visuels R dans le service Power BI
+# <a name="r-visuals-in-power-bi"></a>Visuels R dans Power BI
+Pour l’instant, les visuels doivent être créés à l’aide de **Power BI Desktop** avant d’être publiés dans le service Power BI. Pour plus d’informations sur la création de visuels R, consultez [Créer des visuels Power BI avec R ](../desktop-r-visuals.md).
+
+## <a name="viewing-r-visuals-in-the-power-bi-service"></a>Affichage de visuels R dans le service Power BI
 Le service Power BI prend en charge l’affichage et l’utilisation des éléments visuels créés avec des scripts R. Les éléments visuels créés avec des scripts R, communément appelés *éléments visuels R*, peuvent présenter une analyse et une mise en forme avancées des données (des prévisions par exemple) à l’aide des puissantes et riches fonctionnalités d’analyse et de visualisation de R.
 
 > [!NOTE]
@@ -27,23 +29,23 @@ Le service Power BI prend en charge l’affichage et l’utilisation des élém
 
 L’illustration suivante montre un tableau de bord Power BI avec une collection d’éléments visuels R utilisés pour l’analyse avancée.
 
-![](media/service-r-visuals/r-visuals-service_1.png)
+![Capture d’écran du canevas de rapport du service Power BI](media/service-r-visuals/power-bi-r-visuals.png)
 
 Les éléments visuels R sont créés dans un [rapport Power BI Desktop](../desktop-get-the-desktop.md), comme le rapport affiché dans l’image suivante.
 
-![](media/service-r-visuals/r-visuals-service_2a.png)
+![Rapport Desktop avec deux visuels](media/service-r-visuals/power-bi-r-visual-desktop.png)
 
-Une fois que le rapport est créé dans **Power BI Desktop**, vous pouvez le publier avec un ou plusieurs visuels R dans le service Power BI. Pour l’instant, les visuels R peuvent uniquement être créés dans **Power BI Desktop**, puis publiés sur le service Power BI. Pour plus d’informations sur la création d’éléments visuels R, consultez [Créer des éléments visuels Power BI avec R (Power BI Desktop)](../desktop-r-visuals.md).
+Une fois que le rapport est créé dans **Power BI Desktop**, vous pouvez le publier avec un ou plusieurs visuels R dans le service Power BI. 
 
-Notez que dans le service, tous les packages R ne sont pas pris en charge. Pour obtenir la liste des packages actuellement pris en charge dans le service Power BI, consultez les packages pris en charge à la fin de cet article.
+ Dans le service, tous les packages R ne sont pas pris en charge. Pour obtenir la liste des packages actuellement pris en charge dans le service Power BI, consultez les packages pris en charge à la fin de cet article.
 
-Vous pouvez télécharger cet [exemple de fichier Power BI Desktop](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix) qui contient quelques éléments visuels R pour voir comment cela fonctionne et faire des essais.
+Vous pouvez télécharger cet [exemple de fichier Power BI Desktop](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix) qui contient quelques éléments visuels R pour voir comment cela fonctionne et faire des essais.
 
 Les visuels R créés dans **Power BI Desktop** puis publiés dans le service Power BI se comportent la plupart du temps comme n’importe quel autre visuel dans le service Power BI. Vous pouvez les utiliser, les filtrer, les découper et les épingler à un tableau de bord ou les partager avec d’autres utilisateurs. Pour plus d’informations sur le partage de tableaux de bord et d’éléments visuels, consultez [Partager un tableau de bord avec vos collègues et les autres utilisateurs](../service-share-dashboards.md). Contrairement aux autres éléments visuels, les éléments visuels R ne peuvent pas afficher d’info-bulles ni être utilisés pour filtrer d’autres éléments visuels.
 
 Comme vous pouvez le voir dans l’image suivante, que ce soit dans des tableaux de bord ou des rapports, les éléments visuels R du service Power BI, s’affichent et se comportent en grande partie comme les autres types d’élément visuel. En outre, les utilisateurs n’ont pas besoin de connaître le script R sous-jacent qui a créé l’élément visuel.
 
-![](media/service-r-visuals/r-visuals-service_3a.png)
+![Capture d’écran de la page de rapport dans le service Power BI](media/service-r-visuals/power-bi-r-visual.png)
 
 ## <a name="r-scripts-security"></a>Sécurité des scripts R
 Les éléments visuels R sont créés à partir de scripts R, qui peuvent contenir du code qui présente des risques éventuels pour la sécurité ou la confidentialité.
@@ -57,14 +59,14 @@ Cette technologie *sandbox* impose certaines restrictions sur les scripts R exé
 ## <a name="r-scripts-error-experience"></a>Erreurs dans les scripts R
 Quand un script R génère une erreur, l’élément visuel R n’est pas tracé et un message d’erreur s’affiche. Pour obtenir plus d’informations sur l’erreur, sélectionnez **Voir les détails** dans l’erreur se rapportant à l’élément visuel R sur le canevas, comme indiqué dans l’image suivante.
 
-![](media/service-r-visuals/r-visuals-service_4.png)
+![message d’erreur](media/service-r-visuals/r-visuals-service-4.png)
 
 Voici un autre exemple : l’illustration suivante montre le message d’erreur qui s’affiche lorsqu’un script R n’a pas pu s’exécuter correctement en raison d’un package R manquant dans Azure.
 
-![](media/service-r-visuals/r-visuals-service_5.png)
+![Capture d’écran montrant une erreur d’exécution](media/service-r-visuals/r-visuals-service-5.png)
 
-## <a name="licensing"></a>Gestion des licences
-Les éléments visuels R nécessitent une licence [Power BI Pro](../service-self-service-signup-for-power-bi.md) pour afficher des rapports, les actualisations, les filtres et les filtres croisés. Pour plus d’informations sur les licences Power BI Pro et pour savoir en quoi elles diffèrent des licences gratuites, consultez [Contenu Power BI Pro - De quoi s’agit-il ?](../service-admin-purchasing-power-bi-pro.md)
+## <a name="licensing"></a>Licensing
+Les visuels R nécessitent une licence [Power BI Pro](../service-self-service-signup-for-power-bi.md) pour afficher des rapports, les actualisations, les filtres et les filtres croisés. Pour plus d’informations sur les licences Power BI Pro et pour savoir en quoi elles diffèrent des licences gratuites, consultez [Contenu Power BI Pro - De quoi s’agit-il ?](../service-admin-purchasing-power-bi-pro.md)
 
 Les utilisateurs gratuits de Power BI peuvent uniquement utiliser les vignettes partagées avec eux dans les espaces de travail Premium. Pour plus d’informations, consultez [Achat de Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
 
@@ -83,7 +85,7 @@ Le tableau suivant décrit les fonctionnalités des éléments visuels R en fon
 ## <a name="known-limitations"></a>Limites connues
 Les éléments visuels R du service Power BI ont quelques limitations :
 
-* La prise en charge des éléments visuels R est limitée aux packages identifiés sur la page suivante <make this a link to the supported packages page per my excel>. Il n’existe actuellement aucune prise en charge des packages personnalisés.
+* La prise en charge des visuels R est limitée aux packages identifiés [dans Découvrez quels packages R sont pris en charge](../service-r-packages-support.md). Il n’existe actuellement aucune prise en charge des packages personnalisés.
 * Limites concernant la taille des données : les données utilisées par les éléments visuels R pour le traçage sont limitées à 150 000 lignes. Si plus de 150 000 lignes sont sélectionnées, seules les 150 000 premières lignes sont utilisées et un message s’affiche sur l’image.
 * Limite concernant la durée du calcul : si le calcul d’un élément visuel R prend plus de 60 secondes, le délai d’exécution est dépassé et une erreur est générée.
 * Les éléments visuels R sont actualisés lors de la mise à jour, du filtrage et de la mise en surbrillance des données. Toutefois, l’image elle-même n’est pas interactive et ne prend pas en charge les info-bulles.

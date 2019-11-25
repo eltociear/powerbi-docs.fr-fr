@@ -7,15 +7,14 @@ ms.author: maggies
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
-manager: kfile
 ms.custom: mvc
 ms.date: 09/13/2019
-ms.openlocfilehash: 104b903e6b7a47b5ce35dc5c0627a43d54c1090a
-ms.sourcegitcommit: 0687908938e4c3b68401fd511ec1c28fb54ddeb3
+ms.openlocfilehash: a36499863346244bb3830e7ba4733045c4ddf8ba
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71691221"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128297"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Comparer Power BI Report Server et le service Power BI
 
@@ -27,9 +26,9 @@ Power BI Report Server et le service Power BI ont de nombreuses similitudes et q
 |---------|---------|---------|---------|
 | Déploiement | Local ou hébergé dans le cloud | Cloud | Power BI Report Server peut être déployé sur des machines virtuelles Azure (hébergées dans le cloud) si vous disposez d’une licence Power BI Premium |
 | Données source | Cloud et/ou local | Cloud et/ou local |  |
-| Licence | Power BI Premium ou SQL Server EE avec SA | Power BI Pro et/ou Power BI Premium | |  
+| Licence | Power BI Premium ou SQL Server EE avec la Software Assurance (SA) | Power BI Pro et/ou Power BI Premium | |  
 | Cycle de vie | Stratégie de cycle de vie moderne | Service entièrement géré |  |
-| Cycle de mise en production | Tous les 4 mois | Une fois par mois | Les derniers correctifs et fonctionnalités sont d’abord disponibles pour le service Power BI. La plupart des fonctionnalités de base sont intégrées à Power BI Report Server dans les prochaines versions, et certaines fonctionnalités sont uniquement destinées au service Power BI. |
+| Cycle de mise en production | Trois fois par an (janvier, mai, septembre) | Une fois par mois | Les derniers correctifs et fonctionnalités sont d’abord disponibles pour le service Power BI. La plupart des fonctionnalités de base sont intégrées à Power BI Report Server dans les prochaines versions, et certaines fonctionnalités sont uniquement destinées au service Power BI. |
 | Créer des rapports Power BI dans Power BI Desktop | Oui | Oui |  |
 | Créer des rapports Power BI dans le navigateur | Non | Oui |  |
 | Passerelle obligatoire | Non | Oui, pour les sources de données locales |  |
@@ -49,12 +48,12 @@ Power BI Report Server et le service Power BI ont de nombreuses similitudes et q
 | Alertes de données | Non | Oui | [Alertes de données](../service-set-data-alerts.md) dans le service Power BI
 | Sécurité au niveau des lignes (RLS) | Oui | Oui | Disponible dans DirectQuery (source de données) et en mode d’importation <br><br>Sécurité au niveau des lignes dans le [service Power BI](../service-admin-rls.md) <br><br>Sécurité au niveau des lignes dans [Power BI Report Server](row-level-security-report-server.md) |
 | Mode plein écran | Non | Oui | [Mode plein écran](../consumer/end-user-focus.md) dans le service Power BI |
-| Collaboration Office 365 avancée | Non | Oui | [Collaborer dans un espace de travail d’application](../service-collaborate-power-bi-workspace.md) avec Office 365 |
+| Collaboration Office 365 avancée | Non | Oui | [Collaborer dans un espace de travail](../service-collaborate-power-bi-workspace.md) avec Office 365 |
 | Visuels R | Non | Oui | [Créer des visuels R](../desktop-r-visuals.md) dans Power BI Desktop et publiez-les sur le service Power BI. Vous ne pouvez pas enregistrer les rapports Power BI avec des visuels R dans Power BI Report Server.  |
 | Fonctionnalités en préversion | Non | Oui | [Accéder aux fonctionnalités en préversion du service Power BI](../consumer/end-user-preview-features.md) |
-| Visuels personnalisés | Oui | Oui | [Éléments visuels personnalisés dans Power BI](../power-bi-custom-visuals.md) |
+| Visuels personnalisés | Oui | Oui | [Éléments visuels personnalisés dans Power BI](../developer/power-bi-custom-visuals.md) |
 | Modèles composites | Non | Oui |
-| Power BI Desktop | Version optimisée pour Report Server, disponible en téléchargement avec Report Server | Version optimisée pour le service Power BI, disponible sur le Windows Store | [Power BI Desktop pour Report Server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop pour le service Power BI](http://aka.ms/pbidesktopstore) |
+| Power BI Desktop | Version optimisée pour Report Server, disponible en téléchargement avec Report Server | Version optimisée pour le service Power BI, disponible sur le Windows Store | [Power BI Desktop pour Report Server](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop pour le service Power BI](https://aka.ms/pbidesktopstore) |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
