@@ -1,19 +1,19 @@
 ---
 title: Extraits de code pour migrer du contenu à partir de Power BI Embedded
 description: Voici quelques extraits de code pour les opérations de base nécessaires à la migration de contenu
-author: rkarlin
-ms.author: rkarlin
+author: KesemSharabi
+ms.author: kesharab
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 95c249fe2326d9075d920a415c707811d19e5387
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f44e8b44157f62b6b80e16b18a2c80d11e43eb77
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880511"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265326"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Extraits de code pour migrer du contenu à partir d’une collection d’espaces de travail Power BI
 

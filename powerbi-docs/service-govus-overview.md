@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 225c21693c9f100d9abbfc310b957bee7a909061
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64e9ff8f4952abe79a62b6b805596554b32aa6c9
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881357"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265457"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI for les clients US Government
 Le **service Power BI** a une version disponible pour les clients US Government dans le cadre des abonnements de la **Communauté Office 365 US Government**. La version du **service Power BI** abordée dans cet article est spécialement conçue pour les clients US Government. Elle est distincte et différente de la version commerciale du **service Power BI**.
@@ -55,7 +55,6 @@ Certaines des fonctionnalités disponibles dans la version commerciale du **serv
 * **Incorporer dans SharePoint Online** : il n’est pas possible d’incorporer du contenu dans SharePoint Online à l’aide de la partie web de Power BI. Toutefois, le code incorporé sécurisé fonctionne à l’aide du [composant WebPart *Incorporer*](https://docs.microsoft.com/power-bi/service-embed-secure). Vous devez ajouter *app.powerbigov.us* à la liste des exceptions. Pour ce faire, suivez les instructions mentionnées dans l’article [Autoriser ou interdire l’incorporation de contenu sur des pages SharePoint](https://support.office.com/article/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b).
 * **Power BI US Government** est disponible uniquement sous licence **Pro**. Toutes les références à des licences Power BI (Gratuit) dans un portail d’administration (ou en tant qu’utilisateur) s’exécutent dans un cloud de service Power BI commercial.
 * **Audit** : depuis juin 2018, l’audit est disponible via le portail Sécurité et conformité Office 365.
-* **Contenu Power BI dans Cortana** - Les résultats Power BI ne s’affichent pas dans les résultats de recherche de Cortana, notamment les résultats de votre contenu Power BI (tableaux de bord, rapports, applications), ainsi que les résultats qui montrent des pages de rapport optimisées pour Cortana pour des mots clés spécifiques.
 * **Partage avec des utilisateurs externes** : le partage est autorisé au sein d’un même locataire Power BI et, depuis juin 2018, il est également autorisé avec des utilisateurs extérieurs à votre locataire Power BI. Consultez [Distribuer du contenu Power BI à des utilisateurs invités externes avec Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Métriques d’utilisation des tableaux de bord et des rapports** : les métriques d’utilisation ne sont pas disponibles pour les rapports et les tableaux de bord. Les clients peuvent utiliser les données du journal d’audit pour obtenir des informations sur l’utilisation du contenu dans leur organisation.
 * **Dataflows** - Les dataflows ne sont pas disponibles.
@@ -103,7 +102,7 @@ Power BI vous permet d’effectuer des tâches très diverses. Pour obtenir pl
 
 * [Inscription à Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Démonstration de Power BI US Government</a>
-* [Formation guidée sur Power BI](guided-learning/index.md)
+* [Formation guidée sur Power BI](guided-learning/index.yml)
 * [Prise en main du service Power BI](service-get-started.md)
 * [Qu’est-ce que Power BI Desktop ?](desktop-what-is-desktop.md)
 

@@ -4,12 +4,12 @@ ms.service: powerbi
 ms.topic: include
 ms.date: 09/13/2019
 ms.author: mblythe
-ms.openlocfilehash: b2be085c48b303304d46ea93c272e6a860143c51
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: c658e683e86a899d45728220dee3706a0d617f0f
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074825"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74284104"
 ---
 ## <a name="limitations"></a>Limites
 
@@ -20,8 +20,6 @@ Voici une liste des limites actuelles pour la sécurité au niveau des lignes su
 * Vous pouvez définir la sécurité au niveau des lignes (SNL) uniquement sur les jeux de données créés à l’aide de Power BI Desktop. Pour activer la sécurité au niveau des lignes pour les jeux de données créés avec Excel, vous devez d’abord convertir vos fichiers au format PBIX (Power BI Desktop). [En savoir plus](../desktop-import-excel-workbooks.md)
 
 * Seules les connexions ETL et DirectQuery sont prises en charge. Les connexions actives à Analysis Services sont gérées dans le modèle local.
-
-* Cortana n’est pas actuellement pris en charge avec la sécurité au niveau des lignes (SNL).
 
 ## <a name="known-issues"></a>Problèmes connus
 

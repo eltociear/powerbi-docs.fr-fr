@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 183ce793342253775f641406620447e7b0f44020
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cc2ddd0b6fbd0b621c07056ed4b525f66d81319c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875139"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265869"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Paramètres d’affichage de page dans un rapport Power BI
 Nous sommes conscients qu’il est essentiel de préserver la qualité de présentation de vos rapports. Cela n’est pas toujours évident, car vous et vos collègues pouvez consulter ces rapports sur des écrans de taille et de proportions différentes. 
@@ -66,7 +66,6 @@ Les paramètres **Taille de la page** sont disponibles uniquement pour les propr
 
 * Proportions 4:3
 * Proportions 16:9 (par défaut)
-* Cortana
 * Lettre
 * Personnalisé (hauteur et largeur en pixels)
 
