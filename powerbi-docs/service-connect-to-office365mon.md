@@ -1,31 +1,31 @@
 ---
 title: Se connecter à Office365Mon avec Power BI
 description: Office365Mon pour Power BI
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 8/29/2019
-ms.author: tebercov
+ms.date: 11/26/2019
+ms.author: painbar
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 64e8365a6d4e0c01911de9e69998af4d58d59202
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8e9563d10d80290a48e20cd2d6a889831d34924b
+ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73854722"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548589"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Se connecter à Office365Mon avec Power BI
 Grâce à Power BI et à l’application modèle Office365Mon, vous pouvez facilement analyser les pannes d’Office 365 et les données de performances d’intégrité. Power BI récupère vos données, notamment celles des pannes et des sondes d’intégrité, puis établit un tableau de bord prêt à l’emploi et des rapports basés sur ces données.
 
-Connectez-vous à l’[application modèle Office365Mon](https://app.powerbi.com/groups/me/getdata/services/office365mon) pour Power BI.
+Connectez-vous à l’[application modèle Office365Mon](https://msit.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) pour Power BI.
 
 >[!NOTE]
 >Vous devez disposer d’un compte d’administrateur Office365Mon pour vous connecter à l’application modèle Power BI et la charger.
 
 ## <a name="how-to-connect"></a>Comment se connecter
-1. Sélectionnez **Obtenir des données** dans le bas du volet de navigation.
+1. Sélectionnez **Obtenir des données** en bas du volet de navigation.
    
    ![](media/service-connect-to-office365mon/pbi_getdata.png)
 2. Dans la zone **Services**, sélectionnez **Obtenir**.
