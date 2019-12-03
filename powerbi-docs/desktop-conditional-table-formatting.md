@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b715cd42ea221f62258b66eee71b6525b2015ae1
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: d28028c7b75bedae958df77c743c52b44c4437d9
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128177"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311721"
 ---
 # <a name="conditional-formatting-in-tables"></a>Mise en forme conditionnelle dans les tables 
 Avec la mise en forme conditionnelle des tables, vous pouvez spécifier des couleurs de cellule personnalisées en fonction des valeurs des cellules, ou en fonction d’autres valeurs ou champs, et notamment utiliser des couleurs de dégradé. Vous pouvez également afficher les valeurs des cellules avec des barres de données. 
@@ -139,7 +139,7 @@ Vous pouvez utiliser n’importe quelle valeur listée dans les spécifications 
 Voici quelques éléments à prendre en considération quand vous utilisez la mis en forme conditionnelle de tableau :
 
 * La mise en forme conditionnelle est appliquée seulement aux valeurs d'un visuel **Matrice** et ne s’applique à aucun sous-total ni aucun total général. 
-* La mise en forme conditionnelle n’est pas appliquée à la ligne **Total**
+* La mise en forme conditionnelle n’est pas appliquée à la ligne **Total**.
 * Toute table qui n’a pas de regroupement s’affiche sous la forme d’une ligne unique qui ne prend pas en charge la mise en forme conditionnelle.
 * Si vous utilisez le format de dégradé automatique basé sur les valeurs maximales/minimales ou une mise en forme basée sur des règles de pourcentage, la mise en forme conditionnelle ne peut pas être appliquée lorsque vos données contiennent des valeurs NaN. NaN signifie « n’est pas un nombre », le plus souvent à cause d’une erreur de division par zéro. Vous pouvez utiliser la [fonction DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax) pour éviter ces erreurs.
 

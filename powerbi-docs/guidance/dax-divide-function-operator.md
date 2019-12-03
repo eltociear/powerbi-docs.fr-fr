@@ -8,49 +8,48 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: c96518bb8de7f323b51a7e1e3f34f9d9bf056c79
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 91acaa3a2252250e2a10674bae0e9be81f142696
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875384"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410934"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX : Fonction DIVIDE ou opérateur de division (/)
 
-Cet article cible les modélisateurs de données qui définissent des expressions DAX.
+En tant que modeleur de données, quand vous écrivez une expression DAX pour diviser un numérateur par un dénominateur, vous pouvez choisir d’utiliser la fonction [DIVIDE](/dax/divide-function-dax) ou l’opérateur de division (/, barre oblique).
 
-## <a name="background"></a>Arrière-plan
-
-Quand vous écrivez une expression DAX pour diviser un numérateur par un dénominateur, vous pouvez choisir d’utiliser la fonction [DIVIDE](/dax/divide-function-dax) ou l’opérateur de division (/, barre oblique).
-
-Lorsque vous utilisez la fonction DIVIDE, vous devez passer les expressions de numérateur et dénominateur. Si vous le souhaitez, vous pouvez passer une valeur qui représente un autre résultat.
+Lorsque vous utilisez la fonction DIVIDE, vous devez passer les expressions de numérateur et dénominateur. Si vous le souhaitez, vous pouvez passer une valeur qui représente un _autre résultat_.
 
 ```dax
-
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])
-
 ```
 
 La fonction DIVIDE a été conçue pour gérer automatiquement les cas de division par zéro. Si aucun autre résultat n’est passé et que le dénominateur a la valeur zéro ou BLANK, la fonction retourne BLANK. Si un autre résultat est passé, il est retourné à la place de BLANK.
 
-La fonction DIVIDE est pratique, car elle évite à votre expression d’avoir à commencer par tester la valeur du dénominateur. La fonction est également mieux optimisée pour tester la valeur de dénominateur que la fonction [IF](/dax/if-function-dax). Le gain de performance est significatif, car la vérification de division par zéro est coûteuse. L’utilisation de DIVIDE produit également une expression plus concise et plus fluide.
+La fonction DIVIDE est pratique, car elle évite à votre expression d’avoir à commencer par tester la valeur du dénominateur. La fonction est également mieux optimisée pour tester la valeur de dénominateur que la fonction [IF](/dax/if-function-dax). Le gain de performance est significatif, car la vérification de division par zéro est coûteuse. L’utilisation poussée de DIVIDE produit une expression plus concise et plus fluide.
 
-## <a name="example"></a>Example
+## <a name="example"></a>Exemple
 
 L’expression de mesure suivante produit une division sans risque, mais elle implique l’utilisation de quatre fonctions DAX.
 
 ```dax
-
-=IF(OR(ISBLANK([Sales]), [Sales] == 0), BLANK(), [Profit] / [Sales])
-
+Profit Margin =
+IF(
+    OR(
+        ISBLANK([Sales]),
+        [Sales] == 0
+    ),
+    BLANK(),
+    [Profit] / [Sales]
+)
 ```
 
 Cette expression de mesure aboutit au même résultat, mais de façon plus efficace et fluide.
 
 ```dax
-
-=DIVIDE([Profit], [Sales])
-
+Profit Margin =
+DIVIDE([Profit], [Sales])
 ```
 
 ## <a name="recommendations"></a>Recommandations
@@ -59,4 +58,11 @@ Nous vous recommandons d’utiliser la fonction DIVIDE chaque fois que le dénom
 
 Dans le cas où le dénominateur est une valeur constante, nous vous recommandons d’utiliser l’opérateur de division. Dans ce cas, la réussite de la division est garantie et votre expression est plus performante, car elle évite les tests inutiles.
 
-Vous devez déterminer avec soin si la fonction DIVIDE doit retourner une autre valeur. Pour les mesures, il est généralement préférable qu’elles retournent BLANK. Ceci est dû au fait que les visuels de rapport éliminent par défaut les regroupements lorsque les résumés ont la valeur BLANK. Cela permet au visuel de se concentrer sur les groupes où il existe des données. Si nécessaire, vous pouvez configurer le visuel pour afficher tous les groupes (qui retournent des valeurs ou BLANK) dans le contexte de filtre en activant l’option « Afficher les éléments sans données ».
+Déterminez avec soin si la fonction DIVIDE doit retourner une autre valeur. Pour les mesures, il est généralement préférable qu’elle retourne BLANK. Il est préférable de retourner BLANK parce que les visuels de rapport éliminent par défaut les regroupements quand les totalisations ont la valeur BLANK. Cela permet au visuel de fixer son attention sur les groupes où il existe des données. Si nécessaire, vous pouvez configurer le visuel pour afficher tous les groupes (qui retournent des valeurs ou BLANK) dans le contexte de filtre en activant l’option « Afficher les éléments sans données ».
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Pour plus d’informations sur cet article, consultez les ressources suivantes :
+
+- [Informations de référence sur DAX (Data Analysis Expressions)](/dax/)
+- Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

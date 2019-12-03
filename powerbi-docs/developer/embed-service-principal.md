@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 9bbba47456d9c5bed5c8cd77858b6dbaeefce5a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3791e9cdfd44c62e6f9e9b79f5345d6d2476b0db
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877656"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74264184"
 ---
 # <a name="service-principal-with-power-bi"></a>Principal de service avec Power BI
 
@@ -93,7 +93,7 @@ Contrairement à un compte principal traditionnel, un principal de service (jeto
    > [!Important]
    > Une fois que vous activez le principal de service à utiliser avec Power BI, les autorisations AD de l’application n’ont plus d’effet. Les autorisations de l’application sont ensuite gérées par le biais du portail d’administration Power BI.
 
-2.  **Recommandé** Créez un [groupe de sécurité dans Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) et ajoutez l’application que vous avez créée à ce groupe de sécurité. Vous pouvez créer un groupe de sécurité AAD avec [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Recommandé** Créez un groupe de sécurité dans Azure Active Directory (AAD) et ajoutez l’[application](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) que vous avez créée à ce groupe de sécurité. Vous pouvez créer un groupe de sécurité AAD avec [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Voici un exemple de script qui crée un groupe de sécurité et ajoute une application à ce groupe.
 
@@ -113,7 +113,7 @@ Contrairement à un compte principal traditionnel, un principal de service (jeto
    > [!Important]
    > Les principaux du service ont accès à tous les paramètres de locataire qui sont activés pour toute l’organisation ou pour les groupes de sécurité qui contiennent des principaux du service dans le cadre du groupe. Pour restreindre l’accès des principaux du service à des paramètres de locataire spécifiques, autorisez uniquement l’accès à certains groupes de sécurité ou créez un groupe de sécurité dédié pour les principaux du service et excluez-le.
 
-    ![Portail d'administration](media/embed-service-principal/admin-portal.png)
+    ![Portail d’administration](media/embed-service-principal/admin-portal.png)
 
 4. Configurez votre [environnement Power BI](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 

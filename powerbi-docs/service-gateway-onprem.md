@@ -9,18 +9,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: b01a3ef5832541822aa9311df14289285f601b2b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: f149b816f7489b6a26e86af6360062d86083a7e5
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872440"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164291"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Qu’est-ce qu’une passerelle de données locale ?
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-La passerelle de données locale agit comme un pont, en fournissant un transfert de données rapide et sécurisé entre des données locales (qui ne sont pas dans le cloud) et plusieurs services cloud Microsoft. Ces services cloud sont Power BI, PowerApps, Microsoft Flow, Azure Analysis Services et Azure Logic Apps. En utilisant une passerelle, les organisations peuvent conserver les bases de données et d’autres sources de données sur leurs réseaux locaux, tout en utilisant de façon sécurisée ces données locales dans des services cloud.
+La passerelle de données locale agit comme un pont, en fournissant un transfert de données rapide et sécurisé entre des données locales (qui ne sont pas dans le cloud) et plusieurs services cloud Microsoft. Ces services cloud sont Power BI, PowerApps, Power Automate, Azure Analysis Services et Azure Logic Apps. En utilisant une passerelle, les organisations peuvent conserver les bases de données et d’autres sources de données sur leurs réseaux locaux, tout en utilisant de façon sécurisée ces données locales dans des services cloud.
 
 ## <a name="how-the-gateway-works"></a>Fonctionnement de la passerelle
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/21/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e26b50d571cfffeae1c93f37e715eca24ff4f12e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8f5d11b53526c5d266b96a8f21c42fecc66d3795
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871562"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74163754"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Alertes de données dans le service Power BI
 
@@ -23,7 +23,7 @@ Définissez des alertes pour vous avertir quand des données de vos tableaux de 
 
 Vous pouvez définir des alertes sur les vignettes si vous disposez d’une licence Power BI Pro. Vous pouvez également définir des alertes si quelqu’un partage un tableau de bord qui se trouve dans une [capacité Premium](service-premium-what-is.md). Des alertes ne peuvent être définies que sur des vignettes épinglées à partir de visuels de rapport, et uniquement sur des jauges, des indicateurs de performance clés et des cartes. Des alertes peuvent être définies sur des visuels créés à partir de jeux de données de streaming que vous épinglez d’un rapport vers un tableau de bord. Vous ne pouvez pas définir d’alertes sur des vignettes de streaming créées directement sur le tableau de bord à l’aide de **Ajouter une vignette** > **Données de streaming personnalisées**.
 
-Vous seul pouvez voir les alertes que vous définissez, même si vous partagez votre tableau de bord. Même le propriétaire du tableau de bord ne peut pas voir les alertes que vous définissez sur votre vue de son tableau de bord. Les alertes de données sont entièrement synchronisées entre plateformes. Définissez et affichez les alertes de données [dans les applications mobiles Power BI](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) et dans le service Power BI. Elles ne sont pas disponibles dans Power BI Desktop. Vous pouvez même automatiser et intégrer des alertes avec Microsoft Flow. Vous pouvez essayer vous-même dans cet article [Microsoft Flow et Power BI](service-flow-integration.md).
+Vous seul pouvez voir les alertes que vous définissez, même si vous partagez votre tableau de bord. Même le propriétaire du tableau de bord ne peut pas voir les alertes que vous définissez sur votre vue de son tableau de bord. Les alertes de données sont entièrement synchronisées entre plateformes. Définissez et affichez les alertes de données [dans les applications mobiles Power BI](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) et dans le service Power BI. Elles ne sont pas disponibles dans Power BI Desktop. Vous pouvez même automatiser et intégrer des alertes avec Power Automate. Vous pouvez essayer vous-même dans cet article : [Power Automate et Power BI](service-flow-integration.md).
 
 ![vignettes](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -125,7 +125,7 @@ Il existe de nombreuses façons de gérer vos alertes :
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Créer un flux Microsoft Flow qui inclut une alerte de données](service-flow-integration.md).
+* [Créer un workflow Power Automate qui inclut une alerte de données](service-flow-integration.md).
 
 * [Définir des alertes de données sur votre appareil mobile](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 

@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 3/27/2019
-ms.openlocfilehash: 8d320b5fa1387ebf21ecd8c3c1db70b9892154e7
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: f8ca6aae805ae3184a1c54d8707fcb9a3cfd32e7
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128068"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265248"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Publier des visuels Power BI dans AppSource
 
@@ -25,7 +25,7 @@ Une fois que vous avez créé votre visuel personnalisé, vous pouvez le publier
 
 ## <a name="what-is-appsource"></a>Présentation d’AppSource
 
-**AppSource** est l’endroit où vous pouvez rechercher des applications SaaS et des compléments pour vos produits et services Microsoft. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connecte des millions d’utilisateurs Office 365, Dynamics 365, Cortana Intelligence, etc. à des solutions qui les aident à effectuer leur travail de façon plus efficace, intelligente et élaborée.
+**AppSource** est l’endroit où vous pouvez rechercher des applications SaaS et des compléments pour vos produits et services Microsoft. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) connecte des millions d’utilisateurs Office 365, Dynamics 365, etc. à des solutions qui les aident à effectuer leur travail de façon plus efficace, intelligente et élaborée.
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Préparation de la soumission de votre visuel personnalisé
 

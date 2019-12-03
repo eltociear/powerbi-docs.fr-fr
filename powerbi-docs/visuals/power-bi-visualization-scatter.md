@@ -2,20 +2,20 @@
 title: Nuages de points, graphiques en bulles et graphiques à points dans Power BI
 description: Nuages de points, graphiques à points et graphiques en bulles dans Power BI
 author: mihart
-ms.reviewer: ''
+ms.reviewer: amac
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/21/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 88db87b995f52aa51023bd465d349459e1dd2965
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a03ac63caf8da96cd7e786c99c8a8dcd36f45a75
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870817"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311563"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Nuages de points, graphiques en bulles et graphiques à points dans Power BI
 
@@ -131,13 +131,30 @@ Ajoutons à présent une troisième dimension.
     > [!NOTE]
     > Des points de données supplémentaires peuvent allonger le temps de chargement. Si vous choisissez de publier des rapports avec des limites à l’extrémité supérieure de l’échelle, testez également vos rapports sur le web et les appareils mobiles. Vous devez en effet vérifier que les performances sur le graphique correspondent aux attentes de vos utilisateurs.
 
-1. Vous pouvez [mettre en forme les couleurs, étiquettes, titres, arrière-plan, etc.](service-getting-started-with-color-formatting-and-axis-properties.md) de la visualisation.
-
-    Pour [améliorer l’accessibilité](../desktop-accessibility.md), ajoutez des formes de marqueur à chaque ligne. Pour sélectionner la forme de marqueur, développez **Formes**, sélectionnez **Forme de marqueur**, puis choisissez une forme.
+1. Continuez la mise en forme des couleurs, étiquettes, titres, arrière-plan, etc. de la visualisation. Pour [améliorer l’accessibilité](../desktop-accessibility.md), ajoutez des formes de marqueur à chaque ligne. Pour sélectionner la forme de marqueur, développez **Formes**, sélectionnez **Forme de marqueur**, puis choisissez une forme.
 
     ![Capture d’écran du menu déroulant Formes avec les options Forme de marqueur.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
-    Vous pouvez modifier la forme de marqueur et la définir sur un losange, triangle ou carré. L’utilisation d’une forme de marqueur différente pour chaque ligne permet aux lecteurs du rapport de différencier plus facilement les lignes (ou aires) les unes des autres.
+    Changez la forme de marqueur en losange, triangle ou carré. L’utilisation d’une forme de marqueur différente pour chaque ligne permet aux lecteurs du rapport de différencier plus facilement les lignes (ou aires) les unes des autres.
+
+1. Ouvrez le volet Analytique ![Capture d’écran de l’icône du volet Analytique.](media/power-bi-visualization-scatter/power-bi-analytics.png) pour ajouter des informations à votre visualisation.  
+    - Ajoutez une ligne médiane. Sélectionnez **Ligne Médiane** > **Ajouter**. Par défaut, Power BI ajoute une ligne médiane pour *Sales Per Sq Ft*. Ce n’est pas très utile, car nous savons qu’il y a 10 points de données et que la médiane est créée avec cinq points de données de chaque côté. Basculez plutôt la **mesure** sur *Total sales variance %* .  
+
+        ![Capture d’écran du graphique en bulles avec ligne médiane.](media/power-bi-visualization-scatter/power-bi-analytics-median.png)
+
+    - Ajoutez la symétrie en grisé pour voir les points dont la valeur de la mesure sur l’axe X est supérieure à celle de la mesure sur l’axe Y, et vice versa. Quand vous activez la symétrie en grisé dans le volet Analytique, Power BI affiche l’arrière-plan de votre nuage de points de façon symétrique en fonction des limites supérieure et inférieure de l’axe actuel. Vous pouvez ainsi identifier très rapidement la mesure d’axe que privilégie un point de données, en particulier quand la plage de vos axes X et Y est différente.
+
+        a. Remplacez le champ **Total sales variance %** par **Gross margin last year %** .
+
+        ![Capture d’écran du graphique en bulles avec ligne médiane.](media/power-bi-visualization-scatter/power-bi-format-symmetry.png)
+
+        b. Dans le volet Analytique, ajoutez **Symétrie en grisé** Avec la symétrie en grisé, nous pouvons voir que la catégorie Hosiery (bulle verte dans la zone rose) est la seule qui privilégie la marge brute plutôt que ses ventes par surface de magasin. 
+
+        ![Capture d’écran du graphique en bulles avec symétrie en grisé.](media/power-bi-visualization-scatter/power-bi-symmetry.png)
+
+    - Poursuivez l’exploration du volet Analytique pour découvrir des insights intéressants dans vos données. 
+
+        ![Capture d’écran du graphique en bulles avec symétrie en grisé.](media/power-bi-visualization-scatter/power-bi-analytics-example.png)
 
 ## <a name="create-a-dot-plot-chart"></a>Créer un graphique à points
 

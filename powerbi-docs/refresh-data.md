@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 422d742748fc6880b0636bd3a0c5de7011a3ff0a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 28a6aa8659411b829e6982e7c766e03d683871fd
+ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860794"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74415439"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -105,7 +105,14 @@ Il est également important de souligner que la limite de capacité partagée po
 
 Si les jeux de données et les rapports que vous avez créés sont basés sur un fichier Power BI Desktop, un classeur Excel ou un fichier .csv (valeurs séparées par des virgules) sur OneDrive ou SharePoint Online, Power BI effectue un autre type d’actualisation, appelé actualisation OneDrive. Pour plus d’informations, consultez [Obtenir des données à partir de fichiers pour Power BI](service-get-data-from-files.md).
 
-Contrairement à l’actualisation d’un jeu de données au cours de laquelle Power BI importe les données d’une source de données dans un jeu de données, l’actualisation OneDrive synchronise les jeux de données et les rapports avec leurs fichiers sources. Par défaut, Power BI vérifie à peu près toutes les heures si un jeu de données connecté à un fichier sur OneDrive ou SharePoint Online nécessite une synchronisation. Pour passer en revue les cycles de synchronisation antérieurs, consultez l’onglet OneDrive dans l’historique des actualisations. La capture d’écran suivante montre un cycle de synchronisation terminé pour un exemple de jeu de données.
+Contrairement à l’actualisation d’un jeu de données au cours de laquelle Power BI importe les données d’une source de données dans un jeu de données, l’actualisation OneDrive synchronise les jeux de données et les rapports avec leurs fichiers sources. Par défaut, Power BI vérifie à peu près toutes les heures si un jeu de données connecté à un fichier sur OneDrive ou SharePoint Online nécessite une synchronisation.
+
+> [!IMPORTANT]
+> Soyez prudent quand vous utilisez la gestion des fichiers sur OneDrive. Quand vous définissez un fichier OneDrive comme source de données, Power BI référence l’ID d’élément du fichier quand il effectue l’actualisation, ce qui peut provoquer des problèmes dans certains scénarios. Considérez le scénario dans lequel vous avez un fichier maître _A_ et une copie de production de ce fichier _B_, et où vous configurez l’actualisation de OneDrive pour le fichier B. Si vous _copiez_ ensuite le fichier A sur le fichier B, l’opération de copie supprime l’ancien fichier B et crée un nouveau fichier B avec un ID d’élément différent, ce qui empêche l’actualisation de OneDrive. Au lieu de cela, vous devez charger et remplacer le fichier B, qui conserve le même ID d’élément.
+
+Vous pouvez déplacer le fichier à un autre emplacement (par exemple avec la fonction de glisser-déposer) : l’actualisation continuera de fonctionner, car Power BI connaît encore l’ID de fichier. Cependant, si vous copiez ce fichier à un autre emplacement, une nouvelle instance du fichier et un nouvel ID de fichier sont créés. Par conséquent, votre référence de fichier Power BI n’est plus valide et l’actualisation échoue.
+
+Pour passer en revue les cycles de synchronisation antérieurs, consultez l’onglet OneDrive dans l’historique des actualisations. La capture d’écran suivante montre un cycle de synchronisation terminé pour un exemple de jeu de données.
 
 ![Historique des actualisations](media/refresh-data/refresh-history.png)
 

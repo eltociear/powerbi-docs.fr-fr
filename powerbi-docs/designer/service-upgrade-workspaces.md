@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 34b0bd1a59ec66cf7a2e5eb41d2c1ec12a39d1e7
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 266a8609123f05f258daee60f6ae17f032ebae29
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128131"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410817"
 ---
 # <a name="upgrade-classic-workspaces-to-the-new-workspaces-in-power-bi"></a>Mettre à niveau les espaces de travail classiques vers de nouveaux espaces de travail dans Power BI
 
 Cet article explique comment mettre à niveau un espace de travail classique vers la nouvelle expérience d’espace de travail. Vous pouvez mettre à niveau n'importe quel espace de travail classique. Les nouveaux espaces de travail comportent des rôles d'espace de travail plus granulaires, pour vous permettre de mieux gérer l'accès au contenu. Vous bénéficiez d'une plus grande souplesse pour gérer les espaces de travail mis à niveau car ils sont moins connectés à leur groupe Office 365 d'origine. En savoir plus sur la [nouvelle expérience d'espace de travail](../service-new-workspaces.md). 
 
 >[!NOTE]
->Cette documentation est une préversion et couvre une fonctionnalité qui n'est pas encore disponible. Nous l'avons publiée pour que vous puissiez vous préparer à la nouvelle capacité et obtenir des éclaircissements sur toute question que vous pourriez vous poser avant la publication.  
+>La mise à niveau de l’espace de travail est disponible en préversion publique. 
 
 ![Mise à niveau réussie](media/service-upgrade-workspaces/power-bi-upgrade-success.png)
 
@@ -198,7 +198,15 @@ Certaines organisations souhaitent déplacer une grande partie ou la totalité d
 2. Demandez aux propriétaires de groupes Office 365, ou à votre administrateur Office 365, de mettre à niveau les espaces de travail. Si vous voulez mettre à jour l'espace de travail, vous devez devenir propriétaire du groupe.
 
 La capacité de mise à niveau de l'espace de travail ne fournit pas d'outils de mise à niveau en masse ou par programmation. Par ailleurs, les nouveaux groupes Office 365 créés dans votre entreprise continueront à apparaître dans Power BI. 
-    
+   
+   
+## <a name="known-issues"></a>Problèmes connus
+
+Il existe plusieurs problèmes connus que vous pouvez rencontrer :
+- Après la mise à niveau, les utilisateurs peuvent voir une boîte de dialogue d’avertissement « Échec de chargement du modèle ». Ce message s’affiche par erreur et peut être ignoré. 
+- Après la mise à niveau, certains noms d’espace de travail ne sont plus les mêmes qu’avant la mise à niveau. Si ce cas se présente, le nom de l’espace de travail est restauré avec un nom précédent ou le nom de l’espace de travail devient vide. Pour résoudre ce problème, renommez l’espace de travail avec le nom souhaité.
+- Après la mise à niveau d’un espace de travail sur lequel était installé un pack de contenu, vous pouvez voir des tableaux de bord supplémentaires dans l’espace de travail qui n’étaient pas visibles avant la mise à niveau. Cela se produit dans certains cas où un pack de contenu n’a pas été mis à jour récemment. Vous pouvez supprimer ces tableaux de bord sans problème.
+
 
 
 ## <a name="next-steps"></a>Étapes suivantes

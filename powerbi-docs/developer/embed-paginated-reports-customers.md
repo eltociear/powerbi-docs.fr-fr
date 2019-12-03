@@ -1,5 +1,5 @@
 ---
-title: Incorporer des rapports paginés Power BI dans votre application pour vos clients
+title: Incorporer des rapports paginés dans votre application pour vos clients
 description: Découvrez comment intégrer ou incorporer un rapport paginé Power BI dans une application à l’aide des API Power BI.
 author: KesemSharabi
 ms.author: kesharab
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 11/04/2019
-ms.openlocfilehash: 5611d65ab800c14b2570a12078c08cce5dc58147
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 1493f628ce822afa020e300ff7428da059fcc65d
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73877729"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311421"
 ---
 # <a name="tutorial-embed-power-bi-paginated-reports-into-an-application-for-your-customers-preview"></a>Tutoriel : Incorporer des rapports paginés Power BI dans une application pour vos clients (préversion)
 
@@ -37,6 +37,11 @@ Pour commencer, vous devez disposer des éléments suivants :
 * Au moins une [capacité](#create-a-dedicated-capacity) A4 ou P1, avec la charge de travail des [rapports paginés](../service-admin-premium-workloads.md#paginated-reports) activée
 
 Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
+
+> [!IMPORTANT]
+> * Vous devez utiliser un **principal de service**. L’utilisateur maître n’est pas pris en charge.
+> * Les sources de données qui nécessitent l’authentification unique ne sont pas prises en charge.
+> * Un jeu de données Power BI n’est pas pris en charge comme [source de données](../service-get-data.md).
 
 ## <a name="set-up-your-power-bi-environment"></a>Configurer votre environnement Power BI
 

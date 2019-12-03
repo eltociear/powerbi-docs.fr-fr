@@ -8,12 +8,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: bd6270731f79ac5a1e270ac36699470a0e6df978
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 3b90fcef50fc3f97a1a36e456eec254c422691a4
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060447"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164241"
 ---
 # <a name="power-bi-webinars"></a>Webinaires Power BI
 
@@ -28,6 +28,10 @@ Inscrivez-vous à nos prochains webinaires en direct ou regardez nos sessions en
 **How Microsoft Is Changing BI Data Protection**
 <br>par Anton Fritz et Adi Regev
 <br>[S’inscrire au webinaire du 4 décembre](https://info.microsoft.com/ww-landing-How-Microsoft-Is-Changing-BI-Data-Protection.html?lcid=EN-US)
+
+**Nine Trends Shaping the Future of Big Data Analytics**
+<br>par Vijay Gopalakrishnan
+<br>[S’inscrire au webinaire du 18 décembre](https://info.microsoft.com/ww-landing-Nine-Trends-Shaping-the-Future-of-Big-Data-Analytics.html?Lcid=EN-US)
 
 >[Prochains webinaires de la Communauté Power BI](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -87,7 +91,7 @@ Regardez les sessions enregistrées à tout moment
 
 ### <a name="getting-started"></a>Prise en main
 
-**Automatiser les tâches quotidiennes avec Power BI, PowerApps et Microsoft Flow**
+**Automate Day-to-Day Business Processes with Power BI, PowerApps, and Power Automate**
 <br>par Wim Coorevits et Enrique Plaza Garcia
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
@@ -107,7 +111,7 @@ Regardez les sessions enregistrées à tout moment
 <br>par Charles Sterling
 <br>[Regarder maintenant](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
 
-**L’impact économique global de Microsoft Flow et de PowerApps**
+**The Total Economic Impact of Power Automate and PowerApps**
 <br>par Jonathan Lipsitz et Enrique Plaza Garcia
 <br>[S’inscrire et regarder maintenant](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 

@@ -10,18 +10,18 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1966a9ea38f8ff9d1517b4df5ed0db1254ddf80d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cb28db10eecdc32f844e29c8beea178f08fbf920
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881779"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410860"
 ---
 # <a name="manage-data-sources"></a>Gérer les sources de données
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Power BI prend en charge de nombreuses sources de données locales, chacune ayant ses propres exigences. Une passerelle peut être utilisée pour une seule ou plusieurs sources de données. Pour cet exemple, nous vous montrons comment ajouter SQL Server en tant que source de données. Les étapes sont similaires pour d’autres sources de données.
+Power BI prend en charge de nombreuses [sources de données locales](power-bi-data-sources.md), chacune ayant ses propres exigences. Une passerelle peut être utilisée pour une seule ou plusieurs sources de données. Pour cet exemple, nous vous montrons comment ajouter SQL Server en tant que source de données. Les étapes sont similaires pour d’autres sources de données.
 
 La plupart des opérations de gestion des sources de données peuvent également être effectuées avec des API. Pour plus d’informations, voir [API REST (passerelles)](/rest/api/power-bi/gateways).
 
@@ -117,56 +117,7 @@ Lorsque vous ajoutez une source de données à la passerelle, vous devez fournir
 
 ## <a name="list-of-available-data-source-types"></a>Liste des types de sources de données disponibles
 
-La passerelle de données locale prend en charge les sources de données suivantes pour Power BI. En plus des sources de données locales, les sources situées derrière un pare-feu, un VPN ou un réseau virtuel peuvent également nécessiter une passerelle de données.
-
-| **Source de données** | **Active/DirectQuery** | **Actualisation manuelle ou planifiée (configurée par l’utilisateur)** |
-| --- | --- | --- |
-| Amazon Redshift |Oui |Oui |
-| Analysis Services |Oui |Oui |
-| Cubes AtScale |Oui |Oui |
-| Azure Active Directory |Non |Oui |
-| Stockage Blob Azure |Non |Oui |
-| Azure DevOps Server |Non |Oui |
-| Stockage Table Azure |Non |Oui |
-| Connecteur BI |Oui |Oui |
-| Denodo |Oui |Oui |
-| Dremio |Oui |Oui |
-| EmigoDataSourceConnector |Non |Oui |
-| Essbase |Oui |Oui |
-| Exasol |Oui |Oui |
-| Fichier |Non |Oui |
-| Dossier |Non |Oui |
-| Paxata |Non |Oui |
-| IBM DB2 |Oui |Oui |
-| Base de données Informix IBM |Non |Oui |
-| IBM Netezza |Oui |Oui |
-| Impala |Oui |Oui |
-| Jethro ODBC |Oui |Oui |
-| Kyligence Enterprise |Oui |Oui |
-| MarkLogic ODBC |Oui |Oui |
-| Microsoft Graph Security |Non |Oui |
-| MySQL |Non |Oui |
-| ODBC |Non |Oui |
-| OData |Non |Oui |
-| OLE DB |Non |Oui |
-| Oracle |Oui |Oui |
-| PostgreSQL |Non |Oui |
-| QubolePresto |Oui |Oui |
-| Connecteur Quick Base |Non |Oui |
-| Serveur de messages SAP Business Warehouse |Oui |Oui |
-| Serveur SAP Business Warehouse |Oui |Oui |
-| SAP HANA |Oui |Oui |
-| SQL Server |Oui |Oui |
-| SharePoint |Non |Oui |
-| Snowflake |Oui |Oui |
-| Spark |Oui |Oui |
-| SurveyMonkey |Non |Oui |
-| Sybase |Non |Oui |
-| TeamDesk.Database |Non |Oui |
-| Teradata |Oui |Oui |
-| Vertica |Oui |Oui |
-| Web |Non |Oui |
-| Workforce Dimensions |Non |Oui |
+Pour plus d’informations sur les sources de données prises en charge par la passerelle de données locale, consultez [Sources de données Power BI](power-bi-data-sources.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

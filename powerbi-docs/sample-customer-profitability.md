@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d6368ae61b2813972c3209e2af456ba5aa5fb81b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 160c5736bc2894e629f5bb375dd07e993def1e0c
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874014"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265551"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Exemple Rentabilité des clients pour Power BI : Visite guidée
 
@@ -128,7 +128,7 @@ La plupart des vignettes du tableau de bord de l’exemple Rentabilité des clie
 
     * **Team Scorecard** (Carte de performance de l’équipe) se concentre sur les performances des cinq responsables et leur activité.
     * **Industry Margin Analysis** (Analyse de la marge sectorielle) permet d’analyser la rentabilité par rapport au secteur.
-    * **Executive Scorecard** (Carte de performance de l’exécutif) affiche chacun des responsables, selon une mise en page définie pour Cortana.
+    * **Executive Scorecard** (Carte de performance des responsables) fournit une vue de chacun des responsables, selon un format de taille de page personnalisé.
 
 ### <a name="team-scorecard-page"></a>Page « Team Scorecard » (Carte de performance de l’équipe)
 ![Page de rapport Tableau de bord de l’équipe](media/sample-customer-profitability/customer2.png)
@@ -170,7 +170,7 @@ La page du rapport intitulée « Industry Margin Analysis » propose une autre
    * Valery, qui a un seul produit dans son portefeuille, travaille seulement dans cinq secteurs d’activité. Bien que son activité soit saisonnière, elle produit toujours une bulle de grande taille, ce qui est le signe qu’elle contribue de manière importante au résultat de l’entreprise. Est-ce que ses performances négatives sont liées aux secteurs ?
 
 ### <a name="executive-scorecard"></a>Executive Scorecard
-Cette page est mise en forme comme une carte de réponse pour Cortana. Pour plus d’informations, consultez [Créer une page de réponse personnalisées pour Cortana](service-cortana-answer-cards.md).
+Cette page a un format de taille de page personnalisé.
 
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Explorer les données en posant des questions dans Q&R
 Pour notre analyse, il serait intéressant d’identifier le secteur d’activité qui profite le plus à Valery en termes de chiffre d’affaires. Utilisons Q&R.

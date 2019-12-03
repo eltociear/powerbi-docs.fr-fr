@@ -1,46 +1,37 @@
 ---
-title: Utilisation de signets dans Power BI
+title: Utiliser des signets dans Power BI Desktop pour partager des insights et créer des récits
 description: Les signets dans Power BI Desktop vous permettent d’enregistrer les vues et les paramètres dans vos rapports, ainsi que de créer des présentations de type récit.
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 11/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b25c09e7dc24445b5ad2ba5263542bc62891b28f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: d22ac09ac357f3060e4fd79a4e9344a059dace53
+ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876682"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74311245"
 ---
-# <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Utiliser des signets pour partager des insights et créer des récits dans Power BI 
-Les **signets** de Power BI permettent de capturer la vue actuellement configurée d’une page de rapport, filtrage et état des visuels compris, puis de revenir à cet état en sélectionnant simplement le signet enregistré. 
+# <a name="use-bookmarks-in-power-bi-desktop-to-share-insights-and-build-stories"></a>Utiliser des signets dans Power BI Desktop pour partager des insights et créer des récits
+L’utilisation de *signets* dans Power BI Desktop vous permet de capturer la vue actuellement configurée d’une page de rapport, y compris le filtrage et l’état des objets visuels. Vous pouvez revenir ultérieurement à cet état en sélectionnant le signet enregistré. 
 
-Vous pouvez également créer une collection de signets, les réorganiser dans l’ordre de votre choix, puis parcourir chaque signet d’une présentation pour mettre en avant une série d’insights ou le récit que vous souhaitez raconter avec vos visuels et rapports. 
+Vous pouvez également créer une collection de signets, les réorganiser dans l’ordre de votre choix, puis parcourir chaque signet d’une présentation pour mettre en avant une série d’insights ou le récit que vous souhaitez raconter avec vos visuels et vos rapports. 
 
 ![Signets dans Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
-Les signets ont de nombreuses utilisations. Vous pouvez les utiliser pour suivre la progression de la création de rapports (les signets sont faciles à ajouter, à supprimer et à renommer). Il est également possible de créer des signets pour concevoir une présentation de type PowerPoint qui parcourt les signets dans l’ordre, de façon à accompagner votre rapport d’un récit. Il existe peut-être d’autres utilisations en fonction de votre usage.
+Les signets ont de nombreuses utilisations. Par exemple, vous pouvez utiliser les signets pour suivre la progression de la création de rapports (les signets sont faciles à ajouter, à supprimer et à renommer). Il est également possible de créer des signets pour concevoir une présentation de type PowerPoint qui parcourt les signets dans l’ordre, de façon à accompagner votre rapport d’un récit. 
 
 > [!TIP]
-> Pour plus d’informations sur l’utilisation de signets personnels dans le service Power BI, lisez le [billet de blog](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) annonçant la fonctionnalité des signets personnels. 
-
-### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Activer la préversion des signets (versions antérieures à mars 2018)
-Depuis la version de mars 2018 de Power BI Desktop, les signets sont en disponibilité générale. 
-
-Nous vous conseillons de toujours effectuer la mise à niveau vers la version la plus récente. Si vous utilisez une version antérieure de Power BI Desktop, vous pouvez essayer la fonctionnalité **Signets** à partir de la version **d’octobre 2017** de **Power BI Desktop** et, pour les rapports compatibles avec les signets, dans le **service Power BI** également. Pour activer la fonctionnalité en préversion, sélectionnez **Fichier > Options et paramètres > Options > Fonctionnalités en préversion**, puis cochez la case à côté de **Signets**. 
-
-![Activer les signets dans la fenêtre Options](media/desktop-bookmarks/bookmarks_02.png)
-
-Vous devrez redémarrer **Power BI Desktop** après avoir activé la préversion des signets.
+> Pour plus d’informations sur l’utilisation de signets personnels dans le service Power BI, lisez [Announcing personal bookmarks in the Power BI Service](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/). 
 
 ## <a name="using-bookmarks"></a>Utilisation des signets
-Pour utiliser des signets, sélectionnez le ruban **Vue**, puis activez la case du **volet Signets**. 
+Pour utiliser des signets, sélectionnez l’onglet **Affichage** dans le ruban Power BI Desktop, puis sélectionnez **Volet de signets**. 
 
-![Pour afficher le volet Signets, activez-le dans le ruban Vue.](media/desktop-bookmarks/bookmarks_03.png)
+![Activer le volet de signets](media/desktop-bookmarks/bookmarks_03.png)
 
 Lorsque vous créez un signet, les éléments suivants sont enregistrés :
 
@@ -50,137 +41,169 @@ Lorsque vous créez un signet, les éléments suivants sont enregistrés :
 * État de sélection des visuels (par exemple, filtres de mise en surbrillance croisée)
 * Ordre de tri
 * Emplacement d’exploration
-* Visibilité (d’un objet, à l’aide du volet **Sélection**)
+* Visibilité d’un objet (à l’aide du volet **Sélection**)
 * Le mode focus ou **À la une** des objets visibles
 
-Configurez une page de rapport comme vous souhaitez qu’elle apparaisse dans le signet. Une fois que votre page de rapport et les visuels sont organisés comment vous le souhaitez, sélectionnez **Ajouter** dans le volet **Signets** pour ajouter un signet. 
+Configurez une page de rapport telle que vous souhaitez qu’elle apparaisse dans le signet. Une fois que votre page de rapport et les visuels sont organisés comment vous le souhaitez, sélectionnez **Ajouter** dans le volet **Signets** pour ajouter un signet. 
 
 ![Ajouter un signet](media/desktop-bookmarks/bookmarks_04.png)
 
-**Power BI Desktop** crée un signet et lui donne un nom générique. Vous pouvez facilement *renommer*, *supprimer* ou *mettre à jour* un signet en sélectionnant les points de suspension en regard de son nom, puis en sélectionnant une action dans le menu qui s’affiche.
+Power BI Desktop crée un signet et lui donne un nom générique. Vous pouvez facilement **renommer**, **supprimer** ou **mettre à jour** un signet en sélectionnant les points de suspension en regard de son nom, puis en sélectionnant une action dans le menu qui s’affiche.
 
-![Sélectionnez le sous-menu d’un signet en utilisant les points de suspension](media/desktop-bookmarks/bookmarks_05.png)
+![Sélectionner le menu Signet à l’aide des points de suspension](media/desktop-bookmarks/bookmarks_05.png)
 
-Une fois que vous avez un signet, vous pouvez l’afficher en cliquant simplement dessus dans le volet **Signets**. 
+Une fois que vous avez créé un signet, affichez-le en le sélectionnant dans le volet **Signets**. 
 
-Vous pouvez également choisir si chaque signet appliquera des propriétés de *données*, comme des filtres et des segments, des propriétés *d’affichage*, comme À la une et sa visibilité, et les modifications de la page représentant la page qui était visible lors de l’ajout du signet. Ces fonctionnalités sont utiles si vous utilisez des signets pour naviguer entre les vues de rapport ou les sélections de visuels. Dans ce cas, vous pouvez désactiver les propriétés de données afin d’empêcher la réinitialisation des filtres quand les utilisateurs changent de vues en sélectionnant un signet. 
+Vous pouvez également choisir si chaque signet appliquera des propriétés de **données**, comme des filtres et des segments, des propriétés **d’affichage**, comme À la une et sa visibilité, et les modifications de la **page active** représentant la page qui était visible lors de l’ajout du signet. Ces fonctionnalités sont utiles si vous utilisez des signets pour naviguer entre les vues de rapport ou les sélections de visuels. Dans ce cas, vous pouvez désactiver les propriétés de données afin d’empêcher la réinitialisation des filtres quand les utilisateurs changent de vues en sélectionnant un signet. 
 
-Pour effectuer ces modifications, sélectionnez les points de suspension en regard du nom du signet, comme illustré dans l’image précédente, puis sélectionnez ou désélectionnez les coches en regard de *Données*, *Affichage* et autres contrôles. 
+Pour effectuer ces modifications, sélectionnez les points de suspension en regard du nom du signet, puis sélectionnez ou désélectionnez les coches en regard de **Données**, **Affichage** et autres contrôles. 
 
 ## <a name="arranging-bookmarks"></a>Organisation des signets
-Lorsque vous créez des signets, vous pouvez trouver que l’ordre dans lequel vous les créez n’est pas nécessairement l’ordre dans lequel vous voulez les présenter à votre audience. Cela ne constitue pas un problème, car vous pouvez facilement réorganiser l’ordre des signets.
+Lorsque vous créez des signets, vous pouvez trouver que l’ordre dans lequel vous les créez est différent de l’ordre dans lequel vous voulez les présenter à votre audience. Cela ne constitue pas un problème, car vous pouvez facilement réorganiser l’ordre des signets.
 
-Dans le volet **Signets**, effectuez simplement un glisser-déplacer des signets pour modifier leur ordre, comme dans l’image suivante. La barre jaune entre les signets désigne où le signet déplacé sera positionné.
+- Dans le volet **Signets**, glissez-déplacez les signets pour en changer l’ordre. 
 
-![Modifier l’ordre des signets par glisser-déplacer](media/desktop-bookmarks/bookmarks_06.png)
+   La barre jaune entre les signets désigne où le signet déplacé sera positionné.
+
+   ![Modifier l’ordre des signets par glisser-déplacer](media/desktop-bookmarks/bookmarks_06.png)
 
 L’ordre de vos signets peut devenir important lorsque vous utilisez la fonctionnalité **Vue** des signets, comme décrit dans la section suivante.
 
 ## <a name="bookmarks-as-a-slide-show"></a>Signets en mode diaporama
 Lorsque vous avez une collection de signets que vous souhaitez présenter dans l’ordre, vous pouvez sélectionner **Vue** dans le volet **Signets** pour lancer un diaporama.
 
-Le mode **Vue** offre quelques fonctionnalités utiles :
+Le mode **Vue** offre des fonctionnalités intéressantes.
+
+   ![Fonctionnalités de la barre de titre des signets](media/desktop-bookmarks/bookmarks_07.png)
 
 1. Le nom du signet apparaît dans la barre de titre de celui-ci, qui apparaît au bas du canevas.
+
 2. La barre de titre des signets comporte des flèches permettant de passer au signet suivant ou précédent.
+
 3. Vous pouvez quitter le mode **Vue** en sélectionnant **Quitter** dans le volet **Signets** ou la croix (**X**) dans la barre de titre des signets. 
 
-![Fonctionnalités de la barre de titre des signets](media/desktop-bookmarks/bookmarks_07.png)
+Lorsque vous êtes en mode **Vue**, vous pouvez fermer le volet **Signets** (en sélectionnant le **X** dans ce volet) pour fournir davantage d’espace à votre présentation. En mode **Vue**, tous les visuels sont interactifs et compatibles avec la sélection croisée, comme dans toute autre interaction directe. 
 
-Lorsque vous êtes en mode **Vue**, vous pouvez fermer le volet **Signets** (en cliquant sur le signe X sur ce volet) pour fournir davantage d’espace pour votre présentation. De plus, en mode **Vue**, tous les visuels sont interactifs et compatibles avec la sélection croisée, comme dans toute autre interaction. 
-
-## <a name="visibility---using-the-selection-pane"></a>Visibilité à l’aide du volet Sélection
-Un nouveau volet **Sélection** est également mis à disposition avec les signets. Le volet **Sélection** donne la liste de tous les objets de la page active. Il permet de sélectionner l’objet et de spécifier si un objet en particulier est visible. 
+## <a name="visibility-using-the-selection-pane"></a>Visibilité : Utilisation du volet Sélection
+Le volet **Sélection** (qui est associé au volet **Signets**) liste tous les objets de la page active. Il permet de sélectionner un objet et de spécifier si un objet est visible. 
 
 ![Activer le volet Sélection](media/desktop-bookmarks/bookmarks_08.png)
 
-Vous pouvez sélectionner un objet à l’aide du volet **Sélection**. De plus, vous pouvez indiquer si l’objet est actuellement visible en cliquant sur l’icône en forme d’œil à droite du visuel. 
+Dans le volet **Sélection**, sélectionnez un objet, et choisissez de le rendre ou non visible à l’aide de l’icône représentant un œil, qui est située à droite de l’objet. 
 
 ![Volet Sélection](media/desktop-bookmarks/bookmarks_09.png)
 
-Lorsque vous ajoutez un signet, l’état visible de chaque objet est également enregistré en fonction de son paramètre dans le volet **Sélection**. 
+Lorsque vous ajoutez un signet, l’état de visibilité de chaque objet est également enregistré en fonction de son paramètre dans le volet **Sélection**. 
 
-Il est important de noter que **des segments** continuent de filtrer une page de rapport, qu’ils soient visibles ou non. Par conséquent, vous pouvez créer différents signets, avec différents paramètres de segment. Vous pouvez ainsi donner un aspect complètement différent à une page de rapport (et mettre en évidence différents insights) en créant différents signets.
+Il est important de noter que les segments continuent de filtrer une page de rapport, qu’ils soient visibles ou non. Par conséquent, vous pouvez créer différents signets, avec différents paramètres de segment. Vous pouvez ainsi donner un aspect différent à une page de rapport (et mettre en évidence différents insights) en créant différents signets.
 
 ## <a name="bookmarks-for-shapes-and-images"></a>Signets pour les formes et images
-Vous pouvez également lier des formes et des images à des signets. Lorsque vous cliquez sur un objet, cette fonctionnalité affiche le signet associé à cet objet. Cela peut s’avérer particulièrement utile si vous travaillez avec des boutons. Pour en savoir plus, lisez l’article sur [l’utilisation des boutons dans Power BI](desktop-buttons.md). 
+Vous pouvez également lier des formes et des images à des signets. Lorsque vous sélectionnez un objet, cette fonctionnalité affiche le signet associé à l’objet. Cette fonctionnalité peut être particulièrement utile lorsque vous utilisez des boutons. Pour plus d’informations, consultez [Utilisation des boutons dans Power BI](desktop-buttons.md). 
 
-Pour affecter un signet à un objet, sélectionnez l’objet, puis développez la section **Action** dans le volet **Format de la forme**, comme indiqué dans l’image suivante.
+Pour affecter un signet à un objet : 
 
-![Ajouter un lien de signet à un objet](media/desktop-bookmarks/bookmarks_10.png)
+1. Sélectionnez l’objet dans le canevas de rapport. Ensuite, dans le volet **Format de la forme** qui s’affiche, déplacez le curseur **Action** sur la valeur **Activé**.
 
-Une fois que vous avez activé le curseur **Action** en le définissant sur **Activé**, vous pouvez indiquer si l’objet est un bouton de retour, un signet ou une commande Q&R. Si vous sélectionnez Signet, vous pouvez ensuite sélectionner les signets auxquels l’objet est lié.
+2. Développez la section **Action**. Sous **Type**, sélectionnez **Signet**.
 
-Les signets liés à des objets vous permettent d’effectuer des tâches très diverses. Vous pouvez créer un tableau visuel de contenu sur la page de rapport. Vous pouvez également fournir différentes vues (telles que les types de visuels) de la même information, en cliquant simplement sur un objet.
+3. Sous **Signets**, sélectionnez un signet.
 
-Lorsque vous êtes en mode Modification, vous pouvez utiliser Ctrl + clic pour suivre le lien. Si vous êtes dans un autre mode, cliquez simplement sur l’objet pour suivre le lien. 
+   ![Ajouter un lien de signet à un objet](media/desktop-bookmarks/bookmarks_10.png)
+
+Les signets liés à des objets vous permettent d’effectuer des tâches très diverses. Vous pouvez créer un tableau visuel de contenu dans la page de rapport. Vous pouvez également fournir différentes vues (telles que des types de visuels) de la même information.
+
+Lorsque vous êtes en mode édition, appuyez sur **Ctrl**, puis sélectionnez le lien pour le suivre. Si vous n’êtes pas en mode édition, sélectionnez l’objet pour suivre le lien. 
 
 ## <a name="bookmark-groups"></a>Groupes de signets
 
-À compter de la version d’août 2018 de **Power BI Desktop**, vous pouvez créer et utiliser des groupes de signets. Un groupe de signets est une collection de signets que vous spécifiez et qui peuvent être affichés et organisés sous forme de groupe. 
+À compter de la version d’août 2018 de Power BI Desktop, vous pouvez créer et utiliser des groupes de signets. Un groupe de signets est une collection de signets que vous spécifiez et qui peuvent être affichés et organisés sous forme de groupe. 
 
-Pour créer un groupe de signets, maintenez la touche Ctrl enfoncée et sélectionnez les signets que vous voulez inclure dans le groupe, puis cliquez sur les points de suspension à côté de l’un des signets sélectionnés, puis sélectionnez **Grouper** dans le menu qui s’affiche.
+Pour créer un groupe de signets : 
+1. Appuyez sur **Ctrl** et sélectionnez les signets que vous souhaitez inclure dans le groupe. 
 
-![Créer un groupe de signets](media/desktop-bookmarks/bookmarks_15.png)
+2. Sélectionnez les points de suspension en regard des signets sélectionnés, puis sélectionnez **Groupe** dans le menu qui s’affiche.
 
-**Power BI Desktop** nomme automatiquement le groupe *Groupe 1*. Heureusement, vous pouvez simplement double-cliquer sur le nom et le renommer comme vous le souhaitez.
+   ![Créer un groupe de signets](media/desktop-bookmarks/bookmarks_15.png)
+
+Power BI Desktop nomme automatiquement le groupe *Groupe 1*. Vous pouvez sélectionner les points de suspension en regard de ce nom, sélectionner **Renommer**, puis le renommer comme vous le souhaitez.
 
 ![Renommer un groupe de signets](media/desktop-bookmarks/bookmarks_16.png)
 
-Le fait de cliquer sur le nom du groupe de signets développe ou réduit seulement le groupe de signets ; le nom ne représente pas un signet par lui-même. 
+Comme avec tous les groupes de signets, le fait de développer le nom d’un groupe de signets développe ou réduit seulement le groupe de signets. Le nom ne représente pas le signet. 
 
-Lors de l’utilisation de la fonctionnalité **Afficher** des signets, ceci s’applique :
+Lorsque vous utilisez la fonctionnalité **Vue** des signets, les détails suivants s’appliquent :
 
 * Si le signet sélectionné est dans un groupe quand vous sélectionnez **Afficher** à partir des signets, seuls les signets *de ce groupe* apparaissent dans la session de visualisation. 
 
 * Si le signet sélectionné n’est pas dans un groupe ou est au plus haut niveau (comme le nom d’un groupe de signets), tous les signets de l’intégralité du rapport sont affichés, y compris les signets des groupes. 
 
-Pour dissocier des signets, sélectionnez simplement un signet dans un groupe, cliquez sur les points de suspension et sélectionnez **Dissocier** dans le menu qui apparaît. 
+Pour dissocier des signets : 
+1. Sélectionnez un signet dans un groupe et sélectionnez les points de suspension. 
 
-![Dissocier un groupe de signets](media/desktop-bookmarks/bookmarks_17.png)
+2. Dans le menu qui s’affiche, sélectionnez **Dissocier**.
 
-Notez que la sélection de **Dissocier** pour un signet d’un groupe retire tous les signets du groupe (cette action supprimer le groupe, mais pas les signets eux-mêmes). Ainsi, pour supprimer un seul signet d’un groupe, vous devez **Dissocier** n’importe quel membre de ce groupe, ce qui supprime le regroupement, sélectionner les membres que vous voulez dans le nouveau groupe (en utilisant Ctrl et en cliquant sur chaque signet), puis resélectionner **Grouper**. 
+   ![Dissocier un groupe de signets](media/desktop-bookmarks/bookmarks_17.png)
+
+   Le fait de sélectionner l’option **Dissocier** pour un signet a pour effet de retirer tous les signets du groupe (cette action supprimer le groupe, mais pas les signets eux-mêmes). 
+
+Pour supprimer un signet d’un groupe : 
+1. **Dissociez** tous les membres du groupe pour supprimer l’intégralité du regroupement. 
+
+2. Sélectionnez les membres que vous souhaitez inclure dans le nouveau groupe en appuyant sur **Ctrl** et en sélectionnant chaque signet, puis sélectionnez **Groupe** de nouveau. 
 
 
 ## <a name="using-spotlight"></a>Utilisation du mode À la une
-La fonctionnalité **À la une** est également fournie avec les signets. Avec la fonction **À la une**, vous pouvez attirer l’attention sur un graphique spécifique, par exemple lors de la présentation de vos signets en mode **Vue**.
+La fonctionnalité *À la une* est également fournie avec les signets. Avec la fonction À la une, vous pouvez attirer l’attention sur un graphique spécifique, par exemple lors de la présentation de vos signets en mode **Vue**.
 
-Comparons les modes **À la une** et **Focus** pour voir en quoi ils diffèrent.
+Comparons les modes À la une et Focus pour voir en quoi ils diffèrent.
 
-1. En mode **focus**, vous pouvez avoir un visuel qui remplit l’intégralité du canevas en sélectionnant l’**icône Mode focus**.
-2. En utilisant le mode **À la une**, vous pouvez mettre en évidence un visuel dans sa taille d’origine et atténuer tous les autres visuels en les rendant presque transparents. 
+1. Avec le mode Focus, vous sélectionnez l’icône **Mode Focus** d’un visuel. De cette façon, l’intégralité du canevas est remplie par le visuel.
 
-![Comparer les modes Focus et À la une](media/desktop-bookmarks/bookmarks_11.png)
+2. Avec le mode À la une, vous sélectionnez **À la une** en sélectionnant les points de suspension d’un visuel afin d’afficher celui-ci dans sa taille d’origine, ce qui rend transparent tous les autres visuels de la page. 
 
-Lorsque le visuel dans l’image précédente a l’icône **focus** activée, la page a l’aspect suivant :
+![Comparaison des modes Focus et À la une](media/desktop-bookmarks/bookmarks_11.png)
 
-![mode Focus](media/desktop-bookmarks/bookmarks_12.png)
+Lorsque vous sélectionnez l’icône **Mode Focus** du visuel dans l’image précédente, la page suivante s’affiche :
 
-En revanche, quand **À la une** est sélectionné dans le menu des points de suspension du visuel, la page ressemble à ce que vous voyez ici :
+![Mode focus](media/desktop-bookmarks/bookmarks_12.png)
 
-![mode À la une](media/desktop-bookmarks/bookmarks_13.png)
+En revanche, quand **À la une** est sélectionné à l’aide des points de suspension du visuel, la page suivante s’affiche :
 
-Si l’un des modes est sélectionné lors de l’ajout d’un signet, ce mode (Focus ou À la une) est conservé dans le signet.
+![Mode À la une](media/desktop-bookmarks/bookmarks_13.png)
+
+Si l’un des modes est sélectionné lors de l’ajout d’un signet, ce mode est conservé dans le signet.
 
 ## <a name="bookmarks-in-the-power-bi-service"></a>Signets dans le service Power BI
-Lorsque vous publiez un rapport contenant au moins un signet dans le **service Power BI** , vous pouvez afficher et utiliser les signets dans le **service Power BI**. Lorsque les signets sont disponibles dans un rapport, vous pouvez sélectionner **Vue > volet Sélection** ou **Vue > volet Signets** pour afficher chacun de ces volets.
+Lorsque vous publiez un rapport contenant au moins un signet dans le service Power BI, vous pouvez afficher et utiliser les signets dans le service Power BI. Lorsque des signets sont disponibles dans un rapport, affichez les volets **Sélection** et **Signets** en sélectionnant **Affichage** > **Volet Sélection** ou **Affichage** > **Volet Signets**. 
 
 ![Afficher les volets Signets et Sélection dans le service Power BI](media/desktop-bookmarks/bookmarks_14.png)
 
-Dans le **service Power BI**, le **volet Signets** fonctionne comme dans **Power BI Desktop**, y compris la possibilité de sélectionner **Vue** pour afficher vos signets dans l’ordre, comme un diaporama.
+Dans le service Power BI, le volet **Signets** fonctionne comme dans Power BI Desktop, y compris la possibilité de sélectionner **Vue** pour afficher vos signets dans l’ordre, comme un diaporama.
 
-Notez que vous devez utiliser la barre de titre de signets en gris pour naviguer entre les signets et pas les flèches noires (celles-ci vous permettent de passer d’une page de rapport à une autre, et pas d’un signet à un autre).
+Utilisez la barre de titre de signets grise, au lieu des flèches noires, pour parcourir les signets (les flèches noires permettent de passer d’une page de rapport à l’autre, et non d’un signet à l’autre).
+
+## <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Activer la préversion des signets (versions antérieures à mars 2018)
+Depuis la version de mars 2018 de Power BI Desktop, les signets sont en disponibilité générale. 
+
+Nous vous conseillons de toujours effectuer la mise à niveau vers la version la plus récente. Si vous utilisez une version antérieure de Power BI Desktop, vous pouvez essayer la fonctionnalité Signets à partir de la version d’octobre 2017 de Power BI Desktop et, pour les rapports compatibles avec les signets, dans le service Power BI également. 
+
+Pour activer la fonctionnalité Signets en préversion : 
+
+1. Sélectionnez **Fichier** > **Options et paramètres** > **Options** > **Fonctionnalités en préversion**, puis sélectionnez **Signets**. 
+
+   ![Activer les signets dans la fenêtre Options](media/desktop-bookmarks/bookmarks_02.png)
+
+2. Redémarrez Power BI Desktop pour activer la préversion des signets.
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
-Pour cette préversion des **signets**, vous devez garder à l’esprit les considérations et limitations suivantes.
+Pour cette version de la fonctionnalité Signets, vous devez garder à l’esprit les considérations et limitations suivantes.
 
-* La plupart des visuels personnalisés doivent fonctionner correctement avec l’attribution de signets. Si vous rencontrez des problèmes avec l’attribution de signets et un visuel personnalisé, contactez le créateur de ce dernier et demandez-lui d’ajouter la prise en charge des signets pour son visuel. 
-* Si vous ajoutez un visuel sur une page de rapport après la création d’un signet, le visuel s’affiche dans son état par défaut. Cela signifie également que si vous introduisez un segment dans une page où vous avez précédemment créé des signets, le segment se comporte avec son état par défaut.
-* Le déplacement parmi les visuels après la création d’un signet est reflété dans le signet. 
-
+* La plupart des visuels personnalisés doivent fonctionner correctement avec l’attribution de signets. Toutefois, si vous rencontrez des problèmes avec l’attribution de signets et un visuel personnalisé, contactez le créateur de ce dernier et demandez-lui d’ajouter la prise en charge des signets pour son visuel. 
+* Si vous ajoutez un visuel dans une page de rapport après la création d’un signet, le visuel s’affichera dans son état par défaut. Autrement dit, si vous introduisez un segment dans une page où vous avez précédemment créé des signets, le segment sera dans son état par défaut.
+* Le déplacement d’un visuel après la création d’un signet se reflète automatiquement dans ce dernier. 
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour plus d’informations sur les fonctionnalités qui sont similaires ou pour interagir avec des signets, consultez les articles suivants :
+Pour plus d’informations sur les fonctionnalités qui sont similaires ou sur l’utilisation des signets, consultez les articles suivants :
 
 * [Utiliser une extraction dans Power BI Desktop](desktop-drillthrough.md)
 * [Afficher une vignette de tableau de bord ou un visuel de rapport en mode Focus](consumer/end-user-focus.md)

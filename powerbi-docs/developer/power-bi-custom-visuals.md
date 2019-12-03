@@ -9,12 +9,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a45566d6fe9f4833ebed91e7c10656a8ca1c6961
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: e68d886564552d1b1cb2dc9e7c018c65a5cca039
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74102062"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265213"
 ---
 # <a name="visuals-in-power-bi"></a>Visuels dans Power BI
 
@@ -49,7 +49,7 @@ Les administrateurs Power BI approuvent et déploient des visuels Power BI dans
 
 Les membres de la communauté et Microsoft ont mis à disposition du public leurs visuels Power BI et les ont publiés sur la Place de marché [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Vous pouvez télécharger ces visuels et les ajouter à vos rapports Power BI. Microsoft a testé et approuvé ces visuels Power BI en termes de fonctionnalité et de qualité.
 
-Qu’est-ce qu’[AppSource](office-store.md) ? Il s’agit de l’endroit où vous pouvez rechercher des applications, des compléments et des extensions pour vos logiciels Microsoft. AppSource connecte des millions d’utilisateurs de produits comme Office 365, Azure, Dynamics 365, Cortana et Power BI à des solutions qui les aident à effectuer leur travail de façon plus efficace, intelligente et élaborée.
+Qu’est-ce qu’[AppSource](office-store.md) ? Il s’agit de l’endroit où vous pouvez rechercher des applications, des compléments et des extensions pour vos logiciels Microsoft. AppSource connecte des millions d’utilisateurs de produits comme Office 365, Azure, Dynamics 365 et Power BI à des solutions qui les aident à effectuer leur travail de façon plus efficace, intelligente et élaborée.
 
 ### <a name="certified-visuals"></a>Visuels certifiés
 

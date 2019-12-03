@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5138536fca255638e2cef802b885be1f5dfcbef9
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8e6adb5c07c18a72d278b17e70fa7f06d1f6fd5f
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881518"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164167"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Utiliser des passerelles personnelles dans Power BI
 
@@ -31,7 +31,7 @@ Le tableau suivant décrit les différences entre une passerelle de données loc
 
 |   |Passerelle de données locale | Passerelle de données locale (mode personnel) |
 | ---- | ---- | ---- |
-|Services cloud pris en charge |Power BI, PowerApps, Azure Logic Apps, Microsoft Flow, Azure Analysis Services, flux de données |Power BI |
+|Services cloud pris en charge |Power BI, PowerApps, Azure Logic Apps, Power Automate, Azure Analysis Services, dataflows |Power BI |
 |S’exécute |Comme configuré par les utilisateurs qui ont accès à la passerelle |En tant que vous-même pour l’authentification Windows et comme configuré par vous d’autres types d’authentification |
 |Installation seulement en tant qu’administrateur de l’ordinateur |Oui |Non |
 |Gestion centralisée de la passerelle et de la source de données |Oui |Non |

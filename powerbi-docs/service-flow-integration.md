@@ -1,5 +1,5 @@
 ---
-title: Intégration de Power BI avec Microsoft Flow
+title: Intégration de Power BI à Power Automate
 description: Apprenez à créer des flux déclenchés par des alertes de données Power BI.
 author: mgblythe
 ms.reviewer: ''
@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: a5b5a34e7cd61ac9d197faa0ef4410cd9558f597
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c8d768e1d02846eca10c6100aa8ec30dbb7f704b
+ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881844"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164319"
 ---
-# <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow et Power BI
+# <a name="power-automate-and-power-bi"></a>Power Automate et Power BI
 
-[Microsoft Flow](https://flow.microsoft.com/documentation/getting-started) est une offre SaaS pour l’automatisation des flux de travail dans un nombre croissant d’applications et de services SaaS dont dépendent les utilisateurs professionnels. Flow vous permet d’automatiser des tâches en intégrant vos applications et services favoris (y compris Power BI) pour obtenir des notifications, synchroniser des fichiers, collecter des données et bien plus encore. Les tâches répétitives sont simplifiées grâce à l’automatisation des flux de travail.
+[Power Automate](https://flow.microsoft.com/documentation/getting-started) est une offre SaaS pour l’automatisation des workflows dans un nombre croissant d’applications et de services SaaS sur lesquels les utilisateurs professionnels s’appuient. Flow vous permet d’automatiser des tâches en intégrant vos applications et services favoris (y compris Power BI) pour obtenir des notifications, synchroniser des fichiers, collecter des données et bien plus encore. Les tâches répétitives sont simplifiées grâce à l’automatisation des flux de travail.
 
 [Prenez en main Flow dès maintenant.](https://flow.microsoft.com/documentation/getting-started)
 
@@ -30,12 +30,12 @@ Découvrez la façon dont Sirui crée un flux qui envoie un message détaillé �
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Créer un flux déclenché par une alerte de données Power BI
 
 ### <a name="prerequisites"></a>Conditions préalables
-Ce didacticiel vous montre comment créer deux flux différents : un à partir d’un modèle et l’autre à partir de zéro. Pour la suite, [définissez une alerte de données dans Power BI](service-set-data-alerts.md), créez un compte Slack gratuit et [inscrivez-vous gratuitement à Microsoft Flow](https://flow.microsoft.com/#home-signup).
+Ce didacticiel vous montre comment créer deux flux différents : un à partir d’un modèle et l’autre à partir de zéro. Pour la suite, [créez une alerte de données dans Power BI](service-set-data-alerts.md), créez un compte Slack gratuit et [inscrivez-vous gratuitement à Power Automate](https://flow.microsoft.com/#home-signup).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Créer un flux qui utilise Power BI - à partir d’un modèle
 Dans cette tâche, vous allez utiliser un modèle pour créer un simple flux qui est déclenché par une alerte de données Power BI (notification).
 
-1. Connectez-vous à Microsoft Flow (flow.microsoft.com).
+1. Connectez-vous à Power Automate (flow.microsoft.com).
 2. Sélectionnez **Mes flux**.
    
    ![barre de menus Flux](media/service-flow-integration/power-bi-my-flows.png)
@@ -80,7 +80,7 @@ Ce modèle a un déclencheur (alerte de données Power BI en cas de nouvelles m
 ## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Créer entièrement un flux qui utilise Power BI
 Dans cette tâche, vous allez créer entièrement un simple flux qui est déclenché par une alerte de données Power BI (notification).
 
-1. Connectez-vous à Microsoft Flow.
+1. Connectez-vous à Power Automate.
 2. Sélectionnez **Mes flux** > **Créer entièrement**.
    
    ![barre de menus supérieure Flux](media/service-flow-integration/power-bi-my-flows.png)
@@ -107,7 +107,7 @@ Dans cette tâche, vous allez créer entièrement un simple flux qui est déclen
     ![Le flux déclenche une notification Outlook](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Prise en main de Microsoft Flow](https://flow.microsoft.com/documentation/getting-started/)
+* [Bien démarrer avec Power Automate](https://flow.microsoft.com/documentation/getting-started/)
 * [Définir des alertes de données dans le service Power BI](service-set-data-alerts.md)
 * [Définir des alertes de données sur votre iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Définir des alertes dans l’application mobile Power BI pour Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

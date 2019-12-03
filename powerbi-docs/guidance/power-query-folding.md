@@ -8,22 +8,20 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 1ddcc94e2286c82f7e865a2a8012b9d407b3c171
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 01c3d7ac00ec4aa50373e36e1732d4eda55b280c
+ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875362"
+ms.lasthandoff: 11/23/2019
+ms.locfileid: "74410791"
 ---
 # <a name="the-importance-of-query-folding"></a>L’importance du Query Folding
 
 Cet article s’adresse aux modélisateurs de données développant des modèles dans Power BI Desktop. Il décrit le Query Folding et explique son importance. Il décrit également les sources de données et les transformations qui peuvent obtenir le Query Folding et comment déterminer si vos requêtes Power Query peuvent être pliées, que ce soit entièrement ou partiellement. Enfin, il fournit des conseils sur les bonnes pratiques pour savoir quand et comment obtenir le Query Folding.
 
-## <a name="background"></a>Arrière-plan
-
 Le Query Folding est la possibilité pour une requête Power Query de générer une seule instruction de requête pour récupérer et transformer des données sources. Le moteur mashup Power Query s’efforce d’obtenir le Query Folding chaque fois que possible, car il permet d’établir le chemin le plus efficace pour connecter une table de modèle Power BI à sa source de données sous-jacente.
 
-Le Query Folding est un sujet important pour la modélisation des données pour plusieurs raisons :
+Le Query Folding est un concept important de la modélisation des données pour plusieurs raisons :
 
 - **Tables de modèle en mode Import :** l’actualisation des données est efficace pour les tables de modèle en mode Import, en termes d’utilisation des ressources et de durée d’actualisation.
 - **Tables en mode de stockage DirectQuery et Double :** chaque table en mode de stockage DirectQuery et Double doit être basée sur une requête Power Query qui peut être pliée.
@@ -35,11 +33,11 @@ Nous recommandons que les modélisateurs de données visent l’efficacité dans
 
 ## <a name="sources-that-support-query-folding"></a>Sources qui prennent en charge le Query Folding
 
-La plupart des sources de données compatibles avec le concept de langage de requête prennent en charge le Query Folding. Celles-ci peuvent inclure les bases de données relationnelles, les flux OData (y compris les listes SharePoint), Exchange et Active Directory. Toutefois, ce n’est généralement pas le cas des sources de données telles que les fichiers plats, les objets blob et le web.
+La plupart des sources de données compatibles avec le concept de langage de requête prennent en charge le Query Folding. Ces sources de données peuvent inclure des bases de données relationnelles, des flux OData (notamment des listes SharePoint), Exchange et Active Directory. Toutefois, ce n’est généralement pas le cas des sources de données telles que les fichiers plats, les objets blob et le web.
 
 ## <a name="transformations-that-can-achieve-query-folding"></a>Transformations pouvant obtenir le Query Folding
 
-Une transformation de source de données relationnelles pouvant être pliée par requête est une transformation qui peut être écrite sous la forme d’une instruction SELECT unique. Une instruction SELECT peut être construite avec les clauses WHERE, GROUP BY et JOIN appropriées. Elle peut également contenir des expressions de colonne (calculs) qui utilisent des fonctions intégrées communes prises en charge par les bases de données SQL.
+Une transformation de source de données relationnelles pouvant être pliée par requête peut être écrite dans une seule instruction SELECT. Une instruction SELECT peut être construite avec les clauses WHERE, GROUP BY et JOIN appropriées. Elle peut également contenir des expressions de colonne (calculs) qui utilisent des fonctions intégrées communes prises en charge par les bases de données SQL.
 
 En règle générale, la liste à puces suivante décrit les transformations qui peuvent être pliées par requête.
 
@@ -50,7 +48,7 @@ En règle générale, la liste à puces suivante décrit les transformations qui
 - Développement de colonnes d’enregistrements (colonnes clés étrangères sources) pour obtenir une jointure de deux tables sources (clause JOIN)
 - Fusion non approximative de requêtes pouvant être pliées en fonction de la même source (clause JOIN)
 - Ajout de requêtes pouvant être pliées en fonction de la même source (opérateur UNION ALL)
-- Ajout de colonnes personnalisées avec une _logique simple_ (expressions de colonne SELECT). Une logique simple implique des opérations peu compliquées, y compris éventuellement l’utilisation de fonctions M qui ont des fonctions équivalentes dans la source de données SQL, telles que les fonctions mathématiques ou de manipulation de texte. Par exemple, les expressions suivantes retournent le composant année de la valeur de colonne **OrderDate** (pour retourner une valeur numérique).
+- Ajout de colonnes personnalisées avec une _logique simple_ (expressions de colonne SELECT). Une logique simple implique des opérations peu compliquées, y compris éventuellement l’utilisation de fonctions M qui ont des fonctions équivalentes dans la source de données SQL, telles que les fonctions mathématiques ou de manipulation de texte. Par exemple, l’expression suivante retourne le composant année de la valeur de colonne **OrderDate** (pour retourner une valeur numérique).
 
     ```powerquery-m
     Date.Year([OrderDate])
@@ -60,11 +58,11 @@ En règle générale, la liste à puces suivante décrit les transformations qui
 
 ## <a name="transformations-that-prevent-query-folding"></a>Transformations qui empêchent le Query Folding
 
-En règle générale, la liste à puces suivante décrit les transformations qui empêchent le Query Folding. Cette liste ne se veut pas exhaustive.
+En règle générale, la liste à puces suivante décrit les transformations qui empêchent le Query Folding. Cette liste n’est pas exhaustive.
 
 - Fusion de requêtes basées sur différentes sources
 - Ajout de requêtes (union) basées sur différentes sources
-- Ajout de colonnes personnalisées avec une _logique complexe_. Une logique complexe implique l’utilisation de fonctions M qui n’ont pas de fonctions équivalentes dans la source de données. Par exemple, les expressions suivantes mettent en forme la valeur de colonne **OrderDate** (pour retourner une valeur de texte).
+- Ajout de colonnes personnalisées avec une _logique complexe_. Une logique complexe implique l’utilisation de fonctions M qui n’ont pas de fonctions équivalentes dans la source de données. Par exemple, l’expression suivante met en forme la valeur de colonne **OrderDate** (pour retourner une valeur de texte).
 
     ```powerquery-m
     Date.ToText([OrderDate], "yyyy")
@@ -73,7 +71,7 @@ En règle générale, la liste à puces suivante décrit les transformations qui
 - Ajout de colonnes d’index
 - Changement du type de données d’une colonne
 
-Notez que quand une requête Power Query englobe plusieurs sources de données, l’incompatibilité des niveaux de confidentialité des sources de données peut empêcher le Query Folding. Pour plus d’informations, consultez l’article [Niveaux de confidentialité dans Power BI Desktop](../desktop-privacy-levels.md).
+Quand une requête Power Query englobe plusieurs sources de données, l’incompatibilité des niveaux de confidentialité des sources de données peut empêcher le Query Folding. Pour plus d’informations, consultez l’article [Niveaux de confidentialité dans Power BI Desktop](../desktop-privacy-levels.md).
 
 ## <a name="determine-when-a-query-can-be-folded"></a>Déterminer quand une requête peut être pliée
 
@@ -85,7 +83,7 @@ Pour afficher la requête pliée, sélectionnez l’option **Afficher la requêt
 
 ![Exemple de requête native](media/power-query-folding/native-query-example.png)
 
-Si l’option **Afficher la requête native** n’est pas activée (grisée), cela indique que toutes les étapes de la requête ne peuvent pas être pliées. Toutefois, il est possible qu’un sous-ensemble d’étapes puisse être plié. En remontant à partir de la dernière étape, vous pouvez vérifier chaque étape pour voir si l’option **Afficher la requête native** est activée. Vous saurez ainsi où, dans la séquence d’étapes, le Query Folding ne peut plus être obtenu.
+Si l’option **Afficher la requête native** n’est pas activée (grisée), cela indique que toutes les étapes de la requête ne peuvent pas être pliées. Toutefois, il est possible qu’un sous-ensemble d’étapes puisse être plié. En remontant à partir de la dernière étape, vous pouvez vérifier chaque étape pour voir si l’option **Afficher la requête native** est activée. Quand cela se produit, vous saurez ainsi où, dans la séquence d’étapes, le Query Folding n’a plus pu être effectué.
 
 ![Exemple illustrant l’impossibilité pour Power Query d’obtenir le Query Folding](media/power-query-folding/query-folding-not-example.png)
 
@@ -95,7 +93,7 @@ En résumé, pour une table de mode de stockage DirectQuery ou Double, la requê
 
 La liste à puces suivante fournit des conseils sur les bonnes pratiques.
 
-- **Déléguer la plus grande quantité possible de traitement à la source de données :** quand toutes les étapes d’une requête Power Query ne peuvent pas être pliées, découvrez l’étape qui empêche le Query Folding. Dans la mesure du possible, déplacez les étapes suivantes plus en amont dans la séquence afin qu’elles puissent être prises en compte dans le Query Folding. Notez que le moteur mashup Power Query peut être suffisamment intelligent pour réorganiser les étapes de requête quand il génère la requête source.
+- **Déléguer la plus grande quantité possible de traitement à la source de données :** quand toutes les étapes d’une requête Power Query ne peuvent pas être pliées, découvrez l’étape qui empêche le Query Folding. Dans la mesure du possible, déplacez les étapes suivantes plus en amont dans la séquence afin qu’elles puissent être prises en compte dans le Query Folding. Le moteur mashup Power Query peut être suffisamment intelligent pour réorganiser les étapes de requête quand il génère la requête source.
 
 Pour une source de données relationnelle, si l’étape qui empêche le Query Folding peut être obtenue dans une seule instruction SELECT ou dans la logique procédurale d’une procédure stockée, envisagez d’utiliser une instruction de requête native, comme décrit ci-après.
 
@@ -113,7 +111,7 @@ Pour une source de données relationnelle, si l’étape qui empêche le Query F
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations sur le Query Folding et les sujets connexes, consultez les ressources suivantes :
+Pour plus d’informations sur le Query Folding et les articles connexes, consultez les ressources suivantes :
 
 - [Utiliser des modèles composites dans Power BI Desktop](../desktop-composite-models.md)
 - [Actualisation incrémentielle dans Power BI Premium](../service-premium-incremental-refresh.md)

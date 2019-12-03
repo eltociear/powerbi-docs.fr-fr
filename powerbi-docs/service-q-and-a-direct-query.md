@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 8bb3597d2877376431a2249428e88d56bee2c0a1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: cf1d67318fc86b1044e38e6f4f5f56c9473c39a1
+ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871806"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74265502"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Activer la fonctionnalité Questions et réponses pour les connexions actives dans Power BI
 ## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Qu’est-ce que la passerelle de données locale ?  Qu’est-ce qu’une connexion active ?
@@ -23,11 +23,11 @@ Les jeux de données dans Power BI peuvent être importés dans Power BI ou vous
 ## <a name="qa-for-on-premises-data-gateway-datasets"></a>Questions et réponses pour les jeux de données de la passerelle de données locale
 Si vous souhaitez utiliser les Q&R avec des jeux de données auxquels vous accédez par le biais d’une passerelle, vous devez d’abord les activer.
 
-Une fois activé, Power BI crée un index de votre source de données et charge un sous-ensemble de ces données dans Power BI pour permettre de poser des questions. L’opération de création de l’index initial peut prendre plusieurs minutes et Power BI effectue la maintenance et la mise à jour de l’index automatiquement à mesure que vos données évoluent. L’utilisation des Q&R avec ces jeux de données entraîne le même comportement qu’avec les données publiées sur Power BI. L’ensemble complet des fonctionnalités disponibles dans les Q&R est pris en charge dans les deux cas, notamment en cas d’utilisation de la source de données avec Cortana.
+Une fois activé, Power BI crée un index de votre source de données et charge un sous-ensemble de ces données dans Power BI pour permettre de poser des questions. L’opération de création de l’index initial peut prendre plusieurs minutes et Power BI effectue la maintenance et la mise à jour de l’index automatiquement à mesure que vos données évoluent. L’utilisation des Q&R avec ces jeux de données entraîne le même comportement qu’avec les données publiées sur Power BI. L’ensemble complet des fonctionnalités disponibles dans Questions et réponses est pris en charge dans les deux cas.
 
-Lorsque vous posez des questions dans Power BI, les Q&R déterminent le meilleur visuel de construction ou de feuille de rapport à utiliser pour répondre à votre question à l’aide d’un index de votre jeu de données. Après avoir déterminé la meilleure réponse potentielle, les Q&R utilisent DirectQuery pour extraire des données actives à partir de la source de données à travers la passerelle pour remplir des graphiques et des diagrammes. Cela garantit que les résultats des Q&R Power BI affichent toujours les données les plus récentes directement à partir de la source de données sous-jacente.
+Lorsque vous posez des questions dans Power BI, les Q&R déterminent le meilleur visuel de construction ou de feuille de rapport à utiliser pour répondre à votre question à l’aide d’un index de votre jeu de données. Après avoir déterminé la meilleure réponse potentielle, les Q&R utilisent DirectQuery pour extraire des données actives à partir de la source de données à travers la passerelle pour remplir des graphiques et des diagrammes. De cette façon, Questions et réponses Power BI affiche toujours les données les plus récentes, directement à partir de la source de données sous-jacente.
 
-Comme les Q&R Power BI utilisent des valeurs de texte et le schéma à partir de votre source de données pour déterminer comment interroger le modèle sous-jacent, les recherches de valeurs de texte spécifiques nouvelles ou supprimées (par exemple, en demandant un nom de client associé à un enregistrement de texte nouvellement ajouté) doivent pouvoir s’appuyer sur un index mis à jour avec les valeurs les plus récentes. Power BI met automatiquement à jour l’index de texte et de schéma dans une fenêtre de 60 minutes.
+Comme les Q&R Power BI utilisent des valeurs de texte et le schéma à partir de votre source de données pour déterminer comment interroger le modèle sous-jacent, les recherches de valeurs de texte spécifiques nouvelles ou supprimées (par exemple, en demandant un nom de client associé à un enregistrement de texte nouvellement ajouté) doivent pouvoir s’appuyer sur un index mis à jour avec les valeurs les plus récentes. Power BI met automatiquement à jour l’index de texte et de schéma dans une fenêtre de 60 minutes.
 
 Pour plus d’informations, consultez :
 
@@ -43,20 +43,20 @@ Une fois que vous avez configuré la passerelle de données, connectez-vous à v
 2. Sélectionnez **Jeux de données**, puis choisissez le jeu de données à activer pour les Q&R.
    
    ![écran Jeux de données du menu Paramètres](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
-3. Développez **Q&R et Cortana**, activez la case à cocher pour **activer les Q&R pour ce jeu de données** et choisissez **appliquer**.
+3. Développez **Questions et réponses**, cochez la case **Activer Questions et réponses pour ce jeu de données** et choisissez **Appliquer**.
    
-    ![Zone Questions et réponses développée](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
+    ![Zone Questions et réponses développée](media/service-q-and-a-direct-query/power-bi-qna-dataset-direct-query.png)
 
 ## <a name="what-data-is-cached-and-how-is-privacy-protected"></a>Quelles sont les données mises en cache et quelle est la politique de confidentialité ?
-Lorsque vous activez les Q&R pour vos données locales, un sous-ensemble de données est mis en cache dans le service. Le but est d’assurer des performances de Q&R raisonnables. Power BI exclut les valeurs dépassant 24 caractères de la mise en cache. Le cache est supprimé après quelques heures une fois les Q&R désactivées en décochant la case permettant **d’activer les Q&R pour ce jeu de données**, ou lorsque vous supprimez votre jeu de données.
+Lorsque vous activez les Q&R pour vos données locales, un sous-ensemble de données est mis en cache dans le service. Cette mise en cache garantit à Questions et réponses des performances raisonnables. Power BI exclut les valeurs dépassant 24 caractères de la mise en cache. Le cache est supprimé après quelques heures une fois les Q&R désactivées en décochant la case permettant **d’activer les Q&R pour ce jeu de données**, ou lorsque vous supprimez votre jeu de données.
 
 ## <a name="considerations-and-troubleshooting"></a>Considérations et résolution des problèmes
 La fonctionnalité présente certaines limitations :
 
 * Initialement, la fonctionnalité n’est disponible que pour les sources de données tabulaires SQL Server 2016 Analysis Services. La fonctionnalité est optimisée pour travailler avec des données tabulaires. L’expérience de Questions et réponses n’est pas encore prise en charge pour les données multidimensionnelles. D’autres sources de données prises en charge par la passerelle de données locale seront déployées au fil du temps.
-* La prise en charge complète de la sécurité au niveau des lignes définie dans SQL Server Analysis Services n’est pas disponible initialement. Lorsque vous posez des questions dans les Q&R, la « saisie semi-automatique » des questions peut afficher des valeurs de chaînes auxquelles un utilisateur n’a pas accès. Toutefois, la sécurité au niveau des lignes définie dans le modèle est respectée pour les rapports et graphiques visuels. Aucune donnée numérique sous-jacente ne peut donc être exposée. Des options permettant de contrôler ce comportement seront disponibles dans des prochaines mises à jour.
+* La prise en charge complète de la sécurité au niveau des lignes définie dans SQL Server Analysis Services n’est pas disponible initialement. Lorsque vous posez des questions dans Questions et réponses, la « saisie semi-automatique » des questions peut afficher des valeurs de chaînes auxquelles un utilisateur n’a pas accès. Toutefois, la sécurité au niveau des lignes définie dans le modèle est respectée pour les rapports et graphiques visuels. Aucune donnée numérique sous-jacente ne peut donc être exposée. Des options permettant de contrôler ce comportement seront disponibles dans des prochaines mises à jour.
 * La sécurité au niveau objet (OLS) n’est pas prise en charge. Questions et réponses ne respecte pas la sécurité au niveau objet et peut révéler les noms de tables ou de colonnes aux utilisateurs qui n’y ont pas accès. Vous avez tout intérêt à activer la sécurité au niveau des lignes (RLS) de façon à sécuriser aussi les valeurs de données. 
-* Les connexions actives sont uniquement prises en charge avec la passerelle de données locale. Par conséquent, elles ne peuvent pas être utilisées avec la passerelle personnelle.
+* Les connexions actives sont uniquement prises en charge avec la passerelle de données locale. Par conséquent, cette fonctionnalité ne peut pas être utilisée avec la passerelle personnelle.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
