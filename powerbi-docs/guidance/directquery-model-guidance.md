@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: d7fcc054ccf0bea1a036eaf24cb9631a2abb3969
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
+ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410900"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74478622"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Guide du modèle DirectQuery dans Power BI Desktop
 
@@ -99,7 +99,7 @@ Les rapports basés sur un jeu de données DirectQuery peuvent être optimisés 
     
 - **Appliquer d’abord des filtres :** Lors de la conception initiale des rapports, nous vous recommandons d’appliquer les filtres applicables (au niveau du rapport, de la page ou du visuel) avant de mapper les champs aux champs de visuel. Par exemple, plutôt que de faire glisser les mesures **Country** et **Sales**, puis de filtrer par une année particulière, appliquez d’abord le filtre sur le champ **Year**. En effet, chaque étape de création d’un visuel entraîne l’envoi d’une requête, et même s’il est possible d’apporter une autre modification avant la première requête, cela fait toujours peser une charge inutile sur la source de données sous-jacente. L’application précoce de filtres rend généralement ces requêtes intermédiaires moins coûteuses et plus rapides. De plus, l’impossibilité d’appliquer des filtres tôt peut entraîner un dépassement de la limite de 1 million de lignes, comme décrit ci-dessus.
 - **Limitez le nombre de visuels sur une page :** Lors de l’ouverture d’une page de rapport (et de l’application des filtres de page), tous les visuels d’une page sont actualisés. Toutefois, il existe une limite quant au nombre de requêtes qui peuvent être envoyées en parallèle, imposée par l’environnement Power BI et le paramètre de modèle **Nombre maximal de connexions par source de données**, comme décrit ci-dessus. Ainsi, plus le nombre de visuels de page augmente, plus il est probable qu’ils soient actualisés en série. Cela augmente le temps nécessaire pour actualiser la page entière, et augmente également le risque que des visuels affichent des résultats incohérents (pour les sources de données volatiles). Il est donc recommandé de limiter le nombre de visuels sur une page donnée, et d’avoir plutôt un nombre plus important de pages plus simples. Le remplacement de plusieurs visuels de carte par un seul visuel de carte multiligne peut aboutir à une mise en page similaire.
-- **Désactiver l’interaction entre les visuels :** Les interactions liées à la sélection croisée et au filtrage croisé nécessitent l’envoi des requêtes à la source sous-jacente. Si ces interactions ne sont pas nécessaires, il est recommandé de les désactiver si le temps nécessaire pour répondre aux sélections des utilisateurs est trop long. La désactivation est possible soit pour l’intégralité du rapport (comme décrit ci-dessus pour les options de réduction des requêtes), soit au cas par cas comme le décrit l’article [Comment les visuels s’entrefiltrent dans un rapport Power BI](../consumer/end-user-interactions.md).
+- **Désactiver l’interaction entre les visuels :** Les interactions liées à la sélection croisée et au filtrage croisé nécessitent l’envoi des requêtes à la source sous-jacente. Si ces interactions ne sont pas nécessaires, il est recommandé de les désactiver si le temps nécessaire pour répondre aux sélections des utilisateurs est trop long. Vous pouvez désactiver ces interactions dans l’intégralité du rapport (comme décrit dans la section Options de réduction des requêtes ci-dessus) ou au cas par cas. Pour plus d’informations, consultez [Comment les visuels s’entrefiltrent dans un rapport Power BI](../consumer/end-user-interactions.md).
 
 En plus de la liste de techniques d’optimisation ci-dessus, chacune des fonctions de création de rapports suivantes peut contribuer à des problèmes de performances :
 
@@ -110,8 +110,8 @@ En plus de la liste de techniques d’optimisation ci-dessus, chacune des foncti
     
     Il peut en résulter l’envoi de deux requêtes à la source sous-jacente :
     
-      - La première requête récupère les catégories correspondant à la condition (ventes supérieures à 15 millions de dollars).
-      - La deuxième requête récupère ensuite les données nécessaires pour le visuel, en ajoutant les catégories qui respectent la condition de la clause WHERE.
+    - La première requête récupère les catégories correspondant à la condition (ventes supérieures à 15 millions de dollars).
+    - La deuxième requête récupère ensuite les données nécessaires pour le visuel, en ajoutant les catégories qui respectent la condition de la clause WHERE.
     
     Cela fonctionne généralement bien s’il existe des centaines, voire des milliers de catégories, comme dans cet exemple. Les performances peuvent toutefois se dégrader si le nombre de catégories est beaucoup plus élevé (en effet, la requête échoue s’il y a plus de 1 million de catégories remplissant la condition, en raison de la limite de 1 million de lignes évoquée plus haut).
 - **Filtres TopN :** vous pouvez définir des filtres avancés pour filtrer uniquement les N premières (ou dernières) valeurs classées par une mesure. Vous pouvez, par exemple, afficher uniquement les cinq premières catégories dans le visuel ci-dessus. Comme les filtres de mesures, cela entraîne l’envoi de deux requêtes à la source de données sous-jacente. Toutefois, la première requête retourne toutes les catégories de la source sous-jacente, puis les N premières catégories sont déterminées sur la base des résultats retournés. Selon la cardinalité de la colonne impliquée, cela peut entraîner des problèmes de performances (ou des échecs de requête en raison de la limite de 1 million de lignes).
@@ -127,7 +127,7 @@ Vous pouvez obtenir de nombreuses améliorations fonctionnelles et de performanc
 
 ## <a name="educate-users"></a>Former les utilisateurs
 
-Il est important de former vos utilisateurs à l’utilisation efficace des rapports basés sur des jeux de données DirectQuery. Les auteurs de vos rapports doivent assimiler le contenu décrit dans [Optimiser les conceptions de rapport](#optimize-report-designs).
+Il est important de former vos utilisateurs à l’utilisation efficace des rapports basés sur des jeux de données DirectQuery. Les auteurs de vos rapports doivent assimiler le contenu décrit dans [Optimiser les conceptions de rapport](#optimize-report-designs section).
 
 Nous vous recommandons de former les consommateurs aux rapports qui sont basés sur des jeux de données DirectQuery. Il peut être utile pour eux de comprendre l’architecture générale des données, y compris les limitations pertinentes décrites dans cet article. Informez-les que les réponses d’actualisation et le filtrage interactif peuvent parfois s’avérer lents. Quand les utilisateurs des rapports comprennent la raison pour laquelle une dégradation des performances se produit, ils sont moins susceptibles de se méfier des rapports et des données.
 

@@ -58,6 +58,8 @@
               href: end-user-pdf.md
             - name: Ajouter un signet à un rapport
               href: end-user-bookmarks.md
+            - name: Rapports paginés
+              href: end-user-paginated-report.md
         - name: Visualisations
           items:
             - name: "Que puis-je faire avec les visualisations\_?"
