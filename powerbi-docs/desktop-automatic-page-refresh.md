@@ -7,15 +7,15 @@ ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b9f7c745ad251fdb81c7898130cd3ca6c5d32af9
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.openlocfilehash: 50daa90f937a9d1c7081d9b22e3c743da950945c
+ms.sourcegitcommit: fe9253a6021b9e198afa28aa9c670c3bacf59674
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164164"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548561"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Actualisation automatique des pages dans Power BI Desktop (préversion)
 
@@ -83,7 +83,7 @@ Voyons ensuite comment vous pouvez potentiellement détecter et diagnostiquer le
 
 Vous pouvez également définir des intervalles d’actualisation automatique de la page pour les rapports qui ont été créés dans Power BI Desktop et qui sont publiés dans le service Power BI. 
 
-L’actualisation automatique de la page pour les rapports dans le service Power BI est configurée avec des étapes similaires à la configuration dans Power BI Desktop. L’illustration suivante montre la configuration **d’actualisation de la page** pour le service Power BI :
+L’actualisation automatique de la page pour les rapports dans le service Power BI est configurée avec des étapes similaires à la configuration dans Power BI Desktop. Quand elle est configurée dans le service Power BI, l’actualisation automatique des pages prend aussi en charge le contenu [Power BI incorporé](developer/embedding.md). L’illustration suivante montre la configuration **d’actualisation de la page** pour le service Power BI :
 
 ![Actualisation automatique de la page dans le service Power BI](media/desktop-automatic-page-refresh/automatic-page-refresh-04.png)
 
@@ -107,7 +107,7 @@ Dans le service Power BI, des restrictions d’actualisation automatique de la p
 
 Pour clarifier le fonctionnement, commençons par des informations générales sur les capacités et les espaces de travail :
 
-Les **Capacités**  sont un concept fondamental de Power BI ; elles représentent un ensemble de ressources (stockage, processeur et mémoire) utilisées pour héberger et distribuer du contenu Power BI. Les capacités sont partagées ou dédiées. Une **Capacité partagée** est partagée avec d’autres clients Microsoft, tandis qu’une **Capacité dédiée** est entièrement consacrée à un seul client. Les capacités dédiées sont présentées dans l’article [Gestion des capacités Premium](service-premium-capacity-manage.md).
+Les **Capacités** sont un concept fondamental de Power BI ; elles représentent un ensemble de ressources (stockage, processeur et mémoire) utilisées pour héberger et distribuer du contenu Power BI. Les capacités sont partagées ou dédiées. Une **Capacité partagée** est partagée avec d’autres clients Microsoft, tandis qu’une **Capacité dédiée** est entièrement consacrée à un seul client. Les capacités dédiées sont présentées dans l’article [Gestion des capacités Premium](service-premium-capacity-manage.md).
 
 Dans une capacité partagée, les charges de travail s’exécutent sur des ressources de calcul partagées avec d’autres clients. Étant donné que la capacité doit partager des ressources, des restrictions sont imposées pour s’assurer d’une *utilisation juste*, par exemple avec la définition d’une taille de modèle maximale (1 Go) et d’une fréquence d’actualisation quotidienne maximale (huit fois par jour).
 
@@ -117,7 +117,7 @@ Voici quelques détails sur les deux scénarios d’espace de travail :
 
 **Espaces de travail partagés** : pour les espaces de travail standard (les espaces de travail qui ne font pas partie d’une capacité Premium), l’actualisation automatique de la page a un intervalle minimal de 30 minutes (l’intervalle le plus bas autorisé).
 
-**Espaces de travail Premium**  : la disponibilité de l’actualisation automatique de la page dans les espaces de travail Premium dépend des paramètres de charge de travail que votre administrateur Premium a configurés pour la capacité Power BI Premium. Il existe deux variables qui peuvent affecter votre capacité à configurer l’actualisation automatique de la page :
+**Espaces de travail Premium ** : la disponibilité de l’actualisation automatique de la page dans les espaces de travail Premium dépend des paramètres de charge de travail que votre administrateur Premium a configurés pour la capacité Power BI Premium. Il existe deux variables qui peuvent affecter votre capacité à configurer l’actualisation automatique de la page :
 
  1. *Activation/désactivation de la fonctionnalité* : Si votre administrateur de capacité a décidé de désactiver la fonctionnalité, vous ne pourrez pas configurer le type d’actualisation de page dans votre rapport publié.
 

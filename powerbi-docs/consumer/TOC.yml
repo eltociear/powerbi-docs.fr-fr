@@ -58,8 +58,16 @@
               href: end-user-pdf.md
             - name: Ajouter un signet à un rapport
               href: end-user-bookmarks.md
-            - name: Rapports paginés
-              href: end-user-paginated-report.md
+            - name: Rapports paginés dans Power BI
+              items:
+                - name: Rapports paginés
+                  href: end-user-paginated-report.md
+                - name: Afficher un rapport paginé
+                  href: paginated-reports-view-power-bi-service.md
+                - name: Interagir avec des paramètres
+                  href: paginated-reports-view-parameters.md
+                - name: Inscrire les autres ou vous-même
+                  href: paginated-reports-subscriptions.md
         - name: Visualisations
           items:
             - name: "Que puis-je faire avec les visualisations\_?"
