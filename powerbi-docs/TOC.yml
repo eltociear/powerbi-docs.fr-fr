@@ -747,16 +747,6 @@
               href: designer/service-security-apply-data-sensitivity-labels.md
         - name: Traçabilité des données
           href: service-data-lineage.md
-        - name: Rapports paginés dans Power BI
-          items:
-            - name: Afficher un rapport paginé
-              href: paginated-reports-view-power-bi-service.md
-            - name: Sources de données prises en charge
-              href: paginated-reports-data-sources.md
-            - name: Interagir avec des paramètres
-              href: paginated-reports-view-parameters.md
-            - name: Inscrire les autres ou vous-même
-              href: paginated-reports-subscriptions.md
         - name: Applications modèles
           items:
             - name: Vue d’ensemble des applications modèles
@@ -915,6 +905,8 @@
           href: report-builder-planning-report.md
         - name: Données du Générateur de rapports
           href: report-builder-data.md
+        - name: Sources de données prises en charge
+          href: paginated-reports-data-sources.md
         - name: Utiliser des jeux de données partagés Power BI
           href: report-builder-shared-datasets.md
         - name: Conseils de conception

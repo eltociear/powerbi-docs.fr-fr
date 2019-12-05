@@ -6,15 +6,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/30/2019
+ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8a9e2094619d4c6b0e0f6feb2c9767902b4f7b09
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099677"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565339"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -60,7 +60,7 @@ Les rôles vous permettent de gérer qui peut faire quoi dans un espace de trava
 
 Quand vous affectez des rôles à un groupe d’utilisateurs, les personnes individuelles du groupe ont accès au contenu. Si vous imbriquez des groupes d’utilisateurs, tous les utilisateurs qui en font partie ont les autorisations associées.
 
-Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. Toutes ces fonctionnalités, à l’exception de la dernière, nécessitent une licence Power BI Pro.
+Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. Toutes ces fonctionnalités, à l’exception de l’affichage et de l’interaction, nécessitent une licence Power BI Pro.
 
 |Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Lecteur |
 |---|---|---|---|---|
@@ -72,15 +72,15 @@ Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. 
 | Permettre à d’autres utilisateurs de repartager des éléments. |  X | X  |   |   |
 | Créer, modifier et supprimer du contenu dans l’espace de travail.  |  X | X  | X  |   |
 | Publier des rapports sur l’espace de travail, supprimer du contenu.  |  X | X  | X  |   |
-| Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail. |  X | X  | X  |   |
-| Copier un rapport. | X | X | X |  |
-| Voir et utiliser un élément. |  X | X  | X  | X  |
+| Créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail.<sup>1</sup> |  X | X  | X  |   |
+| Copier un rapport.<sup>1</sup> | X | X | X |  |
+| Voir et utiliser un élément.<sup>2</sup> |  X | X  | X  | X  |
 
-> [!NOTE]
->Pour copier un rapport, et créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail, les utilisateurs doivent remplir quelques exigences supplémentaires :
->- Ils doivent avoir une licence Power BI Pro. Voir la section suivante, [Gestion des licences](#licensing), pour plus de détails.
->- Ils doivent avoir l’autorisation Générer pour le jeu de données. Pour les jeux de données de cet espace de travail, les utilisateurs ayant un rôle d’administrateur, de membre ou de contributeur héritent l’autorisation Générer de leur rôle dans l’espace de travail.
- 
+1. Pour copier un rapport, et créer un rapport dans un autre espace de travail à partir d’un jeu de données de cet espace de travail, vous devez remplir quelques critères supplémentaires :
+    - Vous avez besoin d’une licence Power BI Pro. Voir la section suivante, [Gestion des licences](#licensing), pour plus de détails.
+    - Vous devez avoir l’autorisation Générer pour le jeu de données. Pour les jeux de données de cet espace de travail, les utilisateurs ayant un rôle d’administrateur, de membre ou de contributeur héritent l’autorisation Générer de leur rôle dans l’espace de travail.
+2. Même si vous n’avez pas de licence Power BI Pro, vous pouvez voir et utiliser les éléments du service Power BI s’ils se trouvent dans un espace de travail d’une capacité Premium.
+
 ## <a name="licensing"></a>Licensing
 Toutes les personnes que vous ajoutez à un espace de travail dans la capacité partagée doivent avoir une licence Power BI Pro. Dans l’espace de travail, ces utilisateurs peuvent collaborer sur des tableaux de bord et des rapports que vous prévoyez de publier pour un public plus large, ou même pour votre organisation tout entière. 
 

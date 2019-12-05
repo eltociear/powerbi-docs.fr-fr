@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 09/24/2019
-ms.openlocfilehash: 9e49e8e70e7bc499fbcfe0c263bdd8315f2c7dbe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 11/27/2019
+ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874703"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565699"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
@@ -21,9 +21,9 @@ Les rapports paginés, depuis longtemps le format standard pour les rapports dan
 
 Les rapports paginés peuvent avoir de nombreuses pages. Par exemple, ce rapport compte 563 pages. Chaque page est mise en page exactement, avec une page par facture et des en-têtes et pieds de page récurrents.
 
-![Paginé](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+Essayez le [Labo pratique : Créer un rapport paginé Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208).
 
-![Rapport paginé dans le service Power BI](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+![Paginé](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
 Vous pouvez prévisualiser votre rapport dans le Générateur de rapports, puis le publier sur le service Power BI, https://app.powerbi.com. Vous avez besoin d’une licence Power BI Pro pour publier un rapport sur le service. Vous pouvez publier et partager des rapports paginés dans Mon espace de travail ou dans les espaces de travail, tant que l’espace de travail est dans une capacité Power BI Premium. Par ailleurs, un administrateur Power BI doit activer les rapports paginés dans la [section Fonctionnalités Premium](service-admin-premium-workloads.md#paginated-reports) du portail d’administration Power BI. 
 
@@ -87,6 +87,6 @@ Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la versi
 - [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
 - [Entrer des données directement dans un rapport paginé](paginated-reports-enter-data.md)
-
+- [Labo pratique : Créer un rapport paginé Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
   
 

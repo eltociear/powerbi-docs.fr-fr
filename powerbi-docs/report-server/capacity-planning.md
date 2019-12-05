@@ -8,12 +8,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: c286e921c47b46c20cd73d4b32146093adc74d7f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ad657da4e0a81c6b3b9845d9c130755334f5a97f
+ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73860121"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74565735"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Conseils sur la planification de la capacité de Power BI Report Server
 Power BI Report Server est une solution d’informatique décisionnelle et de création de rapports en entreprise libre-service que les clients peuvent déployer localement, derrière le pare-feu d’entreprise. Cette solution combine la fonctionnalité de rapport interactif de Power BI Desktop avec la plateforme de serveur locale de SQL Server Reporting Services. En raison de l’utilisation croissante et intensive des analytiques et des rapports au sein des entreprises, la budgétisation de l’infrastructure matérielle et des licences logicielles nécessaires pour s’adapter à une base d’utilisateurs en entreprise peut représenter un défi. Ce document propose des conseils sur la planification de la capacité de Power BI Report Server en partageant les résultats de plusieurs exécutions de test de charge de différentes charges de travail exécutées sur un serveur de rapports. Alors que les rapports, les requêtes et les modèles d’utilisation des organisations peuvent varier, les résultats présentés dans ce document, ainsi que les tests réels utilisés et la description détaillée de leur exécution, servent de point de référence pour tous les utilisateurs qui envisagent de planifier en amont le déploiement de Power BI Report Server.
@@ -56,7 +56,10 @@ Les tests utilisés dans les séries de tests de charge sont accessibles publiqu
 * Tests simulant la restitution de rapports paginés de petite et grande taille 
 * Tests simulant l’exécution de différents types d’opérations de portail web. 
 
-Tous les tests ont été écrits pour effectuer une opération de bout en bout (telle que la restitution d’un rapport, la création d’une source de données, etc.). Pour cela, les tests ont effectué une ou plusieurs demandes web sur le serveur de rapports (via des API). Dans le monde réel, un utilisateur devra peut-être effectuer quelques opérations intermédiaires pour réaliser l’une de ces opérations de bout en bout. Par exemple, pour afficher un rapport, un utilisateur devra accéder au portail web, puis au dossier où est stocké le rapport, et enfin cliquer sur le rapport pour l’afficher. Alors que les tests n’effectuent pas toutes les opérations nécessaires pour accomplir une tâche de bout en bout, ils font tout de même subir la plus grande partie de la charge que pourrait rencontrer Power BI Report Server. Pour plus d’informations sur les différents types de rapports utilisés, ainsi que les diverses opérations effectuées, explorez le projet GitHub.
+Tous les tests ont été écrits pour effectuer une opération de bout en bout (telle que la restitution d’un rapport, la création d’une source de données, etc.). Pour cela, les tests ont effectué une ou plusieurs demandes web sur le serveur de rapports (via des API). Dans le monde réel, un utilisateur devra peut-être effectuer quelques opérations intermédiaires pour réaliser l’une de ces opérations de bout en bout. Par exemple, pour afficher un rapport, un utilisateur devra accéder au portail web, puis au dossier où est stocké le rapport, et enfin cliquer sur le rapport pour l’afficher. Alors que les tests n’effectuent pas toutes les opérations nécessaires pour accomplir une tâche de bout en bout, ils font tout de même subir la plus grande partie de la charge que pourrait rencontrer Power BI Report Server. Pour plus d’informations sur les différents types de rapports utilisés, ainsi que les diverses opérations effectuées, explorez le projet GitHub.  
+
+> [!NOTE]
+> L’outil n’est pas officiellement pris en charge par Microsoft, mais l’équipe produit contribue au projet et répond aux problèmes soulevés par les autres contributeurs.
 
 ### <a name="workloads"></a>Charges de travail
 Il existe 2 profils de charge de travail utilisés lors du test : Power BI Report Heavy et Paginated Report Heavy. Le tableau ci-dessous décrit la distribution des demandes exécutées sur le serveur de rapports.
@@ -133,12 +136,11 @@ Différentes configurations de processeur et de mémoire ont été utilisées po
 ### <a name="2-run-the-loadtest-tool"></a>2 Exécuter l’outil LoadTest
 Si vous souhaitez exécuter l’outil LoadTest de Reporting Services sur votre déploiement ou un déploiement Microsoft Azure de Power BI Report Server, procédez comme suit.
 
-1. Clonez le projet Reporting Services LoadTest à partir de GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest) ).
+1. Clonez le projet Reporting Services LoadTest à partir de GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest) ).  
 2. Dans le répertoire du projet se trouve un fichier de solution appelé RSLoadTests.sln. Ouvrez ce fichier dans Visual Studio 2015 ou version ultérieure.
 3. Déterminez si vous souhaitez exécuter cet outil sur votre déploiement Power BI Report Server ou sur un déploiement Power BI Report Server dans Microsoft Azure. Si vous choisissez de l’exécuter sur votre propre déploiement, passez à l’étape 5.
 4. Suivez les instructions figurant sur le site https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure pour créer un environnement Power BI Report Server dans Azure.
 5. Une fois que vous avez terminé le déploiement de l’environnement, suivez les instructions figurant sur le site https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution pour exécuter les tests.
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-
 

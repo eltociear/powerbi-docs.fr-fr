@@ -32,6 +32,10 @@
           href: ../service-dataflows-best-practices.md
         - name: Guide du modèle DirectQuery dans Power BI Desktop
           href: directquery-model-guidance.md
+        - name: Extension de visuels avec des info-bulles de page de rapport
+          href: report-page-tooltips.md
+        - name: Extraction de page de rapport
+          href: report-drillthrough.md
     - name: Livres blancs
       items:
         - name: Vue d’ensemble des livres blancs
