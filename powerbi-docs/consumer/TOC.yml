@@ -56,6 +56,8 @@
               href: end-user-interactions.md
             - name: Exporter un rapport au format PDF
               href: end-user-pdf.md
+            - name: Exporter un rapport vers PowerPoint
+              href: end-user-powerpoint.md
             - name: Ajouter un signet à un rapport
               href: end-user-bookmarks.md
             - name: Rapports paginés dans Power BI
