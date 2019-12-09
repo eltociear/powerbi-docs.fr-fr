@@ -1,21 +1,21 @@
 ---
 title: Utiliser l’audit dans votre organisation
 description: Apprenez à utiliser l’audit avec Power BI pour analyser et examiner les actions effectuées. Vous pouvez utiliser le centre Sécurité et conformité ou utiliser PowerShell.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 76de629f1579289ea3b702013583911d05f08408
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 868d3dc2463f5ed94b8d8ccd85e5edff33ca1c6e
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73873762"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698920"
 ---
 # <a name="use-auditing-within-your-organization"></a>Utiliser l’audit dans votre organisation
 

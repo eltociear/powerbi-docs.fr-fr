@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/19/2019
-ms.openlocfilehash: fcc6e7880a3f27c6b35fe2192e76a0b2cc82abd0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: f7662cbd2fb0085ad2e6fda6a33577d1cc29ddfb
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874847"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831268"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Sources de données prises en charge pour les rapports paginés Power BI
 
@@ -71,6 +71,6 @@ Pour que l’authentification unique et OAuth2 fonctionnent correctement, [la pr
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Afficher un rapport paginé dans le service Power BI](paginated-reports-view-power-bi-service.md)
+[Afficher un rapport paginé dans le service Power BI](consumer/paginated-reports-view-power-bi-service.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

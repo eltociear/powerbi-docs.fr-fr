@@ -1,20 +1,20 @@
 ---
 title: Guide pratique pour configurer des charges de travail dans Power BI Premium
 description: Découvrez comment configurer des charges de travail dans une capacité Power BI Premium.
-author: mgblythe
-ms.author: mblythe
+author: davidiseminger
+ms.author: davidi
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 8240c4590a5e5bb892c4858ea74aa20e569ecb89
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 7d94c5d3531576cd36688591b55aaf4a49de51aa
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856810"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831297"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Configurer des charges de travail dans une capacité Premium
 
@@ -164,7 +164,7 @@ La charge de travail des rapports paginés vous permet d’exécuter des rapport
 | **Mémoire maximale (%)** | Pourcentage maximal de mémoire disponible que les rapports paginés peuvent utiliser dans une capacité. |
 |  |  |
 
-Les rapports paginés permettent d’exécuter du code personnalisé lors du rendu d’un rapport. C’est, par exemple, le cas lors du changement dynamique de la couleur du texte en fonction du contenu, ce qui peut prendre de la quantité supplémentaire de mémoire. Power BI Premium génère les rapports paginés dans un espace contenu au sein de la capacité. La valeur Mémoire maximale spécifiée est utilisée, que la charge de travail soit *ou non* active. Si vous changez la valeur par défaut du paramètre Mémoire maximale, veillez à définir une valeur suffisamment faible pour qu’elle n’affecte pas négativement les autres charges de travail.
+Les rapports paginés permettent d’exécuter du code personnalisé lors du rendu d’un rapport. C’est, par exemple, le cas lors du changement dynamique de la couleur du texte en fonction du contenu, ce qui peut prendre de la quantité supplémentaire de mémoire. Power BI Premium génère les rapports paginés dans un espace contenu au sein de la capacité. 
 
 Dans certains cas, la charge de travail des rapports paginés peut devenir indisponible. La charge de travail affiche alors un état d’erreur dans le portail d’administration, et les utilisateurs voient des délais d’expiration pour la génération des rapports. Pour résoudre ce problème, désactivez la charge de travail, puis réactivez-la.
 

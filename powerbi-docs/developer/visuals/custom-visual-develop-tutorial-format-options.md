@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: tutorial
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: c2e2bcd14612f5096b4b0f44690effe247128f58
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: 4d7f02d9f78eee4cf287e0bb83acb93a7b1b0355
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127831"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696850"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Tutoriel : Ajouter des options de mise en forme à un visuel Power BI
 
@@ -67,29 +67,31 @@ Vous pouvez ajouter des propriétés personnalisées pour pouvoir configurer la 
 2. Dans Visual Studio Code, dans le fichier **capabilities.json**, insérez le fragment JSON suivant dans l’objet intitulé **objects**.
 
     ```json
-    "circle": {
-     "displayName": "Circle",
-     "properties": {
-         "circleColor": {
-             "displayName": "Color",
-             "description": "The fill color of the circle.",
-             "type": {
-                 "fill": {
-                     "solid": {
-                         "color": true
-                     }
-                 }
-             }
-         },
-         "circleThickness": {
-             "displayName": "Thickness",
-             "description": "The circle thickness.",
-             "type": {
-                 "numeric": true
-                 }
-             }
-         }
-     },
+        {
+            "circle": {
+                "displayName": "Circle",
+                "properties": {
+                    "circleColor": {
+                        "displayName": "Color",
+                        "description": "The fill color of the circle.",
+                        "type": {
+                            "fill": {
+                                "solid": {
+                                    "color": true
+                                }
+                            }
+                        }
+                    },
+                    "circleThickness": {
+                        "displayName": "Thickness",
+                        "description": "The circle thickness.",
+                        "type": {
+                            "numeric": true
+                        }
+                    }
+                }
+            }
+        }
     ```
 
     Le fragment JSON décrit un groupe nommé circle, qui se compose de deux options nommées circleColor et circleThickness.

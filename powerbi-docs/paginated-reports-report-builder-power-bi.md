@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
-ms.openlocfilehash: 90bc46c484f659994c6a9500865803531fa3cdcc
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 35f50f57f3874bbb87fcdd5fbcf7da987fea1d1a
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565699"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831147"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
 
@@ -70,7 +70,7 @@ Vous affichez votre rapport paginé dans le service Power BI dans un navigateur
 
 Vous pouvez maintenant configurer des abonnements par e-mail pour vous-même et d’autres personnes pour des rapports paginés dans le service Power BI. En règle générale, le processus est le même que pour les abonnements aux rapports et tableaux de bord dans le service Power BI. Lors de la configuration des abonnements, vous choisissez la fréquence à laquelle vous souhaitez recevoir des e-mails : quotidienne, hebdomadaire ou toutes les heures. L’abonnement contient une pièce jointe PDF avec la sortie de l’intégralité du rapport.
 
-Pour plus d’informations, consultez l’article [Vous abonner vous-même et d’autres utilisateurs à des rapports paginés dans le service Power BI](paginated-reports-subscriptions.md). 
+Pour plus d’informations, consultez l’article [Vous abonner vous-même et d’autres utilisateurs à des rapports paginés dans le service Power BI](consumer/paginated-reports-subscriptions.md). 
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 

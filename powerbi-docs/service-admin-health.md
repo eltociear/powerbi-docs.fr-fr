@@ -1,20 +1,20 @@
 ---
 title: Effectuer le suivi de l’intégrité du service Power BI dans Office 365
 description: Découvrez comment voir l’intégrité historique et actuelle du service dans le Centre d’administration Microsoft 365.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/09/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: 0e944dfa34bec1e1c1816cf80d7dc2df7252b65a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9d0ed841da3f398b8e0a8dc0a35ed040ccf3cab6
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73857682"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74700001"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Effectuer le suivi de l’intégrité du service Power BI dans Office 365
 

@@ -2,20 +2,20 @@
 title: Visualisations de tableaux dans les rapports et les tableaux de bord Power BI
 description: Ce didacticiel explique comment utiliser les visualisations de tableaux dans les rapports et les tableaux de bord Power BI, et notamment comment redimensionner la largeur des colonnes.
 author: mihart
-ms.reviewer: ''
+ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/04/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2bb20b9ecc43e73e85d798416fe0ddaabb98e12b
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6d2f1eea22f83d90501581be7d2e9b8230962835
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870809"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830886"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tableaux dans les rapports et les tableaux de bord Power BI
 
@@ -130,7 +130,7 @@ Dans le contexte des tables, la mise en forme conditionnelle vous permet de spé
 
 1. Dans la boîte de dialogue qui s’affiche, définissez des couleurs pour la **Barre positive** et la **Barre négative**, sélectionnez l’option **Afficher seulement la barre**, puis apportez d’autres modifications souhaitées.
 
-    ![Afficher uniquement la barre coché](media/power-bi-visualization-tables/power-bi-data-bars.png)
+    ![Afficher uniquement la barre coché](media/power-bi-visualization-tables/power-bi-data-bar.png)
 
 1. Sélectionnez **OK**.
 
