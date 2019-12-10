@@ -1,20 +1,20 @@
 ---
 title: Utiliser l’authentification unique Kerberos pour l’authentification unique pour SAP BW à l’aide de CommonCryptoLib (sapcrypto.dll)
 description: Configurer votre serveur SAP BW pour activer l’authentification unique à partir du service Power BI à l’aide de CommonCryptoLib (sapcrypto.dll)
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 63b5abde7deb5f6d93fb7702f0b1244bd193a47d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6c098a187b7f0d0d4828500cd6c5995a7c82ab42
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872426"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74697632"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>Utiliser l’authentification unique Kerberos pour l’authentification unique pour SAP BW à l’aide de CommonCryptoLib (sapcrypto.dll)
 
@@ -101,7 +101,7 @@ Si vous ne parvenez pas à actualiser le rapport dans le service Power BI, vous
 
 ### <a name="cpic-tracing"></a>Traçage CPIC
 
-1. Pour activer le traçage CPIC, définissez deux variables d’environnement : **CPIC**TRACE\_ et \_CPIC**TRACE\_DIR**. 
+1. Pour activer le traçage CPIC, définissez deux variables d’environnement : **CPIC\_TRACE** et **CPIC\_TRACE\_DIR**. 
 
    La première variable définit le niveau de trace, et la deuxième variable définit le répertoire des fichiers de trace. Le répertoire doit être un emplacement dans lequel les membres du groupe des utilisateurs authentifiés peuvent écrire. 
  

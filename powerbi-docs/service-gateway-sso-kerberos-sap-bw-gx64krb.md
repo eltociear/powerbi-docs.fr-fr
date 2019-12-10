@@ -1,20 +1,20 @@
 ---
 title: Utiliser Kerberos pour l’authentification unique avec gx64krb5
 description: Configurer votre serveur SAP BW pour activer l’authentification unique à partir du service Power BI à l’aide de gx64krb5
-author: mgblythe
-ms.author: mblythe
+author: arthiriyer
+ms.author: arthii
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: a162ba686c3f548ed371e7a63c2d85dd1f697462
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9588f13a857dc105dce3b3577df7c3b06df027ed
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881470"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699242"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-bw-using-gx64krb5"></a>Utiliser Kerberos pour l’authentification unique avec gx64krb5
 
@@ -188,7 +188,7 @@ Si vous rencontrez l’un des problèmes suivants, suivez ces étapes pour corri
 
 1. Activez le suivi de SAP BW et examinez les fichiers journaux générés. Différents types de traçage SAP BW sont disponibles (par exemple, le traçage CPIC) :
 
-   a. Pour activer le traçage CPIC, définissez deux variables d’environnement : **CPIC**TRACE\_ et \_CPIC**TRACE\_DIR**.
+   a. Pour activer le traçage CPIC, définissez deux variables d’environnement : **CPIC\_TRACE** et **CPIC\_TRACE\_DIR**.
 
       La première variable définit le niveau de trace, et la deuxième variable définit le répertoire des fichiers de trace. Le répertoire doit être un emplacement dans lequel les membres du groupe des utilisateurs authentifiés peuvent écrire. 
  
