@@ -41,11 +41,11 @@
               href: visuals/advanced-edit-mode.md
         - name: Guides pratiques
           items:
-            - name: Obtenir un visuel certifié
+            - name: "Obtenir un visuel Power\_BI certifié"
               href: power-bi-custom-visuals-certified.md
-            - name: Publier des visuels personnalisés dans AppSource
+            - name: "Publier des visuels Power\_BI dans AppSource"
               href: office-store.md
-            - name: "Utiliser des visuels personnalisés optimisés pour R dans Power\_BI"
+            - name: "Utiliser des visuels Power\_BI basés sur R dans Power\_BI"
               href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/TOC.json&bc=/powerbi-docs/breadcrumb/toc.json
             - name: Interactions entre les visuels
               href: visuals/visuals-interactions.md
@@ -69,8 +69,6 @@
               href: visuals/high-contrast-support.md
             - name: Activer les segments de synchronisation
               href: visuals/enable-sync-slicers.md
-            - name: Ajouter la prise en charge de l’exploration
-              href: visuals/drill-down-support.md
             - name: Résoudre les problèmes de visuels Power BI
               href: power-bi-custom-visuals-troubleshoot.md
         - name: Référence
@@ -85,14 +83,8 @@
               href: visuals/event-service.md
             - name: Tri
               href: visuals/sort-options.md
-            - name: Localisation
-              href: visuals/localization.md
-            - name: Utilitaires de visuel Power BI
-              items:
-                - name: Utilitaires d’interactivité
-                  href: visuals/utils-interactivity-selections.md
-                - name: Utilitaires de mise en forme
-                  href: visuals/utils-formatting.md
+            - name: Utilitaires d’interactivité
+              href: visuals/utils-interactivity-selections.md
         - name: Ressources
           items:
             - name: Centre de développement
