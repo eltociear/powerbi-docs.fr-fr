@@ -32,10 +32,14 @@
           href: ../service-dataflows-best-practices.md
         - name: Guide du modèle DirectQuery dans Power BI Desktop
           href: directquery-model-guidance.md
+        - name: Référencement des requêtes Power Query
+          href: power-query-referenced-queries.md
         - name: Extension de visuels avec des info-bulles de page de rapport
           href: report-page-tooltips.md
         - name: Extraction de page de rapport
           href: report-drillthrough.md
+        - name: Conseils sur les dates/heures automatiques dans Power BI Desktop
+          href: auto-date-time.md
     - name: Livres blancs
       items:
         - name: Vue d’ensemble des livres blancs
