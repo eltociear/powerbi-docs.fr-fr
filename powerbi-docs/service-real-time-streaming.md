@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 9415365c3846329d5bcf707ec7f41d0bd2cc6f92
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: a4d948e768682aab77708289320914ce3ef0fdc3
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871736"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74699088"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming en temps réel dans Power BI
 Le streaming en temps réel de Power BI vous permet de diffuser des données et de mettre à jour des tableaux de bord en temps réel. Tout élément visuel ou tableau de bord qui peut être créé dans Power BI peut également l’être pour afficher et mettre à jour des données et des éléments visuels en temps réel. Les appareils et autres sources de données de streaming peuvent être des capteurs, des sources de médias sociaux, des mesures d’utilisation de service, ou tout autre dispositif permettant de collecter ou transmettre des données.
 
-![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+![Capture d’écran montrant les résultats des capteurs d’environnement en temps réel.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Cet article vous montre comment configurer un jeu de données de streaming en temps réel dans Power BI. Avant de voir comment cela fonctionne, il est important de comprendre les types de jeux de données en temps réel qui sont conçus pour s’afficher dans les vignettes (et les tableaux de bord), ainsi que leurs différences.
 
@@ -198,7 +198,7 @@ Dans cet exemple, nous utilisons un flux de données accessible au public de **P
    ![](media/service-real-time-streaming/real-time-streaming_9.png)
 5. De retour dans votre espace de travail Power BI, créez un tableau de bord, puis ajoutez une vignette (voir ci-dessus pour savoir comment procéder si nécessaire). À présent, lorsque vous créez une vignette, puis sélectionnez **Données de streaming personnalisées**, vous disposez d’un jeu de données de streaming pour travailler. Continuons et manipulons-les. En ajoutant les champs *nombre* à des graphiques en courbes, puis en ajoutant d’autres vignettes, vous pouvez obtenir un tableau de bord en temps réel qui ressemble à ceci :
    
-   ![](media/service-real-time-streaming/real-time-streaming_10.jpg)
+   ![Capture d’écran montrant les résultats des capteurs d’environnement en temps réel.](media/service-real-time-streaming/real-time-streaming-10.png)
 
 Faites un essai et manipulez l’exemple de jeu de données. Passez ensuite à la création de vos propres jeux de données, et envoyez le flux de données en direct à Power BI.
 

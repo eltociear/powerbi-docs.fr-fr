@@ -1,21 +1,21 @@
 ---
 title: Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
 description: Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: troubleshooting
 ms.date: 12/06/2017
-ms.author: mblythe
+ms.author: maggies
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: b44dbc06c15a576174277695583f3afebb0f298a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: e3fe8626001972acc0b7555f37844b5abb62753b
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73856259"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791982"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Résolution des problèmes liés à la non prise en charge d’une source de données pour l’actualisation
 Une erreur peut s’afficher lorsque vous tentez de configurer un jeu de données pour une actualisation planifiée.
@@ -35,7 +35,7 @@ Si vous ne savez pas quelle source de données a été utilisée, effectuez les 
    ![Éditeur avancé](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 4. Notez le fournisseur indiqué pour la source.  Dans cet exemple, le fournisseur est ActiveDirectory.  
    ![Fournisseur de source de données](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
-5. Comparez le fournisseur à la liste des sources de données prises en charge disponible dans la rubrique [Actualiser des données dans Power BI](refresh-data.md).  Vous constaterez qu’Active Directory n’est pas une source de données prise en charge pour l’actualisation.  
+5. Comparez le fournisseur à la liste des sources de données prises en charge disponible dans [Sources de données Power BI](power-bi-data-sources.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Actualisation des données](refresh-data.md)  

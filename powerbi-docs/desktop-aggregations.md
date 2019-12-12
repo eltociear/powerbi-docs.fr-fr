@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 37cbea42d530f05df1d9f1003554680b80c5b5c3
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876742"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907941"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Agrégations dans Power BI Desktop
 
@@ -29,7 +29,7 @@ La liste suivante décrit les avantages offerts par l’utilisation des **agrég
 * **Bénéficiez d’architectures équilibrées** : autorisez le cache en mémoire de Power BI à gérer l’agrégation des requêtes, ce qu’il fait efficacement. Limitez les requêtes envoyées à la source de données en mode DirectQuery, afin de rester dans les limites de concurrence. Les requêtes qui parviennent à passer sont le plus souvent des requêtes filtrées, au niveau transactionnel, normalement bien gérées par les systèmes de Big Data et les entrepôts de données.
 
 ### <a name="table-level-storage"></a>Stockage de niveau table
-Le stockage de niveau table est normalement utilisé avec la fonctionnalité d’agrégations. Pour plus d’informations, voir l’article [Mode de stockage dans Power BI Desktop](desktop-storage-mode.md).
+Le stockage de niveau table est normalement utilisé avec la fonctionnalité d’agrégations. Pour plus d’informations, consultez l’article [Mode de stockage dans Power BI Desktop](desktop-storage-mode.md).
 
 ### <a name="data-source-types"></a>Types de sources de données
 Les agrégations sont utilisées avec des sources de données représentant des modèles dimensionnels, par exemple, des entrepôts de données, des mini-data warehouses et des sources de Big Data Hadoop. Cet article décrit les principales différences de modélisation dans Power BI pour chaque type de source de données.
@@ -44,7 +44,7 @@ Considérez le modèle suivant, qui provient d’une seule source de données. S
 
 ![tables dans un modèle](media/desktop-aggregations/aggregations_02.jpg)
 
-À la place, nous créons la table **Sales Agg** en tant que table d’agrégation. Comme elle se trouve à un niveau de granularité plus élevé que **Sales**, elle contiendra beaucoup moins de lignes. Le nombre de lignes doit être égal à la somme des **SalesAmount** regroupés par **CustomerKey**, **DateKey** et **ProductSubcategoryKey**. Au lieu d’avoir plusieurs milliards de lignes, nous n’en aurons peut-être que quelques millions, ce qui est beaucoup plus facile à gérer.
+À la place, nous créons la table **Sales Agg** en tant que table d’agrégation. Comme elle se trouve à un niveau de précision plus élevé que **Sales**, elle contiendra beaucoup moins de lignes. Le nombre de lignes doit être égal à la somme des **SalesAmount** regroupés par **CustomerKey**, **DateKey** et **ProductSubcategoryKey**. Au lieu d’avoir plusieurs milliards de lignes, nous n’en aurons peut-être que quelques millions, ce qui est beaucoup plus facile à gérer.
 
 Supposez que les tables de dimension suivantes sont les plus couramment utilisées pour les requêtes à forte valeur métier. Il s’agit des tables qui peuvent filtrer **Sales Agg** à l’aide de relations *un-à-plusieurs* (ou *plusieurs-à-un*).
 
@@ -92,7 +92,7 @@ Le seul cas où une relation *inter-sources* est considérée comme forte est ce
 
 Pour les correspondances d’agrégation *inter-sources* qui ne dépendent pas de relations, voir la section ci-dessous sur les agrégations en fonction des colonnes Grouper par.
 
-### <a name="aggregation-tables-are-not-addressable"></a>Les tables d’agrégation ne sont pas adressables
+### <a name="aggregation-tables-arent-addressable"></a>Les tables d’agrégation ne sont pas adressables
 Les utilisateurs disposant d’un accès en lecture seule au jeu de données ne peuvent pas interroger les tables d’agrégation. Cela évite les problèmes de sécurité en cas d’utilisation avec la sécurité au niveau des lignes. Les consommateurs et les requêtes font référence à la table de détail, et non à la table d’agrégation. Ils n’ont même pas besoin de savoir que la table d’agrégation existe.
 
 Pour cette raison, la table **Sales Agg** doit être masquée. Si elle ne l’est pas, la boîte de dialogue Gérer les agrégations la définit comme masquée quand vous cliquez sur le bouton Appliquer tout.
@@ -161,7 +161,7 @@ La requête suivante atteint l’agrégation, car les colonnes de la table *Date
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_02.jpg)
 
-La requête suivante n’atteint pas l’agrégation. Bien qu’elle demande la somme de **SalesAmount**, elle exécute une opération Grouper par sur une colonne de la table **Product**, dont le niveau de granularité ne permet pas d’atteindre l’agrégation. Observons les relations présentes dans le modèle : une sous-catégorie de produits peut avoir plusieurs lignes **Product** ; la requête ne pourrait pas déterminer quel produit agréger. Dans ce cas, la requête rebascule vers DirectQuery et soumet une requête SQL à la source de données.
+La requête suivante n’atteint pas l’agrégation. Bien qu’elle demande la somme de **SalesAmount**, elle exécute une opération Grouper par sur une colonne de la table **Product**, dont le niveau de précision ne permet pas d’atteindre l’agrégation. Observons les relations présentes dans le modèle : une sous-catégorie de produits peut avoir plusieurs lignes **Product** ; la requête ne pourrait pas déterminer quel produit agréger. Dans ce cas, la requête rebascule vers DirectQuery et soumet une requête SQL à la source de données.
 
 ![exemple de requête](media/desktop-aggregations/aggregations-code_03.jpg)
 
@@ -184,7 +184,7 @@ Dans certains cas, la fonction DISTINCTCOUNT peut tirer parti des agrégations. 
 ### <a name="rls"></a>RLS
 Les expressions de sécurité au niveau des lignes (RLS) doivent filtrer la table d’agrégation et la table de détails pour fonctionner correctement. Si nous suivons notre exemple, une expression RLS sur la table **Geography** fonctionnera, car Geography se trouve du côté filtrage des relations avec les tables **Sales** et **Sales Agg**. La sécurité au niveau des lignes sera appliquée aux requêtes qui atteignent la table d’agrégation et à celles qui ne l’atteignent pas.
 
-![agrégations - gérer les rôles](media/desktop-aggregations/manage-roles.jpg)
+![agrégations - gérer les rôles](media/desktop-aggregations/manage-roles.png)
 
 Une expression RLS sur la table **Product** filtrerait seulement la table **Sales**, et pas la table **Sales Agg**. Ce n’est pas recommandé. Les requêtes soumises par les utilisateurs qui accèdent au jeu de données à l’aide de ce rôle ne tireraient pas parti des résultats d’agrégation. La table d’agrégation étant une autre représentation des mêmes données dans la table de détails, il ne serait pas sûr de répondre aux requêtes à partir de la table d’agrégation, car le filtre RLS ne peut pas être appliqué.
 

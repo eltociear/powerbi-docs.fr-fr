@@ -1,21 +1,21 @@
 ---
 title: Portail d’administration Power BI
 description: Le portail d’administration permet de gérer les clients Power BI de votre organisation. Il comprend notamment des métriques d’utilisation, un accès au Centre d’administration Microsoft 365 et des paramètres.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/25/2019
-ms.author: mblythe
+ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: bb842128c26161d2f8da2961c6f014b9ecb45fc5
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.openlocfilehash: 4776e458c778b6bd482106660ab9b8cd978699e5
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74265885"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882901"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administration de Power BI dans le portail d’administration
 
@@ -247,13 +247,16 @@ L’image suivante présente le menu **Fichier** qui s’affiche pour un rapport
 ![Imprimer le rapport](media/service-admin-portal/powerbi-admin-print-report.png)
 
 ### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation
-Les utilisateurs invités Azure B2B peuvent modifier et gérer le contenu de l’organisation. [En savoir plus](service-admin-azure-ad-b2b.md)
+Les utilisateurs invités Azure Active Directory B2B peuvent modifier et gérer le contenu de l’organisation. [En savoir plus](service-admin-azure-ad-b2b.md)
 
 L’image suivante présente l’option permettant d’autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation.
 
 ![Autoriser les utilisateurs invités externes à modifier et à gérer le contenu de l’organisation](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
-### <a name="email-subscriptions"></a>Abonnements par courrier
+> [!IMPORTANT]
+> Quand vous ajoutez un utilisateur externe à votre locataire Azure AD (manuellement ou en partageant un rapport avec cet utilisateur), ce compte d’utilisateur peut maintenant être découvert par les comptes internes. Un utilisateur interne peut partager d’autres éléments avec l’utilisateur externe, même si le compte interne ne dispose pas d’autorisations de partage externe.
+
+### <a name="email-subscriptions"></a>Abonnements par e-mail
 Les utilisateurs de l'organisation peuvent créer des abonnements par courrier. En savoir plus sur les [abonnements](service-report-subscribe.md).
 
 ![Activer les abonnements par courrier](media/service-admin-portal/power-bi-manage-email-subscriptions.png)

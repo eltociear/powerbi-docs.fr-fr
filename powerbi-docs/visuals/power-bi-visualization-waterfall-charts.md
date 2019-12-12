@@ -7,15 +7,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 12/5/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fedaa811c94a9e955d6ca10646bc546f60dc9b98
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 6abca661a1553bfabc3da35fe714ff9bced5555a
+ms.sourcegitcommit: 212fb4a46af3e434a230331f18456c6a49a408fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73881965"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907638"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Graphiques en cascade dans Power BI
 
@@ -63,9 +63,11 @@ Ce tutoriel utilise le [fichier PBIX de l’exemple Analyse de la vente au déta
 
 Vous allez créer un graphique en cascade qui affiche un écart sur les ventes (ventes estimées par rapport aux ventes réelles) par mois.
 
+### <a name="build-the-waterfall-chart"></a>Générer un graphique en cascade
+
 1. Dans le volet **Champs**, sélectionnez **Ventes** > **Écart sur volume des ventes totales**.
 
-   ![Capture d’écran du menu Sales (Ventes) > Total Sales Variance (Écart sur volume des ventes totales) sélectionné et du visuel qui en résulte.](media/power-bi-visualization-waterfall-charts/power-bi-first-value.png)
+   ![Capture d’écran du menu Sales (Ventes) > Total Sales Variance (Écart sur volume des ventes totales) sélectionné et du visuel qui en résulte.](media/power-bi-visualization-waterfall-charts/power-bi-bar.png)
 
 1. Sélectionnez l’icône cascade ![Capture d’écran de l’icône cascade](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-icon.png)
 
@@ -73,41 +75,45 @@ Vous allez créer un graphique en cascade qui affiche un écart sur les ventes (
 
 1. Sélectionnez **Time** > **FiscalMonth** (Période > Mois fiscal) pour l’ajouter à **Catégorie**.
 
-    ![cascade](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![cascade](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-month.png)
 
-1. Vérifiez que Power BI a trié le graphique en cascade dans l’ordre chronologique. En haut à droite du graphique, sélectionnez **Autres options** (...).
+### <a name="sort-the-waterfall-chart"></a>Trier un graphique en cascade
 
-    Pour cet exemple, nous allons sélectionner **Tri croissant**.
+1. Vérifiez que Power BI trie le graphique en cascade dans l’ordre chronologique par mois. En haut à droite du graphique, sélectionnez **Autres options** (...).
 
-    Vérifiez la présence d’un indicateur jaune à gauche de **Tri croissant**. Ceci indique que l’option sélectionnée est en cours d’application.
+    Pour cet exemple, sélectionnez **Trier par**, puis choisissez **FiscalMonth** (MoisFiscal). Un indicateur jaune à côté de votre sélection indique que l’option de sélection est appliquée.
 
-    ![Sélectionnez Trier par > Ordre croissant](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
+    ![Sélectionnez Trier par > MoisFiscal](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscalmonth.png)
+    
+    Pour afficher les mois dans l’ordre chronologique, sélectionnez **Tri croissant**. Comme avec l’étape précédente, vérifiez la présence d’un indicateur jaune à gauche de **Tri croissant**. Ceci indique que l’option sélectionnée est en cours d’application.
 
-    Ensuite, nous allons cliquer sur **Trier par** et sélectionner **FiscalMonth** (Mois fiscal). Comme avec l’étape précédente, un indicateur jaune à côté de votre sélection indique quand l’option de sélection est appliquée.
+    ![Sélectionnez Trier par > Ordre croissant](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-ascending.png)
 
-    ![Sélectionnez Trier par > MoisFiscal](media/power-bi-visualization-waterfall-charts/power-bi-sort-by-fiscal-month.png)
+    
 
-    Vous pouvez également examiner les valeurs de l’axe X et voir qu’elles apparaissent dans l’ordre de **Jan** à **Aoû**.
+    Notez que votre graphique est trié de Janvier à Août pour FiscalMonth (MoisFiscal).  
 
-    Approfondissez un peu plus pour voir ce qui contribue le plus aux changements mois après mois.
+### <a name="explore-the-waterfall-chart"></a>Explorer un graphique en cascade
 
-1.  Sélectionnez **Store** (Magasin) > **Territory**  (Territoire), ce qui va ajouter **Territory** au compartiment **Breakdown** (Répartition).
+Approfondissez un peu plus pour voir ce qui contribue le plus aux changements mois après mois.
+
+1.  Sélectionnez **Store** (Magasin) > **Territory**  (Territoire), ce qui ajoute **Territory** au compartiment **Breakdown** (Répartition).
 
     ![Affiche Magasin dans le compartiment Répartition](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 
-    Par défaut, Power BI ajoute les cinq premiers contributeurs aux augmentations ou diminutions par mois. L’image ci-dessous montre que notre volet de visualisation a été agrandi pour inclure plus de données. 
+    Power BI utilise la valeur figurant dans **Répartition** pour ajouter des données supplémentaires à la visualisation. Il ajoute les cinq premiers contributeurs aux augmentations ou diminutions pour chaque mois fiscal. Cela signifie que, par exemple, Février a désormais six points de données au lieu d’un seul.  
 
-    ![Affiche Magasin dans le compartiment Répartition](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-initial.png)
+    ![Affiche Magasin dans le compartiment Répartition](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-default.png)
 
-    Nous ne nous intéressons qu’aux deux premiers contributeurs.
+    Supposons que nous ne nous intéressons qu’aux deux premiers contributeurs.
 
 1. Dans le volet **Mise en forme**, sélectionnez **Répartition**, puis définissez **Décompositions maximales** sur **2**.
 
-    ![Format > Décomposition](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Format > Décomposition](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-two.png)
 
     Un examen rapide révèle que les territoires de l’Ohio et de la Pennsylvanie sont les principaux contributeurs aux mouvements négatifs et positifs dans votre graphique en cascade.
 
-    ![graphique en cascade](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+    ![graphique en cascade](media/power-bi-visualization-waterfall-charts/power-bi-axis-waterfall.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

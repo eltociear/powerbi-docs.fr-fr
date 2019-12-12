@@ -8,20 +8,18 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 7453854376923fbb55376182a8674e5f3d7d1b63
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 8789986e94c860bffc622d903e33b4f1edabdd2d
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878776"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696161"
 ---
 # <a name="auto-datetime-in-power-bi-desktop"></a>Date/heure automatique dans Power BI Desktop
 
-Cet article s’adresse aux modélisateurs de données développant des modèles d’importation ou composites dans Power BI Desktop.
+Cet article s’adresse aux modélisateurs de données développant des modèles d’importation ou composites dans Power BI Desktop. Il présente et décrit l’option _Date/heure automatique_.
 
-## <a name="background"></a>Arrière-plan
-
-La fonctionnalité _Date/heure automatique_ est une option de chargement des données de Power BI Desktop. Cette option assure la prise en charge de rapports utilisant l’intelligence temporelle ; des rapports pratiques basés sur des colonnes de dates chargées dans un modèle. Plus précisément, elle permet aux auteurs de rapport de filtrer les données, de les grouper et de les explorer de façon détaillée en utilisant des périodes de calendrier sans que le modélisateur n’ait besoin de les développer explicitement. Les périodes de calendrier incluent les années, les trimestres, les mois et les jours.
+L’option Date/heure automatique est une option de chargement des données dans Power BI Desktop. Cette option assure la prise en charge de rapports utilisant l’intelligence temporelle ; des rapports pratiques basés sur des colonnes de dates chargées dans un modèle. Plus précisément, elle permet aux auteurs de rapports qui utilisent votre modèle de données de filtrer, de regrouper et d’extraire à l’aide de périodes calendaires (années, trimestres, mois et jours). Ce qui est important, c’est que vous n’avez pas besoin de développer explicitement ces fonctionnalités Time Intelligence.
 
 Quand cette option est activée, Power BI Desktop crée une table de date/heure automatique masquée pour chaque colonne de date. Pour cela, toutes les conditions suivantes doivent être remplies :
 
@@ -34,11 +32,11 @@ Quand cette option est activée, Power BI Desktop crée une table de date/heure 
 En fait, chaque table de date/heure automatique est une [table calculée](desktop-calculated-tables.md) qui génère des lignes de données à l’aide de la fonction [CALENDAR](/dax/calendar-function-dax) DAX. Chaque table inclut également six colonnes calculées : **Jour**, **NoMois**, **Mois**, **NoTrimestre**, **Trimestre**et **Année**.
 
 > [!NOTE]
-> Les noms et valeurs de colonnes sont traduits et mis en forme selon la [langue du modèle](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop).
+> Power BI traduit et met en forme les noms et valeurs de colonnes selon la [langue du modèle](supported-languages-countries-regions.md#choose-the-language-for-the-model-in-power-bi-desktop).
 
-Une relation est également créée entre la colonne **Date** de la table de date/heure automatique et la colonne de date du modèle.
+Power BI Desktop crée également une relation entre la colonne **Date** de la table de date/heure automatique et la colonne de date du modèle.
 
-La table de date/heure automatique est chargée avec les années civiles complètes. Elle inclut toutes les valeurs de date stockées dans la colonne de date du modèle. Par exemple, si la valeur la plus ancienne d’une colonne de date est le 20 mars 2016 et que la valeur la plus récente est le 23 octobre 2019, la table contient 1 461 lignes. Chaque date est représentée par une ligne pour les quatre années civiles de 2016 à 2019. Quand le modèle est actualisé, toutes les tables de date/heure automatique sont également actualisées. Ainsi, elles contiennent toujours les dates incluant les valeurs de la colonne de date.
+La table de date/heure automatique contient les années calendaires complètes. Elle inclut toutes les valeurs de date stockées dans la colonne de date du modèle. Par exemple, si la valeur la plus ancienne d’une colonne de date est le 20 mars 2016 et que la valeur la plus récente est le 23 octobre 2019, la table contient 1 461 lignes. Chaque date est représentée par une ligne pour les quatre années civiles de 2016 à 2019. Quand Power BI actualise le modèle, toutes les tables de date/heure automatique sont également actualisées. Ainsi, elles contiennent les dates incluant les valeurs de la colonne de date.
 
 S’il était possible de voir les lignes d’une table de date/heure automatique, elles pourraient se présenter comme suit :
 
@@ -61,7 +59,7 @@ Quand une table de date/heure automatique est associée à une colonne de date (
 
 La hiérarchie générée par la fonctionnalité de date/heure automatique peut être utilisée pour configurer un visuel exactement de la même façon que des hiérarchies classiques. Les visuels peuvent être configurés avec l’ensemble de la hiérarchie **Hiérarchie de dates** ou des niveaux spécifiques de la hiérarchie.
 
-Vous disposez, par ailleurs, d’une fonctionnalité supplémentaire qui n’est pas prise en charge par les hiérarchies classiques. Quand la hiérarchie de date/heure automatique ou un niveau de la hiérarchie est ajouté à une zone de visuels, l’auteur du rapport peut basculer entre l’utilisation de la hiérarchie et celle de la colonne de date. Cette approche est particulièrement pertinente pour certains visuels, notamment quand vous avez uniquement besoin de la colonne de date et non de la hiérarchie et de ses niveaux. Commencez par configurer le champ visuel (en cliquant dessus avec le bouton droit ou en cliquant sur la flèche vers le bas), puis basculez entre la colonne de date et la hiérarchie de dates à l’aide du menu contextuel.
+Vous disposez, par ailleurs, d’une fonctionnalité supplémentaire qui n’est pas prise en charge par les hiérarchies classiques. Quand la hiérarchie de date/heure automatique ou un niveau de la hiérarchie est ajouté à une zone de visuels, l’auteur du rapport peut basculer entre l’utilisation de la hiérarchie et celle de la colonne de date. Cette approche est particulièrement pertinente pour certains visuels, notamment quand il a uniquement besoin de la colonne de date et non de la hiérarchie et de ses niveaux. Il commence par configurer le champ visuel (en cliquant dessus avec le bouton droit ou en cliquant sur la flèche vers le bas), puis il bascule entre la colonne de date et la hiérarchie de dates à l’aide du menu contextuel.
 
 ![Exemple de configuration de champ visuel pour la hiérarchie OrderDate. Le menu contextuel est ouvert. Il présente deux options qui permettent de basculer entre l’utilisation de la colonne OrderDate et celle de la hiérarchie de dates.](media/desktop-auto-date-time/auto-date-time-configure-visuals-fields.png)
 
@@ -89,7 +87,7 @@ L’option Fichier actuel peut également être activée ou désactivée à tout
 > [!CAUTION]
 > Soyez vigilant quand vous désactivez l’option Fichier actuel, car les tables de date/heure automatique seront supprimées. Veillez à corriger tous les visuels ou filtres de rapport rompus, qui ont été configurés pour les utiliser.
 
-Dans Power BI Desktop, sélectionnez _Fichier > Options et paramètres > Options_, puis la page **Global** ou **Fichier actuel**. Sur les deux pages, l’option est disponible sous la section **Time Intelligence**.
+Dans Power BI Desktop, sélectionnez _Fichier > Options et paramètres > Options_, puis la page **Global** ou **Fichier actuel**. Dans les deux pages, l’option est disponible dans la section **Time Intelligence**.
 
 ![Configuration des options de Power BI Desktop. La page Chargement de données du groupe Global est sélectionnée. Dans la section Time Intelligence, l’option Date/heure automatique pour les nouveaux fichiers est activée.](media/desktop-auto-date-time/auto-date-time-configure-global-options.png)
 

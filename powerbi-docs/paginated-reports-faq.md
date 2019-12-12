@@ -7,13 +7,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 10/04/2019
-ms.openlocfilehash: d8fd8490bda3be4217440a984e8b6da6fca7c5cf
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: c1f8a274a17d85cf8f86d2e33ff63f3e9b686742
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874799"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831232"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Rapports paginés dans Power BI : FORUM AUX QUESTIONS 
 
@@ -116,21 +116,7 @@ Vous obtenez un message d’erreur si vous essayez de charger un fichier avec un
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Quelles sources de données prenez-vous actuellement en charge pour les rapports paginés ?
 
-Nous prenons en charge les sources de données suivantes - 
-
-- Jeux de données Power BI (via l’authentification unique)
-- Azure Analysis Services (via SSO et oAuth)
-- Azure SQL Data Warehouse
-- Azure SQL Database (nom d’utilisateur/mot de passe, authentification unique et OAuth)
-- Azure SQL Managed Instance via un point de terminaison public (nom d’utilisateur/mot de passe)
-- SQL Server*
-- Modèles tabulaires (DAX) et multidimensionnels (MDX) SQL Server Analysis Services (SSAS)* 
-- Oracle* 
-- Teradata* 
-
-* nécessite la passerelle locale.
-
-Lorsque vous accédez à SSAS via la passerelle, l’utilisateur dont les informations d’identification sont stockées a besoin d’autorisations avec élévation de privilèges dans SSAS pour fonctionner via la passerelle.
+Consultez l’article [Sources de données prises en charge pour les rapports paginés Power BI](paginated-reports-data-sources.md) pour obtenir la liste des sources de données. 
 
 ### <a name="what-authentication-methods-do-you-support"></a>Quelles méthodes d’authentification prenez-vous en charge ?
 

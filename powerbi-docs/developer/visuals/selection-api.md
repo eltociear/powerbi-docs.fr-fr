@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 5f5e4769c750406a02ead656af551133fbceb738
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 94a1af90cc7ed08947f65f4ed0d55e981558d049
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061888"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696439"
 ---
 # <a name="add-interactivity-into-visual-by-power-bi-visuals-selections"></a>Ajoutez de l'interactivité à vos visuels grâce à des sélections de visuels Power BI
 
@@ -35,11 +35,11 @@ export interface ISelectionId {
 
 ## <a name="how-to-use-selectionmanager-to-select-data-points"></a>Utilisation de SelectionManager pour sélectionner des points de données
 
-L'objet hôte visuel fournit une méthode pour créer l'instance du gestionnaire de sélection. Le gestionnaire de sélection responsable de la sélection, de l'effacement de la sélection, de l'affichage du menu contextuel, de la mémorisation des sélections en cours et de la vérification de l'état de la sélection. Et le gestionnaire de sélection propose des méthodes correspondantes pour ces actions.
+L’objet hôte visuel fournit la méthode pour créer une instance du gestionnaire de sélection. Le gestionnaire de sélection est responsable de la sélection, de l’effacement de la sélection, de l’affichage du menu contextuel, de la mémorisation des sélections en cours et de la vérification de l’état de la sélection. De plus, le gestionnaire de sélection propose des méthodes correspondantes pour ces actions.
 
-### <a name="create-instance-of-selection-manager"></a>Créer une instance de gestionnaire de sélection
+### <a name="create-an-instance-of-the-selection-manager"></a>Créer une instance de gestionnaire de sélection
 
-Pour utiliser le gestionnaire de sélection, vous devez en créer une instance. Mes visuels créent généralement l'instance du gestionnaire de sélection dans l’élément `constructor` de l'objet visuel.
+Pour utiliser le gestionnaire de sélection, vous devez en créer une instance. Les visuels créent généralement une instance du gestionnaire de sélection dans l’élément `constructor` de l’objet visuel.
 
 ```typescript
 export class Visual implements IVisual {
@@ -56,9 +56,9 @@ export class Visual implements IVisual {
 }
 ```
 
-### <a name="create-instance-of-selection-builder"></a>Créer une instance de générateur de sélection
+### <a name="create-an-instance-of-the-selection-builder"></a>Créer une instance de générateur de sélection
 
-Lorsque l'instance du gestionnaire de sélection est créée, vous devez créer `selections` pour chaque point de données du visuel. L'objet hôte visuel fournit la méthode `createSelectionIdBuilder` afin de générer une sélection pour chaque point de données. Cette méthode retourne l'instance de l'objet avec l'interface `powerbi.visuals.ISelectionIdBuilder` :
+Lorsque l'instance du gestionnaire de sélection est créée, vous devez créer `selections` pour chaque point de données du visuel. L'objet hôte visuel fournit la méthode `createSelectionIdBuilder` afin de générer une sélection pour chaque point de données. Cette méthode retourne l’instance de l’objet avec l’interface `powerbi.visuals.ISelectionIdBuilder` :
 
 ```typescript
 export interface ISelectionIdBuilder {
@@ -71,17 +71,17 @@ export interface ISelectionIdBuilder {
 }
 ```
 
-Cet objet propose des méthodes correspondantes afin de créer `selections` pour différents types de mappages de vue de données.
+Cet objet propose des méthodes correspondantes afin de créer `selections` pour différents types de mappages de vues de données.
 
 > [!NOTE]
-> Les méthodes `withTable` et `withMatrixNode` ont été introduites dans l'API 2.5.0 des visuels Power BI.
-> Si vous avez besoin d'utiliser des sélections pour des mappages de vue de données de table ou de matrice, vous devez mettre à jour l’API avec la version 2.5.0 ou supérieure.
+> Les méthodes `withTable` et `withMatrixNode` ont été introduites dans l’API 2.5.0 des visuels Power BI.
+> Si vous avez besoin d’utiliser des sélections pour des mappages de vues de données de tables ou de matrices, vous devez mettre à jour l’API avec la version 2.5.0 ou supérieure.
 
 ### <a name="create-selections-for-categorical-data-view-mapping"></a>Créer des sélections pour le mappage de vues de données catégoriques
 
 Examinons comment les sélections sont représentées sur le mappage de vues de données catégoriques pour un exemple de jeu de données :
 
-| Constructeur | Type | Valeur |
+| Fabricant | Type | Valeur |
 | - | - | - |
 | Chrysler | Voiture nationale | 28883 |
 | Chrysler | Camion national | 117131 |
@@ -108,7 +108,7 @@ Examinons comment les sélections sont représentées sur le mappage de vues de 
 | Toyota | Véhicule d’importation | 20799 |
 | Toyota | Camion d’importation | 23614 |
 
-Et le visuel utilise le mappage de vue de données suivant :
+Et le visuel utilise le mappage de vues de données suivant :
 
 ```json
 {
@@ -155,13 +155,13 @@ Et le visuel utilise le mappage de vue de données suivant :
 }
 ```
 
-Dans l'exemple, `Manafacturer` est `columns` et `Type` est `rows`. Certaines séries sont créées par des groupes de valeurs par `rows` (`Type`).
+Dans l'exemple, `Manufacturer` est `columns` et `Type` est `rows`. Certaines séries sont créées par des groupes de valeurs par `rows` (`Type`).
 
-Et le visuel devrait être également capable de découper les données par `Manafacturer` et `Type`.
+Et le visuel devrait être également capable de découper les données par `Manufacturer` et `Type`.
 
-Par exemple, lorsque l'utilisateur sélectionne `Chrysler` par `Manafacturer`, les autres visuels doivent afficher les données suivantes :
+Par exemple, lorsque l'utilisateur sélectionne `Chrysler` par `Manufacturer`, les autres visuels doivent afficher les données suivantes :
 
-| Constructeur | Type | Valeur |
+| Fabricant | Type | Valeur |
 | - | - | - |
 | **Chrysler** | Voiture nationale | 28883 |
 | **Chrysler** | Camion national | 117131 |
@@ -170,7 +170,7 @@ Par exemple, lorsque l'utilisateur sélectionne `Chrysler` par `Manafacturer`, l
 
 Lorsque l'utilisateur sélectionne `Import Car` par `Type` (sélectionne les données par série), les autres visuels doivent afficher les données suivantes :
 
-| Constructeur | Type | Valeur |
+| Fabricant | Type | Valeur |
 | - | - | - |
 | Chrysler | **Véhicule d’importation** | 0 |
 | Ford | **Véhicule d’importation** | 0 |
@@ -185,10 +185,10 @@ Besoin de remplir les paniers de données visuelles.
 
 ![Paniers de données du visuel avec sélections](media/visual-selections-databuckets.png)
 
-Il existe `Manafacturer` comme catégorie (colonnes), `Type` comme séries (lignes) et `Value` comme `Values` pour les séries.
+Il existe `Manufacturer` comme catégorie (colonnes), `Type` comme séries (lignes) et `Value` comme `Values` pour les séries.
 
 > [!NOTE]
-> Les `Values` sont nécessaires pour les séries, car en fonction du mappage de la vue des données, le visuel s'attend à un groupement des `Values` par données `Rows`.
+> Les `Values` sont nécessaires pour les séries car, en fonction du mappage de vues de données, le visuel s’attend à un groupement des `Values` par données `Rows`.
 
 #### <a name="create-selections-for-categories"></a>Créer des sélections pour des catégories
 
@@ -196,7 +196,7 @@ Il existe `Manafacturer` comme catégorie (colonnes), `Type` comme séries (lign
 // categories
 const categories = dataView.categorical.categories;
 
-// create label for 'Manafacturer' column
+// create label for 'Manufacturer' column
 const p = document.createElement("p") as HTMLParagraphElement;
 p.innerText = categories[0].source.displayName.toString();
 this.target.appendChild(p);
@@ -209,7 +209,7 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
     const categoryValue: powerbi.PrimitiveValue = categories[0].values[categoryIndex];
 
     const categorySelectionId = this.host.createSelectionIdBuilder()
-        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manafacturer` column)
+        .withCategory(categories[0], categoryIndex) // we have only one category (only one `Manufacturer` column)
         .createSelectionId();
     this.dataPoints.push({
         value: categoryValue,
@@ -229,9 +229,9 @@ for (let categoryIndex = 0; categoryIndex < categoriesCount; categoryIndex++) {
 }
 ```
 
-Dans l'exemple de code, vous pouvez constater que nous itérons toutes les catégories. Et dans chaque itération, nous appelons `createSelectionIdBuilder` pour créer la sélection suivante pour chaque catégorie en appelant la méthode `withCategory` du générateur de sélection. La méthode `createSelectionId` est utilisée comme méthode finale pour retourner l'objet généré `selection`.
+Dans l’exemple de code, vous pouvez constater que nous itérons toutes les catégories. De plus, dans chaque itération, nous appelons `createSelectionIdBuilder` afin de créer la sélection suivante pour chaque catégorie en appelant la méthode `withCategory` du générateur de sélection. La méthode `createSelectionId` est utilisée comme méthode finale pour retourner l’objet `selection` généré.
 
-Dans la méthode `withCategory`, nous passons la colonne de `category`, `Manafacturer` dans cet exemple, et l'index d’un élément de catégorie.
+Dans la méthode `withCategory`, nous passons la colonne de `category`, `Manufacturer` dans cet exemple, et l’index d’un élément de catégorie.
 
 #### <a name="create-selections-for-series"></a>Créer des sélections pour les séries
 
@@ -295,7 +295,7 @@ Exemple de mappage de vues de données de tables
 }
 ```
 
-Afin de créer une sélection pour chaque ligne d’un mappage de vue de données de table, vous devez appeler la méthode `withTable` du générateur de sélection.
+Afin de créer une sélection pour chaque ligne d’un mappage de vues de données de tables, vous devez appeler la méthode `withTable` du générateur de sélection.
 
 ```typescript
 public update(options: VisualUpdateOptions) {
@@ -309,7 +309,7 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Le code visuel itère les lignes de la table, et chaque ligne appelle la méthode `withTable` de la table. Les paramètres de la méthode `withTable` représentent l’objet et l’index `table` de la ligne de la table.
+Le code visuel itère les lignes de la table, et chaque ligne appelle la méthode de table `withTable`. Les paramètres de la méthode `withTable` représentent l’objet et l’index `table` de la ligne de la table.
 
 ### <a name="create-selections-for-matrix-data-view-mapping"></a>Créer des sélections pour le mappage de vues de données de matrices
 
@@ -336,13 +336,13 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Dans l'exemple, `nodeWalker` appelle récursivement chaque nœud et les nœuds enfants.
+Dans l’exemple, `nodeWalker` appelle de manière récursive chaque nœud et les nœuds enfants.
 
 `nodeWalker` crée un objet `nodeSelection` à chaque appel. Et chaque `nodeSelection` représente une `selection` de nœuds correspondants.
 
 ## <a name="select-datapoints-to-slice-other-visuals"></a>Sélectionner des points de données pour découper d'autres visuels
 
-Dans les exemples de codes de sélections pour un mappage de vue de données catégoriques, vous avez noté que nous avons créé un gestionnaire de clics pour les éléments de boutons. Le gestionnaire appelle la méthode `select` du gestionnaire de sélection et passe l'objet de sélection.
+Dans les exemples de codes de sélections pour un mappage de vues de données catégoriques, vous avez noté que nous avons créé un gestionnaire de clics pour les éléments de boutons. Le gestionnaire appelle la méthode `select` du gestionnaire de sélection et passe l’objet de sélection.
 
 ```typescript
 button.addEventListener("click", () => {
@@ -361,9 +361,9 @@ interface ISelectionManager {
 }
 ```
 
-Vous constatez que `select` peut accepter un tableau de sélections. Cela signifie que votre visuel peut sélectionner plusieurs points de données. Le second paramètre `multiSelect` est chargé de la sélection multiple. Si la valeur est vraie, Power BI n'efface pas l'état de sélection précédent et applique la sélection actuelle. Sinon la sélection précédente sera réinitialisée.
+Vous constatez que `select` peut accepter un tableau de sélections. Cela signifie que votre visuel peut sélectionner plusieurs points de données. Le second paramètre `multiSelect` est chargé de la sélection multiple. Si la valeur est true, Power BI n’efface pas l’état de sélection précédent et applique la sélection actuelle. Sinon, la sélection précédente sera réinitialisée.
 
-Scénario typique d'utilisation d’un `multiSelect` gérant l'état du bouton CTRL sur un événement de clic.
+Scénario classique d’utilisation de `multiSelect` gérant l’état du bouton Ctrl sur un événement Click.
 
 ```typescript
 button.addEventListener("click", (mouseEvent) => {

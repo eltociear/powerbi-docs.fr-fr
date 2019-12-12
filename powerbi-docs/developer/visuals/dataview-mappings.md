@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 07cc0517fb27649bb3cc47b8ba8f51b4268d9a7c
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: b50ebde94d78ca42437979d792fb6402affe8855
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880154"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696625"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Présentation du mappage des vues de données dans les visuels Power BI
 
@@ -101,14 +101,29 @@ Pour utiliser un mappage de données unique, vous devez définir le nom du rôle
 ### <a name="example-3"></a>Exemple 3
 
 ```json
-"dataViewMappings": {
-    "conditions": [
-        { "Y": { "max": 1 } }
+{
+    "dataRoles": [
+        {
+            "displayName": "Y",
+            "name": "Y",
+            "kind": "Measure"
+        }
     ],
-    "single": {
-        "role": "Y"
-    }
-}  
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "Y": {
+                        "max": 1
+                    }
+                }
+            ],
+            "single": {
+                "role": "Y"
+            }
+        }
+    ]
+}
 ```
 
 La vue de données résultante contient toujours les autres types (table, catégorie, et ainsi de suite), mais chaque mappage ne contient que la valeur unique. La bonne pratique consiste à accéder uniquement à la valeur unique.
@@ -129,6 +144,48 @@ La vue de données résultante contient toujours les autres types (table, catég
     ]
 }
 ```
+
+Exemple de code pour traiter un mappage de vues de données simple
+
+```typescript
+"use strict";
+import powerbi from "powerbi-visuals-api";
+import DataView = powerbi.DataView;
+import DataViewSingle = powerbi.DataViewSingle;
+// standart imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private valueText: HTMLParagraphElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.valueText = document.createElement("p");
+        this.target.appendChild(this.valueText);
+        // ...
+    }
+
+    public update(options: VisualUpdateOptions) {
+        const dataView: DataView = options.dataViews[0];
+        const singleDataView: DataViewSingle = dataView.single;
+
+        if (!singleDataView ||
+            !singleDataView.value ) {
+            return
+        }
+
+        this.valueText.innerText = singleDataView.value.toString();
+    }
+}
+```
+
+Par conséquent, le visuel affiche une seule valeur de Power BI :
+
+![Exemple de visuel de mappage de vues de données unique](./media/visual-simple-dataview-mapping.png)
 
 ## <a name="categorical-data-mapping"></a>Mappage de données par catégorie
 
@@ -284,10 +341,10 @@ La vue de données par catégorie peut être visualisée ainsi :
 |-----|-----|------|------|------|------|
 | | Année | 2013 | 2014 | 2015 | 2016 |
 | Pays | | |
-| USA | | x | x | 125 | 100 |
-| Canada | | x | 50 | 200 | x |
-| Mexico | | 300 | x | x | x |
-| Royaume-Uni | | x | x | 75 | x |
+| USA | | x | x | 650 | 350 |
+| Canada | | x | 630 | 490 | x |
+| Mexico | | 645 | x | x | x |
+| Royaume-Uni | | x | x | 831 | x |
 
 Power BI la produit comme vue de données par catégorie. Il s’agit de l’ensemble des catégories.
 
@@ -299,9 +356,9 @@ Power BI la produit comme vue de données par catégorie. Il s’agit de l’ens
                 "source": {...},
                 "values": [
                     "Canada",
-                    "Mexico",
+                    "USA",
                     "UK",
-                    "USA"
+                    "Mexico"
                 ],
                 "identity": [...],
                 "identityFields": [...],
@@ -313,54 +370,130 @@ Power BI la produit comme vue de données par catégorie. Il s’agit de l’ens
 
 Chaque catégorie est également mappée à un ensemble de valeurs. Chacune de ces valeurs est regroupée par série, qui est exprimée sous forme d’années.
 
-Par exemple, les ventes du Canada en 2013 sont nulles, et elles se montent à 50 en 2014.
+Par exemple, chaque tableau `values` représente des données pour chaque année.
+En outre, chaque tableau `values` comporte 4 valeurs, respectivement pour le Canada, les États-Unis, le Royaume-Uni et le Mexique :
 
 ```JSON
 {
     "values": [
+        // Values for 2013 year
         {
             "source": {...},
             "values": [
-                null,
-                300,
-                null,
-                null
+                null, // Value for `Canada` category
+                null, // Value for `USA` category
+                null, // Value for `UK` category
+                645 // Value for `Mexico` category
             ],
             "identity": [...],
         },
+        // Values for 2014 year
         {
             "source": {...},
             "values": [
-                50,
-                null,
-                150,
-                null
+                630, // Value for `Canada` category
+                null, // Value for `USA` category
+                null, // Value for `UK` category
+                null // Value for `Mexico` category
             ],
             "identity": [...],
         },
+        // Values for 2015 year
         {
             "source": {...},
             "values": [
-                200,
-                null,
-                null,
-                125
+                490, // Value for `Canada` category
+                650, // Value for `USA` category
+                831, // Value for `UK` category
+                null // Value for `Mexico` category
             ],
             "identity": [...],
         },
+        // Values for 2016 year
         {
             "source": {...},
             "values": [
-                null,
-                null,
-                null,
-                100
+                null, // Value for `Canada` category
+                350, // Value for `USA` category
+                null, // Value for `UK` category
+                null // Value for `Mexico` category
             ],
             "identity": [...],
         }
     ]
 }
 ```
+
+L’exemple de code pour le traitement du mappage de vues de données catégoriques est décrit ci-dessous. L’exemple crée une structure hiérarchique `Country => Year => Value`
+
+```typescript
+"use strict";
+import powerbi from "powerbi-visuals-api";
+import DataView = powerbi.DataView;
+import DataViewDataViewCategoricalSingle = powerbi.DataViewCategorical;
+import DataViewValueColumnGroup = powerbi.DataViewValueColumnGroup;
+import PrimitiveValue = powerbi.PrimitiveValue;
+// standart imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private categories: HTMLElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.categories = document.createElement("pre");
+        this.target.appendChild(this.categories);
+        // ...
+    }
+
+    public update(options: VisualUpdateOptions) {
+        const dataView: DataView = options.dataViews[0];
+        const categoricalDataView: DataViewCategorical = dataView.categorical;
+
+        if (!categoricalDataView ||
+            !categoricalDataView.categories ||
+            !categoricalDataView.categories[0] ||
+            !categoricalDataView.values) {
+            return;
+        }
+
+        // Categories have only one column in data buckets
+        // If you want to support several columns of categories data bucket, you should iterate categoricalDataView.categories array.
+        const categoryFieldIndex = 0;
+        // Measure has only one column in data buckets.
+        // If you want to support several columns on data bucket, you should iterate years.values array in map function
+        const measureFieldIndex = 0;
+        let categories: PrimitiveValue[] = categoricalDataView.categories[categoryFieldIndex].values;
+        let values: DataViewValueColumnGroup[] = categoricalDataView.values.grouped();
+
+        let data = {};
+        // iterate categories/countries
+        categories.map((category: PrimitiveValue, categoryIndex: number) => {
+            data[category.toString()] = {};
+            // iterate series/years
+            values.map((years: DataViewValueColumnGroup) => {
+                if (!data[category.toString()][years.name] && years.values[measureFieldIndex].values[categoryIndex]) {
+                    data[category.toString()][years.name] = []
+                }
+                if (years.values[0].values[categoryIndex]) {
+                    data[category.toString()][years.name].push(years.values[measureFieldIndex].values[categoryIndex]);
+                }
+            });
+        });
+
+        this.categories.innerText = JSON.stringify(data, null, 6);
+        console.log(data);
+    }
+}
+```
+
+Résultat du visuel :
+
+![Visuel avec mappage de vues de données catégoriques](./media/categorical-data-view-mapping-visual.png)
 
 ## <a name="table-data-mapping"></a>Mappage de données de table
 
@@ -373,8 +506,13 @@ Avec les fonctionnalités données :
 ```json
 "dataRoles": [
     {
-        "displayName": "Values",
-        "name": "values",
+        "displayName": "Column",
+        "name": "column",
+        "kind": "Measure"
+    },
+    {
+        "displayName": "Value",
+        "name": "value",
         "kind": "Measure"
     }
 ]
@@ -385,9 +523,18 @@ Avec les fonctionnalités données :
     {
         "table": {
             "rows": {
-                "for": {
-                    "in": "values"
-                }
+                "select": [
+                    {
+                        "for": {
+                            "in": "column"
+                        }
+                    },
+                    {
+                        "for": {
+                            "in": "value"
+                        }
+                    }
+                ]
             }
         }
     }
@@ -395,6 +542,8 @@ Avec les fonctionnalités données :
 ```
 
 Vous pouvez visualiser la vue des données de table comme suit :  
+
+Exemple de données :
 
 | Pays| Année | Ventes |
 |-----|-----|------|
@@ -406,6 +555,10 @@ Vous pouvez visualiser la vue des données de table comme suit :
 | Royaume-Uni | 2014 | 150 |
 | USA | 2015 | 75 |
 
+Liaison de données :
+
+![Liaisons de données de mappage de vues de données de tables](./media/table-dataview-mapping-data.png)
+
 Power BI affiche vos données en tant que vue de données de table. Vous ne devez pas assumer que les données sont triées.
 
 ```JSON
@@ -416,37 +569,32 @@ Power BI affiche vos données en tant que vue de données de table. Vous ne deve
             [
                 "Canada",
                 2014,
-                50
+                630
             ],
             [
                 "Canada",
                 2015,
-                200
+                490
             ],
             [
                 "Mexico",
                 2013,
-                300
+                645
             ],
             [
                 "UK",
                 2014,
-                150
+                831
             ],
             [
                 "USA",
                 2015,
-                100
-            ],
-            [
-                "USA",
-                2015,
-                75
+                650
             ],
             [
                 "USA",
                 2016,
-                100
+                350
             ]
         ]
     }
@@ -456,6 +604,89 @@ Power BI affiche vos données en tant que vue de données de table. Vous ne deve
 Vous pouvez agréger les données en sélectionnant le champ souhaité, puis en sélectionnant Sum.  
 
 ![Agrégation des données](./media/data-aggregation.png)
+
+Exemple de code pour traiter un mappage de vues de données de tables.
+
+```typescript
+"use strict";
+import "./../style/visual.less";
+import powerbi from "powerbi-visuals-api";
+// ...
+import DataViewMetadataColumn = powerbi.DataViewMetadataColumn;
+import DataViewTable = powerbi.DataViewTable;
+import DataViewTableRow = powerbi.DataViewTableRow;
+import PrimitiveValue = powerbi.PrimitiveValue;
+// other imports
+// ...
+
+export class Visual implements IVisual {
+    private target: HTMLElement;
+    private host: IVisualHost;
+    private table: HTMLParagraphElement;
+
+    constructor(options: VisualConstructorOptions) {
+        // constructor body
+        this.target = options.element;
+        this.host = options.host;
+        this.table = document.createElement("table");
+        this.target.appendChild(this.table);
+        // ...
+    }
+
+    public update(options: VisualUpdateOptions) {
+        const dataView: DataView = options.dataViews[0];
+        const tableDataView: DataViewTable = dataView.table;
+
+        if (!tableDataView) {
+            return
+        }
+        while(this.table.firstChild) {
+            this.table.removeChild(this.table.firstChild);
+        }
+
+        //draw header
+        const tableHeader = document.createElement("th");
+        tableDataView.columns.forEach((column: DataViewMetadataColumn) => {
+            const tableHeaderColumn = document.createElement("td");
+            tableHeaderColumn.innerText = column.displayName
+            tableHeader.appendChild(tableHeaderColumn);
+        });
+        this.table.appendChild(tableHeader);
+
+        //draw rows
+        tableDataView.rows.forEach((row: DataViewTableRow) => {
+            const tableRow = document.createElement("tr");
+            row.forEach((columnValue: PrimitiveValue) => {
+                const cell = document.createElement("td");
+                cell.innerText = columnValue.toString();
+                tableRow.appendChild(cell);
+            })
+            this.table.appendChild(tableRow);
+        });
+    }
+}
+```
+
+Le fichier de styles visuels `style/visual.less` contient la disposition du tableau :
+
+```less
+table {
+    display: flex;
+    flex-direction: column;
+}
+
+tr, th {
+    display: flex;
+    flex: 1;
+}
+
+td {
+    flex: 1;
+    border: 1px solid black;
+}
+```
+
+![Visuel avec mappage de vues de données de tables](./media/table-dataview-mapping-visual.png)
 
 ## <a name="matrix-data-mapping"></a>Mappage de données de matrice
 
@@ -694,7 +925,7 @@ Vous pouvez appliquer l’algorithme de réduction des données à la section `r
                     "top": {
                         "count": 2000
                     }
-                } 
+                }
             }
         }
     }
@@ -702,3 +933,7 @@ Vous pouvez appliquer l’algorithme de réduction des données à la section `r
 ```
 
 Vous pouvez appliquer l’algorithme de réduction des données aux sections `rows` et `columns` de la matrice de mappage des vues de données.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Découvrez comment [ajouter la prise en charge de l’exploration pour les mappages de vues de données dans les visuels Power BI](drill-down-support.md).

@@ -9,24 +9,24 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 8a9218085b0da655d1ce4b3ece0b2666c4826c86
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: e2587140d5436552e26be90c67eb5e6240bf6a1d
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061865"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696137"
 ---
 # <a name="microsoft-power-bi-visuals-interactivity-utils"></a>Utilitaires d’interactivité visuels Microsoft Power BI
 
-InteractivityUtils est un ensemble de fonctions et de classes visant à simplifier l'implémentation de la sélection croisée et du filtrage croisé pour les visuels personnalisés Power BI.
+InteractivityUtils est un ensemble de fonctions et de classes visant à simplifier l’implémentation de la sélection croisée et du filtrage croisé pour les visuels personnalisés Power BI.
 
 ## <a name="installation"></a>Installation
 
 > [!NOTE]
-> Si vous continuez à utiliser l'ancienne version de powerbi-visuals-tools (numéro de version inférieur à 3.x.x), installez la nouvelle version des outils (3.x.x).
+> Si vous continuez à utiliser l’ancienne version de powerbi-visuals-tools (numéro de version inférieur à 3.x.x), installez la nouvelle version des outils (3.x.x).
 
 > [!IMPORTANT]
-> Les nouvelles mises à jour des utilitaires d'interactivité ne prendront en charge que la dernière version des outils. [En savoir plus sur la mise à jour du code de vos visuels à utiliser avec les outils les plus récents](migrate-to-new-tools.md)
+> Les nouvelles mises à jour des utilitaires d’interactivité ne prendront en charge que la dernière version des outils. [Découvrez plus en détail comment mettre à jour le code de votre visuel à utiliser avec les outils les plus récents](migrate-to-new-tools.md)
 
 Pour installer le package, vous devez exécuter la commande suivante dans le répertoire avec votre visuel personnalisé actuel :
 
@@ -40,7 +40,7 @@ npm install powerbi-visuals-utils-interactivityutils --save
 npm install powerbi-models --save
 ```
 
-Pour les utilitaires d’interactivité de l'utilisateur, vous devez importer le composant requis dans le code source du visuel.
+Pour les utilitaires d’interactivité de l’utilisateur, vous devez importer le composant requis dans le code source du visuel.
 
 ```typescript
 import { interactivitySelectionService } from "powerbi-visuals-utils-interactivityutils";
@@ -59,7 +59,7 @@ En conséquence, vous obtenez la structure de fichiers suivante :
 ```
 
 > [!NOTE]
-> Vous devriez importer le fichier .css en tant que fichier .css car Power BI Visuals Tools encapsule les règles CSS externes.
+> Vous devez importer le fichier .css en tant que fichier .less, car Power BI Visuals Tools encapsule les règles CSS externes.
 
 ## <a name="usage"></a>Utilisation
 
@@ -80,7 +80,7 @@ Les points de données contiennent généralement des sélections et des valeurs
   specificIdentity?: powerbi.extensibility.ISelectionId;
 ```
 
-La première étape lors de l'utilisation des outils d'interactivité consiste à créer des instances d'outils d'interactivité et à sauvegarder l'objet comme une propriété du visuel
+La première étape de l’emploi des utilitaires d’interactivité consiste à créer une instance de ces utilitaires et à enregistrer l’objet comme une propriété du visuel
 
 ```typescript
 export class Visual implements IVisual {
@@ -106,9 +106,9 @@ export interface VisualDataPoint extends interactivitySelectionService.Selectabl
 La seconde étape consiste à étendre la classe de comportement de base :
 
 > [!NOTE]
-> BaseBehavior introduit dans la version [5.6.x des utilitaires d'interactivité](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). Si vous utilisez l'ancienne version, créez une classe de comportement à partir de l'exemple ci-dessous (la classe `BaseBehavior` est identique) :
+> BaseBehavior introduit dans la version [5.6.x des utilitaires d'interactivité](https://www.npmjs.com/package/powerbi-visuals-utils-interactivityutils/v/5.6.0). Si vous utilisez l’ancienne version, créez une classe de comportement à partir de l’exemple ci-dessous (la classe `BaseBehavior` est identique) :
 
-Définissez l'interface pour les options de la classe de comportement :
+Définissez l’interface pour les options de la classe de comportement :
 
 ```typescript
 import { SelectableDataPoint } from "./interactivitySelectionService";
@@ -126,8 +126,8 @@ export interface BaseBehaviorOptions<SelectableDataPointType extends BaseDataPoi
 }
 ```
 
-Définissez la classe pour `visual behaviour`. La classe chargée de gérer les événements de souris `click` et `contextmenu`.
-Lorsque l’utilisateur clique sur des éléments de données, le visuel demande au gestionnaire de sélection de choisir des points de données. Ou d’effacer la sélection, si l'utilisateur clique sur un élément en arrière-plan du visuel. Et la classe comporte les méthodes correspondantes `bindClick`, `bindClearCatcher` et `bindContextMenu`.
+Définissez une classe pour `visual behavior`. La classe est chargée de gérer les événements de souris `click` et `contextmenu`.
+Quand un utilisateur clique sur des éléments de données, le visuel appelle le gestionnaire de sélection pour choisir des points de données. Si l’utilisateur clique sur l’élément en arrière-plan du visuel, il appelle le gestionnaire pour effacer la sélection. Et la classe comporte les méthodes correspondantes `bindClick`, `bindClearCatcher` et `bindContextMenu`.
 
 ```typescript
 export class Behavior<SelectableDataPointType extends BaseDataPoint> implements IInteractiveBehavior {
@@ -214,7 +214,7 @@ protected bindContextMenu() {
 }
 ```
 
-Les utilitaires d’interactivité appellent les méthodes `bindEvents` pour assigner des fonctions aux gestionnaires, ajouter des appels de `bindClick`, `bindClearCatcher`,et `bindContextMenu` à la méthode `bindEvents` :
+Les utilitaires d’interactivité appellent les méthodes `bindEvents` pour assigner des fonctions aux gestionnaires, ajouter des appels de `bindClick`, `bindClearCatcher` et `bindContextMenu` à la méthode `bindEvents` :
 
 ```typescript
   public bindEvents(
@@ -230,9 +230,9 @@ Les utilitaires d’interactivité appellent les méthodes `bindEvents` pour ass
   }
 ```
 
-La méthode `renderSelection` chargée de la mise à jour de l'état des visuels des éléments du graphique.
+La méthode `renderSelection` est chargée de la mise à jour de l’état visuel des éléments du graphique.
 
-L'échantillon de la méthode d’implémentation `renderSelection` :
+Exemple d’implémentation de la méthode `renderSelection` :
 
 ```typescript
 public renderSelection(hasSelection: boolean): void {
@@ -246,7 +246,7 @@ public renderSelection(hasSelection: boolean): void {
 }
 ```
 
-La dernière étape est la création de l'instance de `visual behavior` et l'appel de la méthode `bind` de l’instance des utilitaires d'interactivité :
+La dernière étape est la création d’une instance de `visual behavior` et l’appel de la méthode `bind` de l’instance des utilitaires d’interactivité :
 
 ```typescript
 this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
@@ -257,11 +257,11 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
 });
 ```
 
-* `selectionMerge` est un objet de sélection D3, qui représente tous les éléments sélectionnables sur le visuel.
+* `selectionMerge` est l’objet de sélection D3, qui représente tous les éléments sélectionnables sur le visuel.
 
-* `select(this.target)` est l'objet de sélection D3, qui représente les éléments DOm principaux du visuel.
+* `select(this.target)` est l’objet de sélection D3, qui représente les principaux éléments DOM du visuel.
 
-* Points de données `this.categories`, où l'interface est `VisualDataPoint` (ou `categories: VisualDataPoint[];`)
+* `this.categories` sont des points de données avec des éléments, où l’interface est `VisualDataPoint` (ou `categories: VisualDataPoint[];`)
 
 * `this.behavior` est une nouvelle instance de `visual behavior`
 
@@ -278,7 +278,7 @@ this.interactivity.bind(<BaseBehaviorOptions<VisualDataPoint>>{
   }
   ```
 
-Votre visuel est maintenant prêt pour la sélection du gestionnaire.
+Votre visuel est maintenant prêt à gérer la sélection.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

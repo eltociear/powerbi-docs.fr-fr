@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/22/2019
-ms.openlocfilehash: d0f0abe15348d54f24143d69fcd6c0c2b71e9a34
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/03/2019
+ms.openlocfilehash: fced83abab1898724e165154fbc177ccf50ca061
+ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73874783"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74831258"
 ---
 # <a name="pagination-in-power-bi-paginated-reports"></a>Pagination des rapports Power BI
 
- La pagination fait référence au nombre de pages que compte un rapport et à la façon dont les éléments de celui-ci sont disposés sur ces pages. Dans les rapports paginés Power BI, la pagination varie en fonction de l’extension de rendu que vous utilisez pour afficher et remettre le rapport. Lorsque vous exécutez un rapport sur le serveur de rapports, celui-ci utilise le convertisseur HTML. Le format HTML suit un ensemble spécifique de règles de pagination. Si vous exportez le même rapport au format PDF, par exemple, le convertisseur PDF est utilisé et un autre ensemble de règles est appliqué. Par conséquent, la pagination du rapport diffère. Pour concevoir avec succès un rapport facile à lire, optimisé pour le convertisseur que vous prévoyez d’utiliser pour le remettre, vous devez comprendre les règles utilisées pour contrôler la pagination dans les rapports paginés Power BI.  
+ La *pagination* fait référence au nombre de pages d’un rapport et à la disposition des éléments de rapport dans ces pages. Dans les rapports paginés Power BI, la pagination varie en fonction de l’extension de rendu que vous utilisez pour afficher et remettre le rapport. Lorsque vous exécutez un rapport sur le serveur de rapports, celui-ci utilise le convertisseur HTML. Le format HTML suit un ensemble spécifique de règles de pagination. Si vous exportez le même rapport au format PDF, par exemple, vous utilisez le convertisseur PDF, qui utilise un autre ensemble de règles. Par conséquent, le rapport est paginé différemment. Vous devez comprendre les règles utilisées pour contrôler la pagination dans les rapports paginés Power BI. Vous pouvez alors concevoir correctement un rapport facile à lire que vous optimisez pour le convertisseur que vous prévoyez d’utiliser pour distribuer votre rapport.  
   
- Cette rubrique décrit l’impact de la taille physique de la page et de la mise en page du rapport sur la manière dont les convertisseurs rendent les sauts de page manuels. Vous pouvez définir des propriétés afin de modifier la taille physique et les marges des pages, ainsi que diviser le rapport en colonnes via le volet **Propriétés du rapport**, le volet **Propriétés** ou la boîte de dialogue **Mise en page**. Pour accéder au volet **Propriétés du rapport**, cliquez sur la zone bleue en dehors du corps du rapport. Pour accéder à la boîte de dialogue **Mise en page**, cliquez sur **Exécuter** sous l’onglet Accueil, puis cliquez sur **Mise en page** sous l’onglet Exécuter.  
+ Cette rubrique décrit l’impact de la taille physique de la page et de la mise en page du rapport sur la manière dont les convertisseurs rendent les sauts de page manuels. Vous pouvez définir des propriétés afin de modifier la taille physique et les marges des pages, ainsi que diviser le rapport en colonnes par le biais du volet **Propriétés du rapport**, du volet **Propriétés** ou de la boîte de dialogue **Mise en page**. Accédez au volet **Propriétés du rapport** en cliquant sur la zone bleue en dehors du corps du rapport. Accédez à la boîte de dialogue **Mise en page** en cliquant sur **Exécuter** sous l’onglet Accueil, puis en cliquant sur **Mise en page** sous l’onglet Exécuter.  
   
 > [!NOTE]  
 >  Si vous avez conçu un rapport pour qu’il présente une largeur d’une page, mais soit rendu sur plusieurs pages, vérifiez que la largeur du corps du rapport, marges comprises, n’est pas supérieure à la largeur de la page physique. Pour empêcher l’ajout de pages vides à votre rapport, vous pouvez réduire la taille du conteneur en faisant glisser le coin de celui-ci vers la gauche.  
@@ -30,7 +30,7 @@ ms.locfileid: "73874783"
  Vous pouvez mettre en forme le corps du rapport avec une couleur, un style et une largeur de bordure. Vous pouvez également ajouter une couleur et une image d’arrière-plan.  
   
 ## <a name="the-physical-page"></a>Page physique  
- La taille de page physique correspond au format du papier. Le format de papier que vous spécifiez pour le rapport détermine le rendu de celui-ci. Les rapports rendus dans des formats avec sauts de page manuels insèrent des sauts de page horizontalement et verticalement en fonction de la taille de page physique afin d’offrir une expérience de lecture optimisée quand ils sont imprimés ou visualisés dans un format de fichier avec sauts de page manuels. Les rapports rendus dans des formats avec sauts de page conditionnels insèrent des sauts de page horizontalement en fonction de la taille de page physique afin d’offrir une expérience de lecture optimisée quand ils sont visualisés dans un navigateur web.  
+ La taille de page physique correspond au format du papier. Le format de papier que vous spécifiez pour le rapport détermine le rendu de celui-ci. Les rapports rendus dans des formats avec sauts de page manuels insèrent les sauts de page horizontalement et verticalement en fonction de la taille physique de la page. Ces sauts de page assurent une expérience de lecture optimisée pour l’impression ou l’affichage dans un format de fichier avec sauts de page manuels. Les rapports rendus dans des formats avec sauts de page conditionnels insèrent les sauts de page horizontalement en fonction de la taille physique. Là encore, les sauts de page assurent une expérience de lecture optimisée lors d’un affichage dans un navigateur web.  
   
  Par défaut, la taille de page est de 8,5 x 11 pouces, mais vous pouvez la modifier dans le volet **Propriétés du rapport** ou la boîte de dialogue **Mise en page**, ou en changeant les valeurs des propriétés HauteurPage et LargeurPage dans le volet **Propriétés**. La taille de la page ne s’ajuste pas en fonction du contenu du corps du rapport. Si vous souhaitez que le rapport s’affiche sur une seule page, tout le contenu du corps du rapport doit tenir sur la page physique. Si ce n’est pas le cas et si vous utilisez le format avec sauts de page manuels, le rapport nécessite des pages supplémentaires. Si le corps du rapport dépasse le bord droit de la page physique, un saut de page horizontal est inséré. Si le corps du rapport dépasse le bord inférieur de la page physique, un saut de page vertical est inséré.  
   
@@ -87,6 +87,6 @@ ms.locfileid: "73874783"
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Afficher un rapport paginé dans le service Power BI](paginated-reports-view-power-bi-service.md)
+[Afficher un rapport paginé dans le service Power BI](consumer/paginated-reports-view-power-bi-service.md)
 
 D’autres questions ? [Posez vos questions à la communauté Power BI](https://community.powerbi.com/)

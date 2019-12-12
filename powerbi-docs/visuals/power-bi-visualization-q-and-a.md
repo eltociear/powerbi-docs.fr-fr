@@ -5,14 +5,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2019
+ms.date: 11/19/2019
 ms.author: mohaali
-ms.openlocfilehash: 78a74d2d49ac9eabb7d63f467c9838d370d5c314
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 9805b98df7f606e61412ca9dee7dc0467a1649a3
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870835"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791834"
 ---
 # <a name="introduction-to-power-bi-qa-visual"></a>Présentation du visuel Questions et réponses de Power BI
 
@@ -92,7 +92,11 @@ Si vous n’êtes pas sûr du type de questions à poser ou de la terminologie �
 
 6. Nous allons remplacer ce type de visuel par un histogramme. 
 
-    ![Visuel Questions et réponses avec « sous forme d’histogramme » ajouté à la question](media/power-bi-visualization-q-and-a/power-bi-specify-visual.png)
+    ![Visuel Questions et réponses avec « as a column chart » (sous forme d’histogramme) ajouté à la question](media/power-bi-visualization-q-and-a/power-bi-specify-visual.png)
+
+7.  Ajoutez d’autres visuels à la page de rapport pour voir comment le visuel de Questions et réponses interagit avec les autres visuels de la page. Dans cet exemple, le visuel de Questions et réponses a effectué un filtrage croisé du graphique en courbes et de la carte, ainsi qu’une sélection croisée du graphique à barres.
+
+    ![Visuel de Questions et réponses avec une barre sélectionnée, et l’impact sur les trois autres visuels de la page de rapport](media/power-bi-visualization-q-and-a/power-bi-filters.png)
 
 ## <a name="format-and-customize-the-qa-visual"></a>Mettre en forme et personnaliser le visuel Questions et réponses
 Le visuel Questions et réponses peut être personnalisé en utilisant le volet de mise en forme et en appliquant un thème. 

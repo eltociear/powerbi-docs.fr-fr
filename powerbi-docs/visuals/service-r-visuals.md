@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b947fe3f2faf423a7b2ced4d0032578ded015f7a
-ms.sourcegitcommit: 08b73af260ded51daaa6749338cb85db2eab587f
+ms.openlocfilehash: efbeda396217c1a715f9a5d7ae4827c5f8d09a25
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099784"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74698989"
 ---
 # <a name="r-visuals-in-power-bi"></a>Visuels R dans Power BI
 Pour l’instant, les visuels doivent être créés à l’aide de **Power BI Desktop** avant d’être publiés dans le service Power BI. Pour plus d’informations sur la création de visuels R, consultez [Créer des visuels Power BI avec R ](../desktop-r-visuals.md).
@@ -94,6 +94,11 @@ Les éléments visuels R du service Power BI ont quelques limitations :
 * Les éléments visuels R ne s’affichent pas lorsque vous utilisez **Publier sur le web**.
 * Les éléments visuels R ne s’impriment pas pour le moment lors de l’impression de tableaux de bord et rapports.
 * Les éléments visuels R ne sont actuellement pas pris en charge dans le mode DirectQuery d’Analysis Services.
+* Les visuels R ont la possibilité de convertir des étiquettes de texte en éléments graphiques. Cette opération dans le service Power BI demande d’effectuer l’étape supplémentaire suivante :
+  
+  * Ajoutez la ligne suivante au début du script R :
+    
+        powerbi_rEnableShowText =  1
 * Pour que les polices chinoise, japonaise et coréenne fonctionnent correctement dans le service Power BI, vous devez suivre toutes les étapes supplémentaires suivantes :
   
   * Tout d’abord, installez le package R *showtext* et toutes ses dépendances. Vous pouvez le faire en exécutant le script suivant :

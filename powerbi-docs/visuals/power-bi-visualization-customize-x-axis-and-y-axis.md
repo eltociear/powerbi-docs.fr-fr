@@ -7,16 +7,18 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/4/2019
+ms.date: 12/3/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 393f6f25fedddd9ff17d635ae67ce473ab57eea4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bafcf3a754c58a040595279f93d885e8f317195e
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880922"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791770"
 ---
+- Où se trouve la ligne de la marge brute pour les années % ? Je peux voir plusieurs graphiques à barres, mais pas plusieurs lignes.
+
 # <a name="customize-x-axis-and-y-axis-properties"></a>Personnaliser les propriétés des axes X et Y
 
 [!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
@@ -171,7 +173,7 @@ Dans certaines visualisations, il peut être utile d’avoir deux axes Y. Les g
 
 ### <a name="create-a-chart-with-two-y-axes"></a>Créer un graphique avec deux axes Y
 
-1. Sélectionnez l’histogramme, puis changez-le en graphique *en courbes et histogramme empilé*. 
+1. Sélectionnez l’histogramme, puis changez-le en graphique *en courbes et histogramme empilé*. Ce type de visuel prend en charge une seule valeur de graphique en courbes et plusieurs valeurs de colonnes empilables. 
 
     ![Capture d’écran du volet Visualisation avec l’icône du graphique en courbes et de l’histogramme empilé.](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo.png)
    
@@ -185,7 +187,7 @@ Dans certaines visualisations, il peut être utile d’avoir deux axes Y. Les g
 
    ![Graphique combiné et volet de mise en forme avec une taille de police réduite à 12](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-font-size.png)
 
-   Power BI crée deux axes Y, ce qui vous permet d’afficher les valeurs selon une échelle différente. L’axe de gauche mesure le montant des ventes et l’axe de droite mesure le pourcentage.
+   Power BI crée deux axes Y, ce qui vous permet d’afficher les valeurs selon une échelle différente. L’axe de gauche mesure le montant des ventes et l’axe de droite mesure le pourcentage de marge brute.
 
 ### <a name="format-the-second-y-axis"></a>Mettre en forme le second axe Y
 Comme nous avons commencé avec une visualisation comportant un seul axe Y mis en forme, Power BI créé le deuxième axe Y en appliquant les mêmes paramètres. Toutefois, nous pouvons modifier cela. 

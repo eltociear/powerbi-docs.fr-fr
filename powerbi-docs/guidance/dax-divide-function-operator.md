@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 91acaa3a2252250e2a10674bae0e9be81f142696
-ms.sourcegitcommit: f1f57c5bc6ea3057007ed8636ede50188ed90ce1
+ms.openlocfilehash: c20a366ef657e851ef77a9649dbcc8b66b67dac0
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74410934"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695194"
 ---
 # <a name="dax-divide-function-vs-divide-operator-"></a>DAX : Fonction DIVIDE ou opérateur de division (/)
 
@@ -25,7 +25,7 @@ Lorsque vous utilisez la fonction DIVIDE, vous devez passer les expressions de n
 DIVIDE(<numerator>, <denominator> [,<alternateresult>])
 ```
 
-La fonction DIVIDE a été conçue pour gérer automatiquement les cas de division par zéro. Si aucun autre résultat n’est passé et que le dénominateur a la valeur zéro ou BLANK, la fonction retourne BLANK. Si un autre résultat est passé, il est retourné à la place de BLANK.
+La fonction DIVIDE a été conçue pour gérer automatiquement les cas de division par zéro. Si aucun autre résultat n’est passé et que le dénominateur a la valeur zéro ou BLANK, la fonction retourne BLANK. Quand un autre résultat est passé, il est retourné à la place de BLANK.
 
 La fonction DIVIDE est pratique, car elle évite à votre expression d’avoir à commencer par tester la valeur du dénominateur. La fonction est également mieux optimisée pour tester la valeur de dénominateur que la fonction [IF](/dax/if-function-dax). Le gain de performance est significatif, car la vérification de division par zéro est coûteuse. L’utilisation poussée de DIVIDE produit une expression plus concise et plus fluide.
 
@@ -58,7 +58,7 @@ Nous vous recommandons d’utiliser la fonction DIVIDE chaque fois que le dénom
 
 Dans le cas où le dénominateur est une valeur constante, nous vous recommandons d’utiliser l’opérateur de division. Dans ce cas, la réussite de la division est garantie et votre expression est plus performante, car elle évite les tests inutiles.
 
-Déterminez avec soin si la fonction DIVIDE doit retourner une autre valeur. Pour les mesures, il est généralement préférable qu’elle retourne BLANK. Il est préférable de retourner BLANK parce que les visuels de rapport éliminent par défaut les regroupements quand les totalisations ont la valeur BLANK. Cela permet au visuel de fixer son attention sur les groupes où il existe des données. Si nécessaire, vous pouvez configurer le visuel pour afficher tous les groupes (qui retournent des valeurs ou BLANK) dans le contexte de filtre en activant l’option « Afficher les éléments sans données ».
+Déterminez avec soin si la fonction DIVIDE doit retourner une autre valeur. Pour les mesures, il convient généralement mieux de retourner BLANK quand un résultat significatif ne peut pas être évalué. Pour plus d’informations, consultez [Éviter de convertir des blancs (BLANK) en valeurs](dax-avoid-converting-blank.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

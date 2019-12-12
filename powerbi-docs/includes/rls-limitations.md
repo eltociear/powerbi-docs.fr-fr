@@ -1,15 +1,15 @@
 ---
-author: mgblythe
+author: davidiseminger
 ms.service: powerbi
 ms.topic: include
 ms.date: 09/13/2019
-ms.author: mblythe
-ms.openlocfilehash: c658e683e86a899d45728220dee3706a0d617f0f
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.author: davidi
+ms.openlocfilehash: 6d1a239954a64da1c92cc68b56912e6f4ab67228
+ms.sourcegitcommit: 9a265d8117cc202f5f700286b5ff42a631aacdb4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74284104"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882794"
 ---
 ## <a name="limitations"></a>Limites
 
@@ -19,7 +19,7 @@ Voici une liste des limites actuelles pour la sécurité au niveau des lignes su
 
 * Vous pouvez définir la sécurité au niveau des lignes (SNL) uniquement sur les jeux de données créés à l’aide de Power BI Desktop. Pour activer la sécurité au niveau des lignes pour les jeux de données créés avec Excel, vous devez d’abord convertir vos fichiers au format PBIX (Power BI Desktop). [En savoir plus](../desktop-import-excel-workbooks.md)
 
-* Seules les connexions ETL et DirectQuery sont prises en charge. Les connexions actives à Analysis Services sont gérées dans le modèle local.
+* Seules les connexions Import et DirectQuery sont prises en charge. Les connexions actives à Analysis Services sont gérées dans le modèle local.
 
 ## <a name="known-issues"></a>Problèmes connus
 

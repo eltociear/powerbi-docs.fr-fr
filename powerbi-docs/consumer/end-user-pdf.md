@@ -7,15 +7,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/14/2019
+ms.date: 11/27/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8041fee4689c6319f219c26f20701c6062601a64
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.openlocfilehash: 9e00e68e0a5f6df62072a1d9744276bffbd3beb4
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164208"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791661"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Exporter des rapports Power BI au format PDF
 
@@ -62,6 +62,7 @@ Voici quelques considérations et limitations à prendre en compte quand vous ut
 * Le service Power BI utilise votre paramètre de langue Power BI pour l’exportation au format PDF. Pour afficher ou définir vos préférences de langue, sélectionnez l’icône représentant une roue dentée ![Icône de roue dentée](media/end-user-powerpoint/power-bi-settings-icon.png) > **Paramètres** > **Général** > **Langue**.
 * Les filtres d’URL ne sont actuellement pas respectés quand vous choisissez **Valeurs actuelles** pour l’exportation.
 * Les rapports avec des tailles de page personnalisées inhabituelles peuvent rencontrer des problèmes dans les scénarios d’exportation. Pour optimiser les résultats, donnez une taille de page standard à votre rapport.
+* Lors de l’exportation au format PDF, la police personnalisée des thèmes utilisés dans les rapports est remplacée par une police par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Imprimer un rapport](end-user-print.md)

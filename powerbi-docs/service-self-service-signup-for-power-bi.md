@@ -1,20 +1,20 @@
 ---
 title: S’inscrire à Power BI en tant qu’individu
 description: Découvrez comment vous inscrire à Power BI et commencez à l’utiliser pour vos besoins en analyse et en visualisation des données.
-author: mgblythe
+author: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.author: mblythe
+ms.author: kfollis
 LocalizationGroup: Get started
-ms.openlocfilehash: b7dae4c3b4ce35ec6af82ae59c374ab31937881a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 13928bc39801cdaccf73450da64c4f84048fbce3
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871543"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791635"
 ---
 # <a name="sign-up-for-power-bi-as-an-individual"></a>S’inscrire à Power BI en tant qu’individu
 
@@ -68,7 +68,7 @@ Effectuez les étapes suivantes afin de vous inscrire pour un compte Power BI. 
 
 ## <a name="trial-expiration"></a>Expiration de l’essai
 
-Une fois que vous avez terminé le processus d’inscription, vous pouvez vous inscrire pour une évaluation de Power BI Pro dans le service Power BI. Quand cette version d’évaluation expire, votre licence redevient une licence (gratuite) Power BI. Après cela, vous n’avez plus accès aux fonctionnalités qui nécessitent une licence Power BI Pro. Pour plus d’informations, consultez [Fonctionnalités par type de licence](service-features-license-type.md).
+Une fois que vous avez terminé le processus d’inscription, vous pouvez vous inscrire à une version d’essai Power BI Pro dans le service Power BI. Quand cette version d’évaluation expire, votre licence redevient une licence (gratuite) Power BI. Après cela, vous n’avez plus accès aux fonctionnalités qui nécessitent une licence Power BI Pro. Pour plus d’informations, consultez [Fonctionnalités par type de licence](service-features-license-type.md).
 
 Si une licence (gratuite) Power BI est suffisante, vous n’avez rien d’autre à faire. Pour profiter des fonctionnalités de Power BI Pro, contactez votre administrateur informatique à propos de l’achat d’une licence Power BI Pro.
 

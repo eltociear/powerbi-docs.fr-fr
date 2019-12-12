@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c1f049f8ba8c7808001b8566b1d10424a1b2ed1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3ec372a51177e5979cdfbca8408e11801aefb414
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73878347"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791583"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Utiliser des chaînes de format personnalisées dans Power BI Desktop
 
@@ -51,7 +51,6 @@ Le tableau suivant indique les **symboles de date** pris en charge :
 | _mm_ | 01-12 (mois de l’année, avec un zéro non significatif, en commençant par janvier = 01) |
 | _mmm_ | Affiche les noms de mois abrégés (les noms de mois Hijri n’ont pas d’abréviation) |
 | _mmmm_ | Affiche les noms de mois complets |
-| _y_ | 1-366 (Jour de l’année) |
 | _yy_ | 00-99 (deux derniers chiffres de l’année) |
 | _yyyy_ | 100-9999 (année à trois ou quatre chiffres) |
 
@@ -121,7 +120,6 @@ Le tableau suivant identifie les caractères que vous pouvez utiliser pour crée
 | mm | Affiche le mois sous la forme d’un nombre sans zéro non significatif (01–12). Si m suit immédiatement h ou hh, les minutes sont affichées au lieu du mois. |
 | mmm | Affiche le mois sous forme abrégée (Jan à Déc). Localisé. |
 | mmmm | Affiche le mois sous forme d’un nom de mois complet (Janvier – Décembre). Localisé. |
-| y | Affiche le jour de l’année sous la forme d’un nombre (de 1 à 366). |
 | yy | Affiche l’année sous la forme d’un nombre à deux chiffres (de 00 à 99). |
 | yyyy | Affiche l’année sous la forme d’un nombre à 4 chiffres (100 à 9999). |
 | h | Affiche l’heure sous la forme d’un nombre sans zéro non significatif (0 à 23). |
@@ -146,7 +144,7 @@ Le tableau suivant identifie les caractères que vous pouvez utiliser pour crée
 | ( **/** ) | Séparateur de date. Pour certains paramètres régionaux, d’autres caractères peuvent être utilisés pour représenter le séparateur de date. Le séparateur de date sépare le jour, le mois et l’année lorsque les valeurs de date sont mises en forme. Le caractère réel utilisé comme séparateur de date dans le résultat mis en forme est déterminé par vos paramètres système. |
 | (**E- E+ e- e+** ) | Format scientifique. Si l’expression de format contient au moins un espace réservé de chiffre (**0** ou **#** ) à droite de E-, E+, e- ou e+, le nombre est affiché au format scientifique et E ou e est inséré entre le nombre et son exposant. Le nombre d’espaces réservés de chiffre à droite détermine le nombre de chiffres dans l’exposant. Utilisez E- ou e- pour placer un signe moins à côté des exposants négatifs. Utilisez E+ ou e+ pour insérer un signe moins à côté des exposants négatifs et un signe plus à côté des exposants positifs. |
 | **- + $**  ( ) | Affiche un caractère littéral. Pour afficher un caractère autre que ceux répertoriés, faites-le précéder d’une barre oblique inverse (\) ou placez-le entre guillemets doubles (&quot; &quot;). |
-| (* *\** ) | Affiche le caractère suivant dans la chaîne de format. Pour afficher un caractère ayant une signification spéciale sous forme de caractère littéral, faites-le précéder d’une barre oblique inverse (\). La barre oblique inverse elle-même n’est pas affichée. L’utilisation d’une barre oblique inverse revient à mettre le caractère suivant entre guillemets doubles. Pour afficher une barre oblique inverse, utilisez deux barres obliques inverses (\\). Exemples de caractères pouvant être affichés comme caractères littéraux : caractères de mise en forme de date et d’heure (a, c, d, h, m, n, p, q, s, t, w, y, / et :), caractères de format numérique (#, 0, %, E, e, virgule et point), et caractères de format de chaîne (@, &amp;, \&lt;, \&gt; et !). |
+| (* *\** ) | Affiche le caractère suivant dans la chaîne de format. Pour afficher un caractère ayant une signification spéciale sous forme de caractère littéral, faites-le précéder d’une barre oblique inverse (\). La barre oblique inverse elle-même n’est pas affichée. L’utilisation d’une barre oblique inverse revient à mettre le caractère suivant entre guillemets doubles. Pour afficher une barre oblique inverse, utilisez deux barres obliques inverses (\\). Exemples de caractères pouvant être affichés comme caractères littéraux : caractères de mise en forme de date et d’heure (a, c, d, h, m, n, p, q, s, t, w, / et :), caractères de format numérique (#, 0, %, E, e, virgule et point) et caractères de format de chaîne (@, &amp;, \&lt;, \&gt; et !). |
 | (&quot;ABC&quot;) | Affiche la chaîne à l’intérieur des guillemets doubles (&quot; &quot;). |
 
 

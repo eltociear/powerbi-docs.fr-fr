@@ -1,20 +1,20 @@
 ---
 title: Actualisation des données dans Power BI
 description: Cet article décrit les fonctionnalités d’actualisation des données de Power BI et leurs dépendances à un niveau conceptuel.
-author: mgblythe
+author: maggiesMSFT
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/14/2019
-ms.author: mblythe
+ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 28a6aa8659411b829e6982e7c766e03d683871fd
-ms.sourcegitcommit: 982ffaa8eb91897f48221a816970671f4a92e6d9
+ms.openlocfilehash: bdb5b797146dae0bd8c6a70163a245f44430da8c
+ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "74415439"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74791690"
 ---
 # <a name="data-refresh-in-power-bi"></a>Actualisation des données dans Power BI
 
@@ -92,7 +92,7 @@ Une opération d’actualisation Power BI peut comprendre plusieurs types d’ac
 
 #### <a name="data-refresh"></a>Actualisation des données
 
-Pour les utilisateurs de Power BI, l’actualisation de données passe généralement par l’importation des données de sources de données d’origine dans un jeu de données, selon une planification d’actualisation ou à la demande. Vous pouvez effectuer plusieurs actualisations quotidiennes du jeu de données, ce qui peut être nécessaire si les données sources sous-jacentes changent fréquemment. Power BI limite les jeux de données dans une capacité partagée à huit actualisations quotidiennes. Si le jeu de données se trouve dans une capacité Premium, vous pouvez planifier jusqu’à 48 actualisations par jour dans les paramètres du jeu de données. Pour plus d’informations, consultez Configuration de l’actualisation planifiée plus loin dans cet article.
+Pour les utilisateurs de Power BI, l’actualisation de données passe généralement par l’importation des données de sources de données d’origine dans un jeu de données, selon une planification d’actualisation ou à la demande. Vous pouvez effectuer plusieurs actualisations quotidiennes du jeu de données, ce qui peut être nécessaire si les données sources sous-jacentes changent fréquemment. Power BI limite les jeux de données dans une capacité partagée à huit actualisations quotidiennes. Si le jeu de données se trouve dans une capacité Premium, vous pouvez planifier jusqu’à 48 actualisations par jour dans les paramètres du jeu de données. Pour plus d’informations, consultez [Configurer une actualisation planifiée](#configure-scheduled-refresh) plus loin dans cet article.
 
 Il est également important de souligner que la limite de capacité partagée pour les actualisations quotidiennes s’applique à la fois aux actualisations planifiées et aux actualisations d’API. Vous pouvez également déclencher une actualisation à la demande en sélectionnant **Actualiser maintenant** dans le menu Jeux de données, comme le montre la capture d’écran suivante. Les actualisations à la demande ne sont pas comptabilisées dans la limite des actualisations. Notez également que les jeux de données d’une capacité Premium ne limitent pas le nombre d’actualisations d’API. Si vous souhaitez créer votre propre solution d’actualisation à l’aide de l’API REST Power BI, consultez [Jeux de données - Actualiser le jeu de données](/rest/api/power-bi/datasets/refreshdataset).
 
@@ -283,7 +283,7 @@ Dans la section **Actualisation planifiée**, vous définissez la fréquence et 
 
 ![Configurer une actualisation planifiée](media/refresh-data/configure-scheduled-refresh.png)
 
-Une fois une planification d’actualisation configurée, la page des paramètres du jeu de données vous informe de la prochaine heure d’actualisation, comme dans la capture d’écran ci-dessus. Si vous souhaitez actualiser les données plus tôt, par exemple pour tester votre passerelle et la configuration de la source de données, effectuez une actualisation à la demande en utilisant l’option **Actualiser maintenant** dans le menu Jeu de données du volet de navigation. Les actualisations à la demande n’affectent pas la prochaine heure d’actualisation planifiée, mais sont comptabilisées dans la limite des actualisations quotidiennes, comme expliqué précédemment dans cet article.
+Une fois une planification d’actualisation configurée, la page des paramètres du jeu de données vous informe de la prochaine heure d’actualisation, comme dans la capture d’écran ci-dessus. Si vous souhaitez actualiser les données plus tôt, par exemple pour tester votre passerelle et la configuration de la source de données, effectuez une actualisation à la demande en utilisant l’option **Actualiser maintenant** dans le menu Jeu de données du volet de navigation. Les actualisations à la demande n’affectent pas la prochaine heure d’actualisation planifiée.
 
 Notez également que l’heure d’actualisation configurée peut ne pas être l’heure exacte à laquelle Power BI démarre le prochain processus planifié. Power BI démarre les actualisations planifiées dans la mesure du possible. L’objectif est de lancer l’actualisation dans les 15 minutes qui suivent l’intervalle de temps prévu, mais un délai pouvant aller jusqu’à une heure peut survenir si le service ne peut pas allouer les ressources nécessaires plus tôt.
 

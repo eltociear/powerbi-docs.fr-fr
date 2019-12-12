@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: cc554bff1cbd248ccd69a80ee47b60af981cdab1
-ms.sourcegitcommit: f7b28ecbad3e51f410eff7ee4051de3652e360e8
+ms.openlocfilehash: 245475feeb43ee544117aaa54969f2de1e207cd5
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74061819"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74696279"
 ---
 # <a name="migrate-to-the-new-powerbi-visuals-tools-3xx"></a>Migrer vers la nouvelle version de powerbi-visuals-tools 3.x.x
 
@@ -39,7 +39,7 @@ Toutes les étapes de la migration pour la nouvelle version de Power BI Visuals 
 
 ## <a name="backward-compatibility"></a>Compatibilité descendante
 
-Les nouveaux outils assurent la compatibilité descendante pour l'ancienne base de code des visuels, mais peuvent nécessiter quelques modifications supplémentaires pour charger des bibliothèques externes.
+Les nouveaux outils assurent la compatibilité descendante pour l’ancienne base de code des visuels, mais peuvent nécessiter quelques modifications supplémentaires pour charger des bibliothèques externes.
 
 Les bibliothèques, qui prennent en charge les systèmes de modules, seront importées sous forme de modules Webpack. Toutes les autres bibliothèques et le code source du visuel seront regroupés dans un même module.
 
@@ -79,9 +79,9 @@ Exemple de visuel sampleBarChart visuel et [changements](https://github.com/Micr
 
 ## <a name="how-to-install-power-bi-custom-visuals-api"></a>Comment installer l'API des visuels personnalisés Power BI ?
 
-La nouvelle version de powerbi-visual-tools n'inclut pas toutes les versions de l'API. Par conséquent, le développeur devra installer une version spécifique du package [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api). La version du package correspond à la version de l’API des visuels personnalisés Power BI et fournit toutes les définitions de type pour cette API.
+La nouvelle version de powerbi-visual-tools n’inclut pas toutes les versions de l’API. Par conséquent, le développeur devra installer une version spécifique du package [`powerbi-visuals-api`](https://www.npmjs.com/package/powerbi-visuals-api). La version du package correspond à la version de l’API des visuels personnalisés Power BI et fournit toutes les définitions de type pour cette API.
 
-Ajoutez `powerbi-visuals-api` aux dépendances du projet en exécutant la commande `npm install --save-dev powerbi-visuals-api`.
+Ajoutez `powerbi-visuals-api` aux dépendances d’un projet en exécutant la commande `npm install --save-dev powerbi-visuals-api`.
 Vous devez supprimer le lien vers les anciennes définitions de type d'API, car les types de `powerbi-visuals-api` sont automatiquement inclus par Webpack. Les changements correspondants figurent dans [cette](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/package.json#L14) ligne de `package.json`.
 
 ## <a name="update-tsconfigjson"></a>Mettre à jour `tsconfig.json`
@@ -91,11 +91,11 @@ Pour utiliser des modules externes, vous devez basculer l'option `out` sur `outD
 
 Cette opération est nécessaire car les fichiers TypeScript seront indépendamment compilés dans des fichiers JavaScript. C'est pourquoi vous n'avez plus besoin de spécifier le fichier visual.js comme sortie.
 
-Vous pouvez également remplacer l'option `target` par `ES6` si vous voulez utiliser JavaScript moderne comme sortie. [Ceci est facultatif](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
+Vous pouvez également remplacer l’option `target` par `ES6` si vous voulez utiliser JavaScript moderne comme sortie. [Ceci est facultatif](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/sample-next/tsconfig.json#L6).
 
 ## <a name="update-custom-visuals-utils"></a>Mettre à jour les utilitaires de visuels personnalisés
 
-Si vous utilisez l'un des utilitaires [powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils), vous devez également les mettre à jour vers la dernière version.
+Si vous utilisez l’un des utilitaires powerbi-visuals-utils](https://www.npmjs.com/search?q=powerbi-visuals-utils), vous devez également les mettre à jour vers la dernière version.
 
 Exécutez la commande `npm install powerbi-visuals-utils-<UTILNAME> --save`. (Ex. `npm install powerbi-visuals-utils-dataviewutils --save`) pour obtenir la nouvelle version avec les modules externes de TypeScript.
 
@@ -104,7 +104,7 @@ Ce visuel utilise tous les utilitaires.
 
 ## <a name="remove-globalizejs-library"></a>Supprimer la bibliothèque Globalize.js
 
-La nouvelle version de [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) inclut par défaut globalize.js.
+La nouvelle version de [powerbi-visuals-utils-formattingutils@4.3](https://www.npmjs.com/package/powerbi-visuals-utils-formattingutils) comprend global. js prêt à l’emploi.
 Vous n'avez pas besoin d'inclure cette bibliothèque manuellement dans le projet.
 Toutes les localisations requises seront automatiquement ajoutées au package final.
 
@@ -127,7 +127,7 @@ Importez les bibliothèques dans les sources. Exemple pour `lodash-es` :
 import * as _ from "lodash-es";
 ```
 
-où `_` est une variable globale pour la bibliothèque `lodash`.
+où `_` est la variable globale pour la bibliothèque `lodash`.
 
 ## <a name="changes-in-the-visuals-sources"></a>Changements dans les sources de visuels
 
@@ -220,7 +220,7 @@ De nouveaux outils vous permettent de commencer à utiliser la nouvelle version 
 
 Commandes d'appel pour mettre à jour D3 dans votre projet visuel
 
-`npm install --save d3@5` pour installer le nouveau D3.js.
+`npm install --save d3@5` pour installer la nouvelle bibliothèque D3.js.
 
 `npm install --save-dev @types/d3@5` pour installer les nouvelles définitions de type pour D3.js.
 
@@ -236,7 +236,7 @@ Il existe plusieurs changements importants et vous devez modifier votre code pou
 
 ## <a name="babel"></a>Babel
 
-À partir de la version 3.1, les outils utilisent Babel pour compiler le nouveau code JS moderne dans l'ancien ES5 afin de prendre en charge une large gamme de navigateurs.
+À partir de la version 3.1, les outils utilisent Babel pour compiler le nouveau code JS moderne dans l’ancien ES5 afin de prendre en charge une large gamme de navigateurs.
 
 Cette option est activée par défaut, mais vous devez importer manuellement le package [`@babel/polyfill`](https://babeljs.io/docs/en/babel-polyfill).
 
@@ -250,6 +250,6 @@ et importez le package au point de départ du code visuel (en général le fichi
 
 En savoir plus sur Babel [dans la documentation](https://babeljs.io/docs/en/).
 
-Enfin, lancez [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) pour afficher le code de base du visuel.  
+Enfin, exécutez [webpack-visualizer](https://github.com/chrisbateman/webpack-visualizer) pour afficher la base de code du visuel.  
 
 ![Statistiques de code du visuel](./media/webpack-stats.png)

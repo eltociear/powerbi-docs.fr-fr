@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/31/2019
-ms.openlocfilehash: ed1a67168a386838049ec2ca047ec0cd971408fc
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: bf5cd8d8ae649071b3c9cc7243f87ac3cc316c3b
+ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73880037"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74695357"
 ---
 # <a name="highlight-data-points-in-power-bi-visuals"></a>Mettre en surbrillance des points de données dans les visuels Power BI
 
@@ -26,6 +26,9 @@ Si vous définissez la propriété `supportsHighlight` du fichier `capabilities.
 ![`dataview` prend en charge la mise en surbrillance](./media/highlight-dataview-supports.png)
 
 Dans l’exemple, vous pouvez remarquer que la barre 1 est sélectionnée. Il s’agit de la seule valeur du tableau des mises en surbrillance. Il est également important de noter qu’il peut y avoir plusieurs sélections et des mises en surbrillance partielles. Les valeurs en surbrillance sont présentées dans la vue de données.
+
+> [!Note]
+> Le mappage de vues de données de tables ne prend pas en charge la fonctionnalité de mise en surbrillance.
 
 ## <a name="highlight-data-points-with-categorical-data-view-mapping"></a>Mettre en surbrillance des points de données avec un mappage des vues de données par catégorie
 
