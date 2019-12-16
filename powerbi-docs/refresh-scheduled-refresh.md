@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: maggies
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e09b3f8579b65bc242cda1dbdb54f187ab6b47d0
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.openlocfilehash: 622273ed4c8d6f2faee46d3cc84d981f86bd8c92
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74791601"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958399"
 ---
 # <a name="configure-scheduled-refresh"></a>Configurer une actualisation planifiée
 
@@ -75,7 +75,7 @@ La section **Actualisation planifiée** est là où vous définissez la fréquen
 Pour configurer les paramètres, vous devrez définir le curseur **Tenir vos données à jour** sur **Actif**.
 
 > [!NOTE]
-> Le service Power BI cible l’initialisation de l’actualisation de vos données dans le délai d’actualisation de **15 minutes** planifié.
+> L’objectif est de lancer l’actualisation dans les 15 minutes qui suivent l’intervalle de temps prévu, mais un délai pouvant aller jusqu’à une heure peut survenir si le service ne peut pas allouer les ressources nécessaires plus tôt.
 
 ![Boîte de dialogue Actualisation planifiée](media/refresh-scheduled-refresh/scheduled-refresh.png)
 
