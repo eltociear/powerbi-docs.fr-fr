@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes de développement des visuels Power BI de Power BI
+title: Résolution des problèmes de développement des visuels Power BI
 description: Cet article décrit certains problèmes courants que vous pouvez rencontrer quand vous développez ou créez un visuel Power BI personnalisé.
 author: KesemSharabi
 ms.author: kesharab
@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.topic: troubleshooting
 ms.subservice: powerbi-custom-visuals
 ms.date: 11/06/2018
-ms.openlocfilehash: e28df5035e057d485a8122853f6ae88327e3045f
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: c2680a5818488a7822f38b8286a3e5a1782a487a
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127769"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999764"
 ---
-# <a name="troubleshoot-power-bi-power-bi-visuals"></a>Résoudre les problèmes des visuels Power BI de Power BI
+# <a name="troubleshoot-power-bi-visuals"></a>Résoudre les problèmes de visuels Power BI
 
 ## <a name="debug"></a>Déboguer
 
@@ -42,4 +42,4 @@ N’hésitez pas à contacter le support technique des visuels Power BI : *p
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations, consultez [Questions fréquentes sur les visuels Power BI de Power BI](power-bi-custom-visuals-faq.md#organizational-visuals).
+Pour plus d’informations, consultez [Questions fréquentes sur les visuels Power BI](power-bi-custom-visuals-faq.md#organizational-power-bi-visuals).

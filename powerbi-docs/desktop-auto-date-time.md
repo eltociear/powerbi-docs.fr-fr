@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 8789986e94c860bffc622d903e33b4f1edabdd2d
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 1f350e8ff888ffc2fd95e6c47bf84ccc96ebf88b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74696161"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000155"
 ---
 # <a name="auto-datetime-in-power-bi-desktop"></a>Date/heure automatique dans Power BI Desktop
 
@@ -36,7 +36,7 @@ En fait, chaque table de date/heure automatique est une [table calculée](deskto
 
 Power BI Desktop crée également une relation entre la colonne **Date** de la table de date/heure automatique et la colonne de date du modèle.
 
-La table de date/heure automatique contient les années calendaires complètes. Elle inclut toutes les valeurs de date stockées dans la colonne de date du modèle. Par exemple, si la valeur la plus ancienne d’une colonne de date est le 20 mars 2016 et que la valeur la plus récente est le 23 octobre 2019, la table contient 1 461 lignes. Chaque date est représentée par une ligne pour les quatre années civiles de 2016 à 2019. Quand Power BI actualise le modèle, toutes les tables de date/heure automatique sont également actualisées. Ainsi, elles contiennent les dates incluant les valeurs de la colonne de date.
+La table de date/heure automatique contient les années calendaires complètes. Elle inclut toutes les valeurs de date stockées dans la colonne de date du modèle. Par exemple, si la valeur la plus ancienne d’une colonne de date est le 20 mars 2016 et que la valeur la plus récente est le 23 octobre 2019, la table contient 1 461 lignes. Chaque date est représentée par une ligne pour les quatre années civiles de 2016 à 2019. Lorsque Power BI actualise le modèle, chaque table de date/heure automatique est également actualisée. De cette façon, le modèle contient toujours les dates incluant les valeurs de la colonne de date.
 
 S’il était possible de voir les lignes d’une table de date/heure automatique, elles pourraient se présenter comme suit :
 
@@ -93,7 +93,8 @@ Dans Power BI Desktop, sélectionnez _Fichier > Options et paramètres > Optio
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations sur la fonctionnalité de date/heure automatique et pour accéder aux rubriques connexes, consultez les ressources suivantes :
+Pour plus d’informations en rapport avec cet article, consultez les ressources suivantes :
 
+- [Conseils sur les dates/heures automatiques dans Power BI Desktop](guidance/auto-date-time.md)
 - [Définir et utiliser des tables de dates dans Power BI Desktop](desktop-date-tables.md)
 - Vous avez des questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)

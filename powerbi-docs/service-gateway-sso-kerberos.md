@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/03/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4ce5eab22538b7abdded2759a4a072fd500575ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 889fbce483f839147677789c73d826fa23542731
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699219"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000109"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Configurer l’authentification unique basée sur Kerberos du service Power BI vers des sources de données locales
 
@@ -66,6 +66,22 @@ Tout d’abord, déterminez si un nom de principal du service a déjà été cr�
    ```setspn -a gateway/MyGatewayMachine Contoso\GatewaySvc```
 
    Vous pouvez aussi définir le nom de principal du service en utilisant le composant logiciel enfichable MMC **Utilisateurs et ordinateurs Active Directory**.
+   
+### <a name="add-gateway-service-account-to-windows-authorization-and-access-group-if-required"></a>Ajouter un compte de service de passerelle au groupe d’accès et d’autorisation Windows si nécessaire
+
+Dans certains scénarios, le compte de service de passerelle doit être ajouté au groupe d’accès et d’autorisation Windows. Ces scénarios incluent le renforcement de la sécurité de l'environnement Active Directory, et lorsque le compte de service de passerelle et les comptes utilisateurs que la passerelle va imiter se trouvent dans des forêts ou des domaines distincts. Vous pouvez également ajouter le compte de service de passerelle au groupe d’accès et d’autorisation Windows dans les cas où la forêt/le domaine n'a pas été renforcé(e), mais ce n'est pas nécessaire.
+
+Pour plus d'informations, voir [Groupe d’accès et d’autorisation Windows](/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-winauthaccess).
+
+Pour terminer cette étape de configuration, pour chaque domaine contenant des utilisateurs Active Directory, le compte de service de passerelle doit pouvoir emprunter une identité :
+1. Connectez-vous à un ordinateur du domaine et lancez le composant MMC Utilisateurs et ordinateurs Active Directory.
+2. Localisez le groupe **Groupe d’accès et d’autorisation Windows**, qui se trouve généralement dans le conteneur **Builtin**.
+3. Double-cliquez sur le groupe, puis cliquez sur l'onglet **Membres**.
+4. Cliquez sur **Ajouter**, et pointez l'emplacement du domaine vers le domaine dans lequel se trouve le compte de service de passerelle.
+5. Tapez le nom du compte de service de passerelle, puis cliquez sur **Vérifier les noms** pour vérifier que le compte de service de passerelle est accessible.
+6. Cliquez sur **OK**.
+7. Cliquez sur **Appliquer**.
+8. Redémarrez le service de passerelle.
 
 ### <a name="decide-on-the-type-of-kerberos-constrained-delegation-to-use"></a>Décider du type de délégation Kerberos contrainte à utiliser
 

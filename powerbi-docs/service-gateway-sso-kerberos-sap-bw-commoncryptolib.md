@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2019
+ms.date: 12/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6c098a187b7f0d0d4828500cd6c5995a7c82ab42
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 02c8ac991fbf84051ae795ef4a80f2b3dc07a1ce
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74697632"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000178"
 ---
 # <a name="use-kerberos-single-sign-on-for-sso-to-sap-bw-using-commoncryptolib-sapcryptodll"></a>Utiliser l’authentification unique Kerberos pour l’authentification unique pour SAP BW à l’aide de CommonCryptoLib (sapcrypto.dll)
 
@@ -89,7 +89,7 @@ Cet article explique comment configurer votre source de données SAP BW pour ac
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-Si vous ne parvenez pas à actualiser le rapport dans le service Power BI, vous pouvez utiliser le suivi de la passerelle, le traçage CPIC et le traçage CommonCryptoLib pour diagnostiquer le problème. Étant donné que le traçage CPIC et CommonCryptoLib sont des produits SAP, Microsoft ne peut pas fournir de support direct pour eux. Pour les utilisateurs Active Directory disposant d’un accès SSO à BW, certaines configurations Active Directory peuvent nécessiter que les utilisateurs soient membres du groupe Administrateurs sur la machine où est installée la passerelle.
+Si vous ne parvenez pas à actualiser le rapport dans le service Power BI, vous pouvez utiliser le suivi de la passerelle, le traçage CPIC et le traçage CommonCryptoLib pour diagnostiquer le problème. Étant donné que le traçage CPIC et CommonCryptoLib sont des produits SAP, Microsoft ne peut pas fournir de support direct pour eux.
 
 ### <a name="gateway-logs"></a>Journaux de passerelle
 
@@ -109,7 +109,49 @@ Si vous ne parvenez pas à actualiser le rapport dans le service Power BI, vous
 
    ![Traçage CPIC](media/service-gateway-sso-kerberos/cpic-tracing.png)
 
- 3. Reproduisez le problème et vérifiez que **CPIC\_TRACE\_DIR** contient des fichiers de trace.
+3. Reproduisez le problème et vérifiez que **CPIC\_TRACE\_DIR** contient des fichiers de trace.
+ 
+    Le traçage CPIC peut diagnostiquer des problèmes de niveau supérieur tels que l'échec du chargement de la bibliothèque sapcrypto.dll. Par exemple, voici un extrait d'un fichier de trace CPIC dans lequel une erreur de chargement d’une bibliothèque .dll s'est produite :
+
+    ```
+    [Thr 7228] *** ERROR => DlLoadLib()==DLENOACCESS - LoadLibrary("C:\Users\test\Desktop\sapcrypto.dll")
+    Error 5 = "Access is denied." [dlnt.c       255]
+    ```
+
+    Si vous rencontrez un tel échec mais que vous avez défini les autorisations Lire et exécuter sur sapcrypto.dll et sapcrypto.ini comme décrit [dans la section ci-dessus](#configure-sap-bw-to-enable-sso-using-commoncryptolib), essayez de définir les mêmes autorisations Lire et exécuter sur le dossier contenant les fichiers.
+
+    Si vous n'arrivez toujours pas à charger la bibliothèque .dll, essayez d'activer l’[audit du fichier](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder). L'examen des journaux d'audit résultants dans l'observateur d'événements Windows peut vous aider à déterminer l’origine de l’échec de chargement du fichier. Recherchez une entrée d'échec initiée par l'utilisateur Active Directory usurpé. Par exemple, pour l'utilisateur usurpé `MYDOMAIN\mytestuser`, un échec dans le journal d'audit ressemblerait à ceci :
+
+    ```
+    A handle to an object was requested.
+
+    Subject:
+        Security ID:        MYDOMAIN\mytestuser
+        Account Name:       mytestuser
+        Account Domain:     MYDOMAIN
+        Logon ID:       0xCF23A8
+
+    Object:
+        Object Server:      Security
+        Object Type:        File
+        Object Name:        <path information>\sapcrypto.dll
+        Handle ID:      0x0
+        Resource Attributes:    -
+
+    Process Information:
+        Process ID:     0x2b4c
+        Process Name:       C:\Program Files\On-premises data gateway\Microsoft.Mashup.Container.NetFX45.exe
+
+    Access Request Information:
+        Transaction ID:     {00000000-0000-0000-0000-000000000000}
+        Accesses:       ReadAttributes
+                
+    Access Reasons:     ReadAttributes: Not granted
+                
+    Access Mask:        0x80
+    Privileges Used for Access Check:   -
+    Restricted SID Count:   0
+    ```
 
 ### <a name="commoncryptolib-tracing"></a>Traçage CommonCryptoLib 
 

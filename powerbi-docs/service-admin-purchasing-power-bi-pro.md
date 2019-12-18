@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.date: 10/29/2019
 ms.author: kfollis
 LocalizationGroup: Administration
-ms.openlocfilehash: ebaf32bbf84dcbb8efd8516fd0a1ab01011f2d63
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 55cdfad221aef276c790e98de83dd844bc13aafe
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74698483"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958680"
 ---
 # <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Acheter et attribuer des licences utilisateur Power BI Pro
 
-Power BI Pro est une licence utilisateur individuelle qui permet aux utilisateurs de lire et d’interagir avec des rapports et des tableaux de bord que d’autres utilisateurs ont publiés dans le service Power BI, et de partager du contenu et de collaborer avec d’autres utilisateurs Power BI Pro. Seuls les utilisateurs disposant d’une licence utilisateur Power BI Pro peuvent publier ou partager du contenu avec d’autres utilisateurs ou consommer du contenu créé par d’autres utilisateurs, sauf si ce contenu est hébergé dans une capacité Power BI Premium. Pour plus d’informations, consultez [Fonctionnalités de Power BI par type de licence](service-features-license-type.md).
+Power BI Pro est une licence utilisateur individuelle qui permet aux utilisateurs de lire et d’interagir avec des rapports et des tableaux de bord que d’autres utilisateurs ont publiés dans le service Power BI, et de partager du contenu et de collaborer avec d’autres utilisateurs Power BI Pro. Seuls les utilisateurs disposant d’une licence utilisateur Power BI Pro peuvent publier ou partager du contenu avec d’autres utilisateurs ou consommer du contenu créé par d’autres utilisateurs, sauf si ce contenu est hébergé dans une capacité Power BI Premium. Pour plus d'informations, voir la section _Comparaison des fonctionnalités de Power BI_ de la rubrique [Prix de Power BI](https://powerbi.microsoft.com/pricing/).
 
 ## <a name="purchase-and-assign-power-bi-pro-user-licenses"></a>Acheter et attribuer des licences utilisateur Power BI Pro
 

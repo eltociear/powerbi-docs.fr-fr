@@ -1,29 +1,38 @@
 ---
 title: Que sont les applications modèles Power BI ?
 description: Cet article présente une vue d’ensemble du programme d’applications modèles Power BI. Découvrez comment créer des applications Power BI avec peu ou pas de codage et les déployer ensuite vers n’importe quel client Power BI.
-author: teddybercovitz
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/24/2019
-ms.author: tebercov
-ms.openlocfilehash: 4b4e32f787d2d262d604ff0745f8c028e9fff949
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/08/2019
+ms.author: painbar
+ms.openlocfilehash: f519665c78f8c96452091edb84ae9a40f9dc01ba
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73871336"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000000"
 ---
 # <a name="what-are-power-bi-template-apps"></a>Que sont les applications modèles Power BI ?
 
 Les nouvelles *applications modèles* Power BI permettent aux partenaires Power BI de créer des applications Power BI avec peu ou pas de codage et de les déployer ensuite vers n’importe quel client Power BI.  Cet article présente une vue d’ensemble du programme d’applications modèles Power BI.
 
-Les applications modèles remplacent les packs de contenu de service actuels. En tant que partenaire Power BI, vous créez du contenu prêt à l’emploi pour vos clients et vous le publiez vous-même.  
+Les applications modèles remplacent les packs de contenu de service actuels. En tant que partenaire Power BI, vous créez du contenu prêt à l’emploi pour vos clients et vous le publiez vous-même.  
 
-Vous concevez des applications modèles qui permettent à vos clients de se connecter et d’instancier avec leurs propres comptes. En tant qu’experts dans leur domaine, les clients peuvent déverrouiller les données pour les rendre facilement consommables par leurs utilisateurs professionnels.  
+Vous concevez des applications modèles qui permettent à vos clients de se connecter et d’instancier à partir de leurs propres comptes. En tant qu’experts dans leur domaine, les clients peuvent déverrouiller les données pour les rendre facilement consommables par leurs utilisateurs professionnels.  
 
-Vous soumettez les applications modèles sur le portail Cloud Partner. Les applications sont ensuite mises à la disposition de tous dans la galerie d’applications Power BI (app.powerbi.com/getdata/services) et sur Microsoft AppSource (appsource.microsoft.com). Voici un aperçu général de la création d’applications modèles publiques.  
+Vous soumettez les applications modèles sur le portail Cloud Partner. Les applications deviennent alors accessibles au public sur la [Place de marché des applications Power BI](https://app.powerbi.com/getdata/services) et sur [Microsoft AppSource](https://appsource.microsoft.com/?product=power-bi). Voici un aperçu général de la création d’applications modèles publiques.
+
+## <a name="power-bi-apps-marketplace"></a>Place de marché des applications Power BI
+
+Les applications modèles Power BI permettent aux utilisateurs de Power BI Pro ou Power BI Premium d'obtenir des informations immédiates grâce à des tableaux de bord et à des rapports prépackagés qui peuvent être connectés à des sources de données actives. De nombreuses applications Power BI sont déjà disponibles sur la [Place de marché des applications Power BI](https://app.powerbi.com/getdata/services).
+
+|  |
+|     :---:      |
+| [![Foo](./media/service-template-apps-overview/project-web.png)](https://app.powerbi.com/groups/me/getapps/services/office365mon.office365mon_powerbi_v3) [![Foo](./media/service-template-apps-overview/azure-backup.png)](https://app.powerbi.com/groups/me/getapps/services/pbi-azurebackup.pbi-azurebackup-template) [![Foo](./media/service-template-apps-overview/dynamics-sales.png)](https://app.powerbi.com/groups/me/getapps/services/microsoftdynsmb.businesscentral_sales) [![Foo](./media/service-template-apps-overview/forms-pro.png)](https://app.powerbi.com/groups/me/getapps/services/msfp.formsprocustomersatisfaction) |
+|  |
 
 ## <a name="process"></a>Processus
 Le processus général de développement et de soumission d’une application modèle implique plusieurs étapes. Certaines étapes peuvent inclure plusieurs activités simultanées.
@@ -48,20 +57,21 @@ Voici les principales étapes à suivre.
 
 1. [Passez en revue les conditions requises](#requirements) et vérifiez que vous les remplissez. 
 
-1. Générez un rapport dans Power BI Desktop. À l’aide des paramètres, enregistrez le rapport sous forme de fichier utilisable par tous. 
+2. Générez un rapport dans Power BI Desktop. À l’aide des paramètres, enregistrez le rapport sous forme de fichier utilisable par tous. 
 
-1. Créez un espace de travail pour l’application modèle dans votre locataire sur le service Power BI (app.powerbi.com). 
+3. Créez un espace de travail pour l’application modèle dans votre locataire sur le service Power BI (app.powerbi.com). 
 
-1. Importez votre fichier .pbix et ajoutez du contenu (comme un tableau de bord) à votre application. 
+4. Importez votre fichier .pbix et ajoutez du contenu (comme un tableau de bord) à votre application. 
 
-1. Créez un package de test pour tester vous-même l’application modèle dans votre organisation. 
+5. Créez un package de test pour tester vous-même l’application modèle dans votre organisation. 
 
-1. Promouvez l’application de test en préproduction pour soumettre l’application sur AppSource en vue de sa validation et pour la tester en dehors de votre propre locataire. 
+6. Promouvez l’application de test en préproduction pour soumettre l’application sur AppSource en vue de sa validation et pour la tester en dehors de votre propre locataire. 
 
-1. Soumettez le contenu sur la plateforme Cloud Partner en vue de sa publication. 
+7. Soumettez le contenu sur la plateforme Cloud Partner en vue de sa publication. 
 
-1. Mettez votre offre « En ligne » dans AppSource et placez votre application en production dans Power BI.
-2. Vous pouvez maintenant commencer à développer la prochaine version de l’application dans le même espace de travail, en préproduction. 
+8. Mettez votre offre « En ligne » dans AppSource et placez votre application en production dans Power BI.
+
+9. Vous pouvez maintenant commencer à développer la prochaine version de l’application dans le même espace de travail, en préproduction. 
 
 ## <a name="requirements"></a>Configuration requise
 
@@ -80,6 +90,19 @@ Pour publier une application modèle sur le service Power BI et AppSource, vous 
 - Autorisez la personnalisation des données. Par exemple, autorisez la configuration de paramètres et de connexions personnalisés par le programme d’installation.
 
 Consultez [Conseils pour créer des applications modèles dans Power BI](service-template-apps-tips.md) pour obtenir des suggestions supplémentaires.
+
+## <a name="known-limitations"></a>Limites connues
+
+| Caractéristique | Limitation connue |
+|---------|---------|
+|Contenu :  Jeux de données   | Un seul et unique jeu de données doit être présent. Seuls les jeux de données créés dans Power BI Desktop (fichiers .pbix) sont autorisés. <br>Non pris en charge : jeux de données issus d’autres applications modèles, jeux de données de plusieurs espaces de travail, rapports paginés (fichiers .rdl), classeurs Excel |
+|Contenu : Tableaux de bord | Les vignettes en temps réel ne sont pas autorisées (en d’autres termes, pas de prise en charge de la transmission de type push ou de la diffusion en continu de jeux de données) |
+|Contenu : Dataflows | Non pris en charge : Dataflows |
+|Contenu de fichiers | Seuls les fichiers PBIX sont autorisés. <br>Non pris en charge : fichiers .rdl (rapports paginés), classeurs Excel   |
+| Sources de données | Les sources de données prises en charge pour l’actualisation planifiée des données dans le cloud sont autorisées. <br>Non pris en charge : <li> DirectQuery</li><li>Connexions actives (sans Azure AS)</li> <li>Sources de données locales (pas de prise en charge des passerelles personnelles et d’entreprise)</li> <li>Vignettes en temps réel (pas de prise en charge de la transmission de type push de jeux de données)</li> <li>Modèles composites</li></ul> |
+| Jeu de données : entre plusieurs espaces de travail | Les jeux de données entre plusieurs espaces de travail sont autorisés  |
+| Paramètres de requête | Non pris en charge : paramètres de type « Any » ou « Binary », opération d’actualisation des types en bloc pour le jeu de données |
+| Visuels personnalisés | Seuls les visuels personnalisés disponibles publiquement sont pris en charge. Les [visuels personnalisés organisationnels](developer/power-bi-custom-visuals-organization.md) ne sont pas pris en charge |
 
 ## <a name="support"></a>Support
 Pour bénéficier d’un support durant le développement, utilisez [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Nous supervisons et gérons activement ce site. Les incidents utilisateur sont rapidement transmis à la bonne équipe.

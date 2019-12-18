@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 07/16/2019
-ms.openlocfilehash: 10e7ab035f17715bba858fc3b055c5bf47af1331
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 6bf7610a010a72248a3d2fdd96718eea513a68da
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565602"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000086"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Marche à suivre pour les visuels Power BI
 Avant de [publier](https://docs.microsoft.com/power-bi/developer/office-store) votre visuel Power BI sur Microsoft AppSource pour que d’autres utilisateurs puissent le découvrir et l’utiliser, veillez à suivre les instructions pour créer une expérience de qualité pour vos utilisateurs.
@@ -50,7 +50,12 @@ Vous pouvez utiliser une fenêtre indépendante pour expliquer comment acheter u
 
 ### <a name="submission-process"></a>Processus d’envoi
 
-Les développeurs chargent leurs visuels Power BI IAP sur Microsoft AppSource par le biais du tableau de bord du vendeur, comme pour les visuels gratuits. Pour indiquer que le visuel Power BI soumis a des fonctionnalités IAP, les développeurs doivent indiquer « visuel avec achat dans l’application » dans les notes du tableau de bord du vendeur. Les développeurs doivent également fournir un jeton ou une clé de licence pour que l’équipe chargée de la validation puisse valider les fonctionnalités IAP. Une fois le visuel Power BI validé et approuvé, l’entrée Microsoft AppSource correspondant au visuel Power BI IAP indique « Un autre achat peut être requis » sous les options de prix.
+Suivez le [processus de soumission](office-store.md#submitting-to-appsource), accédez à l'onglet *Programme d’installation du produit*, puis cochez la case *Mon produit nécessite l'achat d'un service*.
+
+Une fois le visuel Power BI validé et approuvé, l’entrée Microsoft AppSource correspondant au visuel Power BI IAP indique « Un autre achat peut être requis » sous les options de prix.
+
+>[!NOTE]
+>Si votre visuel Power BI a déjà été soumis en utilisant le [Tableau de bord vendeur](https://docs.microsoft.com/office/dev/store/use-the-seller-dashboard-to-submit-to-the-office-store) et que vous voulez ajouter une fonction IAP, vous devez inscrire « Visuel avec achat dans l’application » dans les notes du tableau de bord vendeur. Vous devez également fournir un jeton ou une clé de licence pour que l’équipe chargée de la validation puisse valider les fonctionnalités IAP.
 
 ## <a name="context-menu"></a>Menu contextuel
 Le menu contextuel est le menu qui s’affiche quand l’utilisateur pointe sur un visuel et clique avec le bouton droit.

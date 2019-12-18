@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 9434aa717ad10791e75366cf23ef8ece567389ea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: 37107c1092b12a8efc230718c624f104aa31520f
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699127"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958560"
 ---
 # <a name="what-is-power-bi-premium"></a>Qu’est-ce que Power BI Premium ?
 
@@ -29,16 +29,17 @@ Power BI Premium fournit à votre organisation des ressources dédiées et amé
 > * La prise en charge de la résidence des données par région (multigéographique)
 > * Le partage des données sans nécessiter de licence pour chaque utilisateur
 
-Cet article présente les fonctionnalités clés de Power BI Premium. Toutefois, lorsque cela se révèle pertinent, il fournit des liens vers des articles comprenant des informations plus détaillées.
+Cet article présente les fonctionnalités clés de Power BI Premium. Toutefois, lorsque cela se révèle pertinent, il fournit des liens vers des articles comprenant des informations plus détaillées. Pour plus d'informations sur Power BI Pro et Power BI Premium, voir la section _Comparaison des fonctionnalités de Power BI_ de la rubrique [Prix de Power BI](https://powerbi.microsoft.com/pricing/).
 
 ## <a name="subscriptions-and-licensing"></a>Abonnements et gestion des licences
 
 Power BI Premium est disponible via un abonnement Office 365 au niveau du locataire, avec deux familles de références SKU :
 
-- Les références SKU **EM** (EM1-EM3), pour l’incorporation. Nécessitent un engagement annuel, avec une facturation mensuelle. Les références SKU EM1 et EM2 sont disponibles uniquement par le biais d’un programme de licence en volume. Vous ne pouvez pas les acheter directement.
 - Les références SKU **P** (P1-P3), pour l’incorporation et les fonctionnalités et d’entreprise. Nécessitent un engagement mensuel ou annuel, une facturation mensuelle, et incluent une licence permettant d’installer localement Power BI Report Server.
 
-Une autre approche consiste à acheter un abonnement **Azure Power BI Embedded**, qui comprend une seule famille de références SKU **A** (A1-A6), pour l’incorporation et le test de la capacité uniquement. Toutes les références SKU fournissent des v-cores pour créer des capacités. Toutefois, les références SKU EM ne peuvent être utilisées que pour l’incorporation de petite échelle. Les références SKU EM1, EM2, A1 et A2 comprenant moins de quatre v-cores ne s’exécutent pas sur une infrastructure dédiée.
+- Les références SKU **EM** (EM1-EM3), pour l’_incorporation dans l’organisation_. Nécessitent un engagement annuel, avec une facturation mensuelle. Les références SKU EM1 et EM2 sont disponibles uniquement par le biais d’un programme de licence en volume. Vous ne pouvez pas les acheter directement.
+
+Une autre approche consiste à acheter un abonnement **Power BI Embedded** dans Azure. Seules les références SKU **A** (A1-A6) n’impliquent aucune durée d’engagement et sont facturées à l'heure pour l'utilisation de visuels Power BI avec un étiquetage blanc dans les applications, portails et sites Web ou comme méthode de test des capacités P ou EM. Toutes les références SKU fournissent des v-cores pour créer des capacités. Toutefois, les références SKU EM ne peuvent être utilisées que pour l’incorporation de petite échelle. Les références SKU EM1, EM2, A1 et A2 comprenant moins de quatre v-cores ne s’exécutent pas sur une infrastructure dédiée.
 
 Bien que cet article porte principalement sur les références SKU P, une grande partie des instructions concernent également les références SKU A. Contrairement aux références SKU des abonnements Premium, les références SKU Azure n’impliquent aucune durée d’engagement et sont facturées à l’heure. Elles sont entièrement flexibles, vous permettant d’effectuer un scale-up, un scale-down, une pause, une reprise et une suppression. 
 
@@ -50,7 +51,11 @@ Les abonnements Power BI Premium peuvent être achetés par les administrateurs
 
 ## <a name="dedicated-capacities"></a>Capacités dédiées
 
-Avec Power BI Premium, vous bénéficiez de *capacités dédiées*. Contrairement à une capacité partagée où les charges de travail sont exécutées sur des ressources de calcul partagées avec d’autres clients, la capacité dédiée est utilisée exclusivement par une même organisation. Celle-ci est isolée et comprend des ressources de calcul dédiées qui offrent des performances fiables et constantes pour le contenu hébergé. 
+Avec Power BI Premium, vous bénéficiez de *capacités dédiées*. Contrairement à une capacité partagée où les charges de travail sont exécutées sur des ressources de calcul partagées avec d’autres clients, la capacité dédiée est utilisée exclusivement par une même organisation. Celle-ci est isolée et comprend des ressources de calcul dédiées qui offrent des performances fiables et constantes pour le contenu hébergé. Notez que les ressources suivantes sont stockées dans une capacité partagée plutôt que dans votre capacité dédiée :
+
+* Classeurs Excel (sauf si les données sont d’abord importées dans Power BI Desktop)
+* [Transmettre des jeux de données](/rest/api/power-bi/pushdatasets)
+* [Jeux de données en streaming](service-real-time-streaming.md#set-up-your-real-time-streaming-dataset-in-power-bi)
 
 Les espaces de travail résident sur des capacités. Chaque utilisateur Power BI dispose d’un espace de travail personnel nommé **Mon espace de travail**. Vous pouvez créer d’autres espaces de travail appelés **espaces de travail** pour permettre la collaboration. Par défaut, les espaces de travail, qui incluent également les espaces de travail personnels, sont créés dans une capacité partagée. Si vous avez des capacités Premium, vous pouvez leur affecter aussi bien des espaces de travail personnels que des espaces de travail classiques.
 
@@ -77,6 +82,9 @@ Les ressources et les limites de chaque référence SKU Premium (et des référ
 | P2/A5 | 16 | 8 | 50 | 8 | 60 | 12 |
 | P3/A6 | 32 | 16 | 100 | 16 | 120 | 24 |
 | | | | | | | |
+
+> [!NOTE]
+> L'utilisation d'une référence SKU unique plus grande (p. ex. une référence SKU P2) peut être préférable à la combinaison de plusieurs petites références SKU (p. ex. deux références SKU P1). Par exemple, vous pouvez utiliser des modèles plus grands et obtenir un meilleur parallélisme avec la référence SKU P2.
 
 ### <a name="capacity-workloads"></a>Charges de travail de capacité
 
@@ -235,5 +243,3 @@ Pour plus d’informations, consultez [Se connecter à des jeux de données avec
 > [Gérer les capacités Premium](service-premium-capacity-manage.md)
 
 D’autres questions ? [Essayez d’interroger la communauté Power BI](https://community.powerbi.com/)
-
-||||||

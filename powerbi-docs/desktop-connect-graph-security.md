@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e5374397dc9b89df7b7cbd86cfca5a44631b94e4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: ef8e874c1f1a47d65845b87dccd441746651a68b
+ms.sourcegitcommit: 5bb62c630e592af561173e449fc113efd7f84808
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876483"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "74999787"
 ---
 # <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Se connecter à l’API Microsoft Graph Security dans Power BI Desktop
 
@@ -40,7 +40,7 @@ Pour donner son consentement à l’utilisation du connecteur, votre administrat
 
 * Répondre à une demande que votre application logique envoie au cours de sa première exécution via l’[expérience de consentement d’application](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
    
-Le compte d’utilisateur qui se connecte au connecteur Microsoft Graph Security doit avoir le rôle administrateur limité Lecteur Sécurité dans Azure AD, en tant que *Lecteur Sécurité* ou *Administrateur de la sécurité*. Consultez [Attribuer des rôles d’Azure AD aux utilisateurs](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
+Le compte d’utilisateur qui se connecte au connecteur Microsoft Graph Security doit avoir le rôle Lecteur de sécurité Azure AD, **si** l’utilisateur n’est pas membre du rôle *Administrateur de la sécurité*. Consultez [Attribuer des rôles d’Azure AD aux utilisateurs](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>Utilisation du connecteur Microsoft Graph Security
 
@@ -58,7 +58,7 @@ Suivez ces étapes pour utiliser le connecteur :
     
 5. Connectez-vous à votre compte Azure Active Directory quand vous y êtes invité. Ce compte doit avoir le rôle *Lecteur Sécurité* ou *Administrateur de la sécurité* comme indiqué dans la section précédente.
 
-    ![Connexion](media/desktop-connect-graph-security/SignIn.PNG) 
+    ![Se connecter](media/desktop-connect-graph-security/SignIn.PNG) 
     
 6. Si vous êtes l’administrateur du locataire *et* que vous n’avez pas encore donné votre consentement pour utiliser le connecteur (application) Microsoft Graph Security de Power BI, vous voyez la boîte de dialogue suivante. Sélectionnez **Consentement pour le compte de votre organisation**.
 

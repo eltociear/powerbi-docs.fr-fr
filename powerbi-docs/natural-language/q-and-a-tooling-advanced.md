@@ -7,19 +7,19 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/18/2019
 ms.author: mohaali
-ms.openlocfilehash: d1ae995c3e98befe776ac091a0312e281e97022e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 64a6294ca30901c61928eca068ab4ebbb3d39638
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73875345"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958514"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Modifier le schéma linguistique de la fonctionnalité Questions et réponses et ajouter des formulations dans Power BI Desktop 
 Utiliser des phrases courantes et un langage naturel pour poser des questions sur vos données, c’est fort. Et quand vos données y répondent, c’est encore plus efficace. Quand vous posez une question dans Questions et réponses, cet outil essaie de vous donner la meilleure réponse possible. Toutefois, pour optimiser les interactions avec Questions et réponses, vous pouvez améliorer les réponses. Pour cela, une méthode consiste à modifier le schéma linguistique. 
 
-Tout commence par vos données d’entreprise.  La qualité du modèle de données et la qualité des réponses obtenues par les utilisateurs sont étroitement liées. Un moyen d’améliorer le modèle est d’ajouter un schéma linguistique qui définit et catégorise la terminologie ainsi que les relations entre les noms de table et de colonne dans votre jeu de données. Vous gérez vos schémas linguistiques dans Power BI Desktop. 
+Tout commence par vos données d’entreprise.  La qualité du modèle de données et la qualité des réponses obtenues par les utilisateurs sont étroitement liées. Un moyen d’améliorer le modèle est d’ajouter un schéma linguistique qui définit et catégorise la terminologie ainsi que les relations entre les noms de table et de colonne dans votre jeu de données. Vous gérez vos schémas linguistiques dans Power BI Desktop. 
 
-Le processus Questions et réponses a deux facettes.  La première représente la préparation, c’est-à-dire la *modélisation*.  La seconde est la *consommation*, qui consiste à poser des questions et à explorer les données. Dans certaines entreprises, ce sont les *modélisateurs de données* ou les administrateurs informatiques qui assemblent les jeux de données, créent les modèles de données et publient les jeux de données sur Power BI.  Les autres employés utilisent, ou « consomment », les données en ligne.  Dans d’autres entreprises, les employés peuvent combiner tous ces rôles. 
+Le processus Questions et réponses a deux facettes.  La première représente la préparation, c’est-à-dire la *modélisation*.  La seconde est la *consommation*, qui consiste à poser des questions et à explorer les données. Dans certaines entreprises, ce sont les *modélisateurs de données* ou les administrateurs informatiques qui assemblent les jeux de données, créent les modèles de données et publient les jeux de données sur Power BI.  Les autres employés utilisent, ou « consomment », les données en ligne.  Dans d’autres entreprises, les employés peuvent combiner tous ces rôles. 
 
 Cet article s’adresse aux modélisateurs de données, auxquels il incombe d’optimiser les jeux de données pour fournir les meilleurs résultats possibles de Questions et réponses. 
 

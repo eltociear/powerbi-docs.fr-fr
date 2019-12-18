@@ -8,16 +8,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/22/2019
 ms.author: kfollis
-ms.openlocfilehash: a45cfb20907c96995adf8618cd6dd8ff32194bea
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.openlocfilehash: be7f95b2bbbd6e5e6314c7fd57869a30c176746c
+ms.sourcegitcommit: 320d83ab392ded71bfda42c5491acab3d9d357b0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74699725"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74958491"
 ---
 # <a name="power-bi-data-sources"></a>Sources de données Power BI
 
-Le tableau suivant montre les sources de données qui sont prises en charge par Power BI, y compris des informations sur DirectQuery et sur la passerelle de données locale.
+Le tableau suivant montre les sources de données qui sont prises en charge par Power BI pour les jeux de données, y compris des informations sur DirectQuery et sur la passerelle de données locale. Pour plus d'informations sur les dataflows, voir [Se connecter à des sources de données pour les dataflows Power BI](service-dataflows-data-sources.md).
 
 | Paramètres | Connexion à partir de Desktop | Connexion et actualisation à partir du service | DirectQuery/Connexions actives | Passerelle (prise en charge) | Passerelle (obligatoire) |
 |---|---|---|---|---|---|---|---|
@@ -95,7 +95,7 @@ Le tableau suivant montre les sources de données qui sont prises en charge par 
 | Planview Enterprise One - CTM | Oui | Oui | Non | Non | Non |
 | Planview Enterprise One - PRM | Oui | Oui | Non | Non | Non |
 | Planview Projectplace | Oui | Oui | Non | Non | Non |
-| PostgreSQL | Oui | Oui | Non | Oui | Oui |
+| PostgreSQL | Oui | Oui | Oui | Oui | Oui |
 | Dataflows Power BI | Oui | Oui | Non | Non | Non |
 | Jeux de données Power BI | Oui | Oui | Oui | Non | Non |
 | Dataflows Power Platform | Oui | Oui | Non | Non | Non |
