@@ -142,6 +142,8 @@
       items:
         - name: Présentation des applications mobiles
           href: mobile/mobile-apps-for-mobile-devices.md
+        - name: Présentation de la page d’accueil
+          href: mobile/mobile-apps-home-page.md
     - name: Guides de démarrage rapide
       items:
         - name: Explorer des tableaux de bord et des rapports
@@ -198,7 +200,7 @@
               href: mobile/mobile-apps-qr-code.md
             - name: Annoter et partager dans les applications mobiles
               href: mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-            - name: Scanner un code-barres avec l’application sur votre iPhone
+            - name: "Scanner un code-barres à partir de l’application mobile Power\_BI"
               href: mobile/mobile-apps-scan-barcode-iphone.md
             - name: Configurer avec la gestion des appareils mobiles
               href: mobile/mobile-app-configuration.md

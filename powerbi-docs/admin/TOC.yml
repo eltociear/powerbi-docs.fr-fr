@@ -7,6 +7,10 @@
       items:
         - name: Présentation de l’administration de Power BI
           href: ../service-admin-administering-power-bi-in-your-organization.md
+        - name: "Où se trouve mon locataire\_?"
+          href: ../service-admin-where-is-my-tenant-located.md
+        - name: "Migrer vers les régions allemande «\_Go Local\_»"
+          href: service-admin-migrate-data-germany.md
     - name: Concepts
       expanded: true
       items:
@@ -30,8 +34,6 @@
               href: ../service-admin-syndication-partner.md
         - name: Utilisation du portail d’administration
           href: ../service-admin-portal.md
-        - name: "Où se trouve mon locataire\_?"
-          href: ../service-admin-where-is-my-tenant-located.md
         - name: Trouver les utilisateurs qui se sont connectés
           href: ../service-admin-access-usage.md
         - name: Audit

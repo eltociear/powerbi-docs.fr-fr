@@ -40,6 +40,8 @@
           href: report-drillthrough.md
         - name: Conseils sur les dates/heures automatiques dans Power BI Desktop
           href: auto-date-time.md
+        - name: Conseils sur les relations plusieurs-à-plusieurs
+          href: relationships-many-to-many.md
     - name: Livres blancs
       items:
         - name: Vue d’ensemble des livres blancs
