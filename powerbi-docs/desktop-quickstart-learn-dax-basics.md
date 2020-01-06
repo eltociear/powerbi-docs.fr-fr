@@ -10,10 +10,10 @@ ms.date: 10/21/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: fcff0bf1d6c68b9bdb000855f4984b3664b882c1
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73877907"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Principes fondamentaux de DAX dans Power BI Desktop
@@ -25,7 +25,7 @@ DAX est une collection de fonctions, d’opérateurs et de constantes qui peuven
 ## <a name="why-is-dax-so-important"></a>Pourquoi DAX est-il si important ?
 Il est facile de créer un fichier Power BI Desktop et d’y importer des données. Vous pouvez même créer des rapports montrant des analyses importantes sans utiliser aucune formule DAX. En revanche, comment procéder si vous avez besoin d’analyser un pourcentage de croissance sur plusieurs catégories de produits et pour différentes périodes ? Ou si vous devez calculer la croissance année après année en comparaison avec les tendances du marché ? Les formules DAX fournissent cette fonctionnalité, ainsi que de nombreuses autres. Apprendre à créer des formules DAX efficaces vous permettra de tirer le meilleur parti possible de vos données. L’obtention des informations dont vous avez besoin vous permet d’envisager de résoudre des problèmes concrets dans votre entreprise, qui affectent vos résultats. C’est là toute la puissance de Power BI et DAX vous aide à l’exploiter.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Vous connaissez peut-être déjà bien la création de formules dans Microsoft Excel. Ces connaissances vous aideront à mieux comprendre DAX. Toutefois, même si vous n’avez aucune expérience des formules Excel, les concepts décrits ici vous permettront de créer des formules DAX et de résoudre des problèmes décisionnels concrets immédiatement.
 
 Nous allons tâcher de comprendre les formules DAX utilisées dans le cadre des calculs et, plus spécifiquement, dans les mesures et les colonnes calculées. Vous devez déjà être familiarisé avec l’utilisation de Power BI Desktop pour importer des données et ajouter des champs à un rapport, et connaître les concepts fondamentaux des [mesures](desktop-measures.md) et des [colonnes calculées](desktop-calculated-columns.md).

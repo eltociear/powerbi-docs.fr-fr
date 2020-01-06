@@ -8,12 +8,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 9ce761d09e2db4fbbc2e56d461f5272041edfbfe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 3680344c3449c80064b818f7ab2a5b48020fba4b
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870097"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75220605"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Utilisation d’OAuth pour se connecter à Power BI Report Server et SSRS
 
@@ -244,7 +244,7 @@ Vous pouvez activer l’authentification multifacteur pour activer une sécurit�
 
 Vous pouvez configurer [Fiddler](https://www.telerik.com/fiddler) de façon à ce qu’il agisse en tant que proxy pour vos appareils mobiles pour voir jusqu’où la demande est allée. Pour activer un proxy Fiddler pour votre appareil mobile, vous avez besoin du programme d’installation de [CertMaker pour iOS et Android](https://www.telerik.com/fiddler/add-ons) sur l’ordinateur exécutant Fiddler. Il s’agit d’un module complémentaire de Telerik pour Fiddler.
 
-Si la connexion fonctionne correctement lorsque vous utilisez Fiddler, vous pouvez avoir un problème de certificat avec l’application de proxy d’application web ou le serveur ADFS. Vous pouvez utiliser un outil tel que [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) pour vérifier si les certificats sont valides.
+Si la connexion fonctionne correctement lorsque vous utilisez Fiddler, vous pouvez avoir un problème de certificat avec l’application de proxy d’application web ou le serveur ADFS. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 

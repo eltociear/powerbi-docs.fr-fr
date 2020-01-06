@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2019
 ms.author: v-pemyer
-ms.openlocfilehash: b674c621c30491a00c529af7f2fcd9eb87f3ecfa
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.openlocfilehash: a19e8148a719186cbaefe3203d58a5a98687c067
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74834767"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223622"
 ---
 # <a name="report-page-drillthrough"></a>Extraction de page de rapport
 
@@ -63,7 +63,7 @@ Au moment de la conception du rapport, nous vous recommandons d’adopter les pr
 - **Découverte :** Facilitez l’accès à une page d’extraction en utilisant du texte dans une icône d’en-tête de visuel ou en ajoutant des instructions à une zone de texte. Vous pouvez également concevoir une superposition, comme décrit dans [ce billet de blog](https://alluringbi.com/2019/10/23/overlays-for-true-self-serve-reporting/).
 
 > [!TIP]
-> Il est aussi possible de configurer l’extraction vers vos rapports paginés Power BI. Pour ce faire, vous pouvez ajouter des liens vers des rapports Power BI. Ces liens peuvent définir des [paramètres d’URL](/blog/url-parameters-for-paginated-reports-are-now-available/).
+> Il est aussi possible de configurer l’extraction vers vos rapports paginés Power BI. Pour ce faire, vous pouvez ajouter des liens vers des rapports Power BI. Ces liens peuvent définir des [paramètres d’URL](https://powerbi.microsoft.com/blog/url-parameters-for-paginated-reports-are-now-available/).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

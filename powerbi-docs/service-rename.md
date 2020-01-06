@@ -10,10 +10,10 @@ ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
 ms.openlocfilehash: de842b95c8f6e023a5207c07abb2525c5fe45878
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73871718"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Renommer pratiquement tout élément dans le service Power BI
@@ -21,7 +21,7 @@ Cet article explique comment renommer un tableau de bord, un rapport, une page d
 
 **Puis-je modifier le nom ?**
 
-| Type de contenu | Je suis l’auteur ou le créateur | Partagé avec moi |
+| Type de contenu | Je suis l’auteur ou le créateur | Éléments partagés avec moi |
 | --- | --- | --- |
 | Tableau de bord dans un espace de travail |Oui |Non |
 | Rapport dans un espace de travail |Oui |Non |

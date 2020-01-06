@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2019
+ms.date: 12/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: c48ae0913d0096546c23d22d3e4596fdb21aef82
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: c3f703bfe2685166ce575b37c053b2a9603a799f
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73872710"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223873"
 ---
-# <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Connecter Azure Data Lake Storage Gen2 pour le stockage de flux de données (préversion)
+# <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage"></a>Connecter Azure Data Lake Storage Gen2 pour le stockage de dataflows
 
 Vous pouvez configurer des espaces de travail Power BI pour stocker des flux de données dans le compte Azure Data Lake Storage Gen2 de votre organisation. Cet article décrit les étapes générales nécessaires pour ce faire et fournit des conseils et meilleures pratiques tout au long du processus. Il existe quelques avantages à la configuration des espaces de travail pour stocker les définitions de flux de données et les fichiers de données dans votre Data Lake, notamment :
 
@@ -192,7 +192,7 @@ Questions et réponses courantes :
 
 **Réponse :** Vous ne pouvez pas modifier l’emplacement de stockage d’un flux de données après sa création. 
 
-**Question :** Quand puis-je modifier l’emplacement de stockage de flux de données d’un espace de travail ?
+**Question :** Quand puis-je modifier l’emplacement de stockage de flux de données d’un espace de travail ?
 
 **Réponse :** La modification de l’emplacement de stockage de flux de données d’un espace de travail est uniquement autorisée si l’espace de travail ne contient aucun flux de données.
 

@@ -1,6 +1,6 @@
 ---
-title: 'Tutoriel : Créer des colonnes calculées dans Power BI Desktop'
-description: 'Tutoriel : Créer des colonnes calculées dans Power BI Desktop'
+title: 'Tutoriel : Créer des colonnes calculées dans Power BI Desktop'
+description: 'Tutoriel : Créer des colonnes calculées dans Power BI Desktop'
 author: davidiseminger
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,13 +10,13 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 4c1f6985a2ff88fa9ca595ad68456eed7a55c82e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73876148"
 ---
-# <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Tutoriel : Créer des colonnes calculées dans Power BI Desktop
+# <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Tutoriel : Créer des colonnes calculées dans Power BI Desktop
 
 Parfois, les données que vous analysez ne contiennent pas de champ particulier vous permettant d’obtenir les résultats que vous recherchez. C’est là qu’interviennent les *colonnes calculées*. Les colonnes calculées utilisent des formules du langage DAX (Data Analysis Expressions) pour définir les valeurs d’une colonne, assembler des valeurs de texte à partir de deux colonnes différentes jusqu’à calculer une valeur numérique à partir d’autres valeurs. Par exemple, supposons que vos données incluent des champs **Ville** et **État**, mais que vous voulez un champ **Emplacement** unique qui possède ces deux informations, par exemple « Miami, FL ». C’est là précisément qu’interviennent les colonnes calculées.
 
@@ -24,7 +24,7 @@ Les colonnes calculées sont semblables aux [mesures](desktop-tutorial-create-me
 
 Ce tutoriel va vous aider à comprendre et à créer les colonnes calculées et à les utiliser dans des visualisations de rapports dans Power BI Desktop. 
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 - Ce didacticiel s’adresse aux utilisateurs de Power BI déjà familiarisés avec l’utilisation de Power BI Desktop pour créer des modèles plus avancés. Vous devez déjà savoir comment utiliser **Obtenir des données** et **Éditeur Power Query** pour importer des données, travailler sur plusieurs tables associées et ajouter des champs dans le Canevas de rapport. Si vous découvrez seulement Power BI Desktop, veillez à consulter [Prise en main de Power BI Desktop](desktop-getting-started.md).
   
 - Ce tutoriel utilise [l’exemple de vente Contoso pour Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), le même utilisé pour le tutoriel [Créer vos propres mesures dans Power BI Desktop](desktop-tutorial-create-measures.md). Ces données de ventes de la société fictive Contoso, Inc. ont été importées à partir d’une base de données, vous ne pourrez donc pas vous connecter à la source de données ni l’afficher dans l’Éditeur Power Query. Téléchargez et extrayez le fichier sur votre propre ordinateur, puis ouvrez-le dans Power BI Desktop.

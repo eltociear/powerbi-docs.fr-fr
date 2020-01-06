@@ -1,19 +1,19 @@
 ---
 title: Afficher le contenu Power BI en tant qu’utilisateur invité externe (Azure AD B2B)
 description: Utilisez les applications mobiles Power BI pour afficher le contenu qu’une organisation externe a partagé avec vous.
-author: mshenhav
+author: paulinbar
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.author: mshenhav
-ms.openlocfilehash: f0db77a69bd8845b9448b7c15fedea7663683ec0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.date: 12/09/2019
+ms.author: painbar
+ms.openlocfilehash: c5e1e0b90f24a81940edab46633f49df41d25fdc
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879337"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75219860"
 ---
 # <a name="view-power-bi-content-shared-with-you-from-an-external-organization"></a>Afficher le contenu Power BI qu’une organisation externe a partagé avec vous
 
@@ -30,18 +30,18 @@ S’applique à :
 
 **Tout d’abord, il est nécessaire qu’une personne d’une organisation externe partage une ressource avec vous.** Lorsque quelqu’un [partage une ressource avec vous](../../service-share-dashboards.md), que ce soit au sein de votre organisation ou d’une organisation externe, vous recevez un e-mail contenant un lien vers cette ressource partagée. Lorsque vous sélectionnez ce lien dans votre appareil mobile, l’application mobile Power BI s’ouvre. Si l’application reconnaît que la ressource a été partagée par une organisation externe, l’application se reconnecte à cette organisation avec votre identité. L’application charge ensuite toutes les ressources que cette organisation a partagées avec vous.
 
-![Power BI ouvre la ressource partagée à partir d’un e-mail ](./media/mobile-apps-b2b/mobile-b2b-open-item-email.png)
+![Power BI ouvre la ressource partagée à partir d’un e-mail ](./media/mobile-apps-b2b/mobile-b2b-open-item-email-new.png)
 
 > [!NOTE]
 > S’il s’agit de la première ressource qui est partagée avec vous en tant qu’utilisateur invité externe, vous devez revendiquer l’invitation dans un navigateur. Vous ne pouvez pas la revendiquer dans l’application Power BI.
 
 Tant que vous êtes connecté à une organisation externe, un en-tête noir s’affiche dans l’application. Cet en-tête indique que vous n’êtes pas connecté à votre organisation d’origine. Pour vous reconnecter à votre organisation d’origine, vous devez quitter le mode invité.
 
-![En-tête d’utilisateur invité Power BI](./media/mobile-apps-b2b/mobile-b2b-exit-home.png)
+![En-tête d’utilisateur invité Power BI](./media/mobile-apps-b2b/mobile-b2b-exit-home-new.png)
 
 Même si vous avez besoin d’un lien vers un artefact Power BI pour vous connecter à une organisation externe, après le basculement de votre application, vous pouvez accéder à toutes les ressources qui ont été partagées avec vous (et pas seulement la ressource que vous avez ouverte à partir de l’e-mail). Pour afficher toutes les ressources de l’organisation externe auxquelles vous pouvez accéder, ouvrez le menu de l’application, puis sélectionnez **Partagé avec moi**. Sous **Applications**, vous trouverez d’autres applications que vous pouvez également utiliser.
 
-![Menu de l’application Power BI en tant qu’utilisateur externe invité](./media/mobile-apps-b2b/mobile-b2b-menu.png)
+![Menu de l’application Power BI en tant qu’utilisateur externe invité](./media/mobile-apps-b2b/mobile-b2b-menu-new.png)
 
 ## <a name="limitations"></a>Limites
 

@@ -8,10 +8,10 @@ ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
 ms.openlocfilehash: 362c765fb5e739563b8d21eaed53304eddce8acc
-ms.sourcegitcommit: c395fe83d63641e0fbd7c98e51bbab224805bbcc
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74265700"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Journalisation des diagnostics pour Power BI Embedded dans Azure
@@ -110,7 +110,7 @@ La catégorie de moteur indique à la ressource de journaliser les événements 
 |    Fin de la requête    |    Enregistrements tous les événements de fin de la requête depuis le démarrage de la trace.    |
 |    Fin de la requête Vertipaq    |    Enregistrements tous les événements de fin de la requête VertiPaq SE depuis le démarrage de la trace.    |
 |    Audit de déconnexion    |    Enregistre toutes les déconnexions des événements moteur depuis le démarrage de la trace.    |
-|    Error    |    Enregistrements tous les événements d’erreur moteur depuis le démarrage de la trace.    |
+|    Erreur    |    Enregistrements tous les événements d’erreur moteur depuis le démarrage de la trace.    |
 
 <br>
 <br>
@@ -131,8 +131,8 @@ La catégorie de moteur indique à la ressource de journaliser les événements 
 | ProgressTotal | 0 | Total de progression. |
 | IntegerData | 0 | Données de type integer. |
 | Gravité | 0 | Niveau de gravité d'une exception. |
-| Succès | 1 | 1 = réussite. 1 = échec (par exemple, 0 signifie le succès d'une vérification des autorisations, et 0 signifie l'échec de cette vérification). |
-| Error | 0 | Numéro d'erreur d'un événement donné. |
+| Réussite | 1 | 1 = réussite. 1 = échec (par exemple, 0 signifie le succès d'une vérification des autorisations, et 0 signifie l'échec de cette vérification). |
+| Erreur | 0 | Numéro d'erreur d'un événement donné. |
 | ConnectionID | 3 | ID de connexion unique. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | ID du jeu de données dans lequel l'instruction de l'utilisateur s'exécute. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | GUID de session. |

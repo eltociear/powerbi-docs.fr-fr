@@ -11,10 +11,10 @@ ms.author: kfollis
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 670373afb5cb890c87a24a129cd43fde7bd5d892
-ms.sourcegitcommit: f77b24a8a588605f005c9bb1fdad864955885718
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74698897"
 ---
 # <a name="capture-additional-diagnostic-information-for-power-bi"></a>Capturer des informations de diagnostic supplémentaires pour Power BI
@@ -31,7 +31,7 @@ Cet article donne les instructions pour collecter manuellement des informations 
 
    ![Capture d’écran de l’onglet Réseau des outils de développement Microsoft Edge.](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 
-    Vous pouvez soit :
+    Vous pouvez :
 
     * Parcourez la fenêtre et reproduisez les problèmes que vous pouvez rencontrer.
 

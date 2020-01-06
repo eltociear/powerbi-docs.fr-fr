@@ -8,12 +8,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2019
 ms.author: v-pemyer
-ms.openlocfilehash: bfc1572e31269182e9ca63efbbf6934b90f84b66
-ms.sourcegitcommit: 462ccdd9f79ff698ed0cdfc3165f4ada364dd9ef
+ms.openlocfilehash: 723cc7b2767f6a5ee4394bca74e507fc688b3af8
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478622"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223639"
 ---
 # <a name="directquery-model-guidance-in-power-bi-desktop"></a>Guide du modèle DirectQuery dans Power BI Desktop
 
@@ -87,7 +87,7 @@ Un modèle DirectQuery peut être optimisé de nombreuses façons, comme décrit
 
     L’augmentation de la valeur **Nombre maximal de connexions par source de données** garantit l’envoi d’un nombre plus élevé de requêtes (allant jusqu’au nombre maximal spécifié) à la source de données sous-jacente, ce qui s’avère utile quand plusieurs visuels figurent sur une seule page ou quand de nombreux utilisateurs accèdent à un rapport en même temps. Une fois le nombre maximal de connexions atteint, les requêtes sont mises en file d’attente jusqu’à ce qu’une connexion soit disponible. L’augmentation de cette limite entraîne celle de la charge sur la source de données sous-jacente, si bien que le paramètre ne garantit pas une amélioration des performances globales.
     
-    Quand le modèle est publié sur Power BI, le nombre maximal de requêtes simultanées envoyées à la source de données sous-jacente dépend également de l’environnement. Différents environnements (par exemple, Power BI, Power BI Premium ou Power BI Report Server) peuvent chacun imposer des contraintes de débit différentes. Pour plus d’informations sur les limitations de ressources de capacité Power BI Premium, consultez [Déploiement et gestion des capacités de Power BI Premium](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment#premium-capacities).
+    Quand le modèle est publié sur Power BI, le nombre maximal de requêtes simultanées envoyées à la source de données sous-jacente dépend également de l’environnement. Différents environnements (par exemple, Power BI, Power BI Premium ou Power BI Report Server) peuvent chacun imposer des contraintes de débit différentes. Pour plus d’informations sur les limitations de ressources de capacité Power BI Premium, consultez [Déploiement et gestion des capacités de Power BI Premium](https://docs.microsoft.com/power-bi/whitepaper-powerbi-premium-deployment).
 
 ## <a name="optimize-report-designs"></a>Optimiser les conceptions de rapport
 

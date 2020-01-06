@@ -10,13 +10,13 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
 ms.openlocfilehash: 1366a5281a36293a484f08c12ab9f8891e29123d
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73876209"
 ---
-# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Démarrage rapide : Se connecter à des données dans Power BI Desktop
+# <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Démarrage rapide : Se connecter à des données dans Power BI Desktop
 
 Dans ce démarrage rapide, vous vous connectez aux données à l’aide de **Power BI Desktop**, ce qui constitue la première étape de la création de modèles de données et de rapports.
 
@@ -24,7 +24,7 @@ Dans ce démarrage rapide, vous vous connectez aux données à l’aide de **Pow
 
 Si vous n’êtes pas inscrit à Power BI, [inscrivez-vous à un essai gratuit](https://app.powerbi.com/signupredirect?pbi_source=web) avant de commencer.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Pour effectuer les étapes décrites dans cet article, les opérations suivantes sont nécessaires :
 * Téléchargez et installez **Power BI Desktop**, une application gratuite qui s’exécute sur votre ordinateur local. Vous pouvez [télécharger **Power BI Desktop**](https://powerbi.microsoft.com/desktop) directement, ou l’obtenir à partir [du **Microsoft Store**](https://aka.ms/pbidesktopstore).

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: db4b6d4915e97aaee65806b0bca7801bf4ce951e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4440db5888eeeab638eab4ea3819107d37bdbdbd
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876231"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223471"
 ---
 # <a name="use-an-external-r-ide-with-power-bi"></a>Utiliser un IDE R externe avec Power BI
 Avec **Power BI Desktop**, vous pouvez utiliser un IDE (environnement de développement intégré) R externe pour créer et affiner les scripts R, puis utiliser ces scripts dans Power BI.
@@ -31,7 +31,7 @@ Auparavant, vous deviez utiliser l’éditeur de script R dans **Power BI Des
 Pour utiliser cette fonctionnalité, vous devez installer un **IDE R** sur votre ordinateur local. **Power BI Desktop** n’inclut pas, ne déploie pas et n’installe pas le moteur R. Vous devez donc installer **R** séparément sur votre ordinateur local. Vous pouvez choisir l’IDE R à utiliser avec les options suivantes :
 
 * Vous pouvez installer votre IDE R favori (nombre des IDE R étant disponibles gratuitement), tel que [Revolution Open](https://mran.revolutionanalytics.com/download/) et [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
-* **Power BI Desktop** prend également en charge [R Studio](https://www.rstudio.com/) et **Visual Studio 2015** avec les éditeurs [*Outils R pour Visual Studio*](https://beta.visualstudio.com/vs/rtvs/).
+* **Power BI Desktop** prend également en charge [R Studio](https://www.rstudio.com/) et **Visual Studio 2015** avec les éditeurs [*Outils R pour Visual Studio*](/visualstudio/rtvs).
 * Vous pouvez également installer un autre IDE R et configurer **Power BI Desktop** pour lancer cet **IDE R** en effectuant l’une des opérations suivantes :
   
   * Vous pouvez associer des fichiers **.R** à l’IDE externe que vous souhaitez lancer à l’aide de **Power BI Desktop**.

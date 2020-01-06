@@ -10,10 +10,10 @@ ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73875142"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Nouvelle expérience de filtre dans les rapports Power BI
@@ -53,7 +53,7 @@ Si vous avez activé **Nouvelle apparence** dans le service Power BI ![Nouvelle 
 Si vous n’avez pas activé la nouvelle apparence, vous pouvez toujours voir la nouvelle expérience de filtre en procédant comme suit.
 
 1. Dans le service Power BI, sélectionnez l’onglet **Rapports** dans la liste de contenu pour un espace de travail.
-2. Recherchez le rapport que vous souhaitez activer, puis sélectionnez l’icône **Paramètres** ![icône des paramètres de rapport](media/power-bi-report-filter/power-bi-settings-icon.png) pour ce rapport.
+2. Recherchez le rapport que vous souhaitez activer, puis sélectionnez l’icône **Paramètres**![icône des paramètres de rapport](media/power-bi-report-filter/power-bi-settings-icon.png) pour ce rapport.
 3. Sous **Expérience de filtrage**, sélectionnez **Activer le volet de filtre mis à jour et afficher les filtres dans l'en-tête du visuel de ce rapport**.
 
     ![Activer le volet de filtres mis à jour](media/power-bi-report-filter/power-bi-service-filter-enable.png)

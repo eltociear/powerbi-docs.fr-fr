@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 11/27/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bdaac078fa106565f7c11b3cc323840b5d10b579
-ms.sourcegitcommit: a21f7f9de32203e3a4057292a24ef9b5ac6ce94b
+ms.openlocfilehash: 749d8d5b62df87b0e6b29d524e90c694a0e38efe
+ms.sourcegitcommit: ef9ab7c0d84b926094c33e8aa2765cd43b844314
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74565339"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622440"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser le travail dans les nouveaux espaces de travail dans Power BI
 
@@ -62,7 +62,7 @@ Quand vous affectez des rôles à un groupe d’utilisateurs, les personnes indi
 
 Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. Toutes ces fonctionnalités, à l’exception de l’affichage et de l’interaction, nécessitent une licence Power BI Pro.
 
-|Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Lecteur |
+|Fonctionnalité   | Administrateur  | Membre  | Contributeur  | Visionneuse |
 |---|---|---|---|---|
 | Mettre à jour et supprimer l’espace de travail.  | X  |   |   |   | 
 | Ajouter/supprimer des personnes, y compris d’autres administrateurs.  | X  |   |   |   |
@@ -81,7 +81,7 @@ Voici les quatre rôles : administrateurs, membres, contributeurs et lecteurs. 
     - Vous devez avoir l’autorisation Générer pour le jeu de données. Pour les jeux de données de cet espace de travail, les utilisateurs ayant un rôle d’administrateur, de membre ou de contributeur héritent l’autorisation Générer de leur rôle dans l’espace de travail.
 2. Même si vous n’avez pas de licence Power BI Pro, vous pouvez voir et utiliser les éléments du service Power BI s’ils se trouvent dans un espace de travail d’une capacité Premium.
 
-## <a name="licensing"></a>Licensing
+## <a name="licensing"></a>Licences
 Toutes les personnes que vous ajoutez à un espace de travail dans la capacité partagée doivent avoir une licence Power BI Pro. Dans l’espace de travail, ces utilisateurs peuvent collaborer sur des tableaux de bord et des rapports que vous prévoyez de publier pour un public plus large, ou même pour votre organisation tout entière. 
 
 Si vous voulez distribuer du contenu à d’autres utilisateurs au sein de votre organisation, vous pouvez leur attribuer des licences Power BI Pro ou placer l’espace de travail dans une capacité Power BI Premium.
@@ -111,18 +111,19 @@ La fonctionnalité OneDrive de l’espace de travail vous permet de configurer u
 Power BI ne synchronise pas les autorisations des utilisateurs ou des groupes qui sont configurés pour avoir accès à l’espace de travail avec l’appartenance au groupe Office 365. La meilleure pratique consiste à gérer l’accès à l’espace de travail via le même groupe Office 365 dont vous configurez le stockage de fichiers dans ce paramètre. 
 
 En savoir plus sur comment [définir et accéder à OneDrive de l’espace de travail](service-create-the-new-workspaces.md#workspace-onedrive).  
-   
+
 ## <a name="auditing"></a>Audit
+
 Les activités suivantes sont auditées par Power BI pour les espaces de travail de la nouvelle expérience de l’espace de travail.
 
-| Nom convivial |   Nom de l’opération |
+| Nom convivial | Nom de l’opération |
 |---|---|
 | Dossier Power BI créé | CreateFolder |
 | Dossier Power BI supprimé | DeleteFolder |
 | Dossier Power BI mis à jour | UpdateFolder |
 | Accès au dossier Power BI mis à jour| UpdateFolderAccess |
 
-En savoir plus sur [l’audit Power BI](service-admin-auditing.md#activities-audited-by-power-bi).
+En savoir plus sur [l’audit Power BI](service-admin-auditing.md).
 
 ## <a name="limitations-and-considerations"></a>Considérations et limitations
 

@@ -8,10 +8,10 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.date: 11/07/2019
 ms.openlocfilehash: f797dd55202ff4cba87cc3a15601d85091e94823
-ms.sourcegitcommit: c839ef7437bc8fb8f7eeda23e59d05c7192a7fe8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74164066"
 ---
 # <a name="connect-a-report-to-a-dataset-using-dynamic-binding"></a>Connecter un rapport à un jeu de données à l’aide de la liaison dynamique 
@@ -66,5 +66,5 @@ var report = powerbi.embed(embedContainer, config);
 ## <a name="next-steps"></a>Étapes suivantes
 
 Si vous débutez avec l’incorporation dans Power BI, suivez ces tutoriels pour découvrir comment incorporer votre contenu Power BI :
-* [Tutoriel : Incorporer du contenu Power BI dans une application pour vos clients](embed-sample-for-customers.md)
-* [Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation](embed-sample-for-your-organization.md)
+* [Tutoriel : Incorporer du contenu Power BI dans une application pour vos clients](embed-sample-for-customers.md)
+* [Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation](embed-sample-for-your-organization.md)

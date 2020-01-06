@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Créer un modèle Machine Learning dans Power BI'
+title: 'Tutoriel : Créer un modèle Machine Learning dans Power BI'
 description: Dans ce didacticiel, vous allez créer un modèle Machine Learning dans Power BI.
 author: davidiseminger
 ms.reviewer: ''
@@ -11,13 +11,13 @@ ms.date: 03/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 78b29a4e71e75793e168da25987b3e9c4a8b13f4
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73877024"
 ---
-# <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Tutoriel : Créer un modèle Machine Learning dans Power BI
+# <a name="tutorial-build-a-machine-learning-model-in-power-bi"></a>Tutoriel : Créer un modèle Machine Learning dans Power BI
 
 Dans cet article de didacticiel, vous utilisez le **Machine Learning automatisé** pour créer et appliquer un modèle de prédiction binaire dans Power BI. Ce didacticiel fournit des instructions pour créer un dataflow Power BI et utiliser les entités définies dans le dataflow pour former et valider un modèle Machine Learning directement dans Power BI. Nous utilisons ensuite ce modèle pour le scoring de nouvelles données afin de générer des prédictions.
 

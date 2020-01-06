@@ -11,10 +11,10 @@ ms.date: 10/25/2019
 ms.author: painbar
 LocalizationGroup: Data from files
 ms.openlocfilehash: 1349d62d0400c0ad283f6e9e234c44ffce0d63b9
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73766397"
 ---
 # <a name="data-protection-in-power-bi-preview"></a>Protection des données dans Power BI (préversion)
@@ -99,9 +99,9 @@ La liste suivante présente certaines limitations des étiquettes de sensibilit�
 * Les étiquettes de sensibilité ne peuvent être appliquées que sur les tableaux de bord, les rapports, les jeux de données et les dataflows.
 * L’application de contrôles de protection et d’étiquettes à des fichiers exportés est prise en charge uniquement pour les fichiers Excel, PowerPoint et PDF. L’étiquette et la protection ne sont pas appliquées quand les données sont exportées vers des fichiers .CSV, un e-mail d’abonnement, des visuels d’incorporation et une impression.
 * Un utilisateur qui exporte un fichier à partir de Power BI dispose d’autorisations pour accéder à ce fichier et le modifier en fonction des paramètres d’étiquette de sensibilité. L’utilisateur qui exporte les données n’obtient pas d’autorisations de propriétaire sur le fichier. 
-* Les étiquettes de sensibilité ne sont actuellement pas disponibles pour les [rapports paginés]( https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi) et les classeurs. 
-* Vous ne pouvez actuellement pas supprimer une étiquette d’une ressource Power BI après son application.
-* Les étiquettes de sensibilité sur des ressources Power BI sont visibles uniquement dans la liste des espaces de travail et les vues de traçabilité ; elles ne sont actuellement pas visibles dans les vues Favoris, Éléments partagés avec moi, Récents ou d’application. Notez, toutefois, qu’une étiquette appliquée à une ressource Power BI, même si elle n’est pas visible, est toujours conservée sur les données exportées vers des fichiers Excel, PowerPoint et PDF.
+* Les étiquettes de sensibilité ne sont pas disponibles pour les [rapports paginés]( https://docs.microsoft.com/power-bi/paginated-reports-report-builder-power-bi) et les classeurs. 
+* Vous ne pouvez pas supprimer une étiquette d’une ressource Power BI après son application.
+* Les étiquettes de sensibilité sur des ressources Power BI sont visibles uniquement dans la liste d’espace de travail et les vues de traçabilité ; elles ne sont pas visibles dans les vues Favoris, Éléments partagés avec moi, Récents ou d’application. Notez, toutefois, qu’une étiquette appliquée à une ressource Power BI, même si elle n’est pas visible, est toujours conservée sur les données exportées vers des fichiers Excel, PowerPoint et PDF.
 * Le *paramètre de chiffrement de fichier* des étiquettes de sensibilité, configuré dans le [Centre de sécurité Microsoft 365](https://security.microsoft.com/) ou le [Centre de conformité Microsoft 365](https://compliance.microsoft.com/), s’applique uniquement aux fichiers *exportés à partir de* Power BI ; il n’est pas appliqué *dans* Power BI.
 * La [protection HYOK](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions) n’est pas prise en charge pour les étiquettes appliquées dans Power BI.
 * L’affichage et l’application d’étiquettes dans les applications Office sont soumis à des [conditions de licences](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-office-apps#subscription-and-licensing-requirements-for-sensitivity-labels).

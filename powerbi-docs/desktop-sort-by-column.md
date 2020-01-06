@@ -6,15 +6,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 12/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: daf4f2c4aaa010516f90cae54c1e8b6784fb0f64
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 78632db52ae197a1643dcf1f2831e140568bc6fe
+ms.sourcegitcommit: 02b05932a119527f255e1eacc745a257044e392f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73879704"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75223436"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Trier par colonne dans Power BI Desktop
 Dans **Power BI Desktop** et le **service Power BI**, vous pouvez modifier l’apparence d’un visuel en le triant par différents champs de données. En changeant la façon dont vous triez un visuel, vous pouvez mettre en évidence les informations que vous voulez transmettre et vérifier que le visuel reflète cette tendance (ou cette importance).
@@ -100,4 +100,11 @@ Quand vous revenez au menu et que vous resélectionnez **SalesQuantity**, le vis
 ![Ordre de tri par défaut](media/desktop-sort-by-column/sortbycolumn_7.png)
 
 Avec autant d’options de tri de vos éléments visuels, la création du graphique ou de l’image que vous souhaitez est un jeu d’enfant.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Les articles suivants pourraient également vous intéresser :
+
+* [Use cross-report drillthrough in Power BI Desktop](desktop-cross-report-drill-through.md) (Utiliser une extraction interrapport dans Power BI Desktop)
+* [Utilisation de segments Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 

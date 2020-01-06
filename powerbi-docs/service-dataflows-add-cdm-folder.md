@@ -10,17 +10,17 @@ ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 5b6b8658e4480173c32a591c2fc763a238cfd13a
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73872686"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Ajouter un dossier CDM à Power BI sous forme de flux de données (préversion)
 
 Dans Power BI, vous pouvez ajouter sous forme de flux de données des dossiers CDM (Common Data Model) stockés dans le compte Azure Data Lake Storage Gen2 de votre organisation. Une fois que vous avez créé un flux de données à partir d’un dossier CDM, vous pouvez utiliser **Power BI Desktop** et le **service Power BI** pour créer des jeux de données, des rapports, des tableaux de bord et des applications basés sur les données des dossiers CDM.
 
-![Flux de données issu d’un dossier CDM](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_01.jpg)
+![Dataflow issu d’un dossier CDM](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_01.jpg)
 
 La création de flux de données à partir de dossiers CDM est soumise aux conditions suivantes :
 

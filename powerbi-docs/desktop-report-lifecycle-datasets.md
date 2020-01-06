@@ -10,10 +10,10 @@ ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: d7d48b78ecced3e26a52df12bc8850ab8fed4c1e
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73877888"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Se connecter à des jeux de données dans le service Power BI à partir de Power BI Desktop
@@ -29,7 +29,7 @@ L’un des problèmes liés à la popularité de Power BI est la prolifération 
 ### <a name="create-a-dataset-everyone-can-use-then-share-it"></a>Créer et partager un jeu de données utilisable par chacun
 Supposons qu’Anna (analyste d’entreprise) fait partie de votre équipe et qu’elle excelle dans la création de modèles de données (souvent appelés jeux de données) de qualité. Forte de son expertise, Anna peut créer un jeu de données et un rapport, puis partager ce dernier sur le **service Power BI**.
 
-![Publiez sur le service Power BI](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
+![Publication sur le service Power BI](media/desktop-report-lifecycle-datasets/report-lifecycle_02a.png)
 
 Tout le monde apprécie son rapport et son jeu de données, et cela peut occasionner un problème. En effet, tous les membres de son équipe peuvent tenter de créer *leur propre version* de ce jeu de données, puis partager leur propre rapport avec l’équipe. Soudainement, il y a une multitude de rapports (basés sur des jeux de données différents) au sein de l’espace de travail de votre équipe dans le **service Power BI**. Quel est le plus récent ? Les jeux de données utilisés sont-ils identiques, ou seulement presque identiques ? Quelles sont les différences ? La fonctionnalité **Connexion active du service Power BI** peut changer tout cela pour mieux. La section suivante explique comment d’autres personnes peuvent utiliser le jeu de données d’Annette pour créer leurs propres rapports, dans leurs propres espaces de travail, et permettre à chacun d’utiliser le même jeu de données solide, vérifié et publié pour générer leurs rapports uniques.
 
@@ -63,7 +63,7 @@ Si Anna n’est pas connecté au compte service Power BI, une fenêtre contextue
 
 À partir de là, elle peut choisir l’espace de travail sur lequel le rapport et le jeu de données doivent être publiés. Rappelez-vous que si elle l’enregistre dans un espace de travail de nouvelle expérience, toute personne disposant de l’autorisation Générer peut accéder à ce jeu de données. L’autorisation Générer est définie dans le service Power BI, après la publication. Si le travail est enregistré dans un espace de travail classique, seuls les membres ayant accès à l’espace de travail où un rapport est publié peuvent accéder à son jeu de données à l’aide d’une **connexion active du service Power BI**.
 
-![Publiez sur le service Power BI](media/desktop-report-lifecycle-datasets/report-lifecycle_05.png)
+![Publication sur le service Power BI](media/desktop-report-lifecycle-datasets/report-lifecycle_05.png)
 
 Le processus de publication commence et **Power BI Desktop** affiche sa progression.
 

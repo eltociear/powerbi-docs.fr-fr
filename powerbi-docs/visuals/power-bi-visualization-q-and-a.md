@@ -8,10 +8,10 @@ ms.topic: conceptual
 ms.date: 11/19/2019
 ms.author: mohaali
 ms.openlocfilehash: 9805b98df7f606e61412ca9dee7dc0467a1649a3
-ms.sourcegitcommit: 90bd747b7c460d17b74cd386d3f5714234b1f6c9
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74791834"
 ---
 # <a name="introduction-to-power-bi-qa-visual"></a>Présentation du visuel Questions et réponses de Power BI
@@ -35,7 +35,7 @@ Le visuel Questions et réponses a quatre composants principaux :
 - L’icône pour convertir le visuel Questions et réponses en visuel standard. 
 - L’icône pour ouvrir l’outil Questions et réponses avec lequel les concepteurs configurent le moteur de langage naturel sous-jacent.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 1. Ce tutoriel utilise le [fichier PBIX de l’exemple Vente et marketing](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix). 
 
@@ -148,7 +148,7 @@ Intégré à Office et à Bing, le visuel Questions et réponses essaie de mettr
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Il existe diverses façons d’intégrer le langage naturel. Pour plus d’informations, consultez les articles suivants :
+Il existe diverses façons d’intégrer le langage naturel. Pour plus d’informations, consultez les articles suivants :
 
 * [Outils de Questions et réponses](../natural-language/q-and-a-tooling-intro.md)
 * [Bonnes pratiques relatives à Questions et réponses](../natural-language/q-and-a-best-practices.md)

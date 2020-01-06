@@ -11,10 +11,10 @@ ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
 ms.openlocfilehash: 90136f39d9f2a8e330748b56d6302bb75d2a31fe
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73873844"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Se connecter aux exemples dans le service Power BI
@@ -25,7 +25,7 @@ Ce didacticiel montre comment :
 
 Si vous souhaitez plus d’informations générales, consultez l’article [Exemples de jeux de données pour Power Bi](sample-datasets.md). Celui-ci présente ce qu’il vous faut savoir sur les exemples : comment les obtenir, où les enregistrer, comment les utiliser, ainsi que certains récits que les exemples peuvent illustrer. 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Les exemples sont disponibles pour le service Power BI et pour Power BI Desktop. Pour la suite, nous allons utiliser l’exemple Analyse de la vente au détail.
 
 Le pack de contenu de l’exemple *Analyse de la vente au détail* utilisé dans ce didacticiel comprend un tableau de bord, un rapport et un jeu de données.
@@ -37,7 +37,7 @@ Pour vous familiariser avec ce pack de contenu et son scénario, consultez l’a
 
     Si vous n’avez pas de licence Power BI Pro, vous pouvez enregistrer l’exemple dans votre espace Mon espace de travail.
 
-2. Sélectionnez **Obtenir des données** dans le bas du volet de navigation. 
+2. Sélectionnez **Obtenir des données** en bas du volet de navigation. 
 
    ![Sélectionner Obtenir les données](media/sample-datasets/power-bi-get-data.png)
 

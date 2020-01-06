@@ -10,13 +10,13 @@ ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
 ms.openlocfilehash: c67ce4ef9b5b0ac2054d4ecdf76ee3a1a79571d8
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311054"
 ---
-# <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
+# <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Tutoriel : Incorporer du contenu Power BI dans une application pour votre organisation
 
 Dans **Power BI**, vous pouvez incorporer des rapports (Power BI ou Paginés), des tableaux de bord et des vignettes dans une application à l’aide de l’exemple User owns data (l’utilisateur est propriétaire des données). **User owns data** permet à votre application d’étendre le service Power BI afin qu’elle puisse utiliser l’analytique incorporée. Ce didacticiel montre comment intégrer un rapport (Power BI ou Paginé) dans une application. Vous utiliserez le kit de développement logiciel (SDK) .NET Power BI avec l’API JavaScript Power BI pour incorporer Power BI dans une application de votre organisation.
 
@@ -27,7 +27,7 @@ Ce tutoriel vous montre comment effectuer les tâches suivantes :
 > * inscrire une application dans Azure ;
 > * incorporer un rapport Power BI ou Paginé dans une application à l’aide de votre locataire Power BI.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 Pour commencer, vous devez disposer des éléments suivants :
 
@@ -414,7 +414,7 @@ Après avoir créé une capacité dédiée, vous pouvez lui affecter votre espac
 
     ![espace de travail lié à une capacité](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
-## <a name="admin-settings"></a>Paramètres d’administrateur
+## <a name="admin-settings"></a>Paramètres d’administration
 
 Les administrateurs généraux ou les administrateurs du service Power BI peuvent activer ou désactiver la possibilité d’utiliser les API REST pour un locataire. Les administrateurs Power BI peuvent définir ce paramètre pour toute l’organisation ou pour des groupes de sécurité. Il est activé par défaut pour toute l’organisation. Vous pouvez apporter ces changements dans le [portail d’administration Power BI](../service-admin-portal.md).
 

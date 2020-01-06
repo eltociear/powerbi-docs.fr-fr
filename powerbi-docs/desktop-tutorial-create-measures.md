@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Créer ses propres mesures dans Power BI Desktop'
+title: 'Tutoriel : Créer ses propres mesures dans Power BI Desktop'
 description: Les mesures incluses dans Power BI Desktop vous aident en effectuant des calculs sur vos données quand vous interagissez avec vos rapports.
 author: davidiseminger
 ms.reviewer: ''
@@ -10,16 +10,16 @@ ms.date: 11/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 0d2b316b53b4107c86a036cc8a436440dd8bd674
-ms.sourcegitcommit: 7f27b9eb0e001034e672050735ab659b834c54a3
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74311520"
 ---
-# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Tutoriel : Créer ses propres mesures dans Power BI Desktop
+# <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Tutoriel : Créer ses propres mesures dans Power BI Desktop
 En utilisant des mesures, vous pouvez créer des solutions d’analyse de données parmi les plus puissantes dans Power BI Desktop. Les mesures vous aident en effectuant des calculs sur vos données quand vous interagissez avec vos rapports. Ce didacticiel vous aidera à comprendre les mesures et à créer vos propres mesures élémentaires dans Power BI Desktop.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Ce didacticiel s’adresse aux utilisateurs de Power BI déjà familiarisés avec l’utilisation de Power BI Desktop pour créer des modèles plus avancés. Vous devez déjà bien connaître l’utilisation de la fonctionnalité Obtenir des données et l’Éditeur de requête pour importer des données, utiliser plusieurs tables connexes et ajouter des champs au Canevas de rapport. Si vous découvrez seulement Power BI Desktop, veillez à consulter [Prise en main de Power BI Desktop](desktop-getting-started.md).
   

@@ -10,10 +10,10 @@ ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: b905b738dc9fa38e390a94fb1b893aba8e45a0db
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "73863694"
 ---
 # <a name="find-your-dashboards-reports-and-apps"></a>Rechercher des tableaux de bord, des rapports et des applications
@@ -55,7 +55,7 @@ La section suivante affiche le contenu que vous avez consulté le plus récemmen
 ### <a name="workspaces"></a>Espaces de travail
 En tant qu’*utilisateur* de Power BI, vous ne disposez généralement que d’un seul espace de travail : **Mon espace de travail**. 
 
-### <a name="shared-with-me"></a>Partagé avec moi
+### <a name="shared-with-me"></a>Éléments partagés avec moi
 Vos collègues partagent des applications avec vous, mais ils peuvent également partager des rapports et des tableaux de bord. Dans la section **Partagé avec moi**, remarquez qu’il existe trois tableaux de bord et que vos collègues ont partagé trois rapports avec vous.
 
 ### <a name="recommended-apps"></a>Applications recommandées

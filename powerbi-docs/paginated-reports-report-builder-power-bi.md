@@ -9,10 +9,10 @@ ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/27/2019
 ms.openlocfilehash: 35f50f57f3874bbb87fcdd5fbcf7da987fea1d1a
-ms.sourcegitcommit: e492895259aa39960063f9b337a144a60c20125a
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74831147"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Présentation des rapports paginés dans Power BI Premium
@@ -85,7 +85,7 @@ Voici d’autres fonctionnalités qui ne sont pas prises en charge dans la versi
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [Installer le Générateur de rapports Power BI à partir du Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?linkid=2086513)
-- [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
+- [Tutoriel : Créer un rapport paginé](paginated-reports-quickstart-aw.md)
 - [Entrer des données directement dans un rapport paginé](paginated-reports-enter-data.md)
 - [Labo pratique : Créer un rapport paginé Microsoft Power BI](https://www.microsoft.com/handsonlabs/selfpacedlabs/details/SQ00208)
   
