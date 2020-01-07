@@ -36,7 +36,7 @@
           href: ../service-admin-portal.md
         - name: Trouver les utilisateurs qui se sont connectés
           href: ../service-admin-access-usage.md
-        - name: Audit
+        - name: Suivre les activités utilisateur
           href: ../service-admin-auditing.md
         - name: Suivre l’intégrité du service
           href: ../service-admin-health.md

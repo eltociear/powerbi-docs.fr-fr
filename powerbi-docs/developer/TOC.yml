@@ -15,8 +15,6 @@
               href: power-bi-custom-visuals.md
         - name: Tutoriels
           items:
-            - name: Concept visuel
-              href: visuals/power-bi-visuals-concept.md
             - name: Développer un visuel Power BI
               href: visuals/custom-visual-develop-tutorial.md
             - name: Ajouter des options de mise en forme
@@ -25,6 +23,10 @@
               href: visuals/unit-tests-introduction.md
         - name: Concepts
           items:
+            - name: Structure de projet de visuel Power BI
+              href: visuals/visual-project-structure.md
+            - name: Concept visuel
+              href: visuals/power-bi-visuals-concept.md
             - name: Visuels pour les organisations dans Power BI
               href: power-bi-custom-visuals-organization.md
             - name: Marche à suivre pour les visuels Power BI
@@ -63,6 +65,8 @@
               href: visuals/bookmarks-support.md
             - name: Ajouter une prise en charge des menus contextuels
               href: visuals/context-menu.md
+            - name: Ajouter la prise en charge de l’exploration
+              href: visuals/drill-down-support.md
             - name: Mettre en évidence des données dans les visuels
               href: visuals/highlight.md
             - name: Ajouter la prise en charge du mode Contraste élevé
@@ -109,7 +113,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848277'
             - name: Création du certificat SSL
               href: visuals/create-ssl-certificate.md
-    - name: Analytiques incorporées
+    - name: Analytique incorporée
       expanded: true
       items:
         - name: Vue d’ensemble
