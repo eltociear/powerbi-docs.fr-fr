@@ -10,10 +10,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 7edfe46173b1d9b2537c5fd980b245af09fd1f53
-ms.sourcegitcommit: 57ec4d51744b89bd695e6c62184c21342f2eae83
+ms.sourcegitcommit: 6272c4a0f267708ca7d38a45774f3bedd680f2d6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 01/06/2020
 ms.locfileid: "74178289"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Inscrire votre organisation US Government au service Power BI
@@ -79,7 +79,7 @@ Voici des informations supplémentaires sur l’inscription à **Power BI US Gov
 ### <a name="reseller-power-bi-trial-to-pro-customer-onboarding"></a>Intégration via un revendeur des clients de l’essai Power BI vers la version Pro
 Accédez à **Facturation > Abonnements**, puis sélectionnez l’abonnement **Power BI Pro for Government** (Abonnement Power BI Pro pour le secteur public). Vous voyez les indications suivantes :
 
-* Disponibilité
+* Disponible
 * Assigned (Affecté)
 * Liens Assign to users (Affecter aux utilisateurs)
 * Si l’essai vous est toujours affecté :
