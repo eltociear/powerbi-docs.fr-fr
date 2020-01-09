@@ -487,7 +487,7 @@
               href: service-how-to-collaborate-distribute-dashboards-reports.md
             - name: Surveiller l’utilisation de Power BI
               href: service-usage-metrics.md
-        - name: Licensing
+        - name: Licences
           items:
             - name: "S’inscrire à Power\_BI"
               href: service-self-service-signup-for-power-bi.md
@@ -509,7 +509,7 @@
               href: service-interruption-notifications.md
         - name: "Étendre Power\_BI"
           items:
-            - name: Power Automate et Power BI
+            - name: "Power Automate et Power\_BI"
               href: service-flow-integration.md
             - name: Utiliser des applications tierces
               href: service-power-bi-get-started-third-party-apps.md
@@ -903,8 +903,6 @@
           href: report-builder-data.md
         - name: Sources de données prises en charge
           href: paginated-reports-data-sources.md
-        - name: Utiliser des jeux de données partagés Power BI
-          href: report-builder-shared-datasets.md
         - name: Conseils de conception
           href: report-builder-design-tips.md
         - name: 'Tableaux, matrices, listes'
@@ -929,6 +927,8 @@
           href: paginated-reports-embedded-data-source.md
         - name: Créer un jeu de données incorporé
           href: paginated-reports-create-embedded-dataset.md
+        - name: Créer un rapport avec un datas et Power BI partagé
+          href: report-builder-shared-datasets.md
         - name: Créer des paramètres
           href: paginated-reports-parameters.md
         - name: Passer un paramètre de rapport dans une URL
@@ -989,6 +989,8 @@
       items:
         - name: "Installer Power\_BI\_Desktop"
           href: report-server/install-powerbi-desktop.md
+        - name: Installer le Générateur de rapports
+          href: report-server/install-report-builder.md
         - name: Informations de base sur les serveurs de rapports
           items:
             - name: Créer un rapport Power BI pour un serveur de rapports
