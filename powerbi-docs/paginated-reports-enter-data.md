@@ -6,20 +6,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 06/06/2019
+ms.date: 01/03/2020
 ms.author: maggies
-ms.openlocfilehash: f3170fb30011e50ba97f936d879a7f19cc795521
-ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
+ms.openlocfilehash: d4d6ed36ea849e2bc9ba3d5212c5d5973ea9c953
+ms.sourcegitcommit: b09de56e971b8844a3771413d1f56d49b31baaaf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74128393"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691344"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Entrer des données directement dans un rapport paginé dans le Générateur de rapports - Power BI
 
 Cet article traite de la nouvelle version du Générateur de rapports SQL Server 2016, et plus particulièrement d’une fonctionnalité qui vous permet d’entrer des données directement dans un rapport RDL sous forme d’un jeu de données incorporé.  Cette fonctionnalité est similaire à Power BI Desktop. Vous pouvez taper des données directement dans un jeu de données dans votre rapport ou les coller dans un autre programme tel que Microsoft Excel. Si vous créez un jeu de données en entrant des données, vous pouvez l’utiliser comme n’importe quel autre jeu de données incorporé dont vous êtes l’auteur. Vous pouvez également ajouter plusieurs tables et en utiliser une comme filtre pour l’autre. Cette fonctionnalité est particulièrement utile pour les petits jeux de données statiques dont vous pouvez avoir besoin dans votre rapport, comme des paramètres de rapport.
  
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 - Pour entrer des données directement dans un rapport paginé, installez la nouvelle version du [Générateur de rapports à partir du Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=53613). 
 - Pour enregistrer votre rapport paginé dans le service Power BI, vous devez disposer d’un [compte Power BI Pro](service-self-service-signup-for-power-bi.md) et avoir accès en écriture à un espace de travail accessible dans une [capacité Power BI Premium](service-premium-what-is.md).
@@ -75,7 +75,7 @@ Vous pouvez utiliser votre jeu de données comme base pour les visualisations de
 
 ## <a name="upload-the-paginated-report-to-the-power-bi-service"></a>Charger le rapport paginé sur le service Power BI
 
-Les rapports paginés étant désormais pris en charge dans le service Power BI, vous pouvez charger votre rapport paginé sur une capacité Premium. Pour plus d’informations, consultez [Charger un rapport paginé](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
+Les rapports paginés étant désormais pris en charge dans le service Power BI, vous pouvez charger votre rapport paginé sur une capacité Premium. Pour plus d’informations, consultez [Charger un rapport paginé](paginated-reports-save-to-power-bi-service.md).
 
 ## <a name="upload-the-paginated-report-to-a-report-server"></a>Charger le rapport paginé sur un serveur de rapports
 

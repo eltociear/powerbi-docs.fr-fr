@@ -9,14 +9,14 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/18/2019
 ms.author: mihart
-ms.openlocfilehash: 1e141c56387e4bbde1741752e40e600c37088e87
-ms.sourcegitcommit: 768e1e4b19fe8c7627010127c2420d63021cb542
+ms.openlocfilehash: 0cbd343203aa0626877e6d4841284eb57869e101
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199595"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75758804"
 ---
-# <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaction avec des cartes ArcGIS dans Power BI
+# <a name="interact-with-arcgis-maps-in-power-bi"></a>Interagir avec des cartes ArcGIS dans Power BI
 Cette rubrique est écrite du point de vue d’une personne qui utilise une carte ArcGIS dans le service Power BI, dans Power BI Desktop ou dans la version mobile de Power BI. Quand un concepteur partage un visuel ArcGIS Maps for Power BI avec vous, il existe de nombreuses façons d’interagir avec celui-ci.  Pour en savoir plus sur la création d’une carte ArcGIS, consultez le [tutoriel sur les cartes ArcGIS par Esri](../visuals/power-bi-visualization-arcgis.md).
 
 L’association des cartes ArcGIS et de Power BI porte la cartographie au-delà de la simple présentation de points sur une carte, pour accéder à un nouveau niveau. Les concepteurs de rapports commencent par sélectionner une carte à laquelle ils attachent des couches de données démographiques. L’association des couches de données basées sur la localisation (comme des données de recensement) sur une carte avec l’analyse spatiale permet une compréhension approfondie des données dans vos visualisations.

@@ -9,14 +9,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 10c6f9f512c1b8c837842247d9dc928e8e065451
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: 4178dd37acf12efbe8dd00baed4f6b72ab549841
+ms.sourcegitcommit: 97597ff7d9ac2c08c364ecf0c729eab5d59850ce
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73876633"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75762045"
 ---
-# <a name="using-calculated-columns-in-power-bi-desktop"></a>Utilisation de colonnes calculées dans Power BI Desktop
+# <a name="create-calculated-columns-in-power-bi-desktop"></a>Créer des colonnes calculées dans Power BI Desktop
 Les colonnes calculées vous permettent d’ajouter de nouvelles données à une table déjà présente dans votre modèle. Toutefois, au lieu d’interroger et de charger les valeurs dans votre nouvelle colonne à partir d’une source de données, vous créez une formule DAX (Data Analysis Expressions) qui définit les valeurs de la colonne. Dans Power BI Desktop, vous créez les colonnes calculées à l’aide de la fonctionnalité Nouvelle colonne dans la vue Rapport.
 
 Contrairement aux colonnes personnalisées créées dans le cadre d’une requête à l’aide de l’option Ajouter une colonne personnalisée dans l’Éditeur de requête, les colonnes calculées créées dans la vue Rapport ou Données sont basées sur des données que vous avez déjà chargées dans le modèle. Par exemple, vous pouvez choisir de concaténer des valeurs de deux colonnes différentes dans deux tables différentes mais associées, d’effectuer une addition ou d’extraire des sous-chaînes.
